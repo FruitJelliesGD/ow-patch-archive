@@ -1,0 +1,52 @@
+name: monitor
+
+on:
+  schedule:
+    # every 6 hours; nudged off :00 to avoid the top-of-hour burst
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install
+        run: pip install .
+
+      - name: Run pipeline (fetch, diff, archive)
+        id: pipeline
+        run: python tools/run.py --data data --notify-out notify.json --send-email
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          SMTP_TO: ${{ secrets.SMTP_TO }}
+
+      - name: Commit new/changed data
+        if: hashFiles('notify.json') != ''
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "data: auto-update patch archive ($(date -u +%Y-%m-%dT%H:%MZ))"
+          git push
+
+      - name: Open GitHub issue
+        if: hashFiles('notify.json') != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TITLE=$(python -c "import json,sys;sys.stdout.reconfigure(encoding='utf-8');print(json.load(open('notify.json',encoding='utf-8'))['title'])")
+          python -c "import json,sys;sys.stdout.reconfigure(encoding='utf-8');print(json.load(open('notify.json',encoding='utf-8'))['body_md'])" > /tmp/issue-body.md
+          gh issue create --title "$TITLE" --body-file /tmp/issue-body.md

@@ -62,11 +62,11 @@ branch: feat/patch-archive
 
 ## Tasks
 
-- [ ] T1: 抓取模块 `src/ow2_patch/fetch.py`（EN 月份枚举 + 单月抓取，含 2016 样例结构确认） — acceptance: 本地拉下 EN 某月 HTML 入 cache，2016 样例页真实结构已确认 (covers: S2-数据获取)
-- [ ] T2: 解析模块 `model.py` + `parse.py` — acceptance: `tests/test_parse.py` 全绿，EN/CN/2016 降级/同天多补丁样例全对 (covers: S2-数据模型; depends: T1)
-- [ ] T3: 名称映射 `data/names.json` 初版（OW2 全部英雄+技能）+ slug 生成 — acceptance: 样例英雄/技能全部命中映射，unknown_name 机制生效 (covers: S2-数据模型; depends: T2)
-- [ ] T4: 变化检测 `diff.py` + manifest + changelog — acceptance: `tests/test_diff.py` 全绿，人为改动 fixture 判为 modified (covers: S2-变化检测与通知; depends: T2)
-- [ ] T5: 通知 `notify.py`（Issue 正文 + SMTP 邮件） — acceptance: `--dry-run` 渲染的 Issue/邮件正文正确，SMTP 测试邮件收到 (covers: S2-变化检测与通知; depends: T4)
-- [ ] T6: 全量回填（EN 2016-05~今 + CN 2025-02~今）+ 英雄轨迹生成 — acceptance: 本地全量落库，patch 数与 patchNotesDates 一致，heroes/*.json 生成 (covers: S2-数据模型, S2-查询; depends: T5)
-- [ ] T7: 查询站 `web/` — acceptance: 本地 http.server 打开英雄详情正常展示时间线 (covers: S2-查询; depends: T6)
+- [x] T1: 抓取模块 `src/ow2_patch/fetch.py`（EN 月份枚举 + 单月抓取，含 2016 样例结构确认） — acceptance: 本地拉下 EN 某月 HTML 入 cache，2016 样例页真实结构已确认 (covers: S2-数据获取)
+- [x] T2: 解析模块 `model.py` + `parse.py` — acceptance: `tests/test_parse.py` 全绿，EN/CN/2016 降级/同天多补丁样例全对 (covers: S2-数据模型; depends: T1)
+- [x] T3: 名称映射 `data/names.json` 初版（OW2 全部英雄+技能）+ slug 生成 — acceptance: 样例英雄/技能全部命中映射，unknown_name 机制生效 (covers: S2-数据模型; depends: T2)
+- [x] T4: 变化检测 `diff.py` + manifest + changelog — acceptance: `tests/test_diff.py` 全绿，人为改动 fixture 判为 modified (covers: S2-变化检测与通知; depends: T2)
+- [x] T5: 通知 `notify.py`（Issue 正文 + SMTP 邮件） — acceptance: `--dry-run` 渲染的 Issue/邮件正文正确，SMTP 测试邮件收到 (covers: S2-变化检测与通知; depends: T4)
+- [x] T6: 全量回填（EN 2016-05~今 + CN 2025-02~今）+ 英雄轨迹生成 — acceptance: 本地全量落库，patch 数与 patchNotesDates 一致，heroes/*.json 生成 (covers: S2-数据模型, S2-查询; depends: T5)
+- [x] T7: 查询站 `web/` — acceptance: 本地 http.server 打开英雄详情正常展示时间线 (covers: S2-查询; depends: T6)
 - [ ] T8: 三个 workflow yml + 接远程 + secrets + 端到端验证 — acceptance: GitHub dispatch monitor/pages/backfill 全部跑通，Pages 上线，收到真实 Issue + 邮件 (covers: S2-GitHub Actions; depends: T7)

@@ -1,0 +1,35 @@
+name: backfill
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install
+        run: pip install .
+
+      - name: Full scan (EN 2016-05.., CN 2025-02..)
+        run: python tools/run.py --data data
+
+      - name: Commit if anything changed
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add -A
+            git commit -m "data: backfill archive ($(date -u +%Y-%m-%dT%H:%MZ))"
+            git push
+          else
+            echo "archive already up to date"
+          fi
