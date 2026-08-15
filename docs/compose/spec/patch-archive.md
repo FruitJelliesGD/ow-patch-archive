@@ -69,8 +69,26 @@ commits: 5ab4fc1..b295273
 ## [S3] Out of Scope
 
 - 不存原始 HTML 快照（changelog 已记录文本 diff）。
-- 不做 EN/CN 补丁日期配对或翻译对齐（各站独立归档，查询站按英雄 slug 聚合）。
-- 不用 LLM 解析（规则解析 + names.json 足够，CI 零成本、可复现）。
+- 不用 LLM 解析（规则解析 + names.json + 自动映射学习足够，CI 零成本、可复现）。
+
+## 迭代二：时间浏览 + 跨站对齐（2026-08-15 增量）
+
+### 补丁配对与时间索引（新增）
+
+- EN/CN 补丁配对：CN 普遍滞后 EN 1 天（54 条中 36 条）。算法为**最大基数最小权二部图匹配**（不做精确日期预匹配，否则滞后集群会拆散配对），边权重 =（锚点日期差、标题日期差、EN 日期）；标题日期作第二信号（EN 2025-03-19 锚点实为 3/21 试玩，与 CN 03-22 配对）。结果：54/54 CN 全部配对。
+- 产出 `data/patch_pairs.json`（配对关系）+ `data/patches_index.json`（按日期降序的逻辑补丁，含中英标题/URL/站点徽标，未配对补丁单语列出）。
+- 生成时机：`pipeline.regenerate_all`（monitor 有新事件时）与 `tools/rebuild.py`（手动）均调用；纯离线、不动 manifest hash。
+
+### 技能/威能中英映射自动学习（修复按条目查询错乱）
+
+- 根因：names.json 技能表覆盖少 → 绝大多数 CN 技能名未命中 → 中文 hash-slug（全库 744 条），同一技能 EN/CN 分裂成两个分组；部分补丁把威能误放在技能列表（53 条）或把"名——威能 描述"合并进 general（35 条）。
+- 修复：① `normalize.py` 重分类（威能状技能条目 → 威能、合并串拆分）；② `ability_map.py` 从配对补丁按英雄+位置对齐自动学习 EN↔CN 技能/威能名（含单复数变体折叠，如 Helix Rocket(s)）；③ `names.py` 解析优先级：names.json → ability_map → slugify，带 hero 上下文消歧。
+- 结果：`hero-*` hash-slug 归零；`重型脉冲步枪` 等变体在重富化时规范化为 curated 名（`重脉冲步枪`）；英雄时间线按 canonical slug 跨站合并。
+
+### 查询站重构（两种入口）
+
+- `index.html` 改为**按时间浏览补丁**（年→月→列表，中英合并条目）；`heroes.html` 承接英雄列表；新增 `patch.html?id=&lang=` 补丁详情（语言切换、各站官方链接）；`hero.html` 分组改用 canonical slug。
+- `web/app.js` 抽取公共 helpers，四页面共用；`tools/_smoke_web.js` 为无头冒烟测试（341 条目、双语切换、分组断言）。
 
 ## Tasks
 
@@ -82,3 +100,10 @@ commits: 5ab4fc1..b295273
 - [x] T6: 全量回填（EN 2016-05~今 + CN 2025-02~今）+ 英雄轨迹生成 — acceptance: 本地全量落库，patch 数与 patchNotesDates 一致，heroes/*.json 生成 (covers: S2-数据模型, S2-查询; depends: T5)
 - [x] T7: 查询站 `web/` — acceptance: 本地 http.server 打开英雄详情正常展示时间线 (covers: S2-查询; depends: T6)
 - [x] T8: 三个 workflow yml + 接远程 + secrets + 端到端验证 — acceptance: GitHub dispatch monitor/pages/backfill 全部跑通，Pages 上线，收到真实 Issue + 邮件 (covers: S2-GitHub Actions; depends: T7)
+- [x] T9: 补丁配对 `pairing.py` + patch_pairs/patches_index — acceptance: 54 CN 全部配对、真实数据不变量测试通过 (covers: 迭代二-配对)
+- [x] T10: 技能/威能映射学习 `ability_map.py` — acceptance: helix 单复数合并、重脉冲步枪/强化药剂解析正确 (covers: 迭代二-映射; depends: T9)
+- [x] T11: `names.py` 扩展（map 加载、查表优先级、hero 上下文） — acceptance: test_names 增例全绿 (covers: 迭代二-映射; depends: T10)
+- [x] T12: `normalize.py` 重分类 + build_hero_files canonical slug — acceptance: soldier-76 无 hash-slug、跨站合并、威能归类 (covers: 迭代二-映射; depends: T11)
+- [x] T13: `regenerate_all` 接入 pipeline/rebuild — acceptance: 全量 pytest 43 项通过 (covers: 迭代二-配对; depends: T12)
+- [x] T14: web 重构（时间浏览 / heroes / patch 详情 / 分组修复） — acceptance: 无头冒烟断言全过（341 条目、双语切换、无 hash 分组） (covers: 迭代二-查询站; depends: T9, T12)
+- [ ] T15: 合并推送 + pages 部署验证（本迭代收尾） — acceptance: main 更新、线上站点可用 (covers: 迭代二; depends: T14)

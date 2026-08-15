@@ -18,25 +18,31 @@
   新增补丁 / 旧补丁内容被修改都会触发提交 + Issue + 邮件，并把变更明细写入 `data/changelog.jsonl`。
 - **格式化归档**：`data/archive/{en,cn}/YYYY/MM/` 下是每个补丁的可读 Markdown；
   `data/patches/` 下是结构化 JSON；`data/heroes/{slug}.json` 是聚合后的英雄改动时间线。
-- **查询站**：GitHub Pages 静态站，按英雄浏览技能/威能改动历史，中英双语对照。
+- **查询站（GitHub Pages，两种入口）**：
+  - **按时间浏览补丁**（首页）：年 → 月 → 补丁列表，同一逻辑补丁的英文/中文版本合并为一条，详情页可切换中英语言；
+  - **按英雄查询**：英雄 → 技能/威能改动时间线（中英对照、数值 before→after、威能新增/移除/重做状态）。
+- **跨站数据对齐**：英文与中文补丁自动配对（`data/patch_pairs.json`），技能/威能名称中英映射自动学习（`data/ability_map.json`），同一技能的改动历史跨站合并为一条，不再产生碎片化分组。
 - **CLI 查询**：`python tools/query.py 士兵76`。
 
 ## 目录结构
 
 ```
-src/ow2_patch/       抓取/解析/名称映射/变化检测/通知/流水线
+src/ow2_patch/       抓取/解析/名称映射/配对/映射学习/变化检测/通知/流水线
 tools/run.py         流水线入口（CI 使用）
 tools/query.py       CLI 查询工具
-tools/rebuild.py     修改 data/names.json 后重富化存量数据
-web/                 GitHub Pages 查询站
+tools/rebuild.py     全量离线重生成（重分类/重富化/配对/映射/英雄轨迹）
+web/                 GitHub Pages 查询站（时间浏览 + 英雄查询）
 data/               归档数据（全部提交入库）
   archive/          补丁 Markdown 归档
   patches/          补丁结构化 JSON
   heroes/           英雄改动时间线
+  patches_index.json  按时间浏览索引（中英合并后的逻辑补丁）
+  patch_pairs.json    EN/CN 补丁配对关系
+  ability_map.json    技能/威能中英映射（自动学习，可再训练）
   manifest.json     内容哈希状态
   changelog.jsonl   官方事后编辑记录
   names.json        EN/CN 名称映射表（可人工补充）
-.github/workflows/  monitor / backfill / pages / ci
+.github/workflows/  monitor / monitor-fast / backfill / pages / ci
 ```
 
 ## 部署步骤
