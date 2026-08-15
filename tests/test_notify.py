@@ -55,3 +55,11 @@ def test_smtp_env_loading(monkeypatch):
     cfg = load_smtp_from_env()
     assert cfg["host"] == "smtp.example.com"
     assert cfg["port"] == 587
+
+
+def test_smtp_env_tolerates_empty_or_invalid_port(monkeypatch):
+    monkeypatch.setenv("SMTP_HOST", "smtp.example.com")
+    monkeypatch.setenv("SMTP_PORT", "")
+    assert load_smtp_from_env()["port"] == 465
+    monkeypatch.setenv("SMTP_PORT", "not-a-number")
+    assert load_smtp_from_env()["port"] == 465

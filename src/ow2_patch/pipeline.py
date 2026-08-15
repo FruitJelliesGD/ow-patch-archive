@@ -162,7 +162,8 @@ def _load_patch_dict(data_dir: pathlib.Path, site: str, patch_id: str) -> dict:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
-NON_HERO_NAMES = {"Items", "New Gadgets Added", "General Item Updates", "General Items", "General Updates"}
+NON_HERO_NAMES = {"Items", "New Gadgets Added", "General Item Updates", "General Items",
+                  "General Updates", "综合物品", "新增装置", "物品"}
 
 
 def _is_balance_hero(hero: dict) -> bool:
