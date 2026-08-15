@@ -52,7 +52,7 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--data", type=pathlib.Path, default=DEFAULT_DATA)
     args = parser.parse_args(argv)
 
-    resolver = NameResolver()
+    resolver = NameResolver(args.data / "names.json")
     count = 0
     for site_dir in ("en", "cn"):
         for patch_file in sorted((args.data / "patches" / site_dir).glob("*.json")):

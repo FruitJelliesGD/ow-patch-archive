@@ -8,11 +8,31 @@ from __future__ import annotations
 
 import hashlib
 import json
+import os
 import pathlib
 import re
 import unicodedata
 
-DEFAULT_NAMES_PATH = pathlib.Path(__file__).resolve().parent.parent.parent / "data" / "names.json"
+
+def _default_names_path() -> pathlib.Path:
+    """Locate data/names.json: repo checkout, CWD, or OW2_NAMES_PATH override.
+
+    Works both for editable installs (source tree) and for a plain `pip install .`
+    in CI where the package is copied into site-packages.
+    """
+    candidates = [
+        pathlib.Path(os.environ["OW2_NAMES_PATH"]) / "names.json"
+        if os.environ.get("OW2_NAMES_PATH") else None,
+        pathlib.Path.cwd() / "data" / "names.json",
+        pathlib.Path(__file__).resolve().parent.parent.parent / "data" / "names.json",
+    ]
+    for candidate in candidates:
+        if candidate is not None and candidate.exists():
+            return candidate
+    return pathlib.Path.cwd() / "data" / "names.json"
+
+
+DEFAULT_NAMES_PATH = _default_names_path()
 
 # Known variant spellings / retired names -> canonical EN name used as table key.
 HERO_ALIASES = {
@@ -59,7 +79,9 @@ def _normalize_cn(text: str) -> str:
 
 
 class NameResolver:
-    def __init__(self, path: pathlib.Path = DEFAULT_NAMES_PATH):
+    def __init__(self, path: pathlib.Path | None = None):
+        if path is None or not path.exists():
+            path = _default_names_path()
         with open(path, encoding="utf-8") as fh:
             table = json.load(fh)
         self.heroes: dict[str, dict] = table["heroes"]

@@ -50,7 +50,7 @@ def run_pipeline(
 ) -> RunResult:
     """Fetch and persist patches; writes only changed patches and rebuilt hero files."""
     fetch = fetch or Fetcher()
-    resolver = NameResolver()
+    resolver = NameResolver(data_dir / "names.json")
     manifest = load_manifest(data_dir)
     result = RunResult()
 
@@ -178,7 +178,7 @@ def build_hero_files(data_dir: pathlib.Path, resolver: NameResolver | None = Non
     """Rebuild heroes/{slug}.json timelines and heroes_index.json from stored patches."""
     timeline: dict[str, list[dict]] = {}
     meta: dict[str, dict] = {}
-    resolver = resolver or NameResolver()
+    resolver = resolver or NameResolver(data_dir / "names.json")
 
     for site_dir in ("en", "cn"):
         for patch_file in sorted((data_dir / "patches" / site_dir).glob("*.json")):
