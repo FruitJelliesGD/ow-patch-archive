@@ -1,0 +1,819 @@
+{
+ "id": "en-2026-07-14-1",
+ "site": "en",
+ "date": "2026-07-14",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/07",
+ "title": "Overwatch Retail Patch Notes – July 14, 2026",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "Summer Games 2026",
+   "role": null,
+   "description": "Summer Games 2026 is LIVE, bringing your favorite beach brawls back to the arcade! Blast into Lucioball, crank things up with Lucioball Remix, or serve up some fun in Winston's Beach Volleyball while completing challenges to earn sizzling summertime loot. Soak up the sun and earn a shining victory in Summer Games 2026, July 14 – 30!",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "Junkrat's Loot Hunt",
+   "role": null,
+   "description": "Junkrat’s Loot Hunt returns from July 31 - August 3 for a reward-fueled weekend blast! Every match you play pushes you closer to Loot Boxes, with flexible challenges that let you go all-in or pace yourself. Plus, progress won't reset, there's no daily pressure, and no nonsense… just explosions, and piles of loot to unbox!",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "Excavation Initiative",
+   "role": null,
+   "description": "The Excavation Initiative continues, rewarding you for doing what you'd already be doing: playing Overwatch. Throughout the rest of the season, you'll earn Loot Boxes simply by logging in, completing challenges, winning games, and staying active week after week. The more you play, the more opportunities you'll have to uncover Base, Epic, and Legendary Loot Boxes packed with rewards.",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "Hero Updates",
+   "role": null,
+   "description": "Hero Updates",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "Tank",
+   "role": "tank",
+   "description": null,
+   "heroes": [
+    {
+     "slug": "doomfist",
+     "name_en": "Doomfist",
+     "name_cn": "末日铁拳",
+     "role": "tank",
+     "dev_note": "Empowered Rocket Punch's increased follow-through size was hitting targets far away from the initial target. We're reducing the bonus size while retaining some additional range and radius to preserve its power fantasy.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Rocket Punch",
+       "name_cn": null,
+       "slug": "rocket-punch",
+       "changes": [
+        {
+         "text_en": "Empowered Punch collateral range gain reduced 75% to 40%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Empowered Punch collateral radius gain reduced from 50% to 40%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "junker-queen",
+     "name_en": "Junker Queen",
+     "name_cn": "渣客女王",
+     "role": "tank",
+     "dev_note": "Commanding Shout is Junker Queen's primary source of survivability and team protection. Its cooldown begins after the effect expires, resulting in a longer time between uses. We're reducing the cooldown to increase its availability during engagements.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Commanding Shout",
+       "name_cn": null,
+       "slug": "commanding-shout",
+       "changes": [
+        {
+         "text_en": "Cooldown reduced from 12 to 10 seconds. (5v5)",
+         "text_cn": null,
+         "before": 12.0,
+         "after": 10.0,
+         "metric": "cooldown"
+        },
+        {
+         "text_en": "Cooldown reduced from 15 to 13 seconds. (6v6)",
+         "text_cn": null,
+         "before": 15.0,
+         "after": 13.0,
+         "metric": "cooldown"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "mauga",
+     "name_en": "Mauga",
+     "name_cn": "毛加",
+     "role": "tank",
+     "dev_note": "Mauga could maintain high accuracy when firing a single Chaingun for extended periods. Adding dynamic spread to individual Chainguns encourages switching between weapons to manage spread. This change does not affect accuracy while firing both weapons simultaneously.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Chainguns",
+       "name_cn": null,
+       "slug": "chainguns",
+       "changes": [
+        {
+         "text_en": "Maximum spread while firing individual Chainguns increased from 1 to 1.5.",
+         "text_cn": null,
+         "before": 1.0,
+         "after": 1.5,
+         "metric": "maximum spread while firing individual chainguns"
+        },
+        {
+         "text_en": "Number of shots until maximum spread increased from 0 to 30 shots.",
+         "text_cn": null,
+         "before": 0.0,
+         "after": 30.0,
+         "metric": "number of shots until maximum spread"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "ramattra",
+     "name_en": "Ramattra",
+     "name_cn": "拉玛刹",
+     "role": "tank",
+     "dev_note": "Increasing Ravenous Vortex's explosion damage rewards more precise detonations. We're also reducing Block's cooldown to allow Ramattra to block immediately after a single punch instead of two, improving the flow of Nemesis Form.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Ravenous Vortex",
+       "name_cn": null,
+       "slug": "ravenous-vortex",
+       "changes": [
+        {
+         "text_en": "Explosion damage increased from 15 to 30.",
+         "text_cn": null,
+         "before": 15.0,
+         "after": 30.0,
+         "metric": "explosion damage"
+        }
+       ]
+      },
+      {
+       "name_en": "Block (Nemesis Form)",
+       "name_cn": null,
+       "slug": "block-nemesis-form",
+       "changes": [
+        {
+         "text_en": "Cooldown reduced from 1 to 0.5 seconds.",
+         "text_cn": null,
+         "before": 1.0,
+         "after": 0.5,
+         "metric": "cooldown"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "sigma",
+     "name_en": "Sigma",
+     "name_cn": "西格玛",
+     "role": "tank",
+     "dev_note": "Sigma remains durable when successfully rotating through his defensive tools. Reducing his shield health lowers his survivability when opponents are able to break through his defenses.",
+     "general": [
+      "Shield health reduced from 275 to 250."
+     ],
+     "perks": [
+      {
+       "name_en": "Hyper Regeneration",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [
+        "Damage conversion reduced from 40% to 30%."
+       ],
+       "lines_cn": []
+      }
+     ],
+     "abilities": []
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "Damage",
+   "role": "damage",
+   "description": null,
+   "heroes": [
+    {
+     "slug": "cassidy",
+     "name_en": "Cassidy",
+     "name_cn": "卡西迪",
+     "role": "damage",
+     "dev_note": "Silver Bullet's additional projectile size improved the perk's effectiveness by making the empowered shot significantly easier to land. We're removing that bonus while retaining its potential damage.",
+     "general": [],
+     "perks": [
+      {
+       "name_en": "Silver Bullet",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [
+        "Projectile size reduced from 0.17 to 0.07."
+       ],
+       "lines_cn": []
+      }
+     ],
+     "abilities": []
+    },
+    {
+     "slug": "freja",
+     "name_en": "Freja",
+     "name_cn": null,
+     "role": "damage",
+     "dev_note": "Reducing Take Aim's explosion delay lowers the time between impact and damage, creating more consistent follow-up opportunities while reducing the bolt's disruptive potential when hit by it. The other changes are aimed at improving the flow between Take Aim and Revdraw Crossbow’s primary fire.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Revdraw Crossbow",
+       "name_cn": null,
+       "slug": "revdraw-crossbow",
+       "changes": [
+        {
+         "text_en": "Fire Rate increased from 5 to 5.5.",
+         "text_cn": null,
+         "before": 5.0,
+         "after": 5.5,
+         "metric": "fire rate"
+        }
+       ]
+      },
+      {
+       "name_en": "Take Aim",
+       "name_cn": null,
+       "slug": "take-aim",
+       "changes": [
+        {
+         "text_en": "Recovery reduced from 0.5 to 0.4.",
+         "text_cn": null,
+         "before": 0.5,
+         "after": 0.4,
+         "metric": "recovery"
+        },
+        {
+         "text_en": "Explosion delay reduced from 1 to 0.8 seconds.",
+         "text_cn": null,
+         "before": 1.0,
+         "after": 0.8,
+         "metric": "explosion delay"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "reaper",
+     "name_en": "Reaper",
+     "name_cn": "死神",
+     "role": "damage",
+     "dev_note": "Reaper's reduced health pool has limited his ability to sustain through extended engagements. Increasing the effectiveness of his passive restores some of that durability while rewarding aggressive play.",
+     "general": [],
+     "perks": [
+      {
+       "name_en": "Soul Reaving",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [
+        "Pickup radius of Soul Globes increased from 5 to 8 meters."
+       ],
+       "lines_cn": []
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": "The Reaping",
+       "name_cn": null,
+       "slug": "the-reaping",
+       "changes": [
+        {
+         "text_en": "Lifesteal increased from 25% to 30%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "shion",
+     "name_en": "Shion",
+     "name_cn": "死怨",
+     "role": "damage",
+     "dev_note": "Reducing Execution's recovery time better aligns the downtime after using the ability with when Shion can fire again. Joyride's impact damage is also being reduced to lower the effectiveness of continuously ramming targets and the combo potential of immediately detonating the bike after impact.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Execution",
+       "name_cn": null,
+       "slug": "execution",
+       "changes": [
+        {
+         "text_en": "Recovery time reduced from 0.4 to 0.3 seconds.",
+         "text_cn": null,
+         "before": 0.4,
+         "after": 0.3,
+         "metric": "recovery time"
+        }
+       ]
+      },
+      {
+       "name_en": "Joyride",
+       "name_cn": null,
+       "slug": "joyride",
+       "changes": [
+        {
+         "text_en": "Impact damage while riding reduced from 60 to 30.",
+         "text_cn": null,
+         "before": 60.0,
+         "after": 30.0,
+         "metric": "impact damage while riding"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "sierra",
+     "name_en": "Sierra",
+     "name_cn": null,
+     "role": "damage",
+     "dev_note": "Anchor Drone is being adjusted to support more frequent deployment and repositioning opportunities. Its cooldown and duration are being reduced, while its health is being increased to improve its survivability in combat.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Anchor Drone",
+       "name_cn": null,
+       "slug": "anchor-drone",
+       "changes": [
+        {
+         "text_en": "Cooldown reduced from 12 to 11 seconds.",
+         "text_cn": null,
+         "before": 12.0,
+         "after": 11.0,
+         "metric": "cooldown"
+        },
+        {
+         "text_en": "Duration reduced from 10 to 9 seconds.",
+         "text_cn": null,
+         "before": 10.0,
+         "after": 9.0,
+         "metric": "duration"
+        },
+        {
+         "text_en": "Health increased from 80 to 125.",
+         "text_cn": null,
+         "before": 80.0,
+         "after": 125.0,
+         "metric": "health"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "vendetta",
+     "name_en": "Vendetta",
+     "name_cn": "斩仇",
+     "role": "damage",
+     "dev_note": "Vendetta has continued to underperform since the significant changes made several seasons ago. Reverting Palatine Fang's overhead swing range restores some of her ability to close the distance and secure eliminations.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Palatine Fang",
+       "name_cn": null,
+       "slug": "palatine-fang",
+       "changes": [
+        {
+         "text_en": "Overhead swing bonus range increased from 2.0 to 2.5 meters.",
+         "text_cn": null,
+         "before": 2.0,
+         "after": 2.5,
+         "metric": "overhead swing bonus range"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "venture",
+     "name_en": "Venture",
+     "name_cn": "探奇",
+     "role": "damage",
+     "dev_note": "Clobber's cooldown is being reduced to shorten the delay before Venture can use the ability again and better align it with its recovery time. This increases the frequency with which Clobber can be used within engagements and improves its synergy with the Covered in Dirt Major Perk.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Clobber (Quick Melee)",
+       "name_cn": null,
+       "slug": "clobber-quick-melee",
+       "changes": [
+        {
+         "text_en": "Cooldown/Recovery reduced from 1.6 to 1.2 seconds.",
+         "text_cn": null,
+         "before": 1.6,
+         "after": 1.2,
+         "metric": "recovery"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "Support",
+   "role": "support",
+   "description": null,
+   "heroes": [
+    {
+     "slug": "ana",
+     "name_en": "Ana",
+     "name_cn": "安娜",
+     "role": "support",
+     "dev_note": "Ana's self-sustain has decreased following the removal of the Support passive's reduced health regeneration delay. Increasing Biotic Grenade's healing strengthens its defensive utility while also increasing its offensive impact.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Biotic Grenade",
+       "name_cn": null,
+       "slug": "biotic-grenade",
+       "changes": [
+        {
+         "text_en": "Explosion damage and healing increased from 75 to 90.",
+         "text_cn": null,
+         "before": 75.0,
+         "after": 90.0,
+         "metric": "explosion damage and healing"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "brigitte",
+     "name_en": "Brigitte",
+     "name_cn": "布丽吉塔",
+     "role": "support",
+     "dev_note": "Adding a burst of instant healing when Inspire is triggered allows Brigitte to provide more immediate healing while rewarding players for consistent Inspire triggers.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Inspire",
+       "name_cn": null,
+       "slug": "inspire",
+       "changes": [
+        {
+         "text_en": "Now grants 12 instant healing on trigger.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Healing over time reduced from 60 to 45.",
+         "text_cn": null,
+         "before": 60.0,
+         "after": 45.0,
+         "metric": "healing over time"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "kiriko",
+     "name_en": "Kiriko",
+     "name_cn": "雾子",
+     "role": "support",
+     "dev_note": "The reduced recovery time on Healing Ofuda improved the feel and consistency of Kiriko's healing. However, her overall healing output has become too high, so we're reducing the base healing while preserving the improved responsiveness.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Healing Ofuda",
+       "name_cn": null,
+       "slug": "healing-ofuda",
+       "changes": [
+        {
+         "text_en": "Healing per projectile reduced from 13 to 12.",
+         "text_cn": null,
+         "before": 13.0,
+         "after": 12.0,
+         "metric": "healing per projectile"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "lucio",
+     "name_en": "Lúcio",
+     "name_cn": "卢西奥",
+     "role": "support",
+     "dev_note": "Lúcio's overall effectiveness has been reduced over time to account for his uniquely powerful speed utility. Increasing his weapon damage strengthens his offensive capabilities without increasing the strength of his utility.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Sonic Amplifier",
+       "name_cn": null,
+       "slug": "sonic-amplifier",
+       "changes": [
+        {
+         "text_en": "Damage per projectile increased from 20 to 22.",
+         "text_cn": null,
+         "before": 20.0,
+         "after": 22.0,
+         "metric": "damage per projectile"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "Stadium Updates",
+   "role": null,
+   "description": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "General Changes",
+     "body": "Clash capture speed now increased up to 300% as time elapses (Up from 200%). Rate at which Clash capture speed increases increased to 2% every 1s (Up from 1%).",
+     "dev": "Clash rounds in Stadium can lead to outlier match lengths, especially in compositions with high amounts of sustain, so we're increasing the point capture speed to limit such outliers."
+    }
+   ]
+  },
+  {
+   "type": "hero_update",
+   "title": "Tank",
+   "role": "tank",
+   "description": null,
+   "heroes": [
+    {
+     "slug": "junker-queen",
+     "name_en": "Junker Queen",
+     "name_cn": "渣客女王",
+     "role": "tank",
+     "dev_note": null,
+     "general": [
+      "Royal Bullets - Power",
+      "Damage reduced to 20 (Down from 25).",
+      "Bow Down - Power",
+      "Duration reduced to 1.5s (Down from 2s)."
+     ],
+     "perks": [],
+     "abilities": []
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "Damage",
+   "role": "damage",
+   "description": null,
+   "heroes": [
+    {
+     "slug": "cassidy",
+     "name_en": "Cassidy",
+     "name_cn": "卡西迪",
+     "role": "damage",
+     "dev_note": null,
+     "general": [
+      "Gunslinger Grit - Power",
+      "Max Life Heal per bullet reloaded increased to 2.5% (Up from 2%)."
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "junkrat",
+     "name_en": "Junkrat",
+     "name_cn": "狂鼠",
+     "role": "damage",
+     "dev_note": null,
+     "general": [
+      "Zip Grease - Power",
+      "Increased damage to airborne targets increased to 25% (Up from 10%)."
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "mei",
+     "name_en": "Mei",
+     "name_cn": "美",
+     "role": "damage",
+     "dev_note": null,
+     "general": [
+      "Slowball - Power",
+      "Removed increased hitbox size on Slowball projectile.",
+      "Frost Armor - Power",
+      "Damage converted to Armor reduced to 3% (Down from 5%)."
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "reaper",
+     "name_en": "Reaper",
+     "name_cn": "死神",
+     "role": "damage",
+     "dev_note": null,
+     "general": [
+      "Accelerated Reaping - Power",
+      "Attack Speed per stack increased to 5% (Up from 4%).",
+      "Dauntless Draught - Epic Survival Hero Item",
+      "Wraith Form Duration reduced to 33% (Down from 50%)."
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "torbjorn",
+     "name_en": "Torbjörn",
+     "name_cn": "托比昂",
+     "role": "damage",
+     "dev_note": null,
+     "general": [
+      "Hammer Throw - Power",
+      "Added a VFX Trail for added clarity.",
+      "Blacksmith - Power",
+      "Heal increased to 100% of Hammer damage (Up from 75%).",
+      "Come Get Yer Armor - Power",
+      "Armor scaling reduced to 15% of your Max Life (Down from 20%).",
+      "Anchor Bolts - Epic Ability Hero Item",
+      "Ability Power reduced to 10% (Down from 15%)."
+     ],
+     "perks": [],
+     "abilities": []
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "Support",
+   "role": "support",
+   "description": null,
+   "heroes": [
+    {
+     "slug": "juno",
+     "name_en": "Juno",
+     "name_cn": "朱诺",
+     "role": "support",
+     "dev_note": "This change should reduce the ceiling of Blink Boost when paired with multiple other Cooldown Reduction items. We'll continue to monitor Blink Boost's synergy with On Ability items.",
+     "general": [
+      "Blink Boosts - Power",
+      "Reduced Cooldown now counts as base cooldown reduced instead of gaining cooldown reduction. Now scales multiplicatively with cooldown reduction instead of additively."
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "kiriko",
+     "name_en": "Kiriko",
+     "name_cn": "雾子",
+     "role": "support",
+     "dev_note": null,
+     "general": [
+      "Clone Conjuration - Power",
+      "Clone effectiveness increased to 65% reduced (Up from 75% reduced).",
+      "Keen Kunai - Power",
+      "Cooldown reduction per critical hit increased to 20% (Up from 15%)."
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "lucio",
+     "name_en": "Lúcio",
+     "name_cn": "卢西奥",
+     "role": "support",
+     "dev_note": null,
+     "general": [
+      "Rhythm Rail - Power",
+      "Damage increased to 100% (Up from 75%).",
+      "Crowd Pleaser - Power",
+      "Heal increased to 40% of Soundwave Damage (Up from 33%)."
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "mercy",
+     "name_en": "Mercy",
+     "name_cn": "天使",
+     "role": "support",
+     "dev_note": null,
+     "general": [
+      "Distortion - Power",
+      "Max Life Overhealth reduced to 25% (Down from 30%)."
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "wuyang",
+     "name_en": "Wuyang",
+     "name_cn": "无漾",
+     "role": "support",
+     "dev_note": null,
+     "general": [
+      "Currency from damage and healing increased by 8.33%."
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "zenyatta",
+     "name_en": "Zenyatta",
+     "name_cn": "禅雅塔",
+     "role": "support",
+     "dev_note": null,
+     "general": [
+      "Enlightenment - Power",
+      "Heal reduced to 30% of damage dealt (Down from 40%).",
+      "Inner Peace - Power",
+      "Healing reduced to 80% reduced (Down from 75% reduced)."
+     ],
+     "perks": [],
+     "abilities": []
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": null,
+   "role": null,
+   "description": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "Item Changes",
+     "body": "Volskaya Ordnance - Epic Weapon General Item Bonus Damage per 100 Bonus Life on target increased to 6% (Up from 5%). Gadget Maximizer - Epic Ability General Item Gadget cooldown reduction increased to 35% (Up from 25%). Three Tap Tommygun - Epic Ability General Item Added 0.5s internal cooldown for subsequent applications. Damage reduced to 3% of target's current life (Down from 5%). Damage duration reduced to 3s (Down from 5s). Vortex Vial - Gadget Cost reduced to 9000 (Down from 9500). Cooldown reduced to 15s (Down from 25s).",
+     "dev": "Three Tap Tommygun has proven to be an outlier in terms of output, so we're reducing the output and making it more difficult to quickly apply multiple stacks of. We're also improving some underused counter options, especially the Anti-Flier gadget."
+    }
+   ]
+  },
+  {
+   "type": "generic_update",
+   "title": "Custom Game Updates",
+   "role": null,
+   "description": "Added an infinite Joyride option for Shion under Settings > Heroes > Shion.",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "Bug Fixes",
+   "role": null,
+   "description": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "General",
+     "body": "Fixed an issue causing Shion's Hero Challenges to not be sorted alphabetically. Fixed an issue with Mauga where his reticle spread could become inaccurate when swapping between his guns. Fixed an issue where Sierra’s Trailblazer drone could be interrupted by stun abilities. Fixed several text bugs in the Advanced Info Panel.",
+     "dev": null
+    },
+    {
+     "title": "Stadium",
+     "body": "Fixed an issue where Junker Queen's Bloodhound Mask wasn't properly granting bonus Weapon Power from Wounds. Fixed an issue where Doomfist's Friendly Fissure caused Meteor Strike to deal full damage regardless of distance. Fixed an issue where Cassidy's Gunslinger Grit was triggering before the reload had completed. Fixed an issue where critically healing an ally after dealing Ability Damage with Cybervenom would apply Healing Reduction to allies. Fixed an issue where Lucio's Hip Hop wasn't properly working with Wall Jump on Release option toggled off. Fixed an issue where Mei's Frosting wasn't properly granting Ultimate Charge. Fixed an issue where Ramattra's Barrier wasn't scaling with Ability Power. Fixed an issue where Mei's Slowball would visually appear as though it was always the empowered projectile if the Power was sold while buff was active. Fixed an issue where Kiriko's Leaf on the Wind would target sometimes target enemies. In a previous update, fixed an issue where Moira's Spectral Beam had an incorrect effectiveness value.",
+     "dev": null
+    }
+   ]
+  }
+ ],
+ "raw_text": null,
+ "hash": "sha256:32424d18b7e58b23f2af48979cce8d54123ae4241df7c9221526fe9e0f92af57"
+}

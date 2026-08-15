@@ -1,0 +1,277 @@
+{
+ "id": "en-2020-08-13-1",
+ "site": "en",
+ "date": "2020-08-13",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2020/08",
+ "title": "Overwatch Retail Patch Notes – August 13, 2020",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "hero_update",
+   "title": "Hero Updates",
+   "role": null,
+   "description": null,
+   "heroes": [
+    {
+     "slug": "brigitte",
+     "name_en": "Brigitte",
+     "name_cn": "布丽吉塔",
+     "role": "support",
+     "dev_note": "After gaining multiple Repair Pack charges, Brigitte was enabled to play at safer distances while still having a powerful impact on her team. Combined with her personal barrier, she ended up not needing as much survivability in terms of raw health. Inspire has also had a powerful team impact despite being hard to feel due to its passive nature, so we are lowering its team-wide healing output while making it more useful for Brigitte herself.",
+     "general": [
+      "Base health lowered from 200 to 150"
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Inspire",
+       "name_cn": null,
+       "slug": "inspire",
+       "changes": [
+        {
+         "text_en": "Total healing decreased from 130 to 90 (Healing reduced from 21 to 15 health per second)",
+         "text_cn": null,
+         "before": 130.0,
+         "after": 90.0,
+         "metric": "total healing"
+        },
+        {
+         "text_en": "Self-healing is no longer reduced by half",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "orisa",
+     "name_en": "Orisa",
+     "name_cn": "奥丽莎",
+     "role": "tank",
+     "dev_note": "The large radius of Orisa's Halt! ability made it too effective in setting up combos against large groups of enemies on a relatively short cooldown. The changes to the projectile speed and radius are aimed at shifting its use to be more effective at catching single targets.",
+     "general": [
+      "Base armor reduced from 250 to 200"
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Halt!",
+       "name_cn": "站住！",
+       "slug": "halt",
+       "changes": [
+        {
+         "text_en": "Radius reduced from 7 to 4 meters",
+         "text_cn": null,
+         "before": 7.0,
+         "after": 4.0,
+         "metric": "radius"
+        },
+        {
+         "text_en": "Projectile speed increased from 20 to 30",
+         "text_cn": null,
+         "before": 20.0,
+         "after": 30.0,
+         "metric": "projectile speed"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "pharah",
+     "name_en": "Pharah",
+     "name_cn": "法老之鹰",
+     "role": "damage",
+     "dev_note": "We’re making some adjustments to Hover Jets that should increase her flight speed and make her more agile. To compensate for this change, we’re also lowering her hover uptime. Rocket Barrage has such immense damage output that the tail end of the duration was often more of a liability than a benefit, especially with fewer barriers around to blast through.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Hover Jets",
+       "name_cn": null,
+       "slug": "hover-jets",
+       "changes": [
+        {
+         "text_en": "Movement speed increased 20%",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Regeneration rate reduced from 50 to 35 per second",
+         "text_cn": null,
+         "before": 50.0,
+         "after": 35.0,
+         "metric": "regeneration rate"
+        }
+       ]
+      },
+      {
+       "name_en": "Barrage",
+       "name_cn": null,
+       "slug": "barrage",
+       "changes": [
+        {
+         "text_en": "Duration reduced from 3 to 2.5 seconds",
+         "text_cn": null,
+         "before": 3.0,
+         "after": 2.5,
+         "metric": "duration"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "roadhog",
+     "name_en": "Roadhog",
+     "name_cn": "路霸",
+     "role": "tank",
+     "dev_note": "These weapon changes are intended to make Roadhog's Chain Hook combo more consistent and bring back some of the heavyweight feeling it had in the past.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Scrap Gun",
+       "name_cn": null,
+       "slug": "scrap-gun",
+       "changes": [
+        {
+         "text_en": "Ammo reduced from 6 to 5",
+         "text_cn": null,
+         "before": 6.0,
+         "after": 5.0,
+         "metric": "ammo"
+        },
+        {
+         "text_en": "Damage per projectile increased from 6 to 7",
+         "text_cn": null,
+         "before": 6.0,
+         "after": 7.0,
+         "metric": "damage per projectile"
+        },
+        {
+         "text_en": "Recovery increased from 0.7 to 0.85 seconds",
+         "text_cn": null,
+         "before": 0.7,
+         "after": 0.85,
+         "metric": "recovery"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "sigma",
+     "name_en": "Sigma",
+     "name_cn": "西格玛",
+     "role": "tank",
+     "dev_note": "Given Sigma’s offensive strength with Hyperspheres and Accretion, we have reduced some of his defensive tools to bring him more in line with other Tank heroes.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Experimental Barrier",
+       "name_cn": null,
+       "slug": "experimental-barrier",
+       "changes": [
+        {
+         "text_en": "Health reduced from 900 to 700",
+         "text_cn": null,
+         "before": 900.0,
+         "after": 700.0,
+         "metric": "health"
+        },
+        {
+         "text_en": "Regeneration rate reduced from 120 to 80 per second",
+         "text_cn": null,
+         "before": 120.0,
+         "after": 80.0,
+         "metric": "regeneration rate"
+        }
+       ]
+      },
+      {
+       "name_en": "Kinetic Grasp",
+       "name_cn": null,
+       "slug": "kinetic-grasp",
+       "changes": [
+        {
+         "text_en": "Cooldown increased from 10 to 12 seconds",
+         "text_cn": null,
+         "before": 10.0,
+         "after": 12.0,
+         "metric": "cooldown"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "symmetra",
+     "name_en": "Symmetra",
+     "name_cn": "秩序之光",
+     "role": "damage",
+     "dev_note": "We're reducing the cooldown of the Teleporter to help lower the friction between needing to use it as both a personal and team-focused mobility tool.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Teleporter",
+       "name_cn": null,
+       "slug": "teleporter",
+       "changes": [
+        {
+         "text_en": "Cooldown reduced from 12 to 10 seconds",
+         "text_cn": null,
+         "before": 12.0,
+         "after": 10.0,
+         "metric": "cooldown"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "zenyatta",
+     "name_en": "Zenyatta",
+     "name_cn": "禅雅塔",
+     "role": "support",
+     "dev_note": "Zenyatta has low healing and mobility outside of his ultimate but makes up for it with high potential damage output. With the recently lowered barrier uptime resulting in an overall faster pace of the game, we want to make sure Zenyatta still excels at his strengths. This change will make his charged attack flow a bit better in combat.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Orb of Destruction",
+       "name_cn": null,
+       "slug": "orb-of-destruction",
+       "changes": [
+        {
+         "text_en": "Charge rate increased 15% (0.6 down to 0.52 seconds per orb)",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Rate of fire increased from 8.5 to 9 shots per second",
+         "text_cn": null,
+         "before": 8.5,
+         "after": 9.0,
+         "metric": "rate of fire"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  }
+ ],
+ "raw_text": null,
+ "hash": "sha256:1a5cf051a2980e1b9fb93acc5cb99445548b77c12e3180777fe5f999c5347b44"
+}

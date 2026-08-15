@@ -1,0 +1,127 @@
+{
+ "id": "en-2021-10-12-1",
+ "site": "en",
+ "date": "2021-10-12",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2021/10",
+ "title": "Overwatch Retail Patch Notes - October 12, 2021",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "Seasonal Event: Halloween Terror 2021",
+   "role": null,
+   "description": "Overwatch Halloween Terror returns! During this spine-chilling in-game event, expand your collection with spooky new cosmetics and experience our limited-time PvE brawl in the chilling tale of Junkenstein's Revenge. Face the terror of six Junkenstein’s Revenge Challenges, diabolical twists on Dr. Junkenstein’s sordid plans. Plus, overcome weekly challenges by playing Quick Play, Competitive Play, or Arcade to earn a series of unique rewards! Throughout the event, unlock new seasonal items—including legendary skins like Draugr Reinhardt, Satyr Lucio, and Vampire Hunter Brigitte—to add to our growing collection from previous years.",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "Competitive Team Deathmatch",
+   "role": null,
+   "description": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": null,
+     "body": "Season 4 of Competitive Team Deathmatch has begun!",
+     "dev": null
+    }
+   ]
+  },
+  {
+   "type": "generic_update",
+   "title": "General Updates",
+   "role": null,
+   "description": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": null,
+     "body": "Tuned reverb (or acoustic spaces) to address feedback regarding clarity in certain interior locations",
+     "dev": null
+    }
+   ]
+  },
+  {
+   "type": "hero_update",
+   "title": "Hero Updates",
+   "role": null,
+   "description": null,
+   "heroes": [
+    {
+     "slug": "mercy",
+     "name_en": "Mercy",
+     "name_cn": "天使",
+     "role": "support",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Guardian Angel",
+       "name_cn": null,
+       "slug": "guardian-angel",
+       "changes": [
+        {
+         "text_en": "Guardian Angel will only ever fly to the ally you are aiming at.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Guardian Angel will fly to your beam target if you have one, if not it will attempt to use the ally you are aiming at.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Guardian Angel will fly to the ally you are aiming at. If there is not one, it will attempt to use your beam target.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Holding down the button for Guardian Angel while using \"Toggle Guardian Angel: On\", will now activate once a valid target is found.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "Bug Fixes",
+   "role": null,
+   "description": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "General",
+     "body": "We’ve made additional changes to improve the detection of AFK players at the start of a match, including when attackers are forced back into their spawn rooms by an aggressive defense. Fixed a rare bug that could cause players to die immediately after the respawn timer expires before returning to the spawn room Fixed a bug that caused the waveform asset on voiceline previews to not animate properly",
+     "dev": null
+    },
+    {
+     "title": "Maps",
+     "body": "Busan Fixed a bug that allowed Symmetra turrets to shoot through one sided collision around the point on the Downtown map Lijiang Tower Fixed a bug that caused some third person sound effects to sound muffled when near the point on the Night Market map",
+     "dev": null
+    },
+    {
+     "title": "Heroes",
+     "body": "Ana Fixed a bug that caused the reticle effect on her scope to appear incorrectly when the Haroeris skin is equipped Ashe Fixed a bug that caused her ankles to bend awkwardly when positioned on certain uneven terrain Bastion Fixed a bug with the Sand Castle skin description that references Summer Games 2021 rather than Summer Games 2020 D.Va Fixed a bug with the MEKA Activated highlight intro being centered incorrectly when previewed in a loot box on the Kanezaka map Echo Fixed a bug that caused several Mercy skins to not display their friendly clone visual effects hair overlays when using the Valkyrie ability Genji Fixed a bug with deflect sound effects not ending if the ability is canceled early if the Pacific All Star Genji skin is equipped Mercy Fixed a bug that could cause Guardian Angel to be canceled if the target moves away quickly Reinhardt Fixed a bug that allowed Reinhardt to perform an extra jump after falling from high area while performing Earthshatter Sombra Fixed a bug that caused spectators to be unable to see an invisible Sombra while spectating her in third person Symmetra Fixed a bug that caused Photon Barrier to continue to block damage after the visual effects despawn Torbjorn Fixed a bug that caused both the hammer and rivet gun to appear together during the Overload emote if the Ironclad or Chief Engineer Lindholm skins are equipped",
+     "dev": null
+    }
+   ]
+  }
+ ],
+ "raw_text": null,
+ "hash": "sha256:b2515dda0b5a8d56052a8fefa997ea5dcb0976bbbeb0b43adb5faf126b3b1c91"
+}

@@ -194,6 +194,7 @@ def build_hero_files(data_dir: pathlib.Path, resolver: NameResolver | None = Non
                         for change in ability.get("changes", []):
                             timeline.setdefault(slug, []).append({
                                 "patch": data["id"], "date": data["date"], "site": data["site"],
+                                "url": data.get("url"), "patch_title": data.get("title"),
                                 "kind": "ability",
                                 "ability_slug": ability.get("slug"),
                                 "ability_en": ability.get("name_en"),
@@ -203,6 +204,7 @@ def build_hero_files(data_dir: pathlib.Path, resolver: NameResolver | None = Non
                     for perk in hero.get("perks", []):
                         timeline.setdefault(slug, []).append({
                             "patch": data["id"], "date": data["date"], "site": data["site"],
+                            "url": data.get("url"), "patch_title": data.get("title"),
                             "kind": "perk",
                             "perk_en": perk.get("name_en"),
                             "perk_cn": perk.get("name_cn"),
@@ -213,6 +215,7 @@ def build_hero_files(data_dir: pathlib.Path, resolver: NameResolver | None = Non
                     for line in hero.get("general", []):
                         timeline.setdefault(slug, []).append({
                             "patch": data["id"], "date": data["date"], "site": data["site"],
+                            "url": data.get("url"), "patch_title": data.get("title"),
                             "kind": "general",
                             "text_en": line if data["site"] == "en" else None,
                             "text_cn": line if data["site"] == "cn" else None,

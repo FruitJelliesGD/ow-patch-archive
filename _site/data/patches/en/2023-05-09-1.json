@@ -1,0 +1,867 @@
+{
+ "id": "en-2023-05-09-1",
+ "site": "en",
+ "date": "2023-05-09",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/05",
+ "title": "Overwatch 2 Retail Patch Notes - May 9, 2023",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "EVENT UPDATES",
+   "role": null,
+   "description": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "New Event - Starwatch: Galactic Rescue",
+     "body": "Battle for the fate of the galaxy in this new four-point Assault mode. Side with the Watcher rebels alongside the mighty Bonebreaker to rescue 3CH-0 from the Infinite Galactrius starship. Or serve the Infinite Empire and use the starship's security systems to defend against the intruders. Your choice will decide the fate of the galaxy, for whichever side wins more battles by the end of the event will reign supreme! Complete event challenges to unlock limited-time cosmetics, like the Asteroid Wrecking Ball epic skin, as well as up to 50,000 Battle Pass XP.",
+     "dev": null
+    },
+    {
+     "title": "Battle for Olympus Returns",
+     "body": "To celebrate Zeus Junker Queen's victory from Season 2's Battle for Olympus event, we are bringing back the game mode for a limited-time, including an all new Team Deathmatch version! To further commemorate the victors of Season 2, a statue of the god herself has been erected in Ilios.",
+     "dev": null
+    }
+   ]
+  },
+  {
+   "type": "generic_update",
+   "title": "GENERAL UPDATES",
+   "role": null,
+   "description": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "Ping System",
+     "body": "\"Group Up\" can now be used while dead. Added a new setting to Controls -> Communication -> Ping - Options -> Enable Contextual Comms Wheel. When Enabled, this setting changes \"Group Up\" and \"Need Healing\" to use alternate comms when aiming at allies. This setting is \"Off\" by default. Junker Queen can now ping targets through surfaces that her knife is stuck in, in the same way that Zenyatta can ping targets his Discord is attached to.",
+     "dev": null
+    },
+    {
+     "title": "Push Game Mode Update",
+     "body": "The respawn time for players is increased by 2 seconds from 10s to 12s while their team’s forward spawn location is activated.",
+     "dev": "Developer Comments: Forward spawn locations were proving to be too advantageous for the team with the lead, making it a bit too difficult for the disadvantaged team to mount a comeback."
+    },
+    {
+     "title": "Matchmaking",
+     "body": "MMR decay system has received multiple improvements aimed at more quickly and accurately re-calibrating players when they return from a long period of inactivity.",
+     "dev": null
+    }
+   ]
+  },
+  {
+   "type": "generic_update",
+   "title": "COMPETITIVE UPDATES",
+   "role": null,
+   "description": "The 2023 Competitive Deathmatch season begins on May 16th!",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "HERO UPDATES",
+   "role": null,
+   "description": "HERO UPDATES",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "TANK",
+   "role": null,
+   "description": null,
+   "heroes": [
+    {
+     "slug": "junker-queen",
+     "name_en": "Junker Queen",
+     "name_cn": "渣客女王",
+     "role": "tank",
+     "dev_note": "Developer Comments: These changes increase Junker Queen's front-line presence by increasing her self-healing and offensive sustainability. We've also increased Jagged Blade's projectile size so it's more consistent to land.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Scattergun",
+       "name_cn": null,
+       "slug": "scattergun",
+       "changes": [
+        {
+         "text_en": "Maximum ammo increased from 6 to 8",
+         "text_cn": null,
+         "before": 6.0,
+         "after": 8.0,
+         "metric": "maximum ammo"
+        }
+       ]
+      },
+      {
+       "name_en": "Jagged Blade",
+       "name_cn": null,
+       "slug": "jagged-blade",
+       "changes": [
+        {
+         "text_en": "Projectile size increased from 0.15 to 0.20 meters",
+         "text_cn": null,
+         "before": 0.15,
+         "after": 0.2,
+         "metric": "projectile size"
+        }
+       ]
+      },
+      {
+       "name_en": "Rampage",
+       "name_cn": null,
+       "slug": "rampage",
+       "changes": [
+        {
+         "text_en": "Now deals 40 impact damage",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Wound damage decreased from 100 to 60",
+         "text_cn": null,
+         "before": 100.0,
+         "after": 60.0,
+         "metric": "wound damage"
+        }
+       ]
+      },
+      {
+       "name_en": "Adrenaline Rush",
+       "name_cn": null,
+       "slug": "adrenaline-rush",
+       "changes": [
+        {
+         "text_en": "Adrenaline passive healing multiplier increased from 1.25 to 2x damage dealt by wounds",
+         "text_cn": null,
+         "before": 1.25,
+         "after": 2.0,
+         "metric": "adrenaline passive healing multiplier"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "orisa",
+     "name_en": "Orisa",
+     "name_cn": "奥丽莎",
+     "role": "tank",
+     "dev_note": "Developer Comments: Orisa often gets a lot of value with her abilities, but she is underperforming compared to other tanks. Increasing her weapon damage will make her more of an immediate threat after closing the distance with the enemy team.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Augmented Fusion Driver",
+       "name_cn": "强化聚变驱动器",
+       "slug": "augmented-fusion-driver",
+       "changes": [
+        {
+         "text_en": "Damage increased from 12 to 13",
+         "text_cn": null,
+         "before": 12.0,
+         "after": 13.0,
+         "metric": "damage"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "winston",
+     "name_en": "Winston",
+     "name_cn": "温斯顿",
+     "role": "tank",
+     "dev_note": "Developer Comments: It's difficult to deal full damage with Winston's leap due to needing to land almost directly on the enemy hero. Increasing this range will improve its consistency.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Jet Pack",
+       "name_cn": null,
+       "slug": "jet-pack",
+       "changes": [
+        {
+         "text_en": "Damage radius before falloff begins increased from 1 to 1.3 meters",
+         "text_cn": null,
+         "before": 1.0,
+         "after": 1.3,
+         "metric": "damage radius before falloff begins"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "wrecking-ball",
+     "name_en": "Wrecking Ball",
+     "name_cn": "破坏球",
+     "role": "tank",
+     "dev_note": "Developer Comments: Adaptive Shields gives Wrecking Ball a lot of leeway in a fight due to its duration. This change to Adaptive Shields limits his survivability during prolonged engagements.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Adaptive Shield",
+       "name_cn": null,
+       "slug": "adaptive-shield",
+       "changes": [
+        {
+         "text_en": "Effect duration decreased from 9 to 7 seconds",
+         "text_cn": null,
+         "before": 9.0,
+         "after": 7.0,
+         "metric": "effect duration"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "DAMAGE",
+   "role": null,
+   "description": null,
+   "heroes": [
+    {
+     "slug": "echo",
+     "name_en": "Echo",
+     "name_cn": "回声",
+     "role": "damage",
+     "dev_note": "Developer Comments: The following changes increase the flexibility of Echo’s Duplicate ultimate and shift some of its focus away from the allure of building multiple copied ultimates in a single use. This puts more of an emphasis on choosing a Duplicate target based on the hero's overall utility for a given situation, with the benefit of increased survivability due to transforming. Echo will get her ultimate more frequently but it will be more difficult to generate the copied hero’s ultimate.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Duplicate",
+       "name_cn": null,
+       "slug": "duplicate",
+       "changes": [
+        {
+         "text_en": "Ultimate cost reduced 25%",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Ultimate generation decreased from 5.5x to 4x while Duplicate is active",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "junkrat",
+     "name_en": "Junkrat",
+     "name_cn": "狂鼠",
+     "role": "damage",
+     "dev_note": "Developer Comments: The previous adjustment to Concussion Mine's maximum damage lowered the effectiveness of Junkrat's grenade and mine combos too much so we are increasing the damage amount slightly.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Concussion Mine",
+       "name_cn": "震荡地雷",
+       "slug": "concussion-mine",
+       "changes": [
+        {
+         "text_en": "Maximum damage increased from 100 to 110",
+         "text_cn": null,
+         "before": 100.0,
+         "after": 110.0,
+         "metric": "maximum damage"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "Support",
+   "role": "support",
+   "description": null,
+   "heroes": [
+    {
+     "slug": "ana",
+     "name_en": "Ana",
+     "name_cn": "安娜",
+     "role": "support",
+     "dev_note": "Developer Comments: Ana’s survivability has improved significantly ever since the addition of the support passive. We are reducing the amount of healing provided by the Biotic Grenade explosion as she doesn’t need to rely on it for self-healing as much as before.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Biotic Grenade",
+       "name_cn": null,
+       "slug": "biotic-grenade",
+       "changes": [
+        {
+         "text_en": "Explosion healing decreased from 100 to 60",
+         "text_cn": null,
+         "before": 100.0,
+         "after": 60.0,
+         "metric": "explosion healing"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "baptiste",
+     "name_en": "Baptiste",
+     "name_cn": "巴蒂斯特",
+     "role": "support",
+     "dev_note": "Developer Comments: Immortality Field provides powerful utility, but its long cooldown means that Baptiste often has to wait for the perfect opportunity to use it. We're decreasing its cooldown slightly to promote more flexibility in usage, though it will still be uncommon to see it in more than once per engagement.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Immortality Field",
+       "name_cn": null,
+       "slug": "immortality-field",
+       "changes": [
+        {
+         "text_en": "Cooldown decreased from 25 to 23 seconds",
+         "text_cn": null,
+         "before": 25.0,
+         "after": 23.0,
+         "metric": "cooldown"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "kiriko",
+     "name_en": "Kiriko",
+     "name_cn": "雾子",
+     "role": "support",
+     "dev_note": "Developer Comments: Kiriko sometimes accidentally interrupts her Kunai reload with Ofuda. Kunai now reloads slightly sooner during the animation to mitigate this. In addition, there is now a hero option, \"Healing Ofuda Cancels Reload,\" which can be turned off to bypass this issue entirely.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Kunai",
+       "name_cn": null,
+       "slug": "kunai",
+       "changes": [
+        {
+         "text_en": "Kunai reloads after 65% percent of the animation has completed (formerly 75%)",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "New Hero option: \"Healing Ofuda Cancels Reload\"",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "lifeweaver",
+     "name_en": "Lifeweaver",
+     "name_cn": "生命之梭",
+     "role": "support",
+     "dev_note": "Developer Comments: Earthshatter is an ultimate where positioning is critical to effectively use, so we are adjusting it so that Reinhardt doesn’t have their ultimate be effectively canceled when Lifeweaver uses Life Grip.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Life Grip",
+       "name_cn": null,
+       "slug": "life-grip",
+       "changes": [
+        {
+         "text_en": "Reinhardt is no longer a valid target for Life Grip during Earthshatter, and using Earthshatter will cancel Life Grip.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "HERO OPTION UPDATES",
+   "role": null,
+   "description": "In addition to the hero balance adjustments in this update, we are implementing multiple quality-of-life settings for several heroes to give you the ability to custom-tailor your experience of playing your favorite heroes.",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "TANK",
+   "role": null,
+   "description": null,
+   "heroes": [
+    {
+     "slug": "d-va",
+     "name_en": "D.Va",
+     "name_cn": "D.Va",
+     "role": "tank",
+     "dev_note": null,
+     "general": [
+      "Added the Hero-Specific Options:",
+      "Hide Boosters Cancel Text - Off by default",
+      "Hide Boosters Timer - Off by default"
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "doomfist",
+     "name_en": "Doomfist",
+     "name_cn": "末日铁拳",
+     "role": "tank",
+     "dev_note": null,
+     "general": [
+      "Added the Hero-Specific Options:",
+      "Hand Cannon UI - On by default",
+      "Hold To Use Power Block - Off by default",
+      "Hide Power Block Cancel Text - Off by default",
+      "Hide Rocket Punch Meter - Off by default",
+      "Hide Rocket Punch Cancel Text - Off by default"
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "orisa",
+     "name_en": "Orisa",
+     "name_cn": "奥丽莎",
+     "role": "tank",
+     "dev_note": null,
+     "general": [
+      "Terra Surge can now be activated by pressing the Ultimate button again",
+      "Added the Hero-Specific Options:",
+      "Hide Fortify Timer - Off by default",
+      "Hold To Use Javelin Spin - Off by default",
+      "Hide Javelin Spin Cancel Text - Off by default"
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "ramattra",
+     "name_en": "Ramattra",
+     "name_cn": "拉玛刹",
+     "role": "tank",
+     "dev_note": null,
+     "general": [
+      "Block now respects holding the input through being stunned. Added the Hero-Specific Options:",
+      "Toggle Block - Off by default",
+      "Hide Nemesis Form Cancel Text - Off by default",
+      "Relative Aim Sensitivity During Nemesis Form - 100% by default",
+      "Relative Gyro Aim Sensitivity During Nemesis Form - 100% by default (only available on gyro-supported platforms)",
+      "Annihilation Cancel Input - Ability 1 by default"
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "reinhardt",
+     "name_en": "Reinhardt",
+     "name_cn": "莱因哈特",
+     "role": "tank",
+     "dev_note": null,
+     "general": [
+      "Added the Hero-Specific Options:",
+      "Relative Aim Sensitivity During Barrier Field - 100% by default",
+      "Relative Gyro Aim Sensitivity During Barrier Field - 100% by default (only available on gyro-supported platforms)",
+      "Hold To Use Charge - Off by default",
+      "Hide Charge Cancel Text - Off by default"
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "roadhog",
+     "name_en": "Roadhog",
+     "name_cn": "路霸",
+     "role": "tank",
+     "dev_note": null,
+     "general": [
+      "Added the Hero-Specific Option:",
+      "Hide Whole Hog Timer - Off by default"
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "sigma",
+     "name_en": "Sigma",
+     "name_cn": "西格玛",
+     "role": "tank",
+     "dev_note": null,
+     "general": [
+      "Gravitic Flux now automatically casts when the timer runs out"
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "winston",
+     "name_en": "Winston",
+     "name_cn": "温斯顿",
+     "role": "tank",
+     "dev_note": null,
+     "general": [
+      "Added the Hero-Specific Option:",
+      "Toggle Secondary Fire - Off by default"
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "wrecking-ball",
+     "name_en": "Wrecking Ball",
+     "name_cn": "破坏球",
+     "role": "tank",
+     "dev_note": null,
+     "general": [
+      "Pressing the Quick Melee button now cancels Roll",
+      "Added the Hero-Specific Option:",
+      "Toggle Quick Melee During Roll"
+     ],
+     "perks": [],
+     "abilities": []
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "DAMAGE",
+   "role": null,
+   "description": null,
+   "heroes": [
+    {
+     "slug": "bastion",
+     "name_en": "Bastion",
+     "name_cn": "堡垒",
+     "role": "damage",
+     "dev_note": null,
+     "general": [
+      "Configuration: Artillery now automatically casts when the timer runs out",
+      "Added the Hero-Specific Options:",
+      "Relative Aim Sensitivity During Reconfigure - 100% by default",
+      "Relative Gyro Aim Sensitivity During Reconfigure - 100% by default (only available on gyro-supported platforms)"
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "cassidy",
+     "name_en": "Cassidy",
+     "name_cn": "卡西迪",
+     "role": "damage",
+     "dev_note": null,
+     "general": [
+      "Added the Hero-Specific Options:",
+      "Hide Deadeye Timer - Off by default",
+      "Hide Deadeye Cancel Text - Off by default"
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "echo",
+     "name_en": "Echo",
+     "name_cn": "回声",
+     "role": "damage",
+     "dev_note": null,
+     "general": [
+      "Added the Hero-Specific Options:",
+      "Hold To Use Focusing Beam - Off by default",
+      "Hide Flight Cancel Text - Off by default",
+      "Hide Flight Timer - Off by default"
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "genji",
+     "name_en": "Genji",
+     "name_cn": "源氏",
+     "role": "damage",
+     "dev_note": null,
+     "general": [
+      "Added the Hero-Specific Options:",
+      "Hold To Use Deflect - Off by default",
+      "Hide Deflect Cancel Text - Off by default"
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "mei",
+     "name_en": "Mei",
+     "name_cn": "美",
+     "role": "damage",
+     "dev_note": null,
+     "general": [
+      "Cyro-Freeze can now be canceled by pressing the ability’s button again",
+      "Added the Hero-Specific Options:",
+      "Hold To Use Cryo-Freeze - Off by default",
+      "Hide Cyro-Freeze Cancel Text - Off by default",
+      "Hide Cryo-Freeze Timer - Off by default",
+      "Default Ice Wall Rotation - Horizontal by default",
+      "Ice Wall Confirmation Input - Primary Fire by default"
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "pharah",
+     "name_en": "Pharah",
+     "name_cn": "法老之鹰",
+     "role": "damage",
+     "dev_note": null,
+     "general": [
+      "Added the Hero-Specific Option:",
+      "Toggle Hover Jets - Off by default"
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "reaper",
+     "name_en": "Reaper",
+     "name_cn": "死神",
+     "role": "damage",
+     "dev_note": null,
+     "general": [
+      "Added the Hero-Specific Options:",
+      "Hold To Use Wraith Form - Off by Default",
+      "Hide Wraith Form Cancel Text - Off by Default",
+      "Shadow Step Confirmation Input - Primary Fire by default"
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "sombra",
+     "name_en": "Sombra",
+     "name_cn": "黑影",
+     "role": "damage",
+     "dev_note": null,
+     "general": [
+      "Added the Hero-Specific Option:",
+      "Toggle Hack - Off by default"
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "symmetra",
+     "name_en": "Symmetra",
+     "name_cn": "秩序之光",
+     "role": "damage",
+     "dev_note": null,
+     "general": [
+      "Added the Hero-Specific Options:",
+      "Toggle Secondary Fire - Off by default",
+      "Hold To Deploy Sentry Turret - On by default",
+      "Teleporter and Photon Barrier Confirmation Input - Primary Fire by default",
+      "Default Photon Barrier Rotation - Horizontal by default",
+      "Hide Photon Barrier Timer - Off by default"
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "torbjorn",
+     "name_en": "Torbjörn",
+     "name_cn": "托比昂",
+     "role": "damage",
+     "dev_note": null,
+     "general": [
+      "Added the Hero-Specific Option:",
+      "Hide Overload Timer - Off by default"
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "tracer",
+     "name_en": "Tracer",
+     "name_cn": "猎空",
+     "role": "damage",
+     "dev_note": null,
+     "general": [
+      "Added the Hero-Specific Option:",
+      "Blink UI - On by default"
+     ],
+     "perks": [],
+     "abilities": []
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "SUPPORT",
+   "role": null,
+   "description": null,
+   "heroes": [
+    {
+     "slug": "baptiste",
+     "name_en": "Baptiste",
+     "name_cn": "巴蒂斯特",
+     "role": "support",
+     "dev_note": null,
+     "general": [
+      "Automatic Reload setting now reloads when both Primary and Secondary Fire are out of ammo if setting is set to Off",
+      "Added the Hero-Specific Options:",
+      "Default Amplification Matrix Rotation - Horizontal by default",
+      "Amplification Matrix Confirmation Input - Primary Fire by default"
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "brigitte",
+     "name_en": "Brigitte",
+     "name_cn": "布丽吉塔",
+     "role": "support",
+     "dev_note": null,
+     "general": [
+      "Added the Hero-Specific Options:",
+      "Relative Aim Sensitivity During Barrier Shield - 100% by default",
+      "Relative Gyro Aim Sensitivity During Barrier Shield - 100% by default (only available on gyro-supported platforms)",
+      "Repair Pack UI - On by default"
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "kiriko",
+     "name_en": "Kiriko",
+     "name_cn": "雾子",
+     "role": "support",
+     "dev_note": null,
+     "general": [
+      "Added the Hero-Specific Options:",
+      "Healing Ofuda Cancels Reload - On by default"
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "lifeweaver",
+     "name_en": "Lifeweaver",
+     "name_cn": "生命之梭",
+     "role": "support",
+     "dev_note": null,
+     "general": [
+      "Added the Hero-Specific Options:",
+      "Relative Thorn Volley Aim Sensitivity - 100% by default",
+      "Relative Thorn Volley Gyro Aim Sensitivity - 100% by default (only available on gyro-supported platforms)",
+      "Tree of Life Confirmation Input - Primary Fire by default"
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "lucio",
+     "name_en": "Lúcio",
+     "name_cn": "卢西奥",
+     "role": "support",
+     "dev_note": null,
+     "general": [
+      "Allow Backwards Wall Ride option now On by default",
+      "Hold To Crossfade options changed from Off/On to Off/Hold For Speed/Hold For Heal."
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "mercy",
+     "name_en": "Mercy",
+     "name_cn": "天使",
+     "role": "support",
+     "dev_note": null,
+     "general": [
+      "Added the Hero-Specific Options:",
+      "Caduceus Blaster Input - Primary Fire by default",
+      "Relative Caduceus Blaster Aim Sensitivity - 100% by default",
+      "Relative Caduceus Blaster Gyro Aim Sensitivity - 100% by default (only available on gyro-supported platforms)"
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "zenyatta",
+     "name_en": "Zenyatta",
+     "name_cn": "禅雅塔",
+     "role": "support",
+     "dev_note": null,
+     "general": [
+      "Added the Hero-Specific Options:",
+      "Harmony and Discord Orb Cancel Reload - On by default",
+      "Hide Transcendence Timer - Off by default"
+     ],
+     "perks": [],
+     "abilities": []
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "BUG FIXES",
+   "role": null,
+   "description": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "GENERAL",
+     "body": "Resolved an issue that awarded the incorrect competitive Season 3 titles for some players Fixed a bug in the Options menu that resulted in Communication Option changes to not save Console - Fixed an issue that prevented you from navigating the competitive menu while in queue Console - Fixed a bug on some consoles that prevented saving highlights Console - Fixed a bug that prevented players on console from renaming Custom Game presets Fixed a bug with Payload and Hybrid game modes displaying a debug string when the payload is pushed the end of the map Resolved a bug where you were unable to view some Heroes weapons and/or equipment in the Hero Gallery Fixed a bug with the camera sometimes becoming askew when the player's movement was interrupted by negative statuses Fixed an issue where some Maps were missing images on the Competitive Progress screen Fixed a bug where a sound prompt was missing when you ranked down in Competitive modes",
+     "dev": null
+    },
+    {
+     "title": "MAPS",
+     "body": "Antarctic Peninsula Removed a large misplaced shadow near the capture point in the Labs area Busan Fixed a bug with the drum in the Sanctuary area allowing player objects to be thrown/placed inside of it Circuit Royale Fixed some areas that allowed players to stand in unintended locations Esperança Replaced the indestructible vase in the spawn rooms to a regular ceramic vase that can shatter. Please break them at your own will. Hollywood Removed a planter near the first choke Lijang Tower Fixed in a previous update - Fixed a bug that allowed players to stand in unintended locations Shambali Monestary Fixed some areas on the map that would eat projectiles",
+     "dev": null
+    },
+    {
+     "title": "HEROES",
+     "body": "Ana Fixed a bug where Biotic Grenade was only tracking self-hits Ashe Fixed a bug where Ashe's accuracy became inconsistent during a jump and other movements Bastion Fixed a bug with the Assault Configuration playing an old reload animation if used as soon as you spawn Brigitte Fixed a bug which caused Brigitte’s extra armor during ‘Rally’ to not apply it’s 30% damage reduction correctly Doomfist Fixed a bug with Powerblock not correctly reducing area of effect damage Fixed a bug with the Empowered buff from Meteor Strike not counting toward the Empowered Rocket Punch stat D.Va Fixed a bug with D.Va's 'Selfie' highlight intro not removing the mech after the explosion when some skins were equipped Genji Fixed a bug where deflecting Kiriko or Lifeweaver's healing projectiles did not heal your allies Kiriko Fixed a bug with Swift Step sometimes getting players stuck in the map Lifeweaver Fixed the issue with Lifeweaver's Custom Game controls being broken after the controls update Fixed an issue with the Petal Platform geometry not matching its projectile collision Fixed a bug where your Life Grip target would bounce back if you activate the ability while you're on an enemy Petal Platform and they are on a friendly Petal Platform Fixed an issue with Life Grip failing and going on cooldown in some cases if used at the same time as your target activated an ability Fixed a bug where Lifeweaver would auto-swap to Healing Blossom if Tree of Life was placed while Thorn Volley was active Fixed the placement of Lifeweaver in the Hero Gallery and Hero Select Mei Fixed a bug with Ice Wall becoming unusable until cancelled after targeting an invalid location Pharah Fixed a bug with Concussive Blast only tracking self-hits Ramattra Fixed a bug with Nemesis form failing to go on cooldown if you die during the transformation Fixed a bug with Nemesis form not activating and enabling its cooldown if you were knocked down while Annihilation mode is active and then attempted to activate Nemesis Form Reaper Fixed a bug with the Ambush Play of the Game not having a sniper reticle and some sounds when certain skins were equipped Sojourn Resolved an issue where the Disruptor could be attached to the Push bot Sombra Fixed a stat tracking issue where Health Pack healing was only counting self-healing Widowmaker Fixed a bug where Widowmaker could become stuck in the grappling animation if Grappling Hook was used on a moving platform",
+     "dev": null
+    },
+    {
+     "title": "WORKSHOP",
+     "body": "Fixed multiple issues related to Custom Projectiles",
+     "dev": null
+    }
+   ]
+  }
+ ],
+ "raw_text": null,
+ "hash": "sha256:703e4cd6317b8145e5c4b25147495bbb6ef28a4d19dd93614e7bc14ff523eba4"
+}

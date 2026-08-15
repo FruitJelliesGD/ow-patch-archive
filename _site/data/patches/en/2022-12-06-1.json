@@ -1,0 +1,763 @@
+{
+ "id": "en-2022-12-06-1",
+ "site": "en",
+ "date": "2022-12-06",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2022/12",
+ "title": "Overwatch 2 Retail Patch Notes - December 6, 2022",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "OVERWATCH 2, SEASON 2",
+   "role": null,
+   "description": "Ramattra storms the Season 2 Battle Pass, unlocking for free at Level 45 or immediately for the premium Battle Pass. As Overwatch’s first “tempo tank,” Ramattra can change between two forms moment to moment based on what his teammates need. With the tactical training of a lethal soldier and the discipline of a devout monk, Ramattra can be your greatest asset or your worst enemy. Embark on a pilgrimage to our latest escort map, Shambali Monastery, where you can explore ancient temple grounds and traverse winding village streets. Follow in the footsteps of countless omnics--some who may be familiar to you--on the uphill trek to the Sanctum. Advance through the Battle Pass and earn rewards inspired by Ancient Greece and get ready for three limited-time events: Winter Wonderland, Battle for Olympus, and Lunar New Year!",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "GENERAL UPDATES",
+   "role": null,
+   "description": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "Control Game Mode",
+     "body": "We fixed a bug regarding overtime on control maps, however, that fix led to other bugs we had to resolve. Ultimately, this led to some anticlimactic game play results that we weren’t happy with. After hearing player feedback, we've made the following change: Whenever a point is captured on Control, the team losing control of the point counts as having contested the point for the purposes of Overtime even if they were not present. For example, if Team A has 99% and Team B has current control of the point, but then Team A take back control of the point, Overtime will automatically trigger and start to burn down unless Team B can touch again. At lower capture percentages this change will have no impact on the game mode, as this new rule is only applied for the purposes of Overtime",
+     "dev": null
+    },
+    {
+     "title": "Hero Updates and Challenges",
+     "body": "We've added Challenges for unlocking Junker Queen, Sojourn, and Kiriko 70+ player icon rewards have been added to challenges with the release of Season 2",
+     "dev": null
+    },
+    {
+     "title": "Shop Update",
+     "body": "We've added a Hero purchase tab in the Shop",
+     "dev": null
+    }
+   ]
+  },
+  {
+   "type": "generic_update",
+   "title": "COMPETITIVE PLAY",
+   "role": null,
+   "description": "Season 2 competitive play begins now! Here are some updates we’re introducing to competitive: There are new, temporary Competitive title rewards for name cards based on your end of season rank You can only earn these titles at the end of the current Competitive season and can only use them in the season following Heroes that aren’t eligible for competitive play will have a lock icon in the Hero Gallery Implemented a group of matchmaking enhancements to improve match quality Minor polish improvements to the competitive play UI flow New hero, Ramattra, won’t be available in competitive for 2 weeks",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "HERO UPDATES",
+   "role": null,
+   "description": "Damage Role Passive No longer provides a movement speed bonus Reload speed bonus increased from 25 to 35%",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "TANK",
+   "role": null,
+   "description": null,
+   "heroes": [
+    {
+     "slug": "ramattra",
+     "name_en": "Ramattra",
+     "name_cn": "拉玛刹",
+     "role": "tank",
+     "dev_note": null,
+     "general": [
+      "Ramattra has been added to the line-up"
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Void Accelerator (Omnic Form)",
+       "name_cn": null,
+       "slug": "void-accelerator-omnic-form",
+       "changes": [
+        {
+         "text_en": "Primary: Fire a stream of projectiles in a fixed pattern",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Secondary: Create a barrier at the targeted location",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Nemesis Form",
+       "name_cn": null,
+       "slug": "nemesis-form",
+       "changes": [
+        {
+         "text_en": "Transform into Nemesis Form, changing your attacks and gaining bonus armor",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Pummel (Nemesis Form)",
+       "name_cn": null,
+       "slug": "pummel-nemesis-form",
+       "changes": [
+        {
+         "text_en": "Primary: Punch forward, creating a wave of piercing energy with every swing",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Secondary: Significantly reduces damage taken from the front and reduces movement speed",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Ravenous Vortex",
+       "name_cn": null,
+       "slug": "ravenous-vortex",
+       "changes": [
+        {
+         "text_en": "Fire a nano ball, which explodes when it hits the ground, spreading a damaging field. Affected enemies are slowed and pulled downward",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Annihilation",
+       "name_cn": null,
+       "slug": "annihilation",
+       "changes": [
+        {
+         "text_en": "Enter Nemesis Form and create an energy swarm surrounding yourself. This swarm will lash out towards nearby enemies, dealing damage and pausing the duration when damage is dealt.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "doomfist",
+     "name_en": "Doomfist",
+     "name_cn": "末日铁拳",
+     "role": "tank",
+     "dev_note": "Developer comments: There are several changes here for Doomfist with the intent to increase his presence as a disruptive brawler-style tank. The buff to his passive ability will help him stay in the fight longer, especially when he’s hitting multiple enemies with his abilities. The changes to Power Block and Meteor Strike are intended to increase the availability of Empowered Rocket Punch, which enables him to more easily disrupt enemies and impact multiple targets. Due to gaining Empowered Rocket Punch more consistently, the stun duration and size are slightly decreased to reduce some of the frustration in playing against it. For Rocket Punch we’re shifting some of its damage away from requiring wall impacts so that it's broadly more useful regardless of where fights are taken.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Rocket Punch",
+       "name_cn": null,
+       "slug": "rocket-punch",
+       "changes": [
+        {
+         "text_en": "Impact damage range (minimum-maximum) increased from 15-30 to 25-50 damage",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Wall slam damage range (minimum-maximum) reduced from 20-40 to 10-30 damage",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Empowered Rocket Punch wall slam stun duration range reduced from 0.5-1 to 0.25-0.75 seconds",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Non-Empowered Rocket Punch now stuns for the minimum 0.25 second duration on wall slam",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Empowered Rocket Punch knockback radius reduced from 4 to 3 meters",
+         "text_cn": null,
+         "before": 4.0,
+         "after": 3.0,
+         "metric": "empowered rocket punch knockback radius"
+        },
+        {
+         "text_en": "Minimum time before cancel option becomes available reduced from 0.25 to 0.12 seconds",
+         "text_cn": null,
+         "before": 0.25,
+         "after": 0.12,
+         "metric": "minimum time before cancel option becomes available"
+        },
+        {
+         "text_en": "Cooldown reduced from 4 to 3 seconds",
+         "text_cn": null,
+         "before": 4.0,
+         "after": 3.0,
+         "metric": "cooldown"
+        },
+        {
+         "text_en": "This has been in since his rework but was not mentioned",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Power Block",
+       "name_cn": null,
+       "slug": "power-block",
+       "changes": [
+        {
+         "text_en": "Cooldown reduced from 8 to 7 seconds",
+         "text_cn": null,
+         "before": 8.0,
+         "after": 7.0,
+         "metric": "cooldown"
+        },
+        {
+         "text_en": "Duration increased from 2 to 2.5 seconds",
+         "text_cn": null,
+         "before": 2.0,
+         "after": 2.5,
+         "metric": "duration"
+        },
+        {
+         "text_en": "Minimum damage mitigated required to empower Rocket Punch reduced from 90 to 80 damage",
+         "text_cn": null,
+         "before": 90.0,
+         "after": 80.0,
+         "metric": "minimum damage mitigated required to empower rocket punch"
+        }
+       ]
+      },
+      {
+       "name_en": "Meteor Strike",
+       "name_cn": null,
+       "slug": "meteor-strike",
+       "changes": [
+        {
+         "text_en": "Now empowers Rocket Punch on landing",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Enemy slow duration increased from 2 to 3 seconds",
+         "text_cn": null,
+         "before": 2.0,
+         "after": 3.0,
+         "metric": "enemy slow duration"
+        }
+       ]
+      },
+      {
+       "name_en": "The Best Defense...",
+       "name_cn": null,
+       "slug": "the-best-defense",
+       "changes": [
+        {
+         "text_en": "Maximum temporary health increased from 150 to 200 health",
+         "text_cn": null,
+         "before": 150.0,
+         "after": 200.0,
+         "metric": "maximum temporary health"
+        },
+        {
+         "text_en": "Temporary health gained per target hit with abilities increased from 30 to 40 health",
+         "text_cn": null,
+         "before": 30.0,
+         "after": 40.0,
+         "metric": "temporary health gained per target hit with abilities"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "junker-queen",
+     "name_en": "Junker Queen",
+     "name_cn": "渣客女王",
+     "role": "tank",
+     "dev_note": "Developer comments: Commanding Shout is Junker Queen's primary tanking ability and utility, but the additional survivability it granted her team proved to be too powerful and needed to be tuned back significantly in a previous patch. We're looking to shift more of that survivability into Junker Queen herself by increasing the amount her passive ability heals through dealing damage with wounds.",
+     "general": [
+      "Torso and head hit volume size increased 12%"
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Rampage",
+       "name_cn": null,
+       "slug": "rampage",
+       "changes": [
+        {
+         "text_en": "Wound duration reduced from 5 to 4.5 seconds",
+         "text_cn": null,
+         "before": 5.0,
+         "after": 4.5,
+         "metric": "wound duration"
+        },
+        {
+         "text_en": "Ultimate cost reduced by 10%",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Commanding Shout",
+       "name_cn": null,
+       "slug": "commanding-shout",
+       "changes": [
+        {
+         "text_en": "Cooldown reduced from 15 to 14 seconds",
+         "text_cn": null,
+         "before": 15.0,
+         "after": 14.0,
+         "metric": "cooldown"
+        }
+       ]
+      },
+      {
+       "name_en": "Adrenaline Rush",
+       "name_cn": null,
+       "slug": "adrenaline-rush",
+       "changes": [
+        {
+         "text_en": "Adrenaline passive healing multiplier increased from 1 to 1.25x damage dealt by wounds",
+         "text_cn": null,
+         "before": 1.0,
+         "after": 1.25,
+         "metric": "adrenaline passive healing multiplier"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "DAMAGE",
+   "role": null,
+   "description": null,
+   "heroes": [
+    {
+     "slug": "bastion",
+     "name_en": "Bastion",
+     "name_cn": "堡垒",
+     "role": "damage",
+     "dev_note": "Developer comments: The intent for Bastion's ultimate is that enemy players can survive it if they are quick to react to the damaging impact areas, however, it ended up being too easy to avoid the damage areas entirely. We’re reducing both the amount of warning time and explosion damage so that it’s more reliable in dealing damage, but it won't be as lethal the closer the target gets to the edge of the explosion range.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Configuration Artillery",
+       "name_cn": null,
+       "slug": "configuration-artillery",
+       "changes": [
+        {
+         "text_en": "Delay before projectile drops reduced from 1 to 0.6 seconds",
+         "text_cn": null,
+         "before": 1.0,
+         "after": 0.6,
+         "metric": "delay before projectile drops"
+        },
+        {
+         "text_en": "Explosion damage reduced from 300 to 250",
+         "text_cn": null,
+         "before": 300.0,
+         "after": 250.0,
+         "metric": "explosion damage"
+        },
+        {
+         "text_en": "No longer deals explosion damage to self",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Minimum delay between placing shots reduced by 20%",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Reconfigure",
+       "name_cn": null,
+       "slug": "reconfigure",
+       "changes": [
+        {
+         "text_en": "Cooldown reduced from 12 to 10 seconds",
+         "text_cn": null,
+         "before": 12.0,
+         "after": 10.0,
+         "metric": "cooldown"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "sojourn",
+     "name_en": "Sojourn",
+     "name_cn": "索杰恩",
+     "role": "damage",
+     "dev_note": "Developer comments: Sojourn is performing well at the highest tiers of competitive play but poorly below those tiers. Much of the perception that she is too powerful seems to be driven by the reaction to dying to long range, charged headshots from her Railgun secondary fire. These changes are aimed at reducing frustrations there, with the biggest change being the reduced critical multiplier for headshots. A fully charged headshot no longer kills a full health 200 hp hero. To help account for this loss of power we're increasing the damage of her primary fire and how quickly her energy charges during her ultimate.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Railgun",
+       "name_cn": null,
+       "slug": "railgun",
+       "changes": [
+        {
+         "text_en": "Energy delay before draining reduced from 8 to 5 seconds",
+         "text_cn": null,
+         "before": 8.0,
+         "after": 5.0,
+         "metric": "energy delay before draining"
+        },
+        {
+         "text_en": "Secondary fire damage falloff starting range reduced from 70 to 40 meters",
+         "text_cn": null,
+         "before": 70.0,
+         "after": 40.0,
+         "metric": "secondary fire damage falloff starting range"
+        },
+        {
+         "text_en": "Secondary fire critical damage multiplier reduced from 2 to 1.5",
+         "text_cn": null,
+         "before": 2.0,
+         "after": 1.5,
+         "metric": "secondary fire critical damage multiplier"
+        },
+        {
+         "text_en": "Secondary fire damage now scales linearly with energy from 30 to 130 damage (1 energy converts to 1 damage added)",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Primary fire damage per projectile increased from 9 to 10",
+         "text_cn": null,
+         "before": 9.0,
+         "after": 10.0,
+         "metric": "primary fire damage per projectile"
+        },
+        {
+         "text_en": "Overclock energy charge rate increased by 20%",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "symmetra",
+     "name_en": "Symmetra",
+     "name_cn": "秩序之光",
+     "role": "damage",
+     "dev_note": "Developer comments: The changes to Symmetra's primary fire will make her gameplay faster by enabling her to charge the beam up to dangerous levels more quickly. However, it will also drain to less lethal levels at an increased rate when not damaging a target. We're reverting the adjustments to her ammo management because, while it helped with matchups where there were no barriers, it lost something interesting to its interactions.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Proton Projector",
+       "name_cn": null,
+       "slug": "proton-projector",
+       "changes": [
+        {
+         "text_en": "Beam charge rate and decay rate increased by 20%",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Primary fire ammo consumption rate increased from 7 to 10 per second",
+         "text_cn": null,
+         "before": 7.0,
+         "after": 10.0,
+         "metric": "primary fire ammo consumption rate"
+        },
+        {
+         "text_en": "Primary fire gains ammo from damaging barriers again",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "tracer",
+     "name_en": "Tracer",
+     "name_cn": "猎空",
+     "role": "damage",
+     "dev_note": "Developer comments: We balanced Tracer’s damage in a previous patch due to an undiscovered bug regarding her Pulse Pistol’s falloff damage. The bug is resolved, so we are reverting the damage.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Pulse Pistols",
+       "name_cn": "脉冲双枪",
+       "slug": "pulse-pistols",
+       "changes": [
+        {
+         "text_en": "Damage increased from 5 to 6",
+         "text_cn": null,
+         "before": 5.0,
+         "after": 6.0,
+         "metric": "damage"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "SUPPORT",
+   "role": null,
+   "description": null,
+   "heroes": [
+    {
+     "slug": "ana",
+     "name_en": "Ana",
+     "name_cn": "安娜",
+     "role": "support",
+     "dev_note": "Developer comments: Sleep Dart is still one of the most powerful crowd control abilities in 5v5, though with the addition of cleanse mechanics to offer a potential counter to this effect we're more comfortable with reducing the cooldown here to improve Ana's personal survivability.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Sleep Dart",
+       "name_cn": null,
+       "slug": "sleep-dart",
+       "changes": [
+        {
+         "text_en": "Cooldown reduced from 15 to 14 seconds",
+         "text_cn": null,
+         "before": 15.0,
+         "after": 14.0,
+         "metric": "cooldown"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "kiriko",
+     "name_en": "Kiriko",
+     "name_cn": "雾子",
+     "role": "support",
+     "dev_note": "Developer comments: The hit volume adjustment is to help address her arms sometimes blocking headshots in some of her animations. Kiriko feels balanced overall, but her ultimate could feel too frenetic at times. We're reducing both the movement speed and cooldown rate boost it grants so that it's easier to aim during its effect for both allies and enemies, as well as there being fewer abilities being thrown about. The rest of the changes are primarily for quality-of-life improvements to make the abilities feel better to use.",
+     "general": [
+      "Arm hit volumes width reduced 15%",
+      "Added an auto-wall climb hero option"
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Kitsune Rush",
+       "name_cn": null,
+       "slug": "kitsune-rush",
+       "changes": [
+        {
+         "text_en": "Ultimate cost increased by 10%",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Movement speed bonus reduced from 50 to 30%",
+         "text_cn": null,
+         "before": 50.0,
+         "after": 30.0,
+         "metric": "movement speed bonus"
+        },
+        {
+         "text_en": "Cooldown rate reduced from 3 to 2 times faster",
+         "text_cn": null,
+         "before": 3.0,
+         "after": 2.0,
+         "metric": "cooldown rate"
+        }
+       ]
+      },
+      {
+       "name_en": "Protection Suzu",
+       "name_cn": null,
+       "slug": "protection-suzu",
+       "changes": [
+        {
+         "text_en": "Cast time reduced from 0.15 to 0.1 second",
+         "text_cn": null,
+         "before": 0.15,
+         "after": 0.1,
+         "metric": "cast time"
+        }
+       ]
+      },
+      {
+       "name_en": "Kunai",
+       "name_cn": null,
+       "slug": "kunai",
+       "changes": [
+        {
+         "text_en": "Ammo increased from 12 to 15",
+         "text_cn": null,
+         "before": 12.0,
+         "after": 15.0,
+         "metric": "ammo"
+        }
+       ]
+      },
+      {
+       "name_en": "Swift Step",
+       "name_cn": null,
+       "slug": "swift-step",
+       "changes": [
+        {
+         "text_en": "Ability input can now be held to activate",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "mercy",
+     "name_en": "Mercy",
+     "name_cn": "天使",
+     "role": "support",
+     "dev_note": "Developer comments: This is a change that will enable Mercy to better defend herself or even go on the offensive at times. In 5v5 these situations occur much more often.",
+     "general": [
+      "Weapon swap time reduced from 0.5 to 0.35 seconds"
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Caduceus Blaster",
+       "name_cn": null,
+       "slug": "caduceus-blaster",
+       "changes": [
+        {
+         "text_en": "Ammo increased from 20 to 25",
+         "text_cn": null,
+         "before": 20.0,
+         "after": 25.0,
+         "metric": "ammo"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "SEASON 2 MAP POOLS",
+   "role": null,
+   "description": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "Push",
+     "body": "New Queen Street – Morning Colosseo – Evening Esperança - Morning",
+     "dev": null
+    },
+    {
+     "title": "Hybrid",
+     "body": "Blizzard World - Overcast (NEW) Eichenwalde – Evening King’s Row – Evening Midtown – Morning Paraíso - Morning",
+     "dev": null
+    },
+    {
+     "title": "Escort",
+     "body": "Dorado – Evening Junkertown – Morning Circuit royal – Night Rialto – Morning Route 66 – Night Shambali Monastery – Night (NEW MAP)",
+     "dev": null
+    },
+    {
+     "title": "Control",
+     "body": "Busan – Night Ilios – Evening Lijiang Tower – Dawn Nepal - Evening (NEW) Oasis - Morning (NEW)",
+     "dev": null
+    }
+   ]
+  },
+  {
+   "type": "generic_update",
+   "title": "BUG FIXES",
+   "role": null,
+   "description": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "General",
+     "body": "Fixed a bug that was causing Roadhog's breaths to not be audible when viewing some animations in the Hero Gallery Fixed a bug that caused some players to lose competitive challenge progress Resolved an issue where several products couldn’t be unlocked from the Hero Gallery Fixed an issue with the Lifesaver Challenge not counting Mercy's Resurrect as a 'Save' Resolved an issue with purchases not immediately showing up after purchase Fixed a bug with Torbjörn and Symmetra's turrets displaying hostile red overlays in Deathmatch for the player that placed them",
+     "dev": null
+    },
+    {
+     "title": "Maps",
+     "body": "Busan Fixed an area of the map where players could get stuck Colosseo Fixed geometry that allowed some heroes to contest undetected Esperança Fixed some areas that could be used to escape the playable space Fixed geometry that allowed some heroes to contest undetected Gibraltar Fixed lighting issues across the map Fixed some areas where Torbjörn could place his turret in unreachable spots Nepal Replaced some missing pillars on Sanctum Paraíso Fixed a bug that allowed some heroes to get inside of the payload Route 66 Fixed lighting issues across the map New Queen Street Fixed some issues with shadows across the map Fixed an area of the map where players could get stuck",
+     "dev": null
+    },
+    {
+     "title": "Heroes",
+     "body": "Heroes no longer take damage from their own abilities if they’re on the other side of a friendly barrier Fixed an issue with the Damage Passive where sometimes a double reload animation could occur when the buff was active Cassidy Resolved an issue with some skins using the wrong props in the 'Flashbang' victory pose Doomfist Fixed an issue where Doomfist's Power Block reduced the damage from some area of effect abilities Meteor Strike - You can no longer detect Sombra if the targeting reticle gets near her D.Va Fixed a bug that allowed players to use Self-Destruct during their Mech's destruction while Hacked Junker Queen Jagged Blade can no longer be recalled while slept, stunned, hacked or frozen Fixed an issue with Jagged Blade being consumed by friendly abilities like Deflect, Defense Matrix, etc. Jagged Blade now takes a curved trajectory on return Mercy Guardian Angel now correctly resets its cooldown if Valkyrie is used Guardian Angel 'cancel boost' is now disabled when Mercy is stunned Moira Junkrat's Trap no longer displays at chest height in first person when using Fade Pharah Fixed a bug that reduced the ult cost of Rocket Barrage Soldier 76 Fixed an issue where Soldier 76 was unable to critical hit max range enemies during Tactical Visor Symmetra Fixed a bug that resulted in all VO being cut out when taking the Teleporter Tracer Fixed a big causing her Pulse Pistol damage falloff to not start until max range Winston Resolved an issue with the Werewolf skin and the 'Excuse me' highlight intro turning Winston red in the Hero Gallery Zenyatta Fixed an issue with melee not correctly animating if used to cancel alternate fire",
+     "dev": null
+    }
+   ]
+  }
+ ],
+ "raw_text": null,
+ "hash": "sha256:9576c5db65b2bb6293042322e749b8d822fbade5fc58c5024875eeb241ef23e9"
+}

@@ -1,0 +1,389 @@
+{
+ "id": "en-2025-03-25-1",
+ "site": "en",
+ "date": "2025-03-25",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/03",
+ "title": "Overwatch 2 Retail Patch Notes - March 25, 2025",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "Hotfix Balance Update",
+   "role": null,
+   "description": "This is a hero balance hotfix. Replay codes from the March 18, 2025 patch are still available.",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "Hero Updates",
+   "role": null,
+   "description": "Balance changes apply to both 5v5 and 6v6 game modes.",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "Tank",
+   "role": "tank",
+   "description": null,
+   "heroes": [
+    {
+     "slug": "mauga",
+     "name_en": "Mauga",
+     "name_cn": "毛加",
+     "role": "tank",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Cardiac Overdrive",
+       "name_cn": null,
+       "slug": "cardiac-overdrive",
+       "changes": [
+        {
+         "text_en": "No longer provides allies with damage reduction.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Cage Fight",
+       "name_cn": null,
+       "slug": "cage-fight",
+       "changes": [
+        {
+         "text_en": "Ultimate cost increased 8%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Barrier health reduced from 1500 to 1200 HP.",
+         "text_cn": null,
+         "before": 1500.0,
+         "after": 1200.0,
+         "metric": "barrier health"
+        }
+       ]
+      },
+      {
+       "name_en": "Berserker Passive",
+       "name_cn": null,
+       "slug": "berserker-passive",
+       "changes": [
+        {
+         "text_en": "Overhealth conversion rate reduced from 50% to 40%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "roadhog",
+     "name_en": "Roadhog",
+     "name_cn": "路霸",
+     "role": "tank",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Take a Breather",
+       "name_cn": null,
+       "slug": "take-a-breather",
+       "changes": [
+        {
+         "text_en": "Maximum healing increased from 400 to 450.",
+         "text_cn": null,
+         "before": 400.0,
+         "after": 450.0,
+         "metric": "maximum healing"
+        }
+       ]
+      },
+      {
+       "name_en": "Whole Hog",
+       "name_cn": null,
+       "slug": "whole-hog",
+       "changes": [
+        {
+         "text_en": "Ultimate cost reduced 12%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "winston",
+     "name_en": "Winston",
+     "name_cn": "温斯顿",
+     "role": "tank",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Primal Rage",
+       "name_cn": null,
+       "slug": "primal-rage",
+       "changes": [
+        {
+         "text_en": "Ultimate cost increased 10%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "zarya",
+     "name_en": "Zarya",
+     "name_cn": "查莉娅",
+     "role": "tank",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Energy",
+       "name_cn": null,
+       "slug": "energy",
+       "changes": [
+        {
+         "text_en": "Degeneration rate increased from 2 to 2.5 per second.",
+         "text_cn": null,
+         "before": 2.0,
+         "after": 2.5,
+         "metric": "degeneration rate"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "Damage",
+   "role": "damage",
+   "description": null,
+   "heroes": [
+    {
+     "slug": "cassidy",
+     "name_en": "Cassidy",
+     "name_cn": "卡西迪",
+     "role": "damage",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Peacekeeper",
+       "name_cn": "维和者",
+       "slug": "peacekeeper",
+       "changes": [
+        {
+         "text_en": "Primary fire falloff range increased from 20 to 25 meters.",
+         "text_cn": null,
+         "before": 20.0,
+         "after": 25.0,
+         "metric": "primary fire falloff range"
+        },
+        {
+         "text_en": "Secondary fire damage increased from 45 to 50.",
+         "text_cn": null,
+         "before": 45.0,
+         "after": 50.0,
+         "metric": "secondary fire damage"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "echo",
+     "name_en": "Echo",
+     "name_cn": "回声",
+     "role": "damage",
+     "dev_note": null,
+     "general": [
+      "Base health reduced from 225 to 150.",
+      "Shield health increased from 0 to 75."
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "soldier-76",
+     "name_en": "Soldier: 76",
+     "name_cn": "士兵76",
+     "role": "damage",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Heavy Pulse Rifle",
+       "name_cn": "重脉冲步枪",
+       "slug": "heavy-pulse-rifle",
+       "changes": [
+        {
+         "text_en": "Primary fire now uses the larger projectile size (0.07 meters).",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "sojourn",
+     "name_en": "Sojourn",
+     "name_cn": "索杰恩",
+     "role": "damage",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Power Slide",
+       "name_cn": null,
+       "slug": "power-slide",
+       "changes": [
+        {
+         "text_en": "Cooldown increased from 7 to 8 seconds.",
+         "text_cn": null,
+         "before": 7.0,
+         "after": 8.0,
+         "metric": "cooldown"
+        },
+        {
+         "text_en": "Maximum duration reduced from 1.2 to 1 second.",
+         "text_cn": null,
+         "before": 1.2,
+         "after": 1.0,
+         "metric": "maximum duration"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "widowmaker",
+     "name_en": "Widowmaker",
+     "name_cn": "黑百合",
+     "role": "damage",
+     "dev_note": null,
+     "general": [
+      "Base health increased from 200 to 225 HP."
+     ],
+     "perks": [],
+     "abilities": []
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "Support",
+   "role": "support",
+   "description": null,
+   "heroes": [
+    {
+     "slug": "ana",
+     "name_en": "Ana",
+     "name_cn": "安娜",
+     "role": "support",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Biotic Grenade",
+       "name_cn": null,
+       "slug": "biotic-grenade",
+       "changes": [
+        {
+         "text_en": "Cooldown increased from 12 to 14 seconds for non-6v6 games modes.",
+         "text_cn": null,
+         "before": 12.0,
+         "after": 14.0,
+         "metric": "cooldown"
+        },
+        {
+         "text_en": "Cooldown increased from 10 to 12 seconds for 6v6 games modes.",
+         "text_cn": null,
+         "before": 10.0,
+         "after": 12.0,
+         "metric": "cooldown"
+        }
+       ]
+      },
+      {
+       "name_en": "Shrike",
+       "name_cn": null,
+       "slug": "shrike",
+       "changes": [
+        {
+         "text_en": "Self-Nano Boost duration reduced from 8 to 6 seconds.",
+         "text_cn": null,
+         "before": 8.0,
+         "after": 6.0,
+         "metric": "nano boost duration"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "juno",
+     "name_en": "Juno",
+     "name_cn": "朱诺",
+     "role": "support",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Orbital Ray",
+       "name_cn": null,
+       "slug": "orbital-ray",
+       "changes": [
+        {
+         "text_en": "Ultimate cost increased 10%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  }
+ ],
+ "raw_text": null,
+ "hash": "sha256:427b060ff6b2d4379030a079af07a9a5306815b8670e17fe0fec638f07abeec8"
+}

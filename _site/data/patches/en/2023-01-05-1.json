@@ -1,0 +1,220 @@
+{
+ "id": "en-2023-01-05-1",
+ "site": "en",
+ "date": "2023-01-05",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/01",
+ "title": "Overwatch 2 Retail Patch Notes – January 5, 2023",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "NEW SEASONAL MODE: BATTLE FOR OLYMPUS FFA",
+   "role": null,
+   "description": "In this free-for-all Deathmatch mode, battle for the throne of Olympus as seven powerful gods and monsters from Greek Mythology, each with a unique Divine Power that kicks in when they use their ultimate ability. The most valiant contenders in the Battle for Olympus will have the chance to earn limited-time voice lines and player titles, to brag about their accomplishments for all eternity. At the end of the event, the hero whose powers were used to secure the most eliminations across all matches will be crowned the new ruler of Olympus!",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "COMPETITIVE PLAY",
+   "role": null,
+   "description": "The 2023 season of Competitive Capture the Flag begins on January 10 and can be found in the Competitive Play menu The Competitive Play loading screen has been updated",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "HERO UPDATES",
+   "role": null,
+   "description": "HERO UPDATES",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "TANK",
+   "role": null,
+   "description": null,
+   "heroes": [
+    {
+     "slug": "junker-queen",
+     "name_en": "Junker Queen",
+     "name_cn": "渣客女王",
+     "role": "tank",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Adrenaline Rush",
+       "name_cn": null,
+       "slug": "adrenaline-rush",
+       "changes": [
+        {
+         "text_en": "Now heals for the remaining wound damage when an enemy dies with wounds on them",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Carnage",
+       "name_cn": null,
+       "slug": "carnage",
+       "changes": [
+        {
+         "text_en": "Cooldown is now reduced by 2 seconds for each enemy it impacts",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Jagged Blade",
+       "name_cn": null,
+       "slug": "jagged-blade",
+       "changes": [
+        {
+         "text_en": "Thrown impact damage reduced from 80 to 50",
+         "text_cn": null,
+         "before": 80.0,
+         "after": 50.0,
+         "metric": "thrown impact damage"
+        },
+        {
+         "text_en": "Thrown direct impacts now add a 30 damage wound to the stuck target. Stacks with wounds caused by Quick Melee or returning Jagged Blade hits.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "zarya",
+     "name_en": "Zarya",
+     "name_cn": "查莉娅",
+     "role": "tank",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Energy",
+       "name_cn": null,
+       "slug": "energy",
+       "changes": [
+        {
+         "text_en": "Energy degeneration reduced from 2.2 to 2 per second",
+         "text_cn": null,
+         "before": 2.2,
+         "after": 2.0,
+         "metric": "energy degeneration"
+        },
+        {
+         "text_en": "Delay before energy degeneration begins after gaining energy increased from 1 to 2 seconds",
+         "text_cn": null,
+         "before": 1.0,
+         "after": 2.0,
+         "metric": "delay before energy degeneration begins after gaining energy"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "SUPPORT",
+   "role": null,
+   "description": null,
+   "heroes": [
+    {
+     "slug": "brigitte",
+     "name_en": "Brigitte",
+     "name_cn": "布丽吉塔",
+     "role": "support",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Barrier Shield",
+       "name_cn": null,
+       "slug": "barrier-shield",
+       "changes": [
+        {
+         "text_en": "Health increased from 250 to 300",
+         "text_cn": null,
+         "before": 250.0,
+         "after": 300.0,
+         "metric": "health"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "moira",
+     "name_en": "Moira",
+     "name_cn": "莫伊拉",
+     "role": "support",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Biotic Orb",
+       "name_cn": null,
+       "slug": "biotic-orb",
+       "changes": [
+        {
+         "text_en": "Dealing damage with Biotic Orb now restores a small amount of Biotic Energy",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "BUG FIXES",
+   "role": null,
+   "description": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "GENERAL",
+     "body": "Fixed a bug with Souvenirs being incorrectly placed on Ramattra Fixed an issue with Kiriko's Ofuda displaying black textures during her Whirlwind emote Fixed an issue with Reaper's animations when ending his 'Take a knee' emote Resolved an issue with placeable abilities (turrets, mines) floating after the destructible environment they were placed on was destroyed Fixed an issue that resulted in some users seeing a black screen as their Main Menu background Fixed a bug that caused \"Group Up\" to say \"I'm on my way\" in unintended circumstances. Fixed an issue on some consoles that resulted in blurry graphics Fixed an issue where some players were not able to invite across certain consoles Fixed some performance issues in the Hero Gallery on Console platforms Resolved an issue where Daily Challenges were not rolling over for some users Fixed an issue where the end-of-game 'DRAW' text would not appear for players if a colorblind setting was active Resolved an issue with 'Invite to Custom Game' not appearing as an option in the Social Menu",
+     "dev": null
+    },
+    {
+     "title": "MAPS",
+     "body": "Watchpoint Gibraltar Fixed some areas that allowed players to escape the map boundaries Shambali Monastery Fixed some areas where players could become stuck Fixed some areas where some abilities could be 'eaten' by the environment Fixed lighting and geometry in several areas across the map",
+     "dev": null
+    },
+    {
+     "title": "HEROES",
+     "body": "Bastion Fixed an issue where Bastion's sound effects could loop at the location of death Fixed an issue where Bastion's whole screen would turn yellow when healed by a Brigitte Repair Pack Kiriko Fixed a bug with Swift Step in Capture the Flag that would send the Flag to the destination instead of dropping it where the ability was activated Mercy Fixed Mercy's Guardian Angel sometimes allowing her to escape Ramattra's Ravenous Vortex Ramattra Fixed an issue with missing assets on Ramattra's Hero Information page Fixed an issue with Ramattra's Primary Fire effects not displaying the correct amount of projectiles for other players Ramattra should now play rumble effects on gamepads/controllers Ramattra can no longer have more than one barrier active at a time. Note: This could not happen in standard modes, only Custom Game or modes with low cooldowns Tracer Fixed an issue where Pulse Bomb would not damage Tracer if it was 'Stuck' to an enemy",
+     "dev": null
+    }
+   ]
+  }
+ ],
+ "raw_text": null,
+ "hash": "sha256:73512b6c4253ece6eece1c510a854e615e46cb557781976abdf7fe32a7ea6f8c"
+}

@@ -1,0 +1,128 @@
+{
+ "id": "en-2021-07-01-1",
+ "site": "en",
+ "date": "2021-07-01",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2021/07",
+ "title": "Overwatch Retail Patch Notes – July 1, 2021",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "hero_update",
+   "title": "Hero Updates",
+   "role": null,
+   "description": "General Hitscan damage now scales to 30% at maximum falloff range, down from 50% for the following heroes: Ashe Baptiste Bastion McCree Soldier: 76 Widowmaker Wrecking Ball",
+   "heroes": [
+    {
+     "slug": "bastion",
+     "name_en": "Bastion",
+     "name_cn": "堡垒",
+     "role": "damage",
+     "dev_note": "We're making Bastion's Configuration: Recon weapon more reliable to help strengthen his run-and-gun gameplay when moving between spots he wants to post up with Configuration: Sentry.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Configuration: Recon",
+       "name_cn": null,
+       "slug": "configuration-recon",
+       "changes": [
+        {
+         "text_en": "Weapon spread reduced from 1.5 to 1.2",
+         "text_cn": null,
+         "before": 1.5,
+         "after": 1.2,
+         "metric": "weapon spread"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "d-va",
+     "name_en": "D.Va",
+     "name_cn": "D.Va",
+     "role": "tank",
+     "dev_note": "No longer building ultimate charge in the window of time between using Self Destruct and when it detonates is targeted at Echo's Duplicate ability when copying D.Va. Echo's accelerated ultimate charge enabled her to have Call Mech available before the Self Destruct explosion went off, making it very difficult for enemies to find a safe place to hide.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Call Mech",
+       "name_cn": null,
+       "slug": "call-mech",
+       "changes": [
+        {
+         "text_en": "Damage area reduced from 3 to 2.5 meters",
+         "text_cn": null,
+         "before": 3.0,
+         "after": 2.5,
+         "metric": "damage area"
+        },
+        {
+         "text_en": "No longer builds ultimate charge while using Self Destruct until after her mech detonates",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "soldier-76",
+     "name_en": "Soldier: 76",
+     "name_cn": "士兵76",
+     "role": "damage",
+     "dev_note": "This will make Tactical Visor effective for more than just the aim assist, which slightly loses some value as player aim improves.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Heavy Pulse Rifle",
+       "name_cn": "重脉冲步枪",
+       "slug": "heavy-pulse-rifle",
+       "changes": [
+        {
+         "text_en": "Damage falloff is disabled while Tactical Visor is active",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "widowmaker",
+     "name_en": "Widowmaker",
+     "name_cn": "黑百合",
+     "role": "damage",
+     "dev_note": "We're adjusting Widowmaker's optimal range to be slightly further out to account for some map locations where counter-sniping was common but just barely outside of the effective range with the damage falloff. For Widowmaker, the sniping damage falloff is mainly in place to restrict the lethality of mid-air grapple shots at the extreme distances possible on some maps.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Widow's Kiss",
+       "name_cn": "寡妇之吻",
+       "slug": "widows-kiss",
+       "changes": [
+        {
+         "text_en": "Damage falloff range increased from 60-85 to 70-100 meters",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  }
+ ],
+ "raw_text": null,
+ "hash": "sha256:c6735608d0b029508b21dd15648b274956a6d8e3963a34066180c2ea77f83b29"
+}

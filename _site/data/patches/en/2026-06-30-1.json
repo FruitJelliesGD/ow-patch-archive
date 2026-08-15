@@ -1,0 +1,3541 @@
+{
+ "id": "en-2026-06-30-1",
+ "site": "en",
+ "date": "2026-06-30",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
+ "title": "Overwatch Retail Patch Notes – June 30, 2026",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "Game Client Update",
+   "role": null,
+   "description": "This is a game client patch introducing the new Community Crafted game mode, alongside several bug fixes. Replay codes have been wiped.",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "Community Crafted",
+   "role": null,
+   "description": "Experience a whole new version of Overwatch created with the help of four of your favorite creators: Guxue, Apply, Ocie, and mL7support. Every hero (except Shion) has changes for you to try out based on what our creators wanted to see these heroes play like, so jump into the Arcade to try out this new game mode from June 30 until July 13!",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "Tank",
+   "role": "tank",
+   "description": null,
+   "heroes": [
+    {
+     "slug": "d-va",
+     "name_en": "D.Va",
+     "name_cn": "D.Va",
+     "role": "tank",
+     "dev_note": "I want D.Va to be more incentivized to use Defense Matrix to protect teammates, and I want D.Va to be rewarded in turn with more Self-Destruct damage. D.Va outside of mech is too lacking in power, so we've buffed her survivability and lethality in pilot form.",
+     "general": [],
+     "perks": [
+      {
+       "name_en": "Bunny Power",
+       "name_cn": null,
+       "status": "moved",
+       "lines_en": [
+        "Moved from minor perk to base kit."
+       ],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Team Leader",
+       "name_cn": null,
+       "status": "added",
+       "lines_en": [
+        "New",
+        "After calling mech, nearby teammates gain 50 temporary overhealth."
+       ],
+       "lines_cn": []
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": "Defense Matrix",
+       "name_cn": null,
+       "slug": "defense-matrix",
+       "changes": [
+        {
+         "text_en": "Now converts every 100 damage absorbed to an additional 10 Self-Destruct damage.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Light Gun",
+       "name_cn": null,
+       "slug": "light-gun",
+       "changes": [
+        {
+         "text_en": "Secondary fire now launches a grenade.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Self-Destruct",
+       "name_cn": null,
+       "slug": "self-destruct",
+       "changes": [
+        {
+         "text_en": "Ultimate charge generation rate increased by 20%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "domina",
+     "name_en": "Domina",
+     "name_cn": "金驭",
+     "role": "tank",
+     "dev_note": "Sonic Repulsors now gives Domina the ability to access high ground more easily, while Panopticon now has more flexibility to be used defensively as well as offensively.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Sonic Repulsors",
+       "name_cn": null,
+       "slug": "sonic-repulsors",
+       "changes": [
+        {
+         "text_en": "Now propels Domina backwards relative to the direction she is facing.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Enemy knockback force increased by 40%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Panopticon",
+       "name_cn": null,
+       "slug": "panopticon",
+       "changes": [
+        {
+         "text_en": "Can now envelop allies with a 200 health barrier.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "doomfist",
+     "name_en": "Doomfist",
+     "name_cn": "末日铁拳",
+     "role": "tank",
+     "dev_note": "Uppercut has always been super popular, and the community jokes about re-adding it a lot. Adding the ability to empower every ability, combined with Uppercut, gives Doomfist a lot more outplay potential.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Power Block",
+       "name_cn": null,
+       "slug": "power-block",
+       "changes": [
+        {
+         "text_en": "Can now empower the next use of any other ability, not just Rocket Punch.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Rising Uppercut",
+       "name_cn": null,
+       "slug": "rising-uppercut",
+       "changes": [
+        {
+         "text_en": "Re-added.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Empowered Uppercut stuns enemies.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Seismic Slam",
+       "name_cn": null,
+       "slug": "seismic-slam",
+       "changes": [
+        {
+         "text_en": "Empowered Seismic Slam slows enemies by 40% for 2s.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Meteor Strike",
+       "name_cn": null,
+       "slug": "meteor-strike",
+       "changes": [
+        {
+         "text_en": "Slowing effect removed.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Now knocks down enemies.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "hazard",
+     "name_en": "Hazard",
+     "name_cn": "骇灾",
+     "role": "tank",
+     "dev_note": "The wall cling presents Hazard with more assassin-style gameplay options. Downpour is currently too easy to dodge, so it’s been reworked to be more straightforward to use.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Vault",
+       "name_cn": null,
+       "slug": "vault",
+       "changes": [
+        {
+         "text_en": "When maximum wall climb height is reached, continuing to hold Jump now allows Hazard to cling onto the wall instead of falling off the wall.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Hazard's camera is shifted to third person while clinging to a wall.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Using any ability while clinging to a wall immediately detachs Hazard from the wall.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Downpour",
+       "name_cn": null,
+       "slug": "downpour",
+       "changes": [
+        {
+         "text_en": "Increased width and range.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "No longer roots enemies.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Impact damage increased from 90 to 270.",
+         "text_cn": null,
+         "before": 90.0,
+         "after": 270.0,
+         "metric": "impact damage"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "junker-queen",
+     "name_en": "Junker Queen",
+     "name_cn": "渣客女王",
+     "role": "tank",
+     "dev_note": "This set of changes strengthens Junker Queen’s long-range pressure by allowing her to alternate throwing Gracie and Carnage to suppress enemies from a distance.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Carnage",
+       "name_cn": null,
+       "slug": "carnage",
+       "changes": [
+        {
+         "text_en": "Axe is now thrown instead of swung.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Thrown axes can critically hit enemies.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Thrown axes stick to enemies on impact for the duration of the bleed.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "When a thrown axe impacts the environment, or when an enemy is eliminated while an axe is stuck to them, the axe drops on the ground.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Picking up a dropped axe reduces Carnage's cooldown by 3 seconds.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "mauga",
+     "name_en": "Mauga",
+     "name_cn": "毛加",
+     "role": "tank",
+     "dev_note": "Mauga finally understood something: as a 2.2-meter-tall, half-ton Samoan beast of a man, it’s honestly way too “gentle” and way too team-spirited to be giving his teammates damage reduction and lifesteal on the battlefield. So he decided to be selfish all the way—his heart now only beats for himself. He takes the nastiest damage and builds up the thickest health. Mauga also now uses his size to stomp on and crush his enemies.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Overrun",
+       "name_cn": null,
+       "slug": "overrun",
+       "changes": [
+        {
+         "text_en": "Stomp damage now scales with height, up to a maximum of 250 damage.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Cardiac Overdrive",
+       "name_cn": null,
+       "slug": "cardiac-overdrive",
+       "changes": [
+        {
+         "text_en": "Lifesteal and damage reduction removed.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "No longer affects allies.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Duration increased from 3s to 5s.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Now grants Mauga 20% move speed for 3s when taking damage.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Now converts every 1 damage taken to 1 healing resource.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Stored healing resource persists until Cardiac Overdrive's cooldown completes.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Reactivating Cardiac Overdrive converts stored healing resource to heal Mauga.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "orisa",
+     "name_en": "Orisa",
+     "name_cn": "奥丽莎",
+     "role": "tank",
+     "dev_note": "Orisa has always been a bulky and stalwart hero, so these changes aim to explore what a more mobile Orisa would look like.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Energy Javelin",
+       "name_cn": null,
+       "slug": "energy-javelin",
+       "changes": [
+        {
+         "text_en": "Can now impact allies.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "When impacting allies, target receives 100 healing and their move speed is increased by 25% for 3s.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Fortify",
+       "name_cn": null,
+       "slug": "fortify",
+       "changes": [
+        {
+         "text_en": "When activated, Orisa charges forward while still Fortified.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Reactivating Fortify ends Orisa's charge.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Fortify lasts for 1 additional second after charge ends.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Charge knocks enemies out of the way.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Javelin Spin",
+       "name_cn": null,
+       "slug": "javelin-spin",
+       "changes": [
+        {
+         "text_en": "When aimed upward, allows Orisa to fly upwards.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "ramattra",
+     "name_en": "Ramattra",
+     "name_cn": "拉玛刹",
+     "role": "tank",
+     "dev_note": "Ramattra has been running around the lobby yelling at everyone to “suffer as I have.” So we decided to turn his Void Barrier into a permanent-duration ability, and give his ultimate 100% lifesteal—so he can make everyone feel his suffering for even longer.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Void Barrier",
+       "name_cn": null,
+       "slug": "void-barrier",
+       "changes": [
+        {
+         "text_en": "Barrier now lasts indefinitely.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Can be recalled by pressing secondary fire again. Recall places Void Barrier on cooldown.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Cooldown reduced to 2.5 seconds.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Ravenous Vortex",
+       "name_cn": null,
+       "slug": "ravenous-vortex",
+       "changes": [
+        {
+         "text_en": "Now hinders enemies upon initial deployment.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Annihilation",
+       "name_cn": null,
+       "slug": "annihilation",
+       "changes": [
+        {
+         "text_en": "Damage per second reduced from 35 to 20.",
+         "text_cn": null,
+         "before": 35.0,
+         "after": 20.0,
+         "metric": "damage per second"
+        },
+        {
+         "text_en": "Now lifesteals at 100% effectiveness.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "reinhardt",
+     "name_en": "Reinhardt",
+     "name_cn": "莱因哈特",
+     "role": "tank",
+     "dev_note": "Reinhardt should be able to spend less time holding up his shield, and more time laying into enemies with his hammer with these changes.",
+     "general": [
+      "Berserker - Passive",
+      "New",
+      "As Reinhardt loses health, his movement and attack speed increase.",
+      "For every 100 HP lost, Reinhardt gains 8% move speed and attack speed.",
+      "Maximum bonus reached when 200 HP remains."
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Barrier Field",
+       "name_cn": null,
+       "slug": "barrier-field",
+       "changes": [
+        {
+         "text_en": "Barrier health reduced from 1500 to 1100.",
+         "text_cn": null,
+         "before": 1500.0,
+         "after": 1100.0,
+         "metric": "barrier health"
+        }
+       ]
+      },
+      {
+       "name_en": "Charge",
+       "name_cn": null,
+       "slug": "charge",
+       "changes": [
+        {
+         "text_en": "Maximum duration increased from 3s to 20s.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "roadhog",
+     "name_en": "Roadhog",
+     "name_cn": "路霸",
+     "role": "tank",
+     "dev_note": "I added more mobility to Roadhog, enabling him to quickly reach his teammates to protect them. The Take a Breather changes ensure that Roadhog is not stuck purely taking damage while using the ability.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Chain Hook",
+       "name_cn": null,
+       "slug": "chain-hook",
+       "changes": [
+        {
+         "text_en": "Can now hit teammates.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "If Chain Hook hits a teammate, Roadhog is pulled to the teammate.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Take a Breather",
+       "name_cn": null,
+       "slug": "take-a-breather",
+       "changes": [
+        {
+         "text_en": "Generates poison gas around Roadhog, dealing 50 damage/s to nearby enemies.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "sigma",
+     "name_en": "Sigma",
+     "name_cn": "西格玛",
+     "role": "tank",
+     "dev_note": "Rise up with Sigma’s newfound control of gravity, then crush your enemies into the ground with Gravitic Flux.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Kinetic Grasp",
+       "name_cn": null,
+       "slug": "kinetic-grasp",
+       "changes": [
+        {
+         "text_en": "Now grants free flight while active.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Accretion",
+       "name_cn": null,
+       "slug": "accretion",
+       "changes": [
+        {
+         "text_en": "Knockdown duration increases with distance.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Gravitic Flux",
+       "name_cn": null,
+       "slug": "gravitic-flux",
+       "changes": [
+        {
+         "text_en": "No longer lifts enemies.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Now pins enemies to the ground, preventing movement and mobility abilities for 3 seconds.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Now deals 25 damage per second.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Slam damage changed from 50% of maximum health to 75.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Now grants an additional 4s of free flight.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "winston",
+     "name_en": "Winston",
+     "name_cn": "温斯顿",
+     "role": "tank",
+     "dev_note": "Adding the option to use Jump Pack twice every leap gives Winston more mobility options, including turning corners more easily and extending the jump to reach further.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Jump Pack",
+       "name_cn": null,
+       "slug": "jump-pack",
+       "changes": [
+        {
+         "text_en": "Within 1 second of first activation, can be activated again with 50% effectiveness.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Barrier Projector",
+       "name_cn": null,
+       "slug": "barrier-projector",
+       "changes": [
+        {
+         "text_en": "Can now be thrown forward",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Barrier no longer immediately deploys.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Barrier deploys when Winston presses the ability button again, or after 2 seconds.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "wrecking-ball",
+     "name_en": "Wrecking Ball",
+     "name_cn": "破坏球",
+     "role": "tank",
+     "dev_note": "Oftentimes when your teammate picks Wrecking Ball, it can be hard to know what they’re doing or how to support them. These new changes should help everyone work together better with Wrecking Ball.",
+     "general": [
+      "Enemies hit by ability damage are revealed to Wrecking Ball’s teammates for 1.5s."
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Grappling Claw",
+       "name_cn": null,
+       "slug": "grappling-claw",
+       "changes": [
+        {
+         "text_en": "Can now attach to the ground.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Minefield",
+       "name_cn": null,
+       "slug": "minefield",
+       "changes": [
+        {
+         "text_en": "Mines can now be manually detonated after 2s.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "zarya",
+     "name_en": "Zarya",
+     "name_cn": "查莉娅",
+     "role": "tank",
+     "dev_note": null,
+     "general": [
+      "The Projected Barrier changes give Zarya the option to enable her allies who lack mobility tools to reach high ground more easily."
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Projected Barrier",
+       "name_cn": null,
+       "slug": "projected-barrier",
+       "changes": [
+        {
+         "text_en": "Allies with barriers can now jump higher.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Graviton Surge",
+       "name_cn": null,
+       "slug": "graviton-surge",
+       "changes": [
+        {
+         "text_en": "Now has an outer attraction range that is 50% larger.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Enemies within the outer attraction range do not have their movement abilities disabled.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "Damage",
+   "role": "damage",
+   "description": null,
+   "heroes": [
+    {
+     "slug": "anran",
+     "name_en": "Anran",
+     "name_cn": null,
+     "role": "damage",
+     "dev_note": "Anran struggles to light opponents on fire to secure kills, often having to choose to trade in order to obtain kills. These changes make it much easier to light opponents on fire and allow Anran to deal slightly increased damage from range, and her range of movement with Inferno Rush has been increased to allow her more escape options.",
+     "general": [
+      "Base move speed increased from 6 m/s to 6.5 m/s."
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Zhuque Fans",
+       "name_cn": null,
+       "slug": "zhuque-fans",
+       "changes": [
+        {
+         "text_en": "Fire rate increased by 50%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Projectile speed increased from 90 to 150 m/s.",
+         "text_cn": null,
+         "before": 90.0,
+         "after": 150.0,
+         "metric": "projectile speed"
+        }
+       ]
+      },
+      {
+       "name_en": "Inferno Rush",
+       "name_cn": null,
+       "slug": "inferno-rush",
+       "changes": [
+        {
+         "text_en": "Anran can now hold backwards to dash backwards.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Initial launch speed increased by 27%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "ashe",
+     "name_en": "Ashe",
+     "name_cn": "艾什",
+     "role": "damage",
+     "dev_note": "B.O.B is now a threat. No one considers B.O.B a threat on the battlefield, but they will now. I also bet we're all tired of D.VA eating our dynamites, so with some careful planning, Ashe can stick Dynamite on the wall before the fight starts, and that's not a problem anymore.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Dynamite",
+       "name_cn": null,
+       "slug": "dynamite",
+       "changes": [
+        {
+         "text_en": "Now sticks to surfaces.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Fuse timer increased from 5s to 20s.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "B.O.B.",
+       "name_cn": null,
+       "slug": "b-o-b",
+       "changes": [
+        {
+         "text_en": "When B.O.B. is killed before timing out, B.O.B. explodes after a short delay.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "bastion",
+     "name_en": "Bastion",
+     "name_cn": "堡垒",
+     "role": "damage",
+     "dev_note": "Are you into race cars? Bastion is now a speed demon in configuration form. No longer is he slow and an easy target. He's now a speed demon. We also dropped the 2 from Overwatch so why not bring back his original ult as well?",
+     "general": [],
+     "perks": [
+      {
+       "name_en": "Lindholm Explosives",
+       "name_cn": null,
+       "status": "reworked",
+       "lines_en": [
+        "Reworked into Tuned Treads.",
+        "Move 35% faster while in Configuration: Assault or Configuration: Tank."
+       ],
+       "lines_cn": []
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": "Configuration: Artillery",
+       "name_cn": null,
+       "slug": "configuration-artillery",
+       "changes": [
+        {
+         "text_en": "Reworked into Configuration: Tank - Configuration: Tank's weapon fires fast-moving shells that deal 205 explosive damage.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "cassidy",
+     "name_en": "Cassidy",
+     "name_cn": "卡西迪",
+     "role": "damage",
+     "dev_note": "I want the enemy to FEAR seeing 12 on the clock. Also, I know you like to hide behind shields when you hear it's high noon... good luck with that.",
+     "general": [
+      "Minor Perk - Even the Odds",
+      "Replaced with True Shot - Deadeye's bullets pierce barriers."
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Combat Roll",
+       "name_cn": "战术翻滚",
+       "slug": "combat-roll",
+       "changes": [
+        {
+         "text_en": "Now grants Invincibility during Combat Roll.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Deadeye",
+       "name_cn": "神射手",
+       "slug": "deadeye",
+       "changes": [
+        {
+         "text_en": "Every Final Blow earned via Deadeye grants 1 additional max ammo for the round, up to a cap of 18 max ammo.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "echo",
+     "name_en": "Echo",
+     "name_cn": "回声",
+     "role": "damage",
+     "dev_note": "Echo’s Duplicate often has very obvious targets, usually a Tank or certain DPS heroes (such as Tracer or Reaper), to try and provide more effective options for copy, changes are made that provide buffs for copying certain types of heroes. Focusing Beam is now also a more controllable utility to finish off targets as a resource meter.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Focusing Beam",
+       "name_cn": null,
+       "slug": "focusing-beam",
+       "changes": [
+        {
+         "text_en": "Input changed to Secondary Fire.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Cooldown decreased from 8s to 1s.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Now functions on a regenerating resource.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Sticky Bombs",
+       "name_cn": null,
+       "slug": "sticky-bombs",
+       "changes": [
+        {
+         "text_en": "Projectile speed increased by 60%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Enemies with Sticky Bombs stuck to them are revealed to Echo for 5s.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Duplicate",
+       "name_cn": null,
+       "slug": "duplicate",
+       "changes": [
+        {
+         "text_en": "Echo deals 20% more damage when duplicating a Support hero.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Echo has 20% more health when duplicating a Damage hero.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Echo moves 20% faster when duplicating a Tank hero.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "emre",
+     "name_en": "Emre",
+     "name_cn": "埃姆雷",
+     "role": "damage",
+     "dev_note": "MORE GRENADES!!! Also, when you hear Emre use his ult, I bet you think he’s an easy target in the sky… not anymore.",
+     "general": [],
+     "perks": [
+      {
+       "name_en": "Cyber Adhesion",
+       "name_cn": null,
+       "status": "reworked",
+       "lines_en": [
+        "Reworked into Optimized Targeting - When scoped, hitting all 3 burst shots increases the next unscoped burst shots' damage by 35%."
+       ],
+       "lines_cn": []
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": "Cyber Frag",
+       "name_cn": null,
+       "slug": "cyber-frag",
+       "changes": [
+        {
+         "text_en": "Cyber Frag final blows refund 1 charge of Cyber Frag.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Override Protocol",
+       "name_cn": null,
+       "slug": "override-protocol",
+       "changes": [
+        {
+         "text_en": "Now has 30% Lifesteal.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "freja",
+     "name_en": "Freja",
+     "name_cn": null,
+     "role": "damage",
+     "dev_note": "These changes slightly increase the power of Bola Shot while slightly reducing the instant damage Freja can deal, and thus the burst overall. The Bounty Hunting mechanic introduces some interesting goals for Freja to pursue.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Take Aim",
+       "name_cn": null,
+       "slug": "take-aim",
+       "changes": [
+        {
+         "text_en": "Explosion Damage reduced from 80 to 40.",
+         "text_cn": null,
+         "before": 80.0,
+         "after": 40.0,
+         "metric": "explosion damage"
+        },
+        {
+         "text_en": "Explosion causes the Stuck target to bleed for 40 damage over 2 seconds.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Bola Shot",
+       "name_cn": null,
+       "slug": "bola-shot",
+       "changes": [
+        {
+         "text_en": "Area slow increased from 45% to 75%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Bounty Hunting",
+       "name_cn": null,
+       "slug": "bounty-hunting",
+       "changes": [
+        {
+         "text_en": "Now marks a random enemy player as a bounty.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Eliminating the bounty target grants 15% Ultimate Charge.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "6s cooldown between bounties.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "genji",
+     "name_en": "Genji",
+     "name_cn": "源氏",
+     "role": "damage",
+     "dev_note": "Dragonblade is often used to bait out supportive ultimates such as Sound Barrier or Rally. Allowing Genji to cancel Dragonblade provides the player far more authority over the kit as a whole. These changes also play into Genji’s strength as an anti-Double Hitscan pick with his increased deflect damage at range.",
+     "general": [],
+     "perks": [
+      {
+       "name_en": "Dragon's Thirst",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [
+        "Moved to base kit."
+       ],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Swift Backcap",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [
+        "New - Genji progresses objectives faster."
+       ],
+       "lines_cn": []
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": "Deflect",
+       "name_cn": null,
+       "slug": "deflect",
+       "changes": [
+        {
+         "text_en": "Deflected damage increases with distance to victim.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Deflect final blows grant Genji a 15% damage boost for 5 seconds.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Dragonblade",
+       "name_cn": null,
+       "slug": "dragonblade",
+       "changes": [
+        {
+         "text_en": "Can now be cancelled.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Cancelling Dragonblade early sends out a large energy projectile and refunds Genji's cooldowns.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "hanzo",
+     "name_en": "Hanzo",
+     "name_cn": "半藏",
+     "role": "damage",
+     "dev_note": "Hanzo lacks consistency, so changes to fire-rate and damage should mitigate that and allow more shots to be taken. The ultimate changes allows for more value to be found from Dragonstrike. Hanzo’s primary use case is on maps with more verticality, so his vertical jump allows him more flexibility in movement on those maps.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Storm Bow",
+       "name_cn": "风暴弓",
+       "slug": "storm-bow",
+       "changes": [
+        {
+         "text_en": "Damage reduced from 125 to 85.",
+         "text_cn": null,
+         "before": 125.0,
+         "after": 85.0,
+         "metric": "damage"
+        },
+        {
+         "text_en": "Recovery time between shots reduced from 0.5s to 0.25s.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Storm Arrows",
+       "name_cn": null,
+       "slug": "storm-arrows",
+       "changes": [
+        {
+         "text_en": "Can now bounce twice.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Lunge",
+       "name_cn": null,
+       "slug": "lunge",
+       "changes": []
+      },
+      {
+       "name_en": "Dragonstrike",
+       "name_cn": "竜",
+       "slug": "dragonstrike",
+       "changes": [
+        {
+         "text_en": "Ultimate cost decreased by 12%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Dragons travel speed increased by 20%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "junkrat",
+     "name_en": "Junkrat",
+     "name_cn": "狂鼠",
+     "role": "damage",
+     "dev_note": "Although Junkrat’s existing kit is interesting, it struggles to find value at higher levels of play while simultaneously being frustrating to play against at lower levels of play. Providing Junkrat a similarly themed kit while changing how it fundamentally functions might allow for higher match quality for Junkrat at all levels of play.",
+     "general": [
+      "Health reduced from 250 to 200."
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Frag Launcher",
+       "name_cn": "榴弹发射器",
+       "slug": "frag-launcher",
+       "changes": [
+        {
+         "text_en": "Projectile speed increased from 30 to 112.5 m/s.",
+         "text_cn": null,
+         "before": 30.0,
+         "after": 112.5,
+         "metric": "projectile speed"
+        },
+        {
+         "text_en": "Impact damage reduced from 45 to 30.",
+         "text_cn": null,
+         "before": 45.0,
+         "after": 30.0,
+         "metric": "impact damage"
+        },
+        {
+         "text_en": "Explosion damage reduced from 80 to 50.",
+         "text_cn": null,
+         "before": 80.0,
+         "after": 50.0,
+         "metric": "explosion damage"
+        },
+        {
+         "text_en": "Projectiles now detonate on impact.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Steel Trap",
+       "name_cn": "钢铁陷阱",
+       "slug": "steel-trap",
+       "changes": [
+        {
+         "text_en": "Now has 2 charges.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Cooldown increased from 10s to 13s.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Can now be thrown much further.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Deployed trap takes 1s to arm and lasts for 6s.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "All enemies within 6m of an armed trap bleed and are revealed to Junkrat.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Trap health increased from 100 to 120 health.",
+         "text_cn": null,
+         "before": 100.0,
+         "after": 120.0,
+         "metric": "trap health"
+        }
+       ]
+      },
+      {
+       "name_en": "Concussion Mine",
+       "name_cn": "震荡地雷",
+       "slug": "concussion-mine",
+       "changes": [
+        {
+         "text_en": "No longer throws a projectile.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Now triggers a concussive explosion under Junkrat.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Damage reduced from 120 to 90.",
+         "text_cn": null,
+         "before": 120.0,
+         "after": 90.0,
+         "metric": "damage"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "mei",
+     "name_en": "Mei",
+     "name_cn": "美",
+     "role": "damage",
+     "dev_note": "Mei’s primary source of slow being tied to her primary fire is frustrating to play against, so moving Mei’s ability to slow enemies to a skillshot (secondary fire) adds fairness in that regard. Allowing Mei to empower her secondary fire introduces additional skill expression into the kit by allowing her to switch between prioritizing damage (less charge, more shots able to be taken) or prioritizing slow (more charge, less shots able to be taken).",
+     "general": [],
+     "perks": [
+      {
+       "name_en": "Deep Freeze",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [
+        "Replaced with Ice Spikes - Enemies near Mei's Ice Wall are damaged and slowed."
+       ],
+       "lines_cn": []
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": "Endothermic Blaster",
+       "name_cn": null,
+       "slug": "endothermic-blaster",
+       "changes": [
+        {
+         "text_en": "Slowing effect removed.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Range increased from 12 to 14.",
+         "text_cn": null,
+         "before": 12.0,
+         "after": 14.0,
+         "metric": "range"
+        }
+       ]
+      },
+      {
+       "name_en": "Icicle",
+       "name_cn": null,
+       "slug": "icicle",
+       "changes": [
+        {
+         "text_en": "Now slows impacted enemies.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Secondary Fire can now be held down to charge up the icicle. Charged icicles deal more damage and inflict a stronger slow over a longer duration.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Damage changed to range from 15 to 95.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Slow scales from a minimum of 5% for 0.25s to a maximum of 30% for 1.5s.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "pharah",
+     "name_en": "Pharah",
+     "name_cn": "法老之鹰",
+     "role": "damage",
+     "dev_note": "Pharah’s Concussive Blast is a piece of utility that is normally difficult to use. Providing it with a very clear utility, in this case slowing non-tank enemies, allows Concussive Blast to be used aggressively more often.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Concussive Blast",
+       "name_cn": null,
+       "slug": "concussive-blast",
+       "changes": [
+        {
+         "text_en": "Now pulls enemies in after a short delay instead of pushing them out.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Temporarily slows non-tank enemies.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "reaper",
+     "name_en": "Reaper",
+     "name_cn": "死神",
+     "role": "damage",
+     "dev_note": "We all get scared hearing Die... Die... Die… but what if that went on even longer for every single kill he got? Reaper is no longer an easy target if you see him use Wraith Form; his soul orbs have turned into orbs that lengthen his Wraith Form so good luck chasing him down…",
+     "general": [],
+     "perks": [
+      {
+       "name_en": "Soul Reaving",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [
+        "Collecting a soul orb now also extends Wraith Form's timer by 1s."
+       ],
+       "lines_cn": []
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": "Wraith Form",
+       "name_cn": "幽灵形态",
+       "slug": "wraith-form",
+       "changes": [
+        {
+         "text_en": "Deals 40 damage per second to enemies within 4m.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Death Blossom",
+       "name_cn": "死亡绽放",
+       "slug": "death-blossom",
+       "changes": [
+        {
+         "text_en": "Can now be cancelled manually.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Every elimination earned with Death Blossom extends the duration by 1s.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "sierra",
+     "name_en": "Sierra",
+     "name_cn": null,
+     "role": "damage",
+     "dev_note": "Sierra now rewards precision aim when firing Tracking Dart with even more damage, which, when paired with the new major perk \"Dart Redeployment,\" will lead to Sierra becoming a homing damage killing machine.",
+     "general": [],
+     "perks": [
+      {
+       "name_en": "Full Flight",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [
+        "Moved to base kit."
+       ],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Locked In",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [
+        "Moved to minor perk."
+       ],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Dart Redeployment",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [
+        "New - When a target dies with a Tracking Dart on them, refunds Tracking Dart's cooldown."
+       ],
+       "lines_cn": []
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": "Tracking Shot",
+       "name_cn": null,
+       "slug": "tracking-shot",
+       "changes": [
+        {
+         "text_en": "Landing a critical hit with the initial shot will cause follow-up homing shots to critically hit as well.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "sojourn",
+     "name_en": "Sojourn",
+     "name_cn": "索杰恩",
+     "role": "damage",
+     "dev_note": "I know we're all used to playing Sojourn from a safe location and killing players. That is a playstyle of the past! Get in there and slide!!",
+     "general": [
+      "Base health increased to 250."
+     ],
+     "perks": [
+      {
+       "name_en": "Dual Thrusters",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [
+        "Moved to base kit."
+       ],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Deceleration Field",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [
+        "Now heals allies within it for 30 health/s."
+       ],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Dual Disruptor",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [
+        "New - Grants a second charge of Disruptor Shot."
+       ],
+       "lines_cn": []
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": "Railgun",
+       "name_cn": null,
+       "slug": "railgun",
+       "changes": [
+        {
+         "text_en": "Fire rate increased by 25%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Charged Shot",
+       "name_cn": null,
+       "slug": "charged-shot",
+       "changes": [
+        {
+         "text_en": "Damage reduced from 120 to 80.",
+         "text_cn": null,
+         "before": 120.0,
+         "after": 80.0,
+         "metric": "damage"
+        },
+        {
+         "text_en": "Falloff range (min and max) reduced by 20m.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Power Slide",
+       "name_cn": null,
+       "slug": "power-slide",
+       "changes": [
+        {
+         "text_en": "Sliding into enemies knocks back enemies into the air.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "soldier-76",
+     "name_en": "Soldier: 76",
+     "name_cn": "士兵76",
+     "role": "damage",
+     "dev_note": "The enemy will FEAR the healing station. We are also taking \"I've got you in my sights\" very seriously: Soldier 76 now damages all players in his sights at the SAME time while using Tactical Visor.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Biotic Field",
+       "name_cn": "生物力场",
+       "slug": "biotic-field",
+       "changes": [
+        {
+         "text_en": "Now follows Soldier: 76 around.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Now repeatedly pushes enemies within Biotic Field away from Soldier: 76.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Tactical Visor",
+       "name_cn": "战术目镜",
+       "slug": "tactical-visor",
+       "changes": [
+        {
+         "text_en": "Now targets all enemies within view simultaneously.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "sombra",
+     "name_en": "Sombra",
+     "name_cn": "黑影",
+     "role": "damage",
+     "dev_note": "Sombra’s rework essentially eliminated the flanker playstyle of Sombra, and she is no longer capable of setting up dives for her team in dive compositions. These changes look to bring back that flanker identity as well as give her more power as a scout (with her unique ultimate charge revealing passive).",
+     "general": [],
+     "perks": [
+      {
+       "name_en": "Encrypted Upload",
+       "name_cn": null,
+       "status": "reworked",
+       "lines_en": [
+        "Reworked - Sombra can now throw Virus without breaking Stealth. Sombra is Revealed for 3s after throwing Virus while Stealthed."
+       ],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Viral Replication",
+       "name_cn": null,
+       "status": "reworked",
+       "lines_en": [
+        "Reworked - Final blows reduce the cooldown of Virus by 4s."
+       ],
+       "lines_cn": []
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": "Hack",
+       "name_cn": null,
+       "slug": "hack",
+       "changes": [
+        {
+         "text_en": "Removed.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Stealth",
+       "name_cn": null,
+       "slug": "stealth",
+       "changes": [
+        {
+         "text_en": "Moved to Ability 1.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Maximum duration increased from 5s to 8s.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Move speed bonus increased from 60% to 75%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Translocator",
+       "name_cn": null,
+       "slug": "translocator",
+       "changes": [
+        {
+         "text_en": "Projectile physics altered – now arcs through the air slower.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "No longer has a maximum flight time.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "No longer immediately teleports Sombra upon impact or timeout.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Translocator now persists indefinitely on the ground. Translocator has 5 health when on the ground.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Virus",
+       "name_cn": null,
+       "slug": "virus",
+       "changes": [
+        {
+         "text_en": "Now applies Hacked status effect to impacted enemies.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Now Hacks healthpacks nearby when impacting the environment.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Cooldown increased from 6s to 8s.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "symmetra",
+     "name_en": "Symmetra",
+     "name_cn": "秩序之光",
+     "role": "damage",
+     "dev_note": "Developer Comments: Teleporter is the strongest aspect of Symmetra’s kit but is often underused by teammates. Providing shielding to teammates as a ‘reward’ encourages teammates to group up around Symmetra’s teleporter and use it more often. The change to turrets is made with the goal of allowing Symmetra more practical utility with an otherwise weak ability.",
+     "general": [],
+     "perks": [
+      {
+       "name_en": "Shield Battery",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [
+        "Moved to base kit.",
+        "Now affects all allies nearby.",
+        "Now works on all health types."
+       ],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Acceleporter",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [
+        "New - Allies receive a 30% speed boost for 2s after using Teleporter."
+       ],
+       "lines_cn": []
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": "Sentry Turrets",
+       "name_cn": null,
+       "slug": "sentry-turrets",
+       "changes": [
+        {
+         "text_en": "Can target enemies while mid-flight before being deployed.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "torbjorn",
+     "name_en": "Torbjörn",
+     "name_cn": "托比昂",
+     "role": "damage",
+     "dev_note": "Torbjorn’s new hitscan shot during overload provides him with the ability to compete with other heroes that are more often played and provides a new level of utility.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Deploy Turret",
+       "name_cn": null,
+       "slug": "deploy-turret",
+       "changes": [
+        {
+         "text_en": "Now fires fast-moving rockets instead of bullets.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Overload",
+       "name_cn": null,
+       "slug": "overload",
+       "changes": [
+        {
+         "text_en": "Now increases primary fire projectile speed by 100%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "tracer",
+     "name_en": "Tracer",
+     "name_cn": "猎空",
+     "role": "damage",
+     "dev_note": "Have you ever seen your teammates in trouble and wanted to share your Recall with them? Well, now you can do just that! Also when you see your teammate get stuck with a Pulse Bomb, help them out by shooting it off... or else.",
+     "general": [],
+     "perks": [
+      {
+       "name_en": "Blink Packs",
+       "name_cn": null,
+       "status": "reworked",
+       "lines_en": [
+        "Reworked into Ult Packs – Collecting a health pack grants 10 ult charge."
+       ],
+       "lines_cn": []
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": "Recall",
+       "name_cn": "闪回",
+       "slug": "recall",
+       "changes": [
+        {
+         "text_en": "When activated, grants all allies within 5m the option to Recall for the next 5s.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Pulse Bomb",
+       "name_cn": "脉冲炸弹",
+       "slug": "pulse-bomb",
+       "changes": [
+        {
+         "text_en": "Enemies can now detach a stuck Pulse Bomb by shooting it. Pulse Bomb detaches after 150 damage is dealt to it.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Explosion delay increased from 1s to 3s.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Explosion radius increased from 4m to 7m.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Damage to stuck enemies increased from 350 to 9999.",
+         "text_cn": null,
+         "before": 350.0,
+         "after": 9999.0,
+         "metric": "damage to stuck enemies"
+        },
+        {
+         "text_en": "Damage to stuck enemies ignores damage reduction.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "vendetta",
+     "name_en": "Vendetta",
+     "name_cn": "斩仇",
+     "role": "damage",
+     "dev_note": "Stop swinging around mindlessly, and focus on setting up your team. Vendetta’s Whirlwind Dash now pulls enemies in, leaving them an easy target for teammates. On top of that enemies will have to think twice about dumping cooldowns and bullets into Warding Stance now that it can reflect projectiles. Oh, and one more thing… don't tell your enemies, but Sundering Blade now hits behind Vendetta as well as in front.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Palatine Fang",
+       "name_cn": null,
+       "slug": "palatine-fang",
+       "changes": [
+        {
+         "text_en": "Swing damage decreased from 45 to 30.",
+         "text_cn": null,
+         "before": 45.0,
+         "after": 30.0,
+         "metric": "swing damage"
+        },
+        {
+         "text_en": "Overhead damage reduced from 120 to 90.",
+         "text_cn": null,
+         "before": 120.0,
+         "after": 90.0,
+         "metric": "overhead damage"
+        }
+       ]
+      },
+      {
+       "name_en": "Soaring Slice",
+       "name_cn": null,
+       "slug": "soaring-slice",
+       "changes": [
+        {
+         "text_en": "Overhead damage unchanged at 120.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Warding Stance",
+       "name_cn": null,
+       "slug": "warding-stance",
+       "changes": [
+        {
+         "text_en": "Now passively drains energy while active.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Can now reflect projectiles.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Whirlwind Dash",
+       "name_cn": null,
+       "slug": "whirlwind-dash",
+       "changes": [
+        {
+         "text_en": "Now pulls enemies in instead of pushing them out.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Sundering Blade",
+       "name_cn": null,
+       "slug": "sundering-blade",
+       "changes": [
+        {
+         "text_en": "Targeting indicator now visible to enemies while charging up.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Now hits behind Vendetta as well as in front.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "venture",
+     "name_en": "Venture",
+     "name_cn": "探奇",
+     "role": "damage",
+     "dev_note": "Venture's changes are intended to provide more flexibility for them mid-fight. Venture can be a bit helpless after using drill dash, and it can be difficult to decide when to use it, so the goal is provide more flexibility. Should allow for Venture to use drill dash more easily for movement purposes. The additional knockback provides a bit more disruption from burrowing aggressively into the enemy team.",
+     "general": [
+      "Base HP reduced to 225",
+      "Final blows regenerate 1 charge of Drill Dash."
+     ],
+     "perks": [
+      {
+       "name_en": "Excavation Exhilaration",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [
+        "Replaced with Daylight Dash - Drill Dash distance while above-ground increased by 30%."
+       ],
+       "lines_cn": []
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": "SMART Excavator",
+       "name_cn": null,
+       "slug": "smart-excavator",
+       "changes": [
+        {
+         "text_en": "Primary fire damage increased from 75 to 85.",
+         "text_cn": null,
+         "before": 75.0,
+         "after": 85.0,
+         "metric": "primary fire damage"
+        }
+       ]
+      },
+      {
+       "name_en": "Drill Dash",
+       "name_cn": null,
+       "slug": "drill-dash",
+       "changes": [
+        {
+         "text_en": "Charges increased from 1 to 2.",
+         "text_cn": null,
+         "before": 1.0,
+         "after": 2.0,
+         "metric": "charges"
+        },
+        {
+         "text_en": "Cooldown decreased from 8s to 6s.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Horizontal range decreased by 50%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Vertical range unchanged.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Damage decreased from 90 to 35.",
+         "text_cn": null,
+         "before": 90.0,
+         "after": 35.0,
+         "metric": "damage"
+        }
+       ]
+      },
+      {
+       "name_en": "Burrow",
+       "name_cn": null,
+       "slug": "burrow",
+       "changes": [
+        {
+         "text_en": "Knockback strength increased by 20%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Explorer's Resolve",
+       "name_cn": null,
+       "slug": "explorer-s-resolve",
+       "changes": [
+        {
+         "text_en": "Bonus shields reduced from 25 to 15.",
+         "text_cn": null,
+         "before": 25.0,
+         "after": 15.0,
+         "metric": "bonus shields"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "widowmaker",
+     "name_en": "Widowmaker",
+     "name_cn": "黑百合",
+     "role": "damage",
+     "dev_note": "The days of trying to flank Widowmaker are over. Widowmaker is no longer a scared spider. She is on the hunt, plays closer to the fight, and uses her automatic rifle more.",
+     "general": [],
+     "perks": [
+      {
+       "name_en": "Seeker Mine",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [
+        "Replaced with Vengeful Web - Upon death, drop mini venom mines in the shape of a web."
+       ],
+       "lines_cn": []
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": "Widow's Kiss",
+       "name_cn": "寡妇之吻",
+       "slug": "widows-kiss",
+       "changes": [
+        {
+         "text_en": "Scoped charge rate decreased by 70%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Primary fire spread decreased by 40%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Primary fire shots until max spread increased from 11 to 18.",
+         "text_cn": null,
+         "before": 11.0,
+         "after": 18.0,
+         "metric": "primary fire shots until max spread"
+        }
+       ]
+      },
+      {
+       "name_en": "Grappling Hook",
+       "name_cn": "抓钩",
+       "slug": "grappling-hook",
+       "changes": [
+        {
+         "text_en": "Now stores up to 2 charges.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Widowmaker earns 1 charge of Grappling Hook per final blow.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Venom Mine",
+       "name_cn": "剧毒诡雷",
+       "slug": "venom-mine",
+       "changes": [
+        {
+         "text_en": "Now stores up to 2 charges.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Number of placeable Venom Mines increased from 1 to 2.",
+         "text_cn": null,
+         "before": 1.0,
+         "after": 2.0,
+         "metric": "number of placeable venom mines"
+        },
+        {
+         "text_en": "If 1 Venom Mine is placed, mine deals 75 damage and knocks players away when triggered.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "If 2 Venom Mines are placed within 15m of each other, and an unobstructed line can be drawn between them, a tripwire between the two mines is formed. When triggered, the tripwire deals 180 damage to enemies.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "Support",
+   "role": "support",
+   "description": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "Tactician Subrole",
+     "body": "No longer allows storage of excess ultimate charge. Tacticians now count as an additional ally for the purposes of progressing the objective.",
+     "dev": "For Ana, Bap, Zen it’s a tradeoff between staying out of harm’s way in their safe positions or being rewarded for playing on point (depends which tactical approach you prefer), while for Jetpack Cat & Lucio it encourages them to be more team players rather than exist in the enemy backline."
+    },
+    {
+     "title": "Medic Subrole",
+     "body": "No longer provides self-healing when healing an ally. Now provides 2.5% increased healing per allied Medic hero to all allies from all sources.",
+     "dev": "Dual medic support team compositions are generally not preferred by players so this change makes the team think twice if they want to lose their potential bonus healing as it benefits them as well (healthpacks, abilities healing, passive healing, subrole passive healing etc.)"
+    },
+    {
+     "title": "Survivor Subrole",
+     "body": "Movement abilities no longer immediately start passive health regeneration. Now provides an additional 10 maximum health for every minute a Survivor remains alive, up to a maximum of 100 additional health. Bonus maximum health resets upon death.",
+     "dev": "Survivors survive so increasing their survivability as a reward for surviving longer should help them survive more."
+    }
+   ]
+  },
+  {
+   "type": "hero_update",
+   "title": null,
+   "role": null,
+   "description": null,
+   "heroes": [
+    {
+     "slug": "ana",
+     "name_en": "Ana",
+     "name_cn": "安娜",
+     "role": "support",
+     "dev_note": "Ana Banana can’t be achieved in this, so we go with the second-best option: mobility. All Ana mains want is a form of mobility (a jetpack wouldn’t seem too much, would it?). The Biotic Grenade change will make less of her grenades go to waste and create new usages for them. Biotic Rifle headshot healing deserves to be tested to see if it’s viable.",
+     "general": [
+      "Now has a jetpack."
+     ],
+     "perks": [
+      {
+       "name_en": "Biotic Bounce",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [
+        "Replaced with Biotic Detonation - Detonate Biotic Grenade midair by pressing its ability button again."
+       ],
+       "lines_cn": []
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": "Biotic Rifle",
+       "name_cn": null,
+       "slug": "biotic-rifle",
+       "changes": [
+        {
+         "text_en": "Healing shots can now critically heal allies (2x multiplier).",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Nano Boost",
+       "name_cn": null,
+       "slug": "nano-boost",
+       "changes": [
+        {
+         "text_en": "Cast time removed.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "baptiste",
+     "name_en": "Baptiste",
+     "name_cn": "巴蒂斯特",
+     "role": "support",
+     "dev_note": "Immortality Field has always been a pain point of his kit, so turning it into an ultimate should feel better because even if you’ll see less of it, it will be stronger. Amplification Matrix as an ability should have more flexibility now with its shift to an ability.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Immortality Field",
+       "name_cn": null,
+       "slug": "immortality-field",
+       "changes": [
+        {
+         "text_en": "Moved to Ultimate.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Minimum health threshold increased from 20% to 40%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Health increased from 125 to 300.",
+         "text_cn": null,
+         "before": 125.0,
+         "after": 300.0,
+         "metric": "health"
+        },
+        {
+         "text_en": "Field width increased by 50%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Affected allies receive 25% more healing.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Amplification Matrix",
+       "name_cn": null,
+       "slug": "amplification-matrix",
+       "changes": [
+        {
+         "text_en": "Moved to Ability 2.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Size reduced by 65%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Duration reduced from 10s to 6s.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Damage amplification reduced by 75%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Healing amplification reduced by 65%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "15s cooldown.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Exo-Boots",
+       "name_cn": null,
+       "slug": "exo-boots",
+       "changes": [
+        {
+         "text_en": "Now applies homing to Biotic Grenades while Baptiste is airborne. Homing strength scales with Exo-Boots charge.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "brigitte",
+     "name_en": "Brigitte",
+     "name_cn": "布丽吉塔",
+     "role": "support",
+     "dev_note": "There’s little to no point of playing Brigitte if you can’t close the distance to the enemies, so all of her changes are aimed at making her not just viable, but also a threat on all maps and against all comps.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Whipshot",
+       "name_cn": null,
+       "slug": "whipshot",
+       "changes": [
+        {
+         "text_en": "Now propels Brigitte backwards in her facing direction when impacting the environment.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Shield Bash",
+       "name_cn": null,
+       "slug": "shield-bash",
+       "changes": [
+        {
+         "text_en": "Now allows Brigitte to dash into the air.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Rally",
+       "name_cn": null,
+       "slug": "rally",
+       "changes": [
+        {
+         "text_en": "When used, Brigitte is first lifted into the air by an invisible Jetpack Cat and vanishes from the battlefield. Brigitte can then target a location to drop onto. After landing, Rally is automatically activated.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "illari",
+     "name_en": "Illari",
+     "name_cn": "伊拉锐",
+     "role": "support",
+     "dev_note": "Providing a bit more team utility to the outburst, while also heavily leaning into her lore accurate sun powers.",
+     "general": [],
+     "perks": [
+      {
+       "name_en": "Sunburn",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [
+        "Prevents Outburst from healing allies.",
+        "Illari now spins 2 more times, creating an additional explosion with each spin."
+       ],
+       "lines_cn": []
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": "Outburst",
+       "name_cn": null,
+       "slug": "outburst",
+       "changes": [
+        {
+         "text_en": "Now provides 75 healing to allies within range.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Captive Sun",
+       "name_cn": null,
+       "slug": "captive-sun",
+       "changes": [
+        {
+         "text_en": "Enemies aiming at Illari while Captive Sun is active are now Hindered.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "jetpack-cat",
+     "name_en": "Jetpack Cat",
+     "name_cn": "飞天猫",
+     "role": "support",
+     "dev_note": "Jetpack Cat thrives when she is all over the battlefield, so trading HP for more mobility is always a welcomed improvement. Her ultimate wasn’t well received (especially by tanks) so I tried changing it to a more team-based ult. Also, making her carry turrets into enemies sounds fun and encourages hero synergies.",
+     "general": [
+      "Torbjörn and Symmetra's turrets can now be placed on Jetpack Cat."
+     ],
+     "perks": [
+      {
+       "name_en": "Transport Shielding",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [
+        "Replaced with Zoomies - Increases move speed by 50% and fuel capacity by 100%. Reduces base health by 75."
+       ],
+       "lines_cn": []
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": "Lifeline",
+       "name_cn": null,
+       "slug": "lifeline",
+       "changes": [
+        {
+         "text_en": "Maximum duration decreased from infinite to 10s.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Catnapper",
+       "name_cn": null,
+       "slug": "catnapper",
+       "changes": [
+        {
+         "text_en": "Reworked - Now equips Jetpack Cat with a grenade launcher that heals allies and damage enemies.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Lasts for 8s.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "juno",
+     "name_en": "Juno",
+     "name_cn": "朱诺",
+     "role": "support",
+     "dev_note": "Juno’s speed ring is always seen as an alternative to Lucio’s speed, so introducing a slow in a support’s kit might make her more distinguishable as a hero. Also, her ult is literally a beam from the sky so it should deal damage and be controllable.",
+     "general": [],
+     "perks": [
+      {
+       "name_en": "Locked On",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [
+        "Replaced with Wormhole - Increases Hyper Ring deployment distance by 50%. Upon passing through it, allies gain 25% less speed boost, but enemies are slowed by 35%."
+       ],
+       "lines_cn": []
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": "Orbital Ray",
+       "name_cn": null,
+       "slug": "orbital-ray",
+       "changes": [
+        {
+         "text_en": "Now deals 60 damage/s to enemies within range.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Now travels towards Juno's location instead of always traveling forwards.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "kiriko",
+     "name_en": "Kiriko",
+     "name_cn": "雾子",
+     "role": "support",
+     "dev_note": "The changes are made with the intention of maintaining Kiriko’s identity and fun factor while eliminating the frustrations of playing against her by making her not be able to do a lot of damage from across the map. Kunai healing will be a new challenge for Kiriko mains that I think will be a lot of fun and feel very rewarding with the headshot multiplier. The Suzu change is a tradeoff for the lack of long-range damage that can create opportunities for your team’s engages.",
+     "general": [],
+     "perks": [
+      {
+       "name_en": "Urgent Care",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [
+        "Replaced with Predatory Instincts - Ofuda travel 50% faster when seeking enemies below half health."
+       ],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Fortune Teller",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [
+        "Replaced with Kunai Mastery - After hitting 3 kunai in a row, the next kunai thrown is a guaranteed critical hit."
+       ],
+       "lines_cn": []
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": "Healing Ofuda",
+       "name_cn": null,
+       "slug": "healing-ofuda",
+       "changes": [
+        {
+         "text_en": "Now seeks enemies instead of allies, dealing 10 damage per Ofuda.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Kunai",
+       "name_cn": null,
+       "slug": "kunai",
+       "changes": [
+        {
+         "text_en": "Now heals allies instead of damaging enemies.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Can critically hit allies.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Protection Suzu",
+       "name_cn": null,
+       "slug": "protection-suzu",
+       "changes": [
+        {
+         "text_en": "Now knocks back enemies within range.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Knockback scales with distance thrown.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "lifeweaver",
+     "name_en": "Lifeweaver",
+     "name_cn": "生命之梭",
+     "role": "support",
+     "dev_note": "Lifeweaver has always felt a bit clunky, so these changes to his weapons should help. The enhanced Petal Platform control should allow the platform to be used to reach more interesting angles. Tree of Life should be able to be used both offensively and defensively in order to enhance his carry potential. Right now it feels like a weaker version of other defensive support ults, so these changes give the ultimate its own identity.",
+     "general": [],
+     "perks": [
+      {
+       "name_en": "Superbloom",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [
+        "Moved to base kit."
+       ],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Arboreal Affliction",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [
+        "New - Enemies who are stuck with Superbloom explosions now receive 20% less healing for 1 second."
+       ],
+       "lines_cn": []
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": "Thorn Volley",
+       "name_cn": null,
+       "slug": "thorn-volley",
+       "changes": [
+        {
+         "text_en": "Reload time reduced from 1.5s to 0.75s.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Petal Platform",
+       "name_cn": null,
+       "slug": "petal-platform",
+       "changes": [
+        {
+         "text_en": "Can now be controlled by allies riding the platform by pressing Interact.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Tree of Life",
+       "name_cn": null,
+       "slug": "tree-of-life",
+       "changes": [
+        {
+         "text_en": "Pulses of healing now also reduce allied cooldowns by 2 seconds per pulse and increase enemy cooldowns by 2 seconds. Only abilities which are on cooldown are affected.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "lucio",
+     "name_en": "Lúcio",
+     "name_cn": "卢西奥",
+     "role": "support",
+     "dev_note": "Lúcio’s boop is a big part of his identity, so rewarding players for being more intentional with how far they want to boop enemies should make him feel even better. His ult being cancellable is necessary for a fair and balanced game, but I tried looking at it from a different perspective: what is it doesn’t affect him, but only allies and enemies (every Lúcio main fears their ultimate being cancelled so this relieves the pressure while also maintaining a risk element). The speed boost for payload and push bot is just something I thought actually happened when I first started playing Overwatch and was slightly disappointed it didn’t.",
+     "general": [
+      "Lúcio can now speed boost the payload and TS-1 (the Push robot)."
+     ],
+     "perks": [
+      {
+       "name_en": "Soundwave Rider",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [
+        "Replaced with Bass Buildup - Holding Secondary Fire gradually charges up an empowered Soundwave. Empowered Soundwaves deal up to 50% more damage and 25% more knockback. Soundwave's cooldown increased by 1s."
+       ],
+       "lines_cn": []
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": "Sound Barrier",
+       "name_cn": null,
+       "slug": "sound-barrier",
+       "changes": [
+        {
+         "text_en": "No longer applies Overhealth to Lúcio.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Ultimate charge is not consumed until Sound Barrier is successfully cast.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Now knocks back enemies within range.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "mercy",
+     "name_en": "Mercy",
+     "name_cn": "天使",
+     "role": "support",
+     "dev_note": "Mercy’s Resurrect is a staple for her kit, so with these changes we are leaning heavily into the nostalgia by bringing back a little bit of how the old Resurrect used to work. She also needs more carry capabilities outside of her ultimate, so the bleed on the wings paired with Guardian Angel being able to target enemies should provide a bit more potential for aggressive playmaking.",
+     "general": [],
+     "perks": [
+      {
+       "name_en": "Angelic Resurrection",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [
+        "Replaced with Remote Resurrection - Resurrection's range is increased to 10m and no longer requires line of sight to initiate."
+       ],
+       "lines_cn": []
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": "Guardian Angel",
+       "name_cn": null,
+       "slug": "guardian-angel",
+       "changes": [
+        {
+         "text_en": "Can now target enemies as well as allies.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Now applies 30 damage over 3s to enemies within 4m of a Mercy using Guardian Angel.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "mizuki",
+     "name_en": "Mizuki",
+     "name_cn": "瑞稀",
+     "role": "support",
+     "dev_note": "The Mizuki changes are a result of community feedback on the hero and would encourage players to experiment with him more as it gives him more fluidity. If he can’t wallclimb let him at least use the walls for mobility and repositioning.",
+     "general": [],
+     "perks": [
+      {
+       "name_en": "Resonant Return",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [
+        "Replaced with Rule of Three – Healing Kasa gains 1 additional charge. Each bounce now increases healing by 10, with maximum bounces reduced to 3."
+       ],
+       "lines_cn": []
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": "Remedy Aura",
+       "name_cn": null,
+       "slug": "remedy-aura",
+       "changes": [
+        {
+         "text_en": "Allies can now see the aura's range.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Spirit Glaive",
+       "name_cn": null,
+       "slug": "spirit-glaive",
+       "changes": [
+        {
+         "text_en": "Can now be charged up by holding down primary fire.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Charged projectiles pierce enemies and travel further.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Binding Chain",
+       "name_cn": null,
+       "slug": "binding-chain",
+       "changes": [
+        {
+         "text_en": "Can now attach to walls. Pulls Mizuki towards the contact point if the chain impacts the environment.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Mizuki can cancel the grapple early by jumping.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Katashiro Return",
+       "name_cn": null,
+       "slug": "katashiro-return",
+       "changes": [
+        {
+         "text_en": "Enemies can no longer see the paper doll indicating Mizuki's return location.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Paper doll now heals allies near it.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "moira",
+     "name_en": "Moira",
+     "name_cn": "莫伊拉",
+     "role": "support",
+     "dev_note": "Moira’s changes are intended to give her more control over her kit, because although her numbers are strong, it can often be hard to capitalize fully on her abilities and ultimate.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Biotic Grasp",
+       "name_cn": null,
+       "slug": "biotic-grasp",
+       "changes": [
+        {
+         "text_en": "Healing range increased by 100%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Biotic Orb",
+       "name_cn": null,
+       "slug": "biotic-orb",
+       "changes": [
+        {
+         "text_en": "Biotic Orb's trajectory is now controlled via Moira's facing direction until the first bounce.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Coalescence",
+       "name_cn": null,
+       "slug": "coalescence",
+       "changes": [
+        {
+         "text_en": "Ultimate charge is now gradually consumed over the duration of Coalescence.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Moira can now manually cancel Coalescence early after consuming at least 25% ultimate charge, retaining any remaining ultimate charge.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "All ultimate charge is immediately lost upon death while using Coalescence.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "wuyang",
+     "name_en": "Wuyang",
+     "name_cn": "无漾",
+     "role": "support",
+     "dev_note": "When I saw the animation for Wuyang's wave, I felt like it should do more to enemies, so I wanted to give this effect to it. Also, with all the burning effects being in game right now, there is a need for something to extinguish the flames that is not Suzu.",
+     "general": [],
+     "perks": [
+      {
+       "name_en": "Ebb and Flow",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [
+        "Replaced with Powerful Current - Guardian Wave is wider and carries enemies into the air."
+       ],
+       "lines_cn": []
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": "Xuanwu Staff",
+       "name_cn": null,
+       "slug": "xuanwu-staff",
+       "changes": [
+        {
+         "text_en": "Orbs are now visible to Wuyang through walls.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Guardian Wave",
+       "name_cn": null,
+       "slug": "guardian-wave",
+       "changes": [
+        {
+         "text_en": "Now extinguishes the Burning status.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "zenyatta",
+     "name_en": "Zenyatta",
+     "name_cn": "禅雅塔",
+     "role": "support",
+     "dev_note": "The intent of these changes is to change the gameplay flow of Zen. Instead of putting an orb on an ally and forgetting about it while non stop shooting the enemy, now you have to manage your ammo between enemies and allies while also having stronger effects on your Harmony and Discord orbs.",
+     "general": [],
+     "perks": [
+      {
+       "name_en": "Dual Harmony",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [
+        "Replaced with Harmonic Momentum - Zenyatta can no longer place Orb of Harmony on allies. Instead, holding the Orb of Harmony button now enables Zenyatta to move 50% faster, but prohibits performing some actions."
+       ],
+       "lines_cn": []
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": "Orb of Destruction",
+       "name_cn": null,
+       "slug": "orb-of-destruction",
+       "changes": [
+        {
+         "text_en": "Can now heal allies in addition to damaging enemies.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Can only damage enemies (unchanged).",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Orb of Harmony",
+       "name_cn": null,
+       "slug": "orb-of-harmony",
+       "changes": [
+        {
+         "text_en": "No longer provides healing to allies.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Now increases attack speed and movement speed by 20%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Orb of Discord",
+       "name_cn": null,
+       "slug": "orb-of-discord",
+       "changes": [
+        {
+         "text_en": "No longer automatically attaches to enemies.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "No longer detaches when Zenyatta loses line of sight for too long.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Pressing the button now toggles empowering the next primary fire orb.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Empowered orb travels 200% faster and attaches Orb of Discord to enemies for 4 seconds on hit.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Orb of Discord now slows targets by 30% while attached.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Cooldown of 12s when firing an empowered orb.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "Bug Fixes",
+   "role": null,
+   "description": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "General",
+     "body": "Fixed an issue where the display price for 1000 Overwatch Coins appeared incorrectly in some languages Fixed an issue causing the AFK timer to behave incorrectly on the Neon Junction map. Fixed an issue where Hero Bans would not show when the ban‑role limit was reached. Fixed an issue that prevented Shion's Burst from being used during Satsuriku Spree while hacked or mobility‑locked, despite being governed by Transformation logic. Fixed an issue which was causing our lighting to render some heroes brighter than intended.",
+     "dev": null
+    },
+    {
+     "title": "Stadium",
+     "body": "In a previous update, an issue where Ramattra’s Void Barrier could be cast more often than intended when the “Ramparts” power was equipped.",
+     "dev": null
+    }
+   ]
+  }
+ ],
+ "raw_text": null,
+ "hash": "sha256:f39a7ee37f658b161337786c5dd5448e689a315d60effac4cf4724e07d299cca"
+}

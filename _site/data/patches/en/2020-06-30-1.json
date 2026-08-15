@@ -1,0 +1,237 @@
+{
+ "id": "en-2020-06-30-1",
+ "site": "en",
+ "date": "2020-06-30",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2020/06",
+ "title": "Overwatch Retail Patch Notes – June 30, 2020",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": null,
+   "role": null,
+   "description": "To share your feedback, please post in the General Discussion forum. For a list of known issues, visit our Bug Report forum. For troubleshooting assistance, visit our Technical Support forum.",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "Competitive Updates",
+   "role": null,
+   "description": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "Open Queue Added to Competitive Play",
+     "body": "Starting with Season 23, Competitive Play will support both Role Queue and Open Queue. These will be separate queues, so you won’t see Role Queue teams playing against Open Queue teams. Open Queue will have its own SR and leaderboard, separate from the role-specific Role Queue SRs and leaderboards.",
+     "dev": null
+    },
+    {
+     "title": "Adjustments to Seasonal Placements for High SR Players",
+     "body": "Beginning with Season 23, the maximum Skill Rating (SR) earned after a player completes each season’s placements has been capped at 3900 SR. Players are still matched with other players of similar skill, as we want to keep matches as fair and fun as possible. As each player participates in more games during the current season, their SR will slowly rise to reach a value that fully reflects their current skill. This change is intended to address many of the issues that SR Decay tried to fix, but in a more positive manner that rewards staying active and playing more games instead of penalizing players for not playing enough. Achieving a very high SR at the end of a season can no longer be achieved by completing a mere five placement matches. This does mean you may see larger SR differences between all the players in a very high SR match than in previous seasons, as two similar and highly skilled players might have different SRs based on how many games they’ve played during the season.",
+     "dev": null
+    }
+   ]
+  },
+  {
+   "type": "hero_update",
+   "title": "Hero Updates",
+   "role": null,
+   "description": null,
+   "heroes": [
+    {
+     "slug": "ashe",
+     "name_en": "Ashe",
+     "name_cn": "艾什",
+     "role": "damage",
+     "dev_note": "With recent improvements to Ashe's weapon her overall damage output has increased significantly. Toning Dynamite down will lower her overall damage while keeping her damage output focused on her rifle.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Dynamite",
+       "name_cn": null,
+       "slug": "dynamite",
+       "changes": [
+        {
+         "text_en": "Cooldown increased from 10 to 12 seconds",
+         "text_cn": null,
+         "before": 10.0,
+         "after": 12.0,
+         "metric": "cooldown"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "brigitte",
+     "name_en": "Brigitte",
+     "name_cn": "布丽吉塔",
+     "role": "support",
+     "dev_note": "Granting additional maximum health is a powerful ability and has proven too effective when combined with the additional healing of Repair Pack. Brigitte's barrier will now provide more protection up front, enabling her to withstand more directed fire, but will also have a longer downtime if it is destroyed.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Repair Pack",
+       "name_cn": null,
+       "slug": "repair-pack",
+       "changes": [
+        {
+         "text_en": "No longer grants an additional armor health pool",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Barrier Shield",
+       "name_cn": null,
+       "slug": "barrier-shield",
+       "changes": [
+        {
+         "text_en": "Maximum health increased from 200 to 250",
+         "text_cn": null,
+         "before": 200.0,
+         "after": 250.0,
+         "metric": "maximum health"
+        },
+        {
+         "text_en": "Regeneration rate decreased from 100 to 85 health per second",
+         "text_cn": null,
+         "before": 100.0,
+         "after": 85.0,
+         "metric": "regeneration rate"
+        },
+        {
+         "text_en": "Cooldown when destroyed increased from 3 to 5 seconds",
+         "text_cn": null,
+         "before": 3.0,
+         "after": 5.0,
+         "metric": "cooldown when destroyed"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "d-va",
+     "name_en": "D.Va",
+     "name_cn": "D.Va",
+     "role": "tank",
+     "dev_note": "These buffs are aimed at making D.Va feel more fluid and responsive to play.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Fusion Cannons",
+       "name_cn": null,
+       "slug": "fusion-cannons",
+       "changes": [
+        {
+         "text_en": "Movement penalty reduced from 50 to 40%",
+         "text_cn": null,
+         "before": 50.0,
+         "after": 40.0,
+         "metric": "movement penalty"
+        }
+       ]
+      },
+      {
+       "name_en": "Defense Matrix",
+       "name_cn": null,
+       "slug": "defense-matrix",
+       "changes": [
+        {
+         "text_en": "Cooldown reduced from 1.5 to 1 second",
+         "text_cn": null,
+         "before": 1.5,
+         "after": 1.0,
+         "metric": "cooldown"
+        }
+       ]
+      },
+      {
+       "name_en": "Micro Missiles",
+       "name_cn": null,
+       "slug": "micro-missiles",
+       "changes": [
+        {
+         "text_en": "Activation delay reduced from 0.5 to 0.25 seconds",
+         "text_cn": null,
+         "before": 0.5,
+         "after": 0.25,
+         "metric": "activation delay"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "junkrat",
+     "name_en": "Junkrat",
+     "name_cn": "狂鼠",
+     "role": "damage",
+     "dev_note": "These are a couple quality of life changes for Junkrat. This makes it possible to do some Concussion Mine jumps that were no longer possible after a previous increase to its projectile speed.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Concussion Mine",
+       "name_cn": "震荡地雷",
+       "slug": "concussion-mine",
+       "changes": [
+        {
+         "text_en": "Trigger delay reduced from 0.156 to 0.1 seconds",
+         "text_cn": null,
+         "before": 0.156,
+         "after": 0.1,
+         "metric": "trigger delay"
+        }
+       ]
+      },
+      {
+       "name_en": "RIP-Tire",
+       "name_cn": "炸弹轮胎",
+       "slug": "rip-tire",
+       "changes": [
+        {
+         "text_en": "Time to take control of Junkrat post detonation has been reduced from 1.5 to 0.9 seconds",
+         "text_cn": null,
+         "before": 1.5,
+         "after": 0.9,
+         "metric": "time to take control of junkrat post detonation has been"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "Bug Fixes",
+   "role": null,
+   "description": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "General",
+     "body": "Fixed a bug with patch notes truncation for the Taiwanese locale Fixed a bug with specific hero ultimate voicelines playing both their friendly and enemy team variations",
+     "dev": null
+    },
+    {
+     "title": "Heroes",
+     "body": "Ashe Fixed a bug with an Incorrect shadow displayed across the hood of the Little Red skin Lucio Fixed a bug with Lucio being able to switch to Heal Song while stunned Reinhardt Fixed a bug with fire strike appearing invisible for allies Roadhog Fixed a bug that allowed Roadhog to hook Baptiste's Immortality Field Wrecking Ball Fixed a bug where Wrecking Ball could hit an enemy much faster than intended with Roll Damage",
+     "dev": null
+    }
+   ]
+  }
+ ],
+ "raw_text": null,
+ "hash": "sha256:763c25c3207478548f7ae83b731a3a58c78e3f245e91852721b7906579963335"
+}

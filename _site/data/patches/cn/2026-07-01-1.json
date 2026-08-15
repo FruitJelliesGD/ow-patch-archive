@@ -1,0 +1,3536 @@
+{
+ "id": "cn-2026-07-01-1",
+ "site": "cn",
+ "date": "2026-07-01",
+ "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
+ "title": "《守望先锋》补丁说明——2026年7月1日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "游戏客户端更新",
+   "role": null,
+   "description": "本次是游戏客户端更新，内容为推出全新的社区创造模式，外加若干错误修复。回放代码已移除。",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "社区创造模式",
+   "role": null,
+   "description": "在四名大家最爱的内容创作者——Guxue、Apply、Ocie和mL7support的帮助下，我们打造出了全新版本的《守望先锋》，诚邀大家共同体验。我们根据创作者们对英雄游戏风格的创想，为每一名英雄（除了死怨）都推出了新的改动，以供大家摸索。从7月1日至7月14日，快进入街机先锋，尝试这个新的游戏模式吧。",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "重装",
+   "role": "tank",
+   "description": null,
+   "heroes": [
+    {
+     "slug": "d-va",
+     "name_en": "D.Va",
+     "name_cn": "D.Va",
+     "role": "tank",
+     "dev_note": "我们希望让D.Va玩家更有动力使用“防御矩阵”去保护队友，也希望D.Va能够借此获得回报，造成更多“自毁”伤害。离开机甲的D.Va战斗力有所欠缺，所以我们决定提升她在驾驶员形态下的生存能力和杀伤力。",
+     "general": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "小兔之力",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "从次级威能改为基础技能。"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "团队领袖",
+       "status": "added",
+       "lines_en": [],
+       "lines_cn": [
+        "新增",
+        "呼叫机甲后，周围盟友获得50点临时过量生命值。"
+       ]
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "防御矩阵",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在每吸收100点伤害，都会额外造成10点“自毁”伤害。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "光枪",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "辅助攻击模式现在会发射一颗手雷。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "自毁",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "终极技能充能生成速度加快20%。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "domina",
+     "name_en": "Domina",
+     "name_cn": "金驭",
+     "role": "tank",
+     "dev_note": "“音速斥力场”现在可以帮助“金驭”更容易地抵达高处，而“全景牢笼”在施展时灵活性更高，即可以用于防御，也可以用于进攻。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "音速斥力场",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在会将“金驭”推向她面对的反方向。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "击退敌人力度提高40%。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "全景牢笼",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在可以为盟友提供一个200点生命值的屏障。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "doomfist",
+     "name_en": "Doomfist",
+     "name_cn": "末日铁拳",
+     "role": "tank",
+     "dev_note": "“上勾重拳”的人气一直特别高，社区也一直在开玩笑说希望能重新加入这个选项。添加能够强化所有技能的能力，再结合“上勾重拳”，可以让“末日铁拳”拥有更大的压制能力。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "悍猛格挡",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在可以强化任何下一次使用的技能，而不只是“火箭重拳”。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "上勾重拳",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "重新加入。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "强化“上勾重拳”可以击晕敌人。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "裂地重拳",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "强化“裂地重拳”会使敌人减速40%，持续2秒。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "毁天灭地",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "移除了减速效果。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "现在会击退敌人。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "hazard",
+     "name_en": "Hazard",
+     "name_cn": "骇灾",
+     "role": "tank",
+     "dev_note": "攀墙能力为“骇灾”提供了更多刺客风格的游戏玩法选项。“千针雨”现在太容易就能避开，所以我们对其进行了修改，让它使用起来更加简单直接。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "翻越",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "到达最大攀墙高度后，继续按住跳跃键可以让“骇灾”停在原处，而不是沿墙下滑。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "在攀墙时，“骇灾”的镜头会切换为第三人称。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "在攀住墙壁时使用任何技能会让“骇灾”立刻跳离墙壁。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "千针雨",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "提升宽度和范围。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "不再造成定身效果。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "命中伤害从90点提高至270点。",
+         "before": 90.0,
+         "after": 270.0,
+         "metric": "命中伤害"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "junker-queen",
+     "name_en": "Junker Queen",
+     "name_cn": "渣客女王",
+     "role": "tank",
+     "dev_note": "这次的更改让“渣客女王”可以交替投掷“格雷西”和“血斩”，从远距离上压制敌人，增强她的远程施压能力。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "血斩",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在会掷出斧头，而不是挥舞。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "掷出的斧头可以对敌人造成暴击。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "掷出的斧头在击中后会在流血效果持续期间始终插在敌人身上。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "当掷出的斧头击中场景时，或当插着斧头的敌人被消灭时，斧头会落到地上。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "拾起掉落的斧头可以使“血斩”的冷却时间缩短3秒。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "mauga",
+     "name_en": "Mauga",
+     "name_cn": "毛加",
+     "role": "tank",
+     "dev_note": "毛加终于明白了一件事：作为一名身高2米2、体重500斤、孔武有力的萨摩亚人，他总是在战场上为队友提供受伤减免和生命汲取，这种打法实在是太“温柔”，太有团队精神了。所以他决定自私到底，现在他的每一丝力气都会为自己而花。他现在会拥有最猛的伤害和最厚的血。毛加也会利用自己的体型横冲直撞，踩碎他的敌人。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "蛮力冲撞",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "重踏伤害现在会随施展高度而提升，最多可达250点伤害。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "心脏过载",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "移除了生命汲取和受伤减免效果。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "不再影响盟友。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "持续时间从3秒延长至5秒。",
+         "before": 3.0,
+         "after": 5.0,
+         "metric": "持续时间"
+        },
+        {
+         "text_en": null,
+         "text_cn": "现在会在毛加受到伤害时，使他的移动速度加快20%，持续3秒。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "现在会将受到的每1点伤害都转化为1点治疗资源。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "储存的治疗资源会持续到“心脏过载”的冷却时间结束。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "重新使用“心脏过载”会使用储存的治疗资源来治疗毛加。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "orisa",
+     "name_en": "Orisa",
+     "name_cn": "奥丽莎",
+     "role": "tank",
+     "dev_note": "奥丽莎给人的定位始终是一名体格强壮，脚下生桩的英雄，所以这次的改动是为了探讨一下机动性更强的奥丽莎会是什么样子。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "能量标枪",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在可以影响盟友。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "在影响盟友时，目标会获得100点治疗，且移动速度加快25%，持续3秒。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "强固防御",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "在激活时，奥丽莎会在获得“强固防御”状态的同时向前冲锋。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "再次激活“强固防御”会让奥丽莎停止冲锋。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "冲锋停止后，“强固防御”会再额外持续1秒。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "冲锋会将敌人撞开。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "标枪旋击",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "向上方瞄准时，奥丽莎会向上方飞起。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "ramattra",
+     "name_en": "Ramattra",
+     "name_cn": "拉玛刹",
+     "role": "tank",
+     "dev_note": "每次拉玛刹出现在大厅里，仿佛都是在向所有人宣告“选我你们就受苦吧”。所以我们决定将他的“虚空屏障”改为永久持续的技能，并让他的终极技能拥有100%生命汲取的效果，这样他就可以让所有人体会他的痛苦更久的时间。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "虚空屏障",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "屏障现在会无限期持续。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "可以通过再次按下辅助攻击模式取消。取消会让“虚空屏障”进入冷却。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "冷却时间缩短至2.5秒。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "吞噬漩涡",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在会在初次部署时对敌人造成限制。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "诛",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "每秒伤害从35点降低至20点。",
+         "before": 35.0,
+         "after": 20.0,
+         "metric": "每秒伤害"
+        },
+        {
+         "text_en": null,
+         "text_cn": "现在拥有100%生命汲取效果。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "reinhardt",
+     "name_en": "Reinhardt",
+     "name_cn": "莱因哈特",
+     "role": "tank",
+     "dev_note": "这次的改动可以让莱因哈特少点时间持盾防御，多点时间锤人。",
+     "general": [
+      "狂战士——被动",
+      "新增",
+      "损失生命值会让莱因哈特的移动速度和攻击速度提升。",
+      "每损失100点生命值，莱因哈特的移动速度和攻击速度加快8%。",
+      "在剩下200点生命值时，此加成达到最大效果。"
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "屏障力场",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "屏障生命值从1500点降低至1100点。",
+         "before": 1500.0,
+         "after": 1100.0,
+         "metric": "屏障生命值"
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "冲锋",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "最大持续时间从3秒延长至20秒。",
+         "before": 3.0,
+         "after": 20.0,
+         "metric": "最大持续时间"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "roadhog",
+     "name_en": "Roadhog",
+     "name_cn": "路霸",
+     "role": "tank",
+     "dev_note": "我们增强了“路霸”的机动能力，让他可以更快速地赶到队友身边并提供保护。“呼吸器”的改动让“路霸”在使用此技能时不会陷入单纯被动挨打的状态。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "链钩",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在可以击中队友。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "若“链钩”击中队友，“路霸”会被拉向该队友。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "呼吸器",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "在“路霸”周围释放出毒气，对附近的敌人造成每秒50点伤害。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "sigma",
+     "name_en": "Sigma",
+     "name_cn": "西格玛",
+     "role": "tank",
+     "dev_note": "新增的重力控制能力可以让“西格玛”高高飞起，然后再用“引力乱流”重重将敌人砸进地面。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "动能俘获",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在激活时可以自由飞行。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "质量吸附",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "击倒持续时间会随着距离增加而延长。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "引力乱流",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "不再使敌人浮空。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "现在会将敌人按在地面，禁止所有移动和位移技能，持续3秒。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "现在会造成每秒25点伤害。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "猛砸伤害从最大总生命值的50%改为75点。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "现在会使自由飞行时间延长4秒。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "winston",
+     "name_en": "Winston",
+     "name_cn": "温斯顿",
+     "role": "tank",
+     "dev_note": "这次我们添加了每次跳跃可以使用“喷射背包”两次的能力，让温斯顿拥有更多的机动选项，包括更容易转向，并延长了跳跃的距离。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "喷射背包",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "在首次激活的1秒内，可以以50%的效果再次激活。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "屏障发射器",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在可以向前掷出。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "屏障现在不会立刻部署。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "屏障现在会在温斯顿再次按下技能键时，或者在2秒后部署。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "wrecking-ball",
+     "name_en": "Wrecking Ball",
+     "name_cn": "破坏球",
+     "role": "tank",
+     "dev_note": "通常情况下，如果你的队友选择了“破坏球”，你可能无法知道其在干什么，或者如何为其提供支援。本次改动应该可以让队友跟“破坏球”配合得更好。",
+     "general": [
+      "被技能伤害击中的敌人会向“破坏球”的队友显示位置，持续1.5秒。"
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "工程抓钩",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在可以固定在地面上。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "地雷禁区",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "地雷现在可以在2秒后手动引爆。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "zarya",
+     "name_en": "Zarya",
+     "name_cn": "查莉娅",
+     "role": "tank",
+     "dev_note": null,
+     "general": [
+      "“投射屏障”的改动可以让查莉娅帮助缺少机动能力的盟友更容易地抵达高处。"
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "投射屏障",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "受屏障影响的盟友可以跳得更高。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "重力喷涌",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "外缘吸引范围扩大50%。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "位于外缘吸引范围内的敌人移动能力不会被禁用。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "输出",
+   "role": "damage",
+   "description": null,
+   "heroes": [
+    {
+     "slug": "",
+     "name_en": null,
+     "name_cn": "安燃",
+     "role": "damage",
+     "dev_note": "安燃有点难以点燃敌人并拿下消灭，所以在实战中，玩家不得不做出权衡和妥协。本次改动可以让点燃敌人更加容易，略微提升安燃的远距离伤害，而且延长了“怒炎冲”的移动距离，给了她更多的撤离选项。",
+     "general": [
+      "基础移动速度从6米每秒提升到6.5米每秒。"
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "朱雀扇",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "射速提升50%。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "弹道速度从90米每秒提高至150米每秒。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "怒炎冲",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "安燃现在可以长按向后移动键以向后冲刺。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "最初启动速度提高27%。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "ashe",
+     "name_en": "Ashe",
+     "name_cn": "艾什",
+     "role": "damage",
+     "dev_note": "鲍勃现在也不好惹了。从前在战场上没人把鲍勃当做威胁，现在情况不一样了。我相信大家都很讨厌炸药被D.Va吃光的感觉，所以经过精心的规划之后，艾什可以在战斗开始之前将“延时雷管”黏在墙壁上，这个问题就不存在了。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "延时雷管",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在可以贴在各种表面上。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "引信时间从5秒延长至20秒。",
+         "before": 5.0,
+         "after": 20.0,
+         "metric": "引信时间"
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "召唤鲍勃",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "当鲍勃在时间结束之前被摧毁时，会在短暂延迟后爆炸。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "bastion",
+     "name_en": "Bastion",
+     "name_cn": "堡垒",
+     "role": "damage",
+     "dev_note": "你喜欢赛车吗？“堡垒”现在在坦克模式下变成了一辆超级赛车。他不再是移动缓慢、易受攻击的目标，而变成了飚速狂魔。既然我们都将《守望先锋2》里的2去掉了，何不将他最初的终极技能加回来呢？",
+     "general": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "林德霍姆炸药",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "更改为“精调踏板”。",
+        "在强攻模式或坦克模式下移动速度加快35%。"
+       ]
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "火炮模式",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "改为了“坦克模式”：“坦克模式”的武器会发射高速炮弹，造成205点爆炸伤害。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "cassidy",
+     "name_en": "Cassidy",
+     "name_cn": "卡西迪",
+     "role": "damage",
+     "dev_note": "希望敌人看到时针指向12的时候会惊慌恐惧，也希望日正当午的时候，大家都能理所当然地躲到护盾后面……祝你好运吧。",
+     "general": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "绝处逢生",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "被替换为“穿障神枪”：“神射手”的子弹可以穿透屏障。"
+       ]
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": "Combat Roll",
+       "name_cn": "战术翻滚",
+       "slug": "combat-roll",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在在“战术翻滚”期间会进入无敌状态。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Deadeye",
+       "name_cn": "神射手",
+       "slug": "deadeye",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "通过“神射手”打出的最后一击每次都会在当前回合内使最大弹药+1发，最多达到18发最大弹药。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "echo",
+     "name_en": "Echo",
+     "name_cn": "回声",
+     "role": "damage",
+     "dev_note": "“回声”的“人格复制”人选非常明确，通常是重装或部分输出英雄（如“猎空”或“死神”），为了增进复制的效能，我们做出了相应的改动，在复制特定类型英雄时会提供增益。此外，现在“聚焦光线”消耗单独的资源槽，作为消灭目标的手段更为灵活可控。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "聚焦光线",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "输入键位改为辅助攻击模式键。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从8秒缩短至1秒。",
+         "before": 8.0,
+         "after": 1.0,
+         "metric": "冷却时间"
+        },
+        {
+         "text_en": null,
+         "text_cn": "现在需要消耗一种被动恢复的资源。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "黏性炸弹",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "弹道速度提升60%。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "身上被附着“黏性炸弹”的敌人会向“回声”显示位置，持续5秒。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "人格复制",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "在复制支援英雄时，“回声”造成的伤害提升20%。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "在复制输出英雄时，“回声”的生命值提升20%。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "在复制重装英雄时，“回声”的移动速度加快20%。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "emre",
+     "name_en": "Emre",
+     "name_cn": "埃姆雷",
+     "role": "damage",
+     "dev_note": "更多手雷！！！此外，过去当你听到埃姆雷使用终极技能时，你一定会把他当做空中的活靶子……现在这个情况不会再发生了。",
+     "general": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "赛博黏附",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "改为“优化索敌”：开镜时，若三连发射击全部命中，下一次不开镜连发射击的伤害提高35%。"
+       ]
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "赛博手雷",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "“赛博手雷”造成最后一击会返还1次“赛博手雷”充能。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "覆盖协议",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在拥有30%的生命汲取效果。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "",
+     "name_en": null,
+     "name_cn": "弗蕾娅",
+     "role": "damage",
+     "dev_note": "这次的改动略微提升了“流星索”的威力，同时略微削弱了弗蕾娅的即时伤害能力，进而削弱了整体的爆发能力。“赏金狩猎”机制也为弗蕾娅带来了一些有趣的目标，值得你去追猎。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "瞄准射击",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "爆炸伤害从80点降低至40点。",
+         "before": 80.0,
+         "after": 40.0,
+         "metric": "爆炸伤害"
+        },
+        {
+         "text_en": null,
+         "text_cn": "爆炸会导致被附着的目标流血，在2秒内受到40点伤害。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "流星索",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "范围减速效果从45%提高至75%。",
+         "before": 45.0,
+         "after": 75.0,
+         "metric": "范围减速效果"
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "赏金狩猎",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在会将一名随机敌方玩家标记为赏金目标。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "消灭赏金目标会获得15%终极技能充能。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "每次消灭赏金目标后会有6秒冷却时间。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "genji",
+     "name_en": "Genji",
+     "name_cn": "源氏",
+     "role": "damage",
+     "dev_note": "“斩”经常会被用来骗支援英雄的终极技能，如“音障”或“集结号令”。这次的改动让源氏可以取消“斩”，让这个技能更加收放自如。这些改动也可以提升源氏在远距离上的“闪”伤害，巩固了源氏反制双即时命中英雄组合的实力。",
+     "general": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "神竜之渴",
+       "status": "moved",
+       "lines_en": [],
+       "lines_cn": [
+        "改为了基础技能。"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "迅疾盗圣",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "新增：源氏推进目标进度的速度加快。"
+       ]
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "闪",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "距离被攻击者越远，“闪”的反弹伤害越高。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "“闪”打出最后一击时，源氏的伤害提升15%，持续5秒。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "斩",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在可以取消。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "提前取消“斩”可以释放出一道大型剑气，并返还源氏的技能冷却时间。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "hanzo",
+     "name_en": "Hanzo",
+     "name_cn": "半藏",
+     "role": "damage",
+     "dev_note": "半藏缺乏稳定输出能力，这次的射速和伤害改动能够弥补这个短板，让他能够进行更多次射击。而对终极技能的改动可以让他从“竜”里获得更多收益。半藏的主要使用场景是在拥有更多垂直空间的地图中——他的垂直跳跃能力让他在这些地图中拥有更高的灵活性。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "风",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "伤害从125点降低至70点。",
+         "before": 125.0,
+         "after": 70.0,
+         "metric": "伤害"
+        },
+        {
+         "text_en": null,
+         "text_cn": "每次射击之间的恢复时间从0.5秒缩短至0.25秒。",
+         "before": 0.5,
+         "after": 0.25,
+         "metric": "每次射击之间的恢复时间"
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "岚",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在可以弹跳两次。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "现在在弹跳后造成的伤害减半。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "跃",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "若不按任何方向，长按跳跃会让半藏向上飞起。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Dragonstrike",
+       "name_cn": "竜",
+       "slug": "dragonstrike",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "终极技能消耗降低12%。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "双龙的飞行速度加快20%。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "junkrat",
+     "name_en": "Junkrat",
+     "name_cn": "狂鼠",
+     "role": "damage",
+     "dev_note": "“狂鼠”现有的技能组非常有意思，可惜在高水平对战中难以发挥出价值，同时在低水平对战中，其他玩家面对他时又非常破坏体验。为“狂鼠”替换类似主题的技能组，同时更改其基础功能，也许能让“狂鼠”在各个水平的战斗中都能够呈现更高的质量。",
+     "general": [
+      "生命值从250点降低至200点。",
+      "基础移动速度从5.5米每秒提高至6米每秒。"
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Frag Launcher",
+       "name_cn": "榴弹发射器",
+       "slug": "frag-launcher",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "弹道速度从30米每秒提高至112.5米每秒。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "命中伤害从45点降低至30点。",
+         "before": 45.0,
+         "after": 30.0,
+         "metric": "命中伤害"
+        },
+        {
+         "text_en": null,
+         "text_cn": "爆炸伤害从80点降低至50点。",
+         "before": 80.0,
+         "after": 50.0,
+         "metric": "爆炸伤害"
+        },
+        {
+         "text_en": null,
+         "text_cn": "射弹现在会在击中任何物体时引爆。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "捕兽夹",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在有2次使用次数。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从10秒延长至13秒。",
+         "before": 10.0,
+         "after": 13.0,
+         "metric": "冷却时间"
+        },
+        {
+         "text_en": null,
+         "text_cn": "现在可以投掷得更远。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "部署的陷阱需要1秒的准备时间，持续6秒。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "位于激活的陷阱6米内的所有敌人陷入流血状态，并向“狂鼠”显示位置。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "陷阱生命值从100点提高至120点。",
+         "before": 100.0,
+         "after": 120.0,
+         "metric": "陷阱生命值"
+        }
+       ]
+      },
+      {
+       "name_en": "Concussion Mine",
+       "name_cn": "震荡地雷",
+       "slug": "concussion-mine",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "不再掷出射弹。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "现在会在“狂鼠”脚下触发一次震荡爆炸。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "伤害从120点降低至90点。",
+         "before": 120.0,
+         "after": 90.0,
+         "metric": "伤害"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "mei",
+     "name_en": "Mei",
+     "name_cn": "美",
+     "role": "damage",
+     "dev_note": "美的主要攻击模式同时也是她主要的减速效果来源，这让其他玩家有些应付不来，所以我们将美的减速能力转移至要求技术的射击操作（辅助攻击模式），弥补这方面的公平性。让美可以强化自己的辅助攻击模式为她的技能组提供了更多的技能表现空间，让她可以在强调伤害（更少充能，射击次数更多）和强调减速（更多充能，射击次数更少）之间切换。",
+     "general": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "深度冰冻",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "被替换为“严寒冰刺”：靠近美的“冰墙”的敌人会受到伤害并被减速。"
+       ]
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "冰霜冲击枪",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "移除了减速效果。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "射程从12米延长至14米。",
+         "before": 12.0,
+         "after": 14.0,
+         "metric": "射程"
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "冰锥",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在会对被击中的敌人造成减速。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "现在可以长按辅助攻击模式对“冰锥”进行充能。充能的“冰锥”可以造成更多伤害，造成更强的减速效果，持续时间也更长。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "伤害区间更改为15点至95点。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "减速效果为最小5%，持续0.25秒，最大30%，持续1.5秒。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "pharah",
+     "name_en": "Pharah",
+     "name_cn": "法老之鹰",
+     "role": "damage",
+     "dev_note": "“法老之鹰”的“震荡冲击”是个比较难用的技能。为其提供非常清晰的用途，具体而言就是对非重装英雄造成减速，可以让“震荡冲击”更多地被用于进攻目的。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "震荡冲击",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在对敌人的击退改为在短暂延迟后拖拽敌人。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "会短暂减速非重装敌人。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "reaper",
+     "name_en": "Reaper",
+     "name_cn": "死神",
+     "role": "damage",
+     "dev_note": "每次听到死吧……死吧……大家都怕得要死。但如果他每一次完成消灭，这种威胁就持续得更久呢？现在当“死神”使用“幽灵形态”时，他不再是脆皮肉靶子。他的灵魂球改为可以延长“幽灵形态”的持续时间，所以如果你还想追杀一个幽灵的话，祝你好运咯……",
+     "general": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "灵魂收割",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "拾取灵魂球会使“幽灵形态”的持续时间延长1秒。"
+       ]
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": "Wraith Form",
+       "name_cn": "幽灵形态",
+       "slug": "wraith-form",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "对4米内的敌人造成每秒40点伤害。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Death Blossom",
+       "name_cn": "死亡绽放",
+       "slug": "death-blossom",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在可以手动取消。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "每次通过“死亡绽放”完成消灭，使持续时间延长1秒。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "",
+     "name_en": null,
+     "name_cn": "西拉",
+     "role": "damage",
+     "dev_note": "西拉现在可以用“追踪弹”造成更高伤害，精准射击可以带来更高收益，而这个技能与她的新主要威能“标记重置”搭配使用时，将可以让西拉变成能够造成大量追踪伤害的战斗机器。",
+     "general": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "全速飞行",
+       "status": "moved",
+       "lines_en": [],
+       "lines_cn": [
+        "改为了基础技能。"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "锁定猛攻",
+       "status": "moved",
+       "lines_en": [],
+       "lines_cn": [
+        "改为了次级威能。"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "标记重置",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "新增：带有“追踪弹”的目标阵亡时，返还“追踪弹”的冷却时间。"
+       ]
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "追踪弹",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "第一次射击造成暴击会使后续追踪弹也造成暴击。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "sojourn",
+     "name_en": "Sojourn",
+     "name_cn": "索杰恩",
+     "role": "damage",
+     "dev_note": "我知道，大家都已经习惯了让“索杰恩”从安全位置上消灭敌人。但这种游戏风格已经是过去了。现在大家都给我冲锋陷阵，滑铲破敌吧！",
+     "general": [
+      "基础生命值提高至250点。"
+     ],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "双重推进器",
+       "status": "moved",
+       "lines_en": [],
+       "lines_cn": [
+        "改为了基础技能。"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "减速力场",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "为效果范围内的盟友每秒治疗30点生命值。"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "双重干扰",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "新增：干扰弹获得第二次充能。"
+       ]
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "电磁炮",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "射速提升25%。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "充能射击",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "伤害从120点降低至80点。",
+         "before": 120.0,
+         "after": 80.0,
+         "metric": "伤害"
+        },
+        {
+         "text_en": null,
+         "text_cn": "衰减距离（最小和最大）缩短20米。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "机动滑铲",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "滑铲击中敌人可以将敌人击飞到空中。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "soldier-76",
+     "name_en": "Soldier: 76",
+     "name_cn": "士兵76",
+     "role": "damage",
+     "dev_note": "治疗站将会让敌人闻风丧胆。我们也一直非常重视“我看到你们了”：“士兵：76”现在在使用“战术目镜”时，会对所有视野范围内的玩家同时造成伤害。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Biotic Field",
+       "name_cn": "生物力场",
+       "slug": "biotic-field",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在会跟随“士兵：76”移动。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "现在会将“生物力场”内的敌人不断推离“士兵：76”。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Tactical Visor",
+       "name_cn": "战术目镜",
+       "slug": "tactical-visor",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在会同时锁定视野范围内的所有敌人。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "sombra",
+     "name_en": "Sombra",
+     "name_cn": "黑影",
+     "role": "damage",
+     "dev_note": "之前对“黑影”的重制从根本上杜绝了“黑影”的绕后突袭打法，而且她不再能够为奇袭阵容的队伍创造奇袭条件。这次的改动主要为了加回这个绕后突袭特性，也给了她更多的侦察能力（她的独特终极技能充能拥有显示位置的被动能力）。",
+     "general": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "加密上传",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "更改为新效果：“黑影”现在可以在不打破“隐秘潜行”的情况下投掷“病毒侵染”。在潜行状态下投掷“病毒侵染”后会让“黑影”显现，持续3秒。"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "病毒复制",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "更改为新效果：最后一击使“病毒侵染”的冷却时间缩短4秒。"
+       ]
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "黑客入侵",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "已移除",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "隐秘潜行",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "改为了技能1。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "最大持续时间从5秒延长至8秒。",
+         "before": 5.0,
+         "after": 8.0,
+         "metric": "最大持续时间"
+        },
+        {
+         "text_en": null,
+         "text_cn": "移动速度加成从60%提高至75%。",
+         "before": 60.0,
+         "after": 75.0,
+         "metric": "移动速度加成"
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "位移传动",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "修改了弹道物理特性：现在会以更慢的速度沿弧线在空中运动。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "不再有最大飞行时间限制。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "不再在击中或时间结束时立即传送“黑影”。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "“位移传动”现在会永久部署在地面上。“位移传动”部署在地面上时拥有5点生命值。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "病毒侵染",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在会对被击中的敌人造成侵入状态。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "现在在击中场景时会入侵周边的急救包。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从6秒延长至8秒。",
+         "before": 6.0,
+         "after": 8.0,
+         "metric": "冷却时间"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "symmetra",
+     "name_en": "Symmetra",
+     "name_cn": "秩序之光",
+     "role": "damage",
+     "dev_note": "设计师观点：“传送面板”是“秩序之光”技能组中最强的部分，但通常很少被队友们使用。为队友提供“奖励”性质的护盾可以鼓励队友集中在“秩序之光”的“传送面板”附近，并多多使用它。对“哨戒炮”的改动目的是为了让“秩序之光”通过这个相对较弱的技能实现更实用的操作。",
+     "general": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "护盾充能",
+       "status": "moved",
+       "lines_en": [],
+       "lines_cn": [
+        "改为了基础技能。",
+        "现在会影响附近的所有盟友。",
+        "现在会对所有生命值类型生效。"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "加速传送门",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "新增：盟友使用“传送面板”后获得30%速度加成，持续2秒。"
+       ]
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "哨戒炮",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "在部署之前可以在空中就将敌人选为目标。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "torbjorn",
+     "name_en": "Torbjorn",
+     "name_cn": "托比昂",
+     "role": "damage",
+     "dev_note": "托比昂新增的在“热力过载”期间的即时命中射击效果更佳，让他能与其他更经常选择的英雄有一拼之力，也提供了另一个层面的功效性。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "部署炮台",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "炮台发射的子弹现在改为高速火箭。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "热力过载",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在会使主要攻击模式弹道速度加快100%。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "tracer",
+     "name_en": "Tracer",
+     "name_cn": "猎空",
+     "role": "damage",
+     "dev_note": "你有没有见到队友陷入危险，想要跟他们分享你的“闪回”？这次好了，你可以这么做了！此外，当你看到队友身上被附着了“脉冲炸弹”，你可以帮他们打掉……不然的话，麻烦就大了。",
+     "general": [
+      "闪现急救包——威能",
+      "改为充能急救包：拾取急救包会提供10%终极技能充能。"
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Recall",
+       "name_cn": "闪回",
+       "slug": "recall",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "激活时，为5米内的所有盟友提供可以使用“闪回”的选项，持续5秒。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Pulse Bomb",
+       "name_cn": "脉冲炸弹",
+       "slug": "pulse-bomb",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "敌人现在可以射击附着的“脉冲炸弹”，将其打落。附着的“脉冲炸弹”受到150点伤害后便会掉落。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "爆炸延迟时间从1秒延长至3秒。",
+         "before": 1.0,
+         "after": 3.0,
+         "metric": "爆炸延迟时间"
+        },
+        {
+         "text_en": null,
+         "text_cn": "爆炸范围从4米扩大至7米。",
+         "before": 4.0,
+         "after": 7.0,
+         "metric": "爆炸范围"
+        },
+        {
+         "text_en": null,
+         "text_cn": "对被附着的敌人造成的伤害从350点提高至9999点。",
+         "before": 350.0,
+         "after": 9999.0,
+         "metric": "对被附着的敌人造成的伤害"
+        },
+        {
+         "text_en": null,
+         "text_cn": "对被附着的敌人造成的伤害无视受伤减免。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "vendetta",
+     "name_en": "Vendetta",
+     "name_cn": "斩仇",
+     "role": "damage",
+     "dev_note": "不要再像个无头苍蝇似的挥舞着大剑四处乱撞了，专注于帮助你的队伍吧。“斩仇”的“旋风疾步”现在会拉近目标，让他们成为队友的活靶子。此外，“招架姿态”现在可以反弹射弹，所以如果敌人之后想要向她倾泻子弹、浪费冷却时间的话，就必须要三思了。哦，还有一件事……别告诉你的敌人。“斩地巨剑”现在不光可以击中“斩仇”身前的敌人，也能击中她身后的敌人。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "帕拉蒂尼之牙",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "横向挥剑伤害从45点降低至30点。",
+         "before": 45.0,
+         "after": 30.0,
+         "metric": "横向挥剑伤害"
+        },
+        {
+         "text_en": null,
+         "text_cn": "竖直劈斩伤害从120点降低至90点。",
+         "before": 120.0,
+         "after": 90.0,
+         "metric": "竖直劈斩伤害"
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "飞空斩击",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "竖直劈斩伤害不变，依然是120点。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "招架姿态",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在激活时会被动消耗能量。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "现在可以反弹射弹。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "旋风疾步",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在对敌人的击退改为拉近敌人。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "斩地巨剑",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在在蓄力时，瞄准指示也会向敌人显示。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "现在不仅可以击中“斩仇”身前的敌人，也能击中她身后的敌人。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "venture",
+     "name_en": "Venture",
+     "name_cn": "探奇",
+     "role": "damage",
+     "dev_note": "对“探奇”的改动是为了提供更多的战斗灵活性。“探奇”在使用“钻头突刺”之后会陷入无“技”可使的状态，使用此技能的时机也较为难以把握，所以我们希望提高灵活性。这样应该能让“探奇”为了移动目的而使用“钻头突刺”时更加容易。为“钻地”提高击退力度可以让这个技能在突入敌方队伍中时造成更多的干扰。",
+     "general": [
+      "基础生命值降低至225点。",
+      "技能对可部署物造成200%伤害。",
+      "最后一击会生成1点“钻头突刺”充能。"
+     ],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "轰轰钻机汹汹来袭",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "被替换为“音速钻头”：未钻地时，“钻头突刺”距离延长30%。"
+       ]
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "智能挖掘钻",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "主要攻击模式的伤害从75点提高至85点。",
+         "before": 75.0,
+         "after": 85.0,
+         "metric": "主要攻击模式的伤害"
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "钻头突刺",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "充能数从1个提高至2个。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从8秒缩短至6秒。",
+         "before": 8.0,
+         "after": 6.0,
+         "metric": "冷却时间"
+        },
+        {
+         "text_en": null,
+         "text_cn": "水平范围缩小50%。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "垂直范围不变。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "伤害从90点降低至35点。",
+         "before": 90.0,
+         "after": 35.0,
+         "metric": "伤害"
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "钻地",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "击退力度提高20%。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "探险家的决心",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "护盾加成从25点降低至15点。",
+         "before": 25.0,
+         "after": 15.0,
+         "metric": "护盾加成"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "widowmaker",
+     "name_en": "Widowmaker",
+     "name_cn": "黑百合",
+     "role": "damage",
+     "dev_note": "试图绕后偷袭“黑百合”的日子已经一去不复返了。“黑百合”不再是一只容易受到惊吓的小蜘蛛了。她现在会出动出击，不惧怕与敌人贴身缠斗，并且更频繁地使用她的自动步枪。",
+     "general": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "寻敌诡雷",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "被替换为“复仇之网”：阵亡时，留下网状迷你剧毒诡雷阵。"
+       ]
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "黑百合之吻",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "开镜充能速度降低70%。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "主要攻击模式散布降低40%。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "主要攻击模式在达到最大散布前的射击次数从11次增加至18次。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Grappling Hook",
+       "name_cn": "抓钩",
+       "slug": "grappling-hook",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在可以最多积累2次充能次数。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "“黑百合”的最后一击可以恢复1次“抓钩”充能次数。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Venom Mine",
+       "name_cn": "剧毒诡雷",
+       "slug": "venom-mine",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在可以最多积累2次充能次数。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "可部署的“剧毒诡雷”数量从1个增加至2个。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "如果放置了1个“剧毒诡雷”，这枚诡雷在触发时会造成75点伤害，并击退玩家。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "如果放置了2个“剧毒诡雷”，彼此距离小于15米，且二者之间没有任何障碍物，两枚诡雷之间会牵起一条拌索。触发时，拌索会对敌人造成180点伤害。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "支援",
+   "role": "support",
+   "description": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "战术副职责",
+     "body": "不再积攒多余的终极技能充能。 在推进目标进度时，战术副职责会被算作一名额外的队友。",
+     "dev": "对于安娜、巴蒂斯特和禅雅塔，他们需要在留在安全位置且避开危险，或身先士卒取得战绩回报之间进行权衡（取决于你偏好什么打法），而对飞天猫和卢西奥来说，这个机制可以鼓励他们多多参与团队配合，而不是总是单枪匹马深入敌后。"
+    },
+    {
+     "title": "医疗副职责",
+     "body": "在治疗盟友时不再提供自我治疗。 现在每有一名医疗副职责英雄盟友，所有治疗来源对所有盟友造成的治疗量提升2.5%。",
+     "dev": "双医疗支援队伍阵容通常不是玩家们的首选，所以本次改动会让大家重新思考是否要放弃这种组合带来的治疗加成，毕竟帮助十分显著（急救包、技能治疗、被动治疗、副职责被动治疗等等）。"
+    },
+    {
+     "title": "生存副职责",
+     "body": "位移技能不再立即激活被动生命值恢复。 现在每有一名生存副职责英雄存活一分钟，会额外提供10点最大总生命值，最多100点。 最大总生命值加成阵亡时重置。",
+     "dev": "生存副职责英雄的特点就是擅长生存，所以生存时间越长，奖励提升越高，应该可以帮助他们生存更长时间。"
+    }
+   ]
+  },
+  {
+   "type": "hero_update",
+   "title": null,
+   "role": null,
+   "description": null,
+   "heroes": [
+    {
+     "slug": "ana",
+     "name_en": "Ana",
+     "name_cn": "安娜",
+     "role": "support",
+     "dev_note": "大杀器安娜是当不成了，所以我们决定退而求其次：机动性。所有主打安娜的玩家最想要的就是“某种”机动能力，所以给她配备一个喷气背包不算过分吧？“生物手雷”的改动会让她的手雷被浪费的情况更少，或许还能开发出新的用途。“生物步枪”的爆头治疗能力还需要进一步测试，看看是否可行。",
+     "general": [
+      "现在她也配备了一副喷气背包。"
+     ],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "弹跳手雷",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "被替换为“生物雷爆”：再次按下技能按钮可在空中引爆“生物手雷”。"
+       ]
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "生物步枪",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "治疗射击现在可以对盟友造成暴击治疗（效果翻倍）。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "纳米激素",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "施放时间已移除。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "baptiste",
+     "name_en": "Baptiste",
+     "name_cn": "巴蒂斯特",
+     "role": "support",
+     "dev_note": "“维生力场”一直是他技能组中的痛点，所以将其转化为终极技能应该可以提升体验。这样一来，即便这个技能用的频率不高，威力却变强了。“增幅矩阵”现在被改为技能，在应用时能获得更多的灵活性。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "维生力场",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "改为了终极技能。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "最低生命值阈值从20%提高至40%。",
+         "before": 20.0,
+         "after": 40.0,
+         "metric": "最低生命值阈值"
+        },
+        {
+         "text_en": null,
+         "text_cn": "生命值从125点提高至300点。",
+         "before": 125.0,
+         "after": 300.0,
+         "metric": "生命值"
+        },
+        {
+         "text_en": null,
+         "text_cn": "力场宽度扩大50%。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "被影响的盟友获得的治疗量提高25%。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "增幅矩阵",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "改为了技能2。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "尺寸缩小65%。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "持续时间从10秒缩短至6秒。",
+         "before": 10.0,
+         "after": 6.0,
+         "metric": "持续时间"
+        },
+        {
+         "text_en": null,
+         "text_cn": "伤害强化降低75%。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "治疗强化降低65%。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "15秒冷却时间。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "动力战靴",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在当巴蒂斯特位于空中时为“生物手雷”提供追踪能力。追踪力度会随着“动力战靴”充能程度提升。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "brigitte",
+     "name_en": "Brigitte",
+     "name_cn": "布丽吉塔",
+     "role": "support",
+     "dev_note": "如果无法迅速拉近与敌人的距离，那选择布丽吉塔就没什么意义了，所以针对她的所有改动都不仅是为了提升她的可玩性，更是为了让她在所有地图上、面对所有阵容都能够造成巨大威胁。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "流星飞锤",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在击中地形时会将布丽吉塔推向她面对的反方向。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "能量盾击",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在可以让布丽吉塔冲上半空。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "集结号令",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "在使用时，布丽吉塔会被一个隐身的“飞天猫”拉上半空，从战场上消失。紧接着，布丽吉塔可以选择一个目标位置降落。降落后，自动激活“集结号令”。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "illari",
+     "name_en": "Illari",
+     "name_cn": "伊拉锐",
+     "role": "support",
+     "dev_note": "为“烈日冲击”提供更多的团队功能性，同时强化她拥有太阳之力的人设。",
+     "general": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "烈日燎灼",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "使“烈日冲击”无法治疗盟友。",
+        "伊拉锐现在会多旋转两圈，每圈额外引发一次爆炸。"
+       ]
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "烈日冲击",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在会为范围内的盟友提供75点治疗。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "桎梏灼日",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "在“桎梏灼日”激活时，瞄准伊拉锐的敌人会被限制。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "jetpack-cat",
+     "name_en": "Jetpack Cat",
+     "name_cn": "飞天猫",
+     "role": "support",
+     "dev_note": "“飞天猫”在整个战场上四处乱飞时简直是如猫得鱼，所以我们以降低生命值为代价，为她再添机动性，这是大家都喜闻乐见的调整。她的终极技能没那么受欢迎（特别是重装英雄），所以我们试图将其修改为更偏向团队配合。此外，让她能够背着炮台冲入敌阵，听上去就很有意思，也能鼓励英雄们多多配合。",
+     "general": [
+      "托比昂和“秩序之光”的炮台现在可以放在“飞天猫”身上。"
+     ],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "带盾运输",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "被替换为“咻咻狂飙”：移动速度加快50%，燃料容限提高100%。基础生命值降低75点。"
+       ]
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "救生索",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "最大持续时间从无期限缩短至10秒。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "猫猫劫",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "更改为新效果：现在会为“飞天猫”装备一把榴弹发射器，可以治疗盟友并对敌人造成伤害。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "持续8秒。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "juno",
+     "name_en": "Juno",
+     "name_cn": "朱诺",
+     "role": "support",
+     "dev_note": "朱诺的“超能环域”始终被视作卢西奥的加速技能的备选，所以加入减速这样的支援技能可以让她的英雄特色更鲜明。此外，她的终极技能本质上就是个天降光束，那么让它造成伤害，且可控，也很合理。",
+     "general": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "锁定打击",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "被替换为“变速虫洞”：“超能环域”部署距离延长50%。穿过超能环域时，盟友的速度加成减少25%，敌人被减速35%。"
+       ]
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "轨道射线",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在会对范围内的敌人造成每秒60点伤害。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "现在会向朱诺的位置移动，而不是始终向前移动。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "kiriko",
+     "name_en": "Kiriko",
+     "name_cn": "雾子",
+     "role": "support",
+     "dev_note": "本次的更改目的是为了保持雾子的特色和乐趣，同时让她无法再隔着很远的距离造成大量伤害，消除在对抗她时不佳的体验。“锥”的治疗效果对主打雾子的玩家来说将会是个挑战，但我们觉得也会带来很多乐趣，而且这种变相暴击也会让人感觉很有成就感。“铃”的改动是为了平衡她缺乏远程伤害的短板，可以为队伍制造出展开战斗的机会。",
+     "general": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "救死急符",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "被替换为“狩猎直觉”：“符”追踪生命值低于一半的敌人时，符纸速度加快50%。"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "灵利卜师",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "被替换为“苦无精通”：苦无连续命中3次后，下一发苦无必定暴击。"
+       ]
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "符",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在会追踪敌人，而不是盟友，每张“符”会造成10点伤害。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "锥",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在会治疗盟友，而不是对敌人造成伤害。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "可以对盟友造成暴击治疗。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "铃",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在会击退范围内的敌人。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "击退力度会随着投掷距离提高。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "lifeweaver",
+     "name_en": "Lifeweaver",
+     "name_cn": "生命之梭",
+     "role": "support",
+     "dev_note": "“生命之梭”总给人感觉有些不够灵活，所以本次对他的武器进行改动应该能改善这一情况。“花瓣平台”的操控性得到了加强，玩家应该可以使用这个平台抵达更有趣的位置。“生命之树”现在可以同时提供进攻和防守端功能，增强他的carry能力。现在它的手感更像是其他防御性支援终极技能的弱化版本，所以这次改动可以给这个终极技能赋予独特的辨识度。",
+     "general": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "超然盛放",
+       "status": "moved",
+       "lines_en": [],
+       "lines_cn": [
+        "改为了基础技能。"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "绿荫之劫",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "新增：被“超然盛放”爆炸击中的敌人受到的治疗量降低20%，持续1秒。"
+       ]
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "棘刺箭雨",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "装填时间从1.5秒缩短至0.75秒。",
+         "before": 1.5,
+         "after": 0.75,
+         "metric": "装填时间"
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "花瓣平台",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在搭乘平台的盟友可以按互动键来进行控制。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "生命之树",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "治疗脉冲的每次脉冲使盟友的冷却时间缩短2秒，并使敌人的冷却时间延长2秒。只有处于冷却中的技能会受到影响。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "lucio",
+     "name_en": "Lucio",
+     "name_cn": "卢西奥",
+     "role": "support",
+     "dev_note": "卢西奥的激推是他最鲜明的特色之一，所以如果让玩家能够将敌人推得更远，就可以让他的游戏感觉更爽。他的终极技能可以取消，这对于公平而平衡的游戏来说非常必要，不过我们决定换个角度来解读：这个终极技能不会影响他自己，只会影响盟友和敌人（所有主打卢西奥的玩家都害怕终极技能被取消，所以这次改动可以减轻压力，同时保持风险要素）。我记得第一次玩《守望先锋》的时候，就希望加入运载目标和推进机器人的加速效果，但当时一直没有加，我还有些失望。",
+     "general": [
+      "卢西奥现在可以为运载目标和TS-1（推进机器人）提供加速。"
+     ],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "音波滑手",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "被替换为“低音铺垫”：按住辅助攻击模式会蓄力一次强化“音波”。强化“音波”造成的伤害最多提高50%，击退效果最多提高25%。“音波”的冷却时间缩短1秒。"
+       ]
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "音障",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "不再对卢西奥提供过量生命值。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "在成功施放“音障”之前，不会消耗终极技能充能。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "现在会击退范围内的敌人。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "mercy",
+     "name_en": "Mercy",
+     "name_cn": "天使",
+     "role": "support",
+     "dev_note": "“天使”的“重生”是她技能组中的主力选项，所以通过这次改动，我们决定稍稍向过去的“重生”机制靠拢，带回一些怀旧的感觉。除了终极技能之外，她还需要更多的carry能力，所以让“守护天使”可以对敌人使用并施加流血效果，能赋予她更强的攻击性布局能力。",
+     "general": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "天使重生",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "被替换为“远程重生”：“重生”的范围扩大至10米，并且初始时无需盟友在视线内。"
+       ]
+      }
+     ],
+     "abilities": []
+    },
+    {
+     "slug": "mizuki",
+     "name_en": "Mizuki",
+     "name_cn": "瑞稀",
+     "role": "support",
+     "dev_note": "对“瑞稀”的改动源自于社区对这名英雄的反馈，给他提供更高的操作流畅度，应该能鼓励玩家们多多试验他的打法。虽然他不能攀墙，至少让他可以利用墙壁来进行机动和选位。",
+     "general": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "共鸣飞返",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "被替换为“三之道”：“疗魂斗笠”额外获得1次充能。每次弹跳会使治疗量提高10点，最大弹跳数降低为3次。"
+       ]
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "安魂灵气",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "盟友现在可以看到灵气的范围。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "御魂镰刃",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在可以通过长按主要攻击模式来蓄力。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "蓄力射弹可以穿透敌人，而且飞行距离更远。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "缚魂锁链",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "可以附着在墙壁上。如果锁链击中场景，会将瑞稀拉向附着点。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "瑞稀可以通过跳跃提前取消抓钩。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "替魂纸人",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "敌人不再能看到标示瑞稀返回位置的纸人。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "纸人现在会治疗附近的盟友。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "moira",
+     "name_en": "Moira",
+     "name_cn": "莫伊拉",
+     "role": "support",
+     "dev_note": "对莫伊拉的改动目的是为了让她对自己的技能组拥有更大的控制力，因为虽然她的数值很强，但有的时候玩家很难充分利用她的技能和终极技能。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "生化之触",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "治疗范围扩大100%。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "生化之球",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "“生化之球”的弹道轨迹现在可以通过莫伊拉的面对方向进行控制，直到发生第一次碰撞。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "聚合射线",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "“聚合射线”持续期间会逐渐消耗终极技能充能。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "莫伊拉现在可以在消耗至少25%终极技能充能后，手动提前取消“聚合射线”，保留剩余的终极技能充能。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "在使用“聚合射线”期间，阵亡时会损失所有终极技能充能。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "wuyang",
+     "name_en": "Wuyang",
+     "name_cn": "无漾",
+     "role": "support",
+     "dev_note": "当我们看到无漾波浪的动画时，我们感觉它应该对敌人造成更大影响，所以为其添加了这个效果。此外，游戏中现在有太多的燃烧效果，应该加入一些除了“铃”之外的灭火手段。",
+     "general": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "潮涨潮落",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "被替换为“澎湃浪涌”：“翻江浪”加宽，且会把敌人卷到空中。"
+       ]
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "玄武杖",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "无漾现在可以透过墙壁看到法珠。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "翻江浪",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在可以扑灭燃烧状态。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "zenyatta",
+     "name_en": "Zenyatta",
+     "name_cn": "禅雅塔",
+     "role": "support",
+     "dev_note": "这些改动的目的是为了改变禅雅塔的游戏玩法流程。现在你无法再将法珠放在盟友身上就不管了，然后开始向敌人无脑倾泻弹药，而是必须要妥善管理你的弹药，在敌人和盟友之间合理分配。同时你的“谐”和“灭”效果也得到了增强。",
+     "general": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "双音谐奏",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "被替换为“和谐疾行”：禅雅塔不再能将“谐”放在盟友身上。机制改为长按“谐”键可以让禅雅塔的移动速度加快50%，但会无法使用部分行动。"
+       ]
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "灭",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在除了对敌人造成伤害，还可以治疗盟友。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "只能对敌人造成伤害（不变）。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "谐",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "不再对盟友提供治疗。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "现在会使攻击速度和移动速度加快20%。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "乱",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "不再自动附着在敌人身上。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "当禅雅塔失去视野太长时间后，不再自动分离。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "现在按下按键会切换对下一个主要攻击模式法珠进行强化。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "强化法珠移动速度翻倍，并会在“乱”击中时附着在敌人身上，持续4秒。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "“乱”在附着时会使目标减速30%。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "发射强化法珠的冷却时间为12秒。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "修复了部分语言中1000守望金币的显示价格不正确的问题。 修复了“霓虹枢纽”地图上挂机倒计时行为不正确的问题。 修复了职责禁用达到限制时，英雄禁用不会显示的问题。 修复了即便在“变身”机制管辖下，当被侵入或被限制位移时，死怨无法在“杀戮狂宴”期间使用爆发的问题。 修复了光照会将部分英雄渲染得亮度过高的问题。",
+     "dev": null
+    },
+    {
+     "title": "角斗领域",
+     "body": "此前的更新已修复——修复了在装备“重重防壁”异能时，拉玛刹的“虚空屏障”可以使用的频率超出预期的问题。",
+     "dev": null
+    }
+   ]
+  }
+ ],
+ "raw_text": null,
+ "hash": "sha256:2a00dfe130289065d0a85755b7f7d91fa0da162845f11a7e4f4161662e3abbc2"
+}

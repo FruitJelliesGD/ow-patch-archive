@@ -1,0 +1,337 @@
+{
+ "id": "en-2022-11-17-1",
+ "site": "en",
+ "date": "2022-11-17",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2022/11",
+ "title": "Overwatch 2 Retail Patch Notes - November 17, 2022",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "OVERWATCH LEAGUE TOURNAMENT CHAMPION LEGENDARY SKIN REMIXES",
+   "role": null,
+   "description": "Celebrate the Overwatch League's Tournament Champions with the Royal Gladiator, Dallas Summer, and Shanghai Summer Legendary Skins! These skins are purchasable for a limited time with Overwatch League Tokens.",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "GENERAL UPDATES",
+   "role": null,
+   "description": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "Competitive Play and Matchmaking",
+     "body": "We’re continuing to monitor the health of competitive play and matchmaking across Overwatch 2, both for returning and new players. We’ve made numerous tuning adjustments on the server for both the initial and continued determination of a player's skill tier and division, many of which will become even more noticeable at the start of Season 2. We've increased the precision of our queue time estimates for each individual role in role queue.",
+     "dev": null
+    },
+    {
+     "title": "Defense Matrix",
+     "body": "The audio transcription feature has been added with a limited rollout for PC players in select countries. As a piece of our Defense Matrix initiative, audio transcriptions allow us to analyze a transcript from a temporary voice chat recording of a reported player. Players will now see a notification when entering voice chat for the first time during a play session indicating that voice chat may be recorded. Make sure you report as close to when disruptive behavior occurred to maximize this feature’s effectiveness. Once reported, a temporary audio recording will be used to make a text file transcript through speech-to-text programs. No one listens to the temporary audio recording, which is quickly deleted after being transcribed. Transcriptions are only made for reports of disruptive behavior in public voice channels, which includes team and match chat—group “party” chat is excluded.",
+     "dev": null
+    },
+    {
+     "title": "Crossplay and Aim Assist",
+     "body": "We made a change to Aim Assist in Crossplay (PC+ Console) lobbies. If you play in a Crossplay game now, Aim Assist is enabled in all matches except Competitive. In our data, we found many groups were crossplay groups between PC and console players. This meant if you were playing on console and grouping with players on PC, you were opting into a bad experience for yourself to play with your friends. Also, if you had a group that was primarily console, but one of your friends was a PC player, you had to leave the PC player out to have a good experience. We'd like to reiterate—at this point Aim Assist exists only on console platforms. We'll be monitoring the deployment of this change carefully and making changes quickly if needed.",
+     "dev": null
+    }
+   ]
+  },
+  {
+   "type": "generic_update",
+   "title": "HERO UPDATES",
+   "role": null,
+   "description": "HERO UPDATES",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "TANKS",
+   "role": null,
+   "description": null,
+   "heroes": [
+    {
+     "slug": "d-va",
+     "name_en": "D.Va",
+     "name_cn": "D.Va",
+     "role": "tank",
+     "dev_note": "D.Va felt too deadly after the last round of changes given how resilient she can be with her improved Defense Matrix.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Fusion Cannons",
+       "name_cn": null,
+       "slug": "fusion-cannons",
+       "changes": [
+        {
+         "text_en": "Spread increased from 3.5 to 3.75",
+         "text_cn": null,
+         "before": 3.5,
+         "after": 3.75,
+         "metric": "spread"
+        }
+       ]
+      },
+      {
+       "name_en": "Boosters",
+       "name_cn": null,
+       "slug": "boosters",
+       "changes": [
+        {
+         "text_en": "Impact damage reduced from 25 to 15",
+         "text_cn": null,
+         "before": 25.0,
+         "after": 15.0,
+         "metric": "impact damage"
+        }
+       ]
+      },
+      {
+       "name_en": "Call Mech",
+       "name_cn": null,
+       "slug": "call-mech",
+       "changes": [
+        {
+         "text_en": "Fixed in last update- Call Mech ultimate cost reduced by 12%",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "zarya",
+     "name_en": "Zarya",
+     "name_cn": "查莉娅",
+     "role": "tank",
+     "dev_note": "Early player sentiment predicted Zarya as one of the weakest solo tanks in 5v5, although her high damage potential and barrier uptime have proven to be extremely effective. For opponents, feedback has indicated this can feel as though Zarya has very limited windows of vulnerability, which feels difficult to deal with when combined with her ramping damage potential. These changes will reduce the barrier uptime, making it slightly more difficult for her to gain energy and will provide enemies with more time to deal damage to her.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Particle Barrier",
+       "name_cn": null,
+       "slug": "particle-barrier",
+       "changes": [
+        {
+         "text_en": "Duration reduced from 2.5 to 2 seconds",
+         "text_cn": null,
+         "before": 2.5,
+         "after": 2.0,
+         "metric": "duration"
+        },
+        {
+         "text_en": "Cooldown increased from 10 to 11 seconds",
+         "text_cn": null,
+         "before": 10.0,
+         "after": 11.0,
+         "metric": "cooldown"
+        }
+       ]
+      },
+      {
+       "name_en": "Projected Barrier",
+       "name_cn": null,
+       "slug": "projected-barrier",
+       "changes": [
+        {
+         "text_en": "Duration reduced from 2.5 to 2 seconds",
+         "text_cn": null,
+         "before": 2.5,
+         "after": 2.0,
+         "metric": "duration"
+        },
+        {
+         "text_en": "Cooldown increased from 10 to 11 seconds",
+         "text_cn": null,
+         "before": 10.0,
+         "after": 11.0,
+         "metric": "cooldown"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "DAMAGE",
+   "role": null,
+   "description": null,
+   "heroes": [
+    {
+     "slug": "genji",
+     "name_en": "Genji",
+     "name_cn": "源氏",
+     "role": "damage",
+     "dev_note": "Genji has greatly benefited from the move to 5v5. Changing to a single Tank and the reduction of crowd control has removed a lot of obstacles for Genji. However, he hasn’t received tuning updates since he wasn’t actively in the meta until launch—an intentional decision based on our general preference to avoid preemptive adjustments when possible. These changes will bring Genji more in line with the other flanking damage heroes like Tracer and Reaper.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Shuriken",
+       "name_cn": null,
+       "slug": "shuriken",
+       "changes": [
+        {
+         "text_en": "Maximum ammo reduced from 30 to 24",
+         "text_cn": null,
+         "before": 30.0,
+         "after": 24.0,
+         "metric": "maximum ammo"
+        },
+        {
+         "text_en": "Damage reduced from 29 to 27",
+         "text_cn": null,
+         "before": 29.0,
+         "after": 27.0,
+         "metric": "damage"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "junkrat",
+     "name_en": "Junkrat",
+     "name_cn": "狂鼠",
+     "role": "damage",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Steel Trap",
+       "name_cn": "钢铁陷阱",
+       "slug": "steel-trap",
+       "changes": [
+        {
+         "text_en": "Fixed in last update- Arming time increased from 0.5 to 0.75 seconds",
+         "text_cn": null,
+         "before": 0.5,
+         "after": 0.75,
+         "metric": "arming time"
+        },
+        {
+         "text_en": "Fixed in last update- Trapped duration reduced from 3 to 2.5 seconds",
+         "text_cn": null,
+         "before": 3.0,
+         "after": 2.5,
+         "metric": "trapped duration"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "sombra",
+     "name_en": "Sombra",
+     "name_cn": "黑影",
+     "role": "damage",
+     "dev_note": "With Sombra’s rework, she gained a lot more damage to help account for the reduced ability lockout duration of Hack. This has proven to be too deadly for a flanker with easy access to the enemy backlines, especially in 5v5. She can also no longer channel hack on an already hacked target as feedback indicated the reduced cooldown combined with hacking from stealth proved to be too frustrating for many players. This is essentially a per-target cooldown that enables Hack to keep its current 4-second cooldown for potentially hacking multiple targets.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Hack",
+       "name_cn": null,
+       "slug": "hack",
+       "changes": [
+        {
+         "text_en": "Ability lockout duration reduced from 1.75 to 1.5 seconds",
+         "text_cn": null,
+         "before": 1.75,
+         "after": 1.5,
+         "metric": "ability lockout duration"
+        },
+        {
+         "text_en": "Hacked enemies are no longer valid targets for hacking for the duration of the 8-second effect",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Hacked enemy damage multiplier reduced from 40 to 25%",
+         "text_cn": null,
+         "before": 40.0,
+         "after": 25.0,
+         "metric": "hacked enemy damage multiplier"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "SUPPORT",
+   "role": null,
+   "description": null,
+   "heroes": [
+    {
+     "slug": "kiriko",
+     "name_en": "Kiriko",
+     "name_cn": "雾子",
+     "role": "support",
+     "dev_note": "This invulnerability window is primarily intended to help avoid instantly dying to something unseen after teleporting through walls, but it ended up being a little too long and led to some confusion while shooting at Kiriko.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Swift Step",
+       "name_cn": null,
+       "slug": "swift-step",
+       "changes": [
+        {
+         "text_en": "Invulnerability duration reduced from 0.4 to 0.25 seconds",
+         "text_cn": null,
+         "before": 0.4,
+         "after": 0.25,
+         "metric": "invulnerability duration"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "BUG FIXES",
+   "role": null,
+   "description": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "GENERAL",
+     "body": "PC Only – The Default setting for audio mix has been changed to “studio reference” Resolved an issue where some players could be stuck in Bronze 5 even after several rank updates Console Only – Fixed an issue where the PC interface was being forced on for some console players Console Only – Fixed a bug on console where your game could freeze if you opened and closed a Hero cinematic Console Only – Fixed an issue where 'Capture Highlight' could not be unbound from Left D-Pad Addressed multiple leaderboard issues causing inaccurate placement and ordering Players who getting healed will no longer see the healing status effect on their screen while they’re full health Fixed an issue where players would sometimes be placed into an empty game Resolved a bug that prevented players from rejoining their competitive game after being disconnected Fixed a bug where typing in chat could purchase an item from the Hero Gallery The 'No Name Card' selection in the Name Card interface is now selectable Fixed a display issue where players were shown the incorrect amount of Overwatch League tokens, which made them unable to purchase items. The display now shows the correct amount of tokens a player owns The 'Avoid Teammates' button is no longer hiding behind the Recent Players list Fixed an issue with the Challenge 'Farsighted' not correctly tracking and/or completing Fixed an issue with the Challenge 'Damage Sponge' not correctly tracking and/or completing Resolved instances of the player's screen becoming blurry/out of focus Fixed an issue where some players were missing the Noire Widowmaker skin Various visual improvements to the First Time User Experience Fixed in last update - Practice bots now show up through walls correctly when you play a healer",
+     "dev": null
+    },
+    {
+     "title": "MAPS",
+     "body": "Junkertown Fixed additional areas in the map that were causing performance issues in some cases",
+     "dev": null
+    },
+    {
+     "title": "HEROES",
+     "body": "Brigitte Fixed a bug where Brigitte's shield could become invulnerable under certain conditions Cassidy Cassidy now correctly drops the flag during Combat Roll in the Capture the Flag game mode Doomfist Fixed in last update - Fixed a bug with Seismic Slam being stopped early by obstructions Fixed in last update - Fixed a bug with being able to jump during Seismic Slam Genji Fixed an issue with the Genji Mythic Skin's hit volumes Fixed in last update - Fixed an issue where players could get infinite Dragonblade Custom Games Hanzo Fixed in last update - Jump/wall climb no longer destroys breakables Junker Queen Commanding Shout and Rampage now correctly drop the flag in the Capture the Flag game mode Kiriko Fixed an issue where Kiriko could escape map boundaries using Swift Step Mei Has been added back to the line-up Fixed several issues with Mei's Ice Wall that allowed players and projectiles to occasionally pass through it or slip off it Mercy Audio made a change to the sound of Mercy’s first-person glide to address frequencies that some players found uncomfortable Reinhardt Fixed in last update - Fixed an issue where quick melee did not swing Reinhardt's hammer Sojourn Sojourn can no longer pick up the flag in Capture the Flag when using Power Slide Sombra Fixed in last update - EMP can no longer be damage boosted Torbjorn Fixed in last update - Fixed an issue where quick melee did not swing Torbjorn's hammer Wrecking Ball Fixed an issue with Adaptive Shield that could cause you to lose health in some cases",
+     "dev": null
+    }
+   ]
+  }
+ ],
+ "raw_text": null,
+ "hash": "sha256:4e20817203f0683a63972313bc5cf9d3664d7a1e47e549e736b9d0d34b5dc3ac"
+}

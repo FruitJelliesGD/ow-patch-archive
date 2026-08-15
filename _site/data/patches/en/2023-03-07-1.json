@@ -1,0 +1,413 @@
+{
+ "id": "en-2023-03-07-1",
+ "site": "en",
+ "date": "2023-03-07",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/03",
+ "title": "Overwatch 2 Retail Patch Notes - March 7, 2023",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "NEW COLLABORATION: OVERWATCH 2 X ONE-PUNCH MAN",
+   "role": null,
+   "description": "One punch is all you need in this limited-time Overwatch 2 x One-Punch Man collaboration! Complete challenges through April 6 and earn free themed rewards, including the Legendary Mumen Rider - Soldier: 76 skin. Complete your hero collection with additional Legendary bundles featuring Saitama - Doomfist, Terrible Tornado - Kiriko, and Genos - Genji from the in-game shop.",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "OVERWATCH LEAGUE 2023 SEASON",
+   "role": null,
+   "description": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "New Overwatch League Team Skins",
+     "body": "New Overwatch League Team Skins are now in-game! Celebrate your favorite teams, including the Seoul Infernal and Vegas Eternal, by equipping their team skins for your favorite heroes.",
+     "dev": null
+    },
+    {
+     "title": "Team Bundles Now Available",
+     "body": "Team Bundles are now on sale! Trios of hero skins will land in the Overwatch League shop throughout the season, available for all teams. These bundles will include team-branded Weapon Charms!",
+     "dev": null
+    }
+   ]
+  },
+  {
+   "type": "generic_update",
+   "title": "General Updates",
+   "role": null,
+   "description": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "Adjusted Distance Attenuation on Enemy Footsteps",
+     "body": "We missed a change in our Season 3 patch notes about some adjustments made to the distance in which you can hear enemy footsteps. We’ve continued to refine this change and have found a nice middle ground between where it was in Season 2 and where it was prior to today’s patch.",
+     "dev": null
+    },
+    {
+     "title": "Challenges",
+     "body": "Weekly Challenges Removed \"To the Victors... - Win 15 games in Unranked or Competitive.\" Added a new challenge, \"Casual Dedication - Win 15 games in any Unranked mode.\" Added a new challenge, \"Competitive Advantage - Win 10 games in any Competitive mode.\" Total number of challenges needed to earn all Overwatch Coins is still 11. Removed \"Coin Line - Win 5 games in Arcade.\" Added a new challenge, \"Change of Pace - Win 5 games in Mystery Heroes, Free-for-All Deathmatch, or any Arcade mode.\" Changed \"Role Mastery\" to \"Win 5 games each as 2 different roles in Quick Play or Competitive Play.\" Daily Challenges \"Support Weapon Mastery\" reduced from 12,500 to 10,000 \"Support Ability Mastery\" reduced from 10,000 to 8,000 Challenge Progress during End of Round Challenges the player has made progress on during the match will be shown with a visual representation of remaining progress needed",
+     "dev": null
+    },
+    {
+     "title": "Scoreboard",
+     "body": "End of Match Scoreboard Update We are taking a snapshot of each player's final stats during the match and persisting it on the tab scoreboard during post-match. Previously a player's stats and name would disappear as soon as they left the match",
+     "dev": null
+    },
+    {
+     "title": "Matchmaking",
+     "body": "We fixed a bug causing large parties to wait longer in queue than intended The matchmaker will now prioritize putting parties together which have a similar delta between the highest and lowest rated player We made improvements that should help reduce Unranked queue times and increase Competitive match quality",
+     "dev": null
+    }
+   ]
+  },
+  {
+   "type": "generic_update",
+   "title": "Competitive Updates",
+   "role": null,
+   "description": "Competitive Mystery Heroes Competitive Mystery Heroes added to Competitive Play Season 1 begins on March 14! Competitive Screen Layout Update We have added buttons to the Competitive Play menu that will allow players to easily access the tier legend, leaderboard, and competitive progress screens. Top 500 Leaderboard Update Players in the Top 500 will now see an animated update of their current position on the leaderboard after each match.",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "HERO UPDATES",
+   "role": null,
+   "description": "HERO UPDATES",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "TANK",
+   "role": null,
+   "description": null,
+   "heroes": [
+    {
+     "slug": "orisa",
+     "name_en": "Orisa",
+     "name_cn": "奥丽莎",
+     "role": "tank",
+     "dev_note": "Developer Comment: Terra Surge is a channeled ultimate which cannot be interrupted by most abilities, as it gains the same effects as Fortify. While this makes sense for stuns, Sombra's Hack interrupt shouldn't be negated and now correctly cancels Terra Surge.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Terra Surge",
+       "name_cn": null,
+       "slug": "terra-surge",
+       "changes": [
+        {
+         "text_en": "Terra Surge can now be interrupted by Hack",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "ramattra",
+     "name_en": "Ramattra",
+     "name_cn": "拉玛刹",
+     "role": "tank",
+     "dev_note": "Developer Comment: Players found that shifting out of Nemesis Form before activating the Annihilation ultimate would fully reset Nemesis Form's bonus armor. To smooth out the gameplay, it now resets the armor health automatically as part of the ultimate activation.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Annihilation",
+       "name_cn": null,
+       "slug": "annihilation",
+       "changes": [
+        {
+         "text_en": "Using Annihilation while in Nemesis Form refreshes your bonus armor",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "roadhog",
+     "name_en": "Roadhog",
+     "name_cn": "路霸",
+     "role": "tank",
+     "dev_note": "Developer Comment: The Chain Hook cooldown beginning when the ability started, instead of at the end, caused some confusion when discussing the cooldown since once you can see the timer, it appeared a second shorter (7 seconds) than the actual maximum cooldown. After fixing that, we're reducing the cooldown overall by an additional second to increase the frequency of Roadhog's team utility now that being pulled in by Chain Hook is less deadly.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Chain Hook",
+       "name_cn": null,
+       "slug": "chain-hook",
+       "changes": [
+        {
+         "text_en": "Chain Hook cooldown now starts when the ability ends instead of at the start",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Chain Hook cooldown reduced from 8 to 6 seconds",
+         "text_cn": null,
+         "before": 8.0,
+         "after": 6.0,
+         "metric": "chain hook cooldown"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "wrecking-ball",
+     "name_en": "Wrecking Ball",
+     "name_cn": "破坏球",
+     "role": "tank",
+     "dev_note": "Developer Comment: There is now a hero control option for Wrecking Ball to set a separate aim sensitivity while transformed into a ball as players may want to aim his weapons in first-person and move the camera in third-person significantly differently. In addition, a visual indicator for Grappling Claw has been added to indicate its maximum duration before automatically detaching.",
+     "general": [
+      "Added the hero-specific option \"Relative aim sensitivity while rolling\"",
+      "Added the hero-specific option \"Relative gyro sensitivity while rolling\" (Nintendo Switch™ platform only)"
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Grappling Claw",
+       "name_cn": null,
+       "slug": "grappling-claw",
+       "changes": [
+        {
+         "text_en": "Added a timeout indicator for Grappling Claw located above the ability icon",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Minefield",
+       "name_cn": null,
+       "slug": "minefield",
+       "changes": [
+        {
+         "text_en": "Minefield arming time increased from 1 to 1.25 seconds",
+         "text_cn": null,
+         "before": 1.0,
+         "after": 1.25,
+         "metric": "minefield arming time"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "zarya",
+     "name_en": "Zarya",
+     "name_cn": "查莉娅",
+     "role": "tank",
+     "dev_note": "Developer Comment: A previous change decreased both barrier duration and increased the cooldown at the same time, lowering Zarya's effectiveness more than anticipated. This is a partial reversion to help level it out.",
+     "general": [
+      "The shared cooldown for Particle Barrier and Projected Barrier reduced from 11 to 10 seconds"
+     ],
+     "perks": [],
+     "abilities": []
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "DAMAGE",
+   "role": null,
+   "description": null,
+   "heroes": [
+    {
+     "slug": "ashe",
+     "name_en": "Ashe",
+     "name_cn": "艾什",
+     "role": "damage",
+     "dev_note": "Developer Comment: We want to enable Ashe and B.O.B. to easily assist one another more. B.O.B. now prioritizes targets damaged by Ashe's rifle, which may allow for more flexible Ultimate placement.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "B.O.B.",
+       "name_cn": null,
+       "slug": "b-o-b",
+       "changes": [
+        {
+         "text_en": "B.O.B. now prefers to shoot at enemy targets that Ashe damages with her rifle",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "hanzo",
+     "name_en": "Hanzo",
+     "name_cn": "半藏",
+     "role": "damage",
+     "dev_note": "Developer Comment: Hanzo has high burst damage potential with Storm Bow and Storm Arrows and strong utility with Sonic Arrow but still underperforms compared to other heroes in the same role. This change increases his survivability without directly improving his strengths.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Lunge",
+       "name_cn": null,
+       "slug": "lunge",
+       "changes": [
+        {
+         "text_en": "Lunge cooldown decreased from 5 to 4 seconds",
+         "text_cn": null,
+         "before": 5.0,
+         "after": 4.0,
+         "metric": "lunge cooldown"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "mei",
+     "name_en": "Mei",
+     "name_cn": "美",
+     "role": "damage",
+     "dev_note": "Developer Comment: Mei's Blizzard ultimate cast time sometimes led to situations where the animation appeared to have been completed, but there was still additional time that it could get interrupted. This change will help mitigate that feeling without significantly reducing counterplay.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Blizzard",
+       "name_cn": null,
+       "slug": "blizzard",
+       "changes": [
+        {
+         "text_en": "Blizzard ultimate cast time reduced from 0.5 to 0.4 seconds",
+         "text_cn": null,
+         "before": 0.5,
+         "after": 0.4,
+         "metric": "blizzard ultimate cast time"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "pharah",
+     "name_en": "Pharah",
+     "name_cn": "法老之鹰",
+     "role": "damage",
+     "dev_note": "Dev Comment: In addition to rapidly launching her upwards, Jump Jet used to always move Pharah forward a small amount which made the ability feel less responsive when trying to move to the side or backwards. This change now enables a small amount of horizontal momentum in any direction.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Jump Jet",
+       "name_cn": null,
+       "slug": "jump-jet",
+       "changes": [
+        {
+         "text_en": "Jump Jet movement is now influenced by directional inputs",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "sojourn",
+     "name_en": "Sojourn",
+     "name_cn": "索杰恩",
+     "role": "damage",
+     "dev_note": "Developer Comment: Due to the angle of Sojourn's torso in her default animation stance, her torso hit volume was more difficult to hit compared to similarly sized heroes.",
+     "general": [
+      "Torso hit volume width increased by 20%"
+     ],
+     "perks": [],
+     "abilities": []
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "SUPPORT",
+   "role": null,
+   "description": null,
+   "heroes": [
+    {
+     "slug": "baptiste",
+     "name_en": "Baptiste",
+     "name_cn": "巴蒂斯特",
+     "role": "support",
+     "dev_note": "Developer Comment: Baptiste is capable of potent damage and healing output but often slightly underperforms across many skill levels. This change to the Immortality Field's minimum health threshold will strengthen his utility and enable him to more reliably assist his allies after its effect ends.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Immortality Field",
+       "name_cn": null,
+       "slug": "immortality-field",
+       "changes": [
+        {
+         "text_en": "Immortality Field minimum health threshold increased from 10 to 25%",
+         "text_cn": null,
+         "before": 10.0,
+         "after": 25.0,
+         "metric": "immortality field minimum health threshold"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "BUG FIXES",
+   "role": null,
+   "description": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "General",
+     "body": "Fixed an issue where the option to report Inappropriate player names were missing Fixed a bug with Game Reports showing incomplete data Fixed a bug where players on PlayStation® 5 were unable to save Highlights Fixed an issue where player presence was shown as 'Practice Range' when in Custom Game The Ultimate Battle Pass Bundle should now show as 'Owned' for players that purchased it (this was just a visual issue, purchases of this item were successful) Fixed a bug where some players who own all name cards could get stuck loading when using the Filter's tab in the Name Cards menu Fixed a bug on Nintendo Switch™ where all friends on the Social screen had the same player icons Resolved an issue where heroes performing an emote appeared as t-posed for players loading into the game",
+     "dev": null
+    },
+    {
+     "title": "Maps",
+     "body": "Antarctic Peninsula Fixed areas where some heroes could become stuck Fixed several gaps in the environment Made changes to the lighting in some parts of the map Fixed a bug where penguins were missing a noise when being hit with projectiles General improvements Busan Fixed a bug with the physics of the cow Circuit Royale Resolved a collision issue that could cause some heroes to be stuck Colosseo Fixed a bug with the camera placement for some Plays of the Game Esperanca Fixed an issue with a tree that could cause D.Va to get stuck when entering her mech Lijiang Tower Fixed areas of the map that allowed players to escape Midtown Fixed an area where players were able to unintentionally stand Fixed a bug on Midtown with railing collision not being correctly removed after being destroyed in some cases Midtown can now be selected as an option for Skirmish in Custom Games",
+     "dev": null
+    },
+    {
+     "title": "Heroes",
+     "body": "Ashe Fixed a bug with the Raijin skin clipping into the camera when aiming and firing down the sights Echo Fixed an issue where cloning a Sombra with a Charm equipped could cause Echo to lose all textures while Cloaked Fixed missing sound effects for the Sticky Bombs ability Hanzo Fixed a bug where shooting someone with an arrow from a Golden bow could turn their gun gold Reinhardt Fixed an issue where in some cases players were able to walk out of being pinned by a Reinhardt Fixed a bug with Fire Strike VFX remaining after being eaten by a D.Va's Defense Matrix Lúcio Fixed a bug where Lúcio's Amp it Up animation would continue to play after being stunned Orisa Resolved a bug with Terra Surge that resulted in the VFX ring not drawing for parts of the environment higher than Orisa when used Symmetra Fixed a bug where you could be sent to the wrong location if taking Symmetra's Teleporter as it is destroyed Torbjörn Fixed a bug where your turret would target the same targets as other allied Torbjörn players",
+     "dev": null
+    },
+    {
+     "title": "Workshop",
+     "body": "Resolved an issue where the 'Is Firing Secondary' condition would not be triggered by certain heroes Resolved an issue where the 'Is Firing Primary' condition was not being triggered by certain heroes Fixed a crash that could occur when creating a large number of rules Fixed an issue where it was hard to tell where the UI focus was when using a controller",
+     "dev": null
+    }
+   ]
+  }
+ ],
+ "raw_text": null,
+ "hash": "sha256:312b44fee4c837c73f229aeb5e4a86c87e3b10c084230c43fba3c63e00ef8fc1"
+}
