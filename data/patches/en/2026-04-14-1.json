@@ -91,25 +91,21 @@
      "role": "tank",
      "dev_note": null,
      "general": [],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Hyper Regeneration",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [
+        "Now restores barrier health only when damaging enemy heroes."
+       ],
+       "lines_cn": []
+      }
+     ],
      "abilities": [
       {
-       "name_en": "Hyper Regeneration – Minor Perk",
-       "name_cn": null,
-       "slug": "hyper-regeneration-minor-perk",
-       "changes": [
-        {
-         "text_en": "Now restores barrier health only when damaging enemy heroes.",
-         "text_cn": null,
-         "before": null,
-         "after": null,
-         "metric": null
-        }
-       ]
-      },
-      {
        "name_en": "Experimental Barrier",
-       "name_cn": null,
+       "name_cn": "实验屏障",
        "slug": "experimental-barrier",
        "changes": [
         {
@@ -130,11 +126,41 @@
      "role": "tank",
      "dev_note": "The Vengeful Vortex perk significantly improved the flexibility of Ravenous Vortex, especially when interacting with airborne targets. That functionality has been added to the base ability with reduced damage. Prolonged Barrier returns as a Minor Perk option, and Void Surge has been buffed and moved to a Major Perk.",
      "general": [],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Prolonged Barrier",
+       "name_cn": null,
+       "status": "added",
+       "lines_en": [
+        "Added.",
+        "Void Barrier duration and size increased by 25%."
+       ],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Vengeful Vortex",
+       "name_cn": null,
+       "status": "removed",
+       "lines_en": [
+        "Removed."
+       ],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Void Surge",
+       "name_cn": null,
+       "status": "moved",
+       "lines_en": [
+        "Moved from Minor to Major Perk.",
+        "Delay between bursts reduced from 0.75 to 0.6 seconds."
+       ],
+       "lines_cn": []
+      }
+     ],
      "abilities": [
       {
        "name_en": "Ravenous Vortex",
-       "name_cn": null,
+       "name_cn": "吞噬漩涡",
        "slug": "ravenous-vortex",
        "changes": [
         {
@@ -166,62 +192,6 @@
          "metric": "explosion damage"
         }
        ]
-      },
-      {
-       "name_en": "Prolonged Barrier – Minor Perk",
-       "name_cn": null,
-       "slug": "prolonged-barrier-minor-perk",
-       "changes": [
-        {
-         "text_en": "Added.",
-         "text_cn": null,
-         "before": null,
-         "after": null,
-         "metric": null
-        },
-        {
-         "text_en": "Void Barrier duration and size increased by 25%.",
-         "text_cn": null,
-         "before": null,
-         "after": null,
-         "metric": null
-        }
-       ]
-      },
-      {
-       "name_en": "Vengeful Vortex – Major Perk",
-       "name_cn": null,
-       "slug": "vengeful-vortex-major-perk",
-       "changes": [
-        {
-         "text_en": "Removed.",
-         "text_cn": null,
-         "before": null,
-         "after": null,
-         "metric": null
-        }
-       ]
-      },
-      {
-       "name_en": "Void Surge – Major Perk",
-       "name_cn": null,
-       "slug": "void-surge-major-perk",
-       "changes": [
-        {
-         "text_en": "Moved from Minor to Major Perk.",
-         "text_cn": null,
-         "before": null,
-         "after": null,
-         "metric": null
-        },
-        {
-         "text_en": "Delay between bursts reduced from 0.75 to 0.6 seconds.",
-         "text_cn": null,
-         "before": 0.75,
-         "after": 0.6,
-         "metric": "delay between bursts"
-        }
-       ]
       }
      ]
     },
@@ -232,23 +202,18 @@
      "role": "tank",
      "dev_note": null,
      "general": [],
-     "perks": [],
-     "abilities": [
+     "perks": [
       {
-       "name_en": "Shield Slam – Minor Perk",
+       "name_en": "Shield Slam",
        "name_cn": null,
-       "slug": "shield-slam-minor-perk",
-       "changes": [
-        {
-         "text_en": "Added a custom setting allowing Shield Slam to be bound to Quick Melee, enabling free look while the perk is equipped.",
-         "text_cn": null,
-         "before": null,
-         "after": null,
-         "metric": null
-        }
-       ]
+       "status": "added",
+       "lines_en": [
+        "Added a custom setting allowing Shield Slam to be bound to Quick Melee, enabling free look while the perk is equipped."
+       ],
+       "lines_cn": []
       }
-     ]
+     ],
+     "abilities": []
     },
     {
      "slug": "roadhog",
@@ -257,11 +222,31 @@
      "role": "tank",
      "dev_note": "With Roadhog’s combo becoming more reliable, his overall effectiveness has increased. These changes reduce how frequently the combo can be executed and require more deliberate use of Chain Hook. Invigorate has also been replaced due to its overlap with the Bruiser subrole.",
      "general": [],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Invigorate",
+       "name_cn": null,
+       "status": "removed",
+       "lines_en": [
+        "Removed."
+       ],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Hogdrogen Exposure",
+       "name_cn": null,
+       "status": "added",
+       "lines_en": [
+        "Added.",
+        "Take a Breather now heals nearby allies for 50% of its healing amount."
+       ],
+       "lines_cn": []
+      }
+     ],
      "abilities": [
       {
        "name_en": "Scrap Gun",
-       "name_cn": null,
+       "name_cn": "爆裂枪",
        "slug": "scrap-gun",
        "changes": [
         {
@@ -275,7 +260,7 @@
       },
       {
        "name_en": "Chain Hook",
-       "name_cn": null,
+       "name_cn": "链钩",
        "slug": "chain-hook",
        "changes": [
         {
@@ -284,41 +269,6 @@
          "before": 6.0,
          "after": 8.0,
          "metric": "cooldown"
-        }
-       ]
-      },
-      {
-       "name_en": "Invigorate – Major Perk",
-       "name_cn": null,
-       "slug": "invigorate-major-perk",
-       "changes": [
-        {
-         "text_en": "Removed.",
-         "text_cn": null,
-         "before": null,
-         "after": null,
-         "metric": null
-        }
-       ]
-      },
-      {
-       "name_en": "Hogdrogen Exposure – Major Perk",
-       "name_cn": null,
-       "slug": "hogdrogen-exposure-major-perk",
-       "changes": [
-        {
-         "text_en": "Added.",
-         "text_cn": null,
-         "before": null,
-         "after": null,
-         "metric": null
-        },
-        {
-         "text_en": "Take a Breather now heals nearby allies for 50% of its healing amount.",
-         "text_cn": null,
-         "before": null,
-         "after": null,
-         "metric": null
         }
        ]
       }
@@ -337,7 +287,7 @@
      "abilities": [
       {
        "name_en": "Tesla Cannon",
-       "name_cn": null,
+       "name_cn": "特斯拉炮",
        "slug": "tesla-cannon",
        "changes": [
         {
@@ -382,11 +332,22 @@
       "Minor Perk cost reduced by 7%.",
       "Major Perk cost reduced by 5%."
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Hungering Blaze",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [
+        "Changed.",
+        "Increases the healing of Dancing Blaze’s subsequent strikes by 25."
+       ],
+       "lines_cn": []
+      }
+     ],
      "abilities": [
       {
        "name_en": "Fan the Flames",
-       "name_cn": null,
+       "name_cn": "煽火风",
        "slug": "fan-the-flames",
        "changes": [
         {
@@ -400,7 +361,7 @@
       },
       {
        "name_en": "Inferno Rush",
-       "name_cn": null,
+       "name_cn": "怒炎冲",
        "slug": "inferno-rush",
        "changes": [
         {
@@ -414,32 +375,11 @@
       },
       {
        "name_en": "Dancing Blaze",
-       "name_cn": null,
+       "name_cn": "熠闪舞",
        "slug": "dancing-blaze",
        "changes": [
         {
          "text_en": "Now heals Anran for 50 health on the first target hit and 25 health for each subsequent target.",
-         "text_cn": null,
-         "before": null,
-         "after": null,
-         "metric": null
-        }
-       ]
-      },
-      {
-       "name_en": "Hungering Blaze – Major Perk",
-       "name_cn": null,
-       "slug": "hungering-blaze-major-perk",
-       "changes": [
-        {
-         "text_en": "Changed.",
-         "text_cn": null,
-         "before": null,
-         "after": null,
-         "metric": null
-        },
-        {
-         "text_en": "Increases the healing of Dancing Blaze’s subsequent strikes by 25.",
          "text_cn": null,
          "before": null,
          "after": null,
@@ -456,23 +396,18 @@
      "role": "damage",
      "dev_note": null,
      "general": [],
-     "perks": [],
-     "abilities": [
+     "perks": [
       {
-       "name_en": "Double Barreled – Minor Perk",
+       "name_en": "Double Barreled",
        "name_cn": null,
-       "slug": "double-barreled-minor-perk",
-       "changes": [
-        {
-         "text_en": "Time required to retrigger Coach Gun increased from 1 to 2 seconds.",
-         "text_cn": null,
-         "before": 1.0,
-         "after": 2.0,
-         "metric": "time required to retrigger coach gun"
-        }
-       ]
+       "status": "changed",
+       "lines_en": [
+        "Time required to retrigger Coach Gun increased from 1 to 2 seconds."
+       ],
+       "lines_cn": []
       }
-     ]
+     ],
+     "abilities": []
     },
     {
      "slug": "bastion",
@@ -484,44 +419,28 @@
       "Minor Perk cost increased by 10%.",
       "Major Perk cost increased by 6%."
      ],
-     "perks": [],
-     "abilities": [
+     "perks": [
       {
-       "name_en": "Configuration Reload – Minor Perk",
+       "name_en": "Configuration Reload",
        "name_cn": null,
-       "slug": "configuration-reload-minor-perk",
-       "changes": [
-        {
-         "text_en": "No longer fully refunds cooldown.",
-         "text_cn": null,
-         "before": null,
-         "after": null,
-         "metric": null
-        },
-        {
-         "text_en": "Now reduces cooldown by 4 seconds.",
-         "text_cn": null,
-         "before": null,
-         "after": null,
-         "metric": null
-        }
-       ]
+       "status": "changed",
+       "lines_en": [
+        "No longer fully refunds cooldown.",
+        "Now reduces cooldown by 4 seconds."
+       ],
+       "lines_cn": []
       },
       {
-       "name_en": "Armored Artillery – Minor Perk",
+       "name_en": "Armored Artillery",
        "name_cn": null,
-       "slug": "armored-artillery-minor-perk",
-       "changes": [
-        {
-         "text_en": "Overhealth degeneration reduced from 100 to 50 per second.",
-         "text_cn": null,
-         "before": 100.0,
-         "after": 50.0,
-         "metric": "overhealth degeneration"
-        }
-       ]
+       "status": "changed",
+       "lines_en": [
+        "Overhealth degeneration reduced from 100 to 50 per second."
+       ],
+       "lines_cn": []
       }
-     ]
+     ],
+     "abilities": []
     },
     {
      "slug": "echo",
@@ -530,11 +449,21 @@
      "role": "damage",
      "dev_note": "Allowing Echo to duplicate allied heroes opens up new strategic options and enables more creative ultimate combinations for coordinated teams.",
      "general": [],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Focused Rush",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [
+        "Range increased from 4 to 6 meters."
+       ],
+       "lines_cn": []
+      }
+     ],
      "abilities": [
       {
        "name_en": "Duplicate",
-       "name_cn": null,
+       "name_cn": "人格复制",
        "slug": "duplicate",
        "changes": [
         {
@@ -543,20 +472,6 @@
          "before": null,
          "after": null,
          "metric": null
-        }
-       ]
-      },
-      {
-       "name_en": "Focused Rush – Minor Perk",
-       "name_cn": null,
-       "slug": "focused-rush-minor-perk",
-       "changes": [
-        {
-         "text_en": "Range increased from 4 to 6 meters.",
-         "text_cn": null,
-         "before": 4.0,
-         "after": 6.0,
-         "metric": "range"
         }
        ]
       }
@@ -569,29 +484,25 @@
      "role": "damage",
      "dev_note": null,
      "general": [],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Heat Sink",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [
+        "Heat generated from direct hits reduced from 100% to 60%."
+       ],
+       "lines_cn": []
+      }
+     ],
      "abilities": [
       {
        "name_en": "Siphon Blaster",
-       "name_cn": null,
+       "name_cn": "虹吸冲击枪",
        "slug": "siphon-blaster",
        "changes": [
         {
          "text_en": "Added an accessibility option which allows players to hold Secondary Fire to automatically fire Siphon Blaster at a reduced fire rate.",
-         "text_cn": null,
-         "before": null,
-         "after": null,
-         "metric": null
-        }
-       ]
-      },
-      {
-       "name_en": "Heat Sink – Major Perk",
-       "name_cn": null,
-       "slug": "heat-sink-major-perk",
-       "changes": [
-        {
-         "text_en": "Heat generated from direct hits reduced from 100% to 60%.",
          "text_cn": null,
          "before": null,
          "after": null,
@@ -608,51 +519,29 @@
      "role": "damage",
      "dev_note": null,
      "general": [],
-     "perks": [],
-     "abilities": [
+     "perks": [
       {
-       "name_en": "Mine Recycling – Major Perk",
+       "name_en": "Mine Recycling",
        "name_cn": null,
-       "slug": "mine-recycling-major-perk",
-       "changes": [
-        {
-         "text_en": "Moved from Minor to Major Perk.",
-         "text_cn": null,
-         "before": null,
-         "after": null,
-         "metric": null
-        },
-        {
-         "text_en": "Eliminations with Concussion Mine restore one charge.",
-         "text_cn": null,
-         "before": null,
-         "after": null,
-         "metric": null
-        }
-       ]
+       "status": "moved",
+       "lines_en": [
+        "Moved from Minor to Major Perk.",
+        "Eliminations with Concussion Mine restore one charge."
+       ],
+       "lines_cn": []
       },
       {
-       "name_en": "Bomb Voyage – Minor Perk",
+       "name_en": "Bomb Voyage",
        "name_cn": null,
-       "slug": "bomb-voyage-minor-perk",
-       "changes": [
-        {
-         "text_en": "Moved from Major to Minor Perk.",
-         "text_cn": null,
-         "before": null,
-         "after": null,
-         "metric": null
-        },
-        {
-         "text_en": "Attack speed bonus reduced from 35% to 25%.",
-         "text_cn": null,
-         "before": null,
-         "after": null,
-         "metric": null
-        }
-       ]
+       "status": "moved",
+       "lines_en": [
+        "Moved from Major to Minor Perk.",
+        "Attack speed bonus reduced from 35% to 25%."
+       ],
+       "lines_cn": []
       }
-     ]
+     ],
+     "abilities": []
     },
     {
      "slug": "pharah",
@@ -661,11 +550,31 @@
      "role": "damage",
      "dev_note": "Drift Thrusters’ functionality has been added to Pharah’s Barrage, allowing limited movement during the ultimate to reduce friction when using it. Barrage damage has been slightly reduced to offset the added flexibility.",
      "general": [],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Drift Thrusters",
+       "name_cn": null,
+       "status": "removed",
+       "lines_en": [
+        "Removed."
+       ],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Concussive Force",
+       "name_cn": null,
+       "status": "added",
+       "lines_en": [
+        "Added.",
+        "Concussive Blast deals up to 50 explosion damage."
+       ],
+       "lines_cn": []
+      }
+     ],
      "abilities": [
       {
        "name_en": "Hover Jets",
-       "name_cn": null,
+       "name_cn": "悬浮背包",
        "slug": "hover-jets",
        "changes": [
         {
@@ -679,7 +588,7 @@
       },
       {
        "name_en": "Barrage",
-       "name_cn": null,
+       "name_cn": "火箭弹幕",
        "slug": "barrage",
        "changes": [
         {
@@ -697,41 +606,6 @@
          "metric": "explosion damage"
         }
        ]
-      },
-      {
-       "name_en": "Drift Thrusters – Minor Perk",
-       "name_cn": null,
-       "slug": "drift-thrusters-minor-perk",
-       "changes": [
-        {
-         "text_en": "Removed.",
-         "text_cn": null,
-         "before": null,
-         "after": null,
-         "metric": null
-        }
-       ]
-      },
-      {
-       "name_en": "Concussive Force – Minor Perk",
-       "name_cn": null,
-       "slug": "concussive-force-minor-perk",
-       "changes": [
-        {
-         "text_en": "Added.",
-         "text_cn": null,
-         "before": null,
-         "after": null,
-         "metric": null
-        },
-        {
-         "text_en": "Concussive Blast deals up to 50 explosion damage.",
-         "text_cn": null,
-         "before": null,
-         "after": null,
-         "metric": null
-        }
-       ]
       }
      ]
     },
@@ -742,11 +616,22 @@
      "role": "damage",
      "dev_note": "Dire Triggers has been moved into Reaper’s base kit to give him more consistent mid‑range options on a cooldown. This change adds additional decision‑making and skill expression to his gameplay.",
      "general": [],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Trigger Finger",
+       "name_cn": null,
+       "status": "added",
+       "lines_en": [
+        "Added.",
+        "Using an ability or reloading refreshes Dire Triggers’ cooldown."
+       ],
+       "lines_cn": []
+      }
+     ],
      "abilities": [
       {
        "name_en": "Dire Triggers",
-       "name_cn": null,
+       "name_cn": "恐怖扳机",
        "slug": "dire-triggers",
        "changes": [
         {
@@ -764,27 +649,6 @@
          "metric": "cooldown"
         }
        ]
-      },
-      {
-       "name_en": "Trigger Finger – Major Perk",
-       "name_cn": null,
-       "slug": "trigger-finger-major-perk",
-       "changes": [
-        {
-         "text_en": "Added.",
-         "text_cn": null,
-         "before": null,
-         "after": null,
-         "metric": null
-        },
-        {
-         "text_en": "Using an ability or reloading refreshes Dire Triggers’ cooldown.",
-         "text_cn": null,
-         "before": null,
-         "after": null,
-         "metric": null
-        }
-       ]
       }
      ]
     },
@@ -795,7 +659,27 @@
      "role": "damage",
      "dev_note": "Allowing Soldier: 76 to reload while sprinting introduces new playstyle opportunities and reinforces his identity as a mobile damage dealer. A temporary movement speed penalty during the reload has been added to ensure the interaction carries a meaningful tradeoff.",
      "general": [],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Agility Training",
+       "name_cn": null,
+       "status": "removed",
+       "lines_en": [
+        "Removed."
+       ],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Full Stride",
+       "name_cn": null,
+       "status": "added",
+       "lines_en": [
+        "New.",
+        "Sprint’s movement speed bonus gradually increases by an additional 25% over 2 seconds."
+       ],
+       "lines_cn": []
+      }
+     ],
      "abilities": [
       {
        "name_en": "Sprint",
@@ -824,41 +708,6 @@
          "metric": null
         }
        ]
-      },
-      {
-       "name_en": "Agility Training – Major Perk",
-       "name_cn": null,
-       "slug": "agility-training-major-perk",
-       "changes": [
-        {
-         "text_en": "Removed.",
-         "text_cn": null,
-         "before": null,
-         "after": null,
-         "metric": null
-        }
-       ]
-      },
-      {
-       "name_en": "Full Stride – Major Perk",
-       "name_cn": null,
-       "slug": "full-stride-major-perk",
-       "changes": [
-        {
-         "text_en": "New.",
-         "text_cn": null,
-         "before": null,
-         "after": null,
-         "metric": null
-        },
-        {
-         "text_en": "Sprint’s movement speed bonus gradually increases by an additional 25% over 2 seconds.",
-         "text_cn": null,
-         "before": null,
-         "after": null,
-         "metric": null
-        }
-       ]
       }
      ]
     },
@@ -876,7 +725,7 @@
      "abilities": [
       {
        "name_en": "Stealth",
-       "name_cn": null,
+       "name_cn": "隐秘潜行",
        "slug": "stealth",
        "changes": [
         {
@@ -918,7 +767,7 @@
      "abilities": [
       {
        "name_en": "Onslaught (Passive)",
-       "name_cn": null,
+       "name_cn": "越战越勇（被动）",
        "slug": "onslaught-passive",
        "changes": [
         {
@@ -932,7 +781,7 @@
       },
       {
        "name_en": "Palatine Fang",
-       "name_cn": null,
+       "name_cn": "帕拉蒂尼之牙",
        "slug": "palatine-fang",
        "changes": [
         {
@@ -979,7 +828,7 @@
      "abilities": [
       {
        "name_en": "Biotic Grenade",
-       "name_cn": null,
+       "name_cn": "生物手雷",
        "slug": "biotic-grenade",
        "changes": [
         {
@@ -1000,11 +849,21 @@
      "role": "support",
      "dev_note": "Brigitte’s survivability can feel low despite needing to operate in close range to be effective. Increasing Barrier Shield health gives her more flexibility and better supports her defensive role.",
      "general": [],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Combat Medic",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [
+        "Cooldown refunded increased from 0.5 to 0.75 seconds."
+       ],
+       "lines_cn": []
+      }
+     ],
      "abilities": [
       {
        "name_en": "Barrier Shield",
-       "name_cn": null,
+       "name_cn": "屏障护盾",
        "slug": "barrier-shield",
        "changes": [
         {
@@ -1013,20 +872,6 @@
          "before": 250.0,
          "after": 300.0,
          "metric": "health"
-        }
-       ]
-      },
-      {
-       "name_en": "Combat Medic – Minor Perk",
-       "name_cn": null,
-       "slug": "combat-medic-minor-perk",
-       "changes": [
-        {
-         "text_en": "Cooldown refunded increased from 0.5 to 0.75 seconds.",
-         "text_cn": null,
-         "before": 0.5,
-         "after": 0.75,
-         "metric": "cooldown refunded"
         }
        ]
       }
@@ -1039,29 +884,25 @@
      "role": "support",
      "dev_note": null,
      "general": [],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Claws Out",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [
+        "Cooldown reductions now apply to the Claws Out cooldown."
+       ],
+       "lines_cn": []
+      }
+     ],
      "abilities": [
       {
        "name_en": "Frenetic Flight",
-       "name_cn": null,
+       "name_cn": "咻咻飞",
        "slug": "frenetic-flight",
        "changes": [
         {
          "text_en": "Acceleration reduced by 11%.",
-         "text_cn": null,
-         "before": null,
-         "after": null,
-         "metric": null
-        }
-       ]
-      },
-      {
-       "name_en": "Claws Out – Major Perk",
-       "name_cn": null,
-       "slug": "claws-out-major-perk",
-       "changes": [
-        {
-         "text_en": "Cooldown reductions now apply to the Claws Out cooldown.",
          "text_cn": null,
          "before": null,
          "after": null,
@@ -1082,7 +923,7 @@
      "abilities": [
       {
        "name_en": "Pulsar Torpedoes",
-       "name_cn": null,
+       "name_cn": "脉冲星飞雷",
        "slug": "pulsar-torpedoes",
        "changes": [
         {
@@ -1096,7 +937,7 @@
       },
       {
        "name_en": "Glide Boost",
-       "name_cn": null,
+       "name_cn": "滑翔推进",
        "slug": "glide-boost",
        "changes": [
         {
@@ -1117,11 +958,21 @@
      "role": "support",
      "dev_note": "Lifeweaver has struggled to find effectiveness following reductions to his survivability and the introduction of in‑combat healing reduction. Increasing his overall healing output and adding a cleanse to Life Grip provides him with additional survivability and utility in his base kit.",
      "general": [],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Sow the Seed",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [
+        "Cooldown reduced from 14 to 11 seconds."
+       ],
+       "lines_cn": []
+      }
+     ],
      "abilities": [
       {
        "name_en": "Healing Blossom",
-       "name_cn": null,
+       "name_cn": "愈疗灵花",
        "slug": "healing-blossom",
        "changes": [
         {
@@ -1135,7 +986,7 @@
       },
       {
        "name_en": "Rejuvenating Dash",
-       "name_cn": null,
+       "name_cn": "回春疾行",
        "slug": "rejuvenating-dash",
        "changes": [
         {
@@ -1149,7 +1000,7 @@
       },
       {
        "name_en": "Life Grip",
-       "name_cn": null,
+       "name_cn": "生命之握",
        "slug": "life-grip",
        "changes": [
         {
@@ -1158,20 +1009,6 @@
          "before": null,
          "after": null,
          "metric": null
-        }
-       ]
-      },
-      {
-       "name_en": "Sow the Seed – Major Perk",
-       "name_cn": null,
-       "slug": "sow-the-seed-major-perk",
-       "changes": [
-        {
-         "text_en": "Cooldown reduced from 14 to 11 seconds.",
-         "text_cn": null,
-         "before": 14.0,
-         "after": 11.0,
-         "metric": "cooldown"
         }
        ]
       }
@@ -1184,11 +1021,31 @@
      "role": "support",
      "dev_note": null,
      "general": [],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Accelerando",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [
+        "Changed.",
+        "Gain 15% attack speed while Lucio's Speed Song is active, tripled during Amp It Up."
+       ],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Soundwave Rider",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [
+        "Can no longer be charged before a round begins."
+       ],
+       "lines_cn": []
+      }
+     ],
      "abilities": [
       {
        "name_en": "Crossfade",
-       "name_cn": null,
+       "name_cn": "切歌",
        "slug": "crossfade",
        "changes": [
         {
@@ -1197,41 +1054,6 @@
          "before": 20.0,
          "after": 18.0,
          "metric": "healing"
-        }
-       ]
-      },
-      {
-       "name_en": "Accelerando – Major Perk",
-       "name_cn": null,
-       "slug": "accelerando-major-perk",
-       "changes": [
-        {
-         "text_en": "Changed.",
-         "text_cn": null,
-         "before": null,
-         "after": null,
-         "metric": null
-        },
-        {
-         "text_en": "Gain 15% attack speed while Lucio's Speed Song is active, tripled during Amp It Up.",
-         "text_cn": null,
-         "before": null,
-         "after": null,
-         "metric": null
-        }
-       ]
-      },
-      {
-       "name_en": "Soundwave Rider – Minor Perk",
-       "name_cn": null,
-       "slug": "soundwave-rider-minor-perk",
-       "changes": [
-        {
-         "text_en": "Can no longer be charged before a round begins.",
-         "text_cn": null,
-         "before": null,
-         "after": null,
-         "metric": null
         }
        ]
       }
@@ -1248,7 +1070,7 @@
      "abilities": [
       {
        "name_en": "Swift Step",
-       "name_cn": null,
+       "name_cn": "瞬",
        "slug": "swift-step",
        "changes": [
         {
@@ -1262,7 +1084,7 @@
       },
       {
        "name_en": "Healing Ofuda",
-       "name_cn": null,
+       "name_cn": "符",
        "slug": "healing-ofuda",
        "changes": [
         {
@@ -1290,7 +1112,7 @@
      "abilities": [
       {
        "name_en": "Remedy Aura",
-       "name_cn": null,
+       "name_cn": "安魂灵气",
        "slug": "remedy-aura",
        "changes": [
         {
@@ -1311,7 +1133,7 @@
       },
       {
        "name_en": "Kekkai Sanctuary",
-       "name_cn": null,
+       "name_cn": "护魂结界",
        "slug": "kekkai-sanctuary",
        "changes": [
         {
@@ -1325,7 +1147,7 @@
       },
       {
        "name_en": "Katashiro Return",
-       "name_cn": null,
+       "name_cn": "替魂纸人",
        "slug": "katashiro-return",
        "changes": [
         {
@@ -1353,11 +1175,22 @@
      "role": "support",
      "dev_note": "Flash Heal has proven to be a compelling and expressive ability and is now being added to Mercy’s base kit. This gives her more reliable on‑demand healing while rewarding thoughtful cooldown management. To account for the added power, some of Mercy’s baseline healing and mobility have been slightly reduced.",
      "general": [],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Double Dose",
+       "name_cn": null,
+       "status": "added",
+       "lines_en": [
+        "New.",
+        "Flash Heal gains an additional charge but its base healing is reduced by 10."
+       ],
+       "lines_cn": []
+      }
+     ],
      "abilities": [
       {
        "name_en": "Flash Heal",
-       "name_cn": null,
+       "name_cn": "快速治疗",
        "slug": "flash-heal",
        "changes": [
         {
@@ -1392,7 +1225,7 @@
       },
       {
        "name_en": "Caduceus Staff",
-       "name_cn": null,
+       "name_cn": "天使之杖",
        "slug": "caduceus-staff",
        "changes": [
         {
@@ -1406,32 +1239,11 @@
       },
       {
        "name_en": "Guardian Angel",
-       "name_cn": null,
+       "name_cn": "守护天使",
        "slug": "guardian-angel",
        "changes": [
         {
          "text_en": "Launch speed reduced by 10%.",
-         "text_cn": null,
-         "before": null,
-         "after": null,
-         "metric": null
-        }
-       ]
-      },
-      {
-       "name_en": "Double Dose – Major Perk",
-       "name_cn": null,
-       "slug": "double-dose-major-perk",
-       "changes": [
-        {
-         "text_en": "New.",
-         "text_cn": null,
-         "before": null,
-         "after": null,
-         "metric": null
-        },
-        {
-         "text_en": "Flash Heal gains an additional charge but its base healing is reduced by 10.",
          "text_cn": null,
          "before": null,
          "after": null,
@@ -1452,7 +1264,7 @@
      "abilities": [
       {
        "name_en": "Rushing Torrent",
-       "name_cn": null,
+       "name_cn": "飞流步",
        "slug": "rushing-torrent",
        "changes": [
         {
@@ -1477,7 +1289,7 @@
      "abilities": [
       {
        "name_en": "Orb of Discord",
-       "name_cn": null,
+       "name_cn": "乱",
        "slug": "orb-of-discord",
        "changes": [
         {

@@ -104,10 +104,19 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "护盾系统——主要威能 生命值到护盾的转化量从150点缩小至100点。",
       "生命值到护盾的转化量从150点缩小至100点。"
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "护盾系统",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "生命值到护盾的转化量从150点缩小至100点。"
+       ]
+      }
+     ],
      "abilities": []
     },
     {
@@ -117,13 +126,30 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "战略转移——主要威能 已添加 屏障阵列激活时，可移动一次位置。",
       "已添加",
       "屏障阵列激活时，可移动一次位置。",
-      "强权压制——主要威能 已移除",
       "已移除"
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "战略转移",
+       "status": "added",
+       "lines_en": [],
+       "lines_cn": [
+        "已添加 屏障阵列激活时，可移动一次位置。"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "强权压制",
+       "status": "removed",
+       "lines_en": [],
+       "lines_cn": [
+        "已移除"
+       ]
+      }
+     ],
      "abilities": []
     },
     {
@@ -133,10 +159,19 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "悍猛矩阵——主要威能 持续时间从1秒缩短至0.8秒。",
       "持续时间从1秒缩短至0.8秒。"
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "悍猛矩阵",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "持续时间从1秒缩短至0.8秒。"
+       ]
+      }
+     ],
      "abilities": []
     },
     {
@@ -146,23 +181,56 @@
      "role": "tank",
      "dev_note": "“骇灾”拥有出色的生存能力、机动性和杀伤力，可以有效应对多种场景。缩短尖刺护体的持续时间可以削弱他的续航；调换次级和主要威能后，玩家则必须在机动性和杀伤力中作出抉择。",
      "general": [
-      "激进狂热——次级威能 治疗量从30%提高至40%。",
       "治疗量从30%提高至40%。",
-      "尖刺重构——次级威能 从主要威能改为了次级威能。 额外充能上限从50%降低至25%。",
       "从主要威能改为了次级威能。",
       "额外充能上限从50%降低至25%。",
-      "强劲狂跃——主要威能 从次级威能改为了主要威能。 范围扩大从15%提高至20%。",
       "从次级威能改为了主要威能。",
       "范围扩大从15%提高至20%。",
-      "爆炸穿刺——主要威能 伤害从40点降低至30点。",
       "伤害从40点降低至30点。"
      ],
-     "perks": [],
-     "abilities": [
+     "perks": [
       {
        "name_en": null,
+       "name_cn": "激进狂热",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "治疗量从30%提高至40%。"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "尖刺重构",
+       "status": "moved",
+       "lines_en": [],
+       "lines_cn": [
+        "从主要威能改为了次级威能。 额外充能上限从50%降低至25%。"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "强劲狂跃",
+       "status": "moved",
+       "lines_en": [],
+       "lines_cn": [
+        "从次级威能改为了主要威能。 范围扩大从15%提高至20%。"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "爆炸穿刺",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "伤害从40点降低至30点。"
+       ]
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": "Spike Guard",
        "name_cn": "尖刺护体",
-       "slug": "hero-c3a0503d",
+       "slug": "spike-guard",
        "changes": [
         {
          "text_en": null,
@@ -182,13 +250,30 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "铁血形态——次级威能 持续时间延长从1秒增加至2秒。 “诛”持续期间效果减半。",
       "持续时间延长从1秒增加至2秒。",
       "“诛”持续期间效果减半。",
-      "纳米修复——主要威能 治疗量从75提高至100。",
       "治疗量从75提高至100。"
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "铁血形态",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "持续时间延长从1秒增加至2秒。 “诛”持续期间效果减半。"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "纳米修复",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "治疗量从75提高至100。"
+       ]
+      }
+     ],
      "abilities": []
     },
     {
@@ -201,9 +286,9 @@
      "perks": [],
      "abilities": [
       {
-       "name_en": null,
+       "name_en": "Firestrike",
        "name_cn": "烈焰打击",
-       "slug": "hero-30f1d9b3",
+       "slug": "firestrike",
        "changes": [
         {
          "text_en": null,
@@ -233,9 +318,9 @@
      "perks": [],
      "abilities": [
       {
-       "name_en": null,
+       "name_en": "Energy",
        "name_cn": "能量转换",
-       "slug": "hero-7cbcf299",
+       "slug": "energy",
        "changes": [
         {
          "text_en": null,
@@ -267,9 +352,9 @@
      "perks": [],
      "abilities": [
       {
-       "name_en": null,
+       "name_en": "Inferno Rush",
        "name_cn": "怒炎冲",
-       "slug": "hero-907b36b0",
+       "slug": "inferno-rush",
        "changes": [
         {
          "text_en": null,
@@ -281,9 +366,9 @@
        ]
       },
       {
-       "name_en": null,
+       "name_en": "Dancing Blaze",
        "name_cn": "熠闪舞",
-       "slug": "hero-47a08026",
+       "slug": "dancing-blaze",
        "changes": [
         {
          "text_en": null,
@@ -303,14 +388,39 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "双筒猎枪——次级威能 第二次使用的击退效果衰减已移除。",
       "第二次使用的击退效果衰减已移除。",
-      "毒蛇之刺——主要威能 装填弹药效果已移除。",
       "装填弹药效果已移除。",
-      "空爆雷管——主要威能 返还弹药量从3发提高至6发。",
       "返还弹药量从3发提高至6发。"
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "双筒猎枪",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "第二次使用的击退效果衰减已移除。"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "毒蛇之刺",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "装填弹药效果已移除。"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "空爆雷管",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "返还弹药量从3发提高至6发。"
+       ]
+      }
+     ],
      "abilities": []
     },
     {
@@ -320,12 +430,29 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "重甲火炮——次级威能 已移除",
       "已移除",
-      "智能炸弹——次级威能 A-36战术榴弹的自身击退效果提高25%且不再对自己造成伤害。",
       "A-36战术榴弹的自身击退效果提高25%且不再对自己造成伤害。"
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "重甲火炮",
+       "status": "removed",
+       "lines_en": [],
+       "lines_cn": [
+        "已移除"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "智能炸弹",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "A-36战术榴弹的自身击退效果提高25%且不再对自己造成伤害。"
+       ]
+      }
+     ],
      "abilities": []
     },
     {
@@ -335,13 +462,30 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "绝处逢生——次级威能 每秒治疗量从30点提高至40点。",
       "每秒治疗量从30点提高至40点。",
-      "银质子弹——主要威能 流血总持续伤害量从70点降低至50点。 持续时间从2.5秒缩短至1.5秒。",
       "流血总持续伤害量从70点降低至50点。",
       "持续时间从2.5秒缩短至1.5秒。"
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "绝处逢生",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "每秒治疗量从30点提高至40点。"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "银质子弹",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "流血总持续伤害量从70点降低至50点。 持续时间从2.5秒缩短至1.5秒。"
+       ]
+      }
+     ],
      "abilities": []
     },
     {
@@ -351,12 +495,29 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "局部扫描——次级威能 初始终极技能充能从50%降低至30%。",
       "初始终极技能充能从50%降低至30%。",
-      "炸弹齐射——主要威能 额外黏性炸弹数量从3降低至2。",
       "额外黏性炸弹数量从3降低至2。"
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "局部扫描",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "初始终极技能充能从50%降低至30%。"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "炸弹齐射",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "额外黏性炸弹数量从3降低至2。"
+       ]
+      }
+     ],
      "abilities": []
     },
     {
@@ -369,9 +530,9 @@
      "perks": [],
      "abilities": [
       {
-       "name_en": null,
+       "name_en": "Override Protocol",
        "name_cn": "覆盖协议",
-       "slug": "hero-53341e09",
+       "slug": "override-protocol",
        "changes": [
         {
          "text_en": null,
@@ -391,15 +552,24 @@
      "role": "damage",
      "dev_note": "缩短源氏“闪”的冷却时间可以让他更频繁地交战，同时提高冥思一闪威能的价值。",
      "general": [
-      "冥思一闪——主要威能 每秒治疗量从35点提高至50点。",
       "每秒治疗量从35点提高至50点。"
      ],
-     "perks": [],
-     "abilities": [
+     "perks": [
       {
        "name_en": null,
+       "name_cn": "冥思一闪",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "每秒治疗量从35点提高至50点。"
+       ]
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": "Deflect",
        "name_cn": "闪",
-       "slug": "hero-02c6f46a",
+       "slug": "deflect",
        "changes": [
         {
          "text_en": null,
@@ -419,10 +589,19 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "一炸冲天——次级威能 攻击速度加成从25%提高至35%。",
       "攻击速度加成从25%提高至35%。"
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "一炸冲天",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "攻击速度加成从25%提高至35%。"
+       ]
+      }
+     ],
      "abilities": []
     },
     {
@@ -432,15 +611,24 @@
      "role": "damage",
      "dev_note": "美主要攻击模式的射程提升后，近距离与敌人交战时更有效。深度冰冻很难奏效，因为低生命值目标往往还没冻住就被消灭了。加快冰冻非重装英雄的速度可以提高实用性，同时不会加强对重装英雄的效果。",
      "general": [
-      "深度冰冻——主要威能 冰冻非重装英雄的速度加快30%。",
       "冰冻非重装英雄的速度加快30%。"
      ],
-     "perks": [],
-     "abilities": [
+     "perks": [
       {
        "name_en": null,
+       "name_cn": "深度冰冻",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "冰冻非重装英雄的速度加快30%。"
+       ]
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": "Endothermic Blaster",
        "name_cn": "冰霜冲击枪",
-       "slug": "hero-7030a321",
+       "slug": "endothermic-blaster",
        "changes": [
         {
          "text_en": null,
@@ -461,10 +649,19 @@
      "dev_note": "恐怖扳机提高了“死神”在很多对局中的强度，让他的技能组更加致命。再加上他的生存能力，现在他的强度和击杀能力有点超出预期。降低生命值可以削弱他的生存能力，而恐怖扳机的存在仍然保留了杀伤力。",
      "general": [
       "生命值从300点降低至275点。",
-      "萦绕幽灵——次级威能 移动速度加成从40%降低至30%。",
       "移动速度加成从40%降低至30%。"
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "萦绕幽灵",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "移动速度加成从40%降低至30%。"
+       ]
+      }
+     ],
      "abilities": []
     },
     {
@@ -474,17 +671,34 @@
      "role": "damage",
      "dev_note": "西拉的弹道尺寸相较于其射速有些过大，使其武器输出过于稳定。缩小弹道尺寸可以降低她的稳定性，而提高锚点无人机的响应性能可以加强她的机动性。",
      "general": [
-      "紧盯不放——次级威能 子弹散布收紧速度从加快100%降低至加快70%。",
       "子弹散布收紧速度从加快100%降低至加快70%。",
-      "锁定猛攻——主要威能 现在只有追踪弹命中敌方英雄后才能加快攻击速度。",
       "现在只有追踪弹命中敌方英雄后才能加快攻击速度。"
      ],
-     "perks": [],
-     "abilities": [
+     "perks": [
       {
        "name_en": null,
+       "name_cn": "紧盯不放",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "子弹散布收紧速度从加快100%降低至加快70%。"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "锁定猛攻",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "现在只有追踪弹命中敌方英雄后才能加快攻击速度。"
+       ]
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": "Helix Rifle",
        "name_cn": "螺旋步枪",
-       "slug": "hero-1921527c",
+       "slug": "helix-rifle",
        "changes": [
         {
          "text_en": null,
@@ -496,9 +710,9 @@
        ]
       },
       {
-       "name_en": null,
+       "name_en": "Anchor Drone",
        "name_cn": "锚点无人机",
-       "slug": "hero-9291e8d1",
+       "slug": "anchor-drone",
        "changes": [
         {
          "text_en": null,
@@ -532,10 +746,19 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "摩擦供能——主要威能 获得能量上限从50点提升至75点。",
       "获得能量上限从50点提升至75点。"
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "摩擦供能",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "获得能量上限从50点提升至75点。"
+       ]
+      }
+     ],
      "abilities": []
     },
     {
@@ -545,10 +768,19 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "动能装填——次级威能 获得的弹药从20发减少至12发。",
       "获得的弹药从20发减少至12发。"
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "动能装填",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "获得的弹药从20发减少至12发。"
+       ]
+      }
+     ],
      "abilities": []
     },
     {
@@ -561,9 +793,9 @@
      "perks": [],
      "abilities": [
       {
-       "name_en": null,
+       "name_en": "Sundering Blade",
        "name_cn": "斩地巨剑",
-       "slug": "hero-1acca820",
+       "slug": "sundering-blade",
        "changes": [
         {
          "text_en": null,
@@ -575,9 +807,9 @@
        ]
       },
       {
-       "name_en": null,
+       "name_en": "Onslaught",
        "name_cn": "越战越勇",
-       "slug": "hero-59c5d85a",
+       "slug": "onslaught",
        "changes": [
         {
          "text_en": null,
@@ -613,10 +845,19 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "加速血清——次级威能 移动速度加成从40%降低至30%。",
       "移动速度加成从40%降低至30%。"
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "加速血清",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "移动速度加成从40%降低至30%。"
+       ]
+      }
+     ],
      "abilities": []
     },
     {
@@ -626,10 +867,19 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "流星重鞭——主要威能 伤害从50点提高至60点。",
       "伤害从50点提高至60点。"
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "流星重鞭",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "伤害从50点提高至60点。"
+       ]
+      }
+     ],
      "abilities": []
     },
     {
@@ -639,10 +889,19 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "快速建造——次级威能 冷却时间缩短从1.5秒提升至2秒。",
       "冷却时间缩短从1.5秒提升至2秒。"
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "快速建造",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "冷却时间缩短从1.5秒提升至2秒。"
+       ]
+      }
+     ],
      "abilities": []
     },
     {
@@ -652,20 +911,37 @@
      "role": "support",
      "dev_note": "虽然“飞天猫”的胜率与选取率都比较低，但高段位对局中，用救生索携带特定英雄的打法非常奏效。提升运输英雄时燃料恢复速度的惩罚，以及削弱带盾运输，都可以限制这套打法；加强“飞天猫”的武器则可以提升不用救生索时的常态强度。",
      "general": [
-      "带盾运输——次级威能 持续时间从5秒缩短至3秒。 护盾最大值从75点降低至50点。",
       "持续时间从5秒缩短至3秒。",
       "护盾最大值从75点降低至50点。",
-      "火箭头槌——主要威能 激活所需的速度阈值从每秒16.5米降低至每秒14米。 不再返还燃料。 伤害从30点提高至50点。",
       "激活所需的速度阈值从每秒16.5米降低至每秒14米。",
       "不再返还燃料。",
       "伤害从30点提高至50点。"
      ],
-     "perks": [],
-     "abilities": [
+     "perks": [
       {
        "name_en": null,
+       "name_cn": "带盾运输",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "持续时间从5秒缩短至3秒。 护盾最大值从75点降低至50点。"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "火箭头槌",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "激活所需的速度阈值从每秒16.5米降低至每秒14米。 不再返还燃料。 伤害从30点提高至50点。"
+       ]
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": "Frenetic Flight",
        "name_cn": "咻咻飞",
-       "slug": "hero-8ccfdc85",
+       "slug": "frenetic-flight",
        "changes": [
         {
          "text_en": null,
@@ -677,9 +953,9 @@
        ]
       },
       {
-       "name_en": null,
+       "name_en": "Biotic Pawjectiles",
        "name_cn": "生物猫爪弹",
-       "slug": "hero-91cf9429",
+       "slug": "biotic-pawjectiles",
        "changes": [
         {
          "text_en": null,
@@ -699,10 +975,19 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "高速冲击枪——主要威能 每秒射击次数从20次提高至22次。",
       "每秒射击次数从20次提高至22次。"
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "高速冲击枪",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "每秒射击次数从20次提高至22次。"
+       ]
+      }
+     ],
      "abilities": []
     },
     {
@@ -715,9 +1000,9 @@
      "perks": [],
      "abilities": [
       {
-       "name_en": null,
-       "name_cn": "生命之树",
-       "slug": "hero-b716306e",
+       "name_en": "Tree of Life",
+       "name_cn": "生命之树e",
+       "slug": "tree-of-life",
        "changes": [
         {
          "text_en": null,
@@ -744,15 +1029,24 @@
      "role": "support",
      "dev_note": "快速治疗提高了“天使”的总体治疗量，因此她的终极技能消耗也相应提高。削弱伤害强化是为了平衡她总体效果的提高，并将原来伤害强化的效果转移到连锁强化中，提高这项威能的实用性。",
      "general": [
-      "连锁强化——主要威能 伤害强化额外提高5%。",
       "伤害强化额外提高5%。"
      ],
-     "perks": [],
-     "abilities": [
+     "perks": [
       {
        "name_en": null,
+       "name_cn": "连锁强化",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "伤害强化额外提高5%。"
+       ]
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": "Caduceus Staff",
        "name_cn": "天使之杖",
-       "slug": "hero-57dabb52",
+       "slug": "caduceus-staff",
        "changes": [
         {
          "text_en": null,
@@ -764,9 +1058,9 @@
        ]
       },
       {
-       "name_en": null,
+       "name_en": "Valkyrie",
        "name_cn": "女武神",
-       "slug": "hero-108c42c4",
+       "slug": "valkyrie",
        "changes": [
         {
          "text_en": null,
@@ -789,9 +1083,9 @@
      "perks": [],
      "abilities": [
       {
-       "name_en": null,
+       "name_en": "Katashiro Return",
        "name_cn": "替魂纸人",
-       "slug": "hero-460f9fe8",
+       "slug": "katashiro-return",
        "changes": [
         {
          "text_en": null,
@@ -821,9 +1115,9 @@
      "perks": [],
      "abilities": [
       {
-       "name_en": null,
+       "name_en": "Biotic Orb",
        "name_cn": "生化之球",
-       "slug": "hero-683d252a",
+       "slug": "biotic-orb",
        "changes": [
         {
          "text_en": null,
@@ -857,10 +1151,19 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "潮涨潮落——主要威能 回流时治疗量从50%提高至100%。",
       "回流时治疗量从50%提高至100%。"
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "潮涨潮落",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "回流时治疗量从50%提高至100%。"
+       ]
+      }
+     ],
      "abilities": []
     }
    ],

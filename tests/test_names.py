@@ -61,4 +61,30 @@ def test_unknown_ability_auto_slug():
     r = NameResolver()
     slug, en, cn = r.ability("Totally New Ability", "en")
     assert slug == "totally-new-ability"
-    assert (en, "en") in r.unknown_abilities
+
+
+def test_ability_map_cn_resolution():
+    # CN spellings (curated or learned) resolve to the EN slug
+    r = NameResolver()
+    slug, en, cn = r.ability("重脉冲步枪", "cn")
+    assert (slug, en, cn) == ("heavy-pulse-rifle", "Heavy Pulse Rifle", "重脉冲步枪")
+    slug2, en2, cn2 = r.ability("强化药剂", "cn")
+    assert (slug2, en2) == ("stim-pack", "Stim Pack")
+
+
+def test_ability_map_en_variant_folding():
+    r = NameResolver()
+    # the singular spelling was canonicalized at rebuild time; both resolve together
+    slug, en, cn = r.ability("Helix Rockets", "en")
+    assert (slug, en, cn) == ("helix-rockets", "Helix Rockets", "螺旋飞弹")
+    slug2, en2, _ = r.ability("螺旋飞弹", "cn")
+    assert slug2 == "helix-rockets"
+
+
+def test_unknown_cn_ability_still_no_hash_slug_when_mapped():
+    r = NameResolver()
+    slug, en, cn = r.ability("某种完全未知的中文技能名", "cn")
+    # not in names.json nor the map: auto-slug keeps determinism but no empty slug
+    assert slug.startswith("hero-") or slug
+    assert cn == "某种完全未知的中文技能名"
+    assert (cn, "cn") in r.unknown_abilities

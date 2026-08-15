@@ -108,9 +108,65 @@ def run_pipeline(
 
     if report.events:
         save_manifest(data_dir, manifest)
-        build_hero_files(data_dir, resolver)
+        regenerate_all(data_dir)
 
     return result
+
+
+def regenerate_all(data_dir: pathlib.Path) -> None:
+    """Full offline regeneration: reclassify -> re-enrich -> pair -> map -> heroes.
+
+    Pure pass over data/ (no network). Used by the pipeline after any patch write
+    and by tools/rebuild.py for the whole archive.
+    """
+    from .ability_map import build_ability_map, write_ability_map
+    from .normalize import reclassify_patch_dict, split_merged_perk_general
+    from .pairing import build_patches_index, pair_patches, patch_meta_from_manifest, write_pair_result
+
+    resolver = NameResolver(data_dir / "names.json")
+    for site_dir in ("en", "cn"):
+        for patch_file in (data_dir / "patches" / site_dir).glob("*.json"):
+            data = json.loads(patch_file.read_text(encoding="utf-8"))
+            reclassify_patch_dict(data)
+            split_merged_perk_general(data)
+            _reenrich_dict(data, resolver)
+            patch_file.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
+
+    en, cn = patch_meta_from_manifest(data_dir)
+    pair_result = pair_patches(en, cn)
+    write_pair_result(data_dir, pair_result)
+    build_patches_index(data_dir, pair_result)
+
+    ability_map = build_ability_map(data_dir, pair_result.pairs, resolver)
+    write_ability_map(data_dir, ability_map)
+
+    build_hero_files(data_dir, NameResolver(data_dir / "names.json"))
+
+
+def _reenrich_dict(data: dict, resolver: NameResolver) -> None:
+    for section in data.get("sections", []):
+        for hero in section.get("heroes", []):
+            if hero.get("name_en"):
+                slug, en, cn, role = resolver.hero(hero["name_en"], "en")
+            elif hero.get("name_cn"):
+                slug, en, cn, role = resolver.hero(hero["name_cn"], "cn")
+            else:
+                continue
+            hero["slug"] = slug
+            hero["name_en"] = en or hero.get("name_en")
+            hero["name_cn"] = cn or hero.get("name_cn")
+            if not hero.get("role"):
+                hero["role"] = role
+            for ability in hero.get("abilities", []):
+                if ability.get("name_en"):
+                    aslug, aen, acn = resolver.ability(ability["name_en"], "en", slug)
+                elif ability.get("name_cn"):
+                    aslug, aen, acn = resolver.ability(ability["name_cn"], "cn", slug)
+                else:
+                    continue
+                ability["slug"] = aslug
+                ability["name_en"] = aen or ability.get("name_en")
+                ability["name_cn"] = acn or ability.get("name_cn")
 
 
 def enrich_names(patch: Patch, resolver: NameResolver) -> None:
@@ -195,21 +251,30 @@ def build_hero_files(data_dir: pathlib.Path, resolver: NameResolver | None = Non
                         "role": hero.get("role") or _canonical_role(hero, resolver),
                     })
                     for ability in hero.get("abilities", []):
+                        if not (ability.get("name_en") or ability.get("name_cn")):
+                            continue  # nameless artifact entries
+                        a_name = ability.get("name_en") or ability.get("name_cn") or ""
+                        a_site = "en" if ability.get("name_en") else "cn"
+                        a_slug = ability.get("slug") or resolver.ability(a_name, a_site, slug)[0]
                         for change in ability.get("changes", []):
                             timeline.setdefault(slug, []).append({
                                 "patch": data["id"], "date": data["date"], "site": data["site"],
                                 "url": data.get("url"), "patch_title": data.get("title"),
                                 "kind": "ability",
-                                "ability_slug": ability.get("slug"),
+                                "ability_slug": a_slug,
                                 "ability_en": ability.get("name_en"),
                                 "ability_cn": ability.get("name_cn"),
                                 **{k: change.get(k) for k in ("text_en", "text_cn", "before", "after", "metric")},
                             })
                     for perk in hero.get("perks", []):
+                        p_name = perk.get("name_en") or perk.get("name_cn") or ""
+                        p_site = "en" if perk.get("name_en") else "cn"
+                        p_slug = resolver.perk(p_name, p_site, slug)[0] if p_name else "perk"
                         timeline.setdefault(slug, []).append({
                             "patch": data["id"], "date": data["date"], "site": data["site"],
                             "url": data.get("url"), "patch_title": data.get("title"),
                             "kind": "perk",
+                            "perk_slug": p_slug,
                             "perk_en": perk.get("name_en"),
                             "perk_cn": perk.get("name_cn"),
                             "status": perk.get("status"),

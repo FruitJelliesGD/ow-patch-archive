@@ -79,7 +79,8 @@ def _normalize_cn(text: str) -> str:
 
 
 class NameResolver:
-    def __init__(self, path: pathlib.Path | None = None):
+    def __init__(self, path: pathlib.Path | None = None,
+                 ability_map_path: pathlib.Path | None = None):
         if path is None or not path.exists():
             path = _default_names_path()
         with open(path, encoding="utf-8") as fh:
@@ -93,6 +94,14 @@ class NameResolver:
         self.unknown_heroes: list[tuple[str, str]] = []  # (name, site)
         self.unknown_abilities: list[tuple[str, str]] = []
 
+        # data-derived EN<->CN maps (see ability_map.py); optional, non-fatal if absent
+        if ability_map_path is None:
+            ability_map_path = path.parent / "ability_map.json"
+        self.ability_map: dict = {}
+        if ability_map_path.exists():
+            with open(ability_map_path, encoding="utf-8") as fh:
+                self.ability_map = json.load(fh)
+
     def hero(self, name: str, site: str) -> tuple[str, str | None, str | None, str | None]:
         """Resolve a hero display name -> (slug, name_en, name_cn, role)."""
         entry = self._lookup(self.heroes, self._hero_key, self._hero_cn_to_en,
@@ -104,16 +113,53 @@ class NameResolver:
             return slugify(name), None, name, None
         return entry["slug"], entry.get("name_en"), entry.get("name_cn"), entry.get("role")
 
-    def ability(self, name: str, site: str) -> tuple[str, str | None, str | None]:
-        """Resolve an ability display name -> (slug, name_en, name_cn)."""
+    def ability(self, name: str, site: str,
+                hero_slug: str | None = None) -> tuple[str, str | None, str | None]:
+        """Resolve an ability display name -> (slug, name_en, name_cn).
+
+        Priority: curated names.json -> data-derived ability_map -> auto slug.
+        """
         entry = self._lookup(self.abilities, self._ability_key, self._ability_cn_to_en,
                              ABILITY_ALIASES, name, site)
-        if entry is None:
+        if entry is not None:
+            return entry["slug"], entry.get("name_en"), entry.get("name_cn")
+        return self._map_lookup("abilities", "by_cn", "by_en", name, site, hero_slug)
+
+    def perk(self, name: str, site: str,
+             hero_slug: str | None = None) -> tuple[str, str | None, str | None]:
+        """Resolve a perk display name (威能) -> (slug, name_en, name_cn)."""
+        entry = self._lookup(self.abilities, self._ability_key, self._ability_cn_to_en,
+                             ABILITY_ALIASES, name, site)
+        if entry is not None:
+            return entry["slug"], entry.get("name_en"), entry.get("name_cn")
+        return self._map_lookup("perks", "perks_by_cn", "perks_by_en", name, site, hero_slug)
+
+    def _map_lookup(self, entries_key: str, by_cn_key: str, by_en_key: str,
+                    name: str, site: str, hero_slug: str | None):
+        """Consult the data-derived map; falls back to auto slug for unknown names."""
+        stripped = name.strip().strip('"“”')
+        if site == "en":
+            slug = self.ability_map.get(by_en_key, {}).get(stripped)
+        else:
+            slugs = self.ability_map.get(by_cn_key, {}).get(stripped, [])
+            slug = self._pick_slug(slugs, entries_key, hero_slug)
+        if not slug:
             self.unknown_abilities.append((name, site))
             if site == "en":
                 return slugify(name), name, None
             return slugify(name), None, name
-        return entry["slug"], entry.get("name_en"), entry.get("name_cn")
+        entry = self.ability_map.get(entries_key, {}).get(slug, {})
+        return slug, entry.get("name_en"), entry.get("name_cn")
+
+    def _pick_slug(self, slugs: list[str], entries_key: str, hero_slug: str | None) -> str | None:
+        if not slugs:
+            return None
+        if hero_slug:
+            entries = self.ability_map.get(entries_key, {})
+            for slug in slugs:
+                if hero_slug in entries.get(slug, {}).get("heroes", []):
+                    return slug
+        return slugs[0]
 
     def _lookup(self, table: dict, key_index: dict, cn_to_en: dict, aliases: dict,
                 name: str, site: str) -> dict | None:

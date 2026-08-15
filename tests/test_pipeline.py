@@ -120,3 +120,28 @@ def test_unknown_names_recorded_not_fatal(tmp_path):
     assert any(name == "D.Unknown" for name, _ in result.unknown_heroes)
     # hero still archived under an auto slug
     assert (data_dir / "heroes" / "d-unknown.json").exists()
+
+
+REAL_DATA = pathlib.Path(__file__).resolve().parent.parent / "data"
+
+
+def test_soldier76_timeline_acceptance():
+    """Real-data check: no hash slugs, cross-site ability merge, perk reclassification."""
+    hero = json.loads((REAL_DATA / "heroes" / "soldier-76.json").read_text(encoding="utf-8"))
+    for entry in hero["timeline"]:
+        slug = entry.get("ability_slug") or entry.get("perk_slug") or ""
+        assert not slug.startswith("hero-"), slug
+
+    hpr = [e for e in hero["timeline"] if e.get("ability_slug") == "heavy-pulse-rifle"]
+    cn_spellings = {e["ability_cn"] for e in hpr if e.get("ability_cn")}
+    assert cn_spellings == {"重脉冲步枪"}  # variant 重型脉冲步枪 canonicalized to curated name
+
+    stim = [e for e in hero["timeline"]
+            if e.get("ability_slug") == "stim-pack" or e.get("perk_slug") == "stim-pack"]
+    assert any(e.get("ability_cn") == "强化药剂" or e.get("perk_cn") == "强化药剂" for e in stim)
+
+    agility = [e for e in hero["timeline"] if e.get("perk_slug") == "agility-training"]
+    assert agility, "Agility Training should be grouped as a perk"
+
+    helix = [e for e in hero["timeline"] if e.get("ability_slug") == "helix-rockets"]
+    assert {e["date"] for e in helix} >= {"2023-07-11", "2023-08-10"}
