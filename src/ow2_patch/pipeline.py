@@ -163,9 +163,9 @@ NON_HERO_NAMES = {"Items", "New Gadgets Added", "General Item Updates", "General
 
 
 def _is_balance_hero(hero: dict) -> bool:
-    """Stadium cosmetic blocks (e.g. 'Ramattra Mask') are not hero balance changes."""
+    """Stadium cosmetic blocks (e.g. 'Ramattra Mask' / '“士兵：76”面具') are not balance changes."""
     name = hero.get("name_en") or hero.get("name_cn") or ""
-    if name.endswith(" Mask") or name in NON_HERO_NAMES:
+    if name.endswith(" Mask") or name.endswith("面具") or name in NON_HERO_NAMES:
         return False
     return True
 

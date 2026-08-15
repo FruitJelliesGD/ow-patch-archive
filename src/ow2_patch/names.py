@@ -44,6 +44,12 @@ def _strip_parenthetical(name: str) -> str:
     return re.sub(r"\s*\([^)]*\)\s*$", "", name).strip()
 
 
+def _normalize_cn(text: str) -> str:
+    """CN names vary in punctuation ('士兵：76' vs '士兵76'); strip full-width noise."""
+    text = text.strip().strip('"“”')
+    return re.sub(r"[：:\s·、（）()「」『』'\"‘’“”]", "", text)
+
+
 class NameResolver:
     def __init__(self, path: pathlib.Path = DEFAULT_NAMES_PATH):
         with open(path, encoding="utf-8") as fh:
@@ -51,9 +57,9 @@ class NameResolver:
         self.heroes: dict[str, dict] = table["heroes"]
         self.abilities: dict[str, dict] = table["abilities"]
         self._hero_key = {_normalize_key(k): k for k in self.heroes}
-        self._hero_cn_to_en = {v["cn"]: k for k, v in self.heroes.items()}
+        self._hero_cn_to_en = {_normalize_cn(v["cn"]): k for k, v in self.heroes.items()}
         self._ability_key = {_normalize_key(k): k for k in self.abilities}
-        self._ability_cn_to_en = {v["cn"]: k for k, v in self.abilities.items()}
+        self._ability_cn_to_en = {_normalize_cn(v["cn"]): k for k, v in self.abilities.items()}
         self.unknown_heroes: list[tuple[str, str]] = []  # (name, site)
         self.unknown_abilities: list[tuple[str, str]] = []
 
@@ -91,7 +97,7 @@ class NameResolver:
             entry = table[real_key]
             return {"name_en": canonical, "name_cn": entry["cn"], "slug": entry["slug"],
                     "role": entry.get("role")}
-        en = cn_to_en.get(stripped)
+        en = cn_to_en.get(_normalize_cn(stripped))
         if en is None:
             return None
         entry = table[en]
