@@ -1,0 +1,2979 @@
+{
+ "slug": "sigma",
+ "names": {
+  "en": "Sigma",
+  "cn": "西格玛"
+ },
+ "role": "tank",
+ "timeline": [
+  {
+   "patch": "cn-2026-07-15-1",
+   "date": "2026-07-15",
+   "site": "cn",
+   "kind": "perk",
+   "perk_en": null,
+   "perk_cn": "超能恢复",
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": [
+    "伤害转化率从40%降低至30%。"
+   ]
+  },
+  {
+   "patch": "cn-2026-07-15-1",
+   "date": "2026-07-15",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "护盾生命值从275减少至250。"
+  },
+  {
+   "patch": "en-2026-07-14-1",
+   "date": "2026-07-14",
+   "site": "en",
+   "kind": "perk",
+   "perk_en": "Hyper Regeneration",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [
+    "Damage conversion reduced from 40% to 30%."
+   ],
+   "lines_cn": []
+  },
+  {
+   "patch": "en-2026-07-14-1",
+   "date": "2026-07-14",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Shield health reduced from 275 to 250.",
+   "text_cn": null
+  },
+  {
+   "patch": "cn-2026-07-01-1",
+   "date": "2026-07-01",
+   "site": "cn",
+   "kind": "ability",
+   "ability_slug": "",
+   "ability_en": null,
+   "ability_cn": "动能俘获",
+   "text_en": null,
+   "text_cn": "现在激活时可以自由飞行。",
+   "before": null,
+   "after": null,
+   "metric": null
+  },
+  {
+   "patch": "cn-2026-07-01-1",
+   "date": "2026-07-01",
+   "site": "cn",
+   "kind": "ability",
+   "ability_slug": "",
+   "ability_en": null,
+   "ability_cn": "质量吸附",
+   "text_en": null,
+   "text_cn": "击倒持续时间会随着距离增加而延长。",
+   "before": null,
+   "after": null,
+   "metric": null
+  },
+  {
+   "patch": "cn-2026-07-01-1",
+   "date": "2026-07-01",
+   "site": "cn",
+   "kind": "ability",
+   "ability_slug": "",
+   "ability_en": null,
+   "ability_cn": "引力乱流",
+   "text_en": null,
+   "text_cn": "不再使敌人浮空。",
+   "before": null,
+   "after": null,
+   "metric": null
+  },
+  {
+   "patch": "cn-2026-07-01-1",
+   "date": "2026-07-01",
+   "site": "cn",
+   "kind": "ability",
+   "ability_slug": "",
+   "ability_en": null,
+   "ability_cn": "引力乱流",
+   "text_en": null,
+   "text_cn": "现在会将敌人按在地面，禁止所有移动和位移技能，持续3秒。",
+   "before": null,
+   "after": null,
+   "metric": null
+  },
+  {
+   "patch": "cn-2026-07-01-1",
+   "date": "2026-07-01",
+   "site": "cn",
+   "kind": "ability",
+   "ability_slug": "",
+   "ability_en": null,
+   "ability_cn": "引力乱流",
+   "text_en": null,
+   "text_cn": "现在会造成每秒25点伤害。",
+   "before": null,
+   "after": null,
+   "metric": null
+  },
+  {
+   "patch": "cn-2026-07-01-1",
+   "date": "2026-07-01",
+   "site": "cn",
+   "kind": "ability",
+   "ability_slug": "",
+   "ability_en": null,
+   "ability_cn": "引力乱流",
+   "text_en": null,
+   "text_cn": "猛砸伤害从最大总生命值的50%改为75点。",
+   "before": null,
+   "after": null,
+   "metric": null
+  },
+  {
+   "patch": "cn-2026-07-01-1",
+   "date": "2026-07-01",
+   "site": "cn",
+   "kind": "ability",
+   "ability_slug": "",
+   "ability_en": null,
+   "ability_cn": "引力乱流",
+   "text_en": null,
+   "text_cn": "现在会使自由飞行时间延长4秒。",
+   "before": null,
+   "after": null,
+   "metric": null
+  },
+  {
+   "patch": "en-2026-06-30-1",
+   "date": "2026-06-30",
+   "site": "en",
+   "kind": "ability",
+   "ability_slug": "kinetic-grasp",
+   "ability_en": "Kinetic Grasp",
+   "ability_cn": null,
+   "text_en": "Now grants free flight while active.",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "metric": null
+  },
+  {
+   "patch": "en-2026-06-30-1",
+   "date": "2026-06-30",
+   "site": "en",
+   "kind": "ability",
+   "ability_slug": "accretion",
+   "ability_en": "Accretion",
+   "ability_cn": null,
+   "text_en": "Knockdown duration increases with distance.",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "metric": null
+  },
+  {
+   "patch": "en-2026-06-30-1",
+   "date": "2026-06-30",
+   "site": "en",
+   "kind": "ability",
+   "ability_slug": "gravitic-flux",
+   "ability_en": "Gravitic Flux",
+   "ability_cn": null,
+   "text_en": "No longer lifts enemies.",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "metric": null
+  },
+  {
+   "patch": "en-2026-06-30-1",
+   "date": "2026-06-30",
+   "site": "en",
+   "kind": "ability",
+   "ability_slug": "gravitic-flux",
+   "ability_en": "Gravitic Flux",
+   "ability_cn": null,
+   "text_en": "Now pins enemies to the ground, preventing movement and mobility abilities for 3 seconds.",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "metric": null
+  },
+  {
+   "patch": "en-2026-06-30-1",
+   "date": "2026-06-30",
+   "site": "en",
+   "kind": "ability",
+   "ability_slug": "gravitic-flux",
+   "ability_en": "Gravitic Flux",
+   "ability_cn": null,
+   "text_en": "Now deals 25 damage per second.",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "metric": null
+  },
+  {
+   "patch": "en-2026-06-30-1",
+   "date": "2026-06-30",
+   "site": "en",
+   "kind": "ability",
+   "ability_slug": "gravitic-flux",
+   "ability_en": "Gravitic Flux",
+   "ability_cn": null,
+   "text_en": "Slam damage changed from 50% of maximum health to 75.",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "metric": null
+  },
+  {
+   "patch": "en-2026-06-30-1",
+   "date": "2026-06-30",
+   "site": "en",
+   "kind": "ability",
+   "ability_slug": "gravitic-flux",
+   "ability_en": "Gravitic Flux",
+   "ability_cn": null,
+   "text_en": "Now grants an additional 4s of free flight.",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "metric": null
+  },
+  {
+   "patch": "cn-2026-06-17-1",
+   "date": "2026-06-17",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "极点连珠——异能"
+  },
+  {
+   "patch": "cn-2026-06-17-1",
+   "date": "2026-06-17",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "伤害提高量从50%提高至75%。"
+  },
+  {
+   "patch": "cn-2026-06-17-1",
+   "date": "2026-06-17",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "质量投射器——异能"
+  },
+  {
+   "patch": "cn-2026-06-17-1",
+   "date": "2026-06-17",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "质量吸附伤害从20%额外伤害提高至25%。"
+  },
+  {
+   "patch": "cn-2026-06-17-1",
+   "date": "2026-06-17",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "实验屏障生命值恢复量从100点提高至150点。"
+  },
+  {
+   "patch": "cn-2026-06-17-1",
+   "date": "2026-06-17",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "完全失重——异能"
+  },
+  {
+   "patch": "cn-2026-06-17-1",
+   "date": "2026-06-17",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "移除效果：10%受伤减免。"
+  },
+  {
+   "patch": "cn-2026-06-17-1",
+   "date": "2026-06-17",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "持续时间从1.5秒延长至2.5秒。"
+  },
+  {
+   "patch": "cn-2026-06-17-1",
+   "date": "2026-06-17",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "现在使用装置也可触发飞行。"
+  },
+  {
+   "patch": "cn-2026-06-17-1",
+   "date": "2026-06-17",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "束缚本源——史诗技能英雄物品"
+  },
+  {
+   "patch": "cn-2026-06-17-1",
+   "date": "2026-06-17",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "添加效果：[质量吸附]未命中时，冷却时间缩短4秒。"
+  },
+  {
+   "patch": "en-2026-06-16-1",
+   "date": "2026-06-16",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Apogee Alignment - Power",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2026-06-16-1",
+   "date": "2026-06-16",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Damage increased to 75% (Up from 50%).",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2026-06-16-1",
+   "date": "2026-06-16",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Mass Driver - Power",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2026-06-16-1",
+   "date": "2026-06-16",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Accretion damage increased to 25% bonus damage (Up from 20%).",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2026-06-16-1",
+   "date": "2026-06-16",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Experimental Barrier Health Restore increased to 150 (Up from 100).",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2026-06-16-1",
+   "date": "2026-06-16",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Zero Gravity - Power",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2026-06-16-1",
+   "date": "2026-06-16",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Removed 10% damage reduction.",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2026-06-16-1",
+   "date": "2026-06-16",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Duration increased to 2.5s (Up from 1.5s).",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2026-06-16-1",
+   "date": "2026-06-16",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Flight now also triggers on Gadget use.",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2026-06-16-1",
+   "date": "2026-06-16",
+   "site": "en",
+   "kind": "general",
+   "text_en": "The Harness - Epic Hero Ability Item",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2026-06-16-1",
+   "date": "2026-06-16",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Added \"If [Accretion] misses, [Accretion]'s cooldown is reduced by 4s.\"",
+   "text_cn": null
+  },
+  {
+   "patch": "cn-2026-04-15-1",
+   "date": "2026-04-15",
+   "site": "cn",
+   "kind": "ability",
+   "ability_slug": "",
+   "ability_en": null,
+   "ability_cn": "超能恢复——次级威能",
+   "text_en": null,
+   "text_cn": "现在只在对敌方英雄造成伤害时恢复屏障生命值。",
+   "before": null,
+   "after": null,
+   "metric": null
+  },
+  {
+   "patch": "cn-2026-04-15-1",
+   "date": "2026-04-15",
+   "site": "cn",
+   "kind": "ability",
+   "ability_slug": "",
+   "ability_en": null,
+   "ability_cn": "实验屏障",
+   "text_en": null,
+   "text_cn": "（6v6）最大生命值从650降低至600。",
+   "before": 650.0,
+   "after": 600.0,
+   "metric": "最大生命值"
+  },
+  {
+   "patch": "cn-2026-04-15-1",
+   "date": "2026-04-15",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "交响朔望——异能"
+  },
+  {
+   "patch": "cn-2026-04-15-1",
+   "date": "2026-04-15",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "攻击速度提升的吸收伤害量阈值从100降低至50。"
+  },
+  {
+   "patch": "en-2026-04-14-1",
+   "date": "2026-04-14",
+   "site": "en",
+   "kind": "ability",
+   "ability_slug": "hyper-regeneration-minor-perk",
+   "ability_en": "Hyper Regeneration – Minor Perk",
+   "ability_cn": null,
+   "text_en": "Now restores barrier health only when damaging enemy heroes.",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "metric": null
+  },
+  {
+   "patch": "en-2026-04-14-1",
+   "date": "2026-04-14",
+   "site": "en",
+   "kind": "ability",
+   "ability_slug": "experimental-barrier",
+   "ability_en": "Experimental Barrier",
+   "ability_cn": null,
+   "text_en": "(6v6) Maximum health reduced from 650 to 600.",
+   "text_cn": null,
+   "before": 650.0,
+   "after": 600.0,
+   "metric": "maximum health"
+  },
+  {
+   "patch": "en-2026-04-14-1",
+   "date": "2026-04-14",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Symphonic Syzygy - Power",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2026-04-14-1",
+   "date": "2026-04-14",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Damage Absorbed threshold for Attack Speed reduced to 50 (Down from 100).",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2026-04-01-1",
+   "date": "2026-04-01",
+   "site": "en",
+   "kind": "ability",
+   "ability_slug": "accretion",
+   "ability_en": "Accretion",
+   "ability_cn": null,
+   "text_en": "Now fires a shotgun volley of small rocks.",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "metric": null
+  },
+  {
+   "patch": "en-2026-04-01-1",
+   "date": "2026-04-01",
+   "site": "en",
+   "kind": "ability",
+   "ability_slug": "accretion",
+   "ability_en": "Accretion",
+   "ability_cn": null,
+   "text_en": "Has 2 charges.",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "metric": null
+  },
+  {
+   "patch": "cn-2026-04-01-1",
+   "date": "2026-04-01",
+   "site": "cn",
+   "kind": "ability",
+   "ability_slug": "",
+   "ability_en": null,
+   "ability_cn": "质量吸附",
+   "text_en": null,
+   "text_cn": "改为发射一簇小石头散弹射击。",
+   "before": null,
+   "after": null,
+   "metric": null
+  },
+  {
+   "patch": "cn-2026-04-01-1",
+   "date": "2026-04-01",
+   "site": "cn",
+   "kind": "ability",
+   "ability_slug": "",
+   "ability_en": null,
+   "ability_cn": "质量吸附",
+   "text_en": null,
+   "text_cn": "具有2次充能。",
+   "before": null,
+   "after": null,
+   "metric": null
+  },
+  {
+   "patch": "en-2026-02-09-1",
+   "date": "2026-02-09",
+   "site": "en",
+   "kind": "perk",
+   "perk_en": "Hyper Regeneration",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [
+    "Barrier health conversion rate reduced from 50% to 40%."
+   ],
+   "lines_cn": []
+  },
+  {
+   "patch": "en-2026-02-09-1",
+   "date": "2026-02-09",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Experimental Barrier",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2026-02-09-1",
+   "date": "2026-02-09",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Barrier health reduced from 700 to 650.",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2026-02-09-1",
+   "date": "2026-02-09",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Mass Driver - Power",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2026-02-09-1",
+   "date": "2026-02-09",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Added: [Experimental Barrier] heals 100 (AP) health when [Accretion] projectile passes through.",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2026-02-09-1",
+   "date": "2026-02-09",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Event Horizon - Power",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2026-02-09-1",
+   "date": "2026-02-09",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Added: [Kinetic Grasp] also gives overhealth to allies in line of sight.",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2026-02-09-1",
+   "date": "2026-02-09",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Singularity - Power",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2026-02-09-1",
+   "date": "2026-02-09",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Added: [Accretion]'s cooldown is reduced by 25% on direct hit.",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2026-02-09-1",
+   "date": "2026-02-09",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Apogee Alignment - Power",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2026-02-09-1",
+   "date": "2026-02-09",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Hypersphere damage decreased from 100% to 50%.",
+   "text_cn": null
+  },
+  {
+   "patch": "cn-2025-12-19-1",
+   "date": "2025-12-19",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "完全失重——异能 持续时间从4秒减少至1.5秒。"
+  },
+  {
+   "patch": "cn-2025-12-19-1",
+   "date": "2025-12-19",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "持续时间从4秒减少至1.5秒。"
+  },
+  {
+   "patch": "cn-2025-12-19-1",
+   "date": "2025-12-19",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "反物质——史诗武器英雄物品 费用从10,000提高至12,000。 持续时间从4秒减少至1.5秒。"
+  },
+  {
+   "patch": "cn-2025-12-19-1",
+   "date": "2025-12-19",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "费用从10,000提高至12,000。"
+  },
+  {
+   "patch": "cn-2025-12-19-1",
+   "date": "2025-12-19",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "持续时间从4秒减少至1.5秒。"
+  },
+  {
+   "patch": "cn-2025-12-19-1",
+   "date": "2025-12-19",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "速度矢量——稀有武器英雄物品 费用从4,500提高至6,000。"
+  },
+  {
+   "patch": "cn-2025-12-19-1",
+   "date": "2025-12-19",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "费用从4,500提高至6,000。"
+  },
+  {
+   "patch": "cn-2025-12-19-1",
+   "date": "2025-12-19",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "束缚本源——史诗技能英雄物品 费用从11,000降低至10,000。"
+  },
+  {
+   "patch": "cn-2025-12-19-1",
+   "date": "2025-12-19",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "费用从11,000降低至10,000。"
+  },
+  {
+   "patch": "en-2025-12-18-1",
+   "date": "2025-12-18",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Zero Gravity - Power Decreased duration to 1.5s (Down from 4s).",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-12-18-1",
+   "date": "2025-12-18",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Decreased duration to 1.5s (Down from 4s).",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-12-18-1",
+   "date": "2025-12-18",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Antimatter - Epic Weapon Hero Item Increased cost to 12000 (Up from 10000). Decreased weapon power to 10% (Down from 15%).",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-12-18-1",
+   "date": "2025-12-18",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Increased cost to 12000 (Up from 10000).",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-12-18-1",
+   "date": "2025-12-18",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Decreased weapon power to 10% (Down from 15%).",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-12-18-1",
+   "date": "2025-12-18",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Velocity Vector - Rare Weapon Hero Item Increased cost to 6000 (Up from 4500).",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-12-18-1",
+   "date": "2025-12-18",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Increased cost to 6000 (Up from 4500).",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-12-18-1",
+   "date": "2025-12-18",
+   "site": "en",
+   "kind": "general",
+   "text_en": "The Harness - Epic Ability Hero Item Decreased cost to 10000 (Down from 11000).",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-12-18-1",
+   "date": "2025-12-18",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Decreased cost to 10000 (Down from 11000).",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-12-12-1",
+   "date": "2025-12-12",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Hyperspheres",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-12-12-1",
+   "date": "2025-12-12",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Impact direct damage reduced from 25 to 20.",
+   "text_cn": null
+  },
+  {
+   "patch": "cn-2025-12-10-1",
+   "date": "2025-12-10",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "超能之球"
+  },
+  {
+   "patch": "cn-2025-12-10-1",
+   "date": "2025-12-10",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "直接命中伤害从15提高至25。"
+  },
+  {
+   "patch": "en-2025-12-09-1",
+   "date": "2025-12-09",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Hyperspheres",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-12-09-1",
+   "date": "2025-12-09",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Impact direct damage increased from 15 to 25.",
+   "text_cn": null
+  },
+  {
+   "patch": "cn-2025-10-24-1",
+   "date": "2025-10-24",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "三球一体 第三颗“超能之球”的伤害从75%降低至50%。"
+  },
+  {
+   "patch": "cn-2025-10-24-1",
+   "date": "2025-10-24",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "第三颗“超能之球”的伤害从75%降低至50%。"
+  },
+  {
+   "patch": "cn-2025-10-24-1",
+   "date": "2025-10-24",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "完全失重 伤害减免从15%降低至10%。"
+  },
+  {
+   "patch": "cn-2025-10-24-1",
+   "date": "2025-10-24",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "伤害减免从15%降低至10%。"
+  },
+  {
+   "patch": "en-2025-10-22-1",
+   "date": "2025-10-22",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Trinisphere Decreased damage to 50% (Down from 75%).",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-10-22-1",
+   "date": "2025-10-22",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Decreased damage to 50% (Down from 75%).",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-10-22-1",
+   "date": "2025-10-22",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Zero Gravity Decreased damage reduction to 10% (Down from 15%).",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-10-22-1",
+   "date": "2025-10-22",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Decreased damage reduction to 10% (Down from 15%).",
+   "text_cn": null
+  },
+  {
+   "patch": "cn-2025-10-15-1",
+   "date": "2025-10-15",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "完全失重——异能"
+  },
+  {
+   "patch": "cn-2025-10-15-1",
+   "date": "2025-10-15",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "飞行持续时间从2.5秒延长至4秒。"
+  },
+  {
+   "patch": "cn-2025-10-15-1",
+   "date": "2025-10-15",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "受伤减免从10%提高至15%。"
+  },
+  {
+   "patch": "cn-2025-10-15-1",
+   "date": "2025-10-15",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "极点连珠——异能"
+  },
+  {
+   "patch": "cn-2025-10-15-1",
+   "date": "2025-10-15",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "移除了“超能之球”的受伤减免效果。"
+  },
+  {
+   "patch": "cn-2025-10-15-1",
+   "date": "2025-10-15",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "文本将在季中补丁中更新。"
+  },
+  {
+   "patch": "cn-2025-10-15-1",
+   "date": "2025-10-15",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "三球一体——异能"
+  },
+  {
+   "patch": "cn-2025-10-15-1",
+   "date": "2025-10-15",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "第三颗“超能之球”的伤害从50%提高至75%。"
+  },
+  {
+   "patch": "cn-2025-10-15-1",
+   "date": "2025-10-15",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "文本将在季中补丁中更新。"
+  },
+  {
+   "patch": "en-2025-10-14-1",
+   "date": "2025-10-14",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Zero Gravity - Power",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-10-14-1",
+   "date": "2025-10-14",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Flight duration increased to 4s (Up from 2.5s).",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-10-14-1",
+   "date": "2025-10-14",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Damage reduction increased to 15% (Up from 10%).",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-10-14-1",
+   "date": "2025-10-14",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Apogee Alignment - Power",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-10-14-1",
+   "date": "2025-10-14",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Removed Hypersphere damage reduction.",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-10-14-1",
+   "date": "2025-10-14",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Text will be updated in the Mid Season patch.",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-10-14-1",
+   "date": "2025-10-14",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Trinisphere - Power",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-10-14-1",
+   "date": "2025-10-14",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Third Hypersphere damage increased to 75% (Up from 50%).",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-10-14-1",
+   "date": "2025-10-14",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Text will be updated in the Mid-Season patch.",
+   "text_cn": null
+  },
+  {
+   "patch": "cn-2025-09-17-1",
+   "date": "2025-09-17",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "音乐大师——异能"
+  },
+  {
+   "patch": "cn-2025-09-17-1",
+   "date": "2025-09-17",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "新增：“引力乱流”在未能影响到敌人时返还50%终极技能充能。"
+  },
+  {
+   "patch": "cn-2025-09-17-1",
+   "date": "2025-09-17",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "不稳定的陨石——稀有技能英雄物品"
+  },
+  {
+   "patch": "cn-2025-09-17-1",
+   "date": "2025-09-17",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "额外技能强度重做：用“质量吸附”造成伤害时，获得5%技能强度，可叠加4次，回合结束时重置。"
+  },
+  {
+   "patch": "cn-2025-09-17-1",
+   "date": "2025-09-17",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "分束器——稀有生存英雄物品"
+  },
+  {
+   "patch": "cn-2025-09-17-1",
+   "date": "2025-09-17",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "现在激活期间也会降低近身攻击伤害。"
+  },
+  {
+   "patch": "cn-2025-09-17-1",
+   "date": "2025-09-17",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "受伤减免从50%提高至75%。"
+  },
+  {
+   "patch": "cn-2025-09-17-1",
+   "date": "2025-09-17",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "同步防护——稀有生存英雄物品"
+  },
+  {
+   "patch": "cn-2025-09-17-1",
+   "date": "2025-09-17",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "位于“实验屏障”后方时，提高的武器强度与攻击速度从5%提高至10%。"
+  },
+  {
+   "patch": "cn-2025-09-17-1",
+   "date": "2025-09-17",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "位于“实验屏障”前方时，提高的移动速度与生命汲取从5%提高至10%。"
+  },
+  {
+   "patch": "en-2025-09-16-1",
+   "date": "2025-09-16",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Maestro - Power",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-09-16-1",
+   "date": "2025-09-16",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Added: Gravitic Flux refunds 50% of Ultimate Charge if no enemies are affected.",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-09-16-1",
+   "date": "2025-09-16",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Volatile Gravel - Rare Ability Hero Item",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-09-16-1",
+   "date": "2025-09-16",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Bonus Ability Power reworked to now deal damage with Accretion and grants 5% Ability Power until the end of the round, stacking up to 4 times.",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-09-16-1",
+   "date": "2025-09-16",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Beam Splitter - Rare Survival Hero Item",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-09-16-1",
+   "date": "2025-09-16",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Now also reduces Melee damage while active.",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-09-16-1",
+   "date": "2025-09-16",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Damage reduction increased to 75% (up from 50%).",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-09-16-1",
+   "date": "2025-09-16",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Synced Shielding - Rare Survival Hero Item",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-09-16-1",
+   "date": "2025-09-16",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Weapon Power and Attack Speed granted while behind Experimental Barrier increased to 10% (up from 5%).",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-09-16-1",
+   "date": "2025-09-16",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Move Speed and Lifesteal granted while in front of Experimental Barrier increased to 10% (up from 5%).",
+   "text_cn": null
+  },
+  {
+   "patch": "cn-2025-08-27-1",
+   "date": "2025-08-27",
+   "site": "cn",
+   "kind": "perk",
+   "perk_en": null,
+   "perk_cn": "巨石冲撞",
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": [
+    "已移除。"
+   ]
+  },
+  {
+   "patch": "cn-2025-08-27-1",
+   "date": "2025-08-27",
+   "site": "cn",
+   "kind": "perk",
+   "perk_en": null,
+   "perk_cn": "超能恢复",
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": [
+    "新次级威能。",
+    "“超能之球”会为“实验屏障”恢复生命值，数值为“超能之球”伤害量的50%。"
+   ]
+  },
+  {
+   "patch": "cn-2025-08-27-1",
+   "date": "2025-08-27",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "完全失重——异能"
+  },
+  {
+   "patch": "cn-2025-08-27-1",
+   "date": "2025-08-27",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "添加效果：在飞行时，获得10%的受伤减免。"
+  },
+  {
+   "patch": "cn-2025-08-27-1",
+   "date": "2025-08-27",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "束缚本源——史诗技能英雄物品"
+  },
+  {
+   "patch": "cn-2025-08-27-1",
+   "date": "2025-08-27",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "添加效果：+15%技能生命汲取。"
+  },
+  {
+   "patch": "en-2025-08-26-1",
+   "date": "2025-08-26",
+   "site": "en",
+   "kind": "perk",
+   "perk_en": "Massive Impact",
+   "perk_cn": null,
+   "status": "removed",
+   "lines_en": [
+    "Removed."
+   ],
+   "lines_cn": []
+  },
+  {
+   "patch": "en-2025-08-26-1",
+   "date": "2025-08-26",
+   "site": "en",
+   "kind": "perk",
+   "perk_en": "Hyper Regeneration",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [
+    "New Minor Perk.",
+    "50% of Hyperspheres' damage restores Experimental Barrier's health."
+   ],
+   "lines_cn": []
+  },
+  {
+   "patch": "en-2025-08-26-1",
+   "date": "2025-08-26",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Zero Gravity - Power",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-08-26-1",
+   "date": "2025-08-26",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Added: While flying, gain 10% Damage Reduction.",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-08-26-1",
+   "date": "2025-08-26",
+   "site": "en",
+   "kind": "general",
+   "text_en": "The Harness – Epic Ability Hero Item",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-08-26-1",
+   "date": "2025-08-26",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Added: +15% Ability Lifesteal.",
+   "text_cn": null
+  },
+  {
+   "patch": "cn-2025-08-08-1",
+   "date": "2025-08-08",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "屏障生命值提升比例从100%提高至150%。屏障会根据你赚得的资金得到更多的生命值强化。"
+  },
+  {
+   "patch": "cn-2025-08-08-1",
+   "date": "2025-08-08",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "超能循环——异能"
+  },
+  {
+   "patch": "cn-2025-08-08-1",
+   "date": "2025-08-08",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "冷却时间缩减效果从0.5秒提高至0.8秒。"
+  },
+  {
+   "patch": "cn-2025-08-08-1",
+   "date": "2025-08-08",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "奇点——异能"
+  },
+  {
+   "patch": "cn-2025-08-08-1",
+   "date": "2025-08-08",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "溅射伤害加成从25%提高至75%。"
+  },
+  {
+   "patch": "en-2025-08-07-1",
+   "date": "2025-08-07",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Increased Barrier Health Scalar to 150% (Up from 100%). Barriers now get a bigger health boost from the money you earn.",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-08-07-1",
+   "date": "2025-08-07",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Hyperloop - Power",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-08-07-1",
+   "date": "2025-08-07",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Increased Cooldown Reduction to 0.8s (Up from 0.5s).",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-08-07-1",
+   "date": "2025-08-07",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Singularity - Power",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-08-07-1",
+   "date": "2025-08-07",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Increased Splash Damage to 75% (Up from 25%).",
+   "text_cn": null
+  },
+  {
+   "patch": "cn-2025-07-23-1",
+   "date": "2025-07-23",
+   "site": "cn",
+   "kind": "perk",
+   "perk_en": null,
+   "perk_cn": "巨石冲撞",
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": [
+    "达到最大击倒眩晕时间的距离从40米缩短至30米。"
+   ]
+  },
+  {
+   "patch": "cn-2025-07-23-1",
+   "date": "2025-07-23",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "实验屏障——辅助攻击模式技能"
+  },
+  {
+   "patch": "cn-2025-07-23-1",
+   "date": "2025-07-23",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "部署冷却时间从2秒缩短至1秒。"
+  },
+  {
+   "patch": "en-2025-07-22-1",
+   "date": "2025-07-22",
+   "site": "en",
+   "kind": "perk",
+   "perk_en": "Massive Impact",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [
+    "Knockdown stun now reaches maximum duration at 30 meters, down from 40 meters."
+   ],
+   "lines_cn": []
+  },
+  {
+   "patch": "en-2025-07-22-1",
+   "date": "2025-07-22",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Experimental Barrier - Secondary Ability",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-07-22-1",
+   "date": "2025-07-22",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Deployment cooldown reduced from 2 to 1 second.",
+   "text_cn": null
+  },
+  {
+   "patch": "cn-2025-06-25-1",
+   "date": "2025-06-25",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "已加入角斗领域英雄阵容"
+  },
+  {
+   "patch": "cn-2025-06-25-1",
+   "date": "2025-06-25",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "引力奇人——异能"
+  },
+  {
+   "patch": "cn-2025-06-25-1",
+   "date": "2025-06-25",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "使用技能时可以飞行，持续2.5秒。"
+  },
+  {
+   "patch": "cn-2025-06-25-1",
+   "date": "2025-06-25",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "超能循环——异能"
+  },
+  {
+   "patch": "cn-2025-06-25-1",
+   "date": "2025-06-25",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "“超能之球”直接命中会使“质量吸附”的冷却时间缩短0.5秒。"
+  },
+  {
+   "patch": "cn-2025-06-25-1",
+   "date": "2025-06-25",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "三球一体——异能"
+  },
+  {
+   "patch": "cn-2025-06-25-1",
+   "date": "2025-06-25",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "主要攻击模式会发射第三枚伤害降低50%的“超能之球”。"
+  },
+  {
+   "patch": "cn-2025-06-25-1",
+   "date": "2025-06-25",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "动能屏障——异能"
+  },
+  {
+   "patch": "cn-2025-06-25-1",
+   "date": "2025-06-25",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "“动能俘获”吸收的伤害还会为“实验屏障”恢复生命值。过量部分转化为屏障的过量生命值。"
+  },
+  {
+   "patch": "cn-2025-06-25-1",
+   "date": "2025-06-25",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "动能转化——异能"
+  },
+  {
+   "patch": "cn-2025-06-25-1",
+   "date": "2025-06-25",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "“动能俘获”结束时，每吸收100点伤害，攻击速度便提高10%，持续4秒，可叠加4次。"
+  },
+  {
+   "patch": "cn-2025-06-25-1",
+   "date": "2025-06-25",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "轨道屏障——异能"
+  },
+  {
+   "patch": "cn-2025-06-25-1",
+   "date": "2025-06-25",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "获得一面围绕自身旋转的迷你“实验屏障”。该屏障的生命值为“实验屏障”最大生命值的50%。"
+  },
+  {
+   "patch": "cn-2025-06-25-1",
+   "date": "2025-06-25",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "爱乐之韧——异能"
+  },
+  {
+   "patch": "cn-2025-06-25-1",
+   "date": "2025-06-25",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "“实验屏障”最大生命值提高25%。屏障部署后仍会持续恢复生命值，但恢复速度减慢50%。"
+  },
+  {
+   "patch": "cn-2025-06-25-1",
+   "date": "2025-06-25",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "质量投射器——异能"
+  },
+  {
+   "patch": "cn-2025-06-25-1",
+   "date": "2025-06-25",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "“质量吸附”的射弹穿过“实验屏障”时会使其弹道速度加快300%，伤害提高20%。"
+  },
+  {
+   "patch": "cn-2025-06-25-1",
+   "date": "2025-06-25",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "吸附内爆——异能"
+  },
+  {
+   "patch": "cn-2025-06-25-1",
+   "date": "2025-06-25",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "“质量吸附”的溅射伤害提高25%，且敌人会被拖拽到爆炸处。"
+  },
+  {
+   "patch": "cn-2025-06-25-1",
+   "date": "2025-06-25",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "致密引力——异能"
+  },
+  {
+   "patch": "cn-2025-06-25-1",
+   "date": "2025-06-25",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "终极技能消耗降低50%。"
+  },
+  {
+   "patch": "cn-2025-06-25-1",
+   "date": "2025-06-25",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "“引力乱流”的半径缩小50%。"
+  },
+  {
+   "patch": "cn-2025-06-25-1",
+   "date": "2025-06-25",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "轨道超能球——异能"
+  },
+  {
+   "patch": "cn-2025-06-25-1",
+   "date": "2025-06-25",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "每使用一次技能，便生成2颗围绕你旋转的“超能之球”。“超能之球”造成的伤害降低50%。"
+  },
+  {
+   "patch": "cn-2025-06-25-1",
+   "date": "2025-06-25",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "引力重拳——异能"
+  },
+  {
+   "patch": "cn-2025-06-25-1",
+   "date": "2025-06-25",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "“近身攻击”会使被命中的敌人漂浮在空中，持续1秒。（10秒冷却时间。）"
+  },
+  {
+   "patch": "cn-2025-06-25-1",
+   "date": "2025-06-25",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "引力加速——稀有武器英雄物品"
+  },
+  {
+   "patch": "cn-2025-06-25-1",
+   "date": "2025-06-25",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "+10%攻击速度。"
+  },
+  {
+   "patch": "cn-2025-06-25-1",
+   "date": "2025-06-25",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "+15%“超能之球”射程。"
+  },
+  {
+   "patch": "cn-2025-06-25-1",
+   "date": "2025-06-25",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "费用：4500"
+  },
+  {
+   "patch": "cn-2025-06-25-1",
+   "date": "2025-06-25",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "重压引力——稀有武器英雄物品"
+  },
+  {
+   "patch": "cn-2025-06-25-1",
+   "date": "2025-06-25",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "+10%武器强度。"
+  },
+  {
+   "patch": "cn-2025-06-25-1",
+   "date": "2025-06-25",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "+5%技能强度。"
+  },
+  {
+   "patch": "cn-2025-06-25-1",
+   "date": "2025-06-25",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "“引力乱流”使敌人悬浮的时间延长20%。被影响的敌人受到的“超能之球”伤害提高25%。"
+  },
+  {
+   "patch": "cn-2025-06-25-1",
+   "date": "2025-06-25",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "费用：5000"
+  },
+  {
+   "patch": "cn-2025-06-25-1",
+   "date": "2025-06-25",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "进退自如——稀有技能英雄物品"
+  },
+  {
+   "patch": "cn-2025-06-25-1",
+   "date": "2025-06-25",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "+25点护盾。"
+  },
+  {
+   "patch": "cn-2025-06-25-1",
+   "date": "2025-06-25",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "位于“实验屏障”后方时，武器强度和攻击速度提高5%。"
+  },
+  {
+   "patch": "cn-2025-06-25-1",
+   "date": "2025-06-25",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "位于“实验屏障”前方时，移动速度和生命汲取提高5%。"
+  },
+  {
+   "patch": "cn-2025-06-25-1",
+   "date": "2025-06-25",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "费用：4500"
+  },
+  {
+   "patch": "cn-2025-06-25-1",
+   "date": "2025-06-25",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "动能格挡——稀有生存英雄物品"
+  },
+  {
+   "patch": "cn-2025-06-25-1",
+   "date": "2025-06-25",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "+25点护盾。"
+  },
+  {
+   "patch": "cn-2025-06-25-1",
+   "date": "2025-06-25",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "+5%冷却时间缩减。"
+  },
+  {
+   "patch": "cn-2025-06-25-1",
+   "date": "2025-06-25",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "“动能俘获”使光束伤害降低50%。"
+  },
+  {
+   "patch": "cn-2025-06-25-1",
+   "date": "2025-06-25",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "费用：4000"
+  },
+  {
+   "patch": "cn-2025-06-25-1",
+   "date": "2025-06-25",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "引力轰击——史诗武器英雄物品"
+  },
+  {
+   "patch": "cn-2025-06-25-1",
+   "date": "2025-06-25",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "+15%武器强度。"
+  },
+  {
+   "patch": "cn-2025-06-25-1",
+   "date": "2025-06-25",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "+35%“超能之球”爆炸半径。"
+  },
+  {
+   "patch": "cn-2025-06-25-1",
+   "date": "2025-06-25",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "费用：10000"
+  },
+  {
+   "patch": "cn-2025-06-25-1",
+   "date": "2025-06-25",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "重质吸附——史诗技能英雄物品"
+  },
+  {
+   "patch": "cn-2025-06-25-1",
+   "date": "2025-06-25",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "+25%技能强度。"
+  },
+  {
+   "patch": "cn-2025-06-25-1",
+   "date": "2025-06-25",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "+50%“质量吸附”爆炸半径。"
+  },
+  {
+   "patch": "cn-2025-06-25-1",
+   "date": "2025-06-25",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "费用：11000"
+  },
+  {
+   "patch": "cn-2025-06-25-1",
+   "date": "2025-06-25",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "愈疗屏障——史诗生存英雄物品"
+  },
+  {
+   "patch": "cn-2025-06-25-1",
+   "date": "2025-06-25",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "+50点护盾。"
+  },
+  {
+   "patch": "cn-2025-06-25-1",
+   "date": "2025-06-25",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "“实验屏障”会治疗其周围的盟友，每秒治疗量为西格玛生命值的3%。"
+  },
+  {
+   "patch": "cn-2025-06-25-1",
+   "date": "2025-06-25",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "费用：11000"
+  },
+  {
+   "patch": "en-2025-06-24-1",
+   "date": "2025-06-24",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Added to the Stadium Hero Roster",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-06-24-1",
+   "date": "2025-06-24",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Zero Gravity - Power",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-06-24-1",
+   "date": "2025-06-24",
+   "site": "en",
+   "kind": "general",
+   "text_en": "When you use an ability, gain the ability to fly for 2.5s.",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-06-24-1",
+   "date": "2025-06-24",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Hyperloop - Power",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-06-24-1",
+   "date": "2025-06-24",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Hyperspheres direct hits reduce the cooldown of [Accretion] by 0.5s.",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-06-24-1",
+   "date": "2025-06-24",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Trinisphere - Power",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-06-24-1",
+   "date": "2025-06-24",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Your primary fire launches a third [Hypersphere] that deals 50% reduced damage.",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-06-24-1",
+   "date": "2025-06-24",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Event Horizon - Power",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-06-24-1",
+   "date": "2025-06-24",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Damage absorbed by Kinetic Grasp also restores Experimental Barrier's health. Excess is converted to Overhealth.",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-06-24-1",
+   "date": "2025-06-24",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Symphonic Syzygy - Power",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-06-24-1",
+   "date": "2025-06-24",
+   "site": "en",
+   "kind": "general",
+   "text_en": "When Kinetic Grasp ends, for every 100 damage absorbed gain 10% Attack Speed for 4s, stacking up to 4 times.",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-06-24-1",
+   "date": "2025-06-24",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Orbital Barrier - Power",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-06-24-1",
+   "date": "2025-06-24",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Get a mini Experimental Barrier that orbits around you. It has 50% reduced health.",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-06-24-1",
+   "date": "2025-06-24",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Philharmonic Fortitude - Power",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-06-24-1",
+   "date": "2025-06-24",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Experimental Barrier has 25% increased Max Health. Barrier health regenerates constantly but 50% slower while deployed.",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-06-24-1",
+   "date": "2025-06-24",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Mass Driver - Power",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-06-24-1",
+   "date": "2025-06-24",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Accretion projectiles that pass through [Experimental Barrier] gain 300% increased projectile speed and deal 20% increased damage.",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-06-24-1",
+   "date": "2025-06-24",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Singularity - Power",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-06-24-1",
+   "date": "2025-06-24",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Accretion splash damage is increased by 25% and enemies are pulled towards its explosion.",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-06-24-1",
+   "date": "2025-06-24",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Maestro - Power",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-06-24-1",
+   "date": "2025-06-24",
+   "site": "en",
+   "kind": "general",
+   "text_en": "50% Ultimate Cost Reduction",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-06-24-1",
+   "date": "2025-06-24",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Gravitic Flux radius is reduced by 50%.",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-06-24-1",
+   "date": "2025-06-24",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Apogee Alignment - Power",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-06-24-1",
+   "date": "2025-06-24",
+   "site": "en",
+   "kind": "general",
+   "text_en": "When you use an ability, create 2 Hyperspheres that orbit around you. Orbiting [Hyperspheres] deal 50% reduced damage.",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-06-24-1",
+   "date": "2025-06-24",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Astrophysical - Power",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-06-24-1",
+   "date": "2025-06-24",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Quick Melee causes enemies hit to levitate into the air for 1s. (10s CD)",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-06-24-1",
+   "date": "2025-06-24",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Velocity Vector - Rare Weapon Hero Item",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-06-24-1",
+   "date": "2025-06-24",
+   "site": "en",
+   "kind": "general",
+   "text_en": "+10% Attack Speed",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-06-24-1",
+   "date": "2025-06-24",
+   "site": "en",
+   "kind": "general",
+   "text_en": "+15% Hypersphere Range",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-06-24-1",
+   "date": "2025-06-24",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Cost: 4500",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-06-24-1",
+   "date": "2025-06-24",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Maglev Multiplier - Rare Weapon Hero Item",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-06-24-1",
+   "date": "2025-06-24",
+   "site": "en",
+   "kind": "general",
+   "text_en": "10% Weapon Power",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-06-24-1",
+   "date": "2025-06-24",
+   "site": "en",
+   "kind": "general",
+   "text_en": "+5% Ability Power",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-06-24-1",
+   "date": "2025-06-24",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Gravitic Flux levitates enemies for 20% longer. Enemies affected take 25% increased damage from Hyperspheres.",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-06-24-1",
+   "date": "2025-06-24",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Cost: 5000",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-06-24-1",
+   "date": "2025-06-24",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Synced Shielding - Rare Ability Hero Item",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-06-24-1",
+   "date": "2025-06-24",
+   "site": "en",
+   "kind": "general",
+   "text_en": "+25 Shields",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-06-24-1",
+   "date": "2025-06-24",
+   "site": "en",
+   "kind": "general",
+   "text_en": "While behind Experimental Barrier, gain +5% Weapon Power and Attack Speed.",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-06-24-1",
+   "date": "2025-06-24",
+   "site": "en",
+   "kind": "general",
+   "text_en": "While in front of Experimental Barrier, gain +5% Move Speed and Lifesteal.",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-06-24-1",
+   "date": "2025-06-24",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Cost: 4500",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-06-24-1",
+   "date": "2025-06-24",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Beam Splitter - Rare Survival Hero Item",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-06-24-1",
+   "date": "2025-06-24",
+   "site": "en",
+   "kind": "general",
+   "text_en": "+25 Shields",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-06-24-1",
+   "date": "2025-06-24",
+   "site": "en",
+   "kind": "general",
+   "text_en": "+5% Cooldown Reduction",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-06-24-1",
+   "date": "2025-06-24",
+   "site": "en",
+   "kind": "general",
+   "text_en": "While Kinetic Grasp is active, reduce incoming Beam damage by 50%.",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-06-24-1",
+   "date": "2025-06-24",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Cost: 4000",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-06-24-1",
+   "date": "2025-06-24",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Antimatter - Epic Weapon Hero Item",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-06-24-1",
+   "date": "2025-06-24",
+   "site": "en",
+   "kind": "general",
+   "text_en": "+15% Weapon Power",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-06-24-1",
+   "date": "2025-06-24",
+   "site": "en",
+   "kind": "general",
+   "text_en": "+35% Hyperspheres Explosion Radius",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-06-24-1",
+   "date": "2025-06-24",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Cost: 10000",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-06-24-1",
+   "date": "2025-06-24",
+   "site": "en",
+   "kind": "general",
+   "text_en": "The Harness - Epic Ability Hero Item",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-06-24-1",
+   "date": "2025-06-24",
+   "site": "en",
+   "kind": "general",
+   "text_en": "+25% Ability Power",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-06-24-1",
+   "date": "2025-06-24",
+   "site": "en",
+   "kind": "general",
+   "text_en": "+50% Accretion Explosion Radius",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-06-24-1",
+   "date": "2025-06-24",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Cost: 11000",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-06-24-1",
+   "date": "2025-06-24",
+   "site": "en",
+   "kind": "general",
+   "text_en": "De Kuiper's Thesis - Epic Survival Hero Item",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-06-24-1",
+   "date": "2025-06-24",
+   "site": "en",
+   "kind": "general",
+   "text_en": "+50 Shields",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-06-24-1",
+   "date": "2025-06-24",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Experimental Barrier heals nearby allies for 3% of Sigma's life every 1s.",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-06-24-1",
+   "date": "2025-06-24",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Cost: 11000",
+   "text_cn": null
+  },
+  {
+   "patch": "cn-2025-04-23-1",
+   "date": "2025-04-23",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "空间漂浮"
+  },
+  {
+   "patch": "cn-2025-04-23-1",
+   "date": "2025-04-23",
+   "site": "cn",
+   "kind": "general",
+   "text_en": null,
+   "text_cn": "现在可以长按跳跃以进行悬浮。"
+  },
+  {
+   "patch": "en-2025-04-22-1",
+   "date": "2025-04-22",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Levitation",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-04-22-1",
+   "date": "2025-04-22",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Jump can now be held down to hover.",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2025-04-01-1",
+   "date": "2025-04-01",
+   "site": "en",
+   "kind": "ability",
+   "ability_slug": "kinetic-grasp",
+   "ability_en": "Kinetic Grasp",
+   "ability_cn": null,
+   "text_en": "Deflects projectiles instead of absorbing them.",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "metric": null
+  },
+  {
+   "patch": "en-2025-04-01-1",
+   "date": "2025-04-01",
+   "site": "en",
+   "kind": "ability",
+   "ability_slug": "kinetic-grasp",
+   "ability_en": "Kinetic Grasp",
+   "ability_cn": null,
+   "text_en": "Sigma gains free flight during Kinetic Grasp.",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "metric": null
+  },
+  {
+   "patch": "cn-2025-04-01-1",
+   "date": "2025-04-01",
+   "site": "cn",
+   "kind": "ability",
+   "ability_slug": "",
+   "ability_en": null,
+   "ability_cn": "动能俘获",
+   "text_en": null,
+   "text_cn": "现在会弹开，而不是吸收射弹。",
+   "before": null,
+   "after": null,
+   "metric": null
+  },
+  {
+   "patch": "cn-2025-04-01-1",
+   "date": "2025-04-01",
+   "site": "cn",
+   "kind": "ability",
+   "ability_slug": "",
+   "ability_en": null,
+   "ability_cn": "动能俘获",
+   "text_en": null,
+   "text_cn": "“西格玛”在使用“动能俘获”期间可以自由飞行。",
+   "before": null,
+   "after": null,
+   "metric": null
+  },
+  {
+   "patch": "en-2025-02-18-1",
+   "date": "2025-02-18",
+   "site": "en",
+   "kind": "ability",
+   "ability_slug": "kinetic-cycle",
+   "ability_en": "Kinetic Cycle",
+   "ability_cn": null,
+   "text_en": "Absorbing projectiles with Kinetic Grasp also reduces Accretion's cooldown.",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "metric": null
+  },
+  {
+   "patch": "en-2025-02-18-1",
+   "date": "2025-02-18",
+   "site": "en",
+   "kind": "ability",
+   "ability_slug": "massive-impact",
+   "ability_en": "Massive Impact",
+   "ability_cn": null,
+   "text_en": "Accretion's knockdown duration increases to up to 3 seconds based on travel distance.",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "metric": null
+  },
+  {
+   "patch": "en-2025-02-18-1",
+   "date": "2025-02-18",
+   "site": "en",
+   "kind": "ability",
+   "ability_slug": "hyper-strike",
+   "ability_en": "Hyper Strike",
+   "ability_cn": null,
+   "text_en": "Every 5 direct hits with Hyperspheres, your next successful Quick Melee levitates and knocks away enemies.",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "metric": null
+  },
+  {
+   "patch": "en-2025-02-18-1",
+   "date": "2025-02-18",
+   "site": "en",
+   "kind": "ability",
+   "ability_slug": "levitation",
+   "ability_en": "Levitation",
+   "ability_cn": null,
+   "text_en": "Activate and hold Double Jump to briefly levitate upward.",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "metric": null
+  },
+  {
+   "patch": "en-2024-12-17-1",
+   "date": "2024-12-17",
+   "site": "en",
+   "kind": "ability",
+   "ability_slug": "experimental-barrier",
+   "ability_en": "Experimental Barrier",
+   "ability_cn": null,
+   "text_en": "Recharge rate increased from 85 to 100 health per second.",
+   "text_cn": null,
+   "before": 85.0,
+   "after": 100.0,
+   "metric": "recharge rate"
+  },
+  {
+   "patch": "en-2024-12-17-1",
+   "date": "2024-12-17",
+   "site": "en",
+   "kind": "ability",
+   "ability_slug": "accretion",
+   "ability_en": "Accretion",
+   "ability_cn": null,
+   "text_en": "Damage reduced from 120 to 100.",
+   "text_cn": null,
+   "before": 120.0,
+   "after": 100.0,
+   "metric": "damage"
+  },
+  {
+   "patch": "en-2024-12-17-1",
+   "date": "2024-12-17",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Base shield health reduced from 275 to 250.",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2024-09-17-1",
+   "date": "2024-09-17",
+   "site": "en",
+   "kind": "ability",
+   "ability_slug": "hyperspheres",
+   "ability_en": "Hyperspheres",
+   "ability_cn": null,
+   "text_en": "Impact damage reduced from 25 to 15.",
+   "text_cn": null,
+   "before": 25.0,
+   "after": 15.0,
+   "metric": "impact damage"
+  },
+  {
+   "patch": "en-2024-09-17-1",
+   "date": "2024-09-17",
+   "site": "en",
+   "kind": "ability",
+   "ability_slug": "hyperspheres",
+   "ability_en": "Hyperspheres",
+   "ability_cn": null,
+   "text_en": "Explosion damage increased from 30 to 40.",
+   "text_cn": null,
+   "before": 30.0,
+   "after": 40.0,
+   "metric": "explosion damage"
+  },
+  {
+   "patch": "en-2024-09-17-1",
+   "date": "2024-09-17",
+   "site": "en",
+   "kind": "ability",
+   "ability_slug": "hyperspheres",
+   "ability_en": "Hyperspheres",
+   "ability_cn": null,
+   "text_en": "No longer deals damage to self.",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "metric": null
+  },
+  {
+   "patch": "en-2024-07-05-1",
+   "date": "2024-07-05",
+   "site": "en",
+   "kind": "ability",
+   "ability_slug": "accretion",
+   "ability_en": "Accretion",
+   "ability_cn": null,
+   "text_en": "Impact damage increased from 40 to 80 (120 damage total).",
+   "text_cn": null,
+   "before": 40.0,
+   "after": 80.0,
+   "metric": "impact damage"
+  },
+  {
+   "patch": "en-2024-05-24-1",
+   "date": "2024-05-24",
+   "site": "en",
+   "kind": "ability",
+   "ability_slug": "gravitic-flux",
+   "ability_en": "Gravitic Flux",
+   "ability_cn": null,
+   "text_en": "Gravitic Flux now requires line-of-sight to lift targets again.",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "metric": null
+  },
+  {
+   "patch": "en-2024-05-14-1",
+   "date": "2024-05-14",
+   "site": "en",
+   "kind": "ability",
+   "ability_slug": "gravitic-flux",
+   "ability_en": "Gravitic Flux",
+   "ability_cn": null,
+   "text_en": "No longer requires line of sight to the center of the effect.",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "metric": null
+  },
+  {
+   "patch": "en-2024-04-16-1",
+   "date": "2024-04-16",
+   "site": "en",
+   "kind": "ability",
+   "ability_slug": "experimental-barrier",
+   "ability_en": "Experimental Barrier",
+   "ability_cn": null,
+   "text_en": "Movement speed increased from 16.5 to 20 meters per second.",
+   "text_cn": null,
+   "before": 16.5,
+   "after": 20.0,
+   "metric": "movement speed"
+  },
+  {
+   "patch": "en-2024-04-01-1",
+   "date": "2024-04-01",
+   "site": "en",
+   "kind": "ability",
+   "ability_slug": "accretion",
+   "ability_en": "Accretion",
+   "ability_cn": null,
+   "text_en": "Projectile Speed decreased from 37 to 30.",
+   "text_cn": null,
+   "before": 37.0,
+   "after": 30.0,
+   "metric": "projectile speed"
+  },
+  {
+   "patch": "en-2024-04-01-1",
+   "date": "2024-04-01",
+   "site": "en",
+   "kind": "ability",
+   "ability_slug": "accretion",
+   "ability_en": "Accretion",
+   "ability_cn": null,
+   "text_en": "Projectile Gravity decreased from 18 to 2.",
+   "text_cn": null,
+   "before": 18.0,
+   "after": 2.0,
+   "metric": "projectile gravity"
+  },
+  {
+   "patch": "en-2024-04-01-1",
+   "date": "2024-04-01",
+   "site": "en",
+   "kind": "ability",
+   "ability_slug": "accretion",
+   "ability_en": "Accretion",
+   "ability_cn": null,
+   "text_en": "Pressing the ability button while Accretion is active will cause the rock to crash into the ground. When crashed, it will deal 50 damage in a 4-meter radius and stun anyone damaged.",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "metric": null
+  },
+  {
+   "patch": "en-2024-02-13-1",
+   "date": "2024-02-13",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Shields increased from 200 to 275.",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2023-12-05-1",
+   "date": "2023-12-05",
+   "site": "en",
+   "kind": "ability",
+   "ability_slug": "experimental-barrier",
+   "ability_en": "Experimental Barrier",
+   "ability_cn": null,
+   "text_en": "Regeneration rate reduced from 100 to 85 health per second.",
+   "text_cn": null,
+   "before": 100.0,
+   "after": 85.0,
+   "metric": "regeneration rate"
+  },
+  {
+   "patch": "en-2023-10-31-1",
+   "date": "2023-10-31",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Added the Hero-Specific Option:",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2023-10-31-1",
+   "date": "2023-10-31",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Rise During Gravitic Flux With Ability 3 - Off by default.",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2023-10-10-1",
+   "date": "2023-10-10",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Added the hero-specific options:",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2023-10-10-1",
+   "date": "2023-10-10",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Experimental Barrier UI - On by default.",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2023-10-10-1",
+   "date": "2023-10-10",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Hide Gravitic Flux Timer - Off by default.",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2023-10-10-1",
+   "date": "2023-10-10",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Gravitic Flux Confirmation Input - Primary Fire by default.",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2023-08-10-1",
+   "date": "2023-08-10",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Base movement ground deceleration increased to match standard heroes movement.",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2023-05-09-1",
+   "date": "2023-05-09",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Gravitic Flux now automatically casts when the timer runs out",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2023-04-11-1",
+   "date": "2023-04-11",
+   "site": "en",
+   "kind": "ability",
+   "ability_slug": "accretion",
+   "ability_en": "Accretion",
+   "ability_cn": null,
+   "text_en": "Impact damage reduced from 60 to 40 (80 damage total with explosion)",
+   "text_cn": null,
+   "before": 60.0,
+   "after": 40.0,
+   "metric": "impact damage"
+  },
+  {
+   "patch": "en-2023-04-11-1",
+   "date": "2023-04-11",
+   "site": "en",
+   "kind": "ability",
+   "ability_slug": "accretion",
+   "ability_en": "Accretion",
+   "ability_cn": null,
+   "text_en": "Knockdown duration increased from 0.8 to 1.1 seconds",
+   "text_cn": null,
+   "before": 0.8,
+   "after": 1.1,
+   "metric": "knockdown duration"
+  },
+  {
+   "patch": "en-2023-02-07-1",
+   "date": "2023-02-07",
+   "site": "en",
+   "kind": "ability",
+   "ability_slug": "gravitic-flux",
+   "ability_en": "Gravitic Flux",
+   "ability_cn": null,
+   "text_en": "Ultimate cost increased 7%",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "metric": null
+  },
+  {
+   "patch": "en-2023-02-07-1",
+   "date": "2023-02-07",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Base health in Role Queue modes remains the same at 350",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2023-02-07-1",
+   "date": "2023-02-07",
+   "site": "en",
+   "kind": "general",
+   "text_en": "Base health in non-Role Queue modes reduced from 350 to 200",
+   "text_cn": null
+  },
+  {
+   "patch": "en-2021-03-11-1",
+   "date": "2021-03-11",
+   "site": "en",
+   "kind": "ability",
+   "ability_slug": "experimental-barrier",
+   "ability_en": "Experimental Barrier",
+   "ability_cn": null,
+   "text_en": "Cooldown reduced from 2.5 to 2.0 seconds",
+   "text_cn": null,
+   "before": 2.5,
+   "after": 2.0,
+   "metric": "cooldown"
+  },
+  {
+   "patch": "en-2021-01-12-1",
+   "date": "2021-01-12",
+   "site": "en",
+   "kind": "ability",
+   "ability_slug": "experimental-barrier",
+   "ability_en": "Experimental Barrier",
+   "ability_cn": null,
+   "text_en": "Redeploy cooldown increased from 1 to 2.5 seconds",
+   "text_cn": null,
+   "before": 1.0,
+   "after": 2.5,
+   "metric": "redeploy cooldown"
+  },
+  {
+   "patch": "en-2020-08-13-1",
+   "date": "2020-08-13",
+   "site": "en",
+   "kind": "ability",
+   "ability_slug": "experimental-barrier",
+   "ability_en": "Experimental Barrier",
+   "ability_cn": null,
+   "text_en": "Health reduced from 900 to 700",
+   "text_cn": null,
+   "before": 900.0,
+   "after": 700.0,
+   "metric": "health"
+  },
+  {
+   "patch": "en-2020-08-13-1",
+   "date": "2020-08-13",
+   "site": "en",
+   "kind": "ability",
+   "ability_slug": "experimental-barrier",
+   "ability_en": "Experimental Barrier",
+   "ability_cn": null,
+   "text_en": "Regeneration rate reduced from 120 to 80 per second",
+   "text_cn": null,
+   "before": 120.0,
+   "after": 80.0,
+   "metric": "regeneration rate"
+  },
+  {
+   "patch": "en-2020-08-13-1",
+   "date": "2020-08-13",
+   "site": "en",
+   "kind": "ability",
+   "ability_slug": "kinetic-grasp",
+   "ability_en": "Kinetic Grasp",
+   "ability_cn": null,
+   "text_en": "Cooldown increased from 10 to 12 seconds",
+   "text_cn": null,
+   "before": 10.0,
+   "after": 12.0,
+   "metric": "cooldown"
+  },
+  {
+   "patch": "en-2020-04-29-1",
+   "date": "2020-04-29",
+   "site": "en",
+   "kind": "ability",
+   "ability_slug": "accretion",
+   "ability_en": "Accretion",
+   "ability_cn": null,
+   "text_en": "Knockdown duration is now a fixed 0.8 second instead of scaling with distance",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "metric": null
+  },
+  {
+   "patch": "en-2020-04-29-1",
+   "date": "2020-04-29",
+   "site": "en",
+   "kind": "ability",
+   "ability_slug": "accretion",
+   "ability_en": "Accretion",
+   "ability_cn": null,
+   "text_en": "Cast time reduced from 0.75 to 0.65 seconds",
+   "text_cn": null,
+   "before": 0.75,
+   "after": 0.65,
+   "metric": "cast time"
+  },
+  {
+   "patch": "en-2020-03-13-1",
+   "date": "2020-03-13",
+   "site": "en",
+   "kind": "ability",
+   "ability_slug": "gravitic-flux",
+   "ability_en": "Gravitic Flux",
+   "ability_cn": null,
+   "text_en": "Ultimate cost reduced 10%",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "metric": null
+  },
+  {
+   "patch": "en-2020-03-13-1",
+   "date": "2020-03-13",
+   "site": "en",
+   "kind": "ability",
+   "ability_slug": "gravitic-flux",
+   "ability_en": "Gravitic Flux",
+   "ability_cn": null,
+   "text_en": "Flight speed increased 30%",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "metric": null
+  }
+ ]
+}

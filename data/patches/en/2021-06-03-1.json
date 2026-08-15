@@ -1,0 +1,199 @@
+{
+ "id": "en-2021-06-03-1",
+ "site": "en",
+ "date": "2021-06-03",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2021/06",
+ "title": "Overwatch Retail Patch Notes – June 3, 2021",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "hero_update",
+   "title": "Hero Updates",
+   "role": null,
+   "description": null,
+   "heroes": [
+    {
+     "slug": "baptiste",
+     "name_en": "Baptiste",
+     "name_cn": "巴蒂斯特",
+     "role": "support",
+     "dev_note": "Though it felt better to use, the previous reduction to the Exo Boots charge time resulted in Baptiste becoming much more evasive against some heroes. Since he already has strong defensive ability options in Regenerative Burst and Immortality Field, we're reverting how quickly he can charge the Exo Boots jump.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Exo-Boots",
+       "name_cn": null,
+       "slug": "exo-boots",
+       "changes": [
+        {
+         "text_en": "Charge time increased from 0.7 to 1 second",
+         "text_cn": null,
+         "before": 0.7,
+         "after": 1.0,
+         "metric": "charge time"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "echo",
+     "name_en": "Echo",
+     "name_cn": "回声",
+     "role": "damage",
+     "dev_note": "The Duplicate ultimate has proven to be more impactful than expected and was coming up quickly due to Echo's high damage output.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Duplicate",
+       "name_cn": null,
+       "slug": "duplicate",
+       "changes": [
+        {
+         "text_en": "Ultimate cost increased by 15%",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "cassidy",
+     "name_en": "Cassidy",
+     "name_cn": "卡西迪",
+     "role": "damage",
+     "dev_note": "Much of McCree's recent success can be attributed to his increased maximum health and we think that aspect is working well to help solidify a close-to-mid-range role for him. We're reverting the Combat Roll distance and Peacekeeper reload times as they lead to longer distance Flashbang initiations and made the burst damage from 'Fan the Hammer' less of a costly investment.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Peacekeeper",
+       "name_cn": "维和者",
+       "slug": "peacekeeper",
+       "changes": [
+        {
+         "text_en": "Reload time increased from 1.2 to 1.5 seconds",
+         "text_cn": null,
+         "before": 1.2,
+         "after": 1.5,
+         "metric": "reload time"
+        }
+       ]
+      },
+      {
+       "name_en": "Combat Roll",
+       "name_cn": "战术翻滚",
+       "slug": "combat-roll",
+       "changes": [
+        {
+         "text_en": "Distance reduced by 20%",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "moira",
+     "name_en": "Moira",
+     "name_cn": "莫伊拉",
+     "role": "support",
+     "dev_note": "Many channeled ultimate abilities automatically reload the heroes weapon as they're locked out from reloading for a short time. The new regeneration rate will refill about half of Moira's Biotic energy resource over the full duration of Coalescence. This doesn't fully refill Moira's energy from empty as it would be unfortunate to lose that portion of her gameplay if players were able to fully cycle between ultimates with healing alone.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Biotic Grasp",
+       "name_cn": null,
+       "slug": "biotic-grasp",
+       "changes": [
+        {
+         "text_en": "Resource regeneration is now three times higher while channeling Coalescence",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Coalescence",
+       "name_cn": null,
+       "slug": "coalescence",
+       "changes": [
+        {
+         "text_en": "Ultimate cost increased by 17%",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "reaper",
+     "name_en": "Reaper",
+     "name_cn": "死神",
+     "role": "damage",
+     "dev_note": "This adjustment brings Reaper's self-healing with his Hellfire Shotguns back to about where it was before the recent weapon tuning changes.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "The Reaping",
+       "name_cn": null,
+       "slug": "the-reaping",
+       "changes": [
+        {
+         "text_en": "Life Steal amount increased from 30% to 35%",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "zarya",
+     "name_en": "Zarya",
+     "name_cn": "查莉娅",
+     "role": "tank",
+     "dev_note": "Zarya's base damage wasn't adjusted after the beam hit detection changes awhile back but she wasn't seeing much use at the time either. Now that she has a more dominant presence in a variety of team compositions, we're looking at reducing her beams average damage, though the same maximum damage is still achievable.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Particle Cannon",
+       "name_cn": null,
+       "slug": "particle-cannon",
+       "changes": [
+        {
+         "text_en": "Beam damage now scales from 75-170 damage-per-second, down from 95-170",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  }
+ ],
+ "raw_text": null,
+ "hash": "sha256:5fd153b23bec3136449b70a8e6e0ca3a317ff7d1bd0ad58c4f2225bcec072c21"
+}

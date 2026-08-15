@@ -1,0 +1,389 @@
+{
+ "id": "cn-2025-03-26-1",
+ "site": "cn",
+ "date": "2025-03-26",
+ "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/03/",
+ "title": "《守望先锋》补丁说明——2025年3月26日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "平衡性在线修正更新",
+   "role": null,
+   "description": "这是一次英雄平衡性在线修正。2025年3月19日更新后的回放代码仍然可用。",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": "平衡性改动适用于5v5和6v6游戏模式。",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "重装",
+   "role": "tank",
+   "description": null,
+   "heroes": [
+    {
+     "slug": "mauga",
+     "name_en": "Mauga",
+     "name_cn": "毛加",
+     "role": "tank",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "心脏过载",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "不再为盟友提供受伤减免。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "笼中斗",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "终极技能消耗提高8%。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "屏障生命值从1500降低至1200。",
+         "before": 1500.0,
+         "after": 1200.0,
+         "metric": "屏障生命值"
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "狂战士（被动）",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "过量生命值转换率从50%降低至40%。",
+         "before": 50.0,
+         "after": 40.0,
+         "metric": "过量生命值转换率"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "roadhog",
+     "name_en": "Roadhog",
+     "name_cn": "路霸",
+     "role": "tank",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "呼吸器",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "最大治疗量从400提高到450。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "鸡飞狗跳",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "终极技能消耗降低12%。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "winston",
+     "name_en": "Winston",
+     "name_cn": "温斯顿",
+     "role": "tank",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "原始暴怒",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "终极技能消耗提高10%。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "zarya",
+     "name_en": "Zarya",
+     "name_cn": "查莉娅",
+     "role": "tank",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "能量转换",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "衰退速度从每秒2提高到每秒2.5。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "输出",
+   "role": "damage",
+   "description": null,
+   "heroes": [
+    {
+     "slug": "cassidy",
+     "name_en": "Cassidy",
+     "name_cn": "卡西迪",
+     "role": "damage",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Peacekeeper",
+       "name_cn": "维和者",
+       "slug": "peacekeeper",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "主要攻击模式衰减射程从20米增加到25米。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "辅助攻击模式的伤害从45提高至50。",
+         "before": 45.0,
+         "after": 50.0,
+         "metric": "辅助攻击模式的伤害"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "echo",
+     "name_en": "Echo",
+     "name_cn": "回声",
+     "role": "damage",
+     "dev_note": null,
+     "general": [
+      "基础生命值从225降低至150。",
+      "护盾生命值从0提高至75。"
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "76",
+     "name_en": null,
+     "name_cn": "士兵：76",
+     "role": "damage",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "重型脉冲步枪",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "主要攻击模式现在使用较大的射弹尺寸（0.07米）。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "sojourn",
+     "name_en": "Sojourn",
+     "name_cn": "索杰恩",
+     "role": "damage",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "机动滑铲",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从7秒延长至8秒。",
+         "before": 7.0,
+         "after": 8.0,
+         "metric": "冷却时间"
+        },
+        {
+         "text_en": null,
+         "text_cn": "最大持续时间从1.2秒缩短至1秒。",
+         "before": 1.2,
+         "after": 1.0,
+         "metric": "最大持续时间"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "widowmaker",
+     "name_en": "Widowmaker",
+     "name_cn": "黑百合",
+     "role": "damage",
+     "dev_note": null,
+     "general": [
+      "基础生命值从200提高至225。"
+     ],
+     "perks": [],
+     "abilities": []
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "支援",
+   "role": "support",
+   "description": null,
+   "heroes": [
+    {
+     "slug": "ana",
+     "name_en": "Ana",
+     "name_cn": "安娜",
+     "role": "support",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "生物手雷",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "非6v6游戏模式下的冷却时间从12秒延长至14秒。",
+         "before": 12.0,
+         "after": 14.0,
+         "metric": "游戏模式下的冷却时间"
+        },
+        {
+         "text_en": null,
+         "text_cn": "6v6游戏模式下的冷却时间从10秒延长至12秒。",
+         "before": 10.0,
+         "after": 12.0,
+         "metric": "游戏模式下的冷却时间"
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "伯劳振翅",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "纳米激素对于自身的效果的持续时间从8秒缩短至6秒。",
+         "before": 8.0,
+         "after": 6.0,
+         "metric": "纳米激素对于自身的效果的持续时间"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "juno",
+     "name_en": "Juno",
+     "name_cn": "朱诺",
+     "role": "support",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "轨道射线",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "终极技能消耗提高10%。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  }
+ ],
+ "raw_text": null,
+ "hash": "sha256:c1d446cefbda15d386366ef09872ba6386b3ec11390058fe9a81c74e6de0dd6e"
+}

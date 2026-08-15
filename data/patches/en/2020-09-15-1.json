@@ -1,0 +1,82 @@
+{
+ "id": "en-2020-09-15-1",
+ "site": "en",
+ "date": "2020-09-15",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2020/09",
+ "title": "Overwatch Retail Patch Notes – September 15, 2020",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "Tracer's Comic Challenge",
+   "role": null,
+   "description": "Issue #1 of a 5-part comic book series, Tracer - London Calling , is now available! Blink into battle and celebrate to launch with unlockable in-game content! Wins in Quick Play, Competitive Play, Arcade, or Experimental will earn you a themed player icon, spray, and an epic skin: Comic Book Tracer! Now through September 28, earn additional rewards by watching Overwatch streams on Twitch! Earn a total of 6 Tracer’s Comic Challenge sprays, loaded with their own special sound effects.",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "Competitive Updates",
+   "role": null,
+   "description": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "Competitive 3v3 Lockout Elimination",
+     "body": "Season 3 of Competitive 3v3 Lockout Elimination has begun!",
+     "dev": null
+    },
+    {
+     "title": "Ranked Leaver Penalty Adjustment",
+     "body": "Adjusted ranked leaver penalties. Penalties are now more severe and will lead to a season ban more quickly",
+     "dev": null
+    }
+   ]
+  },
+  {
+   "type": "generic_update",
+   "title": "Workshop Updates",
+   "role": null,
+   "description": "The valid range for numbers stored in variables and used in mathematical expressions has been increased",
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "New Workshop Actions",
+     "body": "Start Scaling Players Stop Scaling Players Start Scaling Barriers Stop Scaling Barriers",
+     "dev": null
+    }
+   ]
+  },
+  {
+   "type": "generic_update",
+   "title": "Bug Fixes",
+   "role": null,
+   "description": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "General",
+     "body": "Fixed a bug that caused training bots to not display buffs and debuffs on their health bars Fixed a bug in Deathmatch that caused the Defeat string to potentially display for the winning player on the Victory screen Fixed a bug that caused ping icons above player heads to subtly shake infrequently Fixed a bug that caused placeable objects to clip into level geometry on specific maps Fixed a bug in Career Profile that caused some UI elements within the Achievements tab to not display correctly Fixed a bug with the Overwatch League Replay Viewer that caused incorrect team names to display Fixed a bug that caused group invites to not appear properly if the invitation was sent to a friend logging into the game Fixed a bug in Mystery Heroes that caused the Games Played statistic to not increment properly when backfilling and losing a match Fixed a bug that caused inconsistent hitbox placement for heroes that are frozen while moving",
+     "dev": null
+    },
+    {
+     "title": "Maps",
+     "body": "Blizzard World Fixed a bug that caused some voice over sounds to not playback properly in the Nexus Experience location Hanamura Fixed a bug that exposed a small gap in level geometry that allowed certain heroes to escape the map Route 66 Fixed a bug that exposed a small gap in level geometry that allowed players to shoot through it Temple of Anubis Fixed a bug with level geometry that allowed players to stand on top of an unintended location",
+     "dev": null
+    },
+    {
+     "title": "Heroes",
+     "body": "Ana Fixed a bug with the Vacation highlight intro not animating properly Brigitte Fixed a bug with the Feskarn skin that caused an element of Brigitte's shield to float into the air during emotes Doomfist Fixed a bug that caused primary attack sounds to play at a high volume D.Va Fixed a bug with the Sitting victory pose not displaying properly Echo Fixed a bug that caused players hit by Echo’s Focusing Beam to not hear the attack sound Genji Fixed a bug where canceling Genji's Dragonblade swings to Swift Strike could cause inconsistent application of damage at certain latencies Fixed a bug where Genji would not move forward if using Swift Strike while aiming at a wall close in front of him Fixed a bug where Genji could sometimes not immediately look around at the end of Swift Strike, which happened more often when dashing towards a wall or ground Fixed a bug that caused Swift Strike to sometimes incorrectly display visual hit indicators Mei Fixed a bug that caused Ice Wall to break when in close proximity to Cryo-Freeze Fixed a bug that prevented Ice Wall from moving when placed on the moving fan in Junkertown Orisa Fixed a bug with the Medal victory pose not displaying properly Fixed a bug with Halt! that caused tether functionality to break when attempting to pull at max range Pharah Fixed a bug that caused the sound for rockets rotating on the ammo clip to not playback properly Fixed a bug with the Barrage highlight intro not animating correctly if the Lifeguard skin is equipped Reinhardt Fixed a bug that could cause Reinhardt's shield to emerge at an angle exposing him to enemy attacks Sombra Fixed a bug that caused Sombra to not be healed by the payload under specific circumstances Tracer Fixed a bug that allowed Tracer to Blink into unintended areas in Temple of Anubis",
+     "dev": null
+    },
+    {
+     "title": "Workshop",
+     "body": "Fixed a bug that could cause the game to enter an endless match restart cycle if too many of certain actions were executed immediately on match start Fixed a bug that could cause players to lose their bodies altogether when the \"Start Forcing Player To Be Hero\" action was combined with Control maps or the \"Spawn As Random Hero\" setting Fixed a bug preventing automatic reloads from being disabled when disabling reloading via Workshop Fixed a bug preventing D.Va from properly handling ammo/reload related actions/values when out of mech Fixed a bug where strings with unicode characters could be trimmed incorrectly when copy-pasting Fixed a bug where certain values failed to export from inspector when copying as action text Fixed a bug that caused issues with third person spectating when scaling Fixed a bug that caused McCree's Flashbang to not hit targets when scaled up to 20 times Fixed a bug that caused air and ground movement speeds to differ when setting a character's movement speed to very slow",
+     "dev": null
+    }
+   ]
+  }
+ ],
+ "raw_text": null,
+ "hash": "sha256:a450b88f0f90f8d62e0ad569e125ed610b8fdfd071c1c7b85fcf0682f51a841a"
+}

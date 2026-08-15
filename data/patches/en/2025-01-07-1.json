@@ -1,0 +1,128 @@
+{
+ "id": "en-2025-01-07-1",
+ "site": "en",
+ "date": "2025-01-07",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/01",
+ "title": "Overwatch 2 Retail Patch Notes - January 7, 2025",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "Hotfix Balance Update",
+   "role": null,
+   "description": "This is a hero balance hotfix. Replay codes from the December 19, 2024 patch are still available.",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "Hero Balance Updates",
+   "role": null,
+   "description": "These hero balance updates only apply to our standard game modes and not the 6v6 Experiment.",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "Tank",
+   "role": "tank",
+   "description": null,
+   "heroes": [
+    {
+     "slug": "hazard",
+     "name_en": "Hazard",
+     "name_cn": "骇灾",
+     "role": "tank",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Spike Guard",
+       "name_cn": null,
+       "slug": "spike-guard",
+       "changes": [
+        {
+         "text_en": "Damage reduction is reduced from 75% to 65%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Duration reduced from 3.5 to 3 seconds.",
+         "text_cn": null,
+         "before": 3.5,
+         "after": 3.0,
+         "metric": "duration"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "Damage",
+   "role": "damage",
+   "description": null,
+   "heroes": [
+    {
+     "slug": "sojourn",
+     "name_en": "Sojourn",
+     "name_cn": "索杰恩",
+     "role": "damage",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Railgun",
+       "name_cn": null,
+       "slug": "railgun",
+       "changes": [
+        {
+         "text_en": "Time before energy degeneration begins decreased from 12 to 9 seconds.",
+         "text_cn": null,
+         "before": 12.0,
+         "after": 9.0,
+         "metric": "time before energy degeneration begins"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "widowmaker",
+     "name_en": "Widowmaker",
+     "name_cn": "黑百合",
+     "role": "damage",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Widow's Kiss",
+       "name_cn": "寡妇之吻",
+       "slug": "widows-kiss",
+       "changes": [
+        {
+         "text_en": "Scoped shots no longer benefit from global projectile size increases.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  }
+ ],
+ "raw_text": null,
+ "hash": "sha256:0c983e6abe73dd4e66d2c319d808a3e8bd0e3c8f8809f6a06772e7bacd8b6915"
+}

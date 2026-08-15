@@ -1,0 +1,696 @@
+{
+ "id": "en-2024-03-08-1",
+ "site": "en",
+ "date": "2024-03-08",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/03",
+ "title": "Overwatch 2 Retail Patch Notes – March 12, 2024",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "OVERWATCH 2 X COWBOY BEBOP",
+   "role": null,
+   "description": "Celebrate the legendary crew of Bebop in Overwatch 2! Immerse yourself in the iconic saga of Cowboy Bebop with an array of new skins found exclusively in the Overwatch 2 shop. From now until March 25, you can also tackle in-game challenges to answer the call of the bounty hunter and snatch up cosmic cosmetic rewards.",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "GENERAL UPDATES",
+   "role": null,
+   "description": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "NEW GAME MODE – HERO MASTERY: GAUNTLET",
+     "body": "Hero Mastery: Gauntlet is a new co-op game mode where players work together to protect towers from enemy bots. Collect energy and buy powerful upgrades to survive all ten rounds! Focus your skills to earn high scores and compete on the leaderboards. Are you ready to enter the Gauntlet? Gauntlet teams can have up to three players and must survive all ten rounds to win. Each game randomizes the upgrades, bots, and targeted towers to keep things fresh. The Gauntlet has four difficulties that vary all aspects of gameplay, including score. Work your way up to Legendary and dominate the leaderboards. Athena has upgraded the simulation with many new bots for this mode. Be on the lookout for dangerous elite training bots. Play with AI mode is available for teams to practice with 1-3 players. Scores and Challenges are not recorded in this mode. Hero Mastery: Gauntlet is launching with a limited-time event that includes exclusive rewards and challenges. Can you defend the towers and unlock them all?",
+     "dev": null
+    },
+    {
+     "title": "COMPETITIVE PLAY UPDATES",
+     "body": "Competitive Placements and Overview will now be displayed before Hero Progression at the end of a Competitive Match. Competitive Rank Range has been added to the scoreboard so players can view the rank range of a match at any time. Modifiers can now be viewed outside of the Competitive Overview with a rank info button found on the Competitive Play menu. A new modifier called “Demotion Protection” has been added to the Competitive Overview to notify players that if they lose another game, they will be demoted to the next lowest division.",
+     "dev": null
+    }
+   ]
+  },
+  {
+   "type": "generic_update",
+   "title": "HERO UPDATES",
+   "role": null,
+   "description": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "PROJECTILE SIZE UPDATES",
+     "body": "Global projectile size modifier for travel time projectiles with a speed greater than 50 meters per second reduced from 0.1 to 0.075 meters.",
+     "dev": "Developer Comments: We are decreasing the size of the fastest travel time projectiles because it reduces the frequency of these projectiles failing to headshot due to hitting the enemy's chest hit volume first."
+    },
+    {
+     "title": "ROLE PASSIVES UPDATES",
+     "body": "Heal reduction applied by the damage role passive lowered from 20% to 15%.",
+     "dev": "Developer Comments: The Damage role passive reduces the potency of in-combat healing and helps equalize the effectiveness between burst and damage over time. Nevertheless, we are going to experiment with a lower value to relieve some of the pressure on tank and support roles. We’ll be keeping a close eye on this change as we want the healing reduction to still be noticeable."
+    },
+    {
+     "title": "OTHER HERO UPDATES",
+     "body": "Added a new UI element above the player's first-person health bar to show all active healing status effects (Anti-Heal, Amplified Healing, Reduced Healing).",
+     "dev": null
+    }
+   ]
+  },
+  {
+   "type": "hero_update",
+   "title": "TANK",
+   "role": null,
+   "description": null,
+   "heroes": [
+    {
+     "slug": "doomfist",
+     "name_en": "Doomfist",
+     "name_cn": "末日铁拳",
+     "role": "tank",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Meteor Strike",
+       "name_cn": null,
+       "slug": "meteor-strike",
+       "changes": [
+        {
+         "text_en": "Minimum damage increased from 15 to 50.",
+         "text_cn": null,
+         "before": 15.0,
+         "after": 50.0,
+         "metric": "minimum damage"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "mauga",
+     "name_en": "Mauga",
+     "name_cn": "毛加",
+     "role": "tank",
+     "dev_note": "Developer Comments: We are changing Cardiac Overdrive to make it more forgiving when used for yourself especially when Mauga is low health.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Overrun",
+       "name_cn": null,
+       "slug": "overrun",
+       "changes": [
+        {
+         "text_en": "Stomp damage increased from 45 to 60.",
+         "text_cn": null,
+         "before": 45.0,
+         "after": 60.0,
+         "metric": "stomp damage"
+        }
+       ]
+      },
+      {
+       "name_en": "Cardiac Overdrive",
+       "name_cn": null,
+       "slug": "cardiac-overdrive",
+       "changes": [
+        {
+         "text_en": "Duration reduced from 5 to 4 seconds.",
+         "text_cn": null,
+         "before": 5.0,
+         "after": 4.0,
+         "metric": "duration"
+        },
+        {
+         "text_en": "Cooldown reduced from 12 to 10 seconds.",
+         "text_cn": null,
+         "before": 12.0,
+         "after": 10.0,
+         "metric": "cooldown"
+        },
+        {
+         "text_en": "Now fills his passive overhealth by 100.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "orisa",
+     "name_en": "Orisa",
+     "name_cn": "奥丽莎",
+     "role": "tank",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Terra Surge",
+       "name_cn": null,
+       "slug": "terra-surge",
+       "changes": [
+        {
+         "text_en": "Charge rate for the first 2.5 seconds increased by 25%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "ramattra",
+     "name_en": "Ramattra",
+     "name_cn": "拉玛刹",
+     "role": "tank",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Ravenous Vortex",
+       "name_cn": null,
+       "slug": "ravenous-vortex",
+       "changes": [
+        {
+         "text_en": "Total damage increased from 45 to 70.",
+         "text_cn": null,
+         "before": 45.0,
+         "after": 70.0,
+         "metric": "total damage"
+        },
+        {
+         "text_en": "Cooldown decreased from 12 to 11 seconds.",
+         "text_cn": null,
+         "before": 12.0,
+         "after": 11.0,
+         "metric": "cooldown"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "reinhardt",
+     "name_en": "Reinhardt",
+     "name_cn": "莱因哈特",
+     "role": "tank",
+     "dev_note": null,
+     "general": [
+      "Armor increased from 275 to 300."
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Fire Strike",
+       "name_cn": null,
+       "slug": "fire-strike",
+       "changes": [
+        {
+         "text_en": "Damage increased from 100 to 120.",
+         "text_cn": null,
+         "before": 100.0,
+         "after": 120.0,
+         "metric": "damage"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "roadhog",
+     "name_en": "Roadhog",
+     "name_cn": "路霸",
+     "role": "tank",
+     "dev_note": "Developer Comments: We’re improving the consistency of the Hook combo. Enemies are pulled closer to Roadhog and aren’t launched as high when Pig Pen activates, making the Scrap Gun follow-up shot more consistent.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Chain Hook",
+       "name_cn": null,
+       "slug": "chain-hook",
+       "changes": [
+        {
+         "text_en": "The enemy final position distance from Roadhog after being pulled decreased from 4 to 3 meters.",
+         "text_cn": null,
+         "before": 4.0,
+         "after": 3.0,
+         "metric": "the enemy final position distance from roadhog after being pulled"
+        }
+       ]
+      },
+      {
+       "name_en": "Pig Pen",
+       "name_cn": null,
+       "slug": "pig-pen",
+       "changes": [
+        {
+         "text_en": "Vertical knockback on activation decreased by 43%",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "DAMAGE",
+   "role": null,
+   "description": null,
+   "heroes": [
+    {
+     "slug": "hanzo",
+     "name_en": "Hanzo",
+     "name_cn": "半藏",
+     "role": "damage",
+     "dev_note": "Developer Comments: We’re reverting the previous change to the base projectile size of Hanzo's arrows and replacing it with the general global reduction, which affects all travel time projectiles with a speed greater than 50 meters per second, resulting in Hanzo's arrow projectile staying the same total size as before this patch.",
+     "general": [
+      "Base projectile sizes increased from 0.075 to 0.1 meters. The total projectile size, when combined with the general hero change, is still 0.175 meters."
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "mei",
+     "name_en": "Mei",
+     "name_cn": "美",
+     "role": "damage",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Endothermic Blaster",
+       "name_cn": null,
+       "slug": "endothermic-blaster",
+       "changes": [
+        {
+         "text_en": "Ammo increased from 120 to 140.",
+         "text_cn": null,
+         "before": 120.0,
+         "after": 140.0,
+         "metric": "ammo"
+        }
+       ]
+      },
+      {
+       "name_en": "Cryofreeze",
+       "name_cn": null,
+       "slug": "cryofreeze",
+       "changes": [
+        {
+         "text_en": "Heal per second increased from 50 to 62.5.",
+         "text_cn": null,
+         "before": 50.0,
+         "after": 62.5,
+         "metric": "heal per second"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "reaper",
+     "name_en": "Reaper",
+     "name_cn": "死神",
+     "role": "damage",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Death Blossom",
+       "name_cn": "死亡绽放",
+       "slug": "death-blossom",
+       "changes": [
+        {
+         "text_en": "Damage per second increased from 170 to 185.",
+         "text_cn": null,
+         "before": 170.0,
+         "after": 185.0,
+         "metric": "damage per second"
+        },
+        {
+         "text_en": "Ultimate cost decreased by 12%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "sombra",
+     "name_en": "Sombra",
+     "name_cn": "黑影",
+     "role": "damage",
+     "dev_note": "Developer Comments: Virus deals critical impact damage when it hits Hacked targets, and this change makes using it as a follow-up more compelling. The Translocator now destroys breakable objects, preventing Sombra from teleporting a shorter distance than expected.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Virus",
+       "name_cn": null,
+       "slug": "virus",
+       "changes": [
+        {
+         "text_en": "Impact damage increased from 10 to 25.",
+         "text_cn": null,
+         "before": 10.0,
+         "after": 25.0,
+         "metric": "impact damage"
+        }
+       ]
+      },
+      {
+       "name_en": "Translocator",
+       "name_cn": null,
+       "slug": "translocator",
+       "changes": [
+        {
+         "text_en": "Destroys breakables while in flight.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "EMP",
+       "name_cn": null,
+       "slug": "emp",
+       "changes": [
+        {
+         "text_en": "Ultimate cost reduced by 8%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "symmetra",
+     "name_en": "Symmetra",
+     "name_cn": "秩序之光",
+     "role": "damage",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Photon Projector",
+       "name_cn": null,
+       "slug": "photon-projector",
+       "changes": [
+        {
+         "text_en": "Primary fire damage per second increased from 60 to 65, scaling with each stage. The new maximum damage per second is 195.",
+         "text_cn": null,
+         "before": 60.0,
+         "after": 65.0,
+         "metric": "primary fire damage per second"
+        }
+       ]
+      },
+      {
+       "name_en": "Sentry Turret",
+       "name_cn": null,
+       "slug": "sentry-turret",
+       "changes": [
+        {
+         "text_en": "Health increased from 30 to 50.",
+         "text_cn": null,
+         "before": 30.0,
+         "after": 50.0,
+         "metric": "health"
+        },
+        {
+         "text_en": "Damage per second increased from 25 to 30.",
+         "text_cn": null,
+         "before": 25.0,
+         "after": 30.0,
+         "metric": "damage per second"
+        }
+       ]
+      },
+      {
+       "name_en": "Teleporter",
+       "name_cn": null,
+       "slug": "teleporter",
+       "changes": [
+        {
+         "text_en": "Health increased from 50 to 100.",
+         "text_cn": null,
+         "before": 50.0,
+         "after": 100.0,
+         "metric": "health"
+        },
+        {
+         "text_en": "Shields increased from 150 to 200.",
+         "text_cn": null,
+         "before": 150.0,
+         "after": 200.0,
+         "metric": "shields"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "torbjorn",
+     "name_en": "Torbjörn",
+     "name_cn": "托比昂",
+     "role": "damage",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Deploy Turret",
+       "name_cn": null,
+       "slug": "deploy-turret",
+       "changes": [
+        {
+         "text_en": "Turret damage increased from 11 to 13.",
+         "text_cn": null,
+         "before": 11.0,
+         "after": 13.0,
+         "metric": "turret damage"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "SUPPORT",
+   "role": null,
+   "description": null,
+   "heroes": [
+    {
+     "slug": "ana",
+     "name_en": "Ana",
+     "name_cn": "安娜",
+     "role": "support",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Biotic Grenade",
+       "name_cn": null,
+       "slug": "biotic-grenade",
+       "changes": [
+        {
+         "text_en": "Explosion damage and healing increased from 60 to 90.",
+         "text_cn": null,
+         "before": 60.0,
+         "after": 90.0,
+         "metric": "explosion damage and healing"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "baptiste",
+     "name_en": "Baptiste",
+     "name_cn": "巴蒂斯特",
+     "role": "support",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Immortality Field",
+       "name_cn": null,
+       "slug": "immortality-field",
+       "changes": [
+        {
+         "text_en": "Minimum health threshold decreased from 25% to 20%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "brigitte",
+     "name_en": "Brigitte",
+     "name_cn": "布丽吉塔",
+     "role": "support",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Repair Pack",
+       "name_cn": null,
+       "slug": "repair-pack",
+       "changes": [
+        {
+         "text_en": "Cooldown reduced from 6 to 5 seconds.",
+         "text_cn": null,
+         "before": 6.0,
+         "after": 5.0,
+         "metric": "cooldown"
+        }
+       ]
+      },
+      {
+       "name_en": "Rally",
+       "name_cn": null,
+       "slug": "rally",
+       "changes": [
+        {
+         "text_en": "Cost reduced 8%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "illari",
+     "name_en": "Illari",
+     "name_cn": "伊拉锐",
+     "role": "support",
+     "dev_note": "Developer Comments: We are adjusting the firing cadence of the Solar Rifle, making it more responsive to use and increasing the damage per second but not the burst damage.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Solar Rifle",
+       "name_cn": null,
+       "slug": "solar-rifle",
+       "changes": [
+        {
+         "text_en": "Primary fire recovery time reduced from 0.3 to 0.2 seconds.",
+         "text_cn": null,
+         "before": 0.3,
+         "after": 0.2,
+         "metric": "primary fire recovery time"
+        },
+        {
+         "text_en": "Maximum charge time reduced from 0.7 to 0.65 seconds.",
+         "text_cn": null,
+         "before": 0.7,
+         "after": 0.65,
+         "metric": "maximum charge time"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "lifeweaver",
+     "name_en": "Lifeweaver",
+     "name_cn": "生命之梭",
+     "role": "support",
+     "dev_note": "Developer Comments: We’re increasing the burst potential of the Heal Blossom to reinforce Lifeweaver's role as a high healing throughput support. The heal per second is roughly the same as before, but individual Heal Blossoms can be charged further.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Heal Blossom",
+       "name_cn": null,
+       "slug": "heal-blossom",
+       "changes": [
+        {
+         "text_en": "Maximum heal amount increased from 70 to 80.",
+         "text_cn": null,
+         "before": 70.0,
+         "after": 80.0,
+         "metric": "maximum heal amount"
+        },
+        {
+         "text_en": "Maximum charge time increased from 1 to 1.15 seconds.",
+         "text_cn": null,
+         "before": 1.0,
+         "after": 1.15,
+         "metric": "maximum charge time"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "BUG FIXES",
+   "role": null,
+   "description": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "GENERAL",
+     "body": "Fixed an issue that caused the B button on gamepads to close a Replay instead of opening the Bookmarks. Fixed a bug that made all Souvenirs face backward when previewing them in the Battlepass. Fixed a bug with the 'more items in shop' button in the Event Hub, taking players to a blank screen. Fixed a bug that caused your own Progression Screen to display when viewing another player's Progression Screen. Fixed a display issue that sometimes caused the Rank Update Progress Bar to display incorrect values. Fixed an issue that prevented the 'Ring' dot reticle from displaying correctly for all heroes. Fixed an issue that prevented you from opening the Options menu while a Deathmatch game was ending. Fixed a bug in Mystery Heroes that could cause jump pads to be disabled for players. Leaves now correctly count as a loss during Competitive Placements Matches. Hero Mastery Fixed a bug that gave Echo full Ultimate charge after restarting a run.",
+     "dev": null
+    },
+    {
+     "title": "MAPS",
+     "body": "Junkertown Fixed some spots where the lighting was incorrect. King's Row Fixed an area of the map that allowed players to escape the playable space. Samoa Fixed some areas that allowed Torbjorn's turret to be almost fully obfuscated by the environment.",
+     "dev": null
+    },
+    {
+     "title": "HEROES",
+     "body": "Fixed a bug that caused the DPS Passive to not be applied by: Symettra and Torbjorn Turrets, Riptire, and B.O.B. Lifeweaver Fixed an interaction with Tree of Life and Mauga that could launch Cage Fight into the sky. Fixed a specific instance that allowed Life Grip to pull allies to their death.",
+     "dev": null
+    }
+   ]
+  }
+ ],
+ "raw_text": null,
+ "hash": "sha256:e5308851933db3ebb506a48c2f9db3ce5d88547780aa0087b69fbd4cc26a471d"
+}

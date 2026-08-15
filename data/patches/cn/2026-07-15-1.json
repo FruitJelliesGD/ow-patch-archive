@@ -1,0 +1,819 @@
+{
+ "id": "cn-2026-07-15-1",
+ "site": "cn",
+ "date": "2026-07-15",
+ "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
+ "title": "《守望先锋》补丁说明——2026年7月15日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "2026年夏季运动会",
+   "role": null,
+   "description": "2026年夏季运动会已经拉开帷幕，快回到大家最爱的街机先锋模式中，展开一场盛大的沙滩竞技！不论是动感斗球，精彩升级的动感斗球REMIX，还是温斯顿的沙滩排球，你都可以一边玩耍，一边完成挑战，赢得热力十足的夏日奖品。从7月15日至31日，在夏季运动会中尽情沐浴阳光，夺取最耀眼的胜利吧！",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "“狂鼠”的补给狩猎",
+   "role": null,
+   "description": "“狂鼠”的补给狩猎将于8月1日至4日再度举行，在这个绝对炸裂的周末赢得丰厚奖励吧！每一场比赛都可以助你推进进度，离下一份补给奖励更近一步，而灵活设置的挑战也让你既可以一口气全力投入，又可以稳扎稳打，劳逸结合。进度不会重置，没有每天刷进度的压力，不多废话……只有无处不在的爆炸和堆成小山一样的奖励供你赢取。",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "轰轰钻机挖宝开启",
+   "role": null,
+   "description": "轰轰钻机挖宝继续，想要获取奖励，只需要继续做你正在做的事，那就是——玩《守望先锋》！在赛季的后续阶段中，只要每周持续登录游戏、完成挑战、赢得胜利，就能获取海量补给。玩的越多机会越多，获得基础、史诗和传奇补给，奖励满满等待你的挖掘。",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": "英雄更新",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "重装",
+   "role": "tank",
+   "description": null,
+   "heroes": [
+    {
+     "slug": "doomfist",
+     "name_en": "Doomfist",
+     "name_cn": "末日铁拳",
+     "role": "tank",
+     "dev_note": "强化“火箭重拳”的后续攻击判定体积之前得到了扩大，使其能够击中距原目标很远的其他目标。我们决定适当缩小这个判定体积加成，只保留一部分射程和半径加成，维持其威力强大的设定。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "火箭重拳",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "强化“火箭重拳”附带伤害范围加成从75%降低至40%。",
+         "before": 75.0,
+         "after": 40.0,
+         "metric": "附带伤害范围加成"
+        },
+        {
+         "text_en": null,
+         "text_cn": "强化“火箭重拳”附带伤害半径加成从50%降低至40%。",
+         "before": 50.0,
+         "after": 40.0,
+         "metric": "附带伤害半径加成"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "junker-queen",
+     "name_en": "Junker Queen",
+     "name_cn": "渣客女王",
+     "role": "tank",
+     "dev_note": "“命令怒吼”是“渣客女王”最主要的生存能力和团队保护能力来源。其冷却时间是从效果结束后才开始计算的，导致使用间隔较长。我们决定缩短其冷却时间，提升其在战斗中的使用频率。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "命令怒吼",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从12秒缩短至10秒。（5v5）",
+         "before": 12.0,
+         "after": 10.0,
+         "metric": "冷却时间"
+        },
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从15秒缩短至13秒。（6v6）",
+         "before": 15.0,
+         "after": 13.0,
+         "metric": "冷却时间"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "mauga",
+     "name_en": "Mauga",
+     "name_cn": "毛加",
+     "role": "tank",
+     "dev_note": "在使用一把链式步枪射击时，毛加可以在长时间内保持较高的命中率。我们决定为每把链式步枪添加动态的散布，鼓励玩家多多切换武器，以将散布控制在较低程度。此更改不会影响同时使用两把链式步枪时的命中率。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "链式步枪",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "单独使用每把链式步枪射击时的最大散布从1提高至1.5。",
+         "before": 1.0,
+         "after": 1.5,
+         "metric": "单独使用每把链式步枪射击时的最大散布"
+        },
+        {
+         "text_en": null,
+         "text_cn": "到达最大散布所需的射击次数从0提高至30次。",
+         "before": 0.0,
+         "after": 30.0,
+         "metric": "到达最大散布所需的射击次数"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "ramattra",
+     "name_en": "Ramattra",
+     "name_cn": "拉玛刹",
+     "role": "tank",
+     "dev_note": "我们提高了“吞噬漩涡”的爆炸伤害，可以让精准把握引爆时机获得更大收益。此外我们还决定缩短“铁臂”的冷却时间，让拉玛刹可以在一次拳击（而不是两次）之后立即进行格挡，优化了“天罚形态”的战斗流畅度。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "吞噬漩涡",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "爆炸伤害从15提高至30。",
+         "before": 15.0,
+         "after": 30.0,
+         "metric": "爆炸伤害"
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "铁臂（天罚形态）",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从1秒缩短至0.5秒。",
+         "before": 1.0,
+         "after": 0.5,
+         "metric": "冷却时间"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "sigma",
+     "name_en": "Sigma",
+     "name_cn": "西格玛",
+     "role": "tank",
+     "dev_note": "“西格玛”可以通过防御技能循环，可以保持极强的持续作战能力。这次我们降低了他的护盾生命值，削弱他在被敌人突破防御时的生存能力。",
+     "general": [
+      "护盾生命值从275减少至250。"
+     ],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "超能恢复",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "伤害转化率从40%降低至30%。"
+       ]
+      }
+     ],
+     "abilities": []
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "输出",
+   "role": "damage",
+   "description": null,
+   "heroes": [
+    {
+     "slug": "cassidy",
+     "name_en": "Cassidy",
+     "name_cn": "卡西迪",
+     "role": "damage",
+     "dev_note": "“银质子弹”的弹道尺寸之前得到了扩大，可以让强化射击更容易命中，进而提升了这个威能的效果。这次我们决定移除这个加成，同时保留它的伤害潜力。",
+     "general": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "银质子弹",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "弹道尺寸从0.17米降低至0.07米。"
+       ]
+      }
+     ],
+     "abilities": []
+    },
+    {
+     "slug": "",
+     "name_en": null,
+     "name_cn": "弗蕾娅",
+     "role": "damage",
+     "dev_note": "我们通过缩短“瞄准射击”的爆炸延迟，从而缩短命中和造成伤害之间的时间，制造出更连贯的后续攻击机会，同时削弱了弩矢击中对手时的干扰效果。其他改动的目的是为了优化“瞄准射击”和“速射弩”主要攻击模式之间的连贯性。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "速射弩",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "射速从每秒5发提高至每秒5.5发。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "瞄准射击",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "射击间隔从0.5秒缩短至0.4秒。",
+         "before": 0.5,
+         "after": 0.4,
+         "metric": "射击间隔"
+        },
+        {
+         "text_en": null,
+         "text_cn": "爆炸延迟从1秒缩短至0.8秒。",
+         "before": 1.0,
+         "after": 0.8,
+         "metric": "爆炸延迟"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "reaper",
+     "name_en": "Reaper",
+     "name_cn": "死神",
+     "role": "damage",
+     "dev_note": "“死神”的生命池之前遭到了削弱，这限制了他在长时间战斗中的持久能力。这次我们决定提升他的被动技能的效果，帮他重拾一些持续作战能力，同时鼓励玩家采取更积极的战斗方式。",
+     "general": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "灵魂收割",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "灵魂之球的收集半径从5米延长至8米。"
+       ]
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "收割",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "生命汲取从25%提高至30%。",
+         "before": 25.0,
+         "after": 30.0,
+         "metric": "生命汲取"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "shion",
+     "name_en": "Shion",
+     "name_cn": "死怨",
+     "role": "damage",
+     "dev_note": "这次我们缩短了“交叉枪决”的恢复时间，可以让使用这个技能之后的等待时间与死怨的攻击间隔更加接近。另外我们也降低了“纵情狂飙”的命中伤害，削弱了她在持续冲撞目标时的威力，以及在命中时立即引爆摩托车的连续打击潜力。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "交叉枪决",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "恢复时间从0.4秒缩短至0.3秒。",
+         "before": 0.4,
+         "after": 0.3,
+         "metric": "恢复时间"
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "纵情狂飙",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "骑乘时的命中伤害从60点降低至30点。",
+         "before": 60.0,
+         "after": 30.0,
+         "metric": "骑乘时的命中伤害"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "",
+     "name_en": null,
+     "name_cn": "西拉",
+     "role": "damage",
+     "dev_note": "我们对“锚点无人机”进行了调整，提高了部署频率，提供了更多的走位机会。其冷却时间和持续时间也有所缩短，而其生命值得到了提高，增强它在战斗中的生存能力。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "锚点无人机",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从12秒缩短至11秒。",
+         "before": 12.0,
+         "after": 11.0,
+         "metric": "冷却时间"
+        },
+        {
+         "text_en": null,
+         "text_cn": "持续时间从10秒缩短至9秒。",
+         "before": 10.0,
+         "after": 9.0,
+         "metric": "持续时间"
+        },
+        {
+         "text_en": null,
+         "text_cn": "生命值从80点提高至125点。",
+         "before": 80.0,
+         "after": 125.0,
+         "metric": "生命值"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "vendetta",
+     "name_en": "Vendetta",
+     "name_cn": "斩仇",
+     "role": "damage",
+     "dev_note": "由于前几个赛季的大幅调整，“斩仇”陷入了低潮。我们回调了“帕拉蒂尼之牙”的“竖直劈斩”攻击范围，进而恢复了她逼近目标、确保拿下消灭的能力。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "帕拉蒂尼之牙",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "“竖直劈斩”范围加成从2.0米提高至2.5米。",
+         "before": 2.0,
+         "after": 2.5,
+         "metric": "范围加成"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "venture",
+     "name_en": "Venture",
+     "name_cn": "探奇",
+     "role": "damage",
+     "dev_note": "我们这次缩短了“猛钻”的冷却时间，缩短了“探奇”使用此技能的间隔，更符合它的恢复时间。这个改动可以提高“猛钻”在战斗中的使用频率，并优化它与主要威能“尘土满身”的协同效果。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "猛钻（快速近身攻击）",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间/恢复时间从1.6秒缩短至1.2秒。",
+         "before": 1.6,
+         "after": 1.2,
+         "metric": "恢复时间"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "支援",
+   "role": "support",
+   "description": null,
+   "heroes": [
+    {
+     "slug": "ana",
+     "name_en": "Ana",
+     "name_cn": "安娜",
+     "role": "support",
+     "dev_note": "支援职责缩短生命恢复延迟的被动效果移除后，安娜的自保能力遭到了削弱。这次我们提高了“生物手雷”的治疗量，强化了其防御功能，也顺便增强了它的攻击能力。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "生物手雷",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "爆炸伤害和治疗量从75点提高至90点。",
+         "before": 75.0,
+         "after": 90.0,
+         "metric": "爆炸伤害和治疗量"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "brigitte",
+     "name_en": "Brigitte",
+     "name_cn": "布丽吉塔",
+     "role": "support",
+     "dev_note": "这次我们调整了“鼓舞士气”，使其在触发时可以提供一定的瞬发治疗，让布丽吉塔能够提供更多的快速治疗，鼓励玩家持续、稳定地触发“鼓舞士气”。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "鼓舞士气",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在在触发时提供12点瞬发治疗量。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "持续治疗量从60点降低至45点。",
+         "before": 60.0,
+         "after": 45.0,
+         "metric": "持续治疗量"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "kiriko",
+     "name_en": "Kiriko",
+     "name_cn": "雾子",
+     "role": "support",
+     "dev_note": "之前我们缩短了“符”的恢复时间，增强了雾子提供治疗的手感和稳定性。然而她的整体治疗输出变得有些过高了，所以这次我们决定削弱她的基础治疗量，但保留对这个技能响应速度的优化。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "符",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "每发射弹治疗量从13点降低至12点。",
+         "before": 13.0,
+         "after": 12.0,
+         "metric": "每发射弹治疗量"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "lucio",
+     "name_en": "Lucio",
+     "name_cn": "卢西奥",
+     "role": "support",
+     "dev_note": "由于卢西奥拥有独特而强大的高速机动手段，因此他的整体实力一直在遭到削弱。这次我们提升了他的武器伤害，这样可以强化他的攻击能力，同时又不会进一步增强他的机动手段。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "音速扩音器",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "每枚射弹伤害从20提高至22。",
+         "before": 20.0,
+         "after": 22.0,
+         "metric": "每枚射弹伤害"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "角斗领域更新",
+   "role": null,
+   "description": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合改动",
+     "body": "攻防阵线随时间而提高的占领速度上限从200%提高至300%。 攻防阵线占领速度的提升率从每秒1%提高至每秒2%。",
+     "dev": "角斗领域的攻防阵线回合有时候会过长，特别是在对局中包含生存能力较强的英雄时。为了尽量避免这种情况，我们加快了控制点占领速度。"
+    }
+   ]
+  },
+  {
+   "type": "hero_update",
+   "title": "重装",
+   "role": "tank",
+   "description": null,
+   "heroes": [
+    {
+     "slug": "junker-queen",
+     "name_en": "Junker Queen",
+     "name_cn": "渣客女王",
+     "role": "tank",
+     "dev_note": null,
+     "general": [
+      "皇家子弹——异能",
+      "伤害从25降低至20。",
+      "给我跪下——异能",
+      "持续时间从2秒缩短至1.5秒。"
+     ],
+     "perks": [],
+     "abilities": []
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "输出",
+   "role": "damage",
+   "description": null,
+   "heroes": [
+    {
+     "slug": "cassidy",
+     "name_en": "Cassidy",
+     "name_cn": "卡西迪",
+     "role": "damage",
+     "dev_note": null,
+     "general": [
+      "铁胆枪手——异能",
+      "每装填一发弹药提供的治疗量从最大总生命值的2%提高至2.5%。"
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "junkrat",
+     "name_en": "Junkrat",
+     "name_cn": "狂鼠",
+     "role": "damage",
+     "dev_note": null,
+     "general": [
+      "嗖嗖润滑油——异能",
+      "对空中目标的伤害加成从10%提高至25%。"
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "mei",
+     "name_en": "Mei",
+     "name_cn": "美",
+     "role": "damage",
+     "dev_note": null,
+     "general": [
+      "减速雪球——异能",
+      "移除了“减速雪球”射弹的命中判定体积加成。",
+      "霜寒护甲——异能",
+      "从伤害至护甲的转化率从5%降低至3%。"
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "reaper",
+     "name_en": "Reaper",
+     "name_cn": "死神",
+     "role": "damage",
+     "dev_note": null,
+     "general": [
+      "加速收割——异能",
+      "每层提供的攻击速度从4%提高至5%。",
+      "无畏阴风——史诗生存英雄物品",
+      "“幽灵形态”持续时间从50%缩短至33%。"
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "torbjorn",
+     "name_en": "Torbjorn",
+     "name_cn": "托比昂",
+     "role": "damage",
+     "dev_note": null,
+     "general": [
+      "铁锤投掷——异能",
+      "添加了一个特效尾迹，以增强视觉清晰度。",
+      "愈伤铁匠——异能",
+      "治疗量从铁锤伤害的75%提高至100%。",
+      "快来拿护甲——异能",
+      "护甲提升比例从最大总生命值的20%降低至15%。",
+      "锚固螺栓——史诗技能英雄物品",
+      "技能强度从15%降低至10%。"
+     ],
+     "perks": [],
+     "abilities": []
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "支援",
+   "role": "support",
+   "description": null,
+   "heroes": [
+    {
+     "slug": "juno",
+     "name_en": "Juno",
+     "name_cn": "朱诺",
+     "role": "support",
+     "dev_note": "本次改动应该能降低“闪现推进”在与多个其他冷却时间缩减物品搭配时的效果上限。我们会持续关注“闪现推进”与其他“使用技能时”物品的协同效果。",
+     "general": [
+      "闪现推进——异能",
+      "现在将直接缩减“滑翔推进”的基础冷却时间，而非提供冷却时间缩减效果。与其他冷却时间缩减效果进行乘算，而非加算。"
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "kiriko",
+     "name_en": "Kiriko",
+     "name_cn": "雾子",
+     "role": "support",
+     "dev_note": null,
+     "general": [
+      "分身术——异能",
+      "分身拥有的效果从降低75%提升至降低65%。",
+      "锋锐苦无——异能",
+      "每次暴击提供的冷却时间缩减从15%提高至20%。"
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "lucio",
+     "name_en": "Lucio",
+     "name_cn": "卢西奥",
+     "role": "support",
+     "dev_note": null,
+     "general": [
+      "节奏轨道——异能",
+      "伤害加成从75%提高至100%。",
+      "取悦观众——异能",
+      "治疗量从“音波”伤害的33%提高至40%。"
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "mercy",
+     "name_en": "Mercy",
+     "name_cn": "天使",
+     "role": "support",
+     "dev_note": null,
+     "general": [
+      "扭曲光束——异能",
+      "过量生命值从最大总生命值的30%降低至25%。"
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "wuyang",
+     "name_en": "Wuyang",
+     "name_cn": "无漾",
+     "role": "support",
+     "dev_note": null,
+     "general": [
+      "通过造成伤害和提供治疗获得的角斗资金提高8.33%。"
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "zenyatta",
+     "name_en": "Zenyatta",
+     "name_cn": "禅雅塔",
+     "role": "support",
+     "dev_note": null,
+     "general": [
+      "觉悟之念——异能",
+      "治疗量从造成伤害的40%降低至30%。",
+      "静心之道——异能",
+      "治疗量降低效果从75%降低至80%。"
+     ],
+     "perks": [],
+     "abilities": []
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": null,
+   "role": null,
+   "description": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "物品改动",
+     "body": "沃斯卡娅军械——史诗武器综合物品 目标每拥有100点总生命值加成，对其造成的额外伤害从5%提高至6%。 装置极限优化器——史诗技能综合物品 装置冷却时间缩减从25%提高至35%。 三连发汤姆逊冲锋枪——史诗技能综合物品 为连续触发添加了0.5秒的内部冷却时间。 额外伤害从目标当前总生命值的5%降低至3%。 伤害持续时间从5秒缩短至3秒。 漩涡试剂——装置 费用从9500降低至9000。 冷却时间从25秒缩短至15秒。",
+     "dev": "“三连发汤姆逊冲锋枪”的输出表现过强，所以我们决定进行削弱，使得用它快速积累多层伤害加成变得更加困难。此外我们还强化了一些使用率较低的反制选项，特别是反飞行装置。"
+    }
+   ]
+  },
+  {
+   "type": "generic_update",
+   "title": "自定游戏更新",
+   "role": null,
+   "description": "在“设置>英雄>死怨”中为死怨添加了一个无限使用“纵情狂飙”的选项。",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "修复了死怨的英雄挑战无法按字母顺序排序的问题。 修复了毛加在切换两把链式步枪时，会导致准星散布不准确的问题。 修复了西拉的“开路先锋”无人机会被击晕技能打断的问题。 修复了高级信息面板的部分文字错误。",
+     "dev": null
+    },
+    {
+     "title": "角斗领域",
+     "body": "修复了“渣客女王”的“血犬面具”无法正确地根据创伤效果提供武器强度加成的问题。 修复了“末日铁拳”的“补天裂隙”会导致“毁天灭地”无视距离远近而造成全额伤害的问题。 修复了卡西迪的“铁胆枪手”会在装填完成前触发的问题。 修复了在使用“赛博毒液”造成技能伤害后，对盟友造成暴击治疗会对盟友施加治疗减免的问题。 修复了当“释放时跳墙”选项关闭时，卢西奥的“嘻哈唱跳”无法正常生效的问题。 修复了美的“凝霜回雪”无法正确地提供终极技能充能的问题。 修复了拉玛刹的“屏障”无法正确随技能强度变强的问题。 修复了当美的“减速雪球”异能在增益生效期间被出售后，在视觉上会始终显示为强化射弹的问题。 修复了雾子的“叶随风舞”有时会将敌人选定为目标的问题。 此前的更新已修复——修复了莫伊拉的“幽魂射线”效果数值不正确的问题。",
+     "dev": null
+    }
+   ]
+  }
+ ],
+ "raw_text": null,
+ "hash": "sha256:4b4ab720403593c54d3f0b6eee5cb22a206ddc9009ef1b358c4c7a27d4c967eb"
+}

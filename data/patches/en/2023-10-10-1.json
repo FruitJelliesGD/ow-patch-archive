@@ -1,0 +1,1033 @@
+{
+ "id": "en-2023-10-10-1",
+ "site": "en",
+ "date": "2023-10-10",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/10",
+ "title": "Overwatch 2 Retail Patch Notes - October 10, 2023",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "HALLOWEEN TERROR 2023",
+   "role": null,
+   "description": "Get ready for the spookiest event of the year as Overwatch 2 transforms into a haunted battleground. Halloween Terror is back with your favorite game modes—Junkenstein's Revenge, Wrath of the Bride, and Trials of Sanctuary, a new Blizzard crossover game mode. Team up with the heroes of Sanctuary, power up their abilities, and defeat powerful bosses, including Butcher Roadhog, Azmodan Wrecking Ball, and Lilith Moira.",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "NEW MAP - SAMOA",
+   "role": null,
+   "description": "Samoa is a new Control map where you’ll fight on a tropical beach, a gleaming city, and inside a volcano! Watch out for deadly pitfalls, or you might just be swimming in lava! Samoa will be available to play right away in a dedicated Arcade card and will appear in Quick Play and other unranked modes starting on October 10 with it appearing in Competitive Play later in the season.",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "HERO REWORK – SOMBRA",
+   "role": null,
+   "description": "We approached the Sombra Rework by identifying key goals to guide decisions throughout the design iteration process: make Sombra more committal when engaging, increase the active feel in her ability kit, and uphold the current Hacker fantasy. With these goals, there were multiple angles to tackle around her existing kit. Naturally, many ideas were also meant to address frustrations playing against the character, ensuring there is proper counterplay for enemies.",
+   "heroes": [
+    {
+     "slug": "sombra",
+     "name_en": "Sombra",
+     "name_cn": "黑影",
+     "role": "damage",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Machine Pistol",
+       "name_cn": null,
+       "slug": "machine-pistol",
+       "changes": [
+        {
+         "text_en": "Damage increased from 7.5 to 8.",
+         "text_cn": null,
+         "before": 7.5,
+         "after": 8.0,
+         "metric": "damage"
+        },
+        {
+         "text_en": "Minimum Spread reduced from 0.5 to 0.",
+         "text_cn": null,
+         "before": 0.5,
+         "after": 0.0,
+         "metric": "minimum spread"
+        },
+        {
+         "text_en": "Number of shots until max spread has been increased from 3 to 6 shots.",
+         "text_cn": null,
+         "before": 3.0,
+         "after": 6.0,
+         "metric": "number of shots until max spread has been"
+        },
+        {
+         "text_en": "Reload time reduced from 1.4 seconds to 1.2 seconds.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Hack",
+       "name_cn": null,
+       "slug": "hack",
+       "changes": [
+        {
+         "text_en": "Cast time reduced from 0.75 seconds to 0.65 seconds.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Now cancels Stealth when hacking an enemy hero.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Cooldown increased from 4 to 6 seconds.",
+         "text_cn": null,
+         "before": 4.0,
+         "after": 6.0,
+         "metric": "cooldown"
+        },
+        {
+         "text_en": "Hack has a reduced cooldown of 3 seconds if Hack is interrupted or if a non-hero enemy is hacked.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "The \"Hacked\" warning text will now only appear while you are silenced and not for the remainder duration of the hack debuff.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Opportunist",
+       "name_cn": null,
+       "slug": "opportunist",
+       "changes": [
+        {
+         "text_en": "Removed.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Stealth",
+       "name_cn": null,
+       "slug": "stealth",
+       "changes": [
+        {
+         "text_en": "Ability reworked to be a passive. Sombra automatically becomes invisible after 3.5 seconds while not shooting, using a damaging ability, or receiving damage.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Stealth movement speed bonus reduced from 60% to 45%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Fade Out duration into Stealth reduced from 0.375 seconds to 0.25 seconds.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Fade In duration from Stealth reduced from 0.5 seconds to 0.375 seconds.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Updated the UI messaging to the Sombra player when hacking Health Packs to \"Revealed\" instead of \"Detected\". Now the message \"Detected\" is only used when an enemy player is in the detection radius.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Translocator",
+       "name_cn": null,
+       "slug": "translocator",
+       "changes": [
+        {
+         "text_en": "Can no longer can be manually activated. Translocator will now automatically teleport Sombra after 0.25 seconds from being thrown or when impacting the environment.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Reduces the Stealth passive cooldown after teleporting.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Projectile speed increased from 25 to 72.",
+         "text_cn": null,
+         "before": 25.0,
+         "after": 72.0,
+         "metric": "projectile speed"
+        },
+        {
+         "text_en": "Cooldown reduced from 6 seconds to 5 seconds. Cooldown now begins after",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Sombra teleports to the location of the Transponder.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Projectile launch initial vertical offset removed.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "EMP",
+       "name_cn": null,
+       "slug": "emp",
+       "changes": [
+        {
+         "text_en": "Ultimate charge cost increased by 15%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Health percent damage decreased from 40% to 30%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Virus",
+       "name_cn": null,
+       "slug": "virus",
+       "changes": [
+        {
+         "text_en": "This is a new ability assigned to Ability 1 by default.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Fire a projectile that damages an enemy over time. Damage is dealt faster on Hacked enemies.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Impact Damage: 10 (20 on hacked target).",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Damage over time: 100 over 4 seconds (100 over 2 seconds on hacked target).",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "GENERAL UPDATES",
+   "role": null,
+   "description": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "GROUP RESPAWN",
+     "body": "Heroes who die within 5 seconds of each other will respawn together, resulting in some players having either a slightly longer or shorter queue than the standard 10 seconds. Heroes who die more than 5 seconds from another player eliminated will still respawn in 10 seconds on their own. These changes do not apply to Competitive Play mode.",
+     "dev": "Developer Comments: We think that team fights are some of the most enjoyable moments in our game, but we've all been in matches where team cohesion--or lack thereof--makes these moments a rarity. These matches often turn into stomps for the team that can't group up, and preventing stomps is a high priority for us. As such, this season, we're modifying how heroes respawn for Quick Play. Heroes that die within 5 seconds of each other will be respawned in a wave together. This means that respawn times will sometimes change in order for heroes to respawn together. If a hero dies further apart than 5 seconds from another death on their team, they'll still respawn in 10 seconds as they would have in the past. We'll be listening closely to feedback on this new system, and depending on the response and making any changes, we will consider adding these adjustments to Competitive Play in a later season."
+    },
+    {
+     "title": "UNRANKED LEAVER PENALTIES",
+     "body": "75% XP penalty removed. The penalty thresholds have not changed, but the mechanics have also never been completely explained. The last 20 games played a player participated in are recorded. Leaving four of these 20 games activates the first penalty threshold. Leaving six of these 20 games activates the second penalty threshold. Queuing for most game modes is now suspended when a player leaves a match inside a penalty threshold. Players that reach the first penalty threshold will be suspended for 10 minutes. Players that reach the second penalty threshold will be suspended for 30 minutes. The queue suspension will reapply each time a player leaves a game when they are above the first penalty threshold but not when they complete their games. Consecutive Match XP bonus has been renamed to Endurance Bonus. Endurance Bonus is XP granted when finishing matches without leaving the previous match.",
+     "dev": "Developer Comments: Previously, if players left too many games, we would apply a 75% penalty to their Battle Pass XP that is gained. We found this had very little impact on those who leave deliberately and severely impacted those who don’t have much time to play but want to earn the rewards in our season Battle Pass. We’re changing this to make it more difficult for players who leave games to be disruptive while not applying too much impact to those who don’t intend on ruining the experience for others."
+    },
+    {
+     "title": "STORY MISSIONS",
+     "body": "You can now spectate any Story Mission that your friends are playing if you own the campaign pack for that mission.",
+     "dev": null
+    },
+    {
+     "title": "HERO MASTERY",
+     "body": "Scoring Update Bonus score granted from time remaining in the gold bonus tier is now accurate to one-hundredth of a second. (Previously completed games in the Top 500 leaderboards are not adjusted.) The user interface has been updated to display this new time accuracy everywhere that we display time and score. Replays Hero Mastery now supports replays. Replays are saved for any completed course that results in a new scoring record. The user interface for Hero Mastery replays has been customized to display score, time, and other information.",
+     "dev": null
+    },
+    {
+     "title": "PLAYER PROGRESSION",
+     "body": "Lowered show priority for Time Played and Wins sub-badges in the Showcase. Added Virus Kills to Sombra's sub-badge set.",
+     "dev": "Developer comments: All heroes share the Time Played and Wins sub-badges. This change is intended to highlight each hero’s unique sub-badges to better reflect individual playstyle."
+    },
+    {
+     "title": "CHALLENGES",
+     "body": "Reduced the number of wins required to unlock Sojourn, Junker Queen and Kiriko through Hero challenges. Illari is now unlockable through Hero challenges.",
+     "dev": null
+    }
+   ]
+  },
+  {
+   "type": "generic_update",
+   "title": "HERO UPDATES",
+   "role": null,
+   "description": "HERO UPDATES",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "TANK",
+   "role": null,
+   "description": null,
+   "heroes": [
+    {
+     "slug": "orisa",
+     "name_en": "Orisa",
+     "name_cn": "奥丽莎",
+     "role": "tank",
+     "dev_note": "Developer Comments: We are further readjusting Orisa's survivability, which was originally increased due to the armor-damage reduction stacking change we made several patches ago. This particular change is relatively light as we still want her to be an effective pick against teams that lean on crowd control.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Fortify",
+       "name_cn": null,
+       "slug": "fortify",
+       "changes": [
+        {
+         "text_en": "Damage reduction decreased from 50% to 45%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "ramattra",
+     "name_en": "Ramattra",
+     "name_cn": "拉玛刹",
+     "role": "tank",
+     "dev_note": "Developer Comments: This change lets Ramattra project his influence more frequently with Nemesis Form, which translates into increased survivability and damage. The flexibility also makes it less punishing if he swaps back to Omnic Form early to use the Void Barrier.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Nemesis Form",
+       "name_cn": null,
+       "slug": "nemesis-form",
+       "changes": [
+        {
+         "text_en": "Cooldown decreased from 8 to 7 seconds.",
+         "text_cn": null,
+         "before": 8.0,
+         "after": 7.0,
+         "metric": "cooldown"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "wrecking-ball",
+     "name_en": "Wrecking Ball",
+     "name_cn": "破坏球",
+     "role": "tank",
+     "dev_note": "Developer Comments: This change lets Wrecking Ball finish off enemies a bit more reliably when he’s outside of point-blank range and makes him less reliant on his Piledriver combos.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Quad Cannons",
+       "name_cn": null,
+       "slug": "quad-cannons",
+       "changes": [
+        {
+         "text_en": "Number of shots to reach max spread increased from 20 to 30.",
+         "text_cn": null,
+         "before": 20.0,
+         "after": 30.0,
+         "metric": "number of shots to reach max spread"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "zarya",
+     "name_en": "Zarya",
+     "name_cn": "查莉娅",
+     "role": "tank",
+     "dev_note": "Developer Comments: Zarya is using the barrier on her allies more often to peel or initiate combination plays, which makes the ability more team-oriented and less self-serving. This change preserves that interesting choice by keeping the cooldown reduced when used on an ally while targeting her energy sustain instead, which has increased significantly with the bonuses to the barrier health and size.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Projected Barrier",
+       "name_cn": null,
+       "slug": "projected-barrier",
+       "changes": [
+        {
+         "text_en": "Size decreased 15% now matching back to the size of Particle Barrier.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Health decreased from 225 to 200 matching back to the health of Particle Barrier.",
+         "text_cn": null,
+         "before": 225.0,
+         "after": 200.0,
+         "metric": "health"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "DAMAGE",
+   "role": null,
+   "description": null,
+   "heroes": [
+    {
+     "slug": "cassidy",
+     "name_en": "Cassidy",
+     "name_cn": "卡西迪",
+     "role": "damage",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Combat Roll",
+       "name_cn": "战术翻滚",
+       "slug": "combat-roll",
+       "changes": [
+        {
+         "text_en": "Damage reduction increased from 50% to 75%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "mei",
+     "name_en": "Mei",
+     "name_cn": "美",
+     "role": "damage",
+     "dev_note": "Developer Comment: We liked the one-two combo that Deep Chill provided, as it added an interesting layer for hero mastery. However, in practice, it increased the amount of crowd control suffered by enemy players while also reducing Mei's effectiveness. Rather than further increasing the slow or increasing cumulative combo damage, both of which would lead to a more frustrating experience for the opposing player, we are reverting Mei back to her balance prior to adding the Deep Chill passive.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Deep Chill",
+       "name_cn": null,
+       "slug": "deep-chill",
+       "changes": [
+        {
+         "text_en": "Removed.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Endothermic Blaster",
+       "name_cn": null,
+       "slug": "endothermic-blaster",
+       "changes": [
+        {
+         "text_en": "Damage per second increased from 70 to 100.",
+         "text_cn": null,
+         "before": 70.0,
+         "after": 100.0,
+         "metric": "damage per second"
+        },
+        {
+         "text_en": "Now immediately slows enemies by 40% instead of building up over time.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "torbjorn",
+     "name_en": "Torbjörn",
+     "name_cn": "托比昂",
+     "role": "damage",
+     "dev_note": "Developer Comments: Torbjorn's Rivet Gun can feel overwhelming with how quickly it shoots. This change reduces the firing cadence and makes it more manageable on the receiving end. Overload provides too much defensive value, so we are lowering the overhealth bonus.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Rivet Gun",
+       "name_cn": null,
+       "slug": "rivet-gun",
+       "changes": [
+        {
+         "text_en": "Primary fire recovery increased from .48 to .51 seconds.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Overload",
+       "name_cn": null,
+       "slug": "overload",
+       "changes": [
+        {
+         "text_en": "Overhealth bonus decreased from 100 to 75.",
+         "text_cn": null,
+         "before": 100.0,
+         "after": 75.0,
+         "metric": "overhealth bonus"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "SUPPORT",
+   "role": null,
+   "description": null,
+   "heroes": [
+    {
+     "slug": "brigitte",
+     "name_en": "Brigitte",
+     "name_cn": "布丽吉塔",
+     "role": "support",
+     "dev_note": "Developer Comment: This change increases her proficiency at protecting her allies by rewarding accuracy with her most aim-focused ability.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Whip Shot",
+       "name_cn": null,
+       "slug": "whip-shot",
+       "changes": [
+        {
+         "text_en": "Damage increased from 70 to 80.",
+         "text_cn": null,
+         "before": 70.0,
+         "after": 80.0,
+         "metric": "damage"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "illari",
+     "name_en": "Illari",
+     "name_cn": "伊拉锐",
+     "role": "support",
+     "dev_note": "Developer Comments: Illari's burst healing output is still a little too high, so we are lowering the effectiveness of the Solar Rifle secondary fire to bring her more in line with other support heroes.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Solar Rifle",
+       "name_cn": null,
+       "slug": "solar-rifle",
+       "changes": [
+        {
+         "text_en": "Secondary fire healing per second decreased from 120 to 105.",
+         "text_cn": null,
+         "before": 120.0,
+         "after": 105.0,
+         "metric": "secondary fire healing per second"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "MAP UPDATES",
+   "role": null,
+   "description": "MAP UPDATES ROUTE 66 DESIGN CHANGES There are now additional places for the attacking team to take cover around their initial spawn. The doors on the first checkpoint will now only close one of the two doors after the payload passes by giving attackers more options to work through the difficult choke points. There will also be fewer places to take cover in the later parts of the map. Before and After Before and After Before and After Before and After Before and After Before and After",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "LIGHTING FOR SEASON 7",
+   "role": null,
+   "description": "Push New Queen Street – Morning Colosseo – Evening Esperança – Morning Hybrid Blizzard World – Night Eichenwalde – Morning Hollywood – Morning King’s Row – Night Midtown - Night (New) Numbani – Morning Paraíso - Evening Escort Dorado – Evening Havana – Morning Watchpoint: Gibraltar – Morning Junkertown – Morning Circuit royal – Morning Rialto – Evening Route 66 - Overcast (New) Shambali Monastery – Night Control Antarctic Peninsula – Night Busan – Morning Ilios – Evening Lijiang Tower – Dawn Nepal – Morning Oasis – Morning Samoa -- Morning (New Map) Flashpoint New Junk City – Morning Suravasa – Morning",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "HERO OPTION AND INPUT UPDATES",
+   "role": null,
+   "description": "In addition to the hero balance adjustments in this update, we are implementing additional quality-of-life settings and additional input options for several hero abilities to give you the ability to custom-tailor your experience of playing your favorite heroes.",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "TANK",
+   "role": null,
+   "description": null,
+   "heroes": [
+    {
+     "slug": "d-va",
+     "name_en": "D.Va",
+     "name_cn": "D.Va",
+     "role": "tank",
+     "dev_note": null,
+     "general": [
+      "Added the hero-specific options:",
+      "Light Gun Input -- Primary Fire by default.",
+      "Relative Light Gun Aim Sensitivity – 100% by default.",
+      "Relative Light Gun Gyro Aim Sensitivity – 100% by default (only available on gyro-supported platforms)."
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "doomfist",
+     "name_en": "Doomfist",
+     "name_cn": "末日铁拳",
+     "role": "tank",
+     "dev_note": null,
+     "general": [
+      "Added the hero-specific option:",
+      "Swap Meteor Strike Confirm and Zoom Out Inputs – Off by default."
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "junker-queen",
+     "name_en": "Junker Queen",
+     "name_cn": "渣客女王",
+     "role": "tank",
+     "dev_note": null,
+     "general": [
+      "Added the hero-specific options:",
+      "Hide Commanding Shout Timer – Off by default.",
+      "Hold to use Jagged Blade – Off by default."
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "orisa",
+     "name_en": "Orisa",
+     "name_cn": "奥丽莎",
+     "role": "tank",
+     "dev_note": null,
+     "general": [
+      "Added the hero-specific option:",
+      "Hold to use Terra Surge – Off by default."
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "ramattra",
+     "name_en": "Ramattra",
+     "name_cn": "拉玛刹",
+     "role": "tank",
+     "dev_note": null,
+     "general": [
+      "Added the hero-specific options:",
+      "Void Barrier Confirmation Input - Secondary Fire Release by default.",
+      "Void Barrier UI – On by default."
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "reinhardt",
+     "name_en": "Reinhardt",
+     "name_cn": "莱因哈特",
+     "role": "tank",
+     "dev_note": null,
+     "general": [
+      "Added the hero-specific option:",
+      "Charge Cancel Input – Ability 1 by default, with Primary Fire, Secondary Fire, or All as additional options available."
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "roadhog",
+     "name_en": "Roadhog",
+     "name_cn": "路霸",
+     "role": "tank",
+     "dev_note": null,
+     "general": [
+      "Whole Hog",
+      "Whole Hog can now be fired with Secondary Fire.",
+      "Added the hero-specific options:",
+      "Relative Aim Sensitivity During Whole Hog - 100% by default.",
+      "Relative Gyro Aim Sensitivity During Whole Hog - 100% by default (Only available on gyro-supported platforms)."
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "sigma",
+     "name_en": "Sigma",
+     "name_cn": "西格玛",
+     "role": "tank",
+     "dev_note": null,
+     "general": [
+      "Added the hero-specific options:",
+      "Experimental Barrier UI - On by default.",
+      "Hide Gravitic Flux Timer - Off by default.",
+      "Gravitic Flux Confirmation Input - Primary Fire by default."
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "winston",
+     "name_en": "Winston",
+     "name_cn": "温斯顿",
+     "role": "tank",
+     "dev_note": null,
+     "general": [
+      "Primal Rage",
+      "Primal Rage melee attacks can now be fired with Secondary Fire and Quick Melee along with Primary Fire.",
+      "Added the hero-specific options:",
+      "Relative Aim Sensitivity During Primal Rage - 100% by default.",
+      "Relative Gyro Aim Sensitivity During Primal Rage - 100% by default (Only available on gyro-supported platforms)."
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "wrecking-ball",
+     "name_en": "Wrecking Ball",
+     "name_cn": "破坏球",
+     "role": "tank",
+     "dev_note": null,
+     "general": [
+      "Added the hero-specific options:",
+      "Hide Adaptive Shields Timer - Off by default.",
+      "Adaptive Shields UI - On by default.",
+      "Piledriver UI - On by default."
+     ],
+     "perks": [],
+     "abilities": []
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "DAMAGE",
+   "role": null,
+   "description": null,
+   "heroes": [
+    {
+     "slug": "echo",
+     "name_en": "Echo",
+     "name_cn": "回声",
+     "role": "damage",
+     "dev_note": null,
+     "general": [
+      "Added the hero-specific options:",
+      "Toggle Glide – Off by default.",
+      "Secondary Fire Activates Glide on Gamepad - On by default."
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "genji",
+     "name_en": "Genji",
+     "name_cn": "源氏",
+     "role": "damage",
+     "dev_note": null,
+     "general": [
+      "Dragonblade:",
+      "Dragonblade melee attacks can now be fired with Secondary Fire and Quick Melee along with Primary Fire.",
+      "Added the hero-specific options:",
+      "Hide Dragonblade Timer – Off by default.",
+      "Relative Aim Sensitivity During Dragonblade - 100% by default.",
+      "Relative Gyro Aim Sensitivity During Dragonblade - 100% by default (Only available on gyro-supported platforms)."
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "hanzo",
+     "name_en": "Hanzo",
+     "name_cn": "半藏",
+     "role": "damage",
+     "dev_note": null,
+     "general": [
+      "Added the hero-specific option:",
+      "Toggle Primary Fire – Off by default."
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "mei",
+     "name_en": "Mei",
+     "name_cn": "美",
+     "role": "damage",
+     "dev_note": null,
+     "general": [
+      "Added the hero-specific option:",
+      "Cryo-freeze Cancel Input – All by default."
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "pharah",
+     "name_en": "Pharah",
+     "name_cn": "法老之鹰",
+     "role": "damage",
+     "dev_note": null,
+     "general": [
+      "Added the hero-specific options:",
+      "Relative Aim Sensitivity During Rocket Barrage - 100% by default.",
+      "Relative Gyro Aim Sensitivity During Rocket Barrage - 100% by default (only available on gyro-supported platforms)."
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "reaper",
+     "name_en": "Reaper",
+     "name_cn": "死神",
+     "role": "damage",
+     "dev_note": null,
+     "general": [
+      "Added the hero-specific option:",
+      "Wraith Form Cancel Input – All by default."
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "soldier-76",
+     "name_en": "Soldier: 76",
+     "name_cn": "士兵76",
+     "role": "damage",
+     "dev_note": null,
+     "general": [
+      "Relative Aim Sensitivity During Tactical Visor – 100% by default.",
+      "Relative Gyro Aim Sensitivity During Tactical Visor – 100% by default (Only available on gyro-supported platforms)."
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "torbjorn",
+     "name_en": "Torbjörn",
+     "name_cn": "托比昂",
+     "role": "damage",
+     "dev_note": null,
+     "general": [
+      "Molten Core:",
+      "Molten Core can now be fired with Secondary Fire along with Primary Fire.",
+      "Added the hero-specific options:",
+      "Relative Aim Sensitivity During Molten Core - 100% by default.",
+      "Relative Gyro Aim Sensitivity During Molten Core - 100% by default (Only available on gyro-supported platforms)."
+     ],
+     "perks": [],
+     "abilities": []
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "SUPPORT",
+   "role": null,
+   "description": null,
+   "heroes": [
+    {
+     "slug": "lifeweaver",
+     "name_en": "Lifeweaver",
+     "name_cn": "生命之梭",
+     "role": "support",
+     "dev_note": null,
+     "general": [
+      "Added the hero-specific options:",
+      "Tree of Life Cancel Input – Ability 3 by default."
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "lucio",
+     "name_en": "Lúcio",
+     "name_cn": "卢西奥",
+     "role": "support",
+     "dev_note": null,
+     "general": [
+      "Added the hero-specific option:",
+      "Toggle Wall Ride - Off by default."
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "mercy",
+     "name_en": "Mercy",
+     "name_cn": "天使",
+     "role": "support",
+     "dev_note": null,
+     "general": [
+      "Added the hero-specific options:",
+      "Toggle Angelic Descent - Off by default.",
+      "Secondary Fire Activates Angelic Descent on Gamepad - On by default."
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "moira",
+     "name_en": "Moira",
+     "name_cn": "莫伊拉",
+     "role": "support",
+     "dev_note": null,
+     "general": [
+      "Added the hero-specific options:",
+      "Swap Biotic Orb Heal and Damage inputs - Off by default.",
+      "Hide Coalescence Timer - Off by default.",
+      "Relative Aim Sensitivity During Coalescence - 100% by default.",
+      "Relative Gyro Aim Sensitivity During Coalescence - 100% by default (Only available on gyro-supported platforms)."
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "zenyatta",
+     "name_en": "Zenyatta",
+     "name_cn": "禅雅塔",
+     "role": "support",
+     "dev_note": null,
+     "general": [
+      "Added the hero-specific option:",
+      "Toggle Secondary Fire - Off by default."
+     ],
+     "perks": [],
+     "abilities": []
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "BUG FIXES",
+   "role": null,
+   "description": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "GENERAL",
+     "body": "Fixed a bug where some players were unable to capture Plays of the Game using the in-game capture system. Fixed an issue with the 'Random' option for Victory Poses and Highlight Intros not saving. Fixed a bug that could result in Support Heroes losing the ability to see allied health bars in Control matches. Fixed an issue with the camera breaking during Plays of the Game if the player used a Souvenir during the play.",
+     "dev": null
+    },
+    {
+     "title": "MAPS",
+     "body": "Watchpoint: Gibraltar Fixed an issue with the end-of-game line-up camera clipping into the environment. Junkertown Fixed an area of the map that allowed turrets to be placed inside the environment. New Junk City Fixed some areas of the map that caused players to get stuck. Fixed lighting in some areas around the map. Fixed areas of the map that had gaps in its collision. Rialto Fixed an area near the boat docks that could result in players becoming stuck. Suravasa Fixed lighting in several areas on the map. Fixed some collision on the map that could cause some odd interactions with certain ultimate abilities.",
+     "dev": null
+    },
+    {
+     "title": "STORY MISSIONS",
+     "body": "Toronto Mission Fixed a few areas on the map that could trap Tracer.",
+     "dev": null
+    },
+    {
+     "title": "HEROES",
+     "body": "Cassidy Fixed a bug that caused Magnetic Grenade to not detach from eliminated targets. Illari Fixed an issue that prevented the Perfect Placement achievement from completing in some cases. Fixed an interaction with Healing Pylon and Lifeweaver's Tree of Life, the pylon should now pass through the tree's canopy. Fixed an issue with Captive Sun that resulted in the normal primary fire being used if fired at the end of the ultimate duration. Fixed a bug with Illari's secondary fire that could cause performance issues. Kiriko Fixed an interaction that prevented the 'Debuffs Cleansed' emblem from counting Captive Sun effects cleansed with Kiriko's Protection Suzu. Fixed an issue that allowed Kiriko to teleport outside of the playable space. Lifeweaver Fixed an issue where Lifeweaver would call out an enemy Petal Platform as his own when pinging. Mei Fixed a bug that prevented damage from Mei's alternate fire from being counted toward the progress of the 'Weapon Damage' emblem. Sigma Fixed an issue with Kinetic Grasp that prevented the following abilities from being converted into overhealth: Ramattra's Ravenous Vortex, Mei's Blizzard, Sojourn's Disruptor Shot. Symmetra Fixed Symmetra's footsteps failing to play while crouched.",
+     "dev": null
+    }
+   ]
+  }
+ ],
+ "raw_text": null,
+ "hash": "sha256:9029f1b51a8eab73daac607be40a577da1bd6351ce59cd8fd5c57b2fba11b571"
+}

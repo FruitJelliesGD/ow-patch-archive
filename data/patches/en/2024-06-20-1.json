@@ -1,0 +1,629 @@
+{
+ "id": "en-2024-06-20-1",
+ "site": "en",
+ "date": "2024-06-20",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/06",
+ "title": "Overwatch 2 Retail Patch Notes - June 20, 2024",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "Season 11 – Super Mega Ultrawatch",
+   "role": null,
+   "description": "Join Ultrawatch for an action-packed season! Suit up and battle the forces of evil led by the fallen Mythic Calamity Empress Ashe and her sidekick B.O.B, then claim and customize Mythic Ashe's diabolical dark mage style for your own. Celebrate as Overwatch reaches 100 million players, marked by the long-requested return of Pink Mercy alongside a new Rose Gold Mercy Bundle. From June 25 – July 8, 2024, Blizzard will donate 100% of the purchase price (excluding any applicable platform fees and taxes) to the Breast Cancer Research Foundation. Continue the celebration by unlocking the Aztec Sombra Bundle through challenges and enjoy a fun Community Crafted mode curated by beloved streamers.",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "Community Crafted Mode",
+   "role": null,
+   "description": "Dive into a new Community Crafted mode, featuring creative and chaotic balance changes and fun hero tweaks designed by your favorite content creators. Emongg, Custa, TQQ, and Eskay bring their creative touches to Tank, projectile Damage, hitscan Damage, and Support heroes, respectively. Experience wacky hero abilities such as Baptiste sharing his kit with Ana, and Reaper's Wraith Form getting an extra sting.",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "Hero Mastery Updates",
+   "role": null,
+   "description": "Sharpen your kunai and master your aim when Hero Mastery single-player courses for both Kiriko and Soldier: 76 launch this season. Practice your Swift Step and power up your Tactical Visor as you take part in new challenges in a limited-time event from June 20 to July 9. Plus, earn new rewards and up to 22,500 Battle Pass XP. Hero Mastery Courses for Solider: 76 and Kiriko have been added. Hero Mastery Gauntlet Co-op has been removed.",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "New Map: Runasapi",
+   "role": null,
+   "description": "Hike your way up the new Runasapi Push map, to a town hidden high in the Peruvian Andes. Amble through marketplaces full of fresh produce and pay a visit to the Inti Warrior Historical Museum and Monument. This exciting Push map is vibrant and challenging as you escort TS-1 through tight streets. Watch out as some fights may take place precariously close to the steep cliffs overlooking the sunny farmlands below.",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "Challenge Updates",
+   "role": null,
+   "description": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "Weekly Challenge Catch Up",
+     "body": "All past incomplete Weekly Challenges can be completed at any time in a given season. When the Weekly Reset occurs on Tuesdays, incomplete Weekly Challenges gain an additional copy of that challenge. When a Weekly Challenge is completed, if that challenge has copies remaining, the Challenge will refresh and can be completed again.",
+     "dev": null
+    },
+    {
+     "title": "Weekly Milestones",
+     "body": "Weekly Milestones are challenges progressed by completing other Weekly Challenges. Each week, a new Weekly Milestone is unlocked. All past Weekly Milestones can be completed at any time in a given season. Weekly Milestones progress one at a time. All past Weekly Milestones must be completed to progress a Weekly Milestone.",
+     "dev": null
+    }
+   ]
+  },
+  {
+   "type": "generic_update",
+   "title": "Competitive Play Updates",
+   "role": null,
+   "description": "Rank Percentage is now displayed on the Competitive Progress page allowing you to check your exact percentage without playing another match. Renamed the Modifiers \"Win Streak\" and \"Loss Streak\" to \"Win Trend\" and \"Loss Trend\" to more accurately convey that these modifiers are calculated by weighing the most recent games more heavily, but that they are not true streaks. Added more parameters for how the matchmaker handles wide groups, so that it can ensure better queue times. A button that allows you to view the match’s final Scoreboard has been added to each page during the end-of-game flow.",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "Hero Updates",
+   "role": null,
+   "description": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "General",
+     "body": "Knockdown time when two charging abilities collide reduced from 2 to 1.7 seconds.",
+     "dev": "Developer Comments: This stun time reduction applies to the knockdown that happens when two charging abilities collide and result in a tie (with Reinhardt, Doomfist, Brigitte, Mauga, Bob). The counterplay and interaction of two charging abilities impacting each other is great, but it took both players out of the fight a little too long."
+    }
+   ]
+  },
+  {
+   "type": "hero_update",
+   "title": "Tank",
+   "role": "tank",
+   "description": null,
+   "heroes": [
+    {
+     "slug": "d-va",
+     "name_en": "D.Va",
+     "name_cn": "D.Va",
+     "role": "tank",
+     "dev_note": "Developer Comments: These changes will improve D.Va's effectiveness against smaller targets as she became less effective against armored enemies in the previous patch.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Fusion Cannons",
+       "name_cn": null,
+       "slug": "fusion-cannons",
+       "changes": [
+        {
+         "text_en": "Weapon spread reduced from 3.75 to 3.375 degrees.",
+         "text_cn": null,
+         "before": 3.75,
+         "after": 3.375,
+         "metric": "weapon spread"
+        }
+       ]
+      },
+      {
+       "name_en": "Boosters",
+       "name_cn": null,
+       "slug": "boosters",
+       "changes": [
+        {
+         "text_en": "Impact damage increased from 15 to 25.",
+         "text_cn": null,
+         "before": 15.0,
+         "after": 25.0,
+         "metric": "impact damage"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "junker-queen",
+     "name_en": "Junker Queen",
+     "name_cn": "渣客女王",
+     "role": "tank",
+     "dev_note": "Developer Comments: The Tank knockback resistance passive was affecting Junker Queen's pull effect more than intended. The distance can be affected by their movement, but Tanks are now pulled in about 5-6 meters instead of only 3 meters or so.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Jagged Blade",
+       "name_cn": null,
+       "slug": "jagged-blade",
+       "changes": [
+        {
+         "text_en": "Now pulls tanks further.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Rampage",
+       "name_cn": null,
+       "slug": "rampage",
+       "changes": [
+        {
+         "text_en": "Startup time reduced from 0.75 to 0.5 seconds.",
+         "text_cn": null,
+         "before": 0.75,
+         "after": 0.5,
+         "metric": "startup time"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "orisa",
+     "name_en": "Orisa",
+     "name_cn": "奥丽莎",
+     "role": "tank",
+     "dev_note": "Developer Comments: Orisa's survivability was reduced more than necessary in her last round of changes so we're partially reverting the cooldown increase to Javelin Spin.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Javelin Spin",
+       "name_cn": null,
+       "slug": "javelin-spin",
+       "changes": [
+        {
+         "text_en": "Cooldown reduced from 9 to 8 seconds.",
+         "text_cn": null,
+         "before": 9.0,
+         "after": 8.0,
+         "metric": "cooldown"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "roadhog",
+     "name_en": "Roadhog",
+     "name_cn": "路霸",
+     "role": "tank",
+     "dev_note": "Developer Comments: Roadhog's already-powerful survivability increased significantly with the headshot damage reduction from the tank role passive so these changes are to help bring that back in line.",
+     "general": [
+      "Base health reduced from 650 to 600."
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Take a Breather",
+       "name_cn": null,
+       "slug": "take-a-breather",
+       "changes": [
+        {
+         "text_en": "Damage reduction reduced from 50 to 40%.",
+         "text_cn": null,
+         "before": 50.0,
+         "after": 40.0,
+         "metric": "damage reduction"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "Damage",
+   "role": "damage",
+   "description": null,
+   "heroes": [
+    {
+     "slug": "cassidy",
+     "name_en": "Cassidy",
+     "name_cn": "卡西迪",
+     "role": "damage",
+     "dev_note": "Developer Comments: We’re reverting the Magnetic Grenade ability to be deployed like Cassidy's previous Flashbang ability, but it will keep the Hinder effect instead of a full stun. We've heard feedback surrounding the Magnetic Grenade ability and agree that while the fantasy of a homing grenade was fun, the moment-to-moment gameplay of it often felt too unpredictable as to whether it would land or not. The Hinder effect has been a useful tool to act as a counter to highly mobile heroes without going back to a full stun and the enemy player losing the ability to fight back. The Deadeye ultimate is getting an adjustment to increase its flexibility toward the end of its duration, enabling it to get value outside of buying time for Cassidy or his allies, though it may be riskier to hold it for a long time as the damage reduction will fade away along with the movement speed penalty.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Peacekeeper",
+       "name_cn": "维和者",
+       "slug": "peacekeeper",
+       "changes": [
+        {
+         "text_en": "Secondary fire \"Fan the Hammer\" damage reduced from 50 to 45.",
+         "text_cn": null,
+         "before": 50.0,
+         "after": 45.0,
+         "metric": "damage"
+        }
+       ]
+      },
+      {
+       "name_en": "Combat Roll",
+       "name_cn": "战术翻滚",
+       "slug": "combat-roll",
+       "changes": [
+        {
+         "text_en": "Damage reduction reduced from 75 to 50%.",
+         "text_cn": null,
+         "before": 75.0,
+         "after": 50.0,
+         "metric": "damage reduction"
+        }
+       ]
+      },
+      {
+       "name_en": "Flashbang",
+       "name_cn": "闪光弹",
+       "slug": "flashbang",
+       "changes": [
+        {
+         "text_en": "Magnetic Grenade ability is now Flashbang.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Hinders enemies instead of Stunning them for 1.2 seconds.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Movement speed reduction increased from 30% to 50%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Hinder now prevents crouching movement.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "45 explosive damage.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "12 second cooldown.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Deadeye",
+       "name_cn": "神射手",
+       "slug": "deadeye",
+       "changes": [
+        {
+         "text_en": "Movement speed penalty now scales down over time, from 70% to 35%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Damage reduction now scales down over time, from 40% to 0%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "mei",
+     "name_en": "Mei",
+     "name_cn": "美",
+     "role": "damage",
+     "dev_note": "Developer Comments: Mei's damage output over time is intended to be on the low end for a Damage hero, as she offers strong utility and survivability through her ability kit, but we would like to make the secondary fire icicle more rewarding by increasing the damage and slightly more difficult to land consistently.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Endothermic Blaster",
+       "name_cn": null,
+       "slug": "endothermic-blaster",
+       "changes": [
+        {
+         "text_en": "Secondary fire base projectile size reduced from 0.15 to 0.12 meters.",
+         "text_cn": null,
+         "before": 0.15,
+         "after": 0.12,
+         "metric": "secondary fire base projectile size"
+        },
+        {
+         "text_en": "Secondary fire damage increased from 75 to 85.",
+         "text_cn": null,
+         "before": 75.0,
+         "after": 85.0,
+         "metric": "secondary fire damage"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "reaper",
+     "name_en": "Reaper",
+     "name_cn": "死神",
+     "role": "damage",
+     "dev_note": "Developer Comments: With the previous patch change to how armor reduces damage, shotgun weapon heroes like Reaper lost some value since much of their gameplan revolved around pressuring large tank heroes. To help shift Reaper toward being more effective against smaller targets we're tightening the weapon spread on the Hellfire Shotguns and reducing the amount of time enemies have to react to his Shadow Step teleport.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Hellfire Shotguns",
+       "name_cn": "狱火散弹枪",
+       "slug": "hellfire-shotguns",
+       "changes": [
+        {
+         "text_en": "Weapon spread reduced from 6.5 to 6 degrees.",
+         "text_cn": null,
+         "before": 6.5,
+         "after": 6.0,
+         "metric": "weapon spread"
+        }
+       ]
+      },
+      {
+       "name_en": "Shadow Step",
+       "name_cn": "幽灵步",
+       "slug": "shadow-step",
+       "changes": [
+        {
+         "text_en": "Cast time reduced from 1.5 to 1.2 seconds.",
+         "text_cn": null,
+         "before": 1.5,
+         "after": 1.2,
+         "metric": "cast time"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "sojourn",
+     "name_en": "Sojourn",
+     "name_cn": "索杰恩",
+     "role": "damage",
+     "dev_note": "Developer Comments: This change is reducing the burst damage potential of the secondary fire Railgun shot to both lessen frustration from playing against that burst damage, and to shift power into her sustained primary fire damage. This should smooth out the feast-or-famine nature of Sojourn consistently hitting the secondary fire shots.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Railgun",
+       "name_cn": null,
+       "slug": "railgun",
+       "changes": [
+        {
+         "text_en": "Secondary fire damage scaling reduced from 30-130 damage down to 1-100 damage.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Secondary fire projectile no longer requires Overclock to pierce enemy players.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Primary fire shots per second increased from 14 to 16.",
+         "text_cn": null,
+         "before": 14.0,
+         "after": 16.0,
+         "metric": "primary fire shots per second"
+        }
+       ]
+      },
+      {
+       "name_en": "Overclock",
+       "name_cn": null,
+       "slug": "overclock",
+       "changes": [
+        {
+         "text_en": "Energy charge rate increased from 100 to 120 per second.",
+         "text_cn": null,
+         "before": 100.0,
+         "after": 120.0,
+         "metric": "energy charge rate"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "symmetra",
+     "name_en": "Symmetra",
+     "name_cn": "秩序之光",
+     "role": "damage",
+     "dev_note": "Developer Comments: To help solidify Symmetra as a close-range threat, we're increasing her health to better survive in that range, along with how quickly her primary fire beam damage ramps up.",
+     "general": [
+      "Base health increased from 100 to 125 (Total health increased from 250 to 275)."
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Photon Projector",
+       "name_cn": null,
+       "slug": "photon-projector",
+       "changes": [
+        {
+         "text_en": "Primary fire charge rate increased 25%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "Support",
+   "role": "support",
+   "description": null,
+   "heroes": [
+    {
+     "slug": "illari",
+     "name_en": "Illari",
+     "name_cn": "伊拉锐",
+     "role": "support",
+     "dev_note": "Developer Comments: Illari's Healing Pylon is intended to be useful for healing her team in relatively safe positions without much focus required, which enables her to either apply pressure with her primary fire or spot heal in bursts from her more limited secondary fire healing beam. To encourage this, it now has improved health and healing output, but is less effective when Illari uses it to heal herself.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Outburst",
+       "name_cn": null,
+       "slug": "outburst",
+       "changes": [
+        {
+         "text_en": "Damage increased from 10 to 25.",
+         "text_cn": null,
+         "before": 10.0,
+         "after": 25.0,
+         "metric": "damage"
+        }
+       ]
+      },
+      {
+       "name_en": "Healing Pylon",
+       "name_cn": null,
+       "slug": "healing-pylon",
+       "changes": [
+        {
+         "text_en": "Healing per projectile increased from 30 to 40.",
+         "text_cn": null,
+         "before": 30.0,
+         "after": 40.0,
+         "metric": "healing per projectile"
+        },
+        {
+         "text_en": "Pylon healing is now only half as effective when targeting Illari.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Max health increased from 100 to 125.",
+         "text_cn": null,
+         "before": 100.0,
+         "after": 125.0,
+         "metric": "max health"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "kiriko",
+     "name_en": "Kiriko",
+     "name_cn": "雾子",
+     "role": "support",
+     "dev_note": "Developer Comments: \"Hard knockdown stuns\" refer to most all of the existing knockdowns where the player is stunned and laying on the ground (such as Reinhardt's Earthshatter), with the exception of Ana's Sleep Dart effect, which is removed upon taking damage or Protection Suzu's cleanse.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Swift Step",
+       "name_cn": null,
+       "slug": "swift-step",
+       "changes": [
+        {
+         "text_en": "Cooldown increased from 7 to 8 seconds.",
+         "text_cn": null,
+         "before": 7.0,
+         "after": 8.0,
+         "metric": "cooldown"
+        }
+       ]
+      },
+      {
+       "name_en": "Protection Suzu",
+       "name_cn": null,
+       "slug": "protection-suzu",
+       "changes": [
+        {
+         "text_en": "No longer cleanses hard knockdown stuns.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "Map Updates",
+   "role": null,
+   "description": "Map Updates Colosseo Removed the glass and added stairs at first checkpoint for additional pathing and combat opportunities. Extended the map with a new lowered section and mega health pack behind the second checkpoint for flank/rotational strategies Added a route through a building that connects spawn/final point to second checkpoint. The initial spawn building has been pulled back to give players more room to smoothly navigate the area out front. There is no added run back time with this change. The stairs and cover surrounding the final point have been adjusted to improve the flow of the space and to help teams safely defend the final point. Before and After Before and After Before and After",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "Push Map Updates",
+   "role": null,
+   "description": "Reduced the match time from 10 minutes to 8 minutes in Quick Play. Increased push robot speed by 10% when pushing the barricade for both Quick Play and Competitive.",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "Bug Fixes",
+   "role": null,
+   "description": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "Maps",
+     "body": "Numbani Fixed pieces of the environment that allowed abilities to pass through it. New Junk City Fixed lighting in some areas of the map. Hollywood Fixed areas of the map that could cause players to become temporarily stuck.",
+     "dev": null
+    },
+    {
+     "title": "Heroes",
+     "body": "Junker Queen Fixed a bug that caused Junker Queen's Commanding Shout to play the audio again when using a Teleporter. Reinhardt Charge now correctly damages Ice Wall and Tree of Life. Venture Fixed an interaction that allowed Venture to stay burrowed indefinitely. Fixed the description of Drill Dash to match its functionality. Fixed a bug with Tectonic Shock that could allow it to charge Venture's Ultimate Meter some situations. Zarya Fixed an interaction where a Particle Shielded Zarya standing on a Teleporter could prevent teammates from using the teleporter.",
+     "dev": null
+    }
+   ]
+  }
+ ],
+ "raw_text": null,
+ "hash": "sha256:8177f72b574a0d804dafe96309bda9f9964cd569a218919fdf90b0863f9eb65b"
+}

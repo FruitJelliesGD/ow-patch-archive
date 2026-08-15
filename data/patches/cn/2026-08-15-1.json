@@ -1,0 +1,116 @@
+{
+ "id": "cn-2026-08-15-1",
+ "site": "cn",
+ "date": "2026-08-15",
+ "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/08/",
+ "title": "《守望先锋》补丁说明——2026年8月15日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "在线修正更新",
+   "role": null,
+   "description": "这是一次在线修正更新。2026年8月12日更新后的回放代码仍然可用。",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": null,
+   "heroes": [
+    {
+     "slug": "d-mon",
+     "name_en": "D.Mon",
+     "name_cn": "D.Mon",
+     "role": "tank",
+     "dev_note": null,
+     "general": [
+      "修复了手提聚变连发枪的一个错误，该错误可能导致命中无法正确判定。",
+      "修复了无极斩在命中多个目标时无法正确提供过量生命值的错误。",
+      "已在此前的更新中修复——修复了无极斩激活时，无法获得过量生命值的问题。",
+      "命中判定区域调整",
+      "修复了部署强力屏障时，仍会从正面受到伤害的问题。",
+      "调整了机甲头部命中判定区域的高度，使其与模型更加贴合。"
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "突进刺击",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "施放时间从0.15秒缩短至0.05秒。",
+         "before": 0.15,
+         "after": 0.05,
+         "metric": "施放时间"
+        },
+        {
+         "text_en": null,
+         "text_cn": "恢复时间从0.25秒缩短至0.15秒。",
+         "before": 0.25,
+         "after": 0.15,
+         "metric": "恢复时间"
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "聚变连发枪",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "施放时间从0.3秒缩短至0.2秒",
+         "before": 0.3,
+         "after": 0.2,
+         "metric": "施放时间"
+        },
+        {
+         "text_en": null,
+         "text_cn": "恢复时间从0.5秒缩短至0.2秒。",
+         "before": 0.5,
+         "after": 0.2,
+         "metric": "恢复时间"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "jetpack-cat",
+     "name_en": "Jetpack Cat",
+     "name_cn": "飞天猫",
+     "role": "support",
+     "dev_note": null,
+     "general": [
+      "基础移动速度从每秒6米降低至每秒5.5米。"
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "呼噜噜",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "自身受到的治疗效果惩罚从25%提高至40%。",
+         "before": 25.0,
+         "after": 40.0,
+         "metric": "自身受到的治疗效果惩罚"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  }
+ ],
+ "raw_text": null,
+ "hash": "sha256:da0e1e8a4d3c2f466ea5286fafbcc77538c32f70b424eedea67333fc932dc2cd"
+}

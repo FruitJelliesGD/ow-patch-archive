@@ -1,0 +1,303 @@
+{
+ "id": "en-2026-04-23-1",
+ "site": "en",
+ "date": "2026-04-23",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/04",
+ "title": "Overwatch Retail Patch Notes – April 23, 2026",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "Balance Hotfix Update",
+   "role": null,
+   "description": "This is a balance hotfix update. Replay codes from the April 14, 2026 patch and onwards are still available.",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "Hero Balance Updates",
+   "role": null,
+   "description": "Hero Balance Updates These changes aim to re-adjust heroes whose win rates have fallen further than intended since the start of Season 2. We’re continuing to monitor mobile heroes adjusted this season to help inform the mid‑season changes. Our focus is on ensuring heroes feel viable and fun to play both as and against, while still meeting our goal of addressing mobility.",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": null,
+   "role": null,
+   "description": null,
+   "heroes": [
+    {
+     "slug": "roadhog",
+     "name_en": "Roadhog",
+     "name_cn": "路霸",
+     "role": "tank",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Chain Hook",
+       "name_cn": null,
+       "slug": "chain-hook",
+       "changes": [
+        {
+         "text_en": "Cooldown reduced from 8 to 7 seconds.",
+         "text_cn": null,
+         "before": 8.0,
+         "after": 7.0,
+         "metric": "cooldown"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "sombra",
+     "name_en": "Sombra",
+     "name_cn": "黑影",
+     "role": "damage",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Stealth",
+       "name_cn": null,
+       "slug": "stealth",
+       "changes": [
+        {
+         "text_en": "Movement speed bonus reduction while revealed by damage reduced from 50% to 33%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "vendetta",
+     "name_en": "Vendetta",
+     "name_cn": "斩仇",
+     "role": "damage",
+     "dev_note": null,
+     "general": [
+      "Health increased from 175 to 200. (Total health increased from 250 to 275.)"
+     ],
+     "perks": [],
+     "abilities": []
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "Major Bug Fixes",
+   "role": null,
+   "description": null,
+   "heroes": [
+    {
+     "slug": "mizuki",
+     "name_en": "Mizuki",
+     "name_cn": "瑞稀",
+     "role": "support",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Katashiro Return",
+       "name_cn": null,
+       "slug": "katashiro-return",
+       "changes": [
+        {
+         "text_en": "Enemies can no longer prevent Mizuki from recalling by standing on Katashiro Return's starting point.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "Stadium Hero Updates",
+   "role": null,
+   "description": null,
+   "heroes": [
+    {
+     "slug": "hazard",
+     "name_en": "Hazard",
+     "name_cn": "骇灾",
+     "role": "tank",
+     "dev_note": "We're lowering the ceiling and total resource that Hazard's Spike Guard oriented builds gain, so there's more windows of opportunity for counterplay.",
+     "general": [
+      "Damage decreased from 60 to 40.",
+      "Extra [Spike Guard] Resource reduced from 30% to 15%.",
+      "[Violent Leap] Hit Bonus Energy decreased from 15% to 10%.",
+      "Movement Speed penalty reduction decreased from 90% reduced to 50% reduced.",
+      "Extra [Spike Guard] Resource bonus decreased from 50% to 25%.",
+      "[Jagged Wall] Hits Bonus Energy decreased from 25% to 15%."
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "junker-queen",
+     "name_en": "Junker Queen",
+     "name_cn": "渣客女王",
+     "role": "tank",
+     "dev_note": "Royal Bullets has enabled Junker Queen to be dominant for several seasons now, so we're tuning it down to bring her more in line with other tanks in Stadium.",
+     "general": [
+      "Wound damage decreased from 40 to 25."
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "orisa",
+     "name_en": "Orisa",
+     "name_cn": "奥丽莎",
+     "role": "tank",
+     "dev_note": null,
+     "general": [
+      "Healing reduced from 8% of Max Life per second to 5% of Max Life per second.",
+      "Bonus damage decreased from 25% to 10%.",
+      "Attack Speed stat bonus decreased from 10% to 5%.",
+      "Cost increased from 4000 to 5000."
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "ramattra",
+     "name_en": "Ramattra",
+     "name_cn": "拉玛刹",
+     "role": "tank",
+     "dev_note": "Ramattra has started with a middling win rate in Stadium, but as his builds become more optimized, some of them have proven to be outliers. We're tuning back some of his Ravenous Vortex / Nemesis Form oriented Powers, and we're improving his Weapon Power oriented options.",
+     "general": [
+      "Maximum damage increased to 150.",
+      "[Annihilation] Duration bonus decreased from 2s to 1s.",
+      "Healing decreased from 50% to 25% of damage mitigated.",
+      "[Nemesis Form] Cooldown Reduction per enemy hit by [Ravenous Vortex] reduced from 1s to 0.5s.",
+      "Void Blight damage increased from 20 to 30.",
+      "Cost decreased from 12000 to 10000.",
+      "Damage amplification increased from 10% to 15%.",
+      "[Ravenous Vortex] cooldown reduction reduced from 100% to 75%.",
+      "Final Form healing reduced from 80 to 50.",
+      "Re-enabled."
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "zarya",
+     "name_en": "Zarya",
+     "name_cn": "查莉娅",
+     "role": "tank",
+     "dev_note": null,
+     "general": [
+      "Increased currency earned from Healing and Damage by 7.14%."
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "freja",
+     "name_en": "Freja",
+     "name_cn": null,
+     "role": null,
+     "dev_note": null,
+     "general": [
+      "Additional bolt damage decreased from 50% reduced damage to 60% reduced damage."
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "ana",
+     "name_en": "Ana",
+     "name_cn": "安娜",
+     "role": "support",
+     "dev_note": null,
+     "general": [
+      "Re-enabled."
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "brigitte",
+     "name_en": "Brigitte",
+     "name_cn": "布丽吉塔",
+     "role": "support",
+     "dev_note": null,
+     "general": [
+      "[Repair Pack] Duration bonus decreased from 50% to 25%."
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "juno",
+     "name_en": "Juno",
+     "name_cn": "朱诺",
+     "role": "support",
+     "dev_note": "We're fixing some bugs that popped up with the recent changes to Juno and adding a bit more firepower to her Weapon Power oriented builds.",
+     "general": [
+      "Critical damage increased from 175% to 200%.",
+      "[Mediblaster] Falloff range bonus increased from 5m to 15m.",
+      "Re-enabled."
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "wuyang",
+     "name_en": "Wuyang",
+     "name_cn": "无漾",
+     "role": "support",
+     "dev_note": "Water College Hat is a little too efficient for its cost, causing it to be mandatory for many Wuyang builds. We're adjusting it to give value more in line with its cost.",
+     "general": [
+      "Passive [Restoration Stream] Duration bonus reduced from 50% to 25%.",
+      "Overhealth per second reduced from 10 to 5.",
+      "Max Overhealth decreased from 30 to 15.",
+      "Cost increased from 4000 to 5000."
+     ],
+     "perks": [],
+     "abilities": []
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "Bug Fixes",
+   "role": null,
+   "description": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "General",
+     "body": "In a previous update, fixed an issue where custom bindings would not be saved. In a previous update, fixed an issue causing the framerate limit on Nintendo Switch 2 to be lower than intended. In a previous update, fixed an issue with Reaper's Trigger Finger Perk that allowed for an unintended animation cancel. In a previous update, fixed a bug with Sierra's Tight Grip Perk erroneously granting cooldown reduction on Tremor Charge. In a previous update, fixed a bug with Mercy's Double Dose Perk not correctly reducing the healing on Flash Heal.",
+     "dev": null
+    },
+    {
+     "title": "Stadium",
+     "body": "Fixed an issue where players could be kicked for inactivity during the Armoury Phase. Fixed a bug where Ramattra's Insatiable Spiral bonus [Ravenous Vortex] damage was calculated additively instead of multiplicatively. Fixed a bug where Ramattra's Void Blight applied to barriers. Fixed a bug where Ramattra's Void Blight could not be cleansed. Fixed an issue where Ramattra's Nano-Mender could heal enemies. Fixed an issue where Gloomgauntlet's Melee Damage stat bonus did not apply to Ramattra's [Pummel]. Fixed a bug where Vendetta's Overloaded Strike's [Sundering Blade] strike incorrectly calculated the 50% bonus damage additively and not multiplicatively. Fixed a bug where Ana's Cluster Core Hero Item would count certain non-player entities towards Cluster Core's cooldown reduction. Fixed a bug where Juno's Heal Formation would heal more than intended.",
+     "dev": null
+    }
+   ]
+  }
+ ],
+ "raw_text": null,
+ "hash": "sha256:b9cd94dbfd6318bddac1291b1eab08de07f00cf9f4b54c93b7898163e7828656"
+}

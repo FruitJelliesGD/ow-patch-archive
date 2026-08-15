@@ -1,0 +1,417 @@
+{
+ "id": "cn-2026-03-11-1",
+ "site": "cn",
+ "date": "2026-03-11",
+ "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/03/",
+ "title": "《守望先锋》补丁说明——2026年3月11日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "征服之路终章（黑爪 vs 守望先锋）",
+   "role": null,
+   "description": "战斗还在继续！活动最后一周将于3月17日截止，公布最后的赢家！ 参与活动，代表守望先锋或黑爪阵营（或者两边通吃！）获取最后一周的奖励： 守望先锋：2款头像、1款名牌、1款普通补给与1款传奇补给 黑爪：1款喷漆、1款头像、1条语音、1款普通补给与1款传奇补给 当周结束时哪方阵营获胜，当周所有符合条件的玩家都可以获得相应阵营的“回声”皮肤（守望先锋或黑爪）！ 第5周结束时公布胜者的方式会有一些不同，敬请期待吧！",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "“狂鼠”的补给狩猎",
+   "role": null,
+   "description": "“狂鼠”的补给狩猎将于3月28日至31日回归！在游戏过程中解锁挑战，完成这些挑战即可赢得补给！",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "医疗副职责",
+     "body": "自我治疗从25%提高至40%。",
+     "dev": "医疗副职责的表现不尽如人意，因为自我治疗的效果太弱，不足以影响战局。提高自我治疗的转化率可以让医疗副职责在交战中也能挺身而出。"
+    },
+    {
+     "title": "斗士副职责",
+     "body": "生命值降低至50%即可触发。",
+     "dev": "额外被动效果的触发阈值从生命值的35%调整至50%，统一了触发时机，延长了被动效果生效的时间。"
+    },
+    {
+     "title": "先锋副职责",
+     "body": "满生命值不再触发。 治疗量从75降低至60。",
+     "dev": "先锋副职责提供的治疗超出了预期，因此适当削弱。满生命值时不再触发治疗，避免造成提前开启内置冷却时间的问题。"
+    }
+   ]
+  },
+  {
+   "type": "hero_update",
+   "title": "重装",
+   "role": "tank",
+   "description": null,
+   "heroes": [
+    {
+     "slug": "d-va",
+     "name_en": "D.Va",
+     "name_cn": "D.Va",
+     "role": "tank",
+     "dev_note": "D.Va高机动性和生存能力的组合给她提供了超强的续航能力。先锋副职责的效果削弱之后，延长推进器的冷却时间让玩家需要更明确地判断前压的时机。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "推进器",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从3.5秒延长至4秒。",
+         "before": 3.5,
+         "after": 4.0,
+         "metric": "冷却时间"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "hazard",
+     "name_en": "Hazard",
+     "name_cn": "骇灾",
+     "role": "tank",
+     "dev_note": "“骇灾”最初被安排在铁壁副职责是为了限制他交战中的控制效果。但副职责上线以来，他的表现非常挣扎。我们把他改为先锋副职责，辅助他激进、长续航的打法。",
+     "general": [
+      "副职责从铁壁改为先锋"
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "ramattra",
+     "name_en": "Ramattra",
+     "name_cn": "拉玛刹",
+     "role": "tank",
+     "dev_note": "缩短虚空屏障的冷却时间可以加强拉玛刹战斗中的技能循环，提高诛的秒伤可以强化拉玛刹在长时间交战中的作用。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "虚空屏障",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "（5V5）冷却时间从13秒缩短至12秒。",
+         "before": 13.0,
+         "after": 12.0,
+         "metric": "冷却时间"
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "诛",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "每秒伤害从30提高至35。",
+         "before": 30.0,
+         "after": 35.0,
+         "metric": "每秒伤害"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "roadhog",
+     "name_en": "Roadhog",
+     "name_cn": "路霸",
+     "role": "tank",
+     "dev_note": "上次调整之后，路霸的整体强度还是未达预期。提高爆裂枪的伤害可以提升链钩连招的稳定性，同时提高总体输出。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "爆裂枪",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "每枚弹丸伤害从6.5提高至7。",
+         "before": 6.5,
+         "after": 7.0,
+         "metric": "每枚弹丸伤害"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "输出",
+   "role": "damage",
+   "description": null,
+   "heroes": [
+    {
+     "slug": "",
+     "name_en": null,
+     "name_cn": "安燃",
+     "role": "damage",
+     "dev_note": "安燃的位移技能有所调整，提高了怒炎冲的流畅度，丰富了可供选择的路线。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "怒炎冲",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "可自动翻越较矮的物体边缘。",
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "技能生效时跳跃高度提升20%。",
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "emre",
+     "name_en": "Emre",
+     "name_cn": "埃姆雷",
+     "role": "damage",
+     "dev_note": "机变体征的触发延迟缩短，脱战时触发更稳定。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "机变体征",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "触发延迟从4.5秒缩短至4秒。",
+         "before": 4.5,
+         "after": 4.0,
+         "metric": "触发延迟"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "vendetta",
+     "name_en": "Vendetta",
+     "name_cn": "斩仇",
+     "role": "damage",
+     "dev_note": "作为次级威能，虹吸斩击的续航能力太强了改为主要威能才符合它的地位，同时也可以避免虹吸斩击和无情君威的搭配提供的被动效果。狂怒风暴的伤害降低，调整为次级威能。",
+     "general": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "狂怒风暴",
+       "status": "moved",
+       "lines_en": [],
+       "lines_cn": [
+        "从主要威能改为了次级威能。",
+        "每次旋转的伤害从35降低至30。"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "虹吸斩击",
+       "status": "moved",
+       "lines_en": [],
+       "lines_cn": [
+        "从次级威能改为了主要威能。",
+        "竖直劈斩的生命汲取从30%提高至40%。"
+       ]
+      }
+     ],
+     "abilities": []
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "支援",
+   "role": "support",
+   "description": null,
+   "heroes": [
+    {
+     "slug": "illari",
+     "name_en": "Illari",
+     "name_cn": "伊拉锐",
+     "role": "support",
+     "dev_note": "伊拉锐提供高额治疗量的同时又能给予充足的压制力。缩短她辅助攻击模式的生效时间，削弱部分威能可以限制她的整体表现，同时又维持了她的风格。",
+     "general": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "夏至骄阳",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "攻击速度加成从30%降低至20%。"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "烈日燎灼",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "伤害从70降低至50。"
+       ]
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "阳焰步枪",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "辅助攻击模式资源上限从3.5秒降低至3秒。",
+         "before": 3.5,
+         "after": 3.0,
+         "metric": "辅助攻击模式资源上限"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "jetpack-cat",
+     "name_en": "Jetpack Cat",
+     "name_cn": "飞天猫",
+     "role": "support",
+     "dev_note": "我们移除了领地意识，因为它在进攻端的潜力实在是太大了，而且缺少反制手段。嗷呜一爪因为强度也不错，所以改成了主要威能，缩短了冷却时间；同时新增了威能“别有用心”，提供了一种恢复燃料的手段，配合以治疗为主的打法。",
+     "general": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "领地意识",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "已移除。"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "嗷呜一爪",
+       "status": "moved",
+       "lines_en": [],
+       "lines_cn": [
+        "从次级威能改为了主要威能。",
+        "冷却时间从8秒缩短至6秒。"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "别有用心",
+       "status": "added",
+       "lines_en": [],
+       "lines_cn": [
+        "新增",
+        "将治疗量的15%转化为燃料。"
+       ]
+      }
+     ],
+     "abilities": []
+    },
+    {
+     "slug": "mizuki",
+     "name_en": "Mizuki",
+     "name_cn": "瑞稀",
+     "role": "support",
+     "dev_note": "队友必须站在安魂灵气的范围内，这在交战中可能有很强的限制性。扩大安魂灵气的范围可以让治疗更方便，而缩短衰减延迟会让瑞稀更难维持积攒的资源。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "安魂灵气",
+       "slug": "",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "半径从10米扩大至12米。",
+         "before": 10.0,
+         "after": 12.0,
+         "metric": "半径"
+        },
+        {
+         "text_en": null,
+         "text_cn": "衰减延迟从2秒缩短至1.75秒。",
+         "before": 2.0,
+         "after": 1.75,
+         "metric": "衰减延迟"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "角斗领域更新",
+   "role": null,
+   "description": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "角斗领域综合模组图标更新",
+     "body": "嗨，大家好!我们来聊一聊综合模组，也就是角斗领域搭配中的基础，帮你赢得比赛或者害你输掉比赛的关键，定义英雄的——呃，你们懂的。去年三月角斗领域上线时，我们就知道我们迟早会重新设计综合模组，让它们更接近异能和英雄物品的风格。因此开始讨论《守望先锋》第1赛季时，既然游戏的方方面面都会有重大更新，我们就觉得是时候更新综合模组了。 我们想的是根据名称设计图标，再根据效果确定颜色（比如“战地配给”现在就是一个芝士通心粉盒，“空域克星”则是一个飞机的样子），因为特殊的图标设计可以方便玩家寻找，要是只有一个生命值图标可就有的找了！目标虽然远大，但是偏离了清晰易懂的核心设计原则。听取了大家的反馈之后（感谢大家！），我们已经把模组调整回稀有度对应的颜色，并且稍微提高了背景色的亮度，更好地凸显图标本身。另外，接下来的几个月中，我们还会继续优化图标颜色，确保它们清晰易读（放心，整体造型不会改变）。同时我们也会持续关注大家的反馈，优化角斗领域、尤其是军械库的设计，打造更加流畅的游戏体验。",
+     "dev": null
+    }
+   ]
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "修复了瑞稀的终极技能音效和队友被消灭的音效太相似的问题。 修复了瑞稀回合开始前就可以积攒安魂灵气资源的错误。 修复了瑞稀的图腾正常落地之前会短暂出现在错误位置的问题。 修复了朱诺的脉冲星飞雷无法装备武器涂装的问题。 修复了多重地雷装备后，如果第一次终极技能没有使用额外的地雷，之后就不再生成额外地雷的问题。 修复了“法老之鹰”使用火箭弹幕期间被瑞稀栓锁后仍能移动的错误。 修复了安燃的熠闪舞可以净化渣客女王的终极技能效果的错误。",
+     "dev": null
+    },
+    {
+     "title": "角斗领域",
+     "body": "修复了托比昂的物品“天际纳米机器人”不对空中的敌人造成额外伤害的问题。 修复了朱诺的异能“轨道校准”不使敌人漂浮的问题。 修复了“斩仇”的模组“断魂曲”不为竖直劈斩提供10%暴击伤害加成的问题。 修复了“斩仇”的模组“延展钢材”不提供25%攻击范围加成的问题。 修复了朱诺的异能“医疗精锐”缩短超能环域冷却时间的问题。 修复了“斩仇”的模组“勇士怒吼”当旋风疾步撞墙时不生效的问题。",
+     "dev": null
+    }
+   ]
+  }
+ ],
+ "raw_text": null,
+ "hash": "sha256:4d38cf80c8fbdc678a68d875a78ec4c01eb6e8c79cd55e4b971580779c45c0af"
+}

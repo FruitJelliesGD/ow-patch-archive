@@ -1,0 +1,162 @@
+{
+ "id": "en-2020-09-24-1",
+ "site": "en",
+ "date": "2020-09-24",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2020/09",
+ "title": "Overwatch Retail Patch Notes – September 24, 2020",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "hero_update",
+   "title": "Hero Updates",
+   "role": null,
+   "description": null,
+   "heroes": [
+    {
+     "slug": "ashe",
+     "name_en": "Ashe",
+     "name_cn": "艾什",
+     "role": "damage",
+     "dev_note": "Ashe is still a bit too powerful, but we'd like to keep her rifle feeling impactful so we're taking some power out of her Dynamite ability.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Dynamite",
+       "name_cn": null,
+       "slug": "dynamite",
+       "changes": [
+        {
+         "text_en": "Explosion damage reduced from 75 to 50",
+         "text_cn": null,
+         "before": 75.0,
+         "after": 50.0,
+         "metric": "explosion damage"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "baptiste",
+     "name_en": "Baptiste",
+     "name_cn": "巴蒂斯特",
+     "role": "support",
+     "dev_note": "Baptiste generates a majority of his ultimate charge through area-of-effect healing. As we reduced area healing values recently, we're also scaling down the cost of his ultimate.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Amplification Matrix",
+       "name_cn": null,
+       "slug": "amplification-matrix",
+       "changes": [
+        {
+         "text_en": "Ultimate cost decreased 15%",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "cassidy",
+     "name_en": "Cassidy",
+     "name_cn": "卡西迪",
+     "role": "damage",
+     "dev_note": "After scaling down the damage output of McCree's primary fire, we're looking to give back a bit of power through improvements to his abilities.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Combat Roll",
+       "name_cn": "战术翻滚",
+       "slug": "combat-roll",
+       "changes": [
+        {
+         "text_en": "Distance increased 20%",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Flashbang",
+       "name_cn": "闪光弹",
+       "slug": "flashbang",
+       "changes": [
+        {
+         "text_en": "Stun duration increased from 0.7 to 0.8 seconds",
+         "text_cn": null,
+         "before": 0.7,
+         "after": 0.8,
+         "metric": "stun duration"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "orisa",
+     "name_en": "Orisa",
+     "name_cn": "奥丽莎",
+     "role": "tank",
+     "dev_note": "Increased projectile speed will help Orisa’s weapon feel more responsive, reducing the need to lead targets. We found that recent adjustments to Orisa’s abilities were more impactful than we originally anticipated and have increased her armor to compensate.",
+     "general": [
+      "Base armor increased from 200 to 250"
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Fusion Driver",
+       "name_cn": "聚变驱动器",
+       "slug": "fusion-driver",
+       "changes": [
+        {
+         "text_en": "Projectile speed increased from 90 to 120",
+         "text_cn": null,
+         "before": 90.0,
+         "after": 120.0,
+         "metric": "projectile speed"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "roadhog",
+     "name_en": "Roadhog",
+     "name_cn": "路霸",
+     "role": "tank",
+     "dev_note": "After the last round of shotgun improvements, Roadhog's Chain Hook combo still wasn't effective against some of the smaller enemy heroes. This change pulls targets closer to melee range for swifter, more reliable combo execution.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Chain Hook",
+       "name_cn": null,
+       "slug": "chain-hook",
+       "changes": [
+        {
+         "text_en": "Now pulls targets 0.5 meters closer (3.5 meters down to 3.0 meters)",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  }
+ ],
+ "raw_text": null,
+ "hash": "sha256:01925346e688d44892be45edc2bbfa78f7a98e28a8310961af1c2219a70c88f2"
+}

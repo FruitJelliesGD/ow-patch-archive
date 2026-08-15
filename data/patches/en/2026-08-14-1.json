@@ -1,0 +1,117 @@
+{
+ "id": "en-2026-08-14-1",
+ "site": "en",
+ "date": "2026-08-14",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/08",
+ "title": "Overwatch Retail Patch Notes – August 14, 2026",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "Hotfix Update",
+   "role": null,
+   "description": "This is a hotfix update. Replay codes from the August 11 patch are still available.",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "Hero Updates",
+   "role": null,
+   "description": null,
+   "heroes": [
+    {
+     "slug": "d-mon",
+     "name_en": "D.Mon",
+     "name_cn": "D.Mon",
+     "role": "tank",
+     "dev_note": null,
+     "general": [
+      "Fixed a bug with Portable Fusion Repeater that could result in hits failing to register.",
+      "Fixed a bug with Limit Break not correctly granting Overhealth for targets hit.",
+      "Fixed in a previous update - Resolved an issue that prevented Overhealth from being applied when Limit Break was activated.",
+      "Fixed a bug where Toggle Propulsors did not work on console platforms.",
+      "Hitbox Changes",
+      "Fixed an issue with being damaged from the front with while Power Barrier was deployed.",
+      "Adjusted the height of the mech head hitbox to be more flush with the model."
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Surging Strike",
+       "name_cn": null,
+       "slug": "surging-strike",
+       "changes": [
+        {
+         "text_en": "Cast Time reduced from 0.15 to 0.05 seconds.",
+         "text_cn": null,
+         "before": 0.15,
+         "after": 0.05,
+         "metric": "cast time"
+        },
+        {
+         "text_en": "Recovery reduced from 0.25 to 0.15 seconds.",
+         "text_cn": null,
+         "before": 0.25,
+         "after": 0.15,
+         "metric": "recovery"
+        }
+       ]
+      },
+      {
+       "name_en": "Fusion Repeater",
+       "name_cn": null,
+       "slug": "fusion-repeater",
+       "changes": [
+        {
+         "text_en": "Cast Time reduced from 0.3 to 0.2 seconds.",
+         "text_cn": null,
+         "before": 0.3,
+         "after": 0.2,
+         "metric": "cast time"
+        },
+        {
+         "text_en": "Recovery Time reduced from 0.5 to 0.2 seconds.",
+         "text_cn": null,
+         "before": 0.5,
+         "after": 0.2,
+         "metric": "recovery time"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "jetpack-cat",
+     "name_en": "Jetpack Cat",
+     "name_cn": "飞天猫",
+     "role": "support",
+     "dev_note": null,
+     "general": [
+      "Base movement speed reduced from 6 to 5.5 meters per second."
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Purr",
+       "name_cn": null,
+       "slug": "purr",
+       "changes": [
+        {
+         "text_en": "Self healing penalty increased from 25% to 40%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  }
+ ],
+ "raw_text": null,
+ "hash": "sha256:76b139ba0b3ff047f74fed69307aaa618263850fd3011874d3134e1c6d3f66a1"
+}

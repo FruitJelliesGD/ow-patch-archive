@@ -1,0 +1,114 @@
+{
+ "id": "en-2024-05-24-1",
+ "site": "en",
+ "date": "2024-05-24",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/05",
+ "title": "Overwatch 2 Retail Patch Notes – May 24, 2024",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "HERO UPDATES",
+   "role": null,
+   "description": "HERO UPDATES",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "TANK",
+   "role": null,
+   "description": null,
+   "heroes": [
+    {
+     "slug": "roadhog",
+     "name_en": "Roadhog",
+     "name_cn": "路霸",
+     "role": "tank",
+     "dev_note": "Developer comments: Roadhog benefitted greatly from the recent headshot reduction passive for Tanks so we are nerfing his survivability. This change to Take a Breather is aimed at encouraging more mindful resource management. The change to Whole Hog will make the ultimate more of a zoning tool while lowering its lethality, especially against tanks with their recently increased knockback resistance.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Take a Breather",
+       "name_cn": null,
+       "slug": "take-a-breather",
+       "changes": [
+        {
+         "text_en": "Resource regeneration rate reduced from 10 to 8 per second.",
+         "text_cn": null,
+         "before": 10.0,
+         "after": 8.0,
+         "metric": "resource regeneration rate"
+        },
+        {
+         "text_en": "Maximum healing reduced from 450 to 400.",
+         "text_cn": null,
+         "before": 450.0,
+         "after": 400.0,
+         "metric": "maximum healing"
+        },
+        {
+         "text_en": "Cooldown reduced from 1.5 to 1.25 seconds.",
+         "text_cn": null,
+         "before": 1.5,
+         "after": 1.25,
+         "metric": "cooldown"
+        }
+       ]
+      },
+      {
+       "name_en": "Whole Hog",
+       "name_cn": null,
+       "slug": "whole-hog",
+       "changes": [
+        {
+         "text_en": "Knockback increased from 14 to 16.",
+         "text_cn": null,
+         "before": 14.0,
+         "after": 16.0,
+         "metric": "knockback"
+        },
+        {
+         "text_en": "Damage per pellet reduced from 7 to 6.",
+         "text_cn": null,
+         "before": 7.0,
+         "after": 6.0,
+         "metric": "damage per pellet"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "sigma",
+     "name_en": "Sigma",
+     "name_cn": "西格玛",
+     "role": "tank",
+     "dev_note": "Developer comments: Our last patch aimed to make some Tank ultimates more forgiving to use during combat. Sigma’s Gravitic Flux can suffer from missing due to slight line of sight checks but we don’t believe this change had proper communication for all instances. We may return to this change for Sigma down the line with updated visuals.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Gravitic Flux",
+       "name_cn": null,
+       "slug": "gravitic-flux",
+       "changes": [
+        {
+         "text_en": "Gravitic Flux now requires line-of-sight to lift targets again.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  }
+ ],
+ "raw_text": null,
+ "hash": "sha256:b8819e2ad8c2ca9acc742967f79cc626d5a9ae4dbc23fb762822d698e1de9dc4"
+}

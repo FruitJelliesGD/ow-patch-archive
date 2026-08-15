@@ -1,0 +1,99 @@
+{
+ "id": "en-2020-12-10-1",
+ "site": "en",
+ "date": "2020-12-10",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2020/12",
+ "title": "Overwatch Retail Patch Notes – December 10, 2020",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "hero_update",
+   "title": "Hero Updates",
+   "role": null,
+   "description": null,
+   "heroes": [
+    {
+     "slug": "baptiste",
+     "name_en": "Baptiste",
+     "name_cn": "巴蒂斯特",
+     "role": "support",
+     "dev_note": "To adjust Baptiste's overall power for the recent increased effectiveness of his Biotic Launcher and Amplification Matrix, we're taking some durability out of Immortality Field and increasing the cost of his ultimate once again.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Immortality Field",
+       "name_cn": null,
+       "slug": "immortality-field",
+       "changes": [
+        {
+         "text_en": "Health decreased from 200 to 150",
+         "text_cn": null,
+         "before": 200.0,
+         "after": 150.0,
+         "metric": "health"
+        }
+       ]
+      },
+      {
+       "name_en": "Amplification Matrix",
+       "name_cn": null,
+       "slug": "amplification-matrix",
+       "changes": [
+        {
+         "text_en": "Ultimate cost increased by 15%",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "d-va",
+     "name_en": "D.Va",
+     "name_cn": "D.Va",
+     "role": "tank",
+     "dev_note": "We're increasing the ratio of armor to health that D.Va's mech has to enable it to withstand more damage from shotguns, beams, and weapons with a high rate of fire.",
+     "general": [
+      "Mech Armor/Health has been redistributed from 200/400 to 300/300"
+     ],
+     "perks": [],
+     "abilities": []
+    },
+    {
+     "slug": "reinhardt",
+     "name_en": "Reinhardt",
+     "name_cn": "莱因哈特",
+     "role": "tank",
+     "dev_note": "The intent of these changes is to slightly bolster Reinhardt's frontline presence once he closes the distance with an enemy. The increased Rocket Hammer damage will reduce the number of swings necessary to eliminate some heroes so we'll be keeping a close eye on the overall impact of this change.",
+     "general": [
+      "Base Armor increased from 200 to 250"
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Rocket Hammer",
+       "name_cn": null,
+       "slug": "rocket-hammer",
+       "changes": [
+        {
+         "text_en": "Damage increased from 75 to 85",
+         "text_cn": null,
+         "before": 75.0,
+         "after": 85.0,
+         "metric": "damage"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  }
+ ],
+ "raw_text": null,
+ "hash": "sha256:556fe8572e14ff457420a1ed012945e31ce58c6865233d4dddb2af2675a527ba"
+}

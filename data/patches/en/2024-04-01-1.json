@@ -1,0 +1,1729 @@
+{
+ "id": "en-2024-04-01-1",
+ "site": "en",
+ "date": "2024-04-01",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/04",
+ "title": "Overwatch 2 Really, Really, Really Balanced Patch Notes - April 1, 2024",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "Patch Update",
+   "role": null,
+   "description": "We are currently aware of an issue that these balance changes are only reflected in a game mode that appears in the arcade. So we’re gonna call it “Balanced Overwatch” for now. Sorry for any confusion. There are also some new challenges that are granting some of our developer’s doodles as sprays. We’re not sure why that is happening, but they are really cool looking. You might want to collect them as quickly as possible because this is planned to be fixed by April 8.",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "HERO UPDATES",
+   "role": null,
+   "description": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "GENERAL UPDATES",
+     "body": "Maximum ultimate charge preserved on hero swap increased from 15 to 49%.",
+     "dev": null
+    }
+   ]
+  },
+  {
+   "type": "hero_update",
+   "title": "TANK",
+   "role": null,
+   "description": null,
+   "heroes": [
+    {
+     "slug": "d-va",
+     "name_en": "D.Va",
+     "name_cn": "D.Va",
+     "role": "tank",
+     "dev_note": "Developer Comments: Mech go zoom and D.Va bomb go boom.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Boosters",
+       "name_cn": null,
+       "slug": "boosters",
+       "changes": [
+        {
+         "text_en": "Can now move backwards.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Can now be canceled with Crouch.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Canceling the ability with Crouch in the first .4 seconds reduces the cooldown to 1.5 seconds.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Self Destruct",
+       "name_cn": null,
+       "slug": "self-destruct",
+       "changes": [
+        {
+         "text_en": "Knockback increased by 900%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "doomfist",
+     "name_en": "Doomfist",
+     "name_cn": "末日铁拳",
+     "role": "tank",
+     "dev_note": "Developer Comments: Doomfist is a mobility hero, so there’s no reason he should be slowing down while blocking right?",
+     "general": [
+      "Power Block and Meteor Strike also empower your next Quick Melee."
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Power Block",
+       "name_cn": null,
+       "slug": "power-block",
+       "changes": [
+        {
+         "text_en": "Movement Speed Modifier increased from .65x to 1.25x.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "junker-queen",
+     "name_en": "Junker Queen",
+     "name_cn": "渣客女王",
+     "role": "tank",
+     "dev_note": "Developer Comments: Leave it to Junker Queen to cut her way toward new heights.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Jagged Blade",
+       "name_cn": null,
+       "slug": "jagged-blade",
+       "changes": [
+        {
+         "text_en": "Pressing Secondary Fire while the ability is active now magnetizes Junker Queen to Gracie.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Cooldown now starts when blade starts returning to Junker Queen.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Cooldown decreased from 6 to 4 seconds.",
+         "text_cn": null,
+         "before": 6.0,
+         "after": 4.0,
+         "metric": "cooldown"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "mauga",
+     "name_en": "Mauga",
+     "name_cn": "毛加",
+     "role": "tank",
+     "dev_note": "Developer Comments: Smallga",
+     "general": [
+      "Health decreased from 350 to 25.",
+      "Mauga’s Scale has been reduced by 50%."
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Incendiary Chain Gun",
+       "name_cn": null,
+       "slug": "incendiary-chain-gun",
+       "changes": [
+        {
+         "text_en": "Hitting enemies who are ‘On Fire’ will Ignite them.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "orisa",
+     "name_en": "Orisa",
+     "name_cn": "奥丽莎",
+     "role": "tank",
+     "dev_note": "Developer Comments: Efi has made some changes to Orisa’s technology inspired by a completely hypothetical scenario where a certain archer rides her into battle.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Energy Javelin",
+       "name_cn": null,
+       "slug": "energy-javelin",
+       "changes": [
+        {
+         "text_en": "Ricochets once.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Explodes when it sticks.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "ramattra",
+     "name_en": "Ramattra",
+     "name_cn": "拉玛刹",
+     "role": "tank",
+     "dev_note": "Developer Comments: We heard Ramattra wasn’t suffering enough so we’ve increased his suffering so that when he causes suffering his enemies will suffer as much as he has suffered.",
+     "general": [
+      "Base armor increased from 100 to 225."
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Annihilation",
+       "name_cn": null,
+       "slug": "annihilation",
+       "changes": [
+        {
+         "text_en": "Moved from his Ultimate to Ability 1",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "No longer pauses its duration while dealing damage.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Movement Speed Increased by 20%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Duration increased from 3 to 5 seconds.",
+         "text_cn": null,
+         "before": 3.0,
+         "after": 5.0,
+         "metric": "duration"
+        },
+        {
+         "text_en": "Damage Per Second Decreased from 30 to 20.",
+         "text_cn": null,
+         "before": 30.0,
+         "after": 20.0,
+         "metric": "damage per second"
+        },
+        {
+         "text_en": "Radius decreased from 12 to 9 meters.",
+         "text_cn": null,
+         "before": 12.0,
+         "after": 9.0,
+         "metric": "radius"
+        }
+       ]
+      },
+      {
+       "name_en": "Nemesis Form",
+       "name_cn": null,
+       "slug": "nemesis-form",
+       "changes": [
+        {
+         "text_en": "Moved from his Ability 1 to his Ultimate.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Always has Annihilation active while in use.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Fully heals Ramattra on use.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Pummel Damage increased from 60 to 75.",
+         "text_cn": null,
+         "before": 60.0,
+         "after": 75.0,
+         "metric": "pummel damage"
+        },
+        {
+         "text_en": "Pummel Range has been increased from 10 to 15.",
+         "text_cn": null,
+         "before": 10.0,
+         "after": 15.0,
+         "metric": "pummel range has been"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "reinhardt",
+     "name_en": "Reinhardt",
+     "name_cn": "莱因哈特",
+     "role": "tank",
+     "dev_note": "Reinhardt Comment: HAHA! THIS IS JUST LIKE PING PONG! WATCH THIS, BRIGITTE! I WILL BE ENTERING THE CHAMPIONSHIP THIS YEAR!",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Barrier Field",
+       "name_cn": null,
+       "slug": "barrier-field",
+       "changes": [
+        {
+         "text_en": "You can now press Primary Fire to reflects projectiles.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Health decreases by 20% every second while reflecting.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Barrier size decreased to 50% while Reflecting.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Camera Lock input now bound to Quick Melee.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "roadhog",
+     "name_en": "Roadhog",
+     "name_cn": "路霸",
+     "role": "tank",
+     "dev_note": "Developer Comments: Much to the chagrin of his enemies, Roadhog has recently discovered baseball.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Pig Pen",
+       "name_cn": null,
+       "slug": "pig-pen",
+       "changes": [
+        {
+         "text_en": "Projectile Speed increased from 26 to 80.",
+         "text_cn": null,
+         "before": 26.0,
+         "after": 80.0,
+         "metric": "projectile speed"
+        },
+        {
+         "text_en": "Projectile Damage increased from 0 to 40.",
+         "text_cn": null,
+         "before": 0.0,
+         "after": 40.0,
+         "metric": "projectile damage"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "sigma",
+     "name_en": "Sigma",
+     "name_cn": "西格玛",
+     "role": "tank",
+     "dev_note": "Developer Comments: Danger! Falling rocks.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Accretion",
+       "name_cn": null,
+       "slug": "accretion",
+       "changes": [
+        {
+         "text_en": "Projectile Speed decreased from 37 to 30.",
+         "text_cn": null,
+         "before": 37.0,
+         "after": 30.0,
+         "metric": "projectile speed"
+        },
+        {
+         "text_en": "Projectile Gravity decreased from 18 to 2.",
+         "text_cn": null,
+         "before": 18.0,
+         "after": 2.0,
+         "metric": "projectile gravity"
+        },
+        {
+         "text_en": "Pressing the ability button while Accretion is active will cause the rock to crash into the ground. When crashed, it will deal 50 damage in a 4-meter radius and stun anyone damaged.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "winston",
+     "name_en": "Winston",
+     "name_cn": "温斯顿",
+     "role": "tank",
+     "dev_note": "Developer Comments: Empowering the “no aim” playstyle.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Tesla Cannon",
+       "name_cn": null,
+       "slug": "tesla-cannon",
+       "changes": [
+        {
+         "text_en": "Secondary Fire now chains between enemies.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Primal Rage",
+       "name_cn": null,
+       "slug": "primal-rage",
+       "changes": [
+        {
+         "text_en": "Punches also cause lightning to chain between enemies.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "wrecking-ball",
+     "name_en": "Wrecking Ball",
+     "name_cn": "破坏球",
+     "role": "tank",
+     "dev_note": "Developer Comments: We're preparing to retcon Wrecking Ball into a crab. Hope these changes are sufficiently immersive.",
+     "general": [
+      "Wrecking Ball’s sideways movement speed increased by 55%."
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Quad Cannons",
+       "name_cn": null,
+       "slug": "quad-cannons",
+       "changes": [
+        {
+         "text_en": "Deals increased damage as you continue to walk sideways.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "zarya",
+     "name_en": "Zarya",
+     "name_cn": "查莉娅",
+     "role": "tank",
+     "dev_note": "Developer Comments: Please don’t burst Zarya’s bubble, no matter how big it gets.",
+     "general": [
+      "Developer Comments: Please don’t burst Zarya’s bubble, no matter how big it gets."
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Particle Barrier and Projected Barrier",
+       "name_cn": null,
+       "slug": "particle-barrier-and-projected-barrier",
+       "changes": [
+        {
+         "text_en": "Increases the size of the bubbled target by 1.75x.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "DAMAGE",
+   "role": null,
+   "description": null,
+   "heroes": [
+    {
+     "slug": "ashe",
+     "name_en": "Ashe",
+     "name_cn": "艾什",
+     "role": "damage",
+     "dev_note": "Developer Comments: B.O.B.’s upset from being called the wrong name, so F.R.E.D.’s picking up the slack.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "F.R.E.D.",
+       "name_cn": null,
+       "slug": "f-r-e-d",
+       "changes": [
+        {
+         "text_en": "New Ability on mouse scroll.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Weapon Swap.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Call in F.R.E.D. to charge for a short duration before leaving.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "bastion",
+     "name_en": "Bastion",
+     "name_cn": "堡垒",
+     "role": "damage",
+     "dev_note": "Developer Comments: Yeah, we’ve switched up his configurations a little. So anyway, start blastin'.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Configuration: Assault",
+       "name_cn": null,
+       "slug": "configuration-assault",
+       "changes": [
+        {
+         "text_en": "Configuration: Assault is now the default form.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Movement speed penalty has been removed.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Configuration: Assault now has 150 Ammo.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Damage per bullet decreased from 12 to 5.",
+         "text_cn": null,
+         "before": 12.0,
+         "after": 5.0,
+         "metric": "damage per bullet"
+        },
+        {
+         "text_en": "Now deals 1.5x damage for critical hits.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Reconfigure",
+       "name_cn": null,
+       "slug": "reconfigure",
+       "changes": [
+        {
+         "text_en": "Now transforms Bastion into Configuration: Recon.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Grants a movement speed bonus of 35%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Configuration: Sentry now fires shotgun blasts.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "cassidy",
+     "name_en": "Cassidy",
+     "name_cn": "卡西迪",
+     "role": "damage",
+     "dev_note": "Developer Comments: Extra survivability is every cowboy’s dream – just don’t die.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Wanted!",
+       "name_cn": null,
+       "slug": "wanted",
+       "changes": [
+        {
+         "text_en": "New Passive",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "One enemy is marked. Kill them to gain 50 health until the next time you die. After 5 kills, you gain 1 health each time.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "echo",
+     "name_en": "Echo",
+     "name_cn": "回声",
+     "role": "damage",
+     "dev_note": "Developer Comments: Now bringing Mystery Heroes into other modes.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Focusing Beam",
+       "name_cn": null,
+       "slug": "focusing-beam",
+       "changes": [
+        {
+         "text_en": "Targets within 8 meters of Echo take damage as if they’re under half health.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Duplicate",
+       "name_cn": null,
+       "slug": "duplicate",
+       "changes": [
+        {
+         "text_en": "Can no longer choose who you duplicate.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Can now duplicate allies.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Duplicate’s Health no longer capped at 300 health.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Duplicate now gains an extra 100 Shields.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Bonus Ult Charge Gain Rate increased from 4 to 6.5.",
+         "text_cn": null,
+         "before": 4.0,
+         "after": 6.5,
+         "metric": "bonus ult charge gain rate"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "genji",
+     "name_en": "Genji",
+     "name_cn": "源氏",
+     "role": "damage",
+     "dev_note": "Developer Comments: Parry this! *Not exclusive to casual players.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Deflect",
+       "name_cn": null,
+       "slug": "deflect",
+       "changes": [
+        {
+         "text_en": "Press Primary Fire with perfect timing to critically deflect a projectile.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "hanzo",
+     "name_en": "Hanzo",
+     "name_cn": "半藏",
+     "role": "damage",
+     "dev_note": "Developer Comments: Hanzo has always struggled to overcome his past, so it’s hard for him not to bounce back to old habits.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Storm Arrows",
+       "name_cn": null,
+       "slug": "storm-arrows",
+       "changes": [
+        {
+         "text_en": "Number of ricochets increased from 1 to 3.",
+         "text_cn": null,
+         "before": 1.0,
+         "after": 3.0,
+         "metric": "number of ricochets"
+        },
+        {
+         "text_en": "Number of projectiles per shot increased from 1 to 5.",
+         "text_cn": null,
+         "before": 1.0,
+         "after": 5.0,
+         "metric": "number of projectiles per shot"
+        },
+        {
+         "text_en": "Damage of each projectile decreased by 78%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "junkrat",
+     "name_en": "Junkrat",
+     "name_cn": "狂鼠",
+     "role": "damage",
+     "dev_note": "Developer Comments: Junkrat put bombs on his bombs. Not sure why this would surprise anybody.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Frag Launcher",
+       "name_cn": "榴弹发射器",
+       "slug": "frag-launcher",
+       "changes": [
+        {
+         "text_en": "You can now detonate Frag Launcher projectiles with Secondary Fire.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "mei",
+     "name_en": "Mei",
+     "name_cn": "美",
+     "role": "damage",
+     "dev_note": "Developer Request: Definitely do not use this to get to spots on the map you’re not supposed to get to, thanks.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Avalanche Launch",
+       "name_cn": null,
+       "slug": "avalanche-launch",
+       "changes": [
+        {
+         "text_en": "New Ability.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Press Jump in the Air to activate.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Creates a large Ice Pillar under Mei.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Can be canceled with Interact.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "pharah",
+     "name_en": "Pharah",
+     "name_cn": "法老之鹰",
+     "role": "damage",
+     "dev_note": "Developer Comments: You’ve used Hover Jets. You’ve used Jump Jets. You’ve used Jet Dash. But have you tried Jet Land?",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Jet Land",
+       "name_cn": null,
+       "slug": "jet-land",
+       "changes": [
+        {
+         "text_en": "New Ability.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Press Crouch in the Air to activate.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Dash downwards towards the ground.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "reaper",
+     "name_en": "Reaper",
+     "name_cn": "死神",
+     "role": "damage",
+     "dev_note": "Developer Comments: Someone’s taken a page out of Mauga’s book.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Hellfire Shotguns",
+       "name_cn": "狱火散弹枪",
+       "slug": "hellfire-shotguns",
+       "changes": [
+        {
+         "text_en": "Primary Fire now only shoots one shotgun.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Damage per bullet reduced from 5.4 to 2.8.",
+         "text_cn": null,
+         "before": 5.4,
+         "after": 2.8,
+         "metric": "damage per bullet"
+        },
+        {
+         "text_en": "Ammo increased from 8 to 16.",
+         "text_cn": null,
+         "before": 8.0,
+         "after": 16.0,
+         "metric": "ammo"
+        },
+        {
+         "text_en": "Secondary Fire now shoots the other shotgun.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "sojourn",
+     "name_en": "Sojourn",
+     "name_cn": "索杰恩",
+     "role": "damage",
+     "dev_note": "Developer Comments: Vivian Chase? More like Vivian Pull.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Disruptor Shot",
+       "name_cn": null,
+       "slug": "disruptor-shot",
+       "changes": [
+        {
+         "text_en": "Disruptor Shot now pulls enemies in on deploy.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "You can deploy Disruptor Shot early by pressing E again.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "soldier-76",
+     "name_en": "Soldier: 76",
+     "name_cn": "士兵76",
+     "role": "damage",
+     "dev_note": "Developer Comments: Run and gun? Sounds like fun!",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Heavy Pulse Rifle",
+       "name_cn": "重脉冲步枪",
+       "slug": "heavy-pulse-rifle",
+       "changes": [
+        {
+         "text_en": "Can now be used during Sprint.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Using Heavy Pulse Rifle while sprinting has a spread of 2.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "sombra",
+     "name_en": "Sombra",
+     "name_cn": "黑影",
+     "role": "damage",
+     "dev_note": "Developer Comments: To keep fights fair, let the enemy team know that they should update their network anti-virus and firewalls as soon as possible.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Virus",
+       "name_cn": null,
+       "slug": "virus",
+       "changes": [
+        {
+         "text_en": "Killing an enemy infected with Virus, it attempts to spread to a nearby enemy.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "symmetra",
+     "name_en": "Symmetra",
+     "name_cn": "秩序之光",
+     "role": "damage",
+     "dev_note": "Developer Comments: Symmetra can’t troll you if you don’t press Teleport.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Teleporter",
+       "name_cn": null,
+       "slug": "teleporter",
+       "changes": [
+        {
+         "text_en": "Only places exit Teleporter.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Any ally can use Teleporter regardless of their location.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Teleporter duration decreased from 10 to 4 seconds.",
+         "text_cn": null,
+         "before": 10.0,
+         "after": 4.0,
+         "metric": "teleporter duration"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "torbjorn",
+     "name_en": "Torbjörn",
+     "name_cn": "托比昂",
+     "role": "damage",
+     "dev_note": "Developer Comments: Everyone deserves a pet turret.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Deploy Turret",
+       "name_cn": null,
+       "slug": "deploy-turret",
+       "changes": [
+        {
+         "text_en": "The turret now sticks to walls, ceilings, and allies.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "tracer",
+     "name_en": "Tracer",
+     "name_cn": "猎空",
+     "role": "damage",
+     "dev_note": "Developer Comments: krow slotsiP esluP ruoy woh gnignahc ,erutuf ro tsap eht ot uoy sdnes ylmodnaR",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Recall",
+       "name_cn": "闪回",
+       "slug": "recall",
+       "changes": [
+        {
+         "text_en": "Randomly sends you to the past or future, changing how your Pulse Pistols work.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "widowmaker",
+     "name_en": "Widowmaker",
+     "name_cn": "黑百合",
+     "role": "damage",
+     "dev_note": "Developer Comments: Hooks + Headshot = Parkour",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Grappling Hook",
+       "name_cn": "抓钩",
+       "slug": "grappling-hook",
+       "changes": [
+        {
+         "text_en": "Now has 3 charges.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Getting a critical hit with Widow’s Kiss’s secondary fire replenishes one charge of the ability.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "SUPPORT",
+   "role": null,
+   "description": null,
+   "heroes": [
+    {
+     "slug": "ana",
+     "name_en": "Ana",
+     "name_cn": "安娜",
+     "role": "support",
+     "dev_note": "Developer Comments: Rise and shine! How’s this for a rude awakening?",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Sleep Dart",
+       "name_cn": null,
+       "slug": "sleep-dart",
+       "changes": [
+        {
+         "text_en": "Slept enemies slowly rise while Sleeping.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Enemies take fall damage when they land.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "baptiste",
+     "name_en": "Baptiste",
+     "name_cn": "巴蒂斯特",
+     "role": "support",
+     "dev_note": "Developer Comments: Someone once advised Baptiste to keep moving forward. He’s really taken that advice to heart.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Exo-Boots",
+       "name_cn": null,
+       "slug": "exo-boots",
+       "changes": [
+        {
+         "text_en": "Now launches you forward rather than upward.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Amplification Matrix",
+       "name_cn": null,
+       "slug": "amplification-matrix",
+       "changes": [
+        {
+         "text_en": "Increases speed of projectiles shot through it by 200%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "brigitte",
+     "name_en": "Brigitte",
+     "name_cn": "布丽吉塔",
+     "role": "support",
+     "dev_note": "Developer Comments: Bigitte",
+     "general": [
+      "Scale increased by 1.5x.",
+      "Armor increased from 50 to 150."
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Shield Barrier",
+       "name_cn": null,
+       "slug": "shield-barrier",
+       "changes": [
+        {
+         "text_en": "Health increased from 250 to 700.",
+         "text_cn": null,
+         "before": 250.0,
+         "after": 700.0,
+         "metric": "health"
+        },
+        {
+         "text_en": "Always uses bigger size.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Rally",
+       "name_cn": null,
+       "slug": "rally",
+       "changes": [
+        {
+         "text_en": "Resets your Shield Bash cooldown.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Movement Speed bonus increased from 1.15x to 1.3x.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "illari",
+     "name_en": "Illari",
+     "name_cn": "伊拉锐",
+     "role": "support",
+     "dev_note": "Developer Comments: Fixing a longstanding Illari bug, her solar powers are now fully functional.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Captive Sun",
+       "name_cn": null,
+       "slug": "captive-sun",
+       "changes": [
+        {
+         "text_en": "After using Captive Sun, Illari becomes Solar Installed. She moves faster and charges her Solar Rifle Faster, her rifle always charges to full damage power.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Movement speed bonus 1.2x.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Attack charge time reduced by 40%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Healing recharge bonus 1.2x.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Solar Powered",
+       "name_cn": null,
+       "slug": "solar-powered",
+       "changes": [
+        {
+         "text_en": "New Passive.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Illari is always Solar Installed when the sun is out.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "kiriko",
+     "name_en": "Kiriko",
+     "name_cn": "雾子",
+     "role": "support",
+     "dev_note": "Dev Comment: You should see her on her trampoline.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Protection Suzu",
+       "name_cn": null,
+       "slug": "protection-suzu",
+       "changes": [
+        {
+         "text_en": "Now also grants allies a 10% damage boost, 10% healing boost, 50% movement speed boost, and 700% increased jump height.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Increased duration from .65 to 1 second.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Vulpine Agility",
+       "name_cn": null,
+       "slug": "vulpine-agility",
+       "changes": [
+        {
+         "text_en": "New Passive",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Kiriko can jump an extra time in the air",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "lifeweaver",
+     "name_en": "Lifeweaver",
+     "name_cn": "生命之梭",
+     "role": "support",
+     "dev_note": "Developer Comments: Reach new heights with Lifeweaver through the power of photosynthesis.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Petal Platform",
+       "name_cn": null,
+       "slug": "petal-platform",
+       "changes": [
+        {
+         "text_en": "Now raises 20m (up from 8m).",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "lucio",
+     "name_en": "Lúcio",
+     "name_cn": "卢西奥",
+     "role": "support",
+     "dev_note": "Developer Comment: Lucio’s gun is now keepin’ it in time.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Sonic Amplifier",
+       "name_cn": null,
+       "slug": "sonic-amplifier",
+       "changes": [
+        {
+         "text_en": "Ammo increased from 20 to 30.",
+         "text_cn": null,
+         "before": 20.0,
+         "after": 30.0,
+         "metric": "ammo"
+        },
+        {
+         "text_en": "Recovery decreased from .14 seconds per bullet to .125 seconds per bullet.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Now Shoots 3 bullets per volley during Speed Boost and 5 bullets per volley during Healing Boost.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Sound Barrier",
+       "name_cn": null,
+       "slug": "sound-barrier",
+       "changes": [
+        {
+         "text_en": "Knocks up enemies the sound waves hit.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "mercy",
+     "name_en": "Mercy",
+     "name_cn": "天使",
+     "role": "support",
+     "dev_note": "Developer Comments: Goodbye, 0 damage numbers!",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Caduceus Staff",
+       "name_cn": null,
+       "slug": "caduceus-staff",
+       "changes": [
+        {
+         "text_en": "Damage boost from Secondary Fire removed.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Secondary Fire is now Damage Staff. (Ability 2 on Controller.)",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Damage Staff Fires Caduceus Blaster projectiles.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Projectiles have a smaller size.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Size gets bigger during ult.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "2 more damage.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Projectiles reload automatically while not firing.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Projectiles reload at twice the speed while healing or after 4 seconds without firing.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Can fire projectiles at a reduced firing speed if healing beam is active.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Healing beam can heal at a reduced rate if Damage Staff is active.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Caduceus Blaster",
+       "name_cn": null,
+       "slug": "caduceus-blaster",
+       "changes": [
+        {
+         "text_en": "Removed.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "moira",
+     "name_en": "Moira",
+     "name_cn": "莫伊拉",
+     "role": "support",
+     "dev_note": "Dev Comment: Moira’s right arm is starting to melt from all the experimentation, so she’s switching it up.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Biotic Grasp (Primary Fire)",
+       "name_cn": null,
+       "slug": "biotic-grasp-primary-fire",
+       "changes": [
+        {
+         "text_en": "Now deals damage instead of healing.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Biotic Grasp (Secondary Fire)",
+       "name_cn": null,
+       "slug": "biotic-grasp-secondary-fire",
+       "changes": [
+        {
+         "text_en": "Now heals instead of doing damage.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "zenyatta",
+     "name_en": "Zenyatta",
+     "name_cn": "禅雅塔",
+     "role": "support",
+     "dev_note": "Developer Comments: “Let Zen walk?” Not sure about that one.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Orb of Destruction",
+       "name_cn": null,
+       "slug": "orb-of-destruction",
+       "changes": [
+        {
+         "text_en": "Ammo increased from 25 to 32.",
+         "text_cn": null,
+         "before": 25.0,
+         "after": 32.0,
+         "metric": "ammo"
+        },
+        {
+         "text_en": "Secondary Fire charge time per projectile decreased from .52 to .47.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Secondary Fire projectiles fire 33% faster.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Secondary Fire damage decreased by 30%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "You can now charge up to 8 Orbs with Secondary Fire.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        },
+        {
+         "text_en": "Zenyatta’s accelerates upward while charging Secondary Fire.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "metric": null
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  }
+ ],
+ "raw_text": null,
+ "hash": "sha256:6c61ee65c9376ac449f3e1d362471a89dc389dfab9e2fa43276ba77f19d5dcda"
+}

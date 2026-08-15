@@ -1,0 +1,114 @@
+{
+ "id": "en-2020-08-04-1",
+ "site": "en",
+ "date": "2020-08-04",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2020/08",
+ "title": "Overwatch Retail Patch Notes – August 4, 2020",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "Summer Games 2020",
+   "role": null,
+   "description": "Attention, athletes: It’s time for the 2020 Summer Games! Test your mettle in Lúcioball Remix, an all-new, even crazier version of your favorite ball-based sport. Sharpen your skills in the cutthroat competition of Copa Lúcioball Season 4. We’ve made major updates to our Busan and Sydney arenas, along with a variety of small updates to Lúcioball gameplay. Once you’ve worked up a sweat, hit the beach with legendary skins including Lifeguard Pharah, Surf’s Up Echo, and Tropical Baptiste. Unlock these and more, along with Summer Games items from previous years!",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "Lúcioball Remix",
+   "role": null,
+   "description": "Lúcioball Remix is the wildest way to play Lúcioball yet. With two balls in play at once, plus periodic Bonus Balls worth three points each, scores will skyrocket and astounding plays will be made. Will you keep up, or will the barrage of balls break your brain?",
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "Lúcioball Gameplay Updates",
+     "body": "Lúcio moves faster Lúcio has faster cooldowns Lúcio punch and boop range increased Lúcio punch and boop are now partially affected by your facing, to improve ball control Lúcio can crouch in the air to drop down to the ground Added new custom game options for Lúcioball",
+     "dev": null
+    }
+   ]
+  },
+  {
+   "type": "generic_update",
+   "title": "General Updates",
+   "role": null,
+   "description": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "Priority Requeue for Backfilled Games",
+     "body": "If you join a game after it has started to replace a player who has previously left, you are considered to have \"backfilled\" into that game. After finishing a game where you backfill, you are now granted a priority requeue the next time you queue to play. You will see a small icon on the interface to denote this status. When you queue for a game with priority requeue status, the matchmaker tries to prioritize finding an appropriate game for you. This normally results in significantly lower times waiting in queue.",
+     "dev": null
+    }
+   ]
+  },
+  {
+   "type": "generic_update",
+   "title": "Custom Games Updates",
+   "role": null,
+   "description": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "Lopsided Teams",
+     "body": "Further customize how many players can be on each team in a custom game. While games are still limited to 12 players in total, you are now able to choose any number of slots on Team 1 and Team 2. For Workshop users, this affects how many dummy bots can spawn on each team. If the total number of player slots is 12, that defines how many dummy bots can spawn on each team (e.g. a 4v8 mode would allow for 4 dummy bots on one team and 8 on the other). If the total number of player slots is less than 12, additional dummy bots may be added to either team as long as the total number of players is within 12 (e.g. a 4v0 mode would allow up to 8 additional dummy bots on either team). We're excited to see what asymmetrical game modes you all come up with!",
+     "dev": null
+    }
+   ]
+  },
+  {
+   "type": "generic_update",
+   "title": "Competitive Updates",
+   "role": null,
+   "description": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "Modification to High SR Grouping Restrictions",
+     "body": "To match the new maximum SR of 3900 a player can achieve after finishing placements, you can no longer queue for Competitive Play in a group with more than 2 players if any player in the party is 3900 SR or higher.",
+     "dev": null
+    }
+   ]
+  },
+  {
+   "type": "generic_update",
+   "title": "Workshop Updates",
+   "role": null,
+   "description": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "New Workshop Actions",
+     "body": "Set Ammo Set Max Ammo Set Weapon Set Reload Enabled Disable Game Mode HUD Enable Game Mode HUD Disable Game Mode In-World UI Enable Game Mode In-World UI Disable Hero HUD Enable Hero HUD Disable Kill Feed Enabled Kill Feed Disable Messages Enable Messages Disable Scoreboard Enable Scoreboard Set Ability Charge Set Ability Resource Set Jump Vertical Speed Disable Nameplates Enable Nameplates Start Forcing Player Outlines Stop Forcing Player Outlines Enable Movement Collision With Environment Disable Movement Collision With Environment Enable Movement Collision With Players Disable Movement Collision With Players Start Modifying Hero Voice Lines Stop Modifying Hero Voice Lines Add Health Pool To Player Remove Health Pool From Player Remove All Health Pools From Player Set Player Health",
+     "dev": null
+    },
+    {
+     "title": "New Workshop Values",
+     "body": "Ammo Max Ammo Weapon Is Reloading Event Was Environment Current Array Index Input Binding String Ability Charge Ability Resource Mapped Array Workshop Setting Toggle Workshop Setting Integer Workshop Setting Real Last Created Health Pool The Workshop Setting values allow you to expose tunable values of your script to their own special section in the Custom Game Settings. With these settings, you can specify the min, max, default, and types of data (Integer, Real, Toggle) you'd like to expose to users. If one or more of these values are used in your script, a new autogenerated Workshop Settings card will appear in the settings menu, allowing you to tweak these value overrides prior to launching the game mode.",
+     "dev": null
+    }
+   ]
+  },
+  {
+   "type": "generic_update",
+   "title": "Bug Fixes",
+   "role": null,
+   "description": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "Heroes",
+     "body": "Brigitte Fixed a bug with Brigitte's Repair Pack that caused interference with specific hero inputs Doomfist Fixed a bug that could cause two Doomfists to trade Rocket Punches and both get knocked back Echo Fixed a bug with cloned hero health bars not displaying status effects properly Fixed a bug with movement sounds not being reduced when crouching Fixed a bug that allowed Echo's Flight ability to continue after she was hacked Mei Fixed a bug that caused heroes with movement abilities to pass through Mei's Cryo-Freeze ability Mercy Fixed a bug with Guardian Angel speed after triggering the Valkyrie ultimate ability Moira Fixed a bug with Moira's Fade exertions and melee sounds playing at map origin Reinhardt Fixed a bug that allowed two Reinhardt's to collide during Charge and not knock each other down Sombra Fixed a bug that allowed Sombra to reach unintended places when using her Translocator ability Fixed a bug that would cause Sombra to get into a bad state if she lost her target just before Hack completes Winston Fixed a bug that allowed Winston to trigger Primal Rage for a short duration when recovering from a stun effect Wrecking Ball Fixed a bug that allowed Wrecking Ball to launch out of a teleporter at high speed when using Grappling Claw",
+     "dev": null
+    },
+    {
+     "title": "Workshop",
+     "body": null,
+     "dev": "Fixed a bug causing Disable Built-In Game Mode Completion to fail in Elimination Fixed a bug causing Set Max Health to apply the percentage change to your current health unnecessarily Fixed a bug preventing Ashe's self-knockback from Coach Gun from triggering Dealt/Received Knockback Events If the Last Of value is given an input value that is not an array, it now returns the value given to it instead of 0 (matching the behavior of First Of)"
+    }
+   ]
+  }
+ ],
+ "raw_text": null,
+ "hash": "sha256:a944580d107dfd8bcb0d66b1b63f8d0d2e3ad9ecbedce0b6af1c6a40f6191ddb"
+}
