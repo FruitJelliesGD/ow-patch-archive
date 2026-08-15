@@ -72,6 +72,9 @@ def _parse_patch_chunk(chunk: str, site: str, url: str) -> Patch | None:
 
     sections = _split_sections(chunk)
     if not sections:
+        # drop site chrome (Top-of-post buttons, pagination) from the legacy fallback
+        for el in soup.select(".PatchNotesTop, .PatchNotesPagination"):
+            el.decompose()
         return Patch(
             site=site, date=date, url=url, title=title,
             raw_text=_normalize_text(soup.get_text(" ", strip=True)),

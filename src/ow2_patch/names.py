@@ -6,6 +6,7 @@ in an `unknown` list so a human can add them to data/names.json later.
 
 from __future__ import annotations
 
+import hashlib
 import json
 import pathlib
 import re
@@ -25,11 +26,18 @@ ABILITY_ALIASES = {}
 
 
 def slugify(text: str) -> str:
-    """Normalize to lowercase ascii slug (Soldier: 76 -> soldier-76, D.Va -> d-va)."""
+    """Normalize to lowercase ascii slug (Soldier: 76 -> soldier-76, D.Va -> d-va).
+
+    Never returns an empty string: pure-CJK or all-punctuation input falls back to a
+    deterministic hash-based slug so timeline entries can never collapse onto ''.
+    """
     text = unicodedata.normalize("NFKD", text)
     text = "".join(c for c in text if not unicodedata.combining(c)).lower()
-    slug = re.sub(r"[^a-z0-9]+", "-", text)
-    return slug.strip("-")
+    slug = re.sub(r"[^a-z0-9]+", "-", text).strip("-")
+    if not slug:
+        digest = hashlib.sha256(text.encode("utf-8")).hexdigest()[:8]
+        slug = f"hero-{digest}"
+    return slug
 
 
 def _normalize_key(text: str) -> str:

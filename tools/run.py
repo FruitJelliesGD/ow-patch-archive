@@ -23,6 +23,18 @@ from ow2_patch.pipeline import all_months, run_pipeline
 DEFAULT_DATA = pathlib.Path(__file__).resolve().parent.parent / "data"
 
 
+def recent_months(months: list[tuple[str, int, int]], count: int) -> list[tuple[str, int, int]]:
+    """Keep only the last `count` distinct months across sites (today-count .. today)."""
+    today = __import__("datetime").date.today()
+    cutoff_y, cutoff_m = today.year, today.month
+    for _ in range(count - 1):
+        cutoff_m -= 1
+        if cutoff_m == 0:
+            cutoff_m = 12
+            cutoff_y -= 1
+    return [m for m in months if (m[1], m[2]) >= (cutoff_y, cutoff_m)]
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="OW patch monitor pipeline runner")
     parser.add_argument("--data", type=pathlib.Path, default=DEFAULT_DATA)
@@ -39,7 +51,7 @@ def main(argv: list[str] | None = None) -> int:
     if args.sites:
         months = [m for m in months if m[0] in args.sites]
     if args.months is not None:
-        months = months[-args.months:]
+        months = recent_months(months, args.months)
 
     result = run_pipeline(args.data, months=months, fetch=fetch)
     print(f"scanned {result.fetched_months} months, "
@@ -72,8 +84,11 @@ def main(argv: list[str] | None = None) -> int:
         if cfg is None:
             print("SMTP_HOST not set; skipping email")
         else:
-            send_email(cfg, notification.title, notification.email_text)
-            print(f"email sent to {cfg['to']}")
+            try:
+                send_email(cfg, notification.title, notification.email_text)
+                print(f"email sent to {cfg['to']}")
+            except Exception as exc:  # email must never fail the run
+                print(f"WARN: email failed, skipped: {exc}")
     return 0
 
 

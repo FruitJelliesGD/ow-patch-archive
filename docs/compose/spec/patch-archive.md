@@ -50,9 +50,10 @@ branch: feat/patch-archive
 
 ### GitHub Actions
 
-- `monitor.yml`：cron `0 */6 * * *` + dispatch；pip install → pipeline 增量 → 有变化则 commit+push → gh issue → SMTP 邮件。Secrets：`SMTP_HOST/SMTP_PORT/SMTP_USER/SMTP_PASS/SMTP_TO`。权限 `contents: write, issues: write`。
-- `backfill.yml`：手动 dispatch 全量回填，按年分批 commit，不通知。
-- `pages.yml`：push main → configure-pages → 拷贝 web/ + data/ 到 _site/ → deploy-pages。权限 `pages: write, id-token: write`。
+- `monitor.yml`：cron 每 6 小时（避开整点）+ dispatch；pip install → pipeline 增量 → 有变化则 commit+push → gh issue → SMTP 邮件（邮件失败不阻断 run）。Secrets：`SMTP_HOST/SMTP_PORT/SMTP_USER/SMTP_PASS/SMTP_TO`。权限 `contents: write, issues: write`。
+- `backfill.yml`：手动 dispatch 全量回填，一次性 commit（数据已在仓库，按年分批仅对首次回填有意义），不通知。
+- `pages.yml`：push main + 每日 cron + dispatch → configure-pages → 拷贝 web/ + data/ 到 _site/ → deploy-pages。权限 `pages: write, id-token: write`。说明：monitor 的自动 commit 由 GITHUB_TOKEN 推送，按 GitHub 规则不触发同仓库 `on: push` 工作流，故 pages 用每日 cron 兜底刷新。
+- `ci.yml`：push/PR 运行 pytest。
 
 ## [S3] Out of Scope
 

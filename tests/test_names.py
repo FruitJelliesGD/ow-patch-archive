@@ -13,6 +13,13 @@ def test_slugify():
     assert slugify("Torbjörn") == "torbjorn"
 
 
+def test_slugify_never_empty_for_cjk():
+    # pure-CJK unknown hero names must not collapse to an empty slug
+    slug = slugify("弗蕾娅")
+    assert slug.startswith("hero-")
+    assert slugify("弗蕾娅") == slug  # deterministic
+
+
 def test_hero_en_lookup():
     r = NameResolver()
     slug, en, cn, role = r.hero("Soldier: 76", "en")

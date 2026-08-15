@@ -3,6 +3,9 @@ name: pages
 on:
   push:
     branches: [main]
+  schedule:
+    # monitor 的自动 commit 不触发 on:push（GITHUB_TOKEN 规则），用定时刷新兜底
+    - cron: "23 4 * * *"
   workflow_dispatch:
 
 permissions:

@@ -99,9 +99,13 @@ def test_pipeline_detects_content_edit(tmp_path):
     stored = json.loads((data_dir / "patches" / "en" / "2026-08-14-1.json").read_text(encoding="utf-8"))
     hero = json.loads((data_dir / "heroes" / "d-mon.json").read_text(encoding="utf-8"))
     assert any(e.get("after") == 0.04 for e in hero["timeline"])
-    assert stored["hash"] != json.loads(
-        (tmp_path / "data" / "patches" / "en" / "2026-08-12-1.json").read_text(encoding="utf-8")
-    )["hash"] or True  # hash lives in manifest, not the file
+    assert any(
+        c["after"] == 0.04
+        for s in stored["sections"] for h in s["heroes"] for a in h["abilities"] for c in a["changes"]
+    )
+    # the sibling patch file is untouched
+    other = json.loads((data_dir / "patches" / "en" / "2026-08-12-1.json").read_text(encoding="utf-8"))
+    assert other["sections"][1]["heroes"][0]["abilities"][0]["changes"][0]["after"] == 65.0
 
 
 def test_unknown_names_recorded_not_fatal(tmp_path):

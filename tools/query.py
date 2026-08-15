@@ -60,21 +60,22 @@ def print_hero_timeline(hero: dict) -> None:
 
 
 def query_patch(site: str, date: str, data_dir: pathlib.Path) -> None:
-    path = data_dir / "patches" / site / f"{date}-1.json"
-    if not path.exists():
+    paths = sorted((data_dir / "patches" / site).glob(f"{date}-*.json"))
+    if not paths:
         print(f"no patch found for {site} {date}")
         return
-    data = json.loads(path.read_text(encoding="utf-8"))
-    print(f"\n{data['title']}\n{data['url']}\n")
-    for section in data.get("sections", []):
-        print(f"## {section.get('title')}")
-        for hero in section.get("heroes", []):
-            print(f"  {hero.get('name_en') or hero.get('name_cn')}")
-            for ability in hero.get("abilities", []):
-                print(f"    {ability.get('name_en') or ability.get('name_cn')}")
-                for change in ability.get("changes", []):
-                    print(f"      - {change.get('text_en') or change.get('text_cn')}")
-        print()
+    for path in paths:
+        data = json.loads(path.read_text(encoding="utf-8"))
+        print(f"\n{data['title']}\n{data['url']}\n")
+        for section in data.get("sections", []):
+            print(f"## {section.get('title')}")
+            for hero in section.get("heroes", []):
+                print(f"  {hero.get('name_en') or hero.get('name_cn')}")
+                for ability in hero.get("abilities", []):
+                    print(f"    {ability.get('name_en') or ability.get('name_cn')}")
+                    for change in ability.get("changes", []):
+                        print(f"      - {change.get('text_en') or change.get('text_cn')}")
+            print()
 
 
 def main(argv: list[str] | None = None) -> int:

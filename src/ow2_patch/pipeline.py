@@ -61,8 +61,11 @@ def run_pipeline(
     for site, year, month in months:
         try:
             page = fetch.fetch_month(site, year, month)
-        except Exception:
-            continue  # 404 months (CN) or transient failure: skip
+        except Exception as exc:
+            # 404 (CN 无补丁月份) is expected; anything else should be visible in logs
+            if "404" not in str(exc):
+                print(f"WARN: fetch failed {site} {year}-{month:02d}: {exc}")
+            continue
         result.fetched_months += 1
         parsed.extend(parse_patch_notes(page.html, site, url=page.url))
 

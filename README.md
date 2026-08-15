@@ -62,7 +62,7 @@ python -m venv .venv && .\.venv\Scripts\activate     # Windows
 pip install -e ".[dev]"
 
 pytest -q                                            # 单元测试
-python tools/run.py --data data --months 3           # 增量扫描最近 3 个月
+python tools/run.py --data data --months 3           # 增量扫描最近 3 个月（两站）
 python tools/query.py 士兵76                          # 查询英雄改动历史
 python tools/query.py --site en --date 2026-08-12     # 查看单个补丁
 python tools/serve.py                                 # 本地预览查询站 (http://127.0.0.1:8000)

@@ -101,9 +101,13 @@ def load_smtp_from_env() -> dict | None:
     host = os.environ.get("SMTP_HOST")
     if not host:
         return None
+    try:
+        port = int(os.environ.get("SMTP_PORT") or "465")
+    except ValueError:
+        port = 465
     return {
         "host": host,
-        "port": int(os.environ.get("SMTP_PORT", "465")),
+        "port": port,
         "user": os.environ.get("SMTP_USER", ""),
         "password": os.environ.get("SMTP_PASS", ""),
         "to": os.environ.get("SMTP_TO", ""),
