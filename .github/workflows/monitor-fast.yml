@@ -1,10 +1,10 @@
-name: monitor
+name: monitor-fast
 
 on:
   schedule:
-    # daily full scan: catches edits to OLD patch notes (new patches are picked up
-    # by monitor-fast every 5 minutes)
-    - cron: "23 3 * * *"
+    # GitHub Actions 最快支持每 5 分钟一次；只抓最近 2 个月，用于快速发现新补丁。
+    # 注意：调度可能延迟数分钟；私有仓库 Actions 分钟数消耗较快（见 README）。
+    - cron: "*/5 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -12,11 +12,11 @@ permissions:
   issues: write
 
 concurrency:
-  group: monitor
+  group: monitor-fast
   cancel-in-progress: false
 
 jobs:
-  monitor:
+  monitor-fast:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -28,9 +28,9 @@ jobs:
       - name: Install
         run: pip install .
 
-      - name: Run pipeline (full scan: all months)
+      - name: Run pipeline (fast scan: recent 2 months)
         id: pipeline
-        run: python tools/run.py --data data --notify-out notify-full.json --send-email
+        run: python tools/run.py --data data --months 2 --notify-out notify-fast.json --send-email
         env:
           SMTP_HOST: ${{ secrets.SMTP_HOST }}
           SMTP_PORT: ${{ secrets.SMTP_PORT }}
@@ -39,19 +39,19 @@ jobs:
           SMTP_TO: ${{ secrets.SMTP_TO }}
 
       - name: Commit new/changed data
-        if: hashFiles('notify-full.json') != ''
+        if: hashFiles('notify-fast.json') != ''
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
-          git commit -m "data: full-scan archive update ($(date -u +%Y-%m-%dT%H:%MZ))"
+          git commit -m "data: fast-scan archive update ($(date -u +%Y-%m-%dT%H:%MZ))"
           git push
 
       - name: Open GitHub issue
-        if: hashFiles('notify-full.json') != ''
+        if: hashFiles('notify-fast.json') != ''
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          TITLE=$(python -c "import json,sys;sys.stdout.reconfigure(encoding='utf-8');print(json.load(open('notify-full.json',encoding='utf-8'))['title'])")
-          python -c "import json,sys;sys.stdout.reconfigure(encoding='utf-8');print(json.load(open('notify-full.json',encoding='utf-8'))['body_md'])" > /tmp/issue-body.md
+          TITLE=$(python -c "import json,sys;sys.stdout.reconfigure(encoding='utf-8');print(json.load(open('notify-fast.json',encoding='utf-8'))['title'])")
+          python -c "import json,sys;sys.stdout.reconfigure(encoding='utf-8');print(json.load(open('notify-fast.json',encoding='utf-8'))['body_md'])" > /tmp/issue-body.md
           gh issue create --title "$TITLE" --body-file /tmp/issue-body.md

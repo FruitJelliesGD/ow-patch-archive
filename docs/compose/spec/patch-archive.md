@@ -60,7 +60,8 @@ commits: 5ab4fc1..b295273
 
 ### GitHub Actions
 
-- `monitor.yml`：cron 每 6 小时（避开整点）+ dispatch；pip install → pipeline 增量 → 有变化则 commit+push → gh issue → SMTP 邮件（邮件失败不阻断 run）。Secrets：`SMTP_HOST/SMTP_PORT/SMTP_USER/SMTP_PASS/SMTP_TO`。权限 `contents: write, issues: write`。
+- `monitor.yml`：每日 cron 全量扫描（所有月份，捕获旧补丁被官方修改）+ dispatch；有变化则 commit+push → gh issue → SMTP 邮件（邮件失败不阻断 run）。Secrets：`SMTP_HOST/SMTP_PORT/SMTP_USER/SMTP_PASS/SMTP_TO`。权限 `contents: write, issues: write`。
+- `monitor-fast.yml`：每 5 分钟 cron 快扫最近 2 个月（快速发现新补丁），逻辑与 monitor 相同、独立通知门控文件。注意：GitHub 调度可能延迟数分钟；私有仓库分钟额度消耗较快。
 - `backfill.yml`：手动 dispatch 全量回填，一次性 commit（数据已在仓库，按年分批仅对首次回填有意义），不通知。
 - `pages.yml`：push main + 每日 cron + dispatch → configure-pages → 拷贝 web/ + data/ 到 _site/ → deploy-pages。权限 `pages: write, id-token: write`。说明：monitor 的自动 commit 由 GITHUB_TOKEN 推送，按 GitHub 规则不触发同仓库 `on: push` 工作流，故 pages 用每日 cron 兜底刷新。
 - `ci.yml`：push/PR 运行 pytest。

@@ -10,7 +10,10 @@
 
 ## 功能
 
-- **自动轮询**：`monitor` 工作流每 6 小时扫描两站全部月份页（`workflow_dispatch` 可手动触发）。
+- **两级自动轮询**：
+  - `monitor-fast` 每 **5 分钟**快扫最近 2 个月页面，快速发现**新补丁**；
+  - `monitor` 每天 1 次全量扫描全部月份，捕获**旧补丁被官方修改**。
+  （两个工作流均可通过 `workflow_dispatch` 手动触发。）
 - **内容级变化检测**：对每条补丁计算规范化哈希并与 `data/manifest.json` 比对——
   新增补丁 / 旧补丁内容被修改都会触发提交 + Issue + 邮件，并把变更明细写入 `data/changelog.jsonl`。
 - **格式化归档**：`data/archive/{en,cn}/YYYY/MM/` 下是每个补丁的可读 Markdown；
@@ -42,7 +45,12 @@ data/               归档数据（全部提交入库）
    ```bash
    git push -u origin feat/patch-archive
    ```
-   （合并到 `main` 后，`monitor` 定时任务与 `pages` 部署即开始工作。）
+   （合并到 `main` 后，`monitor-fast`/`monitor` 定时任务与 `pages` 部署即开始工作。）
+
+> **注意（私有仓库）**：`monitor-fast` 每 5 分钟运行一次，每次约 1 分钟。
+> 私有仓库的 GitHub Actions 免费额度为 1000 分钟/月，5 分钟频率约 3 天就会用尽。
+> 若仓库保持**公开**则 Actions 分钟数免费不限量；否则建议把 `monitor-fast` 的频率调低
+> （改 `.github/workflows/monitor-fast.yml` 里的 cron，如 `*/15 * * * *`）。
 
 2. **启用 GitHub Pages**：仓库 Settings → Pages → Source 选 **GitHub Actions**。
 
