@@ -3,19 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>守望先锋 · 英雄改动轨迹查询</title>
+<title>守望先锋 · 补丁归档（按时间）</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
-  <h1>守望先锋 · 英雄改动轨迹</h1>
-  <p class="sub">从官方补丁说明归档中提取的英雄 / 技能 / 威能改动历史（2016-05 至今，英文站 + 中文站）</p>
+  <nav class="topnav">
+    <a href="index.html" class="active">按时间浏览补丁</a>
+    <a href="heroes.html">按英雄查询</a>
+  </nav>
+  <h1>守望先锋 · 补丁说明归档</h1>
+  <p class="sub">英文站 2016-05 至今 + 中文站 2025-02 至今，同一补丁中英文合并展示</p>
   <p class="meta">最后抓取：<span id="updated">-</span></p>
 </header>
-<main>
-  <input id="search" type="search" placeholder="搜索英雄：中文名 / 英文名 / slug（如 士兵76 / Soldier: 76 / soldier-76）…" autocomplete="off">
-  <div id="roles" class="roles"></div>
-</main>
+<main id="patch-list" class="patch-browser"></main>
 <footer>数据来源：<a href="https://overwatch.blizzard.com/en-us/news/patch-notes/">overwatch.blizzard.com</a> · <a href="https://ow.blizzard.cn/news/patch-notes/">ow.blizzard.cn</a></footer>
 <script src="app.js"></script>
 <script>initIndex();</script>

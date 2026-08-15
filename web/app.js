@@ -1,4 +1,4 @@
-/* Shared helpers for the OW patch timeline site. */
+/* Shared helpers for the OW patch archive site (time browser + hero query). */
 "use strict";
 
 const ROLE_LABEL = { tank: "重装", damage: "输出", support: "支援" };
@@ -7,6 +7,8 @@ const SITE_LABEL = { en: "英文站", cn: "中文站" };
 const STATUS_LABEL = {
   added: "新增", removed: "移除", reworked: "重做", moved: "变更", changed: "调整",
 };
+const MONTH_LABEL = ["", "1月", "2月", "3月", "4月", "5月", "6月",
+  "7月", "8月", "9月", "10月", "11月", "12月"];
 
 async function fetchJSON(path) {
   const resp = await fetch(path);
@@ -24,11 +26,65 @@ function fmtNum(v) {
   return typeof v === "number" ? (Number.isInteger(v) ? v : v.toFixed(2)) : v;
 }
 
-/* ---------- index page ---------- */
+function numberify(html) {
+  return html.replace(/(\d+(?:\.\d+)?\s*→\s*\d+(?:\.\d+)?)/g, '<span class="num">$1</span>');
+}
+
+function siteBadges(sites) {
+  return (sites || []).map((s) => `<span class="badge ${esc(s)}">${SITE_LABEL[s] || s}</span>`).join(" ");
+}
+
+/* ---------- time browser (index.html) ---------- */
 
 async function initIndex() {
-  const data = await fetchJSON("data/heroes_index.json");
+  const data = await fetchJSON("data/patches_index.json");
   document.getElementById("updated").textContent = (data.updated || "").slice(0, 16) || "-";
+  const patches = data.patches || [];
+
+  // group by year -> month
+  const years = new Map();
+  for (const p of patches) {
+    const [y, m] = p.date.split("-");
+    if (!years.has(y)) years.set(y, new Map());
+    const months = years.get(y);
+    if (!months.has(m)) months.set(m, []);
+    months.get(m).push(p);
+  }
+
+  const container = document.getElementById("patch-list");
+  for (const [year, months] of [...years.entries()].sort((a, b) => b[0].localeCompare(a[0]))) {
+    const yearSection = document.createElement("section");
+    yearSection.className = "year";
+    yearSection.innerHTML = `<h2 class="year-title">${esc(year)}</h2>`;
+    for (const [month, entries] of [...months.entries()].sort((a, b) => b[0].localeCompare(a[0]))) {
+      const monthSection = document.createElement("div");
+      monthSection.className = "month";
+      monthSection.innerHTML = `<h3 class="month-title">${MONTH_LABEL[Number(month)]}</h3>`;
+      const list = document.createElement("div");
+      list.className = "patch-list";
+      for (const p of entries) {
+        const site = p.sites.includes("cn") ? "cn" : "en";
+        const title = site === "cn" ? (p.title_cn || p.title_en) : (p.title_en || p.title_cn);
+        const a = document.createElement("a");
+        a.className = "patch-entry";
+        a.href = `patch.html?id=${encodeURIComponent(p.id)}&lang=${site}`;
+        a.innerHTML = `
+          <span class="patch-entry-date">${esc(p.date)}</span>
+          ${siteBadges(p.sites)}
+          <span class="patch-entry-title">${esc(title || p.id)}</span>`;
+        list.appendChild(a);
+      }
+      monthSection.appendChild(list);
+      yearSection.appendChild(monthSection);
+    }
+    container.appendChild(yearSection);
+  }
+}
+
+/* ---------- hero list (heroes.html) ---------- */
+
+async function initHeroes() {
+  const data = await fetchJSON("data/heroes_index.json");
   const roles = { tank: [], damage: [], support: [], unknown: [] };
   for (const h of data.heroes) roles[h.role]?.push(h) ?? roles.unknown.push(h);
 
@@ -39,9 +95,7 @@ async function initIndex() {
     section.className = `role-${role}`;
     section.innerHTML = `<h2 class="role-title">${esc(ROLE_LABEL[role] || role)}</h2><div class="hero-grid"></div>`;
     const grid = section.querySelector(".hero-grid");
-    for (const h of heroes) {
-      grid.appendChild(heroCard(h));
-    }
+    for (const h of heroes) grid.appendChild(heroCard(h));
     container.appendChild(section);
   }
 
@@ -58,18 +112,16 @@ function heroCard(h) {
   a.className = "hero-card";
   a.href = `hero.html?slug=${encodeURIComponent(h.slug)}`;
   a.dataset.search = [h.slug, h.en, h.cn].join(" ").toLowerCase();
-  const count = h.count ?? "";
-  a.innerHTML = `<span class="count">${esc(count)}</span>
-    <div class="cn">${esc(h.cn || h.en)}</div>
+  a.innerHTML = `<div class="cn">${esc(h.cn || h.en)}</div>
     <div class="en">${esc(h.en || "")}</div>`;
   return a;
 }
 
-/* ---------- hero page ---------- */
+/* ---------- hero timeline (hero.html) ---------- */
 
 async function initHero() {
   const slug = new URLSearchParams(location.search).get("slug");
-  if (!slug) { location.href = "index.html"; return; }
+  if (!slug) { location.href = "heroes.html"; return; }
   let hero;
   try {
     hero = await fetchJSON(`data/heroes/${encodeURIComponent(slug)}.json`);
@@ -88,11 +140,10 @@ async function initHero() {
     let key, title;
     if (e.kind === "ability") {
       key = `ability::${e.ability_slug || e.ability_en || e.ability_cn}`;
-      title = `${e.ability_cn || e.ability_en || "-"} / ${e.ability_en || ""}`.replace(" / ", " · ").replace(/^· | · $/g, "").trim();
-      if (e.ability_en && e.ability_cn) title = `${e.ability_cn} / ${e.ability_en}`;
+      title = e.ability_cn && e.ability_en ? `${e.ability_cn} / ${e.ability_en}` : (e.ability_cn || e.ability_en || "-");
     } else if (e.kind === "perk") {
-      key = `perk::${e.perk_cn || e.perk_en}`;
-      title = `${e.perk_cn || ""} ${e.perk_en ? `(${e.perk_en})` : ""}`.trim() || "-";
+      key = `perk::${e.perk_slug || e.perk_cn || e.perk_en}`;
+      title = e.perk_cn && e.perk_en ? `${e.perk_cn} / ${e.perk_en}` : (e.perk_cn || e.perk_en || "-");
     } else {
       key = "general";
       title = "其他改动";
@@ -178,6 +229,151 @@ function entryNode(e) {
   return div;
 }
 
-function numberify(html) {
-  return html.replace(/(\d+(?:\.\d+)?\s*→\s*\d+(?:\.\d+)?)/g, '<span class="num">$1</span>');
+/* ---------- patch detail (patch.html) ---------- */
+
+async function initPatch() {
+  const params = new URLSearchParams(location.search);
+  const id = params.get("id");
+  const lang = params.get("lang") === "en" ? "en" : "cn";
+  if (!id) { location.href = "index.html"; return; }
+
+  const index = await fetchJSON("data/patches_index.json");
+  const meta = index.patches.find((p) => p.id === id);
+  if (!meta) {
+    document.getElementById("patch-title").textContent = "未找到该补丁";
+    return;
+  }
+
+  const sites = meta.sites || [];
+  const langs = sites.slice().sort((a, b) => (a === "cn" ? -1 : 1));
+  const active = sites.includes(lang) ? lang : langs[0];
+  const patchId = active === "en" ? meta.patch_id_en : meta.patch_id_cn;
+  const parts = patchId.split("-");
+  const file = `data/patches/${active}/${parts.slice(1, 4).join("-")}-${parts[4]}.json`;
+  const patch = await fetchJSON(file);
+
+  document.getElementById("patch-date").textContent = meta.date;
+  document.getElementById("patch-sites").innerHTML = siteBadges(sites);
+  document.getElementById("patch-title").textContent = patch.title;
+
+  // language switch
+  const switcher = document.getElementById("lang-switch");
+  for (const s of langs) {
+    const a = document.createElement("a");
+    a.className = `lang-btn ${s === active ? "active" : ""}`;
+    a.href = `patch.html?id=${encodeURIComponent(id)}&lang=${s}`;
+    a.textContent = SITE_LABEL[s];
+    switcher.appendChild(a);
+  }
+  const links = document.getElementById("patch-links");
+  for (const s of sites) {
+    const url = s === "en" ? meta.url_en : meta.url_cn;
+    if (url) {
+      const a = document.createElement("a");
+      a.href = url;
+      a.target = "_blank";
+      a.rel = "noopener";
+      a.textContent = `${SITE_LABEL[s]}原文 ↗`;
+      links.appendChild(a);
+    }
+  }
+
+  const main = document.getElementById("patch-body");
+  for (const section of patch.sections || []) {
+    const sec = document.createElement("section");
+    sec.className = "timeline-group";
+    const role = ROLE_LABEL[section.role] || "";
+    sec.innerHTML = `<h2>${esc(section.title || "")}${role ? `（${role}）` : ""}</h2>`;
+    const body = document.createElement("div");
+    if (section.description) {
+      const d = document.createElement("div");
+      d.className = "text";
+      d.textContent = section.description;
+      body.appendChild(d);
+    }
+    for (const hero of section.heroes || []) {
+      body.appendChild(heroBlock(hero));
+    }
+    for (const block of section.blocks || []) {
+      const b = document.createElement("div");
+      b.className = "entry";
+      const title = document.createElement("div");
+      title.className = "text";
+      title.innerHTML = `<strong>${esc(block.title || "")}</strong>`;
+      b.appendChild(title);
+      if (block.body) {
+        const p = document.createElement("div");
+        p.className = "text";
+        p.textContent = block.body;
+        b.appendChild(p);
+      }
+      if (block.dev) {
+        const p = document.createElement("div");
+        p.className = "text en-text";
+        p.textContent = block.dev;
+        b.appendChild(p);
+      }
+      body.appendChild(b);
+    }
+    sec.appendChild(body);
+    main.appendChild(sec);
+  }
+}
+
+function heroBlock(hero) {
+  const block = document.createElement("div");
+  block.className = "hero-block";
+  const name = hero.name_cn || hero.name_en || hero.slug;
+  block.innerHTML = `<h3 class="hero-block-name">${esc(name)}</h3>`;
+  if (hero.dev_note) {
+    const d = document.createElement("div");
+    d.className = "text en-text";
+    d.textContent = hero.dev_note;
+    block.appendChild(d);
+  }
+  for (const line of hero.general || []) {
+    const d = document.createElement("div");
+    d.className = "text";
+    d.textContent = line;
+    block.appendChild(d);
+  }
+  for (const perk of hero.perks || []) {
+    const p = document.createElement("div");
+    p.className = "entry perk-block";
+    const status = document.createElement("span");
+    status.className = `perk-status ${esc(perk.status)}`;
+    status.textContent = STATUS_LABEL[perk.status] || perk.status;
+    const h = document.createElement("div");
+    h.className = "text";
+    h.innerHTML = `<strong>${esc(perk.name_cn || perk.name_en || "威能")}</strong> `;
+    h.appendChild(status);
+    p.appendChild(h);
+    const lines = (perk.lines_cn && perk.lines_cn.length ? perk.lines_cn : perk.lines_en) || [];
+    for (const line of lines) {
+      const d = document.createElement("div");
+      d.className = "text";
+      d.textContent = line;
+      p.appendChild(d);
+    }
+    if (perk.lines_cn?.length && perk.lines_en?.length) {
+      const d = document.createElement("div");
+      d.className = "text en-text";
+      d.textContent = perk.lines_en.join(" / ");
+      p.appendChild(d);
+    }
+    block.appendChild(p);
+  }
+  for (const ability of hero.abilities || []) {
+    const a = document.createElement("div");
+    a.className = "entry";
+    a.innerHTML = `<div class="text"><strong>${esc(ability.name_cn || ability.name_en || "")}</strong></div>`;
+    for (const change of ability.changes || []) {
+      const d = document.createElement("div");
+      d.className = "text";
+      d.innerHTML = numberify(esc(change.text_cn || change.text_en || ""));
+      a.appendChild(d);
+    }
+    block.appendChild(a);
+  }
+  return block;
 }

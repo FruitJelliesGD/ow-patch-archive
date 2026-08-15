@@ -122,6 +122,86 @@ main { max-width: 960px; margin: 0 auto; padding: 20px; }
 .perk-status.removed { background: rgba(244, 67, 54, 0.18); color: #ef5350; }
 .perk-status.reworked, .perk-status.moved { background: rgba(243, 156, 58, 0.18); color: var(--orange); }
 .perk-status.changed { background: rgba(79, 195, 247, 0.15); color: var(--en); }
+
+/* top navigation */
+.topnav {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+.topnav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 13px;
+  padding: 5px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+}
+.topnav a.active {
+  color: var(--text);
+  border-color: var(--accent);
+  background: rgba(79, 195, 247, 0.08);
+}
+
+/* time browser */
+.patch-browser .year-title {
+  color: var(--muted);
+  font-size: 18px;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 6px;
+  margin: 26px 0 6px;
+}
+.patch-browser .month-title {
+  color: var(--accent);
+  font-size: 14px;
+  margin: 16px 0 8px;
+}
+.patch-entry {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 9px 14px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  margin-bottom: 6px;
+  color: var(--text);
+  text-decoration: none;
+  transition: border-color 0.15s;
+}
+.patch-entry:hover { border-color: var(--accent); }
+.patch-entry-date { color: var(--muted); font-size: 12px; white-space: nowrap; }
+.patch-entry-title { font-size: 14px; }
+
+/* patch detail */
+.patch-body .hero-block {
+  padding: 6px 16px 12px;
+  border-bottom: 1px solid var(--line);
+}
+.hero-block-name {
+  margin: 12px 0 6px;
+  font-size: 14px;
+  color: var(--teal);
+}
+.lang-switch { margin: 10px 0; }
+.lang-btn {
+  display: inline-block;
+  margin-right: 8px;
+  padding: 4px 14px;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 13px;
+}
+.lang-btn.active {
+  color: var(--text);
+  border-color: var(--accent);
+  background: rgba(79, 195, 247, 0.08);
+}
+.patch-links a { display: inline-block; margin-right: 14px; font-size: 13px; color: var(--accent); }
+.perk-block { border-bottom: none; }
+
 footer {
   max-width: 960px;
   margin: 30px auto;
