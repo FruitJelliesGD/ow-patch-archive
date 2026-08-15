@@ -28,7 +28,7 @@ jobs:
       - name: Install
         run: pip install .
 
-      - name: Run pipeline (full scan: all months)
+      - name: Run pipeline (full scan of all months)
         id: pipeline
         run: python tools/run.py --data data --notify-out notify-full.json --send-email
         env:

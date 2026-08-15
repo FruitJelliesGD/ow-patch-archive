@@ -28,7 +28,7 @@ jobs:
       - name: Install
         run: pip install .
 
-      - name: Run pipeline (fast scan: recent 2 months)
+      - name: Run pipeline (fast scan of recent 2 months)
         id: pipeline
         run: python tools/run.py --data data --months 2 --notify-out notify-fast.json --send-email
         env:
