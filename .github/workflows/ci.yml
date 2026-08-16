@@ -14,4 +14,12 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install ".[dev]"
-      - run: pytest -q
+      - name: Run pytest (log kept for diagnosis)
+        run: pytest -q --tb=short > /tmp/pytest.log 2>&1 || { cat /tmp/pytest.log; exit 1; }
+      - name: Upload pytest log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pytest-log
+          path: /tmp/pytest.log
+          if-no-files-found: ignore

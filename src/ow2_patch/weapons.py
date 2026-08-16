@@ -10,15 +10,30 @@ data/weapons.json + `tools/rebuild.py` re-labels.
 from __future__ import annotations
 
 import json
+import os
 import pathlib
 import re
 
 DEFAULT_WEAPONS_PATH = pathlib.Path(__file__).resolve().parent.parent.parent / "data" / "weapons.json"
 
 
+def _default_weapons_path() -> pathlib.Path:
+    """Locate data/weapons.json for both editable installs and plain `pip install .`."""
+    candidates = [
+        pathlib.Path(os.environ["OW2_WEAPONS_PATH"]) / "weapons.json"
+        if os.environ.get("OW2_WEAPONS_PATH") else None,
+        pathlib.Path.cwd() / "data" / "weapons.json",
+        DEFAULT_WEAPONS_PATH,
+    ]
+    for candidate in candidates:
+        if candidate is not None and candidate.exists():
+            return candidate
+    return pathlib.Path.cwd() / "data" / "weapons.json"
+
+
 def load_weapons(path: pathlib.Path | None = None) -> dict:
     if path is None or not path.exists():
-        path = DEFAULT_WEAPONS_PATH
+        path = _default_weapons_path()
     with open(path, encoding="utf-8") as fh:
         return json.load(fh)
 
