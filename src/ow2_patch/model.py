@@ -41,6 +41,7 @@ class Perk:
     status: str = "changed"
     lines_en: list[str] = field(default_factory=list)
     lines_cn: list[str] = field(default_factory=list)
+    raw_text: list[str] = field(default_factory=list)  # original general lines before attribution
 
 
 @dataclass
@@ -133,6 +134,7 @@ def _perk_to_dict(p: Perk) -> dict:
         "status": p.status,
         "lines_en": p.lines_en,
         "lines_cn": p.lines_cn,
+        "raw_text": p.raw_text,
     }
 
 

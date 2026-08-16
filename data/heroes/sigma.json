@@ -21,7 +21,13 @@
    "lines_en": [],
    "lines_cn": [
     "伤害转化率从40%降低至30%。"
-   ]
+   ],
+   "before": 40.0,
+   "after": 30.0,
+   "by": -10.0,
+   "by_pct": null,
+   "metric": "damage",
+   "unit": "pct"
   },
   {
    "patch": "cn-2026-07-15-1",
@@ -601,11 +607,11 @@
    "subject": null,
    "text_en": "Damage increased to 75% (Up from 50%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 50.0,
+   "after": 75.0,
+   "by": 25.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "damage",
    "unit": null
   },
   {
@@ -1153,8 +1159,14 @@
    "status": "changed",
    "lines_en": [],
    "lines_cn": [
-    "完全失重——异能 持续时间从4秒减少至1.5秒。"
-   ]
+    "持续时间从4秒减少至1.5秒。"
+   ],
+   "before": 4.0,
+   "after": 1.5,
+   "by": -2.5,
+   "by_pct": null,
+   "metric": "duration",
+   "unit": "s"
   },
   {
    "patch": "cn-2025-12-19-1",
@@ -1313,7 +1325,7 @@
    "perk_cn": null,
    "status": "changed",
    "lines_en": [
-    "Zero Gravity - Power Decreased duration to 1.5s (Down from 4s)."
+    "Decreased duration to 1.5s (Down from 4s)."
    ],
    "lines_cn": []
   },
@@ -1940,11 +1952,11 @@
    "subject": null,
    "text_en": "Damage reduction increased to 15% (Up from 10%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 10.0,
+   "after": 15.0,
+   "by": 5.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "damage",
    "unit": null
   },
   {
@@ -1994,11 +2006,11 @@
    "subject": null,
    "text_en": "Third Hypersphere damage increased to 75% (Up from 50%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 50.0,
+   "after": 75.0,
+   "by": 25.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "third hypersphere damage",
    "unit": null
   },
   {
@@ -2312,11 +2324,11 @@
    "subject": null,
    "text_en": "Damage reduction increased to 75% (up from 50%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 50.0,
+   "after": 75.0,
+   "by": 25.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "damage",
    "unit": null
   },
   {
@@ -2348,11 +2360,11 @@
    "subject": null,
    "text_en": "Weapon Power and Attack Speed granted while behind Experimental Barrier increased to 10% (up from 5%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 5.0,
+   "after": 10.0,
+   "by": 5.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "weapon power and attack speed granted while behind experimental barrier",
    "unit": null
   },
   {
@@ -2366,12 +2378,12 @@
    "subject": null,
    "text_en": "Move Speed and Lifesteal granted while in front of Experimental Barrier increased to 10% (up from 5%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 5.0,
+   "after": 10.0,
+   "by": 5.0,
    "by_pct": null,
-   "metric": null,
-   "unit": null
+   "metric": "move_speed",
+   "unit": "m/s"
   },
   {
    "patch": "cn-2025-08-27-1",
@@ -2764,7 +2776,13 @@
    "lines_en": [],
    "lines_cn": [
     "达到最大击倒眩晕时间的距离从40米缩短至30米。"
-   ]
+   ],
+   "before": 40.0,
+   "after": 30.0,
+   "by": -10.0,
+   "by_pct": null,
+   "metric": "达到最大击倒眩晕时间的距离",
+   "unit": "m"
   },
   {
    "patch": "cn-2025-07-23-1",
@@ -3247,8 +3265,8 @@
    "before": null,
    "after": null,
    "by": null,
-   "by_pct": null,
-   "metric": null,
+   "by_pct": 50.0,
+   "metric": "的半径",
    "unit": null
   },
   {
@@ -5785,6 +5803,12 @@
   }
  ],
  "values": {
+  "perk:hyper-regeneration:damage": [
+   {
+    "date": "2026-07-15",
+    "value": 30.0
+   }
+  ],
   "attr:health:shield": [
    {
     "date": "2026-07-14",
@@ -5829,10 +5853,22 @@
     "value": 650.0
    }
   ],
+  "perk:zero-gravity:duration": [
+   {
+    "date": "2025-12-19",
+    "value": 1.5
+   }
+  ],
   "attr:move_speed:提高的移动速度与生命汲取": [
    {
     "date": "2025-09-17",
     "value": 10.0
+   }
+  ],
+  "perk:massive-impact:达到最大击倒眩晕时间的距离": [
+   {
+    "date": "2025-07-23",
+    "value": 30.0
    }
   ],
   "experimental-barrier:recharge rate": [

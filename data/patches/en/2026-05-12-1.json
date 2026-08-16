@@ -828,11 +828,11 @@
        "text_cn": null,
        "subject": null,
        "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
+       "before": 15.0,
+       "after": 20.0,
+       "by": 5.0,
        "by_pct": null,
-       "metric": null,
+       "metric": "ally healing",
        "unit": null
       },
       {
@@ -840,23 +840,23 @@
        "text_cn": null,
        "subject": "health",
        "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
+       "before": 8.0,
+       "after": 10.0,
+       "by": 2.0,
        "by_pct": null,
-       "metric": null,
-       "unit": null
+       "metric": "overhealth",
+       "unit": "hp"
       },
       {
        "text_en": "Level 3 Punch Bonus Damage increased to 50% (Up from 25%).",
        "text_cn": null,
        "subject": null,
        "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
+       "before": 25.0,
+       "after": 50.0,
+       "by": 25.0,
        "by_pct": null,
-       "metric": null,
+       "metric": "level 3 punch bonus damage",
        "unit": null
       },
       {
@@ -878,35 +878,50 @@
        "name_cn": null,
        "status": "changed",
        "lines_en": [],
-       "lines_cn": []
+       "lines_cn": [],
+       "raw_text": [
+        "Asteroid Smash - Power"
+       ]
       },
       {
        "name_en": "Block Party",
        "name_cn": null,
        "status": "changed",
        "lines_en": [],
-       "lines_cn": []
+       "lines_cn": [],
+       "raw_text": [
+        "Block Party - Power"
+       ]
       },
       {
        "name_en": "Helping Hand",
        "name_cn": null,
        "status": "changed",
        "lines_en": [],
-       "lines_cn": []
+       "lines_cn": [],
+       "raw_text": [
+        "Helping Hand - Power"
+       ]
       },
       {
        "name_en": "Overpowered",
        "name_cn": null,
        "status": "changed",
        "lines_en": [],
-       "lines_cn": []
+       "lines_cn": [],
+       "raw_text": [
+        "Overpowered - Power"
+       ]
       },
       {
        "name_en": "Rising Uppercut",
        "name_cn": null,
        "status": "changed",
        "lines_en": [],
-       "lines_cn": []
+       "lines_cn": [],
+       "raw_text": [
+        "Rising Uppercut - Power"
+       ]
       }
      ],
      "abilities": [
@@ -956,7 +971,10 @@
        "name_cn": null,
        "status": "changed",
        "lines_en": [],
-       "lines_cn": []
+       "lines_cn": [],
+       "raw_text": [
+        "To Me, My Friends - Power"
+       ]
       }
      ],
      "abilities": []
@@ -1006,11 +1024,11 @@
        "text_cn": null,
        "subject": null,
        "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
+       "before": 6.0,
+       "after": 4.0,
+       "by": -2.0,
        "by_pct": null,
-       "metric": null,
+       "metric": "max life healing",
        "unit": null
       }
      ],
@@ -1020,14 +1038,20 @@
        "name_cn": null,
        "status": "changed",
        "lines_en": [],
-       "lines_cn": []
+       "lines_cn": [],
+       "raw_text": [
+        "Volley à Deux - Power"
+       ]
       },
       {
        "name_en": "Forager",
        "name_cn": null,
        "status": "changed",
        "lines_en": [],
-       "lines_cn": []
+       "lines_cn": [],
+       "raw_text": [
+        "Forager - Power"
+       ]
       }
      ],
      "abilities": []
@@ -1094,21 +1118,30 @@
        "name_cn": null,
        "status": "changed",
        "lines_en": [],
-       "lines_cn": []
+       "lines_cn": [],
+       "raw_text": [
+        "Backstabber - Power"
+       ]
       },
       {
        "name_en": "Trigger Finger",
        "name_cn": null,
        "status": "changed",
        "lines_en": [],
-       "lines_cn": []
+       "lines_cn": [],
+       "raw_text": [
+        "Trigger Finger - Power"
+       ]
       },
       {
        "name_en": "Vampiric Touch",
        "name_cn": null,
        "status": "changed",
        "lines_en": [],
-       "lines_cn": []
+       "lines_cn": [],
+       "raw_text": [
+        "Vampiric Touch - Power"
+       ]
       }
      ],
      "abilities": []
@@ -1139,7 +1172,10 @@
        "name_cn": null,
        "status": "changed",
        "lines_en": [],
-       "lines_cn": []
+       "lines_cn": [],
+       "raw_text": [
+        "Frontliners - Power"
+       ]
       }
      ],
      "abilities": []
@@ -1670,84 +1706,120 @@
        "name_cn": null,
        "status": "changed",
        "lines_en": [],
-       "lines_cn": []
+       "lines_cn": [],
+       "raw_text": [
+        "Lindholm Inspiration - Power"
+       ]
       },
       {
        "name_en": "Purr-sistence",
        "name_cn": null,
        "status": "changed",
        "lines_en": [],
-       "lines_cn": []
+       "lines_cn": [],
+       "raw_text": [
+        "Purr-sistence - Power"
+       ]
       },
       {
        "name_en": "Territorial",
        "name_cn": null,
        "status": "changed",
        "lines_en": [],
-       "lines_cn": []
+       "lines_cn": [],
+       "raw_text": [
+        "Territorial - Power"
+       ]
       },
       {
        "name_en": "Battle Fur-mation",
        "name_cn": null,
        "status": "changed",
        "lines_en": [],
-       "lines_cn": []
+       "lines_cn": [],
+       "raw_text": [
+        "Battle Fur-mation - Power"
+       ]
       },
       {
        "name_en": "Bell Bomb",
        "name_cn": null,
        "status": "changed",
        "lines_en": [],
-       "lines_cn": []
+       "lines_cn": [],
+       "raw_text": [
+        "Bell Bomb - Power"
+       ]
       },
       {
        "name_en": "Tow Beans",
        "name_cn": null,
        "status": "changed",
        "lines_en": [],
-       "lines_cn": []
+       "lines_cn": [],
+       "raw_text": [
+        "Tow Beans - Power"
+       ]
       },
       {
        "name_en": "Frenzy",
        "name_cn": null,
        "status": "changed",
        "lines_en": [],
-       "lines_cn": []
+       "lines_cn": [],
+       "raw_text": [
+        "Frenzy - Power"
+       ]
       },
       {
        "name_en": "Tomcat Reserves",
        "name_cn": null,
        "status": "changed",
        "lines_en": [],
-       "lines_cn": []
+       "lines_cn": [],
+       "raw_text": [
+        "Tomcat Reserves - Power"
+       ]
       },
       {
        "name_en": "Zoomies",
        "name_cn": null,
        "status": "changed",
        "lines_en": [],
-       "lines_cn": []
+       "lines_cn": [],
+       "raw_text": [
+        "Zoomies - Power"
+       ]
       },
       {
        "name_en": "Ambidex-fur-ous",
        "name_cn": null,
        "status": "changed",
        "lines_en": [],
-       "lines_cn": []
+       "lines_cn": [],
+       "raw_text": [
+        "Ambidex-fur-ous - Power"
+       ]
       },
       {
        "name_en": "Bouncing Biscuits",
        "name_cn": null,
        "status": "changed",
        "lines_en": [],
-       "lines_cn": []
+       "lines_cn": [],
+       "raw_text": [
+        "Bouncing Biscuits - Power"
+       ]
       },
       {
        "name_en": "Scratch-ageddon",
        "name_cn": null,
        "status": "changed",
        "lines_en": [],
-       "lines_cn": []
+       "lines_cn": [],
+       "raw_text": [
+        "Scratch-ageddon - Power"
+       ]
       }
      ],
      "abilities": [
@@ -1838,14 +1910,20 @@
        "name_cn": null,
        "status": "changed",
        "lines_en": [],
-       "lines_cn": []
+       "lines_cn": [],
+       "raw_text": [
+        "Paindrops - Power"
+       ]
       },
       {
        "name_en": "Splish Splash",
        "name_cn": null,
        "status": "changed",
        "lines_en": [],
-       "lines_cn": []
+       "lines_cn": [],
+       "raw_text": [
+        "Splish Splash - Power"
+       ]
       }
      ],
      "abilities": []
@@ -1876,7 +1954,10 @@
        "name_cn": null,
        "status": "changed",
        "lines_en": [],
-       "lines_cn": []
+       "lines_cn": [],
+       "raw_text": [
+        "Enlightenment - Power"
+       ]
       }
      ],
      "abilities": []
@@ -1921,5 +2002,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:cd320753741e1ed8bd8f96ea5a14a306bbc9b45725dd03e324287eda98b9c37c"
+ "hash": "sha256:54e8fe7c9550ca93f97b6237b91652768c96c81611c95cd2eacd3e44ed357477"
 }

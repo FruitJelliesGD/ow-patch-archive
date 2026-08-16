@@ -400,7 +400,13 @@
     "Attack speed reduced from 25% to 20%.",
     "Duration reduced from 2 to 1.5 seconds."
    ],
-   "lines_cn": []
+   "lines_cn": [],
+   "before": 2.0,
+   "after": 1.5,
+   "by": -0.5,
+   "by_pct": null,
+   "metric": "duration",
+   "unit": "s"
   },
   {
    "patch": "en-2026-02-09-1",
@@ -612,7 +618,13 @@
    "lines_en": [],
    "lines_cn": [
     "攻击速度持续时间从1秒延长至2秒。"
-   ]
+   ],
+   "before": 1.0,
+   "after": 2.0,
+   "by": 1.0,
+   "by_pct": null,
+   "metric": "攻击速度持续时间",
+   "unit": "s"
   },
   {
    "patch": "cn-2025-07-23-1",
@@ -629,7 +641,13 @@
    "lines_en": [],
    "lines_cn": [
     "冷却速度从250%提高至300%。"
-   ]
+   ],
+   "before": 250.0,
+   "after": 300.0,
+   "by": 50.0,
+   "by_pct": null,
+   "metric": "冷却速度",
+   "unit": "pct"
   },
   {
    "patch": "cn-2025-07-23-1",
@@ -736,7 +754,13 @@
    "lines_en": [
     "Attack speed duration increased from 1 to 2 seconds."
    ],
-   "lines_cn": []
+   "lines_cn": [],
+   "before": 1.0,
+   "after": 2.0,
+   "by": 1.0,
+   "by_pct": null,
+   "metric": "attack speed duration",
+   "unit": null
   },
   {
    "patch": "en-2025-07-22-1",
@@ -860,7 +884,13 @@
    "lines_en": [],
    "lines_cn": [
     "急救包侵入持续时间从12秒延长至30秒。"
-   ]
+   ],
+   "before": 12.0,
+   "after": 30.0,
+   "by": 18.0,
+   "by_pct": null,
+   "metric": "急救包侵入持续时间",
+   "unit": "s"
   },
   {
    "patch": "cn-2025-05-21-1",
@@ -913,7 +943,13 @@
    "lines_en": [
     "Health pack hack time increased from 12 to 30 seconds."
    ],
-   "lines_cn": []
+   "lines_cn": [],
+   "before": 12.0,
+   "after": 30.0,
+   "by": 18.0,
+   "by_pct": null,
+   "metric": "health",
+   "unit": "hp"
   },
   {
    "patch": "en-2025-05-16-1",
@@ -2053,6 +2089,42 @@
    {
     "date": "2026-07-01",
     "value": 0.25
+   }
+  ],
+  "perk:dragon-fury:duration": [
+   {
+    "date": "2026-02-09",
+    "value": 1.5
+   }
+  ],
+  "perk:dragon-fury:攻击速度持续时间": [
+   {
+    "date": "2025-07-23",
+    "value": 2.0
+   }
+  ],
+  "perk:yamagami-technique:冷却速度": [
+   {
+    "date": "2025-07-23",
+    "value": 300.0
+   }
+  ],
+  "perk:dragon-fury:attack speed duration": [
+   {
+    "date": "2025-07-22",
+    "value": 2.0
+   }
+  ],
+  "perk:hero-6aeb1866:急救包侵入持续时间": [
+   {
+    "date": "2025-05-21",
+    "value": 30.0
+   }
+  ],
+  "perk:sonic-disruption:health": [
+   {
+    "date": "2025-05-16",
+    "value": 30.0
    }
   ],
   "storm-bow:time to fully charge each shot": [

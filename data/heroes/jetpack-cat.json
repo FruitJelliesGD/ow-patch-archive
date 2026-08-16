@@ -533,11 +533,11 @@
    "subject": null,
    "text_en": "Increased duration for each Purr target reduced to 10% (Down from 15%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 15.0,
+   "after": 10.0,
+   "by": -5.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "increased duration for each purr target",
    "unit": null
   },
   {
@@ -551,11 +551,11 @@
    "subject": null,
    "text_en": "Max increased duration reduced to 50% (Down from 75%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 75.0,
+   "after": 50.0,
+   "by": -25.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "max increased duration",
    "unit": null
   },
   {
@@ -759,7 +759,13 @@
    "lines_en": [],
    "lines_cn": [
     "被替换为“咻咻狂飙”：移动速度加快50%，燃料容限提高100%。基础生命值降低75点。"
-   ]
+   ],
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 100.0,
+   "metric": "燃料容限",
+   "unit": null
   },
   {
    "patch": "cn-2026-07-01-1",
@@ -929,7 +935,13 @@
    "lines_en": [],
    "lines_cn": [
     "持续时间从5秒缩短至3秒。 护盾最大值从75点降低至50点。"
-   ]
+   ],
+   "before": 5.0,
+   "after": 3.0,
+   "by": -2.0,
+   "by_pct": null,
+   "metric": "duration",
+   "unit": "s"
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -946,7 +958,13 @@
    "lines_en": [],
    "lines_cn": [
     "激活所需的速度阈值从每秒16.5米降低至每秒14米。 不再返还燃料。 伤害从30点提高至50点。"
-   ]
+   ],
+   "before": 30.0,
+   "after": 50.0,
+   "by": 20.0,
+   "by_pct": null,
+   "metric": "damage",
+   "unit": "hp"
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -1395,11 +1413,11 @@
    "subject": null,
    "text_en": "Bonus shot effectiveness increased to 35% (Up from 25%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 25.0,
+   "after": 35.0,
+   "by": 10.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "bonus shot effectiveness",
    "unit": null
   },
   {
@@ -1413,11 +1431,11 @@
    "subject": null,
    "text_en": "Bounced projectile effectiveness increased to 50% (Up from 35%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 35.0,
+   "after": 50.0,
+   "by": 15.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "bounced projectile effectiveness",
    "unit": null
   },
   {
@@ -1467,11 +1485,11 @@
    "subject": null,
    "text_en": "Slow reduced to 20% (Down from 30%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 30.0,
+   "after": 20.0,
+   "by": -10.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "slow",
    "unit": null
   },
   {
@@ -1647,11 +1665,11 @@
    "subject": null,
    "text_en": "Bounce healing increased to 35% (up from 25%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 25.0,
+   "after": 35.0,
+   "by": 10.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "bounce healing",
    "unit": null
   },
   {
@@ -1683,11 +1701,11 @@
    "subject": null,
    "text_en": "Bonus Shot damage increased to 30% (up from 25%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 25.0,
+   "after": 30.0,
+   "by": 5.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "bonus shot damage",
    "unit": null
   },
   {
@@ -3979,7 +3997,13 @@
    "lines_cn": [
     "从次级威能改为了主要威能。",
     "冷却时间从8秒缩短至6秒。"
-   ]
+   ],
+   "before": 8.0,
+   "after": 6.0,
+   "by": -2.0,
+   "by_pct": null,
+   "metric": "cooldown",
+   "unit": "s"
   },
   {
    "patch": "cn-2026-03-11-1",
@@ -4032,7 +4056,13 @@
     "Moved from Minor to Major.",
     "Cooldown reduced from 8 to 6 seconds."
    ],
-   "lines_cn": []
+   "lines_cn": [],
+   "before": 8.0,
+   "after": 6.0,
+   "by": -2.0,
+   "by_pct": null,
+   "metric": "cooldown",
+   "unit": "s"
   },
   {
    "patch": "en-2026-03-10-1",
@@ -4065,7 +4095,7 @@
    "perk_cn": null,
    "status": "changed",
    "lines_en": [
-    "Minor Perk – Claws Out"
+    "Claws Out"
    ],
    "lines_cn": []
   },
@@ -4082,7 +4112,7 @@
    "perk_cn": null,
    "status": "changed",
    "lines_en": [
-    "Major Perk – Territorial"
+    "Territorial"
    ],
    "lines_cn": []
   },
@@ -4224,10 +4254,32 @@
     "value": 4.5
    }
   ],
+  "perk:ambidex-fur-ous:duration": [
+   {
+    "date": "2026-06-17",
+    "value": 3.0
+   }
+  ],
+  "perk:bouncing-biscuits:damage": [
+   {
+    "date": "2026-06-17",
+    "value": 50.0
+   }
+  ],
   "biotic-pawjectiles:damage": [
    {
     "date": "2026-06-16",
     "value": 4.5
+   }
+  ],
+  "perk:claws-out:cooldown": [
+   {
+    "date": "2026-03-10",
+    "value": 6.0
+   },
+   {
+    "date": "2026-03-11",
+    "value": 6.0
    }
   ]
  }

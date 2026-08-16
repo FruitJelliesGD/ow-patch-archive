@@ -567,7 +567,13 @@
    "lines_en": [
     "Damage increased from 50 to 75 over its duration."
    ],
-   "lines_cn": []
+   "lines_cn": [],
+   "before": 50.0,
+   "after": 75.0,
+   "by": 25.0,
+   "by_pct": null,
+   "metric": "damage",
+   "unit": null
   },
   {
    "patch": "en-2026-02-09-1",
@@ -618,7 +624,13 @@
    "lines_en": [],
    "lines_cn": [
     "伤害从25提高至50。"
-   ]
+   ],
+   "before": 25.0,
+   "after": 50.0,
+   "by": 25.0,
+   "by_pct": null,
+   "metric": "damage",
+   "unit": null
   },
   {
    "patch": "en-2025-10-14-1",
@@ -635,7 +647,13 @@
    "lines_en": [
     "Damage increased from 25 to 50."
    ],
-   "lines_cn": []
+   "lines_cn": [],
+   "before": 25.0,
+   "after": 50.0,
+   "by": 25.0,
+   "by_pct": null,
+   "metric": "damage",
+   "unit": null
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1753,6 +1771,20 @@
    {
     "date": "2026-06-30",
     "value": 2.0
+   }
+  ],
+  "perk:seeker-mine:damage": [
+   {
+    "date": "2025-10-14",
+    "value": 50.0
+   },
+   {
+    "date": "2025-10-15",
+    "value": 50.0
+   },
+   {
+    "date": "2026-02-09",
+    "value": 75.0
    }
   ],
   "attr:health:health": [

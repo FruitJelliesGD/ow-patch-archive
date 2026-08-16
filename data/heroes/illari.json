@@ -137,7 +137,13 @@
    "lines_en": [],
    "lines_cn": [
     "冷却时间缩短从1.5秒提升至2秒。"
-   ]
+   ],
+   "before": 1.5,
+   "after": 2.0,
+   "by": 0.5,
+   "by_pct": null,
+   "metric": "cooldown",
+   "unit": "s"
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -588,7 +594,13 @@
    "lines_en": [],
    "lines_cn": [
     "攻击速度加成从30%降低至20%。"
-   ]
+   ],
+   "before": 30.0,
+   "after": 20.0,
+   "by": -10.0,
+   "by_pct": null,
+   "metric": "攻击速度加成",
+   "unit": "pct"
   },
   {
    "patch": "cn-2026-03-11-1",
@@ -605,7 +617,13 @@
    "lines_en": [],
    "lines_cn": [
     "伤害从70降低至50。"
-   ]
+   ],
+   "before": 70.0,
+   "after": 50.0,
+   "by": -20.0,
+   "by_pct": null,
+   "metric": "damage",
+   "unit": null
   },
   {
    "patch": "en-2026-03-10-1",
@@ -659,7 +677,13 @@
    "lines_en": [
     "Damage reduced from 70 to 50."
    ],
-   "lines_cn": []
+   "lines_cn": [],
+   "before": 70.0,
+   "after": 50.0,
+   "by": -20.0,
+   "by_pct": null,
+   "metric": "damage",
+   "unit": null
   },
   {
    "patch": "en-2026-02-09-1",
@@ -2421,6 +2445,12 @@
   }
  ],
  "values": {
+  "perk:hero-3a8405a0:cooldown": [
+   {
+    "date": "2026-06-17",
+    "value": 2.0
+   }
+  ],
   "solar-rifle:基础弹道尺寸": [
    {
     "date": "2026-05-13",
@@ -2437,6 +2467,22 @@
    {
     "date": "2026-03-11",
     "value": 3.0
+   }
+  ],
+  "perk:summer-solstice:攻击速度加成": [
+   {
+    "date": "2026-03-11",
+    "value": 20.0
+   }
+  ],
+  "perk:sunburn:damage": [
+   {
+    "date": "2026-03-10",
+    "value": 50.0
+   },
+   {
+    "date": "2026-03-11",
+    "value": 50.0
    }
   ],
   "solar-rifle:secondary fire maximum resource": [

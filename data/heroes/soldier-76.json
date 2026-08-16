@@ -977,11 +977,11 @@
    "subject": null,
    "text_en": "Ammo restore increased to 20% (Up from 10%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 10.0,
+   "after": 20.0,
+   "by": 10.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "ammo",
    "unit": null
   },
   {
@@ -1013,11 +1013,11 @@
    "subject": null,
    "text_en": "Weapon Power per stack increased to 0.5% (Up from 0.4%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 0.4,
+   "after": 0.5,
+   "by": 0.1,
    "by_pct": null,
-   "metric": null,
+   "metric": "weapon power per stack",
    "unit": null
   },
   {
@@ -1409,11 +1409,11 @@
    "subject": null,
    "text_en": "Bonus healing increased to 25% (Up from 10%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 10.0,
+   "after": 25.0,
+   "by": 15.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "bonus healing",
    "unit": null
   },
   {
@@ -1611,7 +1611,13 @@
    "lines_cn": [
     "新增。",
     "疾跑的移动速度加成在2秒内逐渐额外提高25%。"
-   ]
+   ],
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 25.0,
+   "metric": "秒内逐渐额外",
+   "unit": null
   },
   {
    "patch": "en-2026-04-14-1",
@@ -1877,7 +1883,13 @@
    "lines_en": [
     "Helix Rocket projectile speed increased by 50%."
    ],
-   "lines_cn": []
+   "lines_cn": [],
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 50.0,
+   "metric": "helix rocket projectile speed",
+   "unit": null
   },
   {
    "patch": "cn-2025-08-27-1",
@@ -1912,7 +1924,13 @@
    "lines_cn": [
     "新次级威能。",
     "“战术目镜”持续期间，“螺旋飞弹”的冷却时间缩短80%。"
-   ]
+   ],
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 80.0,
+   "metric": "的冷却时间",
+   "unit": null
   },
   {
    "patch": "cn-2025-08-27-1",
@@ -1929,7 +1947,13 @@
    "lines_en": [],
    "lines_cn": [
     "现在“强化药剂”会替代“生物力场”，为“士兵：76”每秒治疗30点生命值，攻击速度提高20%，持续5秒。"
-   ]
+   ],
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 20.0,
+   "metric": "攻击速度",
+   "unit": null
   },
   {
    "patch": "en-2025-08-26-1",
@@ -1964,7 +1988,13 @@
     "New Minor Perk.",
     "Helix Rockets cooldown is reduced by 80% during Tactical Visor."
    ],
-   "lines_cn": []
+   "lines_cn": [],
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 80.0,
+   "metric": "helix rockets cooldown is",
+   "unit": null
   },
   {
    "patch": "en-2025-08-26-1",
@@ -2112,12 +2142,12 @@
    "subject": "health",
    "text_en": "Overhealth based on Max Life reduced to 25% (down from 30%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 30.0,
+   "after": 25.0,
+   "by": -5.0,
    "by_pct": null,
-   "metric": null,
-   "unit": null
+   "metric": "overhealth",
+   "unit": "hp"
   },
   {
    "patch": "cn-2025-05-30-1",
@@ -2655,12 +2685,12 @@
    "subject": null,
    "text_en": "Duration reduced to 0.5 seconds (down from 0.75 seconds).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 0.75,
+   "after": 0.5,
+   "by": -0.25,
    "by_pct": null,
-   "metric": null,
-   "unit": null
+   "metric": "duration",
+   "unit": "s"
   },
   {
    "patch": "en-2025-05-01-1",
@@ -3597,6 +3627,10 @@
    }
   ],
   "attr:health:overhealth": [
+   {
+    "date": "2025-06-24",
+    "value": 25.0
+   },
    {
     "date": "2026-06-17",
     "value": 2.0

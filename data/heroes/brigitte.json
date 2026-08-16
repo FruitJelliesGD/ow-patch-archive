@@ -221,7 +221,13 @@
    "lines_en": [],
    "lines_cn": [
     "伤害从50点提高至60点。"
-   ]
+   ],
+   "before": 50.0,
+   "after": 60.0,
+   "by": 10.0,
+   "by_pct": null,
+   "metric": "damage",
+   "unit": "hp"
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -570,12 +576,12 @@
    "subject": "health",
    "text_en": "Overhealth reduced to 4% (Down from 5%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 5.0,
+   "after": 4.0,
+   "by": -1.0,
    "by_pct": null,
-   "metric": null,
-   "unit": null
+   "metric": "overhealth",
+   "unit": "hp"
   },
   {
    "patch": "en-2026-06-16-1",
@@ -606,11 +612,11 @@
    "subject": null,
    "text_en": "Self Heal reduced to 4% (Down from 5%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 5.0,
+   "after": 4.0,
+   "by": -1.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "self heal",
    "unit": null
   },
   {
@@ -624,11 +630,11 @@
    "subject": null,
    "text_en": "Damage per meter increased to 5% (Up from 4%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 4.0,
+   "after": 5.0,
+   "by": 1.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "damage",
    "unit": null
   },
   {
@@ -856,7 +862,13 @@
    "lines_en": [],
    "lines_cn": [
     "返还的冷却时间从0.5秒增加至0.75秒。"
-   ]
+   ],
+   "before": 0.5,
+   "after": 0.75,
+   "by": 0.25,
+   "by_pct": null,
+   "metric": "返还的冷却时间",
+   "unit": "s"
   },
   {
    "patch": "en-2026-04-14-1",
@@ -893,7 +905,13 @@
    "lines_en": [
     "Cooldown refunded increased from 0.5 to 0.75 seconds."
    ],
-   "lines_cn": []
+   "lines_cn": [],
+   "before": 0.5,
+   "after": 0.75,
+   "by": 0.25,
+   "by_pct": null,
+   "metric": "cooldown",
+   "unit": "s"
   },
   {
    "patch": "en-2026-04-01-1",
@@ -1164,11 +1182,11 @@
    "subject": null,
    "text_en": "Bonus Damage on 360 Rocket Flail swing increased to 125% (Up from 100%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 100.0,
+   "after": 125.0,
+   "by": 25.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "bonus damage on 360 rocket flail swing",
    "unit": null
   },
   {
@@ -1350,11 +1368,11 @@
    "subject": null,
    "text_en": "Max Life Heal per Repair Pack consumed increased to 25% (up from 20%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 20.0,
+   "after": 25.0,
+   "by": 5.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "max life heal per repair pack consumed",
    "unit": null
   },
   {
@@ -1368,11 +1386,11 @@
    "subject": null,
    "text_en": "Attack Speed Buff per Repair Pack consumed increased to 10% (up from 5%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 5.0,
+   "after": 10.0,
+   "by": 5.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "attack speed buff per repair pack consumed",
    "unit": null
   },
   {
@@ -5544,7 +5562,17 @@
     "value": 45.0
    }
   ],
+  "perk:aura-farming:damage": [
+   {
+    "date": "2026-06-17",
+    "value": 60.0
+   }
+  ],
   "attr:health:overhealth": [
+   {
+    "date": "2026-06-16",
+    "value": 4.0
+   },
    {
     "date": "2026-06-17",
     "value": 4.0
@@ -5562,6 +5590,18 @@
    {
     "date": "2026-04-15",
     "value": 300.0
+   }
+  ],
+  "perk:combat-medic:返还的冷却时间": [
+   {
+    "date": "2026-04-15",
+    "value": 0.75
+   }
+  ],
+  "perk:combat-medic:cooldown": [
+   {
+    "date": "2026-04-14",
+    "value": 0.75
    }
   ],
   "attr:ultimate_cost:技能伤害提供的终极技能充能": [

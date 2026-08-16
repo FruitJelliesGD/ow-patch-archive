@@ -203,11 +203,11 @@
    "subject": null,
    "text_en": "Max Life heal increased to 20% (Up from 15%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 15.0,
+   "after": 20.0,
+   "by": 5.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "max life heal",
    "unit": null
   },
   {
@@ -451,7 +451,13 @@
    "lines_en": [],
    "lines_cn": [
     "移动速度加成从40%降低至30%。"
-   ]
+   ],
+   "before": 40.0,
+   "after": 30.0,
+   "by": -10.0,
+   "by_pct": null,
+   "metric": "move_speed",
+   "unit": "pct"
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -2078,11 +2084,11 @@
    "subject": null,
    "text_en": "Nano Boost Duration increased to 25% (Up from 15%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 15.0,
+   "after": 25.0,
+   "by": 10.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "nano boost duration",
    "unit": null
   },
   {
@@ -2219,8 +2225,14 @@
    "status": "changed",
    "lines_en": [],
    "lines_cn": [
-    "一镖绝尘——异能 弹道速度加成从150%提高至300%。"
-   ]
+    "弹道速度加成从150%提高至300%。"
+   ],
+   "before": 150.0,
+   "after": 300.0,
+   "by": 150.0,
+   "by_pct": null,
+   "metric": "projectile_speed",
+   "unit": "pct"
   },
   {
    "patch": "cn-2025-12-19-1",
@@ -2236,8 +2248,14 @@
    "status": "changed",
    "lines_en": [],
    "lines_cn": [
-    "驯鹰高手——异能 攻击速度加成从20%提高至30%。 终极技能充能从15%提高至25%。"
-   ]
+    "攻击速度加成从20%提高至30%。 终极技能充能从15%提高至25%。"
+   ],
+   "before": 20.0,
+   "after": 30.0,
+   "by": 10.0,
+   "by_pct": null,
+   "metric": "攻击速度加成",
+   "unit": "pct"
   },
   {
    "patch": "cn-2025-12-19-1",
@@ -2306,7 +2324,7 @@
    "perk_cn": null,
    "status": "changed",
    "lines_en": [
-    "Artsy Dartsy - Power Increased projectile speed to 300% (Up from 150%)."
+    "Increased projectile speed to 300% (Up from 150%)."
    ],
    "lines_cn": []
   },
@@ -3871,7 +3889,13 @@
    "lines_cn": [
     "改为主要威能。",
     "伤害和治疗量从25提高至60。"
-   ]
+   ],
+   "before": 25.0,
+   "after": 60.0,
+   "by": 35.0,
+   "by_pct": null,
+   "metric": "damage",
+   "unit": null
   },
   {
    "patch": "cn-2025-08-27-1",
@@ -6240,6 +6264,12 @@
     "value": 90.0
    }
   ],
+  "perk:artsy-dartsy:move_speed": [
+   {
+    "date": "2026-06-17",
+    "value": 30.0
+   }
+  ],
   "attr:move_speed:move_speed": [
    {
     "date": "2025-05-30",
@@ -6298,10 +6328,28 @@
     "value": 12.0
    }
   ],
+  "perk:artsy-dartsy:projectile_speed": [
+   {
+    "date": "2025-12-19",
+    "value": 300.0
+   }
+  ],
+  "perk:hero-3f8c2540:攻击速度加成": [
+   {
+    "date": "2025-12-19",
+    "value": 30.0
+   }
+  ],
   "attr:ultimate_cost:ultimate_cost": [
    {
     "date": "2025-12-19",
     "value": 25.0
+   }
+  ],
+  "perk:biotic-bounce:damage": [
+   {
+    "date": "2025-08-27",
+    "value": 60.0
    }
   ],
   "attr:ultimate_cost:提供的终极技能充能": [

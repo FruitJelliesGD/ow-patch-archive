@@ -39,7 +39,13 @@
    "lines_cn": [
     "新增",
     "能量标枪的击退效果提高25%，撞墙伤害提高15点。"
-   ]
+   ],
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 25.0,
+   "metric": "能量标枪的击退效果",
+   "unit": null
   },
   {
    "patch": "cn-2026-08-12-1",
@@ -302,7 +308,13 @@
     "New",
     "Energy Javelin's knockback is increased by 25% and its wall impact damage is increased by 15."
    ],
-   "lines_cn": []
+   "lines_cn": [],
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 25.0,
+   "metric": "s knockback is",
+   "unit": null
   },
   {
    "patch": "en-2026-08-11-1",
@@ -345,11 +357,11 @@
    "subject": null,
    "text_en": "Critical damage increased to 100% (Up from 75%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 75.0,
+   "after": 100.0,
+   "by": 25.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "critical damage",
    "unit": null
   },
   {
@@ -399,11 +411,11 @@
    "subject": null,
    "text_en": "Max Damage reduced to 30% (Down from 40%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 40.0,
+   "after": 30.0,
+   "by": -10.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "max damage",
    "unit": null
   },
   {
@@ -471,11 +483,11 @@
    "subject": null,
    "text_en": "Attack Speed during Fortify increased to 15% (Up from 10%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 10.0,
+   "after": 15.0,
+   "by": 5.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "attack speed during fortify",
    "unit": null
   },
   {
@@ -841,11 +853,11 @@
    "subject": null,
    "text_en": "Critical Damage increased to 75% (Up from 50%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 50.0,
+   "after": 75.0,
+   "by": 25.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "critical damage",
    "unit": null
   },
   {
@@ -877,11 +889,11 @@
    "subject": null,
    "text_en": "Max Weapon Power based on Heat increased to 40% (Up from 30%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 30.0,
+   "after": 40.0,
+   "by": 10.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "max weapon power based on heat",
    "unit": null
   },
   {
@@ -2183,11 +2195,11 @@
    "subject": null,
    "text_en": "Ability Power reduced to 10% (Down from 15%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 15.0,
+   "after": 10.0,
+   "by": -5.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "ability power",
    "unit": null
   },
   {
@@ -2219,11 +2231,11 @@
    "subject": null,
    "text_en": "Energy Javelin Cooldown Reduction on hit increased to 20% (Up from 15%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 15.0,
+   "after": 20.0,
+   "by": 5.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "energy javelin cooldown reduction on hit",
    "unit": null
   },
   {
@@ -2255,11 +2267,11 @@
    "subject": null,
    "text_en": "Max Life Heal reduced to 5% (Down from 10%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 10.0,
+   "after": 5.0,
+   "by": -5.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "max life heal",
    "unit": null
   },
   {
@@ -2838,11 +2850,11 @@
    "subject": null,
    "text_en": "Healing increased to 8% (Up from 5%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 5.0,
+   "after": 8.0,
+   "by": 3.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "healing",
    "unit": null
   },
   {
@@ -3138,11 +3150,11 @@
    "subject": null,
    "text_en": "Damage increased to 75% (Up from 50%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 50.0,
+   "after": 75.0,
+   "by": 25.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "damage",
    "unit": null
   },
   {
@@ -3300,11 +3312,11 @@
    "subject": null,
    "text_en": "Damage increased to 25% (Up from 20%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 20.0,
+   "after": 25.0,
+   "by": 5.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "damage",
    "unit": null
   },
   {
@@ -3408,11 +3420,11 @@
    "subject": null,
    "text_en": "Damage reduction increased to 75% (Up from 50%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 50.0,
+   "after": 75.0,
+   "by": 25.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "damage",
    "unit": null
   },
   {

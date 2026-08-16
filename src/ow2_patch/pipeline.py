@@ -306,6 +306,7 @@ def build_hero_files(data_dir: pathlib.Path, resolver: NameResolver | None = Non
                         p_name = perk.get("name_en") or perk.get("name_cn") or ""
                         p_site = "en" if perk.get("name_en") else "cn"
                         p_slug = resolver.perk(p_name, p_site, slug)[0] if p_name else "perk"
+                        perk_numbers = _perk_numbers(perk, p_site)
                         timeline.setdefault(slug, []).append({
                             "patch": data["id"], "date": data["date"], "site": data["site"],
                             "url": data.get("url"), "patch_title": data.get("title"),
@@ -317,6 +318,7 @@ def build_hero_files(data_dir: pathlib.Path, resolver: NameResolver | None = Non
                             "status": perk.get("status"),
                             "lines_en": perk.get("lines_en", []),
                             "lines_cn": perk.get("lines_cn", []),
+                            **perk_numbers,
                         })
                     for line in hero.get("general", []):
                         entry_text = line if isinstance(line, str) else (
@@ -367,6 +369,22 @@ def build_hero_files(data_dir: pathlib.Path, resolver: NameResolver | None = Non
     for stale in heroes_dir.glob("*.json"):
         if stale.stem not in meta:
             stale.unlink()
+
+
+def _perk_numbers(perk: dict, site: str) -> dict:
+    """Best-effort numeric fields from the first parseable perk line."""
+    from .extract import extract_change
+
+    lines = perk.get("lines_en") if site == "en" else perk.get("lines_cn")
+    for line in lines or []:
+        result = extract_change(line, site)
+        if result.before is not None or result.by_pct is not None:
+            return {
+                "before": result.before, "after": result.after,
+                "by": result.by, "by_pct": result.by_pct,
+                "metric": result.metric, "unit": result.unit,
+            }
+    return {}
 
 
 def _fallback_slug(hero: dict, resolver: NameResolver) -> str:

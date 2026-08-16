@@ -475,11 +475,11 @@
    "subject": null,
    "text_en": "Bonus Damage increased to 75% (Down from 50%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 50.0,
+   "after": 75.0,
+   "by": 25.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "bonus damage",
    "unit": null
   },
   {
@@ -517,7 +517,13 @@
    "lines_en": [],
    "lines_cn": [
     "治疗量从30%提高至40%。"
-   ]
+   ],
+   "before": 30.0,
+   "after": 40.0,
+   "by": 10.0,
+   "by_pct": null,
+   "metric": "healing",
+   "unit": "pct"
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -534,7 +540,13 @@
    "lines_en": [],
    "lines_cn": [
     "从主要威能改为了次级威能。 额外充能上限从50%降低至25%。"
-   ]
+   ],
+   "before": 50.0,
+   "after": 25.0,
+   "by": -25.0,
+   "by_pct": null,
+   "metric": "额外充能上限",
+   "unit": "pct"
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -551,7 +563,13 @@
    "lines_en": [],
    "lines_cn": [
     "从次级威能改为了主要威能。 范围扩大从15%提高至20%。"
-   ]
+   ],
+   "before": 15.0,
+   "after": 20.0,
+   "by": 5.0,
+   "by_pct": null,
+   "metric": "范围扩大",
+   "unit": "pct"
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -568,7 +586,13 @@
    "lines_en": [],
    "lines_cn": [
     "伤害从40点降低至30点。"
-   ]
+   ],
+   "before": 40.0,
+   "after": 30.0,
+   "by": -10.0,
+   "by_pct": null,
+   "metric": "damage",
+   "unit": "hp"
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -968,12 +992,12 @@
    "subject": null,
    "text_en": null,
    "text_cn": "无视敌人的范围从10米缩小至7米。",
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 10.0,
+   "after": 7.0,
+   "by": -3.0,
    "by_pct": null,
-   "metric": null,
-   "unit": null
+   "metric": "无视敌人的范围",
+   "unit": "m"
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -1861,11 +1885,11 @@
    "subject": null,
    "text_en": "Max Life Healing increased to 0.5% (Up from 0.3%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 0.3,
+   "after": 0.5,
+   "by": 0.2,
    "by_pct": null,
-   "metric": null,
+   "metric": "max life healing",
    "unit": null
   },
   {
@@ -1951,11 +1975,11 @@
    "subject": null,
    "text_en": "Weapon Lifesteal increased to 10% (Up from 5%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 5.0,
+   "after": 10.0,
+   "by": 5.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "weapon lifesteal",
    "unit": null
   },
   {
@@ -2005,11 +2029,11 @@
    "subject": null,
    "text_en": "Damage Mitigated converted to healing increased to 25% (Up from 10%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 10.0,
+   "after": 25.0,
+   "by": 15.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "damage",
    "unit": null
   },
   {
@@ -2639,11 +2663,11 @@
    "subject": null,
    "text_en": "Damage increased to 75% (Up from 65%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 65.0,
+   "after": 75.0,
+   "by": 10.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "damage",
    "unit": null
   },
   {
@@ -2925,7 +2949,13 @@
    "lines_en": [],
    "lines_cn": [
     "生命汲取从25%提高至30%。"
-   ]
+   ],
+   "before": 25.0,
+   "after": 30.0,
+   "by": 5.0,
+   "by_pct": null,
+   "metric": "health",
+   "unit": "pct"
   },
   {
    "patch": "cn-2025-10-15-1",
@@ -6034,7 +6064,13 @@
    "lines_cn": [
     "改为次级威能。",
     "“狂跃”的范围从扩大20%降低至扩大15%。"
-   ]
+   ],
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 20.0,
+   "metric": "的范围从",
+   "unit": null
   },
   {
    "patch": "cn-2025-08-27-1",
@@ -6052,7 +6088,13 @@
    "lines_cn": [
     "改为次级威能。",
     "“尖刺护体”的尖刺获得的生命汲取效果从40%降低至25%。"
-   ]
+   ],
+   "before": 40.0,
+   "after": 25.0,
+   "by": -15.0,
+   "by_pct": null,
+   "metric": "的尖刺获得的生命汲取效果",
+   "unit": "pct"
   },
   {
    "patch": "cn-2025-08-27-1",
@@ -6213,7 +6255,13 @@
     "Changed to a Minor Perk.",
     "Violent Leap's range is now only increased by 15% (down from 20%)."
    ],
-   "lines_cn": []
+   "lines_cn": [],
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 15.0,
+   "metric": "s range is now only",
+   "unit": null
   },
   {
    "patch": "en-2025-08-26-1",
@@ -7371,6 +7419,30 @@
     "value": 2.5
    }
   ],
+  "perk:anarchic-zeal:healing": [
+   {
+    "date": "2026-06-17",
+    "value": 40.0
+   }
+  ],
+  "perk:bonerot:额外充能上限": [
+   {
+    "date": "2026-06-17",
+    "value": 25.0
+   }
+  ],
+  "perk:boomslang-s-blaster:范围扩大": [
+   {
+    "date": "2026-06-17",
+    "value": 20.0
+   }
+  ],
+  "perk:explosive-impalements:damage": [
+   {
+    "date": "2026-06-17",
+    "value": 30.0
+   }
+  ],
   "spike-guard:maximum duration": [
    {
     "date": "2026-06-16",
@@ -7393,6 +7465,18 @@
    {
     "date": "2025-12-10",
     "value": 400.0
+   }
+  ],
+  "perk:anarchic-zeal:health": [
+   {
+    "date": "2025-10-15",
+    "value": 30.0
+   }
+  ],
+  "perk:anarchic-zeal:的尖刺获得的生命汲取效果": [
+   {
+    "date": "2025-08-27",
+    "value": 25.0
    }
   ],
   "jagged-wall:jagged wall cooldown": [

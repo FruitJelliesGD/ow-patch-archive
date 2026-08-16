@@ -1533,7 +1533,13 @@
    "lines_en": [],
    "lines_cn": [
     "“屏障力场”恢复速度从150提高至200。"
-   ]
+   ],
+   "before": 150.0,
+   "after": 200.0,
+   "by": 50.0,
+   "by_pct": null,
+   "metric": "恢复速度",
+   "unit": null
   },
   {
    "patch": "cn-2025-10-15-1",
@@ -1586,7 +1592,13 @@
    "lines_en": [
     "Barrier Field regeneration rate increased from 150 to 200."
    ],
-   "lines_cn": []
+   "lines_cn": [],
+   "before": 150.0,
+   "after": 200.0,
+   "by": 50.0,
+   "by_pct": null,
+   "metric": "barrier",
+   "unit": "hp"
   },
   {
    "patch": "en-2025-10-14-1",
@@ -1808,11 +1820,11 @@
    "dimension": "perk",
    "perk_slug": "impact-burst",
    "perk_en": null,
-   "perk_cn": "爆炸轰击——异能 • 现在只会对主要目标周围的其他敌人造成伤害。 • 爆炸伤害从“烈焰打击”伤害的15%提高至30%。熔岩打击",
+   "perk_cn": "爆炸轰击",
    "status": "changed",
    "lines_en": [],
    "lines_cn": [
-    "爆炸轰击——异能 • 现在只会对主要目标周围的其他敌人造成伤害。 • 爆炸伤害从“烈焰打击”伤害的15%提高至30%。熔岩打击——异能"
+    "• 现在只会对主要目标周围的其他敌人造成伤害。 • 爆炸伤害从“烈焰打击”伤害的15%提高至30%。熔岩打击——异能"
    ]
   },
   {
@@ -2294,12 +2306,12 @@
    "subject": "health",
    "text_en": "Barrier Field Health scaling increased to 250% (up from 100%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 100.0,
+   "after": 250.0,
+   "by": 150.0,
    "by_pct": null,
-   "metric": null,
-   "unit": null
+   "metric": "barrier",
+   "unit": "hp"
   },
   {
    "patch": "en-2025-06-24-1",
@@ -3395,7 +3407,7 @@
    "patch_title": "《守望先锋》补丁说明——2025年5月9日",
    "kind": "perk",
    "dimension": "perk",
-   "perk_slug": "hero-6fe3d39c",
+   "perk_slug": "impact-burst",
    "perk_en": null,
    "perk_cn": "爆炸轰击",
    "status": "changed",
@@ -4993,6 +5005,24 @@
    {
     "date": "2025-11-06",
     "value": 1800.0
+   }
+  ],
+  "perk:barrier-re-charge:恢复速度": [
+   {
+    "date": "2025-10-15",
+    "value": 200.0
+   }
+  ],
+  "perk:barrier-re-charge:barrier": [
+   {
+    "date": "2025-10-14",
+    "value": 200.0
+   }
+  ],
+  "attr:health:barrier": [
+   {
+    "date": "2025-06-24",
+    "value": 250.0
    }
   ],
   "attr:health:通过造成伤害恢复屏障生命值的效果": [

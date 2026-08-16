@@ -311,7 +311,10 @@
        "name_cn": null,
        "status": "changed",
        "lines_en": [],
-       "lines_cn": []
+       "lines_cn": [],
+       "raw_text": [
+        "Coulder - Power"
+       ]
       }
      ],
      "abilities": []
@@ -375,12 +378,12 @@
        "text_cn": null,
        "subject": null,
        "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
+       "before": 0.75,
+       "after": 0.5,
+       "by": -0.25,
        "by_pct": null,
-       "metric": null,
-       "unit": null
+       "metric": "duration",
+       "unit": "s"
       },
       {
        "text_en": "Biotic Bullseye – Power",
@@ -478,12 +481,12 @@
        "text_cn": null,
        "subject": null,
        "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
+       "before": 1.0,
+       "after": 0.5,
+       "by": -0.5,
        "by_pct": null,
-       "metric": null,
-       "unit": null
+       "metric": "cooldown",
+       "unit": "s"
       },
       {
        "text_en": "PulStar Destroyers – Epic Ability Hero Power",
@@ -538,11 +541,11 @@
        "text_cn": null,
        "subject": null,
        "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
+       "before": 25.0,
+       "after": 15.0,
+       "by": -10.0,
        "by_pct": null,
-       "metric": null,
+       "metric": "ability power",
        "unit": null
       }
      ],
@@ -609,11 +612,11 @@
        "text_cn": null,
        "subject": null,
        "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
+       "before": 20.0,
+       "after": 15.0,
+       "by": -5.0,
        "by_pct": null,
-       "metric": null,
+       "metric": "amp it up duration",
        "unit": null
       },
       {
@@ -633,11 +636,11 @@
        "text_cn": null,
        "subject": null,
        "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
+       "before": 20.0,
+       "after": 80.0,
+       "by": 60.0,
        "by_pct": null,
-       "metric": null,
+       "metric": "increased projectile size",
        "unit": null
       },
       {
@@ -673,5 +676,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:39d36639c892cca63f086b663275036becfb372fed540ece8507f84e328b6efb"
+ "hash": "sha256:8071c2a72363d4134758c9f113bc1c586f095efa363b78e44308aa5ebdc0cd90"
 }

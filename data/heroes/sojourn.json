@@ -337,7 +337,13 @@
    "lines_en": [],
    "lines_cn": [
     "获得能量上限从50点提升至75点。"
-   ]
+   ],
+   "before": 50.0,
+   "after": 75.0,
+   "by": 25.0,
+   "by_pct": null,
+   "metric": "获得能量上限",
+   "unit": "hp"
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -1804,11 +1810,11 @@
    "subject": null,
    "text_en": "Bonus Melee Damage increased to 100% (Up from 30%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 30.0,
+   "after": 100.0,
+   "by": 70.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "bonus melee damage",
    "unit": null
   },
   {
@@ -2416,11 +2422,11 @@
    "subject": null,
    "text_en": "Damage reduction increased to 35% (Up from 25%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 25.0,
+   "after": 35.0,
+   "by": 10.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "damage",
    "unit": null
   },
   {
@@ -2434,11 +2440,11 @@
    "subject": null,
    "text_en": "Attack Speed increased to 35% (Up from 25%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 25.0,
+   "after": 35.0,
+   "by": 10.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "attack speed",
    "unit": null
   },
   {
@@ -2452,11 +2458,11 @@
    "subject": null,
    "text_en": "Weapon Lifesteal increased to 100% (Up from 50%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 50.0,
+   "after": 100.0,
+   "by": 50.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "weapon lifesteal",
    "unit": null
   },
   {
@@ -2470,11 +2476,11 @@
    "subject": null,
    "text_en": "Slow increased to 25% (Up from 15%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 15.0,
+   "after": 25.0,
+   "by": 10.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "slow",
    "unit": null
   },
   {
@@ -2488,11 +2494,11 @@
    "subject": null,
    "text_en": "Railgun Charge increased to 50% (Up from 33%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 33.0,
+   "after": 50.0,
+   "by": 17.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "railgun charge",
    "unit": null
   },
   {
@@ -4913,7 +4919,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/04",
    "patch_title": "Totally Normal Patch Notes for Totally Normalwatch – April 1, 2025",
    "kind": "ability",
-   "dimension": "weapon",
+   "dimension": "ability",
    "ability_slug": "raingun",
    "ability_en": "Raingun",
    "ability_cn": null,
@@ -4933,7 +4939,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/04",
    "patch_title": "Totally Normal Patch Notes for Totally Normalwatch – April 1, 2025",
    "kind": "ability",
-   "dimension": "weapon",
+   "dimension": "ability",
    "ability_slug": "raingun",
    "ability_en": "Raingun",
    "ability_cn": null,
@@ -4953,7 +4959,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/04",
    "patch_title": "Totally Normal Patch Notes for Totally Normalwatch – April 1, 2025",
    "kind": "ability",
-   "dimension": "weapon",
+   "dimension": "ability",
    "ability_slug": "raingun",
    "ability_en": "Raingun",
    "ability_cn": null,
@@ -5812,6 +5818,12 @@
    {
     "date": "2026-07-01",
     "value": 80.0
+   }
+  ],
+  "perk:aftershock:获得能量上限": [
+   {
+    "date": "2026-06-17",
+    "value": 75.0
    }
   ],
   "attr:base_stat:充能射击最大基础伤害": [

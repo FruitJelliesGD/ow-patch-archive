@@ -106,4 +106,49 @@ commits: 5ab4fc1..b295273
 - [x] T12: `normalize.py` 重分类 + build_hero_files canonical slug — acceptance: soldier-76 无 hash-slug、跨站合并、威能归类 (covers: 迭代二-映射; depends: T11)
 - [x] T13: `regenerate_all` 接入 pipeline/rebuild — acceptance: 全量 pytest 43 项通过 (covers: 迭代二-配对; depends: T12)
 - [x] T14: web 重构（时间浏览 / heroes / patch 详情 / 分组修复） — acceptance: 无头冒烟断言全过（341 条目、双语切换、无 hash 分组） (covers: 迭代二-查询站; depends: T9, T12)
-- [ ] T15: 合并推送 + pages 部署验证（本迭代收尾） — acceptance: main 更新、线上站点可用 (covers: 迭代二; depends: T14)
+- [x] T15: 合并推送 + pages 部署验证（迭代二收尾） — acceptance: main 更新、线上站点可用 (covers: 迭代二; depends: T14)
+
+## 迭代三：词条级完整历史追溯（技能/武器/威能/英雄属性）
+
+### 背景与目标（用户驱动）
+
+用户判定现有追溯"不完善不合理"，要求基于已有数据结构升级为**技能/英雄/武器三维追溯**；核心原则"**出现即变更，所有词条可追溯历史**"——每个词条（技能/武器/威能/英雄属性）只要有记录就能查到完整历史；数值不追求精确推导（by-X% 不强推基准），任何条目绝不因提取不出数值而丢弃原文。展示=英雄页四类分组 + 数值轨迹序列；武器=词根+人工种子表。
+
+### 数据与缺陷基线（审计实测）
+
+- 数值提取只覆盖 `from X to Y`（EN 65%/CN 49%），漏 by-X%、to X (Up/Down from Y)、裸 reduced X%、meters-down-to、名词隔断 from-to（EN 138 条）
+- general 占时间线 69%（8933 条）无结构化：health 685 / ultimate_cost 134 / move_speed 84 无法查询
+- perk 名称泄漏进 general ~750 条（`Name - Power`/`——异能`）；bracket 前缀行 82 条（`[脉冲步枪]…`）应归属对应能力
+- 武器维度缺失
+
+### 设计决策
+
+1. **hash 中立化（P0 关键）**：内容 hash 只含"补丁元数据 + 排序原文文本袋"，凡富化（names/slug/role）、归属移动（general→abilities/perks）、数值提取（before/by_pct/metric）一律不影响 hash → 升级零误报；`HASH_SCHEMA_VERSION=2` + `ensure_hash_schema` 一次性离线迁移（幂等）。**归属拆分必须保留原始整行**（perk 条目带 `raw_text`），否则存储文本袋与 fresh-parse 不一致会持续误报 modified（P1 修复）。
+2. **数值提取 `extract.py`**：EN（from-to 名词隔断 / to X (Up/Down from Y) / by X% / 裸 X% / meters-down-to）+ CN（动词表补全含降至类、单位 点/秒/米/度/%）；`normalize_metric` 中英统一（damage/health/cooldown…），单位归一化；提取在重建层对已存文本离线重跑（parse 层委托同一逻辑）。
+3. **归属 `attribution.py`**：bracket 前缀行 → 对应能力 changes（映射子串匹配+hero 校验，跨英雄拒绝）；perk 泄漏（`- Power`/`——异能`/前缀式）→ perk 条目（原文存 raw_text）；剩余按 hero_attr（health/ultimate_cost/move_speed/base_stat）或 other 结构化（含数值字段）；`fix_hash_slugs` 自愈历史 hash-slug。
+4. **武器 `weapons.py` + data/weapons.json**：种子表 38 条 + 词根表（词边界匹配）+ exclude 黑名单（dragonblade 等大招）；ability_map 条目打 `kind: weapon|ability`（69 个武器）。
+5. **数值轨迹 `values.py`**：按 (slug, metric) 的按日期 after 序列（同日期取最后），输出 hero JSON 顶层 `values`；perk 从 lines 提取数值；by_pct 无基准跳过。
+6. **web**：hero 页按 武器/技能/威能/英雄属性 四维分组（DIM_ORDER），组头 values chip（`19 → 18`），属性徽标；`tools/_smoke_web.js` 断言。
+7. **regenerate_all 串联**：reclassify → extract → re-enrich → pair → map（武器 kind）→ attribution → map v2 → hash 迁移 → heroes（含 values）；连续两次运行字节级幂等（updated 字段改为最新补丁日期派生）。
+
+### 验收结果
+
+- pytest 84 项全绿（新增 extract 20 用例、hash_migration、attribution、weapons、values + 既有回归）
+- rebuild 幂等（快照对比 0 差异）；manifest `hash_schema=2`
+- 数据审计：perk 泄漏 ~750→0（残留 2 条为 Stadium 物品名，正确留 general）；bracket 82→8 残余（解析失败留 general 原文）；hero_attr 1041 条结构化；武器 69；数值覆盖 54%→67%
+- 词条历史：soldier-76 `heavy-pulse-rifle` 聚合全部出现记录（abilities 块 + `[脉冲步枪]` 归属 + EN/CN），`values["heavy-pulse-rifle:damage"]` 含 20→19→18 轨迹
+- web smoke 全过（341 索引、5 维分区、values chip、无 hash 分组）
+- 独立审查发现并修复：P1 hash 漂移（attribution 丢原文→45 补丁持续误报；修复=perk raw_text 保留整行+normalize 合并串同步+基线数据重建）；P2 词根误标（黑名单+词边界）、dev_note 入袋；P3 提取句式（CN 缩小/降至、EN up-from %、move speed 别名）与 perk 数值轨迹
+
+## Tasks（迭代三）
+
+- [x] T16: `extract.py` 数值提取升级 + metric/unit 归一化 + test_extract — acceptance: 20 表驱动用例全绿（含名词隔断/up-from/by%/down-to/CN 动词表）
+- [x] T17: `diff.py` hash 新语义（排序原文袋）+ ensure_hash_schema 迁移 + test_hash_migration — acceptance: 推导字段/归属移动不改 hash、迁移幂等、fresh-parse 零误报
+- [x] T18: model Change 扩展 + general dict 化 + 消费者适配 — acceptance: 全量 pytest 回归
+- [x] T19: `attribution.py` 归属修复 + test_attribution — acceptance: bracket 归属、perk 泄漏归入且原文保留、hero_attr 分类、hash 中性
+- [x] T20: `weapons.py` + 种子表 + ability_map kind + test_weapons — acceptance: 种子/词根/黑名单判定正确，69 武器标注
+- [x] T21: `values.py` 轨迹序列 + 集成 + test_values — acceptance: after 链、同日期去重、by_pct 跳过
+- [x] T22: regenerate_all 串联 + 迁移接入 + rebuild 幂等 — acceptance: 连续两次运行无 diff
+- [x] T23: web 四类分组 + values chip + smoke 断言 — acceptance: 5 维分区、values、无 hash 分组
+- [x] T24: 全量回归 + 数据审计复核 — acceptance: 84 测试、perk 泄漏归零、覆盖率 67%
+- [ ] T25: 合并推送 + 线上验证（迭代三收尾） — acceptance: main 更新、ci/pages 绿、monitor 首轮零误报 (covers: 迭代三; depends: T24)

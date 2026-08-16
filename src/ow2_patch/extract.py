@@ -22,8 +22,8 @@ _EN_FROM_TO_RE = re.compile(
     re.I,
 )
 _EN_UP_FROM_RE = re.compile(
-    r"([\w][\w -]*?) (increased|reduced) to (\d+(?:\.\d+)?)(?: [a-z/ ]+?)? "
-    r"\((?P<d>up|down) from (\d+(?:\.\d+)?)\)",
+    r"([\w][\w -]*?) (increased|reduced) to (\d+(?:\.\d+)?)(?:%| [a-z/% ]+?)? "
+    r"\((?P<d>up|down) from (\d+(?:\.\d+)?)(?:%| [a-z/ ]+?)?\)",
     re.I,
 )
 _EN_BY_PCT_RE = re.compile(
@@ -40,9 +40,10 @@ _EN_DOWN_TO_RE = re.compile(
     re.I,
 )
 
-_CN_VERBS = "提高|提升|上调|缩短|降低|减少|下调|削减|增加|扩大|延长|降至|改为|变为"
+_CN_VERBS = "提高|提升|上调|缩短|降低|减少|下调|削减|增加|扩大|延长|缩小|降至|降为|改为|变为"
 _CN_FROM_TO_RE = re.compile(
-    rf"([\u4e00-\u9fff]+?)(?:从|由|自)(\d+(?:\.\d+)?)([点秒米度%])?(?:{_CN_VERBS})(?:至|为)(\d+(?:\.\d+)?)([点秒米度%])?"
+    rf"([\u4e00-\u9fff]+?)(?:从|由|自)(\d+(?:\.\d+)?)([点秒米度%])?"
+    rf"(?:{_CN_VERBS})(?:至|为)?(\d+(?:\.\d+)?)([点秒米度%])?"
 )
 _CN_BY_PCT_RE = re.compile(
     rf"([\u4e00-\u9fff]+?)(?:{_CN_VERBS})(\d+(?:\.\d+)?)%"
@@ -56,7 +57,8 @@ _METRIC_ALIASES = {
     "生命": ("health", "hp"), "治疗量": ("healing", None), "healing": ("healing", None),
     "ultimate cost": ("ultimate_cost", None), "ultimate charge": ("ultimate_cost", None),
     "终极技能消耗": ("ultimate_cost", None), "终极技能充能": ("ultimate_cost", None),
-    "movement speed": ("move_speed", "m/s"), "移动速度": ("move_speed", "m/s"),
+    "movement speed": ("move_speed", "m/s"), "move speed": ("move_speed", "m/s"),
+    "移动速度": ("move_speed", "m/s"),
     "cast time": ("cast_time", "s"), "施放时间": ("cast_time", "s"),
     "cooldown": ("cooldown", "s"), "冷却时间": ("cooldown", "s"),
     "range": ("range", "m"), "射程": ("range", "m"), "半径": ("range", "m"),

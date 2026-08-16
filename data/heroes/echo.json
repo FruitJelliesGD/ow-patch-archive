@@ -59,7 +59,13 @@
     "“聚焦光线”的射程扩大8米，且使用时移动速度加快25%。",
     "射程扩大从6米提高至8米。",
     "移动速度加成从15%提高至25%。"
-   ]
+   ],
+   "before": 6.0,
+   "after": 8.0,
+   "by": 2.0,
+   "by_pct": null,
+   "metric": "range",
+   "unit": "m"
   },
   {
    "patch": "en-2026-08-11-1",
@@ -114,7 +120,13 @@
     "Range increased from 6 to 8 meters.",
     "Movement speed increased from 15% to 25%."
    ],
-   "lines_cn": []
+   "lines_cn": [],
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 25.0,
+   "metric": "s range is increased by 8 meters and movement speed is",
+   "unit": null
   },
   {
    "patch": "cn-2026-07-01-1",
@@ -451,7 +463,13 @@
    "lines_en": [],
    "lines_cn": [
     "初始终极技能充能从50%降低至30%。"
-   ]
+   ],
+   "before": 50.0,
+   "after": 30.0,
+   "by": -20.0,
+   "by_pct": null,
+   "metric": "初始终极技能充能",
+   "unit": "pct"
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -468,7 +486,13 @@
    "lines_en": [],
    "lines_cn": [
     "额外黏性炸弹数量从3降低至2。"
-   ]
+   ],
+   "before": 3.0,
+   "after": 2.0,
+   "by": -1.0,
+   "by_pct": null,
+   "metric": "额外黏性炸弹数量",
+   "unit": null
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -613,7 +637,13 @@
    "lines_en": [],
    "lines_cn": [
     "射程从4米延长至6米。"
-   ]
+   ],
+   "before": 4.0,
+   "after": 6.0,
+   "by": 2.0,
+   "by_pct": null,
+   "metric": "range",
+   "unit": "m"
   },
   {
    "patch": "en-2026-04-14-1",
@@ -650,7 +680,13 @@
    "lines_en": [
     "Range increased from 4 to 6 meters."
    ],
-   "lines_cn": []
+   "lines_cn": [],
+   "before": 4.0,
+   "after": 6.0,
+   "by": 2.0,
+   "by_pct": null,
+   "metric": "range",
+   "unit": "m"
   },
   {
    "patch": "en-2026-04-01-1",
@@ -928,7 +964,13 @@
     "New Minor Perk.",
     "Focusing Beam's range is increased by 4 meters and movement speed is increased by 10% when active."
    ],
-   "lines_cn": []
+   "lines_cn": [],
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 10.0,
+   "metric": "s range is increased by 4 meters and movement speed is",
+   "unit": null
   },
   {
    "patch": "en-2025-08-26-1",
@@ -2241,10 +2283,36 @@
   }
  ],
  "values": {
+  "perk:focused-rush:range": [
+   {
+    "date": "2026-04-14",
+    "value": 6.0
+   },
+   {
+    "date": "2026-04-15",
+    "value": 6.0
+   },
+   {
+    "date": "2026-08-12",
+    "value": 8.0
+   }
+  ],
   "focusing-beam:cooldown": [
    {
     "date": "2026-07-01",
     "value": 1.0
+   }
+  ],
+  "perk:partial-scan:初始终极技能充能": [
+   {
+    "date": "2026-06-17",
+    "value": 30.0
+   }
+  ],
+  "perk:full-salvo:额外黏性炸弹数量": [
+   {
+    "date": "2026-06-17",
+    "value": 2.0
    }
   ],
   "attr:ultimate_cost:初始终极技能充能": [

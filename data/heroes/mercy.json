@@ -101,11 +101,11 @@
    "subject": "health",
    "text_en": "Max Life Overhealth reduced to 25% (Down from 30%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 30.0,
+   "after": 25.0,
+   "by": -5.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "max life overhealth",
    "unit": null
   },
   {
@@ -237,7 +237,13 @@
    "lines_en": [],
    "lines_cn": [
     "伤害强化额外提高5%。"
-   ]
+   ],
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 5.0,
+   "metric": "damage",
+   "unit": null
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -1268,11 +1274,11 @@
    "subject": "base_stat",
    "text_en": "Base Damage Boost reduced to 15% (Down from 20%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 20.0,
+   "after": 15.0,
+   "by": -5.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "base damage boost",
    "unit": null
   },
   {
@@ -1808,11 +1814,11 @@
    "subject": null,
    "text_en": "Extra healing reduced to 20% (Down from 25%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 25.0,
+   "after": 20.0,
+   "by": -5.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "extra healing",
    "unit": null
   },
   {
@@ -1958,7 +1964,13 @@
    "lines_cn": [
     "新增。",
     "“守护天使”的范围扩大30%。"
-   ]
+   ],
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 30.0,
+   "metric": "的范围",
+   "unit": null
   },
   {
    "patch": "en-2026-05-12-1",
@@ -2013,7 +2025,13 @@
     "New.",
     "Guardian Angel's range is increased by 30%."
    ],
-   "lines_cn": []
+   "lines_cn": [],
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 30.0,
+   "metric": "s range is",
+   "unit": null
   },
   {
    "patch": "cn-2026-04-15-1",
@@ -3592,11 +3610,11 @@
    "subject": null,
    "text_en": "Bonus healing reduced to 25% (down from 35%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 35.0,
+   "after": 25.0,
+   "by": -10.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "bonus healing",
    "unit": null
   },
   {
@@ -3646,11 +3664,11 @@
    "subject": null,
    "text_en": "Attack Speed per stack reduced to 3% (down from 4%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 4.0,
+   "after": 3.0,
+   "by": -1.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "attack speed per stack",
    "unit": null
   },
   {
@@ -5565,6 +5583,12 @@
   }
  ],
  "values": {
+  "attr:health:max life overhealth": [
+   {
+    "date": "2026-07-14",
+    "value": 25.0
+   }
+  ],
   "caduceus-staff:damage": [
    {
     "date": "2026-06-17",
@@ -5574,6 +5598,12 @@
   "attr:base_stat:damage": [
    {
     "date": "2026-06-17",
+    "value": 15.0
+   }
+  ],
+  "attr:base_stat:base damage boost": [
+   {
+    "date": "2026-06-16",
     "value": 15.0
    }
   ],

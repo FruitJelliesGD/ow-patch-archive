@@ -92,3 +92,18 @@ def test_attribution_does_not_change_hash():
     hash_before = patch_hash_from_dict(before)
     classify_general(before, resolver, load_map())
     assert patch_hash_from_dict(before) == hash_before
+
+
+def test_perk_attribution_keeps_original_text_and_hash():
+    """A bare 'Name - Power' line must survive attribution with its original text."""
+    resolver = NameResolver(NAMES)
+    patch = make_patch("en", "Ashe", "ashe", ["Head Honcho - Power"])
+    hash_before = patch_hash_from_dict(patch)
+    classify_general(patch, resolver, load_map())
+    hero = patch["sections"][0]["heroes"][0]
+    assert hero["general"] == []
+    perk = hero["perks"][0]
+    assert perk["name_en"] == "Head Honcho"
+    assert "Head Honcho - Power" in perk["raw_text"]
+    # original text bag unchanged -> hash identical (no false 'modified' on re-parse)
+    assert patch_hash_from_dict(patch) == hash_before

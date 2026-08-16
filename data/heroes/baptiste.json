@@ -142,8 +142,8 @@
    "before": null,
    "after": null,
    "by": null,
-   "by_pct": null,
-   "metric": null,
+   "by_pct": 65.0,
+   "metric": "尺寸",
    "unit": null
   },
   {
@@ -776,7 +776,13 @@
    "lines_en": [
     "Immortality Field radius increased by 30%."
    ],
-   "lines_cn": []
+   "lines_cn": [],
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 30.0,
+   "metric": "immortality field radius",
+   "unit": null
   },
   {
    "patch": "en-2026-02-09-1",
@@ -794,7 +800,13 @@
     "Moved from Minor to Major.",
     "Healing per shot increased from 25 to 40."
    ],
-   "lines_cn": []
+   "lines_cn": [],
+   "before": 25.0,
+   "after": 40.0,
+   "by": 15.0,
+   "by_pct": null,
+   "metric": "healing",
+   "unit": null
   },
   {
    "patch": "cn-2025-12-10-1",
@@ -884,7 +896,13 @@
    "lines_cn": [
     "不再移除“愈合冲击”的治疗。",
     "攻击速度加成从30%降低至25%。"
-   ]
+   ],
+   "before": 30.0,
+   "after": 25.0,
+   "by": -5.0,
+   "by_pct": null,
+   "metric": "攻击速度加成",
+   "unit": "pct"
   },
   {
    "patch": "en-2025-10-14-1",
@@ -2274,6 +2292,18 @@
    {
     "date": "2026-05-12",
     "value": 50.0
+   }
+  ],
+  "perk:automated-healing:healing": [
+   {
+    "date": "2026-02-09",
+    "value": 40.0
+   }
+  ],
+  "perk:assault-burst:攻击速度加成": [
+   {
+    "date": "2025-10-15",
+    "value": 25.0
    }
   ],
   "automated-healing:每次射击治疗量": [

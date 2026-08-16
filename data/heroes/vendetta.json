@@ -471,12 +471,12 @@
    "subject": null,
    "text_en": "Cooldown Reduction per Onslaught stack reduced to 3% (Down from 5%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 5.0,
+   "after": 3.0,
+   "by": -2.0,
    "by_pct": null,
-   "metric": null,
-   "unit": null
+   "metric": "cooldown",
+   "unit": "s"
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -1409,11 +1409,11 @@
    "subject": null,
    "text_en": "Base energy regeneration reduced to 25% (Down from 50%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 50.0,
+   "after": 25.0,
+   "by": -25.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "base energy regeneration",
    "unit": null
   },
   {
@@ -1553,11 +1553,11 @@
    "subject": null,
    "text_en": "Weapon Power reduced to 5% (Down from 10%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 10.0,
+   "after": 5.0,
+   "by": -5.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "weapon power",
    "unit": null
   },
   {
@@ -1643,11 +1643,11 @@
    "subject": null,
    "text_en": "Ability Power increased to 15% (Up from 10%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 10.0,
+   "after": 15.0,
+   "by": 5.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "ability power",
    "unit": null
   },
   {
@@ -1661,11 +1661,11 @@
    "subject": null,
    "text_en": "Ability Lifesteal increased to 15% (Up from 10%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 10.0,
+   "after": 15.0,
+   "by": 5.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "ability lifesteal",
    "unit": null
   },
   {
@@ -2305,11 +2305,11 @@
    "subject": null,
    "text_en": "Whirlwind Dash Damage during additional duration increased to 75% (Up from 50%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 50.0,
+   "after": 75.0,
+   "by": 25.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "whirlwind dash damage during additional duration",
    "unit": null
   },
   {
@@ -2323,11 +2323,11 @@
    "subject": null,
    "text_en": "Whirlwind Dash reactivation damage increased to 75% (Up from 50%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 50.0,
+   "after": 75.0,
+   "by": 25.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "whirlwind dash reactivation damage",
    "unit": null
   },
   {
@@ -2341,11 +2341,11 @@
    "subject": null,
    "text_en": "Free Projected Edge damage increased to 75% (Up from 50%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 50.0,
+   "after": 75.0,
+   "by": 25.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "free projected edge damage",
    "unit": null
   },
   {
@@ -2548,7 +2548,13 @@
    "lines_cn": [
     "从主要威能改为了次级威能。",
     "每次旋转的伤害从35降低至30。"
-   ]
+   ],
+   "before": 35.0,
+   "after": 30.0,
+   "by": -5.0,
+   "by_pct": null,
+   "metric": "每次旋转的伤害",
+   "unit": null
   },
   {
    "patch": "cn-2026-03-11-1",
@@ -2566,7 +2572,13 @@
    "lines_cn": [
     "从次级威能改为了主要威能。",
     "竖直劈斩的生命汲取从30%提高至40%。"
-   ]
+   ],
+   "before": 30.0,
+   "after": 40.0,
+   "by": 10.0,
+   "by_pct": null,
+   "metric": "竖直劈斩的生命汲取",
+   "unit": "pct"
   },
   {
    "patch": "en-2026-03-10-1",
@@ -2584,7 +2596,13 @@
     "Moved from Major to Minor.",
     "Damage per spin reduced from 35 to 30."
    ],
-   "lines_cn": []
+   "lines_cn": [],
+   "before": 35.0,
+   "after": 30.0,
+   "by": -5.0,
+   "by_pct": null,
+   "metric": "damage",
+   "unit": null
   },
   {
    "patch": "en-2026-03-10-1",
@@ -2673,7 +2691,13 @@
    "lines_en": [],
    "lines_cn": [
     "生命汲取从40%降低至30%。"
-   ]
+   ],
+   "before": 40.0,
+   "after": 30.0,
+   "by": -10.0,
+   "by_pct": null,
+   "metric": "health",
+   "unit": "pct"
   },
   {
    "patch": "en-2026-02-13-1",
@@ -5296,6 +5320,30 @@
    {
     "date": "2026-04-15",
     "value": 75.0
+   }
+  ],
+  "perk:raging-storm:每次旋转的伤害": [
+   {
+    "date": "2026-03-11",
+    "value": 30.0
+   }
+  ],
+  "perk:siphoning-strike:竖直劈斩的生命汲取": [
+   {
+    "date": "2026-03-11",
+    "value": 40.0
+   }
+  ],
+  "perk:raging-storm:damage": [
+   {
+    "date": "2026-03-10",
+    "value": 30.0
+   }
+  ],
+  "perk:siphoning-strike:health": [
+   {
+    "date": "2026-02-14",
+    "value": 30.0
    }
   ]
  }

@@ -91,7 +91,13 @@
    "lines_en": [],
    "lines_cn": [
     "弹道尺寸从0.17米降低至0.07米。"
-   ]
+   ],
+   "before": 0.17,
+   "after": 0.07,
+   "by": -0.1,
+   "by_pct": null,
+   "metric": "弹道尺寸",
+   "unit": "m"
   },
   {
    "patch": "cn-2026-07-15-1",
@@ -141,7 +147,13 @@
    "lines_en": [
     "Projectile size reduced from 0.17 to 0.07."
    ],
-   "lines_cn": []
+   "lines_cn": [],
+   "before": 0.17,
+   "after": 0.07,
+   "by": -0.1,
+   "by_pct": null,
+   "metric": "projectile size",
+   "unit": null
   },
   {
    "patch": "en-2026-07-14-1",
@@ -169,11 +181,11 @@
    "subject": null,
    "text_en": "Max Life Heal per bullet reloaded increased to 2.5% (Up from 2%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 2.0,
+   "after": 2.5,
+   "by": 0.5,
    "by_pct": null,
-   "metric": null,
+   "metric": "max life heal per bullet reloaded",
    "unit": null
   },
   {
@@ -286,7 +298,7 @@
    "perk_cn": null,
    "status": "changed",
    "lines_en": [
-    "Minor Perk - Even the Odds"
+    "Even the Odds"
    ],
    "lines_cn": []
   },
@@ -323,7 +335,13 @@
    "lines_en": [],
    "lines_cn": [
     "每秒治疗量从30点提高至40点。"
-   ]
+   ],
+   "before": 30.0,
+   "after": 40.0,
+   "by": 10.0,
+   "by_pct": null,
+   "metric": "每秒治疗量",
+   "unit": "hp"
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -340,7 +358,13 @@
    "lines_en": [],
    "lines_cn": [
     "流血总持续伤害量从70点降低至50点。 持续时间从2.5秒缩短至1.5秒。"
-   ]
+   ],
+   "before": 70.0,
+   "after": 50.0,
+   "by": -20.0,
+   "by_pct": null,
+   "metric": "流血总持续伤害量",
+   "unit": "hp"
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -1349,11 +1373,11 @@
    "subject": null,
    "text_en": "Throw distance increased to 125% (Up from 50%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 50.0,
+   "after": 125.0,
+   "by": 75.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "throw distance",
    "unit": null
   },
   {
@@ -1421,11 +1445,11 @@
    "subject": null,
    "text_en": "Hinder duration reduced to 25% (Down from 50%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 50.0,
+   "after": 25.0,
+   "by": -25.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "hinder duration",
    "unit": null
   },
   {
@@ -1547,12 +1571,12 @@
    "subject": null,
    "text_en": "Cooldown Reduction reduced to 5% (Down from 10%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 10.0,
+   "after": 5.0,
+   "by": -5.0,
    "by_pct": null,
-   "metric": null,
-   "unit": null
+   "metric": "cooldown",
+   "unit": "s"
   },
   {
    "patch": "en-2026-06-16-1",
@@ -3229,7 +3253,13 @@
    "lines_en": [],
    "lines_cn": [
     "每秒治疗量从20点提高至30点。"
-   ]
+   ],
+   "before": 20.0,
+   "after": 30.0,
+   "by": 10.0,
+   "by_pct": null,
+   "metric": "每秒治疗量",
+   "unit": "hp"
   },
   {
    "patch": "en-2025-10-14-1",
@@ -3246,7 +3276,13 @@
    "lines_en": [
     "Healing per second increased from 20 to 30."
    ],
-   "lines_cn": []
+   "lines_cn": [],
+   "before": 20.0,
+   "after": 30.0,
+   "by": 10.0,
+   "by_pct": null,
+   "metric": "healing",
+   "unit": null
   },
   {
    "patch": "cn-2025-08-27-1",
@@ -3281,7 +3317,13 @@
    "lines_cn": [
     "改为次级威能。",
     "两发“闪光弹”伤害的降低比例从降低30%提高至降低40%。"
-   ]
+   ],
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 30.0,
+   "metric": "damage",
+   "unit": null
   },
   {
    "patch": "cn-2025-08-27-1",
@@ -5507,6 +5549,34 @@
   }
  ],
  "values": {
+  "perk:silver-bullet:弹道尺寸": [
+   {
+    "date": "2026-07-15",
+    "value": 0.07
+   }
+  ],
+  "perk:silver-bullet:projectile size": [
+   {
+    "date": "2026-07-14",
+    "value": 0.07
+   }
+  ],
+  "perk:even-the-odds:每秒治疗量": [
+   {
+    "date": "2025-10-15",
+    "value": 30.0
+   },
+   {
+    "date": "2026-06-17",
+    "value": 40.0
+   }
+  ],
+  "perk:silver-bullet:流血总持续伤害量": [
+   {
+    "date": "2026-06-17",
+    "value": 50.0
+   }
+  ],
   "attr:base_stat:维和者基础伤害": [
    {
     "date": "2026-06-17",
@@ -5535,6 +5605,12 @@
    {
     "date": "2026-06-16",
     "value": 65.0
+   }
+  ],
+  "perk:even-the-odds:healing": [
+   {
+    "date": "2025-10-14",
+    "value": 30.0
    }
   ],
   "attr:ultimate_cost:ultimate_cost": [

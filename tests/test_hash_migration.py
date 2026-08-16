@@ -94,3 +94,41 @@ def test_migration_idempotent(tmp_path):
 
     # dict-based and object-based hashes agree on the migrated data
     assert patch_hash_from_dict(json.loads(patch_file.read_text(encoding="utf-8"))) == new_hash
+
+
+def test_fresh_reparse_after_migration_is_unchanged():
+    """After migration, a fresh parse of the original source text must hash equal
+    to the stored (attributed) data — otherwise every monitor run reports modified."""
+    from ow2_patch.attribution import classify_general
+    from ow2_patch.diff import detect_changes
+    from ow2_patch.names import NameResolver
+    from ow2_patch.pipeline import regenerate_all
+    from ow2_patch.model import patch_to_dict
+
+    import tempfile
+
+    data_dir = pathlib.Path(tempfile.mkdtemp()) / "data"
+    (data_dir / "patches" / "en").mkdir(parents=True)
+    # a patch whose general lines are 'Name - Power' perk leaks
+    patch = parse_patch_notes(
+        (FIXTURES / "en_2026_08_11.html").read_text(encoding="utf-8"), "en", url="https://x"
+    )[0]
+    data = patch_to_dict(patch)
+    data["hash"] = "sha256:old"
+    patch_file = data_dir / "patches" / "en" / f"{data['date']}-1.json"
+    patch_file.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
+    manifest = {patch.id: {"hash": "sha256:old", "site": "en", "date": data["date"],
+                           "title": data["title"], "url": data["url"]}}
+    (data_dir / "manifest.json").write_text(
+        json.dumps(manifest), encoding="utf-8")
+
+    # attribution rewrites the stored data; migration recomputes hashes from it
+    regenerate_all(data_dir)
+
+    # fresh parse of the SAME source HTML produces the same hash -> zero events
+    reparse = parse_patch_notes(
+        (FIXTURES / "en_2026_08_11.html").read_text(encoding="utf-8"), "en", url="https://x"
+    )[0]
+    report = detect_changes([reparse], json.loads(
+        (data_dir / "manifest.json").read_text(encoding="utf-8")))
+    assert report.events == [], "attribution must not make re-parses look modified"

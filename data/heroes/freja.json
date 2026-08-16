@@ -13,7 +13,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月15日",
    "kind": "ability",
-   "dimension": "weapon",
+   "dimension": "ability",
    "ability_slug": "revdraw-crossbow",
    "ability_en": "Revdraw Crossbow",
    "ability_cn": "速射弩",
@@ -73,7 +73,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/07",
    "patch_title": "Overwatch Retail Patch Notes – July 14, 2026",
    "kind": "ability",
-   "dimension": "weapon",
+   "dimension": "ability",
    "ability_slug": "revdraw-crossbow",
    "ability_en": "Revdraw Crossbow",
    "ability_cn": "速射弩",
@@ -887,11 +887,11 @@
    "subject": null,
    "text_en": "Slow reduced to 20% (Down from 30%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 30.0,
+   "after": 20.0,
+   "by": -10.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "slow",
    "unit": null
   },
   {
@@ -1169,11 +1169,11 @@
    "subject": null,
    "text_en": "Max Life Healing reduced to 4% (Down from 6%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 6.0,
+   "after": 4.0,
+   "by": -2.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "max life healing",
    "unit": null
   },
   {
@@ -1301,11 +1301,11 @@
    "subject": null,
    "text_en": "Max Ammo restore reduced to 30% (Down from 40%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 40.0,
+   "after": 30.0,
+   "by": -10.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "max ammo restore",
    "unit": null
   },
   {
@@ -1319,11 +1319,11 @@
    "subject": null,
    "text_en": "Max Life Healing reduced to 6% (Down from 8%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 8.0,
+   "after": 6.0,
+   "by": -2.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "max life healing",
    "unit": null
   },
   {
@@ -2213,11 +2213,11 @@
    "subject": null,
    "text_en": "Max Life per hit increased to 8% (Up from 5%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 5.0,
+   "after": 8.0,
+   "by": 3.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "max life per hit",
    "unit": null
   },
   {
@@ -2379,7 +2379,13 @@
    "lines_en": [],
    "lines_cn": [
     "返还的弹药从4提高至8。"
-   ]
+   ],
+   "before": 4.0,
+   "after": 8.0,
+   "by": 4.0,
+   "by_pct": null,
+   "metric": "返还的弹药",
+   "unit": null
   },
   {
    "patch": "en-2025-10-14-1",
@@ -2396,7 +2402,13 @@
    "lines_en": [
     "Ammo refunded increased from 4 to 8."
    ],
-   "lines_cn": []
+   "lines_cn": [],
+   "before": 4.0,
+   "after": 8.0,
+   "by": 4.0,
+   "by_pct": null,
+   "metric": "ammo",
+   "unit": null
   },
   {
    "patch": "en-2025-10-01-1",
@@ -2502,11 +2514,11 @@
    "subject": null,
    "text_en": "Increased explosion radius increased to 50% (up from 33%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 33.0,
+   "after": 50.0,
+   "by": 17.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "increased explosion radius",
    "unit": null
   },
   {
@@ -2538,11 +2550,11 @@
    "subject": null,
    "text_en": "Ammo Restore on Ability Use increased to 40% (up from 25%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 25.0,
+   "after": 40.0,
+   "by": 15.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "ammo",
    "unit": null
   },
   {
@@ -2631,7 +2643,13 @@
    "lines_cn": [
     "新次级威能。",
     "疾冲距离扩大20%。"
-   ]
+   ],
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 20.0,
+   "metric": "疾冲距离",
+   "unit": null
   },
   {
    "patch": "cn-2025-08-27-1",
@@ -2754,7 +2772,13 @@
     "New Minor Perk.",
     "Quick Dash distance is increased by 20%."
    ],
-   "lines_cn": []
+   "lines_cn": [],
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 20.0,
+   "metric": "quick dash distance is",
+   "unit": null
   },
   {
    "patch": "en-2025-08-26-1",
@@ -3048,8 +3072,8 @@
    "before": null,
    "after": null,
    "by": null,
-   "by_pct": null,
-   "metric": null,
+   "by_pct": 25.0,
+   "metric": "发射的流星索半径",
    "unit": null
   },
   {
@@ -3855,6 +3879,23 @@
    "patch_title": "Overwatch 2 Retail Patch Notes – May 29, 2025",
    "kind": "perk",
    "dimension": "perk",
+   "perk_slug": "lille-f-lde",
+   "perk_en": "Lille Fælde",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [
+    "Re-enabled."
+   ],
+   "lines_cn": []
+  },
+  {
+   "patch": "en-2025-05-29-1",
+   "date": "2025-05-29",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/05",
+   "patch_title": "Overwatch 2 Retail Patch Notes – May 29, 2025",
+   "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "so-cooked",
    "perk_en": "So Cooked",
    "perk_cn": null,
@@ -3905,23 +3946,6 @@
    "perk_cn": null,
    "status": "changed",
    "lines_en": [],
-   "lines_cn": []
-  },
-  {
-   "patch": "en-2025-05-29-1",
-   "date": "2025-05-29",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/05",
-   "patch_title": "Overwatch 2 Retail Patch Notes – May 29, 2025",
-   "kind": "perk",
-   "dimension": "perk",
-   "perk_slug": "lille-f-lde",
-   "perk_en": "Lille Fælde",
-   "perk_cn": null,
-   "status": "changed",
-   "lines_en": [
-    "Lille Fælde - Power Re-enabled."
-   ],
    "lines_cn": []
   },
   {
@@ -4025,11 +4049,11 @@
    "subject": null,
    "text_en": "Max Ammo restored from using an ability reduced to 25% (down from 50%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 50.0,
+   "after": 25.0,
+   "by": -25.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "max ammo restored from using an ability",
    "unit": null
   },
   {
@@ -4043,11 +4067,11 @@
    "subject": null,
    "text_en": "Max Life heal per hit increased to 4% (up from 3%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 3.0,
+   "after": 4.0,
+   "by": 1.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "max life heal per hit",
    "unit": null
   },
   {
@@ -7225,7 +7249,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/03/",
    "patch_title": "《守望先锋》英雄试玩：弗蕾娅——2025年3月22日",
    "kind": "ability",
-   "dimension": "weapon",
+   "dimension": "ability",
    "ability_slug": "revdraw-crossbow",
    "ability_en": "Revdraw Crossbow",
    "ability_cn": "速射弩",
@@ -7245,7 +7269,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/03/",
    "patch_title": "《守望先锋》英雄试玩：弗蕾娅——2025年3月22日",
    "kind": "ability",
-   "dimension": "weapon",
+   "dimension": "ability",
    "ability_slug": "revdraw-crossbow",
    "ability_en": "Revdraw Crossbow",
    "ability_cn": "速射弩",
@@ -7661,7 +7685,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/03",
    "patch_title": "Overwatch 2 Freja Hero Trial - March 21, 2025",
    "kind": "ability",
-   "dimension": "weapon",
+   "dimension": "ability",
    "ability_slug": "revdraw-crossbow",
    "ability_en": "Revdraw Crossbow",
    "ability_cn": "速射弩",
@@ -7681,7 +7705,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/03",
    "patch_title": "Overwatch 2 Freja Hero Trial - March 21, 2025",
    "kind": "ability",
-   "dimension": "weapon",
+   "dimension": "ability",
    "ability_slug": "revdraw-crossbow",
    "ability_en": "Revdraw Crossbow",
    "ability_cn": "速射弩",
@@ -8160,6 +8184,18 @@
    {
     "date": "2026-05-13",
     "value": 33.0
+   }
+  ],
+  "perk:relentless-barrage:返还的弹药": [
+   {
+    "date": "2025-10-15",
+    "value": 8.0
+   }
+  ],
+  "perk:relentless-barrage:ammo": [
+   {
+    "date": "2025-10-14",
+    "value": 8.0
    }
   ]
  }

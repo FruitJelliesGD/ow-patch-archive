@@ -131,11 +131,11 @@
    "subject": "health",
    "text_en": "Damage converted to Armor reduced to 3% (Down from 5%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 5.0,
+   "after": 3.0,
+   "by": -2.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "damage",
    "unit": null
   },
   {
@@ -1496,11 +1496,11 @@
    "subject": null,
    "text_en": "Ability Power reduced to 5% (Down from 15%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 15.0,
+   "after": 5.0,
+   "by": -10.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "ability power",
    "unit": null
   },
   {
@@ -1514,11 +1514,11 @@
    "subject": null,
    "text_en": "Ability Power per Pillar reduced to 4% (Down from 5%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 5.0,
+   "after": 4.0,
+   "by": -1.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "ability power per pillar",
    "unit": null
   },
   {
@@ -1991,7 +1991,13 @@
    "lines_cn": [
     "不再与“冰墙”共享冷却时间。",
     "冷却时间从6秒延长至10秒。"
-   ]
+   ],
+   "before": 6.0,
+   "after": 10.0,
+   "by": 4.0,
+   "by_pct": null,
+   "metric": "cooldown",
+   "unit": "s"
   },
   {
    "patch": "en-2025-10-14-1",
@@ -2009,7 +2015,13 @@
     "No longer shares a cooldown with Ice Wall.",
     "Cooldown increased from 6 to 10 seconds."
    ],
-   "lines_cn": []
+   "lines_cn": [],
+   "before": 6.0,
+   "after": 10.0,
+   "by": 4.0,
+   "by_pct": null,
+   "metric": "cooldown",
+   "unit": "s"
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -2127,7 +2139,13 @@
    "lines_cn": [
     "新次级威能。",
     "在“暴雪”内的盟友移动速度提高25%，且每秒治疗50点生命值。"
-   ]
+   ],
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 25.0,
+   "metric": "内的盟友移动速度",
+   "unit": null
   },
   {
    "patch": "cn-2025-08-27-1",
@@ -4311,6 +4329,12 @@
     "value": 3.0
    }
   ],
+  "attr:health:damage": [
+   {
+    "date": "2026-07-14",
+    "value": 3.0
+   }
+  ],
   "endothermic-blaster:range": [
    {
     "date": "2026-06-16",
@@ -4327,6 +4351,16 @@
    {
     "date": "2026-07-01",
     "value": 14.0
+   }
+  ],
+  "perk:glacial-propulsion:cooldown": [
+   {
+    "date": "2025-10-14",
+    "value": 10.0
+   },
+   {
+    "date": "2025-10-15",
+    "value": 10.0
    }
   ],
   "ice-wall:wall health": [

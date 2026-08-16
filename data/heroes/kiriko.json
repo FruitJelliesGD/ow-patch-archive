@@ -197,12 +197,12 @@
    "subject": null,
    "text_en": "Cooldown refund increased to 25% (Up from 20%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 20.0,
+   "after": 25.0,
+   "by": 5.0,
    "by_pct": null,
-   "metric": null,
-   "unit": null
+   "metric": "cooldown",
+   "unit": "s"
   },
   {
    "patch": "cn-2026-07-15-1",
@@ -369,12 +369,12 @@
    "subject": null,
    "text_en": "Cooldown reduction per critical hit increased to 20% (Up from 15%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 15.0,
+   "after": 20.0,
+   "by": 5.0,
    "by_pct": null,
-   "metric": null,
-   "unit": null
+   "metric": "cooldown",
+   "unit": "s"
   },
   {
    "patch": "cn-2026-07-01-1",
@@ -969,8 +969,8 @@
    "before": null,
    "after": null,
    "by": null,
-   "by_pct": null,
-   "metric": null,
+   "by_pct": 50.0,
+   "metric": "的范围",
    "unit": null
   },
   {
@@ -984,12 +984,12 @@
    "subject": null,
    "text_en": null,
    "text_cn": "最小范围从5米缩小至0米。",
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 5.0,
+   "after": 0.0,
+   "by": -5.0,
    "by_pct": null,
-   "metric": null,
-   "unit": null
+   "metric": "最小范围",
+   "unit": "m"
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -1923,11 +1923,11 @@
    "subject": null,
    "text_en": "Bonus Attack Speed after using an ability reduced to 15% (Down from 20%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 20.0,
+   "after": 15.0,
+   "by": -5.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "bonus attack speed after using an ability",
    "unit": null
   },
   {
@@ -2200,7 +2200,13 @@
     "Removed increased cooldown recovery buff",
     "Movement speed buff duration increased from 2 to 4 seconds"
    ],
-   "lines_cn": []
+   "lines_cn": [],
+   "before": 2.0,
+   "after": 4.0,
+   "by": 2.0,
+   "by_pct": null,
+   "metric": "move_speed",
+   "unit": "m/s"
   },
   {
    "patch": "en-2026-02-09-1",
@@ -2379,7 +2385,13 @@
    "lines_en": [],
    "lines_cn": [
     "持续时间从3秒缩短至2秒。"
-   ]
+   ],
+   "before": 3.0,
+   "after": 2.0,
+   "by": -1.0,
+   "by_pct": null,
+   "metric": "duration",
+   "unit": "s"
   },
   {
    "patch": "cn-2025-10-15-1",
@@ -2396,7 +2408,13 @@
    "lines_en": [],
    "lines_cn": [
     "持续时间从2秒延长至3秒。"
-   ]
+   ],
+   "before": 2.0,
+   "after": 3.0,
+   "by": 1.0,
+   "by_pct": null,
+   "metric": "duration",
+   "unit": "s"
   },
   {
    "patch": "en-2025-10-14-1",
@@ -2413,7 +2431,13 @@
    "lines_en": [
     "Duration reduced from 3 seconds to 2 seconds."
    ],
-   "lines_cn": []
+   "lines_cn": [],
+   "before": 3.0,
+   "after": 2.0,
+   "by": -1.0,
+   "by_pct": null,
+   "metric": "duration",
+   "unit": "s"
   },
   {
    "patch": "en-2025-10-14-1",
@@ -2430,7 +2454,13 @@
    "lines_en": [
     "Duration increased from 2 to 3 seconds."
    ],
-   "lines_cn": []
+   "lines_cn": [],
+   "before": 2.0,
+   "after": 3.0,
+   "by": 1.0,
+   "by_pct": null,
+   "metric": "duration",
+   "unit": "s"
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -3255,8 +3285,8 @@
    "before": null,
    "after": null,
    "by": null,
-   "by_pct": null,
-   "metric": null,
+   "by_pct": 50.0,
+   "metric": "散布",
    "unit": null
   },
   {
@@ -4683,6 +4713,32 @@
    {
     "date": "2026-04-14",
     "value": 7.0
+   }
+  ],
+  "perk:foxtrot:move_speed": [
+   {
+    "date": "2026-02-09",
+    "value": 4.0
+   }
+  ],
+  "perk:foxtrot:duration": [
+   {
+    "date": "2025-10-14",
+    "value": 2.0
+   },
+   {
+    "date": "2025-10-15",
+    "value": 2.0
+   }
+  ],
+  "perk:ready-step:duration": [
+   {
+    "date": "2025-10-14",
+    "value": 3.0
+   },
+   {
+    "date": "2025-10-15",
+    "value": 3.0
    }
   ],
   "attr:health:overhealth": [

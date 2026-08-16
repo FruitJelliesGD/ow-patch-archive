@@ -1,14 +1,17 @@
 """Weapon classification: curated seed table + name-root matching.
 
 The seed table (data/weapons.json) is the authoritative human-maintained list;
-name roots are a conservative fallback. Classification runs whenever the ability
-map is rebuilt, so editing data/weapons.json + `tools/rebuild.py` re-labels.
+name roots are a conservative fallback with word-boundary matching and an
+explicit exclusion list (ultimate abilities like Dragonblade share root words).
+Classification runs whenever the ability map is rebuilt, so editing
+data/weapons.json + `tools/rebuild.py` re-labels.
 """
 
 from __future__ import annotations
 
 import json
 import pathlib
+import re
 
 DEFAULT_WEAPONS_PATH = pathlib.Path(__file__).resolve().parent.parent.parent / "data" / "weapons.json"
 
@@ -25,6 +28,9 @@ def classify_ability(name_en: str, name_cn: str, hero_slug: str, weapons: dict) 
     name = name_en or name_cn or ""
     if not name:
         return "ability"
+    slugish = (name_en or "").lower().replace(" ", "-")
+    if slugish in weapons.get("exclude", []):
+        return "ability"
     for entry in weapons.get("weapons", []):
         if entry.get("hero") == hero_slug and entry.get("name_en") == name_en:
             return "weapon"
@@ -32,6 +38,6 @@ def classify_ability(name_en: str, name_cn: str, hero_slug: str, weapons: dict) 
             return "weapon"
     lower = name.lower()
     for root in weapons.get("roots", []):
-        if root in lower:
+        if re.search(rf"\b{re.escape(root)}\b", lower):
             return "weapon"
     return "ability"

@@ -71,11 +71,11 @@
    "subject": null,
    "text_en": "Ravenous Vortex bonus damage reduced to 15% (Down from 30%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 30.0,
+   "after": 15.0,
+   "by": -15.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "ravenous vortex bonus damage",
    "unit": null
   },
   {
@@ -493,7 +493,13 @@
    "lines_en": [],
    "lines_cn": [
     "持续时间延长从1秒增加至2秒。 “诛”持续期间效果减半。"
-   ]
+   ],
+   "before": 1.0,
+   "after": 2.0,
+   "by": 1.0,
+   "by_pct": null,
+   "metric": "duration",
+   "unit": "s"
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -510,7 +516,13 @@
    "lines_en": [],
    "lines_cn": [
     "治疗量从75提高至100。"
-   ]
+   ],
+   "before": 75.0,
+   "after": 100.0,
+   "by": 25.0,
+   "by_pct": null,
+   "metric": "healing",
+   "unit": null
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -1194,7 +1206,13 @@
    "lines_cn": [
     "已添加。",
     "“虚空屏障”的持续时间延长25%，尺寸增大25%。"
-   ]
+   ],
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 25.0,
+   "metric": "的持续时间",
+   "unit": null
   },
   {
    "patch": "cn-2026-04-15-1",
@@ -1229,7 +1247,13 @@
    "lines_cn": [
     "从次级威能改为了主要威能。",
     "连射间隔从0.75秒缩短至0.6秒。"
-   ]
+   ],
+   "before": 0.75,
+   "after": 0.6,
+   "by": -0.15,
+   "by_pct": null,
+   "metric": "连射间隔",
+   "unit": "s"
   },
   {
    "patch": "cn-2026-04-15-1",
@@ -2965,7 +2989,13 @@
     "Added.",
     "Void Barrier duration and size increased by 25%."
    ],
-   "lines_cn": []
+   "lines_cn": [],
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 25.0,
+   "metric": "void barrier duration and size",
+   "unit": null
   },
   {
    "patch": "en-2026-04-14-1",
@@ -3000,7 +3030,13 @@
     "Moved from Minor to Major Perk.",
     "Delay between bursts reduced from 0.75 to 0.6 seconds."
    ],
-   "lines_cn": []
+   "lines_cn": [],
+   "before": 0.75,
+   "after": 0.6,
+   "by": -0.15,
+   "by_pct": null,
+   "metric": "delay between bursts",
+   "unit": null
   },
   {
    "patch": "en-2026-04-14-1",
@@ -5349,7 +5385,13 @@
    "lines_en": [],
    "lines_cn": [
     "每秒治疗量从50提高至75。"
-   ]
+   ],
+   "before": 50.0,
+   "after": 75.0,
+   "by": 25.0,
+   "by_pct": null,
+   "metric": "每秒治疗量",
+   "unit": null
   },
   {
    "patch": "en-2025-06-24-1",
@@ -5366,7 +5408,13 @@
    "lines_en": [
     "Healing per second increased from 50 to 75."
    ],
-   "lines_cn": []
+   "lines_cn": [],
+   "before": 50.0,
+   "after": 75.0,
+   "by": 25.0,
+   "by_pct": null,
+   "metric": "healing",
+   "unit": null
   },
   {
    "patch": "en-2025-04-01-1",
@@ -6858,6 +6906,34 @@
     "value": 20.0
    }
   ],
+  "perk:relentless-form:duration": [
+   {
+    "date": "2026-06-17",
+    "value": 2.0
+   }
+  ],
+  "perk:nanite-repair:healing": [
+   {
+    "date": "2025-06-24",
+    "value": 75.0
+   },
+   {
+    "date": "2026-06-17",
+    "value": 100.0
+   }
+  ],
+  "perk:ramparts:连射间隔": [
+   {
+    "date": "2026-04-15",
+    "value": 0.6
+   }
+  ],
+  "perk:void-surge:delay between bursts": [
+   {
+    "date": "2026-04-14",
+    "value": 0.6
+   }
+  ],
   "attr:health:health": [
    {
     "date": "2024-02-13",
@@ -6906,6 +6982,12 @@
    {
     "date": "2025-09-16",
     "value": 275.0
+   }
+  ],
+  "perk:nanite-repair:每秒治疗量": [
+   {
+    "date": "2025-06-25",
+    "value": 75.0
    }
   ],
   "attr:health:base armor": [

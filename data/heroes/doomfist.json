@@ -421,7 +421,13 @@
    "lines_en": [],
    "lines_cn": [
     "持续时间从1秒缩短至0.8秒。"
-   ]
+   ],
+   "before": 1.0,
+   "after": 0.8,
+   "by": -0.2,
+   "by_pct": null,
+   "metric": "duration",
+   "unit": "s"
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -1054,11 +1060,11 @@
    "subject": null,
    "text_en": "Damage reduced to 40% (Down from 60%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 60.0,
+   "after": 40.0,
+   "by": -20.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "damage",
    "unit": null
   },
   {
@@ -1198,11 +1204,11 @@
    "subject": null,
    "text_en": "The Best Defense scaling increased to 50% (Up from 35%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 35.0,
+   "after": 50.0,
+   "by": 15.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "the best defense scaling",
    "unit": null
   },
   {
@@ -1844,11 +1850,11 @@
    "subject": null,
    "text_en": "Ally Healing increased to 20% (Up from 15%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 15.0,
+   "after": 20.0,
+   "by": 5.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "ally healing",
    "unit": null
   },
   {
@@ -1862,12 +1868,12 @@
    "subject": "health",
    "text_en": "Overhealth Max Life Scaling increased to 10% (Up from 8%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 8.0,
+   "after": 10.0,
+   "by": 2.0,
    "by_pct": null,
-   "metric": null,
-   "unit": null
+   "metric": "overhealth",
+   "unit": "hp"
   },
   {
    "patch": "en-2026-05-12-1",
@@ -1880,11 +1886,11 @@
    "subject": null,
    "text_en": "Level 3 Punch Bonus Damage increased to 50% (Up from 25%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 25.0,
+   "after": 50.0,
+   "by": 25.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "level 3 punch bonus damage",
    "unit": null
   },
   {
@@ -2452,8 +2458,14 @@
    "status": "changed",
    "lines_en": [],
    "lines_cn": [
-    "地震余波——异能 第二段冲击波的伤害从50%提高至60%。"
-   ]
+    "第二段冲击波的伤害从50%提高至60%。"
+   ],
+   "before": 50.0,
+   "after": 60.0,
+   "by": 10.0,
+   "by_pct": null,
+   "metric": "第二段冲击波的伤害",
+   "unit": "pct"
   },
   {
    "patch": "cn-2025-12-19-1",
@@ -2469,8 +2481,14 @@
    "status": "changed",
    "lines_en": [],
    "lines_cn": [
-    "惊天动地——异能 现提供终极技能充能。 冷却时间从15秒缩短至12秒。"
-   ]
+    "现提供终极技能充能。 冷却时间从15秒缩短至12秒。"
+   ],
+   "before": 15.0,
+   "after": 12.0,
+   "by": -3.0,
+   "by_pct": null,
+   "metric": "cooldown",
+   "unit": "s"
   },
   {
    "patch": "cn-2025-12-19-1",
@@ -2486,7 +2504,7 @@
    "status": "changed",
    "lines_en": [],
    "lines_cn": [
-    "格挡派对——异能 “格挡派对”因存在问题暂时禁用。"
+    "“格挡派对”因存在问题暂时禁用。"
    ]
   },
   {
@@ -2503,8 +2521,14 @@
    "status": "changed",
    "lines_en": [],
    "lines_cn": [
-    "刺直连击——异能 使用技能后，攻击速度加成从50%提高至75%。"
-   ]
+    "使用技能后，攻击速度加成从50%提高至75%。"
+   ],
+   "before": 50.0,
+   "after": 75.0,
+   "by": 25.0,
+   "by_pct": null,
+   "metric": "攻击速度加成",
+   "unit": "pct"
   },
   {
    "patch": "cn-2025-12-19-1",
@@ -2520,8 +2544,14 @@
    "status": "changed",
    "lines_en": [],
    "lines_cn": [
-    "破空刺拳——异能 “火箭重拳”的燃烧伤害从15%提高至20%。"
-   ]
+    "“火箭重拳”的燃烧伤害从15%提高至20%。"
+   ],
+   "before": 15.0,
+   "after": 20.0,
+   "by": 5.0,
+   "by_pct": null,
+   "metric": "的燃烧伤害",
+   "unit": "pct"
   },
   {
    "patch": "cn-2025-12-19-1",
@@ -2537,8 +2567,14 @@
    "status": "changed",
    "lines_en": [],
    "lines_cn": [
-    "裂地猛砸——异能 每下坠1米，“裂地重拳”的范围扩大从4%提高至6%。"
-   ]
+    "每下坠1米，“裂地重拳”的范围扩大从4%提高至6%。"
+   ],
+   "before": 4.0,
+   "after": 6.0,
+   "by": 2.0,
+   "by_pct": null,
+   "metric": "的范围扩大",
+   "unit": "pct"
   },
   {
    "patch": "cn-2025-12-19-1",
@@ -2697,7 +2733,7 @@
    "perk_cn": null,
    "status": "changed",
    "lines_en": [
-    "Aftershock - Power Increased secondary shockwave damage to 60% (Up from 50%)."
+    "Increased secondary shockwave damage to 60% (Up from 50%)."
    ],
    "lines_cn": []
   },
@@ -2714,7 +2750,7 @@
    "perk_cn": null,
    "status": "changed",
    "lines_en": [
-    "Asteroid Smash - Power Now grants ultimate charge. Cooldown reduced to 12s (Down from 15s)."
+    "Now grants ultimate charge. Cooldown reduced to 12s (Down from 15s)."
    ],
    "lines_cn": []
   },
@@ -2731,7 +2767,7 @@
    "perk_cn": null,
    "status": "changed",
    "lines_en": [
-    "Block Party - Power Block Party has been disabled at this time due to an issue"
+    "Block Party has been disabled at this time due to an issue"
    ],
    "lines_cn": []
   },
@@ -2748,7 +2784,7 @@
    "perk_cn": null,
    "status": "changed",
    "lines_en": [
-    "Jab Cross - Power Increased Melee Attack Speed after using an ability to 75% (Up from 50%)."
+    "Increased Melee Attack Speed after using an ability to 75% (Up from 50%)."
    ],
    "lines_cn": []
   },
@@ -2765,7 +2801,7 @@
    "perk_cn": null,
    "status": "changed",
    "lines_en": [
-    "Jetforce Jab - Power Increased Burn Damage on Rocket Punch to 20% (Up from 15%)."
+    "Increased Burn Damage on Rocket Punch to 20% (Up from 15%)."
    ],
    "lines_cn": []
   },
@@ -2782,7 +2818,7 @@
    "perk_cn": null,
    "status": "changed",
    "lines_en": [
-    "Slam Wham - Power Increased Seismic Slam Range per meter travelled to 6% (Up from 4%)."
+    "Increased Seismic Slam Range per meter travelled to 6% (Up from 4%)."
    ],
    "lines_cn": []
   },
@@ -4109,7 +4145,13 @@
    "lines_cn": [
     "减速持续时间从1.5秒延长至2秒。",
     "减速量从30%提高至40%。"
-   ]
+   ],
+   "before": 1.5,
+   "after": 2.0,
+   "by": 0.5,
+   "by_pct": null,
+   "metric": "减速持续时间",
+   "unit": "s"
   },
   {
    "patch": "cn-2025-10-15-1",
@@ -4163,7 +4205,13 @@
     "Slow duration increased from 1.5 to 2 seconds.",
     "Slow amount increased from 30% to 40%."
    ],
-   "lines_cn": []
+   "lines_cn": [],
+   "before": 1.5,
+   "after": 2.0,
+   "by": 0.5,
+   "by_pct": null,
+   "metric": "slow duration",
+   "unit": null
   },
   {
    "patch": "en-2025-10-14-1",
@@ -6003,6 +6051,12 @@
     "value": 40.0
    }
   ],
+  "perk:aftershock:duration": [
+   {
+    "date": "2026-06-17",
+    "value": 0.8
+   }
+  ],
   "the-best-defense:的效果": [
    {
     "date": "2026-06-17",
@@ -6013,6 +6067,52 @@
    {
     "date": "2025-11-06",
     "value": 25.0
+   },
+   {
+    "date": "2026-05-12",
+    "value": 10.0
+   }
+  ],
+  "perk:aftershock:第二段冲击波的伤害": [
+   {
+    "date": "2025-12-19",
+    "value": 60.0
+   }
+  ],
+  "perk:asteroid-smash:cooldown": [
+   {
+    "date": "2025-12-19",
+    "value": 12.0
+   }
+  ],
+  "perk:jab-cross:攻击速度加成": [
+   {
+    "date": "2025-12-19",
+    "value": 75.0
+   }
+  ],
+  "perk:jetforce-jab:的燃烧伤害": [
+   {
+    "date": "2025-12-19",
+    "value": 20.0
+   }
+  ],
+  "perk:slam-wham:的范围扩大": [
+   {
+    "date": "2025-12-19",
+    "value": 6.0
+   }
+  ],
+  "perk:aftershock:减速持续时间": [
+   {
+    "date": "2025-10-15",
+    "value": 2.0
+   }
+  ],
+  "perk:aftershock:slow duration": [
+   {
+    "date": "2025-10-14",
+    "value": 2.0
    }
   ],
   "seismic-slam:cooldown": [

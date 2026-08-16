@@ -471,7 +471,13 @@
    "lines_en": [
     "Overhealth maximum increased from 250 to 300."
    ],
-   "lines_cn": []
+   "lines_cn": [],
+   "before": 250.0,
+   "after": 300.0,
+   "by": 50.0,
+   "by_pct": null,
+   "metric": "overhealth",
+   "unit": "hp"
   },
   {
    "patch": "en-2026-02-09-1",
@@ -974,7 +980,13 @@
    "lines_cn": [
     "新次级威能。",
     "“爆裂枪”辅助攻击模式的射程扩大50%，炸裂扩散降低25%。"
-   ]
+   ],
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 50.0,
+   "metric": "辅助攻击模式的射程",
+   "unit": null
   },
   {
    "patch": "cn-2025-08-27-1",
@@ -3663,6 +3675,12 @@
    {
     "date": "2026-03-10",
     "value": 7.0
+   }
+  ],
+  "perk:pulled-pork:overhealth": [
+   {
+    "date": "2026-02-09",
+    "value": 300.0
    }
   ],
   "take-a-breather:maximum healing": [

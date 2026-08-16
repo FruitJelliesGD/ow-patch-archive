@@ -298,7 +298,13 @@
    "lines_en": [],
    "lines_cn": [
     "新增：被“超然盛放”爆炸击中的敌人受到的治疗量降低20%，持续1秒。"
-   ]
+   ],
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 20.0,
+   "metric": "爆炸击中的敌人受到的治疗量",
+   "unit": null
   },
   {
    "patch": "en-2026-06-30-1",
@@ -549,7 +555,13 @@
    "lines_en": [],
    "lines_cn": [
     "冷却时间从14秒缩短至11秒。"
-   ]
+   ],
+   "before": 14.0,
+   "after": 11.0,
+   "by": -3.0,
+   "by_pct": null,
+   "metric": "cooldown",
+   "unit": "s"
   },
   {
    "patch": "en-2026-04-14-1",
@@ -626,7 +638,13 @@
    "lines_en": [
     "Cooldown reduced from 14 to 11 seconds."
    ],
-   "lines_cn": []
+   "lines_cn": [],
+   "before": 14.0,
+   "after": 11.0,
+   "by": -3.0,
+   "by_pct": null,
+   "metric": "cooldown",
+   "unit": "s"
   },
   {
    "patch": "en-2026-04-01-1",
@@ -818,8 +836,8 @@
    "before": null,
    "after": null,
    "by": null,
-   "by_pct": null,
-   "metric": null,
+   "by_pct": 50.0,
+   "metric": "花瓣平台的尺寸",
    "unit": null
   },
   {
@@ -835,12 +853,12 @@
    "ability_cn": "花瓣平台",
    "text_en": null,
    "text_cn": "生命值从300点缩小至150点。",
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 300.0,
+   "after": 150.0,
+   "by": -150.0,
    "by_pct": null,
-   "metric": null,
-   "unit": null
+   "metric": "health",
+   "unit": "hp"
   },
   {
    "patch": "cn-2026-04-01-1",
@@ -858,8 +876,8 @@
    "before": null,
    "after": null,
    "by": null,
-   "by_pct": null,
-   "metric": null,
+   "by_pct": 50.0,
+   "metric": "health",
    "unit": null
   },
   {
@@ -875,12 +893,12 @@
    "ability_cn": "生命之树e",
    "text_en": null,
    "text_cn": "生命值从1200点缩小至600点。",
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 1200.0,
+   "after": 600.0,
+   "by": -600.0,
    "by_pct": null,
-   "metric": null,
-   "unit": null
+   "metric": "health",
+   "unit": "hp"
   },
   {
    "patch": "cn-2026-04-01-1",
@@ -896,8 +914,8 @@
    "before": null,
    "after": null,
    "by": null,
-   "by_pct": null,
-   "metric": null,
+   "by_pct": 50.0,
+   "metric": "的体型",
    "unit": null
   },
   {
@@ -1019,7 +1037,13 @@
    "lines_en": [
     "Rejuvenating Dash distance increased by 30%."
    ],
-   "lines_cn": []
+   "lines_cn": [],
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 30.0,
+   "metric": "rejuvenating dash distance",
+   "unit": null
   },
   {
    "patch": "en-2026-02-09-1",
@@ -1162,7 +1186,13 @@
    "lines_en": [],
    "lines_cn": [
     "“回春疾行”的治疗量从20点提高至30点。"
-   ]
+   ],
+   "before": 20.0,
+   "after": 30.0,
+   "by": 10.0,
+   "by_pct": null,
+   "metric": "的治疗量",
+   "unit": "hp"
   },
   {
    "patch": "cn-2025-10-15-1",
@@ -1179,7 +1209,13 @@
    "lines_en": [],
    "lines_cn": [
     "攻击速度加成从25%提高至30%。"
-   ]
+   ],
+   "before": 25.0,
+   "after": 30.0,
+   "by": 5.0,
+   "by_pct": null,
+   "metric": "攻击速度加成",
+   "unit": "pct"
   },
   {
    "patch": "en-2025-10-14-1",
@@ -1196,7 +1232,13 @@
    "lines_en": [
     "Rejuvenating Dash’s healing increased from 20 to 30."
    ],
-   "lines_cn": []
+   "lines_cn": [],
+   "before": 20.0,
+   "after": 30.0,
+   "by": 10.0,
+   "by_pct": null,
+   "metric": "s healing",
+   "unit": null
   },
   {
    "patch": "en-2025-10-14-1",
@@ -1459,7 +1501,13 @@
    "lines_en": [
     "The number of hits to trigger reduced from 20 to 16."
    ],
-   "lines_cn": []
+   "lines_cn": [],
+   "before": 20.0,
+   "after": 16.0,
+   "by": -4.0,
+   "by_pct": null,
+   "metric": "the number of hits to trigger",
+   "unit": null
   },
   {
    "patch": "en-2025-05-16-1",
@@ -3597,6 +3645,16 @@
     "value": 55.0
    }
   ],
+  "perk:sow-the-seed:cooldown": [
+   {
+    "date": "2026-04-14",
+    "value": 11.0
+   },
+   {
+    "date": "2026-04-15",
+    "value": 11.0
+   }
+  ],
   "healing-blossom:maximum healing": [
    {
     "date": "2023-06-13",
@@ -3641,6 +3699,24 @@
     "value": 75.0
    }
   ],
+  "perk:lifeweaving:的治疗量": [
+   {
+    "date": "2025-10-15",
+    "value": 30.0
+   }
+  ],
+  "perk:petal-power:攻击速度加成": [
+   {
+    "date": "2025-10-15",
+    "value": 30.0
+   }
+  ],
+  "perk:lifeweaving:s healing": [
+   {
+    "date": "2025-10-14",
+    "value": 30.0
+   }
+  ],
   "attr:health:base health": [
    {
     "date": "2023-08-10",
@@ -3649,6 +3725,12 @@
    {
     "date": "2025-08-26",
     "value": 200.0
+   }
+  ],
+  "perk:superbloom:the number of hits to trigger": [
+   {
+    "date": "2025-05-16",
+    "value": 16.0
    }
   ],
   "thorn-volley:projectiles per shot": [

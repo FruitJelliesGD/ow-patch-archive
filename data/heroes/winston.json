@@ -21,7 +21,13 @@
    "lines_en": [],
    "lines_cn": [
     "治疗量从30点提高至35点。"
-   ]
+   ],
+   "before": 30.0,
+   "after": 35.0,
+   "by": 5.0,
+   "by_pct": null,
+   "metric": "healing",
+   "unit": "hp"
   },
   {
    "patch": "cn-2026-08-12-1",
@@ -56,7 +62,13 @@
    "lines_en": [
     "Healing increased from 30 to 35."
    ],
-   "lines_cn": []
+   "lines_cn": [],
+   "before": 30.0,
+   "after": 35.0,
+   "by": 5.0,
+   "by_pct": null,
+   "metric": "healing",
+   "unit": null
   },
   {
    "patch": "en-2026-08-11-1",
@@ -1113,11 +1125,11 @@
    "subject": null,
    "text_en": "Electric Damage Lifesteal reduced to 10% (Down from 15%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 15.0,
+   "after": 10.0,
+   "by": -5.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "electric damage lifesteal",
    "unit": null
   },
   {
@@ -1149,12 +1161,12 @@
    "subject": null,
    "text_en": "Range reduced to 15% (Down from 20%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 20.0,
+   "after": 15.0,
+   "by": -5.0,
    "by_pct": null,
-   "metric": null,
-   "unit": null
+   "metric": "range",
+   "unit": "m"
   },
   {
    "patch": "en-2026-06-16-1",
@@ -1185,11 +1197,11 @@
    "subject": "ultimate_cost",
    "text_en": "Ultimate Charge per target hit increased to 3% (Up from 2%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 2.0,
+   "after": 3.0,
+   "by": 1.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "ultimate_cost",
    "unit": null
   },
   {
@@ -1275,11 +1287,11 @@
    "subject": "health",
    "text_en": "Mini Barrier Projector Health increased to 10% (Up from 5%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 5.0,
+   "after": 10.0,
+   "by": 5.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "mini barrier projector health",
    "unit": null
   },
   {
@@ -1311,11 +1323,11 @@
    "subject": null,
    "text_en": "Secondary Fire Critical Damage increased to 250% (Up from 200%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 200.0,
+   "after": 250.0,
+   "by": 50.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "secondary fire critical damage",
    "unit": null
   },
   {
@@ -1527,11 +1539,11 @@
    "subject": null,
    "text_en": "Ability Power reduced to 10% (Down from 20%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 20.0,
+   "after": 10.0,
+   "by": -10.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "ability power",
    "unit": null
   },
   {
@@ -1927,11 +1939,11 @@
    "subject": null,
    "text_en": "Bounce Damage increased to 75% (Up from 50%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 50.0,
+   "after": 75.0,
+   "by": 25.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "bounce damage",
    "unit": null
   },
   {
@@ -1945,11 +1957,11 @@
    "subject": null,
    "text_en": "Critical Damage increased to 200% (Up from 175%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 175.0,
+   "after": 200.0,
+   "by": 25.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "critical damage",
    "unit": null
   },
   {
@@ -2267,8 +2279,14 @@
    "status": "changed",
    "lines_en": [],
    "lines_cn": [
-    "原始重拳——异能 近身攻击伤害加成从5%降低至3%。"
-   ]
+    "近身攻击伤害加成从5%降低至3%。"
+   ],
+   "before": 5.0,
+   "after": 3.0,
+   "by": -2.0,
+   "by_pct": null,
+   "metric": "近身攻击伤害加成",
+   "unit": "pct"
   },
   {
    "patch": "cn-2025-12-19-1",
@@ -2481,7 +2499,7 @@
    "perk_cn": null,
    "status": "changed",
    "lines_en": [
-    "Primal Punch - Power Decreased melee damage to 3% (Down from 5%)."
+    "Decreased melee damage to 3% (Down from 5%)."
    ],
    "lines_cn": []
   },
@@ -5890,7 +5908,13 @@
    "lines_en": [],
    "lines_cn": [
     "对敌方可部署物体造成的伤害加成从50%提高至100%。"
-   ]
+   ],
+   "before": 50.0,
+   "after": 100.0,
+   "by": 50.0,
+   "by_pct": null,
+   "metric": "对敌方可部署物体造成的伤害加成",
+   "unit": "pct"
   },
   {
    "patch": "en-2025-07-22-1",
@@ -6935,6 +6959,16 @@
   }
  ],
  "values": {
+  "perk:revitalizing-barrier:healing": [
+   {
+    "date": "2026-08-11",
+    "value": 35.0
+   },
+   {
+    "date": "2026-08-12",
+    "value": 35.0
+   }
+  ],
   "attr:ultimate_cost:每次命中的终极技能充能": [
    {
     "date": "2026-06-17",
@@ -6969,6 +7003,18 @@
     "value": 50.0
    }
   ],
+  "attr:ultimate_cost:ultimate_cost": [
+   {
+    "date": "2026-06-16",
+    "value": 3.0
+   }
+  ],
+  "attr:health:mini barrier projector health": [
+   {
+    "date": "2026-06-16",
+    "value": 10.0
+   }
+  ],
   "attr:health:base health": [
    {
     "date": "2024-12-17",
@@ -6981,6 +7027,18 @@
    {
     "date": "2026-04-14",
     "value": 325.0
+   }
+  ],
+  "perk:primal-punch:近身攻击伤害加成": [
+   {
+    "date": "2025-12-19",
+    "value": 3.0
+   }
+  ],
+  "perk:short-circuit:对敌方可部署物体造成的伤害加成": [
+   {
+    "date": "2025-07-23",
+    "value": 100.0
    }
   ],
   "attr:health:基础护甲": [

@@ -2209,11 +2209,11 @@
    "subject": null,
    "text_en": "Ability Power reduced to 5% (Down from 15%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 15.0,
+   "after": 5.0,
+   "by": -10.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "ability power",
    "unit": null
   },
   {
@@ -2227,11 +2227,11 @@
    "subject": null,
    "text_en": "Damage increase reduced to 10% (Down from 15%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 15.0,
+   "after": 10.0,
+   "by": -5.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "damage",
    "unit": null
   },
   {
@@ -2353,11 +2353,11 @@
    "subject": null,
    "text_en": "Ability Power increased to 15% (Up from 10%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 10.0,
+   "after": 15.0,
+   "by": 5.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "ability power",
    "unit": null
   },
   {
@@ -2794,7 +2794,13 @@
    "lines_cn": [
     "新次级威能。",
     "“聚合射线”可以完全造成治疗或伤害，此时效果提高25%。"
-   ]
+   ],
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 25.0,
+   "metric": "此时效果",
+   "unit": null
   },
   {
    "patch": "cn-2025-08-27-1",
@@ -2812,7 +2818,13 @@
    "lines_cn": [
     "改为次级威能。",
     "瞬发治疗量从50降低至30。"
-   ]
+   ],
+   "before": 50.0,
+   "after": 30.0,
+   "by": -20.0,
+   "by_pct": null,
+   "metric": "瞬发治疗量",
+   "unit": null
   },
   {
    "patch": "cn-2025-08-27-1",
@@ -2865,7 +2877,13 @@
    "lines_cn": [
     "新主要威能。",
     "“消散”持续时间延长0.5秒并使跳跃高度提高50%。"
-   ]
+   ],
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 50.0,
+   "metric": "秒并使跳跃高度",
+   "unit": null
   },
   {
    "patch": "en-2025-08-26-1",
@@ -2935,7 +2953,13 @@
     "Changed to a Minor Perk.",
     "The instant healing is reduced to 30 (down from 50 healing)."
    ],
-   "lines_cn": []
+   "lines_cn": [],
+   "before": 50.0,
+   "after": 30.0,
+   "by": -20.0,
+   "by_pct": null,
+   "metric": "the instant healing is",
+   "unit": null
   },
   {
    "patch": "en-2025-08-26-1",
@@ -4364,6 +4388,18 @@
    {
     "date": "2026-04-01",
     "value": 10.0
+   }
+  ],
+  "perk:ethical-nourishment:瞬发治疗量": [
+   {
+    "date": "2025-08-27",
+    "value": 30.0
+   }
+  ],
+  "perk:ethical-nourishment:the instant healing is": [
+   {
+    "date": "2025-08-26",
+    "value": 30.0
    }
   ],
   "biotic-grasp:self-healing": [

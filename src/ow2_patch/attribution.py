@@ -122,12 +122,24 @@ def _perk_name_line(text: str) -> str | None:
 
 
 def _attach_perk(hero: dict, text: str, perk_name: str, site: str) -> None:
+    """Attach a general line to a perk entry.
+
+    The original full line is always preserved in `raw_text` (or merged into the
+    lines list when it carries a body), so the content text bag stays identical to
+    a fresh parse — attribution must never drop or rewrite original text.
+    """
     body = ""
     m = _PERK_WITH_BODY_RE.match(text.strip())
     if m:
         body = (m.group(2) or m.group(4) or m.group(6) or "").strip()
-    lines_en = [text] if site == "en" and body else ([body] if body and site == "en" else [])
-    lines_cn = [text] if site == "cn" and body else ([body] if body and site == "cn" else [])
+    if site == "en":
+        lines_en = [body] if body else []
+        lines_cn = []
+        raw = text
+    else:
+        lines_cn = [body] if body else []
+        lines_en = []
+        raw = text
     for perk in hero.get("perks", []):
         existing = perk.get("name_en") or perk.get("name_cn") or ""
         if existing == perk_name:
@@ -135,6 +147,7 @@ def _attach_perk(hero: dict, text: str, perk_name: str, site: str) -> None:
                 perk.setdefault("lines_en", []).extend(lines_en)
             else:
                 perk.setdefault("lines_cn", []).extend(lines_cn)
+            perk.setdefault("raw_text", []).append(raw)
             return
     hero.setdefault("perks", []).append({
         "name_en": perk_name if site == "en" else None,
@@ -142,6 +155,7 @@ def _attach_perk(hero: dict, text: str, perk_name: str, site: str) -> None:
         "status": "changed",
         "lines_en": lines_en,
         "lines_cn": lines_cn,
+        "raw_text": [raw],
     })
 
 

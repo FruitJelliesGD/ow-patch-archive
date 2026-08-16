@@ -32,11 +32,13 @@ def patch_canonical_texts(patch: Patch) -> list[str]:
     for section in patch.sections:
         texts += [section.title or "", section.description or ""]
         for hero in section.heroes:
+            if hero.dev_note:
+                texts.append(hero.dev_note)
             for entry in hero.general:  # str (legacy) or dict
                 texts.append(entry if isinstance(entry, str)
                              else ((entry.get("text_en") or entry.get("text_cn")) or ""))
             for perk in hero.perks:
-                texts += perk.lines_en + perk.lines_cn
+                texts += perk.lines_en + perk.lines_cn + perk.raw_text
             for ability in hero.abilities:
                 for change in ability.changes:
                     texts += [change.text_en or "", change.text_cn or ""]
@@ -60,11 +62,14 @@ def _dict_canonical_texts(data: dict) -> list[str]:
     for section in data.get("sections", []):
         texts += [section.get("title") or "", section.get("description") or ""]
         for hero in section.get("heroes", []):
+            if hero.get("dev_note"):
+                texts.append(hero["dev_note"])
             for entry in hero.get("general", []):
                 texts.append(entry if isinstance(entry, str)
                              else ((entry.get("text_en") or entry.get("text_cn")) or ""))
             for perk in hero.get("perks", []):
                 texts += list(perk.get("lines_en") or []) + list(perk.get("lines_cn") or [])
+                texts += list(perk.get("raw_text") or [])
             for ability in hero.get("abilities", []):
                 for change in ability.get("changes", []):
                     texts += [change.get("text_en") or "", change.get("text_cn") or ""]
@@ -174,7 +179,7 @@ def ensure_hash_schema(data_dir, manifest: dict) -> bool:
             data["hash"] = patch_hash_from_dict(data)
             patch_file.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
     for patch_id, meta in manifest.items():
-        if patch_id == "hash_schema":
+        if patch_id == "hash_schema" or not isinstance(meta, dict):
             continue
         parts = patch_id.split("-")
         path = data_dir / "patches" / meta["site"] / f"{'-'.join(parts[1:4])}-{parts[4]}.json"

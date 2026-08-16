@@ -114,7 +114,13 @@
    "lines_en": [],
    "lines_cn": [
     "A-36战术榴弹的自身击退效果提高25%且不再对自己造成伤害。"
-   ]
+   ],
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 25.0,
+   "metric": "战术榴弹的自身击退效果",
+   "unit": null
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -328,7 +334,13 @@
    "lines_en": [
     "Overhealth degeneration reduced from 100 to 50 per second."
    ],
-   "lines_cn": []
+   "lines_cn": [],
+   "before": 100.0,
+   "after": 50.0,
+   "by": -50.0,
+   "by_pct": null,
+   "metric": "overhealth",
+   "unit": "hp"
   },
   {
    "patch": "en-2026-04-14-1",
@@ -746,8 +758,8 @@
    "before": null,
    "after": null,
    "by": null,
-   "by_pct": null,
-   "metric": null,
+   "by_pct": 10.0,
+   "metric": "模型和打击判定体积",
    "unit": null
   },
   {
@@ -1720,6 +1732,12 @@
   }
  ],
  "values": {
+  "perk:armored-artillery:overhealth": [
+   {
+    "date": "2026-04-14",
+    "value": 50.0
+   }
+  ],
   "configuration-assault:spread": [
    {
     "date": "2024-09-17",

@@ -597,7 +597,13 @@
    "lines_en": [],
    "lines_cn": [
     "伤害从50点降低至30点。"
-   ]
+   ],
+   "before": 50.0,
+   "after": 30.0,
+   "by": -20.0,
+   "by_pct": null,
+   "metric": "damage",
+   "unit": "hp"
   },
   {
    "patch": "cn-2026-05-13-1",
@@ -614,7 +620,13 @@
    "lines_en": [],
    "lines_cn": [
     "每发火箭伤害从40点降低至30点。"
-   ]
+   ],
+   "before": 40.0,
+   "after": 30.0,
+   "by": -10.0,
+   "by_pct": null,
+   "metric": "每发火箭伤害",
+   "unit": "hp"
   },
   {
    "patch": "en-2026-05-12-1",
@@ -631,7 +643,13 @@
    "lines_en": [
     "Damage reduced from 50 to 30."
    ],
-   "lines_cn": []
+   "lines_cn": [],
+   "before": 50.0,
+   "after": 30.0,
+   "by": -20.0,
+   "by_pct": null,
+   "metric": "damage",
+   "unit": null
   },
   {
    "patch": "en-2026-05-12-1",
@@ -1195,11 +1213,11 @@
    "subject": null,
    "text_en": "Rocket number reduction increased to 75% (Up from 60%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 60.0,
+   "after": 75.0,
+   "by": 15.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "rocket number reduction",
    "unit": null
   },
   {
@@ -3625,7 +3643,13 @@
    "lines_en": [],
    "lines_cn": [
     "火箭弹幕激活期间，移动速度降低20%。"
-   ]
+   ],
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 20.0,
+   "metric": "move_speed",
+   "unit": null
   },
   {
    "patch": "cn-2025-05-21-1",
@@ -3642,7 +3666,13 @@
    "lines_en": [],
    "lines_cn": [
     "拉近距离缩短50%。"
-   ]
+   ],
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 50.0,
+   "metric": "拉近距离",
+   "unit": null
   },
   {
    "patch": "en-2025-05-16-1",
@@ -3659,7 +3689,13 @@
    "lines_en": [
     "Movement speed while using Barrage reduced by 20%."
    ],
-   "lines_cn": []
+   "lines_cn": [],
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 20.0,
+   "metric": "move_speed",
+   "unit": null
   },
   {
    "patch": "en-2025-05-16-1",
@@ -3676,7 +3712,13 @@
    "lines_en": [
     "Distance pulled reduced by 50%."
    ],
-   "lines_cn": []
+   "lines_cn": [],
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 50.0,
+   "metric": "distance pulled",
+   "unit": null
   },
   {
    "patch": "en-2025-04-01-1",
@@ -4764,6 +4806,22 @@
    {
     "date": "2026-08-12",
     "value": 8.0
+   }
+  ],
+  "perk:concussive-force:damage": [
+   {
+    "date": "2026-05-12",
+    "value": 30.0
+   },
+   {
+    "date": "2026-05-13",
+    "value": 30.0
+   }
+  ],
+  "perk:rocket-salvo:每发火箭伤害": [
+   {
+    "date": "2026-05-13",
+    "value": 30.0
    }
   ],
   "hover-jets:move_speed": [

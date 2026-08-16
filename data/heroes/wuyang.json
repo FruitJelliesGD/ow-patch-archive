@@ -531,11 +531,11 @@
    "subject": null,
    "text_en": "Damage per extra Orb increased to 30% (Up from 20%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 20.0,
+   "after": 30.0,
+   "by": 10.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "damage",
    "unit": null
   },
   {
@@ -693,11 +693,11 @@
    "subject": null,
    "text_en": "Weapon Power increased to 20% (Up from 10%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 10.0,
+   "after": 20.0,
+   "by": 10.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "weapon power",
    "unit": null
   },
   {
@@ -1027,7 +1027,13 @@
    "lines_en": [],
    "lines_cn": [
     "回流时治疗量从50%提高至100%。"
-   ]
+   ],
+   "before": 50.0,
+   "after": 100.0,
+   "by": 50.0,
+   "by_pct": null,
+   "metric": "回流时治疗量",
+   "unit": "pct"
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -2114,11 +2120,11 @@
    "subject": null,
    "text_en": "Weapon Power reduced to 5% (Down from 10%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 10.0,
+   "after": 5.0,
+   "by": -5.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "weapon power",
    "unit": null
   },
   {
@@ -2908,11 +2914,11 @@
    "subject": null,
    "text_en": "Non-empowered Primary Fire projectile speed increased to 150% (Up from 100%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 100.0,
+   "after": 150.0,
+   "by": 50.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "non-empowered primary fire projectile speed",
    "unit": null
   },
   {
@@ -2926,11 +2932,11 @@
    "subject": null,
    "text_en": "Active Restorative Stream self healing increased to 100% (Up from 75%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 75.0,
+   "after": 100.0,
+   "by": 25.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "active restorative stream self healing",
    "unit": null
   },
   {
@@ -4632,7 +4638,13 @@
    "lines_en": [],
    "lines_cn": [
     "治疗资源生成从33%提高至50%。"
-   ]
+   ],
+   "before": 33.0,
+   "after": 50.0,
+   "by": 17.0,
+   "by_pct": null,
+   "metric": "治疗资源生成",
+   "unit": "pct"
   },
   {
    "patch": "cn-2025-10-15-1",
@@ -4649,7 +4661,13 @@
    "lines_en": [],
    "lines_cn": [
     "被动治疗效果从40%降低至30%。"
-   ]
+   ],
+   "before": 40.0,
+   "after": 30.0,
+   "by": -10.0,
+   "by_pct": null,
+   "metric": "被动治疗效果",
+   "unit": "pct"
   },
   {
    "patch": "cn-2025-10-15-1",
@@ -4666,7 +4684,13 @@
    "lines_en": [],
    "lines_cn": [
     "返回的波浪治疗量降低50%。"
-   ]
+   ],
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 50.0,
+   "metric": "返回的波浪治疗量",
+   "unit": null
   },
   {
    "patch": "cn-2025-10-15-1",
@@ -4789,7 +4813,13 @@
    "lines_en": [
     "Healing on the returning wave reduced by 50%."
    ],
-   "lines_cn": []
+   "lines_cn": [],
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 50.0,
+   "metric": "healing",
+   "unit": null
   },
   {
    "patch": "en-2025-10-14-1",
@@ -5417,7 +5447,13 @@
    "lines_en": [],
    "lines_cn": [
     "用水珠造成伤害时，养神泉的被动治疗量提高40%，持续2秒。"
-   ]
+   ],
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 40.0,
+   "metric": "养神泉的被动治疗量",
+   "unit": null
   },
   {
    "patch": "cn-2025-08-15-1",
@@ -5434,7 +5470,13 @@
    "lines_en": [],
    "lines_cn": [
     "翻江浪会回流至出发点。回流时造成的治疗量和伤害量降低50%。"
-   ]
+   ],
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 50.0,
+   "metric": "回流时造成的治疗量和伤害量",
+   "unit": null
   },
   {
    "patch": "cn-2025-08-15-1",
@@ -5451,7 +5493,13 @@
    "lines_en": [],
    "lines_cn": [
     "可同时控制3颗水珠，每颗水珠造成的伤害降低60%，爆炸范围强化降低25%。"
-   ]
+   ],
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 60.0,
+   "metric": "每颗水珠造成的伤害",
+   "unit": null
   },
   {
    "patch": "cn-2025-08-15-1",
@@ -5967,6 +6015,12 @@
     "value": 15.0
    }
   ],
+  "perk:ebb-and-flow:回流时治疗量": [
+   {
+    "date": "2026-06-17",
+    "value": 100.0
+   }
+  ],
   "attr:health:overhealth": [
    {
     "date": "2026-04-23",
@@ -5993,6 +6047,18 @@
    {
     "date": "2025-12-10",
     "value": 40.0
+   }
+  ],
+  "perk:overflow:治疗资源生成": [
+   {
+    "date": "2025-10-15",
+    "value": 50.0
+   }
+  ],
+  "perk:balance:被动治疗效果": [
+   {
+    "date": "2025-10-15",
+    "value": 30.0
    }
   ],
   "attr:health:health": [

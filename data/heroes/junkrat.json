@@ -247,11 +247,11 @@
    "subject": null,
    "text_en": "Increased damage to airborne targets increased to 25% (Up from 10%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 10.0,
+   "after": 25.0,
+   "by": 15.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "increased damage to airborne targets",
    "unit": null
   },
   {
@@ -843,7 +843,13 @@
    "lines_en": [],
    "lines_cn": [
     "攻击速度加成从25%提高至35%。"
-   ]
+   ],
+   "before": 25.0,
+   "after": 35.0,
+   "by": 10.0,
+   "by_pct": null,
+   "metric": "攻击速度加成",
+   "unit": "pct"
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -1758,11 +1764,11 @@
    "subject": "health",
    "text_en": "Concussion Mine Health increased to 75% (Up from 50%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 50.0,
+   "after": 75.0,
+   "by": 25.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "concussion mine health",
    "unit": null
   },
   {
@@ -1799,7 +1805,13 @@
    "lines_cn": [
     "从主要威能改为了次级威能。",
     "攻击速度加成从35%降低至25%。"
-   ]
+   ],
+   "before": 35.0,
+   "after": 25.0,
+   "by": -10.0,
+   "by_pct": null,
+   "metric": "攻击速度加成",
+   "unit": "pct"
   },
   {
    "patch": "cn-2026-04-15-1",
@@ -2046,11 +2058,11 @@
    "subject": "health",
    "text_en": "Max Life Overhealth Scaling reduced to 6% (Down from 8%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 8.0,
+   "after": 6.0,
+   "by": -2.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "max life overhealth scaling",
    "unit": null
   },
   {
@@ -2100,11 +2112,11 @@
    "subject": null,
    "text_en": "Ability Power increased to 15% (Up from 10%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 10.0,
+   "after": 15.0,
+   "by": 5.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "ability power",
    "unit": null
   },
   {
@@ -2118,12 +2130,12 @@
    "subject": null,
    "text_en": "Cooldown Reduction upon self detonating Concussion Mine reduced to 10% (Down from 15%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 15.0,
+   "after": 10.0,
+   "by": -5.0,
    "by_pct": null,
-   "metric": null,
-   "unit": null
+   "metric": "cooldown",
+   "unit": "s"
   },
   {
    "patch": "en-2026-04-01-1",
@@ -2658,11 +2670,11 @@
    "subject": "health",
    "text_en": "Max Life Overhealth increased to 8% (Up from 5%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 5.0,
+   "after": 8.0,
+   "by": 3.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "max life overhealth",
    "unit": null
   },
   {
@@ -2766,11 +2778,11 @@
    "subject": null,
    "text_en": "Ability Power increased to 10% (Up from 5%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 5.0,
+   "after": 10.0,
+   "by": 5.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "ability power",
    "unit": null
   },
   {
@@ -2784,11 +2796,11 @@
    "subject": "health",
    "text_en": "Steel Trap Health increased to 100% (Up from 50%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 50.0,
+   "after": 100.0,
+   "by": 50.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "steel trap health",
    "unit": null
   },
   {
@@ -3137,7 +3149,13 @@
    "lines_en": [],
    "lines_cn": [
     "“震荡地雷”准备时间从0.5秒缩短至0.25秒。"
-   ]
+   ],
+   "before": 0.5,
+   "after": 0.25,
+   "by": -0.25,
+   "by_pct": null,
+   "metric": "准备时间",
+   "unit": "s"
   },
   {
    "patch": "en-2025-07-22-1",
@@ -3171,7 +3189,13 @@
    "lines_en": [
     "Concussion Mine arming time reduced from 0.5 to 0.25 seconds."
    ],
-   "lines_cn": []
+   "lines_cn": [],
+   "before": 0.5,
+   "after": 0.25,
+   "by": -0.25,
+   "by_pct": null,
+   "metric": "concussion mine arming time",
+   "unit": null
   },
   {
    "patch": "cn-2025-07-09-1",
@@ -3562,11 +3586,11 @@
    "subject": null,
    "text_en": "Ability Power increased to 15% (up from 10%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 10.0,
+   "after": 15.0,
+   "by": 5.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "ability power",
    "unit": null
   },
   {
@@ -3580,11 +3604,11 @@
    "subject": null,
    "text_en": "Ability Lifesteal increased to 15% (up from 10%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 10.0,
+   "after": 15.0,
+   "by": 5.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "ability lifesteal",
    "unit": null
   },
   {
@@ -7455,6 +7479,16 @@
     "value": 120.0
    }
   ],
+  "perk:bomb-voyage:攻击速度加成": [
+   {
+    "date": "2026-04-15",
+    "value": 25.0
+   },
+   {
+    "date": "2026-06-17",
+    "value": 35.0
+   }
+  ],
   "attr:health:overhealth": [
    {
     "date": "2026-06-17",
@@ -7467,10 +7501,46 @@
     "value": 75.0
    }
   ],
+  "attr:health:concussion mine health": [
+   {
+    "date": "2026-06-16",
+    "value": 75.0
+   }
+  ],
+  "attr:health:max life overhealth scaling": [
+   {
+    "date": "2026-04-14",
+    "value": 6.0
+   }
+  ],
   "steel-trap:maximum number of active steel traps has been": [
    {
     "date": "2026-04-01",
     "value": 3.0
+   }
+  ],
+  "attr:health:max life overhealth": [
+   {
+    "date": "2025-11-06",
+    "value": 8.0
+   }
+  ],
+  "attr:health:steel trap health": [
+   {
+    "date": "2025-11-06",
+    "value": 100.0
+   }
+  ],
+  "perk:tick-tock:准备时间": [
+   {
+    "date": "2025-07-23",
+    "value": 0.25
+   }
+  ],
+  "perk:tick-tock:concussion mine arming time": [
+   {
+    "date": "2025-07-22",
+    "value": 0.25
    }
   ],
   "concussion-mine:cooldown": [

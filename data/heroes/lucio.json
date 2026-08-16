@@ -153,11 +153,11 @@
    "subject": null,
    "text_en": "Damage increased to 100% (Up from 75%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 75.0,
+   "after": 100.0,
+   "by": 25.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "damage",
    "unit": null
   },
   {
@@ -253,7 +253,13 @@
    "lines_en": [],
    "lines_cn": [
     "被替换为“低音铺垫”：按住辅助攻击模式会蓄力一次强化“音波”。强化“音波”造成的伤害最多提高50%，击退效果最多提高25%。“音波”的冷却时间缩短1秒。"
-   ]
+   ],
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 50.0,
+   "metric": "造成的伤害最多",
+   "unit": null
   },
   {
    "patch": "cn-2026-07-01-1",
@@ -1593,11 +1599,11 @@
    "subject": null,
    "text_en": "Healing reduced to 65% (Down from 75%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 75.0,
+   "after": 65.0,
+   "by": -10.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "healing",
    "unit": null
   },
   {
@@ -1899,11 +1905,11 @@
    "subject": null,
    "text_en": "Weapon Power reduced to 10% (Down from 15%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 15.0,
+   "after": 10.0,
+   "by": -5.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "weapon power",
    "unit": null
   },
   {
@@ -1971,11 +1977,11 @@
    "subject": null,
    "text_en": "Ability Power reduced to 10% (Down from 15%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 15.0,
+   "after": 10.0,
+   "by": -5.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "ability power",
    "unit": null
   },
   {
@@ -2043,11 +2049,11 @@
    "subject": null,
    "text_en": "Ability Power reduced to 10% (Down from 15%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 15.0,
+   "after": 10.0,
+   "by": -5.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "ability power",
    "unit": null
   },
   {
@@ -2079,12 +2085,12 @@
    "subject": null,
    "text_en": "Duration increased to 33% (Up from 25%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 25.0,
+   "after": 33.0,
+   "by": 8.0,
    "by_pct": null,
-   "metric": null,
-   "unit": null
+   "metric": "duration",
+   "unit": "s"
   },
   {
    "patch": "en-2026-06-16-1",
@@ -2151,12 +2157,12 @@
    "subject": null,
    "text_en": "Cooldown Reduction increased to 10% (Up from 5%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 5.0,
+   "after": 10.0,
+   "by": 5.0,
    "by_pct": null,
-   "metric": null,
-   "unit": null
+   "metric": "cooldown",
+   "unit": "s"
   },
   {
    "patch": "en-2026-06-16-1",
@@ -3206,11 +3212,11 @@
    "subject": "health",
    "text_en": "Max Life Overhealth every 1s increased to 4% (up from 3%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 3.0,
+   "after": 4.0,
+   "by": 1.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "max life overhealth every 1s",
    "unit": null
   },
   {
@@ -3444,7 +3450,13 @@
    "lines_cn": [
     "新次级威能。",
     "“滑墙”会强化下一次“音波”，使其击退效果提高25%，伤害提高50%。"
-   ]
+   ],
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 25.0,
+   "metric": "使其击退效果",
+   "unit": null
   },
   {
    "patch": "cn-2025-08-27-1",
@@ -4497,11 +4509,11 @@
    "subject": null,
    "text_en": "Amp It Up duration reduced to 15% (down from 20%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 20.0,
+   "after": 15.0,
+   "by": -5.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "amp it up duration",
    "unit": null
   },
   {
@@ -4533,11 +4545,11 @@
    "subject": null,
    "text_en": "Increased Projectile Size increased to 80% (up from 20%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 20.0,
+   "after": 80.0,
+   "by": 60.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "increased projectile size",
    "unit": null
   },
   {
@@ -5561,6 +5573,12 @@
   "attr:health:最大总生命值每秒提供的过量生命值": [
    {
     "date": "2025-10-15",
+    "value": 4.0
+   }
+  ],
+  "attr:health:max life overhealth every 1s": [
+   {
+    "date": "2025-10-14",
     "value": 4.0
    }
   ],

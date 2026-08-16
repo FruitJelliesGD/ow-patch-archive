@@ -41,7 +41,13 @@
    "lines_en": [],
    "lines_cn": [
     "灵魂之球的收集半径从5米延长至8米。"
-   ]
+   ],
+   "before": 5.0,
+   "after": 8.0,
+   "by": 3.0,
+   "by_pct": null,
+   "metric": "灵魂之球的收集半径",
+   "unit": "m"
   },
   {
    "patch": "cn-2026-07-15-1",
@@ -147,7 +153,13 @@
    "lines_en": [
     "Pickup radius of Soul Globes increased from 5 to 8 meters."
    ],
-   "lines_cn": []
+   "lines_cn": [],
+   "before": 5.0,
+   "after": 8.0,
+   "by": 3.0,
+   "by_pct": null,
+   "metric": "pickup radius of soul globes",
+   "unit": null
   },
   {
    "patch": "en-2026-07-14-1",
@@ -175,11 +187,11 @@
    "subject": null,
    "text_en": "Attack Speed per stack increased to 5% (Up from 4%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 4.0,
+   "after": 5.0,
+   "by": 1.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "attack speed per stack",
    "unit": null
   },
   {
@@ -211,11 +223,11 @@
    "subject": null,
    "text_en": "Wraith Form Duration reduced to 33% (Down from 50%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 50.0,
+   "after": 33.0,
+   "by": -17.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "wraith form duration",
    "unit": null
   },
   {
@@ -437,11 +449,11 @@
    "subject": null,
    "text_en": "Slow and Attack Speed Slow reduced to 20% (Down from 30%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 30.0,
+   "after": 20.0,
+   "by": -10.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "slow and attack speed slow",
    "unit": null
   },
   {
@@ -459,7 +471,13 @@
    "lines_en": [],
    "lines_cn": [
     "移动速度加成从40%降低至30%。"
-   ]
+   ],
+   "before": 40.0,
+   "after": 30.0,
+   "by": -10.0,
+   "by_pct": null,
+   "metric": "move_speed",
+   "unit": "pct"
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -1190,11 +1208,11 @@
    "subject": null,
    "text_en": "Chance increased to 20% (Up from 10%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 10.0,
+   "after": 20.0,
+   "by": 10.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "chance",
    "unit": null
   },
   {
@@ -1208,11 +1226,11 @@
    "subject": null,
    "text_en": "Life Restoration reduced to 15% (Down from 25%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 25.0,
+   "after": 15.0,
+   "by": -10.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "life restoration",
    "unit": null
   },
   {
@@ -1226,11 +1244,11 @@
    "subject": null,
    "text_en": "Ammo Restoration reduced to 15% (Down from 25%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 25.0,
+   "after": 15.0,
+   "by": -10.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "ammo",
    "unit": null
   },
   {
@@ -1244,12 +1262,12 @@
    "subject": null,
    "text_en": "Move Speed reduced to 15% (Down from 25%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 25.0,
+   "after": 15.0,
+   "by": -10.0,
    "by_pct": null,
-   "metric": null,
-   "unit": null
+   "metric": "move_speed",
+   "unit": "m/s"
   },
   {
    "patch": "en-2026-06-16-1",
@@ -1514,11 +1532,11 @@
    "subject": null,
    "text_en": "Ability Power increased to 15% (Up from 10%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 10.0,
+   "after": 15.0,
+   "by": 5.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "ability power",
    "unit": null
   },
   {
@@ -2471,7 +2489,13 @@
    "lines_cn": [
     "新次级威能。",
     "“暗影步”的施放速度和冷却速度加快25%，但射程缩小25%。"
-   ]
+   ],
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 25.0,
+   "metric": "但射程",
+   "unit": null
   },
   {
    "patch": "en-2025-08-26-1",
@@ -2506,7 +2530,13 @@
     "New Minor Perk.",
     "Shadow Step's cast time and cooldown are 25% faster, but the range is reduced by 25%."
    ],
-   "lines_cn": []
+   "lines_cn": [],
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 25.0,
+   "metric": "but the range is",
+   "unit": null
   },
   {
    "patch": "cn-2025-07-23-1",
@@ -3627,7 +3657,13 @@
    "lines_en": [],
    "lines_cn": [
     "射击间隔从0.7秒缩短至0.5秒。"
-   ]
+   ],
+   "before": 0.7,
+   "after": 0.5,
+   "by": -0.2,
+   "by_pct": null,
+   "metric": "射击间隔",
+   "unit": "s"
   },
   {
    "patch": "en-2025-05-16-1",
@@ -3644,7 +3680,13 @@
    "lines_en": [
     "Recovery reduced from 0.7 to 0.5 seconds."
    ],
-   "lines_cn": []
+   "lines_cn": [],
+   "before": 0.7,
+   "after": 0.5,
+   "by": -0.2,
+   "by_pct": null,
+   "metric": "recovery",
+   "unit": "s"
   },
   {
    "patch": "cn-2025-05-16-1",
@@ -4688,6 +4730,24 @@
     "value": 30.0
    }
   ],
+  "perk:soul-reaving:灵魂之球的收集半径": [
+   {
+    "date": "2026-07-15",
+    "value": 8.0
+   }
+  ],
+  "perk:soul-reaving:pickup radius of soul globes": [
+   {
+    "date": "2026-07-14",
+    "value": 8.0
+   }
+  ],
+  "perk:ghosted:move_speed": [
+   {
+    "date": "2026-06-17",
+    "value": 30.0
+   }
+  ],
   "attr:health:health": [
    {
     "date": "2024-02-13",
@@ -4734,6 +4794,18 @@
    {
     "date": "2025-06-25",
     "value": 75.0
+   }
+  ],
+  "perk:hero-4dae64a4:射击间隔": [
+   {
+    "date": "2025-05-21",
+    "value": 0.5
+   }
+  ],
+  "perk:dire-triggers:recovery": [
+   {
+    "date": "2025-05-16",
+    "value": 0.5
    }
   ],
   "dire-triggers:recovery": [

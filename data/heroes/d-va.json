@@ -1057,11 +1057,11 @@
    "subject": null,
    "text_en": "Scaling reduced to 15% (Down from 25%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 25.0,
+   "after": 15.0,
+   "by": -10.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "scaling",
    "unit": null
   },
   {
@@ -1719,7 +1719,13 @@
    "lines_en": [],
    "lines_cn": [
     "生命值到护盾的转化量从150点缩小至100点。"
-   ]
+   ],
+   "before": 150.0,
+   "after": 100.0,
+   "by": -50.0,
+   "by_pct": null,
+   "metric": "health",
+   "unit": "hp"
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -1732,12 +1738,12 @@
    "subject": "health",
    "text_en": null,
    "text_cn": "生命值到护盾的转化量从150点缩小至100点。",
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 150.0,
+   "after": 100.0,
+   "by": -50.0,
    "by_pct": null,
-   "metric": null,
-   "unit": null
+   "metric": "health",
+   "unit": "hp"
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -2434,11 +2440,11 @@
    "subject": null,
    "text_en": "Bonus Explosion Damage increased to 375% (Up from 325%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 325.0,
+   "after": 375.0,
+   "by": 50.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "bonus explosion damage",
    "unit": null
   },
   {
@@ -2848,11 +2854,11 @@
    "subject": null,
    "text_en": "Ability Power reduced to 10% (Down from 15%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 15.0,
+   "after": 10.0,
+   "by": -5.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "ability power",
    "unit": null
   },
   {
@@ -3410,7 +3416,13 @@
    "lines_cn": [
     "新主要威能。",
     "按下装填键可使“聚变机炮”的散布降低75%，持续3秒。"
-   ]
+   ],
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 75.0,
+   "metric": "的散布",
+   "unit": null
   },
   {
    "patch": "cn-2025-08-27-1",
@@ -3631,7 +3643,13 @@
     "爆炸伤害从14提高至22。",
     "爆炸半径从2.75米扩大至3米。",
     "射弹重力增加。"
-   ]
+   ],
+   "before": 7.0,
+   "after": 5.0,
+   "by": -2.0,
+   "by_pct": null,
+   "metric": "命中伤害",
+   "unit": null
   },
   {
    "patch": "cn-2025-07-23-1",
@@ -3808,7 +3826,13 @@
     "Explosion radius increased from 2.75 to 3 meters.",
     "Projectile gravity increased."
    ],
-   "lines_cn": []
+   "lines_cn": [],
+   "before": 8.0,
+   "after": 7.0,
+   "by": -1.0,
+   "by_pct": null,
+   "metric": "number of rockets",
+   "unit": null
   },
   {
    "patch": "en-2025-07-22-1",
@@ -4691,11 +4715,11 @@
    "subject": null,
    "text_en": "Defense Matrix duration increased to 25% (up from 20%).",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "by": null,
+   "before": 20.0,
+   "after": 25.0,
+   "by": 5.0,
    "by_pct": null,
-   "metric": null,
+   "metric": "defense matrix duration",
    "unit": null
   },
   {
@@ -5861,8 +5885,8 @@
    "before": null,
    "after": null,
    "by": null,
-   "by_pct": null,
-   "metric": null,
+   "by_pct": 50.0,
+   "metric": "机甲体型",
    "unit": null
   },
   {
@@ -5915,8 +5939,8 @@
    "before": null,
    "after": null,
    "by": null,
-   "by_pct": null,
-   "metric": null,
+   "by_pct": 50.0,
+   "metric": "的体型",
    "unit": null
   },
   {
@@ -7017,6 +7041,30 @@
   }
  ],
  "values": {
+  "perk:express-detonation:health": [
+   {
+    "date": "2026-06-17",
+    "value": 100.0
+   }
+  ],
+  "attr:health:health": [
+   {
+    "date": "2025-05-01",
+    "value": 25.0
+   },
+   {
+    "date": "2025-06-25",
+    "value": 50.0
+   },
+   {
+    "date": "2025-11-06",
+    "value": 300.0
+   },
+   {
+    "date": "2026-06-17",
+    "value": 100.0
+   }
+  ],
   "micro-missiles:命中伤害": [
    {
     "date": "2026-05-13",
@@ -7061,18 +7109,16 @@
     "value": 250.0
    }
   ],
-  "attr:health:health": [
+  "perk:heavy-rockets:命中伤害": [
    {
-    "date": "2025-05-01",
-    "value": 25.0
-   },
+    "date": "2025-07-23",
+    "value": 5.0
+   }
+  ],
+  "perk:heavy-rockets:number of rockets": [
    {
-    "date": "2025-06-25",
-    "value": 50.0
-   },
-   {
-    "date": "2025-11-06",
-    "value": 300.0
+    "date": "2025-07-22",
+    "value": 7.0
    }
   ],
   "attr:ultimate_cost:ultimate_cost": [

@@ -2590,8 +2590,8 @@
        "before": null,
        "after": null,
        "by": null,
-       "by_pct": null,
-       "metric": null,
+       "by_pct": 50.0,
+       "metric": "的体型",
        "unit": null
       },
       {
@@ -2649,22 +2649,22 @@
          "text_cn": "花瓣平台的尺寸缩小50%。",
          "before": null,
          "after": null,
-         "metric": null,
+         "metric": "花瓣平台的尺寸",
          "by": null,
-         "by_pct": null,
+         "by_pct": 50.0,
          "unit": null,
-         "raw_metric": null
+         "raw_metric": "花瓣平台的尺寸"
         },
         {
          "text_en": null,
          "text_cn": "生命值从300点缩小至150点。",
-         "before": null,
-         "after": null,
-         "metric": null,
-         "by": null,
+         "before": 300.0,
+         "after": 150.0,
+         "metric": "health",
+         "by": -150.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "unit": "hp",
+         "raw_metric": "生命值"
         }
        ]
       },
@@ -2678,22 +2678,22 @@
          "text_cn": "生命之树的尺寸缩小50%。",
          "before": null,
          "after": null,
-         "metric": null,
+         "metric": "health",
          "by": null,
-         "by_pct": null,
+         "by_pct": 50.0,
          "unit": null,
-         "raw_metric": null
+         "raw_metric": "生命之树的尺寸"
         },
         {
          "text_en": null,
          "text_cn": "生命值从1200点缩小至600点。",
-         "before": null,
-         "after": null,
-         "metric": null,
-         "by": null,
+         "before": 1200.0,
+         "after": 600.0,
+         "metric": "health",
+         "by": -600.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "unit": "hp",
+         "raw_metric": "生命值"
         }
        ]
       }
@@ -3086,5 +3086,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:bfce8d41465ae2d857160d7592cfc0759417260d8dbde341b85ec91cc0b23e38"
+ "hash": "sha256:5451f870b60a0a75459bab62e51cd58cf30ec778a2f4d60b87b58b0cac0117d7"
 }

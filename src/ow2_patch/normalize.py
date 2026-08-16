@@ -114,6 +114,7 @@ def split_merged_perk_general(data: dict) -> int:
                         "name_en": None, "name_cn": name,
                         "status": _perk_status([body], "cn"),
                         "lines_en": [], "lines_cn": [body],
+                        "raw_text": [text],
                     })
                     moved += 1
                 else:
