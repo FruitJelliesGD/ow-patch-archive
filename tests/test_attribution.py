@@ -107,3 +107,16 @@ def test_perk_attribution_keeps_original_text_and_hash():
     assert "Head Honcho - Power" in perk["raw_text"]
     # original text bag unchanged -> hash identical (no false 'modified' on re-parse)
     assert patch_hash_from_dict(patch) == hash_before
+
+
+def test_perk_with_body_keeps_hash_neutral():
+    """'Name - Power body' lines split into lines+raw_text must keep the bag stable."""
+    resolver = NameResolver(NAMES)
+    patch = make_patch("en", "Lucio", "lucio", ["Lille Fælde - Power Re-enabled."])
+    hash_before = patch_hash_from_dict(patch)
+    classify_general(patch, resolver, load_map())
+    hero = patch["sections"][0]["heroes"][0]
+    perk = hero["perks"][0]
+    assert perk["lines_en"] == ["Re-enabled."]
+    assert perk["raw_text"] == ["Lille Fælde - Power Re-enabled."]
+    assert patch_hash_from_dict(patch) == hash_before

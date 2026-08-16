@@ -38,7 +38,9 @@ def patch_canonical_texts(patch: Patch) -> list[str]:
                 texts.append(entry if isinstance(entry, str)
                              else ((entry.get("text_en") or entry.get("text_cn")) or ""))
             for perk in hero.perks:
-                texts += perk.lines_en + perk.lines_cn + perk.raw_text
+                # attribution splits a line into raw_text (full original) + lines
+                # (parsed body); hash on the full original only, never both
+                texts += perk.raw_text if perk.raw_text else perk.lines_en + perk.lines_cn
             for ability in hero.abilities:
                 for change in ability.changes:
                     texts += [change.text_en or "", change.text_cn or ""]
@@ -68,8 +70,9 @@ def _dict_canonical_texts(data: dict) -> list[str]:
                 texts.append(entry if isinstance(entry, str)
                              else ((entry.get("text_en") or entry.get("text_cn")) or ""))
             for perk in hero.get("perks", []):
-                texts += list(perk.get("lines_en") or []) + list(perk.get("lines_cn") or [])
-                texts += list(perk.get("raw_text") or [])
+                raw = list(perk.get("raw_text") or [])
+                texts += raw if raw else (list(perk.get("lines_en") or [])
+                                          + list(perk.get("lines_cn") or []))
             for ability in hero.get("abilities", []):
                 for change in ability.get("changes", []):
                     texts += [change.get("text_en") or "", change.get("text_cn") or ""]
