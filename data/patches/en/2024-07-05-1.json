@@ -88,7 +88,11 @@
          "text_cn": null,
          "before": 3.0,
          "after": 3.5,
-         "metric": "maximum duration"
+         "metric": "maximum duration",
+         "by": 0.5,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "maximum duration"
         }
        ]
       },
@@ -102,7 +106,11 @@
          "text_cn": null,
          "before": 4.0,
          "after": 5.5,
-         "metric": "explosion damage"
+         "metric": "explosion damage",
+         "by": 1.5,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "explosion damage"
         }
        ]
       }
@@ -127,14 +135,22 @@
          "text_cn": null,
          "before": 35.0,
          "after": 40.0,
-         "metric": "overhealth gained per target"
+         "metric": "overhealth",
+         "by": 5.0,
+         "by_pct": null,
+         "unit": "hp",
+         "raw_metric": "overhealth gained per target"
         },
         {
          "text_en": "Delay before Overhealth begins to drain increased from 1 to 3 seconds.",
          "text_cn": null,
          "before": 1.0,
          "after": 3.0,
-         "metric": "delay before overhealth begins to drain"
+         "metric": "delay before overhealth begins to drain",
+         "by": 2.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "delay before overhealth begins to drain"
         }
        ]
       }
@@ -159,7 +175,11 @@
          "text_cn": null,
          "before": 150.0,
          "after": 175.0,
-         "metric": "overhealth"
+         "metric": "overhealth",
+         "by": 25.0,
+         "by_pct": null,
+         "unit": "hp",
+         "raw_metric": "overhealth"
         }
        ]
       },
@@ -173,7 +193,11 @@
          "text_cn": null,
          "before": 2.0,
          "after": 2.5,
-         "metric": "healing multiplier"
+         "metric": "wound damage self-healing multiplier",
+         "by": 0.5,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "wound damage self-healing multiplier"
         }
        ]
       }
@@ -198,14 +222,22 @@
          "text_cn": null,
          "before": 25.0,
          "after": 30.0,
-         "metric": "knockback damage"
+         "metric": "knockback",
+         "by": 5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "knockback damage"
         },
         {
          "text_en": "Stomp damage increased from 60 to 75",
          "text_cn": null,
          "before": 60.0,
          "after": 75.0,
-         "metric": "stomp damage"
+         "metric": "stomp damage",
+         "by": 15.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "stomp damage"
         }
        ]
       },
@@ -219,28 +251,44 @@
          "text_cn": null,
          "before": 5.0,
          "after": 3.0,
-         "metric": "duration"
+         "metric": "duration",
+         "by": -2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "duration"
         },
         {
          "text_en": "Lifesteal increased from 60 to 100%.",
          "text_cn": null,
          "before": 60.0,
          "after": 100.0,
-         "metric": "lifesteal"
+         "metric": "lifesteal",
+         "by": 40.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "lifesteal"
         },
         {
          "text_en": "Damage reduction increased from 30 to 40%.",
          "text_cn": null,
          "before": 30.0,
          "after": 40.0,
-         "metric": "damage reduction"
+         "metric": "damage",
+         "by": 10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage reduction"
         },
         {
          "text_en": "Allies now receive only half of the lifesteal and damage reduction effect value.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -265,7 +313,11 @@
          "text_cn": null,
          "before": 3.5,
          "after": 4.0,
-         "metric": "duration"
+         "metric": "duration",
+         "by": 0.5,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "duration"
         }
        ]
       }
@@ -290,7 +342,11 @@
          "text_cn": null,
          "before": 225.0,
          "after": 300.0,
-         "metric": "bonus armor"
+         "metric": "bonus armor",
+         "by": 75.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "bonus armor"
         }
        ]
       },
@@ -304,7 +360,11 @@
          "text_cn": null,
          "before": 60.0,
          "after": 65.0,
-         "metric": "pummel damage"
+         "metric": "pummel damage",
+         "by": 5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "pummel damage"
         }
        ]
       }
@@ -329,14 +389,22 @@
          "text_cn": null,
          "before": 1400.0,
          "after": 1600.0,
-         "metric": "maximum health"
+         "metric": "maximum health",
+         "by": 200.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "maximum health"
         },
         {
          "text_en": "Barrier regeneration rate increased from 140 to 160 health per second.",
          "text_cn": null,
          "before": 140.0,
          "after": 160.0,
-         "metric": "barrier regeneration rate"
+         "metric": "barrier",
+         "by": 20.0,
+         "by_pct": null,
+         "unit": "hp",
+         "raw_metric": "barrier regeneration rate"
         }
        ]
       },
@@ -350,7 +418,11 @@
          "text_cn": null,
          "before": 275.0,
          "after": 300.0,
-         "metric": "wall impact damage"
+         "metric": "wall impact damage",
+         "by": 25.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "wall impact damage"
         }
        ]
       }
@@ -375,21 +447,33 @@
          "text_cn": null,
          "before": 30.0,
          "after": 45.0,
-         "metric": "area damage after activating"
+         "metric": "area damage after activating",
+         "by": 15.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "area damage after activating"
         },
         {
          "text_en": "Recovery time reduced from 0.55 to 0.4 seconds.",
          "text_cn": null,
          "before": 0.55,
          "after": 0.4,
-         "metric": "recovery time"
+         "metric": "recovery",
+         "by": -0.15,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "recovery time"
         },
         {
          "text_en": "Cooldown now begins immediately when used instead of after a short delay.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -414,7 +498,11 @@
          "text_cn": null,
          "before": 40.0,
          "after": 80.0,
-         "metric": "impact damage"
+         "metric": "impact damage",
+         "by": 40.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "impact damage"
         }
        ]
       }
@@ -437,9 +525,13 @@
         {
          "text_en": "Secondary fire charge time reduced from 1 second to 0.85 seconds.",
          "text_cn": null,
-         "before": null,
-         "after": null,
-         "metric": null
+         "before": 1.0,
+         "after": 0.85,
+         "metric": "secondary fire charge time",
+         "by": -0.15,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "secondary fire charge time"
         }
        ]
       },
@@ -453,7 +545,11 @@
          "text_cn": null,
          "before": 500.0,
          "after": 700.0,
-         "metric": "maximum health gained"
+         "metric": "maximum health gained",
+         "by": 200.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "maximum health gained"
         }
        ]
       }
@@ -478,7 +574,11 @@
          "text_cn": null,
          "before": 2.0,
          "after": 1.6,
-         "metric": "automatic reload time while transformed"
+         "metric": "automatic reload time while transformed",
+         "by": -0.4,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "automatic reload time while transformed"
         }
        ]
       },
@@ -492,7 +592,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "allied overhealth transfer ratio",
+         "by": null,
+         "by_pct": 50.0,
+         "unit": null,
+         "raw_metric": "allied overhealth transfer ratio"
         }
        ]
       }
@@ -517,14 +621,22 @@
          "text_cn": null,
          "before": 200.0,
          "after": 225.0,
-         "metric": "health"
+         "metric": "health",
+         "by": 25.0,
+         "by_pct": null,
+         "unit": "hp",
+         "raw_metric": "health"
         },
         {
          "text_en": "Duration increased from 2 to 2.5 seconds.",
          "text_cn": null,
          "before": 2.0,
          "after": 2.5,
-         "metric": "duration"
+         "metric": "duration",
+         "by": 0.5,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "duration"
         }
        ]
       },
@@ -538,14 +650,22 @@
          "text_cn": null,
          "before": 200.0,
          "after": 225.0,
-         "metric": "health"
+         "metric": "health",
+         "by": 25.0,
+         "by_pct": null,
+         "unit": "hp",
+         "raw_metric": "health"
         },
         {
          "text_en": "Duration increased from 2 to 2.5 seconds.",
          "text_cn": null,
          "before": 2.0,
          "after": 2.5,
-         "metric": "duration"
+         "metric": "duration",
+         "by": 0.5,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "duration"
         }
        ]
       }
@@ -579,7 +699,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -604,7 +728,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -629,21 +757,33 @@
          "text_cn": null,
          "before": 30.0,
          "after": 0.0,
-         "metric": "explosion damage"
+         "metric": "explosion damage",
+         "by": -30.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "explosion damage"
         },
         {
          "text_en": "Explosion knockback radius increased from 6 to 8 meters.",
          "text_cn": null,
          "before": 6.0,
          "after": 8.0,
-         "metric": "explosion knockback radius"
+         "metric": "explosion knockback radius",
+         "by": 2.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "explosion knockback radius"
         },
         {
          "text_en": "Knockback increased by 11%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "knockback",
+         "by": null,
+         "by_pct": 11.0,
+         "unit": null,
+         "raw_metric": "knockback"
         }
        ]
       }
@@ -677,7 +817,11 @@
          "text_cn": null,
          "before": 3.5,
          "after": 3.0,
-         "metric": "duration of effect on tank heroes"
+         "metric": "duration",
+         "by": -0.5,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "duration of effect on tank heroes"
         }
        ]
       }
@@ -702,7 +846,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -727,7 +875,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "ultimate_cost",
+         "by": null,
+         "by_pct": 10.0,
+         "unit": null,
+         "raw_metric": "ultimate cost"
         }
        ]
       }
@@ -757,5 +909,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:8317f9a1f34a1443ba6dd5ffcdd098a495bd0ac20bfa5b4fa9edd6c6c35e8fba"
+ "hash": "sha256:4d315e7747c2cb6b081bd108535a8ce2f511d6ec4dc0a9157ab96e5d0327ffcb"
 }

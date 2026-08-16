@@ -67,7 +67,18 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Ramattra has been added to the line-up"
+      {
+       "text_en": "Ramattra has been added to the line-up",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -81,14 +92,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Secondary: Create a barrier at the targeted location",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -102,7 +121,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -116,14 +139,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Secondary: Significantly reduces damage taken from the front and reduces movement speed",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -137,7 +168,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -151,7 +186,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -176,56 +215,88 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Wall slam damage range (minimum-maximum) reduced from 20-40 to 10-30 damage",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Empowered Rocket Punch wall slam stun duration range reduced from 0.5-1 to 0.25-0.75 seconds",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Non-Empowered Rocket Punch now stuns for the minimum 0.25 second duration on wall slam",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Empowered Rocket Punch knockback radius reduced from 4 to 3 meters",
          "text_cn": null,
          "before": 4.0,
          "after": 3.0,
-         "metric": "empowered rocket punch knockback radius"
+         "metric": "empowered rocket punch knockback radius",
+         "by": -1.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "empowered rocket punch knockback radius"
         },
         {
          "text_en": "Minimum time before cancel option becomes available reduced from 0.25 to 0.12 seconds",
          "text_cn": null,
          "before": 0.25,
          "after": 0.12,
-         "metric": "minimum time before cancel option becomes available"
+         "metric": "minimum time before cancel option becomes available",
+         "by": -0.13,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "minimum time before cancel option becomes available"
         },
         {
          "text_en": "Cooldown reduced from 4 to 3 seconds",
          "text_cn": null,
          "before": 4.0,
          "after": 3.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": -1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         },
         {
          "text_en": "This has been in since his rework but was not mentioned",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -239,21 +310,33 @@
          "text_cn": null,
          "before": 8.0,
          "after": 7.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": -1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         },
         {
          "text_en": "Duration increased from 2 to 2.5 seconds",
          "text_cn": null,
          "before": 2.0,
          "after": 2.5,
-         "metric": "duration"
+         "metric": "duration",
+         "by": 0.5,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "duration"
         },
         {
          "text_en": "Minimum damage mitigated required to empower Rocket Punch reduced from 90 to 80 damage",
          "text_cn": null,
          "before": 90.0,
          "after": 80.0,
-         "metric": "minimum damage mitigated required to empower rocket punch"
+         "metric": "minimum damage mitigated required to empower rocket punch",
+         "by": -10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "minimum damage mitigated required to empower rocket punch"
         }
        ]
       },
@@ -267,14 +350,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Enemy slow duration increased from 2 to 3 seconds",
          "text_cn": null,
          "before": 2.0,
          "after": 3.0,
-         "metric": "enemy slow duration"
+         "metric": "enemy slow duration",
+         "by": 1.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "enemy slow duration"
         }
        ]
       },
@@ -288,14 +379,22 @@
          "text_cn": null,
          "before": 150.0,
          "after": 200.0,
-         "metric": "maximum temporary health"
+         "metric": "maximum temporary health",
+         "by": 50.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "maximum temporary health"
         },
         {
          "text_en": "Temporary health gained per target hit with abilities increased from 30 to 40 health",
          "text_cn": null,
          "before": 30.0,
          "after": 40.0,
-         "metric": "temporary health gained per target hit with abilities"
+         "metric": "temporary health gained per target hit with abilities",
+         "by": 10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "temporary health gained per target hit with abilities"
         }
        ]
       }
@@ -308,7 +407,18 @@
      "role": "tank",
      "dev_note": "Developer comments: Commanding Shout is Junker Queen's primary tanking ability and utility, but the additional survivability it granted her team proved to be too powerful and needed to be tuned back significantly in a previous patch. We're looking to shift more of that survivability into Junker Queen herself by increasing the amount her passive ability heals through dealing damage with wounds.",
      "general": [
-      "Torso and head hit volume size increased 12%"
+      {
+       "text_en": "Torso and head hit volume size increased 12%",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 12.0,
+       "metric": "torso and head hit volume size",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -322,14 +432,22 @@
          "text_cn": null,
          "before": 5.0,
          "after": 4.5,
-         "metric": "wound duration"
+         "metric": "wound duration",
+         "by": -0.5,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "wound duration"
         },
         {
          "text_en": "Ultimate cost reduced by 10%",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "ultimate_cost",
+         "by": null,
+         "by_pct": 10.0,
+         "unit": null,
+         "raw_metric": "ultimate cost"
         }
        ]
       },
@@ -343,7 +461,11 @@
          "text_cn": null,
          "before": 15.0,
          "after": 14.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": -1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       },
@@ -357,7 +479,11 @@
          "text_cn": null,
          "before": 1.0,
          "after": 1.25,
-         "metric": "adrenaline passive healing multiplier"
+         "metric": "adrenaline passive healing multiplier",
+         "by": 0.25,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "adrenaline passive healing multiplier"
         }
        ]
       }
@@ -391,28 +517,44 @@
          "text_cn": null,
          "before": 1.0,
          "after": 0.6,
-         "metric": "delay before projectile drops"
+         "metric": "delay before projectile drops",
+         "by": -0.4,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "delay before projectile drops"
         },
         {
          "text_en": "Explosion damage reduced from 300 to 250",
          "text_cn": null,
          "before": 300.0,
          "after": 250.0,
-         "metric": "explosion damage"
+         "metric": "explosion damage",
+         "by": -50.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "explosion damage"
         },
         {
          "text_en": "No longer deals explosion damage to self",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Minimum delay between placing shots reduced by 20%",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "minimum delay between placing shots",
+         "by": null,
+         "by_pct": 20.0,
+         "unit": null,
+         "raw_metric": "minimum delay between placing shots"
         }
        ]
       },
@@ -426,7 +568,11 @@
          "text_cn": null,
          "before": 12.0,
          "after": 10.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": -2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       }
@@ -451,42 +597,66 @@
          "text_cn": null,
          "before": 8.0,
          "after": 5.0,
-         "metric": "energy delay before draining"
+         "metric": "energy delay before draining",
+         "by": -3.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "energy delay before draining"
         },
         {
          "text_en": "Secondary fire damage falloff starting range reduced from 70 to 40 meters",
          "text_cn": null,
          "before": 70.0,
          "after": 40.0,
-         "metric": "secondary fire damage falloff starting range"
+         "metric": "secondary fire damage falloff starting range",
+         "by": -30.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "secondary fire damage falloff starting range"
         },
         {
          "text_en": "Secondary fire critical damage multiplier reduced from 2 to 1.5",
          "text_cn": null,
          "before": 2.0,
          "after": 1.5,
-         "metric": "secondary fire critical damage multiplier"
+         "metric": "secondary fire critical damage multiplier",
+         "by": -0.5,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "secondary fire critical damage multiplier"
         },
         {
          "text_en": "Secondary fire damage now scales linearly with energy from 30 to 130 damage (1 energy converts to 1 damage added)",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Primary fire damage per projectile increased from 9 to 10",
          "text_cn": null,
          "before": 9.0,
          "after": 10.0,
-         "metric": "primary fire damage per projectile"
+         "metric": "primary fire damage per projectile",
+         "by": 1.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "primary fire damage per projectile"
         },
         {
          "text_en": "Overclock energy charge rate increased by 20%",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "overclock energy charge rate",
+         "by": null,
+         "by_pct": 20.0,
+         "unit": null,
+         "raw_metric": "overclock energy charge rate"
         }
        ]
       }
@@ -511,21 +681,33 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "beam charge rate and decay rate",
+         "by": null,
+         "by_pct": 20.0,
+         "unit": null,
+         "raw_metric": "beam charge rate and decay rate"
         },
         {
          "text_en": "Primary fire ammo consumption rate increased from 7 to 10 per second",
          "text_cn": null,
          "before": 7.0,
          "after": 10.0,
-         "metric": "primary fire ammo consumption rate"
+         "metric": "primary fire ammo consumption rate",
+         "by": 3.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "primary fire ammo consumption rate"
         },
         {
          "text_en": "Primary fire gains ammo from damaging barriers again",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -550,7 +732,11 @@
          "text_cn": null,
          "before": 5.0,
          "after": 6.0,
-         "metric": "damage"
+         "metric": "damage",
+         "by": 1.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage"
         }
        ]
       }
@@ -584,7 +770,11 @@
          "text_cn": null,
          "before": 15.0,
          "after": 14.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": -1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       }
@@ -597,8 +787,30 @@
      "role": "support",
      "dev_note": "Developer comments: The hit volume adjustment is to help address her arms sometimes blocking headshots in some of her animations. Kiriko feels balanced overall, but her ultimate could feel too frenetic at times. We're reducing both the movement speed and cooldown rate boost it grants so that it's easier to aim during its effect for both allies and enemies, as well as there being fewer abilities being thrown about. The rest of the changes are primarily for quality-of-life improvements to make the abilities feel better to use.",
      "general": [
-      "Arm hit volumes width reduced 15%",
-      "Added an auto-wall climb hero option"
+      {
+       "text_en": "Arm hit volumes width reduced 15%",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 15.0,
+       "metric": "arm hit volumes width",
+       "unit": null
+      },
+      {
+       "text_en": "Added an auto-wall climb hero option",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -612,21 +824,33 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "ultimate_cost",
+         "by": null,
+         "by_pct": 10.0,
+         "unit": null,
+         "raw_metric": "ultimate cost"
         },
         {
          "text_en": "Movement speed bonus reduced from 50 to 30%",
          "text_cn": null,
          "before": 50.0,
          "after": 30.0,
-         "metric": "movement speed bonus"
+         "metric": "move_speed",
+         "by": -20.0,
+         "by_pct": null,
+         "unit": "m/s",
+         "raw_metric": "movement speed bonus"
         },
         {
          "text_en": "Cooldown rate reduced from 3 to 2 times faster",
          "text_cn": null,
          "before": 3.0,
          "after": 2.0,
-         "metric": "cooldown rate"
+         "metric": "cooldown",
+         "by": -1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown rate"
         }
        ]
       },
@@ -640,7 +864,11 @@
          "text_cn": null,
          "before": 0.15,
          "after": 0.1,
-         "metric": "cast time"
+         "metric": "cast_time",
+         "by": -0.05,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cast time"
         }
        ]
       },
@@ -654,7 +882,11 @@
          "text_cn": null,
          "before": 12.0,
          "after": 15.0,
-         "metric": "ammo"
+         "metric": "ammo",
+         "by": 3.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "ammo"
         }
        ]
       },
@@ -668,7 +900,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -681,7 +917,18 @@
      "role": "support",
      "dev_note": "Developer comments: This is a change that will enable Mercy to better defend herself or even go on the offensive at times. In 5v5 these situations occur much more often.",
      "general": [
-      "Weapon swap time reduced from 0.5 to 0.35 seconds"
+      {
+       "text_en": "Weapon swap time reduced from 0.5 to 0.35 seconds",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 0.5,
+       "after": 0.35,
+       "by": -0.15,
+       "by_pct": null,
+       "metric": "weapon swap time",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -695,7 +942,11 @@
          "text_cn": null,
          "before": 20.0,
          "after": 25.0,
-         "metric": "ammo"
+         "metric": "ammo",
+         "by": 5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "ammo"
         }
        ]
       }
@@ -759,5 +1010,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:9576c5db65b2bb6293042322e749b8d822fbade5fc58c5024875eeb241ef23e9"
+ "hash": "sha256:7e1be261de1d671f3f1cf89f550cd202c779a8e49e45869bc00e87064caae3d4"
 }

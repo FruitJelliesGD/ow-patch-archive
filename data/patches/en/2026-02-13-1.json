@@ -19,8 +19,30 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Barrier Array",
-      "Barrier Panel Health reduced from 250 to 225"
+      {
+       "text_en": "Barrier Array",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Barrier Panel Health reduced from 250 to 225",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 250.0,
+       "after": 225.0,
+       "by": -25.0,
+       "by_pct": null,
+       "metric": "barrier",
+       "unit": "hp"
+      }
      ],
      "perks": [],
      "abilities": []
@@ -32,14 +54,102 @@
      "role": null,
      "dev_note": null,
      "general": [
-      "Zhuque Fans",
-      "Impact damage increased from 20 to 22.",
-      "Fan the Flames",
-      "Impact damage now uses beam damage against armor mitigation (Only reduced by 30% when used on armor).",
-      "Inferno Rush",
-      "Can now be canceled with quick melee.",
-      "Ignition - Passive",
-      "Burning build up linger time increased from 3 to 4 seconds."
+      {
+       "text_en": "Zhuque Fans",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Impact damage increased from 20 to 22.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 20.0,
+       "after": 22.0,
+       "by": 2.0,
+       "by_pct": null,
+       "metric": "impact damage",
+       "unit": null
+      },
+      {
+       "text_en": "Fan the Flames",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Impact damage now uses beam damage against armor mitigation (Only reduced by 30% when used on armor).",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 30.0,
+       "metric": "only",
+       "unit": null
+      },
+      {
+       "text_en": "Inferno Rush",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Can now be canceled with quick melee.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Ignition - Passive",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Burning build up linger time increased from 3 to 4 seconds.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 3.0,
+       "after": 4.0,
+       "by": 1.0,
+       "by_pct": null,
+       "metric": "burning build up linger time",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -51,10 +161,54 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Synthetic Burst Rifle – Take Aim",
-      "Falloff range increased from 30-45 to 35-50 meters.",
-      "Cyber Frag",
-      "Explosion damage minimum radius increased from 1.25 to 2 meters."
+      {
+       "text_en": "Synthetic Burst Rifle – Take Aim",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Falloff range increased from 30-45 to 35-50 meters.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Cyber Frag",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Explosion damage minimum radius increased from 1.25 to 2 meters.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 1.25,
+       "after": 2.0,
+       "by": 0.75,
+       "by_pct": null,
+       "metric": "explosion damage minimum radius",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -66,8 +220,30 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "Frenetic Flight",
-      "Regeneration rate reduced from 30 to 25."
+      {
+       "text_en": "Frenetic Flight",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Regeneration rate reduced from 30 to 25.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 30.0,
+       "after": 25.0,
+       "by": -5.0,
+       "by_pct": null,
+       "metric": "regeneration rate",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -79,14 +255,102 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "Spirit Glaive",
-      "Cast time reduced from 0.1 to 0.025 seconds.",
-      "Healing Kasa",
-      "Range increased from 25 to 30 meters.",
-      "Default soft targeting range increased from 8 to 10 degrees.",
-      "Ultimate",
-      "Ultimate cost increased by 7%.",
-      "Now heals for 100 instant healing on cast."
+      {
+       "text_en": "Spirit Glaive",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Cast time reduced from 0.1 to 0.025 seconds.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 0.1,
+       "after": 0.025,
+       "by": -0.075,
+       "by_pct": null,
+       "metric": "cast_time",
+       "unit": "s"
+      },
+      {
+       "text_en": "Healing Kasa",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Range increased from 25 to 30 meters.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 25.0,
+       "after": 30.0,
+       "by": 5.0,
+       "by_pct": null,
+       "metric": "range",
+       "unit": "m"
+      },
+      {
+       "text_en": "Default soft targeting range increased from 8 to 10 degrees.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 8.0,
+       "after": 10.0,
+       "by": 2.0,
+       "by_pct": null,
+       "metric": "default soft targeting range",
+       "unit": null
+      },
+      {
+       "text_en": "Ultimate",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Ultimate cost increased by 7%.",
+       "text_cn": null,
+       "subject": "ultimate_cost",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 7.0,
+       "metric": "ultimate_cost",
+       "unit": null
+      },
+      {
+       "text_en": "Now heals for 100 instant healing on cast.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -124,5 +388,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:25aaa09300ba050f8f3e7341b6cccac1f4d6b8618a96a2b625a5dd37cc9f536c"
+ "hash": "sha256:66e8557c48a6aa7bf60fcf958b3957665a82dda8cee50a5da09bc70a17b6d573"
 }

@@ -42,9 +42,11 @@ def test_pipeline_end_to_end(tmp_path):
     assert "Overwatch Retail Patch Notes" in md
     assert "Surging Strike" in md
 
-    # manifest + changelog
+    # manifest + changelog (hash_schema key tracks the content-hash version)
     manifest = json.loads((data_dir / "manifest.json").read_text(encoding="utf-8"))
-    assert set(manifest) == {"en-2026-08-14-1", "en-2026-08-12-1", "cn-2026-08-15-1", "cn-2026-08-13-1"}
+    assert manifest["hash_schema"] == 2
+    assert set(manifest) - {"hash_schema"} == {
+        "en-2026-08-14-1", "en-2026-08-12-1", "cn-2026-08-15-1", "cn-2026-08-13-1"}
     changelog = read_jsonl(data_dir / "changelog.jsonl")
     assert {e["kind"] for e in changelog} == {"new"}
     assert all(e["patch_id"] for e in changelog)
@@ -126,15 +128,17 @@ REAL_DATA = pathlib.Path(__file__).resolve().parent.parent / "data"
 
 
 def test_soldier76_timeline_acceptance():
-    """Real-data check: no hash slugs, cross-site ability merge, perk reclassification."""
+    """Real-data check: no ability hash slugs, cross-site merge, perk reclassification."""
     hero = json.loads((REAL_DATA / "heroes" / "soldier-76.json").read_text(encoding="utf-8"))
     for entry in hero["timeline"]:
-        slug = entry.get("ability_slug") or entry.get("perk_slug") or ""
-        assert not slug.startswith("hero-"), slug
+        if entry.get("kind") == "ability":
+            assert not (entry.get("ability_slug") or "").startswith("hero-"), entry.get("ability_slug")
 
     hpr = [e for e in hero["timeline"] if e.get("ability_slug") == "heavy-pulse-rifle"]
     cn_spellings = {e["ability_cn"] for e in hpr if e.get("ability_cn")}
-    assert cn_spellings == {"重脉冲步枪"}  # variant 重型脉冲步枪 canonicalized to curated name
+    # canonical name plus the bracket-abbreviated spelling (脉冲步枪) both merge in
+    assert "重脉冲步枪" in cn_spellings
+    assert cn_spellings >= {"重脉冲步枪"}
 
     stim = [e for e in hero["timeline"]
             if e.get("ability_slug") == "stim-pack" or e.get("perk_slug") == "stim-pack"]

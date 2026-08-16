@@ -47,21 +47,33 @@
          "text_cn": null,
          "before": 7.0,
          "after": 8.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": 1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         },
         {
          "text_en": "Base armor reduced from 100 to 75.",
          "text_cn": null,
          "before": 100.0,
          "after": 75.0,
-         "metric": "base armor"
+         "metric": "base armor",
+         "by": -25.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "base armor"
         },
         {
          "text_en": "Base health reduced from 275 to 250.",
          "text_cn": null,
          "before": 275.0,
          "after": 250.0,
-         "metric": "base health"
+         "metric": "base health",
+         "by": -25.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "base health"
         }
        ]
       }
@@ -86,14 +98,22 @@
          "text_cn": null,
          "before": 10.0,
          "after": 11.0,
-         "metric": "shared cooldown"
+         "metric": "shared cooldown",
+         "by": 1.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "shared cooldown"
         },
         {
          "text_en": "Duration reduced from 2.5 to 2.25 seconds.",
          "text_cn": null,
          "before": 2.5,
          "after": 2.25,
-         "metric": "duration"
+         "metric": "duration",
+         "by": -0.25,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "duration"
         }
        ]
       },
@@ -107,14 +127,22 @@
          "text_cn": null,
          "before": 10.0,
          "after": 11.0,
-         "metric": "shared cooldown"
+         "metric": "shared cooldown",
+         "by": 1.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "shared cooldown"
         },
         {
          "text_en": "Duration reduced from 2.5 to 2.25 seconds.",
          "text_cn": null,
          "before": 2.5,
          "after": 2.25,
-         "metric": "duration"
+         "metric": "duration",
+         "by": -0.25,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "duration"
         }
        ]
       }
@@ -136,7 +164,18 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Base health reduced from 250 to 225"
+      {
+       "text_en": "Base health reduced from 250 to 225",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 250.0,
+       "after": 225.0,
+       "by": -25.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -169,7 +208,11 @@
          "text_cn": null,
          "before": 12.0,
          "after": 14.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": 2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       },
@@ -183,7 +226,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "ultimate_cost",
+         "by": null,
+         "by_pct": 12.0,
+         "unit": null,
+         "raw_metric": "ultimate cost"
         }
        ]
       }
@@ -208,7 +255,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "knockback",
+         "by": null,
+         "by_pct": 10.0,
+         "unit": null,
+         "raw_metric": "knockback"
         }
        ]
       }
@@ -219,5 +270,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:b379600f6cf32c9f740ba8f24c457462769d6a856491beb76c7c28a69571769d"
+ "hash": "sha256:541d0ce9a88c9a8fe94751801d789bc1fb61f1947fba3162b72c52efd1133645"
 }

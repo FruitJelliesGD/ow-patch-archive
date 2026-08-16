@@ -51,8 +51,30 @@
      "role": "damage",
      "dev_note": "Vendetta’s win rate has continued to rise as players grow more familiar with her kit, so we’re making a small adjustment prior to midseason. This change shifts key breakpoints while preserving the intended flow of her abilities.",
      "general": [
-      "Palatine Fang",
-      "Horizontal swing damage reduced from 50 to 45."
+      {
+       "text_en": "Palatine Fang",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Horizontal swing damage reduced from 50 to 45.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 50.0,
+       "after": 45.0,
+       "by": -5.0,
+       "by_pct": null,
+       "metric": "horizontal swing damage",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -81,22 +103,159 @@
      "role": "tank",
      "dev_note": "Doomfist has been underperforming in Stadium since his release. We're increasing the consistency and power of some of his powers, as well as his currency gain, to help him be a more reliable option without increasing his power ceiling or one shot capabilities too much.",
      "general": [
-      "Currency gained from damage and healing increased by 25%.",
-      "Aftershock - Power Increased secondary shockwave damage to 60% (Up from 50%).",
-      "Increased secondary shockwave damage to 60% (Up from 50%).",
-      "Asteroid Smash - Power Now grants ultimate charge. Cooldown reduced to 12s (Down from 15s).",
-      "Now grants ultimate charge.",
-      "Cooldown reduced to 12s (Down from 15s).",
-      "Block Party - Power Block Party has been disabled at this time due to an issue",
-      "Block Party has been disabled at this time due to an issue",
-      "Jab Cross - Power Increased Melee Attack Speed after using an ability to 75% (Up from 50%).",
-      "Increased Melee Attack Speed after using an ability to 75% (Up from 50%).",
-      "Jetforce Jab - Power Increased Burn Damage on Rocket Punch to 20% (Up from 15%).",
-      "Increased Burn Damage on Rocket Punch to 20% (Up from 15%).",
-      "Slam Wham - Power Increased Seismic Slam Range per meter travelled to 6% (Up from 4%).",
-      "Increased Seismic Slam Range per meter travelled to 6% (Up from 4%)."
+      {
+       "text_en": "Currency gained from damage and healing increased by 25%.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 25.0,
+       "metric": "currency gained from damage and healing",
+       "unit": null
+      },
+      {
+       "text_en": "Increased secondary shockwave damage to 60% (Up from 50%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Now grants ultimate charge.",
+       "text_cn": null,
+       "subject": "ultimate_cost",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Cooldown reduced to 12s (Down from 15s).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Block Party has been disabled at this time due to an issue",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Increased Melee Attack Speed after using an ability to 75% (Up from 50%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Increased Burn Damage on Rocket Punch to 20% (Up from 15%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Increased Seismic Slam Range per meter travelled to 6% (Up from 4%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Aftershock",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [
+        "Aftershock - Power Increased secondary shockwave damage to 60% (Up from 50%)."
+       ],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Asteroid Smash",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [
+        "Asteroid Smash - Power Now grants ultimate charge. Cooldown reduced to 12s (Down from 15s)."
+       ],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Block Party",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [
+        "Block Party - Power Block Party has been disabled at this time due to an issue"
+       ],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Jab Cross",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [
+        "Jab Cross - Power Increased Melee Attack Speed after using an ability to 75% (Up from 50%)."
+       ],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Jetforce Jab",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [
+        "Jetforce Jab - Power Increased Burn Damage on Rocket Punch to 20% (Up from 15%)."
+       ],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Slam Wham",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [
+        "Slam Wham - Power Increased Seismic Slam Range per meter travelled to 6% (Up from 4%)."
+       ],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     },
     {
@@ -106,17 +265,114 @@
      "role": "tank",
      "dev_note": "With Sigma’s recent updates to his primary fire, he has been beyond the intended power ceiling. Zero Gravity offered too much uptime and safety, allowing Sigma to disengage or reposition with minimal risk. At the same time, some weapon items were providing strong value for their cost, accelerating his damage curve. These adjustments rein in his mobility and early scaling while rebalancing item costs to better reflect their impact. The Harness receives a small cost reduction to keep ability power builds competitive as other options are tuned down.",
      "general": [
-      "Zero Gravity - Power Decreased duration to 1.5s (Down from 4s).",
-      "Decreased duration to 1.5s (Down from 4s).",
-      "Antimatter - Epic Weapon Hero Item Increased cost to 12000 (Up from 10000). Decreased weapon power to 10% (Down from 15%).",
-      "Increased cost to 12000 (Up from 10000).",
-      "Decreased weapon power to 10% (Down from 15%).",
-      "Velocity Vector - Rare Weapon Hero Item Increased cost to 6000 (Up from 4500).",
-      "Increased cost to 6000 (Up from 4500).",
-      "The Harness - Epic Ability Hero Item Decreased cost to 10000 (Down from 11000).",
-      "Decreased cost to 10000 (Down from 11000)."
+      {
+       "text_en": "Decreased duration to 1.5s (Down from 4s).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Antimatter - Epic Weapon Hero Item Increased cost to 12000 (Up from 10000). Decreased weapon power to 10% (Down from 15%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Increased cost to 12000 (Up from 10000).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Decreased weapon power to 10% (Down from 15%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Velocity Vector - Rare Weapon Hero Item Increased cost to 6000 (Up from 4500).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Increased cost to 6000 (Up from 4500).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "The Harness - Epic Ability Hero Item Decreased cost to 10000 (Down from 11000).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Decreased cost to 10000 (Down from 11000).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Zero Gravity",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [
+        "Zero Gravity - Power Decreased duration to 1.5s (Down from 4s)."
+       ],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     },
     {
@@ -126,20 +382,150 @@
      "role": "tank",
      "dev_note": "Rampaging Winston has been tearing things up, and after a long look at the data, we’re dialing back how quickly his Jump Pack build come online. Several of these items were delivering a lot of value for their cost, letting Winston chain jumps with very little downtime and stay safer than intended during aggressive dives. We want Winston to feel powerful when he commits, but that commitment should come with real risk and clearer windows to punish. Primal Slam remains a fan favorite and something we’re keeping a close eye on. Rather than trimming away the fun or removing gameplay, this update focuses on adjusting surrounding costs and survivability levers first, giving us room to bring the overall build back into line without taking away what makes rampaging Winston exciting to play.",
      "general": [
-      "Primal Punch - Power Decreased melee damage to 3% (Down from 5%).",
-      "Decreased melee damage to 3% (Down from 5%).",
-      "Premium Peanut Butter - Rare Survival Hero Item Increased cost to 6000 (Up from 4000).",
-      "Increased cost to 6000 (Up from 4000).",
-      "Zero-G Suit - Rare Ability Hero Item Increased cost to 6000 (Up from 4000). Removed cooldown reduction.",
-      "Increased cost to 6000 (Up from 4000).",
-      "Removed cooldown reduction.",
-      "Horizon Expander - Epic Ability Hero Item Increased cost to 12500 (Up from 11000).",
-      "Increased cost to 12500 (Up from 11000).",
-      "Fortified Jump Pack - Epic Survival Hero Item Increased cost to 12500 (Up from 10000). Decreased damage reduction to 20% (Down from 35%).",
-      "Increased cost to 12500 (Up from 10000).",
-      "Decreased damage reduction to 20% (Down from 35%)."
+      {
+       "text_en": "Decreased melee damage to 3% (Down from 5%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Premium Peanut Butter - Rare Survival Hero Item Increased cost to 6000 (Up from 4000).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Increased cost to 6000 (Up from 4000).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Zero-G Suit - Rare Ability Hero Item Increased cost to 6000 (Up from 4000). Removed cooldown reduction.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Increased cost to 6000 (Up from 4000).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Removed cooldown reduction.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Horizon Expander - Epic Ability Hero Item Increased cost to 12500 (Up from 11000).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Increased cost to 12500 (Up from 11000).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Fortified Jump Pack - Epic Survival Hero Item Increased cost to 12500 (Up from 10000). Decreased damage reduction to 20% (Down from 35%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Increased cost to 12500 (Up from 10000).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Decreased damage reduction to 20% (Down from 35%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Primal Punch",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [
+        "Primal Punch - Power Decreased melee damage to 3% (Down from 5%)."
+       ],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     }
    ],
@@ -158,13 +544,66 @@
      "role": "support",
      "dev_note": "These changes are aimed at sharpening her playmaking potential and rewarding proactive, skillful shots. By significantly speeding up Artsy Dartsy, Ana can better contest mobile and airborne targets, while Falconer now provides stronger sustained pressure and more reliable access to Nano Boost. Now tell your Genji that your ultimate is ready!",
      "general": [
-      "Artsy Dartsy - Power Increased projectile speed to 300% (Up from 150%).",
-      "Increased projectile speed to 300% (Up from 150%).",
-      "Falconer Increased attack speed to 30% (Up from 20%). Increased ultimate charge to 25% (Up from 15%).",
-      "Increased attack speed to 30% (Up from 20%).",
-      "Increased ultimate charge to 25% (Up from 15%)."
+      {
+       "text_en": "Increased projectile speed to 300% (Up from 150%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Falconer Increased attack speed to 30% (Up from 20%). Increased ultimate charge to 25% (Up from 15%).",
+       "text_cn": null,
+       "subject": "ultimate_cost",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Increased attack speed to 30% (Up from 20%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Increased ultimate charge to 25% (Up from 15%).",
+       "text_cn": null,
+       "subject": "ultimate_cost",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Artsy Dartsy",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [
+        "Artsy Dartsy - Power Increased projectile speed to 300% (Up from 150%)."
+       ],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     },
     {
@@ -174,8 +613,30 @@
      "role": "support",
      "dev_note": "Scavenged Steel has been an outlier in enabling her Rally oriented builds, so we're tuning it down to be more in line with her other build options.",
      "general": [
-      "Scavenged Steel - Epic Ability Hero Item Reduced Ultimate Charge gain on Ability Damage to 2% (Down from 3%).",
-      "Reduced Ultimate Charge gain on Ability Damage to 2% (Down from 3%)."
+      {
+       "text_en": "Scavenged Steel - Epic Ability Hero Item Reduced Ultimate Charge gain on Ability Damage to 2% (Down from 3%).",
+       "text_cn": null,
+       "subject": "ultimate_cost",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Reduced Ultimate Charge gain on Ability Damage to 2% (Down from 3%).",
+       "text_cn": null,
+       "subject": "ultimate_cost",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -193,5 +654,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:b5d195d6fe2665f4d8c098962d38589d5afe1ba6d3942b9dd435eee48649f766"
+ "hash": "sha256:0d23f72332d4ffe1d83c2e061b3e19af1510162f19b61e53a2523a51fbcaa2c8"
 }

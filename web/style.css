@@ -202,6 +202,27 @@ main { max-width: 960px; margin: 0 auto; padding: 20px; }
 .patch-links a { display: inline-block; margin-right: 14px; font-size: 13px; color: var(--accent); }
 .perk-block { border-bottom: none; }
 
+/* four-dimension hero view */
+.dim-section { margin-bottom: 26px; }
+.dim-title { display: flex; align-items: center; gap: 10px; margin: 0 0 10px; }
+.dim-title .badge { font-size: 13px; padding: 3px 12px; }
+.badge.dim { background: rgba(46, 197, 176, 0.14); color: var(--teal); }
+.badge.dim-weapon { background: rgba(243, 156, 58, 0.16); color: var(--orange); }
+.badge.attr { background: rgba(156, 116, 246, 0.16); color: #9c74f6; }
+.values-wrap { margin-left: 10px; vertical-align: middle; }
+.values {
+  display: inline-block;
+  margin: 2px 4px;
+  padding: 1px 8px;
+  border-radius: 999px;
+  background: rgba(79, 195, 247, 0.12);
+  border: 1px solid rgba(79, 195, 247, 0.3);
+  color: var(--en);
+  font-size: 12px;
+  font-weight: 600;
+}
+.num-line { font-size: 13px; color: var(--muted); margin-top: 4px; }
+
 footer {
   max-width: 960px;
   margin: 30px auto;

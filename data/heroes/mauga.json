@@ -13,6 +13,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/08/",
    "patch_title": "《守望先锋》补丁说明——2026年8月12日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "overrun",
    "ability_en": "Overrun",
    "ability_cn": "蛮力冲撞",
@@ -20,7 +21,10 @@
    "text_cn": "冷却时间从5秒延长至6秒。（5v5）",
    "before": 5.0,
    "after": 6.0,
-   "metric": "冷却时间"
+   "by": 1.0,
+   "by_pct": null,
+   "metric": "cooldown",
+   "unit": "s"
   },
   {
    "patch": "cn-2026-08-12-1",
@@ -29,6 +33,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/08/",
    "patch_title": "《守望先锋》补丁说明——2026年8月12日",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "combat-fuel",
    "perk_en": null,
    "perk_cn": "战斗燃料",
@@ -45,6 +50,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/08",
    "patch_title": "Overwatch Retail Patch Notes – August 11, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "overrun",
    "ability_en": "Overrun",
    "ability_cn": "蛮力冲撞",
@@ -52,7 +58,10 @@
    "text_cn": null,
    "before": 5.0,
    "after": 6.0,
-   "metric": "cooldown"
+   "by": 1.0,
+   "by_pct": null,
+   "metric": "cooldown",
+   "unit": "s"
   },
   {
    "patch": "en-2026-08-11-1",
@@ -61,6 +70,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/08",
    "patch_title": "Overwatch Retail Patch Notes – August 11, 2026",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "combat-fuel",
    "perk_en": "Combat Fuel",
    "perk_cn": null,
@@ -77,6 +87,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月31日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "overrun",
    "ability_en": "Overrun",
    "ability_cn": "蛮力冲撞",
@@ -84,7 +95,10 @@
    "text_cn": "冷却时间从7秒缩短至6秒。",
    "before": 7.0,
    "after": 6.0,
-   "metric": "冷却时间"
+   "by": -1.0,
+   "by_pct": null,
+   "metric": "cooldown",
+   "unit": "s"
   },
   {
    "patch": "en-2026-07-30-1",
@@ -93,6 +107,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/07",
    "patch_title": "Overwatch Retail Patch Notes – July 30, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "overrun",
    "ability_en": "Overrun",
    "ability_cn": "蛮力冲撞",
@@ -100,7 +115,10 @@
    "text_cn": null,
    "before": 7.0,
    "after": 6.0,
-   "metric": "cooldown"
+   "by": -1.0,
+   "by_pct": null,
+   "metric": "cooldown",
+   "unit": "s"
   },
   {
    "patch": "cn-2026-07-15-1",
@@ -109,6 +127,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月15日",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "chainguns",
    "ability_en": "Chainguns",
    "ability_cn": "链式步枪",
@@ -116,7 +135,10 @@
    "text_cn": "单独使用每把链式步枪射击时的最大散布从1提高至1.5。",
    "before": 1.0,
    "after": 1.5,
-   "metric": "单独使用每把链式步枪射击时的最大散布"
+   "by": 0.5,
+   "by_pct": null,
+   "metric": "单独使用每把链式步枪射击时的最大散布",
+   "unit": null
   },
   {
    "patch": "cn-2026-07-15-1",
@@ -125,6 +147,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月15日",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "chainguns",
    "ability_en": "Chainguns",
    "ability_cn": "链式步枪",
@@ -132,7 +155,10 @@
    "text_cn": "到达最大散布所需的射击次数从0提高至30次。",
    "before": 0.0,
    "after": 30.0,
-   "metric": "到达最大散布所需的射击次数"
+   "by": 30.0,
+   "by_pct": null,
+   "metric": "到达最大散布所需的射击次数",
+   "unit": null
   },
   {
    "patch": "en-2026-07-14-1",
@@ -141,6 +167,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/07",
    "patch_title": "Overwatch Retail Patch Notes – July 14, 2026",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "chainguns",
    "ability_en": "Chainguns",
    "ability_cn": "链式步枪",
@@ -148,7 +175,10 @@
    "text_cn": null,
    "before": 1.0,
    "after": 1.5,
-   "metric": "maximum spread while firing individual chainguns"
+   "by": 0.5,
+   "by_pct": null,
+   "metric": "maximum spread while firing individual chainguns",
+   "unit": null
   },
   {
    "patch": "en-2026-07-14-1",
@@ -157,6 +187,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/07",
    "patch_title": "Overwatch Retail Patch Notes – July 14, 2026",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "chainguns",
    "ability_en": "Chainguns",
    "ability_cn": "链式步枪",
@@ -164,7 +195,10 @@
    "text_cn": null,
    "before": 0.0,
    "after": 30.0,
-   "metric": "number of shots until maximum spread"
+   "by": 30.0,
+   "by_pct": null,
+   "metric": "number of shots until maximum spread",
+   "unit": null
   },
   {
    "patch": "cn-2026-07-01-1",
@@ -173,6 +207,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "overrun",
    "ability_en": "Overrun",
    "ability_cn": "蛮力冲撞",
@@ -180,7 +215,10 @@
    "text_cn": "重踏伤害现在会随施展高度而提升，最多可达250点伤害。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-07-01-1",
@@ -189,6 +227,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "cardiac-overdrive",
    "ability_en": "Cardiac Overdrive",
    "ability_cn": "心脏过载",
@@ -196,7 +235,10 @@
    "text_cn": "移除了生命汲取和受伤减免效果。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-07-01-1",
@@ -205,6 +247,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "cardiac-overdrive",
    "ability_en": "Cardiac Overdrive",
    "ability_cn": "心脏过载",
@@ -212,7 +255,10 @@
    "text_cn": "不再影响盟友。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-07-01-1",
@@ -221,6 +267,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "cardiac-overdrive",
    "ability_en": "Cardiac Overdrive",
    "ability_cn": "心脏过载",
@@ -228,7 +275,10 @@
    "text_cn": "持续时间从3秒延长至5秒。",
    "before": 3.0,
    "after": 5.0,
-   "metric": "持续时间"
+   "by": 2.0,
+   "by_pct": null,
+   "metric": "duration",
+   "unit": "s"
   },
   {
    "patch": "cn-2026-07-01-1",
@@ -237,6 +287,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "cardiac-overdrive",
    "ability_en": "Cardiac Overdrive",
    "ability_cn": "心脏过载",
@@ -244,7 +295,10 @@
    "text_cn": "现在会在毛加受到伤害时，使他的移动速度加快20%，持续3秒。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-07-01-1",
@@ -253,6 +307,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "cardiac-overdrive",
    "ability_en": "Cardiac Overdrive",
    "ability_cn": "心脏过载",
@@ -260,7 +315,10 @@
    "text_cn": "现在会将受到的每1点伤害都转化为1点治疗资源。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-07-01-1",
@@ -269,6 +327,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "cardiac-overdrive",
    "ability_en": "Cardiac Overdrive",
    "ability_cn": "心脏过载",
@@ -276,7 +335,10 @@
    "text_cn": "储存的治疗资源会持续到“心脏过载”的冷却时间结束。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-07-01-1",
@@ -285,6 +347,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "cardiac-overdrive",
    "ability_en": "Cardiac Overdrive",
    "ability_cn": "心脏过载",
@@ -292,7 +355,10 @@
    "text_cn": "重新使用“心脏过载”会使用储存的治疗资源来治疗毛加。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-30-1",
@@ -301,6 +367,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 30, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "overrun",
    "ability_en": "Overrun",
    "ability_cn": "蛮力冲撞",
@@ -308,7 +375,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-30-1",
@@ -317,6 +387,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 30, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "cardiac-overdrive",
    "ability_en": "Cardiac Overdrive",
    "ability_cn": "心脏过载",
@@ -324,7 +395,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-30-1",
@@ -333,6 +407,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 30, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "cardiac-overdrive",
    "ability_en": "Cardiac Overdrive",
    "ability_cn": "心脏过载",
@@ -340,7 +415,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-30-1",
@@ -349,6 +427,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 30, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "cardiac-overdrive",
    "ability_en": "Cardiac Overdrive",
    "ability_cn": "心脏过载",
@@ -356,7 +435,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-30-1",
@@ -365,6 +447,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 30, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "cardiac-overdrive",
    "ability_en": "Cardiac Overdrive",
    "ability_cn": "心脏过载",
@@ -372,7 +455,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-30-1",
@@ -381,6 +467,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 30, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "cardiac-overdrive",
    "ability_en": "Cardiac Overdrive",
    "ability_cn": "心脏过载",
@@ -388,7 +475,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-30-1",
@@ -397,6 +487,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 30, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "cardiac-overdrive",
    "ability_en": "Cardiac Overdrive",
    "ability_cn": "心脏过载",
@@ -404,7 +495,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-30-1",
@@ -413,6 +507,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 30, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "cardiac-overdrive",
    "ability_en": "Cardiac Overdrive",
    "ability_cn": "心脏过载",
@@ -420,7 +515,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-04-01-1",
@@ -429,6 +527,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/04",
    "patch_title": "Overwatch Retail Patch Notes - April 1, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "overrun",
    "ability_en": "Overrun",
    "ability_cn": "蛮力冲撞",
@@ -436,7 +535,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-04-01-1",
@@ -445,6 +547,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/04",
    "patch_title": "Overwatch Retail Patch Notes - April 1, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "overrun",
    "ability_en": "Overrun",
    "ability_cn": "蛮力冲撞",
@@ -452,7 +555,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-04-01-1",
@@ -461,6 +567,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/04",
    "patch_title": "Overwatch Retail Patch Notes - April 1, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "overrun",
    "ability_en": "Overrun",
    "ability_cn": "蛮力冲撞",
@@ -468,7 +575,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-04-01-1",
@@ -477,6 +587,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/04",
    "patch_title": "Overwatch Retail Patch Notes - April 1, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "cardiac-overdrive",
    "ability_en": "Cardiac Overdrive",
    "ability_cn": "心脏过载",
@@ -484,7 +595,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-04-01-1",
@@ -493,6 +607,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/04/",
    "patch_title": "《守望先锋》补丁说明——2026年4月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "overrun",
    "ability_en": "Overrun",
    "ability_cn": "蛮力冲撞",
@@ -500,7 +615,10 @@
    "text_cn": "蛮力冲撞可永久持续。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-04-01-1",
@@ -509,6 +627,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/04/",
    "patch_title": "《守望先锋》补丁说明——2026年4月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "overrun",
    "ability_en": "Overrun",
    "ability_cn": "蛮力冲撞",
@@ -516,7 +635,10 @@
    "text_cn": "使用蛮力冲撞足够久后，毛加会燃烧。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-04-01-1",
@@ -525,6 +647,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/04/",
    "patch_title": "《守望先锋》补丁说明——2026年4月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "overrun",
    "ability_en": "Overrun",
    "ability_cn": "蛮力冲撞",
@@ -532,7 +655,10 @@
    "text_cn": "受蛮力冲撞效果燃烧时，撞到敌人也会使其燃烧。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-04-01-1",
@@ -541,6 +667,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/04/",
    "patch_title": "《守望先锋》补丁说明——2026年4月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "cardiac-overdrive",
    "ability_en": "Cardiac Overdrive",
    "ability_cn": "心脏过载",
@@ -548,7 +675,10 @@
    "text_cn": "毛加的两把链式机枪发射熔岩球，熔岩球会爆炸并能立刻点燃敌人。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-02-09-1",
@@ -557,6 +687,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/02",
    "patch_title": "Overwatch Retail Patch Notes - February 10, 2026",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "kinetic-bandolier",
    "perk_en": "Kinetic Bandolier",
    "perk_cn": null,
@@ -573,8 +704,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/11",
    "patch_title": "Overwatch 2 Retail Patch Notes - November 11, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Cardiac Overdrive",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-11-06-1",
@@ -583,8 +722,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/11",
    "patch_title": "Overwatch 2 Retail Patch Notes - November 11, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Cooldown reduced from 17 to 15 seconds.",
-   "text_cn": null
+   "text_cn": null,
+   "before": 17.0,
+   "after": 15.0,
+   "by": -2.0,
+   "by_pct": null,
+   "metric": "cooldown",
+   "unit": "s"
   },
   {
    "patch": "cn-2025-10-15-1",
@@ -593,6 +740,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/10/",
    "patch_title": "《守望先锋》补丁说明——2025年10月15日",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "combat-fuel",
    "perk_en": null,
    "perk_cn": "战斗燃料",
@@ -610,8 +758,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/10/",
    "patch_title": "《守望先锋》补丁说明——2025年10月15日",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "ultimate_cost",
    "text_en": null,
-   "text_cn": "终极技能消耗降低6%。"
+   "text_cn": "终极技能消耗降低6%。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 6.0,
+   "metric": "ultimate_cost",
+   "unit": null
   },
   {
    "patch": "en-2025-10-14-1",
@@ -620,6 +776,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/10",
    "patch_title": "Overwatch 2 Retail Patch Notes – October 14, 2025",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "combat-fuel",
    "perk_en": "Combat Fuel",
    "perk_cn": null,
@@ -637,8 +794,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/10",
    "patch_title": "Overwatch 2 Retail Patch Notes – October 14, 2025",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "ultimate_cost",
    "text_en": "Ultimate cost reduced by 6%.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 6.0,
+   "metric": "ultimate_cost",
+   "unit": null
   },
   {
    "patch": "cn-2025-08-27-1",
@@ -647,6 +812,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/08/",
    "patch_title": "《守望先锋》补丁说明——2025年8月27日",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "two-hearts",
    "perk_en": null,
    "perk_cn": "双心两用",
@@ -663,6 +829,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/08/",
    "patch_title": "《守望先锋》补丁说明——2025年8月27日",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "pyromaniac",
    "perk_en": null,
    "perk_cn": "纵情燃烧",
@@ -679,6 +846,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/08",
    "patch_title": "Overwatch 2 Retail Patch Notes – August 26, 2025",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "two-hearts",
    "perk_en": "Two Hearts",
    "perk_cn": null,
@@ -695,6 +863,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/08",
    "patch_title": "Overwatch 2 Retail Patch Notes – August 26, 2025",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "pyromaniac",
    "perk_en": "Pyromaniac",
    "perk_cn": null,
@@ -711,8 +880,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/06/",
    "patch_title": "《守望先锋》补丁说明——2025年6月25日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "狂战士——被动"
+   "text_cn": "狂战士——被动",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-06-25-1",
@@ -721,8 +898,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/06/",
    "patch_title": "《守望先锋》补丁说明——2025年6月25日",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": null,
-   "text_cn": "过量生命值转换率从40%提高至50%。"
+   "text_cn": "过量生命值转换率从40%提高至50%。",
+   "before": 40.0,
+   "after": 50.0,
+   "by": 10.0,
+   "by_pct": null,
+   "metric": "overhealth",
+   "unit": "pct"
   },
   {
    "patch": "en-2025-06-24-1",
@@ -731,8 +916,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/06",
    "patch_title": "Overwatch 2 Retail Patch Notes - June 24, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Berserker - Passive",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-06-24-1",
@@ -741,8 +934,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/06",
    "patch_title": "Overwatch 2 Retail Patch Notes - June 24, 2025",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": "Overhealth conversion rate increased from 40% to 50%.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-04-01-1",
@@ -751,6 +952,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/04",
    "patch_title": "Totally Normal Patch Notes for Totally Normalwatch – April 1, 2025",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "incendiary-chaingun",
    "ability_en": "Incendiary Chaingun",
    "ability_cn": "燃火链式机枪",
@@ -758,7 +960,10 @@
    "text_cn": null,
    "before": 300.0,
    "after": 150.0,
-   "metric": "ammo"
+   "by": -150.0,
+   "by_pct": null,
+   "metric": "ammo",
+   "unit": null
   },
   {
    "patch": "en-2025-04-01-1",
@@ -767,6 +972,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/04",
    "patch_title": "Totally Normal Patch Notes for Totally Normalwatch – April 1, 2025",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "incendiary-chaingun",
    "ability_en": "Incendiary Chaingun",
    "ability_cn": "燃火链式机枪",
@@ -774,7 +980,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": 15.0,
+   "metric": "reload speed",
+   "unit": null
   },
   {
    "patch": "en-2025-04-01-1",
@@ -783,6 +992,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/04",
    "patch_title": "Totally Normal Patch Notes for Totally Normalwatch – April 1, 2025",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "volatile-chaingun",
    "ability_en": "Volatile Chaingun",
    "ability_cn": "爆烈链式机枪",
@@ -790,7 +1000,10 @@
    "text_cn": null,
    "before": 300.0,
    "after": 150.0,
-   "metric": "ammo"
+   "by": -150.0,
+   "by_pct": null,
+   "metric": "ammo",
+   "unit": null
   },
   {
    "patch": "en-2025-04-01-1",
@@ -799,6 +1012,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/04",
    "patch_title": "Totally Normal Patch Notes for Totally Normalwatch – April 1, 2025",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "volatile-chaingun",
    "ability_en": "Volatile Chaingun",
    "ability_cn": "爆烈链式机枪",
@@ -806,7 +1020,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": 15.0,
+   "metric": "reload speed",
+   "unit": null
   },
   {
    "patch": "en-2025-04-01-1",
@@ -815,6 +1032,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/04",
    "patch_title": "Totally Normal Patch Notes for Totally Normalwatch – April 1, 2025",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "overrun",
    "ability_en": "Overrun",
    "ability_cn": "蛮力冲撞",
@@ -822,7 +1040,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-04-01-1",
@@ -831,6 +1052,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/04",
    "patch_title": "Totally Normal Patch Notes for Totally Normalwatch – April 1, 2025",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "cage-fight",
    "ability_en": "Cage Fight",
    "ability_cn": "笼中斗",
@@ -838,7 +1060,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-04-01-1",
@@ -847,6 +1072,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/04",
    "patch_title": "Totally Normal Patch Notes for Totally Normalwatch – April 1, 2025",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "cage-fight",
    "ability_en": "Cage Fight",
    "ability_cn": "笼中斗",
@@ -854,7 +1080,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-04-01-1",
@@ -863,8 +1092,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/04",
    "patch_title": "Totally Normal Patch Notes for Totally Normalwatch – April 1, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "While airborne and firing both Chainguns at the same time, Mauga is pushed backwards in the direction he is aiming.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-04-01-1",
@@ -873,6 +1110,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/04/",
    "patch_title": "完全正常的“完全正常先锋”补丁说明——2025年4月1日",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "incendiary-chaingun",
    "ability_en": "Incendiary Chaingun",
    "ability_cn": "燃火链式机枪",
@@ -880,7 +1118,10 @@
    "text_cn": "弹药量从300降低至150。",
    "before": 300.0,
    "after": 150.0,
-   "metric": "弹药量"
+   "by": -150.0,
+   "by_pct": null,
+   "metric": "ammo",
+   "unit": null
   },
   {
    "patch": "cn-2025-04-01-1",
@@ -889,6 +1130,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/04/",
    "patch_title": "完全正常的“完全正常先锋”补丁说明——2025年4月1日",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "incendiary-chaingun",
    "ability_en": "Incendiary Chaingun",
    "ability_cn": "燃火链式机枪",
@@ -896,7 +1138,10 @@
    "text_cn": "装填速度提高15%。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": 15.0,
+   "metric": "装填速度",
+   "unit": null
   },
   {
    "patch": "cn-2025-04-01-1",
@@ -905,6 +1150,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/04/",
    "patch_title": "完全正常的“完全正常先锋”补丁说明——2025年4月1日",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "volatile-chaingun",
    "ability_en": "Volatile Chaingun",
    "ability_cn": "爆烈链式机枪",
@@ -912,7 +1158,10 @@
    "text_cn": "弹药量从300降低至150。",
    "before": 300.0,
    "after": 150.0,
-   "metric": "弹药量"
+   "by": -150.0,
+   "by_pct": null,
+   "metric": "ammo",
+   "unit": null
   },
   {
    "patch": "cn-2025-04-01-1",
@@ -921,6 +1170,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/04/",
    "patch_title": "完全正常的“完全正常先锋”补丁说明——2025年4月1日",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "volatile-chaingun",
    "ability_en": "Volatile Chaingun",
    "ability_cn": "爆烈链式机枪",
@@ -928,7 +1178,10 @@
    "text_cn": "装填速度提高15%。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": 15.0,
+   "metric": "装填速度",
+   "unit": null
   },
   {
    "patch": "cn-2025-04-01-1",
@@ -937,6 +1190,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/04/",
    "patch_title": "完全正常的“完全正常先锋”补丁说明——2025年4月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "overrun",
    "ability_en": "Overrun",
    "ability_cn": "蛮力冲撞",
@@ -944,7 +1198,10 @@
    "text_cn": "现在可以在“笼中斗”期间使用。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-04-01-1",
@@ -953,6 +1210,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/04/",
    "patch_title": "完全正常的“完全正常先锋”补丁说明——2025年4月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "cage-fight",
    "ability_en": "Cage Fight",
    "ability_cn": "笼中斗",
@@ -960,7 +1218,10 @@
    "text_cn": "锁链现在会以毛加为中心，并会跟随他移动。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-04-01-1",
@@ -969,6 +1230,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/04/",
    "patch_title": "完全正常的“完全正常先锋”补丁说明——2025年4月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "cage-fight",
    "ability_en": "Cage Fight",
    "ability_cn": "笼中斗",
@@ -976,7 +1238,10 @@
    "text_cn": "在技能持续期间为毛加提供无限弹药。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-04-01-1",
@@ -985,8 +1250,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/04/",
    "patch_title": "完全正常的“完全正常先锋”补丁说明——2025年4月1日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "当在空中同时用两把链式机枪开火时，毛加会被反作用力推向瞄准的反方向。"
+   "text_cn": "当在空中同时用两把链式机枪开火时，毛加会被反作用力推向瞄准的反方向。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-03-26-1",
@@ -995,6 +1268,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/03/",
    "patch_title": "《守望先锋》补丁说明——2025年3月26日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "cardiac-overdrive",
    "ability_en": "Cardiac Overdrive",
    "ability_cn": "心脏过载",
@@ -1002,7 +1276,10 @@
    "text_cn": "不再为盟友提供受伤减免。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-03-26-1",
@@ -1011,6 +1288,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/03/",
    "patch_title": "《守望先锋》补丁说明——2025年3月26日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "cage-fight",
    "ability_en": "Cage Fight",
    "ability_cn": "笼中斗",
@@ -1018,7 +1296,10 @@
    "text_cn": "终极技能消耗提高8%。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": 8.0,
+   "metric": "ultimate_cost",
+   "unit": null
   },
   {
    "patch": "cn-2025-03-26-1",
@@ -1027,6 +1308,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/03/",
    "patch_title": "《守望先锋》补丁说明——2025年3月26日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "cage-fight",
    "ability_en": "Cage Fight",
    "ability_cn": "笼中斗",
@@ -1034,7 +1316,10 @@
    "text_cn": "屏障生命值从1500降低至1200。",
    "before": 1500.0,
    "after": 1200.0,
-   "metric": "屏障生命值"
+   "by": -300.0,
+   "by_pct": null,
+   "metric": "barrier",
+   "unit": "hp"
   },
   {
    "patch": "cn-2025-03-26-1",
@@ -1043,6 +1328,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/03/",
    "patch_title": "《守望先锋》补丁说明——2025年3月26日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "berserker-passive",
    "ability_en": "Berserker Passive",
    "ability_cn": "狂战士（被动）",
@@ -1050,7 +1336,10 @@
    "text_cn": "过量生命值转换率从50%降低至40%。",
    "before": 50.0,
    "after": 40.0,
-   "metric": "过量生命值转换率"
+   "by": -10.0,
+   "by_pct": null,
+   "metric": "overhealth",
+   "unit": "pct"
   },
   {
    "patch": "en-2025-03-25-1",
@@ -1059,6 +1348,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/03",
    "patch_title": "Overwatch 2 Retail Patch Notes - March 25, 2025",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "cardiac-overdrive",
    "ability_en": "Cardiac Overdrive",
    "ability_cn": "心脏过载",
@@ -1066,7 +1356,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-03-25-1",
@@ -1075,6 +1368,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/03",
    "patch_title": "Overwatch 2 Retail Patch Notes - March 25, 2025",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "cage-fight",
    "ability_en": "Cage Fight",
    "ability_cn": "笼中斗",
@@ -1082,7 +1376,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": 8.0,
+   "metric": "ultimate_cost",
+   "unit": null
   },
   {
    "patch": "en-2025-03-25-1",
@@ -1091,6 +1388,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/03",
    "patch_title": "Overwatch 2 Retail Patch Notes - March 25, 2025",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "cage-fight",
    "ability_en": "Cage Fight",
    "ability_cn": "笼中斗",
@@ -1098,7 +1396,10 @@
    "text_cn": null,
    "before": 1500.0,
    "after": 1200.0,
-   "metric": "barrier health"
+   "by": -300.0,
+   "by_pct": null,
+   "metric": "barrier",
+   "unit": "hp"
   },
   {
    "patch": "en-2025-03-25-1",
@@ -1107,6 +1408,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/03",
    "patch_title": "Overwatch 2 Retail Patch Notes - March 25, 2025",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "berserker-passive",
    "ability_en": "Berserker Passive",
    "ability_cn": "狂战士（被动）",
@@ -1114,7 +1416,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-02-18-1",
@@ -1123,6 +1428,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/02",
    "patch_title": "Overwatch 2 Retail Patch Notes + Hero Perks - February 18, 2025",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "kinetic-bandolier",
    "ability_en": "Kinetic Bandolier",
    "ability_cn": null,
@@ -1130,7 +1436,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-02-18-1",
@@ -1139,6 +1448,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/02",
    "patch_title": "Overwatch 2 Retail Patch Notes + Hero Perks - February 18, 2025",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "two-hearts",
    "ability_en": "Two Hearts",
    "ability_cn": null,
@@ -1146,7 +1456,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-02-18-1",
@@ -1155,6 +1468,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/02",
    "patch_title": "Overwatch 2 Retail Patch Notes + Hero Perks - February 18, 2025",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "firewalker",
    "ability_en": "Firewalker",
    "ability_cn": null,
@@ -1162,7 +1476,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-02-18-1",
@@ -1171,6 +1488,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/02",
    "patch_title": "Overwatch 2 Retail Patch Notes + Hero Perks - February 18, 2025",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "combat-fuel",
    "ability_en": "Combat Fuel",
    "ability_cn": null,
@@ -1178,7 +1496,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2024-12-17-1",
@@ -1187,6 +1508,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/12",
    "patch_title": "Overwatch 2 6v6 Experiment – December 17, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "overrun",
    "ability_en": "Overrun",
    "ability_cn": "蛮力冲撞",
@@ -1194,7 +1516,10 @@
    "text_cn": null,
    "before": 5.0,
    "after": 7.0,
-   "metric": "cooldown"
+   "by": 2.0,
+   "by_pct": null,
+   "metric": "cooldown",
+   "unit": "s"
   },
   {
    "patch": "en-2024-12-17-1",
@@ -1203,6 +1528,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/12",
    "patch_title": "Overwatch 2 6v6 Experiment – December 17, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "overrun",
    "ability_en": "Overrun",
    "ability_cn": "蛮力冲撞",
@@ -1210,7 +1536,10 @@
    "text_cn": null,
    "before": 75.0,
    "after": 60.0,
-   "metric": "stomp damage"
+   "by": -15.0,
+   "by_pct": null,
+   "metric": "stomp damage",
+   "unit": null
   },
   {
    "patch": "en-2024-12-17-1",
@@ -1219,6 +1548,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/12",
    "patch_title": "Overwatch 2 6v6 Experiment – December 17, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "cage-fight",
    "ability_en": "Cage Fight",
    "ability_cn": "笼中斗",
@@ -1226,7 +1556,10 @@
    "text_cn": null,
    "before": 8.0,
    "after": 7.0,
-   "metric": "maximum duration"
+   "by": -1.0,
+   "by_pct": null,
+   "metric": "maximum duration",
+   "unit": null
   },
   {
    "patch": "en-2024-12-17-1",
@@ -1235,8 +1568,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/12",
    "patch_title": "Overwatch 2 6v6 Experiment – December 17, 2024",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": "Base armor reduced from 150 to 100.",
-   "text_cn": null
+   "text_cn": null,
+   "before": 150.0,
+   "after": 100.0,
+   "by": -50.0,
+   "by_pct": null,
+   "metric": "base armor",
+   "unit": null
   },
   {
    "patch": "en-2024-12-17-1",
@@ -1245,8 +1586,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/12",
    "patch_title": "Overwatch 2 6v6 Experiment – December 17, 2024",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": "Base health increased from 425 to 450.",
-   "text_cn": null
+   "text_cn": null,
+   "before": 425.0,
+   "after": 450.0,
+   "by": 25.0,
+   "by_pct": null,
+   "metric": "base health",
+   "unit": null
   },
   {
    "patch": "en-2024-12-10-1",
@@ -1255,8 +1604,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/12",
    "patch_title": "Overwatch 2 Retail Patch Notes – December 10, 2024",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": "Base armor reduced from 200 to 150.",
-   "text_cn": null
+   "text_cn": null,
+   "before": 200.0,
+   "after": 150.0,
+   "by": -50.0,
+   "by_pct": null,
+   "metric": "base armor",
+   "unit": null
   },
   {
    "patch": "en-2024-12-10-1",
@@ -1265,8 +1622,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/12",
    "patch_title": "Overwatch 2 Retail Patch Notes – December 10, 2024",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": "Base health increased from 375 to 425.",
-   "text_cn": null
+   "text_cn": null,
+   "before": 375.0,
+   "after": 425.0,
+   "by": 50.0,
+   "by_pct": null,
+   "metric": "base health",
+   "unit": null
   },
   {
    "patch": "en-2024-11-08-1",
@@ -1275,6 +1640,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/11",
    "patch_title": "Overwatch 2 Retail Patch Notes - November 12, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "overrun",
    "ability_en": "Overrun",
    "ability_cn": "蛮力冲撞",
@@ -1282,7 +1648,10 @@
    "text_cn": null,
    "before": 6.0,
    "after": 5.0,
-   "metric": "cooldown"
+   "by": -1.0,
+   "by_pct": null,
+   "metric": "cooldown",
+   "unit": "s"
   },
   {
    "patch": "en-2024-11-08-1",
@@ -1291,6 +1660,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/11",
    "patch_title": "Overwatch 2 Retail Patch Notes - November 12, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "overrun",
    "ability_en": "Overrun",
    "ability_cn": "蛮力冲撞",
@@ -1298,7 +1668,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": 15.0,
+   "metric": "charge movement speed",
+   "unit": null
   },
   {
    "patch": "en-2024-10-15-1",
@@ -1307,6 +1680,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/10",
    "patch_title": "Overwatch 2 Retail Patch Notes – October 15, 2024",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "incendiary-chaingun",
    "ability_en": "Incendiary Chaingun",
    "ability_cn": "燃火链式机枪",
@@ -1314,7 +1688,10 @@
    "text_cn": null,
    "before": 3.0,
    "after": 4.0,
-   "metric": "ignite damage over time duration"
+   "by": 1.0,
+   "by_pct": null,
+   "metric": "ignite damage over time duration",
+   "unit": null
   },
   {
    "patch": "en-2024-07-05-1",
@@ -1323,6 +1700,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/07",
    "patch_title": "Overwatch 2 Retail Patch Notes – July 9, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "overrun",
    "ability_en": "Overrun",
    "ability_cn": "蛮力冲撞",
@@ -1330,7 +1708,10 @@
    "text_cn": null,
    "before": 25.0,
    "after": 30.0,
-   "metric": "knockback damage"
+   "by": 5.0,
+   "by_pct": null,
+   "metric": "knockback",
+   "unit": null
   },
   {
    "patch": "en-2024-07-05-1",
@@ -1339,6 +1720,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/07",
    "patch_title": "Overwatch 2 Retail Patch Notes – July 9, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "overrun",
    "ability_en": "Overrun",
    "ability_cn": "蛮力冲撞",
@@ -1346,7 +1728,10 @@
    "text_cn": null,
    "before": 60.0,
    "after": 75.0,
-   "metric": "stomp damage"
+   "by": 15.0,
+   "by_pct": null,
+   "metric": "stomp damage",
+   "unit": null
   },
   {
    "patch": "en-2024-07-05-1",
@@ -1355,6 +1740,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/07",
    "patch_title": "Overwatch 2 Retail Patch Notes – July 9, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "cardiac-overdrive",
    "ability_en": "Cardiac Overdrive",
    "ability_cn": "心脏过载",
@@ -1362,7 +1748,10 @@
    "text_cn": null,
    "before": 5.0,
    "after": 3.0,
-   "metric": "duration"
+   "by": -2.0,
+   "by_pct": null,
+   "metric": "duration",
+   "unit": "s"
   },
   {
    "patch": "en-2024-07-05-1",
@@ -1371,6 +1760,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/07",
    "patch_title": "Overwatch 2 Retail Patch Notes – July 9, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "cardiac-overdrive",
    "ability_en": "Cardiac Overdrive",
    "ability_cn": "心脏过载",
@@ -1378,7 +1768,10 @@
    "text_cn": null,
    "before": 60.0,
    "after": 100.0,
-   "metric": "lifesteal"
+   "by": 40.0,
+   "by_pct": null,
+   "metric": "lifesteal",
+   "unit": null
   },
   {
    "patch": "en-2024-07-05-1",
@@ -1387,6 +1780,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/07",
    "patch_title": "Overwatch 2 Retail Patch Notes – July 9, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "cardiac-overdrive",
    "ability_en": "Cardiac Overdrive",
    "ability_cn": "心脏过载",
@@ -1394,7 +1788,10 @@
    "text_cn": null,
    "before": 30.0,
    "after": 40.0,
-   "metric": "damage reduction"
+   "by": 10.0,
+   "by_pct": null,
+   "metric": "damage",
+   "unit": null
   },
   {
    "patch": "en-2024-07-05-1",
@@ -1403,6 +1800,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/07",
    "patch_title": "Overwatch 2 Retail Patch Notes – July 9, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "cardiac-overdrive",
    "ability_en": "Cardiac Overdrive",
    "ability_cn": "心脏过载",
@@ -1410,7 +1808,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2024-04-01-1",
@@ -1419,6 +1820,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/04",
    "patch_title": "Overwatch 2 Really, Really, Really Balanced Patch Notes - April 1, 2024",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "incendiary-chain-gun",
    "ability_en": "Incendiary Chain Gun",
    "ability_cn": null,
@@ -1426,7 +1828,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2024-04-01-1",
@@ -1435,8 +1840,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/04",
    "patch_title": "Overwatch 2 Really, Really, Really Balanced Patch Notes - April 1, 2024",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": "Health decreased from 350 to 25.",
-   "text_cn": null
+   "text_cn": null,
+   "before": 350.0,
+   "after": 25.0,
+   "by": -325.0,
+   "by_pct": null,
+   "metric": "health",
+   "unit": "hp"
   },
   {
    "patch": "en-2024-04-01-1",
@@ -1445,8 +1858,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/04",
    "patch_title": "Overwatch 2 Really, Really, Really Balanced Patch Notes - April 1, 2024",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Mauga’s Scale has been reduced by 50%.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 50.0,
+   "metric": "s scale has been",
+   "unit": null
   },
   {
    "patch": "en-2024-03-19-1",
@@ -1455,6 +1876,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/03",
    "patch_title": "Overwatch 2 Retail Patch Notes - March 19, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "cardiac-overdrive",
    "ability_en": "Cardiac Overdrive",
    "ability_cn": "心脏过载",
@@ -1462,7 +1884,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2024-03-19-1",
@@ -1471,6 +1896,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/03",
    "patch_title": "Overwatch 2 Retail Patch Notes - March 19, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "cardiac-overdrive",
    "ability_en": "Cardiac Overdrive",
    "ability_cn": "心脏过载",
@@ -1478,7 +1904,10 @@
    "text_cn": null,
    "before": 4.0,
    "after": 5.0,
-   "metric": "duration"
+   "by": 1.0,
+   "by_pct": null,
+   "metric": "duration",
+   "unit": "s"
   },
   {
    "patch": "en-2024-03-19-1",
@@ -1487,6 +1916,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/03",
    "patch_title": "Overwatch 2 Retail Patch Notes - March 19, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "cardiac-overdrive",
    "ability_en": "Cardiac Overdrive",
    "ability_cn": "心脏过载",
@@ -1494,7 +1924,10 @@
    "text_cn": null,
    "before": 10.0,
    "after": 12.0,
-   "metric": "cooldown"
+   "by": 2.0,
+   "by_pct": null,
+   "metric": "cooldown",
+   "unit": "s"
   },
   {
    "patch": "en-2024-03-19-1",
@@ -1503,8 +1936,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/03",
    "patch_title": "Overwatch 2 Retail Patch Notes - March 19, 2024",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": "Base Health decreased from 400 to 375.",
-   "text_cn": null
+   "text_cn": null,
+   "before": 400.0,
+   "after": 375.0,
+   "by": -25.0,
+   "by_pct": null,
+   "metric": "base health",
+   "unit": null
   },
   {
    "patch": "en-2024-03-08-1",
@@ -1513,6 +1954,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/03",
    "patch_title": "Overwatch 2 Retail Patch Notes – March 12, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "overrun",
    "ability_en": "Overrun",
    "ability_cn": "蛮力冲撞",
@@ -1520,7 +1962,10 @@
    "text_cn": null,
    "before": 45.0,
    "after": 60.0,
-   "metric": "stomp damage"
+   "by": 15.0,
+   "by_pct": null,
+   "metric": "stomp damage",
+   "unit": null
   },
   {
    "patch": "en-2024-03-08-1",
@@ -1529,6 +1974,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/03",
    "patch_title": "Overwatch 2 Retail Patch Notes – March 12, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "cardiac-overdrive",
    "ability_en": "Cardiac Overdrive",
    "ability_cn": "心脏过载",
@@ -1536,7 +1982,10 @@
    "text_cn": null,
    "before": 5.0,
    "after": 4.0,
-   "metric": "duration"
+   "by": -1.0,
+   "by_pct": null,
+   "metric": "duration",
+   "unit": "s"
   },
   {
    "patch": "en-2024-03-08-1",
@@ -1545,6 +1994,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/03",
    "patch_title": "Overwatch 2 Retail Patch Notes – March 12, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "cardiac-overdrive",
    "ability_en": "Cardiac Overdrive",
    "ability_cn": "心脏过载",
@@ -1552,7 +2002,10 @@
    "text_cn": null,
    "before": 12.0,
    "after": 10.0,
-   "metric": "cooldown"
+   "by": -2.0,
+   "by_pct": null,
+   "metric": "cooldown",
+   "unit": "s"
   },
   {
    "patch": "en-2024-03-08-1",
@@ -1561,6 +2014,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/03",
    "patch_title": "Overwatch 2 Retail Patch Notes – March 12, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "cardiac-overdrive",
    "ability_en": "Cardiac Overdrive",
    "ability_cn": "心脏过载",
@@ -1568,7 +2022,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2024-02-13-1",
@@ -1577,8 +2034,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/02",
    "patch_title": "Overwatch 2 Retail Patch Notes – February 13, 2024",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": "Health increased from 300 to 400.",
-   "text_cn": null
+   "text_cn": null,
+   "before": 300.0,
+   "after": 400.0,
+   "by": 100.0,
+   "by_pct": null,
+   "metric": "health",
+   "unit": "hp"
   },
   {
    "patch": "en-2024-01-09-1",
@@ -1587,6 +2052,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/01",
    "patch_title": "Overwatch 2 Retail Patch Notes - January 9, 2024",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "incendiary-and-volatile-chainguns",
    "ability_en": "Incendiary and Volatile Chainguns",
    "ability_cn": null,
@@ -1594,7 +2060,10 @@
    "text_cn": null,
    "before": 350.0,
    "after": 300.0,
-   "metric": "ammo"
+   "by": -50.0,
+   "by_pct": null,
+   "metric": "ammo",
+   "unit": null
   },
   {
    "patch": "en-2024-01-09-1",
@@ -1603,6 +2072,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/01",
    "patch_title": "Overwatch 2 Retail Patch Notes - January 9, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "cardiac-overdrive",
    "ability_en": "Cardiac Overdrive",
    "ability_cn": "心脏过载",
@@ -1610,7 +2080,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2024-01-09-1",
@@ -1619,14 +2092,18 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/01",
    "patch_title": "Overwatch 2 Retail Patch Notes - January 9, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "cardiac-overdrive",
    "ability_en": "Cardiac Overdrive",
    "ability_cn": "心脏过载",
    "text_en": "Cooldown increased from 10 seconds to 12 seconds.",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "metric": null
+   "before": 10.0,
+   "after": 12.0,
+   "by": 2.0,
+   "by_pct": null,
+   "metric": "cooldown",
+   "unit": "s"
   },
   {
    "patch": "en-2024-01-09-1",
@@ -1635,6 +2112,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/01",
    "patch_title": "Overwatch 2 Retail Patch Notes - January 9, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "cage-fight",
    "ability_en": "Cage Fight",
    "ability_cn": "笼中斗",
@@ -1642,7 +2120,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2024-01-09-1",
@@ -1651,6 +2132,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/01",
    "patch_title": "Overwatch 2 Retail Patch Notes - January 9, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "berserker",
    "ability_en": "Berserker",
    "ability_cn": null,
@@ -1658,7 +2140,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2024-01-09-1",
@@ -1667,8 +2152,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/01",
    "patch_title": "Overwatch 2 Retail Patch Notes - January 9, 2024",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": "Base Health increased from 250 to 300.",
-   "text_cn": null
+   "text_cn": null,
+   "before": 250.0,
+   "after": 300.0,
+   "by": 50.0,
+   "by_pct": null,
+   "metric": "base health",
+   "unit": null
   },
   {
    "patch": "en-2024-01-09-1",
@@ -1677,8 +2170,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/01",
    "patch_title": "Overwatch 2 Retail Patch Notes - January 9, 2024",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": "Base Armor decreased from 250 to 200.",
-   "text_cn": null
+   "text_cn": null,
+   "before": 250.0,
+   "after": 200.0,
+   "by": -50.0,
+   "by_pct": null,
+   "metric": "base armor",
+   "unit": null
   },
   {
    "patch": "en-2023-12-15-1",
@@ -1687,6 +2188,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/12",
    "patch_title": "Overwatch 2 Retail Patch Notes – December 19, 2023",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "incendiary-and-volatile-chainguns",
    "ability_en": "Incendiary and Volatile Chainguns",
    "ability_cn": null,
@@ -1694,7 +2196,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2023-12-15-1",
@@ -1703,6 +2208,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/12",
    "patch_title": "Overwatch 2 Retail Patch Notes – December 19, 2023",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "incendiary-and-volatile-chainguns",
    "ability_en": "Incendiary and Volatile Chainguns",
    "ability_cn": null,
@@ -1710,7 +2216,10 @@
    "text_cn": null,
    "before": 1.1,
    "after": 1.0,
-   "metric": "spread"
+   "by": -0.1,
+   "by_pct": null,
+   "metric": "spread",
+   "unit": null
   },
   {
    "patch": "en-2023-12-15-1",
@@ -1719,6 +2228,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/12",
    "patch_title": "Overwatch 2 Retail Patch Notes – December 19, 2023",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "berserker",
    "ability_en": "Berserker",
    "ability_cn": null,
@@ -1726,7 +2236,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2023-12-15-1",
@@ -1735,8 +2248,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/12",
    "patch_title": "Overwatch 2 Retail Patch Notes – December 19, 2023",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Mauga is now available in Competitive Play for players who unlocked him.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2023-12-15-1",
@@ -1745,8 +2266,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/12",
    "patch_title": "Overwatch 2 Retail Patch Notes – December 19, 2023",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": "Base health decreased from 350 to 250.",
-   "text_cn": null
+   "text_cn": null,
+   "before": 350.0,
+   "after": 250.0,
+   "by": -100.0,
+   "by_pct": null,
+   "metric": "base health",
+   "unit": null
   },
   {
    "patch": "en-2023-12-15-1",
@@ -1755,8 +2284,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/12",
    "patch_title": "Overwatch 2 Retail Patch Notes – December 19, 2023",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": "Base armor increased from 150 to 250.",
-   "text_cn": null
+   "text_cn": null,
+   "before": 150.0,
+   "after": 250.0,
+   "by": 100.0,
+   "by_pct": null,
+   "metric": "base armor",
+   "unit": null
   },
   {
    "patch": "en-2023-12-12-1",
@@ -1765,6 +2302,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/12",
    "patch_title": "Overwatch 2 Retail Patch Notes - December 12, 2023",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "incendiary-and-volatile-chainguns",
    "ability_en": "Incendiary and Volatile Chainguns",
    "ability_cn": null,
@@ -1772,7 +2310,10 @@
    "text_cn": null,
    "before": 5.0,
    "after": 4.0,
-   "metric": "chaingun damage"
+   "by": -1.0,
+   "by_pct": null,
+   "metric": "chaingun damage",
+   "unit": null
   },
   {
    "patch": "en-2023-12-12-1",
@@ -1781,6 +2322,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/12",
    "patch_title": "Overwatch 2 Retail Patch Notes - December 12, 2023",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "incendiary-and-volatile-chainguns",
    "ability_en": "Incendiary and Volatile Chainguns",
    "ability_cn": null,
@@ -1788,7 +2330,10 @@
    "text_cn": null,
    "before": 10.0,
    "after": 15.0,
-   "metric": "the number of shots with the incendiary chaingun to ignite enemies"
+   "by": 5.0,
+   "by_pct": null,
+   "metric": "the number of shots with the incendiary chaingun to ignite enemies",
+   "unit": null
   },
   {
    "patch": "en-2023-12-12-1",
@@ -1797,6 +2342,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/12",
    "patch_title": "Overwatch 2 Retail Patch Notes - December 12, 2023",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "cage-fight",
    "ability_en": "Cage Fight",
    "ability_cn": "笼中斗",
@@ -1804,7 +2350,10 @@
    "text_cn": null,
    "before": 10.0,
    "after": 8.0,
-   "metric": "ultimate duration"
+   "by": -2.0,
+   "by_pct": null,
+   "metric": "ultimate duration",
+   "unit": null
   },
   {
    "patch": "en-2023-12-05-1",
@@ -1813,6 +2362,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/12",
    "patch_title": "Overwatch 2 Retail Patch Notes – December 5, 2023",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "incendiary-chaingun-primary-fire",
    "ability_en": "Incendiary Chaingun (Primary Fire)",
    "ability_cn": null,
@@ -1820,7 +2370,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2023-12-05-1",
@@ -1829,6 +2382,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/12",
    "patch_title": "Overwatch 2 Retail Patch Notes – December 5, 2023",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "volatile-chaingun-secondary-fire",
    "ability_en": "Volatile Chaingun (Secondary Fire)",
    "ability_cn": null,
@@ -1836,7 +2390,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2023-12-05-1",
@@ -1845,6 +2402,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/12",
    "patch_title": "Overwatch 2 Retail Patch Notes – December 5, 2023",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "overrun-ability-1",
    "ability_en": "Overrun (Ability 1)",
    "ability_cn": null,
@@ -1852,7 +2410,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2023-12-05-1",
@@ -1861,6 +2422,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/12",
    "patch_title": "Overwatch 2 Retail Patch Notes – December 5, 2023",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "cardiac-overdrive-ability-2",
    "ability_en": "Cardiac Overdrive (Ability 2)",
    "ability_cn": null,
@@ -1868,7 +2430,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2023-12-05-1",
@@ -1877,6 +2442,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/12",
    "patch_title": "Overwatch 2 Retail Patch Notes – December 5, 2023",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "cage-fight-ultimate",
    "ability_en": "Cage Fight (Ultimate)",
    "ability_cn": null,
@@ -1884,7 +2450,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2023-12-05-1",
@@ -1893,6 +2462,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/12",
    "patch_title": "Overwatch 2 Retail Patch Notes – December 5, 2023",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "berserker-passive",
    "ability_en": "Berserker Passive",
    "ability_cn": "狂战士（被动）",
@@ -1900,7 +2470,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2023-12-05-1",
@@ -1909,8 +2482,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/12",
    "patch_title": "Overwatch 2 Retail Patch Notes – December 5, 2023",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Mauga has been added to the lineup.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2023-12-05-1",
@@ -1919,6 +2500,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/12",
    "patch_title": "Overwatch 2 Retail Patch Notes – December 5, 2023",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "incendiary-and-volatile-chainguns",
    "ability_en": "Incendiary and Volatile Chainguns",
    "ability_cn": null,
@@ -1926,7 +2508,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": 15.0,
+   "metric": "spread for firing both guns",
+   "unit": null
   },
   {
    "patch": "en-2023-12-05-1",
@@ -1935,6 +2520,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/12",
    "patch_title": "Overwatch 2 Retail Patch Notes – December 5, 2023",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "incendiary-and-volatile-chainguns",
    "ability_en": "Incendiary and Volatile Chainguns",
    "ability_cn": null,
@@ -1942,7 +2528,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2023-12-05-1",
@@ -1951,6 +2540,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/12",
    "patch_title": "Overwatch 2 Retail Patch Notes – December 5, 2023",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "incendiary-and-volatile-chainguns",
    "ability_en": "Incendiary and Volatile Chainguns",
    "ability_cn": null,
@@ -1958,7 +2548,10 @@
    "text_cn": null,
    "before": 4.5,
    "after": 5.0,
-   "metric": "damage per shot"
+   "by": 0.5,
+   "by_pct": null,
+   "metric": "damage",
+   "unit": null
   },
   {
    "patch": "en-2023-12-05-1",
@@ -1967,6 +2560,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/12",
    "patch_title": "Overwatch 2 Retail Patch Notes – December 5, 2023",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "incendiary-and-volatile-chainguns",
    "ability_en": "Incendiary and Volatile Chainguns",
    "ability_cn": null,
@@ -1974,7 +2568,10 @@
    "text_cn": null,
    "before": 25.0,
    "after": 30.0,
-   "metric": "damage falloff range"
+   "by": 5.0,
+   "by_pct": null,
+   "metric": "damage",
+   "unit": null
   },
   {
    "patch": "en-2023-12-05-1",
@@ -1983,6 +2580,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/12",
    "patch_title": "Overwatch 2 Retail Patch Notes – December 5, 2023",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "incendiary-and-volatile-chainguns",
    "ability_en": "Incendiary and Volatile Chainguns",
    "ability_cn": null,
@@ -1990,7 +2588,10 @@
    "text_cn": null,
    "before": 300.0,
    "after": 350.0,
-   "metric": "max ammo"
+   "by": 50.0,
+   "by_pct": null,
+   "metric": "max ammo",
+   "unit": null
   },
   {
    "patch": "en-2023-12-05-1",
@@ -1999,6 +2600,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/12",
    "patch_title": "Overwatch 2 Retail Patch Notes – December 5, 2023",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "incendiary-and-volatile-chainguns",
    "ability_en": "Incendiary and Volatile Chainguns",
    "ability_cn": null,
@@ -2006,7 +2608,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2023-12-05-1",
@@ -2015,6 +2620,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/12",
    "patch_title": "Overwatch 2 Retail Patch Notes – December 5, 2023",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "overrun",
    "ability_en": "Overrun",
    "ability_cn": "蛮力冲撞",
@@ -2022,7 +2628,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2023-12-05-1",
@@ -2031,6 +2640,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/12",
    "patch_title": "Overwatch 2 Retail Patch Notes – December 5, 2023",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "overrun",
    "ability_en": "Overrun",
    "ability_cn": "蛮力冲撞",
@@ -2038,7 +2648,10 @@
    "text_cn": null,
    "before": 30.0,
    "after": 50.0,
-   "metric": "damage reduction"
+   "by": 20.0,
+   "by_pct": null,
+   "metric": "damage",
+   "unit": null
   },
   {
    "patch": "en-2023-12-05-1",
@@ -2047,6 +2660,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/12",
    "patch_title": "Overwatch 2 Retail Patch Notes – December 5, 2023",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "cardiac-overdrive",
    "ability_en": "Cardiac Overdrive",
    "ability_cn": "心脏过载",
@@ -2054,7 +2668,10 @@
    "text_cn": null,
    "before": 60.0,
    "after": 70.0,
-   "metric": "lifesteal"
+   "by": 10.0,
+   "by_pct": null,
+   "metric": "lifesteal",
+   "unit": null
   },
   {
    "patch": "en-2023-12-05-1",
@@ -2063,6 +2680,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/12",
    "patch_title": "Overwatch 2 Retail Patch Notes – December 5, 2023",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "berserker",
    "ability_en": "Berserker",
    "ability_cn": null,
@@ -2070,7 +2688,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2023-12-05-1",
@@ -2079,8 +2700,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/12",
    "patch_title": "Overwatch 2 Retail Patch Notes – December 5, 2023",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": "Base health reduced from 500 to 350.",
-   "text_cn": null
+   "text_cn": null,
+   "before": 500.0,
+   "after": 350.0,
+   "by": -150.0,
+   "by_pct": null,
+   "metric": "base health",
+   "unit": null
   },
   {
    "patch": "en-2023-12-05-1",
@@ -2089,8 +2718,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/12",
    "patch_title": "Overwatch 2 Retail Patch Notes – December 5, 2023",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": "Base armor increased from 0 to 150.",
-   "text_cn": null
+   "text_cn": null,
+   "before": 0.0,
+   "after": 150.0,
+   "by": 150.0,
+   "by_pct": null,
+   "metric": "base armor",
+   "unit": null
   },
   {
    "patch": "en-2023-12-05-1",
@@ -2099,8 +2736,288 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/12",
    "patch_title": "Overwatch 2 Retail Patch Notes – December 5, 2023",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Head hit volume reduced 15%.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 15.0,
+   "metric": "head hit volume",
+   "unit": null
   }
- ]
+ ],
+ "values": {
+  "overrun:cooldown": [
+   {
+    "date": "2024-11-08",
+    "value": 5.0
+   },
+   {
+    "date": "2024-12-17",
+    "value": 7.0
+   },
+   {
+    "date": "2026-07-30",
+    "value": 6.0
+   },
+   {
+    "date": "2026-07-31",
+    "value": 6.0
+   },
+   {
+    "date": "2026-08-11",
+    "value": 6.0
+   },
+   {
+    "date": "2026-08-12",
+    "value": 6.0
+   }
+  ],
+  "chainguns:单独使用每把链式步枪射击时的最大散布": [
+   {
+    "date": "2026-07-15",
+    "value": 1.5
+   }
+  ],
+  "chainguns:到达最大散布所需的射击次数": [
+   {
+    "date": "2026-07-15",
+    "value": 30.0
+   }
+  ],
+  "chainguns:maximum spread while firing individual chainguns": [
+   {
+    "date": "2026-07-14",
+    "value": 1.5
+   }
+  ],
+  "chainguns:number of shots until maximum spread": [
+   {
+    "date": "2026-07-14",
+    "value": 30.0
+   }
+  ],
+  "cardiac-overdrive:duration": [
+   {
+    "date": "2024-03-08",
+    "value": 4.0
+   },
+   {
+    "date": "2024-03-19",
+    "value": 5.0
+   },
+   {
+    "date": "2024-07-05",
+    "value": 3.0
+   },
+   {
+    "date": "2026-07-01",
+    "value": 5.0
+   }
+  ],
+  "attr:health:overhealth": [
+   {
+    "date": "2025-06-25",
+    "value": 50.0
+   }
+  ],
+  "incendiary-chaingun:ammo": [
+   {
+    "date": "2025-04-01",
+    "value": 150.0
+   }
+  ],
+  "volatile-chaingun:ammo": [
+   {
+    "date": "2025-04-01",
+    "value": 150.0
+   }
+  ],
+  "cage-fight:barrier": [
+   {
+    "date": "2025-03-25",
+    "value": 1200.0
+   },
+   {
+    "date": "2025-03-26",
+    "value": 1200.0
+   }
+  ],
+  "berserker-passive:overhealth": [
+   {
+    "date": "2025-03-26",
+    "value": 40.0
+   }
+  ],
+  "overrun:stomp damage": [
+   {
+    "date": "2024-03-08",
+    "value": 60.0
+   },
+   {
+    "date": "2024-07-05",
+    "value": 75.0
+   },
+   {
+    "date": "2024-12-17",
+    "value": 60.0
+   }
+  ],
+  "cage-fight:maximum duration": [
+   {
+    "date": "2024-12-17",
+    "value": 7.0
+   }
+  ],
+  "attr:health:base armor": [
+   {
+    "date": "2023-12-05",
+    "value": 150.0
+   },
+   {
+    "date": "2023-12-15",
+    "value": 250.0
+   },
+   {
+    "date": "2024-01-09",
+    "value": 200.0
+   },
+   {
+    "date": "2024-12-10",
+    "value": 150.0
+   },
+   {
+    "date": "2024-12-17",
+    "value": 100.0
+   }
+  ],
+  "attr:health:base health": [
+   {
+    "date": "2023-12-05",
+    "value": 350.0
+   },
+   {
+    "date": "2023-12-15",
+    "value": 250.0
+   },
+   {
+    "date": "2024-01-09",
+    "value": 300.0
+   },
+   {
+    "date": "2024-03-19",
+    "value": 375.0
+   },
+   {
+    "date": "2024-12-10",
+    "value": 425.0
+   },
+   {
+    "date": "2024-12-17",
+    "value": 450.0
+   }
+  ],
+  "incendiary-chaingun:ignite damage over time duration": [
+   {
+    "date": "2024-10-15",
+    "value": 4.0
+   }
+  ],
+  "overrun:knockback": [
+   {
+    "date": "2024-07-05",
+    "value": 30.0
+   }
+  ],
+  "cardiac-overdrive:lifesteal": [
+   {
+    "date": "2023-12-05",
+    "value": 70.0
+   },
+   {
+    "date": "2024-07-05",
+    "value": 100.0
+   }
+  ],
+  "cardiac-overdrive:damage": [
+   {
+    "date": "2024-07-05",
+    "value": 40.0
+   }
+  ],
+  "attr:health:health": [
+   {
+    "date": "2024-02-13",
+    "value": 400.0
+   },
+   {
+    "date": "2024-04-01",
+    "value": 25.0
+   }
+  ],
+  "cardiac-overdrive:cooldown": [
+   {
+    "date": "2024-01-09",
+    "value": 12.0
+   },
+   {
+    "date": "2024-03-08",
+    "value": 10.0
+   },
+   {
+    "date": "2024-03-19",
+    "value": 12.0
+   }
+  ],
+  "incendiary-and-volatile-chainguns:ammo": [
+   {
+    "date": "2024-01-09",
+    "value": 300.0
+   }
+  ],
+  "incendiary-and-volatile-chainguns:spread": [
+   {
+    "date": "2023-12-15",
+    "value": 1.0
+   }
+  ],
+  "incendiary-and-volatile-chainguns:chaingun damage": [
+   {
+    "date": "2023-12-12",
+    "value": 4.0
+   }
+  ],
+  "incendiary-and-volatile-chainguns:the number of shots with the incendiary chaingun to ignite enemies": [
+   {
+    "date": "2023-12-12",
+    "value": 15.0
+   }
+  ],
+  "cage-fight:ultimate duration": [
+   {
+    "date": "2023-12-12",
+    "value": 8.0
+   }
+  ],
+  "incendiary-and-volatile-chainguns:damage": [
+   {
+    "date": "2023-12-05",
+    "value": 30.0
+   }
+  ],
+  "incendiary-and-volatile-chainguns:max ammo": [
+   {
+    "date": "2023-12-05",
+    "value": 350.0
+   }
+  ],
+  "overrun:damage": [
+   {
+    "date": "2023-12-05",
+    "value": 50.0
+   }
+  ]
+ }
 }

@@ -52,6 +52,9 @@ def run_pipeline(
     fetch = fetch or Fetcher()
     resolver = NameResolver(data_dir / "names.json")
     manifest = load_manifest(data_dir)
+    from .diff import ensure_hash_schema
+
+    ensure_hash_schema(data_dir, manifest)
     result = RunResult()
 
     if months is None:
@@ -114,12 +117,18 @@ def run_pipeline(
 
 
 def regenerate_all(data_dir: pathlib.Path) -> None:
-    """Full offline regeneration: reclassify -> re-enrich -> pair -> map -> heroes.
+    """Full offline regeneration, in dependency order:
+
+    reclassify -> extraction -> attribution -> re-enrich -> pair -> ability map
+    (with weapon kinds) -> hash schema migration -> hero timelines (+ value series).
 
     Pure pass over data/ (no network). Used by the pipeline after any patch write
     and by tools/rebuild.py for the whole archive.
     """
     from .ability_map import build_ability_map, write_ability_map
+    from .attribution import classify_general, fix_hash_slugs
+    from .diff import ensure_hash_schema, load_manifest
+    from .extract import apply_extraction
     from .normalize import reclassify_patch_dict, split_merged_perk_general
     from .pairing import build_patches_index, pair_patches, patch_meta_from_manifest, write_pair_result
 
@@ -129,6 +138,11 @@ def regenerate_all(data_dir: pathlib.Path) -> None:
             data = json.loads(patch_file.read_text(encoding="utf-8"))
             reclassify_patch_dict(data)
             split_merged_perk_general(data)
+            for section in data.get("sections", []):
+                for hero in section.get("heroes", []):
+                    for ability in hero.get("abilities", []):
+                        for change in ability.get("changes", []):
+                            apply_extraction(change)
             _reenrich_dict(data, resolver)
             patch_file.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
 
@@ -139,6 +153,20 @@ def regenerate_all(data_dir: pathlib.Path) -> None:
 
     ability_map = build_ability_map(data_dir, pair_result.pairs, resolver)
     write_ability_map(data_dir, ability_map)
+
+    # attribution moves general lines into abilities/perks (needs the ability map)
+    for site_dir in ("en", "cn"):
+        for patch_file in (data_dir / "patches" / site_dir).glob("*.json"):
+            data = json.loads(patch_file.read_text(encoding="utf-8"))
+            classify_general(data, resolver, ability_map)
+            fix_hash_slugs(data, resolver, ability_map)
+            patch_file.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
+
+    # map reflects the post-attribution data (bracket-attached abilities included)
+    ability_map = build_ability_map(data_dir, pair_result.pairs, resolver)
+    write_ability_map(data_dir, ability_map)
+
+    ensure_hash_schema(data_dir, load_manifest(data_dir))
 
     build_hero_files(data_dir, NameResolver(data_dir / "names.json"))
 
@@ -235,6 +263,12 @@ def build_hero_files(data_dir: pathlib.Path, resolver: NameResolver | None = Non
     timeline: dict[str, list[dict]] = {}
     meta: dict[str, dict] = {}
     resolver = resolver or NameResolver(data_dir / "names.json")
+    ability_kinds: dict[str, str] = {}
+    ability_map_path = data_dir / "ability_map.json"
+    if ability_map_path.exists():
+        ability_map = json.loads(ability_map_path.read_text(encoding="utf-8"))
+        ability_kinds = {slug: entry.get("kind", "ability")
+                         for slug, entry in ability_map.get("abilities", {}).items()}
 
     for site_dir in ("en", "cn"):
         for patch_file in sorted((data_dir / "patches" / site_dir).glob("*.json")):
@@ -256,15 +290,17 @@ def build_hero_files(data_dir: pathlib.Path, resolver: NameResolver | None = Non
                         a_name = ability.get("name_en") or ability.get("name_cn") or ""
                         a_site = "en" if ability.get("name_en") else "cn"
                         a_slug = ability.get("slug") or resolver.ability(a_name, a_site, slug)[0]
+                        a_dim = ability_kinds.get(a_slug, "ability")
                         for change in ability.get("changes", []):
                             timeline.setdefault(slug, []).append({
                                 "patch": data["id"], "date": data["date"], "site": data["site"],
                                 "url": data.get("url"), "patch_title": data.get("title"),
                                 "kind": "ability",
+                                "dimension": a_dim,
                                 "ability_slug": a_slug,
                                 "ability_en": ability.get("name_en"),
                                 "ability_cn": ability.get("name_cn"),
-                                **{k: change.get(k) for k in ("text_en", "text_cn", "before", "after", "metric")},
+                                **{k: change.get(k) for k in ("text_en", "text_cn", "before", "after", "by", "by_pct", "metric", "unit")},
                             })
                     for perk in hero.get("perks", []):
                         p_name = perk.get("name_en") or perk.get("name_cn") or ""
@@ -274,6 +310,7 @@ def build_hero_files(data_dir: pathlib.Path, resolver: NameResolver | None = Non
                             "patch": data["id"], "date": data["date"], "site": data["site"],
                             "url": data.get("url"), "patch_title": data.get("title"),
                             "kind": "perk",
+                            "dimension": "perk",
                             "perk_slug": p_slug,
                             "perk_en": perk.get("name_en"),
                             "perk_cn": perk.get("name_cn"),
@@ -282,25 +319,45 @@ def build_hero_files(data_dir: pathlib.Path, resolver: NameResolver | None = Non
                             "lines_cn": perk.get("lines_cn", []),
                         })
                     for line in hero.get("general", []):
+                        entry_text = line if isinstance(line, str) else (
+                            line.get("text_en") or line.get("text_cn") or "")
+                        if not entry_text:
+                            continue
                         timeline.setdefault(slug, []).append({
                             "patch": data["id"], "date": data["date"], "site": data["site"],
                             "url": data.get("url"), "patch_title": data.get("title"),
                             "kind": "general",
-                            "text_en": line if data["site"] == "en" else None,
-                            "text_cn": line if data["site"] == "cn" else None,
+                            "dimension": line.get("dimension") if isinstance(line, dict) else None,
+                            "subject": line.get("subject") if isinstance(line, dict) else None,
+                            "text_en": entry_text if data["site"] == "en" else None,
+                            "text_cn": entry_text if data["site"] == "cn" else None,
+                            **{k: line.get(k) for k in ("before", "after", "by", "by_pct", "metric", "unit")
+                               if isinstance(line, dict)},
                         })
 
     heroes_dir = data_dir / "heroes"
     heroes_dir.mkdir(parents=True, exist_ok=True)
+    from .values import build_values
+
     for slug, entries in timeline.items():
         entries.sort(key=lambda e: e["date"], reverse=True)
         with open(heroes_dir / f"{slug}.json", "w", encoding="utf-8") as fh:
             json.dump({"slug": slug, "names": {"en": meta[slug]["en"], "cn": meta[slug]["cn"]},
-                       "role": meta[slug]["role"], "timeline": entries},
+                       "role": meta[slug]["role"], "timeline": entries,
+                       "values": build_values(entries)},
                       fh, ensure_ascii=False, indent=1)
 
+    latest = "2016-05-01"
+    for site_dir in ("en", "cn"):
+        for patch_file in (data_dir / "patches" / site_dir).glob("*.json"):
+            try:
+                patch_data = json.loads(patch_file.read_text(encoding="utf-8"))
+            except Exception:
+                continue
+            if patch_data.get("date", "") > latest:
+                latest = patch_data["date"]
     index = {
-        "updated": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "updated": f"{latest}T00:00:00Z",
         "heroes": sorted(meta.values(), key=lambda h: h["slug"]),
     }
     with open(data_dir / "heroes_index.json", "w", encoding="utf-8") as fh:

@@ -53,21 +53,33 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Can now be canceled with Crouch.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Canceling the ability with Crouch in the first .4 seconds reduces the cooldown to 1.5 seconds.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -81,7 +93,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "knockback",
+         "by": null,
+         "by_pct": 900.0,
+         "unit": null,
+         "raw_metric": "knockback"
         }
        ]
       }
@@ -94,7 +110,18 @@
      "role": "tank",
      "dev_note": "Developer Comments: Doomfist is a mobility hero, so there’s no reason he should be slowing down while blocking right?",
      "general": [
-      "Power Block and Meteor Strike also empower your next Quick Melee."
+      {
+       "text_en": "Power Block and Meteor Strike also empower your next Quick Melee.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -108,7 +135,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -133,21 +164,33 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Cooldown now starts when blade starts returning to Junker Queen.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Cooldown decreased from 6 to 4 seconds.",
          "text_cn": null,
          "before": 6.0,
          "after": 4.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": -2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       }
@@ -160,8 +203,30 @@
      "role": "tank",
      "dev_note": "Developer Comments: Smallga",
      "general": [
-      "Health decreased from 350 to 25.",
-      "Mauga’s Scale has been reduced by 50%."
+      {
+       "text_en": "Health decreased from 350 to 25.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 350.0,
+       "after": 25.0,
+       "by": -325.0,
+       "by_pct": null,
+       "metric": "health",
+       "unit": "hp"
+      },
+      {
+       "text_en": "Mauga’s Scale has been reduced by 50%.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 50.0,
+       "metric": "s scale has been",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -175,7 +240,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -200,14 +269,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Explodes when it sticks.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -220,7 +297,18 @@
      "role": "tank",
      "dev_note": "Developer Comments: We heard Ramattra wasn’t suffering enough so we’ve increased his suffering so that when he causes suffering his enemies will suffer as much as he has suffered.",
      "general": [
-      "Base armor increased from 100 to 225."
+      {
+       "text_en": "Base armor increased from 100 to 225.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 100.0,
+       "after": 225.0,
+       "by": 125.0,
+       "by_pct": null,
+       "metric": "base armor",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -234,42 +322,66 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "No longer pauses its duration while dealing damage.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Movement Speed Increased by 20%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "move_speed",
+         "by": null,
+         "by_pct": 20.0,
+         "unit": null,
+         "raw_metric": "movement speed"
         },
         {
          "text_en": "Duration increased from 3 to 5 seconds.",
          "text_cn": null,
          "before": 3.0,
          "after": 5.0,
-         "metric": "duration"
+         "metric": "duration",
+         "by": 2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "duration"
         },
         {
          "text_en": "Damage Per Second Decreased from 30 to 20.",
          "text_cn": null,
          "before": 30.0,
          "after": 20.0,
-         "metric": "damage per second"
+         "metric": "damage",
+         "by": -10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage per second"
         },
         {
          "text_en": "Radius decreased from 12 to 9 meters.",
          "text_cn": null,
          "before": 12.0,
          "after": 9.0,
-         "metric": "radius"
+         "metric": "radius",
+         "by": -3.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "radius"
         }
        ]
       },
@@ -283,35 +395,55 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Always has Annihilation active while in use.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Fully heals Ramattra on use.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Pummel Damage increased from 60 to 75.",
          "text_cn": null,
          "before": 60.0,
          "after": 75.0,
-         "metric": "pummel damage"
+         "metric": "pummel damage",
+         "by": 15.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "pummel damage"
         },
         {
          "text_en": "Pummel Range has been increased from 10 to 15.",
          "text_cn": null,
          "before": 10.0,
          "after": 15.0,
-         "metric": "pummel range has been"
+         "metric": "pummel range has been",
+         "by": 5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "pummel range has been"
         }
        ]
       }
@@ -336,28 +468,44 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Health decreases by 20% every second while reflecting.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Barrier size decreased to 50% while Reflecting.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Camera Lock input now bound to Quick Melee.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -382,14 +530,22 @@
          "text_cn": null,
          "before": 26.0,
          "after": 80.0,
-         "metric": "projectile speed"
+         "metric": "projectile_speed",
+         "by": 54.0,
+         "by_pct": null,
+         "unit": "m/s",
+         "raw_metric": "projectile speed"
         },
         {
          "text_en": "Projectile Damage increased from 0 to 40.",
          "text_cn": null,
          "before": 0.0,
          "after": 40.0,
-         "metric": "projectile damage"
+         "metric": "projectile damage",
+         "by": 40.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "projectile damage"
         }
        ]
       }
@@ -414,21 +570,33 @@
          "text_cn": null,
          "before": 37.0,
          "after": 30.0,
-         "metric": "projectile speed"
+         "metric": "projectile_speed",
+         "by": -7.0,
+         "by_pct": null,
+         "unit": "m/s",
+         "raw_metric": "projectile speed"
         },
         {
          "text_en": "Projectile Gravity decreased from 18 to 2.",
          "text_cn": null,
          "before": 18.0,
          "after": 2.0,
-         "metric": "projectile gravity"
+         "metric": "projectile gravity",
+         "by": -16.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "projectile gravity"
         },
         {
          "text_en": "Pressing the ability button while Accretion is active will cause the rock to crash into the ground. When crashed, it will deal 50 damage in a 4-meter radius and stun anyone damaged.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -453,7 +621,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -467,7 +639,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -480,7 +656,18 @@
      "role": "tank",
      "dev_note": "Developer Comments: We're preparing to retcon Wrecking Ball into a crab. Hope these changes are sufficiently immersive.",
      "general": [
-      "Wrecking Ball’s sideways movement speed increased by 55%."
+      {
+       "text_en": "Wrecking Ball’s sideways movement speed increased by 55%.",
+       "text_cn": null,
+       "subject": "move_speed",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 55.0,
+       "metric": "s sideways movement speed",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -494,7 +681,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -507,7 +698,18 @@
      "role": "tank",
      "dev_note": "Developer Comments: Please don’t burst Zarya’s bubble, no matter how big it gets.",
      "general": [
-      "Developer Comments: Please don’t burst Zarya’s bubble, no matter how big it gets."
+      {
+       "text_en": "Developer Comments: Please don’t burst Zarya’s bubble, no matter how big it gets.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -521,7 +723,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -555,21 +761,33 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Weapon Swap.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Call in F.R.E.D. to charge for a short duration before leaving.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -594,35 +812,55 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Movement speed penalty has been removed.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Configuration: Assault now has 150 Ammo.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Damage per bullet decreased from 12 to 5.",
          "text_cn": null,
          "before": 12.0,
          "after": 5.0,
-         "metric": "damage per bullet"
+         "metric": "damage",
+         "by": -7.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage per bullet"
         },
         {
          "text_en": "Now deals 1.5x damage for critical hits.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -636,21 +874,33 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Grants a movement speed bonus of 35%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Configuration: Sentry now fires shotgun blasts.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -675,14 +925,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "One enemy is marked. Kill them to gain 50 health until the next time you die. After 5 kills, you gain 1 health each time.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -707,7 +965,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -721,35 +983,55 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Can now duplicate allies.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Duplicate’s Health no longer capped at 300 health.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Duplicate now gains an extra 100 Shields.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Bonus Ult Charge Gain Rate increased from 4 to 6.5.",
          "text_cn": null,
          "before": 4.0,
          "after": 6.5,
-         "metric": "bonus ult charge gain rate"
+         "metric": "bonus ult charge gain rate",
+         "by": 2.5,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "bonus ult charge gain rate"
         }
        ]
       }
@@ -774,7 +1056,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -799,21 +1085,33 @@
          "text_cn": null,
          "before": 1.0,
          "after": 3.0,
-         "metric": "number of ricochets"
+         "metric": "number of ricochets",
+         "by": 2.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "number of ricochets"
         },
         {
          "text_en": "Number of projectiles per shot increased from 1 to 5.",
          "text_cn": null,
          "before": 1.0,
          "after": 5.0,
-         "metric": "number of projectiles per shot"
+         "metric": "number of projectiles per shot",
+         "by": 4.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "number of projectiles per shot"
         },
         {
          "text_en": "Damage of each projectile decreased by 78%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "damage",
+         "by": null,
+         "by_pct": 78.0,
+         "unit": null,
+         "raw_metric": "damage of each projectile"
         }
        ]
       }
@@ -838,7 +1136,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -863,28 +1165,44 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Press Jump in the Air to activate.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Creates a large Ice Pillar under Mei.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Can be canceled with Interact.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -909,21 +1227,33 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Press Crouch in the Air to activate.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Dash downwards towards the ground.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -948,28 +1278,44 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Damage per bullet reduced from 5.4 to 2.8.",
          "text_cn": null,
          "before": 5.4,
          "after": 2.8,
-         "metric": "damage per bullet"
+         "metric": "damage",
+         "by": -2.6,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage per bullet"
         },
         {
          "text_en": "Ammo increased from 8 to 16.",
          "text_cn": null,
          "before": 8.0,
          "after": 16.0,
-         "metric": "ammo"
+         "metric": "ammo",
+         "by": 8.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "ammo"
         },
         {
          "text_en": "Secondary Fire now shoots the other shotgun.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -994,14 +1340,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "You can deploy Disruptor Shot early by pressing E again.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -1026,14 +1380,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Using Heavy Pulse Rifle while sprinting has a spread of 2.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -1058,7 +1420,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -1083,21 +1449,33 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Any ally can use Teleporter regardless of their location.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Teleporter duration decreased from 10 to 4 seconds.",
          "text_cn": null,
          "before": 10.0,
          "after": 4.0,
-         "metric": "teleporter duration"
+         "metric": "teleporter duration",
+         "by": -6.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "teleporter duration"
         }
        ]
       }
@@ -1122,7 +1500,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -1147,7 +1529,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -1172,14 +1558,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Getting a critical hit with Widow’s Kiss’s secondary fire replenishes one charge of the ability.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -1213,14 +1607,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Enemies take fall damage when they land.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -1245,7 +1647,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -1259,7 +1665,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -1272,8 +1682,30 @@
      "role": "support",
      "dev_note": "Developer Comments: Bigitte",
      "general": [
-      "Scale increased by 1.5x.",
-      "Armor increased from 50 to 150."
+      {
+       "text_en": "Scale increased by 1.5x.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Armor increased from 50 to 150.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 50.0,
+       "after": 150.0,
+       "by": 100.0,
+       "by_pct": null,
+       "metric": "armor",
+       "unit": "hp"
+      }
      ],
      "perks": [],
      "abilities": [
@@ -1287,14 +1719,22 @@
          "text_cn": null,
          "before": 250.0,
          "after": 700.0,
-         "metric": "health"
+         "metric": "health",
+         "by": 450.0,
+         "by_pct": null,
+         "unit": "hp",
+         "raw_metric": "health"
         },
         {
          "text_en": "Always uses bigger size.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -1308,14 +1748,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Movement Speed bonus increased from 1.15x to 1.3x.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -1340,28 +1788,44 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Movement speed bonus 1.2x.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Attack charge time reduced by 40%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "attack charge time",
+         "by": null,
+         "by_pct": 40.0,
+         "unit": null,
+         "raw_metric": "attack charge time"
         },
         {
          "text_en": "Healing recharge bonus 1.2x.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -1375,14 +1839,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Illari is always Solar Installed when the sun is out.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -1407,14 +1879,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Increased duration from .65 to 1 second.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -1428,14 +1908,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Kiriko can jump an extra time in the air",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -1460,7 +1948,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -1485,21 +1977,33 @@
          "text_cn": null,
          "before": 20.0,
          "after": 30.0,
-         "metric": "ammo"
+         "metric": "ammo",
+         "by": 10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "ammo"
         },
         {
          "text_en": "Recovery decreased from .14 seconds per bullet to .125 seconds per bullet.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Now Shoots 3 bullets per volley during Speed Boost and 5 bullets per volley during Healing Boost.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -1513,7 +2017,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -1538,70 +2046,110 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Secondary Fire is now Damage Staff. (Ability 2 on Controller.)",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Damage Staff Fires Caduceus Blaster projectiles.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Projectiles have a smaller size.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Size gets bigger during ult.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "2 more damage.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Projectiles reload automatically while not firing.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Projectiles reload at twice the speed while healing or after 4 seconds without firing.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Can fire projectiles at a reduced firing speed if healing beam is active.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Healing beam can heal at a reduced rate if Damage Staff is active.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -1615,7 +2163,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -1640,7 +2192,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -1654,7 +2210,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -1679,42 +2239,66 @@
          "text_cn": null,
          "before": 25.0,
          "after": 32.0,
-         "metric": "ammo"
+         "metric": "ammo",
+         "by": 7.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "ammo"
         },
         {
          "text_en": "Secondary Fire charge time per projectile decreased from .52 to .47.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Secondary Fire projectiles fire 33% faster.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Secondary Fire damage decreased by 30%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "secondary fire damage",
+         "by": null,
+         "by_pct": 30.0,
+         "unit": null,
+         "raw_metric": "secondary fire damage"
         },
         {
          "text_en": "You can now charge up to 8 Orbs with Secondary Fire.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Zenyatta’s accelerates upward while charging Secondary Fire.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -1725,5 +2309,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:6c61ee65c9376ac449f3e1d362471a89dc389dfab9e2fa43276ba77f19d5dcda"
+ "hash": "sha256:de011ef880e14958764b9fbc29488de4c912f031df7f4f1e0379a2fa1d52e789"
 }

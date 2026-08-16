@@ -58,7 +58,11 @@
          "text_cn": null,
          "before": 10.0,
          "after": 12.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": 2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       }
@@ -83,7 +87,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -97,21 +105,33 @@
          "text_cn": null,
          "before": 200.0,
          "after": 250.0,
-         "metric": "maximum health"
+         "metric": "maximum health",
+         "by": 50.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "maximum health"
         },
         {
          "text_en": "Regeneration rate decreased from 100 to 85 health per second",
          "text_cn": null,
          "before": 100.0,
          "after": 85.0,
-         "metric": "regeneration rate"
+         "metric": "regeneration rate",
+         "by": -15.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "regeneration rate"
         },
         {
          "text_en": "Cooldown when destroyed increased from 3 to 5 seconds",
          "text_cn": null,
          "before": 3.0,
          "after": 5.0,
-         "metric": "cooldown when destroyed"
+         "metric": "cooldown",
+         "by": 2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown when destroyed"
         }
        ]
       }
@@ -136,7 +156,11 @@
          "text_cn": null,
          "before": 50.0,
          "after": 40.0,
-         "metric": "movement penalty"
+         "metric": "movement penalty",
+         "by": -10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "movement penalty"
         }
        ]
       },
@@ -150,7 +174,11 @@
          "text_cn": null,
          "before": 1.5,
          "after": 1.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": -0.5,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       },
@@ -164,7 +192,11 @@
          "text_cn": null,
          "before": 0.5,
          "after": 0.25,
-         "metric": "activation delay"
+         "metric": "activation delay",
+         "by": -0.25,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "activation delay"
         }
        ]
       }
@@ -189,7 +221,11 @@
          "text_cn": null,
          "before": 0.156,
          "after": 0.1,
-         "metric": "trigger delay"
+         "metric": "trigger delay",
+         "by": -0.056,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "trigger delay"
         }
        ]
       },
@@ -203,7 +239,11 @@
          "text_cn": null,
          "before": 1.5,
          "after": 0.9,
-         "metric": "time to take control of junkrat post detonation has been"
+         "metric": "time to take control of junkrat post detonation has been",
+         "by": -0.6,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "time to take control of junkrat post detonation has been"
         }
        ]
       }
@@ -233,5 +273,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:763c25c3207478548f7ae83b731a3a58c78e3f245e91852721b7906579963335"
+ "hash": "sha256:10d89a7e8647b585f7bc4170ecbb3cb8464ef75d69f53109679bfedd881716f1"
 }

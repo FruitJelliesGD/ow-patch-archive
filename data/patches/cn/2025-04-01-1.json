@@ -35,11 +35,66 @@
      "role": "tank",
      "dev_note": "设计师观点：MEKA小队在与鬼神智械的战斗中陷入不利局面，物资严重短缺。所以他们不得不开始实验新的设计，缩减机甲所用的材料和分配给队员的口粮。",
      "general": [
-      "机甲体型缩小50%。",
-      "机甲基础生命值从375降低至25。",
-      "机甲护甲生命值不变。",
-      "驾驶员D.Va的体型缩小50%。",
-      "驾驶员基础生命值从175降低至25。"
+      {
+       "text_en": null,
+       "text_cn": "机甲体型缩小50%。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "机甲基础生命值从375降低至25。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 375.0,
+       "after": 25.0,
+       "by": -350.0,
+       "by_pct": null,
+       "metric": "机甲基础生命值",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "机甲护甲生命值不变。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "驾驶员D.Va的体型缩小50%。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "驾驶员基础生命值从175降低至25。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 175.0,
+       "after": 25.0,
+       "by": -150.0,
+       "by_pct": null,
+       "metric": "驾驶员基础生命值",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -53,14 +108,22 @@
          "text_cn": "射速提高100%。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "rate_of_fire",
+         "by": null,
+         "by_pct": 100.0,
+         "unit": null,
+         "raw_metric": "射速"
         },
         {
          "text_en": null,
          "text_cn": "伤害降低50%。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "damage",
+         "by": null,
+         "by_pct": 50.0,
+         "unit": null,
+         "raw_metric": "伤害"
         }
        ]
       },
@@ -74,21 +137,33 @@
          "text_cn": "射速提高100%。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "rate_of_fire",
+         "by": null,
+         "by_pct": 100.0,
+         "unit": null,
+         "raw_metric": "射速"
         },
         {
          "text_en": null,
          "text_cn": "装填速度提高25%。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "装填速度",
+         "by": null,
+         "by_pct": 25.0,
+         "unit": null,
+         "raw_metric": "装填速度"
         },
         {
          "text_en": null,
          "text_cn": "伤害降低25%。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "damage",
+         "by": null,
+         "by_pct": 25.0,
+         "unit": null,
+         "raw_metric": "伤害"
         }
        ]
       },
@@ -102,7 +177,11 @@
          "text_cn": "在自毁期间按“互动”键可将机甲原地定住。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -127,7 +206,11 @@
          "text_cn": "不再是主要攻击模式。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -141,28 +224,44 @@
          "text_cn": "替代手炮成为主要攻击模式。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": null,
          "text_cn": "近身攻击速度提高50%。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "近身攻击速度",
+         "by": null,
+         "by_pct": 50.0,
+         "unit": null,
+         "raw_metric": "近身攻击速度"
         },
         {
          "text_en": null,
          "text_cn": "近身攻击伤害提高50%。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "近身攻击伤害",
+         "by": null,
+         "by_pct": 50.0,
+         "unit": null,
+         "raw_metric": "近身攻击伤害"
         },
         {
          "text_en": null,
          "text_cn": "“末日铁拳”在近身攻击时会冲向附近的敌人。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -176,21 +275,33 @@
          "text_cn": "近身攻击伤害可以填充“火箭重拳”蓄力计量条。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": null,
          "text_cn": "蓄力计量条不再衰减。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": null,
          "text_cn": "蓄力时间缩短50%。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "蓄力时间",
+         "by": null,
+         "by_pct": 50.0,
+         "unit": null,
+         "raw_metric": "蓄力时间"
         }
        ]
       },
@@ -204,7 +315,11 @@
          "text_cn": "冷却时间缩短1秒。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -229,14 +344,22 @@
          "text_cn": "击退效果提高400%。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "knockback",
+         "by": null,
+         "by_pct": 400.0,
+         "unit": null,
+         "raw_metric": "击退效果"
         },
         {
          "text_en": null,
          "text_cn": "冷却时间从12秒缩短至8秒。",
          "before": 12.0,
          "after": 8.0,
-         "metric": "冷却时间"
+         "metric": "cooldown",
+         "by": -4.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "冷却时间"
         }
        ]
       }
@@ -261,14 +384,22 @@
          "text_cn": "现在无法通过辅助攻击模式召回。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": null,
          "text_cn": "在长按辅助攻击模式时，“渣客女王”会飞向格雷西所在位置。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -282,21 +413,33 @@
          "text_cn": "不再影响盟友。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": null,
          "text_cn": "过量生命值提高50%。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "overhealth",
+         "by": null,
+         "by_pct": 50.0,
+         "unit": null,
+         "raw_metric": "过量生命值"
         },
         {
          "text_en": null,
          "text_cn": "移动速度加成从30%提高至60%。",
          "before": 30.0,
          "after": 60.0,
-         "metric": "移动速度加成"
+         "metric": "move_speed",
+         "by": 30.0,
+         "by_pct": null,
+         "unit": "pct",
+         "raw_metric": "移动速度加成"
         }
        ]
       }
@@ -309,7 +452,18 @@
      "role": "tank",
      "dev_note": "设计师观点：“老枪”和“恰恰”现在会推动它们的老爸，还有任何挂在他身上的人，自由地飞翔。",
      "general": [
-      "当在空中同时用两把链式机枪开火时，毛加会被反作用力推向瞄准的反方向。"
+      {
+       "text_en": null,
+       "text_cn": "当在空中同时用两把链式机枪开火时，毛加会被反作用力推向瞄准的反方向。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -323,14 +477,22 @@
          "text_cn": "弹药量从300降低至150。",
          "before": 300.0,
          "after": 150.0,
-         "metric": "弹药量"
+         "metric": "ammo",
+         "by": -150.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "弹药量"
         },
         {
          "text_en": null,
          "text_cn": "装填速度提高15%。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "装填速度",
+         "by": null,
+         "by_pct": 15.0,
+         "unit": null,
+         "raw_metric": "装填速度"
         }
        ]
       },
@@ -344,14 +506,22 @@
          "text_cn": "弹药量从300降低至150。",
          "before": 300.0,
          "after": 150.0,
-         "metric": "弹药量"
+         "metric": "ammo",
+         "by": -150.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "弹药量"
         },
         {
          "text_en": null,
          "text_cn": "装填速度提高15%。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "装填速度",
+         "by": null,
+         "by_pct": 15.0,
+         "unit": null,
+         "raw_metric": "装填速度"
         }
        ]
       },
@@ -365,7 +535,11 @@
          "text_cn": "现在可以在“笼中斗”期间使用。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -379,14 +553,22 @@
          "text_cn": "锁链现在会以毛加为中心，并会跟随他移动。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": null,
          "text_cn": "在技能持续期间为毛加提供无限弹药。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -399,7 +581,18 @@
      "role": "tank",
      "dev_note": "设计师观点：“我发现你瞥了我一眼。你是想骑着我上战场吧？”",
      "general": [
-      "在位于奥丽莎附近时，半藏可以按“互动”键，骑着她冲入战斗，并提高奥丽莎的移动速度。"
+      {
+       "text_en": null,
+       "text_cn": "在位于奥丽莎附近时，半藏可以按“互动”键，骑着她冲入战斗，并提高奥丽莎的移动速度。",
+       "subject": "move_speed",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -413,7 +606,11 @@
          "text_cn": "“标枪旋击”现在会将敌人拽向奥丽莎。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -438,7 +635,11 @@
          "text_cn": "现在会逆转位于其中的所有敌人的重力。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -463,21 +664,33 @@
          "text_cn": "冷却时间从7秒缩短至3.5秒。",
          "before": 7.0,
          "after": 3.5,
-         "metric": "冷却时间"
+         "metric": "cooldown",
+         "by": -3.5,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "冷却时间"
         },
         {
          "text_en": null,
          "text_cn": "转向速度提高150%。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "转向速度",
+         "by": null,
+         "by_pct": 150.0,
+         "unit": null,
+         "raw_metric": "转向速度"
         },
         {
          "text_en": null,
          "text_cn": "“冲锋”会持续到撞墙为止。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -502,7 +715,11 @@
          "text_cn": "现在会同时掷出3个链钩。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -527,14 +744,22 @@
          "text_cn": "现在会弹开，而不是吸收射弹。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": null,
          "text_cn": "“西格玛”在使用“动能俘获”期间可以自由飞行。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -559,7 +784,11 @@
          "text_cn": "使用“喷射背包”下落时，按“蹲伏”键重重砸击可造成更多伤害。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -572,8 +801,30 @@
      "role": "tank",
      "dev_note": "设计师观点：哈蒙德已经决定要模仿风滚草和雪球。",
      "general": [
-      "体型缩小50%。",
-      "“破坏球”会根据体型大小获得过量生命值。"
+      {
+       "text_en": null,
+       "text_cn": "体型缩小50%。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "“破坏球”会根据体型大小获得过量生命值。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -587,7 +838,11 @@
          "text_cn": "在使用“动力铁球”期间对敌人造成伤害可以增加“破坏球”的体型。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -601,7 +856,11 @@
          "text_cn": "效果范围会根据“破坏球”的体型而增加。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -626,7 +885,11 @@
          "text_cn": "主要攻击模式现在会在击中敌方英雄和地形之后反射。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -660,7 +923,11 @@
          "text_cn": "增加对敌方英雄的击退效果，并短暂降低他们的空中控制力。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -674,21 +941,33 @@
          "text_cn": "鲍勃不再进行射击。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": null,
          "text_cn": "鲍勃现在会反复冲向最近的敌人，并将他们击飞到空中。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": null,
          "text_cn": "终极技能消耗降低70%。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "ultimate_cost",
+         "by": null,
+         "by_pct": 70.0,
+         "unit": null,
+         "raw_metric": "终极技能消耗"
         }
        ]
       }
@@ -713,7 +992,11 @@
          "text_cn": "现在会生成一个爆炸训练机器人。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -727,7 +1010,11 @@
          "text_cn": "击中时会生成爆炸训练机器人。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -752,7 +1039,11 @@
          "text_cn": "主要和辅助攻击模式都会进行三次弹射。弹射的子弹会造成更高伤害。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -777,14 +1068,22 @@
          "text_cn": "现在会发射黏性炸弹。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": null,
          "text_cn": "伤害从25降低至14。",
          "before": 25.0,
          "after": 14.0,
-         "metric": "伤害"
+         "metric": "damage",
+         "by": -11.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "伤害"
         }
        ]
       },
@@ -798,14 +1097,22 @@
          "text_cn": "现在会发射一簇“三角射击”射弹。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": null,
          "text_cn": "伤害从17提高至20。",
          "before": 17.0,
          "after": 20.0,
-         "metric": "伤害"
+         "metric": "damage",
+         "by": 3.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "伤害"
         }
        ]
       },
@@ -819,14 +1126,22 @@
          "text_cn": "飞行会始终处于激活状态。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": null,
          "text_cn": "激活飞行现在会让“回声”疾冲一小段距离。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -840,7 +1155,11 @@
          "text_cn": "现在会对生命值超过一半的敌人造成额外伤害。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -853,8 +1172,30 @@
      "role": "damage",
      "dev_note": "设计师观点：源氏可以再一次通过发送那个烦人的表情来治疗自己，至于负面后果，请自负。",
      "general": [
-      "源氏现在又可以在请求治疗时偶尔也治疗自己了。",
-      "不要滥用。别说没警告过你。"
+      {
+       "text_en": null,
+       "text_cn": "源氏现在又可以在请求治疗时偶尔也治疗自己了。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "不要滥用。别说没警告过你。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -878,7 +1219,11 @@
          "text_cn": "完全蓄力的箭矢会弹射两次。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -892,7 +1237,11 @@
          "text_cn": "每支箭都会弹射最多5次。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -906,7 +1255,11 @@
          "text_cn": "在攀墙时，按“装填”键将自己挂在墙上。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -920,35 +1273,55 @@
          "text_cn": "新被动技能",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": null,
          "text_cn": "在位于奥丽莎附近时，按“互动”键以骑着她冲入战斗。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": null,
          "text_cn": "在骑乘时，受到的伤害降低25%。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "受到的伤害",
+         "by": null,
+         "by_pct": 25.0,
+         "unit": null,
+         "raw_metric": "受到的伤害"
         },
         {
          "text_en": null,
          "text_cn": "在骑乘时，奥丽莎控制半藏的移动。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": null,
          "text_cn": "在骑乘时，体感凉爽度增加20%。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "体感凉爽度",
+         "by": null,
+         "by_pct": 20.0,
+         "unit": null,
+         "raw_metric": "体感凉爽度"
         }
        ]
       }
@@ -973,28 +1346,44 @@
          "text_cn": "现在可以同时放置5枚地雷。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": null,
          "text_cn": "最大伤害降低50%。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "最大伤害",
+         "by": null,
+         "by_pct": 50.0,
+         "unit": null,
+         "raw_metric": "最大伤害"
         },
         {
          "text_en": null,
          "text_cn": "最大使用次数增加到5次。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": null,
          "text_cn": "冷却时间缩短至4秒。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -1008,21 +1397,33 @@
          "text_cn": "在使用“炸弹轮胎”时，“狂鼠”会进入隐身状态，无法被锁定为目标。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": null,
          "text_cn": "当“炸弹轮胎”爆炸时，“狂鼠”会瞬移过去。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": null,
          "text_cn": "如果“炸弹轮胎”被摧毁，“狂鼠”也会阵亡。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -1047,14 +1448,22 @@
          "text_cn": "现在会制造一场小型“暴雪”。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": null,
          "text_cn": "美现在可以在使用“急冻”期间移动。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -1067,9 +1476,42 @@
      "role": "damage",
      "dev_note": "设计师观点：修复了莫伊拉被误设为支援英雄的错误，并移除了不应该有的治疗能力。这个老问题让莫伊拉的专精玩家们一直无法兑现他们的伤害输出潜力，我们花了七年的时间才修复，感谢大家的耐心等待。",
      "general": [
-      "改为了输出职责。",
-      "现在拥有输出职责被动。",
-      "不再拥有支援职责被动。"
+      {
+       "text_en": null,
+       "text_cn": "改为了输出职责。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "现在拥有输出职责被动。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "不再拥有支援职责被动。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -1083,7 +1525,11 @@
          "text_cn": "主要攻击模式不再进行治疗，而是改为造成伤害。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -1097,7 +1543,11 @@
          "text_cn": "移除了治疗法球。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -1111,7 +1561,11 @@
          "text_cn": "现在只会造成伤害。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -1136,7 +1590,11 @@
          "text_cn": "直接击中会对空中敌人造成更多伤害。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -1150,7 +1608,11 @@
          "text_cn": "拉拽附近的敌人与“法老之鹰”一同飞行。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -1164,7 +1626,11 @@
          "text_cn": "拉拽附近的敌人与“法老之鹰”一同飞行。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -1189,35 +1655,55 @@
          "text_cn": "“死神”现在无法装填弹药，子弹打光的霰弹枪都会扔在地上。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": null,
          "text_cn": "他必须要拾起扔掉的霰弹枪才能恢复弹药。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": null,
          "text_cn": "弹药打光时，移动速度提高25%。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "move_speed",
+         "by": null,
+         "by_pct": 25.0,
+         "unit": null,
+         "raw_metric": "移动速度"
         },
         {
          "text_en": null,
          "text_cn": "拾起霰弹枪会在短时间内提高攻击速度。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": null,
          "text_cn": "备注：没有霰弹枪将很难对敌人发起近身攻击。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -1242,21 +1728,33 @@
          "text_cn": "最大充能现在为300%。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": null,
          "text_cn": "在超过100%充能时，电磁炮的辅助攻击模式会造成更高伤害。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": null,
          "text_cn": "在超过100%充能时，发射电磁炮的辅助攻击模式会击退“索杰恩”。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -1269,8 +1767,30 @@
      "role": "damage",
      "dev_note": "设计师观点：“士兵：76”一直是个固执嘴硬的老兵，坚称他不需要任何帮助，跑起来依然比战场上的任何人都快。",
      "general": [
-      "“士兵：76”不再能看到盟友或敌人以及他自己的生命条。",
-      "被动治疗现在会更快开始，且治疗速度加快。"
+      {
+       "text_en": null,
+       "text_cn": "“士兵：76”不再能看到盟友或敌人以及他自己的生命条。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "被动治疗现在会更快开始，且治疗速度加快。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -1284,7 +1804,11 @@
          "text_cn": "奔跑速度提高100%。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "奔跑速度",
+         "by": null,
+         "by_pct": 100.0,
+         "unit": null,
+         "raw_metric": "奔跑速度"
         }
        ]
       }
@@ -1309,14 +1833,22 @@
          "text_cn": "对敌人使用“黑客入侵”会为自己提供移动速度和弹匣容量增益（最多10层）。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": null,
          "text_cn": "所有增益层数在死亡时消除。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -1341,14 +1873,22 @@
          "text_cn": "主要攻击模式造成的伤害现在会根据目标的最大生命值决定。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": null,
          "text_cn": "辅助攻击模式充能时间缩短。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -1362,28 +1902,44 @@
          "text_cn": "炮台生命值提高50%。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "炮台生命值",
+         "by": null,
+         "by_pct": 50.0,
+         "unit": null,
+         "raw_metric": "炮台生命值"
         },
         {
          "text_en": null,
          "text_cn": "冷却时间缩短40%。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "cooldown",
+         "by": null,
+         "by_pct": 40.0,
+         "unit": null,
+         "raw_metric": "冷却时间"
         },
         {
          "text_en": null,
          "text_cn": "射弹速度提高100%。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "射弹速度",
+         "by": null,
+         "by_pct": 100.0,
+         "unit": null,
+         "raw_metric": "射弹速度"
         },
         {
          "text_en": null,
          "text_cn": "现在可以贴在盟友身上。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -1408,14 +1964,22 @@
          "text_cn": "现在可以用“锻造锤”对炮台进行过量治疗。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": null,
          "text_cn": "得到过量治疗时，炮台的尺寸、伤害和生命值都会增加。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -1440,14 +2004,22 @@
          "text_cn": "在蹲下时使用“闪现”会与敌人发生碰撞。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": null,
          "text_cn": "与敌人发生碰撞可以造成伤害，并将对方击退。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -1472,14 +2044,22 @@
          "text_cn": "现在可以在钻地时飞行。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": null,
          "text_cn": "钻出可以进行更长时间的蓄力，以获得更强的效果。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -1504,7 +2084,11 @@
          "text_cn": "现在可以击中敌方英雄，造成伤害，并为“黑百合”提供过量生命值。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -1518,7 +2102,11 @@
          "text_cn": "在用“抓钩”击中英雄之后的第一次成功近身攻击将可以造成额外伤害。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -1552,21 +2140,33 @@
          "text_cn": "弹匣容量从15降低至1。",
          "before": 15.0,
          "after": 1.0,
-         "metric": "弹匣容量"
+         "metric": "弹匣容量",
+         "by": -14.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "弹匣容量"
         },
         {
          "text_en": null,
          "text_cn": "装填速度提高25%。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "装填速度",
+         "by": null,
+         "by_pct": 25.0,
+         "unit": null,
+         "raw_metric": "装填速度"
         },
         {
          "text_en": null,
          "text_cn": "伤害和治疗从75提高至150。",
          "before": 75.0,
          "after": 150.0,
-         "metric": "伤害和治疗"
+         "metric": "damage",
+         "by": 75.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "伤害和治疗"
         }
        ]
       }
@@ -1591,7 +2191,11 @@
          "text_cn": "在空中时按“蹲下”键可以踩踏敌人。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -1616,7 +2220,11 @@
          "text_cn": "已移除。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -1630,14 +2238,22 @@
          "text_cn": "新技能。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": null,
          "text_cn": "布丽吉塔可以使用“盾牌投掷”掷出她的盾牌，在敌人之间反复弹跳，造成击晕。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -1651,7 +2267,11 @@
          "text_cn": "在使用“集结号令”期间，“盾牌投掷”可以击中更多的敌人。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -1676,21 +2296,33 @@
          "text_cn": "主要攻击模式现在会治疗盟友，而非造成伤害。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": null,
          "text_cn": "辅助攻击模式现在会对敌人造成伤害，而非治疗盟友。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": null,
          "text_cn": "辅助攻击模式射程提高50%。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "辅助攻击模式射程",
+         "by": null,
+         "by_pct": 50.0,
+         "unit": null,
+         "raw_metric": "辅助攻击模式射程"
         }
        ]
       }
@@ -1715,7 +2347,11 @@
          "text_cn": "击退效果提高。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -1729,7 +2365,11 @@
          "text_cn": "逆转位于其中的所有盟友和敌人的重力。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -1754,7 +2394,11 @@
          "text_cn": "“瞬”现在会为雾子提供过量生命值，并提高攻击速度，但不再能够选择目标。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -1779,35 +2423,55 @@
          "text_cn": "射弹现在会自动追踪敌人。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": null,
          "text_cn": "每次射击打出的射弹数量从2发减少至1发。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": null,
          "text_cn": "射速降低35%。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "rate_of_fire",
+         "by": null,
+         "by_pct": 35.0,
+         "unit": null,
+         "raw_metric": "射速"
         },
         {
          "text_en": null,
          "text_cn": "射弹速度降低70%。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "射弹速度",
+         "by": null,
+         "by_pct": 70.0,
+         "unit": null,
+         "raw_metric": "射弹速度"
         },
         {
          "text_en": null,
          "text_cn": "当足够数量的射弹击中一名敌人时，这些射弹会爆炸，造成160伤害。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -1832,14 +2496,22 @@
          "text_cn": "在进行“滑墙”期间，卢西奥的移动速度、装填速度和攻击速度提高。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": null,
          "text_cn": "在落地后，“滑墙”提供的增益会继续生效几秒钟。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -1864,7 +2536,11 @@
          "text_cn": "现在会射出随机弹药。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -1889,21 +2565,33 @@
          "text_cn": "现在会发射黏性卡通大眼，而不是法珠。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": null,
          "text_cn": "伤害降低25%。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "damage",
+         "by": null,
+         "by_pct": 25.0,
+         "unit": null,
+         "raw_metric": "伤害"
         },
         {
          "text_en": null,
          "text_cn": "攻击速度提高50%。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "攻击速度",
+         "by": null,
+         "by_pct": 50.0,
+         "unit": null,
+         "raw_metric": "攻击速度"
         }
        ]
       }
@@ -1928,5 +2616,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:637a6e8a8d54441c1d128565af7fc3466e09d85eff3e1e1ec215970eedb09705"
+ "hash": "sha256:84c783992eb61a6f720605d2491932cac430a411729398a6c21d7d7a57d7e714"
 }

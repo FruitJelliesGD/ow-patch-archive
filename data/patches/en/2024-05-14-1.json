@@ -76,14 +76,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Cooldown reduced from 14 to 12 seconds.",
          "text_cn": null,
          "before": 14.0,
          "after": 12.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": -2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       }
@@ -108,7 +116,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -133,7 +145,11 @@
          "text_cn": null,
          "before": 50.0,
          "after": 60.0,
-         "metric": "impact damage"
+         "metric": "impact damage",
+         "by": 10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "impact damage"
         }
        ]
       },
@@ -147,7 +163,11 @@
          "text_cn": null,
          "before": 0.5,
          "after": 0.75,
-         "metric": "movement lockout duration for enemies"
+         "metric": "movement lockout duration for enemies",
+         "by": 0.25,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "movement lockout duration for enemies"
         }
        ]
       },
@@ -161,14 +181,22 @@
          "text_cn": null,
          "before": 130.0,
          "after": 165.0,
-         "metric": "damage"
+         "metric": "damage",
+         "by": 35.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage"
         },
         {
          "text_en": "Explosion knockback increased from 5 to 10.",
          "text_cn": null,
          "before": 5.0,
          "after": 10.0,
-         "metric": "explosion knockback"
+         "metric": "explosion knockback",
+         "by": 5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "explosion knockback"
         }
        ]
       }
@@ -193,14 +221,22 @@
          "text_cn": null,
          "before": 6.0,
          "after": 7.0,
-         "metric": "radius"
+         "metric": "radius",
+         "by": 1.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "radius"
         },
         {
          "text_en": "Duration increased from 3.5 to 4 seconds",
          "text_cn": null,
          "before": 3.5,
          "after": 4.0,
-         "metric": "duration"
+         "metric": "duration",
+         "by": 0.5,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "duration"
         }
        ]
       }
@@ -234,7 +270,11 @@
          "text_cn": null,
          "before": 40.0,
          "after": 45.0,
-         "metric": "impact damage"
+         "metric": "impact damage",
+         "by": 5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "impact damage"
         }
        ]
       }
@@ -259,7 +299,11 @@
          "text_cn": null,
          "before": 4.0,
          "after": 4.5,
-         "metric": "ultimate gain multiplier while transformed"
+         "metric": "ultimate gain multiplier while transformed",
+         "by": 0.5,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "ultimate gain multiplier while transformed"
         }
        ]
       }
@@ -272,7 +316,18 @@
      "role": "damage",
      "dev_note": "Developer Comment: The Dragonstrike ultimate hasn't been very effective outside of being used in a combo with other abilities that restrict enemy movement, so we're increasing its speed to help position it as less of a zoning tool and more likely to deal some damage.",
      "general": [
-      "Speed increased from 12 to 15 meters per second."
+      {
+       "text_en": "Speed increased from 12 to 15 meters per second.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 12.0,
+       "after": 15.0,
+       "by": 3.0,
+       "by_pct": null,
+       "metric": "speed",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -286,7 +341,11 @@
          "text_cn": null,
          "before": 12.0,
          "after": 15.0,
-         "metric": "speed"
+         "metric": "speed",
+         "by": 3.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "speed"
         }
        ]
       }
@@ -320,7 +379,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -355,5 +418,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:2294525e3e063275a02c0dc9ee0f1be332a4bf9f90666c5f11013476870e86e3"
+ "hash": "sha256:d4c036e651175d6b14ab98d000a285d6facb299679375f481ee73d7b660a82cd"
 }

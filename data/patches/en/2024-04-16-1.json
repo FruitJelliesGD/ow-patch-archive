@@ -161,7 +161,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -186,7 +190,11 @@
          "text_cn": null,
          "before": 90.0,
          "after": 105.0,
-         "metric": "impact damage"
+         "metric": "impact damage",
+         "by": 15.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "impact damage"
         }
        ]
       }
@@ -211,14 +219,22 @@
          "text_cn": null,
          "before": 2.75,
          "after": 3.0,
-         "metric": "knockdown duration"
+         "metric": "knockdown duration",
+         "by": 0.25,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "knockdown duration"
         },
         {
          "text_en": "Shockwave range increased from 20 to 25 meters.",
          "text_cn": null,
          "before": 20.0,
          "after": 25.0,
-         "metric": "shockwave range"
+         "metric": "shockwave range",
+         "by": 5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "shockwave range"
         }
        ]
       }
@@ -243,7 +259,11 @@
          "text_cn": null,
          "before": 16.5,
          "after": 20.0,
-         "metric": "movement speed"
+         "metric": "move_speed",
+         "by": 3.5,
+         "by_pct": null,
+         "unit": "m/s",
+         "raw_metric": "movement speed"
         }
        ]
       }
@@ -268,21 +288,33 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Now has a one second cooldown if Wrecking Ball never reaches ramming speed before canceling the ability. Interrupting him with Hack, Hinder, and stuns will still trigger the full cooldown.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "The maximum duration timer no longer triggers unless he reaches ramming speed.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -296,14 +328,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Enemy and ally detection radius increased from 10 to 13 meters.",
          "text_cn": null,
          "before": 10.0,
          "after": 13.0,
-         "metric": "enemy and ally detection radius"
+         "metric": "enemy and ally detection radius",
+         "by": 3.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "enemy and ally detection radius"
         }
        ]
       },
@@ -317,7 +357,11 @@
          "text_cn": null,
          "before": 50.0,
          "after": 60.0,
-         "metric": "health"
+         "metric": "health",
+         "by": 10.0,
+         "by_pct": null,
+         "unit": "hp",
+         "raw_metric": "health"
         }
        ]
       }
@@ -351,7 +395,11 @@
          "text_cn": null,
          "before": 100.0,
          "after": 90.0,
-         "metric": "total damage over time"
+         "metric": "total damage over time",
+         "by": -10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "total damage over time"
         }
        ]
       }
@@ -376,7 +424,11 @@
          "text_cn": null,
          "before": 12.0,
          "after": 13.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": 1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       },
@@ -390,7 +442,11 @@
          "text_cn": null,
          "before": 0.2,
          "after": 0.1,
-         "metric": "base projectile size"
+         "metric": "base projectile size",
+         "by": -0.1,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "base projectile size"
         }
        ]
       }
@@ -415,14 +471,22 @@
          "text_cn": null,
          "before": 60.0,
          "after": 40.0,
-         "metric": "impact damage"
+         "metric": "impact damage",
+         "by": -20.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "impact damage"
         },
         {
          "text_en": "Damage over time increased from 40 to 60.",
          "text_cn": null,
          "before": 40.0,
          "after": 60.0,
-         "metric": "damage over time"
+         "metric": "damage",
+         "by": 20.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage over time"
         }
        ]
       },
@@ -436,14 +500,22 @@
          "text_cn": null,
          "before": 40.0,
          "after": 30.0,
-         "metric": "impact damage"
+         "metric": "impact damage",
+         "by": -10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "impact damage"
         },
         {
          "text_en": "Damage over time increased from 30 to 40.",
          "text_cn": null,
          "before": 30.0,
          "after": 40.0,
-         "metric": "damage over time"
+         "metric": "damage",
+         "by": 10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage over time"
         }
        ]
       },
@@ -457,7 +529,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "vertical knockback",
+         "by": null,
+         "by_pct": 30.0,
+         "unit": null,
+         "raw_metric": "vertical knockback"
         }
        ]
       }
@@ -491,14 +567,22 @@
          "text_cn": null,
          "before": 0.2,
          "after": 0.25,
-         "metric": "primary fire recovery"
+         "metric": "primary fire recovery",
+         "by": 0.05,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "primary fire recovery"
         },
         {
          "text_en": "Secondary fire heal-per-second increased from 105 to 115.",
          "text_cn": null,
          "before": 105.0,
          "after": 115.0,
-         "metric": "second"
+         "metric": "secondary fire heal-per-second",
+         "by": 10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "secondary fire heal-per-second"
         }
        ]
       }
@@ -523,7 +607,11 @@
          "text_cn": null,
          "before": 20.0,
          "after": 18.0,
-         "metric": "damage per projectile"
+         "metric": "damage",
+         "by": -2.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage per projectile"
         }
        ]
       },
@@ -537,7 +625,11 @@
          "text_cn": null,
          "before": 35.0,
          "after": 45.0,
-         "metric": "damage"
+         "metric": "damage",
+         "by": 10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage"
         }
        ]
       }
@@ -562,7 +654,11 @@
          "text_cn": null,
          "before": 50.0,
          "after": 60.0,
-         "metric": "heal"
+         "metric": "heal",
+         "by": 10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "heal"
         }
        ]
       },
@@ -576,7 +672,11 @@
          "text_cn": null,
          "before": 75.0,
          "after": 90.0,
-         "metric": "pulse healing"
+         "metric": "pulse healing",
+         "by": 15.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "pulse healing"
         }
        ]
       }
@@ -601,7 +701,11 @@
          "text_cn": null,
          "before": 65.0,
          "after": 60.0,
-         "metric": "damage per second"
+         "metric": "damage",
+         "by": -5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage per second"
         }
        ]
       },
@@ -615,7 +719,11 @@
          "text_cn": null,
          "before": 50.0,
          "after": 55.0,
-         "metric": "heal per second"
+         "metric": "self-heal per second",
+         "by": 5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "self-heal per second"
         }
        ]
       }
@@ -650,5 +758,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:a2a2bdcac1b106ff1ed56ef80963e044cf5f35495165d84869515bbce007d765"
+ "hash": "sha256:557e86dea893c3e060f0c142b3c709bb57488f7b6f8d4937debffc8a3361b9e3"
 }

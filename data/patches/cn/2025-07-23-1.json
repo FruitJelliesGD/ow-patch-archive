@@ -83,9 +83,42 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "护甲值从325降低至300。",
-      "能量标枪——辅助攻击模式技能",
-      "冷却时间从6秒延长至7秒。"
+      {
+       "text_en": null,
+       "text_cn": "护甲值从325降低至300。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 325.0,
+       "after": 300.0,
+       "by": -25.0,
+       "by_pct": null,
+       "metric": "armor",
+       "unit": "hp"
+      },
+      {
+       "text_en": null,
+       "text_cn": "能量标枪——辅助攻击模式技能",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "冷却时间从6秒延长至7秒。",
+       "subject": null,
+       "dimension": "other",
+       "before": 6.0,
+       "after": 7.0,
+       "by": 1.0,
+       "by_pct": null,
+       "metric": "cooldown",
+       "unit": "s"
+      }
      ],
      "perks": [],
      "abilities": []
@@ -117,8 +150,30 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "实验屏障——辅助攻击模式技能",
-      "部署冷却时间从2秒缩短至1秒。"
+      {
+       "text_en": null,
+       "text_cn": "实验屏障——辅助攻击模式技能",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "部署冷却时间从2秒缩短至1秒。",
+       "subject": null,
+       "dimension": "other",
+       "before": 2.0,
+       "after": 1.0,
+       "by": -1.0,
+       "by_pct": null,
+       "metric": "部署冷却时间",
+       "unit": "s"
+      }
      ],
      "perks": [
       {
@@ -198,8 +253,30 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "火炮模式——终极技能",
-      "终极技能消耗降低7%。"
+      {
+       "text_en": null,
+       "text_cn": "火炮模式——终极技能",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "终极技能消耗降低7%。",
+       "subject": "ultimate_cost",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 7.0,
+       "metric": "ultimate_cost",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -211,9 +288,42 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "速射弩——主要攻击模式",
-      "主要攻击模式伤害从30降低至25。",
-      "最大弹药量从12提高至15。"
+      {
+       "text_en": null,
+       "text_cn": "速射弩——主要攻击模式",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "主要攻击模式伤害从30降低至25。",
+       "subject": null,
+       "dimension": "other",
+       "before": 30.0,
+       "after": 25.0,
+       "by": -5.0,
+       "by_pct": null,
+       "metric": "主要攻击模式伤害",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "最大弹药量从12提高至15。",
+       "subject": null,
+       "dimension": "other",
+       "before": 12.0,
+       "after": 15.0,
+       "by": 3.0,
+       "by_pct": null,
+       "metric": "最大弹药量",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -225,11 +335,66 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "风——主要攻击模式",
-      "基础射弹大小从0.1米提高至0.125米。",
-      "竜——终极技能",
-      "终极技能消耗降低8%。",
-      "每秒伤害从300提高至400。"
+      {
+       "text_en": null,
+       "text_cn": "风——主要攻击模式",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "基础射弹大小从0.1米提高至0.125米。",
+       "subject": null,
+       "dimension": "other",
+       "before": 0.1,
+       "after": 0.125,
+       "by": 0.025,
+       "by_pct": null,
+       "metric": "基础射弹大小",
+       "unit": "m"
+      },
+      {
+       "text_en": null,
+       "text_cn": "竜——终极技能",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "终极技能消耗降低8%。",
+       "subject": "ultimate_cost",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 8.0,
+       "metric": "ultimate_cost",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "每秒伤害从300提高至400。",
+       "subject": null,
+       "dimension": "other",
+       "before": 300.0,
+       "after": 400.0,
+       "by": 100.0,
+       "by_pct": null,
+       "metric": "每秒伤害",
+       "unit": null
+      }
      ],
      "perks": [
       {
@@ -289,8 +454,30 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "死亡绽放——终极技能",
-      "终极技能消耗提高9%。"
+      {
+       "text_en": null,
+       "text_cn": "死亡绽放——终极技能",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "终极技能消耗提高9%。",
+       "subject": "ultimate_cost",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 9.0,
+       "metric": "ultimate_cost",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -302,8 +489,30 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "脉冲双枪",
-      "散布从3.0度提高至3.5度。"
+      {
+       "text_en": null,
+       "text_cn": "脉冲双枪",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "散布从3.0度提高至3.5度。",
+       "subject": null,
+       "dimension": "other",
+       "before": 3.0,
+       "after": 3.5,
+       "by": 0.5,
+       "by_pct": null,
+       "metric": "散布",
+       "unit": "deg"
+      }
      ],
      "perks": [],
      "abilities": []
@@ -315,8 +524,30 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "红外侦测——终极技能",
-      "终极技能消耗降低10%。"
+      {
+       "text_en": null,
+       "text_cn": "红外侦测——终极技能",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "终极技能消耗降低10%。",
+       "subject": "ultimate_cost",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 10.0,
+       "metric": "ultimate_cost",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -337,10 +568,54 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "医疗冲击枪——主要攻击模式",
-      "最小衰减距离从20米提高至25米。",
-      "滑翔推进——技能1",
-      "在最初的移动速度爆发之后，在空中转向时的移动加速度降低。"
+      {
+       "text_en": null,
+       "text_cn": "医疗冲击枪——主要攻击模式",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "最小衰减距离从20米提高至25米。",
+       "subject": null,
+       "dimension": "other",
+       "before": 20.0,
+       "after": 25.0,
+       "by": 5.0,
+       "by_pct": null,
+       "metric": "最小衰减距离",
+       "unit": "m"
+      },
+      {
+       "text_en": null,
+       "text_cn": "滑翔推进——技能1",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "在最初的移动速度爆发之后，在空中转向时的移动加速度降低。",
+       "subject": "move_speed",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -352,8 +627,30 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "音障",
-      "终极技能消耗提高9%。"
+      {
+       "text_en": null,
+       "text_cn": "音障",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "终极技能消耗提高9%。",
+       "subject": "ultimate_cost",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 9.0,
+       "metric": "ultimate_cost",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -365,10 +662,54 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "谐",
-      "治疗效果从每秒30点提高至35点生命值。",
-      "圣",
-      "每秒治疗量从300点提高至400点。"
+      {
+       "text_en": null,
+       "text_cn": "谐",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "治疗效果从每秒30点提高至35点生命值。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "圣",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "每秒治疗量从300点提高至400点。",
+       "subject": null,
+       "dimension": "other",
+       "before": 300.0,
+       "after": 400.0,
+       "by": 100.0,
+       "by_pct": null,
+       "metric": "每秒治疗量",
+       "unit": "hp"
+      }
      ],
      "perks": [],
      "abilities": []
@@ -494,17 +835,107 @@
      "role": "tank",
      "dev_note": "开发者评论：D.Va在早期回合中表现会比较挣扎，特别是在对抗拥有强大光束攻击、可以克制她的防御工具的英雄时。为了解决这个问题，我们加入了一个新的英雄物品，希望可以提升她在这类战斗下的效率。此外，她的单人生存能力和其他重装相比也落下一截，所以本次更新也加入了一些相关的优化，帮助她在没有得到队友支援的情况下也能存活得更久。",
      "general": [
-      "小兔重砸——异能",
-      "现在伤害会基于护甲和护盾的总值增加。",
-      "脸接伤害——异能",
-      "治疗量倍率从30%提高至50%。",
-      "折射装甲——普通生存英雄物品",
-      "新增英雄物品。",
-      "护甲+25点。",
-      "有护甲时，获得15%对光束的受伤减免。",
-      "费用：2000"
+      {
+       "text_en": null,
+       "text_cn": "现在伤害会基于护甲和护盾的总值增加。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "治疗量倍率从30%提高至50%。",
+       "subject": null,
+       "dimension": "other",
+       "before": 30.0,
+       "after": 50.0,
+       "by": 20.0,
+       "by_pct": null,
+       "metric": "healing",
+       "unit": "pct"
+      },
+      {
+       "text_en": null,
+       "text_cn": "折射装甲——普通生存英雄物品",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "新增英雄物品。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "护甲+25点。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "有护甲时，获得15%对光束的受伤减免。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "费用：2000",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "小兔重砸",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": null,
+       "name_cn": "脸接伤害",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     },
     {
@@ -514,14 +945,71 @@
      "role": "tank",
      "dev_note": "开发者评论：奥丽莎的标枪流搭配能够非常有效地对敌人造成干扰，但其操作也显得略微笨拙繁琐，破坏了可靠性和流畅度。本次更新对这些未完善之处进行了打磨，希望能提供更流畅的体验，并使她的干扰工具使用起来感觉更灵敏、更直观。",
      "general": [
-      "高级投掷机器人——异能",
-      "现在会在0.5秒后将标枪投出，且必须持续使用“标枪旋击”才能进行投掷。取消“标枪旋击”也会同时取消标枪的投掷。",
-      "捕获套索——异能",
-      "如果标枪击中敌人，附近的敌人会被拉向该敌人的位置，而不是他被击中的位置。",
-      "如果标枪击中地形，才会将附近敌人拉向击中的位置。",
-      "如果标枪击中屏障，则不会产生拉拽效果。"
+      {
+       "text_en": null,
+       "text_cn": "现在会在0.5秒后将标枪投出，且必须持续使用“标枪旋击”才能进行投掷。取消“标枪旋击”也会同时取消标枪的投掷。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "如果标枪击中敌人，附近的敌人会被拉向该敌人的位置，而不是他被击中的位置。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "如果标枪击中地形，才会将附近敌人拉向击中的位置。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "如果标枪击中屏障，则不会产生拉拽效果。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "高级投掷机器人",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": null,
+       "name_cn": "捕获套索",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     }
    ],
@@ -540,10 +1028,28 @@
      "role": "damage",
      "dev_note": "开发者评论：本次更新优化了此异能效果的一致性，你可以更稳定地打出让敌人冰凉心也凉的操作了。尽情冰冻对手吧！",
      "general": [
-      "减速雪球——异能",
-      "现在辅助攻击模式以普通方式击中敌人时也会对命中的敌人造成减速。"
+      {
+       "text_en": null,
+       "text_cn": "现在辅助攻击模式以普通方式击中敌人时也会对命中的敌人造成减速。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "减速雪球",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     }
    ],
@@ -562,8 +1068,30 @@
      "role": "support",
      "dev_note": "开发者评论：在使用不开镜武器异能搭配时，安娜到了游戏后期难以再对战局造成影响。这个新的史诗物品旨在解决这一问题，可以让她拥有更可靠、更强大的威慑力。",
      "general": [
-      "不开镜资源——史诗武器英雄物品",
-      "添加+15%武器强度的效果。"
+      {
+       "text_en": null,
+       "text_cn": "不开镜资源——史诗武器英雄物品",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "添加+15%武器强度的效果。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -575,10 +1103,28 @@
      "role": "support",
      "dev_note": "开发者评论：“星之所向”与其他异能选择相比缺乏突出的优点，在实际使用中往往会感觉威力不足。本次更新是为了让它能够造成更具决定性的影响，使其能够脱颖而出，成为你搭配中更有意义、更具竞争力的选择。",
      "general": [
-      "星之所向——异能",
-      "持续时间从35%延长至50%。"
+      {
+       "text_en": null,
+       "text_cn": "持续时间从35%延长至50%。",
+       "subject": null,
+       "dimension": "other",
+       "before": 35.0,
+       "after": 50.0,
+       "by": 15.0,
+       "by_pct": null,
+       "metric": "duration",
+       "unit": "pct"
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "星之所向",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     },
     {
@@ -588,16 +1134,90 @@
      "role": "support",
      "dev_note": "开发者评论：我们对雾子的分身进行了重新设计，使其扮演更为多功能的角色，而不只是像之前那样被当做一个过于强力的自动炮塔。本次更改应该能够让她更持续地为团队提供多功能辅助，并且更稳定地产出角斗资金。此外，我们也根据大量的反馈对“无羁健步”进行了更新，现在冲入敌方后排需要更多的风险投入，以强调进攻型打法中“不入虎穴，焉得虎子”的理念。",
      "general": [
-      "分身术——异能",
-      "现在分身进行的治疗和伤害也会让你获得角斗资金。",
-      "现在分身在被召唤出来后，在开始治疗和造成伤害之前会有一段短暂的延迟。",
-      "分身的生命值减少，但可以通过技能强度进行提升。",
-      "无羁健步——异能",
-      "在无目标时使用的情况下，“瞬”的冷却时间延长30%。",
-      "狡狐烟花——异能",
-      "弹道速度现在与普通的“锥”相同。"
+      {
+       "text_en": null,
+       "text_cn": "现在分身进行的治疗和伤害也会让你获得角斗资金。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "现在分身在被召唤出来后，在开始治疗和造成伤害之前会有一段短暂的延迟。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "分身的生命值减少，但可以通过技能强度进行提升。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "在无目标时使用的情况下，“瞬”的冷却时间延长30%。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 30.0,
+       "metric": "的冷却时间",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "弹道速度现在与普通的“锥”相同。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "分身术",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": null,
+       "name_cn": "无羁健步",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": null,
+       "name_cn": "狡狐烟花",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     }
    ],
@@ -648,5 +1268,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:d74c075189878afbc42e4a6a1cda8f2b196d517778ed70572fa28bb5bdaf4482"
+ "hash": "sha256:b1063f41ca5b24f9a6ac9274d46af72c1fe9193ce012945459c565fb3f3b384e"
 }

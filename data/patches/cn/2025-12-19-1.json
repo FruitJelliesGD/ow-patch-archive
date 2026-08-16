@@ -51,22 +51,159 @@
      "role": "tank",
      "dev_note": "“末日铁拳”在角斗领域登场后的表现一直不尽如人意。因此，我们加强了部分异能的稳定性和威力，也加快了获得角斗资金的速度，在不提升上限或过分强化一击必杀能力的同时，使“末日铁拳”整体更为可靠。",
      "general": [
-      "通过造成伤害和提供治疗获得的角斗资金提高25%。",
-      "地震余波——异能 第二段冲击波的伤害从50%提高至60%。",
-      "第二段冲击波的伤害从50%提高至60%。",
-      "惊天动地——异能 现提供终极技能充能。 冷却时间从15秒缩短至12秒。",
-      "现提供终极技能充能。",
-      "冷却时间从15秒缩短至12秒。",
-      "格挡派对——异能 “格挡派对”因存在问题暂时禁用。",
-      "“格挡派对”因存在问题暂时禁用。",
-      "刺直连击——异能 使用技能后，攻击速度加成从50%提高至75%。",
-      "使用技能后，攻击速度加成从50%提高至75%。",
-      "破空刺拳——异能 “火箭重拳”的燃烧伤害从15%提高至20%。",
-      "“火箭重拳”的燃烧伤害从15%提高至20%。",
-      "裂地猛砸——异能 每下坠1米，“裂地重拳”的范围扩大从4%提高至6%。",
-      "每下坠1米，“裂地重拳”的范围扩大从4%提高至6%。"
+      {
+       "text_en": null,
+       "text_cn": "通过造成伤害和提供治疗获得的角斗资金提高25%。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 25.0,
+       "metric": "通过造成伤害和提供治疗获得的角斗资金",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "第二段冲击波的伤害从50%提高至60%。",
+       "subject": null,
+       "dimension": "other",
+       "before": 50.0,
+       "after": 60.0,
+       "by": 10.0,
+       "by_pct": null,
+       "metric": "第二段冲击波的伤害",
+       "unit": "pct"
+      },
+      {
+       "text_en": null,
+       "text_cn": "现提供终极技能充能。",
+       "subject": "ultimate_cost",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "冷却时间从15秒缩短至12秒。",
+       "subject": null,
+       "dimension": "other",
+       "before": 15.0,
+       "after": 12.0,
+       "by": -3.0,
+       "by_pct": null,
+       "metric": "cooldown",
+       "unit": "s"
+      },
+      {
+       "text_en": null,
+       "text_cn": "“格挡派对”因存在问题暂时禁用。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "使用技能后，攻击速度加成从50%提高至75%。",
+       "subject": null,
+       "dimension": "other",
+       "before": 50.0,
+       "after": 75.0,
+       "by": 25.0,
+       "by_pct": null,
+       "metric": "攻击速度加成",
+       "unit": "pct"
+      },
+      {
+       "text_en": null,
+       "text_cn": "“火箭重拳”的燃烧伤害从15%提高至20%。",
+       "subject": null,
+       "dimension": "other",
+       "before": 15.0,
+       "after": 20.0,
+       "by": 5.0,
+       "by_pct": null,
+       "metric": "的燃烧伤害",
+       "unit": "pct"
+      },
+      {
+       "text_en": null,
+       "text_cn": "每下坠1米，“裂地重拳”的范围扩大从4%提高至6%。",
+       "subject": null,
+       "dimension": "other",
+       "before": 4.0,
+       "after": 6.0,
+       "by": 2.0,
+       "by_pct": null,
+       "metric": "的范围扩大",
+       "unit": "pct"
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "地震余波",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "地震余波——异能 第二段冲击波的伤害从50%提高至60%。"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "惊天动地",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "惊天动地——异能 现提供终极技能充能。 冷却时间从15秒缩短至12秒。"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "格挡派对",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "格挡派对——异能 “格挡派对”因存在问题暂时禁用。"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "刺直连击",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "刺直连击——异能 使用技能后，攻击速度加成从50%提高至75%。"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "破空刺拳",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "破空刺拳——异能 “火箭重拳”的燃烧伤害从15%提高至20%。"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "裂地猛砸",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "裂地猛砸——异能 每下坠1米，“裂地重拳”的范围扩大从4%提高至6%。"
+       ]
+      }
+     ],
      "abilities": []
     },
     {
@@ -76,17 +213,114 @@
      "role": "tank",
      "dev_note": "“西格玛”的主要攻击模式更新后大幅提升了他的上限，超出了我们的预期。“完全失重”的持续时间过长，而且非常安全，让他几乎可以毫无风险地脱战或换位。同时，部分武器物品的性价比过高，带来了爆炸式增长的伤害。这些调整可以限制他的机动性和早期成长速度，使物品的性能和费用更加平衡。既然其他选项有所削弱，我们也将“束缚本源”的费用略微下调，保持技能强度流搭配有一定的竞争力。",
      "general": [
-      "完全失重——异能 持续时间从4秒减少至1.5秒。",
-      "持续时间从4秒减少至1.5秒。",
-      "反物质——史诗武器英雄物品 费用从10,000提高至12,000。 持续时间从4秒减少至1.5秒。",
-      "费用从10,000提高至12,000。",
-      "持续时间从4秒减少至1.5秒。",
-      "速度矢量——稀有武器英雄物品 费用从4,500提高至6,000。",
-      "费用从4,500提高至6,000。",
-      "束缚本源——史诗技能英雄物品 费用从11,000降低至10,000。",
-      "费用从11,000降低至10,000。"
+      {
+       "text_en": null,
+       "text_cn": "持续时间从4秒减少至1.5秒。",
+       "subject": null,
+       "dimension": "other",
+       "before": 4.0,
+       "after": 1.5,
+       "by": -2.5,
+       "by_pct": null,
+       "metric": "duration",
+       "unit": "s"
+      },
+      {
+       "text_en": null,
+       "text_cn": "反物质——史诗武器英雄物品 费用从10,000提高至12,000。 持续时间从4秒减少至1.5秒。",
+       "subject": null,
+       "dimension": "other",
+       "before": 4.0,
+       "after": 1.5,
+       "by": -2.5,
+       "by_pct": null,
+       "metric": "duration",
+       "unit": "s"
+      },
+      {
+       "text_en": null,
+       "text_cn": "费用从10,000提高至12,000。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "持续时间从4秒减少至1.5秒。",
+       "subject": null,
+       "dimension": "other",
+       "before": 4.0,
+       "after": 1.5,
+       "by": -2.5,
+       "by_pct": null,
+       "metric": "duration",
+       "unit": "s"
+      },
+      {
+       "text_en": null,
+       "text_cn": "速度矢量——稀有武器英雄物品 费用从4,500提高至6,000。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "费用从4,500提高至6,000。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "束缚本源——史诗技能英雄物品 费用从11,000降低至10,000。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "费用从11,000降低至10,000。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "完全失重",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "完全失重——异能 持续时间从4秒减少至1.5秒。"
+       ]
+      }
+     ],
      "abilities": []
     },
     {
@@ -96,20 +330,150 @@
      "role": "tank",
      "dev_note": "飞天猩猩太超模了！仔细研究数据之后，我们削弱了以“喷气背包”为核心的搭配，现在它需要更长时间才能成型。部分物品费用不高，效果却十分出众，让温斯顿可以连续跳来跳去，即使是激进突击也不用承担太多风险。我们的确希望温斯顿在进攻端具有压迫力，但同时必须承担风险，对手要有明确的时机可以进行反制。“原始猛撞”仍然很受欢迎，我们也会密切关注。这次更新并非删除任何机制或是破坏游玩的乐趣，而是优先调整异能的费用和温斯顿的生存能力，在不剥夺温斯顿核心乐趣的前提下，把整体强度调整到合理的水平。",
      "general": [
-      "原始重拳——异能 近身攻击伤害加成从5%降低至3%。",
-      "近身攻击伤害加成从5%降低至3%。",
-      "高级花生酱——稀有生存英雄物品 费用从4,000提高至6,000。",
-      "费用从4,000提高至6,000。",
-      "零重力太空服——稀有技能英雄物品 费用从4,000提高至6,000。 移除效果：冷却时间缩减。",
-      "费用从4,000提高至6,000。",
-      "移除效果：冷却时间缩减。",
-      "地平线扩展器——史诗技能英雄物品 费用从11,000提高至12,500。",
-      "费用从11,000提高至12,500。",
-      "强固喷射背包——史诗生存英雄物品 费用从10,000提高至12,500。 受伤减免从35%降低至20%。",
-      "费用从10,000提高至12,500。",
-      "受伤减免从35%降低至20%。"
+      {
+       "text_en": null,
+       "text_cn": "近身攻击伤害加成从5%降低至3%。",
+       "subject": null,
+       "dimension": "other",
+       "before": 5.0,
+       "after": 3.0,
+       "by": -2.0,
+       "by_pct": null,
+       "metric": "近身攻击伤害加成",
+       "unit": "pct"
+      },
+      {
+       "text_en": null,
+       "text_cn": "高级花生酱——稀有生存英雄物品 费用从4,000提高至6,000。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "费用从4,000提高至6,000。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "零重力太空服——稀有技能英雄物品 费用从4,000提高至6,000。 移除效果：冷却时间缩减。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "费用从4,000提高至6,000。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "移除效果：冷却时间缩减。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "地平线扩展器——史诗技能英雄物品 费用从11,000提高至12,500。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "费用从11,000提高至12,500。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "强固喷射背包——史诗生存英雄物品 费用从10,000提高至12,500。 受伤减免从35%降低至20%。",
+       "subject": null,
+       "dimension": "other",
+       "before": 35.0,
+       "after": 20.0,
+       "by": -15.0,
+       "by_pct": null,
+       "metric": "受伤减免",
+       "unit": "pct"
+      },
+      {
+       "text_en": null,
+       "text_cn": "费用从10,000提高至12,500。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "受伤减免从35%降低至20%。",
+       "subject": null,
+       "dimension": "other",
+       "before": 35.0,
+       "after": 20.0,
+       "by": -15.0,
+       "by_pct": null,
+       "metric": "受伤减免",
+       "unit": "pct"
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "原始重拳",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "原始重拳——异能 近身攻击伤害加成从5%降低至3%。"
+       ]
+      }
+     ],
      "abilities": []
     }
    ],
@@ -128,13 +492,63 @@
      "role": "support",
      "dev_note": "这些改动的目的在于提升安娜创造机会的潜力，鼓励主动且精准的射击。“一镖绝尘”经过大幅提速后，安娜可以更加从容地应对高机动性的英雄和空中的目标。而“驯鹰高手”则可以给对手更足的压力，也可以让安娜更快攒出纳米激素。快告诉你的队友源氏，你的终极技能已就绪！",
      "general": [
-      "一镖绝尘——异能 弹道速度加成从150%提高至300%。",
-      "弹道速度加成从150%提高至300%。",
-      "驯鹰高手——异能 攻击速度加成从20%提高至30%。 终极技能充能从15%提高至25%。",
-      "攻击速度加成从20%提高至30%。",
-      "终极技能充能从15%提高至25%。"
+      {
+       "text_en": null,
+       "text_cn": "弹道速度加成从150%提高至300%。",
+       "subject": null,
+       "dimension": "other",
+       "before": 150.0,
+       "after": 300.0,
+       "by": 150.0,
+       "by_pct": null,
+       "metric": "projectile_speed",
+       "unit": "pct"
+      },
+      {
+       "text_en": null,
+       "text_cn": "攻击速度加成从20%提高至30%。",
+       "subject": null,
+       "dimension": "other",
+       "before": 20.0,
+       "after": 30.0,
+       "by": 10.0,
+       "by_pct": null,
+       "metric": "攻击速度加成",
+       "unit": "pct"
+      },
+      {
+       "text_en": null,
+       "text_cn": "终极技能充能从15%提高至25%。",
+       "subject": "ultimate_cost",
+       "dimension": "hero_attr",
+       "before": 15.0,
+       "after": 25.0,
+       "by": 10.0,
+       "by_pct": null,
+       "metric": "ultimate_cost",
+       "unit": "pct"
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "一镖绝尘",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "一镖绝尘——异能 弹道速度加成从150%提高至300%。"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "驯鹰高手",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "驯鹰高手——异能 攻击速度加成从20%提高至30%。 终极技能充能从15%提高至25%。"
+       ]
+      }
+     ],
      "abilities": []
     },
     {
@@ -144,8 +558,30 @@
      "role": "support",
      "dev_note": "“回收钢材”的强度太高，导致以“集结号令”为核心的搭配一枝独秀，所以我们削弱了“回收钢材”，让它与其他搭配选项处于同一水平线上。",
      "general": [
-      "回收钢材——史诗技能英雄物品 技能伤害提供的终极技能充能从3%降低至2%。",
-      "技能伤害提供的终极技能充能从3%降低至2%。"
+      {
+       "text_en": null,
+       "text_cn": "回收钢材——史诗技能英雄物品 技能伤害提供的终极技能充能从3%降低至2%。",
+       "subject": "ultimate_cost",
+       "dimension": "hero_attr",
+       "before": 3.0,
+       "after": 2.0,
+       "by": -1.0,
+       "by_pct": null,
+       "metric": "技能伤害提供的终极技能充能",
+       "unit": "pct"
+      },
+      {
+       "text_en": null,
+       "text_cn": "技能伤害提供的终极技能充能从3%降低至2%。",
+       "subject": "ultimate_cost",
+       "dimension": "hero_attr",
+       "before": 3.0,
+       "after": 2.0,
+       "by": -1.0,
+       "by_pct": null,
+       "metric": "技能伤害提供的终极技能充能",
+       "unit": "pct"
+      }
      ],
      "perks": [],
      "abilities": []
@@ -171,5 +607,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:71a9bf8cc601d5cec027b1d6e6d6432ef84e0a6d41f8c0064f929101efb29a71"
+ "hash": "sha256:6a95b21592fafa4a5169622ef7997cb4e5dc86fd715d3e690c2a764dd6542efb"
 }

@@ -63,14 +63,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "empowered punch collateral range gain",
+         "by": null,
+         "by_pct": 75.0,
+         "unit": null,
+         "raw_metric": "empowered punch collateral range gain"
         },
         {
          "text_en": "Empowered Punch collateral radius gain reduced from 50% to 40%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -95,14 +103,22 @@
          "text_cn": null,
          "before": 12.0,
          "after": 10.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": -2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         },
         {
          "text_en": "Cooldown reduced from 15 to 13 seconds. (6v6)",
          "text_cn": null,
          "before": 15.0,
          "after": 13.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": -2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       }
@@ -127,14 +143,22 @@
          "text_cn": null,
          "before": 1.0,
          "after": 1.5,
-         "metric": "maximum spread while firing individual chainguns"
+         "metric": "maximum spread while firing individual chainguns",
+         "by": 0.5,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "maximum spread while firing individual chainguns"
         },
         {
          "text_en": "Number of shots until maximum spread increased from 0 to 30 shots.",
          "text_cn": null,
          "before": 0.0,
          "after": 30.0,
-         "metric": "number of shots until maximum spread"
+         "metric": "number of shots until maximum spread",
+         "by": 30.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "number of shots until maximum spread"
         }
        ]
       }
@@ -159,7 +183,11 @@
          "text_cn": null,
          "before": 15.0,
          "after": 30.0,
-         "metric": "explosion damage"
+         "metric": "explosion damage",
+         "by": 15.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "explosion damage"
         }
        ]
       },
@@ -173,7 +201,11 @@
          "text_cn": null,
          "before": 1.0,
          "after": 0.5,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": -0.5,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       }
@@ -186,7 +218,18 @@
      "role": "tank",
      "dev_note": "Sigma remains durable when successfully rotating through his defensive tools. Reducing his shield health lowers his survivability when opponents are able to break through his defenses.",
      "general": [
-      "Shield health reduced from 275 to 250."
+      {
+       "text_en": "Shield health reduced from 275 to 250.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 275.0,
+       "after": 250.0,
+       "by": -25.0,
+       "by_pct": null,
+       "metric": "shield",
+       "unit": "hp"
+      }
      ],
      "perks": [
       {
@@ -249,7 +292,11 @@
          "text_cn": null,
          "before": 5.0,
          "after": 5.5,
-         "metric": "fire rate"
+         "metric": "fire rate",
+         "by": 0.5,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "fire rate"
         }
        ]
       },
@@ -263,14 +310,22 @@
          "text_cn": null,
          "before": 0.5,
          "after": 0.4,
-         "metric": "recovery"
+         "metric": "recovery",
+         "by": -0.1,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "recovery"
         },
         {
          "text_en": "Explosion delay reduced from 1 to 0.8 seconds.",
          "text_cn": null,
          "before": 1.0,
          "after": 0.8,
-         "metric": "explosion delay"
+         "metric": "explosion delay",
+         "by": -0.2,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "explosion delay"
         }
        ]
       }
@@ -305,7 +360,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -330,7 +389,11 @@
          "text_cn": null,
          "before": 0.4,
          "after": 0.3,
-         "metric": "recovery time"
+         "metric": "recovery",
+         "by": -0.1,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "recovery time"
         }
        ]
       },
@@ -344,7 +407,11 @@
          "text_cn": null,
          "before": 60.0,
          "after": 30.0,
-         "metric": "impact damage while riding"
+         "metric": "impact damage while riding",
+         "by": -30.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "impact damage while riding"
         }
        ]
       }
@@ -369,21 +436,33 @@
          "text_cn": null,
          "before": 12.0,
          "after": 11.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": -1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         },
         {
          "text_en": "Duration reduced from 10 to 9 seconds.",
          "text_cn": null,
          "before": 10.0,
          "after": 9.0,
-         "metric": "duration"
+         "metric": "duration",
+         "by": -1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "duration"
         },
         {
          "text_en": "Health increased from 80 to 125.",
          "text_cn": null,
          "before": 80.0,
          "after": 125.0,
-         "metric": "health"
+         "metric": "health",
+         "by": 45.0,
+         "by_pct": null,
+         "unit": "hp",
+         "raw_metric": "health"
         }
        ]
       }
@@ -408,7 +487,11 @@
          "text_cn": null,
          "before": 2.0,
          "after": 2.5,
-         "metric": "overhead swing bonus range"
+         "metric": "overhead swing bonus range",
+         "by": 0.5,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "overhead swing bonus range"
         }
        ]
       }
@@ -433,7 +516,11 @@
          "text_cn": null,
          "before": 1.6,
          "after": 1.2,
-         "metric": "recovery"
+         "metric": "recovery",
+         "by": -0.4,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "recovery"
         }
        ]
       }
@@ -467,7 +554,11 @@
          "text_cn": null,
          "before": 75.0,
          "after": 90.0,
-         "metric": "explosion damage and healing"
+         "metric": "explosion damage and healing",
+         "by": 15.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "explosion damage and healing"
         }
        ]
       }
@@ -492,14 +583,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Healing over time reduced from 60 to 45.",
          "text_cn": null,
          "before": 60.0,
          "after": 45.0,
-         "metric": "healing over time"
+         "metric": "healing",
+         "by": -15.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "healing over time"
         }
        ]
       }
@@ -524,7 +623,11 @@
          "text_cn": null,
          "before": 13.0,
          "after": 12.0,
-         "metric": "healing per projectile"
+         "metric": "healing",
+         "by": -1.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "healing per projectile"
         }
        ]
       }
@@ -549,7 +652,11 @@
          "text_cn": null,
          "before": 20.0,
          "after": 22.0,
-         "metric": "damage per projectile"
+         "metric": "damage",
+         "by": 2.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage per projectile"
         }
        ]
       }
@@ -585,12 +692,47 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Royal Bullets - Power",
-      "Damage reduced to 20 (Down from 25).",
-      "Bow Down - Power",
-      "Duration reduced to 1.5s (Down from 2s)."
+      {
+       "text_en": "Damage reduced to 20 (Down from 25).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 25.0,
+       "after": 20.0,
+       "by": -5.0,
+       "by_pct": null,
+       "metric": "damage",
+       "unit": null
+      },
+      {
+       "text_en": "Duration reduced to 1.5s (Down from 2s).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Royal Bullets",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Bow Down",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     }
    ],
@@ -609,10 +751,28 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Gunslinger Grit - Power",
-      "Max Life Heal per bullet reloaded increased to 2.5% (Up from 2%)."
+      {
+       "text_en": "Max Life Heal per bullet reloaded increased to 2.5% (Up from 2%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Gunslinger Grit",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     },
     {
@@ -622,10 +782,28 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Zip Grease - Power",
-      "Increased damage to airborne targets increased to 25% (Up from 10%)."
+      {
+       "text_en": "Increased damage to airborne targets increased to 25% (Up from 10%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Zip Grease",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     },
     {
@@ -635,12 +813,47 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Slowball - Power",
-      "Removed increased hitbox size on Slowball projectile.",
-      "Frost Armor - Power",
-      "Damage converted to Armor reduced to 3% (Down from 5%)."
+      {
+       "text_en": "Removed increased hitbox size on Slowball projectile.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Damage converted to Armor reduced to 3% (Down from 5%).",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Slowball",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Frost Armor",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     },
     {
@@ -650,12 +863,52 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Accelerated Reaping - Power",
-      "Attack Speed per stack increased to 5% (Up from 4%).",
-      "Dauntless Draught - Epic Survival Hero Item",
-      "Wraith Form Duration reduced to 33% (Down from 50%)."
+      {
+       "text_en": "Attack Speed per stack increased to 5% (Up from 4%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Dauntless Draught - Epic Survival Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Wraith Form Duration reduced to 33% (Down from 50%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Accelerated Reaping",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     },
     {
@@ -665,16 +918,90 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Hammer Throw - Power",
-      "Added a VFX Trail for added clarity.",
-      "Blacksmith - Power",
-      "Heal increased to 100% of Hammer damage (Up from 75%).",
-      "Come Get Yer Armor - Power",
-      "Armor scaling reduced to 15% of your Max Life (Down from 20%).",
-      "Anchor Bolts - Epic Ability Hero Item",
-      "Ability Power reduced to 10% (Down from 15%)."
+      {
+       "text_en": "Added a VFX Trail for added clarity.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Heal increased to 100% of Hammer damage (Up from 75%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Armor scaling reduced to 15% of your Max Life (Down from 20%).",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Anchor Bolts - Epic Ability Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Ability Power reduced to 10% (Down from 15%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Hammer Throw",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Blacksmith",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Come Get Yer Armor",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     }
    ],
@@ -693,10 +1020,28 @@
      "role": "support",
      "dev_note": "This change should reduce the ceiling of Blink Boost when paired with multiple other Cooldown Reduction items. We'll continue to monitor Blink Boost's synergy with On Ability items.",
      "general": [
-      "Blink Boosts - Power",
-      "Reduced Cooldown now counts as base cooldown reduced instead of gaining cooldown reduction. Now scales multiplicatively with cooldown reduction instead of additively."
+      {
+       "text_en": "Reduced Cooldown now counts as base cooldown reduced instead of gaining cooldown reduction. Now scales multiplicatively with cooldown reduction instead of additively.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Blink Boosts",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     },
     {
@@ -706,12 +1051,47 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "Clone Conjuration - Power",
-      "Clone effectiveness increased to 65% reduced (Up from 75% reduced).",
-      "Keen Kunai - Power",
-      "Cooldown reduction per critical hit increased to 20% (Up from 15%)."
+      {
+       "text_en": "Clone effectiveness increased to 65% reduced (Up from 75% reduced).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Cooldown reduction per critical hit increased to 20% (Up from 15%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Clone Conjuration",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Keen Kunai",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     },
     {
@@ -721,12 +1101,47 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "Rhythm Rail - Power",
-      "Damage increased to 100% (Up from 75%).",
-      "Crowd Pleaser - Power",
-      "Heal increased to 40% of Soundwave Damage (Up from 33%)."
+      {
+       "text_en": "Damage increased to 100% (Up from 75%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Heal increased to 40% of Soundwave Damage (Up from 33%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Rhythm Rail",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Crowd Pleaser",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     },
     {
@@ -736,10 +1151,28 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "Distortion - Power",
-      "Max Life Overhealth reduced to 25% (Down from 30%)."
+      {
+       "text_en": "Max Life Overhealth reduced to 25% (Down from 30%).",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Distortion",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     },
     {
@@ -749,7 +1182,18 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "Currency from damage and healing increased by 8.33%."
+      {
+       "text_en": "Currency from damage and healing increased by 8.33%.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 8.33,
+       "metric": "currency from damage and healing",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -761,12 +1205,47 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "Enlightenment - Power",
-      "Heal reduced to 30% of damage dealt (Down from 40%).",
-      "Inner Peace - Power",
-      "Healing reduced to 80% reduced (Down from 75% reduced)."
+      {
+       "text_en": "Heal reduced to 30% of damage dealt (Down from 40%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Healing reduced to 80% reduced (Down from 75% reduced).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Enlightenment",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Inner Peace",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     }
    ],
@@ -815,5 +1294,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:32424d18b7e58b23f2af48979cce8d54123ae4241df7c9221526fe9e0f92af57"
+ "hash": "sha256:10df896b985cacfc8dfeb3360f5d52f3ea8e4f6cbe0b84f4311349df59bab203"
 }

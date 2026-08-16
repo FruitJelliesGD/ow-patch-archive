@@ -53,14 +53,22 @@
          "text_cn": null,
          "before": 40.0,
          "after": 30.0,
-         "metric": "heal"
+         "metric": "heal",
+         "by": -10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "heal"
         },
         {
          "text_en": "Shields decreased from 75 to 50.",
          "text_cn": null,
          "before": 75.0,
          "after": 50.0,
-         "metric": "shields"
+         "metric": "shield",
+         "by": -25.0,
+         "by_pct": null,
+         "unit": "hp",
+         "raw_metric": "shields"
         }
        ]
       },
@@ -74,21 +82,33 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Projectile size decreased from 1.5 to 0.75 meters.",
          "text_cn": null,
          "before": 1.5,
          "after": 0.75,
-         "metric": "projectile size"
+         "metric": "projectile size",
+         "by": -0.75,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "projectile size"
         },
         {
          "text_en": "Sunstruck duration decreased from 7 to 6 seconds.",
          "text_cn": null,
          "before": 7.0,
          "after": 6.0,
-         "metric": "sunstruck duration"
+         "metric": "sunstruck duration",
+         "by": -1.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "sunstruck duration"
         }
        ]
       }
@@ -123,5 +143,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:e75635814e77705849c6d7d04bfcaf6d5bb632776b3688d5794a70ac4b3c248a"
+ "hash": "sha256:f7d455363401209bf4ba64b42f6cf797811ee5642871bc49b99c1def9779a777"
 }

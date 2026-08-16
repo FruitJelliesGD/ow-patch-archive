@@ -76,7 +76,11 @@
          "text_cn": null,
          "before": 40.0,
          "after": 30.0,
-         "metric": "movement speed penalty"
+         "metric": "move_speed",
+         "by": -10.0,
+         "by_pct": null,
+         "unit": "m/s",
+         "raw_metric": "movement speed penalty"
         }
        ]
       },
@@ -90,7 +94,11 @@
          "text_cn": null,
          "before": 40.0,
          "after": 50.0,
-         "metric": "projectile speed"
+         "metric": "projectile_speed",
+         "by": 10.0,
+         "by_pct": null,
+         "unit": "m/s",
+         "raw_metric": "projectile speed"
         }
        ]
       }
@@ -115,14 +123,22 @@
          "text_cn": null,
          "before": 0.25,
          "after": 0.15,
-         "metric": "minimum wall stun duration"
+         "metric": "minimum wall stun duration",
+         "by": -0.1,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "minimum wall stun duration"
         },
         {
          "text_en": "Maximum wall stun duration decreased from 0.75 to 0.6 seconds.",
          "text_cn": null,
          "before": 0.75,
          "after": 0.6,
-         "metric": "maximum wall stun duration"
+         "metric": "maximum wall stun duration",
+         "by": -0.15,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "maximum wall stun duration"
         }
        ]
       }
@@ -147,7 +163,11 @@
          "text_cn": null,
          "before": 30.0,
          "after": 40.0,
-         "metric": "secondary fire range"
+         "metric": "secondary fire range",
+         "by": 10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "secondary fire range"
         }
        ]
       }
@@ -181,14 +201,22 @@
          "text_cn": null,
          "before": 10.0,
          "after": 12.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": 2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         },
         {
          "text_en": "Weapon spread increased 10%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "weapon spread",
+         "by": null,
+         "by_pct": 10.0,
+         "unit": null,
+         "raw_metric": "weapon spread"
         }
        ]
       }
@@ -213,7 +241,11 @@
          "text_cn": null,
          "before": 10.0,
          "after": 12.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": 2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       }
@@ -238,7 +270,11 @@
          "text_cn": null,
          "before": 40.0,
          "after": 30.0,
-         "metric": "slow effect"
+         "metric": "slow effect",
+         "by": -10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "slow effect"
         }
        ]
       }
@@ -263,7 +299,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "ultimate_cost",
+         "by": null,
+         "by_pct": 10.0,
+         "unit": null,
+         "raw_metric": "ultimate cost"
         }
        ]
       }
@@ -276,7 +316,18 @@
      "role": "damage",
      "dev_note": "Developer comments: With Symmetra recently gaining more lethality in her long-ranged secondary fire, she's no longer as reliant on playing at close range, so we're reverting her total health back to 200.",
      "general": [
-      "Base shield health reduced from 125 to 100 (total 200 HP)."
+      {
+       "text_en": "Base shield health reduced from 125 to 100 (total 200 HP).",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 125.0,
+       "after": 100.0,
+       "by": -25.0,
+       "by_pct": null,
+       "metric": "base shield health",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -300,7 +351,11 @@
          "text_cn": null,
          "before": 3.0,
          "after": 7.0,
-         "metric": "unscoped shots to reach maximum spread"
+         "metric": "unscoped shots to reach maximum spread",
+         "by": 4.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "unscoped shots to reach maximum spread"
         }
        ]
       },
@@ -314,7 +369,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "ultimate_cost",
+         "by": null,
+         "by_pct": 10.0,
+         "unit": null,
+         "raw_metric": "ultimate cost"
         }
        ]
       }
@@ -348,7 +407,11 @@
          "text_cn": null,
          "before": 10.0,
          "after": 12.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": 2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       }
@@ -373,14 +436,22 @@
          "text_cn": null,
          "before": 150.0,
          "after": 125.0,
-         "metric": "health"
+         "metric": "health",
+         "by": -25.0,
+         "by_pct": null,
+         "unit": "hp",
+         "raw_metric": "health"
         },
         {
          "text_en": "Cooldown increased from 23 to 25 seconds.",
          "text_cn": null,
          "before": 23.0,
          "after": 25.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": 2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       }
@@ -405,7 +476,11 @@
          "text_cn": null,
          "before": 0.1,
          "after": 0.05,
-         "metric": "primary fire projectile size"
+         "metric": "primary fire projectile size",
+         "by": -0.05,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "primary fire projectile size"
         }
        ]
       },
@@ -419,14 +494,22 @@
          "text_cn": null,
          "before": 75.0,
          "after": 50.0,
-         "metric": "base health"
+         "metric": "base health",
+         "by": -25.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "base health"
         },
         {
          "text_en": "Cooldown when destroyed increased from 12 to 15 seconds.",
          "text_cn": null,
          "before": 12.0,
          "after": 15.0,
-         "metric": "cooldown when destroyed"
+         "metric": "cooldown",
+         "by": 3.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown when destroyed"
         }
        ]
       }
@@ -451,7 +534,11 @@
          "text_cn": null,
          "before": 14.0,
          "after": 15.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": 1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       }
@@ -476,14 +563,22 @@
          "text_cn": null,
          "before": 20.0,
          "after": 16.0,
-         "metric": "ammo"
+         "metric": "ammo",
+         "by": -4.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "ammo"
         },
         {
          "text_en": "Max heal reduced from 75 to 70.",
          "text_cn": null,
          "before": 75.0,
          "after": 70.0,
-         "metric": "max heal"
+         "metric": "max heal",
+         "by": -5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "max heal"
         }
        ]
       },
@@ -497,7 +592,11 @@
          "text_cn": null,
          "before": 16.0,
          "after": 19.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": 3.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       }
@@ -510,7 +609,18 @@
      "role": "support",
      "dev_note": "Developer comments: The goal of these changes is to add more counterplay against Discord Orb and encourage Zenyatta players to think more about who to place it on. Now, if the effect ends for any reason, the target is temporarily unable to be targeted again by Discord Orb. A new soft-targeting reticle appears when aiming toward an enemy player that cannot be affected by Discord Orb to display the remaining duration before it can be reapplied. This is a significant change both to how the ability feels to use and how clear it is to understand, so we will be keeping a close eye on player feedback.",
      "general": [
-      "Base health increased from 50 to 75 (total 225 HP)."
+      {
+       "text_en": "Base health increased from 50 to 75 (total 225 HP).",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 50.0,
+       "after": 75.0,
+       "by": 25.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -524,7 +634,11 @@
          "text_cn": null,
          "before": 3.0,
          "after": 5.0,
-         "metric": "sight"
+         "metric": "time to wear off when not in line-of-sight",
+         "by": 2.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "time to wear off when not in line-of-sight"
         }
        ]
       },
@@ -538,14 +652,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Range increased from 30 to 40 meters.",
          "text_cn": null,
          "before": 30.0,
          "after": 40.0,
-         "metric": "range"
+         "metric": "range",
+         "by": 10.0,
+         "by_pct": null,
+         "unit": "m",
+         "raw_metric": "range"
         }
        ]
       }
@@ -575,9 +697,42 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Added the Hero-Specific Options:",
-      "Relative Aim Sensitivity During Power Block - 100% by default.",
-      "Relative Gyro Aim Sensitivity During Power Block - 100% by default (Only available on gyro-supported platforms)."
+      {
+       "text_en": "Added the Hero-Specific Options:",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Relative Aim Sensitivity During Power Block - 100% by default.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Relative Gyro Aim Sensitivity During Power Block - 100% by default (Only available on gyro-supported platforms).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -589,8 +744,30 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Added the Hero-Specific Option:",
-      "Rise During Gravitic Flux With Ability 3 - Off by default."
+      {
+       "text_en": "Added the Hero-Specific Option:",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Rise During Gravitic Flux With Ability 3 - Off by default.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -611,11 +788,66 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Added the Hero-Specific Options:",
-      "Crouch Activates Glide - Off by default.",
-      "Rise During Flight With Ability 1 - Off by default.",
-      "Flight Cancel Input - Ability 1 by default.",
-      "Automatically Toggle Glide After Flight - Off by default."
+      {
+       "text_en": "Added the Hero-Specific Options:",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Crouch Activates Glide - Off by default.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Rise During Flight With Ability 1 - Off by default.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Flight Cancel Input - Ability 1 by default.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Automatically Toggle Glide After Flight - Off by default.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -627,8 +859,30 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Added the Hero-Specific Option:",
-      "Interact Cancels Deploy Turret - On by default."
+      {
+       "text_en": "Added the Hero-Specific Option:",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Interact Cancels Deploy Turret - On by default.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -649,8 +903,30 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "Added the Hero-Specific Option:",
-      "Rise During Captive Sun With Ability 3 - Off by default."
+      {
+       "text_en": "Added the Hero-Specific Option:",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Rise During Captive Sun With Ability 3 - Off by default.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -662,9 +938,42 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "Added the Hero-Specific Options:",
-      "Automatically Wall Ride - Off by default, Only available on Console Platforms.",
-      "Wall Ride Cares About Movement – Off by default."
+      {
+       "text_en": "Added the Hero-Specific Options:",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Automatically Wall Ride - Off by default, Only available on Console Platforms.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Wall Ride Cares About Movement – Off by default.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -676,10 +985,54 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "Added the Hero-Specific Options:",
-      "Crouch Activates Glide - On by default.",
-      "Automatically Toggle Angelic Decent After Guardian Angel - Off by default.",
-      "Rise During Valkyrie With Ability 3 - Off by default."
+      {
+       "text_en": "Added the Hero-Specific Options:",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Crouch Activates Glide - On by default.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Automatically Toggle Angelic Decent After Guardian Angel - Off by default.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Rise During Valkyrie With Ability 3 - Off by default.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -737,5 +1090,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:afa2df2fcdc70e08c9ec431f3e6c7e5d9f4f68e59a2e8b6faff1a556e2a06d84"
+ "hash": "sha256:6b93b1cd95f9519048ad798bf2aa4bc6cfee4112d1fced59e00d66ef6fcf3f7f"
 }

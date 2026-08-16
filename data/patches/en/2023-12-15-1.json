@@ -27,9 +27,42 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Mauga is now available in Competitive Play for players who unlocked him.",
-      "Base health decreased from 350 to 250.",
-      "Base armor increased from 150 to 250."
+      {
+       "text_en": "Mauga is now available in Competitive Play for players who unlocked him.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Base health decreased from 350 to 250.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 350.0,
+       "after": 250.0,
+       "by": -100.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      },
+      {
+       "text_en": "Base armor increased from 150 to 250.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 150.0,
+       "after": 250.0,
+       "by": 100.0,
+       "by_pct": null,
+       "metric": "base armor",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -43,14 +76,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Spread decreased from 1.1 to 1 when only one Chaingun is active.",
          "text_cn": null,
          "before": 1.1,
          "after": 1.0,
-         "metric": "spread"
+         "metric": "spread",
+         "by": -0.1,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "spread"
         }
        ]
       },
@@ -64,7 +105,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -94,5 +139,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:a622f9d1ec53a1b93a8373cece4991582ec93ff0a1bcddbd0734c7c0ebdc22e1"
+ "hash": "sha256:b9e5dc536a586822277377848019498b827e3291ab2b35e1c7c76a3ce4607edf"
 }

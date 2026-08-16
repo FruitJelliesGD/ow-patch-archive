@@ -69,7 +69,11 @@
          "text_cn": null,
          "before": 50.0,
          "after": 65.0,
-         "metric": "impact damage"
+         "metric": "impact damage",
+         "by": 15.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "impact damage"
         }
        ]
       }
@@ -94,21 +98,33 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Cooldown increased from 12 to 16.5 seconds.",
          "text_cn": null,
          "before": 12.0,
          "after": 16.5,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": 4.5,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         },
         {
          "text_en": "Overhealth bonus decreased from 125 to 100.",
          "text_cn": null,
          "before": 125.0,
          "after": 100.0,
-         "metric": "overhealth bonus"
+         "metric": "overhealth",
+         "by": -25.0,
+         "by_pct": null,
+         "unit": "hp",
+         "raw_metric": "overhealth bonus"
         }
        ]
       }
@@ -133,21 +149,33 @@
          "text_cn": null,
          "before": 200.0,
          "after": 225.0,
-         "metric": "health"
+         "metric": "health",
+         "by": 25.0,
+         "by_pct": null,
+         "unit": "hp",
+         "raw_metric": "health"
         },
         {
          "text_en": "Cooldown decreased from 10 to 8 seconds.",
          "text_cn": null,
          "before": 10.0,
          "after": 8.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": -2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         },
         {
          "text_en": "Size increased 15%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "size",
+         "by": null,
+         "by_pct": 15.0,
+         "unit": null,
+         "raw_metric": "size"
         }
        ]
       }
@@ -181,7 +209,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -206,7 +238,11 @@
          "text_cn": null,
          "before": 30.0,
          "after": 15.0,
-         "metric": "impact damage"
+         "metric": "impact damage",
+         "by": -15.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "impact damage"
         }
        ]
       },
@@ -220,7 +256,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -245,14 +285,22 @@
          "text_cn": null,
          "before": 65.0,
          "after": 70.0,
-         "metric": "damage"
+         "metric": "damage",
+         "by": 5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage"
         },
         {
          "text_en": "Duration before slow falls off between primary fire hits increased from 0.5 to 0.6 seconds.",
          "text_cn": null,
          "before": 0.5,
          "after": 0.6,
-         "metric": "duration before slow falls off between primary fire hits"
+         "metric": "duration",
+         "by": 0.1,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "duration before slow falls off between primary fire hits"
         }
        ]
       },
@@ -266,7 +314,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -300,14 +352,22 @@
          "text_cn": null,
          "before": 50.0,
          "after": 40.0,
-         "metric": "instant healing"
+         "metric": "instant healing",
+         "by": -10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "instant healing"
         },
         {
          "text_en": "Heal over time decreased from 50 over 5 seconds to 40 over 4 seconds.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -332,7 +392,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -372,5 +436,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:a186d9af4650dbd6deb2e84bef3852312c69fc5048bbdbaf6bfe571b49cb8105"
+ "hash": "sha256:426abe3c21487fcedc0c34552ea969d352e43cff2a2659e4a96e5388a4866bf8"
 }

@@ -38,7 +38,7 @@ def test_en_heroes_abilities_and_numbers():
     c = surge.changes[0]
     assert c.text_en == "Cast Time reduced from 0.15 to 0.05 seconds."
     assert (c.before, c.after) == (0.15, 0.05)
-    assert c.metric == "cast time"
+    assert c.metric == "cast_time"  # normalized from 'cast time'
 
     # "25% to 40%" does not match "from X to Y": text kept, numbers null
     purr = heroes[1].abilities[0].changes[0]
@@ -60,14 +60,14 @@ def test_cn_2026_08_patch_ids_and_names():
     c = ab.changes[0]
     assert c.text_cn == "施放时间从0.15秒缩短至0.05秒。"
     assert (c.before, c.after) == (0.15, 0.05)
-    assert c.metric == "施放时间"
+    assert c.metric == "cast_time"  # normalized from 施放时间
 
     p2 = patches[1]
     assert p2.sections[1].heroes[0].abilities[0].name_cn == "等离子剑"
     c2 = p2.sections[1].heroes[0].abilities[0].changes[0]
     assert c2.text_cn == "伤害从60点提高至65点。"
     assert (c2.before, c2.after) == (60.0, 65.0)
-    assert c2.metric == "伤害"
+    assert c2.metric == "damage"
 
 
 def test_legacy_2016_degrades_to_raw_text():

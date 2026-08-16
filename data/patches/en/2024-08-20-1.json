@@ -122,7 +122,11 @@
          "text_cn": null,
          "before": 3.5,
          "after": 3.0,
-         "metric": "maximum duration"
+         "metric": "maximum duration",
+         "by": -0.5,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "maximum duration"
         }
        ]
       }
@@ -147,7 +151,11 @@
          "text_cn": null,
          "before": 60.0,
          "after": 80.0,
-         "metric": "impact damage"
+         "metric": "impact damage",
+         "by": 20.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "impact damage"
         }
        ]
       }
@@ -172,14 +180,22 @@
          "text_cn": null,
          "before": 47.0,
          "after": 55.0,
-         "metric": "secondary fire minimum damage"
+         "metric": "secondary fire minimum damage",
+         "by": 8.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "secondary fire minimum damage"
         },
         {
          "text_en": "Secondary fire maximum damage increased from 95 to 110.",
          "text_cn": null,
          "before": 95.0,
          "after": 110.0,
-         "metric": "secondary fire maximum damage"
+         "metric": "secondary fire maximum damage",
+         "by": 15.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "secondary fire maximum damage"
         }
        ]
       }
@@ -201,7 +217,18 @@
      "role": "damage",
      "dev_note": "Developer Comment: No additional adjustments to support the reduced health pool as, like Pharah, Echo was one of the top performing Damage heroes recently.",
      "general": [
-      "Base health reduced from 250 to 225."
+      {
+       "text_en": "Base health reduced from 250 to 225.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 250.0,
+       "after": 225.0,
+       "by": -25.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -213,7 +240,18 @@
      "role": "damage",
      "dev_note": "Developer Comment: Hanzo doesn't quite fit the category of being as highly mobile as the other heroes we're moving to 225 HP, but like Widowmaker, has the potential long-range lethality merits, as he is now able to one-shot the 225 HP heroes. It's also nice for the Hanzo mirror match to be more decisive as well.",
      "general": [
-      "Base health reduced from 250 to 225."
+      {
+       "text_en": "Base health reduced from 250 to 225.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 250.0,
+       "after": 225.0,
+       "by": -25.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -237,14 +275,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Projectiles preserve slightly more velocity on ricochet.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -269,21 +315,33 @@
          "text_cn": null,
          "before": 2.0,
          "after": 1.6,
-         "metric": "primary fire weapon spread"
+         "metric": "primary fire weapon spread",
+         "by": -0.4,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "primary fire weapon spread"
         },
         {
          "text_en": "Critical hits now grant 10 energy.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Energy degeneration rate reduced from 33 to 15 per second after 7 seconds.",
          "text_cn": null,
          "before": 33.0,
          "after": 15.0,
-         "metric": "energy degeneration rate"
+         "metric": "energy degeneration rate",
+         "by": -18.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "energy degeneration rate"
         }
        ]
       }
@@ -296,7 +354,18 @@
      "role": "damage",
      "dev_note": "Developer Comment: The increased movement speed while in stealth will better enable Sombra to get into advantageous positions or be slightly more evasive with the new lower health.",
      "general": [
-      "Base health reduced from 250 to 225."
+      {
+       "text_en": "Base health reduced from 250 to 225.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 250.0,
+       "after": 225.0,
+       "by": -25.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -321,8 +390,30 @@
      "role": "damage",
      "dev_note": "Developer Comment: This shift in armor health for Torbjorn is to increase survivability against the heroes which are most affected by armor's damage reduction, such as Tracer.",
      "general": [
-      "Base health reduced from 250 to 225.",
-      "Base armor increased from 50 to 75."
+      {
+       "text_en": "Base health reduced from 250 to 225.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 250.0,
+       "after": 225.0,
+       "by": -25.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      },
+      {
+       "text_en": "Base armor increased from 50 to 75.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 50.0,
+       "after": 75.0,
+       "by": 25.0,
+       "by_pct": null,
+       "metric": "base armor",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -355,7 +446,11 @@
          "text_cn": null,
          "before": 16.0,
          "after": 14.0,
-         "metric": "maximum ammo"
+         "metric": "maximum ammo",
+         "by": -2.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "maximum ammo"
         }
        ]
       },
@@ -369,7 +464,11 @@
          "text_cn": null,
          "before": 0.15,
          "after": 0.0,
-         "metric": "projectile environment collision size"
+         "metric": "projectile environment collision size",
+         "by": -0.15,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "projectile environment collision size"
         }
        ]
       }
@@ -382,9 +481,42 @@
      "role": "support",
      "dev_note": "Developer Comment: Community feedback on Juno's trial was split between over and underpowered. On the stat side, she performed strongly in most every categories but particularly overperformed in healing output over the course of a game. These changes are improving her utility while pulling back lightly on healing throughput, since we'd still like her to launch in a strong state as players grow accustomed to her playstyle. There were also quite a few quality-of-life improvements that are listed elsewhere in the patch notes.",
      "general": [
-      "Juno has been added to the lineup.",
-      "Juno is now eligible for Competitive Play.",
-      "Base health reduced from 250 to 225."
+      {
+       "text_en": "Juno has been added to the lineup.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Juno is now eligible for Competitive Play.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Base health reduced from 250 to 225.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 250.0,
+       "after": 225.0,
+       "by": -25.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -398,7 +530,11 @@
          "text_cn": null,
          "before": 34.0,
          "after": 28.0,
-         "metric": "burst projectile volley rate of fire"
+         "metric": "burst projectile volley rate of fire",
+         "by": -6.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "burst projectile volley rate of fire"
         }
        ]
       },
@@ -412,14 +548,22 @@
          "text_cn": null,
          "before": 75.0,
          "after": 85.0,
-         "metric": "damage and healing impact"
+         "metric": "damage",
+         "by": 10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage and healing impact"
         },
         {
          "text_en": "Heal-over-time reduced from 60 to 50 health.",
          "text_cn": null,
          "before": 60.0,
          "after": 50.0,
-         "metric": "time"
+         "metric": "heal-over-time",
+         "by": -10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "heal-over-time"
         }
        ]
       },
@@ -433,14 +577,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Cooldown reduced from 16 to 14 seconds.",
          "text_cn": null,
          "before": 16.0,
          "after": 14.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": -2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       },
@@ -454,7 +606,11 @@
          "text_cn": null,
          "before": 1.9,
          "after": 2.25,
-         "metric": "beam travel speed"
+         "metric": "beam travel speed",
+         "by": 0.35,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "beam travel speed"
         }
        ]
       }
@@ -467,7 +623,18 @@
      "role": "support",
      "dev_note": "Developer Comment: Despite the perception of how powerful Kiriko feels to play against, she is a hero that consistently underperforms when it comes to winning games. However, she is a highly evasive hero that makes a lot of sense to be in the 225 health bracket. To help counterbalance the loss of health, we're smoothing out her damage dealing consistency by increasing the Kunai weapon's base damage and removing the enhanced critical multiplier.",
      "general": [
-      "Base health reduced from 250 to 225."
+      {
+       "text_en": "Base health reduced from 250 to 225.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 250.0,
+       "after": 225.0,
+       "by": -25.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -481,21 +648,33 @@
          "text_cn": null,
          "before": 2.5,
          "after": 2.0,
-         "metric": "critical multiplier"
+         "metric": "critical multiplier",
+         "by": -0.5,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "critical multiplier"
         },
         {
          "text_en": "Damage increased from 45 to 60.",
          "text_cn": null,
          "before": 45.0,
          "after": 60.0,
-         "metric": "damage"
+         "metric": "damage",
+         "by": 15.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage"
         },
         {
          "text_en": "Recovery time increased from 0.5 to 0.55 seconds.",
          "text_cn": null,
          "before": 0.5,
          "after": 0.55,
-         "metric": "recovery time"
+         "metric": "recovery",
+         "by": 0.05,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "recovery time"
         }
        ]
       }
@@ -520,14 +699,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "No longer reduces movement speed when holding a full charge.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -541,28 +728,44 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Platform now resets if no one is standing on it for 2 seconds.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Duration increased from 10 to 12 seconds.",
          "text_cn": null,
          "before": 10.0,
          "after": 12.0,
-         "metric": "duration"
+         "metric": "duration",
+         "by": 2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "duration"
         },
         {
          "text_en": "Health reduced from 400 to 300.",
          "text_cn": null,
          "before": 400.0,
          "after": 300.0,
-         "metric": "health"
+         "metric": "health",
+         "by": -100.0,
+         "by_pct": null,
+         "unit": "hp",
+         "raw_metric": "health"
         }
        ]
       },
@@ -576,7 +779,11 @@
          "text_cn": null,
          "before": 60.0,
          "after": 45.0,
-         "metric": "healing"
+         "metric": "healing",
+         "by": -15.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "healing"
         }
        ]
       }
@@ -589,7 +796,18 @@
      "role": "support",
      "dev_note": "Developer Comment: Mercy's Guardian Angel movement enables her to be highly evasive and difficult to engage with for many heroes, but is also one of the most fun parts of her ability kit so we'd like to keep that strength, so we're moving her to 225 HP and increasing the output of her Caduceus Staff beams.",
      "general": [
-      "Base health reduced from 250 to 225."
+      {
+       "text_en": "Base health reduced from 250 to 225.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 250.0,
+       "after": 225.0,
+       "by": -25.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -603,14 +821,22 @@
          "text_cn": null,
          "before": 55.0,
          "after": 60.0,
-         "metric": "primary fire healing"
+         "metric": "primary fire healing",
+         "by": 5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "primary fire healing"
         },
         {
          "text_en": "Secondary fire damage boost increased from 25% to 30%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -623,7 +849,18 @@
      "role": "support",
      "dev_note": "Developer Comment: Moira can be difficult to take down between the low cooldown on her Fade ability and self-healing with the Biotic Orb, so now she has 225 HP and slightly higher damage output to keep an edge to her offensive potential.",
      "general": [
-      "Base health reduced from 250 to 225."
+      {
+       "text_en": "Base health reduced from 250 to 225.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 250.0,
+       "after": 225.0,
+       "by": -25.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -637,7 +874,11 @@
          "text_cn": null,
          "before": 60.0,
          "after": 65.0,
-         "metric": "secondary fire damage"
+         "metric": "secondary fire damage",
+         "by": 5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "secondary fire damage"
         }
        ]
       }
@@ -650,7 +891,18 @@
      "role": "support",
      "dev_note": "Developer Comment: Lucio is one of the most mobile heroes and makes his allies faster as well, so we're moving him into the 225 HP hero category. His playstyle tends to get into closer ranges more often than other heroes in this category, so we're turning up his Primary fire damage output to increase his effectiveness at range before diving in.",
      "general": [
-      "Base health reduced from 250 to 225."
+      {
+       "text_en": "Base health reduced from 250 to 225.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 250.0,
+       "after": 225.0,
+       "by": -25.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -698,14 +950,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "The heal sounds that play locally to the Juno player were updated to be more noticeable when healing allies closer to full health.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -717,44 +977,68 @@
         {
          "text_en": "The cooldown when the ability is canceled after no successful lock-ons has been reduced from 5 seconds to 2 seconds.",
          "text_cn": null,
-         "before": null,
-         "after": null,
-         "metric": null
+         "before": 5.0,
+         "after": 2.0,
+         "metric": "the cooldown when the ability is canceled after no successful lock-ons has been",
+         "by": -3.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "the cooldown when the ability is canceled after no successful lock-ons has been"
         },
         {
          "text_en": "Line of Sight checks were improved to better find targets with hitboxes in view.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Added range forgiveness of an extra 5 meters on current targets that might move beyond the max 40 meters range.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "The local cancel sound was increased in volume to be more noticeable for the Juno player.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "The ally and enemy impact sounds were updated to be more noticeable for the Juno player.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Healing torpedoes have new impact visuals when hitting enemy barriers and when clipping near walls.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -768,7 +1052,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -782,14 +1070,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "The sound when re-entering the Hyper Ring was updated to be more noticeable.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -803,14 +1099,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "The enemy version of the ray's start sound was updated to be more noticeable.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -848,5 +1152,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:938988fb1ac5e1c93b5c8290146848effbaaefc3769e6acf367a691105a108cd"
+ "hash": "sha256:ea9865185da064fdf08c72d2ec52c65a56ef79b5d8c361536c951180e6346196"
 }

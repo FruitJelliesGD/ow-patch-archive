@@ -142,7 +142,11 @@
          "text_cn": "屏障生命值从450点提高至500点。",
          "before": 450.0,
          "after": 500.0,
-         "metric": "屏障生命值"
+         "metric": "barrier",
+         "by": 50.0,
+         "by_pct": null,
+         "unit": "hp",
+         "raw_metric": "屏障生命值"
         }
        ]
       }
@@ -167,7 +171,11 @@
          "text_cn": "伤害从50点提高至60点。",
          "before": 50.0,
          "after": 60.0,
-         "metric": "伤害"
+         "metric": "damage",
+         "by": 10.0,
+         "by_pct": null,
+         "unit": "hp",
+         "raw_metric": "伤害"
         }
        ]
       }
@@ -180,7 +188,18 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "终极技能消耗提高7%。"
+      {
+       "text_en": null,
+       "text_cn": "终极技能消耗提高7%。",
+       "subject": "ultimate_cost",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 7.0,
+       "metric": "ultimate_cost",
+       "unit": null
+      }
      ],
      "perks": [
       {
@@ -224,7 +243,11 @@
          "text_cn": "冷却时间从5秒延长至6秒。（5v5）",
          "before": 5.0,
          "after": 6.0,
-         "metric": "冷却时间"
+         "metric": "cooldown",
+         "by": 1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "冷却时间"
         }
        ]
       }
@@ -267,7 +290,18 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "终极技能消耗降低6%。"
+      {
+       "text_en": null,
+       "text_cn": "终极技能消耗降低6%。",
+       "subject": "ultimate_cost",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 6.0,
+       "metric": "ultimate_cost",
+       "unit": null
+      }
      ],
      "perks": [
       {
@@ -370,7 +404,18 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "终极技能消耗降低6%。"
+      {
+       "text_en": null,
+       "text_cn": "终极技能消耗降低6%。",
+       "subject": "ultimate_cost",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 6.0,
+       "metric": "ultimate_cost",
+       "unit": null
+      }
      ],
      "perks": [
       {
@@ -392,7 +437,18 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "终极技能消耗降低6%。"
+      {
+       "text_en": null,
+       "text_cn": "终极技能消耗降低6%。",
+       "subject": "ultimate_cost",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 6.0,
+       "metric": "ultimate_cost",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -416,7 +472,11 @@
          "text_cn": "冷却时间从7秒延长至8秒。",
          "before": 7.0,
          "after": 8.0,
-         "metric": "冷却时间"
+         "metric": "cooldown",
+         "by": 1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "冷却时间"
         }
        ]
       }
@@ -441,7 +501,11 @@
          "text_cn": "地面发射时判定半径从1.5米降低至1米。",
          "before": 1.5,
          "after": 1.0,
-         "metric": "地面发射时判定半径"
+         "metric": "地面发射时判定半径",
+         "by": -0.5,
+         "by_pct": null,
+         "unit": "m",
+         "raw_metric": "地面发射时判定半径"
         }
        ]
       }
@@ -486,7 +550,11 @@
          "text_cn": "冷却时间从13秒缩短至12秒。",
          "before": 13.0,
          "after": 12.0,
-         "metric": "冷却时间"
+         "metric": "cooldown",
+         "by": -1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "冷却时间"
         }
        ]
       }
@@ -511,7 +579,11 @@
          "text_cn": "重生时冷却时间从7秒缩短至3秒。",
          "before": 7.0,
          "after": 3.0,
-         "metric": "重生时冷却时间"
+         "metric": "重生时冷却时间",
+         "by": -4.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "重生时冷却时间"
         }
        ]
       }
@@ -524,7 +596,18 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "终极技能消耗降低8%。"
+      {
+       "text_en": null,
+       "text_cn": "终极技能消耗降低8%。",
+       "subject": "ultimate_cost",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 8.0,
+       "metric": "ultimate_cost",
+       "unit": null
+      }
      ],
      "perks": [
       {
@@ -564,9 +647,42 @@
      "role": "support",
      "dev_note": "这些更改目的是为了让“飞天猫”移动操作更加灵敏，同时保持“救生索”的移动速度接近于之前版本。“咻咻飞”的移动速度保持不变。",
      "general": [
-      "终极技能消耗提高7%。",
-      "基础移动速度从5.5米每秒提高至6米每秒。",
-      "空中加速度从7.7提升至9.5。"
+      {
+       "text_en": null,
+       "text_cn": "终极技能消耗提高7%。",
+       "subject": "ultimate_cost",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 7.0,
+       "metric": "ultimate_cost",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "基础移动速度从5.5米每秒提高至6米每秒。",
+       "subject": "move_speed",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "空中加速度从7.7提升至9.5。",
+       "subject": null,
+       "dimension": "other",
+       "before": 7.7,
+       "after": 9.5,
+       "by": 1.8,
+       "by_pct": null,
+       "metric": "空中加速度",
+       "unit": null
+      }
      ],
      "perks": [
       {
@@ -600,7 +716,11 @@
          "text_cn": "移动速度加成从40%降低至30%。",
          "before": 40.0,
          "after": 30.0,
-         "metric": "移动速度加成"
+         "metric": "move_speed",
+         "by": -10.0,
+         "by_pct": null,
+         "unit": "pct",
+         "raw_metric": "移动速度加成"
         }
        ]
       }
@@ -625,7 +745,11 @@
          "text_cn": "锁定目标的最短时间从0.5秒缩短至0.35秒。",
          "before": 0.5,
          "after": 0.35,
-         "metric": "锁定目标的最短时间"
+         "metric": "锁定目标的最短时间",
+         "by": -0.15,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "锁定目标的最短时间"
         }
        ]
       }
@@ -650,28 +774,44 @@
          "text_cn": "现在可以在0.6秒后通过跳跃操作手动取消。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": null,
          "text_cn": "基础拖拽速度从每秒30米降低至25米。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": null,
          "text_cn": "对15米外的目标初始拖拽速度较慢，且会逐步加速。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": null,
          "text_cn": "加入了新的通用英雄设置，以供禁用“生命之握”取消操作。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -706,7 +846,11 @@
          "text_cn": "弹道尺寸从0.35米降低至0.3米。",
          "before": 0.35,
          "after": 0.3,
-         "metric": "弹道尺寸"
+         "metric": "弹道尺寸",
+         "by": -0.05,
+         "by_pct": null,
+         "unit": "m",
+         "raw_metric": "弹道尺寸"
         }
        ]
       },
@@ -720,7 +864,11 @@
          "text_cn": "冷却时间从11秒延长至12秒。",
          "before": 11.0,
          "after": 12.0,
-         "metric": "冷却时间"
+         "metric": "cooldown",
+         "by": 1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "冷却时间"
         }
        ]
       }
@@ -745,7 +893,11 @@
          "text_cn": "最大角度从10度扩大至15度。",
          "before": 10.0,
          "after": 15.0,
-         "metric": "最大角度"
+         "metric": "最大角度",
+         "by": 5.0,
+         "by_pct": null,
+         "unit": "deg",
+         "raw_metric": "最大角度"
         }
        ]
       }
@@ -809,52 +961,498 @@
      "role": "tank",
      "dev_note": "这些改动旨在为D.Va的异能提供更多搭配多样性，让她的一些较弱的搭配获得更大的改造空间，体验更具乐趣，同时削弱一些过强的选项。",
      "general": [
-      "脸接伤害——异能",
-      "效果从“[防御矩阵]会将阻挡伤害量的30%转换为对自己的治疗量”改为“使用[防御矩阵]抵挡150点伤害后，治疗自身，数值为抵挡伤害的15%，并治疗6米内的所有盟友，数值为抵挡伤害的25%”。",
-      "聚焦聚变——异能",
-      "添加效果：对8米以外的敌人造成武器伤害后，[防御矩阵]的恢复速度加快33%。",
-      "引火爆发——异能",
-      "伤害从60点降低至40点。",
-      "持续时间从3秒缩短至2秒。",
-      "MEKA撤离护盾——异能",
-      "新增",
-      "+50%[呼叫机甲]半径。从[机甲]中弹射或返回其中时，会为周围的所有盟友提供过量生命值，数值为你最大总生命值的20%，持续5秒。",
-      "MEKA弹射器——异能",
-      "基于“特快引爆”重做。",
-      "效果从“+50%[呼叫机甲]半径。[自毁]爆炸速度加快15%”改为“[自毁]爆炸速度加快25%，且终极技能充能消耗降低50%，但造成的伤害降低75%，并且引爆后只提供75%终极技能充能”。",
-      "速效推进——异能",
-      "效果从“[推进器]持续时间的最初2秒内，[防御矩阵]的恢复速度加快125%”改为“[推进器]造成伤害使[推进器]持续时间延长0.5秒，恢复5%的[防御矩阵]资源，并提供治疗，数值为最大总生命值的5%”。",
-      "小兔重砸——异能",
-      "现在效果会根据最大总生命值提升，而不是根据最大护盾和护甲提升。",
-      "提升比例从25%降低至15%。",
-      "现在会算作[推进器]伤害。",
-      "纳米可乐™氮素——稀有武器英雄物品",
-      "25点生命值。",
-      "5%武器强度。",
-      "从[机甲]中弹射后，移动速度加快20%，攻击速度加快10%，并且获得50%最大弹药。",
-      "费用为5000。",
-      "矩阵强化——史诗武器英雄物品",
-      "新增",
-      "10%攻击速度。",
-      "使用[防御矩阵]抵挡150点伤害，造成的武器伤害便会提高20%，持续3秒。",
-      "维苏威协议——稀有技能英雄物品",
-      "已移除",
-      "D.Mon的引爆器——史诗技能英雄物品",
-      "基于“岱玹的引爆器”重做。",
-      "效果从“[机甲]在空中引爆时，[自毁]的爆炸伤害和范围均提高100%”改为“[自毁]期间，如果[机甲]在空中爆炸或使用[推进器]造成伤害，[自毁]的爆炸范围便扩大100%，并且使敌人受到的伤害提高50%，持续5秒”。",
-      "机甲保龄球——史诗技能英雄物品",
-      "新增",
-      "25点护甲。",
-      "15%技能强度。",
-      "[自毁]期间，[推进器]的移动速度加快50%，造成300%额外伤害，并且能击飞敌人。",
-      "单挑规范——稀有生存英雄物品",
-      "已移除",
-      "MEKA动力服——史诗生存英雄物品",
-      "基于“釜山冲击枪”重做。",
-      "效果从“技能：脱离机甲状态下使用[辅助攻击模式]发射一道爆炸贯穿脉冲，造成80点伤害”改为“从[机甲]中弹射后，长按[跳跃]升空，并长按[辅助攻击模式]射出一发充能射击，最多造成80点伤害，并使敌人减速30%，持续3秒”。"
+      {
+       "text_en": null,
+       "text_cn": "效果从“[防御矩阵]会将阻挡伤害量的30%转换为对自己的治疗量”改为“使用[防御矩阵]抵挡150点伤害后，治疗自身，数值为抵挡伤害的15%，并治疗6米内的所有盟友，数值为抵挡伤害的25%”。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "添加效果：对8米以外的敌人造成武器伤害后，[防御矩阵]的恢复速度加快33%。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "伤害从60点降低至40点。",
+       "subject": null,
+       "dimension": "other",
+       "before": 60.0,
+       "after": 40.0,
+       "by": -20.0,
+       "by_pct": null,
+       "metric": "damage",
+       "unit": "hp"
+      },
+      {
+       "text_en": null,
+       "text_cn": "持续时间从3秒缩短至2秒。",
+       "subject": null,
+       "dimension": "other",
+       "before": 3.0,
+       "after": 2.0,
+       "by": -1.0,
+       "by_pct": null,
+       "metric": "duration",
+       "unit": "s"
+      },
+      {
+       "text_en": null,
+       "text_cn": "新增",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "+50%[呼叫机甲]半径。从[机甲]中弹射或返回其中时，会为周围的所有盟友提供过量生命值，数值为你最大总生命值的20%，持续5秒。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "基于“特快引爆”重做。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "效果从“+50%[呼叫机甲]半径。[自毁]爆炸速度加快15%”改为“[自毁]爆炸速度加快25%，且终极技能充能消耗降低50%，但造成的伤害降低75%，并且引爆后只提供75%终极技能充能”。",
+       "subject": "ultimate_cost",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 50.0,
+       "metric": "且终极技能充能消耗",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "效果从“[推进器]持续时间的最初2秒内，[防御矩阵]的恢复速度加快125%”改为“[推进器]造成伤害使[推进器]持续时间延长0.5秒，恢复5%的[防御矩阵]资源，并提供治疗，数值为最大总生命值的5%”。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "现在效果会根据最大总生命值提升，而不是根据最大护盾和护甲提升。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "提升比例从25%降低至15%。",
+       "subject": null,
+       "dimension": "other",
+       "before": 25.0,
+       "after": 15.0,
+       "by": -10.0,
+       "by_pct": null,
+       "metric": "提升比例",
+       "unit": "pct"
+      },
+      {
+       "text_en": null,
+       "text_cn": "现在会算作[推进器]伤害。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "纳米可乐™氮素——稀有武器英雄物品",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "25点生命值。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "5%武器强度。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "从[机甲]中弹射后，移动速度加快20%，攻击速度加快10%，并且获得50%最大弹药。",
+       "subject": "move_speed",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "费用为5000。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "矩阵强化——史诗武器英雄物品",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "新增",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "10%攻击速度。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "使用[防御矩阵]抵挡150点伤害，造成的武器伤害便会提高20%，持续3秒。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 20.0,
+       "metric": "造成的武器伤害便会",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "维苏威协议——稀有技能英雄物品",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "已移除",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "D.Mon的引爆器——史诗技能英雄物品",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "基于“岱玹的引爆器”重做。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "效果从“[机甲]在空中引爆时，[自毁]的爆炸伤害和范围均提高100%”改为“[自毁]期间，如果[机甲]在空中爆炸或使用[推进器]造成伤害，[自毁]的爆炸范围便扩大100%，并且使敌人受到的伤害提高50%，持续5秒”。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 100.0,
+       "metric": "的爆炸伤害和范围均",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "机甲保龄球——史诗技能英雄物品",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "新增",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "25点护甲。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "15%技能强度。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "单挑规范——稀有生存英雄物品",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "已移除",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "MEKA动力服——史诗生存英雄物品",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "基于“釜山冲击枪”重做。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "效果从“技能：脱离机甲状态下使用[辅助攻击模式]发射一道爆炸贯穿脉冲，造成80点伤害”改为“从[机甲]中弹射后，长按[跳跃]升空，并长按[辅助攻击模式]射出一发充能射击，最多造成80点伤害，并使敌人减速30%，持续3秒”。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
-     "perks": [],
-     "abilities": []
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "脸接伤害",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": null,
+       "name_cn": "聚焦聚变",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": null,
+       "name_cn": "引火爆发",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": null,
+       "name_cn": "MEKA撤离护盾",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": null,
+       "name_cn": "MEKA弹射器",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": null,
+       "name_cn": "速效推进",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": null,
+       "name_cn": "小兔重砸",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": "Self-Destruct",
+       "name_cn": "自毁",
+       "slug": "self-destruct",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "[自毁]期间，[推进器]的移动速度加快50%，造成300%额外伤害，并且能击飞敌人。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "unit": null,
+         "raw_metric": null
+        }
+       ]
+      }
+     ]
     },
     {
      "slug": "orisa",
@@ -863,21 +1461,155 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "暴充能器——异能",
-      "暴击伤害从75%提高至100%。",
-      "OR-15升力器——异能",
-      "更改为异能。",
-      "现在会提升武器伤害，而不是提供武器强度。",
-      "最大伤害从40%降低至30%。",
-      "核心冷却——史诗武器英雄物品",
-      "更改为物品。",
-      "添加效果：15%武器生命汲取。",
-      "“强固防御”期间的攻击速度加成从10%提高至15%。",
-      "费用为10000。",
-      "3D打印标枪——史诗技能英雄物品",
-      "添加效果：[能量标枪]暴击可额外缩短1.5秒。"
+      {
+       "text_en": null,
+       "text_cn": "暴击伤害从75%提高至100%。",
+       "subject": null,
+       "dimension": "other",
+       "before": 75.0,
+       "after": 100.0,
+       "by": 25.0,
+       "by_pct": null,
+       "metric": "暴击伤害",
+       "unit": "pct"
+      },
+      {
+       "text_en": null,
+       "text_cn": "更改为异能。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "现在会提升武器伤害，而不是提供武器强度。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "最大伤害从40%降低至30%。",
+       "subject": null,
+       "dimension": "other",
+       "before": 40.0,
+       "after": 30.0,
+       "by": -10.0,
+       "by_pct": null,
+       "metric": "最大伤害",
+       "unit": "pct"
+      },
+      {
+       "text_en": null,
+       "text_cn": "核心冷却——史诗武器英雄物品",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "更改为物品。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "添加效果：15%武器生命汲取。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "“强固防御”期间的攻击速度加成从10%提高至15%。",
+       "subject": null,
+       "dimension": "other",
+       "before": 10.0,
+       "after": 15.0,
+       "by": 5.0,
+       "by_pct": null,
+       "metric": "期间的攻击速度加成",
+       "unit": "pct"
+      },
+      {
+       "text_en": null,
+       "text_cn": "费用为10000。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "3D打印标枪——史诗技能英雄物品",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "添加效果：[能量标枪]暴击可额外缩短1.5秒。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "暴充能器",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": null,
+       "name_cn": "OR-15升力器",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     },
     {
@@ -887,8 +1619,30 @@
      "role": "tank",
      "dev_note": "查莉娅最近特别势头正盛，尤其是在较高水平和配合更密切的对局中。我们决定削弱她的一些威力过强的选项，但会持续关注她的表现。",
      "general": [
-      "防爆战靴——史诗生存英雄物品",
-      "费用从3750提高至9000。"
+      {
+       "text_en": null,
+       "text_cn": "防爆战靴——史诗生存英雄物品",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "费用从3750提高至9000。",
+       "subject": null,
+       "dimension": "other",
+       "before": 3750.0,
+       "after": 9000.0,
+       "by": 5250.0,
+       "by_pct": null,
+       "metric": "费用",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -909,10 +1663,28 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "小小鲍勃——异能",
-      "终极技能消耗缩减从50%提高至60%。"
+      {
+       "text_en": null,
+       "text_cn": "终极技能消耗缩减从50%提高至60%。",
+       "subject": "ultimate_cost",
+       "dimension": "hero_attr",
+       "before": 50.0,
+       "after": 60.0,
+       "by": 10.0,
+       "by_pct": null,
+       "metric": "ultimate_cost",
+       "unit": "pct"
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "小小鲍勃",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     },
     {
@@ -922,14 +1694,76 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "炸得响！——史诗武器英雄物品",
-      "新增",
-      "10%武器强度。",
-      "[榴弹发射器]未经反弹直接命中敌人可使各项技能的冷却时间缩短20%。",
-      "费用为11000。"
+      {
+       "text_en": null,
+       "text_cn": "炸得响！——史诗武器英雄物品",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "新增",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "10%武器强度。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "费用为11000。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
-     "abilities": []
+     "abilities": [
+      {
+       "name_en": "Frag Launcher",
+       "name_cn": "榴弹发射器",
+       "slug": "frag-launcher",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "[榴弹发射器]未经反弹直接命中敌人可使各项技能的冷却时间缩短20%。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 20.0,
+         "metric": "未经反弹直接命中敌人可使各项技能的冷却时间",
+         "unit": null,
+         "raw_metric": "未经反弹直接命中敌人可使各项技能的冷却时间"
+        }
+       ]
+      }
+     ]
     },
     {
      "slug": "tracer",
@@ -938,10 +1772,28 @@
      "role": "damage",
      "dev_note": "本次更改目的是为了削弱“猎空”的“闪回流脉冲炸弹”搭配的威力。我们会继续关注这个搭配，特别是“时光之门”的表现，并且在未来会推出更多改动，以增加对它的反制手段。",
      "general": [
-      "口袋炸弹——异能",
-      "“脉冲炸弹”伤害降低效果从60%降低至70%。"
+      {
+       "text_en": null,
+       "text_cn": "“脉冲炸弹”伤害降低效果从60%降低至70%。",
+       "subject": null,
+       "dimension": "other",
+       "before": 60.0,
+       "after": 70.0,
+       "by": 10.0,
+       "by_pct": null,
+       "metric": "damage",
+       "unit": "pct"
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "口袋炸弹",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     }
    ],
@@ -960,14 +1812,71 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "一镖绝尘——异能",
-      "添加效果：开镜[麻醉镖]命中敌人时，冷却时间缩短5秒。",
-      "75点基础伤害现在仅会应用于开镜[麻醉镖]。",
-      "“舒睡云雾”现在也会施加提升基础伤害的效果。",
-      "美梦力场——异能",
-      "最大总生命值治疗量从15%提高至20%。"
+      {
+       "text_en": null,
+       "text_cn": "添加效果：开镜[麻醉镖]命中敌人时，冷却时间缩短5秒。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "75点基础伤害现在仅会应用于开镜[麻醉镖]。",
+       "subject": "base_stat",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "“舒睡云雾”现在也会施加提升基础伤害的效果。",
+       "subject": "base_stat",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "最大总生命值治疗量从15%提高至20%。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 15.0,
+       "after": 20.0,
+       "by": 5.0,
+       "by_pct": null,
+       "metric": "最大总生命值治疗量",
+       "unit": "pct"
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "一镖绝尘",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": null,
+       "name_cn": "美梦力场",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     },
     {
@@ -977,19 +1886,131 @@
      "role": "support",
      "dev_note": "这些改动是为了削弱技能强度流“呼噜噜”搭配的威力，同时增强她的武器强度流。",
      "general": [
-      "悠长呼噜——异能",
-      "每个“呼噜噜”目标提升持续时间的效果从15%降低至10%。",
-      "最大持续时间提升效果从75%降低至50%。",
-      "牵引肉垫——异能",
-      "现在所有伤害都可以触发，而不只是技能伤害。",
-      "可回收子弹——史诗武器英雄物品",
-      "添加效果：20%[呼噜噜]冷却时间缩减。",
-      "呼噜噜延距器——史诗技能英雄物品",
-      "费用从10000提高至11000。",
-      "燃料舱——稀有生存英雄物品",
-      "费用从10000降低至5000。"
+      {
+       "text_en": null,
+       "text_cn": "每个“呼噜噜”目标提升持续时间的效果从15%降低至10%。",
+       "subject": null,
+       "dimension": "other",
+       "before": 15.0,
+       "after": 10.0,
+       "by": -5.0,
+       "by_pct": null,
+       "metric": "目标提升持续时间的效果",
+       "unit": "pct"
+      },
+      {
+       "text_en": null,
+       "text_cn": "最大持续时间提升效果从75%降低至50%。",
+       "subject": null,
+       "dimension": "other",
+       "before": 75.0,
+       "after": 50.0,
+       "by": -25.0,
+       "by_pct": null,
+       "metric": "最大持续时间提升效果",
+       "unit": "pct"
+      },
+      {
+       "text_en": null,
+       "text_cn": "现在所有伤害都可以触发，而不只是技能伤害。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "可回收子弹——史诗武器英雄物品",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "添加效果：20%[呼噜噜]冷却时间缩减。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "呼噜噜延距器——史诗技能英雄物品",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "费用从10000提高至11000。",
+       "subject": null,
+       "dimension": "other",
+       "before": 10000.0,
+       "after": 11000.0,
+       "by": 1000.0,
+       "by_pct": null,
+       "metric": "费用",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "燃料舱——稀有生存英雄物品",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "费用从10000降低至5000。",
+       "subject": null,
+       "dimension": "other",
+       "before": 10000.0,
+       "after": 5000.0,
+       "by": -5000.0,
+       "by_pct": null,
+       "metric": "费用",
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "悠长呼噜",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": null,
+       "name_cn": "牵引肉垫",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     },
     {
@@ -999,14 +2020,66 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "无羁健步——异能",
-      "添加效果：在无目标时使用的情况下，冷却时间缩短20%。",
-      "狡狐烟花——异能",
-      "强化射击次数从3次增加至5次。",
-      "锋锐苦无——异能",
-      "冷却时间返还量从20%提高至25%。"
+      {
+       "text_en": null,
+       "text_cn": "添加效果：在无目标时使用的情况下，冷却时间缩短20%。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 20.0,
+       "metric": "cooldown",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "强化射击次数从3次增加至5次。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "冷却时间返还量从20%提高至25%。",
+       "subject": null,
+       "dimension": "other",
+       "before": 20.0,
+       "after": 25.0,
+       "by": 5.0,
+       "by_pct": null,
+       "metric": "cooldown",
+       "unit": "pct"
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "无羁健步",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": null,
+       "name_cn": "狡狐烟花",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": null,
+       "name_cn": "锋锐苦无",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     },
     {
@@ -1016,31 +2089,275 @@
      "role": "support",
      "dev_note": "这些改动是为了增强无漾保护自身的各个选项，并增强一些他表现欠佳的异能。",
      "general": [
-      "泉分二脉——异能",
-      "持续时间从4秒延长至5秒。",
-      "痛雨倾盆——异能",
-      "强化射击次数从2次增加至3次。",
-      "每颗额外水珠伤害从20%提高至30%。",
-      "高压水流增幅器——史诗武器英雄物品",
-      "费用从12000降低至10000。",
-      "翻江手的连接器——史诗武器英雄物品",
-      "费用从10000提高至11000。",
-      "添加效果：10%技能强度。",
-      "每秒获得的冷却时间缩减从0.3秒延长至0.5秒。",
-      "浪涌枪刺——史诗武器英雄物品",
-      "费用从10000提高至12000。",
-      "武器强度从10%提高至20%。",
-      "水愈修补器——稀有生存英雄物品",
-      "已移除",
-      "汪洋药膏——稀有生存英雄物品",
-      "费用从4000降低至3750。",
-      "补水时间——史诗生存英雄物品",
-      "新增。",
-      "50点护盾",
-      "使用[飞流步]时，为自身施加治疗量降低25%的[养神泉]被动效果。",
-      "费用为9000。"
+      {
+       "text_en": null,
+       "text_cn": "持续时间从4秒延长至5秒。",
+       "subject": null,
+       "dimension": "other",
+       "before": 4.0,
+       "after": 5.0,
+       "by": 1.0,
+       "by_pct": null,
+       "metric": "duration",
+       "unit": "s"
+      },
+      {
+       "text_en": null,
+       "text_cn": "强化射击次数从2次增加至3次。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "每颗额外水珠伤害从20%提高至30%。",
+       "subject": null,
+       "dimension": "other",
+       "before": 20.0,
+       "after": 30.0,
+       "by": 10.0,
+       "by_pct": null,
+       "metric": "每颗额外水珠伤害",
+       "unit": "pct"
+      },
+      {
+       "text_en": null,
+       "text_cn": "高压水流增幅器——史诗武器英雄物品",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "费用从12000降低至10000。",
+       "subject": null,
+       "dimension": "other",
+       "before": 12000.0,
+       "after": 10000.0,
+       "by": -2000.0,
+       "by_pct": null,
+       "metric": "费用",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "翻江手的连接器——史诗武器英雄物品",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "费用从10000提高至11000。",
+       "subject": null,
+       "dimension": "other",
+       "before": 10000.0,
+       "after": 11000.0,
+       "by": 1000.0,
+       "by_pct": null,
+       "metric": "费用",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "添加效果：10%技能强度。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "每秒获得的冷却时间缩减从0.3秒延长至0.5秒。",
+       "subject": null,
+       "dimension": "other",
+       "before": 0.3,
+       "after": 0.5,
+       "by": 0.2,
+       "by_pct": null,
+       "metric": "每秒获得的冷却时间缩减",
+       "unit": "s"
+      },
+      {
+       "text_en": null,
+       "text_cn": "浪涌枪刺——史诗武器英雄物品",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "费用从10000提高至12000。",
+       "subject": null,
+       "dimension": "other",
+       "before": 10000.0,
+       "after": 12000.0,
+       "by": 2000.0,
+       "by_pct": null,
+       "metric": "费用",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "武器强度从10%提高至20%。",
+       "subject": null,
+       "dimension": "other",
+       "before": 10.0,
+       "after": 20.0,
+       "by": 10.0,
+       "by_pct": null,
+       "metric": "武器强度",
+       "unit": "pct"
+      },
+      {
+       "text_en": null,
+       "text_cn": "水愈修补器——稀有生存英雄物品",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "已移除",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "汪洋药膏——稀有生存英雄物品",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "费用从4000降低至3750。",
+       "subject": null,
+       "dimension": "other",
+       "before": 4000.0,
+       "after": 3750.0,
+       "by": -250.0,
+       "by_pct": null,
+       "metric": "费用",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "补水时间——史诗生存英雄物品",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "新增。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "50点护盾",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "使用[飞流步]时，为自身施加治疗量降低25%的[养神泉]被动效果。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 25.0,
+       "metric": "为自身施加治疗量",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "费用为9000。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "泉分二脉",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": null,
+       "name_cn": "痛雨倾盆",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     }
    ],
@@ -1067,5 +2384,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:2e329a66fbfd0110a9248ee30fd5a9447c0bcd396429d7f43e01bd6048f4dc6c"
+ "hash": "sha256:4d4ad7e75fee5f61dde629061fa357bbdc3ab41341d891baca2122a0b54dadfc"
 }

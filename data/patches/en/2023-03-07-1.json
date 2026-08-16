@@ -103,7 +103,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -128,7 +132,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -153,14 +161,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Chain Hook cooldown reduced from 8 to 6 seconds",
          "text_cn": null,
          "before": 8.0,
          "after": 6.0,
-         "metric": "chain hook cooldown"
+         "metric": "chain hook cooldown",
+         "by": -2.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "chain hook cooldown"
         }
        ]
       }
@@ -173,8 +189,30 @@
      "role": "tank",
      "dev_note": "Developer Comment: There is now a hero control option for Wrecking Ball to set a separate aim sensitivity while transformed into a ball as players may want to aim his weapons in first-person and move the camera in third-person significantly differently. In addition, a visual indicator for Grappling Claw has been added to indicate its maximum duration before automatically detaching.",
      "general": [
-      "Added the hero-specific option \"Relative aim sensitivity while rolling\"",
-      "Added the hero-specific option \"Relative gyro sensitivity while rolling\" (Nintendo Switch™ platform only)"
+      {
+       "text_en": "Added the hero-specific option \"Relative aim sensitivity while rolling\"",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Added the hero-specific option \"Relative gyro sensitivity while rolling\" (Nintendo Switch™ platform only)",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -188,7 +226,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -202,7 +244,11 @@
          "text_cn": null,
          "before": 1.0,
          "after": 1.25,
-         "metric": "minefield arming time"
+         "metric": "minefield arming time",
+         "by": 0.25,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "minefield arming time"
         }
        ]
       }
@@ -215,7 +261,18 @@
      "role": "tank",
      "dev_note": "Developer Comment: A previous change decreased both barrier duration and increased the cooldown at the same time, lowering Zarya's effectiveness more than anticipated. This is a partial reversion to help level it out.",
      "general": [
-      "The shared cooldown for Particle Barrier and Projected Barrier reduced from 11 to 10 seconds"
+      {
+       "text_en": "The shared cooldown for Particle Barrier and Projected Barrier reduced from 11 to 10 seconds",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 11.0,
+       "after": 10.0,
+       "by": -1.0,
+       "by_pct": null,
+       "metric": "the shared cooldown for particle barrier and projected barrier",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -248,7 +305,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -273,7 +334,11 @@
          "text_cn": null,
          "before": 5.0,
          "after": 4.0,
-         "metric": "lunge cooldown"
+         "metric": "lunge cooldown",
+         "by": -1.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "lunge cooldown"
         }
        ]
       }
@@ -298,7 +363,11 @@
          "text_cn": null,
          "before": 0.5,
          "after": 0.4,
-         "metric": "blizzard ultimate cast time"
+         "metric": "blizzard ultimate cast time",
+         "by": -0.1,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "blizzard ultimate cast time"
         }
        ]
       }
@@ -323,7 +392,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -336,7 +409,18 @@
      "role": "damage",
      "dev_note": "Developer Comment: Due to the angle of Sojourn's torso in her default animation stance, her torso hit volume was more difficult to hit compared to similarly sized heroes.",
      "general": [
-      "Torso hit volume width increased by 20%"
+      {
+       "text_en": "Torso hit volume width increased by 20%",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 20.0,
+       "metric": "torso hit volume width",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -369,7 +453,11 @@
          "text_cn": null,
          "before": 10.0,
          "after": 25.0,
-         "metric": "immortality field minimum health threshold"
+         "metric": "immortality field minimum health threshold",
+         "by": 15.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "immortality field minimum health threshold"
         }
        ]
       }
@@ -409,5 +497,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:312b44fee4c837c73f229aeb5e4a86c87e3b10c084230c43fba3c63e00ef8fc1"
+ "hash": "sha256:1077717089af254d8a37962b152e452ffdc917c796b609c55e7951241797c100"
 }

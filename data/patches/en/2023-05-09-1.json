@@ -90,7 +90,11 @@
          "text_cn": null,
          "before": 6.0,
          "after": 8.0,
-         "metric": "maximum ammo"
+         "metric": "maximum ammo",
+         "by": 2.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "maximum ammo"
         }
        ]
       },
@@ -104,7 +108,11 @@
          "text_cn": null,
          "before": 0.15,
          "after": 0.2,
-         "metric": "projectile size"
+         "metric": "projectile size",
+         "by": 0.05,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "projectile size"
         }
        ]
       },
@@ -118,14 +126,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Wound damage decreased from 100 to 60",
          "text_cn": null,
          "before": 100.0,
          "after": 60.0,
-         "metric": "wound damage"
+         "metric": "wound damage",
+         "by": -40.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "wound damage"
         }
        ]
       },
@@ -139,7 +155,11 @@
          "text_cn": null,
          "before": 1.25,
          "after": 2.0,
-         "metric": "adrenaline passive healing multiplier"
+         "metric": "adrenaline passive healing multiplier",
+         "by": 0.75,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "adrenaline passive healing multiplier"
         }
        ]
       }
@@ -164,7 +184,11 @@
          "text_cn": null,
          "before": 12.0,
          "after": 13.0,
-         "metric": "damage"
+         "metric": "damage",
+         "by": 1.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage"
         }
        ]
       }
@@ -189,7 +213,11 @@
          "text_cn": null,
          "before": 1.0,
          "after": 1.3,
-         "metric": "damage radius before falloff begins"
+         "metric": "damage",
+         "by": 0.3,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage radius before falloff begins"
         }
        ]
       }
@@ -214,7 +242,11 @@
          "text_cn": null,
          "before": 9.0,
          "after": 7.0,
-         "metric": "effect duration"
+         "metric": "effect duration",
+         "by": -2.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "effect duration"
         }
        ]
       }
@@ -248,14 +280,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "ultimate_cost",
+         "by": null,
+         "by_pct": 25.0,
+         "unit": null,
+         "raw_metric": "ultimate cost"
         },
         {
          "text_en": "Ultimate generation decreased from 5.5x to 4x while Duplicate is active",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -280,7 +320,11 @@
          "text_cn": null,
          "before": 100.0,
          "after": 110.0,
-         "metric": "maximum damage"
+         "metric": "maximum damage",
+         "by": 10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "maximum damage"
         }
        ]
       }
@@ -314,7 +358,11 @@
          "text_cn": null,
          "before": 100.0,
          "after": 60.0,
-         "metric": "explosion healing"
+         "metric": "explosion healing",
+         "by": -40.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "explosion healing"
         }
        ]
       }
@@ -339,7 +387,11 @@
          "text_cn": null,
          "before": 25.0,
          "after": 23.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": -2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       }
@@ -364,14 +416,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "New Hero option: \"Healing Ofuda Cancels Reload\"",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -396,7 +456,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -426,9 +490,42 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Added the Hero-Specific Options:",
-      "Hide Boosters Cancel Text - Off by default",
-      "Hide Boosters Timer - Off by default"
+      {
+       "text_en": "Added the Hero-Specific Options:",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Hide Boosters Cancel Text - Off by default",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Hide Boosters Timer - Off by default",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -440,12 +537,78 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Added the Hero-Specific Options:",
-      "Hand Cannon UI - On by default",
-      "Hold To Use Power Block - Off by default",
-      "Hide Power Block Cancel Text - Off by default",
-      "Hide Rocket Punch Meter - Off by default",
-      "Hide Rocket Punch Cancel Text - Off by default"
+      {
+       "text_en": "Added the Hero-Specific Options:",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Hand Cannon UI - On by default",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Hold To Use Power Block - Off by default",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Hide Power Block Cancel Text - Off by default",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Hide Rocket Punch Meter - Off by default",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Hide Rocket Punch Cancel Text - Off by default",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -457,11 +620,66 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Terra Surge can now be activated by pressing the Ultimate button again",
-      "Added the Hero-Specific Options:",
-      "Hide Fortify Timer - Off by default",
-      "Hold To Use Javelin Spin - Off by default",
-      "Hide Javelin Spin Cancel Text - Off by default"
+      {
+       "text_en": "Terra Surge can now be activated by pressing the Ultimate button again",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Added the Hero-Specific Options:",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Hide Fortify Timer - Off by default",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Hold To Use Javelin Spin - Off by default",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Hide Javelin Spin Cancel Text - Off by default",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -473,12 +691,78 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Block now respects holding the input through being stunned. Added the Hero-Specific Options:",
-      "Toggle Block - Off by default",
-      "Hide Nemesis Form Cancel Text - Off by default",
-      "Relative Aim Sensitivity During Nemesis Form - 100% by default",
-      "Relative Gyro Aim Sensitivity During Nemesis Form - 100% by default (only available on gyro-supported platforms)",
-      "Annihilation Cancel Input - Ability 1 by default"
+      {
+       "text_en": "Block now respects holding the input through being stunned. Added the Hero-Specific Options:",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Toggle Block - Off by default",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Hide Nemesis Form Cancel Text - Off by default",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Relative Aim Sensitivity During Nemesis Form - 100% by default",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Relative Gyro Aim Sensitivity During Nemesis Form - 100% by default (only available on gyro-supported platforms)",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Annihilation Cancel Input - Ability 1 by default",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -490,11 +774,66 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Added the Hero-Specific Options:",
-      "Relative Aim Sensitivity During Barrier Field - 100% by default",
-      "Relative Gyro Aim Sensitivity During Barrier Field - 100% by default (only available on gyro-supported platforms)",
-      "Hold To Use Charge - Off by default",
-      "Hide Charge Cancel Text - Off by default"
+      {
+       "text_en": "Added the Hero-Specific Options:",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Relative Aim Sensitivity During Barrier Field - 100% by default",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Relative Gyro Aim Sensitivity During Barrier Field - 100% by default (only available on gyro-supported platforms)",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Hold To Use Charge - Off by default",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Hide Charge Cancel Text - Off by default",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -506,8 +845,30 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Added the Hero-Specific Option:",
-      "Hide Whole Hog Timer - Off by default"
+      {
+       "text_en": "Added the Hero-Specific Option:",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Hide Whole Hog Timer - Off by default",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -519,7 +880,18 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Gravitic Flux now automatically casts when the timer runs out"
+      {
+       "text_en": "Gravitic Flux now automatically casts when the timer runs out",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -531,8 +903,30 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Added the Hero-Specific Option:",
-      "Toggle Secondary Fire - Off by default"
+      {
+       "text_en": "Added the Hero-Specific Option:",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Toggle Secondary Fire - Off by default",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -544,9 +938,42 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Pressing the Quick Melee button now cancels Roll",
-      "Added the Hero-Specific Option:",
-      "Toggle Quick Melee During Roll"
+      {
+       "text_en": "Pressing the Quick Melee button now cancels Roll",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Added the Hero-Specific Option:",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Toggle Quick Melee During Roll",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -567,10 +994,54 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Configuration: Artillery now automatically casts when the timer runs out",
-      "Added the Hero-Specific Options:",
-      "Relative Aim Sensitivity During Reconfigure - 100% by default",
-      "Relative Gyro Aim Sensitivity During Reconfigure - 100% by default (only available on gyro-supported platforms)"
+      {
+       "text_en": "Configuration: Artillery now automatically casts when the timer runs out",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Added the Hero-Specific Options:",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Relative Aim Sensitivity During Reconfigure - 100% by default",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Relative Gyro Aim Sensitivity During Reconfigure - 100% by default (only available on gyro-supported platforms)",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -582,9 +1053,42 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Added the Hero-Specific Options:",
-      "Hide Deadeye Timer - Off by default",
-      "Hide Deadeye Cancel Text - Off by default"
+      {
+       "text_en": "Added the Hero-Specific Options:",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Hide Deadeye Timer - Off by default",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Hide Deadeye Cancel Text - Off by default",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -596,10 +1100,54 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Added the Hero-Specific Options:",
-      "Hold To Use Focusing Beam - Off by default",
-      "Hide Flight Cancel Text - Off by default",
-      "Hide Flight Timer - Off by default"
+      {
+       "text_en": "Added the Hero-Specific Options:",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Hold To Use Focusing Beam - Off by default",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Hide Flight Cancel Text - Off by default",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Hide Flight Timer - Off by default",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -611,9 +1159,42 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Added the Hero-Specific Options:",
-      "Hold To Use Deflect - Off by default",
-      "Hide Deflect Cancel Text - Off by default"
+      {
+       "text_en": "Added the Hero-Specific Options:",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Hold To Use Deflect - Off by default",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Hide Deflect Cancel Text - Off by default",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -625,13 +1206,90 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Cyro-Freeze can now be canceled by pressing the ability’s button again",
-      "Added the Hero-Specific Options:",
-      "Hold To Use Cryo-Freeze - Off by default",
-      "Hide Cyro-Freeze Cancel Text - Off by default",
-      "Hide Cryo-Freeze Timer - Off by default",
-      "Default Ice Wall Rotation - Horizontal by default",
-      "Ice Wall Confirmation Input - Primary Fire by default"
+      {
+       "text_en": "Cyro-Freeze can now be canceled by pressing the ability’s button again",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Added the Hero-Specific Options:",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Hold To Use Cryo-Freeze - Off by default",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Hide Cyro-Freeze Cancel Text - Off by default",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Hide Cryo-Freeze Timer - Off by default",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Default Ice Wall Rotation - Horizontal by default",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Ice Wall Confirmation Input - Primary Fire by default",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -643,8 +1301,30 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Added the Hero-Specific Option:",
-      "Toggle Hover Jets - Off by default"
+      {
+       "text_en": "Added the Hero-Specific Option:",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Toggle Hover Jets - Off by default",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -656,10 +1336,54 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Added the Hero-Specific Options:",
-      "Hold To Use Wraith Form - Off by Default",
-      "Hide Wraith Form Cancel Text - Off by Default",
-      "Shadow Step Confirmation Input - Primary Fire by default"
+      {
+       "text_en": "Added the Hero-Specific Options:",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Hold To Use Wraith Form - Off by Default",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Hide Wraith Form Cancel Text - Off by Default",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Shadow Step Confirmation Input - Primary Fire by default",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -671,8 +1395,30 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Added the Hero-Specific Option:",
-      "Toggle Hack - Off by default"
+      {
+       "text_en": "Added the Hero-Specific Option:",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Toggle Hack - Off by default",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -684,12 +1430,78 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Added the Hero-Specific Options:",
-      "Toggle Secondary Fire - Off by default",
-      "Hold To Deploy Sentry Turret - On by default",
-      "Teleporter and Photon Barrier Confirmation Input - Primary Fire by default",
-      "Default Photon Barrier Rotation - Horizontal by default",
-      "Hide Photon Barrier Timer - Off by default"
+      {
+       "text_en": "Added the Hero-Specific Options:",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Toggle Secondary Fire - Off by default",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Hold To Deploy Sentry Turret - On by default",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Teleporter and Photon Barrier Confirmation Input - Primary Fire by default",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Default Photon Barrier Rotation - Horizontal by default",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Hide Photon Barrier Timer - Off by default",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -701,8 +1513,30 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Added the Hero-Specific Option:",
-      "Hide Overload Timer - Off by default"
+      {
+       "text_en": "Added the Hero-Specific Option:",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Hide Overload Timer - Off by default",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -714,8 +1548,30 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Added the Hero-Specific Option:",
-      "Blink UI - On by default"
+      {
+       "text_en": "Added the Hero-Specific Option:",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Blink UI - On by default",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -736,10 +1592,54 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "Automatic Reload setting now reloads when both Primary and Secondary Fire are out of ammo if setting is set to Off",
-      "Added the Hero-Specific Options:",
-      "Default Amplification Matrix Rotation - Horizontal by default",
-      "Amplification Matrix Confirmation Input - Primary Fire by default"
+      {
+       "text_en": "Automatic Reload setting now reloads when both Primary and Secondary Fire are out of ammo if setting is set to Off",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Added the Hero-Specific Options:",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Default Amplification Matrix Rotation - Horizontal by default",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Amplification Matrix Confirmation Input - Primary Fire by default",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -751,10 +1651,54 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "Added the Hero-Specific Options:",
-      "Relative Aim Sensitivity During Barrier Shield - 100% by default",
-      "Relative Gyro Aim Sensitivity During Barrier Shield - 100% by default (only available on gyro-supported platforms)",
-      "Repair Pack UI - On by default"
+      {
+       "text_en": "Added the Hero-Specific Options:",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Relative Aim Sensitivity During Barrier Shield - 100% by default",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Relative Gyro Aim Sensitivity During Barrier Shield - 100% by default (only available on gyro-supported platforms)",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Repair Pack UI - On by default",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -766,8 +1710,30 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "Added the Hero-Specific Options:",
-      "Healing Ofuda Cancels Reload - On by default"
+      {
+       "text_en": "Added the Hero-Specific Options:",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Healing Ofuda Cancels Reload - On by default",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -779,10 +1745,54 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "Added the Hero-Specific Options:",
-      "Relative Thorn Volley Aim Sensitivity - 100% by default",
-      "Relative Thorn Volley Gyro Aim Sensitivity - 100% by default (only available on gyro-supported platforms)",
-      "Tree of Life Confirmation Input - Primary Fire by default"
+      {
+       "text_en": "Added the Hero-Specific Options:",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Relative Thorn Volley Aim Sensitivity - 100% by default",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Relative Thorn Volley Gyro Aim Sensitivity - 100% by default (only available on gyro-supported platforms)",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Tree of Life Confirmation Input - Primary Fire by default",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -794,8 +1804,30 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "Allow Backwards Wall Ride option now On by default",
-      "Hold To Crossfade options changed from Off/On to Off/Hold For Speed/Hold For Heal."
+      {
+       "text_en": "Allow Backwards Wall Ride option now On by default",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Hold To Crossfade options changed from Off/On to Off/Hold For Speed/Hold For Heal.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -807,10 +1839,54 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "Added the Hero-Specific Options:",
-      "Caduceus Blaster Input - Primary Fire by default",
-      "Relative Caduceus Blaster Aim Sensitivity - 100% by default",
-      "Relative Caduceus Blaster Gyro Aim Sensitivity - 100% by default (only available on gyro-supported platforms)"
+      {
+       "text_en": "Added the Hero-Specific Options:",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Caduceus Blaster Input - Primary Fire by default",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Relative Caduceus Blaster Aim Sensitivity - 100% by default",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Relative Caduceus Blaster Gyro Aim Sensitivity - 100% by default (only available on gyro-supported platforms)",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -822,9 +1898,42 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "Added the Hero-Specific Options:",
-      "Harmony and Discord Orb Cancel Reload - On by default",
-      "Hide Transcendence Timer - Off by default"
+      {
+       "text_en": "Added the Hero-Specific Options:",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Harmony and Discord Orb Cancel Reload - On by default",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Hide Transcendence Timer - Off by default",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -863,5 +1972,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:703e4cd6317b8145e5c4b25147495bbb6ef28a4d19dd93614e7bc14ff523eba4"
+ "hash": "sha256:b64334499210dcf9efa5f4e58feeada7b675d97aff1f8ddc58264d90fdcf648d"
 }

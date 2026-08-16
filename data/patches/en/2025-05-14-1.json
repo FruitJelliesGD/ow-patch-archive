@@ -46,7 +46,18 @@
      "role": "tank",
      "dev_note": "Developer Comments: Zarya continues to overperform at all levels. Most of her power comes from how Weapon Power scales with Energy, allowing her to reach very high damage ceilings, so slowing down the rate at which she can scale her Weapon Power.",
      "general": [
-      "Reduced cash income from damage and healing by 12.5%."
+      {
+       "text_en": "Reduced cash income from damage and healing by 12.5%.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -67,7 +78,18 @@
      "role": "damage",
      "dev_note": "Developer Comments: Cassidy continues to be too dominant too consistently, especially at higher levels of play. Most of his power comes from how well he scales with Weapon Power, so shaving off a bit of his currency gain to slow down the pace of his scaling.",
      "general": [
-      "Reduced income from damage and healing by 12.5%."
+      {
+       "text_en": "Reduced income from damage and healing by 12.5%.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -79,15 +101,78 @@
      "role": "damage",
      "dev_note": "Developer Comments: We're squashing a few bugs that we believe have contributed to Reaper's high win rate. We're also making a slight adjustment to Revolving Ruin's ramp up time and maximum stacks. We're planning to make some more adjustments to Reaper's weapon builds in the future to incentivize them to build stats other than just Weapon Power.",
      "general": [
-      "Revolving Ruin - Power",
-      "Reduced Attack Speed per stack to 4% (down from 5%).",
-      "Increased maximum stacks to 10 (up from 8).",
-      "Wraith Renewal - Power",
-      "Fixed an issue where Wraith Renewal healing was always being doubled, regardless of what your current Life was.",
-      "Spirited to Slay - Power",
-      "Fixed an issue that caused Reaper's cooldowns to be reset without getting an Elimination."
+      {
+       "text_en": "Reduced Attack Speed per stack to 4% (down from 5%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Increased maximum stacks to 10 (up from 8).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Fixed an issue where Wraith Renewal healing was always being doubled, regardless of what your current Life was.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Fixed an issue that caused Reaper's cooldowns to be reset without getting an Elimination.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Revolving Ruin",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Wraith Renewal",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Spirited to Slay",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     }
    ],
@@ -106,19 +191,126 @@
      "role": "support",
      "dev_note": "Developer Comments: Ana’s abilities feature some of the longest cooldowns in the support roster, and their impact hasn’t always matched that investment in Stadium. This update improves the effectiveness of her utility, helping her keep allies in the fight longer and better rewarding well-timed ability usage. These changes should give Ana more consistent value in extended engagements.",
      "general": [
-      "Home Remedy - Power",
-      "Increased Overhealth gain to 200% (up from 100%).",
-      "Dreamy - Power",
-      "Decreased heal to 80% (down from 100%).",
-      "Decreased duration to 4s (down from 8s).",
-      "Venomous - Power",
-      "Increased damage to 50 (up from 30).",
-      "Quick Scope – Rare Hero Weapon Item",
-      "Increased Weapon Power to +10% (up from 5%).",
-      "I.V. Drip – Rare Hero Survival Item",
-      "Increased Overhealth to 150 (up from 100)."
+      {
+       "text_en": "Increased Overhealth gain to 200% (up from 100%).",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Decreased heal to 80% (down from 100%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Decreased duration to 4s (down from 8s).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Increased damage to 50 (up from 30).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Quick Scope – Rare Hero Weapon Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Increased Weapon Power to +10% (up from 5%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "I.V. Drip – Rare Hero Survival Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Increased Overhealth to 150 (up from 100).",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Home Remedy",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Dreamy",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Venomous",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     }
    ],
@@ -126,5 +318,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:9eed456c73b102794061b06f1962c0a7862b22fd1fae7f4d23c6e2786b1b9d41"
+ "hash": "sha256:a8144a9cee1203a8cde87d4a376cdf6cd834bc6d6db34d18347f541d80e92cd4"
 }

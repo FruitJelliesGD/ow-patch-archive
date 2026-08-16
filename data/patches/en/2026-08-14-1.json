@@ -27,13 +27,90 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Fixed a bug with Portable Fusion Repeater that could result in hits failing to register.",
-      "Fixed a bug with Limit Break not correctly granting Overhealth for targets hit.",
-      "Fixed in a previous update - Resolved an issue that prevented Overhealth from being applied when Limit Break was activated.",
-      "Fixed a bug where Toggle Propulsors did not work on console platforms.",
-      "Hitbox Changes",
-      "Fixed an issue with being damaged from the front with while Power Barrier was deployed.",
-      "Adjusted the height of the mech head hitbox to be more flush with the model."
+      {
+       "text_en": "Fixed a bug with Portable Fusion Repeater that could result in hits failing to register.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Fixed a bug with Limit Break not correctly granting Overhealth for targets hit.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Fixed in a previous update - Resolved an issue that prevented Overhealth from being applied when Limit Break was activated.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Fixed a bug where Toggle Propulsors did not work on console platforms.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Hitbox Changes",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Fixed an issue with being damaged from the front with while Power Barrier was deployed.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Adjusted the height of the mech head hitbox to be more flush with the model.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -47,14 +124,22 @@
          "text_cn": null,
          "before": 0.15,
          "after": 0.05,
-         "metric": "cast time"
+         "metric": "cast_time",
+         "by": -0.1,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cast time"
         },
         {
          "text_en": "Recovery reduced from 0.25 to 0.15 seconds.",
          "text_cn": null,
          "before": 0.25,
          "after": 0.15,
-         "metric": "recovery"
+         "metric": "recovery",
+         "by": -0.1,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "recovery"
         }
        ]
       },
@@ -68,14 +153,22 @@
          "text_cn": null,
          "before": 0.3,
          "after": 0.2,
-         "metric": "cast time"
+         "metric": "cast_time",
+         "by": -0.1,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cast time"
         },
         {
          "text_en": "Recovery Time reduced from 0.5 to 0.2 seconds.",
          "text_cn": null,
          "before": 0.5,
          "after": 0.2,
-         "metric": "recovery time"
+         "metric": "recovery",
+         "by": -0.3,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "recovery time"
         }
        ]
       }
@@ -88,7 +181,18 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "Base movement speed reduced from 6 to 5.5 meters per second."
+      {
+       "text_en": "Base movement speed reduced from 6 to 5.5 meters per second.",
+       "text_cn": null,
+       "subject": "move_speed",
+       "dimension": "hero_attr",
+       "before": 6.0,
+       "after": 5.5,
+       "by": -0.5,
+       "by_pct": null,
+       "metric": "base movement speed",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -102,7 +206,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -113,5 +221,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:76b139ba0b3ff047f74fed69307aaa618263850fd3011874d3134e1c6d3f66a1"
+ "hash": "sha256:c10cdf5aa9dbea558a8c5f3f6594594b24e9ad6827509c142ea3b95b5197a05c"
 }

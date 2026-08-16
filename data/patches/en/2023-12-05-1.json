@@ -19,7 +19,18 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Mauga has been added to the lineup."
+      {
+       "text_en": "Mauga has been added to the lineup.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -33,7 +44,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -47,7 +62,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -61,7 +80,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -75,7 +98,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -89,7 +116,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -103,7 +134,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -201,14 +236,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Ultimate cost increased 16%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "ultimate_cost",
+         "by": null,
+         "by_pct": 16.0,
+         "unit": null,
+         "raw_metric": "ultimate cost"
         }
        ]
       }
@@ -233,7 +276,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "spread",
+         "by": null,
+         "by_pct": 8.0,
+         "unit": null,
+         "raw_metric": "spread"
         }
        ]
       }
@@ -246,9 +293,42 @@
      "role": "tank",
      "dev_note": "Developer Comments: We got a lot of constructive feedback from players when Mauga was available to try during his free preview weekend, so we’ve adjusted his kit for his official launch to give him the ability to last longer in a fight.",
      "general": [
-      "Base health reduced from 500 to 350.",
-      "Base armor increased from 0 to 150.",
-      "Head hit volume reduced 15%."
+      {
+       "text_en": "Base health reduced from 500 to 350.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 500.0,
+       "after": 350.0,
+       "by": -150.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      },
+      {
+       "text_en": "Base armor increased from 0 to 150.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 0.0,
+       "after": 150.0,
+       "by": 150.0,
+       "by_pct": null,
+       "metric": "base armor",
+       "unit": null
+      },
+      {
+       "text_en": "Head hit volume reduced 15%.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 15.0,
+       "metric": "head hit volume",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -262,42 +342,66 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "spread for firing both guns",
+         "by": null,
+         "by_pct": 15.0,
+         "unit": null,
+         "raw_metric": "spread for firing both guns"
         },
         {
          "text_en": "Fire rate multiplier for firing both guns reduced from 25% to 0%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Damage per shot increased from 4.5 to 5.",
          "text_cn": null,
          "before": 4.5,
          "after": 5.0,
-         "metric": "damage per shot"
+         "metric": "damage",
+         "by": 0.5,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage per shot"
         },
         {
          "text_en": "Damage falloff range increased from 25 to 30 meters.",
          "text_cn": null,
          "before": 25.0,
          "after": 30.0,
-         "metric": "damage falloff range"
+         "metric": "damage",
+         "by": 5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage falloff range"
         },
         {
          "text_en": "Max ammo increased from 300 to 350.",
          "text_cn": null,
          "before": 300.0,
          "after": 350.0,
-         "metric": "max ammo"
+         "metric": "max ammo",
+         "by": 50.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "max ammo"
         },
         {
          "text_en": "Movement speed penalty reduced from 20% to 15% per gun.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -311,14 +415,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Damage reduction increased from 30 to 50%.",
          "text_cn": null,
          "before": 30.0,
          "after": 50.0,
-         "metric": "damage reduction"
+         "metric": "damage",
+         "by": 20.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage reduction"
         }
        ]
       },
@@ -332,7 +444,11 @@
          "text_cn": null,
          "before": 60.0,
          "after": 70.0,
-         "metric": "lifesteal"
+         "metric": "lifesteal",
+         "by": 10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "lifesteal"
         }
        ]
       },
@@ -346,7 +462,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -359,8 +479,30 @@
      "role": "tank",
      "dev_note": "Developer Comments: Ramattra is quite powerful during his Nemesis Form though his base Omnic Form may be too easy to ignore for a tank hero. We're adding some power there to even out the tradeoffs between the two forms, with the Omnic Form having even better ranged damage while Nemesis Form’s Pummel can pierce enemy defenses.",
      "general": [
-      "Base health reduced from 300 to 200.",
-      "Base armor increased from 0 to 100."
+      {
+       "text_en": "Base health reduced from 300 to 200.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 300.0,
+       "after": 200.0,
+       "by": -100.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      },
+      {
+       "text_en": "Base armor increased from 0 to 100.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 0.0,
+       "after": 100.0,
+       "by": 100.0,
+       "by_pct": null,
+       "metric": "base armor",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -374,14 +516,22 @@
          "text_cn": null,
          "before": 0.075,
          "after": 0.1,
-         "metric": "projectile size"
+         "metric": "projectile size",
+         "by": 0.025,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "projectile size"
         },
         {
          "text_en": "Damage increased from 4.5 to 5.",
          "text_cn": null,
          "before": 4.5,
          "after": 5.0,
-         "metric": "damage"
+         "metric": "damage",
+         "by": 0.5,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage"
         }
        ]
       }
@@ -406,7 +556,11 @@
          "text_cn": null,
          "before": 100.0,
          "after": 85.0,
-         "metric": "regeneration rate"
+         "metric": "regeneration rate",
+         "by": -15.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "regeneration rate"
         }
        ]
       }
@@ -431,7 +585,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -465,7 +623,11 @@
          "text_cn": null,
          "before": 150.0,
          "after": 120.0,
-         "metric": "maximum ammo"
+         "metric": "maximum ammo",
+         "by": -30.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "maximum ammo"
         }
        ]
       }
@@ -490,7 +652,11 @@
          "text_cn": null,
          "before": 15.0,
          "after": 18.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": 3.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       }
@@ -515,14 +681,22 @@
          "text_cn": null,
          "before": 1.5,
          "after": 3.0,
-         "metric": "ability lockout duration"
+         "metric": "ability lockout duration",
+         "by": 1.5,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "ability lockout duration"
         },
         {
          "text_en": "Damage reduced from 30 to 25% of current health.",
          "text_cn": null,
          "before": 30.0,
          "after": 25.0,
-         "metric": "damage"
+         "metric": "damage",
+         "by": -5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage"
         }
        ]
       }
@@ -547,7 +721,11 @@
          "text_cn": null,
          "before": 75.0,
          "after": 100.0,
-         "metric": "overhealth"
+         "metric": "overhealth",
+         "by": 25.0,
+         "by_pct": null,
+         "unit": "hp",
+         "raw_metric": "overhealth"
         }
        ]
       }
@@ -572,7 +750,11 @@
          "text_cn": null,
          "before": 5.5,
          "after": 6.0,
-         "metric": "damage"
+         "metric": "damage",
+         "by": 0.5,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage"
         }
        ]
       }
@@ -606,7 +788,11 @@
          "text_cn": null,
          "before": 45.0,
          "after": 36.0,
-         "metric": "primary fire ammo"
+         "metric": "primary fire ammo",
+         "by": -9.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "primary fire ammo"
         }
        ]
       }
@@ -631,7 +817,11 @@
          "text_cn": null,
          "before": 80.0,
          "after": 70.0,
-         "metric": "damage"
+         "metric": "damage",
+         "by": -10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage"
         }
        ]
       }
@@ -656,7 +846,11 @@
          "text_cn": null,
          "before": 14.0,
          "after": 18.0,
-         "metric": "projectile speed"
+         "metric": "projectile_speed",
+         "by": 4.0,
+         "by_pct": null,
+         "unit": "m/s",
+         "raw_metric": "projectile speed"
         }
        ]
       },
@@ -670,14 +864,22 @@
          "text_cn": null,
          "before": 0.85,
          "after": 0.65,
-         "metric": "invulnerability duration"
+         "metric": "invulnerability duration",
+         "by": -0.2,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "invulnerability duration"
         },
         {
          "text_en": "Healing explosion increased from 40 to 80 health.",
          "text_cn": null,
          "before": 40.0,
          "after": 80.0,
-         "metric": "healing explosion"
+         "metric": "healing",
+         "by": 40.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "healing explosion"
         }
        ]
       }
@@ -748,5 +950,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:0db91b0d610e2cbb53f60e31aeb6ff63978776f0305172cea8b71d555fef6cc3"
+ "hash": "sha256:69faa91283303dfe5aeefc8d3f97f194fbf64ab91b1d5120db7cd9d091c03238"
 }

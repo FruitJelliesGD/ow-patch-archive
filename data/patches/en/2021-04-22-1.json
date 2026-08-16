@@ -31,14 +31,22 @@
          "text_cn": null,
          "before": 60.0,
          "after": 50.0,
-         "metric": "healing projectile explosion"
+         "metric": "healing",
+         "by": -10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "healing projectile explosion"
         },
         {
          "text_en": "Healing projectile direct impact now restores an additional 20 health",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -52,7 +60,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -77,7 +89,11 @@
          "text_cn": null,
          "before": 50.0,
          "after": 250.0,
-         "metric": "damage"
+         "metric": "damage",
+         "by": 200.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage"
         }
        ]
       }
@@ -102,7 +118,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -127,7 +147,11 @@
          "text_cn": null,
          "before": 10.0,
          "after": 8.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": -2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       }
@@ -152,7 +176,11 @@
          "text_cn": null,
          "before": 8.0,
          "after": 6.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": -2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       }
@@ -165,8 +193,30 @@
      "role": "tank",
      "dev_note": "Reinhardt has been overperforming since his last round of changes. To help increase tank diversity we are reverting his armor to its previous value while keeping the Rocket Hammer damage increase for now as it helps to balance out the reduced crowd control duration of Earthshatter.",
      "general": [
-      "General",
-      "Armor reduced from 250 to 200 (Health/armor total reduced from 550 to 500)"
+      {
+       "text_en": "General",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Armor reduced from 250 to 200 (Health/armor total reduced from 550 to 500)",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 250.0,
+       "after": 200.0,
+       "by": -50.0,
+       "by_pct": null,
+       "metric": "armor",
+       "unit": "hp"
+      }
      ],
      "perks": [],
      "abilities": []
@@ -190,7 +240,11 @@
          "text_cn": null,
          "before": 6.0,
          "after": 6.6,
-         "metric": "damage per projectile"
+         "metric": "damage",
+         "by": 0.6,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage per projectile"
         }
        ]
       }
@@ -215,7 +269,11 @@
          "text_cn": null,
          "before": 50.0,
          "after": 65.0,
-         "metric": "movement speed bonus"
+         "metric": "move_speed",
+         "by": 15.0,
+         "by_pct": null,
+         "unit": "m/s",
+         "raw_metric": "movement speed bonus"
         }
        ]
       }
@@ -226,5 +284,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:50ad346ca8a06b9cd6e7c38ac69a0cd675a6346a377163ffb2f4bf6ea68bc643"
+ "hash": "sha256:6148929686db489599022e75361949fc76fb5bde8aa374e39fdf96b5f02d74ee"
 }

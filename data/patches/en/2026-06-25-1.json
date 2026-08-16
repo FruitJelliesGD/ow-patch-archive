@@ -39,14 +39,22 @@
          "text_cn": null,
          "before": 0.17,
          "after": 0.07,
-         "metric": "projectile size"
+         "metric": "projectile size",
+         "by": -0.1,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "projectile size"
         },
         {
          "text_en": "Recovery time increased from 0 to 0.4s.",
          "text_cn": null,
          "before": 0.0,
          "after": 0.4,
-         "metric": "recovery time"
+         "metric": "recovery",
+         "by": 0.4,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "recovery time"
         }
        ]
       }
@@ -82,13 +90,90 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Juiced",
-      "Radius reduced to 8m (Down from 12m).",
-      "Heal reduced to 20% of your Max Life (Down from 30%).",
-      "Bonerot",
-      "Damage increased to 60 (Up from 50)",
-      "Twin Fang",
-      "Bonus Damage increased to 75% (Down from 50%)."
+      {
+       "text_en": "Juiced",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Radius reduced to 8m (Down from 12m).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Heal reduced to 20% of your Max Life (Down from 30%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Bonerot",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Damage increased to 60 (Up from 50)",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 50.0,
+       "after": 60.0,
+       "by": 10.0,
+       "by_pct": null,
+       "metric": "damage",
+       "unit": null
+      },
+      {
+       "text_en": "Twin Fang",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Bonus Damage increased to 75% (Down from 50%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -100,10 +185,54 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Critical Charger",
-      "Critical Damage increased to 75% (Up from 50%).",
-      "OR-15 Escalator",
-      "Max Weapon Power based on Heat increased to 40% (Up from 30%)."
+      {
+       "text_en": "Critical Charger",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Critical Damage increased to 75% (Up from 50%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "OR-15 Escalator",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Max Weapon Power based on Heat increased to 40% (Up from 30%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -115,8 +244,30 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Volskaya Vortex",
-      "Damage reduced to 60 (Down from 80)."
+      {
+       "text_en": "Volskaya Vortex",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Damage reduced to 60 (Down from 80).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 80.0,
+       "after": 60.0,
+       "by": -20.0,
+       "by_pct": null,
+       "metric": "damage",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -137,8 +288,30 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "So Cooked",
-      "Linger duration reduced to 2s (Down from 3s)."
+      {
+       "text_en": "So Cooked",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Linger duration reduced to 2s (Down from 3s).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -150,11 +323,66 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Iaido Strike",
-      "Damage increased to 75% (Up from 50%).",
-      "Dragon Strike",
-      "Bonus Damage reduced to 100% (Down from 120%).",
-      "Wind up is now 50% faster."
+      {
+       "text_en": "Iaido Strike",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Damage increased to 75% (Up from 50%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Dragon Strike",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Bonus Damage reduced to 100% (Down from 120%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Wind up is now 50% faster.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -166,8 +394,30 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Deep Chills",
-      "Freeze Duration reduced to 0.65s (Down from 0.75s)."
+      {
+       "text_en": "Deep Chills",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Freeze Duration reduced to 0.65s (Down from 0.75s).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -179,10 +429,54 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Hellshroud",
-      "Duration reduced to 2s (Down from 3s).",
-      "Damage reduced to 20% of Max Life (Down from 25%).",
-      "Slow and Attack Speed Slow reduced to 20% (Down from 30%)."
+      {
+       "text_en": "Hellshroud",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Duration reduced to 2s (Down from 3s).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Damage reduced to 20% of Max Life (Down from 25%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Slow and Attack Speed Slow reduced to 20% (Down from 30%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -194,7 +488,18 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Currency gained from damage and healing increased by 11.1%."
+      {
+       "text_en": "Currency gained from damage and healing increased by 11.1%.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 11.1,
+       "metric": "currency gained from damage and healing",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -206,8 +511,30 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Turriplets",
-      "Attack Speed reduced to 65% (Down from 75%)."
+      {
+       "text_en": "Turriplets",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Attack Speed reduced to 65% (Down from 75%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -219,10 +546,54 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Overloaded Strike",
-      "Damage reduced to 25% increased (Down from 50%).",
-      "Apex Bloodlust",
-      "Cooldown Reduction per Onslaught stack reduced to 3% (Down from 5%)."
+      {
+       "text_en": "Overloaded Strike",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Damage reduced to 25% increased (Down from 50%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Apex Bloodlust",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Cooldown Reduction per Onslaught stack reduced to 3% (Down from 5%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -243,8 +614,30 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "Dream Field",
-      "Healing per 1s increased to 15% of your Max Life (Up from 10%)."
+      {
+       "text_en": "Dream Field",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Healing per 1s increased to 15% of your Max Life (Up from 10%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -256,10 +649,54 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "Blink Boosts",
-      "Cooldown reduction reduced to 30% (Down from 50%).",
-      "Fission Chamber",
-      "Shots per second increased to 22 (Up from 20)."
+      {
+       "text_en": "Blink Boosts",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Cooldown reduction reduced to 30% (Down from 50%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Fission Chamber",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Shots per second increased to 22 (Up from 20).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 20.0,
+       "after": 22.0,
+       "by": 2.0,
+       "by_pct": null,
+       "metric": "shots per second",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -271,8 +708,30 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "Reverb",
-      "Reduced effectiveness increased to 50% reduced (Up from 60% reduced)."
+      {
+       "text_en": "Reverb",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Reduced effectiveness increased to 50% reduced (Up from 60% reduced).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -284,13 +743,90 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "Remote Reciprocity",
-      "Duration increased to 5s (Up from 3s).",
-      "Orbsplosion",
-      "Damage up to 30% (Up from 25%).",
-      "Healing up to 45% (Up from 35%).",
-      "Alternative Energy",
-      "Buff duration now resets upon gaining additional stacks."
+      {
+       "text_en": "Remote Reciprocity",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Duration increased to 5s (Up from 3s).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Orbsplosion",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Damage up to 30% (Up from 25%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Healing up to 45% (Up from 35%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Alternative Energy",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Buff duration now resets upon gaining additional stacks.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -319,5 +855,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:d74bfff27ae43bd6a32cefc670c3274ee29e13d539c4a55513fc2bd8e2697b19"
+ "hash": "sha256:e595d447d0705a5cfcb80031bfc27b9c801118325be7176afc14de2a35fefc69"
 }

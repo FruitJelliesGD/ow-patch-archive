@@ -71,14 +71,22 @@
          "text_cn": null,
          "before": 18.0,
          "after": 15.0,
-         "metric": "shockwave range"
+         "metric": "shockwave range",
+         "by": -3.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "shockwave range"
         },
         {
          "text_en": "Cooldown increased from 6 to 6.5 seconds.",
          "text_cn": null,
          "before": 6.0,
          "after": 6.5,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": 0.5,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       }
@@ -103,14 +111,22 @@
          "text_cn": null,
          "before": 6.75,
          "after": 7.5,
-         "metric": "damage per spike"
+         "metric": "damage",
+         "by": 0.75,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage per spike"
         },
         {
          "text_en": "Each volley’s center projectile no longer has a random launch spread and now always launches straight.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -122,16 +138,24 @@
         {
          "text_en": "The angle of protection provided by Spike Guard increased from 104 degrees to 180 degrees.",
          "text_cn": null,
-         "before": null,
-         "after": null,
-         "metric": null
+         "before": 104.0,
+         "after": 180.0,
+         "metric": "the angle of protection provided by spike guard",
+         "by": 76.0,
+         "by_pct": null,
+         "unit": "deg",
+         "raw_metric": "the angle of protection provided by spike guard"
         },
         {
          "text_en": "Damage per second reduced from 75 to 70.",
          "text_cn": null,
          "before": 75.0,
          "after": 70.0,
-         "metric": "damage per second"
+         "metric": "damage",
+         "by": -5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage per second"
         }
        ]
       },
@@ -145,7 +169,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -159,21 +187,33 @@
          "text_cn": null,
          "before": 350.0,
          "after": 400.0,
-         "metric": "health"
+         "metric": "health",
+         "by": 50.0,
+         "by_pct": null,
+         "unit": "hp",
+         "raw_metric": "health"
         },
         {
          "text_en": "Knockback damage increased from 40 to 50.",
          "text_cn": null,
          "before": 40.0,
          "after": 50.0,
-         "metric": "knockback damage"
+         "metric": "knockback",
+         "by": 10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "knockback damage"
         },
         {
          "text_en": "Damage interval increased from 1.5 seconds per target to 1.75 seconds per target.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -187,7 +227,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -199,9 +243,13 @@
         {
          "text_en": "Minimum obstacle height to trigger Vault reduced from 1.75 meters to 1.25 meters, which should allow Hazard to scale short obstacles more consistently.",
          "text_cn": null,
-         "before": null,
-         "after": null,
-         "metric": null
+         "before": 1.75,
+         "after": 1.25,
+         "metric": "minimum obstacle height to trigger vault",
+         "by": -0.5,
+         "by_pct": null,
+         "unit": "m",
+         "raw_metric": "minimum obstacle height to trigger vault"
         }
        ]
       }
@@ -214,8 +262,30 @@
      "role": "tank",
      "dev_note": "Developer Comment: The Overrun changes from the last patch have been great for enabling more active Mauga playstyles. We're converting some of his armor back to normal health to balance out some of the added survivability gained from the Overrun changes.",
      "general": [
-      "Base armor reduced from 200 to 150.",
-      "Base health increased from 375 to 425."
+      {
+       "text_en": "Base armor reduced from 200 to 150.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 200.0,
+       "after": 150.0,
+       "by": -50.0,
+       "by_pct": null,
+       "metric": "base armor",
+       "unit": null
+      },
+      {
+       "text_en": "Base health increased from 375 to 425.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 375.0,
+       "after": 425.0,
+       "by": 50.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -227,8 +297,30 @@
      "role": "tank",
      "dev_note": "Developer Comment: Although Orisa's effectiveness dropped off further than expected, the removal of the Fortify heat reduction mechanic has had positive effects on gameplay by making her ammo resource more meaningful. We're keeping that change while walking back some of the armor health loss. We also think her Terra Surge ultimate ability could be more effective so it now pulls enemies in from a further distance but the damage range hasn't changed so it won't be harder to get out of the area.",
      "general": [
-      "Armor increased from 300 to 325.",
-      "Base health reduced from 175 to 150."
+      {
+       "text_en": "Armor increased from 300 to 325.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 300.0,
+       "after": 325.0,
+       "by": 25.0,
+       "by_pct": null,
+       "metric": "armor",
+       "unit": "hp"
+      },
+      {
+       "text_en": "Base health reduced from 175 to 150.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 175.0,
+       "after": 150.0,
+       "by": -25.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -242,7 +334,11 @@
          "text_cn": null,
          "before": 8.5,
          "after": 10.5,
-         "metric": "pull radius"
+         "metric": "pull radius",
+         "by": 2.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "pull radius"
         }
        ]
       }
@@ -267,14 +363,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Slowing field now ignores barriers for line of sight.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -299,7 +403,11 @@
          "text_cn": null,
          "before": 50.0,
          "after": 60.0,
-         "metric": "damage"
+         "metric": "damage",
+         "by": 10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage"
         }
        ]
       }
@@ -333,7 +441,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -375,7 +487,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -400,7 +516,11 @@
          "text_cn": null,
          "before": 18.0,
          "after": 15.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": -3.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       }
@@ -425,7 +545,11 @@
          "text_cn": null,
          "before": 200.0,
          "after": 250.0,
-         "metric": "base shield health"
+         "metric": "base shield health",
+         "by": 50.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "base shield health"
         }
        ]
       }
@@ -456,14 +580,22 @@
          "text_cn": null,
          "before": 3.0,
          "after": 2.5,
-         "metric": "build time"
+         "metric": "build time",
+         "by": -0.5,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "build time"
         },
         {
          "text_en": "Base health increased from 225 to 250.",
          "text_cn": null,
          "before": 225.0,
          "after": 250.0,
-         "metric": "base health"
+         "metric": "base health",
+         "by": 25.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "base health"
         }
        ]
       }
@@ -488,7 +620,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -522,14 +658,22 @@
          "text_cn": null,
          "before": 15.0,
          "after": 14.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": -1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         },
         {
          "text_en": "Radius increased from 10 to 12 meters.",
          "text_cn": null,
          "before": 10.0,
          "after": 12.0,
-         "metric": "radius"
+         "metric": "radius",
+         "by": 2.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "radius"
         }
        ]
       }
@@ -554,7 +698,11 @@
          "text_cn": null,
          "before": 5.0,
          "after": 4.0,
-         "metric": "duration"
+         "metric": "duration",
+         "by": -1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "duration"
         }
        ]
       }
@@ -567,7 +715,18 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "Developer Comment: Illari's Captive Sun can be difficult to use effectively due to enemies' ability to dodge its effects. Increasing the radius will improve the consistency and overall value of the ultimate."
+      {
+       "text_en": "Developer Comment: Illari's Captive Sun can be difficult to use effectively due to enemies' ability to dodge its effects. Increasing the radius will improve the consistency and overall value of the ultimate.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -581,7 +740,11 @@
          "text_cn": null,
          "before": 8.0,
          "after": 10.0,
-         "metric": "explosion radius"
+         "metric": "explosion radius",
+         "by": 2.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "explosion radius"
         }
        ]
       }
@@ -606,7 +769,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -620,7 +787,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -658,5 +829,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:3be4ad0ea6b45150db2fa70c77928cc1f59566482a2e929c6ca467b21a7b7199"
+ "hash": "sha256:24080ca8a656a2f35ecdfa33c5d180e960a38175ad6ead6113554bfba21ad11b"
 }

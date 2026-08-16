@@ -47,14 +47,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Duration reduced from 3.5 to 3 seconds.",
          "text_cn": null,
          "before": 3.5,
          "after": 3.0,
-         "metric": "duration"
+         "metric": "duration",
+         "by": -0.5,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "duration"
         }
        ]
       }
@@ -88,7 +96,11 @@
          "text_cn": null,
          "before": 12.0,
          "after": 9.0,
-         "metric": "time before energy degeneration begins"
+         "metric": "time before energy degeneration begins",
+         "by": -3.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "time before energy degeneration begins"
         }
        ]
       }
@@ -113,7 +125,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -124,5 +140,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:0c983e6abe73dd4e66d2c319d808a3e8bd0e3c8f8809f6a06772e7bacd8b6915"
+ "hash": "sha256:734ba3e6768f759f66a84c2c1eeac92f9b82c8145a968be72e7d9eb6e93834ca"
 }

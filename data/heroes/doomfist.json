@@ -13,6 +13,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/08/",
    "patch_title": "《守望先锋》补丁说明——2026年8月12日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "seismic-slam",
    "ability_en": "Seismic Slam",
    "ability_cn": "裂地重拳",
@@ -20,7 +21,10 @@
    "text_cn": "伤害从50点提高至60点。",
    "before": 50.0,
    "after": 60.0,
-   "metric": "伤害"
+   "by": 10.0,
+   "by_pct": null,
+   "metric": "damage",
+   "unit": "hp"
   },
   {
    "patch": "en-2026-08-11-1",
@@ -29,6 +33,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/08",
    "patch_title": "Overwatch Retail Patch Notes – August 11, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "seismic-slam",
    "ability_en": "Seismic Slam",
    "ability_cn": "裂地重拳",
@@ -36,7 +41,10 @@
    "text_cn": null,
    "before": 50.0,
    "after": 60.0,
-   "metric": "damage"
+   "by": 10.0,
+   "by_pct": null,
+   "metric": "damage",
+   "unit": null
   },
   {
    "patch": "cn-2026-07-31-1",
@@ -45,6 +53,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月31日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "the-best-defense",
    "ability_en": "The Best Defense",
    "ability_cn": "最佳防守……",
@@ -52,7 +61,10 @@
    "text_cn": "获得的过量生命值从25点提高至30点。",
    "before": 25.0,
    "after": 30.0,
-   "metric": "获得的过量生命值"
+   "by": 5.0,
+   "by_pct": null,
+   "metric": "获得的过量生命值",
+   "unit": "hp"
   },
   {
    "patch": "en-2026-07-30-1",
@@ -61,6 +73,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/07",
    "patch_title": "Overwatch Retail Patch Notes – July 30, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "the-best-defense",
    "ability_en": "The Best Defense",
    "ability_cn": "最佳防守……",
@@ -68,7 +81,10 @@
    "text_cn": null,
    "before": 25.0,
    "after": 30.0,
-   "metric": "shield gain"
+   "by": 5.0,
+   "by_pct": null,
+   "metric": "shield",
+   "unit": "hp"
   },
   {
    "patch": "cn-2026-07-15-1",
@@ -77,6 +93,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月15日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "rocket-punch",
    "ability_en": "Rocket Punch",
    "ability_cn": "火箭重拳",
@@ -84,7 +101,10 @@
    "text_cn": "强化“火箭重拳”附带伤害范围加成从75%降低至40%。",
    "before": 75.0,
    "after": 40.0,
-   "metric": "附带伤害范围加成"
+   "by": -35.0,
+   "by_pct": null,
+   "metric": "附带伤害范围加成",
+   "unit": "pct"
   },
   {
    "patch": "cn-2026-07-15-1",
@@ -93,6 +113,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月15日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "rocket-punch",
    "ability_en": "Rocket Punch",
    "ability_cn": "火箭重拳",
@@ -100,7 +121,10 @@
    "text_cn": "强化“火箭重拳”附带伤害半径加成从50%降低至40%。",
    "before": 50.0,
    "after": 40.0,
-   "metric": "附带伤害半径加成"
+   "by": -10.0,
+   "by_pct": null,
+   "metric": "附带伤害半径加成",
+   "unit": "pct"
   },
   {
    "patch": "en-2026-07-14-1",
@@ -109,6 +133,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/07",
    "patch_title": "Overwatch Retail Patch Notes – July 14, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "rocket-punch",
    "ability_en": "Rocket Punch",
    "ability_cn": "火箭重拳",
@@ -116,7 +141,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": 75.0,
+   "metric": "empowered punch collateral range gain",
+   "unit": null
   },
   {
    "patch": "en-2026-07-14-1",
@@ -125,6 +153,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/07",
    "patch_title": "Overwatch Retail Patch Notes – July 14, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "rocket-punch",
    "ability_en": "Rocket Punch",
    "ability_cn": "火箭重拳",
@@ -132,7 +161,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-07-01-1",
@@ -141,6 +173,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "power-block",
    "ability_en": "Power Block",
    "ability_cn": "悍猛格挡",
@@ -148,7 +181,10 @@
    "text_cn": "现在可以强化任何下一次使用的技能，而不只是“火箭重拳”。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-07-01-1",
@@ -157,6 +193,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "rising-uppercut",
    "ability_en": "Rising Uppercut",
    "ability_cn": "上勾重拳",
@@ -164,7 +201,10 @@
    "text_cn": "重新加入。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-07-01-1",
@@ -173,6 +213,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "rising-uppercut",
    "ability_en": "Rising Uppercut",
    "ability_cn": "上勾重拳",
@@ -180,7 +221,10 @@
    "text_cn": "强化“上勾重拳”可以击晕敌人。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-07-01-1",
@@ -189,6 +233,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "seismic-slam",
    "ability_en": "Seismic Slam",
    "ability_cn": "裂地重拳",
@@ -196,7 +241,10 @@
    "text_cn": "强化“裂地重拳”会使敌人减速40%，持续2秒。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-07-01-1",
@@ -205,6 +253,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "meteor-strike",
    "ability_en": "Meteor Strike",
    "ability_cn": "毁天灭地",
@@ -212,7 +261,10 @@
    "text_cn": "移除了减速效果。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-07-01-1",
@@ -221,6 +273,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "meteor-strike",
    "ability_en": "Meteor Strike",
    "ability_cn": "毁天灭地",
@@ -228,7 +281,10 @@
    "text_cn": "现在会击退敌人。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-30-1",
@@ -237,6 +293,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 30, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "power-block",
    "ability_en": "Power Block",
    "ability_cn": "悍猛格挡",
@@ -244,7 +301,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-30-1",
@@ -253,6 +313,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 30, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "rising-uppercut",
    "ability_en": "Rising Uppercut",
    "ability_cn": "上勾重拳",
@@ -260,7 +321,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-30-1",
@@ -269,6 +333,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 30, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "rising-uppercut",
    "ability_en": "Rising Uppercut",
    "ability_cn": "上勾重拳",
@@ -276,7 +341,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-30-1",
@@ -285,6 +353,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 30, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "seismic-slam",
    "ability_en": "Seismic Slam",
    "ability_cn": "裂地重拳",
@@ -292,7 +361,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-30-1",
@@ -301,6 +373,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 30, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "meteor-strike",
    "ability_en": "Meteor Strike",
    "ability_cn": "毁天灭地",
@@ -308,7 +381,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-30-1",
@@ -317,6 +393,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 30, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "meteor-strike",
    "ability_en": "Meteor Strike",
    "ability_cn": "毁天灭地",
@@ -324,7 +401,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -333,7 +413,8 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "perk",
-   "perk_slug": "power-matrix",
+   "dimension": "perk",
+   "perk_slug": "aftershock",
    "perk_en": null,
    "perk_cn": "悍猛矩阵",
    "status": "changed",
@@ -349,8 +430,111 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "持续时间从1秒缩短至0.8秒。"
+   "text_cn": "持续时间从1秒缩短至0.8秒。",
+   "before": 1.0,
+   "after": 0.8,
+   "by": -0.2,
+   "by_pct": null,
+   "metric": "duration",
+   "unit": "s"
+  },
+  {
+   "patch": "cn-2026-06-17-1",
+   "date": "2026-06-17",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
+   "patch_title": "《守望先锋》补丁说明——2026年6月17日",
+   "kind": "ability",
+   "dimension": "ability",
+   "ability_slug": "the-best-defense",
+   "ability_en": null,
+   "ability_cn": "最佳防守",
+   "text_en": null,
+   "text_cn": "[最佳防守]的效果从35%提高至50%。",
+   "before": 35.0,
+   "after": 50.0,
+   "by": 15.0,
+   "by_pct": null,
+   "metric": "的效果",
+   "unit": "pct"
+  },
+  {
+   "patch": "cn-2026-06-17-1",
+   "date": "2026-06-17",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
+   "patch_title": "《守望先锋》补丁说明——2026年6月17日",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "aftershock",
+   "perk_en": null,
+   "perk_cn": "地震余波",
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "cn-2026-06-17-1",
+   "date": "2026-06-17",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
+   "patch_title": "《守望先锋》补丁说明——2026年6月17日",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "asteroid-smash",
+   "perk_en": null,
+   "perk_cn": "惊天动地",
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "cn-2026-06-17-1",
+   "date": "2026-06-17",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
+   "patch_title": "《守望先锋》补丁说明——2026年6月17日",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "jab-cross",
+   "perk_en": null,
+   "perk_cn": "刺直连击",
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "cn-2026-06-17-1",
+   "date": "2026-06-17",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
+   "patch_title": "《守望先锋》补丁说明——2026年6月17日",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "slam-wham",
+   "perk_en": null,
+   "perk_cn": "裂地猛砸",
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "cn-2026-06-17-1",
+   "date": "2026-06-17",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
+   "patch_title": "《守望先锋》补丁说明——2026年6月17日",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "hero-952284ab",
+   "perk_en": null,
+   "perk_cn": "极佳防守",
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -359,8 +543,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "地震余波——异能"
+   "text_cn": "伤害从60%降低至40%。",
+   "before": 60.0,
+   "after": 40.0,
+   "by": -20.0,
+   "by_pct": null,
+   "metric": "damage",
+   "unit": "pct"
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -369,8 +561,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "伤害从60%降低至40%。"
+   "text_cn": "现在会将效果范围内的敌人拽向地面。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -379,8 +579,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "惊天动地——异能"
+   "text_cn": "最大伤害从200点降低至150点。",
+   "before": 200.0,
+   "after": 150.0,
+   "by": -50.0,
+   "by_pct": null,
+   "metric": "最大伤害",
+   "unit": "hp"
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -389,8 +597,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "现在会将效果范围内的敌人拽向地面。"
+   "text_cn": "基础命中伤害从50点提高至75点。",
+   "before": 50.0,
+   "after": 75.0,
+   "by": 25.0,
+   "by_pct": null,
+   "metric": "基础命中伤害",
+   "unit": "hp"
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -399,8 +615,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "最大伤害从200点降低至150点。"
+   "text_cn": "现在会提供额外攻击速度（而不只是近战攻击速度）。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -409,8 +633,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "基础命中伤害从50点提高至75点。"
+   "text_cn": "持续时间从3秒缩短至0.75秒。",
+   "before": 3.0,
+   "after": 0.75,
+   "by": -2.25,
+   "by_pct": null,
+   "metric": "duration",
+   "unit": "s"
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -419,8 +651,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "刺直连击——异能"
+   "text_cn": "原效果：砸击距离每向下延长1米，[裂地重拳]的伤害提高2%，范围扩大6%。新效果：[裂地重拳]在空中持续时间越长，其伤害和范围越大，伤害最多提高75%，范围最多扩大50%。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 2.0,
+   "metric": "的伤害",
+   "unit": null
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -429,8 +669,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "现在会提供额外攻击速度（而不只是近战攻击速度）。"
+   "text_cn": "添加了界面指示。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -439,8 +687,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "持续时间从3秒缩短至0.75秒。"
+   "text_cn": "装弹指虎——史诗武器英雄物品",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -449,8 +705,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "裂地猛砸——异能"
+   "text_cn": "移除效果：20%近身攻击伤害。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -459,8 +723,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "原效果：砸击距离每向下延长1米，[裂地重拳]的伤害提高2%，范围扩大6%。新效果：[裂地重拳]在空中持续时间越长，其伤害和范围越大，伤害最多提高75%，范围最多扩大50%。"
+   "text_cn": "添加效果：15%武器强度。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -469,8 +741,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "添加了界面指示。"
+   "text_cn": "折翼之剪——稀有技能英雄物品",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -479,8 +759,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "极佳防守——异能"
+   "text_cn": "已移除",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -489,8 +777,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "[最佳防守]的效果从35%提高至50%。"
+   "text_cn": "长效蓄力器——稀有技能英雄物品",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -499,8 +795,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "装弹指虎——史诗武器英雄物品"
+   "text_cn": "移除效果：充电超过阈值后降低速度。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -509,8 +813,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "移除效果：20%近身攻击伤害。"
+   "text_cn": "复苏之风——稀有技能英雄物品",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -519,8 +831,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "添加效果：15%武器强度。"
+   "text_cn": "新增",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -529,8 +849,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": null,
-   "text_cn": "折翼之剪——稀有技能英雄物品"
+   "text_cn": "25点生命值",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -539,8 +867,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "ultimate_cost",
    "text_en": null,
-   "text_cn": "已移除"
+   "text_cn": "20%终极技能消耗缩减",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -549,8 +885,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": null,
-   "text_cn": "长效蓄力器——稀有技能英雄物品"
+   "text_cn": "消耗终极技能充能会重置各项技能的冷却时间，并为你恢复100%总生命值。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -559,8 +903,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "移除效果：充电超过阈值后降低速度。"
+   "text_cn": "裂地粉碎器——史诗技能英雄物品",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -569,68 +921,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "复苏之风——稀有技能英雄物品"
-  },
-  {
-   "patch": "cn-2026-06-17-1",
-   "date": "2026-06-17",
-   "site": "cn",
-   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
-   "patch_title": "《守望先锋》补丁说明——2026年6月17日",
-   "kind": "general",
-   "text_en": null,
-   "text_cn": "新增"
-  },
-  {
-   "patch": "cn-2026-06-17-1",
-   "date": "2026-06-17",
-   "site": "cn",
-   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
-   "patch_title": "《守望先锋》补丁说明——2026年6月17日",
-   "kind": "general",
-   "text_en": null,
-   "text_cn": "25点生命值"
-  },
-  {
-   "patch": "cn-2026-06-17-1",
-   "date": "2026-06-17",
-   "site": "cn",
-   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
-   "patch_title": "《守望先锋》补丁说明——2026年6月17日",
-   "kind": "general",
-   "text_en": null,
-   "text_cn": "20%终极技能消耗缩减"
-  },
-  {
-   "patch": "cn-2026-06-17-1",
-   "date": "2026-06-17",
-   "site": "cn",
-   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
-   "patch_title": "《守望先锋》补丁说明——2026年6月17日",
-   "kind": "general",
-   "text_en": null,
-   "text_cn": "消耗终极技能充能会重置各项技能的冷却时间，并为你恢复100%总生命值。"
-  },
-  {
-   "patch": "cn-2026-06-17-1",
-   "date": "2026-06-17",
-   "site": "cn",
-   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
-   "patch_title": "《守望先锋》补丁说明——2026年6月17日",
-   "kind": "general",
-   "text_en": null,
-   "text_cn": "裂地粉碎器——史诗技能英雄物品"
-  },
-  {
-   "patch": "cn-2026-06-17-1",
-   "date": "2026-06-17",
-   "site": "cn",
-   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
-   "patch_title": "《守望先锋》补丁说明——2026年6月17日",
-   "kind": "general",
-   "text_en": null,
-   "text_cn": "添加效果：[裂地重拳]持续期间，可在空中[跳跃]。"
+   "text_cn": "添加效果：[裂地重拳]持续期间，可在空中[跳跃]。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -639,8 +939,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Power Matrix – Major Perk Duration reduced from 1 to 0.8 seconds.",
-   "text_cn": null
+   "text_cn": null,
+   "before": 1.0,
+   "after": 0.8,
+   "by": -0.2,
+   "by_pct": null,
+   "metric": "major perk duration",
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -649,8 +957,91 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Duration reduced from 1 to 0.8 seconds.",
-   "text_cn": null
+   "text_cn": null,
+   "before": 1.0,
+   "after": 0.8,
+   "by": -0.2,
+   "by_pct": null,
+   "metric": "duration",
+   "unit": "s"
+  },
+  {
+   "patch": "en-2026-06-16-1",
+   "date": "2026-06-16",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
+   "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "aftershock",
+   "perk_en": "Aftershock",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "en-2026-06-16-1",
+   "date": "2026-06-16",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
+   "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "asteroid-smash",
+   "perk_en": "Asteroid Smash",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "en-2026-06-16-1",
+   "date": "2026-06-16",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
+   "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "jab-cross",
+   "perk_en": "Jab Cross",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "en-2026-06-16-1",
+   "date": "2026-06-16",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
+   "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "slam-wham",
+   "perk_en": "Slam Wham",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "en-2026-06-16-1",
+   "date": "2026-06-16",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
+   "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "the-bestest-defense",
+   "perk_en": "The Bestest Defense",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
   },
   {
    "patch": "en-2026-06-16-1",
@@ -659,18 +1050,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
-   "text_en": "Aftershock - Power",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2026-06-16-1",
-   "date": "2026-06-16",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
-   "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
-   "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Damage reduced to 40% (Down from 60%).",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -679,18 +1068,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
-   "text_en": "Asteroid Smash - Power",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2026-06-16-1",
-   "date": "2026-06-16",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
-   "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
-   "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Now pulls down enemies within its area.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -699,8 +1086,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Maximum Damage decreased to 150 (Down from 200).",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -709,8 +1104,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Base impact damage increased to 75 (Up from 50).",
-   "text_cn": null
+   "text_cn": null,
+   "before": 50.0,
+   "after": 75.0,
+   "by": 25.0,
+   "by_pct": null,
+   "metric": "base impact damage",
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -719,18 +1122,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
-   "text_en": "Jab Cross - Power",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2026-06-16-1",
-   "date": "2026-06-16",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
-   "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
-   "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Now grants Bonus Attack Speed (instead of just Melee Attack Speed).",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -739,8 +1140,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Duration reduced to 0.75s (Down from 3s).",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -749,18 +1158,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
-   "text_en": "Slam Wham - Power",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2026-06-16-1",
-   "date": "2026-06-16",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
-   "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
-   "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Reworked from \"Increase [Seismic Slam] damage by 2% and range by 6% for every 1m traveled downward\" to \"Increase [Seismic Slam]'s damage up to 75% and range up to 50% based on time airborne.\"",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -769,8 +1176,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Added UI indicator.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -779,18 +1194,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
-   "text_en": "The Bestest Defense - Power",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2026-06-16-1",
-   "date": "2026-06-16",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
-   "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
-   "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "The Best Defense scaling increased to 50% (Up from 35%).",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -799,8 +1212,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Loaded Knuckles - Epic Hero Weapon Item",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -809,8 +1230,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Removed 20% Melee Damage.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -819,8 +1248,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Added 15% Weapon Power.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -829,8 +1266,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Wing Clipper - Rare Hero Ability Item",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -839,8 +1284,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Removed.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -849,8 +1302,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Power Bank - Rare Hero Ability Item",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -859,8 +1320,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Removed slow after charging past threshold.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -869,8 +1338,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Second Wind - Rare Hero Ability Item",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -879,8 +1356,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "New",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -889,8 +1374,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": "25 Health",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -899,8 +1392,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "ultimate_cost",
    "text_en": "20% Reduced Ultimate Cost",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -909,8 +1410,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "ultimate_cost",
    "text_en": "Spending your Ultimate Charge resets all your ability cooldowns and restores 100% of your Life.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -919,8 +1428,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Chasmcrusher - Epic Hero Ability Item",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -929,8 +1446,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Added \"You can [Jump] while Airborne during [Seismic Slam].\"",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-05-13-1",
@@ -939,6 +1464,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/05/",
    "patch_title": "《守望先锋》补丁说明——2026年5月13日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "seismic-slam",
    "ability_en": "Seismic Slam",
    "ability_cn": "裂地重拳",
@@ -946,7 +1472,10 @@
    "text_cn": "锁死镜头和冲击波特效现在会稍晚一些触发，与角色动作更加同步。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-05-13-1",
@@ -955,6 +1484,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/05/",
    "patch_title": "《守望先锋》补丁说明——2026年5月13日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "empowered-punch",
    "ability_en": "Empowered Punch",
    "ability_cn": "强化重拳",
@@ -962,7 +1492,85 @@
    "text_cn": "加入了新的视觉和声音特效，会在“强化重拳”蓄力即将结束时播放。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "cn-2026-05-13-1",
+   "date": "2026-05-13",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/05/",
+   "patch_title": "《守望先锋》补丁说明——2026年5月13日",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "asteroid-smash",
+   "perk_en": null,
+   "perk_cn": "惊天动地",
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "cn-2026-05-13-1",
+   "date": "2026-05-13",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/05/",
+   "patch_title": "《守望先锋》补丁说明——2026年5月13日",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "block-party",
+   "perk_en": null,
+   "perk_cn": "格挡派对",
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "cn-2026-05-13-1",
+   "date": "2026-05-13",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/05/",
+   "patch_title": "《守望先锋》补丁说明——2026年5月13日",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "hero-1faab7ce",
+   "perk_en": null,
+   "perk_cn": "伸出援守",
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "cn-2026-05-13-1",
+   "date": "2026-05-13",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/05/",
+   "patch_title": "《守望先锋》补丁说明——2026年5月13日",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "hero-a8659fb1",
+   "perk_en": null,
+   "perk_cn": "超强重拳",
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "cn-2026-05-13-1",
+   "date": "2026-05-13",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/05/",
+   "patch_title": "《守望先锋》补丁说明——2026年5月13日",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "hero-8da6151f",
+   "perk_en": null,
+   "perk_cn": "上勾重拳",
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
   },
   {
    "patch": "cn-2026-05-13-1",
@@ -971,8 +1579,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/05/",
    "patch_title": "《守望先锋》补丁说明——2026年5月13日",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": null,
-   "text_cn": "“最佳防守”现在会根据从资金获得的被动生命值而增加。"
+   "text_cn": "“最佳防守”现在会根据从资金获得的被动生命值而增加。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-05-13-1",
@@ -981,8 +1597,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/05/",
    "patch_title": "《守望先锋》补丁说明——2026年5月13日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "惊天动地——异能"
+   "text_cn": "冷却时间从10秒缩短至8秒。",
+   "before": 10.0,
+   "after": 8.0,
+   "by": -2.0,
+   "by_pct": null,
+   "metric": "cooldown",
+   "unit": "s"
   },
   {
    "patch": "cn-2026-05-13-1",
@@ -991,8 +1615,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/05/",
    "patch_title": "《守望先锋》补丁说明——2026年5月13日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "冷却时间从10秒缩短至8秒。"
+   "text_cn": "盟友治疗量从15%提高至20%。",
+   "before": 15.0,
+   "after": 20.0,
+   "by": 5.0,
+   "by_pct": null,
+   "metric": "盟友治疗量",
+   "unit": "pct"
   },
   {
    "patch": "cn-2026-05-13-1",
@@ -1001,8 +1633,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/05/",
    "patch_title": "《守望先锋》补丁说明——2026年5月13日",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": null,
-   "text_cn": "格挡派对——异能"
+   "text_cn": "过量生命值加成从最大总生命值的8%提高至10%。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-05-13-1",
@@ -1011,8 +1651,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/05/",
    "patch_title": "《守望先锋》补丁说明——2026年5月13日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "盟友治疗量从15%提高至20%。"
+   "text_cn": "3级重拳伤害加成从25%提高至50%。",
+   "before": 25.0,
+   "after": 50.0,
+   "by": 25.0,
+   "by_pct": null,
+   "metric": "级重拳伤害加成",
+   "unit": "pct"
   },
   {
    "patch": "cn-2026-05-13-1",
@@ -1021,58 +1669,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/05/",
    "patch_title": "《守望先锋》补丁说明——2026年5月13日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "伸出援守——异能"
-  },
-  {
-   "patch": "cn-2026-05-13-1",
-   "date": "2026-05-13",
-   "site": "cn",
-   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/05/",
-   "patch_title": "《守望先锋》补丁说明——2026年5月13日",
-   "kind": "general",
-   "text_en": null,
-   "text_cn": "过量生命值加成从最大总生命值的8%提高至10%。"
-  },
-  {
-   "patch": "cn-2026-05-13-1",
-   "date": "2026-05-13",
-   "site": "cn",
-   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/05/",
-   "patch_title": "《守望先锋》补丁说明——2026年5月13日",
-   "kind": "general",
-   "text_en": null,
-   "text_cn": "超强重拳——异能"
-  },
-  {
-   "patch": "cn-2026-05-13-1",
-   "date": "2026-05-13",
-   "site": "cn",
-   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/05/",
-   "patch_title": "《守望先锋》补丁说明——2026年5月13日",
-   "kind": "general",
-   "text_en": null,
-   "text_cn": "3级重拳伤害加成从25%提高至50%。"
-  },
-  {
-   "patch": "cn-2026-05-13-1",
-   "date": "2026-05-13",
-   "site": "cn",
-   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/05/",
-   "patch_title": "《守望先锋》补丁说明——2026年5月13日",
-   "kind": "general",
-   "text_en": null,
-   "text_cn": "上勾重拳——异能"
-  },
-  {
-   "patch": "cn-2026-05-13-1",
-   "date": "2026-05-13",
-   "site": "cn",
-   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/05/",
-   "patch_title": "《守望先锋》补丁说明——2026年5月13日",
-   "kind": "general",
-   "text_en": null,
-   "text_cn": "额外伤害从10提高至20。"
+   "text_cn": "额外伤害从10提高至20。",
+   "before": 10.0,
+   "after": 20.0,
+   "by": 10.0,
+   "by_pct": null,
+   "metric": "额外伤害",
+   "unit": null
   },
   {
    "patch": "en-2026-05-12-1",
@@ -1081,6 +1687,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/05",
    "patch_title": "Overwatch Retail Patch Notes - May 12, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "seismic-slam",
    "ability_en": "Seismic Slam",
    "ability_cn": "裂地重拳",
@@ -1088,7 +1695,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-05-12-1",
@@ -1097,6 +1707,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/05",
    "patch_title": "Overwatch Retail Patch Notes - May 12, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "empowered-punch",
    "ability_en": "Empowered Punch",
    "ability_cn": "强化重拳",
@@ -1104,7 +1715,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-05-12-1",
@@ -1112,9 +1726,94 @@
    "site": "en",
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/05",
    "patch_title": "Overwatch Retail Patch Notes - May 12, 2026",
-   "kind": "general",
+   "kind": "ability",
+   "dimension": "ability",
+   "ability_slug": "the-best-defense",
+   "ability_en": "The Best Defense",
+   "ability_cn": "最佳防守……",
    "text_en": "[The Best Defense] now scales proportionally with the Passive Health Gain from Currency.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "en-2026-05-12-1",
+   "date": "2026-05-12",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/05",
+   "patch_title": "Overwatch Retail Patch Notes - May 12, 2026",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "asteroid-smash",
+   "perk_en": "Asteroid Smash",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "en-2026-05-12-1",
+   "date": "2026-05-12",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/05",
+   "patch_title": "Overwatch Retail Patch Notes - May 12, 2026",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "block-party",
+   "perk_en": "Block Party",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "en-2026-05-12-1",
+   "date": "2026-05-12",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/05",
+   "patch_title": "Overwatch Retail Patch Notes - May 12, 2026",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "helping-hand",
+   "perk_en": "Helping Hand",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "en-2026-05-12-1",
+   "date": "2026-05-12",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/05",
+   "patch_title": "Overwatch Retail Patch Notes - May 12, 2026",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "overpowered",
+   "perk_en": "Overpowered",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "en-2026-05-12-1",
+   "date": "2026-05-12",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/05",
+   "patch_title": "Overwatch Retail Patch Notes - May 12, 2026",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "rising-uppercut",
+   "perk_en": "Rising Uppercut",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
   },
   {
    "patch": "en-2026-05-12-1",
@@ -1123,18 +1822,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/05",
    "patch_title": "Overwatch Retail Patch Notes - May 12, 2026",
    "kind": "general",
-   "text_en": "Asteroid Smash - Power",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2026-05-12-1",
-   "date": "2026-05-12",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/05",
-   "patch_title": "Overwatch Retail Patch Notes - May 12, 2026",
-   "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Cooldown reduced to 8s (Down from 10s).",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-05-12-1",
@@ -1143,18 +1840,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/05",
    "patch_title": "Overwatch Retail Patch Notes - May 12, 2026",
    "kind": "general",
-   "text_en": "Block Party - Power",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2026-05-12-1",
-   "date": "2026-05-12",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/05",
-   "patch_title": "Overwatch Retail Patch Notes - May 12, 2026",
-   "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Ally Healing increased to 20% (Up from 15%).",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-05-12-1",
@@ -1163,18 +1858,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/05",
    "patch_title": "Overwatch Retail Patch Notes - May 12, 2026",
    "kind": "general",
-   "text_en": "Helping Hand - Power",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2026-05-12-1",
-   "date": "2026-05-12",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/05",
-   "patch_title": "Overwatch Retail Patch Notes - May 12, 2026",
-   "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": "Overhealth Max Life Scaling increased to 10% (Up from 8%).",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-05-12-1",
@@ -1183,18 +1876,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/05",
    "patch_title": "Overwatch Retail Patch Notes - May 12, 2026",
    "kind": "general",
-   "text_en": "Overpowered - Power",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2026-05-12-1",
-   "date": "2026-05-12",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/05",
-   "patch_title": "Overwatch Retail Patch Notes - May 12, 2026",
-   "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Level 3 Punch Bonus Damage increased to 50% (Up from 25%).",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-05-12-1",
@@ -1203,18 +1894,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/05",
    "patch_title": "Overwatch Retail Patch Notes - May 12, 2026",
    "kind": "general",
-   "text_en": "Rising Uppercut - Power",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2026-05-12-1",
-   "date": "2026-05-12",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/05",
-   "patch_title": "Overwatch Retail Patch Notes - May 12, 2026",
-   "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Bonus damage increased to 20 (Up from 10).",
-   "text_cn": null
+   "text_cn": null,
+   "before": 10.0,
+   "after": 20.0,
+   "by": 10.0,
+   "by_pct": null,
+   "metric": "bonus damage",
+   "unit": null
   },
   {
    "patch": "en-2026-04-01-1",
@@ -1223,6 +1912,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/04",
    "patch_title": "Overwatch Retail Patch Notes - April 1, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "rocket-punch",
    "ability_en": "Rocket Punch",
    "ability_cn": "火箭重拳",
@@ -1230,7 +1920,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-04-01-1",
@@ -1239,6 +1932,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/04",
    "patch_title": "Overwatch Retail Patch Notes - April 1, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "rocket-punch",
    "ability_en": "Rocket Punch",
    "ability_cn": "火箭重拳",
@@ -1246,7 +1940,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-04-01-1",
@@ -1255,8 +1952,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/04",
    "patch_title": "Overwatch Retail Patch Notes - April 1, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Doomfist can see all active Talon members through walls.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-04-01-1",
@@ -1265,8 +1970,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/04",
    "patch_title": "Overwatch Retail Patch Notes - April 1, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Doomfist deals and receives 50% more damage from active Talon members.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-04-01-1",
@@ -1275,8 +1988,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/04",
    "patch_title": "Overwatch Retail Patch Notes - April 1, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Active Talon members: Vendetta, Emre, Sigma, Moira, Mauga, Freja",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-04-01-1",
@@ -1285,6 +2006,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/04/",
    "patch_title": "《守望先锋》补丁说明——2026年4月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "rocket-punch",
    "ability_en": "Rocket Punch",
    "ability_cn": "火箭重拳",
@@ -1292,7 +2014,10 @@
    "text_cn": "可无限保持蓄力。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-04-01-1",
@@ -1301,6 +2026,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/04/",
    "patch_title": "《守望先锋》补丁说明——2026年4月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "rocket-punch",
    "ability_en": "Rocket Punch",
    "ability_cn": "火箭重拳",
@@ -1308,7 +2034,10 @@
    "text_cn": "蓄力时长足够久后，移动速度不再减慢。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-04-01-1",
@@ -1317,8 +2046,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/04/",
    "patch_title": "《守望先锋》补丁说明——2026年4月1日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "“末日铁拳”可以隔墙看到所有现役黑爪成员。"
+   "text_cn": "“末日铁拳”可以隔墙看到所有现役黑爪成员。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-04-01-1",
@@ -1327,8 +2064,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/04/",
    "patch_title": "《守望先锋》补丁说明——2026年4月1日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "“末日铁拳”对现役黑爪成员造成的伤害和受到来自现役黑爪成员的伤害均提高50%。"
+   "text_cn": "“末日铁拳”对现役黑爪成员造成的伤害和受到来自现役黑爪成员的伤害均提高50%。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 50.0,
+   "metric": "对现役黑爪成员造成的伤害和受到来自现役黑爪成员的伤害均",
+   "unit": null
   },
   {
    "patch": "cn-2026-04-01-1",
@@ -1337,8 +2082,76 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/04/",
    "patch_title": "《守望先锋》补丁说明——2026年4月1日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "现役黑爪成员：“斩仇”、埃姆雷、“西格玛”、莫伊拉、毛加、弗蕾娅"
+   "text_cn": "现役黑爪成员：“斩仇”、埃姆雷、“西格玛”、莫伊拉、毛加、弗蕾娅",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "en-2026-02-09-1",
+   "date": "2026-02-09",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/02",
+   "patch_title": "Overwatch Retail Patch Notes - February 10, 2026",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "seismic-rally",
+   "perk_en": "Seismic Rally",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "en-2026-02-09-1",
+   "date": "2026-02-09",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/02",
+   "patch_title": "Overwatch Retail Patch Notes - February 10, 2026",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "block-party",
+   "perk_en": "Block Party",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "en-2026-02-09-1",
+   "date": "2026-02-09",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/02",
+   "patch_title": "Overwatch Retail Patch Notes - February 10, 2026",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "rising-uppercut",
+   "perk_en": "Rising Uppercut",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "en-2026-02-09-1",
+   "date": "2026-02-09",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/02",
+   "patch_title": "Overwatch Retail Patch Notes - February 10, 2026",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "asteroid-smash",
+   "perk_en": "Asteroid Smash",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
   },
   {
    "patch": "en-2026-02-09-1",
@@ -1347,18 +2160,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/02",
    "patch_title": "Overwatch Retail Patch Notes - February 10, 2026",
    "kind": "general",
-   "text_en": "Seismic Rally - Power",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2026-02-09-1",
-   "date": "2026-02-09",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/02",
-   "patch_title": "Overwatch Retail Patch Notes - February 10, 2026",
-   "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": "Max Life Overhealth gained per second increased from 3% to 5%.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-02-09-1",
@@ -1367,18 +2178,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/02",
    "patch_title": "Overwatch Retail Patch Notes - February 10, 2026",
    "kind": "general",
-   "text_en": "Block Party - Power",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2026-02-09-1",
-   "date": "2026-02-09",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/02",
-   "patch_title": "Overwatch Retail Patch Notes - February 10, 2026",
-   "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Self Heal increased from 5% to 8% of Max Life per second.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-02-09-1",
@@ -1387,18 +2196,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/02",
    "patch_title": "Overwatch Retail Patch Notes - February 10, 2026",
    "kind": "general",
-   "text_en": "Rising Uppercut - Power",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2026-02-09-1",
-   "date": "2026-02-09",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/02",
-   "patch_title": "Overwatch Retail Patch Notes - February 10, 2026",
-   "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Cooldown reduced from 12s to 10s.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-02-09-1",
@@ -1407,18 +2214,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/02",
    "patch_title": "Overwatch Retail Patch Notes - February 10, 2026",
    "kind": "general",
-   "text_en": "Asteroid Smash - Power",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2026-02-09-1",
-   "date": "2026-02-09",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/02",
-   "patch_title": "Overwatch Retail Patch Notes - February 10, 2026",
-   "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Cooldown reduced from 12s to 10s.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-02-09-1",
@@ -1427,8 +2232,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/02",
    "patch_title": "Overwatch Retail Patch Notes - February 10, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Maximum impact damage increased from 150 to 200.",
-   "text_cn": null
+   "text_cn": null,
+   "before": 150.0,
+   "after": 200.0,
+   "by": 50.0,
+   "by_pct": null,
+   "metric": "maximum impact damage",
+   "unit": null
   },
   {
    "patch": "en-2026-02-09-1",
@@ -1437,8 +2250,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/02",
    "patch_title": "Overwatch Retail Patch Notes - February 10, 2026",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": "Now triggers Overhealth from The Best Defense",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-02-09-1",
@@ -1447,8 +2268,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/02",
    "patch_title": "Overwatch Retail Patch Notes - February 10, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Quickcharger - Epic Ability Hero Item",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-02-09-1",
@@ -1457,8 +2286,31 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/02",
    "patch_title": "Overwatch Retail Patch Notes - February 10, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Cost reduced to 10000 (Down from 12000).",
-   "text_cn": null
+   "text_cn": null,
+   "before": 12000.0,
+   "after": 10000.0,
+   "by": -2000.0,
+   "by_pct": null,
+   "metric": "cost",
+   "unit": null
+  },
+  {
+   "patch": "cn-2026-01-09-1",
+   "date": "2026-01-09",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/01/",
+   "patch_title": "《守望先锋》补丁说明——2026年1月9日",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "aftershock",
+   "perk_en": null,
+   "perk_cn": "悍猛矩阵",
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
   },
   {
    "patch": "cn-2026-01-09-1",
@@ -1467,8 +2319,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/01/",
    "patch_title": "《守望先锋》补丁说明——2026年1月9日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "火箭重拳"
+   "text_cn": "火箭重拳",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-01-09-1",
@@ -1477,8 +2337,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/01/",
    "patch_title": "《守望先锋》补丁说明——2026年1月9日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "“强化重拳”现在会在20秒后衰减。"
+   "text_cn": "“强化重拳”现在会在20秒后衰减。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-01-09-1",
@@ -1487,18 +2355,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/01/",
    "patch_title": "《守望先锋》补丁说明——2026年1月9日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "悍猛矩阵——威能"
-  },
-  {
-   "patch": "cn-2026-01-09-1",
-   "date": "2026-01-09",
-   "site": "cn",
-   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/01/",
-   "patch_title": "《守望先锋》补丁说明——2026年1月9日",
-   "kind": "general",
-   "text_en": null,
-   "text_cn": "射弹吸收区域的尺寸进行了缩小，使其更符合“末日铁拳”的模型尺寸。"
+   "text_cn": "射弹吸收区域的尺寸进行了缩小，使其更符合“末日铁拳”的模型尺寸。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-01-08-1",
@@ -1507,8 +2373,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/01",
    "patch_title": "Overwatch 2 Retail Patch Notes - January 8, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Rocket Punch",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-01-08-1",
@@ -1517,8 +2391,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/01",
    "patch_title": "Overwatch 2 Retail Patch Notes - January 8, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Empowered punch now deteriorates after 20 seconds.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-01-08-1",
@@ -1527,8 +2409,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/01",
    "patch_title": "Overwatch 2 Retail Patch Notes - January 8, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Power Matrix perk",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-01-08-1",
@@ -1537,8 +2427,118 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/01",
    "patch_title": "Overwatch 2 Retail Patch Notes - January 8, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Projectile absorption area scaled down to more closely match the size of Doomfist's model.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "cn-2025-12-19-1",
+   "date": "2025-12-19",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/12/",
+   "patch_title": "《守望先锋》补丁说明——2025年12月19日",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "aftershock",
+   "perk_en": null,
+   "perk_cn": "地震余波",
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": [
+    "地震余波——异能 第二段冲击波的伤害从50%提高至60%。"
+   ]
+  },
+  {
+   "patch": "cn-2025-12-19-1",
+   "date": "2025-12-19",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/12/",
+   "patch_title": "《守望先锋》补丁说明——2025年12月19日",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "asteroid-smash",
+   "perk_en": null,
+   "perk_cn": "惊天动地",
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": [
+    "惊天动地——异能 现提供终极技能充能。 冷却时间从15秒缩短至12秒。"
+   ]
+  },
+  {
+   "patch": "cn-2025-12-19-1",
+   "date": "2025-12-19",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/12/",
+   "patch_title": "《守望先锋》补丁说明——2025年12月19日",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "block-party",
+   "perk_en": null,
+   "perk_cn": "格挡派对",
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": [
+    "格挡派对——异能 “格挡派对”因存在问题暂时禁用。"
+   ]
+  },
+  {
+   "patch": "cn-2025-12-19-1",
+   "date": "2025-12-19",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/12/",
+   "patch_title": "《守望先锋》补丁说明——2025年12月19日",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "jab-cross",
+   "perk_en": null,
+   "perk_cn": "刺直连击",
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": [
+    "刺直连击——异能 使用技能后，攻击速度加成从50%提高至75%。"
+   ]
+  },
+  {
+   "patch": "cn-2025-12-19-1",
+   "date": "2025-12-19",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/12/",
+   "patch_title": "《守望先锋》补丁说明——2025年12月19日",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "jetforce-jab",
+   "perk_en": null,
+   "perk_cn": "破空刺拳",
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": [
+    "破空刺拳——异能 “火箭重拳”的燃烧伤害从15%提高至20%。"
+   ]
+  },
+  {
+   "patch": "cn-2025-12-19-1",
+   "date": "2025-12-19",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/12/",
+   "patch_title": "《守望先锋》补丁说明——2025年12月19日",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "slam-wham",
+   "perk_en": null,
+   "perk_cn": "裂地猛砸",
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": [
+    "裂地猛砸——异能 每下坠1米，“裂地重拳”的范围扩大从4%提高至6%。"
+   ]
   },
   {
    "patch": "cn-2025-12-19-1",
@@ -1547,8 +2547,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/12/",
    "patch_title": "《守望先锋》补丁说明——2025年12月19日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "通过造成伤害和提供治疗获得的角斗资金提高25%。"
+   "text_cn": "通过造成伤害和提供治疗获得的角斗资金提高25%。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 25.0,
+   "metric": "通过造成伤害和提供治疗获得的角斗资金",
+   "unit": null
   },
   {
    "patch": "cn-2025-12-19-1",
@@ -1557,8 +2565,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/12/",
    "patch_title": "《守望先锋》补丁说明——2025年12月19日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "地震余波——异能 第二段冲击波的伤害从50%提高至60%。"
+   "text_cn": "第二段冲击波的伤害从50%提高至60%。",
+   "before": 50.0,
+   "after": 60.0,
+   "by": 10.0,
+   "by_pct": null,
+   "metric": "第二段冲击波的伤害",
+   "unit": "pct"
   },
   {
    "patch": "cn-2025-12-19-1",
@@ -1567,8 +2583,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/12/",
    "patch_title": "《守望先锋》补丁说明——2025年12月19日",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "ultimate_cost",
    "text_en": null,
-   "text_cn": "第二段冲击波的伤害从50%提高至60%。"
+   "text_cn": "现提供终极技能充能。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-12-19-1",
@@ -1577,8 +2601,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/12/",
    "patch_title": "《守望先锋》补丁说明——2025年12月19日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "惊天动地——异能 现提供终极技能充能。 冷却时间从15秒缩短至12秒。"
+   "text_cn": "冷却时间从15秒缩短至12秒。",
+   "before": 15.0,
+   "after": 12.0,
+   "by": -3.0,
+   "by_pct": null,
+   "metric": "cooldown",
+   "unit": "s"
   },
   {
    "patch": "cn-2025-12-19-1",
@@ -1587,8 +2619,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/12/",
    "patch_title": "《守望先锋》补丁说明——2025年12月19日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "现提供终极技能充能。"
+   "text_cn": "“格挡派对”因存在问题暂时禁用。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-12-19-1",
@@ -1597,8 +2637,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/12/",
    "patch_title": "《守望先锋》补丁说明——2025年12月19日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "冷却时间从15秒缩短至12秒。"
+   "text_cn": "使用技能后，攻击速度加成从50%提高至75%。",
+   "before": 50.0,
+   "after": 75.0,
+   "by": 25.0,
+   "by_pct": null,
+   "metric": "攻击速度加成",
+   "unit": "pct"
   },
   {
    "patch": "cn-2025-12-19-1",
@@ -1607,8 +2655,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/12/",
    "patch_title": "《守望先锋》补丁说明——2025年12月19日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "格挡派对——异能 “格挡派对”因存在问题暂时禁用。"
+   "text_cn": "“火箭重拳”的燃烧伤害从15%提高至20%。",
+   "before": 15.0,
+   "after": 20.0,
+   "by": 5.0,
+   "by_pct": null,
+   "metric": "的燃烧伤害",
+   "unit": "pct"
   },
   {
    "patch": "cn-2025-12-19-1",
@@ -1617,68 +2673,118 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/12/",
    "patch_title": "《守望先锋》补丁说明——2025年12月19日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "“格挡派对”因存在问题暂时禁用。"
+   "text_cn": "每下坠1米，“裂地重拳”的范围扩大从4%提高至6%。",
+   "before": 4.0,
+   "after": 6.0,
+   "by": 2.0,
+   "by_pct": null,
+   "metric": "的范围扩大",
+   "unit": "pct"
   },
   {
-   "patch": "cn-2025-12-19-1",
-   "date": "2025-12-19",
-   "site": "cn",
-   "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/12/",
-   "patch_title": "《守望先锋》补丁说明——2025年12月19日",
-   "kind": "general",
-   "text_en": null,
-   "text_cn": "刺直连击——异能 使用技能后，攻击速度加成从50%提高至75%。"
+   "patch": "en-2025-12-18-1",
+   "date": "2025-12-18",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+   "patch_title": "Overwatch 2 Retail Patch Notes - December 18, 2025",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "aftershock",
+   "perk_en": "Aftershock",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [
+    "Aftershock - Power Increased secondary shockwave damage to 60% (Up from 50%)."
+   ],
+   "lines_cn": []
   },
   {
-   "patch": "cn-2025-12-19-1",
-   "date": "2025-12-19",
-   "site": "cn",
-   "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/12/",
-   "patch_title": "《守望先锋》补丁说明——2025年12月19日",
-   "kind": "general",
-   "text_en": null,
-   "text_cn": "使用技能后，攻击速度加成从50%提高至75%。"
+   "patch": "en-2025-12-18-1",
+   "date": "2025-12-18",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+   "patch_title": "Overwatch 2 Retail Patch Notes - December 18, 2025",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "asteroid-smash",
+   "perk_en": "Asteroid Smash",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [
+    "Asteroid Smash - Power Now grants ultimate charge. Cooldown reduced to 12s (Down from 15s)."
+   ],
+   "lines_cn": []
   },
   {
-   "patch": "cn-2025-12-19-1",
-   "date": "2025-12-19",
-   "site": "cn",
-   "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/12/",
-   "patch_title": "《守望先锋》补丁说明——2025年12月19日",
-   "kind": "general",
-   "text_en": null,
-   "text_cn": "破空刺拳——异能 “火箭重拳”的燃烧伤害从15%提高至20%。"
+   "patch": "en-2025-12-18-1",
+   "date": "2025-12-18",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+   "patch_title": "Overwatch 2 Retail Patch Notes - December 18, 2025",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "block-party",
+   "perk_en": "Block Party",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [
+    "Block Party - Power Block Party has been disabled at this time due to an issue"
+   ],
+   "lines_cn": []
   },
   {
-   "patch": "cn-2025-12-19-1",
-   "date": "2025-12-19",
-   "site": "cn",
-   "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/12/",
-   "patch_title": "《守望先锋》补丁说明——2025年12月19日",
-   "kind": "general",
-   "text_en": null,
-   "text_cn": "“火箭重拳”的燃烧伤害从15%提高至20%。"
+   "patch": "en-2025-12-18-1",
+   "date": "2025-12-18",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+   "patch_title": "Overwatch 2 Retail Patch Notes - December 18, 2025",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "jab-cross",
+   "perk_en": "Jab Cross",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [
+    "Jab Cross - Power Increased Melee Attack Speed after using an ability to 75% (Up from 50%)."
+   ],
+   "lines_cn": []
   },
   {
-   "patch": "cn-2025-12-19-1",
-   "date": "2025-12-19",
-   "site": "cn",
-   "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/12/",
-   "patch_title": "《守望先锋》补丁说明——2025年12月19日",
-   "kind": "general",
-   "text_en": null,
-   "text_cn": "裂地猛砸——异能 每下坠1米，“裂地重拳”的范围扩大从4%提高至6%。"
+   "patch": "en-2025-12-18-1",
+   "date": "2025-12-18",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+   "patch_title": "Overwatch 2 Retail Patch Notes - December 18, 2025",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "jetforce-jab",
+   "perk_en": "Jetforce Jab",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [
+    "Jetforce Jab - Power Increased Burn Damage on Rocket Punch to 20% (Up from 15%)."
+   ],
+   "lines_cn": []
   },
   {
-   "patch": "cn-2025-12-19-1",
-   "date": "2025-12-19",
-   "site": "cn",
-   "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/12/",
-   "patch_title": "《守望先锋》补丁说明——2025年12月19日",
-   "kind": "general",
-   "text_en": null,
-   "text_cn": "每下坠1米，“裂地重拳”的范围扩大从4%提高至6%。"
+   "patch": "en-2025-12-18-1",
+   "date": "2025-12-18",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+   "patch_title": "Overwatch 2 Retail Patch Notes - December 18, 2025",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "slam-wham",
+   "perk_en": "Slam Wham",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [
+    "Slam Wham - Power Increased Seismic Slam Range per meter travelled to 6% (Up from 4%)."
+   ],
+   "lines_cn": []
   },
   {
    "patch": "en-2025-12-18-1",
@@ -1687,8 +2793,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
    "patch_title": "Overwatch 2 Retail Patch Notes - December 18, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Currency gained from damage and healing increased by 25%.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 25.0,
+   "metric": "currency gained from damage and healing",
+   "unit": null
   },
   {
    "patch": "en-2025-12-18-1",
@@ -1697,18 +2811,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
    "patch_title": "Overwatch 2 Retail Patch Notes - December 18, 2025",
    "kind": "general",
-   "text_en": "Aftershock - Power Increased secondary shockwave damage to 60% (Up from 50%).",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-12-18-1",
-   "date": "2025-12-18",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
-   "patch_title": "Overwatch 2 Retail Patch Notes - December 18, 2025",
-   "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Increased secondary shockwave damage to 60% (Up from 50%).",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-12-18-1",
@@ -1717,18 +2829,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
    "patch_title": "Overwatch 2 Retail Patch Notes - December 18, 2025",
    "kind": "general",
-   "text_en": "Asteroid Smash - Power Now grants ultimate charge. Cooldown reduced to 12s (Down from 15s).",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-12-18-1",
-   "date": "2025-12-18",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
-   "patch_title": "Overwatch 2 Retail Patch Notes - December 18, 2025",
-   "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "ultimate_cost",
    "text_en": "Now grants ultimate charge.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-12-18-1",
@@ -1737,8 +2847,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
    "patch_title": "Overwatch 2 Retail Patch Notes - December 18, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Cooldown reduced to 12s (Down from 15s).",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-12-18-1",
@@ -1747,18 +2865,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
    "patch_title": "Overwatch 2 Retail Patch Notes - December 18, 2025",
    "kind": "general",
-   "text_en": "Block Party - Power Block Party has been disabled at this time due to an issue",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-12-18-1",
-   "date": "2025-12-18",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
-   "patch_title": "Overwatch 2 Retail Patch Notes - December 18, 2025",
-   "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Block Party has been disabled at this time due to an issue",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-12-18-1",
@@ -1767,18 +2883,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
    "patch_title": "Overwatch 2 Retail Patch Notes - December 18, 2025",
    "kind": "general",
-   "text_en": "Jab Cross - Power Increased Melee Attack Speed after using an ability to 75% (Up from 50%).",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-12-18-1",
-   "date": "2025-12-18",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
-   "patch_title": "Overwatch 2 Retail Patch Notes - December 18, 2025",
-   "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Increased Melee Attack Speed after using an ability to 75% (Up from 50%).",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-12-18-1",
@@ -1787,18 +2901,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
    "patch_title": "Overwatch 2 Retail Patch Notes - December 18, 2025",
    "kind": "general",
-   "text_en": "Jetforce Jab - Power Increased Burn Damage on Rocket Punch to 20% (Up from 15%).",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-12-18-1",
-   "date": "2025-12-18",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
-   "patch_title": "Overwatch 2 Retail Patch Notes - December 18, 2025",
-   "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Increased Burn Damage on Rocket Punch to 20% (Up from 15%).",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-12-18-1",
@@ -1807,18 +2919,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
    "patch_title": "Overwatch 2 Retail Patch Notes - December 18, 2025",
    "kind": "general",
-   "text_en": "Slam Wham - Power Increased Seismic Slam Range per meter travelled to 6% (Up from 4%).",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-12-18-1",
-   "date": "2025-12-18",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
-   "patch_title": "Overwatch 2 Retail Patch Notes - December 18, 2025",
-   "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Increased Seismic Slam Range per meter travelled to 6% (Up from 4%).",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-12-09-1",
@@ -1826,59 +2936,19 @@
    "site": "en",
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
    "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
-   "text_en": "Jab Cross - Power",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-12-09-1",
-   "date": "2025-12-09",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
-   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
-   "text_en": "After you use an ability, gain 50% [Quick Melee] Attack Speed and increase [Quick Melee] Range by 1m for 3s",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-12-09-1",
-   "date": "2025-12-09",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
-   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
-   "text_en": "Rising Uppercut - Power",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-12-09-1",
-   "date": "2025-12-09",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
-   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
-   "text_en": "Ability: Your next [Quick Melee] becomes a [Rising Uppercut], dealing 10 extra damage (12s Cooldown).",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-12-09-1",
-   "date": "2025-12-09",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
-   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
-   "text_en": "The Bestest Defense - Power",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-12-09-1",
-   "date": "2025-12-09",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
-   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
+   "kind": "ability",
+   "dimension": "ability",
+   "ability_slug": "quick-melee",
+   "ability_en": "Quick Melee",
+   "ability_cn": "近身攻击",
    "text_en": "[Quick Melee] hits and [Hand Cannon] critical hits trigger [The Best Defense] at 35% effectiveness.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-12-09-1",
@@ -1886,189 +2956,19 @@
    "site": "en",
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
    "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
-   "text_en": "Aftershock - Power",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-12-09-1",
-   "date": "2025-12-09",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
-   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
-   "text_en": "[Seismic Slam]'s shockwave repeats itself after a 1.5s delay, dealing 50% damage.",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-12-09-1",
-   "date": "2025-12-09",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
-   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
-   "text_en": "Seismic Rally - Power",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-12-09-1",
-   "date": "2025-12-09",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
-   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
-   "text_en": "Every 1s while leaping with [Seismic Slam], grant Overhealth equal to 3% of your Max Life to all allies within line of sight for 3s.",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-12-09-1",
-   "date": "2025-12-09",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
-   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
-   "text_en": "Slam Wham",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-12-09-1",
-   "date": "2025-12-09",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
-   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
-   "text_en": "Increase [Seismic Slam]'s damage by 2%, and range by 4% for every 1m traveled downward.",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-12-09-1",
-   "date": "2025-12-09",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
-   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
-   "text_en": "Boomfist - Power",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-12-09-1",
-   "date": "2025-12-09",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
-   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
-   "text_en": "Hitting multiple enemies with [Rocket Punch] grants 5% Ultimate Charge and reduces the cooldown of [Power Block] by 0.5s for each extra enemy hit.",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-12-09-1",
-   "date": "2025-12-09",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
-   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
-   "text_en": "Overpowered - Power",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-12-09-1",
-   "date": "2025-12-09",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
-   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
-   "text_en": "[Rocket Punch] can be further empowered when blocking 150% more damage with [Power Block], granting 25% more damage and 50% more range.",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-12-09-1",
-   "date": "2025-12-09",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
-   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
-   "text_en": "Asteroid Smash",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-12-09-1",
-   "date": "2025-12-09",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
-   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
-   "text_en": "Ability: Crouching while airborne will trigger a mini [Meteroid Strike], dealing up to 150 direct hit damage based on distance traveled downward (15s cooldown).",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-12-09-1",
-   "date": "2025-12-09",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
-   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
-   "text_en": "Block Party - Power",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-12-09-1",
-   "date": "2025-12-09",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
-   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
-   "text_en": "While [Power Block] is active, heal yourself for 3% of Max Life and all other allies within 8m for 10% of Max Life every 1s.",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-12-09-1",
-   "date": "2025-12-09",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
-   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
-   "text_en": "Helping Hand - Power",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-12-09-1",
-   "date": "2025-12-09",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
-   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
-   "text_en": "[The Best Defense] grants bonus Overhealth equal to 8% of Bonus Max Life. Whenever you gain Overhealth from yourself, grant 25% to the nearest ally.",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-12-09-1",
-   "date": "2025-12-09",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
-   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
-   "text_en": "Loaded Knuckles - Legendary Hero Item",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-12-09-1",
-   "date": "2025-12-09",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
-   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
-   "text_en": "25 Armor -20% Melee Damage",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-12-09-1",
-   "date": "2025-12-09",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
-   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
+   "kind": "ability",
+   "dimension": "ability",
+   "ability_slug": "quick-melee",
+   "ability_en": "Quick Melee",
+   "ability_cn": "近身攻击",
    "text_en": "[Quick Melee] hits restore 1 ammo. [Rocket Punch] hits restore 100% of your ammo",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-12-09-1",
@@ -2076,9 +2976,19 @@
    "site": "en",
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
    "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
-   "text_en": "Cost: 10,000",
-   "text_cn": null
+   "kind": "ability",
+   "dimension": "ability",
+   "ability_slug": "seismic-slam",
+   "ability_en": "Seismic Slam",
+   "ability_cn": "裂地重拳",
+   "text_en": "[Seismic Slam]'s shockwave repeats itself after a 1.5s delay, dealing 50% damage.",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-12-09-1",
@@ -2086,9 +2996,19 @@
    "site": "en",
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
    "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
-   "text_en": "Wing Clipper - Legendary Hero Item",
-   "text_cn": null
+   "kind": "ability",
+   "dimension": "ability",
+   "ability_slug": "rocket-punch",
+   "ability_en": "Rocket Punch",
+   "ability_cn": "火箭重拳",
+   "text_en": "[Rocket Punch] can be further empowered when blocking 150% more damage with [Power Block], granting 25% more damage and 50% more range.",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-12-09-1",
@@ -2096,9 +3016,19 @@
    "site": "en",
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
    "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
-   "text_en": "10% Ability Power",
-   "text_cn": null
+   "kind": "ability",
+   "dimension": "ability",
+   "ability_slug": "the-best-defense",
+   "ability_en": "The Best Defense",
+   "ability_cn": "最佳防守……",
+   "text_en": "[The Best Defense] grants bonus Overhealth equal to 8% of Bonus Max Life. Whenever you gain Overhealth from yourself, grant 25% to the nearest ally.",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-12-09-1",
@@ -2106,9 +3036,19 @@
    "site": "en",
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
    "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
+   "kind": "ability",
+   "dimension": "ability",
+   "ability_slug": "meteor-strike",
+   "ability_en": "Meteor Strike",
+   "ability_cn": "毁天灭地",
    "text_en": "[Meteor Strike] pulls airborne enemies to the ground",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-12-09-1",
@@ -2116,99 +3056,19 @@
    "site": "en",
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
    "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
-   "text_en": "Cost: 4,500",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-12-09-1",
-   "date": "2025-12-09",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
-   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
-   "text_en": "Power Bank - Legendary Hero Item",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-12-09-1",
-   "date": "2025-12-09",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
-   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
-   "text_en": "25 Health",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-12-09-1",
-   "date": "2025-12-09",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
-   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
-   "text_en": "5% Ability Power",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-12-09-1",
-   "date": "2025-12-09",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
-   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
-   "text_en": "You can charge [Rocket Punch] indefinitely. After 2.5s of charging [Rocket Punch], become Unstoppable for the duration of that [Rocket Punch].",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-12-09-1",
-   "date": "2025-12-09",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
-   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
-   "text_en": "4,000",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-12-09-1",
-   "date": "2025-12-09",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
-   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
-   "text_en": "Friendly Fissure - Legendary Hero Item",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-12-09-1",
-   "date": "2025-12-09",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
-   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
-   "text_en": "25 Health",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-12-09-1",
-   "date": "2025-12-09",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
-   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
-   "text_en": "10% Ability Power",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-12-09-1",
-   "date": "2025-12-09",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
-   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
+   "kind": "ability",
+   "dimension": "ability",
+   "ability_slug": "meteor-strike",
+   "ability_en": "Meteor Strike",
+   "ability_cn": "毁天灭地",
    "text_en": "[Meteor Strike] Area of affect grants all other allies Overhealth Equal to 20% of your Max Life for 5s.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-12-09-1",
@@ -2216,79 +3076,19 @@
    "site": "en",
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
    "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
-   "text_en": "Cost: 9,000",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-12-09-1",
-   "date": "2025-12-09",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
-   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
-   "text_en": "Charm Crusher - Legendary Hero Item",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-12-09-1",
-   "date": "2025-12-09",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
-   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
-   "text_en": "15% Ability Power",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-12-09-1",
-   "date": "2025-12-09",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
-   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
-   "text_en": "15% [Seismic Slam] Leap Distance",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-12-09-1",
-   "date": "2025-12-09",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
-   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
-   "text_en": "Cost: 11,000",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-12-09-1",
-   "date": "2025-12-09",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
-   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
-   "text_en": "Quickcharger - Legendary Hero Item",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-12-09-1",
-   "date": "2025-12-09",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
-   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
-   "text_en": "15% Ability Power",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-12-09-1",
-   "date": "2025-12-09",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
-   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
+   "kind": "ability",
+   "dimension": "ability",
+   "ability_slug": "power-block",
+   "ability_en": "Power Block",
+   "ability_cn": "悍猛格挡",
    "text_en": "[Power Block] adds 10% progress for empowering [Rocket Punch]. [Power Block] no longer resets progress for empowering [Rocket Punch].",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-12-09-1",
@@ -2296,49 +3096,19 @@
    "site": "en",
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
    "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
-   "text_en": "Cost: 12,000",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-12-09-1",
-   "date": "2025-12-09",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
-   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
-   "text_en": "Dual Layer Dampener - Legendary Hero Item",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-12-09-1",
-   "date": "2025-12-09",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
-   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
-   "text_en": "25 Armor",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-12-09-1",
-   "date": "2025-12-09",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
-   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
-   "text_en": "10% Increased [Power Block] Damage Reduction",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-12-09-1",
-   "date": "2025-12-09",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
-   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
+   "kind": "ability",
+   "dimension": "ability",
+   "ability_slug": "power-block",
+   "ability_en": "Power Block",
+   "ability_cn": "悍猛格挡",
    "text_en": "[Power Block] now also reduces damage against Burn and other Damage Over Time effects.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-12-09-1",
@@ -2346,79 +3116,154 @@
    "site": "en",
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
    "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
-   "text_en": "Cost: 4,000",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-12-09-1",
-   "date": "2025-12-09",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
-   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
-   "text_en": "Zoomfist - Legendary Hero Item",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-12-09-1",
-   "date": "2025-12-09",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
-   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
-   "text_en": "50 Armor",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-12-09-1",
-   "date": "2025-12-09",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
-   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
-   "text_en": "Whenever you gain Overhealth from yourself, heal for 15% of Overhealth gained over 1s and gain 15% Move Speed for 3s.",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-12-09-1",
-   "date": "2025-12-09",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
-   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
-   "text_en": "Cost: 9,500",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-12-09-1",
-   "date": "2025-12-09",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
-   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
-   "text_en": "Power Matrix - Legendary Hero Item",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-12-09-1",
-   "date": "2025-12-09",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
-   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
-   "text_en": "50 Armor",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-12-09-1",
-   "date": "2025-12-09",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
-   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
-   "kind": "general",
+   "kind": "ability",
+   "dimension": "ability",
+   "ability_slug": "power-block",
+   "ability_en": "Power Block",
+   "ability_cn": "悍猛格挡",
    "text_en": "[Power Block] absorbs projectiles for the first 1s, gaining Overhealth equal to 1% of your max Life for each projectile absorbed.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "en-2025-12-09-1",
+   "date": "2025-12-09",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "jab-cross",
+   "perk_en": "Jab Cross",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "en-2025-12-09-1",
+   "date": "2025-12-09",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "rising-uppercut",
+   "perk_en": "Rising Uppercut",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "en-2025-12-09-1",
+   "date": "2025-12-09",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "the-bestest-defense",
+   "perk_en": "The Bestest Defense",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "en-2025-12-09-1",
+   "date": "2025-12-09",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "aftershock",
+   "perk_en": "Aftershock",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "en-2025-12-09-1",
+   "date": "2025-12-09",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "seismic-rally",
+   "perk_en": "Seismic Rally",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "en-2025-12-09-1",
+   "date": "2025-12-09",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "boomfist",
+   "perk_en": "Boomfist",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "en-2025-12-09-1",
+   "date": "2025-12-09",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "overpowered",
+   "perk_en": "Overpowered",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "en-2025-12-09-1",
+   "date": "2025-12-09",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "block-party",
+   "perk_en": "Block Party",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "en-2025-12-09-1",
+   "date": "2025-12-09",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "helping-hand",
+   "perk_en": "Helping Hand",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
   },
   {
    "patch": "en-2025-12-09-1",
@@ -2427,8 +3272,754 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
    "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
+   "text_en": "After you use an ability, gain 50% [Quick Melee] Attack Speed and increase [Quick Melee] Range by 1m for 3s",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "en-2025-12-09-1",
+   "date": "2025-12-09",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
+   "kind": "general",
+   "dimension": "other",
+   "subject": null,
+   "text_en": "Ability: Your next [Quick Melee] becomes a [Rising Uppercut], dealing 10 extra damage (12s Cooldown).",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "en-2025-12-09-1",
+   "date": "2025-12-09",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
+   "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
+   "text_en": "Every 1s while leaping with [Seismic Slam], grant Overhealth equal to 3% of your Max Life to all allies within line of sight for 3s.",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "en-2025-12-09-1",
+   "date": "2025-12-09",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
+   "kind": "general",
+   "dimension": "other",
+   "subject": null,
+   "text_en": "Slam Wham",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "en-2025-12-09-1",
+   "date": "2025-12-09",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
+   "kind": "general",
+   "dimension": "other",
+   "subject": null,
+   "text_en": "Increase [Seismic Slam]'s damage by 2%, and range by 4% for every 1m traveled downward.",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "en-2025-12-09-1",
+   "date": "2025-12-09",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
+   "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "ultimate_cost",
+   "text_en": "Hitting multiple enemies with [Rocket Punch] grants 5% Ultimate Charge and reduces the cooldown of [Power Block] by 0.5s for each extra enemy hit.",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "en-2025-12-09-1",
+   "date": "2025-12-09",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
+   "kind": "general",
+   "dimension": "other",
+   "subject": null,
+   "text_en": "Asteroid Smash",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "en-2025-12-09-1",
+   "date": "2025-12-09",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
+   "kind": "general",
+   "dimension": "other",
+   "subject": null,
+   "text_en": "Ability: Crouching while airborne will trigger a mini [Meteroid Strike], dealing up to 150 direct hit damage based on distance traveled downward (15s cooldown).",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "en-2025-12-09-1",
+   "date": "2025-12-09",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
+   "kind": "general",
+   "dimension": "other",
+   "subject": null,
+   "text_en": "While [Power Block] is active, heal yourself for 3% of Max Life and all other allies within 8m for 10% of Max Life every 1s.",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "en-2025-12-09-1",
+   "date": "2025-12-09",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
+   "kind": "general",
+   "dimension": "other",
+   "subject": null,
+   "text_en": "Loaded Knuckles - Legendary Hero Item",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "en-2025-12-09-1",
+   "date": "2025-12-09",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
+   "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
+   "text_en": "25 Armor -20% Melee Damage",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "en-2025-12-09-1",
+   "date": "2025-12-09",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
+   "kind": "general",
+   "dimension": "other",
+   "subject": null,
+   "text_en": "Cost: 10,000",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "en-2025-12-09-1",
+   "date": "2025-12-09",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
+   "kind": "general",
+   "dimension": "other",
+   "subject": null,
+   "text_en": "Wing Clipper - Legendary Hero Item",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "en-2025-12-09-1",
+   "date": "2025-12-09",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
+   "kind": "general",
+   "dimension": "other",
+   "subject": null,
+   "text_en": "10% Ability Power",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "en-2025-12-09-1",
+   "date": "2025-12-09",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
+   "kind": "general",
+   "dimension": "other",
+   "subject": null,
+   "text_en": "Cost: 4,500",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "en-2025-12-09-1",
+   "date": "2025-12-09",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
+   "kind": "general",
+   "dimension": "other",
+   "subject": null,
+   "text_en": "Power Bank - Legendary Hero Item",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "en-2025-12-09-1",
+   "date": "2025-12-09",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
+   "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
+   "text_en": "25 Health",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "en-2025-12-09-1",
+   "date": "2025-12-09",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
+   "kind": "general",
+   "dimension": "other",
+   "subject": null,
+   "text_en": "5% Ability Power",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "en-2025-12-09-1",
+   "date": "2025-12-09",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
+   "kind": "general",
+   "dimension": "other",
+   "subject": null,
+   "text_en": "You can charge [Rocket Punch] indefinitely. After 2.5s of charging [Rocket Punch], become Unstoppable for the duration of that [Rocket Punch].",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "en-2025-12-09-1",
+   "date": "2025-12-09",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
+   "kind": "general",
+   "dimension": "other",
+   "subject": null,
+   "text_en": "4,000",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "en-2025-12-09-1",
+   "date": "2025-12-09",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
+   "kind": "general",
+   "dimension": "other",
+   "subject": null,
+   "text_en": "Friendly Fissure - Legendary Hero Item",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "en-2025-12-09-1",
+   "date": "2025-12-09",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
+   "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
+   "text_en": "25 Health",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "en-2025-12-09-1",
+   "date": "2025-12-09",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
+   "kind": "general",
+   "dimension": "other",
+   "subject": null,
+   "text_en": "10% Ability Power",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "en-2025-12-09-1",
+   "date": "2025-12-09",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
+   "kind": "general",
+   "dimension": "other",
+   "subject": null,
+   "text_en": "Cost: 9,000",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "en-2025-12-09-1",
+   "date": "2025-12-09",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
+   "kind": "general",
+   "dimension": "other",
+   "subject": null,
+   "text_en": "Charm Crusher - Legendary Hero Item",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "en-2025-12-09-1",
+   "date": "2025-12-09",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
+   "kind": "general",
+   "dimension": "other",
+   "subject": null,
+   "text_en": "15% Ability Power",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "en-2025-12-09-1",
+   "date": "2025-12-09",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
+   "kind": "general",
+   "dimension": "other",
+   "subject": null,
+   "text_en": "15% [Seismic Slam] Leap Distance",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "en-2025-12-09-1",
+   "date": "2025-12-09",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
+   "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Cost: 11,000",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "en-2025-12-09-1",
+   "date": "2025-12-09",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
+   "kind": "general",
+   "dimension": "other",
+   "subject": null,
+   "text_en": "Quickcharger - Legendary Hero Item",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "en-2025-12-09-1",
+   "date": "2025-12-09",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
+   "kind": "general",
+   "dimension": "other",
+   "subject": null,
+   "text_en": "15% Ability Power",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "en-2025-12-09-1",
+   "date": "2025-12-09",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
+   "kind": "general",
+   "dimension": "other",
+   "subject": null,
+   "text_en": "Cost: 12,000",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "en-2025-12-09-1",
+   "date": "2025-12-09",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
+   "kind": "general",
+   "dimension": "other",
+   "subject": null,
+   "text_en": "Dual Layer Dampener - Legendary Hero Item",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "en-2025-12-09-1",
+   "date": "2025-12-09",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
+   "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
+   "text_en": "25 Armor",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "en-2025-12-09-1",
+   "date": "2025-12-09",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
+   "kind": "general",
+   "dimension": "other",
+   "subject": null,
+   "text_en": "10% Increased [Power Block] Damage Reduction",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "en-2025-12-09-1",
+   "date": "2025-12-09",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
+   "kind": "general",
+   "dimension": "other",
+   "subject": null,
+   "text_en": "Cost: 4,000",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "en-2025-12-09-1",
+   "date": "2025-12-09",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
+   "kind": "general",
+   "dimension": "other",
+   "subject": null,
+   "text_en": "Zoomfist - Legendary Hero Item",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "en-2025-12-09-1",
+   "date": "2025-12-09",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
+   "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
+   "text_en": "50 Armor",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "en-2025-12-09-1",
+   "date": "2025-12-09",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
+   "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
+   "text_en": "Whenever you gain Overhealth from yourself, heal for 15% of Overhealth gained over 1s and gain 15% Move Speed for 3s.",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "en-2025-12-09-1",
+   "date": "2025-12-09",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
+   "kind": "general",
+   "dimension": "other",
+   "subject": null,
+   "text_en": "Cost: 9,500",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "en-2025-12-09-1",
+   "date": "2025-12-09",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
+   "kind": "general",
+   "dimension": "other",
+   "subject": null,
+   "text_en": "Power Matrix - Legendary Hero Item",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "en-2025-12-09-1",
+   "date": "2025-12-09",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
+   "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
+   "text_en": "50 Armor",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "en-2025-12-09-1",
+   "date": "2025-12-09",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
+   "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
+   "kind": "general",
+   "dimension": "other",
+   "subject": null,
+   "text_en": "Cost: 11,000",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-11-06-1",
@@ -2437,8 +4028,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/11",
    "patch_title": "Overwatch 2 Retail Patch Notes - November 11, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "The Best Defense",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-11-06-1",
@@ -2447,8 +4046,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/11",
    "patch_title": "Overwatch 2 Retail Patch Notes - November 11, 2025",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": "Overhealth gained per target reduced from 35 to 25 HP.",
-   "text_cn": null
+   "text_cn": null,
+   "before": 35.0,
+   "after": 25.0,
+   "by": -10.0,
+   "by_pct": null,
+   "metric": "overhealth",
+   "unit": "hp"
   },
   {
    "patch": "en-2025-11-06-1",
@@ -2457,8 +4064,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/11",
    "patch_title": "Overwatch 2 Retail Patch Notes - November 11, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Power Block",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-11-06-1",
@@ -2467,8 +4082,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/11",
    "patch_title": "Overwatch 2 Retail Patch Notes - November 11, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Amount of damage to gain Empowered Punch increased from 100 to 120.",
-   "text_cn": null
+   "text_cn": null,
+   "before": 100.0,
+   "after": 120.0,
+   "by": 20.0,
+   "by_pct": null,
+   "metric": "amount of damage to gain empowered punch",
+   "unit": null
   },
   {
    "patch": "cn-2025-10-15-1",
@@ -2477,6 +4100,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/10/",
    "patch_title": "《守望先锋》补丁说明——2025年10月15日",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "aftershock",
    "perk_en": null,
    "perk_cn": "地震余波",
@@ -2494,8 +4118,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/10/",
    "patch_title": "《守望先锋》补丁说明——2025年10月15日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "悍猛格挡——技能2"
+   "text_cn": "悍猛格挡——技能2",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-10-15-1",
@@ -2504,8 +4136,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/10/",
    "patch_title": "《守望先锋》补丁说明——2025年10月15日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "受伤减免效果从80%降低至75%。"
+   "text_cn": "受伤减免效果从80%降低至75%。",
+   "before": 80.0,
+   "after": 75.0,
+   "by": -5.0,
+   "by_pct": null,
+   "metric": "受伤减免效果",
+   "unit": "pct"
   },
   {
    "patch": "en-2025-10-14-1",
@@ -2514,6 +4154,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/10",
    "patch_title": "Overwatch 2 Retail Patch Notes – October 14, 2025",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "aftershock",
    "perk_en": "Aftershock",
    "perk_cn": null,
@@ -2531,8 +4172,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/10",
    "patch_title": "Overwatch 2 Retail Patch Notes – October 14, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Power Block – Ability 2",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-10-14-1",
@@ -2541,8 +4190,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/10",
    "patch_title": "Overwatch 2 Retail Patch Notes – October 14, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Damage reduction reduced from 80% to 75%.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-08-27-1",
@@ -2551,6 +4208,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/08/",
    "patch_title": "《守望先锋》补丁说明——2025年8月27日",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "one-two",
    "perk_en": null,
    "perk_cn": "左右开攻",
@@ -2567,6 +4225,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/08/",
    "patch_title": "《守望先锋》补丁说明——2025年8月27日",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "seismic-empowerment",
    "perk_en": null,
    "perk_cn": "裂地强化",
@@ -2583,6 +4242,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/08/",
    "patch_title": "《守望先锋》补丁说明——2025年8月27日",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "aftershock",
    "perk_en": null,
    "perk_cn": "地震余波",
@@ -2600,7 +4260,8 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/08/",
    "patch_title": "《守望先锋》补丁说明——2025年8月27日",
    "kind": "perk",
-   "perk_slug": "power-matrix",
+   "dimension": "perk",
+   "perk_slug": "aftershock",
    "perk_en": null,
    "perk_cn": "悍猛矩阵",
    "status": "changed",
@@ -2616,6 +4277,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/08",
    "patch_title": "Overwatch 2 Retail Patch Notes – August 26, 2025",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "one-two",
    "perk_en": "One-Two",
    "perk_cn": null,
@@ -2632,6 +4294,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/08",
    "patch_title": "Overwatch 2 Retail Patch Notes – August 26, 2025",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "seismic-empowerment",
    "perk_en": "Seismic Empowerment",
    "perk_cn": null,
@@ -2648,6 +4311,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/08",
    "patch_title": "Overwatch 2 Retail Patch Notes – August 26, 2025",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "aftershock",
    "perk_en": "Aftershock",
    "perk_cn": null,
@@ -2665,6 +4329,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/08",
    "patch_title": "Overwatch 2 Retail Patch Notes – August 26, 2025",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "power-matrix",
    "perk_en": "Power Matrix",
    "perk_cn": null,
@@ -2681,6 +4346,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/04",
    "patch_title": "Totally Normal Patch Notes for Totally Normalwatch – April 1, 2025",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "hand-cannon",
    "ability_en": "Hand Cannon",
    "ability_cn": "手炮",
@@ -2688,7 +4354,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-04-01-1",
@@ -2697,6 +4366,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/04",
    "patch_title": "Totally Normal Patch Notes for Totally Normalwatch – April 1, 2025",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "quick-melee",
    "ability_en": "Quick Melee",
    "ability_cn": "近身攻击",
@@ -2704,7 +4374,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-04-01-1",
@@ -2713,6 +4386,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/04",
    "patch_title": "Totally Normal Patch Notes for Totally Normalwatch – April 1, 2025",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "quick-melee",
    "ability_en": "Quick Melee",
    "ability_cn": "近身攻击",
@@ -2720,7 +4394,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": 50.0,
+   "metric": "melee speed",
+   "unit": null
   },
   {
    "patch": "en-2025-04-01-1",
@@ -2729,6 +4406,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/04",
    "patch_title": "Totally Normal Patch Notes for Totally Normalwatch – April 1, 2025",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "quick-melee",
    "ability_en": "Quick Melee",
    "ability_cn": "近身攻击",
@@ -2736,7 +4414,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": 50.0,
+   "metric": "melee damage",
+   "unit": null
   },
   {
    "patch": "en-2025-04-01-1",
@@ -2745,6 +4426,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/04",
    "patch_title": "Totally Normal Patch Notes for Totally Normalwatch – April 1, 2025",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "quick-melee",
    "ability_en": "Quick Melee",
    "ability_cn": "近身攻击",
@@ -2752,7 +4434,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-04-01-1",
@@ -2761,6 +4446,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/04",
    "patch_title": "Totally Normal Patch Notes for Totally Normalwatch – April 1, 2025",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "rocket-punch",
    "ability_en": "Rocket Punch",
    "ability_cn": "火箭重拳",
@@ -2768,7 +4454,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-04-01-1",
@@ -2777,6 +4466,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/04",
    "patch_title": "Totally Normal Patch Notes for Totally Normalwatch – April 1, 2025",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "rocket-punch",
    "ability_en": "Rocket Punch",
    "ability_cn": "火箭重拳",
@@ -2784,7 +4474,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-04-01-1",
@@ -2793,6 +4486,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/04",
    "patch_title": "Totally Normal Patch Notes for Totally Normalwatch – April 1, 2025",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "rocket-punch",
    "ability_en": "Rocket Punch",
    "ability_cn": "火箭重拳",
@@ -2800,7 +4494,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": 50.0,
+   "metric": "charge time",
+   "unit": null
   },
   {
    "patch": "en-2025-04-01-1",
@@ -2809,6 +4506,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/04",
    "patch_title": "Totally Normal Patch Notes for Totally Normalwatch – April 1, 2025",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "seismic-slam",
    "ability_en": "Seismic Slam",
    "ability_cn": "裂地重拳",
@@ -2816,7 +4514,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-04-01-1",
@@ -2825,6 +4526,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/04/",
    "patch_title": "完全正常的“完全正常先锋”补丁说明——2025年4月1日",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "hand-cannon",
    "ability_en": "Hand Cannon",
    "ability_cn": "手炮",
@@ -2832,7 +4534,10 @@
    "text_cn": "不再是主要攻击模式。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-04-01-1",
@@ -2841,6 +4546,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/04/",
    "patch_title": "完全正常的“完全正常先锋”补丁说明——2025年4月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "quick-melee",
    "ability_en": "Quick Melee",
    "ability_cn": "近身攻击",
@@ -2848,7 +4554,10 @@
    "text_cn": "替代手炮成为主要攻击模式。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-04-01-1",
@@ -2857,6 +4566,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/04/",
    "patch_title": "完全正常的“完全正常先锋”补丁说明——2025年4月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "quick-melee",
    "ability_en": "Quick Melee",
    "ability_cn": "近身攻击",
@@ -2864,7 +4574,10 @@
    "text_cn": "近身攻击速度提高50%。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": 50.0,
+   "metric": "近身攻击速度",
+   "unit": null
   },
   {
    "patch": "cn-2025-04-01-1",
@@ -2873,6 +4586,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/04/",
    "patch_title": "完全正常的“完全正常先锋”补丁说明——2025年4月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "quick-melee",
    "ability_en": "Quick Melee",
    "ability_cn": "近身攻击",
@@ -2880,7 +4594,10 @@
    "text_cn": "近身攻击伤害提高50%。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": 50.0,
+   "metric": "近身攻击伤害",
+   "unit": null
   },
   {
    "patch": "cn-2025-04-01-1",
@@ -2889,6 +4606,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/04/",
    "patch_title": "完全正常的“完全正常先锋”补丁说明——2025年4月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "quick-melee",
    "ability_en": "Quick Melee",
    "ability_cn": "近身攻击",
@@ -2896,7 +4614,10 @@
    "text_cn": "“末日铁拳”在近身攻击时会冲向附近的敌人。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-04-01-1",
@@ -2905,6 +4626,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/04/",
    "patch_title": "完全正常的“完全正常先锋”补丁说明——2025年4月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "rocket-punch",
    "ability_en": "Rocket Punch",
    "ability_cn": "火箭重拳",
@@ -2912,7 +4634,10 @@
    "text_cn": "近身攻击伤害可以填充“火箭重拳”蓄力计量条。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-04-01-1",
@@ -2921,6 +4646,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/04/",
    "patch_title": "完全正常的“完全正常先锋”补丁说明——2025年4月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "rocket-punch",
    "ability_en": "Rocket Punch",
    "ability_cn": "火箭重拳",
@@ -2928,7 +4654,10 @@
    "text_cn": "蓄力计量条不再衰减。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-04-01-1",
@@ -2937,6 +4666,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/04/",
    "patch_title": "完全正常的“完全正常先锋”补丁说明——2025年4月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "rocket-punch",
    "ability_en": "Rocket Punch",
    "ability_cn": "火箭重拳",
@@ -2944,7 +4674,10 @@
    "text_cn": "蓄力时间缩短50%。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": 50.0,
+   "metric": "蓄力时间",
+   "unit": null
   },
   {
    "patch": "cn-2025-04-01-1",
@@ -2953,6 +4686,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/04/",
    "patch_title": "完全正常的“完全正常先锋”补丁说明——2025年4月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "seismic-slam",
    "ability_en": "Seismic Slam",
    "ability_cn": "裂地重拳",
@@ -2960,7 +4694,10 @@
    "text_cn": "冷却时间缩短1秒。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-02-18-1",
@@ -2969,6 +4706,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/02",
    "patch_title": "Overwatch 2 Retail Patch Notes + Hero Perks - February 18, 2025",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "one-two",
    "ability_en": "One-Two",
    "ability_cn": null,
@@ -2976,7 +4714,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-02-18-1",
@@ -2985,6 +4726,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/02",
    "patch_title": "Overwatch 2 Retail Patch Notes + Hero Perks - February 18, 2025",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "survival-of-the-fittest",
    "ability_en": "Survival of the Fittest",
    "ability_cn": null,
@@ -2992,7 +4734,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-02-18-1",
@@ -3001,6 +4746,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/02",
    "patch_title": "Overwatch 2 Retail Patch Notes + Hero Perks - February 18, 2025",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "seismic-empowerment",
    "ability_en": "Seismic Empowerment",
    "ability_cn": null,
@@ -3008,7 +4754,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-02-18-1",
@@ -3017,6 +4766,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/02",
    "patch_title": "Overwatch 2 Retail Patch Notes + Hero Perks - February 18, 2025",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "power-matrix",
    "ability_en": "Power Matrix",
    "ability_cn": null,
@@ -3024,7 +4774,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2024-12-17-1",
@@ -3033,6 +4786,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/12",
    "patch_title": "Overwatch 2 6v6 Experiment – December 17, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "seismic-slam",
    "ability_en": "Seismic Slam",
    "ability_cn": "裂地重拳",
@@ -3040,7 +4794,10 @@
    "text_cn": null,
    "before": 6.5,
    "after": 7.5,
-   "metric": "cooldown"
+   "by": 1.0,
+   "by_pct": null,
+   "metric": "cooldown",
+   "unit": "s"
   },
   {
    "patch": "en-2024-12-17-1",
@@ -3049,6 +4806,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/12",
    "patch_title": "Overwatch 2 6v6 Experiment – December 17, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "power-block",
    "ability_en": "Power Block",
    "ability_cn": "悍猛格挡",
@@ -3056,7 +4814,10 @@
    "text_cn": null,
    "before": 2.5,
    "after": 2.0,
-   "metric": "maximum duration"
+   "by": -0.5,
+   "by_pct": null,
+   "metric": "maximum duration",
+   "unit": null
   },
   {
    "patch": "en-2024-12-17-1",
@@ -3065,6 +4826,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/12",
    "patch_title": "Overwatch 2 6v6 Experiment – December 17, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "power-block",
    "ability_en": "Power Block",
    "ability_cn": "悍猛格挡",
@@ -3072,7 +4834,10 @@
    "text_cn": null,
    "before": 7.0,
    "after": 8.0,
-   "metric": "cooldown"
+   "by": 1.0,
+   "by_pct": null,
+   "metric": "cooldown",
+   "unit": "s"
   },
   {
    "patch": "en-2024-12-17-1",
@@ -3081,6 +4846,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/12",
    "patch_title": "Overwatch 2 6v6 Experiment – December 17, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "the-best-defense-passive",
    "ability_en": "The Best Defense (Passive)",
    "ability_cn": null,
@@ -3088,7 +4854,10 @@
    "text_cn": null,
    "before": 40.0,
    "after": 35.0,
-   "metric": "overhealth gained per target"
+   "by": -5.0,
+   "by_pct": null,
+   "metric": "overhealth",
+   "unit": "hp"
   },
   {
    "patch": "en-2024-12-17-1",
@@ -3097,6 +4866,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/12",
    "patch_title": "Overwatch 2 6v6 Experiment – December 17, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "the-best-defense-passive",
    "ability_en": "The Best Defense (Passive)",
    "ability_cn": null,
@@ -3104,7 +4874,10 @@
    "text_cn": null,
    "before": 200.0,
    "after": 150.0,
-   "metric": "maximum temporary health"
+   "by": -50.0,
+   "by_pct": null,
+   "metric": "maximum temporary health",
+   "unit": null
   },
   {
    "patch": "en-2024-12-17-1",
@@ -3113,8 +4886,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/12",
    "patch_title": "Overwatch 2 6v6 Experiment – December 17, 2024",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": "Base health increased from 375 to 425.",
-   "text_cn": null
+   "text_cn": null,
+   "before": 375.0,
+   "after": 425.0,
+   "by": 50.0,
+   "by_pct": null,
+   "metric": "base health",
+   "unit": null
   },
   {
    "patch": "en-2024-12-10-1",
@@ -3123,6 +4904,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/12",
    "patch_title": "Overwatch 2 Retail Patch Notes – December 10, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "seismic-slam",
    "ability_en": "Seismic Slam",
    "ability_cn": "裂地重拳",
@@ -3130,7 +4912,10 @@
    "text_cn": null,
    "before": 18.0,
    "after": 15.0,
-   "metric": "shockwave range"
+   "by": -3.0,
+   "by_pct": null,
+   "metric": "shockwave range",
+   "unit": null
   },
   {
    "patch": "en-2024-12-10-1",
@@ -3139,6 +4924,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/12",
    "patch_title": "Overwatch 2 Retail Patch Notes – December 10, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "seismic-slam",
    "ability_en": "Seismic Slam",
    "ability_cn": "裂地重拳",
@@ -3146,7 +4932,10 @@
    "text_cn": null,
    "before": 6.0,
    "after": 6.5,
-   "metric": "cooldown"
+   "by": 0.5,
+   "by_pct": null,
+   "metric": "cooldown",
+   "unit": "s"
   },
   {
    "patch": "en-2024-11-08-1",
@@ -3155,6 +4944,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/11",
    "patch_title": "Overwatch 2 Retail Patch Notes - November 12, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "rocket-punch",
    "ability_en": "Rocket Punch",
    "ability_cn": "火箭重拳",
@@ -3162,7 +4952,10 @@
    "text_cn": null,
    "before": 44.0,
    "after": 55.0,
-   "metric": "angle required for wall slam"
+   "by": 11.0,
+   "by_pct": null,
+   "metric": "angle required for wall slam",
+   "unit": null
   },
   {
    "patch": "en-2024-11-08-1",
@@ -3171,6 +4964,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/11",
    "patch_title": "Overwatch 2 Retail Patch Notes - November 12, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "meteor-strike",
    "ability_en": "Meteor Strike",
    "ability_cn": "毁天灭地",
@@ -3178,7 +4972,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": 8.0,
+   "metric": "ultimate_cost",
+   "unit": null
   },
   {
    "patch": "en-2024-11-08-1",
@@ -3187,6 +4984,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/11",
    "patch_title": "Overwatch 2 Retail Patch Notes - November 12, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "meteor-strike",
    "ability_en": "Meteor Strike",
    "ability_cn": "毁天灭地",
@@ -3194,7 +4992,10 @@
    "text_cn": null,
    "before": 75.0,
    "after": 90.0,
-   "metric": "healing per second while in the air"
+   "by": 15.0,
+   "by_pct": null,
+   "metric": "healing",
+   "unit": null
   },
   {
    "patch": "en-2024-07-05-1",
@@ -3203,6 +5004,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/07",
    "patch_title": "Overwatch 2 Retail Patch Notes – July 9, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "the-best-defense",
    "ability_en": "The Best Defense",
    "ability_cn": "最佳防守……",
@@ -3210,7 +5012,10 @@
    "text_cn": null,
    "before": 35.0,
    "after": 40.0,
-   "metric": "overhealth gained per target"
+   "by": 5.0,
+   "by_pct": null,
+   "metric": "overhealth",
+   "unit": "hp"
   },
   {
    "patch": "en-2024-07-05-1",
@@ -3219,6 +5024,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/07",
    "patch_title": "Overwatch 2 Retail Patch Notes – July 9, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "the-best-defense",
    "ability_en": "The Best Defense",
    "ability_cn": "最佳防守……",
@@ -3226,7 +5032,10 @@
    "text_cn": null,
    "before": 1.0,
    "after": 3.0,
-   "metric": "delay before overhealth begins to drain"
+   "by": 2.0,
+   "by_pct": null,
+   "metric": "delay before overhealth begins to drain",
+   "unit": null
   },
   {
    "patch": "en-2024-04-16-1",
@@ -3235,6 +5044,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/04",
    "patch_title": "Overwatch 2 Retail Patch Notes – April 16, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "rocket-punch",
    "ability_en": "Rocket Punch",
    "ability_cn": "火箭重拳",
@@ -3242,7 +5052,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2024-04-01-1",
@@ -3251,6 +5064,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/04",
    "patch_title": "Overwatch 2 Really, Really, Really Balanced Patch Notes - April 1, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "power-block",
    "ability_en": "Power Block",
    "ability_cn": "悍猛格挡",
@@ -3258,7 +5072,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2024-04-01-1",
@@ -3267,8 +5084,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/04",
    "patch_title": "Overwatch 2 Really, Really, Really Balanced Patch Notes - April 1, 2024",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Power Block and Meteor Strike also empower your next Quick Melee.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2024-03-08-1",
@@ -3277,6 +5102,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/03",
    "patch_title": "Overwatch 2 Retail Patch Notes – March 12, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "meteor-strike",
    "ability_en": "Meteor Strike",
    "ability_cn": "毁天灭地",
@@ -3284,7 +5110,10 @@
    "text_cn": null,
    "before": 15.0,
    "after": 50.0,
-   "metric": "minimum damage"
+   "by": 35.0,
+   "by_pct": null,
+   "metric": "minimum damage",
+   "unit": null
   },
   {
    "patch": "en-2024-02-13-1",
@@ -3293,6 +5122,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/02",
    "patch_title": "Overwatch 2 Retail Patch Notes – February 13, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "rocket-punch",
    "ability_en": "Rocket Punch",
    "ability_cn": "火箭重拳",
@@ -3300,7 +5130,10 @@
    "text_cn": null,
    "before": 50.0,
    "after": 75.0,
-   "metric": "max impact damage"
+   "by": 25.0,
+   "by_pct": null,
+   "metric": "max impact damage",
+   "unit": null
   },
   {
    "patch": "en-2024-02-13-1",
@@ -3309,6 +5142,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/02",
    "patch_title": "Overwatch 2 Retail Patch Notes – February 13, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "rocket-punch",
    "ability_en": "Rocket Punch",
    "ability_cn": "火箭重拳",
@@ -3316,7 +5150,10 @@
    "text_cn": null,
    "before": 30.0,
    "after": 40.0,
-   "metric": "max wall slam damage"
+   "by": 10.0,
+   "by_pct": null,
+   "metric": "max wall slam damage",
+   "unit": null
   },
   {
    "patch": "en-2024-02-13-1",
@@ -3325,8 +5162,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/02",
    "patch_title": "Overwatch 2 Retail Patch Notes – February 13, 2024",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": "Health increased from 300 to 375.",
-   "text_cn": null
+   "text_cn": null,
+   "before": 300.0,
+   "after": 375.0,
+   "by": 75.0,
+   "by_pct": null,
+   "metric": "health",
+   "unit": "hp"
   },
   {
    "patch": "en-2023-12-05-1",
@@ -3335,6 +5180,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/12",
    "patch_title": "Overwatch 2 Retail Patch Notes – December 5, 2023",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "meteor-strike",
    "ability_en": "Meteor Strike",
    "ability_cn": "毁天灭地",
@@ -3342,7 +5188,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2023-12-05-1",
@@ -3351,6 +5200,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/12",
    "patch_title": "Overwatch 2 Retail Patch Notes – December 5, 2023",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "meteor-strike",
    "ability_en": "Meteor Strike",
    "ability_cn": "毁天灭地",
@@ -3358,7 +5208,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": 16.0,
+   "metric": "ultimate_cost",
+   "unit": null
   },
   {
    "patch": "en-2023-10-31-1",
@@ -3367,6 +5220,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/10",
    "patch_title": "Overwatch 2 Retail Patch Notes - October 31, 2023",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "rocket-punch",
    "ability_en": "Rocket Punch",
    "ability_cn": "火箭重拳",
@@ -3374,7 +5228,10 @@
    "text_cn": null,
    "before": 0.25,
    "after": 0.15,
-   "metric": "minimum wall stun duration"
+   "by": -0.1,
+   "by_pct": null,
+   "metric": "minimum wall stun duration",
+   "unit": null
   },
   {
    "patch": "en-2023-10-31-1",
@@ -3383,6 +5240,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/10",
    "patch_title": "Overwatch 2 Retail Patch Notes - October 31, 2023",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "rocket-punch",
    "ability_en": "Rocket Punch",
    "ability_cn": "火箭重拳",
@@ -3390,7 +5248,10 @@
    "text_cn": null,
    "before": 0.75,
    "after": 0.6,
-   "metric": "maximum wall stun duration"
+   "by": -0.15,
+   "by_pct": null,
+   "metric": "maximum wall stun duration",
+   "unit": null
   },
   {
    "patch": "en-2023-10-31-1",
@@ -3399,8 +5260,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/10",
    "patch_title": "Overwatch 2 Retail Patch Notes - October 31, 2023",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Added the Hero-Specific Options:",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2023-10-31-1",
@@ -3409,8 +5278,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/10",
    "patch_title": "Overwatch 2 Retail Patch Notes - October 31, 2023",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Relative Aim Sensitivity During Power Block - 100% by default.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2023-10-31-1",
@@ -3419,8 +5296,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/10",
    "patch_title": "Overwatch 2 Retail Patch Notes - October 31, 2023",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Relative Gyro Aim Sensitivity During Power Block - 100% by default (Only available on gyro-supported platforms).",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2023-10-10-1",
@@ -3429,8 +5314,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/10",
    "patch_title": "Overwatch 2 Retail Patch Notes - October 10, 2023",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Added the hero-specific option:",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2023-10-10-1",
@@ -3439,8 +5332,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/10",
    "patch_title": "Overwatch 2 Retail Patch Notes - October 10, 2023",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Swap Meteor Strike Confirm and Zoom Out Inputs – Off by default.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2023-08-10-1",
@@ -3449,6 +5350,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/08",
    "patch_title": "Overwatch 2 Retail Patch Notes – August 10, 2023",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "seismic-slam",
    "ability_en": "Seismic Slam",
    "ability_cn": "裂地重拳",
@@ -3456,7 +5358,10 @@
    "text_cn": null,
    "before": 7.0,
    "after": 6.0,
-   "metric": "cooldown"
+   "by": -1.0,
+   "by_pct": null,
+   "metric": "cooldown",
+   "unit": "s"
   },
   {
    "patch": "en-2023-08-10-1",
@@ -3465,6 +5370,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/08",
    "patch_title": "Overwatch 2 Retail Patch Notes – August 10, 2023",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "power-block",
    "ability_en": "Power Block",
    "ability_cn": "悍猛格挡",
@@ -3472,7 +5378,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2023-05-09-1",
@@ -3481,8 +5390,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/05",
    "patch_title": "Overwatch 2 Retail Patch Notes - May 9, 2023",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Added the Hero-Specific Options:",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2023-05-09-1",
@@ -3491,8 +5408,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/05",
    "patch_title": "Overwatch 2 Retail Patch Notes - May 9, 2023",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Hand Cannon UI - On by default",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2023-05-09-1",
@@ -3501,8 +5426,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/05",
    "patch_title": "Overwatch 2 Retail Patch Notes - May 9, 2023",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Hold To Use Power Block - Off by default",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2023-05-09-1",
@@ -3511,8 +5444,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/05",
    "patch_title": "Overwatch 2 Retail Patch Notes - May 9, 2023",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Hide Power Block Cancel Text - Off by default",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2023-05-09-1",
@@ -3521,8 +5462,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/05",
    "patch_title": "Overwatch 2 Retail Patch Notes - May 9, 2023",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Hide Rocket Punch Meter - Off by default",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2023-05-09-1",
@@ -3531,8 +5480,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/05",
    "patch_title": "Overwatch 2 Retail Patch Notes - May 9, 2023",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Hide Rocket Punch Cancel Text - Off by default",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2023-02-07-1",
@@ -3541,8 +5498,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/02",
    "patch_title": "Overwatch 2 Retail Patch Notes - February 7, 2023",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": "Base health in Role Queue modes remains the same at 450",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2023-02-07-1",
@@ -3551,8 +5516,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/02",
    "patch_title": "Overwatch 2 Retail Patch Notes - February 7, 2023",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": "Base health in non-Role Queue modes reduced from 450 to 300",
-   "text_cn": null
+   "text_cn": null,
+   "before": 450.0,
+   "after": 300.0,
+   "by": -150.0,
+   "by_pct": null,
+   "metric": "base health in non-role queue modes",
+   "unit": null
   },
   {
    "patch": "en-2022-12-15-1",
@@ -3561,6 +5534,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2022/12",
    "patch_title": "Overwatch Retail Patch Notes - December 15, 2022",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "rocket-punch",
    "ability_en": "Rocket Punch",
    "ability_cn": "火箭重拳",
@@ -3568,7 +5542,10 @@
    "text_cn": null,
    "before": 3.0,
    "after": 4.0,
-   "metric": "cooldown"
+   "by": 1.0,
+   "by_pct": null,
+   "metric": "cooldown",
+   "unit": "s"
   },
   {
    "patch": "en-2022-12-15-1",
@@ -3577,6 +5554,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2022/12",
    "patch_title": "Overwatch Retail Patch Notes - December 15, 2022",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "power-block",
    "ability_en": "Power Block",
    "ability_cn": "悍猛格挡",
@@ -3584,7 +5562,10 @@
    "text_cn": null,
    "before": 80.0,
    "after": 100.0,
-   "metric": "minimum damage mitigated required to empower rocket punch"
+   "by": 20.0,
+   "by_pct": null,
+   "metric": "minimum damage mitigated required to empower rocket punch",
+   "unit": null
   },
   {
    "patch": "en-2022-12-15-1",
@@ -3593,6 +5574,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2022/12",
    "patch_title": "Overwatch Retail Patch Notes - December 15, 2022",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "the-best-defense",
    "ability_en": "The Best Defense",
    "ability_cn": "最佳防守……",
@@ -3600,7 +5582,10 @@
    "text_cn": null,
    "before": 40.0,
    "after": 35.0,
-   "metric": "temporary health gained per target hit with abilities"
+   "by": -5.0,
+   "by_pct": null,
+   "metric": "temporary health gained per target hit with abilities",
+   "unit": null
   },
   {
    "patch": "en-2022-12-06-1",
@@ -3609,6 +5594,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2022/12",
    "patch_title": "Overwatch 2 Retail Patch Notes - December 6, 2022",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "rocket-punch",
    "ability_en": "Rocket Punch",
    "ability_cn": "火箭重拳",
@@ -3616,7 +5602,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2022-12-06-1",
@@ -3625,6 +5614,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2022/12",
    "patch_title": "Overwatch 2 Retail Patch Notes - December 6, 2022",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "rocket-punch",
    "ability_en": "Rocket Punch",
    "ability_cn": "火箭重拳",
@@ -3632,7 +5622,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2022-12-06-1",
@@ -3641,6 +5634,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2022/12",
    "patch_title": "Overwatch 2 Retail Patch Notes - December 6, 2022",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "rocket-punch",
    "ability_en": "Rocket Punch",
    "ability_cn": "火箭重拳",
@@ -3648,7 +5642,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2022-12-06-1",
@@ -3657,6 +5654,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2022/12",
    "patch_title": "Overwatch 2 Retail Patch Notes - December 6, 2022",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "rocket-punch",
    "ability_en": "Rocket Punch",
    "ability_cn": "火箭重拳",
@@ -3664,7 +5662,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2022-12-06-1",
@@ -3673,6 +5674,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2022/12",
    "patch_title": "Overwatch 2 Retail Patch Notes - December 6, 2022",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "rocket-punch",
    "ability_en": "Rocket Punch",
    "ability_cn": "火箭重拳",
@@ -3680,7 +5682,10 @@
    "text_cn": null,
    "before": 4.0,
    "after": 3.0,
-   "metric": "empowered rocket punch knockback radius"
+   "by": -1.0,
+   "by_pct": null,
+   "metric": "empowered rocket punch knockback radius",
+   "unit": null
   },
   {
    "patch": "en-2022-12-06-1",
@@ -3689,6 +5694,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2022/12",
    "patch_title": "Overwatch 2 Retail Patch Notes - December 6, 2022",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "rocket-punch",
    "ability_en": "Rocket Punch",
    "ability_cn": "火箭重拳",
@@ -3696,7 +5702,10 @@
    "text_cn": null,
    "before": 0.25,
    "after": 0.12,
-   "metric": "minimum time before cancel option becomes available"
+   "by": -0.13,
+   "by_pct": null,
+   "metric": "minimum time before cancel option becomes available",
+   "unit": null
   },
   {
    "patch": "en-2022-12-06-1",
@@ -3705,6 +5714,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2022/12",
    "patch_title": "Overwatch 2 Retail Patch Notes - December 6, 2022",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "rocket-punch",
    "ability_en": "Rocket Punch",
    "ability_cn": "火箭重拳",
@@ -3712,7 +5722,10 @@
    "text_cn": null,
    "before": 4.0,
    "after": 3.0,
-   "metric": "cooldown"
+   "by": -1.0,
+   "by_pct": null,
+   "metric": "cooldown",
+   "unit": "s"
   },
   {
    "patch": "en-2022-12-06-1",
@@ -3721,6 +5734,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2022/12",
    "patch_title": "Overwatch 2 Retail Patch Notes - December 6, 2022",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "rocket-punch",
    "ability_en": "Rocket Punch",
    "ability_cn": "火箭重拳",
@@ -3728,7 +5742,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2022-12-06-1",
@@ -3737,6 +5754,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2022/12",
    "patch_title": "Overwatch 2 Retail Patch Notes - December 6, 2022",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "power-block",
    "ability_en": "Power Block",
    "ability_cn": "悍猛格挡",
@@ -3744,7 +5762,10 @@
    "text_cn": null,
    "before": 8.0,
    "after": 7.0,
-   "metric": "cooldown"
+   "by": -1.0,
+   "by_pct": null,
+   "metric": "cooldown",
+   "unit": "s"
   },
   {
    "patch": "en-2022-12-06-1",
@@ -3753,6 +5774,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2022/12",
    "patch_title": "Overwatch 2 Retail Patch Notes - December 6, 2022",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "power-block",
    "ability_en": "Power Block",
    "ability_cn": "悍猛格挡",
@@ -3760,7 +5782,10 @@
    "text_cn": null,
    "before": 2.0,
    "after": 2.5,
-   "metric": "duration"
+   "by": 0.5,
+   "by_pct": null,
+   "metric": "duration",
+   "unit": "s"
   },
   {
    "patch": "en-2022-12-06-1",
@@ -3769,6 +5794,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2022/12",
    "patch_title": "Overwatch 2 Retail Patch Notes - December 6, 2022",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "power-block",
    "ability_en": "Power Block",
    "ability_cn": "悍猛格挡",
@@ -3776,7 +5802,10 @@
    "text_cn": null,
    "before": 90.0,
    "after": 80.0,
-   "metric": "minimum damage mitigated required to empower rocket punch"
+   "by": -10.0,
+   "by_pct": null,
+   "metric": "minimum damage mitigated required to empower rocket punch",
+   "unit": null
   },
   {
    "patch": "en-2022-12-06-1",
@@ -3785,6 +5814,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2022/12",
    "patch_title": "Overwatch 2 Retail Patch Notes - December 6, 2022",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "meteor-strike",
    "ability_en": "Meteor Strike",
    "ability_cn": "毁天灭地",
@@ -3792,7 +5822,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2022-12-06-1",
@@ -3801,6 +5834,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2022/12",
    "patch_title": "Overwatch 2 Retail Patch Notes - December 6, 2022",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "meteor-strike",
    "ability_en": "Meteor Strike",
    "ability_cn": "毁天灭地",
@@ -3808,7 +5842,10 @@
    "text_cn": null,
    "before": 2.0,
    "after": 3.0,
-   "metric": "enemy slow duration"
+   "by": 1.0,
+   "by_pct": null,
+   "metric": "enemy slow duration",
+   "unit": null
   },
   {
    "patch": "en-2022-12-06-1",
@@ -3817,6 +5854,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2022/12",
    "patch_title": "Overwatch 2 Retail Patch Notes - December 6, 2022",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "the-best-defense",
    "ability_en": "The Best Defense",
    "ability_cn": "最佳防守……",
@@ -3824,7 +5862,10 @@
    "text_cn": null,
    "before": 150.0,
    "after": 200.0,
-   "metric": "maximum temporary health"
+   "by": 50.0,
+   "by_pct": null,
+   "metric": "maximum temporary health",
+   "unit": null
   },
   {
    "patch": "en-2022-12-06-1",
@@ -3833,6 +5874,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2022/12",
    "patch_title": "Overwatch 2 Retail Patch Notes - December 6, 2022",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "the-best-defense",
    "ability_en": "The Best Defense",
    "ability_cn": "最佳防守……",
@@ -3840,7 +5882,10 @@
    "text_cn": null,
    "before": 30.0,
    "after": 40.0,
-   "metric": "temporary health gained per target hit with abilities"
+   "by": 10.0,
+   "by_pct": null,
+   "metric": "temporary health gained per target hit with abilities",
+   "unit": null
   },
   {
    "patch": "en-2021-08-05-1",
@@ -3849,6 +5894,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2021/08",
    "patch_title": "Overwatch Retail Patch Notes – August 5th, 2021",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "meteor-strike",
    "ability_en": "Meteor Strike",
    "ability_cn": "毁天灭地",
@@ -3856,7 +5902,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2020-05-19-1",
@@ -3865,6 +5914,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2020/05",
    "patch_title": "Overwatch Retail Patch Notes – May 19, 2020",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "seismic-slam",
    "ability_en": "Seismic Slam",
    "ability_cn": "裂地重拳",
@@ -3872,7 +5922,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2020-05-19-1",
@@ -3881,6 +5934,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2020/05",
    "patch_title": "Overwatch Retail Patch Notes – May 19, 2020",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "seismic-slam",
    "ability_en": "Seismic Slam",
    "ability_cn": "裂地重拳",
@@ -3888,7 +5942,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2020-05-19-1",
@@ -3897,6 +5954,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2020/05",
    "patch_title": "Overwatch Retail Patch Notes – May 19, 2020",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "seismic-slam",
    "ability_en": "Seismic Slam",
    "ability_cn": "裂地重拳",
@@ -3904,7 +5962,238 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   }
- ]
+ ],
+ "values": {
+  "seismic-slam:damage": [
+   {
+    "date": "2026-08-11",
+    "value": 60.0
+   },
+   {
+    "date": "2026-08-12",
+    "value": 60.0
+   }
+  ],
+  "the-best-defense:获得的过量生命值": [
+   {
+    "date": "2026-07-31",
+    "value": 30.0
+   }
+  ],
+  "the-best-defense:shield": [
+   {
+    "date": "2026-07-30",
+    "value": 30.0
+   }
+  ],
+  "rocket-punch:附带伤害范围加成": [
+   {
+    "date": "2026-07-15",
+    "value": 40.0
+   }
+  ],
+  "rocket-punch:附带伤害半径加成": [
+   {
+    "date": "2026-07-15",
+    "value": 40.0
+   }
+  ],
+  "the-best-defense:的效果": [
+   {
+    "date": "2026-06-17",
+    "value": 50.0
+   }
+  ],
+  "attr:health:overhealth": [
+   {
+    "date": "2025-11-06",
+    "value": 25.0
+   }
+  ],
+  "seismic-slam:cooldown": [
+   {
+    "date": "2023-08-10",
+    "value": 6.0
+   },
+   {
+    "date": "2024-12-10",
+    "value": 6.5
+   },
+   {
+    "date": "2024-12-17",
+    "value": 7.5
+   }
+  ],
+  "power-block:maximum duration": [
+   {
+    "date": "2024-12-17",
+    "value": 2.0
+   }
+  ],
+  "power-block:cooldown": [
+   {
+    "date": "2022-12-06",
+    "value": 7.0
+   },
+   {
+    "date": "2024-12-17",
+    "value": 8.0
+   }
+  ],
+  "the-best-defense-passive:overhealth": [
+   {
+    "date": "2024-12-17",
+    "value": 35.0
+   }
+  ],
+  "the-best-defense-passive:maximum temporary health": [
+   {
+    "date": "2024-12-17",
+    "value": 150.0
+   }
+  ],
+  "attr:health:base health": [
+   {
+    "date": "2024-12-17",
+    "value": 425.0
+   }
+  ],
+  "seismic-slam:shockwave range": [
+   {
+    "date": "2024-12-10",
+    "value": 15.0
+   }
+  ],
+  "rocket-punch:angle required for wall slam": [
+   {
+    "date": "2024-11-08",
+    "value": 55.0
+   }
+  ],
+  "meteor-strike:healing": [
+   {
+    "date": "2024-11-08",
+    "value": 90.0
+   }
+  ],
+  "the-best-defense:overhealth": [
+   {
+    "date": "2024-07-05",
+    "value": 40.0
+   }
+  ],
+  "the-best-defense:delay before overhealth begins to drain": [
+   {
+    "date": "2024-07-05",
+    "value": 3.0
+   }
+  ],
+  "meteor-strike:minimum damage": [
+   {
+    "date": "2024-03-08",
+    "value": 50.0
+   }
+  ],
+  "rocket-punch:max impact damage": [
+   {
+    "date": "2024-02-13",
+    "value": 75.0
+   }
+  ],
+  "rocket-punch:max wall slam damage": [
+   {
+    "date": "2024-02-13",
+    "value": 40.0
+   }
+  ],
+  "attr:health:health": [
+   {
+    "date": "2024-02-13",
+    "value": 375.0
+   }
+  ],
+  "rocket-punch:minimum wall stun duration": [
+   {
+    "date": "2023-10-31",
+    "value": 0.15
+   }
+  ],
+  "rocket-punch:maximum wall stun duration": [
+   {
+    "date": "2023-10-31",
+    "value": 0.6
+   }
+  ],
+  "attr:health:base health in non-role queue modes": [
+   {
+    "date": "2023-02-07",
+    "value": 300.0
+   }
+  ],
+  "rocket-punch:cooldown": [
+   {
+    "date": "2022-12-06",
+    "value": 3.0
+   },
+   {
+    "date": "2022-12-15",
+    "value": 4.0
+   }
+  ],
+  "power-block:minimum damage mitigated required to empower rocket punch": [
+   {
+    "date": "2022-12-06",
+    "value": 80.0
+   },
+   {
+    "date": "2022-12-15",
+    "value": 100.0
+   }
+  ],
+  "the-best-defense:temporary health gained per target hit with abilities": [
+   {
+    "date": "2022-12-06",
+    "value": 40.0
+   },
+   {
+    "date": "2022-12-15",
+    "value": 35.0
+   }
+  ],
+  "rocket-punch:empowered rocket punch knockback radius": [
+   {
+    "date": "2022-12-06",
+    "value": 3.0
+   }
+  ],
+  "rocket-punch:minimum time before cancel option becomes available": [
+   {
+    "date": "2022-12-06",
+    "value": 0.12
+   }
+  ],
+  "power-block:duration": [
+   {
+    "date": "2022-12-06",
+    "value": 2.5
+   }
+  ],
+  "meteor-strike:enemy slow duration": [
+   {
+    "date": "2022-12-06",
+    "value": 3.0
+   }
+  ],
+  "the-best-defense:maximum temporary health": [
+   {
+    "date": "2022-12-06",
+    "value": 200.0
+   }
+  ]
+ }
 }

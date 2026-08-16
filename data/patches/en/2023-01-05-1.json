@@ -55,7 +55,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -69,7 +73,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -83,14 +91,22 @@
          "text_cn": null,
          "before": 80.0,
          "after": 50.0,
-         "metric": "thrown impact damage"
+         "metric": "thrown impact damage",
+         "by": -30.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "thrown impact damage"
         },
         {
          "text_en": "Thrown direct impacts now add a 30 damage wound to the stuck target. Stacks with wounds caused by Quick Melee or returning Jagged Blade hits.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -115,14 +131,22 @@
          "text_cn": null,
          "before": 2.2,
          "after": 2.0,
-         "metric": "energy degeneration"
+         "metric": "energy degeneration",
+         "by": -0.2,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "energy degeneration"
         },
         {
          "text_en": "Delay before energy degeneration begins after gaining energy increased from 1 to 2 seconds",
          "text_cn": null,
          "before": 1.0,
          "after": 2.0,
-         "metric": "delay before energy degeneration begins after gaining energy"
+         "metric": "delay before energy degeneration begins after gaining energy",
+         "by": 1.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "delay before energy degeneration begins after gaining energy"
         }
        ]
       }
@@ -156,7 +180,11 @@
          "text_cn": null,
          "before": 250.0,
          "after": 300.0,
-         "metric": "health"
+         "metric": "health",
+         "by": 50.0,
+         "by_pct": null,
+         "unit": "hp",
+         "raw_metric": "health"
         }
        ]
       }
@@ -181,7 +209,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -216,5 +248,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:73512b6c4253ece6eece1c510a854e615e46cb557781976abdf7fe32a7ea6f8c"
+ "hash": "sha256:3497b448d1bceb6fc71a2e20db336fbe79f979ddfd960d654300e50f1f5af6ce"
 }

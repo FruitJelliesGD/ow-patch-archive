@@ -45,7 +45,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -58,7 +62,18 @@
      "role": "support",
      "dev_note": "Brigitte was a likely candidate when looking at close range heroes to receive a health adjustment while experimenting with 25 HP increments. This ended up being too powerful when combined with her self-healing and barrier.",
      "general": [
-      "Base health reduced from 175 to 150"
+      {
+       "text_en": "Base health reduced from 175 to 150",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 175.0,
+       "after": 150.0,
+       "by": -25.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -82,7 +97,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -107,7 +126,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -130,9 +153,13 @@
         {
          "text_en": "Healing resource consumption rate lowered from 14 to 12.5",
          "text_cn": null,
-         "before": null,
-         "after": null,
-         "metric": null
+         "before": 14.0,
+         "after": 12.5,
+         "metric": "healing",
+         "by": -1.5,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "healing resource consumption rate"
         }
        ]
       }
@@ -157,7 +184,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -182,7 +213,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -193,5 +228,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:5b7540d6b4d314425b2b0af9590b5c7235c6b6d53c024ddbc9e1dda61e22fe36"
+ "hash": "sha256:1fef0905ef1fe04fd25d7c2611ee63c73ab35d69c59f853bb1715778f09fbb04"
 }

@@ -83,9 +83,42 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Armor health reduced from 325 to 300.",
-      "Energy Javelin - Secondary Ability",
-      "Cooldown increased from 6 to 7 seconds."
+      {
+       "text_en": "Armor health reduced from 325 to 300.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 325.0,
+       "after": 300.0,
+       "by": -25.0,
+       "by_pct": null,
+       "metric": "armor",
+       "unit": "hp"
+      },
+      {
+       "text_en": "Energy Javelin - Secondary Ability",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Cooldown increased from 6 to 7 seconds.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 6.0,
+       "after": 7.0,
+       "by": 1.0,
+       "by_pct": null,
+       "metric": "cooldown",
+       "unit": "s"
+      }
      ],
      "perks": [],
      "abilities": []
@@ -117,8 +150,30 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Experimental Barrier - Secondary Ability",
-      "Deployment cooldown reduced from 2 to 1 second."
+      {
+       "text_en": "Experimental Barrier - Secondary Ability",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Deployment cooldown reduced from 2 to 1 second.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 2.0,
+       "after": 1.0,
+       "by": -1.0,
+       "by_pct": null,
+       "metric": "deployment cooldown",
+       "unit": null
+      }
      ],
      "perks": [
       {
@@ -198,8 +253,30 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Configuration: Artillery - Ultimate Ability",
-      "Ultimate cost reduced 7%."
+      {
+       "text_en": "Configuration: Artillery - Ultimate Ability",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Ultimate cost reduced 7%.",
+       "text_cn": null,
+       "subject": "ultimate_cost",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 7.0,
+       "metric": "ultimate_cost",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -211,9 +288,42 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Revdraw Crossbow - Primary Fire",
-      "Primary fire damage reduced from 30 to 25.",
-      "Maximum ammo increased from 12 to 15."
+      {
+       "text_en": "Revdraw Crossbow - Primary Fire",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Primary fire damage reduced from 30 to 25.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 30.0,
+       "after": 25.0,
+       "by": -5.0,
+       "by_pct": null,
+       "metric": "primary fire damage",
+       "unit": null
+      },
+      {
+       "text_en": "Maximum ammo increased from 12 to 15.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 12.0,
+       "after": 15.0,
+       "by": 3.0,
+       "by_pct": null,
+       "metric": "maximum ammo",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -225,11 +335,66 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Storm Bow - Primary Fire",
-      "Bases projectile size increased from 0.1 to 0.125 meters.",
-      "Dragonstrike - Ultimate Ability",
-      "Ultimate cost reduced 8%.",
-      "Damage per second increased from 300 to 400."
+      {
+       "text_en": "Storm Bow - Primary Fire",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Bases projectile size increased from 0.1 to 0.125 meters.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 0.1,
+       "after": 0.125,
+       "by": 0.025,
+       "by_pct": null,
+       "metric": "bases projectile size",
+       "unit": null
+      },
+      {
+       "text_en": "Dragonstrike - Ultimate Ability",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Ultimate cost reduced 8%.",
+       "text_cn": null,
+       "subject": "ultimate_cost",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 8.0,
+       "metric": "ultimate_cost",
+       "unit": null
+      },
+      {
+       "text_en": "Damage per second increased from 300 to 400.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 300.0,
+       "after": 400.0,
+       "by": 100.0,
+       "by_pct": null,
+       "metric": "damage",
+       "unit": null
+      }
      ],
      "perks": [
       {
@@ -289,8 +454,30 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Death Blossom - Ultimate Ability",
-      "Ultimate cost increased 9%."
+      {
+       "text_en": "Death Blossom - Ultimate Ability",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Ultimate cost increased 9%.",
+       "text_cn": null,
+       "subject": "ultimate_cost",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 9.0,
+       "metric": "ultimate_cost",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -302,8 +489,30 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Pulse Pistols",
-      "Spread increased from 3.0 to 3.5 degrees."
+      {
+       "text_en": "Pulse Pistols",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Spread increased from 3.0 to 3.5 degrees.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 3.0,
+       "after": 3.5,
+       "by": 0.5,
+       "by_pct": null,
+       "metric": "spread",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -315,8 +524,30 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Infra-Sight - Ultimate Ability",
-      "Ultimate cost decreased 10%."
+      {
+       "text_en": "Infra-Sight - Ultimate Ability",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Ultimate cost decreased 10%.",
+       "text_cn": null,
+       "subject": "ultimate_cost",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 10.0,
+       "metric": "ultimate_cost",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -337,10 +568,54 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "Mediblaster - Primary Fire",
-      "Minimum falloff range increased from 20 to 25 meters.",
-      "Glide Boost - Ability 1",
-      "Movement acceleration in air reduced when changing directions, after the initial movement burst."
+      {
+       "text_en": "Mediblaster - Primary Fire",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Minimum falloff range increased from 20 to 25 meters.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 20.0,
+       "after": 25.0,
+       "by": 5.0,
+       "by_pct": null,
+       "metric": "minimum falloff range",
+       "unit": null
+      },
+      {
+       "text_en": "Glide Boost - Ability 1",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Movement acceleration in air reduced when changing directions, after the initial movement burst.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -352,8 +627,30 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "Sound Barrier",
-      "Ultimate cost increased 9%."
+      {
+       "text_en": "Sound Barrier",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Ultimate cost increased 9%.",
+       "text_cn": null,
+       "subject": "ultimate_cost",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 9.0,
+       "metric": "ultimate_cost",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -365,10 +662,54 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "Harmony Orb",
-      "Healing increased from 30 to 35 health per second.",
-      "Transcendence",
-      "Healing per second increased from 300 to 400."
+      {
+       "text_en": "Harmony Orb",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Healing increased from 30 to 35 health per second.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 30.0,
+       "after": 35.0,
+       "by": 5.0,
+       "by_pct": null,
+       "metric": "healing",
+       "unit": null
+      },
+      {
+       "text_en": "Transcendence",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Healing per second increased from 300 to 400.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 300.0,
+       "after": 400.0,
+       "by": 100.0,
+       "by_pct": null,
+       "metric": "healing",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -432,17 +773,107 @@
      "role": "tank",
      "dev_note": "Developer Comments: D.Va has been having a tough time in early rounds, especially against beam-heavy heroes that counter her defensive tools. To address this, we're introducing a new hero item aimed at improving her effectiveness in those matchups. Additionally, her solo survivability has been lagging behind other tanks, so this patch includes improvements to help her stay in the fight longer and thrive even without immediate team support.",
      "general": [
-      "TOKKI Slam - Power",
-      "Now the damage scales from both armor and shield combined.",
-      "Facetanking - Power",
-      "Increased healing scalar to 50% (up from 30%).",
-      "Refraction Armor - Normal Survival Hero Item",
-      "New Hero Item",
-      "+25 Armor",
-      "While you have Armor, gain 15% damage reduction against beams.",
-      "Cost: 2000"
+      {
+       "text_en": "Now the damage scales from both armor and shield combined.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Increased healing scalar to 50% (up from 30%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Refraction Armor - Normal Survival Hero Item",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "New Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "+25 Armor",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "While you have Armor, gain 15% damage reduction against beams.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Cost: 2000",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "TOKKI Slam",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Facetanking",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     },
     {
@@ -452,14 +883,71 @@
      "role": "tank",
      "dev_note": "Developer Comments: Orisa’s javelin-focused build has been effective at disrupting enemies, but it also came with some clunky interactions that impacted its reliability and clarity. This patch addresses those rough edges to smooth out the experience and help her disruption tools to feel more responsive and intuitive to use.",
      "general": [
-      "Advanced Throwbotics - Power",
-      "Now shoots the javelin after 0.5s and the Javelin Spin must be ongoing to shoot. Canceling Javelin Spin will also cancel shooting the javelin.",
-      "Lassoed - Power",
-      "If a javelin hits an enemy, nearby enemies are pulled to the enemy's position now instead of where it was hit.",
-      "If a javelin hits the environment, it just pulls nearby enemies.",
-      "If a javelin hits a barrier, the pull will not activate."
+      {
+       "text_en": "Now shoots the javelin after 0.5s and the Javelin Spin must be ongoing to shoot. Canceling Javelin Spin will also cancel shooting the javelin.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "If a javelin hits an enemy, nearby enemies are pulled to the enemy's position now instead of where it was hit.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "If a javelin hits the environment, it just pulls nearby enemies.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "If a javelin hits a barrier, the pull will not activate.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Advanced Throwbotics",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Lassoed",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     }
    ],
@@ -478,10 +966,28 @@
      "role": "damage",
      "dev_note": "Developer Comments: This update improves its consistency so you can land those chilly plays more reliably. Enjoy freezing the competition!",
      "general": [
-      "Slowball - Power",
-      "Now normal hit with Secondary Fire will also apply slow to the hit enemy."
+      {
+       "text_en": "Now normal hit with Secondary Fire will also apply slow to the hit enemy.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Slowball",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     }
    ],
@@ -500,8 +1006,30 @@
      "role": "support",
      "dev_note": "Developer Comments: Ana has struggled to make an impact in the late game with unscoped weapon power build. This new epic item is designed to address that, giving her the tools to become a more reliable formidable threat.",
      "general": [
-      "Unscoped Resources - Epic Weapon Hero Item",
-      "Added +15% Weapon Power."
+      {
+       "text_en": "Unscoped Resources - Epic Weapon Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Added +15% Weapon Power.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -513,10 +1041,28 @@
      "role": "support",
      "dev_note": "Developer Comments: Stellar Focus lacked a clear standout strength compared to other power options, often feeling underwhelming in practice. This update aims to give it a more defined impact, helping it stand out as a meaningful and competitive choice in your build.",
      "general": [
-      "Stellar Focus - Power",
-      "Increased duration to 50% (Up from 35%)."
+      {
+       "text_en": "Increased duration to 50% (Up from 35%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Stellar Focus",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     },
     {
@@ -526,16 +1072,90 @@
      "role": "support",
      "dev_note": "Developer Comments: Kiriko’s clone is reworked to serve a more utility-focused role, rather than functioning as the overly lethal auto-turret it once was. This change should help her contribute more reliably to team utility and generate Stadium Cash more consistently. In addition, Fleet Foot has been updated based on popular feedback, requiring a bit more commitment when diving into the backline, reinforcing the risk-reward dynamic of aggressive plays.",
      "general": [
-      "Clone Conjuration - Power",
-      "Now the Clone's heal and damage contributes to earning Stadium Cash.",
-      "Now there is a short delay before the Clone starts healing or dealing damage after being spawned.",
-      "Clone's health has been reduced and can be increased by Ability Power.",
-      "Fleet Foot - Power",
-      "Swift Step cooldown is increased by 30% when used without a target.",
-      "Foxy Fireworks - Power",
-      "Projectile speed is now the same as regular kunai."
+      {
+       "text_en": "Now the Clone's heal and damage contributes to earning Stadium Cash.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Now there is a short delay before the Clone starts healing or dealing damage after being spawned.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Clone's health has been reduced and can be increased by Ability Power.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Swift Step cooldown is increased by 30% when used without a target.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 30.0,
+       "metric": "swift step cooldown is",
+       "unit": null
+      },
+      {
+       "text_en": "Projectile speed is now the same as regular kunai.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Clone Conjuration",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Fleet Foot",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Foxy Fireworks",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     }
    ],
@@ -586,5 +1206,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:b8048b940041652ed7ebbb5e2ce89b12d9896c1c06f0fc4ae31ee1d954b1cf02"
+ "hash": "sha256:93144ab2b8af15b82b9fc3ae765bef7096b21b288ae58838c997711ca5b428b6"
 }

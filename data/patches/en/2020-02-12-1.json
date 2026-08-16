@@ -39,7 +39,11 @@
          "text_cn": null,
          "before": 0.3,
          "after": 0.4,
-         "metric": "allied projectile size"
+         "metric": "allied projectile size",
+         "by": 0.1,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "allied projectile size"
         }
        ]
       }
@@ -62,16 +66,24 @@
         {
          "text_en": "Armor over-heal reduced from 75 armor to 50 armor",
          "text_cn": null,
-         "before": null,
-         "after": null,
-         "metric": null
+         "before": 75.0,
+         "after": 50.0,
+         "metric": "armor",
+         "by": -25.0,
+         "by_pct": null,
+         "unit": "hp",
+         "raw_metric": "armor over-heal"
         },
         {
          "text_en": "HPS decreased from 60 to 55",
          "text_cn": null,
          "before": 60.0,
          "after": 55.0,
-         "metric": "hps"
+         "metric": "hps",
+         "by": -5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "hps"
         }
        ]
       }
@@ -96,7 +108,11 @@
          "text_cn": null,
          "before": 120.0,
          "after": 140.0,
-         "metric": "damage"
+         "metric": "damage",
+         "by": 20.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage"
         }
        ]
       },
@@ -110,7 +126,11 @@
          "text_cn": null,
          "before": 34.0,
          "after": 30.0,
-         "metric": "turret dps"
+         "metric": "turret dps",
+         "by": -4.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "turret dps"
         }
        ]
       }
@@ -133,9 +153,13 @@
         {
          "text_en": "Full charge time for scoped shots increased from 0.75 sec to 0.9 sec",
          "text_cn": null,
-         "before": null,
-         "after": null,
-         "metric": null
+         "before": 0.75,
+         "after": 0.9,
+         "metric": "full charge time for scoped shots",
+         "by": 0.15,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "full charge time for scoped shots"
         }
        ]
       }
@@ -158,9 +182,13 @@
         {
          "text_en": "Affected players’ loss of air control reduced from 1 second to 0.5 seconds",
          "text_cn": null,
-         "before": null,
-         "after": null,
-         "metric": null
+         "before": 1.0,
+         "after": 0.5,
+         "metric": "loss of air control",
+         "by": -0.5,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "loss of air control"
         }
        ]
       }
@@ -171,5 +199,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:dcb1563db75168efde9881aba4f8a8228dd897f754d61b865fc797c02c68977f"
+ "hash": "sha256:aded10fe6e9ffa6ab78d2010a43020300beeaeb1b0e540371233a362ac7c4de2"
 }

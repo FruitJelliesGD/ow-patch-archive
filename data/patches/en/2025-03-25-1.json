@@ -47,7 +47,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -61,14 +65,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "ultimate_cost",
+         "by": null,
+         "by_pct": 8.0,
+         "unit": null,
+         "raw_metric": "ultimate cost"
         },
         {
          "text_en": "Barrier health reduced from 1500 to 1200 HP.",
          "text_cn": null,
          "before": 1500.0,
          "after": 1200.0,
-         "metric": "barrier health"
+         "metric": "barrier",
+         "by": -300.0,
+         "by_pct": null,
+         "unit": "hp",
+         "raw_metric": "barrier health"
         }
        ]
       },
@@ -82,7 +94,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -107,7 +123,11 @@
          "text_cn": null,
          "before": 400.0,
          "after": 450.0,
-         "metric": "maximum healing"
+         "metric": "maximum healing",
+         "by": 50.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "maximum healing"
         }
        ]
       },
@@ -121,7 +141,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "ultimate_cost",
+         "by": null,
+         "by_pct": 12.0,
+         "unit": null,
+         "raw_metric": "ultimate cost"
         }
        ]
       }
@@ -146,7 +170,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "ultimate_cost",
+         "by": null,
+         "by_pct": 10.0,
+         "unit": null,
+         "raw_metric": "ultimate cost"
         }
        ]
       }
@@ -171,7 +199,11 @@
          "text_cn": null,
          "before": 2.0,
          "after": 2.5,
-         "metric": "degeneration rate"
+         "metric": "degeneration rate",
+         "by": 0.5,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "degeneration rate"
         }
        ]
       }
@@ -205,14 +237,22 @@
          "text_cn": null,
          "before": 20.0,
          "after": 25.0,
-         "metric": "primary fire falloff range"
+         "metric": "primary fire falloff range",
+         "by": 5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "primary fire falloff range"
         },
         {
          "text_en": "Secondary fire damage increased from 45 to 50.",
          "text_cn": null,
          "before": 45.0,
          "after": 50.0,
-         "metric": "secondary fire damage"
+         "metric": "secondary fire damage",
+         "by": 5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "secondary fire damage"
         }
        ]
       }
@@ -225,8 +265,30 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Base health reduced from 225 to 150.",
-      "Shield health increased from 0 to 75."
+      {
+       "text_en": "Base health reduced from 225 to 150.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 225.0,
+       "after": 150.0,
+       "by": -75.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      },
+      {
+       "text_en": "Shield health increased from 0 to 75.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 0.0,
+       "after": 75.0,
+       "by": 75.0,
+       "by_pct": null,
+       "metric": "shield",
+       "unit": "hp"
+      }
      ],
      "perks": [],
      "abilities": []
@@ -250,7 +312,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -275,14 +341,22 @@
          "text_cn": null,
          "before": 7.0,
          "after": 8.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": 1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         },
         {
          "text_en": "Maximum duration reduced from 1.2 to 1 second.",
          "text_cn": null,
          "before": 1.2,
          "after": 1.0,
-         "metric": "maximum duration"
+         "metric": "maximum duration",
+         "by": -0.2,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "maximum duration"
         }
        ]
       }
@@ -295,7 +369,18 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Base health increased from 200 to 225 HP."
+      {
+       "text_en": "Base health increased from 200 to 225 HP.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 200.0,
+       "after": 225.0,
+       "by": 25.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -328,14 +413,22 @@
          "text_cn": null,
          "before": 12.0,
          "after": 14.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": 2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         },
         {
          "text_en": "Cooldown increased from 10 to 12 seconds for 6v6 games modes.",
          "text_cn": null,
          "before": 10.0,
          "after": 12.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": 2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       },
@@ -349,7 +442,11 @@
          "text_cn": null,
          "before": 8.0,
          "after": 6.0,
-         "metric": "nano boost duration"
+         "metric": "self-nano boost duration",
+         "by": -2.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "self-nano boost duration"
         }
        ]
       }
@@ -374,7 +471,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "ultimate_cost",
+         "by": null,
+         "by_pct": 10.0,
+         "unit": null,
+         "raw_metric": "ultimate cost"
         }
        ]
       }
@@ -385,5 +486,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:427b060ff6b2d4379030a079af07a9a5306815b8670e17fe0fec638f07abeec8"
+ "hash": "sha256:1004b6da6c77b5e5727e75a0c34fce9e5aeb15df43858d6ff54e0b0d763f3de1"
 }

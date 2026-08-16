@@ -104,7 +104,11 @@
          "text_cn": null,
          "before": 3.75,
          "after": 3.375,
-         "metric": "weapon spread"
+         "metric": "weapon spread",
+         "by": -0.375,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "weapon spread"
         }
        ]
       },
@@ -118,7 +122,11 @@
          "text_cn": null,
          "before": 15.0,
          "after": 25.0,
-         "metric": "impact damage"
+         "metric": "impact damage",
+         "by": 10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "impact damage"
         }
        ]
       }
@@ -143,7 +151,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -157,7 +169,11 @@
          "text_cn": null,
          "before": 0.75,
          "after": 0.5,
-         "metric": "startup time"
+         "metric": "startup time",
+         "by": -0.25,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "startup time"
         }
        ]
       }
@@ -182,7 +198,11 @@
          "text_cn": null,
          "before": 9.0,
          "after": 8.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": -1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       }
@@ -195,7 +215,18 @@
      "role": "tank",
      "dev_note": "Developer Comments: Roadhog's already-powerful survivability increased significantly with the headshot damage reduction from the tank role passive so these changes are to help bring that back in line.",
      "general": [
-      "Base health reduced from 650 to 600."
+      {
+       "text_en": "Base health reduced from 650 to 600.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 650.0,
+       "after": 600.0,
+       "by": -50.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -209,7 +240,11 @@
          "text_cn": null,
          "before": 50.0,
          "after": 40.0,
-         "metric": "damage reduction"
+         "metric": "damage",
+         "by": -10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage reduction"
         }
        ]
       }
@@ -243,7 +278,11 @@
          "text_cn": null,
          "before": 50.0,
          "after": 45.0,
-         "metric": "damage"
+         "metric": "damage",
+         "by": -5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage"
         }
        ]
       },
@@ -257,7 +296,11 @@
          "text_cn": null,
          "before": 75.0,
          "after": 50.0,
-         "metric": "damage reduction"
+         "metric": "damage",
+         "by": -25.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage reduction"
         }
        ]
       },
@@ -271,42 +314,66 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Hinders enemies instead of Stunning them for 1.2 seconds.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Movement speed reduction increased from 30% to 50%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Hinder now prevents crouching movement.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "45 explosive damage.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "12 second cooldown.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -320,14 +387,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Damage reduction now scales down over time, from 40% to 0%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -352,14 +427,22 @@
          "text_cn": null,
          "before": 0.15,
          "after": 0.12,
-         "metric": "secondary fire base projectile size"
+         "metric": "secondary fire base projectile size",
+         "by": -0.03,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "secondary fire base projectile size"
         },
         {
          "text_en": "Secondary fire damage increased from 75 to 85.",
          "text_cn": null,
          "before": 75.0,
          "after": 85.0,
-         "metric": "secondary fire damage"
+         "metric": "secondary fire damage",
+         "by": 10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "secondary fire damage"
         }
        ]
       }
@@ -384,7 +467,11 @@
          "text_cn": null,
          "before": 6.5,
          "after": 6.0,
-         "metric": "weapon spread"
+         "metric": "weapon spread",
+         "by": -0.5,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "weapon spread"
         }
        ]
       },
@@ -398,7 +485,11 @@
          "text_cn": null,
          "before": 1.5,
          "after": 1.2,
-         "metric": "cast time"
+         "metric": "cast_time",
+         "by": -0.3,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cast time"
         }
        ]
       }
@@ -423,21 +514,33 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Secondary fire projectile no longer requires Overclock to pierce enemy players.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Primary fire shots per second increased from 14 to 16.",
          "text_cn": null,
          "before": 14.0,
          "after": 16.0,
-         "metric": "primary fire shots per second"
+         "metric": "primary fire shots per second",
+         "by": 2.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "primary fire shots per second"
         }
        ]
       },
@@ -451,7 +554,11 @@
          "text_cn": null,
          "before": 100.0,
          "after": 120.0,
-         "metric": "energy charge rate"
+         "metric": "energy charge rate",
+         "by": 20.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "energy charge rate"
         }
        ]
       }
@@ -464,7 +571,18 @@
      "role": "damage",
      "dev_note": "Developer Comments: To help solidify Symmetra as a close-range threat, we're increasing her health to better survive in that range, along with how quickly her primary fire beam damage ramps up.",
      "general": [
-      "Base health increased from 100 to 125 (Total health increased from 250 to 275)."
+      {
+       "text_en": "Base health increased from 100 to 125 (Total health increased from 250 to 275).",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 100.0,
+       "after": 125.0,
+       "by": 25.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -478,7 +596,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "primary fire charge rate",
+         "by": null,
+         "by_pct": 25.0,
+         "unit": null,
+         "raw_metric": "primary fire charge rate"
         }
        ]
       }
@@ -512,7 +634,11 @@
          "text_cn": null,
          "before": 10.0,
          "after": 25.0,
-         "metric": "damage"
+         "metric": "damage",
+         "by": 15.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage"
         }
        ]
       },
@@ -526,21 +652,33 @@
          "text_cn": null,
          "before": 30.0,
          "after": 40.0,
-         "metric": "healing per projectile"
+         "metric": "healing",
+         "by": 10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "healing per projectile"
         },
         {
          "text_en": "Pylon healing is now only half as effective when targeting Illari.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Max health increased from 100 to 125.",
          "text_cn": null,
          "before": 100.0,
          "after": 125.0,
-         "metric": "max health"
+         "metric": "max health",
+         "by": 25.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "max health"
         }
        ]
       }
@@ -565,7 +703,11 @@
          "text_cn": null,
          "before": 7.0,
          "after": 8.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": 1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       },
@@ -579,7 +721,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -625,5 +771,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:8177f72b574a0d804dafe96309bda9f9964cd569a218919fdf90b0863f9eb65b"
+ "hash": "sha256:5c5603120f75af2dfbe77687cd83efaaf99beb4d8d2f8a66c35758f505e6a2bf"
 }

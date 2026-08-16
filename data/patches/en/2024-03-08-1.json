@@ -82,7 +82,11 @@
          "text_cn": null,
          "before": 15.0,
          "after": 50.0,
-         "metric": "minimum damage"
+         "metric": "minimum damage",
+         "by": 35.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "minimum damage"
         }
        ]
       }
@@ -107,7 +111,11 @@
          "text_cn": null,
          "before": 45.0,
          "after": 60.0,
-         "metric": "stomp damage"
+         "metric": "stomp damage",
+         "by": 15.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "stomp damage"
         }
        ]
       },
@@ -121,21 +129,33 @@
          "text_cn": null,
          "before": 5.0,
          "after": 4.0,
-         "metric": "duration"
+         "metric": "duration",
+         "by": -1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "duration"
         },
         {
          "text_en": "Cooldown reduced from 12 to 10 seconds.",
          "text_cn": null,
          "before": 12.0,
          "after": 10.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": -2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         },
         {
          "text_en": "Now fills his passive overhealth by 100.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -160,7 +180,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "5 seconds",
+         "by": null,
+         "by_pct": 25.0,
+         "unit": null,
+         "raw_metric": "5 seconds"
         }
        ]
       }
@@ -185,14 +209,22 @@
          "text_cn": null,
          "before": 45.0,
          "after": 70.0,
-         "metric": "total damage"
+         "metric": "total damage",
+         "by": 25.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "total damage"
         },
         {
          "text_en": "Cooldown decreased from 12 to 11 seconds.",
          "text_cn": null,
          "before": 12.0,
          "after": 11.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": -1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       }
@@ -205,7 +237,18 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Armor increased from 275 to 300."
+      {
+       "text_en": "Armor increased from 275 to 300.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 275.0,
+       "after": 300.0,
+       "by": 25.0,
+       "by_pct": null,
+       "metric": "armor",
+       "unit": "hp"
+      }
      ],
      "perks": [],
      "abilities": [
@@ -219,7 +262,11 @@
          "text_cn": null,
          "before": 100.0,
          "after": 120.0,
-         "metric": "damage"
+         "metric": "damage",
+         "by": 20.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage"
         }
        ]
       }
@@ -244,7 +291,11 @@
          "text_cn": null,
          "before": 4.0,
          "after": 3.0,
-         "metric": "the enemy final position distance from roadhog after being pulled"
+         "metric": "the enemy final position distance from roadhog after being pulled",
+         "by": -1.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "the enemy final position distance from roadhog after being pulled"
         }
        ]
       },
@@ -258,7 +309,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "vertical knockback on activation",
+         "by": null,
+         "by_pct": 43.0,
+         "unit": null,
+         "raw_metric": "vertical knockback on activation"
         }
        ]
       }
@@ -280,7 +335,18 @@
      "role": "damage",
      "dev_note": "Developer Comments: We’re reverting the previous change to the base projectile size of Hanzo's arrows and replacing it with the general global reduction, which affects all travel time projectiles with a speed greater than 50 meters per second, resulting in Hanzo's arrow projectile staying the same total size as before this patch.",
      "general": [
-      "Base projectile sizes increased from 0.075 to 0.1 meters. The total projectile size, when combined with the general hero change, is still 0.175 meters."
+      {
+       "text_en": "Base projectile sizes increased from 0.075 to 0.1 meters. The total projectile size, when combined with the general hero change, is still 0.175 meters.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 0.075,
+       "after": 0.1,
+       "by": 0.025,
+       "by_pct": null,
+       "metric": "base projectile sizes",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -304,7 +370,11 @@
          "text_cn": null,
          "before": 120.0,
          "after": 140.0,
-         "metric": "ammo"
+         "metric": "ammo",
+         "by": 20.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "ammo"
         }
        ]
       },
@@ -318,7 +388,11 @@
          "text_cn": null,
          "before": 50.0,
          "after": 62.5,
-         "metric": "heal per second"
+         "metric": "heal per second",
+         "by": 12.5,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "heal per second"
         }
        ]
       }
@@ -343,14 +417,22 @@
          "text_cn": null,
          "before": 170.0,
          "after": 185.0,
-         "metric": "damage per second"
+         "metric": "damage",
+         "by": 15.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage per second"
         },
         {
          "text_en": "Ultimate cost decreased by 12%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "ultimate_cost",
+         "by": null,
+         "by_pct": 12.0,
+         "unit": null,
+         "raw_metric": "ultimate cost"
         }
        ]
       }
@@ -375,7 +457,11 @@
          "text_cn": null,
          "before": 10.0,
          "after": 25.0,
-         "metric": "impact damage"
+         "metric": "impact damage",
+         "by": 15.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "impact damage"
         }
        ]
       },
@@ -389,7 +475,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -403,7 +493,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "ultimate_cost",
+         "by": null,
+         "by_pct": 8.0,
+         "unit": null,
+         "raw_metric": "ultimate cost"
         }
        ]
       }
@@ -428,7 +522,11 @@
          "text_cn": null,
          "before": 60.0,
          "after": 65.0,
-         "metric": "primary fire damage per second"
+         "metric": "primary fire damage per second",
+         "by": 5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "primary fire damage per second"
         }
        ]
       },
@@ -442,14 +540,22 @@
          "text_cn": null,
          "before": 30.0,
          "after": 50.0,
-         "metric": "health"
+         "metric": "health",
+         "by": 20.0,
+         "by_pct": null,
+         "unit": "hp",
+         "raw_metric": "health"
         },
         {
          "text_en": "Damage per second increased from 25 to 30.",
          "text_cn": null,
          "before": 25.0,
          "after": 30.0,
-         "metric": "damage per second"
+         "metric": "damage",
+         "by": 5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage per second"
         }
        ]
       },
@@ -463,14 +569,22 @@
          "text_cn": null,
          "before": 50.0,
          "after": 100.0,
-         "metric": "health"
+         "metric": "health",
+         "by": 50.0,
+         "by_pct": null,
+         "unit": "hp",
+         "raw_metric": "health"
         },
         {
          "text_en": "Shields increased from 150 to 200.",
          "text_cn": null,
          "before": 150.0,
          "after": 200.0,
-         "metric": "shields"
+         "metric": "shield",
+         "by": 50.0,
+         "by_pct": null,
+         "unit": "hp",
+         "raw_metric": "shields"
         }
        ]
       }
@@ -495,7 +609,11 @@
          "text_cn": null,
          "before": 11.0,
          "after": 13.0,
-         "metric": "turret damage"
+         "metric": "turret damage",
+         "by": 2.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "turret damage"
         }
        ]
       }
@@ -529,7 +647,11 @@
          "text_cn": null,
          "before": 60.0,
          "after": 90.0,
-         "metric": "explosion damage and healing"
+         "metric": "explosion damage and healing",
+         "by": 30.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "explosion damage and healing"
         }
        ]
       }
@@ -554,7 +676,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -579,7 +705,11 @@
          "text_cn": null,
          "before": 6.0,
          "after": 5.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": -1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       },
@@ -593,7 +723,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "cost",
+         "by": null,
+         "by_pct": 8.0,
+         "unit": null,
+         "raw_metric": "cost"
         }
        ]
       }
@@ -618,14 +752,22 @@
          "text_cn": null,
          "before": 0.3,
          "after": 0.2,
-         "metric": "primary fire recovery time"
+         "metric": "primary fire recovery time",
+         "by": -0.1,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "primary fire recovery time"
         },
         {
          "text_en": "Maximum charge time reduced from 0.7 to 0.65 seconds.",
          "text_cn": null,
          "before": 0.7,
          "after": 0.65,
-         "metric": "maximum charge time"
+         "metric": "maximum charge time",
+         "by": -0.05,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "maximum charge time"
         }
        ]
       }
@@ -650,14 +792,22 @@
          "text_cn": null,
          "before": 70.0,
          "after": 80.0,
-         "metric": "maximum heal amount"
+         "metric": "maximum heal amount",
+         "by": 10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "maximum heal amount"
         },
         {
          "text_en": "Maximum charge time increased from 1 to 1.15 seconds.",
          "text_cn": null,
          "before": 1.0,
          "after": 1.15,
-         "metric": "maximum charge time"
+         "metric": "maximum charge time",
+         "by": 0.15,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "maximum charge time"
         }
        ]
       }
@@ -692,5 +842,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:e5308851933db3ebb506a48c2f9db3ce5d88547780aa0087b69fbd4cc26a471d"
+ "hash": "sha256:93484ae44a573d9a6182fb09a24005cb4b852204d7612ad8ab9bea0400732dc8"
 }

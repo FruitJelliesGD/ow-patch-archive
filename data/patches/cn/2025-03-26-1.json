@@ -47,7 +47,11 @@
          "text_cn": "不再为盟友提供受伤减免。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -61,14 +65,22 @@
          "text_cn": "终极技能消耗提高8%。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "ultimate_cost",
+         "by": null,
+         "by_pct": 8.0,
+         "unit": null,
+         "raw_metric": "终极技能消耗"
         },
         {
          "text_en": null,
          "text_cn": "屏障生命值从1500降低至1200。",
          "before": 1500.0,
          "after": 1200.0,
-         "metric": "屏障生命值"
+         "metric": "barrier",
+         "by": -300.0,
+         "by_pct": null,
+         "unit": "hp",
+         "raw_metric": "屏障生命值"
         }
        ]
       },
@@ -82,7 +94,11 @@
          "text_cn": "过量生命值转换率从50%降低至40%。",
          "before": 50.0,
          "after": 40.0,
-         "metric": "过量生命值转换率"
+         "metric": "overhealth",
+         "by": -10.0,
+         "by_pct": null,
+         "unit": "pct",
+         "raw_metric": "过量生命值转换率"
         }
        ]
       }
@@ -107,7 +123,11 @@
          "text_cn": "最大治疗量从400提高到450。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -121,7 +141,11 @@
          "text_cn": "终极技能消耗降低12%。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "ultimate_cost",
+         "by": null,
+         "by_pct": 12.0,
+         "unit": null,
+         "raw_metric": "终极技能消耗"
         }
        ]
       }
@@ -146,7 +170,11 @@
          "text_cn": "终极技能消耗提高10%。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "ultimate_cost",
+         "by": null,
+         "by_pct": 10.0,
+         "unit": null,
+         "raw_metric": "终极技能消耗"
         }
        ]
       }
@@ -171,7 +199,11 @@
          "text_cn": "衰退速度从每秒2提高到每秒2.5。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -205,14 +237,22 @@
          "text_cn": "主要攻击模式衰减射程从20米增加到25米。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": null,
          "text_cn": "辅助攻击模式的伤害从45提高至50。",
          "before": 45.0,
          "after": 50.0,
-         "metric": "辅助攻击模式的伤害"
+         "metric": "辅助攻击模式的伤害",
+         "by": 5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "辅助攻击模式的伤害"
         }
        ]
       }
@@ -225,8 +265,30 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "基础生命值从225降低至150。",
-      "护盾生命值从0提高至75。"
+      {
+       "text_en": null,
+       "text_cn": "基础生命值从225降低至150。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 225.0,
+       "after": 150.0,
+       "by": -75.0,
+       "by_pct": null,
+       "metric": "health",
+       "unit": "hp"
+      },
+      {
+       "text_en": null,
+       "text_cn": "护盾生命值从0提高至75。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 0.0,
+       "after": 75.0,
+       "by": 75.0,
+       "by_pct": null,
+       "metric": "shield",
+       "unit": "hp"
+      }
      ],
      "perks": [],
      "abilities": []
@@ -250,7 +312,11 @@
          "text_cn": "主要攻击模式现在使用较大的射弹尺寸（0.07米）。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -275,14 +341,22 @@
          "text_cn": "冷却时间从7秒延长至8秒。",
          "before": 7.0,
          "after": 8.0,
-         "metric": "冷却时间"
+         "metric": "cooldown",
+         "by": 1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "冷却时间"
         },
         {
          "text_en": null,
          "text_cn": "最大持续时间从1.2秒缩短至1秒。",
          "before": 1.2,
          "after": 1.0,
-         "metric": "最大持续时间"
+         "metric": "最大持续时间",
+         "by": -0.2,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "最大持续时间"
         }
        ]
       }
@@ -295,7 +369,18 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "基础生命值从200提高至225。"
+      {
+       "text_en": null,
+       "text_cn": "基础生命值从200提高至225。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 200.0,
+       "after": 225.0,
+       "by": 25.0,
+       "by_pct": null,
+       "metric": "health",
+       "unit": "hp"
+      }
      ],
      "perks": [],
      "abilities": []
@@ -328,14 +413,22 @@
          "text_cn": "非6v6游戏模式下的冷却时间从12秒延长至14秒。",
          "before": 12.0,
          "after": 14.0,
-         "metric": "游戏模式下的冷却时间"
+         "metric": "游戏模式下的冷却时间",
+         "by": 2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "游戏模式下的冷却时间"
         },
         {
          "text_en": null,
          "text_cn": "6v6游戏模式下的冷却时间从10秒延长至12秒。",
          "before": 10.0,
          "after": 12.0,
-         "metric": "游戏模式下的冷却时间"
+         "metric": "游戏模式下的冷却时间",
+         "by": 2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "游戏模式下的冷却时间"
         }
        ]
       },
@@ -349,7 +442,11 @@
          "text_cn": "纳米激素对于自身的效果的持续时间从8秒缩短至6秒。",
          "before": 8.0,
          "after": 6.0,
-         "metric": "纳米激素对于自身的效果的持续时间"
+         "metric": "纳米激素对于自身的效果的持续时间",
+         "by": -2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "纳米激素对于自身的效果的持续时间"
         }
        ]
       }
@@ -374,7 +471,11 @@
          "text_cn": "终极技能消耗提高10%。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "ultimate_cost",
+         "by": null,
+         "by_pct": 10.0,
+         "unit": null,
+         "raw_metric": "终极技能消耗"
         }
        ]
       }
@@ -385,5 +486,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:c1d446cefbda15d386366ef09872ba6386b3ec11390058fe9a81c74e6de0dd6e"
+ "hash": "sha256:6e5922addc7e1c0108dfc182499e8e2694e89179497700f06ae8542d38bc16b1"
 }

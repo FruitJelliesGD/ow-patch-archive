@@ -82,7 +82,11 @@
          "text_cn": "创伤持续时间从0.25秒延长到0.5秒。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -107,7 +111,11 @@
          "text_cn": "使虚空屏障的尺寸额外增加25%。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "使虚空屏障的尺寸额外",
+         "by": null,
+         "by_pct": 25.0,
+         "unit": null,
+         "raw_metric": "使虚空屏障的尺寸额外"
         }
        ]
       }
@@ -132,7 +140,11 @@
          "text_cn": "被动恢复的触发速度加成从50%提高至75%。",
          "before": 50.0,
          "after": 75.0,
-         "metric": "被动恢复的触发速度加成"
+         "metric": "被动恢复的触发速度加成",
+         "by": 25.0,
+         "by_pct": null,
+         "unit": "pct",
+         "raw_metric": "被动恢复的触发速度加成"
         }
        ]
       },
@@ -146,7 +158,11 @@
          "text_cn": "冷却时间从8秒缩短至6秒。",
          "before": 8.0,
          "after": 6.0,
-         "metric": "冷却时间"
+         "metric": "cooldown",
+         "by": -2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "冷却时间"
         }
        ]
       }
@@ -171,7 +187,11 @@
          "text_cn": "现在会使“拴猪圈”的伤害增加25%。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "的伤害",
+         "by": null,
+         "by_pct": 25.0,
+         "unit": null,
+         "raw_metric": "的伤害"
         }
        ]
       }
@@ -196,7 +216,11 @@
          "text_cn": "对可部署物体造成的伤害加成从30%提高至50%。",
          "before": 30.0,
          "after": 50.0,
-         "metric": "对可部署物体造成的伤害加成"
+         "metric": "对可部署物体造成的伤害加成",
+         "by": 20.0,
+         "by_pct": null,
+         "unit": "pct",
+         "raw_metric": "对可部署物体造成的伤害加成"
         }
        ]
       }
@@ -221,7 +245,11 @@
          "text_cn": "盟友转移消耗的降低效果从33%提高至50%。",
          "before": 33.0,
          "after": 50.0,
-         "metric": "盟友转移消耗的降低效果"
+         "metric": "盟友转移消耗的降低效果",
+         "by": 17.0,
+         "by_pct": null,
+         "unit": "pct",
+         "raw_metric": "盟友转移消耗的降低效果"
         }
        ]
       }
@@ -255,7 +283,11 @@
          "text_cn": "现在需要消耗一种资源才能治疗。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -280,7 +312,11 @@
          "text_cn": "终极技能充能返还从30%增加至40%。",
          "before": 30.0,
          "after": 40.0,
-         "metric": "终极技能充能返还"
+         "metric": "ultimate_cost",
+         "by": 10.0,
+         "by_pct": null,
+         "unit": "pct",
+         "raw_metric": "终极技能充能返还"
         }
        ]
       }
@@ -305,7 +341,11 @@
          "text_cn": "攀墙现在也会重置二段跳。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -319,7 +359,11 @@
          "text_cn": "治疗效果从每秒25提高至35生命值。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -333,14 +377,22 @@
          "text_cn": "造成消灭触发的伤害加成持续时间从6秒延长至10秒。",
          "before": 6.0,
          "after": 10.0,
-         "metric": "造成消灭触发的伤害加成持续时间"
+         "metric": "造成消灭触发的伤害加成持续时间",
+         "by": 4.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "造成消灭触发的伤害加成持续时间"
         },
         {
          "text_en": null,
          "text_cn": "额外伤害会在1秒内生效，而不是2秒。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -365,7 +417,11 @@
          "text_cn": "不再增加“冰墙”的冷却时间。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -390,7 +446,11 @@
          "text_cn": "护盾转化量从75增加至125。",
          "before": 75.0,
          "after": 125.0,
-         "metric": "护盾转化量"
+         "metric": "shield",
+         "by": 50.0,
+         "by_pct": null,
+         "unit": "hp",
+         "raw_metric": "护盾转化量"
         }
        ]
       }
@@ -415,7 +475,11 @@
          "text_cn": "恢复时间从0.9秒缩短至0.7秒。",
          "before": 0.9,
          "after": 0.7,
-         "metric": "恢复时间"
+         "metric": "recovery",
+         "by": -0.2,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "恢复时间"
         }
        ]
       }
@@ -440,14 +504,22 @@
          "text_cn": "施放时间从0.4秒缩短至0.15秒。",
          "before": 0.4,
          "after": 0.15,
-         "metric": "施放时间"
+         "metric": "cast_time",
+         "by": -0.25,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "施放时间"
         },
         {
          "text_en": null,
          "text_cn": "强化药剂的禁疗效果现在可以被净化。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -472,7 +544,11 @@
          "text_cn": "对范围的惩罚从30%降低至15%。",
          "before": 30.0,
          "after": 15.0,
-         "metric": "对范围的惩罚"
+         "metric": "对范围的惩罚",
+         "by": -15.0,
+         "by_pct": null,
+         "unit": "pct",
+         "raw_metric": "对范围的惩罚"
         }
        ]
       },
@@ -486,7 +562,11 @@
          "text_cn": "现在“黑客入侵”在治疗盟友时不会被伤害打断。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -511,14 +591,22 @@
          "text_cn": "基础生命值从250降低至225。",
          "before": 250.0,
          "after": 225.0,
-         "metric": "基础生命值"
+         "metric": "health",
+         "by": -25.0,
+         "by_pct": null,
+         "unit": "hp",
+         "raw_metric": "基础生命值"
         },
         {
          "text_en": null,
          "text_cn": "炮台伤害从13降低至12。",
          "before": 13.0,
          "after": 12.0,
-         "metric": "炮台伤害"
+         "metric": "炮台伤害",
+         "by": -1.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "炮台伤害"
         }
        ]
       },
@@ -532,7 +620,11 @@
          "text_cn": "现在会使“部署炮台”的基础生命值额外增加25。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -557,7 +649,11 @@
          "text_cn": "过量生命值持续时间从3.5秒延长至6秒。",
          "before": 3.5,
          "after": 6.0,
-         "metric": "过量生命值持续时间"
+         "metric": "overhealth",
+         "by": 2.5,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "过量生命值持续时间"
         }
        ]
       }
@@ -591,7 +687,11 @@
          "text_cn": "每次射击治疗量从25提高至30。",
          "before": 25.0,
          "after": 30.0,
-         "metric": "每次射击治疗量"
+         "metric": "每次射击治疗量",
+         "by": 5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "每次射击治疗量"
         }
        ]
       },
@@ -605,7 +705,11 @@
          "text_cn": "攻击速度从20%提高至30%。",
          "before": 20.0,
          "after": 30.0,
-         "metric": "攻击速度"
+         "metric": "攻击速度",
+         "by": 10.0,
+         "by_pct": null,
+         "unit": "pct",
+         "raw_metric": "攻击速度"
         }
        ]
       }
@@ -630,7 +734,11 @@
          "text_cn": "在进行“能量盾击”后，布丽吉塔的移动速度提高30%，持续1.5秒。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "布丽吉塔的移动速度",
+         "by": null,
+         "by_pct": 30.0,
+         "unit": null,
+         "raw_metric": "布丽吉塔的移动速度"
         }
        ]
       }
@@ -655,7 +763,11 @@
          "text_cn": "使用近身攻击时，武器充能不再暂停。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -669,7 +781,11 @@
          "text_cn": "在“桎梏灼日”启动期间，额外提供30%的攻击速度。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -694,7 +810,11 @@
          "text_cn": "现在使“滑翔推进”的持续时间增加25%。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "的持续时间",
+         "by": null,
+         "by_pct": 25.0,
+         "unit": null,
+         "raw_metric": "的持续时间"
         }
        ]
       }
@@ -719,21 +839,33 @@
          "text_cn": "伤害从30提高至40。",
          "before": 30.0,
          "after": 40.0,
-         "metric": "伤害"
+         "metric": "damage",
+         "by": 10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "伤害"
         },
         {
          "text_en": null,
          "text_cn": "触发所需的击中次数从16增加至20。",
          "before": 16.0,
          "after": 20.0,
-         "metric": "触发所需的击中次数"
+         "metric": "触发所需的击中次数",
+         "by": 4.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "触发所需的击中次数"
         },
         {
          "text_en": null,
          "text_cn": "击中的时间窗口从1.5秒增加至2.5秒。",
          "before": 1.5,
          "after": 2.5,
-         "metric": "击中的时间窗口"
+         "metric": "击中的时间窗口",
+         "by": 1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "击中的时间窗口"
         }
        ]
       },
@@ -747,7 +879,11 @@
          "text_cn": "“愈疗灵花”的治疗效果加成从20提高至30。",
          "before": 20.0,
          "after": 30.0,
-         "metric": "的治疗效果加成"
+         "metric": "的治疗效果加成",
+         "by": 10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "的治疗效果加成"
         }
        ]
       }
@@ -772,7 +908,11 @@
          "text_cn": "施放时间从0.875秒缩短至0.4秒。",
          "before": 0.875,
          "after": 0.4,
-         "metric": "施放时间"
+         "metric": "cast_time",
+         "by": -0.475,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "施放时间"
         }
        ]
       }
@@ -802,5 +942,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:bd33f19a9d812d1796a5547e0f88b10ae7cbba151fc92c55b45eef52926c171b"
+ "hash": "sha256:7e2952386518246ff811e07c785da563e59b93f763a01988ff9c572b87059fab"
 }

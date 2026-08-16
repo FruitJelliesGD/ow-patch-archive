@@ -141,7 +141,11 @@
          "text_cn": null,
          "before": 3.0,
          "after": 4.0,
-         "metric": "ignite damage over time duration"
+         "metric": "ignite damage over time duration",
+         "by": 1.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "ignite damage over time duration"
         }
        ]
       }
@@ -154,7 +158,18 @@
      "role": "tank",
      "dev_note": "Developer Comments: Ramattra's Pummel projectiles passing through barriers was a source of frustration for players trying to protect themselves or their allies. With these changes enabling Ramattra to deal critical damage to barriers, he will still be a valuable hero choice against barrier mechanics, but won't immediately apply damage to players on the other side.",
      "general": [
-      "Pummel"
+      {
+       "text_en": "Pummel",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -168,14 +183,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Now deals 2.5x more damage to barriers.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -200,7 +223,11 @@
          "text_cn": null,
          "before": 1600.0,
          "after": 1500.0,
-         "metric": "barrier field health"
+         "metric": "barrier",
+         "by": -100.0,
+         "by_pct": null,
+         "unit": "hp",
+         "raw_metric": "barrier field health"
         }
        ]
       }
@@ -222,7 +249,18 @@
      "role": "damage",
      "dev_note": "Developer Comments: We are reverting Hanzo back to his previous health now that it's possible to take out an opposing Hanzo with a well-aimed headshot thanks to the weapon damage changes.",
      "general": [
-      "Base health increased from 225 to 250."
+      {
+       "text_en": "Base health increased from 225 to 250.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 225.0,
+       "after": 250.0,
+       "by": 25.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -246,14 +284,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Time before energy degeneration begins increased from 7 to 12 seconds.",
          "text_cn": null,
          "before": 7.0,
          "after": 12.0,
-         "metric": "time before energy degeneration begins"
+         "metric": "time before energy degeneration begins",
+         "by": 5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "time before energy degeneration begins"
         }
        ]
       },
@@ -267,14 +313,22 @@
          "text_cn": null,
          "before": 60.0,
          "after": 80.0,
-         "metric": "damage per second"
+         "metric": "damage",
+         "by": 20.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage per second"
         },
         {
          "text_en": "Now generates 25% of damage done to enemy players as Railgun energy.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -299,21 +353,33 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Hacked ability lockout effect duration reduced from 1.5 to 1.0 seconds (EMP duration unchanged).",
          "text_cn": null,
          "before": 1.5,
          "after": 1.0,
-         "metric": "hacked ability lockout effect duration"
+         "metric": "hacked ability lockout effect duration",
+         "by": -0.5,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "hacked ability lockout effect duration"
         },
         {
          "text_en": "BOB hacked stun duration reduced from 10 to 3 seconds.",
          "text_cn": null,
          "before": 10.0,
          "after": 3.0,
-         "metric": "bob hacked stun duration"
+         "metric": "bob hacked stun duration",
+         "by": -7.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "bob hacked stun duration"
         }
        ]
       },
@@ -327,7 +393,11 @@
          "text_cn": null,
          "before": 5.0,
          "after": 7.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": 2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       },
@@ -341,7 +411,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "ultimate_cost",
+         "by": null,
+         "by_pct": 12.0,
+         "unit": null,
+         "raw_metric": "ultimate cost"
         }
        ]
       },
@@ -355,28 +429,44 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Now has a 5 second duration.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Added stealth timer around the reticle and removed ability icon.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Taking damage now reveals Sombra for 1 second instead of ending stealth.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -390,21 +480,33 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Increases Sombra's weapon damage versus hacked targets by 20%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "See critically injured enemies through walls.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -438,7 +540,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "primary fire recoil",
+         "by": null,
+         "by_pct": 30.0,
+         "unit": null,
+         "raw_metric": "primary fire recoil"
         }
        ]
       }
@@ -463,7 +569,11 @@
          "text_cn": null,
          "before": 5.0,
          "after": 5.5,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": 0.5,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       }
@@ -488,14 +598,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Healing per projectile reduced from 6.5 to 6.",
          "text_cn": null,
          "before": 6.5,
          "after": 6.0,
-         "metric": "healing per projectile"
+         "metric": "healing",
+         "by": -0.5,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "healing per projectile"
         }
        ]
       }
@@ -571,5 +689,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:27efc2d4751cf4a90ec20dbb7d045094f2eed97d7af8b06e2521fe502cabb67d"
+ "hash": "sha256:a08bae168dafed819b541f17ba986daaf52427f1891926d174b44b8114f4e420"
 }

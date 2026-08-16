@@ -19,8 +19,30 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "屏障阵列",
-      "屏障面板生命值从250降低至225。"
+      {
+       "text_en": null,
+       "text_cn": "屏障阵列",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "屏障面板生命值从250降低至225。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 250.0,
+       "after": 225.0,
+       "by": -25.0,
+       "by_pct": null,
+       "metric": "barrier",
+       "unit": "hp"
+      }
      ],
      "perks": [],
      "abilities": []
@@ -32,14 +54,102 @@
      "role": null,
      "dev_note": null,
      "general": [
-      "朱雀扇",
-      "命中伤害从20提高至22。",
-      "煽火风",
-      "对护甲的命中伤害按光束伤害计算伤害减免（仅减免30%）。",
-      "怒炎冲",
-      "现在可以通过近身攻击来取消。",
-      "焚身焰——被动",
-      "燃烧累积的持续时间从3秒延长至4秒。"
+      {
+       "text_en": null,
+       "text_cn": "朱雀扇",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "命中伤害从20提高至22。",
+       "subject": null,
+       "dimension": "other",
+       "before": 20.0,
+       "after": 22.0,
+       "by": 2.0,
+       "by_pct": null,
+       "metric": "命中伤害",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "煽火风",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "对护甲的命中伤害按光束伤害计算伤害减免（仅减免30%）。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "怒炎冲",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "现在可以通过近身攻击来取消。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "焚身焰——被动",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "燃烧累积的持续时间从3秒延长至4秒。",
+       "subject": null,
+       "dimension": "other",
+       "before": 3.0,
+       "after": 4.0,
+       "by": 1.0,
+       "by_pct": null,
+       "metric": "燃烧累积的持续时间",
+       "unit": "s"
+      }
      ],
      "perks": [],
      "abilities": []
@@ -51,10 +161,54 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "合成连发步枪——瞄准射击",
-      "伤害衰减距离从30-45米延长至35-50米。",
-      "赛博手雷",
-      "爆炸最小半径从1.25米扩大至2米。"
+      {
+       "text_en": null,
+       "text_cn": "合成连发步枪——瞄准射击",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "伤害衰减距离从30-45米延长至35-50米。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "赛博手雷",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "爆炸最小半径从1.25米扩大至2米。",
+       "subject": null,
+       "dimension": "other",
+       "before": 1.25,
+       "after": 2.0,
+       "by": 0.75,
+       "by_pct": null,
+       "metric": "爆炸最小半径",
+       "unit": "m"
+      }
      ],
      "perks": [],
      "abilities": []
@@ -66,8 +220,30 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "咻咻飞",
-      "恢复速度从30降低至25。"
+      {
+       "text_en": null,
+       "text_cn": "咻咻飞",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "恢复速度从30降低至25。",
+       "subject": null,
+       "dimension": "other",
+       "before": 30.0,
+       "after": 25.0,
+       "by": -5.0,
+       "by_pct": null,
+       "metric": "恢复速度",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -79,14 +255,102 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "御魂镰刃",
-      "施放时间从0.1秒缩短至0.025秒。",
-      "愈魂斗笠",
-      "射程从25米延长至30米。",
-      "默认辅助锁定范围从8度提高至10度。",
-      "终极技能",
-      "终极技能消耗提高7%。",
-      "现在施放时立即治疗100点生命值。"
+      {
+       "text_en": null,
+       "text_cn": "御魂镰刃",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "施放时间从0.1秒缩短至0.025秒。",
+       "subject": null,
+       "dimension": "other",
+       "before": 0.1,
+       "after": 0.025,
+       "by": -0.075,
+       "by_pct": null,
+       "metric": "cast_time",
+       "unit": "s"
+      },
+      {
+       "text_en": null,
+       "text_cn": "愈魂斗笠",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "射程从25米延长至30米。",
+       "subject": null,
+       "dimension": "other",
+       "before": 25.0,
+       "after": 30.0,
+       "by": 5.0,
+       "by_pct": null,
+       "metric": "range",
+       "unit": "m"
+      },
+      {
+       "text_en": null,
+       "text_cn": "默认辅助锁定范围从8度提高至10度。",
+       "subject": null,
+       "dimension": "other",
+       "before": 8.0,
+       "after": 10.0,
+       "by": 2.0,
+       "by_pct": null,
+       "metric": "默认辅助锁定范围",
+       "unit": "deg"
+      },
+      {
+       "text_en": null,
+       "text_cn": "终极技能",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "终极技能消耗提高7%。",
+       "subject": "ultimate_cost",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 7.0,
+       "metric": "ultimate_cost",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "现在施放时立即治疗100点生命值。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -124,5 +388,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:0c0f0c932a1d839989a4fc32f009677361c7eeb7502e18e9bb8de20c259a946c"
+ "hash": "sha256:3135c7cd077629c0f6d0840d27c9a575069e9c37acc8d1c4a468d568221da7bf"
 }

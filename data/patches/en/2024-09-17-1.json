@@ -74,8 +74,30 @@
      "role": "tank",
      "dev_note": "Developer Comment: There has been a lot of community feedback surrounding D.Va lately. On average she hasn't been overperforming, but she’s quite difficult to take down. So we're shifting some of her armor to normal health and reducing her max combined health by 25 armor. With armor's effectiveness being hit in the same patch, we'll keep an eye on how this plays out and adjust as necessary.",
      "general": [
-      "Mech armor health reduced from 375 to 325.",
-      "Mech base health increased from 200 to 225."
+      {
+       "text_en": "Mech armor health reduced from 375 to 325.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 375.0,
+       "after": 325.0,
+       "by": -50.0,
+       "by_pct": null,
+       "metric": "mech armor health",
+       "unit": null
+      },
+      {
+       "text_en": "Mech base health increased from 200 to 225.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 200.0,
+       "after": 225.0,
+       "by": 25.0,
+       "by_pct": null,
+       "metric": "mech base health",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -99,7 +121,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -124,7 +150,11 @@
          "text_cn": null,
          "before": 8.0,
          "after": 10.0,
-         "metric": "resource regeneration rate"
+         "metric": "resource regeneration rate",
+         "by": 2.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "resource regeneration rate"
         }
        ]
       }
@@ -149,21 +179,33 @@
          "text_cn": null,
          "before": 25.0,
          "after": 15.0,
-         "metric": "impact damage"
+         "metric": "impact damage",
+         "by": -10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "impact damage"
         },
         {
          "text_en": "Explosion damage increased from 30 to 40.",
          "text_cn": null,
          "before": 30.0,
          "after": 40.0,
-         "metric": "explosion damage"
+         "metric": "explosion damage",
+         "by": 10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "explosion damage"
         },
         {
          "text_en": "No longer deals damage to self.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -197,7 +239,11 @@
          "text_cn": null,
          "before": 2.2,
          "after": 2.0,
-         "metric": "spread"
+         "metric": "spread",
+         "by": -0.2,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "spread"
         }
        ]
       },
@@ -211,7 +257,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "ultimate_cost",
+         "by": null,
+         "by_pct": 12.0,
+         "unit": null,
+         "raw_metric": "ultimate cost"
         }
        ]
       }
@@ -236,14 +286,22 @@
          "text_cn": null,
          "before": 1.2,
          "after": 0.9,
-         "metric": "hinder duration"
+         "metric": "hinder duration",
+         "by": -0.3,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "hinder duration"
         },
         {
          "text_en": "Explosion damage increased from 45 to 75.",
          "text_cn": null,
          "before": 45.0,
          "after": 75.0,
-         "metric": "explosion damage"
+         "metric": "explosion damage",
+         "by": 30.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "explosion damage"
         }
        ]
       },
@@ -257,7 +315,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "ultimate_cost",
+         "by": null,
+         "by_pct": 10.0,
+         "unit": null,
+         "raw_metric": "ultimate cost"
         }
        ]
       }
@@ -282,21 +344,33 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Maximum damage increased from 120 to 125.",
          "text_cn": null,
          "before": 120.0,
          "after": 125.0,
-         "metric": "maximum damage"
+         "metric": "maximum damage",
+         "by": 5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "maximum damage"
         },
         {
          "text_en": "Time to fully charge increased from 0.72 to 0.87 seconds.",
          "text_cn": null,
          "before": 0.72,
          "after": 0.87,
-         "metric": "time to fully charge"
+         "metric": "time to fully charge",
+         "by": 0.15,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "time to fully charge"
         }
        ]
       }
@@ -321,7 +395,11 @@
          "text_cn": null,
          "before": 40.0,
          "after": 30.0,
-         "metric": "shield health gained per ability"
+         "metric": "shield",
+         "by": -10.0,
+         "by_pct": null,
+         "unit": "hp",
+         "raw_metric": "shield health gained per ability"
         }
        ]
       }
@@ -355,7 +433,11 @@
          "text_cn": null,
          "before": 70.0,
          "after": 85.0,
-         "metric": "damage per second"
+         "metric": "damage",
+         "by": 15.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage per second"
         }
        ]
       }
@@ -380,7 +462,11 @@
          "text_cn": null,
          "before": 80.0,
          "after": 100.0,
-         "metric": "maximum ammo"
+         "metric": "maximum ammo",
+         "by": 20.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "maximum ammo"
         }
        ]
       }
@@ -405,7 +491,11 @@
          "text_cn": null,
          "before": 48.0,
          "after": 50.0,
-         "metric": "damage"
+         "metric": "damage",
+         "by": 2.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage"
         }
        ]
       },
@@ -419,7 +509,11 @@
          "text_cn": null,
          "before": 7.0,
          "after": 6.0,
-         "metric": "cooldown per target"
+         "metric": "cooldown",
+         "by": -1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown per target"
         }
        ]
       }
@@ -468,5 +562,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:7768f957f4f3fae126fba7eefca1576a7424c25f5e96bd0d51bb7520dbb88980"
+ "hash": "sha256:65772d0661d75fbae5ae5df32f3f590a68b8402294bd303eea45c47c99f50fcd"
 }

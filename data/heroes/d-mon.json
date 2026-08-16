@@ -13,6 +13,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/08/",
    "patch_title": "《守望先锋》补丁说明——2026年8月15日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "surging-strike",
    "ability_en": "Surging Strike",
    "ability_cn": "突进刺击",
@@ -20,7 +21,10 @@
    "text_cn": "施放时间从0.15秒缩短至0.05秒。",
    "before": 0.15,
    "after": 0.05,
-   "metric": "施放时间"
+   "by": -0.1,
+   "by_pct": null,
+   "metric": "cast_time",
+   "unit": "s"
   },
   {
    "patch": "cn-2026-08-15-1",
@@ -29,6 +33,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/08/",
    "patch_title": "《守望先锋》补丁说明——2026年8月15日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "surging-strike",
    "ability_en": "Surging Strike",
    "ability_cn": "突进刺击",
@@ -36,7 +41,10 @@
    "text_cn": "恢复时间从0.25秒缩短至0.15秒。",
    "before": 0.25,
    "after": 0.15,
-   "metric": "恢复时间"
+   "by": -0.1,
+   "by_pct": null,
+   "metric": "recovery",
+   "unit": "s"
   },
   {
    "patch": "cn-2026-08-15-1",
@@ -45,6 +53,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/08/",
    "patch_title": "《守望先锋》补丁说明——2026年8月15日",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "fusion-repeater",
    "ability_en": "Fusion Repeater",
    "ability_cn": "聚变连发枪",
@@ -52,7 +61,10 @@
    "text_cn": "施放时间从0.3秒缩短至0.2秒",
    "before": 0.3,
    "after": 0.2,
-   "metric": "施放时间"
+   "by": -0.1,
+   "by_pct": null,
+   "metric": "cast_time",
+   "unit": "s"
   },
   {
    "patch": "cn-2026-08-15-1",
@@ -61,6 +73,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/08/",
    "patch_title": "《守望先锋》补丁说明——2026年8月15日",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "fusion-repeater",
    "ability_en": "Fusion Repeater",
    "ability_cn": "聚变连发枪",
@@ -68,7 +81,10 @@
    "text_cn": "恢复时间从0.5秒缩短至0.2秒。",
    "before": 0.5,
    "after": 0.2,
-   "metric": "恢复时间"
+   "by": -0.3,
+   "by_pct": null,
+   "metric": "recovery",
+   "unit": "s"
   },
   {
    "patch": "cn-2026-08-15-1",
@@ -77,8 +93,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/08/",
    "patch_title": "《守望先锋》补丁说明——2026年8月15日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "修复了手提聚变连发枪的一个错误，该错误可能导致命中无法正确判定。"
+   "text_cn": "修复了手提聚变连发枪的一个错误，该错误可能导致命中无法正确判定。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-08-15-1",
@@ -87,8 +111,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/08/",
    "patch_title": "《守望先锋》补丁说明——2026年8月15日",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": null,
-   "text_cn": "修复了无极斩在命中多个目标时无法正确提供过量生命值的错误。"
+   "text_cn": "修复了无极斩在命中多个目标时无法正确提供过量生命值的错误。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-08-15-1",
@@ -97,8 +129,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/08/",
    "patch_title": "《守望先锋》补丁说明——2026年8月15日",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": null,
-   "text_cn": "已在此前的更新中修复——修复了无极斩激活时，无法获得过量生命值的问题。"
+   "text_cn": "已在此前的更新中修复——修复了无极斩激活时，无法获得过量生命值的问题。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-08-15-1",
@@ -107,8 +147,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/08/",
    "patch_title": "《守望先锋》补丁说明——2026年8月15日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "命中判定区域调整"
+   "text_cn": "命中判定区域调整",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-08-15-1",
@@ -117,8 +165,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/08/",
    "patch_title": "《守望先锋》补丁说明——2026年8月15日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "修复了部署强力屏障时，仍会从正面受到伤害的问题。"
+   "text_cn": "修复了部署强力屏障时，仍会从正面受到伤害的问题。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-08-15-1",
@@ -127,8 +183,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/08/",
    "patch_title": "《守望先锋》补丁说明——2026年8月15日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "调整了机甲头部命中判定区域的高度，使其与模型更加贴合。"
+   "text_cn": "调整了机甲头部命中判定区域的高度，使其与模型更加贴合。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-08-14-1",
@@ -137,6 +201,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/08",
    "patch_title": "Overwatch Retail Patch Notes – August 14, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "surging-strike",
    "ability_en": "Surging Strike",
    "ability_cn": "突进刺击",
@@ -144,7 +209,10 @@
    "text_cn": null,
    "before": 0.15,
    "after": 0.05,
-   "metric": "cast time"
+   "by": -0.1,
+   "by_pct": null,
+   "metric": "cast_time",
+   "unit": "s"
   },
   {
    "patch": "en-2026-08-14-1",
@@ -153,6 +221,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/08",
    "patch_title": "Overwatch Retail Patch Notes – August 14, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "surging-strike",
    "ability_en": "Surging Strike",
    "ability_cn": "突进刺击",
@@ -160,7 +229,10 @@
    "text_cn": null,
    "before": 0.25,
    "after": 0.15,
-   "metric": "recovery"
+   "by": -0.1,
+   "by_pct": null,
+   "metric": "recovery",
+   "unit": "s"
   },
   {
    "patch": "en-2026-08-14-1",
@@ -169,6 +241,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/08",
    "patch_title": "Overwatch Retail Patch Notes – August 14, 2026",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "fusion-repeater",
    "ability_en": "Fusion Repeater",
    "ability_cn": "聚变连发枪",
@@ -176,7 +249,10 @@
    "text_cn": null,
    "before": 0.3,
    "after": 0.2,
-   "metric": "cast time"
+   "by": -0.1,
+   "by_pct": null,
+   "metric": "cast_time",
+   "unit": "s"
   },
   {
    "patch": "en-2026-08-14-1",
@@ -185,6 +261,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/08",
    "patch_title": "Overwatch Retail Patch Notes – August 14, 2026",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "fusion-repeater",
    "ability_en": "Fusion Repeater",
    "ability_cn": "聚变连发枪",
@@ -192,7 +269,10 @@
    "text_cn": null,
    "before": 0.5,
    "after": 0.2,
-   "metric": "recovery time"
+   "by": -0.3,
+   "by_pct": null,
+   "metric": "recovery",
+   "unit": "s"
   },
   {
    "patch": "en-2026-08-14-1",
@@ -201,8 +281,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/08",
    "patch_title": "Overwatch Retail Patch Notes – August 14, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Fixed a bug with Portable Fusion Repeater that could result in hits failing to register.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-08-14-1",
@@ -211,8 +299,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/08",
    "patch_title": "Overwatch Retail Patch Notes – August 14, 2026",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": "Fixed a bug with Limit Break not correctly granting Overhealth for targets hit.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-08-14-1",
@@ -221,8 +317,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/08",
    "patch_title": "Overwatch Retail Patch Notes – August 14, 2026",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": "Fixed in a previous update - Resolved an issue that prevented Overhealth from being applied when Limit Break was activated.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-08-14-1",
@@ -231,8 +335,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/08",
    "patch_title": "Overwatch Retail Patch Notes – August 14, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Fixed a bug where Toggle Propulsors did not work on console platforms.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-08-14-1",
@@ -241,8 +353,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/08",
    "patch_title": "Overwatch Retail Patch Notes – August 14, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Hitbox Changes",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-08-14-1",
@@ -251,8 +371,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/08",
    "patch_title": "Overwatch Retail Patch Notes – August 14, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Fixed an issue with being damaged from the front with while Power Barrier was deployed.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-08-14-1",
@@ -261,8 +389,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/08",
    "patch_title": "Overwatch Retail Patch Notes – August 14, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Adjusted the height of the mech head hitbox to be more flush with the model.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-08-13-1",
@@ -271,6 +407,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/08/",
    "patch_title": "《守望先锋》补丁说明——2026年8月13日",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "plasma-saber",
    "ability_en": "Plasma Saber",
    "ability_cn": "等离子剑",
@@ -278,7 +415,10 @@
    "text_cn": "伤害从60点提高至65点。",
    "before": 60.0,
    "after": 65.0,
-   "metric": "伤害"
+   "by": 5.0,
+   "by_pct": null,
+   "metric": "damage",
+   "unit": "hp"
   },
   {
    "patch": "cn-2026-08-13-1",
@@ -287,6 +427,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/08/",
    "patch_title": "《守望先锋》补丁说明——2026年8月13日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "propulsors",
    "ability_en": "Propulsors",
    "ability_cn": "助推器",
@@ -294,7 +435,10 @@
    "text_cn": "燃料消耗速度从40点降低至25点。",
    "before": 40.0,
    "after": 25.0,
-   "metric": "燃料消耗速度"
+   "by": -15.0,
+   "by_pct": null,
+   "metric": "燃料消耗速度",
+   "unit": "hp"
   },
   {
    "patch": "cn-2026-08-13-1",
@@ -303,6 +447,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/08/",
    "patch_title": "《守望先锋》补丁说明——2026年8月13日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "propulsors",
    "ability_en": "Propulsors",
    "ability_cn": "助推器",
@@ -310,7 +455,10 @@
    "text_cn": "燃料填充速度从15点提高至22.5点。",
    "before": 15.0,
    "after": 22.5,
-   "metric": "燃料填充速度"
+   "by": 7.5,
+   "by_pct": null,
+   "metric": "燃料填充速度",
+   "unit": "hp"
   },
   {
    "patch": "cn-2026-08-13-1",
@@ -319,6 +467,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/08/",
    "patch_title": "《守望先锋》补丁说明——2026年8月13日",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "fusion-repeater",
    "ability_en": "Fusion Repeater",
    "ability_cn": "聚变连发枪",
@@ -326,7 +475,10 @@
    "text_cn": "伤害从15点提高至16点。",
    "before": 15.0,
    "after": 16.0,
-   "metric": "伤害"
+   "by": 1.0,
+   "by_pct": null,
+   "metric": "damage",
+   "unit": "hp"
   },
   {
    "patch": "cn-2026-08-13-1",
@@ -335,6 +487,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/08/",
    "patch_title": "《守望先锋》补丁说明——2026年8月13日",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "fusion-repeater",
    "ability_en": "Fusion Repeater",
    "ability_cn": "聚变连发枪",
@@ -342,7 +495,10 @@
    "text_cn": "冷却时间从6秒缩短至4秒。",
    "before": 6.0,
    "after": 4.0,
-   "metric": "冷却时间"
+   "by": -2.0,
+   "by_pct": null,
+   "metric": "cooldown",
+   "unit": "s"
   },
   {
    "patch": "en-2026-08-12-1",
@@ -351,6 +507,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/08",
    "patch_title": "Overwatch Retail Patch Notes – August 12, 2026",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "plasma-saber",
    "ability_en": "Plasma Saber",
    "ability_cn": "等离子剑",
@@ -358,7 +515,10 @@
    "text_cn": null,
    "before": 60.0,
    "after": 65.0,
-   "metric": "damage"
+   "by": 5.0,
+   "by_pct": null,
+   "metric": "damage",
+   "unit": null
   },
   {
    "patch": "en-2026-08-12-1",
@@ -367,6 +527,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/08",
    "patch_title": "Overwatch Retail Patch Notes – August 12, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "propulsors",
    "ability_en": "Propulsors",
    "ability_cn": "助推器",
@@ -374,7 +535,10 @@
    "text_cn": null,
    "before": 40.0,
    "after": 25.0,
-   "metric": "fuel drain rate"
+   "by": -15.0,
+   "by_pct": null,
+   "metric": "fuel drain rate",
+   "unit": null
   },
   {
    "patch": "en-2026-08-12-1",
@@ -383,6 +547,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/08",
    "patch_title": "Overwatch Retail Patch Notes – August 12, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "propulsors",
    "ability_en": "Propulsors",
    "ability_cn": "助推器",
@@ -390,7 +555,10 @@
    "text_cn": null,
    "before": 15.0,
    "after": 22.5,
-   "metric": "fuel regen rate"
+   "by": 7.5,
+   "by_pct": null,
+   "metric": "fuel regen rate",
+   "unit": null
   },
   {
    "patch": "en-2026-08-12-1",
@@ -399,6 +567,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/08",
    "patch_title": "Overwatch Retail Patch Notes – August 12, 2026",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "fusion-repeater",
    "ability_en": "Fusion Repeater",
    "ability_cn": "聚变连发枪",
@@ -406,7 +575,10 @@
    "text_cn": null,
    "before": 15.0,
    "after": 16.0,
-   "metric": "damage"
+   "by": 1.0,
+   "by_pct": null,
+   "metric": "damage",
+   "unit": null
   },
   {
    "patch": "en-2026-08-12-1",
@@ -415,6 +587,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/08",
    "patch_title": "Overwatch Retail Patch Notes – August 12, 2026",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "fusion-repeater",
    "ability_en": "Fusion Repeater",
    "ability_cn": "聚变连发枪",
@@ -422,7 +595,106 @@
    "text_cn": null,
    "before": 6.0,
    "after": 4.0,
-   "metric": "cooldown"
+   "by": -2.0,
+   "by_pct": null,
+   "metric": "cooldown",
+   "unit": "s"
   }
- ]
+ ],
+ "values": {
+  "surging-strike:cast_time": [
+   {
+    "date": "2026-08-14",
+    "value": 0.05
+   },
+   {
+    "date": "2026-08-15",
+    "value": 0.05
+   }
+  ],
+  "surging-strike:recovery": [
+   {
+    "date": "2026-08-14",
+    "value": 0.15
+   },
+   {
+    "date": "2026-08-15",
+    "value": 0.15
+   }
+  ],
+  "fusion-repeater:cast_time": [
+   {
+    "date": "2026-08-14",
+    "value": 0.2
+   },
+   {
+    "date": "2026-08-15",
+    "value": 0.2
+   }
+  ],
+  "fusion-repeater:recovery": [
+   {
+    "date": "2026-08-14",
+    "value": 0.2
+   },
+   {
+    "date": "2026-08-15",
+    "value": 0.2
+   }
+  ],
+  "plasma-saber:damage": [
+   {
+    "date": "2026-08-12",
+    "value": 65.0
+   },
+   {
+    "date": "2026-08-13",
+    "value": 65.0
+   }
+  ],
+  "propulsors:燃料消耗速度": [
+   {
+    "date": "2026-08-13",
+    "value": 25.0
+   }
+  ],
+  "propulsors:燃料填充速度": [
+   {
+    "date": "2026-08-13",
+    "value": 22.5
+   }
+  ],
+  "fusion-repeater:damage": [
+   {
+    "date": "2026-08-12",
+    "value": 16.0
+   },
+   {
+    "date": "2026-08-13",
+    "value": 16.0
+   }
+  ],
+  "fusion-repeater:cooldown": [
+   {
+    "date": "2026-08-12",
+    "value": 4.0
+   },
+   {
+    "date": "2026-08-13",
+    "value": 4.0
+   }
+  ],
+  "propulsors:fuel drain rate": [
+   {
+    "date": "2026-08-12",
+    "value": 25.0
+   }
+  ],
+  "propulsors:fuel regen rate": [
+   {
+    "date": "2026-08-12",
+    "value": 22.5
+   }
+  ]
+ }
 }

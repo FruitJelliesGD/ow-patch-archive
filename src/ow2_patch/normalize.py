@@ -104,7 +104,9 @@ def split_merged_perk_general(data: dict) -> int:
             perks = list(hero.get("perks", []))
             kept = []
             for line in general:
-                m = _CN_MERGED_RE.match(line.strip())
+                text = line if isinstance(line, str) else (
+                    line.get("text_en") or line.get("text_cn") or "")
+                m = _CN_MERGED_RE.match(text.strip())
                 if m:
                     name, tier, body = m.group(1).strip(), m.group(2), m.group(3).strip()
                     # a body may itself hold the status marker ('已添加 …' / '已移除')

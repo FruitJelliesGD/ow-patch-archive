@@ -38,8 +38,30 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Base health increased from 225 to 350.",
-      "Base armor reduced from 325 to 300."
+      {
+       "text_en": "Base health increased from 225 to 350.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 225.0,
+       "after": 350.0,
+       "by": 125.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      },
+      {
+       "text_en": "Base armor reduced from 325 to 300.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 325.0,
+       "after": 300.0,
+       "by": -25.0,
+       "by_pct": null,
+       "metric": "base armor",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -53,14 +75,22 @@
          "text_cn": null,
          "before": 3.375,
          "after": 4.0,
-         "metric": "weapon spread"
+         "metric": "weapon spread",
+         "by": 0.625,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "weapon spread"
         },
         {
          "text_en": "Movement speed penalty increased from 30% to 40%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -74,7 +104,11 @@
          "text_cn": null,
          "before": 3.0,
          "after": 2.0,
-         "metric": "maximum duration"
+         "metric": "maximum duration",
+         "by": -1.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "maximum duration"
         }
        ]
       },
@@ -88,7 +122,11 @@
          "text_cn": null,
          "before": 3.5,
          "after": 4.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": 0.5,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       },
@@ -102,7 +140,11 @@
          "text_cn": null,
          "before": 7.0,
          "after": 8.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": 1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       }
@@ -115,7 +157,18 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Base health increased from 375 to 425."
+      {
+       "text_en": "Base health increased from 375 to 425.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 375.0,
+       "after": 425.0,
+       "by": 50.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -129,7 +182,11 @@
          "text_cn": null,
          "before": 6.5,
          "after": 7.5,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": 1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       },
@@ -143,14 +200,22 @@
          "text_cn": null,
          "before": 2.5,
          "after": 2.0,
-         "metric": "maximum duration"
+         "metric": "maximum duration",
+         "by": -0.5,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "maximum duration"
         },
         {
          "text_en": "Cooldown increased from 7 to 8 seconds.",
          "text_cn": null,
          "before": 7.0,
          "after": 8.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": 1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       },
@@ -164,14 +229,22 @@
          "text_cn": null,
          "before": 40.0,
          "after": 35.0,
-         "metric": "overhealth gained per target"
+         "metric": "overhealth",
+         "by": -5.0,
+         "by_pct": null,
+         "unit": "hp",
+         "raw_metric": "overhealth gained per target"
         },
         {
          "text_en": "Maximum temporary health reduced from 200 to 150 health.",
          "text_cn": null,
          "before": 200.0,
          "after": 150.0,
-         "metric": "maximum temporary health"
+         "metric": "maximum temporary health",
+         "by": -50.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "maximum temporary health"
         }
        ]
       }
@@ -196,14 +269,22 @@
          "text_cn": null,
          "before": 3.5,
          "after": 3.0,
-         "metric": "duration"
+         "metric": "duration",
+         "by": -0.5,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "duration"
         },
         {
          "text_en": "Recharge time increased from 5 to 6 seconds.",
          "text_cn": null,
          "before": 5.0,
          "after": 6.0,
-         "metric": "recharge time"
+         "metric": "recharge time",
+         "by": 1.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "recharge time"
         }
        ]
       },
@@ -217,14 +298,22 @@
          "text_cn": null,
          "before": 12.0,
          "after": 15.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": 3.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         },
         {
          "text_en": "Health increased from 400 to 500.",
          "text_cn": null,
          "before": 400.0,
          "after": 500.0,
-         "metric": "health"
+         "metric": "health",
+         "by": 100.0,
+         "by_pct": null,
+         "unit": "hp",
+         "raw_metric": "health"
         }
        ]
       }
@@ -237,7 +326,18 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Base health increased from 375 to 425."
+      {
+       "text_en": "Base health increased from 375 to 425.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 375.0,
+       "after": 425.0,
+       "by": 50.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -251,7 +351,11 @@
          "text_cn": null,
          "before": 12.0,
          "after": 15.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": 3.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       },
@@ -265,7 +369,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -278,8 +386,30 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Base armor reduced from 150 to 100.",
-      "Base health increased from 425 to 450."
+      {
+       "text_en": "Base armor reduced from 150 to 100.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 150.0,
+       "after": 100.0,
+       "by": -50.0,
+       "by_pct": null,
+       "metric": "base armor",
+       "unit": null
+      },
+      {
+       "text_en": "Base health increased from 425 to 450.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 425.0,
+       "after": 450.0,
+       "by": 25.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -293,14 +423,22 @@
          "text_cn": null,
          "before": 5.0,
          "after": 7.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": 2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         },
         {
          "text_en": "Stomp damage reduced from 75 to 60.",
          "text_cn": null,
          "before": 75.0,
          "after": 60.0,
-         "metric": "stomp damage"
+         "metric": "stomp damage",
+         "by": -15.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "stomp damage"
         }
        ]
       },
@@ -320,7 +458,11 @@
          "text_cn": null,
          "before": 8.0,
          "after": 7.0,
-         "metric": "maximum duration"
+         "metric": "maximum duration",
+         "by": -1.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "maximum duration"
         }
        ]
       }
@@ -333,8 +475,30 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Base armor reduced from 325 to 250.",
-      "Base health increased from 150 to 250."
+      {
+       "text_en": "Base armor reduced from 325 to 250.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 325.0,
+       "after": 250.0,
+       "by": -75.0,
+       "by_pct": null,
+       "metric": "base armor",
+       "unit": null
+      },
+      {
+       "text_en": "Base health increased from 150 to 250.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 150.0,
+       "after": 250.0,
+       "by": 100.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -348,7 +512,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -362,7 +530,11 @@
          "text_cn": null,
          "before": 8.0,
          "after": 7.0,
-         "metric": "maximum duration"
+         "metric": "maximum duration",
+         "by": -1.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "maximum duration"
         }
        ]
       },
@@ -376,7 +548,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -389,7 +565,18 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Base health increased from 250 to 375."
+      {
+       "text_en": "Base health increased from 250 to 375.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 250.0,
+       "after": 375.0,
+       "by": 125.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -403,7 +590,11 @@
          "text_cn": null,
          "before": 13.0,
          "after": 16.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": 3.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       },
@@ -417,7 +608,11 @@
          "text_cn": null,
          "before": 300.0,
          "after": 200.0,
-         "metric": "bonus armor"
+         "metric": "bonus armor",
+         "by": -100.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "bonus armor"
         }
        ]
       }
@@ -430,9 +625,42 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Base health increased from 250 to 325.",
-      "Base armor reduced from 300 to 225.",
-      "Now has the Steadfast passive again, reducing knockback by 30%."
+      {
+       "text_en": "Base health increased from 250 to 325.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 250.0,
+       "after": 325.0,
+       "by": 75.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      },
+      {
+       "text_en": "Base armor reduced from 300 to 225.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 300.0,
+       "after": 225.0,
+       "by": -75.0,
+       "by_pct": null,
+       "metric": "base armor",
+       "unit": null
+      },
+      {
+       "text_en": "Now has the Steadfast passive again, reducing knockback by 30%.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -446,7 +674,11 @@
          "text_cn": null,
          "before": 1500.0,
          "after": 2000.0,
-         "metric": "health"
+         "metric": "health",
+         "by": 500.0,
+         "by_pct": null,
+         "unit": "hp",
+         "raw_metric": "health"
         }
        ]
       },
@@ -460,14 +692,22 @@
          "text_cn": null,
          "before": 7.0,
          "after": 10.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": 3.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         },
         {
          "text_en": "Steering reduced 50%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "steering",
+         "by": null,
+         "by_pct": 50.0,
+         "unit": null,
+         "raw_metric": "steering"
         }
        ]
       },
@@ -481,7 +721,11 @@
          "text_cn": null,
          "before": 2.0,
          "after": 1.0,
-         "metric": "ability charges"
+         "metric": "ability charges",
+         "by": -1.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "ability charges"
         }
        ]
       },
@@ -495,7 +739,11 @@
          "text_cn": null,
          "before": 25.0,
          "after": 20.0,
-         "metric": "distance"
+         "metric": "distance",
+         "by": -5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "distance"
         }
        ]
       }
@@ -508,7 +756,18 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Base health increased from 600 to 650."
+      {
+       "text_en": "Base health increased from 600 to 650.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 600.0,
+       "after": 650.0,
+       "by": 50.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -522,35 +781,55 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Primary fire 4 large center projectiles removed.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Primary fire pellets per shot increased from 16 to 25 projectiles.",
          "text_cn": null,
          "before": 16.0,
          "after": 25.0,
-         "metric": "primary fire pellets per shot"
+         "metric": "primary fire pellets per shot",
+         "by": 9.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "primary fire pellets per shot"
         },
         {
          "text_en": "Damage per pellet increased from 6.25 to 6.5.",
          "text_cn": null,
          "before": 6.25,
          "after": 6.5,
-         "metric": "damage per pellet"
+         "metric": "damage",
+         "by": 0.25,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage per pellet"
         },
         {
          "text_en": "Critical damage multiplier increased from 1.5 to 2x.",
          "text_cn": null,
          "before": 1.5,
          "after": 2.0,
-         "metric": "critical damage multiplier"
+         "metric": "critical damage multiplier",
+         "by": 0.5,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "critical damage multiplier"
         }
        ]
       },
@@ -570,28 +849,44 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Maximum heal reduced from 400 to 325.",
          "text_cn": null,
          "before": 400.0,
          "after": 325.0,
-         "metric": "maximum heal"
+         "metric": "maximum heal",
+         "by": -75.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "maximum heal"
         },
         {
          "text_en": "Damage reduction increased from 40 to 50%.",
          "text_cn": null,
          "before": 40.0,
          "after": 50.0,
-         "metric": "damage reduction"
+         "metric": "damage",
+         "by": 10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage reduction"
         },
         {
          "text_en": "Cooldown is now 8 seconds, no longer resource based.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -605,7 +900,11 @@
          "text_cn": null,
          "before": 8.0,
          "after": 6.0,
-         "metric": "duration"
+         "metric": "duration",
+         "by": -2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "duration"
         }
        ]
       },
@@ -619,7 +918,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -632,7 +935,18 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Base shield health reduced from 275 to 250."
+      {
+       "text_en": "Base shield health reduced from 275 to 250.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 275.0,
+       "after": 250.0,
+       "by": -25.0,
+       "by_pct": null,
+       "metric": "base shield health",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -646,7 +960,11 @@
          "text_cn": null,
          "before": 85.0,
          "after": 100.0,
-         "metric": "recharge rate"
+         "metric": "recharge rate",
+         "by": 15.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "recharge rate"
         }
        ]
       },
@@ -660,7 +978,11 @@
          "text_cn": null,
          "before": 120.0,
          "after": 100.0,
-         "metric": "damage"
+         "metric": "damage",
+         "by": -20.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage"
         }
        ]
       }
@@ -673,8 +995,30 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Base health increased from 225 to 350.",
-      "Base armor reduced from 250 to 200."
+      {
+       "text_en": "Base health increased from 225 to 350.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 225.0,
+       "after": 350.0,
+       "by": 125.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      },
+      {
+       "text_en": "Base armor reduced from 250 to 200.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 250.0,
+       "after": 200.0,
+       "by": -50.0,
+       "by_pct": null,
+       "metric": "base armor",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -688,21 +1032,33 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Secondary fire charge time increased from 0.85 to 1.1 sec.",
          "text_cn": null,
          "before": 0.85,
          "after": 1.1,
-         "metric": "secondary fire charge time"
+         "metric": "secondary fire charge time",
+         "by": 0.25,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "secondary fire charge time"
         },
         {
          "text_en": "Secondary fire ammo cost increased from 12 to 25.",
          "text_cn": null,
          "before": 12.0,
          "after": 25.0,
-         "metric": "secondary fire ammo cost"
+         "metric": "secondary fire ammo cost",
+         "by": 13.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "secondary fire ammo cost"
         }
        ]
       },
@@ -716,7 +1072,11 @@
          "text_cn": null,
          "before": 5.0,
          "after": 6.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": 1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       },
@@ -730,7 +1090,11 @@
          "text_cn": null,
          "before": 12.0,
          "after": 13.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": 1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       },
@@ -744,7 +1108,11 @@
          "text_cn": null,
          "before": 700.0,
          "after": 500.0,
-         "metric": "maximum health gain"
+         "metric": "maximum health gain",
+         "by": -200.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "maximum health gain"
         }
        ]
       }
@@ -757,9 +1125,42 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Base shield health removed.",
-      "Base health increased from 300 to 500.",
-      "Base armor reduced from 175 to 150."
+      {
+       "text_en": "Base shield health removed.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Base health increased from 300 to 500.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 300.0,
+       "after": 500.0,
+       "by": 200.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      },
+      {
+       "text_en": "Base armor reduced from 175 to 150.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 175.0,
+       "after": 150.0,
+       "by": -25.0,
+       "by_pct": null,
+       "metric": "base armor",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -773,21 +1174,33 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Radius reduced from 13 to 8 meters.",
          "text_cn": null,
          "before": 13.0,
          "after": 8.0,
-         "metric": "radius"
+         "metric": "radius",
+         "by": -5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "radius"
         },
         {
          "text_en": "Overhealth gained per target reduced from 100 to 75.",
          "text_cn": null,
          "before": 100.0,
          "after": 75.0,
-         "metric": "overhealth gained per target"
+         "metric": "overhealth",
+         "by": -25.0,
+         "by_pct": null,
+         "unit": "hp",
+         "raw_metric": "overhealth gained per target"
         }
        ]
       },
@@ -801,7 +1214,11 @@
          "text_cn": null,
          "before": 8.0,
          "after": 10.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": 2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       }
@@ -814,7 +1231,18 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Base health increased from 175 to 225."
+      {
+       "text_en": "Base health increased from 175 to 225.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 175.0,
+       "after": 225.0,
+       "by": 50.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -828,28 +1256,44 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Health reduced from 225 to 200.",
          "text_cn": null,
          "before": 225.0,
          "after": 200.0,
-         "metric": "health"
+         "metric": "health",
+         "by": -25.0,
+         "by_pct": null,
+         "unit": "hp",
+         "raw_metric": "health"
         },
         {
          "text_en": "Duration reduced from 2.25 to 2 seconds.",
          "text_cn": null,
          "before": 2.25,
          "after": 2.0,
-         "metric": "duration"
+         "metric": "duration",
+         "by": -0.25,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "duration"
         },
         {
          "text_en": "Cooldown reduced from 11 to 10 seconds.",
          "text_cn": null,
          "before": 11.0,
          "after": 10.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": -1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       },
@@ -863,21 +1307,33 @@
          "text_cn": null,
          "before": 225.0,
          "after": 200.0,
-         "metric": "health"
+         "metric": "health",
+         "by": -25.0,
+         "by_pct": null,
+         "unit": "hp",
+         "raw_metric": "health"
         },
         {
          "text_en": "Duration reduced from 2.25 to 2 seconds.",
          "text_cn": null,
          "before": 2.25,
          "after": 2.0,
-         "metric": "duration"
+         "metric": "duration",
+         "by": -0.25,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "duration"
         },
         {
          "text_en": "Cooldown reduced from 9 to 8 seconds.",
          "text_cn": null,
          "before": 9.0,
          "after": 8.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": -1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       }
@@ -911,7 +1367,11 @@
          "text_cn": null,
          "before": 1000.0,
          "after": 1200.0,
-         "metric": "s health"
+         "metric": "s health",
+         "by": 200.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "s health"
         }
        ]
       }
@@ -936,7 +1396,11 @@
          "text_cn": null,
          "before": 45.0,
          "after": 50.0,
-         "metric": "fan the hammer secondary fire damage"
+         "metric": "fan the hammer secondary fire damage",
+         "by": 5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "fan the hammer secondary fire damage"
         }
        ]
       }
@@ -961,7 +1425,11 @@
          "text_cn": null,
          "before": 3.5,
          "after": 4.0,
-         "metric": "damage multiplier for low health targets"
+         "metric": "damage",
+         "by": 0.5,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage multiplier for low health targets"
         }
        ]
       },
@@ -975,7 +1443,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -1000,7 +1472,11 @@
          "text_cn": null,
          "before": 0.8,
          "after": 0.72,
-         "metric": "time to fully charge each shot"
+         "metric": "time to fully charge each shot",
+         "by": -0.08,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "time to fully charge each shot"
         }
        ]
       }
@@ -1025,7 +1501,11 @@
          "text_cn": null,
          "before": 250.0,
          "after": 300.0,
-         "metric": "wall health"
+         "metric": "wall health",
+         "by": 50.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "wall health"
         }
        ]
       }
@@ -1050,7 +1530,11 @@
          "text_cn": null,
          "before": 19.0,
          "after": 20.0,
-         "metric": "damage"
+         "metric": "damage",
+         "by": 1.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage"
         }
        ]
       }
@@ -1075,7 +1559,11 @@
          "text_cn": null,
          "before": 13.0,
          "after": 15.0,
-         "metric": "damage"
+         "metric": "damage",
+         "by": 2.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage"
         }
        ]
       }
@@ -1100,7 +1588,11 @@
          "text_cn": null,
          "before": 10.0,
          "after": 12.0,
-         "metric": "falloff range"
+         "metric": "falloff range",
+         "by": 2.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "falloff range"
         }
        ]
       }
@@ -1113,7 +1605,18 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Base health increased from 200 to 225."
+      {
+       "text_en": "Base health increased from 200 to 225.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 200.0,
+       "after": 225.0,
+       "by": 25.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -1146,7 +1649,11 @@
          "text_cn": null,
          "before": 15.0,
          "after": 12.0,
-         "metric": "maximum ammo"
+         "metric": "maximum ammo",
+         "by": -3.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "maximum ammo"
         }
        ]
       },
@@ -1160,7 +1667,11 @@
          "text_cn": null,
          "before": 12.0,
          "after": 10.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": -2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       },
@@ -1174,14 +1685,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Cooldown reduced from 14 to 12 seconds.",
          "text_cn": null,
          "before": 14.0,
          "after": 12.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": -2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       }
@@ -1206,21 +1725,33 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Instant heal increased from 40 to 50.",
          "text_cn": null,
          "before": 40.0,
          "after": 50.0,
-         "metric": "instant heal"
+         "metric": "instant heal",
+         "by": 10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "instant heal"
         },
         {
          "text_en": "Healing over time increased from 40 to 100 over 5 seconds.",
          "text_cn": null,
          "before": 40.0,
          "after": 100.0,
-         "metric": "healing over time"
+         "metric": "healing",
+         "by": 60.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "healing over time"
         }
        ]
       },
@@ -1234,7 +1765,11 @@
          "text_cn": null,
          "before": 125.0,
          "after": 150.0,
-         "metric": "drone health"
+         "metric": "drone health",
+         "by": 25.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "drone health"
         }
        ]
       }
@@ -1259,14 +1794,22 @@
          "text_cn": null,
          "before": 70.0,
          "after": 75.0,
-         "metric": "max damage"
+         "metric": "max damage",
+         "by": 5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "max damage"
         },
         {
          "text_en": "Min damage increased from 20 to 25.",
          "text_cn": null,
          "before": 20.0,
          "after": 25.0,
-         "metric": "min damage"
+         "metric": "min damage",
+         "by": 5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "min damage"
         }
        ]
       },
@@ -1280,7 +1823,11 @@
          "text_cn": null,
          "before": 14.0,
          "after": 12.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": -2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       }
@@ -1305,7 +1852,11 @@
          "text_cn": null,
          "before": 10.0,
          "after": 12.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": 2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       },
@@ -1319,7 +1870,11 @@
          "text_cn": null,
          "before": 6.0,
          "after": 4.5,
-         "metric": "maximum duration"
+         "metric": "maximum duration",
+         "by": -1.5,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "maximum duration"
         }
        ]
       },
@@ -1333,7 +1888,11 @@
          "text_cn": null,
          "before": 10.0,
          "after": 8.0,
-         "metric": "maximum duration"
+         "metric": "maximum duration",
+         "by": -2.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "maximum duration"
         }
        ]
       }
@@ -1358,14 +1917,22 @@
          "text_cn": null,
          "before": 0.9,
          "after": 0.8,
-         "metric": "recovery time"
+         "metric": "recovery",
+         "by": -0.1,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "recovery time"
         },
         {
          "text_en": "Healing per projectile increased from 13 to 14.",
          "text_cn": null,
          "before": 13.0,
          "after": 14.0,
-         "metric": "healing per projectile"
+         "metric": "healing",
+         "by": 1.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "healing per projectile"
         }
        ]
       }
@@ -1390,7 +1957,11 @@
          "text_cn": null,
          "before": 80.0,
          "after": 90.0,
-         "metric": "maximum heal"
+         "metric": "maximum heal",
+         "by": 10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "maximum heal"
         }
        ]
       },
@@ -1404,7 +1975,11 @@
          "text_cn": null,
          "before": 12.0,
          "after": 15.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": 3.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       },
@@ -1418,14 +1993,22 @@
          "text_cn": null,
          "before": 15.0,
          "after": 12.0,
-         "metric": "maximum duration"
+         "metric": "maximum duration",
+         "by": -3.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "maximum duration"
         },
         {
          "text_en": "Maximum health increased from 1200 to 1400.",
          "text_cn": null,
          "before": 1200.0,
          "after": 1400.0,
-         "metric": "maximum health"
+         "metric": "maximum health",
+         "by": 200.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "maximum health"
         }
        ]
       }
@@ -1462,14 +2045,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Time to fall off target when not in line of sight increased from 1.5 to 3 seconds.",
          "text_cn": null,
          "before": 1.5,
          "after": 3.0,
-         "metric": "time to fall off target when not in line of sight"
+         "metric": "time to fall off target when not in line of sight",
+         "by": 1.5,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "time to fall off target when not in line of sight"
         }
        ]
       },
@@ -1483,14 +2074,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "knockback",
+         "by": null,
+         "by_pct": 20.0,
+         "unit": null,
+         "raw_metric": "knockback"
         },
         {
          "text_en": "No longer increases quick melee damage.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -1501,5 +2100,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:819a7731e37c8b950df0c198408f5e910602bf38468ae7452427451a44cd32ad"
+ "hash": "sha256:1e39b56ea02f7dc2e820799a68f77ece4fdfa10b4a41956fe24bb749951c3bf2"
 }

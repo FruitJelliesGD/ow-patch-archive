@@ -19,7 +19,18 @@
      "role": "support",
      "dev_note": "After gaining multiple Repair Pack charges, Brigitte was enabled to play at safer distances while still having a powerful impact on her team. Combined with her personal barrier, she ended up not needing as much survivability in terms of raw health. Inspire has also had a powerful team impact despite being hard to feel due to its passive nature, so we are lowering its team-wide healing output while making it more useful for Brigitte herself.",
      "general": [
-      "Base health lowered from 200 to 150"
+      {
+       "text_en": "Base health lowered from 200 to 150",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 200.0,
+       "after": 150.0,
+       "by": -50.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -33,14 +44,22 @@
          "text_cn": null,
          "before": 130.0,
          "after": 90.0,
-         "metric": "total healing"
+         "metric": "total healing",
+         "by": -40.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "total healing"
         },
         {
          "text_en": "Self-healing is no longer reduced by half",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -53,7 +72,18 @@
      "role": "tank",
      "dev_note": "The large radius of Orisa's Halt! ability made it too effective in setting up combos against large groups of enemies on a relatively short cooldown. The changes to the projectile speed and radius are aimed at shifting its use to be more effective at catching single targets.",
      "general": [
-      "Base armor reduced from 250 to 200"
+      {
+       "text_en": "Base armor reduced from 250 to 200",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 250.0,
+       "after": 200.0,
+       "by": -50.0,
+       "by_pct": null,
+       "metric": "base armor",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -67,14 +97,22 @@
          "text_cn": null,
          "before": 7.0,
          "after": 4.0,
-         "metric": "radius"
+         "metric": "radius",
+         "by": -3.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "radius"
         },
         {
          "text_en": "Projectile speed increased from 20 to 30",
          "text_cn": null,
          "before": 20.0,
          "after": 30.0,
-         "metric": "projectile speed"
+         "metric": "projectile_speed",
+         "by": 10.0,
+         "by_pct": null,
+         "unit": "m/s",
+         "raw_metric": "projectile speed"
         }
        ]
       }
@@ -99,14 +137,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "move_speed",
+         "by": null,
+         "by_pct": 20.0,
+         "unit": null,
+         "raw_metric": "movement speed"
         },
         {
          "text_en": "Regeneration rate reduced from 50 to 35 per second",
          "text_cn": null,
          "before": 50.0,
          "after": 35.0,
-         "metric": "regeneration rate"
+         "metric": "regeneration rate",
+         "by": -15.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "regeneration rate"
         }
        ]
       },
@@ -120,7 +166,11 @@
          "text_cn": null,
          "before": 3.0,
          "after": 2.5,
-         "metric": "duration"
+         "metric": "duration",
+         "by": -0.5,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "duration"
         }
        ]
       }
@@ -145,21 +195,33 @@
          "text_cn": null,
          "before": 6.0,
          "after": 5.0,
-         "metric": "ammo"
+         "metric": "ammo",
+         "by": -1.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "ammo"
         },
         {
          "text_en": "Damage per projectile increased from 6 to 7",
          "text_cn": null,
          "before": 6.0,
          "after": 7.0,
-         "metric": "damage per projectile"
+         "metric": "damage",
+         "by": 1.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage per projectile"
         },
         {
          "text_en": "Recovery increased from 0.7 to 0.85 seconds",
          "text_cn": null,
          "before": 0.7,
          "after": 0.85,
-         "metric": "recovery"
+         "metric": "recovery",
+         "by": 0.15,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "recovery"
         }
        ]
       }
@@ -184,14 +246,22 @@
          "text_cn": null,
          "before": 900.0,
          "after": 700.0,
-         "metric": "health"
+         "metric": "health",
+         "by": -200.0,
+         "by_pct": null,
+         "unit": "hp",
+         "raw_metric": "health"
         },
         {
          "text_en": "Regeneration rate reduced from 120 to 80 per second",
          "text_cn": null,
          "before": 120.0,
          "after": 80.0,
-         "metric": "regeneration rate"
+         "metric": "regeneration rate",
+         "by": -40.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "regeneration rate"
         }
        ]
       },
@@ -205,7 +275,11 @@
          "text_cn": null,
          "before": 10.0,
          "after": 12.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": 2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       }
@@ -230,7 +304,11 @@
          "text_cn": null,
          "before": 12.0,
          "after": 10.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": -2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       }
@@ -255,14 +333,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "charge rate",
+         "by": null,
+         "by_pct": 15.0,
+         "unit": null,
+         "raw_metric": "charge rate"
         },
         {
          "text_en": "Rate of fire increased from 8.5 to 9 shots per second",
          "text_cn": null,
          "before": 8.5,
          "after": 9.0,
-         "metric": "rate of fire"
+         "metric": "rate_of_fire",
+         "by": 0.5,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "rate of fire"
         }
        ]
       }
@@ -273,5 +359,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:1a5cf051a2980e1b9fb93acc5cb99445548b77c12e3180777fe5f999c5347b44"
+ "hash": "sha256:82a0f715ee1cb720ae3a18b4c44c39e5c40db9e86f2bc32f0ab9c4d1e3215714"
 }

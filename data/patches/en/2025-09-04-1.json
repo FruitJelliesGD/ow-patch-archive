@@ -41,12 +41,52 @@
      "role": "tank",
      "dev_note": "Developer Comments: D.Va’s early weapon power spike created by the low cost 20% weapon power epic was providing disproportionate efficiency compared to similar options. This allowed her to secure early eliminations too reliably and snowball matches ahead of curve. Additionally, her Facetanking builds offered above-average durability relative to other tanks. This update reduces both the efficiency of her early weapon power scaling and the overall survivability of Facetanking strategies to better align with intended balance.",
      "general": [
-      "Facetanking - Power",
-      "Healing decreased to 30% (Down from 40%).",
-      "Multitask-Mod - Epic Weapon Hero Item",
-      "Weapon power decreased to 10% (Down from 20%)."
+      {
+       "text_en": "Healing decreased to 30% (Down from 40%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Multitask-Mod - Epic Weapon Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Weapon power decreased to 10% (Down from 20%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Facetanking",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     },
     {
@@ -56,10 +96,28 @@
      "role": "tank",
      "dev_note": "Developer Comments: Royal Bullets was winning duels a little too royally, popping targets with minimal setup. This trim keeps it snappy and satisfying without letting it wear the crown in every build.",
      "general": [
-      "Royal Bullets - Power",
-      "Damage decreased to 40 (Down from 50)."
+      {
+       "text_en": "Damage decreased to 40 (Down from 50).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Royal Bullets",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     },
     {
@@ -69,8 +127,30 @@
      "role": "tank",
      "dev_note": "Developer Comments: Orisa was having a tough time holding her ground against beam-heavy foes like Zarya. This update gives her a sturdier answer so she can stare down beams a bit longer and keep the frontline strong.",
      "general": [
-      "Refraction Tiles - Rare Survival Hero Item",
-      "Damage reduction increased to 75% (Up from 50%)."
+      {
+       "text_en": "Refraction Tiles - Rare Survival Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Damage reduction increased to 75% (Up from 50%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -91,14 +171,71 @@
      "role": "damage",
      "dev_note": "Developer Comments: Pharah’s mini barrage build has been raining down a little too much fire, melting teams before they knew what hit them. This is the first step in dialing back that bursty damage while keeping the build exciting, with more tuning planned in future updates.",
      "general": [
-      "Recursion Battery - Power",
-      "Lifesteal decreased to 25% (Down from 50%).",
-      "Blitz Barrage - Power",
-      "Rocket number reduction increased to 75% (Up from 60%).",
-      "Overcharged Ordnance - Rare Ability Hero Item",
-      "Cost increased to 5500 (Up from 4000)."
+      {
+       "text_en": "Lifesteal decreased to 25% (Down from 50%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Rocket number reduction increased to 75% (Up from 60%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Overcharged Ordnance - Rare Ability Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Cost increased to 5500 (Up from 4000).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 4000.0,
+       "after": 5500.0,
+       "by": 1500.0,
+       "by_pct": null,
+       "metric": "cost",
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Recursion Battery",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Blitz Barrage",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     }
    ],
@@ -117,12 +254,52 @@
      "role": "support",
      "dev_note": "Developer Comments: Scavenged Steel was previously allowing players to chain Rallies together, making it feel like she had Rally every fight. This change should lower Rally uptime so there are greater windows of opportunity to counterplay. We're also lightly increasing the healing reliability of Brigitte's Weapon Power build.",
      "general": [
-      "Righteous Cleave - Power",
-      "Healing Range increased to 10m (Up from 5m).",
-      "Scavenged Steel - Epic Ability Hero Item",
-      "No longer grants Ultimate Charge while Rally is active."
+      {
+       "text_en": "Healing Range increased to 10m (Up from 5m).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Scavenged Steel - Epic Ability Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "No longer grants Ultimate Charge while Rally is active.",
+       "text_cn": null,
+       "subject": "ultimate_cost",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Righteous Cleave",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     }
    ],
@@ -144,5 +321,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:d1458f1432e596a314372aab20dc1c2b4e7cff0ab76383a244a95d3e6ce372cf"
+ "hash": "sha256:7e1825490d45cf6950830d06909ac5d781df0ab58734ba15cf1a4539085b4266"
 }

@@ -47,28 +47,44 @@
          "text_cn": null,
          "before": 7.5,
          "after": 8.0,
-         "metric": "damage"
+         "metric": "damage",
+         "by": 0.5,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage"
         },
         {
          "text_en": "Minimum Spread reduced from 0.5 to 0.",
          "text_cn": null,
          "before": 0.5,
          "after": 0.0,
-         "metric": "minimum spread"
+         "metric": "minimum spread",
+         "by": -0.5,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "minimum spread"
         },
         {
          "text_en": "Number of shots until max spread has been increased from 3 to 6 shots.",
          "text_cn": null,
          "before": 3.0,
          "after": 6.0,
-         "metric": "number of shots until max spread has been"
+         "metric": "number of shots until max spread has been",
+         "by": 3.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "number of shots until max spread has been"
         },
         {
          "text_en": "Reload time reduced from 1.4 seconds to 1.2 seconds.",
          "text_cn": null,
-         "before": null,
-         "after": null,
-         "metric": null
+         "before": 1.4,
+         "after": 1.2,
+         "metric": "reload time",
+         "by": -0.2,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "reload time"
         }
        ]
       },
@@ -80,37 +96,57 @@
         {
          "text_en": "Cast time reduced from 0.75 seconds to 0.65 seconds.",
          "text_cn": null,
-         "before": null,
-         "after": null,
-         "metric": null
+         "before": 0.75,
+         "after": 0.65,
+         "metric": "cast_time",
+         "by": -0.1,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cast time"
         },
         {
          "text_en": "Now cancels Stealth when hacking an enemy hero.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Cooldown increased from 4 to 6 seconds.",
          "text_cn": null,
          "before": 4.0,
          "after": 6.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": 2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         },
         {
          "text_en": "Hack has a reduced cooldown of 3 seconds if Hack is interrupted or if a non-hero enemy is hacked.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "The \"Hacked\" warning text will now only appear while you are silenced and not for the remainder duration of the hack debuff.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -124,7 +160,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -138,35 +178,55 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Stealth movement speed bonus reduced from 60% to 45%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Fade Out duration into Stealth reduced from 0.375 seconds to 0.25 seconds.",
          "text_cn": null,
-         "before": null,
-         "after": null,
-         "metric": null
+         "before": 0.375,
+         "after": 0.25,
+         "metric": "fade out duration into stealth",
+         "by": -0.125,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "fade out duration into stealth"
         },
         {
          "text_en": "Fade In duration from Stealth reduced from 0.5 seconds to 0.375 seconds.",
          "text_cn": null,
-         "before": null,
-         "after": null,
-         "metric": null
+         "before": 0.5,
+         "after": 0.375,
+         "metric": "fade in duration from stealth",
+         "by": -0.125,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "fade in duration from stealth"
         },
         {
          "text_en": "Updated the UI messaging to the Sombra player when hacking Health Packs to \"Revealed\" instead of \"Detected\". Now the message \"Detected\" is only used when an enemy player is in the detection radius.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -180,42 +240,66 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Reduces the Stealth passive cooldown after teleporting.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Projectile speed increased from 25 to 72.",
          "text_cn": null,
          "before": 25.0,
          "after": 72.0,
-         "metric": "projectile speed"
+         "metric": "projectile_speed",
+         "by": 47.0,
+         "by_pct": null,
+         "unit": "m/s",
+         "raw_metric": "projectile speed"
         },
         {
          "text_en": "Cooldown reduced from 6 seconds to 5 seconds. Cooldown now begins after",
          "text_cn": null,
-         "before": null,
-         "after": null,
-         "metric": null
+         "before": 6.0,
+         "after": 5.0,
+         "metric": "cooldown",
+         "by": -1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         },
         {
          "text_en": "Sombra teleports to the location of the Transponder.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Projectile launch initial vertical offset removed.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -229,14 +313,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "ultimate_cost",
+         "by": null,
+         "by_pct": 15.0,
+         "unit": null,
+         "raw_metric": "ultimate charge cost"
         },
         {
          "text_en": "Health percent damage decreased from 40% to 30%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -250,28 +342,44 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Fire a projectile that damages an enemy over time. Damage is dealt faster on Hacked enemies.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Impact Damage: 10 (20 on hacked target).",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Damage over time: 100 over 4 seconds (100 over 2 seconds on hacked target).",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -352,7 +460,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -377,7 +489,11 @@
          "text_cn": null,
          "before": 8.0,
          "after": 7.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": -1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       }
@@ -402,7 +518,11 @@
          "text_cn": null,
          "before": 20.0,
          "after": 30.0,
-         "metric": "number of shots to reach max spread"
+         "metric": "number of shots to reach max spread",
+         "by": 10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "number of shots to reach max spread"
         }
        ]
       }
@@ -427,14 +547,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "size",
+         "by": null,
+         "by_pct": 15.0,
+         "unit": null,
+         "raw_metric": "size"
         },
         {
          "text_en": "Health decreased from 225 to 200 matching back to the health of Particle Barrier.",
          "text_cn": null,
          "before": 225.0,
          "after": 200.0,
-         "metric": "health"
+         "metric": "health",
+         "by": -25.0,
+         "by_pct": null,
+         "unit": "hp",
+         "raw_metric": "health"
         }
        ]
       }
@@ -468,7 +596,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -493,7 +625,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -507,14 +643,22 @@
          "text_cn": null,
          "before": 70.0,
          "after": 100.0,
-         "metric": "damage per second"
+         "metric": "damage",
+         "by": 30.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage per second"
         },
         {
          "text_en": "Now immediately slows enemies by 40% instead of building up over time.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -539,7 +683,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -553,7 +701,11 @@
          "text_cn": null,
          "before": 100.0,
          "after": 75.0,
-         "metric": "overhealth bonus"
+         "metric": "overhealth",
+         "by": -25.0,
+         "by_pct": null,
+         "unit": "hp",
+         "raw_metric": "overhealth bonus"
         }
        ]
       }
@@ -587,7 +739,11 @@
          "text_cn": null,
          "before": 70.0,
          "after": 80.0,
-         "metric": "damage"
+         "metric": "damage",
+         "by": 10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage"
         }
        ]
       }
@@ -612,7 +768,11 @@
          "text_cn": null,
          "before": 120.0,
          "after": 105.0,
-         "metric": "secondary fire healing per second"
+         "metric": "secondary fire healing per second",
+         "by": -15.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "secondary fire healing per second"
         }
        ]
       }
@@ -658,10 +818,54 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Added the hero-specific options:",
-      "Light Gun Input -- Primary Fire by default.",
-      "Relative Light Gun Aim Sensitivity – 100% by default.",
-      "Relative Light Gun Gyro Aim Sensitivity – 100% by default (only available on gyro-supported platforms)."
+      {
+       "text_en": "Added the hero-specific options:",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Light Gun Input -- Primary Fire by default.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Relative Light Gun Aim Sensitivity – 100% by default.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Relative Light Gun Gyro Aim Sensitivity – 100% by default (only available on gyro-supported platforms).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -673,8 +877,30 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Added the hero-specific option:",
-      "Swap Meteor Strike Confirm and Zoom Out Inputs – Off by default."
+      {
+       "text_en": "Added the hero-specific option:",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Swap Meteor Strike Confirm and Zoom Out Inputs – Off by default.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -686,9 +912,42 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Added the hero-specific options:",
-      "Hide Commanding Shout Timer – Off by default.",
-      "Hold to use Jagged Blade – Off by default."
+      {
+       "text_en": "Added the hero-specific options:",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Hide Commanding Shout Timer – Off by default.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Hold to use Jagged Blade – Off by default.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -700,8 +959,30 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Added the hero-specific option:",
-      "Hold to use Terra Surge – Off by default."
+      {
+       "text_en": "Added the hero-specific option:",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Hold to use Terra Surge – Off by default.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -713,9 +994,42 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Added the hero-specific options:",
-      "Void Barrier Confirmation Input - Secondary Fire Release by default.",
-      "Void Barrier UI – On by default."
+      {
+       "text_en": "Added the hero-specific options:",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Void Barrier Confirmation Input - Secondary Fire Release by default.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Void Barrier UI – On by default.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -727,8 +1041,30 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Added the hero-specific option:",
-      "Charge Cancel Input – Ability 1 by default, with Primary Fire, Secondary Fire, or All as additional options available."
+      {
+       "text_en": "Added the hero-specific option:",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Charge Cancel Input – Ability 1 by default, with Primary Fire, Secondary Fire, or All as additional options available.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -740,11 +1076,66 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Whole Hog",
-      "Whole Hog can now be fired with Secondary Fire.",
-      "Added the hero-specific options:",
-      "Relative Aim Sensitivity During Whole Hog - 100% by default.",
-      "Relative Gyro Aim Sensitivity During Whole Hog - 100% by default (Only available on gyro-supported platforms)."
+      {
+       "text_en": "Whole Hog",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Whole Hog can now be fired with Secondary Fire.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Added the hero-specific options:",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Relative Aim Sensitivity During Whole Hog - 100% by default.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Relative Gyro Aim Sensitivity During Whole Hog - 100% by default (Only available on gyro-supported platforms).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -756,10 +1147,54 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Added the hero-specific options:",
-      "Experimental Barrier UI - On by default.",
-      "Hide Gravitic Flux Timer - Off by default.",
-      "Gravitic Flux Confirmation Input - Primary Fire by default."
+      {
+       "text_en": "Added the hero-specific options:",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Experimental Barrier UI - On by default.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Hide Gravitic Flux Timer - Off by default.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Gravitic Flux Confirmation Input - Primary Fire by default.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -771,11 +1206,66 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Primal Rage",
-      "Primal Rage melee attacks can now be fired with Secondary Fire and Quick Melee along with Primary Fire.",
-      "Added the hero-specific options:",
-      "Relative Aim Sensitivity During Primal Rage - 100% by default.",
-      "Relative Gyro Aim Sensitivity During Primal Rage - 100% by default (Only available on gyro-supported platforms)."
+      {
+       "text_en": "Primal Rage",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Primal Rage melee attacks can now be fired with Secondary Fire and Quick Melee along with Primary Fire.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Added the hero-specific options:",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Relative Aim Sensitivity During Primal Rage - 100% by default.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Relative Gyro Aim Sensitivity During Primal Rage - 100% by default (Only available on gyro-supported platforms).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -787,10 +1277,54 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Added the hero-specific options:",
-      "Hide Adaptive Shields Timer - Off by default.",
-      "Adaptive Shields UI - On by default.",
-      "Piledriver UI - On by default."
+      {
+       "text_en": "Added the hero-specific options:",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Hide Adaptive Shields Timer - Off by default.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Adaptive Shields UI - On by default.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Piledriver UI - On by default.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -811,9 +1345,42 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Added the hero-specific options:",
-      "Toggle Glide – Off by default.",
-      "Secondary Fire Activates Glide on Gamepad - On by default."
+      {
+       "text_en": "Added the hero-specific options:",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Toggle Glide – Off by default.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Secondary Fire Activates Glide on Gamepad - On by default.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -825,12 +1392,78 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Dragonblade:",
-      "Dragonblade melee attacks can now be fired with Secondary Fire and Quick Melee along with Primary Fire.",
-      "Added the hero-specific options:",
-      "Hide Dragonblade Timer – Off by default.",
-      "Relative Aim Sensitivity During Dragonblade - 100% by default.",
-      "Relative Gyro Aim Sensitivity During Dragonblade - 100% by default (Only available on gyro-supported platforms)."
+      {
+       "text_en": "Dragonblade:",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Dragonblade melee attacks can now be fired with Secondary Fire and Quick Melee along with Primary Fire.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Added the hero-specific options:",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Hide Dragonblade Timer – Off by default.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Relative Aim Sensitivity During Dragonblade - 100% by default.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Relative Gyro Aim Sensitivity During Dragonblade - 100% by default (Only available on gyro-supported platforms).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -842,8 +1475,30 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Added the hero-specific option:",
-      "Toggle Primary Fire – Off by default."
+      {
+       "text_en": "Added the hero-specific option:",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Toggle Primary Fire – Off by default.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -855,8 +1510,30 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Added the hero-specific option:",
-      "Cryo-freeze Cancel Input – All by default."
+      {
+       "text_en": "Added the hero-specific option:",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Cryo-freeze Cancel Input – All by default.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -868,9 +1545,42 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Added the hero-specific options:",
-      "Relative Aim Sensitivity During Rocket Barrage - 100% by default.",
-      "Relative Gyro Aim Sensitivity During Rocket Barrage - 100% by default (only available on gyro-supported platforms)."
+      {
+       "text_en": "Added the hero-specific options:",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Relative Aim Sensitivity During Rocket Barrage - 100% by default.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Relative Gyro Aim Sensitivity During Rocket Barrage - 100% by default (only available on gyro-supported platforms).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -882,8 +1592,30 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Added the hero-specific option:",
-      "Wraith Form Cancel Input – All by default."
+      {
+       "text_en": "Added the hero-specific option:",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Wraith Form Cancel Input – All by default.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -895,8 +1627,30 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Relative Aim Sensitivity During Tactical Visor – 100% by default.",
-      "Relative Gyro Aim Sensitivity During Tactical Visor – 100% by default (Only available on gyro-supported platforms)."
+      {
+       "text_en": "Relative Aim Sensitivity During Tactical Visor – 100% by default.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Relative Gyro Aim Sensitivity During Tactical Visor – 100% by default (Only available on gyro-supported platforms).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -908,11 +1662,66 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Molten Core:",
-      "Molten Core can now be fired with Secondary Fire along with Primary Fire.",
-      "Added the hero-specific options:",
-      "Relative Aim Sensitivity During Molten Core - 100% by default.",
-      "Relative Gyro Aim Sensitivity During Molten Core - 100% by default (Only available on gyro-supported platforms)."
+      {
+       "text_en": "Molten Core:",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Molten Core can now be fired with Secondary Fire along with Primary Fire.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Added the hero-specific options:",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Relative Aim Sensitivity During Molten Core - 100% by default.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Relative Gyro Aim Sensitivity During Molten Core - 100% by default (Only available on gyro-supported platforms).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -933,8 +1742,30 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "Added the hero-specific options:",
-      "Tree of Life Cancel Input – Ability 3 by default."
+      {
+       "text_en": "Added the hero-specific options:",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Tree of Life Cancel Input – Ability 3 by default.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -946,8 +1777,30 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "Added the hero-specific option:",
-      "Toggle Wall Ride - Off by default."
+      {
+       "text_en": "Added the hero-specific option:",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Toggle Wall Ride - Off by default.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -959,9 +1812,42 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "Added the hero-specific options:",
-      "Toggle Angelic Descent - Off by default.",
-      "Secondary Fire Activates Angelic Descent on Gamepad - On by default."
+      {
+       "text_en": "Added the hero-specific options:",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Toggle Angelic Descent - Off by default.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Secondary Fire Activates Angelic Descent on Gamepad - On by default.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -973,11 +1859,66 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "Added the hero-specific options:",
-      "Swap Biotic Orb Heal and Damage inputs - Off by default.",
-      "Hide Coalescence Timer - Off by default.",
-      "Relative Aim Sensitivity During Coalescence - 100% by default.",
-      "Relative Gyro Aim Sensitivity During Coalescence - 100% by default (Only available on gyro-supported platforms)."
+      {
+       "text_en": "Added the hero-specific options:",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Swap Biotic Orb Heal and Damage inputs - Off by default.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Hide Coalescence Timer - Off by default.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Relative Aim Sensitivity During Coalescence - 100% by default.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Relative Gyro Aim Sensitivity During Coalescence - 100% by default (Only available on gyro-supported platforms).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -989,8 +1930,30 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "Added the hero-specific option:",
-      "Toggle Secondary Fire - Off by default."
+      {
+       "text_en": "Added the hero-specific option:",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Toggle Secondary Fire - Off by default.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -1029,5 +1992,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:9029f1b51a8eab73daac607be40a577da1bd6351ce59cd8fd5c57b2fba11b571"
+ "hash": "sha256:016866fb2d7b0518007a6c6889ee6194beea51b54fc5dc9d166cfee8bf2c3427"
 }

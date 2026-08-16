@@ -29,9 +29,13 @@
         {
          "text_en": "Recovery lowered from 0.75 to 0.68",
          "text_cn": null,
-         "before": null,
-         "after": null,
-         "metric": null
+         "before": 0.75,
+         "after": 0.68,
+         "metric": "recovery",
+         "by": -0.07,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "recovery"
         }
        ]
       },
@@ -45,7 +49,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "ultimate_cost",
+         "by": null,
+         "by_pct": 15.0,
+         "unit": null,
+         "raw_metric": "ultimate cost"
         }
        ]
       }
@@ -70,7 +78,11 @@
          "text_cn": null,
          "before": 37.5,
          "after": 50.0,
-         "metric": "second"
+         "metric": "healing",
+         "by": 12.5,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "healing-per-second"
         }
        ]
       }
@@ -83,8 +95,30 @@
      "role": "damage",
      "dev_note": "The intent for Pharah's Hover Jet fuel adjustments is to find a balance where it enables her to maintain an altitude reasonably well with careful fuel and cooldown management, but not so easily climb to the extreme heights some map ceilings allow for as it can lead to less interactive gameplay.",
      "general": [
-      "General",
-      "Hover Jets regeneration rate increased from 35 to 43"
+      {
+       "text_en": "General",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Hover Jets regeneration rate increased from 35 to 43",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 35.0,
+       "after": 43.0,
+       "by": 8.0,
+       "by_pct": null,
+       "metric": "hover jets regeneration rate",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -108,7 +142,11 @@
          "text_cn": null,
          "before": 5.5,
          "after": 6.0,
-         "metric": "damage per projectile"
+         "metric": "damage",
+         "by": 0.5,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage per projectile"
         }
        ]
       }
@@ -133,7 +171,11 @@
          "text_cn": null,
          "before": 2.5,
          "after": 2.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": -0.5,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       }
@@ -146,8 +188,30 @@
      "role": "tank",
      "dev_note": "Zarya has been overperforming in a variety of team compositions so the increased drain rate will bring her average energy level down slightly between engagements.",
      "general": [
-      "General",
-      "Energy drain rate increased from 1.6 to 1.8 per second"
+      {
+       "text_en": "General",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Energy drain rate increased from 1.6 to 1.8 per second",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 1.6,
+       "after": 1.8,
+       "by": 0.2,
+       "by_pct": null,
+       "metric": "energy drain rate",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -157,5 +221,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:8f923a1777babaf0814092972fb0d3a6b36b0b9aa8c1ec6042435510eab0e628"
+ "hash": "sha256:a9c8d4768cb6e02d49cb5b6cd28fbc0f710230a45dfd6515bb25e243be00050c"
 }

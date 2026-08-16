@@ -13,6 +13,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/08/",
    "patch_title": "《守望先锋》补丁说明——2026年8月12日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "panopticon",
    "ability_en": "Panopticon",
    "ability_cn": "全景牢笼",
@@ -20,7 +21,10 @@
    "text_cn": "屏障生命值从450点提高至500点。",
    "before": 450.0,
    "after": 500.0,
-   "metric": "屏障生命值"
+   "by": 50.0,
+   "by_pct": null,
+   "metric": "barrier",
+   "unit": "hp"
   },
   {
    "patch": "en-2026-08-11-1",
@@ -29,6 +33,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/08",
    "patch_title": "Overwatch Retail Patch Notes – August 11, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "panopticon",
    "ability_en": "Panopticon",
    "ability_cn": "全景牢笼",
@@ -36,7 +41,10 @@
    "text_cn": null,
    "before": 450.0,
    "after": 500.0,
-   "metric": "barrier health"
+   "by": 50.0,
+   "by_pct": null,
+   "metric": "barrier",
+   "unit": "hp"
   },
   {
    "patch": "cn-2026-07-31-1",
@@ -45,6 +53,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月31日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "barrier-array",
    "ability_en": "Barrier Array",
    "ability_cn": "屏障阵列",
@@ -52,7 +61,10 @@
    "text_cn": "冷却时间从17秒缩短至15秒。",
    "before": 17.0,
    "after": 15.0,
-   "metric": "冷却时间"
+   "by": -2.0,
+   "by_pct": null,
+   "metric": "cooldown",
+   "unit": "s"
   },
   {
    "patch": "cn-2026-07-31-1",
@@ -61,6 +73,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月31日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "barrier-array",
    "ability_en": "Barrier Array",
    "ability_cn": "屏障阵列",
@@ -68,7 +81,10 @@
    "text_cn": "持续时间从8秒缩短至7秒。",
    "before": 8.0,
    "after": 7.0,
-   "metric": "持续时间"
+   "by": -1.0,
+   "by_pct": null,
+   "metric": "duration",
+   "unit": "s"
   },
   {
    "patch": "en-2026-07-30-1",
@@ -77,6 +93,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/07",
    "patch_title": "Overwatch Retail Patch Notes – July 30, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "barrier-array",
    "ability_en": "Barrier Array",
    "ability_cn": "屏障阵列",
@@ -84,7 +101,10 @@
    "text_cn": null,
    "before": 17.0,
    "after": 15.0,
-   "metric": "barrier cooldown"
+   "by": -2.0,
+   "by_pct": null,
+   "metric": "barrier",
+   "unit": "hp"
   },
   {
    "patch": "en-2026-07-30-1",
@@ -93,6 +113,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/07",
    "patch_title": "Overwatch Retail Patch Notes – July 30, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "barrier-array",
    "ability_en": "Barrier Array",
    "ability_cn": "屏障阵列",
@@ -100,7 +121,10 @@
    "text_cn": null,
    "before": 8.0,
    "after": 7.0,
-   "metric": "barrier duration"
+   "by": -1.0,
+   "by_pct": null,
+   "metric": "barrier",
+   "unit": "hp"
   },
   {
    "patch": "cn-2026-07-01-1",
@@ -109,6 +133,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "sonic-repulsors",
    "ability_en": "Sonic Repulsors",
    "ability_cn": "音速斥力场",
@@ -116,7 +141,10 @@
    "text_cn": "现在会将“金驭”推向她面对的反方向。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-07-01-1",
@@ -125,6 +153,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "sonic-repulsors",
    "ability_en": "Sonic Repulsors",
    "ability_cn": "音速斥力场",
@@ -132,7 +161,10 @@
    "text_cn": "击退敌人力度提高40%。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": 40.0,
+   "metric": "knockback",
+   "unit": null
   },
   {
    "patch": "cn-2026-07-01-1",
@@ -141,6 +173,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "panopticon",
    "ability_en": "Panopticon",
    "ability_cn": "全景牢笼",
@@ -148,7 +181,10 @@
    "text_cn": "现在可以为盟友提供一个200点生命值的屏障。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-30-1",
@@ -157,6 +193,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 30, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "sonic-repulsors",
    "ability_en": "Sonic Repulsors",
    "ability_cn": "音速斥力场",
@@ -164,7 +201,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-30-1",
@@ -173,6 +213,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 30, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "sonic-repulsors",
    "ability_en": "Sonic Repulsors",
    "ability_cn": "音速斥力场",
@@ -180,7 +221,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": 40.0,
+   "metric": "enemy knockback force",
+   "unit": null
   },
   {
    "patch": "en-2026-06-30-1",
@@ -189,6 +233,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 30, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "panopticon",
    "ability_en": "Panopticon",
    "ability_cn": "全景牢笼",
@@ -196,7 +241,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -205,6 +253,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "hero-1ca58175",
    "perk_en": null,
    "perk_cn": "战略转移",
@@ -221,6 +270,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "hero-e0a11da1",
    "perk_en": null,
    "perk_cn": "强权压制",
@@ -237,8 +287,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "已添加"
+   "text_cn": "已添加",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -247,8 +305,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "屏障阵列激活时，可移动一次位置。"
+   "text_cn": "屏障阵列激活时，可移动一次位置。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -257,8 +323,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "已移除"
+   "text_cn": "已移除",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -267,8 +341,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Corporate Retreat – Major Perk Added. While Barrier Array is active, it can be moved one time to another location.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -277,8 +359,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Added.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -287,8 +377,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "While Barrier Array is active, it can be moved one time to another location.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -297,8 +395,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Power Move – Major Perk Removed.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -307,8 +413,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Removed.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-04-01-1",
@@ -317,6 +431,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/04",
    "patch_title": "Overwatch Retail Patch Notes - April 1, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "barrier-array",
    "ability_en": "Barrier Array",
    "ability_cn": "屏障阵列",
@@ -324,7 +439,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-04-01-1",
@@ -333,6 +451,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/04",
    "patch_title": "Overwatch Retail Patch Notes - April 1, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "barrier-array",
    "ability_en": "Barrier Array",
    "ability_cn": "屏障阵列",
@@ -340,7 +459,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-04-01-1",
@@ -349,6 +471,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/04",
    "patch_title": "Overwatch Retail Patch Notes - April 1, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "barrier-array",
    "ability_en": "Barrier Array",
    "ability_cn": "屏障阵列",
@@ -356,7 +479,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-04-01-1",
@@ -365,6 +491,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/04/",
    "patch_title": "《守望先锋》补丁说明——2026年4月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "barrier-array",
    "ability_en": "Barrier Array",
    "ability_cn": "屏障阵列",
@@ -372,7 +499,10 @@
    "text_cn": "会从多种预先设定好的屏障阵列排布中随机选择一种排布。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-04-01-1",
@@ -381,6 +511,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/04/",
    "patch_title": "《守望先锋》补丁说明——2026年4月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "barrier-array",
    "ability_en": "Barrier Array",
    "ability_cn": "屏障阵列",
@@ -388,7 +519,10 @@
    "text_cn": "单块屏障面板生命值提升至50点。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-04-01-1",
@@ -397,6 +531,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/04/",
    "patch_title": "《守望先锋》补丁说明——2026年4月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "barrier-array",
    "ability_en": "Barrier Array",
    "ability_cn": "屏障阵列",
@@ -404,7 +539,10 @@
    "text_cn": "冷却时间缩短至7秒。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-02-24-1",
@@ -413,8 +551,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/02",
    "patch_title": "Overwatch Retail Patch Notes - February 24, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Panopticon",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-02-24-1",
@@ -423,8 +569,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/02",
    "patch_title": "Overwatch Retail Patch Notes - February 24, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Cost increased by 12%",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 12.0,
+   "metric": "cost",
+   "unit": null
   },
   {
    "patch": "cn-2026-02-14-1",
@@ -433,8 +587,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/02/",
    "patch_title": "《守望先锋》补丁说明——2026年2月14日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "屏障阵列"
+   "text_cn": "屏障阵列",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-02-14-1",
@@ -443,8 +605,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/02/",
    "patch_title": "《守望先锋》补丁说明——2026年2月14日",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": null,
-   "text_cn": "屏障面板生命值从250降低至225。"
+   "text_cn": "屏障面板生命值从250降低至225。",
+   "before": 250.0,
+   "after": 225.0,
+   "by": -25.0,
+   "by_pct": null,
+   "metric": "barrier",
+   "unit": "hp"
   },
   {
    "patch": "en-2026-02-13-1",
@@ -453,8 +623,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/02",
    "patch_title": "Overwatch Retail Patch Notes - February 13, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Barrier Array",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-02-13-1",
@@ -463,8 +641,56 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/02",
    "patch_title": "Overwatch Retail Patch Notes - February 13, 2026",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": "Barrier Panel Health reduced from 250 to 225",
-   "text_cn": null
+   "text_cn": null,
+   "before": 250.0,
+   "after": 225.0,
+   "by": -25.0,
+   "by_pct": null,
+   "metric": "barrier",
+   "unit": "hp"
   }
- ]
+ ],
+ "values": {
+  "panopticon:barrier": [
+   {
+    "date": "2026-08-11",
+    "value": 500.0
+   },
+   {
+    "date": "2026-08-12",
+    "value": 500.0
+   }
+  ],
+  "barrier-array:cooldown": [
+   {
+    "date": "2026-07-31",
+    "value": 15.0
+   }
+  ],
+  "barrier-array:duration": [
+   {
+    "date": "2026-07-31",
+    "value": 7.0
+   }
+  ],
+  "barrier-array:barrier": [
+   {
+    "date": "2026-07-30",
+    "value": 7.0
+   }
+  ],
+  "attr:health:barrier": [
+   {
+    "date": "2026-02-13",
+    "value": 225.0
+   },
+   {
+    "date": "2026-02-14",
+    "value": 225.0
+   }
+  ]
+ }
 }

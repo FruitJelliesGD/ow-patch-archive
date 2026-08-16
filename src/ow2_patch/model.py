@@ -7,13 +7,21 @@ from dataclasses import dataclass, field
 
 @dataclass
 class Change:
-    """A single change line. Original text is always kept (at least one locale)."""
+    """A single change line. Original text is always kept (at least one locale).
+
+    Derived fields (before/after/by/by_pct/metric/unit) are extraction results and
+    are excluded from content hashing.
+    """
 
     text_en: str | None = None
     text_cn: str | None = None
     before: float | None = None
     after: float | None = None
-    metric: str | None = None
+    by: float | None = None       # derived delta after-before (from X to Y shapes)
+    by_pct: float | None = None   # "by X%"/"降低X%" without a baseline
+    metric: str | None = None     # normalized metric key (damage/cooldown/...)
+    raw_metric: str | None = None  # original metric phrase, for traceability
+    unit: str | None = None        # normalized unit (s/m/hp/deg/pct)
 
 
 @dataclass
@@ -143,7 +151,11 @@ def _change_to_dict(c: Change) -> dict:
         "text_cn": c.text_cn,
         "before": c.before,
         "after": c.after,
+        "by": c.by,
+        "by_pct": c.by_pct,
         "metric": c.metric,
+        "raw_metric": c.raw_metric,
+        "unit": c.unit,
     }
 
 

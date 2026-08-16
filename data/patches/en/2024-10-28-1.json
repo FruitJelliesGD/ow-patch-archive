@@ -27,12 +27,78 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Trail by Fire",
-      "Damage to burning targets now earns an additional 30% ultimate charge, previously 25%",
-      "Fire and Fury",
-      "The Viper's shots on burning targets now reduces the cooldowns of Coach Gun and Dynamite by 7%, previously 5%.",
-      "Demon's Ward",
-      "We have increased the health of the shield from the deployed Barrier Projector to 600 from 300."
+      {
+       "text_en": "Trail by Fire",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Damage to burning targets now earns an additional 30% ultimate charge, previously 25%",
+       "text_cn": null,
+       "subject": "ultimate_cost",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Fire and Fury",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "The Viper's shots on burning targets now reduces the cooldowns of Coach Gun and Dynamite by 7%, previously 5%.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Demon's Ward",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "We have increased the health of the shield from the deployed Barrier Projector to 600 from 300.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -44,10 +110,54 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Anti-Boost",
-      "Fixed an issue where Booster impact was dealing extra damage in addition to the anti-healing debuff.",
-      "No Escape",
-      "Weapon Damage increase is reduced to 75% was 100%."
+      {
+       "text_en": "Anti-Boost",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Fixed an issue where Booster impact was dealing extra damage in addition to the anti-healing debuff.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "No Escape",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Weapon Damage increase is reduced to 75% was 100%.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -59,14 +169,102 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Scary Speed",
-      "Shuriken critical hits now increases attack speed by 3%, up to 10 stacks, for 10 seconds, previously increased attack speed by 2%, up to 15 stacks, for 10 seconds.",
-      "Vampiric Deflect",
-      "Deflect now heals for 15% of your max health per second, previously 10%.",
-      "Bitter Revenge",
-      "Deflect now causes the next Swift Strike to deal up to 75% more damage based on the damage prevented, previously 50%.",
-      "Master Ward",
-      "Cooldown is now increased by 3 seconds, previously 5 seconds."
+      {
+       "text_en": "Scary Speed",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Shuriken critical hits now increases attack speed by 3%, up to 10 stacks, for 10 seconds, previously increased attack speed by 2%, up to 15 stacks, for 10 seconds.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Vampiric Deflect",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Deflect now heals for 15% of your max health per second, previously 10%.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Bitter Revenge",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Deflect now causes the next Swift Strike to deal up to 75% more damage based on the damage prevented, previously 50%.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Master Ward",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Cooldown is now increased by 3 seconds, previously 5 seconds.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -78,16 +276,126 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "Not Your Time",
-      "Now delivers 30% extra healing to allies below 50% health, previously 25% extra healing.",
-      "Drawn Together",
-      "After teleporting, grant the nearest ally 75 Overhealth for 5 seconds, previously 50 Overhealth.",
-      "Unburdened",
-      "After throwing a Protection Suzu, attack speed is increased by 20% for 10 second, previously 5 seconds.",
-      "Vindictive Vision",
-      "Damaging enemies farther than 12 meters now reveals them for 5 seconds, previously 3 seconds.",
-      "Spirit World's Gift",
-      "Protection Suzu now heals Kiriko for extra 100 health and grants and 25% movement speed for 5 seconds, previously 80 health for 3 seconds."
+      {
+       "text_en": "Not Your Time",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Now delivers 30% extra healing to allies below 50% health, previously 25% extra healing.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Drawn Together",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "After teleporting, grant the nearest ally 75 Overhealth for 5 seconds, previously 50 Overhealth.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Unburdened",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "After throwing a Protection Suzu, attack speed is increased by 20% for 10 second, previously 5 seconds.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 20.0,
+       "metric": "attack speed is",
+       "unit": null
+      },
+      {
+       "text_en": "Vindictive Vision",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Damaging enemies farther than 12 meters now reveals them for 5 seconds, previously 3 seconds.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Spirit World's Gift",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Protection Suzu now heals Kiriko for extra 100 health and grants and 25% movement speed for 5 seconds, previously 80 health for 3 seconds.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -99,16 +407,126 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "Mend and Mar",
-      "Mercy now heals all allies within 20 meters for 150% of the damage she deals while not in Valkyrie, previously 100%. Healing for damage dealt while Valkyrie is active remains at 200%.",
-      "Power for a Price",
-      "Caduceus Staff's damage boost now heals attached targets for 10% of their damage dealt to enemies, previously 7.5%.",
-      "Sustained Servant",
-      "The cooldown is reduced to 7 seconds, previously 10 seconds.",
-      "Witches Never Die",
-      "We have increased the health of the shield health from the deployed Barrier Projector to 600 from 300.",
-      "Fall from Grace",
-      "While using Angelic Descent, Movement Speed is now increased by 20%, previously 15%."
+      {
+       "text_en": "Mend and Mar",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Mercy now heals all allies within 20 meters for 150% of the damage she deals while not in Valkyrie, previously 100%. Healing for damage dealt while Valkyrie is active remains at 200%.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Power for a Price",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Caduceus Staff's damage boost now heals attached targets for 10% of their damage dealt to enemies, previously 7.5%.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Sustained Servant",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "The cooldown is reduced to 7 seconds, previously 10 seconds.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Witches Never Die",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "We have increased the health of the shield health from the deployed Barrier Projector to 600 from 300.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Fall from Grace",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "While using Angelic Descent, Movement Speed is now increased by 20%, previously 15%.",
+       "text_cn": null,
+       "subject": "move_speed",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 20.0,
+       "metric": "move_speed",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -120,12 +538,78 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "Frightening Fascination",
-      "Secondary Fire now stays locked to targets at a 40% narrow angle, previously from 50%.",
-      "Siphon Strike",
-      "Quick Melee now restores 15% of Max Biotic energy, previously 10%.",
-      "Equilibrium",
-      "Now reduces movement speed by 20%, previously 30%."
+      {
+       "text_en": "Frightening Fascination",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Secondary Fire now stays locked to targets at a 40% narrow angle, previously from 50%.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Siphon Strike",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Quick Melee now restores 15% of Max Biotic energy, previously 10%.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Equilibrium",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Now reduces movement speed by 20%, previously 30%.",
+       "text_cn": null,
+       "subject": "move_speed",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -137,18 +621,150 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Flight by Night",
-      "While casting Javelin Spin, Orisa gains free flight and 15% increased movement speed.",
-      "Megamonster",
-      "Gain 200% Overhealth while being slowed by 20%, previously 35%.",
-      "Waning Whirlwind",
-      "Javelin Spin now instantly depletes 90% of Max Augmented Fusion Driver's Overheat meter, previously 50%.",
-      "Chilling Blow",
-      "Energy Javelin now instantly depletes 90% of Augmented Fusion Driver's Overheat meter, previously 50%.",
-      "Arcane Energy",
-      "Energy Javelin now has 20% reduced cooldown, previously 15%.",
-      "Violence Begotten",
-      "Critical hits now increases attack speed by 8% for 5 seconds, previously 6%."
+      {
+       "text_en": "Flight by Night",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "While casting Javelin Spin, Orisa gains free flight and 15% increased movement speed.",
+       "text_cn": null,
+       "subject": "move_speed",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Megamonster",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Gain 200% Overhealth while being slowed by 20%, previously 35%.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Waning Whirlwind",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Javelin Spin now instantly depletes 90% of Max Augmented Fusion Driver's Overheat meter, previously 50%.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Chilling Blow",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Energy Javelin now instantly depletes 90% of Augmented Fusion Driver's Overheat meter, previously 50%.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Arcane Energy",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Energy Javelin now has 20% reduced cooldown, previously 15%.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Violence Begotten",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Critical hits now increases attack speed by 8% for 5 seconds, previously 6%.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -160,8 +776,30 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Scare-ial Superiority",
-      "After using Jump Jets and Jet Dash, Pharah deals 20% more damage now for only 3 seconds, previously 5 seconds."
+      {
+       "text_en": "Scare-ial Superiority",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "After using Jump Jets and Jet Dash, Pharah deals 20% more damage now for only 3 seconds, previously 5 seconds.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -173,8 +811,30 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Swift Shadow",
-      "Shadow Step cast time now reduced by 30%, previously 35%."
+      {
+       "text_en": "Swift Shadow",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Shadow Step cast time now reduced by 30%, previously 35%.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 30.0,
+       "metric": "shadow step cast time now",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -186,10 +846,54 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "Hallowed Speed",
-      "Harmony orb now buffs target with 20% movement speed, previously 25%.",
-      "Master and Disciple",
-      "Zenyatta now gains a 40% effective Harmony Orb on himself, previously 50%. The ally Harmony Orb effectiveness remains the same at 20%."
+      {
+       "text_en": "Hallowed Speed",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Harmony orb now buffs target with 20% movement speed, previously 25%.",
+       "text_cn": null,
+       "subject": "move_speed",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Master and Disciple",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Zenyatta now gains a 40% effective Harmony Orb on himself, previously 50%. The ally Harmony Orb effectiveness remains the same at 20%.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -226,8 +930,30 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Base health increased from 125 to 175.",
-      "Base armor reduced from 350 to 300."
+      {
+       "text_en": "Base health increased from 125 to 175.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 125.0,
+       "after": 175.0,
+       "by": 50.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      },
+      {
+       "text_en": "Base armor reduced from 350 to 300.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 350.0,
+       "after": 300.0,
+       "by": -50.0,
+       "by_pct": null,
+       "metric": "base armor",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -241,7 +967,11 @@
          "text_cn": null,
          "before": 80.0,
          "after": 70.0,
-         "metric": "damage"
+         "metric": "damage",
+         "by": -10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage"
         }
        ]
       },
@@ -255,7 +985,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -280,14 +1014,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "No longer deals critical damage to barriers.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -312,7 +1054,11 @@
          "text_cn": null,
          "before": 80.0,
          "after": 100.0,
-         "metric": "ammo"
+         "metric": "ammo",
+         "by": 20.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "ammo"
         }
        ]
       },
@@ -326,7 +1072,11 @@
          "text_cn": null,
          "before": 6.0,
          "after": 8.0,
-         "metric": "duration"
+         "metric": "duration",
+         "by": 2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "duration"
         }
        ]
       }
@@ -360,7 +1110,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -374,14 +1128,22 @@
          "text_cn": null,
          "before": 0.5,
          "after": 0.33,
-         "metric": "delay before entering stealth"
+         "metric": "delay before entering stealth",
+         "by": -0.17,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "delay before entering stealth"
         },
         {
          "text_en": "Fade in time reduced from 0.3 to 0.15 second.",
          "text_cn": null,
          "before": 0.3,
          "after": 0.15,
-         "metric": "fade in time"
+         "metric": "fade in time",
+         "by": -0.15,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "fade in time"
         }
        ]
       },
@@ -395,7 +1157,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "ultimate_cost",
+         "by": null,
+         "by_pct": 10.0,
+         "unit": null,
+         "raw_metric": "ultimate cost"
         }
        ]
       }
@@ -429,7 +1195,11 @@
          "text_cn": null,
          "before": 100.0,
          "after": 85.0,
-         "metric": "healing"
+         "metric": "healing",
+         "by": -15.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "healing"
         }
        ]
       }
@@ -464,5 +1234,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:2c84a03d20adf540bc30966a3ce93511ed144a695895c57be79bbef3fce8c592"
+ "hash": "sha256:d2ef3dd5acb27676e02aac709ea0092a4dd1e2764efc410247f901abecfbcb8d"
 }

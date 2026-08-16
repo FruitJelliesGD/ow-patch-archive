@@ -31,7 +31,11 @@
          "text_cn": null,
          "before": 14.0,
          "after": 12.0,
-         "metric": "ammo"
+         "metric": "ammo",
+         "by": -2.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "ammo"
         }
        ]
       }
@@ -56,14 +60,22 @@
          "text_cn": null,
          "before": 15.0,
          "after": 12.0,
-         "metric": "max ammo"
+         "metric": "max ammo",
+         "by": -3.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "max ammo"
         },
         {
          "text_en": "Aim-down sights damage reduced from 85 to 80",
          "text_cn": null,
          "before": 85.0,
          "after": 80.0,
-         "metric": "down sights damage"
+         "metric": "aim-down sights damage",
+         "by": -5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "aim-down sights damage"
         }
        ]
       }
@@ -88,7 +100,11 @@
          "text_cn": null,
          "before": 12.0,
          "after": 10.0,
-         "metric": "grenade ammo"
+         "metric": "grenade ammo",
+         "by": -2.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "grenade ammo"
         }
        ]
       },
@@ -102,14 +118,22 @@
          "text_cn": null,
          "before": 150.0,
          "after": 75.0,
-         "metric": "total healing"
+         "metric": "total healing",
+         "by": -75.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "total healing"
         },
         {
          "text_en": "Baptiste now receives twice as much healing from Regenerative Burst",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -134,7 +158,11 @@
          "text_cn": null,
          "before": 50.0,
          "after": 40.0,
-         "metric": "impact damage"
+         "metric": "impact damage",
+         "by": -10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "impact damage"
         }
        ]
       }
@@ -159,7 +187,11 @@
          "text_cn": null,
          "before": 0.42,
          "after": 0.5,
-         "metric": "recovery"
+         "metric": "recovery",
+         "by": 0.08,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "recovery"
         }
        ]
       }
@@ -182,37 +214,57 @@
         {
          "text_en": "Lingering heal reduced from 4 seconds to 2 seconds (Total healing from 65 down to 35)",
          "text_cn": null,
-         "before": null,
-         "after": null,
-         "metric": null
+         "before": 4.0,
+         "after": 2.0,
+         "metric": "lingering heal",
+         "by": -2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "lingering heal"
         },
         {
          "text_en": "Healing per second increased from 65 to 70",
          "text_cn": null,
          "before": 65.0,
          "after": 70.0,
-         "metric": "healing per second"
+         "metric": "healing",
+         "by": 5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "healing per second"
         },
         {
          "text_en": "Healing resource consumption rate increased from 11 to 14 (27%)",
          "text_cn": null,
          "before": 11.0,
          "after": 14.0,
-         "metric": "healing resource consumption rate"
+         "metric": "healing",
+         "by": 3.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "healing resource consumption rate"
         },
         {
          "text_en": "Attach angle reduced by 37%",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "attach angle",
+         "by": null,
+         "by_pct": 37.0,
+         "unit": null,
+         "raw_metric": "attach angle"
         },
         {
          "text_en": "Healing resource gain rate increased by 50%",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "healing",
+         "by": null,
+         "by_pct": 50.0,
+         "unit": null,
+         "raw_metric": "healing resource gain rate"
         }
        ]
       }
@@ -237,14 +289,22 @@
          "text_cn": null,
          "before": 4.0,
          "after": 5.0,
-         "metric": "radius"
+         "metric": "radius",
+         "by": 1.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "radius"
         },
         {
          "text_en": "Projectile speed reduced from 30 to 25",
          "text_cn": null,
          "before": 30.0,
          "after": 25.0,
-         "metric": "projectile speed"
+         "metric": "projectile_speed",
+         "by": -5.0,
+         "by_pct": null,
+         "unit": "m/s",
+         "raw_metric": "projectile speed"
         }
        ]
       }
@@ -269,7 +329,11 @@
          "text_cn": null,
          "before": 0.75,
          "after": 0.85,
-         "metric": "recovery"
+         "metric": "recovery",
+         "by": 0.1,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "recovery"
         }
        ]
       }
@@ -294,7 +358,11 @@
          "text_cn": null,
          "before": 140.0,
          "after": 120.0,
-         "metric": "max damage"
+         "metric": "max damage",
+         "by": -20.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "max damage"
         }
        ]
       }
@@ -319,21 +387,33 @@
          "text_cn": null,
          "before": 30.0,
          "after": 35.0,
-         "metric": "max ammo"
+         "metric": "max ammo",
+         "by": 5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "max ammo"
         },
         {
          "text_en": "Scoped ammo cost increased from 3 to 5",
          "text_cn": null,
          "before": 3.0,
          "after": 5.0,
-         "metric": "scoped ammo cost"
+         "metric": "scoped ammo cost",
+         "by": 2.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "scoped ammo cost"
         },
         {
          "text_en": "Scoped shots now have up to 50% damage falloff from 60-85 meters",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -358,7 +438,11 @@
          "text_cn": null,
          "before": 20.0,
          "after": 25.0,
-         "metric": "ammo cost"
+         "metric": "ammo",
+         "by": 5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "ammo cost"
         }
        ]
       }
@@ -369,5 +453,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:588435d06cf8ff94801588b7dd2358c576d2ddcc1ea4b4328128d4bc2069cb9f"
+ "hash": "sha256:5bdd772e2141f4b2b985dcd462e206587a2aed4d53b5ffdaddffbc8894e74080"
 }

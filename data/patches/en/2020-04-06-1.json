@@ -39,35 +39,55 @@
          "text_cn": null,
          "before": 12.0,
          "after": 15.0,
-         "metric": "magazine size"
+         "metric": "magazine size",
+         "by": 3.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "magazine size"
         },
         {
          "text_en": "Shots no longer queue up the next shot if pressed slightly before recovery has finished",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Unscoped shots to reach maximum spread increased from 4 to 6",
          "text_cn": null,
          "before": 4.0,
          "after": 6.0,
-         "metric": "unscoped shots to reach maximum spread"
+         "metric": "unscoped shots to reach maximum spread",
+         "by": 2.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "unscoped shots to reach maximum spread"
         },
         {
          "text_en": "Unscoped shots can now be fired much more quickly after firing a scoped shot",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "You can now start reloading much more quickly after firing a scoped shot",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -90,9 +110,13 @@
         {
          "text_en": "Recovery lowered from 0.75 to 0.65 seconds",
          "text_cn": null,
-         "before": null,
-         "after": null,
-         "metric": null
+         "before": 0.75,
+         "after": 0.65,
+         "metric": "recovery",
+         "by": -0.1,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "recovery"
         }
        ]
       }
@@ -117,14 +141,22 @@
          "text_cn": null,
          "before": 200.0,
          "after": 120.0,
-         "metric": "maximum ammo"
+         "metric": "maximum ammo",
+         "by": -80.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "maximum ammo"
         },
         {
          "text_en": "Ammo cost reduced from 20 to 10",
          "text_cn": null,
          "before": 20.0,
          "after": 10.0,
-         "metric": "ammo cost"
+         "metric": "ammo",
+         "by": -10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "ammo cost"
         }
        ]
       }
@@ -149,14 +181,22 @@
          "text_cn": null,
          "before": 65.0,
          "after": 80.0,
-         "metric": "explosion damage"
+         "metric": "explosion damage",
+         "by": 15.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "explosion damage"
         },
         {
          "text_en": "Impact damage decreased from 55 to 40",
          "text_cn": null,
          "before": 55.0,
          "after": 40.0,
-         "metric": "impact damage"
+         "metric": "impact damage",
+         "by": -15.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "impact damage"
         }
        ]
       }
@@ -169,7 +209,18 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Steadfast passive knockback resistance reduced from 50% to 30%"
+      {
+       "text_en": "Steadfast passive knockback resistance reduced from 50% to 30%",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -193,5 +244,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:fd14a9a4d3b3d2d726e0ea993da671bc140966e7950e39e966e66c5d2176386c"
+ "hash": "sha256:0bbdab39523ffdec694dd8b608cf4f7235c433023bea60639b39f8ef76ecbaee"
 }

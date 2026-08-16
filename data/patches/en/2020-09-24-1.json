@@ -31,7 +31,11 @@
          "text_cn": null,
          "before": 75.0,
          "after": 50.0,
-         "metric": "explosion damage"
+         "metric": "explosion damage",
+         "by": -25.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "explosion damage"
         }
        ]
       }
@@ -56,7 +60,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "ultimate_cost",
+         "by": null,
+         "by_pct": 15.0,
+         "unit": null,
+         "raw_metric": "ultimate cost"
         }
        ]
       }
@@ -81,7 +89,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "distance",
+         "by": null,
+         "by_pct": 20.0,
+         "unit": null,
+         "raw_metric": "distance"
         }
        ]
       },
@@ -95,7 +107,11 @@
          "text_cn": null,
          "before": 0.7,
          "after": 0.8,
-         "metric": "stun duration"
+         "metric": "stun duration",
+         "by": 0.1,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "stun duration"
         }
        ]
       }
@@ -108,7 +124,18 @@
      "role": "tank",
      "dev_note": "Increased projectile speed will help Orisa’s weapon feel more responsive, reducing the need to lead targets. We found that recent adjustments to Orisa’s abilities were more impactful than we originally anticipated and have increased her armor to compensate.",
      "general": [
-      "Base armor increased from 200 to 250"
+      {
+       "text_en": "Base armor increased from 200 to 250",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 200.0,
+       "after": 250.0,
+       "by": 50.0,
+       "by_pct": null,
+       "metric": "base armor",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -122,7 +149,11 @@
          "text_cn": null,
          "before": 90.0,
          "after": 120.0,
-         "metric": "projectile speed"
+         "metric": "projectile_speed",
+         "by": 30.0,
+         "by_pct": null,
+         "unit": "m/s",
+         "raw_metric": "projectile speed"
         }
        ]
       }
@@ -147,7 +178,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -158,5 +193,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:01925346e688d44892be45edc2bbfa78f7a98e28a8310961af1c2219a70c88f2"
+ "hash": "sha256:f483a662b6b5a043e6f673cf15ad9af8100829eebdbcfd0a6f3c171e5537ef61"
 }

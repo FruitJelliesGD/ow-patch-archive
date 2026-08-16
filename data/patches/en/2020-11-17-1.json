@@ -79,9 +79,13 @@
         {
          "text_en": "Width increased from 5 meters to 9 meters",
          "text_cn": null,
-         "before": null,
-         "after": null,
-         "metric": null
+         "before": 5.0,
+         "after": 9.0,
+         "metric": "width",
+         "by": 4.0,
+         "by_pct": null,
+         "unit": "m",
+         "raw_metric": "width"
         }
        ]
       }
@@ -94,11 +98,66 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "Wall Ride",
-      "By default, Lúcio will now perform his Wall Jump boost immediately upon releasing Jump to leave the wall, instead of requiring a second Jump press immediately after leaving the wall This new setting appears inside Lucio's settings page as \"Wall Jump On Release\"",
-      "This new setting appears inside Lucio's settings page as \"Wall Jump On Release\"",
-      "While using the new setting, Lúcio can cancel wall rides by pressing Crouch, which will not trigger the automatic jump When using the \"Wall Jump on Release\" option, after crouching, releasing jump within 0.2 seconds will provide a jump boost (Jump release timing is consistent with pre-existing live server Jump re-press timing)",
-      "When using the \"Wall Jump on Release\" option, after crouching, releasing jump within 0.2 seconds will provide a jump boost (Jump release timing is consistent with pre-existing live server Jump re-press timing)"
+      {
+       "text_en": "Wall Ride",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "By default, Lúcio will now perform his Wall Jump boost immediately upon releasing Jump to leave the wall, instead of requiring a second Jump press immediately after leaving the wall This new setting appears inside Lucio's settings page as \"Wall Jump On Release\"",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "This new setting appears inside Lucio's settings page as \"Wall Jump On Release\"",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "While using the new setting, Lúcio can cancel wall rides by pressing Crouch, which will not trigger the automatic jump When using the \"Wall Jump on Release\" option, after crouching, releasing jump within 0.2 seconds will provide a jump boost (Jump release timing is consistent with pre-existing live server Jump re-press timing)",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "When using the \"Wall Jump on Release\" option, after crouching, releasing jump within 0.2 seconds will provide a jump boost (Jump release timing is consistent with pre-existing live server Jump re-press timing)",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -122,7 +181,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -181,5 +244,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:dccfe44e1219c2f1717b8afbc09ea1803aa63f6678b26e7b51c8762e07a329c7"
+ "hash": "sha256:7766a8ffffe0842a664a19f4b75b3a16fc0c8c17451b5d188a971c79001b420c"
 }

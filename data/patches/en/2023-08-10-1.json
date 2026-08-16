@@ -27,7 +27,18 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "Illari has been added to the line-up."
+      {
+       "text_en": "Illari has been added to the line-up.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -41,7 +52,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -55,7 +70,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -69,7 +88,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -83,7 +106,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -97,7 +124,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -211,7 +242,11 @@
          "text_cn": null,
          "before": 4.0,
          "after": 3.5,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": -0.5,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       },
@@ -225,7 +260,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -250,7 +289,11 @@
          "text_cn": null,
          "before": 7.0,
          "after": 6.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": -1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       },
@@ -264,7 +307,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -289,7 +336,11 @@
          "text_cn": null,
          "before": 15.0,
          "after": 20.0,
-         "metric": "damage falloff range"
+         "metric": "damage",
+         "by": 5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage falloff range"
         }
        ]
       },
@@ -303,7 +354,11 @@
          "text_cn": null,
          "before": 75.0,
          "after": 125.0,
-         "metric": "fortify health bonus"
+         "metric": "fortify health bonus",
+         "by": 50.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "fortify health bonus"
         }
        ]
       }
@@ -328,7 +383,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -342,14 +401,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "ultimate_cost",
+         "by": null,
+         "by_pct": 12.0,
+         "unit": null,
+         "raw_metric": "ultimate cost"
         },
         {
          "text_en": "Block now reduces damage from stuck projectiles.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -362,7 +429,18 @@
      "role": "tank",
      "dev_note": "Developer Comments: Sigma has always had somewhat floatier movement controls than most heroes in order to match his character movement animations. However, this led players to feel like his Tank role passive ability wasn’t reducing the amount he would be knocked back since it took him longer to stop than other tanks. We’ve now adjusted this to the standard hero movement values to make the gameplay interactions feel more consistent.",
      "general": [
-      "Base movement ground deceleration increased to match standard heroes movement."
+      {
+       "text_en": "Base movement ground deceleration increased to match standard heroes movement.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -386,14 +464,22 @@
          "text_cn": null,
          "before": 1.2,
          "after": 1.0,
-         "metric": "secondary fire charge time"
+         "metric": "secondary fire charge time",
+         "by": -0.2,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "secondary fire charge time"
         },
         {
          "text_en": "Secondary fire recovery time increased from 0.5 to 0.75 seconds.",
          "text_cn": null,
          "before": 0.5,
          "after": 0.75,
-         "metric": "secondary fire recovery time"
+         "metric": "secondary fire recovery time",
+         "by": 0.25,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "secondary fire recovery time"
         }
        ]
       }
@@ -427,35 +513,55 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Detonation time reduced from 0.5 to 0.35 seconds.",
          "text_cn": null,
          "before": 0.5,
          "after": 0.35,
-         "metric": "detonation time"
+         "metric": "detonation time",
+         "by": -0.15,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "detonation time"
         },
         {
          "text_en": "Recoil adjusted to recover more quickly.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Projectile size increased from 0.2 to 0.25.",
          "text_cn": null,
          "before": 0.2,
          "after": 0.25,
-         "metric": "projectile size"
+         "metric": "projectile size",
+         "by": 0.05,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "projectile size"
         },
         {
          "text_en": "Impact damage increased from 15 to 30.",
          "text_cn": null,
          "before": 15.0,
          "after": 30.0,
-         "metric": "impact damage"
+         "metric": "impact damage",
+         "by": 15.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "impact damage"
         }
        ]
       },
@@ -469,7 +575,11 @@
          "text_cn": null,
          "before": 1.5,
          "after": 1.2,
-         "metric": "reload time"
+         "metric": "reload time",
+         "by": -0.3,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "reload time"
         }
        ]
       },
@@ -483,7 +593,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -497,7 +611,11 @@
          "text_cn": null,
          "before": 20.0,
          "after": 25.0,
-         "metric": "targeting state movement speed"
+         "metric": "targeting state movement speed",
+         "by": 5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "targeting state movement speed"
         }
        ]
       }
@@ -510,7 +628,18 @@
      "role": "damage",
      "dev_note": "Developer Comments: Even with the powerful and reworked Magnetic Grenade, Cassidy has still been underperforming, so we are reverting his maximum health back up to 225, having his gun damage falloff reach its full reduction sooner, and restricting the maximum range on magnetic grenade to help solidify his position as a close-to-mid range damage dealer.",
      "general": [
-      "Base health increased from 200 to 225."
+      {
+       "text_en": "Base health increased from 200 to 225.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 200.0,
+       "after": 225.0,
+       "by": 25.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -524,7 +653,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -538,14 +671,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Slow amount reduced from 30 to 25%.",
          "text_cn": null,
          "before": 30.0,
          "after": 25.0,
-         "metric": "slow amount"
+         "metric": "slow amount",
+         "by": -5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "slow amount"
         }
        ]
       }
@@ -570,7 +711,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -595,7 +740,11 @@
          "text_cn": null,
          "before": 90.0,
          "after": 80.0,
-         "metric": "explosion damage"
+         "metric": "explosion damage",
+         "by": -10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "explosion damage"
         }
        ]
       },
@@ -609,7 +758,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "ultimate_cost",
+         "by": null,
+         "by_pct": 10.0,
+         "unit": null,
+         "raw_metric": "ultimate cost"
         }
        ]
       }
@@ -634,14 +787,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "ultimate_cost",
+         "by": null,
+         "by_pct": 15.0,
+         "unit": null,
+         "raw_metric": "ultimate cost"
         },
         {
          "text_en": "No longer destroys Lifeweaver's Tree of Life.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -654,7 +815,18 @@
      "role": "damage",
      "dev_note": "Developer Comments: We are continuing to add power into the Rivet Gun, as the previous changes didn’t quite make up for the turret damage decrease. In addition, we are also improving the Forge Hammer swing speed so that it is more effective to repair a turret while it is under fire.",
      "general": [
-      "Weapon swap time reduced from 0.5 to 0.4 seconds."
+      {
+       "text_en": "Weapon swap time reduced from 0.5 to 0.4 seconds.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 0.5,
+       "after": 0.4,
+       "by": -0.1,
+       "by_pct": null,
+       "metric": "weapon swap time",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -668,7 +840,11 @@
          "text_cn": null,
          "before": 0.55,
          "after": 0.48,
-         "metric": "primary fire recovery time"
+         "metric": "primary fire recovery time",
+         "by": -0.07,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "primary fire recovery time"
         }
        ]
       },
@@ -682,7 +858,11 @@
          "text_cn": null,
          "before": 0.75,
          "after": 0.6,
-         "metric": "swing recovery time"
+         "metric": "swing recovery time",
+         "by": -0.15,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "swing recovery time"
         }
        ]
       }
@@ -716,14 +896,22 @@
          "text_cn": null,
          "before": 75.0,
          "after": 70.0,
-         "metric": "damage and healing per projectile"
+         "metric": "damage",
+         "by": -5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage and healing per projectile"
         },
         {
          "text_en": "Unscoped projectile size increased from 0 to 0.1.",
          "text_cn": null,
          "before": 0.0,
          "after": 0.1,
-         "metric": "unscoped projectile size"
+         "metric": "unscoped projectile size",
+         "by": 0.1,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "unscoped projectile size"
         }
        ]
       }
@@ -748,7 +936,11 @@
          "text_cn": null,
          "before": 300.0,
          "after": 250.0,
-         "metric": "barrier shield health"
+         "metric": "barrier",
+         "by": -50.0,
+         "by_pct": null,
+         "unit": "hp",
+         "raw_metric": "barrier shield health"
         }
        ]
       },
@@ -762,7 +954,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "ultimate_cost",
+         "by": null,
+         "by_pct": 6.0,
+         "unit": null,
+         "raw_metric": "ultimate cost"
         }
        ]
       }
@@ -787,21 +983,33 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Healing reduced from 50 to 40.",
          "text_cn": null,
          "before": 50.0,
          "after": 40.0,
-         "metric": "healing"
+         "metric": "healing",
+         "by": -10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "healing"
         },
         {
          "text_en": "Now heals for an additional 30 health when cleansing a negative effect.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -815,21 +1023,33 @@
          "text_cn": null,
          "before": 40.0,
          "after": 45.0,
-         "metric": "damage"
+         "metric": "damage",
+         "by": 5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage"
         },
         {
          "text_en": "Recovery time reduced from 0.55 to 0.5 seconds.",
          "text_cn": null,
          "before": 0.55,
          "after": 0.5,
-         "metric": "recovery time"
+         "metric": "recovery",
+         "by": -0.05,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "recovery time"
         },
         {
          "text_en": "Critical damage multiplier reduced from 3 to 2.5x.",
          "text_cn": null,
          "before": 3.0,
          "after": 2.5,
-         "metric": "critical damage multiplier"
+         "metric": "critical damage multiplier",
+         "by": -0.5,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "critical damage multiplier"
         }
        ]
       }
@@ -842,8 +1062,30 @@
      "role": "support",
      "dev_note": "Developer Comments: The Tree of Life outputs substantial healing but often doesn't provide enough value for an ultimate ability. To increase its utility, any overhealing done via the Tree is now converted to overhealth. Thorn Volley's spread is now less random, with half the projectiles having a smaller base spread to promote better mid-range consistency. Life Grip now has a longer mobility lockout duration to prevent accidental cancels by the affected ally using a movement ability immediately after the pull being started. Finally, we are supplementing Lifeweaver's survivability with an increase to his overall health pool by converting some of it to shield health in order to account for the large petal hit volume on his back, as well as increasing the healing done by Rejuvenating Dash.",
      "general": [
-      "Base health reduced from 200 to 175.",
-      "Base shield health increased from 0 to 50."
+      {
+       "text_en": "Base health reduced from 200 to 175.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 200.0,
+       "after": 175.0,
+       "by": -25.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      },
+      {
+       "text_en": "Base shield health increased from 0 to 50.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 0.0,
+       "after": 50.0,
+       "by": 50.0,
+       "by_pct": null,
+       "metric": "base shield health",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -857,7 +1099,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -871,7 +1117,11 @@
          "text_cn": null,
          "before": 25.0,
          "after": 50.0,
-         "metric": "healing"
+         "metric": "healing",
+         "by": 25.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "healing"
         }
        ]
       },
@@ -885,7 +1135,11 @@
          "text_cn": null,
          "before": 0.45,
          "after": 0.75,
-         "metric": "mobility lockout duration"
+         "metric": "mobility lockout duration",
+         "by": 0.3,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "mobility lockout duration"
         }
        ]
       },
@@ -899,7 +1153,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -924,7 +1182,11 @@
          "text_cn": null,
          "before": 60.0,
          "after": 0.0,
-         "metric": "healing penalty is now"
+         "metric": "crossfade self-healing penalty is now",
+         "by": -60.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "crossfade self-healing penalty is now"
         }
        ]
       }
@@ -949,7 +1211,11 @@
          "text_cn": null,
          "before": 30.0,
          "after": 25.0,
-         "metric": "secondary fire damage boost"
+         "metric": "secondary fire damage boost",
+         "by": -5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "secondary fire damage boost"
         }
        ]
       }
@@ -991,7 +1257,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -1005,7 +1275,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -1030,7 +1304,11 @@
          "text_cn": null,
          "before": 2.0,
          "after": 3.0,
-         "metric": "particle barrier duration"
+         "metric": "particle barrier duration",
+         "by": 1.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "particle barrier duration"
         }
        ]
       },
@@ -1044,7 +1322,11 @@
          "text_cn": null,
          "before": 2.0,
          "after": 3.0,
-         "metric": "projected barrier duration"
+         "metric": "projected barrier duration",
+         "by": 1.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "projected barrier duration"
         }
        ]
       },
@@ -1058,7 +1340,11 @@
          "text_cn": null,
          "before": 5.0,
          "after": 30.0,
-         "metric": "damage per second"
+         "metric": "damage",
+         "by": 25.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage per second"
         }
        ]
       },
@@ -1072,7 +1358,11 @@
          "text_cn": null,
          "before": 2.0,
          "after": 1.5,
-         "metric": "energy degeneration rate"
+         "metric": "energy degeneration rate",
+         "by": -0.5,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "energy degeneration rate"
         }
        ]
       }
@@ -1106,21 +1396,33 @@
          "text_cn": null,
          "before": 130.0,
          "after": 325.0,
-         "metric": "initial charge rate"
+         "metric": "initial charge rate",
+         "by": 195.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "initial charge rate"
         },
         {
          "text_en": "Ramped charge rate increased from 260 to 650 damager per second.",
          "text_cn": null,
          "before": 260.0,
          "after": 650.0,
-         "metric": "ramped charge rate"
+         "metric": "ramped charge rate",
+         "by": 390.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "ramped charge rate"
         },
         {
          "text_en": "Now has a maximum damage cap of 1560 per target.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -1145,7 +1447,11 @@
          "text_cn": null,
          "before": 50.0,
          "after": 85.0,
-         "metric": "damage per second"
+         "metric": "damage",
+         "by": 35.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage per second"
         }
        ]
       },
@@ -1159,21 +1465,33 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Duration increased from 15 to 20 seconds.",
          "text_cn": null,
          "before": 15.0,
          "after": 20.0,
-         "metric": "duration"
+         "metric": "duration",
+         "by": 5.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "duration"
         },
         {
          "text_en": "Ultimate charge rate multiplier during Duplicate increased from 4x to 9x.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -1198,7 +1516,11 @@
          "text_cn": null,
          "before": 27.0,
          "after": 29.0,
-         "metric": "damage"
+         "metric": "damage",
+         "by": 2.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage"
         }
        ]
       },
@@ -1212,7 +1534,11 @@
          "text_cn": null,
          "before": 2.0,
          "after": 3.0,
-         "metric": "duration"
+         "metric": "duration",
+         "by": 1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "duration"
         }
        ]
       },
@@ -1226,7 +1552,11 @@
          "text_cn": null,
          "before": 6.0,
          "after": 8.0,
-         "metric": "duration"
+         "metric": "duration",
+         "by": 2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "duration"
         }
        ]
       }
@@ -1251,7 +1581,11 @@
          "text_cn": null,
          "before": 55.0,
          "after": 100.0,
-         "metric": "primary fire damage per second"
+         "metric": "primary fire damage per second",
+         "by": 45.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "primary fire damage per second"
         }
        ]
       }
@@ -1264,7 +1598,18 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Hover Jets and Jump Jet now increases movement speed by 30%."
+      {
+       "text_en": "Hover Jets and Jump Jet now increases movement speed by 30%.",
+       "text_cn": null,
+       "subject": "move_speed",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -1278,7 +1623,11 @@
          "text_cn": null,
          "before": 0.0,
          "after": 30.0,
-         "metric": "explosion damage"
+         "metric": "explosion damage",
+         "by": 30.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "explosion damage"
         }
        ]
       },
@@ -1292,7 +1641,11 @@
          "text_cn": null,
          "before": 30.0,
          "after": 35.0,
-         "metric": "explosion damage"
+         "metric": "explosion damage",
+         "by": 5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "explosion damage"
         }
        ]
       },
@@ -1306,7 +1659,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "maximum fuel",
+         "by": null,
+         "by_pct": 20.0,
+         "unit": null,
+         "raw_metric": "maximum fuel"
         }
        ]
       }
@@ -1331,7 +1688,11 @@
          "text_cn": null,
          "before": 11.0,
          "after": 15.0,
-         "metric": "turret damage"
+         "metric": "turret damage",
+         "by": 4.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "turret damage"
         }
        ]
       }
@@ -1356,14 +1717,22 @@
          "text_cn": null,
          "before": 40.0,
          "after": 60.0,
-         "metric": "ammo"
+         "metric": "ammo",
+         "by": 20.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "ammo"
         },
         {
          "text_en": "Damage reduced from 5.5 to 5.",
          "text_cn": null,
          "before": 5.5,
          "after": 5.0,
-         "metric": "damage"
+         "metric": "damage",
+         "by": -0.5,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage"
         }
        ]
       },
@@ -1377,7 +1746,11 @@
          "text_cn": null,
          "before": 350.0,
          "after": 550.0,
-         "metric": "explosion damage"
+         "metric": "explosion damage",
+         "by": 200.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "explosion damage"
         }
        ]
       }
@@ -1411,7 +1784,11 @@
          "text_cn": null,
          "before": 50.0,
          "after": 60.0,
-         "metric": "damage"
+         "metric": "damage",
+         "by": 10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage"
         }
        ]
       },
@@ -1425,14 +1802,22 @@
          "text_cn": null,
          "before": 10.0,
          "after": 15.0,
-         "metric": "duration"
+         "metric": "duration",
+         "by": 5.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "duration"
         },
         {
          "text_en": "Rally does not increase Barrier Shield size in Story Missions.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -1446,7 +1831,11 @@
          "text_cn": null,
          "before": 75.0,
          "after": 55.0,
-         "metric": "healing total"
+         "metric": "healing",
+         "by": -20.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "healing total"
         }
        ]
       }
@@ -1471,7 +1860,11 @@
          "text_cn": null,
          "before": 5.0,
          "after": 4.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": -1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       },
@@ -1485,7 +1878,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -1544,5 +1941,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:1e65ea4d27b1bc103fab41d46faabcf343591545dc4a503ac442a4cabc349e23"
+ "hash": "sha256:e972085040874c6181aaaec731600e6c96bbe44e9a4c145cd70a93fccf9635b9"
 }

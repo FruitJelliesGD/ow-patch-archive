@@ -27,14 +27,6 @@ ROLE_MAP = {
 _EN_PERK_RE = re.compile(r"^(.*?)\s*[-–]\s*(Minor|Major) Perk\s*$", re.I)
 _CN_PERK_RE = re.compile(r"^(.*?)——(主要|次级)威能\s*$")
 _CN_TITLE_DATE_RE = re.compile(r"(\d{4})年(\d{1,2})月(\d{1,2})日")
-_EN_NUM_RE = re.compile(
-    r"(\w[\w ]+?) (increased|reduced|decreased|changed) from (\d+(?:\.\d+)?) to (\d+(?:\.\d+)?)",
-    re.I,
-)
-_CN_NUM_RE = re.compile(
-    r"([\u4e00-\u9fff]+)从(\d+(?:\.\d+)?)[点秒米度%]?(提高|缩短|降低|减少|增加|扩大|延长)至(\d+(?:\.\d+)?)[点秒米度%]?"
-)
-_CN_METRIC_VERB = re.compile(r"(提高|缩短|降低|减少|增加|扩大|延长)$")
 
 # split at opening tags whose class list contains the exact token "PatchNotes-patch"/"PatchNotes-section"
 _PATCH_SPLIT_RE = re.compile(r'(?=<div\s+class="(?:[^"]*\s)?PatchNotes-patch(?:\s|"))')
@@ -232,18 +224,16 @@ def _parse_ability(ab_div: Tag, site: str) -> AbilityUpdate:
 
 
 def _extract_numbers(change: Change, text: str, site: str) -> None:
-    if site == "en":
-        m = _EN_NUM_RE.search(text)
-        if m:
-            change.metric = m.group(1).strip().lower()
-            change.before = float(m.group(3))
-            change.after = float(m.group(4))
-    else:
-        m = _CN_NUM_RE.search(text)
-        if m:
-            change.metric = _CN_METRIC_VERB.sub("", m.group(1))
-            change.before = float(m.group(2))
-            change.after = float(m.group(4))
+    from .extract import extract_change
+
+    result = extract_change(text, site)
+    change.metric = result.metric
+    change.before = result.before
+    change.after = result.after
+    change.by = result.by
+    change.by_pct = result.by_pct
+    change.raw_metric = result.raw_metric
+    change.unit = result.unit
 
 
 def _parse_generic_block(div: Tag) -> GenericBlock:

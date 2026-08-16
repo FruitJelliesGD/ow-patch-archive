@@ -35,8 +35,30 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Health decreased from 425 to 350.",
-      "Bonus health increases from Roll impacts reduced from 25 to 20."
+      {
+       "text_en": "Health decreased from 425 to 350.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 425.0,
+       "after": 350.0,
+       "by": -75.0,
+       "by_pct": null,
+       "metric": "health",
+       "unit": "hp"
+      },
+      {
+       "text_en": "Bonus health increases from Roll impacts reduced from 25 to 20.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 25.0,
+       "after": 20.0,
+       "by": -5.0,
+       "by_pct": null,
+       "metric": "bonus health increases from roll impacts",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -69,14 +91,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "fire rate",
+         "by": null,
+         "by_pct": 30.0,
+         "unit": null,
+         "raw_metric": "fire rate"
         },
         {
          "text_en": "Explosion damage reduced from 14 to 12.",
          "text_cn": null,
          "before": 14.0,
          "after": 12.0,
-         "metric": "explosion damage"
+         "metric": "explosion damage",
+         "by": -2.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "explosion damage"
         }
        ]
       }
@@ -87,5 +117,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:e585fe9eb973b8bf53bceb185f0b43c178f0e36b4690f2001cc581040a13cd71"
+ "hash": "sha256:1d4bc31eb08b167ac0bd3ff62a720d2919020917515b426e0eed258b16e52ed2"
 }

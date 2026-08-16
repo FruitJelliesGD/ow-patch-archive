@@ -49,7 +49,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "ultimate_cost",
+         "by": null,
+         "by_pct": 30.0,
+         "unit": null,
+         "raw_metric": "ultimate cost"
         }
        ]
       },
@@ -63,7 +67,11 @@
          "text_cn": null,
          "before": 7.0,
          "after": 9.0,
-         "metric": "damage per projectile"
+         "metric": "damage",
+         "by": 2.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage per projectile"
         }
        ]
       },
@@ -77,7 +85,11 @@
          "text_cn": null,
          "before": 7.0,
          "after": 9.0,
-         "metric": "damage per projectile"
+         "metric": "damage",
+         "by": 2.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage per projectile"
         }
        ]
       },
@@ -91,14 +103,22 @@
          "text_cn": null,
          "before": 30.0,
          "after": 80.0,
-         "metric": "health"
+         "metric": "health",
+         "by": 50.0,
+         "by_pct": null,
+         "unit": "hp",
+         "raw_metric": "health"
         },
         {
          "text_en": "Grapple move speed increased from 20 to 22.",
          "text_cn": null,
          "before": 20.0,
          "after": 22.0,
-         "metric": "grapple move speed"
+         "metric": "grapple move speed",
+         "by": 2.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "grapple move speed"
         }
        ]
       }
@@ -109,5 +129,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:45ad928c274457936e295919df061a79a793f0eb9bc1b9adc7adf418e2df724c"
+ "hash": "sha256:16fc71c579cfd40ac8f4cf6dcb8e60529e33c530089e6540a780aed99174d246"
 }

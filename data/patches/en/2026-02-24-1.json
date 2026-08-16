@@ -19,8 +19,30 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Panopticon",
-      "Cost increased by 12%"
+      {
+       "text_en": "Panopticon",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Cost increased by 12%",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 12.0,
+       "metric": "cost",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -32,10 +54,54 @@
      "role": null,
      "dev_note": null,
      "general": [
-      "Inferno Rush",
-      "Cooldown reduced from 8.5 to 8 seconds.",
-      "Dancing Blaze",
-      "Increased the distance you can move while active from 1.5 to 2.25 meters."
+      {
+       "text_en": "Inferno Rush",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Cooldown reduced from 8.5 to 8 seconds.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 8.5,
+       "after": 8.0,
+       "by": -0.5,
+       "by_pct": null,
+       "metric": "cooldown",
+       "unit": "s"
+      },
+      {
+       "text_en": "Dancing Blaze",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Increased the distance you can move while active from 1.5 to 2.25 meters.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -47,8 +113,30 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Synthetic Burst Rifle",
-      "Damage increased from 20 to 22."
+      {
+       "text_en": "Synthetic Burst Rifle",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Damage increased from 20 to 22.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 20.0,
+       "after": 22.0,
+       "by": 2.0,
+       "by_pct": null,
+       "metric": "damage",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -60,9 +148,42 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Palatine Fang",
-      "Overhead swing damage reduced from 130 to 120.",
-      "Bug fix - Overhead swing can now be affected by horizontal knockback while launching downward."
+      {
+       "text_en": "Palatine Fang",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Overhead swing damage reduced from 130 to 120.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 130.0,
+       "after": 120.0,
+       "by": -10.0,
+       "by_pct": null,
+       "metric": "overhead swing damage",
+       "unit": null
+      },
+      {
+       "text_en": "Bug fix - Overhead swing can now be affected by horizontal knockback while launching downward.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -74,12 +195,51 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "Minor Perk – Claws Out",
-      "Cooldown increased from 6 to 8 seconds.",
-      "Major Perk – Territorial",
-      "Damage dealt reduced from 50% to 33%."
+      {
+       "text_en": "Cooldown increased from 6 to 8 seconds.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 6.0,
+       "after": 8.0,
+       "by": 2.0,
+       "by_pct": null,
+       "metric": "cooldown",
+       "unit": "s"
+      },
+      {
+       "text_en": "Damage dealt reduced from 50% to 33%.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Minor",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [
+        "Minor Perk – Claws Out"
+       ],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Major",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [
+        "Major Perk – Territorial"
+       ],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     },
     {
@@ -89,8 +249,30 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "Kekkai Sanctuary",
-      "Duration increased from 6 to 7 seconds."
+      {
+       "text_en": "Kekkai Sanctuary",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Duration increased from 6 to 7 seconds.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 6.0,
+       "after": 7.0,
+       "by": 1.0,
+       "by_pct": null,
+       "metric": "duration",
+       "unit": "s"
+      }
      ],
      "perks": [],
      "abilities": []
@@ -119,5 +301,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:e7510cf3400d8c5ded59a36a9ce26082fffe7abc6550d55c1d43ae36794abb0a"
+ "hash": "sha256:073d2fb83379bb8354d69397c06e3a1ede99ca74ab8f552d048470f1d88a413a"
 }

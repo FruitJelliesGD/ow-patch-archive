@@ -62,14 +62,26 @@ const run = new Function("document", "location", "fetch", "console", "URL", appJ
 
     location.search = "?slug=soldier-76";
     await initHero();
+    const timelineEl = document.getElementById("timeline");
+    const dimTitles = [];
     const groupTitles = [];
-    for (const g of document.getElementById("timeline").children) {
-      if (g.className === "timeline-group") groupTitles.push(g.innerHTML || "");
+    let hasValuesChip = false;
+    for (const g of timelineEl.children) {
+      if (g.className === "dim-section") {
+        dimTitles.push(g.innerHTML || "");
+        for (const sub of g.children) {
+          if (sub.className === "timeline-group") {
+            groupTitles.push(sub.innerHTML || "");
+            if (/class="values"/.test(sub.innerHTML || "")) hasValuesChip = true;
+          }
+        }
+      }
     }
-    results.heroGroups = groupTitles.length;
-    results.heroHasHelix = groupTitles.some((t) => /Helix|螺旋/.test(t));
+    results.dimSections = dimTitles.length;
+    results.heroHasWeapon = groupTitles.some((t) => /Helix|螺旋/.test(t));
     results.heroHasStim = groupTitles.some((t) => /Stim|强化/.test(t));
-    results.heroHasAgility = groupTitles.some((t) => /Agility|敏捷/.test(t));
+    results.heroHasAttr = dimTitles.some((t) => /英雄属性/.test(t));
+    results.heroHasValues = hasValuesChip;
     results.heroNoHashGroup = groupTitles.every((t) => !/hero-/.test(t));
 
     console.log(JSON.stringify(results, null, 1));
@@ -77,7 +89,9 @@ const run = new Function("document", "location", "fetch", "console", "URL", appJ
     if (results.indexPatches !== 341) fail.push("indexPatches=" + results.indexPatches);
     if (results.langButtons !== 2) fail.push("langButtons=" + results.langButtons);
     if (!results.patchTitle) fail.push("empty patch title");
-    if (!results.heroHasHelix || !results.heroHasStim) fail.push("helix/stim group missing");
+    if (!results.heroHasWeapon || !results.heroHasStim) fail.push("weapon/stim group missing");
+    if (!results.heroHasAttr) fail.push("hero attribute group missing");
+    if (!results.heroHasValues) fail.push("values chip missing");
     if (!results.heroNoHashGroup) fail.push("hash-slug group found");
     if (fail.length) { console.error("ASSERT FAIL:", fail.join("; ")); process.exit(1); }
     console.log("ALL WEB ASSERTIONS OK");

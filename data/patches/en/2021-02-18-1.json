@@ -31,7 +31,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -56,14 +60,22 @@
          "text_cn": null,
          "before": 8.0,
          "after": 6.0,
-         "metric": "spread"
+         "metric": "spread",
+         "by": -2.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "spread"
         },
         {
          "text_en": "Damage per projectile reduced from 7 to 5.5",
          "text_cn": null,
          "before": 7.0,
          "after": 5.5,
-         "metric": "damage per projectile"
+         "metric": "damage",
+         "by": -1.5,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage per projectile"
         }
        ]
       }
@@ -76,7 +88,18 @@
      "role": "tank",
      "dev_note": "With this change Winston will be slightly more resilient against shotguns, beams, and weapons with a high rate of fire.",
      "general": [
-      "Base Armor/Health has been redistributed from 100/400 to 150/350"
+      {
+       "text_en": "Base Armor/Health has been redistributed from 100/400 to 150/350",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -100,7 +123,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "knockback",
+         "by": null,
+         "by_pct": 25.0,
+         "unit": null,
+         "raw_metric": "knockback strength"
         }
        ]
       }
@@ -130,5 +157,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:6d19dc9ad6a58754528fec23c63782a585abf0508c24c0bd1d89a32c7b51db26"
+ "hash": "sha256:00888ba660407ce1df0bfcf6330d493398ed100927caf500cf3a3c408e25c608"
 }

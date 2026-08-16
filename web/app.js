@@ -3,6 +3,11 @@
 
 const ROLE_LABEL = { tank: "重装", damage: "输出", support: "支援" };
 const KIND_LABEL = { ability: "技能改动", perk: "威能改动", general: "其他改动" };
+const DIM_LABEL = { weapon: "武器", ability: "技能", perk: "威能", hero_attr: "英雄属性", other: "其他" };
+const ATTR_LABEL = {
+  health: "生命值", ultimate_cost: "终极技能消耗", move_speed: "移动速度",
+  base_stat: "基础属性", other: "其他",
+};
 const SITE_LABEL = { en: "英文站", cn: "中文站" };
 const STATUS_LABEL = {
   added: "新增", removed: "移除", reworked: "重做", moved: "变更", changed: "调整",
@@ -135,38 +140,65 @@ async function initHero() {
     ROLE_LABEL[hero.role] || hero.role || "";
 
   const timeline = hero.timeline || [];
-  const groups = new Map(); // key -> {title, entries}
+  const values = hero.values || {};
+  const groups = new Map(); // key -> {dim, title, entries}
   for (const e of timeline) {
+    const dim = e.dimension || (e.kind === "perk" ? "perk" : "other");
     let key, title;
-    if (e.kind === "ability") {
-      key = `ability::${e.ability_slug || e.ability_en || e.ability_cn}`;
+    if (dim === "weapon" || dim === "ability") {
+      key = `${dim}::${e.ability_slug || e.ability_en || e.ability_cn}`;
       title = e.ability_cn && e.ability_en ? `${e.ability_cn} / ${e.ability_en}` : (e.ability_cn || e.ability_en || "-");
-    } else if (e.kind === "perk") {
+    } else if (dim === "perk") {
       key = `perk::${e.perk_slug || e.perk_cn || e.perk_en}`;
       title = e.perk_cn && e.perk_en ? `${e.perk_cn} / ${e.perk_en}` : (e.perk_cn || e.perk_en || "-");
+    } else if (dim === "hero_attr") {
+      key = `attr::${e.subject || e.metric || "other"}`;
+      title = ATTR_LABEL[e.subject] || e.subject || "其他";
     } else {
-      key = "general";
+      key = "other";
       title = "其他改动";
     }
-    if (!groups.has(key)) groups.set(key, { title, entries: [] });
+    if (!groups.has(key)) groups.set(key, { dim, title, entries: [] });
     groups.get(key).entries.push(e);
   }
 
+  const DIM_ORDER = ["weapon", "ability", "perk", "hero_attr", "other"];
   const main = document.getElementById("timeline");
   const count = document.createElement("p");
   count.className = "sub";
   count.textContent = `共 ${timeline.length} 条记录`;
   main.appendChild(count);
 
-  for (const { title, entries } of groups.values()) {
-    const group = document.createElement("section");
-    group.className = "timeline-group";
-    group.innerHTML = `<h2>${esc(title)}</h2>`;
-    const body = document.createElement("div");
-    for (const e of entries) body.appendChild(entryNode(e));
-    group.appendChild(body);
-    main.appendChild(group);
+  for (const dim of DIM_ORDER) {
+    const dimEntries = [...groups.values()].filter((g) => g.dim === dim);
+    if (!dimEntries.length) continue;
+    const dimSection = document.createElement("section");
+    dimSection.className = "dim-section";
+    dimSection.innerHTML = `<h2 class="dim-title"><span class="badge dim dim-${esc(dim)}">${DIM_LABEL[dim]}</span></h2>`;
+    for (const { title, entries } of dimEntries) {
+      const group = document.createElement("section");
+      group.className = "timeline-group";
+      group.innerHTML = `<h2>${esc(title)}${valueChips(values, entries[0])}</h2>`;
+      const body = document.createElement("div");
+      for (const e of entries) body.appendChild(entryNode(e));
+      group.appendChild(body);
+      dimSection.appendChild(group);
+    }
+    main.appendChild(dimSection);
   }
+}
+
+function valueChips(values, entry) {
+  const prefix = entry.kind === "perk" ? `perk:${entry.perk_slug}:`
+    : entry.dimension === "hero_attr" ? `attr:${entry.subject || "other"}:`
+    : `${entry.ability_slug}:`;
+  const chips = [];
+  for (const [key, points] of Object.entries(values)) {
+    if (!key.startsWith(prefix)) continue;
+    const arrow = points.map((p) => fmtNum(p.value)).join(" → ");
+    chips.push(`<span class="values" title="${esc(key)}">${esc(arrow)}</span>`);
+  }
+  return chips.length ? `<span class="values-wrap">${chips.join(" ")}</span>` : "";
 }
 
 function entryNode(e) {
@@ -177,6 +209,7 @@ function entryNode(e) {
   head.innerHTML = `
     <span class="badge ${esc(e.site)}">${SITE_LABEL[e.site]}</span>
     <span class="badge kind">${KIND_LABEL[e.kind]}</span>
+    ${e.subject ? `<span class="badge attr">${ATTR_LABEL[e.subject] || e.subject}</span>` : ""}
     <span>${esc(e.date)}</span>
     <span class="patch-link">${e.patch_title ? esc(e.patch_title) : esc(e.patch)}</span>`;
   div.appendChild(head);
@@ -218,6 +251,11 @@ function entryNode(e) {
     const num = document.createElement("div");
     num.className = "num-line";
     num.innerHTML = `数值变化：<span class="num">${fmtNum(e.before)} → ${fmtNum(e.after)}</span>${e.metric ? `（${esc(e.metric)}）` : ""}`;
+    div.appendChild(num);
+  } else if (e.by_pct != null) {
+    const num = document.createElement("div");
+    num.className = "num-line";
+    num.innerHTML = `变化幅度：<span class="num">${e.by_pct}%</span>${e.metric ? `（${esc(e.metric)}）` : ""}`;
     div.appendChild(num);
   }
   if (e.url) {
@@ -334,7 +372,7 @@ function heroBlock(hero) {
   for (const line of hero.general || []) {
     const d = document.createElement("div");
     d.className = "text";
-    d.textContent = line;
+    d.textContent = typeof line === "string" ? line : (line.text_cn || line.text_en || "");
     block.appendChild(d);
   }
   for (const perk of hero.perks || []) {

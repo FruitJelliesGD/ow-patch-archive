@@ -13,6 +13,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "outburst",
    "ability_en": "Outburst",
    "ability_cn": "烈日冲击",
@@ -20,7 +21,10 @@
    "text_cn": "现在会为范围内的盟友提供75点治疗。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-07-01-1",
@@ -29,6 +33,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "captive-sun",
    "ability_en": "Captive Sun",
    "ability_cn": "桎梏灼日",
@@ -36,7 +41,10 @@
    "text_cn": "在“桎梏灼日”激活时，瞄准伊拉锐的敌人会被限制。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-07-01-1",
@@ -45,6 +53,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月1日",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "sunburn",
    "perk_en": null,
    "perk_cn": "烈日燎灼",
@@ -62,6 +71,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 30, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "outburst",
    "ability_en": "Outburst",
    "ability_cn": "烈日冲击",
@@ -69,7 +79,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-30-1",
@@ -78,6 +91,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 30, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "captive-sun",
    "ability_en": "Captive Sun",
    "ability_cn": "桎梏灼日",
@@ -85,7 +99,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-30-1",
@@ -94,6 +111,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 30, 2026",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "sunburn",
    "perk_en": "Sunburn",
    "perk_cn": null,
@@ -111,6 +129,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "hero-3a8405a0",
    "perk_en": null,
    "perk_cn": "快速建造",
@@ -127,8 +146,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "冷却时间缩短从1.5秒提升至2秒。"
+   "text_cn": "冷却时间缩短从1.5秒提升至2秒。",
+   "before": 1.5,
+   "after": 2.0,
+   "by": 0.5,
+   "by_pct": null,
+   "metric": "cooldown",
+   "unit": "s"
   },
   {
    "patch": "en-2026-06-16-1",
@@ -137,8 +164,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Rapid Construction – Minor Perk Cooldown reduction increased from 1.5 to 2 seconds.",
-   "text_cn": null
+   "text_cn": null,
+   "before": 1.5,
+   "after": 2.0,
+   "by": 0.5,
+   "by_pct": null,
+   "metric": "minor perk cooldown reduction",
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -147,8 +182,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Cooldown reduction increased from 1.5 to 2 seconds.",
-   "text_cn": null
+   "text_cn": null,
+   "before": 1.5,
+   "after": 2.0,
+   "by": 0.5,
+   "by_pct": null,
+   "metric": "cooldown",
+   "unit": "s"
   },
   {
    "patch": "cn-2026-05-13-1",
@@ -157,6 +200,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/05/",
    "patch_title": "《守望先锋》补丁说明——2026年5月13日",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "solar-rifle",
    "ability_en": "Solar Rifle",
    "ability_cn": "阳焰步枪",
@@ -164,7 +208,10 @@
    "text_cn": "基础弹道尺寸从0.05米降低至0米。",
    "before": 0.05,
    "after": 0.0,
-   "metric": "基础弹道尺寸"
+   "by": -0.05,
+   "by_pct": null,
+   "metric": "基础弹道尺寸",
+   "unit": "m"
   },
   {
    "patch": "cn-2026-05-13-1",
@@ -173,6 +220,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/05/",
    "patch_title": "《守望先锋》补丁说明——2026年5月13日",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "solar-rifle",
    "ability_en": "Solar Rifle",
    "ability_cn": "阳焰步枪",
@@ -180,7 +228,10 @@
    "text_cn": "即时命中全局弹道尺寸加成依然生效（0.07）。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-05-12-1",
@@ -189,6 +240,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/05",
    "patch_title": "Overwatch Retail Patch Notes - May 12, 2026",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "solar-rifle",
    "ability_en": "Solar Rifle",
    "ability_cn": "阳焰步枪",
@@ -196,7 +248,10 @@
    "text_cn": null,
    "before": 0.05,
    "after": 0.0,
-   "metric": "base projectile size"
+   "by": -0.05,
+   "by_pct": null,
+   "metric": "base projectile size",
+   "unit": null
   },
   {
    "patch": "en-2026-05-12-1",
@@ -205,6 +260,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/05",
    "patch_title": "Overwatch Retail Patch Notes - May 12, 2026",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "solar-rifle",
    "ability_en": "Solar Rifle",
    "ability_cn": "阳焰步枪",
@@ -212,7 +268,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-04-01-1",
@@ -221,6 +280,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/04",
    "patch_title": "Overwatch Retail Patch Notes - April 1, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "healing-pylon",
    "ability_en": "Healing Pylon",
    "ability_cn": "治疗光塔",
@@ -228,7 +288,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-04-01-1",
@@ -237,6 +300,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/04",
    "patch_title": "Overwatch Retail Patch Notes - April 1, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "healing-pylon",
    "ability_en": "Healing Pylon",
    "ability_cn": "治疗光塔",
@@ -244,7 +308,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-04-01-1",
@@ -253,6 +320,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/04",
    "patch_title": "Overwatch Retail Patch Notes - April 1, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "healing-pylon",
    "ability_en": "Healing Pylon",
    "ability_cn": "治疗光塔",
@@ -260,7 +328,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-04-01-1",
@@ -269,6 +340,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/04",
    "patch_title": "Overwatch Retail Patch Notes - April 1, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "healing-pylon",
    "ability_en": "Healing Pylon",
    "ability_cn": "治疗光塔",
@@ -276,7 +348,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-04-01-1",
@@ -285,6 +360,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/04",
    "patch_title": "Overwatch Retail Patch Notes - April 1, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "healing-pylon",
    "ability_en": "Healing Pylon",
    "ability_cn": "治疗光塔",
@@ -292,7 +368,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-04-01-1",
@@ -301,6 +380,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/04",
    "patch_title": "Overwatch Retail Patch Notes - April 1, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "healing-pylon",
    "ability_en": "Healing Pylon",
    "ability_cn": "治疗光塔",
@@ -308,7 +388,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-04-01-1",
@@ -317,6 +400,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/04",
    "patch_title": "Overwatch Retail Patch Notes - April 1, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "healing-pylon",
    "ability_en": "Healing Pylon",
    "ability_cn": "治疗光塔",
@@ -324,7 +408,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-04-01-1",
@@ -333,6 +420,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/04/",
    "patch_title": "《守望先锋》补丁说明——2026年4月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "healing-pylon",
    "ability_en": "Healing Pylon",
    "ability_cn": "治疗光塔",
@@ -340,7 +428,10 @@
    "text_cn": "不再被动治疗附近盟友。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-04-01-1",
@@ -349,6 +440,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/04/",
    "patch_title": "《守望先锋》补丁说明——2026年4月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "healing-pylon",
    "ability_en": "Healing Pylon",
    "ability_cn": "治疗光塔",
@@ -356,7 +448,10 @@
    "text_cn": "用阳焰步枪的主要攻击模式射击光塔，会将子弹反弹向射程内的所有敌人。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-04-01-1",
@@ -365,6 +460,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/04/",
    "patch_title": "《守望先锋》补丁说明——2026年4月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "healing-pylon",
    "ability_en": "Healing Pylon",
    "ability_cn": "治疗光塔",
@@ -372,7 +468,10 @@
    "text_cn": "阳焰步枪的辅助攻击模式可对治疗光塔造成治疗。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-04-01-1",
@@ -381,6 +480,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/04/",
    "patch_title": "《守望先锋》补丁说明——2026年4月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "healing-pylon",
    "ability_en": "Healing Pylon",
    "ability_cn": "治疗光塔",
@@ -388,7 +488,10 @@
    "text_cn": "用阳焰步枪的辅助攻击模式射击光塔，会将光束反弹向射程内的所有盟友。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-04-01-1",
@@ -397,6 +500,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/04/",
    "patch_title": "《守望先锋》补丁说明——2026年4月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "healing-pylon",
    "ability_en": "Healing Pylon",
    "ability_cn": "治疗光塔",
@@ -404,7 +508,10 @@
    "text_cn": "建造时间缩短至0.5秒。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-04-01-1",
@@ -413,6 +520,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/04/",
    "patch_title": "《守望先锋》补丁说明——2026年4月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "healing-pylon",
    "ability_en": "Healing Pylon",
    "ability_cn": "治疗光塔",
@@ -420,7 +528,10 @@
    "text_cn": "伊拉锐投掷光塔的距离变远。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-04-01-1",
@@ -429,6 +540,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/04/",
    "patch_title": "《守望先锋》补丁说明——2026年4月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "healing-pylon",
    "ability_en": "Healing Pylon",
    "ability_cn": "治疗光塔",
@@ -436,7 +548,10 @@
    "text_cn": "冷却时间始终为7秒。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-03-11-1",
@@ -445,6 +560,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/03/",
    "patch_title": "《守望先锋》补丁说明——2026年3月11日",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "solar-rifle",
    "ability_en": "Solar Rifle",
    "ability_cn": "阳焰步枪",
@@ -452,7 +568,10 @@
    "text_cn": "辅助攻击模式资源上限从3.5秒降低至3秒。",
    "before": 3.5,
    "after": 3.0,
-   "metric": "辅助攻击模式资源上限"
+   "by": -0.5,
+   "by_pct": null,
+   "metric": "辅助攻击模式资源上限",
+   "unit": "s"
   },
   {
    "patch": "cn-2026-03-11-1",
@@ -461,6 +580,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/03/",
    "patch_title": "《守望先锋》补丁说明——2026年3月11日",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "summer-solstice",
    "perk_en": null,
    "perk_cn": "夏至骄阳",
@@ -477,6 +597,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/03/",
    "patch_title": "《守望先锋》补丁说明——2026年3月11日",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "sunburn",
    "perk_en": null,
    "perk_cn": "烈日燎灼",
@@ -493,6 +614,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/03",
    "patch_title": "Overwatch Retail Patch Notes - March 10, 2026",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "solar-rifle",
    "ability_en": "Solar Rifle",
    "ability_cn": "阳焰步枪",
@@ -500,7 +622,10 @@
    "text_cn": null,
    "before": 3.5,
    "after": 3.0,
-   "metric": "secondary fire maximum resource"
+   "by": -0.5,
+   "by_pct": null,
+   "metric": "secondary fire maximum resource",
+   "unit": null
   },
   {
    "patch": "en-2026-03-10-1",
@@ -509,6 +634,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/03",
    "patch_title": "Overwatch Retail Patch Notes - March 10, 2026",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "summer-solstice",
    "perk_en": "Summer Solstice",
    "perk_cn": null,
@@ -525,6 +651,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/03",
    "patch_title": "Overwatch Retail Patch Notes - March 10, 2026",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "sunburn",
    "perk_en": "Sunburn",
    "perk_cn": null,
@@ -541,6 +668,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/02",
    "patch_title": "Overwatch Retail Patch Notes - February 10, 2026",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "solar-flare",
    "perk_en": "Solar Flare",
    "perk_cn": null,
@@ -558,8 +686,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/02",
    "patch_title": "Overwatch Retail Patch Notes - February 10, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Solar Rifle – Secondary Fire",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-02-09-1",
@@ -568,8 +704,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/02",
    "patch_title": "Overwatch Retail Patch Notes - February 10, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Resource regeneration reduced from 43 to 35.",
-   "text_cn": null
+   "text_cn": null,
+   "before": 43.0,
+   "after": 35.0,
+   "by": -8.0,
+   "by_pct": null,
+   "metric": "resource regeneration",
+   "unit": null
   },
   {
    "patch": "en-2026-02-09-1",
@@ -578,8 +722,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/02",
    "patch_title": "Overwatch Retail Patch Notes - February 10, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Outburst",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-02-09-1",
@@ -588,8 +740,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/02",
    "patch_title": "Overwatch Retail Patch Notes - February 10, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Cooldown increased from 7 to 8 seconds.",
-   "text_cn": null
+   "text_cn": null,
+   "before": 7.0,
+   "after": 8.0,
+   "by": 1.0,
+   "by_pct": null,
+   "metric": "cooldown",
+   "unit": "s"
   },
   {
    "patch": "cn-2026-01-09-1",
@@ -598,8 +758,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/01/",
    "patch_title": "《守望先锋》补丁说明——2026年1月9日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "阳焰步枪"
+   "text_cn": "阳焰步枪",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-01-09-1",
@@ -608,8 +776,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/01/",
    "patch_title": "《守望先锋》补丁说明——2026年1月9日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "最大伤害从70提高至75。"
+   "text_cn": "最大伤害从70提高至75。",
+   "before": 70.0,
+   "after": 75.0,
+   "by": 5.0,
+   "by_pct": null,
+   "metric": "最大伤害",
+   "unit": null
   },
   {
    "patch": "cn-2026-01-09-1",
@@ -618,8 +794,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/01/",
    "patch_title": "《守望先锋》补丁说明——2026年1月9日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "最小伤害从20提高至25。"
+   "text_cn": "最小伤害从20提高至25。",
+   "before": 20.0,
+   "after": 25.0,
+   "by": 5.0,
+   "by_pct": null,
+   "metric": "最小伤害",
+   "unit": null
   },
   {
    "patch": "en-2026-01-08-1",
@@ -628,8 +812,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/01",
    "patch_title": "Overwatch 2 Retail Patch Notes - January 8, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Solar Rifle",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-01-08-1",
@@ -638,8 +830,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/01",
    "patch_title": "Overwatch 2 Retail Patch Notes - January 8, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Maximum damage increased from 70 to 75.",
-   "text_cn": null
+   "text_cn": null,
+   "before": 70.0,
+   "after": 75.0,
+   "by": 5.0,
+   "by_pct": null,
+   "metric": "maximum damage",
+   "unit": null
   },
   {
    "patch": "en-2026-01-08-1",
@@ -648,8 +848,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/01",
    "patch_title": "Overwatch 2 Retail Patch Notes - January 8, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Minimum damage increased from 20 to 25.",
-   "text_cn": null
+   "text_cn": null,
+   "before": 20.0,
+   "after": 25.0,
+   "by": 5.0,
+   "by_pct": null,
+   "metric": "minimum damage",
+   "unit": null
   },
   {
    "patch": "cn-2025-12-10-1",
@@ -658,8 +866,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/12/",
    "patch_title": "《守望先锋》补丁说明——2025年12月10日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "桎梏灼日"
+   "text_cn": "桎梏灼日",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-12-10-1",
@@ -668,8 +884,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/12/",
    "patch_title": "《守望先锋》补丁说明——2025年12月10日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "弹道尺寸从0.75米降低至0.45米。"
+   "text_cn": "弹道尺寸从0.75米降低至0.45米。",
+   "before": 0.75,
+   "after": 0.45,
+   "by": -0.3,
+   "by_pct": null,
+   "metric": "弹道尺寸",
+   "unit": "m"
   },
   {
    "patch": "en-2025-12-09-1",
@@ -678,8 +902,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
    "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Captive Sun",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-12-09-1",
@@ -688,8 +920,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
    "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Projectile size reduced from 0.75 to 0.45.",
-   "text_cn": null
+   "text_cn": null,
+   "before": 0.75,
+   "after": 0.45,
+   "by": -0.3,
+   "by_pct": null,
+   "metric": "projectile size",
+   "unit": null
   },
   {
    "patch": "cn-2025-10-15-1",
@@ -698,6 +938,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/10/",
    "patch_title": "《守望先锋》补丁说明——2025年10月15日",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "solar-flare",
    "perk_en": null,
    "perk_cn": "太阳耀斑",
@@ -716,6 +957,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/10",
    "patch_title": "Overwatch 2 Retail Patch Notes – October 14, 2025",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "solar-flare",
    "perk_en": "Solar Flare",
    "perk_cn": null,
@@ -734,6 +976,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/08/",
    "patch_title": "《守望先锋》补丁说明——2025年8月27日",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "solar-power",
    "perk_en": null,
    "perk_cn": "太阳能量",
@@ -750,6 +993,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/08/",
    "patch_title": "《守望先锋》补丁说明——2025年8月27日",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "solar-flare",
    "perk_en": null,
    "perk_cn": "太阳耀斑",
@@ -766,6 +1010,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/08",
    "patch_title": "Overwatch 2 Retail Patch Notes – August 26, 2025",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "solar-power",
    "perk_en": "Solar Power",
    "perk_cn": null,
@@ -782,6 +1027,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/08",
    "patch_title": "Overwatch 2 Retail Patch Notes – August 26, 2025",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "solar-flare",
    "perk_en": "Solar Flare",
    "perk_cn": null,
@@ -798,8 +1044,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/05/",
    "patch_title": "《守望先锋》补丁说明——2025年5月21日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "阳焰步枪——辅助攻击模式"
+   "text_cn": "阳焰步枪——辅助攻击模式",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-05-21-1",
@@ -808,8 +1062,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/05/",
    "patch_title": "《守望先锋》补丁说明——2025年5月21日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "射程从15米延长至20米。"
+   "text_cn": "射程从15米延长至20米。",
+   "before": 15.0,
+   "after": 20.0,
+   "by": 5.0,
+   "by_pct": null,
+   "metric": "range",
+   "unit": "m"
   },
   {
    "patch": "en-2025-05-16-1",
@@ -818,8 +1080,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/05",
    "patch_title": "Overwatch 2 Retail Patch Notes – May 20, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Solar Rifle - Secondary Fire",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-05-16-1",
@@ -828,8 +1098,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/05",
    "patch_title": "Overwatch 2 Retail Patch Notes – May 20, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Range increased from 15 to 20 meters.",
-   "text_cn": null
+   "text_cn": null,
+   "before": 15.0,
+   "after": 20.0,
+   "by": 5.0,
+   "by_pct": null,
+   "metric": "range",
+   "unit": "m"
   },
   {
    "patch": "en-2025-04-01-1",
@@ -838,6 +1116,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/04",
    "patch_title": "Totally Normal Patch Notes for Totally Normalwatch – April 1, 2025",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "solar-rifle",
    "ability_en": "Solar Rifle",
    "ability_cn": "阳焰步枪",
@@ -845,7 +1124,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-04-01-1",
@@ -854,6 +1136,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/04",
    "patch_title": "Totally Normal Patch Notes for Totally Normalwatch – April 1, 2025",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "solar-rifle",
    "ability_en": "Solar Rifle",
    "ability_cn": "阳焰步枪",
@@ -861,7 +1144,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-04-01-1",
@@ -870,6 +1156,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/04",
    "patch_title": "Totally Normal Patch Notes for Totally Normalwatch – April 1, 2025",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "solar-rifle",
    "ability_en": "Solar Rifle",
    "ability_cn": "阳焰步枪",
@@ -877,7 +1164,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": 50.0,
+   "metric": "secondary fire range",
+   "unit": null
   },
   {
    "patch": "cn-2025-04-01-1",
@@ -886,6 +1176,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/04/",
    "patch_title": "完全正常的“完全正常先锋”补丁说明——2025年4月1日",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "solar-rifle",
    "ability_en": "Solar Rifle",
    "ability_cn": "阳焰步枪",
@@ -893,7 +1184,10 @@
    "text_cn": "主要攻击模式现在会治疗盟友，而非造成伤害。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-04-01-1",
@@ -902,6 +1196,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/04/",
    "patch_title": "完全正常的“完全正常先锋”补丁说明——2025年4月1日",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "solar-rifle",
    "ability_en": "Solar Rifle",
    "ability_cn": "阳焰步枪",
@@ -909,7 +1204,10 @@
    "text_cn": "辅助攻击模式现在会对敌人造成伤害，而非治疗盟友。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-04-01-1",
@@ -918,6 +1216,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/04/",
    "patch_title": "完全正常的“完全正常先锋”补丁说明——2025年4月1日",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "solar-rifle",
    "ability_en": "Solar Rifle",
    "ability_cn": "阳焰步枪",
@@ -925,7 +1224,10 @@
    "text_cn": "辅助攻击模式射程提高50%。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": 50.0,
+   "metric": "辅助攻击模式射程",
+   "unit": null
   },
   {
    "patch": "cn-2025-03-19-1",
@@ -934,6 +1236,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/03/",
    "patch_title": "《守望先锋》补丁说明——2025年3月19日",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "solar-rifle",
    "ability_en": "Solar Rifle",
    "ability_cn": "阳焰步枪",
@@ -941,7 +1244,10 @@
    "text_cn": "使用近身攻击时，武器充能不再暂停。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-03-19-1",
@@ -950,6 +1256,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/03/",
    "patch_title": "《守望先锋》补丁说明——2025年3月19日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "summer-solstice",
    "ability_en": "Summer Solstice",
    "ability_cn": "夏至骄阳",
@@ -957,7 +1264,10 @@
    "text_cn": "在“桎梏灼日”启动期间，额外提供30%的攻击速度。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-03-18-1",
@@ -966,6 +1276,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/03",
    "patch_title": "Overwatch 2 Retail Patch Notes – March 18, 2025",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "solar-rifle",
    "ability_en": "Solar Rifle",
    "ability_cn": "阳焰步枪",
@@ -973,7 +1284,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-03-18-1",
@@ -982,6 +1296,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/03",
    "patch_title": "Overwatch 2 Retail Patch Notes – March 18, 2025",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "summer-solstice",
    "ability_en": "Summer Solstice",
    "ability_cn": "夏至骄阳",
@@ -989,7 +1304,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-02-18-1",
@@ -998,6 +1316,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/02",
    "patch_title": "Overwatch 2 Retail Patch Notes + Hero Perks - February 18, 2025",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "rapid-construction",
    "ability_en": "Rapid Construction",
    "ability_cn": null,
@@ -1005,7 +1324,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-02-18-1",
@@ -1014,6 +1336,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/02",
    "patch_title": "Overwatch 2 Retail Patch Notes + Hero Perks - February 18, 2025",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "summer-solstice",
    "ability_en": "Summer Solstice",
    "ability_cn": "夏至骄阳",
@@ -1021,7 +1344,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": 20.0,
+   "metric": "s flight time during captive sun is increased by 3 seconds and her flight speed is",
+   "unit": null
   },
   {
    "patch": "en-2025-02-18-1",
@@ -1030,6 +1356,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/02",
    "patch_title": "Overwatch 2 Retail Patch Notes + Hero Perks - February 18, 2025",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "solar-power",
    "ability_en": "Solar Power",
    "ability_cn": null,
@@ -1037,7 +1364,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-02-18-1",
@@ -1046,6 +1376,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/02",
    "patch_title": "Overwatch 2 Retail Patch Notes + Hero Perks - February 18, 2025",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "sunburn",
    "ability_en": "Sunburn",
    "ability_cn": null,
@@ -1053,7 +1384,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2024-12-17-1",
@@ -1062,6 +1396,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/12",
    "patch_title": "Overwatch 2 6v6 Experiment – December 17, 2024",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "solar-rifle",
    "ability_en": "Solar Rifle",
    "ability_cn": "阳焰步枪",
@@ -1069,7 +1404,10 @@
    "text_cn": null,
    "before": 70.0,
    "after": 75.0,
-   "metric": "max damage"
+   "by": 5.0,
+   "by_pct": null,
+   "metric": "max damage",
+   "unit": null
   },
   {
    "patch": "en-2024-12-17-1",
@@ -1078,6 +1416,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/12",
    "patch_title": "Overwatch 2 6v6 Experiment – December 17, 2024",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "solar-rifle",
    "ability_en": "Solar Rifle",
    "ability_cn": "阳焰步枪",
@@ -1085,7 +1424,10 @@
    "text_cn": null,
    "before": 20.0,
    "after": 25.0,
-   "metric": "min damage"
+   "by": 5.0,
+   "by_pct": null,
+   "metric": "min damage",
+   "unit": null
   },
   {
    "patch": "en-2024-12-17-1",
@@ -1094,6 +1436,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/12",
    "patch_title": "Overwatch 2 6v6 Experiment – December 17, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "healing-pylon",
    "ability_en": "Healing Pylon",
    "ability_cn": "治疗光塔",
@@ -1101,7 +1444,10 @@
    "text_cn": null,
    "before": 14.0,
    "after": 12.0,
-   "metric": "cooldown"
+   "by": -2.0,
+   "by_pct": null,
+   "metric": "cooldown",
+   "unit": "s"
   },
   {
    "patch": "en-2024-12-10-1",
@@ -1110,6 +1456,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/12",
    "patch_title": "Overwatch 2 Retail Patch Notes – December 10, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "captive-sun",
    "ability_en": "Captive Sun",
    "ability_cn": "桎梏灼日",
@@ -1117,7 +1464,10 @@
    "text_cn": null,
    "before": 8.0,
    "after": 10.0,
-   "metric": "explosion radius"
+   "by": 2.0,
+   "by_pct": null,
+   "metric": "explosion radius",
+   "unit": null
   },
   {
    "patch": "en-2024-12-10-1",
@@ -1126,8 +1476,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/12",
    "patch_title": "Overwatch 2 Retail Patch Notes – December 10, 2024",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Developer Comment: Illari's Captive Sun can be difficult to use effectively due to enemies' ability to dodge its effects. Increasing the radius will improve the consistency and overall value of the ultimate.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2024-08-23-1",
@@ -1136,6 +1494,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/08",
    "patch_title": "Overwatch 2 Retail Patch Notes - August 23, 2024",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "solar-rifle",
    "ability_en": "Solar Rifle",
    "ability_cn": "阳焰步枪",
@@ -1143,7 +1502,10 @@
    "text_cn": null,
    "before": 75.0,
    "after": 70.0,
-   "metric": "maximum damage"
+   "by": -5.0,
+   "by_pct": null,
+   "metric": "maximum damage",
+   "unit": null
   },
   {
    "patch": "en-2024-08-23-1",
@@ -1152,6 +1514,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/08",
    "patch_title": "Overwatch 2 Retail Patch Notes - August 23, 2024",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "solar-rifle",
    "ability_en": "Solar Rifle",
    "ability_cn": "阳焰步枪",
@@ -1159,7 +1522,10 @@
    "text_cn": null,
    "before": 25.0,
    "after": 20.0,
-   "metric": "minimum damage"
+   "by": -5.0,
+   "by_pct": null,
+   "metric": "minimum damage",
+   "unit": null
   },
   {
    "patch": "en-2024-08-20-1",
@@ -1168,6 +1534,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/08",
    "patch_title": "Overwatch 2 Retail Patch Notes – August 20, 2024",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "solar-rifle",
    "ability_en": "Solar Rifle",
    "ability_cn": "阳焰步枪",
@@ -1175,7 +1542,10 @@
    "text_cn": null,
    "before": 16.0,
    "after": 14.0,
-   "metric": "maximum ammo"
+   "by": -2.0,
+   "by_pct": null,
+   "metric": "maximum ammo",
+   "unit": null
   },
   {
    "patch": "en-2024-08-20-1",
@@ -1184,6 +1554,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/08",
    "patch_title": "Overwatch 2 Retail Patch Notes – August 20, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "captive-sun",
    "ability_en": "Captive Sun",
    "ability_cn": "桎梏灼日",
@@ -1191,7 +1562,10 @@
    "text_cn": null,
    "before": 0.15,
    "after": 0.0,
-   "metric": "projectile environment collision size"
+   "by": -0.15,
+   "by_pct": null,
+   "metric": "projectile environment collision size",
+   "unit": null
   },
   {
    "patch": "en-2024-07-12-1",
@@ -1200,6 +1574,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/07",
    "patch_title": "Overwatch 2 Retail Patch Notes – July 12, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "healing-pylon",
    "ability_en": "Healing Pylon",
    "ability_cn": "治疗光塔",
@@ -1207,7 +1582,10 @@
    "text_cn": null,
    "before": 12.0,
    "after": 14.0,
-   "metric": "cooldown"
+   "by": 2.0,
+   "by_pct": null,
+   "metric": "cooldown",
+   "unit": "s"
   },
   {
    "patch": "en-2024-07-12-1",
@@ -1216,6 +1594,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/07",
    "patch_title": "Overwatch 2 Retail Patch Notes – July 12, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "captive-sun",
    "ability_en": "Captive Sun",
    "ability_cn": "桎梏灼日",
@@ -1223,7 +1602,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": 12.0,
+   "metric": "ultimate_cost",
+   "unit": null
   },
   {
    "patch": "en-2024-07-05-1",
@@ -1232,6 +1614,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/07",
    "patch_title": "Overwatch 2 Retail Patch Notes – July 9, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "healing-pylon",
    "ability_en": "Healing Pylon",
    "ability_cn": "治疗光塔",
@@ -1239,7 +1622,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2024-06-20-1",
@@ -1248,6 +1634,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/06",
    "patch_title": "Overwatch 2 Retail Patch Notes - June 20, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "outburst",
    "ability_en": "Outburst",
    "ability_cn": "烈日冲击",
@@ -1255,7 +1642,10 @@
    "text_cn": null,
    "before": 10.0,
    "after": 25.0,
-   "metric": "damage"
+   "by": 15.0,
+   "by_pct": null,
+   "metric": "damage",
+   "unit": null
   },
   {
    "patch": "en-2024-06-20-1",
@@ -1264,6 +1654,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/06",
    "patch_title": "Overwatch 2 Retail Patch Notes - June 20, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "healing-pylon",
    "ability_en": "Healing Pylon",
    "ability_cn": "治疗光塔",
@@ -1271,7 +1662,10 @@
    "text_cn": null,
    "before": 30.0,
    "after": 40.0,
-   "metric": "healing per projectile"
+   "by": 10.0,
+   "by_pct": null,
+   "metric": "healing",
+   "unit": null
   },
   {
    "patch": "en-2024-06-20-1",
@@ -1280,6 +1674,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/06",
    "patch_title": "Overwatch 2 Retail Patch Notes - June 20, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "healing-pylon",
    "ability_en": "Healing Pylon",
    "ability_cn": "治疗光塔",
@@ -1287,7 +1682,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2024-06-20-1",
@@ -1296,6 +1694,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/06",
    "patch_title": "Overwatch 2 Retail Patch Notes - June 20, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "healing-pylon",
    "ability_en": "Healing Pylon",
    "ability_cn": "治疗光塔",
@@ -1303,7 +1702,10 @@
    "text_cn": null,
    "before": 100.0,
    "after": 125.0,
-   "metric": "max health"
+   "by": 25.0,
+   "by_pct": null,
+   "metric": "max health",
+   "unit": null
   },
   {
    "patch": "en-2024-04-16-1",
@@ -1312,6 +1714,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/04",
    "patch_title": "Overwatch 2 Retail Patch Notes – April 16, 2024",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "solar-rifle",
    "ability_en": "Solar Rifle",
    "ability_cn": "阳焰步枪",
@@ -1319,7 +1722,10 @@
    "text_cn": null,
    "before": 0.2,
    "after": 0.25,
-   "metric": "primary fire recovery"
+   "by": 0.05,
+   "by_pct": null,
+   "metric": "primary fire recovery",
+   "unit": null
   },
   {
    "patch": "en-2024-04-16-1",
@@ -1328,6 +1734,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/04",
    "patch_title": "Overwatch 2 Retail Patch Notes – April 16, 2024",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "solar-rifle",
    "ability_en": "Solar Rifle",
    "ability_cn": "阳焰步枪",
@@ -1335,7 +1742,10 @@
    "text_cn": null,
    "before": 105.0,
    "after": 115.0,
-   "metric": "second"
+   "by": 10.0,
+   "by_pct": null,
+   "metric": "secondary fire heal-per-second",
+   "unit": null
   },
   {
    "patch": "en-2024-04-01-1",
@@ -1344,6 +1754,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/04",
    "patch_title": "Overwatch 2 Really, Really, Really Balanced Patch Notes - April 1, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "captive-sun",
    "ability_en": "Captive Sun",
    "ability_cn": "桎梏灼日",
@@ -1351,7 +1762,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2024-04-01-1",
@@ -1360,6 +1774,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/04",
    "patch_title": "Overwatch 2 Really, Really, Really Balanced Patch Notes - April 1, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "captive-sun",
    "ability_en": "Captive Sun",
    "ability_cn": "桎梏灼日",
@@ -1367,7 +1782,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2024-04-01-1",
@@ -1376,6 +1794,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/04",
    "patch_title": "Overwatch 2 Really, Really, Really Balanced Patch Notes - April 1, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "captive-sun",
    "ability_en": "Captive Sun",
    "ability_cn": "桎梏灼日",
@@ -1383,7 +1802,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": 40.0,
+   "metric": "attack charge time",
+   "unit": null
   },
   {
    "patch": "en-2024-04-01-1",
@@ -1392,6 +1814,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/04",
    "patch_title": "Overwatch 2 Really, Really, Really Balanced Patch Notes - April 1, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "captive-sun",
    "ability_en": "Captive Sun",
    "ability_cn": "桎梏灼日",
@@ -1399,7 +1822,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2024-04-01-1",
@@ -1408,6 +1834,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/04",
    "patch_title": "Overwatch 2 Really, Really, Really Balanced Patch Notes - April 1, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "solar-powered",
    "ability_en": "Solar Powered",
    "ability_cn": null,
@@ -1415,7 +1842,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2024-04-01-1",
@@ -1424,6 +1854,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/04",
    "patch_title": "Overwatch 2 Really, Really, Really Balanced Patch Notes - April 1, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "solar-powered",
    "ability_en": "Solar Powered",
    "ability_cn": null,
@@ -1431,7 +1862,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2024-03-08-1",
@@ -1440,6 +1874,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/03",
    "patch_title": "Overwatch 2 Retail Patch Notes – March 12, 2024",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "solar-rifle",
    "ability_en": "Solar Rifle",
    "ability_cn": "阳焰步枪",
@@ -1447,7 +1882,10 @@
    "text_cn": null,
    "before": 0.3,
    "after": 0.2,
-   "metric": "primary fire recovery time"
+   "by": -0.1,
+   "by_pct": null,
+   "metric": "primary fire recovery time",
+   "unit": null
   },
   {
    "patch": "en-2024-03-08-1",
@@ -1456,6 +1894,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/03",
    "patch_title": "Overwatch 2 Retail Patch Notes – March 12, 2024",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "solar-rifle",
    "ability_en": "Solar Rifle",
    "ability_cn": "阳焰步枪",
@@ -1463,7 +1902,10 @@
    "text_cn": null,
    "before": 0.7,
    "after": 0.65,
-   "metric": "maximum charge time"
+   "by": -0.05,
+   "by_pct": null,
+   "metric": "maximum charge time",
+   "unit": null
   },
   {
    "patch": "en-2024-02-20-1",
@@ -1472,6 +1914,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/02",
    "patch_title": "Overwatch 2 Retail Patch Notes - February 21, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "healing-pylon",
    "ability_en": "Healing Pylon",
    "ability_cn": "治疗光塔",
@@ -1479,7 +1922,10 @@
    "text_cn": null,
    "before": 8.0,
    "after": 6.0,
-   "metric": "cooldown"
+   "by": -2.0,
+   "by_pct": null,
+   "metric": "cooldown",
+   "unit": "s"
   },
   {
    "patch": "en-2024-02-20-1",
@@ -1488,6 +1934,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/02",
    "patch_title": "Overwatch 2 Retail Patch Notes - February 21, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "healing-pylon",
    "ability_en": "Healing Pylon",
    "ability_cn": "治疗光塔",
@@ -1495,7 +1942,10 @@
    "text_cn": null,
    "before": 15.0,
    "after": 12.0,
-   "metric": "cooldown when destroyed by enemies"
+   "by": -3.0,
+   "by_pct": null,
+   "metric": "cooldown",
+   "unit": "s"
   },
   {
    "patch": "en-2024-02-20-1",
@@ -1504,6 +1954,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/02",
    "patch_title": "Overwatch 2 Retail Patch Notes - February 21, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "captive-sun",
    "ability_en": "Captive Sun",
    "ability_cn": "桎梏灼日",
@@ -1511,7 +1962,10 @@
    "text_cn": null,
    "before": 100.0,
    "after": 160.0,
-   "metric": "sunstruck explosion damage"
+   "by": 60.0,
+   "by_pct": null,
+   "metric": "sunstruck explosion damage",
+   "unit": null
   },
   {
    "patch": "en-2024-02-20-1",
@@ -1520,6 +1974,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/02",
    "patch_title": "Overwatch 2 Retail Patch Notes - February 21, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "captive-sun",
    "ability_en": "Captive Sun",
    "ability_cn": "桎梏灼日",
@@ -1527,7 +1982,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2024-02-13-1",
@@ -1536,8 +1994,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/02",
    "patch_title": "Overwatch 2 Retail Patch Notes – February 13, 2024",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": "Health increased from 200 to 250.",
-   "text_cn": null
+   "text_cn": null,
+   "before": 200.0,
+   "after": 250.0,
+   "by": 50.0,
+   "by_pct": null,
+   "metric": "health",
+   "unit": "hp"
   },
   {
    "patch": "en-2024-01-09-1",
@@ -1546,6 +2012,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/01",
    "patch_title": "Overwatch 2 Retail Patch Notes - January 9, 2024",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "solar-rifle",
    "ability_en": "Solar Rifle",
    "ability_cn": "阳焰步枪",
@@ -1553,7 +2020,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2024-01-09-1",
@@ -1562,6 +2032,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/01",
    "patch_title": "Overwatch 2 Retail Patch Notes - January 9, 2024",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "solar-rifle",
    "ability_en": "Solar Rifle",
    "ability_cn": "阳焰步枪",
@@ -1569,7 +2040,10 @@
    "text_cn": null,
    "before": 14.0,
    "after": 16.0,
-   "metric": "ammo"
+   "by": 2.0,
+   "by_pct": null,
+   "metric": "ammo",
+   "unit": null
   },
   {
    "patch": "en-2024-01-09-1",
@@ -1578,6 +2052,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/01",
    "patch_title": "Overwatch 2 Retail Patch Notes - January 9, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "captive-sun",
    "ability_en": "Captive Sun",
    "ability_cn": "桎梏灼日",
@@ -1585,7 +2060,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2024-01-09-1",
@@ -1594,6 +2072,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/01",
    "patch_title": "Overwatch 2 Retail Patch Notes - January 9, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "captive-sun",
    "ability_en": "Captive Sun",
    "ability_cn": "桎梏灼日",
@@ -1601,7 +2080,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2023-10-31-1",
@@ -1610,6 +2092,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/10",
    "patch_title": "Overwatch 2 Retail Patch Notes - October 31, 2023",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "solar-rifle",
    "ability_en": "Solar Rifle",
    "ability_cn": "阳焰步枪",
@@ -1617,7 +2100,10 @@
    "text_cn": null,
    "before": 0.1,
    "after": 0.05,
-   "metric": "primary fire projectile size"
+   "by": -0.05,
+   "by_pct": null,
+   "metric": "primary fire projectile size",
+   "unit": null
   },
   {
    "patch": "en-2023-10-31-1",
@@ -1626,6 +2112,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/10",
    "patch_title": "Overwatch 2 Retail Patch Notes - October 31, 2023",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "healing-pylon",
    "ability_en": "Healing Pylon",
    "ability_cn": "治疗光塔",
@@ -1633,7 +2120,10 @@
    "text_cn": null,
    "before": 75.0,
    "after": 50.0,
-   "metric": "base health"
+   "by": -25.0,
+   "by_pct": null,
+   "metric": "base health",
+   "unit": null
   },
   {
    "patch": "en-2023-10-31-1",
@@ -1642,6 +2132,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/10",
    "patch_title": "Overwatch 2 Retail Patch Notes - October 31, 2023",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "healing-pylon",
    "ability_en": "Healing Pylon",
    "ability_cn": "治疗光塔",
@@ -1649,7 +2140,10 @@
    "text_cn": null,
    "before": 12.0,
    "after": 15.0,
-   "metric": "cooldown when destroyed"
+   "by": 3.0,
+   "by_pct": null,
+   "metric": "cooldown",
+   "unit": "s"
   },
   {
    "patch": "en-2023-10-31-1",
@@ -1658,8 +2152,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/10",
    "patch_title": "Overwatch 2 Retail Patch Notes - October 31, 2023",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Added the Hero-Specific Option:",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2023-10-31-1",
@@ -1668,8 +2170,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/10",
    "patch_title": "Overwatch 2 Retail Patch Notes - October 31, 2023",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Rise During Captive Sun With Ability 3 - Off by default.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2023-10-10-1",
@@ -1678,6 +2188,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/10",
    "patch_title": "Overwatch 2 Retail Patch Notes - October 10, 2023",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "solar-rifle",
    "ability_en": "Solar Rifle",
    "ability_cn": "阳焰步枪",
@@ -1685,7 +2196,10 @@
    "text_cn": null,
    "before": 120.0,
    "after": 105.0,
-   "metric": "secondary fire healing per second"
+   "by": -15.0,
+   "by_pct": null,
+   "metric": "secondary fire healing per second",
+   "unit": null
   },
   {
    "patch": "en-2023-08-24-1",
@@ -1694,6 +2208,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/08",
    "patch_title": "Overwatch 2 Retail Patch Notes - August 24, 2023",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "healing-pylon",
    "ability_en": "Healing Pylon",
    "ability_cn": "治疗光塔",
@@ -1701,7 +2216,10 @@
    "text_cn": null,
    "before": 40.0,
    "after": 30.0,
-   "metric": "heal"
+   "by": -10.0,
+   "by_pct": null,
+   "metric": "heal",
+   "unit": null
   },
   {
    "patch": "en-2023-08-24-1",
@@ -1710,6 +2228,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/08",
    "patch_title": "Overwatch 2 Retail Patch Notes - August 24, 2023",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "healing-pylon",
    "ability_en": "Healing Pylon",
    "ability_cn": "治疗光塔",
@@ -1717,7 +2236,10 @@
    "text_cn": null,
    "before": 75.0,
    "after": 50.0,
-   "metric": "shields"
+   "by": -25.0,
+   "by_pct": null,
+   "metric": "shield",
+   "unit": "hp"
   },
   {
    "patch": "en-2023-08-24-1",
@@ -1726,6 +2248,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/08",
    "patch_title": "Overwatch 2 Retail Patch Notes - August 24, 2023",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "captive-sun",
    "ability_en": "Captive Sun",
    "ability_cn": "桎梏灼日",
@@ -1733,7 +2256,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2023-08-24-1",
@@ -1742,6 +2268,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/08",
    "patch_title": "Overwatch 2 Retail Patch Notes - August 24, 2023",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "captive-sun",
    "ability_en": "Captive Sun",
    "ability_cn": "桎梏灼日",
@@ -1749,7 +2276,10 @@
    "text_cn": null,
    "before": 1.5,
    "after": 0.75,
-   "metric": "projectile size"
+   "by": -0.75,
+   "by_pct": null,
+   "metric": "projectile size",
+   "unit": null
   },
   {
    "patch": "en-2023-08-24-1",
@@ -1758,6 +2288,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/08",
    "patch_title": "Overwatch 2 Retail Patch Notes - August 24, 2023",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "captive-sun",
    "ability_en": "Captive Sun",
    "ability_cn": "桎梏灼日",
@@ -1765,7 +2296,10 @@
    "text_cn": null,
    "before": 7.0,
    "after": 6.0,
-   "metric": "sunstruck duration"
+   "by": -1.0,
+   "by_pct": null,
+   "metric": "sunstruck duration",
+   "unit": null
   },
   {
    "patch": "en-2023-08-10-1",
@@ -1774,6 +2308,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/08",
    "patch_title": "Overwatch 2 Retail Patch Notes – August 10, 2023",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "solar-rifle-primary-fire",
    "ability_en": "Solar Rifle (Primary Fire)",
    "ability_cn": null,
@@ -1781,7 +2316,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2023-08-10-1",
@@ -1790,6 +2328,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/08",
    "patch_title": "Overwatch 2 Retail Patch Notes – August 10, 2023",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "solar-rifle-secondary-fire",
    "ability_en": "Solar Rifle (Secondary Fire)",
    "ability_cn": null,
@@ -1797,7 +2336,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2023-08-10-1",
@@ -1806,6 +2348,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/08",
    "patch_title": "Overwatch 2 Retail Patch Notes – August 10, 2023",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "outburst-ability-1",
    "ability_en": "Outburst (Ability 1)",
    "ability_cn": null,
@@ -1813,7 +2356,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2023-08-10-1",
@@ -1822,6 +2368,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/08",
    "patch_title": "Overwatch 2 Retail Patch Notes – August 10, 2023",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "healing-pylon-ability-2",
    "ability_en": "Healing Pylon (Ability 2)",
    "ability_cn": null,
@@ -1829,7 +2376,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2023-08-10-1",
@@ -1838,6 +2388,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/08",
    "patch_title": "Overwatch 2 Retail Patch Notes – August 10, 2023",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "captive-sun-ultimate",
    "ability_en": "Captive Sun (Ultimate)",
    "ability_cn": null,
@@ -1845,7 +2396,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2023-08-10-1",
@@ -1854,8 +2408,204 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/08",
    "patch_title": "Overwatch 2 Retail Patch Notes – August 10, 2023",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Illari has been added to the line-up.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   }
- ]
+ ],
+ "values": {
+  "solar-rifle:基础弹道尺寸": [
+   {
+    "date": "2026-05-13",
+    "value": 0.0
+   }
+  ],
+  "solar-rifle:base projectile size": [
+   {
+    "date": "2026-05-12",
+    "value": 0.0
+   }
+  ],
+  "solar-rifle:辅助攻击模式资源上限": [
+   {
+    "date": "2026-03-11",
+    "value": 3.0
+   }
+  ],
+  "solar-rifle:secondary fire maximum resource": [
+   {
+    "date": "2026-03-10",
+    "value": 3.0
+   }
+  ],
+  "solar-rifle:max damage": [
+   {
+    "date": "2024-12-17",
+    "value": 75.0
+   }
+  ],
+  "solar-rifle:min damage": [
+   {
+    "date": "2024-12-17",
+    "value": 25.0
+   }
+  ],
+  "healing-pylon:cooldown": [
+   {
+    "date": "2023-10-31",
+    "value": 15.0
+   },
+   {
+    "date": "2024-02-20",
+    "value": 12.0
+   },
+   {
+    "date": "2024-07-12",
+    "value": 14.0
+   },
+   {
+    "date": "2024-12-17",
+    "value": 12.0
+   }
+  ],
+  "captive-sun:explosion radius": [
+   {
+    "date": "2024-12-10",
+    "value": 10.0
+   }
+  ],
+  "solar-rifle:maximum damage": [
+   {
+    "date": "2024-08-23",
+    "value": 70.0
+   }
+  ],
+  "solar-rifle:minimum damage": [
+   {
+    "date": "2024-08-23",
+    "value": 20.0
+   }
+  ],
+  "solar-rifle:maximum ammo": [
+   {
+    "date": "2024-08-20",
+    "value": 14.0
+   }
+  ],
+  "captive-sun:projectile environment collision size": [
+   {
+    "date": "2024-08-20",
+    "value": 0.0
+   }
+  ],
+  "outburst:damage": [
+   {
+    "date": "2024-06-20",
+    "value": 25.0
+   }
+  ],
+  "healing-pylon:healing": [
+   {
+    "date": "2024-06-20",
+    "value": 40.0
+   }
+  ],
+  "healing-pylon:max health": [
+   {
+    "date": "2024-06-20",
+    "value": 125.0
+   }
+  ],
+  "solar-rifle:primary fire recovery": [
+   {
+    "date": "2024-04-16",
+    "value": 0.25
+   }
+  ],
+  "solar-rifle:secondary fire heal-per-second": [
+   {
+    "date": "2024-04-16",
+    "value": 115.0
+   }
+  ],
+  "solar-rifle:primary fire recovery time": [
+   {
+    "date": "2024-03-08",
+    "value": 0.2
+   }
+  ],
+  "solar-rifle:maximum charge time": [
+   {
+    "date": "2024-03-08",
+    "value": 0.65
+   }
+  ],
+  "captive-sun:sunstruck explosion damage": [
+   {
+    "date": "2024-02-20",
+    "value": 160.0
+   }
+  ],
+  "attr:health:health": [
+   {
+    "date": "2024-02-13",
+    "value": 250.0
+   }
+  ],
+  "solar-rifle:ammo": [
+   {
+    "date": "2024-01-09",
+    "value": 16.0
+   }
+  ],
+  "solar-rifle:primary fire projectile size": [
+   {
+    "date": "2023-10-31",
+    "value": 0.05
+   }
+  ],
+  "healing-pylon:base health": [
+   {
+    "date": "2023-10-31",
+    "value": 50.0
+   }
+  ],
+  "solar-rifle:secondary fire healing per second": [
+   {
+    "date": "2023-10-10",
+    "value": 105.0
+   }
+  ],
+  "healing-pylon:heal": [
+   {
+    "date": "2023-08-24",
+    "value": 30.0
+   }
+  ],
+  "healing-pylon:shield": [
+   {
+    "date": "2023-08-24",
+    "value": 50.0
+   }
+  ],
+  "captive-sun:projectile size": [
+   {
+    "date": "2023-08-24",
+    "value": 0.75
+   }
+  ],
+  "captive-sun:sunstruck duration": [
+   {
+    "date": "2023-08-24",
+    "value": 6.0
+   }
+  ]
+ }
 }

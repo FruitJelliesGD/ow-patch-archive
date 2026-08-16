@@ -31,7 +31,11 @@
          "text_cn": null,
          "before": 15.0,
          "after": 12.0,
-         "metric": "ammo"
+         "metric": "ammo",
+         "by": -3.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "ammo"
         }
        ]
       },
@@ -43,9 +47,13 @@
         {
          "text_en": "Duration reduced from 2.5 seconds to 2 seconds",
          "text_cn": null,
-         "before": null,
-         "after": null,
-         "metric": null
+         "before": 2.5,
+         "after": 2.0,
+         "metric": "duration",
+         "by": -0.5,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "duration"
         }
        ]
       }
@@ -70,7 +78,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -95,7 +107,11 @@
          "text_cn": null,
          "before": 120.0,
          "after": 90.0,
-         "metric": "projectile speed"
+         "metric": "projectile_speed",
+         "by": -30.0,
+         "by_pct": null,
+         "unit": "m/s",
+         "raw_metric": "projectile speed"
         }
        ]
       },
@@ -109,14 +125,22 @@
          "text_cn": null,
          "before": 120.0,
          "after": 90.0,
-         "metric": "projectile speed"
+         "metric": "projectile_speed",
+         "by": -30.0,
+         "by_pct": null,
+         "unit": "m/s",
+         "raw_metric": "projectile speed"
         },
         {
          "text_en": "Damage amplification reduced from 30% to 25%",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -127,5 +151,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:0f5123ff2328a3807c651b66b7e0edd4db41ff4508f569ff0892a2840349c95d"
+ "hash": "sha256:48c1e37d626c5958869ec735f9416ee8a3083cd008c5e6449230f21c134439aa"
 }

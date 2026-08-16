@@ -48,12 +48,52 @@
      "role": "tank",
      "dev_note": "“强化重拳”拥有可以无限期保持的特点，容易创造出难以反制的对局情况。加入一个持续时间，可能让玩家对其有一个更清晰的预判，同时也能保持它原本预期的效果。对“悍猛矩阵”的调整可以使其效果范围更接近于“末日铁拳”的模型大小，进而让游戏机制更明晰。",
      "general": [
-      "火箭重拳",
-      "“强化重拳”现在会在20秒后衰减。",
-      "悍猛矩阵——威能",
-      "射弹吸收区域的尺寸进行了缩小，使其更符合“末日铁拳”的模型尺寸。"
+      {
+       "text_en": null,
+       "text_cn": "火箭重拳",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "“强化重拳”现在会在20秒后衰减。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "射弹吸收区域的尺寸进行了缩小，使其更符合“末日铁拳”的模型尺寸。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "悍猛矩阵",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     },
     {
@@ -63,10 +103,28 @@
      "role": "tank",
      "dev_note": "“延时推进器”成功地鼓励玩家们更加积极地使用推进器，但对于一个次级威能来说，它的伤害加成有些过高了。降低此数值可以保留它的功能，同时削弱整体杀伤力。",
      "general": [
-      "延时推进器——威能",
-      "推进器伤害加成从100%降低至40%。"
+      {
+       "text_en": null,
+       "text_cn": "推进器伤害加成从100%降低至40%。",
+       "subject": null,
+       "dimension": "other",
+       "before": 100.0,
+       "after": 40.0,
+       "by": -60.0,
+       "by_pct": null,
+       "metric": "推进器伤害加成",
+       "unit": "pct"
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "延时推进器",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     },
     {
@@ -76,8 +134,30 @@
      "role": "tank",
      "dev_note": "“鸡飞狗跳”的击退效果可能会影响“路霸”本来能到手的消灭。这次小幅的伤害提升可以提高此技能的可靠性，特别是在开阔区域。",
      "general": [
-      "鸡飞狗跳",
-      "每枚弹丸伤害从6提高至7。"
+      {
+       "text_en": null,
+       "text_cn": "鸡飞狗跳",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "每枚弹丸伤害从6提高至7。",
+       "subject": null,
+       "dimension": "other",
+       "before": 6.0,
+       "after": 7.0,
+       "by": 1.0,
+       "by_pct": null,
+       "metric": "每枚弹丸伤害",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -98,12 +178,52 @@
      "role": "damage",
      "dev_note": "之前对衰减距离的强化巩固了艾什作为远程即时命中英雄的地位，但也让她在远距离上的伤害输出能力有些过于稳定。部分回滚这方面的更改可以稍稍控制她的远程施压能力，同时又能保留她的这个特点。",
      "general": [
-      "毒蛇之刺——威能",
-      "获得的弹药量从2降低至1。",
-      "毒蛇",
-      "辅助攻击模式伤害衰减距离从40-60米缩短至35-55米。"
+      {
+       "text_en": null,
+       "text_cn": "获得的弹药量从2降低至1。",
+       "subject": null,
+       "dimension": "other",
+       "before": 2.0,
+       "after": 1.0,
+       "by": -1.0,
+       "by_pct": null,
+       "metric": "获得的弹药量",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "毒蛇",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "辅助攻击模式伤害衰减距离从40-60米缩短至35-55米。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "毒蛇之刺",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     },
     {
@@ -113,8 +233,30 @@
      "role": "damage",
      "dev_note": "最近的射速提升强化了“堡垒”的主要攻击模式的手感，但也让他的伤害输出能力超出了我们原本的预期。削减这个技能的伤害可以略微平衡这个问题，同时又能让优化的武器操作流程保持不变。",
      "general": [
-      "侦察模式",
-      "伤害从25降低至23。"
+      {
+       "text_en": null,
+       "text_cn": "侦察模式",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "伤害从25降低至23。",
+       "subject": null,
+       "dimension": "other",
+       "before": 25.0,
+       "after": 23.0,
+       "by": -2.0,
+       "by_pct": null,
+       "metric": "damage",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -126,11 +268,66 @@
      "role": "damage",
      "dev_note": "对主要攻击模式的调整可以提升弗蕾娅的基础武器稳定性，并削减她对充能箭矢的依赖。提升“瞄准射击”的伤害恢复了她在对抗225生命目标时的一个重要伤害阈值，同时将其整体影响力控制在合理范围内。",
      "general": [
-      "速射弩——主要攻击模式",
-      "最大散布角度从2度减少至1.5度。",
-      "散布量现在会缓慢扩大，并在水平方向上散开。",
-      "瞄准射击",
-      "命中伤害从30提高至35。"
+      {
+       "text_en": null,
+       "text_cn": "速射弩——主要攻击模式",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "最大散布角度从2度减少至1.5度。",
+       "subject": null,
+       "dimension": "other",
+       "before": 2.0,
+       "after": 1.5,
+       "by": -0.5,
+       "by_pct": null,
+       "metric": "最大散布角度",
+       "unit": "deg"
+      },
+      {
+       "text_en": null,
+       "text_cn": "散布量现在会缓慢扩大，并在水平方向上散开。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "瞄准射击",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "命中伤害从30提高至35。",
+       "subject": null,
+       "dimension": "other",
+       "before": 30.0,
+       "after": 35.0,
+       "by": 5.0,
+       "by_pct": null,
+       "metric": "命中伤害",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -142,8 +339,30 @@
      "role": "damage",
      "dev_note": "源氏的弹药可以让他在战斗中保持更稳定的施压能力，在不需要频繁装填的情况下确保拿下消灭。",
      "general": [
-      "镖",
-      "弹药量从24提高至30。"
+      {
+       "text_en": null,
+       "text_cn": "镖",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "弹药量从24提高至30。",
+       "subject": null,
+       "dimension": "other",
+       "before": 24.0,
+       "after": 30.0,
+       "by": 6.0,
+       "by_pct": null,
+       "metric": "ammo",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -155,10 +374,54 @@
      "role": "damage",
      "dev_note": "缩小辅助攻击模式的弹道尺寸提高了对高效实现此类攻击的精准度要求。降低“传送面板”的耐久可以提供更明晰的反制措施，鼓励玩家在放置时更加深思熟虑。",
      "general": [
-      "光子发射器——辅助攻击模式",
-      "基础弹道尺寸从0.5米降低至0.4米。",
-      "传送面板",
-      "基础护盾生命值从250减少至200。"
+      {
+       "text_en": null,
+       "text_cn": "光子发射器——辅助攻击模式",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "基础弹道尺寸从0.5米降低至0.4米。",
+       "subject": null,
+       "dimension": "other",
+       "before": 0.5,
+       "after": 0.4,
+       "by": -0.1,
+       "by_pct": null,
+       "metric": "基础弹道尺寸",
+       "unit": "m"
+      },
+      {
+       "text_en": null,
+       "text_cn": "传送面板",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "基础护盾生命值从250减少至200。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 250.0,
+       "after": 200.0,
+       "by": -50.0,
+       "by_pct": null,
+       "metric": "基础护盾生命值",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -170,16 +433,100 @@
      "role": "damage",
      "dev_note": "一方面，最近的改动优化了技能的流畅度，但另一方面，“斩仇”的总体杀伤力一直有些过于强了。本次调整降低了关键的伤害阈值，改变了确保拿下消灭所必需的技能组合。",
      "general": [
-      "锋锐剑气",
-      "伤害从80降低至70。",
-      "飞空斩击",
-      "“飞空斩击”现在在重生时会进入冷却（在死斗模式中或在被复活时不适用）。",
-      "旋风疾步",
-      "伤害从80降低至70。",
-      "狂怒风暴——威能",
-      "每次旋转的伤害从40降低至35。"
+      {
+       "text_en": null,
+       "text_cn": "锋锐剑气",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "伤害从80降低至70。",
+       "subject": null,
+       "dimension": "other",
+       "before": 80.0,
+       "after": 70.0,
+       "by": -10.0,
+       "by_pct": null,
+       "metric": "damage",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "飞空斩击",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "“飞空斩击”现在在重生时会进入冷却（在死斗模式中或在被复活时不适用）。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "旋风疾步",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "伤害从80降低至70。",
+       "subject": null,
+       "dimension": "other",
+       "before": 80.0,
+       "after": 70.0,
+       "by": -10.0,
+       "by_pct": null,
+       "metric": "damage",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "每次旋转的伤害从40降低至35。",
+       "subject": null,
+       "dimension": "other",
+       "before": 40.0,
+       "after": 35.0,
+       "by": -5.0,
+       "by_pct": null,
+       "metric": "每次旋转的伤害",
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "狂怒风暴",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     },
     {
@@ -189,8 +536,30 @@
      "role": "damage",
      "dev_note": "“钻头突刺”在近距离上使用时可能会感觉过于稳定。缩小半径则要求玩家进行更精准的操控，让这个技能的影响范围更贴近它的视觉大小。",
      "general": [
-      "钻头突刺",
-      "影响半径从2.4米降低至2.0米。"
+      {
+       "text_en": null,
+       "text_cn": "钻头突刺",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "影响半径从2.4米降低至2.0米。",
+       "subject": null,
+       "dimension": "other",
+       "before": 2.4,
+       "after": 2.0,
+       "by": -0.4,
+       "by_pct": null,
+       "metric": "影响半径",
+       "unit": "m"
+      }
      ],
      "perks": [],
      "abilities": []
@@ -211,9 +580,42 @@
      "role": "support",
      "dev_note": "和其他强调攻击的支援英雄相比，伊拉锐提供的功能性较少，所以提升她的伤害可以强化她在巧妙选位并命中敌人时的影响力，优化她的整体效率。",
      "general": [
-      "阳焰步枪",
-      "最大伤害从70提高至75。",
-      "最小伤害从20提高至25。"
+      {
+       "text_en": null,
+       "text_cn": "阳焰步枪",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "最大伤害从70提高至75。",
+       "subject": null,
+       "dimension": "other",
+       "before": 70.0,
+       "after": 75.0,
+       "by": 5.0,
+       "by_pct": null,
+       "metric": "最大伤害",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "最小伤害从20提高至25。",
+       "subject": null,
+       "dimension": "other",
+       "before": 20.0,
+       "after": 25.0,
+       "by": 5.0,
+       "by_pct": null,
+       "metric": "最小伤害",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -225,8 +627,30 @@
      "role": "support",
      "dev_note": "“音波”的冷却时间较短，可能会对战况造成过大的干扰。延长它的冷却时间可以降低使用它的频率，略微降低卢西奥的整体施压能力。",
      "general": [
-      "音波",
-      "冷却时间从4秒延长至5秒。"
+      {
+       "text_en": null,
+       "text_cn": "音波",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "冷却时间从4秒延长至5秒。",
+       "subject": null,
+       "dimension": "other",
+       "before": 4.0,
+       "after": 5.0,
+       "by": 1.0,
+       "by_pct": null,
+       "metric": "cooldown",
+       "unit": "s"
+      }
      ],
      "perks": [],
      "abilities": []
@@ -238,7 +662,18 @@
      "role": "support",
      "dev_note": "本次更改提升了“聚合射线”的充能速度，让它追平其他支援角色的终极技能的影响力。",
      "general": [
-      "终极技能消耗降低7%。"
+      {
+       "text_en": null,
+       "text_cn": "终极技能消耗降低7%。",
+       "subject": "ultimate_cost",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 7.0,
+       "metric": "ultimate_cost",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -250,8 +685,30 @@
      "role": "support",
      "dev_note": "禅雅塔的生存能力和防御选项较弱，也限制了他的总体影响力。只要他能站在安全的位置，保持使用“乱”，这次“乱”的增幅提升效果就可以确保增加他的战斗贡献。",
      "general": [
-      "乱",
-      "伤害增幅从25%提高至30%。"
+      {
+       "text_en": null,
+       "text_cn": "乱",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "伤害增幅从25%提高至30%。",
+       "subject": null,
+       "dimension": "other",
+       "before": 25.0,
+       "after": 30.0,
+       "by": 5.0,
+       "by_pct": null,
+       "metric": "damage",
+       "unit": "pct"
+      }
      ],
      "perks": [],
      "abilities": []
@@ -280,5 +737,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:d7f679cb5f422fb95542513277f2b9c454ea7e335e42734586879708b4a3f4d9"
+ "hash": "sha256:eaae469af7f01e15c1959f3b843725c5c8d88479548b5e3af97ade34a444b900"
 }

@@ -109,6 +109,8 @@ def patch_meta_from_manifest(data_dir: pathlib.Path) -> tuple[list[dict], list[d
     manifest = json.loads((data_dir / "manifest.json").read_text(encoding="utf-8"))
     en, cn = [], []
     for patch_id, meta in manifest.items():
+        if not isinstance(meta, dict) or patch_id == "hash_schema":
+            continue
         seq = int(patch_id.split("-")[4])
         entry = {
             "patch_id": patch_id,
@@ -233,9 +235,23 @@ def build_patches_index(data_dir: pathlib.Path, result: PairResult) -> None:
         })
 
     index.sort(key=lambda e: (e["date"], e["id"]), reverse=True)
-    out = {"updated": _now_iso(), "patches": index}
+    out = {"updated": _latest_patch_date(data_dir), "patches": index}
     with open(data_dir / "patches_index.json", "w", encoding="utf-8") as fh:
         json.dump(out, fh, ensure_ascii=False, indent=1)
+
+
+def _latest_patch_date(data_dir: pathlib.Path) -> str:
+    """Deterministic freshness marker: the newest patch date in the archive."""
+    latest = "2016-05-01"
+    for site in ("en", "cn"):
+        for patch_file in (data_dir / "patches" / site).glob("*.json"):
+            try:
+                data = json.loads(patch_file.read_text(encoding="utf-8"))
+            except Exception:
+                continue
+            if data.get("date", "") > latest:
+                latest = data["date"]
+    return f"{latest}T00:00:00Z"
 
 
 def _now_iso() -> str:

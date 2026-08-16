@@ -91,8 +91,30 @@
      "role": "tank",
      "dev_note": "Carnage’s uptime is high due to its cooldown refund on individual or multiple hits. Increasing the base cooldown reduces this while preserving its rewarding potential.",
      "general": [
-      "Carnage",
-      "Cooldown increased from 8 to 9 seconds."
+      {
+       "text_en": "Carnage",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Cooldown increased from 8 to 9 seconds.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 8.0,
+       "after": 9.0,
+       "by": 1.0,
+       "by_pct": null,
+       "metric": "cooldown",
+       "unit": "s"
+      }
      ],
      "perks": [],
      "abilities": []
@@ -104,9 +126,42 @@
      "role": "tank",
      "dev_note": "With recent adjustments to Hazard’s block effectiveness, we’re restoring some of Jagged Wall’s previous strength. These changes make the Wall a more reliable option for both defensive and offensive pressure.",
      "general": [
-      "Jagged Wall",
-      "Knockback damage increased from 40 to 50.",
-      "Health increased from 350 to 400."
+      {
+       "text_en": "Jagged Wall",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Knockback damage increased from 40 to 50.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 40.0,
+       "after": 50.0,
+       "by": 10.0,
+       "by_pct": null,
+       "metric": "knockback",
+       "unit": null
+      },
+      {
+       "text_en": "Health increased from 350 to 400.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 350.0,
+       "after": 400.0,
+       "by": 50.0,
+       "by_pct": null,
+       "metric": "health",
+       "unit": "hp"
+      }
      ],
      "perks": [],
      "abilities": []
@@ -118,8 +173,30 @@
      "role": "tank",
      "dev_note": "Earthshatter has the potential to swing fights and is often generated quickly in close-range engagements. Increasing the ultimate cost better aligns its charge rate with its overall impact.",
      "general": [
-      "Earthshatter",
-      "Ultimate cost increased by 9%."
+      {
+       "text_en": "Earthshatter",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Ultimate cost increased by 9%.",
+       "text_cn": null,
+       "subject": "ultimate_cost",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 9.0,
+       "metric": "ultimate_cost",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -131,8 +208,30 @@
      "role": "tank",
      "dev_note": "Sigma can struggle to secure eliminations in certain matchups. Increasing direct impact damage rewards precision and improves key breakpoints when comboing with the rest of his kit.",
      "general": [
-      "Hyperspheres",
-      "Impact direct damage increased from 15 to 25."
+      {
+       "text_en": "Hyperspheres",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Impact direct damage increased from 15 to 25.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 15.0,
+       "after": 25.0,
+       "by": 10.0,
+       "by_pct": null,
+       "metric": "impact direct damage",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -153,8 +252,30 @@
      "role": "damage",
      "dev_note": "Recon mode damage is often weak compared to other heroes, making Bastion overly dependent on Sentry mode. A higher fire rate helps smooth out the weapon’s flow and increases his threat while in Recon mode.",
      "general": [
-      "Configuration: Recon",
-      "Fire rate increased from 5 to 6 shots per second."
+      {
+       "text_en": "Configuration: Recon",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Fire rate increased from 5 to 6 shots per second.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 5.0,
+       "after": 6.0,
+       "by": 1.0,
+       "by_pct": null,
+       "metric": "fire rate",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -166,16 +287,126 @@
      "role": "damage",
      "dev_note": "Freja’s long-range kill potential primarily comes from landing two explosive bolts in quick succession. These changes shift power and breakpoints away from Take Aim and more toward her base kit, reducing distant lethality while improving her consistency elsewhere.",
      "general": [
-      "Revdraw Crossbow",
-      "Damage increased from 25 to 30.",
-      "Take Aim",
-      "Direct Hit damage reduced from 40 to 30.",
-      "Explosion damage reduced from 90 to 80.",
-      "Quick Dash",
-      "Distance traveled increased by 15%.",
-      "Bola Shot",
-      "Hinder duration on the hit target increased from 1.2 to 1.4.",
-      "Area slow increased from 25% to 45%."
+      {
+       "text_en": "Revdraw Crossbow",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Damage increased from 25 to 30.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 25.0,
+       "after": 30.0,
+       "by": 5.0,
+       "by_pct": null,
+       "metric": "damage",
+       "unit": null
+      },
+      {
+       "text_en": "Take Aim",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Direct Hit damage reduced from 40 to 30.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 40.0,
+       "after": 30.0,
+       "by": -10.0,
+       "by_pct": null,
+       "metric": "direct hit damage",
+       "unit": null
+      },
+      {
+       "text_en": "Explosion damage reduced from 90 to 80.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 90.0,
+       "after": 80.0,
+       "by": -10.0,
+       "by_pct": null,
+       "metric": "explosion damage",
+       "unit": null
+      },
+      {
+       "text_en": "Quick Dash",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Distance traveled increased by 15%.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 15.0,
+       "metric": "distance traveled",
+       "unit": null
+      },
+      {
+       "text_en": "Bola Shot",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Hinder duration on the hit target increased from 1.2 to 1.4.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 1.2,
+       "after": 1.4,
+       "by": 0.2,
+       "by_pct": null,
+       "metric": "hinder duration on the hit target",
+       "unit": null
+      },
+      {
+       "text_en": "Area slow increased from 25% to 45%.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -187,11 +418,66 @@
      "role": "damage",
      "dev_note": "The travel speed of Junkrat’s grenades is limiting, especially with the overall increase in hero mobility. Increasing projectile speed without altering the arc should improve consistency while preserving weapon feel. The Frag Cannon perk adjustments keep its bonus within reasonable bounds while removing the perk’s downside.",
      "general": [
-      "Frag Launcher",
-      "Projectile speed increased from 25 to 30.",
-      "Frag Cannon (Perk)",
-      "Projectile speed increase reduced from 40% to 25%.",
-      "No longer reduces ammo capacity."
+      {
+       "text_en": "Frag Launcher",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Projectile speed increased from 25 to 30.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 25.0,
+       "after": 30.0,
+       "by": 5.0,
+       "by_pct": null,
+       "metric": "projectile_speed",
+       "unit": "m/s"
+      },
+      {
+       "text_en": "Frag Cannon (Perk)",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Projectile speed increase reduced from 40% to 25%.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "No longer reduces ammo capacity.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -203,8 +489,30 @@
      "role": "damage",
      "dev_note": "Reaper’s sustain from his passive leads to high survivability in close-range duels. A slight reduction in lifesteal maintains his durability while reducing his self-healing reliability in extended engagements.",
      "general": [
-      "The Reaping",
-      "Lifesteal reduced from 30% to 25%."
+      {
+       "text_en": "The Reaping",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Lifesteal reduced from 30% to 25%.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -216,16 +524,126 @@
      "role": "damage",
      "dev_note": "Vendetta performed well during her hero trial though her effectiveness fell off some at the higher ranks. These changes are mainly aimed at making her abilities feel more responsive to better flow between them. We're reducing a few of the longer recovery times and making the passive easier to upkeep through the projectile speed adjustment. To help keep her engagement range in check we're reducing the maximum distance you can throw the sword with Soaring Slice, but this means it'll also take less time to perform and be a bit snappier. The survivability perks have been buffed slightly to make the choices more competitive.",
      "general": [
-      "General",
-      "Reduced recovery times of Palatine Fang overhead, Whirlwind Dash, and Projected Edge by about 15%",
-      "Projected Edge",
-      "Projectile speed increased from 33 to 37 meters per second",
-      "Soaring Slice",
-      "Max throw distance reduced from 16 to 14 meters",
-      "Siphoning Strike - Perk",
-      "Lifesteal increased from 30% to 40%",
-      "Swift Vengeance - Perk",
-      "Overhealth increased from 125 to 150"
+      {
+       "text_en": "General",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Reduced recovery times of Palatine Fang overhead, Whirlwind Dash, and Projected Edge by about 15%",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Projected Edge",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Projectile speed increased from 33 to 37 meters per second",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 33.0,
+       "after": 37.0,
+       "by": 4.0,
+       "by_pct": null,
+       "metric": "projectile_speed",
+       "unit": "m/s"
+      },
+      {
+       "text_en": "Soaring Slice",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Max throw distance reduced from 16 to 14 meters",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 16.0,
+       "after": 14.0,
+       "by": -2.0,
+       "by_pct": null,
+       "metric": "max throw distance",
+       "unit": null
+      },
+      {
+       "text_en": "Siphoning Strike - Perk",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Lifesteal increased from 30% to 40%",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Swift Vengeance - Perk",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Overhealth increased from 125 to 150",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 125.0,
+       "after": 150.0,
+       "by": 25.0,
+       "by_pct": null,
+       "metric": "overhealth",
+       "unit": "hp"
+      }
      ],
      "perks": [],
      "abilities": []
@@ -237,8 +655,30 @@
      "role": "damage",
      "dev_note": "Venture’s shield generation on ability use provides strong and consistent survivability. Reducing the shield amount slightly maintains their gameplay loop while offering more opportunities for opponents to apply pressure.",
      "general": [
-      "Explorer’s Resolve",
-      "Shield health gained per ability reduced from 30 to 25."
+      {
+       "text_en": "Explorer’s Resolve",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Shield health gained per ability reduced from 30 to 25.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 30.0,
+       "after": 25.0,
+       "by": -5.0,
+       "by_pct": null,
+       "metric": "shield",
+       "unit": "hp"
+      }
      ],
      "perks": [],
      "abilities": []
@@ -259,8 +699,30 @@
      "role": "support",
      "dev_note": "While Immortality Field remains one of the stronger abilities in the game, its extremely long cooldown can feel difficult to use effectively for such a reactive tool. Reducing the cooldown gives Baptiste more flexibility without increasing its overall effectiveness.",
      "general": [
-      "Immortality Field",
-      "Cooldown reduced from 25 to 22 seconds."
+      {
+       "text_en": "Immortality Field",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Cooldown reduced from 25 to 22 seconds.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 25.0,
+       "after": 22.0,
+       "by": -3.0,
+       "by_pct": null,
+       "metric": "cooldown",
+       "unit": "s"
+      }
      ],
      "perks": [],
      "abilities": []
@@ -272,8 +734,30 @@
      "role": "support",
      "dev_note": "Captive Sun’s projectile size allows it to be intercepted from farther distances than intended. Reducing the hit volume clarifies its perceived size and improves counterplay for enemies.",
      "general": [
-      "Captive Sun",
-      "Projectile size reduced from 0.75 to 0.45."
+      {
+       "text_en": "Captive Sun",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Projectile size reduced from 0.75 to 0.45.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 0.75,
+       "after": 0.45,
+       "by": -0.3,
+       "by_pct": null,
+       "metric": "projectile size",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -285,8 +769,30 @@
      "role": "support",
      "dev_note": "Juno has limited defensive options against close-range threats. Allowing Mediblaster to critically hit improves her ability to defend herself while rewarding accuracy.",
      "general": [
-      "Mediblaster",
-      "Mediblaster can now deal critical damage against enemies."
+      {
+       "text_en": "Mediblaster",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Mediblaster can now deal critical damage against enemies.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -298,8 +804,30 @@
      "role": "support",
      "dev_note": "Kiriko’s Kunai has strong damage output given its high critical damage and lack of falloff. Reducing projectile size increases the accuracy requirement while maintaining her lethality.",
      "general": [
-      "Kunai",
-      "Base projectile size reduced from 0.15 to 0.12."
+      {
+       "text_en": "Kunai",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Base projectile size reduced from 0.15 to 0.12.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 0.15,
+       "after": 0.12,
+       "by": -0.03,
+       "by_pct": null,
+       "metric": "base projectile size",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -311,8 +839,30 @@
      "role": "support",
      "dev_note": "Wuyang’s movement burst from Rushing Torrent allows for quick repositioning but can be difficult to punish due to how high the speed bonus is over its duration. Slightly reducing the boost lessens how elusive he becomes throughout the ability.",
      "general": [
-      "Rushing Torrent",
-      "Movement speed boost reduced from 50% to 40%."
+      {
+       "text_en": "Rushing Torrent",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Movement speed boost reduced from 50% to 40%.",
+       "text_cn": null,
+       "subject": "move_speed",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -341,70 +891,730 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Jab Cross - Power",
-      "After you use an ability, gain 50% [Quick Melee] Attack Speed and increase [Quick Melee] Range by 1m for 3s",
-      "Rising Uppercut - Power",
-      "Ability: Your next [Quick Melee] becomes a [Rising Uppercut], dealing 10 extra damage (12s Cooldown).",
-      "The Bestest Defense - Power",
-      "[Quick Melee] hits and [Hand Cannon] critical hits trigger [The Best Defense] at 35% effectiveness.",
-      "Aftershock - Power",
-      "[Seismic Slam]'s shockwave repeats itself after a 1.5s delay, dealing 50% damage.",
-      "Seismic Rally - Power",
-      "Every 1s while leaping with [Seismic Slam], grant Overhealth equal to 3% of your Max Life to all allies within line of sight for 3s.",
-      "Slam Wham",
-      "Increase [Seismic Slam]'s damage by 2%, and range by 4% for every 1m traveled downward.",
-      "Boomfist - Power",
-      "Hitting multiple enemies with [Rocket Punch] grants 5% Ultimate Charge and reduces the cooldown of [Power Block] by 0.5s for each extra enemy hit.",
-      "Overpowered - Power",
-      "[Rocket Punch] can be further empowered when blocking 150% more damage with [Power Block], granting 25% more damage and 50% more range.",
-      "Asteroid Smash",
-      "Ability: Crouching while airborne will trigger a mini [Meteroid Strike], dealing up to 150 direct hit damage based on distance traveled downward (15s cooldown).",
-      "Block Party - Power",
-      "While [Power Block] is active, heal yourself for 3% of Max Life and all other allies within 8m for 10% of Max Life every 1s.",
-      "Helping Hand - Power",
-      "[The Best Defense] grants bonus Overhealth equal to 8% of Bonus Max Life. Whenever you gain Overhealth from yourself, grant 25% to the nearest ally.",
-      "Loaded Knuckles - Legendary Hero Item",
-      "25 Armor -20% Melee Damage",
-      "[Quick Melee] hits restore 1 ammo. [Rocket Punch] hits restore 100% of your ammo",
-      "Cost: 10,000",
-      "Wing Clipper - Legendary Hero Item",
-      "10% Ability Power",
-      "[Meteor Strike] pulls airborne enemies to the ground",
-      "Cost: 4,500",
-      "Power Bank - Legendary Hero Item",
-      "25 Health",
-      "5% Ability Power",
-      "You can charge [Rocket Punch] indefinitely. After 2.5s of charging [Rocket Punch], become Unstoppable for the duration of that [Rocket Punch].",
-      "4,000",
-      "Friendly Fissure - Legendary Hero Item",
-      "25 Health",
-      "10% Ability Power",
-      "[Meteor Strike] Area of affect grants all other allies Overhealth Equal to 20% of your Max Life for 5s.",
-      "Cost: 9,000",
-      "Charm Crusher - Legendary Hero Item",
-      "15% Ability Power",
-      "15% [Seismic Slam] Leap Distance",
-      "Cost: 11,000",
-      "Quickcharger - Legendary Hero Item",
-      "15% Ability Power",
-      "[Power Block] adds 10% progress for empowering [Rocket Punch]. [Power Block] no longer resets progress for empowering [Rocket Punch].",
-      "Cost: 12,000",
-      "Dual Layer Dampener - Legendary Hero Item",
-      "25 Armor",
-      "10% Increased [Power Block] Damage Reduction",
-      "[Power Block] now also reduces damage against Burn and other Damage Over Time effects.",
-      "Cost: 4,000",
-      "Zoomfist - Legendary Hero Item",
-      "50 Armor",
-      "Whenever you gain Overhealth from yourself, heal for 15% of Overhealth gained over 1s and gain 15% Move Speed for 3s.",
-      "Cost: 9,500",
-      "Power Matrix - Legendary Hero Item",
-      "50 Armor",
-      "[Power Block] absorbs projectiles for the first 1s, gaining Overhealth equal to 1% of your max Life for each projectile absorbed.",
-      "Cost: 11,000"
+      {
+       "text_en": "After you use an ability, gain 50% [Quick Melee] Attack Speed and increase [Quick Melee] Range by 1m for 3s",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Ability: Your next [Quick Melee] becomes a [Rising Uppercut], dealing 10 extra damage (12s Cooldown).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Every 1s while leaping with [Seismic Slam], grant Overhealth equal to 3% of your Max Life to all allies within line of sight for 3s.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Slam Wham",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Increase [Seismic Slam]'s damage by 2%, and range by 4% for every 1m traveled downward.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Hitting multiple enemies with [Rocket Punch] grants 5% Ultimate Charge and reduces the cooldown of [Power Block] by 0.5s for each extra enemy hit.",
+       "text_cn": null,
+       "subject": "ultimate_cost",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Asteroid Smash",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Ability: Crouching while airborne will trigger a mini [Meteroid Strike], dealing up to 150 direct hit damage based on distance traveled downward (15s cooldown).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "While [Power Block] is active, heal yourself for 3% of Max Life and all other allies within 8m for 10% of Max Life every 1s.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Loaded Knuckles - Legendary Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "25 Armor -20% Melee Damage",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Cost: 10,000",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Wing Clipper - Legendary Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "10% Ability Power",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Cost: 4,500",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Power Bank - Legendary Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "25 Health",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "5% Ability Power",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "You can charge [Rocket Punch] indefinitely. After 2.5s of charging [Rocket Punch], become Unstoppable for the duration of that [Rocket Punch].",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "4,000",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Friendly Fissure - Legendary Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "25 Health",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "10% Ability Power",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Cost: 9,000",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Charm Crusher - Legendary Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "15% Ability Power",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "15% [Seismic Slam] Leap Distance",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Cost: 11,000",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Quickcharger - Legendary Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "15% Ability Power",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Cost: 12,000",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Dual Layer Dampener - Legendary Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "25 Armor",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "10% Increased [Power Block] Damage Reduction",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Cost: 4,000",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Zoomfist - Legendary Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "50 Armor",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Whenever you gain Overhealth from yourself, heal for 15% of Overhealth gained over 1s and gain 15% Move Speed for 3s.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Cost: 9,500",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Power Matrix - Legendary Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "50 Armor",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Cost: 11,000",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
-     "perks": [],
-     "abilities": []
+     "perks": [
+      {
+       "name_en": "Jab Cross",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Rising Uppercut",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "The Bestest Defense",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Aftershock",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Seismic Rally",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Boomfist",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Overpowered",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Block Party",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Helping Hand",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": "Quick Melee",
+       "name_cn": "近身攻击",
+       "slug": "quick-melee",
+       "changes": [
+        {
+         "text_en": "[Quick Melee] hits and [Hand Cannon] critical hits trigger [The Best Defense] at 35% effectiveness.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "unit": null,
+         "raw_metric": null
+        },
+        {
+         "text_en": "[Quick Melee] hits restore 1 ammo. [Rocket Punch] hits restore 100% of your ammo",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "unit": null,
+         "raw_metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Seismic Slam",
+       "name_cn": "裂地重拳",
+       "slug": "seismic-slam",
+       "changes": [
+        {
+         "text_en": "[Seismic Slam]'s shockwave repeats itself after a 1.5s delay, dealing 50% damage.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "unit": null,
+         "raw_metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Rocket Punch",
+       "name_cn": "火箭重拳",
+       "slug": "rocket-punch",
+       "changes": [
+        {
+         "text_en": "[Rocket Punch] can be further empowered when blocking 150% more damage with [Power Block], granting 25% more damage and 50% more range.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "unit": null,
+         "raw_metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "The Best Defense",
+       "name_cn": "最佳防守……",
+       "slug": "the-best-defense",
+       "changes": [
+        {
+         "text_en": "[The Best Defense] grants bonus Overhealth equal to 8% of Bonus Max Life. Whenever you gain Overhealth from yourself, grant 25% to the nearest ally.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "unit": null,
+         "raw_metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Meteor Strike",
+       "name_cn": "毁天灭地",
+       "slug": "meteor-strike",
+       "changes": [
+        {
+         "text_en": "[Meteor Strike] pulls airborne enemies to the ground",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "unit": null,
+         "raw_metric": null
+        },
+        {
+         "text_en": "[Meteor Strike] Area of affect grants all other allies Overhealth Equal to 20% of your Max Life for 5s.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "unit": null,
+         "raw_metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Power Block",
+       "name_cn": "悍猛格挡",
+       "slug": "power-block",
+       "changes": [
+        {
+         "text_en": "[Power Block] adds 10% progress for empowering [Rocket Punch]. [Power Block] no longer resets progress for empowering [Rocket Punch].",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "unit": null,
+         "raw_metric": null
+        },
+        {
+         "text_en": "[Power Block] now also reduces damage against Burn and other Damage Over Time effects.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "unit": null,
+         "raw_metric": null
+        },
+        {
+         "text_en": "[Power Block] absorbs projectiles for the first 1s, gaining Overhealth equal to 1% of your max Life for each projectile absorbed.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "unit": null,
+         "raw_metric": null
+        }
+       ]
+      }
+     ]
     },
     {
      "slug": "wuyang",
@@ -413,95 +1623,987 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "Paindrops - Power",
-      "After using [Guardian Wave], Wuyang can shoot 2 additional water orbs for 8s. Each deals 40% damage.",
-      "Undertow - Power",
-      "For each Primary fire hit, gain 5% healing resource and reduce [Rushing Torrent] cooldown by 1.0s",
-      "Wave Lance - Power",
-      "Non-empowered Primary Fire shoots straight and gains 100% increased projectile speed.",
-      "Flow State - Power",
-      "While [Rushing Torrent] is active, every 50 healing with Active [Restorative Stream] extends the duration of [Rushing Torrent] by 2s.",
-      "Shore Up - Power",
-      "Using Active [Restorative Stream] on ally heals Wuyang for 75% of healing.",
-      "Tidekepper - Power",
-      "Every 1s during Active [Restorative Stream] reduces [Guardian Wave] cooldown by 1.5s.",
-      "Puddle Stomp - Power",
-      "While [Rushing Torrent] is active, landing from a jump heals all allies within 6m for 65 for every 1s spent falling.",
-      "Splish Splash - Power",
-      "While [Rushing Torrent] is active, airborne [Quick Melee] activates a 50% short [Guardian Wave] and a splash attack with 60 damage per every second dropped. (15s cooldown)",
-      "Streamline - Power",
-      "While [Rushing Torrent] is activated, place Passive [Restorative Stream] on all allies within line of sight.",
-      "Ebb and Flow - Power",
-      "[Guardian Wave] rewinds to its starting location with 50% damage.",
-      "Storm Surge - Power",
-      "[Guardian Wave] creates a second wave that splashes to targets within 6m around Wuyang.",
-      "Tidal Save - Power",
-      "[Guardian Wave] heals allies with Passive [Restorative Stream] for an extra 100% over 4s.",
-      "Oscillation Orb - Legendary Hero Item",
-      "10% Weapon Power",
-      "Empowered Orb can be steered more freely",
-      "Cost: 4,000",
-      "Tidefill Basin - Legendary Hero Item",
-      "25 Shields",
-      "15% Max Ammo",
-      "While [Rushing Torrent] is active, gain 3 Ammo and 5% Healing Resource every 1s.",
-      "Cost: 4,500",
-      "Oceanic Ointment - Legendary Hero Item",
-      "35% Empowered Orb Splash Radius",
-      "Empowered Orb's splash can remove burn and give 50% of its splash damage as temporary Overhealth to all allies, up to 100.",
-      "Count: 9,000",
-      "Metal College Module - Legendary Hero Item",
-      "15% Weapon Power",
-      "While using [Rushing Torrent], gain 35% Attack Speed.",
-      "Cost: 11,000",
-      "Aquajet Amplifier - Legendary Hero Item",
-      "10% Weapon Power",
-      "25% Active [Restorative Stream] Healing Power",
-      "25% [Restorative Stream] Healing Range",
-      "Cost: 10,000",
-      "Water College Hat - Legendary Hero Item",
-      "25 Shields",
-      "50% Passive [Restorative Stream] Duration",
-      "Passive [Restoration Stream] also gives 10 Overhealth per second, up to 30 ability power.",
-      "Cost: 4,000",
-      "Wuxing Waveriders - Legendary Hero Item",
-      "10% Weapon Power",
-      "10 Ability Power",
-      "While [Rushing Torrent] is active, float upward. Jump to cancel or press crouch to get lower.",
-      "Cost: 9,000",
-      "Ye Family Visor - Legendary Hero Item",
-      "15% Ability Power",
-      "50% [Guardian Wave] increased healing effect duration",
-      "Enemies hit by [Guardian Wave] are revealed for 5s.",
-      "Cost: 10,000",
-      "Hydrocache",
-      "25 Shields",
-      "10% Weapon Power",
-      "25% [Restorative Stream] Max Resource",
-      "Cost: 5,500",
-      "Reservoir Refresher - Legendary Hero Item",
-      "25 Shields",
-      "10% Ability Power",
-      "For each target hit by [Guardian Wave], gain 10% Healing Resource.",
-      "Cost: 5,000",
-      "Hydro Mender - Legendary Hero Item",
-      "25 Shields",
-      "Restore 2% of your shield every second.",
-      "While [Rushing Torrent] is active, restore an additional 10% every second.",
-      "Cost: 9,000",
-      "Waterfall Westsuit - Legendary Hero Item",
-      "25 shields",
-      "10% Cooldown Reduction",
-      "For each target hit by [Guardian Wave], Wuyang gains 20 Overhealth, up to 80 ability power.",
-      "Cost: 11,000",
-      "Torrential Transistor",
-      "50 shields",
-      "[Tidal Blast] gives allies within 12m of the target 50 temporary Overhealth every 1s.",
-      "While Wuyang has shield, gain 15% increased Ultimate Charge.",
-      "Cost: 10,000"
+      {
+       "text_en": "After using [Guardian Wave], Wuyang can shoot 2 additional water orbs for 8s. Each deals 40% damage.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "For each Primary fire hit, gain 5% healing resource and reduce [Rushing Torrent] cooldown by 1.0s",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Non-empowered Primary Fire shoots straight and gains 100% increased projectile speed.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "While [Rushing Torrent] is active, every 50 healing with Active [Restorative Stream] extends the duration of [Rushing Torrent] by 2s.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Using Active [Restorative Stream] on ally heals Wuyang for 75% of healing.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Every 1s during Active [Restorative Stream] reduces [Guardian Wave] cooldown by 1.5s.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "While [Rushing Torrent] is active, landing from a jump heals all allies within 6m for 65 for every 1s spent falling.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "While [Rushing Torrent] is active, airborne [Quick Melee] activates a 50% short [Guardian Wave] and a splash attack with 60 damage per every second dropped. (15s cooldown)",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "While [Rushing Torrent] is activated, place Passive [Restorative Stream] on all allies within line of sight.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Oscillation Orb - Legendary Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "10% Weapon Power",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Empowered Orb can be steered more freely",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Cost: 4,000",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Tidefill Basin - Legendary Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "25 Shields",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "15% Max Ammo",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "While [Rushing Torrent] is active, gain 3 Ammo and 5% Healing Resource every 1s.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Cost: 4,500",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Oceanic Ointment - Legendary Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "35% Empowered Orb Splash Radius",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Empowered Orb's splash can remove burn and give 50% of its splash damage as temporary Overhealth to all allies, up to 100.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Count: 9,000",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Metal College Module - Legendary Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "15% Weapon Power",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "While using [Rushing Torrent], gain 35% Attack Speed.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Cost: 11,000",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Aquajet Amplifier - Legendary Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "10% Weapon Power",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "25% Active [Restorative Stream] Healing Power",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "25% [Restorative Stream] Healing Range",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Cost: 10,000",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Water College Hat - Legendary Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "25 Shields",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "50% Passive [Restorative Stream] Duration",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Passive [Restoration Stream] also gives 10 Overhealth per second, up to 30 ability power.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Cost: 4,000",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Wuxing Waveriders - Legendary Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "10% Weapon Power",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "10 Ability Power",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "While [Rushing Torrent] is active, float upward. Jump to cancel or press crouch to get lower.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Cost: 9,000",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Ye Family Visor - Legendary Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "15% Ability Power",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "50% [Guardian Wave] increased healing effect duration",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Enemies hit by [Guardian Wave] are revealed for 5s.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Cost: 10,000",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Hydrocache",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "25 Shields",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "10% Weapon Power",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "25% [Restorative Stream] Max Resource",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Cost: 5,500",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Reservoir Refresher - Legendary Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "25 Shields",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "10% Ability Power",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "For each target hit by [Guardian Wave], gain 10% Healing Resource.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Cost: 5,000",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Hydro Mender - Legendary Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "25 Shields",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Restore 2% of your shield every second.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "While [Rushing Torrent] is active, restore an additional 10% every second.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Cost: 9,000",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Waterfall Westsuit - Legendary Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "25 shields",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "10% Cooldown Reduction",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "For each target hit by [Guardian Wave], Wuyang gains 20 Overhealth, up to 80 ability power.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Cost: 11,000",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Torrential Transistor",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "50 shields",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "[Tidal Blast] gives allies within 12m of the target 50 temporary Overhealth every 1s.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "While Wuyang has shield, gain 15% increased Ultimate Charge.",
+       "text_cn": null,
+       "subject": "ultimate_cost",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Cost: 10,000",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
-     "perks": [],
-     "abilities": []
+     "perks": [
+      {
+       "name_en": "Paindrops",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Undertow",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Wave Lance",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Flow State",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Shore Up",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Tidekepper",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Puddle Stomp",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Splish Splash",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Streamline",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Ebb and Flow",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Storm Surge",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Tidal Save",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": "Guardian Wave",
+       "name_cn": "翻江浪",
+       "slug": "guardian-wave",
+       "changes": [
+        {
+         "text_en": "[Guardian Wave] rewinds to its starting location with 50% damage.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "unit": null,
+         "raw_metric": null
+        },
+        {
+         "text_en": "[Guardian Wave] creates a second wave that splashes to targets within 6m around Wuyang.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "unit": null,
+         "raw_metric": null
+        },
+        {
+         "text_en": "[Guardian Wave] heals allies with Passive [Restorative Stream] for an extra 100% over 4s.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "unit": null,
+         "raw_metric": null
+        }
+       ]
+      }
+     ]
     }
    ],
    "blocks": []
@@ -519,49 +2621,446 @@
      "role": "damage",
      "dev_note": "We wanted to address some of Cassidy's least-picked Powers and create viable builds across his entire kit. Several new Fan the Hammer powers, such as Buck Wild, as well as the reworked Frankie's Fixer, should nudge Cassidy's close-range build towards building more tanky, rather than a glass cannon that deletes tanks. Cassidy's crit build has also gotten some love with the new Dead Man Walkin', which rewards him for taking aggressive duels and beating the odds in dangerous situations. We were also unhappy with Cassidy's High Noon build, feeling that it took too many powers and items to come online. Three powers have been condensed down to two, allowing the build to spike earlier in a match, while the new forgiveness mechanic in It's 12 O'clock Somewhere should allow Cassidy to recover quicker if his Ultimate scores no eliminations. Condensing the powers also allows Cassidy to branch out his AP options. No longer do you have to go all in on High Noon, instead Cass can flex into a ranged AP build built around Flashbang and the new Sticky Grenade Power or a close-range build with Barrel Roll (while both still having access to the powerful AP scaling on High Noon).",
      "general": [
-      "Full House (New) - Power",
-      "Original functionality removed.",
-      "(New) Flashbang hits reduce Fan the Hammer's spread by 25% for 2s.",
-      "Bang Bang (New) - Power",
-      "Peacekeeper hits against enemies recently damaged by Flashbang (within 2s) reduce its cooldown by 0.5s.",
-      "Buck Wild (New) - Power",
-      "Peacekeeper hits grant 1% Move Speed for 5s, stacking up to 15 times. At Max Stacks, gain 10% Damage Reduction.",
-      "Dead Man Walkin' (New) - Power",
-      "Original functionality removed.",
-      "(New) Enemies below 30% HP have their heads marked. Marked heads are larger and Critical Hits against marked enemies have 50% Weapon Lifesteal.",
-      "Hot Potato (New) - Power",
-      "Original functionality removed.",
-      "(New) Flashbang becomes magnetic and has 50% increased throw distance.",
-      "Bullseye (New) - Power",
-      "Flashbang hits and Critical Hits reduce Combat Roll's cooldown by 2s.",
-      "It's 12 O'clock Somewhere (New) - Power",
-      "Deadeye eliminations grant 25% Ultimate Charge each. If you get no eliminations with Deadeye, refund 33% Ultimate Charge.",
-      "Sunset - Power",
-      "Removed and combined into It's 12 O'Clock Somewhere.",
-      "Easy Rider (New) - Power",
-      "Eliminating an enemy recently damaged by Flashbang grants 20% Ultimate Charge. While using Deadeye, gain 100 Overhealth and 25% Move Speed.",
-      "Flash in the Pan - Power",
-      "Removed and combined with Easy Rider.",
-      "Sunrise - Power",
-      "Removed and converted to a Hero Item (Snakebite).",
-      "Snakebite (New) - Item",
-      "+25 Health",
-      "+15% Ability Power",
-      "Using Deadeye slows all visible enemies by 20% for 2.5s",
-      "Duck and Roll (New) - Item",
-      "+25 Health",
-      "+5% Cooldown Reduction",
-      "+50% Combat Roll distance.",
-      "Frankie's Fixer - Item",
-      "+50 Health",
-      "(New) - Heal 2.5% of your Max Life for each Ammo loaded using Combat Roll.",
-      "Now heals a percentage of your Max Life per ammo instead of a flat number.",
-      "Competitive Analysis (New) - Item",
-      "+15% Weapon Power",
-      "Gain 20% Weapon Lifesteal against enemies in the Damage role.",
-      "Swapped the conditional stat and main stat."
+      {
+       "text_en": "Original functionality removed.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "(New) Flashbang hits reduce Fan the Hammer's spread by 25% for 2s.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Peacekeeper hits against enemies recently damaged by Flashbang (within 2s) reduce its cooldown by 0.5s.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Peacekeeper hits grant 1% Move Speed for 5s, stacking up to 15 times. At Max Stacks, gain 10% Damage Reduction.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Original functionality removed.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "(New) Enemies below 30% HP have their heads marked. Marked heads are larger and Critical Hits against marked enemies have 50% Weapon Lifesteal.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Original functionality removed.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "(New) Flashbang becomes magnetic and has 50% increased throw distance.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Flashbang hits and Critical Hits reduce Combat Roll's cooldown by 2s.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Deadeye eliminations grant 25% Ultimate Charge each. If you get no eliminations with Deadeye, refund 33% Ultimate Charge.",
+       "text_cn": null,
+       "subject": "ultimate_cost",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Removed and combined into It's 12 O'Clock Somewhere.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Eliminating an enemy recently damaged by Flashbang grants 20% Ultimate Charge. While using Deadeye, gain 100 Overhealth and 25% Move Speed.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Removed and combined with Easy Rider.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Removed and converted to a Hero Item (Snakebite).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Snakebite (New) - Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "+25 Health",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "+15% Ability Power",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Using Deadeye slows all visible enemies by 20% for 2.5s",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Duck and Roll (New) - Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "+25 Health",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "+5% Cooldown Reduction",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "+50% Combat Roll distance.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Frankie's Fixer - Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "+50 Health",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "(New) - Heal 2.5% of your Max Life for each Ammo loaded using Combat Roll.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Now heals a percentage of your Max Life per ammo instead of a flat number.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Competitive Analysis (New) - Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "+15% Weapon Power",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Gain 20% Weapon Lifesteal against enemies in the Damage role.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Swapped the conditional stat and main stat.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Full House (New)",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Bang Bang (New)",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Buck Wild (New)",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Dead Man Walkin' (New)",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Hot Potato (New)",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Bullseye (New)",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "It's 12 O'clock Somewhere (New)",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Sunset",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Easy Rider (New)",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Flash in the Pan",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Sunrise",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     }
    ],
@@ -580,19 +3079,131 @@
      "role": "tank",
      "dev_note": "Hazard’s primary fire oriented powers weren’t keeping pace so Bonerot and Twin Fang are getting some extra bite to help him feel more threatening when he commits. On the other hand, Ability Power oriented builds were doing a little too much while being easy and cheap to build.",
      "general": [
-      "Bonerot - Power",
-      "Damage increased to 20 (Up from 10).",
-      "Twin Fang - Power",
-      "Damage increased to 75% (Up from 65%).",
-      "Touch-Up's Touch Up - Epic Ability Hero Item",
-      "Ability Power decreased to 5% (Down from 10%).",
-      "Spike Guard damage decreased to 20% (Down from 25%).",
-      "Duration decreased to 3s (Down from 5s).",
-      "Cost increased to 12000 (Up from 10000).",
-      "Phreak Foil - Epic Ability Item",
-      "Cost increased to 13000 (Up from 10000)."
+      {
+       "text_en": "Damage increased to 20 (Up from 10).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 10.0,
+       "after": 20.0,
+       "by": 10.0,
+       "by_pct": null,
+       "metric": "damage",
+       "unit": null
+      },
+      {
+       "text_en": "Damage increased to 75% (Up from 65%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Touch-Up's Touch Up - Epic Ability Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Ability Power decreased to 5% (Down from 10%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Spike Guard damage decreased to 20% (Down from 25%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Duration decreased to 3s (Down from 5s).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Cost increased to 12000 (Up from 10000).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 10000.0,
+       "after": 12000.0,
+       "by": 2000.0,
+       "by_pct": null,
+       "metric": "cost",
+       "unit": null
+      },
+      {
+       "text_en": "Phreak Foil - Epic Ability Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Cost increased to 13000 (Up from 10000).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 10000.0,
+       "after": 13000.0,
+       "by": 3000.0,
+       "by_pct": null,
+       "metric": "cost",
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Bonerot",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Twin Fang",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     },
     {
@@ -602,10 +3213,28 @@
      "role": "tank",
      "dev_note": "This update aims to strengthen Orisa’s sustain and reliability during extended engagements. Restorify used to perform perhaps too well when it used to be 10% so we are trying to find the sweet spot.",
      "general": [
-      "Restortify - Power",
-      "Healing increased to 8% (Up from 5%)."
+      {
+       "text_en": "Healing increased to 8% (Up from 5%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Restortify",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     },
     {
@@ -615,12 +3244,47 @@
      "role": "tank",
      "dev_note": "Winston is a polarizing hero where in good hands he overperforms but on average he is not as threatening. We are still trying to pinpoint adjustments for Winston at higher levels but here is an initial change that will make him less threatening overall.",
      "general": [
-      "Circuit Breaker - Power",
-      "Damage decreased to 2% (Down from 5%).",
-      "Electro Cluster - Power",
-      "Damage decreased to 2% (Down from 3%)."
+      {
+       "text_en": "Damage decreased to 2% (Down from 5%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Damage decreased to 2% (Down from 3%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Circuit Breaker",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Electro Cluster",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     }
    ],
@@ -639,35 +3303,323 @@
      "role": "damage",
      "dev_note": "These changes broaden Genji’s build diversity and reinforce his identity as a highly mobile, high-skill-cap assassin. Powers like Forged Under Fire and Hanamura Healing received significant stat increases to enhance survivability and reward aggressive play. Weapon items such as Spiked Grip and Swift-Loader now offer more meaningful tempo boosts, improving Genji’s ability to chain engagements fluidly. Ability and survival items have been tuned to strengthen mobility, cooldown management, and defensive expression. Overall, this update aims to make more of Genji’s item paths viable and exciting without pushing his burst lethality beyond intended limits.",
      "general": [
-      "Forged Under Fire - Power",
-      "Healing increased to 125% (Up from 60%).",
-      "Hanamura Healing - Power",
-      "Damage increased to 35% (Up from 25%).",
-      "Overhealth duration is now infinite (Up from 5s).",
-      "Spiked Grip - Rare Weapon Hero Item",
-      "Ammo restore increased to 35% (Up from 20%).",
-      "Added: +10% Attack Speed",
-      "Cost increased to 4000 (Up from 3750).",
-      "Swift-Loader - Epic Weapon Hero Item",
-      "Redesigned to: Using [Swift Strike] restores 20% ammo and gives 20% Attack Speed for 2.5s.",
-      "Cost increased to 12000 (Up from 10000).",
-      "Traversal Kinetics - Rare Ability Hero Item",
-      "Added:+10% Weapon Power, +10% Ability Power",
-      "Cost increased to 5000 (Up from 3750).",
-      "Clean Sweep - Epic Ability Hero Item",
-      "Cost decreased to 9000 (Down from 10000).",
-      "Deflecting Dash - Epic Ability Hero Item",
-      "Cost decreased to 9000 (Down from 10000).",
-      "Equilibrium Gear - Rare Survival Hero Item",
-      "Added: +5% Cooldown Reduction.",
-      "Sparrowhawk Feather - Rare Survival Hero Item",
-      "Added: [Swift Strike] resets additional jumps.",
-      "Cost decreased to 3750 (Down from 4000).",
-      "Slicy Coolant - Epic Survival Hero Item",
-      "Added: Deflect now deflects attacks from both sides.",
-      "Cost increased to 11000 (Up from 10000)."
+      {
+       "text_en": "Healing increased to 125% (Up from 60%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Damage increased to 35% (Up from 25%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Overhealth duration is now infinite (Up from 5s).",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Spiked Grip - Rare Weapon Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Ammo restore increased to 35% (Up from 20%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Added: +10% Attack Speed",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Cost increased to 4000 (Up from 3750).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 3750.0,
+       "after": 4000.0,
+       "by": 250.0,
+       "by_pct": null,
+       "metric": "cost",
+       "unit": null
+      },
+      {
+       "text_en": "Swift-Loader - Epic Weapon Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Redesigned to: Using [Swift Strike] restores 20% ammo and gives 20% Attack Speed for 2.5s.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Cost increased to 12000 (Up from 10000).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 10000.0,
+       "after": 12000.0,
+       "by": 2000.0,
+       "by_pct": null,
+       "metric": "cost",
+       "unit": null
+      },
+      {
+       "text_en": "Traversal Kinetics - Rare Ability Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Added:+10% Weapon Power, +10% Ability Power",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Cost increased to 5000 (Up from 3750).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 3750.0,
+       "after": 5000.0,
+       "by": 1250.0,
+       "by_pct": null,
+       "metric": "cost",
+       "unit": null
+      },
+      {
+       "text_en": "Clean Sweep - Epic Ability Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Cost decreased to 9000 (Down from 10000).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Deflecting Dash - Epic Ability Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Cost decreased to 9000 (Down from 10000).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Equilibrium Gear - Rare Survival Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Added: +5% Cooldown Reduction.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Sparrowhawk Feather - Rare Survival Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Added: [Swift Strike] resets additional jumps.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Cost decreased to 3750 (Down from 4000).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Slicy Coolant - Epic Survival Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Added: Deflect now deflects attacks from both sides.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Cost increased to 11000 (Up from 10000).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 10000.0,
+       "after": 11000.0,
+       "by": 1000.0,
+       "by_pct": null,
+       "metric": "cost",
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Forged Under Fire",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Hanamura Healing",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     }
    ],
@@ -686,11 +3638,40 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "MediMaster - Power",
-      "Critical Hit additional damage increased from 150% to 200%.",
-      "Critical Hits now reduce the cooldown of [Hyper Ring] by 0.2s"
+      {
+       "text_en": "Critical Hit additional damage increased from 150% to 200%.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Critical Hits now reduce the cooldown of [Hyper Ring] by 0.2s",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "MediMaster",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     }
    ],
@@ -738,5 +3719,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:9f9aedc80497166832a88bc2ef85af37dec3e6271ba2f68acd8f6e0ce25727a1"
+ "hash": "sha256:865db70831f4695e7e5bbd4ce721d53d4b4c3c2ad636fceea4b988c8352b6240"
 }

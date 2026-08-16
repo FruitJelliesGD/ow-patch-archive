@@ -47,8 +47,13 @@ def _pick_canonical(en_counter: Counter, resolver: NameResolver) -> str:
 
 
 def build_ability_map(data_dir: pathlib.Path, pairs: list[dict],
-                      resolver: NameResolver | None = None) -> dict:
+                      resolver: NameResolver | None = None,
+                      weapons: dict | None = None) -> dict:
     resolver = resolver or NameResolver(data_dir / "names.json")
+    if weapons is None:
+        from .weapons import load_weapons
+
+        weapons = load_weapons(data_dir / "weapons.json")
 
     ability_pairs: dict[str, dict[str, Counter]] = defaultdict(lambda: defaultdict(Counter))
     perk_pairs: dict[str, dict[str, Counter]] = defaultdict(lambda: defaultdict(Counter))
@@ -99,6 +104,7 @@ def build_ability_map(data_dir: pathlib.Path, pairs: list[dict],
     abilities, abilities_by_cn, abilities_by_en = _aggregate(
         ability_pairs, en_abilities, resolver)
     perks, perks_by_cn, perks_by_en = _aggregate(perk_pairs, en_perks, resolver)
+    _label_weapon_kinds(abilities, weapons)
 
     return {
         "abilities": dict(sorted(abilities.items())),
@@ -109,6 +115,17 @@ def build_ability_map(data_dir: pathlib.Path, pairs: list[dict],
         "perks_by_en": dict(sorted(perks_by_en.items())),
         "unresolved": [],
     }
+
+
+def _label_weapon_kinds(abilities: dict, weapons: dict) -> None:
+    """Tag each ability entry with kind=weapon|ability (seed table first, then roots)."""
+    from .weapons import classify_ability
+
+    for slug, entry in abilities.items():
+        entry["kind"] = classify_ability(entry.get("name_en") or "",
+                                         entry.get("name_cn") or "",
+                                         entry["heroes"][0] if entry.get("heroes") else "",
+                                         weapons)
 
 
 def _aggregate(pairs: dict, en_seen: dict, resolver: NameResolver):

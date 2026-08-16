@@ -39,14 +39,22 @@
          "text_cn": null,
          "before": 4.5,
          "after": 3.5,
-         "metric": "duration"
+         "metric": "duration",
+         "by": -1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "duration"
         },
         {
          "text_en": "Orisa now moves 20% slower while fortified.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -60,7 +68,11 @@
          "text_cn": null,
          "before": 7.0,
          "after": 9.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": 2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       }
@@ -94,7 +106,11 @@
          "text_cn": null,
          "before": 45.0,
          "after": 40.0,
-         "metric": "maximum explosion damage"
+         "metric": "maximum explosion damage",
+         "by": -5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "maximum explosion damage"
         }
        ]
       },
@@ -108,7 +124,11 @@
          "text_cn": null,
          "before": 40.0,
          "after": 30.0,
-         "metric": "initial impact damage"
+         "metric": "initial impact damage",
+         "by": -10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "initial impact damage"
         }
        ]
       },
@@ -122,7 +142,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "ultimate_cost",
+         "by": null,
+         "by_pct": 10.0,
+         "unit": null,
+         "raw_metric": "ultimate charge cost"
         }
        ]
       }
@@ -157,5 +181,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:36be160e1eb43752a9998d89aea368fd1c78c41e1f3d0e0bdbc826db847138f1"
+ "hash": "sha256:2fe4b047ecbcef89f3392825ca8573f3bc5f67035fc35cbd782930d8f8fece71"
 }

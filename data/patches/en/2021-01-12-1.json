@@ -73,14 +73,22 @@
          "text_cn": null,
          "before": 80.0,
          "after": 75.0,
-         "metric": "sights damage"
+         "metric": "aim-down-sights damage",
+         "by": -5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "aim-down-sights damage"
         },
         {
          "text_en": "Aim-down-sights recovery time reduced from 0.7 to 0.65 seconds",
          "text_cn": null,
          "before": 0.7,
          "after": 0.65,
-         "metric": "sights recovery time"
+         "metric": "aim-down-sights recovery time",
+         "by": -0.05,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "aim-down-sights recovery time"
         }
        ]
       }
@@ -105,7 +113,11 @@
          "text_cn": null,
          "before": 0.3,
          "after": 0.25,
-         "metric": "shot recovery time"
+         "metric": "shot recovery time",
+         "by": -0.05,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "shot recovery time"
         }
        ]
       }
@@ -130,7 +142,11 @@
          "text_cn": null,
          "before": 1.0,
          "after": 2.5,
-         "metric": "redeploy cooldown"
+         "metric": "redeploy cooldown",
+         "by": 1.5,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "redeploy cooldown"
         }
        ]
       }
@@ -155,7 +171,11 @@
          "text_cn": null,
          "before": 100.0,
          "after": 75.0,
-         "metric": "shield per target"
+         "metric": "shield",
+         "by": -25.0,
+         "by_pct": null,
+         "unit": "hp",
+         "raw_metric": "shield per target"
         }
        ]
       }
@@ -185,5 +205,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:d239c3edc9058bff3d5b8b798ac4618050072be0e52a8f189645bbb0d8100148"
+ "hash": "sha256:815e9063f8747cb2955f75a3f338b700f42faffbbe8c87bf8d29c5ca2300a0ca"
 }

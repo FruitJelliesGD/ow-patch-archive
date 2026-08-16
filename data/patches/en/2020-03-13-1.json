@@ -74,7 +74,11 @@
          "text_cn": null,
          "before": 1.0,
          "after": 0.7,
-         "metric": "charge time"
+         "metric": "charge time",
+         "by": -0.3,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "charge time"
         }
        ]
       },
@@ -86,9 +90,13 @@
         {
          "text_en": "Cooldown lowered from 15 to 13 seconds",
          "text_cn": null,
-         "before": null,
-         "after": null,
-         "metric": null
+         "before": 15.0,
+         "after": 13.0,
+         "metric": "cooldown",
+         "by": -2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       }
@@ -113,7 +121,11 @@
          "text_cn": null,
          "before": 3.0,
          "after": 4.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": 1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       }
@@ -138,14 +150,22 @@
          "text_cn": null,
          "before": 10.0,
          "after": 13.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": 3.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         },
         {
          "text_en": "Player collision now allows large heroes to fit through 1 pillar gaps",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -170,7 +190,11 @@
          "text_cn": null,
          "before": 10.0,
          "after": 11.0,
-         "metric": "damage"
+         "metric": "damage",
+         "by": 1.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage"
         }
        ]
       }
@@ -195,14 +219,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "ultimate_cost",
+         "by": null,
+         "by_pct": 10.0,
+         "unit": null,
+         "raw_metric": "ultimate cost"
         },
         {
          "text_en": "Flight speed increased 30%",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "flight speed",
+         "by": null,
+         "by_pct": 30.0,
+         "unit": null,
+         "raw_metric": "flight speed"
         }
        ]
       }
@@ -227,7 +259,11 @@
          "text_cn": null,
          "before": 8.0,
          "after": 6.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": -2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       }
@@ -252,7 +288,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "spread",
+         "by": null,
+         "by_pct": 10.0,
+         "unit": null,
+         "raw_metric": "spread"
         }
        ]
       }
@@ -292,5 +332,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:6c1ce6a5a593e7188384186f0e9494a91c377683eb3158e702becd80a7451a63"
+ "hash": "sha256:53c94707911ad6bf2677501f97e8a5d2a2e0ec01511b348c26dbcada64d78748"
 }

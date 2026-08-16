@@ -65,10 +65,54 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "尖刺护体——辅助攻击模式技能",
-      "受伤减免效果从65%降低至60%。",
-      "狂跃——技能1",
-      "伤害从80降低至70。"
+      {
+       "text_en": null,
+       "text_cn": "尖刺护体——辅助攻击模式技能",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "受伤减免效果从65%降低至60%。",
+       "subject": null,
+       "dimension": "other",
+       "before": 65.0,
+       "after": 60.0,
+       "by": -5.0,
+       "by_pct": null,
+       "metric": "受伤减免效果",
+       "unit": "pct"
+      },
+      {
+       "text_en": null,
+       "text_cn": "狂跃——技能1",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "伤害从80降低至70。",
+       "subject": null,
+       "dimension": "other",
+       "before": 80.0,
+       "after": 70.0,
+       "by": -10.0,
+       "by_pct": null,
+       "metric": "damage",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -80,8 +124,30 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "天罚形态——技能1",
-      "额外护甲从250提高至275。"
+      {
+       "text_en": null,
+       "text_cn": "天罚形态——技能1",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "额外护甲从250提高至275。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 250.0,
+       "after": 275.0,
+       "by": 25.0,
+       "by_pct": null,
+       "metric": "额外护甲",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -93,10 +159,54 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "爆裂枪——主要/辅助攻击模式",
-      "暴击伤害系数从1.5倍提高至2倍。",
-      "呼吸器——技能2",
-      "资源恢复速度从每秒8提高至每秒12.5。"
+      {
+       "text_en": null,
+       "text_cn": "爆裂枪——主要/辅助攻击模式",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "暴击伤害系数从1.5倍提高至2倍。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "呼吸器——技能2",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "资源恢复速度从每秒8提高至每秒12.5。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -108,10 +218,54 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "四联火炮——主要攻击模式",
-      "最大弹药量从100降低至80。",
-      "地雷禁区——终极技能",
-      "地雷禁区持续时间从20秒缩短至16秒。"
+      {
+       "text_en": null,
+       "text_cn": "四联火炮——主要攻击模式",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "最大弹药量从100降低至80。",
+       "subject": null,
+       "dimension": "other",
+       "before": 100.0,
+       "after": 80.0,
+       "by": -20.0,
+       "by_pct": null,
+       "metric": "最大弹药量",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "地雷禁区——终极技能",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "地雷禁区持续时间从20秒缩短至16秒。",
+       "subject": null,
+       "dimension": "other",
+       "before": 20.0,
+       "after": 16.0,
+       "by": -4.0,
+       "by_pct": null,
+       "metric": "地雷禁区持续时间",
+       "unit": "s"
+      }
      ],
      "perks": [],
      "abilities": []
@@ -132,8 +286,30 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "闪——技能2",
-      "冷却时间从8秒延长至10秒。"
+      {
+       "text_en": null,
+       "text_cn": "闪——技能2",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "冷却时间从8秒延长至10秒。",
+       "subject": null,
+       "dimension": "other",
+       "before": 8.0,
+       "after": 10.0,
+       "by": 2.0,
+       "by_pct": null,
+       "metric": "cooldown",
+       "unit": "s"
+      }
      ],
      "perks": [],
      "abilities": []
@@ -145,8 +321,30 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "岚——技能2",
-      "箭矢尺寸现在与常规箭矢相当。"
+      {
+       "text_en": null,
+       "text_cn": "岚——技能2",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "箭矢尺寸现在与常规箭矢相当。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -158,10 +356,54 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "热力过载——技能1",
-      "持续时间从5秒延长至6秒。",
-      "熔火核心——终极技能",
-      "每秒伤害从160提高至190。"
+      {
+       "text_en": null,
+       "text_cn": "热力过载——技能1",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "持续时间从5秒延长至6秒。",
+       "subject": null,
+       "dimension": "other",
+       "before": 5.0,
+       "after": 6.0,
+       "by": 1.0,
+       "by_pct": null,
+       "metric": "duration",
+       "unit": "s"
+      },
+      {
+       "text_en": null,
+       "text_cn": "熔火核心——终极技能",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "每秒伤害从160提高至190。",
+       "subject": null,
+       "dimension": "other",
+       "before": 160.0,
+       "after": 190.0,
+       "by": 30.0,
+       "by_pct": null,
+       "metric": "每秒伤害",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -173,7 +415,18 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "威能消耗提高25%。"
+      {
+       "text_en": null,
+       "text_cn": "威能消耗提高25%。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 25.0,
+       "metric": "威能消耗",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -185,10 +438,54 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "抓钩",
-      "冷却时间从12秒缩短至10秒。",
-      "剧毒诡雷",
-      "总伤害从75提高至125。"
+      {
+       "text_en": null,
+       "text_cn": "抓钩",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "冷却时间从12秒缩短至10秒。",
+       "subject": null,
+       "dimension": "other",
+       "before": 12.0,
+       "after": 10.0,
+       "by": -2.0,
+       "by_pct": null,
+       "metric": "cooldown",
+       "unit": "s"
+      },
+      {
+       "text_en": null,
+       "text_cn": "剧毒诡雷",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "总伤害从75提高至125。",
+       "subject": null,
+       "dimension": "other",
+       "before": 75.0,
+       "after": 125.0,
+       "by": 50.0,
+       "by_pct": null,
+       "metric": "总伤害",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -209,8 +506,30 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "能量盾击——主要技能",
-      "伤害从50提高至70。"
+      {
+       "text_en": null,
+       "text_cn": "能量盾击——主要技能",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "伤害从50提高至70。",
+       "subject": null,
+       "dimension": "other",
+       "before": 50.0,
+       "after": 70.0,
+       "by": 20.0,
+       "by_pct": null,
+       "metric": "damage",
+       "unit": null
+      }
      ],
      "perks": [
       {
@@ -232,8 +551,30 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "音速扩音器——主要攻击模式",
-      "每发射弹的伤害从22降低至20。"
+      {
+       "text_en": null,
+       "text_cn": "音速扩音器——主要攻击模式",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "每发射弹的伤害从22降低至20。",
+       "subject": null,
+       "dimension": "other",
+       "before": 22.0,
+       "after": 20.0,
+       "by": -2.0,
+       "by_pct": null,
+       "metric": "每发射弹的伤害",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -245,10 +586,54 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "飞流步",
-      "冷却时间从7秒延长至8秒。",
-      "翻江浪",
-      "治疗强化的持续时间从4秒缩短至3秒。"
+      {
+       "text_en": null,
+       "text_cn": "飞流步",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "冷却时间从7秒延长至8秒。",
+       "subject": null,
+       "dimension": "other",
+       "before": 7.0,
+       "after": 8.0,
+       "by": 1.0,
+       "by_pct": null,
+       "metric": "cooldown",
+       "unit": "s"
+      },
+      {
+       "text_en": null,
+       "text_cn": "翻江浪",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "治疗强化的持续时间从4秒缩短至3秒。",
+       "subject": null,
+       "dimension": "other",
+       "before": 4.0,
+       "after": 3.0,
+       "by": -1.0,
+       "by_pct": null,
+       "metric": "治疗强化的持续时间",
+       "unit": "s"
+      }
      ],
      "perks": [],
      "abilities": []
@@ -277,14 +662,66 @@
      "role": "tank",
      "dev_note": "开发者评论：此次更新旨在提升奥丽莎的持久能力与威力。“燎地灼火”会造成更高伤害，屏障的效果也更符合角色职责的需要，“超充能器”如今更是拥有撑起战局关键时刻的持久能力。",
      "general": [
-      "燎地灼火——异能",
-      "燃烧造成的伤害从最大生命值的20%提高至25%。",
-      "屏障拆分——异能",
-      "屏障现在会从被动生命值恢复中获得额外生命值。",
-      "超充能器——异能",
-      "超充能器的基础生命值从200点提高至400点。"
+      {
+       "text_en": null,
+       "text_cn": "燃烧造成的伤害从最大生命值的20%提高至25%。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "屏障现在会从被动生命值恢复中获得额外生命值。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "超充能器的基础生命值从200点提高至400点。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 200.0,
+       "after": 400.0,
+       "by": 200.0,
+       "by_pct": null,
+       "metric": "超充能器的基础生命值",
+       "unit": "hp"
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "燎地灼火",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": null,
+       "name_cn": "屏障拆分",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": null,
+       "name_cn": "超充能器",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     },
     {
@@ -294,18 +731,124 @@
      "role": "tank",
      "dev_note": "开发者评论：“西格玛”部分物品与异能的适用场景过于局限，我们对此进行了优化。此外，他现在施展光束反制物品应对其他重装英雄时应该会更具成效了（说的就是你，莱因哈特）。",
      "general": [
-      "音乐大师——异能",
-      "新增：“引力乱流”在未能影响到敌人时返还50%终极技能充能。",
-      "不稳定的陨石——稀有技能英雄物品",
-      "额外技能强度重做：用“质量吸附”造成伤害时，获得5%技能强度，可叠加4次，回合结束时重置。",
-      "分束器——稀有生存英雄物品",
-      "现在激活期间也会降低近身攻击伤害。",
-      "受伤减免从50%提高至75%。",
-      "同步防护——稀有生存英雄物品",
-      "位于“实验屏障”后方时，提高的武器强度与攻击速度从5%提高至10%。",
-      "位于“实验屏障”前方时，提高的移动速度与生命汲取从5%提高至10%。"
+      {
+       "text_en": null,
+       "text_cn": "新增：“引力乱流”在未能影响到敌人时返还50%终极技能充能。",
+       "subject": "ultimate_cost",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "不稳定的陨石——稀有技能英雄物品",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "额外技能强度重做：用“质量吸附”造成伤害时，获得5%技能强度，可叠加4次，回合结束时重置。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "分束器——稀有生存英雄物品",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "现在激活期间也会降低近身攻击伤害。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "受伤减免从50%提高至75%。",
+       "subject": null,
+       "dimension": "other",
+       "before": 50.0,
+       "after": 75.0,
+       "by": 25.0,
+       "by_pct": null,
+       "metric": "受伤减免",
+       "unit": "pct"
+      },
+      {
+       "text_en": null,
+       "text_cn": "同步防护——稀有生存英雄物品",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "位于“实验屏障”后方时，提高的武器强度与攻击速度从5%提高至10%。",
+       "subject": null,
+       "dimension": "other",
+       "before": 5.0,
+       "after": 10.0,
+       "by": 5.0,
+       "by_pct": null,
+       "metric": "提高的武器强度与攻击速度",
+       "unit": "pct"
+      },
+      {
+       "text_en": null,
+       "text_cn": "位于“实验屏障”前方时，提高的移动速度与生命汲取从5%提高至10%。",
+       "subject": "move_speed",
+       "dimension": "hero_attr",
+       "before": 5.0,
+       "after": 10.0,
+       "by": 5.0,
+       "by_pct": null,
+       "metric": "提高的移动速度与生命汲取",
+       "unit": "pct"
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "音乐大师",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     }
    ],
@@ -324,10 +867,28 @@
      "role": "damage",
      "dev_note": "开发者评论：根据玩家反馈，我们想用“减速雪球”来奖励操作尤其精准的玩家。暴击现在会造成更强的减速效果，让美的命中更加冰冷刺骨，同时让己方可以更清晰明了地看出敌人真正陷入危机的时刻。",
      "general": [
-      "减速雪球——异能",
-      "新增：暴击现在改为施加30%减速效果。"
+      {
+       "text_en": null,
+       "text_cn": "新增：暴击现在改为施加30%减速效果。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "减速雪球",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     },
     {
@@ -337,75 +898,753 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "已加入角斗领域英雄阵容。",
-      "时空症结——角斗领域被动",
-      "从物品和资金中获得的生命值、护甲、护盾降低25%。",
-      "快闪一拳——异能",
-      "使用“闪现”后的1秒内，你的下一次快速近身攻击会受技能强度影响，造成10点额外伤害，并能击退敌人。",
-      "拳力充沛！——异能",
-      "快速近身攻击命中敌人提供5%终极技能充能。",
-      "夺目一闪——异能",
-      "造成暴击会使“闪现”的冷却时间缩短0.5秒。",
-      "量子弹夹——异能",
-      "在装填过程中使用“闪现”时，获得25%最大弹药和10%武器生命汲取，装填时重置。",
-      "竞速高手——异能",
-      "“闪现”对你的传送距离扩大3米，并使你的移动速度加快10%，持续1秒。",
-      "改写结局——异能",
-      "使用“闪回”时，治疗6米内的所有盟友，治疗量为盟友在过去3秒内所受伤害量的75%。",
-      "自动闪回——异能",
-      "每回合一次，在即将阵亡时免于阵亡，并免费使用“闪回”。消耗终极技能充能会使“闪回”的冷却时间缩短50%。",
-      "子弹时间——异能",
-      "使用“闪回”时，留下一个能使弹道速度减慢95%的时间力场，持续6秒，并使你受到的即时命中伤害降低25%，持续3秒。",
-      "时光之门——异能",
-      "“闪回”会留下一道时光之门。盟友可与时光之门互动，回溯到3秒之前。",
-      "预见未来——异能",
-      "使用“闪现”后，你在2秒内的后续6发射击会自动瞄准10米内的目标。",
-      "聚焦连拍——异能",
-      "连续2次成功命中同一目标后，会在2秒内造成1点额外伤害。",
-      "口袋炸弹——异能",
-      "使用“闪回”时，扔出一枚伤害量降低60%的“脉冲炸弹”。",
-      "脉冲探测器——稀有武器英雄物品",
-      "10%武器强度。",
-      "10%最大弹药。",
-      "被“脉冲双枪”命中的最后一名敌人会显示位置，持续1秒。",
-      "费用：5500。",
-      "地下世界快速装弹器——史诗武器英雄物品",
-      "10%武器强度。",
-      "10%攻击速度。",
-      "“脉冲双枪”命中会使装填速度加快1%，可叠加30次。装填时重置。",
-      "费用：12000。",
-      "降阻装置——稀有技能英雄物品",
-      "10%技能强度。",
-      "100%“脉冲炸弹”投掷距离。",
-      "费用：4000。",
-      "时域炸弹——史诗技能英雄物品",
-      "15%技能强度。",
-      "50%“脉冲炸弹”爆炸半径。",
-      "被“脉冲炸弹”附着或命中的敌人会减速30%，并使其攻击速度加成损失30%，持续2秒。",
-      "费用：10000。",
-      "埃米莉的钟情——稀有生存英雄物品",
-      "+19点生命值。",
-      "使用“闪回”后，获得50点过量生命值，持续5秒。",
-      "费用：4000。",
-      "伊基的点火器——稀有生存英雄物品",
-      "5%攻击速度。",
-      "5%移动速度。",
-      "在空中使用“闪现”时，可以进行一次当空跳跃。",
-      "费用：3750。",
-      "定制跑鞋——史诗生存英雄物品",
-      "+38点生命值。",
-      "使用“闪现”时，自身和6米内盟友的移动速度加快10%，持续1秒。",
-      "费用：10000。",
-      "奥克斯顿超速器——史诗生存英雄物品",
-      "+19点生命值。",
-      "使用“闪回”时，“闪现”恢复2次充能。",
-      "费用：10000。",
-      "跃空药膏——史诗生存英雄物品",
-      "+19点生命值。",
-      "“闪回”总会为你恢复生命值，恢复量至少为总生命值的70%。",
-      "费用：10000。"
+      {
+       "text_en": null,
+       "text_cn": "已加入角斗领域英雄阵容。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "时空症结——角斗领域被动",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "从物品和资金中获得的生命值、护甲、护盾降低25%。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 25.0,
+       "metric": "shield",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "使用“闪现”后的1秒内，你的下一次快速近身攻击会受技能强度影响，造成10点额外伤害，并能击退敌人。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "快速近身攻击命中敌人提供5%终极技能充能。",
+       "subject": "ultimate_cost",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "造成暴击会使“闪现”的冷却时间缩短0.5秒。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "在装填过程中使用“闪现”时，获得25%最大弹药和10%武器生命汲取，装填时重置。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "“闪现”对你的传送距离扩大3米，并使你的移动速度加快10%，持续1秒。",
+       "subject": "move_speed",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "使用“闪回”时，治疗6米内的所有盟友，治疗量为盟友在过去3秒内所受伤害量的75%。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "每回合一次，在即将阵亡时免于阵亡，并免费使用“闪回”。消耗终极技能充能会使“闪回”的冷却时间缩短50%。",
+       "subject": "ultimate_cost",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 50.0,
+       "metric": "的冷却时间",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "使用“闪回”时，留下一个能使弹道速度减慢95%的时间力场，持续6秒，并使你受到的即时命中伤害降低25%，持续3秒。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 25.0,
+       "metric": "并使你受到的即时命中伤害",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "“闪回”会留下一道时光之门。盟友可与时光之门互动，回溯到3秒之前。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "使用“闪现”后，你在2秒内的后续6发射击会自动瞄准10米内的目标。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "连续2次成功命中同一目标后，会在2秒内造成1点额外伤害。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "使用“闪回”时，扔出一枚伤害量降低60%的“脉冲炸弹”。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 60.0,
+       "metric": "扔出一枚伤害量",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "脉冲探测器——稀有武器英雄物品",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "10%武器强度。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "10%最大弹药。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "被“脉冲双枪”命中的最后一名敌人会显示位置，持续1秒。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "费用：5500。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "地下世界快速装弹器——史诗武器英雄物品",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "10%武器强度。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "10%攻击速度。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "“脉冲双枪”命中会使装填速度加快1%，可叠加30次。装填时重置。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "费用：12000。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "降阻装置——稀有技能英雄物品",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "10%技能强度。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "100%“脉冲炸弹”投掷距离。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "费用：4000。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "时域炸弹——史诗技能英雄物品",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "15%技能强度。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "50%“脉冲炸弹”爆炸半径。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "被“脉冲炸弹”附着或命中的敌人会减速30%，并使其攻击速度加成损失30%，持续2秒。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "费用：10000。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "埃米莉的钟情——稀有生存英雄物品",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "+19点生命值。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "使用“闪回”后，获得50点过量生命值，持续5秒。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "费用：4000。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "伊基的点火器——稀有生存英雄物品",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "5%攻击速度。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "5%移动速度。",
+       "subject": "move_speed",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "在空中使用“闪现”时，可以进行一次当空跳跃。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "费用：3750。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "定制跑鞋——史诗生存英雄物品",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "+38点生命值。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "使用“闪现”时，自身和6米内盟友的移动速度加快10%，持续1秒。",
+       "subject": "move_speed",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "费用：10000。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "奥克斯顿超速器——史诗生存英雄物品",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "+19点生命值。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "使用“闪回”时，“闪现”恢复2次充能。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "费用：10000。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "跃空药膏——史诗生存英雄物品",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "+19点生命值。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "“闪回”总会为你恢复生命值，恢复量至少为总生命值的70%。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "费用：10000。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "快闪一拳",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": null,
+       "name_cn": "拳力充沛！",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": null,
+       "name_cn": "夺目一闪",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": null,
+       "name_cn": "量子弹夹",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": null,
+       "name_cn": "竞速高手",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": null,
+       "name_cn": "改写结局",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": null,
+       "name_cn": "自动闪回",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": null,
+       "name_cn": "子弹时间",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": null,
+       "name_cn": "时光之门",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": null,
+       "name_cn": "预见未来",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": null,
+       "name_cn": "聚焦连拍",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": null,
+       "name_cn": "口袋炸弹",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     }
    ],
@@ -424,8 +1663,30 @@
      "role": "support",
      "dev_note": "开发者评论：与其他史诗等级选项相比，“脉冲星毁灭者”表现平平。此次强化应该能让这件英雄物品更具破坏力，也更配得上它的名字。",
      "general": [
-      "脉冲星毁灭者——史诗技能英雄物品",
-      "伤害从20提高至35。"
+      {
+       "text_en": null,
+       "text_cn": "脉冲星毁灭者——史诗技能英雄物品",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "伤害从20提高至35。",
+       "subject": null,
+       "dimension": "other",
+       "before": 20.0,
+       "after": 35.0,
+       "by": 15.0,
+       "by_pct": null,
+       "metric": "damage",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -437,12 +1698,78 @@
      "role": "support",
      "dev_note": "开发者评论：我们调整了数值，让神的庇佑稍微松懈一点，也让甜甜圈的营养稍微少一点。毕竟有时候，糖霜撒太多了确实只会发苦。",
      "general": [
-      "闪送甜甜圈——史诗技能英雄物品",
-      "冷却时间缩减从10%降低至5%。",
-      "治疗量从120降低至80。",
-      "生命神佑——史诗生存英雄物品",
-      "技能强度从20%降低至15%。",
-      "过量生命值从100降低至80。"
+      {
+       "text_en": null,
+       "text_cn": "闪送甜甜圈——史诗技能英雄物品",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "冷却时间缩减从10%降低至5%。",
+       "subject": null,
+       "dimension": "other",
+       "before": 10.0,
+       "after": 5.0,
+       "by": -5.0,
+       "by_pct": null,
+       "metric": "cooldown",
+       "unit": "pct"
+      },
+      {
+       "text_en": null,
+       "text_cn": "治疗量从120降低至80。",
+       "subject": null,
+       "dimension": "other",
+       "before": 120.0,
+       "after": 80.0,
+       "by": -40.0,
+       "by_pct": null,
+       "metric": "healing",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "生命神佑——史诗生存英雄物品",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "技能强度从20%降低至15%。",
+       "subject": null,
+       "dimension": "other",
+       "before": 20.0,
+       "after": 15.0,
+       "by": -5.0,
+       "by_pct": null,
+       "metric": "技能强度",
+       "unit": "pct"
+      },
+      {
+       "text_en": null,
+       "text_cn": "过量生命值从100降低至80。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 100.0,
+       "after": 80.0,
+       "by": -20.0,
+       "by_pct": null,
+       "metric": "overhealth",
+       "unit": "hp"
+      }
      ],
      "perks": [],
      "abilities": []
@@ -463,16 +1790,126 @@
      "role": null,
      "dev_note": "开发者评论：“猎空”加入后，我们会调整部分“使用技能时”触发的物品的强度范围，使其在技能冷却时间较短的英雄身上不会过于超模。",
      "general": [
-      "铁甲排气口——稀有生存英雄物品",
-      "过量生命值现在最多只能叠加1层。",
-      "添加10点生命值。",
-      "三连发汤姆逊冲锋枪——史诗技能综合物品",
-      "为等同于目标总生命值百分比的额外伤害添加衰减效果。",
-      "每次触发额外伤害后需间隔0.25秒才能再次触发。",
-      "效果从“使用技能后，接下来3次武器伤害造成额外伤害，数值为目标总生命值的3%”调整为“使用技能后的3秒内，武器伤害造成额外伤害，数值为目标总生命值的1%。（0.25秒冷却时间）”",
-      "费用从10500降低至9500。",
-      "灵狐印记——史诗技能综合物品",
-      "为额外伤害新增伤害衰减机制。"
+      {
+       "text_en": null,
+       "text_cn": "铁甲排气口——稀有生存英雄物品",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "过量生命值现在最多只能叠加1层。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "添加10点生命值。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "三连发汤姆逊冲锋枪——史诗技能综合物品",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "为等同于目标总生命值百分比的额外伤害添加衰减效果。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "每次触发额外伤害后需间隔0.25秒才能再次触发。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "效果从“使用技能后，接下来3次武器伤害造成额外伤害，数值为目标总生命值的3%”调整为“使用技能后的3秒内，武器伤害造成额外伤害，数值为目标总生命值的1%。（0.25秒冷却时间）”",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "费用从10500降低至9500。",
+       "subject": null,
+       "dimension": "other",
+       "before": 10500.0,
+       "after": 9500.0,
+       "by": -1000.0,
+       "by_pct": null,
+       "metric": "费用",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "灵狐印记——史诗技能综合物品",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "为额外伤害新增伤害衰减机制。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -535,5 +1972,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:31a36d7044a0ca5eb05e09e30fd89b1f6907f527e1f3a3e41ed947cb4bfac0ec"
+ "hash": "sha256:a6f996910657ec2c75b606d196f7867b386ab1ed74dbab33f78678aacbe1fac0"
 }

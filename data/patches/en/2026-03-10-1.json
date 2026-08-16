@@ -79,7 +79,11 @@
          "text_cn": null,
          "before": 3.5,
          "after": 4.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": 0.5,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       }
@@ -92,7 +96,18 @@
      "role": "tank",
      "dev_note": "Hazard was originally placed in the Stalwart subrole to mitigate the impact of crowd control during engagements. Since the introduction of subroles, he has struggled in performance. Moving Hazard to the Initiator subrole better supports a more aggressive, sustain-focused playstyle.",
      "general": [
-      "Subrole moved from Stalwart to Initiator."
+      {
+       "text_en": "Subrole moved from Stalwart to Initiator.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -116,7 +131,11 @@
          "text_cn": null,
          "before": 13.0,
          "after": 12.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": -1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       },
@@ -130,7 +149,11 @@
          "text_cn": null,
          "before": 30.0,
          "after": 35.0,
-         "metric": "damage per second"
+         "metric": "damage",
+         "by": 5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage per second"
         }
        ]
       }
@@ -155,7 +178,11 @@
          "text_cn": null,
          "before": 6.5,
          "after": 7.0,
-         "metric": "damage per pellet"
+         "metric": "damage",
+         "by": 0.5,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage per pellet"
         }
        ]
       }
@@ -189,14 +216,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Jump height while active increased by 20%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "jump height while active",
+         "by": null,
+         "by_pct": 20.0,
+         "unit": null,
+         "raw_metric": "jump height while active"
         }
        ]
       }
@@ -221,7 +256,11 @@
          "text_cn": null,
          "before": 4.5,
          "after": 4.0,
-         "metric": "time before trigger"
+         "metric": "time before trigger",
+         "by": -0.5,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "time before trigger"
         }
        ]
       }
@@ -305,7 +344,11 @@
          "text_cn": null,
          "before": 3.5,
          "after": 3.0,
-         "metric": "secondary fire maximum resource"
+         "metric": "secondary fire maximum resource",
+         "by": -0.5,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "secondary fire maximum resource"
         }
        ]
       }
@@ -370,14 +413,22 @@
          "text_cn": null,
          "before": 10.0,
          "after": 12.0,
-         "metric": "radius"
+         "metric": "radius",
+         "by": 2.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "radius"
         },
         {
          "text_en": "Time before degeneration reduced from 2 to 1.75 seconds.",
          "text_cn": null,
          "before": 2.0,
          "after": 1.75,
-         "metric": "time before degeneration"
+         "metric": "time before degeneration",
+         "by": -0.25,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "time before degeneration"
         }
        ]
       }
@@ -421,5 +472,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:4d332844bcd648aa22705f26ccfc9685c2f21cb53fe7bfa6c093df396a375dbd"
+ "hash": "sha256:eddd312106f0ccb470670d3d503afec7918dede5e7173d1381b968910b91ee69"
 }

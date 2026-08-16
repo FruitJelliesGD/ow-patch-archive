@@ -31,28 +31,44 @@
          "text_cn": null,
          "before": 0.45,
          "after": 0.38,
-         "metric": "recovery time"
+         "metric": "recovery",
+         "by": -0.07,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "recovery time"
         },
         {
          "text_en": "Damage reduced from 25 to 24",
          "text_cn": null,
          "before": 25.0,
          "after": 24.0,
-         "metric": "damage"
+         "metric": "damage",
+         "by": -1.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage"
         },
         {
          "text_en": "Recovery increased from 0.8 to 0.9 seconds",
          "text_cn": null,
          "before": 0.8,
          "after": 0.9,
-         "metric": "recovery"
+         "metric": "recovery",
+         "by": 0.1,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "recovery"
         },
         {
          "text_en": "Healing increased from 50 to 60",
          "text_cn": null,
          "before": 50.0,
          "after": 60.0,
-         "metric": "healing"
+         "metric": "healing",
+         "by": 10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "healing"
         }
        ]
       }
@@ -65,7 +81,18 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "Base health increased from 150 to 175"
+      {
+       "text_en": "Base health increased from 150 to 175",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 150.0,
+       "after": 175.0,
+       "by": 25.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -77,7 +104,18 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Base health increased from 200 to 225"
+      {
+       "text_en": "Base health increased from 200 to 225",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 200.0,
+       "after": 225.0,
+       "by": 25.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -91,7 +129,11 @@
          "text_cn": null,
          "before": 1.5,
          "after": 1.2,
-         "metric": "reload time"
+         "metric": "reload time",
+         "by": -0.3,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "reload time"
         }
        ]
       }
@@ -116,7 +158,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -128,9 +174,13 @@
         {
          "text_en": "Cooldown lowered from 13 to 12 seconds",
          "text_cn": null,
-         "before": null,
-         "after": null,
-         "metric": null
+         "before": 13.0,
+         "after": 12.0,
+         "metric": "cooldown",
+         "by": -1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       }
@@ -143,7 +193,18 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Base shields increased from 100 to 125"
+      {
+       "text_en": "Base shields increased from 100 to 125",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 100.0,
+       "after": 125.0,
+       "by": 25.0,
+       "by_pct": null,
+       "metric": "base shields",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -155,7 +216,18 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Base health reduced from 200 to 175"
+      {
+       "text_en": "Base health reduced from 200 to 175",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 200.0,
+       "after": 175.0,
+       "by": -25.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -165,5 +237,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:84332a9e68e80b887f5a6d57ae1c447670723faed23bf4797e42ac575bf5a31f"
+ "hash": "sha256:193eb0dde4e12c5169bad7f6a99ad0655ea0ed44746d65cf38797dd911416fe4"
 }

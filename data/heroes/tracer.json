@@ -13,6 +13,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/08/",
    "patch_title": "《守望先锋》补丁说明——2026年8月12日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "recall",
    "ability_en": "Recall",
    "ability_cn": "闪回",
@@ -20,7 +21,10 @@
    "text_cn": "冷却时间从13秒缩短至12秒。",
    "before": 13.0,
    "after": 12.0,
-   "metric": "冷却时间"
+   "by": -1.0,
+   "by_pct": null,
+   "metric": "cooldown",
+   "unit": "s"
   },
   {
    "patch": "cn-2026-08-12-1",
@@ -29,6 +33,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/08/",
    "patch_title": "《守望先锋》补丁说明——2026年8月12日",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "chronal-dash",
    "perk_en": null,
    "perk_cn": "时空疾冲",
@@ -45,6 +50,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/08/",
    "patch_title": "《守望先锋》补丁说明——2026年8月12日",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "temporal-regen",
    "perk_en": null,
    "perk_cn": "时空恢复",
@@ -61,9 +67,14 @@
    "site": "cn",
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/08/",
    "patch_title": "《守望先锋》补丁说明——2026年8月12日",
-   "kind": "general",
-   "text_en": null,
-   "text_cn": "口袋炸弹——异能"
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "hero-d60862bc",
+   "perk_en": null,
+   "perk_cn": "口袋炸弹",
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
   },
   {
    "patch": "cn-2026-08-12-1",
@@ -72,8 +83,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/08/",
    "patch_title": "《守望先锋》补丁说明——2026年8月12日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "“脉冲炸弹”伤害降低效果从60%降低至70%。"
+   "text_cn": "“脉冲炸弹”伤害降低效果从60%降低至70%。",
+   "before": 60.0,
+   "after": 70.0,
+   "by": 10.0,
+   "by_pct": null,
+   "metric": "damage",
+   "unit": "pct"
   },
   {
    "patch": "en-2026-08-11-1",
@@ -82,6 +101,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/08",
    "patch_title": "Overwatch Retail Patch Notes – August 11, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "recall",
    "ability_en": "Recall",
    "ability_cn": "闪回",
@@ -89,7 +109,10 @@
    "text_cn": null,
    "before": 13.0,
    "after": 12.0,
-   "metric": "cooldown"
+   "by": -1.0,
+   "by_pct": null,
+   "metric": "cooldown",
+   "unit": "s"
   },
   {
    "patch": "en-2026-08-11-1",
@@ -98,6 +121,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/08",
    "patch_title": "Overwatch Retail Patch Notes – August 11, 2026",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "chronal-dash",
    "perk_en": "Chronal Dash",
    "perk_cn": null,
@@ -114,6 +138,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/08",
    "patch_title": "Overwatch Retail Patch Notes – August 11, 2026",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "temporal-regen",
    "perk_en": "Temporal Regen",
    "perk_cn": null,
@@ -130,9 +155,14 @@
    "site": "en",
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/08",
    "patch_title": "Overwatch Retail Patch Notes – August 11, 2026",
-   "kind": "general",
-   "text_en": "Impulsive - Power",
-   "text_cn": null
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "impulsive",
+   "perk_en": "Impulsive",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
   },
   {
    "patch": "en-2026-08-11-1",
@@ -141,8 +171,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/08",
    "patch_title": "Overwatch Retail Patch Notes – August 11, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Pulse Bomb Damage decreased to 70% reduced (Down from 60% reduced).",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-07-01-1",
@@ -151,6 +189,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "recall",
    "ability_en": "Recall",
    "ability_cn": "闪回",
@@ -158,7 +197,10 @@
    "text_cn": "激活时，为5米内的所有盟友提供可以使用“闪回”的选项，持续5秒。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-07-01-1",
@@ -167,6 +209,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "pulse-bomb",
    "ability_en": "Pulse Bomb",
    "ability_cn": "脉冲炸弹",
@@ -174,7 +217,10 @@
    "text_cn": "敌人现在可以射击附着的“脉冲炸弹”，将其打落。附着的“脉冲炸弹”受到150点伤害后便会掉落。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-07-01-1",
@@ -183,6 +229,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "pulse-bomb",
    "ability_en": "Pulse Bomb",
    "ability_cn": "脉冲炸弹",
@@ -190,7 +237,10 @@
    "text_cn": "爆炸延迟时间从1秒延长至3秒。",
    "before": 1.0,
    "after": 3.0,
-   "metric": "爆炸延迟时间"
+   "by": 2.0,
+   "by_pct": null,
+   "metric": "爆炸延迟时间",
+   "unit": "s"
   },
   {
    "patch": "cn-2026-07-01-1",
@@ -199,6 +249,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "pulse-bomb",
    "ability_en": "Pulse Bomb",
    "ability_cn": "脉冲炸弹",
@@ -206,7 +257,10 @@
    "text_cn": "爆炸范围从4米扩大至7米。",
    "before": 4.0,
    "after": 7.0,
-   "metric": "爆炸范围"
+   "by": 3.0,
+   "by_pct": null,
+   "metric": "爆炸范围",
+   "unit": "m"
   },
   {
    "patch": "cn-2026-07-01-1",
@@ -215,6 +269,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "pulse-bomb",
    "ability_en": "Pulse Bomb",
    "ability_cn": "脉冲炸弹",
@@ -222,7 +277,10 @@
    "text_cn": "对被附着的敌人造成的伤害从350点提高至9999点。",
    "before": 350.0,
    "after": 9999.0,
-   "metric": "对被附着的敌人造成的伤害"
+   "by": 9649.0,
+   "by_pct": null,
+   "metric": "对被附着的敌人造成的伤害",
+   "unit": "hp"
   },
   {
    "patch": "cn-2026-07-01-1",
@@ -231,6 +289,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "pulse-bomb",
    "ability_en": "Pulse Bomb",
    "ability_cn": "脉冲炸弹",
@@ -238,7 +297,25 @@
    "text_cn": "对被附着的敌人造成的伤害无视受伤减免。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "cn-2026-07-01-1",
+   "date": "2026-07-01",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
+   "patch_title": "《守望先锋》补丁说明——2026年7月1日",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "blink-packs",
+   "perk_en": null,
+   "perk_cn": "闪现急救包",
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
   },
   {
    "patch": "cn-2026-07-01-1",
@@ -247,18 +324,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月1日",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "ultimate_cost",
    "text_en": null,
-   "text_cn": "闪现急救包——威能"
-  },
-  {
-   "patch": "cn-2026-07-01-1",
-   "date": "2026-07-01",
-   "site": "cn",
-   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
-   "patch_title": "《守望先锋》补丁说明——2026年7月1日",
-   "kind": "general",
-   "text_en": null,
-   "text_cn": "改为充能急救包：拾取急救包会提供10%终极技能充能。"
+   "text_cn": "改为充能急救包：拾取急救包会提供10%终极技能充能。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-30-1",
@@ -267,6 +342,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 30, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "recall",
    "ability_en": "Recall",
    "ability_cn": "闪回",
@@ -274,7 +350,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-30-1",
@@ -283,6 +362,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 30, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "pulse-bomb",
    "ability_en": "Pulse Bomb",
    "ability_cn": "脉冲炸弹",
@@ -290,7 +370,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-30-1",
@@ -299,6 +382,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 30, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "pulse-bomb",
    "ability_en": "Pulse Bomb",
    "ability_cn": "脉冲炸弹",
@@ -306,7 +390,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-30-1",
@@ -315,6 +402,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 30, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "pulse-bomb",
    "ability_en": "Pulse Bomb",
    "ability_cn": "脉冲炸弹",
@@ -322,7 +410,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-30-1",
@@ -331,6 +422,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 30, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "pulse-bomb",
    "ability_en": "Pulse Bomb",
    "ability_cn": "脉冲炸弹",
@@ -338,7 +430,10 @@
    "text_cn": null,
    "before": 350.0,
    "after": 9999.0,
-   "metric": "damage to stuck enemies"
+   "by": 9649.0,
+   "by_pct": null,
+   "metric": "damage",
+   "unit": null
   },
   {
    "patch": "en-2026-06-30-1",
@@ -347,6 +442,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 30, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "pulse-bomb",
    "ability_en": "Pulse Bomb",
    "ability_cn": "脉冲炸弹",
@@ -354,7 +450,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-30-1",
@@ -363,6 +462,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 30, 2026",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "blink-packs",
    "perk_en": "Blink Packs",
    "perk_cn": null,
@@ -379,7 +479,8 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "perk",
-   "perk_slug": "kinetic-reload",
+   "dimension": "perk",
+   "perk_slug": "blink-hop",
    "perk_en": null,
    "perk_cn": "动能装填",
    "status": "changed",
@@ -395,8 +496,241 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "获得的弹药从20发减少至12发。"
+   "text_cn": "获得的弹药从20发减少至12发。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "cn-2026-06-17-1",
+   "date": "2026-06-17",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
+   "patch_title": "《守望先锋》补丁说明——2026年6月17日",
+   "kind": "ability",
+   "dimension": "weapon",
+   "ability_slug": "pulse-pistols",
+   "ability_en": "Pulse Pistols",
+   "ability_cn": "脉冲双枪",
+   "text_en": null,
+   "text_cn": "[脉冲双枪]基础伤害从5.75点降低至5.25点。",
+   "before": 5.75,
+   "after": 5.25,
+   "by": -0.5,
+   "by_pct": null,
+   "metric": "damage",
+   "unit": "hp"
+  },
+  {
+   "patch": "cn-2026-06-17-1",
+   "date": "2026-06-17",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
+   "patch_title": "《守望先锋》补丁说明——2026年6月17日",
+   "kind": "ability",
+   "dimension": "ability",
+   "ability_slug": "blink",
+   "ability_en": "Blink",
+   "ability_cn": "闪现",
+   "text_en": null,
+   "text_cn": "[闪现]的传送距离扩大3米。在空中使用[闪现]时，可以进行一次当空跳跃，并使[闪现]的冷却时间缩短0.2秒。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "cn-2026-06-17-1",
+   "date": "2026-06-17",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
+   "patch_title": "《守望先锋》补丁说明——2026年6月17日",
+   "kind": "ability",
+   "dimension": "ability",
+   "ability_slug": "recall",
+   "ability_en": "Recall",
+   "ability_cn": "闪回",
+   "text_en": null,
+   "text_cn": "[闪回]时获得会随时间衰减的弹药，数值为最大弹药的100%。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "cn-2026-06-17-1",
+   "date": "2026-06-17",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
+   "patch_title": "《守望先锋》补丁说明——2026年6月17日",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "hero-6b5ae503",
+   "perk_en": null,
+   "perk_cn": "闪现一跃",
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "cn-2026-06-17-1",
+   "date": "2026-06-17",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
+   "patch_title": "《守望先锋》补丁说明——2026年6月17日",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "hero-2fa17b4d",
+   "perk_en": null,
+   "perk_cn": "夺目一闪",
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "cn-2026-06-17-1",
+   "date": "2026-06-17",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
+   "patch_title": "《守望先锋》补丁说明——2026年6月17日",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "hero-13ffd3fc",
+   "perk_en": null,
+   "perk_cn": "子弹时间",
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "cn-2026-06-17-1",
+   "date": "2026-06-17",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
+   "patch_title": "《守望先锋》补丁说明——2026年6月17日",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "hero-cd87acbf",
+   "perk_en": null,
+   "perk_cn": "时空稳定器",
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "cn-2026-06-17-1",
+   "date": "2026-06-17",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
+   "patch_title": "《守望先锋》补丁说明——2026年6月17日",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "hero-fd2db631",
+   "perk_en": null,
+   "perk_cn": "快闪一拳",
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "cn-2026-06-17-1",
+   "date": "2026-06-17",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
+   "patch_title": "《守望先锋》补丁说明——2026年6月17日",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "hero-441f976a",
+   "perk_en": null,
+   "perk_cn": "预见未来",
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "cn-2026-06-17-1",
+   "date": "2026-06-17",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
+   "patch_title": "《守望先锋》补丁说明——2026年6月17日",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "hero-55f98a4f",
+   "perk_en": null,
+   "perk_cn": "拳力充沛！",
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "cn-2026-06-17-1",
+   "date": "2026-06-17",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
+   "patch_title": "《守望先锋》补丁说明——2026年6月17日",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "hero-d60862bc",
+   "perk_en": null,
+   "perk_cn": "口袋炸弹",
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "cn-2026-06-17-1",
+   "date": "2026-06-17",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
+   "patch_title": "《守望先锋》补丁说明——2026年6月17日",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "hero-f9689c8c",
+   "perk_en": null,
+   "perk_cn": "量子装填",
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "cn-2026-06-17-1",
+   "date": "2026-06-17",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
+   "patch_title": "《守望先锋》补丁说明——2026年6月17日",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "hero-899c3188",
+   "perk_en": null,
+   "perk_cn": "时光之门",
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "cn-2026-06-17-1",
+   "date": "2026-06-17",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
+   "patch_title": "《守望先锋》补丁说明——2026年6月17日",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "hero-69f9d4c4",
+   "perk_en": null,
+   "perk_cn": "竞速高手",
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -405,8 +739,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "通过造成伤害和提供治疗获得的角斗资金提高14.3%。"
+   "text_cn": "通过造成伤害和提供治疗获得的角斗资金提高14.3%。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 14.3,
+   "metric": "通过造成伤害和提供治疗获得的角斗资金",
+   "unit": null
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -415,8 +757,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "[脉冲双枪]基础伤害从5.75点降低至5.25点。"
+   "text_cn": "新增",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -425,8 +775,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "闪现一跃——异能"
+   "text_cn": "已移除",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -435,8 +793,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "新增"
+   "text_cn": "现在也会使力场内的敌人减速20%。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -445,8 +811,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "[闪现]的传送距离扩大3米。在空中使用[闪现]时，可以进行一次当空跳跃，并使[闪现]的冷却时间缩短0.2秒。"
+   "text_cn": "新增",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -455,8 +829,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": null,
-   "text_cn": "夺目一闪——异能"
+   "text_cn": "使用[闪现]后，为6米内的所有盟友治疗40点生命值，并为自身治疗10点生命值。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -465,8 +847,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "已移除"
+   "text_cn": "额外伤害从10点提高至25点。",
+   "before": 10.0,
+   "after": 25.0,
+   "by": 15.0,
+   "by_pct": null,
+   "metric": "额外伤害",
+   "unit": "hp"
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -475,8 +865,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "子弹时间——异能"
+   "text_cn": "已移除",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -485,8 +883,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "现在也会使力场内的敌人减速20%。"
+   "text_cn": "添加效果：使[闪回]冷却时间缩短2秒。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -495,8 +901,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "时空稳定器——异能"
+   "text_cn": "现在引爆速度加快50%。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -505,8 +919,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "新增"
+   "text_cn": "新增",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -515,8 +937,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "使用[闪现]后，为6米内的所有盟友治疗40点生命值，并为自身治疗10点生命值。"
+   "text_cn": "原效果：[闪回]会留下一道时光之门。盟友可与时光之门互动，回溯到3秒之前。新效果：[闪回]会留下一道时光之门，持续3秒。最多3名盟友可与其互动一次，[闪回]到1秒之前。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -525,8 +955,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "快闪一拳——异能"
+   "text_cn": "“猎空”现在可以与她自己的时光之门互动。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -535,8 +973,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "额外伤害从10点提高至25点。"
+   "text_cn": "已移除",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -545,8 +991,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "预见未来——异能"
+   "text_cn": "时域炸弹——史诗技能英雄物品",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -555,8 +1009,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "已移除"
+   "text_cn": "费用从10500提高至11000。",
+   "before": 10500.0,
+   "after": 11000.0,
+   "by": 500.0,
+   "by_pct": null,
+   "metric": "费用",
+   "unit": null
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -565,8 +1027,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "拳力充沛！——异能"
+   "text_cn": "添加效果：10%武器强度。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -575,8 +1045,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "添加效果：使[闪回]冷却时间缩短2秒。"
+   "text_cn": "技能强度从20%降低至15%。",
+   "before": 20.0,
+   "after": 15.0,
+   "by": -5.0,
+   "by_pct": null,
+   "metric": "技能强度",
+   "unit": "pct"
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -585,148 +1063,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "move_speed",
    "text_en": null,
-   "text_cn": "口袋炸弹——异能"
-  },
-  {
-   "patch": "cn-2026-06-17-1",
-   "date": "2026-06-17",
-   "site": "cn",
-   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
-   "patch_title": "《守望先锋》补丁说明——2026年6月17日",
-   "kind": "general",
-   "text_en": null,
-   "text_cn": "现在引爆速度加快50%。"
-  },
-  {
-   "patch": "cn-2026-06-17-1",
-   "date": "2026-06-17",
-   "site": "cn",
-   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
-   "patch_title": "《守望先锋》补丁说明——2026年6月17日",
-   "kind": "general",
-   "text_en": null,
-   "text_cn": "量子装填——异能"
-  },
-  {
-   "patch": "cn-2026-06-17-1",
-   "date": "2026-06-17",
-   "site": "cn",
-   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
-   "patch_title": "《守望先锋》补丁说明——2026年6月17日",
-   "kind": "general",
-   "text_en": null,
-   "text_cn": "新增"
-  },
-  {
-   "patch": "cn-2026-06-17-1",
-   "date": "2026-06-17",
-   "site": "cn",
-   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
-   "patch_title": "《守望先锋》补丁说明——2026年6月17日",
-   "kind": "general",
-   "text_en": null,
-   "text_cn": "[闪回]时获得会随时间衰减的弹药，数值为最大弹药的100%。"
-  },
-  {
-   "patch": "cn-2026-06-17-1",
-   "date": "2026-06-17",
-   "site": "cn",
-   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
-   "patch_title": "《守望先锋》补丁说明——2026年6月17日",
-   "kind": "general",
-   "text_en": null,
-   "text_cn": "时光之门——异能"
-  },
-  {
-   "patch": "cn-2026-06-17-1",
-   "date": "2026-06-17",
-   "site": "cn",
-   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
-   "patch_title": "《守望先锋》补丁说明——2026年6月17日",
-   "kind": "general",
-   "text_en": null,
-   "text_cn": "原效果：[闪回]会留下一道时光之门。盟友可与时光之门互动，回溯到3秒之前。新效果：[闪回]会留下一道时光之门，持续3秒。最多3名盟友可与其互动一次，[闪回]到1秒之前。"
-  },
-  {
-   "patch": "cn-2026-06-17-1",
-   "date": "2026-06-17",
-   "site": "cn",
-   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
-   "patch_title": "《守望先锋》补丁说明——2026年6月17日",
-   "kind": "general",
-   "text_en": null,
-   "text_cn": "“猎空”现在可以与她自己的时光之门互动。"
-  },
-  {
-   "patch": "cn-2026-06-17-1",
-   "date": "2026-06-17",
-   "site": "cn",
-   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
-   "patch_title": "《守望先锋》补丁说明——2026年6月17日",
-   "kind": "general",
-   "text_en": null,
-   "text_cn": "竞速高手——异能"
-  },
-  {
-   "patch": "cn-2026-06-17-1",
-   "date": "2026-06-17",
-   "site": "cn",
-   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
-   "patch_title": "《守望先锋》补丁说明——2026年6月17日",
-   "kind": "general",
-   "text_en": null,
-   "text_cn": "已移除"
-  },
-  {
-   "patch": "cn-2026-06-17-1",
-   "date": "2026-06-17",
-   "site": "cn",
-   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
-   "patch_title": "《守望先锋》补丁说明——2026年6月17日",
-   "kind": "general",
-   "text_en": null,
-   "text_cn": "时域炸弹——史诗技能英雄物品"
-  },
-  {
-   "patch": "cn-2026-06-17-1",
-   "date": "2026-06-17",
-   "site": "cn",
-   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
-   "patch_title": "《守望先锋》补丁说明——2026年6月17日",
-   "kind": "general",
-   "text_en": null,
-   "text_cn": "费用从10500提高至11000。"
-  },
-  {
-   "patch": "cn-2026-06-17-1",
-   "date": "2026-06-17",
-   "site": "cn",
-   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
-   "patch_title": "《守望先锋》补丁说明——2026年6月17日",
-   "kind": "general",
-   "text_en": null,
-   "text_cn": "添加效果：10%武器强度。"
-  },
-  {
-   "patch": "cn-2026-06-17-1",
-   "date": "2026-06-17",
-   "site": "cn",
-   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
-   "patch_title": "《守望先锋》补丁说明——2026年6月17日",
-   "kind": "general",
-   "text_en": null,
-   "text_cn": "技能强度从20%降低至15%。"
-  },
-  {
-   "patch": "cn-2026-06-17-1",
-   "date": "2026-06-17",
-   "site": "cn",
-   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
-   "patch_title": "《守望先锋》补丁说明——2026年6月17日",
-   "kind": "general",
-   "text_en": null,
-   "text_cn": "原效果：被[脉冲炸弹]附着或命中的敌人会减速30%，并使其攻击速度加成损失30%，持续2秒。新效果：从被[脉冲炸弹]附着或命中的敌人处汲取20%攻击速度和20%移动速度，持续3秒。"
+   "text_cn": "原效果：被[脉冲炸弹]附着或命中的敌人会减速30%，并使其攻击速度加成损失30%，持续2秒。新效果：从被[脉冲炸弹]附着或命中的敌人处汲取20%攻击速度和20%移动速度，持续3秒。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -735,8 +1081,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Kinetic Reload – Minor Perk Ammo gain reduced from 20 to 12.",
-   "text_cn": null
+   "text_cn": null,
+   "before": 20.0,
+   "after": 12.0,
+   "by": -8.0,
+   "by_pct": null,
+   "metric": "minor perk ammo gain",
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -745,8 +1099,181 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Ammo gain reduced from 20 to 12.",
-   "text_cn": null
+   "text_cn": null,
+   "before": 20.0,
+   "after": 12.0,
+   "by": -8.0,
+   "by_pct": null,
+   "metric": "ammo",
+   "unit": null
+  },
+  {
+   "patch": "en-2026-06-16-1",
+   "date": "2026-06-16",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
+   "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "blink-hop",
+   "perk_en": "Blink Hop",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "en-2026-06-16-1",
+   "date": "2026-06-16",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
+   "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "blink-of-an-eye",
+   "perk_en": "Blink of an Eye",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "en-2026-06-16-1",
+   "date": "2026-06-16",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
+   "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "bullet-time",
+   "perk_en": "Bullet Time",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "en-2026-06-16-1",
+   "date": "2026-06-16",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
+   "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "chrono-stabilizer",
+   "perk_en": "Chrono Stabilizer",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "en-2026-06-16-1",
+   "date": "2026-06-16",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
+   "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "flash-fist",
+   "perk_en": "Flash Fist",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "en-2026-06-16-1",
+   "date": "2026-06-16",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
+   "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "foresight",
+   "perk_en": "Foresight",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "en-2026-06-16-1",
+   "date": "2026-06-16",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
+   "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "get-stuffed",
+   "perk_en": "Get Stuffed",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "en-2026-06-16-1",
+   "date": "2026-06-16",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
+   "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "impulsive",
+   "perk_en": "Impulsive",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "en-2026-06-16-1",
+   "date": "2026-06-16",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
+   "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "quantum-reload",
+   "perk_en": "Quantum Reload",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "en-2026-06-16-1",
+   "date": "2026-06-16",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
+   "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "temportal",
+   "perk_en": "Temportal",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "en-2026-06-16-1",
+   "date": "2026-06-16",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
+   "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "t-racer",
+   "perk_en": "T.Racer",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
   },
   {
    "patch": "en-2026-06-16-1",
@@ -755,8 +1282,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Currency from damage and healing increased by 14.3%.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 14.3,
+   "metric": "currency from damage and healing",
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -765,8 +1300,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "base_stat",
    "text_en": "Pulse Pistols base damage reduced to 5.25 (Down from 5.75).",
-   "text_cn": null
+   "text_cn": null,
+   "before": 5.75,
+   "after": 5.25,
+   "by": -0.5,
+   "by_pct": null,
+   "metric": "pulse pistols base damage",
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -775,18 +1318,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
-   "text_en": "Blink Hop - Power",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2026-06-16-1",
-   "date": "2026-06-16",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
-   "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
-   "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "New",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -795,8 +1336,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "\"[Blink] teleports you 3m farther. If you use [Blink] while airborne, gain an air jump and reduce [Blink] cooldown by 0.2s.\"",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -805,18 +1354,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
-   "text_en": "Blink of an Eye - Power",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2026-06-16-1",
-   "date": "2026-06-16",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
-   "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
-   "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Removed.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -825,18 +1372,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
-   "text_en": "Bullet Time - Power",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2026-06-16-1",
-   "date": "2026-06-16",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
-   "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
-   "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Now also slows enemies within the field by 20%.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -845,18 +1390,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
-   "text_en": "Chrono Stabilizer - Power",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2026-06-16-1",
-   "date": "2026-06-16",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
-   "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
-   "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "New",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -865,8 +1408,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "\"After you use [Blink], heal allies within 6m for 40(AP) and yourself for 10(AP).\"",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -875,18 +1426,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
-   "text_en": "Flash Fist - Power",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2026-06-16-1",
-   "date": "2026-06-16",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
-   "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
-   "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Bonus Damage increased to 25 (Up from 10).",
-   "text_cn": null
+   "text_cn": null,
+   "before": 10.0,
+   "after": 25.0,
+   "by": 15.0,
+   "by_pct": null,
+   "metric": "bonus damage",
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -895,18 +1444,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
-   "text_en": "Foresight - Power",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2026-06-16-1",
-   "date": "2026-06-16",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
-   "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
-   "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Removed",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -915,18 +1462,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
-   "text_en": "Get Stuffed - Power",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2026-06-16-1",
-   "date": "2026-06-16",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
-   "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
-   "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Added \"reduces [Recall] cooldown by 2s.\"",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -935,18 +1480,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
-   "text_en": "Impulsive - Power",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2026-06-16-1",
-   "date": "2026-06-16",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
-   "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
-   "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Now also detonates 50% faster.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -955,18 +1498,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
-   "text_en": "Quantum Reload - Power",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2026-06-16-1",
-   "date": "2026-06-16",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
-   "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
-   "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "New",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -975,8 +1516,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "\"When you [Recall], gain Ammo equal to 100% of Max Ammo that decays over time.\"",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -985,18 +1534,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
-   "text_en": "Temportal - Power",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2026-06-16-1",
-   "date": "2026-06-16",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
-   "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
-   "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Reworked from \"Your recall leaves a time portal. Allies can interact with it to recall back 3s\" to \"[Recalling] for 3s leaves behind a Temporal Portal. Up to 3 allies can [Interact] with it once to [Recall] back in time 1s\".",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -1005,8 +1552,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Tracer can now interact with her own Temporal Portal.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -1015,18 +1570,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
-   "text_en": "T.Racer - Power",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2026-06-16-1",
-   "date": "2026-06-16",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
-   "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
-   "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Removed.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -1035,8 +1588,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Chrono Bomb - Epic Hero Ability Item",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -1045,8 +1606,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Cost increased to 11000 (Up from 10500).",
-   "text_cn": null
+   "text_cn": null,
+   "before": 10500.0,
+   "after": 11000.0,
+   "by": 500.0,
+   "by_pct": null,
+   "metric": "cost",
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -1055,8 +1624,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Added 10% Weapon Power.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -1065,8 +1642,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Reduced Ability Power to 15% (Down from 20%).",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -1075,8 +1660,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Reworked from \"Enemies stuck or hit by Pulse Bomb are slowed by 30% and lose 30% bonus Attack speed for 2s\" to \"Steal 20% Attack Speed and 20% Move Speed from enemies stuck or hit by [Pulse Bomb] for 3s\".",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-04-15-1",
@@ -1085,8 +1678,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/04/",
    "patch_title": "《守望先锋》补丁说明——2026年4月15日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "次级威能消耗降低10%。"
+   "text_cn": "次级威能消耗降低10%。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 10.0,
+   "metric": "次级威能消耗",
+   "unit": null
   },
   {
    "patch": "cn-2026-04-15-1",
@@ -1095,8 +1696,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/04/",
    "patch_title": "《守望先锋》补丁说明——2026年4月15日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "主要威能消耗降低7%。"
+   "text_cn": "主要威能消耗降低7%。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 7.0,
+   "metric": "主要威能消耗",
+   "unit": null
   },
   {
    "patch": "en-2026-04-14-1",
@@ -1105,8 +1714,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/04",
    "patch_title": "Overwatch Retail Patch Notes - April 14, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Minor Perk cost reduced by 10%.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 10.0,
+   "metric": "minor perk cost",
+   "unit": null
   },
   {
    "patch": "en-2026-04-14-1",
@@ -1115,8 +1732,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/04",
    "patch_title": "Overwatch Retail Patch Notes - April 14, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Major Perk cost reduced by 7%.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 7.0,
+   "metric": "major perk cost",
+   "unit": null
   },
   {
    "patch": "en-2026-04-01-1",
@@ -1125,6 +1750,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/04",
    "patch_title": "Overwatch Retail Patch Notes - April 1, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "blink",
    "ability_en": "Blink",
    "ability_cn": "闪现",
@@ -1132,7 +1758,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-04-01-1",
@@ -1141,6 +1770,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/04/",
    "patch_title": "《守望先锋》补丁说明——2026年4月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "blink",
    "ability_en": "Blink",
    "ability_cn": "闪现",
@@ -1148,7 +1778,10 @@
    "text_cn": "距离提升至100米.",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-02-09-1",
@@ -1157,6 +1790,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/02",
    "patch_title": "Overwatch Retail Patch Notes - February 10, 2026",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "chronal-dash",
    "perk_en": "Chronal Dash",
    "perk_cn": null,
@@ -1173,6 +1807,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/02",
    "patch_title": "Overwatch Retail Patch Notes - February 10, 2026",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "flashback",
    "perk_en": "Flashback",
    "perk_cn": null,
@@ -1189,6 +1824,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/02",
    "patch_title": "Overwatch Retail Patch Notes - February 10, 2026",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "blink-packs",
    "perk_en": "Blink Packs",
    "perk_cn": null,
@@ -1205,8 +1841,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/02",
    "patch_title": "Overwatch Retail Patch Notes - February 10, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Pulse Pistols",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-02-09-1",
@@ -1215,8 +1859,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/02",
    "patch_title": "Overwatch Retail Patch Notes - February 10, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Damage reduced from 6 to 5.75.",
-   "text_cn": null
+   "text_cn": null,
+   "before": 6.0,
+   "after": 5.75,
+   "by": -0.25,
+   "by_pct": null,
+   "metric": "damage",
+   "unit": null
   },
   {
    "patch": "en-2026-02-09-1",
@@ -1225,8 +1877,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/02",
    "patch_title": "Overwatch Retail Patch Notes - February 10, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Gains the increased global projectile size (0.04 meters).",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-10-15-1",
@@ -1235,6 +1895,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/10/",
    "patch_title": "《守望先锋》补丁说明——2025年10月15日",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "flashback",
    "perk_en": null,
    "perk_cn": "飞速闪回",
@@ -1252,6 +1913,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/10",
    "patch_title": "Overwatch 2 Retail Patch Notes – October 14, 2025",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "flashback",
    "perk_en": "Flashback",
    "perk_cn": null,
@@ -1268,9 +1930,59 @@
    "site": "en",
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/10",
    "patch_title": "Overwatch 2 Retail Patch Notes - October 1, 2025",
-   "kind": "general",
-   "text_en": "Chronal Crux - Stadium Passive",
-   "text_cn": null
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "alternate-ending",
+   "perk_en": "Alternate Ending",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "en-2025-10-01-1",
+   "date": "2025-10-01",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/10",
+   "patch_title": "Overwatch 2 Retail Patch Notes - October 1, 2025",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "blink-of-an-eye",
+   "perk_en": "Blink of An Eye",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "en-2025-10-01-1",
+   "date": "2025-10-01",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/10",
+   "patch_title": "Overwatch 2 Retail Patch Notes - October 1, 2025",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "foresight",
+   "perk_en": "Foresight",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "en-2025-10-01-1",
+   "date": "2025-10-01",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/10",
+   "patch_title": "Overwatch 2 Retail Patch Notes - October 1, 2025",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "temportal",
+   "perk_en": "Temportal",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
   },
   {
    "patch": "en-2025-10-01-1",
@@ -1279,8 +1991,34 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/10",
    "patch_title": "Overwatch 2 Retail Patch Notes - October 1, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
+   "text_en": "Chronal Crux - Stadium Passive",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "en-2025-10-01-1",
+   "date": "2025-10-01",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/10",
+   "patch_title": "Overwatch 2 Retail Patch Notes - October 1, 2025",
+   "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": "Now gains 35% less Health, Armor, and Shields from items and cash (previously 25% less).",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-10-01-1",
@@ -1289,18 +2027,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/10",
    "patch_title": "Overwatch 2 Retail Patch Notes - October 1, 2025",
    "kind": "general",
-   "text_en": "Alternate Ending - Power",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-10-01-1",
-   "date": "2025-10-01",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/10",
-   "patch_title": "Overwatch 2 Retail Patch Notes - October 1, 2025",
-   "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Healing increased to 100% of damage taken (up from 75%).",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-10-01-1",
@@ -1309,18 +2045,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/10",
    "patch_title": "Overwatch 2 Retail Patch Notes - October 1, 2025",
    "kind": "general",
-   "text_en": "Blink of An Eye - Power",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-10-01-1",
-   "date": "2025-10-01",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/10",
-   "patch_title": "Overwatch 2 Retail Patch Notes - October 1, 2025",
-   "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Cooldown reduction reduced to 0.04s (down from 0.05s).",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-10-01-1",
@@ -1329,18 +2063,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/10",
    "patch_title": "Overwatch 2 Retail Patch Notes - October 1, 2025",
    "kind": "general",
-   "text_en": "Foresight - Power",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-10-01-1",
-   "date": "2025-10-01",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/10",
-   "patch_title": "Overwatch 2 Retail Patch Notes - October 1, 2025",
-   "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Auto-aim reduced to 4 shots (down from 6).",
-   "text_cn": null
+   "text_cn": null,
+   "before": 6.0,
+   "after": 4.0,
+   "by": -2.0,
+   "by_pct": null,
+   "metric": "auto-aim",
+   "unit": null
   },
   {
    "patch": "en-2025-10-01-1",
@@ -1349,18 +2081,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/10",
    "patch_title": "Overwatch 2 Retail Patch Notes - October 1, 2025",
    "kind": "general",
-   "text_en": "Temportal - Power",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-10-01-1",
-   "date": "2025-10-01",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/10",
-   "patch_title": "Overwatch 2 Retail Patch Notes - October 1, 2025",
-   "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Increased the portal's duration to 8s (up from 6s).",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-10-01-1",
@@ -1369,8 +2099,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/10",
    "patch_title": "Overwatch 2 Retail Patch Notes - October 1, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Chrono Bomb - Epic Ability Hero Item",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-10-01-1",
@@ -1379,8 +2117,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/10",
    "patch_title": "Overwatch 2 Retail Patch Notes - October 1, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Increased Ability Power to 20% (up from 15%).",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-10-01-1",
@@ -1389,8 +2135,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/10",
    "patch_title": "Overwatch 2 Retail Patch Notes - October 1, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Increased cost to 10500 (up from 10000).",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1399,8 +2153,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "威能消耗提高25%。"
+   "text_cn": "威能消耗提高25%。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 25.0,
+   "metric": "威能消耗",
+   "unit": null
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1408,9 +2170,14 @@
    "site": "cn",
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
-   "kind": "general",
-   "text_en": null,
-   "text_cn": "已加入角斗领域英雄阵容。"
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "hero-fd2db631",
+   "perk_en": null,
+   "perk_cn": "快闪一拳",
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1418,9 +2185,14 @@
    "site": "cn",
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
-   "kind": "general",
-   "text_en": null,
-   "text_cn": "时空症结——角斗领域被动"
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "hero-55f98a4f",
+   "perk_en": null,
+   "perk_cn": "拳力充沛！",
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1428,9 +2200,14 @@
    "site": "cn",
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
-   "kind": "general",
-   "text_en": null,
-   "text_cn": "从物品和资金中获得的生命值、护甲、护盾降低25%。"
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "hero-2fa17b4d",
+   "perk_en": null,
+   "perk_cn": "夺目一闪",
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1438,9 +2215,14 @@
    "site": "cn",
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
-   "kind": "general",
-   "text_en": null,
-   "text_cn": "快闪一拳——异能"
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "hero-efa9d7ac",
+   "perk_en": null,
+   "perk_cn": "量子弹夹",
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1448,9 +2230,14 @@
    "site": "cn",
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
-   "kind": "general",
-   "text_en": null,
-   "text_cn": "使用“闪现”后的1秒内，你的下一次快速近身攻击会受技能强度影响，造成10点额外伤害，并能击退敌人。"
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "hero-69f9d4c4",
+   "perk_en": null,
+   "perk_cn": "竞速高手",
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1458,9 +2245,14 @@
    "site": "cn",
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
-   "kind": "general",
-   "text_en": null,
-   "text_cn": "拳力充沛！——异能"
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "hero-925ac4e0",
+   "perk_en": null,
+   "perk_cn": "改写结局",
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1468,9 +2260,14 @@
    "site": "cn",
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
-   "kind": "general",
-   "text_en": null,
-   "text_cn": "快速近身攻击命中敌人提供5%终极技能充能。"
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "hero-21c9c5dc",
+   "perk_en": null,
+   "perk_cn": "自动闪回",
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1478,9 +2275,14 @@
    "site": "cn",
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
-   "kind": "general",
-   "text_en": null,
-   "text_cn": "夺目一闪——异能"
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "hero-13ffd3fc",
+   "perk_en": null,
+   "perk_cn": "子弹时间",
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1488,9 +2290,14 @@
    "site": "cn",
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
-   "kind": "general",
-   "text_en": null,
-   "text_cn": "造成暴击会使“闪现”的冷却时间缩短0.5秒。"
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "hero-899c3188",
+   "perk_en": null,
+   "perk_cn": "时光之门",
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1498,9 +2305,14 @@
    "site": "cn",
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
-   "kind": "general",
-   "text_en": null,
-   "text_cn": "量子弹夹——异能"
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "hero-441f976a",
+   "perk_en": null,
+   "perk_cn": "预见未来",
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1508,9 +2320,14 @@
    "site": "cn",
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
-   "kind": "general",
-   "text_en": null,
-   "text_cn": "在装填过程中使用“闪现”时，获得25%最大弹药和10%武器生命汲取，装填时重置。"
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "hero-0c96979c",
+   "perk_en": null,
+   "perk_cn": "聚焦连拍",
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1518,9 +2335,14 @@
    "site": "cn",
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
-   "kind": "general",
-   "text_en": null,
-   "text_cn": "竞速高手——异能"
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "hero-d60862bc",
+   "perk_en": null,
+   "perk_cn": "口袋炸弹",
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1529,8 +2351,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "“闪现”对你的传送距离扩大3米，并使你的移动速度加快10%，持续1秒。"
+   "text_cn": "已加入角斗领域英雄阵容。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1539,8 +2369,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "改写结局——异能"
+   "text_cn": "时空症结——角斗领域被动",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1549,8 +2387,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": null,
-   "text_cn": "使用“闪回”时，治疗6米内的所有盟友，治疗量为盟友在过去3秒内所受伤害量的75%。"
+   "text_cn": "从物品和资金中获得的生命值、护甲、护盾降低25%。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 25.0,
+   "metric": "shield",
+   "unit": null
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1559,8 +2405,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "自动闪回——异能"
+   "text_cn": "使用“闪现”后的1秒内，你的下一次快速近身攻击会受技能强度影响，造成10点额外伤害，并能击退敌人。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1569,8 +2423,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "ultimate_cost",
    "text_en": null,
-   "text_cn": "每回合一次，在即将阵亡时免于阵亡，并免费使用“闪回”。消耗终极技能充能会使“闪回”的冷却时间缩短50%。"
+   "text_cn": "快速近身攻击命中敌人提供5%终极技能充能。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1579,8 +2441,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "子弹时间——异能"
+   "text_cn": "造成暴击会使“闪现”的冷却时间缩短0.5秒。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1589,8 +2459,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "使用“闪回”时，留下一个能使弹道速度减慢95%的时间力场，持续6秒，并使你受到的即时命中伤害降低25%，持续3秒。"
+   "text_cn": "在装填过程中使用“闪现”时，获得25%最大弹药和10%武器生命汲取，装填时重置。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1599,8 +2477,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "move_speed",
    "text_en": null,
-   "text_cn": "时光之门——异能"
+   "text_cn": "“闪现”对你的传送距离扩大3米，并使你的移动速度加快10%，持续1秒。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1609,8 +2495,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "“闪回”会留下一道时光之门。盟友可与时光之门互动，回溯到3秒之前。"
+   "text_cn": "使用“闪回”时，治疗6米内的所有盟友，治疗量为盟友在过去3秒内所受伤害量的75%。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1619,8 +2513,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "ultimate_cost",
    "text_en": null,
-   "text_cn": "预见未来——异能"
+   "text_cn": "每回合一次，在即将阵亡时免于阵亡，并免费使用“闪回”。消耗终极技能充能会使“闪回”的冷却时间缩短50%。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 50.0,
+   "metric": "的冷却时间",
+   "unit": null
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1629,8 +2531,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "使用“闪现”后，你在2秒内的后续6发射击会自动瞄准10米内的目标。"
+   "text_cn": "使用“闪回”时，留下一个能使弹道速度减慢95%的时间力场，持续6秒，并使你受到的即时命中伤害降低25%，持续3秒。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 25.0,
+   "metric": "并使你受到的即时命中伤害",
+   "unit": null
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1639,8 +2549,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "聚焦连拍——异能"
+   "text_cn": "“闪回”会留下一道时光之门。盟友可与时光之门互动，回溯到3秒之前。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1649,8 +2567,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "连续2次成功命中同一目标后，会在2秒内造成1点额外伤害。"
+   "text_cn": "使用“闪现”后，你在2秒内的后续6发射击会自动瞄准10米内的目标。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1659,8 +2585,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "口袋炸弹——异能"
+   "text_cn": "连续2次成功命中同一目标后，会在2秒内造成1点额外伤害。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1669,8 +2603,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "使用“闪回”时，扔出一枚伤害量降低60%的“脉冲炸弹”。"
+   "text_cn": "使用“闪回”时，扔出一枚伤害量降低60%的“脉冲炸弹”。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 60.0,
+   "metric": "扔出一枚伤害量",
+   "unit": null
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1679,8 +2621,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "脉冲探测器——稀有武器英雄物品"
+   "text_cn": "脉冲探测器——稀有武器英雄物品",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1689,8 +2639,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "10%武器强度。"
+   "text_cn": "10%武器强度。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1699,8 +2657,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "10%最大弹药。"
+   "text_cn": "10%最大弹药。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1709,8 +2675,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "被“脉冲双枪”命中的最后一名敌人会显示位置，持续1秒。"
+   "text_cn": "被“脉冲双枪”命中的最后一名敌人会显示位置，持续1秒。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1719,8 +2693,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "费用：5500。"
+   "text_cn": "费用：5500。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1729,8 +2711,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "地下世界快速装弹器——史诗武器英雄物品"
+   "text_cn": "地下世界快速装弹器——史诗武器英雄物品",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1739,8 +2729,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "10%武器强度。"
+   "text_cn": "10%武器强度。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1749,8 +2747,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "10%攻击速度。"
+   "text_cn": "10%攻击速度。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1759,8 +2765,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "“脉冲双枪”命中会使装填速度加快1%，可叠加30次。装填时重置。"
+   "text_cn": "“脉冲双枪”命中会使装填速度加快1%，可叠加30次。装填时重置。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1769,8 +2783,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "费用：12000。"
+   "text_cn": "费用：12000。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1779,8 +2801,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "降阻装置——稀有技能英雄物品"
+   "text_cn": "降阻装置——稀有技能英雄物品",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1789,8 +2819,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "10%技能强度。"
+   "text_cn": "10%技能强度。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1799,8 +2837,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "100%“脉冲炸弹”投掷距离。"
+   "text_cn": "100%“脉冲炸弹”投掷距离。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1809,8 +2855,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "费用：4000。"
+   "text_cn": "费用：4000。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1819,8 +2873,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "时域炸弹——史诗技能英雄物品"
+   "text_cn": "时域炸弹——史诗技能英雄物品",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1829,8 +2891,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "15%技能强度。"
+   "text_cn": "15%技能强度。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1839,8 +2909,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "50%“脉冲炸弹”爆炸半径。"
+   "text_cn": "50%“脉冲炸弹”爆炸半径。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1849,8 +2927,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "被“脉冲炸弹”附着或命中的敌人会减速30%，并使其攻击速度加成损失30%，持续2秒。"
+   "text_cn": "被“脉冲炸弹”附着或命中的敌人会减速30%，并使其攻击速度加成损失30%，持续2秒。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1859,8 +2945,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "费用：10000。"
+   "text_cn": "费用：10000。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1869,8 +2963,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "埃米莉的钟情——稀有生存英雄物品"
+   "text_cn": "埃米莉的钟情——稀有生存英雄物品",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1879,8 +2981,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": null,
-   "text_cn": "+19点生命值。"
+   "text_cn": "+19点生命值。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1889,8 +2999,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": null,
-   "text_cn": "使用“闪回”后，获得50点过量生命值，持续5秒。"
+   "text_cn": "使用“闪回”后，获得50点过量生命值，持续5秒。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1899,8 +3017,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "费用：4000。"
+   "text_cn": "费用：4000。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1909,8 +3035,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "伊基的点火器——稀有生存英雄物品"
+   "text_cn": "伊基的点火器——稀有生存英雄物品",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1919,8 +3053,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "5%攻击速度。"
+   "text_cn": "5%攻击速度。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1929,8 +3071,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "move_speed",
    "text_en": null,
-   "text_cn": "5%移动速度。"
+   "text_cn": "5%移动速度。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1939,8 +3089,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "在空中使用“闪现”时，可以进行一次当空跳跃。"
+   "text_cn": "在空中使用“闪现”时，可以进行一次当空跳跃。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1949,8 +3107,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "费用：3750。"
+   "text_cn": "费用：3750。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1959,8 +3125,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "定制跑鞋——史诗生存英雄物品"
+   "text_cn": "定制跑鞋——史诗生存英雄物品",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1969,8 +3143,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": null,
-   "text_cn": "+38点生命值。"
+   "text_cn": "+38点生命值。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1979,8 +3161,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "move_speed",
    "text_en": null,
-   "text_cn": "使用“闪现”时，自身和6米内盟友的移动速度加快10%，持续1秒。"
+   "text_cn": "使用“闪现”时，自身和6米内盟友的移动速度加快10%，持续1秒。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1989,8 +3179,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "费用：10000。"
+   "text_cn": "费用：10000。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -1999,8 +3197,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "奥克斯顿超速器——史诗生存英雄物品"
+   "text_cn": "奥克斯顿超速器——史诗生存英雄物品",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -2009,8 +3215,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": null,
-   "text_cn": "+19点生命值。"
+   "text_cn": "+19点生命值。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -2019,8 +3233,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "使用“闪回”时，“闪现”恢复2次充能。"
+   "text_cn": "使用“闪回”时，“闪现”恢复2次充能。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -2029,8 +3251,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "费用：10000。"
+   "text_cn": "费用：10000。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -2039,8 +3269,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "跃空药膏——史诗生存英雄物品"
+   "text_cn": "跃空药膏——史诗生存英雄物品",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -2049,8 +3287,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": null,
-   "text_cn": "+19点生命值。"
+   "text_cn": "+19点生命值。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -2059,8 +3305,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": null,
-   "text_cn": "“闪回”总会为你恢复生命值，恢复量至少为总生命值的70%。"
+   "text_cn": "“闪回”总会为你恢复生命值，恢复量至少为总生命值的70%。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-09-17-1",
@@ -2069,8 +3323,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/09/",
    "patch_title": "《守望先锋》补丁说明——2025年9月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "费用：10000。"
+   "text_cn": "费用：10000。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-09-16-1",
@@ -2079,8 +3341,196 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
    "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Perk cost increased by 25%.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 25.0,
+   "metric": "perk cost",
+   "unit": null
+  },
+  {
+   "patch": "en-2025-09-16-1",
+   "date": "2025-09-16",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
+   "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "flash-fist",
+   "perk_en": "Flash Fist",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "en-2025-09-16-1",
+   "date": "2025-09-16",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
+   "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "get-stuffed",
+   "perk_en": "Get Stuffed!",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "en-2025-09-16-1",
+   "date": "2025-09-16",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
+   "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "blink-of-an-eye",
+   "perk_en": "Blink of an Eye",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "en-2025-09-16-1",
+   "date": "2025-09-16",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
+   "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "quantum-clip",
+   "perk_en": "Quantum Clip",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "en-2025-09-16-1",
+   "date": "2025-09-16",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
+   "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "t-racer",
+   "perk_en": "T.Racer",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "en-2025-09-16-1",
+   "date": "2025-09-16",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
+   "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "alternate-ending",
+   "perk_en": "Alternate Ending",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "en-2025-09-16-1",
+   "date": "2025-09-16",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
+   "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "auto-recall",
+   "perk_en": "Auto Recall",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "en-2025-09-16-1",
+   "date": "2025-09-16",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
+   "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "bullet-time",
+   "perk_en": "Bullet Time",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "en-2025-09-16-1",
+   "date": "2025-09-16",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
+   "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "temporal",
+   "perk_en": "Temporal",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "en-2025-09-16-1",
+   "date": "2025-09-16",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
+   "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "foresight",
+   "perk_en": "Foresight",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "en-2025-09-16-1",
+   "date": "2025-09-16",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
+   "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "timelapse",
+   "perk_en": "Timelapse",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
+  },
+  {
+   "patch": "en-2025-09-16-1",
+   "date": "2025-09-16",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
+   "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
+   "kind": "perk",
+   "dimension": "perk",
+   "perk_slug": "pocket-bomb",
+   "perk_en": "Pocket Bomb",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": []
   },
   {
    "patch": "en-2025-09-16-1",
@@ -2089,8 +3539,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
    "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Added to the Stadium Roster.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-09-16-1",
@@ -2099,8 +3557,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
    "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Chronal Crux - Stadium Passive",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-09-16-1",
@@ -2109,8 +3575,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
    "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": "Gains 25% less Health, Armor, and Shields from items and cash.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-09-16-1",
@@ -2119,18 +3593,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
    "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
    "kind": "general",
-   "text_en": "Flash Fist - Power",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-09-16-1",
-   "date": "2025-09-16",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
-   "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
-   "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "For 1 second after using Blink, your next Quick Melee is affected by Ability Power, deals 10 extra damage, and knocks enemies back.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-09-16-1",
@@ -2139,18 +3611,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
    "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
    "kind": "general",
-   "text_en": "Get Stuffed! - Power",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-09-16-1",
-   "date": "2025-09-16",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
-   "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
-   "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "ultimate_cost",
    "text_en": "Quick Melee hit grant 5% Ultimate Charge.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-09-16-1",
@@ -2159,18 +3629,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
    "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
    "kind": "general",
-   "text_en": "Blink of an Eye - Power",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-09-16-1",
-   "date": "2025-09-16",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
-   "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
-   "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Critical hits reduce the cooldown of Blink by 0.5 seconds.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-09-16-1",
@@ -2179,18 +3647,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
    "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
    "kind": "general",
-   "text_en": "Quantum Clip - Power",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-09-16-1",
-   "date": "2025-09-16",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
-   "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
-   "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "If you use Blink while reloading, gain 25% Max Ammo and 10% Weapon Lifesteal until you reload.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-09-16-1",
@@ -2199,18 +3665,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
    "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
    "kind": "general",
-   "text_en": "T.Racer- Power",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-09-16-1",
-   "date": "2025-09-16",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
-   "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
-   "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Blink teleports you 3 meters farther and grants you 10% Move Speed for 1 second.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-09-16-1",
@@ -2219,18 +3683,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
    "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
    "kind": "general",
-   "text_en": "Alternate Ending- Power",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-09-16-1",
-   "date": "2025-09-16",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
-   "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
-   "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "When you use Recall, heal allies within 6 meters for 75% of the damage they have taken in the last 3 seconds.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-09-16-1",
@@ -2239,18 +3701,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
    "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
    "kind": "general",
-   "text_en": "Auto Recall- Power",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-09-16-1",
-   "date": "2025-09-16",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
-   "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
-   "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "ultimate_cost",
    "text_en": "Once per round, if you would die, instead use Recall for free. Spending your Ultimate Charge reduces Recall's cooldown by 50%.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-09-16-1",
@@ -2259,18 +3719,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
    "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
    "kind": "general",
-   "text_en": "Bullet Time- Power",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-09-16-1",
-   "date": "2025-09-16",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
-   "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
-   "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "When you use Recall, drop a temporal field that slows projectiles by 95% for 6 seconds and you take 25% less damage from Hitscan for 3 seconds.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-09-16-1",
@@ -2279,18 +3737,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
    "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
    "kind": "general",
-   "text_en": "Temporal- Power",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-09-16-1",
-   "date": "2025-09-16",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
-   "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
-   "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Recall leaves behind a temporal field portal. An ally can interact with it to travel back in time 3 seconds.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-09-16-1",
@@ -2299,18 +3755,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
    "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
    "kind": "general",
-   "text_en": "Foresight- Power",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-09-16-1",
-   "date": "2025-09-16",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
-   "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
-   "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "After using Blink, your next 6 shots within 2 seconds auto-aim to targets within 10 meters.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-09-16-1",
@@ -2319,18 +3773,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
    "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
    "kind": "general",
-   "text_en": "Timelapse- Power",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-09-16-1",
-   "date": "2025-09-16",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
-   "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
-   "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Hitting 2 consecutive shots on the same target without missing deals 1 extra damage over 2 seconds.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-09-16-1",
@@ -2339,18 +3791,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
    "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
    "kind": "general",
-   "text_en": "Pocket Bomb- Power",
-   "text_cn": null
-  },
-  {
-   "patch": "en-2025-09-16-1",
-   "date": "2025-09-16",
-   "site": "en",
-   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
-   "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
-   "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "When you use Recall, throw a Pulse Bomb that deals 60% less damage.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-09-16-1",
@@ -2359,8 +3809,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
    "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Pulse Detector - Rare Weapon Hero Item",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-09-16-1",
@@ -2369,8 +3827,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
    "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "10% Weapon Power.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-09-16-1",
@@ -2379,8 +3845,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
    "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "10% Max Ammo.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-09-16-1",
@@ -2389,8 +3863,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
    "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "The last enemy hit by Pulse Pistols is revealed for 1 second.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-09-16-1",
@@ -2399,8 +3881,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
    "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Cost: 5,500.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-09-16-1",
@@ -2409,8 +3899,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
    "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Underworld Quickloader - Epic Weapon Hero Item",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-09-16-1",
@@ -2419,8 +3917,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
    "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "10% Weapon Power.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-09-16-1",
@@ -2429,8 +3935,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
    "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "10% Attack Speed.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-09-16-1",
@@ -2439,8 +3953,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
    "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Pulse Pistols hits grant 1% Reload Speed stacking up to 30 times. Resets on reload.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-09-16-1",
@@ -2449,8 +3971,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
    "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Cost: 12,000.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-09-16-1",
@@ -2459,8 +3989,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
    "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Drag Reducers - Rare Ability Hero Item",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-09-16-1",
@@ -2469,8 +4007,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
    "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "10% Ability Power.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-09-16-1",
@@ -2479,8 +4025,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
    "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "100% Pulse Bomb Throw Distance.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-09-16-1",
@@ -2489,8 +4043,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
    "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Cost: 4,000.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-09-16-1",
@@ -2499,8 +4061,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
    "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Chrono Bomb - Epic Ability Hero Item",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-09-16-1",
@@ -2509,8 +4079,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
    "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "15% Ability Power.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-09-16-1",
@@ -2519,8 +4097,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
    "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "50% Pulse Bomb Explosion Radius.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-09-16-1",
@@ -2529,8 +4115,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
    "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Enemies Stuck or hit by Pulse Bomb are slowed by 30% and lose 30% bonus Attack Speed for 2 seconds.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-09-16-1",
@@ -2539,8 +4133,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
    "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Cost: 10,000.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-09-16-1",
@@ -2549,8 +4151,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
    "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Emily's Affection - Rare Survival Hero Item",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-09-16-1",
@@ -2559,8 +4169,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
    "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": "19 Health.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-09-16-1",
@@ -2569,8 +4187,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
    "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "After using Recall, gain 50 Overheath for 5 seconds.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-09-16-1",
@@ -2579,8 +4205,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
    "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Cost: 4,000.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-09-16-1",
@@ -2589,8 +4223,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
    "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Iggy's Ignition - Rare Survival Hero Item",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-09-16-1",
@@ -2599,8 +4241,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
    "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "5% Attack Speed.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-09-16-1",
@@ -2609,8 +4259,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
    "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "5% Move Speed.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-09-16-1",
@@ -2619,8 +4277,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
    "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "If you use Blink while Airborne, gain an air jump.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-09-16-1",
@@ -2629,8 +4295,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
    "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Cost: 3,750.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-09-16-1",
@@ -2639,8 +4313,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
    "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Custom Kicks - Epic Survival Hero Item",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-09-16-1",
@@ -2649,8 +4331,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
    "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": "38 Health.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-09-16-1",
@@ -2659,8 +4349,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
    "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "When you use Blink, grant yourself and allies within 6 meters 10% Move Speed for 1 second.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-09-16-1",
@@ -2669,8 +4367,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
    "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Cost: 10,000.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-09-16-1",
@@ -2679,8 +4385,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
    "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Oxton Overdrive - Epic Survival Hero Item",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-09-16-1",
@@ -2689,8 +4403,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
    "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": "19 Health.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-09-16-1",
@@ -2699,8 +4421,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
    "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "When you use Recall, restore 2 charges of Blink.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-09-16-1",
@@ -2709,8 +4439,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
    "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Cost: 10,000.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-09-16-1",
@@ -2719,8 +4457,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
    "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Slipstream Salve - Epic Survival Hero Item",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-09-16-1",
@@ -2729,8 +4475,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
    "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": "19 Health.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-09-16-1",
@@ -2739,8 +4493,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
    "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Recall always restores at least 70% of your life.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-09-16-1",
@@ -2749,8 +4511,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/09",
    "patch_title": "Overwatch 2 Retail Patch Notes - September 16, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Cost: 10,000.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-08-27-1",
@@ -2759,6 +4529,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/08/",
    "patch_title": "《守望先锋》补丁说明——2025年8月27日",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "blast-from-the-past",
    "perk_en": null,
    "perk_cn": "往昔震爆",
@@ -2775,7 +4546,8 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/08/",
    "patch_title": "《守望先锋》补丁说明——2025年8月27日",
    "kind": "perk",
-   "perk_slug": "kinetic-reload",
+   "dimension": "perk",
+   "perk_slug": "blink-hop",
    "perk_en": null,
    "perk_cn": "动能装填",
    "status": "changed",
@@ -2792,8 +4564,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/08/",
    "patch_title": "《守望先锋》补丁说明——2025年8月27日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "闪回——技能2"
+   "text_cn": "闪回——技能2",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-08-27-1",
@@ -2802,8 +4582,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/08/",
    "patch_title": "《守望先锋》补丁说明——2025年8月27日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "冷却时间从12秒延长至13秒。"
+   "text_cn": "冷却时间从12秒延长至13秒。",
+   "before": 12.0,
+   "after": 13.0,
+   "by": 1.0,
+   "by_pct": null,
+   "metric": "cooldown",
+   "unit": "s"
   },
   {
    "patch": "en-2025-08-26-1",
@@ -2812,6 +4600,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/08",
    "patch_title": "Overwatch 2 Retail Patch Notes – August 26, 2025",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "blast-from-the-past",
    "perk_en": "Blast From The Past",
    "perk_cn": null,
@@ -2828,6 +4617,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/08",
    "patch_title": "Overwatch 2 Retail Patch Notes – August 26, 2025",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "kinetic-reload",
    "perk_en": "Kinetic Reload",
    "perk_cn": null,
@@ -2845,8 +4635,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/08",
    "patch_title": "Overwatch 2 Retail Patch Notes – August 26, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Recall - Ability 2",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-08-26-1",
@@ -2855,8 +4653,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/08",
    "patch_title": "Overwatch 2 Retail Patch Notes – August 26, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Cooldown increased from 12 to 13 seconds.",
-   "text_cn": null
+   "text_cn": null,
+   "before": 12.0,
+   "after": 13.0,
+   "by": 1.0,
+   "by_pct": null,
+   "metric": "cooldown",
+   "unit": "s"
   },
   {
    "patch": "cn-2025-07-23-1",
@@ -2865,8 +4671,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/07/",
    "patch_title": "《守望先锋》补丁说明——2025年7月23日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "脉冲双枪"
+   "text_cn": "脉冲双枪",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-07-23-1",
@@ -2875,8 +4689,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/07/",
    "patch_title": "《守望先锋》补丁说明——2025年7月23日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "散布从3.0度提高至3.5度。"
+   "text_cn": "散布从3.0度提高至3.5度。",
+   "before": 3.0,
+   "after": 3.5,
+   "by": 0.5,
+   "by_pct": null,
+   "metric": "散布",
+   "unit": "deg"
   },
   {
    "patch": "en-2025-07-22-1",
@@ -2885,8 +4707,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/07",
    "patch_title": "Overwatch 2 Retail Patch Notes – July 22, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Pulse Pistols",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-07-22-1",
@@ -2895,8 +4725,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/07",
    "patch_title": "Overwatch 2 Retail Patch Notes – July 22, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Spread increased from 3.0 to 3.5 degrees.",
-   "text_cn": null
+   "text_cn": null,
+   "before": 3.0,
+   "after": 3.5,
+   "by": 0.5,
+   "by_pct": null,
+   "metric": "spread",
+   "unit": null
   },
   {
    "patch": "cn-2025-06-25-1",
@@ -2905,8 +4743,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/06/",
    "patch_title": "《守望先锋》补丁说明——2025年6月25日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "脉冲双枪——主要攻击模式"
+   "text_cn": "脉冲双枪——主要攻击模式",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-06-25-1",
@@ -2915,8 +4761,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/06/",
    "patch_title": "《守望先锋》补丁说明——2025年6月25日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "伤害从5.5提高至6。"
+   "text_cn": "伤害从5.5提高至6。",
+   "before": 5.5,
+   "after": 6.0,
+   "by": 0.5,
+   "by_pct": null,
+   "metric": "damage",
+   "unit": null
   },
   {
    "patch": "en-2025-06-24-1",
@@ -2925,8 +4779,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/06",
    "patch_title": "Overwatch 2 Retail Patch Notes - June 24, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Pulse Pistol - Primary Fire",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-06-24-1",
@@ -2935,8 +4797,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/06",
    "patch_title": "Overwatch 2 Retail Patch Notes - June 24, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Damage increased from 5.5 to 6.",
-   "text_cn": null
+   "text_cn": null,
+   "before": 5.5,
+   "after": 6.0,
+   "by": 0.5,
+   "by_pct": null,
+   "metric": "damage",
+   "unit": null
   },
   {
    "patch": "cn-2025-04-23-1",
@@ -2945,8 +4815,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/04/",
    "patch_title": "《守望先锋》补丁说明——2025年4月23日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "飞速闪回"
+   "text_cn": "飞速闪回",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-04-23-1",
@@ -2955,8 +4833,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/04/",
    "patch_title": "《守望先锋》补丁说明——2025年4月23日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "恢复的“闪现”次数从3次降低至2次。"
+   "text_cn": "恢复的“闪现”次数从3次降低至2次。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-04-23-1",
@@ -2965,8 +4851,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/04/",
    "patch_title": "《守望先锋》补丁说明——2025年4月23日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "量子纠缠"
+   "text_cn": "量子纠缠",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-04-23-1",
@@ -2975,8 +4869,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/04/",
    "patch_title": "《守望先锋》补丁说明——2025年4月23日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "“量子纠缠”现在会额外提供20发过量弹药。"
+   "text_cn": "“量子纠缠”现在会额外提供20发过量弹药。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-04-22-1",
@@ -2985,8 +4887,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/04",
    "patch_title": "Overwatch 2 Retail Patch Notes – April 22, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Flashback",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-04-22-1",
@@ -2995,8 +4905,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/04",
    "patch_title": "Overwatch 2 Retail Patch Notes – April 22, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Blinks restored reduced from 3 to 2.",
-   "text_cn": null
+   "text_cn": null,
+   "before": 3.0,
+   "after": 2.0,
+   "by": -1.0,
+   "by_pct": null,
+   "metric": "blinks restored",
+   "unit": null
   },
   {
    "patch": "en-2025-04-22-1",
@@ -3005,8 +4923,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/04",
    "patch_title": "Overwatch 2 Retail Patch Notes – April 22, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Quantum Entanglement",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-04-22-1",
@@ -3015,8 +4941,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/04",
    "patch_title": "Overwatch 2 Retail Patch Notes – April 22, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Quantum Entanglement now additionally grants 20 over ammo.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-04-01-1",
@@ -3025,6 +4959,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/04",
    "patch_title": "Totally Normal Patch Notes for Totally Normalwatch – April 1, 2025",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "blink",
    "ability_en": "Blink",
    "ability_cn": "闪现",
@@ -3032,7 +4967,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-04-01-1",
@@ -3041,6 +4979,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/04",
    "patch_title": "Totally Normal Patch Notes for Totally Normalwatch – April 1, 2025",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "blink",
    "ability_en": "Blink",
    "ability_cn": "闪现",
@@ -3048,7 +4987,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-04-01-1",
@@ -3057,6 +4999,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/04/",
    "patch_title": "完全正常的“完全正常先锋”补丁说明——2025年4月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "blink",
    "ability_en": "Blink",
    "ability_cn": "闪现",
@@ -3064,7 +5007,10 @@
    "text_cn": "在蹲下时使用“闪现”会与敌人发生碰撞。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-04-01-1",
@@ -3073,6 +5019,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/04/",
    "patch_title": "完全正常的“完全正常先锋”补丁说明——2025年4月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "blink",
    "ability_en": "Blink",
    "ability_cn": "闪现",
@@ -3080,7 +5027,10 @@
    "text_cn": "与敌人发生碰撞可以造成伤害，并将对方击退。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-03-19-1",
@@ -3089,6 +5039,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/03/",
    "patch_title": "《守望先锋》补丁说明——2025年3月19日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "quantum-entanglement",
    "ability_en": "Quantum Entanglement",
    "ability_cn": "量子纠缠",
@@ -3096,7 +5047,10 @@
    "text_cn": "过量生命值持续时间从3.5秒延长至6秒。",
    "before": 3.5,
    "after": 6.0,
-   "metric": "过量生命值持续时间"
+   "by": 2.5,
+   "by_pct": null,
+   "metric": "overhealth",
+   "unit": "s"
   },
   {
    "patch": "en-2025-03-18-1",
@@ -3105,6 +5059,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/03",
    "patch_title": "Overwatch 2 Retail Patch Notes – March 18, 2025",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "quantum-entanglement",
    "ability_en": "Quantum Entanglement",
    "ability_cn": "量子纠缠",
@@ -3112,7 +5067,10 @@
    "text_cn": null,
    "before": 3.5,
    "after": 6.0,
-   "metric": "overhealth duration"
+   "by": 2.5,
+   "by_pct": null,
+   "metric": "overhealth",
+   "unit": "hp"
   },
   {
    "patch": "en-2025-02-18-1",
@@ -3121,6 +5079,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/02",
    "patch_title": "Overwatch 2 Retail Patch Notes + Hero Perks - February 18, 2025",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "blink-packs",
    "ability_en": "Blink Packs",
    "ability_cn": null,
@@ -3128,7 +5087,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-02-18-1",
@@ -3137,6 +5099,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/02",
    "patch_title": "Overwatch 2 Retail Patch Notes + Hero Perks - February 18, 2025",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "blast-from-the-past",
    "ability_en": "Blast from the Past",
    "ability_cn": null,
@@ -3144,7 +5107,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": 50.0,
+   "metric": "s radius is",
+   "unit": null
   },
   {
    "patch": "en-2025-02-18-1",
@@ -3153,6 +5119,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/02",
    "patch_title": "Overwatch 2 Retail Patch Notes + Hero Perks - February 18, 2025",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "flashback",
    "ability_en": "Flashback",
    "ability_cn": null,
@@ -3160,7 +5127,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-02-18-1",
@@ -3169,6 +5139,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/02",
    "patch_title": "Overwatch 2 Retail Patch Notes + Hero Perks - February 18, 2025",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "quantum-entanglement",
    "ability_en": "Quantum Entanglement",
    "ability_cn": "量子纠缠",
@@ -3176,7 +5147,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-01-21-1",
@@ -3185,6 +5159,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/01",
    "patch_title": "OVERWATCH 2 PATCH NOTES – JANUARY 21, 2025",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "pulse-pistols",
    "ability_en": "Pulse Pistols",
    "ability_cn": "脉冲双枪",
@@ -3192,7 +5167,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": 15.0,
+   "metric": "spread",
+   "unit": null
   },
   {
    "patch": "en-2024-12-17-1",
@@ -3201,6 +5179,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/12",
    "patch_title": "Overwatch 2 6v6 Experiment – December 17, 2024",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "pulse-pistols",
    "ability_en": "Pulse Pistols",
    "ability_cn": "脉冲双枪",
@@ -3208,7 +5187,10 @@
    "text_cn": null,
    "before": 10.0,
    "after": 12.0,
-   "metric": "falloff range"
+   "by": 2.0,
+   "by_pct": null,
+   "metric": "falloff range",
+   "unit": null
   },
   {
    "patch": "en-2024-11-08-1",
@@ -3217,6 +5199,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/11",
    "patch_title": "Overwatch 2 Retail Patch Notes - November 12, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "recall",
    "ability_en": "Recall",
    "ability_cn": "闪回",
@@ -3224,7 +5207,10 @@
    "text_cn": null,
    "before": 13.0,
    "after": 12.0,
-   "metric": "cooldown"
+   "by": -1.0,
+   "by_pct": null,
+   "metric": "cooldown",
+   "unit": "s"
   },
   {
    "patch": "en-2024-08-23-1",
@@ -3233,6 +5219,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/08",
    "patch_title": "Overwatch 2 Retail Patch Notes - August 23, 2024",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "pulse-pistols",
    "ability_en": "Pulse Pistols",
    "ability_cn": "脉冲双枪",
@@ -3240,7 +5227,10 @@
    "text_cn": null,
    "before": 6.0,
    "after": 5.5,
-   "metric": "damage"
+   "by": -0.5,
+   "by_pct": null,
+   "metric": "damage",
+   "unit": null
   },
   {
    "patch": "en-2024-04-16-1",
@@ -3249,6 +5239,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/04",
    "patch_title": "Overwatch 2 Retail Patch Notes – April 16, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "recall",
    "ability_en": "Recall",
    "ability_cn": "闪回",
@@ -3256,7 +5247,10 @@
    "text_cn": null,
    "before": 12.0,
    "after": 13.0,
-   "metric": "cooldown"
+   "by": 1.0,
+   "by_pct": null,
+   "metric": "cooldown",
+   "unit": "s"
   },
   {
    "patch": "en-2024-04-16-1",
@@ -3265,6 +5259,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/04",
    "patch_title": "Overwatch 2 Retail Patch Notes – April 16, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "pulse-bomb",
    "ability_en": "Pulse Bomb",
    "ability_cn": "脉冲炸弹",
@@ -3272,7 +5267,10 @@
    "text_cn": null,
    "before": 0.2,
    "after": 0.1,
-   "metric": "base projectile size"
+   "by": -0.1,
+   "by_pct": null,
+   "metric": "base projectile size",
+   "unit": null
   },
   {
    "patch": "en-2024-04-01-1",
@@ -3281,6 +5279,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/04",
    "patch_title": "Overwatch 2 Really, Really, Really Balanced Patch Notes - April 1, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "recall",
    "ability_en": "Recall",
    "ability_cn": "闪回",
@@ -3288,7 +5287,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2024-02-20-1",
@@ -3297,6 +5299,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/02",
    "patch_title": "Overwatch 2 Retail Patch Notes - February 21, 2024",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "pulse-pistols",
    "ability_en": "Pulse Pistols",
    "ability_cn": "脉冲双枪",
@@ -3304,7 +5307,10 @@
    "text_cn": null,
    "before": 12.0,
    "after": 10.0,
-   "metric": "minimum falloff range"
+   "by": -2.0,
+   "by_pct": null,
+   "metric": "minimum falloff range",
+   "unit": null
   },
   {
    "patch": "en-2024-02-13-1",
@@ -3313,8 +5319,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/02",
    "patch_title": "Overwatch 2 Retail Patch Notes – February 13, 2024",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": "Health increased from 150 to 175.",
-   "text_cn": null
+   "text_cn": null,
+   "before": 150.0,
+   "after": 175.0,
+   "by": 25.0,
+   "by_pct": null,
+   "metric": "health",
+   "unit": "hp"
   },
   {
    "patch": "en-2023-12-05-1",
@@ -3323,6 +5337,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/12",
    "patch_title": "Overwatch 2 Retail Patch Notes – December 5, 2023",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "pulse-pistols",
    "ability_en": "Pulse Pistols",
    "ability_cn": "脉冲双枪",
@@ -3330,7 +5345,10 @@
    "text_cn": null,
    "before": 5.5,
    "after": 6.0,
-   "metric": "damage"
+   "by": 0.5,
+   "by_pct": null,
+   "metric": "damage",
+   "unit": null
   },
   {
    "patch": "en-2023-08-10-1",
@@ -3339,6 +5357,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/08",
    "patch_title": "Overwatch 2 Retail Patch Notes – August 10, 2023",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "pulse-pistols",
    "ability_en": "Pulse Pistols",
    "ability_cn": "脉冲双枪",
@@ -3346,7 +5365,10 @@
    "text_cn": null,
    "before": 40.0,
    "after": 60.0,
-   "metric": "ammo"
+   "by": 20.0,
+   "by_pct": null,
+   "metric": "ammo",
+   "unit": null
   },
   {
    "patch": "en-2023-08-10-1",
@@ -3355,6 +5377,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/08",
    "patch_title": "Overwatch 2 Retail Patch Notes – August 10, 2023",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "pulse-pistols",
    "ability_en": "Pulse Pistols",
    "ability_cn": "脉冲双枪",
@@ -3362,7 +5385,10 @@
    "text_cn": null,
    "before": 5.5,
    "after": 5.0,
-   "metric": "damage"
+   "by": -0.5,
+   "by_pct": null,
+   "metric": "damage",
+   "unit": null
   },
   {
    "patch": "en-2023-08-10-1",
@@ -3371,6 +5397,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/08",
    "patch_title": "Overwatch 2 Retail Patch Notes – August 10, 2023",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "pulse-bomb",
    "ability_en": "Pulse Bomb",
    "ability_cn": "脉冲炸弹",
@@ -3378,7 +5405,10 @@
    "text_cn": null,
    "before": 350.0,
    "after": 550.0,
-   "metric": "explosion damage"
+   "by": 200.0,
+   "by_pct": null,
+   "metric": "explosion damage",
+   "unit": null
   },
   {
    "patch": "en-2023-06-13-1",
@@ -3387,6 +5417,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/06",
    "patch_title": "Overwatch 2 Retail Patch Notes – June 13, 2023",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "pulse-pistols",
    "ability_en": "Pulse Pistols",
    "ability_cn": "脉冲双枪",
@@ -3394,7 +5425,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": 15.0,
+   "metric": "spread",
+   "unit": null
   },
   {
    "patch": "en-2023-05-09-1",
@@ -3403,8 +5437,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/05",
    "patch_title": "Overwatch 2 Retail Patch Notes - May 9, 2023",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Added the Hero-Specific Option:",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2023-05-09-1",
@@ -3413,8 +5455,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/05",
    "patch_title": "Overwatch 2 Retail Patch Notes - May 9, 2023",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Blink UI - On by default",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2022-12-15-1",
@@ -3423,6 +5473,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2022/12",
    "patch_title": "Overwatch Retail Patch Notes - December 15, 2022",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "pulse-pistols",
    "ability_en": "Pulse Pistols",
    "ability_cn": "脉冲双枪",
@@ -3430,7 +5481,10 @@
    "text_cn": null,
    "before": 6.0,
    "after": 5.5,
-   "metric": "damage"
+   "by": -0.5,
+   "by_pct": null,
+   "metric": "damage",
+   "unit": null
   },
   {
    "patch": "en-2022-12-06-1",
@@ -3439,6 +5493,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2022/12",
    "patch_title": "Overwatch 2 Retail Patch Notes - December 6, 2022",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "pulse-pistols",
    "ability_en": "Pulse Pistols",
    "ability_cn": "脉冲双枪",
@@ -3446,7 +5501,10 @@
    "text_cn": null,
    "before": 5.0,
    "after": 6.0,
-   "metric": "damage"
+   "by": 1.0,
+   "by_pct": null,
+   "metric": "damage",
+   "unit": null
   },
   {
    "patch": "en-2021-01-28-1",
@@ -3455,6 +5513,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2021/01",
    "patch_title": "Overwatch Retail Patch Notes – January 28, 2021",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "pulse-pistols",
    "ability_en": "Pulse Pistols",
    "ability_cn": "脉冲双枪",
@@ -3462,7 +5521,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2020-04-14-1",
@@ -3471,6 +5533,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2020/04",
    "patch_title": "Overwatch Retail Patch Notes – April 14, 2020",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "blink",
    "ability_en": "Blink",
    "ability_cn": "闪现",
@@ -3478,7 +5541,132 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   }
- ]
+ ],
+ "values": {
+  "recall:cooldown": [
+   {
+    "date": "2024-04-16",
+    "value": 13.0
+   },
+   {
+    "date": "2024-11-08",
+    "value": 12.0
+   },
+   {
+    "date": "2026-08-11",
+    "value": 12.0
+   },
+   {
+    "date": "2026-08-12",
+    "value": 12.0
+   }
+  ],
+  "pulse-bomb:爆炸延迟时间": [
+   {
+    "date": "2026-07-01",
+    "value": 3.0
+   }
+  ],
+  "pulse-bomb:爆炸范围": [
+   {
+    "date": "2026-07-01",
+    "value": 7.0
+   }
+  ],
+  "pulse-bomb:对被附着的敌人造成的伤害": [
+   {
+    "date": "2026-07-01",
+    "value": 9999.0
+   }
+  ],
+  "pulse-bomb:damage": [
+   {
+    "date": "2026-06-30",
+    "value": 9999.0
+   }
+  ],
+  "pulse-pistols:damage": [
+   {
+    "date": "2022-12-06",
+    "value": 6.0
+   },
+   {
+    "date": "2022-12-15",
+    "value": 5.5
+   },
+   {
+    "date": "2023-08-10",
+    "value": 5.0
+   },
+   {
+    "date": "2023-12-05",
+    "value": 6.0
+   },
+   {
+    "date": "2024-08-23",
+    "value": 5.5
+   },
+   {
+    "date": "2026-06-17",
+    "value": 5.25
+   }
+  ],
+  "attr:base_stat:pulse pistols base damage": [
+   {
+    "date": "2026-06-16",
+    "value": 5.25
+   }
+  ],
+  "quantum-entanglement:overhealth": [
+   {
+    "date": "2025-03-18",
+    "value": 6.0
+   },
+   {
+    "date": "2025-03-19",
+    "value": 6.0
+   }
+  ],
+  "pulse-pistols:falloff range": [
+   {
+    "date": "2024-12-17",
+    "value": 12.0
+   }
+  ],
+  "pulse-bomb:base projectile size": [
+   {
+    "date": "2024-04-16",
+    "value": 0.1
+   }
+  ],
+  "pulse-pistols:minimum falloff range": [
+   {
+    "date": "2024-02-20",
+    "value": 10.0
+   }
+  ],
+  "attr:health:health": [
+   {
+    "date": "2024-02-13",
+    "value": 175.0
+   }
+  ],
+  "pulse-pistols:ammo": [
+   {
+    "date": "2023-08-10",
+    "value": 60.0
+   }
+  ],
+  "pulse-bomb:explosion damage": [
+   {
+    "date": "2023-08-10",
+    "value": 550.0
+   }
+  ]
+ }
 }

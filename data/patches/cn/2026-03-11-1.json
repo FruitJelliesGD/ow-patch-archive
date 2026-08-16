@@ -71,7 +71,11 @@
          "text_cn": "冷却时间从3.5秒延长至4秒。",
          "before": 3.5,
          "after": 4.0,
-         "metric": "冷却时间"
+         "metric": "cooldown",
+         "by": 0.5,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "冷却时间"
         }
        ]
       }
@@ -84,7 +88,18 @@
      "role": "tank",
      "dev_note": "“骇灾”最初被安排在铁壁副职责是为了限制他交战中的控制效果。但副职责上线以来，他的表现非常挣扎。我们把他改为先锋副职责，辅助他激进、长续航的打法。",
      "general": [
-      "副职责从铁壁改为先锋"
+      {
+       "text_en": null,
+       "text_cn": "副职责从铁壁改为先锋",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -108,7 +123,11 @@
          "text_cn": "（5V5）冷却时间从13秒缩短至12秒。",
          "before": 13.0,
          "after": 12.0,
-         "metric": "冷却时间"
+         "metric": "cooldown",
+         "by": -1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "冷却时间"
         }
        ]
       },
@@ -122,7 +141,11 @@
          "text_cn": "每秒伤害从30提高至35。",
          "before": 30.0,
          "after": 35.0,
-         "metric": "每秒伤害"
+         "metric": "每秒伤害",
+         "by": 5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "每秒伤害"
         }
        ]
       }
@@ -147,7 +170,11 @@
          "text_cn": "每枚弹丸伤害从6.5提高至7。",
          "before": 6.5,
          "after": 7.0,
-         "metric": "每枚弹丸伤害"
+         "metric": "每枚弹丸伤害",
+         "by": 0.5,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "每枚弹丸伤害"
         }
        ]
       }
@@ -181,14 +208,22 @@
          "text_cn": "可自动翻越较矮的物体边缘。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": null,
          "text_cn": "技能生效时跳跃高度提升20%。",
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "技能生效时跳跃高度",
+         "by": null,
+         "by_pct": 20.0,
+         "unit": null,
+         "raw_metric": "技能生效时跳跃高度"
         }
        ]
       }
@@ -213,7 +248,11 @@
          "text_cn": "触发延迟从4.5秒缩短至4秒。",
          "before": 4.5,
          "after": 4.0,
-         "metric": "触发延迟"
+         "metric": "触发延迟",
+         "by": -0.5,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "触发延迟"
         }
        ]
       }
@@ -297,7 +336,11 @@
          "text_cn": "辅助攻击模式资源上限从3.5秒降低至3秒。",
          "before": 3.5,
          "after": 3.0,
-         "metric": "辅助攻击模式资源上限"
+         "metric": "辅助攻击模式资源上限",
+         "by": -0.5,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "辅助攻击模式资源上限"
         }
        ]
       }
@@ -362,14 +405,22 @@
          "text_cn": "半径从10米扩大至12米。",
          "before": 10.0,
          "after": 12.0,
-         "metric": "半径"
+         "metric": "range",
+         "by": 2.0,
+         "by_pct": null,
+         "unit": "m",
+         "raw_metric": "半径"
         },
         {
          "text_en": null,
          "text_cn": "衰减延迟从2秒缩短至1.75秒。",
          "before": 2.0,
          "after": 1.75,
-         "metric": "衰减延迟"
+         "metric": "衰减延迟",
+         "by": -0.25,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "衰减延迟"
         }
        ]
       }
@@ -413,5 +464,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:4d38cf80c8fbdc678a68d875a78ec4c01eb6e8c79cd55e4b971580779c45c0af"
+ "hash": "sha256:13010f899375a1aca6884ab43c208ad3bf5075f428da2ea240e2f1ff59f97ebc"
 }

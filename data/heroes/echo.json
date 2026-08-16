@@ -13,6 +13,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/08/",
    "patch_title": "《守望先锋》补丁说明——2026年8月12日",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "aerial-munitions",
    "perk_en": null,
    "perk_cn": "空战火力",
@@ -30,6 +31,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/08/",
    "patch_title": "《守望先锋》补丁说明——2026年8月12日",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "high-beams",
    "perk_en": null,
    "perk_cn": "机动远光",
@@ -46,6 +48,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/08/",
    "patch_title": "《守望先锋》补丁说明——2026年8月12日",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "focused-rush",
    "perk_en": null,
    "perk_cn": "聚焦机动",
@@ -65,6 +68,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/08",
    "patch_title": "Overwatch Retail Patch Notes – August 11, 2026",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "aerial-munitions",
    "perk_en": "Aerial Munitions",
    "perk_cn": null,
@@ -82,6 +86,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/08",
    "patch_title": "Overwatch Retail Patch Notes – August 11, 2026",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "high-beams",
    "perk_en": "High Beams",
    "perk_cn": null,
@@ -98,6 +103,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/08",
    "patch_title": "Overwatch Retail Patch Notes – August 11, 2026",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "focused-rush",
    "perk_en": "Focused Rush",
    "perk_cn": null,
@@ -117,6 +123,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "focusing-beam",
    "ability_en": "Focusing Beam",
    "ability_cn": "聚焦光线",
@@ -124,7 +131,10 @@
    "text_cn": "输入键位改为辅助攻击模式键。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-07-01-1",
@@ -133,6 +143,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "focusing-beam",
    "ability_en": "Focusing Beam",
    "ability_cn": "聚焦光线",
@@ -140,7 +151,10 @@
    "text_cn": "冷却时间从8秒缩短至1秒。",
    "before": 8.0,
    "after": 1.0,
-   "metric": "冷却时间"
+   "by": -7.0,
+   "by_pct": null,
+   "metric": "cooldown",
+   "unit": "s"
   },
   {
    "patch": "cn-2026-07-01-1",
@@ -149,6 +163,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "focusing-beam",
    "ability_en": "Focusing Beam",
    "ability_cn": "聚焦光线",
@@ -156,7 +171,10 @@
    "text_cn": "现在需要消耗一种被动恢复的资源。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-07-01-1",
@@ -165,6 +183,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "sticky-bombs",
    "ability_en": "Sticky Bombs",
    "ability_cn": "黏性炸弹",
@@ -172,7 +191,10 @@
    "text_cn": "弹道速度提升60%。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": 60.0,
+   "metric": "projectile_speed",
+   "unit": null
   },
   {
    "patch": "cn-2026-07-01-1",
@@ -181,6 +203,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "sticky-bombs",
    "ability_en": "Sticky Bombs",
    "ability_cn": "黏性炸弹",
@@ -188,7 +211,10 @@
    "text_cn": "身上被附着“黏性炸弹”的敌人会向“回声”显示位置，持续5秒。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-07-01-1",
@@ -197,6 +223,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "duplicate",
    "ability_en": "Duplicate",
    "ability_cn": "人格复制",
@@ -204,7 +231,10 @@
    "text_cn": "在复制支援英雄时，“回声”造成的伤害提升20%。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": 20.0,
+   "metric": "造成的伤害",
+   "unit": null
   },
   {
    "patch": "cn-2026-07-01-1",
@@ -213,6 +243,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "duplicate",
    "ability_en": "Duplicate",
    "ability_cn": "人格复制",
@@ -220,7 +251,10 @@
    "text_cn": "在复制输出英雄时，“回声”的生命值提升20%。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": 20.0,
+   "metric": "的生命值",
+   "unit": null
   },
   {
    "patch": "cn-2026-07-01-1",
@@ -229,6 +263,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "duplicate",
    "ability_en": "Duplicate",
    "ability_cn": "人格复制",
@@ -236,7 +271,10 @@
    "text_cn": "在复制重装英雄时，“回声”的移动速度加快20%。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-30-1",
@@ -245,6 +283,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 30, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "focusing-beam",
    "ability_en": "Focusing Beam",
    "ability_cn": "聚焦光线",
@@ -252,7 +291,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-30-1",
@@ -261,6 +303,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 30, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "focusing-beam",
    "ability_en": "Focusing Beam",
    "ability_cn": "聚焦光线",
@@ -268,7 +311,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-30-1",
@@ -277,6 +323,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 30, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "focusing-beam",
    "ability_en": "Focusing Beam",
    "ability_cn": "聚焦光线",
@@ -284,7 +331,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-30-1",
@@ -293,6 +343,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 30, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "sticky-bombs",
    "ability_en": "Sticky Bombs",
    "ability_cn": "黏性炸弹",
@@ -300,7 +351,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": 60.0,
+   "metric": "projectile_speed",
+   "unit": null
   },
   {
    "patch": "en-2026-06-30-1",
@@ -309,6 +363,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 30, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "sticky-bombs",
    "ability_en": "Sticky Bombs",
    "ability_cn": "黏性炸弹",
@@ -316,7 +371,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-30-1",
@@ -325,6 +383,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 30, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "duplicate",
    "ability_en": "Duplicate",
    "ability_cn": "人格复制",
@@ -332,7 +391,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-30-1",
@@ -341,6 +403,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 30, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "duplicate",
    "ability_en": "Duplicate",
    "ability_cn": "人格复制",
@@ -348,7 +411,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-30-1",
@@ -357,6 +423,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 30, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "duplicate",
    "ability_en": "Duplicate",
    "ability_cn": "人格复制",
@@ -364,7 +431,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -373,6 +443,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "partial-scan",
    "perk_en": null,
    "perk_cn": "局部扫描",
@@ -389,6 +460,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "full-salvo",
    "perk_en": null,
    "perk_cn": "炸弹齐射",
@@ -405,8 +477,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "ultimate_cost",
    "text_en": null,
-   "text_cn": "初始终极技能充能从50%降低至30%。"
+   "text_cn": "初始终极技能充能从50%降低至30%。",
+   "before": 50.0,
+   "after": 30.0,
+   "by": -20.0,
+   "by_pct": null,
+   "metric": "初始终极技能充能",
+   "unit": "pct"
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -415,8 +495,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "额外黏性炸弹数量从3降低至2。"
+   "text_cn": "额外黏性炸弹数量从3降低至2。",
+   "before": 3.0,
+   "after": 2.0,
+   "by": -1.0,
+   "by_pct": null,
+   "metric": "额外黏性炸弹数量",
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -425,8 +513,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "ultimate_cost",
    "text_en": "Partial Scan – Minor Perk Ultimate charge gained reduced from 50% to 30%.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -435,8 +531,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "ultimate_cost",
    "text_en": "Ultimate charge gained reduced from 50% to 30%.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -445,8 +549,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Full Salvo – Major Perk Number of additional projectiles reduced from 3 to 2.",
-   "text_cn": null
+   "text_cn": null,
+   "before": 3.0,
+   "after": 2.0,
+   "by": -1.0,
+   "by_pct": null,
+   "metric": "major perk number of additional projectiles",
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -455,8 +567,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Number of additional projectiles reduced from 3 to 2.",
-   "text_cn": null
+   "text_cn": null,
+   "before": 3.0,
+   "after": 2.0,
+   "by": -1.0,
+   "by_pct": null,
+   "metric": "number of additional projectiles",
+   "unit": null
   },
   {
    "patch": "cn-2026-04-15-1",
@@ -465,6 +585,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/04/",
    "patch_title": "《守望先锋》补丁说明——2026年4月15日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "duplicate",
    "ability_en": "Duplicate",
    "ability_cn": "人格复制",
@@ -472,7 +593,10 @@
    "text_cn": "现在可以复制友方英雄。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-04-15-1",
@@ -481,6 +605,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/04/",
    "patch_title": "《守望先锋》补丁说明——2026年4月15日",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "focused-rush",
    "perk_en": null,
    "perk_cn": "聚焦机动",
@@ -497,6 +622,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/04",
    "patch_title": "Overwatch Retail Patch Notes - April 14, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "duplicate",
    "ability_en": "Duplicate",
    "ability_cn": "人格复制",
@@ -504,7 +630,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-04-14-1",
@@ -513,6 +642,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/04",
    "patch_title": "Overwatch Retail Patch Notes - April 14, 2026",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "focused-rush",
    "perk_en": "Focused Rush",
    "perk_cn": null,
@@ -529,6 +659,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/04",
    "patch_title": "Overwatch Retail Patch Notes - April 1, 2026",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "tri-shot",
    "ability_en": "Tri-Shot",
    "ability_cn": "三角射击",
@@ -536,7 +667,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-04-01-1",
@@ -545,6 +679,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/04",
    "patch_title": "Overwatch Retail Patch Notes - April 1, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "flight",
    "ability_en": "Flight",
    "ability_cn": "飞行",
@@ -552,7 +687,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-04-01-1",
@@ -561,6 +699,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/04",
    "patch_title": "Overwatch Retail Patch Notes - April 1, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "sticky-bombs",
    "ability_en": "Sticky Bombs",
    "ability_cn": "黏性炸弹",
@@ -568,7 +707,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-04-01-1",
@@ -577,6 +719,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/04/",
    "patch_title": "《守望先锋》补丁说明——2026年4月1日",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "tri-shot",
    "ability_en": "Tri-Shot",
    "ability_cn": "三角射击",
@@ -584,7 +727,10 @@
    "text_cn": "每次连续射击都会提升发射的子弹数，并使每次齐射获得新的排布。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-04-01-1",
@@ -593,6 +739,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/04/",
    "patch_title": "《守望先锋》补丁说明——2026年4月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "flight",
    "ability_en": "Flight",
    "ability_cn": "飞行",
@@ -600,7 +747,10 @@
    "text_cn": "取消飞行会使“回声”冲向她当前移动的方向。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-04-01-1",
@@ -609,6 +759,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/04/",
    "patch_title": "《守望先锋》补丁说明——2026年4月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "sticky-bombs",
    "ability_en": "Sticky Bombs",
    "ability_cn": "黏性炸弹",
@@ -616,7 +767,10 @@
    "text_cn": "黏性炸弹在附着前可在地形上反弹最多3次。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-02-09-1",
@@ -625,6 +779,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/02",
    "patch_title": "Overwatch Retail Patch Notes - February 10, 2026",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "focused-rush",
    "perk_en": "Focused Rush",
    "perk_cn": null,
@@ -641,8 +796,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/11",
    "patch_title": "Overwatch 2 Retail Patch Notes - November 11, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Flight",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-11-06-1",
@@ -651,8 +814,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/11",
    "patch_title": "Overwatch 2 Retail Patch Notes - November 11, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Movement acceleration in air increased by 100% when changing directions while Flight is active.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 100.0,
+   "metric": "movement acceleration in air",
+   "unit": null
   },
   {
    "patch": "cn-2025-08-27-1",
@@ -661,6 +832,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/08/",
    "patch_title": "《守望先锋》补丁说明——2025年8月27日",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "friendly-imaging-minor-perk-removed-enhanced-duplication",
    "perk_en": null,
    "perk_cn": "友方成像——次级威能 • 已移除强化复制",
@@ -677,6 +849,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/08/",
    "patch_title": "《守望先锋》补丁说明——2025年8月27日",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "focused-rush",
    "perk_en": null,
    "perk_cn": "聚焦机动",
@@ -694,6 +867,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/08/",
    "patch_title": "《守望先锋》补丁说明——2025年8月27日",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "partial-scan",
    "perk_en": null,
    "perk_cn": "局部扫描",
@@ -711,6 +885,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/08/",
    "patch_title": "《守望先锋》补丁说明——2025年8月27日",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "full-salvo",
    "perk_en": null,
    "perk_cn": "炸弹齐射",
@@ -727,6 +902,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/08",
    "patch_title": "Overwatch 2 Retail Patch Notes – August 26, 2025",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "friendly-imaging-minor-perk-removed-enhanced-duplication",
    "perk_en": "Friendly Imaging - Minor Perk • Removed. Enhanced Duplication",
    "perk_cn": null,
@@ -743,6 +919,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/08",
    "patch_title": "Overwatch 2 Retail Patch Notes – August 26, 2025",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "focused-rush",
    "perk_en": "Focused Rush",
    "perk_cn": null,
@@ -760,6 +937,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/08",
    "patch_title": "Overwatch 2 Retail Patch Notes – August 26, 2025",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "partial-scan",
    "perk_en": "Partial Scan",
    "perk_cn": null,
@@ -777,6 +955,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/08",
    "patch_title": "Overwatch 2 Retail Patch Notes – August 26, 2025",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "full-salvo",
    "perk_en": "Full Salvo",
    "perk_cn": null,
@@ -793,8 +972,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/06/",
    "patch_title": "《守望先锋》补丁说明——2025年6月25日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "三角射击——主要攻击模式"
+   "text_cn": "三角射击——主要攻击模式",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-06-25-1",
@@ -803,8 +990,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/06/",
    "patch_title": "《守望先锋》补丁说明——2025年6月25日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "散布从1.4度降低至1.1度。"
+   "text_cn": "散布从1.4度降低至1.1度。",
+   "before": 1.4,
+   "after": 1.1,
+   "by": -0.3,
+   "by_pct": null,
+   "metric": "散布",
+   "unit": "deg"
   },
   {
    "patch": "en-2025-06-24-1",
@@ -813,8 +1008,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/06",
    "patch_title": "Overwatch 2 Retail Patch Notes - June 24, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Tri-Shot - Primary Fire",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-06-24-1",
@@ -823,8 +1026,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/06",
    "patch_title": "Overwatch 2 Retail Patch Notes - June 24, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Spread decreased from 1.4 to 1.1 degrees.",
-   "text_cn": null
+   "text_cn": null,
+   "before": 1.4,
+   "after": 1.1,
+   "by": -0.3,
+   "by_pct": null,
+   "metric": "spread",
+   "unit": null
   },
   {
    "patch": "en-2025-04-08-1",
@@ -833,6 +1044,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/04",
    "patch_title": "Overwatch 2 Retail Patch Notes - April 8, 2025",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "sticky-bombs",
    "ability_en": "Sticky Bombs",
    "ability_cn": "黏性炸弹",
@@ -840,7 +1052,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": 30.0,
+   "metric": "fire rate",
+   "unit": null
   },
   {
    "patch": "en-2025-04-08-1",
@@ -849,6 +1064,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/04",
    "patch_title": "Overwatch 2 Retail Patch Notes - April 8, 2025",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "sticky-bombs",
    "ability_en": "Sticky Bombs",
    "ability_cn": "黏性炸弹",
@@ -856,7 +1072,10 @@
    "text_cn": null,
    "before": 14.0,
    "after": 12.0,
-   "metric": "explosion damage"
+   "by": -2.0,
+   "by_pct": null,
+   "metric": "explosion damage",
+   "unit": null
   },
   {
    "patch": "en-2025-04-01-1",
@@ -865,6 +1084,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/04",
    "patch_title": "Totally Normal Patch Notes for Totally Normalwatch – April 1, 2025",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "tri-shot",
    "ability_en": "Tri-Shot",
    "ability_cn": "三角射击",
@@ -872,7 +1092,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-04-01-1",
@@ -881,6 +1104,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/04",
    "patch_title": "Totally Normal Patch Notes for Totally Normalwatch – April 1, 2025",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "tri-shot",
    "ability_en": "Tri-Shot",
    "ability_cn": "三角射击",
@@ -888,7 +1112,10 @@
    "text_cn": null,
    "before": 25.0,
    "after": 14.0,
-   "metric": "damage"
+   "by": -11.0,
+   "by_pct": null,
+   "metric": "damage",
+   "unit": null
   },
   {
    "patch": "en-2025-04-01-1",
@@ -897,6 +1124,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/04",
    "patch_title": "Totally Normal Patch Notes for Totally Normalwatch – April 1, 2025",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "sticky-bombs",
    "ability_en": "Sticky Bombs",
    "ability_cn": "黏性炸弹",
@@ -904,7 +1132,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-04-01-1",
@@ -913,6 +1144,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/04",
    "patch_title": "Totally Normal Patch Notes for Totally Normalwatch – April 1, 2025",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "sticky-bombs",
    "ability_en": "Sticky Bombs",
    "ability_cn": "黏性炸弹",
@@ -920,7 +1152,10 @@
    "text_cn": null,
    "before": 17.0,
    "after": 20.0,
-   "metric": "damage"
+   "by": 3.0,
+   "by_pct": null,
+   "metric": "damage",
+   "unit": null
   },
   {
    "patch": "en-2025-04-01-1",
@@ -929,6 +1164,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/04",
    "patch_title": "Totally Normal Patch Notes for Totally Normalwatch – April 1, 2025",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "flight",
    "ability_en": "Flight",
    "ability_cn": "飞行",
@@ -936,7 +1172,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-04-01-1",
@@ -945,6 +1184,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/04",
    "patch_title": "Totally Normal Patch Notes for Totally Normalwatch – April 1, 2025",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "flight",
    "ability_en": "Flight",
    "ability_cn": "飞行",
@@ -952,7 +1192,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-04-01-1",
@@ -961,6 +1204,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/04",
    "patch_title": "Totally Normal Patch Notes for Totally Normalwatch – April 1, 2025",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "focusing-beam",
    "ability_en": "Focusing Beam",
    "ability_cn": "聚焦光线",
@@ -968,7 +1212,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-04-01-1",
@@ -977,6 +1224,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/04/",
    "patch_title": "完全正常的“完全正常先锋”补丁说明——2025年4月1日",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "tri-shot",
    "ability_en": "Tri-Shot",
    "ability_cn": "三角射击",
@@ -984,7 +1232,10 @@
    "text_cn": "现在会发射黏性炸弹。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-04-01-1",
@@ -993,6 +1244,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/04/",
    "patch_title": "完全正常的“完全正常先锋”补丁说明——2025年4月1日",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "tri-shot",
    "ability_en": "Tri-Shot",
    "ability_cn": "三角射击",
@@ -1000,7 +1252,10 @@
    "text_cn": "伤害从25降低至14。",
    "before": 25.0,
    "after": 14.0,
-   "metric": "伤害"
+   "by": -11.0,
+   "by_pct": null,
+   "metric": "damage",
+   "unit": null
   },
   {
    "patch": "cn-2025-04-01-1",
@@ -1009,6 +1264,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/04/",
    "patch_title": "完全正常的“完全正常先锋”补丁说明——2025年4月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "sticky-bombs",
    "ability_en": "Sticky Bombs",
    "ability_cn": "黏性炸弹",
@@ -1016,7 +1272,10 @@
    "text_cn": "现在会发射一簇“三角射击”射弹。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-04-01-1",
@@ -1025,6 +1284,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/04/",
    "patch_title": "完全正常的“完全正常先锋”补丁说明——2025年4月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "sticky-bombs",
    "ability_en": "Sticky Bombs",
    "ability_cn": "黏性炸弹",
@@ -1032,7 +1292,10 @@
    "text_cn": "伤害从17提高至20。",
    "before": 17.0,
    "after": 20.0,
-   "metric": "伤害"
+   "by": 3.0,
+   "by_pct": null,
+   "metric": "damage",
+   "unit": null
   },
   {
    "patch": "cn-2025-04-01-1",
@@ -1041,6 +1304,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/04/",
    "patch_title": "完全正常的“完全正常先锋”补丁说明——2025年4月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "flight",
    "ability_en": "Flight",
    "ability_cn": "飞行",
@@ -1048,7 +1312,10 @@
    "text_cn": "飞行会始终处于激活状态。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-04-01-1",
@@ -1057,6 +1324,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/04/",
    "patch_title": "完全正常的“完全正常先锋”补丁说明——2025年4月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "flight",
    "ability_en": "Flight",
    "ability_cn": "飞行",
@@ -1064,7 +1332,10 @@
    "text_cn": "激活飞行现在会让“回声”疾冲一小段距离。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-04-01-1",
@@ -1073,6 +1344,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/04/",
    "patch_title": "完全正常的“完全正常先锋”补丁说明——2025年4月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "focusing-beam",
    "ability_en": "Focusing Beam",
    "ability_cn": "聚焦光线",
@@ -1080,7 +1352,10 @@
    "text_cn": "现在会对生命值超过一半的敌人造成额外伤害。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-03-26-1",
@@ -1089,8 +1364,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/03/",
    "patch_title": "《守望先锋》补丁说明——2025年3月26日",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": null,
-   "text_cn": "基础生命值从225降低至150。"
+   "text_cn": "基础生命值从225降低至150。",
+   "before": 225.0,
+   "after": 150.0,
+   "by": -75.0,
+   "by_pct": null,
+   "metric": "health",
+   "unit": "hp"
   },
   {
    "patch": "cn-2025-03-26-1",
@@ -1099,8 +1382,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/03/",
    "patch_title": "《守望先锋》补丁说明——2025年3月26日",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": null,
-   "text_cn": "护盾生命值从0提高至75。"
+   "text_cn": "护盾生命值从0提高至75。",
+   "before": 0.0,
+   "after": 75.0,
+   "by": 75.0,
+   "by_pct": null,
+   "metric": "shield",
+   "unit": "hp"
   },
   {
    "patch": "en-2025-03-25-1",
@@ -1109,8 +1400,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/03",
    "patch_title": "Overwatch 2 Retail Patch Notes - March 25, 2025",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": "Base health reduced from 225 to 150.",
-   "text_cn": null
+   "text_cn": null,
+   "before": 225.0,
+   "after": 150.0,
+   "by": -75.0,
+   "by_pct": null,
+   "metric": "base health",
+   "unit": null
   },
   {
    "patch": "en-2025-03-25-1",
@@ -1119,8 +1418,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/03",
    "patch_title": "Overwatch 2 Retail Patch Notes - March 25, 2025",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": "Shield health increased from 0 to 75.",
-   "text_cn": null
+   "text_cn": null,
+   "before": 0.0,
+   "after": 75.0,
+   "by": 75.0,
+   "by_pct": null,
+   "metric": "shield",
+   "unit": "hp"
   },
   {
    "patch": "en-2025-02-18-1",
@@ -1129,6 +1436,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/02",
    "patch_title": "Overwatch 2 Retail Patch Notes + Hero Perks - February 18, 2025",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "friendly-imaging",
    "ability_en": "Friendly Imaging",
    "ability_cn": null,
@@ -1136,7 +1444,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-02-18-1",
@@ -1145,6 +1456,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/02",
    "patch_title": "Overwatch 2 Retail Patch Notes + Hero Perks - February 18, 2025",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "enhanced-duplication",
    "ability_en": "Enhanced Duplication",
    "ability_cn": null,
@@ -1152,7 +1464,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-02-18-1",
@@ -1161,6 +1476,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/02",
    "patch_title": "Overwatch 2 Retail Patch Notes + Hero Perks - February 18, 2025",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "full-salvo",
    "ability_en": "Full Salvo",
    "ability_cn": null,
@@ -1168,7 +1484,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-02-18-1",
@@ -1177,6 +1496,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/02",
    "patch_title": "Overwatch 2 Retail Patch Notes + Hero Perks - February 18, 2025",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "high-beams",
    "ability_en": "High Beams",
    "ability_cn": null,
@@ -1184,7 +1504,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-01-21-1",
@@ -1193,6 +1516,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/01",
    "patch_title": "OVERWATCH 2 PATCH NOTES – JANUARY 21, 2025",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "focusing-beam",
    "ability_en": "Focusing Beam",
    "ability_cn": "聚焦光线",
@@ -1200,7 +1524,10 @@
    "text_cn": null,
    "before": 50.0,
    "after": 75.0,
-   "metric": "hp"
+   "by": 25.0,
+   "by_pct": null,
+   "metric": "hp",
+   "unit": null
   },
   {
    "patch": "en-2024-12-17-1",
@@ -1209,6 +1536,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/12",
    "patch_title": "Overwatch 2 6v6 Experiment – December 17, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "focusing-beam",
    "ability_en": "Focusing Beam",
    "ability_cn": "聚焦光线",
@@ -1216,7 +1544,10 @@
    "text_cn": null,
    "before": 3.5,
    "after": 4.0,
-   "metric": "damage multiplier for low health targets"
+   "by": 0.5,
+   "by_pct": null,
+   "metric": "damage",
+   "unit": null
   },
   {
    "patch": "en-2024-12-17-1",
@@ -1225,6 +1556,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/12",
    "patch_title": "Overwatch 2 6v6 Experiment – December 17, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "duplicate",
    "ability_en": "Duplicate",
    "ability_cn": "人格复制",
@@ -1232,7 +1564,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2024-08-20-1",
@@ -1241,8 +1576,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/08",
    "patch_title": "Overwatch 2 Retail Patch Notes – August 20, 2024",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": "Base health reduced from 250 to 225.",
-   "text_cn": null
+   "text_cn": null,
+   "before": 250.0,
+   "after": 225.0,
+   "by": -25.0,
+   "by_pct": null,
+   "metric": "base health",
+   "unit": null
   },
   {
    "patch": "en-2024-05-14-1",
@@ -1251,6 +1594,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/05",
    "patch_title": "Overwatch 2 Retail Patch Notes – May 14, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "duplicate",
    "ability_en": "Duplicate",
    "ability_cn": "人格复制",
@@ -1258,7 +1602,10 @@
    "text_cn": null,
    "before": 4.0,
    "after": 4.5,
-   "metric": "ultimate gain multiplier while transformed"
+   "by": 0.5,
+   "by_pct": null,
+   "metric": "ultimate gain multiplier while transformed",
+   "unit": null
   },
   {
    "patch": "en-2024-04-01-1",
@@ -1267,6 +1614,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/04",
    "patch_title": "Overwatch 2 Really, Really, Really Balanced Patch Notes - April 1, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "focusing-beam",
    "ability_en": "Focusing Beam",
    "ability_cn": "聚焦光线",
@@ -1274,7 +1622,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2024-04-01-1",
@@ -1283,6 +1634,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/04",
    "patch_title": "Overwatch 2 Really, Really, Really Balanced Patch Notes - April 1, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "duplicate",
    "ability_en": "Duplicate",
    "ability_cn": "人格复制",
@@ -1290,7 +1642,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2024-04-01-1",
@@ -1299,6 +1654,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/04",
    "patch_title": "Overwatch 2 Really, Really, Really Balanced Patch Notes - April 1, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "duplicate",
    "ability_en": "Duplicate",
    "ability_cn": "人格复制",
@@ -1306,7 +1662,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2024-04-01-1",
@@ -1315,6 +1674,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/04",
    "patch_title": "Overwatch 2 Really, Really, Really Balanced Patch Notes - April 1, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "duplicate",
    "ability_en": "Duplicate",
    "ability_cn": "人格复制",
@@ -1322,7 +1682,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2024-04-01-1",
@@ -1331,6 +1694,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/04",
    "patch_title": "Overwatch 2 Really, Really, Really Balanced Patch Notes - April 1, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "duplicate",
    "ability_en": "Duplicate",
    "ability_cn": "人格复制",
@@ -1338,7 +1702,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2024-04-01-1",
@@ -1347,6 +1714,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/04",
    "patch_title": "Overwatch 2 Really, Really, Really Balanced Patch Notes - April 1, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "duplicate",
    "ability_en": "Duplicate",
    "ability_cn": "人格复制",
@@ -1354,7 +1722,10 @@
    "text_cn": null,
    "before": 4.0,
    "after": 6.5,
-   "metric": "bonus ult charge gain rate"
+   "by": 2.5,
+   "by_pct": null,
+   "metric": "bonus ult charge gain rate",
+   "unit": null
   },
   {
    "patch": "en-2024-02-13-1",
@@ -1363,6 +1734,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/02",
    "patch_title": "Overwatch 2 Retail Patch Notes – February 13, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "focusing-beam",
    "ability_en": "Focusing Beam",
    "ability_cn": "聚焦光线",
@@ -1370,7 +1742,10 @@
    "text_cn": null,
    "before": 0.2,
    "after": 0.25,
-   "metric": "width"
+   "by": 0.05,
+   "by_pct": null,
+   "metric": "width",
+   "unit": null
   },
   {
    "patch": "en-2024-02-13-1",
@@ -1379,6 +1754,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/02",
    "patch_title": "Overwatch 2 Retail Patch Notes – February 13, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "duplicate",
    "ability_en": "Duplicate",
    "ability_cn": "人格复制",
@@ -1386,7 +1762,10 @@
    "text_cn": null,
    "before": 300.0,
    "after": 350.0,
-   "metric": "maximum combined health value"
+   "by": 50.0,
+   "by_pct": null,
+   "metric": "maximum combined health value",
+   "unit": null
   },
   {
    "patch": "en-2024-02-13-1",
@@ -1395,8 +1774,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/02",
    "patch_title": "Overwatch 2 Retail Patch Notes – February 13, 2024",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": "Health increased from 200 to 250.",
-   "text_cn": null
+   "text_cn": null,
+   "before": 200.0,
+   "after": 250.0,
+   "by": 50.0,
+   "by_pct": null,
+   "metric": "health",
+   "unit": "hp"
   },
   {
    "patch": "en-2023-10-31-1",
@@ -1405,8 +1792,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/10",
    "patch_title": "Overwatch 2 Retail Patch Notes - October 31, 2023",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Added the Hero-Specific Options:",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2023-10-31-1",
@@ -1415,8 +1810,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/10",
    "patch_title": "Overwatch 2 Retail Patch Notes - October 31, 2023",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Crouch Activates Glide - Off by default.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2023-10-31-1",
@@ -1425,8 +1828,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/10",
    "patch_title": "Overwatch 2 Retail Patch Notes - October 31, 2023",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Rise During Flight With Ability 1 - Off by default.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2023-10-31-1",
@@ -1435,8 +1846,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/10",
    "patch_title": "Overwatch 2 Retail Patch Notes - October 31, 2023",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Flight Cancel Input - Ability 1 by default.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2023-10-31-1",
@@ -1445,8 +1864,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/10",
    "patch_title": "Overwatch 2 Retail Patch Notes - October 31, 2023",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Automatically Toggle Glide After Flight - Off by default.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2023-10-10-1",
@@ -1455,8 +1882,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/10",
    "patch_title": "Overwatch 2 Retail Patch Notes - October 10, 2023",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Added the hero-specific options:",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2023-10-10-1",
@@ -1465,8 +1900,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/10",
    "patch_title": "Overwatch 2 Retail Patch Notes - October 10, 2023",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Toggle Glide – Off by default.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2023-10-10-1",
@@ -1475,8 +1918,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/10",
    "patch_title": "Overwatch 2 Retail Patch Notes - October 10, 2023",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Secondary Fire Activates Glide on Gamepad - On by default.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2023-08-10-1",
@@ -1485,6 +1936,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/08",
    "patch_title": "Overwatch 2 Retail Patch Notes – August 10, 2023",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "focusing-beam",
    "ability_en": "Focusing Beam",
    "ability_cn": "聚焦光线",
@@ -1492,7 +1944,10 @@
    "text_cn": null,
    "before": 50.0,
    "after": 85.0,
-   "metric": "damage per second"
+   "by": 35.0,
+   "by_pct": null,
+   "metric": "damage",
+   "unit": null
   },
   {
    "patch": "en-2023-08-10-1",
@@ -1501,6 +1956,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/08",
    "patch_title": "Overwatch 2 Retail Patch Notes – August 10, 2023",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "duplicate",
    "ability_en": "Duplicate",
    "ability_cn": "人格复制",
@@ -1508,7 +1964,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2023-08-10-1",
@@ -1517,6 +1976,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/08",
    "patch_title": "Overwatch 2 Retail Patch Notes – August 10, 2023",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "duplicate",
    "ability_en": "Duplicate",
    "ability_cn": "人格复制",
@@ -1524,7 +1984,10 @@
    "text_cn": null,
    "before": 15.0,
    "after": 20.0,
-   "metric": "duration"
+   "by": 5.0,
+   "by_pct": null,
+   "metric": "duration",
+   "unit": "s"
   },
   {
    "patch": "en-2023-08-10-1",
@@ -1533,6 +1996,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/08",
    "patch_title": "Overwatch 2 Retail Patch Notes – August 10, 2023",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "duplicate",
    "ability_en": "Duplicate",
    "ability_cn": "人格复制",
@@ -1540,7 +2004,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2023-05-09-1",
@@ -1549,6 +2016,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/05",
    "patch_title": "Overwatch 2 Retail Patch Notes - May 9, 2023",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "duplicate",
    "ability_en": "Duplicate",
    "ability_cn": "人格复制",
@@ -1556,7 +2024,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": 25.0,
+   "metric": "ultimate_cost",
+   "unit": null
   },
   {
    "patch": "en-2023-05-09-1",
@@ -1565,6 +2036,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/05",
    "patch_title": "Overwatch 2 Retail Patch Notes - May 9, 2023",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "duplicate",
    "ability_en": "Duplicate",
    "ability_cn": "人格复制",
@@ -1572,7 +2044,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2023-05-09-1",
@@ -1581,8 +2056,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/05",
    "patch_title": "Overwatch 2 Retail Patch Notes - May 9, 2023",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Added the Hero-Specific Options:",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2023-05-09-1",
@@ -1591,8 +2074,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/05",
    "patch_title": "Overwatch 2 Retail Patch Notes - May 9, 2023",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Hold To Use Focusing Beam - Off by default",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2023-05-09-1",
@@ -1601,8 +2092,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/05",
    "patch_title": "Overwatch 2 Retail Patch Notes - May 9, 2023",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Hide Flight Cancel Text - Off by default",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2023-05-09-1",
@@ -1611,8 +2110,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/05",
    "patch_title": "Overwatch 2 Retail Patch Notes - May 9, 2023",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Hide Flight Timer - Off by default",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2021-06-03-1",
@@ -1621,6 +2128,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2021/06",
    "patch_title": "Overwatch Retail Patch Notes – June 3, 2021",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "duplicate",
    "ability_en": "Duplicate",
    "ability_cn": "人格复制",
@@ -1628,7 +2136,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": 15.0,
+   "metric": "ultimate_cost",
+   "unit": null
   },
   {
    "patch": "en-2021-04-22-1",
@@ -1637,6 +2148,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2021/04",
    "patch_title": "Overwatch Retail Patch Notes – April 22, 2021",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "duplicate",
    "ability_en": "Duplicate",
    "ability_cn": "人格复制",
@@ -1644,7 +2156,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2021-01-28-1",
@@ -1653,6 +2168,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2021/01",
    "patch_title": "Overwatch Retail Patch Notes – January 28, 2021",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "tri-shot",
    "ability_en": "Tri-Shot",
    "ability_cn": "三角射击",
@@ -1660,7 +2176,10 @@
    "text_cn": null,
    "before": 15.0,
    "after": 12.0,
-   "metric": "ammo"
+   "by": -3.0,
+   "by_pct": null,
+   "metric": "ammo",
+   "unit": null
   },
   {
    "patch": "en-2021-01-28-1",
@@ -1669,14 +2188,18 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2021/01",
    "patch_title": "Overwatch Retail Patch Notes – January 28, 2021",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "focusing-beam",
    "ability_en": "Focusing Beam",
    "ability_cn": "聚焦光线",
    "text_en": "Duration reduced from 2.5 seconds to 2 seconds",
    "text_cn": null,
-   "before": null,
-   "after": null,
-   "metric": null
+   "before": 2.5,
+   "after": 2.0,
+   "by": -0.5,
+   "by_pct": null,
+   "metric": "duration",
+   "unit": "s"
   },
   {
    "patch": "en-2020-06-16-1",
@@ -1685,6 +2208,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2020/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2020",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "focusing-beam",
    "ability_en": "Focusing Beam",
    "ability_cn": "聚焦光线",
@@ -1692,7 +2216,10 @@
    "text_cn": null,
    "before": 20.0,
    "after": 16.0,
-   "metric": "range"
+   "by": -4.0,
+   "by_pct": null,
+   "metric": "range",
+   "unit": "m"
   },
   {
    "patch": "en-2020-05-19-1",
@@ -1701,8 +2228,142 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2020/05",
    "patch_title": "Overwatch Retail Patch Notes – May 19, 2020",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Reduced the height of Echo's head hit volume",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   }
- ]
+ ],
+ "values": {
+  "focusing-beam:cooldown": [
+   {
+    "date": "2026-07-01",
+    "value": 1.0
+   }
+  ],
+  "attr:ultimate_cost:初始终极技能充能": [
+   {
+    "date": "2026-06-17",
+    "value": 30.0
+   }
+  ],
+  "sticky-bombs:explosion damage": [
+   {
+    "date": "2025-04-08",
+    "value": 12.0
+   }
+  ],
+  "tri-shot:damage": [
+   {
+    "date": "2025-04-01",
+    "value": 14.0
+   }
+  ],
+  "sticky-bombs:damage": [
+   {
+    "date": "2025-04-01",
+    "value": 20.0
+   }
+  ],
+  "attr:health:health": [
+   {
+    "date": "2024-02-13",
+    "value": 250.0
+   },
+   {
+    "date": "2025-03-26",
+    "value": 150.0
+   }
+  ],
+  "attr:health:shield": [
+   {
+    "date": "2025-03-25",
+    "value": 75.0
+   },
+   {
+    "date": "2025-03-26",
+    "value": 75.0
+   }
+  ],
+  "attr:health:base health": [
+   {
+    "date": "2024-08-20",
+    "value": 225.0
+   },
+   {
+    "date": "2025-03-25",
+    "value": 150.0
+   }
+  ],
+  "focusing-beam:hp": [
+   {
+    "date": "2025-01-21",
+    "value": 75.0
+   }
+  ],
+  "focusing-beam:damage": [
+   {
+    "date": "2023-08-10",
+    "value": 85.0
+   },
+   {
+    "date": "2024-12-17",
+    "value": 4.0
+   }
+  ],
+  "duplicate:ultimate gain multiplier while transformed": [
+   {
+    "date": "2024-05-14",
+    "value": 4.5
+   }
+  ],
+  "duplicate:bonus ult charge gain rate": [
+   {
+    "date": "2024-04-01",
+    "value": 6.5
+   }
+  ],
+  "focusing-beam:width": [
+   {
+    "date": "2024-02-13",
+    "value": 0.25
+   }
+  ],
+  "duplicate:maximum combined health value": [
+   {
+    "date": "2024-02-13",
+    "value": 350.0
+   }
+  ],
+  "duplicate:duration": [
+   {
+    "date": "2023-08-10",
+    "value": 20.0
+   }
+  ],
+  "tri-shot:ammo": [
+   {
+    "date": "2021-01-28",
+    "value": 12.0
+   }
+  ],
+  "focusing-beam:duration": [
+   {
+    "date": "2021-01-28",
+    "value": 2.0
+   }
+  ],
+  "focusing-beam:range": [
+   {
+    "date": "2020-06-16",
+    "value": 16.0
+   }
+  ]
+ }
 }

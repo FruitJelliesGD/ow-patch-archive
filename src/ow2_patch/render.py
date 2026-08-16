@@ -17,6 +17,13 @@ def render_md(patch: Patch) -> str:
     return "\n".join(lines).rstrip() + "\n"
 
 
+def _entry_text(entry) -> str:
+    """Text of a general entry that may be a legacy str or a dict."""
+    if isinstance(entry, dict):
+        return entry.get("text_en") or entry.get("text_cn") or ""
+    return str(entry)
+
+
 def _render_section(section: Section) -> list[str]:
     lines: list[str] = []
     role = f"（{ROLE_CN.get(section.role, section.role)}）" if section.role else ""
@@ -43,7 +50,7 @@ def _render_hero(hero: HeroUpdate) -> list[str]:
     if hero.dev_note:
         lines += [f"*开发者注：{hero.dev_note}*", ""]
     for g in hero.general:
-        lines.append(f"- {g}")
+        lines.append(f"- {_entry_text(g)}")
     if hero.general:
         lines.append("")
     for perk in hero.perks:

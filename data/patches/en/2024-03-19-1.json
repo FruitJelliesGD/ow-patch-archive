@@ -27,7 +27,18 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Base Health decreased from 400 to 375."
+      {
+       "text_en": "Base Health decreased from 400 to 375.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 400.0,
+       "after": 375.0,
+       "by": -25.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -41,21 +52,33 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Duration increased from 4 to 5 seconds.",
          "text_cn": null,
          "before": 4.0,
          "after": 5.0,
-         "metric": "duration"
+         "metric": "duration",
+         "by": 1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "duration"
         },
         {
          "text_en": "Cooldown increased from 10 to 12 seconds.",
          "text_cn": null,
          "before": 10.0,
          "after": 12.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": 2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       }
@@ -89,7 +112,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -114,7 +141,11 @@
          "text_cn": null,
          "before": 65.0,
          "after": 60.0,
-         "metric": "primary fire damage per second"
+         "metric": "primary fire damage per second",
+         "by": -5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "primary fire damage per second"
         }
        ]
       },
@@ -128,7 +159,11 @@
          "text_cn": null,
          "before": 50.0,
          "after": 40.0,
-         "metric": "health"
+         "metric": "health",
+         "by": -10.0,
+         "by_pct": null,
+         "unit": "hp",
+         "raw_metric": "health"
         }
        ]
       }
@@ -139,5 +174,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:af891a20d418c3cb470fcbf21d36ed99b6a1dbbb5d5957de3b54158c19f22226"
+ "hash": "sha256:3ba76f39f580269872e43114bc56f20bfdc707d3c94dcd037d2a21b5072d00ea"
 }

@@ -71,7 +71,11 @@
          "text_cn": null,
          "before": 3.5,
          "after": 3.75,
-         "metric": "spread"
+         "metric": "spread",
+         "by": 0.25,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "spread"
         }
        ]
       },
@@ -85,7 +89,11 @@
          "text_cn": null,
          "before": 25.0,
          "after": 15.0,
-         "metric": "impact damage"
+         "metric": "impact damage",
+         "by": -10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "impact damage"
         }
        ]
       },
@@ -99,7 +107,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "fixed in last update- call mech ultimate cost",
+         "by": null,
+         "by_pct": 12.0,
+         "unit": null,
+         "raw_metric": "fixed in last update- call mech ultimate cost"
         }
        ]
       }
@@ -124,14 +136,22 @@
          "text_cn": null,
          "before": 2.5,
          "after": 2.0,
-         "metric": "duration"
+         "metric": "duration",
+         "by": -0.5,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "duration"
         },
         {
          "text_en": "Cooldown increased from 10 to 11 seconds",
          "text_cn": null,
          "before": 10.0,
          "after": 11.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": 1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       },
@@ -145,14 +165,22 @@
          "text_cn": null,
          "before": 2.5,
          "after": 2.0,
-         "metric": "duration"
+         "metric": "duration",
+         "by": -0.5,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "duration"
         },
         {
          "text_en": "Cooldown increased from 10 to 11 seconds",
          "text_cn": null,
          "before": 10.0,
          "after": 11.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": 1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       }
@@ -186,14 +214,22 @@
          "text_cn": null,
          "before": 30.0,
          "after": 24.0,
-         "metric": "maximum ammo"
+         "metric": "maximum ammo",
+         "by": -6.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "maximum ammo"
         },
         {
          "text_en": "Damage reduced from 29 to 27",
          "text_cn": null,
          "before": 29.0,
          "after": 27.0,
-         "metric": "damage"
+         "metric": "damage",
+         "by": -2.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage"
         }
        ]
       }
@@ -218,14 +254,22 @@
          "text_cn": null,
          "before": 0.5,
          "after": 0.75,
-         "metric": "arming time"
+         "metric": "fixed in last update- arming time",
+         "by": 0.25,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "fixed in last update- arming time"
         },
         {
          "text_en": "Fixed in last update- Trapped duration reduced from 3 to 2.5 seconds",
          "text_cn": null,
          "before": 3.0,
          "after": 2.5,
-         "metric": "trapped duration"
+         "metric": "fixed in last update- trapped duration",
+         "by": -0.5,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "fixed in last update- trapped duration"
         }
        ]
       }
@@ -250,21 +294,33 @@
          "text_cn": null,
          "before": 1.75,
          "after": 1.5,
-         "metric": "ability lockout duration"
+         "metric": "ability lockout duration",
+         "by": -0.25,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "ability lockout duration"
         },
         {
          "text_en": "Hacked enemies are no longer valid targets for hacking for the duration of the 8-second effect",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Hacked enemy damage multiplier reduced from 40 to 25%",
          "text_cn": null,
          "before": 40.0,
          "after": 25.0,
-         "metric": "hacked enemy damage multiplier"
+         "metric": "hacked enemy damage multiplier",
+         "by": -15.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "hacked enemy damage multiplier"
         }
        ]
       }
@@ -298,7 +354,11 @@
          "text_cn": null,
          "before": 0.4,
          "after": 0.25,
-         "metric": "invulnerability duration"
+         "metric": "invulnerability duration",
+         "by": -0.15,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "invulnerability duration"
         }
        ]
       }
@@ -333,5 +393,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:4e20817203f0683a63972313bc5cf9d3664d7a1e47e549e736b9d0d34b5dc3ac"
+ "hash": "sha256:87b66dc272289eacd4defcb941cb758fd89c1d6705f3b2c5a85c823d8a71ec50"
 }

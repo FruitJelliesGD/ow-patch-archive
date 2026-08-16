@@ -80,7 +80,11 @@
          "text_cn": null,
          "before": 40.0,
          "after": 50.0,
-         "metric": "damage reduction"
+         "metric": "damage",
+         "by": 10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage reduction"
         }
        ]
       }
@@ -105,7 +109,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -130,7 +138,11 @@
          "text_cn": null,
          "before": 1200.0,
          "after": 1400.0,
-         "metric": "maximum health"
+         "metric": "maximum health",
+         "by": 200.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "maximum health"
         }
        ]
       }
@@ -155,7 +167,11 @@
          "text_cn": null,
          "before": 2.0,
          "after": 1.6,
-         "metric": "manual reload time"
+         "metric": "manual reload time",
+         "by": -0.4,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "manual reload time"
         }
        ]
       }
@@ -189,14 +205,22 @@
          "text_cn": null,
          "before": 8.0,
          "after": 12.0,
-         "metric": "number of shots to reach maximum spread"
+         "metric": "number of shots to reach maximum spread",
+         "by": 4.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "number of shots to reach maximum spread"
         },
         {
          "text_en": "Spread reduced by 12%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "spread",
+         "by": null,
+         "by_pct": 12.0,
+         "unit": null,
+         "raw_metric": "spread"
         }
        ]
       }
@@ -221,7 +245,11 @@
          "text_cn": null,
          "before": 18.0,
          "after": 19.0,
-         "metric": "damage"
+         "metric": "damage",
+         "by": 1.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage"
         }
        ]
       },
@@ -235,7 +263,11 @@
          "text_cn": null,
          "before": 80.0,
          "after": 90.0,
-         "metric": "explosion damage"
+         "metric": "explosion damage",
+         "by": 10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "explosion damage"
         }
        ]
       },
@@ -249,7 +281,11 @@
          "text_cn": null,
          "before": 35.0,
          "after": 40.0,
-         "metric": "healing per second"
+         "metric": "healing",
+         "by": 5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "healing per second"
         }
        ]
       }
@@ -274,21 +310,33 @@
          "text_cn": null,
          "before": 45.0,
          "after": 50.0,
-         "metric": "secondary fire maximum impact damage"
+         "metric": "secondary fire maximum impact damage",
+         "by": 5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "secondary fire maximum impact damage"
         },
         {
          "text_en": "Secondary Fire maximum explosion damage increased from 45 to 50.",
          "text_cn": null,
          "before": 45.0,
          "after": 50.0,
-         "metric": "secondary fire maximum explosion damage"
+         "metric": "secondary fire maximum explosion damage",
+         "by": 5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "secondary fire maximum explosion damage"
         },
         {
          "text_en": "Regenerate up to 30 shield health per second when primary fire deals damage to barriers or enemies with shield health.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -302,14 +350,22 @@
          "text_cn": null,
          "before": 40.0,
          "after": 25.0,
-         "metric": "damage per second"
+         "metric": "damage",
+         "by": -15.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage per second"
         },
         {
          "text_en": "Turrets now reveal enemy heroes to allies while dealing damage and for 1 additional second afterwards.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -334,7 +390,11 @@
          "text_cn": null,
          "before": 5.0,
          "after": 4.5,
-         "metric": "secondary fire spread"
+         "metric": "secondary fire spread",
+         "by": -0.5,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "secondary fire spread"
         }
        ]
       },
@@ -348,14 +408,22 @@
          "text_cn": null,
          "before": 14.0,
          "after": 11.0,
-         "metric": "damage"
+         "metric": "damage",
+         "by": -3.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage"
         },
         {
          "text_en": "Cooldown increased from 10 to 12 seconds.",
          "text_cn": null,
          "before": 10.0,
          "after": 12.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": 2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       },
@@ -369,7 +437,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -403,7 +475,11 @@
          "text_cn": null,
          "before": 1.0,
          "after": 0.9,
-         "metric": "recovery"
+         "metric": "recovery",
+         "by": -0.1,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "recovery"
         }
        ]
       }
@@ -428,14 +504,22 @@
          "text_cn": null,
          "before": 40.0,
          "after": 30.0,
-         "metric": "maximum range"
+         "metric": "maximum range",
+         "by": -10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "maximum range"
         },
         {
          "text_en": "Time to wear off the target when not in line-of-sight reduced from 2 to 1.5 seconds.",
          "text_cn": null,
          "before": 2.0,
          "after": 1.5,
-         "metric": "sight"
+         "metric": "time to wear off the target when not in line-of-sight",
+         "by": -0.5,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "time to wear off the target when not in line-of-sight"
         }
        ]
       }
@@ -470,5 +554,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:ac63163b4cda7eec8d61a325cdcfac7fe8b7bc007c8f83df82d44db894cba539"
+ "hash": "sha256:111f8ceb60ae56879a7a2bad1ac07e4c92f4ac25b44827b24f77fde122bc534d"
 }

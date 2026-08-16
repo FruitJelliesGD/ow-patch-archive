@@ -147,8 +147,30 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Pilot health increased from 150 to 175.",
-      "Mech armor increased from 300 to 375."
+      {
+       "text_en": "Pilot health increased from 150 to 175.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 150.0,
+       "after": 175.0,
+       "by": 25.0,
+       "by_pct": null,
+       "metric": "pilot health",
+       "unit": null
+      },
+      {
+       "text_en": "Mech armor increased from 300 to 375.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 300.0,
+       "after": 375.0,
+       "by": 75.0,
+       "by_pct": null,
+       "metric": "mech armor",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -162,14 +184,22 @@
          "text_cn": null,
          "before": 900.0,
          "after": 1000.0,
-         "metric": "explosion maximum damage"
+         "metric": "explosion maximum damage",
+         "by": 100.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "explosion maximum damage"
         },
         {
          "text_en": "Inner explosion radius (range for maximum damage before falloff begins) increased from 4 to 6 meters.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -182,7 +212,18 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Health increased from 300 to 375."
+      {
+       "text_en": "Health increased from 300 to 375.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 300.0,
+       "after": 375.0,
+       "by": 75.0,
+       "by_pct": null,
+       "metric": "health",
+       "unit": "hp"
+      }
      ],
      "perks": [],
      "abilities": [
@@ -196,14 +237,22 @@
          "text_cn": null,
          "before": 50.0,
          "after": 75.0,
-         "metric": "max impact damage"
+         "metric": "max impact damage",
+         "by": 25.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "max impact damage"
         },
         {
          "text_en": "Max wall slam damage increased from 30 to 40.",
          "text_cn": null,
          "before": 30.0,
          "after": 40.0,
-         "metric": "max wall slam damage"
+         "metric": "max wall slam damage",
+         "by": 10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "max wall slam damage"
         }
        ]
       }
@@ -216,7 +265,18 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Health increased from 300 to 375."
+      {
+       "text_en": "Health increased from 300 to 375.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 300.0,
+       "after": 375.0,
+       "by": 75.0,
+       "by_pct": null,
+       "metric": "health",
+       "unit": "hp"
+      }
      ],
      "perks": [],
      "abilities": [
@@ -230,7 +290,11 @@
          "text_cn": null,
          "before": 60.0,
          "after": 90.0,
-         "metric": "wound damage over time"
+         "metric": "wound damage over time",
+         "by": 30.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "wound damage over time"
         }
        ]
       }
@@ -243,7 +307,18 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Health increased from 300 to 400."
+      {
+       "text_en": "Health increased from 300 to 400.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 300.0,
+       "after": 400.0,
+       "by": 100.0,
+       "by_pct": null,
+       "metric": "health",
+       "unit": "hp"
+      }
      ],
      "perks": [],
      "abilities": []
@@ -255,7 +330,18 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Armor increased from 275 to 350."
+      {
+       "text_en": "Armor increased from 275 to 350.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 275.0,
+       "after": 350.0,
+       "by": 75.0,
+       "by_pct": null,
+       "metric": "armor",
+       "unit": "hp"
+      }
      ],
      "perks": [],
      "abilities": []
@@ -267,7 +353,18 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Health increased from 200 to 275."
+      {
+       "text_en": "Health increased from 200 to 275.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 200.0,
+       "after": 275.0,
+       "by": 75.0,
+       "by_pct": null,
+       "metric": "health",
+       "unit": "hp"
+      }
      ],
      "perks": [],
      "abilities": []
@@ -279,8 +376,30 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Health increased from 200 to 250.",
-      "Armor increased from 250 to 275."
+      {
+       "text_en": "Health increased from 200 to 250.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 200.0,
+       "after": 250.0,
+       "by": 50.0,
+       "by_pct": null,
+       "metric": "health",
+       "unit": "hp"
+      },
+      {
+       "text_en": "Armor increased from 250 to 275.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 250.0,
+       "after": 275.0,
+       "by": 25.0,
+       "by_pct": null,
+       "metric": "armor",
+       "unit": "hp"
+      }
      ],
      "perks": [],
      "abilities": [
@@ -294,7 +413,11 @@
          "text_cn": null,
          "before": 85.0,
          "after": 100.0,
-         "metric": "damage"
+         "metric": "damage",
+         "by": 15.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage"
         }
        ]
       },
@@ -308,7 +431,11 @@
          "text_cn": null,
          "before": 225.0,
          "after": 275.0,
-         "metric": "wall impact damage"
+         "metric": "wall impact damage",
+         "by": 50.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "wall impact damage"
         }
        ]
       }
@@ -321,7 +448,18 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Health increased from 550 to 650."
+      {
+       "text_en": "Health increased from 550 to 650.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 550.0,
+       "after": 650.0,
+       "by": 100.0,
+       "by_pct": null,
+       "metric": "health",
+       "unit": "hp"
+      }
      ],
      "perks": [],
      "abilities": []
@@ -333,7 +471,18 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Shields increased from 200 to 275."
+      {
+       "text_en": "Shields increased from 200 to 275.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 200.0,
+       "after": 275.0,
+       "by": 75.0,
+       "by_pct": null,
+       "metric": "shield",
+       "unit": "hp"
+      }
      ],
      "perks": [],
      "abilities": []
@@ -345,8 +494,30 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Health increased from 200 to 225.",
-      "Armor increased from 200 to 250."
+      {
+       "text_en": "Health increased from 200 to 225.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 200.0,
+       "after": 225.0,
+       "by": 25.0,
+       "by_pct": null,
+       "metric": "health",
+       "unit": "hp"
+      },
+      {
+       "text_en": "Armor increased from 200 to 250.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 200.0,
+       "after": 250.0,
+       "by": 50.0,
+       "by_pct": null,
+       "metric": "armor",
+       "unit": "hp"
+      }
      ],
      "perks": [],
      "abilities": [
@@ -360,7 +531,11 @@
          "text_cn": null,
          "before": 60.0,
          "after": 75.0,
-         "metric": "primary fire damage"
+         "metric": "primary fire damage",
+         "by": 15.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "primary fire damage"
         }
        ]
       },
@@ -374,7 +549,11 @@
          "text_cn": null,
          "before": 40.0,
          "after": 50.0,
-         "metric": "punch damage"
+         "metric": "punch damage",
+         "by": 10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "punch damage"
         }
        ]
       }
@@ -387,7 +566,18 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Armor increased from 100 to 175."
+      {
+       "text_en": "Armor increased from 100 to 175.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 100.0,
+       "after": 175.0,
+       "by": 75.0,
+       "by_pct": null,
+       "metric": "armor",
+       "unit": "hp"
+      }
      ],
      "perks": [],
      "abilities": []
@@ -399,7 +589,18 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Health increased from 100 to 175."
+      {
+       "text_en": "Health increased from 100 to 175.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 100.0,
+       "after": 175.0,
+       "by": 75.0,
+       "by_pct": null,
+       "metric": "health",
+       "unit": "hp"
+      }
      ],
      "perks": [],
      "abilities": [
@@ -413,7 +614,11 @@
          "text_cn": null,
          "before": 0.15,
          "after": 0.2,
-         "metric": "primary fire beam width"
+         "metric": "primary fire beam width",
+         "by": 0.05,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "primary fire beam width"
         }
        ]
       }
@@ -435,7 +640,18 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Health increased from 200 to 250."
+      {
+       "text_en": "Health increased from 200 to 250.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 200.0,
+       "after": 250.0,
+       "by": 50.0,
+       "by_pct": null,
+       "metric": "health",
+       "unit": "hp"
+      }
      ],
      "perks": [],
      "abilities": [
@@ -449,7 +665,11 @@
          "text_cn": null,
          "before": 14.0,
          "after": 17.0,
-         "metric": "s weapon damage"
+         "metric": "s weapon damage",
+         "by": 3.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "s weapon damage"
         }
        ]
       }
@@ -462,7 +682,18 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Health increased from 200 to 250."
+      {
+       "text_en": "Health increased from 200 to 250.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 200.0,
+       "after": 250.0,
+       "by": 50.0,
+       "by_pct": null,
+       "metric": "health",
+       "unit": "hp"
+      }
      ],
      "perks": [],
      "abilities": []
@@ -474,7 +705,18 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Health increased from 225 to 275."
+      {
+       "text_en": "Health increased from 225 to 275.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 225.0,
+       "after": 275.0,
+       "by": 50.0,
+       "by_pct": null,
+       "metric": "health",
+       "unit": "hp"
+      }
      ],
      "perks": [],
      "abilities": [
@@ -488,14 +730,22 @@
          "text_cn": null,
          "before": 130.0,
          "after": 150.0,
-         "metric": "initial damage rate"
+         "metric": "initial damage rate",
+         "by": 20.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "initial damage rate"
         },
         {
          "text_en": "Damage rate increased from 260 to 300.",
          "text_cn": null,
          "before": 260.0,
          "after": 300.0,
-         "metric": "damage rate"
+         "metric": "damage",
+         "by": 40.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage rate"
         }
        ]
       }
@@ -508,7 +758,18 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Health increased from 200 to 250."
+      {
+       "text_en": "Health increased from 200 to 250.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 200.0,
+       "after": 250.0,
+       "by": 50.0,
+       "by_pct": null,
+       "metric": "health",
+       "unit": "hp"
+      }
      ],
      "perks": [],
      "abilities": [
@@ -522,7 +783,11 @@
          "text_cn": null,
          "before": 0.2,
          "after": 0.25,
-         "metric": "width"
+         "metric": "width",
+         "by": 0.05,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "width"
         }
        ]
       },
@@ -536,7 +801,11 @@
          "text_cn": null,
          "before": 300.0,
          "after": 350.0,
-         "metric": "maximum combined health value"
+         "metric": "maximum combined health value",
+         "by": 50.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "maximum combined health value"
         }
        ]
       }
@@ -549,7 +818,18 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Health increased from 200 to 250."
+      {
+       "text_en": "Health increased from 200 to 250.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 200.0,
+       "after": 250.0,
+       "by": 50.0,
+       "by_pct": null,
+       "metric": "health",
+       "unit": "hp"
+      }
      ],
      "perks": [],
      "abilities": [
@@ -563,7 +843,11 @@
          "text_cn": null,
          "before": 0.9,
          "after": 0.7,
-         "metric": "swing recovery"
+         "metric": "swing recovery",
+         "by": -0.2,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "swing recovery"
         }
        ]
       }
@@ -576,7 +860,18 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Health increased from 200 to 250."
+      {
+       "text_en": "Health increased from 200 to 250.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 200.0,
+       "after": 250.0,
+       "by": 50.0,
+       "by_pct": null,
+       "metric": "health",
+       "unit": "hp"
+      }
      ],
      "perks": [],
      "abilities": [
@@ -590,14 +885,22 @@
          "text_cn": null,
          "before": 65.0,
          "after": 75.0,
-         "metric": "damage"
+         "metric": "damage",
+         "by": 10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage"
         },
         {
          "text_en": "Cooldown reduced from 10 to 8 seconds.",
          "text_cn": null,
          "before": 10.0,
          "after": 8.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": -2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       }
@@ -610,7 +913,18 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Health increased from 200 to 250."
+      {
+       "text_en": "Health increased from 200 to 250.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 200.0,
+       "after": 250.0,
+       "by": 50.0,
+       "by_pct": null,
+       "metric": "health",
+       "unit": "hp"
+      }
      ],
      "perks": [],
      "abilities": [
@@ -624,7 +938,11 @@
          "text_cn": null,
          "before": 0.25,
          "after": 0.2,
-         "metric": "base projectile size"
+         "metric": "base projectile size",
+         "by": -0.05,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "base projectile size"
         }
        ]
       }
@@ -637,7 +955,18 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Health increased from 250 to 300."
+      {
+       "text_en": "Health increased from 250 to 300.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 250.0,
+       "after": 300.0,
+       "by": 50.0,
+       "by_pct": null,
+       "metric": "health",
+       "unit": "hp"
+      }
      ],
      "perks": [],
      "abilities": []
@@ -649,7 +978,18 @@
      "role": "damage",
      "dev_note": "Developer Comments: Pharah has a significant update that empowers more individual plays and shifting her movement capabilities from high up in the air to more horizontal movement that can cover distance quickly.",
      "general": [
-      "Health increased from 200 to 250."
+      {
+       "text_en": "Health increased from 200 to 250.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 200.0,
+       "after": 250.0,
+       "by": 50.0,
+       "by_pct": null,
+       "metric": "health",
+       "unit": "hp"
+      }
      ],
      "perks": [],
      "abilities": [
@@ -663,21 +1003,33 @@
          "text_cn": null,
          "before": 0.85,
          "after": 0.8,
-         "metric": "recovery"
+         "metric": "recovery",
+         "by": -0.05,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "recovery"
         },
         {
          "text_en": "Projectile speed increased from 35 to 40 meters per second.",
          "text_cn": null,
          "before": 35.0,
          "after": 40.0,
-         "metric": "projectile speed"
+         "metric": "projectile_speed",
+         "by": 5.0,
+         "by_pct": null,
+         "unit": "m/s",
+         "raw_metric": "projectile speed"
         },
         {
          "text_en": "Explosion self-damage reduced from 50% to 25%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -691,28 +1043,44 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Provides a quick horizontal boost in the direction Pharah is moving.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "8-second cooldown.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Added a setting to activate Jet Dash on Double Jump instead.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -726,21 +1094,33 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Vertical boost height reduced by 20%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "vertical boost height",
+         "by": null,
+         "by_pct": 20.0,
+         "unit": null,
+         "raw_metric": "vertical boost height"
         },
         {
          "text_en": "Cooldown increased from 10 to 14 seconds.",
          "text_cn": null,
          "before": 10.0,
          "after": 14.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": 4.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       },
@@ -754,28 +1134,44 @@
          "text_cn": null,
          "before": 9.0,
          "after": 7.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": -2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         },
         {
          "text_en": "Explosion now deals 30 damage to enemy targets.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Explosion radius reduced from 8 to 6 meters.",
          "text_cn": null,
          "before": 8.0,
          "after": 6.0,
-         "metric": "explosion radius"
+         "metric": "explosion radius",
+         "by": -2.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "explosion radius"
         },
         {
          "text_en": "Knockback reduced by 10%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "knockback",
+         "by": null,
+         "by_pct": 10.0,
+         "unit": null,
+         "raw_metric": "knockback"
         }
        ]
       },
@@ -789,7 +1185,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -803,21 +1203,33 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Now requires landing to recharge fuel.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Can now be activated without fuel to slow your descent.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -830,7 +1242,18 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Health increased from 250 to 300."
+      {
+       "text_en": "Health increased from 250 to 300.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 250.0,
+       "after": 300.0,
+       "by": 50.0,
+       "by_pct": null,
+       "metric": "health",
+       "unit": "hp"
+      }
      ],
      "perks": [],
      "abilities": []
@@ -842,7 +1265,18 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Health increased from 200 to 250."
+      {
+       "text_en": "Health increased from 200 to 250.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 200.0,
+       "after": 250.0,
+       "by": 50.0,
+       "by_pct": null,
+       "metric": "health",
+       "unit": "hp"
+      }
      ],
      "perks": [],
      "abilities": [
@@ -861,7 +1295,18 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Health increased from 200 to 250."
+      {
+       "text_en": "Health increased from 200 to 250.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 200.0,
+       "after": 250.0,
+       "by": 50.0,
+       "by_pct": null,
+       "metric": "health",
+       "unit": "hp"
+      }
      ],
      "perks": [],
      "abilities": []
@@ -873,7 +1318,18 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Health increased from 200 to 250."
+      {
+       "text_en": "Health increased from 200 to 250.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 200.0,
+       "after": 250.0,
+       "by": 50.0,
+       "by_pct": null,
+       "metric": "health",
+       "unit": "hp"
+      }
      ],
      "perks": [],
      "abilities": []
@@ -885,7 +1341,18 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Shields increased from 100 to 150."
+      {
+       "text_en": "Shields increased from 100 to 150.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 100.0,
+       "after": 150.0,
+       "by": 50.0,
+       "by_pct": null,
+       "metric": "shield",
+       "unit": "hp"
+      }
      ],
      "perks": [],
      "abilities": [
@@ -899,7 +1366,11 @@
          "text_cn": null,
          "before": 0.2,
          "after": 0.25,
-         "metric": "primary fire beam width"
+         "metric": "primary fire beam width",
+         "by": 0.05,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "primary fire beam width"
         }
        ]
       }
@@ -912,7 +1383,18 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Health increased from 200 to 250."
+      {
+       "text_en": "Health increased from 200 to 250.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 200.0,
+       "after": 250.0,
+       "by": 50.0,
+       "by_pct": null,
+       "metric": "health",
+       "unit": "hp"
+      }
      ],
      "perks": [],
      "abilities": []
@@ -924,7 +1406,18 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Health increased from 150 to 175."
+      {
+       "text_en": "Health increased from 150 to 175.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 150.0,
+       "after": 175.0,
+       "by": 25.0,
+       "by_pct": null,
+       "metric": "health",
+       "unit": "hp"
+      }
      ],
      "perks": [],
      "abilities": []
@@ -936,7 +1429,18 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Health increased from 175 to 200."
+      {
+       "text_en": "Health increased from 175 to 200.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 175.0,
+       "after": 200.0,
+       "by": 25.0,
+       "by_pct": null,
+       "metric": "health",
+       "unit": "hp"
+      }
      ],
      "perks": [],
      "abilities": []
@@ -957,7 +1461,18 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "Health increased from 200 to 250."
+      {
+       "text_en": "Health increased from 200 to 250.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 200.0,
+       "after": 250.0,
+       "by": 50.0,
+       "by_pct": null,
+       "metric": "health",
+       "unit": "hp"
+      }
      ],
      "perks": [],
      "abilities": []
@@ -969,7 +1484,18 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "Health increased from 200 to 250."
+      {
+       "text_en": "Health increased from 200 to 250.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 200.0,
+       "after": 250.0,
+       "by": 50.0,
+       "by_pct": null,
+       "metric": "health",
+       "unit": "hp"
+      }
      ],
      "perks": [],
      "abilities": []
@@ -981,7 +1507,18 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "Health increased from 150 to 200."
+      {
+       "text_en": "Health increased from 150 to 200.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 150.0,
+       "after": 200.0,
+       "by": 50.0,
+       "by_pct": null,
+       "metric": "health",
+       "unit": "hp"
+      }
      ],
      "perks": [],
      "abilities": [
@@ -995,7 +1532,11 @@
          "text_cn": null,
          "before": 35.0,
          "after": 45.0,
-         "metric": "damage"
+         "metric": "damage",
+         "by": 10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage"
         }
        ]
       }
@@ -1008,7 +1549,18 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "Health increased from 200 to 250."
+      {
+       "text_en": "Health increased from 200 to 250.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 200.0,
+       "after": 250.0,
+       "by": 50.0,
+       "by_pct": null,
+       "metric": "health",
+       "unit": "hp"
+      }
      ],
      "perks": [],
      "abilities": []
@@ -1020,7 +1572,18 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "Health increased from 200 to 250."
+      {
+       "text_en": "Health increased from 200 to 250.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 200.0,
+       "after": 250.0,
+       "by": 50.0,
+       "by_pct": null,
+       "metric": "health",
+       "unit": "hp"
+      }
      ],
      "perks": [],
      "abilities": [
@@ -1034,7 +1597,11 @@
          "text_cn": null,
          "before": 0.18,
          "after": 0.15,
-         "metric": "base projectile size"
+         "metric": "base projectile size",
+         "by": -0.03,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "base projectile size"
         }
        ]
       }
@@ -1047,7 +1614,18 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "Health increased from 175 to 225."
+      {
+       "text_en": "Health increased from 175 to 225.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 175.0,
+       "after": 225.0,
+       "by": 50.0,
+       "by_pct": null,
+       "metric": "health",
+       "unit": "hp"
+      }
      ],
      "perks": [],
      "abilities": []
@@ -1059,7 +1637,18 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "Health increased from 200 to 250"
+      {
+       "text_en": "Health increased from 200 to 250",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 200.0,
+       "after": 250.0,
+       "by": 50.0,
+       "by_pct": null,
+       "metric": "health",
+       "unit": "hp"
+      }
      ],
      "perks": [],
      "abilities": [
@@ -1073,21 +1662,33 @@
          "text_cn": null,
          "before": 25.0,
          "after": 35.0,
-         "metric": "damage"
+         "metric": "damage",
+         "by": 10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage"
         },
         {
          "text_en": "Knockback increased 12%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "knockback",
+         "by": null,
+         "by_pct": 12.0,
+         "unit": null,
+         "raw_metric": "knockback"
         },
         {
          "text_en": "Movement lockout duration increased from 0.3 to 0.45 seconds.",
          "text_cn": null,
          "before": 0.3,
          "after": 0.45,
-         "metric": "movement lockout duration"
+         "metric": "movement lockout duration",
+         "by": 0.15,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "movement lockout duration"
         }
        ]
       }
@@ -1100,7 +1701,18 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "Health increased from 200 to 250."
+      {
+       "text_en": "Health increased from 200 to 250.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 200.0,
+       "after": 250.0,
+       "by": 50.0,
+       "by_pct": null,
+       "metric": "health",
+       "unit": "hp"
+      }
      ],
      "perks": [],
      "abilities": [
@@ -1114,7 +1726,11 @@
          "text_cn": null,
          "before": 1.5,
          "after": 1.0,
-         "metric": "crouch cancel"
+         "metric": "crouch cancel",
+         "by": -0.5,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "crouch cancel"
         }
        ]
       },
@@ -1128,7 +1744,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -1141,7 +1761,18 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "Health increased from 200 to 250."
+      {
+       "text_en": "Health increased from 200 to 250.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 200.0,
+       "after": 250.0,
+       "by": 50.0,
+       "by_pct": null,
+       "metric": "health",
+       "unit": "hp"
+      }
      ],
      "perks": [],
      "abilities": [
@@ -1155,14 +1786,22 @@
          "text_cn": null,
          "before": 50.0,
          "after": 65.0,
-         "metric": "secondary fire damage"
+         "metric": "secondary fire damage",
+         "by": 15.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "secondary fire damage"
         },
         {
          "text_en": "Secondary fire target acquisition radius increased from 0.6 to 0.7 meters.",
          "text_cn": null,
          "before": 0.6,
          "after": 0.7,
-         "metric": "secondary fire target acquisition radius"
+         "metric": "secondary fire target acquisition radius",
+         "by": 0.1,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "secondary fire target acquisition radius"
         }
        ]
       }
@@ -1175,8 +1814,30 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "Health increased from 75 to 100.",
-      "Shields increased from 150 to 175."
+      {
+       "text_en": "Health increased from 75 to 100.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 75.0,
+       "after": 100.0,
+       "by": 25.0,
+       "by_pct": null,
+       "metric": "health",
+       "unit": "hp"
+      },
+      {
+       "text_en": "Shields increased from 150 to 175.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 150.0,
+       "after": 175.0,
+       "by": 25.0,
+       "by_pct": null,
+       "metric": "shield",
+       "unit": "hp"
+      }
      ],
      "perks": [],
      "abilities": []
@@ -1226,5 +1887,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:737d201de28cbc577572e9e2ee276535293695725c446e606444c8c7cec63d76"
+ "hash": "sha256:be43fbb1b2e20907ce08ade1a44fc9ddc8da94fc770d4f8075d8287d712fa15c"
 }

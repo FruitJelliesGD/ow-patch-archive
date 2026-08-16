@@ -113,7 +113,11 @@
          "text_cn": null,
          "before": 650.0,
          "after": 600.0,
-         "metric": "maximum health"
+         "metric": "maximum health",
+         "by": -50.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "maximum health"
         }
        ]
       }
@@ -168,28 +172,44 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Projectile now explodes on contact with the ground.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Explosion can now be manually detonated while airborne.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Explosion damage reduced from 50 to 15.",
          "text_cn": null,
          "before": 50.0,
          "after": 15.0,
-         "metric": "explosion damage"
+         "metric": "explosion damage",
+         "by": -35.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "explosion damage"
         }
        ]
       }
@@ -254,7 +274,11 @@
          "text_cn": null,
          "before": 1.5,
          "after": 1.75,
-         "metric": "reload time"
+         "metric": "reload time",
+         "by": 0.25,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "reload time"
         }
        ]
       },
@@ -268,7 +292,11 @@
          "text_cn": null,
          "before": 6.0,
          "after": 8.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": 2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       }
@@ -281,7 +309,18 @@
      "role": "tank",
      "dev_note": "Adding increased damage to deployables to Winston’s base kit introduces unique interactions and improves his effectiveness within certain matchups without increasing base weapon power.",
      "general": [
-      "(6v6) Base health reduced from 350 to 325. (Total health including armor and shields reduced from 550 to 525.)"
+      {
+       "text_en": "(6v6) Base health reduced from 350 to 325. (Total health including armor and shields reduced from 550 to 525.)",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 350.0,
+       "after": 325.0,
+       "by": -25.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -295,7 +334,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -308,7 +351,18 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "(6v6) Base health reduced from 475 to 450. (Total health including armor and shields reduced from 575 to 550.)"
+      {
+       "text_en": "(6v6) Base health reduced from 475 to 450. (Total health including armor and shields reduced from 575 to 550.)",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 475.0,
+       "after": 450.0,
+       "by": -25.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -329,8 +383,30 @@
      "role": "damage",
      "dev_note": "Anran’s damage could feel underpowered relative to the time required to ignite enemies. Increasing Fan the Flames’ damage improves her ability to secure eliminations, while adding healing to Dancing Blaze’s base kit rewards effective use of the ability and improves her survivability.",
      "general": [
-      "Minor Perk cost reduced by 7%.",
-      "Major Perk cost reduced by 5%."
+      {
+       "text_en": "Minor Perk cost reduced by 7%.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 7.0,
+       "metric": "minor perk cost",
+       "unit": null
+      },
+      {
+       "text_en": "Major Perk cost reduced by 5%.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 5.0,
+       "metric": "major perk cost",
+       "unit": null
+      }
      ],
      "perks": [
       {
@@ -355,7 +431,11 @@
          "text_cn": null,
          "before": 5.0,
          "after": 6.0,
-         "metric": "impact damage"
+         "metric": "impact damage",
+         "by": 1.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "impact damage"
         }
        ]
       },
@@ -369,7 +449,11 @@
          "text_cn": null,
          "before": 50.0,
          "after": 30.0,
-         "metric": "impact damage"
+         "metric": "impact damage",
+         "by": -20.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "impact damage"
         }
        ]
       },
@@ -383,7 +467,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -416,8 +504,30 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Minor Perk cost increased by 10%.",
-      "Major Perk cost increased by 6%."
+      {
+       "text_en": "Minor Perk cost increased by 10%.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 10.0,
+       "metric": "minor perk cost",
+       "unit": null
+      },
+      {
+       "text_en": "Major Perk cost increased by 6%.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 6.0,
+       "metric": "major perk cost",
+       "unit": null
+      }
      ],
      "perks": [
       {
@@ -471,7 +581,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -506,7 +620,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -582,7 +700,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -596,14 +718,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Explosion damage reduced from 30 to 25.",
          "text_cn": null,
          "before": 30.0,
          "after": 25.0,
-         "metric": "explosion damage"
+         "metric": "explosion damage",
+         "by": -5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "explosion damage"
         }
        ]
       }
@@ -639,14 +769,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Cooldown increased from 3 to 6 seconds.",
          "text_cn": null,
          "before": 3.0,
          "after": 6.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": 3.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       }
@@ -691,21 +829,33 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Reloading while sprinting reduces Sprint’s movement speed bonus by 50%, diminishing over the duration.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Added a custom setting allowing Sprint to cancel reload.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -718,8 +868,30 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Minor Perk cost reduced by 6%.",
-      "Major Perk cost reduced by 5%."
+      {
+       "text_en": "Minor Perk cost reduced by 6%.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 6.0,
+       "metric": "minor perk cost",
+       "unit": null
+      },
+      {
+       "text_en": "Major Perk cost reduced by 5%.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 5.0,
+       "metric": "major perk cost",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -733,7 +905,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "move_speed",
+         "by": null,
+         "by_pct": 50.0,
+         "unit": null,
+         "raw_metric": "movement speed bonus"
         }
        ]
       }
@@ -746,8 +922,30 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Minor Perk cost reduced by 10%.",
-      "Major Perk cost reduced by 7%."
+      {
+       "text_en": "Minor Perk cost reduced by 10%.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 10.0,
+       "metric": "minor perk cost",
+       "unit": null
+      },
+      {
+       "text_en": "Major Perk cost reduced by 7%.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 7.0,
+       "metric": "major perk cost",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -759,9 +957,42 @@
      "role": "damage",
      "dev_note": "Vendetta can feel difficult to mitigate once she closes the distance. These adjustments lower her survivability and make it more challenging for her to remain within effective range, forcing more deliberate positioning and cooldown usage.",
      "general": [
-      "Armor reduced from 100 to 75.",
-      "Minor Perk cost reduced by 6%.",
-      "Major Perk cost reduced by 5%."
+      {
+       "text_en": "Armor reduced from 100 to 75.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 100.0,
+       "after": 75.0,
+       "by": -25.0,
+       "by_pct": null,
+       "metric": "armor",
+       "unit": "hp"
+      },
+      {
+       "text_en": "Minor Perk cost reduced by 6%.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 6.0,
+       "metric": "minor perk cost",
+       "unit": null
+      },
+      {
+       "text_en": "Major Perk cost reduced by 5%.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 5.0,
+       "metric": "major perk cost",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -775,7 +1006,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -789,7 +1024,11 @@
          "text_cn": null,
          "before": 2.5,
          "after": 2.0,
-         "metric": "overhead swing bonus range"
+         "metric": "overhead swing bonus range",
+         "by": -0.5,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "overhead swing bonus range"
         }
        ]
       }
@@ -802,8 +1041,30 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Minor Perk cost reduced by 6%.",
-      "Major Perk cost reduced by 4%."
+      {
+       "text_en": "Minor Perk cost reduced by 6%.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 6.0,
+       "metric": "minor perk cost",
+       "unit": null
+      },
+      {
+       "text_en": "Major Perk cost reduced by 4%.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 4.0,
+       "metric": "major perk cost",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -836,7 +1097,11 @@
          "text_cn": null,
          "before": 14.0,
          "after": 12.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": -2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       }
@@ -871,7 +1136,11 @@
          "text_cn": null,
          "before": 250.0,
          "after": 300.0,
-         "metric": "health"
+         "metric": "health",
+         "by": 50.0,
+         "by_pct": null,
+         "unit": "hp",
+         "raw_metric": "health"
         }
        ]
       }
@@ -906,7 +1175,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "acceleration",
+         "by": null,
+         "by_pct": 11.0,
+         "unit": null,
+         "raw_metric": "acceleration"
         }
        ]
       }
@@ -931,7 +1204,11 @@
          "text_cn": null,
          "before": 10.0,
          "after": 12.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": 2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       },
@@ -945,7 +1222,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -980,7 +1261,11 @@
          "text_cn": null,
          "before": 80.0,
          "after": 90.0,
-         "metric": "maximum healing"
+         "metric": "maximum healing",
+         "by": 10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "maximum healing"
         }
        ]
       },
@@ -994,7 +1279,11 @@
          "text_cn": null,
          "before": 45.0,
          "after": 55.0,
-         "metric": "healing"
+         "metric": "healing",
+         "by": 10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "healing"
         }
        ]
       },
@@ -1008,7 +1297,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -1053,7 +1346,11 @@
          "text_cn": null,
          "before": 20.0,
          "after": 18.0,
-         "metric": "healing"
+         "metric": "healing",
+         "by": -2.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "healing"
         }
        ]
       }
@@ -1078,7 +1375,11 @@
          "text_cn": null,
          "before": 35.0,
          "after": 30.0,
-         "metric": "teleport range"
+         "metric": "teleport range",
+         "by": -5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "teleport range"
         }
        ]
       },
@@ -1092,7 +1393,11 @@
          "text_cn": null,
          "before": 5.0,
          "after": 7.0,
-         "metric": "fire rate"
+         "metric": "fire rate",
+         "by": 2.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "fire rate"
         }
        ]
       }
@@ -1105,8 +1410,30 @@
      "role": "support",
      "dev_note": "These changes make small adjustments to the flow of Mizuki’s kit. Katashiro Return can now be used more reactively, while other tuning helps keep his overall power within intended bounds.",
      "general": [
-      "Minor Perk cost increased by 16%.",
-      "Major Perk cost increased by 10%."
+      {
+       "text_en": "Minor Perk cost increased by 16%.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 16.0,
+       "metric": "minor perk cost",
+       "unit": null
+      },
+      {
+       "text_en": "Major Perk cost increased by 10%.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 10.0,
+       "metric": "major perk cost",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -1120,14 +1447,22 @@
          "text_cn": null,
          "before": 5.0,
          "after": 4.5,
-         "metric": "minimum healing"
+         "metric": "minimum healing",
+         "by": -0.5,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "minimum healing"
         },
         {
          "text_en": "(6v6) Maximum Healing reduced from 20 to 18.",
          "text_cn": null,
          "before": 20.0,
          "after": 18.0,
-         "metric": "maximum healing"
+         "metric": "maximum healing",
+         "by": -2.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "maximum healing"
         }
        ]
       },
@@ -1141,7 +1476,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -1155,14 +1494,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Movement speed bonus reduced from 35% to 30%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -1198,28 +1545,44 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Cooldown reduced from 15 to 12 seconds.",
          "text_cn": null,
          "before": 15.0,
          "after": 12.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": -3.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         },
         {
          "text_en": "Base healing increased from 50 to 60.",
          "text_cn": null,
          "before": 50.0,
          "after": 60.0,
-         "metric": "base healing"
+         "metric": "base healing",
+         "by": 10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "base healing"
         },
         {
          "text_en": "Healing multiplier on allies below 50% health reduced from 3x to 2x.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -1233,7 +1596,11 @@
          "text_cn": null,
          "before": 60.0,
          "after": 55.0,
-         "metric": "healing"
+         "metric": "healing",
+         "by": -5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "healing"
         }
        ]
       },
@@ -1247,7 +1614,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "launch speed",
+         "by": null,
+         "by_pct": 10.0,
+         "unit": null,
+         "raw_metric": "launch speed"
         }
        ]
       }
@@ -1272,7 +1643,11 @@
          "text_cn": null,
          "before": 4.0,
          "after": 3.5,
-         "metric": "duration"
+         "metric": "duration",
+         "by": -0.5,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "duration"
         }
        ]
       }
@@ -1297,7 +1672,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -1349,102 +1728,1083 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Added to the Stadium roster.",
-      "Void Blight - Power",
-      "[Void Accelerator] infects enemies with nanites which explode for 20(WP) damage after dealing 100 damage.",
-      "Void Surge - Power",
-      "[Void Accelerator] periodically releases a burst of 6 additional projectiles during continuous fire.",
-      "Ramparts - Power",
-      "[Void Barrier] gains an additional charge.",
-      "Recursion Relay - Power",
-      "+25% [Void Barrier] size. [Void Accelerator] projectile and [Pummel] that passes through the [Void Barrier] gain 10% increased damage.",
-      "Final Form - Power",
-      "While [Nemesis Form] is active, Ramattra is healed for 80 per second while within [Ravenous Vortex].",
-      "Second Phase - Power",
-      "When [Nemesis Form] is activated, reduce the cooldown of [Ravenous Vortex] by 100%.",
-      "Breakout - Power",
-      "While blocking in [Nemesis Form], use [Pummel] to perform a dashing punch. (4s Cooldown)",
-      "Conversion Protocol - Power",
-      "[Block] heals Ramattra for 50% of damage mitigated over 3s.",
-      "Retaliation - Power",
-      "Releasing [Block] deals damage equal to 100% of the amount mitigated, up to 100 to enemies within 6m.",
-      "Insatiable Spiral - Power",
-      "+50% [Ravenous Vortex] Radius, +30% [Ravenous Vortex] Damage",
-      "Ravaging Vortex - Power",
-      "When [Ravenous Vortex] is detonated, deal 50 damage and gain 2% Ultimate Charge per enemy hit.",
-      "Dreadknight - Power",
-      "+50% [Annihilation] Damage, +2s [Annihilation] Duration",
-      "Fusion Core - Rare Weapon Hero Item",
-      "5% Attack Speed",
-      "When [Block] mititgates damage, gain 15% Attack Speed for 3s.",
-      "4000 Cost",
-      "Merged Munitions - Rare Weapon Hero Item",
-      "10% Weapon Power",
-      "50% [Void Accelerator] projectile size",
-      "4500 Cost",
-      "Omnium Augment - Rare Weapon Hero Item",
-      "10% Weapon Power",
-      "25% [Pummel] Range",
-      "4500 Cost",
-      "R-7000 Powercell - Epic Weapon Hero Item",
-      "5% Weapon Power",
-      "50% [Void Accelerator] Projectile Speed",
-      "While continuously shooting [Void Accelerator], gain up to 20% Weapon Power over 3s.",
-      "12500 Cost",
-      "Anima of Anubis - Epic Weapon Hero Item",
-      "10% Ability Power",
-      "10% Attack Speed",
-      "[Pummel] damage is also increased by Ability Power.",
-      "13000 Cost",
-      "Voracious Maelstrom - Rare Ability Hero Item",
-      "5% Cooldown Reduction",
-      "For each enemy hit by [Ravenous Vortex], reduce [Nemesis Form]'s cooldown by 1s.",
-      "4000 Cost",
-      "Null Vector - Rare Ability Hero Item",
-      "5% Cooldown Reduction",
-      "100% [Ravenous Vortex] Height",
-      "4000 Cost",
-      "Abyssal Extender - Epic Ability Hero Item",
-      "25 Shields",
-      "10% Cooldown Reduction",
-      "50% [Void Barrier] Duration",
-      "10000 Cost",
-      "Swirling Ward - Epic Ability Hero Item",
-      "15% Ability Power",
-      "10% Cooldown Reduction",
-      "All allies within [Ravenous Vortex] gain 300% increased jump height and 25% increased Movement Speed.",
-      "10000 Cost",
-      "Ultimatum Axis - Epic Ability Hero Item",
-      "15% Starting Ultimate Charge",
-      "50% [Annihilation] Range",
-      "Activating [Annihilation] pulls in enemies within 6m.",
-      "9000 Cost",
-      "Shambali Shielding - Rare Survival Hero Item",
-      "25 Shields",
-      "Receive 5% more Healing while in [Block].",
-      "[Block]'s movement speed penalty is removed.",
-      "4500 Cost",
-      "Zenyatta's Aura - Rare Survival Hero Item",
-      "25 Health",
-      "Gain 100 Overhealth after coming out of [Nemesis Form].",
-      "4000 Cost",
-      "Colossal Construct - Rare Survival Hero Item",
-      "25 Armor",
-      "Gain 20% of [Annihilation] damage as Overhealth.",
-      "5000 Cost",
-      "Nano-mender - Epic Survival Hero Item",
-      "25 Shields",
-      "35% [Void Barrier] Health",
-      "[Void Barrier] heals allies within 6m by 100 on spawn.",
-      "Caustic Exo-Armor - Epic Survival Hero Item",
-      "50 Health",
-      "10% Weapon Lifesteal",
-      "10% Ability Lifesteal",
-      "+15% Lifesteal while in [Nemesis Form]",
-      "9000 Cost"
+      {
+       "text_en": "Added to the Stadium roster.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "+25% [Void Barrier] size. [Void Accelerator] projectile and [Pummel] that passes through the [Void Barrier] gain 10% increased damage.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "While [Nemesis Form] is active, Ramattra is healed for 80 per second while within [Ravenous Vortex].",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "When [Nemesis Form] is activated, reduce the cooldown of [Ravenous Vortex] by 100%.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "While blocking in [Nemesis Form], use [Pummel] to perform a dashing punch. (4s Cooldown)",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "[Block] heals Ramattra for 50% of damage mitigated over 3s.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Releasing [Block] deals damage equal to 100% of the amount mitigated, up to 100 to enemies within 6m.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "+50% [Ravenous Vortex] Radius, +30% [Ravenous Vortex] Damage",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "When [Ravenous Vortex] is detonated, deal 50 damage and gain 2% Ultimate Charge per enemy hit.",
+       "text_cn": null,
+       "subject": "ultimate_cost",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "+50% [Annihilation] Damage, +2s [Annihilation] Duration",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Fusion Core - Rare Weapon Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "5% Attack Speed",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "When [Block] mititgates damage, gain 15% Attack Speed for 3s.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "4000 Cost",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Merged Munitions - Rare Weapon Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "10% Weapon Power",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "50% [Void Accelerator] projectile size",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "4500 Cost",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Omnium Augment - Rare Weapon Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "10% Weapon Power",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "25% [Pummel] Range",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "4500 Cost",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "R-7000 Powercell - Epic Weapon Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "5% Weapon Power",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "50% [Void Accelerator] Projectile Speed",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "While continuously shooting [Void Accelerator], gain up to 20% Weapon Power over 3s.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "12500 Cost",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Anima of Anubis - Epic Weapon Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "10% Ability Power",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "10% Attack Speed",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "13000 Cost",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Voracious Maelstrom - Rare Ability Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "5% Cooldown Reduction",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "For each enemy hit by [Ravenous Vortex], reduce [Nemesis Form]'s cooldown by 1s.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "4000 Cost",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Null Vector - Rare Ability Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "5% Cooldown Reduction",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "100% [Ravenous Vortex] Height",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "4000 Cost",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Abyssal Extender - Epic Ability Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "25 Shields",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "10% Cooldown Reduction",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "50% [Void Barrier] Duration",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "10000 Cost",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Swirling Ward - Epic Ability Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "15% Ability Power",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "10% Cooldown Reduction",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "All allies within [Ravenous Vortex] gain 300% increased jump height and 25% increased Movement Speed.",
+       "text_cn": null,
+       "subject": "move_speed",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "10000 Cost",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Ultimatum Axis - Epic Ability Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "15% Starting Ultimate Charge",
+       "text_cn": null,
+       "subject": "ultimate_cost",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "50% [Annihilation] Range",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Activating [Annihilation] pulls in enemies within 6m.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "9000 Cost",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Shambali Shielding - Rare Survival Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "25 Shields",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Receive 5% more Healing while in [Block].",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "[Block]'s movement speed penalty is removed.",
+       "text_cn": null,
+       "subject": "move_speed",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "4500 Cost",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Zenyatta's Aura - Rare Survival Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "25 Health",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Gain 100 Overhealth after coming out of [Nemesis Form].",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "4000 Cost",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Colossal Construct - Rare Survival Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "25 Armor",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Gain 20% of [Annihilation] damage as Overhealth.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "5000 Cost",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Nano-mender - Epic Survival Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "25 Shields",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "35% [Void Barrier] Health",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Caustic Exo-Armor - Epic Survival Hero Item",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "50 Health",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "10% Weapon Lifesteal",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "10% Ability Lifesteal",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "+15% Lifesteal while in [Nemesis Form]",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "9000 Cost",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
-     "perks": [],
-     "abilities": []
+     "perks": [
+      {
+       "name_en": "Void Blight",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Void Surge",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Ramparts",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Recursion Relay",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Final Form",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Second Phase",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Breakout",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Conversion Protocol",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Retaliation",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Insatiable Spiral",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Ravaging Vortex",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Dreadknight",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": "Void Accelerator",
+       "name_cn": null,
+       "slug": "void-accelerator",
+       "changes": [
+        {
+         "text_en": "[Void Accelerator] infects enemies with nanites which explode for 20(WP) damage after dealing 100 damage.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "unit": null,
+         "raw_metric": null
+        },
+        {
+         "text_en": "[Void Accelerator] periodically releases a burst of 6 additional projectiles during continuous fire.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "unit": null,
+         "raw_metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Void Barrier",
+       "name_cn": "虚空屏障",
+       "slug": "void-barrier",
+       "changes": [
+        {
+         "text_en": "[Void Barrier] gains an additional charge.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "unit": null,
+         "raw_metric": null
+        },
+        {
+         "text_en": "[Void Barrier] heals allies within 6m by 100 on spawn.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "unit": null,
+         "raw_metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Pummel",
+       "name_cn": null,
+       "slug": "pummel",
+       "changes": [
+        {
+         "text_en": "[Pummel] damage is also increased by Ability Power.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "unit": null,
+         "raw_metric": null
+        }
+       ]
+      }
+     ]
     },
     {
      "slug": "sigma",
@@ -1453,10 +2813,28 @@
      "role": "tank",
      "dev_note": "We're adding a small buff here to help increase the viability of this power as an option for Weapon Power oriented builds.",
      "general": [
-      "Symphonic Syzygy - Power",
-      "Damage Absorbed threshold for Attack Speed reduced to 50 (Down from 100)."
+      {
+       "text_en": "Damage Absorbed threshold for Attack Speed reduced to 50 (Down from 100).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 100.0,
+       "after": 50.0,
+       "by": -50.0,
+       "by_pct": null,
+       "metric": "damage",
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Symphonic Syzygy",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     },
     {
@@ -1466,15 +2844,78 @@
      "role": "tank",
      "dev_note": "Winston has been struggling in the last season. We're starting with some smaller buffs to some of his weaker powers as well as a currency buff, but will continue to monitor his performance.",
      "general": [
-      "Currency from damage and healing increased by 12.5%.",
-      "Lightning Rod - Power",
-      "Bounce Damage increased to 75% (Up from 50%).",
-      "Volatile Volt - Power",
-      "Critical Damage increased to 200% (Up from 175%).",
-      "Thick Skin - Power",
-      "Added \"+25% Starting Ultimate Charge\"."
+      {
+       "text_en": "Currency from damage and healing increased by 12.5%.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 12.5,
+       "metric": "currency from damage and healing",
+       "unit": null
+      },
+      {
+       "text_en": "Bounce Damage increased to 75% (Up from 50%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Critical Damage increased to 200% (Up from 175%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Added \"+25% Starting Ultimate Charge\".",
+       "text_cn": null,
+       "subject": "ultimate_cost",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Lightning Rod",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Volatile Volt",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Thick Skin",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     }
    ],
@@ -1493,12 +2934,47 @@
      "role": "damage",
      "dev_note": "Machine Gun Freja builds continue to overperform so we're trimming some power off the supporting pieces.",
      "general": [
-      "Deep Pockets - Power",
-      "Max Ammo restore reduced to 30% (Down from 40%).",
-      "Forager - Power",
-      "Max Life Healing reduced to 6% (Down from 8%)."
+      {
+       "text_en": "Max Ammo restore reduced to 30% (Down from 40%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Max Life Healing reduced to 6% (Down from 8%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Deep Pockets",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Forager",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     },
     {
@@ -1508,14 +2984,102 @@
      "role": "damage",
      "dev_note": "This combination of items has proven to be out of bounds recently, so we're shaving some statistical power from each of these.",
      "general": [
-      "Zip Grease - Epic Weapon Hero Item",
-      "Removed 5% Weapon Power.",
-      "Refreshing Radiation - Epic Survival Hero Item",
-      "Max Life Overhealth Scaling reduced to 6% (Down from 8%).",
-      "Jamison Jumpers - Epic Survival Hero Item",
-      "Removed 10% Weapon Power.",
-      "Ability Power increased to 15% (Up from 10%).",
-      "Cooldown Reduction upon self detonating Concussion Mine reduced to 10% (Down from 15%)."
+      {
+       "text_en": "Zip Grease - Epic Weapon Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Removed 5% Weapon Power.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Refreshing Radiation - Epic Survival Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Max Life Overhealth Scaling reduced to 6% (Down from 8%).",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Jamison Jumpers - Epic Survival Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Removed 10% Weapon Power.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Ability Power increased to 15% (Up from 10%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Cooldown Reduction upon self detonating Concussion Mine reduced to 10% (Down from 15%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -1527,19 +3091,116 @@
      "role": "damage",
      "dev_note": "We're buffing some of Vendetta's weaker options to give her more build variety. We'll be continuing to keep a close eye on the performance of her strongest build to make sure its not out of bounds.",
      "general": [
-      "Currency from damage and healing increased by 5%.",
-      "Cyclone Charge - Power",
-      "Whirlwind Dash Damage during additional duration increased to 75% (Up from 50%).",
-      "Double Dash - Power",
-      "Whirlwind Dash reactivation damage increased to 75% (Up from 50%).",
-      "Skycut - Power",
-      "Free Projected Edge damage increased to 75% (Up from 50%).",
-      "Overloaded Strike - Power",
-      "Mini Sundering Blade damage increased to 50% increased damage (Up from 25%).",
-      "Cataclisma - Power",
-      "Explosion Damage increased to 30 (Up from 20)."
+      {
+       "text_en": "Currency from damage and healing increased by 5%.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 5.0,
+       "metric": "currency from damage and healing",
+       "unit": null
+      },
+      {
+       "text_en": "Whirlwind Dash Damage during additional duration increased to 75% (Up from 50%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Whirlwind Dash reactivation damage increased to 75% (Up from 50%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Free Projected Edge damage increased to 75% (Up from 50%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Mini Sundering Blade damage increased to 50% increased damage (Up from 25%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Explosion Damage increased to 30 (Up from 20).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 20.0,
+       "after": 30.0,
+       "by": 10.0,
+       "by_pct": null,
+       "metric": "explosion damage",
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Cyclone Charge",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Double Dash",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Skycut",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Overloaded Strike",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Cataclisma",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     }
    ],
@@ -1558,8 +3219,30 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "Perfected Formula - Rare Survival Hero Item",
-      "Nano Boost Duration increased to 25% (Up from 15%)."
+      {
+       "text_en": "Perfected Formula - Rare Survival Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Nano Boost Duration increased to 25% (Up from 15%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -1571,41 +3254,375 @@
      "role": "support",
      "dev_note": "We're improving Juno's Weapon Power oriented builds and improving the viability of some lesser picked powers and items.",
      "general": [
-      "Medimaster - Power",
-      "Critical Multiplier decreased to 175% (Down from 200%).",
-      "Tooltip now correctly states that it also allows you to crit on allies.",
-      "Fission Chamber - Power",
-      "New",
-      "While affected by [Hyper Ring], [Medi-Blaster] has a fully automatic fire rate.",
-      "Heal Formation - Power",
-      "New",
-      "Allies affected by [Hyper Ring] are healed for 40% of any damage you do.",
-      "Stellar Focus - Power",
-      "Added \"While using [Glide Boost] or hovering, gain 100% more Ultimate Charge from Damage or Healing.\"",
-      "Rally Ring - Power",
-      "Removed",
-      "Black Hole - Power",
-      "Removed",
-      "Pulse Spike - Epic Weapon Hero Item",
-      "Removed Attack Speed after using Pulsar Torpedoes.",
-      "Added \"+35% Ally Lock On Speed\".",
-      "Cost decreased to 10000 (Down from 11000).",
-      "Long Range Blaster - Epic Weapon Hero Item",
-      "Removed \"[Mediblaster] deals 15% increased damage and healing to targets farther than 12m away.\"",
-      "Added \"[Mediblaster] has 5m increased falloff range.\"",
-      "Gravitational Push - Epic Weapon Hero Item",
-      "Cost decreased to 9000 (Down from 10000).",
-      "Lux Loop - Rare Ability Hero Item",
-      "Ability Power decreased to 5% (Down from 10%).",
-      "Added 5% Weapon Power.",
-      "Speed Tunnel - Rare Ability Hero Item",
-      "New",
-      "Activating Glide Boost as you pass through Hyper Ring reduces cooldown of Glide Boost by 50%.",
-      "5000 Cost",
-      "Boosted Rockets - Epic Survival Hero Item",
-      "Cost decreased to 9500 (Down from 12000)."
+      {
+       "text_en": "Critical Multiplier decreased to 175% (Down from 200%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Tooltip now correctly states that it also allows you to crit on allies.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "New",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "While affected by [Hyper Ring], [Medi-Blaster] has a fully automatic fire rate.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "New",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Allies affected by [Hyper Ring] are healed for 40% of any damage you do.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Added \"While using [Glide Boost] or hovering, gain 100% more Ultimate Charge from Damage or Healing.\"",
+       "text_cn": null,
+       "subject": "ultimate_cost",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Removed",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Removed",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Pulse Spike - Epic Weapon Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Removed Attack Speed after using Pulsar Torpedoes.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Added \"+35% Ally Lock On Speed\".",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Cost decreased to 10000 (Down from 11000).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Long Range Blaster - Epic Weapon Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Removed \"[Mediblaster] deals 15% increased damage and healing to targets farther than 12m away.\"",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Added \"[Mediblaster] has 5m increased falloff range.\"",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Gravitational Push - Epic Weapon Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Cost decreased to 9000 (Down from 10000).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Lux Loop - Rare Ability Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Ability Power decreased to 5% (Down from 10%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Added 5% Weapon Power.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Speed Tunnel - Rare Ability Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "New",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Activating Glide Boost as you pass through Hyper Ring reduces cooldown of Glide Boost by 50%.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "5000 Cost",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Boosted Rockets - Epic Survival Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Cost decreased to 9500 (Down from 12000).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Medimaster",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Fission Chamber",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Heal Formation",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Stellar Focus",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Rally Ring",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Black Hole",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     },
     {
@@ -1615,12 +3632,47 @@
      "role": "support",
      "dev_note": "We're buffing some underutilized powers to help bring them in more line with Wuyang's other options.",
      "general": [
-      "Wave Lance - Power",
-      "Non-empowered Primary Fire projectile speed increased to 150% (Up from 100%).",
-      "Shore Up - Power",
-      "Active Restorative Stream self healing increased to 100% (Up from 75%)."
+      {
+       "text_en": "Non-empowered Primary Fire projectile speed increased to 150% (Up from 100%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Active Restorative Stream self healing increased to 100% (Up from 75%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Wave Lance",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Shore Up",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     },
     {
@@ -1630,12 +3682,47 @@
      "role": "support",
      "dev_note": "We're slightly decreasing the survivability potential of Zenyatta, and will continue to monitor his performance in this area.",
      "general": [
-      "Enlightenment - Power",
-      "Healing based on damage dealt reduced to 30% (Down from 35%).",
-      "Seeking Salvation - Power",
-      "Homing Health Threshold increased to 50% (Up from 35%)."
+      {
+       "text_en": "Healing based on damage dealt reduced to 30% (Down from 35%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Homing Health Threshold increased to 50% (Up from 35%).",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Enlightenment",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Seeking Salvation",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     }
    ],
@@ -1670,5 +3757,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:dc387a295431c9ec1f231e4da8bbc01f323a93f5ce7563442412486102e90b9e"
+ "hash": "sha256:a2b3a2b84db2dd7f159a0e8d85aa1ddd2b8b1abb915a2c2fbf9522fd3823ca1f"
 }

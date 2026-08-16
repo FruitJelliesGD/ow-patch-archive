@@ -95,7 +95,11 @@
          "text_cn": null,
          "before": 200.0,
          "after": 150.0,
-         "metric": "temporary health"
+         "metric": "temporary health",
+         "by": -50.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "temporary health"
         }
        ]
       },
@@ -109,7 +113,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "ultimate_cost",
+         "by": null,
+         "by_pct": 15.0,
+         "unit": null,
+         "raw_metric": "ultimate cost"
         }
        ]
       }
@@ -134,7 +142,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -168,42 +180,66 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "The projectile now magnetizes toward an enemy target from 1.5 meters away and chases them for up to 1 second.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Impact damage increased from 0 to 10.",
          "text_cn": null,
          "before": 0.0,
          "after": 10.0,
-         "metric": "impact damage"
+         "metric": "impact damage",
+         "by": 10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "impact damage"
         },
         {
          "text_en": "Explosion damage reduced from 120 to 70.",
          "text_cn": null,
          "before": 120.0,
          "after": 70.0,
-         "metric": "explosion damage"
+         "metric": "explosion damage",
+         "by": -50.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "explosion damage"
         },
         {
          "text_en": "Stuck targets now have their movement slowed by 30%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Stuck targets are now affected by a \"Hindered\" status effect, interrupting and preventing movement abilities from being activated.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -228,7 +264,11 @@
          "text_cn": null,
          "before": 24.0,
          "after": 30.0,
-         "metric": "maximum ammo"
+         "metric": "maximum ammo",
+         "by": 6.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "maximum ammo"
         }
        ]
       }
@@ -241,7 +281,18 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Developer Comment: The Storm Bow damage adjustment is a small but significant change so that heroes with 250 health won't be eliminated with one critical damage shot. We've also updated the sound and visual for when Sonic Arrow initially lands to give nearby enemies more awareness that the ability was used."
+      {
+       "text_en": "Developer Comment: The Storm Bow damage adjustment is a small but significant change so that heroes with 250 health won't be eliminated with one critical damage shot. We've also updated the sound and visual for when Sonic Arrow initially lands to give nearby enemies more awareness that the ability was used.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -255,7 +306,11 @@
          "text_cn": null,
          "before": 125.0,
          "after": 120.0,
-         "metric": "maximum damage"
+         "metric": "maximum damage",
+         "by": -5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "maximum damage"
         }
        ]
       },
@@ -269,14 +324,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Visual effect is now briefly visible to enemies when first deployed.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -301,28 +364,44 @@
          "text_cn": null,
          "before": 100.0,
          "after": 55.0,
-         "metric": "damage per second"
+         "metric": "damage",
+         "by": -45.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage per second"
         },
         {
          "text_en": "Primary fire slow is no longer always 40% and now scales from 30-50%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Primary fire impacts now build up to a slowing effect that sticks to the enemy target for 1.5 seconds and slows them for 75%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Secondary fire impacts can detonate this new slow effect, dealing an additional 40 damage.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -347,7 +426,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -372,7 +455,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "spread",
+         "by": null,
+         "by_pct": 15.0,
+         "unit": null,
+         "raw_metric": "spread"
         }
        ]
       }
@@ -397,14 +484,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Scoped shot maximum damage falloff scalar increased from 30 to 50%",
          "text_cn": null,
          "before": 30.0,
          "after": 50.0,
-         "metric": "scoped shot maximum damage falloff scalar"
+         "metric": "scoped shot maximum damage falloff scalar",
+         "by": 20.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "scoped shot maximum damage falloff scalar"
         }
        ]
       }
@@ -426,7 +521,18 @@
      "role": "support",
      "dev_note": "Developer Comment: Lifeweaver's stats have been improving over time, but he is still underperforming. These adjustments are primarily straightforward improvements to nearly every aspect of his kit, outside of his ultimate ability, which received a small cost adjustment for the increased healing and damage output. The Petal Platform area shrinking is a quality-of-life change intended to help avoid accidentally activating the lift after it has been placed.",
      "general": [
-      "Petal ornaments on his back have had their size and hit volume reduced by 10%."
+      {
+       "text_en": "Petal ornaments on his back have had their size and hit volume reduced by 10%.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 10.0,
+       "metric": "petal ornaments on his back have had their size and hit volume",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -440,7 +546,11 @@
          "text_cn": null,
          "before": 65.0,
          "after": 75.0,
-         "metric": "maximum healing"
+         "metric": "maximum healing",
+         "by": 10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "maximum healing"
         }
        ]
       },
@@ -454,21 +564,33 @@
          "text_cn": null,
          "before": 5.0,
          "after": 6.0,
-         "metric": "damage per projectile"
+         "metric": "damage",
+         "by": 1.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage per projectile"
         },
         {
          "text_en": "Projectile radius increased from 0.1 to 0.125.",
          "text_cn": null,
          "before": 0.1,
          "after": 0.125,
-         "metric": "projectile radius"
+         "metric": "projectile radius",
+         "by": 0.025,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "projectile radius"
         },
         {
          "text_en": "Ammo increased from 60 to 70.",
          "text_cn": null,
          "before": 60.0,
          "after": 70.0,
-         "metric": "ammo"
+         "metric": "ammo",
+         "by": 10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "ammo"
         }
        ]
       },
@@ -482,14 +604,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "walkable area",
+         "by": null,
+         "by_pct": 15.0,
+         "unit": null,
+         "raw_metric": "walkable area"
         },
         {
          "text_en": "Area to trigger lift now shrinks from a radius of 2 to 0.75 meters after initial placement.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -503,14 +633,22 @@
          "text_cn": null,
          "before": 20.0,
          "after": 16.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": -4.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         },
         {
          "text_en": "Now heals the target ally for 50 health.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -524,7 +662,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "ultimate_cost",
+         "by": null,
+         "by_pct": 8.0,
+         "unit": null,
+         "raw_metric": "ultimate cost"
         }
        ]
       }
@@ -549,7 +691,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -618,5 +764,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:e4d6dc43c4ce4c9f79e646a49296ea041d7f81fefcc1decf4f9b30daa81b602d"
+ "hash": "sha256:bb2fd8a1e88c20a71a4fedfb1607a588e515ac1bcb022bf363cdbd7f27deaa47"
 }

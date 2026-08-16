@@ -13,6 +13,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "zhuque-fans",
    "ability_en": "Zhuque Fans",
    "ability_cn": "朱雀扇",
@@ -20,7 +21,10 @@
    "text_cn": "射速提升50%。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": 50.0,
+   "metric": "rate_of_fire",
+   "unit": null
   },
   {
    "patch": "cn-2026-07-01-1",
@@ -29,6 +33,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "zhuque-fans",
    "ability_en": "Zhuque Fans",
    "ability_cn": "朱雀扇",
@@ -36,7 +41,10 @@
    "text_cn": "弹道速度从90米每秒提高至150米每秒。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-07-01-1",
@@ -45,6 +53,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "inferno-rush",
    "ability_en": "Inferno Rush",
    "ability_cn": "怒炎冲",
@@ -52,7 +61,10 @@
    "text_cn": "安燃现在可以长按向后移动键以向后冲刺。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-07-01-1",
@@ -61,6 +73,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "inferno-rush",
    "ability_en": "Inferno Rush",
    "ability_cn": "怒炎冲",
@@ -68,7 +81,10 @@
    "text_cn": "最初启动速度提高27%。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": 27.0,
+   "metric": "最初启动速度",
+   "unit": null
   },
   {
    "patch": "cn-2026-07-01-1",
@@ -77,8 +93,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月1日",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "move_speed",
    "text_en": null,
-   "text_cn": "基础移动速度从6米每秒提升到6.5米每秒。"
+   "text_cn": "基础移动速度从6米每秒提升到6.5米每秒。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-30-1",
@@ -87,6 +111,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 30, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "zhuque-fans",
    "ability_en": "Zhuque Fans",
    "ability_cn": "朱雀扇",
@@ -94,7 +119,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": 50.0,
+   "metric": "fire rate",
+   "unit": null
   },
   {
    "patch": "en-2026-06-30-1",
@@ -103,6 +131,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 30, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "zhuque-fans",
    "ability_en": "Zhuque Fans",
    "ability_cn": "朱雀扇",
@@ -110,7 +139,10 @@
    "text_cn": null,
    "before": 90.0,
    "after": 150.0,
-   "metric": "projectile speed"
+   "by": 60.0,
+   "by_pct": null,
+   "metric": "projectile_speed",
+   "unit": "m/s"
   },
   {
    "patch": "en-2026-06-30-1",
@@ -119,6 +151,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 30, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "inferno-rush",
    "ability_en": "Inferno Rush",
    "ability_cn": "怒炎冲",
@@ -126,7 +159,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-30-1",
@@ -135,6 +171,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 30, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "inferno-rush",
    "ability_en": "Inferno Rush",
    "ability_cn": "怒炎冲",
@@ -142,7 +179,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": 27.0,
+   "metric": "initial launch speed",
+   "unit": null
   },
   {
    "patch": "en-2026-06-30-1",
@@ -151,8 +191,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 30, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Base move speed increased from 6 m/s to 6.5 m/s.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -161,6 +209,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "inferno-rush",
    "ability_en": "Inferno Rush",
    "ability_cn": "怒炎冲",
@@ -168,7 +217,10 @@
    "text_cn": "技能结束后恢复时间从0.3秒缩短至0.1秒。",
    "before": 0.3,
    "after": 0.1,
-   "metric": "技能结束后恢复时间"
+   "by": -0.2,
+   "by_pct": null,
+   "metric": "技能结束后恢复时间",
+   "unit": "s"
   },
   {
    "patch": "cn-2026-06-17-1",
@@ -177,6 +229,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/06/",
    "patch_title": "《守望先锋》补丁说明——2026年6月17日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "dancing-blaze",
    "ability_en": "Dancing Blaze",
    "ability_cn": "熠闪舞",
@@ -184,7 +237,10 @@
    "text_cn": "技能结束后恢复时间从0.2秒缩短至0.1秒。",
    "before": 0.2,
    "after": 0.1,
-   "metric": "技能结束后恢复时间"
+   "by": -0.1,
+   "by_pct": null,
+   "metric": "技能结束后恢复时间",
+   "unit": "s"
   },
   {
    "patch": "en-2026-06-16-1",
@@ -193,6 +249,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "inferno-rush",
    "ability_en": "Inferno Rush",
    "ability_cn": "怒炎冲",
@@ -200,7 +257,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-16-1",
@@ -209,6 +269,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 16, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "dancing-blaze",
    "ability_en": "Dancing Blaze",
    "ability_cn": "熠闪舞",
@@ -216,7 +277,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-04-15-1",
@@ -225,6 +289,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/04/",
    "patch_title": "《守望先锋》补丁说明——2026年4月15日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "fan-the-flames",
    "ability_en": "Fan the Flames",
    "ability_cn": "煽火风",
@@ -232,7 +297,10 @@
    "text_cn": "命中伤害从5提高至6。",
    "before": 5.0,
    "after": 6.0,
-   "metric": "命中伤害"
+   "by": 1.0,
+   "by_pct": null,
+   "metric": "命中伤害",
+   "unit": null
   },
   {
    "patch": "cn-2026-04-15-1",
@@ -241,6 +309,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/04/",
    "patch_title": "《守望先锋》补丁说明——2026年4月15日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "inferno-rush",
    "ability_en": "Inferno Rush",
    "ability_cn": "怒炎冲",
@@ -248,7 +317,10 @@
    "text_cn": "命中伤害从50降低至30。",
    "before": 50.0,
    "after": 30.0,
-   "metric": "命中伤害"
+   "by": -20.0,
+   "by_pct": null,
+   "metric": "命中伤害",
+   "unit": null
   },
   {
    "patch": "cn-2026-04-15-1",
@@ -257,6 +329,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/04/",
    "patch_title": "《守望先锋》补丁说明——2026年4月15日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "dancing-blaze",
    "ability_en": "Dancing Blaze",
    "ability_cn": "熠闪舞",
@@ -264,7 +337,10 @@
    "text_cn": "现在击中首个目标时会为安燃治疗50点生命值，后续击中每个目标时治疗25点生命值。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-04-15-1",
@@ -273,6 +349,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/04/",
    "patch_title": "《守望先锋》补丁说明——2026年4月15日",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "hungering-blaze",
    "perk_en": null,
    "perk_cn": "噬心狂炎",
@@ -290,8 +367,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/04/",
    "patch_title": "《守望先锋》补丁说明——2026年4月15日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "次级威能消耗降低7%。"
+   "text_cn": "次级威能消耗降低7%。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 7.0,
+   "metric": "次级威能消耗",
+   "unit": null
   },
   {
    "patch": "cn-2026-04-15-1",
@@ -300,8 +385,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/04/",
    "patch_title": "《守望先锋》补丁说明——2026年4月15日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "主要威能消耗降低5%。"
+   "text_cn": "主要威能消耗降低5%。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 5.0,
+   "metric": "主要威能消耗",
+   "unit": null
   },
   {
    "patch": "en-2026-04-14-1",
@@ -310,6 +403,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/04",
    "patch_title": "Overwatch Retail Patch Notes - April 14, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "fan-the-flames",
    "ability_en": "Fan the Flames",
    "ability_cn": "煽火风",
@@ -317,7 +411,10 @@
    "text_cn": null,
    "before": 5.0,
    "after": 6.0,
-   "metric": "impact damage"
+   "by": 1.0,
+   "by_pct": null,
+   "metric": "impact damage",
+   "unit": null
   },
   {
    "patch": "en-2026-04-14-1",
@@ -326,6 +423,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/04",
    "patch_title": "Overwatch Retail Patch Notes - April 14, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "inferno-rush",
    "ability_en": "Inferno Rush",
    "ability_cn": "怒炎冲",
@@ -333,7 +431,10 @@
    "text_cn": null,
    "before": 50.0,
    "after": 30.0,
-   "metric": "impact damage"
+   "by": -20.0,
+   "by_pct": null,
+   "metric": "impact damage",
+   "unit": null
   },
   {
    "patch": "en-2026-04-14-1",
@@ -342,6 +443,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/04",
    "patch_title": "Overwatch Retail Patch Notes - April 14, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "dancing-blaze",
    "ability_en": "Dancing Blaze",
    "ability_cn": "熠闪舞",
@@ -349,7 +451,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-04-14-1",
@@ -358,6 +463,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/04",
    "patch_title": "Overwatch Retail Patch Notes - April 14, 2026",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "hungering-blaze",
    "perk_en": "Hungering Blaze",
    "perk_cn": null,
@@ -375,8 +481,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/04",
    "patch_title": "Overwatch Retail Patch Notes - April 14, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Minor Perk cost reduced by 7%.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 7.0,
+   "metric": "minor perk cost",
+   "unit": null
   },
   {
    "patch": "en-2026-04-14-1",
@@ -385,8 +499,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/04",
    "patch_title": "Overwatch Retail Patch Notes - April 14, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Major Perk cost reduced by 5%.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 5.0,
+   "metric": "major perk cost",
+   "unit": null
   },
   {
    "patch": "en-2026-04-01-1",
@@ -395,6 +517,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/04",
    "patch_title": "Overwatch Retail Patch Notes - April 1, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "fan-the-flames",
    "ability_en": "Fan the Flames",
    "ability_cn": "煽火风",
@@ -402,7 +525,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-04-01-1",
@@ -411,6 +537,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/04",
    "patch_title": "Overwatch Retail Patch Notes - April 1, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "vermillion-revival",
    "ability_en": "Vermillion Revival",
    "ability_cn": "朱魂返",
@@ -418,7 +545,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-04-01-1",
@@ -427,6 +557,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/04/",
    "patch_title": "《守望先锋》补丁说明——2026年4月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "fan-the-flames",
    "ability_en": "Fan the Flames",
    "ability_cn": "煽火风",
@@ -434,7 +565,10 @@
    "text_cn": "在空中时，安燃的辅助攻击模式会沿瞄准方向将她向后推。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-04-01-1",
@@ -443,6 +577,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/04/",
    "patch_title": "《守望先锋》补丁说明——2026年4月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "vermillion-revival",
    "ability_en": "Vermillion Revival",
    "ability_cn": "朱魂返",
@@ -450,7 +585,10 @@
    "text_cn": "阵亡期间，安燃可在触发朱魂返之前四处移动。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-03-11-1",
@@ -459,6 +597,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/03/",
    "patch_title": "《守望先锋》补丁说明——2026年3月11日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "inferno-rush",
    "ability_en": "Inferno Rush",
    "ability_cn": "怒炎冲",
@@ -466,7 +605,10 @@
    "text_cn": "可自动翻越较矮的物体边缘。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-03-11-1",
@@ -475,6 +617,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/03/",
    "patch_title": "《守望先锋》补丁说明——2026年3月11日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "inferno-rush",
    "ability_en": "Inferno Rush",
    "ability_cn": "怒炎冲",
@@ -482,7 +625,10 @@
    "text_cn": "技能生效时跳跃高度提升20%。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": 20.0,
+   "metric": "技能生效时跳跃高度",
+   "unit": null
   },
   {
    "patch": "en-2026-03-10-1",
@@ -491,6 +637,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/03",
    "patch_title": "Overwatch Retail Patch Notes - March 10, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "inferno-rush",
    "ability_en": "Inferno Rush",
    "ability_cn": "怒炎冲",
@@ -498,7 +645,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-03-10-1",
@@ -507,6 +657,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/03",
    "patch_title": "Overwatch Retail Patch Notes - March 10, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "inferno-rush",
    "ability_en": "Inferno Rush",
    "ability_cn": "怒炎冲",
@@ -514,7 +665,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": 20.0,
+   "metric": "jump height while active",
+   "unit": null
   },
   {
    "patch": "en-2026-02-24-1",
@@ -523,8 +677,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/02",
    "patch_title": "Overwatch Retail Patch Notes - February 24, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Inferno Rush",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-02-24-1",
@@ -533,8 +695,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/02",
    "patch_title": "Overwatch Retail Patch Notes - February 24, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Cooldown reduced from 8.5 to 8 seconds.",
-   "text_cn": null
+   "text_cn": null,
+   "before": 8.5,
+   "after": 8.0,
+   "by": -0.5,
+   "by_pct": null,
+   "metric": "cooldown",
+   "unit": "s"
   },
   {
    "patch": "en-2026-02-24-1",
@@ -543,8 +713,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/02",
    "patch_title": "Overwatch Retail Patch Notes - February 24, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Dancing Blaze",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-02-24-1",
@@ -553,8 +731,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/02",
    "patch_title": "Overwatch Retail Patch Notes - February 24, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Increased the distance you can move while active from 1.5 to 2.25 meters.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-02-14-1",
@@ -563,8 +749,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/02/",
    "patch_title": "《守望先锋》补丁说明——2026年2月14日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "朱雀扇"
+   "text_cn": "朱雀扇",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-02-14-1",
@@ -573,8 +767,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/02/",
    "patch_title": "《守望先锋》补丁说明——2026年2月14日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "命中伤害从20提高至22。"
+   "text_cn": "命中伤害从20提高至22。",
+   "before": 20.0,
+   "after": 22.0,
+   "by": 2.0,
+   "by_pct": null,
+   "metric": "命中伤害",
+   "unit": null
   },
   {
    "patch": "cn-2026-02-14-1",
@@ -583,8 +785,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/02/",
    "patch_title": "《守望先锋》补丁说明——2026年2月14日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "煽火风"
+   "text_cn": "煽火风",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-02-14-1",
@@ -593,8 +803,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/02/",
    "patch_title": "《守望先锋》补丁说明——2026年2月14日",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": null,
-   "text_cn": "对护甲的命中伤害按光束伤害计算伤害减免（仅减免30%）。"
+   "text_cn": "对护甲的命中伤害按光束伤害计算伤害减免（仅减免30%）。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-02-14-1",
@@ -603,8 +821,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/02/",
    "patch_title": "《守望先锋》补丁说明——2026年2月14日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "怒炎冲"
+   "text_cn": "怒炎冲",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-02-14-1",
@@ -613,8 +839,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/02/",
    "patch_title": "《守望先锋》补丁说明——2026年2月14日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "现在可以通过近身攻击来取消。"
+   "text_cn": "现在可以通过近身攻击来取消。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-02-14-1",
@@ -623,8 +857,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/02/",
    "patch_title": "《守望先锋》补丁说明——2026年2月14日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "焚身焰——被动"
+   "text_cn": "焚身焰——被动",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-02-14-1",
@@ -633,8 +875,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/02/",
    "patch_title": "《守望先锋》补丁说明——2026年2月14日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "燃烧累积的持续时间从3秒延长至4秒。"
+   "text_cn": "燃烧累积的持续时间从3秒延长至4秒。",
+   "before": 3.0,
+   "after": 4.0,
+   "by": 1.0,
+   "by_pct": null,
+   "metric": "燃烧累积的持续时间",
+   "unit": "s"
   },
   {
    "patch": "en-2026-02-13-1",
@@ -643,8 +893,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/02",
    "patch_title": "Overwatch Retail Patch Notes - February 13, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Zhuque Fans",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-02-13-1",
@@ -653,8 +911,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/02",
    "patch_title": "Overwatch Retail Patch Notes - February 13, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Impact damage increased from 20 to 22.",
-   "text_cn": null
+   "text_cn": null,
+   "before": 20.0,
+   "after": 22.0,
+   "by": 2.0,
+   "by_pct": null,
+   "metric": "impact damage",
+   "unit": null
   },
   {
    "patch": "en-2026-02-13-1",
@@ -663,8 +929,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/02",
    "patch_title": "Overwatch Retail Patch Notes - February 13, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Fan the Flames",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-02-13-1",
@@ -673,8 +947,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/02",
    "patch_title": "Overwatch Retail Patch Notes - February 13, 2026",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": "Impact damage now uses beam damage against armor mitigation (Only reduced by 30% when used on armor).",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 30.0,
+   "metric": "only",
+   "unit": null
   },
   {
    "patch": "en-2026-02-13-1",
@@ -683,8 +965,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/02",
    "patch_title": "Overwatch Retail Patch Notes - February 13, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Inferno Rush",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-02-13-1",
@@ -693,8 +983,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/02",
    "patch_title": "Overwatch Retail Patch Notes - February 13, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Can now be canceled with quick melee.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-02-13-1",
@@ -703,8 +1001,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/02",
    "patch_title": "Overwatch Retail Patch Notes - February 13, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Ignition - Passive",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-02-13-1",
@@ -713,8 +1019,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/02",
    "patch_title": "Overwatch Retail Patch Notes - February 13, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Burning build up linger time increased from 3 to 4 seconds.",
-   "text_cn": null
+   "text_cn": null,
+   "before": 3.0,
+   "after": 4.0,
+   "by": 1.0,
+   "by_pct": null,
+   "metric": "burning build up linger time",
+   "unit": null
   },
   {
    "patch": "en-2026-02-09-1",
@@ -723,8 +1037,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/02",
    "patch_title": "Overwatch Retail Patch Notes - February 10, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Fan the Flames",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-02-09-1",
@@ -733,8 +1055,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/02",
    "patch_title": "Overwatch Retail Patch Notes - February 10, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Impact damage increased from 4 to 5",
-   "text_cn": null
+   "text_cn": null,
+   "before": 4.0,
+   "after": 5.0,
+   "by": 1.0,
+   "by_pct": null,
+   "metric": "impact damage",
+   "unit": null
   },
   {
    "patch": "en-2026-02-09-1",
@@ -743,8 +1073,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/02",
    "patch_title": "Overwatch Retail Patch Notes - February 10, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Maximum ammo increased from 8 to 10",
-   "text_cn": null
+   "text_cn": null,
+   "before": 8.0,
+   "after": 10.0,
+   "by": 2.0,
+   "by_pct": null,
+   "metric": "maximum ammo",
+   "unit": null
   },
   {
    "patch": "en-2026-02-09-1",
@@ -753,8 +1091,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/02",
    "patch_title": "Overwatch Retail Patch Notes - February 10, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Inferno Rush",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-02-09-1",
@@ -763,8 +1109,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/02",
    "patch_title": "Overwatch Retail Patch Notes - February 10, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Maximum vertical height reduced by 20%",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 20.0,
+   "metric": "maximum vertical height",
+   "unit": null
   },
   {
    "patch": "en-2026-02-09-1",
@@ -773,8 +1127,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/02",
    "patch_title": "Overwatch Retail Patch Notes - February 10, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Added \"Hold to use Inferno Rush\" hero option",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-02-09-1",
@@ -783,8 +1145,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/02",
    "patch_title": "Overwatch Retail Patch Notes - February 10, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Dancing Blaze",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-02-09-1",
@@ -793,8 +1163,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/02",
    "patch_title": "Overwatch Retail Patch Notes - February 10, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Cooldown decreased from 10 to 8 seconds",
-   "text_cn": null
+   "text_cn": null,
+   "before": 10.0,
+   "after": 8.0,
+   "by": -2.0,
+   "by_pct": null,
+   "metric": "cooldown",
+   "unit": "s"
   },
   {
    "patch": "en-2026-02-09-1",
@@ -803,8 +1181,60 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/02",
    "patch_title": "Overwatch Retail Patch Notes - February 10, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Cleansing effect removed",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   }
- ]
+ ],
+ "values": {
+  "zhuque-fans:projectile_speed": [
+   {
+    "date": "2026-06-30",
+    "value": 150.0
+   }
+  ],
+  "inferno-rush:技能结束后恢复时间": [
+   {
+    "date": "2026-06-17",
+    "value": 0.1
+   }
+  ],
+  "dancing-blaze:技能结束后恢复时间": [
+   {
+    "date": "2026-06-17",
+    "value": 0.1
+   }
+  ],
+  "fan-the-flames:命中伤害": [
+   {
+    "date": "2026-04-15",
+    "value": 6.0
+   }
+  ],
+  "inferno-rush:命中伤害": [
+   {
+    "date": "2026-04-15",
+    "value": 30.0
+   }
+  ],
+  "fan-the-flames:impact damage": [
+   {
+    "date": "2026-04-14",
+    "value": 6.0
+   }
+  ],
+  "inferno-rush:impact damage": [
+   {
+    "date": "2026-04-14",
+    "value": 30.0
+   }
+  ]
+ }
 }

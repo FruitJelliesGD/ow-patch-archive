@@ -13,6 +13,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/08/",
    "patch_title": "《守望先锋》补丁说明——2026年8月12日",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "deep-burrow",
    "perk_en": null,
    "perk_cn": "深岩掘地",
@@ -29,6 +30,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/08/",
    "patch_title": "《守望先锋》补丁说明——2026年8月12日",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "covered-in-dirt",
    "perk_en": null,
    "perk_cn": "尘土满身",
@@ -45,8 +47,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/08/",
    "patch_title": "《守望先锋》补丁说明——2026年8月12日",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "ultimate_cost",
    "text_en": null,
-   "text_cn": "终极技能消耗降低8%。"
+   "text_cn": "终极技能消耗降低8%。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 8.0,
+   "metric": "ultimate_cost",
+   "unit": null
   },
   {
    "patch": "en-2026-08-11-1",
@@ -55,6 +65,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/08",
    "patch_title": "Overwatch Retail Patch Notes – August 11, 2026",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "deep-burrow",
    "perk_en": "Deep Burrow",
    "perk_cn": null,
@@ -71,6 +82,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/08",
    "patch_title": "Overwatch Retail Patch Notes – August 11, 2026",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "covered-in-dirt",
    "perk_en": "Covered in Dirt",
    "perk_cn": null,
@@ -87,8 +99,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/08",
    "patch_title": "Overwatch Retail Patch Notes – August 11, 2026",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "ultimate_cost",
    "text_en": "Ultimate cost reduced by 8%.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": 8.0,
+   "metric": "ultimate_cost",
+   "unit": null
   },
   {
    "patch": "cn-2026-07-15-1",
@@ -97,6 +117,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月15日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "clobber-quick-melee",
    "ability_en": "Clobber (Quick Melee)",
    "ability_cn": "猛钻（快速近身攻击）",
@@ -104,7 +125,10 @@
    "text_cn": "冷却时间/恢复时间从1.6秒缩短至1.2秒。",
    "before": 1.6,
    "after": 1.2,
-   "metric": "恢复时间"
+   "by": -0.4,
+   "by_pct": null,
+   "metric": "recovery",
+   "unit": "s"
   },
   {
    "patch": "en-2026-07-14-1",
@@ -113,6 +137,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/07",
    "patch_title": "Overwatch Retail Patch Notes – July 14, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "clobber-quick-melee",
    "ability_en": "Clobber (Quick Melee)",
    "ability_cn": "猛钻（快速近身攻击）",
@@ -120,7 +145,10 @@
    "text_cn": null,
    "before": 1.6,
    "after": 1.2,
-   "metric": "recovery"
+   "by": -0.4,
+   "by_pct": null,
+   "metric": "recovery",
+   "unit": "s"
   },
   {
    "patch": "cn-2026-07-01-1",
@@ -129,6 +157,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月1日",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "smart-excavator",
    "ability_en": "SMART Excavator",
    "ability_cn": "智能挖掘钻",
@@ -136,7 +165,10 @@
    "text_cn": "主要攻击模式的伤害从75点提高至85点。",
    "before": 75.0,
    "after": 85.0,
-   "metric": "主要攻击模式的伤害"
+   "by": 10.0,
+   "by_pct": null,
+   "metric": "主要攻击模式的伤害",
+   "unit": "hp"
   },
   {
    "patch": "cn-2026-07-01-1",
@@ -145,6 +177,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "drill-dash",
    "ability_en": "Drill Dash",
    "ability_cn": "钻头突刺",
@@ -152,7 +185,10 @@
    "text_cn": "充能数从1个提高至2个。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-07-01-1",
@@ -161,6 +197,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "drill-dash",
    "ability_en": "Drill Dash",
    "ability_cn": "钻头突刺",
@@ -168,7 +205,10 @@
    "text_cn": "冷却时间从8秒缩短至6秒。",
    "before": 8.0,
    "after": 6.0,
-   "metric": "冷却时间"
+   "by": -2.0,
+   "by_pct": null,
+   "metric": "cooldown",
+   "unit": "s"
   },
   {
    "patch": "cn-2026-07-01-1",
@@ -177,6 +217,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "drill-dash",
    "ability_en": "Drill Dash",
    "ability_cn": "钻头突刺",
@@ -184,7 +225,10 @@
    "text_cn": "水平范围缩小50%。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-07-01-1",
@@ -193,6 +237,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "drill-dash",
    "ability_en": "Drill Dash",
    "ability_cn": "钻头突刺",
@@ -200,7 +245,10 @@
    "text_cn": "垂直范围不变。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-07-01-1",
@@ -209,6 +257,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "drill-dash",
    "ability_en": "Drill Dash",
    "ability_cn": "钻头突刺",
@@ -216,7 +265,10 @@
    "text_cn": "伤害从90点降低至35点。",
    "before": 90.0,
    "after": 35.0,
-   "metric": "伤害"
+   "by": -55.0,
+   "by_pct": null,
+   "metric": "damage",
+   "unit": "hp"
   },
   {
    "patch": "cn-2026-07-01-1",
@@ -225,6 +277,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "burrow",
    "ability_en": "Burrow",
    "ability_cn": "钻地",
@@ -232,7 +285,10 @@
    "text_cn": "击退力度提高20%。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": 20.0,
+   "metric": "knockback",
+   "unit": null
   },
   {
    "patch": "cn-2026-07-01-1",
@@ -241,6 +297,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "explorer-s-resolve",
    "ability_en": "Explorer's Resolve",
    "ability_cn": "探险家的决心",
@@ -248,7 +305,10 @@
    "text_cn": "护盾加成从25点降低至15点。",
    "before": 25.0,
    "after": 15.0,
-   "metric": "护盾加成"
+   "by": -10.0,
+   "by_pct": null,
+   "metric": "shield",
+   "unit": "hp"
   },
   {
    "patch": "cn-2026-07-01-1",
@@ -257,6 +317,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月1日",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "excavation-exhilaration",
    "perk_en": null,
    "perk_cn": "轰轰钻机汹汹来袭",
@@ -273,8 +334,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月1日",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": null,
-   "text_cn": "基础生命值降低至225点。"
+   "text_cn": "基础生命值降低至225点。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-07-01-1",
@@ -283,8 +352,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月1日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "技能对可部署物造成200%伤害。"
+   "text_cn": "技能对可部署物造成200%伤害。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-07-01-1",
@@ -293,8 +370,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/07/",
    "patch_title": "《守望先锋》补丁说明——2026年7月1日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "最后一击会生成1点“钻头突刺”充能。"
+   "text_cn": "最后一击会生成1点“钻头突刺”充能。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-30-1",
@@ -303,6 +388,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 30, 2026",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "smart-excavator",
    "ability_en": "SMART Excavator",
    "ability_cn": "智能挖掘钻",
@@ -310,7 +396,10 @@
    "text_cn": null,
    "before": 75.0,
    "after": 85.0,
-   "metric": "primary fire damage"
+   "by": 10.0,
+   "by_pct": null,
+   "metric": "primary fire damage",
+   "unit": null
   },
   {
    "patch": "en-2026-06-30-1",
@@ -319,6 +408,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 30, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "drill-dash",
    "ability_en": "Drill Dash",
    "ability_cn": "钻头突刺",
@@ -326,7 +416,10 @@
    "text_cn": null,
    "before": 1.0,
    "after": 2.0,
-   "metric": "charges"
+   "by": 1.0,
+   "by_pct": null,
+   "metric": "charges",
+   "unit": null
   },
   {
    "patch": "en-2026-06-30-1",
@@ -335,6 +428,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 30, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "drill-dash",
    "ability_en": "Drill Dash",
    "ability_cn": "钻头突刺",
@@ -342,7 +436,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-30-1",
@@ -351,6 +448,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 30, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "drill-dash",
    "ability_en": "Drill Dash",
    "ability_cn": "钻头突刺",
@@ -358,7 +456,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": 50.0,
+   "metric": "horizontal range",
+   "unit": null
   },
   {
    "patch": "en-2026-06-30-1",
@@ -367,6 +468,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 30, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "drill-dash",
    "ability_en": "Drill Dash",
    "ability_cn": "钻头突刺",
@@ -374,7 +476,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-30-1",
@@ -383,6 +488,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 30, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "drill-dash",
    "ability_en": "Drill Dash",
    "ability_cn": "钻头突刺",
@@ -390,7 +496,10 @@
    "text_cn": null,
    "before": 90.0,
    "after": 35.0,
-   "metric": "damage"
+   "by": -55.0,
+   "by_pct": null,
+   "metric": "damage",
+   "unit": null
   },
   {
    "patch": "en-2026-06-30-1",
@@ -399,6 +508,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 30, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "burrow",
    "ability_en": "Burrow",
    "ability_cn": "钻地",
@@ -406,7 +516,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": 20.0,
+   "metric": "knockback",
+   "unit": null
   },
   {
    "patch": "en-2026-06-30-1",
@@ -415,6 +528,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 30, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "explorer-s-resolve",
    "ability_en": "Explorer's Resolve",
    "ability_cn": "探险家的决心",
@@ -422,7 +536,10 @@
    "text_cn": null,
    "before": 25.0,
    "after": 15.0,
-   "metric": "bonus shields"
+   "by": -10.0,
+   "by_pct": null,
+   "metric": "bonus shields",
+   "unit": null
   },
   {
    "patch": "en-2026-06-30-1",
@@ -431,6 +548,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 30, 2026",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "excavation-exhilaration",
    "perk_en": "Excavation Exhilaration",
    "perk_cn": null,
@@ -447,8 +565,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 30, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Base HP reduced to 225",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-06-30-1",
@@ -457,8 +583,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
    "patch_title": "Overwatch Retail Patch Notes – June 30, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Final blows regenerate 1 charge of Drill Dash.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-04-01-1",
@@ -467,6 +601,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/04",
    "patch_title": "Overwatch Retail Patch Notes - April 1, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "burrow",
    "ability_en": "Burrow",
    "ability_cn": "钻地",
@@ -474,7 +609,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-04-01-1",
@@ -483,6 +621,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/04",
    "patch_title": "Overwatch Retail Patch Notes - April 1, 2026",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "burrow",
    "ability_en": "Burrow",
    "ability_cn": "钻地",
@@ -490,7 +629,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-04-01-1",
@@ -499,6 +641,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/04/",
    "patch_title": "《守望先锋》补丁说明——2026年4月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "burrow",
    "ability_en": "Burrow",
    "ability_cn": "钻地",
@@ -506,7 +649,10 @@
    "text_cn": "钻出地面时，会挖出一件随机拾取道具。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-04-01-1",
@@ -515,6 +661,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/04/",
    "patch_title": "《守望先锋》补丁说明——2026年4月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "burrow",
    "ability_en": "Burrow",
    "ability_cn": "钻地",
@@ -522,7 +669,10 @@
    "text_cn": "拾取道具可由任意盟友收集。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-01-09-1",
@@ -531,8 +681,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/01/",
    "patch_title": "《守望先锋》补丁说明——2026年1月9日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "钻头突刺"
+   "text_cn": "钻头突刺",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2026-01-09-1",
@@ -541,8 +699,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/01/",
    "patch_title": "《守望先锋》补丁说明——2026年1月9日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "影响半径从2.4米降低至2.0米。"
+   "text_cn": "影响半径从2.4米降低至2.0米。",
+   "before": 2.4,
+   "after": 2.0,
+   "by": -0.4,
+   "by_pct": null,
+   "metric": "影响半径",
+   "unit": "m"
   },
   {
    "patch": "en-2026-01-08-1",
@@ -551,8 +717,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/01",
    "patch_title": "Overwatch 2 Retail Patch Notes - January 8, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Drill Dash",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2026-01-08-1",
@@ -561,8 +735,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/01",
    "patch_title": "Overwatch 2 Retail Patch Notes - January 8, 2026",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Radius reduced from 2.4 to 2.0 meters.",
-   "text_cn": null
+   "text_cn": null,
+   "before": 2.4,
+   "after": 2.0,
+   "by": -0.4,
+   "by_pct": null,
+   "metric": "radius",
+   "unit": null
   },
   {
    "patch": "cn-2025-12-10-1",
@@ -571,8 +753,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/12/",
    "patch_title": "《守望先锋》补丁说明——2025年12月10日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "探险家的决心"
+   "text_cn": "探险家的决心",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-12-10-1",
@@ -581,8 +771,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/12/",
    "patch_title": "《守望先锋》补丁说明——2025年12月10日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "每次使用技能获得的护盾值从30降低至25。"
+   "text_cn": "每次使用技能获得的护盾值从30降低至25。",
+   "before": 30.0,
+   "after": 25.0,
+   "by": -5.0,
+   "by_pct": null,
+   "metric": "每次使用技能获得的护盾值",
+   "unit": null
   },
   {
    "patch": "en-2025-12-09-1",
@@ -591,8 +789,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
    "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Explorer’s Resolve",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-12-09-1",
@@ -601,8 +807,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/12",
    "patch_title": "Overwatch 2 Retail Patch Notes - December 9, 2025",
    "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
    "text_en": "Shield health gained per ability reduced from 30 to 25.",
-   "text_cn": null
+   "text_cn": null,
+   "before": 30.0,
+   "after": 25.0,
+   "by": -5.0,
+   "by_pct": null,
+   "metric": "shield",
+   "unit": "hp"
   },
   {
    "patch": "cn-2025-08-27-1",
@@ -611,6 +825,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/08/",
    "patch_title": "《守望先锋》补丁说明——2025年8月27日",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "seismic-sense",
    "perk_en": null,
    "perk_cn": "地震感应",
@@ -627,6 +842,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/08/",
    "patch_title": "《守望先锋》补丁说明——2025年8月27日",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "deep-burrow",
    "perk_en": null,
    "perk_cn": "深岩掘地",
@@ -644,6 +860,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/08/",
    "patch_title": "《守望先锋》补丁说明——2025年8月27日",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "smart-r-excavator",
    "perk_en": null,
    "perk_cn": "超智能挖掘钻",
@@ -660,6 +877,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/08/",
    "patch_title": "《守望先锋》补丁说明——2025年8月27日",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "smart-extender",
    "perk_en": null,
    "perk_cn": "智能延展器",
@@ -677,6 +895,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/08",
    "patch_title": "Overwatch 2 Retail Patch Notes – August 26, 2025",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "seismic-sense",
    "perk_en": "Seismic Sense",
    "perk_cn": null,
@@ -693,6 +912,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/08",
    "patch_title": "Overwatch 2 Retail Patch Notes – August 26, 2025",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "deep-burrow",
    "perk_en": "Deep Burrow",
    "perk_cn": null,
@@ -710,6 +930,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/08",
    "patch_title": "Overwatch 2 Retail Patch Notes – August 26, 2025",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "smart-r-excavator",
    "perk_en": "SMART-R Excavator",
    "perk_cn": null,
@@ -726,6 +947,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/08",
    "patch_title": "Overwatch 2 Retail Patch Notes – August 26, 2025",
    "kind": "perk",
+   "dimension": "perk",
    "perk_slug": "smart-extender",
    "perk_en": "SMART Extender",
    "perk_cn": null,
@@ -743,8 +965,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/06/",
    "patch_title": "《守望先锋》补丁说明——2025年6月25日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "智能挖掘钻——主要攻击模式"
+   "text_cn": "智能挖掘钻——主要攻击模式",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-06-25-1",
@@ -753,8 +983,16 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/06/",
    "patch_title": "《守望先锋》补丁说明——2025年6月25日",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": null,
-   "text_cn": "恢复时间从0.7秒缩短至0.6秒。"
+   "text_cn": "恢复时间从0.7秒缩短至0.6秒。",
+   "before": 0.7,
+   "after": 0.6,
+   "by": -0.1,
+   "by_pct": null,
+   "metric": "recovery",
+   "unit": "s"
   },
   {
    "patch": "en-2025-06-24-1",
@@ -763,8 +1001,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/06",
    "patch_title": "Overwatch 2 Retail Patch Notes - June 24, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Smart Excavator - Primary Fire",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-06-24-1",
@@ -773,8 +1019,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/06",
    "patch_title": "Overwatch 2 Retail Patch Notes - June 24, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "Recovery time reduced from 0.7 to 0.6 seconds.",
-   "text_cn": null
+   "text_cn": null,
+   "before": 0.7,
+   "after": 0.6,
+   "by": -0.1,
+   "by_pct": null,
+   "metric": "recovery",
+   "unit": "s"
   },
   {
    "patch": "en-2025-04-01-1",
@@ -783,6 +1037,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/04",
    "patch_title": "Totally Normal Patch Notes for Totally Normalwatch – April 1, 2025",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "burrow",
    "ability_en": "Burrow",
    "ability_cn": "钻地",
@@ -790,7 +1045,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-04-01-1",
@@ -799,6 +1057,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/04",
    "patch_title": "Totally Normal Patch Notes for Totally Normalwatch – April 1, 2025",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "burrow",
    "ability_en": "Burrow",
    "ability_cn": "钻地",
@@ -806,7 +1065,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-04-01-1",
@@ -815,8 +1077,16 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/04",
    "patch_title": "Totally Normal Patch Notes for Totally Normalwatch – April 1, 2025",
    "kind": "general",
+   "dimension": "other",
+   "subject": null,
    "text_en": "If Venture is directly impacted by the projectile from Accretion or a similar ability, Venture is not knocked down and instead consumes the rock and heals themselves.",
-   "text_cn": null
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-04-01-1",
@@ -825,6 +1095,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/04/",
    "patch_title": "完全正常的“完全正常先锋”补丁说明——2025年4月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "burrow",
    "ability_en": "Burrow",
    "ability_cn": "钻地",
@@ -832,7 +1103,10 @@
    "text_cn": "现在可以在钻地时飞行。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "cn-2025-04-01-1",
@@ -841,6 +1115,7 @@
    "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/04/",
    "patch_title": "完全正常的“完全正常先锋”补丁说明——2025年4月1日",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "burrow",
    "ability_en": "Burrow",
    "ability_cn": "钻地",
@@ -848,7 +1123,10 @@
    "text_cn": "钻出可以进行更长时间的蓄力，以获得更强的效果。",
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-02-18-1",
@@ -857,6 +1135,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/02",
    "patch_title": "Overwatch 2 Retail Patch Notes + Hero Perks - February 18, 2025",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "seismic-sense",
    "ability_en": "Seismic Sense",
    "ability_cn": null,
@@ -864,7 +1143,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-02-18-1",
@@ -873,6 +1155,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/02",
    "patch_title": "Overwatch 2 Retail Patch Notes + Hero Perks - February 18, 2025",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "excavation-exhilaration",
    "ability_en": "Excavation Exhilaration",
    "ability_cn": null,
@@ -880,7 +1163,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2025-02-18-1",
@@ -889,6 +1175,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/02",
    "patch_title": "Overwatch 2 Retail Patch Notes + Hero Perks - February 18, 2025",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "smart-r-excavator",
    "ability_en": "SMART-R Excavator",
    "ability_cn": null,
@@ -896,7 +1183,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": 25.0,
+   "metric": "s range is",
+   "unit": null
   },
   {
    "patch": "en-2025-02-18-1",
@@ -905,6 +1195,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/02",
    "patch_title": "Overwatch 2 Retail Patch Notes + Hero Perks - February 18, 2025",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "covered-in-dirt",
    "ability_en": "Covered In Dirt",
    "ability_cn": null,
@@ -912,7 +1203,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2024-12-10-1",
@@ -921,6 +1215,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/12",
    "patch_title": "Overwatch 2 Retail Patch Notes – December 10, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "drill-dash",
    "ability_en": "Drill Dash",
    "ability_cn": "钻头突刺",
@@ -928,7 +1223,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2024-09-17-1",
@@ -937,6 +1235,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/09",
    "patch_title": "Overwatch 2 Retail Patch Notes - September 17, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "explorer-s-resolve",
    "ability_en": "Explorer's Resolve",
    "ability_cn": "探险家的决心",
@@ -944,7 +1243,10 @@
    "text_cn": null,
    "before": 40.0,
    "after": 30.0,
-   "metric": "shield health gained per ability"
+   "by": -10.0,
+   "by_pct": null,
+   "metric": "shield",
+   "unit": "hp"
   },
   {
    "patch": "en-2024-05-21-1",
@@ -953,6 +1255,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/05",
    "patch_title": "Overwatch 2 Retail Patch Notes – May 21, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "drill-dash",
    "ability_en": "Drill Dash",
    "ability_cn": "钻头突刺",
@@ -960,7 +1263,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2024-05-21-1",
@@ -969,6 +1275,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/05",
    "patch_title": "Overwatch 2 Retail Patch Notes – May 21, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "drill-dash",
    "ability_en": "Drill Dash",
    "ability_cn": "钻头突刺",
@@ -976,7 +1283,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2024-05-21-1",
@@ -985,6 +1295,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/05",
    "patch_title": "Overwatch 2 Retail Patch Notes – May 21, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "drill-dash",
    "ability_en": "Drill Dash",
    "ability_cn": "钻头突刺",
@@ -992,7 +1303,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2024-05-21-1",
@@ -1001,6 +1315,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/05",
    "patch_title": "Overwatch 2 Retail Patch Notes – May 21, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "burrow",
    "ability_en": "Burrow",
    "ability_cn": "钻地",
@@ -1008,7 +1323,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   },
   {
    "patch": "en-2024-04-30-1",
@@ -1017,6 +1335,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/04",
    "patch_title": "Overwatch 2 Retail Patch Notes – April 30, 2024",
    "kind": "ability",
+   "dimension": "weapon",
    "ability_slug": "smart-excavator",
    "ability_en": "SMART Excavator",
    "ability_cn": "智能挖掘钻",
@@ -1024,7 +1343,10 @@
    "text_cn": null,
    "before": 45.0,
    "after": 40.0,
-   "metric": "maximum explosion damage"
+   "by": -5.0,
+   "by_pct": null,
+   "metric": "maximum explosion damage",
+   "unit": null
   },
   {
    "patch": "en-2024-04-30-1",
@@ -1033,6 +1355,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/04",
    "patch_title": "Overwatch 2 Retail Patch Notes – April 30, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "drill-dash",
    "ability_en": "Drill Dash",
    "ability_cn": "钻头突刺",
@@ -1040,7 +1363,10 @@
    "text_cn": null,
    "before": 40.0,
    "after": 30.0,
-   "metric": "initial impact damage"
+   "by": -10.0,
+   "by_pct": null,
+   "metric": "initial impact damage",
+   "unit": null
   },
   {
    "patch": "en-2024-04-30-1",
@@ -1049,6 +1375,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/04",
    "patch_title": "Overwatch 2 Retail Patch Notes – April 30, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "tectonic-shock",
    "ability_en": "Tectonic Shock",
    "ability_cn": null,
@@ -1056,7 +1383,10 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": 10.0,
+   "metric": "ultimate_cost",
+   "unit": null
   },
   {
    "patch": "en-2024-04-16-1",
@@ -1065,6 +1395,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/04",
    "patch_title": "Overwatch 2 Retail Patch Notes – April 16, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "drill-dash",
    "ability_en": "Drill Dash",
    "ability_cn": "钻头突刺",
@@ -1072,7 +1403,10 @@
    "text_cn": null,
    "before": 60.0,
    "after": 40.0,
-   "metric": "impact damage"
+   "by": -20.0,
+   "by_pct": null,
+   "metric": "impact damage",
+   "unit": null
   },
   {
    "patch": "en-2024-04-16-1",
@@ -1081,6 +1415,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/04",
    "patch_title": "Overwatch 2 Retail Patch Notes – April 16, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "drill-dash",
    "ability_en": "Drill Dash",
    "ability_cn": "钻头突刺",
@@ -1088,7 +1423,10 @@
    "text_cn": null,
    "before": 40.0,
    "after": 60.0,
-   "metric": "damage over time"
+   "by": 20.0,
+   "by_pct": null,
+   "metric": "damage",
+   "unit": null
   },
   {
    "patch": "en-2024-04-16-1",
@@ -1097,6 +1435,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/04",
    "patch_title": "Overwatch 2 Retail Patch Notes – April 16, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "clobber",
    "ability_en": "Clobber",
    "ability_cn": null,
@@ -1104,7 +1443,10 @@
    "text_cn": null,
    "before": 40.0,
    "after": 30.0,
-   "metric": "impact damage"
+   "by": -10.0,
+   "by_pct": null,
+   "metric": "impact damage",
+   "unit": null
   },
   {
    "patch": "en-2024-04-16-1",
@@ -1113,6 +1455,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/04",
    "patch_title": "Overwatch 2 Retail Patch Notes – April 16, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "clobber",
    "ability_en": "Clobber",
    "ability_cn": null,
@@ -1120,7 +1463,10 @@
    "text_cn": null,
    "before": 30.0,
    "after": 40.0,
-   "metric": "damage over time"
+   "by": 10.0,
+   "by_pct": null,
+   "metric": "damage",
+   "unit": null
   },
   {
    "patch": "en-2024-04-16-1",
@@ -1129,6 +1475,7 @@
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/04",
    "patch_title": "Overwatch 2 Retail Patch Notes – April 16, 2024",
    "kind": "ability",
+   "dimension": "ability",
    "ability_slug": "tectonic-shock",
    "ability_en": "Tectonic Shock",
    "ability_cn": null,
@@ -1136,7 +1483,112 @@
    "text_cn": null,
    "before": null,
    "after": null,
-   "metric": null
+   "by": null,
+   "by_pct": 30.0,
+   "metric": "vertical knockback",
+   "unit": null
   }
- ]
+ ],
+ "values": {
+  "clobber-quick-melee:recovery": [
+   {
+    "date": "2026-07-14",
+    "value": 1.2
+   },
+   {
+    "date": "2026-07-15",
+    "value": 1.2
+   }
+  ],
+  "smart-excavator:主要攻击模式的伤害": [
+   {
+    "date": "2026-07-01",
+    "value": 85.0
+   }
+  ],
+  "drill-dash:cooldown": [
+   {
+    "date": "2026-07-01",
+    "value": 6.0
+   }
+  ],
+  "drill-dash:damage": [
+   {
+    "date": "2024-04-16",
+    "value": 60.0
+   },
+   {
+    "date": "2026-06-30",
+    "value": 35.0
+   },
+   {
+    "date": "2026-07-01",
+    "value": 35.0
+   }
+  ],
+  "explorer-s-resolve:shield": [
+   {
+    "date": "2024-09-17",
+    "value": 30.0
+   },
+   {
+    "date": "2026-07-01",
+    "value": 15.0
+   }
+  ],
+  "smart-excavator:primary fire damage": [
+   {
+    "date": "2026-06-30",
+    "value": 85.0
+   }
+  ],
+  "drill-dash:charges": [
+   {
+    "date": "2026-06-30",
+    "value": 2.0
+   }
+  ],
+  "explorer-s-resolve:bonus shields": [
+   {
+    "date": "2026-06-30",
+    "value": 15.0
+   }
+  ],
+  "attr:health:shield": [
+   {
+    "date": "2025-12-09",
+    "value": 25.0
+   }
+  ],
+  "smart-excavator:maximum explosion damage": [
+   {
+    "date": "2024-04-30",
+    "value": 40.0
+   }
+  ],
+  "drill-dash:initial impact damage": [
+   {
+    "date": "2024-04-30",
+    "value": 30.0
+   }
+  ],
+  "drill-dash:impact damage": [
+   {
+    "date": "2024-04-16",
+    "value": 40.0
+   }
+  ],
+  "clobber:impact damage": [
+   {
+    "date": "2024-04-16",
+    "value": 30.0
+   }
+  ],
+  "clobber:damage": [
+   {
+    "date": "2024-04-16",
+    "value": 40.0
+   }
+  ]
+ }
 }

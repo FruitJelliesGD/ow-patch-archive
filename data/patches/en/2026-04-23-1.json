@@ -47,7 +47,11 @@
          "text_cn": null,
          "before": 8.0,
          "after": 7.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": -1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       }
@@ -72,7 +76,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -85,7 +93,18 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Health increased from 175 to 200. (Total health increased from 250 to 275.)"
+      {
+       "text_en": "Health increased from 175 to 200. (Total health increased from 250 to 275.)",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 175.0,
+       "after": 200.0,
+       "by": 25.0,
+       "by_pct": null,
+       "metric": "health",
+       "unit": "hp"
+      }
      ],
      "perks": [],
      "abilities": []
@@ -118,7 +137,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -140,15 +163,94 @@
      "role": "tank",
      "dev_note": "We're lowering the ceiling and total resource that Hazard's Spike Guard oriented builds gain, so there's more windows of opportunity for counterplay.",
      "general": [
-      "Damage decreased from 60 to 40.",
-      "Extra [Spike Guard] Resource reduced from 30% to 15%.",
-      "[Violent Leap] Hit Bonus Energy decreased from 15% to 10%.",
-      "Movement Speed penalty reduction decreased from 90% reduced to 50% reduced.",
-      "Extra [Spike Guard] Resource bonus decreased from 50% to 25%.",
-      "[Jagged Wall] Hits Bonus Energy decreased from 25% to 15%."
+      {
+       "text_en": "Damage decreased from 60 to 40.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 60.0,
+       "after": 40.0,
+       "by": -20.0,
+       "by_pct": null,
+       "metric": "damage",
+       "unit": null
+      },
+      {
+       "text_en": "Extra [Spike Guard] Resource reduced from 30% to 15%.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Movement Speed penalty reduction decreased from 90% reduced to 50% reduced.",
+       "text_cn": null,
+       "subject": "move_speed",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Extra [Spike Guard] Resource bonus decreased from 50% to 25%.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
-     "abilities": []
+     "abilities": [
+      {
+       "name_en": "Violent Leap",
+       "name_cn": null,
+       "slug": "violent-leap",
+       "changes": [
+        {
+         "text_en": "[Violent Leap] Hit Bonus Energy decreased from 15% to 10%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "unit": null,
+         "raw_metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Jagged Wall",
+       "name_cn": "尖刺墙",
+       "slug": "jagged-wall",
+       "changes": [
+        {
+         "text_en": "[Jagged Wall] Hits Bonus Energy decreased from 25% to 15%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "unit": null,
+         "raw_metric": null
+        }
+       ]
+      }
+     ]
     },
     {
      "slug": "junker-queen",
@@ -157,7 +259,18 @@
      "role": "tank",
      "dev_note": "Royal Bullets has enabled Junker Queen to be dominant for several seasons now, so we're tuning it down to bring her more in line with other tanks in Stadium.",
      "general": [
-      "Wound damage decreased from 40 to 25."
+      {
+       "text_en": "Wound damage decreased from 40 to 25.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 40.0,
+       "after": 25.0,
+       "by": -15.0,
+       "by_pct": null,
+       "metric": "wound damage",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -169,10 +282,54 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Healing reduced from 8% of Max Life per second to 5% of Max Life per second.",
-      "Bonus damage decreased from 25% to 10%.",
-      "Attack Speed stat bonus decreased from 10% to 5%.",
-      "Cost increased from 4000 to 5000."
+      {
+       "text_en": "Healing reduced from 8% of Max Life per second to 5% of Max Life per second.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Bonus damage decreased from 25% to 10%.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Attack Speed stat bonus decreased from 10% to 5%.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Cost increased from 4000 to 5000.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 4000.0,
+       "after": 5000.0,
+       "by": 1000.0,
+       "by_pct": null,
+       "metric": "cost",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -184,19 +341,148 @@
      "role": "tank",
      "dev_note": "Ramattra has started with a middling win rate in Stadium, but as his builds become more optimized, some of them have proven to be outliers. We're tuning back some of his Ravenous Vortex / Nemesis Form oriented Powers, and we're improving his Weapon Power oriented options.",
      "general": [
-      "Maximum damage increased to 150.",
-      "[Annihilation] Duration bonus decreased from 2s to 1s.",
-      "Healing decreased from 50% to 25% of damage mitigated.",
-      "[Nemesis Form] Cooldown Reduction per enemy hit by [Ravenous Vortex] reduced from 1s to 0.5s.",
-      "Void Blight damage increased from 20 to 30.",
-      "Cost decreased from 12000 to 10000.",
-      "Damage amplification increased from 10% to 15%.",
-      "[Ravenous Vortex] cooldown reduction reduced from 100% to 75%.",
-      "Final Form healing reduced from 80 to 50.",
-      "Re-enabled."
+      {
+       "text_en": "Maximum damage increased to 150.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Healing decreased from 50% to 25% of damage mitigated.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Void Blight damage increased from 20 to 30.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 20.0,
+       "after": 30.0,
+       "by": 10.0,
+       "by_pct": null,
+       "metric": "void blight damage",
+       "unit": null
+      },
+      {
+       "text_en": "Cost decreased from 12000 to 10000.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 12000.0,
+       "after": 10000.0,
+       "by": -2000.0,
+       "by_pct": null,
+       "metric": "cost",
+       "unit": null
+      },
+      {
+       "text_en": "Damage amplification increased from 10% to 15%.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Final Form healing reduced from 80 to 50.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 80.0,
+       "after": 50.0,
+       "by": -30.0,
+       "by_pct": null,
+       "metric": "final form healing",
+       "unit": null
+      },
+      {
+       "text_en": "Re-enabled.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
-     "abilities": []
+     "abilities": [
+      {
+       "name_en": "Annihilation",
+       "name_cn": "诛",
+       "slug": "annihilation",
+       "changes": [
+        {
+         "text_en": "[Annihilation] Duration bonus decreased from 2s to 1s.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "unit": null,
+         "raw_metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Nemesis Form",
+       "name_cn": null,
+       "slug": "nemesis-form",
+       "changes": [
+        {
+         "text_en": "[Nemesis Form] Cooldown Reduction per enemy hit by [Ravenous Vortex] reduced from 1s to 0.5s.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "unit": null,
+         "raw_metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Ravenous Vortex",
+       "name_cn": "吞噬漩涡",
+       "slug": "ravenous-vortex",
+       "changes": [
+        {
+         "text_en": "[Ravenous Vortex] cooldown reduction reduced from 100% to 75%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "unit": null,
+         "raw_metric": null
+        }
+       ]
+      }
+     ]
     },
     {
      "slug": "zarya",
@@ -205,7 +491,18 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Increased currency earned from Healing and Damage by 7.14%."
+      {
+       "text_en": "Increased currency earned from Healing and Damage by 7.14%.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -217,7 +514,18 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Additional bolt damage decreased from 50% reduced damage to 60% reduced damage."
+      {
+       "text_en": "Additional bolt damage decreased from 50% reduced damage to 60% reduced damage.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -229,7 +537,18 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "Re-enabled."
+      {
+       "text_en": "Re-enabled.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -240,11 +559,28 @@
      "name_cn": "布丽吉塔",
      "role": "support",
      "dev_note": null,
-     "general": [
-      "[Repair Pack] Duration bonus decreased from 50% to 25%."
-     ],
+     "general": [],
      "perks": [],
-     "abilities": []
+     "abilities": [
+      {
+       "name_en": "Repair Pack",
+       "name_cn": null,
+       "slug": "repair-pack",
+       "changes": [
+        {
+         "text_en": "[Repair Pack] Duration bonus decreased from 50% to 25%.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "unit": null,
+         "raw_metric": null
+        }
+       ]
+      }
+     ]
     },
     {
      "slug": "juno",
@@ -253,12 +589,52 @@
      "role": "support",
      "dev_note": "We're fixing some bugs that popped up with the recent changes to Juno and adding a bit more firepower to her Weapon Power oriented builds.",
      "general": [
-      "Critical damage increased from 175% to 200%.",
-      "[Mediblaster] Falloff range bonus increased from 5m to 15m.",
-      "Re-enabled."
+      {
+       "text_en": "Critical damage increased from 175% to 200%.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Re-enabled.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
-     "abilities": []
+     "abilities": [
+      {
+       "name_en": "Mediblaster",
+       "name_cn": null,
+       "slug": "mediblaster",
+       "changes": [
+        {
+         "text_en": "[Mediblaster] Falloff range bonus increased from 5m to 15m.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "unit": null,
+         "raw_metric": null
+        }
+       ]
+      }
+     ]
     },
     {
      "slug": "wuyang",
@@ -267,10 +643,54 @@
      "role": "support",
      "dev_note": "Water College Hat is a little too efficient for its cost, causing it to be mandatory for many Wuyang builds. We're adjusting it to give value more in line with its cost.",
      "general": [
-      "Passive [Restoration Stream] Duration bonus reduced from 50% to 25%.",
-      "Overhealth per second reduced from 10 to 5.",
-      "Max Overhealth decreased from 30 to 15.",
-      "Cost increased from 4000 to 5000."
+      {
+       "text_en": "Passive [Restoration Stream] Duration bonus reduced from 50% to 25%.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Overhealth per second reduced from 10 to 5.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 10.0,
+       "after": 5.0,
+       "by": -5.0,
+       "by_pct": null,
+       "metric": "overhealth",
+       "unit": "hp"
+      },
+      {
+       "text_en": "Max Overhealth decreased from 30 to 15.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 30.0,
+       "after": 15.0,
+       "by": -15.0,
+       "by_pct": null,
+       "metric": "max overhealth",
+       "unit": null
+      },
+      {
+       "text_en": "Cost increased from 4000 to 5000.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 4000.0,
+       "after": 5000.0,
+       "by": 1000.0,
+       "by_pct": null,
+       "metric": "cost",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -299,5 +719,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:b9cd94dbfd6318bddac1291b1eab08de07f00cf9f4b54c93b7898163e7828656"
+ "hash": "sha256:e2ac26b3d010cfcf8b0a0685ce8f556cbba70fa73090afad0ce47a006f15405a"
 }

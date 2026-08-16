@@ -27,7 +27,18 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "Lifeweaver has been added to the line-up."
+      {
+       "text_en": "Lifeweaver has been added to the line-up.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -41,7 +52,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -55,7 +70,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -69,7 +88,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -83,7 +106,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -97,7 +124,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -111,7 +142,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -125,7 +160,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -223,8 +262,30 @@
      "role": "tank",
      "dev_note": "Developer Comment: Reinhardt has been overperforming after the recent increases to his offensive capabilities. Those changes have been playing well, so to adjust his overall power, we’re reducing his overall health through this armor reduction.",
      "general": [
-      "Armor health reduced from 300 to 250",
-      "Base health increased from 175 to 200"
+      {
+       "text_en": "Armor health reduced from 300 to 250",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 300.0,
+       "after": 250.0,
+       "by": -50.0,
+       "by_pct": null,
+       "metric": "armor",
+       "unit": "hp"
+      },
+      {
+       "text_en": "Base health increased from 175 to 200",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 175.0,
+       "after": 200.0,
+       "by": 25.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -248,14 +309,22 @@
          "text_cn": null,
          "before": 60.0,
          "after": 40.0,
-         "metric": "impact damage"
+         "metric": "impact damage",
+         "by": -20.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "impact damage"
         },
         {
          "text_en": "Knockdown duration increased from 0.8 to 1.1 seconds",
          "text_cn": null,
          "before": 0.8,
          "after": 1.1,
-         "metric": "knockdown duration"
+         "metric": "knockdown duration",
+         "by": 0.3,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "knockdown duration"
         }
        ]
       }
@@ -277,7 +346,18 @@
      "role": "damage",
      "dev_note": "Developer Comments: Magnetic Grenade only requiring one additional primary fire shot after sticking to a target was too reliable to execute on, even though it only works at close range. We're reducing the total damage on Magnetic Grenade, evenly split between the direct target damage and explosion. The reduced falloff-damage buff his primary fire received recently enables Cassidy to play from safer engagement ranges now, so we're reducing his health back to 200.",
      "general": [
-      "Base health reduced from 225 to 200"
+      {
+       "text_en": "Base health reduced from 225 to 200",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 225.0,
+       "after": 200.0,
+       "by": -25.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -291,7 +371,11 @@
          "text_cn": null,
          "before": 131.0,
          "after": 120.0,
-         "metric": "damage"
+         "metric": "damage",
+         "by": -11.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage"
         }
        ]
       }
@@ -316,7 +400,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -350,7 +438,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "maximum duration on tank heroes",
+         "by": null,
+         "by_pct": 30.0,
+         "unit": null,
+         "raw_metric": "maximum duration on tank heroes"
         }
        ]
       }
@@ -375,42 +467,66 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Brigitte no longer gradually builds temporary health like her nearby allies",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Rally now upgrades her Barrier Shield, increasing both its size and health",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Barrier health increased from 300 to 750 during the ultimate",
          "text_cn": null,
          "before": 300.0,
          "after": 750.0,
-         "metric": "barrier health"
+         "metric": "barrier",
+         "by": 450.0,
+         "by_pct": null,
+         "unit": "hp",
+         "raw_metric": "barrier health"
         },
         {
          "text_en": "During Rally, Shield Bash now impacts multiple enemies and briefly stuns them",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Bonus movement speed reduced from 30 to 15%",
          "text_cn": null,
          "before": 30.0,
          "after": 15.0,
-         "metric": "bonus movement speed"
+         "metric": "bonus movement speed",
+         "by": -15.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "bonus movement speed"
         }
        ]
       },
@@ -424,7 +540,11 @@
          "text_cn": null,
          "before": 30.0,
          "after": 25.0,
-         "metric": "range"
+         "metric": "range",
+         "by": -5.0,
+         "by_pct": null,
+         "unit": "m",
+         "raw_metric": "range"
         }
        ]
       }
@@ -449,14 +569,22 @@
          "text_cn": null,
          "before": 45.0,
          "after": 55.0,
-         "metric": "second"
+         "metric": "healing",
+         "by": 10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "healing-per-second"
         },
         {
          "text_en": "Healing is no longer increased for allies under half health",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -470,21 +598,33 @@
          "text_cn": null,
          "before": 2.5,
          "after": 1.5,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": -1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         },
         {
          "text_en": "Jump and Crouch cancel active ability state duration increased from 1.0 to 1.5 seconds",
          "text_cn": null,
          "before": 1.0,
          "after": 1.5,
-         "metric": "jump and crouch cancel active ability state duration"
+         "metric": "jump and crouch cancel active ability state duration",
+         "by": 0.5,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "jump and crouch cancel active ability state duration"
         },
         {
          "text_en": "The Jump and Crouch cancel active ability state can no longer be manually interrupted to begin the cooldown early",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -498,7 +638,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -523,7 +667,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -537,7 +685,11 @@
          "text_cn": null,
          "before": 50.0,
          "after": 40.0,
-         "metric": "bonus movement speed"
+         "metric": "bonus movement speed",
+         "by": -10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "bonus movement speed"
         }
        ]
       },
@@ -551,7 +703,11 @@
          "text_cn": null,
          "before": 2.0,
          "after": 3.0,
-         "metric": "lingering heal duration"
+         "metric": "lingering heal duration",
+         "by": 1.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "lingering heal duration"
         }
        ]
       }
@@ -624,5 +780,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:5d342b9943d6acb94e6d23673c402ba61097e6030cefd6a135d39f4d1de956b2"
+ "hash": "sha256:1c33d1f39c9cb351d46438ac40e7f0ca6afbe8d5a696cce6de3f41c75d083797"
 }

@@ -92,7 +92,11 @@
          "text_cn": null,
          "before": 75.0,
          "after": 70.0,
-         "metric": "healing"
+         "metric": "healing",
+         "by": -5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "healing"
         }
        ]
       }
@@ -117,7 +121,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -142,14 +150,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "spread",
+         "by": null,
+         "by_pct": 10.0,
+         "unit": null,
+         "raw_metric": "spread"
         },
         {
          "text_en": "Shots until max spread reduction lowered from 60 to 40",
          "text_cn": null,
-         "before": null,
-         "after": null,
-         "metric": null
+         "before": 60.0,
+         "after": 40.0,
+         "metric": "shots until max spread reduction",
+         "by": -20.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "shots until max spread reduction"
         }
        ]
       },
@@ -163,14 +179,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "resource drain rate",
+         "by": null,
+         "by_pct": 20.0,
+         "unit": null,
+         "raw_metric": "resource drain rate"
         },
         {
          "text_en": "Healing per second increased from 75 to 90",
          "text_cn": null,
          "before": 75.0,
          "after": 90.0,
-         "metric": "healing per second"
+         "metric": "healing",
+         "by": 15.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "healing per second"
         }
        ]
       }
@@ -183,7 +207,18 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Restored functionality allowing D.Va to maintain her current aim pitch when de-meching"
+      {
+       "text_en": "Restored functionality allowing D.Va to maintain her current aim pitch when de-meching",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -207,21 +242,33 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "When landing very close or on top of enemies, the enemy will be pushed in front/away from Doomfist slightly, instead of sometimes having then end up beside/behind Doomfist",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Aerial Seismic Slam no longer has a slight acceleration time, which should make it arrive at the destination more reliably",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -234,7 +281,18 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Reduced the height of Echo's head hit volume"
+      {
+       "text_en": "Reduced the height of Echo's head hit volume",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -258,7 +316,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -272,14 +334,22 @@
          "text_cn": null,
          "before": 20.0,
          "after": 25.0,
-         "metric": "projectile speed"
+         "metric": "projectile_speed",
+         "by": 5.0,
+         "by_pct": null,
+         "unit": "m/s",
+         "raw_metric": "projectile speed"
         },
         {
          "text_en": "Ricochet distance off of enemy players greatly reduced",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -291,16 +361,24 @@
         {
          "text_en": "Bomb detonation time reduced from 1 sec to 0.7",
          "text_cn": null,
-         "before": null,
-         "after": null,
-         "metric": null
+         "before": 1.0,
+         "after": 0.7,
+         "metric": "bomb detonation time",
+         "by": -0.3,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "bomb detonation time"
         },
         {
          "text_en": "Bombs spread increased 50%",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "bombs spread",
+         "by": null,
+         "by_pct": 50.0,
+         "unit": null,
+         "raw_metric": "bombs spread"
         }
        ]
       }
@@ -325,7 +403,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -350,7 +432,11 @@
          "text_cn": null,
          "before": 50.0,
          "after": 55.0,
-         "metric": "healing per second"
+         "metric": "healing",
+         "by": 5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "healing per second"
         }
        ]
       }
@@ -375,21 +461,33 @@
          "text_cn": null,
          "before": 5.0,
          "after": 4.0,
-         "metric": "damage radius"
+         "metric": "damage",
+         "by": -1.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage radius"
         },
         {
          "text_en": "Projectile speed increased from 16 to 20",
          "text_cn": null,
          "before": 16.0,
          "after": 20.0,
-         "metric": "projectile speed"
+         "metric": "projectile_speed",
+         "by": 4.0,
+         "by_pct": null,
+         "unit": "m/s",
+         "raw_metric": "projectile speed"
         },
         {
          "text_en": "Projectile duration reduced from 10 to 7 seconds",
          "text_cn": null,
          "before": 10.0,
          "after": 7.0,
-         "metric": "projectile duration"
+         "metric": "projectile duration",
+         "by": -3.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "projectile duration"
         }
        ]
       }
@@ -402,7 +500,18 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Reduced the height of Reinhardt's head hit volume, making it harder to hit him in the head from behind"
+      {
+       "text_en": "Reduced the height of Reinhardt's head hit volume, making it harder to hit him in the head from behind",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -426,7 +535,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -490,5 +603,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:48eb8c9c5d8543b1a6b2f9f3709f672b7202a09323fecfa46cbbf0431c60d17a"
+ "hash": "sha256:860adfe55f59751cc34585fc4603e062ac386a5e41bd8e014236892e5ca67ff9"
 }

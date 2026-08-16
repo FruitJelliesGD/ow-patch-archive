@@ -31,7 +31,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -56,7 +60,11 @@
          "text_cn": null,
          "before": 28.0,
          "after": 29.0,
-         "metric": "damage"
+         "metric": "damage",
+         "by": 1.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage"
         }
        ]
       },
@@ -70,7 +78,11 @@
          "text_cn": null,
          "before": 120.0,
          "after": 110.0,
-         "metric": "damage"
+         "metric": "damage",
+         "by": -10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage"
         }
        ]
       }
@@ -95,7 +107,11 @@
          "text_cn": null,
          "before": 20.0,
          "after": 24.0,
-         "metric": "healing"
+         "metric": "self-healing",
+         "by": 4.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "self-healing"
         }
        ]
       }
@@ -108,8 +124,30 @@
      "role": "tank",
      "dev_note": "Roadhog tanks for his allies by being a large and threatening target with high durability which draws a lot of fire from the enemy team. We're reducing the amount of ultimate charge he provides to better enable him in this role without as much of a downside for his own team.",
      "general": [
-      "General",
-      "Enemies now generate 25% less Ultimate Charge from damage dealt to Roadhog"
+      {
+       "text_en": "General",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Enemies now generate 25% less Ultimate Charge from damage dealt to Roadhog",
+       "text_cn": null,
+       "subject": "ultimate_cost",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -133,7 +171,11 @@
          "text_cn": null,
          "before": 19.0,
          "after": 20.0,
-         "metric": "damage"
+         "metric": "damage",
+         "by": 1.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage"
         }
        ]
       },
@@ -147,7 +189,11 @@
          "text_cn": null,
          "before": 40.0,
          "after": 35.0,
-         "metric": "healing"
+         "metric": "healing",
+         "by": -5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "healing"
         }
        ]
       }
@@ -172,7 +218,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -184,16 +234,24 @@
         {
          "text_en": "Cast time reduced from 0.2 seconds to 0 seconds",
          "text_cn": null,
-         "before": null,
-         "after": null,
-         "metric": null
+         "before": 0.2,
+         "after": 0.0,
+         "metric": "cast_time",
+         "by": -0.2,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cast time"
         },
         {
          "text_en": "Duration increased from 7 to 9 seconds",
          "text_cn": null,
          "before": 7.0,
          "after": 9.0,
-         "metric": "duration"
+         "metric": "duration",
+         "by": 2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "duration"
         }
        ]
       },
@@ -207,7 +265,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -218,5 +280,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:e3e4ee1aea6fb3899193d37643f1fa7b9004e9b5df06dc39f81129d0efa358c5"
+ "hash": "sha256:ae7372ece0b3e4bff4a8b7abb405cf70be55d19ee42a3028f6cd1f657ec4752c"
 }

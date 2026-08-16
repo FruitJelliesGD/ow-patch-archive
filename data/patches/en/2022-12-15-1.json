@@ -39,7 +39,11 @@
          "text_cn": null,
          "before": 3.0,
          "after": 4.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": 1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       },
@@ -53,7 +57,11 @@
          "text_cn": null,
          "before": 80.0,
          "after": 100.0,
-         "metric": "minimum damage mitigated required to empower rocket punch"
+         "metric": "minimum damage mitigated required to empower rocket punch",
+         "by": 20.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "minimum damage mitigated required to empower rocket punch"
         }
        ]
       },
@@ -67,7 +75,11 @@
          "text_cn": null,
          "before": 40.0,
          "after": 35.0,
-         "metric": "temporary health gained per target hit with abilities"
+         "metric": "temporary health gained per target hit with abilities",
+         "by": -5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "temporary health gained per target hit with abilities"
         }
        ]
       }
@@ -92,7 +104,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -106,7 +122,11 @@
          "text_cn": null,
          "before": 15.0,
          "after": 25.0,
-         "metric": "damage falloff range"
+         "metric": "damage",
+         "by": 10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage falloff range"
         }
        ]
       }
@@ -131,14 +151,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "move_speed",
+         "by": null,
+         "by_pct": 20.0,
+         "unit": null,
+         "raw_metric": "movement speed"
         },
         {
          "text_en": "Armor bonus increased from 150 to 225",
          "text_cn": null,
          "before": 150.0,
          "after": 225.0,
-         "metric": "armor bonus"
+         "metric": "armor",
+         "by": 75.0,
+         "by_pct": null,
+         "unit": "hp",
+         "raw_metric": "armor bonus"
         }
        ]
       },
@@ -152,7 +180,11 @@
          "text_cn": null,
          "before": 15.0,
          "after": 13.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": -2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       }
@@ -186,7 +218,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "primary fire spread",
+         "by": null,
+         "by_pct": 28.0,
+         "unit": null,
+         "raw_metric": "primary fire spread"
         }
        ]
       },
@@ -200,7 +236,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -214,7 +254,11 @@
          "text_cn": null,
          "before": 6.0,
          "after": 7.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": 1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       }
@@ -239,7 +283,11 @@
          "text_cn": null,
          "before": 6.0,
          "after": 5.5,
-         "metric": "damage"
+         "metric": "damage",
+         "by": -0.5,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage"
         }
        ]
       }
@@ -273,7 +321,11 @@
          "text_cn": null,
          "before": 70.0,
          "after": 75.0,
-         "metric": "damage and healing"
+         "metric": "damage",
+         "by": 5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage and healing"
         }
        ]
       },
@@ -287,7 +339,11 @@
          "text_cn": null,
          "before": 3.0,
          "after": 4.0,
-         "metric": "effect duration"
+         "metric": "effect duration",
+         "by": 1.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "effect duration"
         }
        ]
       }
@@ -312,7 +368,11 @@
          "text_cn": null,
          "before": 1.0,
          "after": 0.85,
-         "metric": "invulnerability duration"
+         "metric": "invulnerability duration",
+         "by": -0.15,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "invulnerability duration"
         }
        ]
       }
@@ -323,5 +383,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:76631455f12968272acbee00164c754edff1d5f0145eeeb0f4ac8ed5adb5d3f0"
+ "hash": "sha256:84cb87b325043b5bdcd2aac68acbbd17e4ca85e165fbf07720536bff4b732979"
 }

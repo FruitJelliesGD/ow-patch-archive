@@ -35,13 +35,59 @@
      "role": "tank",
      "dev_note": "开发者评论：“西格玛”的屏障在游戏后期并未得到适当强化，与需要由他吸收的压力相比，屏障常常会显得过于脆弱。我们提高了屏障的生命值，让它在战斗更加激烈时能够持续更久。另外，强调质量吸附的搭配表现不如预期，原因很大程度上是因为在快节奏战斗中，该技能的触发频率较低。有了冷却时间增强，质量吸附现在会更快响应，影响力也更大。特别是在游戏后期的团战中，频繁的控制可以有效影响战斗势头。",
      "general": [
-      "屏障生命值提升比例从100%提高至150%。屏障会根据你赚得的资金得到更多的生命值强化。",
-      "超能循环——异能",
-      "冷却时间缩减效果从0.5秒提高至0.8秒。",
-      "奇点——异能",
-      "溅射伤害加成从25%提高至75%。"
+      {
+       "text_en": null,
+       "text_cn": "屏障生命值提升比例从100%提高至150%。屏障会根据你赚得的资金得到更多的生命值强化。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 100.0,
+       "after": 150.0,
+       "by": 50.0,
+       "by_pct": null,
+       "metric": "barrier",
+       "unit": "pct"
+      },
+      {
+       "text_en": null,
+       "text_cn": "冷却时间缩减效果从0.5秒提高至0.8秒。",
+       "subject": null,
+       "dimension": "other",
+       "before": 0.5,
+       "after": 0.8,
+       "by": 0.3,
+       "by_pct": null,
+       "metric": "cooldown",
+       "unit": "s"
+      },
+      {
+       "text_en": null,
+       "text_cn": "溅射伤害加成从25%提高至75%。",
+       "subject": null,
+       "dimension": "other",
+       "before": 25.0,
+       "after": 75.0,
+       "by": 50.0,
+       "by_pct": null,
+       "metric": "溅射伤害加成",
+       "unit": "pct"
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "超能循环",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": null,
+       "name_cn": "奇点",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     }
    ],
@@ -49,5 +95,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:125609228e52006490badf89e0f0ff6f7bc9761da990307a0458afe3900d0be7"
+ "hash": "sha256:00f5826982f7dd50e86aa4ac554ae1299f2a975906647d89e297af870c91dbaf"
 }

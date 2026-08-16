@@ -27,12 +27,78 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "修复了手提聚变连发枪的一个错误，该错误可能导致命中无法正确判定。",
-      "修复了无极斩在命中多个目标时无法正确提供过量生命值的错误。",
-      "已在此前的更新中修复——修复了无极斩激活时，无法获得过量生命值的问题。",
-      "命中判定区域调整",
-      "修复了部署强力屏障时，仍会从正面受到伤害的问题。",
-      "调整了机甲头部命中判定区域的高度，使其与模型更加贴合。"
+      {
+       "text_en": null,
+       "text_cn": "修复了手提聚变连发枪的一个错误，该错误可能导致命中无法正确判定。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "修复了无极斩在命中多个目标时无法正确提供过量生命值的错误。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "已在此前的更新中修复——修复了无极斩激活时，无法获得过量生命值的问题。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "命中判定区域调整",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "修复了部署强力屏障时，仍会从正面受到伤害的问题。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "调整了机甲头部命中判定区域的高度，使其与模型更加贴合。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -46,14 +112,22 @@
          "text_cn": "施放时间从0.15秒缩短至0.05秒。",
          "before": 0.15,
          "after": 0.05,
-         "metric": "施放时间"
+         "metric": "cast_time",
+         "by": -0.1,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "施放时间"
         },
         {
          "text_en": null,
          "text_cn": "恢复时间从0.25秒缩短至0.15秒。",
          "before": 0.25,
          "after": 0.15,
-         "metric": "恢复时间"
+         "metric": "recovery",
+         "by": -0.1,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "恢复时间"
         }
        ]
       },
@@ -67,14 +141,22 @@
          "text_cn": "施放时间从0.3秒缩短至0.2秒",
          "before": 0.3,
          "after": 0.2,
-         "metric": "施放时间"
+         "metric": "cast_time",
+         "by": -0.1,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "施放时间"
         },
         {
          "text_en": null,
          "text_cn": "恢复时间从0.5秒缩短至0.2秒。",
          "before": 0.5,
          "after": 0.2,
-         "metric": "恢复时间"
+         "metric": "recovery",
+         "by": -0.3,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "恢复时间"
         }
        ]
       }
@@ -87,7 +169,18 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "基础移动速度从每秒6米降低至每秒5.5米。"
+      {
+       "text_en": null,
+       "text_cn": "基础移动速度从每秒6米降低至每秒5.5米。",
+       "subject": "move_speed",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -101,7 +194,11 @@
          "text_cn": "自身受到的治疗效果惩罚从25%提高至40%。",
          "before": 25.0,
          "after": 40.0,
-         "metric": "自身受到的治疗效果惩罚"
+         "metric": "自身受到的治疗效果惩罚",
+         "by": 15.0,
+         "by_pct": null,
+         "unit": "pct",
+         "raw_metric": "自身受到的治疗效果惩罚"
         }
        ]
       }
@@ -112,5 +209,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:da0e1e8a4d3c2f466ea5286fafbcc77538c32f70b424eedea67333fc932dc2cd"
+ "hash": "sha256:71770173d45093ca94ab6dcdb779f2cb8b6a4d8ff5b6ac1d9c80fa3dd691d144"
 }

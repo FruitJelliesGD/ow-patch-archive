@@ -39,7 +39,11 @@
          "text_cn": null,
          "before": 0.25,
          "after": 0.2,
-         "metric": "base projectile size"
+         "metric": "base projectile size",
+         "by": -0.05,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "base projectile size"
         }
        ]
       }
@@ -64,7 +68,11 @@
          "text_cn": null,
          "before": 40.0,
          "after": 50.0,
-         "metric": "damage reduction"
+         "metric": "damage",
+         "by": 10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage reduction"
         }
        ]
       }
@@ -89,14 +97,22 @@
          "text_cn": null,
          "before": 85.0,
          "after": 95.0,
-         "metric": "primary fire minimum damage"
+         "metric": "primary fire minimum damage",
+         "by": 10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "primary fire minimum damage"
         },
         {
          "text_en": "Primary fire maximum damage increased from 170 to 190 damage per second.",
          "text_cn": null,
          "before": 170.0,
          "after": 190.0,
-         "metric": "primary fire maximum damage"
+         "metric": "primary fire maximum damage",
+         "by": 20.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "primary fire maximum damage"
         }
        ]
       }
@@ -118,7 +134,18 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Base projectile sizes reduced from 0.1 to 0.075 meters. Total projectile size is now 0.175 meters."
+      {
+       "text_en": "Base projectile sizes reduced from 0.1 to 0.075 meters. Total projectile size is now 0.175 meters.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 0.1,
+       "after": 0.075,
+       "by": -0.025,
+       "by_pct": null,
+       "metric": "base projectile sizes",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -142,21 +169,33 @@
          "text_cn": null,
          "before": 8.0,
          "after": 7.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": -1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         },
         {
          "text_en": "Maximum damage increased from 110 to 120.",
          "text_cn": null,
          "before": 110.0,
          "after": 120.0,
-         "metric": "maximum damage"
+         "metric": "maximum damage",
+         "by": 10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "maximum damage"
         },
         {
          "text_en": "Minimum damage increased from 20 to 55.",
          "text_cn": null,
          "before": 20.0,
          "after": 55.0,
-         "metric": "minimum damage"
+         "metric": "minimum damage",
+         "by": 35.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "minimum damage"
         }
        ]
       }
@@ -181,7 +220,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -206,7 +249,11 @@
          "text_cn": null,
          "before": 12.0,
          "after": 10.0,
-         "metric": "minimum falloff range"
+         "metric": "minimum falloff range",
+         "by": -2.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "minimum falloff range"
         }
        ]
       }
@@ -231,14 +278,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Scoped shot damage falloff min-max range increased from 40-60 to 50-70 meters.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -272,14 +327,22 @@
          "text_cn": null,
          "before": 8.0,
          "after": 6.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": -2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         },
         {
          "text_en": "Cooldown when destroyed by enemies decreased from 15 to 12 seconds.",
          "text_cn": null,
          "before": 15.0,
          "after": 12.0,
-         "metric": "cooldown when destroyed by enemies"
+         "metric": "cooldown",
+         "by": -3.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown when destroyed by enemies"
         }
        ]
       },
@@ -293,14 +356,22 @@
          "text_cn": null,
          "before": 100.0,
          "after": 160.0,
-         "metric": "sunstruck explosion damage"
+         "metric": "sunstruck explosion damage",
+         "by": 60.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "sunstruck explosion damage"
         },
         {
          "text_en": "Sunstruck explosion now has damage falloff again, reducing damage by up to 25%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -325,7 +396,11 @@
          "text_cn": null,
          "before": 0.15,
          "after": 0.1,
-         "metric": "base projectile size"
+         "metric": "base projectile size",
+         "by": -0.05,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "base projectile size"
         }
        ]
       }
@@ -350,7 +425,11 @@
          "text_cn": null,
          "before": 0.25,
          "after": 0.2,
-         "metric": "base projectile size"
+         "metric": "base projectile size",
+         "by": -0.05,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "base projectile size"
         }
        ]
       }
@@ -363,7 +442,18 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "Base health decreased from 100 to 75."
+      {
+       "text_en": "Base health decreased from 100 to 75.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 100.0,
+       "after": 75.0,
+       "by": -25.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -377,7 +467,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "knockback",
+         "by": null,
+         "by_pct": 25.0,
+         "unit": null,
+         "raw_metric": "knockback"
         }
        ]
       }
@@ -388,5 +482,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:1d40dc6c3b0db574b69d323f0dc1b6286979a339f4ee6998f5cac0013696dfdb"
+ "hash": "sha256:2d7772d0ae1fbdff666cf94c3be398f2608ab8599de470aaad8c0266e01aeec6"
 }

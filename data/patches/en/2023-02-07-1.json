@@ -86,8 +86,30 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Mech base health in Role Queue modes remains the same at 350",
-      "Mech base health in non-Role Queue modes reduced from 350 to 200"
+      {
+       "text_en": "Mech base health in Role Queue modes remains the same at 350",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Mech base health in non-Role Queue modes reduced from 350 to 200",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 350.0,
+       "after": 200.0,
+       "by": -150.0,
+       "by_pct": null,
+       "metric": "mech base health in non-role queue modes",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -99,8 +121,30 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Base health in Role Queue modes remains the same at 450",
-      "Base health in non-Role Queue modes reduced from 450 to 300"
+      {
+       "text_en": "Base health in Role Queue modes remains the same at 450",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Base health in non-Role Queue modes reduced from 450 to 300",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 450.0,
+       "after": 300.0,
+       "by": -150.0,
+       "by_pct": null,
+       "metric": "base health in non-role queue modes",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -112,8 +156,30 @@
      "role": "tank",
      "dev_note": "Developer Comment: The overall base health for Junkerqueen is increased by 25 HP.",
      "general": [
-      "Base health in Role Queue modes increased to 450",
-      "Base health in non-Role Queue modes reduced from 425 to 300"
+      {
+       "text_en": "Base health in Role Queue modes increased to 450",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Base health in non-Role Queue modes reduced from 425 to 300",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 425.0,
+       "after": 300.0,
+       "by": -125.0,
+       "by_pct": null,
+       "metric": "base health in non-role queue modes",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -125,8 +191,30 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Base health in Role Queue modes remains the same at 275",
-      "Base health in non-Role Queue modes reduced from 275 to 125"
+      {
+       "text_en": "Base health in Role Queue modes remains the same at 275",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Base health in non-Role Queue modes reduced from 275 to 125",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 275.0,
+       "after": 125.0,
+       "by": -150.0,
+       "by_pct": null,
+       "metric": "base health in non-role queue modes",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -140,7 +228,11 @@
          "text_cn": null,
          "before": 25.0,
          "after": 15.0,
-         "metric": "damage falloff range"
+         "metric": "damage",
+         "by": -10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage falloff range"
         }
        ]
       }
@@ -153,8 +245,30 @@
      "role": "tank",
      "dev_note": "Developer Comment: The idea of an ultimate ability potentially lasting forever is an exciting concept, but the reality is that if it's too easy to do it causes a lot of frustrations and with Ramattra's ultimate in particular, an excessive amount of visual noise. We're limiting the maximum duration to 20 seconds, which is still highly impactful for most team fights, but it guarantees it'll end in a reasonable amount of time",
      "general": [
-      "Base health in Role Queue modes remains the same at 450",
-      "Base health in non-Role Queue modes reduced from 450 to 300"
+      {
+       "text_en": "Base health in Role Queue modes remains the same at 450",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Base health in non-Role Queue modes reduced from 450 to 300",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 450.0,
+       "after": 300.0,
+       "by": -150.0,
+       "by_pct": null,
+       "metric": "base health in non-role queue modes",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -168,14 +282,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Ultimate cost increased 12%",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "ultimate_cost",
+         "by": null,
+         "by_pct": 12.0,
+         "unit": null,
+         "raw_metric": "ultimate cost"
         }
        ]
       }
@@ -188,8 +310,30 @@
      "role": "tank",
      "dev_note": "Developer Comment: In similar fashion to Roadhog's Chain Hook combo changes last season, we'd generally like to avoid heroes in the Tank role from killing enemies in one shot. Earthshatter direct hit damage is being reduced with that goal in mind. In most cases, targets on the receiving end would die anyway during the knockdown stun, but it does open up some potential for their allies to intervene. For now, we're fine with Charge pin staying lethal to many characters due to the difficulty and risk involved. The Fire Strike damage increase does mean it could once again one-shot when combined with Baptiste's Amplification Matrix, but that requires an ultimate combo with another hero. We'll see how it plays out and adjust if necessary. The Rocket Hammer knockback reduction sounds like a loss of power though it is actually aiming to reduce the number of times Reinhardt accidentally knocks enemies out of his melee range.",
      "general": [
-      "Base health in Role Queue modes remains the same at 325",
-      "Base health in non-Role Queue modes reduced from 325 to 175"
+      {
+       "text_en": "Base health in Role Queue modes remains the same at 325",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Base health in non-Role Queue modes reduced from 325 to 175",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 325.0,
+       "after": 175.0,
+       "by": -150.0,
+       "by_pct": null,
+       "metric": "base health in non-role queue modes",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -203,7 +347,11 @@
          "text_cn": null,
          "before": 10.0,
          "after": 6.0,
-         "metric": "knockback impulse"
+         "metric": "knockback",
+         "by": -4.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "knockback impulse"
         }
        ]
       },
@@ -217,7 +365,11 @@
          "text_cn": null,
          "before": 8.0,
          "after": 7.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": -1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       },
@@ -231,7 +383,11 @@
          "text_cn": null,
          "before": 90.0,
          "after": 100.0,
-         "metric": "damage"
+         "metric": "damage",
+         "by": 10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage"
         }
        ]
       },
@@ -245,21 +401,33 @@
          "text_cn": null,
          "before": 250.0,
          "after": 170.0,
-         "metric": "direct hit damage"
+         "metric": "direct hit damage",
+         "by": -80.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "direct hit damage"
         },
         {
          "text_en": "Knockdown duration increased from 2.5 to 2.75 seconds",
          "text_cn": null,
          "before": 2.5,
          "after": 2.75,
-         "metric": "knockdown duration"
+         "metric": "knockdown duration",
+         "by": 0.25,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "knockdown duration"
         },
         {
          "text_en": "Ultimate cost increased 7%",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "ultimate_cost",
+         "by": null,
+         "by_pct": 7.0,
+         "unit": null,
+         "raw_metric": "ultimate cost"
         }
        ]
       }
@@ -272,8 +440,30 @@
      "role": "tank",
      "dev_note": "Developer Comment: Allowing Roadhog to use abilities during his ultimate made it much more reliable in a solo tank environment, though doing so was often much like just canceling the ultimate as it ran out of time. We're adding a couple seconds to the maximum duration to increase the flexibility of player choices during the Whole Hog ultimate, but we'll keep an eye on if it's simply too much damage or knockback overall.",
      "general": [
-      "Base health in Role Queue modes remains the same at 700",
-      "Base health in non-Role Queue modes reduced from 700 to 550"
+      {
+       "text_en": "Base health in Role Queue modes remains the same at 700",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Base health in non-Role Queue modes reduced from 700 to 550",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 700.0,
+       "after": 550.0,
+       "by": -150.0,
+       "by_pct": null,
+       "metric": "base health in non-role queue modes",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -287,14 +477,22 @@
          "text_cn": null,
          "before": 6.0,
          "after": 8.0,
-         "metric": "maximum duration"
+         "metric": "maximum duration",
+         "by": 2.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "maximum duration"
         },
         {
          "text_en": "Ultimate cost increased 8%",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "ultimate_cost",
+         "by": null,
+         "by_pct": 8.0,
+         "unit": null,
+         "raw_metric": "ultimate cost"
         }
        ]
       }
@@ -307,8 +505,30 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Base health in Role Queue modes remains the same at 350",
-      "Base health in non-Role Queue modes reduced from 350 to 200"
+      {
+       "text_en": "Base health in Role Queue modes remains the same at 350",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Base health in non-Role Queue modes reduced from 350 to 200",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 350.0,
+       "after": 200.0,
+       "by": -150.0,
+       "by_pct": null,
+       "metric": "base health in non-role queue modes",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -322,7 +542,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "ultimate_cost",
+         "by": null,
+         "by_pct": 7.0,
+         "unit": null,
+         "raw_metric": "ultimate cost"
         }
        ]
       }
@@ -335,8 +559,30 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Base health in Role Queue modes remains the same at 350",
-      "Base health in non-Role Queue modes reduced from 350 to 200"
+      {
+       "text_en": "Base health in Role Queue modes remains the same at 350",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Base health in non-Role Queue modes reduced from 350 to 200",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 350.0,
+       "after": 200.0,
+       "by": -150.0,
+       "by_pct": null,
+       "metric": "base health in non-role queue modes",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -350,7 +596,11 @@
          "text_cn": null,
          "before": 700.0,
          "after": 650.0,
-         "metric": "health"
+         "metric": "health",
+         "by": -50.0,
+         "by_pct": null,
+         "unit": "hp",
+         "raw_metric": "health"
         }
        ]
       }
@@ -363,9 +613,42 @@
      "role": "tank",
      "dev_note": "Developer Comments: Wrecking Ball received some of the fewest changes in the transition to 5v5 as he proved to be one of the most effective solo tanks in early testing. His extreme mobility and massive health pool enable him to choose when to fight much more freely than other heroes. These changes are aimed at reducing his downtime so he can press that advantage even further. The regenerating shield health pool often leads to not needing to search for as many health packs before getting back in position.",
      "general": [
-      "Base health in Role Queue modes reduced from 600 to 450",
-      "Base health in non-Role Queue modes reduced from 600 to 300",
-      "Shield health increased from 0 to 150"
+      {
+       "text_en": "Base health in Role Queue modes reduced from 600 to 450",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 600.0,
+       "after": 450.0,
+       "by": -150.0,
+       "by_pct": null,
+       "metric": "base health in role queue modes",
+       "unit": null
+      },
+      {
+       "text_en": "Base health in non-Role Queue modes reduced from 600 to 300",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 600.0,
+       "after": 300.0,
+       "by": -300.0,
+       "by_pct": null,
+       "metric": "base health in non-role queue modes",
+       "unit": null
+      },
+      {
+       "text_en": "Shield health increased from 0 to 150",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 0.0,
+       "after": 150.0,
+       "by": 150.0,
+       "by_pct": null,
+       "metric": "shield",
+       "unit": "hp"
+      }
      ],
      "perks": [],
      "abilities": [
@@ -379,7 +662,11 @@
          "text_cn": null,
          "before": 10.0,
          "after": 8.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": -2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       },
@@ -393,14 +680,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "ultimate_cost",
+         "by": null,
+         "by_pct": 9.0,
+         "unit": null,
+         "raw_metric": "ultimate cost"
         },
         {
          "text_en": "Arming time reduced from 1.5 to 1 second",
          "text_cn": null,
          "before": 1.5,
          "after": 1.0,
-         "metric": "arming time"
+         "metric": "arming time",
+         "by": -0.5,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "arming time"
         }
        ]
       }
@@ -413,8 +708,30 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Base health in Role Queue modes remains the same at 250",
-      "Base health in non-Role Queue modes reduced from 250 to 100"
+      {
+       "text_en": "Base health in Role Queue modes remains the same at 250",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Base health in non-Role Queue modes reduced from 250 to 100",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 250.0,
+       "after": 100.0,
+       "by": -150.0,
+       "by_pct": null,
+       "metric": "base health in non-role queue modes",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -428,7 +745,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "ultimate_cost",
+         "by": null,
+         "by_pct": 8.0,
+         "unit": null,
+         "raw_metric": "ultimate cost"
         }
        ]
       }
@@ -462,7 +783,11 @@
          "text_cn": null,
          "before": 20.0,
          "after": 25.0,
-         "metric": "primary fire falloff range"
+         "metric": "primary fire falloff range",
+         "by": 5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "primary fire falloff range"
         }
        ]
       },
@@ -476,7 +801,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -501,7 +830,11 @@
          "text_cn": null,
          "before": 120.0,
          "after": 100.0,
-         "metric": "maximum damage"
+         "metric": "maximum damage",
+         "by": -20.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "maximum damage"
         }
        ]
       }
@@ -526,7 +859,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "ultimate_cost",
+         "by": null,
+         "by_pct": 5.0,
+         "unit": null,
+         "raw_metric": "ultimate cost"
         }
        ]
       }
@@ -551,7 +888,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "ultimate_cost",
+         "by": null,
+         "by_pct": 5.0,
+         "unit": null,
+         "raw_metric": "ultimate cost"
         }
        ]
       }
@@ -576,7 +917,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "ultimate_cost",
+         "by": null,
+         "by_pct": 8.0,
+         "unit": null,
+         "raw_metric": "ultimate cost"
         }
        ]
       }
@@ -601,14 +946,22 @@
          "text_cn": null,
          "before": 4.0,
          "after": 6.0,
-         "metric": "number of shots to reach maximum recoil"
+         "metric": "number of shots to reach maximum recoil",
+         "by": 2.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "number of shots to reach maximum recoil"
         },
         {
          "text_en": "Recoil reduced 12%",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "recoil",
+         "by": null,
+         "by_pct": 12.0,
+         "unit": null,
+         "raw_metric": "recoil"
         }
        ]
       }
@@ -633,7 +986,11 @@
          "text_cn": null,
          "before": 7.0,
          "after": 7.5,
-         "metric": "damage per projectile"
+         "metric": "damage",
+         "by": 0.5,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage per projectile"
         }
        ]
       },
@@ -647,7 +1004,11 @@
          "text_cn": null,
          "before": 30.0,
          "after": 45.0,
-         "metric": "health pack hacked duration"
+         "metric": "health",
+         "by": 15.0,
+         "by_pct": null,
+         "unit": "hp",
+         "raw_metric": "health pack hacked duration"
         }
        ]
       }
@@ -672,7 +1033,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "ultimate_cost",
+         "by": null,
+         "by_pct": 10.0,
+         "unit": null,
+         "raw_metric": "ultimate cost"
         }
        ]
       }
@@ -702,7 +1067,18 @@
      "role": "damage",
      "dev_note": "Developer Comment: We experimented with Widowmaker at 200 health for a while due to concerns that the increased power of tanks made her too vulnerable to them. Ultimately she gains more advantages from 5v5 than she loses so we're returning her back to 175 HP to better enable more heroes to contest her lethal ranged capabilities.",
      "general": [
-      "Base health reduced from 200 to 175"
+      {
+       "text_en": "Base health reduced from 200 to 175",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 200.0,
+       "after": 175.0,
+       "by": -25.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -735,7 +1111,11 @@
          "text_cn": null,
          "before": 4.0,
          "after": 3.5,
-         "metric": "effect duration"
+         "metric": "effect duration",
+         "by": -0.5,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "effect duration"
         }
        ]
       }
@@ -760,14 +1140,22 @@
          "text_cn": null,
          "before": 55.0,
          "after": 50.0,
-         "metric": "healing over time"
+         "metric": "healing",
+         "by": -5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "healing over time"
         },
         {
          "text_en": "Applying a Repair Pack now instantly heals for 25 health on impact",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -781,7 +1169,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "ultimate_cost",
+         "by": null,
+         "by_pct": 10.0,
+         "unit": null,
+         "raw_metric": "ultimate cost"
         }
        ]
       }
@@ -806,7 +1198,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "ultimate_cost",
+         "by": null,
+         "by_pct": 7.0,
+         "unit": null,
+         "raw_metric": "ultimate cost"
         }
        ]
       }
@@ -831,14 +1227,22 @@
          "text_cn": null,
          "before": 1.5,
          "after": 2.5,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": 1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         },
         {
          "text_en": "Holding the backwards directional input and canceling the ability with Jump now moves 20% slower",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -852,14 +1256,22 @@
          "text_cn": null,
          "before": 55.0,
          "after": 45.0,
-         "metric": "second"
+         "metric": "healing",
+         "by": -10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "healing-per-second"
         },
         {
          "text_en": "Healing is increased by 50% for allies under half health",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "healing",
+         "by": null,
+         "by_pct": 50.0,
+         "unit": null,
+         "raw_metric": "healing is"
         }
        ]
       },
@@ -873,7 +1285,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -887,7 +1303,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -912,7 +1332,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": "ultimate_cost",
+         "by": null,
+         "by_pct": 5.0,
+         "unit": null,
+         "raw_metric": "ultimate cost"
         }
        ]
       }
@@ -937,7 +1361,11 @@
          "text_cn": null,
          "before": 20.0,
          "after": 25.0,
-         "metric": "ammo"
+         "metric": "ammo",
+         "by": 5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "ammo"
         }
        ]
       }
@@ -980,5 +1408,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:16095726164d84d67738c4d27d042f8b211218697b1cfd3505d8718eb1cc10ba"
+ "hash": "sha256:b107a9da9e22b26b0eaac5b2d10f4ab6dfe6cc132da13caabafa30ccea2558ba"
 }

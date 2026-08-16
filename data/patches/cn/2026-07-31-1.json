@@ -63,14 +63,22 @@
          "text_cn": "冷却时间从17秒缩短至15秒。",
          "before": 17.0,
          "after": 15.0,
-         "metric": "冷却时间"
+         "metric": "cooldown",
+         "by": -2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "冷却时间"
         },
         {
          "text_en": null,
          "text_cn": "持续时间从8秒缩短至7秒。",
          "before": 8.0,
          "after": 7.0,
-         "metric": "持续时间"
+         "metric": "duration",
+         "by": -1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "持续时间"
         }
        ]
       }
@@ -95,7 +103,11 @@
          "text_cn": "获得的过量生命值从25点提高至30点。",
          "before": 25.0,
          "after": 30.0,
-         "metric": "获得的过量生命值"
+         "metric": "获得的过量生命值",
+         "by": 5.0,
+         "by_pct": null,
+         "unit": "hp",
+         "raw_metric": "获得的过量生命值"
         }
        ]
       }
@@ -120,7 +132,11 @@
          "text_cn": "冷却时间从15秒缩短至13秒。",
          "before": 15.0,
          "after": 13.0,
-         "metric": "冷却时间"
+         "metric": "cooldown",
+         "by": -2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "冷却时间"
         }
        ]
       }
@@ -145,7 +161,11 @@
          "text_cn": "冷却时间从7秒缩短至6秒。",
          "before": 7.0,
          "after": 6.0,
-         "metric": "冷却时间"
+         "metric": "cooldown",
+         "by": -1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "冷却时间"
         }
        ]
       }
@@ -170,14 +190,22 @@
          "text_cn": "冷却时间从16秒缩短至13秒。",
          "before": 16.0,
          "after": 13.0,
-         "metric": "冷却时间"
+         "metric": "cooldown",
+         "by": -3.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "冷却时间"
         },
         {
          "text_en": null,
          "text_cn": "持续时间从4秒缩短至3秒。",
          "before": 4.0,
          "after": 3.0,
-         "metric": "持续时间"
+         "metric": "duration",
+         "by": -1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "持续时间"
         }
        ]
       }
@@ -188,5 +216,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:a289638e6d7731946d73c63b713e9aa87d63bc43dae174e13b09826f779b6496"
+ "hash": "sha256:91ca4fdf3e23870edc4dc37c07f3a325510718ebe2ffa7729990ed47f032c97b"
 }

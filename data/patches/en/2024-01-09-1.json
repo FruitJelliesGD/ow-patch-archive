@@ -35,8 +35,30 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Base Health increased from 250 to 300.",
-      "Base Armor decreased from 250 to 200."
+      {
+       "text_en": "Base Health increased from 250 to 300.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 250.0,
+       "after": 300.0,
+       "by": 50.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      },
+      {
+       "text_en": "Base Armor decreased from 250 to 200.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 250.0,
+       "after": 200.0,
+       "by": -50.0,
+       "by_pct": null,
+       "metric": "base armor",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": [
@@ -50,7 +72,11 @@
          "text_cn": null,
          "before": 350.0,
          "after": 300.0,
-         "metric": "ammo"
+         "metric": "ammo",
+         "by": -50.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "ammo"
         }
        ]
       },
@@ -64,14 +90,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Cooldown increased from 10 seconds to 12 seconds.",
          "text_cn": null,
-         "before": null,
-         "after": null,
-         "metric": null
+         "before": 10.0,
+         "after": 12.0,
+         "metric": "cooldown",
+         "by": 2.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       },
@@ -85,7 +119,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -99,7 +137,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -124,7 +166,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
@@ -138,7 +184,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -163,14 +213,22 @@
          "text_cn": null,
          "before": 500.0,
          "after": 450.0,
-         "metric": "total amount healed"
+         "metric": "total amount healed",
+         "by": -50.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "total amount healed"
         },
         {
          "text_en": "Cooldown between usages increased from 1 to 1.5 seconds.",
          "text_cn": null,
          "before": 1.0,
          "after": 1.5,
-         "metric": "cooldown between usages"
+         "metric": "cooldown",
+         "by": 0.5,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown between usages"
         }
        ]
       }
@@ -204,7 +262,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -229,21 +291,33 @@
          "text_cn": null,
          "before": 0.5,
          "after": 0.75,
-         "metric": "grace period where stealth can be canceled immediately after entering it"
+         "metric": "grace period where stealth can be canceled immediately after entering it",
+         "by": 0.25,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "grace period where stealth can be canceled immediately after entering it"
         },
         {
          "text_en": "Cooldown now pauses at 1 second while capturing or contesting objectives from 1.5 seconds.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Cooldown on respawning decreased from 1.5 to 1 second.",
          "text_cn": null,
          "before": 1.5,
          "after": 1.0,
-         "metric": "cooldown on respawning"
+         "metric": "cooldown",
+         "by": -0.5,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown on respawning"
         }
        ]
       }
@@ -277,7 +351,11 @@
          "text_cn": null,
          "before": 3.5,
          "after": 3.0,
-         "metric": "effect duration"
+         "metric": "effect duration",
+         "by": -0.5,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "effect duration"
         }
        ]
       }
@@ -302,14 +380,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Ammo increased from 14 to 16.",
          "text_cn": null,
          "before": 14.0,
          "after": 16.0,
-         "metric": "ammo"
+         "metric": "ammo",
+         "by": 2.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "ammo"
         }
        ]
       },
@@ -323,14 +409,22 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Removed the damage falloff penalty on the Sunstruck explosion.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -355,7 +449,11 @@
          "text_cn": null,
          "before": 70.0,
          "after": 80.0,
-         "metric": "projectile speed"
+         "metric": "projectile_speed",
+         "by": 10.0,
+         "by_pct": null,
+         "unit": "m/s",
+         "raw_metric": "projectile speed"
         }
        ]
       },
@@ -369,7 +467,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -399,5 +501,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:176133396033feedce7496aab61cacaf5ff02d0a4a25cd0d06cbf11810c3b8ae"
+ "hash": "sha256:6a4c73e905479512ad3808a024b470ed19657704cd913363bc528b2974302a4c"
 }

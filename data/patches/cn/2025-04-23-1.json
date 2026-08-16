@@ -169,14 +169,102 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "小兔跺脚",
-      "现在与“弹射制服”合并。",
-      "小兔之力",
-      "新次级威能。",
-      "“弹射”提供75点临时过量生命值，且“呼叫机甲”的伤害半径扩大50%。",
-      "延时推进器",
-      "新次级威能。",
-      "使用“推进器”撞击一名敌人会使推进器持续时间延长0.5秒。"
+      {
+       "text_en": null,
+       "text_cn": "小兔跺脚",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "现在与“弹射制服”合并。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "小兔之力",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "新次级威能。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "“弹射”提供75点临时过量生命值，且“呼叫机甲”的伤害半径扩大50%。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 50.0,
+       "metric": "的伤害半径",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "延时推进器",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "新次级威能。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "使用“推进器”撞击一名敌人会使推进器持续时间延长0.5秒。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -188,8 +276,30 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "以刚克刚",
-      "“狂跃”的劈砍伤害从30%提高至50%。"
+      {
+       "text_en": null,
+       "text_cn": "以刚克刚",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "“狂跃”的劈砍伤害从30%提高至50%。",
+       "subject": null,
+       "dimension": "other",
+       "before": 30.0,
+       "after": 50.0,
+       "by": 20.0,
+       "by_pct": null,
+       "metric": "的劈砍伤害",
+       "unit": "pct"
+      }
      ],
      "perks": [],
      "abilities": []
@@ -201,12 +311,78 @@
      "role": "tank",
      "dev_note": "设计师观点：相比于其他重装，奥丽莎的表现略有欠缺。提升其伤害可以让她在不提升生存能力的同时造成更大威胁。",
      "general": [
-      "强化聚变驱动器",
-      "伤害从13提高至14。",
-      "强固防御",
-      "现在会防止“黑客入侵”的技能封锁效果打断技能。",
-      "热量耗散",
-      "每次爆头降低的热量增加33%。"
+      {
+       "text_en": null,
+       "text_cn": "强化聚变驱动器",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "伤害从13提高至14。",
+       "subject": null,
+       "dimension": "other",
+       "before": 13.0,
+       "after": 14.0,
+       "by": 1.0,
+       "by_pct": null,
+       "metric": "damage",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "强固防御",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "现在会防止“黑客入侵”的技能封锁效果打断技能。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "热量耗散",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "每次爆头降低的热量增加33%。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 33.0,
+       "metric": "每次爆头降低的热量",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -218,13 +394,90 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "烈焰吸收",
-      "已移除。",
-      "十字军的烈焰",
-      "新次级威能。",
-      "击晕敌人时返还一次“烈焰打击”充能，可过量充能至3次。",
-      "盾牌猛击",
-      "“盾牌猛击”距离增加50%。"
+      {
+       "text_en": null,
+       "text_cn": "烈焰吸收",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "已移除。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "十字军的烈焰",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "新次级威能。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "击晕敌人时返还一次“烈焰打击”充能，可过量充能至3次。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "盾牌猛击",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "“盾牌猛击”距离增加50%。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 50.0,
+       "metric": "距离",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -236,13 +489,90 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "蛮猪猛投",
-      "已移除。",
-      "拴住圈氧",
-      "新次级威能。",
-      "“拴猪圈”触发时，“呼吸器”补充50%资源，且可过量充能。",
-      "氢气暴露",
-      "范围从8米扩大至10米。"
+      {
+       "text_en": null,
+       "text_cn": "蛮猪猛投",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "已移除。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "拴住圈氧",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "新次级威能。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "“拴猪圈”触发时，“呼吸器”补充50%资源，且可过量充能。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "氢气暴露",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "范围从8米扩大至10米。",
+       "subject": null,
+       "dimension": "other",
+       "before": 8.0,
+       "after": 10.0,
+       "by": 2.0,
+       "by_pct": null,
+       "metric": "范围",
+       "unit": "m"
+      }
      ],
      "perks": [],
      "abilities": []
@@ -254,8 +584,30 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "空间漂浮",
-      "现在可以长按跳跃以进行悬浮。"
+      {
+       "text_en": null,
+       "text_cn": "空间漂浮",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "现在可以长按跳跃以进行悬浮。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -267,8 +619,30 @@
      "role": "tank",
      "dev_note": "设计师观点：在推出威能系统后，温斯顿的表现就有些过强。通过用护甲换取生命值的方式，我们调整了他的生存能力，希望能够让他和其他重装处于同一水平线上，同时尽量避免对他的总体玩法造成太大的影响。",
      "general": [
-      "基础生命值从225提高至275。",
-      "基础护甲从250降低至200。"
+      {
+       "text_en": null,
+       "text_cn": "基础生命值从225提高至275。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 225.0,
+       "after": 275.0,
+       "by": 50.0,
+       "by_pct": null,
+       "metric": "health",
+       "unit": "hp"
+      },
+      {
+       "text_en": null,
+       "text_cn": "基础护甲从250降低至200。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 250.0,
+       "after": 200.0,
+       "by": -50.0,
+       "by_pct": null,
+       "metric": "基础护甲",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -280,7 +654,18 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "在6v6游戏模式中，护甲值从150降低至100。"
+      {
+       "text_en": null,
+       "text_cn": "在6v6游戏模式中，护甲值从150降低至100。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 150.0,
+       "after": 100.0,
+       "by": -50.0,
+       "by_pct": null,
+       "metric": "armor",
+       "unit": "hp"
+      }
      ],
      "perks": [],
      "abilities": []
@@ -301,11 +686,66 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "午时已过",
-      "已移除。",
-      "绝处逢生",
-      "新次级威能。",
-      "每有一名敌人成为“神射手”的目标，每秒恢复20点生命值。"
+      {
+       "text_en": null,
+       "text_cn": "午时已过",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "已移除。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "绝处逢生",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "新次级威能。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "每有一名敌人成为“神射手”的目标，每秒恢复20点生命值。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -317,12 +757,78 @@
      "role": "damage",
      "dev_note": "设计师观点：我们在弗蕾娅的英雄试玩中收获了非常正面的反馈，也很高兴看到大家全情投入地拿她的技能组来实验各种打法。然而，我们也发现弗蕾娅与其他输出英雄相比有些弱势，特别是在杀伤性方面。所以我们调整了她获得次级威能所需的时间，让她的实力能够与其他英雄站上同一起跑线。此外，我们还增加了让她的散布提升到最大程度所需的射击次数，进而提升了她的“速射弩”在各个射程上的稳定性。最后，尽管弗蕾娅的“流星索”充能速度很快，但效果却不尽人意。所以我们略微提升了它的伤害和范围，确保它能够在击中敌人后更有效地保障消灭。",
      "general": [
-      "获得次级威能的时间缩短18%。",
-      "速射弩",
-      "达到最大散布所需要的射击次数从8发增加到12发。",
-      "流星索",
-      "“流星索”伤害和爆炸范围从5米扩大至5.5米。",
-      "“流星索”持续伤害从75提高至90。"
+      {
+       "text_en": null,
+       "text_cn": "获得次级威能的时间缩短18%。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 18.0,
+       "metric": "获得次级威能的时间",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "速射弩",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "达到最大散布所需要的射击次数从8发增加到12发。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "流星索",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "“流星索”伤害和爆炸范围从5米扩大至5.5米。",
+       "subject": null,
+       "dimension": "other",
+       "before": 5.0,
+       "after": 5.5,
+       "by": 0.5,
+       "by_pct": null,
+       "metric": "damage",
+       "unit": "m"
+      },
+      {
+       "text_en": null,
+       "text_cn": "“流星索”持续伤害从75提高至90。",
+       "subject": null,
+       "dimension": "other",
+       "before": 75.0,
+       "after": 90.0,
+       "by": 15.0,
+       "by_pct": null,
+       "metric": "持续伤害",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -334,10 +840,54 @@
      "role": "damage",
      "dev_note": "设计师观点：我们重新让半藏的“风”能够在攀墙时保留拉弓进度，提升了他利用空间和落位的能力，让攀墙更有效率。",
      "general": [
-      "风",
-      "在攀墙时保留拉弓进度。",
-      "岚",
-      "弹道速度从每秒110米提高至140米。"
+      {
+       "text_en": null,
+       "text_cn": "风",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "在攀墙时保留拉弓进度。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "岚",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "弹道速度从每秒110米提高至140米。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -349,10 +899,54 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "铝制框架",
-      "现在也会向盟友显示被困住的敌人。",
-      "滴答作响",
-      "将描述改为了“震荡地雷在落地0.5秒后获得强化，伤害提高50%，爆炸半径提高50%，生命值提高200%”。"
+      {
+       "text_en": null,
+       "text_cn": "铝制框架",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "现在也会向盟友显示被困住的敌人。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "滴答作响",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "将描述改为了“震荡地雷在落地0.5秒后获得强化，伤害提高50%，爆炸半径提高50%，生命值提高200%”。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 50.0,
+       "metric": "damage",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -364,14 +958,102 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "寒气蔓延",
-      "已移除。",
-      "刺骨之寒",
-      "改为了次级威能。",
-      "辅助攻击模式命中会使敌人减速20%，持续1.5秒。",
-      "深度冰冻",
-      "新主要威能。",
-      "主要攻击模式持续命中敌人会使其在短时间内冰冻。"
+      {
+       "text_en": null,
+       "text_cn": "寒气蔓延",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "已移除。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "刺骨之寒",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "改为了次级威能。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "辅助攻击模式命中会使敌人减速20%，持续1.5秒。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "深度冰冻",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "新主要威能。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "主要攻击模式持续命中敌人会使其在短时间内冰冻。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -383,16 +1065,126 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "高效病毒",
-      "已移除。",
-      "加密上传",
-      "新次级威能。",
-      "“黑客入侵”可在隐身时使用，成功侵入会使隐秘潜行的持续时间延长2秒。",
-      "堆栈溢出",
-      "已移除。",
-      "病毒复制",
-      "新主要威能。",
-      "“病毒侵染”命中被侵入的敌人时，病毒将传播给8米内的所有敌人。"
+      {
+       "text_en": null,
+       "text_cn": "高效病毒",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "已移除。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "加密上传",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "新次级威能。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "“黑客入侵”可在隐身时使用，成功侵入会使隐秘潜行的持续时间延长2秒。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "堆栈溢出",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "已移除。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "病毒复制",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "新主要威能。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "“病毒侵染”命中被侵入的敌人时，病毒将传播给8米内的所有敌人。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -404,8 +1196,30 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "急救力场",
-      "描述改为“生物力场对低生命值目标的治疗量提高100%。”"
+      {
+       "text_en": null,
+       "text_cn": "急救力场",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "描述改为“生物力场对低生命值目标的治疗量提高100%。”",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 100.0,
+       "metric": "生物力场对低生命值目标的治疗量",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -417,8 +1231,30 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "过载炮台",
-      "如果在建造完成前启动“热力过载”，会变成3级炮台。"
+      {
+       "text_en": null,
+       "text_cn": "过载炮台",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "如果在建造完成前启动“热力过载”，会变成3级炮台。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -430,10 +1266,54 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "飞速闪回",
-      "恢复的“闪现”次数从3次降低至2次。",
-      "量子纠缠",
-      "“量子纠缠”现在会额外提供20发过量弹药。"
+      {
+       "text_en": null,
+       "text_cn": "飞速闪回",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "恢复的“闪现”次数从3次降低至2次。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "量子纠缠",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "“量子纠缠”现在会额外提供20发过量弹药。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -454,11 +1334,66 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "头晕目眩",
-      "初始减速效果从75%降低至50%。",
-      "现在还会在效果持续期间造成50伤害。",
-      "弹跳手雷",
-      "第二次弹跳伤害和治疗量从50降低至25。"
+      {
+       "text_en": null,
+       "text_cn": "头晕目眩",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "初始减速效果从75%降低至50%。",
+       "subject": null,
+       "dimension": "other",
+       "before": 75.0,
+       "after": 50.0,
+       "by": -25.0,
+       "by_pct": null,
+       "metric": "初始减速效果",
+       "unit": "pct"
+      },
+      {
+       "text_en": null,
+       "text_cn": "现在还会在效果持续期间造成50伤害。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "弹跳手雷",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "第二次弹跳伤害和治疗量从50降低至25。",
+       "subject": null,
+       "dimension": "other",
+       "before": 50.0,
+       "after": 25.0,
+       "by": -25.0,
+       "by_pct": null,
+       "metric": "第二次弹跳伤害和治疗量",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -470,12 +1405,78 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "生化榴弹枪",
-      "爆炸治疗量从50提高至60。",
-      "直接击中治疗量从20提高至30。",
-      "最大弹药量从13降低至10。",
-      "强攻冲击",
-      "现在会进行瞬间治疗，但不会对生命值较低的目标提供大幅治疗。"
+      {
+       "text_en": null,
+       "text_cn": "生化榴弹枪",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "爆炸治疗量从50提高至60。",
+       "subject": null,
+       "dimension": "other",
+       "before": 50.0,
+       "after": 60.0,
+       "by": 10.0,
+       "by_pct": null,
+       "metric": "爆炸治疗量",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "直接击中治疗量从20提高至30。",
+       "subject": null,
+       "dimension": "other",
+       "before": 20.0,
+       "after": 30.0,
+       "by": 10.0,
+       "by_pct": null,
+       "metric": "直接击中治疗量",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "最大弹药量从13降低至10。",
+       "subject": null,
+       "dimension": "other",
+       "before": 13.0,
+       "after": 10.0,
+       "by": -3.0,
+       "by_pct": null,
+       "metric": "最大弹药量",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "强攻冲击",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "现在会进行瞬间治疗，但不会对生命值较低的目标提供大幅治疗。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -487,14 +1488,102 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "超能推进",
-      "已移除。",
-      "重启套靴",
-      "改为了次级威能。",
-      "移除了持续时间增加效果。",
-      "锁定打击",
-      "新主要威能。",
-      "“脉冲星飞雷”每命中一名敌人，冷却时间缩短1.5秒。"
+      {
+       "text_en": null,
+       "text_cn": "超能推进",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "已移除。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "重启套靴",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "改为了次级威能。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "移除了持续时间增加效果。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "锁定打击",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "新主要威能。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "“脉冲星飞雷”每命中一名敌人，冷却时间缩短1.5秒。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -506,10 +1595,54 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "棘刺箭雨",
-      "弹道速度从每秒80米提高至100米。",
-      "梭织生命",
-      "额外治疗量从30提高至40。"
+      {
+       "text_en": null,
+       "text_cn": "棘刺箭雨",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "弹道速度从每秒80米提高至100米。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "梭织生命",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "额外治疗量从30提高至40。",
+       "subject": null,
+       "dimension": "other",
+       "before": 30.0,
+       "after": 40.0,
+       "by": 10.0,
+       "by_pct": null,
+       "metric": "额外治疗量",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -521,11 +1654,66 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "律动舞步",
-      "已移除。",
-      "来点节拍",
-      "新次级威能。",
-      "“音障”持续期间激活“强音”。"
+      {
+       "text_en": null,
+       "text_cn": "律动舞步",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "已移除。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "来点节拍",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "新次级威能。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "“音障”持续期间激活“强音”。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -537,11 +1725,66 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "天使愈合",
-      "已移除。",
-      "天使重生",
-      "新次级威能。",
-      "使用“重生”后，“天使”获得100点过量生命值。"
+      {
+       "text_en": null,
+       "text_cn": "天使愈合",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "已移除。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "天使重生",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "新次级威能。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "使用“重生”后，“天使”获得100点过量生命值。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -553,12 +1796,78 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "乱",
-      "在6v6模式中，当目标离开视野后到效果结束前的持续时间从3秒缩短至1.5秒。",
-      "悬空参禅",
-      "现在可以长按跳跃以进行悬浮。",
-      "乱谐相生",
-      "转换的伤害从20%提高至30%。"
+      {
+       "text_en": null,
+       "text_cn": "乱",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "在6v6模式中，当目标离开视野后到效果结束前的持续时间从3秒缩短至1.5秒。",
+       "subject": null,
+       "dimension": "other",
+       "before": 3.0,
+       "after": 1.5,
+       "by": -1.5,
+       "by_pct": null,
+       "metric": "当目标离开视野后到效果结束前的持续时间",
+       "unit": "s"
+      },
+      {
+       "text_en": null,
+       "text_cn": "悬空参禅",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "现在可以长按跳跃以进行悬浮。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "乱谐相生",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "转换的伤害从20%提高至30%。",
+       "subject": null,
+       "dimension": "other",
+       "before": 20.0,
+       "after": 30.0,
+       "by": 10.0,
+       "by_pct": null,
+       "metric": "转换的伤害",
+       "unit": "pct"
+      }
      ],
      "perks": [],
      "abilities": []
@@ -582,5 +1891,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:c0ef54504fdcae2679d89da3a02fe3a35c2615bb7c841dfeea9829cc4a5c6cee"
+ "hash": "sha256:457577f426d2e9d22d1a82847ce7ce394eded1daaa4fa87b15060e4759761eeb"
 }

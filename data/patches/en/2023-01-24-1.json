@@ -39,7 +39,11 @@
          "text_cn": null,
          "before": 125.0,
          "after": 75.0,
-         "metric": "health bonus"
+         "metric": "health",
+         "by": -50.0,
+         "by_pct": null,
+         "unit": "hp",
+         "raw_metric": "health bonus"
         }
        ]
       }
@@ -64,14 +68,22 @@
          "text_cn": null,
          "before": 30.0,
          "after": 5.0,
-         "metric": "impact damage"
+         "metric": "impact damage",
+         "by": -25.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "impact damage"
         },
         {
          "text_en": "The enemy final position distance from Roadhog after being pulled increased from 3 to 4 meters",
          "text_cn": null,
          "before": 3.0,
          "after": 4.0,
-         "metric": "the enemy final position distance from roadhog after being pulled"
+         "metric": "the enemy final position distance from roadhog after being pulled",
+         "by": 1.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "the enemy final position distance from roadhog after being pulled"
         }
        ]
       },
@@ -85,28 +97,44 @@
          "text_cn": null,
          "before": 6.6,
          "after": 6.0,
-         "metric": "damage per pellet"
+         "metric": "damage",
+         "by": -0.6,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage per pellet"
         },
         {
          "text_en": "Recovery time reduced from 0.85 to 0.8 seconds",
          "text_cn": null,
          "before": 0.85,
          "after": 0.8,
-         "metric": "recovery time"
+         "metric": "recovery",
+         "by": -0.05,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "recovery time"
         },
         {
          "text_en": "Reload time reduced from 2 to 1.75 seconds",
          "text_cn": null,
          "before": 2.0,
          "after": 1.75,
-         "metric": "reload time"
+         "metric": "reload time",
+         "by": -0.25,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "reload time"
         },
         {
          "text_en": "Maximum ammo increased from 5 to 6",
          "text_cn": null,
          "before": 5.0,
          "after": 6.0,
-         "metric": "maximum ammo"
+         "metric": "maximum ammo",
+         "by": 1.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "maximum ammo"
         }
        ]
       }
@@ -166,7 +194,11 @@
          "text_cn": null,
          "before": 0.85,
          "after": 1.0,
-         "metric": "recovery time"
+         "metric": "recovery",
+         "by": 0.15,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "recovery time"
         }
        ]
       }
@@ -196,5 +228,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:cdbb34e5425d49fa9bdff7c10a6a45345ff89f89dfc147765b5dd07358e5952a"
+ "hash": "sha256:ae4da420860d29b9ffd296fbc36edd6a4de0aa9e9aaf02f4c9625d11c0ce6a5a"
 }

@@ -39,7 +39,11 @@
          "text_cn": null,
          "before": 75.0,
          "after": 70.0,
-         "metric": "damage per second"
+         "metric": "damage",
+         "by": -5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage per second"
         }
        ]
       }
@@ -73,14 +77,22 @@
          "text_cn": null,
          "before": 0.2,
          "after": 0.25,
-         "metric": "reload per bullet"
+         "metric": "reload per bullet",
+         "by": 0.05,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "reload per bullet"
         },
         {
          "text_en": "Primary fire damage reduced from 40 to 35.",
          "text_cn": null,
          "before": 40.0,
          "after": 35.0,
-         "metric": "primary fire damage"
+         "metric": "primary fire damage",
+         "by": -5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "primary fire damage"
         }
        ]
       }
@@ -105,7 +117,11 @@
          "text_cn": null,
          "before": 90.0,
          "after": 75.0,
-         "metric": "damage over time"
+         "metric": "damage",
+         "by": -15.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage over time"
         }
        ]
       }
@@ -139,21 +155,33 @@
          "text_cn": null,
          "before": 14.3,
          "after": 15.5,
-         "metric": "fire rate"
+         "metric": "fire rate",
+         "by": 1.2,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "fire rate"
         },
         {
          "text_en": "Damage reduced from 8 to 7.5.",
          "text_cn": null,
          "before": 8.0,
          "after": 7.5,
-         "metric": "damage"
+         "metric": "damage",
+         "by": -0.5,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage"
         },
         {
          "text_en": "Healing reduced from 7 to 6.5.",
          "text_cn": null,
          "before": 7.0,
          "after": 6.5,
-         "metric": "healing"
+         "metric": "healing",
+         "by": -0.5,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "healing"
         }
        ]
       }
@@ -183,5 +211,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:ebe164bd4a03fe7a45cf8a1a6c5022c3eedfd4618a6ff9b56e75cba96216da18"
+ "hash": "sha256:ba4210f62847e24928bab28ecf1afff72ea75a0358752695e7678d1d688e20ee"
 }

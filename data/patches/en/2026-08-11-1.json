@@ -142,7 +142,11 @@
          "text_cn": null,
          "before": 450.0,
          "after": 500.0,
-         "metric": "barrier health"
+         "metric": "barrier",
+         "by": 50.0,
+         "by_pct": null,
+         "unit": "hp",
+         "raw_metric": "barrier health"
         }
        ]
       }
@@ -167,7 +171,11 @@
          "text_cn": null,
          "before": 50.0,
          "after": 60.0,
-         "metric": "damage"
+         "metric": "damage",
+         "by": 10.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "damage"
         }
        ]
       }
@@ -180,7 +188,18 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Ultimate cost increased by 7%."
+      {
+       "text_en": "Ultimate cost increased by 7%.",
+       "text_cn": null,
+       "subject": "ultimate_cost",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 7.0,
+       "metric": "ultimate_cost",
+       "unit": null
+      }
      ],
      "perks": [
       {
@@ -224,7 +243,11 @@
          "text_cn": null,
          "before": 5.0,
          "after": 6.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": 1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       }
@@ -267,7 +290,18 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Ultimate cost reduced by 6%."
+      {
+       "text_en": "Ultimate cost reduced by 6%.",
+       "text_cn": null,
+       "subject": "ultimate_cost",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 6.0,
+       "metric": "ultimate_cost",
+       "unit": null
+      }
      ],
      "perks": [
       {
@@ -370,7 +404,18 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Ultimate cost reduced by 6%."
+      {
+       "text_en": "Ultimate cost reduced by 6%.",
+       "text_cn": null,
+       "subject": "ultimate_cost",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 6.0,
+       "metric": "ultimate_cost",
+       "unit": null
+      }
      ],
      "perks": [
       {
@@ -392,7 +437,18 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Ultimate cost reduced by 6%."
+      {
+       "text_en": "Ultimate cost reduced by 6%.",
+       "text_cn": null,
+       "subject": "ultimate_cost",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 6.0,
+       "metric": "ultimate_cost",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -416,7 +472,11 @@
          "text_cn": null,
          "before": 7.0,
          "after": 8.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": 1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       }
@@ -441,7 +501,11 @@
          "text_cn": null,
          "before": 1.5,
          "after": 1.0,
-         "metric": "ground launch detection radius"
+         "metric": "ground launch detection radius",
+         "by": -0.5,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "ground launch detection radius"
         }
        ]
       }
@@ -486,7 +550,11 @@
          "text_cn": null,
          "before": 13.0,
          "after": 12.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": -1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       }
@@ -511,7 +579,11 @@
          "text_cn": null,
          "before": 7.0,
          "after": 3.0,
-         "metric": "cooldown on spawn"
+         "metric": "cooldown",
+         "by": -4.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown on spawn"
         }
        ]
       }
@@ -524,7 +596,18 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Ultimate cost reduced by 8%."
+      {
+       "text_en": "Ultimate cost reduced by 8%.",
+       "text_cn": null,
+       "subject": "ultimate_cost",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 8.0,
+       "metric": "ultimate_cost",
+       "unit": null
+      }
      ],
      "perks": [
       {
@@ -564,9 +647,42 @@
      "role": "support",
      "dev_note": "These changes are intended to make Jetpack Cat's movement more responsive while keeping Lifeline movement speeds similar to before. Frenetic Flight movement speeds remain unchanged.",
      "general": [
-      "Ultimate cost increased by 7%.",
-      "Base movement speed increased from 5.5 to 6 meters per second.",
-      "Air acceleration increased from 7.7 to 9.5."
+      {
+       "text_en": "Ultimate cost increased by 7%.",
+       "text_cn": null,
+       "subject": "ultimate_cost",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 7.0,
+       "metric": "ultimate_cost",
+       "unit": null
+      },
+      {
+       "text_en": "Base movement speed increased from 5.5 to 6 meters per second.",
+       "text_cn": null,
+       "subject": "move_speed",
+       "dimension": "hero_attr",
+       "before": 5.5,
+       "after": 6.0,
+       "by": 0.5,
+       "by_pct": null,
+       "metric": "base movement speed",
+       "unit": null
+      },
+      {
+       "text_en": "Air acceleration increased from 7.7 to 9.5.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 7.7,
+       "after": 9.5,
+       "by": 1.8,
+       "by_pct": null,
+       "metric": "air acceleration",
+       "unit": null
+      }
      ],
      "perks": [
       {
@@ -600,7 +716,11 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -625,7 +745,11 @@
          "text_cn": null,
          "before": 0.5,
          "after": 0.35,
-         "metric": "target lock on minimum time"
+         "metric": "target lock on minimum time",
+         "by": -0.15,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "target lock on minimum time"
         }
        ]
       }
@@ -650,28 +774,44 @@
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "Base pull speed reduced from 30 to 25 meters per second.",
          "text_cn": null,
          "before": 30.0,
          "after": 25.0,
-         "metric": "base pull speed"
+         "metric": "base pull speed",
+         "by": -5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "base pull speed"
         },
         {
          "text_en": "Targets pulled from further than 15 meters move slower and accelerate over time.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": "New general hero setting added for disabling Life Grip cancel controls.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null
+         "metric": null,
+         "by": null,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -706,7 +846,11 @@
          "text_cn": null,
          "before": 0.35,
          "after": 0.3,
-         "metric": "projectile size"
+         "metric": "projectile size",
+         "by": -0.05,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "projectile size"
         }
        ]
       },
@@ -720,7 +864,11 @@
          "text_cn": null,
          "before": 11.0,
          "after": 12.0,
-         "metric": "cooldown"
+         "metric": "cooldown",
+         "by": 1.0,
+         "by_pct": null,
+         "unit": "s",
+         "raw_metric": "cooldown"
         }
        ]
       }
@@ -745,7 +893,11 @@
          "text_cn": null,
          "before": 10.0,
          "after": 15.0,
-         "metric": "maximum degrees"
+         "metric": "maximum degrees",
+         "by": 5.0,
+         "by_pct": null,
+         "unit": null,
+         "raw_metric": "maximum degrees"
         }
        ]
       }
@@ -833,51 +985,490 @@
      "role": "tank",
      "dev_note": "These changes are aimed at adding some more build variety to D.Va's powers, making some of her weaker builds more transformative and exciting while tuning down some of her more generically powerful options.",
      "general": [
-      "Facetanking - Power",
-      "Reworked from \"[Defense Matrix] heals you for 30% of the damage it blocks\" to \"When you mitigate 150 damage with [Defense Matrix], heal yourself for 15% of that damage and all other allies within 6m for 25% of that damage\".",
-      "Focused Fusion - Power",
-      "Added \"when dealing Weapon damage to enemies beyond 8m, [Defense Matrix] recovers 33% faster\".",
-      "Ignition Burst - Power",
-      "Damage reduced to 40 (Down from 60).",
-      "Duration reduced to 2s (Down from 3s).",
-      "MEKA Evac Shield - Power",
-      "New",
-      "\"+50% [Call Mech] Radius. When ejecting or re-entering your [Mech], grant Overhealth equal to 20% of Max Life for 5s\".",
-      "MEKA Ejector - Power",
-      "Reworked from Express Detonation.",
-      "Changed from \"+50% [Call Mech] Radius. [Self-Destruct] explodes 15% faster\" to \"[Self-Destruct] explodes 25% faster and costs 50% less Ultimate Charge but deals 75% reduced damage and only grants 75% Ultimate Charge after detonation\".",
-      "Stat Boost - Power",
-      "Changed from \"During the first 2s of [Boosters], [Defense Matrix] recovers 125% faster\" to \"[Boosters] damage grants 0.5s [Booster] Duration and restores 5% [Defense Matrix] Resource and heals 5% Max Life\".",
-      "Tokki Slam - Power",
-      "Now scales from Max Life instead of Max Shields and Armor.",
-      "Scaling reduced to 15% (Down from 25%).",
-      "Now counts as [Boosters] damage.",
-      "Nano Cola™ Nitrous - Rare Weapon Hero Item",
-      "25 Health.",
-      "5% Weapon Power.",
-      "\"While ejected from your [Mech], gain 20% Move Speed, 10% Attack Speed, and 50% Max Ammo\".",
-      "5000 Cost.",
-      "Matrix Empowerment - Epic Weapon Hero Item",
-      "New",
-      "10% Attack Speed",
-      "\"When you mitigate 150 damage with [Defense Matrix], deal 20% increased Weapon Damage for 3s\".",
-      "Vesuvius Protocol - Rare Ability Hero Item",
-      "Removed.",
-      "D.Mon's Detonator - Epic Ability Hero Item",
-      "Reworked from Dae-Hyun's Detonator.",
-      "Changed from \"If your [Mech] detonates while mid-air, increase [Self-Destruct] explosion damage and range by 100%\" to \"During [Self-Destruct], if your [Mech] detonates while mid-air or deals [Boosters] damage, [Self-Destruct] explodes 100% larger and causes enemies to take 50% more damage for 5s\".",
-      "Robo-Bowling - Epic Ability Hero Item",
-      "New",
-      "25 Armor.",
-      "15% Ability Power.",
-      "During [Self-Destruct], [Boosters] move 50% faster, deal 300% bonus damage, and knock up enemies.",
-      "Solo Spec - Rare Survival Hero Item",
-      "Removed.",
-      "MEKA Exo Suit - Epic Survival Hero Item",
-      "Reworked from Busan Blaster.",
-      "Changed from \"Ability: Use [Secondary Fire] while de-meched to fire an explosive piercing shot that deals 80 damage\" to \"While ejected from your [Mech], hold [Jump] to fly and hold [Secondary Fire] to fire an explosive shot that deals up to 80 damage and slows enemies by 30% for 3s\"."
+      {
+       "text_en": "Reworked from \"[Defense Matrix] heals you for 30% of the damage it blocks\" to \"When you mitigate 150 damage with [Defense Matrix], heal yourself for 15% of that damage and all other allies within 6m for 25% of that damage\".",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Added \"when dealing Weapon damage to enemies beyond 8m, [Defense Matrix] recovers 33% faster\".",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Damage reduced to 40 (Down from 60).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 60.0,
+       "after": 40.0,
+       "by": -20.0,
+       "by_pct": null,
+       "metric": "damage",
+       "unit": null
+      },
+      {
+       "text_en": "Duration reduced to 2s (Down from 3s).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "New",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "\"+50% [Call Mech] Radius. When ejecting or re-entering your [Mech], grant Overhealth equal to 20% of Max Life for 5s\".",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Reworked from Express Detonation.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Changed from \"+50% [Call Mech] Radius. [Self-Destruct] explodes 15% faster\" to \"[Self-Destruct] explodes 25% faster and costs 50% less Ultimate Charge but deals 75% reduced damage and only grants 75% Ultimate Charge after detonation\".",
+       "text_cn": null,
+       "subject": "ultimate_cost",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Changed from \"During the first 2s of [Boosters], [Defense Matrix] recovers 125% faster\" to \"[Boosters] damage grants 0.5s [Booster] Duration and restores 5% [Defense Matrix] Resource and heals 5% Max Life\".",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Now scales from Max Life instead of Max Shields and Armor.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Scaling reduced to 15% (Down from 25%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Now counts as [Boosters] damage.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Nano Cola™ Nitrous - Rare Weapon Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "25 Health.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "5% Weapon Power.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "\"While ejected from your [Mech], gain 20% Move Speed, 10% Attack Speed, and 50% Max Ammo\".",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "5000 Cost.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Matrix Empowerment - Epic Weapon Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "New",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "10% Attack Speed",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "\"When you mitigate 150 damage with [Defense Matrix], deal 20% increased Weapon Damage for 3s\".",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Vesuvius Protocol - Rare Ability Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Removed.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "D.Mon's Detonator - Epic Ability Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Reworked from Dae-Hyun's Detonator.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Changed from \"If your [Mech] detonates while mid-air, increase [Self-Destruct] explosion damage and range by 100%\" to \"During [Self-Destruct], if your [Mech] detonates while mid-air or deals [Boosters] damage, [Self-Destruct] explodes 100% larger and causes enemies to take 50% more damage for 5s\".",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Robo-Bowling - Epic Ability Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "New",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "25 Armor.",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "15% Ability Power.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "During [Self-Destruct], [Boosters] move 50% faster, deal 300% bonus damage, and knock up enemies.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Solo Spec - Rare Survival Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Removed.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "MEKA Exo Suit - Epic Survival Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Reworked from Busan Blaster.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Changed from \"Ability: Use [Secondary Fire] while de-meched to fire an explosive piercing shot that deals 80 damage\" to \"While ejected from your [Mech], hold [Jump] to fly and hold [Secondary Fire] to fire an explosive shot that deals up to 80 damage and slows enemies by 30% for 3s\".",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Facetanking",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Focused Fusion",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Ignition Burst",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "MEKA Evac Shield",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "MEKA Ejector",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Stat Boost",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Tokki Slam",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     },
     {
@@ -887,21 +1478,155 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Critical Charger - Power",
-      "Critical damage increased to 100% (Up from 75%).",
-      "OR-15 Escalator - Power",
-      "Reworked to Power.",
-      "Now increases Weapon Damage instead of granting Weapon Power.",
-      "Max Damage reduced to 30% (Down from 40%).",
-      "Core Cooling - Epic Weapon Hero Item",
-      "Reworked to Item.",
-      "Added 15% Weapon Lifesteal.",
-      "Attack Speed during Fortify increased to 15% (Up from 10%).",
-      "Added 10000 Cost.",
-      "3D-Printed Lance - Epic Ability Hero Item",
-      "Added \"[Energy Javelin] critical hits reduce an additional 1.5s\"."
+      {
+       "text_en": "Critical damage increased to 100% (Up from 75%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Reworked to Power.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Now increases Weapon Damage instead of granting Weapon Power.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Max Damage reduced to 30% (Down from 40%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Core Cooling - Epic Weapon Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Reworked to Item.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Added 15% Weapon Lifesteal.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Attack Speed during Fortify increased to 15% (Up from 10%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Added 10000 Cost.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "3D-Printed Lance - Epic Ability Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Added \"[Energy Javelin] critical hits reduce an additional 1.5s\".",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Critical Charger",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "OR-15 Escalator",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     },
     {
@@ -911,10 +1636,54 @@
      "role": "tank",
      "dev_note": null,
      "general": [
-      "Vengeful Vortex",
-      "Detonation bonus damage reduced to 25 (Down from 50).",
-      "Insatiable Spiral",
-      "Ravenous Vortex bonus damage reduced to 15% (Down from 30%)."
+      {
+       "text_en": "Vengeful Vortex",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Detonation bonus damage reduced to 25 (Down from 50).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 50.0,
+       "after": 25.0,
+       "by": -25.0,
+       "by_pct": null,
+       "metric": "detonation bonus damage",
+       "unit": null
+      },
+      {
+       "text_en": "Insatiable Spiral",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Ravenous Vortex bonus damage reduced to 15% (Down from 30%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -926,8 +1695,30 @@
      "role": "tank",
      "dev_note": "Zarya has become more prevalent especially at higher levels and in coordinated play. We're trimming the efficiency of her most outlier option and will continue to keep an eye on her.",
      "general": [
-      "Blastproof Boots - Epic Survival Hero Item",
-      "Cost increased to 9000 (Up from 3750)."
+      {
+       "text_en": "Blastproof Boots - Epic Survival Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Cost increased to 9000 (Up from 3750).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 3750.0,
+       "after": 9000.0,
+       "by": 5250.0,
+       "by_pct": null,
+       "metric": "cost",
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -948,10 +1739,28 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "B.O.B Jr. - Power",
-      "Ultimate Cost reduction increased to 60% (Up from 50%)."
+      {
+       "text_en": "Ultimate Cost reduction increased to 60% (Up from 50%).",
+       "text_cn": null,
+       "subject": "ultimate_cost",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "B.O.B Jr.",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     },
     {
@@ -961,11 +1770,66 @@
      "role": "damage",
      "dev_note": null,
      "general": [
-      "Bingo - Epic Weapon Hero Item.",
-      "New",
-      "10% Weapon Power",
-      "\"[Frag Launcher] Direct Hits without bouncing reduce cooldown of all abilities by 20%\".",
-      "11000 Cost."
+      {
+       "text_en": "Bingo - Epic Weapon Hero Item.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "New",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "10% Weapon Power",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "\"[Frag Launcher] Direct Hits without bouncing reduce cooldown of all abilities by 20%\".",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "11000 Cost.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
      "perks": [],
      "abilities": []
@@ -977,10 +1841,28 @@
      "role": "damage",
      "dev_note": "This change is aimed at reducing the effectiveness of Tracer's Recall oriented Pulse Bomb build. We'll be continuing to keep an eye on this build, particularly on Temportal, for future changes to increase its counterplay.",
      "general": [
-      "Impulsive - Power",
-      "Pulse Bomb Damage decreased to 70% reduced (Down from 60% reduced)."
+      {
+       "text_en": "Pulse Bomb Damage decreased to 70% reduced (Down from 60% reduced).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Impulsive",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     }
    ],
@@ -999,14 +1881,71 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "Artsy Dartsy - Power",
-      "Added \"Landing a scoped [Sleep Dart] reduces its cooldown by 5s\".",
-      "75 base damage now only applies to scoped [Sleep Dart].",
-      "Increased base damage now works with Comfy Cloud.",
-      "Dream Field - Power",
-      "Max Life heal increased to 20% (Up from 15%)."
+      {
+       "text_en": "Added \"Landing a scoped [Sleep Dart] reduces its cooldown by 5s\".",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "75 base damage now only applies to scoped [Sleep Dart].",
+       "text_cn": null,
+       "subject": "base_stat",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Increased base damage now works with Comfy Cloud.",
+       "text_cn": null,
+       "subject": "base_stat",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Max Life heal increased to 20% (Up from 15%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Artsy Dartsy",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Dream Field",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     },
     {
@@ -1016,19 +1955,131 @@
      "role": "support",
      "dev_note": "These changes are aimed at reducing the effectiveness of Ability Power Purr builds while empowering her Weapon Power oriented options.",
      "general": [
-      "Purr-sistence - Power",
-      "Increased duration for each Purr target reduced to 10% (Down from 15%).",
-      "Max increased duration reduced to 50% (Down from 75%).",
-      "Tow-Beans - Power",
-      "Now triggers off of any damage instead of just Ability damage.",
-      "Recycling Rounds - Epic Weapon Hero Item",
-      "Added 20% [Purr] Cooldown Reduction.",
-      "Purr-imeter Expander - Epic Ability Hero Item",
-      "Cost increased to 11000 (Up from 10000).",
-      "Fuel Pod - Rare Survival Hero Item",
-      "Cost reduced to 5000 (Down from 10000)."
+      {
+       "text_en": "Increased duration for each Purr target reduced to 10% (Down from 15%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Max increased duration reduced to 50% (Down from 75%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Now triggers off of any damage instead of just Ability damage.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Recycling Rounds - Epic Weapon Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Added 20% [Purr] Cooldown Reduction.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Purr-imeter Expander - Epic Ability Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Cost increased to 11000 (Up from 10000).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 10000.0,
+       "after": 11000.0,
+       "by": 1000.0,
+       "by_pct": null,
+       "metric": "cost",
+       "unit": null
+      },
+      {
+       "text_en": "Fuel Pod - Rare Survival Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Cost reduced to 5000 (Down from 10000).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 10000.0,
+       "after": 5000.0,
+       "by": -5000.0,
+       "by_pct": null,
+       "metric": "cost",
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Purr-sistence",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Tow-Beans",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     },
     {
@@ -1038,14 +2089,66 @@
      "role": "support",
      "dev_note": null,
      "general": [
-      "Fleet Foot - Power",
-      "Added \"cooldown is reduced by 20% when used without a target\".",
-      "Foxy Fireworks - Power",
-      "Empowered shots increased to 5 (Up from 3).",
-      "Keen Kunai - Power",
-      "Cooldown refund increased to 25% (Up from 20%)."
+      {
+       "text_en": "Added \"cooldown is reduced by 20% when used without a target\".",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 20.0,
+       "metric": "cooldown",
+       "unit": null
+      },
+      {
+       "text_en": "Empowered shots increased to 5 (Up from 3).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 3.0,
+       "after": 5.0,
+       "by": 2.0,
+       "by_pct": null,
+       "metric": "empowered shots",
+       "unit": null
+      },
+      {
+       "text_en": "Cooldown refund increased to 25% (Up from 20%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Fleet Foot",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Foxy Fireworks",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Keen Kunai",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     },
     {
@@ -1055,31 +2158,275 @@
      "role": "support",
      "dev_note": "These changes are aimed at strengthening the options Wuyang has to sustain himself and increasing his underperforming powers.",
      "general": [
-      "Bifurcation - Power",
-      "Duration increased to 5s (Up from 4s).",
-      "Paindrops - Power",
-      "Empowered shots increased to 3 (Up from 2).",
-      "Damage per extra Orb increased to 30% (Up from 20%).",
-      "Aquajet Amplifier - Epic Weapon Hero Item",
-      "Cost reduced to 10000 (Down from 12000).",
-      "Tidekeeper's Connector - Epic Weapon Hero Item",
-      "Cost increased to 11000 (Up from 10000).",
-      "Added 10% Ability Power.",
-      "Cooldown reduction every 1s increased to 0.5s (Up from 0.3s).",
-      "Wave Lance - Epic Weapon Hero Item",
-      "Cost increased to 12000 (Up from 10000).",
-      "Weapon Power increased to 20% (Up from 10%).",
-      "Hydro Mender - Rare Survival Hero Item",
-      "Removed.",
-      "Oceanic Ointment - Rare Survival Hero Item",
-      "Cost reduced to 3750 (Down from 4000).",
-      "Hydration Break - Epic Survival Hero Item",
-      "New.",
-      "50 Shields.",
-      "\"When you use [Rushing Torrent], place Passive [Restorative Stream] on yourself with 25% reduced healing\".",
-      "9000 Cost."
+      {
+       "text_en": "Duration increased to 5s (Up from 4s).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Empowered shots increased to 3 (Up from 2).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 2.0,
+       "after": 3.0,
+       "by": 1.0,
+       "by_pct": null,
+       "metric": "empowered shots",
+       "unit": null
+      },
+      {
+       "text_en": "Damage per extra Orb increased to 30% (Up from 20%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Aquajet Amplifier - Epic Weapon Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Cost reduced to 10000 (Down from 12000).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 12000.0,
+       "after": 10000.0,
+       "by": -2000.0,
+       "by_pct": null,
+       "metric": "cost",
+       "unit": null
+      },
+      {
+       "text_en": "Tidekeeper's Connector - Epic Weapon Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Cost increased to 11000 (Up from 10000).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 10000.0,
+       "after": 11000.0,
+       "by": 1000.0,
+       "by_pct": null,
+       "metric": "cost",
+       "unit": null
+      },
+      {
+       "text_en": "Added 10% Ability Power.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Cooldown reduction every 1s increased to 0.5s (Up from 0.3s).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Wave Lance - Epic Weapon Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Cost increased to 12000 (Up from 10000).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 10000.0,
+       "after": 12000.0,
+       "by": 2000.0,
+       "by_pct": null,
+       "metric": "cost",
+       "unit": null
+      },
+      {
+       "text_en": "Weapon Power increased to 20% (Up from 10%).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Hydro Mender - Rare Survival Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Removed.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Oceanic Ointment - Rare Survival Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "Cost reduced to 3750 (Down from 4000).",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": 4000.0,
+       "after": 3750.0,
+       "by": -250.0,
+       "by_pct": null,
+       "metric": "cost",
+       "unit": null
+      },
+      {
+       "text_en": "Hydration Break - Epic Survival Hero Item",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "New.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "50 Shields.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "\"When you use [Rushing Torrent], place Passive [Restorative Stream] on yourself with 25% reduced healing\".",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": "9000 Cost.",
+       "text_cn": null,
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
      ],
-     "perks": [],
+     "perks": [
+      {
+       "name_en": "Bifurcation",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      },
+      {
+       "name_en": "Paindrops",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": []
+      }
+     ],
      "abilities": []
     }
    ],
@@ -1106,5 +2453,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:6c7168ffd7f5af76b3d5aeca6a90a789fd1d7ac9c1a99f47765e0b563721694a"
+ "hash": "sha256:d31bb0e9c2de86f3cec90e04e71adc96444f069252dd30ff2cf83eed8b0e70a0"
 }
