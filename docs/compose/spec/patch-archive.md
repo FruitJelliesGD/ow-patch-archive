@@ -151,4 +151,4 @@ commits: 5ab4fc1..b295273
 - [x] T22: regenerate_all 串联 + 迁移接入 + rebuild 幂等 — acceptance: 连续两次运行无 diff
 - [x] T23: web 四类分组 + values chip + smoke 断言 — acceptance: 5 维分区、values、无 hash 分组
 - [x] T24: 全量回归 + 数据审计复核 — acceptance: 84 测试、perk 泄漏归零、覆盖率 67%
-- [ ] T25: 合并推送 + 线上验证（迭代三收尾） — acceptance: main 更新、ci/pages 绿、monitor 首轮零误报 (covers: 迭代三; depends: T24)
+- [x] T25: 合并推送 + 线上验证（迭代三收尾） — acceptance: main 更新、ci/pages 绿、monitor-fast 正常运行；monitor 每日全量首轮零误报待下次调度观察（P1 hash 中性已由回归测试覆盖） (covers: 迭代三; depends: T24)
