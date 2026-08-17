@@ -49,19 +49,21 @@ _LEGACY_CHROME_PHRASES = (
     "Read below to learn more about the latest changes.",
     "Read below to learn about the latest changes.",
     "A new patch is now live on Windows PC.",
+    "A new patch is now live on Windows PC, PlayStation 4, and Xbox One.",
     "A new patch is now live on PC.",
     "A new patch is now live.",
 )
 
 # Intro/feedback boilerplate with variant punctuation (the NetEase-era legacy
-# pages drop the periods between the sentences).
+# pages drop the periods between the sentences, and most end right after the
+# "Technical Support forum" sentence without the trailing "Please note...").
 _LEGACY_BOILERPLATE_RES = (
     re.compile(
         r"To share your feedback, please post in the General Discussion "
         r"forum\.? For a list of known issues, visit our Bug Report forum\.? "
         r"For troubleshooting assistance, visit our Technical Support forum\.?"
-        r" Please note that some changes may not be documented or described "
-        r"in full detail\.?"
+        r"(?: Please note that some changes may not be documented or described "
+        r"in full detail\.?)?"
     ),
 )
 
