@@ -155,7 +155,7 @@ commits: 5ab4fc1..b295273
 
 ## 迭代四：每日全量扫描误报 modified 修复（装饰类差异 + CN 站变体）
 
-状态：in-progress（2026-08-17 起，分支 fix/daily-false-modified）
+状态：delivered（2026-08-17，分支 fix/daily-false-modified，审查范围 ee1d2e3..7f088e0；两轮独立复审通过。注：沿用项目惯例——单文档追加迭代 section，frontmatter 记录迭代一范围）
 
 ### 背景与根因（issue #2 分析，2026-08-17）
 
@@ -172,16 +172,28 @@ commits: 5ab4fc1..b295273
 3. **legacy chrome 净化（hash schema v3）**：raw_text 入袋前剔除已知站点模板短语（Top of post / 分页链接与裸月份标签 / 头尾样板），存储保留原文；ensure_hash_schema 一次性离线迁移（幂等、零事件）。
 4. **commit 与通知门控分离**：数据有变化即提交（changed 标志），仅真实内容变化才写 notify 文件 → 开 Issue/邮件。
 
-### 验收结果（进行中）
+### 验收结果（已交付）
 
 - 96 pytest 全绿（基线 85，新增 11 用例）；`tools/rebuild.py` 双跑字节级幂等（0 diff）；`node tools/_smoke_web.js` 全过；workflow YAML 校验通过
 - v3 迁移 + 扩展 chrome 净化后：395/395 存储 hash 与 manifest 逐一自洽（`patch_hash_from_dict` 全量比对 0 mismatch）；线上 legacy 月份 fresh-parse 抽查 6 个月 16/16 与迁移后 hash 一致
-- 独立审查（general-1）无 critical；修复：①archive .md 渲染文件随 CN 数据一并恢复（cn 2025-06-25/2026-06-17 + en 2026-06-30 md 从 a3d32f0 恢复，与 json 一致）；②chrome 短语表扩展覆盖模板变体（learn more / on PC / 无句点反馈样板 / PATCH HIGHLIGHTS，实测 103 条 legacy 全覆盖）；③分页正则收紧（要求 link 后跟裸月份标签，正文 "the May Patch Notes" 引用不再被误删）
+- 独立审查（general-1）无 critical；两轮复审（general-2/general-3）收敛。修复：①archive .md 渲染文件随 CN 数据一并恢复（cn 2025-06-25/2026-06-17 + en 2026-06-30 md 从 a3d32f0 恢复，与 json 一致）；②chrome 短语表扩展覆盖模板变体（learn more / on PC / 多平台 intro / 无句点反馈样板 / PATCH HIGHLIGHTS，实测 103 条 legacy 全覆盖，残余命中均为真实内容）；③反馈样板正则尾部改为可选（真实存储 102/103 条无 "Please note..." 尾句）；④分页正则收紧（要求 link 后跟裸月份标签，正文 "the May Patch Notes" 引用不再被误删）
 - 审查指出并接受的设计权衡：`is_cosmetic_diff` 在 v3 下实际不可达（名字/装饰不入 hash 袋，名称-only 编辑根本不产生事件）——保留为防御性路径（未来若 hash 语义变化或新模板短语漏净化时不产生空通知）；`regenerate_all` 不渲染 archive .md 是既有系统性设计（archive md 仅在写补丁时渲染），本轮通过数据恢复对齐，不做渲染重构
+- 08-18 每日全量运行线上观察（T29 剩余验收项）：预期零装饰类误报，若站点再有真实变化则正常报
+
+**What was built** — 迭代四消除每日全量扫描的误报「N 修改」：①legacy（2016-2020）补丁的 hash 袋不再含站点模板 chrome（schema v3，离线幂等迁移，103 条历史 hash 已重算且线上 fresh-parse 全匹配）；②装饰类差异（名称/页面装饰）归档但不通知，commit 与 Issue 门控分离；③CN 站英文名变体（IP 地域驱动）被检测后整月跳过，中文存档不被污染，已恢复 3 条被污染补丁（json+md）。真实内容变化（含官方名称拼写编辑）仍正常检出并通知。
+
+**Verification** — `pytest -q` 96 passed；`tools/rebuild.py` 双跑字节幂等；`node tools/_smoke_web.js` ALL WEB ASSERTIONS OK；395/395 hash 自洽；线上 legacy 6 个月 fresh-parse 16/16 匹配；workflow YAML 校验通过；两轮独立复审（general-1 主审查 + general-2/general-3 聚焦复审）无 critical、全部 findings 已处理收敛。
+
+**Journey log** —
+1. 根因关键证据：迭代二/三 parse/fetch 功能等价（git diff 仅数值正则挪到 extract.py）→ 08-16 与 08-17 两天 raw_text 差异必为站点侧页面结构变化，排除代码归因。
+2. 分页正则的交替陷阱：`(?:January|...|December (?:Live )?Patch Notes)` 把月份 alternation 原样内联，导致只有 December 要求跟 "Patch Notes"、其他月份单独成项（把 "May 27, 2016" 的 May 也删了）——月份 alternation 必须包 `(?:...)`。
+3. 反馈样板正则的"尾部破坏"陷阱：短语删除先于正则执行会把正则必需后缀（"Please note..."）删掉导致正则永不匹配——正则须先于短语；且真实存储 102/103 条无该尾句，尾部必须可选。
+4. `is_cosmetic_diff` 在 v3 下不可达：hash 袋只含文本，名称-only 编辑根本不产生事件（有测试证明）——cosmetic 分类是防御性保险，不是本轮主力（主力是 v3 净化 + CN 漂移跳过）。
+5. 数据自洽验证法可复用：对 `data/patches/**/*.json` 逐一用 `patch_hash_from_dict` 与 manifest 比对即可快速确认迁移正确性；`regenerate_all` 不渲染 archive .md 是系统性隐患（archive 仅在写补丁时渲染）。
 
 ## Tasks（迭代四）
 
 - [x] T26: `diff.py` legacy raw_text chrome 净化 + HASH_SCHEMA_VERSION=3 + 迁移 + test_diff/test_hash_migration — acceptance: clean_legacy_text 对 chrome 变体净化一致、迁移幂等、线上 legacy 月份 fresh-parse hash 全匹配（抽查 16/16）
 - [x] T27: 装饰类 modified 抑制（ChangeEvent.cosmetic + is_cosmetic_diff + notify 过滤 + run.py changed/notify 门控分离 + workflow 提交门控改 changed 标志） — acceptance: cosmetic-only 不产生 Issue/邮件但数据照常提交；名称-only 编辑与 legacy chrome 漂移零事件（v3 中性回归）；单测绿
 - [x] T28: CN 变体漂移检测（pipeline 判定跳过写回 + WARN）+ 恢复 3 条被英文变体污染的 CN 补丁数据（含 archive .md） — acceptance: 中文/英文名 fixture 判定正确；cn 2025-06-25/2025-12-19/2026-06-17 恢复中文存档（json+md）；单测绿
-- [ ] T29: 全量回归 + rebuild 幂等 + web smoke + 合并推送 + 线上观察 — acceptance: 全量 pytest 绿、rebuild 双跑字节幂等、08-18 每日运行零装饰类误报（若站点再有真实变化则正常报）
+- [x] T29: 全量回归 + rebuild 幂等 + web smoke + 合并推送（剩余：08-18 每日运行零装饰类误报线上观察） — acceptance: 全量 pytest 绿、rebuild 双跑字节幂等、web smoke 全过、分支已合并推送；线上观察项待 08-18 调度确认
