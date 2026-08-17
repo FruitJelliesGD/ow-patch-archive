@@ -162,7 +162,7 @@ commits: 5ab4fc1..b295273
 每日 03:23 UTC 全量扫描连续两天报大量"修改"但实际无平衡性内容变化：08-16 issue #1「0 新增 · 103 修改」、08-17 issue #2「0 新增 · 110 修改」（commit ee1d2e3，diff 中 raw_text 类 103 条 / sections 类 139 个单元格）。实证根因三层：
 
 1. **Legacy（OW1 时代 2016-2020）补丁的 hash 袋 = 整页原文 raw_text，含站点模板 chrome**：08-16 抓到的页面 chrome（"Top of post"、分页链接、页脚论坛样板）未被解析器剔除而存入存档，08-17 抓到同样页面时结构变化、chrome 被剔除 → 103 条 legacy 补丁 hash 全变。已排除代码差异（e398492..HEAD parse/fetch 功能等价）；即**官方站点在两天之间真实修改了历史页面模板结构**。P1 hash 中性化（迭代三）只覆盖派生字段，不覆盖页面 chrome。
-2. **CN 站（ow.blizzard.cn）按访问者 IP 返回不同语言变体**：实测中国 IP 返回中文名（士兵：76/尖刺护体），GitHub 美国 runner 返回英文名变体（Soldier: 76/Spike Guard）；Accept-Language 头无效（IP 地域驱动）。08-17 有 3 条 CN 补丁因此误报并把英文名写进中文存档。
+2. **CN 站（ow.blizzard.cn）按访问者 IP 返回不同语言变体**：实测中国 IP 返回中文名（士兵：76/尖刺护体），GitHub 美国 runner 返回英文名变体（Soldier: 76/Spike Guard——cn archive md 中英雄/技能名为英文即其证据）；Accept-Language 头无效（IP 地域驱动）。08-17 有 3 条 CN 补丁因此误报（json diff 主要为 attribution 结构变化，英文名体现在 archive md 渲染与变体页面内容差异），且英文变体内容被写进中文存档。
 3. **近期 EN 补丁被官方真实编辑**（"Configuration Artillery"→"Configuration: Artillery"、"Storm Arrow(s)"、"Sentry Turret(s)"、"Exo-Boots" 等名称拼写，中国 IP 实测同形）——monitor 正确检出，但对用户是名称变化而非平衡性内容。
 
 ### 设计决策（用户确认 2026-08-17）
@@ -174,11 +174,14 @@ commits: 5ab4fc1..b295273
 
 ### 验收结果（进行中）
 
-- T26 已完成：88 pytest 全绿（+3 新用例）；v3 迁移 60/395 hash 变化（全部为 legacy 补丁、仅 hash 字段）；线上抽查 6 个 legacy 月份 17/17 fresh-parse hash 与迁移后一致。
+- 96 pytest 全绿（基线 85，新增 11 用例）；`tools/rebuild.py` 双跑字节级幂等（0 diff）；`node tools/_smoke_web.js` 全过；workflow YAML 校验通过
+- v3 迁移 + 扩展 chrome 净化后：395/395 存储 hash 与 manifest 逐一自洽（`patch_hash_from_dict` 全量比对 0 mismatch）；线上 legacy 月份 fresh-parse 抽查 6 个月 16/16 与迁移后 hash 一致
+- 独立审查（general-1）无 critical；修复：①archive .md 渲染文件随 CN 数据一并恢复（cn 2025-06-25/2026-06-17 + en 2026-06-30 md 从 a3d32f0 恢复，与 json 一致）；②chrome 短语表扩展覆盖模板变体（learn more / on PC / 无句点反馈样板 / PATCH HIGHLIGHTS，实测 103 条 legacy 全覆盖）；③分页正则收紧（要求 link 后跟裸月份标签，正文 "the May Patch Notes" 引用不再被误删）
+- 审查指出并接受的设计权衡：`is_cosmetic_diff` 在 v3 下实际不可达（名字/装饰不入 hash 袋，名称-only 编辑根本不产生事件）——保留为防御性路径（未来若 hash 语义变化或新模板短语漏净化时不产生空通知）；`regenerate_all` 不渲染 archive .md 是既有系统性设计（archive md 仅在写补丁时渲染），本轮通过数据恢复对齐，不做渲染重构
 
 ## Tasks（迭代四）
 
-- [x] T26: `diff.py` legacy raw_text chrome 净化 + HASH_SCHEMA_VERSION=3 + 迁移 + test_diff/test_hash_migration — acceptance: clean_legacy_text 对 chrome 变体净化一致、迁移幂等、线上 legacy 月份 fresh-parse hash 全匹配（抽查 17/17）
+- [x] T26: `diff.py` legacy raw_text chrome 净化 + HASH_SCHEMA_VERSION=3 + 迁移 + test_diff/test_hash_migration — acceptance: clean_legacy_text 对 chrome 变体净化一致、迁移幂等、线上 legacy 月份 fresh-parse hash 全匹配（抽查 16/16）
 - [x] T27: 装饰类 modified 抑制（ChangeEvent.cosmetic + is_cosmetic_diff + notify 过滤 + run.py changed/notify 门控分离 + workflow 提交门控改 changed 标志） — acceptance: cosmetic-only 不产生 Issue/邮件但数据照常提交；名称-only 编辑与 legacy chrome 漂移零事件（v3 中性回归）；单测绿
-- [ ] T28: CN 变体漂移检测（pipeline 判定跳过写回 + WARN）+ 恢复 3 条被英文变体污染的 CN 补丁数据 — acceptance: 中文/英文名 fixture 判定正确；cn 2025-06-25/2025-12-19/2026-06-17 恢复中文存档；单测绿
+- [x] T28: CN 变体漂移检测（pipeline 判定跳过写回 + WARN）+ 恢复 3 条被英文变体污染的 CN 补丁数据（含 archive .md） — acceptance: 中文/英文名 fixture 判定正确；cn 2025-06-25/2025-12-19/2026-06-17 恢复中文存档（json+md）；单测绿
 - [ ] T29: 全量回归 + rebuild 幂等 + web smoke + 合并推送 + 线上观察 — acceptance: 全量 pytest 绿、rebuild 双跑字节幂等、08-18 每日运行零装饰类误报（若站点再有真实变化则正常报）

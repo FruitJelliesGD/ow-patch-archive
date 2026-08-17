@@ -32,23 +32,37 @@ _LEGACY_MONTH = ("January|February|March|April|May|June|July|August|"
 
 # Pagination block on legacy pages: link labels interleaved with their bare
 # month mobile labels, e.g. "July Patch Notes July May Patch Notes May".
+# Each link must be followed by its bare month label; a lone "May Patch
+# Notes" inside prose is real content and must survive.
 _LEGACY_PAGINATION_RE = re.compile(
-    rf"\s*(?:(?:{_LEGACY_MONTH}) (?:Live )?Patch Notes(?:\s+(?:{_LEGACY_MONTH}))?\s*)+")
+    rf"\s*(?:(?:{_LEGACY_MONTH}) (?:Live )?Patch Notes\s+(?:{_LEGACY_MONTH})\s*)+")
 
 _LEGACY_CHROME_PHRASES = (
     "Top of post",
     "Live Patch Notes",
+    "PATCH HIGHLIGHTS",
     "General Discussion forum Bug Report forum Technical Support forum",
     "These patch notes represent general changes made to the Live version of "
     "Overwatch and the balance changes listed affect Quick Play, Competitive "
     "Play, Arcade, and Custom Games.",
-    "To share your feedback, please post in the General Discussion forum. For "
-    "a list of known issues, visit our Bug Report forum. For troubleshooting "
-    "assistance, visit our Technical Support forum. Please note that some "
-    "changes may not be documented or described in full detail.",
-    "A new patch is now live on Windows PC. Read below to learn about the "
-    "latest changes.",
-    "A new patch is now live. Read below to learn about the latest changes.",
+    "Please note that some changes may not be documented or described in full detail.",
+    "Read below to learn more about the latest changes.",
+    "Read below to learn about the latest changes.",
+    "A new patch is now live on Windows PC.",
+    "A new patch is now live on PC.",
+    "A new patch is now live.",
+)
+
+# Intro/feedback boilerplate with variant punctuation (the NetEase-era legacy
+# pages drop the periods between the sentences).
+_LEGACY_BOILERPLATE_RES = (
+    re.compile(
+        r"To share your feedback, please post in the General Discussion "
+        r"forum\.? For a list of known issues, visit our Bug Report forum\.? "
+        r"For troubleshooting assistance, visit our Technical Support forum\.?"
+        r" Please note that some changes may not be documented or described "
+        r"in full detail\.?"
+    ),
 )
 
 
@@ -62,6 +76,11 @@ def clean_legacy_text(text: str) -> str:
     is cleaned.
     """
     cleaned = text
+    # regex first: the variant-tolerant boilerplate blocks carry their own tail
+    # ("Please note that some changes..."), which must still be present when
+    # the block regex matches; the phrase pass below handles standalone pieces
+    for pattern in _LEGACY_BOILERPLATE_RES:
+        cleaned = pattern.sub("", cleaned)
     for phrase in _LEGACY_CHROME_PHRASES:
         cleaned = cleaned.replace(phrase, "")
     cleaned = _LEGACY_PAGINATION_RE.sub("", cleaned)

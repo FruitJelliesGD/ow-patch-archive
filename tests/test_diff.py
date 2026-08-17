@@ -97,6 +97,37 @@ def test_clean_legacy_text_chrome_variants():
     assert "Overwatch Patch Notes – May 26, 2016" in cleaned
 
 
+def test_clean_legacy_text_template_variants():
+    """Template word/punctuation variants ("learn more", "on PC", period-less
+    feedback, PATCH HIGHLIGHTS) must also be neutralized; real content kept."""
+    header_more = ("A new patch is now live on PC. Read below to learn more about the "
+                   "latest changes. GENERAL: Added a new ForceFMA option Top of post "
+                   "June Patch Notes June")
+    assert "ForceFMA" in clean_legacy_text(header_more)
+    assert "learn more" not in clean_legacy_text(header_more)
+    assert "Top of post" not in clean_legacy_text(header_more)
+
+    no_period = ("To share your feedback, please post in the General Discussion forum "
+                 "For a list of known issues, visit our Bug Report forum For "
+                 "troubleshooting assistance, visit our Technical Support forum Please "
+                 "note that some changes may not be documented or described in full "
+                 "detail. GENERAL: Added a new ForceFMA option")
+    assert "ForceFMA" in clean_legacy_text(no_period)
+    assert "For a list of known issues" not in clean_legacy_text(no_period)
+
+    highlights = ("Technical Support forum. PATCH HIGHLIGHTS Summer Games 2018 The "
+                  "Summer Games are back!")
+    cleaned = clean_legacy_text(highlights)
+    assert "Summer Games 2018" in cleaned
+    assert "PATCH HIGHLIGHTS" not in cleaned
+
+    # real content that merely mentions a month or month-links must survive
+    content = "As announced in the June notes, ForceFMA changed."
+    assert content == clean_legacy_text(content)
+    prose = "As announced in the May Patch Notes, ForceFMA changed."
+    assert prose == clean_legacy_text(prose)
+
+
 def test_patch_hash_ignores_legacy_chrome():
     """Legacy-patch hashes are immune to site template chrome churn."""
     base = _legacy_patch(_CHROME_OLD)

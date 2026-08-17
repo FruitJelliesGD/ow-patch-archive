@@ -194,9 +194,6 @@ def test_pipeline_skips_cn_variant_drift(tmp_path):
     assert not (data_dir / "patches" / "cn" / "2026-08-12-1.json").exists()
 
 
-
-
-
 def test_unknown_names_recorded_not_fatal(tmp_path):
     fetcher = StubFetcher()
     # rename a hero in the EN page to something unknown
