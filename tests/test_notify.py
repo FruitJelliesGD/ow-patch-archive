@@ -44,6 +44,21 @@ def test_notification_no_events():
     assert "## 新增补丁" not in n.body_md
 
 
+def test_notification_excludes_cosmetic_modified():
+    en = load_patch("en_2026_08.html", "en")
+    events = [
+        ChangeEvent("new", en),
+        ChangeEvent("modified", en, cosmetic=True, diff_entries=[
+            DiffEntry("sections[1].heroes[0].name_en", "D.Mon", "D. Mon"),
+            DiffEntry("sections[1].heroes[0].slug", "d-mon", "d-mon"),
+        ]),
+    ]
+    n = build_notification(events)
+    assert n.title == "守望先锋补丁更新: 1 新增 · 0 修改"
+    assert "## 内容被官方修改的补丁" not in n.body_md
+    assert "D. Mon" not in n.email_text
+
+
 def test_smtp_env_loading(monkeypatch):
     monkeypatch.delenv("SMTP_HOST", raising=False)
     assert load_smtp_from_env() is None

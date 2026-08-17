@@ -4,7 +4,15 @@ from __future__ import annotations
 
 import pathlib
 
-from ow2_patch.diff import ChangeEvent, clean_legacy_text, deep_diff, detect_changes, patch_hash
+from ow2_patch.diff import (
+    ChangeEvent,
+    DiffEntry,
+    clean_legacy_text,
+    deep_diff,
+    detect_changes,
+    is_cosmetic_diff,
+    patch_hash,
+)
 from ow2_patch.model import AbilityUpdate, Change, HeroUpdate, Patch, Section
 from ow2_patch.parse import parse_patch_notes
 
@@ -96,6 +104,32 @@ def test_patch_hash_ignores_legacy_chrome():
     assert patch_hash(base) == patch_hash(stripped)
     edited = _legacy_patch(_CHROME_OLD.replace("ForceFMA", "ForceFMA2"))
     assert patch_hash(base) != patch_hash(edited)
+
+
+def test_is_cosmetic_diff():
+    from ow2_patch.model import patch_to_dict
+
+    old = patch_to_dict(make_patch())
+    name_only = patch_to_dict(make_patch())
+    name_only["sections"][0]["heroes"][0]["name_en"] = "D. Mon"
+    assert is_cosmetic_diff(deep_diff(old, name_only), old, name_only) is True
+
+    slug_only = patch_to_dict(make_patch())
+    slug_only["sections"][0]["heroes"][0]["slug"] = "d-mon-renamed"
+    assert is_cosmetic_diff(deep_diff(old, slug_only), old, slug_only) is True
+
+    text_changed = patch_to_dict(make_patch(damage=70.0))
+    assert is_cosmetic_diff(deep_diff(old, text_changed), old, text_changed) is False
+
+
+def test_is_cosmetic_diff_legacy_raw_text():
+    chrome_new = _CHROME_OLD.replace(" Top of post June Patch Notes June ", " ")
+    old = {"raw_text": _CHROME_OLD, "hash": "x"}
+    new = {"raw_text": chrome_new, "hash": "y"}
+    assert is_cosmetic_diff(deep_diff(old, new), old, new) is True
+
+    edited = {"raw_text": _CHROME_OLD.replace("ForceFMA", "ForceFMA2"), "hash": "z"}
+    assert is_cosmetic_diff(deep_diff(old, edited), old, edited) is False
 
 
 def test_detect_new_modified_unchanged():

@@ -141,6 +141,7 @@ class ChangeEvent:
     kind: str  # new | modified
     patch: Patch
     diff_entries: list[DiffEntry] = field(default_factory=list)
+    cosmetic: bool = False  # modified whose diff is only names/chrome, not content
 
 
 @dataclass
@@ -148,6 +149,26 @@ class DiffEntry:
     path: str
     old: object | None
     new: object | None
+
+
+_COSMETIC_LEAF_SUFFIXES = (".name_en", ".name_cn", ".slug", ".role")
+
+
+def is_cosmetic_diff(entries: list[DiffEntry], old: dict, new: dict) -> bool:
+    """True when every diff entry is cosmetic: hero/ability name/slug/role
+    fields, or a legacy raw_text that differs only in site template chrome.
+
+    Cosmetic modified patches are still archived (data stays current) but are
+    excluded from Issue/email notifications.
+    """
+    for entry in entries:
+        if entry.path.endswith(_COSMETIC_LEAF_SUFFIXES):
+            continue
+        if entry.path == "raw_text":
+            if clean_legacy_text(str(entry.old or "")) == clean_legacy_text(str(entry.new or "")):
+                continue
+        return False
+    return True
 
 
 @dataclass

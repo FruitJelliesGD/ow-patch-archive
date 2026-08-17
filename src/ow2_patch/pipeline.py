@@ -16,6 +16,7 @@ from .diff import (
     append_changelog,
     deep_diff,
     detect_changes,
+    is_cosmetic_diff,
     load_manifest,
     patch_hash,
     save_manifest,
@@ -85,7 +86,9 @@ def run_pipeline(
 
         old_dict = _load_patch_dict(data_dir, patch.site, patch.id) if event.kind == "modified" else {}
         if event.kind == "modified":
-            event.diff_entries = deep_diff(old_dict, patch_to_dict(patch))
+            new_dict = patch_to_dict(patch)
+            event.diff_entries = deep_diff(old_dict, new_dict)
+            event.cosmetic = is_cosmetic_diff(event.diff_entries, old_dict, new_dict)
         _write_patch(data_dir, patch)
         manifest[patch.id] = {
             "hash": patch.hash,
@@ -107,6 +110,8 @@ def run_pipeline(
                 {"path": d.path, "old": d.old, "new": d.new}
                 for d in event.diff_entries
             ]
+            if event.cosmetic:
+                entry["cosmetic"] = True
         append_changelog(data_dir, entry)
 
     if report.events:

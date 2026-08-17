@@ -179,6 +179,6 @@ commits: 5ab4fc1..b295273
 ## Tasks（迭代四）
 
 - [x] T26: `diff.py` legacy raw_text chrome 净化 + HASH_SCHEMA_VERSION=3 + 迁移 + test_diff/test_hash_migration — acceptance: clean_legacy_text 对 chrome 变体净化一致、迁移幂等、线上 legacy 月份 fresh-parse hash 全匹配（抽查 17/17）
-- [ ] T27: 装饰类 modified 抑制（ChangeEvent.cosmetic + notify 过滤 + run.py changed/notify 门控分离 + workflow 提交门控改 git diff） — acceptance: cosmetic-only 不产生 Issue/邮件但数据照常提交；单测绿
+- [x] T27: 装饰类 modified 抑制（ChangeEvent.cosmetic + is_cosmetic_diff + notify 过滤 + run.py changed/notify 门控分离 + workflow 提交门控改 changed 标志） — acceptance: cosmetic-only 不产生 Issue/邮件但数据照常提交；名称-only 编辑与 legacy chrome 漂移零事件（v3 中性回归）；单测绿
 - [ ] T28: CN 变体漂移检测（pipeline 判定跳过写回 + WARN）+ 恢复 3 条被英文变体污染的 CN 补丁数据 — acceptance: 中文/英文名 fixture 判定正确；cn 2025-06-25/2025-12-19/2026-06-17 恢复中文存档；单测绿
 - [ ] T29: 全量回归 + rebuild 幂等 + web smoke + 合并推送 + 线上观察 — acceptance: 全量 pytest 绿、rebuild 双跑字节幂等、08-18 每日运行零装饰类误报（若站点再有真实变化则正常报）

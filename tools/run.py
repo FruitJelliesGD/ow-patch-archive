@@ -2,10 +2,12 @@
 
 Usage:
   python tools/run.py --data data [--months N] [--notify-out notify.json]
-                      [--send-email] [--sites en cn]
+                      [--changed-out changed.json] [--send-email] [--sites en cn]
 
-The notification JSON (title/body_md/email_text) is only written when the run found
-changes, so its presence gates the commit + Issue + email steps in the workflow.
+The changed marker is written whenever any data was persisted (new or modified,
+including cosmetic-only edits) and gates the commit step; the notification JSON
+is only written when the run found *real* content changes (cosmetic name/chrome
+edits are archived but not notified) and gates the Issue/email steps.
 """
 
 from __future__ import annotations
@@ -42,7 +44,9 @@ def main(argv: list[str] | None = None) -> int:
                         help="only scan the last N months (backfill uses all)")
     parser.add_argument("--sites", nargs="+", choices=["en", "cn"], default=None)
     parser.add_argument("--notify-out", type=pathlib.Path, default=None,
-                        help="write notification JSON here when changes are found")
+                        help="write notification JSON here when real changes are found")
+    parser.add_argument("--changed-out", type=pathlib.Path, default=None,
+                        help="write a marker file here when any data was persisted")
     parser.add_argument("--send-email", action="store_true")
     args = parser.parse_args(argv)
 
@@ -54,9 +58,12 @@ def main(argv: list[str] | None = None) -> int:
         months = recent_months(months, args.months)
 
     result = run_pipeline(args.data, months=months, fetch=fetch)
+    real = [e for e in result.events if not (e.kind == "modified" and e.cosmetic)]
+    cosmetic = len(result.events) - len(real)
     print(f"scanned {result.fetched_months} months, "
           f"{len(result.events)} changes ({sum(1 for e in result.events if e.kind == 'new')} new, "
-          f"{sum(1 for e in result.events if e.kind == 'modified')} modified)")
+          f"{sum(1 for e in result.events if e.kind == 'modified')} modified"
+          f"{f', {cosmetic} cosmetic' if cosmetic else ''})")
 
     for name, site in result.unknown_heroes:
         print(f"WARN: unknown hero {name!r} ({site}) — add to data/names.json")
@@ -67,7 +74,15 @@ def main(argv: list[str] | None = None) -> int:
         print("no changes; nothing to commit or notify")
         return 0
 
-    notification = build_notification(result.events)
+    if args.changed_out:
+        args.changed_out.write_text("{}", encoding="utf-8")
+        print(f"changed marker written to {args.changed_out}")
+
+    if not real:
+        print("only cosmetic changes; data archived but nothing to notify")
+        return 0
+
+    notification = build_notification(real)
     if args.notify_out:
         args.notify_out.write_text(
             json.dumps({

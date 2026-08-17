@@ -111,6 +111,52 @@ def test_pipeline_detects_content_edit(tmp_path):
     assert other["sections"][1]["heroes"][0]["abilities"][0]["changes"][0]["after"] == 65.0
 
 
+def test_pipeline_name_only_edit_is_not_modified(tmp_path):
+    """Hero/ability name edits are hash-neutral (not in the text bag) and must
+    not produce any event — the daily scan stays silent on spelling churn."""
+    fetcher = StubFetcher()
+    data_dir = tmp_path / "data"
+    run_pipeline(data_dir, months=MONTHS, fetch=fetcher)
+
+    edited = (FIXTURES / "en_2026_08.html").read_text(encoding="utf-8")
+    edited = edited.replace('<h5 class="PatchNotesHeroUpdate-name">D.Mon</h5>',
+                            '<h5 class="PatchNotesHeroUpdate-name">D. Mon</h5>')
+    fetcher.pages[("en", 2026, 8)] = edited
+
+    result = run_pipeline(data_dir, months=MONTHS, fetch=fetcher)
+    assert result.events == []
+
+
+def test_pipeline_legacy_chrome_drift_is_not_modified(tmp_path):
+    """Schema v3: legacy raw_text that differs only in site template chrome
+    must hash equal — the 2016-2020 archive is immune to chrome churn."""
+    from ow2_patch.diff import ensure_hash_schema, patch_hash
+    from ow2_patch.model import Patch, patch_to_dict
+    from ow2_patch.parse import parse_patch_notes
+
+    data_dir = tmp_path / "data"
+    (data_dir / "patches" / "en").mkdir(parents=True)
+    patch = parse_patch_notes(
+        (FIXTURES / "en_2016_05.html").read_text(encoding="utf-8"), "en", url="https://x"
+    )[0]
+    data = patch_to_dict(patch)
+    data["hash"] = "sha256:old"
+    patch_file = data_dir / "patches" / "en" / "2016-05-27-1.json"
+    patch_file.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
+    manifest = {patch.id: {"hash": "sha256:old", "site": "en", "date": data["date"]}}
+    (data_dir / "manifest.json").write_text(json.dumps(manifest), encoding="utf-8")
+
+    ensure_hash_schema(data_dir, manifest)
+    migrated = json.loads(patch_file.read_text(encoding="utf-8"))["hash"]
+
+    # the same patch re-fetched with chrome leaked into the raw_text (the
+    # 2026-08-16 page layout) must hash identically after cleaning
+    with_chrome = Patch(id="en-2016-05-27-1", site="en", date="2016-05-27", url="https://x",
+                        title=data["title"], seq=1,
+                        raw_text=data["raw_text"] + " Top of post June Patch Notes June")
+    assert patch_hash(with_chrome) == migrated
+
+
 def test_unknown_names_recorded_not_fatal(tmp_path):
     fetcher = StubFetcher()
     # rename a hero in the EN page to something unknown

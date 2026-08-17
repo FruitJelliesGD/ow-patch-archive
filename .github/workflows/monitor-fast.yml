@@ -30,7 +30,7 @@ jobs:
 
       - name: Run pipeline (fast scan of recent 2 months)
         id: pipeline
-        run: python tools/run.py --data data --months 2 --notify-out notify-fast.json --send-email
+        run: python tools/run.py --data data --months 2 --notify-out notify-fast.json --changed-out notify-changed-fast.json --send-email
         env:
           SMTP_HOST: ${{ secrets.SMTP_HOST }}
           SMTP_PORT: ${{ secrets.SMTP_PORT }}
@@ -39,7 +39,7 @@ jobs:
           SMTP_TO: ${{ secrets.SMTP_TO }}
 
       - name: Commit new/changed data
-        if: hashFiles('notify-fast.json') != ''
+        if: hashFiles('notify-changed-fast.json') != ''
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

@@ -30,7 +30,7 @@ jobs:
 
       - name: Run pipeline (full scan of all months)
         id: pipeline
-        run: python tools/run.py --data data --notify-out notify-full.json --send-email
+        run: python tools/run.py --data data --notify-out notify-full.json --changed-out notify-changed.json --send-email
         env:
           SMTP_HOST: ${{ secrets.SMTP_HOST }}
           SMTP_PORT: ${{ secrets.SMTP_PORT }}
@@ -38,8 +38,10 @@ jobs:
           SMTP_PASS: ${{ secrets.SMTP_PASS }}
           SMTP_TO: ${{ secrets.SMTP_TO }}
 
+      # any persisted data (new / real edit / cosmetic name-chrome drift) is committed;
+      # cosmetic-only runs produce no notify file and therefore no Issue or email
       - name: Commit new/changed data
-        if: hashFiles('notify-full.json') != ''
+        if: hashFiles('notify-changed.json') != ''
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

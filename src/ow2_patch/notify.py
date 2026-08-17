@@ -26,8 +26,9 @@ class Notification:
 
 
 def build_notification(events: list[ChangeEvent]) -> Notification:
+    # cosmetic modified patches (name/chrome-only) are archived but not notified
     new = [e for e in events if e.kind == "new"]
-    modified = [e for e in events if e.kind == "modified"]
+    modified = [e for e in events if e.kind == "modified" and not e.cosmetic]
     parts = [f"{len(new)} 新增", f"{len(modified)} 修改"]
     title = f"守望先锋补丁更新: {' · '.join(parts)}"
     body = [_render_header(), ""]
@@ -39,7 +40,7 @@ def build_notification(events: list[ChangeEvent]) -> Notification:
         body += ["## 内容被官方修改的补丁", ""]
         for e in modified:
             body += _render_modified(e.patch, e.diff_entries)
-    return Notification(title=title, body_md="\n".join(body), email_text=_render_email(title, events))
+    return Notification(title=title, body_md="\n".join(body), email_text=_render_email(title, new + modified))
 
 
 def _render_header() -> str:
