@@ -44,6 +44,27 @@ def all_months(fetcher: Fetcher) -> list[tuple[str, int, int]]:
     return months
 
 
+def _has_cjk(text: str) -> bool:
+    return any("\u4e00" <= ch <= "\u9fff" for ch in text)
+
+
+def is_cn_variant_drift(patches: list[Patch]) -> bool:
+    """True when a CN month page is served in the internationalized variant.
+
+    ow.blizzard.cn returns Chinese hero/ability names to CN IPs but an
+    English-named variant to foreign IPs (the GitHub runner is US-based).
+    Detected by the fraction of hero names without any CJK characters;
+    Chinese-named pages keep >50% CJK names, the English variant flips it.
+    """
+    names = [h.name_cn or h.name_en
+             for p in patches for s in p.sections for h in s.heroes]
+    names = [n for n in names if n]
+    if len(names) < 5:
+        return False  # too little signal (e.g. a generic-update month)
+    latin = sum(1 for n in names if not _has_cjk(n))
+    return latin / len(names) > 0.5
+
+
 def run_pipeline(
     data_dir: pathlib.Path,
     months: list[tuple[str, int, int]] | None = None,
@@ -71,7 +92,15 @@ def run_pipeline(
                 print(f"WARN: fetch failed {site} {year}-{month:02d}: {exc}")
             continue
         result.fetched_months += 1
-        parsed.extend(parse_patch_notes(page.html, site, url=page.url))
+        month_patches = parse_patch_notes(page.html, site, url=page.url)
+        if site == "cn" and is_cn_variant_drift(month_patches):
+            # ow.blizzard.cn serves an internationalized (English-named) variant
+            # to non-CN IPs; the GitHub runner would otherwise re-archive every
+            # CN patch with English hero names. Skip and keep the Chinese archive.
+            print(f"WARN: cn {year}-{month:02d} served the international variant "
+                  f"(English hero names); skipping {len(month_patches)} patches")
+            continue
+        parsed.extend(month_patches)
 
     report = detect_changes(parsed, manifest)
     result.events = report.events

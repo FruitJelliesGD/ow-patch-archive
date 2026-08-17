@@ -157,6 +157,46 @@ def test_pipeline_legacy_chrome_drift_is_not_modified(tmp_path):
     assert patch_hash(with_chrome) == migrated
 
 
+def test_cn_variant_drift_detection():
+    from ow2_patch.model import HeroUpdate, Patch, Section
+    from ow2_patch.pipeline import is_cn_variant_drift
+
+    def cn_patch(names):
+        return Patch(id="cn-2026-06-17-1", site="cn", date="2026-06-17", url="x", title="t",
+                     seq=1, sections=[Section(type="hero_update", title="输出",
+                                              heroes=[HeroUpdate(name_cn=n) for n in names])])
+
+    assert is_cn_variant_drift([cn_patch(["士兵：76", "猎空", "安娜", "黑百合", "天使", "卢西奥"])]) is False
+    assert is_cn_variant_drift([cn_patch(["Soldier: 76", "Tracer", "Ana", "Widowmaker", "Mercy", "Lúcio"])]) is True
+    assert is_cn_variant_drift([]) is False
+    assert is_cn_variant_drift([cn_patch(["D.Va"])]) is False  # too little signal
+    assert is_cn_variant_drift([cn_patch(["D.Va", "士兵：76", "猎空", "安娜", "黑百合"])]) is False
+
+
+def test_pipeline_skips_cn_variant_drift(tmp_path):
+    """The English-named CN variant must be skipped entirely: no writes, no
+    events, so the Chinese archive and the notifications stay clean."""
+    import re
+
+    fetcher = StubFetcher()
+    data_dir = tmp_path / "data"
+
+    # cn month served in the international variant: all hero name elements English
+    cn_html = (FIXTURES / "cn_2026_08_12.html").read_text(encoding="utf-8")
+    english_names = re.sub(r'(class="PatchNotesHeroUpdate-name">)[^<]*(<)',
+                           r"\1Hero X\2", cn_html)
+    fetcher.pages[("cn", 2026, 8)] = english_names
+
+    result = run_pipeline(data_dir, months=MONTHS, fetch=fetcher)
+    # only the 2 EN patches are processed; the CN month was skipped as drift
+    assert len(result.events) == 2
+    assert all(e.patch.site == "en" for e in result.events)
+    assert not (data_dir / "patches" / "cn" / "2026-08-12-1.json").exists()
+
+
+
+
+
 def test_unknown_names_recorded_not_fatal(tmp_path):
     fetcher = StubFetcher()
     # rename a hero in the EN page to something unknown
