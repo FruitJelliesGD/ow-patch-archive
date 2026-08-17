@@ -5,6 +5,7 @@ from __future__ import annotations
 import json
 import pathlib
 
+from ow2_patch.diff import HASH_SCHEMA_VERSION
 from ow2_patch.fetch import FetchResult
 from ow2_patch.pipeline import run_pipeline
 
@@ -44,7 +45,7 @@ def test_pipeline_end_to_end(tmp_path):
 
     # manifest + changelog (hash_schema key tracks the content-hash version)
     manifest = json.loads((data_dir / "manifest.json").read_text(encoding="utf-8"))
-    assert manifest["hash_schema"] == 2
+    assert manifest["hash_schema"] == HASH_SCHEMA_VERSION
     assert set(manifest) - {"hash_schema"} == {
         "en-2026-08-14-1", "en-2026-08-12-1", "cn-2026-08-15-1", "cn-2026-08-13-1"}
     changelog = read_jsonl(data_dir / "changelog.jsonl")

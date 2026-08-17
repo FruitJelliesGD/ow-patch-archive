@@ -4,18 +4,68 @@ Hashing is deliberately content-neutral: it covers the *original text* of a patc
 only (sorted bag), never derived/enriched fields (before/after/by/metric/unit,
 slugs, names, attribution moves). Upgrading extraction or attribution therefore
 cannot masquerade as an official edit.
+
+Legacy (OW1-era) pages degrade to a single raw_text blob that also carries site
+template chrome (post-nav button, pagination links, intro/footer boilerplate);
+that chrome is stripped from the hash bag (schema v3) so template churn never
+flags the whole 2016-2020 archive as modified.
 """
 
 from __future__ import annotations
 
 import hashlib
 import json
+import re
 import time
 from dataclasses import dataclass, field
 
 from .model import Patch
 
-HASH_SCHEMA_VERSION = 2
+HASH_SCHEMA_VERSION = 3
+
+# ---------------------------------------------------------------------------
+# Legacy raw_text chrome cleaning (hash-only; stored raw_text keeps full text)
+# ---------------------------------------------------------------------------
+
+_LEGACY_MONTH = ("January|February|March|April|May|June|July|August|"
+                 "September|October|November|December")
+
+# Pagination block on legacy pages: link labels interleaved with their bare
+# month mobile labels, e.g. "July Patch Notes July May Patch Notes May".
+_LEGACY_PAGINATION_RE = re.compile(
+    rf"\s*(?:(?:{_LEGACY_MONTH}) (?:Live )?Patch Notes(?:\s+(?:{_LEGACY_MONTH}))?\s*)+")
+
+_LEGACY_CHROME_PHRASES = (
+    "Top of post",
+    "Live Patch Notes",
+    "General Discussion forum Bug Report forum Technical Support forum",
+    "These patch notes represent general changes made to the Live version of "
+    "Overwatch and the balance changes listed affect Quick Play, Competitive "
+    "Play, Arcade, and Custom Games.",
+    "To share your feedback, please post in the General Discussion forum. For "
+    "a list of known issues, visit our Bug Report forum. For troubleshooting "
+    "assistance, visit our Technical Support forum. Please note that some "
+    "changes may not be documented or described in full detail.",
+    "A new patch is now live on Windows PC. Read below to learn about the "
+    "latest changes.",
+    "A new patch is now live. Read below to learn about the latest changes.",
+)
+
+
+def clean_legacy_text(text: str) -> str:
+    """Strip site template chrome from a legacy raw-text blob, for hashing only.
+
+    Legacy (OW1-era) pages degrade to a single raw_text blob that includes site
+    chrome (post-nav button, pagination links, intro/footer boilerplate).
+    Template churn on those pages would otherwise flag every legacy patch as
+    modified. The stored raw_text keeps the full page text; only the hash bag
+    is cleaned.
+    """
+    cleaned = text
+    for phrase in _LEGACY_CHROME_PHRASES:
+        cleaned = cleaned.replace(phrase, "")
+    cleaned = _LEGACY_PAGINATION_RE.sub("", cleaned)
+    return re.sub(r"\s+", " ", cleaned).strip()
 
 
 def patch_hash(patch: Patch) -> str:
@@ -28,7 +78,7 @@ def patch_hash(patch: Patch) -> str:
 def patch_canonical_texts(patch: Patch) -> list[str]:
     texts = []
     if patch.raw_text:
-        texts.append(patch.raw_text)
+        texts.append(clean_legacy_text(patch.raw_text))
     for section in patch.sections:
         texts += [section.title or "", section.description or ""]
         for hero in section.heroes:
@@ -60,7 +110,7 @@ def patch_hash_from_dict(data: dict) -> str:
 def _dict_canonical_texts(data: dict) -> list[str]:
     texts = []
     if data.get("raw_text"):
-        texts.append(data["raw_text"])
+        texts.append(clean_legacy_text(data["raw_text"]))
     for section in data.get("sections", []):
         texts += [section.get("title") or "", section.get("description") or ""]
         for hero in section.get("heroes", []):

@@ -152,3 +152,33 @@ commits: 5ab4fc1..b295273
 - [x] T23: web 四类分组 + values chip + smoke 断言 — acceptance: 5 维分区、values、无 hash 分组
 - [x] T24: 全量回归 + 数据审计复核 — acceptance: 84 测试、perk 泄漏归零、覆盖率 67%
 - [x] T25: 合并推送 + 线上验证（迭代三收尾） — acceptance: main 更新、ci/pages 绿、monitor-fast 正常运行；monitor 每日全量首轮零误报待下次调度观察（P1 hash 中性已由回归测试覆盖） (covers: 迭代三; depends: T24)
+
+## 迭代四：每日全量扫描误报 modified 修复（装饰类差异 + CN 站变体）
+
+状态：in-progress（2026-08-17 起，分支 fix/daily-false-modified）
+
+### 背景与根因（issue #2 分析，2026-08-17）
+
+每日 03:23 UTC 全量扫描连续两天报大量"修改"但实际无平衡性内容变化：08-16 issue #1「0 新增 · 103 修改」、08-17 issue #2「0 新增 · 110 修改」（commit ee1d2e3，diff 中 raw_text 类 103 条 / sections 类 139 个单元格）。实证根因三层：
+
+1. **Legacy（OW1 时代 2016-2020）补丁的 hash 袋 = 整页原文 raw_text，含站点模板 chrome**：08-16 抓到的页面 chrome（"Top of post"、分页链接、页脚论坛样板）未被解析器剔除而存入存档，08-17 抓到同样页面时结构变化、chrome 被剔除 → 103 条 legacy 补丁 hash 全变。已排除代码差异（e398492..HEAD parse/fetch 功能等价）；即**官方站点在两天之间真实修改了历史页面模板结构**。P1 hash 中性化（迭代三）只覆盖派生字段，不覆盖页面 chrome。
+2. **CN 站（ow.blizzard.cn）按访问者 IP 返回不同语言变体**：实测中国 IP 返回中文名（士兵：76/尖刺护体），GitHub 美国 runner 返回英文名变体（Soldier: 76/Spike Guard）；Accept-Language 头无效（IP 地域驱动）。08-17 有 3 条 CN 补丁因此误报并把英文名写进中文存档。
+3. **近期 EN 补丁被官方真实编辑**（"Configuration Artillery"→"Configuration: Artillery"、"Storm Arrow(s)"、"Sentry Turret(s)"、"Exo-Boots" 等名称拼写，中国 IP 实测同形）——monitor 正确检出，但对用户是名称变化而非平衡性内容。
+
+### 设计决策（用户确认 2026-08-17）
+
+1. **装饰类差异不通知**：modified 的 deep_diff 全为装饰类（name/slug/role 字段或 raw_text 净化后相等）时，数据照常归档提交，但 Issue/邮件不报。
+2. **CN 变体漂移跳过写回 + 不通知**：检测 CN 月份页面英雄名整体英文化（≥50% name_cn 无 CJK）→ 该批补丁不写回、只 WARN；CN 内容变化由已配对 EN 侧检测兜底（CN 滞后 EN 1 天、54/54 配对）。
+3. **legacy chrome 净化（hash schema v3）**：raw_text 入袋前剔除已知站点模板短语（Top of post / 分页链接与裸月份标签 / 头尾样板），存储保留原文；ensure_hash_schema 一次性离线迁移（幂等、零事件）。
+4. **commit 与通知门控分离**：数据有变化即提交（changed 标志），仅真实内容变化才写 notify 文件 → 开 Issue/邮件。
+
+### 验收结果（进行中）
+
+- T26 已完成：88 pytest 全绿（+3 新用例）；v3 迁移 60/395 hash 变化（全部为 legacy 补丁、仅 hash 字段）；线上抽查 6 个 legacy 月份 17/17 fresh-parse hash 与迁移后一致。
+
+## Tasks（迭代四）
+
+- [x] T26: `diff.py` legacy raw_text chrome 净化 + HASH_SCHEMA_VERSION=3 + 迁移 + test_diff/test_hash_migration — acceptance: clean_legacy_text 对 chrome 变体净化一致、迁移幂等、线上 legacy 月份 fresh-parse hash 全匹配（抽查 17/17）
+- [ ] T27: 装饰类 modified 抑制（ChangeEvent.cosmetic + notify 过滤 + run.py changed/notify 门控分离 + workflow 提交门控改 git diff） — acceptance: cosmetic-only 不产生 Issue/邮件但数据照常提交；单测绿
+- [ ] T28: CN 变体漂移检测（pipeline 判定跳过写回 + WARN）+ 恢复 3 条被英文变体污染的 CN 补丁数据 — acceptance: 中文/英文名 fixture 判定正确；cn 2025-06-25/2025-12-19/2026-06-17 恢复中文存档；单测绿
+- [ ] T29: 全量回归 + rebuild 幂等 + web smoke + 合并推送 + 线上观察 — acceptance: 全量 pytest 绿、rebuild 双跑字节幂等、08-18 每日运行零装饰类误报（若站点再有真实变化则正常报）

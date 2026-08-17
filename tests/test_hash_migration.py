@@ -14,6 +14,8 @@ from ow2_patch.diff import (
 from ow2_patch.model import AbilityUpdate, Change, HeroUpdate, Patch, Section
 from ow2_patch.parse import parse_patch_notes
 
+from test_diff import _CHROME_OLD
+
 FIXTURES = pathlib.Path(__file__).parent / "fixtures"
 
 
@@ -94,6 +96,29 @@ def test_migration_idempotent(tmp_path):
 
     # dict-based and object-based hashes agree on the migrated data
     assert patch_hash_from_dict(json.loads(patch_file.read_text(encoding="utf-8"))) == new_hash
+
+
+def test_legacy_chrome_migration(tmp_path):
+    """Schema v3: a stored legacy raw_text (chrome included) must, after migration,
+    hash equal to a fresh parse whose chrome was stripped by the current site
+    structure — otherwise every daily full scan flags the 2016-2020 archive."""
+    data_dir = tmp_path / "data"
+    (data_dir / "patches" / "en").mkdir(parents=True)
+    stored = {"id": "en-2016-05-27-1", "site": "en", "date": "2016-05-27",
+              "url": "https://x", "title": "Overwatch Patch Notes – May 26, 2016",
+              "seq": 1, "sections": [], "raw_text": _CHROME_OLD, "hash": "sha256:old"}
+    patch_file = data_dir / "patches" / "en" / "2016-05-27-1.json"
+    patch_file.write_text(json.dumps(stored, ensure_ascii=False), encoding="utf-8")
+    manifest = {stored["id"]: {"hash": "sha256:old", "site": "en", "date": "2016-05-27"}}
+
+    assert ensure_hash_schema(data_dir, manifest) is True
+    migrated = json.loads(patch_file.read_text(encoding="utf-8"))["hash"]
+    assert manifest["hash_schema"] == HASH_SCHEMA_VERSION
+
+    fresh = Patch(id="en-2016-05-27-1", site="en", date="2016-05-27", url="https://x",
+                  title="Overwatch Patch Notes – May 26, 2016", seq=1,
+                  raw_text=_CHROME_OLD.replace(" Top of post June Patch Notes June ", " "))
+    assert patch_hash(fresh) == migrated
 
 
 def test_fresh_reparse_after_migration_is_unchanged():
