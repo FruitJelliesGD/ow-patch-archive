@@ -125,6 +125,9 @@
        "lines_en": [],
        "lines_cn": [
         "生命值到护盾的转化量从150点缩小至100点。"
+       ],
+       "raw_text": [
+        "护盾系统——主要威能 生命值到护盾的转化量从150点缩小至100点。"
        ]
       }
      ],
@@ -182,6 +185,9 @@
        "lines_en": [],
        "lines_cn": [
         "已添加 屏障阵列激活时，可移动一次位置。"
+       ],
+       "raw_text": [
+        "战略转移——主要威能 已添加 屏障阵列激活时，可移动一次位置。"
        ]
       },
       {
@@ -191,6 +197,9 @@
        "lines_en": [],
        "lines_cn": [
         "已移除"
+       ],
+       "raw_text": [
+        "强权压制——主要威能 已移除"
        ]
       }
      ],
@@ -224,6 +233,9 @@
        "lines_en": [],
        "lines_cn": [
         "持续时间从1秒缩短至0.8秒。"
+       ],
+       "raw_text": [
+        "悍猛矩阵——主要威能 持续时间从1秒缩短至0.8秒。"
        ]
       }
      ],
@@ -317,6 +329,9 @@
        "lines_en": [],
        "lines_cn": [
         "治疗量从30%提高至40%。"
+       ],
+       "raw_text": [
+        "激进狂热——次级威能 治疗量从30%提高至40%。"
        ]
       },
       {
@@ -326,6 +341,9 @@
        "lines_en": [],
        "lines_cn": [
         "从主要威能改为了次级威能。 额外充能上限从50%降低至25%。"
+       ],
+       "raw_text": [
+        "尖刺重构——次级威能 从主要威能改为了次级威能。 额外充能上限从50%降低至25%。"
        ]
       },
       {
@@ -335,6 +353,9 @@
        "lines_en": [],
        "lines_cn": [
         "从次级威能改为了主要威能。 范围扩大从15%提高至20%。"
+       ],
+       "raw_text": [
+        "强劲狂跃——主要威能 从次级威能改为了主要威能。 范围扩大从15%提高至20%。"
        ]
       },
       {
@@ -344,6 +365,9 @@
        "lines_en": [],
        "lines_cn": [
         "伤害从40点降低至30点。"
+       ],
+       "raw_text": [
+        "爆炸穿刺——主要威能 伤害从40点降低至30点。"
        ]
       }
      ],
@@ -358,11 +382,11 @@
          "text_cn": "最大持续时间从3秒缩短至2.5秒。",
          "before": 3.0,
          "after": 2.5,
-         "metric": "最大持续时间",
          "by": -0.5,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "最大持续时间"
+         "metric": "最大持续时间",
+         "raw_metric": "最大持续时间",
+         "unit": "s"
         }
        ]
       }
@@ -420,6 +444,9 @@
        "lines_en": [],
        "lines_cn": [
         "持续时间延长从1秒增加至2秒。 “诛”持续期间效果减半。"
+       ],
+       "raw_text": [
+        "铁血形态——次级威能 持续时间延长从1秒增加至2秒。 “诛”持续期间效果减半。"
        ]
       },
       {
@@ -429,6 +456,9 @@
        "lines_en": [],
        "lines_cn": [
         "治疗量从75提高至100。"
+       ],
+       "raw_text": [
+        "纳米修复——主要威能 治疗量从75提高至100。"
        ]
       }
      ],
@@ -453,22 +483,22 @@
          "text_cn": "伤害从120点提高至125点。",
          "before": 120.0,
          "after": 125.0,
-         "metric": "damage",
          "by": 5.0,
          "by_pct": null,
-         "unit": "hp",
-         "raw_metric": "伤害"
+         "metric": "damage",
+         "raw_metric": "伤害",
+         "unit": "hp"
         },
         {
          "text_en": null,
          "text_cn": "弹道速度从30提高至33。",
          "before": 30.0,
          "after": 33.0,
-         "metric": "projectile_speed",
          "by": 3.0,
          "by_pct": null,
-         "unit": "m/s",
-         "raw_metric": "弹道速度"
+         "metric": "projectile_speed",
+         "raw_metric": "弹道速度",
+         "unit": "m/s"
         }
        ]
       }
@@ -493,11 +523,11 @@
          "text_cn": "能量衰减速度从每秒2.5%降低至2%。",
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -531,11 +561,11 @@
          "text_cn": "技能结束后恢复时间从0.3秒缩短至0.1秒。",
          "before": 0.3,
          "after": 0.1,
-         "metric": "技能结束后恢复时间",
          "by": -0.2,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "技能结束后恢复时间"
+         "metric": "技能结束后恢复时间",
+         "raw_metric": "技能结束后恢复时间",
+         "unit": "s"
         }
        ]
       },
@@ -549,11 +579,11 @@
          "text_cn": "技能结束后恢复时间从0.2秒缩短至0.1秒。",
          "before": 0.2,
          "after": 0.1,
-         "metric": "技能结束后恢复时间",
          "by": -0.1,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "技能结束后恢复时间"
+         "metric": "技能结束后恢复时间",
+         "raw_metric": "技能结束后恢复时间",
+         "unit": "s"
         }
        ]
       }
@@ -611,6 +641,9 @@
        "lines_en": [],
        "lines_cn": [
         "第二次使用的击退效果衰减已移除。"
+       ],
+       "raw_text": [
+        "双筒猎枪——次级威能 第二次使用的击退效果衰减已移除。"
        ]
       },
       {
@@ -620,6 +653,9 @@
        "lines_en": [],
        "lines_cn": [
         "装填弹药效果已移除。"
+       ],
+       "raw_text": [
+        "毒蛇之刺——主要威能 装填弹药效果已移除。"
        ]
       },
       {
@@ -629,6 +665,9 @@
        "lines_en": [],
        "lines_cn": [
         "返还弹药量从3发提高至6发。"
+       ],
+       "raw_text": [
+        "空爆雷管——主要威能 返还弹药量从3发提高至6发。"
        ]
       }
      ],
@@ -674,6 +713,9 @@
        "lines_en": [],
        "lines_cn": [
         "已移除"
+       ],
+       "raw_text": [
+        "重甲火炮——次级威能 已移除"
        ]
       },
       {
@@ -683,6 +725,9 @@
        "lines_en": [],
        "lines_cn": [
         "A-36战术榴弹的自身击退效果提高25%且不再对自己造成伤害。"
+       ],
+       "raw_text": [
+        "智能炸弹——次级威能 A-36战术榴弹的自身击退效果提高25%且不再对自己造成伤害。"
        ]
       }
      ],
@@ -740,6 +785,9 @@
        "lines_en": [],
        "lines_cn": [
         "每秒治疗量从30点提高至40点。"
+       ],
+       "raw_text": [
+        "绝处逢生——次级威能 每秒治疗量从30点提高至40点。"
        ]
       },
       {
@@ -749,6 +797,9 @@
        "lines_en": [],
        "lines_cn": [
         "流血总持续伤害量从70点降低至50点。 持续时间从2.5秒缩短至1.5秒。"
+       ],
+       "raw_text": [
+        "银质子弹——主要威能 流血总持续伤害量从70点降低至50点。 持续时间从2.5秒缩短至1.5秒。"
        ]
       }
      ],
@@ -794,6 +845,9 @@
        "lines_en": [],
        "lines_cn": [
         "初始终极技能充能从50%降低至30%。"
+       ],
+       "raw_text": [
+        "局部扫描——次级威能 初始终极技能充能从50%降低至30%。"
        ]
       },
       {
@@ -803,6 +857,9 @@
        "lines_en": [],
        "lines_cn": [
         "额外黏性炸弹数量从3降低至2。"
+       ],
+       "raw_text": [
+        "炸弹齐射——主要威能 额外黏性炸弹数量从3降低至2。"
        ]
       }
      ],
@@ -827,11 +884,11 @@
          "text_cn": "终极技能消耗提高10%。",
          "before": null,
          "after": null,
-         "metric": "ultimate_cost",
          "by": null,
          "by_pct": 10.0,
-         "unit": null,
-         "raw_metric": "终极技能消耗"
+         "metric": "ultimate_cost",
+         "raw_metric": "终极技能消耗",
+         "unit": null
         }
        ]
       }
@@ -865,6 +922,9 @@
        "lines_en": [],
        "lines_cn": [
         "每秒治疗量从35点提高至50点。"
+       ],
+       "raw_text": [
+        "冥思一闪——主要威能 每秒治疗量从35点提高至50点。"
        ]
       }
      ],
@@ -879,11 +939,11 @@
          "text_cn": "冷却时间从10秒缩短至8秒。",
          "before": 10.0,
          "after": 8.0,
-         "metric": "cooldown",
          "by": -2.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "冷却时间"
+         "metric": "cooldown",
+         "raw_metric": "冷却时间",
+         "unit": "s"
         }
        ]
       }
@@ -917,6 +977,9 @@
        "lines_en": [],
        "lines_cn": [
         "攻击速度加成从25%提高至35%。"
+       ],
+       "raw_text": [
+        "一炸冲天——次级威能 攻击速度加成从25%提高至35%。"
        ]
       }
      ],
@@ -950,6 +1013,9 @@
        "lines_en": [],
        "lines_cn": [
         "冰冻非重装英雄的速度加快30%。"
+       ],
+       "raw_text": [
+        "深度冰冻——主要威能 冰冻非重装英雄的速度加快30%。"
        ]
       }
      ],
@@ -964,11 +1030,11 @@
          "text_cn": "射程从10米延长至12米。",
          "before": 10.0,
          "after": 12.0,
-         "metric": "range",
          "by": 2.0,
          "by_pct": null,
-         "unit": "m",
-         "raw_metric": "射程"
+         "metric": "range",
+         "raw_metric": "射程",
+         "unit": "m"
         }
        ]
       }
@@ -1014,6 +1080,9 @@
        "lines_en": [],
        "lines_cn": [
         "移动速度加成从40%降低至30%。"
+       ],
+       "raw_text": [
+        "萦绕幽灵——次级威能 移动速度加成从40%降低至30%。"
        ]
       }
      ],
@@ -1059,6 +1128,9 @@
        "lines_en": [],
        "lines_cn": [
         "子弹散布收紧速度从加快100%降低至加快70%。"
+       ],
+       "raw_text": [
+        "紧盯不放——次级威能 子弹散布收紧速度从加快100%降低至加快70%。"
        ]
       },
       {
@@ -1068,6 +1140,9 @@
        "lines_en": [],
        "lines_cn": [
         "现在只有追踪弹命中敌方英雄后才能加快攻击速度。"
+       ],
+       "raw_text": [
+        "锁定猛攻——主要威能 现在只有追踪弹命中敌方英雄后才能加快攻击速度。"
        ]
       }
      ],
@@ -1082,11 +1157,11 @@
          "text_cn": "基础弹道尺寸从0.175米降低至0.15米。",
          "before": 0.175,
          "after": 0.15,
-         "metric": "基础弹道尺寸",
          "by": -0.025,
          "by_pct": null,
-         "unit": "m",
-         "raw_metric": "基础弹道尺寸"
+         "metric": "基础弹道尺寸",
+         "raw_metric": "基础弹道尺寸",
+         "unit": "m"
         }
        ]
       },
@@ -1100,33 +1175,33 @@
          "text_cn": "部署速度从每秒30米提高至40米。",
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": null,
          "text_cn": "部署距离从14米延长至16米。",
          "before": 14.0,
          "after": 16.0,
-         "metric": "部署距离",
          "by": 2.0,
          "by_pct": null,
-         "unit": "m",
-         "raw_metric": "部署距离"
+         "metric": "部署距离",
+         "raw_metric": "部署距离",
+         "unit": "m"
         },
         {
          "text_en": null,
          "text_cn": "抓钩射程从17米延长至19米。",
          "before": 17.0,
          "after": 19.0,
-         "metric": "抓钩射程",
          "by": 2.0,
          "by_pct": null,
-         "unit": "m",
-         "raw_metric": "抓钩射程"
+         "metric": "抓钩射程",
+         "raw_metric": "抓钩射程",
+         "unit": "m"
         }
        ]
       }
@@ -1160,6 +1235,9 @@
        "lines_en": [],
        "lines_cn": [
         "获得能量上限从50点提升至75点。"
+       ],
+       "raw_text": [
+        "摩擦供能——主要威能 获得能量上限从50点提升至75点。"
        ]
       }
      ],
@@ -1193,6 +1271,9 @@
        "lines_en": [],
        "lines_cn": [
         "获得的弹药从20发减少至12发。"
+       ],
+       "raw_text": [
+        "动能装填——次级威能 获得的弹药从20发减少至12发。"
        ]
       }
      ],
@@ -1217,11 +1298,11 @@
          "text_cn": "终极技能消耗降低15%。",
          "before": null,
          "after": null,
-         "metric": "ultimate_cost",
          "by": null,
          "by_pct": 15.0,
-         "unit": null,
-         "raw_metric": "终极技能消耗"
+         "metric": "ultimate_cost",
+         "raw_metric": "终极技能消耗",
+         "unit": null
         }
        ]
       },
@@ -1235,22 +1316,22 @@
          "text_cn": "每层提供的移动速度加成从2%提升至3%。",
          "before": 2.0,
          "after": 3.0,
-         "metric": "每层提供的移动速度加成",
          "by": 1.0,
          "by_pct": null,
-         "unit": "pct",
-         "raw_metric": "每层提供的移动速度加成"
+         "metric": "每层提供的移动速度加成",
+         "raw_metric": "每层提供的移动速度加成",
+         "unit": "pct"
         },
         {
          "text_en": null,
          "text_cn": "最大持续时间从5.5秒延长至7.5秒。",
          "before": 5.5,
          "after": 7.5,
-         "metric": "最大持续时间",
          "by": 2.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "最大持续时间"
+         "metric": "最大持续时间",
+         "raw_metric": "最大持续时间",
+         "unit": "s"
         }
        ]
       }
@@ -1293,6 +1374,9 @@
        "lines_en": [],
        "lines_cn": [
         "移动速度加成从40%降低至30%。"
+       ],
+       "raw_text": [
+        "加速血清——次级威能 移动速度加成从40%降低至30%。"
        ]
       }
      ],
@@ -1326,6 +1410,9 @@
        "lines_en": [],
        "lines_cn": [
         "伤害从50点提高至60点。"
+       ],
+       "raw_text": [
+        "流星重鞭——主要威能 伤害从50点提高至60点。"
        ]
       }
      ],
@@ -1359,6 +1446,9 @@
        "lines_en": [],
        "lines_cn": [
         "冷却时间缩短从1.5秒提升至2秒。"
+       ],
+       "raw_text": [
+        "快速建造——次级威能 冷却时间缩短从1.5秒提升至2秒。"
        ]
       }
      ],
@@ -1440,6 +1530,9 @@
        "lines_en": [],
        "lines_cn": [
         "持续时间从5秒缩短至3秒。 护盾最大值从75点降低至50点。"
+       ],
+       "raw_text": [
+        "带盾运输——次级威能 持续时间从5秒缩短至3秒。 护盾最大值从75点降低至50点。"
        ]
       },
       {
@@ -1449,6 +1542,9 @@
        "lines_en": [],
        "lines_cn": [
         "激活所需的速度阈值从每秒16.5米降低至每秒14米。 不再返还燃料。 伤害从30点提高至50点。"
+       ],
+       "raw_text": [
+        "火箭头槌——主要威能 激活所需的速度阈值从每秒16.5米降低至每秒14米。 不再返还燃料。 伤害从30点提高至50点。"
        ]
       }
      ],
@@ -1463,11 +1559,11 @@
          "text_cn": "运输其他英雄时燃料恢复速度惩罚从2倍提升至3倍。",
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       },
@@ -1481,11 +1577,11 @@
          "text_cn": "每枚弹丸伤害与治疗量从4点提高至4.5点。",
          "before": 4.0,
          "after": 4.5,
-         "metric": "每枚弹丸伤害与治疗量",
          "by": 0.5,
          "by_pct": null,
-         "unit": "hp",
-         "raw_metric": "每枚弹丸伤害与治疗量"
+         "metric": "每枚弹丸伤害与治疗量",
+         "raw_metric": "每枚弹丸伤害与治疗量",
+         "unit": "hp"
         }
        ]
       }
@@ -1519,6 +1615,9 @@
        "lines_en": [],
        "lines_cn": [
         "每秒射击次数从20次提高至22次。"
+       ],
+       "raw_text": [
+        "高速冲击枪——主要威能 每秒射击次数从20次提高至22次。"
        ]
       }
      ],
@@ -1534,8 +1633,8 @@
      "perks": [],
      "abilities": [
       {
-       "name_en": "Tree of Life",
-       "name_cn": "生命之树e",
+       "name_en": null,
+       "name_cn": "生命之树",
        "slug": "tree-of-life",
        "changes": [
         {
@@ -1543,22 +1642,22 @@
          "text_cn": "终极技能消耗提高9%。",
          "before": null,
          "after": null,
-         "metric": "ultimate_cost",
          "by": null,
          "by_pct": 9.0,
-         "unit": null,
-         "raw_metric": "终极技能消耗"
+         "metric": "ultimate_cost",
+         "raw_metric": "终极技能消耗",
+         "unit": null
         },
         {
          "text_en": null,
          "text_cn": "过量治疗量到过量生命值的转换率从100%降低至50%。",
          "before": 100.0,
          "after": 50.0,
-         "metric": "过量治疗量到过量生命值的转换率",
          "by": -50.0,
          "by_pct": null,
-         "unit": "pct",
-         "raw_metric": "过量治疗量到过量生命值的转换率"
+         "metric": "过量治疗量到过量生命值的转换率",
+         "raw_metric": "过量治疗量到过量生命值的转换率",
+         "unit": "pct"
         }
        ]
       }
@@ -1592,6 +1691,9 @@
        "lines_en": [],
        "lines_cn": [
         "伤害强化额外提高5%。"
+       ],
+       "raw_text": [
+        "连锁强化——主要威能 伤害强化额外提高5%。"
        ]
       }
      ],
@@ -1606,11 +1708,11 @@
          "text_cn": "伤害强化从30%降低至25%。",
          "before": 30.0,
          "after": 25.0,
-         "metric": "damage",
          "by": -5.0,
          "by_pct": null,
-         "unit": "pct",
-         "raw_metric": "伤害强化"
+         "metric": "damage",
+         "raw_metric": "伤害强化",
+         "unit": "pct"
         }
        ]
       },
@@ -1624,11 +1726,11 @@
          "text_cn": "终极技能消耗提高7%。",
          "before": null,
          "after": null,
-         "metric": "ultimate_cost",
          "by": null,
          "by_pct": 7.0,
-         "unit": null,
-         "raw_metric": "终极技能消耗"
+         "metric": "ultimate_cost",
+         "raw_metric": "终极技能消耗",
+         "unit": null
         }
        ]
       }
@@ -1653,22 +1755,22 @@
          "text_cn": "冷却时间从12秒缩短至11秒。",
          "before": 12.0,
          "after": 11.0,
-         "metric": "cooldown",
          "by": -1.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "冷却时间"
+         "metric": "cooldown",
+         "raw_metric": "冷却时间",
+         "unit": "s"
         },
         {
          "text_en": null,
          "text_cn": "持续时间从4.5秒延长至5.5秒。",
          "before": 4.5,
          "after": 5.5,
-         "metric": "duration",
          "by": 1.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "持续时间"
+         "metric": "duration",
+         "raw_metric": "持续时间",
+         "unit": "s"
         }
        ]
       }
@@ -1693,33 +1795,33 @@
          "text_cn": "每秒伤害从50点提高至60点。",
          "before": 50.0,
          "after": 60.0,
-         "metric": "每秒伤害",
          "by": 10.0,
          "by_pct": null,
-         "unit": "hp",
-         "raw_metric": "每秒伤害"
+         "metric": "每秒伤害",
+         "raw_metric": "每秒伤害",
+         "unit": "hp"
         },
         {
          "text_en": null,
          "text_cn": "每秒治疗量从65点提高至75点。",
          "before": 65.0,
          "after": 75.0,
-         "metric": "每秒治疗量",
          "by": 10.0,
          "by_pct": null,
-         "unit": "hp",
-         "raw_metric": "每秒治疗量"
+         "metric": "每秒治疗量",
+         "raw_metric": "每秒治疗量",
+         "unit": "hp"
         },
         {
          "text_en": null,
          "text_cn": "每颗球的最大伤害从200提高至250。",
          "before": 200.0,
          "after": 250.0,
-         "metric": "每颗球的最大伤害",
          "by": 50.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "每颗球的最大伤害"
+         "metric": "每颗球的最大伤害",
+         "raw_metric": "每颗球的最大伤害",
+         "unit": null
         }
        ]
       }
@@ -1753,6 +1855,9 @@
        "lines_en": [],
        "lines_cn": [
         "回流时治疗量从50%提高至100%。"
+       ],
+       "raw_text": [
+        "潮涨潮落——主要威能 回流时治疗量从50%提高至100%。"
        ]
       }
      ],
@@ -2525,8 +2630,7 @@
          "by": 15.0,
          "by_pct": null,
          "metric": "的效果",
-         "unit": "pct",
-         "raw_metric": "的效果"
+         "unit": "pct"
         }
        ]
       }
@@ -3654,7 +3758,7 @@
      ],
      "abilities": [
       {
-       "name_en": "Fortify",
+       "name_en": null,
        "name_cn": "强固防御",
        "slug": "fortify",
        "changes": [
@@ -3666,13 +3770,12 @@
          "by": null,
          "by_pct": 90.0,
          "metric": "使产生的热量",
-         "unit": null,
-         "raw_metric": "使产生的热量"
+         "unit": null
         }
        ]
       },
       {
-       "name_en": "Energy Javelin",
+       "name_en": null,
        "name_cn": "能量标枪",
        "slug": "energy-javelin",
        "changes": [
@@ -3684,8 +3787,7 @@
          "by": null,
          "by_pct": null,
          "metric": null,
-         "unit": null,
-         "raw_metric": null
+         "unit": null
         }
        ]
       }
@@ -4628,7 +4730,7 @@
      ],
      "abilities": [
       {
-       "name_en": "Tesla Cannon",
+       "name_en": null,
        "name_cn": "特斯拉炮",
        "slug": "tesla-cannon",
        "changes": [
@@ -4640,8 +4742,7 @@
          "by": null,
          "by_pct": null,
          "metric": null,
-         "unit": null,
-         "raw_metric": null
+         "unit": null
         }
        ]
       }
@@ -4889,7 +4990,7 @@
      ],
      "abilities": [
       {
-       "name_en": "Particle Cannon",
+       "name_en": null,
        "name_cn": "粒子炮",
        "slug": "particle-cannon",
        "changes": [
@@ -4901,8 +5002,7 @@
          "by": null,
          "by_pct": 20.0,
          "metric": "主要攻击模式的射程",
-         "unit": null,
-         "raw_metric": "主要攻击模式的射程"
+         "unit": null
         }
        ]
       }
@@ -6285,7 +6385,7 @@
      ],
      "abilities": [
       {
-       "name_en": "Dragonblade",
+       "name_en": null,
        "name_cn": "斩",
        "slug": "dragonblade",
        "changes": [
@@ -6297,8 +6397,7 @@
          "by": 50.0,
          "by_pct": null,
          "metric": "damage",
-         "unit": "pct",
-         "raw_metric": "伤害比例"
+         "unit": "pct"
         },
         {
          "text_en": null,
@@ -6308,8 +6407,7 @@
          "by": null,
          "by_pct": 50.0,
          "metric": "挥击的效果",
-         "unit": null,
-         "raw_metric": "挥击的效果"
+         "unit": null
         },
         {
          "text_en": null,
@@ -6319,8 +6417,7 @@
          "by": null,
          "by_pct": null,
          "metric": null,
-         "unit": null,
-         "raw_metric": null
+         "unit": null
         }
        ]
       }
@@ -6614,7 +6711,7 @@
      ],
      "abilities": [
       {
-       "name_en": "Concussion Mine",
+       "name_en": null,
        "name_cn": "震荡地雷",
        "slug": "concussion-mine",
        "changes": [
@@ -6626,8 +6723,7 @@
          "by": null,
          "by_pct": null,
          "metric": null,
-         "unit": null,
-         "raw_metric": null
+         "unit": null
         }
        ]
       }
@@ -7031,7 +7127,7 @@
      ],
      "abilities": [
       {
-       "name_en": "Endothermic Blaster",
+       "name_en": null,
        "name_cn": "冰霜冲击枪",
        "slug": "endothermic-blaster",
        "changes": [
@@ -7043,8 +7139,7 @@
          "by": null,
          "by_pct": null,
          "metric": null,
-         "unit": null,
-         "raw_metric": null
+         "unit": null
         }
        ]
       }
@@ -7536,7 +7631,7 @@
      ],
      "abilities": [
       {
-       "name_en": "Wraith Form",
+       "name_en": null,
        "name_cn": "幽灵形态",
        "slug": "wraith-form",
        "changes": [
@@ -7548,8 +7643,7 @@
          "by": null,
          "by_pct": null,
          "metric": null,
-         "unit": null,
-         "raw_metric": null
+         "unit": null
         },
         {
          "text_en": null,
@@ -7559,8 +7653,7 @@
          "by": null,
          "by_pct": null,
          "metric": null,
-         "unit": null,
-         "raw_metric": null
+         "unit": null
         }
        ]
       }
@@ -8038,7 +8131,7 @@
      ],
      "abilities": [
       {
-       "name_en": "Power Slide",
+       "name_en": null,
        "name_cn": "机动滑铲",
        "slug": "power-slide",
        "changes": [
@@ -8050,8 +8143,7 @@
          "by": null,
          "by_pct": 50.0,
          "metric": "弹道尺寸",
-         "unit": null,
-         "raw_metric": "弹道尺寸"
+         "unit": null
         }
        ]
       }
@@ -8485,8 +8577,7 @@
          "by": -1.0,
          "by_pct": null,
          "metric": "damage",
-         "unit": "hp",
-         "raw_metric": "基础伤害"
+         "unit": "hp"
         },
         {
          "text_en": null,
@@ -8496,13 +8587,12 @@
          "by": null,
          "by_pct": 1.0,
          "metric": "的移动速度和生命汲取各",
-         "unit": null,
-         "raw_metric": "的移动速度和生命汲取各"
+         "unit": null
         }
        ]
       },
       {
-       "name_en": "Tactical Visor",
+       "name_en": null,
        "name_cn": "战术目镜",
        "slug": "tactical-visor",
        "changes": [
@@ -8514,8 +8604,7 @@
          "by": null,
          "by_pct": 35.0,
          "metric": "暴击伤害",
-         "unit": null,
-         "raw_metric": "暴击伤害"
+         "unit": null
         }
        ]
       }
@@ -8727,7 +8816,7 @@
      ],
      "abilities": [
       {
-       "name_en": "Overload",
+       "name_en": null,
        "name_cn": "热力过载",
        "slug": "overload",
        "changes": [
@@ -8739,8 +8828,7 @@
          "by": -2.0,
          "by_pct": null,
          "metric": "cooldown",
-         "unit": "pct",
-         "raw_metric": "冷却时间缩减"
+         "unit": "pct"
         }
        ]
       },
@@ -8757,8 +8845,7 @@
          "by": null,
          "by_pct": null,
          "metric": null,
-         "unit": null,
-         "raw_metric": null
+         "unit": null
         }
        ]
       }
@@ -9114,7 +9201,7 @@
      ],
      "abilities": [
       {
-       "name_en": "Pulse Pistols",
+       "name_en": null,
        "name_cn": "脉冲双枪",
        "slug": "pulse-pistols",
        "changes": [
@@ -9126,13 +9213,12 @@
          "by": -0.5,
          "by_pct": null,
          "metric": "damage",
-         "unit": "hp",
-         "raw_metric": "基础伤害"
+         "unit": "hp"
         }
        ]
       },
       {
-       "name_en": "Blink",
+       "name_en": null,
        "name_cn": "闪现",
        "slug": "blink",
        "changes": [
@@ -9144,13 +9230,12 @@
          "by": null,
          "by_pct": null,
          "metric": null,
-         "unit": null,
-         "raw_metric": null
+         "unit": null
         }
        ]
       },
       {
-       "name_en": "Recall",
+       "name_en": null,
        "name_cn": "闪回",
        "slug": "recall",
        "changes": [
@@ -9162,8 +9247,7 @@
          "by": null,
          "by_pct": null,
          "metric": null,
-         "unit": null,
-         "raw_metric": null
+         "unit": null
         }
        ]
       }
@@ -9561,7 +9645,7 @@
      ],
      "abilities": [
       {
-       "name_en": "Soaring Slice",
+       "name_en": null,
        "name_cn": "飞空斩击",
        "slug": "soaring-slice",
        "changes": [
@@ -9573,8 +9657,7 @@
          "by": null,
          "by_pct": null,
          "metric": null,
-         "unit": null,
-         "raw_metric": null
+         "unit": null
         }
        ]
       }
@@ -10071,7 +10154,7 @@
      ],
      "abilities": [
       {
-       "name_en": "Sleep Dart",
+       "name_en": null,
        "name_cn": "麻醉镖",
        "slug": "sleep-dart",
        "changes": [
@@ -10083,8 +10166,7 @@
          "by": null,
          "by_pct": null,
          "metric": null,
-         "unit": null,
-         "raw_metric": null
+         "unit": null
         }
        ]
       }
@@ -10810,7 +10892,7 @@
      ],
      "abilities": [
       {
-       "name_en": "Hyper Ring",
+       "name_en": null,
        "name_cn": "超能环域",
        "slug": "hyper-ring",
        "changes": [
@@ -10822,8 +10904,7 @@
          "by": null,
          "by_pct": null,
          "metric": null,
-         "unit": null,
-         "raw_metric": null
+         "unit": null
         },
         {
          "text_en": null,
@@ -10833,8 +10914,7 @@
          "by": null,
          "by_pct": null,
          "metric": null,
-         "unit": null,
-         "raw_metric": null
+         "unit": null
         }
        ]
       }
@@ -11286,7 +11366,7 @@
      ],
      "abilities": [
       {
-       "name_en": "Kunai",
+       "name_en": null,
        "name_cn": "锥",
        "slug": "kunai",
        "changes": [
@@ -11298,8 +11378,7 @@
          "by": null,
          "by_pct": null,
          "metric": null,
-         "unit": null,
-         "raw_metric": null
+         "unit": null
         }
        ]
       }
@@ -11907,7 +11986,7 @@
      ],
      "abilities": [
       {
-       "name_en": "Wall Ride",
+       "name_en": null,
        "name_cn": "滑墙",
        "slug": "wall-ride",
        "changes": [
@@ -11919,8 +11998,7 @@
          "by": null,
          "by_pct": 25.0,
          "metric": "使其击退效果",
-         "unit": null,
-         "raw_metric": "使其击退效果"
+         "unit": null
         }
        ]
       }
@@ -12424,7 +12502,7 @@
      ],
      "abilities": [
       {
-       "name_en": "Flash Heal",
+       "name_en": null,
        "name_cn": "快速治疗",
        "slug": "flash-heal",
        "changes": [
@@ -12436,8 +12514,7 @@
          "by": null,
          "by_pct": null,
          "metric": null,
-         "unit": null,
-         "raw_metric": null
+         "unit": null
         },
         {
          "text_en": null,
@@ -12447,13 +12524,12 @@
          "by": null,
          "by_pct": null,
          "metric": null,
-         "unit": null,
-         "raw_metric": null
+         "unit": null
         }
        ]
       },
       {
-       "name_en": "Valkyrie",
+       "name_en": null,
        "name_cn": "女武神",
        "slug": "valkyrie",
        "changes": [
@@ -12465,8 +12541,7 @@
          "by": null,
          "by_pct": null,
          "metric": null,
-         "unit": null,
-         "raw_metric": null
+         "unit": null
         }
        ]
       }
@@ -13094,7 +13169,7 @@
      ],
      "abilities": [
       {
-       "name_en": "Biotic Orb",
+       "name_en": null,
        "name_cn": "生化之球",
        "slug": "biotic-orb",
        "changes": [
@@ -13106,8 +13181,7 @@
          "by": -10.0,
          "by_pct": null,
          "metric": "每秒伤害",
-         "unit": "hp",
-         "raw_metric": "每秒伤害"
+         "unit": "hp"
         },
         {
          "text_en": null,
@@ -13117,8 +13191,7 @@
          "by": -10.0,
          "by_pct": null,
          "metric": "每秒治疗量",
-         "unit": "hp",
-         "raw_metric": "每秒治疗量"
+         "unit": "hp"
         },
         {
          "text_en": null,
@@ -13128,8 +13201,7 @@
          "by": -50.0,
          "by_pct": null,
          "metric": "的最大伤害量",
-         "unit": "hp",
-         "raw_metric": "的最大伤害量"
+         "unit": "hp"
         }
        ]
       }
@@ -13485,7 +13557,7 @@
      ],
      "abilities": [
       {
-       "name_en": "Orb of Destruction",
+       "name_en": null,
        "name_cn": "灭",
        "slug": "orb-of-destruction",
        "changes": [
@@ -13497,8 +13569,7 @@
          "by": null,
          "by_pct": null,
          "metric": null,
-         "unit": null,
-         "raw_metric": null
+         "unit": null
         }
        ]
       }
@@ -13544,5 +13615,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:18e8457998b482f68f425086abc7894a3af8fed6d29ff78209909778de130b45"
+ "hash": "sha256:ce84a17fee1ffa2e92652e19715e7f2e3c69f9ece7773f6826f9af7e7fcaeb45"
 }
