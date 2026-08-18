@@ -3,7 +3,7 @@
 
 const ROLE_LABEL = { tank: "重装", damage: "输出", support: "支援" };
 const KIND_LABEL = { ability: "技能改动", perk: "威能改动", general: "其他改动" };
-const DIM_LABEL = { weapon: "武器", ability: "技能", perk: "威能", hero_attr: "英雄属性", other: "其他" };
+const DIM_LABEL = { weapon: "武器", ability: "技能", perk: "威能", hero_attr: "英雄属性", hero: "英雄", other: "其他" };
 const ATTR_LABEL = {
   health: "生命值", ultimate_cost: "终极技能消耗", move_speed: "移动速度",
   base_stat: "基础属性", other: "其他",
@@ -86,47 +86,107 @@ async function initIndex() {
   }
 }
 
-/* ---------- hero list (heroes.html) ---------- */
+/* ---------- entry search (entries.html) ---------- */
 
-async function initHeroes() {
-  const data = await fetchJSON("data/heroes_index.json");
-  const roles = { tank: [], damage: [], support: [], unknown: [] };
-  for (const h of data.heroes) roles[h.role]?.push(h) ?? roles.unknown.push(h);
+const ENTRY_DIM_ORDER = ["weapon", "ability", "perk", "hero_attr", "hero"];
 
-  const container = document.getElementById("roles");
-  for (const [role, heroes] of Object.entries(roles)) {
-    if (!heroes.length) continue;
-    const section = document.createElement("section");
-    section.className = `role-${role}`;
-    section.innerHTML = `<h2 class="role-title">${esc(ROLE_LABEL[role] || role)}</h2><div class="hero-grid"></div>`;
-    const grid = section.querySelector(".hero-grid");
-    for (const h of heroes) grid.appendChild(heroCard(h));
-    container.appendChild(section);
+async function initEntries() {
+  let data;
+  try {
+    data = await fetchJSON("data/entries_index.json");
+  } catch {
+    document.getElementById("result-count").textContent = "词条索引加载失败";
+    return;
+  }
+  const all = data.entries || [];
+
+  const filters = document.getElementById("filters");
+  const chips = [["", "全部"], ...ENTRY_DIM_ORDER.map((d) => [d, DIM_LABEL[d]])];
+  for (const [dim, label] of chips) {
+    const b = document.createElement("button");
+    b.className = `chip ${dim === "" ? "active" : ""}`;
+    b.textContent = label;
+    b.dataset.dim = dim;
+    filters.appendChild(b);
   }
 
-  document.getElementById("search").addEventListener("input", (e) => {
-    const q = (e.target.value || "").trim().toLowerCase();
-    document.querySelectorAll(".hero-card").forEach((card) => {
-      card.style.display = card.dataset.search.includes(q) ? "" : "none";
+  const state = { q: "", dim: "" };
+  const render = () => {
+    const q = state.q;
+    const results = all.filter((e) => {
+      if (state.dim && e.dimension !== state.dim) return false;
+      if (!q) return true;
+      const hay = [e.name_cn, e.name_en, e.slug, e.hero_cn, e.hero_en, e.hero_slug]
+        .concat(e.variants || []).filter(Boolean).join(" ").toLowerCase();
+      return hay.includes(q);
     });
+    const count = document.getElementById("result-count");
+    count.textContent = `共 ${results.length} / ${all.length} 个词条`;
+    const grid = document.getElementById("results");
+    grid.textContent = "";
+    for (const e of results) grid.appendChild(entryCard(e));
+  };
+
+  document.getElementById("search").addEventListener("input", (ev) => {
+    state.q = (ev.target.value || "").trim().toLowerCase();
+    render();
   });
+  filters.addEventListener("click", (ev) => {
+    const chip = ev.target.closest?.(".chip");
+    if (!chip) return;
+    state.dim = chip.dataset.dim || "";
+    filters.querySelectorAll(".chip").forEach((c) => c.classList.toggle("active", c === chip));
+    render();
+  });
+  render();
 }
 
-function heroCard(h) {
+function entryCard(e) {
   const a = document.createElement("a");
-  a.className = "hero-card";
-  a.href = `hero.html?slug=${encodeURIComponent(h.slug)}`;
-  a.dataset.search = [h.slug, h.en, h.cn].join(" ").toLowerCase();
-  a.innerHTML = `<div class="cn">${esc(h.cn || h.en)}</div>
-    <div class="en">${esc(h.en || "")}</div>`;
+  a.className = "entry-card";
+  a.href = `entry.html?hero=${encodeURIComponent(e.hero_slug)}&key=${encodeURIComponent(e.key)}`;
+  const meta = [
+    `<span class="badge dim dim-${esc(e.dimension)}">${DIM_LABEL[e.dimension] || e.dimension}</span>`,
+    `<span class="badge hero-role">${esc(ROLE_LABEL[e.hero_role] || e.hero_role || "")}</span>`,
+    e.edited ? `<span class="badge edited">官方事后编辑</span>` : "",
+  ].filter(Boolean).join(" ");
+  const range = e.first_date && e.last_date && e.first_date !== e.last_date
+    ? `${esc(e.first_date)} ~ ${esc(e.last_date)}` : esc(e.first_date || e.last_date || "");
+  a.innerHTML = `
+    <div class="card-top">${meta}</div>
+    <div class="cn">${esc(e.name_cn || e.name_en || e.key)}${e.name_cn && e.name_en && e.name_cn !== e.name_en ? ` / ${esc(e.name_en)}` : ""}</div>
+    <div class="en">${esc(e.hero_cn || e.hero_en || "")}</div>
+    <div class="card-meta">${e.count} 条记录${range ? ` · ${range}` : ""}</div>`;
   return a;
 }
 
 /* ---------- hero timeline (hero.html) ---------- */
 
+function entryKey(e) {
+  const dim = e.dimension || (e.kind === "perk" ? "perk" : "other");
+  if (dim === "weapon" || dim === "ability") {
+    return `${dim}::${e.ability_slug || e.ability_en || e.ability_cn || ""}`;
+  }
+  if (dim === "perk") return `perk::${e.perk_slug || e.perk_cn || e.perk_en || ""}`;
+  if (dim === "hero_attr") return `attr::${e.subject || e.metric || "other"}`;
+  return `other::`;
+}
+
+function entryTitle(e) {
+  const dim = e.dimension || (e.kind === "perk" ? "perk" : "other");
+  if (dim === "weapon" || dim === "ability") {
+    return e.ability_cn && e.ability_en ? `${e.ability_cn} / ${e.ability_en}` : (e.ability_cn || e.ability_en || "-");
+  }
+  if (dim === "perk") {
+    return e.perk_cn && e.perk_en ? `${e.perk_cn} / ${e.perk_en}` : (e.perk_cn || e.perk_en || "-");
+  }
+  if (dim === "hero_attr") return ATTR_LABEL[e.subject] || e.subject || "其他";
+  return "其他改动";
+}
+
 async function initHero() {
   const slug = new URLSearchParams(location.search).get("slug");
-  if (!slug) { location.href = "heroes.html"; return; }
+  if (!slug) { location.href = "entries.html"; return; }
   let hero;
   try {
     hero = await fetchJSON(`data/heroes/${encodeURIComponent(slug)}.json`);
@@ -143,22 +203,9 @@ async function initHero() {
   const values = hero.values || {};
   const groups = new Map(); // key -> {dim, title, entries}
   for (const e of timeline) {
+    const key = entryKey(e);
     const dim = e.dimension || (e.kind === "perk" ? "perk" : "other");
-    let key, title;
-    if (dim === "weapon" || dim === "ability") {
-      key = `${dim}::${e.ability_slug || e.ability_en || e.ability_cn}`;
-      title = e.ability_cn && e.ability_en ? `${e.ability_cn} / ${e.ability_en}` : (e.ability_cn || e.ability_en || "-");
-    } else if (dim === "perk") {
-      key = `perk::${e.perk_slug || e.perk_cn || e.perk_en}`;
-      title = e.perk_cn && e.perk_en ? `${e.perk_cn} / ${e.perk_en}` : (e.perk_cn || e.perk_en || "-");
-    } else if (dim === "hero_attr") {
-      key = `attr::${e.subject || e.metric || "other"}`;
-      title = ATTR_LABEL[e.subject] || e.subject || "其他";
-    } else {
-      key = "other";
-      title = "其他改动";
-    }
-    if (!groups.has(key)) groups.set(key, { dim, title, entries: [] });
+    if (!groups.has(key)) groups.set(key, { dim, title: entryTitle(e), entries: [] });
     groups.get(key).entries.push(e);
   }
 
@@ -201,17 +248,25 @@ function valueChips(values, entry) {
   return chips.length ? `<span class="values-wrap">${chips.join(" ")}</span>` : "";
 }
 
-function entryNode(e) {
+function entryNode(e, opts = {}) {
   const div = document.createElement("div");
   div.className = "entry";
   const head = document.createElement("div");
   head.className = "head";
+  const patchLink = opts.patchHref && e.patch
+    ? `<a class="patch-link" href="${esc(opts.patchHref)}">${e.patch_title ? esc(e.patch_title) : esc(e.patch)}</a>`
+    : `<span class="patch-link">${e.patch_title ? esc(e.patch_title) : esc(e.patch)}</span>`;
+  const edits = opts.edits || [];
+  const editBadge = edits.length
+    ? `<span class="badge edited" title="${esc(edits.map((x) => (x.ts || "").slice(0, 16) + (x.title ? " · " + x.title : "")).join("；"))}">官方事后编辑</span>`
+    : "";
   head.innerHTML = `
     <span class="badge ${esc(e.site)}">${SITE_LABEL[e.site]}</span>
     <span class="badge kind">${KIND_LABEL[e.kind]}</span>
     ${e.subject ? `<span class="badge attr">${ATTR_LABEL[e.subject] || e.subject}</span>` : ""}
+    ${editBadge}
     <span>${esc(e.date)}</span>
-    <span class="patch-link">${e.patch_title ? esc(e.patch_title) : esc(e.patch)}</span>`;
+    ${patchLink}`;
   div.appendChild(head);
 
   const text = document.createElement("div");
@@ -267,6 +322,126 @@ function entryNode(e) {
   return div;
 }
 
+/* ---------- entry detail (entry.html) ---------- */
+
+function valueList(values, entry) {
+  const prefix = entry.kind === "perk" ? `perk:${entry.perk_slug}:`
+    : entry.dimension === "hero_attr" ? `attr:${entry.subject || "other"}:`
+    : `${entry.ability_slug}:`;
+  const rows = [];
+  for (const [key, points] of Object.entries(values)) {
+    if (!key.startsWith(prefix)) continue;
+    const metric = key.slice(prefix.length);
+    const arrow = points.map((p) => fmtNum(p.value)).join(" → ");
+    rows.push(`<div class="value-row">${esc(metric || "数值")}：<span class="num">${esc(arrow)}</span></div>`);
+  }
+  return rows.length ? `<div class="values-list">${rows.join("")}</div>` : "";
+}
+
+async function initEntry() {
+  const params = new URLSearchParams(location.search);
+  const slug = params.get("hero");
+  const key = params.get("key");
+  if (!slug || !key) { location.href = "entries.html"; return; }
+
+  let hero;
+  try {
+    hero = await fetchJSON(`data/heroes/${encodeURIComponent(slug)}.json`);
+  } catch {
+    document.getElementById("entry-name").textContent = "未找到该词条";
+    return;
+  }
+  let edits = { edits: {} };
+  let patches = { patches: [] };
+  try {
+    [edits, patches] = await Promise.all([
+      fetchJSON("data/official_edits.json"),
+      fetchJSON("data/patches_index.json"),
+    ]);
+  } catch { /* auxiliary data missing: degrade to no badges / no patch links */ }
+  const editsByPatch = edits.edits || {};
+  const patchLinks = {};
+  for (const p of patches.patches || []) {
+    if (p.patch_id_en) patchLinks[p.patch_id_en] = `patch.html?id=${encodeURIComponent(p.id)}&lang=en`;
+    if (p.patch_id_cn) patchLinks[p.patch_id_cn] = `patch.html?id=${encodeURIComponent(p.id)}&lang=cn`;
+  }
+
+  const timeline = hero.timeline || [];
+  const heroName = `${hero.names.cn || ""}${hero.names.cn && hero.names.en ? " / " : ""}${hero.names.en || ""}`.trim();
+  const isHero = key === `hero::${slug}`;
+
+  if (isHero) {
+    const edited = timeline.some((e) => editsByPatch[e.patch]);
+    const dates = timeline.map((e) => e.date).sort();
+    const range = dates[0] !== dates[dates.length - 1]
+      ? `${dates[0]} ~ ${dates[dates.length - 1]}` : dates[0];
+    document.getElementById("entry-name").textContent = heroName || slug;
+    document.getElementById("entry-hero").innerHTML =
+      `<span class="entry-hero-link"><a href="hero.html?slug=${encodeURIComponent(slug)}">${esc(heroName || slug)}</a>（全部词条总览）</span>`;
+    document.getElementById("entry-meta").innerHTML = `
+      <span class="badge dim dim-hero">英雄</span>
+      <span class="badge hero-role">${esc(ROLE_LABEL[hero.role] || hero.role || "")}</span>
+      ${edited ? `<span class="badge edited">官方事后编辑</span>` : ""}
+      <span>${timeline.length} 条更改记录</span>
+      <span>${esc(range)}</span>`;
+    const body = document.getElementById("entry-body");
+    body.textContent = "";
+    let idx;
+    try {
+      idx = await fetchJSON("data/entries_index.json");
+    } catch {
+      document.getElementById("entry-hero").innerHTML += ` · <span class="meta">（词条索引缺失，无法列出全部词条）</span>`;
+      return;
+    }
+    const cards = document.createElement("div");
+    cards.className = "entry-grid hero-entry-grid";
+    for (const e of idx.entries) {
+      if (e.hero_slug === slug && e.dimension !== "hero") cards.appendChild(entryCard(e));
+    }
+    body.appendChild(cards);
+    return;
+  }
+
+  const records = timeline.filter((e) => key === `${slug}::${entryKey(e)}`);
+  if (!records.length) {
+    document.getElementById("entry-name").textContent = "未找到该词条";
+    return;
+  }
+
+  const dim = records[0].dimension || (records[0].kind === "perk" ? "perk" : "other");
+  document.getElementById("entry-name").textContent = entryTitle(records[0]);
+  document.getElementById("entry-hero").innerHTML =
+    `<span class="entry-hero-link"><a href="hero.html?slug=${encodeURIComponent(slug)}">${esc(heroName || slug)}</a>（全部词条）</span>`;
+
+  const edited = records.some((e) => editsByPatch[e.patch]);
+  const dates = records.map((e) => e.date).sort();
+  const range = dates[0] !== dates[dates.length - 1]
+    ? `${dates[0]} ~ ${dates[dates.length - 1]}` : dates[0];
+  document.getElementById("entry-meta").innerHTML = `
+    <span class="badge dim dim-${esc(dim)}">${DIM_LABEL[dim] || dim}</span>
+    <span class="badge kind">${KIND_LABEL[records[0].kind] || ""}</span>
+    ${edited ? `<span class="badge edited">官方事后编辑</span>` : ""}
+    <span>${records.length} 条更改记录</span>
+    <span>${esc(range)}</span>`;
+
+  const body = document.getElementById("entry-body");
+  body.innerHTML = valueList(hero.values || {}, records[0]);
+  const group = document.createElement("div");
+  group.className = "timeline-group";
+  const head = document.createElement("h2");
+  head.textContent = "更改记录";
+  group.appendChild(head);
+  const list = document.createElement("div");
+  for (const e of records) {
+    list.appendChild(entryNode(e, {
+      patchHref: patchLinks[e.patch] || "",
+      edits: editsByPatch[e.patch] || [],
+    }));
+  }
+  group.appendChild(list);
+  body.appendChild(group);
+}
+
 /* ---------- patch detail (patch.html) ---------- */
 
 async function initPatch() {
@@ -293,6 +468,19 @@ async function initPatch() {
   document.getElementById("patch-date").textContent = meta.date;
   document.getElementById("patch-sites").innerHTML = siteBadges(sites);
   document.getElementById("patch-title").textContent = patch.title;
+
+  // official post-publication edits badge
+  let editsByPatch = {};
+  try {
+    editsByPatch = (await fetchJSON("data/official_edits.json")).edits || {};
+  } catch { /* official_edits.json missing: skip badge */ }
+  const editEvents = (editsByPatch[meta.patch_id_en] || []).concat(editsByPatch[meta.patch_id_cn] || []);
+  if (editEvents.length) {
+    const latest = editEvents.reduce((a, b) => ((b.ts || "") > (a.ts || "") ? b : a));
+    const titles = editEvents.map((x) => (x.title || x.ts || "")).filter(Boolean).join("；");
+    document.getElementById("patch-edits").innerHTML =
+      `<span class="badge edited" title="${esc(titles)}">官方事后编辑 ${editEvents.length} 次${latest.ts ? `（最近 ${esc(latest.ts.slice(0, 16))}）` : ""}</span>`;
+  }
 
   // language switch
   const switcher = document.getElementById("lang-switch");

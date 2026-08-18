@@ -1,5 +1,6 @@
 /* Headless smoke test: run the site's init functions against real data with a
- * minimal DOM shim, asserting rendered structure (grouping, patch counts). */
+ * minimal DOM shim, asserting rendered structure (grouping, patch counts,
+ * entry search, entry detail, official-edit badges). */
 const fs = require("fs");
 const path = require("path");
 
@@ -18,6 +19,7 @@ function makeEl(tag) {
     querySelector() { return makeEl("div"); },
     querySelectorAll() { return []; },
     addEventListener() {},
+    classList: { toggle() {} },
   };
 }
 const elements = {};
@@ -30,6 +32,11 @@ const document = {
   querySelectorAll: () => [],
 };
 
+function findHtml(el, re) {
+  if (re.test(el.innerHTML || "")) return true;
+  return el.children.some((c) => findHtml(c, re));
+}
+
 async function fetchJSON(requestPath) {
   const url = new URL(requestPath, "http://local");
   return JSON.parse(fs.readFileSync(path.join(ROOT, url.pathname), "utf-8"));
@@ -37,9 +44,10 @@ async function fetchJSON(requestPath) {
 const fetch = async (p) => ({ ok: true, json: async () => fetchJSON(p) });
 const location = { search: "", href: "" };
 
-const run = new Function("document", "location", "fetch", "console", "URL", appJs + `
+const run = new Function("document", "location", "fetch", "console", "URL", "findHtml", appJs + `
 ;(async () => {
   const results = {};
+  const fail = [];
   try {
     await initIndex();
     let patchEntries = 0;
@@ -52,13 +60,34 @@ const run = new Function("document", "location", "fetch", "console", "URL", appJ
     }
     results.indexPatches = patchEntries;
 
-    await initHeroes();
+    await initEntries();
+    results.filterChips = document.getElementById("filters").children.length;
+    results.entryCards = document.getElementById("results").children.length;
+    results.firstCardHref = document.getElementById("results").children[0].href || "";
+
+    location.search = "?hero=soldier-76&key=soldier-76%3A%3Aweapon%3A%3Aheavy-pulse-rifle";
+    await initEntry();
+    results.entryName = document.getElementById("entry-name").textContent;
+    results.entryMeta = document.getElementById("entry-meta").textContent;
+    results.entryHasValues = /value-row/.test(document.getElementById("entry-body").innerHTML || "");
+    results.entryHasPatchLink = findHtml(document.getElementById("entry-body"), /patch\\.html\\?id=/);
+    results.entryHasEditedBadge = findHtml(document.getElementById("entry-body"), /官方事后编辑/);
+
+    location.search = "?hero=ana&key=hero%3A%3Aana";
+    await initEntry();
+    const heroBody = document.getElementById("entry-body");
+    const heroGrid = heroBody.children[heroBody.children.length - 1];
+    results.heroEntryCards = heroGrid.children.length;
 
     location.search = "?id=p-2025-03-18-1&lang=cn";
     await initPatch();
     results.patchTitle = document.getElementById("patch-title").textContent;
     results.langButtons = document.getElementById("lang-switch").children.length;
     results.patchSections = document.getElementById("patch-body").children.length;
+
+    location.search = "?id=en-2016-05-27-1&lang=en";
+    await initPatch();
+    results.patchEdited = document.getElementById("patch-edits").innerHTML || "";
 
     location.search = "?slug=soldier-76";
     await initHero();
@@ -85,10 +114,19 @@ const run = new Function("document", "location", "fetch", "console", "URL", appJ
     results.heroNoHashGroup = groupTitles.every((t) => !/hero-/.test(t));
 
     console.log(JSON.stringify(results, null, 1));
-    const fail = [];
     if (results.indexPatches !== 341) fail.push("indexPatches=" + results.indexPatches);
+    if (results.filterChips !== 6) fail.push("filterChips=" + results.filterChips);
+    if (!results.firstCardHref.includes("entry.html?hero=")) fail.push("firstCardHref=" + results.firstCardHref);
+    if (results.entryCards !== 1580) fail.push("entryCards=" + results.entryCards);
+    if (!/脉冲步枪/.test(results.entryName)) fail.push("entryName=" + results.entryName);
+    if (!/更改记录/.test(results.entryMeta)) fail.push("entryMeta=" + results.entryMeta);
+    if (!results.entryHasValues) fail.push("entry values rows missing");
+    if (!results.entryHasPatchLink) fail.push("entry patch link missing");
+    if (!results.entryHasEditedBadge) fail.push("entry edited badge missing");
+    if (results.heroEntryCards !== 39) fail.push("hero entry cards=" + results.heroEntryCards);
     if (results.langButtons !== 2) fail.push("langButtons=" + results.langButtons);
     if (!results.patchTitle) fail.push("empty patch title");
+    if (!/官方事后编辑/.test(results.patchEdited)) fail.push("patch edited badge=" + results.patchEdited);
     if (!results.heroHasWeapon || !results.heroHasStim) fail.push("weapon/stim group missing");
     if (!results.heroHasAttr) fail.push("hero attribute group missing");
     if (!results.heroHasValues) fail.push("values chip missing");
@@ -102,4 +140,4 @@ const run = new Function("document", "location", "fetch", "console", "URL", appJ
 })();
 `);
 
-run(document, location, fetch, console, URL);
+run(document, location, fetch, console, URL, findHtml);

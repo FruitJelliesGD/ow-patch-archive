@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>守望先锋 · 词条检索</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav class="topnav">
+    <a href="index.html">按时间浏览补丁</a>
+    <a href="entries.html" class="active">词条检索</a>
+  </nav>
+  <h1>词条检索</h1>
+  <p class="sub">搜索技能 / 武器 / 威能 / 英雄属性 / 英雄，每个词条可追溯完整更改记录</p>
+</header>
+<main>
+  <input id="search" type="search" placeholder="搜索词条：中文名 / 英文名 / 别名 / slug / 英雄名（如 生物力场 / Biotic Field / soldier-76）…" autocomplete="off">
+  <div id="filters" class="chips"></div>
+  <p id="result-count" class="meta"></p>
+  <div id="results" class="entry-grid"></div>
+</main>
+<footer>数据来源：<a href="https://overwatch.blizzard.com/en-us/news/patch-notes/">overwatch.blizzard.com</a> · <a href="https://ow.blizzard.cn/news/patch-notes/">ow.blizzard.cn</a></footer>
+<script src="app.js"></script>
+<script>initEntries();</script>
+</body>
+</html>

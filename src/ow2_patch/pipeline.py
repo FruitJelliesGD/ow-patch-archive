@@ -162,6 +162,7 @@ def regenerate_all(data_dir: pathlib.Path) -> None:
     from .ability_map import build_ability_map, write_ability_map
     from .attribution import classify_general, fix_hash_slugs
     from .diff import ensure_hash_schema, load_manifest
+    from .entries import build_entries_index, build_official_edits, write_entries_index, write_official_edits
     from .extract import apply_extraction
     from .normalize import reclassify_patch_dict, split_merged_perk_general
     from .pairing import build_patches_index, pair_patches, patch_meta_from_manifest, write_pair_result
@@ -203,6 +204,10 @@ def regenerate_all(data_dir: pathlib.Path) -> None:
     ensure_hash_schema(data_dir, load_manifest(data_dir))
 
     build_hero_files(data_dir, NameResolver(data_dir / "names.json"))
+
+    edits = build_official_edits(data_dir)
+    write_official_edits(data_dir, edits)
+    write_entries_index(data_dir, build_entries_index(data_dir, edits))
 
 
 def _reenrich_dict(data: dict, resolver: NameResolver) -> None:

@@ -197,3 +197,49 @@ commits: 5ab4fc1..b295273
 - [x] T27: 装饰类 modified 抑制（ChangeEvent.cosmetic + is_cosmetic_diff + notify 过滤 + run.py changed/notify 门控分离 + workflow 提交门控改 changed 标志） — acceptance: cosmetic-only 不产生 Issue/邮件但数据照常提交；名称-only 编辑与 legacy chrome 漂移零事件（v3 中性回归）；单测绿
 - [x] T28: CN 变体漂移检测（pipeline 判定跳过写回 + WARN）+ 恢复 3 条被英文变体污染的 CN 补丁数据（含 archive .md） — acceptance: 中文/英文名 fixture 判定正确；cn 2025-06-25/2025-12-19/2026-06-17 恢复中文存档（json+md）；单测绿
 - [x] T29: 全量回归 + rebuild 幂等 + web smoke + 合并推送（剩余：08-18 每日运行零装饰类误报线上观察） — acceptance: 全量 pytest 绿、rebuild 双跑字节幂等、web smoke 全过、分支已合并推送；线上观察项待 08-18 调度确认
+
+## 迭代五：词条检索站（去除按英雄查找 + 词条级更改追溯）
+
+状态：in-progress（2026-08-19，分支 feat/entry-search）
+
+### 背景与目标（用户驱动）
+
+用户要求"优化 web 检索页面，去除现有的按英雄查找方式，让每一个词条都可以追溯更改记录"。迭代三已把数据层建成词条级（技能/武器/威能/英雄属性，含跨补丁时间线与数值轨迹），但 web 仍以**英雄**为唯一入口（heroes.html 英雄列表 → hero.html 按英雄聚合），词条只能"先选英雄"间接到达，且无法按词条名直接检索。本轮把查询站从"按英雄"重构为"按词条"：**词条（含英雄本身）直接可搜，每个词条独立成页追溯全部更改记录，并标注官方事后编辑**。
+
+### 设计决策（用户确认 2026-08-19）
+
+1. **词条范围**：技能 ability + 武器 weapon + 威能 perk + 英雄属性 hero_attr + 英雄 hero（general/other 不纳入词条索引）。
+2. **更改记录 = 跨补丁改动时间线 + 官方事后编辑标注**：时间线来自 heroes/*.json（已含 patch/date/site/url/before→after/metric）；官方事后编辑取自 changelog.jsonl 的 kind=modified 事件（补丁级），标注在该词条对应记录与补丁详情页。
+3. **英雄入口处置**：删除 heroes.html 列表页；hero.html 保留为"英雄总览"辅助页，从词条页链接可达；顶部导航 = 按时间浏览 + 词条检索。
+
+### 数据变更
+
+- 新增 `data/entries_index.json`：`{updated, entries:[{key, dimension, kind, hero_slug, hero_cn, hero_en, hero_role, name_cn, name_en, slug, variants[], count, first_date, last_date, edited}]}`。key 为**英雄作用域**全局键 `{hero_slug}::{dim}::{slug}`（跨英雄技能如 quick-melee 每英雄一条；hero 词条 key=`hero::{slug}`）；`entry_key()` 在 Python 侧字节级复刻 web/app.js 的分组键逻辑（`weapon|ability → {dim}::{ability_slug}`、`perk → perk::{perk_slug}`、`hero_attr → attr::{subject|metric|other}`）；名字/别名取 ability_map（abilities+perks 的 name_en/name_cn + cn/en_variants），hero_attr 中文名用 ATTR_CN 常量（镜像 JS ATTR_LABEL）；`edited = 任一时间线记录的 patch 命中官方编辑`。规模 1,580 词条（weapon 58 / ability 456 / perk 890 / hero_attr 123 / hero 53），约 0.7MB raw（含 variants）。注意：hero 词条的 count 为该英雄全部时间线记录数（含不纳入词条的 general/other），与详情页口径一致。
+- 新增 `data/official_edits.json`：`{updated, edits:{patch_id:[{ts,date,title,url}(,cosmetic)]}}`，从 changelog.jsonl kind=modified 按 patch_id 分组、ts 升序。规模 110 个被编辑补丁。说明：cosmetic 标志目前无真实记录（0 条），web 端仅展示"被编辑过"，不做装饰类区分——如实标注、留待未来。
+- 生成：新模块 `src/ow2_patch/entries.py`（build_official_edits / build_entries_index / write_*），挂在 `regenerate_all` 的 build_hero_files 之后；纯函数、排序确定，rebuild 双跑字节级幂等（实测 0 diff）。
+
+### 查询站重构
+
+- `entries.html`（词条检索）：单搜索框（匹配 name_cn/name_en/slug/variants/hero 名，小写 contains）+ 维度 chips（全部/武器/技能/威能/英雄属性/英雄）+ 结果计数 + 词条卡片（名称/英雄/维度徽标/记录数/日期区间/edited 徽标），只加载 entries_index.json。
+- `entry.html`（词条详情）：`?hero=&key=`，加载 heroes/<slug>.json + official_edits.json + patches_index.json（英雄词条额外懒加载 entries_index 列出该英雄全部词条卡片）；非英雄词条按 entryKey 过滤时间线逐条渲染（复用 entryNode，补丁标题链接到 patch.html?id=，来源补丁被官方编辑时记录行加"官方事后编辑"徽标）；数值轨迹 valueList 纵向展示。
+- `patch.html`：头部新增"官方事后编辑 N 次（最近 ts）"徽标（official_edits 命中当前补丁）。
+- `app.js`：提取共享 `entryKey`/`entryTitle`；新增 `initEntries`/`initEntry`/`entryCard`/`valueList`；删除 `initHeroes`/`heroCard`；entryNode 增 opts（patchHref/edits）。删除 `web/heroes.html`；index/hero/entries/entry 四页 topnav 统一；hero.html back 链接与缺 slug 重定向改向 entries.html。
+- `style.css`：新增 chips / entry-grid / entry-card / card-meta / badge.edited / badge.hero-role / values-list / value-row。
+
+### 验收结果（已交付）
+
+- pytest 111 全绿（新增 tests/test_entries.py 15 用例：entry_key 与 JS 分组键奇偶（含独立重实现 JS 语义的交叉校验）、official_edits 分组/排序、synthetic 索引、真实数据不变量（key 唯一/英雄作用域/计数/日期）、真实数据奇偶校验（每条可检索时间线记录都能映射到索引 key）、edited 标记、双跑幂等）。
+- rebuild 双跑字节级幂等；entries_index.json（0.7MB）/ official_edits.json（49KB）生成。
+- `node tools/_smoke_web.js` ALL WEB ASSERTIONS OK（341 索引、6 chips、1,580 卡片、entry 详情含 values/补丁链接/编辑徽标、hero 词条 39 卡片、patch 编辑徽标、英雄页 5 维分组回归）。
+- 独立审查（general-2）：approve-with-minor，全部 findings 已处理（initEntry/initEntries 的 fetch 防御性 try/catch、奇偶测试改为独立 JS 语义实现、spec 大小/口径修正、heroes_index 单次读取、smoke 精确断言 39）。
+
+## Tasks（迭代五）
+
+- [x] T1: `entries.py`（entries_index + official_edits）+ regenerate_all 接线 — acceptance: 生成两个新 JSON；pytest 通过；rebuild 双跑字节一致
+- [x] T2: `tests/test_entries.py` — acceptance: 14 用例全绿、全量 110 passed
+- [x] T3: `entries.html` + `initEntries()` + style — acceptance: 冒烟 6 chips、1,580 卡片、entry.html 链接
+- [x] T4: `entry.html` + `initEntry()` + entryKey 提取 + entryNode opts + valueList + patch.html 编辑徽标 — acceptance: 冒烟 soldier-76 词条（values/补丁链接/编辑徽标）+ hero 词条 + patch 徽标；patch.html?id= 旧行为不变
+- [x] T5: 删除 heroes.html + 导航/back/重定向更新 — acceptance: grep heroes.html 无残留（除 spec 历史记录）
+- [x] T6: `_smoke_web.js` 更新并运行 — acceptance: ALL WEB ASSERTIONS OK
+- [x] T7: README + spec 迭代五 — acceptance: 文档与实现一致
+- [x] T8: 全量验证：pytest / rebuild 幂等 / smoke / serve 冒烟 — acceptance: 全部绿、四页面人工冒烟
