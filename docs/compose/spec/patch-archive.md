@@ -200,7 +200,7 @@ commits: 5ab4fc1..b295273
 
 ## 迭代五：词条检索站（去除按英雄查找 + 词条级更改追溯）
 
-状态：in-progress（2026-08-19，分支 feat/entry-search）
+状态：delivered（2026-08-19，分支 feat/entry-search，审查范围 47a268c..24df88a；独立审查 approve-with-minor，无 critical，全部 findings 已修复并经复验收敛。注：沿用项目惯例——单文档追加迭代 section，frontmatter 记录迭代一范围）
 
 ### 背景与目标（用户驱动）
 
@@ -243,3 +243,14 @@ commits: 5ab4fc1..b295273
 - [x] T6: `_smoke_web.js` 更新并运行 — acceptance: ALL WEB ASSERTIONS OK
 - [x] T7: README + spec 迭代五 — acceptance: 文档与实现一致
 - [x] T8: 全量验证：pytest / rebuild 幂等 / smoke / serve 冒烟 — acceptance: 全部绿、四页面人工冒烟
+
+**What was built** — 迭代五把查询站从"按英雄查找"重构为"词条检索"：新增 `entries_index.json`（1,580 个英雄作用域词条：技能 456 / 武器 58 / 威能 890 / 英雄属性 123 / 英雄 53，含中英名、别名、记录数、日期区间、edited 标记）与 `official_edits.json`（110 个被官方事后编辑的补丁，来自 changelog kind=modified），由新模块 `entries.py` 在 `regenerate_all` 中生成。web 删除英雄列表页（heroes.html），顶部导航改为「按时间浏览 + 词条检索」；新增 `entries.html`（单搜索框 + 五维 chips + 词条卡片，只加载一个索引文件）与 `entry.html`（词条详情：按 entryKey 过滤的完整更改时间线、数值轨迹、补丁跳转、逐条「官方事后编辑」徽标）；`patch.html` 头部标注官方事后编辑次数；`hero.html` 保留为英雄总览辅助页。
+
+**Verification** — `pytest -q` 111 passed（新增 test_entries.py 15 用例，含独立重实现 JS 分组键语义的交叉奇偶校验）；`tools/rebuild.py` 双跑字节级幂等（0 diff，仅两个新数据文件入库）；`node tools/_smoke_web.js` ALL WEB ASSERTIONS OK（341 索引、6 chips、1,580 卡片、词条详情 values/补丁链接/编辑徽标、hero 词条 39 卡片、patch 徽标、英雄页 5 维分组回归）；`tools/serve.py --no-serve` + HTTP 冒烟 9 条路径全 200。独立审查（general-2）approve-with-minor：全部 findings 已处理（initEntry/initEntries fetch 防御、奇偶测试独立实现、spec 大小/口径修正、heroes_index 单次读取、smoke 精确断言），复审后复验 111 passed / smoke OK / rebuild 幂等。
+
+**Journey log** —
+1. 全局词条 key 必须英雄作用域：quick-melee/take-aim/wall-climb 是跨英雄技能，`dim::slug` 会撞键——最终 key 为 `{hero_slug}::{dim}::{slug}`，而页内过滤仍用与 app.js 字节一致的 `{dim}::{slug}`（entryKey 过滤 + 全局 key 消歧两层）。
+2. Python/JS 键奇偶校验的陷阱：用同一函数构造索引再断言索引会自我印证；改为在测试里独立重实现 app.js 语义（含 slug-less 的 `dim::` 兜底与 JS 的 kind→dim 推断），逐条真实记录交叉比对才真正兜住漂移。
+3. smoke shim 复用 document.getElementById 的元素引用，连续两次 initEntry 会叠加旧 children——真实浏览器每次全新页面不受影响，但断言必须取最后一次渲染的节点（hero 词条卡片数 2→39 即此坑）。
+4. 词条详情页名称取时间线记录的原始拼写（如"脉冲步枪"）而非 ability_map 规范化名（"重脉冲步枪"）——搜索卡片用规范化名、详情页用出现原文，两者差异是数据本身的原始 vs 规范化差异，属预期。
+5. hero 词条 count 含 general/other 记录（与详情页"全部更改记录"口径一致），非严格"可搜索词条数"——文档需明示避免误解。
