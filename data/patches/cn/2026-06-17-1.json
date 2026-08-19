@@ -1633,7 +1633,7 @@
      "perks": [],
      "abilities": [
       {
-       "name_en": null,
+       "name_en": "Tree of Life",
        "name_cn": "生命之树",
        "slug": "tree-of-life",
        "changes": [
@@ -2630,7 +2630,8 @@
          "by": 15.0,
          "by_pct": null,
          "metric": "的效果",
-         "unit": "pct"
+         "unit": "pct",
+         "raw_metric": "的效果"
         }
        ]
       }
@@ -3758,7 +3759,7 @@
      ],
      "abilities": [
       {
-       "name_en": null,
+       "name_en": "Fortify",
        "name_cn": "强固防御",
        "slug": "fortify",
        "changes": [
@@ -3770,12 +3771,13 @@
          "by": null,
          "by_pct": 90.0,
          "metric": "使产生的热量",
-         "unit": null
+         "unit": null,
+         "raw_metric": "使产生的热量"
         }
        ]
       },
       {
-       "name_en": null,
+       "name_en": "Energy Javelin",
        "name_cn": "能量标枪",
        "slug": "energy-javelin",
        "changes": [
@@ -3787,7 +3789,8 @@
          "by": null,
          "by_pct": null,
          "metric": null,
-         "unit": null
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -4730,7 +4733,7 @@
      ],
      "abilities": [
       {
-       "name_en": null,
+       "name_en": "Tesla Cannon",
        "name_cn": "特斯拉炮",
        "slug": "tesla-cannon",
        "changes": [
@@ -4742,7 +4745,8 @@
          "by": null,
          "by_pct": null,
          "metric": null,
-         "unit": null
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -4990,7 +4994,7 @@
      ],
      "abilities": [
       {
-       "name_en": null,
+       "name_en": "Particle Cannon",
        "name_cn": "粒子炮",
        "slug": "particle-cannon",
        "changes": [
@@ -5002,7 +5006,8 @@
          "by": null,
          "by_pct": 20.0,
          "metric": "主要攻击模式的射程",
-         "unit": null
+         "unit": null,
+         "raw_metric": "主要攻击模式的射程"
         }
        ]
       }
@@ -6385,7 +6390,7 @@
      ],
      "abilities": [
       {
-       "name_en": null,
+       "name_en": "Dragonblade",
        "name_cn": "斩",
        "slug": "dragonblade",
        "changes": [
@@ -6397,7 +6402,8 @@
          "by": 50.0,
          "by_pct": null,
          "metric": "damage",
-         "unit": "pct"
+         "unit": "pct",
+         "raw_metric": "伤害比例"
         },
         {
          "text_en": null,
@@ -6407,7 +6413,8 @@
          "by": null,
          "by_pct": 50.0,
          "metric": "挥击的效果",
-         "unit": null
+         "unit": null,
+         "raw_metric": "挥击的效果"
         },
         {
          "text_en": null,
@@ -6417,7 +6424,8 @@
          "by": null,
          "by_pct": null,
          "metric": null,
-         "unit": null
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -6711,7 +6719,7 @@
      ],
      "abilities": [
       {
-       "name_en": null,
+       "name_en": "Concussion Mine",
        "name_cn": "震荡地雷",
        "slug": "concussion-mine",
        "changes": [
@@ -6723,7 +6731,8 @@
          "by": null,
          "by_pct": null,
          "metric": null,
-         "unit": null
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -7127,7 +7136,7 @@
      ],
      "abilities": [
       {
-       "name_en": null,
+       "name_en": "Endothermic Blaster",
        "name_cn": "冰霜冲击枪",
        "slug": "endothermic-blaster",
        "changes": [
@@ -7139,7 +7148,8 @@
          "by": null,
          "by_pct": null,
          "metric": null,
-         "unit": null
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -7631,7 +7641,7 @@
      ],
      "abilities": [
       {
-       "name_en": null,
+       "name_en": "Wraith Form",
        "name_cn": "幽灵形态",
        "slug": "wraith-form",
        "changes": [
@@ -7643,7 +7653,8 @@
          "by": null,
          "by_pct": null,
          "metric": null,
-         "unit": null
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": null,
@@ -7653,7 +7664,8 @@
          "by": null,
          "by_pct": null,
          "metric": null,
-         "unit": null
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -8131,7 +8143,7 @@
      ],
      "abilities": [
       {
-       "name_en": null,
+       "name_en": "Power Slide",
        "name_cn": "机动滑铲",
        "slug": "power-slide",
        "changes": [
@@ -8143,7 +8155,8 @@
          "by": null,
          "by_pct": 50.0,
          "metric": "弹道尺寸",
-         "unit": null
+         "unit": null,
+         "raw_metric": "弹道尺寸"
         }
        ]
       }
@@ -8577,7 +8590,8 @@
          "by": -1.0,
          "by_pct": null,
          "metric": "damage",
-         "unit": "hp"
+         "unit": "hp",
+         "raw_metric": "基础伤害"
         },
         {
          "text_en": null,
@@ -8587,12 +8601,13 @@
          "by": null,
          "by_pct": 1.0,
          "metric": "的移动速度和生命汲取各",
-         "unit": null
+         "unit": null,
+         "raw_metric": "的移动速度和生命汲取各"
         }
        ]
       },
       {
-       "name_en": null,
+       "name_en": "Tactical Visor",
        "name_cn": "战术目镜",
        "slug": "tactical-visor",
        "changes": [
@@ -8604,7 +8619,8 @@
          "by": null,
          "by_pct": 35.0,
          "metric": "暴击伤害",
-         "unit": null
+         "unit": null,
+         "raw_metric": "暴击伤害"
         }
        ]
       }
@@ -8816,7 +8832,7 @@
      ],
      "abilities": [
       {
-       "name_en": null,
+       "name_en": "Overload",
        "name_cn": "热力过载",
        "slug": "overload",
        "changes": [
@@ -8828,7 +8844,8 @@
          "by": -2.0,
          "by_pct": null,
          "metric": "cooldown",
-         "unit": "pct"
+         "unit": "pct",
+         "raw_metric": "冷却时间缩减"
         }
        ]
       },
@@ -8845,7 +8862,8 @@
          "by": null,
          "by_pct": null,
          "metric": null,
-         "unit": null
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -9201,7 +9219,7 @@
      ],
      "abilities": [
       {
-       "name_en": null,
+       "name_en": "Pulse Pistols",
        "name_cn": "脉冲双枪",
        "slug": "pulse-pistols",
        "changes": [
@@ -9213,12 +9231,13 @@
          "by": -0.5,
          "by_pct": null,
          "metric": "damage",
-         "unit": "hp"
+         "unit": "hp",
+         "raw_metric": "基础伤害"
         }
        ]
       },
       {
-       "name_en": null,
+       "name_en": "Blink",
        "name_cn": "闪现",
        "slug": "blink",
        "changes": [
@@ -9230,12 +9249,13 @@
          "by": null,
          "by_pct": null,
          "metric": null,
-         "unit": null
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
       {
-       "name_en": null,
+       "name_en": "Recall",
        "name_cn": "闪回",
        "slug": "recall",
        "changes": [
@@ -9247,7 +9267,8 @@
          "by": null,
          "by_pct": null,
          "metric": null,
-         "unit": null
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -9645,7 +9666,7 @@
      ],
      "abilities": [
       {
-       "name_en": null,
+       "name_en": "Soaring Slice",
        "name_cn": "飞空斩击",
        "slug": "soaring-slice",
        "changes": [
@@ -9657,7 +9678,8 @@
          "by": null,
          "by_pct": null,
          "metric": null,
-         "unit": null
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -10154,7 +10176,7 @@
      ],
      "abilities": [
       {
-       "name_en": null,
+       "name_en": "Sleep Dart",
        "name_cn": "麻醉镖",
        "slug": "sleep-dart",
        "changes": [
@@ -10166,7 +10188,8 @@
          "by": null,
          "by_pct": null,
          "metric": null,
-         "unit": null
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -10892,7 +10915,7 @@
      ],
      "abilities": [
       {
-       "name_en": null,
+       "name_en": "Hyper Ring",
        "name_cn": "超能环域",
        "slug": "hyper-ring",
        "changes": [
@@ -10904,7 +10927,8 @@
          "by": null,
          "by_pct": null,
          "metric": null,
-         "unit": null
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": null,
@@ -10914,7 +10938,8 @@
          "by": null,
          "by_pct": null,
          "metric": null,
-         "unit": null
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -11366,7 +11391,7 @@
      ],
      "abilities": [
       {
-       "name_en": null,
+       "name_en": "Kunai",
        "name_cn": "锥",
        "slug": "kunai",
        "changes": [
@@ -11378,7 +11403,8 @@
          "by": null,
          "by_pct": null,
          "metric": null,
-         "unit": null
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -11986,7 +12012,7 @@
      ],
      "abilities": [
       {
-       "name_en": null,
+       "name_en": "Wall Ride",
        "name_cn": "滑墙",
        "slug": "wall-ride",
        "changes": [
@@ -11998,7 +12024,8 @@
          "by": null,
          "by_pct": 25.0,
          "metric": "使其击退效果",
-         "unit": null
+         "unit": null,
+         "raw_metric": "使其击退效果"
         }
        ]
       }
@@ -12502,7 +12529,7 @@
      ],
      "abilities": [
       {
-       "name_en": null,
+       "name_en": "Flash Heal",
        "name_cn": "快速治疗",
        "slug": "flash-heal",
        "changes": [
@@ -12514,7 +12541,8 @@
          "by": null,
          "by_pct": null,
          "metric": null,
-         "unit": null
+         "unit": null,
+         "raw_metric": null
         },
         {
          "text_en": null,
@@ -12524,12 +12552,13 @@
          "by": null,
          "by_pct": null,
          "metric": null,
-         "unit": null
+         "unit": null,
+         "raw_metric": null
         }
        ]
       },
       {
-       "name_en": null,
+       "name_en": "Valkyrie",
        "name_cn": "女武神",
        "slug": "valkyrie",
        "changes": [
@@ -12541,7 +12570,8 @@
          "by": null,
          "by_pct": null,
          "metric": null,
-         "unit": null
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
@@ -13169,7 +13199,7 @@
      ],
      "abilities": [
       {
-       "name_en": null,
+       "name_en": "Biotic Orb",
        "name_cn": "生化之球",
        "slug": "biotic-orb",
        "changes": [
@@ -13181,7 +13211,8 @@
          "by": -10.0,
          "by_pct": null,
          "metric": "每秒伤害",
-         "unit": "hp"
+         "unit": "hp",
+         "raw_metric": "每秒伤害"
         },
         {
          "text_en": null,
@@ -13191,7 +13222,8 @@
          "by": -10.0,
          "by_pct": null,
          "metric": "每秒治疗量",
-         "unit": "hp"
+         "unit": "hp",
+         "raw_metric": "每秒治疗量"
         },
         {
          "text_en": null,
@@ -13201,7 +13233,8 @@
          "by": -50.0,
          "by_pct": null,
          "metric": "的最大伤害量",
-         "unit": "hp"
+         "unit": "hp",
+         "raw_metric": "的最大伤害量"
         }
        ]
       }
@@ -13557,7 +13590,7 @@
      ],
      "abilities": [
       {
-       "name_en": null,
+       "name_en": "Orb of Destruction",
        "name_cn": "灭",
        "slug": "orb-of-destruction",
        "changes": [
@@ -13569,7 +13602,8 @@
          "by": null,
          "by_pct": null,
          "metric": null,
-         "unit": null
+         "unit": null,
+         "raw_metric": null
         }
        ]
       }
