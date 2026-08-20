@@ -70,13 +70,60 @@ def test_cn_2026_08_patch_ids_and_names():
     assert c2.metric == "damage"
 
 
-def test_legacy_2016_degrades_to_raw_text():
+def test_legacy_2016_parses_structurally():
+    """OW1-era pages (no PatchNotes-section divs) parse into sections instead
+    of degrading to a raw_text blob."""
     patches = load("en_2016_05.html", "en")
     assert len(patches) == 1
     p = patches[0]
     assert p.date == "2016-05-27"
-    assert p.sections == []
-    assert p.raw_text and "ForceFMA" in p.raw_text
+    assert p.raw_text is None
+    assert [s.title for s in p.sections] == ["GENERAL:"]
+    sec = p.sections[0]
+    assert sec.type == "generic_update"
+    assert "ForceFMA" in sec.description
+
+
+def test_legacy_2016_07_heroes_parse_structurally():
+    """A hero-bearing legacy patch yields hero blocks with abilities, general
+    lines and dev notes — the same shape modern patches have."""
+    patches = load("en_2016_07_19.html", "en")
+    p = patches[0]
+    assert p.raw_text is None
+    sec = next(s for s in p.sections if s.type == "hero_update")
+    assert sec.title == "HERO BALANCE UPDATES"
+    by_name = {h.name_en: h for h in sec.heroes}
+    assert set(by_name) >= {"Bastion", "D.Va", "McCree", "Zenyatta"}
+
+    dva = by_name["D.Va"]
+    assert [a.name_en for a in dva.abilities] == ["Defense Matrix", "Self-Destruct"]
+    dm = dva.abilities[0]
+    assert len(dm.changes) == 5  # sub-heading lines flatten into the ability
+    assert dm.changes[0].text_en == "Cooldown decreased from 10 seconds to 1 second"
+    assert dva.dev_note and dva.dev_note.startswith("D.Va isn't being selected")
+
+    zen = by_name["Zenyatta"]
+    assert any("Base shields increased by 50" in g for g in zen.general)
+    assert [a.name_en for a in zen.abilities] == ["Orb of Discord and Orb of Harmony", "Transcendence"]
+
+    mccree = by_name["McCree"]
+    assert mccree.dev_note and "range" in mccree.dev_note
+
+    # PATCH FEATURES "New Hero: Ana" becomes a generic block with its intro
+    feat = next(s for s in p.sections if s.title == "PATCH FEATURES")
+    assert feat.blocks[0].title == "New Hero: Ana (Support)"
+    assert "After being out of the fight" in feat.blocks[0].body
+
+
+def test_legacy_2019_plain_p_abilities():
+    """2019-era pages name abilities in plain <p> before their <ul>."""
+    patches = load("en_2019_10_15.html", "en")
+    p = patches[0]
+    sec = next(s for s in p.sections if s.type == "hero_update")
+    d = next(h for h in sec.heroes if h.name_en == "D.Va")
+    assert [a.name_en for a in d.abilities] == ["Defense Matrix"]
+    assert len(d.abilities[0].changes) == 2
+    assert d.dev_note and d.dev_note.startswith("This change will allow D.Va")
 
 
 def test_same_day_multiple_patches_get_seq():
@@ -176,22 +223,6 @@ def test_cn_hero_and_ability_icons_captured():
     hero = next(h for s in patches[0].sections for h in s.heroes)
     assert hero.icon and "netease" in hero.icon
     assert hero.abilities and "netease" in hero.abilities[0].icon
-
-
-def test_legacy_raw_text_preserves_line_structure():
-    patches = load("en_2016_05.html", "en")
-    rt = patches[0].raw_text
-    assert rt and "\n\n" in rt  # paragraphs separated by blank lines
-    assert "\n- " in rt  # list items keep their "- " markers
-
-
-def test_legacy_raw_text_keeps_inline_fragment_spacing():
-    """Adjacent inline nodes must not lose their separating space, or the
-    boilerplate chrome phrases ("Bug Report forum") fail to match at hash time."""
-    patches = load("en_2016_05.html", "en")
-    rt = patches[0].raw_text
-    assert "Bug Report forum" in rt
-    assert "Bug Reportforum" not in rt
 
 
 def test_inline_text_boundaries():

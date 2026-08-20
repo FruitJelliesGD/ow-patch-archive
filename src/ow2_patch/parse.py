@@ -4,7 +4,9 @@ The NetEase (CN) pages contain unclosed <div> tags, which makes tree-based patch
 discovery unreliable. We therefore split the HTML *textually* at patch/section opening
 tags, then parse each slice independently — cross-boundary contamination is impossible
 regardless of malformed nesting. Legacy pages (OW1 era) without the modern section
-structure degrade to a single raw_text blob so content is never lost.
+structure are parsed structurally (headings + hero markers + nested lists) so they
+render like modern patches; pages that yield no structure degrade to a raw_text blob
+so content is never lost.
 """
 
 from __future__ import annotations
@@ -14,6 +16,7 @@ import re
 from bs4 import BeautifulSoup, NavigableString, Tag
 
 from .model import AbilityUpdate, Change, GenericBlock, HeroUpdate, Patch, Perk, Section
+from .names import NameResolver
 
 ROLE_MAP = {
     "Tank": "tank",
@@ -33,11 +36,12 @@ _PATCH_SPLIT_RE = re.compile(r'(?=<div\s+class="(?:[^"]*\s)?PatchNotes-patch(?:\
 _SECTION_SPLIT_RE = re.compile(r'(?=<div\s+class="(?:[^"]*\s)?PatchNotes-section(?:\s|"))')
 
 
-def parse_patch_notes(html: str, site: str, url: str = "") -> list[Patch]:
+def parse_patch_notes(html: str, site: str, url: str = "",
+                      resolver: NameResolver | None = None) -> list[Patch]:
     """Parse all patches contained in one month page."""
     patches: list[Patch] = []
     for chunk in _PATCH_SPLIT_RE.split(html):
-        patch = _parse_patch_chunk(chunk, site, url)
+        patch = _parse_patch_chunk(chunk, site, url, resolver=resolver)
         if patch:
             patches.append(patch)
     # seq within same date
@@ -49,7 +53,8 @@ def parse_patch_notes(html: str, site: str, url: str = "") -> list[Patch]:
     return patches
 
 
-def _parse_patch_chunk(chunk: str, site: str, url: str) -> Patch | None:
+def _parse_patch_chunk(chunk: str, site: str, url: str,
+                       resolver: NameResolver | None = None) -> Patch | None:
     if "PatchNotes-patch" not in chunk:
         return None
     soup = BeautifulSoup(chunk, "lxml")
@@ -64,6 +69,12 @@ def _parse_patch_chunk(chunk: str, site: str, url: str) -> Patch | None:
 
     sections = _split_sections(chunk)
     if not sections:
+        legacy = _parse_legacy_chunk(soup, site, resolver)
+        if legacy:
+            legacy.url = url
+            legacy.title = title
+            legacy.date = date
+            return legacy
         # drop site chrome (Top-of-post buttons, pagination) from the legacy fallback
         for el in soup.select(".PatchNotesTop, .PatchNotesPagination"):
             el.decompose()
@@ -380,3 +391,226 @@ def _icon(el: Tag | None, selector: str) -> str | None:
 
 def _is_dev(el: Tag) -> bool:
     return "dev" in el.get("class", [])
+
+
+# ---------------------------------------------------------------------------
+# Legacy (OW1-era) structural parsing
+# ---------------------------------------------------------------------------
+
+_DEV_NOTE_RE = re.compile(r"^Developer (?:Comments?|Notes?):?\s*", re.I)
+
+# static site boilerplate that OW1 pages repeat verbatim on every patch; it is
+# chrome, not patch content, so it is dropped from structured sections (the
+# modern parser never sees these paragraphs)
+_LEGACY_BOILERPLATE = (
+    "A new patch is now live.",
+    "Read below to learn about the latest changes.",
+    "To share your feedback, please post in the General Discussion forum.",
+    "Please note that some changes may not be documented or described in full detail.",
+)
+
+
+def _is_boilerplate(text: str) -> bool:
+    return any(text.startswith(phrase) for phrase in _LEGACY_BOILERPLATE)
+
+
+def _dev_note(text: str) -> str | None:
+    """Developer-comment paragraph text, or None when not one.
+
+    Legacy pages use two shapes: "<strong><em>Developer Comments:</em></strong>
+    <em>…</em>" and a plain "<em>Developer Comment: …</em>".
+    """
+    m = _DEV_NOTE_RE.match(text)
+    if not m:
+        return None
+    return text[m.end():].strip() or None
+
+
+def _lead_strong(p: Tag) -> str | None:
+    """Text of a paragraph whose FIRST inline child is a <strong>/<b> marker
+    (the strong may wrap a colored <span>/<font>, or be wrapped by one).
+
+    Legacy hero/category markers are "<p><strong>Name</strong></p>"; plain
+    paragraphs and dev notes (em after the strong) are excluded.
+    """
+    for child in p.children:
+        if isinstance(child, NavigableString):
+            if child.strip():
+                return None  # real text before any strong: not a marker
+            continue
+        if isinstance(child, Tag):
+            if child.name in ("strong", "b"):
+                return _normalize_inline(child.get_text(" ", strip=True)) or None
+            if child.name in ("font", "span"):
+                strong = child.find(["strong", "b"])
+                if strong is not None:
+                    return _normalize_inline(strong.get_text(" ", strip=True)) or None
+            return None
+    return None
+
+
+def _legacy_content_elements(el) -> list[Tag]:
+    """Flatten unclassed container divs so the content (h1/p/h2/ul) is walked
+    directly; classed chrome divs (anchor/labels/Top) stay as markers to skip."""
+    out: list[Tag] = []
+    for child in el.children:
+        if not isinstance(child, Tag):
+            continue
+        if child.name == "div" and not child.get("class"):
+            out.extend(_legacy_content_elements(child))
+        else:
+            out.append(child)
+    return out
+
+
+def _parse_legacy_chunk(soup: BeautifulSoup, site: str,
+                        resolver: NameResolver | None) -> Patch | None:
+    """Structurally parse an OW1-era patch into modern sections/heroes/blocks.
+
+    Returns None when the page has no usable structure (caller falls back to
+    the raw_text blob). The hero table decides whether a <strong> marker is a
+    hero block ("Ana") or a category block ("Heroes", "New Hero: Ana").
+    """
+    if resolver is None:
+        resolver = NameResolver()
+    wrapper = soup.select_one(".PatchNotes-patch")
+    if wrapper is None:
+        return None
+    for el in soup.select(".PatchNotesTop, .PatchNotesPagination"):
+        el.decompose()
+
+    sections: list[Section] = []
+    sec: Section | None = None
+    hero: HeroUpdate | None = None
+    block: GenericBlock | None = None
+    block_paras: list[str] = []
+    pending_ability: AbilityUpdate | None = None
+    seen_title = False
+    for el in _legacy_content_elements(wrapper):
+        if not isinstance(el, Tag):
+            continue
+        if el.name == "div" and el.get("class") and (
+                {"anchor", "PatchNotes-labels", "PatchNotesTop"} & set(el.get("class", []))):
+            continue
+        if el.name in ("h1", "h2", "h3", "h4"):
+            text = _text(el)
+            if not text:
+                continue
+            if not seen_title:
+                seen_title = True  # first heading is the patch title (already parsed)
+                continue
+            sec = Section(title=text)
+            hero = block = None
+            block_paras = []
+            pending_ability = None
+            sections.append(sec)
+            continue
+        if el.name == "p":
+            text = _text(el)
+            if not text or _is_boilerplate(text):
+                continue
+            dev = _dev_note(text)
+            if dev is not None:
+                if hero is not None:
+                    hero.dev_note = dev
+                elif block is not None:
+                    block.dev = dev
+                continue
+            lead = _lead_strong(el)
+            if lead is not None:
+                if sec is None:
+                    sec = Section(title="")
+                    sections.append(sec)
+                if resolver.is_known_hero(lead, "en"):
+                    hero = HeroUpdate(name_en=lead)
+                    block = None
+                    block_paras = []
+                    pending_ability = None
+                    sec.heroes.append(hero)
+                else:
+                    # category marker ("Heroes", "General") or featured block
+                    block = GenericBlock(title=lead or None)
+                    hero = None
+                    block_paras = []
+                    pending_ability = None
+                    rest = text[len(lead):].strip()
+                    if rest:  # e.g. "New Hero: Ana (Support)" followed by its intro
+                        block_paras.append(rest)
+                        block.body = rest
+                    sec.blocks.append(block)
+                continue
+            # plain paragraph: ability name (2019 format, followed by its <ul>),
+            # a block's body paragraph, or a section intro
+            if sec is None:
+                sec = Section(title="")
+                sections.append(sec)
+            nxt = el.find_next_sibling()
+            if hero is not None and isinstance(nxt, Tag) and nxt.name == "ul":
+                pending_ability = AbilityUpdate(**{f"name_{site}": text})
+                hero.abilities.append(pending_ability)
+            elif block is not None:
+                block_paras.append(text)
+                block.body = "\n\n".join(block_paras)
+            else:
+                sec.description = "\n\n".join(
+                    [p for p in [sec.description, text] if p])
+            continue
+        if el.name == "ul":
+            if sec is None:
+                sec = Section(title="")
+                sections.append(sec)
+            if pending_ability is not None:
+                _collect_changes(el, pending_ability, site)
+                pending_ability = None
+            elif hero is not None:
+                _parse_hero_list(el, hero, site)
+            elif block is not None:
+                block.body = "\n\n".join(
+                    [p for p in [block.body, _list_lines(el)] if p])
+            else:
+                sec.description = "\n\n".join(
+                    [p for p in [sec.description, _list_lines(el)] if p])
+    if not sections:
+        return None
+    for s in sections:
+        s.type = "hero_update" if s.heroes else "generic_update"
+    return Patch(site=site, sections=sections)
+
+
+def _li_name(li: Tag) -> str | None:
+    """Single-line text of an <li> (nested list excluded), for ability names."""
+    text = _li_text(li)
+    if not text:
+        return None
+    return re.sub(r"\s+", " ", text).strip() or None
+
+
+def _parse_hero_list(ul: Tag, hero: HeroUpdate, site: str) -> None:
+    """Legacy hero list: top-level <li> with a nested <ul> is an ability (its
+    leaf lines become the changes; sub-heading names like "Primary Fire" are
+    dropped, matching the modern _parse_ability); a bare <li> is a general line.
+    """
+    for li in ul.find_all("li", recursive=False):
+        sub = li.find("ul", recursive=False)
+        if sub is not None:
+            ability = AbilityUpdate(**{f"name_{site}": _li_name(li)})
+            _collect_changes(sub, ability, site)
+            hero.abilities.append(ability)
+        else:
+            text = _li_text(li)
+            if text:
+                hero.general.append(text)
+
+
+def _collect_changes(ul: Tag, ability: AbilityUpdate, site: str) -> None:
+    for li in ul.find_all("li", recursive=False):
+        sub = li.find("ul", recursive=False)
+        if sub is not None:
+            _collect_changes(sub, ability, site)
+            continue
+        text = _li_text(li)
+        if not text:
+            continue
+        change = Change(**{f"text_{site}": text})
+        _extract_numbers(change, text, site)
+        ability.changes.append(change)

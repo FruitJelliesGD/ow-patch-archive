@@ -38,23 +38,26 @@ async function main() {
     browser = await chromium.launch();
     const page = await browser.newPage({ viewport: { width: 1280, height: 900 } });
 
-    // legacy page: TOC hidden -> article spans the full grid row
+    // structured legacy page: renders like a modern patch (TOC visible,
+    // two-column, no raw-text blob)
     await page.goto(`http://127.0.0.1:${PORT}/patch.html?id=en-2016-07-19-1`);
-    await page.waitForSelector(".raw-text");
+    await page.waitForSelector(".hero-block");
     const legacy = await page.evaluate(() => {
       const article = document.getElementById("patch-article");
-      const cs = getComputedStyle(article);
+      const toc = document.getElementById("patch-toc");
+      const ar = article.getBoundingClientRect();
+      const tr = toc.getBoundingClientRect();
       return {
-        tocHidden: document.getElementById("patch-toc").hidden,
-        colStart: cs.gridColumnStart,
-        colEnd: cs.gridColumnEnd,
-        width: article.getBoundingClientRect().width,
+        tocVisible: !toc.hidden,
+        articleAfterToc: ar.left >= tr.right - 1,
+        hasRawText: !!document.querySelector(".raw-text"),
+        hasAvatar: !!document.querySelector(".hero-avatar"),
       };
     });
-    check(legacy.tocHidden === true, "legacy: TOC hidden", failures);
-    check(legacy.colStart === "1" && legacy.colEnd === "-1",
-      `legacy: article spans full row (${legacy.colStart} / ${legacy.colEnd})`, failures);
-    check(legacy.width > 500, `legacy: content width ${Math.round(legacy.width)}`, failures);
+    check(legacy.tocVisible, "legacy: TOC visible", failures);
+    check(legacy.articleAfterToc, "legacy: article to the right of the TOC", failures);
+    check(!legacy.hasRawText, "legacy: no raw-text blob (structured)", failures);
+    check(legacy.hasAvatar, "legacy: hero avatar rendered", failures);
 
     // modern page: TOC visible, article in column 2, intro padded 16px
     await page.goto(`http://127.0.0.1:${PORT}/patch.html?id=p-2026-08-11-1`);
@@ -77,6 +80,15 @@ async function main() {
       `modern: article to the right of the TOC (left ${modern.articleLeft})`, failures);
     check(modern.descPaddingLeft === "16px",
       `modern: intro padding-left ${modern.descPaddingLeft}`, failures);
+
+    // a TOC hidden for any other reason must collapse the grid to one column
+    await page.evaluate(() => { document.getElementById("patch-toc").hidden = true; });
+    const collapsed = await page.evaluate(() => {
+      const cs = getComputedStyle(document.getElementById("patch-article"));
+      return { colStart: cs.gridColumnStart, colEnd: cs.gridColumnEnd };
+    });
+    check(collapsed.colStart === "1" && collapsed.colEnd === "-1",
+      `collapsed TOC: article spans full row (${collapsed.colStart} / ${collapsed.colEnd})`, failures);
 
     await browser.close();
   } finally {

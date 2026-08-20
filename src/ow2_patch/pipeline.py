@@ -103,7 +103,7 @@ def run_pipeline(
                 print(f"WARN: fetch failed {site} {year}-{month:02d}: {exc}")
             continue
         result.fetched_months += 1
-        month_patches = parse_patch_notes(page.html, site, url=page.url)
+        month_patches = parse_patch_notes(page.html, site, url=page.url, resolver=resolver)
         if site == "cn" and is_cn_variant_drift(month_patches):
             # ow.blizzard.cn serves an internationalized (English-named) variant
             # to non-CN IPs; the GitHub runner would otherwise re-archive every

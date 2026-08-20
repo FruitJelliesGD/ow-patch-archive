@@ -102,13 +102,16 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
     location.search = "?id=en-2016-05-27-1&lang=en";
     await initPatch();
     results.patchEdited = document.getElementById("patch-edits").innerHTML || "";
-    results.patchHasRawText = findHtml(document.getElementById("patch-article"), /raw-text/);
+    results.legacyStructured = findHtml(document.getElementById("patch-article"), /timeline-group/);
+    results.legacyNoRawText = !findHtml(document.getElementById("patch-article"), /raw-text/);
 
     location.search = "?id=en-2016-07-19-1&lang=en";
     await initPatch();
-    results.legacyHasIcons = findHtml(document.getElementById("patch-article"), /legacy-icon/);
-    results.tocHiddenLegacy = document.getElementById("patch-toc").hidden;
-    results.legacyHasAnaIcon = findHtml(document.getElementById("patch-article"), /assets\\/icons\\/heroes\\/ana\\.png/);
+    const legacyBody = document.getElementById("patch-article");
+    results.legacyHasAvatar = findHtml(legacyBody, /hero-avatar/);
+    results.legacyHasChangeList = findHtml(legacyBody, /change-list/);
+    results.legacyTocVisible = !document.getElementById("patch-toc").hidden;
+    results.legacyBastionIcon = findHtml(legacyBody, /assets\\/icons\\/heroes\\/bastion\\.png/);
 
     location.search = "?slug=soldier-76";
     await initHero();
@@ -138,13 +141,13 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
     if (results.indexPatches !== 342) fail.push("indexPatches=" + results.indexPatches);
     if (results.filterChips !== 6) fail.push("filterChips=" + results.filterChips);
     if (!results.firstCardHref.includes("entry.html?hero=")) fail.push("firstCardHref=" + results.firstCardHref);
-    if (results.entryCards !== 1579) fail.push("entryCards=" + results.entryCards);
+    if (results.entryCards !== 1624) fail.push("entryCards=" + results.entryCards);
     if (!/脉冲步枪/.test(results.entryName)) fail.push("entryName=" + results.entryName);
     if (!/更改记录/.test(results.entryMeta)) fail.push("entryMeta=" + results.entryMeta);
     if (!results.entryHasValues) fail.push("entry values rows missing");
     if (!results.entryHasPatchLink) fail.push("entry patch link missing");
     if (!results.entryHasEditedBadge) fail.push("entry edited badge missing");
-    if (results.heroEntryCards !== 39) fail.push("hero entry cards=" + results.heroEntryCards);
+    if (results.heroEntryCards !== 40) fail.push("hero entry cards=" + results.heroEntryCards);
     if (results.langButtons !== 2) fail.push("langButtons=" + results.langButtons);
     if (!results.patchTitle) fail.push("empty patch title");
     if (!results.patchHasAvatar) fail.push("patch hero avatar missing");
@@ -153,10 +156,11 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
     if (!results.patchHasBold) fail.push("patch bold emphasis missing");
     if (!results.tocChildren || !results.tocHasSec0) fail.push("toc missing entries=" + results.tocChildren);
     if (results.tocHiddenModern) fail.push("modern toc should be visible");
-    if (!results.patchHasRawText) fail.push("legacy raw-text block missing");
-    if (!results.legacyHasIcons) fail.push("legacy icons missing");
-    if (!results.tocHiddenLegacy) fail.push("legacy toc should be hidden");
-    if (!results.legacyHasAnaIcon) fail.push("legacy Ana icon missing");
+    if (!results.legacyStructured || !results.legacyNoRawText) fail.push("legacy page not structured");
+    if (!results.legacyHasAvatar) fail.push("legacy hero avatar missing");
+    if (!results.legacyHasChangeList) fail.push("legacy change-list missing");
+    if (!results.legacyTocVisible) fail.push("legacy toc should be visible");
+    if (!results.legacyBastionIcon) fail.push("legacy Bastion icon missing");
     if (!/官方事后编辑/.test(results.patchEdited)) fail.push("patch edited badge=" + results.patchEdited);
     if (!results.heroHasWeapon || !results.heroHasStim) fail.push("weapon/stim group missing");
     if (!results.heroHasAttr) fail.push("hero attribute group missing");

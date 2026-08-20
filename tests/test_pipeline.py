@@ -128,33 +128,21 @@ def test_pipeline_name_only_edit_is_not_modified(tmp_path):
 
 
 def test_pipeline_legacy_chrome_drift_is_not_modified(tmp_path):
-    """Schema v3: legacy raw_text that differs only in site template chrome
-    must hash equal — the 2016-2020 archive is immune to chrome churn."""
-    from ow2_patch.diff import ensure_hash_schema, patch_hash
-    from ow2_patch.model import Patch, patch_to_dict
+    """Structured legacy patches exclude site chrome by construction: the same
+    page re-fetched with different chrome parses to identical sections, so the
+    hash (and therefore the change detector) never sees template churn."""
+    from ow2_patch.diff import patch_hash
     from ow2_patch.parse import parse_patch_notes
 
-    data_dir = tmp_path / "data"
-    (data_dir / "patches" / "en").mkdir(parents=True)
-    patch = parse_patch_notes(
-        (FIXTURES / "en_2016_05.html").read_text(encoding="utf-8"), "en", url="https://x"
-    )[0]
-    data = patch_to_dict(patch)
-    data["hash"] = "sha256:old"
-    patch_file = data_dir / "patches" / "en" / "2016-05-27-1.json"
-    patch_file.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
-    manifest = {patch.id: {"hash": "sha256:old", "site": "en", "date": data["date"]}}
-    (data_dir / "manifest.json").write_text(json.dumps(manifest), encoding="utf-8")
+    html = (FIXTURES / "en_2016_05.html").read_text(encoding="utf-8")
+    base = parse_patch_notes(html, "en", url="https://x")[0]
 
-    ensure_hash_schema(data_dir, manifest)
-    migrated = json.loads(patch_file.read_text(encoding="utf-8"))["hash"]
-
-    # the same patch re-fetched with chrome leaked into the raw_text (the
-    # 2026-08-16 page layout) must hash identically after cleaning
-    with_chrome = Patch(id="en-2016-05-27-1", site="en", date="2016-05-27", url="https://x",
-                        title=data["title"], seq=1,
-                        raw_text=data["raw_text"] + " Top of post June Patch Notes June")
-    assert patch_hash(with_chrome) == migrated
+    # realistic chrome drift: a Top-of-post button / pagination block added
+    drifted = html.replace(
+        "</div>", '<div class="PatchNotesTop"><blz-button>Top of post</blz-button></div></div>', 1)
+    reparse = parse_patch_notes(drifted, "en", url="https://x")[0]
+    assert reparse.raw_text is None
+    assert patch_hash(reparse) == patch_hash(base)
 
 
 def test_cn_variant_drift_detection():

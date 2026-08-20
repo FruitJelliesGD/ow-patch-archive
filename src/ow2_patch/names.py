@@ -113,6 +113,16 @@ class NameResolver:
             return slugify(name), None, name, None
         return entry["slug"], entry.get("name_en"), entry.get("name_cn"), entry.get("role")
 
+    def is_known_hero(self, name: str, site: str) -> bool:
+        """True only for names in the curated table (aliases included).
+
+        Unlike hero(), unknown names must NOT auto-slug — the legacy parser
+        uses this to tell hero blocks ("Ana") apart from plain category
+        headings ("Heroes", "New Hero: Ana (Support)").
+        """
+        return self._lookup(self.heroes, self._hero_key, self._hero_cn_to_en,
+                            HERO_ALIASES, name, site) is not None
+
     def ability(self, name: str, site: str,
                 hero_slug: str | None = None) -> tuple[str, str | None, str | None]:
         """Resolve an ability display name -> (slug, name_en, name_cn).
