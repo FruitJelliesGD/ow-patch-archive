@@ -191,7 +191,7 @@ def test_inline_text_boundaries():
     from ow2_patch.parse import _inline_text
 
     def inline(html):
-        return _inline_text(BeautifulSoup(html, "lxml").find("p"))
+        return _inline_text(BeautifulSoup(f"<p>{html}</p>", "lxml").find("p"))
 
     assert inline('visit our <a>Bug Report </a>forum.') == "visit our Bug Report forum."
     assert inline("<b>Bold </b>text") == "Bold text"
