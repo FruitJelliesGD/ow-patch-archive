@@ -1,16 +1,22 @@
 ---
 feature: pages-auto-deploy
-status: in-progress
+status: delivered
 updated: 2026-08-20
 branch: feat/pages-auto-deploy
-commits: # filled at delivery
+commits: 372334c..463db44
 ---
 
 # Pages 自动部署:监控数据入库后立即重建网站
 
 ## Report
 
-(交付时填写)
+**What was built** — `pages.yml` 新增 `workflow_run` 触发,监听 `monitor` / `monitor-fast` / `watchdog` 三个监控工作流完成(GITHUB_TOKEN 自动提交不触发 `on: push`,此前站点滞后最长约 18 小时);`deploy` job 以 `github.event.workflow_run.conclusion == 'success'` 过滤——监控失败(无新数据落库)不部署。保留 `push` / 每日 04:23 UTC schedule 兜底 / `workflow_dispatch` 三种既有触发。监控工作流完成并提交数据后,站点在约 30 分钟内自动重建;README 补充"自动重建"说明。
+
+**Verification** — PyYAML `safe_load` 解析通过:triggers = push/schedule/workflow_dispatch/workflow_run,`workflow_run.workflows = [monitor, monitor-fast, watchdog]`、`types = [completed]`,`deploy.if` 为结论过滤表达式。纯配置改动,无代码/测试变更。独立审查(general-3,372334c..463db44):spec 合规全部达标,正确性无缺陷(workflow_run 对 schedule 触发同样生效;结论过滤行为正确;无递归风险;checkout 拉取最新 main 含 bot 数据提交),无 critical/major/minor。合入 main 后的真实验证:workflow_run 触发的 pages 部署由 GitHub API 确认(见交付后操作)。
+
+**Journey log** —
+1. 根因是 GitHub 防递归规则:github-actions[bot] 的 GITHUB_TOKEN 提交不触发 `on: push`;文件原有注释已承认并依赖每日 04:23 UTC 兜底——本次用 `workflow_run`(专为此场景设计)补上"提交后立即重建"。
+2. `workflow_run` 会对无变化的成功运行也触发部署(约 30 分钟一次),公开仓库免费分钟与 Pages 构建限制均远高于实际消耗,作为已知代价写入 spec。
 
 ## [S1] Problem
 
@@ -56,6 +62,6 @@ jobs:
 
 ## Tasks
 
-- [ ] T1: 修改 `pages.yml` — 新增 `workflow_run`(三个监控工作流)+ `deploy` job conclusion 过滤 — acceptance: YAML 语法校验通过;`on.workflow_run.workflows` 含 monitor/monitor-fast/watchdog (covers: S2)
-- [ ] T2: README 补充"自动重建"说明 + 本 spec 文档 — acceptance: README 描述 workflow_run 触发与 ~30 分钟生效;spec 文档结构完整 (covers: S2)
-- [ ] T3: 验证与审查、合并推送 — YAML 校验;独立审查通过;合并 main 并推送;手动 dispatch pages 立即刷新站点;API 确认 workflow_run 触发的部署 (covers: S2; depends: T1, T2)
+- [x] T1: 修改 `pages.yml` — 新增 `workflow_run`(三个监控工作流)+ `deploy` job conclusion 过滤 — acceptance: YAML 语法校验通过;`on.workflow_run.workflows` 含 monitor/monitor-fast/watchdog (covers: S2)
+- [x] T2: README 补充"自动重建"说明 + 本 spec 文档 — acceptance: README 描述 workflow_run 触发与 ~30 分钟生效;spec 文档结构完整 (covers: S2)
+- [x] T3: 验证与审查、合并推送 — YAML 校验;独立审查通过;合并 main 并推送;手动 dispatch pages 立即刷新站点;API 确认 workflow_run 触发的部署 (covers: S2; depends: T1, T2)
