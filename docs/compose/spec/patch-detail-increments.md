@@ -1,14 +1,20 @@
 ---
 feature: patch-detail-increments
-status: designed
+status: delivered
 updated: 2026-08-20
 branch: feat/patch-detail-increments
-commits: # filled at delivery
+commits: c1e5938..6d5fa30
 ---
 
 # 补丁页增量：内联加粗 + 目录侧边栏 + 旧补丁图标
 
 ## Report
+
+**What was built** — 三项补丁页增量：(1) **内联加粗**：解析器 `_inline_raw` 把官方 `<strong>/<b>` 编码为 `**bold**` 标记（嵌套只留外层），web `inlineBold` 在 esc→`<br>` 之后、numberify 之前还原为 `<strong>`；第三次全量 `--force-rewrite` 迁移使 124 个补丁、1351 处加粗进入数据与 Markdown 归档。(2) **目录侧边栏**：渲染时为章节/英雄/卡片赋唯一 id（`sec-`/`hero-`/`blk-` 索引计数），`buildToc` 生成两级粘性目录（`IntersectionObserver` 滚动高亮、空目录隐藏、移动端 900px 断点隐藏），patch 页加宽至 1180px 双栏。(3) **旧补丁图标**：`renderRawText` 在 103 个 OW1 `raw_text` 中按名称匹配注入英雄头像与技能图标（53 英雄 + 5 别名 + 513 技能键，双边界大小写敏感、首处出现、歧义技能按最近英雄消歧、全量 esc 防 XSS，懒加载 heroes_index/ability_map 失败回退纯文本）。顺带修复规划期发现的 smoke 假阳性（`en-2026-08-14-1` 不在索引致断言基于残留 DOM，改用 `p-2026-08-11-1`/`en-2016-07-19-1`）与 initPatch 残留渲染。
+
+**Verification** — `pytest -q` → 151 passed（含 strong 编码边界断言）；`node tools/_smoke_web.js` → ALL WEB ASSERTIONS OK（含 `strong>Choose your path`、TOC 66 条与 `#sec-0`、legacy-icon 与 `ana.png`、legacy TOC hidden）；第三次 force-rewrite → 143 月全抓 0 错误，重扫当月 0 events；rebuild 3 次字节收敛；download_icons → 614 refs / 0 new / 0 缺失，`git diff` 无 icon 字段移除；独立审查两节全过（规格/正确性/一致性），无 critical，6 项非 critical 建议中采纳 2 项（smoke 加粗断言具体化、TOC 空标题跳过）。
+
+**Journey log** — ① `_inline_raw` 只处理子元素的 strong：`_li_text` 逐子调用时 strong 自身作参数不触发分支，需在函数开头补"元素本身是 strong"的包装。② smoke 测试代码位于模板字符串内，正则必须写双反斜杠（`\\/`），单斜杠会被模板转义吃掉导致"Invalid regular expression flags"。③ 加粗断言须匹配实际结构：`**Choose your path through the Battle Pass.**` 的 strong 包裹整句，"Choose your path" 后跟 " through" 而非闭合标签。④ `_text`（get_text 链）与 `_inline_text`（_inline_raw 链）的分工是 `**` 只进富文本的结构性保证。⑤ 迁移必须本机（国内 IP）执行（CN drift 保护），第三次迁移仅 124/397 个补丁变化（其余字节稳定），验证了解析器的确定性。
 
 ## [S1] Problem
 
@@ -55,11 +61,11 @@ commits: # filled at delivery
 
 ## Tasks
 
-- [ ] T13: 特性文档 — acceptance: 本文档含设计与任务（covers: 全部）
-- [ ] T14: 解析器 `_inline_raw` 保留 strong 为 `**` — acceptance: fixture 解析出 `**Hitbox Changes**` 等（covers: D1；depends: T13）
-- [ ] T15: web `inlineBold` + renderRich/renderList 集成 — acceptance: 页面渲染 `<strong>`（covers: D1；depends: T14）
-- [ ] T16: 目录侧栏（id 注入 + buildToc + patch.html + CSS）— acceptance: 现代补丁显示两级目录、锚点跳转、滚动高亮、移动端隐藏（covers: D2）
-- [ ] T17: legacy raw_text 名称匹配注入图标 — acceptance: 旧补丁页显示英雄/技能图标且无 XSS/误配（covers: D3）
-- [ ] T18: 测试（parse 新增断言 + smoke 修 bug 与新断言）— acceptance: pytest 与 smoke 全过（covers: D1 D4）
-- [ ] T19: 第三次全量迁移 + rebuild 收敛 + 全量验证 — acceptance: 迁移后重扫零事件、pytest/smoke 全过（covers: D1）
-- [ ] T20: 独立 review 与规格定稿 — acceptance: review 无 critical，status: delivered（covers: 全部；depends: T19）
+- [x] T13: 特性文档 — acceptance: 本文档含设计与任务（covers: 全部）
+- [x] T14: 解析器 `_inline_raw` 保留 strong 为 `**` — acceptance: fixture 解析出 `**Hitbox Changes**` 等（covers: D1；depends: T13）
+- [x] T15: web `inlineBold` + renderRich/renderList 集成 — acceptance: 页面渲染 `<strong>`（covers: D1；depends: T14）
+- [x] T16: 目录侧栏（id 注入 + buildToc + patch.html + CSS）— acceptance: 现代补丁显示两级目录、锚点跳转、滚动高亮、移动端隐藏（covers: D2）
+- [x] T17: legacy raw_text 名称匹配注入图标 — acceptance: 旧补丁页显示英雄/技能图标且无 XSS/误配（covers: D3）
+- [x] T18: 测试（parse 新增断言 + smoke 修 bug 与新断言）— acceptance: pytest 与 smoke 全过（covers: D1 D4）
+- [x] T19: 第三次全量迁移 + rebuild 收敛 + 全量验证 — acceptance: 迁移后重扫零事件、pytest/smoke 全过（covers: D1）
+- [x] T20: 独立 review 与规格定稿 — acceptance: review 无 critical，status: delivered（covers: 全部；depends: T19）
