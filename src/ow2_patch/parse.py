@@ -401,17 +401,27 @@ _DEV_NOTE_RE = re.compile(r"^Developer (?:Comments?|Notes?):?\s*", re.I)
 
 # static site boilerplate that OW1 pages repeat verbatim on every patch; it is
 # chrome, not patch content, so it is dropped from structured sections (the
-# modern parser never sees these paragraphs)
+# modern parser never sees these paragraphs). Trailing periods are ignored so
+# "…is now live on Windows PC." matches the "…is now live." phrase.
 _LEGACY_BOILERPLATE = (
-    "A new patch is now live.",
-    "Read below to learn about the latest changes.",
-    "To share your feedback, please post in the General Discussion forum.",
-    "Please note that some changes may not be documented or described in full detail.",
+    "A new patch is now live",
+    "Read below to learn about the latest changes",
+    "To share your feedback, please post in the General Discussion forum",
+    "Please note that some changes may not be documented or described in full detail",
 )
 
 
 def _is_boilerplate(text: str) -> bool:
-    return any(text.startswith(phrase) for phrase in _LEGACY_BOILERPLATE)
+    return any(text.rstrip(".").startswith(phrase) for phrase in _LEGACY_BOILERPLATE)
+
+# strong-p/<b> markers that open a new section even though they are not heading
+# elements ("PATCH HIGHLIGHTS" on 2017-01-03). Words that double as category
+# markers inside sections ("General", "Competitive Play") are excluded.
+_LEGACY_SECTION_MARKERS = {"PATCH HIGHLIGHTS", "PATCH INTRODUCTION"}
+
+
+def _is_legacy_section_marker(text: str) -> bool:
+    return text.upper().rstrip(":").strip() in _LEGACY_SECTION_MARKERS
 
 
 def _dev_note(text: str) -> str | None:
@@ -518,6 +528,13 @@ def _parse_legacy_chunk(soup: BeautifulSoup, site: str,
                 continue
             lead = _lead_strong(el)
             if lead is not None:
+                if _is_legacy_section_marker(lead):
+                    sec = Section(title=lead)
+                    hero = block = None
+                    block_paras = []
+                    pending_ability = None
+                    sections.append(sec)
+                    continue
                 if sec is None:
                     sec = Section(title="")
                     sections.append(sec)
@@ -555,18 +572,48 @@ def _parse_legacy_chunk(soup: BeautifulSoup, site: str,
                 sec.description = "\n\n".join(
                     [p for p in [sec.description, text] if p])
             continue
+        if el.name == "b":
+            # 2016-era hero markers are bare <b><a>…</a></b> elements
+            text = _normalize_inline(el.get_text(" ", strip=True))
+            if not text:
+                continue
+            if _is_legacy_section_marker(text):
+                sec = Section(title=text)
+                hero = block = None
+                block_paras = []
+                pending_ability = None
+                sections.append(sec)
+                continue
+            if sec is None:
+                sec = Section(title="")
+                sections.append(sec)
+            if resolver.is_known_hero(text, "en"):
+                hero = HeroUpdate(name_en=text)
+                block = None
+                block_paras = []
+                pending_ability = None
+                sec.heroes.append(hero)
+            else:
+                block = GenericBlock(title=text or None)
+                hero = None
+                block_paras = []
+                pending_ability = None
+                sec.blocks.append(block)
+            continue
         if el.name == "ul":
             if sec is None:
                 sec = Section(title="")
                 sections.append(sec)
             if pending_ability is not None:
-                _collect_changes(el, pending_ability, site)
+                _collect_changes(el, pending_ability, site, resolver)
                 pending_ability = None
             elif hero is not None:
-                _parse_hero_list(el, hero, site)
+                _parse_hero_list(el, hero, site, resolver)
             elif block is not None:
-                block.body = "\n\n".join(
-                    [p for p in [block.body, _list_lines(el)] if p])
+                # merge into block_paras too so a later <p> cannot clobber the
+                # list lines already folded into block.body
+                block_paras.append(_list_lines(el))
+                block.body = "\n\n".join(block_paras)
             else:
                 sec.description = "\n\n".join(
                     [p for p in [sec.description, _list_lines(el)] if p])
@@ -577,38 +624,63 @@ def _parse_legacy_chunk(soup: BeautifulSoup, site: str,
     return Patch(site=site, sections=sections)
 
 
-def _li_name(li: Tag) -> str | None:
-    """Single-line text of an <li> (nested list excluded), for ability names."""
+def _li_flat(li: Tag) -> str:
+    """Single-line text of an <li> (nested list excluded), whitespace folded."""
     text = _li_text(li)
     if not text:
-        return None
-    return re.sub(r"\s+", " ", text).strip() or None
+        return ""
+    return re.sub(r"\s+", " ", text).strip()
 
 
-def _parse_hero_list(ul: Tag, hero: HeroUpdate, site: str) -> None:
-    """Legacy hero list: top-level <li> with a nested <ul> is an ability (its
-    leaf lines become the changes; sub-heading names like "Primary Fire" are
-    dropped, matching the modern _parse_ability); a bare <li> is a general line.
-    """
+def _li_name(li: Tag) -> str | None:
+    """Single-line text of an <li> (nested list excluded), for ability names."""
+    return _li_flat(li) or None
+
+
+def _parse_hero_list(ul: Tag, hero: HeroUpdate, site: str,
+                     resolver: NameResolver) -> None:
+    """Legacy hero list: top-level <li> with nested <ul>s is an ability (its
+    leaf lines become the changes; sub-heading ability names like "Primary
+    Fire" are dropped); a bare <li> is a general line. An li may carry several
+    sibling <ul>s (2017-04-11 Wall Ride), all of which are collected."""
     for li in ul.find_all("li", recursive=False):
-        sub = li.find("ul", recursive=False)
-        if sub is not None:
+        subs = li.find_all("ul", recursive=False)
+        if subs:
             ability = AbilityUpdate(**{f"name_{site}": _li_name(li)})
-            _collect_changes(sub, ability, site)
+            for sub in subs:
+                _collect_changes(sub, ability, site, resolver)
             hero.abilities.append(ability)
         else:
-            text = _li_text(li)
+            text = _li_flat(li)
             if text:
                 hero.general.append(text)
 
 
-def _collect_changes(ul: Tag, ability: AbilityUpdate, site: str) -> None:
+def _is_heading_like(text: str, resolver: NameResolver) -> bool:
+    """Sub-heading ability names ("Primary Fire", "Flashbang") vs real change
+    lines ("Now disables the following abilities:"). Only short name-like
+    fragments that resolve to a known ability are dropped — change lines with
+    their own sub-details must survive."""
+    if len(text) >= 40 or re.search(r"\d", text) or "." in text:
+        return False
+    return resolver.is_known_ability(text, "en")
+
+
+def _collect_changes(ul: Tag, ability: AbilityUpdate, site: str,
+                     resolver: NameResolver) -> None:
     for li in ul.find_all("li", recursive=False):
-        sub = li.find("ul", recursive=False)
-        if sub is not None:
-            _collect_changes(sub, ability, site)
+        subs = li.find_all("ul", recursive=False)
+        text = _li_flat(li)
+        if subs:
+            # the li's own text is a real change line unless it is a known
+            # sub-heading ability name (its sub-details still get collected)
+            if text and not _is_heading_like(text, resolver):
+                change = Change(**{f"text_{site}": text})
+                _extract_numbers(change, text, site)
+                ability.changes.append(change)
+            for sub in subs:
+                _collect_changes(sub, ability, site, resolver)
             continue
-        text = _li_text(li)
         if not text:
             continue
         change = Change(**{f"text_{site}": text})

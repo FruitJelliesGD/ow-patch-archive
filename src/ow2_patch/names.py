@@ -62,9 +62,15 @@ def slugify(text: str) -> str:
 
 def _normalize_key(text: str) -> str:
     """Case- and accent-insensitive key for table lookups (Lúcio -> lucio)."""
+    text = _straighten_quotes(text)
     text = unicodedata.normalize("NFKD", text)
     text = "".join(c for c in text if not unicodedata.combining(c)).lower()
     return text.strip()
+
+
+def _straighten_quotes(text: str) -> str:
+    """Curly/smart quotes to ASCII so 'Widow’s Kiss' matches 'Widow's Kiss'."""
+    return text.replace("’", "'").replace("‘", "'").replace("“", '"').replace("”", '"')
 
 
 def _strip_parenthetical(name: str) -> str:
@@ -123,6 +129,18 @@ class NameResolver:
         return self._lookup(self.heroes, self._hero_key, self._hero_cn_to_en,
                             HERO_ALIASES, name, site) is not None
 
+    def is_known_ability(self, name: str, site: str) -> bool:
+        """True for ability names in the curated table or the data-derived map
+        (no auto-slug). Used by the legacy parser to drop sub-heading ability
+        names like "Primary Fire" while keeping real change lines."""
+        if self._lookup(self.abilities, self._ability_key, self._ability_cn_to_en,
+                        ABILITY_ALIASES, name, site) is not None:
+            return True
+        stripped = _straighten_quotes(name.strip().strip('"“”'))
+        if site == "en":
+            return stripped in self.ability_map.get("by_en", {})
+        return bool(self.ability_map.get("by_cn", {}).get(stripped))
+
     def ability(self, name: str, site: str,
                 hero_slug: str | None = None) -> tuple[str, str | None, str | None]:
         """Resolve an ability display name -> (slug, name_en, name_cn).
@@ -147,7 +165,7 @@ class NameResolver:
     def _map_lookup(self, entries_key: str, by_cn_key: str, by_en_key: str,
                     name: str, site: str, hero_slug: str | None):
         """Consult the data-derived map; falls back to auto slug for unknown names."""
-        stripped = name.strip().strip('"“”')
+        stripped = _straighten_quotes(name.strip().strip('"“”'))
         if site == "en":
             slug = self.ability_map.get(by_en_key, {}).get(stripped)
         else:

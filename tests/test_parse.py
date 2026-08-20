@@ -98,8 +98,11 @@ def test_legacy_2016_07_heroes_parse_structurally():
     dva = by_name["D.Va"]
     assert [a.name_en for a in dva.abilities] == ["Defense Matrix", "Self-Destruct"]
     dm = dva.abilities[0]
-    assert len(dm.changes) == 5  # sub-heading lines flatten into the ability
+    assert len(dm.changes) == 7  # sub-heading names drop, real lines survive
     assert dm.changes[0].text_en == "Cooldown decreased from 10 seconds to 1 second"
+    # li lines that carry their own nested detail must not be lost
+    assert any("A new resource meter has been added" in c.text_en for c in dm.changes)
+    assert any("reclassified as an alternate fire" in c.text_en for c in dm.changes)
     assert dva.dev_note and dva.dev_note.startswith("D.Va isn't being selected")
 
     zen = by_name["Zenyatta"]
@@ -124,6 +127,34 @@ def test_legacy_2019_plain_p_abilities():
     assert [a.name_en for a in d.abilities] == ["Defense Matrix"]
     assert len(d.abilities[0].changes) == 2
     assert d.dev_note and d.dev_note.startswith("This change will allow D.Va")
+
+
+def test_legacy_2016_06_bare_b_hero_markers():
+    """June 2016 pages mark heroes with bare <b><a>…</a></b> elements."""
+    patches = load("en_2016_06_14.html", "en")
+    p = patches[0]
+    sec = next(s for s in p.sections if s.type == "hero_update")
+    by_name = {h.name_en: h for h in sec.heroes}
+    assert set(by_name) >= {"McCree", "Widowmaker"}
+    mccree = by_name["McCree"]
+    assert [a.name_en for a in mccree.abilities] == ["Peacekeeper"]
+    # deep-nested change lines with their own sub-detail survive
+    pk = mccree.abilities[0].changes
+    assert any("Recovery time" in c.text_en for c in pk)
+    assert any("Bullet damage decreased from 70 to 45" in c.text_en for c in pk)
+    assert mccree.dev_note and "performing too well" in mccree.dev_note
+
+
+def test_legacy_block_p_ul_interleaving():
+    """Interleaved <p> paragraphs and <ul> lists inside one block must all
+    survive (a later <p> must not clobber earlier list lines)."""
+    patches = load("en_2019_10_24.html", "en")
+    p = patches[0]
+    rewards = next(b for s in p.sections for b in s.blocks
+                   if b.title and "Warcraft" in b.title)
+    assert "a flurry of new rewards" in rewards.body
+    assert "- " in rewards.body  # list lines still present after later <p>s
+    assert "animated sprays" in rewards.body
 
 
 def test_same_day_multiple_patches_get_seq():
