@@ -5,7 +5,142 @@
  "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2016/07",
  "title": "Overwatch Patch Notes – July 26, 2016",
  "seq": 1,
- "sections": [],
- "raw_text": "Overwatch Patch Notes – July 26, 2016\n\nA new patch is now live. Read below to learn about the latest changes.\n\nTo share your feedback, please post in the General Discussion forum.\n\nFor a list of known issues, visit our Bug Report forum.\n\nFor troubleshooting assistance, visit our Technical Support forum.\n\nHERO BALANCE UPDATES\n\n**Ana**\n\n- Biotic Rifle\n\n  - Rate of fire increased by 20%\n  - Magazine size increased from 8 to 10\n\n**Developer Comments:** While Ana has been very well received, she was showing to be a little bit weaker overall. In addition to helping her feel better to play, these changes should also increase her healing and damage output.\n\n**McCree**\n\n- Peacemaker\n\n  - Primary Fire\n\n    - Damage falloff range decreased by 10 meters\n\n      - Damage falloff amount is unchanged\n      - As a result, even with this change, McCree’s effective range is still higher than it was at launch\n  - Alternate Fire\n\n    - Rate of fire increased by 15%\n  - Flashbang\n\n    - Recovery time (i.e. the amount of time before McCree can fire again) decreased from 0.5 seconds to 0.35 seconds\n\n**Developer Comments:** McCree’s latest range increase helped him quite a bit, but it was a bit too much in the right hands. This change weakens his long range damage somewhat, but still keeps it stronger than it has been in the recent past. The other changes combine to allow him to land more alternate fire shots on targets that he has hit with Flashbang.\n\nBUG FIXES\n\n**Heroes**\n\n- Targets of Ana’s Sleep Dart will no longer instantly recover when damaged (recovery time is now 0.5 seconds)\n\n**User Interface**\n\n- Fixed UI compatibility issues for ATI cards\n- Fixed a bug that would sometimes cause Lúcio, Mei, and other models to only partially render (or disappear)",
- "hash": "sha256:476e59303da346ab2d38b84e323d5bd18f59445b801b719eaf7f28a55e91cbd3"
+ "sections": [
+  {
+   "type": "hero_update",
+   "title": "HERO BALANCE UPDATES",
+   "role": null,
+   "description": null,
+   "heroes": [
+    {
+     "slug": "ana",
+     "name_en": "Ana",
+     "name_cn": "安娜",
+     "role": "support",
+     "icon": null,
+     "dev_note": "While Ana has been very well received, she was showing to be a little bit weaker overall. In addition to helping her feel better to play, these changes should also increase her healing and damage output.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Biotic Rifle",
+       "name_cn": "生物步枪",
+       "slug": "biotic-rifle",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": "Rate of fire increased by 20%",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 20.0,
+         "metric": "rate_of_fire",
+         "raw_metric": "rate of fire",
+         "unit": null
+        },
+        {
+         "text_en": "Magazine size increased from 8 to 10",
+         "text_cn": null,
+         "before": 8.0,
+         "after": 10.0,
+         "by": 2.0,
+         "by_pct": null,
+         "metric": "magazine size",
+         "raw_metric": "magazine size",
+         "unit": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "cassidy",
+     "name_en": "Cassidy",
+     "name_cn": "卡西迪",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "McCree’s latest range increase helped him quite a bit, but it was a bit too much in the right hands. This change weakens his long range damage somewhat, but still keeps it stronger than it has been in the recent past. The other changes combine to allow him to land more alternate fire shots on targets that he has hit with Flashbang.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Peacemaker",
+       "name_cn": null,
+       "slug": "peacemaker",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": "Damage falloff amount is unchanged",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": "As a result, even with this change, McCree’s effective range is still higher than it was at launch",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": "Rate of fire increased by 15%",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 15.0,
+         "metric": "rate_of_fire",
+         "raw_metric": "rate of fire",
+         "unit": null
+        },
+        {
+         "text_en": "Recovery time (i.e. the amount of time before McCree can fire again) decreased from 0.5 seconds to 0.35 seconds",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "BUG FIXES",
+   "role": null,
+   "description": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "Heroes",
+     "body": "- Targets of Ana’s Sleep Dart will no longer instantly recover when damaged (recovery time is now 0.5 seconds)",
+     "dev": null
+    },
+    {
+     "title": "User Interface",
+     "body": "- Fixed UI compatibility issues for ATI cards\n- Fixed a bug that would sometimes cause Lúcio, Mei, and other models to only partially render (or disappear)",
+     "dev": null
+    }
+   ]
+  }
+ ],
+ "raw_text": null,
+ "hash": "sha256:2fb86cc651f77b357f3f19d8e00eaed9bc7d55c4eb26f4649248d2eeeb6c89aa"
 }

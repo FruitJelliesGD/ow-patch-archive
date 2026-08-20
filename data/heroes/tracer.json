@@ -5551,6 +5551,66 @@
    "by_pct": null,
    "metric": null,
    "unit": null
+  },
+  {
+   "patch": "en-2019-10-15-1",
+   "date": "2019-10-15",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2019/10",
+   "patch_title": "Overwatch Retail Patch Notes – October 15, 2019",
+   "kind": "ability",
+   "dimension": "weapon",
+   "ability_slug": "pulse-pistols",
+   "ability_en": "Pulse Pistols",
+   "ability_cn": "脉冲双枪",
+   "text_en": "Damage falloff now starts at 13 meters, up from 10 meters",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "en-2019-08-13-1",
+   "date": "2019-08-13",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2019/08",
+   "patch_title": "Overwatch Retail Patch Notes – August 13, 2019",
+   "kind": "ability",
+   "dimension": "ability",
+   "ability_slug": "pulse-bomb",
+   "ability_en": "Pulse Bomb",
+   "ability_cn": "脉冲炸弹",
+   "text_en": "Damage increased from 300 to 350",
+   "text_cn": null,
+   "before": 300.0,
+   "after": 350.0,
+   "by": 50.0,
+   "by_pct": null,
+   "metric": "damage",
+   "unit": null
+  },
+  {
+   "patch": "en-2018-05-03-1",
+   "date": "2018-05-03",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2018/05",
+   "patch_title": "Overwatch Patch Notes – May 3, 2018",
+   "kind": "ability",
+   "dimension": "ability",
+   "ability_slug": "pulse-bomb",
+   "ability_en": "Pulse Bomb",
+   "ability_cn": "脉冲炸弹",
+   "text_en": "Max damage decreased from 400 to 300",
+   "text_cn": null,
+   "before": 400.0,
+   "after": 300.0,
+   "by": -100.0,
+   "by_pct": null,
+   "metric": "max damage",
+   "unit": null
   }
  ],
  "values": {
@@ -5591,6 +5651,10 @@
    }
   ],
   "pulse-bomb:damage": [
+   {
+    "date": "2019-08-13",
+    "value": 350.0
+   },
    {
     "date": "2026-06-30",
     "value": 9999.0
@@ -5672,6 +5736,12 @@
    {
     "date": "2023-08-10",
     "value": 550.0
+   }
+  ],
+  "pulse-bomb:max damage": [
+   {
+    "date": "2018-05-03",
+    "value": 300.0
    }
   ]
  }

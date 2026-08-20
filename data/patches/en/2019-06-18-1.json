@@ -5,7 +5,301 @@
  "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2019/06",
  "title": "Overwatch Retail Patch Notes – June 18, 2019",
  "seq": 1,
- "sections": [],
- "raw_text": "Overwatch Retail Patch Notes – June 18, 2019\n\nA new patch is now live on Windows PC. Read below to learn more about the latest changes.\n\nTo share your feedback, please post in the General Discussion forum\n\nFor a list of known issues, visit our Bug Report forum.\n\nFor troubleshooting assistance, visit our Technical Support forum.\n\nPATCH HIGHLIGHTS\n\n**Baptiste's Reunion Challenge**\n\nWe’re bringing Baptiste's journey in the short story “What You Left Behind” to Overwatch with some special, unlockable in-game content. Wins in Quick Play, Competitive Play, or Arcade will all earn you themed sprays, a player icon, and a new epic skin – MEDIC BAPTISTE!\n\nTune in to participating Twitch broadcasters while they’re playing Overwatch anytime through July 2 to earn six Baptiste's Reunion Challenge sprays!\n\nTo learn more about Baptiste's Reunion Challenge, click here.\n\n**New Feature: Replays**\n\nExperience your past Overwatch games from a whole new perspective with Replays. Replays allows you to watch your ten most recent matches from any vantage point. Whether you want a first-person, third-person, or bird's-eye view, you can see it all with this tool. Hone your strategies by slowing down or speeding up the game to see exactly how a critical moment played out, get a better view of the action from above, or even turn off the UI completely.\n\nLearn more about Replays: Blizz.ly/OverwatchReplays\n\nHERO UPDATES\n\n**Baptiste**\n\nBiotic Launcher\n\n- Increased heal ammo from 10 to 12.\n\nAmplification Matrix\n\n- Ultimate duration increased from 8 seconds to 10 seconds.\n\n**Developer Comments: **Given the dual nature of Baptiste’s weapon, he ends up having to reload often. We’re increasing the amount of ammo he has to work with so he can get more firing time while healing. Similarly, increasing the duration of Amplification Matrix will allow allies more time to get into position to make use of it.\n\n**D.Va**\n\nDefense Matrix\n\n- Reduced length of Defense Matrix from 15 meters to 10 meters.\n\n**Developer Comments: **Defense Matrix is a very powerful defensive ability and can often feel oppressive from far away. Reducing the range on it will require D.Va to position herself more carefully to take advantage of its effects.\n\n**McCree**\n\nPeacekeeper\n\n- Primary fire recovery reduced from 0.5 seconds to 0.42 seconds.\n\n**Developer Comments: **On average, McCree’s damage output wasn’t quite making up for the relatively low mobility or utility in his kit. Reducing his weapon’s recovery time improves the potential damage output without affecting the number of successful shots to kill an enemy.\n\n**Orisa**\n\nProtective Barrier\n\n- Barrier can be deployed without interrupting reload.\n\n**Developer Comments: **Orisa has one of the longest weapon reloads and interrupting it to deploy a new barrier felt too disruptive to her gameplay. This change allows her to reload as needed while still being able to protect herself and her team.\n\n**Symmetra**\n\nTeleporter\n\n- Teleporter interact range increased from 1 meter to 1.5 meters.\n\n**Developer Comments: **This is primarily a quality of life improvement as it was possible to create a teleporter that Symmetra was unable to interact with unless she moved toward it.\n\n**Torbjörn**\n\nRivet Gun\n\n- Secondary Fire damage per pellet reduced from 12.5 to 10.5 (105 dmg total per shot).\n\n**Developer Comments: **The combined damage output of Torbjörn’s secondary fire with his Overload ability was too high given his recently increased survivability.\n\nGAME MODE UPDATES\n\n**Assault**\n\n- Time awarded for capturing Point A on all Assault maps has been reduced from 4 minutes to 3 minutes.\n- Upon losing Point A, any defenders that are dead, or that die shortly thereafter, will have a maximum respawn of 3.5 seconds.\n\n**Developer Comments: **Assault match lengths are averaging higher than we're happy with, particularly in Competitive where there are multiple rounds. We're also concerned with how often Offense fully captures Point A and Point B. Reducing the round time from 8 to 7 minutes should address both these concerns, as less overall time rewards better Defense.\n\nAdditionally, sometimes Defenders fight late with good intentions at Point A and end up staggered from their team when A falls, leaving their team with uneven footing to defend a rush to B. In these situations, temporarily lowering the respawn time to get those Defenders back with their team should be a better match experience and doesn't punish players so harshly for wanting to defend Point A.\n\nWORKSHOP UPDATES\n\n**General**\n\n- Visual update applied\n- Check boxes added to support operations on multiple conditions/actions/rules.\n- You can now disable conditions/actions/rules without deleting them.\n- (PC) When copying conditions/actions/rules, the contents will also be copied to your clipboard in a text format.\n- (PC) When pasting conditions/actions/rules, the editor will use the text from your clipboard.\n- Increased maximum number of effects from 64 -> 128.\n- Added ‘Modify Global Variable At Index’.\n- Added ‘Modify Player Variable At Index’.\n\nBUG FIXES\n\n**General**\n\n- Communication Wheel: “Acknowledge” pings triggered through the Communication Wheel can now target objectives.\n- Fixed a bug where explosions could play in the wrong position if a mispredicted impact happened on the client.\n- Fixed an issue where some UI effects weren't being properly colored when color blind settings are set on console.\n- Tutorial: Weapon UI is now hidden until your weapon is available.\n- Havana PvP – Fixed a bug that could cause the payload to get stuck leaving the Distillery checkpoint.\n- Fixed a bug that could cause the Play of the Game animation to be cut off before it ends.\n- Fixed a bug that could limit the number of effects displayed on screen at the same time.\n\n**Workshop**\n\n- Custom Game: Fixed a bug where AI Soldier: 76 wouldn’t fire his Helix Rocket at the same target twice.\n- Custom Game: Fixed an issue where ‘Nearest Walkable Position’ would use a location in a spawn room instead of the specified location when the spawn room doors were closed.\n- Custom Game: Fixed a bug that could cause AI Soldier: 76 to be unable to use Biotic Field.\n- Custom Game: Fixed a bug where disabling primary fire doesn't disable it for transform effects like Hanzo's Storm Arrows, Genji's Dragonblade, Soldier: 76's Tactical Visor, Torbjörn's Molten Core, Bastion's Configuration: Tank, and Winston's Primal Rage.\n- Fixed a bug that prevented Sombra and D.Va from using their Ultimate abilities when using the ‘Set Ultimate Charge’ action to grant 100% Ultimate charge.\n- Fixed a bug that prevented players from focusing on the Rule checkbox when using a controller.\n- Fixed a bug that prevented the \"Stop holding button\" from clearing the action when using a wait before the action.\n- Fixed a bug that caused players to always be returned to the Custom Game Browser when backing out of any game, if the player had been to the Custom Game Browser previously.\n- Fixed a bug that forced Console Players to press the button twice when attempting to enter a numerical value when using a controller. Console Players are now able to bring up the virtual keyboard for manual numerical entry via one button press when using controller.\n- Fixed a bug that could cause variable values displayed in the Inspector to fail to update after making changes and restarting the match.\n\n**Heroes**\n\nAna\n\n- Anti-Heal will be cleared when Sombra uses her translocator to teleport.\n\nBaptiste\n\n- Fixed a bug that caused Ana's shot sound effects to be played on Baptiste when his Immortality Field is hit by her Primary Fire.\n\nBrigitte\n\n- Enemy barriers now block line-of-sight for Brigitte's Rally.\n- Fixed a bug where armor damage mitigation was too effective when multiple instances of armor were stacked on top of each other.\n\nDoomfist\n\n- Fixed a bug that allowed Doomfist to access out-of-bounds areas of the the Havana map during his ultimate.\n- Fixed an issue where Doomfist's Rocket Punch would sometimes impact stairs.\n- Fixed issue where Doomfist's Seismic Slam was not showing its electricity effect on affected entities.\n- Fixed a bug that could result in Seismic Slam not hitting targets when it should.\n\nGenji\n\n- Fixed a bug that prevented Genji’s damage boost from being applied to deflected projectiles.\n\nHanzo\n\n- Fixed a bug that caused Hanzo's targeting reticle to appear on kill cam for players killed by his Dragonstrike Ultimate.\n- Fixed a bug that caused Hanzo's hands to clip into his legs during the Meditate emote on several skins (Cyberninja, Lone Wolf, Scion, Young Master).\n\nLucio\n\n- Fixed a bug that prevented portions of Lucio's 2019 Pacific All-Stars skin from being visible in highlight and in-game portraits.\n\nOrisa\n\n- Fixed a bug that caused Supercharger to self-destruct when placed in certain locations.\n\nRoadhog\n\n- Fixed a bug that allowed Roadhog's hook to function when he was hacked by Sombra.\n\nSombra\n\n- Translocator will now escape slippery surfaces more easily and not be able to be stuck to them.\n- Fixed an issue where a material effect on Sombra’s hair would cause it to cast a shadow while invisible.\n\nSymmetra\n\n- Resolved an issue where Enemy and Friendly UI color options were incorrectly being applied to Symmetra’s Photon Barrier.\n\nTorbjörn\n\n- Fixed a bug that prevented some of Torbjörn's visual effects from being applied when he used Overload with certain skins equipped.\n- Fixed a bug that caused Torbjörn's turret to sometimes destroy itself.",
- "hash": "sha256:3845f02b5dfec9476e57d8feb49c494bccca351858045ad78ce7a975833a4392"
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "",
+   "role": null,
+   "description": "A new patch is now live on Windows PC. Read below to learn more about the latest changes.\n\nTo share your feedback, please post in the General Discussion forum For a list of known issues, visit our Bug Report forum. For troubleshooting assistance, visit our Technical Support forum.",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "PATCH HIGHLIGHTS",
+   "role": null,
+   "description": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "Baptiste's Reunion Challenge",
+     "body": "We’re bringing Baptiste's journey in the short story “What You Left Behind” to Overwatch with some special, unlockable in-game content. Wins in Quick Play, Competitive Play, or Arcade will all earn you themed sprays, a player icon, and a new epic skin – MEDIC BAPTISTE!\n\nTune in to participating Twitch broadcasters while they’re playing Overwatch anytime through July 2 to earn six Baptiste's Reunion Challenge sprays!\n\nTo learn more about Baptiste's Reunion Challenge, click here .",
+     "dev": null
+    },
+    {
+     "title": "New Feature: Replays",
+     "body": "Experience your past Overwatch games from a whole new perspective with Replays. Replays allows you to watch your ten most recent matches from any vantage point. Whether you want a first-person, third-person, or bird's-eye view, you can see it all with this tool. Hone your strategies by slowing down or speeding up the game to see exactly how a critical moment played out, get a better view of the action from above, or even turn off the UI completely.\n\nLearn more about Replays: Blizz.ly/OverwatchReplays",
+     "dev": null
+    }
+   ]
+  },
+  {
+   "type": "hero_update",
+   "title": "HERO UPDATES",
+   "role": null,
+   "description": null,
+   "heroes": [
+    {
+     "slug": "baptiste",
+     "name_en": "Baptiste",
+     "name_cn": "巴蒂斯特",
+     "role": "support",
+     "icon": null,
+     "dev_note": "Given the dual nature of Baptiste’s weapon, he ends up having to reload often. We’re increasing the amount of ammo he has to work with so he can get more firing time while healing. Similarly, increasing the duration of Amplification Matrix will allow allies more time to get into position to make use of it.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Biotic Launcher",
+       "name_cn": null,
+       "slug": "biotic-launcher",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": "Increased heal ammo from 10 to 12.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Amplification Matrix",
+       "name_cn": "增幅矩阵",
+       "slug": "amplification-matrix",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": "Ultimate duration increased from 8 seconds to 10 seconds.",
+         "text_cn": null,
+         "before": 8.0,
+         "after": 10.0,
+         "by": 2.0,
+         "by_pct": null,
+         "metric": "ultimate duration",
+         "raw_metric": "ultimate duration",
+         "unit": "s"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "d-va",
+     "name_en": "D.Va",
+     "name_cn": "D.Va",
+     "role": "tank",
+     "icon": null,
+     "dev_note": "Defense Matrix is a very powerful defensive ability and can often feel oppressive from far away. Reducing the range on it will require D.Va to position herself more carefully to take advantage of its effects.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Defense Matrix",
+       "name_cn": "防御矩阵",
+       "slug": "defense-matrix",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": "Reduced length of Defense Matrix from 15 meters to 10 meters.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "cassidy",
+     "name_en": "Cassidy",
+     "name_cn": "卡西迪",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "On average, McCree’s damage output wasn’t quite making up for the relatively low mobility or utility in his kit. Reducing his weapon’s recovery time improves the potential damage output without affecting the number of successful shots to kill an enemy.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Peacekeeper",
+       "name_cn": "维和者",
+       "slug": "peacekeeper",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": "Primary fire recovery reduced from 0.5 seconds to 0.42 seconds.",
+         "text_cn": null,
+         "before": 0.5,
+         "after": 0.42,
+         "by": -0.08,
+         "by_pct": null,
+         "metric": "primary fire recovery",
+         "raw_metric": "primary fire recovery",
+         "unit": "s"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "orisa",
+     "name_en": "Orisa",
+     "name_cn": "奥丽莎",
+     "role": "tank",
+     "icon": null,
+     "dev_note": "Orisa has one of the longest weapon reloads and interrupting it to deploy a new barrier felt too disruptive to her gameplay. This change allows her to reload as needed while still being able to protect herself and her team.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Protective Barrier",
+       "name_cn": "防护屏障",
+       "slug": "protective-barrier",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": "Barrier can be deployed without interrupting reload.",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "symmetra",
+     "name_en": "Symmetra",
+     "name_cn": "秩序之光",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "This is primarily a quality of life improvement as it was possible to create a teleporter that Symmetra was unable to interact with unless she moved toward it.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Teleporter",
+       "name_cn": null,
+       "slug": "teleporter",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": "Teleporter interact range increased from 1 meter to 1.5 meters.",
+         "text_cn": null,
+         "before": 1.0,
+         "after": 1.5,
+         "by": 0.5,
+         "by_pct": null,
+         "metric": "teleporter interact range",
+         "raw_metric": "teleporter interact range",
+         "unit": "m"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "torbjorn",
+     "name_en": "Torbjörn",
+     "name_cn": "托比昂",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "The combined damage output of Torbjörn’s secondary fire with his Overload ability was too high given his recently increased survivability.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Rivet Gun",
+       "name_cn": null,
+       "slug": "rivet-gun",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": "Secondary Fire damage per pellet reduced from 12.5 to 10.5 (105 dmg total per shot).",
+         "text_cn": null,
+         "before": 12.5,
+         "after": 10.5,
+         "by": -2.0,
+         "by_pct": null,
+         "metric": "secondary fire damage per pellet",
+         "raw_metric": "secondary fire damage per pellet",
+         "unit": null
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "GAME MODE UPDATES",
+   "role": null,
+   "description": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "Assault",
+     "body": "Additionally, sometimes Defenders fight late with good intentions at Point A and end up staggered from their team when A falls, leaving their team with uneven footing to defend a rush to B. In these situations, temporarily lowering the respawn time to get those Defenders back with their team should be a better match experience and doesn't punish players so harshly for wanting to defend Point A.",
+     "dev": "Assault match lengths are averaging higher than we're happy with, particularly in Competitive where there are multiple rounds. We're also concerned with how often Offense fully captures Point A and Point B. Reducing the round time from 8 to 7 minutes should address both these concerns, as less overall time rewards better Defense."
+    }
+   ]
+  },
+  {
+   "type": "generic_update",
+   "title": "WORKSHOP UPDATES",
+   "role": null,
+   "description": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "General",
+     "body": "- Visual update applied\n- Check boxes added to support operations on multiple conditions/actions/rules.\n- You can now disable conditions/actions/rules without deleting them.\n- (PC) When copying conditions/actions/rules, the contents will also be copied to your clipboard in a text format.\n- (PC) When pasting conditions/actions/rules, the editor will use the text from your clipboard.\n- Increased maximum number of effects from 64 -> 128.\n- Added ‘Modify Global Variable At Index’.\n- Added ‘Modify Player Variable At Index’.",
+     "dev": null
+    }
+   ]
+  },
+  {
+   "type": "generic_update",
+   "title": "BUG FIXES",
+   "role": null,
+   "description": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "General",
+     "body": "- Communication Wheel: “Acknowledge” pings triggered through the Communication Wheel can now target objectives.\n- Fixed a bug where explosions could play in the wrong position if a mispredicted impact happened on the client.\n- Fixed an issue where some UI effects weren't being properly colored when color blind settings are set on console.\n- Tutorial: Weapon UI is now hidden until your weapon is available.\n- Havana PvP – Fixed a bug that could cause the payload to get stuck leaving the Distillery checkpoint.\n- Fixed a bug that could cause the Play of the Game animation to be cut off before it ends.\n- Fixed a bug that could limit the number of effects displayed on screen at the same time.",
+     "dev": null
+    },
+    {
+     "title": "Workshop",
+     "body": "- Custom Game: Fixed a bug where AI Soldier: 76 wouldn’t fire his Helix Rocket at the same target twice.\n- Custom Game: Fixed an issue where ‘Nearest Walkable Position’ would use a location in a spawn room instead of the specified location when the spawn room doors were closed.\n- Custom Game: Fixed a bug that could cause AI Soldier: 76 to be unable to use Biotic Field.\n- Custom Game: Fixed a bug where disabling primary fire doesn't disable it for transform effects like Hanzo's Storm Arrows, Genji's Dragonblade, Soldier: 76's Tactical Visor, Torbjörn's Molten Core, Bastion's Configuration: Tank, and Winston's Primal Rage.\n- Fixed a bug that prevented Sombra and D.Va from using their Ultimate abilities when using the ‘Set Ultimate Charge’ action to grant 100% Ultimate charge.\n- Fixed a bug that prevented players from focusing on the Rule checkbox when using a controller.\n- Fixed a bug that prevented the \"Stop holding button\" from clearing the action when using a wait before the action.\n- Fixed a bug that caused players to always be returned to the Custom Game Browser when backing out of any game, if the player had been to the Custom Game Browser previously.\n- Fixed a bug that forced Console Players to press the button twice when attempting to enter a numerical value when using a controller. Console Players are now able to bring up the virtual keyboard for manual numerical entry via one button press when using controller.\n- Fixed a bug that could cause variable values displayed in the Inspector to fail to update after making changes and restarting the match.",
+     "dev": null
+    },
+    {
+     "title": "Heroes",
+     "body": "Ana\n\nBaptiste\n\nBrigitte\n\nDoomfist\n\nGenji\n\nHanzo\n\nLucio\n\nOrisa\n\nRoadhog\n\nSombra\n\nSymmetra\n\nTorbjörn\n\n- Fixed a bug that prevented some of Torbjörn's visual effects from being applied when he used Overload with certain skins equipped.\n- Fixed a bug that caused Torbjörn's turret to sometimes destroy itself.",
+     "dev": null
+    }
+   ]
+  }
+ ],
+ "raw_text": null,
+ "hash": "sha256:78e5dcceed858bed9e79777b51843465b556754373bd54ea9bbceac20825b611"
 }

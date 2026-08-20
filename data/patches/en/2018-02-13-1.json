@@ -5,7 +5,95 @@
  "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2018/02",
  "title": "Overwatch Patch Notes – February 13, 2018",
  "seq": 1,
- "sections": [],
- "raw_text": "Overwatch Patch Notes – February 13, 2018\n\nA new patch is now live on Windows PC. Read below to learn more about the latest changes.\n\nTo share your feedback, please post in the General Discussion forum\n\nFor a list of known issues, visit our Bug Report forum.\n\nFor troubleshooting assistance, visit our Technical Support forum.\n\nHERO UPDATES\n\n**Lúcio**\n\n- Wall Ride\n\n  - Activating Wall Ride will now cause the flag to drop during Capture the Flag matches\n\nDeveloper Comments:Lúcio’s Wall Ride allowed him to reach unintended places in Capture the Flag maps, which made it overly difficult for opponents to stop him. So, we have changed the ability to cause the flag to drop instead for better balanced matches.\n\nBUG FIXES\n\n**General**\n\n- Fixed a typo that caused the Lunar New Year banner to display the wrong end date for Overwatch Lunar New Year\n- Fixed a bug that sometimes caused the client to crash after a player used the Hero Skin Selection dropdown menu in Hero Select\n\n**Capture the Flag**\n\n- Fixed a bug that allowed Winston to pick up the flag while airborne after activating his Jump Pack\n- Fixed a bug that caused flags dropped near ceilings to get stuck inside of walls\n\n**Deathmatch**\n\n- Fixed a bug that caused Mei to levitate if she used Cryo-stasis\n\n**Game Browser and Custom Games**\n\n- Fixed a bug that prevented players from playing games in the Arcade if they were using a trial account\n\n**Heroes**\n\n- Fixed a bug that caused hero ultimate charges to reset after the first death if a player changed their skin using the Hero Skin Selection a second before the match began\n- Fixed a bug that caused Zarya’s reaction animations to loop continuously after taking damage following the destruction of her Particle Barrier\n\n**UI**\n\n- Fixed a bug that prevented the Weekly Rewards timer in from displaying correctly in the Arcade",
- "hash": "sha256:d6dfc4797e19568a349fb5518da77ef4adb2e74a3b9576d1ad7594ec0e490a8e"
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "",
+   "role": null,
+   "description": "A new patch is now live on Windows PC. Read below to learn more about the latest changes.\n\nTo share your feedback, please post in the General Discussion forum For a list of known issues, visit our Bug Report forum. For troubleshooting assistance, visit our Technical Support forum.",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "HERO UPDATES",
+   "role": null,
+   "description": null,
+   "heroes": [
+    {
+     "slug": "lucio",
+     "name_en": "Lúcio",
+     "name_cn": "卢西奥",
+     "role": "support",
+     "icon": null,
+     "dev_note": "Lúcio’s Wall Ride allowed him to reach unintended places in Capture the Flag maps, which made it overly difficult for opponents to stop him. So, we have changed the ability to cause the flag to drop instead for better balanced matches.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Wall Ride",
+       "name_cn": "滑墙",
+       "slug": "wall-ride",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": "Activating Wall Ride will now cause the flag to drop during Capture the Flag matches",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "BUG FIXES",
+   "role": null,
+   "description": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "General",
+     "body": "- Fixed a typo that caused the Lunar New Year banner to display the wrong end date for Overwatch Lunar New Year\n- Fixed a bug that sometimes caused the client to crash after a player used the Hero Skin Selection dropdown menu in Hero Select",
+     "dev": null
+    },
+    {
+     "title": "Capture the Flag",
+     "body": "- Fixed a bug that allowed Winston to pick up the flag while airborne after activating his Jump Pack\n- Fixed a bug that caused flags dropped near ceilings to get stuck inside of walls",
+     "dev": null
+    },
+    {
+     "title": "Deathmatch",
+     "body": "- Fixed a bug that caused Mei to levitate if she used Cryo-stasis",
+     "dev": null
+    },
+    {
+     "title": "Game Browser and Custom Games",
+     "body": "- Fixed a bug that prevented players from playing games in the Arcade if they were using a trial account",
+     "dev": null
+    },
+    {
+     "title": "Heroes",
+     "body": "- Fixed a bug that caused hero ultimate charges to reset after the first death if a player changed their skin using the Hero Skin Selection a second before the match began\n- Fixed a bug that caused Zarya’s reaction animations to loop continuously after taking damage following the destruction of her Particle Barrier",
+     "dev": null
+    },
+    {
+     "title": "UI",
+     "body": "- Fixed a bug that prevented the Weekly Rewards timer in from displaying correctly in the Arcade",
+     "dev": null
+    }
+   ]
+  }
+ ],
+ "raw_text": null,
+ "hash": "sha256:d1ee58e86266bb25b4328a537f8c30cb4fcd8655acfe5c65484a06be836ba881"
 }

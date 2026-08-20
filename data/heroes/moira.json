@@ -4325,6 +4325,146 @@
    "by_pct": null,
    "metric": "projectile duration",
    "unit": null
+  },
+  {
+   "patch": "en-2019-10-15-1",
+   "date": "2019-10-15",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2019/10",
+   "patch_title": "Overwatch Retail Patch Notes – October 15, 2019",
+   "kind": "ability",
+   "dimension": "weapon",
+   "ability_slug": "biotic-grasp",
+   "ability_en": "Biotic Grasp",
+   "ability_cn": "生化之触",
+   "text_en": "Self-healing reduced from 30 to 20 health per second",
+   "text_cn": null,
+   "before": 30.0,
+   "after": 20.0,
+   "by": -10.0,
+   "by_pct": null,
+   "metric": "self-healing",
+   "unit": null
+  },
+  {
+   "patch": "en-2019-03-19-1",
+   "date": "2019-03-19",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2019/03",
+   "patch_title": "Overwatch Retail Patch Notes – March 19, 2019",
+   "kind": "ability",
+   "dimension": "weapon",
+   "ability_slug": "biotic-grasp",
+   "ability_en": "Biotic Grasp",
+   "ability_cn": "生化之触",
+   "text_en": "Heal over time duration increased from 3 to 4 seconds",
+   "text_cn": null,
+   "before": 3.0,
+   "after": 4.0,
+   "by": 1.0,
+   "by_pct": null,
+   "metric": "heal over time duration",
+   "unit": null
+  },
+  {
+   "patch": "en-2019-03-19-1",
+   "date": "2019-03-19",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2019/03",
+   "patch_title": "Overwatch Retail Patch Notes – March 19, 2019",
+   "kind": "ability",
+   "dimension": "weapon",
+   "ability_slug": "biotic-grasp",
+   "ability_en": "Biotic Grasp",
+   "ability_cn": "生化之触",
+   "text_en": "Total healing increased from 50 to 65",
+   "text_cn": null,
+   "before": 50.0,
+   "after": 65.0,
+   "by": 15.0,
+   "by_pct": null,
+   "metric": "total healing",
+   "unit": null
+  },
+  {
+   "patch": "en-2018-08-09-1",
+   "date": "2018-08-09",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2018/08",
+   "patch_title": "Overwatch Patch Notes – August 9th, 2018",
+   "kind": "ability",
+   "dimension": "weapon",
+   "ability_slug": "biotic-grasp",
+   "ability_en": "Biotic Grasp",
+   "ability_cn": "生化之触",
+   "text_en": "Passive energy regeneration rate increased from 2 per second to 2.4 per second",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "en-2018-04-10-1",
+   "date": "2018-04-10",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2018/04",
+   "patch_title": "Overwatch Patch Notes – April 10, 2018",
+   "kind": "ability",
+   "dimension": "weapon",
+   "ability_slug": "biotic-grasp",
+   "ability_en": "Biotic Grasp",
+   "ability_cn": "生化之触",
+   "text_en": "Transparency increased the closer you are to a target",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "en-2018-04-10-1",
+   "date": "2018-04-10",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2018/04",
+   "patch_title": "Overwatch Patch Notes – April 10, 2018",
+   "kind": "ability",
+   "dimension": "ability",
+   "ability_slug": "coalescence",
+   "ability_en": "Coalescence",
+   "ability_cn": "聚合射线",
+   "text_en": "Now becomes more transparent the closer its visual effects are to a player’s camera",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "en-2018-04-10-1",
+   "date": "2018-04-10",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2018/04",
+   "patch_title": "Overwatch Patch Notes – April 10, 2018",
+   "kind": "ability",
+   "dimension": "ability",
+   "ability_slug": "fade",
+   "ability_en": "Fade",
+   "ability_cn": null,
+   "text_en": "Transparency increased the closer you are to a target",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
   }
  ],
  "values": {
@@ -4403,6 +4543,10 @@
    }
   ],
   "biotic-grasp:self-healing": [
+   {
+    "date": "2019-10-15",
+    "value": 20.0
+   },
    {
     "date": "2021-08-05",
     "value": 24.0
@@ -4502,6 +4646,18 @@
    {
     "date": "2020-05-19",
     "value": 7.0
+   }
+  ],
+  "biotic-grasp:heal over time duration": [
+   {
+    "date": "2019-03-19",
+    "value": 4.0
+   }
+  ],
+  "biotic-grasp:total healing": [
+   {
+    "date": "2019-03-19",
+    "value": 65.0
    }
   ]
  }

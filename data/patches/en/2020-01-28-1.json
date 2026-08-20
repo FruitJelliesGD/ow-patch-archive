@@ -5,7 +5,298 @@
  "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2020/01",
  "title": "Overwatch Retail Patch Notes – January 28, 2020",
  "seq": 1,
- "sections": [],
- "raw_text": "Overwatch Retail Patch Notes – January 28, 2020\n\nA new patch is now live on Windows PC, Nintendo Switch, PlayStation 4, and Xbox One. Read below to learn more about the latest changes.\n\nTo share your feedback, please post in the General Discussion forum\n\nFor a list of known issues, visit our Bug Report forum.\n\nFor troubleshooting assistance, visit our Technical Support forum.\n\nHERO UPDATES\n\n**Hanzo**\n\nStorm Arrows\n\n- Damage reduced from 70 to 60\n\n**McCree**\n\nDeadeye\n\n- Firing Deadeye no longer locks the player’s aim\n\n**Reaper**\n\nThe Reaping (Passive)\n\n- Healing amount reduced from 40% to 30% of damage dealt\n\n**Orisa**\n\nFusion Driver (Primary Fire)\n\n- Damage reduced from 11 to 10\n\nFortify\n\n- Cooldown increased from 8 to 10 seconds\n\nHalt!\n\n- Snare duration reduced from 1 to 0.65 seconds\n\n**Sigma**\n\nGravitic Flux\n\n- Can now be interrupted before targets begin falling\n- Impact slow duration reduced from 0.9 to 0.6 seconds\n\nAccretion\n\n- Explosion damage reduced from 60 to 40\n\n**Baptiste**\n\nBiotic Launcher (Primary Fire)\n\n- Recovery time increased from 0.35 to 0.45 seconds\n\nBiotic Launcher (Secondary Fire)\n\n- Heal explosion reduced from 60 to 50",
- "hash": "sha256:125ac1568d2de78652d66ae589c1f3da6fe4b5fc4e1e90c2183c3d48fb34329f"
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "",
+   "role": null,
+   "description": "A new patch is now live on Windows PC, Nintendo Switch, PlayStation 4, and Xbox One. Read below to learn more about the latest changes.\n\nTo share your feedback, please post in the General Discussion forum For a list of known issues, visit our Bug Report forum. For troubleshooting assistance, visit our Technical Support forum.",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "hero_update",
+   "title": "HERO UPDATES",
+   "role": null,
+   "description": null,
+   "heroes": [
+    {
+     "slug": "hanzo",
+     "name_en": "Hanzo",
+     "name_cn": "半藏",
+     "role": "damage",
+     "icon": null,
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Storm Arrow",
+       "name_cn": "岚",
+       "slug": "storm-arrow",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": "Damage reduced from 70 to 60",
+         "text_cn": null,
+         "before": 70.0,
+         "after": 60.0,
+         "by": -10.0,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "damage",
+         "unit": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "cassidy",
+     "name_en": "Cassidy",
+     "name_cn": "卡西迪",
+     "role": "damage",
+     "icon": null,
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Deadeye",
+       "name_cn": "神射手",
+       "slug": "deadeye",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": "Firing Deadeye no longer locks the player’s aim",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "reaper",
+     "name_en": "Reaper",
+     "name_cn": "死神",
+     "role": "damage",
+     "icon": null,
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "The Reaping (Passive)",
+       "name_cn": null,
+       "slug": "the-reaping-passive",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": "Healing amount reduced from 40% to 30% of damage dealt",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "orisa",
+     "name_en": "Orisa",
+     "name_cn": "奥丽莎",
+     "role": "tank",
+     "icon": null,
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Fusion Driver",
+       "name_cn": "聚变驱动器",
+       "slug": "fusion-driver",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": "Damage reduced from 11 to 10",
+         "text_cn": null,
+         "before": 11.0,
+         "after": 10.0,
+         "by": -1.0,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "damage",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Fortify",
+       "name_cn": "强固防御",
+       "slug": "fortify",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": "Cooldown increased from 8 to 10 seconds",
+         "text_cn": null,
+         "before": 8.0,
+         "after": 10.0,
+         "by": 2.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      },
+      {
+       "name_en": "Halt!",
+       "name_cn": "站住！",
+       "slug": "halt",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": "Snare duration reduced from 1 to 0.65 seconds",
+         "text_cn": null,
+         "before": 1.0,
+         "after": 0.65,
+         "by": -0.35,
+         "by_pct": null,
+         "metric": "snare duration",
+         "raw_metric": "snare duration",
+         "unit": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "sigma",
+     "name_en": "Sigma",
+     "name_cn": "西格玛",
+     "role": "tank",
+     "icon": null,
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Gravitic Flux",
+       "name_cn": "引力乱流",
+       "slug": "gravitic-flux",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": "Can now be interrupted before targets begin falling",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": "Impact slow duration reduced from 0.9 to 0.6 seconds",
+         "text_cn": null,
+         "before": 0.9,
+         "after": 0.6,
+         "by": -0.3,
+         "by_pct": null,
+         "metric": "impact slow duration",
+         "raw_metric": "impact slow duration",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Accretion",
+       "name_cn": "质量吸附",
+       "slug": "accretion",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": "Explosion damage reduced from 60 to 40",
+         "text_cn": null,
+         "before": 60.0,
+         "after": 40.0,
+         "by": -20.0,
+         "by_pct": null,
+         "metric": "explosion damage",
+         "raw_metric": "explosion damage",
+         "unit": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "baptiste",
+     "name_en": "Baptiste",
+     "name_cn": "巴蒂斯特",
+     "role": "support",
+     "icon": null,
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Biotic Launcher (Primary Fire)",
+       "name_cn": null,
+       "slug": "biotic-launcher-primary-fire",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": "Recovery time increased from 0.35 to 0.45 seconds",
+         "text_cn": null,
+         "before": 0.35,
+         "after": 0.45,
+         "by": 0.1,
+         "by_pct": null,
+         "metric": "recovery",
+         "raw_metric": "recovery time",
+         "unit": "s"
+        }
+       ]
+      },
+      {
+       "name_en": "Biotic Launcher (Secondary Fire)",
+       "name_cn": null,
+       "slug": "biotic-launcher-secondary-fire",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": "Heal explosion reduced from 60 to 50",
+         "text_cn": null,
+         "before": 60.0,
+         "after": 50.0,
+         "by": -10.0,
+         "by_pct": null,
+         "metric": "heal explosion",
+         "raw_metric": "heal explosion",
+         "unit": null
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": []
+  }
+ ],
+ "raw_text": null,
+ "hash": "sha256:2379dc225de04d791f8e60e632c2596db895edb61791910bd9383f8dd5a99c01"
 }

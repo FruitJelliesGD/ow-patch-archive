@@ -5,7 +5,196 @@
  "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2019/11",
  "title": "Overwatch Retail Patch Notes – November 5, 2019",
  "seq": 1,
- "sections": [],
- "raw_text": "Overwatch Retail Patch Notes – November 5, 2019\n\nA new patch is now live on Windows PC, Nintendo Switch, PlayStation 4, and Xbox One. Read below to learn more about the latest changes.\n\nTo share your feedback, please post in the General Discussion forum\n\nFor a list of known issues, visit our Bug Report forum.\n\nFor troubleshooting assistance, visit our Technical Support forum.\n\nGENERAL UPDATES\n\n**New Gameplay Option: High Precision Mouse Input**\n\nEnabling this option will allow Overwatch to use your mouse's native polling rate when determining exactly where to shoot. Note: There may be a slight performance cost to enabling this option. More details can be found here.\n\nCOMPETITIVE PLAY UPDATES\n\n**General Updates**\n\n- Starting with Season 19, we are moving the beginning (and end) of competitive play seasons from the 1st of every other month, to the first Thursday of every other month. We will also be starting the season later in the day to better correspond with developer availability during the day. Season 19 now starts on November 7, at 18:00 UTC (10:00 PST, 13:00 EST).\n- We will also be introducing a rotating, seasonal Map Pool to competitive play starting with Season 19. The initial map pool for Season 19 has 12 maps, with 3 of each game mode. Future competitive seasons will see maps rotating in and out of the pool, providing each season with a different experience and identity. Information about the current maps available in the map pool is available by opening the information panel of the Competitive Play card.\n\n**Season 19 Map Pool:**\n\n- Assault: Hanamura, Temple of Anubis, Volskaya Industries\n- Hybrid: Hollywood, King's Row, Eichenwald\n- Control: Nepal, Lijiang Tower, Busan\n- Escort: Route 66, Watchpoint: Gibraltar, Havana\n\nWORKSHOP UPDATES\n\n**New Workshop Features:**\n\n- Variable Renaming\n- Increased number of allowed variables up to 128\n- Autosave Preset\n\n**New Workshop Values:**\n\n- Custom String\n- All Tank Heroes\n- All Support Heroes\n- All Damage Heroes\n- Map\n- Current Map\n\nHERO UPDATES\n\n**General**\n\n- Mei's Icewall, Baptiste's Immortality Field, and Sigma's Gravitic Flux will now more heavily prefer edges over placing as far away as possible\n\n**Baptiste**\n\nBiotic Launcher\n\n- Recovery decreased from 0.45 to 0.36 seconds\n- Random spread removed\n- Damage falloff range now begins at 25 meters, up from 20\n\n**Torbjörn**\n\nMolten Core\n\n- Cost reduced 10%\n\nBUG FIXES\n\n**General**\n\n- Fixed a bug that made it not possible to bind Left-Click to forward movement\n- An appropriate error now appears when trying to accept a friend request after you have reached your limit\n- Fixed a bug with spectating that caused \"Next Player\" and \"Previous Player\" controls to be reversed when using a controller\n- Fixed a bug where sometimes explosion effects would not play for projectiles (like Pharah Rockets or Junkrat Grenades)\n\n**Workshop**\n\n- Fixed an issue preventing the Balanced Mystery Heroes preset from including Sigma\n- Fixed issues preventing Dummy Bots from being used in Elimination\n- Fixed an issue preventing the Communicate action from working on Dummy Bots\n- “Is Dummy Bot” now returns the correct value when given an argument other than “Event Player”\n- Fixed an issue preventing ray casts from colliding with certain objects\n- Fixed issues with certain colors not working properly with HUD Text, In-World Text, and Create Icon\n- Fixed an issue preventing Set Objective Description from working\n- Fixed some discrepancies with Point Capture Percentage between certain modes\n- Fixed an issue preventing rules from being properly disabled if the player target was a hero\n- Fixed an issue preventing Soldier: 76 dummy bots from being able to Sprint\n- Fixed an issue preventing null entities returned from Ray Cast Hit Player from being equivalent to null\n- Fixed an issue preventing Disallow Button from disabling the Interact Button\n- Fixed a bug where accessing other menus while in the Workshop caused any recent unsaved changes to be lost\n\n**Maps**\n\n- Volskaya - Removed a gap in the walls near point B that allowed D.Va bombs to kill players behind walls\n- Nepal: Sanctum - Removed a tiny gap in the windows near the capture point on Nepal: Sanctum that allowed D.Va bombs to kill players behind walls\n\n**Heroes**\n\nAna\n\n- Fixed a bug that caused Ana's legs to twitch when her Pharaoh skin is equipped\n- Fixed a bug where the syringe would be visually missing in her Sleep Dart pistol after the first use\n\nDoomfist\n\n- Fixed a bug where Seismic Slam's damage indicator was overlapping the reticle if a custom reticle was being used\n\nD.Va\n\n- Fixed a bug that could cause the wrong icon to display in the kill feed when D.Va denies an enemy's ultimate with her Defense Matrix\n\nMoira\n\n- Fixed a bug that could cause Moira's Right-Click sound to be behind you rather than in front\n\nRoadhog\n\n- Fixed a bug where Chain Hook could sometimes incorrectly connect with Symmetra's Teleporter, Ashe's Dynamite, and Junkrat's Steel Trap and Concussion Mine\n\nSombra\n\n- Fixed a bug where Sombra rarely would not properly translocate to a payload\n\nLive Patch Notes\n\nThese patch notes represent general changes made to the Live version of Overwatch and the balance changes listed affect Quick Play, Competitive Play, Arcade, and Custom Games.",
- "hash": "sha256:f5fd4320323aa89cfa17687e266be84afb2b82da031053b2b536cedc84dc8cb7"
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "",
+   "role": null,
+   "description": "A new patch is now live on Windows PC, Nintendo Switch, PlayStation 4, and Xbox One. Read below to learn more about the latest changes.\n\nTo share your feedback, please post in the General Discussion forum For a list of known issues, visit our Bug Report forum. For troubleshooting assistance, visit our Technical Support forum.",
+   "heroes": [],
+   "blocks": []
+  },
+  {
+   "type": "generic_update",
+   "title": "GENERAL UPDATES",
+   "role": null,
+   "description": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "New Gameplay Option: High Precision Mouse Input",
+     "body": "Enabling this option will allow Overwatch to use your mouse's native polling rate when determining exactly where to shoot. Note: There may be a slight performance cost to enabling this option. More details can be found here .",
+     "dev": null
+    }
+   ]
+  },
+  {
+   "type": "generic_update",
+   "title": "COMPETITIVE PLAY UPDATES",
+   "role": null,
+   "description": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "General Updates",
+     "body": "- Starting with Season 19, we are moving the beginning (and end) of competitive play seasons from the 1st of every other month, to the first Thursday of every other month. We will also be starting the season later in the day to better correspond with developer availability during the day. Season 19 now starts on November 7, at 18:00 UTC (10:00 PST, 13:00 EST).\n- We will also be introducing a rotating, seasonal Map Pool to competitive play starting with Season 19. The initial map pool for Season 19 has 12 maps, with 3 of each game mode. Future competitive seasons will see maps rotating in and out of the pool, providing each season with a different experience and identity. Information about the current maps available in the map pool is available by opening the information panel of the Competitive Play card.",
+     "dev": null
+    },
+    {
+     "title": "Season 19 Map Pool:",
+     "body": "- Assault: Hanamura, Temple of Anubis, Volskaya Industries\n- Hybrid: Hollywood, King's Row, Eichenwald\n- Control: Nepal, Lijiang Tower, Busan\n- Escort: Route 66, Watchpoint: Gibraltar, Havana",
+     "dev": null
+    }
+   ]
+  },
+  {
+   "type": "generic_update",
+   "title": "WORKSHOP UPDATES",
+   "role": null,
+   "description": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "New Workshop Features:",
+     "body": "- Variable Renaming\n- Increased number of allowed variables up to 128\n- Autosave Preset",
+     "dev": null
+    },
+    {
+     "title": "New Workshop Values:",
+     "body": "- Custom String\n- All Tank Heroes\n- All Support Heroes\n- All Damage Heroes\n- Map\n- Current Map",
+     "dev": null
+    }
+   ]
+  },
+  {
+   "type": "hero_update",
+   "title": "HERO UPDATES",
+   "role": null,
+   "description": null,
+   "heroes": [
+    {
+     "slug": "baptiste",
+     "name_en": "Baptiste",
+     "name_cn": "巴蒂斯特",
+     "role": "support",
+     "icon": null,
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Biotic Launcher",
+       "name_cn": null,
+       "slug": "biotic-launcher",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": "Recovery decreased from 0.45 to 0.36 seconds",
+         "text_cn": null,
+         "before": 0.45,
+         "after": 0.36,
+         "by": -0.09,
+         "by_pct": null,
+         "metric": "recovery",
+         "raw_metric": "recovery",
+         "unit": "s"
+        },
+        {
+         "text_en": "Random spread removed",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": "Damage falloff range now begins at 25 meters, up from 20",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "torbjorn",
+     "name_en": "Torbjörn",
+     "name_cn": "托比昂",
+     "role": "damage",
+     "icon": null,
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Molten Core",
+       "name_cn": null,
+       "slug": "molten-core",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": "Cost reduced 10%",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 10.0,
+         "metric": "cost",
+         "raw_metric": "cost",
+         "unit": null
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": [
+    {
+     "title": "General",
+     "body": "- Mei's Icewall, Baptiste's Immortality Field, and Sigma's Gravitic Flux will now more heavily prefer edges over placing as far away as possible",
+     "dev": null
+    }
+   ]
+  },
+  {
+   "type": "generic_update",
+   "title": "BUG FIXES",
+   "role": null,
+   "description": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "General",
+     "body": "- Fixed a bug that made it not possible to bind Left-Click to forward movement\n- An appropriate error now appears when trying to accept a friend request after you have reached your limit\n- Fixed a bug with spectating that caused \"Next Player\" and \"Previous Player\" controls to be reversed when using a controller\n- Fixed a bug where sometimes explosion effects would not play for projectiles (like Pharah Rockets or Junkrat Grenades)",
+     "dev": null
+    },
+    {
+     "title": "Workshop",
+     "body": "- Fixed an issue preventing the Balanced Mystery Heroes preset from including Sigma\n- Fixed issues preventing Dummy Bots from being used in Elimination\n- Fixed an issue preventing the Communicate action from working on Dummy Bots\n- “Is Dummy Bot” now returns the correct value when given an argument other than “Event Player”\n- Fixed an issue preventing ray casts from colliding with certain objects\n- Fixed issues with certain colors not working properly with HUD Text, In-World Text, and Create Icon\n- Fixed an issue preventing Set Objective Description from working\n- Fixed some discrepancies with Point Capture Percentage between certain modes\n- Fixed an issue preventing rules from being properly disabled if the player target was a hero\n- Fixed an issue preventing Soldier: 76 dummy bots from being able to Sprint\n- Fixed an issue preventing null entities returned from Ray Cast Hit Player from being equivalent to null\n- Fixed an issue preventing Disallow Button from disabling the Interact Button\n- Fixed a bug where accessing other menus while in the Workshop caused any recent unsaved changes to be lost",
+     "dev": null
+    },
+    {
+     "title": "Maps",
+     "body": "- Volskaya - Removed a gap in the walls near point B that allowed D.Va bombs to kill players behind walls\n- Nepal: Sanctum - Removed a tiny gap in the windows near the capture point on Nepal: Sanctum that allowed D.Va bombs to kill players behind walls",
+     "dev": null
+    },
+    {
+     "title": "Heroes",
+     "body": "Ana\n\nDoomfist\n\nD.Va\n\nMoira\n\nRoadhog\n\nSombra\n\n- Fixed a bug where Sombra rarely would not properly translocate to a payload",
+     "dev": null
+    }
+   ]
+  }
+ ],
+ "raw_text": null,
+ "hash": "sha256:2f331279d31742bf311e25ad973f5c99dd17d6fb6257033ce7b4449753a60c11"
 }
