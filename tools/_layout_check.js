@@ -59,6 +59,27 @@ async function main() {
     check(!legacy.hasRawText, "legacy: no raw-text blob (structured)", failures);
     check(legacy.hasAvatar, "legacy: hero avatar rendered", failures);
 
+    // non-square ability icons (wide weapon art) must keep their ratio:
+    // object-fit contain + a rendered box wider than tall, never squished
+    await page.waitForFunction(() =>
+      [...document.querySelectorAll(".ability-icon")].some((i) => i.naturalWidth > 0));
+    const iconRatio = await page.evaluate(() => {
+      const wide = [...document.querySelectorAll(".ability-icon")]
+        .find((i) => i.naturalWidth > i.naturalHeight);
+      if (!wide) return { found: false };
+      const r = wide.getBoundingClientRect();
+      return {
+        found: true,
+        objectFit: getComputedStyle(wide).objectFit,
+        wide: r.width > r.height,
+        rect: `${Math.round(r.width)}x${Math.round(r.height)}`,
+      };
+    });
+    check(iconRatio.found, "icon ratio: wide ability icon found", failures);
+    check(iconRatio.objectFit === "contain",
+      `icon ratio: object-fit ${iconRatio.objectFit}`, failures);
+    check(iconRatio.wide, `icon ratio: wide icon renders wide (${iconRatio.rect})`, failures);
+
     // modern page: TOC visible, article in column 2, intro padded 16px
     await page.goto(`http://127.0.0.1:${PORT}/patch.html?id=p-2026-08-11-1`);
     await page.waitForSelector(".patch-toc a");
