@@ -62,7 +62,8 @@ async function main() {
     // non-square ability icons (wide weapon art) must keep their ratio:
     // object-fit contain + a rendered box wider than tall, never squished
     await page.waitForFunction(() =>
-      [...document.querySelectorAll(".ability-icon")].some((i) => i.naturalWidth > 0));
+      [...document.querySelectorAll(".ability-icon")]
+        .some((i) => i.naturalWidth > i.naturalHeight && i.complete));
     const iconRatio = await page.evaluate(() => {
       const wide = [...document.querySelectorAll(".ability-icon")]
         .find((i) => i.naturalWidth > i.naturalHeight);
@@ -79,6 +80,8 @@ async function main() {
     check(iconRatio.objectFit === "contain",
       `icon ratio: object-fit ${iconRatio.objectFit}`, failures);
     check(iconRatio.wide, `icon ratio: wide icon renders wide (${iconRatio.rect})`, failures);
+    check(Number(iconRatio.rect.split("x")[0]) <= 60,
+      `icon ratio: box capped at 60px (${iconRatio.rect})`, failures);
 
     // modern page: TOC visible, article in column 2, intro padded 16px
     await page.goto(`http://127.0.0.1:${PORT}/patch.html?id=p-2026-08-11-1`);

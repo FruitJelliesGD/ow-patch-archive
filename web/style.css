@@ -219,6 +219,7 @@ main { max-width: 960px; margin: 0 auto; padding: 20px; }
 }
 .ability-icon {
   width: auto;
+  min-width: 20px; /* reserve space before lazy load (square icons: 20x20) */
   height: 20px;
   max-width: 60px;
   border-radius: 4px;
@@ -276,6 +277,7 @@ body.patch-page main { max-width: 1180px; }
 [id^="sec-"], [id^="hero-"], [id^="blk-"] { scroll-margin-top: 16px; }
 .legacy-icon {
   width: auto;
+  min-width: 20px;
   height: 20px;
   max-width: 60px;
   border-radius: 4px;
