@@ -8,14 +8,6 @@
  "sections": [
   {
    "type": "generic_update",
-   "title": "",
-   "role": null,
-   "description": "A new patch is now live on Windows PC. Read below to learn more about the latest changes.\n\nTo share your feedback, please post in the General Discussion forum For a list of known issues, visit our Bug Report forum. For troubleshooting assistance, visit our Technical Support forum.",
-   "heroes": [],
-   "blocks": []
-  },
-  {
-   "type": "generic_update",
    "title": "HALLOWEEN TERROR 2019",
    "role": null,
    "description": "The fright for the future returns!\n\nWe’re celebrating the scariest time of the year with a seasonal event: Overwatch Halloween Terror! Expand your collection of spooky gear and relive the chilling tale of Junkenstein's Revenge in our limited-time PvE brawl. Overcome weekly challenges with wins in Quick Play, Competitive Play, or Arcade to earn a series of uniquely chilling rewards!\n\nYou'll also be able to unlock new seasonal items—including new legendary skins like Pharaoh Ana, Warlock Ashe, and Will-o’-Wisp Tracer—to add to our growing collection from previous years.\n\nLearn more about Halloween Terror here .",
@@ -671,12 +663,12 @@
     },
     {
      "title": "Heroes",
-     "body": "Brigitte\n\nDoomfist\n\nSigma\n\nSombra\n\nWinston\n\n- Fixed a bug that caused Winston’s Barrier Projector to not consistently play its destroyed visual effects",
+     "body": "Brigitte\n\n- Fixed a bug with Brigitte's Rally checking line of sight from her feet instead of from her head\n- Fixed a bug with Inspire's position being affected by the player’s aim pitch\n\nDoomfist\n\n- Fixed a bug that could cause Doomfist's Rocket Punch to not travel forward if he was sliding along a wall while airborne\n- Fixed a bug that caused Rocket Punch to briefly stop all movement on a Fortified Orisa\n- Fixed a bug that allowed Doomfist to use Meteor Strike before taking impact damage from Sigma’s Gravitic Flux\n\nSigma\n\n- Fixed a bug that allowed Sigma's Gravitic Flux to ignore line of sight through some ceilings\n\nSombra\n\n- Fixed a bug with EMP's position being affected by player’s aim pitch\n\nWinston\n\n- Fixed a bug that caused Winston’s Barrier Projector to not consistently play its destroyed visual effects",
      "dev": null
     }
    ]
   }
  ],
  "raw_text": null,
- "hash": "sha256:0e8b20b2de41958561c5cde0eee259fddfcca1f8298bb80ffbd9424b58b1d1e6"
+ "hash": "sha256:b2de8ad7f474f5287331af42319ea494a4def1c56da214d8e7e4644eed1cce4c"
 }

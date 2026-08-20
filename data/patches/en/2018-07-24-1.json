@@ -8,14 +8,6 @@
  "sections": [
   {
    "type": "generic_update",
-   "title": "",
-   "role": null,
-   "description": "A new patch is now live on Windows PC. Read below to learn more about the latest changes.\n\nTo share your feedback, please post in the General Discussion forum For a list of known issues, visit our Bug Report forum. For troubleshooting assistance, visit our Technical Support forum.",
-   "heroes": [],
-   "blocks": []
-  },
-  {
-   "type": "generic_update",
    "title": "PATCH HIGHLIGHTS",
    "role": null,
    "description": null,
@@ -251,7 +243,7 @@
     },
     {
      "title": "Heroes",
-     "body": "General\n\nBrigitte\n\nDoomfist\n\nD.Va\n\nGenji\n\nHanzo\n\nJunkrat\n\nMei\n\nMercy\n\nMoira\n\nReinhardt\n\nRoadhog\n\nSombra\n\nSymmetra\n\nTracer\n\nZarya\n\nWidowmaker\n\n- Fixed a bug that prevented Widowmaker from grappling to some walls",
+     "body": "General\n\n- Fixed a bug that prevented heroes from playing a hit reaction animation when shot\n\nBrigitte\n\n- Fixed a bug that prevented Brigitte from dashing forward when using Shield Bash if she was airborne due to Doomfist’s Rising Uppercut\n- Fixed a bug that caused Brigitte’s portrait to show a non-existent ponytail with her Shieldmaiden skin equipped\n\nDoomfist\n\n- Fixed a bug that caused Doomfist’s Rocket Punch to stop if he hit Symmetra’s Turret when it was in midair\n- Fixed a bug that prevented Doomfist’s Meteor Strike from hitting Reinhardt if he faced his Field Barrier upward\n- Fixed a bug with Doomfist’s Rocket Punch that prevented it from canceling Genji’s Cyber-agility, Lúcio’s Wall Ride, or Hanzo’s Wall Climb on impact\n- Fixed a bug that prevented Doomfist’s Meteor Strike impact visual effect from occurring\n- Fixed a bug that caused Doomfist to plummet to his death if he used Meter Strike in the basement of the Château Guillard Deathmatch map\n\nD.Va\n\n- Fixed a bug that prevented D.Va’s mech rear hatch from connecting to her mech when viewing D.Va’s Peace Victory Pose.\n\nGenji\n\n- Fixed a bug that caused Genji’s kneepad to clip into his legs when wearing his Classic skin\n- Fixed a bug that caused Genji’s knees to pop while shifting his weight during his idle animation in the Hero Gallery\n\nHanzo\n\n- Fixed a bug that sometimes caused Hanzo’s Dragonstrike projectile to fire backward\n\nJunkrat\n\n- Fixed a bug that prevented Junkrat’s Frag Launcher grenades from dealing the correct amount of damage on direct hits\n- Fixed a bug that allowed Junkrat to set multiple Steel Traps in Custom Games\n- Fixed a bug that prevented teammates from viewing Junkrat’s respawn timer if he died while piloting RIP-Tire\n- Fixed a bug that allowed the player to move the camera when Junkrat’s RIP-Tire was frozen\n- Fixed a bug that caused Junkrat’s Frag Launcher grenades to get stuck in certain terrain\n\nMei\n\n- Fixed a bug that caused Mei’s Ice Wall to be destroyed if Sombra hacked her\n\nMercy\n\n- Fixed a bug with Mercy that caused her Cadeceus Staff and Cadeceus Blaster to appear missing when using quick melee and weapon swap simultaneously\n- Fixed a bug that allowed Mercy to damage boost certain abilities (e.g. Hanzo’s Dragonstrike, D.Va’s Self-Destruct, and Junkrat’s Steel Trap)\n\nMoira\n\n- Fixed a bug that prevented Moira’s Healing Orb from healing friendly training bots in the Practice Range\n- Fixed a bug that prevented Moira’s Biotic Orbs from trigging controller vibration when using a controller\n\nReinhardt\n\n- Fixed a bug that prevented Reinhardt’s Charge from propelling him forward if he was airborne due to Doomfist’s Rising Uppercut\n\nRoadhog\n\n- Fixed a bug that allowed Roadhog’s Chain Hook target to be pulled to his new location when he used Symmetra’s Teleporter\n\nSombra\n\n- Fixed a bug that allowed Sombra to push and contest payloads while invisible\n- Fixed a bug that caused parts of Sombra’s Translocator to be invulnerable\n- Fixed a bug that allowed Sombra to reach unintended locations\n\nSymmetra\n\n- Fixed a bug that prevented Symmetra’s Turrets from displaying a red outline when viewed by the enemy team\n- Fixed a bug that caused Reinhardt’s Earthshatter to sometimes go through Symmetra’s Photon Barrier\n- Fixed a bug that prevented Symmetra’s Teleporter from using visual effects with her Oasis skin equipped\n- Fixed a bug that allowed Symmetra to receive credit toward her Huge Success achievement if she teleported her Sentry Turrets\n- Fixed a bug that prevented Symmetra’s Photon Barrier from destroying existing ones when placing a new one in Deathmatch\n- Fixed a bug that allowed Symmetra’s Sentry Turrets to shoot enemies through walls when placed on uneven surfaces\n- Fixed a bug that caused Symmetra’s Teleport telegraph to cancel if she fell off a ledge while placing it\n\nTracer\n\n- Fixed a bug that allowed Tracer to gain capture point progress during her Recall ability\n\nZarya\n\n- Fixed a bug that prevented Zarya’s Particle Cannon from gaining energy when attacked by an enemy Symmetra or Zarya if they were too close to her when she used Particle Barrier\n\nWidowmaker\n\n- Fixed a bug that prevented Widowmaker from grappling to some walls",
      "dev": null
     },
     {
@@ -268,5 +260,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:7522213e181e8346dc9bea9b2cf8ef13264e620b44a07280d2cb3604f1105e30"
+ "hash": "sha256:769e2235c40289247ff1018a5d4c634479cc80e2bbf241efa42f5789ea04d67a"
 }

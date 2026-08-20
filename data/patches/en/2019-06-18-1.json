@@ -8,14 +8,6 @@
  "sections": [
   {
    "type": "generic_update",
-   "title": "",
-   "role": null,
-   "description": "A new patch is now live on Windows PC. Read below to learn more about the latest changes.\n\nTo share your feedback, please post in the General Discussion forum For a list of known issues, visit our Bug Report forum. For troubleshooting assistance, visit our Technical Support forum.",
-   "heroes": [],
-   "blocks": []
-  },
-  {
-   "type": "generic_update",
    "title": "PATCH HIGHLIGHTS",
    "role": null,
    "description": null,
@@ -256,7 +248,7 @@
    "blocks": [
     {
      "title": "Assault",
-     "body": "Additionally, sometimes Defenders fight late with good intentions at Point A and end up staggered from their team when A falls, leaving their team with uneven footing to defend a rush to B. In these situations, temporarily lowering the respawn time to get those Defenders back with their team should be a better match experience and doesn't punish players so harshly for wanting to defend Point A.",
+     "body": "- Time awarded for capturing Point A on all Assault maps has been reduced from 4 minutes to 3 minutes.\n- Upon losing Point A, any defenders that are dead, or that die shortly thereafter, will have a maximum respawn of 3.5 seconds.\n\nAdditionally, sometimes Defenders fight late with good intentions at Point A and end up staggered from their team when A falls, leaving their team with uneven footing to defend a rush to B. In these situations, temporarily lowering the respawn time to get those Defenders back with their team should be a better match experience and doesn't punish players so harshly for wanting to defend Point A.",
      "dev": "Assault match lengths are averaging higher than we're happy with, particularly in Competitive where there are multiple rounds. We're also concerned with how often Offense fully captures Point A and Point B. Reducing the round time from 8 to 7 minutes should address both these concerns, as less overall time rewards better Defense."
     }
    ]
@@ -294,12 +286,12 @@
     },
     {
      "title": "Heroes",
-     "body": "Ana\n\nBaptiste\n\nBrigitte\n\nDoomfist\n\nGenji\n\nHanzo\n\nLucio\n\nOrisa\n\nRoadhog\n\nSombra\n\nSymmetra\n\nTorbjörn\n\n- Fixed a bug that prevented some of Torbjörn's visual effects from being applied when he used Overload with certain skins equipped.\n- Fixed a bug that caused Torbjörn's turret to sometimes destroy itself.",
+     "body": "Ana\n\n- Anti-Heal will be cleared when Sombra uses her translocator to teleport.\n\nBaptiste\n\n- Fixed a bug that caused Ana's shot sound effects to be played on Baptiste when his Immortality Field is hit by her Primary Fire.\n\nBrigitte\n\n- Enemy barriers now block line-of-sight for Brigitte's Rally.\n- Fixed a bug where armor damage mitigation was too effective when multiple instances of armor were stacked on top of each other.\n\nDoomfist\n\n- Fixed a bug that allowed Doomfist to access out-of-bounds areas of the the Havana map during his ultimate.\n- Fixed an issue where Doomfist's Rocket Punch would sometimes impact stairs.\n- Fixed issue where Doomfist's Seismic Slam was not showing its electricity effect on affected entities.\n- Fixed a bug that could result in Seismic Slam not hitting targets when it should.\n\nGenji\n\n- Fixed a bug that prevented Genji’s damage boost from being applied to deflected projectiles.\n\nHanzo\n\n- Fixed a bug that caused Hanzo's targeting reticle to appear on kill cam for players killed by his Dragonstrike Ultimate.\n- Fixed a bug that caused Hanzo's hands to clip into his legs during the Meditate emote on several skins (Cyberninja, Lone Wolf, Scion, Young Master).\n\nLucio\n\n- Fixed a bug that prevented portions of Lucio's 2019 Pacific All-Stars skin from being visible in highlight and in-game portraits.\n\nOrisa\n\n- Fixed a bug that caused Supercharger to self-destruct when placed in certain locations.\n\nRoadhog\n\n- Fixed a bug that allowed Roadhog's hook to function when he was hacked by Sombra.\n\nSombra\n\n- Translocator will now escape slippery surfaces more easily and not be able to be stuck to them.\n- Fixed an issue where a material effect on Sombra’s hair would cause it to cast a shadow while invisible.\n\nSymmetra\n\n- Resolved an issue where Enemy and Friendly UI color options were incorrectly being applied to Symmetra’s Photon Barrier.\n\nTorbjörn\n\n- Fixed a bug that prevented some of Torbjörn's visual effects from being applied when he used Overload with certain skins equipped.\n- Fixed a bug that caused Torbjörn's turret to sometimes destroy itself.",
      "dev": null
     }
    ]
   }
  ],
  "raw_text": null,
- "hash": "sha256:78e5dcceed858bed9e79777b51843465b556754373bd54ea9bbceac20825b611"
+ "hash": "sha256:e26b83432de0ef1395e9b8b62fbf5ca742c4e5cd14a1cd35eb1212214ac62227"
 }

@@ -8,14 +8,6 @@
  "sections": [
   {
    "type": "generic_update",
-   "title": "",
-   "role": null,
-   "description": "A new patch is now live on Windows PC. Read below to learn more about the latest changes.\n\nTo share your feedback, please post in the General Discussion forum For a list of known issues, visit our Bug Report forum. For troubleshooting assistance, visit our Technical Support forum.",
-   "heroes": [],
-   "blocks": []
-  },
-  {
-   "type": "generic_update",
    "title": "PATCH HIGHLIGHTS",
    "role": null,
    "description": null,
@@ -71,17 +63,17 @@
     },
     {
      "title": "Maps",
-     "body": "Hanamura\n\nHavana (PvP)\n\nNumbani\n\n- Updated lighting for highlight intros.",
+     "body": "Hanamura\n\n- Fixed a bug that allowed certain heroes to become stuck in the roof outside of Point B.\n- Fixed a bug that allowed some heroes to float between building rooftops near the Point A choke.\n\nHavana (PvP)\n\n- Fixed a bug that allowed a defender to enter the attacker's spawn room (left exit, 2nd attack spawn room).\n\nNumbani\n\n- Updated lighting for highlight intros.",
      "dev": null
     },
     {
      "title": "Heroes",
-     "body": "Baptiste\n\nDoomfist\n\nD.Va\n\nBaptiste\n\nHanzo\n\nRoadhog\n\nMoira\n\nSombra\n\nTorbjörn\n\nWinston\n\nWrecking Ball\n\nZenyatta\n\n- Fixed a bug that caused Zenyatta's in-game and highlights portrait to not display his Zen-Nakji skin.",
+     "body": "Baptiste\n\n- Fixed a bug where Baptiste's Amplification Matrix was not boosting healing effects.\n\nDoomfist\n\n- Fixed a bug where Seismic Slam could fail to register.\n\nD.Va\n\n- Fixed a bug where D.Va's Defense Matrix would fail to absorb projectiles around a corner in certain circumstances.\n\nBaptiste\n\n- Fixed a visual inconsistency with Baptiste's head with his Spec Ops skin equipped.\n\nHanzo\n\n- Fixed a bug that could cause a dead Hanzo's bow to appear floating above the ground, when that Hanzo had his Kabuki skin equipped.\n\nRoadhog\n\n- Fixed a bug where Roadhog's chain would sometimes not render in first person.\n\nMoira\n\n- Fixed a bug where Moira's Coalescence would sometimes not render in first person.\n- Fixed a bug where Moira was still briefly visible after using Fade.\n\nSombra\n\n- Fixed a bug where Sombra's Translocator would be on cooldown after respawning.\n- Fixed a bug where an enemy could sometimes use an ability if Sombra hacked them while they were already hacked via EMP.\n\nTorbjörn\n\n- Fixed a bug that made it possible to use Torbjörn's Molten Core and hammer at the same time.\n\nWinston\n\n- Fixed a bug that caused Winston's nameplate and health bar to be covered by his body when he used Primal Rage.\n\nWrecking Ball\n\n- Fixed a bug that allowed Wrecking Ball's mines to be destroyed by an enemy Wrecking Ball rolling through them without taking damage.\n\nZenyatta\n\n- Fixed a bug that caused Zenyatta's in-game and highlights portrait to not display his Zen-Nakji skin.",
      "dev": null
     }
    ]
   }
  ],
  "raw_text": null,
- "hash": "sha256:7f3abc936753440b90c26de2cd5b2770d0bc2e1189f6b9a427e87967ac24ae0b"
+ "hash": "sha256:6a12f5841a56d883c59728be05dd816167bb0532c2d8391179928bbc9b6f5b0c"
 }

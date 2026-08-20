@@ -7,30 +7,175 @@
  "seq": 1,
  "sections": [
   {
-   "type": "generic_update",
-   "title": "",
-   "role": null,
-   "description": "A new patch is now live on Windows PC. Read below to learn about the latest changes.",
-   "heroes": [],
-   "blocks": []
-  },
-  {
-   "type": "generic_update",
+   "type": "hero_update",
    "title": "HERO BALANCE CHANGES",
    "role": null,
-   "description": "- Peacekeeper\n\n\n  - Alternate Fire\n\n\n    - Recovery time (i.e. the amount of time before McCree starts reloading) decreased from 0.75 seconds to 0.3 seconds\n    - Bullet damage decreased from 70 to 45\n\n- Widow’s Kiss\n\n\n  - Alternate Fire (Scoped Shot)\n\n\n    - Base damage decreased from 15 to 12\n\n\n      - Note: Scoped shot damage multiplier remains unchanged\n    - Headshot damage multiplier increased from 2x to 2.5x\n    - Players must now wait for the unscoping animation to completely finish before scoping\n- Infra-Sight\n\n\n  - Ultimate cost increased by 10%",
-   "heroes": [],
+   "description": null,
+   "heroes": [
+    {
+     "slug": "cassidy",
+     "name_en": "Cassidy",
+     "name_cn": "卡西迪",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "McCree was performing too well against all targets, making him feel like a must-pick in many situations. By reducing the damage of his alternate fire, McCree is now significantly weaker against tanks like Roadhog and Reinhardt, but still maintains his lethality against smaller targets like Tracer and Genji.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Peacekeeper",
+       "name_cn": "维和者",
+       "slug": "peacekeeper",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": "Recovery time (i.e. the amount of time before McCree starts reloading) decreased from 0.75 seconds to 0.3 seconds",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": "Bullet damage decreased from 70 to 45",
+         "text_cn": null,
+         "before": 70.0,
+         "after": 45.0,
+         "by": -25.0,
+         "by_pct": null,
+         "metric": "bullet damage",
+         "raw_metric": "bullet damage",
+         "unit": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "widowmaker",
+     "name_en": "Widowmaker",
+     "name_cn": "黑百合",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "In the right hands, Widowmaker can often feel unstoppable—even when just landing body shots instead of critical heads shots. The changes to her alternate fire weaken body shot damage while leaving her headshot damage unchanged. Additionally, we felt her Ultimate ability, Infra-Sight, was coming up a little too frequently, especially considering its impact on the game.",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Widow’s Kiss",
+       "name_cn": "寡妇之吻",
+       "slug": "widow-s-kiss",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": "Alternate Fire (Scoped Shot)",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": "Base damage decreased from 15 to 12",
+         "text_cn": null,
+         "before": 15.0,
+         "after": 12.0,
+         "by": -3.0,
+         "by_pct": null,
+         "metric": "base damage",
+         "raw_metric": "base damage",
+         "unit": null
+        },
+        {
+         "text_en": "Note: Scoped shot damage multiplier remains unchanged",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": "Headshot damage multiplier increased from 2x to 2.5x",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": "Players must now wait for the unscoping animation to completely finish before scoping",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Infra-Sight",
+       "name_cn": "红外侦测",
+       "slug": "infra-sight",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": "Ultimate cost increased by 10%",
+         "text_cn": null,
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 10.0,
+         "metric": "ultimate_cost",
+         "raw_metric": "ultimate cost",
+         "unit": null
+        }
+       ]
+      }
+     ]
+    }
+   ],
    "blocks": []
   },
   {
    "type": "generic_update",
    "title": "BUG FIXES",
    "role": null,
-   "description": "- Improved stability of the High Bandwidth option in Custom Games\n\n- Fixed a bug that allowed Mercy to gain Ultimate charge whenever damage boosting an ally who was attacking a barrier or Ice Wall\n- Fixed a bug that allowed Reaper to Shadow Step to unintended locations on certain maps\n\n- Fixed an issue with collision on certain areas of Dorado not blocking line of sight",
+   "description": null,
    "heroes": [],
-   "blocks": []
+   "blocks": [
+    {
+     "title": "General",
+     "body": "- Improved stability of the High Bandwidth option in Custom Games",
+     "dev": null
+    },
+    {
+     "title": "Heroes",
+     "body": "- Fixed a bug that allowed Mercy to gain Ultimate charge whenever damage boosting an ally who was attacking a barrier or Ice Wall\n- Fixed a bug that allowed Reaper to Shadow Step to unintended locations on certain maps",
+     "dev": null
+    },
+    {
+     "title": "Maps",
+     "body": "- Fixed an issue with collision on certain areas of Dorado not blocking line of sight",
+     "dev": null
+    }
+   ]
   }
  ],
  "raw_text": null,
- "hash": "sha256:4029ac08beacd08cf9d18c6264a2238131c5c11252f3cc6db766fec6adaa29cd"
+ "hash": "sha256:24fca94fddd1d818fb35c86a12be6f05b4bb69d38d1c0562930e7a94fd72412b"
 }

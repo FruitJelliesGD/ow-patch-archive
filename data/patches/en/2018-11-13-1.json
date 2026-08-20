@@ -10,7 +10,7 @@
    "type": "generic_update",
    "title": "",
    "role": null,
-   "description": "A new patch is now live on Windows PC. Read below to learn more about the latest changes.\n\nTo share your feedback, please post in the General Discussion forum For a list of known issues, visit our Bug Report forum. For troubleshooting assistance, visit our Technical Support forum.",
+   "description": null,
    "heroes": [],
    "blocks": [
     {
@@ -310,12 +310,12 @@
     },
     {
      "title": "Heroes",
-     "body": "Brigitte\n\nDoomfist\n\nJunkrat\n\nLúcio\n\nOrisa\n\nReinhardt\n\nRoadhog\n\nSymmetra\n\nTorbjörn\n\nTracer\n\nWrecking Ball\n\nZarya\n\n- Fixed a bug that allowed heroes to charge through a Graviton Surge without getting trapped",
+     "body": "Brigitte\n\n- Fixed a bug that prevented Brigitte’s Whip Shot from going on cooldown if it was interrupted before the chain retracted\n\nDoomfist\n\n- Fixed a bug that prevented victims of Doomfist’s Rocket Punch from ragdolling if they were eliminated by it\n- Fixed a bug that prevented Doomfist’s Rising Uppercut from damaging enemies\n- Fixed a bug that prevented Doomist’s Seismic Slam from dealing damage if he hit by a knockback ability the moment he landed\n\nJunkrat\n\n- Fixed a bug that caused Junkrat to return to his idle animation if he was stunned while using RIP-Tire\n\nLúcio\n\n- Fixed a bug that caused some allied heroes to say their “under attack” voice lines when receiving a friendly Sound Barrier\n\nOrisa\n\n- Fixed bug that prevented Orisa’s Fortify from canceling Doomfist’s Rising Uppercut air control effects\n\nReinhardt\n\n- Fixed a bug that allowed Reinhardt’s Earthshatter to hit Brigitte when she blocked it with her Barrier Shield if she was strafing during high latency periods\n\nRoadhog\n\n- Fixed a bug that prevented Chain Hook from going on cooldown if it was interrupted before the chain retracted\n- Fixed a bug that prevented Chain Hook from destroying breakable objects when pulling the target backward\n- Fixed a bug that caused Roadhog’s Whole Hog visual effects to cover a wider area than the spread of projectiles\n\nSymmetra\n\n- Fixed a bug that prevented Symmetra to charge up her primary weapon on enemy ice walls\n\nTorbjörn\n\n- Fixed a bug that prevented Santaclad Torbjörn’s ultimate voice lines from playing when activating Molten Core\n- Fixed a visual issue that prevented Molten Core’s magma globules from appearing in the correct place with his Barbarossa or Blackbeard skins equipped\n- Fixed an animation issue that caused Torbjörn’s claw arm to suddenly appear when Overload and Molten Core were used in quick succession\n\nTracer\n\n- Fixed an issue that caused Tracer to accelerate slightly slower and decelerate slightly faster than other heroes\n\nWrecking Ball\n\n- Fixed a bug that prevented Wrecking Ball voice lines from playing when previewed after opening a Loot Box\n\nZarya\n\n- Fixed a bug that allowed heroes to charge through a Graviton Surge without getting trapped",
      "dev": null
     },
     {
      "title": "Hero Gallery",
-     "body": "General\n\nSocial\n\n- Fixed a bug that allowed players to hear the voice lines of heroes controlled by players they muted",
+     "body": "General\n\n- Fixed an issue that caused some heroes legs to twitch when viewed in the Hero Gallery\n- Fixed a bug that prevented players from rotating heroes in the Hero Gallery while the UI was hidden\n\nSocial\n\n- Fixed a bug that allowed players to hear the voice lines of heroes controlled by players they muted",
      "dev": null
     },
     {
@@ -327,5 +327,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:1631035978985f034c87c2be6cb066ff86842e952af8834175dc743dc901031c"
+ "hash": "sha256:e25e6f09c97f2a95c8b2f33b674c82617de3a1fe7483be71247de9b41bd28a88"
 }

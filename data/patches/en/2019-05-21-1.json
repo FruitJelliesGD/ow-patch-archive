@@ -8,14 +8,6 @@
  "sections": [
   {
    "type": "generic_update",
-   "title": "",
-   "role": null,
-   "description": "A new patch is now live on Windows PC. Read below to learn more about the latest changes.\n\nTo share your feedback, please post in the General Discussion forum For a list of known issues, visit our Bug Report forum. For troubleshooting assistance, visit our Technical Support forum.",
-   "heroes": [],
-   "blocks": []
-  },
-  {
-   "type": "generic_update",
    "title": "PATCH HIGHLIGHTS",
    "role": null,
    "description": null,
@@ -132,7 +124,7 @@
     },
     {
      "title": "Heroes",
-     "body": "Baptiste\n\nD.Va\n\nDoomfist\n\nGenji\n\nHanzo\n\nJunkrat\n\nMoira\n\nOrisa\n\nWrecking Ball\n\n- Fixed a bug where Wrecking Ball could use Piledriver without regard to its ability cooldown in some circumstances",
+     "body": "Baptiste\n\n- Fixed a bug where Immortality Field would become stuck under some objects\n- Fixed a bug where Immortality Field would behave oddly when placed on a moving platform\n- Fixed a bug where a healing grenade would appear in his Biotic Launcher when it is out of ammo\n- Fixed a bug where the healing grenades from the Biotic Launcher wouldn’t hit teammates when deflected by Genji’s Deflect\n\nD.Va\n\n- Fixed a bug where D.Va’s speed when using Boosters decreased dramatically when flying over some platforms\n\nDoomfist\n\n- Fixed an issue where Seismic Slam would sometimes not damage people when it should have\n\nGenji\n\n- Fixed a bug where Genji couldn’t climb up certain pillars on the Havana map\n\nHanzo\n\n- Fixed a bug where Hanzo couldn’t climb up certain pillars on the Havana map\n\nJunkrat\n\n- Fixed a bug where Junkrat would slide off a moving platform when using his ultimate\n\nMoira\n\n- Fixed a bug with Moira’s Scientist skin where her lab coat would clip into itself while using the Erlenmeyer victory pose\n\nOrisa\n\n- Fixed a bug where damage boosting from a teammate’s ability (such as Baptiste’s Amplification Matrix) would count towards Orisa’s damage amplified statistic when using Supercharger\n\nWrecking Ball\n\n- Fixed a bug where Wrecking Ball could use Piledriver without regard to its ability cooldown in some circumstances",
      "dev": null
     }
    ]
@@ -158,5 +150,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:1ad535d1d40ce44a90a31d75d5ab7e078508e1ee28228da0b2f0d0a77edb63ee"
+ "hash": "sha256:3601caec381c25efeaa3da8cb6506c225afe92c3b5f92631d8d65b0819db8d0e"
 }

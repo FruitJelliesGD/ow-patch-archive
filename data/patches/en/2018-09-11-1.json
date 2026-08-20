@@ -8,14 +8,6 @@
  "sections": [
   {
    "type": "generic_update",
-   "title": "",
-   "role": null,
-   "description": "A new patch is now live on PC. Read below to learn more about the latest changes.\n\nTo share your feedback, please post in the General Discussion forum For a list of known issues, visit our Bug Report forum. For troubleshooting assistance, visit our Technical Support forum.",
-   "heroes": [],
-   "blocks": []
-  },
-  {
-   "type": "generic_update",
    "title": "PATCH HIGHLIGHTS",
    "role": null,
    "description": null,
@@ -253,7 +245,7 @@
       {
        "name_en": "Widow's Kiss",
        "name_cn": "寡妇之吻",
-       "slug": "widows-kiss",
+       "slug": "widow-s-kiss",
        "icon": null,
        "changes": [
         {
@@ -341,12 +333,12 @@
     },
     {
      "title": "Heroes",
-     "body": "Brigitte\n\nDoomfist\n\nD.Va\n\nHanzo\n\nMei\n\nMercy\n\nReaper\n\nRoadhog\n\nReinhardt\n\nSombra\n\nSymmetra\n\nWidowmaker\n\nWrecking Ball\n\n- Fixed a bug that prevented Wrecking Ball’s Piledriver from dealing falloff damage\n- Fixed a bug that allowed Wrecking Ball’s Piledriver to deal damage twice if he slid off the environment during its duration\n- Fixed a bug that allowed Wrecking Ball’s primary fire to continue working even if it was disabled in custom game",
+     "body": "Brigitte\n\n- Fixed a bug that caused Brigitte’s Shield Bash movement to be interrupted when she impacted Symmetra’s turrets\n\nDoomfist\n\n- Fixed a bug that caused Doomfist’s Seismic Slam to cancel when using Symmetra’s Teleporter\n\nD.Va\n\n- Fixed a bug that allowed D.Va to escape the map if she used Call Mech while standing on Mei’s Ice Wall\n\nHanzo\n\n- Fixed a bug that caused the Dragonstrike arrow's size to be larger than his other arrows\n\nMei\n\n- Fixed a bug that caused Mei’s Cryo-freeze to block the line of sight for Mei’s Blizzard\n\nMercy\n\n- Fixed a bug that allowed Mercy to gain ultimate charge from using her damage beam on attacks that cannot be damage boosted\n\nReaper\n\n- Fixed a bug that prevented Reaper’s Shadow Step from going on cooldown if he was interrupted\n\nRoadhog\n\n- Fixed a bug that sometimes caused Roadhog’s Chain Hook to break after hitting an enemy while maintaining line of sight\n- Fixed a bug that prevented Roadhog’s alternate fire from calculating falloff damage correctly\n- Fixed a bug that sometimes prevented Reinhardt’s Earthshatter from landing if he was launched into the air while activating it\n\nReinhardt\n\n- Fixed a bug that allowed Reinhardt to pin targets that were behind him when using Charge\n- Fixed a bug that prevented Reinhardt from pinning some targets when he turned during Charge\n- Fixed a bug that allowed Reinhardt to use Earthshatter while standing on an enemy’s head\n- Fixed a bug that sometimes prevented Reinhardt’s Earthshatter from hitting enemies standing on a payload\n- Fixed a bug that prevented Reinhardt’s Earthshatter from traveling up certain inclines\n\nSombra\n\n- Fixed a bug that prevented Sombra from translocating to a moving platform\n- Fixed a bug that prevented Sombra from destroying her Translocator if she was stunned or hacked\n- Fixed a bug that prevented Sombra’s Translocator from accurately indicating where Sombra would arrive when the ability was used\n\nSymmetra\n\n- Fixed a bug that prevented Sombra’s Hack from canceling Symmetra’s Photon Barrier placement\n- Fixed a bug that caused Symmetra’s teleport UI to persist after being eliminated\n\nWidowmaker\n\n- Fixed a bug that prevented Widowmaker’s Grappling Hook from connecting to some ledges\n- Fixed a bug that caused Widowmaker’s scoped shots on hero placed objects to count against her Scoped Weapon Accuracy statistic (e.g. Symmetra’s Teleporter, Torbjörn’s autocannon)\n\nWrecking Ball\n\n- Fixed a bug that prevented Wrecking Ball’s Piledriver from dealing falloff damage\n- Fixed a bug that allowed Wrecking Ball’s Piledriver to deal damage twice if he slid off the environment during its duration\n- Fixed a bug that allowed Wrecking Ball’s primary fire to continue working even if it was disabled in custom game",
      "dev": null
     }
    ]
   }
  ],
  "raw_text": null,
- "hash": "sha256:579f07bc084f66e2aa2fc978cd7b96956b3f656148ea4c0464208ae6041afa7b"
+ "hash": "sha256:b42627d0d77d3d6278b4a8457180437268590910ee8da29f802881b9e684d8b3"
 }

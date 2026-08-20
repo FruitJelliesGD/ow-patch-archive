@@ -8,14 +8,6 @@
  "sections": [
   {
    "type": "generic_update",
-   "title": "",
-   "role": null,
-   "description": "A new patch is now live on Windows PC, Nintendo Switch, PlayStation 4, and Xbox One. Read below to learn more about the latest changes.\n\nTo share your feedback, please post in the General Discussion forum For a list of known issues, visit our Bug Report forum. For troubleshooting assistance, visit our Technical Support forum.",
-   "heroes": [],
-   "blocks": []
-  },
-  {
-   "type": "generic_update",
    "title": "LUNAR NEW YEAR 2020",
    "role": null,
    "description": "Get ready to celebrate the Year of the Rat!\n\nThis year, we’re celebrating Lunar New Year with new seasonal items including legendary skins like Face Changer Sombra, Mask Dancer Moira, Samul Nori Lúcio, and Opera Brigitte. Experience the third competitive season of our Capture the Flag mode, in addition to a brand new game mode called Blitz CTF.\n\nTo learn more about the new mode, click here .",
@@ -296,17 +288,17 @@
     },
     {
      "title": "Maps",
-     "body": "Temple of Anubis\n\nEichenwalde\n\nJunkertown\n\nDorado\n\nRialto\n\nWatchpoint: Gibraltar\n\n- Fixed a bug that caused Baptiste's Immortality Field to disappear when thrown in a specific spot outside of the first Attacker's spawn",
+     "body": "Temple of Anubis\n\n- Fixed a bug where some heroes could get stuck behind one of the rocks outside of point B\n\nEichenwalde\n\n- Fixed a bug that could cause Wrecking Ball to become temporarily stuck when using his Piledriver in a specific location\n- Fixed a location where Doomfist could get stuck\n\nJunkertown\n\n- Fixed a bug that allowed some players to stand on a wall near the final checkpoint\n- Fixed a bug that allowed Sombra's Translocator and Baptiste's Immortality Field to land in an unintended place between the stairs and wall near point A\n\nDorado\n\n- Fixed a bug that caused the ivy growing on the wall between points A and B to block projectiles\n\nRialto\n\n- Fixed a bug that could cause Winston and Sigma to become stuck between the wall, bridge, and gondola outside of Point A\n\nWatchpoint: Gibraltar\n\n- Fixed a bug that caused Baptiste's Immortality Field to disappear when thrown in a specific spot outside of the first Attacker's spawn",
      "dev": null
     },
     {
      "title": "Heroes",
-     "body": "Baptiste\n\nMercy\n\nTracer\n\nSigma\n\nSymmetra\n\n- Fixed a bug where destroying Symmetra's teleporter during construction briefly allowed her to make another without going on cooldown",
+     "body": "Baptiste\n\n- Fixed a bug that could cause Immortality Field to not deploy or get destroyed while deploying in some situations\n\nMercy\n\n- Fixed a bug that caused Mercy's gold staff and pistol to disappear while using Valkyrie when viewing in 3rd person\n\nTracer\n\n- Fixed a bug allowing players to swap heroes while using Recall\n\nSigma\n\n- Fixed a bug that could cause Sigma's shield to fail to deploy\n\nSymmetra\n\n- Fixed a bug where destroying Symmetra's teleporter during construction briefly allowed her to make another without going on cooldown",
      "dev": null
     }
    ]
   }
  ],
  "raw_text": null,
- "hash": "sha256:a8e440562f5d160d80dbb87adb3402a74bc502028c333485f2bead6b7858ef44"
+ "hash": "sha256:3b6a208f7782d70cffcddfd1ef405cfa8c64c0ac7f85ba5081017fbbc4338bbf"
 }

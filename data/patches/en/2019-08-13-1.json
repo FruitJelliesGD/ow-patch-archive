@@ -8,14 +8,6 @@
  "sections": [
   {
    "type": "generic_update",
-   "title": "",
-   "role": null,
-   "description": "A new patch is now live on Windows PC. Read below to learn more about the latest changes.\n\nTo share your feedback, please post in the General Discussion forum For a list of known issues, visit our Bug Report forum. For troubleshooting assistance, visit our Technical Support forum.",
-   "heroes": [],
-   "blocks": []
-  },
-  {
-   "type": "generic_update",
    "title": "PATCH HIGHLIGHTS",
    "role": null,
    "description": null,
@@ -52,7 +44,7 @@
     },
     {
      "title": "Workshop",
-     "body": "New Events\n\nNew Actions\n\nNew Values\n\n- Healer\n\n- Healee\n- Event Healing\n- Host Player",
+     "body": "New Events\n\n- Player Dealt Healing\n- Player Received Healing\n- Player Joined Match\n- Player Left Match\n\nNew Actions\n\n- Start Transforming Throttle\n- Stop Transforming Throttle\n\nNew Values\n\n- Healer\n\n- Healee\n- Event Healing\n- Host Player",
      "dev": "A commonly requested feature for the Workshop is the ability to track healing, so we’ve added two new event types and three new values to make this possible. We’ve also added events to make it easier to detect players joining and leaving matches. To support the creation of administrator-style privileges for custom games, the owner of the game can now be detected using Host Player. Finally, we’ve added the ability to scale, invert, and rotate a player’s input throttle to make controlling characters in third person easier."
     }
    ]
@@ -649,12 +641,12 @@
     },
     {
      "title": "Heroes",
-     "body": "Ashe\n\nDoomfist\n\nD.Va\n\nLúcio\n\nOrisa\n\nReinhardt\n\nWrecking Ball\n\nZarya\n\nZenyatta\n\n- Fixed a bug that caused a delay in Zenyatta's first person quick melee animation when interrupting his primary fire",
+     "body": "Ashe\n\n- Fixed a bug that caused her gun to clip into the camera slightly when jumping while shooting down sights\n\nDoomfist\n\n- Fixed an issue that enables Doomfist to get through doorways while using Rocket Punch and clipping the corner\n- Fixed a bug that prevented Rocket Punch from consistently destroying Sombra’s Translocator and not being stopped by it, similar to Symmetra’s turrets\n- Fixed an issue so that targets hit by Rocket Punch will now go directly backwards, instead of maintaining any lateral momentum they had\n- Fixed an issue so that targets that are immune to stun but not immune to knockback (Zarya's Particle Barrier, Zenyatta during Transcendence) are no longer able to affect knockback trajectory\n- Fixed a bug that caused Doomfist to move more slowly for the duration of Meteor Strike when using it while crouched\n- Fixed a bug that caused Doomfist to move backwards slightly slower during Meteor Strike\n\nD.Va\n\n- Fixed a bug that prevented Defense Matrix from pointing down when D.Va was aiming downward while moving\n\nLúcio\n\n- Fixed an issue that caused false positives with Lúcio’s animation landing prediction when wall riding\n\nOrisa\n\n- Fixed a bug that caused some VFX to stop playing upon successive viewings of Orisa's \"Oh!\" highlight intro in Hero Gallery\n\nReinhardt\n\n- Fixed a bug that caused charge knockback to be applied multiple times\n\nWrecking Ball\n\n- Fixed a bug that caused Wrecking Ball to get stuck in his slam animation if he landed on very flat, slippery surfaces\n- Fixed a bug that caused Wrecking Ball to be temporarily stuck when using Piledriver on slippery surfaces\n- Fixed a bug that caused Wrecking Ball to gain an incorrect amount of shields when using Adaptive Shield\n\nZarya\n\n- Fixed a bug that caused Zarya's weapon and arm to animate oddly during her emotes when viewed in third person\n\nZenyatta\n\n- Fixed a bug that caused a delay in Zenyatta's first person quick melee animation when interrupting his primary fire",
      "dev": null
     }
    ]
   }
  ],
  "raw_text": null,
- "hash": "sha256:5041198f900ab9c2e604ce1ac40d5bb886752359438339247b93bba87d3aa172"
+ "hash": "sha256:5ee78e2632f157cdb83d5f50ee81080012f8b1517bd52513323f4f78049090e4"
 }

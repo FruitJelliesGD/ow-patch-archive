@@ -8,14 +8,6 @@
  "sections": [
   {
    "type": "generic_update",
-   "title": "",
-   "role": null,
-   "description": "A new patch is now live on Windows PC. Read below to learn more about the latest changes.\n\nTo share your feedback, please post in the General Discussion forum For a list of known issues, visit our Bug Report forum. For troubleshooting assistance, visit our Technical Support forum.",
-   "heroes": [],
-   "blocks": []
-  },
-  {
-   "type": "generic_update",
    "title": "PATCH HIGHLIGHTS",
    "role": null,
    "description": null,
@@ -218,17 +210,17 @@
     },
     {
      "title": "Heroes",
-     "body": "Ana\n\nAshe\n\nBaptiste\n\nBastion\n\nDoomfist\n\nMei\n\nMercy\n\nOrisa\n\nReinhardt\n\nSoldier: 76\n\nSymmetra\n\nTorbjörn\n\nWidowmaker\n\n- Fixed a bug where Widowmaker’s rifle goes into her head and shoulders while walking and aiming her scope, when wearing the Biathalon skin\n- Fixed a bug where dying did not cancel Infra-Sight",
+     "body": "Ana\n\n- Fixed an issue with the steam not rising correctly from Ana’s cup in the Tea Time emote\n- Fixed a bug where Ana didn’t receive audio or visual cues when a hero she boosted landed a shot\n\nAshe\n\n- Fixed a bug where the Orb of Discord sound effect would play when Bob was affected by Zenyatta’s Orb of Discord\n- Fixed an issue where Bob wouldn’t consistently stop and damage large objects deployed by heroes, like Junkrat’s RIP-Tire or Orisa’s Supercharger, if he encountered them while running\n\nBaptiste\n\n- Fixed a bug where Immortality Field wasn’t immediately destroyed when it is hit by the payload\n\nBastion\n\n- Fixed a bug where Bastion would take damage while in Sentry Mode if it was hit into a wall by Doomfist’s Rocket Punch\n\nDoomfist\n\n- Fixed a bug where enemies would not collide with walls while being knocked back by Rocket Punch\n- Fixed a bug where Seismic Slam wouldn’t break objects that should break\n- Fixed an issue where Rocket Punch would knock back Orisa even if she was using Fortify\n\nMei\n\n- Fixed a bug where Mei could not be healed by other heroes while using Cryo-Freeze\n\nMercy\n\n- Fixed a bug where Mercy didn’t receive audio or visual cues when a hero she boosted landed a shot\n- Fixed a bug where Mercy didn’t receive defensive assist credit from healing beams when using Valkyrie\n\nOrisa\n\n- Fixed a bug where Orisa would take damage while using Fortify if she was hit into a wall by Doomfist’s Rocket Punch\n\nReinhardt\n\n- Fixed a bug where Reinhardt was unable to raise his shield properly while looking upwards if he had opened his shield while looking downwards\n\nSoldier: 76\n\n- Fixed a bug where his Heroic victory pose didn’t loop properly\n\nSymmetra\n\n- Fixed a bug where Symmetra would gain ultimate charge when her Sentry Turrets were attacking objects deployed by other heroes (Wrecking Ball’s Minefield, Torbjörn’s Deploy Turret, etc.)\n\nTorbjörn\n\n- Fixed a bug where Torbjörn would gain ultimate charge when his Deploy Turret was attacking objects deployed by other heroes (Wrecking Ball’s Minefield, Symmetra’s Sentry Turrets, etc.)\n\nWidowmaker\n\n- Fixed a bug where Widowmaker’s rifle goes into her head and shoulders while walking and aiming her scope, when wearing the Biathalon skin\n- Fixed a bug where dying did not cancel Infra-Sight",
      "dev": null
     },
     {
      "title": "Maps",
-     "body": "Black Forest\n\nBusan\n\nCastillo\n\nDorado\n\nHorizon Lunar Colony\n\nKing’s Row\n\nOasis\n\nNumbani\n\nRialto\n\nWatchpoint: Gibraltar\n\n- Fixed a bug where Wrecking Ball would get stuck on ventilation ducts",
+     "body": "Black Forest\n\n- Fixed a bug where flying heroes could get stuck on trees and wall climbing heroes could get stuck on birds’ nests\n\nBusan\n\n- Fixed a bug where flying heroes could get stuck on trees\n- Fixed a bug on the Sanctuary map where heroes would bounce when standing on the edge of the first capture point\n\nCastillo\n\n- Fixed a bug where Reaper could Shadow Step to unintended places\n\nDorado\n\n- Fixed a bug where the spectator camera started at the incorrect position\n\nHorizon Lunar Colony\n\n- Fixed a bug where players could get stuck on top of a worktable\n\nKing’s Row\n\n- Fixed a bug where Junkrat’s RIP-Tire could get stuck in the grates on the ground in King’s Row\n\nOasis\n\n- Fixed a bug on the University map where a hero that touches the enemy team’s spawn room doors will take significant damage\n\nNumbani\n\n- Fixed a bug where D.Va would get stuck behind a desk when using Call Mech\n- Fixed a bug where ivy on walls was preventing certain abilities from impacting enemies, like Winston’s Tesla Cannon and Doomfist’s Meteor Strike\n\nRialto\n\n- Fixed a bug where players killed on a specific bridge would fall through the bridge\n- Fixed an issue where players could become stuck between a dolly, the wall, and a counter\n\nWatchpoint: Gibraltar\n\n- Fixed a bug where Wrecking Ball would get stuck on ventilation ducts",
      "dev": null
     }
    ]
   }
  ],
  "raw_text": null,
- "hash": "sha256:354a443d5c778e42e531b80b9b9dcffebd63cee76110a02a42b3ff52f4ed9a40"
+ "hash": "sha256:3c08a60034ea7582f7d042f394932410c460fb803a911964b494e407328ef500"
 }
