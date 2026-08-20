@@ -1,14 +1,20 @@
 ---
 feature: patch-detail-format
-status: in-progress
+status: delivered
 updated: 2026-08-20
 branch: feat/patch-detail-format
-commits: # filled at delivery
+commits: 00e9973..0606ba1
 ---
 
 # 补丁详情页显示格式与图标
 
 ## Report
+
+**What was built** — 补丁详情页（`web/patch.html`）按官方格式显示补丁内容：解析器新增 `_rich_text` 保留段落/列表/换行结构（`<p>`→段落、`<li>`→`- ` 前缀行、嵌套列表 2 空格缩进、`<br>`→换行），应用于通用卡片 `block.body`、`section.description` 与 OW1 旧补丁 `raw_text`；解析器同时捕获官方英雄头像/技能图标 URL（EN cloudfront / CN netease）存入 `HeroUpdate.icon`/`AbilityUpdate.icon`。新增 `tools/download_icons.py` 把图标按 slug 打包进 `web/assets/icons/`（技能按 `{hero}/{ability}` 隔离，规避跨英雄 slug 碰撞），页面渲染头像、图标、项目符号列表、缩进与 pre-wrap 旧补丁文本，全部经 `esc`/textContent 转义防 XSS。新增 `--force-rewrite` 迁移路径（绕过变更检测、不写 changelog），本机全量重抓两站 143 个月份完成一次性格式迁移（397 个补丁 JSON + Markdown 归档 + 620 个图标）；`monitor`/`monitor-fast`/`backfill` 工作流新增图标下载步骤，新英雄/技能自动补图标。
+
+**Verification** — 命令与结果：`pytest -q` → 149 passed（含新增 parse/diff/pipeline/run/download_icons 断言）；`node tools/_smoke_web.js` → ALL WEB ASSERTIONS OK（含 hero-avatar/change-list/ability-icon/raw-text）；本地静态服务 → patch.html/heroes/d-mon.png/abilities/d-mon/surging-strike.png 均 200；`python tools/run.py --data data --force-rewrite` → 143 月全部抓取、0 错误，重扫当月 → 0 events（迁移后监控稳定）；`python tools/download_icons.py` → 620 图标、二次运行 0 new（幂等）；`python tools/rebuild.py` 双跑收敛（第 3/4 次字节一致）。独立审查两轮：首轮发现 1 个 P1（内联片段空格丢失致 legacy 样板清洗失效），修复后复审 0 critical；342/342 存储 hash 与 manifest 一致、4210 图标引用零缺失。已知修复：test_pairing CN 计数 54→55、smoke indexPatches 341→342（数据增长导致的过期断言，非特性引入）。
+
+**Journey log** — ① worktree 中 pytest 默认解析到主仓库的 editable 安装（旧代码），必须在同一命令内设置 `PYTHONPATH=<worktree>/src`，否则 13 项假失败。② 能力 slug 跨英雄碰撞真实存在（quick-melee→4 英雄），图标持久化键必须 hero 作用域。③ `clean_legacy_text` 的样板正则用字面单空格：`raw_text` 带换行后必须先折叠空白再清洗，且解析器拼接内联节点不得丢失片段间空格（`<a>Bug Report </a>forum.`→"Bug Report forum."），否则样板短语无法匹配、旧补丁 hash 嵌入 chrome。④ 迁移必须本机（国内 IP）执行——GitHub runner 抓 CN 站得到英文变体页会被 drift 保护跳过，CN 数据不会重生成。⑤ `regenerate_all` 的 dict 原地改写天然保留新增字段；rebuild 前两次运行会因能力图谱学习收敛，需跑 3 次确认字节稳定。
 
 ## [S1] Problem
 
@@ -77,14 +83,14 @@ commits: # filled at delivery
 
 ## Tasks
 
-- [ ] T1: 特性文档 — acceptance: 本文档含设计与任务（covers: 全部）
-- [ ] T2: 解析器 `_rich_text` 结构保留 + 图标捕获 — acceptance: fixture 解析出含 `\n`/`- ` 的 body/description/raw_text 与 hero/ability icon URL（covers: D1 D2；depends: T1）
-- [ ] T3: model.py icon 字段与序列化 — acceptance: JSON 含 `"icon"` 字段（covers: D2；depends: T2）
-- [ ] T4: diff.py icon 键跳过 + clean_legacy_text 先折叠空白 — acceptance: deep_diff 不含 icon 键；带 `\n` 的 raw_text chrome 清洗等价（covers: D2 D4；depends: T2）
-- [ ] T5: tools/download_icons.py — acceptance: 按 hero/ability 键去重下载、幂等、magic bytes 校验、marker 输出（covers: D3）
-- [ ] T6: force-rewrite 路径 — acceptance: `--force-rewrite` 全量重写且不写 changelog（covers: D5）
-- [ ] T7: web 渲染 — acceptance: 详情页显示段落/列表/缩进/图标/raw_text（covers: D6；depends: T3）
-- [ ] T8: 工作流加图标步骤 — acceptance: 三个工作流含 download_icons 步骤与提交条件（covers: D7）
-- [ ] T9: 测试更新与新增 — acceptance: 新增断言全部通过（covers: D1 D2 D4 D5）
-- [ ] T10: 数据迁移与验证 — acceptance: 全量重抓后本机 `python tools/serve.py` 预览格式正确、pytest 通过、次日监控零事件（covers: D5 D6）
-- [ ] T11: 独立 review 与规格定稿 — acceptance: review 无 critical 发现，规格 status: delivered（covers: 全部；depends: T10）
+- [x] T1: 特性文档 — acceptance: 本文档含设计与任务（covers: 全部）
+- [x] T2: 解析器 `_rich_text` 结构保留 + 图标捕获 — acceptance: fixture 解析出含 `\n`/`- ` 的 body/description/raw_text 与 hero/ability icon URL（covers: D1 D2；depends: T1）
+- [x] T3: model.py icon 字段与序列化 — acceptance: JSON 含 `"icon"` 字段（covers: D2；depends: T2）
+- [x] T4: diff.py icon 键跳过 + clean_legacy_text 先折叠空白 — acceptance: deep_diff 不含 icon 键；带 `\n` 的 raw_text chrome 清洗等价（covers: D2 D4；depends: T2）
+- [x] T5: tools/download_icons.py — acceptance: 按 hero/ability 键去重下载、幂等、magic bytes 校验、marker 输出（covers: D3）
+- [x] T6: force-rewrite 路径 — acceptance: `--force-rewrite` 全量重写且不写 changelog（covers: D5）
+- [x] T7: web 渲染 — acceptance: 详情页显示段落/列表/缩进/图标/raw_text（covers: D6；depends: T3）
+- [x] T8: 工作流加图标步骤 — acceptance: 三个工作流含 download_icons 步骤与提交条件（covers: D7）
+- [x] T9: 测试更新与新增 — acceptance: 新增断言全部通过（covers: D1 D2 D4 D5）
+- [x] T10: 数据迁移与验证 — acceptance: 全量重抓后本机 `python tools/serve.py` 预览格式正确、pytest 通过、次日监控零事件（covers: D5 D6）
+- [x] T11: 独立 review 与规格定稿 — acceptance: review 无 critical 发现，规格 status: delivered（covers: 全部；depends: T10）
