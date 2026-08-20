@@ -329,9 +329,16 @@ def _inline_text(el) -> str:
     return _normalize_inline(_inline_raw(el))
 
 
-def _inline_raw(el) -> str:
+def _inline_raw(el, in_strong: bool = False) -> str:
     """Concatenate inline content verbatim (spaces between adjacent fragments
-    are preserved here; normalization happens once at the top level)."""
+    are preserved here; normalization happens once at the top level).
+
+    <strong>/<b> emphasis is encoded as markdown-style **bold** so the web
+    renderer and the markdown archive can both restore it. Nested emphasis
+    keeps only the outer pair of markers.
+    """
+    if isinstance(el, Tag) and el.name in ("strong", "b") and not in_strong:
+        return "**" + _inline_raw(el, True) + "**"
     parts = []
     for node in el.children:
         if isinstance(node, NavigableString):
@@ -342,8 +349,11 @@ def _inline_raw(el) -> str:
                 parts.append("\n")
             elif name in ("script", "style", "img", "ul", "ol"):
                 continue
+            elif name in ("strong", "b"):
+                marker = "" if in_strong else "**"
+                parts.append(marker + _inline_raw(node, True) + marker)
             else:
-                parts.append(_inline_raw(node))
+                parts.append(_inline_raw(node, in_strong))
     return "".join(parts)
 
 

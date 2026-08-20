@@ -6,7 +6,7 @@
 <title>补丁详情 - 守望先锋</title>
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="patch-page">
 <header>
   <a class="back" href="index.html">← 按时间浏览</a>
   <p class="meta" id="patch-date">-</p>
@@ -16,7 +16,12 @@
   <div id="lang-switch" class="lang-switch"></div>
   <div id="patch-links" class="patch-links"></div>
 </header>
-<main id="patch-body" class="patch-body"></main>
+<main id="patch-body" class="patch-body">
+  <div class="patch-layout">
+    <aside id="patch-toc" class="patch-toc" hidden></aside>
+    <article id="patch-article"></article>
+  </div>
+</main>
 <script src="app.js"></script>
 <script>initPatch();</script>
 </body>

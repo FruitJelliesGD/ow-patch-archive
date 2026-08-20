@@ -10,14 +10,16 @@ const appJs = fs.readFileSync(path.join(ROOT, "web", "app.js"), "utf-8");
 function makeEl(tag) {
   return {
     tagName: tag, children: [], _html: "", dataset: {}, style: {},
-    className: "", id: "", href: "", target: "", rel: "",
+    className: "", id: "", href: "", target: "", rel: "", hidden: false,
     appendChild(c) { this.children.push(c); return c; },
+    replaceChildren() { this.children = []; this._html = ""; },
     set textContent(v) { this._html = String(v); },
     get textContent() { return this._html; },
     set innerHTML(v) { this._html = v; },
     get innerHTML() { return this._html; },
     querySelector() { return makeEl("div"); },
     querySelectorAll() { return []; },
+    getAttribute() { return null; },
     addEventListener() {},
     classList: { toggle() {} },
   };
@@ -84,19 +86,28 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
     await initPatch();
     results.patchTitle = document.getElementById("patch-title").textContent;
     results.langButtons = document.getElementById("lang-switch").children.length;
-    results.patchSections = document.getElementById("patch-body").children.length;
+    results.patchSections = document.getElementById("patch-article").children.length;
 
-    location.search = "?id=en-2026-08-14-1&lang=en";
+    location.search = "?id=p-2026-08-11-1&lang=en";
     await initPatch();
-    const modernBody = document.getElementById("patch-body");
+    const modernBody = document.getElementById("patch-article");
     results.patchHasAvatar = findHtml(modernBody, /hero-avatar/);
     results.patchHasChangeList = findHtml(modernBody, /change-list/);
     results.patchHasAbilityIcon = findHtml(modernBody, /ability-icon/);
+    results.patchHasBold = findHtml(modernBody, /<strong>/);
+    results.tocChildren = document.getElementById("patch-toc").children.length;
+    results.tocHasSec0 = document.getElementById("patch-toc").children.some((a) => a.href === "#sec-0");
 
     location.search = "?id=en-2016-05-27-1&lang=en";
     await initPatch();
     results.patchEdited = document.getElementById("patch-edits").innerHTML || "";
-    results.patchHasRawText = findHtml(document.getElementById("patch-body"), /raw-text/);
+    results.patchHasRawText = findHtml(document.getElementById("patch-article"), /raw-text/);
+
+    location.search = "?id=en-2016-07-19-1&lang=en";
+    await initPatch();
+    results.legacyHasIcons = findHtml(document.getElementById("patch-article"), /legacy-icon/);
+    results.tocHiddenLegacy = document.getElementById("patch-toc").hidden;
+    results.legacyHasAnaIcon = findHtml(document.getElementById("patch-article"), /assets\\/icons\\/heroes\\/ana\\.png/);
 
     location.search = "?slug=soldier-76";
     await initHero();
@@ -138,7 +149,12 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
     if (!results.patchHasAvatar) fail.push("patch hero avatar missing");
     if (!results.patchHasChangeList) fail.push("patch change-list missing");
     if (!results.patchHasAbilityIcon) fail.push("patch ability icon missing");
+    if (!results.patchHasBold) fail.push("patch bold emphasis missing");
+    if (!results.tocChildren || !results.tocHasSec0) fail.push("toc missing entries=" + results.tocChildren);
     if (!results.patchHasRawText) fail.push("legacy raw-text block missing");
+    if (!results.legacyHasIcons) fail.push("legacy icons missing");
+    if (!results.tocHiddenLegacy) fail.push("legacy toc should be hidden");
+    if (!results.legacyHasAnaIcon) fail.push("legacy Ana icon missing");
     if (!/官方事后编辑/.test(results.patchEdited)) fail.push("patch edited badge=" + results.patchEdited);
     if (!results.heroHasWeapon || !results.heroHasStim) fail.push("weapon/stim group missing");
     if (!results.heroHasAttr) fail.push("hero attribute group missing");

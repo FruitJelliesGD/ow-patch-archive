@@ -146,10 +146,21 @@ def test_en_block_body_preserves_structure():
 
     revamp = blocks["Battle Pass Revamp"]
     assert "\n\n" in revamp.body  # intro paragraph separated from the bullet list
-    assert "\n- Choose your path" in revamp.body  # list items keep their "- " prefix
+    assert "\n- **Choose your path" in revamp.body  # "- " prefix + bold lead kept
 
     subroles = blocks["Subroles"]
     assert subroles.body == "Flanker\n\n- Additional healing from health packs reduced from 75 to 50."
+
+
+def test_en_strong_emphasis_preserved():
+    """<strong> inside block bodies is encoded as **bold** markers."""
+    patches = load("en_2026_08_11.html", "en")
+    p = patches[0]
+    blocks = {b.title: b for s in p.sections for b in s.blocks}
+    shooting = blocks["Shooting Star: My MEKA Mania"]
+    assert shooting.body.startswith("**Support Your MEKA Faves On A Global Stage!**")
+    revamp = blocks["Battle Pass Revamp"]
+    assert "- **Choose your path through the Battle Pass.** You no longer" in revamp.body
 
 
 def test_en_hero_and_ability_icons_captured():
@@ -194,6 +205,22 @@ def test_inline_text_boundaries():
         return _inline_text(BeautifulSoup(f"<p>{html}</p>", "lxml").find("p"))
 
     assert inline('visit our <a>Bug Report </a>forum.') == "visit our Bug Report forum."
-    assert inline("<b>Bold </b>text") == "Bold text"
+    assert inline("<b>Bold </b>text") == "**Bold **text"
     assert inline("a<br>b") == "a\nb"
     assert inline("<span>士兵</span><span>：76</span>") == "士兵：76"
+
+
+def test_inline_strong_emphasis_boundaries():
+    """Synthetic <strong>/<b> cases for the ** marker encoding."""
+    from bs4 import BeautifulSoup
+
+    from ow2_patch.parse import _inline_text
+
+    def inline(html):
+        return _inline_text(BeautifulSoup(f"<p>{html}</p>", "lxml").find("p"))
+
+    assert inline("x<strong>y</strong>z") == "x**y**z"
+    assert inline("<strong>a<br>b</strong>") == "**a\nb**"
+    assert inline("<strong><b>nested</b></strong>") == "**nested**"  # outer pair only
+    assert inline("<b>x</b><b>y</b>") == "**x****y**"  # consecutive pairs
+    assert inline("a ** literal") == "a ** literal"  # bare asterisks untouched

@@ -35,6 +35,36 @@ function numberify(html) {
   return html.replace(/(\d+(?:\.\d+)?\s*→\s*\d+(?:\.\d+)?)/g, '<span class="num">$1</span>');
 }
 
+function inlineBold(html) {
+  // parser-encoded **bold** markers -> <strong>; runs on already-escaped HTML
+  return html.replace(/\*\*([^*]+?)\*\*/g, "<strong>$1</strong>");
+}
+
+function deaccent(s) {
+  return String(s).normalize("NFKD").replace(/[\u0300-\u036f]/g, "");
+}
+
+// EN display-name spellings in OW1-era pages that map to canonical slugs
+const LEGACY_ALIASES = {
+  "McCree": "cassidy",
+  "Solider: 76": "soldier-76",
+  "Soldier:76": "soldier-76",
+  "Junkerqueen": "junker-queen",
+  "Iliari": "illari",
+};
+
+function reEscape(s) {
+  return String(s).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+// case-sensitive whole-token match; avoids \b so names ending in ")" match
+function nameMatch(name, text) {
+  const re = new RegExp("(?:^|[^A-Za-z0-9])(" + reEscape(name) + ")(?![A-Za-z0-9])");
+  const m = re.exec(text);
+  if (!m) return null;
+  return { index: m.index + m[0].indexOf(m[1]), len: m[1].length };
+}
+
 /* ---------- rich-text rendering (patch detail) ---------- */
 
 // Render structure-preserved parser output: paragraphs separated by blank
@@ -49,7 +79,7 @@ function renderRich(el, text) {
       el.appendChild(renderList(trimmed));
     } else {
       const p = document.createElement("p");
-      p.innerHTML = numberify(esc(trimmed).replace(/\n/g, "<br>"));
+      p.innerHTML = numberify(inlineBold(esc(trimmed).replace(/\n/g, "<br>")));
       el.appendChild(p);
     }
   }
@@ -70,7 +100,7 @@ function renderList(text) {
       stack.push(nested);
     }
     const li = document.createElement("li");
-    li.innerHTML = numberify(esc(m[2]).replace(/\n/g, "<br>"));
+    li.innerHTML = numberify(inlineBold(esc(m[2]).replace(/\n/g, "<br>")));
     stack[stack.length - 1].appendChild(li);
   }
   return ul;
@@ -497,6 +527,100 @@ async function initEntry() {
 
 /* ---------- patch detail (patch.html) ---------- */
 
+function buildToc(entries) {
+  const toc = document.getElementById("patch-toc");
+  toc.replaceChildren();
+  if (!entries.length) { toc.hidden = true; return; }
+  toc.hidden = false;
+  for (const e of entries) {
+    const a = document.createElement("a");
+    a.href = "#" + e.id;
+    a.textContent = e.text;
+    if (e.level > 1) a.className = "toc-l2";
+    toc.appendChild(a);
+  }
+  if (typeof IntersectionObserver === "undefined") return; // smoke shim / old browsers
+  const io = new IntersectionObserver((items) => {
+    for (const item of items) {
+      if (!item.isIntersecting) continue;
+      toc.querySelectorAll("a").forEach((a) =>
+        a.classList.toggle("active", a.getAttribute("href") === "#" + item.target.id));
+    }
+  }, { rootMargin: "-5% 0px -85% 0px" });
+  for (const e of entries) {
+    const el = document.getElementById(e.id);
+    if (el) io.observe(el);
+  }
+}
+
+// OW1-era raw_text: inject hero portraits and ability icons beside matched
+// names (case-sensitive whole-token, first occurrence per slug). Every text
+// fragment is escaped; icon srcs are local slug-based paths only.
+async function renderRawText(el, text) {
+  let heroIdx, abilityMap;
+  try {
+    [heroIdx, abilityMap] = await Promise.all([
+      fetchJSON("data/heroes_index.json"),
+      fetchJSON("data/ability_map.json"),
+    ]);
+  } catch {
+    el.textContent = text; // maps missing: plain text fallback
+    return;
+  }
+  const heroBySlug = {};
+  for (const h of heroIdx.heroes || []) heroBySlug[h.slug] = h;
+  const candidates = [];
+  for (const h of heroIdx.heroes || []) {
+    candidates.push({ keys: new Set([h.en, deaccent(h.en)]), slug: h.slug, kind: "hero" });
+  }
+  for (const [name, slug] of Object.entries(LEGACY_ALIASES)) {
+    candidates.push({ keys: new Set([name]), slug, kind: "hero" });
+  }
+  for (const [name, slug] of Object.entries(abilityMap.by_en || {})) {
+    candidates.push({ keys: new Set([name, deaccent(name)]), slug, kind: "ability" });
+  }
+
+  const used = new Set();
+  const matches = [];
+  for (const cand of candidates) {
+    for (const key of cand.keys) {
+      const m = nameMatch(key, text);
+      if (!m) continue;
+      const mark = cand.kind + ":" + cand.slug;
+      if (used.has(mark)) continue;
+      used.add(mark);
+      const ability = cand.kind === "ability" ? (abilityMap.abilities || {})[cand.slug] : null;
+      matches.push({
+        index: m.index, len: m.len, mark, kind: cand.kind, slug: cand.slug,
+        heroSlug: cand.kind === "hero" ? cand.slug
+          : (ability && ability.heroes && ability.heroes.length === 1 ? ability.heroes[0] : null),
+        heroes: cand.kind === "ability" ? (ability && ability.heroes) || [] : null,
+      });
+      break; // one occurrence per candidate
+    }
+  }
+  matches.sort((a, b) => a.index - b.index);
+  let out = "";
+  let pos = 0;
+  let lastHero = "";
+  for (const m of matches) {
+    if (m.index < pos) continue; // overlapping match: keep the earlier one
+    let hero = m.heroSlug;
+    if (m.kind === "ability" && !hero) {
+      if (!lastHero || !m.heroes.includes(lastHero)) continue; // ambiguous, no context
+      hero = lastHero;
+    }
+    const alt = m.kind === "hero" ? (heroBySlug[m.slug]?.en || m.slug) : m.slug;
+    const path = m.kind === "hero" ? heroIconPath(m.slug)
+      : abilityIconPath(hero, m.slug);
+    out += esc(text.slice(pos, m.index)) + iconImg(path, alt, "legacy-icon")
+      + esc(text.slice(m.index, m.index + m.len));
+    pos = m.index + m.len;
+    if (m.kind === "hero" || m.heroSlug) lastHero = hero;
+  }
+  el.innerHTML = inlineBold(out + esc(text.slice(pos)));
+}
+
 async function initPatch() {
   const params = new URLSearchParams(location.search);
   const id = params.get("id");
@@ -557,12 +681,17 @@ async function initPatch() {
     }
   }
 
-  const main = document.getElementById("patch-body");
+  const article = document.getElementById("patch-article");
+  article.replaceChildren();
+  const tocEntries = [];
+  let secIdx = 0;
   for (const section of patch.sections || []) {
     const sec = document.createElement("section");
     sec.className = "timeline-group";
     const role = ROLE_LABEL[section.role] || "";
-    sec.innerHTML = `<h2>${esc(section.title || "")}${role ? `（${role}）` : ""}</h2>`;
+    const secTitle = `${section.title || ""}${role ? `（${role}）` : ""}`;
+    sec.innerHTML = `<h2 id="sec-${secIdx}">${esc(secTitle)}</h2>`;
+    tocEntries.push({ id: `sec-${secIdx}`, text: secTitle, level: 1 });
     const body = document.createElement("div");
     if (section.description) {
       const d = document.createElement("div");
@@ -570,12 +699,22 @@ async function initPatch() {
       renderRich(d, section.description);
       body.appendChild(d);
     }
+    let heroN = 0;
     for (const hero of section.heroes || []) {
-      body.appendChild(heroBlock(hero));
+      const hb = heroBlock(hero);
+      hb.id = `hero-${secIdx}-${heroN}`;
+      tocEntries.push({
+        id: hb.id, text: hero.name_cn || hero.name_en || hero.slug, level: 2,
+      });
+      body.appendChild(hb);
+      heroN++;
     }
+    let blkN = 0;
     for (const block of section.blocks || []) {
       const b = document.createElement("div");
       b.className = "entry";
+      b.id = `blk-${secIdx}-${blkN}`;
+      tocEntries.push({ id: b.id, text: block.title || "", level: 2 });
       const title = document.createElement("div");
       title.className = "text";
       title.innerHTML = `<strong>${esc(block.title || "")}</strong>`;
@@ -593,16 +732,19 @@ async function initPatch() {
         b.appendChild(p);
       }
       body.appendChild(b);
+      blkN++;
     }
     sec.appendChild(body);
-    main.appendChild(sec);
+    article.appendChild(sec);
+    secIdx++;
   }
+  buildToc(tocEntries);
   if (patch.raw_text) {
     // OW1-era pages degrade to a single structure-preserved text blob
     const rt = document.createElement("div");
     rt.className = "raw-text";
-    rt.textContent = patch.raw_text;
-    main.appendChild(rt);
+    article.appendChild(rt);
+    await renderRawText(rt, patch.raw_text);
   }
 }
 
