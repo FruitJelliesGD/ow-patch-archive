@@ -181,3 +181,19 @@ def test_legacy_raw_text_keeps_inline_fragment_spacing():
     rt = patches[0].raw_text
     assert "Bug Report forum" in rt
     assert "Bug Reportforum" not in rt
+
+
+def test_inline_text_boundaries():
+    """Synthetic boundaries for the structure-preserving parser: Latin keeps
+    inter-fragment spaces, CJK gains none, <br> stays a soft break."""
+    from bs4 import BeautifulSoup
+
+    from ow2_patch.parse import _inline_text
+
+    def inline(html):
+        return _inline_text(BeautifulSoup(html, "lxml").find("p"))
+
+    assert inline('visit our <a>Bug Report </a>forum.') == "visit our Bug Report forum."
+    assert inline("<b>Bold </b>text") == "Bold text"
+    assert inline("a<br>b") == "a\nb"
+    assert inline("<span>士兵</span><span>：76</span>") == "士兵：76"
