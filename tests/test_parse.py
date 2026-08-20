@@ -172,3 +172,12 @@ def test_legacy_raw_text_preserves_line_structure():
     rt = patches[0].raw_text
     assert rt and "\n\n" in rt  # paragraphs separated by blank lines
     assert "\n- " in rt  # list items keep their "- " markers
+
+
+def test_legacy_raw_text_keeps_inline_fragment_spacing():
+    """Adjacent inline nodes must not lose their separating space, or the
+    boilerplate chrome phrases ("Bug Report forum") fail to match at hash time."""
+    patches = load("en_2016_05.html", "en")
+    rt = patches[0].raw_text
+    assert "Bug Report forum" in rt
+    assert "Bug Reportforum" not in rt

@@ -320,12 +320,18 @@ def _li_text(li: Tag) -> str:
         if isinstance(node, NavigableString):
             parts.append(str(node))
         elif isinstance(node, Tag) and node.name not in ("ul", "ol"):
-            parts.append(_inline_text(node))
+            parts.append(_inline_raw(node))
     return _normalize_inline("".join(parts))
 
 
 def _inline_text(el) -> str:
     """Flatten inline content to text; <br> -> newline; media/list tags skipped."""
+    return _normalize_inline(_inline_raw(el))
+
+
+def _inline_raw(el) -> str:
+    """Concatenate inline content verbatim (spaces between adjacent fragments
+    are preserved here; normalization happens once at the top level)."""
     parts = []
     for node in el.children:
         if isinstance(node, NavigableString):
@@ -337,13 +343,16 @@ def _inline_text(el) -> str:
             elif name in ("script", "style", "img", "ul", "ol"):
                 continue
             else:
-                parts.append(_inline_text(node))
-    return _normalize_inline("".join(parts))
+                parts.append(_inline_raw(node))
+    return "".join(parts)
 
 
 def _normalize_inline(text: str) -> str:
-    # collapse spaces/tabs/nbsp runs but keep \n (soft breaks) intact
-    return re.sub(r"[ \t\xa0]+", " ", text).strip()
+    # collapse spaces/tabs/nbsp runs but keep \n (soft breaks) intact; only the
+    # outer edges of each line are trimmed so inter-fragment spaces survive
+    # (e.g. "<a>Bug Report </a>forum." must stay "Bug Report forum.")
+    text = re.sub(r"[ \t\xa0]+", " ", text)
+    return "\n".join(line.strip() for line in text.split("\n"))
 
 
 def _icon(el: Tag | None, selector: str) -> str | None:

@@ -10,7 +10,7 @@
    "type": "generic_update",
    "title": null,
    "role": null,
-   "description": "- To share your feedback, please post in the General Discussion forum.\n- For a list of known issues, visit our Bug Report forum.\n- For troubleshooting assistance, visit our Technical Support forum.",
+   "description": "-\nTo share your feedback, please post in the General Discussion forum.\n\n-\nFor a list of known issues, visit our Bug Report forum.\n\n-\nFor troubleshooting assistance, visit our Technical Support forum.",
    "heroes": [],
    "blocks": []
   },
@@ -60,7 +60,7 @@
    "blocks": [
     {
      "title": "New Workshop Features",
-     "body": "- Custom Game Maps:\n  - Workshop Chamber\n  - Workshop Island\n  - Workshop Expanse\n- Script Diagnostics Panel\n- Subroutines\n  - Developer Comments: We’ve added the ability for rules to call subroutines (which are rules with a Subroutine event type) using the new Call Subroutine action. When a subroutine is called, execution is temporarily shifted to another rule while keeping contextual values such as Event Player, Attacker, and Victim the same. When the subroutine rule finishes or aborts, the original rule picks up where it left off. Subroutines may call other subroutines or even themselves, though we enforce a maximum depth of 1024 calls. Waits are allowed in subroutines, and if such a Wait is ever interrupted (and the interruption isn’t being ignored by the Wait), the entire call stack is aborted, and the original rule is restarted or aborted.\n  - Subroutine rules may also be started in parallel using the Start Rule action. Unlike with the Call Subroutine action, the original rule continues execution immediately, and the subroutine rule executes on its own some time later (either on the same frame if below the original rule or on the next frame if above). As with Call Subroutine, contextual values such as Event Player, Attacker, and Victim are copied over to the subroutine rule.\n  - Subroutine names can be added and modified using a new button at the top of the editor.",
+     "body": "- Custom Game Maps:\n\n  - Workshop Chamber\n  - Workshop Island\n  - Workshop Expanse\n- Script Diagnostics Panel\n- Subroutines\n\n  - Developer Comments: We’ve added the ability for rules to call subroutines (which are rules with a Subroutine event type) using the new Call Subroutine action. When a subroutine is called, execution is temporarily shifted to another rule while keeping contextual values such as Event Player, Attacker, and Victim the same. When the subroutine rule finishes or aborts, the original rule picks up where it left off. Subroutines may call other subroutines or even themselves, though we enforce a maximum depth of 1024 calls. Waits are allowed in subroutines, and if such a Wait is ever interrupted (and the interruption isn’t being ignored by the Wait), the entire call stack is aborted, and the original rule is restarted or aborted.\n  - Subroutine rules may also be started in parallel using the Start Rule action. Unlike with the Call Subroutine action, the original rule continues execution immediately, and the subroutine rule executes on its own some time later (either on the same frame if below the original rule or on the next frame if above). As with Call Subroutine, contextual values such as Event Player, Attacker, and Victim are copied over to the subroutine rule.\n  - Subroutine names can be added and modified using a new button at the top of the editor.",
      "dev": null
     },
     {
@@ -99,12 +99,12 @@
     },
     {
      "title": "Maps",
-     "body": "- Petra\n  - Fixed a bug that caused Reinhardt's Earthshatter not to work correctly on Petra's collapsible floor\n  - The breakable floor is now targetable by Reaper's Shadow Step, Symmetra's Teleporter, or Doomfist's Seismic Slam",
+     "body": "- Petra\n\n  - Fixed a bug that caused Reinhardt's Earthshatter not to work correctly on Petra's collapsible floor\n  - The breakable floor is now targetable by Reaper's Shadow Step, Symmetra's Teleporter, or Doomfist's Seismic Slam",
      "dev": null
     },
     {
      "title": "Heroes",
-     "body": "- Ashe\n  - Fixed a bug that could cause B.O.B's charge to end early on stairs\n- Junkrat\n  - Fixed a bug where, occasionally, the explosion for Junkrat's mine would appear near the top of his head instead of on the mine\n- Mercy\n  - Fixed a bug that could cause Mercy to not get a skull/hit marker on assists\n- Wrecking Ball\n  - Fixed a bug that prevented Wrecking Ball's voice lines from playing when opened in lootboxes",
+     "body": "- Ashe\n\n  - Fixed a bug that could cause B.O.B's charge to end early on stairs\n- Junkrat\n\n  - Fixed a bug where, occasionally, the explosion for Junkrat's mine would appear near the top of his head instead of on the mine\n- Mercy\n\n  - Fixed a bug that could cause Mercy to not get a skull/hit marker on assists\n- Wrecking Ball\n\n  - Fixed a bug that prevented Wrecking Ball's voice lines from playing when opened in lootboxes",
      "dev": null
     },
     {
@@ -121,5 +121,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:8454d3801510a6699916d789d526f33ce2b18a4ab4721519815e56a744ea5d8a"
+ "hash": "sha256:9f5f4ab5721e53ab1d6dc563cbca39e672a9241f127bd786e107e15658293a0e"
 }

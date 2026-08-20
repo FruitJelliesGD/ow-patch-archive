@@ -24,7 +24,6 @@ REPO_ROOT = pathlib.Path(__file__).resolve().parent.parent
 DEFAULT_DATA = REPO_ROOT / "data"
 DEFAULT_OUT = REPO_ROOT / "web" / "assets" / "icons"
 
-_IMAGE_EXTS = (".png", ".jpg", ".jpeg", ".webp")
 _UA = {"User-Agent": "ow2-patch-archive/0.1"}
 
 
@@ -78,8 +77,9 @@ def _is_image(data: bytes) -> bool:
 
 
 def _ext_for(url: str) -> str:
-    ext = pathlib.PurePosixPath(urllib.parse.urlparse(url).path).suffix.lower()
-    return ext if ext in _IMAGE_EXTS else ".png"
+    # canonical .png matches the web page's hardcoded icon paths; browsers
+    # sniff the actual image format regardless of the file extension
+    return ".png"
 
 
 def download_icons(
