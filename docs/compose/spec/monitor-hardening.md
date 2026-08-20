@@ -1,16 +1,23 @@
 ---
 feature: monitor-hardening
-status: in-progress
+status: delivered
 updated: 2026-08-20
 branch: feat/monitor-hardening
-commits: # filled at delivery
+commits: 7ad272a..e6939d7
 ---
 
 # 监控加固:失败可见化 + 自愈看门狗 + 频率现实化
 
 ## Report
 
-(交付时填写)
+**What was built** — 三支柱加固,解决 08-19 补丁漏检的根因。(1) **失败可见化**:`RunResult.fetch_errors` 记录非 404 抓取失败,`tools/run.py` 抽出 `emit()`/`run_pipeline_cli()` 并新增 `--fail-on-error`(有抓取错误时退出 1、不写标记),`monitor`/`monitor-fast`/`watchdog` 三个工作流在失败时打开**去重的告警 Issue**(共享标题"守望先锋监控异常",`gh issue list` 探测 + `--limit 100` 防刷屏)——"监控坏了"不再表现为全绿静默。(2) **自愈看门狗**:新增 `src/ow2_patch/freshness.py`(EN 首页锚点探测、CN 当前月探测带 ≤2 月 404 回退、归档最新日期、stale 判定)+ `tools/watchdog.py` + `.github/workflows/watchdog.yml`(每日 05:13 UTC):探测站点最新补丁日期与归档比对,发现漏检自动跑全量扫描补录并**复检**;探测失败或自愈未闭合缺口退出 2 触发告警。部署后 08-19 补丁已由看门狗自动补录(无手动操作)。(3) **频率现实化**:`monitor-fast` cron `*/5` → `*/30`(schedule 事件 best-effort,实测中位数 28 分钟,见 S2 分析),README 同步修正。另修复一处既有缺陷:`fetch.py` 改为信任声明的 charset,仅在未声明时才用 `apparent_encoding`(chardet 曾把 UTF-8 页误判为 Windows-1252,产生乱码假 modified 事件)。
+
+**Verification** — `pytest -q`(worktree,PYTHONPATH 前置 src):**132 passed**(基线 111 + 新增 21:test_fetch 3、test_freshness 7、test_run 6、test_watchdog 3、test_pipeline 扩展 2)。本地实站自愈验证:`python tools/watchdog.py --data data` → 探测 EN 2026-08-19 > 归档 08-14(CN 08-15 == 08-15)→ STALE → 全量扫描 143 个月 → **1 new(en-2026-08-19-1)、0 modified** → 复检通过 → 退出 0;数据已随分支提交(eb677ce),`patches_index.updated` 更新为 2026-08-19。编码修复实站验证:2016-05 月页无乱码。独立审查(general-2,7ad272a..e6939d7):spec 合规全部达标,无 critical/major,4 个 minor(文档措辞、去重健壮性、manifest 异常保护、交付记账)已修复并复测。
+
+**Journey log** —
+1. 本地自愈验证意外暴露既有编码缺陷:`apparent_encoding` 覆盖声明 charset,chardet 把 UTF-8 页误判为 Windows-1252 → 乱码 → 3 个旧补丁假 modified。修复为"声明优先"并重置被污染数据重跑,得到干净的 1 new 0 modified。
+2. GitHub Actions 步骤的显式 `if:` 会**替换**隐式 `success()` 检查——失败步骤之后带 `if:` 的 commit 步骤仍会执行(数据照常提交且告警同时打开),比最初设计的"跳过提交"更好。
+3. `*/5` 调度失败有官方依据:scheduled workflows 是 best-effort,高负载延迟甚至丢任务;结合 180 次运行的间隔统计(中位数 28.2 分钟、最大 111.8 分钟),`*/30` 才是与现实匹配的承诺。
 
 ## [S1] Problem
 
@@ -52,7 +59,8 @@ commits: # filled at delivery
   env:
     GH_TOKEN: ${{ github.token }}
   run: |
-    if [ "$(gh issue list --state open --search '守望先锋监控异常 in:title' --json number --jq 'length')" -gt 0 ]; then
+    COUNT=$(gh issue list --state open --search '守望先锋监控异常 in:title' --limit 100 --json number --jq 'length' 2>/dev/null || echo 0)
+    if [ "$COUNT" -gt 0 ]; then
       echo "open alert issue exists; skipping"
     else
       gh issue create --title "守望先锋监控异常" \
@@ -110,7 +118,7 @@ commits: # filled at delivery
 
 ## Tasks
 
-- [ ] T1: 失败可见化 — `RunResult.fetch_errors`、run.py `emit`/`run_pipeline_cli`/`--fail-on-error`、monitor + monitor-fast 告警步骤 — acceptance: 非 404 抓取错误时 `--fail-on-error` 退出 1;无 flag 行为不变 (covers: S2 支柱1)
-- [ ] T2: 自愈看门狗 — `freshness.py` + `watchdog.py` + `watchdog.yml` — acceptance: 本地运行 watchdog 探测到 EN 2026-08-19 > 归档 08-14 → 自动全量扫描补录并退出 0;断网时退出 2 (covers: S2 支柱2)
-- [ ] T3: 频率现实化 — monitor-fast cron `*/30` + README 修正 — acceptance: workflow 文件 cron 为 `*/30`;README 无"每 5 分钟"错误表述 (covers: S2 支柱3)
-- [ ] T4: 测试与验证 — 新增 `tests/test_freshness.py`、`tests/test_run.py`,扩展 `tests/test_pipeline.py` + fixture;`pytest -q` 全绿;本地 watchdog 自愈补录 08-19 验证 — acceptance: 测试通过且 data/ 出现 `en-2026-08-19-1` (covers: S2; depends: T1, T2)
+- [x] T1: 失败可见化 — `RunResult.fetch_errors`、run.py `emit`/`run_pipeline_cli`/`--fail-on-error`、monitor + monitor-fast 告警步骤 — acceptance: 非 404 抓取错误时 `--fail-on-error` 退出 1;无 flag 行为不变 (covers: S2 支柱1)
+- [x] T2: 自愈看门狗 — `freshness.py` + `watchdog.py` + `watchdog.yml` — acceptance: 本地运行 watchdog 探测到 EN 2026-08-19 > 归档 08-14 → 自动全量扫描补录并退出 0;断网时退出 2 (covers: S2 支柱2)
+- [x] T3: 频率现实化 — monitor-fast cron `*/30` + README 修正 — acceptance: workflow 文件 cron 为 `*/30`;README 无"每 5 分钟"错误表述 (covers: S2 支柱3)
+- [x] T4: 测试与验证 — 新增 `tests/test_freshness.py`、`tests/test_run.py`,扩展 `tests/test_pipeline.py` + fixture;`pytest -q` 全绿;本地 watchdog 自愈补录 08-19 验证 — acceptance: 测试通过且 data/ 出现 `en-2026-08-19-1` (covers: S2; depends: T1, T2)
