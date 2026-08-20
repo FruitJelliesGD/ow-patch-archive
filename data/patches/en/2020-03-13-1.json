@@ -10,7 +10,7 @@
    "type": "generic_update",
    "title": null,
    "role": null,
-   "description": "To share your feedback, please post in the General Discussion forum. For a list of known issues, visit our Bug Report forum. For troubleshooting assistance, visit our Technical Support forum.",
+   "description": "- To share your feedback, please post in the General Discussion forum.\n- For a list of known issues, visit our Bug Report forum.\n- For troubleshooting assistance, visit our Technical Support forum.",
    "heroes": [],
    "blocks": []
   },
@@ -31,12 +31,12 @@
    "blocks": [
     {
      "title": "New Feature: Share Replays",
-     "body": "Players can now share their in-game replays with others! A replay is shared via an alphanumeric code typically 6 characters long. The code can be shared however you want: in game, on forums, over social media. Another player can input that code and watch your replay. Codes are valid until the next patch. The replay system has also received several improvements: Pin up to 10 replays to keep until the next patch. Unpin a replay to make room for a different replay The 10 most recently imported replay codes are tracked. This allows you to watch the same imported replay again without retyping the code There is a new note field for each replay entry, allowing you to add descriptions or notes for yourself",
+     "body": "Players can now share their in-game replays with others!\n\nA replay is shared via an alphanumeric code typically 6 characters long. The code can be shared however you want: in game, on forums, over social media. Another player can input that code and watch your replay. Codes are valid until the next patch.\n\nThe replay system has also received several improvements:\n\n- Pin up to 10 replays to keep until the next patch. Unpin a replay to\nmake room for a different replay The 10 most recently imported replay\ncodes are tracked. This allows you to watch the same imported replay\nagain without retyping the code There is a new note field for each\nreplay entry, allowing you to add descriptions or notes for yourself",
      "dev": null
     },
     {
      "title": "General",
-     "body": "In game friend requests will now only display in game once per session] RealID friend requests will only show RealID names in game if you have recently played with that player The initial Assemble Heroes timer for games using the Assault, Hybrid, Control, and Payload game modes has been further reduced from 35 to 30 seconds In the Assault, Payload, and Hybrid game modes for Competitive Play, when both teams complete a round of offense and have more than 2 minutes of time bank then each team’s time bank is equally reduced until one of the teams has a 2 minutes remaining Example: If Team A completes a round of offense on Volskaya with 4:37 remaining in their time bank, and Team B completes their round on offense with 2:50 remaining, then 50 seconds is removed from each team’s timebank. This leaves the teams tied 2-2 and Team A with 3:47 remaining and Team B with 2:00 remaining",
+     "body": "- In game friend requests will now only display in game once per session]\n- RealID friend requests will only show RealID names in game if you have recently played with that player\n- The initial Assemble Heroes timer for games using the Assault, Hybrid, Control, and Payload game modes has been further reduced from 35 to 30 seconds\n- In the Assault, Payload, and Hybrid game modes for Competitive Play, when both teams complete a round of offense and have more than 2 minutes of time bank then each team’s time bank is equally reduced until one of the teams has a 2 minutes remaining\n  - Example: If Team A completes a round of offense on Volskaya with 4:37 remaining in their time bank, and Team B completes their round on offense with 2:50 remaining, then 50 seconds is removed from each team’s timebank. This leaves the teams tied 2-2 and Team A with 3:47 remaining and Team B with 2:00 remaining",
      "dev": null
     }
    ]
@@ -45,7 +45,7 @@
    "type": "generic_update",
    "title": "Competitive Updates",
    "role": null,
-   "description": "Season 3 of Competitive 6v6 Lockout Elimination has begun!",
+   "description": "- Season 3 of Competitive 6v6 Lockout Elimination has begun!",
    "heroes": [],
    "blocks": []
   },
@@ -60,6 +60,7 @@
      "name_en": "Baptiste",
      "name_cn": "巴蒂斯特",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a4f09ac5528ea7c458223747a0b47144f1b6b1d2736fa3b67c18a8ab43d0d815.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -68,17 +69,18 @@
        "name_en": "Exo Boots",
        "name_cn": "动力战靴",
        "slug": "exo-boots",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0d598afba5a03761d617d735d5435323c56108655b5017ddf8c36c4af36b9b73.png",
        "changes": [
         {
          "text_en": "Charge time reduced from 1 to 0.7 seconds",
          "text_cn": null,
          "before": 1.0,
          "after": 0.7,
-         "metric": "charge time",
          "by": -0.3,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "charge time"
+         "metric": "charge time",
+         "raw_metric": "charge time",
+         "unit": null
         }
        ]
       },
@@ -86,17 +88,18 @@
        "name_en": "Regenerative Burst",
        "name_cn": "愈合冲击",
        "slug": "regenerative-burst",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d887d165f7b0eb98a30af8f274ff740c6c7735af719b93e95dd9da17558815d8.png",
        "changes": [
         {
          "text_en": "Cooldown lowered from 15 to 13 seconds",
          "text_cn": null,
          "before": 15.0,
          "after": 13.0,
-         "metric": "cooldown",
          "by": -2.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "cooldown"
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
         }
        ]
       }
@@ -107,6 +110,7 @@
      "name_en": "D.Va",
      "name_cn": "D.Va",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5d9b834a39e9306ec125dd8c77cdd62a351f8edef2d5dfe66d6cbb22594eae7e.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -115,17 +119,18 @@
        "name_en": "Boosters",
        "name_cn": "推进器",
        "slug": "boosters",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/89d6beb25b21eacd5a181b96438436692d9ad403fcef19873e506f6d46ed37a3.png",
        "changes": [
         {
          "text_en": "Cooldown increased from 3 to 4 seconds",
          "text_cn": null,
          "before": 3.0,
          "after": 4.0,
-         "metric": "cooldown",
          "by": 1.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "cooldown"
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
         }
        ]
       }
@@ -136,6 +141,7 @@
      "name_en": "Mei",
      "name_cn": "美",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a4c1e3c5533675ba4941c48809c54e0412774e022b1e324f7ec5915fef372db9.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -144,28 +150,29 @@
        "name_en": "Ice Wall",
        "name_cn": "冰墙",
        "slug": "ice-wall",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0608319e5f26acafd19a0afd682f3c73c5b70cbfc93d59f58f28eef5cd0eb2e7.png",
        "changes": [
         {
          "text_en": "Cooldown increased from 10 to 13 seconds",
          "text_cn": null,
          "before": 10.0,
          "after": 13.0,
-         "metric": "cooldown",
          "by": 3.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "cooldown"
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
         },
         {
          "text_en": "Player collision now allows large heroes to fit through 1 pillar gaps",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -176,6 +183,7 @@
      "name_en": "Orisa",
      "name_cn": "奥丽莎",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1f9cf8dd1ea36ba91440be891d79cd97bd4ac2d2e0e409a8eee0c76a4317617a.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -184,17 +192,18 @@
        "name_en": "Fusion Driver",
        "name_cn": "聚变驱动器",
        "slug": "fusion-driver",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8bf67f548fb8dd8fde4dd07ae567e635f8d6229c330a3656134697b9ecbd9140.png",
        "changes": [
         {
          "text_en": "Damage increased from 10 to 11",
          "text_cn": null,
          "before": 10.0,
          "after": 11.0,
-         "metric": "damage",
          "by": 1.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "damage"
+         "metric": "damage",
+         "raw_metric": "damage",
+         "unit": null
         }
        ]
       }
@@ -205,6 +214,7 @@
      "name_en": "Sigma",
      "name_cn": "西格玛",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/72fd43c9d9f9f0d075a78db7a1dfe7766eef4d9c03e34c45b3ae6fe0f8634693.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -213,28 +223,29 @@
        "name_en": "Gravitic Flux",
        "name_cn": "引力乱流",
        "slug": "gravitic-flux",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/7140d3eaf82e580ab465dcdb04bd1faaf77ac54550a12d17ecde7c4e87e963e0.png",
        "changes": [
         {
          "text_en": "Ultimate cost reduced 10%",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": "ultimate_cost",
          "by": null,
          "by_pct": 10.0,
-         "unit": null,
-         "raw_metric": "ultimate cost"
+         "metric": "ultimate_cost",
+         "raw_metric": "ultimate cost",
+         "unit": null
         },
         {
          "text_en": "Flight speed increased 30%",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": "flight speed",
          "by": null,
          "by_pct": 30.0,
-         "unit": null,
-         "raw_metric": "flight speed"
+         "metric": "flight speed",
+         "raw_metric": "flight speed",
+         "unit": null
         }
        ]
       }
@@ -245,6 +256,7 @@
      "name_en": "Soldier: 76",
      "name_cn": "士兵76",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1ab1d67206b689b2dc14282ce65cb070e2956a902f5c4de87884513b661c4297.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -253,17 +265,18 @@
        "name_en": "Helix Rockets",
        "name_cn": "螺旋飞弹",
        "slug": "helix-rockets",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8fedb348952552227b6e2ec85cf14214106b901afce2a9657267153bb2a8cac3.png",
        "changes": [
         {
          "text_en": "Cooldown reduced from 8 to 6 seconds",
          "text_cn": null,
          "before": 8.0,
          "after": 6.0,
-         "metric": "cooldown",
          "by": -2.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "cooldown"
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
         }
        ]
       }
@@ -274,6 +287,7 @@
      "name_en": "Sombra",
      "name_cn": "黑影",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/63afd70d44e5d2b3dde1bbbf9a51f1af6fd0cde2b8d72d58dfffdf75b326ea58.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -282,17 +296,18 @@
        "name_en": "Machine Pistol",
        "name_cn": null,
        "slug": "machine-pistol",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2d43bad47f3061481c4df81d6f66ceaf8fe28a8b49f66dd60d831ff81396e8a4.png",
        "changes": [
         {
          "text_en": "Spread decreased by 10%",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": "spread",
          "by": null,
          "by_pct": 10.0,
-         "unit": null,
-         "raw_metric": "spread"
+         "metric": "spread",
+         "raw_metric": "spread",
+         "unit": null
         }
        ]
       }
@@ -310,27 +325,27 @@
    "blocks": [
     {
      "title": "General",
-     "body": "Fixed bug that could case the \"New\" tag to remain on the \"Player Icon\" menu tab even after viewing the new icon(s) Fixed a UI bug that could cause both teams to show 100% at the end of a Control Point map Fixed a bug that could cause friend request \"toasts\" to be permanently displayed on screen when getting more than one request at a time Fixed a bug that could cause several heroes' ultimate sounds to be silent when observing in third-person Fixed an issue preventing replays from recording in Custom Games that start immediately Fixed a bug that caused hero portraits in the Hero Select screen to appear blurry/low resolution Fixed a bug where Slept or Knocked Down heroes could not be walked over by enemies Fixed some issues with server crashes Fixed an issue where AI bots could get stuck in the Practice Range and in Archives game modes",
+     "body": "- Fixed bug that could case the \"New\" tag to remain on the \"Player Icon\" menu tab even after viewing the new icon(s)\n- Fixed a UI bug that could cause both teams to show 100% at the end of a Control Point map\n- Fixed a bug that could cause friend request \"toasts\" to be permanently displayed on screen when getting more than one request at a time\n- Fixed a bug that could cause several heroes' ultimate sounds to be silent when observing in third-person\n- Fixed an issue preventing replays from recording in Custom Games that start immediately\n- Fixed a bug that caused hero portraits in the Hero Select screen to appear blurry/low resolution\n- Fixed a bug where Slept or Knocked Down heroes could not be walked over by enemies\n- Fixed some issues with server crashes\n- Fixed an issue where AI bots could get stuck in the Practice Range and in Archives game modes",
      "dev": null
     },
     {
      "title": "Maps",
-     "body": "Numbani Fixed a bug that allowd players to stand in an unintended location near the final checkpoint",
+     "body": "Numbani\n\n- Fixed a bug that allowd players to stand in an unintended location near the final checkpoint",
      "dev": null
     },
     {
      "title": "Heroes",
-     "body": "Bastion Brick Skin: Fixed a bug that caused Bastion's brick bullets to grow in size after shooting through a Mei Icewall Orisa Fixed an issue where Orisa's supercharger placed on Petra's breakable floors was not properly being destroyed along with the floor Reinhardt Fixed a bug that resulted in assisted or environment kills not being counted in Reinhardt's Charge killls stat, if the killed player was first knocked back by Reinhardt's Charge Sigma Fixed a bug where Sigma's Gravitic Flux animation would play even if he was slept or stunned Sombra Fixed a bug where Sombra's translocator placed on Petra's breakable floors was not properly being destroyed along with the floor Zarya Fixed a bug where Zarya's Projected Barriers could prevent mutual knockdowns from happening between charging heroes",
+     "body": "Bastion\n\n- Brick Skin: Fixed a bug that caused Bastion's brick bullets to grow in size after shooting through a Mei Icewall\n\nOrisa\n\n- Fixed an issue where Orisa's supercharger placed on Petra's breakable floors was not properly being destroyed along with the floor\n\nReinhardt\n\n- Fixed a bug that resulted in assisted or environment kills not being counted in Reinhardt's Charge killls stat, if the killed player was first knocked back by Reinhardt's Charge\n\nSigma\n\n- Fixed a bug where Sigma's Gravitic Flux animation would play even if he was slept or stunned\n\nSombra\n\n- Fixed a bug where Sombra's translocator placed on Petra's breakable floors was not properly being destroyed along with the floor\n\nZarya\n\n- Fixed a bug where Zarya's Projected Barriers could prevent mutual knockdowns from happening between charging heroes",
      "dev": null
     },
     {
      "title": "Workshop",
-     "body": "Fixed an issue causing Player Joined Message to trigger multiple times when a player joined the match Fixed an issue preventing Set Team Score/Modify Team Score from working in Assault, Hybrid, and Payload Fixed an issue causing the editor to eat the last character of a unicode string when pasting text Fixed an issue preventing \"Is Firing Primary\" from returning true when Doomfist shoots his last bullet Fixed an issue causing \"Disallow Button\" to fail to disable Reaper's Shadow Step Renamed \"Spectators\" to \"Non-Team Spectators\" in Create HUD Text and Create In-World Text for clarity Fixed an issue preventing the Non-Team Spectators option from working properly in Create HUD Text and Create In-World Text",
+     "body": "- Fixed an issue causing Player Joined Message to trigger multiple times when a player joined the match\n- Fixed an issue preventing Set Team Score/Modify Team Score from working in Assault, Hybrid, and Payload\n- Fixed an issue causing the editor to eat the last character of a unicode string when pasting text\n- Fixed an issue preventing \"Is Firing Primary\" from returning true when Doomfist shoots his last bullet\n- Fixed an issue causing \"Disallow Button\" to fail to disable Reaper's Shadow Step\n- Renamed \"Spectators\" to \"Non-Team Spectators\" in Create HUD Text and Create In-World Text for clarity\n- Fixed an issue preventing the Non-Team Spectators option from working properly in Create HUD Text and Create In-World Text",
      "dev": null
     }
    ]
   }
  ],
  "raw_text": null,
- "hash": "sha256:53c94707911ad6bf2677501f97e8a5d2a2e0ec01511b348c26dbcada64d78748"
+ "hash": "sha256:946ecf240821ad89309634132112de0138e072c9e8ec1591303c2b5bd360cd4f"
 }

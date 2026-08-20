@@ -17,6 +17,7 @@
      "name_en": "Ashe",
      "name_cn": "艾什",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e43bc239ddb5254f9df92f4c19cdf20a2df5be3f546af76c8a13da385bb9dcbd.png",
      "dev_note": "Ashe is still a bit too powerful, but we'd like to keep her rifle feeling impactful so we're taking some power out of her Dynamite ability.",
      "general": [],
      "perks": [],
@@ -25,17 +26,18 @@
        "name_en": "Dynamite",
        "name_cn": "延时雷管",
        "slug": "dynamite",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a326b202a821ab3e196d1faab6144460f470001b26a8b6f2ab96cb3af5f325b3.png",
        "changes": [
         {
          "text_en": "Explosion damage reduced from 75 to 50",
          "text_cn": null,
          "before": 75.0,
          "after": 50.0,
-         "metric": "explosion damage",
          "by": -25.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "explosion damage"
+         "metric": "explosion damage",
+         "raw_metric": "explosion damage",
+         "unit": null
         }
        ]
       }
@@ -46,6 +48,7 @@
      "name_en": "Baptiste",
      "name_cn": "巴蒂斯特",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a4f09ac5528ea7c458223747a0b47144f1b6b1d2736fa3b67c18a8ab43d0d815.png",
      "dev_note": "Baptiste generates a majority of his ultimate charge through area-of-effect healing. As we reduced area healing values recently, we're also scaling down the cost of his ultimate.",
      "general": [],
      "perks": [],
@@ -54,17 +57,18 @@
        "name_en": "Amplification Matrix",
        "name_cn": "增幅矩阵",
        "slug": "amplification-matrix",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0a31371b55e4007e67a86f8495949970d20f64b2f0166e78d3fd16217e090a83.png",
        "changes": [
         {
          "text_en": "Ultimate cost decreased 15%",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": "ultimate_cost",
          "by": null,
          "by_pct": 15.0,
-         "unit": null,
-         "raw_metric": "ultimate cost"
+         "metric": "ultimate_cost",
+         "raw_metric": "ultimate cost",
+         "unit": null
         }
        ]
       }
@@ -75,6 +79,7 @@
      "name_en": "Cassidy",
      "name_cn": "卡西迪",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a30fd337709bc9bd52781db34d754cd86825f021c27bcd9bc0e912cc5d88577b.png",
      "dev_note": "After scaling down the damage output of McCree's primary fire, we're looking to give back a bit of power through improvements to his abilities.",
      "general": [],
      "perks": [],
@@ -83,17 +88,18 @@
        "name_en": "Combat Roll",
        "name_cn": "战术翻滚",
        "slug": "combat-roll",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/24a3f2f619859812bba6b6374513fa971b6b19ccb34950c02118b41cc4f93142.png",
        "changes": [
         {
          "text_en": "Distance increased 20%",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": "distance",
          "by": null,
          "by_pct": 20.0,
-         "unit": null,
-         "raw_metric": "distance"
+         "metric": "distance",
+         "raw_metric": "distance",
+         "unit": null
         }
        ]
       },
@@ -101,17 +107,18 @@
        "name_en": "Flashbang",
        "name_cn": "闪光弹",
        "slug": "flashbang",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c9de6a63247025da4b96ad4a3e36fe2675a5ac9da3b42384590f99eed8f1d9b3.png",
        "changes": [
         {
          "text_en": "Stun duration increased from 0.7 to 0.8 seconds",
          "text_cn": null,
          "before": 0.7,
          "after": 0.8,
-         "metric": "stun duration",
          "by": 0.1,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "stun duration"
+         "metric": "stun duration",
+         "raw_metric": "stun duration",
+         "unit": null
         }
        ]
       }
@@ -122,6 +129,7 @@
      "name_en": "Orisa",
      "name_cn": "奥丽莎",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1f9cf8dd1ea36ba91440be891d79cd97bd4ac2d2e0e409a8eee0c76a4317617a.png",
      "dev_note": "Increased projectile speed will help Orisa’s weapon feel more responsive, reducing the need to lead targets. We found that recent adjustments to Orisa’s abilities were more impactful than we originally anticipated and have increased her armor to compensate.",
      "general": [
       {
@@ -143,17 +151,18 @@
        "name_en": "Fusion Driver",
        "name_cn": "聚变驱动器",
        "slug": "fusion-driver",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8bf67f548fb8dd8fde4dd07ae567e635f8d6229c330a3656134697b9ecbd9140.png",
        "changes": [
         {
          "text_en": "Projectile speed increased from 90 to 120",
          "text_cn": null,
          "before": 90.0,
          "after": 120.0,
-         "metric": "projectile_speed",
          "by": 30.0,
          "by_pct": null,
-         "unit": "m/s",
-         "raw_metric": "projectile speed"
+         "metric": "projectile_speed",
+         "raw_metric": "projectile speed",
+         "unit": "m/s"
         }
        ]
       }
@@ -164,6 +173,7 @@
      "name_en": "Roadhog",
      "name_cn": "路霸",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5f961a1625091209fdfb6086dee69178d9de88946b4b2d7492c0a4fffe5fdd4b.png",
      "dev_note": "After the last round of shotgun improvements, Roadhog's Chain Hook combo still wasn't effective against some of the smaller enemy heroes. This change pulls targets closer to melee range for swifter, more reliable combo execution.",
      "general": [],
      "perks": [],
@@ -172,17 +182,18 @@
        "name_en": "Chain Hook",
        "name_cn": "链钩",
        "slug": "chain-hook",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/139deabeb3d62c451b558367bf5e64641583355d99ed90fe42107a5716fdca3b.png",
        "changes": [
         {
          "text_en": "Now pulls targets 0.5 meters closer (3.5 meters down to 3.0 meters)",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }

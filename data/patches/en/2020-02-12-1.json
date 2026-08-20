@@ -10,7 +10,7 @@
    "type": "generic_update",
    "title": null,
    "role": null,
-   "description": "To share your feedback, please post in the General Discussion forum. For a list of known issues, visit our Bug Report forum. For troubleshooting assistance, visit our Technical Support forum.",
+   "description": "- To share your feedback, please post in the General Discussion forum.\n- For a list of known issues, visit our Bug Report forum.\n- For troubleshooting assistance, visit our Technical Support forum.",
    "heroes": [],
    "blocks": []
   },
@@ -25,6 +25,7 @@
      "name_en": "Ana",
      "name_cn": "安娜",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b64f0b7062266a58b29a773476b31175aded9fcccfe4a0d86596dbe85f7739d2.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -33,17 +34,18 @@
        "name_en": "Biotic Rifle",
        "name_cn": "生物步枪",
        "slug": "biotic-rifle",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/efe0ebb135e87dc26b60f0d20500dcd7553ad121ab2b10cd4ffb5db17be9c977.png",
        "changes": [
         {
          "text_en": "[Console-Only Update] Allied projectile size increased from 0.3 to 0.4",
          "text_cn": null,
          "before": 0.3,
          "after": 0.4,
-         "metric": "allied projectile size",
          "by": 0.1,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "allied projectile size"
+         "metric": "allied projectile size",
+         "raw_metric": "allied projectile size",
+         "unit": null
         }
        ]
       }
@@ -54,6 +56,7 @@
      "name_en": "Brigitte",
      "name_cn": "布丽吉塔",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/cc43b7ecb12ebf262080d610ae3209849e304f82764bc3ba38508dd812d88e61.png",
      "dev_note": "On top of the high utility Brigitte brings to her team, she also dishes out a ton of healing and armor. We’re reducing some of this healing and armor to help keep her in line with the other healers.",
      "general": [],
      "perks": [],
@@ -62,28 +65,29 @@
        "name_en": "Repair Pack",
        "name_cn": null,
        "slug": "repair-pack",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5f9f1e00af992f4a090cafc8e83821dd2848f22cb9e0205fafcedacb26bd7335.png",
        "changes": [
         {
          "text_en": "Armor over-heal reduced from 75 armor to 50 armor",
          "text_cn": null,
          "before": 75.0,
          "after": 50.0,
-         "metric": "armor",
          "by": -25.0,
          "by_pct": null,
-         "unit": "hp",
-         "raw_metric": "armor over-heal"
+         "metric": "armor",
+         "raw_metric": "armor over-heal",
+         "unit": "hp"
         },
         {
          "text_en": "HPS decreased from 60 to 55",
          "text_cn": null,
          "before": 60.0,
          "after": 55.0,
-         "metric": "hps",
          "by": -5.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "hps"
+         "metric": "hps",
+         "raw_metric": "hps",
+         "unit": null
         }
        ]
       }
@@ -94,6 +98,7 @@
      "name_en": "Symmetra",
      "name_cn": "秩序之光",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/961aa9d625d8104d6f466f63a907027e7083d161da9f02004d7d545c2a52440b.png",
      "dev_note": "Increasing Photon Projectors max damage allows Symmetra to play more effectively at a safer range when necessary.",
      "general": [],
      "perks": [],
@@ -102,17 +107,18 @@
        "name_en": "Photon Projector",
        "name_cn": "光子发射器",
        "slug": "photon-projector",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1b3f003d2ba6bba4f3d44f167cd1b03469c4e3c4d3900805b8adddffeedd2c56.png",
        "changes": [
         {
          "text_en": "Damage increased from 120 to 140",
          "text_cn": null,
          "before": 120.0,
          "after": 140.0,
-         "metric": "damage",
          "by": 20.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "damage"
+         "metric": "damage",
+         "raw_metric": "damage",
+         "unit": null
         }
        ]
       },
@@ -120,17 +126,18 @@
        "name_en": "Sentry Turret",
        "name_cn": "哨戒炮",
        "slug": "sentry-turret",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6ca1ad903ec0121026994bd2318dd5f2488ba40e5dbf5bdb2d5fad8474359253.png",
        "changes": [
         {
          "text_en": "[Console-Only Update] Turret DPS reduced from 34 to 30",
          "text_cn": null,
          "before": 34.0,
          "after": 30.0,
-         "metric": "turret dps",
          "by": -4.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "turret dps"
+         "metric": "turret dps",
+         "raw_metric": "turret dps",
+         "unit": null
         }
        ]
       }
@@ -141,6 +148,7 @@
      "name_en": "Widowmaker",
      "name_cn": "黑百合",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a90c4acb688e425a51164216e40e5e9bd8e82797d26d8db0441bcf5f508ae474.png",
      "dev_note": "Widowmaker has become stronger over time following changes to other heroes, such as power reductions to barriers. This change is intended to slow down her shots, reducing her overall DPS.",
      "general": [],
      "perks": [],
@@ -149,17 +157,18 @@
        "name_en": "Widow's Kiss",
        "name_cn": "寡妇之吻",
        "slug": "widows-kiss",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/13a1e7903c23a5e140aa01fa930f585c1ea69e1e24378c0462f42053085f7ad9.png",
        "changes": [
         {
          "text_en": "Full charge time for scoped shots increased from 0.75 sec to 0.9 sec",
          "text_cn": null,
          "before": 0.75,
          "after": 0.9,
-         "metric": "full charge time for scoped shots",
          "by": 0.15,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "full charge time for scoped shots"
+         "metric": "full charge time for scoped shots",
+         "raw_metric": "full charge time for scoped shots",
+         "unit": "s"
         }
        ]
       }
@@ -170,6 +179,7 @@
      "name_en": "Wrecking Ball",
      "name_cn": "破坏球",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c22df3c91a4fbc7f3f9689cd76f9fb86b52b2dfdf9f51c2158b4a9259a5f970d.png",
      "dev_note": "This change allows Wrecking Ball’s enemies to regain control of their movement more quickly to try and avoid attacks, making Piledriver combos a bit less deadly.",
      "general": [],
      "perks": [],
@@ -178,17 +188,18 @@
        "name_en": "Piledriver",
        "name_cn": "重力坠击",
        "slug": "piledriver",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3e884373721448d109c1646599cfe651a5bccdbc7a12d5062372c91b28acd80c.png",
        "changes": [
         {
          "text_en": "Affected players’ loss of air control reduced from 1 second to 0.5 seconds",
          "text_cn": null,
          "before": 1.0,
          "after": 0.5,
-         "metric": "loss of air control",
          "by": -0.5,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "loss of air control"
+         "metric": "loss of air control",
+         "raw_metric": "loss of air control",
+         "unit": "s"
         }
        ]
       }
@@ -199,5 +210,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:9ba5beb853266d25d6bc6d55fe929d381a5c91f70bd4d12a1febaceef0f85351"
+ "hash": "sha256:b26367d214d11618248a2eb9a2d41643ec539104a98a3a2ac20c42a469e318aa"
 }

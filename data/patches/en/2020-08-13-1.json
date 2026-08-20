@@ -17,6 +17,7 @@
      "name_en": "Brigitte",
      "name_cn": "布丽吉塔",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/cc43b7ecb12ebf262080d610ae3209849e304f82764bc3ba38508dd812d88e61.png",
      "dev_note": "After gaining multiple Repair Pack charges, Brigitte was enabled to play at safer distances while still having a powerful impact on her team. Combined with her personal barrier, she ended up not needing as much survivability in terms of raw health. Inspire has also had a powerful team impact despite being hard to feel due to its passive nature, so we are lowering its team-wide healing output while making it more useful for Brigitte herself.",
      "general": [
       {
@@ -38,28 +39,29 @@
        "name_en": "Inspire",
        "name_cn": "鼓舞士气",
        "slug": "inspire",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/487545fb37163e4029e1e8483266180fbcc59b7e8482062563168998774615f8.png",
        "changes": [
         {
          "text_en": "Total healing decreased from 130 to 90 (Healing reduced from 21 to 15 health per second)",
          "text_cn": null,
          "before": 130.0,
          "after": 90.0,
-         "metric": "total healing",
          "by": -40.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "total healing"
+         "metric": "total healing",
+         "raw_metric": "total healing",
+         "unit": null
         },
         {
          "text_en": "Self-healing is no longer reduced by half",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -70,6 +72,7 @@
      "name_en": "Orisa",
      "name_cn": "奥丽莎",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1f9cf8dd1ea36ba91440be891d79cd97bd4ac2d2e0e409a8eee0c76a4317617a.png",
      "dev_note": "The large radius of Orisa's Halt! ability made it too effective in setting up combos against large groups of enemies on a relatively short cooldown. The changes to the projectile speed and radius are aimed at shifting its use to be more effective at catching single targets.",
      "general": [
       {
@@ -91,28 +94,29 @@
        "name_en": "Halt!",
        "name_cn": "站住！",
        "slug": "halt",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0ccf984506779d8ac96eb75f386fcfd8a781e1b01fcfd42da90343ff75888d33.png",
        "changes": [
         {
          "text_en": "Radius reduced from 7 to 4 meters",
          "text_cn": null,
          "before": 7.0,
          "after": 4.0,
-         "metric": "radius",
          "by": -3.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "radius"
+         "metric": "radius",
+         "raw_metric": "radius",
+         "unit": null
         },
         {
          "text_en": "Projectile speed increased from 20 to 30",
          "text_cn": null,
          "before": 20.0,
          "after": 30.0,
-         "metric": "projectile_speed",
          "by": 10.0,
          "by_pct": null,
-         "unit": "m/s",
-         "raw_metric": "projectile speed"
+         "metric": "projectile_speed",
+         "raw_metric": "projectile speed",
+         "unit": "m/s"
         }
        ]
       }
@@ -123,6 +127,7 @@
      "name_en": "Pharah",
      "name_cn": "法老之鹰",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d69d76162855cea8807b9c163e6b53bb522eef282f368b52a469332313562b98.png",
      "dev_note": "We’re making some adjustments to Hover Jets that should increase her flight speed and make her more agile. To compensate for this change, we’re also lowering her hover uptime. Rocket Barrage has such immense damage output that the tail end of the duration was often more of a liability than a benefit, especially with fewer barriers around to blast through.",
      "general": [],
      "perks": [],
@@ -131,28 +136,29 @@
        "name_en": "Hover Jets",
        "name_cn": "悬浮背包",
        "slug": "hover-jets",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ab8ffe4008a1c257f1014d55a5306fcd3d81cde8ffad569b240f74c4c13a4130.png",
        "changes": [
         {
          "text_en": "Movement speed increased 20%",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": "move_speed",
          "by": null,
          "by_pct": 20.0,
-         "unit": null,
-         "raw_metric": "movement speed"
+         "metric": "move_speed",
+         "raw_metric": "movement speed",
+         "unit": null
         },
         {
          "text_en": "Regeneration rate reduced from 50 to 35 per second",
          "text_cn": null,
          "before": 50.0,
          "after": 35.0,
-         "metric": "regeneration rate",
          "by": -15.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "regeneration rate"
+         "metric": "regeneration rate",
+         "raw_metric": "regeneration rate",
+         "unit": null
         }
        ]
       },
@@ -160,17 +166,18 @@
        "name_en": "Barrage",
        "name_cn": "火箭弹幕",
        "slug": "barrage",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0708775beda1d200b586ae1d019522ea5ad8baa9bdcbbe076854102830f9fdae.png",
        "changes": [
         {
          "text_en": "Duration reduced from 3 to 2.5 seconds",
          "text_cn": null,
          "before": 3.0,
          "after": 2.5,
-         "metric": "duration",
          "by": -0.5,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "duration"
+         "metric": "duration",
+         "raw_metric": "duration",
+         "unit": "s"
         }
        ]
       }
@@ -181,6 +188,7 @@
      "name_en": "Roadhog",
      "name_cn": "路霸",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5f961a1625091209fdfb6086dee69178d9de88946b4b2d7492c0a4fffe5fdd4b.png",
      "dev_note": "These weapon changes are intended to make Roadhog's Chain Hook combo more consistent and bring back some of the heavyweight feeling it had in the past.",
      "general": [],
      "perks": [],
@@ -189,39 +197,40 @@
        "name_en": "Scrap Gun",
        "name_cn": "爆裂枪",
        "slug": "scrap-gun",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/50b6e388a6693ce31b5a1889e53037970a1b884b8265834f33dd6f7a3dedce44.png",
        "changes": [
         {
          "text_en": "Ammo reduced from 6 to 5",
          "text_cn": null,
          "before": 6.0,
          "after": 5.0,
-         "metric": "ammo",
          "by": -1.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "ammo"
+         "metric": "ammo",
+         "raw_metric": "ammo",
+         "unit": null
         },
         {
          "text_en": "Damage per projectile increased from 6 to 7",
          "text_cn": null,
          "before": 6.0,
          "after": 7.0,
-         "metric": "damage",
          "by": 1.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "damage per projectile"
+         "metric": "damage",
+         "raw_metric": "damage per projectile",
+         "unit": null
         },
         {
          "text_en": "Recovery increased from 0.7 to 0.85 seconds",
          "text_cn": null,
          "before": 0.7,
          "after": 0.85,
-         "metric": "recovery",
          "by": 0.15,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "recovery"
+         "metric": "recovery",
+         "raw_metric": "recovery",
+         "unit": "s"
         }
        ]
       }
@@ -232,6 +241,7 @@
      "name_en": "Sigma",
      "name_cn": "西格玛",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/72fd43c9d9f9f0d075a78db7a1dfe7766eef4d9c03e34c45b3ae6fe0f8634693.png",
      "dev_note": "Given Sigma’s offensive strength with Hyperspheres and Accretion, we have reduced some of his defensive tools to bring him more in line with other Tank heroes.",
      "general": [],
      "perks": [],
@@ -240,28 +250,29 @@
        "name_en": "Experimental Barrier",
        "name_cn": "实验屏障",
        "slug": "experimental-barrier",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ae2c31f159331f73739932e85dc21bdfa8eb4f2b2d2de4e89c1488445da34ffb.png",
        "changes": [
         {
          "text_en": "Health reduced from 900 to 700",
          "text_cn": null,
          "before": 900.0,
          "after": 700.0,
-         "metric": "health",
          "by": -200.0,
          "by_pct": null,
-         "unit": "hp",
-         "raw_metric": "health"
+         "metric": "health",
+         "raw_metric": "health",
+         "unit": "hp"
         },
         {
          "text_en": "Regeneration rate reduced from 120 to 80 per second",
          "text_cn": null,
          "before": 120.0,
          "after": 80.0,
-         "metric": "regeneration rate",
          "by": -40.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "regeneration rate"
+         "metric": "regeneration rate",
+         "raw_metric": "regeneration rate",
+         "unit": null
         }
        ]
       },
@@ -269,17 +280,18 @@
        "name_en": "Kinetic Grasp",
        "name_cn": "动能俘获",
        "slug": "kinetic-grasp",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a7401d18a391bc0eafddd8fc47a31ccc7f277190ab61ed14ae98408f576d6a23.png",
        "changes": [
         {
          "text_en": "Cooldown increased from 10 to 12 seconds",
          "text_cn": null,
          "before": 10.0,
          "after": 12.0,
-         "metric": "cooldown",
          "by": 2.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "cooldown"
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
         }
        ]
       }
@@ -290,6 +302,7 @@
      "name_en": "Symmetra",
      "name_cn": "秩序之光",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/961aa9d625d8104d6f466f63a907027e7083d161da9f02004d7d545c2a52440b.png",
      "dev_note": "We're reducing the cooldown of the Teleporter to help lower the friction between needing to use it as both a personal and team-focused mobility tool.",
      "general": [],
      "perks": [],
@@ -298,17 +311,18 @@
        "name_en": "Teleporter",
        "name_cn": null,
        "slug": "teleporter",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/13b45663f441144ded977e8ccf9ed180c213176206a9f6f9e189e29f09a03b64.png",
        "changes": [
         {
          "text_en": "Cooldown reduced from 12 to 10 seconds",
          "text_cn": null,
          "before": 12.0,
          "after": 10.0,
-         "metric": "cooldown",
          "by": -2.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "cooldown"
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
         }
        ]
       }
@@ -319,6 +333,7 @@
      "name_en": "Zenyatta",
      "name_cn": "禅雅塔",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0ac1ec8a83a9a8c3de27d975c1da5356cd22ef68e3a662c98bdee5204ca302e7.png",
      "dev_note": "Zenyatta has low healing and mobility outside of his ultimate but makes up for it with high potential damage output. With the recently lowered barrier uptime resulting in an overall faster pace of the game, we want to make sure Zenyatta still excels at his strengths. This change will make his charged attack flow a bit better in combat.",
      "general": [],
      "perks": [],
@@ -327,28 +342,29 @@
        "name_en": "Orb of Destruction",
        "name_cn": "灭",
        "slug": "orb-of-destruction",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5740abd7e5f0de513ebcb32b073f27ba8f5625804598d5762cefd0c7331c1437.png",
        "changes": [
         {
          "text_en": "Charge rate increased 15% (0.6 down to 0.52 seconds per orb)",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": "charge rate",
          "by": null,
          "by_pct": 15.0,
-         "unit": null,
-         "raw_metric": "charge rate"
+         "metric": "charge rate",
+         "raw_metric": "charge rate",
+         "unit": null
         },
         {
          "text_en": "Rate of fire increased from 8.5 to 9 shots per second",
          "text_cn": null,
          "before": 8.5,
          "after": 9.0,
-         "metric": "rate_of_fire",
          "by": 0.5,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "rate of fire"
+         "metric": "rate_of_fire",
+         "raw_metric": "rate of fire",
+         "unit": null
         }
        ]
       }

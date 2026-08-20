@@ -23,17 +23,17 @@
    "blocks": [
     {
      "title": "General Changes",
-     "body": "In-Combat Healing Reduction reduced from 30% to 15% for all heroes.",
+     "body": "- In-Combat Healing Reduction reduced from 30% to 15% for all heroes.",
      "dev": null
     },
     {
      "title": "Tank Role Passive",
-     "body": "Ultimate charge reduction when damaging or healing tank targets increased from 20% to 40%.",
+     "body": "- Ultimate charge reduction when damaging or healing tank targets increased from 20% to 40%.",
      "dev": null
     },
     {
      "title": "Subrole Passives",
-     "body": "Bruiser Movement speed buff reduced from 20% to 15%. Initiator Healing reduced from 50 to 40. Cooldown reduced from 5 to 4 seconds. Flanker Additional health from Health Packs reduced from 75 to 50. Medic Healing conversion reduced from 40% to 30%.",
+     "body": "Bruiser\n\n- Movement speed buff reduced from 20% to 15%.\n\nInitiator\n\n- Healing reduced from 50 to 40.\n- Cooldown reduced from 5 to 4 seconds.\n\nFlanker\n\n- Additional health from Health Packs reduced from 75 to 50.\n\nMedic\n\n- Healing conversion reduced from 40% to 30%.",
      "dev": null
     }
    ]
@@ -49,6 +49,7 @@
      "name_en": "Domina",
      "name_cn": "金驭",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/63c3e4cb2c594cfdbc2298836162abc7c6c0da75c22032aeb58700fd6e0da40d.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -57,28 +58,29 @@
        "name_en": "Barrier Array",
        "name_cn": "屏障阵列",
        "slug": "barrier-array",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/909e0bb235934d7961a51fe41f90fadafaee33784b8199f62c92f3dd946da76f.png",
        "changes": [
         {
          "text_en": "Barrier Cooldown reduced from 17 to 15 seconds.",
          "text_cn": null,
          "before": 17.0,
          "after": 15.0,
-         "metric": "barrier",
          "by": -2.0,
          "by_pct": null,
-         "unit": "hp",
-         "raw_metric": "barrier cooldown"
+         "metric": "barrier",
+         "raw_metric": "barrier cooldown",
+         "unit": "hp"
         },
         {
          "text_en": "Barrier Duration reduced from 8 to 7 seconds.",
          "text_cn": null,
          "before": 8.0,
          "after": 7.0,
-         "metric": "barrier",
          "by": -1.0,
          "by_pct": null,
-         "unit": "hp",
-         "raw_metric": "barrier duration"
+         "metric": "barrier",
+         "raw_metric": "barrier duration",
+         "unit": "hp"
         }
        ]
       }
@@ -89,6 +91,7 @@
      "name_en": "Doomfist",
      "name_cn": "末日铁拳",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/36dc867dd65cff81b5154c34531a9c520059c6f8c907631a6f99e049a6777dbb.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -97,17 +100,18 @@
        "name_en": "The Best Defense",
        "name_cn": "最佳防守……",
        "slug": "the-best-defense",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3e93462033f27c94365dcdc4ced958791f8164d8e4f9a61b3af34418f8e29001.png",
        "changes": [
         {
          "text_en": "Shield gain increased from 25 to 30.",
          "text_cn": null,
          "before": 25.0,
          "after": 30.0,
-         "metric": "shield",
          "by": 5.0,
          "by_pct": null,
-         "unit": "hp",
-         "raw_metric": "shield gain"
+         "metric": "shield",
+         "raw_metric": "shield gain",
+         "unit": "hp"
         }
        ]
       }
@@ -118,6 +122,7 @@
      "name_en": "Hazard",
      "name_cn": "骇灾",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f5f6c3e6378f59c991cc60d817ec0f8b73b6957c277ff1ce23e89895ed6c6628.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -126,17 +131,18 @@
        "name_en": "Jagged Wall",
        "name_cn": "尖刺墙",
        "slug": "jagged-wall",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8c82b489f5d8756f98a6671e445d394e93ee5658135c9a54122d079d5d59995b.png",
        "changes": [
         {
          "text_en": "Cooldown reduced from 15 to 13 seconds.",
          "text_cn": null,
          "before": 15.0,
          "after": 13.0,
-         "metric": "cooldown",
          "by": -2.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "cooldown"
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
         }
        ]
       }
@@ -147,6 +153,7 @@
      "name_en": "Mauga",
      "name_cn": "毛加",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/937cbae13f50502b4191c09b7c178ef60d2eadddcdda5bc4268c1541216b8722.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -155,17 +162,18 @@
        "name_en": "Overrun",
        "name_cn": "蛮力冲撞",
        "slug": "overrun",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/10f358f93cd59c2f2b31278cd09bfc7a986c7af6e9a15cdf96db16375b596cee.png",
        "changes": [
         {
          "text_en": "Cooldown reduced from 7 to 6 seconds.",
          "text_cn": null,
          "before": 7.0,
          "after": 6.0,
-         "metric": "cooldown",
          "by": -1.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "cooldown"
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
         }
        ]
       }
@@ -176,6 +184,7 @@
      "name_en": "Ramattra",
      "name_cn": "拉玛刹",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f54a877264e161c2aa4d5755ef4411eb7fd7e4eb910075936e91ddb043b8a58e.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -184,28 +193,29 @@
        "name_en": "Void Barrier",
        "name_cn": "虚空屏障",
        "slug": "void-barrier",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/94d29f925b938d4898f440d06d8543e49c772e09cb89ef9812826fb2be54f9c7.png",
        "changes": [
         {
          "text_en": "Cooldown reduced from 16 to 13 seconds.",
          "text_cn": null,
          "before": 16.0,
          "after": 13.0,
-         "metric": "cooldown",
          "by": -3.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "cooldown"
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
         },
         {
          "text_en": "Duration reduced from 4 to 3 seconds.",
          "text_cn": null,
          "before": 4.0,
          "after": 3.0,
-         "metric": "duration",
          "by": -1.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "duration"
+         "metric": "duration",
+         "raw_metric": "duration",
+         "unit": "s"
         }
        ]
       }
@@ -216,5 +226,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:19cbdeda6d8257e33bef40b9aa7ef04e32398fe48b51ec55fa8037d13a7f8cfa"
+ "hash": "sha256:5bc36d25c258183916e408fac1f7d59980a2a3cc8fb8966bc7f1021d1fb914c8"
 }

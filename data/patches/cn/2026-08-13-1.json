@@ -25,6 +25,7 @@
      "name_en": "D.Mon",
      "name_cn": "D.Mon",
      "role": "tank",
+     "icon": "https://ld5.res.netease.com/images/20260813/1786594671757_b03226bd74.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -33,17 +34,18 @@
        "name_en": "Plasma Saber",
        "name_cn": "等离子剑",
        "slug": "plasma-saber",
+       "icon": "https://ld5.res.netease.com/images/20260813/1786594672391_038d69fd0c.png",
        "changes": [
         {
          "text_en": null,
          "text_cn": "伤害从60点提高至65点。",
          "before": 60.0,
          "after": 65.0,
-         "metric": "damage",
          "by": 5.0,
          "by_pct": null,
-         "unit": "hp",
-         "raw_metric": "伤害"
+         "metric": "damage",
+         "raw_metric": "伤害",
+         "unit": "hp"
         }
        ]
       },
@@ -51,28 +53,29 @@
        "name_en": "Propulsors",
        "name_cn": "助推器",
        "slug": "propulsors",
+       "icon": "https://ld5.res.netease.com/images/20260813/1786594673520_b5a3fc0a12.png",
        "changes": [
         {
          "text_en": null,
          "text_cn": "燃料消耗速度从40点降低至25点。",
          "before": 40.0,
          "after": 25.0,
-         "metric": "燃料消耗速度",
          "by": -15.0,
          "by_pct": null,
-         "unit": "hp",
-         "raw_metric": "燃料消耗速度"
+         "metric": "燃料消耗速度",
+         "raw_metric": "燃料消耗速度",
+         "unit": "hp"
         },
         {
          "text_en": null,
          "text_cn": "燃料填充速度从15点提高至22.5点。",
          "before": 15.0,
          "after": 22.5,
-         "metric": "燃料填充速度",
          "by": 7.5,
          "by_pct": null,
-         "unit": "hp",
-         "raw_metric": "燃料填充速度"
+         "metric": "燃料填充速度",
+         "raw_metric": "燃料填充速度",
+         "unit": "hp"
         }
        ]
       },
@@ -80,28 +83,29 @@
        "name_en": "Fusion Repeater",
        "name_cn": "聚变连发枪",
        "slug": "fusion-repeater",
+       "icon": "https://ld5.res.netease.com/images/20260813/1786594673862_3f03846682.png",
        "changes": [
         {
          "text_en": null,
          "text_cn": "伤害从15点提高至16点。",
          "before": 15.0,
          "after": 16.0,
-         "metric": "damage",
          "by": 1.0,
          "by_pct": null,
-         "unit": "hp",
-         "raw_metric": "伤害"
+         "metric": "damage",
+         "raw_metric": "伤害",
+         "unit": "hp"
         },
         {
          "text_en": null,
          "text_cn": "冷却时间从6秒缩短至4秒。",
          "before": 6.0,
          "after": 4.0,
-         "metric": "cooldown",
          "by": -2.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "冷却时间"
+         "metric": "cooldown",
+         "raw_metric": "冷却时间",
+         "unit": "s"
         }
        ]
       }
@@ -114,11 +118,11 @@
    "type": "generic_update",
    "title": "错误修复",
    "role": null,
-   "description": "修复了莫伊拉使用消散时会移除纳米激素效果的问题。 修复了 D.Mon在聚变连发枪激活期间使用强力屏障时，屏障无法完全保护D.Mon的问题。 修复了帕拉伊苏地图中，第二个进攻方重生点区域延伸至可游玩区域的问题。 修复了 D.Mon 可能会暂时进入无敌状态的问题。",
+   "description": "- 修复了莫伊拉使用消散时会移除纳米激素效果的问题。\n- 修复了 D.Mon在聚变连发枪激活期间使用强力屏障时，屏障无法完全保护D.Mon的问题。\n- 修复了帕拉伊苏地图中，第二个进攻方重生点区域延伸至可游玩区域的问题。\n- 修复了 D.Mon 可能会暂时进入无敌状态的问题。",
    "heroes": [],
    "blocks": []
   }
  ],
  "raw_text": null,
- "hash": "sha256:b933218c8806fe8a2a4a339eb2a80da8a1f0f53360ddcb8c4fe784bbbf6ef761"
+ "hash": "sha256:4e26fb9ec73cedf6f739f663c20f317316b45ead245c09040383971b49fe92e2"
 }

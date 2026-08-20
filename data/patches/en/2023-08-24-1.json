@@ -15,7 +15,7 @@
    "blocks": [
     {
      "title": "Player Progression",
-     "body": "Updated the Wins sub-badge level-up requirement from 2 to 1 across all heroes, game modes, and roles, and re-tuned XP granted to balance.",
+     "body": "- Updated the Wins sub-badge level-up requirement from 2 to 1 across all heroes, game modes, and roles, and re-tuned XP granted to balance.",
      "dev": null
     }
    ]
@@ -39,6 +39,7 @@
      "name_en": "Illari",
      "name_cn": "伊拉锐",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f33f6fe94ad55fcf9027e779f66afac358a2f93651070b95cd565ff90d670c8b.png",
      "dev_note": "Developer Comments: Illari has had a strong showing since her launch. The following changes are meant to promote a better balance between healing and damage while adding more counterplay against her abilities. We are making the Healing Pylon weaker, as it's often placed out of line-of-sight or at odd angles and isn't being destroyed as often as we expect. Captive Sun ignoring barriers is not immediately intuitive, but we are also reducing the projectile size, so blocking or destroying will require more precision. Finally, the Sunstruck effect lasts too long to reasonably avoid the detonation damage threshold.",
      "general": [],
      "perks": [],
@@ -47,28 +48,29 @@
        "name_en": "Healing Pylon",
        "name_cn": "治疗光塔",
        "slug": "healing-pylon",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/55bf9fe097546152c2592716f809b86c542b22d5de3384eb6c4674fc01991115.png",
        "changes": [
         {
          "text_en": "Heal decreased from 40 to 30.",
          "text_cn": null,
          "before": 40.0,
          "after": 30.0,
-         "metric": "heal",
          "by": -10.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "heal"
+         "metric": "heal",
+         "raw_metric": "heal",
+         "unit": null
         },
         {
          "text_en": "Shields decreased from 75 to 50.",
          "text_cn": null,
          "before": 75.0,
          "after": 50.0,
-         "metric": "shield",
          "by": -25.0,
          "by_pct": null,
-         "unit": "hp",
-         "raw_metric": "shields"
+         "metric": "shield",
+         "raw_metric": "shields",
+         "unit": "hp"
         }
        ]
       },
@@ -76,39 +78,40 @@
        "name_en": "Captive Sun",
        "name_cn": "桎梏灼日",
        "slug": "captive-sun",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/556c78ff01455fb1ab7ed7808e681ae0f1cd1fdf0fe1c92fe89672ea261ad187.png",
        "changes": [
         {
          "text_en": "Projectile Impact and explosion are now blocked by barriers.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Projectile size decreased from 1.5 to 0.75 meters.",
          "text_cn": null,
          "before": 1.5,
          "after": 0.75,
-         "metric": "projectile size",
          "by": -0.75,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "projectile size"
+         "metric": "projectile size",
+         "raw_metric": "projectile size",
+         "unit": null
         },
         {
          "text_en": "Sunstruck duration decreased from 7 to 6 seconds.",
          "text_cn": null,
          "before": 7.0,
          "after": 6.0,
-         "metric": "sunstruck duration",
          "by": -1.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "sunstruck duration"
+         "metric": "sunstruck duration",
+         "raw_metric": "sunstruck duration",
+         "unit": null
         }
        ]
       }
@@ -126,22 +129,22 @@
    "blocks": [
     {
      "title": "GENERAL",
-     "body": "Fixed bug where some event challenges weren't counting towards \"Savior of the Underworld\" for the Brigitte Sparkplug skin. Fixed an issue that made the Ashe Snakewrangler Skin in the Battle Pass a premium reward instead of a free one. Any player on the free Battle Pass track who already unlocked this tier will receive this skin automatically. Fixed an issue that resulted in players backfilling into the Underworld Event Mission and Invasion Story Missions. Fixed an issue that allowed Spectating of players in the Underworld Event Mission and Invasion Story Missions.",
+     "body": "- Fixed bug where some event challenges weren't counting towards \"Savior of the Underworld\" for the Brigitte Sparkplug skin.\n- Fixed an issue that made the Ashe Snakewrangler Skin in the Battle Pass a premium reward instead of a free one. Any player on the free Battle Pass track who already unlocked this tier will receive this skin automatically.\n- Fixed an issue that resulted in players backfilling into the Underworld Event Mission and Invasion Story Missions.\n- Fixed an issue that allowed Spectating of players in the Underworld Event Mission and Invasion Story Missions.",
      "dev": null
     },
     {
      "title": "HEROES",
-     "body": "Echo Fixed an issue with cloned Illari's Captive Sun explosion, damaging herself and her allies. Orisa Fixed an issue where the \"Who Said Chivalry Is Dead?\" voice line is missing from Hero Gallery. Fixed an issue where World Cup Skin for Orisa was inaccessible.",
+     "body": "Echo\n\n- Fixed an issue with cloned Illari's Captive Sun explosion, damaging herself and her allies.\n\nOrisa\n\n- Fixed an issue where the \"Who Said Chivalry Is Dead?\" voice line is missing from Hero Gallery.\n- Fixed an issue where World Cup Skin for Orisa was inaccessible.",
      "dev": null
     },
     {
      "title": "MISSIONS",
-     "body": "Toronto Fixed in a previous update - Fixed an issue with Slicers clipping into the Ferry, making them difficult to target. Gothenburg Fixed in a previous update - Fixed an issue where \"The Babies Are Safe\" challenge was unable to be completed. Fixed an issue with the Titan being invisible for the first few seconds of its intro. Fixed an issue with an invisible collision around the Mega-Cannon that blocks Brigitte's Shield Bash and Whip Shot. Underworld Fixed in a previous update - Fixed an issue where the \"Stop, Thief!\" challenge was unable to be completed.",
+     "body": "Toronto\n\n- Fixed in a previous update - Fixed an issue with Slicers clipping into the Ferry, making them difficult to target.\n\nGothenburg\n\n- Fixed in a previous update - Fixed an issue where \"The Babies Are Safe\" challenge was unable to be completed.\n- Fixed an issue with the Titan being invisible for the first few seconds of its intro.\n- Fixed an issue with an invisible collision around the Mega-Cannon that blocks Brigitte's Shield Bash and Whip Shot.\n\nUnderworld\n\n- Fixed in a previous update - Fixed an issue where the \"Stop, Thief!\" challenge was unable to be completed.",
      "dev": null
     }
    ]
   }
  ],
  "raw_text": null,
- "hash": "sha256:27635fe2552a38c050ff0494ec64535f68f30e9aaac266de67d79856526bb4e1"
+ "hash": "sha256:4cac078724f9b6dbfbb5378dd8d6f10c14fc979cac0e2aa765fbc60f9d19611a"
 }

@@ -10,7 +10,7 @@
    "type": "generic_update",
    "title": "HERO UPDATES",
    "role": null,
-   "description": "Damage role passive healing reduction increased from 15% to 20%.",
+   "description": "- Damage role passive healing reduction increased from 15% to 20%.",
    "heroes": [],
    "blocks": []
   },
@@ -25,6 +25,7 @@
      "name_en": "Orisa",
      "name_cn": "奥丽莎",
      "role": "tank",
+     "icon": null,
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -33,28 +34,29 @@
        "name_en": "Fortify",
        "name_cn": "强固防御",
        "slug": "fortify",
+       "icon": null,
        "changes": [
         {
          "text_en": "Duration reduced from 4.5 to 3.5 seconds.",
          "text_cn": null,
          "before": 4.5,
          "after": 3.5,
-         "metric": "duration",
          "by": -1.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "duration"
+         "metric": "duration",
+         "raw_metric": "duration",
+         "unit": "s"
         },
         {
          "text_en": "Orisa now moves 20% slower while fortified.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       },
@@ -62,17 +64,18 @@
        "name_en": "Javelin Spin",
        "name_cn": "标枪旋击",
        "slug": "javelin-spin",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/804f9775ecfbc3ac2b84514e429cd8bc4e88027b00cb09126880d7f2c7759b59.png",
        "changes": [
         {
          "text_en": "Cooldown increased from 7 to 9 seconds.",
          "text_cn": null,
          "before": 7.0,
          "after": 9.0,
-         "metric": "cooldown",
          "by": 2.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "cooldown"
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
         }
        ]
       }
@@ -92,6 +95,7 @@
      "name_en": "Venture",
      "name_cn": "探奇",
      "role": "damage",
+     "icon": null,
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -100,17 +104,18 @@
        "name_en": "SMART Excavator",
        "name_cn": "智能挖掘钻",
        "slug": "smart-excavator",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9d5a868a280aba70231d6555b6a5df3bb713b39ea9f994a37eb7cb7425d8f7e6.png",
        "changes": [
         {
          "text_en": "Maximum explosion damage decreased from 45 to 40.",
          "text_cn": null,
          "before": 45.0,
          "after": 40.0,
-         "metric": "maximum explosion damage",
          "by": -5.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "maximum explosion damage"
+         "metric": "maximum explosion damage",
+         "raw_metric": "maximum explosion damage",
+         "unit": null
         }
        ]
       },
@@ -118,17 +123,18 @@
        "name_en": "Drill Dash",
        "name_cn": "钻头突刺",
        "slug": "drill-dash",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2ad4581a6801402aaa413301fdf851d1b4d09d67e1ef2a4538baf52ea0a5a889.png",
        "changes": [
         {
          "text_en": "Initial impact damage decreased from 40 to 30.",
          "text_cn": null,
          "before": 40.0,
          "after": 30.0,
-         "metric": "initial impact damage",
          "by": -10.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "initial impact damage"
+         "metric": "initial impact damage",
+         "raw_metric": "initial impact damage",
+         "unit": null
         }
        ]
       },
@@ -136,17 +142,18 @@
        "name_en": "Tectonic Shock",
        "name_cn": null,
        "slug": "tectonic-shock",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/210991b74451a635e28e53da0fcfdfe2a0600c0845392db627e8829ecca7149e.png",
        "changes": [
         {
          "text_en": "Ultimate charge cost increased by 10%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": "ultimate_cost",
          "by": null,
          "by_pct": 10.0,
-         "unit": null,
-         "raw_metric": "ultimate charge cost"
+         "metric": "ultimate_cost",
+         "raw_metric": "ultimate charge cost",
+         "unit": null
         }
        ]
       }
@@ -164,22 +171,22 @@
    "blocks": [
     {
      "title": "GENERAL",
-     "body": "Names will no longer be revealed when blocking someone with Streamer Mode enabled. Fixed a bug that allowed non-leader players to select the Requeue button. Fixed a lighting issue that caused several sprays to look oversaturated.",
+     "body": "- Names will no longer be revealed when blocking someone with Streamer Mode enabled.\n- Fixed a bug that allowed non-leader players to select the Requeue button.\n- Fixed a lighting issue that caused several sprays to look oversaturated.",
      "dev": null
     },
     {
      "title": "MAPS",
-     "body": "Hanamura We have fixed an issue with the lighting on Hanamura (Assault). This map is now available to play in the Assault Arcade mode and in Custom Games.",
+     "body": "Hanamura\n\n- We have fixed an issue with the lighting on Hanamura (Assault). This map is now available to play in the Assault Arcade mode and in Custom Games.",
      "dev": null
     },
     {
      "title": "HEROES",
-     "body": "D.Va Fixed a bug that caused some pings from D.Va to enter several 0's into the chat. Venture Fixed an issue with Drill Dash that could occur when interacting with Doomfist's Rocket Punch or Orisa's Energy Javelin, sending Venture flying back at a great speed.",
+     "body": "D.Va\n\n- Fixed a bug that caused some pings from D.Va to enter several 0's into the chat.\n\nVenture\n\n- Fixed an issue with Drill Dash that could occur when interacting with Doomfist's Rocket Punch or Orisa's Energy Javelin, sending Venture flying back at a great speed.",
      "dev": null
     }
    ]
   }
  ],
  "raw_text": null,
- "hash": "sha256:2fe4b047ecbcef89f3392825ca8573f3bc5f67035fc35cbd782930d8f8fece71"
+ "hash": "sha256:bfce738ce230851970d1c5eef1ca94c6eddc4d43ff73571032f35e6871b89f04"
 }

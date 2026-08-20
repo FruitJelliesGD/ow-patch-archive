@@ -23,17 +23,17 @@
    "blocks": [
     {
      "title": "Challenges Updates",
-     "body": "Lifeweaver unlock challenges added. Lifeweaver can now be unlocked by completing all his challenges! Incomplete weekly challenges will no longer reset to zero. 100% of the progress made in weekly challenges in the previous week will be kept and carried over. All weekly challenges requiring wins have been converted to \"Complete games. Wins grant double progress.\" This change results in the required amounts becoming higher, but the average total number of games needed to complete the challenges has not.",
+     "body": "- Lifeweaver unlock challenges added.\n- Lifeweaver can now be unlocked by completing all his challenges!\n- Incomplete weekly challenges will no longer reset to zero. 100% of\nthe progress made in weekly challenges in the previous week will be\nkept and carried over.\n- All weekly challenges requiring wins have been converted to \"Complete\ngames. Wins grant double progress.\"\n- This change results in the required amounts becoming higher, but the average total number of games\nneeded to complete the challenges has not.",
      "dev": "Developer Comment: Our goal is to ensure every game played contributes to weekly challenge progress. With the progress carry-over change, when weekly challenges reset, all progress on incomplete challenges will be carried over into the next week. Completed challenges will still reset. The change from winning games to completing games increases the required amount to complete, but the average number of games required for completion remains the same. For example, \"Win 10 games\" could take any number of games to complete—around 20 games on average—and \"Complete 30 games. Wins grant double progress.\" takes between 15-30 games, also averaging around 20. While this increased number of games looks big and scary, the maximum number of games it takes is now capped, and the average remains the same."
     },
     {
      "title": "On Fire Returns",
-     "body": "Fire returns to highlight your incredible plays with these new features: New State: BLAZING - What's better than being On Fire? Being even more On Fire! A team’s most exceptional playmakers will now begin Blazing. Blazing cannot be maintained as easily as regular Fire, so you'll need outstanding play to keep the heat on. Reignited Visuals and Sound Effects - Fire returns to the hero portrait and the scoreboard with new animations. Fire makes its debut in the kill feed as well. Catching Fire - Killing enemies that are On Fire grants Fire. Fan the Flames - The Fire has spread to more than just Genji players. Beyond eliminations and damage, Fire comes from mitigated damage, saves, healing, assists, capturing/contesting objectives, boosted damage, and crowd control. Pay attention to which heroes on your team are On Fire and help them out to increase your Fire score.",
+     "body": "Fire returns to highlight your incredible plays with these new features:\n\n- New State: BLAZING - What's better than being On Fire? Being even more On Fire! A team’s most exceptional playmakers will now begin Blazing. Blazing cannot be maintained as easily as regular Fire, so you'll need outstanding play to keep the heat on.\n- Reignited Visuals and Sound Effects - Fire returns to the hero portrait and the scoreboard with new animations. Fire makes its debut in the kill feed as well.\n- Catching Fire - Killing enemies that are On Fire grants Fire.\n- Fan the Flames - The Fire has spread to more than just Genji players. Beyond eliminations and damage, Fire comes from mitigated damage, saves, healing, assists, capturing/contesting objectives, boosted damage, and crowd control. Pay attention to which heroes on your team are On Fire and help them out to increase your Fire score.",
      "dev": null
     },
     {
      "title": "Matchmaking Updates",
-     "body": "Matchmaking Improvements Added new matchmaker functionality that should create matches with a narrower range of player skills. The initial tuning of the system at the start of the season will not be aggressive, but we will be making continual tuning changes throughout the season. The matchmaker now prioritizes placing similar groups with wide skill ranges into the same match, which means solo players will see a lower chance of being placed in those matches. Matchmaking – Bug Fixes Addressed some issues with backfills in Quick Play that could cause the backfill to take a long time or never occur. Fixed an issue where the matchmaker sometimes initialized new players’ competitive MMRs to a value that did not reflect their skill. Players will continue to adjust to their accurate MMR as they continue to play. FFA Player Skill Ratings – Bug Fixes We recently noted a major issue that affected how the matchmaker updated the internal ratings representing player skill in our \"free for all\" game modes, such as Deathmatch, where players are not on a team. This issue resulted in incorrect skill ratings that could create longer queue times and worse match quality than expected. The underlying issue causing incorrect updates has now been addressed, but unfortunately, these skill ratings are no longer meaningful. The best way forward is to do a complete reset of the FFA MMR used by these specific game modes. After this reset, match quality is expected to be suboptimal until players are able to play more games of Deathmatch. We do not take this action lightly, but it is the best course for the future.",
+     "body": "Matchmaking Improvements\n\n- Added new matchmaker functionality that should create matches with a narrower range of player skills. The initial tuning of the system at the start of the season will not be aggressive, but we will be making continual tuning changes throughout the season.\n- The matchmaker now prioritizes placing similar groups with wide skill ranges into the same match, which means solo players will see a lower chance of being placed in those matches.\n\nMatchmaking – Bug Fixes\n\n- Addressed some issues with backfills in Quick Play that could cause the backfill to take a long time or never occur.\n- Fixed an issue where the matchmaker sometimes initialized new players’ competitive MMRs to a value that did not reflect their skill. Players will continue to adjust to their accurate MMR as they continue to play.\n\nFFA Player Skill Ratings – Bug Fixes\n\n- We recently noted a major issue that affected how the matchmaker updated the internal ratings representing player skill in our \"free for all\" game modes, such as Deathmatch, where players are not on a team. This issue resulted in incorrect skill ratings that could create longer queue times and worse match quality than expected.\n- The underlying issue causing incorrect updates has now been addressed, but unfortunately, these skill ratings are no longer meaningful. The best way forward is to do a complete reset of the FFA MMR used by these specific game modes. After this reset, match quality is expected to be suboptimal until players are able to play more games of Deathmatch. We do not take this action lightly, but it is the best course for the future.",
      "dev": null
     }
    ]
@@ -81,6 +81,7 @@
      "name_en": "Junker Queen",
      "name_cn": "渣客女王",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/cf66adfac58a0321ec1f7d3a7241d6bf2f3b311707064d2f0ace2e3f4e342727.png",
      "dev_note": "Developer Comment: The last round of Junker Queen changes increased both her sustained damage and self-healing. Hence, she ends up staying alive and in the fight longer, which was the intent, but naturally, her ultimate charges much more quickly on average as a result. The passive Adrenaline Rush healing becoming more potent has been interesting for gameplay as it's tied to landing her abilities. To bring her survivability more in line, we're shifting some of the power out of the Commanding Shout temporary health gained for Junker Queen herself.",
      "general": [],
      "perks": [],
@@ -89,17 +90,18 @@
        "name_en": "Commanding Shout",
        "name_cn": "命令怒吼",
        "slug": "commanding-shout",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1809c57884dafcfd1aab89eb80d2ad8fe0c64ce0036646a3e19c05f48c322c9d.png",
        "changes": [
         {
          "text_en": "Temporary health reduced from 200 to 150.",
          "text_cn": null,
          "before": 200.0,
          "after": 150.0,
-         "metric": "temporary health",
          "by": -50.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "temporary health"
+         "metric": "temporary health",
+         "raw_metric": "temporary health",
+         "unit": null
         }
        ]
       },
@@ -107,17 +109,18 @@
        "name_en": "Rampage",
        "name_cn": null,
        "slug": "rampage",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/68b7d33215b777410b834ba2e9e7202d5ecff15fe012712facd974ec32895c36.png",
        "changes": [
         {
          "text_en": "Ultimate cost increased by 15%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": "ultimate_cost",
          "by": null,
          "by_pct": 15.0,
-         "unit": null,
-         "raw_metric": "ultimate cost"
+         "metric": "ultimate_cost",
+         "raw_metric": "ultimate cost",
+         "unit": null
         }
        ]
       }
@@ -128,6 +131,7 @@
      "name_en": "Roadhog",
      "name_cn": "路霸",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b6f4e837dc41e87d730f6b0fad3473e689c8bdcd1f732b97326ac08b0508f2ee.png",
      "dev_note": "Developer Comment: We would like Roadhog to be even sturdier as he’s an immobile tank with minor damage-blocking ability. His self-sustainability is already quite powerful when alone, so this is more of a team-oriented change. Take a Breather briefly increasing healing received will enable the support heroes on Roadhog's team to help him recover more quickly.",
      "general": [],
      "perks": [],
@@ -136,17 +140,18 @@
        "name_en": "Take a Breather",
        "name_cn": "呼吸器",
        "slug": "take-a-breather",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9cb8d867671bf917a9ba5d4a28ab6cb6ceeb10de2813567fcad97aca32c58499.png",
        "changes": [
         {
          "text_en": "Now amplifies healing received by 50% for 2.5 seconds after finishing Take a Breather.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -166,6 +171,7 @@
      "name_en": "Cassidy",
      "name_cn": "卡西迪",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8d161c49df5a962ece9ceafc6500bea473d9dd3695b9e24e39d5be616295e6c5.png",
      "dev_note": "Developer Comment: The overall goals for Magnetic Grenade are to shift its use from purely damage into more of a utility, and change its deployment behavior from a close-range lock-on to more of an aimed projectile that magnetizes if it gets close to an enemy target. The previous \"Stuck\" banner text alert confused Tracer's Pulse Bomb message, so this mobility-locking status effect is being referred to as \"Hindered.”",
      "general": [],
      "perks": [],
@@ -174,72 +180,73 @@
        "name_en": "Magnetic Grenade",
        "name_cn": null,
        "slug": "magnetic-grenade",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/47a593ad7f83394b011161e67a6f414e49f2221c5e014ea909fdcd9df4f94371.png",
        "changes": [
         {
          "text_en": "No longer has a maximum projectile travel range of 10 meters.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "The projectile now magnetizes toward an enemy target from 1.5 meters away and chases them for up to 1 second.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Impact damage increased from 0 to 10.",
          "text_cn": null,
          "before": 0.0,
          "after": 10.0,
-         "metric": "impact damage",
          "by": 10.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "impact damage"
+         "metric": "impact damage",
+         "raw_metric": "impact damage",
+         "unit": null
         },
         {
          "text_en": "Explosion damage reduced from 120 to 70.",
          "text_cn": null,
          "before": 120.0,
          "after": 70.0,
-         "metric": "explosion damage",
          "by": -50.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "explosion damage"
+         "metric": "explosion damage",
+         "raw_metric": "explosion damage",
+         "unit": null
         },
         {
          "text_en": "Stuck targets now have their movement slowed by 30%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Stuck targets are now affected by a \"Hindered\" status effect, interrupting and preventing movement abilities from being activated.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -250,6 +257,7 @@
      "name_en": "Genji",
      "name_cn": "源氏",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/190a3dd9a5a4c8daeff9ec4da861f43cb28116964e89dc7416da104d8fae9134.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -258,17 +266,18 @@
        "name_en": "Shuriken",
        "name_cn": "气",
        "slug": "shuriken",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8d0916035141abd9ab2bf72dbcfd0460b7a0019529e023d259ad4340890b34b3.png",
        "changes": [
         {
          "text_en": "Maximum Ammo increased from 24 to 30",
          "text_cn": null,
          "before": 24.0,
          "after": 30.0,
-         "metric": "maximum ammo",
          "by": 6.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "maximum ammo"
+         "metric": "maximum ammo",
+         "raw_metric": "maximum ammo",
+         "unit": null
         }
        ]
       }
@@ -279,6 +288,7 @@
      "name_en": "Hanzo",
      "name_cn": "半藏",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3febc2e638ff56d8f0161ea278ac3116b5baf8c0328f1eded6b499552a0eccad.png",
      "dev_note": null,
      "general": [
       {
@@ -300,17 +310,18 @@
        "name_en": "Storm Bow",
        "name_cn": "风暴弓",
        "slug": "storm-bow",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1aa4358e8a1d423dd55669780908b856141a783d053224b629b064c66288469e.png",
        "changes": [
         {
          "text_en": "Maximum damage reduced from 125 to 120.",
          "text_cn": null,
          "before": 125.0,
          "after": 120.0,
-         "metric": "maximum damage",
          "by": -5.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "maximum damage"
+         "metric": "maximum damage",
+         "raw_metric": "maximum damage",
+         "unit": null
         }
        ]
       },
@@ -318,28 +329,29 @@
        "name_en": "Sonic Arrow",
        "name_cn": "音波箭",
        "slug": "sonic-arrow",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6a71d18cc52e49380aa9eb57f979524033a3e79bd3153900a12bb553d5a0e6f0.png",
        "changes": [
         {
          "text_en": "Impact sound effect now plays for enemies.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Visual effect is now briefly visible to enemies when first deployed.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -350,6 +362,7 @@
      "name_en": "Mei",
      "name_cn": "美",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/08586dceed41e030d575b2b643118f55390f1c2af91dd15394528f5399fcc934.png",
      "dev_note": "Developer Comment: This set of changes is intended to bring back some of the gameplay and feeling Mei's primary fire used to have previously, though without the hard crowd control of a full freeze stun.",
      "general": [],
      "perks": [],
@@ -358,50 +371,51 @@
        "name_en": "Endothermic Blaster",
        "name_cn": "冰霜冲击枪",
        "slug": "endothermic-blaster",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a935216c60c1c7d72502f373f4af24651c9eb6513781bc482c60ef4d551fb6b9.png",
        "changes": [
         {
          "text_en": "Damage per second reduced from 100 to 55.",
          "text_cn": null,
          "before": 100.0,
          "after": 55.0,
-         "metric": "damage",
          "by": -45.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "damage per second"
+         "metric": "damage",
+         "raw_metric": "damage per second",
+         "unit": null
         },
         {
          "text_en": "Primary fire slow is no longer always 40% and now scales from 30-50%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Primary fire impacts now build up to a slowing effect that sticks to the enemy target for 1.5 seconds and slows them for 75%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Secondary fire impacts can detonate this new slow effect, dealing an additional 40 damage.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -412,6 +426,7 @@
      "name_en": "Reaper",
      "name_cn": "死神",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b7aac87959afbe062cc31518ded04b9dbcadb0a2282f8963c6bfd5ba0a2d6a27.png",
      "dev_note": "Developer Comment: The Reaper and Moira changes are addressing an inconsistency with the interaction of Wraith Form or Fade with mobility-locking effects such as Junkrat's Steel Trap, Sigma's Gravitic Flux, Zarya's Graviton Surge, and Cassidy's Magnetic Grenade. They are now disabled similarly to Tracer's Recall or Sombra's Translocator, which are abilities that also phase out and can move the player.",
      "general": [],
      "perks": [],
@@ -420,17 +435,18 @@
        "name_en": "Wraith Form",
        "name_cn": "幽灵形态",
        "slug": "wraith-form",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/dbcceb2a764dcf8bb808078f7a32a039fd259c72e557dcde3fb70b2041247c9a.png",
        "changes": [
         {
          "text_en": "Can no longer be activated while affected by mobility-locking effects (Magnetic Grenade, Steel Trap, Graviton Surge, etc.).",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -441,6 +457,7 @@
      "name_en": "Tracer",
      "name_cn": "猎空",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5ee20a1feed14da5153f19745328e9fc02bd79f8109593a9b7dab9283eb9629b.png",
      "dev_note": "Developer Comment: We uncovered a bug that was setting Tracer's maximum weapon spread smaller than intended. We'll be monitoring the results of this one closely, as fixing it may have a significant impact on her overall effectiveness.",
      "general": [],
      "perks": [],
@@ -449,17 +466,18 @@
        "name_en": "Pulse Pistols",
        "name_cn": "脉冲双枪",
        "slug": "pulse-pistols",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/82520ccd791a5befa5ac74a6b5263471de44b0674abb07fbf1568c149c88a91a.png",
        "changes": [
         {
          "text_en": "Spread increased by 15%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": "spread",
          "by": null,
          "by_pct": 15.0,
-         "unit": null,
-         "raw_metric": "spread"
+         "metric": "spread",
+         "raw_metric": "spread",
+         "unit": null
         }
        ]
       }
@@ -470,6 +488,7 @@
      "name_en": "Widowmaker",
      "name_cn": "黑百合",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b4871b9addd770582c8b6a1ab366b9ec08d986c2995248ee5fce7e15cb0d809d.png",
      "dev_note": "Developer Comment: These changes to Widowmaker's weapon falloff are intended to reduce her one-shot capabilities on maps with extremely long sightlines. The average range to still eliminate a 200 health hero at full charge is around 50 meters. A fully-charged critical shot will still eliminate 150 health targets regardless of range.",
      "general": [],
      "perks": [],
@@ -478,28 +497,29 @@
        "name_en": "Widow's Kiss",
        "name_cn": "寡妇之吻",
        "slug": "widows-kiss",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/13a1e7903c23a5e140aa01fa930f585c1ea69e1e24378c0462f42053085f7ad9.png",
        "changes": [
         {
          "text_en": "Scoped shot damage falloff min-max range reduced from 70-100 to 40-60 meters.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Scoped shot maximum damage falloff scalar increased from 30 to 50%",
          "text_cn": null,
          "before": 30.0,
          "after": 50.0,
-         "metric": "scoped shot maximum damage falloff scalar",
          "by": 20.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "scoped shot maximum damage falloff scalar"
+         "metric": "scoped shot maximum damage falloff scalar",
+         "raw_metric": "scoped shot maximum damage falloff scalar",
+         "unit": null
         }
        ]
       }
@@ -519,6 +539,7 @@
      "name_en": "Lifeweaver",
      "name_cn": "生命之梭",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/57d5014ab6034db9138f838e8450693b4a97ab3c54f85d594b199a8853e75ccb.png",
      "dev_note": "Developer Comment: Lifeweaver's stats have been improving over time, but he is still underperforming. These adjustments are primarily straightforward improvements to nearly every aspect of his kit, outside of his ultimate ability, which received a small cost adjustment for the increased healing and damage output. The Petal Platform area shrinking is a quality-of-life change intended to help avoid accidentally activating the lift after it has been placed.",
      "general": [
       {
@@ -540,17 +561,18 @@
        "name_en": "Healing Blossom",
        "name_cn": "愈疗灵花",
        "slug": "healing-blossom",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a3ccff02b44507df5c9bdaced0ecd56ac80b33285ad8a60e6c454acf90560579.png",
        "changes": [
         {
          "text_en": "Maximum healing increased from 65 to 75.",
          "text_cn": null,
          "before": 65.0,
          "after": 75.0,
-         "metric": "maximum healing",
          "by": 10.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "maximum healing"
+         "metric": "maximum healing",
+         "raw_metric": "maximum healing",
+         "unit": null
         }
        ]
       },
@@ -558,39 +580,40 @@
        "name_en": "Thorn Volley",
        "name_cn": "棘刺箭雨",
        "slug": "thorn-volley",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2ff86a970fedb412a1166fddfbca13bbd08156043012608e538867f792fc1d78.png",
        "changes": [
         {
          "text_en": "Damage per projectile increased from 5 to 6.",
          "text_cn": null,
          "before": 5.0,
          "after": 6.0,
-         "metric": "damage",
          "by": 1.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "damage per projectile"
+         "metric": "damage",
+         "raw_metric": "damage per projectile",
+         "unit": null
         },
         {
          "text_en": "Projectile radius increased from 0.1 to 0.125.",
          "text_cn": null,
          "before": 0.1,
          "after": 0.125,
-         "metric": "projectile radius",
          "by": 0.025,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "projectile radius"
+         "metric": "projectile radius",
+         "raw_metric": "projectile radius",
+         "unit": null
         },
         {
          "text_en": "Ammo increased from 60 to 70.",
          "text_cn": null,
          "before": 60.0,
          "after": 70.0,
-         "metric": "ammo",
          "by": 10.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "ammo"
+         "metric": "ammo",
+         "raw_metric": "ammo",
+         "unit": null
         }
        ]
       },
@@ -598,28 +621,29 @@
        "name_en": "Petal Platform",
        "name_cn": "花瓣平台",
        "slug": "petal-platform",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f64582890d92e968d79c54f9bb8cf1b9b1cc8da6dca7b8bdc647512957cac89f.png",
        "changes": [
         {
          "text_en": "Walkable area increased by 15%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": "walkable area",
          "by": null,
          "by_pct": 15.0,
-         "unit": null,
-         "raw_metric": "walkable area"
+         "metric": "walkable area",
+         "raw_metric": "walkable area",
+         "unit": null
         },
         {
          "text_en": "Area to trigger lift now shrinks from a radius of 2 to 0.75 meters after initial placement.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       },
@@ -627,28 +651,29 @@
        "name_en": "Life Grip",
        "name_cn": "生命之握",
        "slug": "life-grip",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/36969bea55419b7ff963f2fb0ff7f80e37ecbe810bcd7dae0c7c835270c938a8.png",
        "changes": [
         {
          "text_en": "Cooldown reduced from 20 to 16 seconds.",
          "text_cn": null,
          "before": 20.0,
          "after": 16.0,
-         "metric": "cooldown",
          "by": -4.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "cooldown"
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
         },
         {
          "text_en": "Now heals the target ally for 50 health.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       },
@@ -656,17 +681,18 @@
        "name_en": "Tree of Life",
        "name_cn": "生命之树",
        "slug": "tree-of-life",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/105495a0c2ea708de307204b47c90915782256cffd83fc8dff8abcc508e0ef5a.png",
        "changes": [
         {
          "text_en": "Ultimate cost increased by 8%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": "ultimate_cost",
          "by": null,
          "by_pct": 8.0,
-         "unit": null,
-         "raw_metric": "ultimate cost"
+         "metric": "ultimate_cost",
+         "raw_metric": "ultimate cost",
+         "unit": null
         }
        ]
       }
@@ -677,6 +703,7 @@
      "name_en": "Moira",
      "name_cn": "莫伊拉",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/90fa2b69a7b80ae6d57c9ea6f3387dd18dfc1728bdb26949d28a17b98dd4e5f7.png",
      "dev_note": "Developer Comment: The Reaper and Moira changes are addressing an inconsistency with the interaction of Wraith Form or Fade with mobility-locking effects such as Junkrat's Steel Trap, Sigma's Gravitic Flux, Zarya's Graviton Surge, and Cassidy's Magnetic Grenade. They are now disabled similarly to Tracer's Recall or Sombra's Translocator, which are abilities that also phase out and can move the player.",
      "general": [],
      "perks": [],
@@ -685,17 +712,18 @@
        "name_en": "Fade",
        "name_cn": null,
        "slug": "fade",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ba44615a7e3799d50bc2194079dd88177f98d4050a28acba6cd33ad1daaf7b5b.png",
        "changes": [
         {
          "text_en": "Can no longer be activated while affected by mobility-locking effects (Magnetic Grenade, Steel Trap, Graviton Surge, etc.).",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -713,17 +741,17 @@
    "blocks": [
     {
      "title": "Busan",
-     "body": "New lighting scheme – Overcast",
+     "body": "- New lighting scheme – Overcast",
      "dev": null
     },
     {
      "title": "Rialto",
-     "body": "New lighting scheme – Evening",
+     "body": "- New lighting scheme – Evening",
      "dev": null
     },
     {
      "title": "Watchpoint: Gibraltar",
-     "body": "Completely redesigned the final defender spawn area Added an exit route from the forward defender spawn Route adjustments and changes made around first capture point outside of the hangar Covers and route adjustments made inside the hangar",
+     "body": "- Completely redesigned the final defender spawn area\n- Added an exit route from the forward defender spawn\n- Route adjustments and changes made around first capture point outside\nof the hangar\n- Covers and route adjustments made inside the hangar",
      "dev": null
     }
    ]
@@ -737,32 +765,32 @@
    "blocks": [
     {
      "title": "General",
-     "body": "Fixed Lifeweaver platform ping VO not playing. Fixed ping stems not appearing for Last Seen pings with no line of sight. Fixed Lifeweaver Tree and Platform from appearing as enemies when directly pinged by allies. Disabled ping wheel movement shortcut for controller Disabled locking the crosshair in place for controller when the Ping Wheel Press Delay is active. Fixed performance issues some consoles were experiencing. Healing projectiles now make contact with targets who are phased out (i.e., Moira's Fade). Fixed an issue with on Ultrawide monitors that resulted in black bars appearing on the edges of the screen. Fixed a bug that prevented the end-of-match flow not playing for Top 500 players. Fixed the issue that caused Antarctic Peninsula's image to be missing from its entries in the History menu.",
+     "body": "- Fixed Lifeweaver platform ping VO not playing.\n- Fixed ping stems not appearing for Last Seen pings with no line of\nsight.\n- Fixed Lifeweaver Tree and Platform from appearing as enemies when\ndirectly pinged by allies. Disabled ping wheel movement shortcut for\ncontroller\n- Disabled locking the crosshair in place for controller when the Ping\nWheel Press Delay is active. Fixed performance issues some consoles\nwere experiencing.\n- Healing projectiles now make contact with targets who are phased out\n(i.e., Moira's Fade). Fixed an issue with on Ultrawide monitors that\nresulted in black bars appearing on the edges of the screen.\n- Fixed a bug that prevented the end-of-match flow not playing for Top\n500 players.\n- Fixed the issue that caused Antarctic Peninsula's image to be missing\nfrom its entries in the History menu.",
      "dev": null
     },
     {
      "title": "Audio",
-     "body": "Due to a bug, we temporarily need to change the audio reverb settings used throughout the game to an alternate method. We hope to have this fixed in an upcoming patch.",
+     "body": "- Due to a bug, we temporarily need to change the audio reverb settings\nused throughout the game to an alternate method. We hope to have\nthis fixed in an upcoming patch.",
      "dev": null
     },
     {
      "title": "Maps",
-     "body": "Colosseo Fixed an area of the map that allowed players to leave the playable space. Hollywood Fixed some haybales that did not correctly block D.Va Self-Destruct damage. King's Row Fixed a bug that allowed some gameplay elements to be placed inside the bus and taxi. Lijiang Tower Fixed an area in Night Market that allowed players to stand outside of intended map boundaries. Fixed a location that allowed Torbjorn to almost completely hide his turret. Nepal Fixed some drums on the map that players could become stuck on. Numbani Fixed the vines hanging above the tunnel (the one just before the final point) having collision and blocking projectiles and explosives. Oasis Fixed several areas Kiriko could become stuck when using Swift Step.",
+     "body": "Colosseo\n\n- Fixed an area of the map that allowed players to leave the playable\nspace.\n\nHollywood\n\n- Fixed some haybales that did not correctly block D.Va Self-Destruct\ndamage.\n\nKing's Row\n\n- Fixed a bug that allowed some gameplay elements to be placed inside\nthe bus and taxi.\n\nLijiang Tower\n\n- Fixed an area in Night Market that allowed players to stand outside\nof intended map boundaries.\n- Fixed a location that allowed Torbjorn to almost completely hide his\nturret.\n\nNepal\n\n- Fixed some drums on the map that players could become stuck on.\n\nNumbani\n\n- Fixed the vines hanging above the tunnel (the one just before the\nfinal point) having collision and blocking projectiles and\nexplosives.\n\nOasis\n\n- Fixed several areas Kiriko could become stuck when using Swift Step.",
      "dev": null
     },
     {
      "title": "Heroes",
-     "body": "Ana Fixed a bug with Sleep Dart not counting toward the Accuracy stat when performed as the final blow. Baptiste Fixed a bug with Immortality Field not correctly displaying its active cooldown through Hero swaps. Doomfist Fixed an issue that allowed stunned targets of Rocket Punch to escape the stun early by jumping after being hit. Fixed an interaction between Tree of Life and Meteor Strike that allowed Doomfist to be healed while not in the field of play. Fixed an interaction that resulted in Doomfist's Rocket Punch doing no damage to Lifeweaver's Petal Platform. Fixed an issue with Powerblock not reducing the area of effect damage correctly. Fixed an issue with Powerblock was being incorrectly applied to Junkerqueen's Bleed. D.Va Fixed a bug with D.Va's primary fire increasing its rate of fire when it was set to the mouse wheel. Echo Fixed an interaction with Duplicate destroying the duplicated ultimates when Duplicate ends (Symmetra and Wrecking Ball). Healing effects that were started during Echo's ultimate will now continue to heal Echo after the ultimate has ended. Fixed a bug where a duplicated Lifeweaver's Tree of Life would not heal anyone after Echo's ultimate had ended. Fixed a bug with Sticky Bombs not detonating if used right after Duplicate ends. Lifeweaver Life Grip will now correctly nudge targets around payload obstacles. Healing Blossom and Life Grip targeting now consider both the head and chest of the target as a valid line of sight, allowing targeting around vertical obstructions, such as payloads, to be more consistent. Fixed a bug that prevented Petal Platform from being used if Secondary Fire was set as the confirmation input. Fixed a bug with Life Grip not consistently pulling allies onto ledges if Lifeweaver was airborne. Fixed an issue where Life Gripped allies falling off the map would still die to the death plane. Fixed the issue that resulted in a friend Lifeweaver's Petal Platform highlighting red when pinged. Fixed an issue that prevented Lifeweaver's footsteps from playing sound when crouched. Resolved a bug that prevented the Tree of Life from being placed on an enemy Torbjorn turret (it now destroys the turret). Fixed a bug that allowed Tree of Life to be attached to the Pushbot and pulled along. Mercy Resolved an issue with Resurrect not retaining cooldown through Hero swaps. Fixed a bug where Mercy wasn't properly resetting her Guardian Angel cooldown when entering Valkyrie. Orisa Fixed a bug where Orisa would use the animation for receiving critical shots for all damage received. Ramattra Resolved an interaction with Nemesis Form and Annihilation that sometimes resulted in the ultimate not performing damage and lifesteal. Fixed an issue where Block was being incorrectly applied to Junkerqueen's Bleed. Fixed a bug with block that prevented it from correctly stacking with Ana's Nanoboost. Sojourn Modified the screen effect applied by an enemy Sojourn's Disruptor Shot to apply more accurately, making it easier to tell when you're taking damage. Sombra The translocator can no longer stick to loose objects on the map (i.e., Basketball). Fixed a bug that prevented Sombra from Hacking Petal Platforms in FFA Deathmath. Torbjorn Fixed an interaction between Lifeweaver and Torbjorn's turrets that allowed them to be placed on walls.",
+     "body": "Ana\n\n- Fixed a bug with Sleep Dart not counting toward the Accuracy stat\nwhen performed as the final blow.\n\nBaptiste\n\n- Fixed a bug with Immortality Field not correctly displaying its\nactive cooldown through Hero swaps.\n\nDoomfist\n\n- Fixed an issue that allowed stunned targets of Rocket Punch to escape\nthe stun early by jumping after being hit.\n- Fixed an interaction between Tree of Life and Meteor Strike that\nallowed Doomfist to be healed while not in the field of play.\n- Fixed an interaction that resulted in Doomfist's Rocket Punch doing\nno damage to Lifeweaver's Petal Platform.\n- Fixed an issue with Powerblock not reducing the area of effect damage\ncorrectly.\n- Fixed an issue with Powerblock was being incorrectly applied to\nJunkerqueen's Bleed.\n\nD.Va\n\n- Fixed a bug with D.Va's primary fire increasing its rate of fire when\nit was set to the mouse wheel.\n\nEcho\n\n- Fixed an interaction with Duplicate destroying the duplicated\nultimates when Duplicate ends (Symmetra and Wrecking Ball).\n- Healing effects that were started during Echo's ultimate will now\ncontinue to heal Echo after the ultimate has ended.\n- Fixed a bug where a duplicated Lifeweaver's Tree of Life would not\nheal anyone after Echo's ultimate had ended.\n- Fixed a bug with Sticky Bombs not detonating if used right after\nDuplicate ends.\n\nLifeweaver\n\n- Life Grip will now correctly nudge targets around payload obstacles.\n- Healing Blossom and Life Grip targeting now consider both the head\nand chest of the target as a valid line of sight, allowing targeting\naround vertical obstructions, such as payloads, to be more\nconsistent.\n- Fixed a bug that prevented Petal Platform from being used if\nSecondary Fire was set as the confirmation input.\n- Fixed a bug with Life Grip not consistently pulling allies onto\nledges if Lifeweaver was airborne.\n- Fixed an issue where Life Gripped allies falling off the map would\nstill die to the death plane.\n- Fixed the issue that resulted in a friend Lifeweaver's Petal Platform\nhighlighting red when pinged.\n- Fixed an issue that prevented Lifeweaver's footsteps from playing\nsound when crouched.\n- Resolved a bug that prevented the Tree of Life from being placed on\nan enemy Torbjorn turret (it now destroys the turret).\n- Fixed a bug that allowed Tree of Life to be attached to the Pushbot\nand pulled along.\n\nMercy\n\n- Resolved an issue with Resurrect not retaining cooldown through Hero\nswaps.\n- Fixed a bug where Mercy wasn't properly resetting her Guardian Angel\ncooldown when entering Valkyrie.\n\nOrisa\n\n- Fixed a bug where Orisa would use the animation for receiving\ncritical shots for all damage received.\n\nRamattra\n\n- Resolved an interaction with Nemesis Form and Annihilation that\nsometimes resulted in the ultimate not performing damage and\nlifesteal.\n- Fixed an issue where Block was being incorrectly applied to\nJunkerqueen's Bleed. Fixed a bug with block that prevented it from\ncorrectly stacking with Ana's Nanoboost.\n\nSojourn\n\n- Modified the screen effect applied by an enemy Sojourn's Disruptor\nShot to apply more accurately, making it easier to tell when you're\ntaking damage.\n\nSombra\n\n- The translocator can no longer stick to loose objects on the map\n(i.e., Basketball).\n- Fixed a bug that prevented Sombra from Hacking Petal Platforms in FFA\nDeathmath.\n\nTorbjorn\n\n- Fixed an interaction between Lifeweaver and Torbjorn's turrets that\nallowed them to be placed on walls.",
      "dev": null
     },
     {
      "title": "Workshop",
-     "body": "Fixed a bug with the 'Set Ability Cooldown/Charge/Resource' not working for all abilities. Fixed a bug where the 'Communicate' Action did not work. Fixed a bug where 'Set Ability 1 Enabled' Action did not work for Orisa. 'Set Ammo' and 'Set Max Ammo' was not working for all heroes, but we have fixed this issue. The 'Is Communicating' Condition is now functional.",
+     "body": "- Fixed a bug with the 'Set Ability Cooldown/Charge/Resource' not\nworking for all abilities.\n- Fixed a bug where the 'Communicate' Action did not work.\n- Fixed a bug where 'Set Ability 1 Enabled' Action did not work for\nOrisa.\n- 'Set Ammo' and 'Set Max Ammo' was not working for all heroes, but we\nhave fixed this issue.\n- The 'Is Communicating' Condition is now functional.",
      "dev": null
     }
    ]
   }
  ],
  "raw_text": null,
- "hash": "sha256:617fea41036c7f654a876e313ae74e8cd7f6f54ce98ce9d5923d7c9bd21a08e4"
+ "hash": "sha256:9d05eed34ef7517dd21d49e2ea58fea25ac08db557b8dd119db3cc73155436f3"
 }

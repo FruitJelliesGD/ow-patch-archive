@@ -25,6 +25,7 @@
      "name_en": "Roadhog",
      "name_cn": "路霸",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b6f4e837dc41e87d730f6b0fad3473e689c8bdcd1f732b97326ac08b0508f2ee.png",
      "dev_note": "Developer Comments: The broad goal of the Roadhog rework was to improve his frontline presence on the battlefield as a tank hero and reduce the frustration enemy players had with how consistently deadly his hook combo has been in the past. Roadhog's previous Scrap Gun primary and secondary fire have been reworked into one primary fire shot that is still most effective at close range but also deals more reliable damage from further away now. His Take a Breather has been changed to a resource-based ability and has been moved to Secondary Fire for a more convenient control scheme. It can be used more frequently but will need to recharge its resources over time, increasing its flexibility as a tanking tool and making it not as easy to counter. He now has a new ability called Pig Pen, which is a deployable trap that activates when enemies are nearby, dealing damage and slowing them. This enables Roadhog to have control over a wider area and, with a little bit of pre-planning, can be used to either help protect his allies or further enhance the effectiveness of his hook combo.",
      "general": [],
      "perks": [],
@@ -33,83 +34,84 @@
        "name_en": "Scrap Gun",
        "name_cn": "爆裂枪",
        "slug": "scrap-gun",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/50b6e388a6693ce31b5a1889e53037970a1b884b8265834f33dd6f7a3dedce44.png",
        "changes": [
         {
          "text_en": "Previous secondary fire functionality has been removed.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Total damage per shot increased from 150 to 160.",
          "text_cn": null,
          "before": 150.0,
          "after": 160.0,
-         "metric": "total damage per shot",
          "by": 10.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "total damage per shot"
+         "metric": "total damage per shot",
+         "raw_metric": "total damage per shot",
+         "unit": null
         },
         {
          "text_en": "Shotgun pellet count reduced from 25 to 16.",
          "text_cn": null,
          "before": 25.0,
          "after": 16.0,
-         "metric": "shotgun pellet count",
          "by": -9.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "shotgun pellet count"
+         "metric": "shotgun pellet count",
+         "raw_metric": "shotgun pellet count",
+         "unit": null
         },
         {
          "text_en": "Shotgun pellet damage increased from 6 to 6.25.",
          "text_cn": null,
          "before": 6.0,
          "after": 6.25,
-         "metric": "shotgun pellet damage",
          "by": 0.25,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "shotgun pellet damage"
+         "metric": "shotgun pellet damage",
+         "raw_metric": "shotgun pellet damage",
+         "unit": null
         },
         {
          "text_en": "Now fires a shrapnel volley of 4 large projectiles in the center of the shot.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Each shrapnel projectile deals 15 damage.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Critical damage multiplier reduced from 2x to 1.5x.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       },
@@ -117,116 +119,117 @@
        "name_en": null,
        "name_cn": null,
        "slug": "",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9cb8d867671bf917a9ba5d4a28ab6cb6ceeb10de2813567fcad97aca32c58499.png",
        "changes": [
         {
          "text_en": "Now activated by holding Secondary Fire.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Cooldown for each use decreased from 8 seconds to 1 second.",
          "text_cn": null,
          "before": 8.0,
          "after": 1.0,
-         "metric": "cooldown",
          "by": -7.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "cooldown for each use"
+         "metric": "cooldown",
+         "raw_metric": "cooldown for each use",
+         "unit": "s"
         },
         {
          "text_en": "A new resource meter has been added. This meter will deplete while Take a",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Breather is active and then recharge when it’s not in use.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Take a Breather requires 12 seconds to reach full charge from empty.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "At a full charge, Take a Breather can heal up to 450 health over 3 seconds.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Take a Breather will now remain active as long as its assigned hotkey is held.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "An option to \"Toggle Take a Breather\" has been added under Options > Controls > Roadhog.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Damage reduction decreased from 50% to 30%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "No longer amplifies healing received upon ending.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       },
@@ -234,72 +237,73 @@
        "name_en": "Pig Pen",
        "name_cn": null,
        "slug": "pig-pen",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0150c28fe47ff4a7c16138266bf2b4903bd45e4b7770ab40572bb792b647838c.png",
        "changes": [
         {
          "text_en": "This is a new ability assigned to Ability 2 by default.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Launch a trap that slows and damages nearby enemies.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Deals 60 damage when triggered and 30 damage per second in an area.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "3-second duration once activated.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "40% movement speed slow.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Cooldown is 12 seconds.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -317,17 +321,17 @@
    "blocks": [
     {
      "title": "GENERAL",
-     "body": "Fixed in a previous update - Resolved loading issues that were occurring in the Shop. Fixed in a previous update - Fixed an issue with Rumble on some abilities activating for all players in the match.",
+     "body": "- Fixed in a previous update - Resolved loading issues that were occurring in the Shop.\n- Fixed in a previous update - Fixed an issue with Rumble on some abilities activating for all players in the match.",
      "dev": null
     },
     {
      "title": "HEROES",
-     "body": "Lifeweaver Fixed a bug that caused Life Grip to cleanse the Orb of Discord. Fixed a bug where players who hop off of Petal Platform before it is fully raised would become immune to EMP. Sombra Fixed an interaction that could result in Sombra being pinned by a charging Reinhardt instead of teleporting to the thrown translocator. Fixed a bug where Hack didn't work properly when enabled as a Toggle. Fixed a bug that resulted in Invisibility failing to recast after exiting combat. Fixed in a previous update - Fixed Sombra's Ultimate cost missing the 10% decrease. Fixed in a previous update - Fixed an issue where Discord Cooldown UI was displaying on an invisible Sombra in some cases. Zarya Fixed an issue that could result in Zarya's projected barrier failing to deploy.",
+     "body": "Lifeweaver\n\n- Fixed a bug that caused Life Grip to cleanse the Orb of Discord.\n- Fixed a bug where players who hop off of Petal Platform before it is fully raised would become immune to EMP.\n\nSombra\n\n- Fixed an interaction that could result in Sombra being pinned by a charging Reinhardt instead of teleporting to the thrown translocator.\n- Fixed a bug where Hack didn't work properly when enabled as a Toggle.\n- Fixed a bug that resulted in Invisibility failing to recast after exiting combat.\n- Fixed in a previous update - Fixed Sombra's Ultimate cost missing the 10% decrease.\n- Fixed in a previous update - Fixed an issue where Discord Cooldown UI was displaying on an invisible Sombra in some cases.\n\nZarya\n\n- Fixed an issue that could result in Zarya's projected barrier failing to deploy.",
      "dev": null
     }
    ]
   }
  ],
  "raw_text": null,
- "hash": "sha256:ee54bc8343b15ad1bbdf3789c342fe81fb8979b0a70605a002d4a3aa22cb0580"
+ "hash": "sha256:5b696a6ae5c18fc35350c26e41c8984952f3ba3b5e814abdf2372b5508b747e3"
 }

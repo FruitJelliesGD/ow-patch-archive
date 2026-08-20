@@ -10,13 +10,14 @@
    "type": "hero_update",
    "title": "Hero Updates",
    "role": null,
-   "description": "General Shotgun patterns no longer apply random rotation. This will affect the following heroes: Ashe Doomfist D.Va Reaper Roadhog Torbjörn",
+   "description": "General\n\n- Shotgun patterns no longer apply random rotation. This will affect the following heroes:\n  - Ashe\n  - Doomfist\n  - D.Va\n  - Reaper\n  - Roadhog\n  - Torbjörn",
    "heroes": [
     {
      "slug": "roadhog",
      "name_en": "Roadhog",
      "name_cn": "路霸",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5f961a1625091209fdfb6086dee69178d9de88946b4b2d7492c0a4fffe5fdd4b.png",
      "dev_note": "When combined with the changes to shotgun patterns, we’re looking to keep Roadhog’s Chain Hook combo reliable, but not overly powerful against heroes with higher health pools.",
      "general": [],
      "perks": [],
@@ -25,17 +26,18 @@
        "name_en": "Scrap Gun",
        "name_cn": "爆裂枪",
        "slug": "scrap-gun",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/50b6e388a6693ce31b5a1889e53037970a1b884b8265834f33dd6f7a3dedce44.png",
        "changes": [
         {
          "text_en": "Projectile damage reduced from 7 to 6 (150 total per shot)",
          "text_cn": null,
          "before": 7.0,
          "after": 6.0,
-         "metric": "projectile damage",
          "by": -1.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "projectile damage"
+         "metric": "projectile damage",
+         "raw_metric": "projectile damage",
+         "unit": null
         }
        ]
       }
@@ -46,6 +48,7 @@
      "name_en": "Torbjörn",
      "name_cn": "托比昂",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/81a4f644137461fddfef6c24820b0b8958046d5dad1944baf02478fcc916a968.png",
      "dev_note": "This change to Torbjörn’s secondary fire is aimed at giving it a stronger role at close range. We’re hoping this change allows each shot to feel more impactful, since it has a larger burst. To keep this change in line, we’ve also reduced the damage-per-second.",
      "general": [],
      "perks": [],
@@ -54,28 +57,29 @@
        "name_en": "Rivet Gun",
        "name_cn": null,
        "slug": "rivet-gun",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6fd3a8b1e1c43cd3c6f1a03d6ff9e76d9394d537235bc7b57380e78937e991ff.png",
        "changes": [
         {
          "text_en": "Recovery increased from 0.6 to 0.8 seconds",
          "text_cn": null,
          "before": 0.6,
          "after": 0.8,
-         "metric": "recovery",
          "by": 0.2,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "recovery"
+         "metric": "recovery",
+         "raw_metric": "recovery",
+         "unit": "s"
         },
         {
          "text_en": "Damage increased from 10.5 to 12.5 per projectile (125 total per shot)",
          "text_cn": null,
          "before": 10.5,
          "after": 12.5,
-         "metric": "damage",
          "by": 2.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "damage"
+         "metric": "damage",
+         "raw_metric": "damage",
+         "unit": null
         }
        ]
       }
@@ -86,5 +90,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:fd272658ec8a780dd3345aab19bd2640bffe669379dfb2155bc5442bdbd802e1"
+ "hash": "sha256:7fb3b9493dc98c1ea1c45ef4215d705b0c5e064f8630b5991ef5272d718cd0ed"
 }

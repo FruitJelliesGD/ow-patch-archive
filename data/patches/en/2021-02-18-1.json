@@ -17,6 +17,7 @@
      "name_en": "Orisa",
      "name_cn": "奥丽莎",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1f9cf8dd1ea36ba91440be891d79cd97bd4ac2d2e0e409a8eee0c76a4317617a.png",
      "dev_note": "This will make Fortify more reliable at preventing large bursts of incoming damage and make it more consistent as a defensive ability.",
      "general": [],
      "perks": [],
@@ -25,17 +26,18 @@
        "name_en": "Fortify",
        "name_cn": "强固防御",
        "slug": "fortify",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d697fa90726cf683222920822d2ee00a85e0420c6cbc6ec2365573f313d06357.png",
        "changes": [
         {
          "text_en": "Prevents critical headshot damage while effect is active",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -46,6 +48,7 @@
      "name_en": "Reaper",
      "name_cn": "死神",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b199eada68c7148fd0f03f3bca53fb98b28a2318603918e72a37b4aed0ef754e.png",
      "dev_note": "Reaper's shotguns have a high damage potential but require close range or large targets to fully utilize. We're smoothing this out by extending the range at which he can consistently deal damage while lowering the maximum damage of each shot.",
      "general": [],
      "perks": [],
@@ -54,28 +57,29 @@
        "name_en": "Hellfire Shotguns",
        "name_cn": "狱火散弹枪",
        "slug": "hellfire-shotguns",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/76b6866587871744aca310645f66d2d07755c5a55093eb8734ed0898b17efc51.png",
        "changes": [
         {
          "text_en": "Spread reduced from 8 to 6",
          "text_cn": null,
          "before": 8.0,
          "after": 6.0,
-         "metric": "spread",
          "by": -2.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "spread"
+         "metric": "spread",
+         "raw_metric": "spread",
+         "unit": null
         },
         {
          "text_en": "Damage per projectile reduced from 7 to 5.5",
          "text_cn": null,
          "before": 7.0,
          "after": 5.5,
-         "metric": "damage",
          "by": -1.5,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "damage per projectile"
+         "metric": "damage",
+         "raw_metric": "damage per projectile",
+         "unit": null
         }
        ]
       }
@@ -86,6 +90,7 @@
      "name_en": "Winston",
      "name_cn": "温斯顿",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5048a08caf910d4463ce0c513f7e64c4329f276d358d054e7a8eb7ec5bf26eab.png",
      "dev_note": "With this change Winston will be slightly more resilient against shotguns, beams, and weapons with a high rate of fire.",
      "general": [
       {
@@ -109,6 +114,7 @@
      "name_en": "Wrecking Ball",
      "name_cn": "破坏球",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c22df3c91a4fbc7f3f9689cd76f9fb86b52b2dfdf9f51c2158b4a9259a5f970d.png",
      "dev_note": "For how often it can occur, Wrecking Ball's knockback is too strong. We're reducing the distance it moves enemy players to bring it more in line with other low cooldown knockback abilities.",
      "general": [],
      "perks": [],
@@ -117,17 +123,18 @@
        "name_en": "Grappling Claw",
        "name_cn": "工程抓钩",
        "slug": "grappling-claw",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e81e6ba9fb3391f29528021e453a0d3c16da1fc5e378994e6d00783356e0f2c9.png",
        "changes": [
         {
          "text_en": "Knockback strength reduced 25%",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": "knockback",
          "by": null,
          "by_pct": 25.0,
-         "unit": null,
-         "raw_metric": "knockback strength"
+         "metric": "knockback",
+         "raw_metric": "knockback strength",
+         "unit": null
         }
        ]
       }
@@ -145,17 +152,17 @@
    "blocks": [
     {
      "title": "General",
-     "body": "Fixed a bug that caused player ragdoll models to fall through the terrain when skipping the kill camera Fixed a bug that caused the Bounty Hunter game mode to collapse too early",
+     "body": "- Fixed a bug that caused player ragdoll models to fall through the terrain when skipping the kill camera\n- Fixed a bug that caused the Bounty Hunter game mode to collapse too early",
      "dev": null
     },
     {
      "title": "Maps",
-     "body": "Junkertown Fixed a bug that allowed Tracer to escape map geometry in a specific location",
+     "body": "Junkertown\n\n- Fixed a bug that allowed Tracer to escape map geometry in a specific location",
      "dev": null
     }
    ]
   }
  ],
  "raw_text": null,
- "hash": "sha256:f99d6d009b541bc648652ebfce4ab4fdc6f63f15abebc8c62a1dd5c9488f749c"
+ "hash": "sha256:02944cb310eee25953dff451e2add27c9c7b42e370ee807d3feedaf7e957064d"
 }

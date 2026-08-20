@@ -10,13 +10,14 @@
    "type": "hero_update",
    "title": "Hero Updates",
    "role": null,
-   "description": "General Hitscan damage now scales to 30% at maximum falloff range, down from 50% for the following heroes: Ashe Baptiste Bastion McCree Soldier: 76 Widowmaker Wrecking Ball",
+   "description": "General\n\n- Hitscan damage now scales to 30% at maximum falloff range, down from 50% for the following heroes:\n  - Ashe\n  - Baptiste\n  - Bastion\n  - McCree\n  - Soldier: 76\n  - Widowmaker\n  - Wrecking Ball",
    "heroes": [
     {
      "slug": "bastion",
      "name_en": "Bastion",
      "name_cn": "堡垒",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0abef5617fb960668f1d3ab9322f416188faf7479d2491a60100b3f59ce890ee.png",
      "dev_note": "We're making Bastion's Configuration: Recon weapon more reliable to help strengthen his run-and-gun gameplay when moving between spots he wants to post up with Configuration: Sentry.",
      "general": [],
      "perks": [],
@@ -25,17 +26,18 @@
        "name_en": "Configuration: Recon",
        "name_cn": null,
        "slug": "configuration-recon",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a2a15d0b50a53e0477ab65e55ed46248cf86ac976e5cef7c64078470dfa59807.png",
        "changes": [
         {
          "text_en": "Weapon spread reduced from 1.5 to 1.2",
          "text_cn": null,
          "before": 1.5,
          "after": 1.2,
-         "metric": "weapon spread",
          "by": -0.3,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "weapon spread"
+         "metric": "weapon spread",
+         "raw_metric": "weapon spread",
+         "unit": null
         }
        ]
       }
@@ -46,6 +48,7 @@
      "name_en": "D.Va",
      "name_cn": "D.Va",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5d9b834a39e9306ec125dd8c77cdd62a351f8edef2d5dfe66d6cbb22594eae7e.png",
      "dev_note": "No longer building ultimate charge in the window of time between using Self Destruct and when it detonates is targeted at Echo's Duplicate ability when copying D.Va. Echo's accelerated ultimate charge enabled her to have Call Mech available before the Self Destruct explosion went off, making it very difficult for enemies to find a safe place to hide.",
      "general": [],
      "perks": [],
@@ -54,28 +57,29 @@
        "name_en": "Call Mech",
        "name_cn": null,
        "slug": "call-mech",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/848d8cd24eb0327a023a564447d79dd8b367c21a378d328cd92896a21b775219.png",
        "changes": [
         {
          "text_en": "Damage area reduced from 3 to 2.5 meters",
          "text_cn": null,
          "before": 3.0,
          "after": 2.5,
-         "metric": "damage",
          "by": -0.5,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "damage area"
+         "metric": "damage",
+         "raw_metric": "damage area",
+         "unit": null
         },
         {
          "text_en": "No longer builds ultimate charge while using Self Destruct until after her mech detonates",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -86,6 +90,7 @@
      "name_en": "Soldier: 76",
      "name_cn": "士兵76",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1ab1d67206b689b2dc14282ce65cb070e2956a902f5c4de87884513b661c4297.png",
      "dev_note": "This will make Tactical Visor effective for more than just the aim assist, which slightly loses some value as player aim improves.",
      "general": [],
      "perks": [],
@@ -94,17 +99,18 @@
        "name_en": "Heavy Pulse Rifle",
        "name_cn": "重脉冲步枪",
        "slug": "heavy-pulse-rifle",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/69eaf669cd646a617439592615f023cfec82c27f4a3e19f48188941b3feaf55f.png",
        "changes": [
         {
          "text_en": "Damage falloff is disabled while Tactical Visor is active",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -115,6 +121,7 @@
      "name_en": "Widowmaker",
      "name_cn": "黑百合",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a90c4acb688e425a51164216e40e5e9bd8e82797d26d8db0441bcf5f508ae474.png",
      "dev_note": "We're adjusting Widowmaker's optimal range to be slightly further out to account for some map locations where counter-sniping was common but just barely outside of the effective range with the damage falloff. For Widowmaker, the sniping damage falloff is mainly in place to restrict the lethality of mid-air grapple shots at the extreme distances possible on some maps.",
      "general": [],
      "perks": [],
@@ -123,17 +130,18 @@
        "name_en": "Widow's Kiss",
        "name_cn": "寡妇之吻",
        "slug": "widows-kiss",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/13a1e7903c23a5e140aa01fa930f585c1ea69e1e24378c0462f42053085f7ad9.png",
        "changes": [
         {
          "text_en": "Damage falloff range increased from 60-85 to 70-100 meters",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -144,5 +152,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:e8f74dfdcbc47627f7408fd9161fa4c95b9bfd0df7756881e59d4819a7542339"
+ "hash": "sha256:aa05288cd01f5f8edfefa57035e632bf700f14692b898645bbc45815c6dd0c96"
 }

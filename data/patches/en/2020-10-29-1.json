@@ -17,6 +17,7 @@
      "name_en": "Baptiste",
      "name_cn": "巴蒂斯特",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a4f09ac5528ea7c458223747a0b47144f1b6b1d2736fa3b67c18a8ab43d0d815.png",
      "dev_note": "We're making some adjustments to Baptiste's Biotic Launcher firing cadence that will make dealing damage quicker and landing a healing grenade more impactful.",
      "general": [],
      "perks": [],
@@ -25,50 +26,51 @@
        "name_en": "Biotic Launcher",
        "name_cn": null,
        "slug": "biotic-launcher",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/af62dfb3476b6389472188ce9e6e0e296928a5cb3ae87a4ed5133c8330e46f0d.png",
        "changes": [
         {
          "text_en": "Recovery time reduced from 0.45 to 0.38 seconds",
          "text_cn": null,
          "before": 0.45,
          "after": 0.38,
-         "metric": "recovery",
          "by": -0.07,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "recovery time"
+         "metric": "recovery",
+         "raw_metric": "recovery time",
+         "unit": "s"
         },
         {
          "text_en": "Damage reduced from 25 to 24",
          "text_cn": null,
          "before": 25.0,
          "after": 24.0,
-         "metric": "damage",
          "by": -1.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "damage"
+         "metric": "damage",
+         "raw_metric": "damage",
+         "unit": null
         },
         {
          "text_en": "Recovery increased from 0.8 to 0.9 seconds",
          "text_cn": null,
          "before": 0.8,
          "after": 0.9,
-         "metric": "recovery",
          "by": 0.1,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "recovery"
+         "metric": "recovery",
+         "raw_metric": "recovery",
+         "unit": "s"
         },
         {
          "text_en": "Healing increased from 50 to 60",
          "text_cn": null,
          "before": 50.0,
          "after": 60.0,
-         "metric": "healing",
          "by": 10.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "healing"
+         "metric": "healing",
+         "raw_metric": "healing",
+         "unit": null
         }
        ]
       }
@@ -79,6 +81,7 @@
      "name_en": "Brigitte",
      "name_cn": "布丽吉塔",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/cc43b7ecb12ebf262080d610ae3209849e304f82764bc3ba38508dd812d88e61.png",
      "dev_note": null,
      "general": [
       {
@@ -102,6 +105,7 @@
      "name_en": "Cassidy",
      "name_cn": "卡西迪",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a30fd337709bc9bd52781db34d754cd86825f021c27bcd9bc0e912cc5d88577b.png",
      "dev_note": null,
      "general": [
       {
@@ -123,17 +127,18 @@
        "name_en": "Peacekeeper",
        "name_cn": "维和者",
        "slug": "peacekeeper",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/afb27d71eeb6f3635ac1ff236c7b3f9e3c6d017360ce022d5d384288ff95bce7.png",
        "changes": [
         {
          "text_en": "Reload time reduced from 1.5 to 1.2 seconds",
          "text_cn": null,
          "before": 1.5,
          "after": 1.2,
-         "metric": "reload time",
          "by": -0.3,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "reload time"
+         "metric": "reload time",
+         "raw_metric": "reload time",
+         "unit": null
         }
        ]
       }
@@ -144,6 +149,7 @@
      "name_en": "Mei",
      "name_cn": "美",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a4c1e3c5533675ba4941c48809c54e0412774e022b1e324f7ec5915fef372db9.png",
      "dev_note": "Since we previously made Mei's primary fire relatively more expensive, she spends more time out of ammo and this was particularly noticeable when unable to reload while in Cryo-Freeze. To help smooth out this gameplay she now regains some ammo during Cryo-Freeze.",
      "general": [],
      "perks": [],
@@ -152,17 +158,18 @@
        "name_en": "Cryo-Freeze",
        "name_cn": null,
        "slug": "cryo-freeze",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b9507f892676c729768b3cb9eec4fb2195bbadb1f229a6a332d282ffa32410db.png",
        "changes": [
         {
          "text_en": "Now restores 15 ammo per second",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       },
@@ -170,17 +177,18 @@
        "name_en": "Ice Wall",
        "name_cn": "冰墙",
        "slug": "ice-wall",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0608319e5f26acafd19a0afd682f3c73c5b70cbfc93d59f58f28eef5cd0eb2e7.png",
        "changes": [
         {
          "text_en": "Cooldown lowered from 13 to 12 seconds",
          "text_cn": null,
          "before": 13.0,
          "after": 12.0,
-         "metric": "cooldown",
          "by": -1.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "cooldown"
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
         }
        ]
       }
@@ -191,6 +199,7 @@
      "name_en": "Symmetra",
      "name_cn": "秩序之光",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/961aa9d625d8104d6f466f63a907027e7083d161da9f02004d7d545c2a52440b.png",
      "dev_note": null,
      "general": [
       {
@@ -214,6 +223,7 @@
      "name_en": "Widowmaker",
      "name_cn": "黑百合",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a90c4acb688e425a51164216e40e5e9bd8e82797d26d8db0441bcf5f508ae474.png",
      "dev_note": null,
      "general": [
       {

@@ -49,6 +49,7 @@
      "name_en": "Doomfist",
      "name_cn": "末日铁拳",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/36dc867dd65cff81b5154c34531a9c520059c6f8c907631a6f99e049a6777dbb.png",
      "dev_note": "Empowered Rocket Punch's increased follow-through size was hitting targets far away from the initial target. We're reducing the bonus size while retaining some additional range and radius to preserve its power fantasy.",
      "general": [],
      "perks": [],
@@ -57,28 +58,29 @@
        "name_en": "Rocket Punch",
        "name_cn": "火箭重拳",
        "slug": "rocket-punch",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/79fa2ac1beeaaecc23735e2bc41068a99838c76ff626a12ac07fcdc5efd70bd9.png",
        "changes": [
         {
          "text_en": "Empowered Punch collateral range gain reduced 75% to 40%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": "empowered punch collateral range gain",
          "by": null,
          "by_pct": 75.0,
-         "unit": null,
-         "raw_metric": "empowered punch collateral range gain"
+         "metric": "empowered punch collateral range gain",
+         "raw_metric": "empowered punch collateral range gain",
+         "unit": null
         },
         {
          "text_en": "Empowered Punch collateral radius gain reduced from 50% to 40%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -89,6 +91,7 @@
      "name_en": "Junker Queen",
      "name_cn": "渣客女王",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a362b9dba4f5f4f704076945f3c72d7d442d536ffcc2fc5735062f4a1cee8031.png",
      "dev_note": "Commanding Shout is Junker Queen's primary source of survivability and team protection. Its cooldown begins after the effect expires, resulting in a longer time between uses. We're reducing the cooldown to increase its availability during engagements.",
      "general": [],
      "perks": [],
@@ -97,28 +100,29 @@
        "name_en": "Commanding Shout",
        "name_cn": "命令怒吼",
        "slug": "commanding-shout",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ef3c2fb9bdb4c913d2b048ef4363fce335553c8f4ee74524f2af86af961ba648.png",
        "changes": [
         {
          "text_en": "Cooldown reduced from 12 to 10 seconds. (5v5)",
          "text_cn": null,
          "before": 12.0,
          "after": 10.0,
-         "metric": "cooldown",
          "by": -2.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "cooldown"
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
         },
         {
          "text_en": "Cooldown reduced from 15 to 13 seconds. (6v6)",
          "text_cn": null,
          "before": 15.0,
          "after": 13.0,
-         "metric": "cooldown",
          "by": -2.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "cooldown"
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
         }
        ]
       }
@@ -129,6 +133,7 @@
      "name_en": "Mauga",
      "name_cn": "毛加",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/937cbae13f50502b4191c09b7c178ef60d2eadddcdda5bc4268c1541216b8722.png",
      "dev_note": "Mauga could maintain high accuracy when firing a single Chaingun for extended periods. Adding dynamic spread to individual Chainguns encourages switching between weapons to manage spread. This change does not affect accuracy while firing both weapons simultaneously.",
      "general": [],
      "perks": [],
@@ -137,28 +142,29 @@
        "name_en": "Chainguns",
        "name_cn": "链式步枪",
        "slug": "chainguns",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/394d59489428fba7664bdf61e3bec0798b12c2957f2a733fb54a213848db4282.png",
        "changes": [
         {
          "text_en": "Maximum spread while firing individual Chainguns increased from 1 to 1.5.",
          "text_cn": null,
          "before": 1.0,
          "after": 1.5,
-         "metric": "maximum spread while firing individual chainguns",
          "by": 0.5,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "maximum spread while firing individual chainguns"
+         "metric": "maximum spread while firing individual chainguns",
+         "raw_metric": "maximum spread while firing individual chainguns",
+         "unit": null
         },
         {
          "text_en": "Number of shots until maximum spread increased from 0 to 30 shots.",
          "text_cn": null,
          "before": 0.0,
          "after": 30.0,
-         "metric": "number of shots until maximum spread",
          "by": 30.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "number of shots until maximum spread"
+         "metric": "number of shots until maximum spread",
+         "raw_metric": "number of shots until maximum spread",
+         "unit": null
         }
        ]
       }
@@ -169,6 +175,7 @@
      "name_en": "Ramattra",
      "name_cn": "拉玛刹",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f54a877264e161c2aa4d5755ef4411eb7fd7e4eb910075936e91ddb043b8a58e.png",
      "dev_note": "Increasing Ravenous Vortex's explosion damage rewards more precise detonations. We're also reducing Block's cooldown to allow Ramattra to block immediately after a single punch instead of two, improving the flow of Nemesis Form.",
      "general": [],
      "perks": [],
@@ -177,17 +184,18 @@
        "name_en": "Ravenous Vortex",
        "name_cn": "吞噬漩涡",
        "slug": "ravenous-vortex",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/80e96eddbc10af5e1b08c7392f4f61aabc0e5408e31e72961595a936ccceabcc.png",
        "changes": [
         {
          "text_en": "Explosion damage increased from 15 to 30.",
          "text_cn": null,
          "before": 15.0,
          "after": 30.0,
-         "metric": "explosion damage",
          "by": 15.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "explosion damage"
+         "metric": "explosion damage",
+         "raw_metric": "explosion damage",
+         "unit": null
         }
        ]
       },
@@ -195,17 +203,18 @@
        "name_en": "Block (Nemesis Form)",
        "name_cn": "铁臂（天罚形态）",
        "slug": "block-nemesis-form",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4cb568671658d74807d20bd5fa6e1b790b9bb21b1f2111ccda30b48e8f49d7b3.png",
        "changes": [
         {
          "text_en": "Cooldown reduced from 1 to 0.5 seconds.",
          "text_cn": null,
          "before": 1.0,
          "after": 0.5,
-         "metric": "cooldown",
          "by": -0.5,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "cooldown"
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
         }
        ]
       }
@@ -216,6 +225,7 @@
      "name_en": "Sigma",
      "name_cn": "西格玛",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/416f312608ac1d9f34509883daa0fa9486b15ceb112e4440b4c412e125390517.png",
      "dev_note": "Sigma remains durable when successfully rotating through his defensive tools. Reducing his shield health lowers his survivability when opponents are able to break through his defenses.",
      "general": [
       {
@@ -239,7 +249,8 @@
        "lines_en": [
         "Damage conversion reduced from 40% to 30%."
        ],
-       "lines_cn": []
+       "lines_cn": [],
+       "raw_text": []
       }
      ],
      "abilities": []
@@ -258,6 +269,7 @@
      "name_en": "Cassidy",
      "name_cn": "卡西迪",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5a0a0840565c5810d9a638d391b0403ba743459d52aa9f1c443a9fc87e41f06f.png",
      "dev_note": "Silver Bullet's additional projectile size improved the perk's effectiveness by making the empowered shot significantly easier to land. We're removing that bonus while retaining its potential damage.",
      "general": [],
      "perks": [
@@ -268,7 +280,8 @@
        "lines_en": [
         "Projectile size reduced from 0.17 to 0.07."
        ],
-       "lines_cn": []
+       "lines_cn": [],
+       "raw_text": []
       }
      ],
      "abilities": []
@@ -278,6 +291,7 @@
      "name_en": "Freja",
      "name_cn": "弗蕾娅",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/7c5a9c6437d89f4703646a934c6a27098dd340abcb6f965bf1335bc10b60e1ae.png",
      "dev_note": "Reducing Take Aim's explosion delay lowers the time between impact and damage, creating more consistent follow-up opportunities while reducing the bolt's disruptive potential when hit by it. The other changes are aimed at improving the flow between Take Aim and Revdraw Crossbow’s primary fire.",
      "general": [],
      "perks": [],
@@ -286,17 +300,18 @@
        "name_en": "Revdraw Crossbow",
        "name_cn": "速射弩",
        "slug": "revdraw-crossbow",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c6a0087882feb24e09ab4827fbadb87f34ef570a1dad65373e2c8ee9e3808e77.png",
        "changes": [
         {
          "text_en": "Fire Rate increased from 5 to 5.5.",
          "text_cn": null,
          "before": 5.0,
          "after": 5.5,
-         "metric": "fire rate",
          "by": 0.5,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "fire rate"
+         "metric": "fire rate",
+         "raw_metric": "fire rate",
+         "unit": null
         }
        ]
       },
@@ -304,28 +319,29 @@
        "name_en": "Take Aim",
        "name_cn": "瞄准射击",
        "slug": "take-aim",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a86fa2849d7ab515d256e390e75387e4ae306f5d64c5cf24a1ba33038da91e45.png",
        "changes": [
         {
          "text_en": "Recovery reduced from 0.5 to 0.4.",
          "text_cn": null,
          "before": 0.5,
          "after": 0.4,
-         "metric": "recovery",
          "by": -0.1,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "recovery"
+         "metric": "recovery",
+         "raw_metric": "recovery",
+         "unit": "s"
         },
         {
          "text_en": "Explosion delay reduced from 1 to 0.8 seconds.",
          "text_cn": null,
          "before": 1.0,
          "after": 0.8,
-         "metric": "explosion delay",
          "by": -0.2,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "explosion delay"
+         "metric": "explosion delay",
+         "raw_metric": "explosion delay",
+         "unit": null
         }
        ]
       }
@@ -336,6 +352,7 @@
      "name_en": "Reaper",
      "name_cn": "死神",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d6d7be4b019c088741f1a27bf643bc3718f06f571fe185441026aaef03115843.png",
      "dev_note": "Reaper's reduced health pool has limited his ability to sustain through extended engagements. Increasing the effectiveness of his passive restores some of that durability while rewarding aggressive play.",
      "general": [],
      "perks": [
@@ -346,7 +363,8 @@
        "lines_en": [
         "Pickup radius of Soul Globes increased from 5 to 8 meters."
        ],
-       "lines_cn": []
+       "lines_cn": [],
+       "raw_text": []
       }
      ],
      "abilities": [
@@ -354,17 +372,18 @@
        "name_en": "The Reaping",
        "name_cn": "收割",
        "slug": "the-reaping",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d6efc2a1bddf6bdafd95d6bf650bea70fe83d45000c400a1eaa6a86b042ef0a5.png",
        "changes": [
         {
          "text_en": "Lifesteal increased from 25% to 30%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -375,6 +394,7 @@
      "name_en": "Shion",
      "name_cn": "死怨",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ad0931805f9f28f03e8d55fead38ed85ee52f5c75f89aa3deec8a27fdc4fd6b3.png",
      "dev_note": "Reducing Execution's recovery time better aligns the downtime after using the ability with when Shion can fire again. Joyride's impact damage is also being reduced to lower the effectiveness of continuously ramming targets and the combo potential of immediately detonating the bike after impact.",
      "general": [],
      "perks": [],
@@ -383,17 +403,18 @@
        "name_en": "Execution",
        "name_cn": "交叉枪决",
        "slug": "execution",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/dbd96d63564e1d99cfa5593f86796c9e5ab360214eb0e50c18d6a9503093c7c5.png",
        "changes": [
         {
          "text_en": "Recovery time reduced from 0.4 to 0.3 seconds.",
          "text_cn": null,
          "before": 0.4,
          "after": 0.3,
-         "metric": "recovery",
          "by": -0.1,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "recovery time"
+         "metric": "recovery",
+         "raw_metric": "recovery time",
+         "unit": "s"
         }
        ]
       },
@@ -401,17 +422,18 @@
        "name_en": "Joyride",
        "name_cn": "纵情狂飙",
        "slug": "joyride",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a0279c43c165fe4f240c61baa6b7a721e73b84d7f940809e2a1897d94b2302ef.png",
        "changes": [
         {
          "text_en": "Impact damage while riding reduced from 60 to 30.",
          "text_cn": null,
          "before": 60.0,
          "after": 30.0,
-         "metric": "impact damage while riding",
          "by": -30.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "impact damage while riding"
+         "metric": "impact damage while riding",
+         "raw_metric": "impact damage while riding",
+         "unit": null
         }
        ]
       }
@@ -422,6 +444,7 @@
      "name_en": "Sierra",
      "name_cn": "西拉",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9df12aa85763497cd054257ccab04ef055a6c4c39334bbed0cd513ddff5cb395.png",
      "dev_note": "Anchor Drone is being adjusted to support more frequent deployment and repositioning opportunities. Its cooldown and duration are being reduced, while its health is being increased to improve its survivability in combat.",
      "general": [],
      "perks": [],
@@ -430,39 +453,40 @@
        "name_en": "Anchor Drone",
        "name_cn": "锚点无人机",
        "slug": "anchor-drone",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f9e6fff99bff3c24a9ea9e57ae7c71b067982e6df9b0acb50529fe58131b6e7b.png",
        "changes": [
         {
          "text_en": "Cooldown reduced from 12 to 11 seconds.",
          "text_cn": null,
          "before": 12.0,
          "after": 11.0,
-         "metric": "cooldown",
          "by": -1.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "cooldown"
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
         },
         {
          "text_en": "Duration reduced from 10 to 9 seconds.",
          "text_cn": null,
          "before": 10.0,
          "after": 9.0,
-         "metric": "duration",
          "by": -1.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "duration"
+         "metric": "duration",
+         "raw_metric": "duration",
+         "unit": "s"
         },
         {
          "text_en": "Health increased from 80 to 125.",
          "text_cn": null,
          "before": 80.0,
          "after": 125.0,
-         "metric": "health",
          "by": 45.0,
          "by_pct": null,
-         "unit": "hp",
-         "raw_metric": "health"
+         "metric": "health",
+         "raw_metric": "health",
+         "unit": "hp"
         }
        ]
       }
@@ -473,6 +497,7 @@
      "name_en": "Vendetta",
      "name_cn": "斩仇",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/723acfb2d8745f5346e1bb64124d74f5267dfbfeb2008240867925eddf9283b6.png",
      "dev_note": "Vendetta has continued to underperform since the significant changes made several seasons ago. Reverting Palatine Fang's overhead swing range restores some of her ability to close the distance and secure eliminations.",
      "general": [],
      "perks": [],
@@ -481,17 +506,18 @@
        "name_en": "Palatine Fang",
        "name_cn": "帕拉蒂尼之牙",
        "slug": "palatine-fang",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9754a770516c07712b3cbababb825972eec78c08b3fbc141dbcee31d9c58c137.png",
        "changes": [
         {
          "text_en": "Overhead swing bonus range increased from 2.0 to 2.5 meters.",
          "text_cn": null,
          "before": 2.0,
          "after": 2.5,
-         "metric": "overhead swing bonus range",
          "by": 0.5,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "overhead swing bonus range"
+         "metric": "overhead swing bonus range",
+         "raw_metric": "overhead swing bonus range",
+         "unit": null
         }
        ]
       }
@@ -502,6 +528,7 @@
      "name_en": "Venture",
      "name_cn": "探奇",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/7cab11e20f958ed3d369989e0ac96703fd2cda8c7abf237f75e12bf3549b066e.png",
      "dev_note": "Clobber's cooldown is being reduced to shorten the delay before Venture can use the ability again and better align it with its recovery time. This increases the frequency with which Clobber can be used within engagements and improves its synergy with the Covered in Dirt Major Perk.",
      "general": [],
      "perks": [],
@@ -510,17 +537,18 @@
        "name_en": "Clobber (Quick Melee)",
        "name_cn": "猛钻（快速近身攻击）",
        "slug": "clobber-quick-melee",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8e2f8c4b09eba3ef9d37f5d27b5996f5846e6a7555ec73a1f915267278efefb8.png",
        "changes": [
         {
          "text_en": "Cooldown/Recovery reduced from 1.6 to 1.2 seconds.",
          "text_cn": null,
          "before": 1.6,
          "after": 1.2,
-         "metric": "recovery",
          "by": -0.4,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "recovery"
+         "metric": "recovery",
+         "raw_metric": "recovery",
+         "unit": "s"
         }
        ]
       }
@@ -540,6 +568,7 @@
      "name_en": "Ana",
      "name_cn": "安娜",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3c87d470067d61c432815a4bc0c70b11f1b5379006da29625839da356b7c4ca1.png",
      "dev_note": "Ana's self-sustain has decreased following the removal of the Support passive's reduced health regeneration delay. Increasing Biotic Grenade's healing strengthens its defensive utility while also increasing its offensive impact.",
      "general": [],
      "perks": [],
@@ -548,17 +577,18 @@
        "name_en": "Biotic Grenade",
        "name_cn": "生物手雷",
        "slug": "biotic-grenade",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/886454bdb7df9ad8a47c4a3a8fa5dd488f5b2996e311f16d42a5f022942c4d18.png",
        "changes": [
         {
          "text_en": "Explosion damage and healing increased from 75 to 90.",
          "text_cn": null,
          "before": 75.0,
          "after": 90.0,
-         "metric": "explosion damage and healing",
          "by": 15.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "explosion damage and healing"
+         "metric": "explosion damage and healing",
+         "raw_metric": "explosion damage and healing",
+         "unit": null
         }
        ]
       }
@@ -569,6 +599,7 @@
      "name_en": "Brigitte",
      "name_cn": "布丽吉塔",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/dbc7d49f32020fed1033cb4bb99b55f7938d1a71108fe76edc589e42c8cd0977.png",
      "dev_note": "Adding a burst of instant healing when Inspire is triggered allows Brigitte to provide more immediate healing while rewarding players for consistent Inspire triggers.",
      "general": [],
      "perks": [],
@@ -577,28 +608,29 @@
        "name_en": "Inspire",
        "name_cn": "鼓舞士气",
        "slug": "inspire",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2d239f8ca1265f4c5f7be415edc5568481ca347e70a6e2dbf5790551fe63ea9b.png",
        "changes": [
         {
          "text_en": "Now grants 12 instant healing on trigger.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Healing over time reduced from 60 to 45.",
          "text_cn": null,
          "before": 60.0,
          "after": 45.0,
-         "metric": "healing",
          "by": -15.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "healing over time"
+         "metric": "healing",
+         "raw_metric": "healing over time",
+         "unit": null
         }
        ]
       }
@@ -609,6 +641,7 @@
      "name_en": "Kiriko",
      "name_cn": "雾子",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ee8089aae48680d912947d907295c03fce960dc500d806a400c36f59b6ef98d7.png",
      "dev_note": "The reduced recovery time on Healing Ofuda improved the feel and consistency of Kiriko's healing. However, her overall healing output has become too high, so we're reducing the base healing while preserving the improved responsiveness.",
      "general": [],
      "perks": [],
@@ -617,17 +650,18 @@
        "name_en": "Healing Ofuda",
        "name_cn": "符",
        "slug": "healing-ofuda",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4ebf8c956da05591160da7416299bb3b641a268fbf334debf7892b8c7b3c326d.png",
        "changes": [
         {
          "text_en": "Healing per projectile reduced from 13 to 12.",
          "text_cn": null,
          "before": 13.0,
          "after": 12.0,
-         "metric": "healing",
          "by": -1.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "healing per projectile"
+         "metric": "healing",
+         "raw_metric": "healing per projectile",
+         "unit": null
         }
        ]
       }
@@ -638,6 +672,7 @@
      "name_en": "Lúcio",
      "name_cn": "卢西奥",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3a804d4305621bbee0e1472ac79d977799a27b6ae8f44922790cd1393812d5fd.png",
      "dev_note": "Lúcio's overall effectiveness has been reduced over time to account for his uniquely powerful speed utility. Increasing his weapon damage strengthens his offensive capabilities without increasing the strength of his utility.",
      "general": [],
      "perks": [],
@@ -646,17 +681,18 @@
        "name_en": "Sonic Amplifier",
        "name_cn": "音速扩音器",
        "slug": "sonic-amplifier",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5dc58c552d2b8ee4018f166b7a1c7eeda839c631fa09fb3bfac3e413e2a6e47d.png",
        "changes": [
         {
          "text_en": "Damage per projectile increased from 20 to 22.",
          "text_cn": null,
          "before": 20.0,
          "after": 22.0,
-         "metric": "damage",
          "by": 2.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "damage per projectile"
+         "metric": "damage",
+         "raw_metric": "damage per projectile",
+         "unit": null
         }
        ]
       }
@@ -674,7 +710,7 @@
    "blocks": [
     {
      "title": "General Changes",
-     "body": "Clash capture speed now increased up to 300% as time elapses (Up from 200%). Rate at which Clash capture speed increases increased to 2% every 1s (Up from 1%).",
+     "body": "- Clash capture speed now increased up to 300% as time elapses (Up from 200%).\n- Rate at which Clash capture speed increases increased to 2% every 1s (Up from 1%).",
      "dev": "Clash rounds in Stadium can lead to outlier match lengths, especially in compositions with high amounts of sustain, so we're increasing the point capture speed to limit such outliers."
     }
    ]
@@ -690,6 +726,7 @@
      "name_en": "Junker Queen",
      "name_cn": "渣客女王",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a362b9dba4f5f4f704076945f3c72d7d442d536ffcc2fc5735062f4a1cee8031.png",
      "dev_note": null,
      "general": [
       {
@@ -755,6 +792,7 @@
      "name_en": "Cassidy",
      "name_cn": "卡西迪",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5a0a0840565c5810d9a638d391b0403ba743459d52aa9f1c443a9fc87e41f06f.png",
      "dev_note": null,
      "general": [
       {
@@ -789,6 +827,7 @@
      "name_en": "Junkrat",
      "name_cn": "狂鼠",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f807df911fec53e9c86107affc4d7a5c08612ae0de1baafe7c12352a048b9b52.png",
      "dev_note": null,
      "general": [
       {
@@ -823,6 +862,7 @@
      "name_en": "Mei",
      "name_cn": "美",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/dc5525ecbba3b254188f126ba0dd07571dee201d4ddc2f068c3e2f6907668cca.png",
      "dev_note": null,
      "general": [
       {
@@ -879,6 +919,7 @@
      "name_en": "Reaper",
      "name_cn": "死神",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d6d7be4b019c088741f1a27bf643bc3718f06f571fe185441026aaef03115843.png",
      "dev_note": null,
      "general": [
       {
@@ -937,6 +978,7 @@
      "name_en": "Torbjörn",
      "name_cn": "托比昂",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b1b376c95ed7f017b9be712c9069305c7e5cb26b010aa988697805ffa1cc20a5.png",
      "dev_note": null,
      "general": [
       {
@@ -1048,6 +1090,7 @@
      "name_en": "Juno",
      "name_cn": "朱诺",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/342a43327798660f29039e6a7f3f0a922097b03419eded7434cb1edb2e444bbb.png",
      "dev_note": "This change should reduce the ceiling of Blink Boost when paired with multiple other Cooldown Reduction items. We'll continue to monitor Blink Boost's synergy with On Ability items.",
      "general": [
       {
@@ -1082,6 +1125,7 @@
      "name_en": "Kiriko",
      "name_cn": "雾子",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ee8089aae48680d912947d907295c03fce960dc500d806a400c36f59b6ef98d7.png",
      "dev_note": null,
      "general": [
       {
@@ -1138,6 +1182,7 @@
      "name_en": "Lúcio",
      "name_cn": "卢西奥",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3a804d4305621bbee0e1472ac79d977799a27b6ae8f44922790cd1393812d5fd.png",
      "dev_note": null,
      "general": [
       {
@@ -1194,6 +1239,7 @@
      "name_en": "Mercy",
      "name_cn": "天使",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/55e281170eb6d65b2bece475b1179ccf37810dfb46b957705227d566cb38be9e.png",
      "dev_note": null,
      "general": [
       {
@@ -1228,6 +1274,7 @@
      "name_en": "Wuyang",
      "name_cn": "无漾",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/dede4dc963baf0a5dd136f4d66af8d8741010410eda17a15df430fee9a6afc85.png",
      "dev_note": null,
      "general": [
       {
@@ -1251,6 +1298,7 @@
      "name_en": "Zenyatta",
      "name_cn": "禅雅塔",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/58a05fe509b6b5333a4e3bf761afab6493420bf58fa2fac834ca1d3f779961d2.png",
      "dev_note": null,
      "general": [
       {
@@ -1314,7 +1362,7 @@
    "blocks": [
     {
      "title": "Item Changes",
-     "body": "Volskaya Ordnance - Epic Weapon General Item Bonus Damage per 100 Bonus Life on target increased to 6% (Up from 5%). Gadget Maximizer - Epic Ability General Item Gadget cooldown reduction increased to 35% (Up from 25%). Three Tap Tommygun - Epic Ability General Item Added 0.5s internal cooldown for subsequent applications. Damage reduced to 3% of target's current life (Down from 5%). Damage duration reduced to 3s (Down from 5s). Vortex Vial - Gadget Cost reduced to 9000 (Down from 9500). Cooldown reduced to 15s (Down from 25s).",
+     "body": "Volskaya Ordnance - Epic Weapon General Item\n\n- Bonus Damage per 100 Bonus Life on target increased to 6% (Up from 5%).\n\nGadget Maximizer - Epic Ability General Item\n\n- Gadget cooldown reduction increased to 35% (Up from 25%).\n\nThree Tap Tommygun - Epic Ability General Item\n\n- Added 0.5s internal cooldown for subsequent applications.\n- Damage reduced to 3% of target's current life (Down from 5%).\n- Damage duration reduced to 3s (Down from 5s).\n\nVortex Vial - Gadget\n\n- Cost reduced to 9000 (Down from 9500).\n- Cooldown reduced to 15s (Down from 25s).",
      "dev": "Three Tap Tommygun has proven to be an outlier in terms of output, so we're reducing the output and making it more difficult to quickly apply multiple stacks of. We're also improving some underused counter options, especially the Anti-Flier gadget."
     }
    ]
@@ -1323,7 +1371,7 @@
    "type": "generic_update",
    "title": "Custom Game Updates",
    "role": null,
-   "description": "Added an infinite Joyride option for Shion under Settings > Heroes > Shion.",
+   "description": "- Added an infinite Joyride option for Shion under Settings > Heroes > Shion.",
    "heroes": [],
    "blocks": []
   },
@@ -1336,17 +1384,17 @@
    "blocks": [
     {
      "title": "General",
-     "body": "Fixed an issue causing Shion's Hero Challenges to not be sorted alphabetically. Fixed an issue with Mauga where his reticle spread could become inaccurate when swapping between his guns. Fixed an issue where Sierra’s Trailblazer drone could be interrupted by stun abilities. Fixed several text bugs in the Advanced Info Panel.",
+     "body": "- Fixed an issue causing Shion's Hero Challenges to not be sorted alphabetically.\n- Fixed an issue with Mauga where his reticle spread could become inaccurate when swapping between his guns.\n- Fixed an issue where Sierra’s Trailblazer drone could be interrupted by stun abilities.\n- Fixed several text bugs in the Advanced Info Panel.",
      "dev": null
     },
     {
      "title": "Stadium",
-     "body": "Fixed an issue where Junker Queen's Bloodhound Mask wasn't properly granting bonus Weapon Power from Wounds. Fixed an issue where Doomfist's Friendly Fissure caused Meteor Strike to deal full damage regardless of distance. Fixed an issue where Cassidy's Gunslinger Grit was triggering before the reload had completed. Fixed an issue where critically healing an ally after dealing Ability Damage with Cybervenom would apply Healing Reduction to allies. Fixed an issue where Lucio's Hip Hop wasn't properly working with Wall Jump on Release option toggled off. Fixed an issue where Mei's Frosting wasn't properly granting Ultimate Charge. Fixed an issue where Ramattra's Barrier wasn't scaling with Ability Power. Fixed an issue where Mei's Slowball would visually appear as though it was always the empowered projectile if the Power was sold while buff was active. Fixed an issue where Kiriko's Leaf on the Wind would target sometimes target enemies. In a previous update, fixed an issue where Moira's Spectral Beam had an incorrect effectiveness value.",
+     "body": "- Fixed an issue where Junker Queen's Bloodhound Mask wasn't properly granting bonus Weapon Power from Wounds.\n- Fixed an issue where Doomfist's Friendly Fissure caused Meteor Strike to deal full damage regardless of distance.\n- Fixed an issue where Cassidy's Gunslinger Grit was triggering before the reload had completed.\n- Fixed an issue where critically healing an ally after dealing Ability Damage with Cybervenom would apply Healing Reduction to allies.\n- Fixed an issue where Lucio's Hip Hop wasn't properly working with Wall Jump on Release option toggled off.\n- Fixed an issue where Mei's Frosting wasn't properly granting Ultimate Charge.\n- Fixed an issue where Ramattra's Barrier wasn't scaling with Ability Power.\n- Fixed an issue where Mei's Slowball would visually appear as though it was always the empowered projectile if the Power was sold while buff was active.\n- Fixed an issue where Kiriko's Leaf on the Wind would target sometimes target enemies.\n- In a previous update, fixed an issue where Moira's Spectral Beam had an incorrect effectiveness value.",
      "dev": null
     }
    ]
   }
  ],
  "raw_text": null,
- "hash": "sha256:fe6da80539d2a3590b1b3da066af88e70729c64e7ac358c5e69aaff9e23efb4d"
+ "hash": "sha256:432ef3f266f39627216caf0186e38e3ec5420b587a2ca923ca027bd5e9cb5ddf"
 }

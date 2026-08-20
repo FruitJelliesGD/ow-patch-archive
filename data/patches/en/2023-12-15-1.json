@@ -25,6 +25,7 @@
      "name_en": "Mauga",
      "name_cn": "毛加",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6dbd80a0b40bd0464db35948f98d91ecc6dfcede8c94ff9b1ecefda781a7aa1f.png",
      "dev_note": null,
      "general": [
       {
@@ -70,28 +71,29 @@
        "name_en": "Incendiary and Volatile Chainguns",
        "name_cn": null,
        "slug": "incendiary-and-volatile-chainguns",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/df6bae435e7e319b51fe4977e92971fcfbb9b30fab2f39d1e614660274fab226.png",
        "changes": [
         {
          "text_en": "Number of shots with the Incendiary Chaingun to ignite enemies reverted from 15 to 10.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Spread decreased from 1.1 to 1 when only one Chaingun is active.",
          "text_cn": null,
          "before": 1.1,
          "after": 1.0,
-         "metric": "spread",
          "by": -0.1,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "spread"
+         "metric": "spread",
+         "raw_metric": "spread",
+         "unit": null
         }
        ]
       },
@@ -99,17 +101,18 @@
        "name_en": "Berserker",
        "name_cn": null,
        "slug": "berserker",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f35a2296090039ae055f465e736370f031bdd348677b3c9657147c0b925267b1.png",
        "changes": [
         {
          "text_en": "Overhealth conversion rate increased from 50% to 60%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -127,17 +130,17 @@
    "blocks": [
     {
      "title": "GENERAL",
-     "body": "Fixed a bug that had some heroes’ default weapon appearing locked behind competitive points. Hero Mastery - Fixed a bug with replays where only the bookmarks of the first run could be selected. Fixed a bug that prevented players from being able to thank each other. Fixed a bug that caused the multi-kill voice over to fail to play.",
+     "body": "- Fixed a bug that had some heroes’ default weapon appearing locked behind competitive points.\n- Hero Mastery - Fixed a bug with replays where only the bookmarks of the first run could be selected.\n- Fixed a bug that prevented players from being able to thank each other.\n- Fixed a bug that caused the multi-kill voice over to fail to play.",
      "dev": null
     },
     {
      "title": "HEROES",
-     "body": "Junkrat Fixed a bug with Concussion Mine that allowed Junkrat to launch off of it when placed behind a wall.",
+     "body": "Junkrat\n\n- Fixed a bug with Concussion Mine that allowed Junkrat to launch off of it when placed behind a wall.",
      "dev": null
     }
    ]
   }
  ],
  "raw_text": null,
- "hash": "sha256:b9e5dc536a586822277377848019498b827e3291ab2b35e1c7c76a3ce4607edf"
+ "hash": "sha256:d8542f80ad542545274bd2e9adf2f918889a7d019936d140a6a2fdec1b17cdfb"
 }

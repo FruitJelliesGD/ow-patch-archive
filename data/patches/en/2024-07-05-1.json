@@ -10,7 +10,7 @@
    "type": "generic_update",
    "title": "OVERWATCH 2 X TRANSFORMERS",
    "role": null,
-   "description": "Join the epic battle between the AUTOBOTS and DECEPTICONS with Optimus Prime as Reinhardt, Megatron as Ramattra, Bumblebee as Bastion, and Arcee as Illari. Pick up these limited-time skins in the in-game Premium Shop today. You can also play now through July 22 to collect new Player Icons, Name Cards, and Titles in a series of limited-time challenges to show your allegiance to the AUTOBOTS or the DECEPTICONS. TRANSFORMERS and its associated characters are trademarks of Hasbro and are used with permission. © 2024 Hasbro. All Rights Reserved.",
+   "description": "Join the epic battle between the AUTOBOTS and DECEPTICONS with Optimus Prime as Reinhardt, Megatron as Ramattra, Bumblebee as Bastion, and Arcee as Illari. Pick up these limited-time skins in the in-game Premium Shop today. You can also play now through July 22 to collect new Player Icons, Name Cards, and Titles in a series of limited-time challenges to show your allegiance to the AUTOBOTS or the DECEPTICONS.\n\nTRANSFORMERS and its associated characters are trademarks of Hasbro and are used with permission. © 2024 Hasbro. All Rights Reserved.",
    "heroes": [],
    "blocks": []
   },
@@ -58,7 +58,7 @@
    "blocks": [
     {
      "title": "GENERAL",
-     "body": "Armor flat damage reduction increased from 5 to 10 per projectile. Enemy health bars now display when they are at their Low Health threshold.",
+     "body": "- Armor flat damage reduction increased from 5 to 10 per projectile.\n- Enemy health bars now display when they are at their Low Health threshold.",
      "dev": "Developer Comments: The armor changes have had a positive impact on which heroes and damage types are slowed down by armor health. We're increasing the damage reduction on it to further widen the pool of heroes that are significantly affected by armor's defense."
     }
    ]
@@ -67,13 +67,14 @@
    "type": "hero_update",
    "title": "TANKS",
    "role": null,
-   "description": "Tank Role Passive Ultimate generation reduction increased from 30 to 40%. Knockback resistance reduced from 50 to 40%.",
+   "description": "Tank Role Passive\n\n- Ultimate generation reduction increased from 30 to 40%.\n- Knockback resistance reduced from 50 to 40%.",
    "heroes": [
     {
      "slug": "d-va",
      "name_en": "D.Va",
      "name_cn": "D.Va",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e69a3d819fd46d0dcd1d9474c248a95e69519c20077c60e9de73a1e2d3acdbb6.png",
      "dev_note": "Developer Comment: The maximum duration of Defense Matrix is increased by half a second by reducing the rate at which the resource meter drains when in use, so it won't take longer to regenerate. The increased damage on Micro Missiles will help the ability feel relatively more impactful against larger health pools.",
      "general": [],
      "perks": [],
@@ -82,17 +83,18 @@
        "name_en": "Defense Matrix",
        "name_cn": "防御矩阵",
        "slug": "defense-matrix",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2713a8ef6742f4009da072d66d382eb8ff3dd8e00828deadb5af1a93b0d8ce4b.png",
        "changes": [
         {
          "text_en": "Maximum duration increased from 3 to 3.5 seconds.",
          "text_cn": null,
          "before": 3.0,
          "after": 3.5,
-         "metric": "maximum duration",
          "by": 0.5,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "maximum duration"
+         "metric": "maximum duration",
+         "raw_metric": "maximum duration",
+         "unit": null
         }
        ]
       },
@@ -100,17 +102,18 @@
        "name_en": "Micro Missiles",
        "name_cn": "微型飞弹",
        "slug": "micro-missiles",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1787326d46d04aa10872fc30fe512ab3575781735110dfb178ff38da352facb7.png",
        "changes": [
         {
          "text_en": "Explosion damage increased from 4 to 5.5 damage (from 126 to 153 max damage with direct impacts).",
          "text_cn": null,
          "before": 4.0,
          "after": 5.5,
-         "metric": "explosion damage",
          "by": 1.5,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "explosion damage"
+         "metric": "explosion damage",
+         "raw_metric": "explosion damage",
+         "unit": null
         }
        ]
       }
@@ -121,6 +124,7 @@
      "name_en": "Doomfist",
      "name_cn": "末日铁拳",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/bc538b345188bdcb2d2be5b2894d471ba54aeea53b03862429205ed49d693bbe.png",
      "dev_note": "Developer Comments: Most of Doomfist's survivability is through his excellent mobility, but this boost to his passive Overhealth generation will enable him to stay in the fight longer before disengaging, especially when hitting multiple targets with his abilities.",
      "general": [],
      "perks": [],
@@ -129,28 +133,29 @@
        "name_en": "The Best Defense",
        "name_cn": "最佳防守……",
        "slug": "the-best-defense",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e60ad8d06a44f829f6110b528751d2e5a1840e0a72bed4a9c848970ba6ebae80.png",
        "changes": [
         {
          "text_en": "Overhealth gained per target increased from 35 to 40 HP.",
          "text_cn": null,
          "before": 35.0,
          "after": 40.0,
-         "metric": "overhealth",
          "by": 5.0,
          "by_pct": null,
-         "unit": "hp",
-         "raw_metric": "overhealth gained per target"
+         "metric": "overhealth",
+         "raw_metric": "overhealth gained per target",
+         "unit": "hp"
         },
         {
          "text_en": "Delay before Overhealth begins to drain increased from 1 to 3 seconds.",
          "text_cn": null,
          "before": 1.0,
          "after": 3.0,
-         "metric": "delay before overhealth begins to drain",
          "by": 2.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "delay before overhealth begins to drain"
+         "metric": "delay before overhealth begins to drain",
+         "raw_metric": "delay before overhealth begins to drain",
+         "unit": null
         }
        ]
       }
@@ -161,6 +166,7 @@
      "name_en": "Junker Queen",
      "name_cn": "渣客女王",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/cf66adfac58a0321ec1f7d3a7241d6bf2f3b311707064d2f0ace2e3f4e342727.png",
      "dev_note": "Developer Comments: Junker Queen is relatively small and fast for a Tank hero, so Commanding Shout doesn't need a ton of bonus health to be effective. The increased wound healing better rewards her for managing her abilities well.",
      "general": [],
      "perks": [],
@@ -169,17 +175,18 @@
        "name_en": "Commanding Shout",
        "name_cn": "命令怒吼",
        "slug": "commanding-shout",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1809c57884dafcfd1aab89eb80d2ad8fe0c64ce0036646a3e19c05f48c322c9d.png",
        "changes": [
         {
          "text_en": "Overhealth increased from 150 to 175 HP",
          "text_cn": null,
          "before": 150.0,
          "after": 175.0,
-         "metric": "overhealth",
          "by": 25.0,
          "by_pct": null,
-         "unit": "hp",
-         "raw_metric": "overhealth"
+         "metric": "overhealth",
+         "raw_metric": "overhealth",
+         "unit": "hp"
         }
        ]
       },
@@ -187,17 +194,18 @@
        "name_en": "Adrenaline Rush",
        "name_cn": "狂血奔涌",
        "slug": "adrenaline-rush",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e1706243e4996af6844e7f8233bbd3f98f04583a223cd3ad926d40ef6c4c8557.png",
        "changes": [
         {
          "text_en": "Wound damage self-healing multiplier increased from 2 to 2.5x",
          "text_cn": null,
          "before": 2.0,
          "after": 2.5,
-         "metric": "wound damage self-healing multiplier",
          "by": 0.5,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "wound damage self-healing multiplier"
+         "metric": "wound damage self-healing multiplier",
+         "raw_metric": "wound damage self-healing multiplier",
+         "unit": null
         }
        ]
       }
@@ -208,6 +216,7 @@
      "name_en": "Mauga",
      "name_cn": "毛加",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6dbd80a0b40bd0464db35948f98d91ecc6dfcede8c94ff9b1ecefda781a7aa1f.png",
      "dev_note": "Developer Comments: Cardiac Overdrive is Mauga's primary tanking ability that keeps him in the fight, but the previous duration was difficult to counter. It is now a more potent effect with a shorter duration to increase the importance of choosing both the right moment to use it as Mauga and when to try mitigating against it as an enemy.",
      "general": [],
      "perks": [],
@@ -216,28 +225,29 @@
        "name_en": "Overrun",
        "name_cn": "蛮力冲撞",
        "slug": "overrun",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c23cc1056dcc40fb5976f3987181b7a46406a0a133f1e95b9b1db11d36253363.png",
        "changes": [
         {
          "text_en": "Knockback damage increased from 25 to 30",
          "text_cn": null,
          "before": 25.0,
          "after": 30.0,
-         "metric": "knockback",
          "by": 5.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "knockback damage"
+         "metric": "knockback",
+         "raw_metric": "knockback damage",
+         "unit": null
         },
         {
          "text_en": "Stomp damage increased from 60 to 75",
          "text_cn": null,
          "before": 60.0,
          "after": 75.0,
-         "metric": "stomp damage",
          "by": 15.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "stomp damage"
+         "metric": "stomp damage",
+         "raw_metric": "stomp damage",
+         "unit": null
         }
        ]
       },
@@ -245,50 +255,51 @@
        "name_en": "Cardiac Overdrive",
        "name_cn": "心脏过载",
        "slug": "cardiac-overdrive",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1d19c61b479c82bbdd8ed645ccdec54e16431409d3c8a56b27376c7f8630ec9c.png",
        "changes": [
         {
          "text_en": "Duration reduced from 5 to 3 seconds.",
          "text_cn": null,
          "before": 5.0,
          "after": 3.0,
-         "metric": "duration",
          "by": -2.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "duration"
+         "metric": "duration",
+         "raw_metric": "duration",
+         "unit": "s"
         },
         {
          "text_en": "Lifesteal increased from 60 to 100%.",
          "text_cn": null,
          "before": 60.0,
          "after": 100.0,
-         "metric": "lifesteal",
          "by": 40.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "lifesteal"
+         "metric": "lifesteal",
+         "raw_metric": "lifesteal",
+         "unit": null
         },
         {
          "text_en": "Damage reduction increased from 30 to 40%.",
          "text_cn": null,
          "before": 30.0,
          "after": 40.0,
-         "metric": "damage",
          "by": 10.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "damage reduction"
+         "metric": "damage",
+         "raw_metric": "damage reduction",
+         "unit": null
         },
         {
          "text_en": "Allies now receive only half of the lifesteal and damage reduction effect value.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -299,6 +310,7 @@
      "name_en": "Orisa",
      "name_cn": "奥丽莎",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/20c12a10cfe0b5608f9eec63a74ecb0ccd18a114019bc77bb2765f87776e17ed.png",
      "dev_note": "Developer Comments: The Fortify and Javelin Spin abilities were weakened further than necessary when Orisa was overly dominant. She has not been performing well since then but in this patch where we're broadly adjusting how impactful the role is. So, there is room again to return some of Fortify's effectiveness.",
      "general": [],
      "perks": [],
@@ -307,17 +319,18 @@
        "name_en": "Fortify",
        "name_cn": "强固防御",
        "slug": "fortify",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d697fa90726cf683222920822d2ee00a85e0420c6cbc6ec2365573f313d06357.png",
        "changes": [
         {
          "text_en": "Duration increased from 3.5 to 4 seconds",
          "text_cn": null,
          "before": 3.5,
          "after": 4.0,
-         "metric": "duration",
          "by": 0.5,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "duration"
+         "metric": "duration",
+         "raw_metric": "duration",
+         "unit": "s"
         }
        ]
       }
@@ -328,6 +341,7 @@
      "name_en": "Ramattra",
      "name_cn": "拉玛刹",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/cf69d4bfa61ac14f61d3d541b0d2687a20fa24f55afe7a392d746f5ccb138dea.png",
      "dev_note": "Developer Comments: The Pummel damage adjustment is notable as it reduces the number of punches required to knockout a 250 health hero.",
      "general": [],
      "perks": [],
@@ -336,17 +350,18 @@
        "name_en": "Nemesis Form",
        "name_cn": null,
        "slug": "nemesis-form",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5a9818afe979474cd23a8a3863522be14ae549df841a6a7efc9ed5398f3d692f.png",
        "changes": [
         {
          "text_en": "Bonus armor increased from 225 to 300.",
          "text_cn": null,
          "before": 225.0,
          "after": 300.0,
-         "metric": "bonus armor",
          "by": 75.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "bonus armor"
+         "metric": "bonus armor",
+         "raw_metric": "bonus armor",
+         "unit": null
         }
        ]
       },
@@ -354,17 +369,18 @@
        "name_en": "Pummel",
        "name_cn": null,
        "slug": "pummel",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1dd2e8ea208e8a79def7852a422924c0c5f791ee7f09a0541240271bd3ecb0e7.png",
        "changes": [
         {
          "text_en": "Pummel damage increased from 60 to 65.",
          "text_cn": null,
          "before": 60.0,
          "after": 65.0,
-         "metric": "pummel damage",
          "by": 5.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "pummel damage"
+         "metric": "pummel damage",
+         "raw_metric": "pummel damage",
+         "unit": null
         }
        ]
       }
@@ -375,6 +391,7 @@
      "name_en": "Reinhardt",
      "name_cn": "莱因哈特",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b5e3a4f5629a3acfd47b5d2e695e79ea964b060bf67b7e4f8f15e63accd5f934.png",
      "dev_note": "Developer Comments: One of the core design goals for Reinhardt is to be the hero that shields his team. In the past we've reduced the barrier health significantly in order to improve other offensive aspects of his kit to better fit the fast-paced gameplay of Overwatch 2, but perhaps it was too much. We still want to avoid barriers feeling mandatory due to how useful they can be and keep tank diversity at a healthy level. However, with this patch looking at the tank role in particular, we're increasing Reinhardt's barrier health again and will evaluate further.",
      "general": [],
      "perks": [],
@@ -383,28 +400,29 @@
        "name_en": "Barrier Field",
        "name_cn": "屏障力场",
        "slug": "barrier-field",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/121f13903665417446ee4673d9740080a3bc117e285cf3dcf6547861a0bc7d43.png",
        "changes": [
         {
          "text_en": "Maximum health increased from 1400 to 1600.",
          "text_cn": null,
          "before": 1400.0,
          "after": 1600.0,
-         "metric": "maximum health",
          "by": 200.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "maximum health"
+         "metric": "maximum health",
+         "raw_metric": "maximum health",
+         "unit": null
         },
         {
          "text_en": "Barrier regeneration rate increased from 140 to 160 health per second.",
          "text_cn": null,
          "before": 140.0,
          "after": 160.0,
-         "metric": "barrier",
          "by": 20.0,
          "by_pct": null,
-         "unit": "hp",
-         "raw_metric": "barrier regeneration rate"
+         "metric": "barrier",
+         "raw_metric": "barrier regeneration rate",
+         "unit": "hp"
         }
        ]
       },
@@ -412,17 +430,18 @@
        "name_en": "Charge",
        "name_cn": "冲锋",
        "slug": "charge",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/40c9f1c060033e58120c9ec174008b8f5d833412923f7f351a32e5df47fe8166.png",
        "changes": [
         {
          "text_en": "Wall impact damage increased from 275 to 300.",
          "text_cn": null,
          "before": 275.0,
          "after": 300.0,
-         "metric": "wall impact damage",
          "by": 25.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "wall impact damage"
+         "metric": "wall impact damage",
+         "raw_metric": "wall impact damage",
+         "unit": null
         }
        ]
       }
@@ -433,6 +452,7 @@
      "name_en": "Roadhog",
      "name_cn": "路霸",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b6f4e837dc41e87d730f6b0fad3473e689c8bdcd1f732b97326ac08b0508f2ee.png",
      "dev_note": "Developer Comments: The Pig Pen ability wasn't very useful outside of being used in the Chain Hook combo so we're increasing its potential threat if an enemy stays within its area.",
      "general": [],
      "perks": [],
@@ -441,39 +461,40 @@
        "name_en": "Pig Pen",
        "name_cn": null,
        "slug": "pig-pen",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0150c28fe47ff4a7c16138266bf2b4903bd45e4b7770ab40572bb792b647838c.png",
        "changes": [
         {
          "text_en": "Area damage after activating increased from 30 to 45 damage per second.",
          "text_cn": null,
          "before": 30.0,
          "after": 45.0,
-         "metric": "area damage after activating",
          "by": 15.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "area damage after activating"
+         "metric": "area damage after activating",
+         "raw_metric": "area damage after activating",
+         "unit": null
         },
         {
          "text_en": "Recovery time reduced from 0.55 to 0.4 seconds.",
          "text_cn": null,
          "before": 0.55,
          "after": 0.4,
-         "metric": "recovery",
          "by": -0.15,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "recovery time"
+         "metric": "recovery",
+         "raw_metric": "recovery time",
+         "unit": "s"
         },
         {
          "text_en": "Cooldown now begins immediately when used instead of after a short delay.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -484,6 +505,7 @@
      "name_en": "Sigma",
      "name_cn": "西格玛",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9738e1687bf7064de3667169788ef1b5ea9cf1746a42753c767cf17c7cb67547.png",
      "dev_note": "Developer Comments: Sigma is a tank that does not currently have an issue with survivability when cycling between managing his barrier, Kinetic Grasp, and weapon range. We are however increasing the damage of Accretion to bring back more of the threat it used to pose and increase the satisfaction in landing it, as it also did not benefit from the global increase to projectile sizes.",
      "general": [],
      "perks": [],
@@ -492,17 +514,18 @@
        "name_en": "Accretion",
        "name_cn": "质量吸附",
        "slug": "accretion",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/594b0ecbb34b41b288c08bc7b040b273f25289ef0afc2d00828d6a30a0687236.png",
        "changes": [
         {
          "text_en": "Impact damage increased from 40 to 80 (120 damage total).",
          "text_cn": null,
          "before": 40.0,
          "after": 80.0,
-         "metric": "impact damage",
          "by": 40.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "impact damage"
+         "metric": "impact damage",
+         "raw_metric": "impact damage",
+         "unit": null
         }
        ]
       }
@@ -513,6 +536,7 @@
      "name_en": "Winston",
      "name_cn": "温斯顿",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6a9a37012551410b46b2c28146404354fe21e4a1e8ea65db4e1e497eeaa05c71.png",
      "dev_note": "Developer Comments: Winston is one of the top performing tanks at the moment, though when considering how satisfying the individual abilities within his kit are, the Tesla Cannon secondary fire felt underwhelming for how long it took to charge, so it'll now be a bit more fluid. We also still want Primal Rage mode Winston to be killable, but adding some health to it will help avoid some of the extreme situations where it could happen too quickly.",
      "general": [],
      "perks": [],
@@ -521,17 +545,18 @@
        "name_en": "Tesla Cannon",
        "name_cn": "特斯拉炮",
        "slug": "tesla-cannon",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/050de92c7ce31e42368c796d9c246210a40bb1bd4a5273b2d64d8a980e1f9f9a.png",
        "changes": [
         {
          "text_en": "Secondary fire charge time reduced from 1 second to 0.85 seconds.",
          "text_cn": null,
          "before": 1.0,
          "after": 0.85,
-         "metric": "secondary fire charge time",
          "by": -0.15,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "secondary fire charge time"
+         "metric": "secondary fire charge time",
+         "raw_metric": "secondary fire charge time",
+         "unit": "s"
         }
        ]
       },
@@ -539,17 +564,18 @@
        "name_en": "Primal Rage",
        "name_cn": "原始暴怒",
        "slug": "primal-rage",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/685608721cb914e0412a090eb1e89c0f5d10edfb3dbc34218ba3acd35611c990.png",
        "changes": [
         {
          "text_en": "Maximum health gained increased from 500 to 700.",
          "text_cn": null,
          "before": 500.0,
          "after": 700.0,
-         "metric": "maximum health gained",
          "by": 200.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "maximum health gained"
+         "metric": "maximum health gained",
+         "raw_metric": "maximum health gained",
+         "unit": null
         }
        ]
       }
@@ -560,6 +586,7 @@
      "name_en": "Wrecking Ball",
      "name_cn": "破坏球",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f71d6948e8b6ae340e20ab569ef66d24aead6032c34a7ec09a00ea864b413a24.png",
      "dev_note": "Developer Comments: Wrecking Ball has excellent mobility and survivability and will now be more efficient in transferring some of that survivability to his teammates, should he choose to return to them. We're also making the automatic reload in ball form match his manual reload timing for a smoother transition between modes.",
      "general": [],
      "perks": [],
@@ -568,17 +595,18 @@
        "name_en": "Quad Cannons",
        "name_cn": null,
        "slug": "quad-cannons",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/12339775bfc5bfb8a4ad735a2eef452992e90f5374d341baf09f19bc9968147a.png",
        "changes": [
         {
          "text_en": "Automatic reload time while transformed reduced from 2 to 1.6 seconds.",
          "text_cn": null,
          "before": 2.0,
          "after": 1.6,
-         "metric": "automatic reload time while transformed",
          "by": -0.4,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "automatic reload time while transformed"
+         "metric": "automatic reload time while transformed",
+         "raw_metric": "automatic reload time while transformed",
+         "unit": null
         }
        ]
       },
@@ -586,17 +614,18 @@
        "name_en": "Adaptive Shield",
        "name_cn": null,
        "slug": "adaptive-shield",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/fa65af9c692405f968fafbeedcdfc9092b38a050dc3562bd41280390ccd7a21d.png",
        "changes": [
         {
          "text_en": "Allied Overhealth transfer ratio increased by 50% (Use up to 50 Overhealth per target to grant allies up to 75 HP).",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": "allied overhealth transfer ratio",
          "by": null,
          "by_pct": 50.0,
-         "unit": null,
-         "raw_metric": "allied overhealth transfer ratio"
+         "metric": "allied overhealth transfer ratio",
+         "raw_metric": "allied overhealth transfer ratio",
+         "unit": null
         }
        ]
       }
@@ -607,6 +636,7 @@
      "name_en": "Zarya",
      "name_cn": "查莉娅",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d43075cba10cd711a129556142849587e78f1f55b0105d39a640da53ffa64e1b.png",
      "dev_note": "Developer Comments: Increasing the health on these barriers also means the total energy Zarya can gain per barrier is increased, so this is a boost to both her offensive and defensive capabilities.",
      "general": [],
      "perks": [],
@@ -615,28 +645,29 @@
        "name_en": "Particle Barrier",
        "name_cn": null,
        "slug": "particle-barrier",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2d462e28ae2fc60b3ef9c32702bbc88936885dd7d20746a31dd2e3c51c20f199.png",
        "changes": [
         {
          "text_en": "Health increased from 200 to 225.",
          "text_cn": null,
          "before": 200.0,
          "after": 225.0,
-         "metric": "health",
          "by": 25.0,
          "by_pct": null,
-         "unit": "hp",
-         "raw_metric": "health"
+         "metric": "health",
+         "raw_metric": "health",
+         "unit": "hp"
         },
         {
          "text_en": "Duration increased from 2 to 2.5 seconds.",
          "text_cn": null,
          "before": 2.0,
          "after": 2.5,
-         "metric": "duration",
          "by": 0.5,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "duration"
+         "metric": "duration",
+         "raw_metric": "duration",
+         "unit": "s"
         }
        ]
       },
@@ -644,28 +675,29 @@
        "name_en": "Projected Barrier",
        "name_cn": "投射屏障",
        "slug": "projected-barrier",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6e42984ee8329a50e9c2460ae2df7670d7be9846a093c336e4576d1eea1fb2f1.png",
        "changes": [
         {
          "text_en": "Health increased from 200 to 225.",
          "text_cn": null,
          "before": 200.0,
          "after": 225.0,
-         "metric": "health",
          "by": 25.0,
          "by_pct": null,
-         "unit": "hp",
-         "raw_metric": "health"
+         "metric": "health",
+         "raw_metric": "health",
+         "unit": "hp"
         },
         {
          "text_en": "Duration increased from 2 to 2.5 seconds.",
          "text_cn": null,
          "before": 2.0,
          "after": 2.5,
-         "metric": "duration",
          "by": 0.5,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "duration"
+         "metric": "duration",
+         "raw_metric": "duration",
+         "unit": "s"
         }
        ]
       }
@@ -678,13 +710,14 @@
    "type": "hero_update",
    "title": "Damage",
    "role": "damage",
-   "description": "Damage Role Passive Now only half as effective against Tank heroes (10% healing reduction).",
+   "description": "Damage Role Passive\n\n- Now only half as effective against Tank heroes (10% healing reduction).",
    "heroes": [
     {
      "slug": "ashe",
      "name_en": "Ashe",
      "name_cn": "艾什",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e41d918d0e7ffa772b5571df3d0dc1a05e6d9032307f78be935972cfd59f208a.png",
      "dev_note": "Developer Comments: This Big Omnic Butler tanks a lot of incoming fire and will now be more resistant to knockbacks and critical damage.",
      "general": [],
      "perks": [],
@@ -693,17 +726,18 @@
        "name_en": "B.O.B.",
        "name_cn": "召唤鲍勃",
        "slug": "b-o-b",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e788b12d476e896dac3831bbc0842fb3b4d07a89b3c337959d9a6cd6ea5a7df5.png",
        "changes": [
         {
          "text_en": "B.O.B. now gains the Tank role passive ability.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -714,6 +748,7 @@
      "name_en": "Cassidy",
      "name_cn": "卡西迪",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8d161c49df5a962ece9ceafc6500bea473d9dd3695b9e24e39d5be616295e6c5.png",
      "dev_note": "Developer Comments: With his current tuning Cassidy is performing well in too many aspects between his range, burst damage, and survivability, leading to him being a dominant choice among the Damage heroes by an overwhelming amount. The gameplay goal for Cassidy is to be the sturdier, close-range hitscan who is more proficient at dealing with high mobility flankers. With this in mind, we're pulling back the effective falloff range of his weapon to help align him with those gameplay goals and to open up more hero variety from the Damage role.",
      "general": [],
      "perks": [],
@@ -722,17 +757,18 @@
        "name_en": "Peacekeeper",
        "name_cn": "维和者",
        "slug": "peacekeeper",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/afb27d71eeb6f3635ac1ff236c7b3f9e3c6d017360ce022d5d384288ff95bce7.png",
        "changes": [
         {
          "text_en": "Primary fire falloff range rescaled from 25-35 meters to 20-30 meters.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -743,6 +779,7 @@
      "name_en": "Pharah",
      "name_cn": "法老之鹰",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/93d639075993fdef3402aa9131f93be7789a33a11dc0099f2f88d22dda09c175.png",
      "dev_note": "Developer Comments: This is a reversion back to Pharah's Concussive Blast from before her recent rework. Dealing even a small amount of damage with this ability increases her lethality significantly and made it too reliable in finishing off low health targets, due to its wide area and fast projectile speed, without waiting the full recovery to fire another rocket.",
      "general": [],
      "perks": [],
@@ -751,39 +788,40 @@
        "name_en": "Concussive Blast",
        "name_cn": "震荡冲击",
        "slug": "concussive-blast",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9747b440730824756ae2d17e4d1f38468f36c985c35f56cf1f175a613279479a.png",
        "changes": [
         {
          "text_en": "Explosion damage reduced from 30 to 0.",
          "text_cn": null,
          "before": 30.0,
          "after": 0.0,
-         "metric": "explosion damage",
          "by": -30.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "explosion damage"
+         "metric": "explosion damage",
+         "raw_metric": "explosion damage",
+         "unit": null
         },
         {
          "text_en": "Explosion knockback radius increased from 6 to 8 meters.",
          "text_cn": null,
          "before": 6.0,
          "after": 8.0,
-         "metric": "explosion knockback radius",
          "by": 2.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "explosion knockback radius"
+         "metric": "explosion knockback radius",
+         "raw_metric": "explosion knockback radius",
+         "unit": null
         },
         {
          "text_en": "Knockback increased by 11%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": "knockback",
          "by": null,
          "by_pct": 11.0,
-         "unit": null,
-         "raw_metric": "knockback"
+         "metric": "knockback",
+         "raw_metric": "knockback",
+         "unit": null
         }
        ]
       }
@@ -803,6 +841,7 @@
      "name_en": "Ana",
      "name_cn": "安娜",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/86debddbaaaf8699d68775a9dbffaf5b8db514772b77ff7234b1ff84c0b29fd5.png",
      "dev_note": "Developer Comments: Rather small change here but we'd like to minimize the amount of time Tanks can be taken out of the fight for and they are also the easiest targets to hit with Sleep Dart.",
      "general": [],
      "perks": [],
@@ -811,17 +850,18 @@
        "name_en": "Sleep Dart",
        "name_cn": "麻醉镖",
        "slug": "sleep-dart",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/20707fd82265412fdc6d2353daa88ec7558cd71c89aa3ac6cf0e78bbbfcabd80.png",
        "changes": [
         {
          "text_en": "Duration of effect on Tank heroes decreased from 3.5 to 3 seconds.",
          "text_cn": null,
          "before": 3.5,
          "after": 3.0,
-         "metric": "duration",
          "by": -0.5,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "duration of effect on tank heroes"
+         "metric": "duration",
+         "raw_metric": "duration of effect on tank heroes",
+         "unit": "s"
         }
        ]
       }
@@ -832,6 +872,7 @@
      "name_en": "Illari",
      "name_cn": "伊拉锐",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f33f6fe94ad55fcf9027e779f66afac358a2f93651070b95cd565ff90d670c8b.png",
      "dev_note": "Developer Comments: Illari will still see this UI alert but allies generally don't need to as it could occur fairly often and be distracting.",
      "general": [],
      "perks": [],
@@ -840,17 +881,18 @@
        "name_en": "Healing Pylon",
        "name_cn": "治疗光塔",
        "slug": "healing-pylon",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/03b7303b1480cad458afd46b746f6f0ad55dde473063c93afeef250f6679d214.png",
        "changes": [
         {
          "text_en": "Allies no longer see the \"Destroyed\" UI when Healing Pylon breaks.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -861,6 +903,7 @@
      "name_en": "Zenyatta",
      "name_cn": "禅雅塔",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9367143a32f3fc07781330a0b26c6f1087361204a2b7e4088d1daf26428273f2.png",
      "dev_note": "Developer Comments: We're reducing the cost of Transcendence as Zenyatta was impacted more than most by some of the changes in this patch.",
      "general": [],
      "perks": [],
@@ -869,17 +912,18 @@
        "name_en": "Transcendence",
        "name_cn": null,
        "slug": "transcendence",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6ac5d4f08023cafc9f5412e45141cddecfdb2cb43ecf8415c12d1d161cce4678.png",
        "changes": [
         {
          "text_en": "Ultimate cost decreased 10%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": "ultimate_cost",
          "by": null,
          "by_pct": 10.0,
-         "unit": null,
-         "raw_metric": "ultimate cost"
+         "metric": "ultimate_cost",
+         "raw_metric": "ultimate cost",
+         "unit": null
         }
        ]
       }
@@ -897,17 +941,17 @@
    "blocks": [
     {
      "title": "General",
-     "body": "Fixed ranked progress bar UI not showing progress for Bronze 5. Fixed voice and text chat not functioning on PC with console players. Fixed in a previous update - Weekly and Daily Challenges would get reset to 0 after relog for some players. Fixed in a previous update - Screen tearing on PlayStation® 5 during large fights. Fixed in a previous update - Season 11 Voice Lines could be heard by anyone at any distance.",
+     "body": "- Fixed ranked progress bar UI not showing progress for Bronze 5.\n- Fixed voice and text chat not functioning on PC with console players.\n- Fixed in a previous update - Weekly and Daily Challenges would get reset to 0 after relog for some players.\n- Fixed in a previous update - Screen tearing on PlayStation® 5 during large fights.\n- Fixed in a previous update - Season 11 Voice Lines could be heard by anyone at any distance.",
      "dev": null
     },
     {
      "title": "Heroes",
-     "body": "Cassidy Fixed Deadeye tracking phased targets when revealed by Infra Sight. D.Va Fixed an issue with Self Destruct hitting targets behind barriers or collision. Kiriko Fixed teleporting to Echo as clone ends making the \"Swift Step\" ability to break for the remainder of the game. Lifeweaver Fixed an exploit with Lifeweaver tree hiding Symmetra turrets in the payload. Roadhog Fixed Roadhog's weapon model/placement being largely higher wearing 'Kaiju' skin.",
+     "body": "Cassidy\n\n- Fixed Deadeye tracking phased targets when revealed by Infra Sight.\n\nD.Va\n\n- Fixed an issue with Self Destruct hitting targets behind barriers or collision.\n\nKiriko\n\n- Fixed teleporting to Echo as clone ends making the \"Swift Step\" ability to break for the remainder of the game.\n\nLifeweaver\n\n- Fixed an exploit with Lifeweaver tree hiding Symmetra turrets in the payload.\n\nRoadhog\n\n- Fixed Roadhog's weapon model/placement being largely higher wearing 'Kaiju' skin.",
      "dev": null
     }
    ]
   }
  ],
  "raw_text": null,
- "hash": "sha256:5d2a8bd8e51c11fc54348b07eadb7c9970aa0a0b8202048b07c75db6b954620a"
+ "hash": "sha256:203ddf56796a41d27396fb7341819c957b42d581aa7d0141b080fc885abd8fec"
 }

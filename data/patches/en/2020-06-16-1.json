@@ -10,7 +10,7 @@
    "type": "generic_update",
    "title": null,
    "role": null,
-   "description": "To share your feedback, please post in the General Discussion forum. For a list of known issues, visit our Bug Report forum. For troubleshooting assistance, visit our Technical Support forum.",
+   "description": "- To share your feedback, please post in the General Discussion forum.\n- For a list of known issues, visit our Bug Report forum.\n- For troubleshooting assistance, visit our Technical Support forum.",
    "heroes": [],
    "blocks": []
   },
@@ -40,7 +40,7 @@
    "type": "generic_update",
    "title": "Competitive Updates",
    "role": null,
-   "description": "Competitive Open Queue Season 2 has begun! Find this game mode within the Arcade for roughly two weeks. This mode will use standard Competitive Play rules, but will have no role restrictions or role queues.",
+   "description": "- Competitive Open Queue Season 2 has begun! Find this game mode within the Arcade for roughly two weeks. This mode will use standard Competitive Play rules, but will have no role restrictions or role queues.",
    "heroes": [],
    "blocks": []
   },
@@ -55,6 +55,7 @@
      "name_en": "Echo",
      "name_cn": "回声",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ce8aec64726308d50cc0e4656d9bfe7647b886cc23830e0c80439cb92bfbdbcc.png",
      "dev_note": "Focusing Beam felt slightly too long-ranged given how lethal it has the potential to be. Echo may have to get a bit closer to utilize the ability but certainly has the mobility to do so.",
      "general": [],
      "perks": [],
@@ -63,17 +64,18 @@
        "name_en": "Focusing Beam",
        "name_cn": "聚焦光线",
        "slug": "focusing-beam",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6552feeb85a32ae7131df50f61a9c0fa24bf347bf007e208a356a940561129ae.png",
        "changes": [
         {
          "text_en": "Range reduced from 20 to 16 meters",
          "text_cn": null,
          "before": 20.0,
          "after": 16.0,
-         "metric": "range",
          "by": -4.0,
          "by_pct": null,
-         "unit": "m",
-         "raw_metric": "range"
+         "metric": "range",
+         "raw_metric": "range",
+         "unit": "m"
         }
        ]
       }
@@ -84,6 +86,7 @@
      "name_en": "Genji",
      "name_cn": "源氏",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/765cd44aab948bd53082079dfdcf3ce967e8786cf26e4505b797b092c1e6478e.png",
      "dev_note": "We're looking to strengthen Genji's close-range combat effectiveness to help solidify his viability as a mobile burst-damage hero. We'll keep a close eye on his overall power as we're increasing both the flexibility of Deflect and improving the shuriken damage consistency at the same time.",
      "general": [],
      "perks": [],
@@ -92,28 +95,29 @@
        "name_en": "Shuriken",
        "name_cn": "气",
        "slug": "shuriken",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8d0916035141abd9ab2bf72dbcfd0460b7a0019529e023d259ad4340890b34b3.png",
        "changes": [
         {
          "text_en": "Damage increased from 28 to 30",
          "text_cn": null,
          "before": 28.0,
          "after": 30.0,
-         "metric": "damage",
          "by": 2.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "damage"
+         "metric": "damage",
+         "raw_metric": "damage",
+         "unit": null
         },
         {
          "text_en": "Spread reduced from 12 to 9",
          "text_cn": null,
          "before": 12.0,
          "after": 9.0,
-         "metric": "spread",
          "by": -3.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "spread"
+         "metric": "spread",
+         "raw_metric": "spread",
+         "unit": null
         }
        ]
       },
@@ -121,28 +125,29 @@
        "name_en": "Deflect",
        "name_cn": "闪",
        "slug": "deflect",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9e46bda733749ddd6512b61c021b4487b6201338a9ff39c716e4ee06e5d63a58.png",
        "changes": [
         {
          "text_en": "Duration increased from 1.5 to 2 seconds",
          "text_cn": null,
          "before": 1.5,
          "after": 2.0,
-         "metric": "duration",
          "by": 0.5,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "duration"
+         "metric": "duration",
+         "raw_metric": "duration",
+         "unit": "s"
         },
         {
          "text_en": "Can now be cancelled manually",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -153,6 +158,7 @@
      "name_en": "Hanzo",
      "name_cn": "半藏",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/871d02150e9b67af02795b137ffc5133c1ff8a2a8d66340ca939f6216a539c9c.png",
      "dev_note": "The previous combination of changes to the projectile speed and the damage of Storm Arrows impacted Hanzo more than intended so we're reverting the Storm Arrow damage back its previous value.",
      "general": [],
      "perks": [],
@@ -161,17 +167,18 @@
        "name_en": "Storm Arrow",
        "name_cn": "岚",
        "slug": "storm-arrow",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/92c56621ba267d94f16baacda3f10ba7777b475935981b02e5026449d8e3d79c.png",
        "changes": [
         {
          "text_en": "Damage increased from 60 to 70",
          "text_cn": null,
          "before": 60.0,
          "after": 70.0,
-         "metric": "damage",
          "by": 10.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "damage"
+         "metric": "damage",
+         "raw_metric": "damage",
+         "unit": null
         }
        ]
       }
@@ -182,6 +189,7 @@
      "name_en": "Orisa",
      "name_cn": "奥丽莎",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1f9cf8dd1ea36ba91440be891d79cd97bd4ac2d2e0e409a8eee0c76a4317617a.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -190,17 +198,18 @@
        "name_en": "Halt!",
        "name_cn": "站住！",
        "slug": "halt",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0ccf984506779d8ac96eb75f386fcfd8a781e1b01fcfd42da90343ff75888d33.png",
        "changes": [
         {
          "text_en": "Increased sound effects volume",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -218,12 +227,12 @@
    "blocks": [
     {
      "title": "New Workshop Actions",
-     "body": "Attach Players Detach Players Start Forcing Player Position Stop Forcing Player Position",
+     "body": "- Attach Players\n- Detach Players\n- Start Forcing Player Position\n- Stop Forcing Player Position",
      "dev": null
     },
     {
      "title": "New Workshop Values",
-     "body": "Is In Alternate Form Is Duplicating Hero Being Duplicated The Attach Players action allows one player to become stuck to another with a given offset, giving players the ability to carry other players around. The Start Forcing Player Position action allows players to be moved around procedurally; this action pairs well with variable chasing actions. The Is In Alternate Form value lets you check for whether D.Va is in pilot form and whether Mercy and Torbjörn have their secondary weapon equipped (as well as a few other transformations). Finally, the Is Duplicating and Hero Being Duplicated values allow you to check Echo’s current status.",
+     "body": "- Is In Alternate Form\n- Is Duplicating\n- Hero Being Duplicated\n\nThe Attach Players action allows one player to become stuck to another with a given offset, giving players the ability to carry other players around. The Start Forcing Player Position action allows players to be moved around procedurally; this action pairs well with variable chasing actions. The Is In Alternate Form value lets you check for whether D.Va is in pilot form and whether Mercy and Torbjörn have their secondary weapon equipped (as well as a few other transformations). Finally, the Is Duplicating and Hero Being Duplicated values allow you to check Echo’s current status.",
      "dev": null
     }
    ]
@@ -237,22 +246,22 @@
    "blocks": [
     {
      "title": "General",
-     "body": "Deathmatch - Fixed a bug where the end of round flow music would not transition properly Fixed a bug in which custom game settings were sometimes being reverted to default between rounds of a Control map or when causing one’s own death while Respawn as Random Hero is active Custom games will no longer shut down due to server load issues when using Mei’s primary fire with a 0% freeze rate Fixed a bug where custom game lobby privacy settings were reset when importing a share code",
+     "body": "- Deathmatch - Fixed a bug where the end of round flow music would not transition properly\n- Fixed a bug in which custom game settings were sometimes being reverted to default between rounds of a Control map or when causing one’s own death while Respawn as Random Hero is active\n- Custom games will no longer shut down due to server load issues when using Mei’s primary fire with a 0% freeze rate\n- Fixed a bug where custom game lobby privacy settings were reset when importing a share code",
      "dev": null
     },
     {
      "title": "Heroes",
-     "body": "Echo Fixed a bug that would allow Reinhardt's Charge to hit Echo when using her Duplicate ability Fixed a bug where Echo would lose her ultimate charge if she dies with her ultimate target confirmation active Fixed a bug with Echo becoming stuck in her Focusing Beam animation Fixed a bug where a cloned hero's communication wheel settings would not copy over properly Mei Fixed a bug that would cause Mei's hat to fall off when using Cryo-Freeze while wearing her Mei-rry skin Fixed a bug with Mei's drone not animating correctly at the end of her Blizzard ultimate ability Sombra Fixed a bug where Sombra could sometimes hack people right as they started an ability that would prevent hacking (i.e. Wraithform, Meteor Strike) Symmetra Fixed a bug where Symmetra Turrets could be placed on certain spawn doors",
+     "body": "Echo\n\n- Fixed a bug that would allow Reinhardt's Charge to hit Echo when using her Duplicate ability\n- Fixed a bug where Echo would lose her ultimate charge if she dies with her ultimate target confirmation active\n- Fixed a bug with Echo becoming stuck in her Focusing Beam animation\n- Fixed a bug where a cloned hero's communication wheel settings would not copy over properly\n\nMei\n\n- Fixed a bug that would cause Mei's hat to fall off when using Cryo-Freeze while wearing her Mei-rry skin\n- Fixed a bug with Mei's drone not animating correctly at the end of her Blizzard ultimate ability\n\nSombra\n\n- Fixed a bug where Sombra could sometimes hack people right as they started an ability that would prevent hacking (i.e. Wraithform, Meteor Strike)\n\nSymmetra\n\n- Fixed a bug where Symmetra Turrets could be placed on certain spawn doors",
      "dev": null
     },
     {
      "title": "Workshop",
-     "body": "Fixed a bug in which restarting a rule that was using the Wait action and then executing the same Wait action on the same frame could cause the action to wait forever Fixed a bug in which using a chased variable for the rate or destination of the Chase action that was modifying it would cause incorrect behavior Fixed a bug in which the final objective of an Assault, Hybrid, or Escort map could be completed when Disable Built-In Game Mode Completion was in effect Fixed a bug in which reaching 100% distance or capture progress on the final objective of an Assault, Hybrid, or Escort map would cause endless beeping if Disable Built-In Game Mode Completion was in effect Fixed a bug which caused the Stop Transforming Throttle action not to work The Is Using Ultimate value now returns true when D.Va is using either of her ultimate abilities The Is Using Ultimate value now returns true for the first few frames of Echo’s ultimate (After the first few frames, check the new Is Duplicating value) The Is Using Ultimate value now returns true for Ashe only while B.O.B. is alive Fixed a bug which caused the Respawn action to stop working for players that had recently been resurrected Fixed rules with Echo as the designated hero not always executing correctly during or after her ultimate Fixed the Is Primary Fire value sometimes returning incorrect values after Winston’s ultimate and during Hanzo’s Storm Arrows ability The Is Using Ability 2 value no longer returns true for Widowmaker if her only existing Venom Mine has been fired off the map Fixed a bug where script error messages remained on screens for certain subroutine errors even after fixing the issue in the editor Fixed a bug preventing Set Objective Description from working when executed prior to the player spawning in Fixed a bug preventing Disable Built-In Game Mode Announcer from working in certain modes Fixed a bug preventing the Damage Over Time effects from occurring when first starting the Molten Floor Workshop Preset Fixed a bug preventing Set Match Time from being able to be used while in Assemble Heroes in CTF Fixed a bug preventing certain abilities from triggering Dealt/Received Knockback Events (Junkrat's self-knockback from Concussive Mine, Doomfist's Rocket Punch, and Reinhardt's Rocket Hammer) Fixed a bug preventing Sigma's Ultimate Ability from working properly when gravity settings were altered via Workshop or Custom Game Settings Fixed a bug preventing the names of Dummy Bots from properly showing up in Kill Cams, POTGs, and End of Match Summaries Fixed a bug where Destroy All Dummy Bots failed to work in certain scenarios",
+     "body": "- Fixed a bug in which restarting a rule that was using the Wait action and then executing the same Wait action on the same frame could cause the action to wait forever\n- Fixed a bug in which using a chased variable for the rate or destination of the Chase action that was modifying it would cause incorrect behavior\n- Fixed a bug in which the final objective of an Assault, Hybrid, or Escort map could be completed when Disable Built-In Game Mode Completion was in effect\n- Fixed a bug in which reaching 100% distance or capture progress on the final objective of an Assault, Hybrid, or Escort map would cause endless beeping if Disable Built-In Game Mode Completion was in effect\n- Fixed a bug which caused the Stop Transforming Throttle action not to work\n- The Is Using Ultimate value now returns true when D.Va is using either of her ultimate abilities\n- The Is Using Ultimate value now returns true for the first few frames of Echo’s ultimate (After the first few frames, check the new Is Duplicating value)\n- The Is Using Ultimate value now returns true for Ashe only while B.O.B. is alive\n- Fixed a bug which caused the Respawn action to stop working for players that had recently been resurrected\n- Fixed rules with Echo as the designated hero not always executing correctly during or after her ultimate\n- Fixed the Is Primary Fire value sometimes returning incorrect values after Winston’s ultimate and during Hanzo’s Storm Arrows ability\n- The Is Using Ability 2 value no longer returns true for Widowmaker if her only existing Venom Mine has been fired off the map\n- Fixed a bug where script error messages remained on screens for certain subroutine errors even after fixing the issue in the editor\n- Fixed a bug preventing Set Objective Description from working when executed prior to the player spawning in\n- Fixed a bug preventing Disable Built-In Game Mode Announcer from working in certain modes\n- Fixed a bug preventing the Damage Over Time effects from occurring when first starting the Molten Floor Workshop Preset\n- Fixed a bug preventing Set Match Time from being able to be used while in Assemble Heroes in CTF\n- Fixed a bug preventing certain abilities from triggering Dealt/Received Knockback Events (Junkrat's self-knockback from Concussive Mine, Doomfist's Rocket Punch, and Reinhardt's Rocket Hammer)\n- Fixed a bug preventing Sigma's Ultimate Ability from working properly when gravity settings were altered via Workshop or Custom Game Settings\n- Fixed a bug preventing the names of Dummy Bots from properly showing up in Kill Cams, POTGs, and End of Match Summaries\n- Fixed a bug where Destroy All Dummy Bots failed to work in certain scenarios",
      "dev": null
     }
    ]
   }
  ],
  "raw_text": null,
- "hash": "sha256:a537153f996061e5c8d456a157d5cf7c6181fb78617783ecf549dafe086f896d"
+ "hash": "sha256:a7cb23c2adb1c5073219b79187825d94cc68da69fd1b9c01cef9912392ffc896"
 }

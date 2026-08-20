@@ -15,7 +15,7 @@
    "blocks": [
     {
      "title": "New Event - Starwatch: Galactic Rescue",
-     "body": "Battle for the fate of the galaxy in this new four-point Assault mode. Side with the Watcher rebels alongside the mighty Bonebreaker to rescue 3CH-0 from the Infinite Galactrius starship. Or serve the Infinite Empire and use the starship's security systems to defend against the intruders. Your choice will decide the fate of the galaxy, for whichever side wins more battles by the end of the event will reign supreme! Complete event challenges to unlock limited-time cosmetics, like the Asteroid Wrecking Ball epic skin, as well as up to 50,000 Battle Pass XP.",
+     "body": "Battle for the fate of the galaxy in this new four-point Assault mode. Side with the Watcher rebels alongside the mighty Bonebreaker to rescue 3CH-0 from the Infinite Galactrius starship. Or serve the Infinite Empire and use the starship's security systems to defend against the intruders. Your choice will decide the fate of the galaxy, for whichever side wins more battles by the end of the event will reign supreme!\n\nComplete event challenges to unlock limited-time cosmetics, like the Asteroid Wrecking Ball epic skin, as well as up to 50,000 Battle Pass XP.",
      "dev": null
     },
     {
@@ -34,17 +34,17 @@
    "blocks": [
     {
      "title": "Ping System",
-     "body": "\"Group Up\" can now be used while dead. Added a new setting to Controls -> Communication -> Ping - Options -> Enable Contextual Comms Wheel. When Enabled, this setting changes \"Group Up\" and \"Need Healing\" to use alternate comms when aiming at allies. This setting is \"Off\" by default. Junker Queen can now ping targets through surfaces that her knife is stuck in, in the same way that Zenyatta can ping targets his Discord is attached to.",
+     "body": "- \"Group Up\" can now be used while dead.\n- Added a new setting to Controls -> Communication -> Ping - Options -> Enable Contextual Comms Wheel. When Enabled, this setting changes \"Group Up\" and \"Need Healing\" to use alternate comms when aiming at allies. This setting is \"Off\" by default.\n- Junker Queen can now ping targets through surfaces that her knife is stuck in, in the same way that Zenyatta can ping targets his Discord is attached to.",
      "dev": null
     },
     {
      "title": "Push Game Mode Update",
-     "body": "The respawn time for players is increased by 2 seconds from 10s to 12s while their team’s forward spawn location is activated.",
+     "body": "- The respawn time for players is increased by 2 seconds from 10s to 12s while their team’s forward spawn location is activated.",
      "dev": "Developer Comments: Forward spawn locations were proving to be too advantageous for the team with the lead, making it a bit too difficult for the disadvantaged team to mount a comeback."
     },
     {
      "title": "Matchmaking",
-     "body": "MMR decay system has received multiple improvements aimed at more quickly and accurately re-calibrating players when they return from a long period of inactivity.",
+     "body": "- MMR decay system has received multiple improvements aimed at more quickly and accurately re-calibrating players when they return from a long period of inactivity.",
      "dev": null
     }
    ]
@@ -53,7 +53,7 @@
    "type": "generic_update",
    "title": "COMPETITIVE UPDATES",
    "role": null,
-   "description": "The 2023 Competitive Deathmatch season begins on May 16th!",
+   "description": "- The 2023 Competitive Deathmatch season begins on May 16th!",
    "heroes": [],
    "blocks": []
   },
@@ -76,6 +76,7 @@
      "name_en": "Junker Queen",
      "name_cn": "渣客女王",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/cf66adfac58a0321ec1f7d3a7241d6bf2f3b311707064d2f0ace2e3f4e342727.png",
      "dev_note": "Developer Comments: These changes increase Junker Queen's front-line presence by increasing her self-healing and offensive sustainability. We've also increased Jagged Blade's projectile size so it's more consistent to land.",
      "general": [],
      "perks": [],
@@ -84,17 +85,18 @@
        "name_en": "Scattergun",
        "name_cn": "散弹枪",
        "slug": "scattergun",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f2e438e49ffae25e094d79f876a8538149ff2aefd7cdf962da4556bd3551184e.png",
        "changes": [
         {
          "text_en": "Maximum ammo increased from 6 to 8",
          "text_cn": null,
          "before": 6.0,
          "after": 8.0,
-         "metric": "maximum ammo",
          "by": 2.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "maximum ammo"
+         "metric": "maximum ammo",
+         "raw_metric": "maximum ammo",
+         "unit": null
         }
        ]
       },
@@ -102,17 +104,18 @@
        "name_en": "Jagged Blade",
        "name_cn": "锯齿利刃",
        "slug": "jagged-blade",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/7aff09649e4e2daeec13cfcca4d5e369b4ddc0160587637bb607761ecf89f16c.png",
        "changes": [
         {
          "text_en": "Projectile size increased from 0.15 to 0.20 meters",
          "text_cn": null,
          "before": 0.15,
          "after": 0.2,
-         "metric": "projectile size",
          "by": 0.05,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "projectile size"
+         "metric": "projectile size",
+         "raw_metric": "projectile size",
+         "unit": null
         }
        ]
       },
@@ -120,28 +123,29 @@
        "name_en": "Rampage",
        "name_cn": null,
        "slug": "rampage",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/68b7d33215b777410b834ba2e9e7202d5ecff15fe012712facd974ec32895c36.png",
        "changes": [
         {
          "text_en": "Now deals 40 impact damage",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Wound damage decreased from 100 to 60",
          "text_cn": null,
          "before": 100.0,
          "after": 60.0,
-         "metric": "wound damage",
          "by": -40.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "wound damage"
+         "metric": "wound damage",
+         "raw_metric": "wound damage",
+         "unit": null
         }
        ]
       },
@@ -149,17 +153,18 @@
        "name_en": "Adrenaline Rush",
        "name_cn": "狂血奔涌",
        "slug": "adrenaline-rush",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e1706243e4996af6844e7f8233bbd3f98f04583a223cd3ad926d40ef6c4c8557.png",
        "changes": [
         {
          "text_en": "Adrenaline passive healing multiplier increased from 1.25 to 2x damage dealt by wounds",
          "text_cn": null,
          "before": 1.25,
          "after": 2.0,
-         "metric": "adrenaline passive healing multiplier",
          "by": 0.75,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "adrenaline passive healing multiplier"
+         "metric": "adrenaline passive healing multiplier",
+         "raw_metric": "adrenaline passive healing multiplier",
+         "unit": null
         }
        ]
       }
@@ -170,6 +175,7 @@
      "name_en": "Orisa",
      "name_cn": "奥丽莎",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/20c12a10cfe0b5608f9eec63a74ecb0ccd18a114019bc77bb2765f87776e17ed.png",
      "dev_note": "Developer Comments: Orisa often gets a lot of value with her abilities, but she is underperforming compared to other tanks. Increasing her weapon damage will make her more of an immediate threat after closing the distance with the enemy team.",
      "general": [],
      "perks": [],
@@ -178,17 +184,18 @@
        "name_en": "Augmented Fusion Driver",
        "name_cn": "强化聚变驱动器",
        "slug": "augmented-fusion-driver",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8bf67f548fb8dd8fde4dd07ae567e635f8d6229c330a3656134697b9ecbd9140.png",
        "changes": [
         {
          "text_en": "Damage increased from 12 to 13",
          "text_cn": null,
          "before": 12.0,
          "after": 13.0,
-         "metric": "damage",
          "by": 1.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "damage"
+         "metric": "damage",
+         "raw_metric": "damage",
+         "unit": null
         }
        ]
       }
@@ -199,6 +206,7 @@
      "name_en": "Winston",
      "name_cn": "温斯顿",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6a9a37012551410b46b2c28146404354fe21e4a1e8ea65db4e1e497eeaa05c71.png",
      "dev_note": "Developer Comments: It's difficult to deal full damage with Winston's leap due to needing to land almost directly on the enemy hero. Increasing this range will improve its consistency.",
      "general": [],
      "perks": [],
@@ -207,17 +215,18 @@
        "name_en": "Jet Pack",
        "name_cn": null,
        "slug": "jet-pack",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/dbad1fe535da5b932ad706a0ca06373d530f1210cbbb095ef1bc8b3a7cc64172.png",
        "changes": [
         {
          "text_en": "Damage radius before falloff begins increased from 1 to 1.3 meters",
          "text_cn": null,
          "before": 1.0,
          "after": 1.3,
-         "metric": "damage",
          "by": 0.3,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "damage radius before falloff begins"
+         "metric": "damage",
+         "raw_metric": "damage radius before falloff begins",
+         "unit": null
         }
        ]
       }
@@ -228,6 +237,7 @@
      "name_en": "Wrecking Ball",
      "name_cn": "破坏球",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f71d6948e8b6ae340e20ab569ef66d24aead6032c34a7ec09a00ea864b413a24.png",
      "dev_note": "Developer Comments: Adaptive Shields gives Wrecking Ball a lot of leeway in a fight due to its duration. This change to Adaptive Shields limits his survivability during prolonged engagements.",
      "general": [],
      "perks": [],
@@ -236,17 +246,18 @@
        "name_en": "Adaptive Shield",
        "name_cn": null,
        "slug": "adaptive-shield",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/fa65af9c692405f968fafbeedcdfc9092b38a050dc3562bd41280390ccd7a21d.png",
        "changes": [
         {
          "text_en": "Effect duration decreased from 9 to 7 seconds",
          "text_cn": null,
          "before": 9.0,
          "after": 7.0,
-         "metric": "effect duration",
          "by": -2.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "effect duration"
+         "metric": "effect duration",
+         "raw_metric": "effect duration",
+         "unit": null
         }
        ]
       }
@@ -266,6 +277,7 @@
      "name_en": "Echo",
      "name_cn": "回声",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0dc3f1679d739ef530ba2b8cbe02bf09f4d40a57c0af84f694a3241d3a7ef948.png",
      "dev_note": "Developer Comments: The following changes increase the flexibility of Echo’s Duplicate ultimate and shift some of its focus away from the allure of building multiple copied ultimates in a single use. This puts more of an emphasis on choosing a Duplicate target based on the hero's overall utility for a given situation, with the benefit of increased survivability due to transforming. Echo will get her ultimate more frequently but it will be more difficult to generate the copied hero’s ultimate.",
      "general": [],
      "perks": [],
@@ -274,28 +286,29 @@
        "name_en": "Duplicate",
        "name_cn": "人格复制",
        "slug": "duplicate",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/457d6ebcb2b92d1e7f7a7174b426903879e131422196825589adbc5e5d9f7efb.png",
        "changes": [
         {
          "text_en": "Ultimate cost reduced 25%",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": "ultimate_cost",
          "by": null,
          "by_pct": 25.0,
-         "unit": null,
-         "raw_metric": "ultimate cost"
+         "metric": "ultimate_cost",
+         "raw_metric": "ultimate cost",
+         "unit": null
         },
         {
          "text_en": "Ultimate generation decreased from 5.5x to 4x while Duplicate is active",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -306,6 +319,7 @@
      "name_en": "Junkrat",
      "name_cn": "狂鼠",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d3628dc64d78ca6dc2a8b509cf5a6fc417c0f5068d5f75d1f5c094be1f58ee4e.png",
      "dev_note": "Developer Comments: The previous adjustment to Concussion Mine's maximum damage lowered the effectiveness of Junkrat's grenade and mine combos too much so we are increasing the damage amount slightly.",
      "general": [],
      "perks": [],
@@ -314,17 +328,18 @@
        "name_en": "Concussion Mine",
        "name_cn": "震荡地雷",
        "slug": "concussion-mine",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1d6135a3089363cf2c59d5157740cf5dc4ad572bc215553672a79812c397dbd2.png",
        "changes": [
         {
          "text_en": "Maximum damage increased from 100 to 110",
          "text_cn": null,
          "before": 100.0,
          "after": 110.0,
-         "metric": "maximum damage",
          "by": 10.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "maximum damage"
+         "metric": "maximum damage",
+         "raw_metric": "maximum damage",
+         "unit": null
         }
        ]
       }
@@ -344,6 +359,7 @@
      "name_en": "Ana",
      "name_cn": "安娜",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/86debddbaaaf8699d68775a9dbffaf5b8db514772b77ff7234b1ff84c0b29fd5.png",
      "dev_note": "Developer Comments: Ana’s survivability has improved significantly ever since the addition of the support passive. We are reducing the amount of healing provided by the Biotic Grenade explosion as she doesn’t need to rely on it for self-healing as much as before.",
      "general": [],
      "perks": [],
@@ -352,17 +368,18 @@
        "name_en": "Biotic Grenade",
        "name_cn": "生物手雷",
        "slug": "biotic-grenade",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c8190b234bf0a0e28eecffe162d0c942e6b8656e95f4688c6ca3b025fa5a487d.png",
        "changes": [
         {
          "text_en": "Explosion healing decreased from 100 to 60",
          "text_cn": null,
          "before": 100.0,
          "after": 60.0,
-         "metric": "explosion healing",
          "by": -40.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "explosion healing"
+         "metric": "explosion healing",
+         "raw_metric": "explosion healing",
+         "unit": null
         }
        ]
       }
@@ -373,6 +390,7 @@
      "name_en": "Baptiste",
      "name_cn": "巴蒂斯特",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5ac801c6fe84f83fe5015af89858cbdfb2ec9d32d141f582889b5381fd0195fc.png",
      "dev_note": "Developer Comments: Immortality Field provides powerful utility, but its long cooldown means that Baptiste often has to wait for the perfect opportunity to use it. We're decreasing its cooldown slightly to promote more flexibility in usage, though it will still be uncommon to see it in more than once per engagement.",
      "general": [],
      "perks": [],
@@ -381,17 +399,18 @@
        "name_en": "Immortality Field",
        "name_cn": "维生力场",
        "slug": "immortality-field",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d66d82bab88fc813080dd15e31629cc3aa7c8b41cfb41d5b962b628dd345e433.png",
        "changes": [
         {
          "text_en": "Cooldown decreased from 25 to 23 seconds",
          "text_cn": null,
          "before": 25.0,
          "after": 23.0,
-         "metric": "cooldown",
          "by": -2.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "cooldown"
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
         }
        ]
       }
@@ -402,6 +421,7 @@
      "name_en": "Kiriko",
      "name_cn": "雾子",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/24d1d7bf86c331b3d81b934442ed36fd0121f6815255c6f26f456127fb342d15.png",
      "dev_note": "Developer Comments: Kiriko sometimes accidentally interrupts her Kunai reload with Ofuda. Kunai now reloads slightly sooner during the animation to mitigate this. In addition, there is now a hero option, \"Healing Ofuda Cancels Reload,\" which can be turned off to bypass this issue entirely.",
      "general": [],
      "perks": [],
@@ -410,28 +430,29 @@
        "name_en": "Kunai",
        "name_cn": "锥",
        "slug": "kunai",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/dd7da4b0caa30dafaa3359c902b31866e547f9a1ea7952d7f536e1671d47d9bd.png",
        "changes": [
         {
          "text_en": "Kunai reloads after 65% percent of the animation has completed (formerly 75%)",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "New Hero option: \"Healing Ofuda Cancels Reload\"",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -442,6 +463,7 @@
      "name_en": "Lifeweaver",
      "name_cn": "生命之梭",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/57d5014ab6034db9138f838e8450693b4a97ab3c54f85d594b199a8853e75ccb.png",
      "dev_note": "Developer Comments: Earthshatter is an ultimate where positioning is critical to effectively use, so we are adjusting it so that Reinhardt doesn’t have their ultimate be effectively canceled when Lifeweaver uses Life Grip.",
      "general": [],
      "perks": [],
@@ -450,17 +472,18 @@
        "name_en": "Life Grip",
        "name_cn": "生命之握",
        "slug": "life-grip",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/36969bea55419b7ff963f2fb0ff7f80e37ecbe810bcd7dae0c7c835270c938a8.png",
        "changes": [
         {
          "text_en": "Reinhardt is no longer a valid target for Life Grip during Earthshatter, and using Earthshatter will cancel Life Grip.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -488,6 +511,7 @@
      "name_en": "D.Va",
      "name_cn": "D.Va",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e69a3d819fd46d0dcd1d9474c248a95e69519c20077c60e9de73a1e2d3acdbb6.png",
      "dev_note": null,
      "general": [
       {
@@ -535,6 +559,7 @@
      "name_en": "Doomfist",
      "name_cn": "末日铁拳",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/bc538b345188bdcb2d2be5b2894d471ba54aeea53b03862429205ed49d693bbe.png",
      "dev_note": null,
      "general": [
       {
@@ -618,6 +643,7 @@
      "name_en": "Orisa",
      "name_cn": "奥丽莎",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/20c12a10cfe0b5608f9eec63a74ecb0ccd18a114019bc77bb2765f87776e17ed.png",
      "dev_note": null,
      "general": [
       {
@@ -689,6 +715,7 @@
      "name_en": "Ramattra",
      "name_cn": "拉玛刹",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/cf69d4bfa61ac14f61d3d541b0d2687a20fa24f55afe7a392d746f5ccb138dea.png",
      "dev_note": null,
      "general": [
       {
@@ -772,6 +799,7 @@
      "name_en": "Reinhardt",
      "name_cn": "莱因哈特",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b5e3a4f5629a3acfd47b5d2e695e79ea964b060bf67b7e4f8f15e63accd5f934.png",
      "dev_note": null,
      "general": [
       {
@@ -843,6 +871,7 @@
      "name_en": "Roadhog",
      "name_cn": "路霸",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b6f4e837dc41e87d730f6b0fad3473e689c8bdcd1f732b97326ac08b0508f2ee.png",
      "dev_note": null,
      "general": [
       {
@@ -878,6 +907,7 @@
      "name_en": "Sigma",
      "name_cn": "西格玛",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9738e1687bf7064de3667169788ef1b5ea9cf1746a42753c767cf17c7cb67547.png",
      "dev_note": null,
      "general": [
       {
@@ -901,6 +931,7 @@
      "name_en": "Winston",
      "name_cn": "温斯顿",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6a9a37012551410b46b2c28146404354fe21e4a1e8ea65db4e1e497eeaa05c71.png",
      "dev_note": null,
      "general": [
       {
@@ -936,6 +967,7 @@
      "name_en": "Wrecking Ball",
      "name_cn": "破坏球",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f71d6948e8b6ae340e20ab569ef66d24aead6032c34a7ec09a00ea864b413a24.png",
      "dev_note": null,
      "general": [
       {
@@ -992,6 +1024,7 @@
      "name_en": "Bastion",
      "name_cn": "堡垒",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3a7dc6d45ce7a1e1c2d31bd4d88b4889c412b2003ad82d1fd8e41271952c1f68.png",
      "dev_note": null,
      "general": [
       {
@@ -1051,6 +1084,7 @@
      "name_en": "Cassidy",
      "name_cn": "卡西迪",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8d161c49df5a962ece9ceafc6500bea473d9dd3695b9e24e39d5be616295e6c5.png",
      "dev_note": null,
      "general": [
       {
@@ -1098,6 +1132,7 @@
      "name_en": "Echo",
      "name_cn": "回声",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0dc3f1679d739ef530ba2b8cbe02bf09f4d40a57c0af84f694a3241d3a7ef948.png",
      "dev_note": null,
      "general": [
       {
@@ -1157,6 +1192,7 @@
      "name_en": "Genji",
      "name_cn": "源氏",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/190a3dd9a5a4c8daeff9ec4da861f43cb28116964e89dc7416da104d8fae9134.png",
      "dev_note": null,
      "general": [
       {
@@ -1204,6 +1240,7 @@
      "name_en": "Mei",
      "name_cn": "美",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/08586dceed41e030d575b2b643118f55390f1c2af91dd15394528f5399fcc934.png",
      "dev_note": null,
      "general": [
       {
@@ -1299,6 +1336,7 @@
      "name_en": "Pharah",
      "name_cn": "法老之鹰",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/93d639075993fdef3402aa9131f93be7789a33a11dc0099f2f88d22dda09c175.png",
      "dev_note": null,
      "general": [
       {
@@ -1334,6 +1372,7 @@
      "name_en": "Reaper",
      "name_cn": "死神",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b7aac87959afbe062cc31518ded04b9dbcadb0a2282f8963c6bfd5ba0a2d6a27.png",
      "dev_note": null,
      "general": [
       {
@@ -1393,6 +1432,7 @@
      "name_en": "Sombra",
      "name_cn": "黑影",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f348c1704dc50c009ac8acf6912a5a77eaf2a3acdd34e56927190af9eb9145d1.png",
      "dev_note": null,
      "general": [
       {
@@ -1428,6 +1468,7 @@
      "name_en": "Symmetra",
      "name_cn": "秩序之光",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b0a19d5c8b0e299705036f4d0b9394da5ff415dc0dcd4e9207b6e63254022dff.png",
      "dev_note": null,
      "general": [
       {
@@ -1511,6 +1552,7 @@
      "name_en": "Torbjörn",
      "name_cn": "托比昂",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2ef3a4bdd117829a83867a7775ece351c4226f29b24cdbf8d7fac89443e8d8a2.png",
      "dev_note": null,
      "general": [
       {
@@ -1546,6 +1588,7 @@
      "name_en": "Tracer",
      "name_cn": "猎空",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5ee20a1feed14da5153f19745328e9fc02bd79f8109593a9b7dab9283eb9629b.png",
      "dev_note": null,
      "general": [
       {
@@ -1590,6 +1633,7 @@
      "name_en": "Baptiste",
      "name_cn": "巴蒂斯特",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5ac801c6fe84f83fe5015af89858cbdfb2ec9d32d141f582889b5381fd0195fc.png",
      "dev_note": null,
      "general": [
       {
@@ -1649,6 +1693,7 @@
      "name_en": "Brigitte",
      "name_cn": "布丽吉塔",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/51b93ea59f369a1defa78e5d08c12b1391f5d2d94614a51fd95c125a7a6151fa.png",
      "dev_note": null,
      "general": [
       {
@@ -1708,6 +1753,7 @@
      "name_en": "Kiriko",
      "name_cn": "雾子",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/24d1d7bf86c331b3d81b934442ed36fd0121f6815255c6f26f456127fb342d15.png",
      "dev_note": null,
      "general": [
       {
@@ -1743,6 +1789,7 @@
      "name_en": "Lifeweaver",
      "name_cn": "生命之梭",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/57d5014ab6034db9138f838e8450693b4a97ab3c54f85d594b199a8853e75ccb.png",
      "dev_note": null,
      "general": [
       {
@@ -1802,6 +1849,7 @@
      "name_en": "Lúcio",
      "name_cn": "卢西奥",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/dee7e92975f5e659fa6b28c508d8fbad62bda720698b1d21f2492af7b9f94b48.png",
      "dev_note": null,
      "general": [
       {
@@ -1837,6 +1885,7 @@
      "name_en": "Mercy",
      "name_cn": "天使",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c889fade479003fac5a1ff46a05aee7b0dc88fbb8d2d4b75e4be31159eb1f816.png",
      "dev_note": null,
      "general": [
       {
@@ -1896,6 +1945,7 @@
      "name_en": "Zenyatta",
      "name_cn": "禅雅塔",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9367143a32f3fc07781330a0b26c6f1087361204a2b7e4088d1daf26428273f2.png",
      "dev_note": null,
      "general": [
       {
@@ -1950,27 +2000,27 @@
    "blocks": [
     {
      "title": "GENERAL",
-     "body": "Resolved an issue that awarded the incorrect competitive Season 3 titles for some players Fixed a bug in the Options menu that resulted in Communication Option changes to not save Console - Fixed an issue that prevented you from navigating the competitive menu while in queue Console - Fixed a bug on some consoles that prevented saving highlights Console - Fixed a bug that prevented players on console from renaming Custom Game presets Fixed a bug with Payload and Hybrid game modes displaying a debug string when the payload is pushed the end of the map Resolved a bug where you were unable to view some Heroes weapons and/or equipment in the Hero Gallery Fixed a bug with the camera sometimes becoming askew when the player's movement was interrupted by negative statuses Fixed an issue where some Maps were missing images on the Competitive Progress screen Fixed a bug where a sound prompt was missing when you ranked down in Competitive modes",
+     "body": "- Resolved an issue that awarded the incorrect competitive Season 3\ntitles for some players\n- Fixed a bug in the Options menu that resulted in Communication Option\nchanges to not save\n- Console - Fixed an issue that prevented you from navigating the\ncompetitive menu while in queue\n- Console - Fixed a bug on some consoles that prevented saving\nhighlights\n- Console - Fixed a bug that prevented players on console from renaming\nCustom Game presets\n- Fixed a bug with Payload and Hybrid game modes displaying a debug\nstring when the payload is pushed the end of the map\n- Resolved a bug where you were unable to view some Heroes weapons\nand/or equipment in the Hero Gallery\n- Fixed a bug with the camera sometimes becoming askew when the\nplayer's movement was interrupted by negative statuses\n- Fixed an issue where some Maps were missing images on the Competitive\nProgress screen Fixed a bug where a sound prompt was missing when you\nranked down in Competitive modes",
      "dev": null
     },
     {
      "title": "MAPS",
-     "body": "Antarctic Peninsula Removed a large misplaced shadow near the capture point in the Labs area Busan Fixed a bug with the drum in the Sanctuary area allowing player objects to be thrown/placed inside of it Circuit Royale Fixed some areas that allowed players to stand in unintended locations Esperança Replaced the indestructible vase in the spawn rooms to a regular ceramic vase that can shatter. Please break them at your own will. Hollywood Removed a planter near the first choke Lijang Tower Fixed in a previous update - Fixed a bug that allowed players to stand in unintended locations Shambali Monestary Fixed some areas on the map that would eat projectiles",
+     "body": "Antarctic Peninsula\n\n- Removed a large misplaced shadow near the capture point in the Labs\narea\n\nBusan\n\n- Fixed a bug with the drum in the Sanctuary area allowing player\nobjects to be thrown/placed inside of it\n\nCircuit Royale\n\n- Fixed some areas that allowed players to stand in unintended\nlocations\n\nEsperança\n\n- Replaced the indestructible vase in the spawn rooms to a regular\nceramic vase that can shatter. Please break them at your own will.\n\nHollywood\n\n- Removed a planter near the first choke\n\nLijang Tower\n\n- Fixed in a previous update - Fixed a bug that allowed players to\nstand in unintended locations\n\nShambali Monestary\n\n- Fixed some areas on the map that would eat projectiles",
      "dev": null
     },
     {
      "title": "HEROES",
-     "body": "Ana Fixed a bug where Biotic Grenade was only tracking self-hits Ashe Fixed a bug where Ashe's accuracy became inconsistent during a jump and other movements Bastion Fixed a bug with the Assault Configuration playing an old reload animation if used as soon as you spawn Brigitte Fixed a bug which caused Brigitte’s extra armor during ‘Rally’ to not apply it’s 30% damage reduction correctly Doomfist Fixed a bug with Powerblock not correctly reducing area of effect damage Fixed a bug with the Empowered buff from Meteor Strike not counting toward the Empowered Rocket Punch stat D.Va Fixed a bug with D.Va's 'Selfie' highlight intro not removing the mech after the explosion when some skins were equipped Genji Fixed a bug where deflecting Kiriko or Lifeweaver's healing projectiles did not heal your allies Kiriko Fixed a bug with Swift Step sometimes getting players stuck in the map Lifeweaver Fixed the issue with Lifeweaver's Custom Game controls being broken after the controls update Fixed an issue with the Petal Platform geometry not matching its projectile collision Fixed a bug where your Life Grip target would bounce back if you activate the ability while you're on an enemy Petal Platform and they are on a friendly Petal Platform Fixed an issue with Life Grip failing and going on cooldown in some cases if used at the same time as your target activated an ability Fixed a bug where Lifeweaver would auto-swap to Healing Blossom if Tree of Life was placed while Thorn Volley was active Fixed the placement of Lifeweaver in the Hero Gallery and Hero Select Mei Fixed a bug with Ice Wall becoming unusable until cancelled after targeting an invalid location Pharah Fixed a bug with Concussive Blast only tracking self-hits Ramattra Fixed a bug with Nemesis form failing to go on cooldown if you die during the transformation Fixed a bug with Nemesis form not activating and enabling its cooldown if you were knocked down while Annihilation mode is active and then attempted to activate Nemesis Form Reaper Fixed a bug with the Ambush Play of the Game not having a sniper reticle and some sounds when certain skins were equipped Sojourn Resolved an issue where the Disruptor could be attached to the Push bot Sombra Fixed a stat tracking issue where Health Pack healing was only counting self-healing Widowmaker Fixed a bug where Widowmaker could become stuck in the grappling animation if Grappling Hook was used on a moving platform",
+     "body": "Ana\n\n- Fixed a bug where Biotic Grenade was only tracking self-hits\n\nAshe\n\n- Fixed a bug where Ashe's accuracy became inconsistent during a jump\nand other movements\n\nBastion\n\n- Fixed a bug with the Assault Configuration playing an old reload\nanimation if used as soon as you spawn\n\nBrigitte\n\n- Fixed a bug which caused Brigitte’s extra armor during ‘Rally’ to not\napply it’s 30% damage reduction correctly\n\nDoomfist\n\n- Fixed a bug with Powerblock not correctly reducing area of effect\ndamage\n- Fixed a bug with the Empowered buff from Meteor Strike not counting\ntoward the Empowered Rocket Punch stat\n\nD.Va\n\n- Fixed a bug with D.Va's 'Selfie' highlight intro not removing the\nmech after the explosion when some skins were equipped\n\nGenji\n\n- Fixed a bug where deflecting Kiriko or Lifeweaver's healing\nprojectiles did not heal your allies\n\nKiriko\n\n- Fixed a bug with Swift Step sometimes getting players stuck in the\nmap\n\nLifeweaver\n\n- Fixed the issue with Lifeweaver's Custom Game controls being broken\nafter the controls update\n- Fixed an issue with the Petal Platform geometry not matching its\nprojectile collision\n- Fixed a bug where your Life Grip target would bounce back if you\nactivate the ability while you're on an enemy Petal Platform and they\nare on a friendly Petal Platform\n- Fixed an issue with Life Grip failing and going on cooldown in some\ncases if used at the same time as your target activated an ability\n- Fixed a bug where Lifeweaver would auto-swap to Healing Blossom if\nTree of Life was placed while Thorn Volley was active\n- Fixed the placement of Lifeweaver in the Hero Gallery and Hero Select\n\nMei\n\n- Fixed a bug with Ice Wall becoming unusable until cancelled after targeting an invalid location\n\nPharah\n\n- Fixed a bug with Concussive Blast only tracking self-hits\n\nRamattra\n\n- Fixed a bug with Nemesis form failing to go on cooldown if you die\nduring the transformation\n- Fixed a bug with Nemesis form not activating and enabling its\ncooldown if you were knocked down while Annihilation mode is active\nand then attempted to activate Nemesis Form\n\nReaper\n\n- Fixed a bug with the Ambush Play of the Game not having a sniper\nreticle and some sounds when certain skins were equipped\n\nSojourn\n\n- Resolved an issue where the Disruptor could be attached to the Push\nbot\n\nSombra\n\n- Fixed a stat tracking issue where Health Pack healing was only\ncounting self-healing\n\nWidowmaker\n\n- Fixed a bug where Widowmaker could become stuck in the grappling\nanimation if Grappling Hook was used on a moving platform",
      "dev": null
     },
     {
      "title": "WORKSHOP",
-     "body": "Fixed multiple issues related to Custom Projectiles",
+     "body": "- Fixed multiple issues related to Custom Projectiles",
      "dev": null
     }
    ]
   }
  ],
  "raw_text": null,
- "hash": "sha256:4f812902f42e34c80433c8ae304f842318e7081dcc5ce83402aa30af4dc49001"
+ "hash": "sha256:ad40d814b25e77c708da575ee31fa2f065ac63741356bbad43b93004fe024b2f"
 }

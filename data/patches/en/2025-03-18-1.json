@@ -18,7 +18,7 @@
    "type": "generic_update",
    "title": "Overwatch 2 Classic - GOATS",
    "role": null,
-   "description": "Step into Overwatch history with Overwatch Classic: GOATS, where teamwork, sustain, and strategy reign supreme. This iconic meta defined an entire era of competitive play, proving that three tanks, three supports, and perfectly timed abilities could be the ultimate formula for victory. Whether you remember GOATS from its prime or are experiencing it for the first time, now’s your chance to relive one of Overwatch’s most influential moments that rewrote the rules of team play. Overwatch 2 Classic: GOATS begins on March 25. Heroes added include Moira, Brigitte, and Wrecking Ball. Maps added include Blizzard World, Rialto, and Busan. Hero balance is adjusted to the September 2018 Hero Balance.",
+   "description": "Step into Overwatch history with Overwatch Classic: GOATS, where teamwork, sustain, and strategy reign supreme. This iconic meta defined an entire era of competitive play, proving that three tanks, three supports, and perfectly timed abilities could be the ultimate formula for victory. Whether you remember GOATS from its prime or are experiencing it for the first time, now’s your chance to relive one of Overwatch’s most influential moments that rewrote the rules of team play. Overwatch 2 Classic: GOATS begins on March 25.\n\n- Heroes added include Moira, Brigitte, and Wrecking Ball.\n- Maps added include Blizzard World, Rialto, and Busan.\n- Hero balance is adjusted to the September 2018 Hero Balance.",
    "heroes": [],
    "blocks": []
   },
@@ -34,7 +34,7 @@
    "type": "generic_update",
    "title": "6v6 Open Queue - Max 2 Tanks",
    "role": null,
-   "description": "6v6 Open Queue is back in Overwatch 2! From 3/18 to 4/20, experience the classic format with a modern upgrade, as Perks and a two-tank max bring new layers of strategy to every match. 6v6 Open Queue will temporarily replace 5v5 Open Queue in both ranked and unranked play, giving you a refreshed way to dominate. Whether you’re stacking tanks, coordinating big team plays, or flexing into any role, 6v6 Open Queue gives you the freedom to shape the fight your way. Available from March 18 to April 21—don’t miss experiencing Perks in 6v6! Due to an issue, this mode will only be available in Competitive Play until a future update. For Competitive play, wide queue is not available.",
+   "description": "6v6 Open Queue is back in Overwatch 2! From 3/18 to 4/20, experience the classic format with a modern upgrade, as Perks and a two-tank max bring new layers of strategy to every match. 6v6 Open Queue will temporarily replace 5v5 Open Queue in both ranked and unranked play, giving you a refreshed way to dominate. Whether you’re stacking tanks, coordinating big team plays, or flexing into any role, 6v6 Open Queue gives you the freedom to shape the fight your way.\n\n- Available from March 18 to April 21—don’t miss experiencing Perks in 6v6!\n- Due to an issue, this mode will only be available in Competitive Play until a future update.\n- For Competitive play, wide queue is not available.",
    "heroes": [],
    "blocks": []
   },
@@ -63,6 +63,7 @@
      "name_en": "Junker Queen",
      "name_cn": "渣客女王",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/cf66adfac58a0321ec1f7d3a7241d6bf2f3b311707064d2f0ace2e3f4e342727.png",
      "dev_note": "Developer Comments: Increasing the duration of Deep Wounds to ensure that Junker Queen can maintain wounds even longer on enemies she’s actively targeting.",
      "general": [],
      "perks": [],
@@ -71,17 +72,18 @@
        "name_en": "Deep Wounds",
        "name_cn": "深度创伤",
        "slug": "deep-wounds",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d67ef2a1c548c7b54d8aa47dd42dbb479dcbb4192a41624e4614d4e011a13a37.png",
        "changes": [
         {
          "text_en": "Extended wound duration increased from 0.25 to 0.5 seconds.",
          "text_cn": null,
          "before": 0.25,
          "after": 0.5,
-         "metric": "extended wound duration",
          "by": 0.25,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "extended wound duration"
+         "metric": "extended wound duration",
+         "raw_metric": "extended wound duration",
+         "unit": null
         }
        ]
       }
@@ -92,6 +94,7 @@
      "name_en": "Ramattra",
      "name_cn": "拉玛刹",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/cf69d4bfa61ac14f61d3d541b0d2687a20fa24f55afe7a392d746f5ccb138dea.png",
      "dev_note": "Developer Comments: An additional element has been added to Prolonged Barrier to enable Ramattra to control a larger area and provide effective cover with the shield.",
      "general": [],
      "perks": [],
@@ -100,6 +103,7 @@
        "name_en": "Prolonged Barrier",
        "name_cn": "持久屏障",
        "slug": "prolonged-barrier",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ce0380d603484f039840a8eb970a568f9ec48227c7853236270ef8d567bf1e42.png",
        "changes": []
       }
      ]
@@ -109,6 +113,7 @@
      "name_en": "Reinhardt",
      "name_cn": "莱因哈特",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b5e3a4f5629a3acfd47b5d2e695e79ea964b060bf67b7e4f8f15e63accd5f934.png",
      "dev_note": "Developer Comments: We’re making improvements to several of Reinhardt's perks to increase their usability in various situations.",
      "general": [],
      "perks": [],
@@ -117,12 +122,14 @@
        "name_en": "Crusader's Resolve",
        "name_cn": "十字军的决心",
        "slug": "crusader-s-resolve",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/24dc07c77e845c44812814a4662fb45c3ac5fe019d892123eee65a66b35d96b9.png",
        "changes": []
       },
       {
        "name_en": "Shield Slam",
        "name_cn": "盾牌猛击",
        "slug": "shield-slam",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/af91ea3bca8b54b8dd3919c1294b8605b90e88f7bc7a1d04c9badd1c3d427e1a.png",
        "changes": []
       }
      ]
@@ -132,6 +139,7 @@
      "name_en": "Roadhog",
      "name_cn": "路霸",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b6f4e837dc41e87d730f6b0fad3473e689c8bdcd1f732b97326ac08b0508f2ee.png",
      "dev_note": "Developer Comments: The increased throw distance modifies how Roadhog can use Hog Toss. Adding a damage increase component will make Pig Pen more effective even when not utilizing the throw distance",
      "general": [],
      "perks": [],
@@ -140,6 +148,7 @@
        "name_en": "Hog Toss",
        "name_cn": "蛮猪猛投",
        "slug": "hog-toss",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c22ef2ac01e8248dafa5c8c565562454800e46929e6a2edade87842528d776ca.png",
        "changes": []
       }
      ]
@@ -149,6 +158,7 @@
      "name_en": "Winston",
      "name_cn": "温斯顿",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6a9a37012551410b46b2c28146404354fe21e4a1e8ea65db4e1e497eeaa05c71.png",
      "dev_note": "Developer Comments: Short Circuit is being adjusted to improve its effectiveness in specific matchups against deployables such as barriers or turrets.",
      "general": [],
      "perks": [],
@@ -157,17 +167,18 @@
        "name_en": "Short Circuit",
        "name_cn": "短路电流",
        "slug": "short-circuit",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5582fb396ef6db0680124640188ba11d59cacb21ddcb3fecbb421788ce825891.png",
        "changes": [
         {
          "text_en": "Damage versus deployable objects increased from 30% to 50%",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -178,6 +189,7 @@
      "name_en": "Wrecking Ball",
      "name_cn": "破坏球",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f71d6948e8b6ae340e20ab569ef66d24aead6032c34a7ec09a00ea864b413a24.png",
      "dev_note": "Developer Comments: The transfer cost is being reduced to amplify the value of shields when given to allies.",
      "general": [],
      "perks": [],
@@ -186,17 +198,18 @@
        "name_en": "Transfer Efficiency",
        "name_cn": "高效传输",
        "slug": "transfer-efficiency",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/819e4799a9f2d066f7060c5d6d95f2b3106dc49f527340014672e24621cfe91b.png",
        "changes": [
         {
          "text_en": "Ally transfer cost reduction increased from 33% to 50%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -216,6 +229,7 @@
      "name_en": "Bastion",
      "name_cn": "堡垒",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3a7dc6d45ce7a1e1c2d31bd4d88b4889c412b2003ad82d1fd8e41271952c1f68.png",
      "dev_note": "Developer Comments: Adding a resource meter will control Bastion's healing ability, ensuring more balanced gameplay and fair engagements with low damage output heroes.",
      "general": [],
      "perks": [],
@@ -224,17 +238,18 @@
        "name_en": "Self-Repair",
        "name_cn": "自我修复",
        "slug": "self-repair",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ce6e945ce60a93f6c28bd844b171a9ec8e8247e17a7730e8c84e6ef316b8dd7e.png",
        "changes": [
         {
          "text_en": "Now has a resource required to heal.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -245,6 +260,7 @@
      "name_en": "Cassidy",
      "name_cn": "卡西迪",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8d161c49df5a962ece9ceafc6500bea473d9dd3695b9e24e39d5be616295e6c5.png",
      "dev_note": "Developer Comments: Increasing Past Noon's refund aims to improve High Noon and its zoning capabilities, adding incentive to change how the ultimate is used.",
      "general": [],
      "perks": [],
@@ -253,17 +269,18 @@
        "name_en": "Past Noon",
        "name_cn": "午时已过",
        "slug": "past-noon",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ffbc0c9464ff38f91318f30965704ad8f83f6f56c79f0cca0fae876a7e1141bf.png",
        "changes": [
         {
          "text_en": "Ultimate charge refunded increased from 30% to 40%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -274,6 +291,7 @@
      "name_en": "Genji",
      "name_cn": "源氏",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/190a3dd9a5a4c8daeff9ec4da861f43cb28116964e89dc7416da104d8fae9134.png",
      "dev_note": "Developer Comments: The utility of Genji’s perks, such as Acrobatics and Blade Twisting, has been limited due to their specific use cases. We have improved the conditions of these perks and increased the healing of Meditation to align it with other Major perks.",
      "general": [],
      "perks": [],
@@ -282,17 +300,18 @@
        "name_en": "Acrobatics",
        "name_cn": "灵巧之影",
        "slug": "acrobatics",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a2c2139562e05d65a76c328a272424e463928b38711021f954b588dd45a0ac31.png",
        "changes": [
         {
          "text_en": "Now also resets double jump on wall climb.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       },
@@ -300,17 +319,18 @@
        "name_en": "Meditation",
        "name_cn": "冥思一闪",
        "slug": "meditation",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c9315969338ff1e1a62be3db89d44aa8dbd5f6223d6d675d0d4f564a977dd8ea.png",
        "changes": [
         {
          "text_en": "Healing increased from 25 to 35 health per second.",
          "text_cn": null,
          "before": 25.0,
          "after": 35.0,
-         "metric": "healing",
          "by": 10.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "healing"
+         "metric": "healing",
+         "raw_metric": "healing",
+         "unit": null
         }
        ]
       },
@@ -318,28 +338,29 @@
        "name_en": "Blade Twisting",
        "name_cn": "扭转刃影",
        "slug": "blade-twisting",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/50478219eb667bb66b42b708988f6a8ab106f5d2055390592f54a51c747d833c.png",
        "changes": [
         {
          "text_en": "Duration after an elimination to trigger bonus damage increased from 6 to 10 seconds.",
          "text_cn": null,
          "before": 6.0,
          "after": 10.0,
-         "metric": "duration",
          "by": 4.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "duration after an elimination to trigger bonus damage"
+         "metric": "duration",
+         "raw_metric": "duration after an elimination to trigger bonus damage",
+         "unit": "s"
         },
         {
          "text_en": "Bonus damage is now dealt over 1 second instead of 2 seconds.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -350,6 +371,7 @@
      "name_en": "Mei",
      "name_cn": "美",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/08586dceed41e030d575b2b643118f55390f1c2af91dd15394528f5399fcc934.png",
      "dev_note": "Developer Comments: The cooldown increase for Permafrost has been removed to ensure it does not create negative impact for Ice Wall.",
      "general": [],
      "perks": [],
@@ -358,17 +380,18 @@
        "name_en": "Permafrost",
        "name_cn": "永冻坚冰",
        "slug": "permafrost",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/bcddee4719a3cec728d438ac41ad2b8822da94bc78fd6024df3e101ec459108d.png",
        "changes": [
         {
          "text_en": "No longer increases cooldown of Ice Wall.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -379,6 +402,7 @@
      "name_en": "Pharah",
      "name_cn": "法老之鹰",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/93d639075993fdef3402aa9131f93be7789a33a11dc0099f2f88d22dda09c175.png",
      "dev_note": "Developer Comments: We are increasing the amount of converted shields to enhance Pharah’s self-sufficiency when Helix Shields is selected.",
      "general": [],
      "perks": [],
@@ -387,17 +411,18 @@
        "name_en": "Helix Shields",
        "name_cn": "海力士护盾",
        "slug": "helix-shields",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/cb8ee9877f9a8554a4ac9d771c0d820ae8dffe4883d60163891f5cc3fef38db4.png",
        "changes": [
         {
          "text_en": "Converted Shields increased from 75 to 125.",
          "text_cn": null,
          "before": 75.0,
          "after": 125.0,
-         "metric": "converted shields",
          "by": 50.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "converted shields"
+         "metric": "converted shields",
+         "raw_metric": "converted shields",
+         "unit": null
         }
        ]
       }
@@ -408,6 +433,7 @@
      "name_en": "Reaper",
      "name_cn": "死神",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b7aac87959afbe062cc31518ded04b9dbcadb0a2282f8963c6bfd5ba0a2d6a27.png",
      "dev_note": "Developer Comments: The recovery time change will allow Reaper to weave primary fire shots between uses of Dire Trigger, reducing the friction of using this ability.",
      "general": [],
      "perks": [],
@@ -416,17 +442,18 @@
        "name_en": "Dire Triggers",
        "name_cn": "恐怖扳机",
        "slug": "dire-triggers",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e2e235e513bb24b92374714582a369eb4f65f2dbb52c9d0d81f51f0d2b8e7998.png",
        "changes": [
         {
          "text_en": "Recovery time reduced from 0.9 to 0.7 seconds.",
          "text_cn": null,
          "before": 0.9,
          "after": 0.7,
-         "metric": "recovery",
          "by": -0.2,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "recovery time"
+         "metric": "recovery",
+         "raw_metric": "recovery time",
+         "unit": "s"
         }
        ]
       }
@@ -437,6 +464,7 @@
      "name_en": "Soldier: 76",
      "name_cn": "士兵76",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1cb6f3ad4b8afdc1a901c26180a4c134018bb805b91eefe9b7cf2946879f10c8.png",
      "dev_note": "Developer Comments: Reducing Stim Pack's cast time will make it more responsive, allowing use during combat without dramatically affecting shooting uptime.",
      "general": [],
      "perks": [],
@@ -445,28 +473,29 @@
        "name_en": "Stim Pack",
        "name_cn": "强化药剂",
        "slug": "stim-pack",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/53c03254b2b9554679889b605008b5b60c3a719c8c2011d18284525967bc192a.png",
        "changes": [
         {
          "text_en": "Cast time reduced from 0.4 to 0.15 seconds.",
          "text_cn": null,
          "before": 0.4,
          "after": 0.15,
-         "metric": "cast_time",
          "by": -0.25,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "cast time"
+         "metric": "cast_time",
+         "raw_metric": "cast time",
+         "unit": "s"
         },
         {
          "text_en": "Stim Pack anti-heal is now cleansable.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -477,6 +506,7 @@
      "name_en": "Sombra",
      "name_cn": "黑影",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f348c1704dc50c009ac8acf6912a5a77eaf2a3acdd34e56927190af9eb9145d1.png",
      "dev_note": "Developer Comments: Improving Sombra's Major Perks to ensure they're providing value without heavily impacting her core gameplay.",
      "general": [],
      "perks": [],
@@ -485,17 +515,18 @@
        "name_en": "Stack Overflow",
        "name_cn": "堆栈溢出",
        "slug": "stack-overflow",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/99d5482b23186008a5c9fafa9c4e51e6080522f4f611b99b78a9de831904b95e.png",
        "changes": [
         {
          "text_en": "Range penalty reduced from 30% to 15%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       },
@@ -503,17 +534,18 @@
        "name_en": "White Hat",
        "name_cn": "白帽黑客",
        "slug": "white-hat",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/084ae5a7b799fef246259976373db198514222d76fbef5f59652ddf90a96bf2b.png",
        "changes": [
         {
          "text_en": "Hack is now uninterruptible from damage when healing allies.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -524,6 +556,7 @@
      "name_en": "Torbjörn",
      "name_cn": "托比昂",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2ef3a4bdd117829a83867a7775ece351c4226f29b24cdbf8d7fac89443e8d8a2.png",
      "dev_note": "Developer Comments: Torbjörn’s Turret has become difficult to deal with when paired with his Major Perks. The base statistics of Deploy Turret are being reduced, and some power is being reallocated to the Minor Perk Craftsman.",
      "general": [],
      "perks": [],
@@ -532,28 +565,29 @@
        "name_en": "Deploy Turret",
        "name_cn": "部署炮台",
        "slug": "deploy-turret",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a25d559460eed995f177b84eda6000aca6a52c8600dcf2249cc50ca31aa9c786.png",
        "changes": [
         {
          "text_en": "Base health reduced from 250 to 225.",
          "text_cn": null,
          "before": 250.0,
          "after": 225.0,
-         "metric": "base health",
          "by": -25.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "base health"
+         "metric": "base health",
+         "raw_metric": "base health",
+         "unit": null
         },
         {
          "text_en": "Turret Damage reduced from 13 to 12.",
          "text_cn": null,
          "before": 13.0,
          "after": 12.0,
-         "metric": "turret damage",
          "by": -1.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "turret damage"
+         "metric": "turret damage",
+         "raw_metric": "turret damage",
+         "unit": null
         }
        ]
       },
@@ -561,17 +595,18 @@
        "name_en": "Craftsman",
        "name_cn": "工匠技艺",
        "slug": "craftsman",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/13d2598222ada60eca2cd866fb0d669ed1e7e2c9b55649bd6839f02eb5e82c24.png",
        "changes": [
         {
          "text_en": "Now additionally increases Deploy Turret base health by 25",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -582,6 +617,7 @@
      "name_en": "Tracer",
      "name_cn": "猎空",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5ee20a1feed14da5153f19745328e9fc02bd79f8109593a9b7dab9283eb9629b.png",
      "dev_note": "Developer Comments: Increasing duration gives players additional time to take advantage of the overhealth after recalling.",
      "general": [],
      "perks": [],
@@ -590,17 +626,18 @@
        "name_en": "Quantum Entanglement",
        "name_cn": "量子纠缠",
        "slug": "quantum-entanglement",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6cabb6731c2e8ececa47e0389a279e83aeb4749a77f5f511666cc90fefd9b5ce.png",
        "changes": [
         {
          "text_en": "Overhealth duration increased from 3.5 to 6 seconds.",
          "text_cn": null,
          "before": 3.5,
          "after": 6.0,
-         "metric": "overhealth",
          "by": 2.5,
          "by_pct": null,
-         "unit": "hp",
-         "raw_metric": "overhealth duration"
+         "metric": "overhealth",
+         "raw_metric": "overhealth duration",
+         "unit": "hp"
         }
        ]
       }
@@ -620,6 +657,7 @@
      "name_en": "Baptiste",
      "name_cn": "巴蒂斯特",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5ac801c6fe84f83fe5015af89858cbdfb2ec9d32d141f582889b5381fd0195fc.png",
      "dev_note": "Developer Comments: Increasing Assault Burst's attack speed to balance its loss of instant healing. Also, boosted Automated Healing as its current effectiveness is low for an ultimate perk.",
      "general": [],
      "perks": [],
@@ -628,17 +666,18 @@
        "name_en": "Automated Healing",
        "name_cn": "自动治疗",
        "slug": "automated-healing",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ed30daabaa14fbb1ed1b493b734eed649cb57e97f105b286c421b7767d18c78b.png",
        "changes": [
         {
          "text_en": "Healing per shot is increased from 25 to 30.",
          "text_cn": null,
          "before": 25.0,
          "after": 30.0,
-         "metric": "healing",
          "by": 5.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "healing per shot is"
+         "metric": "healing",
+         "raw_metric": "healing per shot is",
+         "unit": null
         }
        ]
       },
@@ -646,17 +685,18 @@
        "name_en": "Assault Burst",
        "name_cn": "强攻冲击",
        "slug": "assault-burst",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/553710d75ac1efec10d3790d76efa142f997466f8ead48eb3a422a1493179762.png",
        "changes": [
         {
          "text_en": "Attack speed increased from 20% to 30%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -667,6 +707,7 @@
      "name_en": "Brigitte",
      "name_cn": "布丽吉塔",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/51b93ea59f369a1defa78e5d08c12b1391f5d2d94614a51fd95c125a7a6151fa.png",
      "dev_note": "Developer Comments: Barrier Restoration now grants increased movement speed, offering Brigitte additional options when she is unable to use Shield Bash on opponents.",
      "general": [],
      "perks": [],
@@ -675,17 +716,18 @@
        "name_en": "Barrier Restoration",
        "name_cn": "屏障恢复",
        "slug": "barrier-restoration",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/942b3434b9c8a5817e5b4c0045d6aebdc2b46c848b0bd1907caaceea68ef5165.png",
        "changes": [
         {
          "text_en": "After Shield Bashing, Brigitte gains 30% movement speed for 1.5 seconds.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -696,6 +738,7 @@
      "name_en": "Illari",
      "name_cn": "伊拉锐",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f33f6fe94ad55fcf9027e779f66afac358a2f93651070b95cd565ff90d670c8b.png",
      "dev_note": "Developer Comments: Increasing the power of Summer Solstice for more effective use of her ultimate ability and improved flight time.",
      "general": [],
      "perks": [],
@@ -704,17 +747,18 @@
        "name_en": "Solar Rifle",
        "name_cn": "阳焰步枪",
        "slug": "solar-rifle",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/97ca66b75aefd32c23d38a843b8be6b2325792e3cb62523b47541ce97375ab34.png",
        "changes": [
         {
          "text_en": "Weapon recharging is no longer paused while using Quick Melee.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       },
@@ -722,17 +766,18 @@
        "name_en": "Summer Solstice",
        "name_cn": "夏至骄阳",
        "slug": "summer-solstice",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/aad855a55c027e0ed21169bef4a44c9658ecd2518e9a500981e54f1879fe3869.png",
        "changes": [
         {
          "text_en": "Additionally provides 30% increased attack speed while Captive Sun is active",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -743,6 +788,7 @@
      "name_en": "Juno",
      "name_cn": "朱诺",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2a65bf12035f9c255833693224cad83fd98cead625fdf1b9da8359a7f259e01c.png",
      "dev_note": "Developer Comments: Enhancing Re-Boots to be a more valuable mobility perk, allowing players to hover for longer and utilize the double jump reset.",
      "general": [],
      "perks": [],
@@ -751,17 +797,18 @@
        "name_en": "Re-boots",
        "name_cn": "重启套靴",
        "slug": "re-boots",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/7d04db92b93a12991722b93bd0e476c8399c18578814453183c8fa4da6463feb.png",
        "changes": [
         {
          "text_en": "Now also increases the duration of Glide Boost by 25%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -772,6 +819,7 @@
      "name_en": "Lifeweaver",
      "name_cn": "生命之梭",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/57d5014ab6034db9138f838e8450693b4a97ab3c54f85d594b199a8853e75ccb.png",
      "dev_note": "Developer Comments: Triggering Superbloom can be challenging, so we are making several changes to improve the consistency of the perk.",
      "general": [],
      "perks": [],
@@ -780,39 +828,40 @@
        "name_en": "Superbloom",
        "name_cn": "超然盛放",
        "slug": "superbloom",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/82a2f603a87c9419d86958cf96a3d0b515286e0b23dde33087ad721b20790c54.png",
        "changes": [
         {
          "text_en": "Damage increased from 30 to 40.",
          "text_cn": null,
          "before": 30.0,
          "after": 40.0,
-         "metric": "damage",
          "by": 10.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "damage"
+         "metric": "damage",
+         "raw_metric": "damage",
+         "unit": null
         },
         {
          "text_en": "Number of hits to trigger increased from 16 to 20.",
          "text_cn": null,
          "before": 16.0,
          "after": 20.0,
-         "metric": "number of hits to trigger",
          "by": 4.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "number of hits to trigger"
+         "metric": "number of hits to trigger",
+         "raw_metric": "number of hits to trigger",
+         "unit": null
         },
         {
          "text_en": "Window of time to land hits increased from 1.5 to 2.5 seconds.",
          "text_cn": null,
          "before": 1.5,
          "after": 2.5,
-         "metric": "window of time to land hits",
          "by": 1.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "window of time to land hits"
+         "metric": "window of time to land hits",
+         "raw_metric": "window of time to land hits",
+         "unit": null
         }
        ]
       },
@@ -820,17 +869,18 @@
        "name_en": "Lifeweaving",
        "name_cn": "梭织生命",
        "slug": "lifeweaving",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c565ff6cc15238380661217ad85c8f86fb39304708b2cad70de37815fa878a87.png",
        "changes": [
         {
          "text_en": "Bonus to Healing Blossom heal increased from 20 to 30.",
          "text_cn": null,
          "before": 20.0,
          "after": 30.0,
-         "metric": "bonus to healing blossom heal",
          "by": 10.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "bonus to healing blossom heal"
+         "metric": "bonus to healing blossom heal",
+         "raw_metric": "bonus to healing blossom heal",
+         "unit": null
         }
        ]
       }
@@ -841,6 +891,7 @@
      "name_en": "Mercy",
      "name_cn": "天使",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c889fade479003fac5a1ff46a05aee7b0dc88fbb8d2d4b75e4be31159eb1f816.png",
      "dev_note": "Developer Comments: The cast time has been shortened to make Flash Heal more responsive for use in emergency situations.",
      "general": [],
      "perks": [],
@@ -849,17 +900,18 @@
        "name_en": "Flash Heal",
        "name_cn": "快速治疗",
        "slug": "flash-heal",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/7971a280ccb6791b351893a53e44de7717b1bf94614599e116c07adb0b5686b2.png",
        "changes": [
         {
          "text_en": "Cast time reduced from 0.875 to 0.4 seconds.",
          "text_cn": null,
          "before": 0.875,
          "after": 0.4,
-         "metric": "cast_time",
          "by": -0.475,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "cast time"
+         "metric": "cast_time",
+         "raw_metric": "cast time",
+         "unit": "s"
         }
        ]
       }
@@ -877,17 +929,17 @@
    "blocks": [
     {
      "title": "General",
-     "body": "Fixed an issue causing Maximilien’s Vault cards to not show a full 5 cards. Fixed an issue where the Overwatch League shop was missing from the shop menu. Fixed an issue causing disconnects with the replay system. Fixed an issue where the loot box thumbnails might not appear. Fixed an issue with the switch spawn button not working. Fixed a bug where some skins were incorrectly showing they were available for purchase in the hero gallery.",
+     "body": "- Fixed an issue causing Maximilien’s Vault cards to not show a full 5 cards.\n- Fixed an issue where the Overwatch League shop was missing from the shop menu.\n- Fixed an issue causing disconnects with the replay system.\n- Fixed an issue where the loot box thumbnails might not appear.\n- Fixed an issue with the switch spawn button not working.\n- Fixed a bug where some skins were incorrectly showing they were available for purchase in the hero gallery.",
      "dev": null
     },
     {
      "title": "Heroes",
-     "body": "Ana Fixed a bug where Ana's Bastet skin was missing from the game. Orisa In a previous update, fixed an issue where Orisa's overhealth would not restore if fully depleted using the Bulwark perk.",
+     "body": "Ana\n\n- Fixed a bug where Ana's Bastet skin was missing from the game.\n\nOrisa\n\n- In a previous update, fixed an issue where Orisa's overhealth would not restore if fully depleted using the Bulwark perk.",
      "dev": null
     }
    ]
   }
  ],
  "raw_text": null,
- "hash": "sha256:3bb41643e0df60ec252ff95e7143e70bd669b9befb577c3501581457f8edfcd6"
+ "hash": "sha256:9b18a6053bf941f07c714b9f7147fbe502d329283e6b3a949c9e05e3b1ba5876"
 }

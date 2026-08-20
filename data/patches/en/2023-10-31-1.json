@@ -23,7 +23,7 @@
    "blocks": [
     {
      "title": "ENDORSEMENTS",
-     "body": "Endorsement level decay has been reworked to be more forgiving in some circumstances. The endorsement level always decays slightly whenever you finish a match, but that decay is now reduced by the percentage of players who could not have endorsed you. If none of the players in the match could have endorsed you, your Endorsement level would not decay. The following reasons prevent other players from endorsing you: The player is your friend. The player endorsed you within the past 24 hours. Endorsement level decay also no longer occurs when a server shuts down. The most common reason for this is a competitive match shutting down when players leave the match early.",
+     "body": "Endorsement level decay has been reworked to be more forgiving in some circumstances. The endorsement level always decays slightly whenever you finish a match, but that decay is now reduced by the percentage of players who could not have endorsed you. If none of the players in the match could have endorsed you, your Endorsement level would not decay. The following reasons prevent other players from endorsing you:\n\n- The player is your friend.\n- The player endorsed you within the past 24 hours.\n\nEndorsement level decay also no longer occurs when a server shuts down. The most common reason for this is a competitive match shutting down when players leave the match early.",
      "dev": null
     },
     {
@@ -33,12 +33,12 @@
     },
     {
      "title": "PROGRESSION",
-     "body": "Victory Pose now shows your Progression Level instead of the Hero Level.",
+     "body": "- Victory Pose now shows your Progression Level instead of the Hero Level.",
      "dev": "Developer Comments: The hero you end the match on isn't necessarily representative of you as a player. This change is intended to better show off your overall progression."
     },
     {
      "title": "SOCIAL FEATURES",
-     "body": "The default option for match text chat is now set to OFF (previously set to ON) for new players. This can be changed in the Social Options. The default option for team voice chat is now set to ON (previously set to AUTO-JOIN) for new players. This can be changed in the Social Options. Current text or voice chat settings for existing players are not changed.",
+     "body": "- The default option for match text chat is now set to OFF (previously set to ON) for new players. This can be changed in the Social Options.\n- The default option for team voice chat is now set to ON (previously set to AUTO-JOIN) for new players. This can be changed in the Social Options.\n- Current text or voice chat settings for existing players are not changed.",
      "dev": "Developer Comments: We will be changing the defaults for both text and voice chat to encourage effective communication through the ping system while reducing the chance of encountering disruptive chat in the game."
     }
    ]
@@ -47,7 +47,7 @@
    "type": "generic_update",
    "title": "HERO UPDATES",
    "role": null,
-   "description": "HERO UPDATES Developer comments: This balance patch is largely focused on widening the window of time players have during combat between some impactful cooldowns, such as Bastion's reconfigure, Cassidy's grenade, and many of the support utilities.",
+   "description": "HERO UPDATES\n\nDeveloper comments: This balance patch is largely focused on widening the window of time players have during combat between some impactful cooldowns, such as Bastion's reconfigure, Cassidy's grenade, and many of the support utilities.",
    "heroes": [],
    "blocks": []
   },
@@ -62,6 +62,7 @@
      "name_en": "D.Va",
      "name_cn": "D.Va",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e69a3d819fd46d0dcd1d9474c248a95e69519c20077c60e9de73a1e2d3acdbb6.png",
      "dev_note": "Developer comments: The added projectile speed to Micro Missiles helps improve their consistency at medium range while the decreased movement speed penalty on Fusion Cannons enable D.Va to stick closer to mobile targets, making her more of a threat when diving into the enemy team.",
      "general": [],
      "perks": [],
@@ -70,17 +71,18 @@
        "name_en": "Fusion Cannons",
        "name_cn": "聚变机炮",
        "slug": "fusion-cannons",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/29bd15ebb32c23483a59df18a79f71301b2128c05b2f8d0c052ab86e0715e07d.png",
        "changes": [
         {
          "text_en": "Movement speed penalty reduced from 40 to 30%.",
          "text_cn": null,
          "before": 40.0,
          "after": 30.0,
-         "metric": "move_speed",
          "by": -10.0,
          "by_pct": null,
-         "unit": "m/s",
-         "raw_metric": "movement speed penalty"
+         "metric": "move_speed",
+         "raw_metric": "movement speed penalty",
+         "unit": "m/s"
         }
        ]
       },
@@ -88,17 +90,18 @@
        "name_en": "Micro Missiles",
        "name_cn": "微型飞弹",
        "slug": "micro-missiles",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1787326d46d04aa10872fc30fe512ab3575781735110dfb178ff38da352facb7.png",
        "changes": [
         {
          "text_en": "Projectile speed increased from 40 to 50.",
          "text_cn": null,
          "before": 40.0,
          "after": 50.0,
-         "metric": "projectile_speed",
          "by": 10.0,
          "by_pct": null,
-         "unit": "m/s",
-         "raw_metric": "projectile speed"
+         "metric": "projectile_speed",
+         "raw_metric": "projectile speed",
+         "unit": "m/s"
         }
        ]
       }
@@ -109,6 +112,7 @@
      "name_en": "Doomfist",
      "name_cn": "末日铁拳",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/bc538b345188bdcb2d2be5b2894d471ba54aeea53b03862429205ed49d693bbe.png",
      "dev_note": "Developer comments: This change will give the stunned player more opportunities to react to Doomfist following a wall stun.",
      "general": [],
      "perks": [],
@@ -117,28 +121,29 @@
        "name_en": "Rocket Punch",
        "name_cn": "火箭重拳",
        "slug": "rocket-punch",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/aa2a067fe151ac2795fe77546711c07be5f0880d9ae5dce554cab0c933d927f0.png",
        "changes": [
         {
          "text_en": "Minimum wall stun duration decreased from 0.25 to 0.15 seconds.",
          "text_cn": null,
          "before": 0.25,
          "after": 0.15,
-         "metric": "minimum wall stun duration",
          "by": -0.1,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "minimum wall stun duration"
+         "metric": "minimum wall stun duration",
+         "raw_metric": "minimum wall stun duration",
+         "unit": null
         },
         {
          "text_en": "Maximum wall stun duration decreased from 0.75 to 0.6 seconds.",
          "text_cn": null,
          "before": 0.75,
          "after": 0.6,
-         "metric": "maximum wall stun duration",
          "by": -0.15,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "maximum wall stun duration"
+         "metric": "maximum wall stun duration",
+         "raw_metric": "maximum wall stun duration",
+         "unit": null
         }
        ]
       }
@@ -149,6 +154,7 @@
      "name_en": "Winston",
      "name_cn": "温斯顿",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6a9a37012551410b46b2c28146404354fe21e4a1e8ea65db4e1e497eeaa05c71.png",
      "dev_note": "Developer comments: Increasing the range of the alternate fire will give Winston some more flexibility in positioning while dealing damage from range.",
      "general": [],
      "perks": [],
@@ -157,17 +163,18 @@
        "name_en": "Tesla Cannon",
        "name_cn": "特斯拉炮",
        "slug": "tesla-cannon",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/050de92c7ce31e42368c796d9c246210a40bb1bd4a5273b2d64d8a980e1f9f9a.png",
        "changes": [
         {
          "text_en": "Secondary fire range increased from 30 to 40 meters.",
          "text_cn": null,
          "before": 30.0,
          "after": 40.0,
-         "metric": "secondary fire range",
          "by": 10.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "secondary fire range"
+         "metric": "secondary fire range",
+         "raw_metric": "secondary fire range",
+         "unit": null
         }
        ]
       }
@@ -187,6 +194,7 @@
      "name_en": "Bastion",
      "name_cn": "堡垒",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3a7dc6d45ce7a1e1c2d31bd4d88b4889c412b2003ad82d1fd8e41271952c1f68.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -195,28 +203,29 @@
        "name_en": "Configuration: Assault",
        "name_cn": "强攻模式",
        "slug": "configuration-assault",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5cf3fc40ec6eeee9716f66a934d9bf7f0803a924e72c12c5d1a6c74e57c933bd.png",
        "changes": [
         {
          "text_en": "Cooldown increased from 10 to 12 seconds.",
          "text_cn": null,
          "before": 10.0,
          "after": 12.0,
-         "metric": "cooldown",
          "by": 2.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "cooldown"
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
         },
         {
          "text_en": "Weapon spread increased 10%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": "weapon spread",
          "by": null,
          "by_pct": 10.0,
-         "unit": null,
-         "raw_metric": "weapon spread"
+         "metric": "weapon spread",
+         "raw_metric": "weapon spread",
+         "unit": null
         }
        ]
       }
@@ -227,6 +236,7 @@
      "name_en": "Cassidy",
      "name_cn": "卡西迪",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8d161c49df5a962ece9ceafc6500bea473d9dd3695b9e24e39d5be616295e6c5.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -235,17 +245,18 @@
        "name_en": "Magnetic Grenade",
        "name_cn": null,
        "slug": "magnetic-grenade",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/47a593ad7f83394b011161e67a6f414e49f2221c5e014ea909fdcd9df4f94371.png",
        "changes": [
         {
          "text_en": "Cooldown increased from 10 to 12 seconds.",
          "text_cn": null,
          "before": 10.0,
          "after": 12.0,
-         "metric": "cooldown",
          "by": 2.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "cooldown"
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
         }
        ]
       }
@@ -256,6 +267,7 @@
      "name_en": "Mei",
      "name_cn": "美",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/08586dceed41e030d575b2b643118f55390f1c2af91dd15394528f5399fcc934.png",
      "dev_note": "Developer comments: With some of the recent changes, Mei is now slightly overperforming. Her improved primary fire damage output is good for her role, so rather than adjust that further, we're instead targeting the more commonly frustrating crowd control aspect of its slowing effect.",
      "general": [],
      "perks": [],
@@ -264,17 +276,18 @@
        "name_en": "Endothermic Blaster",
        "name_cn": "冰霜冲击枪",
        "slug": "endothermic-blaster",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a935216c60c1c7d72502f373f4af24651c9eb6513781bc482c60ef4d551fb6b9.png",
        "changes": [
         {
          "text_en": "Slow effect decreased from 40 to 30%.",
          "text_cn": null,
          "before": 40.0,
          "after": 30.0,
-         "metric": "slow effect",
          "by": -10.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "slow effect"
+         "metric": "slow effect",
+         "raw_metric": "slow effect",
+         "unit": null
         }
        ]
       }
@@ -285,6 +298,7 @@
      "name_en": "Sombra",
      "name_cn": "黑影",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f348c1704dc50c009ac8acf6912a5a77eaf2a3acdd34e56927190af9eb9145d1.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -293,17 +307,18 @@
        "name_en": "EMP",
        "name_cn": null,
        "slug": "emp",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6104a559ac558db8f7356a10b419d1330e98758ba9f8099666d694c088c64265.png",
        "changes": [
         {
          "text_en": "Ultimate cost decreased 10%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": "ultimate_cost",
          "by": null,
          "by_pct": 10.0,
-         "unit": null,
-         "raw_metric": "ultimate cost"
+         "metric": "ultimate_cost",
+         "raw_metric": "ultimate cost",
+         "unit": null
         }
        ]
       }
@@ -314,6 +329,7 @@
      "name_en": "Symmetra",
      "name_cn": "秩序之光",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b0a19d5c8b0e299705036f4d0b9394da5ff415dc0dcd4e9207b6e63254022dff.png",
      "dev_note": "Developer comments: With Symmetra recently gaining more lethality in her long-ranged secondary fire, she's no longer as reliant on playing at close range, so we're reverting her total health back to 200.",
      "general": [
       {
@@ -337,6 +353,7 @@
      "name_en": "Widowmaker",
      "name_cn": "黑百合",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b4871b9addd770582c8b6a1ab366b9ec08d986c2995248ee5fce7e15cb0d809d.png",
      "dev_note": "Developer comments: Recon Visor is taking a long time to charge on average relative to other ultimate abilities so we're reducing the cost. Widowmaker is also at a more severe disadvantage against Sombra with the recent rework and these changes will add more counterplay.",
      "general": [],
      "perks": [],
@@ -345,17 +362,18 @@
        "name_en": "Widow's Kiss",
        "name_cn": "寡妇之吻",
        "slug": "widows-kiss",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/13a1e7903c23a5e140aa01fa930f585c1ea69e1e24378c0462f42053085f7ad9.png",
        "changes": [
         {
          "text_en": "Unscoped shots to reach maximum spread increased from 3 to 7.",
          "text_cn": null,
          "before": 3.0,
          "after": 7.0,
-         "metric": "unscoped shots to reach maximum spread",
          "by": 4.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "unscoped shots to reach maximum spread"
+         "metric": "unscoped shots to reach maximum spread",
+         "raw_metric": "unscoped shots to reach maximum spread",
+         "unit": null
         }
        ]
       },
@@ -363,17 +381,18 @@
        "name_en": "Infra-Sight",
        "name_cn": "红外侦测",
        "slug": "infra-sight",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b7783e8f83afc45dac37b80d0801a5b8200727e3dde299510d2f1886e0c7237b.png",
        "changes": [
         {
          "text_en": "Ultimate cost reduced 10%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": "ultimate_cost",
          "by": null,
          "by_pct": 10.0,
-         "unit": null,
-         "raw_metric": "ultimate cost"
+         "metric": "ultimate_cost",
+         "raw_metric": "ultimate cost",
+         "unit": null
         }
        ]
       }
@@ -393,6 +412,7 @@
      "name_en": "Ana",
      "name_cn": "安娜",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/86debddbaaaf8699d68775a9dbffaf5b8db514772b77ff7234b1ff84c0b29fd5.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -401,17 +421,18 @@
        "name_en": "Biotic Grenade",
        "name_cn": "生物手雷",
        "slug": "biotic-grenade",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c8190b234bf0a0e28eecffe162d0c942e6b8656e95f4688c6ca3b025fa5a487d.png",
        "changes": [
         {
          "text_en": "Cooldown increased from 10 to 12 seconds.",
          "text_cn": null,
          "before": 10.0,
          "after": 12.0,
-         "metric": "cooldown",
          "by": 2.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "cooldown"
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
         }
        ]
       }
@@ -422,6 +443,7 @@
      "name_en": "Baptiste",
      "name_cn": "巴蒂斯特",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5ac801c6fe84f83fe5015af89858cbdfb2ec9d32d141f582889b5381fd0195fc.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -430,28 +452,29 @@
        "name_en": "Immortality Field",
        "name_cn": "维生力场",
        "slug": "immortality-field",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d66d82bab88fc813080dd15e31629cc3aa7c8b41cfb41d5b962b628dd345e433.png",
        "changes": [
         {
          "text_en": "Health decreased from 150 to 125.",
          "text_cn": null,
          "before": 150.0,
          "after": 125.0,
-         "metric": "health",
          "by": -25.0,
          "by_pct": null,
-         "unit": "hp",
-         "raw_metric": "health"
+         "metric": "health",
+         "raw_metric": "health",
+         "unit": "hp"
         },
         {
          "text_en": "Cooldown increased from 23 to 25 seconds.",
          "text_cn": null,
          "before": 23.0,
          "after": 25.0,
-         "metric": "cooldown",
          "by": 2.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "cooldown"
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
         }
        ]
       }
@@ -462,6 +485,7 @@
      "name_en": "Illari",
      "name_cn": "伊拉锐",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f33f6fe94ad55fcf9027e779f66afac358a2f93651070b95cd565ff90d670c8b.png",
      "dev_note": "Developer comments: Illari's overall damage output throughout a match is too high so we're reducing how consistent her Solar Rifle damage is to apply. Her weapon has some other disadvantages such as needing to charge up and a reduced critical damage multiplier, but we'll be evaluating how much of an effect this change has in combination with the reduced Healing Pylon uptime.",
      "general": [],
      "perks": [],
@@ -470,17 +494,18 @@
        "name_en": "Solar Rifle",
        "name_cn": "阳焰步枪",
        "slug": "solar-rifle",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/97ca66b75aefd32c23d38a843b8be6b2325792e3cb62523b47541ce97375ab34.png",
        "changes": [
         {
          "text_en": "Primary fire projectile size reduced from 0.1 to 0.05 meters.",
          "text_cn": null,
          "before": 0.1,
          "after": 0.05,
-         "metric": "primary fire projectile size",
          "by": -0.05,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "primary fire projectile size"
+         "metric": "primary fire projectile size",
+         "raw_metric": "primary fire projectile size",
+         "unit": null
         }
        ]
       },
@@ -488,28 +513,29 @@
        "name_en": "Healing Pylon",
        "name_cn": "治疗光塔",
        "slug": "healing-pylon",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/03b7303b1480cad458afd46b746f6f0ad55dde473063c93afeef250f6679d214.png",
        "changes": [
         {
          "text_en": "Base health reduced from 75 to 50 (total 100 HP).",
          "text_cn": null,
          "before": 75.0,
          "after": 50.0,
-         "metric": "base health",
          "by": -25.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "base health"
+         "metric": "base health",
+         "raw_metric": "base health",
+         "unit": null
         },
         {
          "text_en": "Cooldown when destroyed increased from 12 to 15 seconds.",
          "text_cn": null,
          "before": 12.0,
          "after": 15.0,
-         "metric": "cooldown",
          "by": 3.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "cooldown when destroyed"
+         "metric": "cooldown",
+         "raw_metric": "cooldown when destroyed",
+         "unit": "s"
         }
        ]
       }
@@ -520,6 +546,7 @@
      "name_en": "Kiriko",
      "name_cn": "雾子",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/24d1d7bf86c331b3d81b934442ed36fd0121f6815255c6f26f456127fb342d15.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -528,17 +555,18 @@
        "name_en": "Protection Suzu",
        "name_cn": "铃",
        "slug": "protection-suzu",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3775c37a363e1aaf02a6df4cdfb611f18e38bb69ce42dd59abddb4140cea9790.png",
        "changes": [
         {
          "text_en": "Cooldown increased from 14 to 15 seconds.",
          "text_cn": null,
          "before": 14.0,
          "after": 15.0,
-         "metric": "cooldown",
          "by": 1.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "cooldown"
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
         }
        ]
       }
@@ -549,6 +577,7 @@
      "name_en": "Lifeweaver",
      "name_cn": "生命之梭",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/57d5014ab6034db9138f838e8450693b4a97ab3c54f85d594b199a8853e75ccb.png",
      "dev_note": "Dev Comment: Lifeweaver's total healing over a match is significantly higher than any other hero so to help bring it more in line we're making some adjustments to his primary Healing Blossom.",
      "general": [],
      "perks": [],
@@ -557,28 +586,29 @@
        "name_en": "Healing Blossom",
        "name_cn": "愈疗灵花",
        "slug": "healing-blossom",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a3ccff02b44507df5c9bdaced0ecd56ac80b33285ad8a60e6c454acf90560579.png",
        "changes": [
         {
          "text_en": "Ammo reduced from 20 to 16.",
          "text_cn": null,
          "before": 20.0,
          "after": 16.0,
-         "metric": "ammo",
          "by": -4.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "ammo"
+         "metric": "ammo",
+         "raw_metric": "ammo",
+         "unit": null
         },
         {
          "text_en": "Max heal reduced from 75 to 70.",
          "text_cn": null,
          "before": 75.0,
          "after": 70.0,
-         "metric": "max heal",
          "by": -5.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "max heal"
+         "metric": "max heal",
+         "raw_metric": "max heal",
+         "unit": null
         }
        ]
       },
@@ -586,17 +616,18 @@
        "name_en": "Life Grip",
        "name_cn": "生命之握",
        "slug": "life-grip",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/36969bea55419b7ff963f2fb0ff7f80e37ecbe810bcd7dae0c7c835270c938a8.png",
        "changes": [
         {
          "text_en": "Cooldown increased from 16 to 19 seconds.",
          "text_cn": null,
          "before": 16.0,
          "after": 19.0,
-         "metric": "cooldown",
          "by": 3.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "cooldown"
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
         }
        ]
       }
@@ -607,6 +638,7 @@
      "name_en": "Zenyatta",
      "name_cn": "禅雅塔",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9367143a32f3fc07781330a0b26c6f1087361204a2b7e4088d1daf26428273f2.png",
      "dev_note": "Developer comments: The goal of these changes is to add more counterplay against Discord Orb and encourage Zenyatta players to think more about who to place it on. Now, if the effect ends for any reason, the target is temporarily unable to be targeted again by Discord Orb. A new soft-targeting reticle appears when aiming toward an enemy player that cannot be affected by Discord Orb to display the remaining duration before it can be reapplied. This is a significant change both to how the ability feels to use and how clear it is to understand, so we will be keeping a close eye on player feedback.",
      "general": [
       {
@@ -628,17 +660,18 @@
        "name_en": "Harmony Orb",
        "name_cn": null,
        "slug": "harmony-orb",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/999f5d34dd3c8dfb045bc69129d1b6aac547b98e252b68f2599b878d15d841cb.png",
        "changes": [
         {
          "text_en": "Time to wear off when not in line-of-sight increased from 3 to 5 seconds.",
          "text_cn": null,
          "before": 3.0,
          "after": 5.0,
-         "metric": "time to wear off when not in line-of-sight",
          "by": 2.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "time to wear off when not in line-of-sight"
+         "metric": "time to wear off when not in line-of-sight",
+         "raw_metric": "time to wear off when not in line-of-sight",
+         "unit": null
         }
        ]
       },
@@ -646,28 +679,29 @@
        "name_en": "Orb of Discord",
        "name_cn": "乱",
        "slug": "orb-of-discord",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f416ae3c602c4f920551057176a3618441f943a0faea5e3cf77dc5db0e5128a5.png",
        "changes": [
         {
          "text_en": "Can no longer be reapplied to the same target for 7 seconds after the effect has been removed.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Range increased from 30 to 40 meters.",
          "text_cn": null,
          "before": 30.0,
          "after": 40.0,
-         "metric": "range",
          "by": 10.0,
          "by_pct": null,
-         "unit": "m",
-         "raw_metric": "range"
+         "metric": "range",
+         "raw_metric": "range",
+         "unit": "m"
         }
        ]
       }
@@ -680,7 +714,7 @@
    "type": "generic_update",
    "title": "HERO CUSTOM CONTROL UPDATES",
    "role": null,
-   "description": "In addition to the hero balance adjustments in this update, we are implementing additional quality-of-life settings and additional input options for several hero abilities to give you the ability to custom-tailor your experience of playing your favorite heroes. Sorted many Hero-Specific Options into Advanced Hero Options category.",
+   "description": "In addition to the hero balance adjustments in this update, we are implementing additional quality-of-life settings and additional input options for several hero abilities to give you the ability to custom-tailor your experience of playing your favorite heroes.\n\n- Sorted many Hero-Specific Options into Advanced Hero Options category.",
    "heroes": [],
    "blocks": []
   },
@@ -695,6 +729,7 @@
      "name_en": "Doomfist",
      "name_cn": "末日铁拳",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/bc538b345188bdcb2d2be5b2894d471ba54aeea53b03862429205ed49d693bbe.png",
      "dev_note": null,
      "general": [
       {
@@ -742,6 +777,7 @@
      "name_en": "Sigma",
      "name_cn": "西格玛",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9738e1687bf7064de3667169788ef1b5ea9cf1746a42753c767cf17c7cb67547.png",
      "dev_note": null,
      "general": [
       {
@@ -786,6 +822,7 @@
      "name_en": "Echo",
      "name_cn": "回声",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0dc3f1679d739ef530ba2b8cbe02bf09f4d40a57c0af84f694a3241d3a7ef948.png",
      "dev_note": null,
      "general": [
       {
@@ -857,6 +894,7 @@
      "name_en": "Torbjörn",
      "name_cn": "托比昂",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2ef3a4bdd117829a83867a7775ece351c4226f29b24cdbf8d7fac89443e8d8a2.png",
      "dev_note": null,
      "general": [
       {
@@ -901,6 +939,7 @@
      "name_en": "Illari",
      "name_cn": "伊拉锐",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f33f6fe94ad55fcf9027e779f66afac358a2f93651070b95cd565ff90d670c8b.png",
      "dev_note": null,
      "general": [
       {
@@ -936,6 +975,7 @@
      "name_en": "Lúcio",
      "name_cn": "卢西奥",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/dee7e92975f5e659fa6b28c508d8fbad62bda720698b1d21f2492af7b9f94b48.png",
      "dev_note": null,
      "general": [
       {
@@ -983,6 +1023,7 @@
      "name_en": "Mercy",
      "name_cn": "天使",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c889fade479003fac5a1ff46a05aee7b0dc88fbb8d2d4b75e4be31159eb1f816.png",
      "dev_note": null,
      "general": [
       {
@@ -1049,17 +1090,17 @@
    "blocks": [
     {
      "title": "TANK",
-     "body": "D. Va Reworked Rumble on Primary Fire. Added rumble on activation of Defense Matrix. Adjusted trigger feedback on Defense Matrix to account for damage of destroyed projectile. Added rumble on projectile destruction for Defense Matrix. Added rumble on Self-Destruct activation. Added trigger feedback on Boosters. Added rumble on Call Mech start. Adjusted rumble on Call Mech. Added rumble on Call Mech hit. Added rumble on entering the Mech after Call Mech. Doomfist Added rumble on start of Power Block. Added rumble on Fist Empowerment. Orisa Fusion Driver rumble now scales slightly with Heat. Added rumble on Overheat. Added rumble on Javelin Spin start. Added rumble on Javelin Spin duration. Added rumble on Javelin Spin damaging an enemy. Added rumble on Javelin Spin end. Added rumble on Terra Surge start. Added rumble on Terra Surge charge Added rumble on Terra Surge activation. Ramattra Increase rumble strength and duration on Pummel. Added rumble on Block activation. Reinhardt Added rumble on Barrier activation. Roadhog Added rumble on Chain Hook activation. Added trigger feedback on Chain Hook activation. Added trigger feedback on Chain Hook impact. Added trigger feedback on Chain Hook retraction. Sigma Added rumble on Accreation fire. Added rumble on Kinetic Grasp duration. Added rumble on Kinetic Grasp absorb. Added rumble on Kinetic Grasp Overhealth gain. Added rumble on Gravitic Flux intro. Added rumble on Gravitic Flux searching for targets. Added rumble on Gravitic Flux found targets. Added rumble on Gravitic Flux holding targets. Adjusted rumble on Gravitic Flux slam. Winston Added rumble on Jump Pack activation. Added rumble on Secondary Fire release. Added rumble on Barrier Projector Activation. Reworked rumble on Winston’s Primal Rage punch. Added trigger feedback on Winston’s Primal Rage punch hit. Wrecking Ball Added rumble on Roll exit. Adjusted the rumble on Piledriver impact. Zarya Added rumble on Particle Barrier. Added rumble on Barrier Deploy. Added rumble on Particle Barrier end. Increased the rumble strength on Particle Beam while targeting an enemy.",
+     "body": "D. Va\n\n- Reworked Rumble on Primary Fire.\n- Added rumble on activation of Defense Matrix.\n- Adjusted trigger feedback on Defense Matrix to account for damage of destroyed projectile.\n- Added rumble on projectile destruction for Defense Matrix.\n- Added rumble on Self-Destruct activation.\n- Added trigger feedback on Boosters.\n- Added rumble on Call Mech start.\n- Adjusted rumble on Call Mech.\n- Added rumble on Call Mech hit.\n- Added rumble on entering the Mech after Call Mech.\n\nDoomfist\n\n- Added rumble on start of Power Block.\n- Added rumble on Fist Empowerment.\n\nOrisa\n\n- Fusion Driver rumble now scales slightly with Heat.\n- Added rumble on Overheat.\n- Added rumble on Javelin Spin start.\n- Added rumble on Javelin Spin duration.\n- Added rumble on Javelin Spin damaging an enemy.\n- Added rumble on Javelin Spin end.\n- Added rumble on Terra Surge start.\n- Added rumble on Terra Surge charge\n- Added rumble on Terra Surge activation.\n\nRamattra\n\n- Increase rumble strength and duration on Pummel.\n- Added rumble on Block activation.\n\nReinhardt\n\n- Added rumble on Barrier activation.\n\nRoadhog\n\n- Added rumble on Chain Hook activation.\n- Added trigger feedback on Chain Hook activation.\n- Added trigger feedback on Chain Hook impact.\n- Added trigger feedback on Chain Hook retraction.\n\nSigma\n\n- Added rumble on Accreation fire.\n- Added rumble on Kinetic Grasp duration.\n- Added rumble on Kinetic Grasp absorb.\n- Added rumble on Kinetic Grasp Overhealth gain.\n- Added rumble on Gravitic Flux intro.\n- Added rumble on Gravitic Flux searching for targets.\n- Added rumble on Gravitic Flux found targets.\n- Added rumble on Gravitic Flux holding targets.\n- Adjusted rumble on Gravitic Flux slam.\n\nWinston\n\n- Added rumble on Jump Pack activation.\n- Added rumble on Secondary Fire release.\n- Added rumble on Barrier Projector Activation.\n- Reworked rumble on Winston’s Primal Rage punch.\n- Added trigger feedback on Winston’s Primal Rage punch hit.\n- Wrecking Ball\n- Added rumble on Roll exit.\n- Adjusted the rumble on Piledriver impact.\n\nZarya\n\n- Added rumble on Particle Barrier.\n- Added rumble on Barrier Deploy.\n- Added rumble on Particle Barrier end.\n- Increased the rumble strength on Particle Beam while targeting an enemy.",
      "dev": null
     },
     {
      "title": "DAMAGE",
-     "body": "Ashe Added rumble on Dynamite. Added rumble on B.O.B. call. Added rumble on B.O.B. landing. Cassidy Added rumble on Magnetic Grenade. Added rumble on Deadeye start. Genji Added rumble during Dash. Added rumble on Dash dealing damage. Added rumble on Deflect start. Added rumble on Deflect deflection. Reworked rumble on Dragonblade swing. Added Trigger Feedback on Dragonblade swing hit. Added rumble on Wall Climb. Added rumble on Ledge Climb. Added rumble on Double Jump. Hanzo Added trigger feedback on Bow charge. Reduced rumble duration on charging arrow to match charge time. Reduced rumble on holding arrow. Reduced rumble on arrow fire during Storm Arrows. Added rumble on Lunge. Added rumble on Dragonstrike fire. Added rumble on Wall Climb. Added rumble on Ledge Climb. Added rumble on Sonic Arrow Equip. Junkrat Adjusted RIP-tire rumble. Reduced rumble on Concussive Mine when not hitting self. Increased rumble on Concussive Mine when hitting self. Added rumble on Concussive Mine fire. Added rumble on Steel Trap fire. Mei Added rumble on Blizzard fire. Added rumble on Ice Wall start. Added rumble on Ice Wall destroy. Pharah Increased Rumble on Primary Fire. Added rumble on hitting yourself with Concussive Blast. Reaper Swapped the Left and Right Primary Fire rumble. Increased the rumble on the Left Primary Fire. Added rumble on Wraith Form activation. Added rumble on Wraith form ending. Adjusted Shadowstep’s trigger feedback for player’s input settings. Added rumble on Shadowstep start. Sojourn Increased rumble on Primary Fire. Adjusted rumble on Secondary Fire. Added unique rumble on Secondary Fire shots charged above 90. Added rumble on Power Slide jump. Soldier: 76 Adjusted rumble on Helix Rockets. Added rumble on Sprint start. Added rumble on Spring duration. Added rumble on Tactical Visor start. Symmetra Added rumble on all three levels of Primary Fire on miss. Added rumble on moving from level 3 to level 2. Added rumble on moving from level 2 to level 1. Added rumble on Teleporter start. Added rumble on Teleporter destroy. Added rumble on Photon Barrier start. Lengthened rumble on Photon Barrier fire. Added rumble on using the teleporter (as any character). Torbjörn Added rumble on Turret Deploy. Added rumble on Turret Destroy. Widowmaker Added rumble on Infra-sights.",
+     "body": "Ashe\n\n- Added rumble on Dynamite.\n- Added rumble on B.O.B. call.\n- Added rumble on B.O.B. landing.\n\nCassidy\n\n- Added rumble on Magnetic Grenade.\n- Added rumble on Deadeye start.\n\nGenji\n\n- Added rumble during Dash.\n- Added rumble on Dash dealing damage.\n- Added rumble on Deflect start.\n- Added rumble on Deflect deflection.\n- Reworked rumble on Dragonblade swing.\n- Added Trigger Feedback on Dragonblade swing hit.\n- Added rumble on Wall Climb.\n- Added rumble on Ledge Climb.\n- Added rumble on Double Jump.\n\nHanzo\n\n- Added trigger feedback on Bow charge.\n- Reduced rumble duration on charging arrow to match charge time.\n- Reduced rumble on holding arrow.\n- Reduced rumble on arrow fire during Storm Arrows.\n- Added rumble on Lunge.\n- Added rumble on Dragonstrike fire.\n- Added rumble on Wall Climb.\n- Added rumble on Ledge Climb.\n- Added rumble on Sonic Arrow Equip.\n\nJunkrat\n\n- Adjusted RIP-tire rumble.\n- Reduced rumble on Concussive Mine when not hitting self.\n- Increased rumble on Concussive Mine when hitting self.\n- Added rumble on Concussive Mine fire.\n- Added rumble on Steel Trap fire.\n\nMei\n\n- Added rumble on Blizzard fire.\n- Added rumble on Ice Wall start.\n- Added rumble on Ice Wall destroy.\n\nPharah\n\n- Increased Rumble on Primary Fire.\n- Added rumble on hitting yourself with Concussive Blast.\n\nReaper\n\n- Swapped the Left and Right Primary Fire rumble.\n- Increased the rumble on the Left Primary Fire.\n- Added rumble on Wraith Form activation.\n- Added rumble on Wraith form ending.\n- Adjusted Shadowstep’s trigger feedback for player’s input settings.\n- Added rumble on Shadowstep start.\n\nSojourn\n\n- Increased rumble on Primary Fire.\n- Adjusted rumble on Secondary Fire.\n- Added unique rumble on Secondary Fire shots charged above 90.\n- Added rumble on Power Slide jump.\n\nSoldier: 76\n\n- Adjusted rumble on Helix Rockets.\n- Added rumble on Sprint start.\n- Added rumble on Spring duration.\n- Added rumble on Tactical Visor start.\n\nSymmetra\n\n- Added rumble on all three levels of Primary Fire on miss.\n- Added rumble on moving from level 3 to level 2.\n- Added rumble on moving from level 2 to level 1.\n- Added rumble on Teleporter start.\n- Added rumble on Teleporter destroy.\n- Added rumble on Photon Barrier start.\n- Lengthened rumble on Photon Barrier fire.\n- Added rumble on using the teleporter (as any character).\n\nTorbjörn\n\n- Added rumble on Turret Deploy.\n- Added rumble on Turret Destroy.\n\nWidowmaker\n\n- Added rumble on Infra-sights.",
      "dev": null
     },
     {
      "title": "SUPPORT",
-     "body": "Baptiste Reworked Exo-boots hold rumble. Shortened Exo-boots charging-up rumble. Added rumble on Amplification Matrix Start. Brigitte Reworked Brigitte’s Primary Fire rumble. Added rumble on Shield Barrier activation. Illari Added rumble on Healing Pylon destroy. Kiriko Reworked Healing Ofuda rumble. Adjusted Healing Ofuda rumble to respond to acquiring targets. Added rumble on Wall Climb. Added rumble on Ledge Climb. Lifeweaver Reworked Rumble on Rejuvenating Dash to be directional. Added rumble on Tree of Life start. Added rumble on Tree of Life destroy. Lúcio Added rumble on Amp It Up. Added rumble on Crossfade. Added rumble on Wall Ride start. Added rumble on Wall Ride ride. Added rumble on Wall Ride jump. Added rumble on Sound Barrier start. Added rumble on Sound Barrier. Reworked rumble on Sound Barrier Fire. Mercy Added trigger feedback on Caduceus Staff Secondary Fire. Added trigger feedback on Caduceus Blaster. Added rumble on Valkyrie intro. Moira Reduced rumble on Secondary Fire. Zenyatta Added rumble on Healing Orb. Added rumble on Discord Orb.",
+     "body": "Baptiste\n\n- Reworked Exo-boots hold rumble.\n- Shortened Exo-boots charging-up rumble.\n- Added rumble on Amplification Matrix Start.\n\nBrigitte\n\n- Reworked Brigitte’s Primary Fire rumble.\n- Added rumble on Shield Barrier activation.\n\nIllari\n\n- Added rumble on Healing Pylon destroy.\n\nKiriko\n\n- Reworked Healing Ofuda rumble.\n- Adjusted Healing Ofuda rumble to respond to acquiring targets.\n- Added rumble on Wall Climb.\n- Added rumble on Ledge Climb.\n\nLifeweaver\n\n- Reworked Rumble on Rejuvenating Dash to be directional.\n- Added rumble on Tree of Life start.\n- Added rumble on Tree of Life destroy.\n\nLúcio\n\n- Added rumble on Amp It Up.\n- Added rumble on Crossfade.\n- Added rumble on Wall Ride start.\n- Added rumble on Wall Ride ride.\n- Added rumble on Wall Ride jump.\n- Added rumble on Sound Barrier start.\n- Added rumble on Sound Barrier.\n- Reworked rumble on Sound Barrier Fire.\n\nMercy\n\n- Added trigger feedback on Caduceus Staff Secondary Fire.\n- Added trigger feedback on Caduceus Blaster.\n- Added rumble on Valkyrie intro.\n\nMoira\n\n- Reduced rumble on Secondary Fire.\n\nZenyatta\n\n- Added rumble on Healing Orb.\n- Added rumble on Discord Orb.",
      "dev": null
     }
    ]
@@ -1073,22 +1114,22 @@
    "blocks": [
     {
      "title": "GENERAL",
-     "body": "Audio Fixed an issue in the Training Grounds where the Heavy Training Bot’s Shield was playing the incorrect impact effect. Adjusted the areas in the training grounds in which the default Training Bot's weapon fire can be heard. This should provide content creators some additional quiet areas for capturing their media. Hero Mastery Fixed a bug that could result in a perpetual black screen if you died to enemy damage after a course restart. Resolved an issue that resulted in no Hero icon being shown in the Results screen during a Replay. Resolved a bug that could result in 'New Personal Best' being displayed for any score. Fixed a bug that could occur on some platforms that caused the Kill Feed and HUD to vanish if Try Again was selected. Resolved an issue for Mercy that resulted in Healing not being displayed in the Scoring Details. Other Fixes Fixed a bug that would disband your group if you selected 'Leave as Group' in a Competitive match. Fixed a bug in the Hero Gallery that would cause the UI to highlight another cosmetic after equipping one. Fixed an issue that caused the achievement 'The Friend Zone' to not unlock on some platforms despite requirements being met. Fixed an issue that resulted in enemy team Roles being revealed via the scoreboard in Mystery Heroes. Fixed a bug that prevented some Player Icons from being equipped. Fixed a bug that prevented 'Random From Favorites' from working during Hero Select. Fixed a bug with AI bots picking heroes excluded in the Custom Game Settings which would result in empty slots in the match.",
+     "body": "Audio\n\n- Fixed an issue in the Training Grounds where the Heavy Training Bot’s Shield was playing the incorrect impact effect.\n- Adjusted the areas in the training grounds in which the default Training Bot's weapon fire can be heard. This should provide content creators some additional quiet areas for capturing their media.\n\nHero Mastery\n\n- Fixed a bug that could result in a perpetual black screen if you died to enemy damage after a course restart.\n- Resolved an issue that resulted in no Hero icon being shown in the Results screen during a Replay.\n- Resolved a bug that could result in 'New Personal Best' being displayed for any score.\n- Fixed a bug that could occur on some platforms that caused the Kill Feed and HUD to vanish if Try Again was selected.\n- Resolved an issue for Mercy that resulted in Healing not being displayed in the Scoring Details.\n\nOther Fixes\n\n- Fixed a bug that would disband your group if you selected 'Leave as Group' in a Competitive match.\n- Fixed a bug in the Hero Gallery that would cause the UI to highlight another cosmetic after equipping one.\n- Fixed an issue that caused the achievement 'The Friend Zone' to not unlock on some platforms despite requirements being met.\n- Fixed an issue that resulted in enemy team Roles being revealed via the scoreboard in Mystery Heroes.\n- Fixed a bug that prevented some Player Icons from being equipped.\n- Fixed a bug that prevented 'Random From Favorites' from working during Hero Select.\n- Fixed a bug with AI bots picking heroes excluded in the Custom Game Settings which would result in empty slots in the match.",
      "dev": null
     },
     {
      "title": "MAPS",
-     "body": "Antarctic Peninsula Fixed some areas of the map that could get players stuck. New Junk City Moved some environment assets from floating in one of the spawn rooms. Route 66 Fixed an area of the map that allowed players to stand outside the intended playable space. Samoa Fixed some areas that had gaps that caused unintended sight lines. Fixed some areas that allowed players to stand in unintended locations. Fixed some areas of the map that allowed turrets to be placed outside the playable space but still attack enemies. Fixed some areas of that map that could get players stuck. Fixed lighting in some areas of the map.",
+     "body": "Antarctic Peninsula\n\n- Fixed some areas of the map that could get players stuck.\n\nNew Junk City\n\n- Moved some environment assets from floating in one of the spawn rooms.\n\nRoute 66\n\n- Fixed an area of the map that allowed players to stand outside the intended playable space.\n\nSamoa\n\n- Fixed some areas that had gaps that caused unintended sight lines.\n- Fixed some areas that allowed players to stand in unintended locations.\n- Fixed some areas of the map that allowed turrets to be placed outside the playable space but still attack enemies.\n- Fixed some areas of that map that could get players stuck.\n- Fixed lighting in some areas of the map.",
      "dev": null
     },
     {
      "title": "HEROES",
-     "body": "Illari Fixed a bug that resulted in the 'Daybreak' skin displaying twice in the Skin Selection while in pre-game Hero Select. Resolved an issue with Healing Pylon that could result in players launching out of it. Lifeweaver Fixed a bug that prevented Petal Platform from falling when Hacked. Lúcio Fixed a bug with the Hermes skin that caused the sounds played during Wallride to be louder than intended. Mercy Fixed an interaction with Sombra that prevented Mercy's beams not properly fading out when applied to a Stealth Sombra. Moira Fixed a bug with the 'Be Beautiful' Highlight Intro not displaying the window behind Moira on all platforms. Sombra Fixed in a previous update - Resolved an issue that caused Sombra to appear untextured after interacting with Random from Favorites. Zenyatta Fixed an issue where sometimes Orbs of Discord and Harmony would not stay attached to the target.",
+     "body": "Illari\n\n- Fixed a bug that resulted in the 'Daybreak' skin displaying twice in the Skin Selection while in pre-game Hero Select.\n- Resolved an issue with Healing Pylon that could result in players launching out of it.\n\nLifeweaver\n\n- Fixed a bug that prevented Petal Platform from falling when Hacked.\n\nLúcio\n\n- Fixed a bug with the Hermes skin that caused the sounds played during Wallride to be louder than intended.\n\nMercy\n\n- Fixed an interaction with Sombra that prevented Mercy's beams not properly fading out when applied to a Stealth Sombra.\n\nMoira\n\n- Fixed a bug with the 'Be Beautiful' Highlight Intro not displaying the window behind Moira on all platforms.\n\nSombra\n\n- Fixed in a previous update - Resolved an issue that caused Sombra to appear untextured after interacting with Random from Favorites.\n\nZenyatta\n\n- Fixed an issue where sometimes Orbs of Discord and Harmony would not stay attached to the target.",
      "dev": null
     }
    ]
   }
  ],
  "raw_text": null,
- "hash": "sha256:d963f405a9a4984b51242b7aca8ef123ef0f07bd3749122d3018e2d75e5d053f"
+ "hash": "sha256:a9f0aaf8cb75a4a2a674b9730b661dd88c8a31b8dc700fee94f777f93ae440db"
 }

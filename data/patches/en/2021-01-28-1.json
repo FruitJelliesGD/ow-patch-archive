@@ -17,6 +17,7 @@
      "name_en": "Echo",
      "name_cn": "回声",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ce8aec64726308d50cc0e4656d9bfe7647b886cc23830e0c80439cb92bfbdbcc.png",
      "dev_note": "Echo's kit is designed around mobility and burst damage but she was performing too well against high health targets, such as tanks. Reducing the maximum firing duration of her primary weapon and Focusing Beam will lower her sustained damage output without impacting her burst damage potential against squishier targets.",
      "general": [],
      "perks": [],
@@ -25,17 +26,18 @@
        "name_en": "Tri-Shot",
        "name_cn": "三角射击",
        "slug": "tri-shot",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8fc9f68f9cdcd7c90ce902d1882bca2e783609f7f0e62c8ee00996eec4026063.png",
        "changes": [
         {
          "text_en": "Ammo reduced from 15 to 12",
          "text_cn": null,
          "before": 15.0,
          "after": 12.0,
-         "metric": "ammo",
          "by": -3.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "ammo"
+         "metric": "ammo",
+         "raw_metric": "ammo",
+         "unit": null
         }
        ]
       },
@@ -43,17 +45,18 @@
        "name_en": "Focusing Beam",
        "name_cn": "聚焦光线",
        "slug": "focusing-beam",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6552feeb85a32ae7131df50f61a9c0fa24bf347bf007e208a356a940561129ae.png",
        "changes": [
         {
          "text_en": "Duration reduced from 2.5 seconds to 2 seconds",
          "text_cn": null,
          "before": 2.5,
          "after": 2.0,
-         "metric": "duration",
          "by": -0.5,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "duration"
+         "metric": "duration",
+         "raw_metric": "duration",
+         "unit": "s"
         }
        ]
       }
@@ -64,6 +67,7 @@
      "name_en": "Tracer",
      "name_cn": "猎空",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a74a59e54131214afedbeb964d8be02de53a08dbef939632235187b1501aa74b.png",
      "dev_note": "This new falloff range causes the damage to scale down faster when targets are outside of Tracer's optimal distance, making her less threatening at mid-range.",
      "general": [],
      "perks": [],
@@ -72,17 +76,18 @@
        "name_en": "Pulse Pistols",
        "name_cn": "脉冲双枪",
        "slug": "pulse-pistols",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/400eb87506839326001fef9376a977e01febc73dc11afb153c49c0c49042e8f9.png",
        "changes": [
         {
          "text_en": "Min-Max damage falloff rescaled from 13-23 meters down to 12-20 meters",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -93,6 +98,7 @@
      "name_en": "Zenyatta",
      "name_cn": "禅雅塔",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0ac1ec8a83a9a8c3de27d975c1da5356cd22ef68e3a662c98bdee5204ca302e7.png",
      "dev_note": "Zenyatta has been a bit too effective at enabling team-wide damage output lately so we're taking some power out of the Orb of Discord by reducing both its total damage amplification as well as the speed at which it can be applied over long distances. The new projectile speed now matches that of his primary fire, Orb of Destruction.",
      "general": [],
      "perks": [],
@@ -101,17 +107,18 @@
        "name_en": "Orb of Harmony",
        "name_cn": "谐",
        "slug": "orb-of-harmony",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/999f5d34dd3c8dfb045bc69129d1b6aac547b98e252b68f2599b878d15d841cb.png",
        "changes": [
         {
          "text_en": "Projectile speed reduced from 120 to 90",
          "text_cn": null,
          "before": 120.0,
          "after": 90.0,
-         "metric": "projectile_speed",
          "by": -30.0,
          "by_pct": null,
-         "unit": "m/s",
-         "raw_metric": "projectile speed"
+         "metric": "projectile_speed",
+         "raw_metric": "projectile speed",
+         "unit": "m/s"
         }
        ]
       },
@@ -119,28 +126,29 @@
        "name_en": "Orb of Discord",
        "name_cn": "乱",
        "slug": "orb-of-discord",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f416ae3c602c4f920551057176a3618441f943a0faea5e3cf77dc5db0e5128a5.png",
        "changes": [
         {
          "text_en": "Projectile speed reduced from 120 to 90",
          "text_cn": null,
          "before": 120.0,
          "after": 90.0,
-         "metric": "projectile_speed",
          "by": -30.0,
          "by_pct": null,
-         "unit": "m/s",
-         "raw_metric": "projectile speed"
+         "metric": "projectile_speed",
+         "raw_metric": "projectile speed",
+         "unit": "m/s"
         },
         {
          "text_en": "Damage amplification reduced from 30% to 25%",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }

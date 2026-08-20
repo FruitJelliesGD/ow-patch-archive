@@ -10,7 +10,7 @@
    "type": "generic_update",
    "title": "Conquest Event Finale (Talon v Overwatch)",
    "role": null,
-   "description": "The battle continues! The event will conclude its final week on 3/16 and a global winner will be announced! Participate to earn the final week of rewards for either Overwatch or Talon (or both!): OW: 2 player icons, 1 namecard, 1 common and 1 legendary lootbox Talon: 1 spray, 1 icon, 1 voiceline, 1 common and 1 legendary lootbox Whichever side wins by the end of the week will determine which Echo skin (Talon/OW) all eligible players that week will receive! At the end of week 5, you might notice a few different ways the winner is made known - keep an eye out!",
+   "description": "The battle continues! The event will conclude its final week on 3/16 and a global winner will be announced!\n\n- Participate to earn the final week of rewards for either Overwatch or Talon (or both!):\n  - OW: 2 player icons, 1 namecard, 1 common and 1 legendary lootbox\n  - Talon: 1 spray, 1 icon, 1 voiceline, 1 common and 1 legendary lootbox\n- Whichever side wins by the end of the week will determine which Echo skin (Talon/OW) all eligible players that week will receive!\n- At the end of week 5, you might notice a few different ways the winner is made known - keep an eye out!",
    "heroes": [],
    "blocks": []
   },
@@ -39,17 +39,17 @@
    "blocks": [
     {
      "title": "Medic Subrole",
-     "body": "Increased self-healing from 25% to 40%.",
+     "body": "- Increased self-healing from 25% to 40%.",
      "dev": "The Medic subrole has been underperforming, as its self-healing conversion was not impactful enough in combat. Increasing self-healing will allow it to cut through in engagements."
     },
     {
      "title": "Bruiser Subrole",
-     "body": "Now triggers below 50% health.",
+     "body": "- Now triggers below 50% health.",
      "dev": "The activation threshold for the Bruiser subrole has been adjusted from critical health to below 50% health. This change standardizes when the effect becomes active and increases the window when the subrole is active."
     },
     {
      "title": "Initiator Subrole",
-     "body": "No longer triggers while at full health. Healing reduced from 75 to 60.",
+     "body": "- No longer triggers while at full health.\n- Healing reduced from 75 to 60.",
      "dev": "The Initiator subrole's passive has been reduced in effectiveness as it has been providing more healing than intended throughout matches. Healing will no longer trigger while at full health to avoid starting the internal cooldown."
     }
    ]
@@ -65,6 +65,7 @@
      "name_en": "D.Va",
      "name_cn": "D.Va",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1f6a7dcd9f35dcd719cb4672fe714610cebb7c13037d1a77a27fb0b1b795ddaa.png",
      "dev_note": "D.Va’s mobility and survivability combination provides a high level of uptime during engagements. Increasing Boosters’ cooldown creates clearer commitment windows while reducing the effectiveness of the Initiator subrole.",
      "general": [],
      "perks": [],
@@ -73,17 +74,18 @@
        "name_en": "Boosters",
        "name_cn": "推进器",
        "slug": "boosters",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/7076c739fe2c1d11f4f118d9e22a3d8f66303242434b71a7e4451e62f5d27b65.png",
        "changes": [
         {
          "text_en": "Cooldown increased from 3.5 to 4 seconds.",
          "text_cn": null,
          "before": 3.5,
          "after": 4.0,
-         "metric": "cooldown",
          "by": 0.5,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "cooldown"
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
         }
        ]
       }
@@ -94,6 +96,7 @@
      "name_en": "Hazard",
      "name_cn": "骇灾",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f5f6c3e6378f59c991cc60d817ec0f8b73b6957c277ff1ce23e89895ed6c6628.png",
      "dev_note": "Hazard was originally placed in the Stalwart subrole to mitigate the impact of crowd control during engagements. Since the introduction of subroles, he has struggled in performance. Moving Hazard to the Initiator subrole better supports a more aggressive, sustain-focused playstyle.",
      "general": [
       {
@@ -117,6 +120,7 @@
      "name_en": "Ramattra",
      "name_cn": "拉玛刹",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f54a877264e161c2aa4d5755ef4411eb7fd7e4eb910075936e91ddb043b8a58e.png",
      "dev_note": "Reducing Void Barrier’s cooldown improves its cycling within engagements, while increasing Annihilation’s damage per second enhances its presence during extended fights.",
      "general": [],
      "perks": [],
@@ -125,17 +129,18 @@
        "name_en": "Void Barrier",
        "name_cn": "虚空屏障",
        "slug": "void-barrier",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/94d29f925b938d4898f440d06d8543e49c772e09cb89ef9812826fb2be54f9c7.png",
        "changes": [
         {
          "text_en": "(5v5) Cooldown reduced from 13 to 12 seconds.",
          "text_cn": null,
          "before": 13.0,
          "after": 12.0,
-         "metric": "cooldown",
          "by": -1.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "cooldown"
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
         }
        ]
       },
@@ -143,17 +148,18 @@
        "name_en": "Annihilation",
        "name_cn": "诛",
        "slug": "annihilation",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/283267c35bf45ecfaf8f8fdeee5f8b29e36ab6937fda9112f730dce85e963213.png",
        "changes": [
         {
          "text_en": "Damage per second increased from 30 to 35.",
          "text_cn": null,
          "before": 30.0,
          "after": 35.0,
-         "metric": "damage",
          "by": 5.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "damage per second"
+         "metric": "damage",
+         "raw_metric": "damage per second",
+         "unit": null
         }
        ]
       }
@@ -164,6 +170,7 @@
      "name_en": "Roadhog",
      "name_cn": "路霸",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b8afaed1ce60cbddfc555d778839d4670868537a4319814da4ba13cdd1159887.png",
      "dev_note": "Roadhog’s overall effectiveness has remained lower than intended since his minor rework. Increasing Scrap Gun’s damage will improve the consistency of his Hook combo while additionally increasing overall damage output.",
      "general": [],
      "perks": [],
@@ -172,17 +179,18 @@
        "name_en": "Scrap Gun",
        "name_cn": "爆裂枪",
        "slug": "scrap-gun",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d48d0b264d765e3732abda784e986595f7a6c5ad0e56f1929c008ffc0492a39d.png",
        "changes": [
         {
          "text_en": "Damage per pellet increased from 6.5 to 7.",
          "text_cn": null,
          "before": 6.5,
          "after": 7.0,
-         "metric": "damage",
          "by": 0.5,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "damage per pellet"
+         "metric": "damage",
+         "raw_metric": "damage per pellet",
+         "unit": null
         }
        ]
       }
@@ -202,6 +210,7 @@
      "name_en": "Anran",
      "name_cn": "安燃",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ba10f1241fdd52603c7feff49eccc83d6ca21ba9a6545ed37db74f87270fa4e9.png",
      "dev_note": "These movement adjustments improve Inferno Rush’s fluidity and traversal options while the ability is active.",
      "general": [],
      "perks": [],
@@ -210,28 +219,29 @@
        "name_en": "Inferno Rush",
        "name_cn": "怒炎冲",
        "slug": "inferno-rush",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/92cd63b84d95581dfbe8c3974be31c9f303db4d25bfd117474f93ab5bc9cca4b.png",
        "changes": [
         {
          "text_en": "Will now automatically climb over small ledges.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Jump height while active increased by 20%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": "jump height while active",
          "by": null,
          "by_pct": 20.0,
-         "unit": null,
-         "raw_metric": "jump height while active"
+         "metric": "jump height while active",
+         "raw_metric": "jump height while active",
+         "unit": null
         }
        ]
       }
@@ -242,6 +252,7 @@
      "name_en": "Emre",
      "name_cn": "埃姆雷",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0e0618cd94b50deee7621f4a5f0b79e93f92d85d4aee348389d338c972f9377e.png",
      "dev_note": "Reducing the delay before Altered Vitals triggers allows it to activate more reliably when disengaging.",
      "general": [],
      "perks": [],
@@ -250,17 +261,18 @@
        "name_en": "Altered Vitals",
        "name_cn": "机变体征",
        "slug": "altered-vitals",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/fec616f100308698fe85eb6c7a36daa8af6d26181de8fa2f0e59ee2414bcb6df.png",
        "changes": [
         {
          "text_en": "Time before trigger reduced from 4.5 to 4 seconds.",
          "text_cn": null,
          "before": 4.5,
          "after": 4.0,
-         "metric": "time before trigger",
          "by": -0.5,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "time before trigger"
+         "metric": "time before trigger",
+         "raw_metric": "time before trigger",
+         "unit": null
         }
        ]
       }
@@ -271,6 +283,7 @@
      "name_en": "Vendetta",
      "name_cn": "斩仇",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/53109fa61b9fcdd83ca94ceb96a1321253a744e1b1319e2645a29264812988b4.png",
      "dev_note": "Siphoning Strike has provided significant self-sustain relative to being a Minor perk. Moving it to Major better reflects its impact while additionally avoiding the overall passive power when combined with Relentless. Raging Storm damage has been reduced and moved to a Minor to compensate.",
      "general": [],
      "perks": [
@@ -282,7 +295,8 @@
         "Moved from Major to Minor.",
         "Damage per spin reduced from 35 to 30."
        ],
-       "lines_cn": []
+       "lines_cn": [],
+       "raw_text": []
       },
       {
        "name_en": "Siphoning Strike",
@@ -292,7 +306,8 @@
         "Moved from Minor to Major.",
         "Overhead lifesteal increased from 30% to 40%."
        ],
-       "lines_cn": []
+       "lines_cn": [],
+       "raw_text": []
       }
      ],
      "abilities": []
@@ -311,6 +326,7 @@
      "name_en": "Illari",
      "name_cn": "伊拉锐",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/536202d2d6a31cb4bd95405f5869df3227e53059257b9ee7bd0e0b2590e96637.png",
      "dev_note": "Illari has been delivering strong healing alongside high offensive pressure. Reducing her secondary fire uptime and tuning down specific perks lowers her overall performance while maintaining her identity.",
      "general": [],
      "perks": [
@@ -321,7 +337,8 @@
        "lines_en": [
         "Attack speed gained reduced from 30% to 20%."
        ],
-       "lines_cn": []
+       "lines_cn": [],
+       "raw_text": []
       },
       {
        "name_en": "Sunburn",
@@ -330,7 +347,8 @@
        "lines_en": [
         "Damage reduced from 70 to 50."
        ],
-       "lines_cn": []
+       "lines_cn": [],
+       "raw_text": []
       }
      ],
      "abilities": [
@@ -338,17 +356,18 @@
        "name_en": "Solar Rifle",
        "name_cn": "阳焰步枪",
        "slug": "solar-rifle",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b5bbee12c4a45526f3ab0c73b0027eae88f4da57192e68e9b30bbc9da3e032a6.png",
        "changes": [
         {
          "text_en": "Secondary Fire Maximum resource reduced from 3.5 to 3 seconds.",
          "text_cn": null,
          "before": 3.5,
          "after": 3.0,
-         "metric": "secondary fire maximum resource",
          "by": -0.5,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "secondary fire maximum resource"
+         "metric": "secondary fire maximum resource",
+         "raw_metric": "secondary fire maximum resource",
+         "unit": null
         }
        ]
       }
@@ -359,6 +378,7 @@
      "name_en": "Jetpack Cat",
      "name_cn": "飞天猫",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d169a8d9c4875ebebb6e635801ab75345221cb21e875c6eb1ad2a884195f48bb.png",
      "dev_note": "Territorial has been removed due to high offensive potential with limited counterplay. Claws Out moves to a Major perk with a reduced cooldown due to its relative strength, while a new Minor perk Ulterior Motive introduces an additional fuel recovery option to support healing-focused playstyles.",
      "general": [],
      "perks": [
@@ -369,7 +389,8 @@
        "lines_en": [
         "Removed"
        ],
-       "lines_cn": []
+       "lines_cn": [],
+       "raw_text": []
       },
       {
        "name_en": "Claws Out",
@@ -379,7 +400,8 @@
         "Moved from Minor to Major.",
         "Cooldown reduced from 8 to 6 seconds."
        ],
-       "lines_cn": []
+       "lines_cn": [],
+       "raw_text": []
       },
       {
        "name_en": "Ulterior Motive",
@@ -389,7 +411,8 @@
         "New",
         "15% of Biotic Pawjectiles healing is converted into fuel."
        ],
-       "lines_cn": []
+       "lines_cn": [],
+       "raw_text": []
       }
      ],
      "abilities": []
@@ -399,6 +422,7 @@
      "name_en": "Mizuki",
      "name_cn": "瑞稀",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8c5f25e135a5f200951caf4321be961a5ecbdfbe21a9c9fb96c6d17e0d887854.png",
      "dev_note": "Maintaining allies within Remedy Aura’s radius can be restrictive during engagements. Increasing the radius improves accessibility, while reducing the degeneration delay makes sustaining higher Aura levels more difficult.",
      "general": [],
      "perks": [],
@@ -407,28 +431,29 @@
        "name_en": "Remedy Aura",
        "name_cn": "安魂灵气",
        "slug": "remedy-aura",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/11ba949531e0cf7d2fab159f0806c08c31a9e770836ec5efcc408df043b72995.png",
        "changes": [
         {
          "text_en": "Radius increased from 10 to 12 meters.",
          "text_cn": null,
          "before": 10.0,
          "after": 12.0,
-         "metric": "radius",
          "by": 2.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "radius"
+         "metric": "radius",
+         "raw_metric": "radius",
+         "unit": null
         },
         {
          "text_en": "Time before degeneration reduced from 2 to 1.75 seconds.",
          "text_cn": null,
          "before": 2.0,
          "after": 1.75,
-         "metric": "time before degeneration",
          "by": -0.25,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "time before degeneration"
+         "metric": "time before degeneration",
+         "raw_metric": "time before degeneration",
+         "unit": null
         }
        ]
       }
@@ -446,7 +471,7 @@
    "blocks": [
     {
      "title": "Stadium General Mod Icon Update",
-     "body": "Hey everyone! Let’s talk General Mods – the bread and butter of your Stadium builds, what makes or breaks a match, what defines heroes and – well, you get the drift. When Stadium launched last March, we knew that eventually we’d like to update the design of the General Mods and make them look similar to our Powers and Hero Items. When discussions for Season 1 of Overwatch began, we believed it would be the perfect time to give the General Mods a ‘refresh’ as the rest of the game was getting the same treatment. We wanted to create designs based on the mod name and color them based on stat (ex: ‘Field Rations’ is now a macaroni and cheese container, and ‘Aerial Distresser’ looks like a plane) because we believed it would be far easier to locate unique and distinct designs than trying to find ‘that mod with a health icon’. And though we aimed high with these designs, we missed the mark and strayed away from one of our core design principles of accessibility and readability. We’ve heard your feedback (thank you, by the way!) and have reverted the General Mods back to rarity color, with slightly brighter backgrounds so the icon art pops against it. Additionally, in the coming months, we’ll be performing color passes on the icon art to ensure that it maintains readability (don’t worry, the overall shape won’t change!) and we’ll continue to monitor feedback from the community and see how we can improve to ensure everyone’s Stadium experience, especially in the Armory, is as smooth as possible!",
+     "body": "Hey everyone! Let’s talk General Mods – the bread and butter of your Stadium builds, what makes or breaks a match, what defines heroes and – well, you get the drift. When Stadium launched last March, we knew that eventually we’d like to update the design of the General Mods and make them look similar to our Powers and Hero Items. When discussions for Season 1 of Overwatch began, we believed it would be the perfect time to give the General Mods a ‘refresh’ as the rest of the game was getting the same treatment.\n\nWe wanted to create designs based on the mod name and color them based on stat (ex: ‘Field Rations’ is now a macaroni and cheese container, and ‘Aerial Distresser’ looks like a plane) because we believed it would be far easier to locate unique and distinct designs than trying to find ‘that mod with a health icon’. And though we aimed high with these designs, we missed the mark and strayed away from one of our core design principles of accessibility and readability. We’ve heard your feedback (thank you, by the way!) and have reverted the General Mods back to rarity color, with slightly brighter backgrounds so the icon art pops against it. Additionally, in the coming months, we’ll be performing color passes on the icon art to ensure that it maintains readability (don’t worry, the overall shape won’t change!) and we’ll continue to monitor feedback from the community and see how we can improve to ensure everyone’s Stadium experience, especially in the Armory, is as smooth as possible!",
      "dev": null
     }
    ]
@@ -460,17 +485,17 @@
    "blocks": [
     {
      "title": "General",
-     "body": "Fixed an audio issue where Mizuki's Ultimate sound was similar to the teammate eliminated sound. Fixed an issue which allowed Mizuki to incorrectly charge his Remedy Aura before the round started. Fixed an issue where Mizuki's Paper Doll totem briefly appeared in unintended areas of the map before landing in its proper location. Fixed an issue preventing weapon variants from being applied to Juno's Pulsar Torpedoes. Fixed an issue where Wrecking Ball's Multi-Ball perk would not award additional mines if they were not used during the first ultimate. Fixed an issue which incorrectly allowed Pharah to move during Barrage while tethered by Mizuki's chain. Fixed an issue which incorrectly allowed Anran's Dancing Blaze ability to cleanse Junker Queen’s ultimate effect.",
+     "body": "- Fixed an audio issue where Mizuki's Ultimate sound was similar to the teammate eliminated sound.\n- Fixed an issue which allowed Mizuki to incorrectly charge his Remedy Aura before the round started.\n- Fixed an issue where Mizuki's Paper Doll totem briefly appeared in unintended areas of the map before landing in its proper location.\n- Fixed an issue preventing weapon variants from being applied to Juno's Pulsar Torpedoes.\n- Fixed an issue where Wrecking Ball's Multi-Ball perk would not award additional mines if they were not used during the first ultimate.\n- Fixed an issue which incorrectly allowed Pharah to move during Barrage while tethered by Mizuki's chain.\n- Fixed an issue which incorrectly allowed Anran's Dancing Blaze ability to cleanse Junker Queen’s ultimate effect.",
      "dev": null
     },
     {
      "title": "Stadium",
-     "body": "Fixed an issue with Torbjörn's Skyline Nanites item not dealing bonus damage to airborne enemies. Fixed an issue with Juno's Orbital Alignment power not lifting enemies into the air. Fixed an issue with Juno's Medimaster power not reducing the cooldown of Hyper Ring. Fixed an issue with Vendetta's The Closer mod not granting the 10% critical damage bonus to her overhead swing. Fixed an issue with Vendetta's Scaled Steel mod not granting the 25% range increase. Fixed an issue with Vendetta's Warrior’s Shout mod not applying when using Whirlwind Dash into a wall.",
+     "body": "- Fixed an issue with Torbjörn's Skyline Nanites item not dealing bonus damage to airborne enemies.\n- Fixed an issue with Juno's Orbital Alignment power not lifting enemies into the air.\n- Fixed an issue with Juno's Medimaster power not reducing the cooldown of Hyper Ring.\n- Fixed an issue with Vendetta's The Closer mod not granting the 10% critical damage bonus to her overhead swing.\n- Fixed an issue with Vendetta's Scaled Steel mod not granting the 25% range increase.\n- Fixed an issue with Vendetta's Warrior’s Shout mod not applying when using Whirlwind Dash into a wall.",
      "dev": null
     }
    ]
   }
  ],
  "raw_text": null,
- "hash": "sha256:0e8861d29e82e3c2d31b4641e2219491238da044ade52661a0effb535fae176d"
+ "hash": "sha256:8dae6528503c4ad00f57f42f7093708d412a7040c4db101fb6553468f31877da"
 }

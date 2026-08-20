@@ -18,7 +18,7 @@
    "type": "generic_update",
    "title": "NEW GAME MODE – HERO MASTERY",
    "role": null,
-   "description": "Hero Mastery is a new, single-player game mode that allows players to test their skills with individual heroes on custom courses. Push your expertise to the limit for high scores and dominate the leaderboards. Are you up to the challenge? Each hero can be played on three unique courses of increasing difficulty. Flex your skills and unlock up to five stars on each course. Hero Mastery courses are scored on various factors, including time, eliminations, heals, and escorts. Each hero has individual stats that are tracked as well. Plus collect all the Mastery Emblems to show off your prowess! Hero Mastery is launching with a limited-time event that includes exclusive rewards. Courses for Tracer, Reinhardt, and Mercy are now available, along with courses for Sojourn, Winston, and more premiering in the weeks ahead.",
+   "description": "Hero Mastery is a new, single-player game mode that allows players to test their skills with individual heroes on custom courses. Push your expertise to the limit for high scores and dominate the leaderboards. Are you up to the challenge?\n\n- Each hero can be played on three unique courses of increasing difficulty. Flex your skills and unlock up to five stars on each course.\n- Hero Mastery courses are scored on various factors, including time, eliminations, heals, and escorts. Each hero has individual stats that are tracked as well. Plus collect all the Mastery Emblems to show off your prowess!\n- Hero Mastery is launching with a limited-time event that includes exclusive rewards. Courses for Tracer, Reinhardt, and Mercy are now available, along with courses for Sojourn, Winston, and more premiering in the weeks ahead.",
    "heroes": [],
    "blocks": []
   },
@@ -31,7 +31,7 @@
    "blocks": [
     {
      "title": "PING SYSTEM UPDATES",
-     "body": "Owned entities (such as Torbjörn's Turret, Symmetra's Teleporter, or Illari's Healing Pylon) now have a lower priority as ping targets than enemy heroes.",
+     "body": "- Owned entities (such as Torbjörn's Turret, Symmetra's Teleporter, or Illari's Healing Pylon) now have a lower priority as ping targets than enemy heroes.",
      "dev": null
     }
    ]
@@ -55,6 +55,7 @@
      "name_en": "Junker Queen",
      "name_cn": "渣客女王",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/cf66adfac58a0321ec1f7d3a7241d6bf2f3b311707064d2f0ace2e3f4e342727.png",
      "dev_note": "Developer Comment: This change rewards throwing accuracy with the Jagged Blade without directly affecting Junker Queen's self-healing.",
      "general": [],
      "perks": [],
@@ -63,17 +64,18 @@
        "name_en": "Jagged Blade",
        "name_cn": "锯齿利刃",
        "slug": "jagged-blade",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/7aff09649e4e2daeec13cfcca4d5e369b4ddc0160587637bb607761ecf89f16c.png",
        "changes": [
         {
          "text_en": "Impact damage increased from 50 to 65.",
          "text_cn": null,
          "before": 50.0,
          "after": 65.0,
-         "metric": "impact damage",
          "by": 15.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "impact damage"
+         "metric": "impact damage",
+         "raw_metric": "impact damage",
+         "unit": null
         }
        ]
       }
@@ -84,6 +86,7 @@
      "name_en": "Orisa",
      "name_cn": "奥丽莎",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/20c12a10cfe0b5608f9eec63a74ecb0ccd18a114019bc77bb2765f87776e17ed.png",
      "dev_note": "Developer Comment: The Fortify cooldown has been adjusted so that the effective uptime remains the same. However, Orisa is no longer incentivized to cancel the ability early to begin the cooldown immediately, which makes the interval between uses consistent and more susceptible to counterplay.",
      "general": [],
      "perks": [],
@@ -92,39 +95,40 @@
        "name_en": "Fortify",
        "name_cn": "强固防御",
        "slug": "fortify",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d697fa90726cf683222920822d2ee00a85e0420c6cbc6ec2365573f313d06357.png",
        "changes": [
         {
          "text_en": "Cooldown begins when the ability is activated instead of when it ends.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Cooldown increased from 12 to 16.5 seconds.",
          "text_cn": null,
          "before": 12.0,
          "after": 16.5,
-         "metric": "cooldown",
          "by": 4.5,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "cooldown"
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
         },
         {
          "text_en": "Overhealth bonus decreased from 125 to 100.",
          "text_cn": null,
          "before": 125.0,
          "after": 100.0,
-         "metric": "overhealth",
          "by": -25.0,
          "by_pct": null,
-         "unit": "hp",
-         "raw_metric": "overhealth bonus"
+         "metric": "overhealth",
+         "raw_metric": "overhealth bonus",
+         "unit": "hp"
         }
        ]
       }
@@ -135,6 +139,7 @@
      "name_en": "Zarya",
      "name_cn": "查莉娅",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d43075cba10cd711a129556142849587e78f1f55b0105d39a640da53ffa64e1b.png",
      "dev_note": "Developer Comment: Zarya often spends both barrier charges on herself as it is usually more consistent for building energy. The change to Projected Barrier incentivizes using the barrier for her allies more often.",
      "general": [],
      "perks": [],
@@ -143,39 +148,40 @@
        "name_en": "Projected Barrier",
        "name_cn": "投射屏障",
        "slug": "projected-barrier",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6e42984ee8329a50e9c2460ae2df7670d7be9846a093c336e4576d1eea1fb2f1.png",
        "changes": [
         {
          "text_en": "Health increased from 200 to 225.",
          "text_cn": null,
          "before": 200.0,
          "after": 225.0,
-         "metric": "health",
          "by": 25.0,
          "by_pct": null,
-         "unit": "hp",
-         "raw_metric": "health"
+         "metric": "health",
+         "raw_metric": "health",
+         "unit": "hp"
         },
         {
          "text_en": "Cooldown decreased from 10 to 8 seconds.",
          "text_cn": null,
          "before": 10.0,
          "after": 8.0,
-         "metric": "cooldown",
          "by": -2.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "cooldown"
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
         },
         {
          "text_en": "Size increased 15%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": "size",
          "by": null,
          "by_pct": 15.0,
-         "unit": null,
-         "raw_metric": "size"
+         "metric": "size",
+         "raw_metric": "size",
+         "unit": null
         }
        ]
       }
@@ -195,6 +201,7 @@
      "name_en": "Ashe",
      "name_cn": "艾什",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e41d918d0e7ffa772b5571df3d0dc1a05e6d9032307f78be935972cfd59f208a.png",
      "dev_note": "Developer Comment: Ashe has the longest total reload time of all heroes to balance out the advantage of being able to shoot after a partial reload. However, we are shortening it slightly to make the full reload from empty less punishing.",
      "general": [],
      "perks": [],
@@ -203,17 +210,18 @@
        "name_en": "The Viper",
        "name_cn": null,
        "slug": "the-viper",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/cca8472a3e966de2b9985cee492e527eac5063e9881797dded4ca1e32e292bc0.png",
        "changes": [
         {
          "text_en": "Reload time decreased from .25 to .2 seconds.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -224,6 +232,7 @@
      "name_en": "Bastion",
      "name_cn": "堡垒",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3a7dc6d45ce7a1e1c2d31bd4d88b4889c412b2003ad82d1fd8e41271952c1f68.png",
      "dev_note": "Developer Comment: The A-36 Tactical Grenade is now more reliable after having its projectile size increased recently, so it doesn't need to be quite as damaging. The change to Configuration Artillery is a bug fix from what was intended for the ultimate, and we’ll monitor to see how this impacts Bastion’s performance.",
      "general": [],
      "perks": [],
@@ -232,17 +241,18 @@
        "name_en": "A-36 Tactical Grenade",
        "name_cn": "A-36战术榴弹",
        "slug": "a-36-tactical-grenade",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/22f9f8c043e1746011d7dcee2e811e0d24470bd0eb5128fca9c3aea2f2dcfe69.png",
        "changes": [
         {
          "text_en": "Impact damage decreased from 30 to 15.",
          "text_cn": null,
          "before": 30.0,
          "after": 15.0,
-         "metric": "impact damage",
          "by": -15.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "impact damage"
+         "metric": "impact damage",
+         "raw_metric": "impact damage",
+         "unit": null
         }
        ]
       },
@@ -250,17 +260,18 @@
        "name_en": "Configuration Artillery",
        "name_cn": "火炮模式",
        "slug": "configuration-artillery",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/06c377aef476bfb21ee1dca3d4d1151f8a4131b388a5489f3dfce6fb232a2711.png",
        "changes": [
         {
          "text_en": "Can no longer deal critical hits.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -271,6 +282,7 @@
      "name_en": "Mei",
      "name_cn": "美",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/08586dceed41e030d575b2b643118f55390f1c2af91dd15394528f5399fcc934.png",
      "dev_note": "Developer Comment: Mei is still underperforming after her last set of changes, so we are increasing the effectiveness of primary fire and improving the quality of life to Deep Chill.",
      "general": [],
      "perks": [],
@@ -279,28 +291,29 @@
        "name_en": "Endothermic Blaster",
        "name_cn": "冰霜冲击枪",
        "slug": "endothermic-blaster",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a935216c60c1c7d72502f373f4af24651c9eb6513781bc482c60ef4d551fb6b9.png",
        "changes": [
         {
          "text_en": "Damage increased from 65 to 70 per second.",
          "text_cn": null,
          "before": 65.0,
          "after": 70.0,
-         "metric": "damage",
          "by": 5.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "damage"
+         "metric": "damage",
+         "raw_metric": "damage",
+         "unit": null
         },
         {
          "text_en": "Duration before slow falls off between primary fire hits increased from 0.5 to 0.6 seconds.",
          "text_cn": null,
          "before": 0.5,
          "after": 0.6,
-         "metric": "duration",
          "by": 0.1,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "duration before slow falls off between primary fire hits"
+         "metric": "duration",
+         "raw_metric": "duration before slow falls off between primary fire hits",
+         "unit": "s"
         }
        ]
       },
@@ -308,17 +321,18 @@
        "name_en": "Deep Chill",
        "name_cn": null,
        "slug": "deep-chill",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c14b2c5652526a006233965b176fb2b5af9e7c5d44045fad3844267303f07091.png",
        "changes": [
         {
          "text_en": "Bonus damage can now also be triggered with Mei's quick melee.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -331,13 +345,14 @@
    "type": "hero_update",
    "title": "Support",
    "role": "support",
-   "description": "Support Passive Duration until support passive activates increased from 1.5 to 2 seconds.",
+   "description": "Support Passive\n\n- Duration until support passive activates increased from 1.5 to 2 seconds.",
    "heroes": [
     {
      "slug": "baptiste",
      "name_en": "Baptiste",
      "name_cn": "巴蒂斯特",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5ac801c6fe84f83fe5015af89858cbdfb2ec9d32d141f582889b5381fd0195fc.png",
      "dev_note": "Developer Comment: Regenerative Burst’s overall healing output has been too effective after gaining the bonus instant heal for low-health allies, so we are reducing its total healing slightly.",
      "general": [],
      "perks": [],
@@ -346,28 +361,29 @@
        "name_en": "Regenerative Burst",
        "name_cn": "愈合冲击",
        "slug": "regenerative-burst",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d887d165f7b0eb98a30af8f274ff740c6c7735af719b93e95dd9da17558815d8.png",
        "changes": [
         {
          "text_en": "Instant healing decreased from 50 to 40.",
          "text_cn": null,
          "before": 50.0,
          "after": 40.0,
-         "metric": "instant healing",
          "by": -10.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "instant healing"
+         "metric": "instant healing",
+         "raw_metric": "instant healing",
+         "unit": null
         },
         {
          "text_en": "Heal over time decreased from 50 over 5 seconds to 40 over 4 seconds.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -378,6 +394,7 @@
      "name_en": "Kiriko",
      "name_cn": "雾子",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/24d1d7bf86c331b3d81b934442ed36fd0121f6815255c6f26f456127fb342d15.png",
      "dev_note": "Developer Comment: The Protection Suzu no longer knocks back enemy heroes, so the projectile doesn't need to impact them either. This quality-of-life change prevents accidental activations when thrown into groups with both enemies and allies.",
      "general": [],
      "perks": [],
@@ -386,17 +403,18 @@
        "name_en": "Protection Suzu",
        "name_cn": "铃",
        "slug": "protection-suzu",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3775c37a363e1aaf02a6df4cdfb611f18e38bb69ce42dd59abddb4140cea9790.png",
        "changes": [
         {
          "text_en": "Now passes through enemy heroes.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -414,27 +432,27 @@
    "blocks": [
     {
      "title": "GENERAL",
-     "body": "Fixed an issue with the Daybreak challenge being reset to 0 and not receiving progress after completing games. The Save-a-Mari challenge now specifies the difficulty requirements for completion. Resolved an issue where the Progression Level badge wasn't promoting. Players who have already reached levels where the badge should now be promoted to the correct badge now. Fixed a bug with the Option 'Relative Aim Sensitivity' not accepting a value of 0%. Fixed an instance where equipped Competitive Titles would reset after a relog. Fixed a bug with Matches Played showing as abandoned for matches played on another platform. Fixed gaps and other environment issues in Mischief and Magic. Fixed navigation issues that could occur with a controller in Winston's Lab. Fixed the missing sound effects for Training Bots respawning. Fixed a bug on controller/gamepads that prevented some characters from flying diagonally. Resolved a bug with the Overtime bar not burning all the way down in Competitive, making it difficult to tell when the round is over. Fixed an issue that prevented players from immediately equipping Golden weapons after purchase.",
+     "body": "- Fixed an issue with the Daybreak challenge being reset to 0 and not receiving progress after completing games.\n- The Save-a-Mari challenge now specifies the difficulty requirements for completion.\n- Resolved an issue where the Progression Level badge wasn't promoting. Players who have already reached levels where the badge should now be promoted to the correct badge now.\n- Fixed a bug with the Option 'Relative Aim Sensitivity' not accepting a value of 0%.\n- Fixed an instance where equipped Competitive Titles would reset after a relog.\n- Fixed a bug with Matches Played showing as abandoned for matches played on another platform.\n- Fixed gaps and other environment issues in Mischief and Magic.\n- Fixed navigation issues that could occur with a controller in Winston's Lab.\n- Fixed the missing sound effects for Training Bots respawning.\n- Fixed a bug on controller/gamepads that prevented some characters from flying diagonally.\n- Resolved a bug with the Overtime bar not burning all the way down in Competitive, making it difficult to tell when the round is over.\n- Fixed an issue that prevented players from immediately equipping Golden weapons after purchase.",
      "dev": null
     },
     {
      "title": "MAPS",
-     "body": "Dorado Fixed a bug in the environment near the final point that sometimes allowed Mei's Blizzard to go through the environment. New Junk City Fixed areas on the map that players could become stuck in. Fixed lighting issues in specific areas on the map. Added the intro when loading into the map. You will now be greeted with 'Welcome to New Junk City.' Suravasa Fixed some fountains on the map that allowed some turrets to be hidden. Fixed a few areas that did not have correct lighting. Fixed areas on the map that players could become stuck on. Fixed areas on the map that allowed players to stand outside the playable space. Fixed gaps in the geometry in several areas across the map.",
+     "body": "Dorado\n\n- Fixed a bug in the environment near the final point that sometimes allowed Mei's Blizzard to go through the environment.\n\nNew Junk City\n\n- Fixed areas on the map that players could become stuck in.\n- Fixed lighting issues in specific areas on the map.\n- Added the intro when loading into the map. You will now be greeted with 'Welcome to New Junk City.'\n\nSuravasa\n\n- Fixed some fountains on the map that allowed some turrets to be hidden.\n- Fixed a few areas that did not have correct lighting.\n- Fixed areas on the map that players could become stuck on.\n- Fixed areas on the map that allowed players to stand outside the playable space.\n- Fixed gaps in the geometry in several areas across the map.",
      "dev": null
     },
     {
      "title": "CO-OP MISSIONS",
-     "body": "Rio Fixed a bug that could occur after the Artillery lands that resulted in your camera looking at the sky after regaining control of the camera. Toronto Fixed an interaction with the train that could force players outside of the map boundaries. Fixed a bug with lighting that could occur on this map when changing graphics settings. Gothenburg Fixed a location in spawn where players could become stuck.",
+     "body": "Rio\n\n- Fixed a bug that could occur after the Artillery lands that resulted in your camera looking at the sky after regaining control of the camera.\n\nToronto\n\n- Fixed an interaction with the train that could force players outside of the map boundaries.\n- Fixed a bug with lighting that could occur on this map when changing graphics settings.\n\nGothenburg\n\n- Fixed a location in spawn where players could become stuck.",
      "dev": null
     },
     {
      "title": "HEROES",
-     "body": "Bastion Fixed an error that resulted in the vertical knockback on Bastion's Tactical Grenade being reduced. Echo Fixed a bug with Duplicated Illari's displaying the incorrect VFX colors when casting Captive Sun. Fixed an interaction with Duplicated Symmetra turrets persisting through the duration of Duplicate. Illari Fixed an interaction with Genji's Deflect and Illari's Healing Pylon. Deflecting the pylon should now correctly heal Genji's allies. Fixed a bug that prevented the Stay Dead voice line from being equipped. Resolved an interaction that allowed Illari to see underneath the map if they were slept by an Ana Sleep Dart while using Captive Sun. Fixed an interaction with Illari's Pylon indicator being disabled if it was Hacked by Sombra. Fixed an interaction with Symmetra's Teleporter that allowed Illari to place a Pylon in mid-air. Fixed several instances that resulted in the Pylon being destroyed instantly after deploying. Junker Queen Fixed a bug where Junker Queen recalling Jagged Blade in the same frame as it stuck in an object (by holding Secondary Fire and aiming at an object the same distance away as the Knife's recall range) would cause a pingable knife to be stuck in the world. Kiriko Fixed a bug that made it difficult to Swift Step to allies in rooms with low ceilings. Lifeweaver Fixed a bug allowing friendly EMPs to destroy your Petal Platform. Ramattra Resolved a bug that prevented the damage increase from Zenyatta's Discord from being correctly applied while Ramattra was Blocking.",
+     "body": "Bastion\n\n- Fixed an error that resulted in the vertical knockback on Bastion's Tactical Grenade being reduced.\n\nEcho\n\n- Fixed a bug with Duplicated Illari's displaying the incorrect VFX colors when casting Captive Sun.\n- Fixed an interaction with Duplicated Symmetra turrets persisting through the duration of Duplicate.\n\nIllari\n\n- Fixed an interaction with Genji's Deflect and Illari's Healing Pylon. Deflecting the pylon should now correctly heal Genji's allies.\n- Fixed a bug that prevented the Stay Dead voice line from being equipped.\n- Resolved an interaction that allowed Illari to see underneath the map if they were slept by an Ana Sleep Dart while using Captive Sun.\n- Fixed an interaction with Illari's Pylon indicator being disabled if it was Hacked by Sombra.\n- Fixed an interaction with Symmetra's Teleporter that allowed Illari to place a Pylon in mid-air.\n- Fixed several instances that resulted in the Pylon being destroyed instantly after deploying.\n\nJunker Queen\n\n- Fixed a bug where Junker Queen recalling Jagged Blade in the same frame as it stuck in an object (by holding Secondary Fire and aiming at an object the same distance away as the Knife's recall range) would cause a pingable knife to be stuck in the world.\n\nKiriko\n\n- Fixed a bug that made it difficult to Swift Step to allies in rooms with low ceilings.\n\nLifeweaver\n\n- Fixed a bug allowing friendly EMPs to destroy your Petal Platform.\n\nRamattra\n\n- Resolved a bug that prevented the damage increase from Zenyatta's Discord from being correctly applied while Ramattra was Blocking.",
      "dev": null
     }
    ]
   }
  ],
  "raw_text": null,
- "hash": "sha256:6e7ac196bb20f0e5291a3c0b404491674730cd96ec718b11d342da90f2bba182"
+ "hash": "sha256:79a9507884661036d708656f3a7ec1a3e032e76e120bf71abb25866c0be8d6bd"
 }

@@ -26,7 +26,7 @@
    "type": "generic_update",
    "title": "6V6 EXPERIMENTAL - MINIMUM 1, MAXIMUM 3",
    "role": null,
-   "description": "Step back into Overwatch’s origins even more with a fresh twist on the beloved six-player team format. The 6v6 Min 1, Max 3 Mode is a unique experiment that blends nostalgia with modern gameplay dynamics, offering a structured composition alongside the flexibility to switch roles mid-match. And your participation in this experiment will help shape the future of Overwatch 2’s gameplay—so don’t miss this chance to leave your mark. Heroes are selected first come, first serve. Each team must have at least one hero from all three roles, but cannot have more than three heroes from any given role. Players can switch between roles while in the spawn room. Hero balance for this experiment uses the same hero balance from the 6v6 2-2-2 Role Queue experiment. This game mode is available to play in Unranked from January 21 to February 3.",
+   "description": "Step back into Overwatch’s origins even more with a fresh twist on the beloved six-player team format. The 6v6 Min 1, Max 3 Mode is a unique experiment that blends nostalgia with modern gameplay dynamics, offering a structured composition alongside the flexibility to switch roles mid-match. And your participation in this experiment will help shape the future of Overwatch 2’s gameplay—so don’t miss this chance to leave your mark.\n\n- Heroes are selected first come, first serve.\n- Each team must have at least one hero from all three roles, but cannot have more than three heroes from any given role.\n- Players can switch between roles while in the spawn room.\n- Hero balance for this experiment uses the same hero balance from the 6v6 2-2-2 Role Queue experiment.\n- This game mode is available to play in Unranked from January 21 to February 3.",
    "heroes": [],
    "blocks": []
   },
@@ -34,7 +34,7 @@
    "type": "generic_update",
    "title": "OVERWATCH CLASSIC - MOTH META",
    "role": null,
-   "description": "Overwatch Classic - Moth Meta brings you back to one of the most iconic and chaotic chapters in Overwatch history. Mercy’s legendary “Moth” gameplay takes the spotlight as her lightning-fast Resurrects redefine team fights, while heroes like DPS Doomfist and Symmetra with her Shield Generator make a triumphant return to the battlefield. Step onto beloved maps Oasis, Eichenwalde, and Junkertown, where every skirmish is packed with nostalgic strategies and unpredictable mayhem. Heroes added include Ana, Sombra, Orisa, and Doomfist. Maps added include Eichenwalde, Oasis, Horizon Lunar Colony, and Junkertown. Hero balance is adjusted to the September 2017 Hero Balance.",
+   "description": "Overwatch Classic - Moth Meta brings you back to one of the most iconic and chaotic chapters in Overwatch history. Mercy’s legendary “Moth” gameplay takes the spotlight as her lightning-fast Resurrects redefine team fights, while heroes like DPS Doomfist and Symmetra with her Shield Generator make a triumphant return to the battlefield. Step onto beloved maps Oasis, Eichenwalde, and Junkertown, where every skirmish is packed with nostalgic strategies and unpredictable mayhem.\n\n- Heroes added include Ana, Sombra, Orisa, and Doomfist.\n- Maps added include Eichenwalde, Oasis, Horizon Lunar Colony, and Junkertown.\n- Hero balance is adjusted to the September 2017 Hero Balance.",
    "heroes": [],
    "blocks": []
   },
@@ -55,12 +55,12 @@
    "blocks": [
     {
      "title": "COMPETITIVE DRIVES",
-     "body": "A new Drives signature is available to earn from February 11 to February 16 To celebrate the end of the 2024 Competitive Year, players can earn up to 6,000 Competitive Points (instead of the usual 3,000) by completing Competitive Drive Stages for this season only, enough to unlock 2 Jade or Golden Weapon Variants.",
+     "body": "- A new Drives signature is available to earn from February 11 to February 16\n- To celebrate the end of the 2024 Competitive Year, players can earn up to 6,000 Competitive Points (instead of the usual 3,000) by completing Competitive Drive Stages for this season only, enough to unlock 2 Jade or Golden Weapon Variants.",
      "dev": null
     },
     {
      "title": "COMPETITIVE REWARDS",
-     "body": "As the 2024 Competitive Year concludes, Season 14 is the last chance to redeem Competitive Points for Jade Weapon Variants. After Season 14 is complete, any accumulated Competitive Points will be converted to Legacy Competitive Points which can be redeemed for Golden Weapon Variants. Jade Weapon Variants will not be available to collect starting in Season 15.",
+     "body": "- As the 2024 Competitive Year concludes, Season 14 is the last chance to redeem Competitive Points for Jade Weapon Variants. After Season 14 is complete, any accumulated Competitive Points will be converted to Legacy Competitive Points which can be redeemed for Golden Weapon Variants. Jade Weapon Variants will not be available to collect starting in Season 15.",
      "dev": null
     }
    ]
@@ -84,6 +84,7 @@
      "name_en": "Ramattra",
      "name_cn": "拉玛刹",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/cf69d4bfa61ac14f61d3d541b0d2687a20fa24f55afe7a392d746f5ccb138dea.png",
      "dev_note": "Developer Comment: Ramattra has been underperforming relative to other brawl tanks. Adding a small increase to his armor will provide a necessary boost without altering his core gameplay.",
      "general": [
       {
@@ -107,6 +108,7 @@
      "name_en": "Winston",
      "name_cn": "温斯顿",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6a9a37012551410b46b2c28146404354fe21e4a1e8ea65db4e1e497eeaa05c71.png",
      "dev_note": "Developer Comment: Winston's dive potential has been impacted by the increased health pools of enemies. By boosting the damage of the Tesla Cannon's secondary fire and providing more ammo, this will allow Winston to follow up and finish off enemies without needing to reload as often.",
      "general": [],
      "perks": [],
@@ -115,28 +117,29 @@
        "name_en": "Tesla Cannon",
        "name_cn": "特斯拉炮",
        "slug": "tesla-cannon",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/050de92c7ce31e42368c796d9c246210a40bb1bd4a5273b2d64d8a980e1f9f9a.png",
        "changes": [
         {
          "text_en": "Ammo increased from 100 to 120",
          "text_cn": null,
          "before": 100.0,
          "after": 120.0,
-         "metric": "ammo",
          "by": 20.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "ammo"
+         "metric": "ammo",
+         "raw_metric": "ammo",
+         "unit": null
         },
         {
          "text_en": "Secondary fire max charge damage increased from 50 to 60",
          "text_cn": null,
          "before": 50.0,
          "after": 60.0,
-         "metric": "secondary fire max charge damage",
          "by": 10.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "secondary fire max charge damage"
+         "metric": "secondary fire max charge damage",
+         "raw_metric": "secondary fire max charge damage",
+         "unit": null
         }
        ]
       },
@@ -144,17 +147,18 @@
        "name_en": "Primal Rage",
        "name_cn": "原始暴怒",
        "slug": "primal-rage",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/685608721cb914e0412a090eb1e89c0f5d10edfb3dbc34218ba3acd35611c990.png",
        "changes": [
         {
          "text_en": "Ultimate ability cost increased by 12%",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": "ultimate ability cost",
          "by": null,
          "by_pct": 12.0,
-         "unit": null,
-         "raw_metric": "ultimate ability cost"
+         "metric": "ultimate ability cost",
+         "raw_metric": "ultimate ability cost",
+         "unit": null
         }
        ]
       }
@@ -165,6 +169,7 @@
      "name_en": "Hazard",
      "name_cn": "骇灾",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/22fc6ca76249d7cd37bad808d53a68986da855c625475a46ec3858abecf57823.png",
      "dev_note": "Developer Comment: We’re finding our newest tank’s mobility to be a little too hazardous. By decreasing Violent Leap’s cooldown, Hazard will have to be more selective with how he dives into the opponent backlines.",
      "general": [],
      "perks": [],
@@ -173,17 +178,18 @@
        "name_en": "Violent Leap",
        "name_cn": null,
        "slug": "violent-leap",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0b5166ae3ab7ad67f4a91e9fd2e9be34df9febef4cc2e9843d1d284c1601c2f3.png",
        "changes": [
         {
          "text_en": "Violent Leap cooldown increased from 5 to 6 seconds.",
          "text_cn": null,
          "before": 5.0,
          "after": 6.0,
-         "metric": "violent leap cooldown",
          "by": 1.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "violent leap cooldown"
+         "metric": "violent leap cooldown",
+         "raw_metric": "violent leap cooldown",
+         "unit": null
         }
        ]
       }
@@ -203,6 +209,7 @@
      "name_en": "Echo",
      "name_cn": "回声",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0dc3f1679d739ef530ba2b8cbe02bf09f4d40a57c0af84f694a3241d3a7ef948.png",
      "dev_note": "Developer Comment: Echo has been slightly underperforming recently, so we are increasing the base damage of the Focusing Beam. This change will make it easier to push enemies into the critical health threshold.",
      "general": [],
      "perks": [],
@@ -211,17 +218,18 @@
        "name_en": "Focusing Beam",
        "name_cn": "聚焦光线",
        "slug": "focusing-beam",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6552feeb85a32ae7131df50f61a9c0fa24bf347bf007e208a356a940561129ae.png",
        "changes": [
         {
          "text_en": "Damage-per-second on targets above 50% HP increased from 50 to 75.",
          "text_cn": null,
          "before": 50.0,
          "after": 75.0,
-         "metric": "hp",
          "by": 25.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "hp"
+         "metric": "hp",
+         "raw_metric": "hp",
+         "unit": null
         }
        ]
       }
@@ -232,6 +240,7 @@
      "name_en": "Tracer",
      "name_cn": "猎空",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5ee20a1feed14da5153f19745328e9fc02bd79f8109593a9b7dab9283eb9629b.png",
      "dev_note": "Developer Comment: Tracer has remained less threatening since the damage reduction to her Pulse Pistols. Reducing their spread will make her damage more consistent at slightly longer ranges.",
      "general": [],
      "perks": [],
@@ -240,17 +249,18 @@
        "name_en": "Pulse Pistols",
        "name_cn": "脉冲双枪",
        "slug": "pulse-pistols",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/82520ccd791a5befa5ac74a6b5263471de44b0674abb07fbf1568c149c88a91a.png",
        "changes": [
         {
          "text_en": "Spread decreased by 15%",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": "spread",
          "by": null,
          "by_pct": 15.0,
-         "unit": null,
-         "raw_metric": "spread"
+         "metric": "spread",
+         "raw_metric": "spread",
+         "unit": null
         }
        ]
       }
@@ -270,6 +280,7 @@
      "name_en": "Ana",
      "name_cn": "安娜",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/86debddbaaaf8699d68775a9dbffaf5b8db514772b77ff7234b1ff84c0b29fd5.png",
      "dev_note": "Developer Comment: Recent changes to her rifle have made Ana a highly impactful support. Reducing the damage of her Biotic Grenade will adjust some of her breakpoints and slightly affect her self-sustainability.",
      "general": [],
      "perks": [],
@@ -278,17 +289,18 @@
        "name_en": "Biotic Grenade",
        "name_cn": "生物手雷",
        "slug": "biotic-grenade",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c8190b234bf0a0e28eecffe162d0c942e6b8656e95f4688c6ca3b025fa5a487d.png",
        "changes": [
         {
          "text_en": "Explosion damage and healing decreased from 90 to 75.",
          "text_cn": null,
          "before": 90.0,
          "after": 75.0,
-         "metric": "explosion damage and healing",
          "by": -15.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "explosion damage and healing"
+         "metric": "explosion damage and healing",
+         "raw_metric": "explosion damage and healing",
+         "unit": null
         }
        ]
       }
@@ -299,6 +311,7 @@
      "name_en": "Illari",
      "name_cn": "伊拉锐",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f33f6fe94ad55fcf9027e779f66afac358a2f93651070b95cd565ff90d670c8b.png",
      "dev_note": "Developer Comment: lllari can struggle to heal allies without her Healing Pylon. Increasing the maximum resource of her secondary fire will allow her to support her team more effectively during those moments.",
      "general": [],
      "perks": [],
@@ -307,6 +320,7 @@
        "name_en": "Solar Rifle",
        "name_cn": "阳焰步枪",
        "slug": "solar-rifle",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5774f1b455a15ec3a3671e5df55fbd3b3c9ff5965943b0b255fb17ccb30d9fa1.png",
        "changes": []
       }
      ]
@@ -316,6 +330,7 @@
      "name_en": "Juno",
      "name_cn": "朱诺",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2a65bf12035f9c255833693224cad83fd98cead625fdf1b9da8359a7f259e01c.png",
      "dev_note": "Developer Comment: Juno’s ultimate remains too powerful when used effectively by her allies. Reducing both the duration and damage amplification will reduce the potency of the ultimate.",
      "general": [],
      "perks": [],
@@ -324,28 +339,29 @@
        "name_en": "Orbital Ray",
        "name_cn": "轨道射线",
        "slug": "orbital-ray",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b4215620deb362a0ad6a7784275d43b518868392b0f7e77228adabe32a489e77.png",
        "changes": [
         {
          "text_en": "Duration reduced from 10 to 8 seconds",
          "text_cn": null,
          "before": 10.0,
          "after": 8.0,
-         "metric": "duration",
          "by": -2.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "duration"
+         "metric": "duration",
+         "raw_metric": "duration",
+         "unit": "s"
         },
         {
          "text_en": "Damage amplification reduced from 35% to 30%",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -363,22 +379,22 @@
    "blocks": [
     {
      "title": "GENERAL",
-     "body": "Fixed an issue where competitive titles will sometimes unequip after a logout.",
+     "body": "- Fixed an issue where competitive titles will sometimes unequip after a logout.",
      "dev": null
     },
     {
      "title": "MAPS",
-     "body": "Circuit Royal Fixed an issue which now prevents turrets from being placed inside the sportscars.",
+     "body": "Circuit Royal\n\n- Fixed an issue which now prevents turrets from being placed inside the sportscars.",
      "dev": null
     },
     {
      "title": "HEROES",
-     "body": "Bastion Fixed in previous release, fixed an issue causing Bastion's Ultimate to not have impact sounds or VFX. Hazard Fixed an issue where Hazard's Jagged Wall projectiles would pass through certain player made objects such as Cryo-Freeze, Ice Wall, Petal Platform. Sombra Fixed an issue where Sombra's EMP can sometimes fail to hit opponents if they had previously interacted with Jagged Wall. Zenyatta Fixed an issue causing Zenyatta to T-Pose with the \"Retro Hero\" emote.",
+     "body": "Bastion\n\n- Fixed in previous release, fixed an issue causing Bastion's Ultimate to not have impact sounds or VFX.\n\nHazard\n\n- Fixed an issue where Hazard's Jagged Wall projectiles would pass through certain player made objects such as Cryo-Freeze, Ice Wall, Petal Platform.\n\nSombra\n\n- Fixed an issue where Sombra's EMP can sometimes fail to hit opponents if they had previously interacted with Jagged Wall.\n\nZenyatta\n\n- Fixed an issue causing Zenyatta to T-Pose with the \"Retro Hero\" emote.",
      "dev": null
     }
    ]
   }
  ],
  "raw_text": null,
- "hash": "sha256:8939303d37c0583dee5d43c2511bbdfc400cfca19f0982d631e169689ef21aac"
+ "hash": "sha256:8a7b29b9c9f741724c4ef434c40e04a4031f42991104843052fb31524893138a"
 }

@@ -18,7 +18,7 @@
    "type": "generic_update",
    "title": "Hero Balance Updates",
    "role": null,
-   "description": "Hero Balance Updates These changes aim to re-adjust heroes whose win rates have fallen further than intended since the start of Season 2. We’re continuing to monitor mobile heroes adjusted this season to help inform the mid‑season changes. Our focus is on ensuring heroes feel viable and fun to play both as and against, while still meeting our goal of addressing mobility.",
+   "description": "Hero Balance Updates\n\nThese changes aim to re-adjust heroes whose win rates have fallen further than intended since the start of Season 2. We’re continuing to monitor mobile heroes adjusted this season to help inform the mid‑season changes. Our focus is on ensuring heroes feel viable and fun to play both as and against, while still meeting our goal of addressing mobility.",
    "heroes": [],
    "blocks": []
   },
@@ -33,6 +33,7 @@
      "name_en": "Roadhog",
      "name_cn": "路霸",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b8afaed1ce60cbddfc555d778839d4670868537a4319814da4ba13cdd1159887.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -41,17 +42,18 @@
        "name_en": "Chain Hook",
        "name_cn": "链钩",
        "slug": "chain-hook",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/7edc1cdef13c2fd21e279043816aa1d2975dc784298502fd121b927729e1e86d.png",
        "changes": [
         {
          "text_en": "Cooldown reduced from 8 to 7 seconds.",
          "text_cn": null,
          "before": 8.0,
          "after": 7.0,
-         "metric": "cooldown",
          "by": -1.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "cooldown"
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
         }
        ]
       }
@@ -62,6 +64,7 @@
      "name_en": "Sombra",
      "name_cn": "黑影",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4fa20d93cb1de8fcee163484d5dbd5ec1dd04d234019eaf4b7c159d3a62be64a.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -70,17 +73,18 @@
        "name_en": "Stealth",
        "name_cn": "隐秘潜行",
        "slug": "stealth",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d0f96522357295d6f474c6f0a691785d7480b4e6264b75e0e24f9cc4c28be248.png",
        "changes": [
         {
          "text_en": "Movement speed bonus reduction while revealed by damage reduced from 50% to 33%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -91,6 +95,7 @@
      "name_en": "Vendetta",
      "name_cn": "斩仇",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/53109fa61b9fcdd83ca94ceb96a1321253a744e1b1319e2645a29264812988b4.png",
      "dev_note": null,
      "general": [
       {
@@ -123,6 +128,7 @@
      "name_en": "Mizuki",
      "name_cn": "瑞稀",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8c5f25e135a5f200951caf4321be961a5ecbdfbe21a9c9fb96c6d17e0d887854.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -131,17 +137,18 @@
        "name_en": "Katashiro Return",
        "name_cn": "替魂纸人",
        "slug": "katashiro-return",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/291ad4dfccb3678979f4f5ca8c24d219b9bb61a383731057547760646dcd5c04.png",
        "changes": [
         {
          "text_en": "Enemies can no longer prevent Mizuki from recalling by standing on Katashiro Return's starting point.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -161,6 +168,7 @@
      "name_en": "Hazard",
      "name_cn": "骇灾",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f5f6c3e6378f59c991cc60d817ec0f8b73b6957c277ff1ce23e89895ed6c6628.png",
      "dev_note": "We're lowering the ceiling and total resource that Hazard's Spike Guard oriented builds gain, so there's more windows of opportunity for counterplay.",
      "general": [
       {
@@ -257,6 +265,7 @@
      "name_en": "Junker Queen",
      "name_cn": "渣客女王",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a362b9dba4f5f4f704076945f3c72d7d442d536ffcc2fc5735062f4a1cee8031.png",
      "dev_note": "Royal Bullets has enabled Junker Queen to be dominant for several seasons now, so we're tuning it down to bring her more in line with other tanks in Stadium.",
      "general": [
       {
@@ -280,6 +289,7 @@
      "name_en": "Orisa",
      "name_cn": "奥丽莎",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/76707145df847f90e838e93b33979d5a275d1702a6e800dc6abb6a40652c1a82.png",
      "dev_note": null,
      "general": [
       {
@@ -339,6 +349,7 @@
      "name_en": "Ramattra",
      "name_cn": "拉玛刹",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f54a877264e161c2aa4d5755ef4411eb7fd7e4eb910075936e91ddb043b8a58e.png",
      "dev_note": "Ramattra has started with a middling win rate in Stadium, but as his builds become more optimized, some of them have proven to be outliers. We're tuning back some of his Ravenous Vortex / Nemesis Form oriented Powers, and we're improving his Weapon Power oriented options.",
      "general": [
       {
@@ -489,6 +500,7 @@
      "name_en": "Zarya",
      "name_cn": "查莉娅",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/bdc3fb8aa2c87debc3d4565197b969c5c7b4f0c9059dd8ad3335c8e536a91e0f.png",
      "dev_note": null,
      "general": [
       {
@@ -512,6 +524,7 @@
      "name_en": "Freja",
      "name_cn": "弗蕾娅",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6eb3ff52171f525f38f1b92989accd570ffe1e6ab589a935abfc2af5d7da27d7.png",
      "dev_note": null,
      "general": [
       {
@@ -535,6 +548,7 @@
      "name_en": "Ana",
      "name_cn": "安娜",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3c87d470067d61c432815a4bc0c70b11f1b5379006da29625839da356b7c4ca1.png",
      "dev_note": null,
      "general": [
       {
@@ -558,6 +572,7 @@
      "name_en": "Brigitte",
      "name_cn": "布丽吉塔",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/dbc7d49f32020fed1033cb4bb99b55f7938d1a71108fe76edc589e42c8cd0977.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -587,6 +602,7 @@
      "name_en": "Juno",
      "name_cn": "朱诺",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c6fd15df25b419c58a4c11569a8bc76e14a8e8c89ea689614a7cf3e8f2294c50.png",
      "dev_note": "We're fixing some bugs that popped up with the recent changes to Juno and adding a bit more firepower to her Weapon Power oriented builds.",
      "general": [
       {
@@ -641,6 +657,7 @@
      "name_en": "Wuyang",
      "name_cn": "无漾",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a9c2038a0c0b85aff625cd316a6b32764618170e78bb3edfe8c31ecf1a2a073d.png",
      "dev_note": "Water College Hat is a little too efficient for its cost, causing it to be mandatory for many Wuyang builds. We're adjusting it to give value more in line with its cost.",
      "general": [
       {
@@ -707,17 +724,17 @@
    "blocks": [
     {
      "title": "General",
-     "body": "In a previous update, fixed an issue where custom bindings would not be saved. In a previous update, fixed an issue causing the framerate limit on Nintendo Switch 2 to be lower than intended. In a previous update, fixed an issue with Reaper's Trigger Finger Perk that allowed for an unintended animation cancel. In a previous update, fixed a bug with Sierra's Tight Grip Perk erroneously granting cooldown reduction on Tremor Charge. In a previous update, fixed a bug with Mercy's Double Dose Perk not correctly reducing the healing on Flash Heal.",
+     "body": "- In a previous update, fixed an issue where custom bindings would not be saved.\n- In a previous update, fixed an issue causing the framerate limit on Nintendo Switch 2 to be lower than intended.\n- In a previous update, fixed an issue with Reaper's Trigger Finger Perk that allowed for an unintended animation cancel.\n- In a previous update, fixed a bug with Sierra's Tight Grip Perk erroneously granting cooldown reduction on Tremor Charge.\n- In a previous update, fixed a bug with Mercy's Double Dose Perk not correctly reducing the healing on Flash Heal.",
      "dev": null
     },
     {
      "title": "Stadium",
-     "body": "Fixed an issue where players could be kicked for inactivity during the Armoury Phase. Fixed a bug where Ramattra's Insatiable Spiral bonus [Ravenous Vortex] damage was calculated additively instead of multiplicatively. Fixed a bug where Ramattra's Void Blight applied to barriers. Fixed a bug where Ramattra's Void Blight could not be cleansed. Fixed an issue where Ramattra's Nano-Mender could heal enemies. Fixed an issue where Gloomgauntlet's Melee Damage stat bonus did not apply to Ramattra's [Pummel]. Fixed a bug where Vendetta's Overloaded Strike's [Sundering Blade] strike incorrectly calculated the 50% bonus damage additively and not multiplicatively. Fixed a bug where Ana's Cluster Core Hero Item would count certain non-player entities towards Cluster Core's cooldown reduction. Fixed a bug where Juno's Heal Formation would heal more than intended.",
+     "body": "- Fixed an issue where players could be kicked for inactivity during the Armoury Phase.\n- Fixed a bug where Ramattra's Insatiable Spiral bonus [Ravenous Vortex] damage was calculated additively instead of multiplicatively.\n- Fixed a bug where Ramattra's Void Blight applied to barriers.\n- Fixed a bug where Ramattra's Void Blight could not be cleansed.\n- Fixed an issue where Ramattra's Nano-Mender could heal enemies.\n- Fixed an issue where Gloomgauntlet's Melee Damage stat bonus did not apply to Ramattra's [Pummel].\n- Fixed a bug where Vendetta's Overloaded Strike's [Sundering Blade] strike incorrectly calculated the 50% bonus damage additively and not multiplicatively.\n- Fixed a bug where Ana's Cluster Core Hero Item would count certain non-player entities towards Cluster Core's cooldown reduction.\n- Fixed a bug where Juno's Heal Formation would heal more than intended.",
      "dev": null
     }
    ]
   }
  ],
  "raw_text": null,
- "hash": "sha256:d3e825d69964cfca543630816792c8c30cc67451d8a3f88a5a9298785bf71d7a"
+ "hash": "sha256:c9efe2fb74280e53775d2b8e85f9bf7bd14ada335e2815ad50d7840a24fffced"
 }

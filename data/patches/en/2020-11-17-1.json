@@ -10,7 +10,7 @@
    "type": "generic_update",
    "title": "Symmetra's Restoration Challenge",
    "role": null,
-   "description": "Celebrate the release of Christie Golden’s new Overwatch short story, “ Stone by Stone ,” with Symmetra’s Restoration Challenge! Through November 30, earn limited-time rewards, including the new Marammat Symmetra skin, by winning games and watching Overwatch on Twitch. Learn more about Symmetra’s Restoration Challenge on the Overwatch website.",
+   "description": "Celebrate the release of Christie Golden’s new Overwatch short story, “Stone by Stone,” with Symmetra’s Restoration Challenge! Through November 30, earn limited-time rewards, including the new Marammat Symmetra skin, by winning games and watching Overwatch on Twitch.\n\nLearn more about Symmetra’s Restoration Challenge on the Overwatch website.",
    "heroes": [],
    "blocks": []
   },
@@ -23,7 +23,7 @@
    "blocks": [
     {
      "title": "Feature Update: Minimum Latency Support",
-     "body": "Competition is at its best when it's fair. Historically, we've run tournament events like the Overwatch League and the Overwatch World Cup with teams competing head to head, in person, with local servers to provide the lowest possible latency and the best player experience. In today's world, with so many events and tournaments moving online and teams spread across the world, we wanted to provide a mechanism to ensure that the experience is as fair as possible, regardless of how close the teams are to the tournament's servers. The Minimum Latency option sets a target latency for Custom Games, leveling the playing field between competitors whether they're 50 or 500 miles away. Players with latency lower than the minimum setting will automatically have their network traffic delayed to meet the minimum target, while players with latency higher than the target won't have any additional delay introduced. This feature is designed to work with a variety of network conditions, and will generally keep players within 8 milliseconds of the target setting. We hope this feature will be useful, especially for community-driven competitions that want to Play Nice, Play Fair.",
+     "body": "Competition is at its best when it's fair. Historically, we've run tournament events like the Overwatch League and the Overwatch World Cup with teams competing head to head, in person, with local servers to provide the lowest possible latency and the best player experience.\n\nIn today's world, with so many events and tournaments moving online and teams spread across the world, we wanted to provide a mechanism to ensure that the experience is as fair as possible, regardless of how close the teams are to the tournament's servers.\n\nThe Minimum Latency option sets a target latency for Custom Games, leveling the playing field between competitors whether they're 50 or 500 miles away. Players with latency lower than the minimum setting will automatically have their network traffic delayed to meet the minimum target, while players with latency higher than the target won't have any additional delay introduced.\n\nThis feature is designed to work with a variety of network conditions, and will generally keep players within 8 milliseconds of the target setting.\n\nWe hope this feature will be useful, especially for community-driven competitions that want to Play Nice, Play Fair.",
      "dev": null
     }
    ]
@@ -37,7 +37,7 @@
    "blocks": [
     {
      "title": "New Custom Game Maps",
-     "body": "Workshop Green Screen",
+     "body": "- Workshop Green Screen",
      "dev": null
     }
    ]
@@ -67,6 +67,7 @@
      "name_en": "Baptiste",
      "name_cn": "巴蒂斯特",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a4f09ac5528ea7c458223747a0b47144f1b6b1d2736fa3b67c18a8ab43d0d815.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -75,17 +76,18 @@
        "name_en": "Amplification Matrix",
        "name_cn": "增幅矩阵",
        "slug": "amplification-matrix",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0a31371b55e4007e67a86f8495949970d20f64b2f0166e78d3fd16217e090a83.png",
        "changes": [
         {
          "text_en": "Width increased from 5 meters to 9 meters",
          "text_cn": null,
          "before": 5.0,
          "after": 9.0,
-         "metric": "width",
          "by": 4.0,
          "by_pct": null,
-         "unit": "m",
-         "raw_metric": "width"
+         "metric": "width",
+         "raw_metric": "width",
+         "unit": "m"
         }
        ]
       }
@@ -96,6 +98,7 @@
      "name_en": "Lúcio",
      "name_cn": "卢西奥",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6902426f460e3e7880530ee7f974e15d6c912346221e78ee09b5f9eb8c33c401.png",
      "dev_note": null,
      "general": [
       {
@@ -167,6 +170,7 @@
      "name_en": "Wrecking Ball",
      "name_cn": "破坏球",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c22df3c91a4fbc7f3f9689cd76f9fb86b52b2dfdf9f51c2158b4a9259a5f970d.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -175,17 +179,18 @@
        "name_en": "Grappling Claw",
        "name_cn": "工程抓钩",
        "slug": "grappling-claw",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e81e6ba9fb3391f29528021e453a0d3c16da1fc5e378994e6d00783356e0f2c9.png",
        "changes": [
         {
          "text_en": "Now has improved target detection to help connecting to walls be more consistent",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -203,17 +208,17 @@
    "blocks": [
     {
      "title": "General",
-     "body": "Increased max Workshop Element Count to 32768 Added Type field to Start Forcing Player Outlines Added Spray options to Communicate, Is Communicating, and Is Communicating Any Added Sort Order field to Workshop Settings Values and increased the max Workshop Settings Count to 128 Allow Button, Disallow Button, Press Button, Start Holding Button, Stop Holding Button, and Is Holding Button now accept Button Values Create Beam Effect, Create Effect, Create HUD Text, Create Icon, Create In-World Text, Play Effect, and Start Forcing Player Outlines now accept Color Values and support options for Color Value Reevaluation Added Black, Gray, Rose, and Violet color options Added a new option to the Apply Impulse action allowing horizontal and vertical velocity to be modified together (instead of each considered separately) when canceling contrary motion",
+     "body": "- Increased max Workshop Element Count to 32768\n- Added Type field to Start Forcing Player Outlines\n- Added Spray options to Communicate, Is Communicating, and Is\nCommunicating Any\n- Added Sort Order field to Workshop Settings Values and increased the max Workshop Settings Count to 128\n- Allow Button, Disallow Button, Press Button, Start Holding Button,\nStop Holding Button, and Is Holding Button now accept Button Values\n- Create Beam Effect, Create Effect, Create HUD Text, Create Icon, Create In-World Text, Play Effect, and Start Forcing Player Outlines now accept Color Values and support options for Color Value Reevaluation\n- Added Black, Gray, Rose, and Violet color options\n- Added a new option to the Apply Impulse action allowing horizontal\nand vertical velocity to be modified together (instead of each\nconsidered separately) when canceling contrary motion",
      "dev": null
     },
     {
      "title": "New Workshop Actions",
-     "body": "Log to Inspector Wait Until Set Knockback Dealt Set Knockback Received Set Environment Credit Player Start Assist Stop Assist Stop All Assists Create Progress Bar HUD Text Destroy Progress Bar HUD Text Destroy All Progress Bar HUD Text Create Progress Bar In-World Text Destroy Progress Bar In-World Text Destroy All Progress Bar In-World Text",
+     "body": "- Log to Inspector\n- Wait Until\n- Set Knockback Dealt\n- Set Knockback Received\n- Set Environment Credit Player\n- Start Assist\n- Stop Assist\n- Stop All Assists\n- Create Progress Bar HUD Text\n- Destroy Progress Bar HUD Text\n- Destroy All Progress Bar HUD Text\n- Create Progress Bar In-World Text\n- Destroy Progress Bar In-World Text\n- Destroy All Progress Bar In-World Text",
      "dev": null
     },
     {
      "title": "New Workshop Values",
-     "body": "Color Custom Color Workshop Setting Combo Workshop Setting Hero Evaluate Once Update Every Frame Magnitude Of Number of Slots Spawn Points String Contains String Length Last Assist ID Is Communicating Any Spray Player Stat (limited to current match stats) Player Hero Stat (limited to current match stats)",
+     "body": "- Color\n- Custom Color\n- Workshop Setting Combo\n- Workshop Setting Hero\n- Evaluate Once\n- Update Every Frame\n- Magnitude Of\n- Number of Slots\n- Spawn Points\n- String Contains\n- String Length\n- Last Assist ID\n- Is Communicating Any Spray\n- Player Stat (limited to current match stats)\n- Player Hero Stat (limited to current match stats)",
      "dev": "Evaluate Once can be used to isolate a part of a reevaluating parameter and \"freeze\" it at its initial value. One way this can be useful is when a reevaluating parameter (such as an effect's position) makes use of a For loop's control variable. For example, if you want to create a vertical stack of effects that move with a player, you could loop over a Create Effect action using Global.Y as your control variable and \"Position Of(Event Player) + Vector(0, Evaluate Once(Global.Y), 0)\" as your position (with reevaluation enabled). Doing this, the position of each effect would move along with the player, but thanks to Evaluate Once, the vertical offset for each effect would be frozen to the value of Global.Y when that particular effect was created (instead of the final value of Global.Y when the loop ends). Update Every Frame increases the rate at which certain values will update. For example, \"Position Of(...)\" only updates 12.5 times per second, but \"Update Every Frame(Position Of(...))\" will evaluate 62.5 times per second for conditions and other logical checks and as fast as your framerate for visual output, such as effects and camera. This value can be used to create highly sensitive positional triggers and smooth movement for effects and camera work. Depending on your usage, this value could have a significant impact on server load, framerate, or both, so use it only when needed. That said, executing a single condition or action that contains an Update Every Frame is still much more performant than repeatedly executing an action in a tight loop to try and achieve the same result."
     }
    ]
@@ -227,22 +232,22 @@
    "blocks": [
     {
      "title": "General",
-     "body": "Fixed a bug with Capture the Flag that caused the overhead flag to not appear properly during sudden death Fixed a bug that would cause colorblind friendly names for duel and elimination game modes to not appear properly Fixed a bug that would default players to the legendary loot box screen even if players did not have one available",
+     "body": "- Fixed a bug with Capture the Flag that caused the overhead flag to not appear properly during sudden death\n- Fixed a bug that would cause colorblind friendly names for duel and\nelimination game modes to not appear properly\n- Fixed a bug that would default players to the legendary loot box screen even if players did not have one available",
      "dev": null
     },
     {
      "title": "Heroes",
-     "body": "Doomfist Fixed a bug that caused VFX to not appear correctly during the One Punch highlight intro D.Va Fixed a bug with her footstep sound effects when equipping the Shin-Ryeong skin Hanzo Fixed a bug that caused an animation issue with his Hero Select animation Pharah Fixed a bug that caused Pharah's eyes to face the wrong direction in her HUD portrait when equipping the Lifeguard skin Sombra Fixed a rare bug where Sombra's translocator could be on cooldown after use if it was shot at the same time it was used Fixed a bug that would cause Sombra to not receive a detect notification when being seen or receive a detect notification without being seen by an enemy Fixed a bug that would allow Sombra to see her translocating animation if she was killed while triggering that ability Fixed a bug that would sometimes cause translocate to display incorrectly when viewed within a replay Wrecking Ball Fixed a bug that caused his gun to clip into his mech during the Medal victory pose",
+     "body": "Doomfist\n\n- Fixed a bug that caused VFX to not appear correctly during the One Punch highlight intro\n\nD.Va\n\n- Fixed a bug with her footstep sound effects when equipping the Shin-Ryeong skin\n\nHanzo\n\n- Fixed a bug that caused an animation issue with his Hero Select animation\n\nPharah\n\n- Fixed a bug that caused Pharah's eyes to face the wrong direction in her HUD portrait when equipping the Lifeguard skin\n\nSombra\n\n- Fixed a rare bug where Sombra's translocator could be on cooldown after use if it was shot at the same time it was used\n- Fixed a bug that would cause Sombra to not receive a detect\nnotification when being seen or receive a detect notification without\nbeing seen by an enemy\n- Fixed a bug that would allow Sombra to see her translocating animation if she was killed while triggering that ability\n- Fixed a bug that would sometimes cause translocate to display\nincorrectly when viewed within a replay\n\nWrecking Ball\n\n- Fixed a bug that caused his gun to clip into his mech during the Medal victory pose",
      "dev": null
     },
     {
      "title": "Workshop",
-     "body": "Fixed a crash that could occur when swapping the parent/child relationship between two players (using the Attach Players action) Fixed a bug where Disable Messages was also disabling messages sent from Workshop (e.g. Small Message and Big Message) Fixed a bug where setting multiple Ability Cooldowns within the same frame could fail Fixed a bug where the camera override from Start Camera could be overridden from other sources (e.g. emote cameras) Fixed a bug where Wrecking Ball could leave from ball form even if the Ability 1 and Primary Fire buttons were disabled Fixed a bug where the user could lose focus when interacting with the Array Value in the editor Fixed a bug where Set Move Speed and Set Jump Vertical Speed couldn't set the speed to 0 Fixed a bug where Declare Team Victory could fail in Elimination Fixed a bug where the Start Camera and Chase Variable actions would not update smoothly at high framerates or during slow motion Fixed a bug where D.Va and Echo could use their flight abilities to break away from an Attach Players action Fixed a bug where values with redundant parentheses would fail to paste from text correctly Fixed a bug where values with mismatched units (for example, a directional vector instead of a positional vector) would fail to paste from text correctly Fixed a bug where the element count could be higher than expected when pasting from text Fixed a bug where multiple 0.016-second Waits running on the same player (or the global entity) could result in some Waits taking an extra 0.016 seconds to complete Fixed a bug where the Phased Out status behaved inconsistently when applied to a dead player (since Phased Out and Dead are mutually exclusive) Fixed a bug where a Set variable action (not a Modify) would behave incorrectly when a previously-Chased variable was on both the left and right side (such as Global.A = 1 - Global.A) Fixed a bug where a player's current health would be incorrectly limited to the player's original max health between executions of multiple Set Max Health actions Fixed a bug where Team Score would fail in non-Control game modes Fixed a bug that caused Sombra to not be detected properly when scaled over twice as large",
+     "body": "- Fixed a crash that could occur when swapping the parent/child relationship between two players (using the Attach Players action)\n- Fixed a bug where Disable Messages was also disabling messages sent\nfrom Workshop (e.g. Small Message and Big Message)\n- Fixed a bug where setting multiple Ability Cooldowns within the same frame could fail\n- Fixed a bug where the camera override from Start Camera could be\noverridden from other sources (e.g. emote cameras)\n- Fixed a bug where Wrecking Ball could leave from ball form even if the Ability 1 and Primary Fire buttons were disabled\n- Fixed a bug where the user could lose focus when interacting with the\nArray Value in the editor\n- Fixed a bug where Set Move Speed and Set Jump Vertical Speed couldn't set the speed to 0\n- Fixed a bug where Declare Team Victory could fail in Elimination\n- Fixed a bug where the Start Camera and Chase Variable actions would\nnot update smoothly at high framerates or during slow motion\n- Fixed a bug where D.Va and Echo could use their flight abilities to break away from an Attach Players action\n- Fixed a bug where values with redundant parentheses would fail to\npaste from text correctly\n- Fixed a bug where values with mismatched units (for example, a directional vector instead of a positional vector) would fail to paste from text correctly\n- Fixed a bug where the element count could be higher than expected\nwhen pasting from text\n- Fixed a bug where multiple 0.016-second Waits running on the same player (or the global entity) could result in some Waits taking an extra 0.016 seconds to complete\n- Fixed a bug where the Phased Out status behaved inconsistently when\napplied to a dead player (since Phased Out and Dead are mutually\nexclusive)\n- Fixed a bug where a Set variable action (not a Modify) would behave incorrectly when a previously-Chased variable was on both the left and right side (such as Global.A = 1 - Global.A)\n- Fixed a bug where a player's current health would be incorrectly\nlimited to the player's original max health between executions of\nmultiple Set Max Health actions\n- Fixed a bug where Team Score would fail in non-Control game modes\n- Fixed a bug that caused Sombra to not be detected properly when\nscaled over twice as large",
      "dev": null
     }
    ]
   }
  ],
  "raw_text": null,
- "hash": "sha256:7766a8ffffe0842a664a19f4b75b3a16fc0c8c17451b5d188a971c79001b420c"
+ "hash": "sha256:e1b4e0a8d63dec78d6f6527ec32fa93c57c457939d8adfeb8548c61a1578ca0c"
 }

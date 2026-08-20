@@ -10,7 +10,7 @@
    "type": "generic_update",
    "title": "NEW SEASONAL MODE: BATTLE FOR OLYMPUS FFA",
    "role": null,
-   "description": "In this free-for-all Deathmatch mode, battle for the throne of Olympus as seven powerful gods and monsters from Greek Mythology, each with a unique Divine Power that kicks in when they use their ultimate ability. The most valiant contenders in the Battle for Olympus will have the chance to earn limited-time voice lines and player titles, to brag about their accomplishments for all eternity. At the end of the event, the hero whose powers were used to secure the most eliminations across all matches will be crowned the new ruler of Olympus!",
+   "description": "In this free-for-all Deathmatch mode, battle for the throne of Olympus as seven powerful gods and monsters from Greek Mythology, each with a unique Divine Power that kicks in when they use their ultimate ability. The most valiant contenders in the Battle for Olympus will have the chance to earn limited-time voice lines and player titles, to brag about their accomplishments for all eternity.\n\nAt the end of the event, the hero whose powers were used to secure the most eliminations across all matches will be crowned the new ruler of Olympus!",
    "heroes": [],
    "blocks": []
   },
@@ -18,7 +18,7 @@
    "type": "generic_update",
    "title": "COMPETITIVE PLAY",
    "role": null,
-   "description": "The 2023 season of Competitive Capture the Flag begins on January 10 and can be found in the Competitive Play menu The Competitive Play loading screen has been updated",
+   "description": "- The 2023 season of Competitive Capture the Flag begins on January 10 and can be found in the Competitive Play menu\n- The Competitive Play loading screen has been updated",
    "heroes": [],
    "blocks": []
   },
@@ -41,6 +41,7 @@
      "name_en": "Junker Queen",
      "name_cn": "渣客女王",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/cf66adfac58a0321ec1f7d3a7241d6bf2f3b311707064d2f0ace2e3f4e342727.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -49,17 +50,18 @@
        "name_en": "Adrenaline Rush",
        "name_cn": "狂血奔涌",
        "slug": "adrenaline-rush",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e1706243e4996af6844e7f8233bbd3f98f04583a223cd3ad926d40ef6c4c8557.png",
        "changes": [
         {
          "text_en": "Now heals for the remaining wound damage when an enemy dies with wounds on them",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       },
@@ -67,17 +69,18 @@
        "name_en": "Carnage",
        "name_cn": "血斩",
        "slug": "carnage",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/74c40565f02f550ed362d8a5aaed21de94a3ff1915185cb4b93d6ce6207f03ab.png",
        "changes": [
         {
          "text_en": "Cooldown is now reduced by 2 seconds for each enemy it impacts",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       },
@@ -85,28 +88,29 @@
        "name_en": "Jagged Blade",
        "name_cn": "锯齿利刃",
        "slug": "jagged-blade",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/7aff09649e4e2daeec13cfcca4d5e369b4ddc0160587637bb607761ecf89f16c.png",
        "changes": [
         {
          "text_en": "Thrown impact damage reduced from 80 to 50",
          "text_cn": null,
          "before": 80.0,
          "after": 50.0,
-         "metric": "thrown impact damage",
          "by": -30.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "thrown impact damage"
+         "metric": "thrown impact damage",
+         "raw_metric": "thrown impact damage",
+         "unit": null
         },
         {
          "text_en": "Thrown direct impacts now add a 30 damage wound to the stuck target. Stacks with wounds caused by Quick Melee or returning Jagged Blade hits.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -117,6 +121,7 @@
      "name_en": "Zarya",
      "name_cn": "查莉娅",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d43075cba10cd711a129556142849587e78f1f55b0105d39a640da53ffa64e1b.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -125,28 +130,29 @@
        "name_en": "Energy",
        "name_cn": "能量转换",
        "slug": "energy",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0df3be06b67b4a1a1788681f3b2e6795f4c76bef3870b9e3ad6eb2787c4fcc2c.png",
        "changes": [
         {
          "text_en": "Energy degeneration reduced from 2.2 to 2 per second",
          "text_cn": null,
          "before": 2.2,
          "after": 2.0,
-         "metric": "energy degeneration",
          "by": -0.2,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "energy degeneration"
+         "metric": "energy degeneration",
+         "raw_metric": "energy degeneration",
+         "unit": null
         },
         {
          "text_en": "Delay before energy degeneration begins after gaining energy increased from 1 to 2 seconds",
          "text_cn": null,
          "before": 1.0,
          "after": 2.0,
-         "metric": "delay before energy degeneration begins after gaining energy",
          "by": 1.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "delay before energy degeneration begins after gaining energy"
+         "metric": "delay before energy degeneration begins after gaining energy",
+         "raw_metric": "delay before energy degeneration begins after gaining energy",
+         "unit": null
         }
        ]
       }
@@ -166,6 +172,7 @@
      "name_en": "Brigitte",
      "name_cn": "布丽吉塔",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/51b93ea59f369a1defa78e5d08c12b1391f5d2d94614a51fd95c125a7a6151fa.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -174,17 +181,18 @@
        "name_en": "Barrier Shield",
        "name_cn": "屏障护盾",
        "slug": "barrier-shield",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2b1bb6338180161e55c5f2184879dce395eca9e58f974befe729293fcc3dfdca.png",
        "changes": [
         {
          "text_en": "Health increased from 250 to 300",
          "text_cn": null,
          "before": 250.0,
          "after": 300.0,
-         "metric": "health",
          "by": 50.0,
          "by_pct": null,
-         "unit": "hp",
-         "raw_metric": "health"
+         "metric": "health",
+         "raw_metric": "health",
+         "unit": "hp"
         }
        ]
       }
@@ -195,6 +203,7 @@
      "name_en": "Moira",
      "name_cn": "莫伊拉",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/90fa2b69a7b80ae6d57c9ea6f3387dd18dfc1728bdb26949d28a17b98dd4e5f7.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -203,17 +212,18 @@
        "name_en": "Biotic Orb",
        "name_cn": "生化之球",
        "slug": "biotic-orb",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a5a235623aeb7fce1ce8e545e5be2d95b48fddf609c174fc5067efd7681ac72f.png",
        "changes": [
         {
          "text_en": "Dealing damage with Biotic Orb now restores a small amount of Biotic Energy",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -231,22 +241,22 @@
    "blocks": [
     {
      "title": "GENERAL",
-     "body": "Fixed a bug with Souvenirs being incorrectly placed on Ramattra Fixed an issue with Kiriko's Ofuda displaying black textures during her Whirlwind emote Fixed an issue with Reaper's animations when ending his 'Take a knee' emote Resolved an issue with placeable abilities (turrets, mines) floating after the destructible environment they were placed on was destroyed Fixed an issue that resulted in some users seeing a black screen as their Main Menu background Fixed a bug that caused \"Group Up\" to say \"I'm on my way\" in unintended circumstances. Fixed an issue on some consoles that resulted in blurry graphics Fixed an issue where some players were not able to invite across certain consoles Fixed some performance issues in the Hero Gallery on Console platforms Resolved an issue where Daily Challenges were not rolling over for some users Fixed an issue where the end-of-game 'DRAW' text would not appear for players if a colorblind setting was active Resolved an issue with 'Invite to Custom Game' not appearing as an option in the Social Menu",
+     "body": "- Fixed a bug with Souvenirs being incorrectly placed on Ramattra\n- Fixed an issue with Kiriko's Ofuda displaying black textures during her Whirlwind emote\n- Fixed an issue with Reaper's animations when ending his 'Take a knee' emote\n- Resolved an issue with placeable abilities (turrets, mines) floating after the destructible environment they were placed on was destroyed\n- Fixed an issue that resulted in some users seeing a black screen as their Main Menu background\n- Fixed a bug that caused \"Group Up\" to say \"I'm on my way\" in unintended circumstances.\n- Fixed an issue on some consoles that resulted in blurry graphics\n- Fixed an issue where some players were not able to invite across certain consoles\n- Fixed some performance issues in the Hero Gallery on Console platforms\n- Resolved an issue where Daily Challenges were not rolling over for some users\n- Fixed an issue where the end-of-game 'DRAW' text would not appear for players if a colorblind setting was active\n- Resolved an issue with 'Invite to Custom Game' not appearing as an option in the Social Menu",
      "dev": null
     },
     {
      "title": "MAPS",
-     "body": "Watchpoint Gibraltar Fixed some areas that allowed players to escape the map boundaries Shambali Monastery Fixed some areas where players could become stuck Fixed some areas where some abilities could be 'eaten' by the environment Fixed lighting and geometry in several areas across the map",
+     "body": "Watchpoint Gibraltar\n\n- Fixed some areas that allowed players to escape the map boundaries\n\nShambali Monastery\n\n- Fixed some areas where players could become stuck\n- Fixed some areas where some abilities could be 'eaten' by the environment\n- Fixed lighting and geometry in several areas across the map",
      "dev": null
     },
     {
      "title": "HEROES",
-     "body": "Bastion Fixed an issue where Bastion's sound effects could loop at the location of death Fixed an issue where Bastion's whole screen would turn yellow when healed by a Brigitte Repair Pack Kiriko Fixed a bug with Swift Step in Capture the Flag that would send the Flag to the destination instead of dropping it where the ability was activated Mercy Fixed Mercy's Guardian Angel sometimes allowing her to escape Ramattra's Ravenous Vortex Ramattra Fixed an issue with missing assets on Ramattra's Hero Information page Fixed an issue with Ramattra's Primary Fire effects not displaying the correct amount of projectiles for other players Ramattra should now play rumble effects on gamepads/controllers Ramattra can no longer have more than one barrier active at a time. Note: This could not happen in standard modes, only Custom Game or modes with low cooldowns Tracer Fixed an issue where Pulse Bomb would not damage Tracer if it was 'Stuck' to an enemy",
+     "body": "Bastion\n\n- Fixed an issue where Bastion's sound effects could loop at the location of death\n- Fixed an issue where Bastion's whole screen would turn yellow when healed by a Brigitte Repair Pack\n\nKiriko\n\n- Fixed a bug with Swift Step in Capture the Flag that would send the Flag to the destination instead of dropping it where the ability was activated\n\nMercy\n\n- Fixed Mercy's Guardian Angel sometimes allowing her to escape Ramattra's Ravenous Vortex\n\nRamattra\n\n- Fixed an issue with missing assets on Ramattra's Hero Information page\n- Fixed an issue with Ramattra's Primary Fire effects not displaying the correct amount of projectiles for other players\n- Ramattra should now play rumble effects on gamepads/controllers\n- Ramattra can no longer have more than one barrier active at a time. Note: This could not happen in standard modes, only Custom Game or modes with low cooldowns\n\nTracer\n\n- Fixed an issue where Pulse Bomb would not damage Tracer if it was 'Stuck' to an enemy",
      "dev": null
     }
    ]
   }
  ],
  "raw_text": null,
- "hash": "sha256:3497b448d1bceb6fc71a2e20db336fbe79f979ddfd960d654300e50f1f5af6ce"
+ "hash": "sha256:35ffeb30c37b7b43ee82f7c257c6070c71e2524d3c5b9ae98b3060cc78869f8f"
 }

@@ -23,17 +23,17 @@
    "blocks": [
     {
      "title": "综合改动",
-     "body": "所有英雄的战斗中治疗减免效果从30%降低至15%。",
+     "body": "- 所有英雄的战斗中治疗减免效果从30%降低至15%。",
      "dev": null
     },
     {
      "title": "重装职责被动",
-     "body": "受到伤害或治疗时，终极技能充能减免从20%提高至40%。",
+     "body": "- 受到伤害或治疗时，终极技能充能减免从20%提高至40%。",
      "dev": null
     },
     {
      "title": "副职责被动",
-     "body": "斗士 移动速度加成从20%降低至15%。 先锋 治疗量从50点降低至40点。 冷却时间从5秒缩短至4秒。 奇袭 急救包提供的额外生命值从75点降低至50点。 医疗 治疗转化率从40%降低至30%。",
+     "body": "斗士\n\n- 移动速度加成从20%降低至15%。\n\n先锋\n\n- 治疗量从50点降低至40点。\n- 冷却时间从5秒缩短至4秒。\n\n奇袭\n\n- 急救包提供的额外生命值从75点降低至50点。\n\n医疗\n\n- 治疗转化率从40%降低至30%。",
      "dev": null
     }
    ]
@@ -49,6 +49,7 @@
      "name_en": "Domina",
      "name_cn": "金驭",
      "role": "tank",
+     "icon": "https://ld5.res.netease.com/images/20260714/1784025798503_49b4d1bea0.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -57,28 +58,29 @@
        "name_en": "Barrier Array",
        "name_cn": "屏障阵列",
        "slug": "barrier-array",
+       "icon": "https://ld5.res.netease.com/images/20260227/1772182082007_ec9c9f909c.png",
        "changes": [
         {
          "text_en": null,
          "text_cn": "冷却时间从17秒缩短至15秒。",
          "before": 17.0,
          "after": 15.0,
-         "metric": "cooldown",
          "by": -2.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "冷却时间"
+         "metric": "cooldown",
+         "raw_metric": "冷却时间",
+         "unit": "s"
         },
         {
          "text_en": null,
          "text_cn": "持续时间从8秒缩短至7秒。",
          "before": 8.0,
          "after": 7.0,
-         "metric": "duration",
          "by": -1.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "持续时间"
+         "metric": "duration",
+         "raw_metric": "持续时间",
+         "unit": "s"
         }
        ]
       }
@@ -89,6 +91,7 @@
      "name_en": "Doomfist",
      "name_cn": "末日铁拳",
      "role": "tank",
+     "icon": "https://ld5.res.netease.com/images/20260227/1772181886269_aad4b54751.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -97,17 +100,18 @@
        "name_en": "The Best Defense",
        "name_cn": "最佳防守……",
        "slug": "the-best-defense",
+       "icon": "https://ld5.res.netease.com/images/20260227/1772181889588_55659bc445.png",
        "changes": [
         {
          "text_en": null,
          "text_cn": "获得的过量生命值从25点提高至30点。",
          "before": 25.0,
          "after": 30.0,
-         "metric": "获得的过量生命值",
          "by": 5.0,
          "by_pct": null,
-         "unit": "hp",
-         "raw_metric": "获得的过量生命值"
+         "metric": "获得的过量生命值",
+         "raw_metric": "获得的过量生命值",
+         "unit": "hp"
         }
        ]
       }
@@ -118,6 +122,7 @@
      "name_en": "Hazard",
      "name_cn": "骇灾",
      "role": "tank",
+     "icon": "https://ld5.res.netease.com/images/20260227/1772182009525_8943d0cdff.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -126,17 +131,18 @@
        "name_en": "Jagged Wall",
        "name_cn": "尖刺墙",
        "slug": "jagged-wall",
+       "icon": "https://ld5.res.netease.com/images/20260227/1772182011451_df591e0c1d.png",
        "changes": [
         {
          "text_en": null,
          "text_cn": "冷却时间从15秒缩短至13秒。",
          "before": 15.0,
          "after": 13.0,
-         "metric": "cooldown",
          "by": -2.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "冷却时间"
+         "metric": "cooldown",
+         "raw_metric": "冷却时间",
+         "unit": "s"
         }
        ]
       }
@@ -147,6 +153,7 @@
      "name_en": "Mauga",
      "name_cn": "毛加",
      "role": "tank",
+     "icon": "https://ld5.res.netease.com/images/20260227/1772181993572_a26f29fd16.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -155,17 +162,18 @@
        "name_en": "Overrun",
        "name_cn": "蛮力冲撞",
        "slug": "overrun",
+       "icon": "https://ld5.res.netease.com/images/20260227/1772181993947_fddb47af4b.png",
        "changes": [
         {
          "text_en": null,
          "text_cn": "冷却时间从7秒缩短至6秒。",
          "before": 7.0,
          "after": 6.0,
-         "metric": "cooldown",
          "by": -1.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "冷却时间"
+         "metric": "cooldown",
+         "raw_metric": "冷却时间",
+         "unit": "s"
         }
        ]
       }
@@ -176,6 +184,7 @@
      "name_en": "Ramattra",
      "name_cn": "拉玛刹",
      "role": "tank",
+     "icon": "https://ld5.res.netease.com/images/20260227/1772181986102_ec08d4b065.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -184,28 +193,29 @@
        "name_en": "Void Barrier",
        "name_cn": "虚空屏障",
        "slug": "void-barrier",
+       "icon": "https://ld5.res.netease.com/images/20260227/1772181987338_6cd66af128.png",
        "changes": [
         {
          "text_en": null,
          "text_cn": "冷却时间从16秒缩短至13秒。",
          "before": 16.0,
          "after": 13.0,
-         "metric": "cooldown",
          "by": -3.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "冷却时间"
+         "metric": "cooldown",
+         "raw_metric": "冷却时间",
+         "unit": "s"
         },
         {
          "text_en": null,
          "text_cn": "持续时间从4秒缩短至3秒。",
          "before": 4.0,
          "after": 3.0,
-         "metric": "duration",
          "by": -1.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "持续时间"
+         "metric": "duration",
+         "raw_metric": "持续时间",
+         "unit": "s"
         }
        ]
       }
@@ -216,5 +226,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:91ca4fdf3e23870edc4dc37c07f3a325510718ebe2ffa7729990ed47f032c97b"
+ "hash": "sha256:0030ed10bab046406edcf9180e1f7df815c9ff650473f7772ea57063858b3f2f"
 }

@@ -23,7 +23,7 @@
    "blocks": [
     {
      "title": "GENERAL UPDATES",
-     "body": "Maximum ultimate charge preserved on hero swap increased from 15 to 49%.",
+     "body": "- Maximum ultimate charge preserved on hero swap increased from 15 to 49%.",
      "dev": null
     }
    ]
@@ -39,6 +39,7 @@
      "name_en": "D.Va",
      "name_cn": "D.Va",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e69a3d819fd46d0dcd1d9474c248a95e69519c20077c60e9de73a1e2d3acdbb6.png",
      "dev_note": "Developer Comments: Mech go zoom and D.Va bomb go boom.",
      "general": [],
      "perks": [],
@@ -47,39 +48,40 @@
        "name_en": "Boosters",
        "name_cn": "推进器",
        "slug": "boosters",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/89d6beb25b21eacd5a181b96438436692d9ad403fcef19873e506f6d46ed37a3.png",
        "changes": [
         {
          "text_en": "Can now move backwards.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Can now be canceled with Crouch.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Canceling the ability with Crouch in the first .4 seconds reduces the cooldown to 1.5 seconds.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       },
@@ -87,17 +89,18 @@
        "name_en": "Self-Destruct",
        "name_cn": "自毁",
        "slug": "self-destruct",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f76e4b710ceb71f2e260029fc8d0ad15b227e3f006ab1b6c0c4e44da98c2d614.png",
        "changes": [
         {
          "text_en": "Knockback increased by 900%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": "knockback",
          "by": null,
          "by_pct": 900.0,
-         "unit": null,
-         "raw_metric": "knockback"
+         "metric": "knockback",
+         "raw_metric": "knockback",
+         "unit": null
         }
        ]
       }
@@ -108,6 +111,7 @@
      "name_en": "Doomfist",
      "name_cn": "末日铁拳",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/bc538b345188bdcb2d2be5b2894d471ba54aeea53b03862429205ed49d693bbe.png",
      "dev_note": "Developer Comments: Doomfist is a mobility hero, so there’s no reason he should be slowing down while blocking right?",
      "general": [
       {
@@ -129,17 +133,18 @@
        "name_en": "Power Block",
        "name_cn": "悍猛格挡",
        "slug": "power-block",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/56267df764931eadeae09513e0f1b9594ae238eebba84878c501ba4b69acb71f.png",
        "changes": [
         {
          "text_en": "Movement Speed Modifier increased from .65x to 1.25x.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -150,6 +155,7 @@
      "name_en": "Junker Queen",
      "name_cn": "渣客女王",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/cf66adfac58a0321ec1f7d3a7241d6bf2f3b311707064d2f0ace2e3f4e342727.png",
      "dev_note": "Developer Comments: Leave it to Junker Queen to cut her way toward new heights.",
      "general": [],
      "perks": [],
@@ -158,39 +164,40 @@
        "name_en": "Jagged Blade",
        "name_cn": "锯齿利刃",
        "slug": "jagged-blade",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/7aff09649e4e2daeec13cfcca4d5e369b4ddc0160587637bb607761ecf89f16c.png",
        "changes": [
         {
          "text_en": "Pressing Secondary Fire while the ability is active now magnetizes Junker Queen to Gracie.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Cooldown now starts when blade starts returning to Junker Queen.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Cooldown decreased from 6 to 4 seconds.",
          "text_cn": null,
          "before": 6.0,
          "after": 4.0,
-         "metric": "cooldown",
          "by": -2.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "cooldown"
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
         }
        ]
       }
@@ -201,6 +208,7 @@
      "name_en": "Mauga",
      "name_cn": "毛加",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6dbd80a0b40bd0464db35948f98d91ecc6dfcede8c94ff9b1ecefda781a7aa1f.png",
      "dev_note": "Developer Comments: Smallga",
      "general": [
       {
@@ -234,17 +242,18 @@
        "name_en": "Incendiary Chain Gun",
        "name_cn": null,
        "slug": "incendiary-chain-gun",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/df6bae435e7e319b51fe4977e92971fcfbb9b30fab2f39d1e614660274fab226.png",
        "changes": [
         {
          "text_en": "Hitting enemies who are ‘On Fire’ will Ignite them.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -255,6 +264,7 @@
      "name_en": "Orisa",
      "name_cn": "奥丽莎",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/20c12a10cfe0b5608f9eec63a74ecb0ccd18a114019bc77bb2765f87776e17ed.png",
      "dev_note": "Developer Comments: Efi has made some changes to Orisa’s technology inspired by a completely hypothetical scenario where a certain archer rides her into battle.",
      "general": [],
      "perks": [],
@@ -263,28 +273,29 @@
        "name_en": "Energy Javelin",
        "name_cn": "能量标枪",
        "slug": "energy-javelin",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0cf93f55a30fe7ec769c5f2eebd284c92851d6b1dbaca0e2c39eae908a9b35c6.png",
        "changes": [
         {
          "text_en": "Ricochets once.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Explodes when it sticks.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -295,6 +306,7 @@
      "name_en": "Ramattra",
      "name_cn": "拉玛刹",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/cf69d4bfa61ac14f61d3d541b0d2687a20fa24f55afe7a392d746f5ccb138dea.png",
      "dev_note": "Developer Comments: We heard Ramattra wasn’t suffering enough so we’ve increased his suffering so that when he causes suffering his enemies will suffer as much as he has suffered.",
      "general": [
       {
@@ -316,72 +328,73 @@
        "name_en": "Annihilation",
        "name_cn": "诛",
        "slug": "annihilation",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/dbffca5b7b1e0dcc7a0cceaffe1fedb1a6bf7af73e71218a15df2779fc97805f.png",
        "changes": [
         {
          "text_en": "Moved from his Ultimate to Ability 1",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "No longer pauses its duration while dealing damage.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Movement Speed Increased by 20%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": "move_speed",
          "by": null,
          "by_pct": 20.0,
-         "unit": null,
-         "raw_metric": "movement speed"
+         "metric": "move_speed",
+         "raw_metric": "movement speed",
+         "unit": null
         },
         {
          "text_en": "Duration increased from 3 to 5 seconds.",
          "text_cn": null,
          "before": 3.0,
          "after": 5.0,
-         "metric": "duration",
          "by": 2.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "duration"
+         "metric": "duration",
+         "raw_metric": "duration",
+         "unit": "s"
         },
         {
          "text_en": "Damage Per Second Decreased from 30 to 20.",
          "text_cn": null,
          "before": 30.0,
          "after": 20.0,
-         "metric": "damage",
          "by": -10.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "damage per second"
+         "metric": "damage",
+         "raw_metric": "damage per second",
+         "unit": null
         },
         {
          "text_en": "Radius decreased from 12 to 9 meters.",
          "text_cn": null,
          "before": 12.0,
          "after": 9.0,
-         "metric": "radius",
          "by": -3.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "radius"
+         "metric": "radius",
+         "raw_metric": "radius",
+         "unit": null
         }
        ]
       },
@@ -389,61 +402,62 @@
        "name_en": "Nemesis Form",
        "name_cn": null,
        "slug": "nemesis-form",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5a9818afe979474cd23a8a3863522be14ae549df841a6a7efc9ed5398f3d692f.png",
        "changes": [
         {
          "text_en": "Moved from his Ability 1 to his Ultimate.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Always has Annihilation active while in use.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Fully heals Ramattra on use.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Pummel Damage increased from 60 to 75.",
          "text_cn": null,
          "before": 60.0,
          "after": 75.0,
-         "metric": "pummel damage",
          "by": 15.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "pummel damage"
+         "metric": "pummel damage",
+         "raw_metric": "pummel damage",
+         "unit": null
         },
         {
          "text_en": "Pummel Range has been increased from 10 to 15.",
          "text_cn": null,
          "before": 10.0,
          "after": 15.0,
-         "metric": "pummel range has been",
          "by": 5.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "pummel range has been"
+         "metric": "pummel range has been",
+         "raw_metric": "pummel range has been",
+         "unit": null
         }
        ]
       }
@@ -454,6 +468,7 @@
      "name_en": "Reinhardt",
      "name_cn": "莱因哈特",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b5e3a4f5629a3acfd47b5d2e695e79ea964b060bf67b7e4f8f15e63accd5f934.png",
      "dev_note": "Reinhardt Comment: HAHA! THIS IS JUST LIKE PING PONG! WATCH THIS, BRIGITTE! I WILL BE ENTERING THE CHAMPIONSHIP THIS YEAR!",
      "general": [],
      "perks": [],
@@ -462,50 +477,51 @@
        "name_en": "Barrier Field",
        "name_cn": "屏障力场",
        "slug": "barrier-field",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/121f13903665417446ee4673d9740080a3bc117e285cf3dcf6547861a0bc7d43.png",
        "changes": [
         {
          "text_en": "You can now press Primary Fire to reflects projectiles.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Health decreases by 20% every second while reflecting.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Barrier size decreased to 50% while Reflecting.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Camera Lock input now bound to Quick Melee.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -516,6 +532,7 @@
      "name_en": "Roadhog",
      "name_cn": "路霸",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b6f4e837dc41e87d730f6b0fad3473e689c8bdcd1f732b97326ac08b0508f2ee.png",
      "dev_note": "Developer Comments: Much to the chagrin of his enemies, Roadhog has recently discovered baseball.",
      "general": [],
      "perks": [],
@@ -524,28 +541,29 @@
        "name_en": "Pig Pen",
        "name_cn": null,
        "slug": "pig-pen",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0150c28fe47ff4a7c16138266bf2b4903bd45e4b7770ab40572bb792b647838c.png",
        "changes": [
         {
          "text_en": "Projectile Speed increased from 26 to 80.",
          "text_cn": null,
          "before": 26.0,
          "after": 80.0,
-         "metric": "projectile_speed",
          "by": 54.0,
          "by_pct": null,
-         "unit": "m/s",
-         "raw_metric": "projectile speed"
+         "metric": "projectile_speed",
+         "raw_metric": "projectile speed",
+         "unit": "m/s"
         },
         {
          "text_en": "Projectile Damage increased from 0 to 40.",
          "text_cn": null,
          "before": 0.0,
          "after": 40.0,
-         "metric": "projectile damage",
          "by": 40.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "projectile damage"
+         "metric": "projectile damage",
+         "raw_metric": "projectile damage",
+         "unit": null
         }
        ]
       }
@@ -556,6 +574,7 @@
      "name_en": "Sigma",
      "name_cn": "西格玛",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9738e1687bf7064de3667169788ef1b5ea9cf1746a42753c767cf17c7cb67547.png",
      "dev_note": "Developer Comments: Danger! Falling rocks.",
      "general": [],
      "perks": [],
@@ -564,39 +583,40 @@
        "name_en": "Accretion",
        "name_cn": "质量吸附",
        "slug": "accretion",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/594b0ecbb34b41b288c08bc7b040b273f25289ef0afc2d00828d6a30a0687236.png",
        "changes": [
         {
          "text_en": "Projectile Speed decreased from 37 to 30.",
          "text_cn": null,
          "before": 37.0,
          "after": 30.0,
-         "metric": "projectile_speed",
          "by": -7.0,
          "by_pct": null,
-         "unit": "m/s",
-         "raw_metric": "projectile speed"
+         "metric": "projectile_speed",
+         "raw_metric": "projectile speed",
+         "unit": "m/s"
         },
         {
          "text_en": "Projectile Gravity decreased from 18 to 2.",
          "text_cn": null,
          "before": 18.0,
          "after": 2.0,
-         "metric": "projectile gravity",
          "by": -16.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "projectile gravity"
+         "metric": "projectile gravity",
+         "raw_metric": "projectile gravity",
+         "unit": null
         },
         {
          "text_en": "Pressing the ability button while Accretion is active will cause the rock to crash into the ground. When crashed, it will deal 50 damage in a 4-meter radius and stun anyone damaged.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -607,6 +627,7 @@
      "name_en": "Winston",
      "name_cn": "温斯顿",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6a9a37012551410b46b2c28146404354fe21e4a1e8ea65db4e1e497eeaa05c71.png",
      "dev_note": "Developer Comments: Empowering the “no aim” playstyle.",
      "general": [],
      "perks": [],
@@ -615,17 +636,18 @@
        "name_en": "Tesla Cannon",
        "name_cn": "特斯拉炮",
        "slug": "tesla-cannon",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/050de92c7ce31e42368c796d9c246210a40bb1bd4a5273b2d64d8a980e1f9f9a.png",
        "changes": [
         {
          "text_en": "Secondary Fire now chains between enemies.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       },
@@ -633,17 +655,18 @@
        "name_en": "Primal Rage",
        "name_cn": "原始暴怒",
        "slug": "primal-rage",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/685608721cb914e0412a090eb1e89c0f5d10edfb3dbc34218ba3acd35611c990.png",
        "changes": [
         {
          "text_en": "Punches also cause lightning to chain between enemies.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -654,6 +677,7 @@
      "name_en": "Wrecking Ball",
      "name_cn": "破坏球",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f71d6948e8b6ae340e20ab569ef66d24aead6032c34a7ec09a00ea864b413a24.png",
      "dev_note": "Developer Comments: We're preparing to retcon Wrecking Ball into a crab. Hope these changes are sufficiently immersive.",
      "general": [
       {
@@ -675,17 +699,18 @@
        "name_en": "Quad Cannons",
        "name_cn": null,
        "slug": "quad-cannons",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/12339775bfc5bfb8a4ad735a2eef452992e90f5374d341baf09f19bc9968147a.png",
        "changes": [
         {
          "text_en": "Deals increased damage as you continue to walk sideways.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -696,6 +721,7 @@
      "name_en": "Zarya",
      "name_cn": "查莉娅",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d43075cba10cd711a129556142849587e78f1f55b0105d39a640da53ffa64e1b.png",
      "dev_note": "Developer Comments: Please don’t burst Zarya’s bubble, no matter how big it gets.",
      "general": [
       {
@@ -717,17 +743,18 @@
        "name_en": "Particle Barrier and Projected Barrier",
        "name_cn": null,
        "slug": "particle-barrier-and-projected-barrier",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2d462e28ae2fc60b3ef9c32702bbc88936885dd7d20746a31dd2e3c51c20f199.png",
        "changes": [
         {
          "text_en": "Increases the size of the bubbled target by 1.75x.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -747,6 +774,7 @@
      "name_en": "Ashe",
      "name_cn": "艾什",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e41d918d0e7ffa772b5571df3d0dc1a05e6d9032307f78be935972cfd59f208a.png",
      "dev_note": "Developer Comments: B.O.B.’s upset from being called the wrong name, so F.R.E.D.’s picking up the slack.",
      "general": [],
      "perks": [],
@@ -755,39 +783,40 @@
        "name_en": "F.R.E.D.",
        "name_cn": null,
        "slug": "f-r-e-d",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e788b12d476e896dac3831bbc0842fb3b4d07a89b3c337959d9a6cd6ea5a7df5.png",
        "changes": [
         {
          "text_en": "New Ability on mouse scroll.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Weapon Swap.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Call in F.R.E.D. to charge for a short duration before leaving.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -798,6 +827,7 @@
      "name_en": "Bastion",
      "name_cn": "堡垒",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3a7dc6d45ce7a1e1c2d31bd4d88b4889c412b2003ad82d1fd8e41271952c1f68.png",
      "dev_note": "Developer Comments: Yeah, we’ve switched up his configurations a little. So anyway, start blastin'.",
      "general": [],
      "perks": [],
@@ -806,61 +836,62 @@
        "name_en": "Configuration: Assault",
        "name_cn": "强攻模式",
        "slug": "configuration-assault",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5cf3fc40ec6eeee9716f66a934d9bf7f0803a924e72c12c5d1a6c74e57c933bd.png",
        "changes": [
         {
          "text_en": "Configuration: Assault is now the default form.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Movement speed penalty has been removed.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Configuration: Assault now has 150 Ammo.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Damage per bullet decreased from 12 to 5.",
          "text_cn": null,
          "before": 12.0,
          "after": 5.0,
-         "metric": "damage",
          "by": -7.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "damage per bullet"
+         "metric": "damage",
+         "raw_metric": "damage per bullet",
+         "unit": null
         },
         {
          "text_en": "Now deals 1.5x damage for critical hits.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       },
@@ -868,39 +899,40 @@
        "name_en": "Reconfigure",
        "name_cn": null,
        "slug": "reconfigure",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/56bef8912e83cac59dc0acb08bcaef591ff2ed52385424e8d753c03bbb77e4e9.png",
        "changes": [
         {
          "text_en": "Now transforms Bastion into Configuration: Recon.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Grants a movement speed bonus of 35%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Configuration: Sentry now fires shotgun blasts.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -911,6 +943,7 @@
      "name_en": "Cassidy",
      "name_cn": "卡西迪",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8d161c49df5a962ece9ceafc6500bea473d9dd3695b9e24e39d5be616295e6c5.png",
      "dev_note": "Developer Comments: Extra survivability is every cowboy’s dream – just don’t die.",
      "general": [],
      "perks": [],
@@ -919,28 +952,29 @@
        "name_en": "Wanted!",
        "name_cn": null,
        "slug": "wanted",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c14b2c5652526a006233965b176fb2b5af9e7c5d44045fad3844267303f07091.png",
        "changes": [
         {
          "text_en": "New Passive",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "One enemy is marked. Kill them to gain 50 health until the next time you die. After 5 kills, you gain 1 health each time.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -951,6 +985,7 @@
      "name_en": "Echo",
      "name_cn": "回声",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0dc3f1679d739ef530ba2b8cbe02bf09f4d40a57c0af84f694a3241d3a7ef948.png",
      "dev_note": "Developer Comments: Now bringing Mystery Heroes into other modes.",
      "general": [],
      "perks": [],
@@ -959,17 +994,18 @@
        "name_en": "Focusing Beam",
        "name_cn": "聚焦光线",
        "slug": "focusing-beam",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6552feeb85a32ae7131df50f61a9c0fa24bf347bf007e208a356a940561129ae.png",
        "changes": [
         {
          "text_en": "Targets within 8 meters of Echo take damage as if they’re under half health.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       },
@@ -977,61 +1013,62 @@
        "name_en": "Duplicate",
        "name_cn": "人格复制",
        "slug": "duplicate",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/457d6ebcb2b92d1e7f7a7174b426903879e131422196825589adbc5e5d9f7efb.png",
        "changes": [
         {
          "text_en": "Can no longer choose who you duplicate.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Can now duplicate allies.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Duplicate’s Health no longer capped at 300 health.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Duplicate now gains an extra 100 Shields.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Bonus Ult Charge Gain Rate increased from 4 to 6.5.",
          "text_cn": null,
          "before": 4.0,
          "after": 6.5,
-         "metric": "bonus ult charge gain rate",
          "by": 2.5,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "bonus ult charge gain rate"
+         "metric": "bonus ult charge gain rate",
+         "raw_metric": "bonus ult charge gain rate",
+         "unit": null
         }
        ]
       }
@@ -1042,6 +1079,7 @@
      "name_en": "Genji",
      "name_cn": "源氏",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/190a3dd9a5a4c8daeff9ec4da861f43cb28116964e89dc7416da104d8fae9134.png",
      "dev_note": "Developer Comments: Parry this! *Not exclusive to casual players.",
      "general": [],
      "perks": [],
@@ -1050,17 +1088,18 @@
        "name_en": "Deflect",
        "name_cn": "闪",
        "slug": "deflect",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9e46bda733749ddd6512b61c021b4487b6201338a9ff39c716e4ee06e5d63a58.png",
        "changes": [
         {
          "text_en": "Press Primary Fire with perfect timing to critically deflect a projectile.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -1071,6 +1110,7 @@
      "name_en": "Hanzo",
      "name_cn": "半藏",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3febc2e638ff56d8f0161ea278ac3116b5baf8c0328f1eded6b499552a0eccad.png",
      "dev_note": "Developer Comments: Hanzo has always struggled to overcome his past, so it’s hard for him not to bounce back to old habits.",
      "general": [],
      "perks": [],
@@ -1079,39 +1119,40 @@
        "name_en": "Storm Arrow",
        "name_cn": "岚",
        "slug": "storm-arrow",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/92c56621ba267d94f16baacda3f10ba7777b475935981b02e5026449d8e3d79c.png",
        "changes": [
         {
          "text_en": "Number of ricochets increased from 1 to 3.",
          "text_cn": null,
          "before": 1.0,
          "after": 3.0,
-         "metric": "number of ricochets",
          "by": 2.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "number of ricochets"
+         "metric": "number of ricochets",
+         "raw_metric": "number of ricochets",
+         "unit": null
         },
         {
          "text_en": "Number of projectiles per shot increased from 1 to 5.",
          "text_cn": null,
          "before": 1.0,
          "after": 5.0,
-         "metric": "number of projectiles per shot",
          "by": 4.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "number of projectiles per shot"
+         "metric": "number of projectiles per shot",
+         "raw_metric": "number of projectiles per shot",
+         "unit": null
         },
         {
          "text_en": "Damage of each projectile decreased by 78%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": "damage",
          "by": null,
          "by_pct": 78.0,
-         "unit": null,
-         "raw_metric": "damage of each projectile"
+         "metric": "damage",
+         "raw_metric": "damage of each projectile",
+         "unit": null
         }
        ]
       }
@@ -1122,6 +1163,7 @@
      "name_en": "Junkrat",
      "name_cn": "狂鼠",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d3628dc64d78ca6dc2a8b509cf5a6fc417c0f5068d5f75d1f5c094be1f58ee4e.png",
      "dev_note": "Developer Comments: Junkrat put bombs on his bombs. Not sure why this would surprise anybody.",
      "general": [],
      "perks": [],
@@ -1130,17 +1172,18 @@
        "name_en": "Frag Launcher",
        "name_cn": "榴弹发射器",
        "slug": "frag-launcher",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e43d916b0851551d17a2385f92497cdcfcd781ac155663643a1e1ff3500bbf37.png",
        "changes": [
         {
          "text_en": "You can now detonate Frag Launcher projectiles with Secondary Fire.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -1151,6 +1194,7 @@
      "name_en": "Mei",
      "name_cn": "美",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/08586dceed41e030d575b2b643118f55390f1c2af91dd15394528f5399fcc934.png",
      "dev_note": "Developer Request: Definitely do not use this to get to spots on the map you’re not supposed to get to, thanks.",
      "general": [],
      "perks": [],
@@ -1159,50 +1203,51 @@
        "name_en": "Avalanche Launch",
        "name_cn": null,
        "slug": "avalanche-launch",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/bd63b2d05e4a2aa8615b7cad828fd05427f07e69c7611a662c5cb0d726b82627.png",
        "changes": [
         {
          "text_en": "New Ability.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Press Jump in the Air to activate.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Creates a large Ice Pillar under Mei.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Can be canceled with Interact.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -1213,6 +1258,7 @@
      "name_en": "Pharah",
      "name_cn": "法老之鹰",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/93d639075993fdef3402aa9131f93be7789a33a11dc0099f2f88d22dda09c175.png",
      "dev_note": "Developer Comments: You’ve used Hover Jets. You’ve used Jump Jets. You’ve used Jet Dash. But have you tried Jet Land?",
      "general": [],
      "perks": [],
@@ -1221,39 +1267,40 @@
        "name_en": "Jet Land",
        "name_cn": null,
        "slug": "jet-land",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c14b2c5652526a006233965b176fb2b5af9e7c5d44045fad3844267303f07091.png",
        "changes": [
         {
          "text_en": "New Ability.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Press Crouch in the Air to activate.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Dash downwards towards the ground.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -1264,6 +1311,7 @@
      "name_en": "Reaper",
      "name_cn": "死神",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b7aac87959afbe062cc31518ded04b9dbcadb0a2282f8963c6bfd5ba0a2d6a27.png",
      "dev_note": "Developer Comments: Someone’s taken a page out of Mauga’s book.",
      "general": [],
      "perks": [],
@@ -1272,50 +1320,51 @@
        "name_en": "Hellfire Shotguns",
        "name_cn": "狱火散弹枪",
        "slug": "hellfire-shotguns",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/76b6866587871744aca310645f66d2d07755c5a55093eb8734ed0898b17efc51.png",
        "changes": [
         {
          "text_en": "Primary Fire now only shoots one shotgun.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Damage per bullet reduced from 5.4 to 2.8.",
          "text_cn": null,
          "before": 5.4,
          "after": 2.8,
-         "metric": "damage",
          "by": -2.6,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "damage per bullet"
+         "metric": "damage",
+         "raw_metric": "damage per bullet",
+         "unit": null
         },
         {
          "text_en": "Ammo increased from 8 to 16.",
          "text_cn": null,
          "before": 8.0,
          "after": 16.0,
-         "metric": "ammo",
          "by": 8.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "ammo"
+         "metric": "ammo",
+         "raw_metric": "ammo",
+         "unit": null
         },
         {
          "text_en": "Secondary Fire now shoots the other shotgun.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -1326,6 +1375,7 @@
      "name_en": "Sojourn",
      "name_cn": "索杰恩",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/515f25a729a4a3f51d956fc54c600dc60d8e5242f2b188c178496cea1a2e11b5.png",
      "dev_note": "Developer Comments: Vivian Chase? More like Vivian Pull.",
      "general": [],
      "perks": [],
@@ -1334,28 +1384,29 @@
        "name_en": "Disruptor Shot",
        "name_cn": "干扰弹",
        "slug": "disruptor-shot",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/7e903d13474df377216191c5b5c128fc6d20befdc611af9f7baedfdfa3b59295.png",
        "changes": [
         {
          "text_en": "Disruptor Shot now pulls enemies in on deploy.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "You can deploy Disruptor Shot early by pressing E again.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -1366,6 +1417,7 @@
      "name_en": "Soldier: 76",
      "name_cn": "士兵76",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1cb6f3ad4b8afdc1a901c26180a4c134018bb805b91eefe9b7cf2946879f10c8.png",
      "dev_note": "Developer Comments: Run and gun? Sounds like fun!",
      "general": [],
      "perks": [],
@@ -1374,28 +1426,29 @@
        "name_en": "Heavy Pulse Rifle",
        "name_cn": "重脉冲步枪",
        "slug": "heavy-pulse-rifle",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/69eaf669cd646a617439592615f023cfec82c27f4a3e19f48188941b3feaf55f.png",
        "changes": [
         {
          "text_en": "Can now be used during Sprint.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Using Heavy Pulse Rifle while sprinting has a spread of 2.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -1406,6 +1459,7 @@
      "name_en": "Sombra",
      "name_cn": "黑影",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f348c1704dc50c009ac8acf6912a5a77eaf2a3acdd34e56927190af9eb9145d1.png",
      "dev_note": "Developer Comments: To keep fights fair, let the enemy team know that they should update their network anti-virus and firewalls as soon as possible.",
      "general": [],
      "perks": [],
@@ -1414,17 +1468,18 @@
        "name_en": "Virus",
        "name_cn": "病毒侵染",
        "slug": "virus",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/156dfc48d0e7a046692e27ea9f417ee3afbf9d918d92a909fe03d2b705dd3bdd.png",
        "changes": [
         {
          "text_en": "Killing an enemy infected with Virus, it attempts to spread to a nearby enemy.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -1435,6 +1490,7 @@
      "name_en": "Symmetra",
      "name_cn": "秩序之光",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b0a19d5c8b0e299705036f4d0b9394da5ff415dc0dcd4e9207b6e63254022dff.png",
      "dev_note": "Developer Comments: Symmetra can’t troll you if you don’t press Teleport.",
      "general": [],
      "perks": [],
@@ -1443,39 +1499,40 @@
        "name_en": "Teleporter",
        "name_cn": null,
        "slug": "teleporter",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/13b45663f441144ded977e8ccf9ed180c213176206a9f6f9e189e29f09a03b64.png",
        "changes": [
         {
          "text_en": "Only places exit Teleporter.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Any ally can use Teleporter regardless of their location.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Teleporter duration decreased from 10 to 4 seconds.",
          "text_cn": null,
          "before": 10.0,
          "after": 4.0,
-         "metric": "teleporter duration",
          "by": -6.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "teleporter duration"
+         "metric": "teleporter duration",
+         "raw_metric": "teleporter duration",
+         "unit": null
         }
        ]
       }
@@ -1486,6 +1543,7 @@
      "name_en": "Torbjörn",
      "name_cn": "托比昂",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2ef3a4bdd117829a83867a7775ece351c4226f29b24cdbf8d7fac89443e8d8a2.png",
      "dev_note": "Developer Comments: Everyone deserves a pet turret.",
      "general": [],
      "perks": [],
@@ -1494,17 +1552,18 @@
        "name_en": "Deploy Turret",
        "name_cn": "部署炮台",
        "slug": "deploy-turret",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a25d559460eed995f177b84eda6000aca6a52c8600dcf2249cc50ca31aa9c786.png",
        "changes": [
         {
          "text_en": "The turret now sticks to walls, ceilings, and allies.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -1515,6 +1574,7 @@
      "name_en": "Tracer",
      "name_cn": "猎空",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5ee20a1feed14da5153f19745328e9fc02bd79f8109593a9b7dab9283eb9629b.png",
      "dev_note": "Developer Comments: krow slotsiP esluP ruoy woh gnignahc ,erutuf ro tsap eht ot uoy sdnes ylmodnaR",
      "general": [],
      "perks": [],
@@ -1523,17 +1583,18 @@
        "name_en": "Recall",
        "name_cn": "闪回",
        "slug": "recall",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/30939502a8576da1fdcad8c7d21881e32066fb28847fc7df874b1436689e3425.png",
        "changes": [
         {
          "text_en": "Randomly sends you to the past or future, changing how your Pulse Pistols work.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -1544,6 +1605,7 @@
      "name_en": "Widowmaker",
      "name_cn": "黑百合",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b4871b9addd770582c8b6a1ab366b9ec08d986c2995248ee5fce7e15cb0d809d.png",
      "dev_note": "Developer Comments: Hooks + Headshot = Parkour",
      "general": [],
      "perks": [],
@@ -1552,28 +1614,29 @@
        "name_en": "Grappling Hook",
        "name_cn": "抓钩",
        "slug": "grappling-hook",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/72fec7acac37ad840835839e72f368134498583686e91f7e30fe5d48aa44f7a1.png",
        "changes": [
         {
          "text_en": "Now has 3 charges.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Getting a critical hit with Widow’s Kiss’s secondary fire replenishes one charge of the ability.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -1593,6 +1656,7 @@
      "name_en": "Ana",
      "name_cn": "安娜",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/86debddbaaaf8699d68775a9dbffaf5b8db514772b77ff7234b1ff84c0b29fd5.png",
      "dev_note": "Developer Comments: Rise and shine! How’s this for a rude awakening?",
      "general": [],
      "perks": [],
@@ -1601,28 +1665,29 @@
        "name_en": "Sleep Dart",
        "name_cn": "麻醉镖",
        "slug": "sleep-dart",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/20707fd82265412fdc6d2353daa88ec7558cd71c89aa3ac6cf0e78bbbfcabd80.png",
        "changes": [
         {
          "text_en": "Slept enemies slowly rise while Sleeping.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Enemies take fall damage when they land.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -1633,6 +1698,7 @@
      "name_en": "Baptiste",
      "name_cn": "巴蒂斯特",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5ac801c6fe84f83fe5015af89858cbdfb2ec9d32d141f582889b5381fd0195fc.png",
      "dev_note": "Developer Comments: Someone once advised Baptiste to keep moving forward. He’s really taken that advice to heart.",
      "general": [],
      "perks": [],
@@ -1641,17 +1707,18 @@
        "name_en": "Exo Boots",
        "name_cn": "动力战靴",
        "slug": "exo-boots",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0d598afba5a03761d617d735d5435323c56108655b5017ddf8c36c4af36b9b73.png",
        "changes": [
         {
          "text_en": "Now launches you forward rather than upward.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       },
@@ -1659,17 +1726,18 @@
        "name_en": "Amplification Matrix",
        "name_cn": "增幅矩阵",
        "slug": "amplification-matrix",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0a31371b55e4007e67a86f8495949970d20f64b2f0166e78d3fd16217e090a83.png",
        "changes": [
         {
          "text_en": "Increases speed of projectiles shot through it by 200%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -1680,6 +1748,7 @@
      "name_en": "Brigitte",
      "name_cn": "布丽吉塔",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/51b93ea59f369a1defa78e5d08c12b1391f5d2d94614a51fd95c125a7a6151fa.png",
      "dev_note": "Developer Comments: Bigitte",
      "general": [
       {
@@ -1713,28 +1782,29 @@
        "name_en": "Shield Barrier",
        "name_cn": null,
        "slug": "shield-barrier",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2b1bb6338180161e55c5f2184879dce395eca9e58f974befe729293fcc3dfdca.png",
        "changes": [
         {
          "text_en": "Health increased from 250 to 700.",
          "text_cn": null,
          "before": 250.0,
          "after": 700.0,
-         "metric": "health",
          "by": 450.0,
          "by_pct": null,
-         "unit": "hp",
-         "raw_metric": "health"
+         "metric": "health",
+         "raw_metric": "health",
+         "unit": "hp"
         },
         {
          "text_en": "Always uses bigger size.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       },
@@ -1742,28 +1812,29 @@
        "name_en": "Rally",
        "name_cn": "集结号令",
        "slug": "rally",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/08552423da53faa55238bd66a2a72d32d1038e42f2eebc911921bc9d5d575432.png",
        "changes": [
         {
          "text_en": "Resets your Shield Bash cooldown.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Movement Speed bonus increased from 1.15x to 1.3x.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -1774,6 +1845,7 @@
      "name_en": "Illari",
      "name_cn": "伊拉锐",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f33f6fe94ad55fcf9027e779f66afac358a2f93651070b95cd565ff90d670c8b.png",
      "dev_note": "Developer Comments: Fixing a longstanding Illari bug, her solar powers are now fully functional.",
      "general": [],
      "perks": [],
@@ -1782,50 +1854,51 @@
        "name_en": "Captive Sun",
        "name_cn": "桎梏灼日",
        "slug": "captive-sun",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/556c78ff01455fb1ab7ed7808e681ae0f1cd1fdf0fe1c92fe89672ea261ad187.png",
        "changes": [
         {
          "text_en": "After using Captive Sun, Illari becomes Solar Installed. She moves faster and charges her Solar Rifle Faster, her rifle always charges to full damage power.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Movement speed bonus 1.2x.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Attack charge time reduced by 40%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": "attack charge time",
          "by": null,
          "by_pct": 40.0,
-         "unit": null,
-         "raw_metric": "attack charge time"
+         "metric": "attack charge time",
+         "raw_metric": "attack charge time",
+         "unit": null
         },
         {
          "text_en": "Healing recharge bonus 1.2x.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       },
@@ -1833,28 +1906,29 @@
        "name_en": "Solar Powered",
        "name_cn": null,
        "slug": "solar-powered",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c14b2c5652526a006233965b176fb2b5af9e7c5d44045fad3844267303f07091.png",
        "changes": [
         {
          "text_en": "New Passive.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Illari is always Solar Installed when the sun is out.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -1865,6 +1939,7 @@
      "name_en": "Kiriko",
      "name_cn": "雾子",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/24d1d7bf86c331b3d81b934442ed36fd0121f6815255c6f26f456127fb342d15.png",
      "dev_note": "Dev Comment: You should see her on her trampoline.",
      "general": [],
      "perks": [],
@@ -1873,28 +1948,29 @@
        "name_en": "Protection Suzu",
        "name_cn": "铃",
        "slug": "protection-suzu",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3775c37a363e1aaf02a6df4cdfb611f18e38bb69ce42dd59abddb4140cea9790.png",
        "changes": [
         {
          "text_en": "Now also grants allies a 10% damage boost, 10% healing boost, 50% movement speed boost, and 700% increased jump height.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Increased duration from .65 to 1 second.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       },
@@ -1902,28 +1978,29 @@
        "name_en": "Vulpine Agility",
        "name_cn": null,
        "slug": "vulpine-agility",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c14b2c5652526a006233965b176fb2b5af9e7c5d44045fad3844267303f07091.png",
        "changes": [
         {
          "text_en": "New Passive",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Kiriko can jump an extra time in the air",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -1934,6 +2011,7 @@
      "name_en": "Lifeweaver",
      "name_cn": "生命之梭",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/57d5014ab6034db9138f838e8450693b4a97ab3c54f85d594b199a8853e75ccb.png",
      "dev_note": "Developer Comments: Reach new heights with Lifeweaver through the power of photosynthesis.",
      "general": [],
      "perks": [],
@@ -1942,17 +2020,18 @@
        "name_en": "Petal Platform",
        "name_cn": "花瓣平台",
        "slug": "petal-platform",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f64582890d92e968d79c54f9bb8cf1b9b1cc8da6dca7b8bdc647512957cac89f.png",
        "changes": [
         {
          "text_en": "Now raises 20m (up from 8m).",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -1963,6 +2042,7 @@
      "name_en": "Lúcio",
      "name_cn": "卢西奥",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/dee7e92975f5e659fa6b28c508d8fbad62bda720698b1d21f2492af7b9f94b48.png",
      "dev_note": "Developer Comment: Lucio’s gun is now keepin’ it in time.",
      "general": [],
      "perks": [],
@@ -1971,39 +2051,40 @@
        "name_en": "Sonic Amplifier",
        "name_cn": "音速扩音器",
        "slug": "sonic-amplifier",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/7afd1ea98486f12a0338ca55a9a1c49a97867a380f162ea7c10cffa487bfb808.png",
        "changes": [
         {
          "text_en": "Ammo increased from 20 to 30.",
          "text_cn": null,
          "before": 20.0,
          "after": 30.0,
-         "metric": "ammo",
          "by": 10.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "ammo"
+         "metric": "ammo",
+         "raw_metric": "ammo",
+         "unit": null
         },
         {
          "text_en": "Recovery decreased from .14 seconds per bullet to .125 seconds per bullet.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Now Shoots 3 bullets per volley during Speed Boost and 5 bullets per volley during Healing Boost.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       },
@@ -2011,17 +2092,18 @@
        "name_en": "Sound Barrier",
        "name_cn": "音障",
        "slug": "sound-barrier",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/21c5a17be341a3c0da2dcc9372f4f3c88ef622c80776360bd844d0fba3eb88a7.png",
        "changes": [
         {
          "text_en": "Knocks up enemies the sound waves hit.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -2032,6 +2114,7 @@
      "name_en": "Mercy",
      "name_cn": "天使",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c889fade479003fac5a1ff46a05aee7b0dc88fbb8d2d4b75e4be31159eb1f816.png",
      "dev_note": "Developer Comments: Goodbye, 0 damage numbers!",
      "general": [],
      "perks": [],
@@ -2040,116 +2123,117 @@
        "name_en": "Caduceus Staff",
        "name_cn": "天使之杖",
        "slug": "caduceus-staff",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d1a18f702a0e30d58608da51a0b8eeeab72a04faf0de3579ce625066caa8389e.png",
        "changes": [
         {
          "text_en": "Damage boost from Secondary Fire removed.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Secondary Fire is now Damage Staff. (Ability 2 on Controller.)",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Damage Staff Fires Caduceus Blaster projectiles.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Projectiles have a smaller size.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Size gets bigger during ult.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "2 more damage.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Projectiles reload automatically while not firing.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Projectiles reload at twice the speed while healing or after 4 seconds without firing.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Can fire projectiles at a reduced firing speed if healing beam is active.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Healing beam can heal at a reduced rate if Damage Staff is active.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       },
@@ -2157,17 +2241,18 @@
        "name_en": "Caduceus Blaster",
        "name_cn": "天使冲击枪",
        "slug": "caduceus-blaster",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9d3118f2f0a262678fb1b11ffbaa3f5e929e453cb4d7c819e69ff137cde918e1.png",
        "changes": [
         {
          "text_en": "Removed.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -2178,6 +2263,7 @@
      "name_en": "Moira",
      "name_cn": "莫伊拉",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/90fa2b69a7b80ae6d57c9ea6f3387dd18dfc1728bdb26949d28a17b98dd4e5f7.png",
      "dev_note": "Dev Comment: Moira’s right arm is starting to melt from all the experimentation, so she’s switching it up.",
      "general": [],
      "perks": [],
@@ -2186,17 +2272,18 @@
        "name_en": "Biotic Grasp (Primary Fire)",
        "name_cn": null,
        "slug": "biotic-grasp-primary-fire",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9721148061d528df7b3b5a90f746a82dc2b53b191add15e0962f8dcaf0777aa0.png",
        "changes": [
         {
          "text_en": "Now deals damage instead of healing.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       },
@@ -2204,17 +2291,18 @@
        "name_en": "Biotic Grasp (Secondary Fire)",
        "name_cn": null,
        "slug": "biotic-grasp-secondary-fire",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4073577768c5a1f5b5e8bcdb9ce9615be249d35cfbff4b66bc617c19e3b96591.png",
        "changes": [
         {
          "text_en": "Now heals instead of doing damage.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -2225,6 +2313,7 @@
      "name_en": "Zenyatta",
      "name_cn": "禅雅塔",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9367143a32f3fc07781330a0b26c6f1087361204a2b7e4088d1daf26428273f2.png",
      "dev_note": "Developer Comments: “Let Zen walk?” Not sure about that one.",
      "general": [],
      "perks": [],
@@ -2233,72 +2322,73 @@
        "name_en": "Orb of Destruction",
        "name_cn": "灭",
        "slug": "orb-of-destruction",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5740abd7e5f0de513ebcb32b073f27ba8f5625804598d5762cefd0c7331c1437.png",
        "changes": [
         {
          "text_en": "Ammo increased from 25 to 32.",
          "text_cn": null,
          "before": 25.0,
          "after": 32.0,
-         "metric": "ammo",
          "by": 7.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "ammo"
+         "metric": "ammo",
+         "raw_metric": "ammo",
+         "unit": null
         },
         {
          "text_en": "Secondary Fire charge time per projectile decreased from .52 to .47.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Secondary Fire projectiles fire 33% faster.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Secondary Fire damage decreased by 30%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": "secondary fire damage",
          "by": null,
          "by_pct": 30.0,
-         "unit": null,
-         "raw_metric": "secondary fire damage"
+         "metric": "secondary fire damage",
+         "raw_metric": "secondary fire damage",
+         "unit": null
         },
         {
          "text_en": "You can now charge up to 8 Orbs with Secondary Fire.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Zenyatta’s accelerates upward while charging Secondary Fire.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -2309,5 +2399,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:59b1f880065155c7541c5ff74e1a1655ee162738061b810e28d186ff08247a43"
+ "hash": "sha256:880b349218959e2df46710c7b69f672cecfa73c32216360396db74fa877b5688"
 }

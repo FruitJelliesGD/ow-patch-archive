@@ -15,7 +15,7 @@
    "blocks": [
     {
      "title": "General",
-     "body": "Support heroes no longer say \"Group up with me\" when they are missing health and request healing",
+     "body": "- Support heroes no longer say \"Group up with me\" when they are missing health and request healing",
      "dev": null
     }
    ]
@@ -31,6 +31,7 @@
      "name_en": "Ana",
      "name_cn": "安娜",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b64f0b7062266a58b29a773476b31175aded9fcccfe4a0d86596dbe85f7739d2.png",
      "dev_note": "A significant number of Biotic Grenades are blocked by allies accidentally intercepting it. Having it collide with allies in the same manner as Ana's primary fire will enable more deliberate placement of the ability.",
      "general": [],
      "perks": [],
@@ -39,17 +40,18 @@
        "name_en": "Biotic Grenade",
        "name_cn": "生物手雷",
        "slug": "biotic-grenade",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c8190b234bf0a0e28eecffe162d0c942e6b8656e95f4688c6ca3b025fa5a487d.png",
        "changes": [
         {
          "text_en": "Projectile now passes through allies with full health",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -60,6 +62,7 @@
      "name_en": "Brigitte",
      "name_cn": "布丽吉塔",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/cc43b7ecb12ebf262080d610ae3209849e304f82764bc3ba38508dd812d88e61.png",
      "dev_note": "Brigitte was a likely candidate when looking at close range heroes to receive a health adjustment while experimenting with 25 HP increments. This ended up being too powerful when combined with her self-healing and barrier.",
      "general": [
       {
@@ -83,6 +86,7 @@
      "name_en": "Hanzo",
      "name_cn": "半藏",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/871d02150e9b67af02795b137ffc5133c1ff8a2a8d66340ca939f6216a539c9c.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -91,17 +95,18 @@
        "name_en": "Storm Arrow",
        "name_cn": "岚",
        "slug": "storm-arrow",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/92c56621ba267d94f16baacda3f10ba7777b475935981b02e5026449d8e3d79c.png",
        "changes": [
         {
          "text_en": "Can now be manually canceled",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -112,6 +117,7 @@
      "name_en": "Mei",
      "name_cn": "美",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a4c1e3c5533675ba4941c48809c54e0412774e022b1e324f7ec5915fef372db9.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -120,17 +126,18 @@
        "name_en": "Ice Wall",
        "name_cn": "冰墙",
        "slug": "ice-wall",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0608319e5f26acafd19a0afd682f3c73c5b70cbfc93d59f58f28eef5cd0eb2e7.png",
        "changes": [
         {
          "text_en": "Can now be manually destroyed while dead",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -141,6 +148,7 @@
      "name_en": "Moira",
      "name_cn": "莫伊拉",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d58b00cca1ff4bea2f18c1715f7c79a58e60b457b3e5ee6d9a63599cf77e299b.png",
      "dev_note": "Moira could use a small bump in healing efficiency after recent changes made maintaining her high healing output more challenging.",
      "general": [],
      "perks": [],
@@ -149,17 +157,18 @@
        "name_en": "Biotic Grasp",
        "name_cn": "生化之触",
        "slug": "biotic-grasp",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9721148061d528df7b3b5a90f746a82dc2b53b191add15e0962f8dcaf0777aa0.png",
        "changes": [
         {
          "text_en": "Healing resource consumption rate lowered from 14 to 12.5",
          "text_cn": null,
          "before": 14.0,
          "after": 12.5,
-         "metric": "healing",
          "by": -1.5,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "healing resource consumption rate"
+         "metric": "healing",
+         "raw_metric": "healing resource consumption rate",
+         "unit": null
         }
        ]
       }
@@ -170,6 +179,7 @@
      "name_en": "Symmetra",
      "name_cn": "秩序之光",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/961aa9d625d8104d6f466f63a907027e7083d161da9f02004d7d545c2a52440b.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -178,17 +188,18 @@
        "name_en": "Teleporter",
        "name_cn": null,
        "slug": "teleporter",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/13b45663f441144ded977e8ccf9ed180c213176206a9f6f9e189e29f09a03b64.png",
        "changes": [
         {
          "text_en": "Can now be manually destroyed while dead",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -199,6 +210,7 @@
      "name_en": "Torbjörn",
      "name_cn": "托比昂",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/81a4f644137461fddfef6c24820b0b8958046d5dad1944baf02478fcc916a968.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -207,17 +219,18 @@
        "name_en": "Deploy Turret",
        "name_cn": "部署炮台",
        "slug": "deploy-turret",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a3791d6155a72f1dd4109d99a7d730b5f489f0442abd6582b429bcca36a2dc75.png",
        "changes": [
         {
          "text_en": "Turret can now be manually destroyed while dead",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -228,5 +241,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:a65350fa5bf2cb630b5ff86996597afad99ed386371670e72c8636b233e55387"
+ "hash": "sha256:1a06fd99c883315b9777b25eda52a03df97316022861286a2d0dac56f205c74e"
 }

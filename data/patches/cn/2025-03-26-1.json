@@ -18,7 +18,7 @@
    "type": "generic_update",
    "title": "英雄更新",
    "role": null,
-   "description": "平衡性改动适用于5v5和6v6游戏模式。",
+   "description": "- 平衡性改动适用于5v5和6v6游戏模式。",
    "heroes": [],
    "blocks": []
   },
@@ -33,6 +33,7 @@
      "name_en": "Mauga",
      "name_cn": "毛加",
      "role": "tank",
+     "icon": "https://ld5.res.netease.com/images/20250321/1742550512622_4ac902ece2.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -41,17 +42,18 @@
        "name_en": "Cardiac Overdrive",
        "name_cn": "心脏过载",
        "slug": "cardiac-overdrive",
+       "icon": "https://ld5.res.netease.com/images/20250318/1742300225793_14708cc916.png",
        "changes": [
         {
          "text_en": null,
          "text_cn": "不再为盟友提供受伤减免。",
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       },
@@ -59,28 +61,29 @@
        "name_en": "Cage Fight",
        "name_cn": "笼中斗",
        "slug": "cage-fight",
+       "icon": "https://ld5.res.netease.com/images/20250318/1742303147594_7666ecca0a.png",
        "changes": [
         {
          "text_en": null,
          "text_cn": "终极技能消耗提高8%。",
          "before": null,
          "after": null,
-         "metric": "ultimate_cost",
          "by": null,
          "by_pct": 8.0,
-         "unit": null,
-         "raw_metric": "终极技能消耗"
+         "metric": "ultimate_cost",
+         "raw_metric": "终极技能消耗",
+         "unit": null
         },
         {
          "text_en": null,
          "text_cn": "屏障生命值从1500降低至1200。",
          "before": 1500.0,
          "after": 1200.0,
-         "metric": "barrier",
          "by": -300.0,
          "by_pct": null,
-         "unit": "hp",
-         "raw_metric": "屏障生命值"
+         "metric": "barrier",
+         "raw_metric": "屏障生命值",
+         "unit": "hp"
         }
        ]
       },
@@ -88,17 +91,18 @@
        "name_en": "Berserker Passive",
        "name_cn": "狂战士（被动）",
        "slug": "berserker-passive",
+       "icon": "https://ld5.res.netease.com/images/20250318/1742303149937_1b98ddb860.png",
        "changes": [
         {
          "text_en": null,
          "text_cn": "过量生命值转换率从50%降低至40%。",
          "before": 50.0,
          "after": 40.0,
-         "metric": "overhealth",
          "by": -10.0,
          "by_pct": null,
-         "unit": "pct",
-         "raw_metric": "过量生命值转换率"
+         "metric": "overhealth",
+         "raw_metric": "过量生命值转换率",
+         "unit": "pct"
         }
        ]
       }
@@ -109,6 +113,7 @@
      "name_en": "Roadhog",
      "name_cn": "路霸",
      "role": "tank",
+     "icon": "https://ld5.res.netease.com/images/20250321/1742550482204_50ef17351e.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -117,17 +122,18 @@
        "name_en": "Take a Breather",
        "name_cn": "呼吸器",
        "slug": "take-a-breather",
+       "icon": "https://ld5.res.netease.com/images/20250318/1742300184471_50238685c3.png",
        "changes": [
         {
          "text_en": null,
          "text_cn": "最大治疗量从400提高到450。",
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       },
@@ -135,17 +141,18 @@
        "name_en": "Whole Hog",
        "name_cn": "鸡飞狗跳",
        "slug": "whole-hog",
+       "icon": "https://ld5.res.netease.com/images/20250318/1742303083943_f2fd0afc39.png",
        "changes": [
         {
          "text_en": null,
          "text_cn": "终极技能消耗降低12%。",
          "before": null,
          "after": null,
-         "metric": "ultimate_cost",
          "by": null,
          "by_pct": 12.0,
-         "unit": null,
-         "raw_metric": "终极技能消耗"
+         "metric": "ultimate_cost",
+         "raw_metric": "终极技能消耗",
+         "unit": null
         }
        ]
       }
@@ -156,6 +163,7 @@
      "name_en": "Winston",
      "name_cn": "温斯顿",
      "role": "tank",
+     "icon": "https://ld5.res.netease.com/images/20250321/1742550475161_32e3d8c8ab.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -164,17 +172,18 @@
        "name_en": "Primal Rage",
        "name_cn": "原始暴怒",
        "slug": "primal-rage",
+       "icon": "https://ld5.res.netease.com/images/20250318/1742303078051_d87120a478.png",
        "changes": [
         {
          "text_en": null,
          "text_cn": "终极技能消耗提高10%。",
          "before": null,
          "after": null,
-         "metric": "ultimate_cost",
          "by": null,
          "by_pct": 10.0,
-         "unit": null,
-         "raw_metric": "终极技能消耗"
+         "metric": "ultimate_cost",
+         "raw_metric": "终极技能消耗",
+         "unit": null
         }
        ]
       }
@@ -185,6 +194,7 @@
      "name_en": "Zarya",
      "name_cn": "查莉娅",
      "role": "tank",
+     "icon": "https://ld5.res.netease.com/images/20250321/1742550485371_b4c56fc013.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -193,17 +203,18 @@
        "name_en": "Energy",
        "name_cn": "能量转换",
        "slug": "energy",
+       "icon": "https://ld5.res.netease.com/images/20250318/1742300191288_de29ce1e61.png",
        "changes": [
         {
          "text_en": null,
          "text_cn": "衰退速度从每秒2提高到每秒2.5。",
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -223,6 +234,7 @@
      "name_en": "Cassidy",
      "name_cn": "卡西迪",
      "role": "damage",
+     "icon": "https://ld5.res.netease.com/images/20250321/1742550483350_c6871ddb4e.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -231,28 +243,29 @@
        "name_en": "Peacekeeper",
        "name_cn": "维和者",
        "slug": "peacekeeper",
+       "icon": "https://ld5.res.netease.com/images/20250318/1742300186054_29b288eaca.png",
        "changes": [
         {
          "text_en": null,
          "text_cn": "主要攻击模式衰减射程从20米增加到25米。",
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": null,
          "text_cn": "辅助攻击模式的伤害从45提高至50。",
          "before": 45.0,
          "after": 50.0,
-         "metric": "辅助攻击模式的伤害",
          "by": 5.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "辅助攻击模式的伤害"
+         "metric": "辅助攻击模式的伤害",
+         "raw_metric": "辅助攻击模式的伤害",
+         "unit": null
         }
        ]
       }
@@ -263,6 +276,7 @@
      "name_en": "Echo",
      "name_cn": "回声",
      "role": "damage",
+     "icon": "https://ld5.res.netease.com/images/20250321/1742550503716_41f86679b8.png",
      "dev_note": null,
      "general": [
       {
@@ -298,6 +312,7 @@
      "name_en": "Soldier: 76",
      "name_cn": "士兵76",
      "role": "damage",
+     "icon": "https://ld5.res.netease.com/images/20250321/1742550486680_e6ecee4b2c.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -306,17 +321,18 @@
        "name_en": "Heavy Pulse Rifle",
        "name_cn": "重脉冲步枪",
        "slug": "heavy-pulse-rifle",
+       "icon": "https://ld5.res.netease.com/images/20250318/1742303085118_e9cab01af2.png",
        "changes": [
         {
          "text_en": null,
          "text_cn": "主要攻击模式现在使用较大的射弹尺寸（0.07米）。",
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -327,6 +343,7 @@
      "name_en": "Sojourn",
      "name_cn": "索杰恩",
      "role": "damage",
+     "icon": "https://ld5.res.netease.com/images/20250321/1742550500893_ab7041fb44.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -335,28 +352,29 @@
        "name_en": "Power Slide",
        "name_cn": "机动滑铲",
        "slug": "power-slide",
+       "icon": "https://ld5.res.netease.com/images/20250318/1742300208813_381e1a3ba4.png",
        "changes": [
         {
          "text_en": null,
          "text_cn": "冷却时间从7秒延长至8秒。",
          "before": 7.0,
          "after": 8.0,
-         "metric": "cooldown",
          "by": 1.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "冷却时间"
+         "metric": "cooldown",
+         "raw_metric": "冷却时间",
+         "unit": "s"
         },
         {
          "text_en": null,
          "text_cn": "最大持续时间从1.2秒缩短至1秒。",
          "before": 1.2,
          "after": 1.0,
-         "metric": "最大持续时间",
          "by": -0.2,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "最大持续时间"
+         "metric": "最大持续时间",
+         "raw_metric": "最大持续时间",
+         "unit": "s"
         }
        ]
       }
@@ -367,6 +385,7 @@
      "name_en": "Widowmaker",
      "name_cn": "黑百合",
      "role": "damage",
+     "icon": "https://ld5.res.netease.com/images/20250321/1742550476284_89614c880a.png",
      "dev_note": null,
      "general": [
       {
@@ -399,6 +418,7 @@
      "name_en": "Ana",
      "name_cn": "安娜",
      "role": "support",
+     "icon": "https://ld5.res.netease.com/images/20250321/1742550494571_8930da28ec.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -407,28 +427,29 @@
        "name_en": "Biotic Grenade",
        "name_cn": "生物手雷",
        "slug": "biotic-grenade",
+       "icon": "https://ld5.res.netease.com/images/20250318/1742300203171_512b2fec5c.png",
        "changes": [
         {
          "text_en": null,
          "text_cn": "非6v6游戏模式下的冷却时间从12秒延长至14秒。",
          "before": 12.0,
          "after": 14.0,
-         "metric": "游戏模式下的冷却时间",
          "by": 2.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "游戏模式下的冷却时间"
+         "metric": "游戏模式下的冷却时间",
+         "raw_metric": "游戏模式下的冷却时间",
+         "unit": "s"
         },
         {
          "text_en": null,
          "text_cn": "6v6游戏模式下的冷却时间从10秒延长至12秒。",
          "before": 10.0,
          "after": 12.0,
-         "metric": "游戏模式下的冷却时间",
          "by": 2.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "游戏模式下的冷却时间"
+         "metric": "游戏模式下的冷却时间",
+         "raw_metric": "游戏模式下的冷却时间",
+         "unit": "s"
         }
        ]
       },
@@ -436,17 +457,18 @@
        "name_en": "Shrike",
        "name_cn": "伯劳振翅",
        "slug": "shrike",
+       "icon": "https://ld5.res.netease.com/images/20250320/1742437738453_7f681f5d51.png",
        "changes": [
         {
          "text_en": null,
          "text_cn": "纳米激素对于自身的效果的持续时间从8秒缩短至6秒。",
          "before": 8.0,
          "after": 6.0,
-         "metric": "纳米激素对于自身的效果的持续时间",
          "by": -2.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "纳米激素对于自身的效果的持续时间"
+         "metric": "纳米激素对于自身的效果的持续时间",
+         "raw_metric": "纳米激素对于自身的效果的持续时间",
+         "unit": "s"
         }
        ]
       }
@@ -457,6 +479,7 @@
      "name_en": "Juno",
      "name_cn": "朱诺",
      "role": "support",
+     "icon": "https://ld5.res.netease.com/images/20250326/1742984331672_21b6bf24c2.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -465,17 +488,18 @@
        "name_en": "Orbital Ray",
        "name_cn": "轨道射线",
        "slug": "orbital-ray",
+       "icon": "https://ld5.res.netease.com/images/20250326/1742984331657_47d35684bf.png",
        "changes": [
         {
          "text_en": null,
          "text_cn": "终极技能消耗提高10%。",
          "before": null,
          "after": null,
-         "metric": "ultimate_cost",
          "by": null,
          "by_pct": 10.0,
-         "unit": null,
-         "raw_metric": "终极技能消耗"
+         "metric": "ultimate_cost",
+         "raw_metric": "终极技能消耗",
+         "unit": null
         }
        ]
       }
@@ -486,5 +510,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:6e5922addc7e1c0108dfc182499e8e2694e89179497700f06ae8542d38bc16b1"
+ "hash": "sha256:3c335b7a8b891dd80a968da7642eaf716d79bd4384cd4ab9989a99bae5455d2d"
 }

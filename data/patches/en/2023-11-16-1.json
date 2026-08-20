@@ -25,6 +25,7 @@
      "name_en": "Roadhog",
      "name_cn": "路霸",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b6f4e837dc41e87d730f6b0fad3473e689c8bdcd1f732b97326ac08b0508f2ee.png",
      "dev_note": "Developer Comments: We're adjusting a few things with the new Take a Breather, as our initial landing spot was slightly conservative. These tweaks should offer Roadhog more healing throughput and damage resistance from moment to moment. While we are shortening the maximum duration, this gives Roadhog faster healing and should alleviate some of the feelings players had around being locked into using Take a Breather for a large chunk of their gameplay.",
      "general": [],
      "perks": [],
@@ -33,50 +34,51 @@
        "name_en": "Take a Breather",
        "name_cn": "呼吸器",
        "slug": "take-a-breather",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9cb8d867671bf917a9ba5d4a28ab6cb6ceeb10de2813567fcad97aca32c58499.png",
        "changes": [
         {
          "text_en": "Total healing increased from 450 to 500",
          "text_cn": null,
          "before": 450.0,
          "after": 500.0,
-         "metric": "total healing",
          "by": 50.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "total healing"
+         "metric": "total healing",
+         "raw_metric": "total healing",
+         "unit": null
         },
         {
          "text_en": "Damage reduction increased from 30 to 40%",
          "text_cn": null,
          "before": 30.0,
          "after": 40.0,
-         "metric": "damage",
          "by": 10.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "damage reduction"
+         "metric": "damage",
+         "raw_metric": "damage reduction",
+         "unit": null
         },
         {
          "text_en": "Maximum duration reduced from 3 to 2.5 seconds",
          "text_cn": null,
          "before": 3.0,
          "after": 2.5,
-         "metric": "maximum duration",
          "by": -0.5,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "maximum duration"
+         "metric": "maximum duration",
+         "raw_metric": "maximum duration",
+         "unit": null
         },
         {
          "text_en": "Recharge time reduced from 12 to 10 seconds",
          "text_cn": null,
          "before": 12.0,
          "after": 10.0,
-         "metric": "recharge time",
          "by": -2.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "recharge time"
+         "metric": "recharge time",
+         "raw_metric": "recharge time",
+         "unit": null
         }
        ]
       }

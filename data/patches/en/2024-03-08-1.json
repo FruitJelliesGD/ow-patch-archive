@@ -23,12 +23,12 @@
    "blocks": [
     {
      "title": "NEW GAME MODE – HERO MASTERY: GAUNTLET",
-     "body": "Hero Mastery: Gauntlet is a new co-op game mode where players work together to protect towers from enemy bots. Collect energy and buy powerful upgrades to survive all ten rounds! Focus your skills to earn high scores and compete on the leaderboards. Are you ready to enter the Gauntlet? Gauntlet teams can have up to three players and must survive all ten rounds to win. Each game randomizes the upgrades, bots, and targeted towers to keep things fresh. The Gauntlet has four difficulties that vary all aspects of gameplay, including score. Work your way up to Legendary and dominate the leaderboards. Athena has upgraded the simulation with many new bots for this mode. Be on the lookout for dangerous elite training bots. Play with AI mode is available for teams to practice with 1-3 players. Scores and Challenges are not recorded in this mode. Hero Mastery: Gauntlet is launching with a limited-time event that includes exclusive rewards and challenges. Can you defend the towers and unlock them all?",
+     "body": "Hero Mastery: Gauntlet is a new co-op game mode where players work together to protect towers from enemy bots. Collect energy and buy powerful upgrades to survive all ten rounds! Focus your skills to earn high scores and compete on the leaderboards. Are you ready to enter the Gauntlet?\n\n- Gauntlet teams can have up to three players and must survive all ten rounds to win. Each game randomizes the upgrades, bots, and targeted towers to keep things fresh.\n- The Gauntlet has four difficulties that vary all aspects of gameplay, including score. Work your way up to Legendary and dominate the leaderboards.\n- Athena has upgraded the simulation with many new bots for this mode. Be on the lookout for dangerous elite training bots.\n- Play with AI mode is available for teams to practice with 1-3 players. Scores and Challenges are not recorded in this mode.\n\nHero Mastery: Gauntlet is launching with a limited-time event that includes exclusive rewards and challenges. Can you defend the towers and unlock them all?",
      "dev": null
     },
     {
      "title": "COMPETITIVE PLAY UPDATES",
-     "body": "Competitive Placements and Overview will now be displayed before Hero Progression at the end of a Competitive Match. Competitive Rank Range has been added to the scoreboard so players can view the rank range of a match at any time. Modifiers can now be viewed outside of the Competitive Overview with a rank info button found on the Competitive Play menu. A new modifier called “Demotion Protection” has been added to the Competitive Overview to notify players that if they lose another game, they will be demoted to the next lowest division.",
+     "body": "- Competitive Placements and Overview will now be displayed before Hero Progression at the end of a Competitive Match.\n- Competitive Rank Range has been added to the scoreboard so players can view the rank range of a match at any time.\n- Modifiers can now be viewed outside of the Competitive Overview with a rank info button found on the Competitive Play menu.\n- A new modifier called “Demotion Protection” has been added to the Competitive Overview to notify players that if they lose another game, they will be demoted to the next lowest division.",
      "dev": null
     }
    ]
@@ -42,17 +42,17 @@
    "blocks": [
     {
      "title": "PROJECTILE SIZE UPDATES",
-     "body": "Global projectile size modifier for travel time projectiles with a speed greater than 50 meters per second reduced from 0.1 to 0.075 meters.",
+     "body": "- Global projectile size modifier for travel time projectiles with a speed greater than 50 meters per second reduced from 0.1 to 0.075 meters.",
      "dev": "Developer Comments: We are decreasing the size of the fastest travel time projectiles because it reduces the frequency of these projectiles failing to headshot due to hitting the enemy's chest hit volume first."
     },
     {
      "title": "ROLE PASSIVES UPDATES",
-     "body": "Heal reduction applied by the damage role passive lowered from 20% to 15%.",
+     "body": "- Heal reduction applied by the damage role passive lowered from 20% to 15%.",
      "dev": "Developer Comments: The Damage role passive reduces the potency of in-combat healing and helps equalize the effectiveness between burst and damage over time. Nevertheless, we are going to experiment with a lower value to relieve some of the pressure on tank and support roles. We’ll be keeping a close eye on this change as we want the healing reduction to still be noticeable."
     },
     {
      "title": "OTHER HERO UPDATES",
-     "body": "Added a new UI element above the player's first-person health bar to show all active healing status effects (Anti-Heal, Amplified Healing, Reduced Healing).",
+     "body": "- Added a new UI element above the player's first-person health bar to show all active healing status effects (Anti-Heal, Amplified Healing, Reduced Healing).",
      "dev": null
     }
    ]
@@ -68,6 +68,7 @@
      "name_en": "Doomfist",
      "name_cn": "末日铁拳",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/bc538b345188bdcb2d2be5b2894d471ba54aeea53b03862429205ed49d693bbe.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -76,17 +77,18 @@
        "name_en": "Meteor Strike",
        "name_cn": "毁天灭地",
        "slug": "meteor-strike",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/fa96b2650987b3784a725a0fb1704f7191a686a4f42c9ccf61c404e2f08b158c.png",
        "changes": [
         {
          "text_en": "Minimum damage increased from 15 to 50.",
          "text_cn": null,
          "before": 15.0,
          "after": 50.0,
-         "metric": "minimum damage",
          "by": 35.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "minimum damage"
+         "metric": "minimum damage",
+         "raw_metric": "minimum damage",
+         "unit": null
         }
        ]
       }
@@ -97,6 +99,7 @@
      "name_en": "Mauga",
      "name_cn": "毛加",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6dbd80a0b40bd0464db35948f98d91ecc6dfcede8c94ff9b1ecefda781a7aa1f.png",
      "dev_note": "Developer Comments: We are changing Cardiac Overdrive to make it more forgiving when used for yourself especially when Mauga is low health.",
      "general": [],
      "perks": [],
@@ -105,17 +108,18 @@
        "name_en": "Overrun",
        "name_cn": "蛮力冲撞",
        "slug": "overrun",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c23cc1056dcc40fb5976f3987181b7a46406a0a133f1e95b9b1db11d36253363.png",
        "changes": [
         {
          "text_en": "Stomp damage increased from 45 to 60.",
          "text_cn": null,
          "before": 45.0,
          "after": 60.0,
-         "metric": "stomp damage",
          "by": 15.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "stomp damage"
+         "metric": "stomp damage",
+         "raw_metric": "stomp damage",
+         "unit": null
         }
        ]
       },
@@ -123,39 +127,40 @@
        "name_en": "Cardiac Overdrive",
        "name_cn": "心脏过载",
        "slug": "cardiac-overdrive",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1d19c61b479c82bbdd8ed645ccdec54e16431409d3c8a56b27376c7f8630ec9c.png",
        "changes": [
         {
          "text_en": "Duration reduced from 5 to 4 seconds.",
          "text_cn": null,
          "before": 5.0,
          "after": 4.0,
-         "metric": "duration",
          "by": -1.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "duration"
+         "metric": "duration",
+         "raw_metric": "duration",
+         "unit": "s"
         },
         {
          "text_en": "Cooldown reduced from 12 to 10 seconds.",
          "text_cn": null,
          "before": 12.0,
          "after": 10.0,
-         "metric": "cooldown",
          "by": -2.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "cooldown"
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
         },
         {
          "text_en": "Now fills his passive overhealth by 100.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -166,6 +171,7 @@
      "name_en": "Orisa",
      "name_cn": "奥丽莎",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/20c12a10cfe0b5608f9eec63a74ecb0ccd18a114019bc77bb2765f87776e17ed.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -174,17 +180,18 @@
        "name_en": "Terra Surge",
        "name_cn": "撼地猛刺",
        "slug": "terra-surge",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8d8892b56df62b068343e5029a2ae1e2fa54f7568febac7141ffa945d02e214c.png",
        "changes": [
         {
          "text_en": "Charge rate for the first 2.5 seconds increased by 25%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": "5 seconds",
          "by": null,
          "by_pct": 25.0,
-         "unit": null,
-         "raw_metric": "5 seconds"
+         "metric": "5 seconds",
+         "raw_metric": "5 seconds",
+         "unit": null
         }
        ]
       }
@@ -195,6 +202,7 @@
      "name_en": "Ramattra",
      "name_cn": "拉玛刹",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/cf69d4bfa61ac14f61d3d541b0d2687a20fa24f55afe7a392d746f5ccb138dea.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -203,28 +211,29 @@
        "name_en": "Ravenous Vortex",
        "name_cn": "吞噬漩涡",
        "slug": "ravenous-vortex",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/7a7334480013e1d2eccd7df8b4b1e2f484ca81dfe5719fd3506d1055ba79908c.png",
        "changes": [
         {
          "text_en": "Total damage increased from 45 to 70.",
          "text_cn": null,
          "before": 45.0,
          "after": 70.0,
-         "metric": "total damage",
          "by": 25.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "total damage"
+         "metric": "total damage",
+         "raw_metric": "total damage",
+         "unit": null
         },
         {
          "text_en": "Cooldown decreased from 12 to 11 seconds.",
          "text_cn": null,
          "before": 12.0,
          "after": 11.0,
-         "metric": "cooldown",
          "by": -1.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "cooldown"
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
         }
        ]
       }
@@ -235,6 +244,7 @@
      "name_en": "Reinhardt",
      "name_cn": "莱因哈特",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b5e3a4f5629a3acfd47b5d2e695e79ea964b060bf67b7e4f8f15e63accd5f934.png",
      "dev_note": null,
      "general": [
       {
@@ -256,17 +266,18 @@
        "name_en": "Fire Strike",
        "name_cn": null,
        "slug": "fire-strike",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/568a5f49875557f735af36dce68474a923f7e8582a7be20fb68b6ee66ac077e6.png",
        "changes": [
         {
          "text_en": "Damage increased from 100 to 120.",
          "text_cn": null,
          "before": 100.0,
          "after": 120.0,
-         "metric": "damage",
          "by": 20.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "damage"
+         "metric": "damage",
+         "raw_metric": "damage",
+         "unit": null
         }
        ]
       }
@@ -277,6 +288,7 @@
      "name_en": "Roadhog",
      "name_cn": "路霸",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b6f4e837dc41e87d730f6b0fad3473e689c8bdcd1f732b97326ac08b0508f2ee.png",
      "dev_note": "Developer Comments: We’re improving the consistency of the Hook combo. Enemies are pulled closer to Roadhog and aren’t launched as high when Pig Pen activates, making the Scrap Gun follow-up shot more consistent.",
      "general": [],
      "perks": [],
@@ -285,17 +297,18 @@
        "name_en": "Chain Hook",
        "name_cn": "链钩",
        "slug": "chain-hook",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/139deabeb3d62c451b558367bf5e64641583355d99ed90fe42107a5716fdca3b.png",
        "changes": [
         {
          "text_en": "The enemy final position distance from Roadhog after being pulled decreased from 4 to 3 meters.",
          "text_cn": null,
          "before": 4.0,
          "after": 3.0,
-         "metric": "the enemy final position distance from roadhog after being pulled",
          "by": -1.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "the enemy final position distance from roadhog after being pulled"
+         "metric": "the enemy final position distance from roadhog after being pulled",
+         "raw_metric": "the enemy final position distance from roadhog after being pulled",
+         "unit": null
         }
        ]
       },
@@ -303,17 +316,18 @@
        "name_en": "Pig Pen",
        "name_cn": null,
        "slug": "pig-pen",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0150c28fe47ff4a7c16138266bf2b4903bd45e4b7770ab40572bb792b647838c.png",
        "changes": [
         {
          "text_en": "Vertical knockback on activation decreased by 43%",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": "vertical knockback on activation",
          "by": null,
          "by_pct": 43.0,
-         "unit": null,
-         "raw_metric": "vertical knockback on activation"
+         "metric": "vertical knockback on activation",
+         "raw_metric": "vertical knockback on activation",
+         "unit": null
         }
        ]
       }
@@ -333,6 +347,7 @@
      "name_en": "Hanzo",
      "name_cn": "半藏",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3febc2e638ff56d8f0161ea278ac3116b5baf8c0328f1eded6b499552a0eccad.png",
      "dev_note": "Developer Comments: We’re reverting the previous change to the base projectile size of Hanzo's arrows and replacing it with the general global reduction, which affects all travel time projectiles with a speed greater than 50 meters per second, resulting in Hanzo's arrow projectile staying the same total size as before this patch.",
      "general": [
       {
@@ -356,6 +371,7 @@
      "name_en": "Mei",
      "name_cn": "美",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/08586dceed41e030d575b2b643118f55390f1c2af91dd15394528f5399fcc934.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -364,17 +380,18 @@
        "name_en": "Endothermic Blaster",
        "name_cn": "冰霜冲击枪",
        "slug": "endothermic-blaster",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a935216c60c1c7d72502f373f4af24651c9eb6513781bc482c60ef4d551fb6b9.png",
        "changes": [
         {
          "text_en": "Ammo increased from 120 to 140.",
          "text_cn": null,
          "before": 120.0,
          "after": 140.0,
-         "metric": "ammo",
          "by": 20.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "ammo"
+         "metric": "ammo",
+         "raw_metric": "ammo",
+         "unit": null
         }
        ]
       },
@@ -382,17 +399,18 @@
        "name_en": "Cryofreeze",
        "name_cn": null,
        "slug": "cryofreeze",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/183591c8c22fa134b6826555caf28481a4a3a22ec96d53a935612e0e45425378.png",
        "changes": [
         {
          "text_en": "Heal per second increased from 50 to 62.5.",
          "text_cn": null,
          "before": 50.0,
          "after": 62.5,
-         "metric": "heal per second",
          "by": 12.5,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "heal per second"
+         "metric": "heal per second",
+         "raw_metric": "heal per second",
+         "unit": null
         }
        ]
       }
@@ -403,6 +421,7 @@
      "name_en": "Reaper",
      "name_cn": "死神",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b7aac87959afbe062cc31518ded04b9dbcadb0a2282f8963c6bfd5ba0a2d6a27.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -411,28 +430,29 @@
        "name_en": "Death Blossom",
        "name_cn": "死亡绽放",
        "slug": "death-blossom",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e35595575880a304e14d427a0f9f5f04dc0886ba0f4cadd731ac935174f031e2.png",
        "changes": [
         {
          "text_en": "Damage per second increased from 170 to 185.",
          "text_cn": null,
          "before": 170.0,
          "after": 185.0,
-         "metric": "damage",
          "by": 15.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "damage per second"
+         "metric": "damage",
+         "raw_metric": "damage per second",
+         "unit": null
         },
         {
          "text_en": "Ultimate cost decreased by 12%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": "ultimate_cost",
          "by": null,
          "by_pct": 12.0,
-         "unit": null,
-         "raw_metric": "ultimate cost"
+         "metric": "ultimate_cost",
+         "raw_metric": "ultimate cost",
+         "unit": null
         }
        ]
       }
@@ -443,6 +463,7 @@
      "name_en": "Sombra",
      "name_cn": "黑影",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f348c1704dc50c009ac8acf6912a5a77eaf2a3acdd34e56927190af9eb9145d1.png",
      "dev_note": "Developer Comments: Virus deals critical impact damage when it hits Hacked targets, and this change makes using it as a follow-up more compelling. The Translocator now destroys breakable objects, preventing Sombra from teleporting a shorter distance than expected.",
      "general": [],
      "perks": [],
@@ -451,17 +472,18 @@
        "name_en": "Virus",
        "name_cn": "病毒侵染",
        "slug": "virus",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/156dfc48d0e7a046692e27ea9f417ee3afbf9d918d92a909fe03d2b705dd3bdd.png",
        "changes": [
         {
          "text_en": "Impact damage increased from 10 to 25.",
          "text_cn": null,
          "before": 10.0,
          "after": 25.0,
-         "metric": "impact damage",
          "by": 15.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "impact damage"
+         "metric": "impact damage",
+         "raw_metric": "impact damage",
+         "unit": null
         }
        ]
       },
@@ -469,17 +491,18 @@
        "name_en": "Translocator",
        "name_cn": "位移传动",
        "slug": "translocator",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e81f286184e24512c724af16a960a1faca6ade164238b025d19da64226f05f4d.png",
        "changes": [
         {
          "text_en": "Destroys breakables while in flight.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       },
@@ -487,17 +510,18 @@
        "name_en": "EMP",
        "name_cn": null,
        "slug": "emp",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6104a559ac558db8f7356a10b419d1330e98758ba9f8099666d694c088c64265.png",
        "changes": [
         {
          "text_en": "Ultimate cost reduced by 8%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": "ultimate_cost",
          "by": null,
          "by_pct": 8.0,
-         "unit": null,
-         "raw_metric": "ultimate cost"
+         "metric": "ultimate_cost",
+         "raw_metric": "ultimate cost",
+         "unit": null
         }
        ]
       }
@@ -508,6 +532,7 @@
      "name_en": "Symmetra",
      "name_cn": "秩序之光",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b0a19d5c8b0e299705036f4d0b9394da5ff415dc0dcd4e9207b6e63254022dff.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -516,17 +541,18 @@
        "name_en": "Photon Projector",
        "name_cn": "光子发射器",
        "slug": "photon-projector",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1b3f003d2ba6bba4f3d44f167cd1b03469c4e3c4d3900805b8adddffeedd2c56.png",
        "changes": [
         {
          "text_en": "Primary fire damage per second increased from 60 to 65, scaling with each stage. The new maximum damage per second is 195.",
          "text_cn": null,
          "before": 60.0,
          "after": 65.0,
-         "metric": "primary fire damage per second",
          "by": 5.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "primary fire damage per second"
+         "metric": "primary fire damage per second",
+         "raw_metric": "primary fire damage per second",
+         "unit": null
         }
        ]
       },
@@ -534,28 +560,29 @@
        "name_en": "Sentry Turret",
        "name_cn": "哨戒炮",
        "slug": "sentry-turret",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6ca1ad903ec0121026994bd2318dd5f2488ba40e5dbf5bdb2d5fad8474359253.png",
        "changes": [
         {
          "text_en": "Health increased from 30 to 50.",
          "text_cn": null,
          "before": 30.0,
          "after": 50.0,
-         "metric": "health",
          "by": 20.0,
          "by_pct": null,
-         "unit": "hp",
-         "raw_metric": "health"
+         "metric": "health",
+         "raw_metric": "health",
+         "unit": "hp"
         },
         {
          "text_en": "Damage per second increased from 25 to 30.",
          "text_cn": null,
          "before": 25.0,
          "after": 30.0,
-         "metric": "damage",
          "by": 5.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "damage per second"
+         "metric": "damage",
+         "raw_metric": "damage per second",
+         "unit": null
         }
        ]
       },
@@ -563,28 +590,29 @@
        "name_en": "Teleporter",
        "name_cn": null,
        "slug": "teleporter",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/13b45663f441144ded977e8ccf9ed180c213176206a9f6f9e189e29f09a03b64.png",
        "changes": [
         {
          "text_en": "Health increased from 50 to 100.",
          "text_cn": null,
          "before": 50.0,
          "after": 100.0,
-         "metric": "health",
          "by": 50.0,
          "by_pct": null,
-         "unit": "hp",
-         "raw_metric": "health"
+         "metric": "health",
+         "raw_metric": "health",
+         "unit": "hp"
         },
         {
          "text_en": "Shields increased from 150 to 200.",
          "text_cn": null,
          "before": 150.0,
          "after": 200.0,
-         "metric": "shield",
          "by": 50.0,
          "by_pct": null,
-         "unit": "hp",
-         "raw_metric": "shields"
+         "metric": "shield",
+         "raw_metric": "shields",
+         "unit": "hp"
         }
        ]
       }
@@ -595,6 +623,7 @@
      "name_en": "Torbjörn",
      "name_cn": "托比昂",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2ef3a4bdd117829a83867a7775ece351c4226f29b24cdbf8d7fac89443e8d8a2.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -603,17 +632,18 @@
        "name_en": "Deploy Turret",
        "name_cn": "部署炮台",
        "slug": "deploy-turret",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a25d559460eed995f177b84eda6000aca6a52c8600dcf2249cc50ca31aa9c786.png",
        "changes": [
         {
          "text_en": "Turret damage increased from 11 to 13.",
          "text_cn": null,
          "before": 11.0,
          "after": 13.0,
-         "metric": "turret damage",
          "by": 2.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "turret damage"
+         "metric": "turret damage",
+         "raw_metric": "turret damage",
+         "unit": null
         }
        ]
       }
@@ -633,6 +663,7 @@
      "name_en": "Ana",
      "name_cn": "安娜",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/86debddbaaaf8699d68775a9dbffaf5b8db514772b77ff7234b1ff84c0b29fd5.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -641,17 +672,18 @@
        "name_en": "Biotic Grenade",
        "name_cn": "生物手雷",
        "slug": "biotic-grenade",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c8190b234bf0a0e28eecffe162d0c942e6b8656e95f4688c6ca3b025fa5a487d.png",
        "changes": [
         {
          "text_en": "Explosion damage and healing increased from 60 to 90.",
          "text_cn": null,
          "before": 60.0,
          "after": 90.0,
-         "metric": "explosion damage and healing",
          "by": 30.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "explosion damage and healing"
+         "metric": "explosion damage and healing",
+         "raw_metric": "explosion damage and healing",
+         "unit": null
         }
        ]
       }
@@ -662,6 +694,7 @@
      "name_en": "Baptiste",
      "name_cn": "巴蒂斯特",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5ac801c6fe84f83fe5015af89858cbdfb2ec9d32d141f582889b5381fd0195fc.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -670,17 +703,18 @@
        "name_en": "Immortality Field",
        "name_cn": "维生力场",
        "slug": "immortality-field",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d66d82bab88fc813080dd15e31629cc3aa7c8b41cfb41d5b962b628dd345e433.png",
        "changes": [
         {
          "text_en": "Minimum health threshold decreased from 25% to 20%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -691,6 +725,7 @@
      "name_en": "Brigitte",
      "name_cn": "布丽吉塔",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/51b93ea59f369a1defa78e5d08c12b1391f5d2d94614a51fd95c125a7a6151fa.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -699,17 +734,18 @@
        "name_en": "Repair Pack",
        "name_cn": null,
        "slug": "repair-pack",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5f9f1e00af992f4a090cafc8e83821dd2848f22cb9e0205fafcedacb26bd7335.png",
        "changes": [
         {
          "text_en": "Cooldown reduced from 6 to 5 seconds.",
          "text_cn": null,
          "before": 6.0,
          "after": 5.0,
-         "metric": "cooldown",
          "by": -1.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "cooldown"
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
         }
        ]
       },
@@ -717,17 +753,18 @@
        "name_en": "Rally",
        "name_cn": "集结号令",
        "slug": "rally",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/08552423da53faa55238bd66a2a72d32d1038e42f2eebc911921bc9d5d575432.png",
        "changes": [
         {
          "text_en": "Cost reduced 8%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": "cost",
          "by": null,
          "by_pct": 8.0,
-         "unit": null,
-         "raw_metric": "cost"
+         "metric": "cost",
+         "raw_metric": "cost",
+         "unit": null
         }
        ]
       }
@@ -738,6 +775,7 @@
      "name_en": "Illari",
      "name_cn": "伊拉锐",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f33f6fe94ad55fcf9027e779f66afac358a2f93651070b95cd565ff90d670c8b.png",
      "dev_note": "Developer Comments: We are adjusting the firing cadence of the Solar Rifle, making it more responsive to use and increasing the damage per second but not the burst damage.",
      "general": [],
      "perks": [],
@@ -746,28 +784,29 @@
        "name_en": "Solar Rifle",
        "name_cn": "阳焰步枪",
        "slug": "solar-rifle",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/97ca66b75aefd32c23d38a843b8be6b2325792e3cb62523b47541ce97375ab34.png",
        "changes": [
         {
          "text_en": "Primary fire recovery time reduced from 0.3 to 0.2 seconds.",
          "text_cn": null,
          "before": 0.3,
          "after": 0.2,
-         "metric": "primary fire recovery time",
          "by": -0.1,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "primary fire recovery time"
+         "metric": "primary fire recovery time",
+         "raw_metric": "primary fire recovery time",
+         "unit": null
         },
         {
          "text_en": "Maximum charge time reduced from 0.7 to 0.65 seconds.",
          "text_cn": null,
          "before": 0.7,
          "after": 0.65,
-         "metric": "maximum charge time",
          "by": -0.05,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "maximum charge time"
+         "metric": "maximum charge time",
+         "raw_metric": "maximum charge time",
+         "unit": null
         }
        ]
       }
@@ -778,6 +817,7 @@
      "name_en": "Lifeweaver",
      "name_cn": "生命之梭",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/57d5014ab6034db9138f838e8450693b4a97ab3c54f85d594b199a8853e75ccb.png",
      "dev_note": "Developer Comments: We’re increasing the burst potential of the Heal Blossom to reinforce Lifeweaver's role as a high healing throughput support. The heal per second is roughly the same as before, but individual Heal Blossoms can be charged further.",
      "general": [],
      "perks": [],
@@ -786,28 +826,29 @@
        "name_en": "Heal Blossom",
        "name_cn": null,
        "slug": "heal-blossom",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a3ccff02b44507df5c9bdaced0ecd56ac80b33285ad8a60e6c454acf90560579.png",
        "changes": [
         {
          "text_en": "Maximum heal amount increased from 70 to 80.",
          "text_cn": null,
          "before": 70.0,
          "after": 80.0,
-         "metric": "maximum heal amount",
          "by": 10.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "maximum heal amount"
+         "metric": "maximum heal amount",
+         "raw_metric": "maximum heal amount",
+         "unit": null
         },
         {
          "text_en": "Maximum charge time increased from 1 to 1.15 seconds.",
          "text_cn": null,
          "before": 1.0,
          "after": 1.15,
-         "metric": "maximum charge time",
          "by": 0.15,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "maximum charge time"
+         "metric": "maximum charge time",
+         "raw_metric": "maximum charge time",
+         "unit": null
         }
        ]
       }
@@ -825,22 +866,22 @@
    "blocks": [
     {
      "title": "GENERAL",
-     "body": "Fixed an issue that caused the B button on gamepads to close a Replay instead of opening the Bookmarks. Fixed a bug that made all Souvenirs face backward when previewing them in the Battlepass. Fixed a bug with the 'more items in shop' button in the Event Hub, taking players to a blank screen. Fixed a bug that caused your own Progression Screen to display when viewing another player's Progression Screen. Fixed a display issue that sometimes caused the Rank Update Progress Bar to display incorrect values. Fixed an issue that prevented the 'Ring' dot reticle from displaying correctly for all heroes. Fixed an issue that prevented you from opening the Options menu while a Deathmatch game was ending. Fixed a bug in Mystery Heroes that could cause jump pads to be disabled for players. Leaves now correctly count as a loss during Competitive Placements Matches. Hero Mastery Fixed a bug that gave Echo full Ultimate charge after restarting a run.",
+     "body": "- Fixed an issue that caused the B button on gamepads to close a Replay instead of opening the Bookmarks.\n- Fixed a bug that made all Souvenirs face backward when previewing them in the Battlepass.\n- Fixed a bug with the 'more items in shop' button in the Event Hub, taking players to a blank screen.\n- Fixed a bug that caused your own Progression Screen to display when viewing another player's Progression Screen.\n- Fixed a display issue that sometimes caused the Rank Update Progress Bar to display incorrect values.\n- Fixed an issue that prevented the 'Ring' dot reticle from displaying correctly for all heroes.\n- Fixed an issue that prevented you from opening the Options menu while a Deathmatch game was ending.\n- Fixed a bug in Mystery Heroes that could cause jump pads to be disabled for players.\n- Leaves now correctly count as a loss during Competitive Placements Matches.\n\nHero Mastery\n\n- Fixed a bug that gave Echo full Ultimate charge after restarting a run.",
      "dev": null
     },
     {
      "title": "MAPS",
-     "body": "Junkertown Fixed some spots where the lighting was incorrect. King's Row Fixed an area of the map that allowed players to escape the playable space. Samoa Fixed some areas that allowed Torbjorn's turret to be almost fully obfuscated by the environment.",
+     "body": "Junkertown\n\n- Fixed some spots where the lighting was incorrect.\n\nKing's Row\n\n- Fixed an area of the map that allowed players to escape the playable space.\n\nSamoa\n\n- Fixed some areas that allowed Torbjorn's turret to be almost fully obfuscated by the environment.",
      "dev": null
     },
     {
      "title": "HEROES",
-     "body": "Fixed a bug that caused the DPS Passive to not be applied by: Symettra and Torbjorn Turrets, Riptire, and B.O.B. Lifeweaver Fixed an interaction with Tree of Life and Mauga that could launch Cage Fight into the sky. Fixed a specific instance that allowed Life Grip to pull allies to their death.",
+     "body": "- Fixed a bug that caused the DPS Passive to not be applied by: Symettra and Torbjorn Turrets, Riptire, and B.O.B.\n\nLifeweaver\n\n- Fixed an interaction with Tree of Life and Mauga that could launch Cage Fight into the sky.\n- Fixed a specific instance that allowed Life Grip to pull allies to their death.",
      "dev": null
     }
    ]
   }
  ],
  "raw_text": null,
- "hash": "sha256:3c84ef5b05e0c38d56cf0dc95ecc9108a9b75df92104322ee2652db864d98b0a"
+ "hash": "sha256:f6ebcf5d00e0f2657e9adb53cf984b27ffc7d532d825bdbc908fbced79dcbdab"
 }

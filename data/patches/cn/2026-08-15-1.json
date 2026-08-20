@@ -25,6 +25,7 @@
      "name_en": "D.Mon",
      "name_cn": "D.Mon",
      "role": "tank",
+     "icon": "https://ld5.res.netease.com/images/20260813/1786594671757_b03226bd74.png",
      "dev_note": null,
      "general": [
       {
@@ -106,28 +107,29 @@
        "name_en": "Surging Strike",
        "name_cn": "突进刺击",
        "slug": "surging-strike",
+       "icon": "https://ld5.res.netease.com/images/20260815/1786766398530_aa1a7d252f.png",
        "changes": [
         {
          "text_en": null,
          "text_cn": "施放时间从0.15秒缩短至0.05秒。",
          "before": 0.15,
          "after": 0.05,
-         "metric": "cast_time",
          "by": -0.1,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "施放时间"
+         "metric": "cast_time",
+         "raw_metric": "施放时间",
+         "unit": "s"
         },
         {
          "text_en": null,
          "text_cn": "恢复时间从0.25秒缩短至0.15秒。",
          "before": 0.25,
          "after": 0.15,
-         "metric": "recovery",
          "by": -0.1,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "恢复时间"
+         "metric": "recovery",
+         "raw_metric": "恢复时间",
+         "unit": "s"
         }
        ]
       },
@@ -135,28 +137,29 @@
        "name_en": "Fusion Repeater",
        "name_cn": "聚变连发枪",
        "slug": "fusion-repeater",
+       "icon": "https://ld5.res.netease.com/images/20260813/1786594673862_3f03846682.png",
        "changes": [
         {
          "text_en": null,
          "text_cn": "施放时间从0.3秒缩短至0.2秒",
          "before": 0.3,
          "after": 0.2,
-         "metric": "cast_time",
          "by": -0.1,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "施放时间"
+         "metric": "cast_time",
+         "raw_metric": "施放时间",
+         "unit": "s"
         },
         {
          "text_en": null,
          "text_cn": "恢复时间从0.5秒缩短至0.2秒。",
          "before": 0.5,
          "after": 0.2,
-         "metric": "recovery",
          "by": -0.3,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "恢复时间"
+         "metric": "recovery",
+         "raw_metric": "恢复时间",
+         "unit": "s"
         }
        ]
       }
@@ -167,6 +170,7 @@
      "name_en": "Jetpack Cat",
      "name_cn": "飞天猫",
      "role": "support",
+     "icon": "https://ld5.res.netease.com/images/20260227/1772182095284_79745cbb1a.png",
      "dev_note": null,
      "general": [
       {
@@ -188,17 +192,18 @@
        "name_en": "Purr",
        "name_cn": "呼噜噜",
        "slug": "purr",
+       "icon": "https://ld5.res.netease.com/images/20260815/1786766575146_c5275df966.png",
        "changes": [
         {
          "text_en": null,
          "text_cn": "自身受到的治疗效果惩罚从25%提高至40%。",
          "before": 25.0,
          "after": 40.0,
-         "metric": "自身受到的治疗效果惩罚",
          "by": 15.0,
          "by_pct": null,
-         "unit": "pct",
-         "raw_metric": "自身受到的治疗效果惩罚"
+         "metric": "自身受到的治疗效果惩罚",
+         "raw_metric": "自身受到的治疗效果惩罚",
+         "unit": "pct"
         }
        ]
       }

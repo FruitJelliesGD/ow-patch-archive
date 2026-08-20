@@ -10,7 +10,7 @@
    "type": "generic_update",
    "title": null,
    "role": null,
-   "description": "To share your feedback, please post in the General Discussion forum. For a list of known issues, visit our Bug Report forum. For troubleshooting assistance, visit our Technical Support forum.",
+   "description": "- To share your feedback, please post in the General Discussion forum.\n- For a list of known issues, visit our Bug Report forum.\n- For troubleshooting assistance, visit our Technical Support forum.",
    "heroes": [],
    "blocks": []
   },
@@ -23,7 +23,7 @@
    "blocks": [
     {
      "title": null,
-     "body": "Echo is an evolutionary robot created by Dr. Mina Liao and programmed with a rapidly adapting artificial intelligence, versatile enough to fill multiple battlefield combat roles. Having joined up with the Overwatch team to defend Paris against the Null Sector incursion, Echo is seeing action as a full-fledged member of Overwatch for the first time. Echo fires three shots ( Tri-Shot ) at once, in a triangle pattern. Echo fires a volley of Sticky Bombs that detonates after a delay. Echo uses Flight to surge forward quickly, then can fly freely to avoid danger or maneuver to a more strategic location. Using Focusing Beam , Echo channels a beam for a few seconds, dealing very high damage to targets with less than half health, including barriers. With Duplicate , Echo targets an enemy hero and clones them, gaining all of their abilities and potentially changing a team fight in an instant.",
+     "body": "Echo is an evolutionary robot created by Dr. Mina Liao and programmed with a rapidly adapting artificial intelligence, versatile enough to fill multiple battlefield combat roles. Having joined up with the Overwatch team to defend Paris against the Null Sector incursion, Echo is seeing action as a full-fledged member of Overwatch for the first time. Echo fires three shots (Tri-Shot) at once, in a triangle pattern. Echo fires a volley of Sticky Bombs that detonates after a delay. Echo uses Flight to surge forward quickly, then can fly freely to avoid danger or maneuver to a more strategic location. Using Focusing Beam, Echo channels a beam for a few seconds, dealing very high damage to targets with less than half health, including barriers. With Duplicate, Echo targets an enemy hero and clones them, gaining all of their abilities and potentially changing a team fight in an instant.",
      "dev": null
     }
    ]
@@ -37,7 +37,7 @@
    "blocks": [
     {
      "title": "General",
-     "body": "The Overwatch team has opened servers in a new datacenter to improve the gaming experience for players in the Middle East. Servers will be available beginning April 14, 2020 Added a \"Patch Notes\" button on the main menu and within the options menu. Selecting this button will open a web browser with the latest available game updates.",
+     "body": "- The Overwatch team has opened servers in a new datacenter to improve the gaming experience for players in the Middle East. Servers will be available beginning April 14, 2020\n- Added a \"Patch Notes\" button on the main menu and within the options menu. Selecting this button will open a web browser with the latest available game updates.",
      "dev": null
     }
    ]
@@ -46,7 +46,7 @@
    "type": "generic_update",
    "title": "Competitive Updates",
    "role": null,
-   "description": "The new Competitive Open Queue will be available in the Arcade for roughly 4 weeks. This mode will use standard Competitive Play rules, including hero pools, but will have no role restrictions or role queues Hero pools will now change each Monday and will be mirrored across the Overwatch League and Competitive Play Map pools have been retired. In the short-term, the number of matches played on Paris and Horizon Lunar Colony have been greatly reduced For more information on hero pool and map pool changes, see our full blog",
+   "description": "- The new Competitive Open Queue will be available in the Arcade for roughly 4 weeks. This mode will use standard Competitive Play rules, including hero pools, but will have no role restrictions or role queues\n- Hero pools will now change each Monday and will be mirrored across the Overwatch League and Competitive Play\n- Map pools have been retired. In the short-term, the number of matches played on Paris and Horizon Lunar Colony have been greatly reduced\n- For more information on hero pool and map pool changes, see our full blog",
    "heroes": [],
    "blocks": []
   },
@@ -61,6 +61,7 @@
      "name_en": "Tracer",
      "name_cn": "猎空",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a74a59e54131214afedbeb964d8be02de53a08dbef939632235187b1501aa74b.png",
      "dev_note": "Tracer will now blink around and over obstacles more easily to move towards the crosshair location. For example, if you aim alongside the corner of a wall, Tracer will blink past the corner Tracer cannot blink through a space where she otherwise cannot fit normally Tracer cannot blink over an obstacle which she otherwise cannot jump over normally, with the jump originating from Tracer's height at the start of the blink movement We hope that these changes to Tracer's blink will feel more responsive than before.",
      "general": [],
      "perks": [],
@@ -69,17 +70,18 @@
        "name_en": "Blink",
        "name_cn": "闪现",
        "slug": "blink",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ce6f7a05967a422d81325c87d74414a50beac1649c7e14033207f77aafb6bd1b.png",
        "changes": [
         {
          "text_en": "Improved the accuracy of Tracer's blink movement such that Tracer will more likely end up where the crosshair is pointing",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -97,27 +99,27 @@
    "blocks": [
     {
      "title": "General",
-     "body": "Fixed an issue preventing switching to the next hero when team spectating D.Va in Custom Games Fixed an issue preventing Team FFA settings and some Hero settings from being pasted back into Custom Game Settings via copy-paste Fixed a bug that could cause voice lines from opposing teams to be heard at Hero Select screens on certain maps Fixed a bug where knockbacks were not working correctly if the target was moving down a ramp [PC-Only] Alt+Tab now will cancel saving a highlight, instead of causing problems with playback Fixed an issue where support players were getting incorrect credit for some plays, when determining the play of the game",
+     "body": "- Fixed an issue preventing switching to the next hero when team spectating D.Va in Custom Games\n- Fixed an issue preventing Team FFA settings and some Hero settings from being pasted back into Custom Game Settings via copy-paste\n- Fixed a bug that could cause voice lines from opposing teams to be heard at Hero Select screens on certain maps\n- Fixed a bug where knockbacks were not working correctly if the target was moving down a ramp\n- [PC-Only] Alt+Tab now will cancel saving a highlight, instead of causing problems with playback\n- Fixed an issue where support players were getting incorrect credit for some plays, when determining the play of the game",
      "dev": null
     },
     {
      "title": "Maps",
-     "body": "Blizzard World Fixed a bug that allowed players to stand in an unintended location between the first and second point Busan Fixed a bug that caused Sombra's translocator to float when thrown in certain spots Dorado Fixed a bug that could cause players can get stuck between the scooter and wall Havana Fixed a bug that could cause players to get stuck on some bushes Hollywood The capture area for the first capture point no longer extends outside of the visual capture boundary Ilios Fixed a bug that could cause players to get stuck between a wall, plant, and tree",
+     "body": "Blizzard World\n\n- Fixed a bug that allowed players to stand in an unintended location between the first and second point\n\nBusan\n\n- Fixed a bug that caused Sombra's translocator to float when thrown in certain spots\n\nDorado\n\n- Fixed a bug that could cause players can get stuck between the scooter and wall\n\nHavana\n\n- Fixed a bug that could cause players to get stuck on some bushes\n\nHollywood\n\n- The capture area for the first capture point no longer extends outside of the visual capture boundary\n\nIlios\n\n- Fixed a bug that could cause players to get stuck between a wall, plant, and tree",
      "dev": null
     },
     {
      "title": "Heroes",
-     "body": "Moira Fixed a bug that prevented Moira's Fade icon from appearing disabled when she is stunned Mei Fixed a bug where an already frozen enemy getting hit by Blizzard would cause the frozen visual effect to end too early Tracer Fixed a bug where the Pulse Bomb's \"Stuck\" message would sometimes appear on the wrong target",
+     "body": "Moira\n\n- Fixed a bug that prevented Moira's Fade icon from appearing disabled when she is stunned\n\nMei\n\n- Fixed a bug where an already frozen enemy getting hit by Blizzard would cause the frozen visual effect to end too early\n\nTracer\n\n- Fixed a bug where the Pulse Bomb's \"Stuck\" message would sometimes appear on the wrong target",
      "dev": null
     },
     {
      "title": "Workshop",
-     "body": "Fixed an issue preventing Big Message and Small Message from displaying messages in Practice Range",
+     "body": "- Fixed an issue preventing Big Message and Small Message from displaying messages in Practice Range",
      "dev": null
     }
    ]
   }
  ],
  "raw_text": null,
- "hash": "sha256:304cfcdbcc203eacb6fd09b4aab1b67f4bbef25d67dc71d86135f24ed1586258"
+ "hash": "sha256:995c89bf42a7ebd2759d20b28f0e525d885f008ad3baf3eb94bd4c8dfee8b693"
 }

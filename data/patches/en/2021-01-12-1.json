@@ -15,7 +15,7 @@
    "blocks": [
     {
      "title": null,
-     "body": "Kanezaka , nestled beside Hanamura, is our newest Free-For-All Map! Fight for your life in a thrilling battlefield of alleyways, ancient stone, towering steel, and cat cafes. Shatter your enemy's dreams in the pottery shop, deliver beatdowns in the Tora no Sumika nightclub, or rise above the competition in the tower at the center of the city.",
+     "body": "- Kanezaka, nestled beside Hanamura, is our newest Free-For-All Map!\n- Fight for your life in a thrilling battlefield of alleyways, ancient\nstone, towering steel, and cat cafes. Shatter your enemy's dreams in\nthe pottery shop, deliver beatdowns in the Tora no Sumika nightclub,\nor rise above the competition in the tower at the center of the city.",
      "dev": null
     }
    ]
@@ -29,7 +29,7 @@
    "blocks": [
     {
      "title": null,
-     "body": "Celebrate the release of Overwatch’s newest map with the Kanezaka Challenge! Through January 25, earn limited-time rewards, including the new Kyōgisha Hanzo skin, by winning games and watching Overwatch on Twitch. Learn more about the Kanezaka Challenge on the Overwatch website.",
+     "body": "Celebrate the release of Overwatch’s newest map with the Kanezaka Challenge! Through January 25, earn limited-time rewards, including the new Kyōgisha Hanzo skin, by winning games and watching Overwatch on Twitch.\n\nLearn more about the Kanezaka Challenge on the Overwatch website.",
      "dev": null
     }
    ]
@@ -43,7 +43,7 @@
    "blocks": [
     {
      "title": "Feature Update: Replay Viewer Custom Spectator Options",
-     "body": "Added Detached Timecode UI option to Replay Viewer",
+     "body": "- Added Detached Timecode UI option to Replay Viewer",
      "dev": null
     }
    ]
@@ -59,6 +59,7 @@
      "name_en": "Ashe",
      "name_cn": "艾什",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e43bc239ddb5254f9df92f4c19cdf20a2df5be3f546af76c8a13da385bb9dcbd.png",
      "dev_note": "Ashe being able to eliminate 200 health enemy heroes with one headshot while assisted by 30% damage boost became too dominant, especially when combined with the other improvements to her weapon. We are lowering the maximum damage but also the shot recovery time to keep her overall damage output relatively the same.",
      "general": [],
      "perks": [],
@@ -67,28 +68,29 @@
        "name_en": "The Viper",
        "name_cn": null,
        "slug": "the-viper",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/cca8472a3e966de2b9985cee492e527eac5063e9881797dded4ca1e32e292bc0.png",
        "changes": [
         {
          "text_en": "Aim-down-sights damage reduced from 80 to 75",
          "text_cn": null,
          "before": 80.0,
          "after": 75.0,
-         "metric": "aim-down-sights damage",
          "by": -5.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "aim-down-sights damage"
+         "metric": "aim-down-sights damage",
+         "raw_metric": "aim-down-sights damage",
+         "unit": null
         },
         {
          "text_en": "Aim-down-sights recovery time reduced from 0.7 to 0.65 seconds",
          "text_cn": null,
          "before": 0.7,
          "after": 0.65,
-         "metric": "aim-down-sights recovery time",
          "by": -0.05,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "aim-down-sights recovery time"
+         "metric": "aim-down-sights recovery time",
+         "raw_metric": "aim-down-sights recovery time",
+         "unit": null
         }
        ]
       }
@@ -99,6 +101,7 @@
      "name_en": "Hanzo",
      "name_cn": "半藏",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/871d02150e9b67af02795b137ffc5133c1ff8a2a8d66340ca939f6216a539c9c.png",
      "dev_note": "This rate of fire change improves the feel and effectiveness of the Storm Arrows ability and though small, adds up over the course of firing 5 arrows.",
      "general": [],
      "perks": [],
@@ -107,17 +110,18 @@
        "name_en": "Storm Arrow",
        "name_cn": "岚",
        "slug": "storm-arrow",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/92c56621ba267d94f16baacda3f10ba7777b475935981b02e5026449d8e3d79c.png",
        "changes": [
         {
          "text_en": "Shot recovery time reduced from 0.3 to 0.25 seconds",
          "text_cn": null,
          "before": 0.3,
          "after": 0.25,
-         "metric": "shot recovery time",
          "by": -0.05,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "shot recovery time"
+         "metric": "shot recovery time",
+         "raw_metric": "shot recovery time",
+         "unit": null
         }
        ]
       }
@@ -128,6 +132,7 @@
      "name_en": "Sigma",
      "name_cn": "西格玛",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/72fd43c9d9f9f0d075a78db7a1dfe7766eef4d9c03e34c45b3ae6fe0f8634693.png",
      "dev_note": "We're increasing the cooldown of Sigma's barrier to require a higher commitment to its placement and open up additional opportunities for counterplay.",
      "general": [],
      "perks": [],
@@ -136,17 +141,18 @@
        "name_en": "Experimental Barrier",
        "name_cn": "实验屏障",
        "slug": "experimental-barrier",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ae2c31f159331f73739932e85dc21bdfa8eb4f2b2d2de4e89c1488445da34ffb.png",
        "changes": [
         {
          "text_en": "Redeploy cooldown increased from 1 to 2.5 seconds",
          "text_cn": null,
          "before": 1.0,
          "after": 2.5,
-         "metric": "redeploy cooldown",
          "by": 1.5,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "redeploy cooldown"
+         "metric": "redeploy cooldown",
+         "raw_metric": "redeploy cooldown",
+         "unit": null
         }
        ]
       }
@@ -157,6 +163,7 @@
      "name_en": "Wrecking Ball",
      "name_cn": "破坏球",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c22df3c91a4fbc7f3f9689cd76f9fb86b52b2dfdf9f51c2158b4a9259a5f970d.png",
      "dev_note": "Wrecking Ball's high mobility and potential for massive shield health have left him a bit too survivable after the overall damage and crowd control in the game have been tuned down. We are reducing the amount of additional shields he generates per target though the base 100 shields from the ability remains unchanged.",
      "general": [],
      "perks": [],
@@ -165,17 +172,18 @@
        "name_en": "Adaptive Shield",
        "name_cn": null,
        "slug": "adaptive-shield",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/fa65af9c692405f968fafbeedcdfc9092b38a050dc3562bd41280390ccd7a21d.png",
        "changes": [
         {
          "text_en": "Shield per target reduced from 100 to 75",
          "text_cn": null,
          "before": 100.0,
          "after": 75.0,
-         "metric": "shield",
          "by": -25.0,
          "by_pct": null,
-         "unit": "hp",
-         "raw_metric": "shield per target"
+         "metric": "shield",
+         "raw_metric": "shield per target",
+         "unit": "hp"
         }
        ]
       }
@@ -193,17 +201,17 @@
    "blocks": [
     {
      "title": "General",
-     "body": "Fixed a bug that caused the flex role rewards banner to not display immediately Fixed a bug with the end of round screen for Deathmatch that would exclude players who left when the match ends Fixed a bug that caused achievement categories in the career profile to become misaligned when setting the filter to \"locked\" Fixed a bug that caused jump landing sounds to not playback properly Fixed a bug with long spray names overlapping with UI elements [Fixed on impacted platforms] Fixed a bug that caused an indefinite loading icon on the Social menu if your friends list is empty [PC-Only] Fixed a bug that caused the mouse cursor to remain focused on the game client while in windowed or windowed fullscreen mode",
+     "body": "- Fixed a bug that caused the flex role rewards banner to not display immediately\n- Fixed a bug with the end of round screen for Deathmatch that would\nexclude players who left when the match ends\n- Fixed a bug that caused achievement categories in the career profile to become misaligned when setting the filter to \"locked\"\n- Fixed a bug that caused jump landing sounds to not playback properly\n- Fixed a bug with long spray names overlapping with UI elements\n- [Fixed on impacted platforms] Fixed a bug that caused an indefinite\nloading icon on the Social menu if your friends list is empty\n- [PC-Only] Fixed a bug that caused the mouse cursor to remain focused on the game client while in windowed or windowed fullscreen mode",
      "dev": null
     },
     {
      "title": "Heroes",
-     "body": "Doomfist Fixed a bug with the \"One Punch\" highlight intro that would cause it to clip into the ground on certain maps Genji Fixed a bug with the Genji Contenders skin portrait not appearing properly Junkrat Fixed a bug with the \"Unwrap\" emote animation not displaying properly when rotating the camera around during its duration",
+     "body": "Doomfist\n\n- Fixed a bug with the \"One Punch\" highlight intro that would cause it to clip into the ground on certain maps\n\nGenji\n\n- Fixed a bug with the Genji Contenders skin portrait not appearing properly\n\nJunkrat\n\n- Fixed a bug with the \"Unwrap\" emote animation not displaying properly when rotating the camera around during its duration",
      "dev": null
     }
    ]
   }
  ],
  "raw_text": null,
- "hash": "sha256:919108dc9539b2636f85c364c835333567c3c08dbf52b6f163374ebbcaaf8ffa"
+ "hash": "sha256:58313731a2620e961f7c9fcb0501c4eb38b54d34fe760010476a5eaf7f3f2bd2"
 }

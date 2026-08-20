@@ -23,22 +23,22 @@
    "blocks": [
     {
      "title": "Demotion Protection Modifier",
-     "body": "The Demotion Protection modifier has been moved from below the Rank Progress bar into the bar itself to improve visibility when a player is in a Demotion Protection state. When Demotion Protection occurs, you will not be told when your progress is below that skill division’s range. If you lose your Demotion match, the Skill Rank adjustment will show only the adjustment from that match, instead of the net total of that match and the adjustment of the previous match.",
+     "body": "- The Demotion Protection modifier has been moved from below the Rank Progress bar into the bar itself to improve visibility when a player is in a Demotion Protection state.\n- When Demotion Protection occurs, you will not be told when your progress is below that skill division’s range. If you lose your Demotion match, the Skill Rank adjustment will show only the adjustment from that match, instead of the net total of that match and the adjustment of the previous match.",
      "dev": null
     },
     {
      "title": "New - Pressure Competitive Modifier",
-     "body": "This rank modifier appears for players who are at the far ends of the overall skill distribution. For players who are very high ranked (like Champion), this modifier will show when you don’t earn as much progress from winning a match or drop more progress for losing a match. For players who are very low ranked (like low Bronze), this modifier will show when you earn more progress for winning a match or drop less progress for losing a match.",
+     "body": "- This rank modifier appears for players who are at the far ends of the overall skill distribution.\n- For players who are very high ranked (like Champion), this modifier will show when you don’t earn as much progress from winning a match or drop more progress for losing a match.\n- For players who are very low ranked (like low Bronze), this modifier will show when you earn more progress for winning a match or drop less progress for losing a match.",
      "dev": "Developer comments: This new modifier was added to show how our highest and lowest-skill players are being pushed toward a more average Rank. Competitive Play already calculates this Modifier to your Skill Rank adjustment, but it wasn't visible until now. Very high or very low-ranked players will see this Modifier after every match while they continue to maintain a Rank at the outer limits of the ranked spectrum. Climbing to the highest skill tiers like Grand Masters or Champions is not intended to be easy, and overcoming Pressure to reach the top is no longer a hidden challenge that players must face."
     },
     {
      "title": "Grouping Restrictions",
-     "body": "The Skill Tier legend was updated to show the changes to grouping restrictions that were applied in a previous update. The grouping restriction changes we applied are the following: Grand Master can now group within 3 divisions to be considered a narrow group. Champion can now group within 1 division to be considered a narrow group.",
+     "body": "The Skill Tier legend was updated to show the changes to grouping restrictions that were applied in a previous update. The grouping restriction changes we applied are the following:\n\n- Grand Master can now group within 3 divisions to be considered a narrow group.\n- Champion can now group within 1 division to be considered a narrow group.",
      "dev": "Developer comment: While the Season 10 changes to grouping up with friends have contributed to a large improvement in match quality for most players, we’re still looking to reduce queue times for players and groups, especially for higher ranks."
     },
     {
      "title": "MATCHMAKING UPDATES",
-     "body": "When a player is currently on a loss streak, the matchmaker will try to avoid putting the player on a team that is statistically calculated to have a lower chance of winning.",
+     "body": "- When a player is currently on a loss streak, the matchmaker will try to avoid putting the player on a team that is statistically calculated to have a lower chance of winning.",
      "dev": "Developer comments: Loss streaks never feel good. Before each match, we make a prediction about which team will win the game, based on the information we have about the players on both teams. This is how modifiers such as Consolation, Reversal, Uphill Battle, and Expected give or take additional Rank Progress after each Competitive Play match. Since most matches will have a team that has a slightly higher chance of winning, placing a player on the team with the higher chance who is currently on a losing streak is aimed at helping them have a fair chance of breaking that streak. While this won't guarantee they'll win, it does provide a helping advantage."
     }
    ]
@@ -47,7 +47,7 @@
    "type": "generic_update",
    "title": "HERO UPDATES",
    "role": null,
-   "description": "Armor health has been reverted to provide a flat damage reduction of 5 per projectile, up to a maximum of 50% damage reduction. Out-of-combat health regeneration changed from 20 health per second to 10 health per second + 5% of maximum health.",
+   "description": "- Armor health has been reverted to provide a flat damage reduction of 5 per projectile, up to a maximum of 50% damage reduction.\n- Out-of-combat health regeneration changed from 20 health per second to 10 health per second + 5% of maximum health.",
    "heroes": [],
    "blocks": []
   },
@@ -55,13 +55,14 @@
    "type": "hero_update",
    "title": "TANKS",
    "role": null,
-   "description": "Role Passive Tanks now have 25% damage reduction against critical headshot damage. Knockback resistance increased from 30% to 50%",
+   "description": "Role Passive\n\n- Tanks now have 25% damage reduction against critical headshot damage.\n- Knockback resistance increased from 30% to 50%",
    "heroes": [
     {
      "slug": "junker-queen",
      "name_en": "Junker Queen",
      "name_cn": "渣客女王",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/cf66adfac58a0321ec1f7d3a7241d6bf2f3b311707064d2f0ace2e3f4e342727.png",
      "dev_note": "Developer Comment: Junker Queen being able to activate Commanding Shout while swinging her axe or during her Ultimate ability will make it more responsive for when an additional burst of health or movement speed is needed.",
      "general": [],
      "perks": [],
@@ -70,28 +71,29 @@
        "name_en": "Commanding Shout",
        "name_cn": "命令怒吼",
        "slug": "commanding-shout",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1809c57884dafcfd1aab89eb80d2ad8fe0c64ce0036646a3e19c05f48c322c9d.png",
        "changes": [
         {
          "text_en": "Can now be activated while using other abilities.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Cooldown reduced from 14 to 12 seconds.",
          "text_cn": null,
          "before": 14.0,
          "after": 12.0,
-         "metric": "cooldown",
          "by": -2.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "cooldown"
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
         }
        ]
       }
@@ -102,6 +104,7 @@
      "name_en": "Sigma",
      "name_cn": "西格玛",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9738e1687bf7064de3667169788ef1b5ea9cf1746a42753c767cf17c7cb67547.png",
      "dev_note": "Developer Comment: Similar to how Graviton Surge functions, Gravitic Flux no longer needs line of sight to affect enemy targets in its area. There are a fair amount of counterplay options to deal with this ultimate so we're making it more reliable to grab enemy targets within its area of effect.",
      "general": [],
      "perks": [],
@@ -110,17 +113,18 @@
        "name_en": "Gravitic Flux",
        "name_cn": "引力乱流",
        "slug": "gravitic-flux",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/7140d3eaf82e580ab465dcdb04bd1faaf77ac54550a12d17ecde7c4e87e963e0.png",
        "changes": [
         {
          "text_en": "No longer requires line of sight to the center of the effect.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -131,6 +135,7 @@
      "name_en": "Wrecking Ball",
      "name_cn": "破坏球",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f71d6948e8b6ae340e20ab569ef66d24aead6032c34a7ec09a00ea864b413a24.png",
      "dev_note": "Developer Comment: Wrecking Ball has been performing much better after his recent update and these tuning changes will help his abilities feel more impactful.",
      "general": [],
      "perks": [],
@@ -139,17 +144,18 @@
        "name_en": "Grappling Claw",
        "name_cn": "工程抓钩",
        "slug": "grappling-claw",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e81e6ba9fb3391f29528021e453a0d3c16da1fc5e378994e6d00783356e0f2c9.png",
        "changes": [
         {
          "text_en": "Impact damage increased from 50 to 60.",
          "text_cn": null,
          "before": 50.0,
          "after": 60.0,
-         "metric": "impact damage",
          "by": 10.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "impact damage"
+         "metric": "impact damage",
+         "raw_metric": "impact damage",
+         "unit": null
         }
        ]
       },
@@ -157,17 +163,18 @@
        "name_en": "Piledriver",
        "name_cn": "重力坠击",
        "slug": "piledriver",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3e884373721448d109c1646599cfe651a5bccdbc7a12d5062372c91b28acd80c.png",
        "changes": [
         {
          "text_en": "Movement lockout duration for enemies increased from 0.5 to 0.75 seconds.",
          "text_cn": null,
          "before": 0.5,
          "after": 0.75,
-         "metric": "movement lockout duration for enemies",
          "by": 0.25,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "movement lockout duration for enemies"
+         "metric": "movement lockout duration for enemies",
+         "raw_metric": "movement lockout duration for enemies",
+         "unit": null
         }
        ]
       },
@@ -175,28 +182,29 @@
        "name_en": "Minefield",
        "name_cn": "地雷禁区",
        "slug": "minefield",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/17a54a345b715bc4301b330d8eb394f57e1c66308a8cba67f426de76a71ba868.png",
        "changes": [
         {
          "text_en": "Damage increased from 130 to 165.",
          "text_cn": null,
          "before": 130.0,
          "after": 165.0,
-         "metric": "damage",
          "by": 35.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "damage"
+         "metric": "damage",
+         "raw_metric": "damage",
+         "unit": null
         },
         {
          "text_en": "Explosion knockback increased from 5 to 10.",
          "text_cn": null,
          "before": 5.0,
          "after": 10.0,
-         "metric": "explosion knockback",
          "by": 5.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "explosion knockback"
+         "metric": "explosion knockback",
+         "raw_metric": "explosion knockback",
+         "unit": null
         }
        ]
       }
@@ -207,6 +215,7 @@
      "name_en": "Zarya",
      "name_cn": "查莉娅",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d43075cba10cd711a129556142849587e78f1f55b0105d39a640da53ffa64e1b.png",
      "dev_note": "Developer Comment: We have been increasing the value of some tank ultimate abilities to account for the increased health pools and it helps to make the decision of when to counter-swap more of an interesting tradeoff. Graviton Surge was still very useful to set up combos with other ultimate abilities but we want to makes sure it's powerful enough on its own.",
      "general": [],
      "perks": [],
@@ -215,28 +224,29 @@
        "name_en": "Graviton Surge",
        "name_cn": "重力喷涌",
        "slug": "graviton-surge",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e58e60f939026f3d0ee95cf3a0b5fc8091da3c35a178d34c358700f3720a70d3.png",
        "changes": [
         {
          "text_en": "Radius increased from 6 to 7 meters.",
          "text_cn": null,
          "before": 6.0,
          "after": 7.0,
-         "metric": "radius",
          "by": 1.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "radius"
+         "metric": "radius",
+         "raw_metric": "radius",
+         "unit": null
         },
         {
          "text_en": "Duration increased from 3.5 to 4 seconds",
          "text_cn": null,
          "before": 3.5,
          "after": 4.0,
-         "metric": "duration",
          "by": 0.5,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "duration"
+         "metric": "duration",
+         "raw_metric": "duration",
+         "unit": "s"
         }
        ]
       }
@@ -256,6 +266,7 @@
      "name_en": "Junkrat",
      "name_cn": "狂鼠",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d3628dc64d78ca6dc2a8b509cf5a6fc417c0f5068d5f75d1f5c094be1f58ee4e.png",
      "dev_note": "Developer Comment: Junkrat's weapon has great damage output but is unreliable outside of close range due to its slow projectile speed, which is an intended drawback to its high output. The Season 9 health changes affected Junkrat more than most other heroes since it now requires one more shot to secure an elimination. We're increasing the damage on direct impacts to return to 2 direct hits for an elimination, without making his combo with Concussion Mine as deadly as before since that one is much easier to execute.",
      "general": [],
      "perks": [],
@@ -264,17 +275,18 @@
        "name_en": "Frag Launcher",
        "name_cn": "榴弹发射器",
        "slug": "frag-launcher",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e43d916b0851551d17a2385f92497cdcfcd781ac155663643a1e1ff3500bbf37.png",
        "changes": [
         {
          "text_en": "Impact damage increased from 40 to 45 (Total damage increased from 120 to 125).",
          "text_cn": null,
          "before": 40.0,
          "after": 45.0,
-         "metric": "impact damage",
          "by": 5.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "impact damage"
+         "metric": "impact damage",
+         "raw_metric": "impact damage",
+         "unit": null
         }
        ]
       }
@@ -285,6 +297,7 @@
      "name_en": "Echo",
      "name_cn": "回声",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0dc3f1679d739ef530ba2b8cbe02bf09f4d40a57c0af84f694a3241d3a7ef948.png",
      "dev_note": "Developer Comment: While the main benefit of Duplicate is a second health pool and the utility of another hero's abilities, it was often too difficult to charge an ultimate in the Duplicate time limit so we're increasing the bonus multiplier slightly.",
      "general": [],
      "perks": [],
@@ -293,17 +306,18 @@
        "name_en": "Duplicate",
        "name_cn": "人格复制",
        "slug": "duplicate",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/457d6ebcb2b92d1e7f7a7174b426903879e131422196825589adbc5e5d9f7efb.png",
        "changes": [
         {
          "text_en": "Ultimate gain multiplier while transformed increased from 4 to 4.5.",
          "text_cn": null,
          "before": 4.0,
          "after": 4.5,
-         "metric": "ultimate gain multiplier while transformed",
          "by": 0.5,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "ultimate gain multiplier while transformed"
+         "metric": "ultimate gain multiplier while transformed",
+         "raw_metric": "ultimate gain multiplier while transformed",
+         "unit": null
         }
        ]
       }
@@ -314,6 +328,7 @@
      "name_en": "Hanzo",
      "name_cn": "半藏",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3febc2e638ff56d8f0161ea278ac3116b5baf8c0328f1eded6b499552a0eccad.png",
      "dev_note": "Developer Comment: The Dragonstrike ultimate hasn't been very effective outside of being used in a combo with other abilities that restrict enemy movement, so we're increasing its speed to help position it as less of a zoning tool and more likely to deal some damage.",
      "general": [
       {
@@ -335,17 +350,18 @@
        "name_en": "Dragonstrike",
        "name_cn": "竜",
        "slug": "dragonstrike",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f2d63b8f0e19e91d2c1199ed3ac0f20bb180dabe9ad1ffc7d1f1e880e58f0220.png",
        "changes": [
         {
          "text_en": "Speed increased from 12 to 15 meters per second.",
          "text_cn": null,
          "before": 12.0,
          "after": 15.0,
-         "metric": "speed",
          "by": 3.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "speed"
+         "metric": "speed",
+         "raw_metric": "speed",
+         "unit": null
         }
        ]
       }
@@ -365,6 +381,7 @@
      "name_en": "Brigitte",
      "name_cn": "布丽吉塔",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/51b93ea59f369a1defa78e5d08c12b1391f5d2d94614a51fd95c125a7a6151fa.png",
      "dev_note": "Developer Comment: Resetting the Shield Bash cooldown on ultimate activation was too much potential burst damage for Brigitte when the average maximum health of everyone was lower, but it's much more reasonable now that it won't be as lethal.",
      "general": [],
      "perks": [],
@@ -373,17 +390,18 @@
        "name_en": "Rally",
        "name_cn": "集结号令",
        "slug": "rally",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/08552423da53faa55238bd66a2a72d32d1038e42f2eebc911921bc9d5d575432.png",
        "changes": [
         {
          "text_en": "Now resets Shield Bash cooldown upon activation.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -401,22 +419,22 @@
    "blocks": [
     {
      "title": "GENERAL",
-     "body": "Fixed a bug with Mirrorwatch not generating stats in Game Reports. Fixed a bug with Competitive Progress not incrementing correctly.",
+     "body": "- Fixed a bug with Mirrorwatch not generating stats in Game Reports.\n- Fixed a bug with Competitive Progress not incrementing correctly.",
      "dev": null
     },
     {
      "title": "MAPS",
-     "body": "General bug fixes and improvements were performed on multiple maps. Eichenwalde Fixed an area that could cause players to temporarily become stuck. Samoa Fixed a spot on the map that players could become temporarily stuck in. Shambali Fixed a location where players could become stuck for a period of time.",
+     "body": "- General bug fixes and improvements were performed on multiple maps.\n\nEichenwalde\n\n- Fixed an area that could cause players to temporarily become stuck.\n\nSamoa\n\n- Fixed a spot on the map that players could become temporarily stuck in.\n\nShambali\n\n- Fixed a location where players could become stuck for a period of time.",
      "dev": null
     },
     {
      "title": "HEROES",
-     "body": "Mercy Vengeance Skin - Fixed a bug with the feathers on the skin not being properly aligned. Venture Fixed a bug with Tectonic Shock that counted turrets and other non-player targets as valid for the Excavation Annihilation challenge. Fixed an issue that could occur with Burrow where Venture could remain burrowed above the ground.",
+     "body": "Mercy\n\n- Vengeance Skin - Fixed a bug with the feathers on the skin not being properly aligned.\n\nVenture\n\n- Fixed a bug with Tectonic Shock that counted turrets and other non-player targets as valid for the Excavation Annihilation challenge.\n- Fixed an issue that could occur with Burrow where Venture could remain burrowed above the ground.",
      "dev": null
     }
    ]
   }
  ],
  "raw_text": null,
- "hash": "sha256:ae1b72b47ceec2b52a108432a2dc6585c9feb25357234273aa6724e27ef4cd48"
+ "hash": "sha256:4a71e43070c0b17237a2d4dd17b7a7c8bbe5be32e4ae96798bb3c58ab270f0d9"
 }

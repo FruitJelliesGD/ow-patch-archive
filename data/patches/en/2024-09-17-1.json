@@ -23,12 +23,12 @@
    "blocks": [
     {
      "title": "Role Queue Mystery Heroes",
-     "body": "Role Queue Mystery Heroes is a new variation of the popular Mystery Heroes game mode but using the Role Queue rules. Once you select your role, your heroes played will be randomly selected among the heroes in that role and will not change roles throughout the match. Role Queue Mystery Heroes added to the Unranked Menu. Open Queue Mystery Heroes removed from the Unranked Menu. You can still create a custom game of Open Queue Mystery Heroes in Custom Games.",
+     "body": "Role Queue Mystery Heroes is a new variation of the popular Mystery Heroes game mode but using the Role Queue rules. Once you select your role, your heroes played will be randomly selected among the heroes in that role and will not change roles throughout the match.\n\n- Role Queue Mystery Heroes added to the Unranked Menu.\n- Open Queue Mystery Heroes removed from the Unranked Menu.\n- You can still create a custom game of Open Queue Mystery Heroes in Custom Games.",
      "dev": null
     },
     {
      "title": "Deathmatch",
-     "body": "Deathmatch is moved from the Unranked Menu to the Arcade Menu and will appear in daily rotation with other Deathmatch modes.",
+     "body": "- Deathmatch is moved from the Unranked Menu to the Arcade Menu and will appear in daily rotation with other Deathmatch modes.",
      "dev": null
     }
    ]
@@ -42,7 +42,7 @@
    "blocks": [
     {
      "title": "Competitive Drives",
-     "body": "Competitive Drives are limited-time events that take place near the end of seasons in Competitive Play Role Queue. As you complete a Drive you'll earn bonus Competitive Points and a new reward called \"Signatures\". Signatures are a cosmetic reward that appears on your name in most locations where your name is displayed, including your Name Card, Play of the Game Highlights, Scoreboard, and Hero Select. Signatures are upgraded as you reach Checkpoints in a Drive. When you win a match you'll earn Drive Score and progress toward the next Checkpoint. Losing subtracts Drive Score, but generally less than winning, and Checkpoints prevent you from losing score once you reach them. There are 6 Checkpoints and they grant the following rewards in order of completion: 500 Competitive Points Signature 1000 Competitive Points Advanced Signature 1500 Competitive Points Elite Signature Your progression on a Drive is shared across all roles in Role Queue. You do not earn progression toward your Drive in Open Queue Competitive Play. When you complete Drives your Signature will be upgraded to show off how many Drives you've completed in total. Signatures are removed after a Rank Reset.",
+     "body": "Competitive Drives are limited-time events that take place near the end of seasons in Competitive Play Role Queue. As you complete a Drive you'll earn bonus Competitive Points and a new reward called \"Signatures\". Signatures are a cosmetic reward that appears on your name in most locations where your name is displayed, including your Name Card, Play of the Game Highlights, Scoreboard, and Hero Select. Signatures are upgraded as you reach Checkpoints in a Drive.\n\nWhen you win a match you'll earn Drive Score and progress toward the next Checkpoint. Losing subtracts Drive Score, but generally less than winning, and Checkpoints prevent you from losing score once you reach them.\n\nThere are 6 Checkpoints and they grant the following rewards in order of completion:\n\n- 500 Competitive Points\n- Signature\n- 1000 Competitive Points\n- Advanced Signature\n- 1500 Competitive Points\n- Elite Signature\n\nYour progression on a Drive is shared across all roles in Role Queue. You do not earn progression toward your Drive in Open Queue Competitive Play.\n\nWhen you complete Drives your Signature will be upgraded to show off how many Drives you've completed in total.\n\nSignatures are removed after a Rank Reset.",
      "dev": null
     }
    ]
@@ -56,7 +56,7 @@
    "blocks": [
     {
      "title": "GENERAL",
-     "body": "Armor flat damage reduction decreased from 10 to 7 per impact.",
+     "body": "- Armor flat damage reduction decreased from 10 to 7 per impact.",
      "dev": "Developer Comment: The recent increase to armor's effectiveness improved the survivability of armored heroes more than we'd like for how passive it is, so we're tuning it down to a middle-ground value."
     }
    ]
@@ -65,13 +65,14 @@
    "type": "hero_update",
    "title": "TANK",
    "role": null,
-   "description": "Tank Role Passive • Knockback resistance reduced from 40% to 25%.",
+   "description": "Tank Role Passive\n\n• Knockback resistance reduced from 40% to 25%.",
    "heroes": [
     {
      "slug": "d-va",
      "name_en": "D.Va",
      "name_cn": "D.Va",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e69a3d819fd46d0dcd1d9474c248a95e69519c20077c60e9de73a1e2d3acdbb6.png",
      "dev_note": "Developer Comment: There has been a lot of community feedback surrounding D.Va lately. On average she hasn't been overperforming, but she’s quite difficult to take down. So we're shifting some of her armor to normal health and reducing her max combined health by 25 armor. With armor's effectiveness being hit in the same patch, we'll keep an eye on how this plays out and adjust as necessary.",
      "general": [
       {
@@ -107,6 +108,7 @@
      "name_en": "Orisa",
      "name_cn": "奥丽莎",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/20c12a10cfe0b5608f9eec63a74ecb0ccd18a114019bc77bb2765f87776e17ed.png",
      "dev_note": "Developer Comment: We still don't want Orisa to easily chase enemies down while Fortified since there's not much you can do to fight back during that time, so while we're not removing the movement speed penalty entirely, we are lowering it to a point where it will feel much better for Orisa to use.",
      "general": [],
      "perks": [],
@@ -115,17 +117,18 @@
        "name_en": "Fortify",
        "name_cn": "强固防御",
        "slug": "fortify",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d697fa90726cf683222920822d2ee00a85e0420c6cbc6ec2365573f313d06357.png",
        "changes": [
         {
          "text_en": "Movement speed penalty reduced from 20% to 10%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -136,6 +139,7 @@
      "name_en": "Roadhog",
      "name_cn": "路霸",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b6f4e837dc41e87d730f6b0fad3473e689c8bdcd1f732b97326ac08b0508f2ee.png",
      "dev_note": "Developer Comment: This is a reversion to Roadhog's previous resource regeneration rate to improve his primary tanking ability's uptime. There were several adjustments to reduce the power of this ability but they may not have been necessary as Roadhog has been underperforming for some time now.",
      "general": [],
      "perks": [],
@@ -144,17 +148,18 @@
        "name_en": "Take a Breather",
        "name_cn": "呼吸器",
        "slug": "take-a-breather",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9cb8d867671bf917a9ba5d4a28ab6cb6ceeb10de2813567fcad97aca32c58499.png",
        "changes": [
         {
          "text_en": "Resource regeneration rate increased from 8 to 10 per second.",
          "text_cn": null,
          "before": 8.0,
          "after": 10.0,
-         "metric": "resource regeneration rate",
          "by": 2.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "resource regeneration rate"
+         "metric": "resource regeneration rate",
+         "raw_metric": "resource regeneration rate",
+         "unit": null
         }
        ]
       }
@@ -165,6 +170,7 @@
      "name_en": "Sigma",
      "name_cn": "西格玛",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9738e1687bf7064de3667169788ef1b5ea9cf1746a42753c767cf17c7cb67547.png",
      "dev_note": "Developer Comment: This shift in damage from the Hyperspheres direct impact into the explosion component is to improve the effectiveness of the airburst explosion when playing at max range and makes it more threatening against tightly grouped enemies.",
      "general": [],
      "perks": [],
@@ -173,39 +179,40 @@
        "name_en": "Hyperspheres",
        "name_cn": null,
        "slug": "hyperspheres",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b6b9f77a52419e542ae8e20afc12035443fb96b99cadb0765694a8f5b41eeb74.png",
        "changes": [
         {
          "text_en": "Impact damage reduced from 25 to 15.",
          "text_cn": null,
          "before": 25.0,
          "after": 15.0,
-         "metric": "impact damage",
          "by": -10.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "impact damage"
+         "metric": "impact damage",
+         "raw_metric": "impact damage",
+         "unit": null
         },
         {
          "text_en": "Explosion damage increased from 30 to 40.",
          "text_cn": null,
          "before": 30.0,
          "after": 40.0,
-         "metric": "explosion damage",
          "by": 10.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "explosion damage"
+         "metric": "explosion damage",
+         "raw_metric": "explosion damage",
+         "unit": null
         },
         {
          "text_en": "No longer deals damage to self.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -225,6 +232,7 @@
      "name_en": "Bastion",
      "name_cn": "堡垒",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3a7dc6d45ce7a1e1c2d31bd4d88b4889c412b2003ad82d1fd8e41271952c1f68.png",
      "dev_note": "Developer Comment: The spread reduction is intended to improve the Assault mode weapon's effective range against smaller targets while not changing much in regard to how good it is against tank heroes and their large size.",
      "general": [],
      "perks": [],
@@ -233,17 +241,18 @@
        "name_en": "Configuration: Assault",
        "name_cn": "强攻模式",
        "slug": "configuration-assault",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5cf3fc40ec6eeee9716f66a934d9bf7f0803a924e72c12c5d1a6c74e57c933bd.png",
        "changes": [
         {
          "text_en": "Spread reduced from 2.2 to 2 degrees.",
          "text_cn": null,
          "before": 2.2,
          "after": 2.0,
-         "metric": "spread",
          "by": -0.2,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "spread"
+         "metric": "spread",
+         "raw_metric": "spread",
+         "unit": null
         }
        ]
       },
@@ -251,17 +260,18 @@
        "name_en": "Configuration Artillery",
        "name_cn": "火炮模式",
        "slug": "configuration-artillery",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/06c377aef476bfb21ee1dca3d4d1151f8a4131b388a5489f3dfce6fb232a2711.png",
        "changes": [
         {
          "text_en": "Ultimate cost reduced 12%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": "ultimate_cost",
          "by": null,
          "by_pct": 12.0,
-         "unit": null,
-         "raw_metric": "ultimate cost"
+         "metric": "ultimate_cost",
+         "raw_metric": "ultimate cost",
+         "unit": null
         }
        ]
       }
@@ -272,6 +282,7 @@
      "name_en": "Cassidy",
      "name_cn": "卡西迪",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8d161c49df5a962ece9ceafc6500bea473d9dd3695b9e24e39d5be616295e6c5.png",
      "dev_note": "Developer Comment: We're reducing how impactful the hinder effect is by lowering its duration, as this crowd control can be a significant source of frustration for players. Since now there is less time to follow up with shots from the weapon while the opponent is hindered, we're increasing the explosion damage of Flashbang.",
      "general": [],
      "perks": [],
@@ -280,28 +291,29 @@
        "name_en": "Flashbang",
        "name_cn": "闪光弹",
        "slug": "flashbang",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/47a593ad7f83394b011161e67a6f414e49f2221c5e014ea909fdcd9df4f94371.png",
        "changes": [
         {
          "text_en": "Hinder duration reduced from 1.2 to 0.9 seconds.",
          "text_cn": null,
          "before": 1.2,
          "after": 0.9,
-         "metric": "hinder duration",
          "by": -0.3,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "hinder duration"
+         "metric": "hinder duration",
+         "raw_metric": "hinder duration",
+         "unit": null
         },
         {
          "text_en": "Explosion damage increased from 45 to 75.",
          "text_cn": null,
          "before": 45.0,
          "after": 75.0,
-         "metric": "explosion damage",
          "by": 30.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "explosion damage"
+         "metric": "explosion damage",
+         "raw_metric": "explosion damage",
+         "unit": null
         }
        ]
       },
@@ -309,17 +321,18 @@
        "name_en": "Deadeye",
        "name_cn": "神射手",
        "slug": "deadeye",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/346cb576a19f978a7b2c52859c5639423f076d66ca740658da0d46955ab2c97d.png",
        "changes": [
         {
          "text_en": "Ultimate cost reduced 10%.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": "ultimate_cost",
          "by": null,
          "by_pct": 10.0,
-         "unit": null,
-         "raw_metric": "ultimate cost"
+         "metric": "ultimate_cost",
+         "raw_metric": "ultimate cost",
+         "unit": null
         }
        ]
       }
@@ -330,6 +343,7 @@
      "name_en": "Hanzo",
      "name_cn": "半藏",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3febc2e638ff56d8f0161ea278ac3116b5baf8c0328f1eded6b499552a0eccad.png",
      "dev_note": "Developer Comment: This change restores Hanzo's one hit headshot kill against 250 health heroes, though it will require more accuracy with the smaller projectile size and is now slower to charge shots to reduce the frequency of projectiles being thrown out. After trying the recent iterations of Hanzo post Season 9, we feel the one-shot capability is too essential to the core gameplay feel of these sniper heroes (similar to Widowmaker) without a much larger rework. Being limited to a smaller range of heroes that could be one shot (225 HP and below) added some texture to the hero matchups but wasn't a satisfying compromise for either side.",
      "general": [],
      "perks": [],
@@ -338,39 +352,40 @@
        "name_en": "Storm Bow",
        "name_cn": "风暴弓",
        "slug": "storm-bow",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1aa4358e8a1d423dd55669780908b856141a783d053224b629b064c66288469e.png",
        "changes": [
         {
          "text_en": "Normal arrows are no longer affected by global projectile size increases.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Maximum damage increased from 120 to 125.",
          "text_cn": null,
          "before": 120.0,
          "after": 125.0,
-         "metric": "maximum damage",
          "by": 5.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "maximum damage"
+         "metric": "maximum damage",
+         "raw_metric": "maximum damage",
+         "unit": null
         },
         {
          "text_en": "Time to fully charge increased from 0.72 to 0.87 seconds.",
          "text_cn": null,
          "before": 0.72,
          "after": 0.87,
-         "metric": "time to fully charge",
          "by": 0.15,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "time to fully charge"
+         "metric": "time to fully charge",
+         "raw_metric": "time to fully charge",
+         "unit": null
         }
        ]
       }
@@ -381,6 +396,7 @@
      "name_en": "Venture",
      "name_cn": "探奇",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4c5bad8535b648d9dcf4c369e0ab5b9d67685b8ddaee22139eaa63bc5c5a3183.png",
      "dev_note": "Developer Comment: As a highly mobile damage hero, Venture doesn't need quite as much shield health from their passive as they currently get to be successful. Even though they are a close-range hero, their abilities enable them to close the gap quickly and effectively without taking much damage.",
      "general": [],
      "perks": [],
@@ -389,17 +405,18 @@
        "name_en": "Explorer's Resolve",
        "name_cn": "探险家的决心",
        "slug": "explorer-s-resolve",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/708e991f86aa1890ff6c4f7eeca911393b17a79fc4f61e31e83627c10426ad43.png",
        "changes": [
         {
          "text_en": "Shield health gained per ability reduced from 40 to 30.",
          "text_cn": null,
          "before": 40.0,
          "after": 30.0,
-         "metric": "shield",
          "by": -10.0,
          "by_pct": null,
-         "unit": "hp",
-         "raw_metric": "shield health gained per ability"
+         "metric": "shield",
+         "raw_metric": "shield health gained per ability",
+         "unit": "hp"
         }
        ]
       }
@@ -419,6 +436,7 @@
      "name_en": "Moira",
      "name_cn": "莫伊拉",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/90fa2b69a7b80ae6d57c9ea6f3387dd18dfc1728bdb26949d28a17b98dd4e5f7.png",
      "dev_note": "Developer Comment: Moira's ultimate didn't feel threatening enough after the health adjustments across the cast and her own lower health value.",
      "general": [],
      "perks": [],
@@ -427,17 +445,18 @@
        "name_en": "Coalescence",
        "name_cn": "聚合射线",
        "slug": "coalescence",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/23d3ef53fd21d04e7e7b137b38e87c61b3d65394393dc00759ceb65d406e37b9.png",
        "changes": [
         {
          "text_en": "Damage per second increased from 70 to 85.",
          "text_cn": null,
          "before": 70.0,
          "after": 85.0,
-         "metric": "damage",
          "by": 15.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "damage per second"
+         "metric": "damage",
+         "raw_metric": "damage per second",
+         "unit": null
         }
        ]
       }
@@ -448,6 +467,7 @@
      "name_en": "Lifeweaver",
      "name_cn": "生命之梭",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/57d5014ab6034db9138f838e8450693b4a97ab3c54f85d594b199a8853e75ccb.png",
      "dev_note": "Developer Comment: The increased firing duration for Thorn Volley will give Lifeweaver more damage presence and it lines up better with his auto-charging heal timing to help that flow nicely.",
      "general": [],
      "perks": [],
@@ -456,17 +476,18 @@
        "name_en": "Thorn Volley",
        "name_cn": "棘刺箭雨",
        "slug": "thorn-volley",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2ff86a970fedb412a1166fddfbca13bbd08156043012608e538867f792fc1d78.png",
        "changes": [
         {
          "text_en": "Maximum ammo increased from 80 to 100.",
          "text_cn": null,
          "before": 80.0,
          "after": 100.0,
-         "metric": "maximum ammo",
          "by": 20.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "maximum ammo"
+         "metric": "maximum ammo",
+         "raw_metric": "maximum ammo",
+         "unit": null
         }
        ]
       }
@@ -477,6 +498,7 @@
      "name_en": "Zenyatta",
      "name_cn": "禅雅塔",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9367143a32f3fc07781330a0b26c6f1087361204a2b7e4088d1daf26428273f2.png",
      "dev_note": "Developer Comment: With the current addition of more speed boosts in the game, Zenyatta (and generally more poke-oriented team compositions by extension) has fallen off a bit due to how immobile and vulnerable he can be. We've tried increasing his health in the past but it's proven problematic, so instead we're leaning into his glass-cannon nature. We’re improving his damage this time, which should enable new break points in how many shots are required to eliminate an enemy.",
      "general": [],
      "perks": [],
@@ -485,17 +507,18 @@
        "name_en": "Destruction Orb",
        "name_cn": null,
        "slug": "destruction-orb",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5740abd7e5f0de513ebcb32b073f27ba8f5625804598d5762cefd0c7331c1437.png",
        "changes": [
         {
          "text_en": "Damage increased from 48 to 50.",
          "text_cn": null,
          "before": 48.0,
          "after": 50.0,
-         "metric": "damage",
          "by": 2.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "damage"
+         "metric": "damage",
+         "raw_metric": "damage",
+         "unit": null
         }
        ]
       },
@@ -503,17 +526,18 @@
        "name_en": "Orb of Discord",
        "name_cn": "乱",
        "slug": "orb-of-discord",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f416ae3c602c4f920551057176a3618441f943a0faea5e3cf77dc5db0e5128a5.png",
        "changes": [
         {
          "text_en": "Cooldown per target reduced from 7 to 6 seconds.",
          "text_cn": null,
          "before": 7.0,
          "after": 6.0,
-         "metric": "cooldown",
          "by": -1.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "cooldown per target"
+         "metric": "cooldown",
+         "raw_metric": "cooldown per target",
+         "unit": "s"
         }
        ]
       }
@@ -531,12 +555,12 @@
    "blocks": [
     {
      "title": "CLASH",
-     "body": "Fast Respawn after a point has been captured has been removed from Clash. We'll be looking to implement an alternate version of it for Clash in the future. Respawn times for defenders get reduced by 2 seconds for each segment the attackers secure in the final capture zone.",
+     "body": "- Fast Respawn after a point has been captured has been removed from Clash. We'll be looking to implement an alternate version of it for Clash in the future.\n- Respawn times for defenders get reduced by 2 seconds for each segment the attackers secure in the final capture zone.",
      "dev": null
     },
     {
      "title": "FLASHPOINT",
-     "body": "The initial boost of speed heroes receive when leaving the spawn has been increased in duration from 1 second to 2 seconds. Increased maximum potential duration of the speed boost effect from 5 to 6 seconds.",
+     "body": "- The initial boost of speed heroes receive when leaving the spawn has been increased in duration from 1 second to 2 seconds.\n- Increased maximum potential duration of the speed boost effect from 5 to 6 seconds.",
      "dev": null
     }
    ]
@@ -550,17 +574,17 @@
    "blocks": [
     {
      "title": "GENERAL",
-     "body": "Fixed an issue where players were not gaining credit when queuing for all roles in challenges and progression stats. Fixed an issue where wall climbing heroes could infinitely ledge grab.",
+     "body": "- Fixed an issue where players were not gaining credit when queuing for all roles in challenges and progression stats.\n- Fixed an issue where wall climbing heroes could infinitely ledge grab.",
      "dev": null
     },
     {
      "title": "HEROES",
-     "body": "CASSIDY Fixed an issue where Deadeye would incorrectly indicate a killing blow on Ramattra. D.VA Fixed an issue with D.Va's Boosters movement speed stacking multiplicatively with speed boosting abilities. LIFEWEAVER Fixed an issue that would cause Lifeweaver's petal platform to continue to rise when interacting with Mei's Ice effects. Fixed an issue where Lifeweavers's petal platform can move horizontally if placed on a moving object. SIGMA Fixed an issue with Sigma's Gravitic Flux percentage health damage being affected by damage reduction. SYMMETRA Fixed an issue where audio would remain muffled if you used a teleporter while hindered.",
+     "body": "CASSIDY\n\n- Fixed an issue where Deadeye would incorrectly indicate a killing blow on Ramattra.\n\nD.VA\n\n- Fixed an issue with D.Va's Boosters movement speed stacking multiplicatively with speed boosting abilities.\n\nLIFEWEAVER\n\n- Fixed an issue that would cause Lifeweaver's petal platform to continue to rise when interacting with Mei's Ice effects.\n- Fixed an issue where Lifeweavers's petal platform can move horizontally if placed on a moving object.\n\nSIGMA\n\n- Fixed an issue with Sigma's Gravitic Flux percentage health damage being affected by damage reduction.\n\nSYMMETRA\n\n- Fixed an issue where audio would remain muffled if you used a teleporter while hindered.",
      "dev": null
     }
    ]
   }
  ],
  "raw_text": null,
- "hash": "sha256:fb6cddd0e482d0ea349124e83847399ae9e54d226b7c7c98cb354d725a93da5d"
+ "hash": "sha256:957bd712d00369423ea4a0d3696ce522815a247cd944c06d564dae54926ec5d5"
 }

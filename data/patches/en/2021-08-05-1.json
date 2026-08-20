@@ -17,6 +17,7 @@
      "name_en": "Doomfist",
      "name_cn": "末日铁拳",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e072f79929b20a9bbf56a5862cadf4769fd2062f375ac3ecd243ceb66983c6ea.png",
      "dev_note": "The accelerated cooldown times will enable more fluidity with setting up Doomfist's combos when using the Meteor Strike ultimate.",
      "general": [],
      "perks": [],
@@ -25,17 +26,18 @@
        "name_en": "Meteor Strike",
        "name_cn": "毁天灭地",
        "slug": "meteor-strike",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/49c404d5887c562cdb5aafb55979c5589a450c0e18fa9d62a3c8cc0ac585886e.png",
        "changes": [
         {
          "text_en": "Now speeds up the cooldown rate of his abilities by 100% while in the air",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -46,6 +48,7 @@
      "name_en": "Genji",
      "name_cn": "源氏",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/765cd44aab948bd53082079dfdcf3ce967e8786cf26e4505b797b092c1e6478e.png",
      "dev_note": "The Shuriken damage increase doesn't sound like a lot but it crosses a threshold or \"breakpoint\" against some enemy targets, enabling them to be eliminated with one less attack landed. To help balance out this increased power for his primary weapon we're reducing the damage of the Dragonblade ultimate, which is also a breakpoint against some targets when being damage boosted.",
      "general": [],
      "perks": [],
@@ -54,17 +57,18 @@
        "name_en": "Shuriken",
        "name_cn": "气",
        "slug": "shuriken",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8d0916035141abd9ab2bf72dbcfd0460b7a0019529e023d259ad4340890b34b3.png",
        "changes": [
         {
          "text_en": "Damage increased from 28 to 29",
          "text_cn": null,
          "before": 28.0,
          "after": 29.0,
-         "metric": "damage",
          "by": 1.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "damage"
+         "metric": "damage",
+         "raw_metric": "damage",
+         "unit": null
         }
        ]
       },
@@ -72,17 +76,18 @@
        "name_en": "Dragonblade",
        "name_cn": "斩",
        "slug": "dragonblade",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e9c3c82c08ce1a6006dbdf6905591040ed83ddceba81efb2e526c217cd57c931.png",
        "changes": [
         {
          "text_en": "Damage reduced from 120 to 110",
          "text_cn": null,
          "before": 120.0,
          "after": 110.0,
-         "metric": "damage",
          "by": -10.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "damage"
+         "metric": "damage",
+         "raw_metric": "damage",
+         "unit": null
         }
        ]
       }
@@ -93,6 +98,7 @@
      "name_en": "Moira",
      "name_cn": "莫伊拉",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d58b00cca1ff4bea2f18c1715f7c79a58e60b457b3e5ee6d9a63599cf77e299b.png",
      "dev_note": "Moira has recently been underperforming a little bit. This increase to her self-healing with Biotic Grasp will help improve her survivability while in range to recharge her healing resources.",
      "general": [],
      "perks": [],
@@ -101,17 +107,18 @@
        "name_en": "Biotic Grasp",
        "name_cn": "生化之触",
        "slug": "biotic-grasp",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9721148061d528df7b3b5a90f746a82dc2b53b191add15e0962f8dcaf0777aa0.png",
        "changes": [
         {
          "text_en": "Self-healing increased from 20 to 24 health per second",
          "text_cn": null,
          "before": 20.0,
          "after": 24.0,
-         "metric": "self-healing",
          "by": 4.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "self-healing"
+         "metric": "self-healing",
+         "raw_metric": "self-healing",
+         "unit": null
         }
        ]
       }
@@ -122,6 +129,7 @@
      "name_en": "Roadhog",
      "name_cn": "路霸",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5f961a1625091209fdfb6086dee69178d9de88946b4b2d7492c0a4fffe5fdd4b.png",
      "dev_note": "Roadhog tanks for his allies by being a large and threatening target with high durability which draws a lot of fire from the enemy team. We're reducing the amount of ultimate charge he provides to better enable him in this role without as much of a downside for his own team.",
      "general": [
       {
@@ -157,6 +165,7 @@
      "name_en": "Soldier: 76",
      "name_cn": "士兵76",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1ab1d67206b689b2dc14282ce65cb070e2956a902f5c4de87884513b661c4297.png",
      "dev_note": "The damage-per-shot for the Heavy Pulse Rifle has been adjusted several times now as it's an important tuning breakpoint for Soldier: 76. It was last reduced when his weapon spread was replaced by recoil to help account for the increased accuracy potential, though with the recent reductions to his damage falloff at long range, it's reasonable to increase his damage output once again while pulling some power out of his area-of-effect healing utility.",
      "general": [],
      "perks": [],
@@ -165,17 +174,18 @@
        "name_en": "Heavy Pulse Rifle",
        "name_cn": "重脉冲步枪",
        "slug": "heavy-pulse-rifle",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/69eaf669cd646a617439592615f023cfec82c27f4a3e19f48188941b3feaf55f.png",
        "changes": [
         {
          "text_en": "Damage increased from 19 to 20",
          "text_cn": null,
          "before": 19.0,
          "after": 20.0,
-         "metric": "damage",
          "by": 1.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "damage"
+         "metric": "damage",
+         "raw_metric": "damage",
+         "unit": null
         }
        ]
       },
@@ -183,17 +193,18 @@
        "name_en": "Biotic Field",
        "name_cn": "生物力场",
        "slug": "biotic-field",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/aaadd3dee89ac8797ecb7a1e647f574a034b1930726296fd17946d343254bdf0.png",
        "changes": [
         {
          "text_en": "Healing reduced from 40 to 35 health per second",
          "text_cn": null,
          "before": 40.0,
          "after": 35.0,
-         "metric": "healing",
          "by": -5.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "healing"
+         "metric": "healing",
+         "raw_metric": "healing",
+         "unit": null
         }
        ]
       }
@@ -204,6 +215,7 @@
      "name_en": "Wrecking Ball",
      "name_cn": "破坏球",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c22df3c91a4fbc7f3f9689cd76f9fb86b52b2dfdf9f51c2158b4a9259a5f970d.png",
      "dev_note": "Wrecking Ball is the fastest hero in the game which works well for his disruptive playstyle. However, to help reduce his contribution to objective stalling, his Grappling Claw ability will now start on cooldown upon respawning. Proximity mines will no longer attach to walls as it resulted in accidental bunched up placements, out of range from most enemy targets, more often than any intentional clever uses.",
      "general": [],
      "perks": [],
@@ -212,17 +224,18 @@
        "name_en": "Grappling Claw",
        "name_cn": "工程抓钩",
        "slug": "grappling-claw",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e81e6ba9fb3391f29528021e453a0d3c16da1fc5e378994e6d00783356e0f2c9.png",
        "changes": [
         {
          "text_en": "Now begins on cooldown after respawning",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       },
@@ -230,28 +243,29 @@
        "name_en": "Adaptive Shield",
        "name_cn": null,
        "slug": "adaptive-shield",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/fa65af9c692405f968fafbeedcdfc9092b38a050dc3562bd41280390ccd7a21d.png",
        "changes": [
         {
          "text_en": "Cast time reduced from 0.2 seconds to 0 seconds",
          "text_cn": null,
          "before": 0.2,
          "after": 0.0,
-         "metric": "cast_time",
          "by": -0.2,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "cast time"
+         "metric": "cast_time",
+         "raw_metric": "cast time",
+         "unit": "s"
         },
         {
          "text_en": "Duration increased from 7 to 9 seconds",
          "text_cn": null,
          "before": 7.0,
          "after": 9.0,
-         "metric": "duration",
          "by": 2.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "duration"
+         "metric": "duration",
+         "raw_metric": "duration",
+         "unit": "s"
         }
        ]
       },
@@ -259,17 +273,18 @@
        "name_en": "Minefield",
        "name_cn": "地雷禁区",
        "slug": "minefield",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/17a54a345b715bc4301b330d8eb394f57e1c66308a8cba67f426de76a71ba868.png",
        "changes": [
         {
          "text_en": "Proximity mines no longer stick to walls",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }

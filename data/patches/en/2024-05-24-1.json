@@ -25,6 +25,7 @@
      "name_en": "Roadhog",
      "name_cn": "路霸",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b6f4e837dc41e87d730f6b0fad3473e689c8bdcd1f732b97326ac08b0508f2ee.png",
      "dev_note": "Developer comments: Roadhog benefitted greatly from the recent headshot reduction passive for Tanks so we are nerfing his survivability. This change to Take a Breather is aimed at encouraging more mindful resource management. The change to Whole Hog will make the ultimate more of a zoning tool while lowering its lethality, especially against tanks with their recently increased knockback resistance.",
      "general": [],
      "perks": [],
@@ -33,39 +34,40 @@
        "name_en": "Take a Breather",
        "name_cn": "呼吸器",
        "slug": "take-a-breather",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9cb8d867671bf917a9ba5d4a28ab6cb6ceeb10de2813567fcad97aca32c58499.png",
        "changes": [
         {
          "text_en": "Resource regeneration rate reduced from 10 to 8 per second.",
          "text_cn": null,
          "before": 10.0,
          "after": 8.0,
-         "metric": "resource regeneration rate",
          "by": -2.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "resource regeneration rate"
+         "metric": "resource regeneration rate",
+         "raw_metric": "resource regeneration rate",
+         "unit": null
         },
         {
          "text_en": "Maximum healing reduced from 450 to 400.",
          "text_cn": null,
          "before": 450.0,
          "after": 400.0,
-         "metric": "maximum healing",
          "by": -50.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "maximum healing"
+         "metric": "maximum healing",
+         "raw_metric": "maximum healing",
+         "unit": null
         },
         {
          "text_en": "Cooldown reduced from 1.5 to 1.25 seconds.",
          "text_cn": null,
          "before": 1.5,
          "after": 1.25,
-         "metric": "cooldown",
          "by": -0.25,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "cooldown"
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
         }
        ]
       },
@@ -73,28 +75,29 @@
        "name_en": "Whole Hog",
        "name_cn": "鸡飞狗跳",
        "slug": "whole-hog",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/78faa90f268424c6e770168ec15f5bb880d0b14e5d10f22c30bfbb64ffe244a8.png",
        "changes": [
         {
          "text_en": "Knockback increased from 14 to 16.",
          "text_cn": null,
          "before": 14.0,
          "after": 16.0,
-         "metric": "knockback",
          "by": 2.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "knockback"
+         "metric": "knockback",
+         "raw_metric": "knockback",
+         "unit": null
         },
         {
          "text_en": "Damage per pellet reduced from 7 to 6.",
          "text_cn": null,
          "before": 7.0,
          "after": 6.0,
-         "metric": "damage",
          "by": -1.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "damage per pellet"
+         "metric": "damage",
+         "raw_metric": "damage per pellet",
+         "unit": null
         }
        ]
       }
@@ -105,6 +108,7 @@
      "name_en": "Sigma",
      "name_cn": "西格玛",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9738e1687bf7064de3667169788ef1b5ea9cf1746a42753c767cf17c7cb67547.png",
      "dev_note": "Developer comments: Our last patch aimed to make some Tank ultimates more forgiving to use during combat. Sigma’s Gravitic Flux can suffer from missing due to slight line of sight checks but we don’t believe this change had proper communication for all instances. We may return to this change for Sigma down the line with updated visuals.",
      "general": [],
      "perks": [],
@@ -113,17 +117,18 @@
        "name_en": "Gravitic Flux",
        "name_cn": "引力乱流",
        "slug": "gravitic-flux",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/7140d3eaf82e580ab465dcdb04bd1faaf77ac54550a12d17ecde7c4e87e963e0.png",
        "changes": [
         {
          "text_en": "Gravitic Flux now requires line-of-sight to lift targets again.",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }

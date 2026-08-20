@@ -17,6 +17,7 @@
      "name_en": "Baptiste",
      "name_cn": "巴蒂斯特",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a4f09ac5528ea7c458223747a0b47144f1b6b1d2736fa3b67c18a8ab43d0d815.png",
      "dev_note": "To adjust Baptiste's overall power for the recent increased effectiveness of his Biotic Launcher and Amplification Matrix, we're taking some durability out of Immortality Field and increasing the cost of his ultimate once again.",
      "general": [],
      "perks": [],
@@ -25,17 +26,18 @@
        "name_en": "Immortality Field",
        "name_cn": "维生力场",
        "slug": "immortality-field",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d66d82bab88fc813080dd15e31629cc3aa7c8b41cfb41d5b962b628dd345e433.png",
        "changes": [
         {
          "text_en": "Health decreased from 200 to 150",
          "text_cn": null,
          "before": 200.0,
          "after": 150.0,
-         "metric": "health",
          "by": -50.0,
          "by_pct": null,
-         "unit": "hp",
-         "raw_metric": "health"
+         "metric": "health",
+         "raw_metric": "health",
+         "unit": "hp"
         }
        ]
       },
@@ -43,17 +45,18 @@
        "name_en": "Amplification Matrix",
        "name_cn": "增幅矩阵",
        "slug": "amplification-matrix",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0a31371b55e4007e67a86f8495949970d20f64b2f0166e78d3fd16217e090a83.png",
        "changes": [
         {
          "text_en": "Ultimate cost increased by 15%",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": "ultimate_cost",
          "by": null,
          "by_pct": 15.0,
-         "unit": null,
-         "raw_metric": "ultimate cost"
+         "metric": "ultimate_cost",
+         "raw_metric": "ultimate cost",
+         "unit": null
         }
        ]
       }
@@ -64,6 +67,7 @@
      "name_en": "D.Va",
      "name_cn": "D.Va",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5d9b834a39e9306ec125dd8c77cdd62a351f8edef2d5dfe66d6cbb22594eae7e.png",
      "dev_note": "We're increasing the ratio of armor to health that D.Va's mech has to enable it to withstand more damage from shotguns, beams, and weapons with a high rate of fire.",
      "general": [
       {
@@ -87,6 +91,7 @@
      "name_en": "Reinhardt",
      "name_cn": "莱因哈特",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/67e489338249021ed490b8821f28f78487e34917880220f64e24fee78dcd7ed2.png",
      "dev_note": "The intent of these changes is to slightly bolster Reinhardt's frontline presence once he closes the distance with an enemy. The increased Rocket Hammer damage will reduce the number of swings necessary to eliminate some heroes so we'll be keeping a close eye on the overall impact of this change.",
      "general": [
       {
@@ -108,17 +113,18 @@
        "name_en": "Rocket Hammer",
        "name_cn": null,
        "slug": "rocket-hammer",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/572da2aefdb8e3c9142e5146bc51b75269937ecca413e38bae18dcdafac15b1f.png",
        "changes": [
         {
          "text_en": "Damage increased from 75 to 85",
          "text_cn": null,
          "before": 75.0,
          "after": 85.0,
-         "metric": "damage",
          "by": 10.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "damage"
+         "metric": "damage",
+         "raw_metric": "damage",
+         "unit": null
         }
        ]
       }

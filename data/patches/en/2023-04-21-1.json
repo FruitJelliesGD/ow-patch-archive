@@ -25,6 +25,7 @@
      "name_en": "Lifeweaver",
      "name_cn": "生命之梭",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/57d5014ab6034db9138f838e8450693b4a97ab3c54f85d594b199a8853e75ccb.png",
      "dev_note": "Developer Comment: We’ve received feedback that Lifeweaver’s control settings leave much to be desired, especially on controllers. We agree and have updated the default control scheme along with adding a new hero option for those who prefer the previous layout. Additionally, we added the ability to cancel Petal Platform by pressing the button again, similar to how Tree of Life already works, in order to help simplify the controls and reduce the amount of ability buttons displayed. We hope these changes will make playing Lifeweaver approachable for more players.",
      "general": [
       {
@@ -154,28 +155,29 @@
        "name_en": "Healing Blossom",
        "name_cn": "愈疗灵花",
        "slug": "healing-blossom",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a3ccff02b44507df5c9bdaced0ecd56ac80b33285ad8a60e6c454acf90560579.png",
        "changes": [
         {
          "text_en": "Ammo count increased to 20 from 12",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Slow now steadily applies after 1 second of max charge being held",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       },
@@ -183,28 +185,29 @@
        "name_en": "Thorn Volley",
        "name_cn": "棘刺箭雨",
        "slug": "thorn-volley",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2ff86a970fedb412a1166fddfbca13bbd08156043012608e538867f792fc1d78.png",
        "changes": [
         {
          "text_en": "Projectile Size reduced from .125 to .1",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         },
         {
          "text_en": "Spread pattern adjusted, with random spread reduced. 1 of the 2 projectiles per shot now fires closer to the crosshair",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       },
@@ -212,28 +215,29 @@
        "name_en": "Tree of Life",
        "name_cn": "生命之树",
        "slug": "tree-of-life",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/105495a0c2ea708de307204b47c90915782256cffd83fc8dff8abcc508e0ef5a.png",
        "changes": [
         {
          "text_en": "Health increased from 1000 to 1200",
          "text_cn": null,
          "before": 1000.0,
          "after": 1200.0,
-         "metric": "health",
          "by": 200.0,
          "by_pct": null,
-         "unit": "hp",
-         "raw_metric": "health"
+         "metric": "health",
+         "raw_metric": "health",
+         "unit": "hp"
         },
         {
          "text_en": "Healing pulse increased from 50 to 75",
          "text_cn": null,
          "before": 50.0,
          "after": 75.0,
-         "metric": "healing",
          "by": 25.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "healing pulse"
+         "metric": "healing",
+         "raw_metric": "healing pulse",
+         "unit": null
         }
        ]
       },
@@ -241,17 +245,18 @@
        "name_en": "Parting Gift (Passive)",
        "name_cn": null,
        "slug": "parting-gift-passive",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0dbb4211b1c8dbd0464a77de788627eb6b3249cd977b2ca61864947e4fe23139.png",
        "changes": [
         {
          "text_en": "Parting gift has been removed",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": null,
          "by": null,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": null
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
         }
        ]
       }
@@ -269,22 +274,22 @@
    "blocks": [
     {
      "title": "General",
-     "body": "Fixed an issue where Tracer was missing in the Overwatch League themed lobby when low settings were enabled. Fixed an issue where players' season three ranks would be modified when first logging into season four. Note that this patch will not immediately resolve for players who had already logged in to season four. We will be repairing these players in the coming days. Fixed an issue where ranked players in Bronze 5 would see an incorrect percentage of progress towards the next division. Fixed a number of edge cases where the matchmaker would be too uncertain about a player's rating, and thus move their rating up or down faster than intended.",
+     "body": "- Fixed an issue where Tracer was missing in the Overwatch League themed lobby when low settings were enabled.\n- Fixed an issue where players' season three ranks would be modified when first logging into season four. Note that this patch will not immediately resolve for players who had already logged in to season four. We will be repairing these players in the coming days.\n- Fixed an issue where ranked players in Bronze 5 would see an incorrect percentage of progress towards the next division.\n- Fixed a number of edge cases where the matchmaker would be too uncertain about a player's rating, and thus move their rating up or down faster than intended.",
      "dev": null
     },
     {
      "title": "Maps",
-     "body": "Esperança Fixed in a previous update - Fixed locations on the map that allowed players to escape the playable space.",
+     "body": "Esperança\n\n- Fixed in a previous update - Fixed locations on the map that allowed players to escape the playable space.",
      "dev": null
     },
     {
      "title": "Heroes",
-     "body": "Lifeweaver Fixed an issue that caused Lifeweaver's Camera height to be set too low. Fixed an issue that resulted in Petal Platform hit volumes to misalign in some instances. Petal Platform's Icon will now correctly display status and remaining duration. Addressed an issue where Life Grip could pull allies to the wrong location if cast from the enemy Petal Platform. Life Grip now correctly pull targets unless specific conditions are met, such as using certain ultimates or the teleporter. Improved Life Grip safety checks for various situations and locations. Fixed in a previous update - Fixed a crash that could occur involving Junk Rat projectiles and dormant Petal Platforms. Fixed an issue that caused Tree of Life to not properly attach when placed on ledges.",
+     "body": "Lifeweaver\n\n- Fixed an issue that caused Lifeweaver's Camera height to be set too low.\n- Fixed an issue that resulted in Petal Platform hit volumes to misalign in some instances.\n- Petal Platform's Icon will now correctly display status and remaining duration.\n- Addressed an issue where Life Grip could pull allies to the wrong location if cast from the enemy Petal Platform.\n- Life Grip now correctly pull targets unless specific conditions are met, such as using certain ultimates or the teleporter.\n- Improved Life Grip safety checks for various situations and locations.\n- Fixed in a previous update - Fixed a crash that could occur involving Junk Rat projectiles and dormant Petal Platforms.\n- Fixed an issue that caused Tree of Life to not properly attach when placed on ledges.",
      "dev": null
     }
    ]
   }
  ],
  "raw_text": null,
- "hash": "sha256:7ddab54a011a2d0f8208a7028e747c501489467ec27f1c916c3957744569dfbf"
+ "hash": "sha256:6dfc1f3e8fc585bd78cd40ba952370ed4c537b0cc44d961d0a68afdb970fc275"
 }

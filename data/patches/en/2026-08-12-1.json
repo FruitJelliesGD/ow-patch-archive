@@ -25,6 +25,7 @@
      "name_en": "D.Mon",
      "name_cn": "D.Mon",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9d32268bf455685710310a79f655f13848355d9de86cf19f7293dfc201e8cd8f.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -33,17 +34,18 @@
        "name_en": "Plasma Saber",
        "name_cn": "等离子剑",
        "slug": "plasma-saber",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5b8ae7f23071c20d472d55243ddebe666c361bab598c18e12161b8415ee058de.png",
        "changes": [
         {
          "text_en": "Damage increased from 60 to 65.",
          "text_cn": null,
          "before": 60.0,
          "after": 65.0,
-         "metric": "damage",
          "by": 5.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "damage"
+         "metric": "damage",
+         "raw_metric": "damage",
+         "unit": null
         }
        ]
       },
@@ -51,28 +53,29 @@
        "name_en": "Propulsors",
        "name_cn": "助推器",
        "slug": "propulsors",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ea768e2c364167941c4b0a3bc8bc65d959274e1c0439ab5f6073611aff8c4e37.png",
        "changes": [
         {
          "text_en": "Fuel drain rate reduced from 40 to 25.",
          "text_cn": null,
          "before": 40.0,
          "after": 25.0,
-         "metric": "fuel drain rate",
          "by": -15.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "fuel drain rate"
+         "metric": "fuel drain rate",
+         "raw_metric": "fuel drain rate",
+         "unit": null
         },
         {
          "text_en": "Fuel regen rate increased from 15 to 22.5.",
          "text_cn": null,
          "before": 15.0,
          "after": 22.5,
-         "metric": "fuel regen rate",
          "by": 7.5,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "fuel regen rate"
+         "metric": "fuel regen rate",
+         "raw_metric": "fuel regen rate",
+         "unit": null
         }
        ]
       },
@@ -80,28 +83,29 @@
        "name_en": "Fusion Repeater",
        "name_cn": "聚变连发枪",
        "slug": "fusion-repeater",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/db227e82342a3b2f97f3223616ffc5923999ea9d3badf019a341f2ba1b38843f.png",
        "changes": [
         {
          "text_en": "Damage increased from 15 to 16.",
          "text_cn": null,
          "before": 15.0,
          "after": 16.0,
-         "metric": "damage",
          "by": 1.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "damage"
+         "metric": "damage",
+         "raw_metric": "damage",
+         "unit": null
         },
         {
          "text_en": "Cooldown reduced from 6 to 4 seconds.",
          "text_cn": null,
          "before": 6.0,
          "after": 4.0,
-         "metric": "cooldown",
          "by": -2.0,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "cooldown"
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
         }
        ]
       }
@@ -114,11 +118,11 @@
    "type": "generic_update",
    "title": "Bug Fixes",
    "role": null,
-   "description": "Fixed a bug where Nano Boost was removed from Moira when she used Fade. Fixed an issue preventing D.Mon's Power Barrier from fully protecting D.Mon if deployed while Fusion Repeater was active. Fixed a bug where the second attacker spawn extended into playable areas on Paraíso. Fixed a bug where D.Mon could become invulnerable temporarily.",
+   "description": "- Fixed a bug where Nano Boost was removed from Moira when she used Fade.\n- Fixed an issue preventing D.Mon's Power Barrier from fully protecting D.Mon if deployed while Fusion Repeater was active.\n- Fixed a bug where the second attacker spawn extended into playable areas on Paraíso.\n- Fixed a bug where D.Mon could become invulnerable temporarily.",
    "heroes": [],
    "blocks": []
   }
  ],
  "raw_text": null,
- "hash": "sha256:2ace5cd23299c557a1b580fe9b6a645ef23885a37ddd035acdf82240747bab7b"
+ "hash": "sha256:ad10e03701f8e84b5634379d2b9a632885704a5a30fa250d574937341015df40"
 }

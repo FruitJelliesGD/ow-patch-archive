@@ -25,6 +25,7 @@
      "name_en": "Orisa",
      "name_cn": "奥丽莎",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/20c12a10cfe0b5608f9eec63a74ecb0ccd18a114019bc77bb2765f87776e17ed.png",
      "dev_note": null,
      "general": [],
      "perks": [],
@@ -33,17 +34,18 @@
        "name_en": "Fortify",
        "name_cn": "强固防御",
        "slug": "fortify",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d697fa90726cf683222920822d2ee00a85e0420c6cbc6ec2365573f313d06357.png",
        "changes": [
         {
          "text_en": "Health bonus reduced from 125 to 75",
          "text_cn": null,
          "before": 125.0,
          "after": 75.0,
-         "metric": "health",
          "by": -50.0,
          "by_pct": null,
-         "unit": "hp",
-         "raw_metric": "health bonus"
+         "metric": "health",
+         "raw_metric": "health bonus",
+         "unit": "hp"
         }
        ]
       }
@@ -54,6 +56,7 @@
      "name_en": "Roadhog",
      "name_cn": "路霸",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b6f4e837dc41e87d730f6b0fad3473e689c8bdcd1f732b97326ac08b0508f2ee.png",
      "dev_note": "Developer comments: These changes aim to reduce the frustration of dying in one shot immediately after being hooked and pulled by Roadhog. Chain Hook is still a powerful utility to forcibly reposition enemy players, so it will still often lead to eliminations. Its effectiveness will now be more dependent on specific hero matchups and how the hooked target is able to respond.",
      "general": [],
      "perks": [],
@@ -62,28 +65,29 @@
        "name_en": "Chain Hook",
        "name_cn": "链钩",
        "slug": "chain-hook",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/139deabeb3d62c451b558367bf5e64641583355d99ed90fe42107a5716fdca3b.png",
        "changes": [
         {
          "text_en": "Impact damage reduced from 30 to 5",
          "text_cn": null,
          "before": 30.0,
          "after": 5.0,
-         "metric": "impact damage",
          "by": -25.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "impact damage"
+         "metric": "impact damage",
+         "raw_metric": "impact damage",
+         "unit": null
         },
         {
          "text_en": "The enemy final position distance from Roadhog after being pulled increased from 3 to 4 meters",
          "text_cn": null,
          "before": 3.0,
          "after": 4.0,
-         "metric": "the enemy final position distance from roadhog after being pulled",
          "by": 1.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "the enemy final position distance from roadhog after being pulled"
+         "metric": "the enemy final position distance from roadhog after being pulled",
+         "raw_metric": "the enemy final position distance from roadhog after being pulled",
+         "unit": null
         }
        ]
       },
@@ -91,50 +95,51 @@
        "name_en": "Scrap Gun",
        "name_cn": "爆裂枪",
        "slug": "scrap-gun",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/50b6e388a6693ce31b5a1889e53037970a1b884b8265834f33dd6f7a3dedce44.png",
        "changes": [
         {
          "text_en": "Damage per pellet reduced from 6.6 to 6",
          "text_cn": null,
          "before": 6.6,
          "after": 6.0,
-         "metric": "damage",
          "by": -0.6,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "damage per pellet"
+         "metric": "damage",
+         "raw_metric": "damage per pellet",
+         "unit": null
         },
         {
          "text_en": "Recovery time reduced from 0.85 to 0.8 seconds",
          "text_cn": null,
          "before": 0.85,
          "after": 0.8,
-         "metric": "recovery",
          "by": -0.05,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "recovery time"
+         "metric": "recovery",
+         "raw_metric": "recovery time",
+         "unit": "s"
         },
         {
          "text_en": "Reload time reduced from 2 to 1.75 seconds",
          "text_cn": null,
          "before": 2.0,
          "after": 1.75,
-         "metric": "reload time",
          "by": -0.25,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "reload time"
+         "metric": "reload time",
+         "raw_metric": "reload time",
+         "unit": null
         },
         {
          "text_en": "Maximum ammo increased from 5 to 6",
          "text_cn": null,
          "before": 5.0,
          "after": 6.0,
-         "metric": "maximum ammo",
          "by": 1.0,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "maximum ammo"
+         "metric": "maximum ammo",
+         "raw_metric": "maximum ammo",
+         "unit": null
         }
        ]
       }
@@ -154,6 +159,7 @@
      "name_en": "Sojourn",
      "name_cn": "索杰恩",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/515f25a729a4a3f51d956fc54c600dc60d8e5242f2b188c178496cea1a2e11b5.png",
      "dev_note": "Developer comments: The energy gain adjustment will help smooth out Sojourn's average Railgun charge time because it won't benefit as much from critical damage or damage boost abilities. Hitting armored targets or other sources of damage reduction will result in quicker energy gains than before. Previously, damage boosts and critical damage had an amplified effect for Sojourn since it reduced the time to build energy and lowered the threshold at which her Railgun secondary fire became lethal. The reduction to primary fire damage will further slow that down as well.",
      "general": [],
      "perks": [],
@@ -162,6 +168,7 @@
        "name_en": "Railgun",
        "name_cn": "电磁炮",
        "slug": "railgun",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3d7f261e05e3abda155cede4409ec8348490e286805c123d54d7f81fdd50d077.png",
        "changes": []
       }
      ]
@@ -180,6 +187,7 @@
      "name_en": "Kiriko",
      "name_cn": "雾子",
      "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/24d1d7bf86c331b3d81b934442ed36fd0121f6815255c6f26f456127fb342d15.png",
      "dev_note": "Developer comments: Despite Kiriko's healing projectiles being slow-moving and single target, her average healing output per match is higher than we'd like. We've seen players tend to get overly focused on maximizing her healing potential and only use primary fire for extended periods of time. Rather than reduce the amount of healing per projectile, which may lead to feeling locked into focusing on primary fire even more, we're increasing the recovery time before she can start firing the Healing Ofuda. Increasing recovery times opens the opportunity to weave in secondary fire Kunai more freely.",
      "general": [],
      "perks": [],
@@ -188,17 +196,18 @@
        "name_en": "Healing Ofuda",
        "name_cn": "符",
        "slug": "healing-ofuda",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6b8830bd7173de38016ef129e117ac6f418026a6ec4501ab5cb7cdd99bd6f5b8.png",
        "changes": [
         {
          "text_en": "Recovery time increased from 0.85 to 1 second",
          "text_cn": null,
          "before": 0.85,
          "after": 1.0,
-         "metric": "recovery",
          "by": 0.15,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "recovery time"
+         "metric": "recovery",
+         "raw_metric": "recovery time",
+         "unit": "s"
         }
        ]
       }
@@ -216,17 +225,17 @@
    "blocks": [
     {
      "title": "GENERAL",
-     "body": "Fixed an issue with the \"Winged Sandals' weapon charm's 'How to Unlock' text Adjusted footstep audio mixing to make enemy footsteps more audible.",
+     "body": "- Fixed an issue with the \"Winged Sandals' weapon charm's 'How to Unlock' text\n- Adjusted footstep audio mixing to make enemy footsteps more audible.",
      "dev": null
     },
     {
      "title": "HEROES",
-     "body": "Lucio Fixed an issue with Lucio's Hermes skin exhibiting incorrect physics Reinhardt Fixed an issue with Reinhardt's Hammer appearing deformed during the Sweethardt emote Sojourn Fixed an issue where Sojourn's Cyber Detective Skin would fail to load Wrecking Ball Fixed an issue with Adaptive Shield where it could be incorrectly applied before the cooldown was complete",
+     "body": "Lucio\n\n- Fixed an issue with Lucio's Hermes skin exhibiting incorrect physics\n\nReinhardt\n\n- Fixed an issue with Reinhardt's Hammer appearing deformed during the Sweethardt emote\n\nSojourn\n\n- Fixed an issue where Sojourn's Cyber Detective Skin would fail to load\n\nWrecking Ball\n\n- Fixed an issue with Adaptive Shield where it could be incorrectly applied before the cooldown was complete",
      "dev": null
     }
    ]
   }
  ],
  "raw_text": null,
- "hash": "sha256:a5469fc1bcf5728565f51d4b7f8bd9c9c96c8775db4cbf0cd305c4143ce9f755"
+ "hash": "sha256:039d4b986f0c9d9d19bf3ab0412d753ccd8566f057f55aa2154286fa8aae3eda"
 }

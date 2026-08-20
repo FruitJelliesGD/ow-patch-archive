@@ -17,6 +17,7 @@
      "name_en": "Genji",
      "name_cn": "源氏",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/765cd44aab948bd53082079dfdcf3ce967e8786cf26e4505b797b092c1e6478e.png",
      "dev_note": "We're increasing Genji's Shuriken fire rate to enable him to have more impact outside of his ultimate and increasing the cost of Dragonblade to account for the increased damage potential.",
      "general": [],
      "perks": [],
@@ -25,17 +26,18 @@
        "name_en": "Shuriken",
        "name_cn": "气",
        "slug": "shuriken",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8d0916035141abd9ab2bf72dbcfd0460b7a0019529e023d259ad4340890b34b3.png",
        "changes": [
         {
          "text_en": "Recovery lowered from 0.75 to 0.68",
          "text_cn": null,
          "before": 0.75,
          "after": 0.68,
-         "metric": "recovery",
          "by": -0.07,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "recovery"
+         "metric": "recovery",
+         "raw_metric": "recovery",
+         "unit": "s"
         }
        ]
       },
@@ -43,17 +45,18 @@
        "name_en": "Dragonblade",
        "name_cn": "斩",
        "slug": "dragonblade",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e9c3c82c08ce1a6006dbdf6905591040ed83ddceba81efb2e526c217cd57c931.png",
        "changes": [
         {
          "text_en": "Ultimate cost increased 15%",
          "text_cn": null,
          "before": null,
          "after": null,
-         "metric": "ultimate_cost",
          "by": null,
          "by_pct": 15.0,
-         "unit": null,
-         "raw_metric": "ultimate cost"
+         "metric": "ultimate_cost",
+         "raw_metric": "ultimate cost",
+         "unit": null
         }
        ]
       }
@@ -64,6 +67,7 @@
      "name_en": "Mei",
      "name_cn": "美",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a4c1e3c5533675ba4941c48809c54e0412774e022b1e324f7ec5915fef372db9.png",
      "dev_note": "A while ago there was a change to make Mei's Cryo-Freeze collision consistent with her Ice Wall, meaning she could no longer be targeted by allies while inside the block of ice. We're increasing her Cryo-Freeze healing rate since she isn't able to be easily healed up by her allies during that time.",
      "general": [],
      "perks": [],
@@ -72,17 +76,18 @@
        "name_en": "Cryo-Freeze",
        "name_cn": null,
        "slug": "cryo-freeze",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b9507f892676c729768b3cb9eec4fb2195bbadb1f229a6a332d282ffa32410db.png",
        "changes": [
         {
          "text_en": "Healing-per-second increased from 37.5 to 50",
          "text_cn": null,
          "before": 37.5,
          "after": 50.0,
-         "metric": "healing",
          "by": 12.5,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "healing-per-second"
+         "metric": "healing",
+         "raw_metric": "healing-per-second",
+         "unit": null
         }
        ]
       }
@@ -93,6 +98,7 @@
      "name_en": "Pharah",
      "name_cn": "法老之鹰",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d69d76162855cea8807b9c163e6b53bb522eef282f368b52a469332313562b98.png",
      "dev_note": "The intent for Pharah's Hover Jet fuel adjustments is to find a balance where it enables her to maintain an altitude reasonably well with careful fuel and cooldown management, but not so easily climb to the extreme heights some map ceilings allow for as it can lead to less interactive gameplay.",
      "general": [
       {
@@ -128,6 +134,7 @@
      "name_en": "Reaper",
      "name_cn": "死神",
      "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b199eada68c7148fd0f03f3bca53fb98b28a2318603918e72a37b4aed0ef754e.png",
      "dev_note": "The recent adjustment to Reaper's shotguns ended up being less beneficial than intended so we're increasing the damage per projectile slightly.",
      "general": [],
      "perks": [],
@@ -136,17 +143,18 @@
        "name_en": "Hellfire Shotguns",
        "name_cn": "狱火散弹枪",
        "slug": "hellfire-shotguns",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/76b6866587871744aca310645f66d2d07755c5a55093eb8734ed0898b17efc51.png",
        "changes": [
         {
          "text_en": "Damage per projectile increased from 5.5 to 6",
          "text_cn": null,
          "before": 5.5,
          "after": 6.0,
-         "metric": "damage",
          "by": 0.5,
          "by_pct": null,
-         "unit": null,
-         "raw_metric": "damage per projectile"
+         "metric": "damage",
+         "raw_metric": "damage per projectile",
+         "unit": null
         }
        ]
       }
@@ -157,6 +165,7 @@
      "name_en": "Sigma",
      "name_cn": "西格玛",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/72fd43c9d9f9f0d075a78db7a1dfe7766eef4d9c03e34c45b3ae6fe0f8634693.png",
      "dev_note": "While the previous cooldown increase for Experimental Barrier had the intended effect of opening up more counterplay, there may be a tuning value that feels less restrictive for Sigma and still achieves those goals.",
      "general": [],
      "perks": [],
@@ -165,17 +174,18 @@
        "name_en": "Experimental Barrier",
        "name_cn": "实验屏障",
        "slug": "experimental-barrier",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ae2c31f159331f73739932e85dc21bdfa8eb4f2b2d2de4e89c1488445da34ffb.png",
        "changes": [
         {
          "text_en": "Cooldown reduced from 2.5 to 2.0 seconds",
          "text_cn": null,
          "before": 2.5,
          "after": 2.0,
-         "metric": "cooldown",
          "by": -0.5,
          "by_pct": null,
-         "unit": "s",
-         "raw_metric": "cooldown"
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
         }
        ]
       }
@@ -186,6 +196,7 @@
      "name_en": "Zarya",
      "name_cn": "查莉娅",
      "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/983bd1ba3146529209db5b9d3d851320537270859e8e1debbfffd848c4546398.png",
      "dev_note": "Zarya has been overperforming in a variety of team compositions so the increased drain rate will bring her average energy level down slightly between engagements.",
      "general": [
       {
