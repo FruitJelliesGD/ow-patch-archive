@@ -245,6 +245,10 @@ body.patch-page main { max-width: 1180px; }
   gap: 24px;
   align-items: start;
 }
+/* hidden TOC (legacy pages with no sections) must not trap the article in
+   the 230px column: let it span the full row */
+#patch-toc[hidden] + #patch-article { grid-column: 1 / -1; }
+.patch-body .desc { padding: 10px 16px; }
 .patch-toc {
   position: sticky;
   top: 16px;

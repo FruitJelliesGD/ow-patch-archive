@@ -696,7 +696,7 @@ async function initPatch() {
     const body = document.createElement("div");
     if (section.description) {
       const d = document.createElement("div");
-      d.className = "text";
+      d.className = "text desc";
       renderRich(d, section.description);
       body.appendChild(d);
     }

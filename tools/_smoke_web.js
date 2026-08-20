@@ -97,6 +97,7 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
     results.patchHasBold = findHtml(modernBody, /strong>Choose your path/);
     results.tocChildren = document.getElementById("patch-toc").children.length;
     results.tocHasSec0 = document.getElementById("patch-toc").children.some((a) => a.href === "#sec-0");
+    results.tocHiddenModern = document.getElementById("patch-toc").hidden;
 
     location.search = "?id=en-2016-05-27-1&lang=en";
     await initPatch();
@@ -151,6 +152,7 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
     if (!results.patchHasAbilityIcon) fail.push("patch ability icon missing");
     if (!results.patchHasBold) fail.push("patch bold emphasis missing");
     if (!results.tocChildren || !results.tocHasSec0) fail.push("toc missing entries=" + results.tocChildren);
+    if (results.tocHiddenModern) fail.push("modern toc should be visible");
     if (!results.patchHasRawText) fail.push("legacy raw-text block missing");
     if (!results.legacyHasIcons) fail.push("legacy icons missing");
     if (!results.tocHiddenLegacy) fail.push("legacy toc should be hidden");
