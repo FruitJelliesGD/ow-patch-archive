@@ -3,8 +3,12 @@ name: pages
 on:
   push:
     branches: [main]
+  # monitor 的自动 commit 不触发 on:push（GITHUB_TOKEN 规则）——改为在监控工作流
+  # 完成后立即重建站点（数据已入库），schedule 仅作兜底
+  workflow_run:
+    workflows: [monitor, monitor-fast, watchdog]
+    types: [completed]
   schedule:
-    # monitor 的自动 commit 不触发 on:push（GITHUB_TOKEN 规则），用定时刷新兜底
     - cron: "23 4 * * *"
   workflow_dispatch:
 
@@ -19,6 +23,8 @@ concurrency:
 
 jobs:
   deploy:
+    # 监控失败（--fail-on-error 退出非 0）时没有新数据落库，无需部署
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
