@@ -103,21 +103,33 @@ def run_pipeline_cli(
     send_email: bool = False,
     fail_on_error: bool = False,
     fetch: Fetcher | None = None,
+    force_rewrite: bool = False,
 ) -> int:
     """Fetch -> run_pipeline -> emit. Shared by tools/run.py and tools/watchdog.py.
 
     With fail_on_error, any non-404 fetch failure aborts before emit so CI can
-    alert instead of committing partial results.
+    alert instead of committing partial results. force_rewrite persists every
+    parsed patch (no change detection, no changelog) and skips emit — it is a
+    one-time format-migration mode, never used by the scheduled workflows.
     """
     fetch = fetch or Fetcher()
     scan_months = months if months is not None else all_months(fetch)
     if sites:
         scan_months = [m for m in scan_months if m[0] in sites]
-    result = run_pipeline(data_dir, months=scan_months, fetch=fetch)
+    result = run_pipeline(data_dir, months=scan_months, fetch=fetch,
+                          force_rewrite=force_rewrite)
     if fail_on_error and result.fetch_errors:
         for site, year, month, err in result.fetch_errors:
             print(f"ERROR: fetch failed {site} {year}-{month:02d}: {err}")
         return 1
+    if force_rewrite:
+        print(f"force-rewrite done: {len(scan_months)} months scanned, "
+              f"{result.fetched_months} fetched, {len(result.fetch_errors)} fetch errors")
+        for name, site in result.unknown_heroes:
+            print(f"WARN: unknown hero {name!r} ({site}) — add to data/names.json")
+        for name, site in result.unknown_abilities:
+            print(f"WARN: unknown ability {name!r} ({site}) — add to data/names.json")
+        return 0
     return emit(result, changed_out, notify_out, send_email)
 
 
@@ -134,6 +146,9 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--send-email", action="store_true")
     parser.add_argument("--fail-on-error", action="store_true",
                         help="exit non-zero when any non-404 fetch failed (CI alerting)")
+    parser.add_argument("--force-rewrite", action="store_true",
+                        help="re-persist every parsed patch without change detection "
+                             "(one-time format migration; no changelog, no emit)")
     args = parser.parse_args(argv)
 
     fetch = Fetcher()
@@ -144,6 +159,7 @@ def main(argv: list[str] | None = None) -> int:
         args.data, months=months, sites=args.sites,
         changed_out=args.changed_out, notify_out=args.notify_out,
         send_email=args.send_email, fail_on_error=args.fail_on_error, fetch=fetch,
+        force_rewrite=args.force_rewrite,
     )
 
 

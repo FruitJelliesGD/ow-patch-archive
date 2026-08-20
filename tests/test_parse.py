@@ -135,3 +135,40 @@ def test_invariant_original_text_always_kept():
                     for a in h.abilities:
                         for c in a.changes:
                             assert c.text_en or c.text_cn
+
+
+def test_en_block_body_preserves_structure():
+    """Generic block bodies keep paragraphs and list items instead of being
+    flattened to a single space-joined string."""
+    patches = load("en_2026_08_11.html", "en")
+    p = patches[0]
+    blocks = {b.title: b for s in p.sections for b in s.blocks}
+
+    revamp = blocks["Battle Pass Revamp"]
+    assert "\n\n" in revamp.body  # intro paragraph separated from the bullet list
+    assert "\n- Choose your path" in revamp.body  # list items keep their "- " prefix
+
+    subroles = blocks["Subroles"]
+    assert subroles.body == "Flanker\n\n- Additional healing from health packs reduced from 75 to 50."
+
+
+def test_en_hero_and_ability_icons_captured():
+    patches = load("en_2026_08_11.html", "en")
+    hero = next(h for s in patches[0].sections for h in s.heroes if h.name_en == "Domina")
+    assert hero.icon and hero.icon.startswith("https://") and hero.icon.endswith(".png")
+    assert hero.abilities and hero.abilities[0].icon
+    assert hero.abilities[0].icon.startswith("https://")
+
+
+def test_cn_hero_and_ability_icons_captured():
+    patches = load("cn_2026_08_12.html", "cn")
+    hero = next(h for s in patches[0].sections for h in s.heroes)
+    assert hero.icon and "netease" in hero.icon
+    assert hero.abilities and "netease" in hero.abilities[0].icon
+
+
+def test_legacy_raw_text_preserves_line_structure():
+    patches = load("en_2016_05.html", "en")
+    rt = patches[0].raw_text
+    assert rt and "\n\n" in rt  # paragraphs separated by blank lines
+    assert "\n- " in rt  # list items keep their "- " markers

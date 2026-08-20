@@ -22,6 +22,9 @@ jobs:
       - name: Full scan (EN 2016-05.., CN 2025-02..)
         run: python tools/run.py --data data
 
+      - name: Download patch icons
+        run: python tools/download_icons.py --data data --out web/assets || true
+
       - name: Commit if anything changed
         run: |
           if [ -n "$(git status --porcelain)" ]; then

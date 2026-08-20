@@ -163,6 +163,26 @@ def test_is_cosmetic_diff_legacy_raw_text():
     assert is_cosmetic_diff(deep_diff(old, edited), old, edited) is False
 
 
+def test_clean_legacy_text_is_whitespace_agnostic():
+    """Newline-preserved raw_text (post-migration) must clean to the same
+    content as the legacy single-line variant."""
+    import re
+
+    multi = re.sub(r" ", "\n", _CHROME_OLD)
+    assert "\n" in multi
+    assert clean_legacy_text(multi) == clean_legacy_text(_CHROME_OLD)
+
+
+def test_deep_diff_skips_icon_fields():
+    """Icon URL churn (enriched data, like slug) must not surface as a diff."""
+    old = {"sections": [{"heroes": [
+        {"slug": "d-mon", "icon": "https://a/x.png", "general": ["x"]}]}]}
+    new = {"sections": [{"heroes": [
+        {"slug": "d-mon", "icon": "https://b/y.png", "general": ["y"]}]}]}
+    entries = deep_diff(old, new)
+    assert [e.path for e in entries] == ["sections[0].heroes[0].general[0]"]
+
+
 def test_detect_new_modified_unchanged():
     manifest = {make_patch().id: {"hash": patch_hash(make_patch())}}
     # new id

@@ -34,6 +34,7 @@ const document = {
 
 function findHtml(el, re) {
   if (re.test(el.innerHTML || "")) return true;
+  if (re.test(el.className || "")) return true;
   return el.children.some((c) => findHtml(c, re));
 }
 
@@ -85,9 +86,17 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
     results.langButtons = document.getElementById("lang-switch").children.length;
     results.patchSections = document.getElementById("patch-body").children.length;
 
+    location.search = "?id=en-2026-08-14-1&lang=en";
+    await initPatch();
+    const modernBody = document.getElementById("patch-body");
+    results.patchHasAvatar = findHtml(modernBody, /hero-avatar/);
+    results.patchHasChangeList = findHtml(modernBody, /change-list/);
+    results.patchHasAbilityIcon = findHtml(modernBody, /ability-icon/);
+
     location.search = "?id=en-2016-05-27-1&lang=en";
     await initPatch();
     results.patchEdited = document.getElementById("patch-edits").innerHTML || "";
+    results.patchHasRawText = findHtml(document.getElementById("patch-body"), /raw-text/);
 
     location.search = "?slug=soldier-76";
     await initHero();
@@ -114,7 +123,7 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
     results.heroNoHashGroup = groupTitles.every((t) => !/hero-/.test(t));
 
     console.log(JSON.stringify(results, null, 1));
-    if (results.indexPatches !== 341) fail.push("indexPatches=" + results.indexPatches);
+    if (results.indexPatches !== 342) fail.push("indexPatches=" + results.indexPatches);
     if (results.filterChips !== 6) fail.push("filterChips=" + results.filterChips);
     if (!results.firstCardHref.includes("entry.html?hero=")) fail.push("firstCardHref=" + results.firstCardHref);
     if (results.entryCards !== 1579) fail.push("entryCards=" + results.entryCards);
@@ -126,6 +135,10 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
     if (results.heroEntryCards !== 39) fail.push("hero entry cards=" + results.heroEntryCards);
     if (results.langButtons !== 2) fail.push("langButtons=" + results.langButtons);
     if (!results.patchTitle) fail.push("empty patch title");
+    if (!results.patchHasAvatar) fail.push("patch hero avatar missing");
+    if (!results.patchHasChangeList) fail.push("patch change-list missing");
+    if (!results.patchHasAbilityIcon) fail.push("patch ability icon missing");
+    if (!results.patchHasRawText) fail.push("legacy raw-text block missing");
     if (!/官方事后编辑/.test(results.patchEdited)) fail.push("patch edited badge=" + results.patchEdited);
     if (!results.heroHasWeapon || !results.heroHasStim) fail.push("weapon/stim group missing");
     if (!results.heroHasAttr) fail.push("hero attribute group missing");

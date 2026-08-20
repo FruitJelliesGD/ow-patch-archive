@@ -77,10 +77,10 @@ def clean_legacy_text(text: str) -> str:
     modified. The stored raw_text keeps the full page text; only the hash bag
     is cleaned.
     """
-    cleaned = text
-    # regex first: the variant-tolerant boilerplate blocks carry their own tail
-    # ("Please note that some changes..."), which must still be present when
-    # the block regex matches; the phrase pass below handles standalone pieces
+    cleaned = re.sub(r"\s+", " ", text).strip()
+    # the boilerplate/pagination regexes match literal single spaces, so fold
+    # whitespace BEFORE cleaning: raw_text now preserves line structure and the
+    # chrome phrases still match regardless of paragraph/line boundaries
     for pattern in _LEGACY_BOILERPLATE_RES:
         cleaned = pattern.sub("", cleaned)
     for phrase in _LEGACY_CHROME_PHRASES:
@@ -222,7 +222,9 @@ def deep_diff(old: dict, new: dict) -> list[DiffEntry]:
     def walk(a: object, b: object, path: str) -> None:
         if isinstance(a, dict) and isinstance(b, dict):
             for key in sorted(set(a) | set(b)):
-                if key == "hash":
+                # hash is recomputed per parse; icon is enriched data (like slug)
+                # whose churn must never surface as a content edit
+                if key in ("hash", "icon"):
                     continue
                 walk(a.get(key), b.get(key), f"{path}.{key}" if path else key)
         elif isinstance(a, list) and isinstance(b, list):

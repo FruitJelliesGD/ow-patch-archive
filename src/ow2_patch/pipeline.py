@@ -72,12 +72,19 @@ def run_pipeline(
     data_dir: pathlib.Path,
     months: list[tuple[str, int, int]] | None = None,
     fetch: Fetcher | None = None,
+    force_rewrite: bool = False,
 ) -> RunResult:
-    """Fetch and persist patches; writes only changed patches and rebuilt hero files."""
+    """Fetch and persist patches; writes only changed patches and rebuilt hero files.
+
+    force_rewrite bypasses change detection: every parsed patch is re-enriched and
+    re-persisted (JSON + Markdown) with its manifest hash refreshed, without
+    changelog entries or diffs. Used for one-time format migrations after a
+    parser change; the manifest hash stays stable for the same parser output.
+    """
     fetch = fetch or Fetcher()
     resolver = NameResolver(data_dir / "names.json")
     manifest = load_manifest(data_dir)
-    from .diff import ensure_hash_schema
+    from .diff import ensure_hash_schema, patch_hash
 
     ensure_hash_schema(data_dir, manifest)
     result = RunResult()
@@ -106,16 +113,28 @@ def run_pipeline(
             continue
         parsed.extend(month_patches)
 
+    if force_rewrite:
+        for patch in parsed:
+            _enrich(patch, resolver, result)
+            patch.hash = patch_hash(patch)
+            _write_patch(data_dir, patch)
+            manifest[patch.id] = {
+                "hash": patch.hash,
+                "site": patch.site,
+                "date": patch.date,
+                "title": patch.title,
+                "url": patch.url,
+            }
+        save_manifest(data_dir, manifest)
+        regenerate_all(data_dir)
+        return result
+
     report = detect_changes(parsed, manifest)
     result.events = report.events
 
     for event in report.events:
         patch = event.patch
-        enrich_names(patch, resolver)
-        result.unknown_heroes.extend(resolver.unknown_heroes)
-        result.unknown_abilities.extend(resolver.unknown_abilities)
-        resolver.unknown_heroes.clear()
-        resolver.unknown_abilities.clear()
+        _enrich(patch, resolver, result)
 
         old_dict = _load_patch_dict(data_dir, patch.site, patch.id) if event.kind == "modified" else {}
         if event.kind == "modified":
@@ -152,6 +171,14 @@ def run_pipeline(
         regenerate_all(data_dir)
 
     return result
+
+
+def _enrich(patch: Patch, resolver: NameResolver, result: RunResult) -> None:
+    enrich_names(patch, resolver)
+    result.unknown_heroes.extend(resolver.unknown_heroes)
+    result.unknown_abilities.extend(resolver.unknown_abilities)
+    resolver.unknown_heroes.clear()
+    resolver.unknown_abilities.clear()
 
 
 def regenerate_all(data_dir: pathlib.Path) -> None:

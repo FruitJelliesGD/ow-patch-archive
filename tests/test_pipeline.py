@@ -194,6 +194,28 @@ def test_pipeline_skips_cn_variant_drift(tmp_path):
     assert not (data_dir / "patches" / "cn" / "2026-08-12-1.json").exists()
 
 
+def test_pipeline_force_rewrite_persists_all_without_changelog(tmp_path):
+    """force_rewrite re-persists every parsed patch with a fresh manifest hash,
+    produces no change events and no changelog entries, and is byte-idempotent."""
+    fetcher = StubFetcher()
+    data_dir = tmp_path / "data"
+
+    result = run_pipeline(data_dir, months=MONTHS, fetch=fetcher, force_rewrite=True)
+    assert result.events == []
+    assert not (data_dir / "changelog.jsonl").exists()
+
+    manifest = json.loads((data_dir / "manifest.json").read_text(encoding="utf-8"))
+    assert set(manifest) - {"hash_schema"} == {
+        "en-2026-08-14-1", "en-2026-08-12-1", "cn-2026-08-15-1", "cn-2026-08-13-1"}
+    assert all(meta["hash"].startswith("sha256:")
+               for pid, meta in manifest.items() if pid != "hash_schema")
+
+    before = (data_dir / "patches" / "en" / "2026-08-14-1.json").read_text(encoding="utf-8")
+    run_pipeline(data_dir, months=MONTHS, fetch=fetcher, force_rewrite=True)
+    after = (data_dir / "patches" / "en" / "2026-08-14-1.json").read_text(encoding="utf-8")
+    assert before == after
+
+
 def test_fetch_errors_recorded_non404(tmp_path):
     """A non-404 fetch failure is recorded on RunResult so --fail-on-error can
     surface it; 404 stays silent (it is the normal 'no patches that month')."""

@@ -29,6 +29,7 @@ class AbilityUpdate:
     name_en: str | None = None
     name_cn: str | None = None
     slug: str = ""
+    icon: str | None = None  # official ability icon URL (https only), captured at parse time
     changes: list[Change] = field(default_factory=list)
 
 
@@ -50,6 +51,7 @@ class HeroUpdate:
     name_en: str | None = None
     name_cn: str | None = None
     role: str | None = None
+    icon: str | None = None  # official hero portrait URL (https only), captured at parse time
     dev_note: str | None = None
     general: list[str] = field(default_factory=list)
     perks: list[Perk] = field(default_factory=list)
@@ -120,6 +122,7 @@ def _hero_to_dict(h: HeroUpdate) -> dict:
         "name_en": h.name_en,
         "name_cn": h.name_cn,
         "role": h.role,
+        "icon": h.icon,
         "dev_note": h.dev_note,
         "general": h.general,
         "perks": [_perk_to_dict(p) for p in h.perks],
@@ -143,6 +146,7 @@ def _ability_to_dict(a: AbilityUpdate) -> dict:
         "name_en": a.name_en,
         "name_cn": a.name_cn,
         "slug": a.slug,
+        "icon": a.icon,
         "changes": [_change_to_dict(c) for c in a.changes],
     }
 

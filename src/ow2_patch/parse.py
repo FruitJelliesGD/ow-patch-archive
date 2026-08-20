@@ -11,7 +11,7 @@ from __future__ import annotations
 
 import re
 
-from bs4 import BeautifulSoup, Tag
+from bs4 import BeautifulSoup, NavigableString, Tag
 
 from .model import AbilityUpdate, Change, GenericBlock, HeroUpdate, Patch, Perk, Section
 
@@ -69,7 +69,7 @@ def _parse_patch_chunk(chunk: str, site: str, url: str) -> Patch | None:
             el.decompose()
         return Patch(
             site=site, date=date, url=url, title=title,
-            raw_text=_normalize_text(soup.get_text(" ", strip=True)),
+            raw_text=_rich_text(soup),
         )
     return Patch(site=site, date=date, url=url, title=title,
                  sections=[_parse_section(s, site) for s in sections])
@@ -104,7 +104,7 @@ def _parse_section(fragment: str, site: str) -> Section:
         type="hero_update" if is_hero else "generic_update",
         title=title,
         role=ROLE_MAP.get(title or ""),
-        description=_text(soup.select_one(".PatchNotes-sectionDescription")),
+        description=_rich_text(soup.select_one(".PatchNotes-sectionDescription")),
     )
     for hero_div in soup.select(".PatchNotesHeroUpdate"):
         section.heroes.append(_parse_hero(hero_div, section.role, site))
@@ -112,7 +112,7 @@ def _parse_section(fragment: str, site: str) -> Section:
         section.blocks.append(_parse_generic_block(block_div))
 
     if not section.heroes and not section.blocks and section.description is None:
-        section.description = _normalize_text(soup.get_text(" ", strip=True)) or None
+        section.description = _rich_text(soup) or None
     return section
 
 
@@ -128,7 +128,9 @@ def _parse_hero(hero_div: Tag, role: str | None, site: str) -> HeroUpdate:
 
     hero = HeroUpdate(name_en=name if site == "en" else None,
                       name_cn=name if site == "cn" else None,
-                      role=role, dev_note=dev_note or None)
+                      role=role,
+                      icon=_icon(hero_div, ".PatchNotesHeroUpdate-icon"),
+                      dev_note=dev_note or None)
 
     general_div = body.select_one(".PatchNotesHeroUpdate-generalUpdates")
     if general_div:
@@ -210,7 +212,8 @@ def _perk_status(perk: Perk, site: str) -> str:
 
 def _parse_ability(ab_div: Tag, site: str) -> AbilityUpdate:
     name = _text(ab_div.select_one(".PatchNotesAbilityUpdate-name"))
-    ability = AbilityUpdate(**{f"name_{site}": name or None})
+    ability = AbilityUpdate(**{f"name_{site}": name or None},
+                            icon=_icon(ab_div, ".PatchNotesAbilityUpdate-icon"))
     detail = ab_div.select_one(".PatchNotesAbilityUpdate-detailList")
     if detail:
         for li in detail.find_all("li"):
@@ -238,10 +241,10 @@ def _extract_numbers(change: Change, text: str, site: str) -> None:
 
 def _parse_generic_block(div: Tag) -> GenericBlock:
     title = _text(div.select_one(".PatchNotesGeneralUpdate-title"))
-    body = _text(div.select_one(".PatchNotesGeneralUpdate-description"))
+    body = _rich_text(div.select_one(".PatchNotesGeneralUpdate-description"))
     dev = _text(div.select_one(".PatchNotes-dev"))
     if title is None and body is None:
-        body = _normalize_text(div.get_text(" ", strip=True)) or None
+        body = _rich_text(div) or None
     return GenericBlock(title=title or None, body=body or None, dev=dev or None)
 
 
@@ -253,6 +256,107 @@ def _text(el: Tag | None) -> str | None:
 
 def _normalize_text(text: str) -> str:
     return re.sub(r"\s+", " ", text).strip()
+
+
+# ---------------------------------------------------------------------------
+# Structure-preserving extraction (paragraphs / lists / line breaks)
+# ---------------------------------------------------------------------------
+
+_BLOCK_GROUP_TAGS = {"html", "body", "div", "blockquote", "section", "article", "main",
+                     "table", "tbody", "thead", "tr"}
+_BLOCK_LINE_TAGS = {"p", "h1", "h2", "h3", "h4", "h5", "h6", "li", "td", "th", "dt", "dd"}
+
+
+def _rich_text(el: Tag | None) -> str | None:
+    """Serialize block-level content preserving paragraphs, lists and breaks.
+
+    <p>/headings become paragraph lines, <br> a soft line break, <ul>/<ol> items
+    "- " prefixed lines (nested lists indented 2 spaces per level). Used for
+    generic block bodies, section descriptions and the legacy raw_text fallback
+    so multi-line official content survives parsing instead of being flattened.
+    """
+    if el is None:
+        return None
+    text = _block_lines(el)
+    text = re.sub(r"[ \t]+\n", "\n", text)
+    text = re.sub(r"\n{3,}", "\n\n", text)
+    return text.strip() or None
+
+
+def _block_lines(el, depth: int = 0) -> str:
+    """Recursively serialize block-level children of `el` into rich text blocks."""
+    blocks: list[str] = []
+    for child in el.children:
+        if not isinstance(child, Tag):
+            continue
+        name = child.name
+        if name in ("ul", "ol"):
+            blocks.append(_list_lines(child, depth))
+        elif name in _BLOCK_GROUP_TAGS:
+            blocks.append(_block_lines(child, depth))
+        elif name in _BLOCK_LINE_TAGS:
+            text = _inline_text(child)
+            if text:
+                blocks.append(("  " * depth) + text)
+    return "\n\n".join(b for b in blocks if b)
+
+
+def _list_lines(list_el: Tag, depth: int = 0) -> str:
+    """Serialize a <ul>/<ol> into "- " prefixed lines, nested lists indented."""
+    lines: list[str] = []
+    for li in list_el.find_all("li", recursive=False):
+        text = _li_text(li)
+        if text:
+            lines.append(("  " * depth) + "- " + text)
+        for nested in li.find_all(["ul", "ol"], recursive=False):
+            lines.append(_list_lines(nested, depth + 1))
+    return "\n".join(lines)
+
+
+def _li_text(li: Tag) -> str:
+    """Inline text of an <li>, excluding any nested list (rendered separately)."""
+    parts = []
+    for node in li.children:
+        if isinstance(node, NavigableString):
+            parts.append(str(node))
+        elif isinstance(node, Tag) and node.name not in ("ul", "ol"):
+            parts.append(_inline_text(node))
+    return _normalize_inline("".join(parts))
+
+
+def _inline_text(el) -> str:
+    """Flatten inline content to text; <br> -> newline; media/list tags skipped."""
+    parts = []
+    for node in el.children:
+        if isinstance(node, NavigableString):
+            parts.append(str(node))
+        elif isinstance(node, Tag):
+            name = node.name
+            if name == "br":
+                parts.append("\n")
+            elif name in ("script", "style", "img", "ul", "ol"):
+                continue
+            else:
+                parts.append(_inline_text(node))
+    return _normalize_inline("".join(parts))
+
+
+def _normalize_inline(text: str) -> str:
+    # collapse spaces/tabs/nbsp runs but keep \n (soft breaks) intact
+    return re.sub(r"[ \t\xa0]+", " ", text).strip()
+
+
+def _icon(el: Tag | None, selector: str) -> str | None:
+    """Absolute (http/https) image URL from the first matching <img>, if any."""
+    if el is None:
+        return None
+    img = el.select_one(selector)
+    if img is None:
+        return None
+    src = img.get("src")
+    if not src or not src.startswith(("http://", "https://")):
+        return None
+    return src
 
 
 def _is_dev(el: Tag) -> bool:

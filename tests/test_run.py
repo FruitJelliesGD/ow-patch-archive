@@ -91,6 +91,26 @@ def test_main_fail_on_error_flag(monkeypatch, tmp_path):
     assert run.main(["--data", str(tmp_path / "data")]) == 0
 
 
+def test_main_force_rewrite_flag(monkeypatch, tmp_path):
+    """--force-rewrite persists all patches and writes no changelog (migration)."""
+    class MainStub:
+        def en_month_list(self):
+            return [(2026, 8)]
+
+        def cn_month_list(self):
+            return [(2026, 8)]
+
+        def fetch_month(self, site, year, month):
+            html = (FIXTURES / f"{site}_2026_08.html").read_text(encoding="utf-8")
+            return FetchResult(html=html, url=f"https://x/{site}/{year}/{month}")
+
+    monkeypatch.setattr(run, "Fetcher", lambda: MainStub())
+    data_dir = tmp_path / "data"
+    assert run.main(["--data", str(data_dir), "--force-rewrite"]) == 0
+    assert (data_dir / "patches" / "en" / "2026-08-14-1.json").exists()
+    assert not (data_dir / "changelog.jsonl").exists()
+
+
 def test_recent_months():
     months = [("en", 2026, 8), ("en", 2026, 7), ("en", 2026, 6), ("en", 2026, 5)]
     kept = run.recent_months(months, 2)

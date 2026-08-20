@@ -35,6 +35,59 @@ function numberify(html) {
   return html.replace(/(\d+(?:\.\d+)?\s*→\s*\d+(?:\.\d+)?)/g, '<span class="num">$1</span>');
 }
 
+/* ---------- rich-text rendering (patch detail) ---------- */
+
+// Render structure-preserved parser output: paragraphs separated by blank
+// lines, "- " list items (nested lists indented 2 spaces per level). Every
+// text fragment is escaped; the parser never emits raw HTML.
+function renderRich(el, text) {
+  const paras = String(text == null ? "" : text).split(/\n{2,}/);
+  for (const para of paras) {
+    const trimmed = para.trim();
+    if (!trimmed) continue;
+    if (/^- /.test(trimmed)) {
+      el.appendChild(renderList(trimmed));
+    } else {
+      const p = document.createElement("p");
+      p.innerHTML = numberify(esc(trimmed).replace(/\n/g, "<br>"));
+      el.appendChild(p);
+    }
+  }
+}
+
+function renderList(text) {
+  const ul = document.createElement("ul");
+  const stack = [ul];
+  for (const rawLine of text.split("\n")) {
+    const m = rawLine.match(/^(\s*)- (.*)$/);
+    if (!m) continue;
+    const depth = Math.floor(m[1].length / 2);
+    while (stack.length - 1 > depth) stack.pop();
+    if (stack.length - 1 < depth) {
+      const parent = stack[stack.length - 1];
+      const nested = document.createElement("ul");
+      (parent.lastElementChild || parent).appendChild(nested);
+      stack.push(nested);
+    }
+    const li = document.createElement("li");
+    li.innerHTML = numberify(esc(m[2]).replace(/\n/g, "<br>"));
+    stack[stack.length - 1].appendChild(li);
+  }
+  return ul;
+}
+
+function iconImg(path, alt, cls) {
+  return `<img class="${esc(cls || "")}" src="${esc(path)}" alt="${esc(alt || "")}" loading="lazy" onerror="this.style.display='none'">`;
+}
+
+function heroIconPath(slug) {
+  return `assets/icons/heroes/${esc(slug)}.png`;
+}
+
+function abilityIconPath(heroSlug, abilitySlug) {
+  return `assets/icons/abilities/${esc(heroSlug)}/${esc(abilitySlug)}.png`;
+}
+
 function siteBadges(sites) {
   return (sites || []).map((s) => `<span class="badge ${esc(s)}">${SITE_LABEL[s] || s}</span>`).join(" ");
 }
@@ -514,7 +567,7 @@ async function initPatch() {
     if (section.description) {
       const d = document.createElement("div");
       d.className = "text";
-      d.textContent = section.description;
+      renderRich(d, section.description);
       body.appendChild(d);
     }
     for (const hero of section.heroes || []) {
@@ -530,7 +583,7 @@ async function initPatch() {
       if (block.body) {
         const p = document.createElement("div");
         p.className = "text";
-        p.textContent = block.body;
+        renderRich(p, block.body);
         b.appendChild(p);
       }
       if (block.dev) {
@@ -544,24 +597,35 @@ async function initPatch() {
     sec.appendChild(body);
     main.appendChild(sec);
   }
+  if (patch.raw_text) {
+    // OW1-era pages degrade to a single structure-preserved text blob
+    const rt = document.createElement("div");
+    rt.className = "raw-text";
+    rt.textContent = patch.raw_text;
+    main.appendChild(rt);
+  }
 }
 
 function heroBlock(hero) {
   const block = document.createElement("div");
   block.className = "hero-block";
   const name = hero.name_cn || hero.name_en || hero.slug;
-  block.innerHTML = `<h3 class="hero-block-name">${esc(name)}</h3>`;
+  block.innerHTML = `<h3 class="hero-block-name">${hero.slug ? iconImg(heroIconPath(hero.slug), name, "hero-avatar") : ""}${esc(name)}</h3>`;
   if (hero.dev_note) {
     const d = document.createElement("div");
-    d.className = "text en-text";
+    d.className = "text en-text dev-note";
     d.textContent = hero.dev_note;
     block.appendChild(d);
   }
   for (const line of hero.general || []) {
-    const d = document.createElement("div");
-    d.className = "text";
-    d.textContent = typeof line === "string" ? line : (line.text_cn || line.text_en || "");
-    block.appendChild(d);
+    const text = typeof line === "string" ? line : (line.text_cn || line.text_en || "");
+    if (!text) continue;
+    const ul = document.createElement("ul");
+    ul.className = "change-list";
+    const li = document.createElement("li");
+    li.innerHTML = numberify(esc(text));
+    ul.appendChild(li);
+    block.appendChild(ul);
   }
   for (const perk of hero.perks || []) {
     const p = document.createElement("div");
@@ -575,11 +639,15 @@ function heroBlock(hero) {
     h.appendChild(status);
     p.appendChild(h);
     const lines = (perk.lines_cn && perk.lines_cn.length ? perk.lines_cn : perk.lines_en) || [];
-    for (const line of lines) {
-      const d = document.createElement("div");
-      d.className = "text";
-      d.textContent = line;
-      p.appendChild(d);
+    if (lines.length) {
+      const ul = document.createElement("ul");
+      ul.className = "change-list";
+      for (const line of lines) {
+        const li = document.createElement("li");
+        li.innerHTML = numberify(esc(line));
+        ul.appendChild(li);
+      }
+      p.appendChild(ul);
     }
     if (perk.lines_cn?.length && perk.lines_en?.length) {
       const d = document.createElement("div");
@@ -592,12 +660,18 @@ function heroBlock(hero) {
   for (const ability of hero.abilities || []) {
     const a = document.createElement("div");
     a.className = "entry";
-    a.innerHTML = `<div class="text"><strong>${esc(ability.name_cn || ability.name_en || "")}</strong></div>`;
-    for (const change of ability.changes || []) {
-      const d = document.createElement("div");
-      d.className = "text";
-      d.innerHTML = numberify(esc(change.text_cn || change.text_en || ""));
-      a.appendChild(d);
+    const aname = ability.name_cn || ability.name_en || "";
+    a.innerHTML = `<div class="text"><strong>${ability.slug && hero.slug ? iconImg(abilityIconPath(hero.slug, ability.slug), aname, "ability-icon") : ""}${esc(aname)}</strong></div>`;
+    const changes = ability.changes || [];
+    if (changes.length) {
+      const ul = document.createElement("ul");
+      ul.className = "change-list";
+      for (const change of changes) {
+        const li = document.createElement("li");
+        li.innerHTML = numberify(esc(change.text_cn || change.text_en || ""));
+        ul.appendChild(li);
+      }
+      a.appendChild(ul);
     }
     block.appendChild(a);
   }
