@@ -1,10 +1,10 @@
-name: monitor
+name: watchdog
 
 on:
   schedule:
-    # daily full scan: catches edits to OLD patch notes (new patches are picked up
-    # by monitor-fast every 30 minutes; watchdog self-heals any miss)
-    - cron: "23 3 * * *"
+    # daily freshness check ~2h after monitor's full scan (03:23 UTC): validates the
+    # scan caught everything and self-heals any miss automatically (no manual backfill)
+    - cron: "13 5 * * *"
   workflow_dispatch:
 
 permissions:
@@ -12,11 +12,11 @@ permissions:
   issues: write
 
 concurrency:
-  group: monitor
+  group: watchdog
   cancel-in-progress: false
 
 jobs:
-  monitor:
+  watchdog:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -28,9 +28,9 @@ jobs:
       - name: Install
         run: pip install .
 
-      - name: Run pipeline (full scan of all months)
-        id: pipeline
-        run: python tools/run.py --data data --notify-out notify-full.json --changed-out notify-changed.json --send-email --fail-on-error
+      - name: Run watchdog (probe + self-heal)
+        id: watchdog
+        run: python tools/watchdog.py --data data --notify-out watchdog-notify.json --changed-out watchdog-changed.json --send-email
         env:
           SMTP_HOST: ${{ secrets.SMTP_HOST }}
           SMTP_PORT: ${{ secrets.SMTP_PORT }}
@@ -38,27 +38,25 @@ jobs:
           SMTP_PASS: ${{ secrets.SMTP_PASS }}
           SMTP_TO: ${{ secrets.SMTP_TO }}
 
-      # any persisted data (new / real edit / cosmetic name-chrome drift) is committed;
-      # cosmetic-only runs produce no notify file and therefore no Issue or email
-      - name: Commit new/changed data
-        if: hashFiles('notify-changed.json') != ''
+      - name: Commit self-healed data
+        if: hashFiles('watchdog-changed.json') != ''
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
-          git commit -m "data: full-scan archive update ($(date -u +%Y-%m-%dT%H:%MZ))"
+          git commit -m "data: watchdog self-heal archive update ($(date -u +%Y-%m-%dT%H:%MZ))"
           git push
 
       - name: Open GitHub issue
-        if: hashFiles('notify-full.json') != ''
+        if: hashFiles('watchdog-notify.json') != ''
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          TITLE=$(python -c "import json,sys;sys.stdout.reconfigure(encoding='utf-8');print(json.load(open('notify-full.json',encoding='utf-8'))['title'])")
-          python -c "import json,sys;sys.stdout.reconfigure(encoding='utf-8');print(json.load(open('notify-full.json',encoding='utf-8'))['body_md'])" > /tmp/issue-body.md
+          TITLE=$(python -c "import json,sys;sys.stdout.reconfigure(encoding='utf-8');print(json.load(open('watchdog-notify.json',encoding='utf-8'))['title'])")
+          python -c "import json,sys;sys.stdout.reconfigure(encoding='utf-8');print(json.load(open('watchdog-notify.json',encoding='utf-8'))['body_md'])" > /tmp/issue-body.md
           gh issue create --title "$TITLE" --body-file /tmp/issue-body.md
 
-      # a failed scan (fetch/parse errors surfaced by --fail-on-error) must not be
+      # a failed probe/self-heal (exit 2) or pipeline failure (exit 1) must not be
       # silent: open one deduped alert Issue shared across monitor/monitor-fast/watchdog
       - name: Open alert issue (deduped)
         if: failure()
@@ -69,5 +67,5 @@ jobs:
             echo "open alert issue exists; skipping"
           else
             gh issue create --title "守望先锋监控异常" \
-              --body "监控失败于 $(date -u +%Y-%m-%dT%H:%MZ)。日志: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+              --body "看门狗失败于 $(date -u +%Y-%m-%dT%H:%MZ)。日志: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
           fi

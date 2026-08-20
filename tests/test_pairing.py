@@ -77,7 +77,7 @@ def test_seq_only_matches_exact():
 
 def test_real_data_pairing_invariants():
     en, cn = patch_meta_from_manifest(DATA)
-    assert len(en) == 341 and len(cn) == 54
+    assert len(en) == 342 and len(cn) == 54
     result = pair_patches(en, cn)
     assert len(result.pairs) >= 45, f"only {len(result.pairs)} pairs"
     # every CN patch appears at most once across pairs + unpaired

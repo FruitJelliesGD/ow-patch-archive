@@ -34,6 +34,9 @@ class RunResult:
     events: list[ChangeEvent] = field(default_factory=list)
     unknown_heroes: list[tuple[str, str]] = field(default_factory=list)
     unknown_abilities: list[tuple[str, str]] = field(default_factory=list)
+    # non-404 fetch failures: (site, year, month, error) — recorded so callers
+    # can fail loudly (--fail-on-error) instead of silently reporting 0 changes
+    fetch_errors: list[tuple[str, int, int, str]] = field(default_factory=list)
 
 
 def all_months(fetcher: Fetcher) -> list[tuple[str, int, int]]:
@@ -89,6 +92,7 @@ def run_pipeline(
         except Exception as exc:
             # 404 (CN 无补丁月份) is expected; anything else should be visible in logs
             if "404" not in str(exc):
+                result.fetch_errors.append((site, year, month, str(exc)))
                 print(f"WARN: fetch failed {site} {year}-{month:02d}: {exc}")
             continue
         result.fetched_months += 1

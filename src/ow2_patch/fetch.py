@@ -30,6 +30,19 @@ class FetchResult:
     url: str
 
 
+def _pick_encoding(resp) -> str:
+    """Trust a declared charset; only sniff when the header omitted one.
+
+    requests falls back to ISO-8859-1 when no charset is declared, and chardet
+    misdetects UTF-8-heavy pages as Windows-1252 — overriding a declared utf-8
+    with apparent_encoding corrupted the parsed text into mojibake.
+    """
+    declared = (resp.encoding or "").lower()
+    if declared in ("iso-8859-1", "latin-1"):
+        return resp.apparent_encoding or "utf-8"
+    return declared or "utf-8"
+
+
 class FetchError(RuntimeError):
     pass
 
@@ -60,7 +73,7 @@ class Fetcher:
                 if resp.status_code == 404:
                     raise FetchError(f"404: {url}")
                 resp.raise_for_status()
-                resp.encoding = resp.apparent_encoding or resp.encoding
+                resp.encoding = _pick_encoding(resp)
                 return resp.text
             except requests.RequestException as exc:
                 last_err = exc

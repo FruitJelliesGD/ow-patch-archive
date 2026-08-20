@@ -10,10 +10,16 @@
 
 ## 功能
 
-- **两级自动轮询**：
-  - `monitor-fast` 每 **5 分钟**快扫最近 2 个月页面，快速发现**新补丁**；
-  - `monitor` 每天 1 次全量扫描全部月份，捕获**旧补丁被官方修改**。
-  （两个工作流均可通过 `workflow_dispatch` 手动触发。）
+- **两级自动轮询 + 自愈看门狗**：
+  - `monitor-fast` 每 **30 分钟**快扫最近 2 个月页面，快速发现**新补丁**（GitHub Actions 的
+    schedule 事件是 best-effort，`*/5` 实测中位数约 28 分钟才投递一次，故频率现实化为 `*/30`）；
+  - `monitor` 每天 1 次全量扫描全部月份，捕获**旧补丁被官方修改**；
+  - `watchdog` 每天 1 次**自愈检查**：探测官方站点最新补丁日期并与归档比对，发现漏检时
+    自动跑全量扫描补录并补发提醒——**不需要手动补录**。
+  （三个工作流均可通过 `workflow_dispatch` 手动触发。）
+- **失败可见化**：任一工作流遇到非 404 抓取失败（`--fail-on-error`）会以非零码结束，
+  并打开**去重的告警 Issue**（标题前缀"守望先锋监控异常"，三个工作流共享，最多一个 open），
+  不再出现"全绿但什么都没检测"的静默故障。
 - **内容级变化检测**：对每条补丁计算规范化哈希并与 `data/manifest.json` 比对——
   新增补丁 / 旧补丁内容被修改都会触发提交 + Issue + 邮件，并把变更明细写入 `data/changelog.jsonl`。
 - **格式化归档**：`data/archive/{en,cn}/YYYY/MM/` 下是每个补丁的可读 Markdown；
@@ -27,8 +33,9 @@
 ## 目录结构
 
 ```
-src/ow2_patch/       抓取/解析/名称映射/配对/映射学习/变化检测/通知/流水线
+src/ow2_patch/       抓取/解析/名称映射/配对/映射学习/变化检测/通知/流水线/新鲜度探测
 tools/run.py         流水线入口（CI 使用）
+tools/watchdog.py    自愈看门狗：探测官方站最新补丁日期，漏检时自动全量扫描补录
 tools/query.py       CLI 查询工具
 tools/rebuild.py     全量离线重生成（重分类/重富化/配对/映射/英雄轨迹）
 web/                 GitHub Pages 查询站（时间浏览 + 词条检索）
@@ -44,7 +51,7 @@ data/               归档数据（全部提交入库）
   manifest.json     内容哈希状态
   changelog.jsonl   官方事后编辑记录
   names.json        EN/CN 名称映射表（可人工补充）
-.github/workflows/  monitor / monitor-fast / backfill / pages / ci
+.github/workflows/  monitor / monitor-fast / watchdog / backfill / pages / ci
 ```
 
 ## 部署步骤
@@ -55,10 +62,12 @@ data/               归档数据（全部提交入库）
    ```
    （合并到 `main` 后，`monitor-fast`/`monitor` 定时任务与 `pages` 部署即开始工作。）
 
-> **注意（私有仓库）**：`monitor-fast` 每 5 分钟运行一次，每次约 1 分钟。
-> 私有仓库的 GitHub Actions 免费额度为 1000 分钟/月，5 分钟频率约 3 天就会用尽。
-> 若仓库保持**公开**则 Actions 分钟数免费不限量；否则建议把 `monitor-fast` 的频率调低
-> （改 `.github/workflows/monitor-fast.yml` 里的 cron，如 `*/15 * * * *`）。
+> **注意（私有仓库）**：私有仓库的 GitHub Actions 免费额度为 1000 分钟/月；
+> 若仓库保持**公开**则 Actions 分钟数免费不限量。
+> 另注意：GitHub 的 `schedule` 事件是 best-effort——高负载时会延迟甚至丢弃任务
+> （官方文档：https://docs.github.com/en/actions/reference/events-that-trigger-workflows ），
+> 本仓库实测 `*/5` 的 monitor-fast 实际投递间隔中位数约 28 分钟，故已现实化为 `*/30`；
+> 漏检由每日 `watchdog` 自愈兜底，无需手动补录。
 
 2. **启用 GitHub Pages**：仓库 Settings → Pages → Source 选 **GitHub Actions**。
 
@@ -79,6 +88,7 @@ pip install -e ".[dev]"
 
 pytest -q                                            # 单元测试
 python tools/run.py --data data --months 3           # 增量扫描最近 3 个月（两站）
+python tools/watchdog.py --data data                 # 自愈看门狗：探测漏检并自动补录
 python tools/query.py 士兵76                          # 查询英雄改动历史
 python tools/query.py --site en --date 2026-08-12     # 查看单个补丁
 python tools/serve.py                                 # 本地预览查询站 (http://127.0.0.1:8000)
@@ -96,3 +106,7 @@ python tools/serve.py                                 # 本地预览查询站 (h
 
 - 英文与中文站同一补丁的发布日期可能相差一天（如 EN 8/14 vs CN 8/15），两站独立归档，查询站按英雄聚合。
 - Stadium 模式的外观物品块（"xxx Mask"）不进入英雄轨迹，但完整保留在归档 Markdown 中。
+- 看门狗按"站点最新补丁日期 vs 归档最新日期"判断漏检；**同日新增的第二个补丁**（同日期不同 seq）
+  日期相等不会触发自愈，由 `monitor-fast`/`monitor` 的哈希比较兜底。
+- 公开仓库的 scheduled workflow 在**连续 60 天无仓库活动**时会自动停用（官方行为）；若长时间无提交，
+  需在 Actions 页面重新启用。监控本身每天都会因数据变化/告警而活跃，通常不会触发。

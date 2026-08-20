@@ -2,9 +2,10 @@ name: monitor-fast
 
 on:
   schedule:
-    # GitHub Actions 最快支持每 5 分钟一次；只抓最近 2 个月，用于快速发现新补丁。
-    # 注意：调度可能延迟数分钟；私有仓库 Actions 分钟数消耗较快（见 README）。
-    - cron: "*/5 * * * *"
+    # GitHub Actions schedule 事件是 best-effort：*/5 实测中位数约 28 分钟才投递一次
+    # （见 docs/compose/spec/monitor-hardening.md），*/30 与现实节奏一致。
+    # 漏检由每日 watchdog 自愈兜底；告警 Issue 去重。
+    - cron: "*/30 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -30,7 +31,7 @@ jobs:
 
       - name: Run pipeline (fast scan of recent 2 months)
         id: pipeline
-        run: python tools/run.py --data data --months 2 --notify-out notify-fast.json --changed-out notify-changed-fast.json --send-email
+        run: python tools/run.py --data data --months 2 --notify-out notify-fast.json --changed-out notify-changed-fast.json --send-email --fail-on-error
         env:
           SMTP_HOST: ${{ secrets.SMTP_HOST }}
           SMTP_PORT: ${{ secrets.SMTP_PORT }}
@@ -55,3 +56,17 @@ jobs:
           TITLE=$(python -c "import json,sys;sys.stdout.reconfigure(encoding='utf-8');print(json.load(open('notify-fast.json',encoding='utf-8'))['title'])")
           python -c "import json,sys;sys.stdout.reconfigure(encoding='utf-8');print(json.load(open('notify-fast.json',encoding='utf-8'))['body_md'])" > /tmp/issue-body.md
           gh issue create --title "$TITLE" --body-file /tmp/issue-body.md
+
+      # a failed scan (fetch/parse errors surfaced by --fail-on-error) must not be
+      # silent: open one deduped alert Issue shared across monitor/monitor-fast/watchdog
+      - name: Open alert issue (deduped)
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ "$(gh issue list --state open --search '守望先锋监控异常 in:title' --json number --jq 'length')" -gt 0 ]; then
+            echo "open alert issue exists; skipping"
+          else
+            gh issue create --title "守望先锋监控异常" \
+              --body "监控失败于 $(date -u +%Y-%m-%dT%H:%MZ)。日志: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          fi

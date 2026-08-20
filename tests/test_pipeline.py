@@ -194,6 +194,37 @@ def test_pipeline_skips_cn_variant_drift(tmp_path):
     assert not (data_dir / "patches" / "cn" / "2026-08-12-1.json").exists()
 
 
+def test_fetch_errors_recorded_non404(tmp_path):
+    """A non-404 fetch failure is recorded on RunResult so --fail-on-error can
+    surface it; 404 stays silent (it is the normal 'no patches that month')."""
+    from ow2_patch.fetch import FetchError
+
+    class RaisingFetcher(StubFetcher):
+        def fetch_month(self, site, year, month):
+            if site == "cn":
+                raise FetchError("boom: connection reset")
+            return super().fetch_month(site, year, month)
+
+    result = run_pipeline(tmp_path / "data", months=MONTHS, fetch=RaisingFetcher())
+    assert result.fetched_months == 1
+    assert result.fetch_errors == [("cn", 2026, 8, "boom: connection reset")]
+    assert [e.patch.site for e in result.events] == ["en", "en"]  # EN still processed
+
+
+def test_fetch_404_is_not_recorded(tmp_path):
+    from ow2_patch.fetch import FetchError
+
+    class NotFoundFetcher(StubFetcher):
+        def fetch_month(self, site, year, month):
+            if site == "cn":
+                raise FetchError("404: https://x/cn/2026/08")
+            return super().fetch_month(site, year, month)
+
+    result = run_pipeline(tmp_path / "data", months=MONTHS, fetch=NotFoundFetcher())
+    assert result.fetch_errors == []
+    assert result.fetched_months == 1
+
+
 def test_unknown_names_recorded_not_fatal(tmp_path):
     fetcher = StubFetcher()
     # rename a hero in the EN page to something unknown
