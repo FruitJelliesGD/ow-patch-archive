@@ -51,7 +51,11 @@ def main(argv: list[str] | None = None) -> int:
         print(f"ERROR: freshness probe failed: {exc}")
         return 2
 
-    manifest = load_manifest(args.data)
+    try:
+        manifest = load_manifest(args.data)
+    except Exception as exc:
+        print(f"ERROR: cannot read archive manifest: {exc}")
+        return 2
     archived = {s: archive_newest_date(manifest, s) for s in ("en", "cn")}
     stale_sites = [s for s in ("en", "cn") if is_stale(probes[s], archived[s])]
 

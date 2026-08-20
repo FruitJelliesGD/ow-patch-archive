@@ -65,7 +65,8 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          if [ "$(gh issue list --state open --search '守望先锋监控异常 in:title' --json number --jq 'length')" -gt 0 ]; then
+          COUNT=$(gh issue list --state open --search '守望先锋监控异常 in:title' --limit 100 --json number --jq 'length' 2>/dev/null || echo 0)
+          if [ "$COUNT" -gt 0 ]; then
             echo "open alert issue exists; skipping"
           else
             gh issue create --title "守望先锋监控异常" \
