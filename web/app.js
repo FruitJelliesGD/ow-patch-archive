@@ -691,7 +691,7 @@ async function initPatch() {
     sec.className = "timeline-group";
     const role = ROLE_LABEL[section.role] || "";
     const secTitle = `${section.title || ""}${role ? `（${role}）` : ""}`;
-    sec.innerHTML = `<h2 id="sec-${secIdx}">${esc(secTitle)}</h2>`;
+    if (secTitle) sec.innerHTML = `<h2 id="sec-${secIdx}">${esc(secTitle)}</h2>`;
     tocEntries.push({ id: `sec-${secIdx}`, text: secTitle, level: 1 });
     const body = document.createElement("div");
     if (section.description) {
