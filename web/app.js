@@ -533,6 +533,7 @@ function buildToc(entries) {
   if (!entries.length) { toc.hidden = true; return; }
   toc.hidden = false;
   for (const e of entries) {
+    if (!e.text) continue; // empty-titled blocks (rare) get no TOC link
     const a = document.createElement("a");
     a.href = "#" + e.id;
     a.textContent = e.text;

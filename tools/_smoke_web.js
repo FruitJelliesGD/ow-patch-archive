@@ -94,7 +94,7 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
     results.patchHasAvatar = findHtml(modernBody, /hero-avatar/);
     results.patchHasChangeList = findHtml(modernBody, /change-list/);
     results.patchHasAbilityIcon = findHtml(modernBody, /ability-icon/);
-    results.patchHasBold = findHtml(modernBody, /<strong>/);
+    results.patchHasBold = findHtml(modernBody, /strong>Choose your path/);
     results.tocChildren = document.getElementById("patch-toc").children.length;
     results.tocHasSec0 = document.getElementById("patch-toc").children.some((a) => a.href === "#sec-0");
 
