@@ -31,6 +31,17 @@ function fmtNum(v) {
   return typeof v === "number" ? (Number.isInteger(v) ? v : v.toFixed(2)) : v;
 }
 
+// UTC ISO timestamp -> "YYYY-MM-DD HH:mm UTC±H" in the viewer's local timezone
+function fmtLocalTs(ts) {
+  const d = new Date(ts);
+  if (isNaN(d) || !/T/.test(String(ts))) return ts || "";
+  const pad = (n) => String(n).padStart(2, "0");
+  const off = -d.getTimezoneOffset(); // minutes east of UTC (+480 for UTC+8)
+  const zone = `UTC${off >= 0 ? "+" : "-"}${Math.floor(Math.abs(off) / 60)}`
+    + (off % 60 ? ":" + pad(Math.abs(off) % 60) : "");
+  return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())} ${pad(d.getHours())}:${pad(d.getMinutes())} ${zone}`;
+}
+
 function numberify(html) {
   return html.replace(/(\d+(?:\.\d+)?\s*→\s*\d+(?:\.\d+)?)/g, '<span class="num">$1</span>');
 }
@@ -126,7 +137,7 @@ function siteBadges(sites) {
 
 async function initIndex() {
   const data = await fetchJSON("data/patches_index.json");
-  document.getElementById("updated").textContent = (data.updated || "").slice(0, 16) || "-";
+  document.getElementById("updated").textContent = fmtLocalTs(data.updated) || "-";
   const patches = data.patches || [];
 
   // group by year -> month
@@ -341,7 +352,7 @@ function entryNode(e, opts = {}) {
     : `<span class="patch-link">${e.patch_title ? esc(e.patch_title) : esc(e.patch)}</span>`;
   const edits = opts.edits || [];
   const editBadge = edits.length
-    ? `<span class="badge edited" title="${esc(edits.map((x) => (x.ts || "").slice(0, 16) + (x.title ? " · " + x.title : "")).join("；"))}">官方事后编辑</span>`
+    ? `<span class="badge edited" title="${esc(edits.map((x) => fmtLocalTs(x.ts) + (x.title ? " · " + x.title : "")).join("；"))}">官方事后编辑</span>`
     : "";
   head.innerHTML = `
     <span class="badge ${esc(e.site)}">${SITE_LABEL[e.site]}</span>
@@ -655,9 +666,9 @@ async function initPatch() {
   const editEvents = (editsByPatch[meta.patch_id_en] || []).concat(editsByPatch[meta.patch_id_cn] || []);
   if (editEvents.length) {
     const latest = editEvents.reduce((a, b) => ((b.ts || "") > (a.ts || "") ? b : a));
-    const titles = editEvents.map((x) => (x.title || x.ts || "")).filter(Boolean).join("；");
+    const titles = editEvents.map((x) => (x.title || fmtLocalTs(x.ts) || "")).filter(Boolean).join("；");
     document.getElementById("patch-edits").innerHTML =
-      `<span class="badge edited" title="${esc(titles)}">官方事后编辑 ${editEvents.length} 次${latest.ts ? `（最近 ${esc(latest.ts.slice(0, 16))}）` : ""}</span>`;
+      `<span class="badge edited" title="${esc(titles)}">官方事后编辑 ${editEvents.length} 次${latest.ts ? `（最近 ${esc(fmtLocalTs(latest.ts))}）` : ""}</span>`;
   }
 
   // language switch

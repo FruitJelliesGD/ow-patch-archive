@@ -62,6 +62,7 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
       }
     }
     results.indexPatches = patchEntries;
+    results.updatedFmt = /^\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2} UTC[+-]\\d+(?::\\d{2})?$/.test(document.getElementById("updated").textContent);
 
     await initEntries();
     results.filterChips = document.getElementById("filters").children.length;
@@ -102,6 +103,7 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
     location.search = "?id=en-2016-05-27-1&lang=en";
     await initPatch();
     results.patchEdited = document.getElementById("patch-edits").innerHTML || "";
+    results.editTimeLocal = /最近 \\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2} UTC[+-]\\d+/.test(results.patchEdited);
     results.legacyStructured = findHtml(document.getElementById("patch-article"), /timeline-group/);
     results.legacyNoRawText = !findHtml(document.getElementById("patch-article"), /raw-text/);
 
@@ -161,7 +163,9 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
     if (!results.legacyHasChangeList) fail.push("legacy change-list missing");
     if (!results.legacyTocVisible) fail.push("legacy toc should be visible");
     if (!results.legacyBastionIcon) fail.push("legacy Bastion icon missing");
+    if (!results.updatedFmt) fail.push("index updated not local time=" + document.getElementById("updated").textContent);
     if (!/官方事后编辑/.test(results.patchEdited)) fail.push("patch edited badge=" + results.patchEdited);
+    if (!results.editTimeLocal) fail.push("patch edit time not local=" + results.patchEdited);
     if (!results.heroHasWeapon || !results.heroHasStim) fail.push("weapon/stim group missing");
     if (!results.heroHasAttr) fail.push("hero attribute group missing");
     if (!results.heroHasValues) fail.push("values chip missing");
