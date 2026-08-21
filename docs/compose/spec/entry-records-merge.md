@@ -1,14 +1,22 @@
 ---
 feature: entry-records-merge
-status: in-progress
+status: delivered
 updated: 2026-08-22
 branch: feat/entry-records-merge
-commits: <base-sha>..<head-sha> # filled at delivery
+commits: 7fa4a29..a8295a4
 ---
 
 # 词条修改记录中英文合并显示（迭代十）
 
 ## Report
+
+**What was built** — 词条详情页（entry.html）与英雄轨迹页（hero.html）的修改记录列表把同一改动的中英文记录**合并为一行、中文优先**：配对补丁（patches_index 的 `p-*` 双 id）产生的两条单站点时间线记录合并为一条，中文文本为主、英文作 `.en-text` 副文本，仅显示中文记录的日期，中文站+英文站双徽标，中英原文链接并示，官方事后编辑徽标取双站并集去重。纯显示层改动（web/app.js + style.css），无数据/解析器变更、无迁移。
+
+合并经 **kind + 计数门控 + 数值指纹**三重保护（设计代理实证：纯位置合并对 `other::` 行有 23% 错配，绝不可用）：仅当双站计数相等且 kind ∈ {ability, weapon, perk} **或** 双方各 1 条、且双方文本数字 token 交集非空时才合并；`other::` 多记录组、计数不等、未配对（287 EN-only）、指纹冲突（实证 juno 2025-07-09 "30%/65%" vs "100/75"）均保持单行。合成记录以 cn 为基、`en_patch` 标记合并，consumed 集合防重复发射，输出保持时间线顺序。hero.html 新增 patches_index 懒加载（失败降级不合并）；两页记录计数 = 合并后行数；`.en-text` 首次激活（此前是死代码）并补次级语言样式。已知限制：同改动被双站分类进不同词条（EN `attr::` vs CN `weapon::`）在词条层不可合并，各自单行。
+
+**Verification** — `node tools/_smoke_web.js` → ALL WEB ASSERTIONS OK（新增：词条页/英雄页合并行双徽标、EN-only 单行保留、双语文本同行、`entryMergedCount=20`、**指纹否决单元断言**（不共享数字对保持两行 + 共享数字对合并，review 实证非空洞））；`pytest -q` → 166 passed（本特性无 Python 改动）；`npx --yes -p playwright node tools/_layout_check.js` → 12/12 PASS；serve 探测 entry.html/hero.html/patches_index.json 均 200；真实数据核对：soldier-76 重脉冲步枪 21→20 行（2025-03-25/26 配对合并、EN-only 单行）、ana `other::` 191→188（仅 3 个 1 对 1 合并）。独立审查两轮：首轮 1 个 critical（指纹否决无提交测试覆盖、可被静默删除）+ 3 项非关键（精确 token 匹配、英雄总览计数、链接文案），全部修复后复审 **0 critical**（含否决断言非空洞性双向实证）。
+
+**Journey log** — ① 纯位置合并在 `other::` 有 23% 错配（499/2133 对无共享数字），合并必须按 kind 门控——ability/weapon/perk 等计数组位置对齐 181/181 实证安全，`other` 仅允许 1 对 1。② 数值指纹否决在全库 10,788 条记录里只触发一次（juno 2025-07-09）——关键守卫若无提交级测试即死代码，smoke 单元断言直接内联调用 app.js 函数（new Function 作用域内）。③ 同改动可被双站分类进不同词条（EN `attr::base_stat` vs CN `weapon::heavy-pulse-rifle`），词条层无法合并——数据层修复不在本迭代。④ 单站点时间线记录从无双语文本，`.en-text` 渲染分支是死代码——合并首次激活须补 CSS。⑤ 合并行消耗集合必须标记**双方**记录（en/cn 顺序随日期差与同日而异），否则对端重复发射。
 
 ## [S1] Problem
 
@@ -71,4 +79,4 @@ commits: <base-sha>..<head-sha> # filled at delivery
 - [x] T3: entryNode 合并行 + .en-text 样式 — acceptance: 合并行双徽标/仅中文日期/EN 原文链接/edits 并集，单行无回归（covers: D1.3 D1.7；depends: T2）
 - [x] T4: initEntry/initHero 接入 + 计数语义 — acceptance: 两页合并显示、hero.html 懒加载降级安全（covers: D1.4 D1.5 D1.6；depends: T3）
 - [x] T5: smoke 断言 + 全量验证 — acceptance: smoke ALL OK、serve 预览词条/英雄页合并正确（covers: 全部；depends: T4）
-- [ ] T6: 独立 review 与规格定稿 — acceptance: review 无 critical、status: delivered（covers: 全部；depends: T5）
+- [x] T6: 独立 review 与规格定稿 — acceptance: review 无 critical、status: delivered（covers: 全部；depends: T5）
