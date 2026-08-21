@@ -10,6 +10,12 @@ const ATTR_LABEL = {
   base_stat: "基础属性", other: "其他",
 };
 const SITE_LABEL = { en: "英文站", cn: "中文站" };
+// mirror of src/ow2_patch/modes.py MODE_LABELS
+const MODE_LABEL = {
+  standard: "常规", quick_play_hacked: "社区模式", april_fools: "愚人节",
+  experiment_6v6: "实验模式", hero_trial: "英雄试玩", ptr: "PTR 测试服",
+  announcement: "公告",
+};
 const STATUS_LABEL = {
   added: "新增", removed: "移除", reworked: "重做", moved: "变更", changed: "调整",
 };
@@ -154,6 +160,11 @@ function siteBadges(sites) {
   return (sites || []).map((s) => `<span class="badge ${esc(s)}">${SITE_LABEL[s] || s}</span>`).join(" ");
 }
 
+function modeBadge(mode) {
+  if (!mode || mode === "standard") return "";
+  return `<span class="badge mode mode-${esc(mode)}">${MODE_LABEL[mode] || mode}</span>`;
+}
+
 /* ---------- time browser (index.html) ---------- */
 
 async function initIndex() {
@@ -191,6 +202,7 @@ async function initIndex() {
         a.innerHTML = `
           <span class="patch-entry-date">${esc(p.date)}</span>
           ${siteBadges(p.sites)}
+          ${modeBadge(p.mode)}
           <span class="patch-entry-title">${esc(title || p.id)}</span>`;
         list.appendChild(a);
       }
@@ -402,40 +414,56 @@ async function initHero() {
   try {
     pairMap = buildPairMap((await fetchJSON("data/patches_index.json")).patches);
   } catch { /* no pairing data: keep single-site rows */ }
-  const rows = mergeEntryRecords(timeline, pairMap);
-  const groups = new Map(); // key -> {dim, title, entries}
-  for (const row of rows) {
-    const e = row.m;
-    const key = entryKey(e);
-    const dim = e.dimension || (e.kind === "perk" ? "perk" : "other");
-    if (!groups.has(key)) groups.set(key, { dim, title: entryTitle(e), entries: [] });
-    groups.get(key).entries.push(row);
-  }
 
+  // the default view is standard-only (special-mode patches must not pollute
+  // the balance history); ?modes=all or the toggle opt into them
+  let showAll = new URLSearchParams(location.search).get("modes") === "all";
   const DIM_ORDER = ["weapon", "ability", "perk", "hero_attr", "other"];
   const main = document.getElementById("timeline");
   const count = document.createElement("p");
   count.className = "sub";
-  count.textContent = `共 ${rows.length} 条记录`;
   main.appendChild(count);
+  const toggle = document.createElement("label");
+  toggle.className = "mode-toggle";
+  toggle.innerHTML = `<input type="checkbox"${showAll ? " checked" : ""}> 包含非常规模式补丁（愚人节/实验/试玩等）`;
+  main.appendChild(toggle);
+  toggle.querySelector("input").addEventListener("change", (ev) => {
+    showAll = ev.target.checked;
+    render();
+  });
 
-  for (const dim of DIM_ORDER) {
-    const dimEntries = [...groups.values()].filter((g) => g.dim === dim);
-    if (!dimEntries.length) continue;
-    const dimSection = document.createElement("section");
-    dimSection.className = "dim-section";
-    dimSection.innerHTML = `<h2 class="dim-title"><span class="badge dim dim-${esc(dim)}">${DIM_LABEL[dim]}</span></h2>`;
-    for (const { title, entries } of dimEntries) {
-      const group = document.createElement("section");
-      group.className = "timeline-group";
-      group.innerHTML = `<h2>${esc(title)}${valueChips(values, entries[0].m)}</h2>`;
-      const body = document.createElement("div");
-      for (const row of entries) body.appendChild(entryNode(row.m));
-      group.appendChild(body);
-      dimSection.appendChild(group);
+  function render() {
+    main.querySelectorAll(".dim-section").forEach((el) => el.remove());
+    const recs = timeline.filter((e) => showAll || (e.mode || "standard") === "standard");
+    const rows = mergeEntryRecords(recs, pairMap);
+    count.textContent = `共 ${rows.length} 条记录`;
+    const groups = new Map(); // key -> {dim, title, entries}
+    for (const row of rows) {
+      const e = row.m;
+      const key = entryKey(e);
+      const dim = e.dimension || (e.kind === "perk" ? "perk" : "other");
+      if (!groups.has(key)) groups.set(key, { dim, title: entryTitle(e), entries: [] });
+      groups.get(key).entries.push(row);
     }
-    main.appendChild(dimSection);
+    for (const dim of DIM_ORDER) {
+      const dimEntries = [...groups.values()].filter((g) => g.dim === dim);
+      if (!dimEntries.length) continue;
+      const dimSection = document.createElement("section");
+      dimSection.className = "dim-section";
+      dimSection.innerHTML = `<h2 class="dim-title"><span class="badge dim dim-${esc(dim)}">${DIM_LABEL[dim]}</span></h2>`;
+      for (const { title, entries } of dimEntries) {
+        const group = document.createElement("section");
+        group.className = "timeline-group";
+        group.innerHTML = `<h2>${esc(title)}${valueChips(values, entries[0].m)}</h2>`;
+        const body = document.createElement("div");
+        for (const row of entries) body.appendChild(entryNode(row.m));
+        group.appendChild(body);
+        dimSection.appendChild(group);
+      }
+      main.appendChild(dimSection);
+    }
   }
+  render();
 }
 
 function valueChips(values, entry) {
@@ -584,12 +612,15 @@ async function initEntry() {
   const isHero = key === `hero::${slug}`;
 
   if (isHero) {
-    const edited = timeline.some((e) => editsByPatch[e.patch]);
-    const dates = timeline.map((e) => e.date).sort();
+    // hero-overview meta reflects the standard-only surface (its entry cards
+    // come from the standard-only entries_index)
+    const stdTimeline = timeline.filter((e) => (e.mode || "standard") === "standard");
+    const edited = stdTimeline.some((e) => editsByPatch[e.patch]);
+    const dates = stdTimeline.map((e) => e.date).sort();
     const range = dates[0] !== dates[dates.length - 1]
       ? `${dates[0]} ~ ${dates[dates.length - 1]}` : dates[0];
     // count merged EN+CN pairs as one change, consistent with the entry pages
-    const heroRows = mergeEntryRecords(timeline, buildPairMap(patches.patches));
+    const heroRows = mergeEntryRecords(stdTimeline, buildPairMap(patches.patches));
     document.getElementById("entry-name").textContent = heroName || slug;
     document.getElementById("entry-hero").innerHTML =
       `<span class="entry-hero-link"><a href="hero.html?slug=${encodeURIComponent(slug)}">${esc(heroName || slug)}</a>（全部词条总览）</span>`;
@@ -617,53 +648,82 @@ async function initEntry() {
     return;
   }
 
-  const records = timeline.filter((e) => key === `${slug}::${entryKey(e)}`);
-  if (!records.length) {
+  const allRecords = timeline.filter((e) => key === `${slug}::${entryKey(e)}`);
+  if (!allRecords.length) {
     document.getElementById("entry-name").textContent = "未找到该词条";
     return;
   }
 
-  // merge paired EN+CN records of the same change into one row (Chinese first)
-  const rows = mergeEntryRecords(records, buildPairMap(patches.patches));
-
-  const dim = records[0].dimension || (records[0].kind === "perk" ? "perk" : "other");
-  document.getElementById("entry-name").textContent = entryTitle(records[0]);
+  const dim = allRecords[0].dimension || (allRecords[0].kind === "perk" ? "perk" : "other");
+  document.getElementById("entry-name").textContent = entryTitle(allRecords[0]);
   document.getElementById("entry-hero").innerHTML =
     `<span class="entry-hero-link"><a href="hero.html?slug=${encodeURIComponent(slug)}">${esc(heroName || slug)}</a>（全部词条）</span>`;
 
-  const edited = records.some((e) => editsByPatch[e.patch]);
-  const dates = records.map((e) => e.date).sort();
-  const range = dates[0] !== dates[dates.length - 1]
-    ? `${dates[0]} ~ ${dates[dates.length - 1]}` : dates[0];
-  document.getElementById("entry-meta").innerHTML = `
-    <span class="badge dim dim-${esc(dim)}">${DIM_LABEL[dim] || dim}</span>
-    <span class="badge kind">${KIND_LABEL[records[0].kind] || ""}</span>
-    ${edited ? `<span class="badge edited">官方事后编辑</span>` : ""}
-    <span>${rows.length} 条更改记录</span>
-    <span>${esc(range)}</span>`;
-
+  // default view is standard-only (special-mode records must not pollute the
+  // entry history); the toggle or ?modes=all opt into them
   const body = document.getElementById("entry-body");
-  body.innerHTML = valueList(hero.values || {}, records[0]);
-  const group = document.createElement("div");
-  group.className = "timeline-group";
-  const head = document.createElement("h2");
-  head.textContent = "更改记录";
-  group.appendChild(head);
-  const list = document.createElement("div");
-  for (const row of rows) {
-    // merged rows carry the official-edit badges of BOTH site patches (deduped)
-    const enEdits = row.en ? (editsByPatch[row.en.patch] || []) : [];
-    const mergedEdits = enEdits.length
-      ? [...(editsByPatch[row.m.patch] || []), ...enEdits]
-          .filter((x, i, arr) => arr.findIndex((y) => y.ts === x.ts) === i)
-      : (editsByPatch[row.m.patch] || []);
-    list.appendChild(entryNode(row.m, {
-      patchHref: patchLinks[row.m.patch] || "",
-      edits: mergedEdits,
-    }));
+  body.textContent = "";
+  let showAll = new URLSearchParams(location.search).get("modes") === "all";
+  const toggle = document.createElement("label");
+  toggle.className = "mode-toggle";
+  toggle.innerHTML = `<input type="checkbox"${showAll ? " checked" : ""}> 包含非常规模式补丁（愚人节/实验/试玩等）`;
+  toggle.querySelector("input").addEventListener("change", (ev) => {
+    showAll = ev.target.checked;
+    renderRecords();
+  });
+  body.appendChild(toggle);
+  const valuesBox = document.createElement("div");
+  valuesBox.id = "entry-values";
+  body.appendChild(valuesBox);
+  const recordsBox = document.createElement("div");
+  recordsBox.id = "entry-records";
+  body.appendChild(recordsBox);
+
+  function renderRecords() {
+    const records = allRecords.filter((e) => showAll || (e.mode || "standard") === "standard");
+    // merge paired EN+CN records of the same change into one row (Chinese first)
+    const rows = mergeEntryRecords(records, buildPairMap(patches.patches));
+    const edited = records.some((e) => editsByPatch[e.patch]);
+    const dates = records.map((e) => e.date).sort();
+    const range = dates[0] !== dates[dates.length - 1]
+      ? `${dates[0]} ~ ${dates[dates.length - 1]}` : dates[0];
+    document.getElementById("entry-meta").innerHTML = `
+      <span class="badge dim dim-${esc(dim)}">${DIM_LABEL[dim] || dim}</span>
+      <span class="badge kind">${KIND_LABEL[allRecords[0].kind] || ""}</span>
+      ${edited ? `<span class="badge edited">官方事后编辑</span>` : ""}
+      <span>${rows.length} 条更改记录</span>
+      <span>${esc(range)}</span>`;
+    valuesBox.innerHTML = valueList(hero.values || {}, records[0] || allRecords[0]);
+    recordsBox.textContent = "";
+    const group = document.createElement("div");
+    group.className = "timeline-group";
+    const head = document.createElement("h2");
+    head.textContent = "更改记录";
+    group.appendChild(head);
+    if (!rows.length) {
+      const empty = document.createElement("p");
+      empty.className = "sub";
+      empty.textContent = "该词条无常规模式记录（可勾选上方查看非常规模式补丁）";
+      group.appendChild(empty);
+    } else {
+      const list = document.createElement("div");
+      for (const row of rows) {
+        // merged rows carry the official-edit badges of BOTH site patches (deduped)
+        const enEdits = row.en ? (editsByPatch[row.en.patch] || []) : [];
+        const mergedEdits = enEdits.length
+          ? [...(editsByPatch[row.m.patch] || []), ...enEdits]
+              .filter((x, i, arr) => arr.findIndex((y) => y.ts === x.ts) === i)
+          : (editsByPatch[row.m.patch] || []);
+        list.appendChild(entryNode(row.m, {
+          patchHref: patchLinks[row.m.patch] || "",
+          edits: mergedEdits,
+        }));
+      }
+      group.appendChild(list);
+    }
+    recordsBox.appendChild(group);
   }
-  group.appendChild(list);
-  body.appendChild(group);
+  renderRecords();
 }
 
 /* ---------- patch detail (patch.html) ---------- */
@@ -785,7 +845,7 @@ async function initPatch() {
   const patch = await fetchJSON(file);
 
   document.getElementById("patch-date").textContent = meta.date;
-  document.getElementById("patch-sites").innerHTML = siteBadges(sites);
+  document.getElementById("patch-sites").innerHTML = siteBadges(sites) + modeBadge(meta.mode);
   document.getElementById("patch-title").textContent = patch.title;
 
   // official post-publication edits badge

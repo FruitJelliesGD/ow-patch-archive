@@ -106,6 +106,10 @@ def build_entries_index(data_dir: pathlib.Path, official_edits: dict | None = No
         hero_en = meta.get("en") or hero.get("names", {}).get("en")
         hero_role = meta.get("role") or hero.get("role")
         timeline = hero.get("timeline", [])
+        # standard-only search surface: special-mode records (April Fools,
+        # experiments, hero trials, ...) must not pollute the entry history
+        timeline = [rec for rec in timeline
+                    if (rec.get("mode") or "standard") == "standard"]
 
         # hero itself is a searchable entry (overview of all its changes)
         edited = any(rec.get("patch") in edits for rec in timeline)

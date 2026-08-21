@@ -139,6 +139,28 @@ def test_entries_index_synthetic(tmp_path):
     assert hero["count"] == 4 and hero["edited"] is True
 
 
+def test_entries_index_standard_only_modes(tmp_path):
+    """Special-mode records (mode != standard) must not count toward entries."""
+    data_dir = tmp_path / "data"
+    (data_dir / "heroes").mkdir(parents=True)
+    (data_dir / "heroes" / "ana.json").write_text(json.dumps({
+        "slug": "ana", "names": {"en": "Ana", "cn": "安娜"}, "role": "support",
+        "timeline": [
+            {**make_entry(patch="en-2025-03-25-1", date="2025-03-25"), "mode": "standard"},
+            {**make_entry(patch="en-2025-04-01-1", date="2025-04-01"), "mode": "april_fools"},
+            {**make_entry(patch="en-2025-04-01-1", date="2025-04-01"), "mode": "april_fools"},
+        ],
+        "values": {}}, ensure_ascii=False), encoding="utf-8")
+    idx = build_entries_index(data_dir)
+    ability = next(e for e in idx["entries"] if e["dimension"] == "ability")
+    assert ability["count"] == 1  # the two April Fools records are excluded
+    assert ability["first_date"] == ability["last_date"] == "2025-03-25"
+    hero = next(e for e in idx["entries"] if e["dimension"] == "hero")
+    assert hero["count"] == 1
+    # records without a mode default to standard (backwards compatible)
+    assert build_entries_index(data_dir)["entries"]  # still builds
+
+
 def test_entries_index_missing_aux_files(tmp_path):
     data_dir = tmp_path / "data"
     (data_dir / "heroes").mkdir(parents=True)
@@ -218,13 +240,16 @@ def test_real_entry_key_matches_js_semantics():
 
 
 def test_real_entries_parity_with_hero_timelines():
-    """Every searchable timeline record maps to an existing index key."""
+    """Every searchable STANDARD timeline record maps to an existing index key
+    (special-mode records are intentionally excluded from the standard index)."""
     edits = build_official_edits(REAL_DATA)
     idx = build_entries_index(REAL_DATA, edits)
     keys = {e["key"] for e in idx["entries"]}
     for hero_file in sorted((REAL_DATA / "heroes").glob("*.json")):
         hero = json.loads(hero_file.read_text(encoding="utf-8"))
         for rec in hero["timeline"]:
+            if (rec.get("mode") or "standard") != "standard":
+                continue  # April Fools / experiments / trials are not searchable
             key = entry_key(rec)
             if key is None:
                 continue

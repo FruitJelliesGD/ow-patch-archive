@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import json
 import pathlib
 
 from ow2_patch.pairing import (
@@ -86,3 +87,45 @@ def test_real_data_pairing_invariants():
     # pairs are deterministic
     again = pair_patches(en, cn)
     assert [p["en"]["patch_id"] for p in result.pairs] == [p["en"]["patch_id"] for p in again.pairs]
+
+
+def test_patches_index_mode_pair(tmp_path):
+    """Pair-level mode: either side non-standard wins (the CN April Fools title
+    is tagged april_fools through its EN pair)."""
+    from ow2_patch.pairing import PairResult, build_patches_index
+
+    result = PairResult(pairs=[
+        {"id": "p-2025-04-01-1", "date": "2025-04-01",
+         "en": {"patch_id": "en-2025-04-01-1", "date": "2025-04-01", "seq": 1,
+                "title": "Totally Normal Patch Notes for Totally Normalwatch - April 1, 2025",
+                "url": "u"},
+         "cn": {"patch_id": "cn-2025-04-01-1", "date": "2025-04-01", "seq": 1,
+                "title": "《守望先锋》完全正常的“完全正常先锋”补丁说明——2025年4月1日",
+                "url": "u"}},
+        {"id": "p-2025-03-19-1", "date": "2025-03-19",
+         "en": {"patch_id": "en-2025-03-19-1", "date": "2025-03-19", "seq": 1,
+                "title": "Overwatch 2 Freja Hero Trial - March 21, 2025", "url": "u"},
+         "cn": {"patch_id": "cn-2025-03-22-1", "date": "2025-03-22", "seq": 1,
+                "title": "《守望先锋》英雄试玩：弗蕾娅——2025年3月22日", "url": "u"}},
+    ])
+    build_patches_index(tmp_path, result)
+    index = json.loads((tmp_path / "patches_index.json").read_text(encoding="utf-8"))
+    by_id = {p["id"]: p for p in index["patches"]}
+    assert by_id["p-2025-04-01-1"]["mode"] == "april_fools"
+    assert by_id["p-2025-03-19-1"]["mode"] == "hero_trial"
+
+
+def test_real_patches_index_mode_invariants():
+    """Real regenerated index: special patches carry their mode, standard ones
+    stay standard (incl. unpaired entries)."""
+    index = json.loads((DATA / "patches_index.json").read_text(encoding="utf-8"))
+    by_id = {p["id"]: p for p in index["patches"]}
+    assert by_id["en-2024-01-12-1"]["mode"] == "quick_play_hacked"  # unpaired
+    assert by_id["en-2024-04-01-1"]["mode"] == "april_fools"
+    assert by_id["p-2025-04-01-1"]["mode"] == "april_fools"  # pair, CN side non-keyword
+    assert by_id["en-2024-12-17-1"]["mode"] == "experiment_6v6"
+    assert by_id["en-2018-03-29-1"]["mode"] == "ptr"
+    assert by_id["en-2022-10-04-1"]["mode"] == "announcement"
+    assert by_id["p-2026-08-11-1"]["mode"] == "standard"
+    assert by_id["en-2017-02-27-1"]["mode"] == "standard"  # uppercase variant
+    assert all(p.get("mode") for p in index["patches"])

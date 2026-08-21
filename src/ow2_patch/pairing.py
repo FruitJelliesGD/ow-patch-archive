@@ -205,15 +205,26 @@ def _pair(result: PairResult, en: dict, cn: dict, by: str,
 
 
 def build_patches_index(data_dir: pathlib.Path, result: PairResult) -> None:
-    """Write data/patches_index.json: logical patches sorted by date desc."""
+    """Write data/patches_index.json: logical patches sorted by date desc.
+
+    Each entry carries a `mode` (see modes.patch_mode): pairs take either side
+    non-standard ("either side non-standard wins", en first — the CN April
+    Fools title is only reachable via its EN pair), unpaired entries use their
+    own title.
+    """
+    from .modes import STANDARD, patch_mode
+
     index: list[dict] = []
     for pair in result.pairs:
+        en_mode = patch_mode(pair["en"]["title"])
+        mode = en_mode if en_mode != STANDARD else patch_mode(pair["cn"]["title"])
         index.append({
             "id": pair["id"], "date": pair["date"],
             "title_en": pair["en"]["title"], "title_cn": pair["cn"]["title"],
             "url_en": pair["en"]["url"], "url_cn": pair["cn"]["url"],
             "sites": ["en", "cn"],
             "patch_id_en": pair["en"]["patch_id"], "patch_id_cn": pair["cn"]["patch_id"],
+            "mode": mode,
         })
     for patch_id in result.unpaired_en + result.unpaired_cn:
         site = patch_id.split("-", 1)[0]
@@ -232,6 +243,7 @@ def build_patches_index(data_dir: pathlib.Path, result: PairResult) -> None:
             "sites": [site],
             "patch_id_en": patch_id if site == "en" else None,
             "patch_id_cn": patch_id if site == "cn" else None,
+            "mode": patch_mode(meta["title"]),
         })
 
     index.sort(key=lambda e: (e["date"], e["id"]), reverse=True)

@@ -340,9 +340,24 @@ def build_hero_files(data_dir: pathlib.Path, resolver: NameResolver | None = Non
         ability_kinds = {slug: entry.get("kind", "ability")
                          for slug, entry in ability_map.get("abilities", {}).items()}
 
+    # authoritative patch-level mode (pair-level: either side non-standard wins);
+    # every patch id appears in patches_index, so the map is complete when present
+    from .modes import patch_mode
+
+    mode_by_patch: dict[str, str] = {}
+    index_path = data_dir / "patches_index.json"
+    if index_path.exists():
+        for p in json.loads(index_path.read_text(encoding="utf-8")).get("patches", []):
+            m = p.get("mode") or "standard"
+            if p.get("patch_id_en"):
+                mode_by_patch[p["patch_id_en"]] = m
+            if p.get("patch_id_cn"):
+                mode_by_patch[p["patch_id_cn"]] = m
+
     for site_dir in ("en", "cn"):
         for patch_file in sorted((data_dir / "patches" / site_dir).glob("*.json")):
             data = json.loads(patch_file.read_text(encoding="utf-8"))
+            mode = mode_by_patch.get(data["id"]) or patch_mode(data.get("title") or "")
             for section in data.get("sections", []):
                 for hero in section.get("heroes", []):
                     if not _is_balance_hero(hero):
@@ -367,6 +382,7 @@ def build_hero_files(data_dir: pathlib.Path, resolver: NameResolver | None = Non
                                 "url": data.get("url"), "patch_title": data.get("title"),
                                 "kind": "ability",
                                 "dimension": a_dim,
+                                "mode": mode,
                                 "ability_slug": a_slug,
                                 "ability_en": ability.get("name_en"),
                                 "ability_cn": ability.get("name_cn"),
@@ -382,6 +398,7 @@ def build_hero_files(data_dir: pathlib.Path, resolver: NameResolver | None = Non
                             "url": data.get("url"), "patch_title": data.get("title"),
                             "kind": "perk",
                             "dimension": "perk",
+                            "mode": mode,
                             "perk_slug": p_slug,
                             "perk_en": perk.get("name_en"),
                             "perk_cn": perk.get("name_cn"),
@@ -401,6 +418,7 @@ def build_hero_files(data_dir: pathlib.Path, resolver: NameResolver | None = Non
                             "kind": "general",
                             "dimension": line.get("dimension") if isinstance(line, dict) else None,
                             "subject": line.get("subject") if isinstance(line, dict) else None,
+                            "mode": mode,
                             "text_en": entry_text if data["site"] == "en" else None,
                             "text_cn": entry_text if data["site"] == "cn" else None,
                             **{k: line.get(k) for k in ("before", "after", "by", "by_pct", "metric", "unit")
@@ -419,6 +437,7 @@ def build_hero_files(data_dir: pathlib.Path, resolver: NameResolver | None = Non
                                 "kind": "general",
                                 "dimension": None,
                                 "subject": None,
+                                "mode": mode,
                                 "text_en": iline if data["site"] == "en" else None,
                                 "text_cn": iline if data["site"] == "cn" else None,
                             })
@@ -432,7 +451,10 @@ def build_hero_files(data_dir: pathlib.Path, resolver: NameResolver | None = Non
         with open(heroes_dir / f"{slug}.json", "w", encoding="utf-8") as fh:
             json.dump({"slug": slug, "names": {"en": meta[slug]["en"], "cn": meta[slug]["cn"]},
                        "role": meta[slug]["role"], "timeline": entries,
-                       "values": build_values(entries)},
+                       # value series are standard-only: special-mode numbers must
+                       # not pollute the balance history (frontend shows all records
+                       # on toggle, but chips stay standard)
+                       "values": build_values([e for e in entries if e["mode"] == "standard"])},
                       fh, ensure_ascii=False, indent=1)
 
     latest = "2016-05-01"

@@ -307,3 +307,64 @@ def test_stadium_items_enter_hero_timeline_as_general(tmp_path):
     assert "Reworked to Item." in texts
     assert "Added 15% Weapon Lifesteal." in texts
     assert len(hero["timeline"]) == 2
+
+
+def test_hero_records_carry_mode_and_values_standard_only(tmp_path):
+    """build_hero_files tags records with the patch mode (fallback = title
+    rule when patches_index is absent) and value series stay standard-only."""
+    from ow2_patch.pipeline import build_hero_files
+
+    data_dir = tmp_path / "data"
+    (data_dir / "patches" / "en").mkdir(parents=True)
+    (data_dir / "patches" / "en" / "2025-04-01-1.json").write_text(json.dumps({
+        "id": "en-2025-04-01-1", "site": "en", "date": "2025-04-01",
+        "url": "https://x",
+        "title": "Totally Normal Patch Notes for Totally Normalwatch - April 1, 2025",
+        "seq": 1,
+        "sections": [{
+            "type": "hero_update", "title": "Tank", "role": "tank",
+            "heroes": [{
+                "slug": "d-va", "name_en": "D.Va", "role": "tank",
+                "general": [], "perks": [], "abilities": [
+                    {"name_en": "Fusion Cannons", "slug": "fusion-cannons",
+                     "changes": [{"text_en": "Damage increased from 2 to 3.",
+                                  "before": 2.0, "after": 3.0}]}],
+                "stadium_items": [],
+            }],
+            "blocks": [],
+        }],
+    }), encoding="utf-8")
+    build_hero_files(data_dir)
+    hero = json.loads((data_dir / "heroes" / "d-va.json").read_text(encoding="utf-8"))
+    assert hero["timeline"][0]["mode"] == "april_fools"
+    assert hero["values"] == {}  # April Fools numbers never enter the value series
+
+
+def test_hero_record_mode_from_patches_index(tmp_path):
+    """Record mode follows the pair-level patches_index (the CN April Fools
+    title's records are tagged april_fools through its EN pair)."""
+    from ow2_patch.pipeline import build_hero_files
+
+    data_dir = tmp_path / "data"
+    (data_dir / "patches" / "cn").mkdir(parents=True)
+    (data_dir / "patches" / "cn" / "2025-04-01-1.json").write_text(json.dumps({
+        "id": "cn-2025-04-01-1", "site": "cn", "date": "2025-04-01",
+        "url": "https://x", "title": "《守望先锋》完全正常的“完全正常先锋”补丁说明——2025年4月1日",
+        "seq": 1,
+        "sections": [{
+            "type": "hero_update", "title": "重装", "role": "tank",
+            "heroes": [{
+                "slug": "d-va", "name_cn": "D.Va", "role": "tank",
+                "general": [{"text_cn": "测试", "dimension": "other"}],
+                "perks": [], "abilities": [], "stadium_items": [],
+            }],
+            "blocks": [],
+        }],
+    }), encoding="utf-8")
+    (data_dir / "patches_index.json").write_text(json.dumps({"updated": "x", "patches": [
+        {"id": "p-2025-04-01-1", "date": "2025-04-01", "mode": "april_fools",
+         "patch_id_en": "en-2025-04-01-1", "patch_id_cn": "cn-2025-04-01-1"},
+    ]}), encoding="utf-8")
+    build_hero_files(data_dir)
+    hero = json.loads((data_dir / "heroes" / "d-va.json").read_text(encoding="utf-8"))
+    assert hero["timeline"] and all(e["mode"] == "april_fools" for e in hero["timeline"])

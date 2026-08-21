@@ -62,6 +62,7 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
       }
     }
     results.indexPatches = patchEntries;
+    results.indexHasModeBadge = findHtml(document.getElementById("patch-list"), /愚人节/);
     results.updatedFmt = /^\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2} UTC[+-]\\d+(?::\\d{2})?$/.test(document.getElementById("updated").textContent);
 
     await initEntries();
@@ -73,7 +74,7 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
     await initEntry();
     results.entryName = document.getElementById("entry-name").textContent;
     results.entryMeta = document.getElementById("entry-meta").textContent;
-    results.entryHasValues = /value-row/.test(document.getElementById("entry-body").innerHTML || "");
+    results.entryHasValues = findHtml(document.getElementById("entry-body"), /value-row/);
     results.entryHasPatchLink = findHtml(document.getElementById("entry-body"), /patch\\.html\\?id=/);
     results.entryHasEditedBadge = findHtml(document.getElementById("entry-body"), /官方事后编辑/);
     // merged EN+CN rows: one .entry carries BOTH site badges plus the EN
@@ -133,6 +134,10 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
     await initPatch();
     results.patchHasContentLink = findHtml(document.getElementById("patch-article"), /<a href="https?:\\/\\//);
 
+    location.search = "?id=p-2025-04-01-1&lang=en";
+    await initPatch();
+    results.patchHasModeBadge = /愚人节/.test(document.getElementById("patch-sites").innerHTML || "");
+
     location.search = "?id=en-2016-05-27-1&lang=en";
     await initPatch();
     results.patchEdited = document.getElementById("patch-edits").innerHTML || "";
@@ -179,6 +184,13 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
     results.heroHasStim = groupTitles.some((t) => /Stim|强化/.test(t));
     results.heroHasAttr = dimTitles.some((t) => /英雄属性/.test(t));
     results.heroHasValues = hasValuesChip;
+    // default view is standard-only: April Fools records must not appear
+    results.heroDefaultNoSpecial = !findHtml(timelineEl, /Running speed increased by 100/);
+
+    location.search = "?slug=soldier-76&modes=all";
+    await initHero();
+    const timelineAll = document.getElementById("timeline");
+    results.heroAllShowsSpecial = findHtml(timelineAll, /Running speed increased by 100/);
     results.heroNoHashGroup = groupTitles.every((t) => !/hero-/.test(t));
 
     // unit: the numeric-fingerprint veto keeps a disjoint-digit pair unmerged
@@ -206,7 +218,8 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
     if (results.indexPatches !== 342) fail.push("indexPatches=" + results.indexPatches);
     if (results.filterChips !== 6) fail.push("filterChips=" + results.filterChips);
     if (!results.firstCardHref.includes("entry.html?hero=")) fail.push("firstCardHref=" + results.firstCardHref);
-    if (results.entryCards !== 987) fail.push("entryCards=" + results.entryCards);
+    if (results.entryCards !== 956) fail.push("entryCards=" + results.entryCards);
+    if (!results.indexHasModeBadge) fail.push("index mode badge missing");
     if (!/脉冲步枪/.test(results.entryName)) fail.push("entryName=" + results.entryName);
     if (!/更改记录/.test(results.entryMeta)) fail.push("entryMeta=" + results.entryMeta);
     if (!results.entryHasValues) fail.push("entry values rows missing");
@@ -215,7 +228,7 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
     if (!results.entryHasMergedRow) fail.push("entry merged EN+CN row missing");
     if (!results.entryHasEnOnlyRow) fail.push("entry EN-only row should stay single");
     if (!results.entryHasBilingualText) fail.push("entry merged bilingual text missing");
-    if (results.entryMergedCount !== "20") fail.push("entry merged count=" + results.entryMergedCount);
+    if (results.entryMergedCount !== "17") fail.push("entry merged count=" + results.entryMergedCount);
     if (results.heroEntryCards !== 18) fail.push("hero entry cards=" + results.heroEntryCards);
     if (results.langButtons !== 2) fail.push("langButtons=" + results.langButtons);
     if (!results.patchTitle) fail.push("empty patch title");
@@ -229,6 +242,7 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
     if (!results.patchHasStadiumItem) fail.push("patch stadium item missing");
     if (!results.patchHasRarityBadge) fail.push("patch stadium rarity badge missing");
     if (!results.patchHasContentLink) fail.push("patch content link missing");
+    if (!results.patchHasModeBadge) fail.push("patch mode badge missing");
     if (!results.tocChildren || !results.tocHasSec0) fail.push("toc missing entries=" + results.tocChildren);
     if (results.tocHiddenModern) fail.push("modern toc should be visible");
     if (!results.legacyStructured || !results.legacyNoRawText) fail.push("legacy page not structured");
@@ -243,6 +257,8 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
     if (!results.heroHasAttr) fail.push("hero attribute group missing");
     if (!results.heroHasValues) fail.push("values chip missing");
     if (!results.heroNoHashGroup) fail.push("hash-slug group found");
+    if (!results.heroDefaultNoSpecial) fail.push("hero default view shows special-mode records");
+    if (!results.heroAllShowsSpecial) fail.push("hero modes=all view missing special-mode records");
     if (!heroHasMergedRow) fail.push("hero page merged EN+CN row missing");
     if (!heroHasEnOnlyRow) fail.push("hero page EN-only row should stay single");
     if (!results.vetoKeepsSeparate) fail.push("merge fingerprint veto not keeping disjoint-digit pair separate");

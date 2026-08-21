@@ -107,6 +107,21 @@ main { max-width: 960px; margin: 0 auto; padding: 20px; }
 .badge.en { background: rgba(79, 195, 247, 0.15); color: var(--en); }
 .badge.cn { background: rgba(243, 156, 58, 0.15); color: var(--cn); }
 .badge.kind { background: rgba(46, 197, 176, 0.12); color: var(--teal); }
+/* special-mode patch badges (community / april fools / experiments / trials) */
+.badge.mode-quick_play_hacked { background: rgba(79, 195, 247, 0.15); color: var(--en); }
+.badge.mode-april_fools { background: rgba(244, 67, 54, 0.2); color: #ef5350; }
+.badge.mode-experiment_6v6 { background: rgba(171, 71, 188, 0.2); color: #ce93d8; }
+.badge.mode-hero_trial { background: rgba(46, 197, 176, 0.18); color: var(--teal); }
+.badge.mode-ptr { background: rgba(158, 158, 158, 0.2); color: #bdbdbd; }
+.badge.mode-announcement { background: rgba(243, 156, 58, 0.18); color: var(--orange); }
+.mode-toggle {
+  display: block;
+  margin: 8px 16px;
+  font-size: 13px;
+  color: var(--muted);
+  cursor: pointer;
+}
+.mode-toggle input { margin-right: 6px; vertical-align: -1px; }
 .entry .text { font-size: 14px; }
 /* secondary-language line on merged EN+CN records (Chinese is the primary) */
 .entry .text.en-text { color: var(--muted); }
