@@ -76,6 +76,20 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
     results.entryHasValues = /value-row/.test(document.getElementById("entry-body").innerHTML || "");
     results.entryHasPatchLink = findHtml(document.getElementById("entry-body"), /patch\\.html\\?id=/);
     results.entryHasEditedBadge = findHtml(document.getElementById("entry-body"), /官方事后编辑/);
+    // merged EN+CN rows: one .entry carries BOTH site badges plus the EN
+    // secondary line; unpaired EN-only records keep a single 英文站 badge
+    results.entryHasMergedRow = false;
+    results.entryHasEnOnlyRow = false;
+    (function collectEntry(el) {
+      const html = el.innerHTML || "";
+      if (/badge cn/.test(html) && /badge en/.test(html)) results.entryHasMergedRow = true;
+      if (/badge en/.test(html) && !/badge cn/.test(html)) results.entryHasEnOnlyRow = true;
+      if (results.entryHasMergedRow && results.entryHasEnOnlyRow) return;
+      for (const c of el.children) collectEntry(c);
+    })(document.getElementById("entry-body"));
+    results.entryHasBilingualText = findHtml(document.getElementById("entry-body"), /en-text/);
+    results.entryMergedCount = /(\\d+) 条更改记录/.test(results.entryMeta)
+      ? results.entryMeta.match(/(\\d+) 条更改记录/)[1] : "?";
 
     location.search = "?hero=ana&key=hero%3A%3Aana";
     await initEntry();
@@ -140,6 +154,15 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
     const dimTitles = [];
     const groupTitles = [];
     let hasValuesChip = false;
+    let heroHasMergedRow = false;
+    let heroHasEnOnlyRow = false;
+    (function collectHero(el) {
+      const html = el.innerHTML || "";
+      if (/badge cn/.test(html) && /badge en/.test(html)) heroHasMergedRow = true;
+      if (/badge en/.test(html) && !/badge cn/.test(html)) heroHasEnOnlyRow = true;
+      if (heroHasMergedRow && heroHasEnOnlyRow) return;
+      for (const c of el.children) collectHero(c);
+    })(timelineEl);
     for (const g of timelineEl.children) {
       if (g.className === "dim-section") {
         dimTitles.push(g.innerHTML || "");
@@ -168,6 +191,10 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
     if (!results.entryHasValues) fail.push("entry values rows missing");
     if (!results.entryHasPatchLink) fail.push("entry patch link missing");
     if (!results.entryHasEditedBadge) fail.push("entry edited badge missing");
+    if (!results.entryHasMergedRow) fail.push("entry merged EN+CN row missing");
+    if (!results.entryHasEnOnlyRow) fail.push("entry EN-only row should stay single");
+    if (!results.entryHasBilingualText) fail.push("entry merged bilingual text missing");
+    if (results.entryMergedCount !== "20") fail.push("entry merged count=" + results.entryMergedCount);
     if (results.heroEntryCards !== 18) fail.push("hero entry cards=" + results.heroEntryCards);
     if (results.langButtons !== 2) fail.push("langButtons=" + results.langButtons);
     if (!results.patchTitle) fail.push("empty patch title");
@@ -195,6 +222,8 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
     if (!results.heroHasAttr) fail.push("hero attribute group missing");
     if (!results.heroHasValues) fail.push("values chip missing");
     if (!results.heroNoHashGroup) fail.push("hash-slug group found");
+    if (!heroHasMergedRow) fail.push("hero page merged EN+CN row missing");
+    if (!heroHasEnOnlyRow) fail.push("hero page EN-only row should stay single");
     if (fail.length) { console.error("ASSERT FAIL:", fail.join("; ")); process.exit(1); }
     console.log("ALL WEB ASSERTIONS OK");
   } catch (e) {

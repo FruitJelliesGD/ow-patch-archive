@@ -299,6 +299,87 @@ function entryTitle(e) {
   return "其他改动";
 }
 
+/* ---------- EN/CN record merging (entry + hero pages) ---------- */
+
+// patches_index.patches -> site patch id -> {id (p-* logical), other, title_cn, title_en}
+function buildPairMap(patches) {
+  const map = {};
+  for (const p of patches || []) {
+    if (p.patch_id_en && p.patch_id_cn) {
+      const meta = { id: p.id, title_cn: p.title_cn, title_en: p.title_en };
+      map[p.patch_id_en] = { ...meta, other: p.patch_id_cn };
+      map[p.patch_id_cn] = { ...meta, other: p.patch_id_en };
+    }
+  }
+  return map;
+}
+
+function digitTokens(text) {
+  return Array.from(String(text || "").matchAll(/\d+(?:\.\d+)?/g), (m) => m[0]);
+}
+
+// veto guard: when both sides carry numbers, a merged pair must share at least
+// one numeric token, else they are (almost certainly) different changes
+function numbersOverlap(a, b) {
+  const ta = digitTokens(a);
+  const tb = digitTokens(b);
+  if (!ta.length || !tb.length) return true;
+  return ta.some((t) => tb.includes(t));
+}
+
+// Merge the EN+CN records of the same change (paired patches) into one row,
+// Chinese first. Rows are {m: record to render, en: en record | null}; merged
+// rows carry en_patch as a render marker. Gate: equal counts AND (kind
+// ability/weapon/perk OR one-to-one) AND numeric-fingerprint consistency —
+// positional merging misaligns `other` lines (23% share no numbers), so those
+// only merge when each side has exactly one record.
+function mergeEntryRecords(records, pairMap) {
+  const groups = new Map(); // pairId|key -> {en: [], cn: []}
+  for (const e of records || []) {
+    const pair = pairMap[e.patch];
+    if (!pair) continue;
+    const gkey = `${pair.id}|${entryKey(e)}`;
+    if (!groups.has(gkey)) groups.set(gkey, { en: [], cn: [] });
+    groups.get(gkey)[e.site === "en" ? "en" : "cn"].push(e);
+  }
+  const consumed = new Set();
+  const rows = [];
+  for (const e of records || []) {
+    if (consumed.has(e)) continue;
+    const pair = pairMap[e.patch];
+    if (pair) {
+      const g = groups.get(`${pair.id}|${entryKey(e)}`);
+      const en = g.en;
+      const cn = g.cn;
+      const key = entryKey(e);
+      const oneToOne = en.length === 1 && cn.length === 1;
+      const mergeableKind = key.startsWith("ability::") || key.startsWith("weapon::") || key.startsWith("perk::");
+      if (en.length === cn.length && (mergeableKind || oneToOne)) {
+        const i = (e.site === "en" ? en : cn).indexOf(e);
+        const enRec = en[i];
+        const cnRec = cn[i];
+        if (enRec && cnRec && numbersOverlap(enRec.text_en || "", cnRec.text_cn || "")) {
+          rows.push({
+            m: {
+              ...cnRec,
+              text_en: enRec.text_en,
+              lines_en: enRec.lines_en,
+              url_en: enRec.url,
+              en_patch: enRec.patch,
+              patch_title: pair.title_cn || cnRec.patch_title,
+            },
+            en: enRec,
+          });
+          consumed.add(enRec).add(cnRec);
+          continue;
+        }
+      }
+    }
+    rows.push({ m: e, en: null });
+  }
+  return rows;
+}
+
 async function initHero() {
   const slug = new URLSearchParams(location.search).get("slug");
   if (!slug) { location.href = "entries.html"; return; }
@@ -316,19 +397,26 @@ async function initHero() {
 
   const timeline = hero.timeline || [];
   const values = hero.values || {};
+  // pairing data is auxiliary: if it is missing the page degrades to unmerged rows
+  let pairMap = {};
+  try {
+    pairMap = buildPairMap((await fetchJSON("data/patches_index.json")).patches);
+  } catch { /* no pairing data: keep single-site rows */ }
+  const rows = mergeEntryRecords(timeline, pairMap);
   const groups = new Map(); // key -> {dim, title, entries}
-  for (const e of timeline) {
+  for (const row of rows) {
+    const e = row.m;
     const key = entryKey(e);
     const dim = e.dimension || (e.kind === "perk" ? "perk" : "other");
     if (!groups.has(key)) groups.set(key, { dim, title: entryTitle(e), entries: [] });
-    groups.get(key).entries.push(e);
+    groups.get(key).entries.push(row);
   }
 
   const DIM_ORDER = ["weapon", "ability", "perk", "hero_attr", "other"];
   const main = document.getElementById("timeline");
   const count = document.createElement("p");
   count.className = "sub";
-  count.textContent = `共 ${timeline.length} 条记录`;
+  count.textContent = `共 ${rows.length} 条记录`;
   main.appendChild(count);
 
   for (const dim of DIM_ORDER) {
@@ -340,9 +428,9 @@ async function initHero() {
     for (const { title, entries } of dimEntries) {
       const group = document.createElement("section");
       group.className = "timeline-group";
-      group.innerHTML = `<h2>${esc(title)}${valueChips(values, entries[0])}</h2>`;
+      group.innerHTML = `<h2>${esc(title)}${valueChips(values, entries[0].m)}</h2>`;
       const body = document.createElement("div");
-      for (const e of entries) body.appendChild(entryNode(e));
+      for (const row of entries) body.appendChild(entryNode(row.m));
       group.appendChild(body);
       dimSection.appendChild(group);
     }
@@ -375,8 +463,12 @@ function entryNode(e, opts = {}) {
   const editBadge = edits.length
     ? `<span class="badge edited" title="${esc(edits.map((x) => fmtLocalTs(x.ts) + (x.title ? " · " + x.title : "")).join("；"))}">官方事后编辑</span>`
     : "";
+  // merged EN+CN rows (marked by en_patch) show both site badges, Chinese first
+  const siteBadge = e.en_patch
+    ? `<span class="badge cn">${SITE_LABEL.cn}</span> <span class="badge en">${SITE_LABEL.en}</span>`
+    : `<span class="badge ${esc(e.site)}">${SITE_LABEL[e.site]}</span>`;
   head.innerHTML = `
-    <span class="badge ${esc(e.site)}">${SITE_LABEL[e.site]}</span>
+    ${siteBadge}
     <span class="badge kind">${KIND_LABEL[e.kind]}</span>
     ${e.subject ? `<span class="badge attr">${ATTR_LABEL[e.subject] || e.subject}</span>` : ""}
     ${editBadge}
@@ -432,6 +524,12 @@ function entryNode(e, opts = {}) {
     const link = document.createElement("div");
     link.className = "patch-link";
     link.innerHTML = `<a href="${esc(e.url)}" target="_blank" rel="noopener">查看官方补丁原文 ↗</a>`;
+    div.appendChild(link);
+  }
+  if (e.url_en) {
+    const link = document.createElement("div");
+    link.className = "patch-link";
+    link.innerHTML = `<a href="${esc(e.url_en)}" target="_blank" rel="noopener">英文原文 ↗</a>`;
     div.appendChild(link);
   }
   return div;
@@ -523,6 +621,9 @@ async function initEntry() {
     return;
   }
 
+  // merge paired EN+CN records of the same change into one row (Chinese first)
+  const rows = mergeEntryRecords(records, buildPairMap(patches.patches));
+
   const dim = records[0].dimension || (records[0].kind === "perk" ? "perk" : "other");
   document.getElementById("entry-name").textContent = entryTitle(records[0]);
   document.getElementById("entry-hero").innerHTML =
@@ -536,7 +637,7 @@ async function initEntry() {
     <span class="badge dim dim-${esc(dim)}">${DIM_LABEL[dim] || dim}</span>
     <span class="badge kind">${KIND_LABEL[records[0].kind] || ""}</span>
     ${edited ? `<span class="badge edited">官方事后编辑</span>` : ""}
-    <span>${records.length} 条更改记录</span>
+    <span>${rows.length} 条更改记录</span>
     <span>${esc(range)}</span>`;
 
   const body = document.getElementById("entry-body");
@@ -547,10 +648,16 @@ async function initEntry() {
   head.textContent = "更改记录";
   group.appendChild(head);
   const list = document.createElement("div");
-  for (const e of records) {
-    list.appendChild(entryNode(e, {
-      patchHref: patchLinks[e.patch] || "",
-      edits: editsByPatch[e.patch] || [],
+  for (const row of rows) {
+    // merged rows carry the official-edit badges of BOTH site patches (deduped)
+    const enEdits = row.en ? (editsByPatch[row.en.patch] || []) : [];
+    const mergedEdits = enEdits.length
+      ? [...(editsByPatch[row.m.patch] || []), ...enEdits]
+          .filter((x, i, arr) => arr.findIndex((y) => y.ts === x.ts) === i)
+      : (editsByPatch[row.m.patch] || []);
+    list.appendChild(entryNode(row.m, {
+      patchHref: patchLinks[row.m.patch] || "",
+      edits: mergedEdits,
     }));
   }
   group.appendChild(list);
