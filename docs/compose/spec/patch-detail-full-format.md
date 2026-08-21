@@ -1,14 +1,27 @@
 ---
 feature: patch-detail-full-format
-status: in-progress
+status: delivered
 updated: 2026-08-22
 branch: feat/patch-detail-full-format
-commits: <base-sha>..<head-sha> # filled at delivery
+commits: bd1bb2c..c6e5375
 ---
 
 # 补丁详情页全面兼容官方显示格式（迭代九）
 
 ## Report
+
+**What was built** — 对照官方补丁页逐项审计后补齐 6 处显示格式差距，`web/patch.html` 全面兼容官方内容格式：
+
+1. **地图更新 before/after 并排双图**：解析器新增 `MapUpdate{map_name, area, before, after}` + `Section.maps`——EN `PatchNotes-section-map_update`（`.PatchNotesMapUpdate` + `blz-comparison-slider` 的 `blz-image[slot=before|after]`，空 name 沿用上一个非空）；CN 无 map_update section，从 `地图更新` 通用块内的「标题序列 + `<p><img>` 成对」提取（`——` 标题=地图名、`修改前与修改后` 标签配其后两张图）。8 个补丁 103 对图，本地下载至 `web/assets/maps/{patch}/s{si}/{i}-{before|after}.png`（**键含全局 section 下标**，多 map section 不碰撞），web 渲染两个 `<figure>`（修改前/后）并排。
+2. **章节级开发者注**：`Section.dev` 捕获 section 直接子级 `.PatchNotes-dev`（EN Hero Updates 导语实证；legacy 无 hero/block 时挂 sec.dev），web 以官方斜体引述样式渲染，进 hash 袋。
+3. **正文超链接**：`_inline_raw` 把 `<a href>` 编码为 `[text](url)`（https 白名单），web `media()` 单遍正则还原为可点击 `<a>`（esc→br→inlineBold→media→numberify 统一链，34 个补丁含链接）。
+4. **章节描述内大图横幅**：`<img>` 编码为 `![alt](src)`，web 热链 `<img loading=lazy onerror=隐藏>`。
+5. **Stadium 英雄物品**：`HeroUpdate.stadium_items` 结构化（EN `Name - Power|Name - <Rarity> <Type> Hero Item`、CN `名——异能|名——稀有武器英雄物品` 标记 + 统计行 + 稀有度/类型/状态），web 块级展示（稀有度徽标）；1932 个物品项；时间线以 kind=general 保留现状；**620 个曾被 attribution 误标为 perk 的 Stadium 异能条目离开词条索引**（entries 1624→987，perk 890→274，按批准的范围决策）。
+6. **开发者注官方样式**：`.dev-note` 斜体 + 左侧竖线。
+
+**Verification** — `pytest -q` → 166 passed（12 项新增：EN/CN 地图、章节 dev、链接/图片编码、Stadium 物品 EN/CN、hash 敏感性与 maps deep_diff、legacy 链接语法清洗、时间线 items、map 下载含 section 作用域）；`node tools/_smoke_web.js` → ALL WEB ASSERTIONS OK（新增 section-dev/map-compare/mapSectionCount≥3/stadium-item/rarity-badge/content-link；entryCards 987、heroEntryCards 18 重基线）；`npx --yes -p playwright node tools/_layout_check.js` → 12/12 PASS；本机（CN IP）force-rewrite 全量迁移（397 补丁：103 对地图图、83 章节 dev、1932 stadium items、34 补丁含链接），rebuild ×3 字节收敛（diff 一致），重扫近 3 月 **0 events**（hash 稳定零误报），download_icons 820 refs / 0 缺失 / 幂等，serve 探测 patch.html、三张 section 图（s8/s9/s10 内容各异）、patch JSON 均 200。独立审查两轮：首轮 2 个 critical（**地图键跨 section 碰撞**——3 个多 section 补丁全渲染第一节的图；download_icons 输出目录修复未提交）修复后复审 **0 critical**；修复 = 键含全局 section 下标（tool 与 app.js 同源于 sections 数组位置，永不分叉）+ 提交目录修复 + 新增 section 作用域测试与 smoke 断言。
+
+**Journey log** — ① 地图资产键必须含 section 下标：首轮 `{patch}/{i}-{side}` 在 en-2026-08-11（3 section×6）、en-2024-10-15（4 section）、en-2025-07-22（2 section）全部碰撞，prefer() 静默保留第一节 URL——smoke 只断言 `0-before.png`（第一节）故假通过，修复须断言**多个** section 下标。② `_section_dev` 用 `soup.find_all(recursive=False)` 找不到直接子级 dev——必须先定位 section div 再搜其直接子级。③ legacy raw_text 若含 `[text](url)` 编码，`clean_legacy_text` 的字面空格样板短语失配——必须先剥链接语法再清洗（同 `**` 先例，P1 级隐患）。④ CN 地图结构完全不同于 EN（无 map_update section，地图在通用块内标题+img 序列），必须双路径解析，`地图更新` 块 body 置空防文字重复。⑤ 迁移后词条计数降幅远超计划预估（约 40 → 620）——Stadium 异能此前被 attribution 误标为 perk 遍布全库，620/621 消失项与物品名逐一匹配，属预期数据修正而非丢失。
 
 ## [S1] Problem
 
@@ -99,4 +112,4 @@ commits: <base-sha>..<head-sha> # filled at delivery
 - [x] T42: web style.css — acceptance: dev-note 斜体、地图并排、物品徽标、链接样式（covers: D6；depends: T41）
 - [x] T43: 测试更新（parse/diff/pipeline/download/smoke/layout + 计数重基线）— acceptance: pytest 与 smoke/layout 全过（covers: 全部）
 - [x] T44: 全量迁移与验证 — acceptance: 本机（CN IP）force-rewrite 143 月 0 错误、rebuild ×3 字节收敛、重扫当月 0 events、download_icons 补图、serve 预览正确（covers: D7；depends: T43）
-- [ ] T45: 独立 review 与规格定稿 — acceptance: review 无 critical、status: delivered（covers: 全部；depends: T44）
+- [x] T45: 独立 review 与规格定稿 — acceptance: review 无 critical、status: delivered（covers: 全部；depends: T44）

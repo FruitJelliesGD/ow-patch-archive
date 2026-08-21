@@ -3,8 +3,8 @@ before/after screenshots.
 
 Scans every archived patch JSON for captured official image URLs and saves one
 file per key under web/assets/icons/ (heroes/<slug>.png,
-abilities/<hero-slug>/<ability-slug>.png) and web/assets/maps/<patch-id>/<i>-
-{before,after}.png. Idempotent and incremental: existing files are skipped, so
+abilities/<hero-slug>/<ability-slug>.png) and web/assets/maps/<patch-id>/s<section>/
+<i>-{before,after}.png. Idempotent and incremental: existing files are skipped, so
 re-running after a data update only fetches images that are new. Network
 failures are warnings, never a non-zero exit — a transient CDN hiccup must not
 fail the monitor commit step.
