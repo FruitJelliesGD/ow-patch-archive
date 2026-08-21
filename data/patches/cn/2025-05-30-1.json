@@ -11,22 +11,27 @@
    "title": "平衡性在线修正更新",
    "role": null,
    "description": "本次更新为游戏平衡性在线修正。2025年5月21日更新后的回放代码仍然可用。",
+   "dev": null,
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "英雄更新",
    "role": null,
    "description": "英雄更新",
+   "dev": null,
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "输出",
    "role": "damage",
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "freja",
@@ -122,24 +127,29 @@
       }
      ],
      "perks": [],
-     "abilities": []
+     "abilities": [],
+     "stadium_items": []
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "角斗领域更新",
    "role": null,
    "description": "角斗领域更新",
+   "dev": null,
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "重装",
    "role": "tank",
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "d-va",
@@ -148,63 +158,20 @@
      "role": "tank",
      "icon": "https://ld5.res.netease.com/images/20250321/1742550489107_af2814926f.png",
      "dev_note": "开发者评论：D.Va在区域控制上的效率一直有些乏力，特别是在需要控制关键区域的时候。增强熔岩杀伤力就能够让她制造出更具威胁的区域，让敌人无法随意进入她的领地。至于“聚焦聚变”，这个异能的想法很好，但是在实际运用中，如果敌人围着D.Va绕圈机动，她就一筹莫展了。这就会给人一种D.Va端着一把狙击步枪，却非要跟敌人近身缠斗，有劲使不上的感觉。于是我们决定对其做出少量调整，缓解这种无力感，同时依然保留她不论远近皆能克敌的能力。",
-     "general": [
-      {
-       "text_en": null,
-       "text_cn": "聚变机炮散布减小从66%降低至50%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 66.0,
-       "after": 50.0,
-       "by": -16.0,
-       "by_pct": null,
-       "metric": "聚变机炮散布减小",
-       "unit": "pct"
-      },
-      {
-       "text_en": null,
-       "text_cn": "熔岩伤害从30提高至80。",
-       "subject": null,
-       "dimension": "other",
-       "before": 30.0,
-       "after": 80.0,
-       "by": 50.0,
-       "by_pct": null,
-       "metric": "熔岩伤害",
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "维苏威协议——稀有技能英雄物品",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "熔岩伤害从30提高至80。",
-       "subject": null,
-       "dimension": "other",
-       "before": 30.0,
-       "after": 80.0,
-       "by": 50.0,
-       "by_pct": null,
-       "metric": "熔岩伤害",
-       "unit": null
-      }
-     ],
-     "perks": [
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": null,
        "name_cn": "聚焦聚变",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "聚变机炮散布减小从66%降低至50%。"
+       ],
        "raw_text": [
         "聚焦聚变——异能"
        ]
@@ -212,15 +179,32 @@
       {
        "name_en": null,
        "name_cn": "引火爆发",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "熔岩伤害从30提高至80。"
+       ],
        "raw_text": [
         "引火爆发——异能"
        ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "维苏威协议",
+       "rarity": "稀有",
+       "kind": "ability",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "熔岩伤害从30提高至80。"
+       ],
+       "raw_text": [
+        "维苏威协议——稀有技能英雄物品"
+       ]
       }
-     ],
-     "abilities": []
+     ]
     },
     {
      "slug": "junker-queen",
@@ -229,99 +213,21 @@
      "role": "tank",
      "icon": "https://ld5.res.netease.com/images/20250321/1742550507495_8ee2070c9e.png",
      "dev_note": "开发者评论：近期版本中，更多是“渣客女王”的斧子在负责重要的战斗任务，让她的霰弹枪和匕首有些欠缺存在感。本次更新给后两件工具送去了一些“急需的关怀”，让她的技能组更均衡，也鼓励玩家们运用更多样化的玩法风格。此外我们还增强了“抗揍脑壳”，让她能够更好地扛住爆发伤害，在快节奏的战斗中生存得更久。",
-     "general": [
-      {
-       "text_en": null,
-       "text_cn": "射程从12米延长至15米。",
-       "subject": null,
-       "dimension": "other",
-       "before": 12.0,
-       "after": 15.0,
-       "by": 3.0,
-       "by_pct": null,
-       "metric": "range",
-       "unit": "m"
-      },
-      {
-       "text_en": null,
-       "text_cn": "伤害从30提高至50。",
-       "subject": null,
-       "dimension": "other",
-       "before": 30.0,
-       "after": 50.0,
-       "by": 20.0,
-       "by_pct": null,
-       "metric": "damage",
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "“创伤”的持续时间从0.5秒延长至1秒。",
-       "subject": null,
-       "dimension": "other",
-       "before": 0.5,
-       "after": 1.0,
-       "by": 0.5,
-       "by_pct": null,
-       "metric": "的持续时间",
-       "unit": "s"
-      },
-      {
-       "text_en": null,
-       "text_cn": "伤害加成从35%提高至100%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 35.0,
-       "after": 100.0,
-       "by": 65.0,
-       "by_pct": null,
-       "metric": "damage",
-       "unit": "pct"
-      },
-      {
-       "text_en": null,
-       "text_cn": "射程从12米延长至15米。",
-       "subject": null,
-       "dimension": "other",
-       "before": 12.0,
-       "after": 15.0,
-       "by": 3.0,
-       "by_pct": null,
-       "metric": "range",
-       "unit": "m"
-      },
-      {
-       "text_en": null,
-       "text_cn": "抗揍脑壳——史诗生存英雄物品",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "受伤减免从50%提高至75%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 50.0,
-       "after": 75.0,
-       "by": 25.0,
-       "by_pct": null,
-       "metric": "受伤减免",
-       "unit": "pct"
-      }
-     ],
-     "perks": [
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": null,
        "name_cn": "皇家子弹",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "射程从12米延长至15米。",
+        "伤害从30提高至50。"
+       ],
        "raw_text": [
         "皇家子弹——异能"
        ]
@@ -329,9 +235,13 @@
       {
        "name_en": null,
        "name_cn": "旧创新伤",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "“创伤”的持续时间从0.5秒延长至1秒。"
+       ],
        "raw_text": [
         "旧创新伤——异能"
        ]
@@ -339,9 +249,13 @@
       {
        "name_en": null,
        "name_cn": "耀武利刃",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "伤害加成从35%提高至100%。"
+       ],
        "raw_text": [
         "耀武利刃——异能"
        ]
@@ -349,15 +263,32 @@
       {
        "name_en": null,
        "name_cn": "无情磁力",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "射程从12米延长至15米。"
+       ],
        "raw_text": [
         "无情磁力——异能"
        ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "抗揍脑壳",
+       "rarity": "史诗",
+       "kind": "survival",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "受伤减免从50%提高至75%。"
+       ],
+       "raw_text": [
+        "抗揍脑壳——史诗生存英雄物品"
+       ]
       }
-     ],
-     "abilities": []
+     ]
     },
     {
      "slug": "orisa",
@@ -367,18 +298,6 @@
      "icon": "https://ld5.res.netease.com/images/20250321/1742550495601_a49182ac21.png",
      "dev_note": "开发者评论：奥丽莎的“过热”搭配表现有些不足，特别是在对抗敌方猛烈的进攻时难以守住阵线。它欠缺所需的杀伤力，无法威慑积极逼近的敌人，或是迫使对方走位。本次增强旨在提升她对敌人施压的能力，让她在巩固控制范围时能够更具威胁，起到守关的作用。",
      "general": [
-      {
-       "text_en": null,
-       "text_cn": "伤害加成从10%提高至20%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 10.0,
-       "after": 20.0,
-       "by": 10.0,
-       "by_pct": null,
-       "metric": "damage",
-       "unit": "pct"
-      },
       {
        "text_en": null,
        "text_cn": "电光——稀有英雄武器物品",
@@ -404,19 +323,24 @@
        "unit": "pct"
       }
      ],
-     "perks": [
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": null,
        "name_cn": "燎地灼火",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "伤害加成从10%提高至20%。"
+       ],
        "raw_text": [
         "燎地灼火——异能"
        ]
       }
-     ],
-     "abilities": []
+     ]
     },
     {
      "slug": "reinhardt",
@@ -425,63 +349,20 @@
      "role": "tank",
      "icon": "https://ld5.res.netease.com/images/20250321/1742550472542_3a43236fbc.png",
      "dev_note": "开发者评论：“热血沸腾”和能够触发“火箭重锤”伤害的效果之间的协同效应有些过于强了，所以我们决定将这一机制移除，同时小幅增强了一些使用率较低的异能和物品。",
-     "general": [
-      {
-       "text_en": null,
-       "text_cn": "通过造成伤害恢复屏障生命值的效果从10%提高至15%。",
-       "subject": "health",
-       "dimension": "hero_attr",
-       "before": 10.0,
-       "after": 15.0,
-       "by": 5.0,
-       "by_pct": null,
-       "metric": "通过造成伤害恢复屏障生命值的效果",
-       "unit": "pct"
-      },
-      {
-       "text_en": null,
-       "text_cn": "效果不再应用于“统统砸扁！”和“减震握把”。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "减震握把——史诗武器英雄物品",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "技能强度加成从10%提高至15%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 10.0,
-       "after": 15.0,
-       "by": 5.0,
-       "by_pct": null,
-       "metric": "技能强度加成",
-       "unit": "pct"
-      }
-     ],
-     "perks": [
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": null,
        "name_cn": "屏障重构",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "通过造成伤害恢复屏障生命值的效果从10%提高至15%。"
+       ],
        "raw_text": [
         "屏障重构——异能"
        ]
@@ -489,24 +370,43 @@
       {
        "name_en": null,
        "name_cn": "热血沸腾",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "效果不再应用于“统统砸扁！”和“减震握把”。"
+       ],
        "raw_text": [
         "热血沸腾——异能"
        ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "减震握把",
+       "rarity": "史诗",
+       "kind": "weapon",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "技能强度加成从10%提高至15%。"
+       ],
+       "raw_text": [
+        "减震握把——史诗武器英雄物品"
+       ]
       }
-     ],
-     "abilities": []
+     ]
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "输出",
    "role": "damage",
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "ashe",
@@ -515,99 +415,20 @@
      "role": "damage",
      "icon": "https://ld5.res.netease.com/images/20250321/1742550502754_aa50950ada.png",
      "dev_note": "开发者评论：从整体竞争力方面来看，艾什的地位一直在稳定提升，但在紧要关头，她还是欠缺那关键的一击制胜能力。这次的更新目的是增强一部分表现欠佳的异能和物品，让她的各个不同搭配都能够拥有更大的灵活性，让她在各种场景中都能保有影响力。",
-     "general": [
-      {
-       "text_en": null,
-       "text_cn": "爆炸的伤害降低从66%降低至30%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 66.0,
-       "after": 30.0,
-       "by": -36.0,
-       "by_pct": null,
-       "metric": "爆炸的伤害降低",
-       "unit": "pct"
-      },
-      {
-       "text_en": null,
-       "text_cn": "伤害从50提高至80。",
-       "subject": null,
-       "dimension": "other",
-       "before": 50.0,
-       "after": 80.0,
-       "by": 30.0,
-       "by_pct": null,
-       "metric": "damage",
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "此更改暂时未能在提示文本中得到正确显示，但效果上将按照80计算。我们会在下个赛季修复相应的提示文本。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "治疗效果从3%提高至10%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 3.0,
-       "after": 10.0,
-       "by": 7.0,
-       "by_pct": null,
-       "metric": "治疗效果",
-       "unit": "pct"
-      },
-      {
-       "text_en": null,
-       "text_cn": "响尾蛇——史诗武器英雄物品",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "攻击速度加快从10%提高至15%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 10.0,
-       "after": 15.0,
-       "by": 5.0,
-       "by_pct": null,
-       "metric": "攻击速度加快",
-       "unit": "pct"
-      },
-      {
-       "text_en": null,
-       "text_cn": "伤害加成从15%提高至25%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 15.0,
-       "after": 25.0,
-       "by": 10.0,
-       "by_pct": null,
-       "metric": "damage",
-       "unit": "pct"
-      }
-     ],
-     "perks": [
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": null,
        "name_cn": "炸上加炸",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "爆炸的伤害降低从66%降低至30%。"
+       ],
        "raw_text": [
         "炸上加炸——异能"
        ]
@@ -615,9 +436,14 @@
       {
        "name_en": null,
        "name_cn": "熔火弹药",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "伤害从50提高至80。",
+        "此更改暂时未能在提示文本中得到正确显示，但效果上将按照80计算。我们会在下个赛季修复相应的提示文本。"
+       ],
        "raw_text": [
         "熔火弹药——异能"
        ]
@@ -625,15 +451,33 @@
       {
        "name_en": null,
        "name_cn": "装弹疗法",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "治疗效果从3%提高至10%。"
+       ],
        "raw_text": [
         "装弹疗法——异能"
        ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "响尾蛇",
+       "rarity": "史诗",
+       "kind": "weapon",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "攻击速度加快从10%提高至15%。",
+        "伤害加成从15%提高至25%。"
+       ],
+       "raw_text": [
+        "响尾蛇——史诗武器英雄物品"
+       ]
       }
-     ],
-     "abilities": []
+     ]
     },
     {
      "slug": "freja",
@@ -690,123 +534,22 @@
        "by_pct": null,
        "metric": null,
        "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "伤害区域的伤害加成从50%降低至30%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 50.0,
-       "after": 30.0,
-       "by": -20.0,
-       "by_pct": null,
-       "metric": "damage",
-       "unit": "pct"
-      },
-      {
-       "text_en": null,
-       "text_cn": "伤害区域的持续时间从3秒缩短至2秒。",
-       "subject": null,
-       "dimension": "other",
-       "before": 3.0,
-       "after": 2.0,
-       "by": -1.0,
-       "by_pct": null,
-       "metric": "damage",
-       "unit": "s"
-      },
-      {
-       "text_en": null,
-       "text_cn": "通过使用技能恢复的弹药从最大弹药量的50%降低至25%。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "每次命中的治疗量从最大生命值的3%提高至4%。",
-       "subject": "health",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "便携滑索——史诗武器英雄物品",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "武器强度加成从15%降低至5%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 15.0,
-       "after": 5.0,
-       "by": -10.0,
-       "by_pct": null,
-       "metric": "武器强度加成",
-       "unit": "pct"
-      },
-      {
-       "text_en": null,
-       "text_cn": "额外弩箭造成的伤害降低从50%降低至33%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 50.0,
-       "after": 33.0,
-       "by": -17.0,
-       "by_pct": null,
-       "metric": "额外弩箭造成的伤害降低",
-       "unit": "pct"
-      },
-      {
-       "text_en": null,
-       "text_cn": "磁性涡流——史诗技能英雄物品",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "已禁用。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
       }
      ],
-     "perks": [
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": null,
        "name_cn": "流星天劫",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "伤害区域的伤害加成从50%降低至30%。",
+        "伤害区域的持续时间从3秒缩短至2秒。"
+       ],
        "raw_text": [
         "流星天劫——异能"
        ]
@@ -814,9 +557,13 @@
       {
        "name_en": null,
        "name_cn": "弹药充沛",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "通过使用技能恢复的弹药从最大弹药量的50%降低至25%。"
+       ],
        "raw_text": [
         "弹药充沛——异能"
        ]
@@ -824,25 +571,60 @@
       {
        "name_en": null,
        "name_cn": "觅食专家",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "每次命中的治疗量从最大生命值的3%提高至4%。"
+       ],
        "raw_text": [
         "觅食专家——异能"
        ]
       },
       {
        "name_en": null,
-       "name_cn": "双箭在侧",
+       "name_cn": "便携滑索",
+       "rarity": "史诗",
+       "kind": "weapon",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "武器强度加成从15%降低至5%。"
+       ],
+       "raw_text": [
+        "便携滑索——史诗武器英雄物品"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "双箭在侧",
+       "rarity": null,
+       "kind": "power",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "额外弩箭造成的伤害降低从50%降低至33%。"
+       ],
        "raw_text": [
         "双箭在侧——异能"
        ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "磁性涡流",
+       "rarity": "史诗",
+       "kind": "ability",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "已禁用。"
+       ],
+       "raw_text": [
+        "磁性涡流——史诗技能英雄物品"
+       ]
       }
-     ],
-     "abilities": []
+     ]
     },
     {
      "slug": "mei",
@@ -851,33 +633,25 @@
      "role": "damage",
      "icon": "https://ld5.res.netease.com/images/20250321/1742550490449_12cabd9351.png",
      "dev_note": "开发者评论：这次我们希望通过提升这个异能和“暴雪”的协同作用，提升美在无法使用“急冻”时的生存能力。这次调整应该能够为使用终极技能或施放迷你暴雪时的美提供更高的防御，并让她在小规模战斗中更好地保存自己，对敌人施加压力。",
-     "general": [
-      {
-       "text_en": null,
-       "text_cn": "每秒治疗量从5%提高至15%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 5.0,
-       "after": 15.0,
-       "by": 10.0,
-       "by_pct": null,
-       "metric": "每秒治疗量",
-       "unit": "pct"
-      }
-     ],
-     "perks": [
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": null,
        "name_cn": "流风回雪",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "每秒治疗量从5%提高至15%。"
+       ],
        "raw_text": [
         "流风回雪——异能"
        ]
       }
-     ],
-     "abilities": []
+     ]
     },
     {
      "slug": "soldier-76",
@@ -886,123 +660,20 @@
      "role": "damage",
      "icon": "https://ld5.res.netease.com/images/20250321/1742550486680_e6ecee4b2c.png",
      "dev_note": "开发者评论：“生物力场”搭配的人气一直不高，而且表现也不尽如人意，所以我们决定给它增加一些火力。在“士兵：76”的各种武器强度搭配中，“链式步枪”流一直非常强势，所以我们稍稍对其进行削弱，以鼓励大家采用更多样化的打法。",
-     "general": [
-      {
-       "text_en": null,
-       "text_cn": "生物力场持续时间的缩短从70%降低至50%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 70.0,
-       "after": 50.0,
-       "by": -20.0,
-       "by_pct": null,
-       "metric": "生物力场持续时间的缩短",
-       "unit": "pct"
-      },
-      {
-       "text_en": null,
-       "text_cn": "每次射击武器强度加成从0.5%降低至0.4%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 0.5,
-       "after": 0.4,
-       "by": -0.1,
-       "by_pct": null,
-       "metric": "每次射击武器强度加成",
-       "unit": "pct"
-      },
-      {
-       "text_en": null,
-       "text_cn": "电池模块——稀有技能英雄物品",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "生物力场持续时间加成从30%提高至40%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 30.0,
-       "after": 40.0,
-       "by": 10.0,
-       "by_pct": null,
-       "metric": "生物力场持续时间加成",
-       "unit": "pct"
-      },
-      {
-       "text_en": null,
-       "text_cn": "快速反应半径——史诗技能英雄物品",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "生物力场半径加成从30%提高至40%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 30.0,
-       "after": 40.0,
-       "by": 10.0,
-       "by_pct": null,
-       "metric": "生物力场半径加成",
-       "unit": "pct"
-      },
-      {
-       "text_en": null,
-       "text_cn": "疲劳抑制剂——稀有生存英雄物品",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "移除5%的攻击速度加成。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "添加5%的技能强度加成。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      }
-     ],
-     "perks": [
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": null,
        "name_cn": "战术整备",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "生物力场持续时间的缩短从70%降低至50%。"
+       ],
        "raw_text": [
         "战术整备——异能"
        ]
@@ -1010,24 +681,72 @@
       {
        "name_en": null,
        "name_cn": "链式步枪",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "每次射击武器强度加成从0.5%降低至0.4%。"
+       ],
        "raw_text": [
         "链式步枪——异能"
        ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "电池模块",
+       "rarity": "稀有",
+       "kind": "ability",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "生物力场持续时间加成从30%提高至40%。"
+       ],
+       "raw_text": [
+        "电池模块——稀有技能英雄物品"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "快速反应半径",
+       "rarity": "史诗",
+       "kind": "ability",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "生物力场半径加成从30%提高至40%。"
+       ],
+       "raw_text": [
+        "快速反应半径——史诗技能英雄物品"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "疲劳抑制剂",
+       "rarity": "稀有",
+       "kind": "survival",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "移除5%的攻击速度加成。",
+        "添加5%的技能强度加成。"
+       ],
+       "raw_text": [
+        "疲劳抑制剂——稀有生存英雄物品"
+       ]
       }
-     ],
-     "abilities": []
+     ]
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "支援",
    "role": "support",
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "ana",
@@ -1036,93 +755,54 @@
      "role": "support",
      "icon": "https://ld5.res.netease.com/images/20250321/1742550494571_8930da28ec.png",
      "dev_note": "开发者评论：安娜在中距离战斗中较为脆弱，因此我们希望让她更加灵活、更扛揍。这些改动提升了她的生存能力，应该能让她在承压情况下更从容地走位，并能够更积极地参加战斗，同时又不耽误她行使关键的支援职责。“战术步枪”是大家都非常喜爱的异能，但我们频繁收到反馈，表示它的目标锁定功能有时不仅提供不了帮助，反而会造成阻碍。在高压之下，其自动瞄准功能会过于频繁地锁定盟友，而不是敌人，进而干扰伤害输出。我们正在优化它的瞄准机制，以更好地优先应对威胁，确保它能够在战斗中成为更可靠的抗敌手段。",
-     "general": [
-      {
-       "text_en": null,
-       "text_cn": "瞄准追踪角度减小50%。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "疾冲战靴——稀有技能英雄物品",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "移动速度加成从5%提高至10%。",
-       "subject": "move_speed",
-       "dimension": "hero_attr",
-       "before": 5.0,
-       "after": 10.0,
-       "by": 5.0,
-       "by_pct": null,
-       "metric": "move_speed",
-       "unit": "pct"
-      },
-      {
-       "text_en": null,
-       "text_cn": "冷却时间从4秒缩短至3秒。",
-       "subject": null,
-       "dimension": "other",
-       "before": 4.0,
-       "after": 3.0,
-       "by": -1.0,
-       "by_pct": null,
-       "metric": "cooldown",
-       "unit": "s"
-      },
-      {
-       "text_en": null,
-       "text_cn": "集束核心——史诗技能英雄物品",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "生物手雷的冷却时间从每命中一个目标减少1秒增加到减少2秒。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      }
-     ],
-     "perks": [
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": null,
        "name_cn": "战术步枪",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "瞄准追踪角度减小50%。"
+       ],
        "raw_text": [
         "战术步枪——异能"
        ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "疾冲战靴",
+       "rarity": "稀有",
+       "kind": "ability",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "移动速度加成从5%提高至10%。",
+        "冷却时间从4秒缩短至3秒。"
+       ],
+       "raw_text": [
+        "疾冲战靴——稀有技能英雄物品"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "集束核心",
+       "rarity": "史诗",
+       "kind": "ability",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "生物手雷的冷却时间从每命中一个目标减少1秒增加到减少2秒。"
+       ],
+       "raw_text": [
+        "集束核心——史诗技能英雄物品"
+       ]
       }
-     ],
-     "abilities": []
+     ]
     },
     {
      "slug": "juno",
@@ -1131,39 +811,20 @@
      "role": "support",
      "icon": "https://ld5.res.netease.com/images/20250321/1742550519856_21b6bf24c2.png",
      "dev_note": "开发者评论：在朱诺的技能组中，“超能环域”的使用率较高，但和她其他的异能相比，对战局的影响力却稍显不足。我们决定对其增强，将这个异能拉到与其他可选项同一水平，让玩家们在选择它时能够通过巧妙的走位和时机选择获得收益。",
-     "general": [
-      {
-       "text_en": null,
-       "text_cn": "提供的过量生命值从50点提高至100点。",
-       "subject": "health",
-       "dimension": "hero_attr",
-       "before": 50.0,
-       "after": 100.0,
-       "by": 50.0,
-       "by_pct": null,
-       "metric": "提供的过量生命值",
-       "unit": "hp"
-      },
-      {
-       "text_en": null,
-       "text_cn": "减速持续时间从1秒延长至2秒。",
-       "subject": null,
-       "dimension": "other",
-       "before": 1.0,
-       "after": 2.0,
-       "by": 1.0,
-       "by_pct": null,
-       "metric": "减速持续时间",
-       "unit": "s"
-      }
-     ],
-     "perks": [
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": null,
        "name_cn": "超能幻愈",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "提供的过量生命值从50点提高至100点。"
+       ],
        "raw_text": [
         "超能幻愈——异能"
        ]
@@ -1171,15 +832,18 @@
       {
        "name_en": null,
        "name_cn": "黑洞",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "减速持续时间从1秒延长至2秒。"
+       ],
        "raw_text": [
         "黑洞——异能"
        ]
       }
-     ],
-     "abilities": []
+     ]
     },
     {
      "slug": "kiriko",
@@ -1188,42 +852,36 @@
      "role": "support",
      "icon": "https://ld5.res.netease.com/images/20250321/1742550506165_f2d2c2a855.png",
      "dev_note": "开发者评论：“自力更生”在持续作战方面存在短板，特别是在战斗陷入胶着的时候。这次增强能让这个异能对战局造成更大的影响，让玩家们更高效地进行治疗，而且能在不依靠外部治疗的情况下坚持更长的时间。",
-     "general": [
-      {
-       "text_en": null,
-       "text_cn": "治疗效果从5%提高至15%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 5.0,
-       "after": 15.0,
-       "by": 10.0,
-       "by_pct": null,
-       "metric": "治疗效果",
-       "unit": "pct"
-      }
-     ],
-     "perks": [
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": null,
        "name_cn": "自力更生",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "治疗效果从5%提高至15%。"
+       ],
        "raw_text": [
         "自力更生——异能"
        ]
       }
-     ],
-     "abilities": []
+     ]
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "错误修复",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -1231,7 +889,8 @@
      "body": "D.Va\n\n- 修复了一个“聚变机炮”和“聚焦聚变”异能同时装备时发射出弹丸数较少的问题。\n\n弗蕾娅\n\n- 修复了一个“小型缚索”的流星索直接命中敌人时造成的伤害高于预期的问题。\n- 修复了一个“流星天劫”的持续伤害区域不会应用技能伤害触发效果的问题。",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   }
  ],
  "raw_text": null,

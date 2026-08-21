@@ -11,14 +11,17 @@
    "title": "Tracer's Comic Challenge",
    "role": null,
    "description": "Issue #1 of a 5-part comic book series, Tracer - London Calling, is now available! Blink into battle and celebrate to launch with unlockable in-game content! Wins in Quick Play, Competitive Play, Arcade, or Experimental will earn you a themed player icon, spray, and an epic skin: Comic Book Tracer!\n\nNow through September 28, earn additional rewards by watching Overwatch streams on Twitch! Earn a total of 6 Tracer’s Comic Challenge sprays, loaded with their own special sound effects.",
+   "dev": null,
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "Competitive Updates",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -31,13 +34,15 @@
      "body": "Adjusted ranked leaver penalties. Penalties are now more severe and will lead to a season ban more quickly",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "Workshop Updates",
    "role": null,
    "description": "- The valid range for numbers stored in variables and used in mathematical expressions has been increased",
+   "dev": "We're pleased to bring you the ability to scale players to very small and very large sizes, but it comes with one notable caveat: Scaling players to very large sizes and moving them into spaces where they don't easily fit can impact server load and potentially cause your instance to shut down. There are two ways to mitigate this: First, you can choose one of the Workshop maps. These are designed for experimentation and can accommodate very large players. Second, you can use the \"Disable Movement Collision With Environment\" action. This will cause the player to pass through walls and ceilings, though the player can still stand on floors if the \"Include Floors\" option is set to False. (Collision with floors does not have the same server load implications.) When in doubt, you can display the Server Load values in the HUD in order to determine how scaling is affecting server load.",
    "heroes": [],
    "blocks": [
     {
@@ -45,13 +50,15 @@
      "body": "- Start Scaling Players\n- Stop Scaling Players\n- Start Scaling Barriers\n- Stop Scaling Barriers",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "Bug Fixes",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -74,9 +81,10 @@
      "body": "- Fixed a bug that could cause the game to enter an endless match restart cycle if too many of certain actions were executed immediately on match start\n- Fixed a bug that could cause players to lose their bodies altogether\nwhen the \"Start Forcing Player To Be Hero\" action was combined with\nControl maps or the \"Spawn As Random Hero\" setting\n- Fixed a bug preventing automatic reloads from being disabled when disabling reloading via Workshop\n- Fixed a bug preventing D.Va from properly handling ammo/reload\nrelated actions/values when out of mech\n- Fixed a bug where strings with unicode characters could be trimmed incorrectly when copy-pasting\n- Fixed a bug where certain values failed to export from inspector when\ncopying as action text\n- Fixed a bug that caused issues with third person spectating when scaling\n- Fixed a bug that caused McCree's Flashbang to not hit targets when\nscaled up to 20 times\n- Fixed a bug that caused air and ground movement speeds to differ when setting a character's movement speed to very slow",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   }
  ],
  "raw_text": null,
- "hash": "sha256:5016329bfab681a5958755b5744a8c3e6c5e2882a5505b6877db4a5d3338b842"
+ "hash": "sha256:95eb326c95911e9e0b6dc6c85bc44c6eee5d0a6bcbac0bf3876265cc0617416f"
 }

@@ -11,22 +11,27 @@
    "title": "回放代码重置",
    "role": null,
    "description": "这是一个错误修复补丁，以及部分角斗领域平衡性更新。此前更新中的游戏内回放代码和亮点已移除。",
+   "dev": null,
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "角斗领域更新",
    "role": null,
    "description": "角斗领域更新",
+   "dev": null,
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "重装",
    "role": "tank",
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "d-va",
@@ -35,42 +40,36 @@
      "role": "tank",
      "icon": "https://ld5.res.netease.com/images/20250321/1742550489107_af2814926f.png",
      "dev_note": "开发者评论：“小兔重砸”由于拥有较强的干扰能力，所以之前我们将其削弱了一些。但经过一整个赛季的观察，很明显它的效果被过度削弱了。我们决定将这个异能的威力回调一些，让D.Va能够打出她标志性的“暴扣灌篮”精彩场面，也让在正确的时机使用这个异能的玩家成就感满满。",
-     "general": [
-      {
-       "text_en": null,
-       "text_cn": "“小兔重砸”的伤害倍率从20%提高至30%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 20.0,
-       "after": 30.0,
-       "by": 10.0,
-       "by_pct": null,
-       "metric": "的伤害倍率",
-       "unit": "pct"
-      }
-     ],
-     "perks": [
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": null,
        "name_cn": "小兔重砸",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "“小兔重砸”的伤害倍率从20%提高至30%。"
+       ],
        "raw_text": [
         "小兔重砸——异能"
        ]
       }
-     ],
-     "abilities": []
+     ]
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "输出",
    "role": "damage",
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "junkrat",
@@ -91,111 +90,21 @@
        "by_pct": 11.11,
        "metric": "通过造成伤害和提供治疗获得的角斗资金",
        "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "修复了当你有一次充能时，使用“捕兽夹”还会消耗掉正在充能的这个充能点的问题。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "“震荡地雷”从效果降低50%更改为效果降低30%。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": 50.0,
-       "metric": "从效果",
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "炸弹落下频率从每0.4秒1颗提升到每0.3秒1颗。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "锂合金——史诗技能英雄物品",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "燃烧伤害从50提高至75。",
-       "subject": null,
-       "dimension": "other",
-       "before": 50.0,
-       "after": 75.0,
-       "by": 25.0,
-       "by_pct": null,
-       "metric": "燃烧伤害",
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "法尔克斯妙妙燃料™——史诗技能英雄物品",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "技能强度从10%提高至15%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 10.0,
-       "after": 15.0,
-       "by": 5.0,
-       "by_pct": null,
-       "metric": "技能强度",
-       "unit": "pct"
-      },
-      {
-       "text_en": null,
-       "text_cn": "技能生命汲取从10%提高至15%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 10.0,
-       "after": 15.0,
-       "by": 5.0,
-       "by_pct": null,
-       "metric": "技能生命汲取",
-       "unit": "pct"
       }
      ],
-     "perks": [
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": null,
        "name_cn": "夹了又夹！",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "修复了当你有一次充能时，使用“捕兽夹”还会消耗掉正在充能的这个充能点的问题。"
+       ],
        "raw_text": [
         "夹了又夹！——异能"
        ]
@@ -203,9 +112,13 @@
       {
        "name_en": null,
        "name_cn": "嘣嘣跳跳",
-       "status": "changed",
+       "rarity": null,
+       "kind": "power",
+       "status": "moved",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "“震荡地雷”从效果降低50%更改为效果降低30%。"
+       ],
        "raw_text": [
         "嘣嘣跳跳——异能"
        ]
@@ -213,15 +126,47 @@
       {
        "name_en": null,
        "name_cn": "天降炸弹",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "炸弹落下频率从每0.4秒1颗提升到每0.3秒1颗。"
+       ],
        "raw_text": [
         "天降炸弹——异能"
        ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "锂合金",
+       "rarity": "史诗",
+       "kind": "ability",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "燃烧伤害从50提高至75。"
+       ],
+       "raw_text": [
+        "锂合金——史诗技能英雄物品"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "法尔克斯妙妙燃料™",
+       "rarity": "史诗",
+       "kind": "ability",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "技能强度从10%提高至15%。",
+        "技能生命汲取从10%提高至15%。"
+       ],
+       "raw_text": [
+        "法尔克斯妙妙燃料™——史诗技能英雄物品"
+       ]
       }
-     ],
-     "abilities": []
+     ]
     },
     {
      "slug": "mei",
@@ -230,42 +175,36 @@
      "role": "damage",
      "icon": "https://ld5.res.netease.com/images/20250321/1742550490449_12cabd9351.png",
      "dev_note": "开发者评论：“墙立一跳”现在可以跟“冰上加冰”产生良好的协同效应，为美提供了更多机动选择，也让她可以更频繁地使用迷你暴雪。本次更新能让美更流畅地移动，为她提供控制机会，鼓励玩家采用更多元、动态的打法，为巧妙的选位提供优势。",
-     "general": [
-      {
-       "text_en": null,
-       "text_cn": "冰上加冰也会重置下一次“墙立一跳”的冷却时间。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      }
-     ],
-     "perks": [
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": null,
        "name_cn": "冰上加冰",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "冰上加冰也会重置下一次“墙立一跳”的冷却时间。"
+       ],
        "raw_text": [
         "冰上加冰——异能"
        ]
       }
-     ],
-     "abilities": []
+     ]
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "支援",
    "role": "support",
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "ana",
@@ -274,75 +213,20 @@
      "role": "support",
      "icon": "https://ld5.res.netease.com/images/20250321/1742550494571_8930da28ec.png",
      "dev_note": "开发者评论：安娜在强化队友方面一直是效率最高的英雄之一，本次更新旨在进一步增强她的这一优势。我们决定强化她的技能，让她能够使用自己的关键能力扭转战局，其中主要是通过提升“生物手雷”的威力，进而在关键的团战中制造出更多“孤注一掷、绝处逢生”的时刻。以上改动旨在让安娜在协同战斗中成为更具决定性作用的力量。",
-     "general": [
-      {
-       "text_en": null,
-       "text_cn": "持续时间缩短效果从50%降低至25%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 50.0,
-       "after": 25.0,
-       "by": -25.0,
-       "by_pct": null,
-       "metric": "duration",
-       "unit": "pct"
-      },
-      {
-       "text_en": null,
-       "text_cn": "自身[纳米激素]持续时间从50%延长至100%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 50.0,
-       "after": 100.0,
-       "by": 50.0,
-       "by_pct": null,
-       "metric": "duration",
-       "unit": "pct"
-      },
-      {
-       "text_en": null,
-       "text_cn": "提供的终极技能充能从25%提高至35%。",
-       "subject": "ultimate_cost",
-       "dimension": "hero_attr",
-       "before": 25.0,
-       "after": 35.0,
-       "by": 10.0,
-       "by_pct": null,
-       "metric": "提供的终极技能充能",
-       "unit": "pct"
-      },
-      {
-       "text_en": null,
-       "text_cn": "减速持续时间从1.5秒延长至2.5秒。",
-       "subject": null,
-       "dimension": "other",
-       "before": 1.5,
-       "after": 2.5,
-       "by": 1.0,
-       "by_pct": null,
-       "metric": "减速持续时间",
-       "unit": "s"
-      },
-      {
-       "text_en": null,
-       "text_cn": "伤害从50提高至75。",
-       "subject": null,
-       "dimension": "other",
-       "before": 50.0,
-       "after": 75.0,
-       "by": 25.0,
-       "by_pct": null,
-       "metric": "damage",
-       "unit": null
-      }
-     ],
-     "perks": [
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": null,
        "name_cn": "轮到我们了",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "持续时间缩短效果从50%降低至25%。"
+       ],
        "raw_text": [
         "轮到我们了——异能"
        ]
@@ -350,9 +234,13 @@
       {
        "name_en": null,
        "name_cn": "轮到我了",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "自身[纳米激素]持续时间从50%延长至100%。"
+       ],
        "raw_text": [
         "轮到我了——异能"
        ]
@@ -360,9 +248,13 @@
       {
        "name_en": null,
        "name_cn": "潜力释放",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "提供的终极技能充能从25%提高至35%。"
+       ],
        "raw_text": [
         "潜力释放——异能"
        ]
@@ -370,9 +262,13 @@
       {
        "name_en": null,
        "name_cn": "缓时手雷",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "减速持续时间从1.5秒延长至2.5秒。"
+       ],
        "raw_text": [
         "缓时手雷——异能"
        ]
@@ -380,15 +276,18 @@
       {
        "name_en": null,
        "name_cn": "毒性药剂",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "伤害从50提高至75。"
+       ],
        "raw_text": [
         "毒性药剂——异能"
        ]
       }
-     ],
-     "abilities": []
+     ]
     },
     {
      "slug": "juno",
@@ -397,33 +296,25 @@
      "role": "support",
      "icon": "https://ld5.res.netease.com/images/20250321/1742550519856_21b6bf24c2.png",
      "dev_note": "开发者评论：在较高的匹配等级中，朱诺获得了“飞天猎空”这个外号，她可不是浪得虚名的。她的生存能力，特别是在第三回合之后，让她变得比泥鳅还滑，特别难以对付。这次基础调整主要围绕在略微削弱她的生存能力，让玩家在与她对抗时有一定难度，但又不至于觉得不太公平。",
-     "general": [
-      {
-       "text_en": null,
-       "text_cn": "过量生命值从100降低至75。",
-       "subject": "health",
-       "dimension": "hero_attr",
-       "before": 100.0,
-       "after": 75.0,
-       "by": -25.0,
-       "by_pct": null,
-       "metric": "overhealth",
-       "unit": "hp"
-      }
-     ],
-     "perks": [
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": null,
        "name_cn": "超能幻愈",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "过量生命值从100降低至75。"
+       ],
        "raw_text": [
         "超能幻愈——异能"
        ]
       }
-     ],
-     "abilities": []
+     ]
     },
     {
      "slug": "kiriko",
@@ -432,45 +323,26 @@
      "role": "support",
      "icon": "https://ld5.res.netease.com/images/20250321/1742550506165_f2d2c2a855.png",
      "dev_note": "开发者评论：我们决定改变雾子的分身的定位，从强大而冷血的刺客改为诱饵和辅助。此次调整是为后续改动迈出的第一步，最终我们希望雾子的能力无论是对雾子玩家还是对敌人来说，都更公平、更具互动性、更有乐趣。我们计划在未来继续更新，进一步优化这个技能的定位和游戏中的效果。",
-     "general": [
-      {
-       "text_en": null,
-       "text_cn": "分身现在造成的伤害和提供的治疗降低65%。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": 65.0,
-       "metric": "分身现在造成的伤害和提供的治疗",
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "持续时间从2.5秒延长至4秒。",
-       "subject": null,
-       "dimension": "other",
-       "before": 2.5,
-       "after": 4.0,
-       "by": 1.5,
-       "by_pct": null,
-       "metric": "duration",
-       "unit": "s"
-      }
-     ],
-     "perks": [
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": null,
        "name_cn": "分身术",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "分身现在造成的伤害和提供的治疗降低65%。",
+        "持续时间从2.5秒延长至4秒。"
+       ],
        "raw_text": [
         "分身术——异能"
        ]
       }
-     ],
-     "abilities": []
+     ]
     },
     {
      "slug": "zenyatta",
@@ -479,51 +351,20 @@
      "role": "support",
      "icon": "https://ld5.res.netease.com/images/20250321/1742550479805_b62ccc621d.png",
      "dev_note": "开发者评论：虽然禅雅塔的定位更多偏向于进攻打法，我们这次也做出一些调整，以鼓励他的治疗型搭配。这些改动的目的是为了让他能为全队提供更强的治疗辅助，让更想要扮演传统支援职责的玩家能够获得更好的体验。",
-     "general": [
-      {
-       "text_en": null,
-       "text_cn": "治疗量降低效果从45%降低至40%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 45.0,
-       "after": 40.0,
-       "by": -5.0,
-       "by_pct": null,
-       "metric": "healing",
-       "unit": "pct"
-      },
-      {
-       "text_en": null,
-       "text_cn": "法珠持续时间从5秒延长至10秒。",
-       "subject": null,
-       "dimension": "other",
-       "before": 5.0,
-       "after": 10.0,
-       "by": 5.0,
-       "by_pct": null,
-       "metric": "法珠持续时间",
-       "unit": "s"
-      },
-      {
-       "text_en": null,
-       "text_cn": "终极技能保存上限从65%提高至75%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 65.0,
-       "after": 75.0,
-       "by": 10.0,
-       "by_pct": null,
-       "metric": "终极技能保存上限",
-       "unit": "pct"
-      }
-     ],
-     "perks": [
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": null,
        "name_cn": "双音谐奏",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "治疗量降低效果从45%降低至40%。"
+       ],
        "raw_text": [
         "双音谐奏——异能"
        ]
@@ -531,9 +372,13 @@
       {
        "name_en": null,
        "name_cn": "信念长存",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "法珠持续时间从5秒延长至10秒。"
+       ],
        "raw_text": [
         "信念长存——异能"
        ]
@@ -541,24 +386,29 @@
       {
        "name_en": null,
        "name_cn": "神识随心",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "终极技能保存上限从65%提高至75%。"
+       ],
        "raw_text": [
         "神识随心——异能"
        ]
       }
-     ],
-     "abilities": []
+     ]
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "错误修复",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -581,7 +431,8 @@
      "body": "狂鼠\n\n- 修复了“狂鼠”的“炸到上头”和“指挥官的弹夹”模组无法提供正确弹药数量的问题。\n- 修复了“狂鼠”的“嗖嗖润滑油”模组在新的“震荡地雷”引爆后不会刷新的问题。\n\n雾子\n\n- 修复了雾子在同时使用“分身术”异能和“瞬”时，分身会获得过多攻速提升的问题。\n- 修复了雾子在使用“分身术”异能时，分身的伤害和治疗数据无法被统计的问题。\n\n西格玛\n\n- 修复了西格玛装备“质量投射器”异能时，“实验屏障”会错误地阻挡部分射弹伤害的问题。",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   }
  ],
  "raw_text": null,

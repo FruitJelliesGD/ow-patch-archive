@@ -11,22 +11,27 @@
    "title": "Hotfix Balance Update",
    "role": null,
    "description": "This is a game balance hotfix. Replay codes from the April 22, 2025 patch are still available.",
+   "dev": null,
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "Stadium Balance Updates",
    "role": null,
    "description": "Stadium Balance Updates\n\nDeveloper Comments: In this update we are primarily adjusting some outlier Powers and Items as well as adjusting a few that can lead to some undesirable experiences in Stadium. We’re also adjusting how much Stadium Cash is earned from damage and healing for a number of heroes. In the near future, we’ll be taking a close look at some of the Powers and Items that are underperforming to see how we can increase their viability.",
+   "dev": "Developer Comments: In this update we are primarily adjusting some outlier Powers and Items as well as adjusting a few that can lead to some undesirable experiences in Stadium. We’re also adjusting how much Stadium Cash is earned from damage and healing for a number of heroes. In the near future, we’ll be taking a close look at some of the Powers and Items that are underperforming to see how we can increase their viability.",
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "Tank",
    "role": "tank",
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "d-va",
@@ -110,7 +115,8 @@
       }
      ],
      "perks": [],
-     "abilities": []
+     "abilities": [],
+     "stadium_items": []
     },
     {
      "slug": "orisa",
@@ -170,7 +176,8 @@
       }
      ],
      "perks": [],
-     "abilities": []
+     "abilities": [],
+     "stadium_items": []
     },
     {
      "slug": "reinhardt",
@@ -194,7 +201,8 @@
       }
      ],
      "perks": [],
-     "abilities": []
+     "abilities": [],
+     "stadium_items": []
     },
     {
      "slug": "zarya",
@@ -254,16 +262,19 @@
       }
      ],
      "perks": [],
-     "abilities": []
+     "abilities": [],
+     "stadium_items": []
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "Damage",
    "role": "damage",
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "mei",
@@ -272,57 +283,27 @@
      "role": "damage",
      "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/08586dceed41e030d575b2b643118f55390f1c2af91dd15394528f5399fcc934.png",
      "dev_note": "Developer Comments: While rolling around in ice balls has been very fun, we feel that the power currently feels too consistent at disrupting players for a long duration ability. We're hoping with these changes that it will still feel powerful but reduce its ability to carry an enemy around for its entire duration.",
-     "general": [
-      {
-       "text_en": "Reduced the knockback frequency rate by 60%.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Increased how far enemies are knocked back.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Increased the damage dealt per knockback to 20 (up from 10).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      }
-     ],
-     "perks": [
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": "Coulder",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Reduced the knockback frequency rate by 60%.",
+        "Increased how far enemies are knocked back.",
+        "Increased the damage dealt per knockback to 20 (up from 10)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Coulder - Power"
        ]
       }
-     ],
-     "abilities": []
+     ]
     },
     {
      "slug": "reaper",
@@ -346,7 +327,8 @@
       }
      ],
      "perks": [],
-     "abilities": []
+     "abilities": [],
+     "stadium_items": []
     },
     {
      "slug": "soldier-76",
@@ -418,16 +400,19 @@
       }
      ],
      "perks": [],
-     "abilities": []
+     "abilities": [],
+     "stadium_items": []
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "Support",
    "role": "support",
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "kiriko",
@@ -451,7 +436,8 @@
       }
      ],
      "perks": [],
-     "abilities": []
+     "abilities": [],
+     "stadium_items": []
     },
     {
      "slug": "juno",
@@ -559,7 +545,8 @@
       }
      ],
      "perks": [],
-     "abilities": []
+     "abilities": [],
+     "stadium_items": []
     },
     {
      "slug": "lucio",
@@ -679,12 +666,14 @@
       }
      ],
      "perks": [],
-     "abilities": []
+     "abilities": [],
+     "stadium_items": []
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   }
  ],
  "raw_text": null,
- "hash": "sha256:dcdfab8b82bd2fb08e7df1da613e7562ffebba74ccad41758f7a399fab8ea934"
+ "hash": "sha256:2c1932d5d68dbf7f6c6fd997ab20f2455fd82670cdf74292d7abd5af3f7ff255"
 }

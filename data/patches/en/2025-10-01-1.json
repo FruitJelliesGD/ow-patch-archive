@@ -11,6 +11,7 @@
    "title": "Stadium Updates",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -18,13 +19,15 @@
      "body": "- Fixed an issue where players near their predicted rank started to gain extremely low Stadium Points.\n- We have adjusted the Stadium Ranked distribution curve to make it easier to reach Elite rank for most players.\n- We have made adjustments to reduce the amount of Stadium Points lost when players lose a match, as each round won now provides a greater reduction in the overall point loss.\n- We have made adjustments to the maximum and minimum amount of Stadium Points that can be won or lost from a competitive match.",
      "dev": "Developer Comments: The dynamic updates to Stadium Competitive have made progressing in the system feel more difficult as players are now finding their predicted ranks faster. We are making improvements to smooth out this experience and will keep a close eye on this as we head into Season 19."
     }
-   ]
+   ],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "Damage",
    "role": "damage",
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "freja",
@@ -33,74 +36,19 @@
      "role": "damage",
      "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/828848437c49bc5ed4a2cf900c85986a4af265d71d1ea9ddf260b8a0236f71a9.png",
      "dev_note": "Developer Comments: Freja has had the lowest winrate in Stadium for an extended period of time, so we're adding some more consistency to her builds to make her more competitive amongst the DPS roster. We're aware she has a very high damage ceiling in the right hands, so these changes are aimed at helping her consistency but not raise her damage ceiling or one shot capabilities.",
-     "general": [
-      {
-       "text_en": "Increased effectiveness to 30% reduced effectiveness (up from 40% reduced effectiveness).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Increased explosion radius increased to 50% (up from 33%).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": 33.0,
-       "after": 50.0,
-       "by": 17.0,
-       "by_pct": null,
-       "metric": "increased explosion radius",
-       "unit": null
-      },
-      {
-       "text_en": "Increased Max Life Heal per shot to 5% (up from 4%).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Ammo Restore on Ability Use increased to 40% (up from 25%).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": 25.0,
-       "after": 40.0,
-       "by": 15.0,
-       "by_pct": null,
-       "metric": "ammo",
-       "unit": null
-      },
-      {
-       "text_en": "Increased damage on additional bolts to 50% reduced (up from 66% reduced).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      }
-     ],
-     "perks": [
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": "Lille Fælde",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Increased effectiveness to 30% reduced effectiveness (up from 40% reduced effectiveness)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Lille Fælde - Power"
@@ -109,8 +57,12 @@
       {
        "name_en": "Seismic Shot",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Increased explosion radius increased to 50% (up from 33%)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Seismic Shot - Power"
@@ -119,8 +71,12 @@
       {
        "name_en": "Forager",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Increased Max Life Heal per shot to 5% (up from 4%)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Forager - Power"
@@ -129,8 +85,12 @@
       {
        "name_en": "Deep Pockets",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Ammo Restore on Ability Use increased to 40% (up from 25%)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Deep Pockets - Power"
@@ -139,15 +99,18 @@
       {
        "name_en": "Volley à Deux",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Increased damage on additional bolts to 50% reduced (up from 66% reduced)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Volley à Deux - Power"
        ]
       }
-     ],
-     "abilities": []
+     ]
     },
     {
      "slug": "tracer",
@@ -180,98 +143,20 @@
        "by_pct": null,
        "metric": null,
        "unit": null
-      },
-      {
-       "text_en": "Healing increased to 100% of damage taken (up from 75%).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Cooldown reduction reduced to 0.04s (down from 0.05s).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Auto-aim reduced to 4 shots (down from 6).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": 6.0,
-       "after": 4.0,
-       "by": -2.0,
-       "by_pct": null,
-       "metric": "auto-aim",
-       "unit": null
-      },
-      {
-       "text_en": "Increased the portal's duration to 8s (up from 6s).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Chrono Bomb - Epic Ability Hero Item",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Increased Ability Power to 20% (up from 15%).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Increased cost to 10500 (up from 10000).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
       }
      ],
-     "perks": [
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": "Alternate Ending",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Healing increased to 100% of damage taken (up from 75%)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Alternate Ending - Power"
@@ -280,8 +165,12 @@
       {
        "name_en": "Blink of An Eye",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Cooldown reduction reduced to 0.04s (down from 0.05s)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Blink of An Eye - Power"
@@ -290,8 +179,12 @@
       {
        "name_en": "Foresight",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Auto-aim reduced to 4 shots (down from 6)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Foresight - Power"
@@ -300,24 +193,44 @@
       {
        "name_en": "Temportal",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Increased the portal's duration to 8s (up from 6s)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Temportal - Power"
        ]
+      },
+      {
+       "name_en": "Chrono Bomb",
+       "name_cn": null,
+       "rarity": "Epic",
+       "kind": "ability",
+       "status": "changed",
+       "lines_en": [
+        "Increased Ability Power to 20% (up from 15%).",
+        "Increased cost to 10500 (up from 10000)."
+       ],
+       "lines_cn": [],
+       "raw_text": [
+        "Chrono Bomb - Epic Ability Hero Item"
+       ]
       }
-     ],
-     "abilities": []
+     ]
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "Support",
    "role": "support",
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "brigitte",
@@ -326,42 +239,36 @@
      "role": "support",
      "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/51b93ea59f369a1defa78e5d08c12b1391f5d2d94614a51fd95c125a7a6151fa.png",
      "dev_note": "Developer Comments: Brigitte's damage buff to Shield Bash in the core game in the midseason proved to be a large unintended damage buff for Sköldkastning and it has been overperforming. We're bringing down the bonus damage to be more in line with her other powers to ensure variety in her build paths.",
-     "general": [
-      {
-       "text_en": "Shield Boomerang damage reduced to 40% of Shield Bash damage (down from 60%).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      }
-     ],
-     "perks": [
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": "Sköldkastning",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Shield Boomerang damage reduced to 40% of Shield Bash damage (down from 60%)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Sköldkastning - Power"
        ]
       }
-     ],
-     "abilities": []
+     ]
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "Armory",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "general-item-updates",
@@ -397,16 +304,19 @@
       }
      ],
      "perks": [],
-     "abilities": []
+     "abilities": [],
+     "stadium_items": []
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "Bug Fixes",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -424,7 +334,8 @@
      "body": "Moira\n\n- Fixed an issue where Moira's Power Optimal Overflow spawned Biotic Orbs without reduced duration.\n\nPharah\n\n- Fixed an issue where Pharah's Triple Volley rockets dealt more damage than intended.\n\nReinhardt\n\n- Fixed an issue where Reinhardt's Power Shield Stampede caused camera to not lock in place during Charge.\n\nSoldier: 76\n\n- Fixed an issue where Soldier 76's Power Peripheral Pulse didn't deal reduced damage to additional targets during Tactical Visor.",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   }
  ],
  "raw_text": null,

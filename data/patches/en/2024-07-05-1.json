@@ -11,30 +11,37 @@
    "title": "OVERWATCH 2 X TRANSFORMERS",
    "role": null,
    "description": "Join the epic battle between the AUTOBOTS and DECEPTICONS with Optimus Prime as Reinhardt, Megatron as Ramattra, Bumblebee as Bastion, and Arcee as Illari. Pick up these limited-time skins in the in-game Premium Shop today. You can also play now through July 22 to collect new Player Icons, Name Cards, and Titles in a series of limited-time challenges to show your allegiance to the AUTOBOTS or the DECEPTICONS.\n\nTRANSFORMERS and its associated characters are trademarks of Hasbro and are used with permission. © 2024 Hasbro. All Rights Reserved.",
+   "dev": null,
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "SUMMER GAMES 2024",
    "role": null,
    "description": "The Summer Games are back! Jump into the arcade and play your favorite Summer Games in the arcade, including Lúcioball and Winston's Beach Volleyball. Play to earn new sprays, player icons, and more through a series of event challenges available now through July 29. Then once the games are done, be sure to pick up new Lifeguard skins for Roadhog, Lifeweaver, and Kiriko from the in-game Premium Shop starting on July 30.",
+   "dev": null,
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "INTRODUCING MYTHIC WEAPONS",
    "role": null,
    "description": "New Mythic Weapons are elevated weapon skins for some of your favorite heroes and will be available in the Mythic Shop that you can redeem with your Mythic Prisms. The Mythic Bound Demon Weapon Skin for Reinhardt changes based on your gameplay, showing epic, dynamic effects that respond to your achievements and cool moments. Whether charging into battle or holding the line, the Mythic Bound Demon Reinhardt Weapon Skin reacts to your every move. Add the Mythic Bound Demon Weapon Skin to your arsenal on July 23.",
+   "dev": null,
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "GENERAL UPDATES",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -47,13 +54,15 @@
      "body": "Adjusted the volume levels of health pool impacts. When shooting enemies with Base Health, Sheilds, Armor, or Overhealth, made the sound cues clearer as to what health type you are damaging.",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "HERO UPDATES",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -61,13 +70,15 @@
      "body": "- Armor flat damage reduction increased from 5 to 10 per projectile.\n- Enemy health bars now display when they are at their Low Health threshold.",
      "dev": "Developer Comments: The armor changes have had a positive impact on which heroes and damage types are slowed down by armor health. We're increasing the damage reduction on it to further widen the pool of heroes that are significantly affected by armor's defense."
     }
-   ]
+   ],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "TANKS",
    "role": null,
    "description": "Tank Role Passive\n\n- Ultimate generation reduction increased from 30 to 40%.\n- Knockback resistance reduced from 50 to 40%.",
+   "dev": "Developer Comments: Dealing damage to Tank heroes will be slightly less rewarding with the increased reduction to ultimate generation and will help to balance out the increased healing they may receive with the change to the Damage role passive in this patch. While the knockback resistance was generally useful for tank heroes and their emphasis on positioning, it was also reaching the point where it was difficult for players to tell if knockback abilities were having any effect on them.",
    "heroes": [
     {
      "slug": "d-va",
@@ -117,7 +128,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "doomfist",
@@ -159,7 +171,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "junker-queen",
@@ -209,7 +222,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "mauga",
@@ -303,7 +317,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "orisa",
@@ -334,7 +349,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "ramattra",
@@ -384,7 +400,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "reinhardt",
@@ -445,7 +462,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "roadhog",
@@ -498,7 +516,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "sigma",
@@ -529,7 +548,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "winston",
@@ -579,7 +599,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "wrecking-ball",
@@ -629,7 +650,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "zarya",
@@ -701,16 +723,19 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "Damage",
    "role": "damage",
    "description": "Damage Role Passive\n\n- Now only half as effective against Tank heroes (10% healing reduction).",
+   "dev": "Developer Comments: With Tank heroes being the frontline, they have this healing reduction effect nearly all of the time and are generally the most reliant on incoming healing to support them as well. The damage role passive is providing an important function to game overall, but its effect on tanks survivability and pace of gameplay is more impactful relative to the other roles. As such, we are reducing its potency against Tank heroes.",
    "heroes": [
     {
      "slug": "ashe",
@@ -741,7 +766,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "cassidy",
@@ -772,7 +798,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "pharah",
@@ -825,16 +852,19 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "SUPPORT",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "ana",
@@ -865,7 +895,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "illari",
@@ -896,7 +927,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "zenyatta",
@@ -927,16 +959,19 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "Bug Fixes",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -949,9 +984,10 @@
      "body": "Cassidy\n\n- Fixed Deadeye tracking phased targets when revealed by Infra Sight.\n\nD.Va\n\n- Fixed an issue with Self Destruct hitting targets behind barriers or collision.\n\nKiriko\n\n- Fixed teleporting to Echo as clone ends making the \"Swift Step\" ability to break for the remainder of the game.\n\nLifeweaver\n\n- Fixed an exploit with Lifeweaver tree hiding Symmetra turrets in the payload.\n\nRoadhog\n\n- Fixed Roadhog's weapon model/placement being largely higher wearing 'Kaiju' skin.",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   }
  ],
  "raw_text": null,
- "hash": "sha256:203ddf56796a41d27396fb7341819c957b42d581aa7d0141b080fc885abd8fec"
+ "hash": "sha256:cf2c4f886c7f55d4b446601ddc4c5f069a6db7875ce8126f4125d1a4ebe2be69"
 }

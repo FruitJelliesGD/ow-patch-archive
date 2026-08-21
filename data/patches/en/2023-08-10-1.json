@@ -11,14 +11,17 @@
    "title": "Overwatch 2: Invasion",
    "role": null,
    "description": "Overwatch 2: Invasion is now available! Enjoy the new Invasion Story Missions, all-new skins, and cosmetic rewards in the Invasion Battle Pass, the new core PVP game mode Flashpoint, and the new Support Hero Illari!",
+   "dev": null,
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "Introducing Illari",
    "role": null,
    "description": "Using solar threading augmentation, Illari strikes down her enemies by harnessing the power of the sun.",
+   "dev": null,
    "heroes": [
     {
      "slug": "illari",
@@ -138,40 +141,49 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "New Game Mode - Flashpoint",
    "role": null,
    "description": "Flashpoint is the newest core game mode available on two of the biggest maps to date: Suravasa and New Junk City. Gameplay begins with both teams pursuing a central objective called a Flashpoint, aiming to capture it before the opposing team does. Capture progress for Flashpoint is like the Control game mode, but plays out faster.\n\nA point is captured by a team once a Flashpoint reaches 100% capture progress. If the Flashpoint is being contested by a member of the opposite team currently not in control when the capture progress reaches 99%, Overtime will activate until either the team in control can remove all remaining opponents off, or until the contesting team can retake control of the Flashpoint.\n\nA point is scored when a Flashpoint is fully captured by a team, however, gameplay continues when a new Flashpoint located somewhere else on the map is activated, and both teams must immediately race to capture it. As additional Flashpoints unlock, the spawn locations of each team will be of generally equal distance to the currently activated Flashpoint.\n\nThe team to be the first to successfully capture three of the five flashpoints wins the match.\n\nFlashpoint is available now in Unranked modes and will be available for Competitive Play later this season.",
+   "dev": null,
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "Invasion Story Missions",
    "role": null,
    "description": "Players who purchase the Invasion Bundle from the in-game shop can play in all-new Story Missions with their friends or others in queue. These massive co-op experiences will have players face against the invading forces of Null Sector, who have launched an all-out global offensive. Play through all of them and unlock the Overwatch 2 hero Sojourn, along with her new Vigilante Legendary skin.\n\nPlayers can access the Story Missions can be accessed through Winston’s Desk in the Missions card in the play menu, where players can explore the Story Missions hub and new Intel Database. Playing missions and completing various goals will unlock lore entries, movies, never-before-revealed details about your favorite heroes and characters, and clues about the future of the world of Overwatch!",
+   "dev": null,
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "New Limited Time Event: King’s Row – Underworld",
    "role": null,
    "description": "Stop Null Sector from taking over the Omnic Underworld in this new co-op event that's free to play for everyone! Reactivate a combat modified TS-1 Utility Bot to aid in liberating endangered omnics, but be warned: massive amounts of Null Sector forces have occupied King's Row. And that's not all—a powerful new support unit will be healing the deadly OR-14 attack bot in your path.\n\nEvery week, we'll be adding new challenges and ways to play this new co-op event. Keep checking back! The King’s Row – Underworld event runs from August 10 to September 5.",
+   "dev": null,
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "General Updates",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -199,13 +211,15 @@
      "body": "- The ‘Unfiltered’ setting for all text chat channels has been removed.\nPlayers will have a choice on their chat settings between Friendly\nand Mature. Players that had previously set Text Profanity Filters to\nUnfiltered will now have applicable filters set to Mature.\n- Regardless of text chat filter settings, please continue to report\nthose using inappropriate chat using the in-game report tool.",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "Competitive Play Updates",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -213,21 +227,25 @@
      "body": "- The number of wins required to appear on the Top 500 Leaderboard has\nbeen increased from 25 to 50 for consistency with our other\nCompetitive game modes.",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "Hero Updates",
    "role": null,
    "description": "- Armor health damage reduction is now additive with other sources of damage reduction and has a maximum cap of 50%.",
+   "dev": "Developer Comments: Armor damage reduction was multiplicative with damage reduction from abilities, creating situations where certain heroes were much more difficult to damage than intended, since they were bypassing the damage reduction cap. This change will smooth out some of the extreme spikes in survivability.",
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "TANK",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "d-va",
@@ -277,7 +295,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "doomfist",
@@ -327,7 +346,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "orisa",
@@ -377,7 +397,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "ramattra",
@@ -438,7 +459,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "sigma",
@@ -462,7 +484,8 @@
       }
      ],
      "perks": [],
-     "abilities": []
+     "abilities": [],
+     "stadium_items": []
     },
     {
      "slug": "winston",
@@ -504,16 +527,19 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "DAMAGE",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "bastion",
@@ -645,7 +671,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "cassidy",
@@ -719,7 +746,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "hanzo",
@@ -750,7 +778,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "soldier-76",
@@ -800,7 +829,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "sombra",
@@ -842,7 +872,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "torbjorn",
@@ -905,16 +936,19 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "SUPPORT",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "ana",
@@ -956,7 +990,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "brigitte",
@@ -1006,7 +1041,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "kiriko",
@@ -1100,7 +1136,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "lifeweaver",
@@ -1213,7 +1250,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "lucio",
@@ -1244,7 +1282,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "mercy",
@@ -1275,24 +1314,29 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "CO-OP MODE HERO UPDATES",
    "role": null,
    "description": "With the introduction of Overwatch 2: Invasion Story Missions, we will have specific hero balance changes for multiple heroes to ensure players have a continuous challenge when playing in co-op modes like Story Missions and Event Missions.\n\n- Heroes no longer passively gain ultimate charge over time.\n- Ultimate costs increased in co-op game modes.",
+   "dev": null,
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "TANK",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "winston",
@@ -1342,7 +1386,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "zarya",
@@ -1430,16 +1475,19 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "DAMAGE",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "cassidy",
@@ -1492,7 +1540,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "echo",
@@ -1564,7 +1613,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "genji",
@@ -1633,7 +1683,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "mei",
@@ -1664,7 +1715,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "pharah",
@@ -1746,7 +1798,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "torbjorn",
@@ -1777,7 +1830,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "tracer",
@@ -1838,16 +1892,19 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "SUPPORT",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "brigitte",
@@ -1927,7 +1984,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "lucio",
@@ -1977,16 +2035,19 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "Map Updates",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -2004,13 +2065,15 @@
      "body": "**Push**\n\n- New Queen Street – Dawn\n- Colosseo – Morning\n- Esperança – Morning\n\n**Hybrid**\n\n- Blizzard World – Night (New)\n- Eichenwalde – Morning\n- Hollywood – Night\n- King’s Row – Night\n- Midtown – Morning\n- Numbani – Morning\n- Paraíso – Evening (New)\n\n**Escort**\n\n- Dorado – Evening\n- Havana – Morning\n- Watchpoint: Gibraltar – Morning\n- Junkertown – Morning\n- Circuit royal – Morning\n- Rialto – Evening\n- Route 66 – Morning\n- Shambali Monastery – Night\n\n**Control**\n\n- Antarctic Peninsula – Night\n- Busan – Morning\n- Ilios – Evening\n- Lijiang Tower – Dawn\n- Nepal – Morning\n- Oasis – Morning\n\n**Flashpoint**\n\n- New Junk City – Morning (New Map)\n- Suravasa – Morning (New Map)",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "Bug Fixes",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -2028,9 +2091,10 @@
      "body": "**Ashe**\n\n- Fixed a clipping issue with Ashe's rifle that could occur when aiming\ndown sights.\n- Fixed an issue with BOB not playing the correct animations for the\nfull Hack duration.\n\n**Baptiste**\n\n- Fixed a bug with the Immortality Field device negatively impacting\nAim Assist on consoles.\n\n**Bastion**\n\n- Fixed a bug with the cooldown for Configuration : Assault not being\nproperly reduced in some instances.\n\n**Cassidy**\n\n- Fixed an issue with the Flashbang victory pose causing Cassidy's leg\nto become distorted.\n- Fixed a bug with melee being cancelled if used right after Deadeye.\n- Resolved an issue with Magnetic Grenade that prevented Cassidy from\nreceiving elimination credit if used on a flying or falling target.\n\n**Junker Queen**\n\n- Fixed a bug with Rampage not correctly showing as disabled when\ndisabled by some abilities.\n\n**Junkrat**\n\n- Fixed an interaction with Lifeweaver's Petal Platform and Junkrat's\nTotal Mayhem that would result in the bombs left from Junkrat's death\nfalling through the platform.\n\n**Kiriko**\n\n- Kiriko should be able to target crouching allies and allies under low\nceilings more consistently now.\n- Kiriko should more consistently appear at the same elevation as her\ntarget (instead of way above them).\n- Swift Step should more consistently keep Kiriko inside map bounds and\nnot result in the player stuck inside the environment when she\nteleports.\n- Using Swift Step while on moving platforms (including payloads, cars,\nand boats) should no longer fail to move Kiriko towards her target.\n- Fixed an issue that could cause visual artifacts on Kiriko's skin\nwhen customizing Kiriko's Mythic skin.\n\n**Lifeweaver**\n\n- Fixed a bug that made it possible for players to hide inside the Tree\nof Life.\n- Fixed a bug with Tree of Life blocking usage of Petal Platform if\nTree of Life confirmation input is set to Ability 3 Release.\n- Fixed a bug with Lifeweaver's flower not changing colors with skin\nselection.\n- Fixed an interaction that allowed Lifeweaver to cancel melee's\nanimation when combined with Petal Platform.\n\n**Lúcio**\n\n- Fixed a bug with his Crossfade VFX being applied to his feet instead\nof his hand.\n- Fixed a bug with Bard Lucio's strings becoming stretched after\nrespawning.\n\n**Moira**\n\n- Fixed a bug with Moira's Fade not displaying correctly for\nSpectators.\n\n**Orisa**\n\n- Fixed a bug with Fortify not correctly ignoring the Slow applied by\nan enemy Orisa Terra Surge or Mei's Deep Chill.\n\n**Pharah**\n\n- Fixed a bug with the Mission Complete highlight intro missing sound\nwhen you have some skins equipped.\n\n**Reinhardt**\n\n- Fixed an interaction with Charge and Brigitte's Shield Bash that\ncould result in Brigitte receiving the full pin damage at first\ncontact instead of being pinned.\n\n**Sombra**\n\n- Fixed an interaction with Translocator and Petal Platform that\nallowed players to get out of the playable space.\n\n**Widowmaker**\n\n- Fixed the missing sound effects on the 'I see you' highlight intro\nwhen certain skins were equipped.\n\n**Winston**\n\n- Fixed an interaction with Winston's Shield Generator and Tracer's\nPulse Bomb that could result in damage not being mitigated if the\nbomb was placed inside the top of the barrier.\n\n**Zarya**\n\n- Fixed an interaction with Earthshatter that could result in Zarya\ngetting zero charge if a bubble was active.",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   }
  ],
  "raw_text": null,
- "hash": "sha256:f9662994e76e99f2d4db49a5d835e187120f981f188c284913b4027ba625e301"
+ "hash": "sha256:c4c4ebfe0ba0ffc5c8d492a3711b20b0b36635bd96caa61eee764d5fe89fd6a2"
 }

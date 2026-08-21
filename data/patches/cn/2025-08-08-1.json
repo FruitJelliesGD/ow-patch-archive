@@ -11,22 +11,27 @@
    "title": "平衡性在线修正更新",
    "role": null,
    "description": "本次更新为角斗领域平衡性在线修正。2025年8月6日更新后的回放代码仍然可用。",
+   "dev": null,
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "角斗领域更新",
    "role": null,
    "description": "角斗领域更新",
+   "dev": null,
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "重装",
    "role": "tank",
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "sigma",
@@ -47,39 +52,21 @@
        "by_pct": null,
        "metric": "barrier",
        "unit": "pct"
-      },
-      {
-       "text_en": null,
-       "text_cn": "冷却时间缩减效果从0.5秒提高至0.8秒。",
-       "subject": null,
-       "dimension": "other",
-       "before": 0.5,
-       "after": 0.8,
-       "by": 0.3,
-       "by_pct": null,
-       "metric": "cooldown",
-       "unit": "s"
-      },
-      {
-       "text_en": null,
-       "text_cn": "溅射伤害加成从25%提高至75%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 25.0,
-       "after": 75.0,
-       "by": 50.0,
-       "by_pct": null,
-       "metric": "溅射伤害加成",
-       "unit": "pct"
       }
      ],
-     "perks": [
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": null,
        "name_cn": "超能循环",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "冷却时间缩减效果从0.5秒提高至0.8秒。"
+       ],
        "raw_text": [
         "超能循环——异能"
        ]
@@ -87,18 +74,22 @@
       {
        "name_en": null,
        "name_cn": "奇点",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "溅射伤害加成从25%提高至75%。"
+       ],
        "raw_text": [
         "奇点——异能"
        ]
       }
-     ],
-     "abilities": []
+     ]
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   }
  ],
  "raw_text": null,

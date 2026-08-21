@@ -96,9 +96,18 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
     results.patchHasChangeList = findHtml(modernBody, /change-list/);
     results.patchHasAbilityIcon = findHtml(modernBody, /ability-icon/);
     results.patchHasBold = findHtml(modernBody, /strong>Choose your path/);
+    results.patchHasSectionDev = findHtml(modernBody, /Several underutilized perks/);
+    results.patchHasMapCompare = findHtml(modernBody, /map-compare/);
+    results.patchHasMapImage = findHtml(modernBody, /assets\\/maps\\/en-2026-08-11-1\\/0-before\\.png/);
+    results.patchHasStadiumItem = findHtml(modernBody, /stadium-item/);
+    results.patchHasRarityBadge = findHtml(modernBody, /item-badge/);
     results.tocChildren = document.getElementById("patch-toc").children.length;
     results.tocHasSec0 = document.getElementById("patch-toc").children.some((a) => a.href === "#sec-0");
     results.tocHiddenModern = document.getElementById("patch-toc").hidden;
+
+    location.search = "?id=en-2020-02-12-1&lang=en";
+    await initPatch();
+    results.patchHasContentLink = findHtml(document.getElementById("patch-article"), /<a href="https?:\\/\\//);
 
     location.search = "?id=en-2016-05-27-1&lang=en";
     await initPatch();
@@ -143,19 +152,25 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
     if (results.indexPatches !== 342) fail.push("indexPatches=" + results.indexPatches);
     if (results.filterChips !== 6) fail.push("filterChips=" + results.filterChips);
     if (!results.firstCardHref.includes("entry.html?hero=")) fail.push("firstCardHref=" + results.firstCardHref);
-    if (results.entryCards !== 1624) fail.push("entryCards=" + results.entryCards);
+    if (results.entryCards !== 987) fail.push("entryCards=" + results.entryCards);
     if (!/脉冲步枪/.test(results.entryName)) fail.push("entryName=" + results.entryName);
     if (!/更改记录/.test(results.entryMeta)) fail.push("entryMeta=" + results.entryMeta);
     if (!results.entryHasValues) fail.push("entry values rows missing");
     if (!results.entryHasPatchLink) fail.push("entry patch link missing");
     if (!results.entryHasEditedBadge) fail.push("entry edited badge missing");
-    if (results.heroEntryCards !== 40) fail.push("hero entry cards=" + results.heroEntryCards);
+    if (results.heroEntryCards !== 18) fail.push("hero entry cards=" + results.heroEntryCards);
     if (results.langButtons !== 2) fail.push("langButtons=" + results.langButtons);
     if (!results.patchTitle) fail.push("empty patch title");
     if (!results.patchHasAvatar) fail.push("patch hero avatar missing");
     if (!results.patchHasChangeList) fail.push("patch change-list missing");
     if (!results.patchHasAbilityIcon) fail.push("patch ability icon missing");
     if (!results.patchHasBold) fail.push("patch bold emphasis missing");
+    if (!results.patchHasSectionDev) fail.push("patch section dev note missing");
+    if (!results.patchHasMapCompare) fail.push("patch map-compare missing");
+    if (!results.patchHasMapImage) fail.push("patch map image missing");
+    if (!results.patchHasStadiumItem) fail.push("patch stadium item missing");
+    if (!results.patchHasRarityBadge) fail.push("patch stadium rarity badge missing");
+    if (!results.patchHasContentLink) fail.push("patch content link missing");
     if (!results.tocChildren || !results.tocHasSec0) fail.push("toc missing entries=" + results.tocChildren);
     if (results.tocHiddenModern) fail.push("modern toc should be visible");
     if (!results.legacyStructured || !results.legacyNoRawText) fail.push("legacy page not structured");

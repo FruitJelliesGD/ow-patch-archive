@@ -11,6 +11,7 @@
    "title": "第2赛季：尖峰之上补丁说明",
    "role": null,
    "description": "守望先锋的故事仍在继续。黑爪之治——第2赛季：尖峰之上揭开帷幕，新输出英雄西拉加入守望先锋，邀你一起坚守格兰德台地。赛后嘉奖系统和南极半岛重做之后重磅回归。换上“士兵：76”神话皮肤超限雷电，拿起源氏神话武器墨一文字，和队友一起横扫千军。角斗领域同时也迎来拉玛刹的加入，还有全新地图漓江塔夜市，快来大显身手，证明你的实力！战令和商城正洋溢着春天的气息，换上暖春仙子和樱花主题皮肤，在战场上尽情绽放。别停下脚步，去探索尖峰之上的无限风光吧！",
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -23,13 +24,15 @@
      "body": "- “狂鼠”的补给狩猎将于5月9日至12日回归！在游戏过程中解锁挑战，完成这些挑战即可赢得补给！",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "综合更新",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -42,13 +45,15 @@
      "body": "- 我们为新地图和重做地图添加了标签。在快速比赛中游玩带有新或重做标签的地图可以获得额外的战令经验，而在竞技比赛中则可以获得+10竞技点数。在带有这些标签的地图上输掉竞技比赛后所受到的惩罚也会减少，所以大家可以尽情尝试，不必担心落败！\n- 新增第四个选项——随机地图。随机地图不会从3张可见地图中选取。\n- 如果一张地图的得票比其他任何地图都多6张及以上，它将获得“多数青睐”胜利，直接跳过抽选。例如，如果国王大道获得7票，多拉多获得2票，那么前者不算多数青睐，因为它只比后者多了5票。在5v5中，8票就可以确保多数青睐，而在6v6中则需要9票。随机地图选项也可以获得多数青睐胜利！\n- 我们为攻击/护送和运载目标地图卡片添加了新的进攻和防守图标，若这张地图赢得投票，快速比赛中的玩家们就可以知道自己在哪一方；在竞技比赛中，这些图标则可以让玩家知道他们会作为哪一方开始游戏。\n- 现在3张可见地图中至少会有2种不同的游戏模式。\n- 如果你投票的地图未被选中，这张地图在未来的投票中会优先提供给你。\n- 如果一张地图无人投票，这张地图在未来的投票中会推迟提供给本局游戏的所有玩家。",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "英雄更新",
    "role": null,
    "description": null,
+   "dev": "有一些英雄的威能已经成为了他们游戏风格的核心，甚至可以说是他们人设和玩法的一部分。因此第2赛季中，我们决定将部分威能直接加入到英雄的基础技能组中，更好地支持这些玩法。为了平衡这些改动，我们同时也会加入几个全新威能，调整现有威能以及多名英雄的威能消耗，使其更接近解锁次级威能和主要威能的平均时间。 我们会继续评估所有英雄的机动能力，并针对那些位移太过频繁和效果过强的英雄进行调整。 加入五名新英雄后，我们还会专门对6v6进行平衡性调整，解决与5v5中相比一些英雄表现过强或过弱的问题。另外要提醒大家，除非单独说明，以下所有英雄调整将同时应用于两个模式。",
    "heroes": [],
    "blocks": [
     {
@@ -66,13 +71,15 @@
      "body": "- 对低生命值敌人的视野持续时间从5秒缩短至3.5秒。",
      "dev": "侦察副职责显示敌人位置的持续时间给人感觉太长了，特别是对于那些没有意识到自己已经暴露的敌人来说。缩短持续时间可以让这个效果的时间窗口更清晰，更容易应对。"
     }
-   ]
+   ],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "重装",
    "role": "tank",
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "sigma",
@@ -113,7 +120,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "ramattra",
@@ -207,7 +215,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "reinhardt",
@@ -228,7 +237,8 @@
        ]
       }
      ],
-     "abilities": []
+     "abilities": [],
+     "stadium_items": []
     },
     {
      "slug": "roadhog",
@@ -298,7 +308,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "winston",
@@ -342,7 +353,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "wrecking-ball",
@@ -366,16 +378,19 @@
       }
      ],
      "perks": [],
-     "abilities": []
+     "abilities": [],
+     "stadium_items": []
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "输出",
    "role": "damage",
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "anran",
@@ -480,7 +495,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "ashe",
@@ -501,7 +517,8 @@
        ]
       }
      ],
-     "abilities": []
+     "abilities": [],
+     "stadium_items": []
     },
     {
      "slug": "bastion",
@@ -557,7 +574,8 @@
        ]
       }
      ],
-     "abilities": []
+     "abilities": [],
+     "stadium_items": []
     },
     {
      "slug": "echo",
@@ -598,7 +616,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "emre",
@@ -639,7 +658,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "junkrat",
@@ -671,7 +691,8 @@
        ]
       }
      ],
-     "abilities": []
+     "abilities": [],
+     "stadium_items": []
     },
     {
      "slug": "pharah",
@@ -752,7 +773,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "reaper",
@@ -805,7 +827,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "soldier-76",
@@ -878,7 +901,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "sombra",
@@ -934,7 +958,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "tracer",
@@ -970,7 +995,8 @@
       }
      ],
      "perks": [],
-     "abilities": []
+     "abilities": [],
+     "stadium_items": []
     },
     {
      "slug": "vendetta",
@@ -1057,7 +1083,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "widowmaker",
@@ -1093,16 +1120,19 @@
       }
      ],
      "perks": [],
-     "abilities": []
+     "abilities": [],
+     "stadium_items": []
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "支援",
    "role": "support",
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "ana",
@@ -1133,7 +1163,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "brigitte",
@@ -1174,7 +1205,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "jetpack-cat",
@@ -1215,7 +1247,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "juno",
@@ -1265,7 +1298,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "lifeweaver",
@@ -1344,7 +1378,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "lucio",
@@ -1395,7 +1430,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "kiriko",
@@ -1445,7 +1481,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "mizuki",
@@ -1561,7 +1598,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "mercy",
@@ -1674,7 +1712,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "wuyang",
@@ -1705,7 +1744,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "zenyatta",
@@ -1736,24 +1776,29 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "南极半岛地图重做",
    "role": null,
-   "description": "南极半岛地图重做\n\n钻井场（之前为实验室）\n\n之前与重做后\n\n之前与重做后\n\n之前与重做后\n\n之前与重做后\n\n破冰船\n\n之前与重做后\n\n之前与重做后\n\n之前与重做后\n\n畸变（之前为冰下层）\n\n之前与重做后\n\n之前与重做后\n\n之前与重做后\n\n之前与重做后\n\n之前与重做后",
+   "description": "南极半岛地图重做\n\n钻井场（之前为实验室）\n\n之前与重做后\n\n![](https://nie.res.netease.com/r/pic/20260417/890d7802-2dc4-4d58-9f64-8262106e952f.png)\n\n![](https://nie.res.netease.com/r/pic/20260417/5b9cbe91-eb76-4d63-8b3c-734c156b7fd1.png)\n\n之前与重做后\n\n![](https://nie.res.netease.com/r/pic/20260417/e9b1603d-c70c-4acd-8f86-fd333564d8ab.png)\n\n![](https://nie.res.netease.com/r/pic/20260417/fd27b4f5-1372-4f3e-8863-2d6912d73ba9.png)\n\n之前与重做后\n\n![](https://nie.res.netease.com/r/pic/20260417/baaed89e-3212-4f54-8da4-aafdb58d557b.png)\n\n![](https://nie.res.netease.com/r/pic/20260417/58579c03-002f-447b-b71f-a3b6603e3f74.png)\n\n之前与重做后\n\n![](https://nie.res.netease.com/r/pic/20260417/35ad27c6-7b55-460c-8374-5cef5ddc489d.png)\n\n![](https://nie.res.netease.com/r/pic/20260417/703f607f-4dc7-4af2-8205-a8ff39b631ff.png)\n\n破冰船\n\n之前与重做后\n\n![](https://nie.res.netease.com/r/pic/20260417/e4aefcf3-c418-4225-ad25-5c6e254f8f73.png)\n\n![](https://nie.res.netease.com/r/pic/20260417/46fed1ee-01a3-4c38-ac19-7189e71451c8.png)\n\n之前与重做后\n\n![](https://nie.res.netease.com/r/pic/20260417/78260b7e-aaa0-4cfd-8e37-59cf2cd84ba7.png)\n\n![](https://nie.res.netease.com/r/pic/20260417/c3107b1b-bb1d-45ac-8a2f-b8e7c0fd8700.png)\n\n之前与重做后\n\n![](https://nie.res.netease.com/r/pic/20260417/049c6b9c-2e23-48a8-b8b2-e05c53561ac9.png)\n\n![](https://nie.res.netease.com/r/pic/20260417/7cb5cd1c-2c6f-4dde-9b65-9d58d3b86b23.png)\n\n畸变（之前为冰下层）\n\n之前与重做后\n\n![](https://nie.res.netease.com/r/pic/20260417/79cc8017-9bce-4bbb-b485-7e53b95818c4.png)\n\n![](https://nie.res.netease.com/r/pic/20260417/d503e291-3ba8-442a-8f72-007f97ddcef6.png)\n\n之前与重做后\n\n![](https://nie.res.netease.com/r/pic/20260417/4b64ce32-5bef-4a5e-ad24-085c873c3439.png)\n\n![](https://nie.res.netease.com/r/pic/20260417/5cbfe097-bc42-4419-b273-a93d2b47ac9c.png)\n\n之前与重做后\n\n![](https://nie.res.netease.com/r/pic/20260417/63fe2d0a-fe79-4f66-acfd-a93d6703bf40.png)\n\n![](https://nie.res.netease.com/r/pic/20260417/a227301f-9cc5-49b8-98c5-5c0b25cc0224.png)\n\n之前与重做后\n\n![](https://nie.res.netease.com/r/pic/20260417/e296213c-030d-4679-bc30-e82e15d19fd1.png)\n\n![](https://nie.res.netease.com/r/pic/20260417/3ba44ee9-837d-4634-8535-db74973efc02.png)\n\n之前与重做后\n\n![](https://nie.res.netease.com/r/pic/20260417/fea0871a-7935-4867-8b19-1975a3e74878.png)\n\n![](https://nie.res.netease.com/r/pic/20260417/d22338ba-c3a3-4698-8c27-8d294ce5fcae.png)",
+   "dev": null,
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "角斗领域更新",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -1761,13 +1806,15 @@
      "body": "新竞技赛季开始时，你将会根据上个赛季结束时的排位级别获得竞技比赛进度。\n\n- 斗士：从新秀开始（降低5个分组）。\n- 精英：从斗士开始（降低5个分组）。\n- 专家：从精英开始（降低5个分组）。\n- 全明星：从精英开始（降低10个分组）。\n- 传奇：从精英开始（降低15个分组）。",
      "dev": "此更改会让玩家们的可见排位级别与他们的实际匹配等级更加接近，让每个赛季攀登到你的目标级别的过程不那么肝。"
     }
-   ]
+   ],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "重装",
    "role": "tank",
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "ramattra",
@@ -1788,975 +1835,21 @@
        "by_pct": null,
        "metric": null,
        "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "“虚空加速器”会用纳米机器人感染敌人，对敌人造成100点伤害后会将其引爆，造成20点（武器强度）伤害。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "“虚空加速器”持续射击时，周期性额外发射一簇包含6枚粒子的连射。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "“虚空屏障”获得一次额外充能。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "+25%“虚空屏障”尺寸。“虚空加速器”子弹和“猛拳”在穿过“虚空屏障”后，伤害提高10%。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": 10.0,
-       "metric": "damage",
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "“天罚形态”激活时，若拉玛刹处于“吞噬漩涡”中，每秒获得80点治疗。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "“天罚形态”激活时，“吞噬漩涡”的冷却时间缩短100%。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": 100.0,
-       "metric": "的冷却时间",
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "在“天罚形态”下格挡时，使用“猛拳”可打出疾冲重拳。（4秒冷却时间）",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "“铁臂”会在3秒内治疗拉玛刹，数值为抵挡伤害量的50%。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "解除“铁臂”时，对6米内的敌人造成伤害，数值为抵挡伤害量的100%，最多100点。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "+50%“吞噬漩涡”半径，+30%“吞噬漩涡”伤害。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "“吞噬漩涡”引爆时，造成50点伤害，且每命中一名敌人，获得2%终极技能充能。",
-       "subject": "ultimate_cost",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "+50%“诛”伤害，+2秒“诛”持续时间。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "聚变核心——稀有武器英雄物品",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "5%攻击速度。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "“铁臂”抵挡伤害时，攻击速度加快15%，持续3秒。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "费用：4000",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "融合弹药——稀有武器英雄物品",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "10%武器强度。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "50%“虚空加速器”弹道尺寸。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "费用：4500",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "智械中枢强化体——稀有武器英雄物品",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "10%武器强度。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "25%“猛拳”射程。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "费用：4500",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "R-7000电池——史诗武器英雄物品",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "5%武器强度。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "50%“虚空加速器”弹道速度。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "“虚空加速器”持续开火时，在3秒内获得最多20%武器强度。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "费用：12500",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "阿努比斯灵气——史诗武器英雄物品",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "10%技能强度。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "10%攻击速度。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "“猛拳”伤害同时受技能强度加成。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "费用：13000",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "贪念涡流——稀有技能英雄物品",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "5%冷却时间缩减。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "“吞噬漩涡”每命中一名敌人，“天罚形态”的冷却时间缩短1秒。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "费用：4000",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "归零矢量——稀有技能英雄物品",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "5%冷却时间缩减。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "100%“吞噬漩涡”高度。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "费用：4000",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "渊域拓展器——史诗技能英雄物品",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "25点护盾。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "10%冷却时间缩减。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "50%“虚空屏障”持续时间。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "费用：10000",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "飞旋结界——史诗技能英雄物品",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "15%技能强度。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "10%冷却时间缩减。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "盟友位于“吞噬漩涡”内时，其跳跃高度提高300%，移动速度加快25%。",
-       "subject": "move_speed",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": 300.0,
-       "metric": "其跳跃高度",
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "费用：10000",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "终极轴心——史诗技能英雄物品",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "15%初始终极技能充能。",
-       "subject": "ultimate_cost",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "50%“诛”范围。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "激活“诛”会拖拽6米内的敌人。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "费用：9000",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "香巴里防护——稀有生存英雄物品",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "25点生命值。",
-       "subject": "health",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "使用“铁臂”时获得的治疗量提高5%。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": 5.0,
-       "metric": "时获得的治疗量",
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "移除“铁臂”的移动速度惩罚。",
-       "subject": "move_speed",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "费用：4500",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "禅雅塔的灵光——稀有生存英雄物品",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "25点生命值。",
-       "subject": "health",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "退出“天罚形态”后，获得100点过量生命值。",
-       "subject": "health",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "费用：4000",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "巨型构装体——稀有生存英雄物品",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "25点护甲。",
-       "subject": "health",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "“诛”造成伤害时获得过量生命值，数值为伤害量的20%。",
-       "subject": "health",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "费用：5000",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "纳米愈疗器——史诗生存英雄物品",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "25点护盾。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "35%“虚空屏障”生命值",
-       "subject": "health",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "“虚空屏障”在出生时会治疗6米内的盟友100点生命值。",
-       "subject": "health",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "腐蚀性外骨骼装甲——史诗生存英雄物品",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "50生命值。",
-       "subject": "health",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "10%武器生命汲取。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "10%技能生命汲取。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "+15%“天罚形态”下的生命汲取。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "费用：9000",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
       }
      ],
-     "perks": [
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": null,
        "name_cn": "虚空凋零",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "“虚空加速器”会用纳米机器人感染敌人，对敌人造成100点伤害后会将其引爆，造成20点（武器强度）伤害。"
+       ],
        "raw_text": [
         "虚空凋零——异能"
        ]
@@ -2764,9 +1857,13 @@
       {
        "name_en": null,
        "name_cn": "虚空涌动",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "“虚空加速器”持续射击时，周期性额外发射一簇包含6枚粒子的连射。"
+       ],
        "raw_text": [
         "虚空涌动——异能"
        ]
@@ -2774,9 +1871,13 @@
       {
        "name_en": null,
        "name_cn": "重重防壁",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "“虚空屏障”获得一次额外充能。"
+       ],
        "raw_text": [
         "重重防壁——异能"
        ]
@@ -2784,9 +1885,13 @@
       {
        "name_en": null,
        "name_cn": "递归导能",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "+25%“虚空屏障”尺寸。“虚空加速器”子弹和“猛拳”在穿过“虚空屏障”后，伤害提高10%。"
+       ],
        "raw_text": [
         "递归导能——异能"
        ]
@@ -2794,9 +1899,13 @@
       {
        "name_en": null,
        "name_cn": "最终形态",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "“天罚形态”激活时，若拉玛刹处于“吞噬漩涡”中，每秒获得80点治疗。"
+       ],
        "raw_text": [
         "最终形态——异能"
        ]
@@ -2804,9 +1913,13 @@
       {
        "name_en": null,
        "name_cn": "第二阶段",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "“天罚形态”激活时，“吞噬漩涡”的冷却时间缩短100%。"
+       ],
        "raw_text": [
         "第二阶段——异能"
        ]
@@ -2814,9 +1927,13 @@
       {
        "name_en": null,
        "name_cn": "破限猛拳",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "在“天罚形态”下格挡时，使用“猛拳”可打出疾冲重拳。（4秒冷却时间）"
+       ],
        "raw_text": [
         "破限猛拳——异能"
        ]
@@ -2824,9 +1941,13 @@
       {
        "name_en": null,
        "name_cn": "转换协议",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "“铁臂”会在3秒内治疗拉玛刹，数值为抵挡伤害量的50%。"
+       ],
        "raw_text": [
         "转换协议——异能"
        ]
@@ -2834,9 +1955,13 @@
       {
        "name_en": null,
        "name_cn": "反击铁臂",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "解除“铁臂”时，对6米内的敌人造成伤害，数值为抵挡伤害量的100%，最多100点。"
+       ],
        "raw_text": [
         "反击铁臂——异能"
        ]
@@ -2844,9 +1969,13 @@
       {
        "name_en": null,
        "name_cn": "无厌螺旋",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "+50%“吞噬漩涡”半径，+30%“吞噬漩涡”伤害。"
+       ],
        "raw_text": [
         "无厌螺旋——异能"
        ]
@@ -2854,9 +1983,13 @@
       {
        "name_en": null,
        "name_cn": "毁灭漩涡",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "“吞噬漩涡”引爆时，造成50点伤害，且每命中一名敌人，获得2%终极技能充能。"
+       ],
        "raw_text": [
         "毁灭漩涡——异能"
        ]
@@ -2864,15 +1997,266 @@
       {
        "name_en": null,
        "name_cn": "恐惧骑士",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "+50%“诛”伤害，+2秒“诛”持续时间。"
+       ],
        "raw_text": [
         "恐惧骑士——异能"
        ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "聚变核心",
+       "rarity": "稀有",
+       "kind": "weapon",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "5%攻击速度。",
+        "“铁臂”抵挡伤害时，攻击速度加快15%，持续3秒。",
+        "费用：4000"
+       ],
+       "raw_text": [
+        "聚变核心——稀有武器英雄物品"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "融合弹药",
+       "rarity": "稀有",
+       "kind": "weapon",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "10%武器强度。",
+        "50%“虚空加速器”弹道尺寸。",
+        "费用：4500"
+       ],
+       "raw_text": [
+        "融合弹药——稀有武器英雄物品"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "智械中枢强化体",
+       "rarity": "稀有",
+       "kind": "weapon",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "10%武器强度。",
+        "25%“猛拳”射程。",
+        "费用：4500"
+       ],
+       "raw_text": [
+        "智械中枢强化体——稀有武器英雄物品"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "R-7000电池",
+       "rarity": "史诗",
+       "kind": "weapon",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "5%武器强度。",
+        "50%“虚空加速器”弹道速度。",
+        "“虚空加速器”持续开火时，在3秒内获得最多20%武器强度。",
+        "费用：12500"
+       ],
+       "raw_text": [
+        "R-7000电池——史诗武器英雄物品"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "阿努比斯灵气",
+       "rarity": "史诗",
+       "kind": "weapon",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "10%技能强度。",
+        "10%攻击速度。",
+        "“猛拳”伤害同时受技能强度加成。",
+        "费用：13000"
+       ],
+       "raw_text": [
+        "阿努比斯灵气——史诗武器英雄物品"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "贪念涡流",
+       "rarity": "稀有",
+       "kind": "ability",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "5%冷却时间缩减。",
+        "“吞噬漩涡”每命中一名敌人，“天罚形态”的冷却时间缩短1秒。",
+        "费用：4000"
+       ],
+       "raw_text": [
+        "贪念涡流——稀有技能英雄物品"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "归零矢量",
+       "rarity": "稀有",
+       "kind": "ability",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "5%冷却时间缩减。",
+        "100%“吞噬漩涡”高度。",
+        "费用：4000"
+       ],
+       "raw_text": [
+        "归零矢量——稀有技能英雄物品"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "渊域拓展器",
+       "rarity": "史诗",
+       "kind": "ability",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "25点护盾。",
+        "10%冷却时间缩减。",
+        "50%“虚空屏障”持续时间。",
+        "费用：10000"
+       ],
+       "raw_text": [
+        "渊域拓展器——史诗技能英雄物品"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "飞旋结界",
+       "rarity": "史诗",
+       "kind": "ability",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "15%技能强度。",
+        "10%冷却时间缩减。",
+        "盟友位于“吞噬漩涡”内时，其跳跃高度提高300%，移动速度加快25%。",
+        "费用：10000"
+       ],
+       "raw_text": [
+        "飞旋结界——史诗技能英雄物品"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "终极轴心",
+       "rarity": "史诗",
+       "kind": "ability",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "15%初始终极技能充能。",
+        "50%“诛”范围。",
+        "激活“诛”会拖拽6米内的敌人。",
+        "费用：9000"
+       ],
+       "raw_text": [
+        "终极轴心——史诗技能英雄物品"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "香巴里防护",
+       "rarity": "稀有",
+       "kind": "survival",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "25点生命值。",
+        "使用“铁臂”时获得的治疗量提高5%。",
+        "移除“铁臂”的移动速度惩罚。",
+        "费用：4500"
+       ],
+       "raw_text": [
+        "香巴里防护——稀有生存英雄物品"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "禅雅塔的灵光",
+       "rarity": "稀有",
+       "kind": "survival",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "25点生命值。",
+        "退出“天罚形态”后，获得100点过量生命值。",
+        "费用：4000"
+       ],
+       "raw_text": [
+        "禅雅塔的灵光——稀有生存英雄物品"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "巨型构装体",
+       "rarity": "稀有",
+       "kind": "survival",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "25点护甲。",
+        "“诛”造成伤害时获得过量生命值，数值为伤害量的20%。",
+        "费用：5000"
+       ],
+       "raw_text": [
+        "巨型构装体——稀有生存英雄物品"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "纳米愈疗器",
+       "rarity": "史诗",
+       "kind": "survival",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "25点护盾。",
+        "35%“虚空屏障”生命值",
+        "“虚空屏障”在出生时会治疗6米内的盟友100点生命值。"
+       ],
+       "raw_text": [
+        "纳米愈疗器——史诗生存英雄物品"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "腐蚀性外骨骼装甲",
+       "rarity": "史诗",
+       "kind": "survival",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "50生命值。",
+        "10%武器生命汲取。",
+        "10%技能生命汲取。",
+        "+15%“天罚形态”下的生命汲取。",
+        "费用：9000"
+       ],
+       "raw_text": [
+        "腐蚀性外骨骼装甲——史诗生存英雄物品"
+       ]
       }
-     ],
-     "abilities": []
+     ]
     },
     {
      "slug": "sigma",
@@ -2881,33 +2265,25 @@
      "role": "tank",
      "icon": "https://ld5.res.netease.com/images/20260227/1772181983796_2af96a1a9b.png",
      "dev_note": "我们决定强化这个异能，提升它在武器强度流搭配中的可用性。",
-     "general": [
-      {
-       "text_en": null,
-       "text_cn": "攻击速度提升的吸收伤害量阈值从100降低至50。",
-       "subject": null,
-       "dimension": "other",
-       "before": 100.0,
-       "after": 50.0,
-       "by": -50.0,
-       "by_pct": null,
-       "metric": "攻击速度提升的吸收伤害量阈值",
-       "unit": null
-      }
-     ],
-     "perks": [
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": null,
        "name_cn": "交响朔望",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "攻击速度提升的吸收伤害量阈值从100降低至50。"
+       ],
        "raw_text": [
         "交响朔望——异能"
        ]
       }
-     ],
-     "abilities": []
+     ]
     },
     {
      "slug": "winston",
@@ -2928,51 +2304,21 @@
        "by_pct": 12.5,
        "metric": "通过造成伤害和提供治疗获得的角斗资金",
        "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "弹跳伤害从50%提高至75%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 50.0,
-       "after": 75.0,
-       "by": 25.0,
-       "by_pct": null,
-       "metric": "弹跳伤害",
-       "unit": "pct"
-      },
-      {
-       "text_en": null,
-       "text_cn": "暴击伤害从175%提高至200%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 175.0,
-       "after": 200.0,
-       "by": 25.0,
-       "by_pct": null,
-       "metric": "暴击伤害",
-       "unit": "pct"
-      },
-      {
-       "text_en": null,
-       "text_cn": "添加效果：+25%初始终极技能充能。",
-       "subject": "ultimate_cost",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
       }
      ],
-     "perks": [
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": null,
        "name_cn": "引雷神针",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "弹跳伤害从50%提高至75%。"
+       ],
        "raw_text": [
         "引雷神针——异能"
        ]
@@ -2980,9 +2326,13 @@
       {
        "name_en": null,
        "name_cn": "高压磁暴",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "暴击伤害从175%提高至200%。"
+       ],
        "raw_text": [
         "高压磁暴——异能"
        ]
@@ -2990,24 +2340,29 @@
       {
        "name_en": null,
        "name_cn": "皮糙肉厚",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "添加效果：+25%初始终极技能充能。"
+       ],
        "raw_text": [
         "皮糙肉厚——异能"
        ]
       }
-     ],
-     "abilities": []
+     ]
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "输出",
    "role": "damage",
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "freja",
@@ -3016,39 +2371,20 @@
      "role": "damage",
      "icon": "https://ld5.res.netease.com/images/20260227/1772182000904_2405ceae46.png",
      "dev_note": "弗蕾娅的机枪流搭配始终表现过于强势，所以我们决定削弱她的一些支援能力。",
-     "general": [
-      {
-       "text_en": null,
-       "text_cn": "恢复的最大弹药量从40%降低至30%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 40.0,
-       "after": 30.0,
-       "by": -10.0,
-       "by_pct": null,
-       "metric": "恢复的最大弹药量",
-       "unit": "pct"
-      },
-      {
-       "text_en": null,
-       "text_cn": "治疗量从最大总生命值的8%降低至6%。",
-       "subject": "health",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      }
-     ],
-     "perks": [
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": null,
        "name_cn": "弹药充沛",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "恢复的最大弹药量从40%降低至30%。"
+       ],
        "raw_text": [
         "弹药充沛——异能"
        ]
@@ -3056,15 +2392,18 @@
       {
        "name_en": null,
        "name_cn": "觅食专家",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "治疗量从最大总生命值的8%降低至6%。"
+       ],
        "raw_text": [
         "觅食专家——异能"
        ]
       }
-     ],
-     "abilities": []
+     ]
     },
     {
      "slug": "junkrat",
@@ -3073,106 +2412,55 @@
      "role": "damage",
      "icon": "https://ld5.res.netease.com/images/20260227/1772181864165_f33e49b3ac.png",
      "dev_note": "这些物品的组合最近表现有些过于超出预期，所以我们决定削弱其数值。",
-     "general": [
-      {
-       "text_en": null,
-       "text_cn": "榴弹火炮——史诗武器英雄物品",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "已移除5%武器强度。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "提神辐射——史诗生存英雄物品",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "提供的过量生命值从最大总生命值的8%降低至6%。",
-       "subject": "health",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "詹米森跳跳乐——史诗生存英雄物品",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "已移除10%武器强度。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "技能强度从10%提高至15%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 10.0,
-       "after": 15.0,
-       "by": 5.0,
-       "by_pct": null,
-       "metric": "技能强度",
-       "unit": "pct"
-      },
-      {
-       "text_en": null,
-       "text_cn": "对自身引爆“震荡地雷”时的冷却时间缩减从15%降低至10%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 15.0,
-       "after": 10.0,
-       "by": -5.0,
-       "by_pct": null,
-       "metric": "时的冷却时间缩减",
-       "unit": "pct"
-      }
-     ],
+     "general": [],
      "perks": [],
-     "abilities": []
+     "abilities": [],
+     "stadium_items": [
+      {
+       "name_en": null,
+       "name_cn": "榴弹火炮",
+       "rarity": "史诗",
+       "kind": "weapon",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "已移除5%武器强度。"
+       ],
+       "raw_text": [
+        "榴弹火炮——史诗武器英雄物品"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "提神辐射",
+       "rarity": "史诗",
+       "kind": "survival",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "提供的过量生命值从最大总生命值的8%降低至6%。"
+       ],
+       "raw_text": [
+        "提神辐射——史诗生存英雄物品"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "詹米森跳跳乐",
+       "rarity": "史诗",
+       "kind": "survival",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "已移除10%武器强度。",
+        "技能强度从10%提高至15%。",
+        "对自身引爆“震荡地雷”时的冷却时间缩减从15%降低至10%。"
+       ],
+       "raw_text": [
+        "詹米森跳跳乐——史诗生存英雄物品"
+       ]
+      }
+     ]
     },
     {
      "slug": "vendetta",
@@ -3193,75 +2481,21 @@
        "by_pct": 5.0,
        "metric": "通过造成伤害和提供治疗获得的角斗资金",
        "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "“旋风疾步”在额外持续时间内的伤害从50%提高至75%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 50.0,
-       "after": 75.0,
-       "by": 25.0,
-       "by_pct": null,
-       "metric": "在额外持续时间内的伤害",
-       "unit": "pct"
-      },
-      {
-       "text_en": null,
-       "text_cn": "“旋风疾步”再次激活伤害从50%提高至75%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 50.0,
-       "after": 75.0,
-       "by": 25.0,
-       "by_pct": null,
-       "metric": "再次激活伤害",
-       "unit": "pct"
-      },
-      {
-       "text_en": null,
-       "text_cn": "免费“锋锐剑气”伤害从50%提高至75%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 50.0,
-       "after": 75.0,
-       "by": 25.0,
-       "by_pct": null,
-       "metric": "damage",
-       "unit": "pct"
-      },
-      {
-       "text_en": null,
-       "text_cn": "微型“斩地巨剑”伤害提高效果从25%提高至50%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 25.0,
-       "after": 50.0,
-       "by": 25.0,
-       "by_pct": null,
-       "metric": "damage",
-       "unit": "pct"
-      },
-      {
-       "text_en": null,
-       "text_cn": "爆炸伤害从20提高至30。",
-       "subject": null,
-       "dimension": "other",
-       "before": 20.0,
-       "after": 30.0,
-       "by": 10.0,
-       "by_pct": null,
-       "metric": "爆炸伤害",
-       "unit": null
       }
      ],
-     "perks": [
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": null,
        "name_cn": "龙卷迅步",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "“旋风疾步”在额外持续时间内的伤害从50%提高至75%。"
+       ],
        "raw_text": [
         "龙卷迅步——异能"
        ]
@@ -3269,9 +2503,13 @@
       {
        "name_en": null,
        "name_cn": "连环疾步",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "“旋风疾步”再次激活伤害从50%提高至75%。"
+       ],
        "raw_text": [
         "连环疾步——异能"
        ]
@@ -3279,9 +2517,13 @@
       {
        "name_en": null,
        "name_cn": "劈天利刃",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "免费“锋锐剑气”伤害从50%提高至75%。"
+       ],
        "raw_text": [
         "劈天利刃——异能"
        ]
@@ -3289,9 +2531,13 @@
       {
        "name_en": null,
        "name_cn": "巨力劈斩",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "微型“斩地巨剑”伤害提高效果从25%提高至50%。"
+       ],
        "raw_text": [
         "巨力劈斩——异能"
        ]
@@ -3299,24 +2545,29 @@
       {
        "name_en": null,
        "name_cn": "灾厄来袭",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "爆炸伤害从20提高至30。"
+       ],
        "raw_text": [
         "灾厄来袭——异能"
        ]
       }
-     ],
-     "abilities": []
+     ]
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "支援",
    "role": "support",
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "ana",
@@ -3325,34 +2576,25 @@
      "role": "support",
      "icon": "https://ld5.res.netease.com/images/20260227/1772181889989_d03631509b.png",
      "dev_note": null,
-     "general": [
-      {
-       "text_en": null,
-       "text_cn": "完美配方——稀有生存英雄物品",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "“纳米激素”持续时间延长从15%提高至25%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 15.0,
-       "after": 25.0,
-       "by": 10.0,
-       "by_pct": null,
-       "metric": "duration",
-       "unit": "pct"
-      }
-     ],
+     "general": [],
      "perks": [],
-     "abilities": []
+     "abilities": [],
+     "stadium_items": [
+      {
+       "name_en": null,
+       "name_cn": "完美配方",
+       "rarity": "稀有",
+       "kind": "survival",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "“纳米激素”持续时间延长从15%提高至25%。"
+       ],
+       "raw_text": [
+        "完美配方——稀有生存英雄物品"
+       ]
+      }
+     ]
     },
     {
      "slug": "wuyang",
@@ -3361,39 +2603,20 @@
      "role": "support",
      "icon": "https://ld5.res.netease.com/images/20260227/1772182015001_e7f5bbe52e.png",
      "dev_note": "我们决定增强一些使用率较低的异能，使其与无漾的其他选项来到同一水平。",
-     "general": [
-      {
-       "text_en": null,
-       "text_cn": "未强化的主要攻击模式弹道速度加成从100%提高至150%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 100.0,
-       "after": 150.0,
-       "by": 50.0,
-       "by_pct": null,
-       "metric": "未强化的主要攻击模式弹道速度加成",
-       "unit": "pct"
-      },
-      {
-       "text_en": null,
-       "text_cn": "激活的“养神泉”自我治疗量从75%提高至100%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 75.0,
-       "after": 100.0,
-       "by": 25.0,
-       "by_pct": null,
-       "metric": "自我治疗量",
-       "unit": "pct"
-      }
-     ],
-     "perks": [
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": null,
        "name_cn": "浪涌枪刺",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "未强化的主要攻击模式弹道速度加成从100%提高至150%。"
+       ],
        "raw_text": [
         "浪涌枪刺——异能"
        ]
@@ -3401,15 +2624,18 @@
       {
        "name_en": null,
        "name_cn": "涌泉相报",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "激活的“养神泉”自我治疗量从75%提高至100%。"
+       ],
        "raw_text": [
         "涌泉相报——异能"
        ]
       }
-     ],
-     "abilities": []
+     ]
     },
     {
      "slug": "zenyatta",
@@ -3418,39 +2644,20 @@
      "role": "support",
      "icon": "https://ld5.res.netease.com/images/20260227/1772181850057_4d2db1358b.png",
      "dev_note": "我们决定削弱禅雅塔的生存能力，并且会继续关注他在这个方面的表现。",
-     "general": [
-      {
-       "text_en": null,
-       "text_cn": "根据伤害量提供的治疗量从35%降低至30%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 35.0,
-       "after": 30.0,
-       "by": -5.0,
-       "by_pct": null,
-       "metric": "根据伤害量提供的治疗量",
-       "unit": "pct"
-      },
-      {
-       "text_en": null,
-       "text_cn": "追踪生命值阈值从35%提高至50%。",
-       "subject": "health",
-       "dimension": "hero_attr",
-       "before": 35.0,
-       "after": 50.0,
-       "by": 15.0,
-       "by_pct": null,
-       "metric": "追踪生命值阈值",
-       "unit": "pct"
-      }
-     ],
-     "perks": [
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": null,
        "name_cn": "觉悟之念",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "根据伤害量提供的治疗量从35%降低至30%。"
+       ],
        "raw_text": [
         "觉悟之念——异能"
        ]
@@ -3458,24 +2665,29 @@
       {
        "name_en": null,
        "name_cn": "救赎相随",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "追踪生命值阈值从35%提高至50%。"
+       ],
        "raw_text": [
         "救赎相随——异能"
        ]
       }
-     ],
-     "abilities": []
+     ]
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "错误修复",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -3488,9 +2700,10 @@
      "body": "- 修复了在第三人称视角下移动时，“斩仇”的竖直劈斩有时无法对齐准星的问题。\n- 修复了安娜未打出爆头仍会触发“断魂曲”的显示位置效果的错误。\n- 修复了安娜的“致命剂量”物品提供的过量生命值无法正确随技能强度提高的问题。\n- 修复了安娜装备“居家药饮”异能时，“抚慰之泉”异能制造的“生物手雷”与基础技能“生物手雷”提供等量过量生命值的问题。\n- 修复了“渣客女王”取消装备“耀武利刃”异能后，其提供的伤害加成会保留的问题。\n- 修复了在同时装备“炸上加炸”异能时，艾什的“遥控引爆”异能的提示文本在主炸药爆炸后依然会保留在屏幕上的问题。\n- 修复了“短筒猎枪”的多枚弹丸击中目标时，艾什的“爆炎火纸”物品会施加两次燃烧伤害的问题。\n- 修复了“铁眼”模组无法降低“斩仇”造成的暴击伤害的问题。\n- 修复了“斩仇”的“灾厄来袭”异能也会对队友造成伤害的问题。\n- 修复了D.Va的“釜山冲击枪”模组会提供终极技能充能的错误。\n- 修复了禅雅塔的“纷争之环”不会对位于“塞特娅的解决之道”提供的额外半径内的敌人应用“乱”法珠的问题。\n- 修复了“可回收弹头”通用道具在对屏障造成伤害时不会治疗莫伊拉的问题。\n- 修复了莫伊拉的“多重魔球”异能生成的法珠效果低于预期的问题。",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   }
  ],
  "raw_text": null,
- "hash": "sha256:5f1ee5f914348eec645f20f152e8aacda55b037cce7f16c634940352ce1f1e6a"
+ "hash": "sha256:fcc27492d1e6f374e02d722a758803390fbf3d3f97cc4782bf021508222ff022"
 }

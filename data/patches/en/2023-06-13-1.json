@@ -11,14 +11,17 @@
    "title": "WELCOME TO SEASON 5",
    "role": null,
    "description": "Join Tracer and her friends as they embark on an adventure in a fantasy-themed role-playing game. As you progress through the Battle Pass, you’ll guide Tracer while she works to save the magical kingdom of Overland from the threat of Demon Lord Reinhardt, and become a powerful knight as you unlock her Mythic Adventurer skin! More fun awaits in season 5, including our first-ever creator-made workshop game mode in the arcade, the return of Summer Games, and introducing Mischief and Magic, Overwatch's 2 prop hunt game mode.",
+   "dev": null,
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "GENERAL UPDATES",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -36,13 +39,15 @@
      "body": "Matchmaking Improvements\n\n- Added new matchmaker functionality that should create matches with a narrower range of player skills. The initial tuning of the system at the start of the season will not be aggressive, but we will be making continual tuning changes throughout the season.\n- The matchmaker now prioritizes placing similar groups with wide skill ranges into the same match, which means solo players will see a lower chance of being placed in those matches.\n\nMatchmaking – Bug Fixes\n\n- Addressed some issues with backfills in Quick Play that could cause the backfill to take a long time or never occur.\n- Fixed an issue where the matchmaker sometimes initialized new players’ competitive MMRs to a value that did not reflect their skill. Players will continue to adjust to their accurate MMR as they continue to play.\n\nFFA Player Skill Ratings – Bug Fixes\n\n- We recently noted a major issue that affected how the matchmaker updated the internal ratings representing player skill in our \"free for all\" game modes, such as Deathmatch, where players are not on a team. This issue resulted in incorrect skill ratings that could create longer queue times and worse match quality than expected.\n- The underlying issue causing incorrect updates has now been addressed, but unfortunately, these skill ratings are no longer meaningful. The best way forward is to do a complete reset of the FFA MMR used by these specific game modes. After this reset, match quality is expected to be suboptimal until players are able to play more games of Deathmatch. We do not take this action lightly, but it is the best course for the future.",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "COMPETITIVE PLAY UPDATES",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -60,21 +65,25 @@
      "body": "Improved how the matchmaker computes its initial skill estimation, aka \"MMR,” for a player queuing for their first competitive game.",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "HERO UPDATES",
    "role": null,
    "description": "HERO UPDATES",
+   "dev": null,
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "TANK",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "junker-queen",
@@ -124,7 +133,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "roadhog",
@@ -155,16 +165,19 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "DAMAGE",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "cassidy",
@@ -250,7 +263,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "genji",
@@ -281,7 +295,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "hanzo",
@@ -355,7 +370,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "mei",
@@ -419,7 +435,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "reaper",
@@ -450,7 +467,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "tracer",
@@ -481,7 +499,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "widowmaker",
@@ -523,16 +542,19 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "SUPPORT",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "lifeweaver",
@@ -696,7 +718,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "moira",
@@ -727,16 +750,19 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "MAP UPDATES",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -754,13 +780,15 @@
      "body": "- Completely redesigned the final defender spawn area\n- Added an exit route from the forward defender spawn\n- Route adjustments and changes made around first capture point outside\nof the hangar\n- Covers and route adjustments made inside the hangar",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "BUG FIXES",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -788,7 +816,8 @@
      "body": "- Fixed a bug with the 'Set Ability Cooldown/Charge/Resource' not\nworking for all abilities.\n- Fixed a bug where the 'Communicate' Action did not work.\n- Fixed a bug where 'Set Ability 1 Enabled' Action did not work for\nOrisa.\n- 'Set Ammo' and 'Set Max Ammo' was not working for all heroes, but we\nhave fixed this issue.\n- The 'Is Communicating' Condition is now functional.",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   }
  ],
  "raw_text": null,

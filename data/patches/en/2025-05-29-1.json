@@ -11,22 +11,27 @@
    "title": "Hotfix Balance Update",
    "role": null,
    "description": "This is a game balance hotfix. Replay codes from the May 20, 2025 patch are still available.",
+   "dev": null,
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "Hero Balance Updates",
    "role": null,
    "description": "Hero Balance Updates",
+   "dev": null,
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "Damage",
    "role": "damage",
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "freja",
@@ -122,24 +127,29 @@
       }
      ],
      "perks": [],
-     "abilities": []
+     "abilities": [],
+     "stadium_items": []
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "Stadium Updates",
    "role": null,
    "description": "Stadium Updates",
+   "dev": null,
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "Tank",
    "role": "tank",
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "d-va",
@@ -149,30 +159,6 @@
      "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e69a3d819fd46d0dcd1d9474c248a95e69519c20077c60e9de73a1e2d3acdbb6.png",
      "dev_note": "Developer Comments: D.Va's been having a hard time asserting space effectively, especially when trying to control key areas. Buffing Lava should help her create more threatening zones and discourage enemies from waltzing into her turf uninvited. As for Focused Fusion—the concept was solid, but in practice it struggled to keep up when enemies were practically doing laps around her. We're adjusting just a bit, so it doesn’t feel like D.Va brought a sniper rifle to a knife fight but still have the ability to hit enemies from near and far.",
      "general": [
-      {
-       "text_en": "Decreased Fusion Cannon spread to 50% (Down from 66%).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Increased Lava damage to 80 (Up from 30).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
       {
        "text_en": "Vesuvius Protocol – Rare Ability Hero Item",
        "text_cn": null,
@@ -198,12 +184,18 @@
        "unit": null
       }
      ],
-     "perks": [
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": "Focused Fusion",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Decreased Fusion Cannon spread to 50% (Down from 66%)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Focused Fusion - Power"
@@ -212,15 +204,18 @@
       {
        "name_en": "Ignition Burst",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Increased Lava damage to 80 (Up from 30)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Ignition Burst - Power"
        ]
       }
-     ],
-     "abilities": []
+     ]
     },
     {
      "slug": "junker-queen",
@@ -230,66 +225,6 @@
      "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/cf66adfac58a0321ec1f7d3a7241d6bf2f3b311707064d2f0ace2e3f4e342727.png",
      "dev_note": "Developer Comments: Junker Queen’s axe has been doing most of the heavy lifting lately, leaving her shotgun and knife feeling a bit neglected. This update gives both of those tools some much-needed love to round out her kit and encourage more varied playstyles. We’re also adding a buff to Thick Skull to help her better withstand burst damage, giving her more staying power in fast-paced fights.",
      "general": [
-      {
-       "text_en": "Increased range to 15 meters (Up from 12 meters).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Increased damage to 50 (Up from 30).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Increased Wounds extension to 1 second (Up from 0.5 seconds).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Increased Damage to 100% (Up from 35%).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Increased range to 15 meters (Up from 12 meters).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
       {
        "text_en": "Thick Skull – Epic Survival Hero Item",
        "text_cn": null,
@@ -315,12 +250,19 @@
        "unit": null
       }
      ],
-     "perks": [
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": "Royal Bullets",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Increased range to 15 meters (Up from 12 meters).",
+        "Increased damage to 50 (Up from 30)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Royal Bullets - Power"
@@ -329,8 +271,12 @@
       {
        "name_en": "Twist The Knife",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Increased Wounds extension to 1 second (Up from 0.5 seconds)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Twist The Knife - Power"
@@ -339,8 +285,12 @@
       {
        "name_en": "Blade Parade",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Increased Damage to 100% (Up from 35%)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Blade Parade - Power"
@@ -349,15 +299,18 @@
       {
        "name_en": "Merciless Magnetism",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Increased range to 15 meters (Up from 12 meters)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Merciless Magnetism - Power"
        ]
       }
-     ],
-     "abilities": []
+     ]
     },
     {
      "slug": "orisa",
@@ -367,18 +320,6 @@
      "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/20c12a10cfe0b5608f9eec63a74ecb0ccd18a114019bc77bb2765f87776e17ed.png",
      "dev_note": "Developer Comments: Orisa’s Overheat build was underperforming, especially when it came to holding the line against aggressive pushes. It lacked the punch needed to deter advancing enemies or force them to reposition. This buff aims to bolster her ability to apply pressure and make her presence more threatening when anchoring space.",
      "general": [
-      {
-       "text_en": "Increased damage to 20% (Up from 10%).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
       {
        "text_en": "Electro Lights – Rare Hero Weapon Item",
        "text_cn": null,
@@ -404,19 +345,24 @@
        "unit": null
       }
      ],
-     "perks": [
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": "Scorched Earth",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Increased damage to 20% (Up from 10%)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Scorched Earth - Power"
        ]
       }
-     ],
-     "abilities": []
+     ]
     },
     {
      "slug": "reinhardt",
@@ -426,30 +372,6 @@
      "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b5e3a4f5629a3acfd47b5d2e695e79ea964b060bf67b7e4f8f15e63accd5f934.png",
      "dev_note": "Developer Comments: The interaction between Feeling the Burn and effects that triggered off Rocket Hammer damage proved to be too strong, so we're removing it while giving some small improvements to some underutilized powers and items.",
      "general": [
-      {
-       "text_en": "Increased Barrier Health Restoration from Damage to 15% (up from 10%).",
-       "text_cn": null,
-       "subject": "health",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "No longer applies to Smashing and Dampener Grip.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
       {
        "text_en": "Dampener Grip – Epic Weapon Hero Item",
        "text_cn": null,
@@ -475,12 +397,18 @@
        "unit": null
       }
      ],
-     "perks": [
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": "Barrier Reconstruction",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Increased Barrier Health Restoration from Damage to 15% (up from 10%)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Barrier Reconstruction - Power"
@@ -489,24 +417,29 @@
       {
        "name_en": "Feeling the Burn",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "No longer applies to Smashing and Dampener Grip."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Feeling the Burn - Power"
        ]
       }
-     ],
-     "abilities": []
+     ]
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "Damage",
    "role": "damage",
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "ashe",
@@ -516,54 +449,6 @@
      "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e41d918d0e7ffa772b5571df3d0dc1a05e6d9032307f78be935972cfd59f208a.png",
      "dev_note": "Developer Comments: Ashe has been steadily climbing in overall competitiveness, but she’s still missing that extra oomph when the moment calls for it. These buffs target some of her underperforming powers and items, giving her more flexibility across different builds and helping her stay impactful in a wider range of scenarios.",
      "general": [
-      {
-       "text_en": "Decreased Explosives damage reduction to 30% (Down from 66%).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Increased damage to 80 (Up from 50).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "This change will not be represented correctly on the tooltip but it will be functionally set to 80. This information in the tooltip will be fixed next season.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Increased heal to 10% (Up from 3%).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
       {
        "text_en": "Sidewinder – Epic Weapon Hero Item",
        "text_cn": null,
@@ -601,12 +486,18 @@
        "unit": null
       }
      ],
-     "perks": [
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": "Out with a Bang",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Decreased Explosives damage reduction to 30% (Down from 66%)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Out with a Bang - Power"
@@ -615,8 +506,13 @@
       {
        "name_en": "Molten Munitions",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Increased damage to 80 (Up from 50).",
+        "This change will not be represented correctly on the tooltip but it will be functionally set to 80. This information in the tooltip will be fixed next season."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Molten Munitions - Power"
@@ -625,15 +521,18 @@
       {
        "name_en": "Reload Therapy",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Increased heal to 10% (Up from 3%)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Reload Therapy - Power"
        ]
       }
-     ],
-     "abilities": []
+     ]
     },
     {
      "slug": "freja",
@@ -643,90 +542,6 @@
      "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/828848437c49bc5ed4a2cf900c85986a4af265d71d1ea9ddf260b8a0236f71a9.png",
      "dev_note": "Developer Comments: Freja's Bola build has enabled Freja to have access to too much crowd control too frequently. We're pulling back the crowd control and damage here, in order to have the build have a fair payoff for how accessible it is. We have planned further changes to reduce the visual noise of this power, which we unfortunately couldn't add to this hotfix, but will be included in a future patch. We're also tuning down other statistical outliers, while making a couple of less popular choices more viable.",
      "general": [
-      {
-       "text_en": "Bola from Lille Fælde slow is decreased by 60%.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": 60.0,
-       "metric": "bola from lille fælde slow is",
-       "unit": null
-      },
-      {
-       "text_en": "Bola from Lille Fælde no longer pulls enemies upon direct hit.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "These will be reflected in the tooltip in a future update.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Decreased increased damaging zone damage to 30% (down from 50%).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Decreased increased damaging zone duration to 2 second (down from 3 second).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Max Ammo restored from using an ability reduced to 25% (down from 50%).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": 50.0,
-       "after": 25.0,
-       "by": -25.0,
-       "by_pct": null,
-       "metric": "max ammo restored from using an ability",
-       "unit": null
-      },
-      {
-       "text_en": "Max Life heal per hit increased to 4% (up from 3%).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": 3.0,
-       "after": 4.0,
-       "by": 1.0,
-       "by_pct": null,
-       "metric": "max life heal per hit",
-       "unit": null
-      },
       {
        "text_en": "Portable Zipline – Epic Weapon Hero Item",
        "text_cn": null,
@@ -741,18 +556,6 @@
       },
       {
        "text_en": "Decreased Weapon Power to 5% (down from 15%).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Increased damage to 33% reduced damage on additional bolts (up from 50% reduced).",
        "text_cn": null,
        "subject": null,
        "dimension": "other",
@@ -788,13 +591,19 @@
        "unit": null
       }
      ],
-     "perks": [
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": "Lille Fælde",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [
-        "Re-enabled."
+        "Bola from Lille Fælde slow is decreased by 60%.",
+        "Bola from Lille Fælde no longer pulls enemies upon direct hit.",
+        "These will be reflected in the tooltip in a future update."
        ],
        "lines_cn": [],
        "raw_text": [
@@ -804,8 +613,13 @@
       {
        "name_en": "So Cooked",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Decreased increased damaging zone damage to 30% (down from 50%).",
+        "Decreased increased damaging zone duration to 2 second (down from 3 second)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "So Cooked - Power"
@@ -814,8 +628,12 @@
       {
        "name_en": "Deep Pockets",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Max Ammo restored from using an ability reduced to 25% (down from 50%)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Deep Pockets - Power"
@@ -824,8 +642,12 @@
       {
        "name_en": "Forager",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Max Life heal per hit increased to 4% (up from 3%)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Forager - Power"
@@ -834,15 +656,18 @@
       {
        "name_en": "Volley a Deux",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Increased damage to 33% reduced damage on additional bolts (up from 50% reduced)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Volley a Deux - Power"
        ]
       }
-     ],
-     "abilities": []
+     ]
     },
     {
      "slug": "mei",
@@ -851,33 +676,25 @@
      "role": "damage",
      "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/08586dceed41e030d575b2b643118f55390f1c2af91dd15394528f5399fcc934.png",
      "dev_note": "Developer Comments: We’re looking to enhance Mei’s survivability in moments where Cryo-Freeze isn’t available by improving the synergy with Blizzard effects. This adjustment should give Mei more defensive value during her ultimate or mini-Blizzard, allowing her to better sustain herself in skirmishes and maintain pressure.",
-     "general": [
-      {
-       "text_en": "Increased Heal per second to 15% (up from 5%).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      }
-     ],
-     "perks": [
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": "Blizznado",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Increased Heal per second to 15% (up from 5%)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Blizznado - Power"
        ]
       }
-     ],
-     "abilities": []
+     ]
     },
     {
      "slug": "soldier-76",
@@ -901,18 +718,6 @@
       },
       {
        "text_en": "Decreased Biotic Field duration to 50% reduced duration (from 70% reduced).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Decreased Weapon Power per shot to 0.4% (down from 0.5%).",
        "text_cn": null,
        "subject": null,
        "dimension": "other",
@@ -1008,28 +813,35 @@
        "unit": null
       }
      ],
-     "perks": [
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": "Chaingun",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Decreased Weapon Power per shot to 0.4% (down from 0.5%)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Chaingun - Power"
        ]
       }
-     ],
-     "abilities": []
+     ]
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "Support",
    "role": "support",
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "ana",
@@ -1039,18 +851,6 @@
      "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/86debddbaaaf8699d68775a9dbffaf5b8db514772b77ff7234b1ff84c0b29fd5.png",
      "dev_note": "Developer Comments: We’re aiming to make Ana feel more agile and resilient in mid-range engagements, where she often finds herself most vulnerable. By improving her survivability, these changes should help her better reposition under pressure and stay active in fights without compromising her high-impact support role. Tactical Rifle is a well-loved power, but we've received consistent feedback that its targeting could feel more like a hindrance than a help. In high-pressure moments, the auto-aim was too frequently locking onto allies instead of enemies, disrupting damage output. We're refining its behavior to better prioritize threats and ensure it feels like a reliable tool in combat.",
      "general": [
-      {
-       "text_en": "Reduced aim tracking angle by 50%.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
       {
        "text_en": "Dash Boots – Rare Survival Hero Item",
        "text_cn": null,
@@ -1112,19 +912,24 @@
        "unit": null
       }
      ],
-     "perks": [
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": "Tactical Rifle",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Reduced aim tracking angle by 50%."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Tactical Rifle - Power"
        ]
       }
-     ],
-     "abilities": []
+     ]
     },
     {
      "slug": "juno",
@@ -1133,38 +938,19 @@
      "role": "support",
      "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2a65bf12035f9c255833693224cad83fd98cead625fdf1b9da8359a7f259e01c.png",
      "dev_note": "Developer Comments: Hyper Ring has seen frequent use in Juno’s kit, but it hasn’t kept pace with the impact of her other powers. We're giving it a boost to bring it in line with the rest of her options, making it a more competitive pick that rewards smart positioning and timing.",
-     "general": [
-      {
-       "text_en": "Increased Overhealth to 100 (Up from 50).",
-       "text_cn": null,
-       "subject": "health",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Increased Slow duration to 2 seconds. (Up from 1 second).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      }
-     ],
-     "perks": [
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": "Hyper Healer",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Increased Overhealth to 100 (Up from 50)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Hyper Healer - Power"
@@ -1173,15 +959,18 @@
       {
        "name_en": "Black Hole",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Increased Slow duration to 2 seconds. (Up from 1 second)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Black Hole - Power"
        ]
       }
-     ],
-     "abilities": []
+     ]
     },
     {
      "slug": "kiriko",
@@ -1190,42 +979,36 @@
      "role": "support",
      "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/24d1d7bf86c331b3d81b934442ed36fd0121f6815255c6f26f456127fb342d15.png",
      "dev_note": "Developer Comments: Self-Care was falling short in terms of sustain, especially in longer engagements. This buff gives it a more meaningful impact, allowing players to recover more effectively and stay in the fight longer without relying solely on external healing.",
-     "general": [
-      {
-       "text_en": "Increased heal to 15% (Up from 5%).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      }
-     ],
-     "perks": [
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": "Self-Care",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Increased heal to 15% (Up from 5%)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Self-Care - Power"
        ]
       }
-     ],
-     "abilities": []
+     ]
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "Bug Fixes",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -1233,7 +1016,8 @@
      "body": "D.Va\n\n- Fixed a bug where Fusion Cannon was shooting less pellets when equipped with the Focused Fusion power.\n\nFreja\n\n- Fixed an issue where the direct hit of the Bola from Lille Fælde was doing more damage than intended.\n- Fixed an issue where the lingering damaging zone from So Cooked didn't apply effects that triggered from Ability Damage.",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   }
  ],
  "raw_text": null,

@@ -11,14 +11,17 @@
    "title": "HERO UPDATES",
    "role": null,
    "description": "HERO UPDATES",
+   "dev": null,
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "SUPPORT",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "lifeweaver",
@@ -260,16 +263,19 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "BUG FIXES",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -287,7 +293,8 @@
      "body": "Lifeweaver\n\n- Fixed an issue that caused Lifeweaver's Camera height to be set too low.\n- Fixed an issue that resulted in Petal Platform hit volumes to misalign in some instances.\n- Petal Platform's Icon will now correctly display status and remaining duration.\n- Addressed an issue where Life Grip could pull allies to the wrong location if cast from the enemy Petal Platform.\n- Life Grip now correctly pull targets unless specific conditions are met, such as using certain ultimates or the teleporter.\n- Improved Life Grip safety checks for various situations and locations.\n- Fixed in a previous update - Fixed a crash that could occur involving Junk Rat projectiles and dormant Petal Platforms.\n- Fixed an issue that caused Tree of Life to not properly attach when placed on ledges.",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   }
  ],
  "raw_text": null,

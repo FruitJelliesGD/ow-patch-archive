@@ -11,14 +11,17 @@
    "title": "Hotfix Balance Update",
    "role": null,
    "description": "This is a gameplay and bug fix update. Replay codes from the August 26, 2025 patch are still available.",
+   "dev": null,
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "Stadium Updates",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -26,13 +29,15 @@
      "body": "- When a player loses a Competitive game, each individual round that a player wins now reduces the total amount of Stadium Points lost and grants Competitive Points.\n- Disabled at All-Star and Legend leagues.",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "Tank",
    "role": "tank",
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "d-va",
@@ -41,57 +46,39 @@
      "role": "tank",
      "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e69a3d819fd46d0dcd1d9474c248a95e69519c20077c60e9de73a1e2d3acdbb6.png",
      "dev_note": "Developer Comments: D.Va’s early weapon power spike created by the low cost 20% weapon power epic was providing disproportionate efficiency compared to similar options. This allowed her to secure early eliminations too reliably and snowball matches ahead of curve. Additionally, her Facetanking builds offered above-average durability relative to other tanks. This update reduces both the efficiency of her early weapon power scaling and the overall survivability of Facetanking strategies to better align with intended balance.",
-     "general": [
-      {
-       "text_en": "Healing decreased to 30% (Down from 40%).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Multitask-Mod - Epic Weapon Hero Item",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Weapon power decreased to 10% (Down from 20%).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      }
-     ],
-     "perks": [
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": "Facetanking",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Healing decreased to 30% (Down from 40%)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Facetanking - Power"
        ]
+      },
+      {
+       "name_en": "Multitask-Mod",
+       "name_cn": null,
+       "rarity": "Epic",
+       "kind": "weapon",
+       "status": "changed",
+       "lines_en": [
+        "Weapon power decreased to 10% (Down from 20%)."
+       ],
+       "lines_cn": [],
+       "raw_text": [
+        "Multitask-Mod - Epic Weapon Hero Item"
+       ]
       }
-     ],
-     "abilities": []
+     ]
     },
     {
      "slug": "junker-queen",
@@ -100,33 +87,25 @@
      "role": "tank",
      "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/cf66adfac58a0321ec1f7d3a7241d6bf2f3b311707064d2f0ace2e3f4e342727.png",
      "dev_note": "Developer Comments: Royal Bullets was winning duels a little too royally, popping targets with minimal setup. This trim keeps it snappy and satisfying without letting it wear the crown in every build.",
-     "general": [
-      {
-       "text_en": "Damage decreased to 40 (Down from 50).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      }
-     ],
-     "perks": [
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": "Royal Bullets",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Damage decreased to 40 (Down from 50)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Royal Bullets - Power"
        ]
       }
-     ],
-     "abilities": []
+     ]
     },
     {
      "slug": "orisa",
@@ -135,43 +114,36 @@
      "role": "tank",
      "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/20c12a10cfe0b5608f9eec63a74ecb0ccd18a114019bc77bb2765f87776e17ed.png",
      "dev_note": "Developer Comments: Orisa was having a tough time holding her ground against beam-heavy foes like Zarya. This update gives her a sturdier answer so she can stare down beams a bit longer and keep the frontline strong.",
-     "general": [
-      {
-       "text_en": "Refraction Tiles - Rare Survival Hero Item",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Damage reduction increased to 75% (Up from 50%).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": 50.0,
-       "after": 75.0,
-       "by": 25.0,
-       "by_pct": null,
-       "metric": "damage",
-       "unit": null
-      }
-     ],
+     "general": [],
      "perks": [],
-     "abilities": []
+     "abilities": [],
+     "stadium_items": [
+      {
+       "name_en": "Refraction Tiles",
+       "name_cn": null,
+       "rarity": "Rare",
+       "kind": "survival",
+       "status": "changed",
+       "lines_en": [
+        "Damage reduction increased to 75% (Up from 50%)."
+       ],
+       "lines_cn": [],
+       "raw_text": [
+        "Refraction Tiles - Rare Survival Hero Item"
+       ]
+      }
+     ]
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "Damage",
    "role": "damage",
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "pharah",
@@ -180,62 +152,19 @@
      "role": "damage",
      "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/93d639075993fdef3402aa9131f93be7789a33a11dc0099f2f88d22dda09c175.png",
      "dev_note": "Developer Comments: Pharah’s mini barrage build has been raining down a little too much fire, melting teams before they knew what hit them. This is the first step in dialing back that bursty damage while keeping the build exciting, with more tuning planned in future updates.",
-     "general": [
-      {
-       "text_en": "Lifesteal decreased to 25% (Down from 50%).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Rocket number reduction increased to 75% (Up from 60%).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": 60.0,
-       "after": 75.0,
-       "by": 15.0,
-       "by_pct": null,
-       "metric": "rocket number reduction",
-       "unit": null
-      },
-      {
-       "text_en": "Overcharged Ordnance - Rare Ability Hero Item",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Cost increased to 5500 (Up from 4000).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": 4000.0,
-       "after": 5500.0,
-       "by": 1500.0,
-       "by_pct": null,
-       "metric": "cost",
-       "unit": null
-      }
-     ],
-     "perks": [
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": "Recursion Battery",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Lifesteal decreased to 25% (Down from 50%)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Recursion Battery - Power"
@@ -244,24 +173,43 @@
       {
        "name_en": "Blitz Barrage",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Rocket number reduction increased to 75% (Up from 60%)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Blitz Barrage - Power"
        ]
+      },
+      {
+       "name_en": "Overcharged Ordnance",
+       "name_cn": null,
+       "rarity": "Rare",
+       "kind": "ability",
+       "status": "changed",
+       "lines_en": [
+        "Cost increased to 5500 (Up from 4000)."
+       ],
+       "lines_cn": [],
+       "raw_text": [
+        "Overcharged Ordnance - Rare Ability Hero Item"
+       ]
       }
-     ],
-     "abilities": []
+     ]
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "Support",
    "role": "support",
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "brigitte",
@@ -270,66 +218,50 @@
      "role": "support",
      "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/51b93ea59f369a1defa78e5d08c12b1391f5d2d94614a51fd95c125a7a6151fa.png",
      "dev_note": "Developer Comments: Scavenged Steel was previously allowing players to chain Rallies together, making it feel like she had Rally every fight. This change should lower Rally uptime so there are greater windows of opportunity to counterplay. We're also lightly increasing the healing reliability of Brigitte's Weapon Power build.",
-     "general": [
-      {
-       "text_en": "Healing Range increased to 10m (Up from 5m).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Scavenged Steel - Epic Ability Hero Item",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "No longer grants Ultimate Charge while Rally is active.",
-       "text_cn": null,
-       "subject": "ultimate_cost",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      }
-     ],
-     "perks": [
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": "Righteous Cleave",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Healing Range increased to 10m (Up from 5m)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Righteous Cleave - Power"
        ]
+      },
+      {
+       "name_en": "Scavenged Steel",
+       "name_cn": null,
+       "rarity": "Epic",
+       "kind": "ability",
+       "status": "changed",
+       "lines_en": [
+        "No longer grants Ultimate Charge while Rally is active."
+       ],
+       "lines_cn": [],
+       "raw_text": [
+        "Scavenged Steel - Epic Ability Hero Item"
+       ]
       }
-     ],
-     "abilities": []
+     ]
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "Bug Fixes",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -337,7 +269,8 @@
      "body": "Brigitte\n\n- Fixed an issue where repeatedly pressing Shield Bash after casting would grant multiple On Ability Triggers.\n\nJunkrat\n\n- Fixed an issue where Junkrat's Concussion Mine wasn't properly scaling with Ability Power.\n\nItems\n\n- Fixed an issue where Amari's Antidote was working on all Healing instead of just Weapon Healing.\n- Fixed an issue where Divine Intervention was also working on self damage from removing Overhealth.\n- Fixed an issue where Ogundimu Reduction Field was not properly interacting with Nebula Conduit's self damage.",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   }
  ],
  "raw_text": null,

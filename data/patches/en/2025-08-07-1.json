@@ -11,22 +11,27 @@
    "title": "Hotfix Balance Update",
    "role": null,
    "description": "This is a stadium balance hotfix. Replay codes from the August 5, 2025 patch are still available.",
+   "dev": null,
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "Stadium Updates",
    "role": null,
    "description": "Stadium Updates",
+   "dev": null,
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "Tank",
    "role": "tank",
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "sigma",
@@ -47,38 +52,20 @@
        "by_pct": null,
        "metric": null,
        "unit": null
-      },
-      {
-       "text_en": "Increased Cooldown Reduction to 0.8s (Up from 0.5s).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Increased Splash Damage to 75% (Up from 25%).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
       }
      ],
-     "perks": [
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": "Hyperloop",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Increased Cooldown Reduction to 0.8s (Up from 0.5s)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Hyperloop - Power"
@@ -87,18 +74,22 @@
       {
        "name_en": "Singularity",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Increased Splash Damage to 75% (Up from 25%)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Singularity - Power"
        ]
       }
-     ],
-     "abilities": []
+     ]
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   }
  ],
  "raw_text": null,

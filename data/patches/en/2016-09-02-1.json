@@ -11,6 +11,7 @@
    "title": "PATCH HIGHLIGHTS",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -23,13 +24,15 @@
      "body": "The forest has slowly begun overtaking the abandoned village of Eichenwalde, but the scars will never completely fade. During the Omnic Crisis, Eichenwalde was the site of a key battle. General Balderich von Adler took a handful of crusaders to the village in an effort to outflank the omnic army. Balderich's soldiers were able to break down the enemy forces, giving the German military an opportunity to push back, but the Crusaders didn't make it out of the battle. General Balderich finally collapsed in the castle's great hall.",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "GENERAL UPDATES",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -42,13 +45,15 @@
      "body": "- Skill rating is now measured on a 1-5000 scale instead of the former 1-100 scale\n- Skill Rating Tiers\n\n\n  - Players will now be assigned to a tier, depending on their skill rating\n\n\n    - Bronze - 1-1499\n    - Silver - 1500-1999\n    - Gold - 2000-2499\n    - Platinum - 2500-2999\n    - Diamond - 3000-3499\n    - Master - 3500-3999\n    - Grandmaster - 4000-5000\n  - In Bronze, Silver, Gold, Platinum, and Diamond tiers, a player will not drop out of their tier even if their skill rating falls below the cutoff\n  - In Master and Grandmaster tiers, a player whose skill rating falls below the tier's minimum will be moved to a lower tier\n  - Players that have reached the Master and Grandmaster tiers must be within 500 Skill Rating of their groupmates\n  - Players that are Diamond-tier and below must be within 1000 Skill Rating of their groupmates\n- Skill Rating Decay\n\n\n  - Players in Diamond, Master, and Grandmaster tiers that haven't participated in a competitive match for 7 days will lose skill rating\n  - Players with a skill rating above 3000 (Diamond tier or higher) will lose 50 rating points every 24 hours, but their rating will not fall below 3000\n  - Competing in a single match will halt skill rating decay\n  - Players that haven't participated in a competitive match for 7 days will immediately drop out of the top 500\n- Map Changes\n\n\n  - Several refinements have been made to the time bank system for Hanamura, Temple of Anubis, and Volskaya Industries\n  - The time bank system has been added to Dorado, Hollywood, King's Row, Numbani, Route 66, and Watchpoint: Gibraltar\n  - Time granted for taking objectives on Dorado, Hanamura, Hollywood, King's Row, Numbani, Route 66, Temple of Anubis, Volskaya Industries, and Watchpoint: Gibraltar has been reduced from 5 minutes to 4\n- Competitive Points\n\n\n  - Existing competitive points saved from Season 1 will be multiplied by 10\n  - After winning a competitive match, players will now receive 10 competitive points (instead of 1)\n  - Players will now receive 3 competitive points for a draw\n  - The cost of golden weapons has also been multiplied by 10 - from 300 to 3000\n  - A soft cap is being placed on the number of competitive points that can be saved\n\n\n    - Players with more than 6000 points at the start of season 2 will no longer accrue points by playing competitive matches\n    - End-of-season rewards will still be granted to players at the soft cap\n- Instead of going into sudden death, tied competitive matches will now result in a draw\n- Players must now win at least 50 competitive matches to be eligible for a spot in the Top 500\n- Players must now complete more matches to clear their penalty status for leaving a competitive match early",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "HERO BALANCE UPDATES",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "d-va",
@@ -79,7 +84,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "hanzo",
@@ -127,7 +133,8 @@
       }
      ],
      "perks": [],
-     "abilities": []
+     "abilities": [],
+     "stadium_items": []
     },
     {
      "slug": "mei",
@@ -169,7 +176,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "cassidy",
@@ -200,7 +208,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "mercy",
@@ -261,7 +270,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "genji",
@@ -346,7 +356,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "lucio",
@@ -377,7 +388,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "roadhog",
@@ -408,7 +420,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "soldier-76",
@@ -450,7 +463,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "zenyatta",
@@ -500,7 +514,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     }
    ],
    "blocks": [
@@ -509,13 +524,15 @@
      "body": "- Ultimates that consume the ultimate meter when activated will now drain the meter more quickly (.25 second instead of 1 second)\n- Reverted a recent change that reduced the size of heroes' projectiles\n- Most hero abilities will no longer interrupt quick melee attacks\n- Ultimate abilities will now interrupt quick melee attacks",
      "dev": "Altering the size of projectiles in flight had too many unintended side effects to keep in the game, at least in its current form. We will continue watching this and make additional changes if necessary. We’re also making quick melee more consistent when interacting with enemy abilities."
     }
-   ]
+   ],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "MAP BALANCE UPDATES",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -523,13 +540,15 @@
      "body": "- Watchpoint: Gibraltar’s first checkpoint has been removed",
      "dev": "The balance changes that were implemented in previous patches have eliminated the need for Watchpoint: Gibraltar to have an extra checkpoint."
     }
-   ]
+   ],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "USER INTERFACE UPDATES",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -537,13 +556,15 @@
      "body": "- A new \"Allied Health Bars\" option has been added (Options > Controls)\n- Contextual menus have been added on the hero selection screen, giving players the ability to report or group up with other players\n- Matchmaking UI is now purple in the Competitive Play queue\n- Made several minor adjustments to typography in the Spectator UI",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "BUG FIXES",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -571,7 +592,8 @@
      "body": "- Competitive play leaver messaging no longer overlaps with the PvP HUD at the top of the screen\n- Fixed a bug causing the end of season banner to pop up while the player is in a match\n- Fixed a bug preventing the hero list in Custom Game settings from being organized alphabetically\n- The spectate option now becomes unavailable (the button will be greyed out) when all spectator slots have been filled in a Custom Game lobby\n- Fixed an issue causing in-game statistics to run off the edge of the screen in 16:10 aspect ratio",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   }
  ],
  "raw_text": null,

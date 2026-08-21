@@ -11,22 +11,27 @@
    "title": "REPLAY CODES RESET",
    "role": null,
    "description": "This is a bug fix patch along with additional Stadium balance updates. In-Game Replay Codes and Highlights from the previous patch are removed.",
+   "dev": null,
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "Stadium Updates",
    "role": null,
    "description": "Stadium Updates",
+   "dev": null,
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "Tank",
    "role": "tank",
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "d-va",
@@ -35,42 +40,36 @@
      "role": "tank",
      "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e69a3d819fd46d0dcd1d9474c248a95e69519c20077c60e9de73a1e2d3acdbb6.png",
      "dev_note": "Developer Comments: Tokki Slam was originally toned down due to its disruptive potential, but after observing its performance over a full season, it’s clear the impact was reduced a bit too much. We’re bringing some power back to the ability to give D.Va that big slam-dunk moment she deserves which is rewarding well-timed engages with satisfying payoff.",
-     "general": [
-      {
-       "text_en": "Increased Tokki Slam's damage scalar to 30% (Up from 20%).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      }
-     ],
-     "perks": [
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": "Tokki Slam",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Increased Tokki Slam's damage scalar to 30% (Up from 20%)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Tokki Slam - Power"
        ]
       }
-     ],
-     "abilities": []
+     ]
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "Damage",
    "role": "damage",
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "junkrat",
@@ -91,110 +90,20 @@
        "by_pct": null,
        "metric": null,
        "unit": null
-      },
-      {
-       "text_en": "Fixed an issue where using Steel Trap while you had 1 charge would also consume the recharging charge.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Now deals 30% reduced damage (up from 50% reduced).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Frequency increased to every 0.3s (up from 0.4s).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Lithium Alloy - Epic Ability Hero Item",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Burn damage increased to 75 (up from 50).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": 50.0,
-       "after": 75.0,
-       "by": 25.0,
-       "by_pct": null,
-       "metric": "burn damage",
-       "unit": null
-      },
-      {
-       "text_en": "Fawkes' Funny Fuel™- Epic Ability Hero Item",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Ability Power increased to 15% (up from 10%).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": 10.0,
-       "after": 15.0,
-       "by": 5.0,
-       "by_pct": null,
-       "metric": "ability power",
-       "unit": null
-      },
-      {
-       "text_en": "Ability Lifesteal increased to 15% (up from 10%).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": 10.0,
-       "after": 15.0,
-       "by": 5.0,
-       "by_pct": null,
-       "metric": "ability lifesteal",
-       "unit": null
       }
      ],
-     "perks": [
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": "It's A(Nother) Trap",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Fixed an issue where using Steel Trap while you had 1 charge would also consume the recharging charge."
+       ],
        "lines_cn": [],
        "raw_text": [
         "It's A(Nother) Trap - Power"
@@ -203,8 +112,12 @@
       {
        "name_en": "Hop Boom",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Now deals 30% reduced damage (up from 50% reduced)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Hop Boom - Power"
@@ -213,15 +126,47 @@
       {
        "name_en": "Rainin' Lead",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Frequency increased to every 0.3s (up from 0.4s)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Rainin' Lead - Power"
        ]
+      },
+      {
+       "name_en": "Lithium Alloy",
+       "name_cn": null,
+       "rarity": "Epic",
+       "kind": "ability",
+       "status": "changed",
+       "lines_en": [
+        "Burn damage increased to 75 (up from 50)."
+       ],
+       "lines_cn": [],
+       "raw_text": [
+        "Lithium Alloy - Epic Ability Hero Item"
+       ]
+      },
+      {
+       "name_en": "Fawkes' Funny Fuel™",
+       "name_cn": null,
+       "rarity": "Epic",
+       "kind": "ability",
+       "status": "changed",
+       "lines_en": [
+        "Ability Power increased to 15% (up from 10%).",
+        "Ability Lifesteal increased to 15% (up from 10%)."
+       ],
+       "lines_cn": [],
+       "raw_text": [
+        "Fawkes' Funny Fuel™- Epic Ability Hero Item"
+       ]
       }
-     ],
-     "abilities": []
+     ]
     },
     {
      "slug": "mei",
@@ -230,42 +175,36 @@
      "role": "damage",
      "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/08586dceed41e030d575b2b643118f55390f1c2af91dd15394528f5399fcc934.png",
      "dev_note": "Developer Comments: Snowball Flight now synergizes with Twice as Ice, expanding Mei’s mobility options and enabling more frequent use of Mini-Blizzard. This update gives her more fluid movement and crowd control opportunities, encouraging dynamic play and rewarding smart positioning.",
-     "general": [
-      {
-       "text_en": "Twice As Ice also resets next Snowball Flight's cooldown.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      }
-     ],
-     "perks": [
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": "Twice As Nice",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Twice As Ice also resets next Snowball Flight's cooldown."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Twice As Nice - Power"
        ]
       }
-     ],
-     "abilities": []
+     ]
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "Support",
    "role": "support",
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "ana",
@@ -274,74 +213,19 @@
      "role": "support",
      "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/86debddbaaaf8699d68775a9dbffaf5b8db514772b77ff7234b1ff84c0b29fd5.png",
      "dev_note": "Developer Comments: Ana remains one of the most impactful heroes when it comes to empowering her teammates, and this patch leans further into that strength. We're enhancing her ability to turn the tide of battle with key utility, particularly by increasing the impact of Biotic Grenade to create more high-stakes, high-reward moments in critical team fights. These changes aim to make Ana an even more decisive force in coordinated play.",
-     "general": [
-      {
-       "text_en": "Decreased duration reduction to 25% (Down from 50%).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Increased self [Nano Boost] duration to 100%. (Up from 50%).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Increased ultimate charge given to 35%. (Up from 25%).",
-       "text_cn": null,
-       "subject": "ultimate_cost",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Increased slow duration to 2.5s. (Up from 1.5s).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Increased damage to 75. (Up from 50).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      }
-     ],
-     "perks": [
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": "Our Turn",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Decreased duration reduction to 25% (Down from 50%)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Our Turn - Power"
@@ -350,8 +234,12 @@
       {
        "name_en": "My Turn",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Increased self [Nano Boost] duration to 100%. (Up from 50%)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "My Turn - Power"
@@ -360,8 +248,12 @@
       {
        "name_en": "Your Full Potential",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Increased ultimate charge given to 35%. (Up from 25%)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Your Full Potential - Power"
@@ -370,8 +262,12 @@
       {
        "name_en": "Time Out",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Increased slow duration to 2.5s. (Up from 1.5s)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Time Out - Power"
@@ -380,15 +276,18 @@
       {
        "name_en": "Venomous",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Increased damage to 75. (Up from 50)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Venomous - Power"
        ]
       }
-     ],
-     "abilities": []
+     ]
     },
     {
      "slug": "juno",
@@ -397,33 +296,25 @@
      "role": "support",
      "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2a65bf12035f9c255833693224cad83fd98cead625fdf1b9da8359a7f259e01c.png",
      "dev_note": "Developer Comments: At higher MMR tiers, Juno has earned the nickname \"Flying Tracer\" for good reason. Her survivability, especially after Round 3, made her extremely slippery and difficult to deal with. This base adjustment is focused on slightly reducing her survival capability to keep her challenging without feeling unfair to eliminate.",
-     "general": [
-      {
-       "text_en": "Decreased Overhealth to 75 (Down from 100).",
-       "text_cn": null,
-       "subject": "health",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      }
-     ],
-     "perks": [
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": "Hyper Healer",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Decreased Overhealth to 75 (Down from 100)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Hyper Healer - Power"
        ]
       }
-     ],
-     "abilities": []
+     ]
     },
     {
      "slug": "kiriko",
@@ -432,45 +323,26 @@
      "role": "support",
      "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/24d1d7bf86c331b3d81b934442ed36fd0121f6815255c6f26f456127fb342d15.png",
      "dev_note": "Developer Comments: We're shifting Kiriko's clone to serve its role as a decoy and utility tool, rather than functioning as a lethal, cold-blooded assassin. This adjustment is the first step toward making the ability feel more fair, interactive, and enjoyable for both Kiriko players and their opponents. More updates are planned to further refine its identity and gameplay impact.",
-     "general": [
-      {
-       "text_en": "Clone now deals 65% less healing and damage.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Increased duration to 4s (Up from 2.5s.)",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      }
-     ],
-     "perks": [
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": "Clone Conjuration",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Clone now deals 65% less healing and damage.",
+        "Increased duration to 4s (Up from 2.5s.)"
+       ],
        "lines_cn": [],
        "raw_text": [
         "Clone Conjuration - Power"
        ]
       }
-     ],
-     "abilities": []
+     ]
     },
     {
      "slug": "zenyatta",
@@ -479,50 +351,19 @@
      "role": "support",
      "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9367143a32f3fc07781330a0b26c6f1087361204a2b7e4088d1daf26428273f2.png",
      "dev_note": "Developer Comments: While Zenyatta has often leaned toward offensive playstyles, we're making adjustments to encourage his healing focused builds as well. These changes aim to better support players who want to take on a more traditional support role and provide stronger team-wide healing presence.",
-     "general": [
-      {
-       "text_en": "Decreased healing reduction to 40% (Down from 45%).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Increased orb duration to 10s (Up from 5s).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Increased ultimate meter cap to 75% (Up from 65%).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      }
-     ],
-     "perks": [
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": "Dual Harmony",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Decreased healing reduction to 40% (Down from 45%)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Dual Harmony - Power"
@@ -531,8 +372,12 @@
       {
        "name_en": "Gotta Have Faith",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Increased orb duration to 10s (Up from 5s)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Gotta Have Faith - Power"
@@ -541,24 +386,29 @@
       {
        "name_en": "Soul Control",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Increased ultimate meter cap to 75% (Up from 65%)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Soul Control - Power"
        ]
       }
-     ],
-     "abilities": []
+     ]
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": null,
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -566,13 +416,15 @@
      "body": "Aerial Distresser\n\n- Cost decreased to 9000 (down from 10000)\n\nThree-Tap Tommy Gun\n\n- Cost increased to 10500 (up from 9500)",
      "dev": "Developer Comments: We're reducing the cost of Aerial Distresser to make it more efficient and easier to purchase in the matchups that you need it. Additionally, Three-Tap Tommy Gun has become the linchpin of many popular builds and was priced too low for the amount of value it is providing."
     }
-   ]
+   ],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "Bug Fixes",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -590,7 +442,8 @@
      "body": "Junkrat\n\n- Fixed an issue with Junkrat’s Soot Shaker and Commander’s Clip mods not granting the correct ammo count.\n- Fixed an issue with Junkrat’s Zip Grease mod not refreshing after new concussion mine detonations.\n\nKiriko\n\n- Fixed an issue where Kiriko’s clone gained excessive attack speed when using the “Clone Conjuration” power in combination with Swift Step.\n- Fixed an issue where Kiriko did not receive damage and healing stats from her clone when using the “Clone Conjuration” power.\n\nSigma\n\n- Fixed an issue where Sigma’s Experimental Barrier unintentionally blocked certain projectile damage while the Mass Driver power was equipped.",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   }
  ],
  "raw_text": null,

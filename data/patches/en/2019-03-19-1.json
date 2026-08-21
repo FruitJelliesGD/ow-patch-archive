@@ -11,6 +11,7 @@
    "title": "PATCH HIGHLIGHTS",
    "role": null,
    "description": "GENERAL UPDATES",
+   "dev": null,
    "heroes": [
     {
      "slug": "baptiste",
@@ -21,7 +22,8 @@
      "dev_note": null,
      "general": [],
      "perks": [],
-     "abilities": []
+     "abilities": [],
+     "stadium_items": []
     }
    ],
    "blocks": [
@@ -50,13 +52,15 @@
      "body": "- A new sound plays when you land a hit while damage boosted\n- A new sound plays when you land a hit, but it doesn’t do any damage",
      "dev": "With the addition of Baptiste, we wanted to be sure that you can tell when your hits were being buffed or nullified, regardless of what hero you’re playing."
     }
-   ]
+   ],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "HERO UPDATES",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "ana",
@@ -87,7 +91,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "doomfist",
@@ -137,7 +142,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "hanzo",
@@ -168,7 +174,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "junkrat",
@@ -218,7 +225,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "lucio",
@@ -306,7 +314,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "cassidy",
@@ -356,7 +365,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "mei",
@@ -406,7 +416,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "moira",
@@ -448,7 +459,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "orisa",
@@ -479,7 +491,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "pharah",
@@ -510,7 +523,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "reaper",
@@ -541,7 +555,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "soldier-76",
@@ -610,7 +625,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "sombra",
@@ -652,7 +668,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "symmetra",
@@ -683,7 +700,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "torbjorn",
@@ -727,7 +745,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "widowmaker",
@@ -769,7 +788,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "wrecking-ball",
@@ -800,7 +820,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "zarya",
@@ -831,7 +852,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "zenyatta",
@@ -881,16 +903,19 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "BUG FIXES",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -923,7 +948,8 @@
      "body": "Ana\n\n- Fixed a bug where Ana’s clothes would clip into her hip pouch while doing the Yut Nori emote\n\nAshe\n\n- Fixed a bug that prevented audio feedback from playing to indicate ammo was low on Ashe’s rifle if it had three or fewer bullets\n\nDoomfist\n\n- Fixed a bug where Seismic Slam didn’t pull in enemies as intended\n\nD.Va\n\n- Fixed a bug that made D.Va very difficult to knock back while she was firing her Fusion Cannons\n\nGenji\n\n- Fixed a bug that caused Genji’s Dragonblade to end before the deflect duration was complete\n- Fixed a bug where Genji would be knocked back unusually far when using Swift Strike to hit Doomfist’s Rocket Punch\n\nHanzo\n\n- Fixed a bug where Hanzo’s leg would visibly move while he was in his Meditate pose\n\nMercy\n\n- Fixed a bug where Mercy’s left knee would bend unnaturally when stunned by McCree’s Flashbang\n\nOrisa\n\n- Fixed a bug that made Orisa very difficult to knock back while she was firing her Fusion Driver\n\nReaper\n\n- Fixed a bug where a button on the shoulder of Reaper’s Lu Bu skin appeared to be floating\n\nReinhardt\n\n- Fixed a bug where a piece on Reinhardt’s back displayed incorrectly while using the Guan Yu skin in the Hammer Down highlight intro\n- Fixed an issue that allowed Reinhardt’s Earthshatter to hit people further off the ground than intended in specific circumstances\n\nSombra\n\n- Fixed a bug where Sombra’s stealth exiting sound effect wouldn’t play if an emote was used to exit stealth mode\n- Fixed a bug where Sombra couldn’t quick melee while using her Hack ability\n\nSymmetra\n\n- Fixed a bug where Symmetra would gain ultimate charge while casting Photon Barrier\n\nTorbjörn\n\n- Fixed a bug that prevented Torbjörn from using Molten Core in custom games if Ability 2 was disabled\n\nWidowmaker\n\n- Fixed a bug that prevented Widowmaker’s Venom Mine from damaging a hero if they triggered it at the edge of its trigger radius\n\nMaps\n\n- Hollywood\n\n\n  - Fixed a bug where the winning team’s hero lineup wouldn’t display correctly\n- Horizon Lunar Colony\n\n\n  - Fixed a bug that caused the hanging tires near the first point to rotate a Self Destructing D.Va mech\n- Paris\n\n\n  - Fixed a bug where the sounds coming from the Nous vous surveillons apartment weren’t playing\n\nOverwatch League Skins\n\n- Fixed issues with the colors of skins for new Overwatch League teams",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   }
  ],
  "raw_text": null,

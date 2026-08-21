@@ -11,6 +11,7 @@
    "title": "PATCH HIGHLIGHTS:",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -23,13 +24,15 @@
      "body": "In addition to the new items in the Overwatch Anniversary event, we’re also adding new goodies to our standard loot boxes. Sombra, Orisa, and Tracer are all getting brand new emotes, and Reaper picks up several new unlocks based on the infamous shrug from the recent Uprising comic.",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "GENERAL",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -37,13 +40,15 @@
      "body": "- Added new rules sets for 3v3 and 1v1 Elimination modes on the Arena maps\n- Added options for Hero Lockout, Limited Hero Pool, Tiebreakers, and Hero Reveal for Elimination mode\n- Players can now disable secondary fire and secondary weapons in Custom Games\n- You can now disable one Symmetra ultimate while leaving the other active",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "HERO UPDATES",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "genji",
@@ -67,7 +72,8 @@
       }
      ],
      "perks": [],
-     "abilities": []
+     "abilities": [],
+     "stadium_items": []
     },
     {
      "slug": "hanzo",
@@ -122,7 +128,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "orisa",
@@ -172,7 +179,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "reaper",
@@ -203,7 +211,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "reinhardt",
@@ -264,7 +273,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     }
    ],
    "blocks": [
@@ -273,21 +283,25 @@
      "body": "- Recoil Recovery Aim Compensation can now be disabled for Ana, McCree, and Widowmaker. The option can be found under the “Control” tab in the “Options” menu. Simply select the appropriate hero under the dropdown menu and look for the “Hero” section",
      "dev": "By default, weapon recoil recovery is overruled by downward crosshair movement. This means that downward movement during the weapon’s recoil recovery phase will override the weapon’s natural recoil recovery. This option allows you to remove this functionality, meaning a weapon’s natural recoil recovery movement acts independently from downward crosshair movement. In practice, this will make your crosshair move faster if you aim downward during the recoil recovery window."
     }
-   ]
+   ],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "USER INTERFACE UPDATES",
    "role": null,
    "description": "- Your final blows are now highlighted by a white background in the Kill Feed\n- Added new Kill Feed icons for environmental kills and a number of abilities\n- Heroes resurrected by Mercy are now are now highlighted and color-coded in the Kill Feed\n- Certain types of assists, like McCree’s Flashbang or Zenyatta’s Orb of Discord, now show up in the Kill Feed\n- New Controller option: Force Keyboard/Mouse User Interface",
+   "dev": "When PC players switch from using the Keyboard/Mouse to a game controller, the game’s user interface is dynamically updated to the console/controller version. Additionally, the button layout on many heroes (like Hanzo, Zenyatta, and Mercy) is different on console. In the past, when a player chose to play using a controller and a mouse, the UI would constantly switch, depending on which device was sending information to the game. This new option allows players to set a default user interface if they choose to use a controller along with a keyboard/mouse.",
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "BUG FIXES",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -325,9 +339,10 @@
      "body": "- Fixed a bug that caused Tracer to move oddly when she first appeared in the tutorial\n- Fixed an issue causing asymmetry between pillars on the Ruins capture point on Ilios\n- Fixed a bug that allowed Sombra to reach unintended locations on Numbani\n- Fixed a bug that allowed players to reach an unintended location on Route 66\n- Fixed a bug that allowed Sombra to reach unintended locations on Watchpoint: Gibraltar",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   }
  ],
  "raw_text": null,
- "hash": "sha256:e19004b076115267e568c1b2fa14d8e983220a4274079a356e280f702302c1a0"
+ "hash": "sha256:3eb2052b067131e1887cb9f6114edce32de476f6f67caf9ff5724abb5315d9ba"
 }

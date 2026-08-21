@@ -10,23 +10,28 @@
    "type": "generic_update",
    "title": null,
    "role": null,
-   "description": "-\nTo share your feedback, please post in the General Discussion forum.\n\n-\nFor a list of known issues, visit our Bug Report forum.\n\n-\nFor troubleshooting assistance, visit our Technical Support forum.",
+   "description": "-\nTo share your feedback, please post in the [General Discussion](https://us.forums.blizzard.com/en/overwatch/c/general-discussion) forum.\n\n-\nFor a list of known issues, visit our [Bug Report](https://us.forums.blizzard.com/en/overwatch/c/bug-report) forum.\n\n-\nFor troubleshooting assistance, visit our [Technical Support](https://us.forums.blizzard.com/en/overwatch/c/technical-support) forum.",
+   "dev": null,
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "Ashe's Mardi Gras Challenge",
    "role": null,
-   "description": "Get ready for Ashe’s Mardi Gras Challenge and some special, unlockable in-game content! Wins in Quick Play, Competitive Play, or Arcade will earn you themed sprays, player icons, and a new epic skin: Mardi Gras Ashe!\n\nTune in to participating Twitch broadcasters while they’re playing Overwatch any time through March 9th to earn a total of 6 Ashe’s Mardi Gras Challenge sprays and icons!\n\nTo learn more about Ashe’s Mardi Gras Challenge, click here.",
+   "description": "Get ready for Ashe’s Mardi Gras Challenge and some special, unlockable in-game content! Wins in Quick Play, Competitive Play, or Arcade will earn you themed sprays, player icons, and a new epic skin: Mardi Gras Ashe!\n\nTune in to participating Twitch broadcasters while they’re playing Overwatch any time through March 9th to earn a total of 6 Ashe’s Mardi Gras Challenge sprays and icons!\n\nTo learn more about Ashe’s Mardi Gras Challenge, [click here](https://playoverwatch.com/en-us/news/23318076).",
+   "dev": null,
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "General Updates",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -49,13 +54,15 @@
      "body": "- The Game Mode selector in the Career Profile is now sorted more logically to make it easier to use\n- A group leader may not use the Leave as Group option while a competitive game is currently in progress\n- The initial Assemble Heroes timer for games using the Assault, Hybrid, Control, and Payload game modes has been reduced from 40 to 35 seconds\n- We've updated the interactions between all stuns (Flashbang, Earthshatter, Freeze, Sleep, Accretion) to be more consistent. New stuns will only replace existing stuns if their duration is longer than the time remaining on the current stun. For example, a Flashbang stun will not apply to someone who has just been Earthshattered. Note: we use the minimum guaranteed stun time for Ana sleep, which right now is 1.5 seconds (time to fall down + time to stand back up)\n- Mei’s Ice Wall now has a visual damaged state when under half health",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "Workshop Updates",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -83,13 +90,15 @@
      "body": "- Set Global Variable\n- Set Player Variable\n- Modify Global Variable\n- Modify Player Variable\n- Set Global Variable At Index\n- Set Player Variable At Index\n- Modify Global Variable At Index\n- Modify Player Variable At Index\n- Loop\n- Loop If\n- Abort\n- Abort If\n- Skip\n- Skip If",
      "dev": "Variable manipulation and flow control actions previously caused high server load, so we spent some time making them more lightweight. When combined with the new Disable Inspector Recording action, these changes may result in significant reduction in server load for Workshop modes that rely on heavy variable logic, particularly those that manipulate arrays. In light of these changes, we’re removing the restriction that requires a Wait action before a Loop, though be advised that excessive looping in a single frame can still cause server load issues, especially when using actions other than those listed above. Note that setting or modifying multiple player variables with a single action (by providing an array of players) is not optimized, nor is setting or modifying a variable that is ever used by a Chase action. Finally, keep in mind that some values (such as the Ray Cast values) can cause quite a bit of server load on their own, even if using the optimized actions above."
     }
-   ]
+   ],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "Bug Fixes",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -117,9 +126,10 @@
      "body": "- Fixed an issue where Sigma's Primary Fire was sometimes disabled when disabling Experimental Barrier via Custom Game Settings\n- Fixed an issue preventing Has Status from working correctly when querying the Unkillable status\n- Fixed an issue where scores in Deathmatch display incorrectly if the score is set to a high number via Workshop actions\n- Fixed an issue preventing setting scores or declaring victory in Team Deathmatch from working correctly via Workshop actions\n- Fixed an issue where Training Bots sometimes wouldn't respawn in Practice Range\n- Fixed an issue preventing the Sleep status from being interrupted early via Workshop actions\n- Fixed an issue with the Death Spectate actions when Enable and Disable are alternated repeatedly\n- Fixed an issue causing the Buff Impact sound to play twice\n- Fixed an issue causing the pitch (vertical) angle to be reset when using the Teleport action\n- Fixed an issue preventing Disable Built-In Game Mode Completion from working in certain modes\n- Fixed an issue where effects sometimes were the wrong size and color\n- Fixed an issue where the Loop If Condition and Abort If Condition actions considered the value of the conditions from the beginning of the frame instead of their current value\n- Fixed an issue where using the same Set Facing action multiple times in the same frame with different inputs would not work correctly\n- Fixed an issue where the Nearest Walkable Position value stopped working near the statue in Château Guillard\n- Fixed an issue where the Nearest Walkable Position value would be incorrect if used in a HUD action or in certain reevaluating actions\n- Fixed an issue where the Total Elapsed Time value would be incorrect if used in a HUD action or in certain reevaluating actions\n- Fixed an issue where effects and beam effects that don’t reevaluate would wait until the end of the frame to evaluate their positions and radii rather than evaluating them immediately\n- Fixed an issue where the Chase Global Variable actions did not have access to contextual values (such as Event Player, Attacker, Victim, etc.)",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   }
  ],
  "raw_text": null,
- "hash": "sha256:9f5f4ab5721e53ab1d6dc563cbca39e672a9241f127bd786e107e15658293a0e"
+ "hash": "sha256:77bb63154bc581942f472f2a6e442cc86095a192f9ce008431ede1f02380c8fe"
 }

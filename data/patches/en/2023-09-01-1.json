@@ -11,22 +11,27 @@
    "title": "OVERWATCH 2 ANNIVERSARY 2023",
    "role": null,
    "description": "We’re celebrating the first year of Overwatch 2! Come and play returning event game modes, including Battle for Olympus, Catch-A-Mari, Starwatch, and Mischief and Magic! You’ll also be able to take part in new challenges that reward Overwatch Credits, which can be spent on returning Legendary skins from the in-game shop. Join the celebration when it begins on September 19!",
+   "dev": null,
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "NEW GAME MODE – HERO MASTERY",
    "role": null,
    "description": "Hero Mastery is a new, single-player game mode that allows players to test their skills with individual heroes on custom courses. Push your expertise to the limit for high scores and dominate the leaderboards. Are you up to the challenge?\n\n- Each hero can be played on three unique courses of increasing difficulty. Flex your skills and unlock up to five stars on each course.\n- Hero Mastery courses are scored on various factors, including time, eliminations, heals, and escorts. Each hero has individual stats that are tracked as well. Plus collect all the Mastery Emblems to show off your prowess!\n- Hero Mastery is launching with a limited-time event that includes exclusive rewards. Courses for Tracer, Reinhardt, and Mercy are now available, along with courses for Sojourn, Winston, and more premiering in the weeks ahead.",
+   "dev": null,
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "GENERAL UPDATES",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -34,21 +39,25 @@
      "body": "- Owned entities (such as Torbjörn's Turret, Symmetra's Teleporter, or Illari's Healing Pylon) now have a lower priority as ping targets than enemy heroes.",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "HERO UPDATES",
    "role": null,
    "description": "HERO UPDATES",
+   "dev": null,
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "TANK",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "junker-queen",
@@ -79,7 +88,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "orisa",
@@ -132,7 +142,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "zarya",
@@ -185,16 +196,19 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "DAMAGE",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "ashe",
@@ -225,7 +239,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "bastion",
@@ -275,7 +290,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "mei",
@@ -336,16 +352,19 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "Support",
    "role": "support",
    "description": "**Support Passive**\n\n- Duration until support passive activates increased from 1.5 to 2 seconds.",
+   "dev": "Developer Comment: Support heroes have received individual improvements to their survivability and are quite strong overall, so we're reducing the impact of the role-wide passive.",
    "heroes": [
     {
      "slug": "baptiste",
@@ -387,7 +406,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "kiriko",
@@ -418,16 +438,19 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "BUG FIXES",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -450,9 +473,10 @@
      "body": "Bastion\n\n- Fixed an error that resulted in the vertical knockback on Bastion's Tactical Grenade being reduced.\n\nEcho\n\n- Fixed a bug with Duplicated Illari's displaying the incorrect VFX colors when casting Captive Sun.\n- Fixed an interaction with Duplicated Symmetra turrets persisting through the duration of Duplicate.\n\nIllari\n\n- Fixed an interaction with Genji's Deflect and Illari's Healing Pylon. Deflecting the pylon should now correctly heal Genji's allies.\n- Fixed a bug that prevented the Stay Dead voice line from being equipped.\n- Resolved an interaction that allowed Illari to see underneath the map if they were slept by an Ana Sleep Dart while using Captive Sun.\n- Fixed an interaction with Illari's Pylon indicator being disabled if it was Hacked by Sombra.\n- Fixed an interaction with Symmetra's Teleporter that allowed Illari to place a Pylon in mid-air.\n- Fixed several instances that resulted in the Pylon being destroyed instantly after deploying.\n\nJunker Queen\n\n- Fixed a bug where Junker Queen recalling Jagged Blade in the same frame as it stuck in an object (by holding Secondary Fire and aiming at an object the same distance away as the Knife's recall range) would cause a pingable knife to be stuck in the world.\n\nKiriko\n\n- Fixed a bug that made it difficult to Swift Step to allies in rooms with low ceilings.\n\nLifeweaver\n\n- Fixed a bug allowing friendly EMPs to destroy your Petal Platform.\n\nRamattra\n\n- Resolved a bug that prevented the damage increase from Zenyatta's Discord from being correctly applied while Ramattra was Blocking.",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   }
  ],
  "raw_text": null,
- "hash": "sha256:36f34b182e4f24d4adcb92218d479f8af0cef2f8cb3e3abf087257cf6f1b5808"
+ "hash": "sha256:794751b22cc442cf92f7ee93b40c36f22b64907ee7bd7bce8bcfb5da80db46fa"
 }

@@ -11,6 +11,7 @@
    "title": "PATCH HIGHLIGHTS",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -23,13 +24,15 @@
      "body": "Experience your past Overwatch games from a whole new perspective with Replays. Replays allows you to watch your ten most recent matches from any vantage point. Whether you want a first-person, third-person, or bird's-eye view, you can see it all with this tool. Hone your strategies by slowing down or speeding up the game to see exactly how a critical moment played out, get a better view of the action from above, or even turn off the UI completely.\n\nLearn more about Replays: Blizz.ly/OverwatchReplays",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "HERO UPDATES",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "baptiste",
@@ -79,7 +82,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "d-va",
@@ -110,7 +114,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "cassidy",
@@ -141,7 +146,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "orisa",
@@ -172,7 +178,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "symmetra",
@@ -203,7 +210,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "torbjorn",
@@ -234,16 +242,19 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "GAME MODE UPDATES",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -251,13 +262,15 @@
      "body": "- Time awarded for capturing Point A on all Assault maps has been reduced from 4 minutes to 3 minutes.\n- Upon losing Point A, any defenders that are dead, or that die shortly thereafter, will have a maximum respawn of 3.5 seconds.\n\nAdditionally, sometimes Defenders fight late with good intentions at Point A and end up staggered from their team when A falls, leaving their team with uneven footing to defend a rush to B. In these situations, temporarily lowering the respawn time to get those Defenders back with their team should be a better match experience and doesn't punish players so harshly for wanting to defend Point A.",
      "dev": "Assault match lengths are averaging higher than we're happy with, particularly in Competitive where there are multiple rounds. We're also concerned with how often Offense fully captures Point A and Point B. Reducing the round time from 8 to 7 minutes should address both these concerns, as less overall time rewards better Defense."
     }
-   ]
+   ],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "WORKSHOP UPDATES",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -265,13 +278,15 @@
      "body": "- Visual update applied\n- Check boxes added to support operations on multiple conditions/actions/rules.\n- You can now disable conditions/actions/rules without deleting them.\n- (PC) When copying conditions/actions/rules, the contents will also be copied to your clipboard in a text format.\n- (PC) When pasting conditions/actions/rules, the editor will use the text from your clipboard.\n- Increased maximum number of effects from 64 -> 128.\n- Added ‘Modify Global Variable At Index’.\n- Added ‘Modify Player Variable At Index’.",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "BUG FIXES",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -289,7 +304,8 @@
      "body": "Ana\n\n- Anti-Heal will be cleared when Sombra uses her translocator to teleport.\n\nBaptiste\n\n- Fixed a bug that caused Ana's shot sound effects to be played on Baptiste when his Immortality Field is hit by her Primary Fire.\n\nBrigitte\n\n- Enemy barriers now block line-of-sight for Brigitte's Rally.\n- Fixed a bug where armor damage mitigation was too effective when multiple instances of armor were stacked on top of each other.\n\nDoomfist\n\n- Fixed a bug that allowed Doomfist to access out-of-bounds areas of the the Havana map during his ultimate.\n- Fixed an issue where Doomfist's Rocket Punch would sometimes impact stairs.\n- Fixed issue where Doomfist's Seismic Slam was not showing its electricity effect on affected entities.\n- Fixed a bug that could result in Seismic Slam not hitting targets when it should.\n\nGenji\n\n- Fixed a bug that prevented Genji’s damage boost from being applied to deflected projectiles.\n\nHanzo\n\n- Fixed a bug that caused Hanzo's targeting reticle to appear on kill cam for players killed by his Dragonstrike Ultimate.\n- Fixed a bug that caused Hanzo's hands to clip into his legs during the Meditate emote on several skins (Cyberninja, Lone Wolf, Scion, Young Master).\n\nLucio\n\n- Fixed a bug that prevented portions of Lucio's 2019 Pacific All-Stars skin from being visible in highlight and in-game portraits.\n\nOrisa\n\n- Fixed a bug that caused Supercharger to self-destruct when placed in certain locations.\n\nRoadhog\n\n- Fixed a bug that allowed Roadhog's hook to function when he was hacked by Sombra.\n\nSombra\n\n- Translocator will now escape slippery surfaces more easily and not be able to be stuck to them.\n- Fixed an issue where a material effect on Sombra’s hair would cause it to cast a shadow while invisible.\n\nSymmetra\n\n- Resolved an issue where Enemy and Friendly UI color options were incorrectly being applied to Symmetra’s Photon Barrier.\n\nTorbjörn\n\n- Fixed a bug that prevented some of Torbjörn's visual effects from being applied when he used Overload with certain skins equipped.\n- Fixed a bug that caused Torbjörn's turret to sometimes destroy itself.",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   }
  ],
  "raw_text": null,

@@ -11,22 +11,27 @@
    "title": "平衡性在线修正更新",
    "role": null,
    "description": "本次更新为游戏平衡性在线修正，2025年5月7日更新后的回放代码仍然可用。",
+   "dev": null,
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "角斗领域更新",
    "role": null,
    "description": "角斗领域更新",
+   "dev": null,
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "重装",
    "role": "tank",
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "d-va",
@@ -35,157 +40,48 @@
      "role": "tank",
      "icon": "https://ld5.res.netease.com/images/20250321/1742550489107_af2814926f.png",
      "dev_note": "设计师观点：D.Va在对抗诸如查莉娅这类以光束攻击为主的英雄时一直经常处于劣势，她的防御手段效果微乎其微。所以我们为“防御矩阵”相关的异能和物品增加了抵挡光束伤害的协同效果。同时，围绕D.Va的主要防御手段——“防御矩阵”构筑的搭配对应的异能也得到了增强，希望这样的做法能提升她在团战中的灵活性和压制力。",
-     "general": [
-      {
-       "text_en": null,
-       "text_cn": "伤害抵挡要求从150点降低至100点。",
-       "subject": null,
-       "dimension": "other",
-       "before": 150.0,
-       "after": 100.0,
-       "by": -50.0,
-       "by_pct": null,
-       "metric": "damage",
-       "unit": "hp"
-      },
-      {
-       "text_en": null,
-       "text_cn": "主脑的抵挡器——稀有技能英雄物品",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "伤害抵挡要求从300点降低至200点。",
-       "subject": null,
-       "dimension": "other",
-       "before": 300.0,
-       "after": 200.0,
-       "by": -100.0,
-       "by_pct": null,
-       "metric": "damage",
-       "unit": "hp"
-      },
-      {
-       "text_en": null,
-       "text_cn": "“防御矩阵”恢复速度加快从100%提高至125%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 100.0,
-       "after": 125.0,
-       "by": 25.0,
-       "by_pct": null,
-       "metric": "恢复速度加快",
-       "unit": "pct"
-      },
-      {
-       "text_en": null,
-       "text_cn": "“防御矩阵”持续时间延长从20%提高至25%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 20.0,
-       "after": 25.0,
-       "by": 5.0,
-       "by_pct": null,
-       "metric": "duration",
-       "unit": "pct"
-      },
-      {
-       "text_en": null,
-       "text_cn": "多任务模组——史诗武器英雄物品",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "武器强度提高从10%提高至20%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 10.0,
-       "after": 20.0,
-       "by": 10.0,
-       "by_pct": null,
-       "metric": "武器强度提高",
-       "unit": "pct"
-      },
-      {
-       "text_en": null,
-       "text_cn": "神机箭的脉冲镀层——史诗生存英雄物品",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "终极技能充能获取量从5%提高至10%。",
-       "subject": "ultimate_cost",
-       "dimension": "hero_attr",
-       "before": 5.0,
-       "after": 10.0,
-       "by": 5.0,
-       "by_pct": null,
-       "metric": "ultimate_cost",
-       "unit": "pct"
-      },
-      {
-       "text_en": null,
-       "text_cn": "主角光环——稀有生存英雄物品",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "减免的伤害现在将计入“防御矩阵”的伤害抵挡量。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      }
-     ],
-     "perks": [
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": null,
        "name_cn": "反制措施",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "伤害抵挡要求从150点降低至100点。"
+       ],
        "raw_text": [
         "反制措施——异能"
        ]
       },
       {
        "name_en": null,
-       "name_cn": "速效推进",
+       "name_cn": "主脑的抵挡器",
+       "rarity": "稀有",
+       "kind": "ability",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "伤害抵挡要求从300点降低至200点。"
+       ],
+       "raw_text": [
+        "主脑的抵挡器——稀有技能英雄物品"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "速效推进",
+       "rarity": null,
+       "kind": "power",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "“防御矩阵”恢复速度加快从100%提高至125%。"
+       ],
        "raw_text": [
         "速效推进——异能"
        ]
@@ -193,15 +89,60 @@
       {
        "name_en": null,
        "name_cn": "广域矩阵",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "“防御矩阵”持续时间延长从20%提高至25%。"
+       ],
        "raw_text": [
         "广域矩阵——异能"
        ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "多任务模组",
+       "rarity": "史诗",
+       "kind": "weapon",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "武器强度提高从10%提高至20%。"
+       ],
+       "raw_text": [
+        "多任务模组——史诗武器英雄物品"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "神机箭的脉冲镀层",
+       "rarity": "史诗",
+       "kind": "survival",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "终极技能充能获取量从5%提高至10%。"
+       ],
+       "raw_text": [
+        "神机箭的脉冲镀层——史诗生存英雄物品"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "主角光环",
+       "rarity": "稀有",
+       "kind": "survival",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "减免的伤害现在将计入“防御矩阵”的伤害抵挡量。"
+       ],
+       "raw_text": [
+        "主角光环——稀有生存英雄物品"
+       ]
       }
-     ],
-     "abilities": []
+     ]
     },
     {
      "slug": "junker-queen",
@@ -210,82 +151,41 @@
      "role": "tank",
      "icon": "https://ld5.res.netease.com/images/20250321/1742550507495_8ee2070c9e.png",
      "dev_note": "设计师观点：“渣客女王”在近身肉搏时表现极其出色，但当前她的机动性过高，以至于可以随时随地发起进攻。我们削弱了她的突进能力，要求玩家在走位时更加谨慎，减少无代价冲入敌阵的情况。这应该可以在保留其核心斗士风格的同时，促使玩家发起更有策略的进攻。",
-     "general": [
-      {
-       "text_en": null,
-       "text_cn": "震耳嗓音——史诗技能英雄物品",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "技能强度提高从25%降低至15%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 25.0,
-       "after": 15.0,
-       "by": -10.0,
-       "by_pct": null,
-       "metric": "技能强度提高",
-       "unit": "pct"
-      },
-      {
-       "text_en": null,
-       "text_cn": "纵情欢割——稀有生存英雄物品",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "移动速度加快从10%降低至5%。",
-       "subject": "move_speed",
-       "dimension": "hero_attr",
-       "before": 10.0,
-       "after": 5.0,
-       "by": -5.0,
-       "by_pct": null,
-       "metric": "move_speed",
-       "unit": "pct"
-      },
-      {
-       "text_en": null,
-       "text_cn": "附近有被创伤的敌人时，移动速度加快从10%降低至5%。",
-       "subject": "move_speed",
-       "dimension": "hero_attr",
-       "before": 10.0,
-       "after": 5.0,
-       "by": -5.0,
-       "by_pct": null,
-       "metric": "move_speed",
-       "unit": "pct"
-      },
-      {
-       "text_en": null,
-       "text_cn": "附近有被创伤的敌人时，攻击速度加快从5%提高至10%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 5.0,
-       "after": 10.0,
-       "by": 5.0,
-       "by_pct": null,
-       "metric": "攻击速度加快",
-       "unit": "pct"
-      }
-     ],
+     "general": [],
      "perks": [],
-     "abilities": []
+     "abilities": [],
+     "stadium_items": [
+      {
+       "name_en": null,
+       "name_cn": "震耳嗓音",
+       "rarity": "史诗",
+       "kind": "ability",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "技能强度提高从25%降低至15%。"
+       ],
+       "raw_text": [
+        "震耳嗓音——史诗技能英雄物品"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "纵情欢割",
+       "rarity": "稀有",
+       "kind": "survival",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "移动速度加快从10%降低至5%。",
+        "附近有被创伤的敌人时，移动速度加快从10%降低至5%。",
+        "附近有被创伤的敌人时，攻击速度加快从5%提高至10%。"
+       ],
+       "raw_text": [
+        "纵情欢割——稀有生存英雄物品"
+       ]
+      }
+     ]
     },
     {
      "slug": "reinhardt",
@@ -294,39 +194,20 @@
      "role": "tank",
      "icon": "https://ld5.res.netease.com/images/20250321/1742550472542_3a43236fbc.png",
      "dev_note": "设计师观点：莱因哈特表现过于强势，尤其在低分段。我们调整了一些最难反制的异能，比如近身攻击时，由于莱因哈特移动速度非常高，导致难以脱身，或是爆炸轰击的烈焰打击伤害过高，造成一击秒杀。需要注意的是，在此条平衡性更新中，当前每层效果的移动速度加成的数值描述存在显示错误（实际已调整为2%）。该问题将在后续更新中修复。",
-     "general": [
-      {
-       "text_en": null,
-       "text_cn": "额外伤害从20%降低至15%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 20.0,
-       "after": 15.0,
-       "by": -5.0,
-       "by_pct": null,
-       "metric": "额外伤害",
-       "unit": "pct"
-      },
-      {
-       "text_en": null,
-       "text_cn": "每层效果的移动速度加成从3%降低至2%。",
-       "subject": "move_speed",
-       "dimension": "hero_attr",
-       "before": 3.0,
-       "after": 2.0,
-       "by": -1.0,
-       "by_pct": null,
-       "metric": "每层效果的移动速度加成",
-       "unit": "pct"
-      }
-     ],
-     "perks": [
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": null,
        "name_cn": "爆炸轰击",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "额外伤害从20%降低至15%。"
+       ],
        "raw_text": [
         "爆炸轰击——异能"
        ]
@@ -334,15 +215,18 @@
       {
        "name_en": null,
        "name_cn": "统统砸扁！",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "每层效果的移动速度加成从3%降低至2%。"
+       ],
        "raw_text": [
         "统统砸扁！——异能"
        ]
       }
-     ],
-     "abilities": []
+     ]
     },
     {
      "slug": "zarya",
@@ -351,39 +235,20 @@
      "role": "tank",
      "icon": "https://ld5.res.netease.com/images/20250321/1742550485371_b4c56fc013.png",
      "dev_note": "设计师观点：查莉娅一直是战场的强势角色，尤其是在高分段。我们削弱了武器强度流查莉娅的生存能力，让选择纯输出搭配的查莉娅更脆皮一些。",
-     "general": [
-      {
-       "text_en": null,
-       "text_cn": "“粒子屏障”的生命值提高从最大生命值加成的50%降低至25%。",
-       "subject": "health",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "生命汲取量从能量的20%降低至15%。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      }
-     ],
-     "perks": [
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": null,
        "name_cn": "生命挺举",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "“粒子屏障”的生命值提高从最大生命值加成的50%降低至25%。"
+       ],
        "raw_text": [
         "生命挺举——异能"
        ]
@@ -391,24 +256,29 @@
       {
        "name_en": null,
        "name_cn": "健身补剂",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "生命汲取量从能量的20%降低至15%。"
+       ],
        "raw_text": [
         "健身补剂——异能"
        ]
       }
-     ],
-     "abilities": []
+     ]
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "输出",
    "role": "damage",
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "ashe",
@@ -417,75 +287,20 @@
      "role": "damage",
      "icon": "https://ld5.res.netease.com/images/20250321/1742550502754_aa50950ada.png",
      "dev_note": "设计师观点：艾什在高水平玩家手中潜力无穷。但与其他英雄相比，她技能组中的部分技能在后期表现略显疲软。我们对此进行了针对性调整，以提升她的后期能力，同时优化掉一些难以上手的部分，提高新手体验，这些调整旨在让艾什在全分段都更具选用价值。",
-     "general": [
-      {
-       "text_en": null,
-       "text_cn": "不开镜射击时，每次命中后对下一次开镜命中伤害的加成从3%提高至5%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 3.0,
-       "after": 5.0,
-       "by": 2.0,
-       "by_pct": null,
-       "metric": "每次命中后对下一次开镜命中伤害的加成",
-       "unit": "pct"
-      },
-      {
-       "text_en": null,
-       "text_cn": "攻击速度减慢从50%降低至20%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 50.0,
-       "after": 20.0,
-       "by": -30.0,
-       "by_pct": null,
-       "metric": "攻击速度减慢",
-       "unit": "pct"
-      },
-      {
-       "text_en": null,
-       "text_cn": "红外瞄镜——史诗技能英雄物品",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "对燃烧目标的增伤效果仅对“毒蛇”和“召唤鲍勃”生效的问题已经得到修复；现在，艾什对所有燃烧目标的伤害都会获得增伤效果。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "对燃烧目标的伤害提高从25%降低至20%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 25.0,
-       "after": 20.0,
-       "by": -5.0,
-       "by_pct": null,
-       "metric": "对燃烧目标的伤害提高",
-       "unit": "pct"
-      }
-     ],
-     "perks": [
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": null,
        "name_cn": "狂徒大佬",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "不开镜射击时，每次命中后对下一次开镜命中伤害的加成从3%提高至5%。"
+       ],
        "raw_text": [
         "狂徒大佬——异能"
        ]
@@ -493,24 +308,44 @@
       {
        "name_en": null,
        "name_cn": "小小鲍勃",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "攻击速度减慢从50%降低至20%。"
+       ],
        "raw_text": [
         "小小鲍勃——异能"
        ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "红外瞄镜",
+       "rarity": "史诗",
+       "kind": "ability",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "对燃烧目标的增伤效果仅对“毒蛇”和“召唤鲍勃”生效的问题已经得到修复；现在，艾什对所有燃烧目标的伤害都会获得增伤效果。",
+        "对燃烧目标的伤害提高从25%降低至20%。"
+       ],
+       "raw_text": [
+        "红外瞄镜——史诗技能英雄物品"
+       ]
       }
-     ],
-     "abilities": []
+     ]
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "支援",
    "role": "support",
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "lucio",
@@ -519,135 +354,20 @@
      "role": "support",
      "icon": "https://ld5.res.netease.com/images/20250321/1742550487933_d405d3299a.png",
      "dev_note": "设计师观点：卢西奥的技能强度治疗流可以以较低的成本提供稳定的治疗，在全分段都表现过强。因此，我们下调了其治疗量。他的武器强度流无论是在输出还是稳定性方面都长期被前者压制，此次我们适当加强了武器强度，鼓励更多的搭配多样性。",
-     "general": [
-      {
-       "text_en": null,
-       "text_cn": "治疗量从“切歌”治疗量的150%降低至100%。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "对撞墙的目标造成的额外伤害从40点降低至25点。",
-       "subject": null,
-       "dimension": "other",
-       "before": 40.0,
-       "after": 25.0,
-       "by": -15.0,
-       "by_pct": null,
-       "metric": "对撞墙的目标造成的额外伤害",
-       "unit": "hp"
-      },
-      {
-       "text_en": null,
-       "text_cn": "击退效果提高从30%降低至25%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 30.0,
-       "after": 25.0,
-       "by": -5.0,
-       "by_pct": null,
-       "metric": "knockback",
-       "unit": "pct"
-      },
-      {
-       "text_en": null,
-       "text_cn": "治疗量从造成伤害的20%提高至30%。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "伤害提高从25%提高至30%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 25.0,
-       "after": 30.0,
-       "by": 5.0,
-       "by_pct": null,
-       "metric": "damage",
-       "unit": "pct"
-      },
-      {
-       "text_en": null,
-       "text_cn": "冠军单曲——稀有技能英雄物品",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "技能强度提高从10%降低至5%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 10.0,
-       "after": 5.0,
-       "by": -5.0,
-       "by_pct": null,
-       "metric": "技能强度提高",
-       "unit": "pct"
-      },
-      {
-       "text_en": null,
-       "text_cn": "纵情欢唱——史诗技能英雄物品",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "技能强度提高从20%降低至15%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 20.0,
-       "after": 15.0,
-       "by": -5.0,
-       "by_pct": null,
-       "metric": "技能强度提高",
-       "unit": "pct"
-      },
-      {
-       "text_en": null,
-       "text_cn": "“强音”持续时间从33%降低至25%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 33.0,
-       "after": 25.0,
-       "by": -8.0,
-       "by_pct": null,
-       "metric": "duration",
-       "unit": "pct"
-      }
-     ],
-     "perks": [
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": null,
        "name_cn": "取悦观众",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "治疗量从“切歌”治疗量的150%降低至100%。"
+       ],
        "raw_text": [
         "取悦观众——异能"
        ]
@@ -655,9 +375,14 @@
       {
        "name_en": null,
        "name_cn": "蹦起来",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "对撞墙的目标造成的额外伤害从40点降低至25点。",
+        "击退效果提高从30%降低至25%。"
+       ],
        "raw_text": [
         "蹦起来——异能"
        ]
@@ -665,9 +390,13 @@
       {
        "name_en": null,
        "name_cn": "炸场爆音",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "治疗量从造成伤害的20%提高至30%。"
+       ],
        "raw_text": [
         "炸场爆音——异能"
        ]
@@ -675,15 +404,47 @@
       {
        "name_en": null,
        "name_cn": "加速快进",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "伤害提高从25%提高至30%。"
+       ],
        "raw_text": [
         "加速快进——异能"
        ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "冠军单曲",
+       "rarity": "稀有",
+       "kind": "ability",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "技能强度提高从10%降低至5%。"
+       ],
+       "raw_text": [
+        "冠军单曲——稀有技能英雄物品"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "纵情欢唱",
+       "rarity": "史诗",
+       "kind": "ability",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "技能强度提高从20%降低至15%。",
+        "“强音”持续时间从33%降低至25%。"
+       ],
+       "raw_text": [
+        "纵情欢唱——史诗技能英雄物品"
+       ]
       }
-     ],
-     "abilities": []
+     ]
     },
     {
      "slug": "moira",
@@ -692,39 +453,20 @@
      "role": "support",
      "icon": "https://ld5.res.netease.com/images/20250321/1742550498653_c683f1b6be.png",
      "dev_note": "设计师观点：我们小幅加强了部分冷门异能，以便开启新的搭配思路。",
-     "general": [
-      {
-       "text_en": null,
-       "text_cn": "“生化之触”额外治疗量从“生化之触”治疗量的20%提高至25%。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "“聚合射线”完全造成治疗或伤害时的效果提高从25%提高至30％。",
-       "subject": null,
-       "dimension": "other",
-       "before": 25.0,
-       "after": 30.0,
-       "by": 5.0,
-       "by_pct": null,
-       "metric": "完全造成治疗或伤害时的效果提高",
-       "unit": "pct"
-      }
-     ],
-     "perks": [
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": null,
        "name_cn": "不稳效能",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "“生化之触”额外治疗量从“生化之触”治疗量的20%提高至25%。"
+       ],
        "raw_text": [
         "不稳效能——异能"
        ]
@@ -732,24 +474,29 @@
       {
        "name_en": null,
        "name_cn": "毁灭分界",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "“聚合射线”完全造成治疗或伤害时的效果提高从25%提高至30％。"
+       ],
        "raw_text": [
         "毁灭分界——异能"
        ]
       }
-     ],
-     "abilities": []
+     ]
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "综合",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "hero-10cf14a8",
@@ -809,10 +556,12 @@
       }
      ],
      "perks": [],
-     "abilities": []
+     "abilities": [],
+     "stadium_items": []
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   }
  ],
  "raw_text": null,

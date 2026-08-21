@@ -10,23 +10,28 @@
    "type": "generic_update",
    "title": null,
    "role": null,
-   "description": "-\nTo share your feedback, please post in the General Discussion forum.\n\n-\nFor a list of known issues, visit our Bug Report forum.\n\n-\nFor troubleshooting assistance, visit our Technical Support forum.",
+   "description": "-\nTo share your feedback, please post in the [General Discussion](https://us.forums.blizzard.com/en/overwatch/c/general-discussion) forum.\n\n-\nFor a list of known issues, visit our [Bug Report](https://us.forums.blizzard.com/en/overwatch/c/bug-report) forum.\n\n-\nFor troubleshooting assistance, visit our [Technical Support](https://us.forums.blizzard.com/en/overwatch/c/technical-support) forum.",
+   "dev": null,
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "2019 Overwatch League MVP Skin: Alien Zarya",
    "role": null,
    "description": "Celebrate the 2019 Overwatch League MVP with the Alien Zarya skin! This skin is a unique combination of influences. Her extraterrestrial form features nodes that respond to Zarya’s Particle Cannon charge and facial tentacles that glow in her signature pink, while her sleek suiting is inspired by retro fashion. Learn more about the skin and the League within the Overwatch League menu!",
+   "dev": null,
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "General Updates",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -34,21 +39,25 @@
      "body": "If a competitive game collapses due to a player leaving early, you are now granted a priority requeue the next time you queue to play. You will see a small icon on the interface to denote this status. When you queue for a game with priority queue status, the matchmaker tries to prioritize finding an appropriate game for you. This normally results in significantly lower times waiting in queue.",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "Competitive Updates",
    "role": null,
    "description": "- Competitive Open Queue Season 2 has begun! Find this game mode within the Arcade for roughly two weeks. This mode will use standard Competitive Play rules, but will have no role restrictions or role queues.",
+   "dev": null,
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "Hero Updates",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "echo",
@@ -79,7 +88,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "genji",
@@ -151,7 +161,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "hanzo",
@@ -182,7 +193,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "orisa",
@@ -213,16 +225,19 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "Workshop Updates",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -235,13 +250,15 @@
      "body": "- Is In Alternate Form\n- Is Duplicating\n- Hero Being Duplicated\n\nThe Attach Players action allows one player to become stuck to another with a given offset, giving players the ability to carry other players around. The Start Forcing Player Position action allows players to be moved around procedurally; this action pairs well with variable chasing actions. The Is In Alternate Form value lets you check for whether D.Va is in pilot form and whether Mercy and Torbjörn have their secondary weapon equipped (as well as a few other transformations). Finally, the Is Duplicating and Hero Being Duplicated values allow you to check Echo’s current status.",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "Bug Fixes",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -259,9 +276,10 @@
      "body": "- Fixed a bug in which restarting a rule that was using the Wait action and then executing the same Wait action on the same frame could cause the action to wait forever\n- Fixed a bug in which using a chased variable for the rate or destination of the Chase action that was modifying it would cause incorrect behavior\n- Fixed a bug in which the final objective of an Assault, Hybrid, or Escort map could be completed when Disable Built-In Game Mode Completion was in effect\n- Fixed a bug in which reaching 100% distance or capture progress on the final objective of an Assault, Hybrid, or Escort map would cause endless beeping if Disable Built-In Game Mode Completion was in effect\n- Fixed a bug which caused the Stop Transforming Throttle action not to work\n- The Is Using Ultimate value now returns true when D.Va is using either of her ultimate abilities\n- The Is Using Ultimate value now returns true for the first few frames of Echo’s ultimate (After the first few frames, check the new Is Duplicating value)\n- The Is Using Ultimate value now returns true for Ashe only while B.O.B. is alive\n- Fixed a bug which caused the Respawn action to stop working for players that had recently been resurrected\n- Fixed rules with Echo as the designated hero not always executing correctly during or after her ultimate\n- Fixed the Is Primary Fire value sometimes returning incorrect values after Winston’s ultimate and during Hanzo’s Storm Arrows ability\n- The Is Using Ability 2 value no longer returns true for Widowmaker if her only existing Venom Mine has been fired off the map\n- Fixed a bug where script error messages remained on screens for certain subroutine errors even after fixing the issue in the editor\n- Fixed a bug preventing Set Objective Description from working when executed prior to the player spawning in\n- Fixed a bug preventing Disable Built-In Game Mode Announcer from working in certain modes\n- Fixed a bug preventing the Damage Over Time effects from occurring when first starting the Molten Floor Workshop Preset\n- Fixed a bug preventing Set Match Time from being able to be used while in Assemble Heroes in CTF\n- Fixed a bug preventing certain abilities from triggering Dealt/Received Knockback Events (Junkrat's self-knockback from Concussive Mine, Doomfist's Rocket Punch, and Reinhardt's Rocket Hammer)\n- Fixed a bug preventing Sigma's Ultimate Ability from working properly when gravity settings were altered via Workshop or Custom Game Settings\n- Fixed a bug preventing the names of Dummy Bots from properly showing up in Kill Cams, POTGs, and End of Match Summaries\n- Fixed a bug where Destroy All Dummy Bots failed to work in certain scenarios",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   }
  ],
  "raw_text": null,
- "hash": "sha256:1b4d40021626af40477202056efd17439ef9ff8d14edada5c29f87e69fb17f7d"
+ "hash": "sha256:8be4b32c2a8cea8192483351a0273d96afda3c7f21ebc553e262a9e6ee75e43f"
 }

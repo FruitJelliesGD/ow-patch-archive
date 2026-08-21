@@ -11,6 +11,7 @@
    "title": "PATCH HIGHLIGHTS",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -23,13 +24,15 @@
      "body": "Sigma is an eccentric astrophysicist and volatile tank who gained the power to control gravity in an orbital experiment gone wrong. Manipulated by Talon and deployed as a living weapon, Sigma’s presence on the battlefield cannot be ignored. Sigma launches two Hyperspheres (gravitic charges), which bounce off walls and implode after a short duration, damaging enemies within a sizable radius. Using Experimental Barrier he propels a floating barrier to a location of his choosing and he can dismiss the barrier at any time. With Kinetic Grasp Sigma freezes incoming projectiles in midair, converting them into shields. Sigma uses Accretion to gather a mass of debris, then flings it at an enemy, knocking them down. Unleashing his full powers with Gravitic Flux, Sigma takes flight, lifts enemies in a targeted area, and launches them into the sky before slamming them back down.",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "GENERAL UPDATES",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -47,13 +50,15 @@
      "body": "New Events\n\n- Player Dealt Healing\n- Player Received Healing\n- Player Joined Match\n- Player Left Match\n\nNew Actions\n\n- Start Transforming Throttle\n- Stop Transforming Throttle\n\nNew Values\n\n- Healer\n\n- Healee\n- Event Healing\n- Host Player",
      "dev": "A commonly requested feature for the Workshop is the ability to track healing, so we’ve added two new event types and three new values to make this possible. We’ve also added events to make it easier to detect players joining and leaving matches. To support the creation of administrator-style privileges for custom games, the owner of the game can now be detected using Host Player. Finally, we’ve added the ability to scale, invert, and rotate a player’s input throttle to make controlling characters in third person easier."
     }
-   ]
+   ],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "HERO UPDATES",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "ashe",
@@ -77,7 +82,8 @@
       }
      ],
      "perks": [],
-     "abilities": []
+     "abilities": [],
+     "stadium_items": []
     },
     {
      "slug": "brigitte",
@@ -258,7 +264,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "d-va",
@@ -289,7 +296,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "doomfist",
@@ -320,7 +328,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "hanzo",
@@ -351,7 +360,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "orisa",
@@ -382,7 +392,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "reinhardt",
@@ -413,7 +424,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "sombra",
@@ -463,7 +475,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "symmetra",
@@ -538,7 +551,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "tracer",
@@ -569,7 +583,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "wrecking-ball",
@@ -611,7 +626,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     }
    ],
    "blocks": [
@@ -620,13 +636,15 @@
      "body": "- Global ultimate cost increased 12%.\n\n- Slowing Effects: Instead of stacking together, friendly and hostile slowing effects are now separate, and movement speed will be determined by whichever is slower.\n\n- Fixed a bug in which full damage was not dealt by abilities that rapidly gain/lose targets, such as fast-tracking with Zarya's and Symmetra's primary fire beams.",
      "dev": "This is a fairly significant bug fix that can cause beam weapons to do much more damage in certain situations. In particular, Zarya and Symmetra will sometimes feel much more powerful as a result of this bug fix. We’ll be keeping a close eye on these heroes to make sure they don’t end up too strong."
     }
-   ]
+   ],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "BUG FIXES",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -644,7 +662,8 @@
      "body": "Ashe\n\n- Fixed a bug that caused her gun to clip into the camera slightly when jumping while shooting down sights\n\nDoomfist\n\n- Fixed an issue that enables Doomfist to get through doorways while using Rocket Punch and clipping the corner\n- Fixed a bug that prevented Rocket Punch from consistently destroying Sombra’s Translocator and not being stopped by it, similar to Symmetra’s turrets\n- Fixed an issue so that targets hit by Rocket Punch will now go directly backwards, instead of maintaining any lateral momentum they had\n- Fixed an issue so that targets that are immune to stun but not immune to knockback (Zarya's Particle Barrier, Zenyatta during Transcendence) are no longer able to affect knockback trajectory\n- Fixed a bug that caused Doomfist to move more slowly for the duration of Meteor Strike when using it while crouched\n- Fixed a bug that caused Doomfist to move backwards slightly slower during Meteor Strike\n\nD.Va\n\n- Fixed a bug that prevented Defense Matrix from pointing down when D.Va was aiming downward while moving\n\nLúcio\n\n- Fixed an issue that caused false positives with Lúcio’s animation landing prediction when wall riding\n\nOrisa\n\n- Fixed a bug that caused some VFX to stop playing upon successive viewings of Orisa's \"Oh!\" highlight intro in Hero Gallery\n\nReinhardt\n\n- Fixed a bug that caused charge knockback to be applied multiple times\n\nWrecking Ball\n\n- Fixed a bug that caused Wrecking Ball to get stuck in his slam animation if he landed on very flat, slippery surfaces\n- Fixed a bug that caused Wrecking Ball to be temporarily stuck when using Piledriver on slippery surfaces\n- Fixed a bug that caused Wrecking Ball to gain an incorrect amount of shields when using Adaptive Shield\n\nZarya\n\n- Fixed a bug that caused Zarya's weapon and arm to animate oddly during her emotes when viewed in third person\n\nZenyatta\n\n- Fixed a bug that caused a delay in Zenyatta's first person quick melee animation when interrupting his primary fire",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   }
  ],
  "raw_text": null,

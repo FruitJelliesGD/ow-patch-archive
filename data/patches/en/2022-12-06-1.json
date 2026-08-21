@@ -11,14 +11,17 @@
    "title": "OVERWATCH 2, SEASON 2",
    "role": null,
    "description": "**Ramattra storms the Season 2 Battle Pass, unlocking for free at Level 45 or immediately for the premium Battle Pass.** As Overwatch’s first “tempo tank,” Ramattra can change between two forms moment to moment based on what his teammates need. With the tactical training of a lethal soldier and the discipline of a devout monk, Ramattra can be your greatest asset or your worst enemy.\n\nEmbark on a pilgrimage to our latest escort map, Shambali Monastery, where you can explore ancient temple grounds and traverse winding village streets. Follow in the footsteps of countless omnics--some who may be familiar to you--on the uphill trek to the Sanctum.\n\nAdvance through the Battle Pass and earn rewards inspired by Ancient Greece and get ready for three limited-time events: Winter Wonderland, Battle for Olympus, and Lunar New Year!",
+   "dev": null,
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "GENERAL UPDATES",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -36,29 +39,35 @@
      "body": "- We've added a Hero purchase tab in the Shop",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "COMPETITIVE PLAY",
    "role": null,
    "description": "Season 2 competitive play begins now! Here are some updates we’re introducing to competitive:\n\n-\nThere are new, temporary Competitive title rewards for name cards based on your end of season rank\n\n-\nYou can only earn these titles at the end of the current Competitive season and can only use them in the season following\n\n-\nHeroes that aren’t eligible for competitive play will have a lock icon in the Hero Gallery\n\n-\nImplemented a group of matchmaking enhancements to improve match quality\n\n-\nMinor polish improvements to the competitive play UI flow\n\n-\nNew hero, Ramattra, won’t be available in competitive for 2 weeks",
+   "dev": null,
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "HERO UPDATES",
    "role": null,
    "description": "Damage Role Passive\n\n- No longer provides a movement speed bonus\n- Reload speed bonus increased from 25 to 35%",
+   "dev": "Developer comments: We've decided to remove increased movement speed from the Damage role passive and, in turn, make the reload speed more significant. While the additional movement speed was a helpful indicator that the passive was active, we saw change in speed negatively affecting the ability to aim precisely.",
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "TANK",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "ramattra",
@@ -200,7 +209,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "doomfist",
@@ -409,7 +419,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "junker-queen",
@@ -502,16 +513,19 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "DAMAGE",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "bastion",
@@ -594,7 +608,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "sojourn",
@@ -680,7 +695,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "symmetra",
@@ -733,7 +749,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "tracer",
@@ -764,16 +781,19 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "SUPPORT",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "ana",
@@ -804,7 +824,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "kiriko",
@@ -939,7 +960,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "mercy",
@@ -983,16 +1005,19 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "SEASON 2 MAP POOLS",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -1015,13 +1040,15 @@
      "body": "- Busan – Night\n- Ilios – Evening\n- Lijiang Tower – Dawn\n- Nepal - Evening (NEW)\n- Oasis - Morning (NEW)",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "BUG FIXES",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -1039,9 +1066,10 @@
      "body": "- Heroes no longer take damage from their own abilities if they’re on the other side of a friendly barrier\n- Fixed an issue with the Damage Passive where sometimes a double reload animation could occur when the buff was active\n\n**Cassidy**\n\n- Resolved an issue with some skins using the wrong props in the 'Flashbang' victory pose\n\n**Doomfist**\n\n- Fixed an issue where Doomfist's Power Block reduced the damage from some area of effect abilities\n- Meteor Strike - You can no longer detect Sombra if the targeting reticle gets near her\n\n**D.Va**\n\n- Fixed a bug that allowed players to use Self-Destruct during their Mech's destruction while Hacked\n\n**Junker Queen**\n\n- Jagged Blade can no longer be recalled while slept, stunned, hacked or frozen\n- Fixed an issue with Jagged Blade being consumed by friendly abilities like Deflect, Defense Matrix, etc.\n- Jagged Blade now takes a curved trajectory on return\n\n**Mercy**\n\n- Guardian Angel now correctly resets its cooldown if Valkyrie is used\n- Guardian Angel 'cancel boost' is now disabled when Mercy is stunned\n\n**Moira**\n\n- Junkrat's Trap no longer displays at chest height in first person when using Fade\n\n**Pharah**\n\n- Fixed a bug that reduced the ult cost of Rocket Barrage\n\n**Soldier 76**\n\n- Fixed an issue where Soldier 76 was unable to critical hit max range enemies during Tactical Visor\n\n**Symmetra**\n\n- Fixed a bug that resulted in all VO being cut out when taking the Teleporter\n\n**Tracer**\n\n- Fixed a big causing her Pulse Pistol damage falloff to not start until max range\n\n**Winston**\n\n- Resolved an issue with the Werewolf skin and the 'Excuse me' highlight intro turning Winston red in the Hero Gallery\n\n**Zenyatta**\n\n- Fixed an issue with melee not correctly animating if used to cancel alternate fire",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   }
  ],
  "raw_text": null,
- "hash": "sha256:e301f981142f8ffa46d98a9f1eea5eaab46eebe566da079005ee42382ec59cd9"
+ "hash": "sha256:35013bb05b92f983007937037d70f863973877f0f2cb2fe401d72acb2520536f"
 }

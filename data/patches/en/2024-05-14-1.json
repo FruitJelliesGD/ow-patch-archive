@@ -11,14 +11,17 @@
    "title": "OVERWATCH 2 X PORSCHE",
    "role": null,
    "description": "Overwatch 2 and Porsche team up for an electric collaboration to showcase the shared essence of these two high-performance brands in an all-new event. Experience the fusion with Legendary Porsche D.Va and Porsche Pharah skins available now in the Premium Shop, plus earn other free high-voltage Porsche-themed cosmetics through event challenges now through June 3.",
+   "dev": null,
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "COMPETITIVE PLAY UPDATES",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -41,21 +44,25 @@
      "body": "- When a player is currently on a loss streak, the matchmaker will try to avoid putting the player on a team that is statistically calculated to have a lower chance of winning.",
      "dev": "Developer comments: Loss streaks never feel good. Before each match, we make a prediction about which team will win the game, based on the information we have about the players on both teams. This is how modifiers such as Consolation, Reversal, Uphill Battle, and Expected give or take additional Rank Progress after each Competitive Play match. Since most matches will have a team that has a slightly higher chance of winning, placing a player on the team with the higher chance who is currently on a losing streak is aimed at helping them have a fair chance of breaking that streak. While this won't guarantee they'll win, it does provide a helping advantage."
     }
-   ]
+   ],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "HERO UPDATES",
    "role": null,
    "description": "- Armor health has been reverted to provide a flat damage reduction of 5 per projectile, up to a maximum of 50% damage reduction.\n- Out-of-combat health regeneration changed from 20 health per second to 10 health per second + 5% of maximum health.",
+   "dev": "Developer comment: Armor is being reverted to its original functionality to better resistance rapid fire damage and shotgun-type weapons. Out- of- combat health regeneration has been a positive but subtle addition to the game, but had a much smaller impact for tank heroes due to their massive health pools, so we're adjusting it to heal for a percentage of maximum health.",
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "TANKS",
    "role": null,
    "description": "Role Passive\n\n- Tanks now have 25% damage reduction against critical headshot damage.\n- Knockback resistance increased from 30% to 50%",
+   "dev": "Developer Comment: Although armor health will now be more effective in some of the more difficult matchups, it will also be losing potency against the typically slower, higher damage instances. To help reduce the feeling of tanks being taken out too quickly by high bursts of damage, the role-wide passive now provides improved defense against critical headshot damage.",
    "heroes": [
     {
      "slug": "junker-queen",
@@ -97,7 +104,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "sigma",
@@ -128,7 +136,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "wrecking-ball",
@@ -208,7 +217,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "zarya",
@@ -250,16 +260,19 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "DAMAGE",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "junkrat",
@@ -290,7 +303,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "echo",
@@ -321,7 +335,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "hanzo",
@@ -365,16 +380,19 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "SUPPORT",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "brigitte",
@@ -405,16 +423,19 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "BUG FIXES",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -432,9 +453,10 @@
      "body": "Mercy\n\n- Vengeance Skin - Fixed a bug with the feathers on the skin not being properly aligned.\n\nVenture\n\n- Fixed a bug with Tectonic Shock that counted turrets and other non-player targets as valid for the Excavation Annihilation challenge.\n- Fixed an issue that could occur with Burrow where Venture could remain burrowed above the ground.",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   }
  ],
  "raw_text": null,
- "hash": "sha256:4a71e43070c0b17237a2d4dd17b7a7c8bbe5be32e4ae96798bb3c58ab270f0d9"
+ "hash": "sha256:3b8c24554be559fc21253fef19080b96ae718af28ccef8d02735d1efadb909bd"
 }

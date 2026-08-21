@@ -11,22 +11,27 @@
    "title": "Season 17 - Powered Up!",
    "role": null,
    "description": "Stadium, Overwatch 2's dynamic, round-based PvP mode, continues to evolve with smarter build tools, fresh Heroes and maps, plus Competitive upgrades like Drives and a rank reset to push mastery to the next level. Over in Core modes, the fight expands with a new Flashpoint battleground and the debut of Map Voting, giving you the power to choose where the action unfolds. Then, for the first time ever, both Mythics drop at launch—go wild in D.Va’s tiger spirit skin or wield Reaper’s twin terror weapons of chaos from day one. Plus, show off your style in new Overwatch Academy, 8-bit, and Sakura looks from the Battle Pass. All these and more are in store to get you Powered Up in Season 17!\n\nStart Season 17 strong! Complete 17 Quick Play, Competitive, or Stadium matches from June 24–30 to score 4 Epic Loot Boxes and one guaranteed Legendary skin within. Supercharge the new season for a limited time!",
+   "dev": null,
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "New Core Gameplay Map - Aatlis",
    "role": null,
    "description": "Welcome to the hub of trade and artistry: Aatlis! This stunning new flashpoint map shows off the beauty and culture of Morocco. From a high-end resort to historical artisan guilds, Aatlis has it all. And when you're ready for your next destination, hitch a ride on Aatlis' high-tech hyperloop rail that can take you anywhere!",
+   "dev": null,
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "Hacks & Hijinx",
    "role": null,
    "description": "Get ready to adapt or get steamrolled! Hacks & Hijinx mode flips the script every round with rotating match modifiers that twist gameplay in wild, unpredictable ways. From low gravity jumps to Ultimate charge granting health packs, every match demands fresh strategies and quick thinking. Hacked by 8-bit Sombra herself, who’s turned on the cheats and broken the rules for everybody, this limited-time 6v6 mode runs on Control maps only. So, embrace the chaos and remix your Overwatch 2 experience in 8-bit with Hacks & Hijinx.\n\n- Sombra has hacked Control maps in the Arcade! Try out game-changing modifiers in Hacks and Hijinx.\n- Each round changes the rules with wild effects like low gravity, Ultimate charge granting health packs, and more.\n- Available only on Control maps for maximum mayhem and room to maneuver.\n- Remix your matches in Hacks & Hijinx mode from July 15 - 28!",
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -34,13 +39,15 @@
      "body": "- Mini Maxing - All heroes are 50% smaller. Health reduced by 30%.\n- Lie Low – Heroes become invisible while crouching. However, their invisiblity can still be detected at a short distance. The hero stops being invisible when they have received damage or attacks.\n- Fired Up – On Fire heroes have decreased cooldowns and deal more damage or healing, but are also visible by everyone.\n- Charge Pack – Health packs also grant ultimate charge.\n- Power Punch – Quick melee attacks knock back enemies.\n- Vampiric Healing – Heroes don’t passively regenerate HP, but each hero has the Vampiric Passive.\n- Aerial Combat – Heroes deal and receive 50% more damage while in the air. Gravity decreased.\n- Back in action – Respawn time decreased. Does not apply during Overtime.\n- Berserkers – Heroes don’t passively regenerate HP. For each 10% of total HP lost, increases attack speed by 6% and reduce cooldowns by 6%.\n- Super Jump – Heroes jump 200% higher.\n- Motion Detection – Moving enemies within 25 meters are visitable through walls. Crouching enemies remain invisible.\n- Explosive – Heroes explode on death, dealing damage to all nearby heroes.\n- Hyper Speed – Movement speed is increased by 20% for all heroes.\n- Buff Hunt – Every minute, one random hero has increased HP, deals more damage, and generates ult charge faster. Eliminate the buffed hero to gain the buff.\n- Damage Pack – Health packs also increase damage dealt by 20% for 10 – 20 seconds or until death.\n- Fallen Comrade – Heroes drop of a globe on death that increases damage, armor, and movement speed when picked up by a teammate.",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "General Updates",
    "role": null,
    "description": "This patch is a rebase and will require a large download for all platforms. Rebase patches consolidate our patches into the core game, which in the long run, keeps the final data size of the game client manageable for both PC and console. You many need to have additional free space on your system storage when updating. If you do not have sufficient space, you can also uninstall the game client and reinstall it in full.",
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -68,21 +75,25 @@
      "body": "- The Play of the Game algorithm has been adjusted to make it more likely for supports to get Play of the Game more frequently from Saves that keep their ally alive for at least 5 seconds and from very high healing. More tweaks are coming in the future, so please let us know if you enjoy these changes or see problems.",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "Hero Updates",
    "role": null,
    "description": "- Damage role passive healing reduction increased from 25% to 30%\n- Base health regeneration timer increased from 5 to 6 seconds",
+   "dev": "Developer Comments: These changes are intended to broadly increase the impact of Damage-role heroes and slightly reduce the amount of healing sustain felt in moment-to-moment gameplay.",
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "Tank",
    "role": "tank",
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "junker-queen",
@@ -154,7 +165,8 @@
       }
      ],
      "perks": [],
-     "abilities": []
+     "abilities": [],
+     "stadium_items": []
     },
     {
      "slug": "mauga",
@@ -190,7 +202,8 @@
       }
      ],
      "perks": [],
-     "abilities": []
+     "abilities": [],
+     "stadium_items": []
     },
     {
      "slug": "ramattra",
@@ -212,7 +225,8 @@
        "raw_text": []
       }
      ],
-     "abilities": []
+     "abilities": [],
+     "stadium_items": []
     },
     {
      "slug": "zarya",
@@ -244,16 +258,19 @@
        "raw_text": []
       }
      ],
-     "abilities": []
+     "abilities": [],
+     "stadium_items": []
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "Damage",
    "role": "damage",
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "bastion",
@@ -277,7 +294,8 @@
       }
      ],
      "perks": [],
-     "abilities": []
+     "abilities": [],
+     "stadium_items": []
     },
     {
      "slug": "echo",
@@ -313,7 +331,8 @@
       }
      ],
      "perks": [],
-     "abilities": []
+     "abilities": [],
+     "stadium_items": []
     },
     {
      "slug": "pharah",
@@ -335,7 +354,8 @@
        "raw_text": []
       }
      ],
-     "abilities": []
+     "abilities": [],
+     "stadium_items": []
     },
     {
      "slug": "reaper",
@@ -371,7 +391,8 @@
       }
      ],
      "perks": [],
-     "abilities": []
+     "abilities": [],
+     "stadium_items": []
     },
     {
      "slug": "soldier-76",
@@ -393,7 +414,8 @@
        "raw_text": []
       }
      ],
-     "abilities": []
+     "abilities": [],
+     "stadium_items": []
     },
     {
      "slug": "tracer",
@@ -429,7 +451,8 @@
       }
      ],
      "perks": [],
-     "abilities": []
+     "abilities": [],
+     "stadium_items": []
     },
     {
      "slug": "venture",
@@ -465,16 +488,19 @@
       }
      ],
      "perks": [],
-     "abilities": []
+     "abilities": [],
+     "stadium_items": []
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "Support",
    "role": "support",
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "lifeweaver",
@@ -496,7 +522,8 @@
        "raw_text": []
       }
      ],
-     "abilities": []
+     "abilities": [],
+     "stadium_items": []
     },
     {
      "slug": "lucio",
@@ -532,7 +559,8 @@
       }
      ],
      "perks": [],
-     "abilities": []
+     "abilities": [],
+     "stadium_items": []
     },
     {
      "slug": "moira",
@@ -568,7 +596,8 @@
       }
      ],
      "perks": [],
-     "abilities": []
+     "abilities": [],
+     "stadium_items": []
     },
     {
      "slug": "zenyatta",
@@ -590,16 +619,19 @@
        "raw_text": []
       }
      ],
-     "abilities": []
+     "abilities": [],
+     "stadium_items": []
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "Stadium Updates",
    "role": null,
    "description": "- Competitive Ranks have been reset with everyone restarting at Rookie 1.\n- Players who reach Epic Rank for the first time in the Tank Role can still earn the Epic Elite Orisa skin.\n- Players who reach Epic Rank for the first time in the Damage Role can still earn the Epic Elite Genji skin.\n- Players who reach Epic Rank for the first time in the Support Role can still earn the Epic Elite Moira skin.\n- Players who reach All-Star Rank will earn the Legendary All-Star Mercy skin and the Legendary All-Star Juno skin.",
+   "dev": "Developer Comments: After our improvements to matchmaking in Season 16, we want to give more time for players to have a fair chance to climb to the All-Star rank and earn the All-Star Juno skin. Both the All-Star Juno skin and the All-Star Mercy skin will no longer be available to earn after the end of Season 17.",
    "heroes": [],
    "blocks": [
     {
@@ -642,21 +674,25 @@
      "body": "- Reduced the size of Pro, All-Star and Legend ranked progression bands",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "Stadium Hero Updates",
    "role": null,
    "description": "Stadium Hero Updates",
+   "dev": null,
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "Tank",
    "role": "tank",
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "d-va",
@@ -665,117 +701,56 @@
      "role": "tank",
      "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e69a3d819fd46d0dcd1d9474c248a95e69519c20077c60e9de73a1e2d3acdbb6.png",
      "dev_note": "Developer Comments: After a full season of play, it's clear that D.Va isn’t standing out as a top-tier tank pick in the current meta. While this update focuses on improving clarity and consistency, we’re keeping a close eye on her performance and have additional changes planned to help her hold her own against the fierce competition in Stadium.",
-     "general": [
-      {
-       "text_en": "Booster elimination also resets cooldown of boosters.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "During boosters, quick melee now gains 50% attack speed (instead of 75% damage).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Dae-hyun's Detonator - Rare Ability Hero Item",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Now shows danger warning sign to the enemy if the enemy is within the blast radius.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Decreased radius to 100% (down from 200%).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Nano Cola™ Nitrous - Epic Survival Hero Item",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Increased health stat to 50 (up from 25).",
-       "text_cn": null,
-       "subject": "health",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Removed stat: health increase 5%.",
-       "text_cn": null,
-       "subject": "health",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      }
-     ],
-     "perks": [
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": "MEKA Punch",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Booster elimination also resets cooldown of boosters.",
+        "During boosters, quick melee now gains 50% attack speed (instead of 75% damage)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "MEKA Punch - Power"
        ]
+      },
+      {
+       "name_en": "Dae-hyun's Detonator",
+       "name_cn": null,
+       "rarity": "Rare",
+       "kind": "ability",
+       "status": "changed",
+       "lines_en": [
+        "Now shows danger warning sign to the enemy if the enemy is within the blast radius.",
+        "Decreased radius to 100% (down from 200%)."
+       ],
+       "lines_cn": [],
+       "raw_text": [
+        "Dae-hyun's Detonator - Rare Ability Hero Item"
+       ]
+      },
+      {
+       "name_en": "Nano Cola™ Nitrous",
+       "name_cn": null,
+       "rarity": "Epic",
+       "kind": "survival",
+       "status": "changed",
+       "lines_en": [
+        "Increased health stat to 50 (up from 25).",
+        "Removed stat: health increase 5%."
+       ],
+       "lines_cn": [],
+       "raw_text": [
+        "Nano Cola™ Nitrous - Epic Survival Hero Item"
+       ]
       }
-     ],
-     "abilities": []
+     ]
     },
     {
      "slug": "junker-queen",
@@ -784,38 +759,19 @@
      "role": "tank",
      "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/cf66adfac58a0321ec1f7d3a7241d6bf2f3b311707064d2f0ace2e3f4e342727.png",
      "dev_note": "Developer Comments: Shout and Chop has proven to be a highly effective combo for Junker Queen, often giving her a bit too much reliability in close-range engagements. This change is a first step toward dialing back that effectiveness, while still preserving the aggressive playstyle that makes her so satisfying to play.",
-     "general": [
-      {
-       "text_en": "Decreased cooldown reduction to 50% (down from 100%).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Increased reduction on cooldown to 2s per enemy hit (up from 1s).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      }
-     ],
-     "perks": [
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": "Let's Go Win",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Decreased cooldown reduction to 50% (down from 100%)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Let's Go Win - Power"
@@ -824,15 +780,18 @@
       {
        "name_en": "Cut 'Em, Gracie!",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Increased reduction on cooldown to 2s per enemy hit (up from 1s)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Cut 'Em, Gracie! - Power"
        ]
       }
-     ],
-     "abilities": []
+     ]
     },
     {
      "slug": "orisa",
@@ -841,58 +800,39 @@
      "role": "tank",
      "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/20c12a10cfe0b5608f9eec63a74ecb0ccd18a114019bc77bb2765f87776e17ed.png",
      "dev_note": "Developer Comments: These 2 items have been underperforming, lacking the stat needed to be more impactful. This update addresses that by adding item stat to them.",
-     "general": [
-      {
-       "text_en": "Siphonic Spear - Rare Survival Hero Item.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Added stat: 25 Health.",
-       "text_cn": null,
-       "subject": "health",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Arcfinder - Rare Ability Hero Item.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Added stat: 5% Cooldown reduction.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      }
-     ],
+     "general": [],
      "perks": [],
-     "abilities": []
+     "abilities": [],
+     "stadium_items": [
+      {
+       "name_en": "Siphonic Spear",
+       "name_cn": null,
+       "rarity": "Rare",
+       "kind": "survival",
+       "status": "changed",
+       "lines_en": [
+        "Added stat: 25 Health."
+       ],
+       "lines_cn": [],
+       "raw_text": [
+        "Siphonic Spear - Rare Survival Hero Item."
+       ]
+      },
+      {
+       "name_en": "Arcfinder",
+       "name_cn": null,
+       "rarity": "Rare",
+       "kind": "ability",
+       "status": "changed",
+       "lines_en": [
+        "Added stat: 5% Cooldown reduction."
+       ],
+       "lines_cn": [],
+       "raw_text": [
+        "Arcfinder - Rare Ability Hero Item."
+       ]
+      }
+     ]
     },
     {
      "slug": "reinhardt",
@@ -902,90 +842,6 @@
      "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b5e3a4f5629a3acfd47b5d2e695e79ea964b060bf67b7e4f8f15e63accd5f934.png",
      "dev_note": "Developer Comments: We're shifting some power in the Fire Strike build to focus more on higher uptime of Fire Strike and Magma Strike's Trail of Lava, while pulling back from the high single target burst that Impact Burst enabled. We're also making some adjustments to Reinhardt's Barrier build to make it a more compelling option and have a smoother progression curve.",
      "general": [
-      {
-       "text_en": "Now only damages other enemies around primary target.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Explosion damage increased to 30% of Fire Strike damage (Up from 15%).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Trail of lava now triggers on every second Fire Strike instead of every second Fire Strike cast within 2s.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Changed to Power (from Epic Survival Item).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Barrier Field Health increase now only increases from Bonus Max Life.",
-       "text_cn": null,
-       "subject": "health",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Barrier Field Health scaling increased to 250% (up from 100%).",
-       "text_cn": null,
-       "subject": "health",
-       "dimension": "hero_attr",
-       "before": 100.0,
-       "after": 250.0,
-       "by": 150.0,
-       "by_pct": null,
-       "metric": "barrier",
-       "unit": "hp"
-      },
-      {
-       "text_en": "Increased healing based on Max Life to 5% (up from 4%).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
       {
        "text_en": "Chimera's Maw - Epic Hero Ability Item",
        "text_cn": null,
@@ -1119,12 +975,19 @@
        "unit": null
       }
      ],
-     "perks": [
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": "Impact Burst",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Now only damages other enemies around primary target.",
+        "Explosion damage increased to 30% of Fire Strike damage (Up from 15%)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Impact Burst - Power"
@@ -1133,8 +996,12 @@
       {
        "name_en": "Magma Strike",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Trail of lava now triggers on every second Fire Strike instead of every second Fire Strike cast within 2s."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Magma Strike - Power"
@@ -1143,8 +1010,14 @@
       {
        "name_en": "Infusion Generator",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Changed to Power (from Epic Survival Item).",
+        "Barrier Field Health increase now only increases from Bonus Max Life.",
+        "Barrier Field Health scaling increased to 250% (up from 100%)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Infusion Generator - Power"
@@ -1153,15 +1026,18 @@
       {
        "name_en": "To Me, My Friends",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Increased healing based on Max Life to 5% (up from 4%)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "To Me, My Friends - Power"
        ]
       }
-     ],
-     "abilities": []
+     ]
     },
     {
      "slug": "sigma",
@@ -1182,542 +1058,20 @@
        "by_pct": null,
        "metric": null,
        "unit": null
-      },
-      {
-       "text_en": "When you use an ability, gain the ability to fly for 2.5s.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Hyperspheres direct hits reduce the cooldown of [Accretion] by 0.5s.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Your primary fire launches a third [Hypersphere] that deals 50% reduced damage.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Damage absorbed by Kinetic Grasp also restores Experimental Barrier's health. Excess is converted to Overhealth.",
-       "text_cn": null,
-       "subject": "health",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "When Kinetic Grasp ends, for every 100 damage absorbed gain 10% Attack Speed for 4s, stacking up to 4 times.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Get a mini Experimental Barrier that orbits around you. It has 50% reduced health.",
-       "text_cn": null,
-       "subject": "health",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Experimental Barrier has 25% increased Max Health. Barrier health regenerates constantly but 50% slower while deployed.",
-       "text_cn": null,
-       "subject": "health",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Accretion projectiles that pass through [Experimental Barrier] gain 300% increased projectile speed and deal 20% increased damage.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Accretion splash damage is increased by 25% and enemies are pulled towards its explosion.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": 25.0,
-       "metric": "accretion splash damage is",
-       "unit": null
-      },
-      {
-       "text_en": "50% Ultimate Cost Reduction",
-       "text_cn": null,
-       "subject": "ultimate_cost",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Gravitic Flux radius is reduced by 50%.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": 50.0,
-       "metric": "gravitic flux radius is",
-       "unit": null
-      },
-      {
-       "text_en": "When you use an ability, create 2 Hyperspheres that orbit around you. Orbiting [Hyperspheres] deal 50% reduced damage.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Quick Melee causes enemies hit to levitate into the air for 1s. (10s CD)",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Velocity Vector - Rare Weapon Hero Item",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "+10% Attack Speed",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "+15% Hypersphere Range",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Cost: 4500",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Maglev Multiplier - Rare Weapon Hero Item",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "10% Weapon Power",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "+5% Ability Power",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Gravitic Flux levitates enemies for 20% longer. Enemies affected take 25% increased damage from Hyperspheres.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Cost: 5000",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Synced Shielding - Rare Ability Hero Item",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "+25 Shields",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "While behind Experimental Barrier, gain +5% Weapon Power and Attack Speed.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "While in front of Experimental Barrier, gain +5% Move Speed and Lifesteal.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Cost: 4500",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Beam Splitter - Rare Survival Hero Item",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "+25 Shields",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "+5% Cooldown Reduction",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "While Kinetic Grasp is active, reduce incoming Beam damage by 50%.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Cost: 4000",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Antimatter - Epic Weapon Hero Item",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "+15% Weapon Power",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "+35% Hyperspheres Explosion Radius",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Cost: 10000",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "The Harness - Epic Ability Hero Item",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "+25% Ability Power",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "+50% Accretion Explosion Radius",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Cost: 11000",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "De Kuiper's Thesis - Epic Survival Hero Item",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "+50 Shields",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Experimental Barrier heals nearby allies for 3% of Sigma's life every 1s.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Cost: 11000",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
       }
      ],
-     "perks": [
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": "Zero Gravity",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "When you use an ability, gain the ability to fly for 2.5s."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Zero Gravity - Power"
@@ -1726,8 +1080,12 @@
       {
        "name_en": "Hyperloop",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Hyperspheres direct hits reduce the cooldown of [Accretion] by 0.5s."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Hyperloop - Power"
@@ -1736,8 +1094,12 @@
       {
        "name_en": "Trinisphere",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Your primary fire launches a third [Hypersphere] that deals 50% reduced damage."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Trinisphere - Power"
@@ -1746,8 +1108,12 @@
       {
        "name_en": "Event Horizon",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Damage absorbed by Kinetic Grasp also restores Experimental Barrier's health. Excess is converted to Overhealth."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Event Horizon - Power"
@@ -1756,8 +1122,12 @@
       {
        "name_en": "Symphonic Syzygy",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "When Kinetic Grasp ends, for every 100 damage absorbed gain 10% Attack Speed for 4s, stacking up to 4 times."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Symphonic Syzygy - Power"
@@ -1766,8 +1136,12 @@
       {
        "name_en": "Orbital Barrier",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Get a mini Experimental Barrier that orbits around you. It has 50% reduced health."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Orbital Barrier - Power"
@@ -1776,8 +1150,12 @@
       {
        "name_en": "Philharmonic Fortitude",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Experimental Barrier has 25% increased Max Health. Barrier health regenerates constantly but 50% slower while deployed."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Philharmonic Fortitude - Power"
@@ -1786,8 +1164,12 @@
       {
        "name_en": "Mass Driver",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Accretion projectiles that pass through [Experimental Barrier] gain 300% increased projectile speed and deal 20% increased damage."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Mass Driver - Power"
@@ -1796,8 +1178,12 @@
       {
        "name_en": "Singularity",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Accretion splash damage is increased by 25% and enemies are pulled towards its explosion."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Singularity - Power"
@@ -1806,8 +1192,13 @@
       {
        "name_en": "Maestro",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "50% Ultimate Cost Reduction",
+        "Gravitic Flux radius is reduced by 50%."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Maestro - Power"
@@ -1816,8 +1207,12 @@
       {
        "name_en": "Apogee Alignment",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "When you use an ability, create 2 Hyperspheres that orbit around you. Orbiting [Hyperspheres] deal 50% reduced damage."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Apogee Alignment - Power"
@@ -1826,15 +1221,133 @@
       {
        "name_en": "Astrophysical",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Quick Melee causes enemies hit to levitate into the air for 1s. (10s CD)"
+       ],
        "lines_cn": [],
        "raw_text": [
         "Astrophysical - Power"
        ]
+      },
+      {
+       "name_en": "Velocity Vector",
+       "name_cn": null,
+       "rarity": "Rare",
+       "kind": "weapon",
+       "status": "changed",
+       "lines_en": [
+        "+10% Attack Speed",
+        "+15% Hypersphere Range",
+        "Cost: 4500"
+       ],
+       "lines_cn": [],
+       "raw_text": [
+        "Velocity Vector - Rare Weapon Hero Item"
+       ]
+      },
+      {
+       "name_en": "Maglev Multiplier",
+       "name_cn": null,
+       "rarity": "Rare",
+       "kind": "weapon",
+       "status": "changed",
+       "lines_en": [
+        "10% Weapon Power",
+        "+5% Ability Power",
+        "Gravitic Flux levitates enemies for 20% longer. Enemies affected take 25% increased damage from Hyperspheres.",
+        "Cost: 5000"
+       ],
+       "lines_cn": [],
+       "raw_text": [
+        "Maglev Multiplier - Rare Weapon Hero Item"
+       ]
+      },
+      {
+       "name_en": "Synced Shielding",
+       "name_cn": null,
+       "rarity": "Rare",
+       "kind": "ability",
+       "status": "changed",
+       "lines_en": [
+        "+25 Shields",
+        "While behind Experimental Barrier, gain +5% Weapon Power and Attack Speed.",
+        "While in front of Experimental Barrier, gain +5% Move Speed and Lifesteal.",
+        "Cost: 4500"
+       ],
+       "lines_cn": [],
+       "raw_text": [
+        "Synced Shielding - Rare Ability Hero Item"
+       ]
+      },
+      {
+       "name_en": "Beam Splitter",
+       "name_cn": null,
+       "rarity": "Rare",
+       "kind": "survival",
+       "status": "changed",
+       "lines_en": [
+        "+25 Shields",
+        "+5% Cooldown Reduction",
+        "While Kinetic Grasp is active, reduce incoming Beam damage by 50%.",
+        "Cost: 4000"
+       ],
+       "lines_cn": [],
+       "raw_text": [
+        "Beam Splitter - Rare Survival Hero Item"
+       ]
+      },
+      {
+       "name_en": "Antimatter",
+       "name_cn": null,
+       "rarity": "Epic",
+       "kind": "weapon",
+       "status": "changed",
+       "lines_en": [
+        "+15% Weapon Power",
+        "+35% Hyperspheres Explosion Radius",
+        "Cost: 10000"
+       ],
+       "lines_cn": [],
+       "raw_text": [
+        "Antimatter - Epic Weapon Hero Item"
+       ]
+      },
+      {
+       "name_en": "The Harness",
+       "name_cn": null,
+       "rarity": "Epic",
+       "kind": "ability",
+       "status": "changed",
+       "lines_en": [
+        "+25% Ability Power",
+        "+50% Accretion Explosion Radius",
+        "Cost: 11000"
+       ],
+       "lines_cn": [],
+       "raw_text": [
+        "The Harness - Epic Ability Hero Item"
+       ]
+      },
+      {
+       "name_en": "De Kuiper's Thesis",
+       "name_cn": null,
+       "rarity": "Epic",
+       "kind": "survival",
+       "status": "changed",
+       "lines_en": [
+        "+50 Shields",
+        "Experimental Barrier heals nearby allies for 3% of Sigma's life every 1s.",
+        "Cost: 11000"
+       ],
+       "lines_cn": [],
+       "raw_text": [
+        "De Kuiper's Thesis - Epic Survival Hero Item"
+       ]
       }
-     ],
-     "abilities": []
+     ]
     },
     {
      "slug": "zarya",
@@ -1866,150 +1379,6 @@
        "by": null,
        "by_pct": null,
        "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Increased Overhealth based on remaining Barrier Health to 100% (Up from 50%).",
-       "text_cn": null,
-       "subject": "health",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Duration reduced to 2s (down from 3s).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Removed \"Barrier heals 20 Life, increased by Energy\".",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Added \"Barrier heals target for 5% of your Max Life every 1s\".",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Added 25% reduced Maximum Energy gain.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Bonus Max Life increase now only increases from Max Life added from Items.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Increased Barrier health scaling to 50% of your bonus Max Life from Items (up from 25%).",
-       "text_cn": null,
-       "subject": "health",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Maximum Energy decreased to 125 (Down from 150).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Fixed an issue where the Vortex from Volskaya Vortex didn't grant Ultimate Charge.",
-       "text_cn": null,
-       "subject": "ultimate_cost",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Damage reduced to 80 (down from 100).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": 100.0,
-       "after": 80.0,
-       "by": -20.0,
-       "by_pct": null,
-       "metric": "damage",
-       "unit": null
-      },
-      {
-       "text_en": "Bigger Beam - Epic Weapon Hero Item",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Cost increased to 12000 (Up from 11000).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": 11000.0,
-       "after": 12000.0,
-       "by": 1000.0,
-       "by_pct": null,
-       "metric": "cost",
        "unit": null
       },
       {
@@ -2085,12 +1454,19 @@
        "unit": null
       }
      ],
-     "perks": [
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": "Barrier Benefits",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Increased Overhealth based on remaining Barrier Health to 100% (Up from 50%).",
+        "Duration reduced to 2s (down from 3s)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Barrier Benefits - Power"
@@ -2099,8 +1475,13 @@
       {
        "name_en": "Containment Shield",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Removed \"Barrier heals 20 Life, increased by Energy\".",
+        "Added \"Barrier heals target for 5% of your Max Life every 1s\"."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Containment Shield - Power"
@@ -2109,8 +1490,12 @@
       {
        "name_en": "Fission Field",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Added 25% reduced Maximum Energy gain."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Fission Field - Power"
@@ -2119,8 +1504,13 @@
       {
        "name_en": "Lifelift",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Bonus Max Life increase now only increases from Max Life added from Items.",
+        "Increased Barrier health scaling to 50% of your bonus Max Life from Items (up from 25%)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Lifelift - Power"
@@ -2129,8 +1519,12 @@
       {
        "name_en": "No Limits",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Maximum Energy decreased to 125 (Down from 150)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "No Limits - Power"
@@ -2139,24 +1533,44 @@
       {
        "name_en": "Volskaya Vortex",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Fixed an issue where the Vortex from Volskaya Vortex didn't grant Ultimate Charge.",
+        "Damage reduced to 80 (down from 100)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Volskaya Vortex - Power"
        ]
+      },
+      {
+       "name_en": "Bigger Beam",
+       "name_cn": null,
+       "rarity": "Epic",
+       "kind": "weapon",
+       "status": "changed",
+       "lines_en": [
+        "Cost increased to 12000 (Up from 11000)."
+       ],
+       "lines_cn": [],
+       "raw_text": [
+        "Bigger Beam - Epic Weapon Hero Item"
+       ]
       }
-     ],
-     "abilities": []
+     ]
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "Damage",
    "role": "damage",
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "ashe",
@@ -2165,74 +1579,19 @@
      "role": "damage",
      "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e41d918d0e7ffa772b5571df3d0dc1a05e6d9032307f78be935972cfd59f208a.png",
      "dev_note": "Developer Comments: Silver Spurs has been underperforming and often lacked synergy with common builds. This update improves its utility and cohesion, making it a more rewarding option that better complements a variety of playstyles. B.O.B. Jr. has proven to be a strong utility option and great for locking down control points while catching enemies off-guard with early ultimate. However, its effectiveness at holding territory became a bit too reliable. We're adjusting its strength to bring it more in line with other options, while still retaining its strategic value.",
-     "general": [
-      {
-       "text_en": "Decreased duration to 10s (Down from 20s).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "No longer generates currency.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Silver Spurs - Rare Survival Hero Item",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Increased duration to 5s (Up from 3s).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Now reloads 25% of max ammo on coach gun use.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      }
-     ],
-     "perks": [
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": "B.O.B. Jr.",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Decreased duration to 10s (Down from 20s)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "B.O.B. Jr. - Power"
@@ -2241,15 +1600,33 @@
       {
        "name_en": "Reload Therapy",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "No longer generates currency."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Reload Therapy - Power"
        ]
+      },
+      {
+       "name_en": "Silver Spurs",
+       "name_cn": null,
+       "rarity": "Rare",
+       "kind": "survival",
+       "status": "changed",
+       "lines_en": [
+        "Increased duration to 5s (Up from 3s).",
+        "Now reloads 25% of max ammo on coach gun use."
+       ],
+       "lines_cn": [],
+       "raw_text": [
+        "Silver Spurs - Rare Survival Hero Item"
+       ]
       }
-     ],
-     "abilities": []
+     ]
     },
     {
      "slug": "cassidy",
@@ -2282,50 +1659,21 @@
        "by_pct": null,
        "metric": null,
        "unit": null
-      },
-      {
-       "text_en": "Bonus ammo is now gained on critical final blow.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Added max cap of bonus ammo set to 4.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Decreased damage reduction to 25% (Down from 50%), total damage reduction is now 75% during the combat roll.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
       }
      ],
-     "perks": [
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": "Dead Man Walking",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Bonus ammo is now gained on critical final blow.",
+        "Added max cap of bonus ammo set to 4."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Dead Man Walking - Power"
@@ -2334,15 +1682,18 @@
       {
        "name_en": "Just Roll With It",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Decreased damage reduction to 25% (Down from 50%), total damage reduction is now 75% during the combat roll."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Just Roll With It - Power"
        ]
       }
-     ],
-     "abilities": []
+     ]
     },
     {
      "slug": "freja",
@@ -2363,105 +1714,44 @@
        "by_pct": null,
        "metric": null,
        "unit": null
-      },
-      {
-       "text_en": "Increased damage to 50% reduced damage (up from 60% reduced damage).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Added 25% reduced radius on Bola Shot fired by Lille Fælde.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "VFX reduced to reduce visual noise of Bola Shot fired by Lille Fælde.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Updated tooltip to reflect earlier changes.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Hunter's Mark - Rare Survival Hero Item",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Added 5% Weapon Power.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Bonus Cash on Eliminating a target with a Bounty of 750 or more increased to 350 (up from 250).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": 250.0,
-       "after": 350.0,
-       "by": 100.0,
-       "by_pct": null,
-       "metric": "bonus cash on eliminating a target with a bounty of 750 or more",
-       "unit": null
       }
      ],
-     "perks": [
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": "Lille Fælde",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Increased damage to 50% reduced damage (up from 60% reduced damage).",
+        "Added 25% reduced radius on Bola Shot fired by Lille Fælde.",
+        "VFX reduced to reduce visual noise of Bola Shot fired by Lille Fælde.",
+        "Updated tooltip to reflect earlier changes."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Lille Fælde - Power"
        ]
+      },
+      {
+       "name_en": "Hunter's Mark",
+       "name_cn": null,
+       "rarity": "Rare",
+       "kind": "survival",
+       "status": "changed",
+       "lines_en": [
+        "Added 5% Weapon Power.",
+        "Bonus Cash on Eliminating a target with a Bounty of 750 or more increased to 350 (up from 250)."
+       ],
+       "lines_cn": [],
+       "raw_text": [
+        "Hunter's Mark - Rare Survival Hero Item"
+       ]
       }
-     ],
-     "abilities": []
+     ]
     },
     {
      "slug": "genji",
@@ -2470,110 +1760,20 @@
      "role": "damage",
      "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/190a3dd9a5a4c8daeff9ec4da861f43cb28116964e89dc7416da104d8fae9134.png",
      "dev_note": "Developer Comments: Melee Genji builds have become very prominent, which is awesome! However, the bursty backstab build is a bit too consistent and can feel hard to interact with. We're reducing the damage ceiling for this build but upping it's sustain to compensate. We're also adding a little bit more power to the Ability Power Swift strike build to make its key pieces feel a bit more impactful early on in a match. We'll be looking at making a larger set of changes to Genji in a future update.",
-     "general": [
-      {
-       "text_en": "Reduced Quick Melee damage to 15 (down from 25).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Increased Melee Lifesteal to 60% (up from 50%).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Increased damage over time to 35% of Swift Strike's damage (up from 25%).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Fixed an issue where this power did not benefit from Ability Lifesteal.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Ambusher Optics - Epic Weapon Hero Item",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Increased cost to 11,000 (up from 10,000).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Clean Sweep - Epic Ability Hero Item",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Increase Ability Power to 15% (up from 10%).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      }
-     ],
-     "perks": [
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": "Hidden Blade",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Reduced Quick Melee damage to 15 (down from 25).",
+        "Increased Melee Lifesteal to 60% (up from 50%)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Hidden Blade - Power"
@@ -2582,15 +1782,47 @@
       {
        "name_en": "Laceration",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Increased damage over time to 35% of Swift Strike's damage (up from 25%).",
+        "Fixed an issue where this power did not benefit from Ability Lifesteal."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Laceration - Power"
        ]
+      },
+      {
+       "name_en": "Ambusher Optics",
+       "name_cn": null,
+       "rarity": "Epic",
+       "kind": "weapon",
+       "status": "changed",
+       "lines_en": [
+        "Increased cost to 11,000 (up from 10,000)."
+       ],
+       "lines_cn": [],
+       "raw_text": [
+        "Ambusher Optics - Epic Weapon Hero Item"
+       ]
+      },
+      {
+       "name_en": "Clean Sweep",
+       "name_cn": null,
+       "rarity": "Epic",
+       "kind": "ability",
+       "status": "changed",
+       "lines_en": [
+        "Increase Ability Power to 15% (up from 10%)."
+       ],
+       "lines_cn": [],
+       "raw_text": [
+        "Clean Sweep - Epic Ability Hero Item"
+       ]
       }
-     ],
-     "abilities": []
+     ]
     },
     {
      "slug": "junkrat",
@@ -2611,830 +1843,20 @@
        "by_pct": null,
        "metric": null,
        "unit": null
-      },
-      {
-       "text_en": "Frag Launcher has a 25% chance to shoot an additional projectile that deals 66% reduced damage.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "When a Frag Launcher shot bounces, its projectile size increases by 33%.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "After detonating Concussion Mine, gain 15% increased Attack Speed for 1.5s and refunds 20% Max Ammo.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Frag Launcher Direct Hits without bouncing burn for 20% extra damage over 2s",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Frag Launcher Direct Hits without bouncing reduce cooldown of all abilities by 25%.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Gain 1 additional charge of Steel Trap.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "After Concussion Mine has landed for 0.5s, detonating it will spawn a mini Steel Trap that slows instead of immobilizing.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Quick Melee explode for up to 100% Quick Melee damage, knocking you and nearby enemies back. (10s Cooldown)",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "After launching yourself with Concussion Mine, detonate a Concussion Mine wherever you land with 50% reduced effectiveness.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "After launching yourself, drop 1 Total Mayhem bomb with 25% reduced damage every 0.4s while you are airborne.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "20% Total Mayhem Explosion Radius Total Mayhem creates a random number of additional bombs.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "20% Ultimate Cost Reduction",
-       "text_cn": null,
-       "subject": "ultimate_cost",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "During your ultimate, enter your Rip Tire. Launch out when it is destroyed or triggered.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Springier Spring - Rare Weapon Hero Item",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "25 Health",
-       "text_cn": null,
-       "subject": "health",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "+5% Attack Speed",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "+25% Frag Launcher Bounce Distance",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Cost: 4500",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Spiked Gloves - Rare Weapon Hero Item",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "25 Health",
-       "text_cn": null,
-       "subject": "health",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "+5% Weapon Power",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Deal 10% increased damage and 25% increased Quick Melee damage to enemies that are airborne.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Cost: 4500",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Improvised Explosives - Rare Ability Hero Item",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "+10% Ability Lifesteal",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "+10% Starting Ultimate Charge",
-       "text_cn": null,
-       "subject": "ultimate_cost",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "After detonating Rip Tire, trigger Total Mayhem in 0.5s.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Cost: 4000",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Rat Pack - Rare Ability Hero Item",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "+5% Ability Power",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "+50% Steel Trap Health",
-       "text_cn": null,
-       "subject": "health",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Steel Trap refunds 33% cooldown when destroyed.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Cost: 4000",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Thermal Traps - Rare Survival Hero Item",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "+25 Health",
-       "text_cn": null,
-       "subject": "health",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "When Steel Trap triggers, reveal the target and gain 25% Move Speed and 10% Attack Speed for 3s.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Cost: 4000",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Zip Grease - Epic Weapon Hero Item",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "+25 Health",
-       "text_cn": null,
-       "subject": "health",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "+5% Weapon Power",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "After detonating Concussion Mine, your next 2 Frag Launcher shots gain 200% Projectile Speed and deal 10% increased damage to airborne enemies.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Cost: 10000",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Charged Chompas - Epic Ability Hero Item",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "+50 Health",
-       "text_cn": null,
-       "subject": "health",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "+10% Ability Power",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Whenever Total Mayhem deals damage, gain 3% Ultimate Charge.",
-       "text_cn": null,
-       "subject": "ultimate_cost",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Cost: 10000",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Fawkes' Funny Fuel™ - Epic Ability Hero Item",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "+10% Ability Power",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "+10% Ability Lifesteal",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "+15% Concussion Mine Explosion Radius",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "If Concussion Mine is 5m above the ground when detonated, increase its explosion radius by 25%.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Cost: 10000",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Lithium Alloy - Epic Ability Hero Item",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "+25 Health",
-       "text_cn": null,
-       "subject": "health",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "+50% Steel Trap Throw Distance",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Triggering Steel Trap burns the enemy for 50 Ability Damage over 3s.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Cost: 10000",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Jamison's Jumpers - Epic Survival Hero Item",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "+10% Weapon Power",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "+10% Ability Power",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "+20% Concussion Mine Self Knockback Distance",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Cost: 10000",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Refreshing Radiation - Epic Survival Hero Item",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "+10% Cooldown Reduction",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "+50% Concussion Mine Health",
-       "text_cn": null,
-       "subject": "health",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "For each target detonated by Concussion Mine, gain Overhealth equal to 5% of Max Life for 3s.",
-       "text_cn": null,
-       "subject": "health",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Cost: 10000",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
       }
      ],
-     "perks": [
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": "2 Frag 2 Frurious",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Frag Launcher has a 25% chance to shoot an additional projectile that deals 66% reduced damage."
+       ],
        "lines_cn": [],
        "raw_text": [
         "2 Frag 2 Frurious - Power"
@@ -3443,8 +1865,12 @@
       {
        "name_en": "Big Bang",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "When a Frag Launcher shot bounces, its projectile size increases by 33%."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Big Bang - Power"
@@ -3453,8 +1879,12 @@
       {
        "name_en": "Soot Shaker",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "After detonating Concussion Mine, gain 15% increased Attack Speed for 1.5s and refunds 20% Max Ammo."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Soot Shaker - Power"
@@ -3463,8 +1893,12 @@
       {
        "name_en": "Bango!",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Frag Launcher Direct Hits without bouncing burn for 20% extra damage over 2s"
+       ],
        "lines_cn": [],
        "raw_text": [
         "Bango! - Power"
@@ -3473,8 +1907,12 @@
       {
        "name_en": "Bingo!",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Frag Launcher Direct Hits without bouncing reduce cooldown of all abilities by 25%."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Bingo! - Power"
@@ -3483,8 +1921,12 @@
       {
        "name_en": "It's A(nother) Trap",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Gain 1 additional charge of Steel Trap."
+       ],
        "lines_cn": [],
        "raw_text": [
         "It's A(nother) Trap - Power"
@@ -3493,8 +1935,12 @@
       {
        "name_en": "Trap II, Esquire",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "After Concussion Mine has landed for 0.5s, detonating it will spawn a mini Steel Trap that slows instead of immobilizing."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Trap II, Esquire - Power"
@@ -3503,8 +1949,12 @@
       {
        "name_en": "Slapnel",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Quick Melee explode for up to 100% Quick Melee damage, knocking you and nearby enemies back. (10s Cooldown)"
+       ],
        "lines_cn": [],
        "raw_text": [
         "Slapnel - Power"
@@ -3513,8 +1963,12 @@
       {
        "name_en": "Hop Boom",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "After launching yourself with Concussion Mine, detonate a Concussion Mine wherever you land with 50% reduced effectiveness."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Hop Boom - Power"
@@ -3523,8 +1977,12 @@
       {
        "name_en": "Rainin' Lead",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "After launching yourself, drop 1 Total Mayhem bomb with 25% reduced damage every 0.4s while you are airborne."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Rainin' Lead - Power"
@@ -3533,8 +1991,12 @@
       {
        "name_en": "Gachabomb",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "20% Total Mayhem Explosion Radius Total Mayhem creates a random number of additional bombs."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Gachabomb - Power"
@@ -3543,15 +2005,206 @@
       {
        "name_en": "Rip Roll",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "20% Ultimate Cost Reduction",
+        "During your ultimate, enter your Rip Tire. Launch out when it is destroyed or triggered."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Rip Roll - Power"
        ]
+      },
+      {
+       "name_en": "Springier Spring",
+       "name_cn": null,
+       "rarity": "Rare",
+       "kind": "weapon",
+       "status": "changed",
+       "lines_en": [
+        "25 Health",
+        "+5% Attack Speed",
+        "+25% Frag Launcher Bounce Distance",
+        "Cost: 4500"
+       ],
+       "lines_cn": [],
+       "raw_text": [
+        "Springier Spring - Rare Weapon Hero Item"
+       ]
+      },
+      {
+       "name_en": "Spiked Gloves",
+       "name_cn": null,
+       "rarity": "Rare",
+       "kind": "weapon",
+       "status": "changed",
+       "lines_en": [
+        "25 Health",
+        "+5% Weapon Power",
+        "Deal 10% increased damage and 25% increased Quick Melee damage to enemies that are airborne.",
+        "Cost: 4500"
+       ],
+       "lines_cn": [],
+       "raw_text": [
+        "Spiked Gloves - Rare Weapon Hero Item"
+       ]
+      },
+      {
+       "name_en": "Improvised Explosives",
+       "name_cn": null,
+       "rarity": "Rare",
+       "kind": "ability",
+       "status": "changed",
+       "lines_en": [
+        "+10% Ability Lifesteal",
+        "+10% Starting Ultimate Charge",
+        "After detonating Rip Tire, trigger Total Mayhem in 0.5s.",
+        "Cost: 4000"
+       ],
+       "lines_cn": [],
+       "raw_text": [
+        "Improvised Explosives - Rare Ability Hero Item"
+       ]
+      },
+      {
+       "name_en": "Rat Pack",
+       "name_cn": null,
+       "rarity": "Rare",
+       "kind": "ability",
+       "status": "changed",
+       "lines_en": [
+        "+5% Ability Power",
+        "+50% Steel Trap Health",
+        "Steel Trap refunds 33% cooldown when destroyed.",
+        "Cost: 4000"
+       ],
+       "lines_cn": [],
+       "raw_text": [
+        "Rat Pack - Rare Ability Hero Item"
+       ]
+      },
+      {
+       "name_en": "Thermal Traps",
+       "name_cn": null,
+       "rarity": "Rare",
+       "kind": "survival",
+       "status": "changed",
+       "lines_en": [
+        "+25 Health",
+        "When Steel Trap triggers, reveal the target and gain 25% Move Speed and 10% Attack Speed for 3s.",
+        "Cost: 4000"
+       ],
+       "lines_cn": [],
+       "raw_text": [
+        "Thermal Traps - Rare Survival Hero Item"
+       ]
+      },
+      {
+       "name_en": "Zip Grease",
+       "name_cn": null,
+       "rarity": "Epic",
+       "kind": "weapon",
+       "status": "changed",
+       "lines_en": [
+        "+25 Health",
+        "+5% Weapon Power",
+        "After detonating Concussion Mine, your next 2 Frag Launcher shots gain 200% Projectile Speed and deal 10% increased damage to airborne enemies.",
+        "Cost: 10000"
+       ],
+       "lines_cn": [],
+       "raw_text": [
+        "Zip Grease - Epic Weapon Hero Item"
+       ]
+      },
+      {
+       "name_en": "Charged Chompas",
+       "name_cn": null,
+       "rarity": "Epic",
+       "kind": "ability",
+       "status": "changed",
+       "lines_en": [
+        "+50 Health",
+        "+10% Ability Power",
+        "Whenever Total Mayhem deals damage, gain 3% Ultimate Charge.",
+        "Cost: 10000"
+       ],
+       "lines_cn": [],
+       "raw_text": [
+        "Charged Chompas - Epic Ability Hero Item"
+       ]
+      },
+      {
+       "name_en": "Fawkes' Funny Fuel™",
+       "name_cn": null,
+       "rarity": "Epic",
+       "kind": "ability",
+       "status": "changed",
+       "lines_en": [
+        "+10% Ability Power",
+        "+10% Ability Lifesteal",
+        "+15% Concussion Mine Explosion Radius",
+        "If Concussion Mine is 5m above the ground when detonated, increase its explosion radius by 25%.",
+        "Cost: 10000"
+       ],
+       "lines_cn": [],
+       "raw_text": [
+        "Fawkes' Funny Fuel™ - Epic Ability Hero Item"
+       ]
+      },
+      {
+       "name_en": "Lithium Alloy",
+       "name_cn": null,
+       "rarity": "Epic",
+       "kind": "ability",
+       "status": "changed",
+       "lines_en": [
+        "+25 Health",
+        "+50% Steel Trap Throw Distance",
+        "Triggering Steel Trap burns the enemy for 50 Ability Damage over 3s.",
+        "Cost: 10000"
+       ],
+       "lines_cn": [],
+       "raw_text": [
+        "Lithium Alloy - Epic Ability Hero Item"
+       ]
+      },
+      {
+       "name_en": "Jamison's Jumpers",
+       "name_cn": null,
+       "rarity": "Epic",
+       "kind": "survival",
+       "status": "changed",
+       "lines_en": [
+        "+10% Weapon Power",
+        "+10% Ability Power",
+        "+20% Concussion Mine Self Knockback Distance",
+        "Cost: 10000"
+       ],
+       "lines_cn": [],
+       "raw_text": [
+        "Jamison's Jumpers - Epic Survival Hero Item"
+       ]
+      },
+      {
+       "name_en": "Refreshing Radiation",
+       "name_cn": null,
+       "rarity": "Epic",
+       "kind": "survival",
+       "status": "changed",
+       "lines_en": [
+        "+10% Cooldown Reduction",
+        "+50% Concussion Mine Health",
+        "For each target detonated by Concussion Mine, gain Overhealth equal to 5% of Max Life for 3s.",
+        "Cost: 10000"
+       ],
+       "lines_cn": [],
+       "raw_text": [
+        "Refreshing Radiation - Epic Survival Hero Item"
+       ]
       }
-     ],
-     "abilities": []
+     ]
     },
     {
      "slug": "mei",
@@ -3560,86 +2213,19 @@
      "role": "damage",
      "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/08586dceed41e030d575b2b643118f55390f1c2af91dd15394528f5399fcc934.png",
      "dev_note": "Developer Comments: While Avalanche was doing its job, it often created confusion for enemies where many couldn’t clearly understand why they were being slowed or where the effect was coming from. We’re shifting the focus of the power to enhance Mei’s primary fire, giving her more burst potential and rewarding players who can cage the enemy within a mini-blizzard or a blizzard. This should make the power feel more intuitive and impactful for both Mei and her opponents.",
-     "general": [
-      {
-       "text_en": "Removed.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "New Power added.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Endothermic Blaster's primary fire does 20% increased damage to enemies within Blizzard.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Increases Mei's size by 15% when above 30% ability power.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Himalayan Hat - Epic Weapon Hero Item",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Increased attack speed to 15% (up from 10%).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      }
-     ],
-     "perks": [
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": "Avalanche",
        "name_cn": null,
-       "status": "changed",
-       "lines_en": [],
+       "rarity": null,
+       "kind": "power",
+       "status": "removed",
+       "lines_en": [
+        "Removed."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Avalanche - Power"
@@ -3648,8 +2234,13 @@
       {
        "name_en": "Cold Blaster",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "New Power added.",
+        "Endothermic Blaster's primary fire does 20% increased damage to enemies within Blizzard."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Cold Blaster - Power"
@@ -3658,15 +2249,32 @@
       {
        "name_en": "Permafrost",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Increases Mei's size by 15% when above 30% ability power."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Permafrost - Power"
        ]
+      },
+      {
+       "name_en": "Himalayan Hat",
+       "name_cn": null,
+       "rarity": "Epic",
+       "kind": "weapon",
+       "status": "changed",
+       "lines_en": [
+        "Increased attack speed to 15% (up from 10%)."
+       ],
+       "lines_cn": [],
+       "raw_text": [
+        "Himalayan Hat - Epic Weapon Hero Item"
+       ]
       }
-     ],
-     "abilities": []
+     ]
     },
     {
      "slug": "reaper",
@@ -3699,290 +2307,20 @@
        "by_pct": null,
        "metric": null,
        "unit": null
-      },
-      {
-       "text_en": "Now also has +30% Shadow Step Cast Speed.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Reduced healing to 7% (down from 10%)",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Nightcreeper - Rare Weapon Hero Item",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Moved to Rare (from Epic).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "No longer has +30% Shadow Step Cast Speed.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Cost: 3,750.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Now Provides: 5% Weapon Power, 5% Move Speed, and after using an ability, nearby enemies are Revealed to you for 3s.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Crowd Control - Rare Ability Hero Item",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Moved to Rare (from Epic).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Replaced Ability Power stat with 10% Ability Lifesteal.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Now grants 4% Ability Power per target (down from 5%).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Cost: 4,000.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Fixed a bug where the effect of this item was not affecting Death Blossoms triggered by Death Step.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Wreath of Ruin - Epic Ability Hero Item",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Fixed a bug Where the Move Speed increase was not affecting Death Blossoms triggered by Death Step.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Crimson Cloak - Epic Ability Hero Item",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Moved from Survival Items to Ability Items",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Changed effect to: \"When Death Blossom starts, gain Overhealth equal to 5% of your max Life for each enemy within its range.\"",
-       "text_cn": null,
-       "subject": "health",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Reduced cost to 9500.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Devastation - Rare Survival Hero Item",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Replaced Ability Lifesteal stat with 25 Health",
-       "text_cn": null,
-       "subject": "health",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Reduced effect cap to 75 Health (down from 100)",
-       "text_cn": null,
-       "subject": "health",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Cost reduced to 3,750 (down from 4,000)",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
       }
      ],
-     "perks": [
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": "Strangle Step",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Now also has +30% Shadow Step Cast Speed."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Strangle Step - Power"
@@ -3991,15 +2329,99 @@
       {
        "name_en": "Wraith Renewal",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Reduced healing to 7% (down from 10%)"
+       ],
        "lines_cn": [],
        "raw_text": [
         "Wraith Renewal - Power"
        ]
+      },
+      {
+       "name_en": "Nightcreeper",
+       "name_cn": null,
+       "rarity": "Rare",
+       "kind": "weapon",
+       "status": "changed",
+       "lines_en": [
+        "Moved to Rare (from Epic).",
+        "No longer has +30% Shadow Step Cast Speed.",
+        "Cost: 3,750.",
+        "Now Provides: 5% Weapon Power, 5% Move Speed, and after using an ability, nearby enemies are Revealed to you for 3s."
+       ],
+       "lines_cn": [],
+       "raw_text": [
+        "Nightcreeper - Rare Weapon Hero Item"
+       ]
+      },
+      {
+       "name_en": "Crowd Control",
+       "name_cn": null,
+       "rarity": "Rare",
+       "kind": "ability",
+       "status": "changed",
+       "lines_en": [
+        "Moved to Rare (from Epic).",
+        "Replaced Ability Power stat with 10% Ability Lifesteal.",
+        "Now grants 4% Ability Power per target (down from 5%).",
+        "Cost: 4,000.",
+        "Fixed a bug where the effect of this item was not affecting Death Blossoms triggered by Death Step."
+       ],
+       "lines_cn": [],
+       "raw_text": [
+        "Crowd Control - Rare Ability Hero Item"
+       ]
+      },
+      {
+       "name_en": "Wreath of Ruin",
+       "name_cn": null,
+       "rarity": "Epic",
+       "kind": "ability",
+       "status": "changed",
+       "lines_en": [
+        "Fixed a bug Where the Move Speed increase was not affecting Death Blossoms triggered by Death Step."
+       ],
+       "lines_cn": [],
+       "raw_text": [
+        "Wreath of Ruin - Epic Ability Hero Item"
+       ]
+      },
+      {
+       "name_en": "Crimson Cloak",
+       "name_cn": null,
+       "rarity": "Epic",
+       "kind": "ability",
+       "status": "moved",
+       "lines_en": [
+        "Moved from Survival Items to Ability Items",
+        "Changed effect to: \"When Death Blossom starts, gain Overhealth equal to 5% of your max Life for each enemy within its range.\"",
+        "Reduced cost to 9500."
+       ],
+       "lines_cn": [],
+       "raw_text": [
+        "Crimson Cloak - Epic Ability Hero Item"
+       ]
+      },
+      {
+       "name_en": "Devastation",
+       "name_cn": null,
+       "rarity": "Rare",
+       "kind": "survival",
+       "status": "changed",
+       "lines_en": [
+        "Replaced Ability Lifesteal stat with 25 Health",
+        "Reduced effect cap to 75 Health (down from 100)",
+        "Cost reduced to 3,750 (down from 4,000)"
+       ],
+       "lines_cn": [],
+       "raw_text": [
+        "Devastation - Rare Survival Hero Item"
+       ]
       }
-     ],
-     "abilities": []
+     ]
     },
     {
      "slug": "soldier-76",
@@ -4008,54 +2430,37 @@
      "role": "damage",
      "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1cb6f3ad4b8afdc1a901c26180a4c134018bb805b91eefe9b7cf2946879f10c8.png",
      "dev_note": "Developer Comments: Frontliners continues to be one of Soldier 76's least popular options. We're allowing the Overhealth to stack to enable more synergies with Powers that create additional Biotic Fields to allow for more build paths.",
-     "general": [
-      {
-       "text_en": "Overhealth now stacks when multiple Biotic Fields are active at once.",
-       "text_cn": null,
-       "subject": "health",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Overhealth based on Max Life reduced to 25% (down from 30%).",
-       "text_cn": null,
-       "subject": "health",
-       "dimension": "hero_attr",
-       "before": 30.0,
-       "after": 25.0,
-       "by": -5.0,
-       "by_pct": null,
-       "metric": "overhealth",
-       "unit": "hp"
-      }
-     ],
-     "perks": [
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": "Frontline",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Overhealth now stacks when multiple Biotic Fields are active at once.",
+        "Overhealth based on Max Life reduced to 25% (down from 30%)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Frontline - Power"
        ]
       }
-     ],
-     "abilities": []
+     ]
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "Support",
    "role": "support",
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "ana",
@@ -4064,46 +2469,26 @@
      "role": "support",
      "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/86debddbaaaf8699d68775a9dbffaf5b8db514772b77ff7234b1ff84c0b29fd5.png",
      "dev_note": "Developer Comments: Double Dosage was originally designed to support aggressive plays. We’ve redesigned it to better serve as a forward-facing tool, rewarding players who take initiative and engage directly with the enemy.",
-     "general": [
-      {
-       "text_en": "Double Dosage - Rare Ability Hero Item",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Redesigned to work only on enemies, only up to 30%. Does not stack.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Decreased cooldown to 30% (Down from 35%).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      }
-     ],
+     "general": [],
      "perks": [],
-     "abilities": []
+     "abilities": [],
+     "stadium_items": [
+      {
+       "name_en": "Double Dosage",
+       "name_cn": null,
+       "rarity": "Rare",
+       "kind": "ability",
+       "status": "changed",
+       "lines_en": [
+        "Redesigned to work only on enemies, only up to 30%. Does not stack.",
+        "Decreased cooldown to 30% (Down from 35%)."
+       ],
+       "lines_cn": [],
+       "raw_text": [
+        "Double Dosage - Rare Ability Hero Item"
+       ]
+      }
+     ]
     },
     {
      "slug": "juno",
@@ -4136,129 +2521,58 @@
        "by_pct": null,
        "metric": null,
        "unit": null
-      },
-      {
-       "text_en": "Lock-On Shield - Rare Survival Hero Item.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Changed Item category from Ability to Survival.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Changed Item stat from 10% Ability Power to 25 Health.",
-       "text_cn": null,
-       "subject": "health",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Decreased Overhealth scalar to 25% (Down from 50%).",
-       "text_cn": null,
-       "subject": "health",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Boosted Rockets - Epic Survival Hero Item.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Changed Item rarity from Rare to Epic.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Changed Item price from 4000 to 12000.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Updated Item effect: During Glide Boost, gain 10% Damage Reduction.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Removed additional 30 Healing.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
       }
      ],
-     "perks": [
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
+      {
+       "name_en": "Lock-On Shield",
+       "name_cn": null,
+       "rarity": "Rare",
+       "kind": "survival",
+       "status": "changed",
+       "lines_en": [
+        "Changed Item category from Ability to Survival.",
+        "Changed Item stat from 10% Ability Power to 25 Health.",
+        "Decreased Overhealth scalar to 25% (Down from 50%)."
+       ],
+       "lines_cn": [],
+       "raw_text": [
+        "Lock-On Shield - Rare Survival Hero Item."
+       ]
+      },
+      {
+       "name_en": "Boosted Rockets",
+       "name_cn": null,
+       "rarity": "Epic",
+       "kind": "survival",
+       "status": "changed",
+       "lines_en": [
+        "Changed Item rarity from Rare to Epic.",
+        "Changed Item price from 4000 to 12000.",
+        "Updated Item effect: During Glide Boost, gain 10% Damage Reduction."
+       ],
+       "lines_cn": [],
+       "raw_text": [
+        "Boosted Rockets - Epic Survival Hero Item."
+       ]
+      },
       {
        "name_en": "Medicinal Missiles",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Removed additional 30 Healing."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Medicinal Missiles - Power"
        ]
       }
-     ],
-     "abilities": []
+     ]
     },
     {
      "slug": "kiriko",
@@ -4267,74 +2581,19 @@
      "role": "support",
      "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/24d1d7bf86c331b3d81b934442ed36fd0121f6815255c6f26f456127fb342d15.png",
      "dev_note": "Developer Comments: Soothing Step was designed to be a core part of Kiriko’s ability power-focused build, enabling her to serve as a highly mobile healer. This update brings it more in line with other build options while reinforcing her role as a capable burst healer in fast-paced fights. Additionally, Self-Care has been redesigned—both to address a bug and to make its healing more accurately reflect Kiriko’s healing output.",
-     "general": [
-      {
-       "text_en": "Spread reduced by 50%.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": 50.0,
-       "metric": "spread",
-       "unit": null
-      },
-      {
-       "text_en": "Redesigned to: When you use Healing Ofuda, each Ofuda thrown heals you for 3% of max life.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Donut Delivery - Epic Ability Hero Item",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Increased Healing to 120 (Up from 80).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Replaced stat: From 10% Ability power to 10% Cooldown reduction.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      }
-     ],
-     "perks": [
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": "Triple Threat",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Spread reduced by 50%."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Triple Threat - Power"
@@ -4343,15 +2602,33 @@
       {
        "name_en": "Self-Care",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Redesigned to: When you use Healing Ofuda, each Ofuda thrown heals you for 3% of max life."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Self-Care - Power"
        ]
+      },
+      {
+       "name_en": "Donut Delivery",
+       "name_cn": null,
+       "rarity": "Epic",
+       "kind": "ability",
+       "status": "changed",
+       "lines_en": [
+        "Increased Healing to 120 (Up from 80).",
+        "Replaced stat: From 10% Ability power to 10% Cooldown reduction."
+       ],
+       "lines_cn": [],
+       "raw_text": [
+        "Donut Delivery - Epic Ability Hero Item"
+       ]
       }
-     ],
-     "abilities": []
+     ]
     },
     {
      "slug": "lucio",
@@ -4360,62 +2637,19 @@
      "role": "support",
      "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/dee7e92975f5e659fa6b28c508d8fbad62bda720698b1d21f2492af7b9f94b48.png",
      "dev_note": "Developer Comments: Due to the buffs to Lucio's Crossfade Healing in the core game, we're decoupling Crowd Pleaser's healing from Crossfade. This will make Crowd Pleaser feel more impactful when outside of Amp It Up, while ensuring the healing during Amp It Up is within bounds. We're also reworking Vivace to have a more specialized niche, as well as buffing Sonic Boom to enable more build options.",
-     "general": [
-      {
-       "text_en": "Healing adjusted from 100% of Crossfade Healing to 20 Healing that is doubled while Amp It Up is active.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Removed \"While you are Wallriding, Soundwave cooldown refreshes 25% faster and adds 1 Max Ammo every 1s until you reload\".",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Added \"Every 1s Wallriding, you gain 3% Move Speed and 1.5% Attack Speed for 5s, stacking up to 10 times\".",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Healing now also triggers on Quick Melee damage.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      }
-     ],
-     "perks": [
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": "Crowd Pleaser",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Healing adjusted from 100% of Crossfade Healing to 20 Healing that is doubled while Amp It Up is active."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Crowd Pleaser - Power"
@@ -4424,8 +2658,13 @@
       {
        "name_en": "Vivace",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Removed \"While you are Wallriding, Soundwave cooldown refreshes 25% faster and adds 1 Max Ammo every 1s until you reload\".",
+        "Added \"Every 1s Wallriding, you gain 3% Move Speed and 1.5% Attack Speed for 5s, stacking up to 10 times\"."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Vivace - Power"
@@ -4434,15 +2673,18 @@
       {
        "name_en": "Sonic Boom",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Healing now also triggers on Quick Melee damage."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Sonic Boom - Power"
        ]
       }
-     ],
-     "abilities": []
+     ]
     },
     {
      "slug": "zenyatta",
@@ -4454,258 +2696,6 @@
      "general": [
       {
        "text_en": "Added to the Stadium Hero Roster",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "While airborne, Quick Melee becomes a dash kick that stuns if it knocks an enemy back into a wall. (5s Cooldown)",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Orb of Destruction's secondary fire can charge up to 3 additional orbs.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Orb of Destruction's secondary fire projectiles home when aimed at a target below 35% Life.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Allies affected by Harmony Orb are healed for 35% of the damage you deal.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Gain a 2nd Harmony Orb but they both heal 45% less.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Harmony Orb targets can be out of your line of sight for 5s longer before Harmony Orb returns to you.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Gain a Harmony Orb that is always attached to you. It heals for 75% less.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "When you critically hit a target affected by your Discord Orb, the Orb of Destruction explodes, dealing (AP)50 damage.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "When Discord Orb is applied to a target, they take (AP)50 damage over 5s to the enemy.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "When a target of your Discord Orb damages you, restore 30% of that damage over 2s.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "While using Transcendence, apply Discord Orb to all enemies within range.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Transcendence can be canceled early, saving up to 65% of your Ultimate Charge.",
-       "text_cn": null,
-       "subject": "ultimate_cost",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Breezeborne Blessing - Rare Ability Hero Item",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "+10% Ability Power",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Harmony Orb heals airborne allies for 15% more.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Cost: 4000",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Satya's Solution - Rare Ability Hero Item",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "+10% Ability Power",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "+10% Movement Speed",
-       "text_cn": null,
-       "subject": "move_speed",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "While Transcendence is active, its radius increases by 1m every 1s.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Cost: 4000",
        "text_cn": null,
        "subject": null,
        "dimension": "other",
@@ -4763,578 +2753,20 @@
        "by_pct": null,
        "metric": null,
        "unit": null
-      },
-      {
-       "text_en": "Transference Protocol - Rare Survival Hero Item",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "+25 Shield",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "When you charge an orb with Orb of Destruction's secondary fire, restore for 3% of your Life.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Cost: 4000",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Keepsake of Chaos - Rare Survival Hero Item",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "+25 Armor",
-       "text_cn": null,
-       "subject": "health",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Eliminating an enemy affected by Discord Orb grants 5 Armor for the rest of the round, up to 50 Armor.",
-       "text_cn": null,
-       "subject": "health",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Cost: 4500",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Haste Subroutine - Epic Weapon Hero Item",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "+15% Attack Speed",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "After using Harmony Orb or Discord Orb, gain 100% Projectile Speed for 3s.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Cost: 11000",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Genji's Galvanic Gloves - Epic Weapon Hero Item",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "+10% Weapon Power",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "+10% Attack Speed",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Orb of Destruction's secondary fire charges 20% faster.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Cost: 12000",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Orb of Perception - Epic Weapon Hero Item",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "+15% Weapon Power",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "+15% Ability Power",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Targets affected by Discord Orb are Revealed.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Cost: 11000",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Friendship Bracelet - Epic Ability Hero Item",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "+10% Ability Power",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Increase your healing by up to 20%, based on how close you are to your target.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Cost: 11000",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Mind Shaper - Epic Ability Hero Item",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "+15% Ability Power",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "+15% Starting Ultimate Charge",
-       "text_cn": null,
-       "subject": "ultimate_cost",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Allies affected by Transcendence have their cooldowns refresh 15% faster.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Cost: 12000",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Mondatta's Mantra - Epic Ability Hero Item",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "+30% Transcendence duration",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "After using Transcendence, gain Overhealth equal to 100% of the healing it did.",
-       "text_cn": null,
-       "subject": "health",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Cost: 11000",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Ramattra's Reasoning - Epic Survival Hero Item",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "+50 Armor",
-       "text_cn": null,
-       "subject": "health",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "For every 50 Armor you have, gain 5% Quick Melee Damage.",
-       "text_cn": null,
-       "subject": "health",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Cost: 10000",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Meditation Mat - Epic Survival Hero Item",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "+50 Armor",
-       "text_cn": null,
-       "subject": "health",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "When your shields are depleted, knock back nearby enemies, dealing 80 damage. Can only trigger every 6s after Shields are fully restored.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Cost: 10000",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Teacher's Totem - Epic Survival Hero Item",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "+50 Shield",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Allies affected by Harmony Orb take 10% reduced Ability Damage.",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Cost: 10000",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
       }
      ],
-     "perks": [
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": "Flying Kick",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "While airborne, Quick Melee becomes a dash kick that stuns if it knocks an enemy back into a wall. (5s Cooldown)"
+       ],
        "lines_cn": [],
        "raw_text": [
         "Flying Kick - Power"
@@ -5343,8 +2775,12 @@
       {
        "name_en": "It's Orbin' Time",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Orb of Destruction's secondary fire can charge up to 3 additional orbs."
+       ],
        "lines_cn": [],
        "raw_text": [
         "It's Orbin' Time - Power"
@@ -5353,8 +2789,12 @@
       {
        "name_en": "Seeking Salvation",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Orb of Destruction's secondary fire projectiles home when aimed at a target below 35% Life."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Seeking Salvation - Power"
@@ -5363,8 +2803,12 @@
       {
        "name_en": "Enlightenment",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Allies affected by Harmony Orb are healed for 35% of the damage you deal."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Enlightenment - Power"
@@ -5373,8 +2817,12 @@
       {
        "name_en": "Dual Harmony",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Gain a 2nd Harmony Orb but they both heal 45% less."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Dual Harmony - Power"
@@ -5383,8 +2831,12 @@
       {
        "name_en": "Gotta Have Faith",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Harmony Orb targets can be out of your line of sight for 5s longer before Harmony Orb returns to you."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Gotta Have Faith - Power"
@@ -5393,8 +2845,12 @@
       {
        "name_en": "Inner Peace",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Gain a Harmony Orb that is always attached to you. It heals for 75% less."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Inner Peace - Power"
@@ -5403,8 +2859,12 @@
       {
        "name_en": "Discord Inferno",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "When you critically hit a target affected by your Discord Orb, the Orb of Destruction explodes, dealing (AP)50 damage."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Discord Inferno - Power"
@@ -5413,8 +2873,12 @@
       {
        "name_en": "Discord Fever",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "When Discord Orb is applied to a target, they take (AP)50 damage over 5s to the enemy."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Discord Fever - Power"
@@ -5423,8 +2887,12 @@
       {
        "name_en": "Instant Karma",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "When a target of your Discord Orb damages you, restore 30% of that damage over 2s."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Instant Karma - Power"
@@ -5433,8 +2901,12 @@
       {
        "name_en": "Circle of Strife",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "While using Transcendence, apply Discord Orb to all enemies within range."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Circle of Strife - Power"
@@ -5443,32 +2915,251 @@
       {
        "name_en": "Soul Control",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Transcendence can be canceled early, saving up to 65% of your Ultimate Charge."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Soul Control - Power"
        ]
+      },
+      {
+       "name_en": "Breezeborne Blessing",
+       "name_cn": null,
+       "rarity": "Rare",
+       "kind": "ability",
+       "status": "changed",
+       "lines_en": [
+        "+10% Ability Power",
+        "Harmony Orb heals airborne allies for 15% more.",
+        "Cost: 4000"
+       ],
+       "lines_cn": [],
+       "raw_text": [
+        "Breezeborne Blessing - Rare Ability Hero Item"
+       ]
+      },
+      {
+       "name_en": "Satya's Solution",
+       "name_cn": null,
+       "rarity": "Rare",
+       "kind": "ability",
+       "status": "changed",
+       "lines_en": [
+        "+10% Ability Power",
+        "+10% Movement Speed",
+        "While Transcendence is active, its radius increases by 1m every 1s.",
+        "Cost: 4000"
+       ],
+       "lines_cn": [],
+       "raw_text": [
+        "Satya's Solution - Rare Ability Hero Item"
+       ]
+      },
+      {
+       "name_en": "Transference Protocol",
+       "name_cn": null,
+       "rarity": "Rare",
+       "kind": "survival",
+       "status": "changed",
+       "lines_en": [
+        "+25 Shield",
+        "When you charge an orb with Orb of Destruction's secondary fire, restore for 3% of your Life.",
+        "Cost: 4000"
+       ],
+       "lines_cn": [],
+       "raw_text": [
+        "Transference Protocol - Rare Survival Hero Item"
+       ]
+      },
+      {
+       "name_en": "Keepsake of Chaos",
+       "name_cn": null,
+       "rarity": "Rare",
+       "kind": "survival",
+       "status": "changed",
+       "lines_en": [
+        "+25 Armor",
+        "Eliminating an enemy affected by Discord Orb grants 5 Armor for the rest of the round, up to 50 Armor.",
+        "Cost: 4500"
+       ],
+       "lines_cn": [],
+       "raw_text": [
+        "Keepsake of Chaos - Rare Survival Hero Item"
+       ]
+      },
+      {
+       "name_en": "Haste Subroutine",
+       "name_cn": null,
+       "rarity": "Epic",
+       "kind": "weapon",
+       "status": "changed",
+       "lines_en": [
+        "+15% Attack Speed",
+        "After using Harmony Orb or Discord Orb, gain 100% Projectile Speed for 3s.",
+        "Cost: 11000"
+       ],
+       "lines_cn": [],
+       "raw_text": [
+        "Haste Subroutine - Epic Weapon Hero Item"
+       ]
+      },
+      {
+       "name_en": "Genji's Galvanic Gloves",
+       "name_cn": null,
+       "rarity": "Epic",
+       "kind": "weapon",
+       "status": "changed",
+       "lines_en": [
+        "+10% Weapon Power",
+        "+10% Attack Speed",
+        "Orb of Destruction's secondary fire charges 20% faster.",
+        "Cost: 12000"
+       ],
+       "lines_cn": [],
+       "raw_text": [
+        "Genji's Galvanic Gloves - Epic Weapon Hero Item"
+       ]
+      },
+      {
+       "name_en": "Orb of Perception",
+       "name_cn": null,
+       "rarity": "Epic",
+       "kind": "weapon",
+       "status": "changed",
+       "lines_en": [
+        "+15% Weapon Power",
+        "+15% Ability Power",
+        "Targets affected by Discord Orb are Revealed.",
+        "Cost: 11000"
+       ],
+       "lines_cn": [],
+       "raw_text": [
+        "Orb of Perception - Epic Weapon Hero Item"
+       ]
+      },
+      {
+       "name_en": "Friendship Bracelet",
+       "name_cn": null,
+       "rarity": "Epic",
+       "kind": "ability",
+       "status": "changed",
+       "lines_en": [
+        "+10% Ability Power",
+        "Increase your healing by up to 20%, based on how close you are to your target.",
+        "Cost: 11000"
+       ],
+       "lines_cn": [],
+       "raw_text": [
+        "Friendship Bracelet - Epic Ability Hero Item"
+       ]
+      },
+      {
+       "name_en": "Mind Shaper",
+       "name_cn": null,
+       "rarity": "Epic",
+       "kind": "ability",
+       "status": "changed",
+       "lines_en": [
+        "+15% Ability Power",
+        "+15% Starting Ultimate Charge",
+        "Allies affected by Transcendence have their cooldowns refresh 15% faster.",
+        "Cost: 12000"
+       ],
+       "lines_cn": [],
+       "raw_text": [
+        "Mind Shaper - Epic Ability Hero Item"
+       ]
+      },
+      {
+       "name_en": "Mondatta's Mantra",
+       "name_cn": null,
+       "rarity": "Epic",
+       "kind": "ability",
+       "status": "changed",
+       "lines_en": [
+        "+30% Transcendence duration",
+        "After using Transcendence, gain Overhealth equal to 100% of the healing it did.",
+        "Cost: 11000"
+       ],
+       "lines_cn": [],
+       "raw_text": [
+        "Mondatta's Mantra - Epic Ability Hero Item"
+       ]
+      },
+      {
+       "name_en": "Ramattra's Reasoning",
+       "name_cn": null,
+       "rarity": "Epic",
+       "kind": "survival",
+       "status": "changed",
+       "lines_en": [
+        "+50 Armor",
+        "For every 50 Armor you have, gain 5% Quick Melee Damage.",
+        "Cost: 10000"
+       ],
+       "lines_cn": [],
+       "raw_text": [
+        "Ramattra's Reasoning - Epic Survival Hero Item"
+       ]
+      },
+      {
+       "name_en": "Meditation Mat",
+       "name_cn": null,
+       "rarity": "Epic",
+       "kind": "survival",
+       "status": "changed",
+       "lines_en": [
+        "+50 Armor",
+        "When your shields are depleted, knock back nearby enemies, dealing 80 damage. Can only trigger every 6s after Shields are fully restored.",
+        "Cost: 10000"
+       ],
+       "lines_cn": [],
+       "raw_text": [
+        "Meditation Mat - Epic Survival Hero Item"
+       ]
+      },
+      {
+       "name_en": "Teacher's Totem",
+       "name_cn": null,
+       "rarity": "Epic",
+       "kind": "survival",
+       "status": "changed",
+       "lines_en": [
+        "+50 Shield",
+        "Allies affected by Harmony Orb take 10% reduced Ability Damage.",
+        "Cost: 10000"
+       ],
+       "lines_cn": [],
+       "raw_text": [
+        "Teacher's Totem - Epic Survival Hero Item"
+       ]
       }
-     ],
-     "abilities": []
+     ]
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "Armory",
    "role": null,
    "description": "Aerial Distresser - Epic Weapon Item\n\n- New Item\n- 25 Shield\n- 10% Attack Speed\n- Weapon hits to airborne enemies deal 25% bonus damage over 3s.\n- 10000 Cost.\n\nOverdrive Core - Epic Survival Item\n\n- New Item\n- 25 Shield\n- 10% Weapon Power\n- Once per life, if you take damage that would reduce you below 30% Max Life, you first gain 300 decaying Overhealth.\n- 10000 Cost.\n\nSonic Recharge - Epic Ability Item\n\n- New Item\n- 25 Shield\n- 10% Ability Power\n- Passive Life Regeneration can overheal up to 75.\n- 9500 Cost.\n\nVitality Amplifier - Rare Ability Item\n\n- New Item\n- 25 Shield\n- 10% Ability Lifesteal\n- While you are above 80% Life, gain 10% Ability Power.\n- 4500 Cost.\n\nEmergency Chip - Rare Weapon Item\n\n- New Item\n- 25 Shield\n- 5% Weapon Power\n- While you are below 150 Life, gain 15% Weapon Lifesteal.\n- 4500 Cost.\n\nSalvaged Slugs - Epic Weapon Item\n\n- Cost reduced to 9000 (Down from 9500).\n\nBiolight Overflow - Rare Ability Item\n\n- Overhealth increased to 75 (Up from 50).\n\nElectrolytes - Common Survival Item\n\n- Cost reduced to 1000 (Down from 1500).\n\nCushioned Padding - Rare Survival Item\n\n- Cost reduced to 3750 (Down from 4000).\n\nIron Eyes - Rare Survival General Item\n\n- Cost reduced to 4000 (Down from 4500).\n\nDivine Intervention - Epic Survival Item\n\n- Life restored from taking more than 100 damage increased to 20% (Up from 15%).\n- The following now triggers On Ability use effects: Zenyatta's Flying Kick, Mei's Snowball Flight, and Ana's Dash Boots.",
+   "dev": "Developer Comments: We're adding additional general items to help combat fliers, such as Freja and Mercy, and give more survivability options to damage centric builds, particularly against high amounts of burst. We're also buffing up some of our situational itemization to lower the opportunity cost of purchasing them.",
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "Bug Fixes",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -5486,9 +3177,10 @@
      "body": "Stadium\n\n- Fixed an issue that could lock the screen if the player died while\nhaving a menu open.\n\nAna\n\n- Fixed an issue that prevented the Superflexor mod from stacking when\nused alongside Ana’s Pinpoint Prescription power.\n\nCassidy\n\n- Fixed an issue where Cassidy’s Frankie’s Fixed power did not correctly grant the 50 bonus health.\n\nD.Va\n\n- Fixed an issue that prevented D.Va’s damage from scaling properly without exiting and re-entering her mech.\n- Fixed an issue where the lava from D.Va’s Vesuvius Protocol mod did not apply other mod effects.\n- Fixed an issue where D.Va’s Legendary Loadout power inflicted excessive damage when combined with other ability mods.\n\nFreja\n\n- Fixed an issue where Freja's Lille Faelde power would max out weapon spread after using the take aim ability\n\nJunker Queen\n\n- Fixed an issue where mods failed to apply to Junker Queen’s melee damage.\n\nJuno\n\n- Fixed an issue where Juno’s Orbital power failed to apply a slow effect to enemies.\n\nKiriko\n\n- Fixed an issue with Kiriko's Self Care power, it has been re-enabled.\n- Fixed an issue where Kiriko’s Donut Delivery power did not scale with increased ability powers.\n\nMei\n\n- Fixed an issue that prevented Mei’s Snowball Flight from being counted as an ability power when combined with mods utilizing ability power.\n\nMoira\n\n- Fixed an issue where Moria's Voidhoppers power would remove her healer vision on allies.\n\nReaper\n\n- Fixed an issue where Reaper’s Crimson Cloak mod only used base health in calculations.\n\nZarya\n\n- Fixed an issue where Zarya’s Volskaya Vortex power did not generate ultimate charge from the slowing vortex.",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   }
  ],
  "raw_text": null,
- "hash": "sha256:aabe0b8cec4d9454560a16974a3a73332b9fb4408bb2267fb02fb34587b4ede2"
+ "hash": "sha256:ceddbcce029cb397320cf74326b2fe2f1c641ff6e713f0be0bfbce2508b2d645"
 }

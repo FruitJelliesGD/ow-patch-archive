@@ -11,14 +11,17 @@
    "title": "平衡性在线修正更新",
    "role": null,
    "description": "本次更新为游戏平衡性在线修正，2025年5月7日更新后的回放代码仍然可用。",
+   "dev": null,
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "角斗领域更新",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -31,13 +34,15 @@
      "body": "- 第一回合和第三回合的购买时间从100秒缩短至75秒。\n- 第二回合的购买时间从75秒缩短至60秒。",
      "dev": "设计师观点：我们缩短了前几个回合的购物时间。因为我们发现，玩家只在后期需要更多时间出售装备和调整对策，前期的利用率较低。"
     }
-   ]
+   ],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "重装",
    "role": "tank",
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "zarya",
@@ -61,16 +66,19 @@
       }
      ],
      "perks": [],
-     "abilities": []
+     "abilities": [],
+     "stadium_items": []
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "输出",
    "role": "damage",
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "cassidy",
@@ -94,7 +102,8 @@
       }
      ],
      "perks": [],
-     "abilities": []
+     "abilities": [],
+     "stadium_items": []
     },
     {
      "slug": "reaper",
@@ -103,63 +112,21 @@
      "role": "damage",
      "icon": "https://ld5.res.netease.com/images/20250321/1742550466166_87597a90d1.png",
      "dev_note": "设计师观点：我们修复了一些我们认为让“死神”胜率偏高的漏洞，同时微调了萦绕毁伤的叠加时间和最大叠加次数。未来，我们还将对“死神”的武器搭配作出更多调整，优化搭配多样性，避免过度依赖武器强度。",
-     "general": [
-      {
-       "text_en": null,
-       "text_cn": "每层效果的攻击速度加成从5%降低至4%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 5.0,
-       "after": 4.0,
-       "by": -1.0,
-       "by_pct": null,
-       "metric": "每层效果的攻击速度加成",
-       "unit": "pct"
-      },
-      {
-       "text_en": null,
-       "text_cn": "最大叠加次数从8次增加至10次。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "修复了无论当前生命值多少，幽灵恢复都会触发双倍治疗的问题。现在会根据当前生命值正常触发了。",
-       "subject": "health",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "修复了未消灭敌人也能重置“死神”技能冷却时间的问题。",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      }
-     ],
-     "perks": [
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": null,
        "name_cn": "萦绕毁伤",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "每层效果的攻击速度加成从5%降低至4%。",
+        "最大叠加次数从8次增加至10次。"
+       ],
        "raw_text": [
         "萦绕毁伤——异能"
        ]
@@ -167,9 +134,13 @@
       {
        "name_en": null,
        "name_cn": "幽灵恢复",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "修复了无论当前生命值多少，幽灵恢复都会触发双倍治疗的问题。现在会根据当前生命值正常触发了。"
+       ],
        "raw_text": [
         "幽灵恢复——异能"
        ]
@@ -177,24 +148,29 @@
       {
        "name_en": null,
        "name_cn": "夺命渴望",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "修复了未消灭敌人也能重置“死神”技能冷却时间的问题。"
+       ],
        "raw_text": [
         "夺命渴望——异能"
        ]
       }
-     ],
-     "abilities": []
+     ]
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "支援",
    "role": "support",
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "ana",
@@ -204,54 +180,6 @@
      "icon": "https://ld5.res.netease.com/images/20250321/1742550494571_8930da28ec.png",
      "dev_note": "设计师观点：安娜的技能冷却时间是支援英雄里最长的，但其在角斗领域中的作用与这么长的冷却时间并不相衬。本次更新提升了她部分能力的效果，帮助她在战斗中能更持久地保住队友，也让精准释放技能的收益更高。这些改动应该能让安娜在持久战中更具价值。",
      "general": [
-      {
-       "text_en": null,
-       "text_cn": "提供的过量生命值从“生物手雷”治疗量的100%提高至200%。",
-       "subject": "health",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "治疗量从最大生命值的100%降低至80％。",
-       "subject": "health",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "持续时间从8秒减少至4秒。",
-       "subject": null,
-       "dimension": "other",
-       "before": 8.0,
-       "after": 4.0,
-       "by": -4.0,
-       "by_pct": null,
-       "metric": "duration",
-       "unit": "s"
-      },
-      {
-       "text_en": null,
-       "text_cn": "额外伤害从30提高至50。",
-       "subject": null,
-       "dimension": "other",
-       "before": 30.0,
-       "after": 50.0,
-       "by": 20.0,
-       "by_pct": null,
-       "metric": "额外伤害",
-       "unit": null
-      },
       {
        "text_en": null,
        "text_cn": "瞬镜技术——稀有英雄武器物品",
@@ -301,13 +229,19 @@
        "unit": "hp"
       }
      ],
-     "perks": [
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": null,
        "name_cn": "居家药饮",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "提供的过量生命值从“生物手雷”治疗量的100%提高至200%。"
+       ],
        "raw_text": [
         "居家药饮——异能"
        ]
@@ -315,9 +249,14 @@
       {
        "name_en": null,
        "name_cn": "美妙幻梦",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "治疗量从最大生命值的100%降低至80％。",
+        "持续时间从8秒减少至4秒。"
+       ],
        "raw_text": [
         "美妙幻梦——异能"
        ]
@@ -325,18 +264,22 @@
       {
        "name_en": null,
        "name_cn": "毒性药剂",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "额外伤害从30提高至50。"
+       ],
        "raw_text": [
         "毒性药剂——异能"
        ]
       }
-     ],
-     "abilities": []
+     ]
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   }
  ],
  "raw_text": null,

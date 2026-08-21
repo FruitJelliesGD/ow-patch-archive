@@ -11,28 +11,33 @@
    "title": "Announcement",
    "role": null,
    "description": "Patch 1.58 is a rebase and will require a relatively large download for all platforms.",
+   "dev": null,
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "PachiMarchi Challenge",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
      "title": null,
-     "body": "PachiMarchi is here! Now through March 22, win games to earn Pachimari-themed rewards, including the new Pachimari Roadhog skin.\n\nLearn more about the PachiMarchi Challenge on the Overwatch website.",
+     "body": "PachiMarchi is here! Now through March 22, win games to earn Pachimari-themed rewards, including the new Pachimari Roadhog skin.\n\nLearn more about the [PachiMarchi Challenge](https://playoverwatch.com/pachimarchi-challenge/) on the Overwatch website.",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "General Updates",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -40,13 +45,15 @@
      "body": "- Added \"Damage FX\" options to the advanced Video options menu that will reduce the amount of impact effects seen during gameplay and replays\n- Added a \"Custom Spectator Options\" menu for live spectating that opens when you press the \"View Spectator Options Menu\" button as a spectator\n- Spectator camera bookmarks in live spectating and replay viewing now also save the current \"Camera Field of View\" (FOV)\n- Added \"Custom Game Invite Filter\" and \"Custom Game Invite Requests\" settings to the Social options menu to allow players to change and save who they can receive custom game invites from\n- Updated how off-screen important elements (e.g. an exploding D.Va Mech) are displayed on the screen to make them easier to find",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "Workshop Updates",
    "role": null,
    "description": null,
+   "dev": "We're pleased to announce Workshop Extensions, a system which allows users to enable certain enhancements, such as access to new effects and increasing the number of dummy bots. These enhancements can be enabled using Extension Points, which are earned by either disabling player slots, disabling all non-Workshop maps, or a combination of both. This system allows us to add resource-intensive features while giving creators control over when they're enabled. Check out the New Workshop Extensions section in these and future patch notes! Spawn Points now returns an array of spawn point entities that have a position and facing direction. If you were already using this Value in places that expected a position, it will work as before. If you want explicitly grab the position and facing direction data, you can use the Position Of and Facing Direction Of Values respectively.",
    "heroes": [],
    "blocks": [
     {
@@ -69,13 +76,15 @@
      "body": "- Damage Over Time Count\n- Heal Over Time Count\n- Text Count\n- Damage Modification Count\n- Healing Modification Count\n- Assist Count\n- Entity Count\n- Local Player\n- Char In String\n- Index Of String Char\n- String Split\n- String Replace",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "Bug Fixes",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -98,9 +107,10 @@
      "body": "- Fixed an issue where Continue could jump to the wrong loop in certain cases\n- Fixed an issue where Brigitte would continue using Primary Fire after it had been disabled\n- Fixed an issue where certain abilities would collide with walls even when environment collision had been disabled\n- Fixed an issue where the Workshop Inspector would display incorrect\nplayer names\n- Fixed an issue where certain buttons were ignored during flight abilities even when they were held down via Workshop\n- Fixed an issue where beam effects were not rendering when going straight up\n- Fixed an issue where extra D.Va's could exist in certain scenarios\n- Fixed an issue where the Array value would interfere with the correct evaluation of Current Array Element and Current Array Index\n- Fixed an issue where Start Facing would not correctly honor Evaluate Once values when mixed with Event Player or other context-dependent values\n- Fixed an issue where Spawn Points would sometimes fail to reevaluate correctly\n- Fixed an issue where Hero Being Duplicated would fail when Echo duplicated D.Va\n- Fixed an issue where Player Died events wouldn't trigger for environmental deaths when Echo was duplicating another hero\n- Removed the error sound that plays when attempting to use an ability that has been disabled by Custom Game settings or the Workshop",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   }
  ],
  "raw_text": null,
- "hash": "sha256:a21bf580fc098173ea31a4c454e6619bb1ba5d4d7983d4fcf216ea348bde58c0"
+ "hash": "sha256:e3b569bd5806ade361f1bd1dd43696ace93cbae43420056d6e811ed9dd579594"
 }

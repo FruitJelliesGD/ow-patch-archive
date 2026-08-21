@@ -11,22 +11,27 @@
    "title": "Hotfix Balance Update",
    "role": null,
    "description": "This is a game balance hotfix. Replay codes from the May 6, 2025 patch are still available.",
+   "dev": null,
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "Stadium Updates",
    "role": null,
    "description": "Stadium Updates",
+   "dev": null,
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "Tank",
    "role": "tank",
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "d-va",
@@ -206,7 +211,8 @@
       }
      ],
      "perks": [],
-     "abilities": []
+     "abilities": [],
+     "stadium_items": []
     },
     {
      "slug": "junker-queen",
@@ -290,7 +296,8 @@
       }
      ],
      "perks": [],
-     "abilities": []
+     "abilities": [],
+     "stadium_items": []
     },
     {
      "slug": "reinhardt",
@@ -350,7 +357,8 @@
       }
      ],
      "perks": [],
-     "abilities": []
+     "abilities": [],
+     "stadium_items": []
     },
     {
      "slug": "zarya",
@@ -410,16 +418,19 @@
       }
      ],
      "perks": [],
-     "abilities": []
+     "abilities": [],
+     "stadium_items": []
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "Damage",
    "role": "damage",
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "ashe",
@@ -429,30 +440,6 @@
      "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e41d918d0e7ffa772b5571df3d0dc1a05e6d9032307f78be935972cfd59f208a.png",
      "dev_note": "Developer Comments: Ashe has strong potential in the hands of experienced players, but parts of her kit have been falling off in the later stages of the game compared to other heroes. We're making targeted adjustments to help her scale more effectively into the late game, while also smoothing out some of the sharp edges that make her less forgiving for newer players. These changes aim to make Ashe a more rewarding pick across all skill levels.",
      "general": [
-      {
-       "text_en": "Increased damage increase per unscoped shot landed to 5% (up from 3%).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Reduced Attack Speed reduction to 20% (down from 50%).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
       {
        "text_en": "Infrared Lenses – Epic Ability Hero Item",
        "text_cn": null,
@@ -490,12 +477,18 @@
        "unit": null
       }
      ],
-     "perks": [
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": "Head Honcho",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Increased damage increase per unscoped shot landed to 5% (up from 3%)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Head Honcho - Power"
@@ -504,24 +497,29 @@
       {
        "name_en": "B.O.B. Jr.",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Reduced Attack Speed reduction to 20% (down from 50%)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "B.O.B. Jr. - Power"
        ]
       }
-     ],
-     "abilities": []
+     ]
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "Support",
    "role": "support",
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "lucio",
@@ -545,30 +543,6 @@
       },
       {
        "text_en": "Healing reduced to 100% of Crossfade healing (down from 150%).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Reduced Wall Slam damage to 25 (down from 40).",
-       "text_cn": null,
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": "Reduced Knockback Increase to 25% (down from 30%).",
        "text_cn": null,
        "subject": null,
        "dimension": "other",
@@ -688,19 +662,25 @@
        "unit": null
       }
      ],
-     "perks": [
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": "Let's Bounce",
        "name_cn": null,
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
-       "lines_en": [],
+       "lines_en": [
+        "Reduced Wall Slam damage to 25 (down from 40).",
+        "Reduced Knockback Increase to 25% (down from 30%)."
+       ],
        "lines_cn": [],
        "raw_text": [
         "Let's Bounce - Power"
        ]
       }
-     ],
-     "abilities": []
+     ]
     },
     {
      "slug": "moira",
@@ -760,16 +740,19 @@
       }
      ],
      "perks": [],
-     "abilities": []
+     "abilities": [],
+     "stadium_items": []
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "General",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "general-items",
@@ -829,10 +812,12 @@
       }
      ],
      "perks": [],
-     "abilities": []
+     "abilities": [],
+     "stadium_items": []
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   }
  ],
  "raw_text": null,

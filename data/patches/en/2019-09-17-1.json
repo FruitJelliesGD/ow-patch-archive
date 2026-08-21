@@ -11,6 +11,7 @@
    "title": "PATCH HIGHLIGHTS",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -18,13 +19,15 @@
      "body": "Get ready to play with Bastion’s Brick Challenge and some special, unlockable in-game content! Wins in Quick Play, Competitive Play, or Arcade will earn you themed sprays, player icons, and a new legendary skin: Brick Bastion!\n\nTune in to participating Twitch broadcasters while they’re playing Overwatch any time through 9/30 to earn a total of seven Bastion’s Brick Challenge sprays and icons!\n\nTo learn more about Bastion’s Brick Challenge, click here .",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "HERO UPDATES",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "bastion",
@@ -66,7 +69,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "symmetra",
@@ -108,7 +112,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "zarya",
@@ -150,7 +155,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     },
     {
      "slug": "sigma",
@@ -249,7 +255,8 @@
         }
        ]
       }
-     ]
+     ],
+     "stadium_items": []
     }
    ],
    "blocks": [
@@ -258,21 +265,25 @@
      "body": "- Ground targeted abilities (Reaper’s Shadowstep, Mei’s Icewall, Symmetra’s Teleporter, etc) will now more heavily prefer edges over placing as far away as possible.",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "WORKSHOP UPDATES",
    "role": null,
    "description": "New Workshop actions:\n\n- Create Dummy Bot\n\n\n  - Creates a dummy bot, which is a full player that has no human or AI controlling it. Using other Workshop actions, dummy bots can move, aim, press buttons, and do most things that human players can do.\n- Destroy Dummy Bot\n\n\n  - Destroys a dummy bot.\n- Start Throttle In Direction\n\n\n  - Either sets or modifies the throttle (directional movement input) for a given player (human, AI bot, or dummy bot).\n- Stop Throttle In Direction\n\n\n  - Stops the change to throttle being caused by Start Throttle In Direction.\n- Create Beam Effect\n\n\n  - Creates a beam effect between two positions (either or both of which may be a player).\n\nNew parameters to existing Workshop actions:\n\n- Create HUD Text\n\n\n  - New SpectatorVisibility option for defining when spectators can see the text.\n  - New colors have been added to Text Color.\n- Create In-World Text\n\n\n  - New SpectatorVisibility option for defining when spectators can see the text.\n  - New colors have been added to Text Color.\n- Create Effect and Play Effect\n\n\n  - New colors have been added.\n\nNew Workshop value:\n\n- Is Dummy Bot\n\n\n  - Whether a given player is a dummy bot.\n\nNew Workshop Inspector features:\n\n- Copy current variables to CSV [PC-Only] :\n\n\n  - Copies the currently visible variables to the system clipboard in CSV format. These can be pasted into text and spreadsheet applications.\n- Copy all variables to CSV [PC-Only] :\n\n\n  - Copies all variables throughout the Inspector history for the currently selected entity to the system clipboard in CSV format. These can be pasted into text and spreadsheet applications.\n- Copy current variables as actions:\n\n\n  - Copies the currently visible variables to the clipboard in Workshop text format. These can be pasted back into a Workshop action list.",
+   "dev": null,
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "BUG FIXES",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -290,7 +301,8 @@
      "body": "Ashe\n\n- Improved the ability for B.O.B. to get through doorways and more consistently make it to where he was launched towards\n\nBastion\n\n- Fixed a bug where Bastion was not entering a recovery state when immediately firing weapons after Self-Repair is used\n\nBrigitte\n\n- Fixed a bug with Brigitte’s Repair Pack cooldown scalar not working in custom games\n\nD.Va\n\n- Fixed a bug that allowed D.Va's mech to block Earthshatter briefly during the destruction animation\n\nHanzo\n\n- Fixed a bug that caused Hanzo's bow to flicker when switching to Sonic Arrow, when certain skins were equipped\n\nLucio\n\n- Fixed an issue where knockbacks applied to enemies moving down ramps would not knock back as far as intended.\n\nMercy\n\n- Fixed a bug where Mercy could sometimes mispredict being able to Guardian Angel to a teammate who had died behind a wall.\n\nOrisa\n\n- Fixed a bug that caused players to be thrown further than intended when escaping the pulling effect of Orisa's Halt\n\nSigma\n\n- Fixed a bug that caused the first-person animations for Kinetic Grasp, Accretion, Experimental Barrier return/retract, and primary fire not to play correctly when used immediately after being frozen\n- Fixed a bug that caused Hyperspheres to appear without any VFX or animation after letting the cast timer on Gravitic Flux expire\n- Fixed a bug that incorrectly allowed Sigma to gain shields after absorbing a healing orb from Moira with his Kinetic Grasp\n- Corrected various Sigma team color visual effects\n- Fixed a bug with Sigma’s Damage Blocked average per 10 min not appearing in career profile\n\nSombra\n\n- Fixed a bug with Sombra detection radius being affected by player aim pitch\n\nWrecking Ball\n\n- Fixed an issue preventing Wrecking Ball specific stats from showing up in the Career Profile\n- Fixed a bug with adaptive shields area being affected by aim pitch\n\nZenyatta\n\n- Fixed a bug that prevented Zenyatta from using a Teleporter while Transcendence is active",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   }
  ],
  "raw_text": null,

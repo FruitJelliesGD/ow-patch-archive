@@ -11,6 +11,7 @@
    "title": "PATCH HIGHLIGHTS",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -23,13 +24,15 @@
      "body": "Choose between 3 additive levels of subtitling: Critical Gameplay, Critical Gameplay + Conversations, and Everything. This new feature was created to improve the gameplay experience for players that are deaf or hard of hearing, and also for players who enjoy reading closed captions.",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "WORKSHOP UPDATES",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -37,13 +40,15 @@
      "body": "- Added the ability for scripters to measure the server performance of the current game instance.\n\n\n  - Three new values make this possible:\n\n\n    - Server Load - Provides a percentage representing the CPU load of the current game instance.\n    - Server Load Average - Provides a percentage representing the average CPU load of the current game instance over the last two seconds.\n    - Server Load Peak - Provides a percentage representing the highest CPU load of the current game instance over the last two seconds.\n  - As these numbers approach or exceed 100, it becomes increasingly likely that the game instance will be shut down because it is consuming too many resources.\n  - A new preset example displays these values as HUD text in the upper-left corner of the screen. The rule in the preset can be copied into other scripts to help identify performance problem areas.\n- When a game instance shuts down due to excessive Workshop script load, a new error message is displayed in the chat window (instead of the “unexpected error” message).\n- Additional strings added.",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "BUG FIXES",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -71,7 +76,8 @@
      "body": "Baptiste\n\n- Fixed a bug where Baptiste's Amplification Matrix was not boosting healing effects.\n\nDoomfist\n\n- Fixed a bug where Seismic Slam could fail to register.\n\nD.Va\n\n- Fixed a bug where D.Va's Defense Matrix would fail to absorb projectiles around a corner in certain circumstances.\n\nBaptiste\n\n- Fixed a visual inconsistency with Baptiste's head with his Spec Ops skin equipped.\n\nHanzo\n\n- Fixed a bug that could cause a dead Hanzo's bow to appear floating above the ground, when that Hanzo had his Kabuki skin equipped.\n\nRoadhog\n\n- Fixed a bug where Roadhog's chain would sometimes not render in first person.\n\nMoira\n\n- Fixed a bug where Moira's Coalescence would sometimes not render in first person.\n- Fixed a bug where Moira was still briefly visible after using Fade.\n\nSombra\n\n- Fixed a bug where Sombra's Translocator would be on cooldown after respawning.\n- Fixed a bug where an enemy could sometimes use an ability if Sombra hacked them while they were already hacked via EMP.\n\nTorbjörn\n\n- Fixed a bug that made it possible to use Torbjörn's Molten Core and hammer at the same time.\n\nWinston\n\n- Fixed a bug that caused Winston's nameplate and health bar to be covered by his body when he used Primal Rage.\n\nWrecking Ball\n\n- Fixed a bug that allowed Wrecking Ball's mines to be destroyed by an enemy Wrecking Ball rolling through them without taking damage.\n\nZenyatta\n\n- Fixed a bug that caused Zenyatta's in-game and highlights portrait to not display his Zen-Nakji skin.",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   }
  ],
  "raw_text": null,

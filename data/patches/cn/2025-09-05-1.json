@@ -11,14 +11,17 @@
    "title": "平衡性在线修正更新",
    "role": null,
    "description": "本次更新为游戏玩法和错误修复更新。2025年8月27日更新后的回放代码仍然可用。",
+   "dev": null,
    "heroes": [],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "角斗领域更新",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -26,13 +29,15 @@
      "body": "- 在竞技比赛中落败时，玩家每赢下一回合，损失的角斗分数总量都会减少，并奖励竞技点数。\n- 不应用于全明星和传奇赛阶的玩家。",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "重装",
    "role": "tank",
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "d-va",
@@ -41,57 +46,39 @@
      "role": "tank",
      "icon": "https://ld5.res.netease.com/images/20250321/1742550489107_af2814926f.png",
      "dev_note": "开发者评论：D.Va可以用较低的成本在前期购买提高20%武器强度的史诗物品，导致其成长曲线陡增。与类似选项相比，此物品收益率过高，这使她能更加轻易地在早期拿到消灭，从而占据先机，将差距越拉越大。此外，与其他重装英雄相比，她的“脸接伤害”搭配能提供超过平均值的持久能力。本次更新拉低了她前期武器强度的成长效率以及“脸接伤害”策略的整体生存能力，以更符合预期的平衡性。",
-     "general": [
-      {
-       "text_en": null,
-       "text_cn": "治疗量从40%降低至30%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 40.0,
-       "after": 30.0,
-       "by": -10.0,
-       "by_pct": null,
-       "metric": "healing",
-       "unit": "pct"
-      },
-      {
-       "text_en": null,
-       "text_cn": "多任务模组——史诗武器英雄物品",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "武器强度从20%降低至10%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 20.0,
-       "after": 10.0,
-       "by": -10.0,
-       "by_pct": null,
-       "metric": "武器强度",
-       "unit": "pct"
-      }
-     ],
-     "perks": [
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": null,
        "name_cn": "脸接伤害",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "治疗量从40%降低至30%。"
+       ],
        "raw_text": [
         "脸接伤害——异能"
        ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "多任务模组",
+       "rarity": "史诗",
+       "kind": "weapon",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "武器强度从20%降低至10%。"
+       ],
+       "raw_text": [
+        "多任务模组——史诗武器英雄物品"
+       ]
       }
-     ],
-     "abilities": []
+     ]
     },
     {
      "slug": "junker-queen",
@@ -100,33 +87,25 @@
      "role": "tank",
      "icon": "https://ld5.res.netease.com/images/20250321/1742550507495_8ee2070c9e.png",
      "dev_note": "开发者评论：“皇家子弹”能够在准备极少的情况下瞬间击倒目标，单挑胜率有点太“皇族”了。此次微调在保留其利落感与爽快感的同时，避免让其成为所有搭配中的必选王牌。",
-     "general": [
-      {
-       "text_en": null,
-       "text_cn": "伤害从50降低至40。",
-       "subject": null,
-       "dimension": "other",
-       "before": 50.0,
-       "after": 40.0,
-       "by": -10.0,
-       "by_pct": null,
-       "metric": "damage",
-       "unit": null
-      }
-     ],
-     "perks": [
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": null,
        "name_cn": "皇家子弹",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "伤害从50降低至40。"
+       ],
        "raw_text": [
         "皇家子弹——异能"
        ]
       }
-     ],
-     "abilities": []
+     ]
     },
     {
      "slug": "orisa",
@@ -135,43 +114,36 @@
      "role": "tank",
      "icon": "https://ld5.res.netease.com/images/20250321/1742550495601_a49182ac21.png",
      "dev_note": "开发者评论：奥丽莎在面对像查莉娅这类以光束类攻击为主的敌人时有些吃力。在本次更新中，她对抗光束的能力得到了增强，能更持久地“逆光”而行、稳住阵线。",
-     "general": [
-      {
-       "text_en": null,
-       "text_cn": "折射护片——稀有生存英雄物品",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "受伤减免从50%提高至75%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 50.0,
-       "after": 75.0,
-       "by": 25.0,
-       "by_pct": null,
-       "metric": "受伤减免",
-       "unit": "pct"
-      }
-     ],
+     "general": [],
      "perks": [],
-     "abilities": []
+     "abilities": [],
+     "stadium_items": [
+      {
+       "name_en": null,
+       "name_cn": "折射护片",
+       "rarity": "稀有",
+       "kind": "survival",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "受伤减免从50%提高至75%。"
+       ],
+       "raw_text": [
+        "折射护片——稀有生存英雄物品"
+       ]
+      }
+     ]
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "输出",
    "role": "damage",
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "pharah",
@@ -180,63 +152,20 @@
      "role": "damage",
      "icon": "https://ld5.res.netease.com/images/20250321/1742550473855_fa809bf389.png",
      "dev_note": "开发者评论：“法老之鹰”的“迷你弹幕”搭配的火力有些过于密集。敌方队伍经常还没反应过来是在被谁攻击就被炸开花了。这次改动是回调该爆发伤害的第一步——我们会在保留此搭配玩法乐趣的同时，在后续更新中做进一步调整。",
-     "general": [
-      {
-       "text_en": null,
-       "text_cn": "生命汲取从50%降低至25%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 50.0,
-       "after": 25.0,
-       "by": -25.0,
-       "by_pct": null,
-       "metric": "health",
-       "unit": "pct"
-      },
-      {
-       "text_en": null,
-       "text_cn": "火箭数量降低比例从60%提高至75%。",
-       "subject": null,
-       "dimension": "other",
-       "before": 60.0,
-       "after": 75.0,
-       "by": 15.0,
-       "by_pct": null,
-       "metric": "火箭数量降低比例",
-       "unit": "pct"
-      },
-      {
-       "text_en": null,
-       "text_cn": "过载火炮——稀有技能英雄物品",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "费用从4000提高至5500。",
-       "subject": null,
-       "dimension": "other",
-       "before": 4000.0,
-       "after": 5500.0,
-       "by": 1500.0,
-       "by_pct": null,
-       "metric": "费用",
-       "unit": null
-      }
-     ],
-     "perks": [
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": null,
        "name_cn": "递归电池",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "生命汲取从50%降低至25%。"
+       ],
        "raw_text": [
         "递归电池——异能"
        ]
@@ -244,24 +173,43 @@
       {
        "name_en": null,
        "name_cn": "闪击弹幕",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "火箭数量降低比例从60%提高至75%。"
+       ],
        "raw_text": [
         "闪击弹幕——异能"
        ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "过载火炮",
+       "rarity": "稀有",
+       "kind": "ability",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "费用从4000提高至5500。"
+       ],
+       "raw_text": [
+        "过载火炮——稀有技能英雄物品"
+       ]
       }
-     ],
-     "abilities": []
+     ]
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "hero_update",
    "title": "支援",
    "role": "support",
    "description": null,
+   "dev": null,
    "heroes": [
     {
      "slug": "brigitte",
@@ -270,66 +218,50 @@
      "role": "support",
      "icon": "https://ld5.res.netease.com/images/20250321/1742550496926_3e125ae643.png",
      "dev_note": "开发者评论：在此前，玩家如果选择“回收钢材”，就可以连续发动“集结号令”。这样一来，几乎每次交战，布丽吉塔都能使用该技能。现在，这项改动应该可以降低“集结号令”的持续时间，从而给对手创造更大的反制窗口期。同时，我们也略微提升了布丽吉塔武器强度搭配的治疗稳定性。",
-     "general": [
-      {
-       "text_en": null,
-       "text_cn": "治疗范围从5米扩大至10米。",
-       "subject": null,
-       "dimension": "other",
-       "before": 5.0,
-       "after": 10.0,
-       "by": 5.0,
-       "by_pct": null,
-       "metric": "治疗范围",
-       "unit": "m"
-      },
-      {
-       "text_en": null,
-       "text_cn": "回收钢材——史诗技能英雄物品",
-       "subject": null,
-       "dimension": "other",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      },
-      {
-       "text_en": null,
-       "text_cn": "“集结号令”激活时，不再提供终极技能充能。",
-       "subject": "ultimate_cost",
-       "dimension": "hero_attr",
-       "before": null,
-       "after": null,
-       "by": null,
-       "by_pct": null,
-       "metric": null,
-       "unit": null
-      }
-     ],
-     "perks": [
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
       {
        "name_en": null,
        "name_cn": "正义顺劈",
+       "rarity": null,
+       "kind": "power",
        "status": "changed",
        "lines_en": [],
-       "lines_cn": [],
+       "lines_cn": [
+        "治疗范围从5米扩大至10米。"
+       ],
        "raw_text": [
         "正义顺劈——异能"
        ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "回收钢材",
+       "rarity": "史诗",
+       "kind": "ability",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "“集结号令”激活时，不再提供终极技能充能。"
+       ],
+       "raw_text": [
+        "回收钢材——史诗技能英雄物品"
+       ]
       }
-     ],
-     "abilities": []
+     ]
     }
    ],
-   "blocks": []
+   "blocks": [],
+   "maps": []
   },
   {
    "type": "generic_update",
    "title": "错误修复",
    "role": null,
    "description": null,
+   "dev": null,
    "heroes": [],
    "blocks": [
     {
@@ -337,7 +269,8 @@
      "body": "布丽吉塔\n\n- 修复了在使用“能量盾击”后重复按下按键会触发多次“使用技能时”效果的问题。\n\n狂鼠\n\n- 修复了“狂鼠”的“震荡地雷”无法正确随技能强度变强的问题。\n\n物品\n\n- 修复了“艾玛莉的解毒剂”对所有治疗都会生效而非仅对武器治疗生效的问题。\n- 修复了“神圣干涉”对因过量生命值被移除而造成的自我伤害同样生效的问题。\n- 修复了“奥古迪姆减伤力场”无法正确作用于“星云导体”造成的自我伤害的问题。",
      "dev": null
     }
-   ]
+   ],
+   "maps": []
   }
  ],
  "raw_text": null,
