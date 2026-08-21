@@ -319,12 +319,12 @@ function digitTokens(text) {
 }
 
 // veto guard: when both sides carry numbers, a merged pair must share at least
-// one numeric token, else they are (almost certainly) different changes
+// one exact numeric token, else they are (almost certainly) different changes
 function numbersOverlap(a, b) {
   const ta = digitTokens(a);
-  const tb = digitTokens(b);
-  if (!ta.length || !tb.length) return true;
-  return ta.some((t) => tb.includes(t));
+  const tb = new Set(digitTokens(b));
+  if (!ta.length || !tb.size) return true;
+  return ta.some((t) => tb.has(t));
 }
 
 // Merge the EN+CN records of the same change (paired patches) into one row,
@@ -588,6 +588,8 @@ async function initEntry() {
     const dates = timeline.map((e) => e.date).sort();
     const range = dates[0] !== dates[dates.length - 1]
       ? `${dates[0]} ~ ${dates[dates.length - 1]}` : dates[0];
+    // count merged EN+CN pairs as one change, consistent with the entry pages
+    const heroRows = mergeEntryRecords(timeline, buildPairMap(patches.patches));
     document.getElementById("entry-name").textContent = heroName || slug;
     document.getElementById("entry-hero").innerHTML =
       `<span class="entry-hero-link"><a href="hero.html?slug=${encodeURIComponent(slug)}">${esc(heroName || slug)}</a>（全部词条总览）</span>`;
@@ -595,7 +597,7 @@ async function initEntry() {
       <span class="badge dim dim-hero">英雄</span>
       <span class="badge hero-role">${esc(ROLE_LABEL[hero.role] || hero.role || "")}</span>
       ${edited ? `<span class="badge edited">官方事后编辑</span>` : ""}
-      <span>${timeline.length} 条更改记录</span>
+      <span>${heroRows.length} 条更改记录</span>
       <span>${esc(range)}</span>`;
     const body = document.getElementById("entry-body");
     body.textContent = "";

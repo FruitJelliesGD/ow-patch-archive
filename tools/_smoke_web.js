@@ -181,6 +181,27 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
     results.heroHasValues = hasValuesChip;
     results.heroNoHashGroup = groupTitles.every((t) => !/hero-/.test(t));
 
+    // unit: the numeric-fingerprint veto keeps a disjoint-digit pair unmerged
+    // (real-data shape: juno 2025-07-09 "30%/65%" vs "100/75"), while a
+    // shared-digit pair merges
+    const vetoPairMap = {
+      "en-2025-07-09-1": { id: "p-2025-07-09-1", other: "cn-2025-07-09-1" },
+      "cn-2025-07-09-1": { id: "p-2025-07-09-1", other: "en-2025-07-09-1" },
+    };
+    const vetoRows = mergeEntryRecords([
+      { patch: "en-2025-07-09-1", site: "en", date: "2025-07-09", kind: "general", dimension: "other", text_en: "Max overhealth reduced to 30% (Down from 65%)." },
+      { patch: "cn-2025-07-09-1", site: "cn", date: "2025-07-09", kind: "general", dimension: "other", text_cn: "过量生命值从100降低至75。" },
+    ], vetoPairMap);
+    results.vetoKeepsSeparate = vetoRows.length === 2 && !vetoRows[0].en && !vetoRows[1].en;
+    const mergeRows = mergeEntryRecords([
+      { patch: "en-2025-03-25-1", site: "en", date: "2025-03-25", kind: "ability", dimension: "ability", ability_slug: "x", text_en: "Damage increased from 50 to 60." },
+      { patch: "cn-2025-03-26-1", site: "cn", date: "2025-03-26", kind: "ability", dimension: "ability", ability_slug: "x", text_cn: "伤害从50提高至60。" },
+    ], {
+      "en-2025-03-25-1": { id: "p-2025-03-25-1", other: "cn-2025-03-26-1" },
+      "cn-2025-03-26-1": { id: "p-2025-03-25-1", other: "en-2025-03-25-1" },
+    });
+    results.mergeSharedDigit = mergeRows.length === 1 && !!mergeRows[0].en;
+
     console.log(JSON.stringify(results, null, 1));
     if (results.indexPatches !== 342) fail.push("indexPatches=" + results.indexPatches);
     if (results.filterChips !== 6) fail.push("filterChips=" + results.filterChips);
@@ -224,6 +245,8 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
     if (!results.heroNoHashGroup) fail.push("hash-slug group found");
     if (!heroHasMergedRow) fail.push("hero page merged EN+CN row missing");
     if (!heroHasEnOnlyRow) fail.push("hero page EN-only row should stay single");
+    if (!results.vetoKeepsSeparate) fail.push("merge fingerprint veto not keeping disjoint-digit pair separate");
+    if (!results.mergeSharedDigit) fail.push("merge shared-digit pair not merged");
     if (fail.length) { console.error("ASSERT FAIL:", fail.join("; ")); process.exit(1); }
     console.log("ALL WEB ASSERTIONS OK");
   } catch (e) {

@@ -39,7 +39,7 @@ commits: <base-sha>..<head-sha> # filled at delivery
 合并检测用记录标记 `e.en_patch`（hero.html 的 initHero 不传 opts）：
 
 - head：`e.en_patch` 存在时渲染**中文站 + 英文站双徽标**；日期 = `e.date`（仅中文日期）；patch 链接 = `patch.html?id=<p-*>&lang=cn`；官方事后编辑徽标 = 两个 site patch edits **并集去重**（调用处计算传入 opts.edits）。
-- body：既有双语文案路径（text_cn 主 + text_en `.en-text` 副；perk 同理 lines_cn 主 + lines_en 副 + status）；追加 EN 侧 `查看官方补丁原文 ↗`（`e.url_en`）。
+- body：既有双语文案路径（text_cn 主 + text_en `.en-text` 副；perk 同理 lines_cn 主 + lines_en 副 + status）；追加 EN 侧「英文原文 ↗」链接（`e.url_en`，与主「查看官方补丁原文 ↗」区分）。
 - 未合并行渲染完全不变。
 
 ### D1.4 initEntry
@@ -66,9 +66,9 @@ commits: <base-sha>..<head-sha> # filled at delivery
 
 ## Tasks
 
-- [ ] T1: 特性文档 — acceptance: 本文档含设计与任务（covers: 全部）
-- [ ] T2: buildPairMap + mergeEntryRecords — acceptance: 门控规则生效（ability/weapon/perk 等计数合并、other 仅 1 对 1、指纹冲突拒绝），单测可验证（covers: D1.1 D1.2）
-- [ ] T3: entryNode 合并行 + .en-text 样式 — acceptance: 合并行双徽标/仅中文日期/EN 原文链接/edits 并集，单行无回归（covers: D1.3 D1.7；depends: T2）
-- [ ] T4: initEntry/initHero 接入 + 计数语义 — acceptance: 两页合并显示、hero.html 懒加载降级安全（covers: D1.4 D1.5 D1.6；depends: T3）
-- [ ] T5: smoke 断言 + 全量验证 — acceptance: smoke ALL OK、serve 预览词条/英雄页合并正确（covers: 全部；depends: T4）
+- [x] T1: 特性文档 — acceptance: 本文档含设计与任务（covers: 全部）
+- [x] T2: buildPairMap + mergeEntryRecords — acceptance: 门控规则生效（ability/weapon/perk 等计数合并、other 仅 1 对 1、指纹冲突拒绝），单测可验证（covers: D1.1 D1.2）
+- [x] T3: entryNode 合并行 + .en-text 样式 — acceptance: 合并行双徽标/仅中文日期/EN 原文链接/edits 并集，单行无回归（covers: D1.3 D1.7；depends: T2）
+- [x] T4: initEntry/initHero 接入 + 计数语义 — acceptance: 两页合并显示、hero.html 懒加载降级安全（covers: D1.4 D1.5 D1.6；depends: T3）
+- [x] T5: smoke 断言 + 全量验证 — acceptance: smoke ALL OK、serve 预览词条/英雄页合并正确（covers: 全部；depends: T4）
 - [ ] T6: 独立 review 与规格定稿 — acceptance: review 无 critical、status: delivered（covers: 全部；depends: T5）
