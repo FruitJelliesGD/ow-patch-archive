@@ -38,15 +38,6 @@ MODE_LABELS = {
 }
 
 # mirrored in web/app.js MODE_LABEL
-MODE_LABEL_EN = {
-    STANDARD: "Standard",
-    "quick_play_hacked": "Quick Play: Hacked",
-    "april_fools": "April Fools",
-    "experiment_6v6": "6v6 Experiment",
-    "hero_trial": "Hero Trial",
-    "ptr": "PTR",
-    "announcement": "Announcement",
-}
 
 
 def patch_mode(title: str) -> str:
@@ -57,7 +48,3 @@ def patch_mode(title: str) -> str:
         if rx.search(title):
             return mode
     return STANDARD
-
-
-def is_standard(mode: str | None) -> bool:
-    return not mode or mode == STANDARD
