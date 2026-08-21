@@ -3,6 +3,7 @@
 
 const ROLE_LABEL = { tank: "重装", damage: "输出", support: "支援" };
 const KIND_LABEL = { ability: "技能改动", perk: "威能改动", general: "其他改动" };
+const ITEM_KIND_LABEL = { weapon: "武器", ability: "技能", survival: "生存", power: "异能" };
 const DIM_LABEL = { weapon: "武器", ability: "技能", perk: "威能", hero_attr: "英雄属性", hero: "英雄", other: "其他" };
 const ATTR_LABEL = {
   health: "生命值", ultimate_cost: "终极技能消耗", move_speed: "移动速度",
@@ -51,6 +52,26 @@ function inlineBold(html) {
   return html.replace(/\*\*([^*]+?)\*\*/g, "<strong>$1</strong>");
 }
 
+// parser-encoded inline media: ![alt](src) images and [text](url) links
+// (https only). Runs on already-escaped HTML in a single pass so image alt /
+// link text are not reprocessed by the other passes (an alt with [x](y) would
+// otherwise be linkified inside an attribute).
+function media(html) {
+  return html.replace(/(!\[([^\]]*)\]|\[([^\]]+)\])\(([^)]+)\)/g, (m, pre, alt, text, url) => {
+    if (!/^https?:\/\//i.test(url)) return m;
+    if (pre.startsWith("!")) {
+      return `<img src="${url}" alt="${alt || ""}" loading="lazy" onerror="this.style.display='none'">`;
+    }
+    return `<a href="${url}" target="_blank" rel="noopener">${text}</a>`;
+  });
+}
+
+// shared post-escape chain: **bold** -> <strong>, [text](url)/![alt](src) ->
+// <a>/<img>, "N → N" -> .num
+function postProcess(html) {
+  return numberify(media(inlineBold(html)));
+}
+
 function deaccent(s) {
   return String(s).normalize("NFKD").replace(/[\u0300-\u036f]/g, "");
 }
@@ -90,7 +111,7 @@ function renderRich(el, text) {
       el.appendChild(renderList(trimmed));
     } else {
       const p = document.createElement("p");
-      p.innerHTML = numberify(inlineBold(esc(trimmed).replace(/\n/g, "<br>")));
+      p.innerHTML = postProcess(esc(trimmed).replace(/\n/g, "<br>"));
       el.appendChild(p);
     }
   }
@@ -111,7 +132,7 @@ function renderList(text) {
       stack.push(nested);
     }
     const li = document.createElement("li");
-    li.innerHTML = numberify(inlineBold(esc(m[2]).replace(/\n/g, "<br>")));
+    li.innerHTML = postProcess(esc(m[2]).replace(/\n/g, "<br>"));
     stack[stack.length - 1].appendChild(li);
   }
   return ul;
@@ -630,7 +651,7 @@ async function renderRawText(el, text) {
     pos = m.index + m.len;
     if (m.kind === "hero" || m.heroSlug) lastHero = hero;
   }
-  el.innerHTML = inlineBold(out + esc(text.slice(pos)));
+  el.innerHTML = postProcess(out + esc(text.slice(pos)));
 }
 
 async function initPatch() {
@@ -711,6 +732,34 @@ async function initPatch() {
       renderRich(d, section.description);
       body.appendChild(d);
     }
+    if (section.dev) {
+      const d = document.createElement("div");
+      d.className = "text dev-note";
+      renderRich(d, section.dev);
+      body.appendChild(d);
+    }
+    for (const [mi, map] of (section.maps || []).entries()) {
+      const mc = document.createElement("div");
+      mc.className = "map-update";
+      const mapTitle = [map.map_name, map.area].filter(Boolean).join(" ");
+      if (mapTitle) {
+        const t = document.createElement("div");
+        t.className = "text map-update-name";
+        t.innerHTML = `<strong>${esc(mapTitle)}</strong>`;
+        mc.appendChild(t);
+      }
+      const cmp = document.createElement("div");
+      cmp.className = "map-compare";
+      const pairs = [["修改前", map.before, "before"], ["修改后", map.after, "after"]];
+      for (const [label, src, side] of pairs) {
+        if (!src) continue;
+        const fig = document.createElement("figure");
+        fig.innerHTML = `<img src="assets/maps/${esc(patch.id)}/${esc(mi)}-${side}.png" alt="${esc(mapTitle || label)}" loading="lazy" onerror="this.style.display='none'"><figcaption>${esc(label)}</figcaption>`;
+        cmp.appendChild(fig);
+      }
+      mc.appendChild(cmp);
+      body.appendChild(mc);
+    }
     let heroN = 0;
     for (const hero of section.heroes || []) {
       const hb = heroBlock(hero);
@@ -739,7 +788,7 @@ async function initPatch() {
       }
       if (block.dev) {
         const p = document.createElement("div");
-        p.className = "text en-text";
+        p.className = "text dev-note";
         p.textContent = block.dev;
         b.appendChild(p);
       }
@@ -808,6 +857,43 @@ function heroBlock(hero) {
       d.className = "text en-text";
       d.textContent = perk.lines_en.join(" / ");
       p.appendChild(d);
+    }
+    block.appendChild(p);
+  }
+  for (const item of hero.stadium_items || []) {
+    const p = document.createElement("div");
+    p.className = "entry stadium-item";
+    const status = document.createElement("span");
+    status.className = `perk-status ${esc(item.status)}`;
+    status.textContent = STATUS_LABEL[item.status] || item.status;
+    const h = document.createElement("div");
+    h.className = "text";
+    const itemName = item.name_cn || item.name_en || "";
+    h.innerHTML = `<strong>${esc(itemName)}</strong> `;
+    if (item.rarity) {
+      const r = document.createElement("span");
+      r.className = `item-badge rarity-${esc(String(item.rarity).toLowerCase())}`;
+      r.textContent = item.rarity;
+      h.appendChild(r);
+    }
+    if (item.kind && ITEM_KIND_LABEL[item.kind]) {
+      const k = document.createElement("span");
+      k.className = "item-badge kind";
+      k.textContent = ITEM_KIND_LABEL[item.kind];
+      h.appendChild(k);
+    }
+    h.appendChild(status);
+    p.appendChild(h);
+    const lines = (item.lines_cn && item.lines_cn.length ? item.lines_cn : item.lines_en) || [];
+    if (lines.length) {
+      const ul = document.createElement("ul");
+      ul.className = "change-list";
+      for (const line of lines) {
+        const li = document.createElement("li");
+        li.innerHTML = numberify(esc(line));
+        ul.appendChild(li);
+      }
+      p.appendChild(ul);
     }
     block.appendChild(p);
   }

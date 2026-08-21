@@ -406,6 +406,22 @@ def build_hero_files(data_dir: pathlib.Path, resolver: NameResolver | None = Non
                             **{k: line.get(k) for k in ("before", "after", "by", "by_pct", "metric", "unit")
                                if isinstance(line, dict)},
                         })
+                    for item in hero.get("stadium_items", []):
+                        # Stadium item lines stay in the hero timeline as general
+                        # entries (their pre-structured shape), so the timeline
+                        # content is unchanged by the structuring
+                        for iline in item.get("lines_en", []) + item.get("lines_cn", []):
+                            if not iline:
+                                continue
+                            timeline.setdefault(slug, []).append({
+                                "patch": data["id"], "date": data["date"], "site": data["site"],
+                                "url": data.get("url"), "patch_title": data.get("title"),
+                                "kind": "general",
+                                "dimension": None,
+                                "subject": None,
+                                "text_en": iline if data["site"] == "en" else None,
+                                "text_cn": iline if data["site"] == "cn" else None,
+                            })
 
     heroes_dir = data_dir / "heroes"
     heroes_dir.mkdir(parents=True, exist_ok=True)

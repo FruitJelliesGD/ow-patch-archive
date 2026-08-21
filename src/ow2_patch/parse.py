@@ -15,7 +15,17 @@ import re
 
 from bs4 import BeautifulSoup, NavigableString, Tag
 
-from .model import AbilityUpdate, Change, GenericBlock, HeroUpdate, Patch, Perk, Section
+from .model import (
+    AbilityUpdate,
+    Change,
+    GenericBlock,
+    HeroUpdate,
+    MapUpdate,
+    Patch,
+    Perk,
+    Section,
+    StadiumItem,
+)
 from .names import NameResolver
 
 ROLE_MAP = {
@@ -30,6 +40,25 @@ ROLE_MAP = {
 _EN_PERK_RE = re.compile(r"^(.*?)\s*[-–]\s*(Minor|Major) Perk\s*$", re.I)
 _CN_PERK_RE = re.compile(r"^(.*?)——(主要|次级)威能\s*$")
 _CN_TITLE_DATE_RE = re.compile(r"(\d{4})年(\d{1,2})月(\d{1,2})日")
+
+# Stadium hero-item markers: "<strong>Name - Power</strong>" or
+# "<strong>Name - <Rarity> <Type> Hero Item</strong>" (EN), with the optional
+# trailing body variant ("Aftershock - Power Increased secondary shockwave…").
+_EN_ITEM_RE = re.compile(
+    r"^(.*?)\s*-\s*((?:Power)|(?:(?:Common|Rare|Epic|Legendary|Mythic)\s+"
+    r"(?:Weapon|Ability|Survival)\s+Hero\s+Item))\.?(?:\s+(.*))?$",
+    re.I)
+_CN_ITEM_RE = re.compile(
+    r"^(.*?)——((?:异能)|(?:(?:普通|稀有|史诗|传说|神话)(?:武器|技能|生存)英雄物品))"
+    r"\.?(?:\s*(.*))?$")
+_EN_ITEM_RARITY_KIND = re.compile(
+    r"^(Common|Rare|Epic|Legendary|Mythic)\s+(Weapon|Ability|Survival)\s+Hero\s+Item$", re.I)
+_CN_ITEM_RARITY_KIND = re.compile(r"^(普通|稀有|史诗|传说|神话)(武器|技能|生存)英雄物品$")
+_CN_ITEM_KIND = {"武器": "weapon", "技能": "ability", "生存": "survival"}
+
+# before/after label that pairs the two following images in a CN map block
+_MAP_LABELS = {"修改前与修改后", "Before and After"}
+_MAP_BLOCK_TITLES = {"地图更新", "Map Updates"}
 
 # split at opening tags whose class list contains the exact token "PatchNotes-patch"/"PatchNotes-section"
 _PATCH_SPLIT_RE = re.compile(r'(?=<div\s+class="(?:[^"]*\s)?PatchNotes-patch(?:\s|"))')
@@ -109,22 +138,117 @@ def _parse_section(fragment: str, site: str) -> Section:
     soup = BeautifulSoup(fragment, "lxml")
     title = _text(soup.select_one(".PatchNotes-sectionTitle"))
     classes = _first_class(soup)
+    is_map = "PatchNotes-section-map_update" in (classes or [])
     is_hero = "PatchNotes-section-hero_update" in (classes or [])
 
     section = Section(
-        type="hero_update" if is_hero else "generic_update",
+        type="map_update" if is_map else ("hero_update" if is_hero else "generic_update"),
         title=title,
         role=ROLE_MAP.get(title or ""),
         description=_rich_text(soup.select_one(".PatchNotes-sectionDescription")),
+        dev=_section_dev(soup),
     )
-    for hero_div in soup.select(".PatchNotesHeroUpdate"):
-        section.heroes.append(_parse_hero(hero_div, section.role, site))
-    for block_div in soup.select(".PatchNotesGeneralUpdate"):
-        section.blocks.append(_parse_generic_block(block_div))
+    if is_map:
+        # EN pages carry the map before/after sliders in dedicated sections
+        section.maps = _parse_map_updates(soup)
+    else:
+        for hero_div in soup.select(".PatchNotesHeroUpdate"):
+            section.heroes.append(_parse_hero(hero_div, section.role, site))
+        for block_div in soup.select(".PatchNotesGeneralUpdate"):
+            block = _parse_generic_block(block_div)
+            # CN pages render map updates inside the "地图更新" generic block as
+            # a title/img sequence; extract the pairs and drop the block body so
+            # the flattened text does not duplicate the images
+            if block.title in _MAP_BLOCK_TITLES and not section.maps:
+                maps = _parse_cn_map_block(block_div)
+                if maps:
+                    section.maps = maps
+                    block.body = None
+            section.blocks.append(block)
 
-    if not section.heroes and not section.blocks and section.description is None:
+    if not section.heroes and not section.blocks and not section.maps and section.description is None:
         section.description = _rich_text(soup) or None
     return section
+
+
+def _section_dev(soup: BeautifulSoup) -> str | None:
+    """Section-level developer comment: a .PatchNotes-dev that is a DIRECT child
+    of the section (e.g. the Hero Updates intro) rather than of a hero/block."""
+    sec = soup.find("div", class_="PatchNotes-section")
+    if sec is None:
+        return None
+    for el in sec.find_all("div", class_="PatchNotes-dev", recursive=False):
+        text = _text(el)
+        if text:
+            return text
+    return None
+
+
+def _parse_map_updates(soup: BeautifulSoup) -> list[MapUpdate]:
+    """EN map sections: .PatchNotesMapUpdate blocks with a name (repeated
+    sliders may leave it empty — carry the last non-empty name forward) and a
+    blz-comparison-slider holding before/after blz-image slots."""
+    maps: list[MapUpdate] = []
+    last_name: str | None = None
+    for mu in soup.select(".PatchNotesMapUpdate"):
+        name = _text(mu.select_one(".PatchNotesMapUpdate-name"))
+        if name:
+            last_name = name
+        for slider in mu.select("blz-comparison-slider"):
+            before = _slot_image(slider, "before")
+            after = _slot_image(slider, "after")
+            if before and after:
+                maps.append(MapUpdate(area=last_name, before=before, after=after))
+    return maps
+
+
+def _slot_image(slider: Tag, slot: str) -> str | None:
+    img = slider.find("blz-image", attrs={"slot": slot})
+    if img is None:
+        return None
+    src = img.get("src")
+    return src if src and src.startswith("https://") else None
+
+
+def _parse_cn_map_block(div: Tag) -> list[MapUpdate]:
+    """CN map blocks: a sequence of .PatchNotesGeneralUpdate-title elements
+    (map name "釜山——占领要点", area "城区", label "修改前与修改后") interleaved
+    with <p><img> pairs. Each label pairs the next two images (before, after).
+    Returns [] when the block holds no image pairs."""
+    maps: list[MapUpdate] = []
+    map_name: str | None = None
+    area: str | None = None
+    pending: list[str] = []
+
+    def flush() -> None:
+        while len(pending) >= 2:
+            maps.append(MapUpdate(map_name=map_name, area=area,
+                                  before=pending[0], after=pending[1]))
+            del pending[:2]
+
+    for child in div.children:
+        if not isinstance(child, Tag):
+            continue
+        if child.name == "div" and "PatchNotesGeneralUpdate-title" in child.get("class", []):
+            text = _text(child)
+            if not text:
+                continue
+            if text in _MAP_LABELS:
+                flush()
+                continue
+            if "——" in text:
+                map_name = text
+                area = None
+            else:
+                area = text
+        elif child.name == "p":
+            img = child.find("img")
+            if img is not None:
+                src = img.get("src")
+                if src and src.startswith("https://"):
+                    pending.append(src)
+    flush()
+    return maps
 
 
 def _first_class(soup: BeautifulSoup) -> list[str]:
@@ -145,7 +269,7 @@ def _parse_hero(hero_div: Tag, role: str | None, site: str) -> HeroUpdate:
 
     general_div = body.select_one(".PatchNotesHeroUpdate-generalUpdates")
     if general_div:
-        hero.general, hero.perks = _parse_general_updates(general_div, site)
+        hero.general, hero.perks, hero.stadium_items = _parse_general_updates(general_div, site)
 
     abilities_list = body.select_one(".PatchNotesHeroUpdate-abilitiesList")
     if abilities_list:
@@ -154,15 +278,26 @@ def _parse_hero(hero_div: Tag, role: str | None, site: str) -> HeroUpdate:
     return hero
 
 
-def _parse_general_updates(div: Tag, site: str) -> tuple[list[str], list[Perk]]:
+def _parse_general_updates(div: Tag, site: str) -> tuple[list[str], list[Perk], list[StadiumItem]]:
     general: list[str] = []
     perks: list[Perk] = []
+    items: list[StadiumItem] = []
     current: Perk | None = None
+    current_item: StadiumItem | None = None
     for child in div.children:
         if not isinstance(child, Tag):
             continue
         if child.name == "p":
             text = _text(child)
+            item = _item_marker(text, site)
+            if item is not None:
+                # Stadium item markers ("Name - Power" / "名——稀有武器英雄物品")
+                # are detected before perk markers (perks use Minor|Major Perk /
+                # 主要|次级威能, so the patterns never overlap)
+                current = None
+                current_item = item
+                items.append(item)
+                continue
             perk_name = _perk_name(text, site)
             if perk_name is not None:
                 current = Perk(**{f"name_{site}": perk_name})
@@ -181,9 +316,50 @@ def _parse_general_updates(div: Tag, site: str) -> tuple[list[str], list[Perk]]:
                     current.lines_cn = lines
                 current.status = _perk_status(current, site)
                 current = None
+            elif current_item is not None:
+                if site == "en":
+                    current_item.lines_en = lines
+                else:
+                    current_item.lines_cn = lines
+                current_item.status = _status_from_lines(lines, site)
+                current_item = None
             else:
                 general.extend(lines)
-    return general, [p for p in perks if p is not None]
+    return general, [p for p in perks if p is not None], items
+
+
+def _item_marker(text: str, site: str) -> StadiumItem | None:
+    """Stadium item marker line -> StadiumItem, else None. The full marker line
+    is kept in raw_text for hash fidelity; an inline body ("Aftershock - Power
+    Increased…") becomes the first change line."""
+    if not text:
+        return None
+    m = (_EN_ITEM_RE if site == "en" else _CN_ITEM_RE).match(text)
+    if not m:
+        return None
+    name, marker, body = m.group(1).strip(), m.group(2), (m.group(3) or "").strip()
+    kind, rarity = _item_kind_rarity(marker, site)
+    lines = [body] if body else []
+    return StadiumItem(
+        **{f"name_{site}": name or None},
+        kind=kind,
+        rarity=rarity,
+        lines_en=lines if site == "en" else [],
+        lines_cn=lines if site == "cn" else [],
+        raw_text=[text],
+    )
+
+
+def _item_kind_rarity(marker: str, site: str) -> tuple[str | None, str | None]:
+    if site == "en":
+        m = _EN_ITEM_RARITY_KIND.match(marker)
+        if m:
+            return m.group(2).lower(), m.group(1)
+        return "power", None
+    m = _CN_ITEM_RARITY_KIND.match(marker)
+    if m:
+        return _CN_ITEM_KIND[m.group(2)], m.group(1)
+    return "power", None
 
 
 def _perk_name(text: str, site: str) -> str | None:
@@ -198,6 +374,10 @@ def _perk_name(text: str, site: str) -> str | None:
 
 def _perk_status(perk: Perk, site: str) -> str:
     lines = perk.lines_en if site == "en" else perk.lines_cn
+    return _status_from_lines(lines, site)
+
+
+def _status_from_lines(lines: list[str], site: str) -> str:
     for line in lines:
         s = line.strip().rstrip(".")
         if site == "en":
@@ -216,7 +396,7 @@ def _perk_status(perk: Perk, site: str) -> str:
                 return "added"
             if "重做" in line:
                 return "reworked"
-            if "改为了" in line:
+            if "改为" in line:
                 return "moved"
     return "changed"
 
@@ -344,9 +524,10 @@ def _inline_raw(el, in_strong: bool = False) -> str:
     """Concatenate inline content verbatim (spaces between adjacent fragments
     are preserved here; normalization happens once at the top level).
 
-    <strong>/<b> emphasis is encoded as markdown-style **bold** so the web
-    renderer and the markdown archive can both restore it. Nested emphasis
-    keeps only the outer pair of markers.
+    <strong>/<b> emphasis is encoded as markdown-style **bold**, <a href> as
+    [text](url) and <img> as ![alt](src) (https only) so the web renderer and
+    the markdown archive can both restore them. Nested emphasis keeps only the
+    outer pair of markers.
     """
     if isinstance(el, Tag) and el.name in ("strong", "b") and not in_strong:
         return "**" + _inline_raw(el, True) + "**"
@@ -358,8 +539,19 @@ def _inline_raw(el, in_strong: bool = False) -> str:
             name = node.name
             if name == "br":
                 parts.append("\n")
-            elif name in ("script", "style", "img", "ul", "ol"):
+            elif name in ("script", "style", "ul", "ol"):
                 continue
+            elif name == "img":
+                src = node.get("src")
+                if src and re.match(r"https?://", src):
+                    parts.append(f"![{node.get('alt') or ''}]({src})")
+                continue
+            elif name == "a":
+                href = node.get("href")
+                if href and re.match(r"https?://", href):
+                    parts.append(f"[{_inline_raw(node, in_strong)}]({href})")
+                else:
+                    parts.append(_inline_raw(node, in_strong))
             elif name in ("strong", "b"):
                 marker = "" if in_strong else "**"
                 parts.append(marker + _inline_raw(node, True) + marker)
@@ -525,6 +717,8 @@ def _parse_legacy_chunk(soup: BeautifulSoup, site: str,
                     hero.dev_note = dev
                 elif block is not None:
                     block.dev = dev
+                elif sec is not None:
+                    sec.dev = dev
                 continue
             lead = _lead_strong(el)
             if lead is not None:

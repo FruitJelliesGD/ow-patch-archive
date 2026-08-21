@@ -78,6 +78,11 @@ def clean_legacy_text(text: str) -> str:
     is cleaned.
     """
     cleaned = re.sub(r"\s+", " ", text).strip()
+    # the parser encodes inline media into legacy raw_text as [text](url) /
+    # ![alt](src); strip the syntax so the literal-space chrome phrases match
+    # again (link text is kept, image alt kept as text)
+    cleaned = re.sub(r"!\[[^\]]*\]\(https?://[^)]*\)", "", cleaned)
+    cleaned = re.sub(r"\[([^\]]*)\]\(https?://[^)]*\)", r"\1", cleaned)
     # the boilerplate/pagination regexes match literal single spaces, so fold
     # whitespace BEFORE cleaning: raw_text now preserves line structure and the
     # chrome phrases still match regardless of paragraph/line boundaries
@@ -101,7 +106,7 @@ def patch_canonical_texts(patch: Patch) -> list[str]:
     if patch.raw_text:
         texts.append(clean_legacy_text(patch.raw_text))
     for section in patch.sections:
-        texts += [section.title or "", section.description or ""]
+        texts += [section.title or "", section.description or "", section.dev or ""]
         for hero in section.heroes:
             if hero.dev_note:
                 texts.append(hero.dev_note)
@@ -112,11 +117,18 @@ def patch_canonical_texts(patch: Patch) -> list[str]:
                 # attribution splits a line into raw_text (full original) + lines
                 # (parsed body); hash on the full original only, never both
                 texts += perk.raw_text if perk.raw_text else perk.lines_en + perk.lines_cn
+            for item in hero.stadium_items:
+                # parser-level items never pass through attribution, so raw_text
+                # (the marker line) + lines are both original text — no overlap
+                texts += item.raw_text + item.lines_en + item.lines_cn
             for ability in hero.abilities:
                 for change in ability.changes:
                     texts += [change.text_en or "", change.text_cn or ""]
         for block in section.blocks:
             texts += [block.title or "", block.body or "", block.dev or ""]
+        for map_update in section.maps:
+            # image URLs are enrichment data (like icons); names are content
+            texts += [map_update.map_name or "", map_update.area or ""]
     return sorted(t for t in texts if t)
 
 
@@ -133,7 +145,8 @@ def _dict_canonical_texts(data: dict) -> list[str]:
     if data.get("raw_text"):
         texts.append(clean_legacy_text(data["raw_text"]))
     for section in data.get("sections", []):
-        texts += [section.get("title") or "", section.get("description") or ""]
+        texts += [section.get("title") or "", section.get("description") or "",
+                  section.get("dev") or ""]
         for hero in section.get("heroes", []):
             if hero.get("dev_note"):
                 texts.append(hero["dev_note"])
@@ -144,11 +157,16 @@ def _dict_canonical_texts(data: dict) -> list[str]:
                 raw = list(perk.get("raw_text") or [])
                 texts += raw if raw else (list(perk.get("lines_en") or [])
                                           + list(perk.get("lines_cn") or []))
+            for item in hero.get("stadium_items", []):
+                texts += list(item.get("raw_text") or [])
+                texts += list(item.get("lines_en") or []) + list(item.get("lines_cn") or [])
             for ability in hero.get("abilities", []):
                 for change in ability.get("changes", []):
                     texts += [change.get("text_en") or "", change.get("text_cn") or ""]
         for block in section.get("blocks", []):
             texts += [block.get("title") or "", block.get("body") or "", block.get("dev") or ""]
+        for map_update in section.get("maps", []):
+            texts += [map_update.get("map_name") or "", map_update.get("area") or ""]
     return sorted(t for t in texts if t)
 
 
@@ -223,8 +241,11 @@ def deep_diff(old: dict, new: dict) -> list[DiffEntry]:
         if isinstance(a, dict) and isinstance(b, dict):
             for key in sorted(set(a) | set(b)):
                 # hash is recomputed per parse; icon is enriched data (like slug)
-                # whose churn must never surface as a content edit
+                # whose churn must never surface as a content edit; map image
+                # URLs are enriched too, but map NAMES still diff (renames notify)
                 if key in ("hash", "icon"):
+                    continue
+                if key in ("before", "after") and ".maps[" in path:
                     continue
                 walk(a.get(key), b.get(key), f"{path}.{key}" if path else key)
         elif isinstance(a, list) and isinstance(b, list):

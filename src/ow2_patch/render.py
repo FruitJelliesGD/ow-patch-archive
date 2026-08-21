@@ -6,6 +6,7 @@ from .model import HeroUpdate, Patch, Section
 
 ROLE_CN = {"tank": "重装", "damage": "输出", "support": "支援"}
 STATUS_CN = {"added": "新增", "removed": "移除", "reworked": "重做", "moved": "变更", "changed": "调整"}
+_ITEM_KIND_CN = {"weapon": "武器", "ability": "技能", "survival": "生存", "power": "异能"}
 
 
 def render_md(patch: Patch) -> str:
@@ -31,6 +32,13 @@ def _render_section(section: Section) -> list[str]:
     lines.append("")
     if section.description:
         lines += [section.description, ""]
+    if section.dev:
+        lines += [f"*开发者注：{section.dev}*", ""]
+    for map_update in section.maps:
+        heading = " ".join(p for p in (map_update.map_name, map_update.area) if p)
+        lines.append(f"#### {heading}" if heading else "####")
+        lines.append("")
+        lines += [f"- 修改前: {map_update.before}", f"- 修改后: {map_update.after}", ""]
     for hero in section.heroes:
         lines += _render_hero(hero)
     for block in section.blocks:
@@ -57,6 +65,12 @@ def _render_hero(hero: HeroUpdate) -> list[str]:
         pname = perk.name_en or perk.name_cn or ""
         lines.append(f"- 威能 **{pname}** —— {STATUS_CN.get(perk.status, perk.status)}")
         for line in perk.lines_en or perk.lines_cn or []:
+            lines.append(f"  - {line}")
+    for item in hero.stadium_items:
+        iname = item.name_en or item.name_cn or ""
+        label = " ".join(p for p in (item.rarity, _ITEM_KIND_CN.get(item.kind, item.kind or "")) if p)
+        lines.append(f"- 物品 **{iname}**（{label}）—— {STATUS_CN.get(item.status, item.status)}")
+        for line in item.lines_en or item.lines_cn or []:
             lines.append(f"  - {line}")
     for ability in hero.abilities:
         aname = ability.name_en or ability.name_cn or ability.slug

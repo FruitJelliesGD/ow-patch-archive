@@ -56,6 +56,34 @@ class HeroUpdate:
     general: list[str] = field(default_factory=list)
     perks: list[Perk] = field(default_factory=list)
     abilities: list[AbilityUpdate] = field(default_factory=list)
+    stadium_items: list[StadiumItem] = field(default_factory=list)
+
+
+@dataclass
+class StadiumItem:
+    """A Stadium-mode hero item (武器/技能/生存英雄物品, 异能/Power): name,
+    rarity/kind and its stat lines, structured out of flat general lines."""
+
+    name_en: str | None = None
+    name_cn: str | None = None
+    rarity: str | None = None   # Rare/Epic/… or 稀有/史诗/… (raw marker text)
+    kind: str | None = None     # weapon|ability|survival|power
+    status: str = "changed"
+    lines_en: list[str] = field(default_factory=list)
+    lines_cn: list[str] = field(default_factory=list)
+    raw_text: list[str] = field(default_factory=list)  # full marker line(s)
+
+
+@dataclass
+class MapUpdate:
+    """A map before/after image pair. EN pages: area = PatchNotesMapUpdate-name,
+    map_name stays null (the section title carries it); CN pages: map_name =
+    "釜山——占领要点", area = "城区"/"A点" etc."""
+
+    map_name: str | None = None
+    area: str | None = None
+    before: str | None = None  # image URL (enrichment data, excluded from hash)
+    after: str | None = None
 
 
 @dataclass
@@ -69,12 +97,14 @@ class GenericBlock:
 
 @dataclass
 class Section:
-    type: str = "generic_update"  # hero_update | generic_update
+    type: str = "generic_update"  # hero_update | generic_update | map_update
     title: str | None = None
     role: str | None = None
     description: str | None = None
+    dev: str | None = None
     heroes: list[HeroUpdate] = field(default_factory=list)
     blocks: list[GenericBlock] = field(default_factory=list)
+    maps: list[MapUpdate] = field(default_factory=list)
 
 
 @dataclass
@@ -111,8 +141,10 @@ def _section_to_dict(s: Section) -> dict:
         "title": s.title,
         "role": s.role,
         "description": s.description,
+        "dev": s.dev,
         "heroes": [_hero_to_dict(h) for h in s.heroes],
         "blocks": [_block_to_dict(b) for b in s.blocks],
+        "maps": [_map_to_dict(m) for m in s.maps],
     }
 
 
@@ -127,6 +159,7 @@ def _hero_to_dict(h: HeroUpdate) -> dict:
         "general": h.general,
         "perks": [_perk_to_dict(p) for p in h.perks],
         "abilities": [_ability_to_dict(a) for a in h.abilities],
+        "stadium_items": [_stadium_item_to_dict(i) for i in h.stadium_items],
     }
 
 
@@ -162,6 +195,28 @@ def _change_to_dict(c: Change) -> dict:
         "metric": c.metric,
         "raw_metric": c.raw_metric,
         "unit": c.unit,
+    }
+
+
+def _stadium_item_to_dict(i: StadiumItem) -> dict:
+    return {
+        "name_en": i.name_en,
+        "name_cn": i.name_cn,
+        "rarity": i.rarity,
+        "kind": i.kind,
+        "status": i.status,
+        "lines_en": i.lines_en,
+        "lines_cn": i.lines_cn,
+        "raw_text": i.raw_text,
+    }
+
+
+def _map_to_dict(m: MapUpdate) -> dict:
+    return {
+        "map_name": m.map_name,
+        "area": m.area,
+        "before": m.before,
+        "after": m.after,
     }
 
 

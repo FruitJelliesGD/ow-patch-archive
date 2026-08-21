@@ -274,3 +274,36 @@ def test_soldier76_timeline_acceptance():
 
     helix = [e for e in hero["timeline"] if e.get("ability_slug") == "helix-rockets"]
     assert {e["date"] for e in helix} >= {"2023-07-11", "2023-08-10"}
+
+
+def test_stadium_items_enter_hero_timeline_as_general(tmp_path):
+    """Stadium item lines stay in the hero timeline as kind=general entries
+    (their pre-structured shape), so structuring does not drop timeline content."""
+    from ow2_patch.pipeline import build_hero_files
+
+    data_dir = tmp_path / "data"
+    (data_dir / "patches" / "en").mkdir(parents=True)
+    (data_dir / "patches" / "en" / "2026-08-11-1.json").write_text(json.dumps({
+        "id": "en-2026-08-11-1", "site": "en", "date": "2026-08-11",
+        "url": "https://x", "title": "T", "seq": 1,
+        "sections": [{
+            "type": "hero_update", "title": "Tank", "role": "tank",
+            "heroes": [{
+                "slug": "d-va", "name_en": "D.Va", "role": "tank",
+                "general": [], "perks": [], "abilities": [],
+                "stadium_items": [{
+                    "name_en": "Core Cooling", "rarity": "Epic", "kind": "weapon",
+                    "status": "reworked",
+                    "lines_en": ["Reworked to Item.", "Added 15% Weapon Lifesteal."],
+                    "lines_cn": [], "raw_text": ["Core Cooling - Epic Weapon Hero Item"],
+                }],
+            }],
+            "blocks": [],
+        }],
+    }), encoding="utf-8")
+    build_hero_files(data_dir)
+    hero = json.loads((data_dir / "heroes" / "d-va.json").read_text(encoding="utf-8"))
+    texts = [e["text_en"] for e in hero["timeline"] if e["kind"] == "general"]
+    assert "Reworked to Item." in texts
+    assert "Added 15% Weapon Lifesteal." in texts
+    assert len(hero["timeline"]) == 2

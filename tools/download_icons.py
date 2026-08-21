@@ -1,14 +1,16 @@
-"""Download patch-note icons (hero portraits + ability icons) into web assets.
+"""Download patch-note images into web assets: hero/ability icons plus map
+before/after screenshots.
 
-Scans every archived patch JSON for captured official icon URLs and saves one
-file per hero/ability slug under web/assets/icons/. Idempotent and incremental:
-existing files are skipped, so re-running after a data update only fetches icons
-that are new. Network failures are warnings, never a non-zero exit — a transient
-CDN hiccup must not fail the monitor commit step.
+Scans every archived patch JSON for captured official image URLs and saves one
+file per key under web/assets/icons/ (heroes/<slug>.png,
+abilities/<hero-slug>/<ability-slug>.png) and web/assets/maps/<patch-id>/<i>-
+{before,after}.png. Idempotent and incremental: existing files are skipped, so
+re-running after a data update only fetches images that are new. Network
+failures are warnings, never a non-zero exit — a transient CDN hiccup must not
+fail the monitor commit step.
 
-Naming: heroes/<slug>.png and abilities/<hero-slug>/<ability-slug>.png. Ability
-slugs are NOT hero-unique (e.g. quick-melee belongs to several heroes), hence
-the hero-prefixed directory.
+Ability slugs are NOT hero-unique (e.g. quick-melee belongs to several heroes),
+hence the hero-prefixed directory.
 """
 
 from __future__ import annotations
@@ -28,10 +30,11 @@ _UA = {"User-Agent": "ow2-patch-archive/0.1"}
 
 
 def collect_icon_refs(data_dir: pathlib.Path) -> dict[tuple[str, str], tuple[str, str]]:
-    """(kind, key) -> (url, date); prefers netease (cn) over cloudfront (en).
+    """(kind, key) -> (url, date); prefers netease (cn) over cloudfront/contentstack.
 
-    key is the hero slug for kind "hero" and "hero-slug/ability-slug" for
-    "ability". Among equal-preference URLs the latest patch date wins.
+    key is the hero slug for kind "hero", "hero-slug/ability-slug" for
+    "ability", and "<patch-id>/<i>-before|after" for "map". Among equal-
+    preference URLs the latest patch date wins.
     """
     refs: dict[tuple[str, str], tuple[str, str]] = {}
 
@@ -47,7 +50,13 @@ def collect_icon_refs(data_dir: pathlib.Path) -> dict[tuple[str, str], tuple[str
         for patch_file in sorted((data_dir / "patches" / site).glob("*.json")):
             data = json.loads(patch_file.read_text(encoding="utf-8"))
             date = data.get("date", "")
+            patch_id = data.get("id", "")
             for section in data.get("sections", []):
+                for i, map_update in enumerate(section.get("maps", [])):
+                    if map_update.get("before"):
+                        prefer(("map", f"{patch_id}/{i}-before"), map_update["before"], date)
+                    if map_update.get("after"):
+                        prefer(("map", f"{patch_id}/{i}-after"), map_update["after"], date)
                 for hero in section.get("heroes", []):
                     hero_slug = hero.get("slug")
                     if hero.get("icon") and hero_slug:
@@ -90,7 +99,7 @@ def download_icons(
 ) -> int:
     """Fetch missing icons; returns the number of newly downloaded files."""
     refs = collect_icon_refs(data_dir)
-    subdir = {"hero": "heroes", "ability": "abilities"}
+    subdir = {"hero": "heroes", "ability": "abilities", "map": "maps"}
     new: list[str] = []
     for (kind, key), (url, date) in sorted(refs.items()):
         rel = pathlib.PurePosixPath(subdir[kind]) / f"{key}{_ext_for(url)}"

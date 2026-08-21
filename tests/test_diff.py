@@ -13,7 +13,15 @@ from ow2_patch.diff import (
     is_cosmetic_diff,
     patch_hash,
 )
-from ow2_patch.model import AbilityUpdate, Change, HeroUpdate, Patch, Section
+from ow2_patch.model import (
+    AbilityUpdate,
+    Change,
+    HeroUpdate,
+    MapUpdate,
+    Patch,
+    Section,
+    StadiumItem,
+)
 from ow2_patch.parse import parse_patch_notes
 
 FIXTURES = pathlib.Path(__file__).parent / "fixtures"
@@ -223,6 +231,71 @@ def test_deep_diff_text_change():
     patched.sections[1].heroes[0].abilities[0].changes[0].after = 0.04
     entries = deep_diff(patch_to_dict_plain(p), patch_to_dict_plain(patched))
     assert any("after" in e.path for e in entries)
+
+
+def _rich_patch() -> Patch:
+    return Patch(
+        id="en-2026-08-12-1", site="en", date="2026-08-12", url="https://x", title="T",
+        sections=[
+            Section(
+                type="map_update", title="Busan - Control",
+                dev="Several underutilized perks were replaced.",
+                heroes=[HeroUpdate(
+                    slug="d-va", name_en="D.Va",
+                    stadium_items=[StadiumItem(
+                        name_en="Core Cooling", rarity="Epic", kind="weapon",
+                        status="reworked", lines_en=["Reworked to Item."],
+                        raw_text=["Core Cooling - Epic Weapon Hero Item"],
+                    )],
+                )],
+                maps=[MapUpdate(area="Downtown", before="https://a/1.Before.jpg",
+                                after="https://a/1.After.jpg")],
+            )
+        ],
+    )
+
+
+def test_hash_covers_section_dev_items_and_map_names():
+    base = patch_hash(_rich_patch())
+
+    dev_changed = _rich_patch()
+    dev_changed.sections[0].dev = "Different dev note."
+    assert patch_hash(dev_changed) != base
+
+    item_line_changed = _rich_patch()
+    item_line_changed.sections[0].heroes[0].stadium_items[0].lines_en = ["Different line."]
+    assert patch_hash(item_line_changed) != base
+
+    map_name_changed = _rich_patch()
+    map_name_changed.sections[0].maps[0].area = "MEKA Base"
+    assert patch_hash(map_name_changed) != base
+
+    # map image URLs are enriched data (like icons): churn must not change the hash
+    url_changed = _rich_patch()
+    url_changed.sections[0].maps[0].before = "https://b/2.Before.jpg"
+    url_changed.sections[0].maps[0].after = "https://b/2.After.jpg"
+    assert patch_hash(url_changed) == base
+
+
+def test_deep_diff_skips_map_urls_only():
+    base = patch_to_dict_plain(_rich_patch())
+    url_changed = _rich_patch()
+    url_changed.sections[0].maps[0].before = "https://b/x.Before.jpg"
+    assert deep_diff(base, patch_to_dict_plain(url_changed)) == []
+
+    renamed = _rich_patch()
+    renamed.sections[0].maps[0].area = "MEKA Base"
+    entries = deep_diff(base, patch_to_dict_plain(renamed))
+    assert any(e.path.endswith(".maps[0].area") for e in entries)
+
+
+def test_clean_legacy_text_strips_link_syntax():
+    """Parser-encoded [text](url) / ![alt](src) in legacy raw_text must clean to
+    the same chrome-free text as the pre-encoding variant."""
+    plain = "To share your feedback, please post in the General Discussion forum."
+    linked = "To share your feedback, please post in the [General Discussion forum](https://us.forums.blizzard.com/en/overwatch/)."
+    assert clean_legacy_text(linked) == clean_legacy_text(plain)
+    assert clean_legacy_text("see ![banner](https://x/a.jpg) below") == "see below"
 
 
 def patch_to_dict_plain(patch: Patch) -> dict:

@@ -77,6 +77,39 @@ def test_is_image_magic():
     assert not di._is_image(b"<html>not an image</html>")
 
 
+def test_collect_map_refs(tmp_path):
+    d = tmp_path / "patches" / "en"
+    d.mkdir(parents=True)
+    (d / "2026-08-11-1.json").write_text(json.dumps({
+        "id": "en-2026-08-11-1", "date": "2026-08-11",
+        "sections": [{"maps": [
+            {"map_name": None, "area": "Downtown",
+             "before": "https://images.blz-contentstack.com/v3/1.Before.jpg",
+             "after": "https://images.blz-contentstack.com/v3/1.After.jpg"},
+        ]}],
+    }), encoding="utf-8")
+    refs = di.collect_icon_refs(tmp_path)
+    assert refs[("map", "en-2026-08-11-1/0-before")][0].endswith("1.Before.jpg")
+    assert refs[("map", "en-2026-08-11-1/0-after")][0].endswith("1.After.jpg")
+
+
+def test_map_downloads_into_maps_dir(tmp_path, monkeypatch):
+    d = tmp_path / "patches" / "en"
+    d.mkdir(parents=True)
+    (d / "2026-08-11-1.json").write_text(json.dumps({
+        "id": "en-2026-08-11-1", "date": "2026-08-11",
+        "sections": [{"maps": [
+            {"area": "Downtown", "before": "https://x/1.Before.jpg",
+             "after": "https://x/1.After.jpg"},
+        ]}],
+    }), encoding="utf-8")
+    out = tmp_path / "out"
+    monkeypatch.setattr(di, "_fetch", lambda url: b"\xff\xd8\xffjpeg")
+    assert di.download_icons(tmp_path, out) == 2
+    assert (out / "maps" / "en-2026-08-11-1" / "0-before.png").exists()
+    assert (out / "maps" / "en-2026-08-11-1" / "0-after.png").exists()
+
+
 def test_marker_only_written_when_new_icons(tmp_path, monkeypatch):
     _write_patch(tmp_path, "en", "2026-08-14-1.json", "2026-08-14",
                  [_hero("d-mon", "https://d15f34w2p8l1cc.cloudfront.net/overwatch/aa.png")])

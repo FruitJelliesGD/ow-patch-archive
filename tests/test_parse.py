@@ -286,3 +286,99 @@ def test_inline_strong_emphasis_boundaries():
     assert inline("<strong><b>nested</b></strong>") == "**nested**"  # outer pair only
     assert inline("<b>x</b><b>y</b>") == "**x****y**"  # consecutive pairs
     assert inline("a ** literal") == "a ** literal"  # bare asterisks untouched
+
+
+def test_inline_links_and_images_encoded():
+    """<a href> becomes [text](url) and <img> ![alt](src) — https only; the
+    _text chain stays flat (links/banners are rich-text-only)."""
+    from bs4 import BeautifulSoup
+
+    from ow2_patch.parse import _inline_text, _text
+
+    def inline(html):
+        return _inline_text(BeautifulSoup(f"<p>{html}</p>", "lxml").find("p"))
+
+    assert inline('see <a href="https://ow.blizzard.cn/news/">here</a>!') == "see [here](https://ow.blizzard.cn/news/)!"
+    assert inline('see <a href="http://x.example/">plain</a>') == "see [plain](http://x.example/)"
+    assert inline('<a href="javascript:alert(1)">x</a>') == "x"  # non-http href stays text
+    assert inline('<a>no href</a>') == "no href"
+    assert inline('<img src="https://cdn.example/a.jpg" alt="banner">') == "![banner](https://cdn.example/a.jpg)"
+    assert inline('<img src="data:image/png;base64,AAAA">') == ""  # non-https skipped
+    assert inline('<a href="https://x"><strong>b</strong></a>') == "[**b**](https://x)"
+    p = BeautifulSoup('<p>see <a href="https://x">here</a></p>', "lxml").find("p")
+    assert _text(p) == "see here"  # flat text chain keeps the label, no syntax
+
+
+def test_en_map_update_sections():
+    """EN map sections: type map_update, before/after image pairs with the
+    area name carried forward across empty-name entries; no flattened
+    description text."""
+    patches = load("en_2026_08_11.html", "en")
+    maps_secs = [s for s in patches[0].sections if s.type == "map_update"]
+    assert [s.title for s in maps_secs] == ["Busan - Control", "Eichenwalde - Hybrid", "Paraíso - Hybrid"]
+    busan = maps_secs[0]
+    assert busan.description is None  # the flattening fallback is gated off
+    assert len(busan.maps) == 6
+    first = busan.maps[0]
+    assert first.map_name is None and first.area == "Downtown"
+    assert first.before.startswith("https://images.blz-contentstack.com") and ".Before." in first.before
+    assert first.after.startswith("https://") and ".After." in first.after
+    # empty-name sliders carry the previous name forward (Downtown.02 etc.)
+    assert busan.maps[1].area == "Downtown"
+
+
+def test_en_section_dev_captured():
+    patches = load("en_2026_08_11.html", "en")
+    hero_updates = next(s for s in patches[0].sections if s.title == "Hero Updates")
+    assert hero_updates.dev and hero_updates.dev.startswith("Several underutilized perks")
+
+
+def test_en_stadium_items_structured():
+    patches = load("en_2026_08_11.html", "en")
+    dva = next(h for s in patches[0].sections for h in s.heroes if h.name_en == "D.Va")
+    items = {i.name_en: i for i in dva.stadium_items}
+    assert len(dva.stadium_items) >= 10
+    facet = items["Facetanking"]
+    assert facet.kind == "power" and facet.rarity is None and facet.status == "reworked"
+    assert facet.raw_text == ["Facetanking - Power"]
+    assert "Reworked from" in facet.lines_en[0]
+    # rarity-bearing items live on other Stadium heroes (Core Cooling -> Orisa)
+    orisa = next(h for s in patches[0].sections for h in s.heroes
+                 if h.name_en == "Orisa" and any(i.name_en == "Core Cooling" for i in h.stadium_items))
+    core = next(i for i in orisa.stadium_items if i.name_en == "Core Cooling")
+    assert core.kind == "weapon" and core.rarity == "Epic" and core.status == "reworked"
+    assert core.raw_text == ["Core Cooling - Epic Weapon Hero Item"]
+    bingo = next(i for s in patches[0].sections for h in s.heroes
+                 for i in h.stadium_items if i.name_en == "Bingo")
+    assert bingo.rarity == "Epic" and bingo.status == "added" and bingo.lines_en[0] == "New"
+    # the marker lines no longer leak into flat general lines
+    assert not any("Hero Item" in g for g in dva.general)
+
+
+def test_cn_map_block_extraction():
+    """CN map updates live inside the 地图更新 generic block as a title/img
+    sequence; the parser extracts them to section.maps and empties the body."""
+    patches = load("cn_2026_08_12.html", "cn")
+    sec = next(s for s in patches[0].sections if s.title == "核心游戏模式更新")
+    assert len(sec.maps) == 18
+    first = sec.maps[0]
+    assert first.map_name == "釜山——占领要点" and first.area == "城区"
+    assert first.before.startswith("https://ld5.res.netease.com") and first.after.startswith("https://ld5.res.netease.com")
+    # map block body cleared so the flattened text does not duplicate the images
+    map_block = next(b for b in sec.blocks if b.title == "地图更新")
+    assert not map_block.body
+    areas = {m.area for m in sec.maps}
+    assert "A点" in areas and "B点" in areas
+
+
+def test_cn_stadium_items_structured():
+    patches = load("cn_2026_08_12.html", "cn")
+    dva = next(h for s in patches[0].sections for h in s.heroes if h.name_cn == "D.Va")
+    items = {i.name_cn: i for i in dva.stadium_items}
+    assert items["脸接伤害"].kind == "power" and items["脸接伤害"].status == "moved"
+    orisa = next(h for s in patches[0].sections for h in s.heroes
+                 if h.name_cn == "奥丽莎" and any(i.name_cn == "核心冷却" for i in h.stadium_items))
+    core = next(i for i in orisa.stadium_items if i.name_cn == "核心冷却")
+    assert core.rarity == "史诗" and core.kind == "weapon" and core.status == "moved"
+    assert core.raw_text == ["核心冷却——史诗武器英雄物品"]
+    assert not any("英雄物品" in g for g in dva.general)
