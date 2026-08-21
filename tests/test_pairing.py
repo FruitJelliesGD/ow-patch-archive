@@ -126,6 +126,7 @@ def test_real_patches_index_mode_invariants():
     assert by_id["en-2024-12-17-1"]["mode"] == "experiment_6v6"
     assert by_id["en-2018-03-29-1"]["mode"] == "ptr"
     assert by_id["en-2022-10-04-1"]["mode"] == "announcement"
+    assert by_id["p-2026-06-30-1"]["mode"] == "community_created"  # Community Crafted section
     assert by_id["p-2026-08-11-1"]["mode"] == "standard"
     assert by_id["en-2017-02-27-1"]["mode"] == "standard"  # uppercase variant
     assert all(p.get("mode") for p in index["patches"])

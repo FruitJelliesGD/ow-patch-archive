@@ -218,7 +218,7 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
     if (results.indexPatches !== 342) fail.push("indexPatches=" + results.indexPatches);
     if (results.filterChips !== 6) fail.push("filterChips=" + results.filterChips);
     if (!results.firstCardHref.includes("entry.html?hero=")) fail.push("firstCardHref=" + results.firstCardHref);
-    if (results.entryCards !== 956) fail.push("entryCards=" + results.entryCards);
+    if (results.entryCards !== 921) fail.push("entryCards=" + results.entryCards);
     if (!results.indexHasModeBadge) fail.push("index mode badge missing");
     if (!/脉冲步枪/.test(results.entryName)) fail.push("entryName=" + results.entryName);
     if (!/更改记录/.test(results.entryMeta)) fail.push("entryMeta=" + results.entryMeta);

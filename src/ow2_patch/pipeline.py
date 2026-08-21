@@ -342,7 +342,7 @@ def build_hero_files(data_dir: pathlib.Path, resolver: NameResolver | None = Non
 
     # authoritative patch-level mode (pair-level: either side non-standard wins);
     # every patch id appears in patches_index, so the map is complete when present
-    from .modes import patch_mode
+    from .modes import patch_mode_with_sections
 
     mode_by_patch: dict[str, str] = {}
     index_path = data_dir / "patches_index.json"
@@ -357,7 +357,9 @@ def build_hero_files(data_dir: pathlib.Path, resolver: NameResolver | None = Non
     for site_dir in ("en", "cn"):
         for patch_file in sorted((data_dir / "patches" / site_dir).glob("*.json")):
             data = json.loads(patch_file.read_text(encoding="utf-8"))
-            mode = mode_by_patch.get(data["id"]) or patch_mode(data.get("title") or "")
+            mode = mode_by_patch.get(data["id"]) or patch_mode_with_sections(
+                data.get("title") or "",
+                [s.get("title") or "" for s in data.get("sections", [])])
             for section in data.get("sections", []):
                 for hero in section.get("heroes", []):
                     if not _is_balance_hero(hero):

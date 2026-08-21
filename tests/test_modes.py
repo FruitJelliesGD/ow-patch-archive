@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import pytest
 
-from ow2_patch.modes import MODE_LABELS, patch_mode
+from ow2_patch.modes import MODE_LABELS, patch_mode, patch_mode_with_sections
 
 
 @pytest.mark.parametrize("title,mode", [
@@ -31,5 +31,20 @@ def test_all_modes_have_labels():
     for mode, title in [("standard", "常规"), ("quick_play_hacked", "社区模式"),
                         ("april_fools", "愚人节"), ("experiment_6v6", "实验模式"),
                         ("hero_trial", "英雄试玩"), ("ptr", "PTR 测试服"),
-                        ("announcement", "公告")]:
+                        ("announcement", "公告"),
+                        ("community_created", "社区创造模式")]:
         assert MODE_LABELS[mode] == title
+
+
+def test_patch_mode_with_sections_community_created():
+    """A standard-looking title with an official Community Crafted section
+    marker classifies as community_created (p-2026-06-30-1 shape)."""
+    title = "Overwatch Retail Patch Notes - June 30, 2026"
+    assert patch_mode(title) == "standard"
+    assert patch_mode_with_sections(title, ["Game Client Update"]) == "standard"
+    assert patch_mode_with_sections(title, ["Community Crafted"]) == "community_created"
+    assert patch_mode_with_sections(title, ["社区创造模式"]) == "community_created"
+    assert patch_mode_with_sections(title, ["社区创造模式", "Tank"]) == "community_created"
+    # title rules win over the section signal
+    assert patch_mode_with_sections("Overwatch 2 Really, Really, Really Balanced Patch Notes - April 1, 2024",
+                                   ["Community Crafted"]) == "april_fools"

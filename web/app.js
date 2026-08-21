@@ -14,7 +14,7 @@ const SITE_LABEL = { en: "英文站", cn: "中文站" };
 const MODE_LABEL = {
   standard: "常规", quick_play_hacked: "社区模式", april_fools: "愚人节",
   experiment_6v6: "实验模式", hero_trial: "英雄试玩", ptr: "PTR 测试服",
-  announcement: "公告",
+  announcement: "公告", community_created: "社区创造模式",
 };
 const STATUS_LABEL = {
   added: "新增", removed: "移除", reworked: "重做", moved: "变更", changed: "调整",

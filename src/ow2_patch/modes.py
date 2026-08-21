@@ -2,8 +2,10 @@
 
 Special modes (community modes, April Fools, experiments, hero trials, PTR,
 announcements) contain hero changes that must not pollute the standard balance
-history. Classification is title-regex only (no manual list): a future
-unknown-mode title defaults to "standard".
+history. Classification is regex-based: the patch title first, then the parsed
+section headings (official "Community Crafted" / "社区创造模式" markers) —
+a patch whose title reads standard but carries a community-created section
+(e.g. p-2026-06-30-1) is still special.
 
 The authoritative mode for a record is pair-level: build_patches_index stores
 "either side non-standard wins", and build_hero_files looks records up through
@@ -27,6 +29,10 @@ _MODE_RULES: list[tuple[str, re.Pattern]] = [
     ("announcement", re.compile(r"Unauthorized Peripheral|Welcome to Overwatch", re.I)),
 ]
 
+# official section marker for community-created-mode balance content (the patch
+# title itself reads like a standard patch, e.g. p-2026-06-30-1)
+_COMMUNITY_CREATED_SECTION_RE = re.compile(r"Community Crafted|社区创造模式", re.I)
+
 MODE_LABELS = {
     STANDARD: "常规",
     "quick_play_hacked": "社区模式",
@@ -35,6 +41,7 @@ MODE_LABELS = {
     "hero_trial": "英雄试玩",
     "ptr": "PTR 测试服",
     "announcement": "公告",
+    "community_created": "社区创造模式",
 }
 
 # mirrored in web/app.js MODE_LABEL
@@ -47,4 +54,15 @@ def patch_mode(title: str) -> str:
     for mode, rx in _MODE_RULES:
         if rx.search(title):
             return mode
+    return STANDARD
+
+
+def patch_mode_with_sections(title: str, section_titles: list[str]) -> str:
+    """Title rules first; a standard-looking title with an official community-
+    created section marker is classified community_created."""
+    mode = patch_mode(title)
+    if mode != STANDARD:
+        return mode
+    if any(_COMMUNITY_CREATED_SECTION_RE.search(t or "") for t in section_titles):
+        return "community_created"
     return STANDARD
