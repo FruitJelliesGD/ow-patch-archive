@@ -89,8 +89,27 @@ def test_collect_map_refs(tmp_path):
         ]}],
     }), encoding="utf-8")
     refs = di.collect_icon_refs(tmp_path)
-    assert refs[("map", "en-2026-08-11-1/0-before")][0].endswith("1.Before.jpg")
-    assert refs[("map", "en-2026-08-11-1/0-after")][0].endswith("1.After.jpg")
+    assert refs[("map", "en-2026-08-11-1/s0/0-before")][0].endswith("1.Before.jpg")
+    assert refs[("map", "en-2026-08-11-1/s0/0-after")][0].endswith("1.After.jpg")
+
+
+def test_collect_map_refs_section_scoped(tmp_path):
+    """Multiple map sections in one patch must not collide: each section's
+    image indices restart at 0, so the section index is part of the key."""
+    d = tmp_path / "patches" / "en"
+    d.mkdir(parents=True)
+    (d / "2026-08-11-1.json").write_text(json.dumps({
+        "id": "en-2026-08-11-1", "date": "2026-08-11",
+        "sections": [
+            {"maps": [{"area": "A", "before": "https://x/a-b.jpg",
+                       "after": "https://x/a-a.jpg"}]},
+            {"maps": [{"area": "B", "before": "https://x/b-b.jpg",
+                       "after": "https://x/b-a.jpg"}]},
+        ],
+    }), encoding="utf-8")
+    refs = di.collect_icon_refs(tmp_path)
+    assert refs[("map", "en-2026-08-11-1/s0/0-before")][0].endswith("a-b.jpg")
+    assert refs[("map", "en-2026-08-11-1/s1/0-before")][0].endswith("b-b.jpg")
 
 
 def test_map_downloads_into_maps_dir(tmp_path, monkeypatch):
@@ -103,11 +122,11 @@ def test_map_downloads_into_maps_dir(tmp_path, monkeypatch):
              "after": "https://x/1.After.jpg"},
         ]}],
     }), encoding="utf-8")
-    out = tmp_path / "out"
+    out = tmp_path / "icons"  # maps are page screenshots: sibling of the icon dir
     monkeypatch.setattr(di, "_fetch", lambda url: b"\xff\xd8\xffjpeg")
     assert di.download_icons(tmp_path, out) == 2
-    assert (out / "maps" / "en-2026-08-11-1" / "0-before.png").exists()
-    assert (out / "maps" / "en-2026-08-11-1" / "0-after.png").exists()
+    assert (out.parent / "maps" / "en-2026-08-11-1" / "s0" / "0-before.png").exists()
+    assert (out.parent / "maps" / "en-2026-08-11-1" / "s0" / "0-after.png").exists()
 
 
 def test_marker_only_written_when_new_icons(tmp_path, monkeypatch):

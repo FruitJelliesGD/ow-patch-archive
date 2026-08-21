@@ -754,7 +754,9 @@ async function initPatch() {
       for (const [label, src, side] of pairs) {
         if (!src) continue;
         const fig = document.createElement("figure");
-        fig.innerHTML = `<img src="assets/maps/${esc(patch.id)}/${esc(mi)}-${side}.png" alt="${esc(mapTitle || label)}" loading="lazy" onerror="this.style.display='none'"><figcaption>${esc(label)}</figcaption>`;
+        // map asset keys are patch/section/map scoped (a patch can hold several
+        // map sections whose image indices restart at 0)
+        fig.innerHTML = `<img src="assets/maps/${esc(patch.id)}/s${esc(secIdx)}/${esc(mi)}-${side}.png" alt="${esc(mapTitle || label)}" loading="lazy" onerror="this.style.display='none'"><figcaption>${esc(label)}</figcaption>`;
         cmp.appendChild(fig);
       }
       mc.appendChild(cmp);

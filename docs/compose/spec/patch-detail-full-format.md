@@ -97,6 +97,6 @@ commits: <base-sha>..<head-sha> # filled at delivery
 - [x] T40: download_icons.py map kind — acceptance: 地图图下载幂等、netease 优先、magic bytes 校验（covers: D1）
 - [x] T41: web app.js 渲染（media/section maps/dev/stadium_items/守卫）— acceptance: smoke 断言 maps-compare/stadium-item/link/section-dev 全过（covers: D1-D5；depends: T33 T35 T36）
 - [x] T42: web style.css — acceptance: dev-note 斜体、地图并排、物品徽标、链接样式（covers: D6；depends: T41）
-- [ ] T43: 测试更新（parse/diff/pipeline/download/smoke/layout + 计数重基线）— acceptance: pytest 与 smoke/layout 全过（covers: 全部）
-- [ ] T44: 全量迁移与验证 — acceptance: 本机（CN IP）force-rewrite 143 月 0 错误、rebuild ×3 字节收敛、重扫当月 0 events、download_icons 补图、serve 预览正确（covers: D7；depends: T43）
+- [x] T43: 测试更新（parse/diff/pipeline/download/smoke/layout + 计数重基线）— acceptance: pytest 与 smoke/layout 全过（covers: 全部）
+- [x] T44: 全量迁移与验证 — acceptance: 本机（CN IP）force-rewrite 143 月 0 错误、rebuild ×3 字节收敛、重扫当月 0 events、download_icons 补图、serve 预览正确（covers: D7；depends: T43）
 - [ ] T45: 独立 review 与规格定稿 — acceptance: review 无 critical、status: delivered（covers: 全部；depends: T44）

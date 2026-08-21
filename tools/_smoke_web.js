@@ -98,7 +98,17 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
     results.patchHasBold = findHtml(modernBody, /strong>Choose your path/);
     results.patchHasSectionDev = findHtml(modernBody, /Several underutilized perks/);
     results.patchHasMapCompare = findHtml(modernBody, /map-compare/);
-    results.patchHasMapImage = findHtml(modernBody, /assets\\/maps\\/en-2026-08-11-1\\/0-before\\.png/);
+    // map asset paths are section-scoped (s<global section index>); the page
+    // must reference images from multiple map sections (collision regression)
+    const mapSections = [];
+    (function collectMapSections(el) {
+      const html = el.innerHTML || "";
+      const re = /assets\\/maps\\/en-2026-08-11-1\\/s(\\d+)\\/0-before\\.png/g;
+      let m;
+      while ((m = re.exec(html))) mapSections.push(m[1]);
+      for (const c of el.children) collectMapSections(c);
+    })(modernBody);
+    results.mapSectionCount = [...new Set(mapSections)].length;
     results.patchHasStadiumItem = findHtml(modernBody, /stadium-item/);
     results.patchHasRarityBadge = findHtml(modernBody, /item-badge/);
     results.tocChildren = document.getElementById("patch-toc").children.length;
@@ -167,7 +177,7 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
     if (!results.patchHasBold) fail.push("patch bold emphasis missing");
     if (!results.patchHasSectionDev) fail.push("patch section dev note missing");
     if (!results.patchHasMapCompare) fail.push("patch map-compare missing");
-    if (!results.patchHasMapImage) fail.push("patch map image missing");
+    if (results.mapSectionCount < 3) fail.push("patch map sections=" + results.mapSectionCount);
     if (!results.patchHasStadiumItem) fail.push("patch stadium item missing");
     if (!results.patchHasRarityBadge) fail.push("patch stadium rarity badge missing");
     if (!results.patchHasContentLink) fail.push("patch content link missing");

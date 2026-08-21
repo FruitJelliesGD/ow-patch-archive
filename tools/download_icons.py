@@ -33,8 +33,10 @@ def collect_icon_refs(data_dir: pathlib.Path) -> dict[tuple[str, str], tuple[str
     """(kind, key) -> (url, date); prefers netease (cn) over cloudfront/contentstack.
 
     key is the hero slug for kind "hero", "hero-slug/ability-slug" for
-    "ability", and "<patch-id>/<i>-before|after" for "map". Among equal-
-    preference URLs the latest patch date wins.
+    "ability", and "<patch-id>/s<section>/<i>-before|after" for "map" (the
+    section index is part of the key — a patch can hold several map sections
+    whose image indices restart at 0). Among equal-preference URLs the latest
+    patch date wins.
     """
     refs: dict[tuple[str, str], tuple[str, str]] = {}
 
@@ -51,12 +53,12 @@ def collect_icon_refs(data_dir: pathlib.Path) -> dict[tuple[str, str], tuple[str
             data = json.loads(patch_file.read_text(encoding="utf-8"))
             date = data.get("date", "")
             patch_id = data.get("id", "")
-            for section in data.get("sections", []):
+            for si, section in enumerate(data.get("sections", [])):
                 for i, map_update in enumerate(section.get("maps", [])):
                     if map_update.get("before"):
-                        prefer(("map", f"{patch_id}/{i}-before"), map_update["before"], date)
+                        prefer(("map", f"{patch_id}/s{si}/{i}-before"), map_update["before"], date)
                     if map_update.get("after"):
-                        prefer(("map", f"{patch_id}/{i}-after"), map_update["after"], date)
+                        prefer(("map", f"{patch_id}/s{si}/{i}-after"), map_update["after"], date)
                 for hero in section.get("heroes", []):
                     hero_slug = hero.get("slug")
                     if hero.get("icon") and hero_slug:
@@ -102,8 +104,11 @@ def download_icons(
     subdir = {"hero": "heroes", "ability": "abilities", "map": "maps"}
     new: list[str] = []
     for (kind, key), (url, date) in sorted(refs.items()):
+        # maps are page-level screenshots, not icons: they live one level up
+        # (web/assets/maps) next to the icon tree (web/assets/icons)
+        base = out_dir if kind != "map" else out_dir.parent
         rel = pathlib.PurePosixPath(subdir[kind]) / f"{key}{_ext_for(url)}"
-        dest = out_dir / rel
+        dest = base / rel
         if dest.exists():
             continue
         if dry_run:

@@ -301,6 +301,7 @@ def _parse_general_updates(div: Tag, site: str) -> tuple[list[str], list[Perk], 
             perk_name = _perk_name(text, site)
             if perk_name is not None:
                 current = Perk(**{f"name_{site}": perk_name})
+                current_item = None  # a new block always resets the other's state
                 perks.append(current)
             elif text and not _is_dev(child):
                 general.append(text)
