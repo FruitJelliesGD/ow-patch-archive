@@ -1,14 +1,33 @@
 ---
 feature: index-polish
-status: in-progress
+status: delivered
 updated: 2026-08-22
 branch: feat/index-polish
-commits: # filled at delivery
+commits: 34b2a02..87a3b38
 ---
 
 # 页尾仓库链接 + 补丁内容字数 + 2026-04-01 愚人节识别
 
 ## Report
+
+**What was built** — 三个用户可见改进：(1) 五个页面（index/entries/entry/hero/patch）页尾均显示仓库链接 `github.com/FruitJelliesGD/ow-patch-archive`（后两页原本无 footer，本次补齐）；(2) 时间浏览列表每条补丁新增 `.patch-entry-chars` 内容字数（如「38,029 字」「334 字」，千分位、显示站点口径、右侧对齐），一眼区分大版本与热修；(3) `en-2026-04-01-1`（`p-2026-04-01-1`，改动 50 英雄）经新增的愚人节 section 信号（`Underwatch|守望后卫`）正确判为 `april_fools`，列表与详情页显示愚人节徽章，其 50 英雄改动记录不再污染常规英雄轨迹/词条/数值历史（`?modes=all` 仍可查看）。
+
+数据层：`build_patches_index` 增加 `chars_en`/`chars_cn`（递归求和该侧补丁 `sections`+`raw_text` 内全部字符串长度，含中英双语字段，作为一致体量度量；镜像 `title_*`/`first_section_*` 模式）；`_load_patch` 重构为每补丁单次读取。mode 判定沿 `_COMMUNITY_CREATED_SECTION_RE` 先例新增 `_APRIL_FOOLS_SECTION_RE`。
+
+**Verification** —
+- `pytest -q`（PYTHONPATH=worktree/src）→ **196 passed**（+3：modes section 信号、chars 单测、chars 真实数据不变量；test_entries 多英雄样本 quick-melee→general）
+- `node tools/_smoke_web.js` → **ALL WEB ASSERTIONS OK**（entryCards 919→905、新增 indexHasChars；entryMergedCount 17 / heroEntryCards 18 经核仍成立未改）
+- `npx --yes -p playwright node tools/_layout_check.js` → **12/12 PASS**
+- `python tools/rebuild.py --data data` 连跑两遍 → 字节收敛；diff 范围 = patches_index + entries_index + 50 个 hero 文件 + 源码/前端
+- 真实浏览器抽查（一次性脚本，未提交）：343/343 条目渲染字数（样本 "334 字"、muted 色）；2026-04-01 条目与详情页均显示愚人节徽章；五页 footer 均含仓库链接
+- 独立审查：**0 critical**，spec 符合性/正确性/一致性全 PASS；4 项非关键（unpaired 缺文件异常类型变化不可达、`??` 对 0 不回落但 0 侧不存在、chars 右对齐换行外观、quick-melee 注释措辞已修正）
+
+**Journey log** —
+① 2026 愚人节补丁标题常规但首节 "Underwatch Patch Notes"（CN "守望后卫补丁说明"）——与 community_created 同款 section 信号，勿用手工清单。
+② 字数 walker 的「全部字符串」定义会把 section `type` 标记（"generic_update" 14 字符）计入——单测精确值要先跑一遍 walker 对账，手算容易漏。
+③ mode 级联的破坏面：smoke 3 处硬编码计数里只有 entryCards 真变（919→905，14 个 2026-04-01 专属词条消失）；entryMergedCount/heroEntryCards 未变——重生成后以实际值为准，别凭猜测改。
+④ test_entries 的 quick-melee「多英雄能力」样本被愚人节重打标击穿（只剩 doomfist 一条标准记录）——换成跨 mei/sombra/torbjorn 的 `general` 能力样本。
+⑤ `_load_patch` 把 unpaired 分支的缺文件异常从 FileNotFoundError 变成 KeyError——manifest 与补丁文件同块原子写入（pipeline.py:120-127）使其不可达，但这是异常类型的行为变化，评审确认可接受。
 
 ## [S1] Problem
 
@@ -57,9 +76,9 @@ commits: # filled at delivery
 
 ## Tasks
 
-- [ ] T1: modes.py 愚人节 section 信号 + test_modes 单测 —— acceptance: 单测覆盖 Underwatch/守望后卫 → april_fools（covers: D1, D5）
-- [ ] T2: pairing.py `chars_en/cn` + 字数单测 —— acceptance: 单测精确值通过；真实数据不变量（两键 + 大补丁 > 10000）通过（covers: D2, D5）
-- [ ] T3: `tools/rebuild.py --data data` 重生成 —— acceptance: git diff 范围 = patches_index/heroes/entries_index 三类；`p-2026-04-01-1` mode == april_fools；不变量测试通过（covers: D1, D2, D6; depends: T1, T2）
-- [ ] T4: 前端字数显示 + 五页 footer 仓库链接 —— acceptance: smoke 新增字数断言通过；浏览器抽查条目字数与 footer 链接（covers: D3, D4）
-- [ ] T5: smoke 计数更新（919/17/18 → 重生成实际值）—— acceptance: `node tools/_smoke_web.js` 全绿（covers: D6; depends: T3, T4）
-- [ ] T6: 全量验证 + 独立审查 —— acceptance: pytest/smoke/layout/rebuild 通过，审查 0 critical（covers: D3, D4, D6）
+- [x] T1: modes.py 愚人节 section 信号 + test_modes 单测 —— acceptance: 单测覆盖 Underwatch/守望后卫 → april_fools（covers: D1, D5）
+- [x] T2: pairing.py `chars_en/cn` + 字数单测 —— acceptance: 单测精确值通过；真实数据不变量（两键 + 大补丁 > 10000）通过（covers: D2, D5）
+- [x] T3: `tools/rebuild.py --data data` 重生成 —— acceptance: git diff 范围 = patches_index/heroes/entries_index 三类；`p-2026-04-01-1` mode == april_fools；不变量测试通过（covers: D1, D2, D6; depends: T1, T2）
+- [x] T4: 前端字数显示 + 五页 footer 仓库链接 —— acceptance: smoke 新增字数断言通过；浏览器抽查条目字数与 footer 链接（covers: D3, D4）
+- [x] T5: smoke 计数更新（919/17/18 → 重生成实际值）—— acceptance: `node tools/_smoke_web.js` 全绿（covers: D6; depends: T3, T4）
+- [x] T6: 全量验证 + 独立审查 —— acceptance: pytest/smoke/layout/rebuild 通过，审查 0 critical（covers: D3, D4, D6）
