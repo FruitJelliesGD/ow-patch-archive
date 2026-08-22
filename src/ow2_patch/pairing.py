@@ -138,11 +138,18 @@ def _patch_signature(patch_data: dict) -> str:
     section/hero structure (hero slugs are cross-language canonical), so equal
     signatures are a strong same-content signal at pairing time — a same-day
     page with different content must not beat the real 1-day-lag partner.
+
+    Trailing empty generic_update sections are stripped: one site may carry an
+    empty "Map Updates"-style stub that the other omits (e.g. en-2025-07-03 vs
+    cn-2025-07-09 differ only by one trailing generic_update:), and those are
+    not content.
     """
     parts = []
     for s in patch_data.get("sections", []):
         heroes = ",".join(h.get("slug", "") for h in s.get("heroes", []))
         parts.append(f"{s.get('type', '')}:{heroes}")
+    while parts and parts[-1] == "generic_update:":
+        parts.pop()
     return "|".join(parts)
 
 

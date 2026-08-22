@@ -188,11 +188,33 @@ def test_signature_mismatch_keeps_max_cardinality(tmp_path):
     assert len(result.pairs) == 1  # still paired, nothing better exists
 
 
+def test_signature_strips_trailing_empty_generic_sections():
+    """Trivial section-count differences (an empty trailing generic_update
+    stub on one side only) must not break the signature match."""
+    from ow2_patch.pairing import _patch_signature
+
+    sig = _patch_signature({
+        "sections": [
+            {"type": "generic_update", "title": "回放代码重置", "heroes": []},
+            {"type": "hero_update", "title": "重装",
+             "heroes": [{"slug": "d-va"}]},
+            {"type": "generic_update", "title": "Map Updates", "heroes": []},
+        ],
+    })
+    sig_extra = _patch_signature({
+        "sections": [
+            {"type": "generic_update", "title": "Replay Codes Reset", "heroes": []},
+            {"type": "hero_update", "title": "Tank", "heroes": [{"slug": "d-va"}]},
+            {"type": "generic_update", "title": "Map Updates", "heroes": []},
+            {"type": "generic_update", "title": "", "heroes": []},
+        ],
+    })
+    assert sig == sig_extra
+
+
 def test_real_data_pairing_signature_invariants():
     """Real data with signatures: the known mispairs are repaired, pair count
     unchanged, and every pair's EN/CN signatures match where expected."""
-    from ow2_patch.pairing import _patch_signature
-
     en, cn = patch_meta_from_manifest(DATA)
     old = pair_patches(en, cn)
     new = pair_patches(en, cn, data_dir=DATA)
@@ -205,3 +227,6 @@ def test_real_data_pairing_signature_invariants():
     assert by_en["en-2025-04-22-1"] == "cn-2025-04-23-1"
     assert by_en["en-2025-05-14-1"] == "cn-2025-05-16-1"
     assert by_en["en-2025-05-22-1"] == "cn-2025-05-23-1"
+    # 2025-07-09: same-day Juno hotfix must not absorb the 7-hero CN page
+    assert by_en["en-2025-07-03-1"] == "cn-2025-07-09-1"
+    assert "en-2025-07-09-1" not in by_en and "en-2025-07-09-1" in new.unpaired_en
