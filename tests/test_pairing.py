@@ -127,6 +127,7 @@ def test_real_patches_index_mode_invariants():
     assert by_id["en-2018-03-29-1"]["mode"] == "ptr"
     assert by_id["en-2022-10-04-1"]["mode"] == "announcement"
     assert by_id["p-2026-06-30-1"]["mode"] == "community_created"  # Community Crafted section
+    assert by_id["p-2026-04-01-1"]["mode"] == "april_fools"  # Underwatch section, standard title
     assert by_id["p-2026-08-11-1"]["mode"] == "standard"
     assert by_id["en-2017-02-27-1"]["mode"] == "standard"  # uppercase variant
     assert all(p.get("mode") for p in index["patches"])
@@ -178,6 +179,63 @@ def test_real_patches_index_first_section_invariants():
         assert "first_section_en" in p and "first_section_cn" in p
     assert by_id["p-2026-08-11-1"]["first_section_en"].startswith("Reign of Talon")
     assert by_id["p-2026-08-11-1"]["first_section_cn"]
+
+
+def test_patches_index_chars_fields(tmp_path):
+    """chars_en/cn sum every string inside sections plus raw_text; raw_text-only
+    patches count the raw blob; the missing side of an unpaired entry is None."""
+    from ow2_patch.pairing import PairResult, build_patches_index
+
+    data_dir = tmp_path / "data"
+    _write_patch_json(data_dir, "en-2026-08-11-1", [
+        {"type": "generic_update", "title": "Reign of Talon - Season 4", "heroes": []},
+        {"type": "hero_update", "title": "Tank",
+         "heroes": [{"slug": "orisa", "name_cn": "奥丽莎", "name_en": "Orisa",
+                     "general": [{"text_cn": "生命值提高至 250。",
+                                  "text_en": "HP increased to 250."}]}]},
+    ])
+    _write_patch_json(data_dir, "cn-2026-08-12-1", [
+        {"type": "generic_update", "title": "黑爪之治——第4赛季", "heroes": []},
+    ])
+    parts = "en-2016-05-27-1".split("-")
+    (data_dir / "patches" / "en").mkdir(parents=True, exist_ok=True)
+    (data_dir / "patches" / "en" / "2016-05-27-1.json").write_text(
+        json.dumps({"id": "en-2016-05-27-1", "site": "en", "date": "2016-05-27",
+                    "title": "t", "url": "u", "sections": [], "raw_text": "abc 原始文本"},
+                   ensure_ascii=False), encoding="utf-8")
+    result = PairResult(
+        pairs=[{
+            "id": "p-2026-08-11-1", "date": "2026-08-11",
+            "en": {"patch_id": "en-2026-08-11-1", "date": "2026-08-11", "seq": 1,
+                   "title": "Overwatch Patch Notes", "url": "u"},
+            "cn": {"patch_id": "cn-2026-08-12-1", "date": "2026-08-12", "seq": 1,
+                   "title": "《守望先锋》补丁说明", "url": "u"},
+        }],
+        unpaired_en=["en-2016-05-27-1"],
+    )
+    build_patches_index(data_dir, result)
+    index = json.loads((data_dir / "patches_index.json").read_text(encoding="utf-8"))
+    by_id = {p["id"]: p for p in index["patches"]}
+    pair = by_id["p-2026-08-11-1"]
+    # section titles + type markers + hero slug/names + general text (both
+    # languages); every string value inside sections counts, keys do not
+    assert pair["chars_en"] == 98
+    assert pair["chars_cn"] == 24
+    legacy = by_id["en-2016-05-27-1"]
+    assert legacy["chars_en"] == len("abc 原始文本")
+    assert legacy["chars_cn"] is None
+
+
+def test_real_patches_index_chars_invariants():
+    """Regenerated index: every entry carries both chars keys; a season patch
+    is an order of magnitude larger than a hotfix."""
+    index = json.loads((DATA / "patches_index.json").read_text(encoding="utf-8"))
+    by_id = {p["id"]: p for p in index["patches"]}
+    for p in index["patches"]:
+        assert "chars_en" in p and "chars_cn" in p
+    assert by_id["p-2026-08-11-1"]["chars_en"] > 10000
+    assert by_id["p-2026-08-11-1"]["chars_cn"] > 0
+    assert by_id["en-2026-08-20-1"]["chars_en"] > 0
 
 
 # ---------- structural-signature weighting ----------

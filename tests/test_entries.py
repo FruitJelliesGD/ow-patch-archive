@@ -199,8 +199,10 @@ def test_real_entries_index_invariants():
         assert e["count"] > 0
         assert e["first_date"] <= e["last_date"]
         assert e["name_cn"] or e["name_en"], e["key"]
-    # multi-hero ability appears once per hero
-    qm = [e for e in entries if e["slug"] == "quick-melee"]
+    # multi-hero ability appears once per hero (the generic "General" ability
+    # section spans several heroes; quick-melee no longer qualifies since its
+    # records were only in the April Fools 2026 patch, now non-standard)
+    qm = [e for e in entries if e["slug"] == "general"]
     assert len(qm) >= 2
     assert len({e["hero_slug"] for e in qm}) == len(qm)
 

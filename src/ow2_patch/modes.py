@@ -33,6 +33,11 @@ _MODE_RULES: list[tuple[str, re.Pattern]] = [
 # title itself reads like a standard patch, e.g. p-2026-06-30-1)
 _COMMUNITY_CREATED_SECTION_RE = re.compile(r"Community Crafted|社区创造模式", re.I)
 
+# official April Fools section marker: the 2026-04-01 patch title reads like a
+# standard patch but its first section is the Underwatch parody ("Underwatch
+# Patch Notes" / "守望后卫补丁说明")
+_APRIL_FOOLS_SECTION_RE = re.compile(r"Underwatch|守望后卫", re.I)
+
 MODE_LABELS = {
     STANDARD: "常规",
     "quick_play_hacked": "社区模式",
@@ -58,11 +63,14 @@ def patch_mode(title: str) -> str:
 
 
 def patch_mode_with_sections(title: str, section_titles: list[str]) -> str:
-    """Title rules first; a standard-looking title with an official community-
-    created section marker is classified community_created."""
+    """Title rules first; a standard-looking title with an official section
+    marker is classified special: Community Crafted / 社区创造模式 →
+    community_created, the Underwatch parody (愚人节) → april_fools."""
     mode = patch_mode(title)
     if mode != STANDARD:
         return mode
     if any(_COMMUNITY_CREATED_SECTION_RE.search(t or "") for t in section_titles):
         return "community_created"
+    if any(_APRIL_FOOLS_SECTION_RE.search(t or "") for t in section_titles):
+        return "april_fools"
     return STANDARD

@@ -257,6 +257,7 @@ async function initIndex() {
         const firstSection = site === "cn"
           ? (p.first_section_cn || p.first_section_en)
           : (p.first_section_en || p.first_section_cn);
+        const chars = site === "cn" ? (p.chars_cn ?? p.chars_en) : (p.chars_en ?? p.chars_cn);
         const a = document.createElement("a");
         a.className = "patch-entry";
         a.href = `patch.html?id=${encodeURIComponent(p.id)}&lang=${site}`;
@@ -265,7 +266,8 @@ async function initIndex() {
           ${siteBadges(p.sites)}
           ${modeBadge(p.mode)}
           ${firstSection ? `<span class="badge section" title="${esc(firstSection)}">${esc(firstSection)}</span>` : ""}
-          <span class="patch-entry-title">${esc(title || p.id)}</span>`;
+          <span class="patch-entry-title">${esc(title || p.id)}</span>
+          ${chars ? `<span class="patch-entry-chars">${Number(chars).toLocaleString()} 字</span>` : ""}`;
         list.appendChild(a);
       }
       monthSection.appendChild(list);

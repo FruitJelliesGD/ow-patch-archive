@@ -48,3 +48,16 @@ def test_patch_mode_with_sections_community_created():
     # title rules win over the section signal
     assert patch_mode_with_sections("Overwatch 2 Really, Really, Really Balanced Patch Notes - April 1, 2024",
                                    ["Community Crafted"]) == "april_fools"
+
+
+def test_patch_mode_with_sections_april_fools():
+    """A standard-looking title with the official Underwatch parody section
+    marker classifies as april_fools (en-2026-04-01-1 shape, 50 heroes)."""
+    title = "Overwatch Retail Patch Notes - April 1, 2026"
+    assert patch_mode(title) == "standard"
+    assert patch_mode_with_sections(title, ["Tank", "Damage", "Support"]) == "standard"
+    assert patch_mode_with_sections(title, ["Underwatch Patch Notes", "Tank"]) == "april_fools"
+    assert patch_mode_with_sections(title, ["守望后卫补丁说明"]) == "april_fools"
+    # title rules win over the section signal
+    assert patch_mode_with_sections("Totally Normal Patch Notes for Totally Normalwatch - April 1, 2025",
+                                   ["Underwatch Patch Notes"]) == "april_fools"

@@ -283,21 +283,39 @@ def build_patches_index(data_dir: pathlib.Path, result: PairResult) -> None:
     the `title_*` pattern): the first non-empty section title of that side's
     patch, "" when the patch has no titled sections (e.g. OW1 raw_text pages).
     The time-browser renders it as an at-a-glance content badge.
+
+    Each entry also carries `chars_en`/`chars_cn`: the total character count of
+    that side's structured content (all strings inside `sections` plus
+    `raw_text`, bilingual fields included — a consistent patch-size proxy).
+    The time-browser shows it as "N 字".
     """
     from .modes import STANDARD, patch_mode_with_sections
 
-    def _section_titles(patch_id: str) -> list[str]:
+    def _load_patch(patch_id: str) -> dict:
         site = patch_id.split("-", 1)[0]
         parts = patch_id.split("-")
         path = data_dir / "patches" / site / f"{'-'.join(parts[1:4])}-{parts[4]}.json"
         try:
-            data = json.loads(path.read_text(encoding="utf-8"))
+            return json.loads(path.read_text(encoding="utf-8"))
         except OSError:
-            return []
+            return {}
+
+    def _section_titles(data: dict) -> list[str]:
         return [s.get("title") or "" for s in data.get("sections", [])]
 
     def _first_section(titles: list[str]) -> str:
         return next((t for t in titles if t), "")
+
+    def _content_chars(data: dict) -> int:
+        def walk(v):
+            if isinstance(v, str):
+                return len(v)
+            if isinstance(v, dict):
+                return sum(walk(x) for x in v.values())
+            if isinstance(v, list):
+                return sum(walk(x) for x in v)
+            return 0
+        return walk(data.get("sections")) + walk(data.get("raw_text") or "")
 
     def _pair_mode(en: dict, cn: dict, en_titles: list[str], cn_titles: list[str]) -> str:
         en_mode = patch_mode_with_sections(en["title"], en_titles)
@@ -307,14 +325,18 @@ def build_patches_index(data_dir: pathlib.Path, result: PairResult) -> None:
 
     index: list[dict] = []
     for pair in result.pairs:
-        en_titles = _section_titles(pair["en"]["patch_id"])
-        cn_titles = _section_titles(pair["cn"]["patch_id"])
+        en_data = _load_patch(pair["en"]["patch_id"])
+        cn_data = _load_patch(pair["cn"]["patch_id"])
+        en_titles = _section_titles(en_data)
+        cn_titles = _section_titles(cn_data)
         mode = _pair_mode(pair["en"], pair["cn"], en_titles, cn_titles)
         index.append({
             "id": pair["id"], "date": pair["date"],
             "title_en": pair["en"]["title"], "title_cn": pair["cn"]["title"],
             "first_section_en": _first_section(en_titles),
             "first_section_cn": _first_section(cn_titles),
+            "chars_en": _content_chars(en_data),
+            "chars_cn": _content_chars(cn_data),
             "url_en": pair["en"]["url"], "url_cn": pair["cn"]["url"],
             "sites": ["en", "cn"],
             "patch_id_en": pair["en"]["patch_id"], "patch_id_cn": pair["cn"]["patch_id"],
@@ -325,17 +347,18 @@ def build_patches_index(data_dir: pathlib.Path, result: PairResult) -> None:
         parts = patch_id.split("-")
         date_str = "-".join(parts[1:4])
         seq = parts[4]
-        meta = json.loads(
-            (data_dir / "patches" / site / f"{date_str}-{seq}.json").read_text(encoding="utf-8")
-        )
-        titles = _section_titles(patch_id)
+        meta = _load_patch(patch_id)
+        titles = _section_titles(meta)
         first_section = _first_section(titles)
+        chars = _content_chars(meta)
         index.append({
             "id": patch_id, "date": date_str,
             "title_en": meta["title"] if site == "en" else None,
             "title_cn": meta["title"] if site == "cn" else None,
             "first_section_en": first_section if site == "en" else None,
             "first_section_cn": first_section if site == "cn" else None,
+            "chars_en": chars if site == "en" else None,
+            "chars_cn": chars if site == "cn" else None,
             "url_en": meta["url"] if site == "en" else None,
             "url_cn": meta["url"] if site == "cn" else None,
             "sites": [site],
