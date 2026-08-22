@@ -14,6 +14,7 @@
 }
 
 * { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
 body {
   margin: 0;
   background: var(--bg);
@@ -107,6 +108,9 @@ main { max-width: 960px; margin: 0 auto; padding: 20px; }
 .badge.en { background: rgba(79, 195, 247, 0.15); color: var(--en); }
 .badge.cn { background: rgba(243, 156, 58, 0.15); color: var(--cn); }
 .badge.kind { background: rgba(46, 197, 176, 0.12); color: var(--teal); }
+/* generic mode-badge fallback: unknown/future modes keep a background; the
+   specific rules below override it (same specificity, later in the file) */
+.badge.mode { background: rgba(140, 163, 189, 0.14); color: var(--muted); }
 /* special-mode patch badges (community / april fools / experiments / trials) */
 .badge.mode-quick_play_hacked { background: rgba(79, 195, 247, 0.15); color: var(--en); }
 .badge.mode-april_fools { background: rgba(244, 67, 54, 0.2); color: #ef5350; }
@@ -114,6 +118,16 @@ main { max-width: 960px; margin: 0 auto; padding: 20px; }
 .badge.mode-hero_trial { background: rgba(46, 197, 176, 0.18); color: var(--teal); }
 .badge.mode-ptr { background: rgba(158, 158, 158, 0.2); color: #bdbdbd; }
 .badge.mode-announcement { background: rgba(243, 156, 58, 0.18); color: var(--orange); }
+.badge.mode-community_created { background: rgba(156, 116, 246, 0.16); color: #9c74f6; }
+/* patch first-section-title badge (time browser): long titles ellipsize */
+.badge.section {
+  background: rgba(129, 199, 132, 0.14);
+  color: #81c784;
+  max-width: 240px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 .mode-toggle {
   display: block;
   margin: 8px 16px;
@@ -161,6 +175,41 @@ main { max-width: 960px; margin: 0 auto; padding: 20px; }
 }
 
 /* time browser */
+.jump-bar {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 10px 0;
+  margin-bottom: 6px;
+  background: var(--bg);
+  border-bottom: 1px solid var(--line);
+}
+.jump-bar select {
+  padding: 5px 10px;
+  font-size: 13px;
+  background: var(--panel2);
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}
+.jump-bar select:focus { outline: none; border-color: var(--accent); }
+.jump-hint { font-size: 13px; color: var(--muted); }
+.jump-btn {
+  padding: 5px 14px;
+  font-size: 13px;
+  color: var(--text);
+  background: rgba(79, 195, 247, 0.12);
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  cursor: pointer;
+}
+.jump-btn:hover { background: rgba(79, 195, 247, 0.2); }
+/* anchor offset below the sticky jump bar */
+[id^="year-"] { scroll-margin-top: 60px; }
 .patch-browser .year-title {
   color: var(--muted);
   font-size: 18px;
@@ -176,7 +225,8 @@ main { max-width: 960px; margin: 0 auto; padding: 20px; }
 .patch-entry {
   display: flex;
   align-items: center;
-  gap: 12px;
+  flex-wrap: wrap;
+  gap: 8px 12px;
   padding: 9px 14px;
   background: var(--panel);
   border: 1px solid var(--line);
@@ -188,7 +238,7 @@ main { max-width: 960px; margin: 0 auto; padding: 20px; }
 }
 .patch-entry:hover { border-color: var(--accent); }
 .patch-entry-date { color: var(--muted); font-size: 12px; white-space: nowrap; }
-.patch-entry-title { font-size: 14px; }
+.patch-entry-title { font-size: 14px; min-width: 0; }
 
 /* patch detail */
 .patch-body .hero-block {
