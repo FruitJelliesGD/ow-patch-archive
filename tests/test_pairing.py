@@ -78,7 +78,7 @@ def test_seq_only_matches_exact():
 
 def test_real_data_pairing_invariants():
     en, cn = patch_meta_from_manifest(DATA)
-    assert len(en) == 342 and len(cn) == 55
+    assert len(en) == 343 and len(cn) == 55  # 342 EN + en-2026-08-20-1
     result = pair_patches(en, cn)
     assert len(result.pairs) >= 45, f"only {len(result.pairs)} pairs"
     # every CN patch appears at most once across pairs + unpaired
@@ -130,3 +130,78 @@ def test_real_patches_index_mode_invariants():
     assert by_id["p-2026-08-11-1"]["mode"] == "standard"
     assert by_id["en-2017-02-27-1"]["mode"] == "standard"  # uppercase variant
     assert all(p.get("mode") for p in index["patches"])
+
+
+# ---------- structural-signature weighting ----------
+
+def _write_patch_json(data_dir, patch_id, sections):
+    parts = patch_id.split("-")
+    site = parts[0]
+    d = data_dir / "patches" / site
+    d.mkdir(parents=True, exist_ok=True)
+    (d / f"{'-'.join(parts[1:4])}-{parts[4]}.json").write_text(
+        json.dumps({"id": patch_id, "site": site, "date": "-".join(parts[1:4]),
+                    "title": f"{site} {patch_id}", "sections": sections},
+                   ensure_ascii=False), encoding="utf-8")
+
+
+def test_signature_beats_same_day_mispair(tmp_path):
+    """The 2026-08-19/20 regression: a CN patch whose true partner is the
+    1-day-lag EN page must beat a same-day EN page with different content."""
+    data_dir = tmp_path / "data"
+    # EN 8.19 = Client Update (no heroes); EN 8.20 = hotfix (Mizuki);
+    # CN 8.20 = translation of EN 8.19 (no heroes)
+    _write_patch_json(data_dir, "en-2026-08-19-1",
+                      [{"type": "generic_update", "title": "Client Update", "heroes": []},
+                       {"type": "generic_update", "title": "Bug Fixes", "heroes": []}])
+    _write_patch_json(data_dir, "en-2026-08-20-1",
+                      [{"type": "generic_update", "title": "Hotfix Update", "heroes": []},
+                       {"type": "hero_update", "title": "Bug Fixes",
+                        "heroes": [{"slug": "mizuki"}]}])
+    _write_patch_json(data_dir, "cn-2026-08-20-1",
+                      [{"type": "generic_update", "title": "游戏客户端更新", "heroes": []},
+                       {"type": "generic_update", "title": "错误修复", "heroes": []}])
+    en = [make_patch("en", "2026-08-19", title="Overwatch Patch Notes – August 19, 2026"),
+          make_patch("en", "2026-08-20", title="Overwatch Patch Notes – August 20, 2026")]
+    cn = [make_patch("cn", "2026-08-20", title="《守望先锋》补丁说明——2026年8月20日")]
+    old = pair_patches(en, cn)  # no signatures: same-day mispair
+    assert old.pairs[0]["en"]["patch_id"] == "en-2026-08-20-1"
+    new = pair_patches(en, cn, data_dir=data_dir)
+    assert new.pairs[0]["en"]["patch_id"] == "en-2026-08-19-1"
+    assert new.pairs[0]["cn"]["patch_id"] == "cn-2026-08-20-1"
+    assert new.unpaired_en == ["en-2026-08-20-1"]
+
+
+def test_signature_mismatch_keeps_max_cardinality(tmp_path):
+    """A signature-mismatched edge is penalized, never dropped: when it is the
+    only candidate the pair still forms (maximum cardinality preserved)."""
+    data_dir = tmp_path / "data"
+    _write_patch_json(data_dir, "en-2026-08-19-1",
+                      [{"type": "hero_update", "title": "Tank",
+                        "heroes": [{"slug": "orisa"}]}])
+    _write_patch_json(data_dir, "cn-2026-08-20-1",
+                      [{"type": "hero_update", "title": "重装",
+                        "heroes": [{"slug": "reinhardt"}]}])
+    en = [make_patch("en", "2026-08-19", title="Overwatch Patch Notes – August 19, 2026")]
+    cn = [make_patch("cn", "2026-08-20", title="《守望先锋》补丁说明——2026年8月20日")]
+    result = pair_patches(en, cn, data_dir=data_dir)
+    assert len(result.pairs) == 1  # still paired, nothing better exists
+
+
+def test_real_data_pairing_signature_invariants():
+    """Real data with signatures: the known mispairs are repaired, pair count
+    unchanged, and every pair's EN/CN signatures match where expected."""
+    from ow2_patch.pairing import _patch_signature
+
+    en, cn = patch_meta_from_manifest(DATA)
+    old = pair_patches(en, cn)
+    new = pair_patches(en, cn, data_dir=DATA)
+    assert len(new.pairs) == len(old.pairs) == 55  # max cardinality preserved
+    by_en = {p["en"]["patch_id"]: p["cn"]["patch_id"] for p in new.pairs}
+    # 2026-08-19/20 regression fixed
+    assert by_en["en-2026-08-19-1"] == "cn-2026-08-20-1"
+    assert "en-2026-08-20-1" not in by_en and "en-2026-08-20-1" in new.unpaired_en
+    # 2025 mispairs fixed (true partners restored)
+    assert by_en["en-2025-04-22-1"] == "cn-2025-04-23-1"
+    assert by_en["en-2025-05-14-1"] == "cn-2025-05-16-1"
+    assert by_en["en-2025-05-22-1"] == "cn-2025-05-23-1"

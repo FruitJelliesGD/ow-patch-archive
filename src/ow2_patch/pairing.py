@@ -22,6 +22,10 @@ _MONTHS = {
 _EN_TITLE_DATE_RE = re.compile(r"([A-Z][a-z]{2,8})\s+(\d{1,2}),\s*(\d{4})")
 _CN_TITLE_DATE_RE = re.compile(r"(\d{4})年(\d{1,2})月(\d{1,2})日")
 
+# signature mismatch penalty: larger than any date-based weight (~20M) so a
+# same-content 1-day-lag candidate always beats a same-day different page
+SIG_PENALTY = 100_000_000
+
 
 def _parse_title_date(title: str, site: str) -> str | None:
     if site == "cn":
@@ -127,14 +131,45 @@ def patch_meta_from_manifest(data_dir: pathlib.Path) -> tuple[list[dict], list[d
     return en, cn
 
 
-def pair_patches(en: list[dict], cn: list[dict]) -> PairResult:
+def _patch_signature(patch_data: dict) -> str:
+    """Normalized structural signature: section types + ordered hero slugs.
+
+    The EN and CN versions of the same logical patch parse into the same
+    section/hero structure (hero slugs are cross-language canonical), so equal
+    signatures are a strong same-content signal at pairing time — a same-day
+    page with different content must not beat the real 1-day-lag partner.
+    """
+    parts = []
+    for s in patch_data.get("sections", []):
+        heroes = ",".join(h.get("slug", "") for h in s.get("heroes", []))
+        parts.append(f"{s.get('type', '')}:{heroes}")
+    return "|".join(parts)
+
+
+def pair_patches(en: list[dict], cn: list[dict],
+                 data_dir: pathlib.Path | None = None) -> PairResult:
     """Maximum-cardinality minimum-weight pairing of EN and CN patches.
 
     No pre-matching on exact dates: in a 1-day-lag cluster (EN 26..29 vs CN 27..30)
     exact-date pairs would consume the shared dates and strand the tail. The weighted
-    matching maximizes the pair count first; the anchor-diff weight term already
-    prefers same-date pairs whenever that does not cost a match.
+    matching maximizes the pair count first; the anchor-diff weight term prefers
+    same-date pairs whenever that does not cost a match.
+
+    With data_dir set, a structural-signature penalty is added to edges whose EN
+    and CN content differs (section types + hero slugs): the same-day bias only
+    wins when the same-day page really is the same content. The penalty never
+    drops an edge, so maximum cardinality is preserved (a signature-mismatched
+    pair still forms when nothing better exists).
     """
+    signatures: dict[str, str] = {}
+    if data_dir is not None:
+        for site in ("en", "cn"):
+            for patch_file in (data_dir / "patches" / site).glob("*.json"):
+                try:
+                    data = json.loads(patch_file.read_text(encoding="utf-8"))
+                    signatures[data["id"]] = _patch_signature(data)
+                except Exception:
+                    continue
     result = PairResult()
     used_en: set[str] = set()
     used_cn: set[str] = set()
@@ -166,6 +201,8 @@ def pair_patches(en: list[dict], cn: list[dict]) -> PairResult:
                       + anchor_diff * 100
                       + min(title_diff, 99) * 10
                       + int(p["date"].replace("-", "")))
+            if signatures and signatures.get(p["patch_id"]) != signatures.get(q["patch_id"]):
+                weight += SIG_PENALTY
             mcmf.add_edge(cn_nodes[i - 1], en_nodes[j - 1], 1, weight)
             edges[(cn_nodes[i - 1], en_nodes[j - 1])] = (p, q)
 

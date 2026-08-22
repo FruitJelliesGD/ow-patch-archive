@@ -213,7 +213,7 @@ def regenerate_all(data_dir: pathlib.Path) -> None:
             patch_file.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
 
     en, cn = patch_meta_from_manifest(data_dir)
-    pair_result = pair_patches(en, cn)
+    pair_result = pair_patches(en, cn, data_dir=data_dir)
     write_pair_result(data_dir, pair_result)
     build_patches_index(data_dir, pair_result)
 
