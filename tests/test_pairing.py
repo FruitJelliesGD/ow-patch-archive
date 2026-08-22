@@ -230,3 +230,7 @@ def test_real_data_pairing_signature_invariants():
     # 2025-07-09: same-day Juno hotfix must not absorb the 7-hero CN page
     assert by_en["en-2025-07-03-1"] == "cn-2025-07-09-1"
     assert "en-2025-07-09-1" not in by_en and "en-2025-07-09-1" in new.unpaired_en
+    # Feb-2025: the all-generic-empty 2-section hotfix must NOT steal the
+    # Season-15 CN page from its true partner (normalization to empty would)
+    assert by_en["en-2025-02-18-1"] == "cn-2025-02-19-1"
+    assert "en-2025-02-20-1" not in by_en and "en-2025-02-20-1" in new.unpaired_en

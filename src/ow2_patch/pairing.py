@@ -139,18 +139,29 @@ def _patch_signature(patch_data: dict) -> str:
     signatures are a strong same-content signal at pairing time — a same-day
     page with different content must not beat the real 1-day-lag partner.
 
-    Trailing empty generic_update sections are stripped: one site may carry an
-    empty "Map Updates"-style stub that the other omits (e.g. en-2025-07-03 vs
-    cn-2025-07-09 differ only by one trailing generic_update:), and those are
-    not content.
+    Trailing empty generic_update sections are stripped (at least one section
+    stays): one site may carry an empty "Map Updates"-style stub that the
+    other omits (e.g. en-2025-07-03 vs cn-2025-07-09 differ only by one
+    trailing generic_update:), and those are not content.
     """
     parts = []
     for s in patch_data.get("sections", []):
         heroes = ",".join(h.get("slug", "") for h in s.get("heroes", []))
         parts.append(f"{s.get('type', '')}:{heroes}")
-    while parts and parts[-1] == "generic_update:":
+    while len(parts) > 1 and parts[-1] == "generic_update:":
         parts.pop()
     return "|".join(parts)
+
+
+def _signature_comparable(sig: str) -> bool:
+    """True when a signature carries content signal (any hero slug).
+
+    Two all-generic-empty patches (e.g. Feb-2025's 2-section hotfix vs the
+    8-section CN page) have no hero signal to compare; equality would let a
+    trivial stub steal a real pairing, so those edges fall back to the
+    date-based weights.
+    """
+    return any(seg.split(":", 1)[1] for seg in sig.split("|") if ":" in seg)
 
 
 def pair_patches(en: list[dict], cn: list[dict],
@@ -208,8 +219,19 @@ def pair_patches(en: list[dict], cn: list[dict],
                       + anchor_diff * 100
                       + min(title_diff, 99) * 10
                       + int(p["date"].replace("-", "")))
-            if signatures and signatures.get(p["patch_id"]) != signatures.get(q["patch_id"]):
-                weight += SIG_PENALTY
+            # same-day/title-day choices must pass a content check; 1-day-lag
+            # partners are trusted on the date weights (the CN side may lack
+            # hero sections entirely for some pages, e.g. Season-15's CN page,
+            # so strict signature equality can only validate same-day picks)
+            if signatures and min(anchor_diff, title_diff) == 0:
+                s_en = signatures.get(p["patch_id"])
+                s_cn = signatures.get(q["patch_id"])
+                # compare only when at least one side carries hero content; two
+                # all-generic-empty pages have no content signal to distinguish
+                if (s_en is not None and s_cn is not None
+                        and (_signature_comparable(s_en) or _signature_comparable(s_cn))
+                        and s_en != s_cn):
+                    weight += SIG_PENALTY
             mcmf.add_edge(cn_nodes[i - 1], en_nodes[j - 1], 1, weight)
             edges[(cn_nodes[i - 1], en_nodes[j - 1])] = (p, q)
 
