@@ -1,13 +1,22 @@
 ---
 feature: pairing-signature
-status: in-progress
+status: delivered
 updated: 2026-08-22
 branch: feat/pairing-signature
-commits: <base-sha>..<head-sha> # filled at delivery
+commits: f872bc0..78296bd
 ---
 
 # 配对算法结构签名修复（迭代十二）
 
+## Report
+
+**What was built** — 修复 EN/CN 配对算法"同日优先"权重导致的系统性错配，并防复发：配对候选边的权重增加**结构签名校验**——当选择基于同日/同标题日（`min(anchor_diff,title_diff)==0`）时，要求两侧签名一致（section 类型序列 + 按序 hero slug，patch JSON 已富化无需 resolver；尾部空 generic 节归一化、至少留 1 节），不一致的候选加 `SIG_PENALTY=100M`（> 最大日期权重 ~20M，**不拒绝边、最大基数不变**）；差日配对信任原日期权重（CN 侧可能整体缺 hero 节——Season 15 CN 页实证——严格签名只验证同日选择）。
+
+修复实证（vs f872bc0 恰 **10 处** en 侧配对变化、55 对不变、CN 多重集字节一致）：**2026-08-19/20**（cn-8.20 改配 en-8.19 Client Update，en-8.20 Hotfix 独立 unpaired，等 CN 8.21 发布后自动正确配对）；**2025-07-09**（en-07-03↔cn-07-09，en-07-09 Juno 热修 unpaired——尾部空 generic 归一化修复）；**2025-04-22↔04-23**、**2025-05-14↔05-16**（Season 15 平衡热修）+ 5 月中旬连锁（en-05-16→cn-05-21 SF6、en-05-22→cn-05-23 bugfix）；**2025-02 恢复基线**（en-02-18↔cn-02-19 Season 15，en-02-20 热修 unpaired——全空节折叠回归经"仅同日验证"规则修复）。
+
+**Verification** — `pytest -q` → 191 passed（+5：同日异内容/差 1 天同内容单测、最大基数兜底单测、尾部空 generic 归一化单测、真实数据不变量——6 目标配对 + Feb 基线断言）；`node tools/_smoke_web.js` → ALL WEB ASSERTIONS OK（重基线 indexPatches 343、entryCards 919）；rebuild 字节收敛；layout 12/12；配对 diff 复核恰 10 处且 fresh pairing 与提交数据字节一致。三轮独立审查：首轮 critical = 07-09 未修（尾部空节致严格签名不等）→ 归一化修复；复审 critical = Feb 回归（全空节折叠 `""==""` 误配，en-02-20 抢 cn-02-19）→ 改为仅同日选择验证（Feb 属"CN 缺 hero 节"，真配对有 hero，纯签名无法兼得 8.19/8.20 与 Feb 两场景）；第三轮 **0 critical**（6 目标全对、Feb 字节级恢复、残留风险低——同日正确配对本就日期权重胜出，惩罚只压制错误同日内容）。
+
+**Journey log** — ① 配对错配根因 = 权重同日优先无内容信号，**系统性**（8.19/8.20 + 3 处 2025 均实证）；patch JSON 已富化 slug 可直接做结构签名。② 严格签名等式的两个陷阱：**尾部空 generic 节**（en-07-03 7 节 vs cn-07-09 6 节，解析 stub 差异）与**全空节折叠**（`while parts[-1]=="generic_update:"` 把全 generic 补丁折叠成 `""` 致 `""==""` 误配）——归一化必须"至少留 1 节"且只验证同日选择。③ **CN 缺 hero 节场景**（Season 15 CN 页无 hero_update，真配对 EN 有 hero）证明签名只能验证"同日偏好"，差日信任日期权重——纯签名无法同时正确 8.19/8.20 与 Feb 两场景，`min(anchor,title)==0` 门控是平衡点。④ GitHub Actions run 日志 API 需管理员权限（403），匿名只能查 runs/issues 列表；通知根因 = SMTP 静默失败 + GitHub 平台提醒设置（Issue 创建本身正常）。
 ## Report
 
 ## [S1] Problem
@@ -54,4 +63,4 @@ EN/CN 补丁配对发生**系统性错配**：配对权重"同日优先"（`min(
 - [x] T3: 单测（签名单测 + 真实数据不变量：55 对配对、8.19/8.20 正确、2025 三错配修复）— acceptance: pytest 全过（covers: D1；depends: T2）
 - [x] T4: rebuild 重建 + 配对 diff 校验 — acceptance: 新旧 patch_pairs 仅 8 处差异（8.19/8.20 + 3 处 2025 + 5 月中旬连锁）；p-2026-08-19-1=en-8.19+cn-8.20、en-2026-08-20-1 unpaired（covers: D2；depends: T3）
 - [x] T5: 全量验证（pytest/smoke 重基线/rebuild 收敛）— acceptance: 全绿（covers: 全部；depends: T4）
-- [ ] T6: 独立 review + 规格定稿 — acceptance: review 无 critical、status: delivered（covers: 全部；depends: T5）
+- [x] T6: 独立 review + 规格定稿 — acceptance: review 无 critical、status: delivered（covers: 全部；depends: T5）
