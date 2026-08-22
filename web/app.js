@@ -167,6 +167,60 @@ function modeBadge(mode) {
 
 /* ---------- time browser (index.html) ---------- */
 
+// Sticky year/month jump bar: year select repopulates the month select with
+// months that actually contain patches; the button smooth-scrolls to the
+// matching year/month anchor. Built with createElement/appendChild only so
+// the smoke DOM shim can exercise it.
+function buildJumpBar(years) {
+  const bar = document.getElementById("jump-bar");
+  const hint = document.createElement("span");
+  hint.className = "jump-hint";
+  hint.textContent = "跳转到：";
+  const yearSel = document.createElement("select");
+  yearSel.id = "jump-year";
+  yearSel.title = "选择年份";
+  const monthSel = document.createElement("select");
+  monthSel.id = "jump-month";
+  monthSel.title = "选择月份";
+  const btn = document.createElement("button");
+  btn.className = "jump-btn";
+  btn.textContent = "跳转";
+  bar.appendChild(hint);
+  bar.appendChild(yearSel);
+  bar.appendChild(monthSel);
+  bar.appendChild(btn);
+
+  const yearList = [...years.keys()].sort((a, b) => b.localeCompare(a));
+  for (const y of yearList) {
+    const opt = document.createElement("option");
+    opt.value = y;
+    opt.textContent = `${y} 年`;
+    yearSel.appendChild(opt);
+  }
+  let selYear = yearList[0];
+
+  function fillMonths() {
+    monthSel.replaceChildren();
+    const months = [...(years.get(selYear) || new Map()).keys()].sort((a, b) => b.localeCompare(a));
+    for (const m of months) {
+      const opt = document.createElement("option");
+      opt.value = m;
+      opt.textContent = MONTH_LABEL[Number(m)];
+      monthSel.appendChild(opt);
+    }
+  }
+
+  yearSel.addEventListener("change", () => {
+    selYear = yearSel.value;
+    fillMonths();
+  });
+  btn.addEventListener("click", () => {
+    document.getElementById(`year-${selYear}-month-${monthSel.value}`)
+      ?.scrollIntoView?.({ behavior: "smooth" });
+  });
+  fillMonths();
+}
+
 async function initIndex() {
   const data = await fetchJSON("data/patches_index.json");
   document.getElementById("updated").textContent = fmtLocalTs(data.updated) || "-";
@@ -182,20 +236,27 @@ async function initIndex() {
     months.get(m).push(p);
   }
 
+  buildJumpBar(years);
+
   const container = document.getElementById("patch-list");
   for (const [year, months] of [...years.entries()].sort((a, b) => b[0].localeCompare(a[0]))) {
     const yearSection = document.createElement("section");
     yearSection.className = "year";
+    yearSection.id = `year-${year}`;
     yearSection.innerHTML = `<h2 class="year-title">${esc(year)}</h2>`;
     for (const [month, entries] of [...months.entries()].sort((a, b) => b[0].localeCompare(a[0]))) {
       const monthSection = document.createElement("div");
       monthSection.className = "month";
+      monthSection.id = `year-${year}-month-${month}`;
       monthSection.innerHTML = `<h3 class="month-title">${MONTH_LABEL[Number(month)]}</h3>`;
       const list = document.createElement("div");
       list.className = "patch-list";
       for (const p of entries) {
         const site = p.sites.includes("cn") ? "cn" : "en";
         const title = site === "cn" ? (p.title_cn || p.title_en) : (p.title_en || p.title_cn);
+        const firstSection = site === "cn"
+          ? (p.first_section_cn || p.first_section_en)
+          : (p.first_section_en || p.first_section_cn);
         const a = document.createElement("a");
         a.className = "patch-entry";
         a.href = `patch.html?id=${encodeURIComponent(p.id)}&lang=${site}`;
@@ -203,6 +264,7 @@ async function initIndex() {
           <span class="patch-entry-date">${esc(p.date)}</span>
           ${siteBadges(p.sites)}
           ${modeBadge(p.mode)}
+          ${firstSection ? `<span class="badge section" title="${esc(firstSection)}">${esc(firstSection)}</span>` : ""}
           <span class="patch-entry-title">${esc(title || p.id)}</span>`;
         list.appendChild(a);
       }

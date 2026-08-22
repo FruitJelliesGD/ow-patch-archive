@@ -132,6 +132,54 @@ def test_real_patches_index_mode_invariants():
     assert all(p.get("mode") for p in index["patches"])
 
 
+def test_patches_index_first_section_fields(tmp_path):
+    """first_section_en/cn mirror each side's first NON-EMPTY section title;
+    patches with no titled sections (OW1 raw_text) yield ""."""
+    from ow2_patch.pairing import PairResult, build_patches_index
+
+    data_dir = tmp_path / "data"
+    _write_patch_json(data_dir, "en-2026-08-11-1", [
+        {"type": "generic_update", "title": "Reign of Talon - Season 4", "heroes": []},
+        {"type": "hero_update", "title": "Tank", "heroes": [{"slug": "orisa"}]},
+    ])
+    _write_patch_json(data_dir, "cn-2026-08-12-1", [
+        {"type": "generic_update", "title": "", "heroes": []},
+        {"type": "hero_update", "title": "重装", "heroes": [{"slug": "orisa"}]},
+    ])
+    _write_patch_json(data_dir, "en-2016-05-27-1", [])  # raw_text-only page
+    result = PairResult(
+        pairs=[{
+            "id": "p-2026-08-11-1", "date": "2026-08-11",
+            "en": {"patch_id": "en-2026-08-11-1", "date": "2026-08-11", "seq": 1,
+                   "title": "Overwatch Patch Notes", "url": "u"},
+            "cn": {"patch_id": "cn-2026-08-12-1", "date": "2026-08-12", "seq": 1,
+                   "title": "《守望先锋》补丁说明", "url": "u"},
+        }],
+        unpaired_en=["en-2016-05-27-1"],
+    )
+    build_patches_index(data_dir, result)
+    index = json.loads((data_dir / "patches_index.json").read_text(encoding="utf-8"))
+    by_id = {p["id"]: p for p in index["patches"]}
+    pair = by_id["p-2026-08-11-1"]
+    assert pair["first_section_en"] == "Reign of Talon - Season 4"
+    # an empty leading title is skipped: first non-empty section wins
+    assert pair["first_section_cn"] == "重装"
+    legacy = by_id["en-2016-05-27-1"]
+    assert legacy["first_section_en"] == ""
+    assert legacy["first_section_cn"] is None
+
+
+def test_real_patches_index_first_section_invariants():
+    """Regenerated index: every entry carries both first_section keys, and a
+    known season patch exposes its first section title on both sides."""
+    index = json.loads((DATA / "patches_index.json").read_text(encoding="utf-8"))
+    by_id = {p["id"]: p for p in index["patches"]}
+    for p in index["patches"]:
+        assert "first_section_en" in p and "first_section_cn" in p
+    assert by_id["p-2026-08-11-1"]["first_section_en"].startswith("Reign of Talon")
+    assert by_id["p-2026-08-11-1"]["first_section_cn"]
+
+
 # ---------- structural-signature weighting ----------
 
 def _write_patch_json(data_dir, patch_id, sections):
@@ -141,7 +189,8 @@ def _write_patch_json(data_dir, patch_id, sections):
     d.mkdir(parents=True, exist_ok=True)
     (d / f"{'-'.join(parts[1:4])}-{parts[4]}.json").write_text(
         json.dumps({"id": patch_id, "site": site, "date": "-".join(parts[1:4]),
-                    "title": f"{site} {patch_id}", "sections": sections},
+                    "title": f"{site} {patch_id}", "url": f"https://x/{patch_id}",
+                    "sections": sections},
                    ensure_ascii=False), encoding="utf-8")
 
 

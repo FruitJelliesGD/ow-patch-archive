@@ -278,6 +278,11 @@ def build_patches_index(data_dir: pathlib.Path, result: PairResult) -> None:
     only reachable via its EN pair), then the official section markers
     (Community Crafted / 社区创造模式) catch standard-titled community-mode
     patches (p-2026-06-30-1); unpaired entries use their own title + sections.
+
+    Each entry also carries `first_section_en`/`first_section_cn` (mirroring
+    the `title_*` pattern): the first non-empty section title of that side's
+    patch, "" when the patch has no titled sections (e.g. OW1 raw_text pages).
+    The time-browser renders it as an at-a-glance content badge.
     """
     from .modes import STANDARD, patch_mode_with_sections
 
@@ -291,18 +296,25 @@ def build_patches_index(data_dir: pathlib.Path, result: PairResult) -> None:
             return []
         return [s.get("title") or "" for s in data.get("sections", [])]
 
-    def _pair_mode(en: dict, cn: dict) -> str:
-        en_mode = patch_mode_with_sections(en["title"], _section_titles(en["patch_id"]))
+    def _first_section(titles: list[str]) -> str:
+        return next((t for t in titles if t), "")
+
+    def _pair_mode(en: dict, cn: dict, en_titles: list[str], cn_titles: list[str]) -> str:
+        en_mode = patch_mode_with_sections(en["title"], en_titles)
         if en_mode != STANDARD:
             return en_mode
-        return patch_mode_with_sections(cn["title"], _section_titles(cn["patch_id"]))
+        return patch_mode_with_sections(cn["title"], cn_titles)
 
     index: list[dict] = []
     for pair in result.pairs:
-        mode = _pair_mode(pair["en"], pair["cn"])
+        en_titles = _section_titles(pair["en"]["patch_id"])
+        cn_titles = _section_titles(pair["cn"]["patch_id"])
+        mode = _pair_mode(pair["en"], pair["cn"], en_titles, cn_titles)
         index.append({
             "id": pair["id"], "date": pair["date"],
             "title_en": pair["en"]["title"], "title_cn": pair["cn"]["title"],
+            "first_section_en": _first_section(en_titles),
+            "first_section_cn": _first_section(cn_titles),
             "url_en": pair["en"]["url"], "url_cn": pair["cn"]["url"],
             "sites": ["en", "cn"],
             "patch_id_en": pair["en"]["patch_id"], "patch_id_cn": pair["cn"]["patch_id"],
@@ -316,16 +328,20 @@ def build_patches_index(data_dir: pathlib.Path, result: PairResult) -> None:
         meta = json.loads(
             (data_dir / "patches" / site / f"{date_str}-{seq}.json").read_text(encoding="utf-8")
         )
+        titles = _section_titles(patch_id)
+        first_section = _first_section(titles)
         index.append({
             "id": patch_id, "date": date_str,
             "title_en": meta["title"] if site == "en" else None,
             "title_cn": meta["title"] if site == "cn" else None,
+            "first_section_en": first_section if site == "en" else None,
+            "first_section_cn": first_section if site == "cn" else None,
             "url_en": meta["url"] if site == "en" else None,
             "url_cn": meta["url"] if site == "cn" else None,
             "sites": [site],
             "patch_id_en": patch_id if site == "en" else None,
             "patch_id_cn": patch_id if site == "cn" else None,
-            "mode": patch_mode_with_sections(meta["title"], _section_titles(patch_id)),
+            "mode": patch_mode_with_sections(meta["title"], titles),
         })
 
     index.sort(key=lambda e: (e["date"], e["id"]), reverse=True)

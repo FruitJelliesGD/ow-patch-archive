@@ -21,6 +21,7 @@ function makeEl(tag) {
     querySelectorAll() { return []; },
     getAttribute() { return null; },
     addEventListener() {},
+    scrollIntoView() {},
     classList: { toggle() {} },
   };
 }
@@ -64,6 +65,13 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
     results.indexPatches = patchEntries;
     results.indexHasModeBadge = findHtml(document.getElementById("patch-list"), /愚人节/);
     results.updatedFmt = /^\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2} UTC[+-]\\d+(?::\\d{2})?$/.test(document.getElementById("updated").textContent);
+
+    // jump bar: year select (2016-2026) + month select populated for the
+    // default (latest) year; patch entries carry the first-section badge
+    const jumpBar = document.getElementById("jump-bar");
+    results.jumpYears = jumpBar.children[1] ? jumpBar.children[1].children.length : 0;
+    results.jumpMonths = jumpBar.children[2] ? jumpBar.children[2].children.length : 0;
+    results.indexHasSectionBadge = findHtml(document.getElementById("patch-list"), /badge section/);
 
     await initEntries();
     results.filterChips = document.getElementById("filters").children.length;
@@ -220,6 +228,9 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
     if (!results.firstCardHref.includes("entry.html?hero=")) fail.push("firstCardHref=" + results.firstCardHref);
     if (results.entryCards !== 919) fail.push("entryCards=" + results.entryCards);
     if (!results.indexHasModeBadge) fail.push("index mode badge missing");
+    if (results.jumpYears !== 11) fail.push("jumpYears=" + results.jumpYears);
+    if (!results.jumpMonths) fail.push("jump month options missing");
+    if (!results.indexHasSectionBadge) fail.push("index section badge missing");
     if (!/脉冲步枪/.test(results.entryName)) fail.push("entryName=" + results.entryName);
     if (!/更改记录/.test(results.entryMeta)) fail.push("entryMeta=" + results.entryMeta);
     if (!results.entryHasValues) fail.push("entry values rows missing");
