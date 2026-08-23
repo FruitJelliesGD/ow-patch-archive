@@ -1,14 +1,23 @@
 ---
 feature: hero-changes-badge
-status: in-progress
+status: delivered
 updated: 2026-08-22
 branch: feat/hero-changes-badge
-commits: # filled at delivery
+commits: 96e7675..81132c2
 ---
 
 # 「英雄改动」徽章 + 筛选 chip（按时间预览页）
 
 ## Report
+
+**What was built** — 按时间预览页（index.html）补丁条目新增**「英雄改动」徽章**，并配套新增同名**筛选 chip**。后端 `build_patches_index` 为每条目新增结构化布尔字段 `has_hero_changes`（与 mode 无关）：任一侧补丁 JSON 存在 ≥1 个 balance hero 块（复用 `_is_balance_hero`，排除 Stadium 面具外观块与物品块）且携带实际改动内容（命名的 ability 带 changes / 任意 perk / 有文本的 general / 有行的 stadium item）——与 `build_hero_files` 向标准英雄历史产记录的口径完全一致，自动排除 `en-2022-01-06-1` 型空内容英雄块。前端徽章与 chip 统一按 `mode === "standard" && has_hero_changes` 门控：非常规模式补丁（愚人节/PTR/实验/试玩/社区创造/QP 黑客/公告）即使含英雄块（如 `p-2026-04-01-1` 愚人节 50 个英雄块）也不标注。`hero_changes` 键加入 app.js `CATEGORY_LABEL`（`setFilter`/`?cat=` 白名单随之生效），chip 在 CATEGORY_ORDER chips 之后追加，过滤谓词与徽章同口径。
+
+- **数据实证**（343 条目）：徽章面 **181**（standard+flag）；10 个非常规补丁 flag=true（证明 mode 门控必要）；锚点全符合——`p-2026-08-11-1`（标准，32 块）true、`p-2026-08-19-1`（标准，无英雄）false、`en-2022-10-04-1`（公告）false、`en-2022-01-06-1`（空内容块）false。
+- **review 一轮**：general-2 全部验收标准 MET、0 critical；3 项非关键中采纳 1（fixture 补 named-ability-with-changes 正例），驳回 2（smoke `children[4]` 索引——DOM shim 的 getElementById 是注册表、createElement 元素取不到，属既有约束；`_general_text` 无类型守卫——与生产 `build_hero_files` 逐字同构，None general 属不可能场景且生产同样失败）。
+
+**Verification** — `pytest -q` → 244 passed（基线 242 +2 新增，warnings 为既有基线）；`node tools/_smoke_web.js` → ALL WEB ASSERTIONS OK（indexHasHeroChangesBadge / indexSpecialNoHeroBadge / indexAnnouncementNoHeroBadge / chipCount=16 / heroFilteredCount=181 且全带徽章）；`python tools/rebuild.py --data data` 双跑字节幂等，`git diff` 数据侧仅 `data/patches_index.json`（其余 858 个数据文件零变化）；`npx --yes -p playwright node tools/_layout_check.js` → ALL LAYOUT ASSERTIONS OK（12/12）；真实浏览器端到端（serve + playwright）：徽章 181 个、`#ffd54f` 金色渲染、chip 点击过滤 181 条全部带徽章。
+
+**Journey log** — ① 工作区陷阱：会话 cwd 切到 worktree 后，edit/write 用主仓库绝对路径会把改动写进 main checkout——必须先 `git restore` 主库误改文件再对 worktree 路径重放（本特性一次踩坑，已清理干净）。② editable install 指向主仓库 src：worktree 内跑 pytest 必须 `PYTHONPATH=<worktree>/src`，否则 import 的是 main 的代码（fixture 测试首跑因此假失败）。③ 「英雄改动」语义不能只看 hero 块存在：`en-2022-01-06-1`（标准、6 块但 changes 全空）会被误标——flag 必须与 `build_hero_files` 产记录口径一致（内容感知），实测 182 块存在 vs 181 内容判定，仅此一例不同。④ `hero_changes` 键必须进 CATEGORY_LABEL：`setFilter`/`?cat=` 经 `CATEGORY_LABEL[k]` 白名单，缺键会被静默丢弃（review 前自查发现，勿只加 chip 渲染）。⑤ 常规补丁内嵌 QP 黑客内容块（如 `p-2026-01-08-1`）保持 standard mode、其英雄数据本就在标准历史 → 徽章显示，与英雄历史口径一致（系统既有约定）。
 
 ## [S1] Problem
 
@@ -66,10 +75,10 @@ commits: # filled at delivery
 
 ## Tasks
 
-- [ ] T1: 特性文档 + worktree — acceptance: 本文档含设计与任务；`.worktrees/hero-changes-badge` 分支 `feat/hero-changes-badge`（covers: 全部）
-- [ ] T2: pairing.py `has_hero_changes` + pytest — acceptance: fixture 5 场景 + 真实数据不变量全绿（covers: D1 D2 D5；depends: T1）
-- [ ] T3: rebuild 重生成 — acceptance: 仅 patches_index.json 变化、双跑幂等（covers: D2；depends: T2）
-- [ ] T4: 前端徽章+chip+样式 — acceptance: 条目徽章（standard+flag）、chip 追加、过滤生效、`?cat=hero_changes` 种子（covers: D3 D4；depends: T3）
-- [ ] T5: smoke 断言 — acceptance: 正/负例徽章断言、chipCount=16、hero_changes 过滤断言全过（covers: D5；depends: T4）
-- [ ] T6: 全量验证 — acceptance: pytest/smoke/rebuild 幂等/layout 全绿（covers: 全部；depends: T5）
-- [ ] T7: 独立 review + 规格定稿 — acceptance: review 无 critical、status: delivered（covers: 全部；depends: T6）
+- [x] T1: 特性文档 + worktree — acceptance: 本文档含设计与任务；`.worktrees/hero-changes-badge` 分支 `feat/hero-changes-badge`（covers: 全部）
+- [x] T2: pairing.py `has_hero_changes` + pytest — acceptance: fixture 5 场景 + 真实数据不变量全绿（covers: D1 D2 D5；depends: T1）
+- [x] T3: rebuild 重生成 — acceptance: 仅 patches_index.json 变化、双跑幂等（covers: D2；depends: T2）
+- [x] T4: 前端徽章+chip+样式 — acceptance: 条目徽章（standard+flag）、chip 追加、过滤生效、`?cat=hero_changes` 种子（covers: D3 D4；depends: T3）
+- [x] T5: smoke 断言 — acceptance: 正/负例徽章断言、chipCount=16、hero_changes 过滤断言全过（covers: D5；depends: T4）
+- [x] T6: 全量验证 — acceptance: pytest/smoke/rebuild 幂等/layout 全绿（covers: 全部；depends: T5）
+- [x] T7: 独立 review + 规格定稿 — acceptance: review 无 critical、status: delivered（covers: 全部；depends: T6）
