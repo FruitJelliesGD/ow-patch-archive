@@ -301,10 +301,13 @@ function renderTimeBrowser(patches, filterFn) {
       list.className = "patch-list";
       for (const p of entries) {
         const site = p.sites.includes("cn") ? "cn" : "en";
-        const title = site === "cn" ? (p.title_cn || p.title_en) : (p.title_en || p.title_cn);
-        const firstSection = site === "cn"
-          ? (p.first_section_cn || p.first_section_en)
-          : (p.first_section_en || p.first_section_cn);
+        const longTitle = site === "cn" ? (p.title_cn || p.title_en) : (p.title_en || p.title_cn);
+        // the entry title is the first section title (Hotfix Update / 在线修正
+        // 更新); the boilerplate official title only serves as a fallback for
+        // the rare patches without any section titles
+        const title = site === "cn"
+          ? (p.first_section_cn || p.first_section_en || longTitle)
+          : (p.first_section_en || p.first_section_cn || longTitle);
         const chars = site === "cn" ? (p.chars_cn ?? p.chars_en) : (p.chars_en ?? p.chars_cn);
         const a = document.createElement("a");
         a.className = "patch-entry";
@@ -315,7 +318,6 @@ function renderTimeBrowser(patches, filterFn) {
           ${modeBadge(p.mode)}
           ${heroChangesBadge(p)}
           ${categoryBadges(p)}
-          ${firstSection ? `<span class="badge section" title="${esc(firstSection)}">${esc(firstSection)}</span>` : ""}
           <span class="patch-entry-title">${esc(title || p.id)}</span>
           ${chars ? `<span class="patch-entry-chars">${Number(chars).toLocaleString()} 字</span>` : ""}`;
         list.appendChild(a);

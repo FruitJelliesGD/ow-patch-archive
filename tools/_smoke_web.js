@@ -137,8 +137,25 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
     const jumpBar = document.getElementById("jump-bar");
     results.jumpYears = jumpBar.children[1] ? jumpBar.children[1].children.length : 0;
     results.jumpMonths = jumpBar.children[2] ? jumpBar.children[2].children.length : 0;
-    results.indexHasSectionBadge = findHtml(document.getElementById("patch-list"), /badge section/);
     results.indexHasChars = findHtml(document.getElementById("patch-list"), /\\d[\\d,]* 字/);
+    // entry title = first section title (在线修正更新 / Hotfix Update); the
+    // boilerplate official title is gone, as is the redundant section badge
+    let aug12EntryHtml = "", aug20EntryHtml = "";
+    for (const year of document.getElementById("patch-list").children) {
+      for (const month of year.children) {
+        for (const list of month.children) {
+          if (list.className !== "patch-list") continue;
+          for (const entry of list.children) {
+            const href = entry.href || "";
+            if (href.includes("p-2026-08-12-1")) aug12EntryHtml = entry.innerHTML || "";
+            if (href.includes("en-2026-08-20-1")) aug20EntryHtml = entry.innerHTML || "";
+          }
+        }
+      }
+    }
+    results.indexTitleIsFirstSection = /patch-entry-title">在线修正更新</.test(aug12EntryHtml)
+      && /patch-entry-title">Hotfix Update</.test(aug20EntryHtml);
+    results.indexNoSectionBadge = !findHtml(document.getElementById("patch-list"), /badge section/);
 
     await initEntries();
     results.filterChips = document.getElementById("filters").children.length;
@@ -310,8 +327,9 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
     if (!results.heroFilterAllBadged) fail.push("hero-changes filter shows unbadged entry");
     if (results.jumpYears !== 11) fail.push("jumpYears=" + results.jumpYears);
     if (!results.jumpMonths) fail.push("jump month options missing");
-    if (!results.indexHasSectionBadge) fail.push("index section badge missing");
     if (!results.indexHasChars) fail.push("index chars missing");
+    if (!results.indexTitleIsFirstSection) fail.push("index entry title is not the first section title");
+    if (!results.indexNoSectionBadge) fail.push("index section badge still present");
     if (!/脉冲步枪/.test(results.entryName)) fail.push("entryName=" + results.entryName);
     if (!/更改记录/.test(results.entryMeta)) fail.push("entryMeta=" + results.entryMeta);
     if (!results.entryHasValues) fail.push("entry values rows missing");

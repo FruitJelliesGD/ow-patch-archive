@@ -130,15 +130,6 @@ main { max-width: 960px; margin: 0 auto; padding: 20px; }
 .badge.mode-owl { background: rgba(244, 67, 54, 0.16); color: #ef5350; }
 /* structural hero-changes badge (time browser): standard-mode balance patches */
 .badge.hero-changes { background: rgba(255, 213, 79, 0.15); color: #ffd54f; }
-/* patch first-section-title badge (time browser): long titles ellipsize */
-.badge.section {
-  background: rgba(129, 199, 132, 0.14);
-  color: #81c784;
-  max-width: 240px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
 .mode-toggle {
   display: block;
   margin: 8px 16px;
