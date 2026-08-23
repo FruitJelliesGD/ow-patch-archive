@@ -51,6 +51,18 @@ _MODE_KEYS = ("quick_play_hacked", "april_fools", "experiment_6v6", "hero_trial"
     ("自定游戏", ["workshop"]),
     ("Overwatch League", ["owl"]),
     ("守望先锋联赛", ["owl"]),
+    # crossover — EN + CN positives
+    ("NEW COLLABORATION... X ONE-PUNCH MAN", ["crossover"]),
+    ("Overwatch 2 X LE SSERAFIM", ["crossover"]),
+    ("X COWBOY BEBOP", ["crossover"]),
+    ("X TRANSFORMERS", ["crossover"]),
+    ("x World of Warcraft", ["crossover"]),
+    ("Warcraft: 30 Anniversary", ["event", "crossover"]),
+    ("X MY HERO ACADEMIA®", ["crossover"]),
+    ("x Phantom Thieves", ["crossover"]),
+    ("x Street Fighter 6", ["crossover"]),
+    ("OVERWATCH 2 X PORSCHE", ["crossover"]),
+    ("《守望先锋》x 心之怪盗团", ["crossover"]),
     # multi-category, stable CATEGORY_ORDER
     ("Season 18 Stadium Quick Play", ["season", "stadium"]),
     # negatives — generic words must not hit curated phrases
@@ -61,6 +73,15 @@ _MODE_KEYS = ("quick_play_hacked", "april_fools", "experiment_6v6", "hero_trial"
     ("A season of changes", []),
     ("a map vote", []),
     ("league of players", []),
+    # crossover negatives — near-miss phrases and body-level mentions
+    ("One Punch highlight intro bug", []),
+    ("Avatar selection screen", []),
+    ("合作模式即将上线", []),
+    ("一拳轰飞", []),
+    ("Personal settings", []),
+    ("All Might skin bug fixed", []),
+    ("Diablo area in Blizzard World", []),
+    ("魔兽争霸地图区域", []),
     ("", []),
     (None, []),
 ])
@@ -69,8 +90,8 @@ def test_categorize_content(text: str | None, expected: list[str]):
 
 
 def test_category_tables_complete():
-    assert len(CATEGORY_ORDER) == 14
-    assert len(CATEGORY_RULES) == 14
+    assert len(CATEGORY_ORDER) == 15
+    assert len(CATEGORY_RULES) == 15
     assert set(CATEGORY_ORDER) == set(CATEGORY_LABELS)
     assert [key for key, _en, _cn in CATEGORY_RULES] == CATEGORY_ORDER
 
@@ -182,3 +203,17 @@ def test_whole_scope_mode_categories_keep_body_signal():
     mentions the mode keeps the badge (p-2026-01-08-1 case)."""
     ctx = _ctx(title="Retail Patch Notes", strings=["Quick Play: Hacked: Assault Returns!"])
     assert "quick_play_hacked" in categorize_patch(ctx)
+
+
+def test_crossover_title_sections_scope():
+    """crossover is TITLE_SECTIONS: body-level mentions (dev-note 联动, skin
+    bug 'All Might') must not badge; section and block titles do."""
+    body = _ctx(title="Retail Patch Notes", strings=[
+        "联动内容即将上线", "Fixed All Might skin bug", "this collab is coming"])
+    assert "crossover" not in categorize_patch(body)
+    sec = _ctx(sections=[_sec("OVERWATCH 2 X LE SSERAFIM")])
+    assert "crossover" in categorize_patch(sec)
+    blk = _ctx(sections=[_sec("General", block_titles=["World of Warcraft: Pre-purchase"])])
+    assert "crossover" in categorize_patch(blk)
+    cn = _ctx(sections=[_sec("《守望先锋》x 心之怪盗团")])
+    assert "crossover" in categorize_patch(cn)

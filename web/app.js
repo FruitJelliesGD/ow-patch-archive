@@ -29,12 +29,13 @@ const CATEGORY_LABEL = {
   community_created: "社区创造模式",
   event: "活动", season: "新赛季", new_hero: "新英雄", new_map: "新地图",
   stadium: "角斗领域", arcade: "街机", workshop: "自定义工坊", owl: "联赛",
+  crossover: "联动",
   hero_changes: "英雄改动",
 };
 const CATEGORY_ORDER = [
   "quick_play_hacked", "april_fools", "experiment_6v6", "hero_trial", "ptr",
   "community_created", "event", "season", "new_hero", "new_map",
-  "stadium", "arcade", "workshop", "owl",
+  "stadium", "arcade", "workshop", "owl", "crossover",
 ];
 const MONTH_LABEL = ["", "1月", "2月", "3月", "4月", "5月", "6月",
   "7月", "8月", "9月", "10月", "11月", "12月"];

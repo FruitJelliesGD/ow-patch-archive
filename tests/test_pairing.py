@@ -150,6 +150,18 @@ def test_real_patches_index_categories_invariants():
     assert "season" not in by_id["en-2021-09-07-1"]["categories"]  # Lockout Elimination S4
     assert "season" not in by_id["en-2021-12-16-1"]["categories"]  # No Limits S2
     assert sum("season" in p.get("categories", []) for p in index["patches"]) == 27
+    # crossover: 13 rule-tagged (X-brand section/block titles) + 2 manual
+    # overrides (Diablo, BlizzCon — description-only)
+    for xid in ("en-2018-01-30-1", "en-2019-10-24-1", "en-2023-03-07-1",
+                "en-2023-10-31-1", "en-2024-03-08-1", "en-2024-05-14-1",
+                "en-2024-07-05-1", "en-2024-09-17-1", "en-2024-10-15-1",
+                "en-2024-11-08-1", "p-2025-03-18-1", "p-2025-05-16-1",
+                "p-2025-09-16-1", "en-2023-10-10-1", "en-2019-10-15-1"):
+        assert "crossover" in by_id[xid]["categories"]
+    # body-level noise must not badge: All Might skin bug, CN 联动 dev-note
+    assert "crossover" not in by_id["en-2024-10-28-1"]["categories"]
+    assert "crossover" not in by_id["p-2026-02-09-1"]["categories"]
+    assert sum("crossover" in p.get("categories", []) for p in index["patches"]) == 15
     assert all(isinstance(p.get("categories"), list) for p in index["patches"])
     assert all("content_qp_hacked" not in p for p in index["patches"])
 
