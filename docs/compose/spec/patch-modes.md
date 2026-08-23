@@ -10,7 +10,7 @@ commits: 0965448..c4f96f7
 
 ## Report
 
-**What was built** — 区分常规与非常规模式补丁（社区模式 Quick Play: Hacked、社区创造模式 Community Crafted、愚人节、6v6 实验、英雄试玩、PTR、公告），非常规数据**不再干扰常规历史**：英雄轨迹/词条/数值轨迹默认只显示常规、可切换查看非常规；首页时间浏览与补丁详情页列出全部补丁并带模式徽标。
+**What was built** — 区分常规与非常规模式补丁（快速比赛：黑客入侵 Quick Play: Hacked、社区创造模式 Community Crafted、愚人节、6v6 实验、英雄试玩、PTR、公告），非常规数据**不再干扰常规历史**：英雄轨迹/词条/数值轨迹默认只显示常规、可切换查看非常规；首页时间浏览与补丁详情页列出全部补丁并带模式徽标。
 
 - **标题规则 + section 信号**（新模块 `modes.py`）：标题关键词（含 CN 愚人节 `完全正常`）→ 各模式；默认 standard；大小写变体（`OVERWATCH PATCH NOTES`）不误伤；**standard 标题但含官方 section 标记 `Community Crafted|社区创造模式` → `community_created`**（标题常规的社区创造补丁 p-2026-06-30-1/p-2026-07-01-1/en-2024-06-20-1 经此识别，非手工清单）。
 - **数据层**：mode 唯一权威 = patches_index **pair 级**（任一侧非 standard 即非 standard，en 优先，再 section 信号）——`cn-2025-04-01-1`（中文标题 144 条记录）经 pair 兜底判为 april_fools；build_hero_files 反查 patch_id→mode 给每条时间线记录打标（**全部记录保留**供切换），**values 只喂常规记录**；entries_index 常规口径。实测：342/342 索引条目、10,788/10,788 时间线记录全部带 mode；**standard 9,540 + special 1,248**（community_created 613、april_fools 418 含 CN 144、experiment_6v6 113、hero_trial 104；quick_play_hacked/ptr/announcement 无 hero 结构 0 条）；entries 987→921。
@@ -23,7 +23,7 @@ commits: 0965448..c4f96f7
 
 ## [S1] Problem
 
-英雄轨迹、词条、数值轨迹混入了非常规模式补丁（社区模式 Quick Play: Hacked、愚人节、6v6 实验、英雄试玩、PTR、公告）的英雄改动数据——实证非常规记录 **635/10,788（5.9%）**（EN 侧 491 + CN 愚人节 144），愚人节补丁一个就改 40+ 英雄。这些临时模式改动与常规天梯平衡无关，混入常规历史产生误导（如某英雄"伤害从 50 降至 45"实际来自愚人节补丁）。目标：区分常规/非常规补丁，非常规数据**不干扰常规历史**——英雄轨迹/词条/数值轨迹默认只显示常规、可切换查看非常规；首页时间浏览与补丁详情页列出全部补丁并带模式徽标。
+英雄轨迹、词条、数值轨迹混入了非常规模式补丁（快速比赛：黑客入侵 Quick Play: Hacked、愚人节、6v6 实验、英雄试玩、PTR、公告）的英雄改动数据——实证非常规记录 **635/10,788（5.9%）**（EN 侧 491 + CN 愚人节 144），愚人节补丁一个就改 40+ 英雄。这些临时模式改动与常规天梯平衡无关，混入常规历史产生误导（如某英雄"伤害从 50 降至 45"实际来自愚人节补丁）。目标：区分常规/非常规补丁，非常规数据**不干扰常规历史**——英雄轨迹/词条/数值轨迹默认只显示常规、可切换查看非常规；首页时间浏览与补丁详情页列出全部补丁并带模式徽标。
 
 ## [S2] Design
 
@@ -31,7 +31,7 @@ commits: 0965448..c4f96f7
 
 `patch_mode(title) -> str` 按优先级正则匹配（re.I）：
 
-- `Quick Play:? Hacked` → `quick_play_hacked`（社区模式）
+- `Quick Play:? Hacked` → `quick_play_hacked`（快速比赛：黑客入侵）
 - `Really, Really, Really Balanced|Totally Normal|完全正常` → `april_fools`（**CN 关键词兜底**——cn-2025-04-01-1 标题为「完全正常的"完全正常先锋"补丁说明」）
 - `6v6 Experiment` → `experiment_6v6`
 - `Hero Trial|英雄试玩` → `hero_trial`
@@ -41,7 +41,7 @@ commits: 0965448..c4f96f7
 
 `patch_mode_with_sections(title, section_titles)`：标题规则优先；standard 标题但含官方 section 标记 **`Community Crafted|社区创造模式`** → `community_created`（社区创造模式）——标题常规的社区创造补丁（实证 p-2026-06-30-1、p-2026-07-01-1、en-2024-06-20-1）经此识别，非手工清单。
 
-`MODE_LABELS`（py）+ 前端 JS 镜像：`{quick_play_hacked: 社区模式, april_fools: 愚人节, experiment_6v6: 实验模式, hero_trial: 英雄试玩, ptr: PTR 测试服, announcement: 公告, community_created: 社区创造模式}`。**已知局限**：未来新模式标题与 section 均无信号 → 默认 standard 漏判。
+`MODE_LABELS`（py）+ 前端 JS 镜像：`{quick_play_hacked: 快速比赛：黑客入侵, april_fools: 愚人节, experiment_6v6: 实验模式, hero_trial: 英雄试玩, ptr: PTR 测试服, announcement: 公告, community_created: 社区创造模式}`。**已知局限**：未来新模式标题与 section 均无信号 → 默认 standard 漏判。
 
 ### D2 数据层（mode 以 patches_index pair 级为唯一权威）
 
