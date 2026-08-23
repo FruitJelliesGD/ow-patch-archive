@@ -148,7 +148,9 @@ def test_real_patches_index_categories_invariants():
 
 def test_patches_index_categories_union(tmp_path):
     """categories = union of both sides' content-detected categories in
-    CATEGORY_ORDER; unpaired entries classify from their own content."""
+    CATEGORY_ORDER; unpaired entries classify from their own content. Phrase
+    placement respects the per-rule scope: new_hero matches a SECTION TITLE
+    (body-level phrases no longer tag title-scoped keys)."""
     from ow2_patch.pairing import PairResult, build_patches_index
 
     data_dir = tmp_path / "data"
@@ -156,8 +158,8 @@ def test_patches_index_categories_union(tmp_path):
                       [{"type": "generic_update", "title": "Season 5", "heroes": []},
                        {"type": "generic_update", "title": "Stadium Changes", "heroes": []}])
     _write_patch_json(data_dir, "cn-2026-03-02-1",
-                      [{"type": "generic_update", "title": "更新",
-                        "blocks": [{"title": "", "body": "新英雄无漾登场", "dev": None}],
+                      [{"type": "generic_update", "title": "新英雄无漾登场",
+                        "blocks": [{"title": "", "body": "无漾技能一览", "dev": None}],
                         "heroes": []}])
     _write_patch_json(data_dir, "cn-2026-03-03-1",
                       [{"type": "generic_update", "title": "角斗领域改动", "heroes": []}])
@@ -177,6 +179,126 @@ def test_patches_index_categories_union(tmp_path):
     # en=[season,stadium] ∪ cn=[new_hero] → CATEGORY_ORDER: season, new_hero, stadium
     assert by_id["p-2026-03-01-1"]["categories"] == ["season", "new_hero", "stadium"]
     assert by_id["cn-2026-03-03-1"]["categories"] == ["stadium"]
+
+
+def test_patches_index_categories_scoped(tmp_path):
+    """Body-level phrases no longer tag title-scoped keys; first-section and
+    section-title placements do; the Stadium guard kills 'New Heroes Added'."""
+    from ow2_patch.pairing import PairResult, build_patches_index
+
+    data_dir = tmp_path / "data"
+    # body-level season mention (bug-fix boilerplate) → no season badge
+    _write_patch_json(data_dir, "en-2026-03-01-1",
+                      [{"type": "generic_update", "title": "Bug Fixes",
+                        "description": "Fixed Season 18 login rewards", "heroes": []}])
+    # first-section season launch → season
+    _write_patch_json(data_dir, "en-2026-03-02-1",
+                      [{"type": "generic_update", "title": "WELCOME TO SEASON 5", "heroes": []}])
+    # real intro section → new_hero
+    _write_patch_json(data_dir, "en-2026-03-03-1",
+                      [{"type": "hero_update", "title": "New Hero: Freja",
+                        "heroes": [{"slug": "freja", "name_en": "Freja",
+                                    "abilities": [{"name_en": "Railgun",
+                                                   "changes": [{"text_en": "x"}]}]}]}])
+    # Stadium-roster section title over plain-named stadium heroes → no new_hero
+    _write_patch_json(data_dir, "en-2026-03-04-1",
+                      [{"type": "hero_update", "title": "New Heroes Added",
+                        "heroes": [{"slug": "doomfist", "name_en": "Doomfist",
+                                    "stadium_items": [{"lines_en": ["Mask"]}]}]}])
+    result = PairResult(pairs=[], unpaired_en=[
+        "en-2026-03-01-1", "en-2026-03-02-1", "en-2026-03-03-1", "en-2026-03-04-1"])
+    build_patches_index(data_dir, result)
+    index = json.loads((data_dir / "patches_index.json").read_text(encoding="utf-8"))
+    by_id = {p["id"]: p for p in index["patches"]}
+    assert by_id["en-2026-03-01-1"]["categories"] == []
+    assert by_id["en-2026-03-02-1"]["categories"] == ["season"]
+    assert by_id["en-2026-03-03-1"]["categories"] == ["new_hero"]
+    assert by_id["en-2026-03-04-1"]["categories"] == []
+
+
+def test_structural_new_hero_signal(tmp_path):
+    """new_hero fires for a hero's first-ever balance record when no earlier
+    patch mentions its name; an earlier mention suppresses it; the signal is
+    gated to the structured OW2 era; stadium-item-only blocks don't count."""
+    from ow2_patch.pairing import PairResult, build_patches_index
+
+    data_dir = tmp_path / "data"
+    # earlier patch mentions Freja (no block) → suppresses the July intro
+    _write_patch_json(data_dir, "en-2023-06-01-1",
+                      [{"type": "generic_update", "title": "Roadmap",
+                        "description": "Freja joins the roster next month", "heroes": []}])
+    _write_patch_json(data_dir, "en-2023-07-01-1",
+                      [{"type": "hero_update", "title": "Hero Updates",
+                        "heroes": [{"slug": "freja", "name_en": "Freja",
+                                    "abilities": [{"name_en": "Railgun",
+                                                   "changes": [{"text_en": "x"}]}]}]}])
+    # clean intro: first mention == first record
+    _write_patch_json(data_dir, "en-2023-08-01-1",
+                      [{"type": "hero_update", "title": "Hero Updates",
+                        "heroes": [{"slug": "hazard", "name_en": "Hazard",
+                                    "general": ["Added Hazard to the roster"]}]}])
+    # pre-OW2-era intro → signal gated off
+    _write_patch_json(data_dir, "en-2021-01-01-1",
+                      [{"type": "hero_update", "title": "Hero Updates",
+                        "heroes": [{"slug": "orisa", "name_en": "Orisa",
+                                    "abilities": [{"name_en": "Protective Barrier",
+                                                   "changes": [{"text_en": "x"}]}]}]}])
+    # stadium-item-only block → not a hero introduction
+    _write_patch_json(data_dir, "en-2023-09-01-1",
+                      [{"type": "hero_update", "title": "Stadium Updates",
+                        "heroes": [{"slug": "doomfist", "name_en": "Doomfist",
+                                    "stadium_items": [{"lines_en": ["Mask"]}]}]}])
+    result = PairResult(
+        pairs=[{
+            "id": "p-2023-07-01-1", "date": "2023-07-01",
+            "en": {"patch_id": "en-2023-07-01-1", "date": "2023-07-01", "seq": 1,
+                   "title": "Retail Patch Notes", "url": "u"},
+            "cn": {"patch_id": "cn-2023-07-02-1", "date": "2023-07-02", "seq": 1,
+                   "title": "《守望先锋》补丁说明", "url": "u"},
+        }],
+        unpaired_en=["en-2023-06-01-1", "en-2023-08-01-1", "en-2021-01-01-1", "en-2023-09-01-1"],
+    )
+    build_patches_index(data_dir, result)
+    index = json.loads((data_dir / "patches_index.json").read_text(encoding="utf-8"))
+    by_id = {p["id"]: p for p in index["patches"]}
+    assert by_id["p-2023-07-01-1"]["categories"] == []            # earlier mention suppresses
+    assert by_id["en-2023-06-01-1"]["categories"] == []           # roadmap mention only
+    assert by_id["en-2023-08-01-1"]["categories"] == ["new_hero"] # clean intro
+    assert by_id["en-2021-01-01-1"]["categories"] == []           # pre-OW2 era gate
+    assert by_id["en-2023-09-01-1"]["categories"] == ["stadium"]  # stadium-only: no new_hero
+
+
+def test_manual_categories_override(tmp_path):
+    """data/manual_categories.json entries are unioned into categories;
+    unknown keys are dropped; a missing file is tolerated."""
+    from ow2_patch.pairing import PairResult, build_patches_index
+
+    data_dir = tmp_path / "data"
+    _write_patch_json(data_dir, "en-2026-01-02-1",
+                      [{"type": "generic_update", "title": "General Updates", "heroes": []}])
+    (data_dir / "manual_categories.json").write_text(
+        json.dumps({"en-2026-01-02-1": ["season", "bogus"]}), encoding="utf-8")
+    result = PairResult(pairs=[], unpaired_en=["en-2026-01-02-1"])
+    build_patches_index(data_dir, result)
+    index = json.loads((data_dir / "patches_index.json").read_text(encoding="utf-8"))
+    by_id = {p["id"]: p for p in index["patches"]}
+    assert by_id["en-2026-01-02-1"]["categories"] == ["season"]  # bogus dropped, no event scope hit
+
+
+def test_malformed_manual_categories_tolerated(tmp_path):
+    """A malformed manual_categories.json (hand-edit typo) must not break the
+    rebuild."""
+    from ow2_patch.pairing import PairResult, build_patches_index
+
+    data_dir = tmp_path / "data"
+    _write_patch_json(data_dir, "en-2026-01-02-1",
+                      [{"type": "generic_update", "title": "General Updates", "heroes": []}])
+    (data_dir / "manual_categories.json").write_text("{not json", encoding="utf-8")
+    result = PairResult(pairs=[], unpaired_en=["en-2026-01-02-1"])
+    build_patches_index(data_dir, result)
+    index = json.loads((data_dir / "patches_index.json").read_text(encoding="utf-8"))
+    by_id = {p["id"]: p for p in index["patches"]}
+    assert by_id["en-2026-01-02-1"]["categories"] == []
 
 
 def test_patches_index_hero_changes_field(tmp_path):
