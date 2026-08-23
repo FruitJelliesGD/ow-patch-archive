@@ -285,6 +285,22 @@ def test_manual_categories_override(tmp_path):
     assert by_id["en-2026-01-02-1"]["categories"] == ["season"]  # bogus dropped, no event scope hit
 
 
+def test_malformed_manual_categories_tolerated(tmp_path):
+    """A malformed manual_categories.json (hand-edit typo) must not break the
+    rebuild."""
+    from ow2_patch.pairing import PairResult, build_patches_index
+
+    data_dir = tmp_path / "data"
+    _write_patch_json(data_dir, "en-2026-01-02-1",
+                      [{"type": "generic_update", "title": "General Updates", "heroes": []}])
+    (data_dir / "manual_categories.json").write_text("{not json", encoding="utf-8")
+    result = PairResult(pairs=[], unpaired_en=["en-2026-01-02-1"])
+    build_patches_index(data_dir, result)
+    index = json.loads((data_dir / "patches_index.json").read_text(encoding="utf-8"))
+    by_id = {p["id"]: p for p in index["patches"]}
+    assert by_id["en-2026-01-02-1"]["categories"] == []
+
+
 def test_patches_index_hero_changes_field(tmp_path):
     """has_hero_changes = either side carries a balance hero block with actual
     change content: stadium-mask blocks, empty-change hero blocks (the

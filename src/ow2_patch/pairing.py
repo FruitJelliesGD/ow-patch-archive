@@ -373,7 +373,9 @@ def _build_structural_maps(data_dir: pathlib.Path) -> tuple[dict[str, str], dict
                         if name:
                             name_slugs.setdefault(name, hero["slug"])
                     if _hero_has_changes(hero, include_stadium=False):
-                        earliest.setdefault(hero["slug"], date)
+                        # min, not setdefault: glob order is unspecified and a
+                        # backfilled file must not corrupt the earliest date
+                        earliest[hero["slug"]] = min(earliest.get(hero["slug"]) or date, date)
             content.append((date, _content_strings(data)))
 
     mention: dict[str, str] = {}
@@ -416,7 +418,9 @@ def _load_manual_categories(data_dir: pathlib.Path) -> dict[str, list[str]]:
     path = data_dir / "manual_categories.json"
     try:
         raw = json.loads(path.read_text(encoding="utf-8"))
-    except OSError:
+    except (OSError, ValueError):
+        return {}  # missing or malformed file: tolerated, no overrides
+    if not isinstance(raw, dict):
         return {}
     known = set(CATEGORY_ORDER)
     return {pid: [k for k in keys if k in known]

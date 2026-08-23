@@ -155,9 +155,10 @@ def _match_title_sections(key: str, ctx: PatchContext) -> bool:
         return True
     for section in ctx.sections:
         if rx.search(section.title or ""):
-            if key == "new_hero" and _stadium_or_stub_section(section):
-                continue  # Stadium-roster section title: no badge
-            return True
+            if not (key == "new_hero" and _stadium_or_stub_section(section)):
+                return True
+        # block titles are never guarded: a Stadium-guarded section can still
+        # hold a real "New Hero: X" block
         if any(rx.search(t or "") for t in section.block_titles):
             return True
     return False

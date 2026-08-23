@@ -170,6 +170,11 @@ def test_new_hero_stadium_section_guard():
     baptiste = _sec("Hero Updates", heroes=[_hero(changes=False)],
                     block_titles=["New Hero: Baptiste"])
     assert "new_hero" in categorize_patch(_ctx(sections=[baptiste]))
+    # a Stadium-guarded section title does not suppress a real block title
+    # inside the same section
+    mixed = _sec("New Heroes Added", heroes=[_hero(stadium=True)],
+                 block_titles=["New Hero: Freja"])
+    assert "new_hero" in categorize_patch(_ctx(sections=[mixed]))
 
 
 def test_whole_scope_mode_categories_keep_body_signal():
