@@ -259,15 +259,16 @@ def test_real_entries_parity_with_hero_timelines():
 
 
 def test_real_edited_flag():
+    """After the official-edit reset (changelog.jsonl emptied), no real entry
+    carries the edited flag and official_edits is empty."""
     edits = build_official_edits(REAL_DATA)
     idx = build_entries_index(REAL_DATA, edits)
+    assert edits == {"updated": "", "edits": {}}
     by_key = {e["key"]: e for e in idx["entries"]}
     assert "ana::weapon::biotic-rifle" in by_key  # ana has legacy 2016 records
-    assert by_key["ana::weapon::biotic-rifle"]["edited"] is True
+    assert by_key["ana::weapon::biotic-rifle"]["edited"] is False
     edited_keys = {e["key"] for e in idx["entries"] if e["edited"]}
-    plain = {e["key"] for e in idx["entries"] if not e["edited"]}
-    assert edited_keys and plain
-    assert edited_keys.isdisjoint(plain)
+    assert not edited_keys
 
 
 # ---------- write + idempotency ----------
