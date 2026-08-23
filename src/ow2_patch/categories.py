@@ -50,6 +50,11 @@ CATEGORY_RULES: list[tuple[str, str, str]] = [
     ("arcade", r"Arcade", r"街机"),
     ("workshop", r"Custom Game|Workshop", r"自定游戏|自定义游戏|工坊"),
     ("owl", r"(?-i:\bOWL\b)|Overwatch League", r"守望先锋联赛"),
+    # brand collaborations (incl. Blizzard's own IPs); CN collab titles use
+    # Latin brand scripts so EN phrases do the CN-side work, except 心之怪盗团
+    ("crossover", r"collab|One[- ]?Punch Man|LE SSERAFIM|Cowboy Bebop|Transformers"
+                  r"|Warcraft|My Hero Academia|Phantom Thieves|Street Fighter|Porsche",
+     r"心之怪盗团"),
 ]
 
 CATEGORY_ORDER: list[str] = [key for key, _en, _cn in CATEGORY_RULES]
@@ -70,6 +75,7 @@ CATEGORY_LABELS: dict[str, str] = {
     "arcade": "街机",
     "workshop": "自定义工坊",
     "owl": "联赛",
+    "crossover": "联动",
 }
 
 # mirrored in web/app.js CATEGORY_LABEL
@@ -99,6 +105,7 @@ CATEGORY_SCOPES: dict[str, str] = {
     "arcade": TITLE_SECTIONS,
     "workshop": WHOLE,
     "owl": TITLE_SECTIONS,
+    "crossover": TITLE_SECTIONS,
 }
 
 # a first-section "Season N continues" is a midseason patch, not a launch

@@ -317,7 +317,7 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
     if (!results.indexHasModeBadge) fail.push("index mode badge missing");
     if (!results.indexHasQuickPlayHackedLabel) fail.push("index quick-play-hacked label missing");
     if (!results.indexCategoryBadge) fail.push("index category badge missing");
-    if (results.chipCount !== 16) fail.push("chipCount=" + results.chipCount);
+    if (results.chipCount !== 17) fail.push("chipCount=" + results.chipCount);
     if (!(results.filteredCount > 0 && results.filteredCount < results.indexPatches)) fail.push("filteredCount=" + results.filteredCount);
     if (!results.filterReset) fail.push("filter reset failed");
     if (!results.indexHasHeroChangesBadge) fail.push("index hero-changes badge missing");
