@@ -1,14 +1,23 @@
 ---
 feature: contentstack-parse
-status: in-progress
+status: delivered
 updated: 2026-08-23
 branch: feat/contentstack-parse
-commits: # filled at delivery
+commits: cfdc061..5778d6c
 ---
 
 # CN 2月11日补丁归档：Contentstack 格式解析支持
 
 ## Report
+
+**What was built** — `parse.py` 新增 **Contentstack 格式解析支持**：官网 CN 页面把 2026-02-11 补丁（第1赛季：黑爪之治发布）渲染为无 `PatchNotes-patch/section` 包装类的扁平 `<div contentstack-unique-entry-key=...>` 序列（294 键、15 种键路径、22 节、47 英雄块），原包装类切分解析器将其整体丢弃。新解析器在文本切分后按 `title` 键分组提取（支持同页多块），字段映射到 Patch/Section/GenericBlock/HeroUpdate（`change_description` 复用 `_parse_general_updates`，与正常 CN 解析形状一致；`metadata.*` 十六进制 GUID 跳过）。**归档完成**：`cn-2026-02-11-1.json`（22 节、35 个具名英雄 47 块、279 条时间线记录）+ Markdown 归档，并通过标题日期（02-10 vs 02-11 差 1 天）自动配对 `p-2026-02-09-1`（此前 `en-2026-02-09-1` 无 CN 配对）。
+
+- **效果**：补丁页中英双语渲染（22 节、47 英雄块、89 目录项）；英雄时间线/词条检索获得 CN 侧记录（前端配对合并）；entries_index 905→904（配对合并净 -1）；`_CN_PERK_RE` 容忍 `（5v5）/（6v6）` 后缀、英雄名剥 `（全新）/（重做）` 标记、`_parse_section` 防 contentstack 吞并守卫。
+- **review**：general-6 全部验收标准 MET、0 critical；2 项 P2 数据质量缺陷全部修复——(1) EN 侧 `_EN_PERK_RE` 不认 `(6v6)` 后缀导致 "Protective Barrier – Major Perk (6v6)" 落入 general、EN/CN 威能数量错位 → ability_map 把奥丽莎 "充能标枪" 误配为 "防护屏障"（修 EN 正则后 EN 2 威能 vs CN 2 威能正确配对）；(2) `_status_from_lines` 不剥全角 `。` 导致 20 个 CN 移除威能状态误判 `changed`（`rstrip(".。")`）。另清理了 EN 重解析产生的假官方编辑记录（解析器迁移非官网改动，从 changelog 移除）。
+
+**Verification** — `pytest -q` → 260 passed（256 基线 +4：contentstack 合成/真实 section9/整月页回归 + EN (6v6) 威能；含移除威能 `。` 回归）；`node tools/_smoke_web.js` → ALL WEB ASSERTIONS OK（entryCards 904 重基线，其余计数不变，官方编辑徽章保持为空）；`python tools/rebuild.py --data data` 双跑字节幂等；`npx --yes -p playwright node tools/_layout_check.js` → 12/12；真实浏览器：`patch.html?id=p-2026-02-09-1` CN/EN 双语渲染（22 节、47 英雄块、89 目录、2 语言按钮）、d-va 时间线含 5 条 cn-2026-02-11-1 记录、EN+CN 合并行正常；数据核对：`charged-javelin.name_cn=充能标枪`、`protective-barrier.name_cn=防护屏障`、CN 移除威能 20 条 status=removed、official_edits 空。
+
+**Journey log** — ① 内容哈希只覆盖原文文本（`patch_canonical_texts`），**派生字段（含 perk status）不参与哈希**——解析器修复若只改派生字段，pipeline 永不重写已归档文件，需 `force_rewrite` 迁移（EN 修复改了文本包正常触发，CN 状态修复走了 force_rewrite）。② 解析器迁移用普通 pipeline 会写 changelog "modified" → 被当作**官方事后编辑**（站点徽章+通知），迁移必须 force_rewrite 或事后清理 changelog（本特性已清理）。③ 审计的"标题限定可全杀"类论断必须数据复核：EN `(6v6)` 威能后缀与 CN `（6v6）` 全半角差异导致 EN/CN 威能数量错位 → 位置 zip 误配能力名，正则修复需双向核对。④ EN 日期无标题回退（`_patch_date` 仅 CN 有标题正则），EN fixture 必须带 `.anchor[id^='patch-']`。⑤ contentstack 页英雄块不产生 abilities（`<p>+<ul>` → general/perks/stadium_items），与正常 CN 解析及 EN 02-09 形状对齐——合并/词条口径一致。
 
 ## [S1] Problem
 
@@ -76,9 +85,9 @@ python -c "from ow2_patch.pipeline import run_pipeline; import pathlib; run_pipe
 
 ## Tasks
 
-- [ ] T1: spec 文档 + worktree — acceptance: 本文档含设计与任务；`.worktrees/contentstack-parse` 分支 `feat/contentstack-parse`（covers: 全部）
-- [ ] T2: parse.py contentstack 支持 + 正则修正 + 守卫 + 单测 — acceptance: test_parse 新 fixture 用例全绿（covers: D1-D4；depends: T1）
-- [ ] T3: 定向归档 2026-02 CN + 验证 — acceptance: cn-2026-02-11-1.json 存在（22 节/47 英雄）、p-2026-02-09-1 配对成立、仅预期数据文件变化（covers: D5；depends: T2）
-- [ ] T4: smoke 计数重基线 + 全量验证 — acceptance: pytest/smoke/layout 全绿、rebuild 双跑幂等、真实浏览器 02-11 补丁页可渲染（covers: D5；depends: T3）
-- [ ] T5: 独立 review — acceptance: review 无 critical（covers: 全部；depends: T4）
-- [ ] T6: 独立 review + 规格定稿 — acceptance: status: delivered、Report 填毕（covers: 全部；depends: T5）
+- [x] T1: spec 文档 + worktree — acceptance: 本文档含设计与任务；`.worktrees/contentstack-parse` 分支 `feat/contentstack-parse`（covers: 全部）
+- [x] T2: parse.py contentstack 支持 + 正则修正 + 守卫 + 单测 — acceptance: test_parse 新 fixture 用例全绿（covers: D1-D4；depends: T1）
+- [x] T3: 定向归档 2026-02 CN + 验证 — acceptance: cn-2026-02-11-1.json 存在（22 节/47 英雄）、p-2026-02-09-1 配对成立、仅预期数据文件变化（covers: D5；depends: T2）
+- [x] T4: smoke 计数重基线 + 全量验证 — acceptance: pytest/smoke/layout 全绿、rebuild 双跑幂等、真实浏览器 02-11 补丁页可渲染（covers: D5；depends: T3）
+- [x] T5: 独立 review — acceptance: review 无 critical（covers: 全部；depends: T4）
+- [x] T6: 独立 review + 规格定稿 — acceptance: status: delivered、Report 填毕（covers: 全部；depends: T5）
