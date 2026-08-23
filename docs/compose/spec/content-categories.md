@@ -10,7 +10,7 @@ commits: 39d6bb7..d96be67
 
 ## Report
 
-**What was built** — 时间浏览页（index.html）新增**内容分类体系**：构建期遍历全部 398 个补丁文件（EN+CN）内容，按 14 个类别短语（模式 6：QP 黑客入侵/愚人节/6v6 实验/英雄试玩/PTR/社区创造；内容 8：活动/新赛季/新英雄/新地图/角斗领域/街机/自定义工坊/联赛）识别，`patches_index.json` 每条目新增 `categories` 数组（取代 `content_qp_hacked` 布尔字段）。补丁条目与详情页渲染类别徽章（与 mode 徽章去重），顶部时间跳转栏内新增**多选 chips 筛选**（OR 语义，「全部」默认，`?cat=a,b` 初始态，本地 state 重渲染）。**纯显示层**：mode 分类与 hero/entries/values 数据过滤零变化。
+**What was built** — 时间浏览页（index.html）新增**内容分类体系**：构建期遍历全部 398 个补丁文件（EN+CN）内容，按 14 个类别短语（模式 6：QP 黑客入侵/愚人节/实验模式/英雄试玩/PTR/社区创造；内容 8：活动/新赛季/新英雄/新地图/角斗领域/街机/自定义工坊/联赛）识别，`patches_index.json` 每条目新增 `categories` 数组（取代 `content_qp_hacked` 布尔字段）。补丁条目与详情页渲染类别徽章（与 mode 徽章去重），顶部时间跳转栏内新增**多选 chips 筛选**（OR 语义，「全部」默认，`?cat=a,b` 初始态，本地 state 重渲染）。**纯显示层**：mode 分类与 hero/entries/values 数据过滤零变化。
 
 - **数据实证**（rebuild 后 343 条目）：14 类全部命中——qp_hacked 7 / april_fools 5 / experiment_6v6 3 / hero_trial 9 / ptr 3 / community_created 4 / event 73 / season 76 / new_hero 35 / new_map 21 / stadium 58 / arcade 63 / workshop 98 / owl 32；`p-2026-01-08-1`/`p-2026-07-30-1` categories 含 quick_play_hacked 且 mode 仍 standard（混合补丁常规数据保留）。
 - **正则实证修正**：`New Hero(?:s)?` 误写（Hero+e+s? 不匹配 "New Hero"）；new_hero 需 `(?:Support |Tank |Damage )?`（各分支带尾随空格）才能命中 "new Support Hero Illari" 形态；`(?! Option)` 排除 "New Hero Option:" 设置项假阳性（2017/2023 数据实证）。
@@ -32,7 +32,7 @@ commits: 39d6bb7..d96be67
 
 - `quick_play_hacked` 快速比赛：黑客入侵 —— 复用 modes.py `QP_HACKED_PHRASE`（`Quick Play:?\s+Hacked|快速比赛：黑客入侵`）
 - `april_fools` 愚人节 —— `Really, Really, Really Balanced|Totally Normal|Underwatch` / `完全正常|守望后卫`
-- `experiment_6v6` 6v6 实验 —— `6v6\s*Experiment` / `6v6\s*实验`
+- `experiment_6v6` 实验模式 —— `6v6\s*Experiment` / `6v6\s*实验`
 - `hero_trial` 英雄试玩 —— `Hero Trial` / `英雄试玩`
 - `ptr` PTR 测试服 —— `\bPTR\b` / `PTR`
 - `community_created` 社区创造模式 —— `Community Crafted` / `社区创造模式`
