@@ -38,6 +38,8 @@ _MODE_KEYS = ("quick_play_hacked", "april_fools", "experiment_6v6", "hero_trial"
     ("第14赛季", ["season"]),
     ("New Hero: Freja", ["new_hero"]),
     ("New Heroes Added", ["new_hero"]),
+    ("the new Support Hero Illari", ["new_hero"]),
+    ("New Tank Hero", ["new_hero"]),
     ("新英雄无漾", ["new_hero"]),
     ("New map added", ["new_map"]),
     ("新地图", ["new_map"]),

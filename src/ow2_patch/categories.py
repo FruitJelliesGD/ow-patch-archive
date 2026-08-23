@@ -32,7 +32,7 @@ CATEGORY_RULES: list[tuple[str, str, str]] = [
              r"|Archives|Starwatch|Junkenstein",
      r"周年庆|夏季运动会|万圣节|冬境乐园|春节|农历新年|行动档案|星际守望|狂鼠复仇"),
     ("season", r"Season\s+\d+", r"第\d+赛季|(?<!\d)\d+赛季"),
-    ("new_hero", r"New Hero(?:s)?(?! Option)", r"新英雄"),
+    ("new_hero", r"New (?:Support |Tank |Damage )?Hero(?:s)?(?! Option)", r"新英雄"),
     ("new_map", r"New Maps?", r"新地图"),
     ("stadium", r"Stadium", r"角斗领域"),
     ("arcade", r"Arcade", r"街机"),

@@ -153,7 +153,8 @@ def test_patches_index_categories_union(tmp_path):
 
     data_dir = tmp_path / "data"
     _write_patch_json(data_dir, "en-2026-03-01-1",
-                      [{"type": "generic_update", "title": "Season 5", "heroes": []}])
+                      [{"type": "generic_update", "title": "Season 5", "heroes": []},
+                       {"type": "generic_update", "title": "Stadium Changes", "heroes": []}])
     _write_patch_json(data_dir, "cn-2026-03-02-1",
                       [{"type": "generic_update", "title": "更新",
                         "blocks": [{"title": "", "body": "新英雄无漾登场", "dev": None}],
@@ -173,7 +174,8 @@ def test_patches_index_categories_union(tmp_path):
     build_patches_index(data_dir, result)
     index = json.loads((data_dir / "patches_index.json").read_text(encoding="utf-8"))
     by_id = {p["id"]: p for p in index["patches"]}
-    assert by_id["p-2026-03-01-1"]["categories"] == ["season", "new_hero"]  # en ∪ cn
+    # en=[season,stadium] ∪ cn=[new_hero] → CATEGORY_ORDER: season, new_hero, stadium
+    assert by_id["p-2026-03-01-1"]["categories"] == ["season", "new_hero", "stadium"]
     assert by_id["cn-2026-03-03-1"]["categories"] == ["stadium"]
 
 

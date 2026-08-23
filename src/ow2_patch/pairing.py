@@ -365,6 +365,8 @@ def build_patches_index(data_dir: pathlib.Path, result: PairResult) -> None:
         en_titles = _section_titles(en_data)
         cn_titles = _section_titles(cn_data)
         mode = _pair_mode(pair["en"], pair["cn"], en_titles, cn_titles)
+        en_cats = _patch_categories(en_data)
+        cn_cats = _patch_categories(cn_data)
         index.append({
             "id": pair["id"], "date": pair["date"],
             "title_en": pair["en"]["title"], "title_cn": pair["cn"]["title"],
@@ -376,8 +378,7 @@ def build_patches_index(data_dir: pathlib.Path, result: PairResult) -> None:
             "sites": ["en", "cn"],
             "patch_id_en": pair["en"]["patch_id"], "patch_id_cn": pair["cn"]["patch_id"],
             "mode": mode,
-            "categories": list(dict.fromkeys(
-                _patch_categories(en_data) + _patch_categories(cn_data))),
+            "categories": [k for k in CATEGORY_ORDER if k in en_cats or k in cn_cats],
         })
     for patch_id in result.unpaired_en + result.unpaired_cn:
         site = patch_id.split("-", 1)[0]
