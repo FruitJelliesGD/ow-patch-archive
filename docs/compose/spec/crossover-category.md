@@ -1,6 +1,6 @@
 ---
 feature: crossover-category
-status: designed
+status: in-progress
 updated: 2026-08-23
 branch: feat/crossover-category
 commits: # filled at delivery
