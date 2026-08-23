@@ -28,7 +28,7 @@ def test_patch_mode(title: str, mode: str):
 
 
 def test_all_modes_have_labels():
-    for mode, title in [("standard", "常规"), ("quick_play_hacked", "社区模式"),
+    for mode, title in [("standard", "常规"), ("quick_play_hacked", "快速比赛：黑客入侵"),
                         ("april_fools", "愚人节"), ("experiment_6v6", "实验模式"),
                         ("hero_trial", "英雄试玩"), ("ptr", "PTR 测试服"),
                         ("announcement", "公告"),

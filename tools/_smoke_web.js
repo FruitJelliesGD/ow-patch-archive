@@ -64,6 +64,7 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
     }
     results.indexPatches = patchEntries;
     results.indexHasModeBadge = findHtml(document.getElementById("patch-list"), /愚人节/);
+    results.indexHasQuickPlayHackedLabel = findHtml(document.getElementById("patch-list"), /快速比赛：黑客入侵/);
     results.updatedFmt = /^\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2} UTC[+-]\\d+(?::\\d{2})?$/.test(document.getElementById("updated").textContent);
 
     // jump bar: year select (2016-2026) + month select populated for the
@@ -229,6 +230,7 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
     if (!results.firstCardHref.includes("entry.html?hero=")) fail.push("firstCardHref=" + results.firstCardHref);
     if (results.entryCards !== 905) fail.push("entryCards=" + results.entryCards);
     if (!results.indexHasModeBadge) fail.push("index mode badge missing");
+    if (!results.indexHasQuickPlayHackedLabel) fail.push("index quick-play-hacked label missing");
     if (results.jumpYears !== 11) fail.push("jumpYears=" + results.jumpYears);
     if (!results.jumpMonths) fail.push("jump month options missing");
     if (!results.indexHasSectionBadge) fail.push("index section badge missing");

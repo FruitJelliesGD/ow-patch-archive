@@ -40,7 +40,7 @@ _APRIL_FOOLS_SECTION_RE = re.compile(r"Underwatch|守望后卫", re.I)
 
 MODE_LABELS = {
     STANDARD: "常规",
-    "quick_play_hacked": "社区模式",
+    "quick_play_hacked": "快速比赛：黑客入侵",
     "april_fools": "愚人节",
     "experiment_6v6": "实验模式",
     "hero_trial": "英雄试玩",
