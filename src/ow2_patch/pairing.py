@@ -272,33 +272,156 @@ def _pair(result: PairResult, en: dict, cn: dict, by: str,
     })
 
 
-def _has_hero_changes(data: dict) -> bool:
-    """True when the patch contributes ≥1 record to the hero balance history:
-    a balance hero block (stadium mask / item blocks excluded by
-    `_is_balance_hero`) carrying at least one change-bearing element — a named
-    ability with changes, any perk, a general line with text, or a stadium item
-    with lines — mirroring what build_hero_files emits records for."""
+def _hero_has_changes(hero: dict, include_stadium: bool = True) -> bool:
+    """True when a balance hero block carries ≥1 change-bearing element — a
+    named ability with changes, any perk, a general line with text, or (when
+    include_stadium) a stadium item with lines — mirroring what
+    build_hero_files emits records for. Stadium-item-only blocks are excluded
+    from the structural new_hero signal: a Stadium roster addition is not a
+    hero introduction."""
+    if any((a.get("name_en") or a.get("name_cn")) and a.get("changes")
+           for a in hero.get("abilities", [])):
+        return True
+    if hero.get("perks") or any(_general_text(g) for g in hero.get("general", [])):
+        return True
+    if include_stadium and any(il for item in hero.get("stadium_items", [])
+                               for il in item.get("lines_en", []) + item.get("lines_cn", [])):
+        return True
+    return False
+
+
+def _hero_slugs(data: dict, include_stadium: bool = True) -> set[str]:
+    """Slugs of balance hero blocks in a patch that carry change content."""
+    slugs: set[str] = set()
     for section in data.get("sections", []):
         for hero in section.get("heroes", []):
-            if not _is_balance_hero(hero):
-                continue
-            if any((a.get("name_en") or a.get("name_cn")) and a.get("changes")
-                   for a in hero.get("abilities", [])):
-                return True
-            if hero.get("perks"):
-                return True
-            if any(_general_text(g) for g in hero.get("general", [])):
-                return True
-            if any(il for item in hero.get("stadium_items", [])
-                   for il in item.get("lines_en", []) + item.get("lines_cn", [])):
-                return True
-    return False
+            if _is_balance_hero(hero) and hero.get("slug") and _hero_has_changes(hero, include_stadium):
+                slugs.add(hero["slug"])
+    return slugs
+
+
+def _has_hero_changes(data: dict) -> bool:
+    """True when the patch contributes ≥1 record to the hero balance history
+    (stadium mask / item blocks excluded by `_is_balance_hero`)."""
+    return bool(_hero_slugs(data))
 
 
 def _general_text(g) -> str:
     if isinstance(g, str):
         return g
     return g.get("text_en") or g.get("text_cn") or ""
+
+
+def _content_strings(data: dict) -> list[str]:
+    """All text strings of a patch's content (title + sections + raw_text).
+
+    URL strings are skipped so CDN asset paths cannot false-positive a
+    category; top-level id/url/site keys are never visited."""
+    def walk(v):
+        if isinstance(v, str):
+            return [] if v.lower().startswith("http") else [v]
+        if isinstance(v, dict):
+            out: list[str] = []
+            for x in v.values():
+                out.extend(walk(x))
+            return out
+        if isinstance(v, list):
+            out = []
+            for x in v:
+                out.extend(walk(x))
+            return out
+        return []
+    out = walk(data.get("sections"))
+    out.extend(walk(data.get("raw_text") or ""))
+    out.append(data.get("title") or "")
+    return out
+
+
+
+# structural new_hero signal: a hero is "introduced" by the patch that holds
+# its earliest balance record, provided no earlier patch's content mentions the
+# hero's name. OW1-era data is unreliable for this (raw_text intros, archive
+# start), so the signal is restricted to the structured OW2 era.
+_STRUCTURAL_ERA_START = "2022-06-01"
+
+
+def _build_structural_maps(data_dir: pathlib.Path) -> tuple[dict[str, str], dict[str, str]]:
+    """Earliest balance-record date and first content-mention date per hero
+    slug, computed from the patch files directly — NOT the heroes/*.json
+    artifacts (build_patches_index runs before build_hero_files, so the
+    artifacts are stale on the first incremental run that introduces a hero).
+
+    EN names are matched word-bounded (substring matching is fatal: venture ⊂
+    adventure, domina ⊂ dominated); CN names as substrings."""
+    from .pipeline import _has_cjk
+
+    earliest: dict[str, str] = {}
+    name_slugs: dict[str, str] = {}
+    content: list[tuple[str, list[str]]] = []
+    for site_dir in ("en", "cn"):
+        for patch_file in (data_dir / "patches" / site_dir).glob("*.json"):
+            try:
+                data = json.loads(patch_file.read_text(encoding="utf-8"))
+            except OSError:
+                continue
+            date = data.get("date", "")
+            for section in data.get("sections", []):
+                for hero in section.get("heroes", []):
+                    if not hero.get("slug") or not _is_balance_hero(hero):
+                        continue
+                    for name in (hero.get("name_en"), hero.get("name_cn")):
+                        if name:
+                            name_slugs.setdefault(name, hero["slug"])
+                    if _hero_has_changes(hero, include_stadium=False):
+                        earliest.setdefault(hero["slug"], date)
+            content.append((date, _content_strings(data)))
+
+    mention: dict[str, str] = {}
+    for name, slug in name_slugs.items():
+        if _has_cjk(name):
+            hit = min((d for d, strings in content if any(name in s for s in strings)),
+                      default=None)
+        else:
+            rx = re.compile(rf"\b{re.escape(name)}\b", re.I)
+            hit = min((d for d, strings in content if any(rx.search(s) for s in strings)),
+                      default=None)
+        if hit:
+            mention[slug] = min(mention.get(slug) or hit, hit)
+    return earliest, mention
+
+
+def _structural_new_hero(
+    date: str,
+    en_data: dict,
+    cn_data: dict,
+    earliest: dict[str, str],
+    mention: dict[str, str],
+) -> bool:
+    """True when either side introduces a hero: its earliest balance record and
+    its first content mention both land on this patch (structured OW2 era)."""
+    if date < _STRUCTURAL_ERA_START:
+        return False
+    for data in (en_data, cn_data):
+        for slug in _hero_slugs(data, include_stadium=False):
+            if earliest.get(slug) == date and mention.get(slug) == date:
+                return True
+    return False
+
+
+def _load_manual_categories(data_dir: pathlib.Path) -> dict[str, list[str]]:
+    """Manual category overrides {index_id: [keys]} from data/manual_categories.json;
+    unknown keys are dropped, a missing file is tolerated."""
+    from .categories import CATEGORY_ORDER
+
+    path = data_dir / "manual_categories.json"
+    try:
+        raw = json.loads(path.read_text(encoding="utf-8"))
+    except OSError:
+        return {}
+    known = set(CATEGORY_ORDER)
+    return {pid: [k for k in keys if k in known]
+            for pid, keys in raw.items() if isinstance(keys, list)}
+
 
 
 def build_patches_index(data_dir: pathlib.Path, result: PairResult) -> None:
@@ -321,9 +444,12 @@ def build_patches_index(data_dir: pathlib.Path, result: PairResult) -> None:
     The time-browser shows it as "N 字".
 
     Each entry also carries `categories` (list[str]): content categories
-    detected by scanning either side's whole content (title + sections +
-    raw_text) against the curated phrase table in categories.py. Display-only —
-    the badge shows without reclassifying the patch, so standard-titled mixed
+    detected by scanning either side's content under each rule's scope
+    (categories.py CATEGORY_SCOPES: whole content for mode categories, title +
+    section/block titles for content categories, title + first section for
+    season) plus the structural new_hero signal (first-ever balance record and
+    first content mention) and the manual overrides file. Display-only — the
+    badge shows without reclassifying the patch, so standard-titled mixed
     patches (e.g. p-2026-01-08-1) keep their hero data in the standard history.
 
     Each entry also carries `has_hero_changes` (bool): whether either side's
@@ -333,7 +459,16 @@ def build_patches_index(data_dir: pathlib.Path, result: PairResult) -> None:
     mode == standard AND has_hero_changes.
     """
     from .modes import STANDARD, patch_mode_with_sections
-    from .categories import CATEGORY_ORDER, categorize_content
+    from .categories import (
+        CATEGORY_ORDER,
+        HeroContext,
+        PatchContext,
+        SectionContext,
+        categorize_patch,
+    )
+
+    overrides = _load_manual_categories(data_dir)
+    earliest, mention = _build_structural_maps(data_dir)
 
     def _load_patch(patch_id: str) -> dict:
         site = patch_id.split("-", 1)[0]
@@ -361,33 +496,36 @@ def build_patches_index(data_dir: pathlib.Path, result: PairResult) -> None:
             return 0
         return walk(data.get("sections")) + walk(data.get("raw_text") or "")
 
-    def _content_strings(data: dict) -> list[str]:
-        """All text strings of a patch's content (title + sections + raw_text).
-
-        URL strings are skipped so CDN asset paths cannot false-positive a
-        category; top-level id/url/site keys are never visited."""
-        def walk(v):
-            if isinstance(v, str):
-                return [] if v.lower().startswith("http") else [v]
-            if isinstance(v, dict):
-                out: list[str] = []
-                for x in v.values():
-                    out.extend(walk(x))
-                return out
-            if isinstance(v, list):
-                out = []
-                for x in v:
-                    out.extend(walk(x))
-                return out
-            return []
-        out = walk(data.get("sections"))
-        out.extend(walk(data.get("raw_text") or ""))
-        out.append(data.get("title") or "")
-        return out
+    def _patch_context(data: dict) -> PatchContext:
+        sections: list[SectionContext] = []
+        for s in data.get("sections", []):
+            heroes = [HeroContext(
+                stadium_items=bool(h.get("stadium_items")),
+                has_changes=bool(h.get("perks"))
+                or any(_general_text(g) for g in h.get("general", []))
+                or any((a.get("name_en") or a.get("name_cn")) and a.get("changes")
+                       for a in h.get("abilities", [])))
+                for h in s.get("heroes", [])]
+            sections.append(SectionContext(
+                title=s.get("title") or "",
+                block_titles=[b.get("title") or "" for b in s.get("blocks", [])],
+                heroes=heroes))
+        titles = [s.title for s in sections]
+        return PatchContext(
+            title=data.get("title") or "",
+            first_section=next((t for t in titles if t), ""),
+            sections=sections,
+            all_strings=_content_strings(data))
 
     def _patch_categories(data: dict) -> list[str]:
-        found = {key for text in _content_strings(data) for key in categorize_content(text)}
-        return [key for key in CATEGORY_ORDER if key in found]
+        return categorize_patch(_patch_context(data))
+
+    def _entry_categories(entry_id: str, date: str, en_data: dict, cn_data: dict) -> list[str]:
+        cats = set(_patch_categories(en_data)) | set(_patch_categories(cn_data))
+        if _structural_new_hero(date, en_data, cn_data, earliest, mention):
+            cats.add("new_hero")
+        cats.update(overrides.get(entry_id, []))
+        return [k for k in CATEGORY_ORDER if k in cats]
 
     def _pair_mode(en: dict, cn: dict, en_titles: list[str], cn_titles: list[str]) -> str:
         en_mode = patch_mode_with_sections(en["title"], en_titles)
@@ -402,8 +540,6 @@ def build_patches_index(data_dir: pathlib.Path, result: PairResult) -> None:
         en_titles = _section_titles(en_data)
         cn_titles = _section_titles(cn_data)
         mode = _pair_mode(pair["en"], pair["cn"], en_titles, cn_titles)
-        en_cats = _patch_categories(en_data)
-        cn_cats = _patch_categories(cn_data)
         index.append({
             "id": pair["id"], "date": pair["date"],
             "title_en": pair["en"]["title"], "title_cn": pair["cn"]["title"],
@@ -415,7 +551,7 @@ def build_patches_index(data_dir: pathlib.Path, result: PairResult) -> None:
             "sites": ["en", "cn"],
             "patch_id_en": pair["en"]["patch_id"], "patch_id_cn": pair["cn"]["patch_id"],
             "mode": mode,
-            "categories": [k for k in CATEGORY_ORDER if k in en_cats or k in cn_cats],
+            "categories": _entry_categories(pair["id"], pair["date"], en_data, cn_data),
             "has_hero_changes": _has_hero_changes(en_data) or _has_hero_changes(cn_data),
         })
     for patch_id in result.unpaired_en + result.unpaired_cn:
@@ -441,7 +577,7 @@ def build_patches_index(data_dir: pathlib.Path, result: PairResult) -> None:
             "patch_id_en": patch_id if site == "en" else None,
             "patch_id_cn": patch_id if site == "cn" else None,
             "mode": patch_mode_with_sections(meta["title"], titles),
-            "categories": _patch_categories(meta),
+            "categories": _entry_categories(patch_id, date_str, meta, {}),
             "has_hero_changes": _has_hero_changes(meta),
         })
 
