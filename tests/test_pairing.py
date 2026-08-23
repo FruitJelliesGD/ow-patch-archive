@@ -213,6 +213,12 @@ def test_patches_index_hero_changes_field(tmp_path):
                       [{"type": "hero_update", "title": "Hero Updates",
                         "heroes": [{"slug": "ana", "name_en": "Ana",
                                     "perks": [{"name_en": "Nano Boost"}]}]}])
+    # named ability with non-empty changes → true
+    _write_patch_json(data_dir, "en-2026-03-07-1",
+                      [{"type": "hero_update", "title": "Hero Updates",
+                        "heroes": [{"slug": "ana", "name_en": "Ana",
+                                    "abilities": [{"name_en": "Biotic Rifle",
+                                                   "changes": [{"text_en": "Damage increased from 70 to 75."}]}]}]}])
     result = PairResult(
         pairs=[{
             "id": "p-2026-03-01-1", "date": "2026-03-01",
@@ -222,7 +228,7 @@ def test_patches_index_hero_changes_field(tmp_path):
                    "title": "《守望先锋》补丁说明", "url": "u"},
         }],
         unpaired_cn=["cn-2026-03-03-1"],
-        unpaired_en=["en-2026-03-04-1", "en-2026-03-05-1", "en-2026-03-06-1"],
+        unpaired_en=["en-2026-03-04-1", "en-2026-03-05-1", "en-2026-03-06-1", "en-2026-03-07-1"],
     )
     build_patches_index(data_dir, result)
     index = json.loads((data_dir / "patches_index.json").read_text(encoding="utf-8"))
@@ -232,6 +238,7 @@ def test_patches_index_hero_changes_field(tmp_path):
     assert by_id["en-2026-03-04-1"]["has_hero_changes"] is False  # empty change content
     assert by_id["en-2026-03-05-1"]["has_hero_changes"] is False  # no hero blocks
     assert by_id["en-2026-03-06-1"]["has_hero_changes"] is True   # perk block
+    assert by_id["en-2026-03-07-1"]["has_hero_changes"] is True   # ability changes
     assert all(isinstance(p["has_hero_changes"], bool) for p in index["patches"])
 
 
