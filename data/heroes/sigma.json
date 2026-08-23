@@ -776,6 +776,120 @@
    "unit": null
   },
   {
+   "patch": "cn-2026-02-11-1",
+   "date": "2026-02-11",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/02/",
+   "patch_title": "《守望先锋》补丁说明——2026年2月11日",
+   "kind": "perk",
+   "dimension": "perk",
+   "mode": "standard",
+   "perk_slug": "hyper-regeneration",
+   "perk_en": null,
+   "perk_cn": "超能恢复",
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": [
+    "屏障生命值转换率从50%降低至40%。"
+   ],
+   "before": 50.0,
+   "after": 40.0,
+   "by": -10.0,
+   "by_pct": null,
+   "metric": "barrier",
+   "unit": "pct"
+  },
+  {
+   "patch": "cn-2026-02-11-1",
+   "date": "2026-02-11",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/02/",
+   "patch_title": "《守望先锋》补丁说明——2026年2月11日",
+   "kind": "general",
+   "dimension": "other",
+   "subject": null,
+   "mode": "standard",
+   "text_en": null,
+   "text_cn": "实验屏障",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "cn-2026-02-11-1",
+   "date": "2026-02-11",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/02/",
+   "patch_title": "《守望先锋》补丁说明——2026年2月11日",
+   "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
+   "mode": "standard",
+   "text_en": null,
+   "text_cn": "屏障生命值从700降低至650。",
+   "before": 700.0,
+   "after": 650.0,
+   "by": -50.0,
+   "by_pct": null,
+   "metric": "barrier",
+   "unit": "hp"
+  },
+  {
+   "patch": "cn-2026-02-11-1",
+   "date": "2026-02-11",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/02/",
+   "patch_title": "《守望先锋》补丁说明——2026年2月11日",
+   "kind": "general",
+   "dimension": null,
+   "subject": null,
+   "mode": "standard",
+   "text_en": null,
+   "text_cn": "添加效果：[质量吸附]物质穿过[实验屏障]会恢复100点生命值。"
+  },
+  {
+   "patch": "cn-2026-02-11-1",
+   "date": "2026-02-11",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/02/",
+   "patch_title": "《守望先锋》补丁说明——2026年2月11日",
+   "kind": "general",
+   "dimension": null,
+   "subject": null,
+   "mode": "standard",
+   "text_en": null,
+   "text_cn": "添加效果：[动能俘获]也会给视线内的盟友提供过量生命值。"
+  },
+  {
+   "patch": "cn-2026-02-11-1",
+   "date": "2026-02-11",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/02/",
+   "patch_title": "《守望先锋》补丁说明——2026年2月11日",
+   "kind": "general",
+   "dimension": null,
+   "subject": null,
+   "mode": "standard",
+   "text_en": null,
+   "text_cn": "添加效果：[质量吸附]直接命中可使冷却时间缩短25%。"
+  },
+  {
+   "patch": "cn-2026-02-11-1",
+   "date": "2026-02-11",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/02/",
+   "patch_title": "《守望先锋》补丁说明——2026年2月11日",
+   "kind": "general",
+   "dimension": null,
+   "subject": null,
+   "mode": "standard",
+   "text_en": null,
+   "text_cn": "超能之球伤害从100%降低至50%。"
+  },
+  {
    "patch": "en-2026-02-09-1",
    "date": "2026-02-09",
    "site": "en",
@@ -4550,6 +4664,12 @@
     "value": 600.0
    }
   ],
+  "perk:hyper-regeneration:barrier": [
+   {
+    "date": "2026-02-11",
+    "value": 40.0
+   }
+  ],
   "attr:health:barrier": [
    {
     "date": "2025-08-08",
@@ -4557,6 +4677,10 @@
    },
    {
     "date": "2026-02-09",
+    "value": 650.0
+   },
+   {
+    "date": "2026-02-11",
     "value": 650.0
    }
   ],
