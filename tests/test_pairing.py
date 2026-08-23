@@ -179,6 +179,86 @@ def test_patches_index_categories_union(tmp_path):
     assert by_id["cn-2026-03-03-1"]["categories"] == ["stadium"]
 
 
+def test_patches_index_hero_changes_field(tmp_path):
+    """has_hero_changes = either side carries a balance hero block with actual
+    change content: stadium-mask blocks, empty-change hero blocks (the
+    en-2022-01-06-1 shape) and hero-less patches stay false; unpaired entries
+    use their own content."""
+    from ow2_patch.pairing import PairResult, build_patches_index
+
+    data_dir = tmp_path / "data"
+    # pair: EN side has no heroes, CN side has a balance hero block with a
+    # general line → union true
+    _write_patch_json(data_dir, "en-2026-03-01-1",
+                      [{"type": "generic_update", "title": "Client Update", "heroes": []}])
+    _write_patch_json(data_dir, "cn-2026-03-02-1",
+                      [{"type": "hero_update", "title": "英雄更新",
+                        "heroes": [{"slug": "ana", "name_en": "Ana",
+                                    "general": ["弹夹容量从12提高到14。"]}]}])
+    # stadium mask block with lines → false (cosmetic, not balance)
+    _write_patch_json(data_dir, "cn-2026-03-03-1",
+                      [{"type": "hero_update", "title": "英雄更新",
+                        "heroes": [{"slug": "reinhardt-mask", "name_en": "Reinhardt Mask",
+                                    "stadium_items": [{"lines_en": ["Mask skin"]}]}]}])
+    # hero block with empty changes / no general / no perks → false
+    _write_patch_json(data_dir, "en-2026-03-04-1",
+                      [{"type": "hero_update", "title": "Hero Updates",
+                        "heroes": [{"slug": "moira", "name_en": "Moira",
+                                    "abilities": [{"name_en": "Fade", "changes": []}]}]}])
+    # no hero blocks → false
+    _write_patch_json(data_dir, "en-2026-03-05-1",
+                      [{"type": "generic_update", "title": "Bug Fixes", "heroes": []}])
+    # perk block → true
+    _write_patch_json(data_dir, "en-2026-03-06-1",
+                      [{"type": "hero_update", "title": "Hero Updates",
+                        "heroes": [{"slug": "ana", "name_en": "Ana",
+                                    "perks": [{"name_en": "Nano Boost"}]}]}])
+    # named ability with non-empty changes → true
+    _write_patch_json(data_dir, "en-2026-03-07-1",
+                      [{"type": "hero_update", "title": "Hero Updates",
+                        "heroes": [{"slug": "ana", "name_en": "Ana",
+                                    "abilities": [{"name_en": "Biotic Rifle",
+                                                   "changes": [{"text_en": "Damage increased from 70 to 75."}]}]}]}])
+    result = PairResult(
+        pairs=[{
+            "id": "p-2026-03-01-1", "date": "2026-03-01",
+            "en": {"patch_id": "en-2026-03-01-1", "date": "2026-03-01", "seq": 1,
+                   "title": "Overwatch Patch Notes", "url": "u"},
+            "cn": {"patch_id": "cn-2026-03-02-1", "date": "2026-03-02", "seq": 1,
+                   "title": "《守望先锋》补丁说明", "url": "u"},
+        }],
+        unpaired_cn=["cn-2026-03-03-1"],
+        unpaired_en=["en-2026-03-04-1", "en-2026-03-05-1", "en-2026-03-06-1", "en-2026-03-07-1"],
+    )
+    build_patches_index(data_dir, result)
+    index = json.loads((data_dir / "patches_index.json").read_text(encoding="utf-8"))
+    by_id = {p["id"]: p for p in index["patches"]}
+    assert by_id["p-2026-03-01-1"]["has_hero_changes"] is True   # CN-side general line
+    assert by_id["cn-2026-03-03-1"]["has_hero_changes"] is False  # stadium mask block
+    assert by_id["en-2026-03-04-1"]["has_hero_changes"] is False  # empty change content
+    assert by_id["en-2026-03-05-1"]["has_hero_changes"] is False  # no hero blocks
+    assert by_id["en-2026-03-06-1"]["has_hero_changes"] is True   # perk block
+    assert by_id["en-2026-03-07-1"]["has_hero_changes"] is True   # ability changes
+    assert all(isinstance(p["has_hero_changes"], bool) for p in index["patches"])
+
+
+def test_real_patches_index_hero_changes_invariants():
+    """has_hero_changes marks patches that contribute to the standard balance
+    history. The flag is mode-agnostic: special-mode patches carry it too, and
+    the frontend gates the 「英雄改动」 badge on mode == standard."""
+    index = json.loads((DATA / "patches_index.json").read_text(encoding="utf-8"))
+    by_id = {p["id"]: p for p in index["patches"]}
+    assert by_id["p-2026-08-11-1"]["has_hero_changes"] is True    # standard, 32 hero blocks
+    assert by_id["p-2026-08-19-1"]["has_hero_changes"] is False   # standard, no hero blocks
+    assert by_id["en-2022-10-04-1"]["has_hero_changes"] is False  # announcement, 0 hero blocks
+    assert by_id["en-2022-01-06-1"]["has_hero_changes"] is False  # empty-change hero blocks
+    assert by_id["p-2026-04-01-1"]["has_hero_changes"] is True    # april_fools: flag true, badge gated
+    assert all(isinstance(p.get("has_hero_changes"), bool) for p in index["patches"])
+    # the frontend mode gate is necessary: at least one special-mode patch
+    # carries the flag without ever showing the badge
+    assert any(p["mode"] != "standard" and p["has_hero_changes"] for p in index["patches"])
+
+
 def test_patches_index_first_section_fields(tmp_path):
     """first_section_en/cn mirror each side's first NON-EMPTY section title;
     patches with no titled sections (OW1 raw_text) yield ""."""

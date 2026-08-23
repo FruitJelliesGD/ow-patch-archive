@@ -77,6 +77,26 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
       }
     }
     results.indexCategoryBadge = /快速比赛：黑客入侵/.test(qpHackedEntryHtml);
+    // 「英雄改动」 badge: standard-mode patches with hero balance content carry
+    // it; special-mode patches with hero blocks (愚人节) and hero-less patches
+    // (announcement) must not
+    let heroBadgedEntryHtml = "", specialEntryHtml = "", announcementEntryHtml = "";
+    for (const year of document.getElementById("patch-list").children) {
+      for (const month of year.children) {
+        for (const list of month.children) {
+          if (list.className !== "patch-list") continue;
+          for (const entry of list.children) {
+            const href = entry.href || "";
+            if (href.includes("p-2026-08-11-1")) heroBadgedEntryHtml = entry.innerHTML || "";
+            if (href.includes("p-2026-04-01-1")) specialEntryHtml = entry.innerHTML || "";
+            if (href.includes("en-2022-10-04-1")) announcementEntryHtml = entry.innerHTML || "";
+          }
+        }
+      }
+    }
+    results.indexHasHeroChangesBadge = /badge hero-changes/.test(heroBadgedEntryHtml) && /英雄改动/.test(heroBadgedEntryHtml);
+    results.indexSpecialNoHeroBadge = !/badge hero-changes/.test(specialEntryHtml);
+    results.indexAnnouncementNoHeroBadge = !/badge hero-changes/.test(announcementEntryHtml);
     results.chipCount = document.getElementById("jump-bar").children[4] ? document.getElementById("jump-bar").children[4].children.length : 0;
     setFilter(["event"]);
     let eventFiltered = 0;
@@ -90,6 +110,25 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
     results.filteredCount = eventFiltered;
     setFilter([]);
     results.filterReset = getFilter().length === 0;
+    // hero_changes filter: same predicate as the badge; every visible entry
+    // must carry the badge
+    setFilter(["hero_changes"]);
+    let heroFiltered = 0;
+    let heroFilterAllBadged = true;
+    for (const year of document.getElementById("patch-list").children) {
+      for (const month of year.children) {
+        for (const list of month.children) {
+          if (list.className !== "patch-list") continue;
+          heroFiltered += list.children.length;
+          for (const entry of list.children) {
+            if (!/badge hero-changes/.test(entry.innerHTML || "")) heroFilterAllBadged = false;
+          }
+        }
+      }
+    }
+    results.heroFilteredCount = heroFiltered;
+    results.heroFilterAllBadged = heroFilterAllBadged;
+    setFilter([]);
     results.updatedFmt = /^\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2} UTC[+-]\\d+(?::\\d{2})?$/.test(document.getElementById("updated").textContent);
 
     // jump bar: year select (2016-2026) + month select populated for the
@@ -261,9 +300,14 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
     if (!results.indexHasModeBadge) fail.push("index mode badge missing");
     if (!results.indexHasQuickPlayHackedLabel) fail.push("index quick-play-hacked label missing");
     if (!results.indexCategoryBadge) fail.push("index category badge missing");
-    if (results.chipCount !== 15) fail.push("chipCount=" + results.chipCount);
+    if (results.chipCount !== 16) fail.push("chipCount=" + results.chipCount);
     if (!(results.filteredCount > 0 && results.filteredCount < results.indexPatches)) fail.push("filteredCount=" + results.filteredCount);
     if (!results.filterReset) fail.push("filter reset failed");
+    if (!results.indexHasHeroChangesBadge) fail.push("index hero-changes badge missing");
+    if (!results.indexSpecialNoHeroBadge) fail.push("april-fools entry shows hero-changes badge");
+    if (!results.indexAnnouncementNoHeroBadge) fail.push("announcement entry shows hero-changes badge");
+    if (!(results.heroFilteredCount > 0 && results.heroFilteredCount < results.indexPatches)) fail.push("heroFilteredCount=" + results.heroFilteredCount);
+    if (!results.heroFilterAllBadged) fail.push("hero-changes filter shows unbadged entry");
     if (results.jumpYears !== 11) fail.push("jumpYears=" + results.jumpYears);
     if (!results.jumpMonths) fail.push("jump month options missing");
     if (!results.indexHasSectionBadge) fail.push("index section badge missing");

@@ -19,13 +19,17 @@ const MODE_LABEL = {
 const STATUS_LABEL = {
   added: "新增", removed: "移除", reworked: "重做", moved: "变更", changed: "调整",
 };
-// mirror of src/ow2_patch/categories.py CATEGORY_LABELS / CATEGORY_ORDER
+// mirror of src/ow2_patch/categories.py CATEGORY_LABELS / CATEGORY_ORDER,
+// plus the frontend-only hero_changes key (structural signal, not a content
+// category: buildCategoryChips appends it separately, filterMatches matches it
+// via mode + has_hero_changes)
 const CATEGORY_LABEL = {
   quick_play_hacked: "快速比赛：黑客入侵", april_fools: "愚人节",
   experiment_6v6: "实验模式", hero_trial: "英雄试玩", ptr: "PTR 测试服",
   community_created: "社区创造模式",
   event: "活动", season: "新赛季", new_hero: "新英雄", new_map: "新地图",
   stadium: "角斗领域", arcade: "街机", workshop: "自定义工坊", owl: "联赛",
+  hero_changes: "英雄改动",
 };
 const CATEGORY_ORDER = [
   "quick_play_hacked", "april_fools", "experiment_6v6", "hero_trial", "ptr",
@@ -178,6 +182,15 @@ function modeBadge(mode) {
   return `<span class="badge mode mode-${esc(mode)}">${MODE_LABEL[mode] || mode}</span>`;
 }
 
+// 「英雄改动」badge: only standard-mode patches whose content actually
+// contributes to the hero balance history (pairing.py `has_hero_changes`).
+// Special-mode patches (愚人节/PTR/实验/试玩/社区创造/…) carry the flag but
+// must never show the badge.
+function heroChangesBadge(p) {
+  if (p.mode !== "standard" || !p.has_hero_changes) return "";
+  return `<span class="badge hero-changes">英雄改动</span>`;
+}
+
 // display-only badges: content categories (categories.py) — the patch content
 // mentions the category phrase but mode classification is untouched, so
 // standard-titled mixed patches keep their hero data. The patch's own mode key
@@ -251,7 +264,10 @@ const filter = { selected: new Set() };
 
 function filterMatches(p) {
   if (filter.selected.size === 0) return true;
-  return [...filter.selected].some((k) => p.mode === k || (p.categories || []).includes(k));
+  return [...filter.selected].some((k) =>
+    k === "hero_changes"
+      ? (p.mode === "standard" && p.has_hero_changes)
+      : (p.mode === k || (p.categories || []).includes(k)));
 }
 
 function groupByYearMonth(patches) {
@@ -297,6 +313,7 @@ function renderTimeBrowser(patches, filterFn) {
           <span class="patch-entry-date">${esc(p.date)}</span>
           ${siteBadges(p.sites)}
           ${modeBadge(p.mode)}
+          ${heroChangesBadge(p)}
           ${categoryBadges(p)}
           ${firstSection ? `<span class="badge section" title="${esc(firstSection)}">${esc(firstSection)}</span>` : ""}
           <span class="patch-entry-title">${esc(title || p.id)}</span>
@@ -332,6 +349,16 @@ function buildCategoryChips(patches) {
     b.dataset.cat = key;
     b.textContent = CATEGORY_LABEL[key] || key;
     b.addEventListener("click", () => toggleCat(key));
+    chips.appendChild(b);
+  }
+  // structural hero-changes chip: not a content category, appended after the
+  // CATEGORY_ORDER chips when at least one standard-mode patch carries the flag
+  if (patches.some((p) => p.mode === "standard" && p.has_hero_changes)) {
+    const b = document.createElement("button");
+    b.className = "chip";
+    b.dataset.cat = "hero_changes";
+    b.textContent = CATEGORY_LABEL.hero_changes;
+    b.addEventListener("click", () => toggleCat("hero_changes"));
     chips.appendChild(b);
   }
   document.getElementById("jump-bar").appendChild(chips);
