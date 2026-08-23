@@ -142,6 +142,14 @@ def test_real_patches_index_categories_invariants():
     assert "quick_play_hacked" in by_id["p-2026-07-30-1"]["categories"]  # limited-time 6v6 dev note
     assert by_id["p-2026-01-08-1"]["mode"] == "standard"  # badge only, no reclassification
     assert "season" in by_id["p-2026-08-11-1"]["categories"]  # Reign of Talon - Season 4
+    # OW1 competitive season launches are manual overrides (text lives in block
+    # titles, outside the TITLE_FIRST season scope): S1 mode debut, S2, S3
+    for ow1 in ("en-2016-06-28-1", "en-2016-09-02-1", "en-2016-11-15-1"):
+        assert "season" in by_id[ow1]["categories"]
+    # OW1 arcade/event seasons must NOT be tagged as 新赛季 (scope guard holds)
+    assert "season" not in by_id["en-2021-09-07-1"]["categories"]  # Lockout Elimination S4
+    assert "season" not in by_id["en-2021-12-16-1"]["categories"]  # No Limits S2
+    assert sum("season" in p.get("categories", []) for p in index["patches"]) == 27
     assert all(isinstance(p.get("categories"), list) for p in index["patches"])
     assert all("content_qp_hacked" not in p for p in index["patches"])
 
