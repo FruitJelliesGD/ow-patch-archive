@@ -408,9 +408,10 @@ def test_cn_contentstack_synthetic():
     assert hero_sec.role == "tank"
     orisa, zhanchou = hero_sec.heroes
     assert orisa.name_cn == "奥丽莎" and orisa.role == "tank"
-    # （6v6）perk suffix is stripped; both perks structured, plain p+ul → general
-    assert [pk.name_cn for pk in orisa.perks] == ["防护屏障", "充能标枪"]
+    # （6v6）perk suffix is stripped; perks structured, plain p+ul → general
+    assert [pk.name_cn for pk in orisa.perks] == ["防护屏障", "充能标枪", "屏障投掷"]
     assert orisa.perks[0].lines_cn == ["冷却时间从8秒延长至10秒。"]
+    assert orisa.perks[2].status == "removed"  # 已移除。 full-width period stripped
     assert "基础生命值从375降低至325。" in orisa.general
     assert "总生命值从700降低至650。" in orisa.general
     assert "降低护盾以提升对抗性。" in orisa.dev_note
@@ -455,3 +456,14 @@ def test_cn_2026_02_full_month():
     assert patches[0].title == "《守望先锋》补丁说明——2026年2月25日"
     assert patches[1].title == "《守望先锋》补丁说明——2026年2月19日"
     assert all(s.type == "generic_update" for s in patches[0].sections)
+
+
+def test_en_perk_6v6_suffix():
+    """EN perk markers tolerate the (5v5)/(6v6) suffix — 'Protective Barrier –
+    Major Perk (6v6)' must parse as a perk, keeping EN/CN perk counts aligned
+    (the mis-alignment caused an ability_map name flip for Orisa)."""
+    patches = load("en_perk_6v6.html", "en")
+    orisa = patches[0].sections[0].heroes[0]
+    assert [pk.name_en for pk in orisa.perks] == ["Protective Barrier", "Charged Javelin"]
+    assert orisa.perks[0].lines_en == ["Cooldown increased from 8 to 10 seconds."]
+    assert "Protective Barrier" not in orisa.general

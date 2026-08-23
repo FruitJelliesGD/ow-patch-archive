@@ -37,7 +37,8 @@ ROLE_MAP = {
     "支援": "support",
 }
 
-_EN_PERK_RE = re.compile(r"^(.*?)\s*[-–]\s*(Minor|Major) Perk\s*$", re.I)
+_EN_PERK_RE = re.compile(
+    r"^(.*?)\s*[-–]\s*(Minor|Major) Perk\s*(?:\((?:5v5|6v6)\))?\s*$", re.I)
 # the （5v5）/（6v6） suffix appears only on the Contentstack-format CN page
 # (防护屏障——主要威能（6v6）); normal CN pages carry no suffix
 _CN_PERK_RE = re.compile(r"^(.*?)——(主要|次级)威能(?:（5v5）|（6v6）)?\s*$")
@@ -489,7 +490,7 @@ def _perk_status(perk: Perk, site: str) -> str:
 
 def _status_from_lines(lines: list[str], site: str) -> str:
     for line in lines:
-        s = line.strip().rstrip(".")
+        s = line.strip().rstrip(".。")
         if site == "en":
             if s == "Removed":
                 return "removed"
