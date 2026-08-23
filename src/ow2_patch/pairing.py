@@ -15,6 +15,8 @@ from collections import deque
 from dataclasses import dataclass, field
 from datetime import date
 
+from .pipeline import _is_balance_hero
+
 _MONTHS = {
     "jan": 1, "feb": 2, "mar": 3, "apr": 4, "may": 5, "jun": 6,
     "jul": 7, "aug": 8, "sep": 9, "oct": 10, "nov": 11, "dec": 12,
@@ -270,6 +272,35 @@ def _pair(result: PairResult, en: dict, cn: dict, by: str,
     })
 
 
+def _has_hero_changes(data: dict) -> bool:
+    """True when the patch contributes ≥1 record to the hero balance history:
+    a balance hero block (stadium mask / item blocks excluded by
+    `_is_balance_hero`) carrying at least one change-bearing element — a named
+    ability with changes, any perk, a general line with text, or a stadium item
+    with lines — mirroring what build_hero_files emits records for."""
+    for section in data.get("sections", []):
+        for hero in section.get("heroes", []):
+            if not _is_balance_hero(hero):
+                continue
+            if any((a.get("name_en") or a.get("name_cn")) and a.get("changes")
+                   for a in hero.get("abilities", [])):
+                return True
+            if hero.get("perks"):
+                return True
+            if any(_general_text(g) for g in hero.get("general", [])):
+                return True
+            if any(il for item in hero.get("stadium_items", [])
+                   for il in item.get("lines_en", []) + item.get("lines_cn", [])):
+                return True
+    return False
+
+
+def _general_text(g) -> str:
+    if isinstance(g, str):
+        return g
+    return g.get("text_en") or g.get("text_cn") or ""
+
+
 def build_patches_index(data_dir: pathlib.Path, result: PairResult) -> None:
     """Write data/patches_index.json: logical patches sorted by date desc.
 
@@ -294,6 +325,12 @@ def build_patches_index(data_dir: pathlib.Path, result: PairResult) -> None:
     raw_text) against the curated phrase table in categories.py. Display-only —
     the badge shows without reclassifying the patch, so standard-titled mixed
     patches (e.g. p-2026-01-08-1) keep their hero data in the standard history.
+
+    Each entry also carries `has_hero_changes` (bool): whether either side's
+    parsed structure contains hero balance-change content (see
+    `_has_hero_changes`). Mode-agnostic: special-mode patches carry the flag
+    too; the time-browser gates the 「英雄改动」 badge on
+    mode == standard AND has_hero_changes.
     """
     from .modes import STANDARD, patch_mode_with_sections
     from .categories import CATEGORY_ORDER, categorize_content
@@ -379,6 +416,7 @@ def build_patches_index(data_dir: pathlib.Path, result: PairResult) -> None:
             "patch_id_en": pair["en"]["patch_id"], "patch_id_cn": pair["cn"]["patch_id"],
             "mode": mode,
             "categories": [k for k in CATEGORY_ORDER if k in en_cats or k in cn_cats],
+            "has_hero_changes": _has_hero_changes(en_data) or _has_hero_changes(cn_data),
         })
     for patch_id in result.unpaired_en + result.unpaired_cn:
         site = patch_id.split("-", 1)[0]
@@ -404,6 +442,7 @@ def build_patches_index(data_dir: pathlib.Path, result: PairResult) -> None:
             "patch_id_cn": patch_id if site == "cn" else None,
             "mode": patch_mode_with_sections(meta["title"], titles),
             "categories": _patch_categories(meta),
+            "has_hero_changes": _has_hero_changes(meta),
         })
 
     index.sort(key=lambda e: (e["date"], e["id"]), reverse=True)
