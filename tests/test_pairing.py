@@ -133,6 +133,19 @@ def test_real_patches_index_mode_invariants():
     assert all(p.get("mode") for p in index["patches"])
 
 
+def test_real_patches_index_qp_hacked_content_flag():
+    """Content mentions of Quick Play: Hacked carry a display-only flag: the
+    badge shows without reclassifying the patch, so standard-titled mixed
+    patches (p-2026-01-08-1) keep their hero data in the standard history."""
+    index = json.loads((DATA / "patches_index.json").read_text(encoding="utf-8"))
+    by_id = {p["id"]: p for p in index["patches"]}
+    assert by_id["p-2026-01-08-1"]["content_qp_hacked"] is True  # QP Hacked Assault block
+    assert by_id["p-2026-07-30-1"]["content_qp_hacked"] is True  # limited-time 6v6 dev note
+    assert by_id["p-2026-01-08-1"]["mode"] == "standard"  # badge only, no reclassification
+    assert by_id["p-2026-08-11-1"]["content_qp_hacked"] is False
+    assert all("content_qp_hacked" in p for p in index["patches"])
+
+
 def test_patches_index_first_section_fields(tmp_path):
     """first_section_en/cn mirror each side's first NON-EMPTY section title;
     patches with no titled sections (OW1 raw_text) yield ""."""

@@ -165,6 +165,13 @@ function modeBadge(mode) {
   return `<span class="badge mode mode-${esc(mode)}">${MODE_LABEL[mode] || mode}</span>`;
 }
 
+// display-only badge: the patch content mentions Quick Play: Hacked but the
+// title rule did not classify it (mode stays standard, hero data untouched)
+function qpContentBadge(p) {
+  if (p && p.content_qp_hacked && p.mode !== "quick_play_hacked") return modeBadge("quick_play_hacked");
+  return "";
+}
+
 /* ---------- time browser (index.html) ---------- */
 
 // Sticky year/month jump bar: year select repopulates the month select with
@@ -265,6 +272,7 @@ async function initIndex() {
           <span class="patch-entry-date">${esc(p.date)}</span>
           ${siteBadges(p.sites)}
           ${modeBadge(p.mode)}
+          ${qpContentBadge(p)}
           ${firstSection ? `<span class="badge section" title="${esc(firstSection)}">${esc(firstSection)}</span>` : ""}
           <span class="patch-entry-title">${esc(title || p.id)}</span>
           ${chars ? `<span class="patch-entry-chars">${Number(chars).toLocaleString()} 字</span>` : ""}`;
@@ -909,7 +917,7 @@ async function initPatch() {
   const patch = await fetchJSON(file);
 
   document.getElementById("patch-date").textContent = meta.date;
-  document.getElementById("patch-sites").innerHTML = siteBadges(sites) + modeBadge(meta.mode);
+  document.getElementById("patch-sites").innerHTML = siteBadges(sites) + modeBadge(meta.mode) + qpContentBadge(meta);
   document.getElementById("patch-title").textContent = patch.title;
 
   // official post-publication edits badge

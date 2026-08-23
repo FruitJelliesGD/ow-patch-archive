@@ -288,8 +288,13 @@ def build_patches_index(data_dir: pathlib.Path, result: PairResult) -> None:
     that side's structured content (all strings inside `sections` plus
     `raw_text`, bilingual fields included — a consistent patch-size proxy).
     The time-browser shows it as "N 字".
+
+    Each entry also carries `content_qp_hacked` (bool): either side's content
+    mentions Quick Play: Hacked. Display-only — the badge shows without
+    reclassifying the patch, so standard-titled mixed patches (e.g.
+    p-2026-01-08-1) keep their hero data in the standard history.
     """
-    from .modes import STANDARD, patch_mode_with_sections
+    from .modes import STANDARD, patch_mode_with_sections, mentions_qp_hacked
 
     def _load_patch(patch_id: str) -> dict:
         site = patch_id.split("-", 1)[0]
@@ -317,6 +322,17 @@ def build_patches_index(data_dir: pathlib.Path, result: PairResult) -> None:
             return 0
         return walk(data.get("sections")) + walk(data.get("raw_text") or "")
 
+    def _mentions_qp_hacked(data: dict) -> bool:
+        def walk(v):
+            if isinstance(v, str):
+                return mentions_qp_hacked(v)
+            if isinstance(v, dict):
+                return any(walk(x) for x in v.values())
+            if isinstance(v, list):
+                return any(walk(x) for x in v)
+            return False
+        return walk(data)
+
     def _pair_mode(en: dict, cn: dict, en_titles: list[str], cn_titles: list[str]) -> str:
         en_mode = patch_mode_with_sections(en["title"], en_titles)
         if en_mode != STANDARD:
@@ -341,6 +357,7 @@ def build_patches_index(data_dir: pathlib.Path, result: PairResult) -> None:
             "sites": ["en", "cn"],
             "patch_id_en": pair["en"]["patch_id"], "patch_id_cn": pair["cn"]["patch_id"],
             "mode": mode,
+            "content_qp_hacked": _mentions_qp_hacked(en_data) or _mentions_qp_hacked(cn_data),
         })
     for patch_id in result.unpaired_en + result.unpaired_cn:
         site = patch_id.split("-", 1)[0]
@@ -365,6 +382,7 @@ def build_patches_index(data_dir: pathlib.Path, result: PairResult) -> None:
             "patch_id_en": patch_id if site == "en" else None,
             "patch_id_cn": patch_id if site == "cn" else None,
             "mode": patch_mode_with_sections(meta["title"], titles),
+            "content_qp_hacked": _mentions_qp_hacked(meta),
         })
 
     index.sort(key=lambda e: (e["date"], e["id"]), reverse=True)

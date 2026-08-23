@@ -65,6 +65,18 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
     results.indexPatches = patchEntries;
     results.indexHasModeBadge = findHtml(document.getElementById("patch-list"), /愚人节/);
     results.indexHasQuickPlayHackedLabel = findHtml(document.getElementById("patch-list"), /快速比赛：黑客入侵/);
+    let qpHackedEntryHtml = "";
+    for (const year of document.getElementById("patch-list").children) {
+      for (const month of year.children) {
+        for (const list of month.children) {
+          if (list.className !== "patch-list") continue;
+          for (const entry of list.children) {
+            if ((entry.href || "").includes("p-2026-01-08-1")) qpHackedEntryHtml = entry.innerHTML || "";
+          }
+        }
+      }
+    }
+    results.indexQpHackedContentBadge = /快速比赛：黑客入侵/.test(qpHackedEntryHtml);
     results.updatedFmt = /^\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2} UTC[+-]\\d+(?::\\d{2})?$/.test(document.getElementById("updated").textContent);
 
     // jump bar: year select (2016-2026) + month select populated for the
@@ -149,6 +161,10 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
     await initPatch();
     results.patchHasModeBadge = /愚人节/.test(document.getElementById("patch-sites").innerHTML || "");
 
+    location.search = "?id=p-2026-01-08-1&lang=en";
+    await initPatch();
+    results.patchQpHackedContentBadge = /快速比赛：黑客入侵/.test(document.getElementById("patch-sites").innerHTML || "");
+
     location.search = "?id=en-2016-05-27-1&lang=en";
     await initPatch();
     results.patchEdited = document.getElementById("patch-edits").innerHTML || "";
@@ -231,6 +247,7 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
     if (results.entryCards !== 905) fail.push("entryCards=" + results.entryCards);
     if (!results.indexHasModeBadge) fail.push("index mode badge missing");
     if (!results.indexHasQuickPlayHackedLabel) fail.push("index quick-play-hacked label missing");
+    if (!results.indexQpHackedContentBadge) fail.push("index qp-hacked content badge missing");
     if (results.jumpYears !== 11) fail.push("jumpYears=" + results.jumpYears);
     if (!results.jumpMonths) fail.push("jump month options missing");
     if (!results.indexHasSectionBadge) fail.push("index section badge missing");
@@ -258,6 +275,7 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
     if (!results.patchHasRarityBadge) fail.push("patch stadium rarity badge missing");
     if (!results.patchHasContentLink) fail.push("patch content link missing");
     if (!results.patchHasModeBadge) fail.push("patch mode badge missing");
+    if (!results.patchQpHackedContentBadge) fail.push("patch qp-hacked content badge missing");
     if (!results.tocChildren || !results.tocHasSec0) fail.push("toc missing entries=" + results.tocChildren);
     if (results.tocHiddenModern) fail.push("modern toc should be visible");
     if (!results.legacyStructured || !results.legacyNoRawText) fail.push("legacy page not structured");

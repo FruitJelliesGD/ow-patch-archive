@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import pytest
 
-from ow2_patch.modes import MODE_LABELS, patch_mode, patch_mode_with_sections
+from ow2_patch.modes import MODE_LABELS, mentions_qp_hacked, patch_mode, patch_mode_with_sections
 
 
 @pytest.mark.parametrize("title,mode", [
@@ -25,6 +25,21 @@ from ow2_patch.modes import MODE_LABELS, patch_mode, patch_mode_with_sections
 ])
 def test_patch_mode(title: str, mode: str):
     assert patch_mode(title) == mode
+
+
+@pytest.mark.parametrize("text,expected", [
+    ("Quick Play Hacked: Assault Returns!", True),
+    ("our latest Quick Play: Hacked - in 5v5, 6v6", True),
+    ("QUICK PLAY HACKED weekend", True),
+    ("快速比赛：黑客入侵攻防作战返场！", True),
+    ("在即将登场的快速比赛：黑客入侵中", True),
+    ("Quick Play, Competitive Play", False),
+    ("快速比赛与竞技比赛的规则", False),
+    ("", False),
+    (None, False),
+])
+def test_mentions_qp_hacked(text: str | None, expected: bool):
+    assert mentions_qp_hacked(text) is expected
 
 
 def test_all_modes_have_labels():
