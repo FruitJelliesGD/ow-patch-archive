@@ -38,8 +38,12 @@ ROLE_MAP = {
 }
 
 _EN_PERK_RE = re.compile(r"^(.*?)\s*[-–]\s*(Minor|Major) Perk\s*$", re.I)
-_CN_PERK_RE = re.compile(r"^(.*?)——(主要|次级)威能\s*$")
+# the （5v5）/（6v6） suffix appears only on the Contentstack-format CN page
+# (防护屏障——主要威能（6v6）); normal CN pages carry no suffix
+_CN_PERK_RE = re.compile(r"^(.*?)——(主要|次级)威能(?:（5v5）|（6v6）)?\s*$")
 _CN_TITLE_DATE_RE = re.compile(r"(\d{4})年(\d{1,2})月(\d{1,2})日")
+# Contentstack-format hero names may carry a 全新/重做 marker (斩仇（全新）)
+_CN_HERO_NAME_SUFFIX_RE = re.compile(r"^(.*?)(?:（全新）|（重做）)\s*$")
 
 # Stadium hero-item markers: "<strong>Name - Power</strong>" or
 # "<strong>Name - <Rarity> <Type> Hero Item</strong>" (EN), with the optional
@@ -64,6 +68,15 @@ _MAP_BLOCK_TITLES = {"地图更新", "Map Updates"}
 _PATCH_SPLIT_RE = re.compile(r'(?=<div\s+class="(?:[^"]*\s)?PatchNotes-patch(?:\s|"))')
 _SECTION_SPLIT_RE = re.compile(r'(?=<div\s+class="(?:[^"]*\s)?PatchNotes-section(?:\s|"))')
 
+# Contentstack-format CN patch blocks: a flat sequence of
+# <div contentstack-field-context=... contentstack-unique-entry-key="sections[N].<type>.<field>">
+# siblings with NO PatchNotes-patch/section wrappers (the official CN site renders
+# some patches in this raw format, e.g. the 2026-02-11 Season 1 patch). Without
+# this parser the whole block is silently dropped by the wrapper-class split.
+_CS_SECTION_KEY_RE = re.compile(r"sections\[(\d+)\]\.(hero_update|generic_update)(?:\.(.*))?")
+_CS_UPDATE_KEY_RE = re.compile(r"updates\[(\d+)\]\.update\.(title|description|dev_comment)")
+_CS_HERO_KEY_RE = re.compile(r"heroes\[(\d+)\]\.hero\.(hero_name|change_description|dev_comment|metadata\.\w+)")
+
 
 def parse_patch_notes(html: str, site: str, url: str = "",
                       resolver: NameResolver | None = None) -> list[Patch]:
@@ -73,6 +86,8 @@ def parse_patch_notes(html: str, site: str, url: str = "",
         patch = _parse_patch_chunk(chunk, site, url, resolver=resolver)
         if patch:
             patches.append(patch)
+    if "contentstack-unique-entry-key" in html:
+        patches.extend(_parse_contentstack_patches(html, site, url))
     # seq within same date
     seen: dict[str, int] = {}
     for patch in patches:
@@ -80,6 +95,96 @@ def parse_patch_notes(html: str, site: str, url: str = "",
         patch.seq = seen[patch.date]
         patch.id = f"{patch.site}-{patch.date}-{patch.seq}"
     return patches
+
+
+def _parse_contentstack_patches(html: str, site: str, url: str) -> list[Patch]:
+    """Group the Contentstack divs into patches (a `title` key starts a new
+    group, supporting multiple blocks per page) and parse each group."""
+    soup = BeautifulSoup(html, "lxml")
+    groups: list[list[Tag]] = []
+    current: list[Tag] = []
+    for div in soup.find_all("div", attrs={"contentstack-unique-entry-key": True}):
+        if (div.get("contentstack-unique-entry-key") or "") == "title" and current:
+            groups.append(current)
+            current = []
+        current.append(div)
+    if current:
+        groups.append(current)
+    return [p for p in (_parse_contentstack_patch(g, site, url) for g in groups) if p]
+
+
+def _parse_contentstack_patch(divs: list[Tag], site: str, url: str) -> Patch | None:
+    title = ""
+    sections: dict[int, Section] = {}
+    heroes: dict[tuple[int, int], HeroUpdate] = {}
+    blocks: dict[tuple[int, int], GenericBlock] = {}
+    for div in divs:
+        key = div.get("contentstack-unique-entry-key") or ""
+        if key == "title":
+            title = _text(div)
+            continue
+        m = _CS_SECTION_KEY_RE.match(key)
+        if not m:
+            continue
+        idx, kind, rest = int(m.group(1)), m.group(2), m.group(3) or ""
+        sec = sections.setdefault(idx, Section(type=kind))
+        if rest == "title":
+            sec.title = _text(div)
+            sec.role = ROLE_MAP.get(sec.title or "")
+        elif rest == "description":
+            sec.description = _rich_text(div)
+        elif rest == "dev_comment":
+            sec.dev = _text(div)
+        elif rest.startswith("updates["):
+            um = _CS_UPDATE_KEY_RE.match(rest)
+            if not um:
+                continue
+            block = blocks.setdefault((idx, int(um.group(1))), GenericBlock())
+            field = um.group(2)
+            if field == "title":
+                block.title = _text(div)
+            elif field == "description":
+                block.body = _rich_text(div)
+            else:
+                block.dev = _text(div)
+        elif rest.startswith("heroes["):
+            hm = _CS_HERO_KEY_RE.match(rest)
+            if not hm or hm.group(2).startswith("metadata."):
+                continue  # icon/asset guids: hex strings, no URL — skip
+            hero = heroes.setdefault((idx, int(hm.group(1))), HeroUpdate())
+            field = hm.group(2)
+            if field == "hero_name":
+                name = _text(div)
+                suffix = _CN_HERO_NAME_SUFFIX_RE.match(name)
+                hero.name_cn = (suffix.group(1) if suffix else name) or None
+            elif field == "change_description":
+                hero.general, hero.perks, hero.stadium_items = _parse_general_updates(div, site)
+            else:  # dev_comment
+                hero.dev_note = _text(div) or None
+
+    if not title:
+        return None
+    date = _patch_date_from_title(title)
+    if not date:
+        return None
+    parsed_sections: list[Section] = []
+    for idx in sorted(sections):
+        sec = sections[idx]
+        sec.heroes = [heroes[(idx, k)] for k in sorted(k for (i, k) in heroes if i == idx)]
+        for hero in sec.heroes:
+            hero.role = sec.role
+        sec.blocks = [blocks[(idx, k)] for k in sorted(k for (i, k) in blocks if i == idx)]
+        parsed_sections.append(sec)
+    return Patch(site=site, date=date, url=url, title=title, sections=parsed_sections)
+
+
+def _patch_date_from_title(title: str) -> str | None:
+    """Contentstack patches carry no .anchor[id^='patch-']; the CN title regex
+    is the only date source."""
+    m = _CN_TITLE_DATE_RE.search(title)
+    if not m:
+        return None
+    return f"{m.group(1)}-{int(m.group(2)):02d}-{int(m.group(3)):02d}"
 
 
 def _parse_patch_chunk(chunk: str, site: str, url: str,
@@ -136,6 +241,10 @@ def _patch_date(soup: BeautifulSoup, title: str, site: str) -> str | None:
 
 def _parse_section(fragment: str, site: str) -> Section:
     soup = BeautifulSoup(fragment, "lxml")
+    # a trailing Contentstack-format block lands inside the last textual chunk;
+    # keep it out of the empty-last-section description fallback below
+    for el in soup.select("[contentstack-unique-entry-key]"):
+        el.decompose()
     title = _text(soup.select_one(".PatchNotes-sectionTitle"))
     classes = _first_class(soup)
     is_map = "PatchNotes-section-map_update" in (classes or [])

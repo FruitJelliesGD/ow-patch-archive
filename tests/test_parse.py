@@ -382,3 +382,76 @@ def test_cn_stadium_items_structured():
     assert core.rarity == "史诗" and core.kind == "weapon" and core.status == "moved"
     assert core.raw_text == ["核心冷却——史诗武器英雄物品"]
     assert not any("英雄物品" in g for g in dva.general)
+
+
+# ---------- Contentstack-format CN patches ----------
+
+def test_cn_contentstack_synthetic():
+    """The Contentstack raw format (no PatchNotes-patch/section wrappers):
+    title + sections with generic updates and hero blocks map to the model."""
+    patches = load("cn_contentstack_synthetic.html", "cn")
+    assert [p.id for p in patches] == ["cn-2026-02-11-1"]
+    p = patches[0]
+    assert p.date == "2026-02-11"
+    assert p.title == "《守望先锋》补丁说明——2026年2月11日"
+    assert [s.type for s in p.sections] == ["generic_update", "hero_update"]
+
+    gen = p.sections[0]
+    assert gen.title == "综合更新"
+    assert "新界面新体验" in gen.description
+    block = gen.blocks[0]
+    assert block.title == "补给更新"
+    assert "第15至20赛季" in block.body
+    assert "区块开发注" in block.dev
+
+    hero_sec = p.sections[1]
+    assert hero_sec.role == "tank"
+    orisa, zhanchou = hero_sec.heroes
+    assert orisa.name_cn == "奥丽莎" and orisa.role == "tank"
+    # （6v6）perk suffix is stripped; both perks structured, plain p+ul → general
+    assert [pk.name_cn for pk in orisa.perks] == ["防护屏障", "充能标枪"]
+    assert orisa.perks[0].lines_cn == ["冷却时间从8秒延长至10秒。"]
+    assert "基础生命值从375降低至325。" in orisa.general
+    assert "总生命值从700降低至650。" in orisa.general
+    assert "降低护盾以提升对抗性。" in orisa.dev_note
+    # （全新）hero-name suffix stripped; ——异能 item marker → stadium item
+    assert zhanchou.name_cn == "斩仇"
+    assert len(zhanchou.stadium_items) == 1
+    assert zhanchou.stadium_items[0].name_cn == "巨力劈斩"
+
+
+def test_cn_contentstack_section9_real():
+    """Real Feb-11 content (title + section 9 重装, d-va + mauga): hero general
+    lines and the 动力弹带 perk parse like the normal CN format."""
+    patches = load("cn_contentstack_section9.html", "cn")
+    assert len(patches) == 1
+    sec = patches[0].sections[0]
+    assert sec.title == "重装" and sec.role == "tank"
+    dva, mauga = sec.heroes
+    assert dva.name_cn == "D.Va"
+    assert "基础生命值从375降低至325。（5v5）" in dva.general
+    assert "总生命值从700降低至650。" in dva.general
+    assert "削减基础生命值可以让对手更容易摧毁她的机甲。" in dva.dev_note
+    assert mauga.name_cn == "毛加"
+    assert [pk.name_cn for pk in mauga.perks] == ["动力弹带"]
+
+
+def test_cn_2026_02_full_month():
+    """Regression over the real Feb-2026 month page: the 3 normal patches parse
+    unchanged and the Contentstack 02-11 patch joins as the 4th."""
+    patches = load("cn_2026_02.html", "cn")
+    assert [p.id for p in patches] == [
+        "cn-2026-02-25-1", "cn-2026-02-19-1", "cn-2026-02-14-1", "cn-2026-02-11-1"]
+    p = patches[-1]
+    assert p.title == "《守望先锋》补丁说明——2026年2月11日"
+    assert len(p.sections) == 22
+    tank = next(s for s in p.sections if s.title == "重装")
+    damage = next(s for s in p.sections if s.title == "输出")
+    support = next(s for s in p.sections if s.title == "支援")
+    assert len(tank.heroes) == 9
+    assert len(damage.heroes) == 14
+    assert len(support.heroes) == 8
+    # the 3 normal patches are untouched by the trailing contentstack block
+    assert patches[0].title == "《守望先锋》补丁说明——2026年2月25日"
+    assert patches[1].title == "《守望先锋》补丁说明——2026年2月19日"
+    assert all(s.type == "generic_update" for s in patches[0].sections)
