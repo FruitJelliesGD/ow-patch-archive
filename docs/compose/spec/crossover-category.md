@@ -1,14 +1,23 @@
 ---
 feature: crossover-category
-status: in-progress
+status: delivered
 updated: 2026-08-23
 branch: feat/crossover-category
-commits: # filled at delivery
+commits: a7621a5..841a33b
 ---
 
 # 「联动」徽章：crossover 内容分类
 
 ## Report
+
+**What was built** — 新增内容分类 **`crossover`（联动）**：`categories.py` 在 `owl` 后追加规则（EN 短语 `collab|One[- ]?Punch Man|LE SSERAFIM|Cowboy Bebop|Transformers|Warcraft|My Hero Academia|Phantom Thieves|Street Fighter|Porsche`、CN `心之怪盗团`），作用域 `TITLE_SECTIONS`（正文误判全部排除），标签/顺序同步前端 mirror；`manual_categories.json` 补录 2 个正文-only 联动补丁（`en-2023-10-10-1` Diablo "Trials of Sanctuary"、`en-2019-10-15-1` BlizzCon 伊利丹/泰兰德，叠加于既有 season）。**15 个联动补丁**（13 规则 + 2 手动标记）获得「联动」徽章与筛选 chip，覆盖外部品牌（一拳超人/LE SSERAFIM/星际牛仔/保时捷/变形金刚/我的英雄学院/街霸6/心之怪盗团）与暴雪自家 IP（魔兽 Sylvanas 皮肤/暗黑/魔兽争霸奖励），**零误判**。
+
+- **效果**：chips 16→17（新增「联动」筛选，15 条全带徽章）；`en-2024-10-28`（All Might 皮肤 bug）与 `p-2026-02-09`（CN 联动 dev-note）等正文级噪声正确排除。
+- **review**：general-9 全部验收标准 MET、0 critical；2 项非关键——`collab` 短语当前输出冗余（与 One-Punch-Man 重复，保留作未来 catch-all）、spec 措辞修正（"Diablo Trials of Sanctuary" → 实际正文为 "Trials of Sanctuary, a new Blizzard crossover game mode"，无 "Diablo" 字样）。
+
+**Verification** — `pytest -q` → 280 passed（+20：crossover 短语 11 正例/8 负例、作用域用例、real-data 15 正例/2 负例/计数断言、表完整性 15）；`node tools/_smoke_web.js` → ALL WEB ASSERTIONS OK（chipCount 17 = 全部+15 类+hero_changes）；`python tools/rebuild.py --data data` 双跑字节幂等（数据 diff 仅 patches_index.json + manual_categories.json，343 条目仅 15 条 categories 追加）；`npx --yes -p playwright node tools/_layout_check.js` → 12/12；真实浏览器：17 chips 含「联动」、变形金刚/街霸6/暗黑/BlizzCon 条目显示徽章、All Might bug 无徽章、联动筛选 15 条全带徽章。
+
+**Journey log** — ① 联动短语必须按 TITLE_SECTIONS 作用域验证：`collab`/`Warcraft` 在 WHOLE 下有 7/1 个正文误判，标题作用域全部排除——正文皮肤 bug 与 dev-note（All Might/联动）是最大噪声源。② CN 联动标题用拉丁品牌名（《守望先锋》x LE SSERAFIM），EN 短语代劳 CN 侧；仅怪盗团需要 CN 短语（全库唯一命中）。③ 两个正文-only 联动（Diablo Trials of Sanctuary、BlizzCon）无标题短语可抓——manual_categories 是唯一路径；覆盖机制与规则叠加不互斥。④ `collab` 短语当前冗余但保留（未来 "X collab" 标题的 catch-all），spec 记录取舍。
 
 ## [S1] Problem
 
@@ -51,9 +60,9 @@ commits: # filled at delivery
 
 ## Tasks
 
-- [ ] T1: spec 文档 + worktree — acceptance: 本文档含设计与任务；`.worktrees/crossover-category` 分支 `feat/crossover-category`（covers: 全部）
-- [ ] T2: categories.py crossover + 前端 + 测试 — acceptance: test_categories 新旧用例全绿（covers: D1 D3 D4；depends: T1）
-- [ ] T3: manual_categories +2 + rebuild — acceptance: 15 条目含 crossover、计数 15、仅 patches_index.json 变化（covers: D2 D5；depends: T2）
-- [ ] T4: smoke 重基线（chipCount 17）+ 全量验证 — acceptance: pytest/smoke/layout 全绿、rebuild 双跑幂等、真实浏览器抽查（covers: D5；depends: T3）
-- [ ] T5: 独立 review — acceptance: 0 critical（covers: 全部；depends: T4）
-- [ ] T6: 独立 review + 规格定稿 — acceptance: status: delivered、Report 填毕（covers: 全部；depends: T5）
+- [x] T1: spec 文档 + worktree — acceptance: 本文档含设计与任务；`.worktrees/crossover-category` 分支 `feat/crossover-category`（covers: 全部）
+- [x] T2: categories.py crossover + 前端 + 测试 — acceptance: test_categories 新旧用例全绿（covers: D1 D3 D4；depends: T1）
+- [x] T3: manual_categories +2 + rebuild — acceptance: 15 条目含 crossover、计数 15、仅 patches_index.json 变化（covers: D2 D5；depends: T2）
+- [x] T4: smoke 重基线（chipCount 17）+ 全量验证 — acceptance: pytest/smoke/layout 全绿、rebuild 双跑幂等、真实浏览器抽查（covers: D5；depends: T3）
+- [x] T5: 独立 review — acceptance: 0 critical（covers: 全部；depends: T4）
+- [x] T6: 独立 review + 规格定稿 — acceptance: status: delivered、Report 填毕（covers: 全部；depends: T5）
