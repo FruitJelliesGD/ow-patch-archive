@@ -1,6 +1,6 @@
 ---
 feature: ow1-season-launches
-status: designed
+status: in-progress
 updated: 2026-08-23
 branch: feat/ow1-season-launches
 commits: # filled at delivery
