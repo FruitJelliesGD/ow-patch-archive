@@ -19,6 +19,19 @@ const MODE_LABEL = {
 const STATUS_LABEL = {
   added: "新增", removed: "移除", reworked: "重做", moved: "变更", changed: "调整",
 };
+// mirror of src/ow2_patch/categories.py CATEGORY_LABELS / CATEGORY_ORDER
+const CATEGORY_LABEL = {
+  quick_play_hacked: "快速比赛：黑客入侵", april_fools: "愚人节",
+  experiment_6v6: "实验模式", hero_trial: "英雄试玩", ptr: "PTR 测试服",
+  community_created: "社区创造模式",
+  event: "活动", season: "新赛季", new_hero: "新英雄", new_map: "新地图",
+  stadium: "角斗领域", arcade: "街机", workshop: "自定义工坊", owl: "联赛",
+};
+const CATEGORY_ORDER = [
+  "quick_play_hacked", "april_fools", "experiment_6v6", "hero_trial", "ptr",
+  "community_created", "event", "season", "new_hero", "new_map",
+  "stadium", "arcade", "workshop", "owl",
+];
 const MONTH_LABEL = ["", "1月", "2月", "3月", "4月", "5月", "6月",
   "7月", "8月", "9月", "10月", "11月", "12月"];
 
@@ -165,11 +178,16 @@ function modeBadge(mode) {
   return `<span class="badge mode mode-${esc(mode)}">${MODE_LABEL[mode] || mode}</span>`;
 }
 
-// display-only badge: the patch content mentions Quick Play: Hacked but the
-// title rule did not classify it (mode stays standard, hero data untouched)
-function qpContentBadge(p) {
-  if (p && p.content_qp_hacked && p.mode !== "quick_play_hacked") return modeBadge("quick_play_hacked");
-  return "";
+// display-only badges: content categories (categories.py) — the patch content
+// mentions the category phrase but mode classification is untouched, so
+// standard-titled mixed patches keep their hero data. The patch's own mode key
+// is skipped: the mode badge already renders it.
+function categoryBadges(p) {
+  if (!p || !p.categories) return "";
+  return p.categories
+    .filter((k) => k !== p.mode)
+    .map((k) => `<span class="badge mode mode-${esc(k)}">${CATEGORY_LABEL[k] || k}</span>`)
+    .join(" ");
 }
 
 /* ---------- time browser (index.html) ---------- */
@@ -228,12 +246,15 @@ function buildJumpBar(years) {
   fillMonths();
 }
 
-async function initIndex() {
-  const data = await fetchJSON("data/patches_index.json");
-  document.getElementById("updated").textContent = fmtLocalTs(data.updated) || "-";
-  const patches = data.patches || [];
+let allPatches = [];
+const filter = { selected: new Set() };
 
-  // group by year -> month
+function filterMatches(p) {
+  if (filter.selected.size === 0) return true;
+  return [...filter.selected].some((k) => p.mode === k || (p.categories || []).includes(k));
+}
+
+function groupByYearMonth(patches) {
   const years = new Map();
   for (const p of patches) {
     const [y, m] = p.date.split("-");
@@ -242,10 +263,14 @@ async function initIndex() {
     if (!months.has(m)) months.set(m, []);
     months.get(m).push(p);
   }
+  return years;
+}
 
-  buildJumpBar(years);
-
+function renderTimeBrowser(patches, filterFn) {
   const container = document.getElementById("patch-list");
+  const visible = filterFn ? patches.filter(filterFn) : patches;
+  container.replaceChildren();
+  const years = groupByYearMonth(visible);
   for (const [year, months] of [...years.entries()].sort((a, b) => b[0].localeCompare(a[0]))) {
     const yearSection = document.createElement("section");
     yearSection.className = "year";
@@ -272,7 +297,7 @@ async function initIndex() {
           <span class="patch-entry-date">${esc(p.date)}</span>
           ${siteBadges(p.sites)}
           ${modeBadge(p.mode)}
-          ${qpContentBadge(p)}
+          ${categoryBadges(p)}
           ${firstSection ? `<span class="badge section" title="${esc(firstSection)}">${esc(firstSection)}</span>` : ""}
           <span class="patch-entry-title">${esc(title || p.id)}</span>
           ${chars ? `<span class="patch-entry-chars">${Number(chars).toLocaleString()} 字</span>` : ""}`;
@@ -283,6 +308,86 @@ async function initIndex() {
     }
     container.appendChild(yearSection);
   }
+}
+
+// Multi-select content filter chips, appended inside the sticky jump bar.
+function buildCategoryChips(patches) {
+  const present = new Set();
+  for (const p of patches) {
+    for (const k of p.categories || []) present.add(k);
+  }
+  const chips = document.createElement("div");
+  chips.className = "chips";
+  chips.id = "cat-chips";
+  const allBtn = document.createElement("button");
+  allBtn.className = "chip active";
+  allBtn.dataset.cat = "";
+  allBtn.textContent = "全部";
+  allBtn.addEventListener("click", () => toggleCat(""));
+  chips.appendChild(allBtn);
+  for (const key of CATEGORY_ORDER) {
+    if (!present.has(key)) continue;
+    const b = document.createElement("button");
+    b.className = "chip";
+    b.dataset.cat = key;
+    b.textContent = CATEGORY_LABEL[key] || key;
+    b.addEventListener("click", () => toggleCat(key));
+    chips.appendChild(b);
+  }
+  document.getElementById("jump-bar").appendChild(chips);
+  syncChips();
+}
+
+function toggleCat(key) {
+  if (key === "") {
+    filter.selected.clear();
+  } else if (filter.selected.has(key)) {
+    filter.selected.delete(key);
+  } else {
+    filter.selected.add(key);
+  }
+  syncChips();
+  renderTimeBrowser(allPatches, filterMatches);
+}
+
+function syncChips() {
+  const chips = document.getElementById("cat-chips");
+  if (!chips) return;
+  for (const btn of chips.children) {
+    const key = btn.dataset.cat || "";
+    const active = key === "" ? filter.selected.size === 0 : filter.selected.has(key);
+    btn.className = "chip" + (active ? " active" : "");
+  }
+}
+
+// smoke-test hook: same semantics as the chips, callable directly
+function setFilter(keys) {
+  filter.selected = new Set((keys || []).filter((k) => CATEGORY_LABEL[k]));
+  syncChips();
+  renderTimeBrowser(allPatches, filterMatches);
+}
+
+function getFilter() {
+  return [...filter.selected];
+}
+
+async function initIndex() {
+  const data = await fetchJSON("data/patches_index.json");
+  document.getElementById("updated").textContent = fmtLocalTs(data.updated) || "-";
+  allPatches = data.patches || [];
+
+  // ?cat=a,b seeds the initial filter (smoke-testable initial state; chip
+  // clicks stay local state, the URL is not rewritten)
+  const q = new URLSearchParams(location.search).get("cat");
+  if (q) {
+    for (const k of q.split(",")) {
+      if (CATEGORY_LABEL[k]) filter.selected.add(k);
+    }
+  }
+
+  buildJumpBar(groupByYearMonth(allPatches));
+  buildCategoryChips(allPatches);
+  renderTimeBrowser(allPatches, filterMatches);
 }
 
 /* ---------- entry search (entries.html) ---------- */
@@ -917,7 +1022,7 @@ async function initPatch() {
   const patch = await fetchJSON(file);
 
   document.getElementById("patch-date").textContent = meta.date;
-  document.getElementById("patch-sites").innerHTML = siteBadges(sites) + modeBadge(meta.mode) + qpContentBadge(meta);
+  document.getElementById("patch-sites").innerHTML = siteBadges(sites) + modeBadge(meta.mode) + categoryBadges(meta);
   document.getElementById("patch-title").textContent = patch.title;
 
   // official post-publication edits badge

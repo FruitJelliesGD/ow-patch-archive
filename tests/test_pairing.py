@@ -133,17 +133,48 @@ def test_real_patches_index_mode_invariants():
     assert all(p.get("mode") for p in index["patches"])
 
 
-def test_real_patches_index_qp_hacked_content_flag():
-    """Content mentions of Quick Play: Hacked carry a display-only flag: the
-    badge shows without reclassifying the patch, so standard-titled mixed
-    patches (p-2026-01-08-1) keep their hero data in the standard history."""
+def test_real_patches_index_categories_invariants():
+    """Content categories are display-only: content mentions tag the patch
+    without reclassifying it (mode stays standard for mixed patches)."""
     index = json.loads((DATA / "patches_index.json").read_text(encoding="utf-8"))
     by_id = {p["id"]: p for p in index["patches"]}
-    assert by_id["p-2026-01-08-1"]["content_qp_hacked"] is True  # QP Hacked Assault block
-    assert by_id["p-2026-07-30-1"]["content_qp_hacked"] is True  # limited-time 6v6 dev note
+    assert "quick_play_hacked" in by_id["p-2026-01-08-1"]["categories"]  # QP Hacked Assault block
+    assert "quick_play_hacked" in by_id["p-2026-07-30-1"]["categories"]  # limited-time 6v6 dev note
     assert by_id["p-2026-01-08-1"]["mode"] == "standard"  # badge only, no reclassification
-    assert by_id["p-2026-08-11-1"]["content_qp_hacked"] is False
-    assert all("content_qp_hacked" in p for p in index["patches"])
+    assert "season" in by_id["p-2026-08-11-1"]["categories"]  # Reign of Talon - Season 4
+    assert all(isinstance(p.get("categories"), list) for p in index["patches"])
+    assert all("content_qp_hacked" not in p for p in index["patches"])
+
+
+def test_patches_index_categories_union(tmp_path):
+    """categories = union of both sides' content-detected categories in
+    CATEGORY_ORDER; unpaired entries classify from their own content."""
+    from ow2_patch.pairing import PairResult, build_patches_index
+
+    data_dir = tmp_path / "data"
+    _write_patch_json(data_dir, "en-2026-03-01-1",
+                      [{"type": "generic_update", "title": "Season 5", "heroes": []}])
+    _write_patch_json(data_dir, "cn-2026-03-02-1",
+                      [{"type": "generic_update", "title": "更新",
+                        "blocks": [{"title": "", "body": "新英雄无漾登场", "dev": None}],
+                        "heroes": []}])
+    _write_patch_json(data_dir, "cn-2026-03-03-1",
+                      [{"type": "generic_update", "title": "角斗领域改动", "heroes": []}])
+    result = PairResult(
+        pairs=[{
+            "id": "p-2026-03-01-1", "date": "2026-03-01",
+            "en": {"patch_id": "en-2026-03-01-1", "date": "2026-03-01", "seq": 1,
+                   "title": "Overwatch Patch Notes", "url": "u"},
+            "cn": {"patch_id": "cn-2026-03-02-1", "date": "2026-03-02", "seq": 1,
+                   "title": "《守望先锋》补丁说明", "url": "u"},
+        }],
+        unpaired_cn=["cn-2026-03-03-1"],
+    )
+    build_patches_index(data_dir, result)
+    index = json.loads((data_dir / "patches_index.json").read_text(encoding="utf-8"))
+    by_id = {p["id"]: p for p in index["patches"]}
+    assert by_id["p-2026-03-01-1"]["categories"] == ["season", "new_hero"]  # en ∪ cn
+    assert by_id["cn-2026-03-03-1"]["categories"] == ["stadium"]
 
 
 def test_patches_index_first_section_fields(tmp_path):

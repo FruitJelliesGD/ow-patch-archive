@@ -119,6 +119,15 @@ main { max-width: 960px; margin: 0 auto; padding: 20px; }
 .badge.mode-ptr { background: rgba(158, 158, 158, 0.2); color: #bdbdbd; }
 .badge.mode-announcement { background: rgba(243, 156, 58, 0.18); color: var(--orange); }
 .badge.mode-community_created { background: rgba(156, 116, 246, 0.16); color: #9c74f6; }
+/* content-category badges (time browser filter): same .badge.mode-* family */
+.badge.mode-event { background: rgba(255, 167, 38, 0.18); color: #ffb74d; }
+.badge.mode-season { background: rgba(79, 195, 247, 0.2); color: #4fc3f7; }
+.badge.mode-new_hero { background: rgba(46, 197, 176, 0.22); color: #2ec5b0; }
+.badge.mode-new_map { background: rgba(129, 199, 132, 0.18); color: #81c784; }
+.badge.mode-stadium { background: rgba(156, 116, 246, 0.2); color: #b39ddb; }
+.badge.mode-arcade { background: rgba(38, 198, 218, 0.18); color: #4dd0e1; }
+.badge.mode-workshop { background: rgba(255, 183, 77, 0.16); color: #ffcc80; }
+.badge.mode-owl { background: rgba(244, 67, 54, 0.16); color: #ef5350; }
 /* patch first-section-title badge (time browser): long titles ellipsize */
 .badge.section {
   background: rgba(129, 199, 132, 0.14);
@@ -208,8 +217,8 @@ main { max-width: 960px; margin: 0 auto; padding: 20px; }
   cursor: pointer;
 }
 .jump-btn:hover { background: rgba(79, 195, 247, 0.2); }
-/* anchor offset below the sticky jump bar */
-[id^="year-"] { scroll-margin-top: 60px; }
+/* anchor offset below the sticky jump bar (grows with the category chips) */
+[id^="year-"] { scroll-margin-top: 110px; }
 .patch-browser .year-title {
   color: var(--muted);
   font-size: 18px;
