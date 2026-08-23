@@ -35,7 +35,9 @@ _COMMUNITY_CREATED_SECTION_RE = re.compile(r"Community Crafted|社区创造模�
 
 # display-only content signal: standard-titled patches whose body still mentions
 # the mode (e.g. p-2026-01-08-1's "Quick Play Hacked: Assault Returns!" block)
-# show the badge without reclassifying their hero data
+# show the badge without reclassifying their hero data. The content-category
+# system (categories.py) reuses this phrase; the badge itself is now driven by
+# the `categories` field.
 QP_HACKED_PHRASE = re.compile(r"Quick Play:?\s+Hacked|快速比赛：黑客入侵", re.I)
 
 # official April Fools section marker: the 2026-04-01 patch title reads like a
@@ -65,14 +67,6 @@ def patch_mode(title: str) -> str:
         if rx.search(title):
             return mode
     return STANDARD
-
-
-def mentions_qp_hacked(text: str) -> bool:
-    """True when a patch content string mentions Quick Play: Hacked.
-
-    Display badge only — mode classification is untouched (the title rule stays
-    the sole mode authority)."""
-    return bool(text and QP_HACKED_PHRASE.search(text))
 
 
 def patch_mode_with_sections(title: str, section_titles: list[str]) -> str:

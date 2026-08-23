@@ -76,7 +76,20 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
         }
       }
     }
-    results.indexQpHackedContentBadge = /快速比赛：黑客入侵/.test(qpHackedEntryHtml);
+    results.indexCategoryBadge = /快速比赛：黑客入侵/.test(qpHackedEntryHtml);
+    results.chipCount = document.getElementById("jump-bar").children[4] ? document.getElementById("jump-bar").children[4].children.length : 0;
+    setFilter(["event"]);
+    let eventFiltered = 0;
+    for (const year of document.getElementById("patch-list").children) {
+      for (const month of year.children) {
+        for (const list of month.children) {
+          if (list.className === "patch-list") eventFiltered += list.children.length;
+        }
+      }
+    }
+    results.filteredCount = eventFiltered;
+    setFilter([]);
+    results.filterReset = getFilter().length === 0;
     results.updatedFmt = /^\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2} UTC[+-]\\d+(?::\\d{2})?$/.test(document.getElementById("updated").textContent);
 
     // jump bar: year select (2016-2026) + month select populated for the
@@ -163,7 +176,7 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
 
     location.search = "?id=p-2026-01-08-1&lang=en";
     await initPatch();
-    results.patchQpHackedContentBadge = /快速比赛：黑客入侵/.test(document.getElementById("patch-sites").innerHTML || "");
+    results.patchCategoryBadge = /快速比赛：黑客入侵/.test(document.getElementById("patch-sites").innerHTML || "");
 
     location.search = "?id=en-2016-05-27-1&lang=en";
     await initPatch();
@@ -247,7 +260,10 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
     if (results.entryCards !== 905) fail.push("entryCards=" + results.entryCards);
     if (!results.indexHasModeBadge) fail.push("index mode badge missing");
     if (!results.indexHasQuickPlayHackedLabel) fail.push("index quick-play-hacked label missing");
-    if (!results.indexQpHackedContentBadge) fail.push("index qp-hacked content badge missing");
+    if (!results.indexCategoryBadge) fail.push("index category badge missing");
+    if (results.chipCount !== 15) fail.push("chipCount=" + results.chipCount);
+    if (!(results.filteredCount > 0 && results.filteredCount < results.indexPatches)) fail.push("filteredCount=" + results.filteredCount);
+    if (!results.filterReset) fail.push("filter reset failed");
     if (results.jumpYears !== 11) fail.push("jumpYears=" + results.jumpYears);
     if (!results.jumpMonths) fail.push("jump month options missing");
     if (!results.indexHasSectionBadge) fail.push("index section badge missing");
@@ -275,7 +291,7 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
     if (!results.patchHasRarityBadge) fail.push("patch stadium rarity badge missing");
     if (!results.patchHasContentLink) fail.push("patch content link missing");
     if (!results.patchHasModeBadge) fail.push("patch mode badge missing");
-    if (!results.patchQpHackedContentBadge) fail.push("patch qp-hacked content badge missing");
+    if (!results.patchCategoryBadge) fail.push("patch category badge missing");
     if (!results.tocChildren || !results.tocHasSec0) fail.push("toc missing entries=" + results.tocChildren);
     if (results.tocHiddenModern) fail.push("modern toc should be visible");
     if (!results.legacyStructured || !results.legacyNoRawText) fail.push("legacy page not structured");

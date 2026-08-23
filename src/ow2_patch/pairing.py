@@ -289,12 +289,14 @@ def build_patches_index(data_dir: pathlib.Path, result: PairResult) -> None:
     `raw_text`, bilingual fields included — a consistent patch-size proxy).
     The time-browser shows it as "N 字".
 
-    Each entry also carries `content_qp_hacked` (bool): either side's content
-    mentions Quick Play: Hacked. Display-only — the badge shows without
-    reclassifying the patch, so standard-titled mixed patches (e.g.
-    p-2026-01-08-1) keep their hero data in the standard history.
+    Each entry also carries `categories` (list[str]): content categories
+    detected by scanning either side's whole content (title + sections +
+    raw_text) against the curated phrase table in categories.py. Display-only —
+    the badge shows without reclassifying the patch, so standard-titled mixed
+    patches (e.g. p-2026-01-08-1) keep their hero data in the standard history.
     """
-    from .modes import STANDARD, patch_mode_with_sections, mentions_qp_hacked
+    from .modes import STANDARD, patch_mode_with_sections
+    from .categories import CATEGORY_ORDER, categorize_content
 
     def _load_patch(patch_id: str) -> dict:
         site = patch_id.split("-", 1)[0]
@@ -322,16 +324,33 @@ def build_patches_index(data_dir: pathlib.Path, result: PairResult) -> None:
             return 0
         return walk(data.get("sections")) + walk(data.get("raw_text") or "")
 
-    def _mentions_qp_hacked(data: dict) -> bool:
+    def _content_strings(data: dict) -> list[str]:
+        """All text strings of a patch's content (title + sections + raw_text).
+
+        URL strings are skipped so CDN asset paths cannot false-positive a
+        category; top-level id/url/site keys are never visited."""
         def walk(v):
             if isinstance(v, str):
-                return mentions_qp_hacked(v)
+                return [] if v.lower().startswith("http") else [v]
             if isinstance(v, dict):
-                return any(walk(x) for x in v.values())
+                out: list[str] = []
+                for x in v.values():
+                    out.extend(walk(x))
+                return out
             if isinstance(v, list):
-                return any(walk(x) for x in v)
-            return False
-        return walk(data)
+                out = []
+                for x in v:
+                    out.extend(walk(x))
+                return out
+            return []
+        out = walk(data.get("sections"))
+        out.extend(walk(data.get("raw_text") or ""))
+        out.append(data.get("title") or "")
+        return out
+
+    def _patch_categories(data: dict) -> list[str]:
+        found = {key for text in _content_strings(data) for key in categorize_content(text)}
+        return [key for key in CATEGORY_ORDER if key in found]
 
     def _pair_mode(en: dict, cn: dict, en_titles: list[str], cn_titles: list[str]) -> str:
         en_mode = patch_mode_with_sections(en["title"], en_titles)
@@ -346,6 +365,8 @@ def build_patches_index(data_dir: pathlib.Path, result: PairResult) -> None:
         en_titles = _section_titles(en_data)
         cn_titles = _section_titles(cn_data)
         mode = _pair_mode(pair["en"], pair["cn"], en_titles, cn_titles)
+        en_cats = _patch_categories(en_data)
+        cn_cats = _patch_categories(cn_data)
         index.append({
             "id": pair["id"], "date": pair["date"],
             "title_en": pair["en"]["title"], "title_cn": pair["cn"]["title"],
@@ -357,7 +378,7 @@ def build_patches_index(data_dir: pathlib.Path, result: PairResult) -> None:
             "sites": ["en", "cn"],
             "patch_id_en": pair["en"]["patch_id"], "patch_id_cn": pair["cn"]["patch_id"],
             "mode": mode,
-            "content_qp_hacked": _mentions_qp_hacked(en_data) or _mentions_qp_hacked(cn_data),
+            "categories": [k for k in CATEGORY_ORDER if k in en_cats or k in cn_cats],
         })
     for patch_id in result.unpaired_en + result.unpaired_cn:
         site = patch_id.split("-", 1)[0]
@@ -382,7 +403,7 @@ def build_patches_index(data_dir: pathlib.Path, result: PairResult) -> None:
             "patch_id_en": patch_id if site == "en" else None,
             "patch_id_cn": patch_id if site == "cn" else None,
             "mode": patch_mode_with_sections(meta["title"], titles),
-            "content_qp_hacked": _mentions_qp_hacked(meta),
+            "categories": _patch_categories(meta),
         })
 
     index.sort(key=lambda e: (e["date"], e["id"]), reverse=True)
