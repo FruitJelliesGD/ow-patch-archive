@@ -302,7 +302,6 @@ function renderTimeBrowser(patches, filterFn) {
       list.className = "patch-list";
       for (const p of entries) {
         const site = p.sites.includes("cn") ? "cn" : "en";
-        const longTitle = site === "cn" ? (p.title_cn || p.title_en) : (p.title_en || p.title_cn);
         // the entry title is the first section title (Hotfix Update / 在线修正
         // 更新), falling back to the same-language official title before the
         // other language's section title (a CN patch whose CN side was never

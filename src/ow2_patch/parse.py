@@ -99,12 +99,15 @@ def parse_patch_notes(html: str, site: str, url: str = "",
     if "contentstack-unique-entry-key" in html:
         pending = iter(untitled_chunks)
         for patch in _parse_contentstack_patches(html, site, url):
-            if not patch.sections and not patch.raw_text:
+            if not patch.sections:
                 chunk = next(pending, None)
                 if chunk is not None:
                     sections = _split_sections(chunk)
                     if sections:
                         patch.sections = [_parse_section(s, site) for s in sections]
+                        # the grafted classic block supersedes any raw-text
+                        # fallback captured from unrecognized Contentstack keys
+                        patch.raw_text = None
             patches.append(patch)
     # seq within same date
     seen: dict[str, int] = {}
