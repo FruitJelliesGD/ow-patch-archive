@@ -83,12 +83,32 @@ def parse_patch_notes(html: str, site: str, url: str = "",
                       resolver: NameResolver | None = None) -> list[Patch]:
     """Parse all patches contained in one month page."""
     patches: list[Patch] = []
+    untitled_chunks: list[str] = []
     for chunk in _PATCH_SPLIT_RE.split(html):
+        if "PatchNotes-patch" not in chunk:
+            continue
         patch = _parse_patch_chunk(chunk, site, url, resolver=resolver)
         if patch:
             patches.append(patch)
+        elif _is_untitled_content_chunk(chunk):
+            # CN hybrid format: a Contentstack title div is followed by a classic
+            # PatchNotes-patch block that carries no patch title element (only
+            # h4 section titles), so the block alone parses to nothing. Keep it
+            # to graft onto the title-only Contentstack patch below.
+            untitled_chunks.append(chunk)
     if "contentstack-unique-entry-key" in html:
-        patches.extend(_parse_contentstack_patches(html, site, url))
+        pending = iter(untitled_chunks)
+        for patch in _parse_contentstack_patches(html, site, url):
+            if not patch.sections:
+                chunk = next(pending, None)
+                if chunk is not None:
+                    sections = _split_sections(chunk)
+                    if sections:
+                        patch.sections = [_parse_section(s, site) for s in sections]
+                        # the grafted classic block supersedes any raw-text
+                        # fallback captured from unrecognized Contentstack keys
+                        patch.raw_text = None
+            patches.append(patch)
     # seq within same date
     seen: dict[str, int] = {}
     for patch in patches:
@@ -96,6 +116,18 @@ def parse_patch_notes(html: str, site: str, url: str = "",
         patch.seq = seen[patch.date]
         patch.id = f"{patch.site}-{patch.date}-{patch.seq}"
     return patches
+
+
+# a classic content block with section structure but no patch title element
+# (h1-h3 or .PatchNotes-patchTitle) — the body half of a hybrid patch whose
+# title is a preceding Contentstack div
+_UNTITLED_HEADING_RE = re.compile(r"<h[123]\b", re.I)
+
+
+def _is_untitled_content_chunk(chunk: str) -> bool:
+    return ("PatchNotes-section" in chunk
+            and "PatchNotes-patchTitle" not in chunk
+            and not _UNTITLED_HEADING_RE.search(chunk))
 
 
 def _parse_contentstack_patches(html: str, site: str, url: str) -> list[Patch]:
@@ -176,7 +208,25 @@ def _parse_contentstack_patch(divs: list[Tag], site: str, url: str) -> Patch | N
             hero.role = sec.role
         sec.blocks = [blocks[(idx, k)] for k in sorted(k for (i, k) in blocks if i == idx)]
         parsed_sections.append(sec)
-    return Patch(site=site, date=date, url=url, title=title, sections=parsed_sections)
+    if parsed_sections:
+        return Patch(site=site, date=date, url=url, title=title, sections=parsed_sections)
+    # a title-only group (hybrid layout, or a Contentstack key shape this parser
+    # does not know yet): degrade to raw_text so content is never lost, matching
+    # the wrapper-class path (_parse_patch_chunk)
+    raw_text = _contentstack_raw_text(divs)
+    return Patch(site=site, date=date, url=url, title=title, raw_text=raw_text or None)
+
+
+def _contentstack_raw_text(divs: list[Tag]) -> str | None:
+    """Flatten every non-title Contentstack div of a group into rich text."""
+    parts: list[str] = []
+    for div in divs:
+        if (div.get("contentstack-unique-entry-key") or "") == "title":
+            continue
+        text = _rich_text(div) or _text(div)
+        if text:
+            parts.append(text)
+    return "\n\n".join(parts) or None
 
 
 def _patch_date_from_title(title: str) -> str | None:

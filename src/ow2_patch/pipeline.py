@@ -34,6 +34,9 @@ class RunResult:
     events: list[ChangeEvent] = field(default_factory=list)
     unknown_heroes: list[tuple[str, str]] = field(default_factory=list)
     unknown_abilities: list[tuple[str, str]] = field(default_factory=list)
+    # NEW patches whose parse yielded no content at all (no sections, no
+    # raw_text) — archived as stubs, but surfaced so a broken page is not silent
+    parse_warnings: list[str] = field(default_factory=list)
     # non-404 fetch failures: (site, year, month, error) — recorded so callers
     # can fail loudly (--fail-on-error) instead of silently reporting 0 changes
     fetch_errors: list[tuple[str, int, int, str]] = field(default_factory=list)
@@ -134,6 +137,10 @@ def run_pipeline(
 
     for event in report.events:
         patch = event.patch
+        if event.kind == "new" and not patch.sections and not patch.raw_text:
+            result.parse_warnings.append(
+                f"{patch.id}: 新补丁解析内容为空（无 sections / raw_text），"
+                f"已归档空桩，需人工检查补录 — {patch.url}")
         _enrich(patch, resolver, result)
 
         old_dict = _load_patch_dict(data_dir, patch.site, patch.id) if event.kind == "modified" else {}

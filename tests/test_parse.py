@@ -458,6 +458,44 @@ def test_cn_2026_02_full_month():
     assert all(s.type == "generic_update" for s in patches[0].sections)
 
 
+def test_cn_hybrid_contentstack_title_with_classic_block():
+    """CN hybrid format (Contentstack title div + classic block without a
+    .PatchNotes-patchTitle): the block's sections must be grafted onto the
+    title-only Contentstack patch instead of being silently dropped."""
+    patches = load("cn_hybrid_title_block.html", "cn")
+    assert [p.id for p in patches] == ["cn-2025-07-23-1", "cn-2025-07-25-1"]
+    p = patches[1]
+    assert p.date == "2025-07-25"
+    assert p.title == "《守望先锋》补丁说明——2025年7月25日"
+    assert p.raw_text is None
+    assert [s.title for s in p.sections] == ["平衡性在线修正更新", "角斗领域更新", "重装"]
+    assert p.sections[0].type == "generic_update"
+    assert "回放代码仍然可用" in p.sections[0].description
+
+    hero = p.sections[2].heroes[0]
+    assert hero.name_cn == "D.Va" and hero.role == "tank"
+    assert hero.dev_note and "微型飞弹" in hero.dev_note
+    item = hero.stadium_items[0]
+    assert item.name_cn == "反制措施" and item.kind == "power"
+    assert item.lines_cn == ["要求抵挡的伤害从100提高到150。"]
+
+
+def test_cn_contentstack_title_only_degrades_to_raw_text():
+    """A Contentstack group with a title but no recognized section keys must
+    degrade to raw_text (content never lost) instead of an empty stub."""
+    html = ('<div contentstack-field-context="text" contentstack-unique-entry-key="title">'
+            '《守望先锋》补丁说明——2025年7月25日</div>'
+            '<div contentstack-field-context="text" '
+            'contentstack-unique-entry-key="sections[0].mystery_field">'
+            '尚未支持的键内容</div>')
+    patches = parse_patch_notes(html, "cn", url="https://example/x")
+    assert len(patches) == 1
+    p = patches[0]
+    assert p.id == "cn-2025-07-25-1"
+    assert p.sections == []
+    assert p.raw_text and "尚未支持的键内容" in p.raw_text
+
+
 def test_en_perk_6v6_suffix():
     """EN perk markers tolerate the (5v5)/(6v6) suffix — 'Protective Barrier –
     Major Perk (6v6)' must parse as a perk, keeping EN/CN perk counts aligned

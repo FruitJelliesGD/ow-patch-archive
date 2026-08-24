@@ -5,7 +5,183 @@
  "url": "https://ow.blizzard.cn/news/patch-notes/live/2025/07/",
  "title": "《守望先锋》补丁说明——2025年7月25日",
  "seq": 1,
- "sections": [],
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "平衡性在线修正更新",
+   "role": null,
+   "description": "本次更新为角斗领域平衡性在线修正。2025年7月23日更新后的回放代码仍然可用。",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "角斗领域更新",
+   "role": null,
+   "description": "角斗领域更新",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "重装",
+   "role": "tank",
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "d-va",
+     "name_en": "D.Va",
+     "name_cn": "D.Va",
+     "role": "tank",
+     "icon": "https://ld5.res.netease.com/images/20250321/1742550489107_af2814926f.png",
+     "dev_note": "开发者评论：“微型飞弹”搭配提供的伤害输出既高又持久，不论是爆发伤害还是长时间战斗中的表现都超出了预期。本次更新对其进行了削弱，让它与其他搭配选项的水准齐平，同时又保留了这套搭配的核心打法和影响力。",
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
+      {
+       "name_en": null,
+       "name_cn": "反制措施",
+       "rarity": null,
+       "kind": "power",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "要求抵挡的伤害从100提高到150。"
+       ],
+       "raw_text": [
+        "反制措施——异能"
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "输出",
+   "role": "damage",
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "freja",
+     "name_en": "Freja",
+     "name_cn": "弗蕾娅",
+     "role": "damage",
+     "icon": "https://ld5.res.netease.com/images/20250321/1742550515405_dc13cc1ac1.png",
+     "dev_note": "开发者评论：弗蕾娅的“流星索”搭配表现一直不够给力，特别是与弗蕾娅有统治级表现的武器强度流搭配相比。我们决定提升相关异能的威力，增强弗蕾娅的搭配多样化。",
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
+      {
+       "name_en": null,
+       "name_cn": "小型缚索",
+       "rarity": null,
+       "kind": "power",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "效果降低从50%降低至40%。"
+       ],
+       "raw_text": [
+        "小型缚索——异能"
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "流星天劫",
+       "rarity": null,
+       "kind": "power",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "持续时间从2秒延长至3秒。"
+       ],
+       "raw_text": [
+        "流星天劫——异能"
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "mei",
+     "name_en": "Mei",
+     "name_cn": "美",
+     "role": "damage",
+     "icon": "https://ld5.res.netease.com/images/20250321/1742550490449_12cabd9351.png",
+     "dev_note": "开发者评论：“减速雪球”干扰敌人的效果非常优秀，但减速效果不仅过于强大，且十分容易施加。我们决定削弱减速的效果，使其不那么具有压倒性优势，但当美进行精确射击和巧妙使用辅助攻击模式时，依然能达到非常不错的效果。",
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
+      {
+       "name_en": null,
+       "name_cn": "减速雪球",
+       "rarity": null,
+       "kind": "power",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "减速效果从30%降低至15%。"
+       ],
+       "raw_text": [
+        "减速雪球——异能"
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "支援",
+   "role": "support",
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "juno",
+     "name_en": "Juno",
+     "name_cn": "朱诺",
+     "role": "support",
+     "icon": "https://ld5.res.netease.com/images/20250321/1742550519856_21b6bf24c2.png",
+     "dev_note": "开发者评论：对于强调暴击的搭配来说，“医疗精锐”的效果并没能达到预期。本次增强主要是提升这个异能的暴击倍率，让精确操作的收益更大，也是对高端玩家的高风险高回报玩法风格的重大回馈。",
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
+      {
+       "name_en": null,
+       "name_cn": "医疗精锐",
+       "rarity": null,
+       "kind": "power",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "暴击倍率从1.25提高至1.5。"
+       ],
+       "raw_text": [
+        "医疗精锐——异能"
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  }
+ ],
  "raw_text": null,
- "hash": "sha256:a523ae00ac5ea8f42f36f0f9cc77f2f62db241c43d95d51884e1df0fd3860bab"
+ "hash": "sha256:9e4cc978632d95a766199907d0cd37fa22915063519a0a69ba78244ffdfb2256"
 }

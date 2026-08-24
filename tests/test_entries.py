@@ -259,16 +259,17 @@ def test_real_entries_parity_with_hero_timelines():
 
 
 def test_real_edited_flag():
-    """After the official-edit reset (changelog.jsonl emptied), no real entry
-    carries the edited flag and official_edits is empty."""
+    """The only recorded official edit is the cn-2025-07-25-1 recovery backfill
+    (the stub archive gained content); every other entry carries no edited flag."""
     edits = build_official_edits(REAL_DATA)
     idx = build_entries_index(REAL_DATA, edits)
-    assert edits == {"updated": "", "edits": {}}
+    assert set(edits["edits"]) == {"cn-2025-07-25-1"}
     by_key = {e["key"]: e for e in idx["entries"]}
     assert "ana::weapon::biotic-rifle" in by_key  # ana has legacy 2016 records
     assert by_key["ana::weapon::biotic-rifle"]["edited"] is False
     edited_keys = {e["key"] for e in idx["entries"] if e["edited"]}
-    assert not edited_keys
+    # exactly the heroes whose timelines gained the recovered 2025-07-25 content
+    assert edited_keys == {"hero::d-va", "hero::freja", "hero::juno", "hero::mei"}
 
 
 # ---------- write + idempotency ----------

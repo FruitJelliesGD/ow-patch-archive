@@ -302,13 +302,13 @@ function renderTimeBrowser(patches, filterFn) {
       list.className = "patch-list";
       for (const p of entries) {
         const site = p.sites.includes("cn") ? "cn" : "en";
-        const longTitle = site === "cn" ? (p.title_cn || p.title_en) : (p.title_en || p.title_cn);
         // the entry title is the first section title (Hotfix Update / 在线修正
-        // 更新); the boilerplate official title only serves as a fallback for
-        // the rare patches without any section titles
+        // 更新), falling back to the same-language official title before the
+        // other language's section title (a CN patch whose CN side was never
+        // archived must show its Chinese long title, not the EN section title)
         const title = site === "cn"
-          ? (p.first_section_cn || p.first_section_en || longTitle)
-          : (p.first_section_en || p.first_section_cn || longTitle);
+          ? (p.first_section_cn || p.title_cn || p.first_section_en || p.title_en)
+          : (p.first_section_en || p.title_en || p.first_section_cn || p.title_cn);
         const chars = site === "cn" ? (p.chars_cn ?? p.chars_en) : (p.chars_en ?? p.chars_cn);
         const a = document.createElement("a");
         a.className = "patch-entry";
@@ -1049,7 +1049,23 @@ async function initPatch() {
   const patchId = active === "en" ? meta.patch_id_en : meta.patch_id_cn;
   const parts = patchId.split("-");
   const file = `data/patches/${active}/${parts.slice(1, 4).join("-")}-${parts[4]}.json`;
-  const patch = await fetchJSON(file);
+  let patch;
+  try {
+    patch = await fetchJSON(file);
+  } catch {
+    // index entry exists but the archived JSON is missing: render what we know
+    // instead of leaving the page blank on an unhandled rejection
+    document.getElementById("patch-date").textContent = meta.date;
+    document.getElementById("patch-sites").innerHTML = siteBadges(sites) + modeBadge(meta.mode) + categoryBadges(meta);
+    document.getElementById("patch-title").textContent = meta.title_cn || meta.title_en || id;
+    const article = document.getElementById("patch-article");
+    article.replaceChildren();
+    const missing = document.createElement("p");
+    missing.className = "text";
+    missing.textContent = "该补丁内容暂缺（归档数据缺失或解析失败）。";
+    article.appendChild(missing);
+    return;
+  }
 
   document.getElementById("patch-date").textContent = meta.date;
   document.getElementById("patch-sites").innerHTML = siteBadges(sites) + modeBadge(meta.mode) + categoryBadges(meta);

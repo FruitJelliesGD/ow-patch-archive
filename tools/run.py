@@ -56,6 +56,8 @@ def emit(result: RunResult, changed_out: pathlib.Path | None,
         print(f"WARN: unknown hero {name!r} ({site}) — add to data/names.json")
     for name, site in result.unknown_abilities:
         print(f"WARN: unknown ability {name!r} ({site}) — add to data/names.json")
+    for warning in result.parse_warnings:
+        print(f"WARN: {warning}")
 
     if not result.events:
         print("no changes; nothing to commit or notify")
