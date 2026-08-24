@@ -235,6 +235,33 @@ def test_fetch_404_is_not_recorded(tmp_path):
     assert result.fetched_months == 1
 
 
+def test_pipeline_parses_empty_new_patch_warns_and_archives(tmp_path):
+    """A NEW patch that parses to no content (no sections, no raw_text) is still
+    archived as a stub (so the manifest hash stays stable and a later official
+    edit flips it into a modified event), but is recorded in parse_warnings so
+    the run log surfaces the broken page instead of staying silent."""
+    html = ('<div contentstack-field-context="text" contentstack-unique-entry-key="title">'
+            '《守望先锋》补丁说明——2025年7月25日</div>')
+
+    class EmptyFetcher(StubFetcher):
+        def __init__(self):
+            self.pages = {("cn", 2025, 7): html}
+
+    data_dir = tmp_path / "data"
+    result = run_pipeline(data_dir, months=[("cn", 2025, 7)], fetch=EmptyFetcher())
+    assert len(result.events) == 1 and result.events[0].kind == "new"
+    assert len(result.parse_warnings) == 1
+    assert "cn-2025-07-25-1" in result.parse_warnings[0]
+
+    stub = json.loads((data_dir / "patches" / "cn" / "2025-07-25-1.json").read_text(encoding="utf-8"))
+    assert stub["sections"] == [] and stub["raw_text"] is None
+
+    # idempotent: the stub hash is recorded, so the next scan stays quiet
+    again = run_pipeline(data_dir, months=[("cn", 2025, 7)], fetch=EmptyFetcher())
+    assert again.events == []
+    assert again.parse_warnings == []
+
+
 def test_unknown_names_recorded_not_fatal(tmp_path):
     fetcher = StubFetcher()
     # rename a hero in the EN page to something unknown

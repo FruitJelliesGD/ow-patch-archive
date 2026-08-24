@@ -156,6 +156,21 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
     results.indexTitleIsFirstSection = /patch-entry-title">在线修正更新</.test(aug12EntryHtml)
       && /patch-entry-title">Hotfix Update</.test(aug20EntryHtml);
     results.indexNoSectionBadge = !findHtml(document.getElementById("patch-list"), /badge section/);
+    // hybrid-stub entry (cn-2025-07-25-1 stub, no CN sections): the CN view
+    // must fall back to the Chinese long title instead of the EN section title
+    let jul24EntryHtml = "";
+    for (const year of document.getElementById("patch-list").children) {
+      for (const month of year.children) {
+        for (const list of month.children) {
+          if (list.className !== "patch-list") continue;
+          for (const entry of list.children) {
+            if ((entry.href || "").includes("p-2025-07-24-1")) jul24EntryHtml = entry.innerHTML || "";
+          }
+        }
+      }
+    }
+    results.indexHybridTitleChinese = /patch-entry-title">[^<]*[\u4e00-\u9fff]/.test(jul24EntryHtml)
+      && !/patch-entry-title">Hotfix Balance Update</.test(jul24EntryHtml);
 
     await initEntries();
     results.filterChips = document.getElementById("filters").children.length;
@@ -330,6 +345,7 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
     if (!results.indexHasChars) fail.push("index chars missing");
     if (!results.indexTitleIsFirstSection) fail.push("index entry title is not the first section title");
     if (!results.indexNoSectionBadge) fail.push("index section badge still present");
+    if (!results.indexHybridTitleChinese) fail.push("hybrid stub entry title not Chinese");
     if (!/脉冲步枪/.test(results.entryName)) fail.push("entryName=" + results.entryName);
     if (!/更改记录/.test(results.entryMeta)) fail.push("entryMeta=" + results.entryMeta);
     if (!results.entryHasValues) fail.push("entry values rows missing");

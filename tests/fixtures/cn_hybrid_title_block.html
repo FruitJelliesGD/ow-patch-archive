@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html class="news-detail-html">
+<head>
+  <meta charset="utf-8" />
+</head>
+<body>
+<div class="PatchNotes-list">
+<div class="PatchNotes-body">
+
+  <!-- Hybrid layout: Contentstack title div followed by a classic block with NO
+       .PatchNotes-patchTitle element (only h4 section titles). Before the fix
+       the wrapper split dropped the block (no h1-h3/.patchTitle -> None) and the
+       Contentstack path emitted a title-only patch with empty sections. -->
+  <div contentstack-field-context="text" contentstack-unique-entry-key="title">《守望先锋》补丁说明——2025年7月25日</div>
+
+  <div class="PatchNotes-patch PatchNotes-live">
+    <div class="PatchNotes-section PatchNotes-section-generic_update">
+      <h4 class="PatchNotes-sectionTitle">平衡性在线修正更新</h4>
+      <div class="PatchNotes-sectionDescription">
+        <p>本次更新为角斗领域平衡性在线修正。2025年7月23日更新后的回放代码仍然可用。</p>
+      </div>
+    </div>
+    <div class="PatchNotes-section PatchNotes-section-generic_update">
+      <h4 class="PatchNotes-sectionTitle">角斗领域更新</h4>
+    </div>
+    <div class="PatchNotes-section PatchNotes-section-hero_update">
+      <h4 class="PatchNotes-sectionTitle">重装</h4>
+      <div class="PatchNotesHeroUpdate">
+        <div class="PatchNotesHeroUpdate-header">
+          <img class="PatchNotesHeroUpdate-icon" src="https://ld5.res.netease.com/images/20250321/1742550489107_af2814926f.png" />
+          <div class="PatchNotesHeroUpdate-name">D.Va</div>
+        </div>
+        <div class="PatchNotesHeroUpdate-body">
+          <div class="PatchNotes-dev PatchNotesHeroUpdate-dev">
+            <p>开发者评论：“微型飞弹”搭配提供的伤害输出既高又持久。</p>
+          </div>
+          <div class="PatchNotesHeroUpdate-generalUpdates">
+            <p>反制措施——异能</p>
+            <ul>
+              <li>要求抵挡的伤害从100提高到150。</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- a regular patch, proving the normal wrapper path is untouched -->
+  <div class="PatchNotes-patch PatchNotes-live">
+    <h3 class="PatchNotes-patchTitle">《守望先锋》补丁说明——2025年7月23日</h3>
+    <div class="PatchNotes-section PatchNotes-section-generic_update">
+      <h4 class="PatchNotes-sectionTitle">众志成城挑战</h4>
+      <div class="PatchNotes-sectionDescription">
+        <p>与队友团结合作才更有胜算！</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+</body>
+</html>

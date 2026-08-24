@@ -38,6 +38,19 @@ def test_notification_new_and_modified(monkeypatch):
     assert "新增" in n.email_text and "修改" in n.email_text
 
 
+def test_notification_new_empty_patch_flagged():
+    """A new patch with no content must be called out in the Issue body."""
+    from ow2_patch.model import Patch
+
+    empty = Patch(id="cn-2025-07-25-1", site="cn", date="2025-07-25",
+                  url="https://example/cn/2025/07", title="《守望先锋》补丁说明——2025年7月25日",
+                  seq=1, sections=[], raw_text=None)
+    n = build_notification([ChangeEvent("new", empty)])
+    assert n.title == "守望先锋补丁更新: 1 新增 · 0 修改"
+    assert "cn-2025-07-25-1" in n.body_md
+    assert "⚠️ 解析内容为空" in n.body_md
+
+
 def test_notification_no_events():
     n = build_notification([])
     assert n.title == "守望先锋补丁更新: 0 新增 · 0 修改"

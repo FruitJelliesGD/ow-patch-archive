@@ -52,6 +52,8 @@ def _render_new(patch) -> list[str]:
     heroes = _hero_summary(patch)
     lines = [f"### {patch.id} · {patch.date} · {SITE_LABEL[patch.site]}", ""]
     lines += [f"**{patch.title}**", "", f"[源链接]({patch.url})", ""]
+    if not patch.sections and not patch.raw_text:
+        lines += ["> ⚠️ 解析内容为空（补丁页为混合格式或结构变更），已归档空桩，需人工检查补录", ""]
     if heroes:
         lines += [f"涉及英雄改动: {', '.join(heroes)}", ""]
     return lines
