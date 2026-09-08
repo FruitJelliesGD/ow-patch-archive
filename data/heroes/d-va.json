@@ -7,6 +7,70 @@
  "role": "tank",
  "timeline": [
   {
+   "patch": "cn-2026-09-09-1",
+   "date": "2026-09-09",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/09/",
+   "patch_title": "《守望先锋》补丁说明——2026年9月9日",
+   "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
+   "mode": "standard",
+   "text_en": null,
+   "text_cn": "机甲的基础生命值从175点提高至200点。（5v5）",
+   "before": 175.0,
+   "after": 200.0,
+   "by": 25.0,
+   "by_pct": null,
+   "metric": "机甲的基础生命值",
+   "unit": "hp"
+  },
+  {
+   "patch": "cn-2026-09-09-1",
+   "date": "2026-09-09",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/09/",
+   "patch_title": "《守望先锋》补丁说明——2026年9月9日",
+   "kind": "general",
+   "dimension": null,
+   "subject": null,
+   "mode": "standard",
+   "text_en": null,
+   "text_cn": "终极技能充能消耗缩减从50%提高至60%。"
+  },
+  {
+   "patch": "en-2026-09-08-1",
+   "date": "2026-09-08",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09",
+   "patch_title": "Overwatch Retail Patch Notes – September 8, 2026",
+   "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
+   "mode": "standard",
+   "text_en": "Mech base health increased from 175 to 200. (5v5)",
+   "text_cn": null,
+   "before": 175.0,
+   "after": 200.0,
+   "by": 25.0,
+   "by_pct": null,
+   "metric": "mech base health",
+   "unit": null
+  },
+  {
+   "patch": "en-2026-09-08-1",
+   "date": "2026-09-08",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09",
+   "patch_title": "Overwatch Retail Patch Notes – September 8, 2026",
+   "kind": "general",
+   "dimension": null,
+   "subject": null,
+   "mode": "standard",
+   "text_en": "Ultimate Charge cost reduction increased to 60% (Up from 50%).",
+   "text_cn": null
+  },
+  {
    "patch": "cn-2026-08-12-1",
    "date": "2026-08-12",
    "site": "cn",
@@ -6108,6 +6172,22 @@
   }
  ],
  "values": {
+  "attr:health:机甲的基础生命值": [
+   {
+    "date": "2026-09-09",
+    "value": 200.0
+   }
+  ],
+  "attr:health:mech base health": [
+   {
+    "date": "2024-09-17",
+    "value": 225.0
+   },
+   {
+    "date": "2026-09-08",
+    "value": 200.0
+   }
+  ],
   "perk:hero-b6fe438d:health": [
    {
     "date": "2026-06-17",
@@ -6198,12 +6278,6 @@
    {
     "date": "2024-09-17",
     "value": 325.0
-   }
-  ],
-  "attr:health:mech base health": [
-   {
-    "date": "2024-09-17",
-    "value": 225.0
    }
   ],
   "defense-matrix:maximum duration": [

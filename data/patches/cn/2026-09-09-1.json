@@ -1,0 +1,1403 @@
+{
+ "id": "cn-2026-09-09-1",
+ "site": "cn",
+ "date": "2026-09-09",
+ "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/09/",
+ "title": "《守望先锋》补丁说明——2026年9月9日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "“狂鼠”的补给狩猎",
+   "role": null,
+   "description": "“狂鼠”的补给狩猎即将书写传奇，还将呈献特殊的主题反转！从9月13日至9月30日，和“狂鼠”一起在这三周里掀起一场独一无二而又熟悉万分的玩法混搭吧！",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": "英雄更新",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "重装",
+   "role": "tank",
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "d-mon",
+     "name_en": "D.Mon",
+     "name_cn": "D.Mon",
+     "role": "tank",
+     "icon": "https://ld5.res.netease.com/images/20260813/1786594671757_b03226bd74.png",
+     "dev_note": "设计师观点：自推出以来，D.Mon已经在游戏的生态里占据了牢固的位置。我们决定削弱“呼叫机甲”的变形时间，使其与D.Va的同类技能处于同一水平，同时也调整了“手提聚变连发枪”，提高了命中率，并削弱了长距离的威力。为了平衡这些优化，我们还削弱了“等离子剑”的伤害。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "护甲从325点降低至300点。（6v6）",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 325.0,
+       "after": 300.0,
+       "by": -25.0,
+       "by_pct": null,
+       "metric": "armor",
+       "unit": "hp"
+      }
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Plasma Saber",
+       "name_cn": "等离子剑",
+       "slug": "plasma-saber",
+       "icon": "https://ld5.res.netease.com/images/20260813/1786594672391_038d69fd0c.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "伤害从65点降低至60点。",
+         "before": 65.0,
+         "after": 60.0,
+         "by": -5.0,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "伤害",
+         "unit": "hp"
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "强力屏障",
+       "slug": "power-barrier",
+       "icon": "https://ld5.res.netease.com/images/20260813/1786594672856_b1daa1821b.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "施放时间从0.065秒缩短至0.016秒。",
+         "before": 0.065,
+         "after": 0.016,
+         "by": -0.049,
+         "by_pct": null,
+         "metric": "cast_time",
+         "raw_metric": "施放时间",
+         "unit": "s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "盾牌侧面的缺口尺寸缩小。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "呼叫机甲",
+       "slug": "call-mech",
+       "icon": "https://ld5.res.netease.com/images/20260813/1786594675284_cc656d1196.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "变形时间从1.95秒缩短至0.95秒。",
+         "before": 1.95,
+         "after": 0.95,
+         "by": -1.0,
+         "by_pct": null,
+         "metric": "变形时间",
+         "raw_metric": "变形时间",
+         "unit": "s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "添加了一个持续1秒的第一人称机甲启动动画。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "手提聚变连发枪",
+       "slug": "fusion-repeater",
+       "icon": "https://ld5.res.netease.com/images/20260813/1786594675629_206ab51f8e.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "散布角度从2度减少至1.75度。",
+         "before": 2.0,
+         "after": 1.75,
+         "by": -0.25,
+         "by_pct": null,
+         "metric": "散布角度",
+         "raw_metric": "散布角度",
+         "unit": "deg"
+        },
+        {
+         "text_en": null,
+         "text_cn": "最小衰减距离从30米缩短至20米。",
+         "before": 30.0,
+         "after": 20.0,
+         "by": -10.0,
+         "by_pct": null,
+         "metric": "最小衰减距离",
+         "raw_metric": "最小衰减距离",
+         "unit": "m"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "d-va",
+     "name_en": "D.Va",
+     "name_cn": "D.Va",
+     "role": "tank",
+     "icon": "https://ld5.res.netease.com/images/20260227/1772181875462_93d5c2c2fb.png",
+     "dev_note": "设计师观点：我们决定提升D.Va的基础生命值，进而增强她的持久能力，同时又不必对她的“防御矩阵”做出调整。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "机甲的基础生命值从175点提高至200点。（5v5）",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 175.0,
+       "after": 200.0,
+       "by": 25.0,
+       "by_pct": null,
+       "metric": "机甲的基础生命值",
+       "unit": "hp"
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "domina",
+     "name_en": "Domina",
+     "name_cn": "金驭",
+     "role": "tank",
+     "icon": "https://ld5.res.netease.com/images/20260714/1784025798503_49b4d1bea0.png",
+     "dev_note": "设计师观点：“金驭”的终极技能具有很强的干扰性，但与积攒终极技能充能所需的时间相比却显得效力不足。我们决定减低它的消耗，从而提高使用频率。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "终极技能消耗降低6%。",
+       "subject": "ultimate_cost",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 6.0,
+       "metric": "ultimate_cost",
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "mauga",
+     "name_en": "Mauga",
+     "name_cn": "毛加",
+     "role": "tank",
+     "icon": "https://ld5.res.netease.com/images/20260227/1772181993572_a26f29fd16.png",
+     "dev_note": "设计师观点：毛加依然拥有极高的生存能力和高伤害。我们决定回退之前对单把链式步枪做出的散布调整，并削弱在远距离上同时射击两把链式步枪的威力。再配合对他护甲的削弱，这些改动一同降低了他的生存能力和杀伤力。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "基础护甲从150点降低至125点。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 150.0,
+       "after": 125.0,
+       "by": -25.0,
+       "by_pct": null,
+       "metric": "基础护甲",
+       "unit": "hp"
+      }
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Chainguns",
+       "name_cn": "链式步枪",
+       "slug": "chainguns",
+       "icon": "https://ld5.res.netease.com/images/20260227/1772181995656_d095d41647.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "射击单把链式步枪的最大散布角度从1.5度减少至1度。",
+         "before": 1.5,
+         "after": 1.0,
+         "by": -0.5,
+         "by_pct": null,
+         "metric": "射击单把链式步枪的最大散布角度",
+         "raw_metric": "射击单把链式步枪的最大散布角度",
+         "unit": "deg"
+        },
+        {
+         "text_en": null,
+         "text_cn": "同时射击两把链式步枪的最大散布角度从4度增加至5度。",
+         "before": 4.0,
+         "after": 5.0,
+         "by": 1.0,
+         "by_pct": null,
+         "metric": "同时射击两把链式步枪的最大散布角度",
+         "raw_metric": "同时射击两把链式步枪的最大散布角度",
+         "unit": "deg"
+        },
+        {
+         "text_en": null,
+         "text_cn": "同时射击两把链式步枪的最小伤害衰减距离从15米缩短至10米。",
+         "before": 15.0,
+         "after": 10.0,
+         "by": -5.0,
+         "by_pct": null,
+         "metric": "同时射击两把链式步枪的最小伤害衰减距离",
+         "raw_metric": "同时射击两把链式步枪的最小伤害衰减距离",
+         "unit": "m"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "winston",
+     "name_en": "Winston",
+     "name_cn": "温斯顿",
+     "role": "tank",
+     "icon": "https://ld5.res.netease.com/images/20260227/1772181836871_b5f9bdec95.png",
+     "dev_note": "设计师观点：我们缩短了温斯顿的“屏障发射器”的冷却时间，进而缩短他每次接战的间隔时间。为了抵消这次接战频率的增强，我们还缩短了它的持续时间。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Barrier Projector",
+       "name_cn": "屏障发射器",
+       "slug": "barrier-projector",
+       "icon": "https://ld5.res.netease.com/images/20260227/1772181838157_c5018718ea.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从12秒缩短至10秒。（5v5）",
+         "before": 12.0,
+         "after": 10.0,
+         "by": -2.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "冷却时间",
+         "unit": "s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "持续时间从8秒缩短至7秒。",
+         "before": 8.0,
+         "after": 7.0,
+         "by": -1.0,
+         "by_pct": null,
+         "metric": "duration",
+         "raw_metric": "持续时间",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "wrecking-ball",
+     "name_en": "Wrecking Ball",
+     "name_cn": "破坏球",
+     "role": "tank",
+     "icon": "https://ld5.res.netease.com/images/20260227/1772181902253_a7ac72eb60.png",
+     "dev_note": "设计师观点：“感应屏障”为“破坏球”提供了太长的防护时间。我们决定削弱它的持续时间，进而要求玩家更精准地把握使用该技能的时机。",
+     "general": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "感应屏障",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "最大持续时间从1.5秒缩短至1秒。"
+       ],
+       "raw_text": []
+      }
+     ],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "zarya",
+     "name_en": "Zarya",
+     "name_cn": "查莉娅",
+     "role": "tank",
+     "icon": "https://ld5.res.netease.com/images/20260227/1772181866722_83da6d6f7a.png",
+     "dev_note": "设计师观点：为了削弱查莉娅个人屏障的可用时间和能量生成率，我们延长了“粒子屏障”的冷却时间。“投射屏障”未做改变，进而鼓励玩家多多使用该技能保护盟友。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "粒子屏障",
+       "slug": "particle-barrier",
+       "icon": "https://ld5.res.netease.com/images/20260227/1772181867592_4fbb77161a.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从11秒延长至12秒。（5v5）",
+         "before": 11.0,
+         "after": 12.0,
+         "by": 1.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "冷却时间",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "输出",
+   "role": "damage",
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "anran",
+     "name_en": "Anran",
+     "name_cn": "安燃",
+     "role": "damage",
+     "icon": "https://ld5.res.netease.com/images/20260714/1784025803200_c00e48ee1a.png",
+     "dev_note": "设计师观点：“熠闪舞”可能会造成较为严重的视觉干扰，导致玩家难以在激烈战斗中追踪安燃的行动。为了提升清晰度，我们移除了可见的视觉分身。我们还缩短了“朱魂返”的施放时间，从而削减短对手的反应时间，",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Dancing Blaze",
+       "name_cn": "熠闪舞",
+       "slug": "dancing-blaze",
+       "icon": "https://ld5.res.netease.com/images/20260227/1772182090886_25ec720475.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "减少了敌人被“熠闪舞”击中时会看见的视觉特效数量。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Vermillion Revival",
+       "name_cn": "朱魂返",
+       "slug": "vermillion-revival",
+       "icon": "https://ld5.res.netease.com/images/20260227/1772182091634_8718fe2989.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "施放时间从3秒缩短至2.5秒。",
+         "before": 3.0,
+         "after": 2.5,
+         "by": -0.5,
+         "by_pct": null,
+         "metric": "cast_time",
+         "raw_metric": "施放时间",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "freja",
+     "name_en": "Freja",
+     "name_cn": "弗蕾娅",
+     "role": "damage",
+     "icon": "https://ld5.res.netease.com/images/20260714/1784025789610_86c0240dce.png",
+     "dev_note": "设计师观点：最近的改动大幅提升了弗蕾娅的伤害输出能力。我们决定削弱“速射弩”和“瞄准射击”的伤害，同时降低“无情弹幕”的威力。为了减轻被反复击中时的音频干扰，我们也减少了“爆炸弩箭”的击中音效。",
+     "general": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "无情弹幕",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "返还的自动弩箭数量从8发减少至5发。"
+       ],
+       "raw_text": []
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": "Revdraw Crossbow",
+       "name_cn": "速射弩",
+       "slug": "revdraw-crossbow",
+       "icon": "https://ld5.res.netease.com/images/20260227/1772182002114_e3b1c38ed6.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "伤害从30点降低至28点。",
+         "before": 30.0,
+         "after": 28.0,
+         "by": -2.0,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "伤害",
+         "unit": "hp"
+        }
+       ]
+      },
+      {
+       "name_en": "Take Aim",
+       "name_cn": "瞄准射击",
+       "slug": "take-aim",
+       "icon": "https://ld5.res.netease.com/images/20260227/1772182002527_e7017e9a4f.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "“爆炸弩箭”的爆炸伤害从80点降低至75点。",
+         "before": 80.0,
+         "after": 75.0,
+         "by": -5.0,
+         "by_pct": null,
+         "metric": "的爆炸伤害",
+         "raw_metric": "的爆炸伤害",
+         "unit": "hp"
+        },
+        {
+         "text_en": null,
+         "text_cn": "“爆炸弩箭”击中音效减少。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "junkrat",
+     "name_en": "Junkrat",
+     "name_cn": "狂鼠",
+     "role": "damage",
+     "icon": "https://ld5.res.netease.com/images/20260227/1772181864165_f33e49b3ac.png",
+     "dev_note": "设计师观点：自从“震荡地雷”连招被削弱之后，“狂鼠”一直难以保持足够的战斗力。我们决定缩短“震荡地雷”的冷却时间，进而提升伤害输出能力和机动性。为了限制装备“氮气推进”威能时终极技能提供的极高速度，我们也削弱了这个威能的移动速度加成。",
+     "general": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "氮气推进",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "速度加成从125%降低至100%。"
+       ],
+       "raw_text": []
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": "Concussion Mine",
+       "name_cn": "震荡地雷",
+       "slug": "concussion-mine",
+       "icon": "https://ld5.res.netease.com/images/20260227/1772181864890_a4156910a9.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从8秒缩短至7秒。",
+         "before": 8.0,
+         "after": 7.0,
+         "by": -1.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "冷却时间",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "sierra",
+     "name_en": "Sierra",
+     "name_cn": "西拉",
+     "role": "damage",
+     "icon": "https://ld5.res.netease.com/images/20260512/1778572561442_284644e2ea.png",
+     "dev_note": "设计师观点：自从上线以来，西拉的伤害输出能力一直处于高值，但在远距离上，她的子弹飞行时间又比较长，进而限制了她的武器可靠性。我们决定削弱“螺旋步枪”和“追踪弹”的伤害，并提高弹道速度，进而强化武器的响应灵敏度和稳定度。我们还缩短了“震地手雷”的冷却时间，使其能够更频繁地使用。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Helix Rifle",
+       "name_cn": "螺旋步枪",
+       "slug": "helix-rifle",
+       "icon": "https://ld5.res.netease.com/images/20260417/1776392665670_768d9372d6.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "武器弹道速度从90米每秒提高至120米每秒。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "伤害从9点降低至8.5点。",
+         "before": 9.0,
+         "after": 8.5,
+         "by": -0.5,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "伤害",
+         "unit": "hp"
+        }
+       ]
+      },
+      {
+       "name_en": "Tracking Shot",
+       "name_cn": "追踪弹",
+       "slug": "tracking-shot",
+       "icon": "https://ld5.res.netease.com/images/20260417/1776392665260_cb6012054f.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "伤害从9点降低至8.5点。",
+         "before": 9.0,
+         "after": 8.5,
+         "by": -0.5,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "伤害",
+         "unit": "hp"
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": "震地手雷",
+       "slug": "tremor-charge",
+       "icon": "https://ld5.res.netease.com/images/20260417/1776392675674_29f686129a.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从8.5秒缩短至7秒。",
+         "before": 8.5,
+         "after": 7.0,
+         "by": -1.5,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "冷却时间",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "symmetra",
+     "name_en": "Symmetra",
+     "name_cn": "秩序之光",
+     "role": "damage",
+     "icon": "https://ld5.res.netease.com/images/20260227/1772181846560_cf18d10ad2.png",
+     "dev_note": "设计师观点：在配合默契的队伍中，“秩序之光”的“传送面板”能够发挥极大的作用，使得远距离高效走位变得可能，而且没给对手留下多少反应的机会。我们决定缩小它的放置范围，限制队伍可以使用它来移动的距离，同时还延长了重复使用它进行传送的冷却时间，让玩家在使用“传送面板”时需要投入更多的时间和努力。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "传送面板",
+       "slug": "teleporter",
+       "icon": "https://ld5.res.netease.com/images/20260227/1772181849529_08b5ca0f55.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "放置范围从30米减少至25米。",
+         "before": 30.0,
+         "after": 25.0,
+         "by": -5.0,
+         "by_pct": null,
+         "metric": "放置范围",
+         "raw_metric": "放置范围",
+         "unit": "m"
+        },
+        {
+         "text_en": null,
+         "text_cn": "重复使用它进行传送的冷却时间从1秒延长至1.25秒。",
+         "before": 1.0,
+         "after": 1.25,
+         "by": 0.25,
+         "by_pct": null,
+         "metric": "重复使用它进行传送的冷却时间",
+         "raw_metric": "重复使用它进行传送的冷却时间",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "torbjorn",
+     "name_en": "Torbjorn",
+     "name_cn": "托比昂",
+     "role": "damage",
+     "icon": "https://ld5.res.netease.com/images/20260227/1772181826724_c8fa9d2c9b.png",
+     "dev_note": "设计师观点：为了提升近距离上的稳定性，我们决定增强托比昂的辅助攻击模式。为了保留这个威能的灵活性，同时避免出现将炮台放置在极远距离的情况，我们决定缩短“锚固螺栓”的炮台投掷距离。",
+     "general": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "锚固螺栓",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "部署炮台时的投掷距离加成从50%降低至25%。"
+       ],
+       "raw_text": []
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "铆钉枪",
+       "slug": "rivet-gun",
+       "icon": "https://ld5.res.netease.com/images/20260227/1772181828160_0bf7ac38a0.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "辅助攻击模式的散布从4.5度降低至4度。",
+         "before": 4.5,
+         "after": 4.0,
+         "by": -0.5,
+         "by_pct": null,
+         "metric": "辅助攻击模式的散布",
+         "raw_metric": "辅助攻击模式的散布",
+         "unit": "deg"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "vendetta",
+     "name_en": "Vendetta",
+     "name_cn": "斩仇",
+     "role": "damage",
+     "icon": "https://ld5.res.netease.com/images/20260714/1784025797253_a8b1c84ccd.png",
+     "dev_note": "设计师观点：这次的改动主要是为了优化“斩仇”的主要攻击模式的响应速度，同时又不用明显提高她的整体连招的节奏。为了保持总体操作节奏，我们缩短了“帕拉蒂尼之牙”每一击的延迟时间，并延长了“旋风疾步”和“斩地巨剑”的恢复时间。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Palatine Fang",
+       "name_cn": "帕拉蒂尼之牙",
+       "slug": "palatine-fang",
+       "icon": "https://ld5.res.netease.com/images/20260227/1772182078688_653290867c.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "第一次挥击的延迟时间从0.3秒缩短至0.15秒。",
+         "before": 0.3,
+         "after": 0.15,
+         "by": -0.15,
+         "by_pct": null,
+         "metric": "第一次挥击的延迟时间",
+         "raw_metric": "第一次挥击的延迟时间",
+         "unit": "s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "水平挥击的持续时间从0.25秒缩短至0.2秒。",
+         "before": 0.25,
+         "after": 0.2,
+         "by": -0.05,
+         "by_pct": null,
+         "metric": "水平挥击的持续时间",
+         "raw_metric": "水平挥击的持续时间",
+         "unit": "s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "连招的衔接动作持续时间从0.75秒延长至0.9秒。",
+         "before": 0.75,
+         "after": 0.9,
+         "by": 0.15,
+         "by_pct": null,
+         "metric": "连招的衔接动作持续时间",
+         "raw_metric": "连招的衔接动作持续时间",
+         "unit": "s"
+        }
+       ]
+      },
+      {
+       "name_en": "Whirlwind Dash",
+       "name_cn": "旋风疾步",
+       "slug": "whirlwind-dash",
+       "icon": "https://ld5.res.netease.com/images/20260227/1772182078004_a12f7e838d.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "恢复时间从0.5秒延长至0.75秒。",
+         "before": 0.5,
+         "after": 0.75,
+         "by": 0.25,
+         "by_pct": null,
+         "metric": "recovery",
+         "raw_metric": "恢复时间",
+         "unit": "s"
+        }
+       ]
+      },
+      {
+       "name_en": "Sundering Blade",
+       "name_cn": "斩地巨剑",
+       "slug": "sundering-blade",
+       "icon": "https://ld5.res.netease.com/images/20260227/1772182079913_d8b050544b.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "恢复时间从0.2秒延长到0.5秒。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "斩击期间，镜头高度不再是完全锁定的。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "支援",
+   "role": "support",
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "baptiste",
+     "name_en": "Baptiste",
+     "name_cn": "巴蒂斯特",
+     "role": "support",
+     "icon": "https://ld5.res.netease.com/images/20260227/1772181914038_d211648803.png",
+     "dev_note": "设计师观点：“维生力场”冷却时间较长，且容易被摧毁，限制了它的发挥。我们决定提升其生命值，缩短其冷却时间，并提升其最低生命值阈值，增强了它的总体可靠性。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Immortality Field",
+       "name_cn": "维生力场",
+       "slug": "immortality-field",
+       "icon": "https://ld5.res.netease.com/images/20260227/1772181914992_6bd4b91d3e.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "无法消灭的生命值阈值从20%提高至25%。",
+         "before": 20.0,
+         "after": 25.0,
+         "by": 5.0,
+         "by_pct": null,
+         "metric": "无法消灭的生命值阈值",
+         "raw_metric": "无法消灭的生命值阈值",
+         "unit": "pct"
+        },
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从22秒缩短至20秒。",
+         "before": 22.0,
+         "after": 20.0,
+         "by": -2.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "冷却时间",
+         "unit": "s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "生命值从125点提高至150点。",
+         "before": 125.0,
+         "after": 150.0,
+         "by": 25.0,
+         "by_pct": null,
+         "metric": "health",
+         "raw_metric": "生命值",
+         "unit": "hp"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "brigitte",
+     "name_en": "Brigitte",
+     "name_cn": "布丽吉塔",
+     "role": "support",
+     "icon": "https://ld5.res.netease.com/images/20260227/1772181895748_861c78a643.png",
+     "dev_note": "设计师观点：在近距离作战时，布丽吉塔的生存能力受到极大限制。为了强化生存能力，我们决定将她的一部分生命值转化为护甲。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "生命值从200点降低至175点。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 200.0,
+       "after": 175.0,
+       "by": -25.0,
+       "by_pct": null,
+       "metric": "health",
+       "unit": "hp"
+      },
+      {
+       "text_en": null,
+       "text_cn": "护甲从50点提升至75点。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 50.0,
+       "after": 75.0,
+       "by": 25.0,
+       "by_pct": null,
+       "metric": "armor",
+       "unit": "hp"
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "jetpack-cat",
+     "name_en": "Jetpack Cat",
+     "name_cn": "飞天猫",
+     "role": "support",
+     "icon": "https://ld5.res.netease.com/images/20260714/1784025805782_a7479b4b07.png",
+     "dev_note": "设计师观点：最近对“飞天猫”移动方式的改动大幅增强了其的机动性和整体实力。为了降低整体输出能力，我们还削弱了“生物猫爪弹”的伤害量和治疗量。此外，为了提供更多针对被运载目标的反制方式，以及增强她挽救盟友免于地形阵亡时的可靠性，我们也对“救生索”进行了调整。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "提升了基础移动和“咻咻飞”的音效优先级和音量。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Biotic Pawjectiles",
+       "name_cn": "生物猫爪弹",
+       "slug": "biotic-pawjectiles",
+       "icon": "https://ld5.res.netease.com/images/20260227/1772182095693_9e971e7737.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "每发射弹的伤害量和治疗量从4.5点降低至4点。",
+         "before": 4.5,
+         "after": 4.0,
+         "by": -0.5,
+         "by_pct": null,
+         "metric": "每发射弹的伤害量和治疗量",
+         "raw_metric": "每发射弹的伤害量和治疗量",
+         "unit": "hp"
+        }
+       ]
+      },
+      {
+       "name_en": "Lifeline",
+       "name_cn": "救生索",
+       "slug": "lifeline",
+       "icon": "https://ld5.res.netease.com/images/20260227/1772182096367_3996e98191.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "运载目标受到击晕效果和移动封锁效果时，“救生索”会被切断。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "现在当处于阵亡地形时，盟友会自动接受“救生索”。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "kiriko",
+     "name_en": "Kiriko",
+     "name_cn": "雾子",
+     "role": "support",
+     "icon": "https://ld5.res.netease.com/images/20260227/1772181917800_cecdb288e6.png",
+     "dev_note": "设计师观点：雾子作为治疗者的能力变得极强，技能的功能性和机动力也一点不差。为了削弱她在远距离上的治疗稳定性，我们决定削弱“符”的速度和范围。我们也对“铃”进行了调整，削弱了无敌效果，希望玩家能更精准地使用此技能。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Healing Ofuda",
+       "name_cn": "符",
+       "slug": "healing-ofuda",
+       "icon": "https://ld5.res.netease.com/images/20260227/1772181918597_3c2c327319.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "弹道速度从每秒24米降低至18米。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "最大追踪距离从35米缩短至30米。",
+         "before": 35.0,
+         "after": 30.0,
+         "by": -5.0,
+         "by_pct": null,
+         "metric": "最大追踪距离",
+         "raw_metric": "最大追踪距离",
+         "unit": "m"
+        }
+       ]
+      },
+      {
+       "name_en": "Protection Suzu",
+       "name_cn": "铃",
+       "slug": "protection-suzu",
+       "icon": "https://ld5.res.netease.com/images/20260227/1772181919687_55201309fe.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "相移无敌持续时间从0.65秒缩短至0.5秒。",
+         "before": 0.65,
+         "after": 0.5,
+         "by": -0.15,
+         "by_pct": null,
+         "metric": "相移无敌持续时间",
+         "raw_metric": "相移无敌持续时间",
+         "unit": "s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "爆炸半径从5米缩小至4米。",
+         "before": 5.0,
+         "after": 4.0,
+         "by": -1.0,
+         "by_pct": null,
+         "metric": "blast_radius",
+         "raw_metric": "爆炸半径",
+         "unit": "m"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "wuyang",
+     "name_en": "Wuyang",
+     "name_cn": "无漾",
+     "role": "support",
+     "icon": "https://ld5.res.netease.com/images/20260714/1784025796083_f8bc70746a.png",
+     "dev_note": "设计师观点：在应对持续伤害时，无漾的强化治疗手段和效果有限。我们决定提升它的恢复速度，进而提高强化治疗的使用频率。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": null,
+       "name_cn": "养神泉",
+       "slug": "restorative-stream",
+       "icon": "https://ld5.res.netease.com/images/20260227/1772182076555_041822bf75.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "恢复速度从每秒12.5%提高至15%。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "视野超时时间从5秒缩短至3秒。",
+         "before": 5.0,
+         "after": 3.0,
+         "by": -2.0,
+         "by_pct": null,
+         "metric": "视野超时时间",
+         "raw_metric": "视野超时时间",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "zenyatta",
+     "name_en": "Zenyatta",
+     "name_cn": "禅雅塔",
+     "role": "support",
+     "icon": "https://ld5.res.netease.com/images/20260227/1772181850057_4d2db1358b.png",
+     "dev_note": "设计师观点：“谐”可以在目标身上持续较长时间，同时维持消耗又非常低。我们决定缩短它的视野宽限时间，进而要求玩家更重视保持对“谐”目标的观察，在必要时调整走位。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Orb of Harmony",
+       "name_cn": "谐",
+       "slug": "orb-of-harmony",
+       "icon": "https://ld5.res.netease.com/images/20260227/1772181852303_96c60c7694.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "视野超时时间从5秒缩短至3秒。",
+         "before": 5.0,
+         "after": 3.0,
+         "by": -2.0,
+         "by_pct": null,
+         "metric": "视野超时时间",
+         "raw_metric": "视野超时时间",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "角斗领域更新",
+   "role": null,
+   "description": "角斗领域更新",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "重装",
+   "role": "tank",
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "d-va",
+     "name_en": "D.Va",
+     "name_cn": "D.Va",
+     "role": "tank",
+     "icon": "https://ld5.res.netease.com/images/20260227/1772181875462_93d5c2c2fb.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
+      {
+       "name_en": null,
+       "name_cn": "MEKA弹射器",
+       "rarity": null,
+       "kind": "power",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "终极技能充能消耗缩减从50%提高至60%。"
+       ],
+       "raw_text": [
+        "MEKA弹射器——异能"
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "junker-queen",
+     "name_en": "Junker Queen",
+     "name_cn": "渣客女王",
+     "role": "tank",
+     "icon": "https://ld5.res.netease.com/images/20260227/1772181920282_19c6067f8b.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
+      {
+       "name_en": null,
+       "name_cn": "使劲切，格雷西！",
+       "rarity": null,
+       "kind": "power",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "召回伤害从40点降低至30点。"
+       ],
+       "raw_text": [
+        "使劲切，格雷西！——异能"
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "输出",
+   "role": "damage",
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "genji",
+     "name_en": "Genji",
+     "name_cn": "源氏",
+     "role": "damage",
+     "icon": "https://ld5.res.netease.com/images/20260227/1772181853393_e020174a4f.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
+      {
+       "name_en": null,
+       "name_cn": "裂伤迅影",
+       "rarity": null,
+       "kind": "power",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "每个目标的冷却时间缩短从2秒延长至2.5秒。"
+       ],
+       "raw_text": [
+        "裂伤迅影——异能"
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "vendetta",
+     "name_en": "Vendetta",
+     "name_cn": "斩仇",
+     "role": "damage",
+     "icon": "https://ld5.res.netease.com/images/20260714/1784025797253_a8b1c84ccd.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
+      {
+       "name_en": null,
+       "name_cn": "极度嗜血",
+       "rarity": null,
+       "kind": "power",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "每层效果的生命汲取从5%降低至4%。"
+       ],
+       "raw_text": [
+        "极度嗜血——异能"
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "支援",
+   "role": "support",
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "ana",
+     "name_en": "Ana",
+     "name_cn": "安娜",
+     "role": "support",
+     "icon": "https://ld5.res.netease.com/images/20260227/1772181889989_d03631509b.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
+      {
+       "name_en": null,
+       "name_cn": "驯鹰高手",
+       "rarity": null,
+       "kind": "power",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "攻击速度加成从30%提高至50%。",
+        "终极技能充能获取从25%降低至10%。"
+       ],
+       "raw_text": [
+        "驯鹰高手——异能"
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "jetpack-cat",
+     "name_en": "Jetpack Cat",
+     "name_cn": "飞天猫",
+     "role": "support",
+     "icon": "https://ld5.res.netease.com/images/20260714/1784025805782_a7479b4b07.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
+      {
+       "name_en": null,
+       "name_cn": "领地意识",
+       "rarity": null,
+       "kind": "power",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "伤害从治疗量的30%降低至20%。"
+       ],
+       "raw_text": [
+        "领地意识——异能"
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 修复了角斗领域快速比赛不会奖励战令经验的问题。\n- 修复了“Solus Victorem 2026决赛”喷漆的错误。\n- 修复了消灭提示有时会发生错误的问题。\n- 修复了赛后奖励总结界面的若干问题。\n- 修复了信号系统的若干问题。\n- 移除了“高精确度鼠标输入”设置，因为添加此功能希望解决的问题已经通过其他方式解决了。此设置移除后，鼠标在游戏内的功能不会发生改变。",
+     "dev": null
+    },
+    {
+     "title": "英雄",
+     "body": "**天使**\n\n- 修复了“支援技能精通”或“掌控生死”日常挑战不会计算“天使”的“快速治疗”技能的问题。\n\n**D.Mon**\n\n- 修复了“切换推进器”设置的问题。",
+     "dev": null
+    },
+    {
+     "title": "地图",
+     "body": "- 修复了黑森林地图的错误。现在此地图已重新启用。",
+     "dev": null
+    },
+    {
+     "title": "角斗领域",
+     "body": "- 修复了“天使”的“同情愈疗”被动技能在角斗领域无法正常生效的问题。\n- 修复了“使劲切，格雷西！”有时会拖拽未被利刃击中的目标的问题。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": "sha256:e300032f30ff3c154c7423614dad6b97e655d2a4e069607e5e9d6d78c2069bcc"
+}

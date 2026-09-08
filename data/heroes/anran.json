@@ -7,6 +7,90 @@
  "role": "damage",
  "timeline": [
   {
+   "patch": "cn-2026-09-09-1",
+   "date": "2026-09-09",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/09/",
+   "patch_title": "《守望先锋》补丁说明——2026年9月9日",
+   "kind": "ability",
+   "dimension": "ability",
+   "mode": "standard",
+   "ability_slug": "dancing-blaze",
+   "ability_en": "Dancing Blaze",
+   "ability_cn": "熠闪舞",
+   "text_en": null,
+   "text_cn": "减少了敌人被“熠闪舞”击中时会看见的视觉特效数量。",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "cn-2026-09-09-1",
+   "date": "2026-09-09",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/09/",
+   "patch_title": "《守望先锋》补丁说明——2026年9月9日",
+   "kind": "ability",
+   "dimension": "ability",
+   "mode": "standard",
+   "ability_slug": "vermillion-revival",
+   "ability_en": "Vermillion Revival",
+   "ability_cn": "朱魂返",
+   "text_en": null,
+   "text_cn": "施放时间从3秒缩短至2.5秒。",
+   "before": 3.0,
+   "after": 2.5,
+   "by": -0.5,
+   "by_pct": null,
+   "metric": "cast_time",
+   "unit": "s"
+  },
+  {
+   "patch": "en-2026-09-08-1",
+   "date": "2026-09-08",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09",
+   "patch_title": "Overwatch Retail Patch Notes – September 8, 2026",
+   "kind": "ability",
+   "dimension": "ability",
+   "mode": "standard",
+   "ability_slug": "dancing-blaze",
+   "ability_en": "Dancing Blaze",
+   "ability_cn": "熠闪舞",
+   "text_en": "Reduced the amount of visual effects enemies see when impacted by Dancing Blaze.",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "en-2026-09-08-1",
+   "date": "2026-09-08",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09",
+   "patch_title": "Overwatch Retail Patch Notes – September 8, 2026",
+   "kind": "ability",
+   "dimension": "ability",
+   "mode": "standard",
+   "ability_slug": "vermillion-revival",
+   "ability_en": "Vermillion Revival",
+   "ability_cn": "朱魂返",
+   "text_en": "Cast time reduced from 3 to 2.5 seconds.",
+   "text_cn": null,
+   "before": 3.0,
+   "after": 2.5,
+   "by": -0.5,
+   "by_pct": null,
+   "metric": "cast_time",
+   "unit": "s"
+  },
+  {
    "patch": "cn-2026-07-01-1",
    "date": "2026-07-01",
    "site": "cn",
@@ -1428,6 +1512,16 @@
   }
  ],
  "values": {
+  "vermillion-revival:cast_time": [
+   {
+    "date": "2026-09-08",
+    "value": 2.5
+   },
+   {
+    "date": "2026-09-09",
+    "value": 2.5
+   }
+  ],
   "inferno-rush:技能结束后恢复时间": [
    {
     "date": "2026-06-17",

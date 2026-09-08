@@ -969,15 +969,17 @@
   },
   "call-mech": {
    "heroes": [
-    "d-va"
+    "d-mon"
    ],
    "name_en": "Call Mech",
-   "name_cn": null,
-   "cn_variants": [],
+   "name_cn": "呼叫机甲",
+   "cn_variants": [
+    "呼叫机甲"
+   ],
    "en_variants": [
     "Call Mech"
    ],
-   "weak": true,
+   "weak": false,
    "kind": "ability"
   },
   "captive-sun": {
@@ -2978,12 +2980,14 @@
     "zenyatta"
    ],
    "name_en": "Harmony Orb",
-   "name_cn": null,
-   "cn_variants": [],
+   "name_cn": "谐",
+   "cn_variants": [
+    "谐"
+   ],
    "en_variants": [
     "Harmony Orb"
    ],
-   "weak": true,
+   "weak": false,
    "kind": "ability"
   },
   "headhunter": {
@@ -4453,14 +4457,12 @@
     "zenyatta"
    ],
    "name_en": "Orb of Harmony",
-   "name_cn": "谐",
-   "cn_variants": [
-    "谐"
-   ],
+   "name_cn": null,
+   "cn_variants": [],
    "en_variants": [
     "Orb of Harmony"
    ],
-   "weak": false,
+   "weak": true,
    "kind": "ability"
   },
   "orbital-ray": {
@@ -4664,12 +4666,14 @@
     "zarya"
    ],
    "name_en": "Particle Barrier",
-   "name_cn": null,
-   "cn_variants": [],
+   "name_cn": "粒子屏障",
+   "cn_variants": [
+    "粒子屏障"
+   ],
    "en_variants": [
     "Particle Barrier"
    ],
-   "weak": true,
+   "weak": false,
    "kind": "ability"
   },
   "particle-barrier-and-projected-barrier": {
@@ -4947,6 +4951,36 @@
    ],
    "weak": false,
    "kind": "weapon"
+  },
+  "portable-fusion-repeater": {
+   "heroes": [
+    "d-mon"
+   ],
+   "name_en": "Portable Fusion Repeater",
+   "name_cn": "手提聚变连发枪",
+   "cn_variants": [
+    "手提聚变连发枪"
+   ],
+   "en_variants": [
+    "Portable Fusion Repeater"
+   ],
+   "weak": false,
+   "kind": "weapon"
+  },
+  "power-barrier": {
+   "heroes": [
+    "d-mon"
+   ],
+   "name_en": "Power Barrier",
+   "name_cn": "强力屏障",
+   "cn_variants": [
+    "强力屏障"
+   ],
+   "en_variants": [
+    "Power Barrier"
+   ],
+   "weak": false,
+   "kind": "ability"
   },
   "power-block": {
    "heroes": [
@@ -5610,6 +5644,21 @@
    "weak": true,
    "kind": "ability"
   },
+  "restorative-stream": {
+   "heroes": [
+    "wuyang"
+   ],
+   "name_en": "Restorative Stream",
+   "name_cn": "养神泉",
+   "cn_variants": [
+    "养神泉"
+   ],
+   "en_variants": [
+    "Restorative Stream"
+   ],
+   "weak": false,
+   "kind": "ability"
+  },
   "resurrect": {
    "heroes": [
     "mercy"
@@ -5701,12 +5750,14 @@
     "torbjorn"
    ],
    "name_en": "Rivet Gun",
-   "name_cn": null,
-   "cn_variants": [],
+   "name_cn": "铆钉枪",
+   "cn_variants": [
+    "铆钉枪"
+   ],
    "en_variants": [
     "Rivet Gun"
    ],
-   "weak": true,
+   "weak": false,
    "kind": "weapon"
   },
   "rivet-gun-alt-fire": {
@@ -6895,12 +6946,14 @@
     "symmetra"
    ],
    "name_en": "Teleporter",
-   "name_cn": null,
-   "cn_variants": [],
+   "name_cn": "传送面板",
+   "cn_variants": [
+    "传送面板"
+   ],
    "en_variants": [
     "Teleporter"
    ],
-   "weak": true,
+   "weak": false,
    "kind": "ability"
   },
   "terra-surge": {
@@ -7166,6 +7219,21 @@
    ],
    "en_variants": [
     "Tree of Life"
+   ],
+   "weak": false,
+   "kind": "ability"
+  },
+  "tremor-charge": {
+   "heroes": [
+    "sierra"
+   ],
+   "name_en": "Tremor Charge",
+   "name_cn": "震地手雷",
+   "cn_variants": [
+    "震地手雷"
+   ],
+   "en_variants": [
+    "Tremor Charge"
    ],
    "weak": false,
    "kind": "ability"
@@ -7984,6 +8052,9 @@
   "热力过载": [
    "overload"
   ],
+  "铆钉枪": [
+   "rivet-gun"
+  ],
   "量子纠缠": [
    "quantum-entanglement"
   ],
@@ -8173,6 +8244,9 @@
   "重力喷涌": [
    "graviton-surge"
   ],
+  "粒子屏障": [
+   "particle-barrier"
+  ],
   "机动滑铲": [
    "power-slide"
   ],
@@ -8350,6 +8424,9 @@
   "哨戒炮": [
    "sentry-turret"
   ],
+  "传送面板": [
+   "teleporter"
+  ],
   "钻地": [
    "burrow"
   ],
@@ -8405,7 +8482,7 @@
    "orb-of-discord"
   ],
   "谐": [
-   "orb-of-harmony"
+   "harmony-orb"
   ],
   "怒炎冲": [
    "inferno-rush"
@@ -8506,6 +8583,9 @@
   "玄武杖": [
    "xuanwu-staff"
   ],
+  "养神泉": [
+   "restorative-stream"
+  ],
   "螺旋步枪": [
    "helix-rifle"
   ],
@@ -8514,6 +8594,9 @@
   ],
   "追踪弹": [
    "tracking-shot"
+  ],
+  "震地手雷": [
+   "tremor-charge"
   ],
   "交叉枪决": [
    "execution"
@@ -8532,6 +8615,15 @@
   ],
   "突进刺击": [
    "surging-strike"
+  ],
+  "强力屏障": [
+   "power-barrier"
+  ],
+  "呼叫机甲": [
+   "call-mech"
+  ],
+  "手提聚变连发枪": [
+   "portable-fusion-repeater"
   ]
  },
  "by_en": {
@@ -8891,6 +8983,8 @@
   "Pile Driver": "pile-driver",
   "Piledriver": "piledriver",
   "Plasma Saber": "plasma-saber",
+  "Portable Fusion Repeater": "portable-fusion-repeater",
+  "Power Barrier": "power-barrier",
   "Power Block": "power-block",
   "Power Matrix": "power-matrix",
   "Power Slide": "power-slide",
@@ -8939,6 +9033,7 @@
   "Remedy Aura": "remedy-aura",
   "Rending Recall": "rending-recall",
   "Repair Pack": "repair-pack",
+  "Restorative Stream": "restorative-stream",
   "Resurrect": "resurrect",
   "Resurrect (formerly Mercy’s Ultimate ability)": "resurrect-formerly-mercy-s-ultimate-ability",
   "Revdraw Crossbow": "revdraw-crossbow",
@@ -9049,6 +9144,7 @@
   "Transfer Efficiency": "transfer-efficiency",
   "Translocator": "translocator",
   "Tree of Life": "tree-of-life",
+  "Tremor Charge": "tremor-charge",
   "Tri-Shot": "tri-shot",
   "Two Hearts": "two-hearts",
   "Updraft": "updraft",
@@ -9272,6 +9368,20 @@
    ],
    "en_variants": [
     "Anarchic Zeal"
+   ],
+   "weak": false
+  },
+  "anchor-bolts": {
+   "heroes": [
+    "torbjorn"
+   ],
+   "name_en": "Anchor Bolts",
+   "name_cn": "锚固螺栓",
+   "cn_variants": [
+    "锚固螺栓"
+   ],
+   "en_variants": [
+    "Anchor Bolts"
    ],
    "weak": false
   },
@@ -11202,6 +11312,20 @@
    ],
    "weak": false
   },
+  "nitro-boost": {
+   "heroes": [
+    "junkrat"
+   ],
+   "name_en": "Nitro Boost",
+   "name_cn": "氮气推进",
+   "cn_variants": [
+    "氮气推进"
+   ],
+   "en_variants": [
+    "Nitro Boost"
+   ],
+   "weak": false
+  },
   "off-the-top": {
    "heroes": [
     "hazard"
@@ -12926,6 +13050,9 @@
   "一炸冲天": [
    "bomb-voyage"
   ],
+  "氮气推进": [
+   "nitro-boost"
+  ],
   "水满则溢": [
    "overflow"
   ],
@@ -13202,6 +13329,9 @@
   "核心预热": [
    "pre-heated"
   ],
+  "锚固螺栓": [
+   "anchor-bolts"
+  ],
   "往昔震爆": [
    "blast-from-the-past"
   ],
@@ -13457,6 +13587,7 @@
   "Agility Training": "agility-training",
   "Aluminum Frame": "aluminum-frame",
   "Anarchic Zeal": "anarchic-zeal",
+  "Anchor Bolts": "anchor-bolts",
   "Angelic Resurrection": "angelic-resurrection",
   "Arboreal Affliction": "arboreal-affliction",
   "Armored Artillery": "armored-artillery",
@@ -13598,6 +13729,7 @@
   "Momentum Boost": "momentum-boost",
   "Multi-Ball": "multi-ball",
   "Nanite Repair": "nanite-repair",
+  "Nitro Boost": "nitro-boost",
   "Off the Top": "off-the-top",
   "One-Two": "one-two",
   "Overflow": "overflow",

@@ -7,6 +7,90 @@
  "role": "damage",
  "timeline": [
   {
+   "patch": "cn-2026-09-09-1",
+   "date": "2026-09-09",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/09/",
+   "patch_title": "《守望先锋》补丁说明——2026年9月9日",
+   "kind": "ability",
+   "dimension": "weapon",
+   "mode": "standard",
+   "ability_slug": "rivet-gun",
+   "ability_en": null,
+   "ability_cn": "铆钉枪",
+   "text_en": null,
+   "text_cn": "辅助攻击模式的散布从4.5度降低至4度。",
+   "before": 4.5,
+   "after": 4.0,
+   "by": -0.5,
+   "by_pct": null,
+   "metric": "辅助攻击模式的散布",
+   "unit": "deg"
+  },
+  {
+   "patch": "cn-2026-09-09-1",
+   "date": "2026-09-09",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/09/",
+   "patch_title": "《守望先锋》补丁说明——2026年9月9日",
+   "kind": "perk",
+   "dimension": "perk",
+   "mode": "standard",
+   "perk_slug": "anchor-bolts",
+   "perk_en": null,
+   "perk_cn": "锚固螺栓",
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": [
+    "部署炮台时的投掷距离加成从50%降低至25%。"
+   ],
+   "before": 50.0,
+   "after": 25.0,
+   "by": -25.0,
+   "by_pct": null,
+   "metric": "部署炮台时的投掷距离加成",
+   "unit": "pct"
+  },
+  {
+   "patch": "en-2026-09-08-1",
+   "date": "2026-09-08",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09",
+   "patch_title": "Overwatch Retail Patch Notes – September 8, 2026",
+   "kind": "ability",
+   "dimension": "weapon",
+   "mode": "standard",
+   "ability_slug": "rivet-gun",
+   "ability_en": "Rivet Gun",
+   "ability_cn": null,
+   "text_en": "Secondary fire spread reduced from 4.5 to 4 degrees.",
+   "text_cn": null,
+   "before": 4.5,
+   "after": 4.0,
+   "by": -0.5,
+   "by_pct": null,
+   "metric": "secondary fire spread",
+   "unit": null
+  },
+  {
+   "patch": "en-2026-09-08-1",
+   "date": "2026-09-08",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09",
+   "patch_title": "Overwatch Retail Patch Notes – September 8, 2026",
+   "kind": "perk",
+   "dimension": "perk",
+   "mode": "standard",
+   "perk_slug": "anchor-bolts",
+   "perk_en": "Anchor Bolts",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [
+    "Deploy turrets increased throw range reduced from 50% to 25%."
+   ],
+   "lines_cn": []
+  },
+  {
    "patch": "cn-2026-07-15-1",
    "date": "2026-07-15",
    "site": "cn",
@@ -4377,6 +4461,28 @@
   }
  ],
  "values": {
+  "rivet-gun:辅助攻击模式的散布": [
+   {
+    "date": "2026-09-09",
+    "value": 4.0
+   }
+  ],
+  "perk:anchor-bolts:部署炮台时的投掷距离加成": [
+   {
+    "date": "2026-09-09",
+    "value": 25.0
+   }
+  ],
+  "rivet-gun:secondary fire spread": [
+   {
+    "date": "2023-07-11",
+    "value": 4.5
+   },
+   {
+    "date": "2026-09-08",
+    "value": 4.0
+   }
+  ],
   "deploy-turret:health": [
    {
     "date": "2025-03-19",
@@ -4457,12 +4563,6 @@
    {
     "date": "2023-08-10",
     "value": 0.6
-   }
-  ],
-  "rivet-gun:secondary fire spread": [
-   {
-    "date": "2023-07-11",
-    "value": 4.5
    }
   ],
   "deploy-turret:damage": [

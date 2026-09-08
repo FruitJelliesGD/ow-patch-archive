@@ -7,6 +7,90 @@
  "role": "damage",
  "timeline": [
   {
+   "patch": "cn-2026-09-09-1",
+   "date": "2026-09-09",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/09/",
+   "patch_title": "《守望先锋》补丁说明——2026年9月9日",
+   "kind": "ability",
+   "dimension": "ability",
+   "mode": "standard",
+   "ability_slug": "concussion-mine",
+   "ability_en": "Concussion Mine",
+   "ability_cn": "震荡地雷",
+   "text_en": null,
+   "text_cn": "冷却时间从8秒缩短至7秒。",
+   "before": 8.0,
+   "after": 7.0,
+   "by": -1.0,
+   "by_pct": null,
+   "metric": "cooldown",
+   "unit": "s"
+  },
+  {
+   "patch": "cn-2026-09-09-1",
+   "date": "2026-09-09",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/09/",
+   "patch_title": "《守望先锋》补丁说明——2026年9月9日",
+   "kind": "perk",
+   "dimension": "perk",
+   "mode": "standard",
+   "perk_slug": "nitro-boost",
+   "perk_en": null,
+   "perk_cn": "氮气推进",
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": [
+    "速度加成从125%降低至100%。"
+   ],
+   "before": 125.0,
+   "after": 100.0,
+   "by": -25.0,
+   "by_pct": null,
+   "metric": "速度加成",
+   "unit": "pct"
+  },
+  {
+   "patch": "en-2026-09-08-1",
+   "date": "2026-09-08",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09",
+   "patch_title": "Overwatch Retail Patch Notes – September 8, 2026",
+   "kind": "ability",
+   "dimension": "ability",
+   "mode": "standard",
+   "ability_slug": "concussion-mine",
+   "ability_en": "Concussion Mine",
+   "ability_cn": "震荡地雷",
+   "text_en": "Cooldown reduced from 8 to 7 seconds.",
+   "text_cn": null,
+   "before": 8.0,
+   "after": 7.0,
+   "by": -1.0,
+   "by_pct": null,
+   "metric": "cooldown",
+   "unit": "s"
+  },
+  {
+   "patch": "en-2026-09-08-1",
+   "date": "2026-09-08",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09",
+   "patch_title": "Overwatch Retail Patch Notes – September 8, 2026",
+   "kind": "perk",
+   "dimension": "perk",
+   "mode": "standard",
+   "perk_slug": "nitro-boost",
+   "perk_en": "Nitro Boost",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [
+    "Bonus speed reduced from 125% to 100%."
+   ],
+   "lines_cn": []
+  },
+  {
    "patch": "cn-2026-08-12-1",
    "date": "2026-08-12",
    "site": "cn",
@@ -5284,6 +5368,30 @@
   }
  ],
  "values": {
+  "concussion-mine:cooldown": [
+   {
+    "date": "2024-02-20",
+    "value": 7.0
+   },
+   {
+    "date": "2024-11-08",
+    "value": 8.0
+   },
+   {
+    "date": "2026-09-08",
+    "value": 7.0
+   },
+   {
+    "date": "2026-09-09",
+    "value": 7.0
+   }
+  ],
+  "perk:nitro-boost:速度加成": [
+   {
+    "date": "2026-09-09",
+    "value": 100.0
+   }
+  ],
   "perk:bomb-voyage:攻击速度加成": [
    {
     "date": "2026-04-15",
@@ -5310,16 +5418,6 @@
    {
     "date": "2025-07-22",
     "value": 0.25
-   }
-  ],
-  "concussion-mine:cooldown": [
-   {
-    "date": "2024-02-20",
-    "value": 7.0
-   },
-   {
-    "date": "2024-11-08",
-    "value": 8.0
    }
   ],
   "frag-launcher:impact damage": [

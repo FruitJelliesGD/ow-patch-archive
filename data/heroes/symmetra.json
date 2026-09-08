@@ -7,6 +7,90 @@
  "role": "damage",
  "timeline": [
   {
+   "patch": "cn-2026-09-09-1",
+   "date": "2026-09-09",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/09/",
+   "patch_title": "《守望先锋》补丁说明——2026年9月9日",
+   "kind": "ability",
+   "dimension": "ability",
+   "mode": "standard",
+   "ability_slug": "teleporter",
+   "ability_en": null,
+   "ability_cn": "传送面板",
+   "text_en": null,
+   "text_cn": "放置范围从30米减少至25米。",
+   "before": 30.0,
+   "after": 25.0,
+   "by": -5.0,
+   "by_pct": null,
+   "metric": "放置范围",
+   "unit": "m"
+  },
+  {
+   "patch": "cn-2026-09-09-1",
+   "date": "2026-09-09",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/09/",
+   "patch_title": "《守望先锋》补丁说明——2026年9月9日",
+   "kind": "ability",
+   "dimension": "ability",
+   "mode": "standard",
+   "ability_slug": "teleporter",
+   "ability_en": null,
+   "ability_cn": "传送面板",
+   "text_en": null,
+   "text_cn": "重复使用它进行传送的冷却时间从1秒延长至1.25秒。",
+   "before": 1.0,
+   "after": 1.25,
+   "by": 0.25,
+   "by_pct": null,
+   "metric": "重复使用它进行传送的冷却时间",
+   "unit": "s"
+  },
+  {
+   "patch": "en-2026-09-08-1",
+   "date": "2026-09-08",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09",
+   "patch_title": "Overwatch Retail Patch Notes – September 8, 2026",
+   "kind": "ability",
+   "dimension": "ability",
+   "mode": "standard",
+   "ability_slug": "teleporter",
+   "ability_en": "Teleporter",
+   "ability_cn": null,
+   "text_en": "Placement range reduced from 30 to 25 meters.",
+   "text_cn": null,
+   "before": 30.0,
+   "after": 25.0,
+   "by": -5.0,
+   "by_pct": null,
+   "metric": "placement range",
+   "unit": null
+  },
+  {
+   "patch": "en-2026-09-08-1",
+   "date": "2026-09-08",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09",
+   "patch_title": "Overwatch Retail Patch Notes – September 8, 2026",
+   "kind": "ability",
+   "dimension": "ability",
+   "mode": "standard",
+   "ability_slug": "teleporter",
+   "ability_en": "Teleporter",
+   "ability_cn": null,
+   "text_en": "Teleport reuse cooldown increased from 1 to 1.25 seconds.",
+   "text_cn": null,
+   "before": 1.0,
+   "after": 1.25,
+   "by": 0.25,
+   "by_pct": null,
+   "metric": "teleport reuse cooldown",
+   "unit": null
+  },
+  {
    "patch": "cn-2026-07-01-1",
    "date": "2026-07-01",
    "site": "cn",
@@ -2850,6 +2934,30 @@
   }
  ],
  "values": {
+  "teleporter:放置范围": [
+   {
+    "date": "2026-09-09",
+    "value": 25.0
+   }
+  ],
+  "teleporter:重复使用它进行传送的冷却时间": [
+   {
+    "date": "2026-09-09",
+    "value": 1.25
+   }
+  ],
+  "teleporter:placement range": [
+   {
+    "date": "2026-09-08",
+    "value": 25.0
+   }
+  ],
+  "teleporter:teleport reuse cooldown": [
+   {
+    "date": "2026-09-08",
+    "value": 1.25
+   }
+  ],
   "attr:health:基础护盾生命值": [
    {
     "date": "2026-01-09",

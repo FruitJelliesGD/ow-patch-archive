@@ -7,6 +7,54 @@
  "role": "tank",
  "timeline": [
   {
+   "patch": "cn-2026-09-09-1",
+   "date": "2026-09-09",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/09/",
+   "patch_title": "《守望先锋》补丁说明——2026年9月9日",
+   "kind": "perk",
+   "dimension": "perk",
+   "mode": "standard",
+   "perk_slug": "adaptive-barrier",
+   "perk_en": null,
+   "perk_cn": "感应屏障",
+   "status": "changed",
+   "lines_en": [],
+   "lines_cn": [
+    "最大持续时间从1.5秒缩短至1秒。"
+   ],
+   "before": 1.5,
+   "after": 1.0,
+   "by": -0.5,
+   "by_pct": null,
+   "metric": "最大持续时间",
+   "unit": "s"
+  },
+  {
+   "patch": "en-2026-09-08-1",
+   "date": "2026-09-08",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09",
+   "patch_title": "Overwatch Retail Patch Notes – September 8, 2026",
+   "kind": "perk",
+   "dimension": "perk",
+   "mode": "standard",
+   "perk_slug": "adaptive-barrier",
+   "perk_en": "Adaptive Barrier",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [
+    "Duration reduced from 1.5 to 1 second."
+   ],
+   "lines_cn": [],
+   "before": 1.5,
+   "after": 1.0,
+   "by": -0.5,
+   "by_pct": null,
+   "metric": "duration",
+   "unit": "s"
+  },
+  {
    "patch": "cn-2026-07-01-1",
    "date": "2026-07-01",
    "site": "cn",
@@ -2208,6 +2256,18 @@
   }
  ],
  "values": {
+  "perk:adaptive-barrier:最大持续时间": [
+   {
+    "date": "2026-09-09",
+    "value": 1.0
+   }
+  ],
+  "perk:adaptive-barrier:duration": [
+   {
+    "date": "2026-09-08",
+    "value": 1.0
+   }
+  ],
   "attr:health:health": [
    {
     "date": "2025-04-08",
