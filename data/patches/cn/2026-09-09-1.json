@@ -76,7 +76,7 @@
        ]
       },
       {
-       "name_en": null,
+       "name_en": "Power Barrier",
        "name_cn": "强力屏障",
        "slug": "power-barrier",
        "icon": "https://ld5.res.netease.com/images/20260813/1786594672856_b1daa1821b.png",
@@ -106,7 +106,7 @@
        ]
       },
       {
-       "name_en": null,
+       "name_en": "Call Mech",
        "name_cn": "呼叫机甲",
        "slug": "call-mech",
        "icon": "https://ld5.res.netease.com/images/20260813/1786594675284_cc656d1196.png",
@@ -136,9 +136,9 @@
        ]
       },
       {
-       "name_en": null,
+       "name_en": "Portable Fusion Repeater",
        "name_cn": "手提聚变连发枪",
-       "slug": "fusion-repeater",
+       "slug": "portable-fusion-repeater",
        "icon": "https://ld5.res.netease.com/images/20260813/1786594675629_206ab51f8e.png",
        "changes": [
         {
@@ -362,7 +362,7 @@
      "perks": [],
      "abilities": [
       {
-       "name_en": null,
+       "name_en": "Particle Barrier",
        "name_cn": "粒子屏障",
        "slug": "particle-barrier",
        "icon": "https://ld5.res.netease.com/images/20260227/1772181867592_4fbb77161a.png",
@@ -400,7 +400,7 @@
      "name_cn": "安燃",
      "role": "damage",
      "icon": "https://ld5.res.netease.com/images/20260714/1784025803200_c00e48ee1a.png",
-     "dev_note": "设计师观点：“熠闪舞”可能会造成较为严重的视觉干扰，导致玩家难以在激烈战斗中追踪安燃的行动。为了提升清晰度，我们移除了可见的视觉分身。我们还缩短了“朱魂返”的施放时间，从而削减短对手的反应时间，",
+     "dev_note": "设计师观点：“熠闪舞”可能会造成较为严重的视觉干扰，导致玩家难以在激烈战斗中追踪安燃的行动。为了提升清晰度，我们移除了可见的视觉分身。我们还缩短了“朱魂返”的施放时间，从而削减短对手的反应时间。",
      "general": [],
      "perks": [],
      "abilities": [
@@ -621,7 +621,7 @@
        ]
       },
       {
-       "name_en": null,
+       "name_en": "Tremor Charge",
        "name_cn": "震地手雷",
        "slug": "tremor-charge",
        "icon": "https://ld5.res.netease.com/images/20260417/1776392675674_29f686129a.png",
@@ -653,7 +653,7 @@
      "perks": [],
      "abilities": [
       {
-       "name_en": null,
+       "name_en": "Teleporter",
        "name_cn": "传送面板",
        "slug": "teleporter",
        "icon": "https://ld5.res.netease.com/images/20260227/1772181849529_08b5ca0f55.png",
@@ -707,7 +707,7 @@
      ],
      "abilities": [
       {
-       "name_en": null,
+       "name_en": "Rivet Gun",
        "name_cn": "铆钉枪",
        "slug": "rivet-gun",
        "icon": "https://ld5.res.netease.com/images/20260227/1772181828160_0bf7ac38a0.png",
@@ -818,6 +818,49 @@
         {
          "text_en": null,
          "text_cn": "斩击期间，镜头高度不再是完全锁定的。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "widowmaker",
+     "name_en": "Widowmaker",
+     "name_cn": "黑百合",
+     "role": "damage",
+     "icon": "https://ld5.res.netease.com/images/20260909/1788938368437_86814e5509.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [
+      {
+       "name_en": null,
+       "name_cn": "锚固螺栓",
+       "status": "changed",
+       "lines_en": [],
+       "lines_cn": [
+        "部署炮台时的投掷距离加成从50%降低至25%。"
+       ],
+       "raw_text": []
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": "Take Aim",
+       "name_cn": "瞄准射击",
+       "slug": "take-aim",
+       "icon": "https://ld5.res.netease.com/images/20260909/1788938368421_dd6ee12ba9.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "更新了黑百合默认武器、神话武器和凯蒂猫武器的瞄准充能音效。充能程度超过 50% 后，音效的强度会增强。",
          "before": null,
          "after": null,
          "by": null,
@@ -1092,7 +1135,7 @@
      "perks": [],
      "abilities": [
       {
-       "name_en": null,
+       "name_en": "Restorative Stream",
        "name_cn": "养神泉",
        "slug": "restorative-stream",
        "icon": "https://ld5.res.netease.com/images/20260227/1772182076555_041822bf75.png",
@@ -1135,9 +1178,9 @@
      "perks": [],
      "abilities": [
       {
-       "name_en": "Orb of Harmony",
+       "name_en": "Harmony Orb",
        "name_cn": "谐",
-       "slug": "orb-of-harmony",
+       "slug": "harmony-orb",
        "icon": "https://ld5.res.netease.com/images/20260227/1772181852303_96c60c7694.png",
        "changes": [
         {
@@ -1399,5 +1442,5 @@
   }
  ],
  "raw_text": null,
- "hash": "sha256:e300032f30ff3c154c7423614dad6b97e655d2a4e069607e5e9d6d78c2069bcc"
+ "hash": "sha256:91e54d212f06681ac653e0517c33f70fce2745eecd13c4e8c4f708e8b0fa958f"
 }
