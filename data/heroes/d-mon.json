@@ -7,6 +7,131 @@
  "role": "tank",
  "timeline": [
   {
+   "patch": "en-2026-09-17-1",
+   "date": "2026-09-17",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09",
+   "patch_title": "Overwatch Retail Patch Notes – September 17, 2026",
+   "kind": "ability",
+   "dimension": "ability",
+   "mode": "standard",
+   "ability_slug": "propulsors",
+   "ability_en": "Propulsors",
+   "ability_cn": "助推器",
+   "text_en": "Fuel drain rate increased from 25 to 30.",
+   "text_cn": null,
+   "before": 25.0,
+   "after": 30.0,
+   "by": 5.0,
+   "by_pct": null,
+   "metric": "fuel drain rate",
+   "unit": null
+  },
+  {
+   "patch": "en-2026-09-17-1",
+   "date": "2026-09-17",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09",
+   "patch_title": "Overwatch Retail Patch Notes – September 17, 2026",
+   "kind": "ability",
+   "dimension": "weapon",
+   "mode": "standard",
+   "ability_slug": "fusion-repeater",
+   "ability_en": "Fusion Repeater",
+   "ability_cn": "聚变连发枪",
+   "text_en": "Damage reduced from 16 to 15.",
+   "text_cn": null,
+   "before": 16.0,
+   "after": 15.0,
+   "by": -1.0,
+   "by_pct": null,
+   "metric": "damage",
+   "unit": null
+  },
+  {
+   "patch": "en-2026-09-17-1",
+   "date": "2026-09-17",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09",
+   "patch_title": "Overwatch Retail Patch Notes – September 17, 2026",
+   "kind": "ability",
+   "dimension": "weapon",
+   "mode": "standard",
+   "ability_slug": "fusion-repeater",
+   "ability_en": "Fusion Repeater",
+   "ability_cn": "聚变连发枪",
+   "text_en": "Cooldown increased from 4 to 5 seconds.",
+   "text_cn": null,
+   "before": 4.0,
+   "after": 5.0,
+   "by": 1.0,
+   "by_pct": null,
+   "metric": "cooldown",
+   "unit": "s"
+  },
+  {
+   "patch": "en-2026-09-17-1",
+   "date": "2026-09-17",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09",
+   "patch_title": "Overwatch Retail Patch Notes – September 17, 2026",
+   "kind": "perk",
+   "dimension": "perk",
+   "mode": "standard",
+   "perk_slug": "focused-fusion",
+   "perk_en": "Focused Fusion",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [
+    "Damage per bullet reduced from 45 to 36."
+   ],
+   "lines_cn": [],
+   "before": 45.0,
+   "after": 36.0,
+   "by": -9.0,
+   "by_pct": null,
+   "metric": "damage",
+   "unit": null
+  },
+  {
+   "patch": "en-2026-09-17-1",
+   "date": "2026-09-17",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09",
+   "patch_title": "Overwatch Retail Patch Notes – September 17, 2026",
+   "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
+   "mode": "standard",
+   "text_en": "Armor reduced from 325 to 275 (5v5).",
+   "text_cn": null,
+   "before": 325.0,
+   "after": 275.0,
+   "by": -50.0,
+   "by_pct": null,
+   "metric": "armor",
+   "unit": "hp"
+  },
+  {
+   "patch": "en-2026-09-17-1",
+   "date": "2026-09-17",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09",
+   "patch_title": "Overwatch Retail Patch Notes – September 17, 2026",
+   "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
+   "mode": "standard",
+   "text_en": "Armor reduced from 300 to 250 (6v6).",
+   "text_cn": null,
+   "before": 300.0,
+   "after": 250.0,
+   "by": -50.0,
+   "by_pct": null,
+   "metric": "armor",
+   "unit": "hp"
+  },
+  {
    "patch": "cn-2026-09-09-1",
    "date": "2026-09-09",
    "site": "cn",
@@ -965,6 +1090,64 @@
   }
  ],
  "values": {
+  "propulsors:fuel drain rate": [
+   {
+    "date": "2026-08-12",
+    "value": 25.0
+   },
+   {
+    "date": "2026-09-17",
+    "value": 30.0
+   }
+  ],
+  "fusion-repeater:damage": [
+   {
+    "date": "2026-08-12",
+    "value": 16.0
+   },
+   {
+    "date": "2026-08-13",
+    "value": 16.0
+   },
+   {
+    "date": "2026-09-17",
+    "value": 15.0
+   }
+  ],
+  "fusion-repeater:cooldown": [
+   {
+    "date": "2026-08-12",
+    "value": 4.0
+   },
+   {
+    "date": "2026-08-13",
+    "value": 4.0
+   },
+   {
+    "date": "2026-09-17",
+    "value": 5.0
+   }
+  ],
+  "perk:focused-fusion:damage": [
+   {
+    "date": "2026-09-17",
+    "value": 36.0
+   }
+  ],
+  "attr:health:armor": [
+   {
+    "date": "2026-09-08",
+    "value": 300.0
+   },
+   {
+    "date": "2026-09-09",
+    "value": 300.0
+   },
+   {
+    "date": "2026-09-17",
+    "value": 250.0
+   }
+  ],
   "plasma-saber:damage": [
    {
     "date": "2026-08-12",
@@ -1005,16 +1188,6 @@
    {
     "date": "2026-09-09",
     "value": 20.0
-   }
-  ],
-  "attr:health:armor": [
-   {
-    "date": "2026-09-08",
-    "value": 300.0
-   },
-   {
-    "date": "2026-09-09",
-    "value": 300.0
    }
   ],
   "call-mech:transformation duration has been": [
@@ -1085,32 +1258,6 @@
    {
     "date": "2026-08-13",
     "value": 22.5
-   }
-  ],
-  "fusion-repeater:damage": [
-   {
-    "date": "2026-08-12",
-    "value": 16.0
-   },
-   {
-    "date": "2026-08-13",
-    "value": 16.0
-   }
-  ],
-  "fusion-repeater:cooldown": [
-   {
-    "date": "2026-08-12",
-    "value": 4.0
-   },
-   {
-    "date": "2026-08-13",
-    "value": 4.0
-   }
-  ],
-  "propulsors:fuel drain rate": [
-   {
-    "date": "2026-08-12",
-    "value": 25.0
    }
   ],
   "propulsors:fuel regen rate": [
