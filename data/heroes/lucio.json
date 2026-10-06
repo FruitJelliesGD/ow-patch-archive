@@ -7,6 +7,64 @@
  "role": "support",
  "timeline": [
   {
+   "patch": "en-2026-10-06-1",
+   "date": "2026-10-06",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10",
+   "patch_title": "Overwatch Retail Patch Notes – October 6, 2026",
+   "kind": "ability",
+   "dimension": "ability",
+   "mode": "standard",
+   "ability_slug": "sound-barrier",
+   "ability_en": "Sound Barrier",
+   "ability_cn": "音障",
+   "text_en": "Duration increased from 5 to 6 seconds.",
+   "text_cn": null,
+   "before": 5.0,
+   "after": 6.0,
+   "by": 1.0,
+   "by_pct": null,
+   "metric": "duration",
+   "unit": "s"
+  },
+  {
+   "patch": "en-2026-10-06-1",
+   "date": "2026-10-06",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10",
+   "patch_title": "Overwatch Retail Patch Notes – October 6, 2026",
+   "kind": "perk",
+   "dimension": "perk",
+   "mode": "standard",
+   "perk_slug": "beat-drop",
+   "perk_en": "Beat Drop",
+   "perk_cn": null,
+   "status": "changed",
+   "lines_en": [
+    "Amp It Up is now active for 4 seconds after casting Sound Barrier."
+   ],
+   "lines_cn": []
+  },
+  {
+   "patch": "en-2026-10-06-1",
+   "date": "2026-10-06",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/10",
+   "patch_title": "Overwatch Retail Patch Notes – October 6, 2026",
+   "kind": "general",
+   "dimension": "other",
+   "subject": null,
+   "mode": "standard",
+   "text_en": "Head hit volume increased from 13.2 to 16.",
+   "text_cn": null,
+   "before": 13.2,
+   "after": 16.0,
+   "by": 2.8,
+   "by_pct": null,
+   "metric": "head hit volume",
+   "unit": null
+  },
+  {
    "patch": "cn-2026-07-15-1",
    "date": "2026-07-15",
    "site": "cn",
@@ -4940,6 +4998,20 @@
   }
  ],
  "values": {
+  "sound-barrier:duration": [
+   {
+    "date": "2026-05-12",
+    "value": 5.0
+   },
+   {
+    "date": "2026-05-13",
+    "value": 5.0
+   },
+   {
+    "date": "2026-10-06",
+    "value": 6.0
+   }
+  ],
   "sonic-amplifier:每枚射弹伤害": [
    {
     "date": "2026-07-15",
@@ -4960,16 +5032,6 @@
    {
     "date": "2026-05-13",
     "value": 625.0
-   }
-  ],
-  "sound-barrier:duration": [
-   {
-    "date": "2026-05-12",
-    "value": 5.0
-   },
-   {
-    "date": "2026-05-13",
-    "value": 5.0
    }
   ],
   "sound-barrier:overhealth": [
