@@ -15,8 +15,8 @@
    "kind": "ability",
    "dimension": "ability",
    "mode": "standard",
-   "ability_slug": "acrobatics",
-   "ability_en": null,
+   "ability_slug": "swift-strike",
+   "ability_en": "Swift Strike",
    "ability_cn": "影",
    "text_en": null,
    "text_cn": "伤害从50点提高至60点",
@@ -80,7 +80,7 @@
    "mode": "standard",
    "ability_slug": "swift-strike",
    "ability_en": "Swift Strike",
-   "ability_cn": null,
+   "ability_cn": "影",
    "text_en": "Damage increased from 50 to 60.",
    "text_cn": null,
    "before": 50.0,
@@ -4030,7 +4030,7 @@
    "mode": "standard",
    "ability_slug": "swift-strike",
    "ability_en": "Swift Strike",
-   "ability_cn": null,
+   "ability_cn": "影",
    "text_en": "No longer deals damage to traps like Widowmaker's Venom Mine or Junkrat's Steel Trap",
    "text_cn": null,
    "before": null,
@@ -4051,7 +4051,7 @@
    "mode": "standard",
    "ability_slug": "swift-strike",
    "ability_en": "Swift Strike",
-   "ability_cn": null,
+   "ability_cn": "影",
    "text_en": "No longer bypasses Junkrat's Steel Trap",
    "text_cn": null,
    "before": null,
@@ -4072,7 +4072,7 @@
    "mode": "standard",
    "ability_slug": "swift-strike",
    "ability_en": "Swift Strike",
-   "ability_cn": null,
+   "ability_cn": "影",
    "text_en": "No longer interrupts quick melee attacks",
    "text_cn": null,
    "before": null,
@@ -4124,7 +4124,11 @@
   }
  ],
  "values": {
-  "acrobatics:damage": [
+  "swift-strike:damage": [
+   {
+    "date": "2026-10-06",
+    "value": 60.0
+   },
    {
     "date": "2026-10-07",
     "value": 60.0
@@ -4142,12 +4146,6 @@
    {
     "date": "2026-10-07",
     "value": 100.0
-   }
-  ],
-  "swift-strike:damage": [
-   {
-    "date": "2026-10-06",
-    "value": 60.0
    }
   ],
   "deflect:cooldown": [
