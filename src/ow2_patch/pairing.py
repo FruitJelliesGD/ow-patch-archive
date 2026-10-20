@@ -16,6 +16,7 @@ from dataclasses import dataclass, field
 from datetime import date
 
 from .pipeline import _is_balance_hero
+from .schema import INDEX_SCHEMA_VERSION
 
 _MONTHS = {
     "jan": 1, "feb": 2, "mar": 3, "apr": 4, "may": 5, "jun": 6,
@@ -586,7 +587,11 @@ def build_patches_index(data_dir: pathlib.Path, result: PairResult) -> None:
         })
 
     index.sort(key=lambda e: (e["date"], e["id"]), reverse=True)
-    out = {"updated": _latest_patch_date(data_dir), "patches": index}
+    out = {
+        "schema_version": INDEX_SCHEMA_VERSION,
+        "updated": _latest_patch_date(data_dir),
+        "patches": index,
+    }
     with open(data_dir / "patches_index.json", "w", encoding="utf-8") as fh:
         json.dump(out, fh, ensure_ascii=False, indent=1)
 

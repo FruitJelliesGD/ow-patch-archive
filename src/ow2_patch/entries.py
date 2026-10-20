@@ -13,6 +13,8 @@ from __future__ import annotations
 import json
 import pathlib
 
+from .schema import INDEX_SCHEMA_VERSION
+
 DIM_ORDER = ["weapon", "ability", "perk", "hero_attr", "hero"]
 
 # Mirrors web/app.js ATTR_LABEL (hero-attribute display names).
@@ -65,7 +67,11 @@ def build_official_edits(data_dir: pathlib.Path) -> dict:
                 updated = rec["ts"]
     for events in edits.values():
         events.sort(key=lambda e: e["ts"])
-    return {"updated": updated, "edits": edits}
+    return {
+        "schema_version": INDEX_SCHEMA_VERSION,
+        "updated": updated,
+        "edits": edits,
+    }
 
 
 def write_official_edits(data_dir: pathlib.Path, edits: dict) -> None:
@@ -175,7 +181,11 @@ def build_entries_index(data_dir: pathlib.Path, official_edits: dict | None = No
 
     dim_index = {dim: i for i, dim in enumerate(DIM_ORDER)}
     entries.sort(key=lambda e: (dim_index.get(e["dimension"], 99), e["hero_slug"], e["slug"] or ""))
-    return {"updated": updated, "entries": entries}
+    return {
+        "schema_version": INDEX_SCHEMA_VERSION,
+        "updated": updated,
+        "entries": entries,
+    }
 
 
 def write_entries_index(data_dir: pathlib.Path, index: dict) -> None:

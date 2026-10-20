@@ -112,7 +112,7 @@ def test_collect_map_refs_section_scoped(tmp_path):
     assert refs[("map", "en-2026-08-11-1/s1/0-before")][0].endswith("b-b.jpg")
 
 
-def test_map_downloads_into_maps_dir(tmp_path, monkeypatch):
+def _map_patch(tmp_path):
     d = tmp_path / "patches" / "en"
     d.mkdir(parents=True)
     (d / "2026-08-11-1.json").write_text(json.dumps({
@@ -122,9 +122,24 @@ def test_map_downloads_into_maps_dir(tmp_path, monkeypatch):
              "after": "https://x/1.After.jpg"},
         ]}],
     }), encoding="utf-8")
+
+
+def test_maps_are_skipped_by_default(tmp_path, monkeypatch):
+    """web/maps/ 是 web/assets/maps 的重复副本（约 73MB），默认不再下载。"""
+    _map_patch(tmp_path)
+    out = tmp_path / "icons"
+    monkeypatch.setattr(di, "_fetch", lambda url: b"\xff\xd8\xffjpeg")
+
+    assert di.download_icons(tmp_path, out) == 0
+    assert not (out.parent / "maps").exists()
+
+
+def test_maps_download_when_opted_in(tmp_path, monkeypatch):
+    _map_patch(tmp_path)
     out = tmp_path / "icons"  # maps are page screenshots: sibling of the icon dir
     monkeypatch.setattr(di, "_fetch", lambda url: b"\xff\xd8\xffjpeg")
-    assert di.download_icons(tmp_path, out) == 2
+
+    assert di.download_icons(tmp_path, out, include_maps=True) == 2
     assert (out.parent / "maps" / "en-2026-08-11-1" / "s0" / "0-before.png").exists()
     assert (out.parent / "maps" / "en-2026-08-11-1" / "s0" / "0-after.png").exists()
 

@@ -7,6 +7,10 @@ on:
     # 漏检由每日 watchdog 自愈兜底；告警 Issue 去重。
     - cron: "*/30 * * * *"
   workflow_dispatch:
+  repository_dispatch:
+    # 本地 owpatch-tool 发现新补丁后立即触发本工作流（见 docs/compose/spec/local-dispatch.md）。
+    # 归档仍由本工作流自行抓取官网，本地只提供"该跑了"的信号 + 日期校验。
+    types: [owpatch-local-detect]
 
 permissions:
   contents: write
@@ -29,9 +33,22 @@ jobs:
       - name: Install
         run: pip install .
 
+      # 触发来源的完整 payload 落到日志里，便于追溯"这次跑是本地工具叫起来的"
+      - name: Show dispatch payload
+        if: github.event_name == 'repository_dispatch'
+        env:
+          PAYLOAD: ${{ toJson(github.event.client_payload) }}
+        run: echo "client_payload=$PAYLOAD"
+
+      # 本地已推送过通知时跳过邮件（notify=false），避免双份提醒
       - name: Run pipeline (fast scan of recent 2 months)
         id: pipeline
-        run: python tools/run.py --data data --months 2 --notify-out notify-fast.json --changed-out notify-changed-fast.json --send-email --fail-on-error
+        run: |
+          python tools/run.py --data data --months 2 \
+            --notify-out notify-fast.json \
+            --changed-out notify-changed-fast.json \
+            ${{ (github.event_name != 'repository_dispatch' || github.event.client_payload.notify) && '--send-email' || '' }} \
+            --fail-on-error
         env:
           SMTP_HOST: ${{ secrets.SMTP_HOST }}
           SMTP_PORT: ${{ secrets.SMTP_PORT }}
@@ -41,6 +58,32 @@ jobs:
 
       - name: Download patch icons
         run: python tools/download_icons.py --data data --out web/assets --marker notify-icons-fast.json || true
+
+      # 被本地触发时校验"本地看到的日期"确实进了归档；解析坏掉不会静默变成全绿
+      - name: Verify dispatched dates landed in the archive
+        if: github.event_name == 'repository_dispatch'
+        env:
+          DATES: ${{ join(github.event.client_payload.dates, ' ') }}
+          SITES: ${{ join(github.event.client_payload.sites, ' ') }}
+        run: |
+          python - <<'PY'
+          import json, os, sys
+
+          dates = [d for d in os.environ.get("DATES", "").split() if d]
+          sites = [s for s in os.environ.get("SITES", "").split() if s]
+          if not dates:
+              print("no dates in payload; skip verification")
+              sys.exit(0)
+          sites = sites or ["en", "cn"]
+          manifest = json.load(open("data/manifest.json", encoding="utf-8"))
+          archived = {(v.get("site"), v.get("date"))
+                      for v in manifest.values() if isinstance(v, dict)}
+          missing = [(s, d) for s in sites for d in dates if (s, d) not in archived]
+          if missing:
+              print("ERROR: dispatched dates missing from archive:", missing)
+              sys.exit(1)
+          print("verified dispatched dates:", [f"{s} {d}" for s in sites for d in dates])
+          PY
 
       - name: Commit new/changed data
         if: hashFiles('notify-changed-fast.json') != '' || hashFiles('notify-icons-fast.json') != ''
@@ -53,8 +96,11 @@ jobs:
             git push
           fi
 
+      # 本地触发的运行默认静默（本地工具已推送）；notify=true 时才照常开 Issue
       - name: Open GitHub issue
-        if: hashFiles('notify-fast.json') != ''
+        if: |
+          (github.event_name != 'repository_dispatch' || github.event.client_payload.notify == true) &&
+          hashFiles('notify-fast.json') != ''
         env:
           GH_TOKEN: ${{ github.token }}
         run: |

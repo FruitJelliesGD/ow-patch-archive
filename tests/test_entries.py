@@ -12,6 +12,7 @@ from ow2_patch.entries import (
     write_entries_index,
     write_official_edits,
 )
+from ow2_patch.schema import INDEX_SCHEMA_VERSION
 
 REAL_DATA = pathlib.Path(__file__).resolve().parent.parent / "data"
 
@@ -84,7 +85,10 @@ def test_official_edits_groups_modified_only(tmp_path):
 def test_official_edits_missing_changelog(tmp_path):
     data_dir = tmp_path / "data"
     data_dir.mkdir()
-    assert build_official_edits(data_dir) == {"updated": "", "edits": {}}
+    result = build_official_edits(data_dir)
+    assert result["updated"] == ""
+    assert result["edits"] == {}
+    assert result["schema_version"] == INDEX_SCHEMA_VERSION
 
 
 # ---------- build_entries_index (synthetic) ----------

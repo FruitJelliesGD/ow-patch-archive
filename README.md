@@ -33,6 +33,25 @@
 - **跨站数据对齐**：英文与中文补丁自动配对（`data/patch_pairs.json`），技能/威能名称中英映射自动学习（`data/ability_map.json`），同一技能的改动历史跨站合并为一条，不再产生碎片化分组。
 - **CLI 查询**：`python tools/query.py 士兵76`。
 
+## 与本地工具协作（owpatch-tool）
+
+本仓库是**云端数据引擎**（抓取 + 结构化 + 双语配对 + 静态站）；本地工具
+[`owpatch-tool`](https://github.com/FruitJelliesGD/astrbot_plugin_owpatch) 是**快速发现器 + 本地看板**：
+
+- 本地每分钟抓一次官网首页（比 Actions 的 30 分钟调度快），发现新补丁后通过
+  `repository_dispatch` **立即触发** `monitor-fast`，归档仍由本仓库自行抓取完成；
+  详见 [`docs/compose/spec/local-dispatch.md`](docs/compose/spec/local-dispatch.md)。
+- 触发时默认 `notify=false`：本次运行不重复开 Issue / 发邮件（本地已推送）；
+  每日 `monitor` 全量扫描与 `watchdog` 仍照旧通知。
+- 本地工具的 WebUI 直接读取本仓库发布的 `data/*.json`（raw 或 Pages），
+  提供时间浏览、补丁结构化详情、英雄时间线与词条检索。
+- 数据契约：`data/patches_index.json` / `entries_index.json` / `heroes_index.json` /
+  `official_edits.json` 均带 `schema_version`（当前为 `1`，见 `src/ow2_patch/schema.py`），
+  只在破坏性变更时递增；消费方需容忍字段缺失并警告更高版本。
+
+启用方式：在本地工具里配置一个仅有本仓库写权限的 fine-grained PAT
+（环境变量 `OWPATCH_GITHUB_TOKEN`，或 WebUI 设置页保存到本地 `ui-config.toml`）。
+
 ## 目录结构
 
 ```

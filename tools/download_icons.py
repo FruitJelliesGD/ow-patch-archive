@@ -98,12 +98,21 @@ def download_icons(
     out_dir: pathlib.Path,
     dry_run: bool = False,
     marker: pathlib.Path | None = None,
+    include_maps: bool = False,
 ) -> int:
-    """Fetch missing icons; returns the number of newly downloaded files."""
+    """Fetch missing icons; returns the number of newly downloaded files.
+
+    Map before/after screenshots (`web/maps/`) are skipped by default: the site
+    uses the copies under `web/assets/maps/`, and the old duplicate tree was
+    ~73MB of pure churn in every scan commit. Pass ``include_maps=True`` (CLI:
+    ``--include-maps``) if you really want the legacy location.
+    """
     refs = collect_icon_refs(data_dir)
     subdir = {"hero": "heroes", "ability": "abilities", "map": "maps"}
     new: list[str] = []
     for (kind, key), (url, date) in sorted(refs.items()):
+        if kind == "map" and not include_maps:
+            continue
         # maps are page-level screenshots, not icons: they live one level up
         # (web/assets/maps) next to the icon tree (web/assets/icons)
         base = out_dir if kind != "map" else out_dir.parent
@@ -144,8 +153,11 @@ def main(argv: list[str] | None = None) -> int:
                         help="only report which icons would be downloaded")
     parser.add_argument("--marker", type=pathlib.Path, default=None,
                         help="write a marker JSON here when new icons were downloaded")
+    parser.add_argument("--include-maps", action="store_true",
+                        help="also download map screenshots into web/maps (legacy duplicate)")
     args = parser.parse_args(argv)
-    download_icons(args.data, args.out, dry_run=args.dry_run, marker=args.marker)
+    download_icons(args.data, args.out, dry_run=args.dry_run, marker=args.marker,
+                   include_maps=args.include_maps)
     return 0
 
 

@@ -26,6 +26,7 @@ from .model import Patch, patch_to_dict
 from .names import NameResolver
 from .parse import parse_patch_notes
 from .render import render_md
+from .schema import INDEX_SCHEMA_VERSION
 
 
 @dataclass
@@ -476,6 +477,7 @@ def build_hero_files(data_dir: pathlib.Path, resolver: NameResolver | None = Non
             if patch_data.get("date", "") > latest:
                 latest = patch_data["date"]
     index = {
+        "schema_version": INDEX_SCHEMA_VERSION,
         "updated": f"{latest}T00:00:00Z",
         "heroes": sorted(meta.values(), key=lambda h: h["slug"]),
     }

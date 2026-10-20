@@ -21,6 +21,7 @@ import argparse
 import json
 import pathlib
 import sys
+from datetime import date
 
 from ow2_patch.diff import ChangeEvent
 from ow2_patch.fetch import Fetcher
@@ -30,9 +31,16 @@ from ow2_patch.pipeline import RunResult, all_months, run_pipeline
 DEFAULT_DATA = pathlib.Path(__file__).resolve().parent.parent / "data"
 
 
-def recent_months(months: list[tuple[str, int, int]], count: int) -> list[tuple[str, int, int]]:
-    """Keep only the last `count` distinct months across sites (today-count .. today)."""
-    today = __import__("datetime").date.today()
+def recent_months(
+    months: list[tuple[str, int, int]],
+    count: int,
+    today: date | None = None,
+) -> list[tuple[str, int, int]]:
+    """Keep only the last `count` distinct months across sites (today-count .. today).
+
+    `today` is injectable so tests do not depend on the wall clock.
+    """
+    today = today or date.today()
     cutoff_y, cutoff_m = today.year, today.month
     for _ in range(count - 1):
         cutoff_m -= 1

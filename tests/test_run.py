@@ -112,9 +112,29 @@ def test_main_force_rewrite_flag(monkeypatch, tmp_path):
 
 
 def test_recent_months():
+    from datetime import date
+
     months = [("en", 2026, 8), ("en", 2026, 7), ("en", 2026, 6), ("en", 2026, 5)]
-    kept = run.recent_months(months, 2)
+    kept = run.recent_months(months, 2, today=date(2026, 8, 20))
     assert kept == [("en", 2026, 8), ("en", 2026, 7)]
+
+
+def test_recent_months_crosses_year_boundary():
+    from datetime import date
+
+    months = [("en", 2025, 12), ("en", 2025, 11), ("en", 2025, 10)]
+    kept = run.recent_months(months, 3, today=date(2026, 1, 5))
+    # 最近 3 个月 = 2026-01, 2025-12, 2025-11 → 2025-10 被裁掉
+    assert kept == [("en", 2025, 12), ("en", 2025, 11)]
+    assert run.recent_months(months, 4, today=date(2026, 1, 5)) == months
+
+
+def test_recent_months_keeps_both_sites():
+    from datetime import date
+
+    months = [("en", 2026, 8), ("cn", 2026, 8), ("en", 2026, 7)]
+    kept = run.recent_months(months, 1, today=date(2026, 8, 20))
+    assert kept == [("en", 2026, 8), ("cn", 2026, 8)]
 
 
 @pytest.fixture(autouse=True)
