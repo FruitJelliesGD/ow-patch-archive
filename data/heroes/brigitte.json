@@ -7,6 +7,82 @@
  "role": "support",
  "timeline": [
   {
+   "patch": "cn-2026-09-09-1",
+   "date": "2026-09-09",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/09/",
+   "patch_title": "《守望先锋》补丁说明——2026年9月9日",
+   "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
+   "mode": "standard",
+   "text_en": null,
+   "text_cn": "生命值从200点降低至175点。",
+   "before": 200.0,
+   "after": 175.0,
+   "by": -25.0,
+   "by_pct": null,
+   "metric": "health",
+   "unit": "hp"
+  },
+  {
+   "patch": "cn-2026-09-09-1",
+   "date": "2026-09-09",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/09/",
+   "patch_title": "《守望先锋》补丁说明——2026年9月9日",
+   "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
+   "mode": "standard",
+   "text_en": null,
+   "text_cn": "护甲从50点提升至75点。",
+   "before": 50.0,
+   "after": 75.0,
+   "by": 25.0,
+   "by_pct": null,
+   "metric": "armor",
+   "unit": "hp"
+  },
+  {
+   "patch": "en-2026-09-08-1",
+   "date": "2026-09-08",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09",
+   "patch_title": "Overwatch Retail Patch Notes – September 8, 2026",
+   "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
+   "mode": "standard",
+   "text_en": "Health reduced from 200 to 175.",
+   "text_cn": null,
+   "before": 200.0,
+   "after": 175.0,
+   "by": -25.0,
+   "by_pct": null,
+   "metric": "health",
+   "unit": "hp"
+  },
+  {
+   "patch": "en-2026-09-08-1",
+   "date": "2026-09-08",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09",
+   "patch_title": "Overwatch Retail Patch Notes – September 8, 2026",
+   "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
+   "mode": "standard",
+   "text_en": "Armor increased from 50 to 75.",
+   "text_cn": null,
+   "before": 50.0,
+   "after": 75.0,
+   "by": 25.0,
+   "by_pct": null,
+   "metric": "armor",
+   "unit": "hp"
+  },
+  {
    "patch": "cn-2026-07-15-1",
    "date": "2026-07-15",
    "site": "cn",
@@ -4544,6 +4620,30 @@
   }
  ],
  "values": {
+  "attr:health:health": [
+   {
+    "date": "2024-02-13",
+    "value": 200.0
+   },
+   {
+    "date": "2026-09-08",
+    "value": 175.0
+   },
+   {
+    "date": "2026-09-09",
+    "value": 175.0
+   }
+  ],
+  "attr:health:armor": [
+   {
+    "date": "2026-09-08",
+    "value": 75.0
+   },
+   {
+    "date": "2026-09-09",
+    "value": 75.0
+   }
+  ],
   "inspire:持续治疗量": [
    {
     "date": "2026-07-15",
@@ -4618,12 +4718,6 @@
    {
     "date": "2024-02-13",
     "value": 45.0
-   }
-  ],
-  "attr:health:health": [
-   {
-    "date": "2024-02-13",
-    "value": 200.0
    }
   ],
   "whip-shot:damage": [

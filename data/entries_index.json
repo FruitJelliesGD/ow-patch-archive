@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "updated": "2026-08-20T00:00:00Z",
+ "updated": "2026-10-13T00:00:00Z",
  "entries": [
   {
    "key": "ana::weapon::biotic-rifle",
@@ -192,9 +192,9 @@
     "聚变连发枪",
     "Fusion Repeater"
    ],
-   "count": 8,
+   "count": 12,
    "first_date": "2026-08-12",
-   "last_date": "2026-08-15",
+   "last_date": "2026-09-18",
    "edited": false
   },
   {
@@ -212,10 +212,30 @@
     "等离子剑",
     "Plasma Saber"
    ],
-   "count": 2,
+   "count": 4,
    "first_date": "2026-08-12",
-   "last_date": "2026-08-13",
-   "edited": false
+   "last_date": "2026-09-09",
+   "edited": true
+  },
+  {
+   "key": "d-mon::weapon::portable-fusion-repeater",
+   "dimension": "weapon",
+   "kind": "ability",
+   "hero_slug": "d-mon",
+   "hero_cn": "D.Mon",
+   "hero_en": "D.Mon",
+   "hero_role": "tank",
+   "name_cn": "手提聚变连发枪",
+   "name_en": "Portable Fusion Repeater",
+   "slug": "portable-fusion-repeater",
+   "variants": [
+    "手提聚变连发枪",
+    "Portable Fusion Repeater"
+   ],
+   "count": 4,
+   "first_date": "2026-09-08",
+   "last_date": "2026-09-09",
+   "edited": true
   },
   {
    "key": "d-va::weapon::fusion-cannons",
@@ -842,9 +862,9 @@
     "爆裂枪",
     "Scrap Gun"
    ],
-   "count": 28,
+   "count": 29,
    "first_date": "2017-02-27",
-   "last_date": "2026-04-15",
+   "last_date": "2026-10-13",
    "edited": false
   },
   {
@@ -867,6 +887,46 @@
    "edited": false
   },
   {
+   "key": "roadhog::weapon::scrap-gun-primary-fire",
+   "dimension": "weapon",
+   "kind": "ability",
+   "hero_slug": "roadhog",
+   "hero_cn": "路霸",
+   "hero_en": "Roadhog",
+   "hero_role": "tank",
+   "name_cn": "爆裂枪——主要攻击模式",
+   "name_en": "Scrap Gun – Primary Fire",
+   "slug": "scrap-gun-primary-fire",
+   "variants": [
+    "爆裂枪——主要攻击模式",
+    "Scrap Gun – Primary Fire"
+   ],
+   "count": 22,
+   "first_date": "2026-10-06",
+   "last_date": "2026-10-07",
+   "edited": false
+  },
+  {
+   "key": "roadhog::weapon::scrap-gun-secondary-fire",
+   "dimension": "weapon",
+   "kind": "ability",
+   "hero_slug": "roadhog",
+   "hero_cn": "路霸",
+   "hero_en": "Roadhog",
+   "hero_role": "tank",
+   "name_cn": "爆裂枪——辅助攻击模式",
+   "name_en": "Scrap Gun – Secondary Fire",
+   "slug": "scrap-gun-secondary-fire",
+   "variants": [
+    "爆裂枪——辅助攻击模式",
+    "Scrap Gun – Secondary Fire"
+   ],
+   "count": 2,
+   "first_date": "2026-10-06",
+   "last_date": "2026-10-07",
+   "edited": false
+  },
+  {
    "key": "sierra::weapon::helix-rifle",
    "dimension": "weapon",
    "kind": "ability",
@@ -881,10 +941,10 @@
     "螺旋步枪",
     "Helix Rifle"
    ],
-   "count": 5,
+   "count": 9,
    "first_date": "2026-04-17",
-   "last_date": "2026-06-17",
-   "edited": false
+   "last_date": "2026-09-09",
+   "edited": true
   },
   {
    "key": "sojourn::weapon::railgun",
@@ -953,15 +1013,16 @@
    "hero_cn": "黑影",
    "hero_en": "Sombra",
    "hero_role": "damage",
-   "name_cn": null,
+   "name_cn": "自动手枪",
    "name_en": "Machine Pistol",
    "slug": "machine-pistol",
    "variants": [
+    "自动手枪",
     "Machine Pistol"
    ],
-   "count": 7,
+   "count": 16,
    "first_date": "2018-02-27",
-   "last_date": "2023-10-10",
+   "last_date": "2026-10-13",
    "edited": false
   },
   {
@@ -1011,16 +1072,17 @@
    "hero_cn": "托比昂",
    "hero_en": "Torbjörn",
    "hero_role": "damage",
-   "name_cn": null,
+   "name_cn": "铆钉枪",
    "name_en": "Rivet Gun",
    "slug": "rivet-gun",
    "variants": [
+    "铆钉枪",
     "Rivet Gun"
    ],
-   "count": 42,
+   "count": 44,
    "first_date": "2017-02-27",
-   "last_date": "2023-10-10",
-   "edited": false
+   "last_date": "2026-09-09",
+   "edited": true
   },
   {
    "key": "tracer::weapon::pulse-pistols",
@@ -1056,10 +1118,10 @@
     "斩地巨剑",
     "Sundering Blade"
    ],
-   "count": 2,
+   "count": 6,
    "first_date": "2026-06-16",
-   "last_date": "2026-06-17",
-   "edited": false
+   "last_date": "2026-09-09",
+   "edited": true
   },
   {
    "key": "venture::weapon::smart-excavator",
@@ -1249,10 +1311,11 @@
    "hero_cn": "安娜",
    "hero_en": "Ana",
    "hero_role": "support",
-   "name_cn": null,
+   "name_cn": "头晕目眩",
    "name_en": "Groggy",
    "slug": "groggy",
    "variants": [
+    "头晕目眩",
     "Groggy"
    ],
    "count": 1,
@@ -1374,10 +1437,10 @@
     "熠闪舞",
     "Dancing Blaze"
    ],
-   "count": 4,
+   "count": 6,
    "first_date": "2026-04-14",
-   "last_date": "2026-06-17",
-   "edited": false
+   "last_date": "2026-09-09",
+   "edited": true
   },
   {
    "key": "anran::ability::fan-the-flames",
@@ -1418,6 +1481,26 @@
    "first_date": "2026-03-10",
    "last_date": "2026-06-17",
    "edited": false
+  },
+  {
+   "key": "anran::ability::vermillion-revival",
+   "dimension": "ability",
+   "kind": "ability",
+   "hero_slug": "anran",
+   "hero_cn": "安燃",
+   "hero_en": "Anran",
+   "hero_role": "damage",
+   "name_cn": "朱魂返",
+   "name_en": "Vermillion Revival",
+   "slug": "vermillion-revival",
+   "variants": [
+    "朱魂返",
+    "Vermillion Revival"
+   ],
+   "count": 2,
+   "first_date": "2026-09-08",
+   "last_date": "2026-09-09",
+   "edited": true
   },
   {
    "key": "ashe::ability::airburst",
@@ -1671,10 +1754,10 @@
     "维生力场",
     "Immortality Field"
    ],
-   "count": 11,
+   "count": 17,
    "first_date": "2019-05-21",
-   "last_date": "2024-03-08",
-   "edited": false
+   "last_date": "2026-09-09",
+   "edited": true
   },
   {
    "key": "baptiste::ability::regenerative-burst",
@@ -1918,15 +2001,16 @@
    "hero_cn": "堡垒",
    "hero_en": "Bastion",
    "hero_role": "damage",
-   "name_cn": null,
+   "name_cn": "切换模式",
    "name_en": "Reconfigure",
    "slug": "reconfigure",
    "variants": [
+    "切换模式",
     "Reconfigure"
    ],
-   "count": 2,
+   "count": 4,
    "first_date": "2022-12-06",
-   "last_date": "2023-09-21",
+   "last_date": "2026-10-07",
    "edited": false
   },
   {
@@ -2239,9 +2323,9 @@
     "神射手",
     "Deadeye"
    ],
-   "count": 11,
+   "count": 13,
    "first_date": "2016-09-02",
-   "last_date": "2024-09-17",
+   "last_date": "2026-10-07",
    "edited": false
   },
   {
@@ -2361,6 +2445,46 @@
    "edited": false
   },
   {
+   "key": "d-mon::ability::call-mech",
+   "dimension": "ability",
+   "kind": "ability",
+   "hero_slug": "d-mon",
+   "hero_cn": "D.Mon",
+   "hero_en": "D.Mon",
+   "hero_role": "tank",
+   "name_cn": "呼叫机甲",
+   "name_en": "Call Mech",
+   "slug": "call-mech",
+   "variants": [
+    "呼叫机甲",
+    "Call Mech"
+   ],
+   "count": 4,
+   "first_date": "2026-09-08",
+   "last_date": "2026-09-09",
+   "edited": true
+  },
+  {
+   "key": "d-mon::ability::power-barrier",
+   "dimension": "ability",
+   "kind": "ability",
+   "hero_slug": "d-mon",
+   "hero_cn": "D.Mon",
+   "hero_en": "D.Mon",
+   "hero_role": "tank",
+   "name_cn": "强力屏障",
+   "name_en": "Power Barrier",
+   "slug": "power-barrier",
+   "variants": [
+    "强力屏障",
+    "Power Barrier"
+   ],
+   "count": 4,
+   "first_date": "2026-09-08",
+   "last_date": "2026-09-09",
+   "edited": true
+  },
+  {
    "key": "d-mon::ability::propulsors",
    "dimension": "ability",
    "kind": "ability",
@@ -2375,9 +2499,9 @@
     "助推器",
     "Propulsors"
    ],
-   "count": 4,
+   "count": 6,
    "first_date": "2026-08-12",
-   "last_date": "2026-08-13",
+   "last_date": "2026-09-18",
    "edited": false
   },
   {
@@ -2447,10 +2571,11 @@
    "hero_cn": "D.Va",
    "hero_en": "D.Va",
    "hero_role": "tank",
-   "name_cn": null,
+   "name_cn": "呼叫机甲",
    "name_en": "Call Mech",
    "slug": "call-mech",
    "variants": [
+    "呼叫机甲",
     "Call Mech"
    ],
    "count": 6,
@@ -2551,9 +2676,9 @@
     "微型飞弹",
     "Micro Missiles"
    ],
-   "count": 6,
+   "count": 8,
    "first_date": "2018-04-10",
-   "last_date": "2026-05-13",
+   "last_date": "2026-10-07",
    "edited": false
   },
   {
@@ -2615,6 +2740,82 @@
    "edited": false
   },
   {
+   "key": "doctrine::ability::deliverance",
+   "dimension": "ability",
+   "kind": "ability",
+   "hero_slug": "doctrine",
+   "hero_cn": null,
+   "hero_en": "Doctrine",
+   "hero_role": "support",
+   "name_cn": null,
+   "name_en": "Deliverance",
+   "slug": "deliverance",
+   "variants": [
+    "Deliverance"
+   ],
+   "count": 3,
+   "first_date": "2026-10-06",
+   "last_date": "2026-10-06",
+   "edited": false
+  },
+  {
+   "key": "doctrine::ability::eternal-scepter",
+   "dimension": "ability",
+   "kind": "ability",
+   "hero_slug": "doctrine",
+   "hero_cn": null,
+   "hero_en": "Doctrine",
+   "hero_role": "support",
+   "name_cn": null,
+   "name_en": "Eternal Scepter",
+   "slug": "eternal-scepter",
+   "variants": [
+    "Eternal Scepter"
+   ],
+   "count": 1,
+   "first_date": "2026-10-13",
+   "last_date": "2026-10-13",
+   "edited": false
+  },
+  {
+   "key": "doctrine::ability::invigorating-drones",
+   "dimension": "ability",
+   "kind": "ability",
+   "hero_slug": "doctrine",
+   "hero_cn": null,
+   "hero_en": "Doctrine",
+   "hero_role": "support",
+   "name_cn": null,
+   "name_en": "Invigorating Drones",
+   "slug": "invigorating-drones",
+   "variants": [
+    "Invigorating Drones"
+   ],
+   "count": 2,
+   "first_date": "2026-10-06",
+   "last_date": "2026-10-13",
+   "edited": false
+  },
+  {
+   "key": "doctrine::ability::shrouded-momentum",
+   "dimension": "ability",
+   "kind": "ability",
+   "hero_slug": "doctrine",
+   "hero_cn": null,
+   "hero_en": "Doctrine",
+   "hero_role": "support",
+   "name_cn": null,
+   "name_en": "Shrouded Momentum",
+   "slug": "shrouded-momentum",
+   "variants": [
+    "Shrouded Momentum"
+   ],
+   "count": 3,
+   "first_date": "2026-10-06",
+   "last_date": "2026-10-06",
+   "edited": false
+  },
+  {
    "key": "domina::ability::barrier-array",
    "dimension": "ability",
    "kind": "ability",
@@ -2635,6 +2836,26 @@
    "edited": false
   },
   {
+   "key": "domina::ability::crystal-charge",
+   "dimension": "ability",
+   "kind": "ability",
+   "hero_slug": "domina",
+   "hero_cn": "金驭",
+   "hero_en": "Domina",
+   "hero_role": "tank",
+   "name_cn": "爆能水晶",
+   "name_en": "Crystal Charge",
+   "slug": "crystal-charge",
+   "variants": [
+    "爆能水晶",
+    "Crystal Charge"
+   ],
+   "count": 2,
+   "first_date": "2026-10-06",
+   "last_date": "2026-10-07",
+   "edited": false
+  },
+  {
    "key": "domina::ability::panopticon",
    "dimension": "ability",
    "kind": "ability",
@@ -2652,6 +2873,26 @@
    "count": 2,
    "first_date": "2026-08-11",
    "last_date": "2026-08-12",
+   "edited": false
+  },
+  {
+   "key": "domina::ability::reconstruction-passive",
+   "dimension": "ability",
+   "kind": "ability",
+   "hero_slug": "domina",
+   "hero_cn": "金驭",
+   "hero_en": "Domina",
+   "hero_role": "tank",
+   "name_cn": "护盾重构（被动）",
+   "name_en": "Reconstruction (Passive)",
+   "slug": "reconstruction-passive",
+   "variants": [
+    "护盾重构（被动）",
+    "Reconstruction (Passive)"
+   ],
+   "count": 2,
+   "first_date": "2026-10-06",
+   "last_date": "2026-10-07",
    "edited": false
   },
   {
@@ -3085,9 +3326,9 @@
     "赛博手雷",
     "Cyber Frag"
    ],
-   "count": 2,
+   "count": 4,
    "first_date": "2026-05-12",
-   "last_date": "2026-05-13",
+   "last_date": "2026-10-07",
    "edited": false
   },
   {
@@ -3145,10 +3386,10 @@
     "速射弩",
     "Revdraw Crossbow"
    ],
-   "count": 2,
+   "count": 4,
    "first_date": "2026-07-14",
-   "last_date": "2026-07-15",
-   "edited": false
+   "last_date": "2026-09-09",
+   "edited": true
   },
   {
    "key": "freja::ability::take-aim",
@@ -3165,10 +3406,10 @@
     "瞄准射击",
     "Take Aim"
    ],
-   "count": 4,
+   "count": 8,
    "first_date": "2026-07-14",
-   "last_date": "2026-07-15",
-   "edited": false
+   "last_date": "2026-09-09",
+   "edited": true
   },
   {
    "key": "freja::ability::updraft",
@@ -3285,9 +3526,9 @@
     "斩",
     "Dragonblade"
    ],
-   "count": 6,
+   "count": 10,
    "first_date": "2016-09-02",
-   "last_date": "2024-02-13",
+   "last_date": "2026-10-07",
    "edited": false
   },
   {
@@ -3318,15 +3559,16 @@
    "hero_cn": "源氏",
    "hero_en": "Genji",
    "hero_role": "damage",
-   "name_cn": null,
+   "name_cn": "影",
    "name_en": "Swift Strike",
    "slug": "swift-strike",
    "variants": [
+    "影",
     "Swift Strike"
    ],
-   "count": 3,
+   "count": 5,
    "first_date": "2016-09-02",
-   "last_date": "2016-09-02",
+   "last_date": "2026-10-07",
    "edited": false
   },
   {
@@ -3687,6 +3929,57 @@
    "edited": false
   },
   {
+   "key": "hero-d205583e::ability::hero-46bcc475",
+   "dimension": "ability",
+   "kind": "ability",
+   "hero_slug": "hero-d205583e",
+   "hero_cn": "血律",
+   "hero_en": null,
+   "hero_role": "support",
+   "name_cn": "迅影疾行",
+   "name_en": null,
+   "slug": "hero-46bcc475",
+   "variants": [],
+   "count": 3,
+   "first_date": "2026-10-07",
+   "last_date": "2026-10-07",
+   "edited": false
+  },
+  {
+   "key": "hero-d205583e::ability::hero-6db24cbe",
+   "dimension": "ability",
+   "kind": "ability",
+   "hero_slug": "hero-d205583e",
+   "hero_cn": "血律",
+   "hero_en": null,
+   "hero_role": "support",
+   "name_cn": "焕生无人机",
+   "name_en": null,
+   "slug": "hero-6db24cbe",
+   "variants": [],
+   "count": 1,
+   "first_date": "2026-10-07",
+   "last_date": "2026-10-07",
+   "edited": false
+  },
+  {
+   "key": "hero-d205583e::ability::hero-83f00231",
+   "dimension": "ability",
+   "kind": "ability",
+   "hero_slug": "hero-d205583e",
+   "hero_cn": "血律",
+   "hero_en": null,
+   "hero_role": "support",
+   "name_cn": "救赎恩典",
+   "name_en": null,
+   "slug": "hero-83f00231",
+   "variants": [],
+   "count": 3,
+   "first_date": "2026-10-07",
+   "last_date": "2026-10-07",
+   "edited": false
+  },
+  {
    "key": "illari::ability::captive-sun",
    "dimension": "ability",
    "kind": "ability",
@@ -3877,10 +4170,10 @@
     "生物猫爪弹",
     "Biotic Pawjectiles"
    ],
-   "count": 2,
+   "count": 4,
    "first_date": "2026-06-16",
-   "last_date": "2026-06-17",
-   "edited": false
+   "last_date": "2026-09-09",
+   "edited": true
   },
   {
    "key": "jetpack-cat::ability::frenetic-flight",
@@ -3917,10 +4210,10 @@
     "救生索",
     "Lifeline"
    ],
-   "count": 2,
+   "count": 6,
    "first_date": "2026-08-11",
-   "last_date": "2026-08-12",
-   "edited": false
+   "last_date": "2026-09-09",
+   "edited": true
   },
   {
    "key": "jetpack-cat::ability::purr",
@@ -4153,10 +4446,10 @@
     "震荡地雷",
     "Concussion Mine"
    ],
-   "count": 11,
+   "count": 13,
    "first_date": "2017-08-30",
-   "last_date": "2024-11-08",
-   "edited": false
+   "last_date": "2026-09-09",
+   "edited": true
   },
   {
    "key": "junkrat::ability::nitro-boost",
@@ -4166,10 +4459,11 @@
    "hero_cn": "狂鼠",
    "hero_en": "Junkrat",
    "hero_role": "damage",
-   "name_cn": null,
+   "name_cn": "氮气推进",
    "name_en": "Nitro Boost",
    "slug": "nitro-boost",
    "variants": [
+    "氮气推进",
     "Nitro Boost"
    ],
    "count": 1,
@@ -4468,10 +4762,10 @@
     "符",
     "Healing Ofuda"
    ],
-   "count": 7,
+   "count": 11,
    "first_date": "2023-01-24",
-   "last_date": "2026-07-15",
-   "edited": false
+   "last_date": "2026-09-09",
+   "edited": true
   },
   {
    "key": "kiriko::ability::kitsune-rush",
@@ -4507,10 +4801,10 @@
     "铃",
     "Protection Suzu"
    ],
-   "count": 12,
+   "count": 16,
    "first_date": "2022-12-06",
-   "last_date": "2026-05-13",
-   "edited": false
+   "last_date": "2026-09-09",
+   "edited": true
   },
   {
    "key": "kiriko::ability::shuffling",
@@ -4979,9 +5273,9 @@
     "音障",
     "Sound Barrier"
    ],
-   "count": 8,
+   "count": 10,
    "first_date": "2016-07-19",
-   "last_date": "2026-05-13",
+   "last_date": "2026-10-07",
    "edited": false
   },
   {
@@ -5155,10 +5449,10 @@
     "链式步枪",
     "Chainguns"
    ],
-   "count": 4,
+   "count": 10,
    "first_date": "2026-07-14",
-   "last_date": "2026-07-15",
-   "edited": false
+   "last_date": "2026-09-09",
+   "edited": true
   },
   {
    "key": "mauga::ability::combat-fuel",
@@ -7057,9 +7351,9 @@
     "链钩",
     "Chain Hook"
    ],
-   "count": 18,
+   "count": 26,
    "first_date": "2016-09-02",
-   "last_date": "2026-04-23",
+   "last_date": "2026-10-07",
    "edited": false
   },
   {
@@ -7149,10 +7443,11 @@
    "hero_cn": "路霸",
    "hero_en": "Roadhog",
    "hero_role": "tank",
-   "name_cn": null,
+   "name_cn": "废料链钩",
    "name_en": "Scrap Hook",
    "slug": "scrap-hook",
    "variants": [
+    "废料链钩",
     "Scrap Hook"
    ],
    "count": 1,
@@ -7175,9 +7470,29 @@
     "呼吸器",
     "Take a Breather"
    ],
-   "count": 16,
+   "count": 27,
    "first_date": "2017-08-30",
-   "last_date": "2025-03-26",
+   "last_date": "2026-10-13",
+   "edited": false
+  },
+  {
+   "key": "roadhog::ability::trash-compactor",
+   "dimension": "ability",
+   "kind": "ability",
+   "hero_slug": "roadhog",
+   "hero_cn": "路霸",
+   "hero_en": "Roadhog",
+   "hero_role": "tank",
+   "name_cn": "废品压缩器",
+   "name_en": "Trash Compactor",
+   "slug": "trash-compactor",
+   "variants": [
+    "废品压缩器",
+    "Trash Compactor"
+   ],
+   "count": 18,
+   "first_date": "2026-10-06",
+   "last_date": "2026-10-07",
    "edited": false
   },
   {
@@ -7275,10 +7590,10 @@
     "追踪弹",
     "Tracking Shot"
    ],
-   "count": 1,
+   "count": 3,
    "first_date": "2026-04-17",
-   "last_date": "2026-04-17",
-   "edited": false
+   "last_date": "2026-09-09",
+   "edited": true
   },
   {
    "key": "sierra::ability::trailblazer",
@@ -7298,6 +7613,26 @@
    "first_date": "2026-04-17",
    "last_date": "2026-04-17",
    "edited": false
+  },
+  {
+   "key": "sierra::ability::tremor-charge",
+   "dimension": "ability",
+   "kind": "ability",
+   "hero_slug": "sierra",
+   "hero_cn": "西拉",
+   "hero_en": "Sierra",
+   "hero_role": "damage",
+   "name_cn": "震地手雷",
+   "name_en": "Tremor Charge",
+   "slug": "tremor-charge",
+   "variants": [
+    "震地手雷",
+    "Tremor Charge"
+   ],
+   "count": 2,
+   "first_date": "2026-09-08",
+   "last_date": "2026-09-09",
+   "edited": true
   },
   {
    "key": "sigma::ability::accretion",
@@ -7772,6 +8107,26 @@
    "edited": false
   },
   {
+   "key": "sombra::ability::conspirator",
+   "dimension": "ability",
+   "kind": "ability",
+   "hero_slug": "sombra",
+   "hero_cn": "黑影",
+   "hero_en": "Sombra",
+   "hero_role": "damage",
+   "name_cn": "运筹帷幄",
+   "name_en": "Conspirator",
+   "slug": "conspirator",
+   "variants": [
+    "运筹帷幄",
+    "Conspirator"
+   ],
+   "count": 4,
+   "first_date": "2026-10-06",
+   "last_date": "2026-10-07",
+   "edited": false
+  },
+  {
    "key": "sombra::ability::ctrl-alt-esc",
    "dimension": "ability",
    "kind": "ability",
@@ -7791,6 +8146,26 @@
    "edited": false
   },
   {
+   "key": "sombra::ability::cyberspace",
+   "dimension": "ability",
+   "kind": "ability",
+   "hero_slug": "sombra",
+   "hero_cn": "黑影",
+   "hero_en": "Sombra",
+   "hero_role": "damage",
+   "name_cn": "赛博空间",
+   "name_en": "Cyberspace",
+   "slug": "cyberspace",
+   "variants": [
+    "赛博空间",
+    "Cyberspace"
+   ],
+   "count": 16,
+   "first_date": "2026-10-06",
+   "last_date": "2026-10-13",
+   "edited": false
+  },
+  {
    "key": "sombra::ability::emp",
    "dimension": "ability",
    "kind": "ability",
@@ -7798,15 +8173,16 @@
    "hero_cn": "黑影",
    "hero_en": "Sombra",
    "hero_role": "damage",
-   "name_cn": null,
+   "name_cn": "电磁脉冲",
    "name_en": "EMP",
    "slug": "emp",
    "variants": [
+    "电磁脉冲",
     "EMP"
    ],
-   "count": 14,
+   "count": 18,
    "first_date": "2018-02-27",
-   "last_date": "2024-10-28",
+   "last_date": "2026-10-07",
    "edited": false
   },
   {
@@ -7843,9 +8219,29 @@
     "黑客入侵",
     "Hack"
    ],
-   "count": 30,
+   "count": 32,
    "first_date": "2017-01-24",
-   "last_date": "2024-10-28",
+   "last_date": "2026-10-07",
+   "edited": false
+  },
+  {
+   "key": "sombra::ability::hotfix",
+   "dimension": "ability",
+   "kind": "ability",
+   "hero_slug": "sombra",
+   "hero_cn": "黑影",
+   "hero_en": "Sombra",
+   "hero_role": "damage",
+   "name_cn": "在线修复",
+   "name_en": "Hotfix",
+   "slug": "hotfix",
+   "variants": [
+    "在线修复",
+    "Hotfix"
+   ],
+   "count": 24,
+   "first_date": "2026-10-06",
+   "last_date": "2026-10-07",
    "edited": false
   },
   {
@@ -7875,15 +8271,16 @@
    "hero_cn": "黑影",
    "hero_en": "Sombra",
    "hero_role": "damage",
-   "name_cn": null,
+   "name_cn": "相时而动",
    "name_en": "Opportunist",
    "slug": "opportunist",
    "variants": [
+    "相时而动",
     "Opportunist"
    ],
-   "count": 6,
+   "count": 8,
    "first_date": "2018-02-27",
-   "last_date": "2024-10-15",
+   "last_date": "2026-10-07",
    "edited": false
   },
   {
@@ -7941,9 +8338,9 @@
     "位移传动",
     "Translocator"
    ],
-   "count": 19,
+   "count": 29,
    "first_date": "2017-03-21",
-   "last_date": "2024-10-28",
+   "last_date": "2026-10-07",
    "edited": false
   },
   {
@@ -7980,9 +8377,9 @@
     "病毒侵染",
     "Virus"
    ],
-   "count": 7,
+   "count": 9,
    "first_date": "2023-10-10",
-   "last_date": "2024-09-03",
+   "last_date": "2026-10-07",
    "edited": false
   },
   {
@@ -8283,16 +8680,17 @@
    "hero_cn": "秩序之光",
    "hero_en": "Symmetra",
    "hero_role": "damage",
-   "name_cn": null,
+   "name_cn": "传送面板",
    "name_en": "Teleporter",
    "slug": "teleporter",
    "variants": [
+    "传送面板",
     "Teleporter"
    ],
-   "count": 21,
+   "count": 25,
    "first_date": "2016-12-13",
-   "last_date": "2024-12-10",
-   "edited": false
+   "last_date": "2026-09-09",
+   "edited": true
   },
   {
    "key": "torbjorn::ability::anchor-bolts",
@@ -8302,10 +8700,11 @@
    "hero_cn": "托比昂",
    "hero_en": "Torbjörn",
    "hero_role": "damage",
-   "name_cn": null,
+   "name_cn": "锚固螺栓",
    "name_en": "Anchor Bolts",
    "slug": "anchor-bolts",
    "variants": [
+    "锚固螺栓",
     "Anchor Bolts"
    ],
    "count": 1,
@@ -8645,10 +9044,10 @@
     "帕拉蒂尼之牙",
     "Palatine Fang"
    ],
-   "count": 4,
+   "count": 10,
    "first_date": "2026-04-14",
-   "last_date": "2026-07-15",
-   "edited": false
+   "last_date": "2026-09-09",
+   "edited": true
   },
   {
    "key": "vendetta::ability::soaring-slice",
@@ -8669,6 +9068,26 @@
    "first_date": "2026-08-11",
    "last_date": "2026-08-12",
    "edited": false
+  },
+  {
+   "key": "vendetta::ability::whirlwind-dash",
+   "dimension": "ability",
+   "kind": "ability",
+   "hero_slug": "vendetta",
+   "hero_cn": "斩仇",
+   "hero_en": "Vendetta",
+   "hero_role": "damage",
+   "name_cn": "旋风疾步",
+   "name_en": "Whirlwind Dash",
+   "slug": "whirlwind-dash",
+   "variants": [
+    "旋风疾步",
+    "Whirlwind Dash"
+   ],
+   "count": 2,
+   "first_date": "2026-09-08",
+   "last_date": "2026-09-09",
+   "edited": true
   },
   {
    "key": "venture::ability::burrow",
@@ -8986,6 +9405,26 @@
    "edited": false
   },
   {
+   "key": "widowmaker::ability::take-aim",
+   "dimension": "ability",
+   "kind": "ability",
+   "hero_slug": "widowmaker",
+   "hero_cn": "黑百合",
+   "hero_en": "Widowmaker",
+   "hero_role": "damage",
+   "name_cn": "瞄准射击",
+   "name_en": "Take Aim",
+   "slug": "take-aim",
+   "variants": [
+    "瞄准射击",
+    "Take Aim"
+   ],
+   "count": 1,
+   "first_date": "2026-09-08",
+   "last_date": "2026-09-08",
+   "edited": true
+  },
+  {
    "key": "widowmaker::ability::venom-mine",
    "dimension": "ability",
    "kind": "ability",
@@ -9020,10 +9459,10 @@
     "屏障发射器",
     "Barrier Projector"
    ],
-   "count": 4,
+   "count": 8,
    "first_date": "2017-03-21",
-   "last_date": "2019-10-15",
-   "edited": false
+   "last_date": "2026-09-09",
+   "edited": true
   },
   {
    "key": "winston::ability::barrior-projector",
@@ -9397,6 +9836,26 @@
    "edited": false
   },
   {
+   "key": "wuyang::ability::restorative-stream",
+   "dimension": "ability",
+   "kind": "ability",
+   "hero_slug": "wuyang",
+   "hero_cn": "无漾",
+   "hero_en": "Wuyang",
+   "hero_role": "support",
+   "name_cn": "养神泉",
+   "name_en": "Restorative Stream",
+   "slug": "restorative-stream",
+   "variants": [
+    "养神泉",
+    "Restorative Stream"
+   ],
+   "count": 4,
+   "first_date": "2026-09-08",
+   "last_date": "2026-09-09",
+   "edited": true
+  },
+  {
    "key": "wuyang::ability::rushing-torrent",
    "dimension": "ability",
    "kind": "ability",
@@ -9561,16 +10020,17 @@
    "hero_cn": "查莉娅",
    "hero_en": "Zarya",
    "hero_role": "tank",
-   "name_cn": null,
+   "name_cn": "粒子屏障",
    "name_en": "Particle Barrier",
    "slug": "particle-barrier",
    "variants": [
+    "粒子屏障",
     "Particle Barrier"
    ],
-   "count": 10,
+   "count": 12,
    "first_date": "2016-11-15",
-   "last_date": "2024-07-12",
-   "edited": false
+   "last_date": "2026-09-09",
+   "edited": true
   },
   {
    "key": "zarya::ability::particle-barrier-projected-barrier",
@@ -9754,16 +10214,17 @@
    "hero_cn": "禅雅塔",
    "hero_en": "Zenyatta",
    "hero_role": "support",
-   "name_cn": null,
+   "name_cn": "谐",
    "name_en": "Harmony Orb",
    "slug": "harmony-orb",
    "variants": [
+    "谐",
     "Harmony Orb"
    ],
-   "count": 1,
+   "count": 3,
    "first_date": "2023-10-31",
-   "last_date": "2023-10-31",
-   "edited": false
+   "last_date": "2026-09-09",
+   "edited": true
   },
   {
    "key": "zenyatta::ability::new-hero-option-discord-orb-sensitivity",
@@ -9874,7 +10335,6 @@
    "name_en": "Orb of Harmony",
    "slug": "orb-of-harmony",
    "variants": [
-    "谐",
     "Orb of Harmony"
    ],
    "count": 1,
@@ -9978,6 +10438,26 @@
    "count": 2,
    "first_date": "2025-08-26",
    "last_date": "2025-08-27",
+   "edited": false
+  },
+  {
+   "key": "ana::perk::groggy",
+   "dimension": "perk",
+   "kind": "perk",
+   "hero_slug": "ana",
+   "hero_cn": "安娜",
+   "hero_en": "Ana",
+   "hero_role": "support",
+   "name_cn": "头晕目眩",
+   "name_en": "Groggy",
+   "slug": "groggy",
+   "variants": [
+    "头晕目眩",
+    "Groggy"
+   ],
+   "count": 2,
+   "first_date": "2026-10-06",
+   "last_date": "2026-10-07",
    "edited": false
   },
   {
@@ -10590,6 +11070,25 @@
    "edited": false
   },
   {
+   "key": "d-mon::perk::focused-fusion",
+   "dimension": "perk",
+   "kind": "perk",
+   "hero_slug": "d-mon",
+   "hero_cn": "D.Mon",
+   "hero_en": "D.Mon",
+   "hero_role": "tank",
+   "name_cn": null,
+   "name_en": "Focused Fusion",
+   "slug": "focused-fusion",
+   "variants": [
+    "Focused Fusion"
+   ],
+   "count": 1,
+   "first_date": "2026-09-17",
+   "last_date": "2026-09-17",
+   "edited": false
+  },
+  {
    "key": "d-va::perk::heavy-rockets",
    "dimension": "perk",
    "kind": "perk",
@@ -10661,6 +11160,25 @@
    "count": 2,
    "first_date": "2025-08-26",
    "last_date": "2025-08-27",
+   "edited": false
+  },
+  {
+   "key": "doctrine::perk::transfusion",
+   "dimension": "perk",
+   "kind": "perk",
+   "hero_slug": "doctrine",
+   "hero_cn": null,
+   "hero_en": "Doctrine",
+   "hero_role": "support",
+   "name_cn": null,
+   "name_en": "Transfusion",
+   "slug": "transfusion",
+   "variants": [
+    "Transfusion"
+   ],
+   "count": 1,
+   "first_date": "2026-10-06",
+   "last_date": "2026-10-06",
    "edited": false
   },
   {
@@ -11171,10 +11689,10 @@
     "无情弹幕",
     "Relentless Barrage"
    ],
-   "count": 4,
+   "count": 6,
    "first_date": "2025-10-14",
-   "last_date": "2026-02-11",
-   "edited": false
+   "last_date": "2026-09-09",
+   "edited": true
   },
   {
    "key": "freja::perk::rising-winds",
@@ -11511,6 +12029,23 @@
    "count": 3,
    "first_date": "2025-08-26",
    "last_date": "2026-06-17",
+   "edited": false
+  },
+  {
+   "key": "hero-d205583e::perk::hero-52bdcee2",
+   "dimension": "perk",
+   "kind": "perk",
+   "hero_slug": "hero-d205583e",
+   "hero_cn": "血律",
+   "hero_en": null,
+   "hero_role": "support",
+   "name_cn": "活力传输",
+   "name_en": null,
+   "slug": "hero-52bdcee2",
+   "variants": [],
+   "count": 1,
+   "first_date": "2026-10-07",
+   "last_date": "2026-10-07",
    "edited": false
   },
   {
@@ -11925,6 +12460,26 @@
    "edited": false
   },
   {
+   "key": "junkrat::perk::nitro-boost",
+   "dimension": "perk",
+   "kind": "perk",
+   "hero_slug": "junkrat",
+   "hero_cn": "狂鼠",
+   "hero_en": "Junkrat",
+   "hero_role": "damage",
+   "name_cn": "氮气推进",
+   "name_en": "Nitro Boost",
+   "slug": "nitro-boost",
+   "variants": [
+    "氮气推进",
+    "Nitro Boost"
+   ],
+   "count": 2,
+   "first_date": "2026-09-08",
+   "last_date": "2026-09-09",
+   "edited": true
+  },
+  {
    "key": "junkrat::perk::tick-tock",
    "dimension": "perk",
    "kind": "perk",
@@ -12302,6 +12857,26 @@
    "count": 2,
    "first_date": "2025-08-26",
    "last_date": "2025-08-27",
+   "edited": false
+  },
+  {
+   "key": "lucio::perk::beat-drop",
+   "dimension": "perk",
+   "kind": "perk",
+   "hero_slug": "lucio",
+   "hero_cn": "卢西奥",
+   "hero_en": "Lúcio",
+   "hero_role": "support",
+   "name_cn": "来点节拍",
+   "name_en": "Beat Drop",
+   "slug": "beat-drop",
+   "variants": [
+    "来点节拍",
+    "Beat Drop"
+   ],
+   "count": 2,
+   "first_date": "2026-10-06",
+   "last_date": "2026-10-07",
    "edited": false
   },
   {
@@ -13344,6 +13919,26 @@
    "edited": false
   },
   {
+   "key": "roadhog::perk::here-piggy-piggy",
+   "dimension": "perk",
+   "kind": "perk",
+   "hero_slug": "roadhog",
+   "hero_cn": "路霸",
+   "hero_en": "Roadhog",
+   "hero_role": "tank",
+   "name_cn": "小猪快来",
+   "name_en": "Here, Piggy Piggy",
+   "slug": "here-piggy-piggy",
+   "variants": [
+    "小猪快来",
+    "Here, Piggy Piggy"
+   ],
+   "count": 2,
+   "first_date": "2026-10-06",
+   "last_date": "2026-10-07",
+   "edited": false
+  },
+  {
    "key": "roadhog::perk::hogdrogen-exposure",
    "dimension": "perk",
    "kind": "perk",
@@ -13418,9 +14013,29 @@
     "来口猪肉",
     "Pulled Pork"
    ],
-   "count": 3,
+   "count": 5,
    "first_date": "2025-08-27",
-   "last_date": "2026-02-11",
+   "last_date": "2026-10-07",
+   "edited": false
+  },
+  {
+   "key": "roadhog::perk::scrap-hook",
+   "dimension": "perk",
+   "kind": "perk",
+   "hero_slug": "roadhog",
+   "hero_cn": "路霸",
+   "hero_en": "Roadhog",
+   "hero_role": "tank",
+   "name_cn": "废料链钩",
+   "name_en": "Scrap Hook",
+   "slug": "scrap-hook",
+   "variants": [
+    "废料链钩",
+    "Scrap Hook"
+   ],
+   "count": 2,
+   "first_date": "2026-10-06",
+   "last_date": "2026-10-07",
    "edited": false
   },
   {
@@ -13438,9 +14053,69 @@
     "弹片迸射枪",
     "Shrapnel Launcher"
    ],
-   "count": 2,
+   "count": 4,
    "first_date": "2025-08-26",
-   "last_date": "2025-08-27",
+   "last_date": "2026-10-07",
+   "edited": false
+  },
+  {
+   "key": "roadhog::perk::toxic-exhaust",
+   "dimension": "perk",
+   "kind": "perk",
+   "hero_slug": "roadhog",
+   "hero_cn": "路霸",
+   "hero_en": "Roadhog",
+   "hero_role": "tank",
+   "name_cn": "剧毒废气",
+   "name_en": "Toxic Exhaust",
+   "slug": "toxic-exhaust",
+   "variants": [
+    "剧毒废气",
+    "Toxic Exhaust"
+   ],
+   "count": 2,
+   "first_date": "2026-10-06",
+   "last_date": "2026-10-07",
+   "edited": false
+  },
+  {
+   "key": "shion::perk::rapid-reload",
+   "dimension": "perk",
+   "kind": "perk",
+   "hero_slug": "shion",
+   "hero_cn": "死怨",
+   "hero_en": "Shion",
+   "hero_role": "damage",
+   "name_cn": "快速装填",
+   "name_en": "Rapid Reload",
+   "slug": "rapid-reload",
+   "variants": [
+    "快速装填",
+    "Rapid Reload"
+   ],
+   "count": 2,
+   "first_date": "2026-10-06",
+   "last_date": "2026-10-07",
+   "edited": false
+  },
+  {
+   "key": "shion::perk::survival-instinct",
+   "dimension": "perk",
+   "kind": "perk",
+   "hero_slug": "shion",
+   "hero_cn": "死怨",
+   "hero_en": "Shion",
+   "hero_role": "damage",
+   "name_cn": "生存本能",
+   "name_en": "Survival Instinct",
+   "slug": "survival-instinct",
+   "variants": [
+    "生存本能",
+    "Survival Instinct"
+   ],
+   "count": 2,
+   "first_date": "2026-10-06",
+   "last_date": "2026-10-07",
    "edited": false
   },
   {
@@ -13800,6 +14475,66 @@
    "edited": false
   },
   {
+   "key": "sombra::perk::cybersecurity",
+   "dimension": "perk",
+   "kind": "perk",
+   "hero_slug": "sombra",
+   "hero_cn": "黑影",
+   "hero_en": "Sombra",
+   "hero_role": "damage",
+   "name_cn": "赛博安保",
+   "name_en": "Cybersecurity",
+   "slug": "cybersecurity",
+   "variants": [
+    "赛博安保",
+    "Cybersecurity"
+   ],
+   "count": 2,
+   "first_date": "2026-10-06",
+   "last_date": "2026-10-07",
+   "edited": false
+  },
+  {
+   "key": "sombra::perk::data-packet",
+   "dimension": "perk",
+   "kind": "perk",
+   "hero_slug": "sombra",
+   "hero_cn": "黑影",
+   "hero_en": "Sombra",
+   "hero_role": "damage",
+   "name_cn": "数据包",
+   "name_en": "Data Packet",
+   "slug": "data-packet",
+   "variants": [
+    "数据包",
+    "Data Packet"
+   ],
+   "count": 2,
+   "first_date": "2026-10-06",
+   "last_date": "2026-10-07",
+   "edited": false
+  },
+  {
+   "key": "sombra::perk::encrypted-upload",
+   "dimension": "perk",
+   "kind": "perk",
+   "hero_slug": "sombra",
+   "hero_cn": "黑影",
+   "hero_en": "Sombra",
+   "hero_role": "damage",
+   "name_cn": "加密上传",
+   "name_en": "Encrypted Upload",
+   "slug": "encrypted-upload",
+   "variants": [
+    "加密上传",
+    "Encrypted Upload"
+   ],
+   "count": 2,
+   "first_date": "2026-10-06",
+   "last_date": "2026-10-07",
+   "edited": false
+  },
+  {
    "key": "sombra::perk::healthy-hacker",
    "dimension": "perk",
    "kind": "perk",
@@ -13834,9 +14569,49 @@
     "高速带宽",
     "High-Speed Bandwidth"
    ],
-   "count": 2,
+   "count": 4,
    "first_date": "2026-02-09",
-   "last_date": "2026-02-11",
+   "last_date": "2026-10-07",
+   "edited": false
+  },
+  {
+   "key": "sombra::perk::life-hack",
+   "dimension": "perk",
+   "kind": "perk",
+   "hero_slug": "sombra",
+   "hero_cn": "黑影",
+   "hero_en": "Sombra",
+   "hero_role": "damage",
+   "name_cn": "黑你血条",
+   "name_en": "Life Hack",
+   "slug": "life-hack",
+   "variants": [
+    "黑你血条",
+    "Life Hack"
+   ],
+   "count": 2,
+   "first_date": "2026-10-06",
+   "last_date": "2026-10-07",
+   "edited": false
+  },
+  {
+   "key": "sombra::perk::viral-replication",
+   "dimension": "perk",
+   "kind": "perk",
+   "hero_slug": "sombra",
+   "hero_cn": "黑影",
+   "hero_en": "Sombra",
+   "hero_role": "damage",
+   "name_cn": "病毒复制",
+   "name_en": "Viral Replication",
+   "slug": "viral-replication",
+   "variants": [
+    "病毒复制",
+    "Viral Replication"
+   ],
+   "count": 2,
+   "first_date": "2026-10-06",
+   "last_date": "2026-10-07",
    "edited": false
   },
   {
@@ -13918,6 +14693,26 @@
    "first_date": "2025-08-26",
    "last_date": "2025-08-27",
    "edited": false
+  },
+  {
+   "key": "torbjorn::perk::anchor-bolts",
+   "dimension": "perk",
+   "kind": "perk",
+   "hero_slug": "torbjorn",
+   "hero_cn": "托比昂",
+   "hero_en": "Torbjörn",
+   "hero_role": "damage",
+   "name_cn": "锚固螺栓",
+   "name_en": "Anchor Bolts",
+   "slug": "anchor-bolts",
+   "variants": [
+    "锚固螺栓",
+    "Anchor Bolts"
+   ],
+   "count": 2,
+   "first_date": "2026-09-08",
+   "last_date": "2026-09-09",
+   "edited": true
   },
   {
    "key": "torbjorn::perk::craftsman",
@@ -14554,10 +15349,10 @@
     "感应屏障",
     "Adaptive Barrier"
    ],
-   "count": 4,
+   "count": 6,
    "first_date": "2025-08-26",
-   "last_date": "2025-10-15",
-   "edited": false
+   "last_date": "2026-09-09",
+   "edited": true
   },
   {
    "key": "wrecking-ball::perk::multi-ball",
@@ -15061,10 +15856,10 @@
    "name_en": "health",
    "slug": "health",
    "variants": [],
-   "count": 4,
+   "count": 8,
    "first_date": "2020-08-13",
-   "last_date": "2024-02-13",
-   "edited": false
+   "last_date": "2026-09-09",
+   "edited": true
   },
   {
    "key": "brigitte::attr::ultimate_cost",
@@ -15129,10 +15924,10 @@
    "name_en": "health",
    "slug": "health",
    "variants": [],
-   "count": 4,
+   "count": 11,
    "first_date": "2026-08-14",
-   "last_date": "2026-08-15",
-   "edited": false
+   "last_date": "2026-10-13",
+   "edited": true
   },
   {
    "key": "d-va::attr::health",
@@ -15146,10 +15941,10 @@
    "name_en": "health",
    "slug": "health",
    "variants": [],
-   "count": 28,
+   "count": 30,
    "first_date": "2016-11-15",
-   "last_date": "2026-06-17",
-   "edited": false
+   "last_date": "2026-09-09",
+   "edited": true
   },
   {
    "key": "d-va::attr::move_speed",
@@ -15186,6 +15981,23 @@
    "edited": false
   },
   {
+   "key": "doctrine::attr::ultimate_cost",
+   "dimension": "hero_attr",
+   "kind": "general",
+   "hero_slug": "doctrine",
+   "hero_cn": null,
+   "hero_en": "Doctrine",
+   "hero_role": "support",
+   "name_cn": "终极技能消耗",
+   "name_en": "ultimate_cost",
+   "slug": "ultimate_cost",
+   "variants": [],
+   "count": 1,
+   "first_date": "2026-10-06",
+   "last_date": "2026-10-06",
+   "edited": false
+  },
+  {
    "key": "domina::attr::health",
    "dimension": "hero_attr",
    "kind": "general",
@@ -15201,6 +16013,23 @@
    "first_date": "2026-02-13",
    "last_date": "2026-02-14",
    "edited": false
+  },
+  {
+   "key": "domina::attr::ultimate_cost",
+   "dimension": "hero_attr",
+   "kind": "general",
+   "hero_slug": "domina",
+   "hero_cn": "金驭",
+   "hero_en": "Domina",
+   "hero_role": "tank",
+   "name_cn": "终极技能消耗",
+   "name_en": "ultimate_cost",
+   "slug": "ultimate_cost",
+   "variants": [],
+   "count": 2,
+   "first_date": "2026-09-08",
+   "last_date": "2026-09-09",
+   "edited": true
   },
   {
    "key": "doomfist::attr::health",
@@ -15441,6 +16270,23 @@
    "edited": false
   },
   {
+   "key": "hero-d205583e::attr::ultimate_cost",
+   "dimension": "hero_attr",
+   "kind": "general",
+   "hero_slug": "hero-d205583e",
+   "hero_cn": "血律",
+   "hero_en": null,
+   "hero_role": "support",
+   "name_cn": "终极技能消耗",
+   "name_en": "ultimate_cost",
+   "slug": "ultimate_cost",
+   "variants": [],
+   "count": 1,
+   "first_date": "2026-10-07",
+   "last_date": "2026-10-07",
+   "edited": false
+  },
+  {
    "key": "illari::attr::health",
    "dimension": "hero_attr",
    "kind": "general",
@@ -15588,9 +16434,9 @@
    "name_en": "health",
    "slug": "health",
    "variants": [],
-   "count": 5,
+   "count": 6,
    "first_date": "2024-02-13",
-   "last_date": "2024-10-28",
+   "last_date": "2026-10-13",
    "edited": false
   },
   {
@@ -15673,10 +16519,10 @@
    "name_en": "health",
    "slug": "health",
    "variants": [],
-   "count": 12,
+   "count": 14,
    "first_date": "2023-12-05",
-   "last_date": "2025-06-25",
-   "edited": false
+   "last_date": "2026-09-09",
+   "edited": true
   },
   {
    "key": "mauga::attr::ultimate_cost",
@@ -16523,10 +17369,10 @@
    "name_en": "Ana",
    "slug": "ana",
    "variants": [],
-   "count": 269,
+   "count": 283,
    "first_date": "2016-07-26",
-   "last_date": "2026-08-12",
-   "edited": false
+   "last_date": "2026-10-07",
+   "edited": true
   },
   {
    "key": "hero::anran",
@@ -16540,10 +17386,10 @@
    "name_en": "Anran",
    "slug": "anran",
    "variants": [],
-   "count": 58,
+   "count": 68,
    "first_date": "2026-02-09",
-   "last_date": "2026-06-17",
-   "edited": false
+   "last_date": "2026-10-07",
+   "edited": true
   },
   {
    "key": "hero::ashe",
@@ -16557,9 +17403,9 @@
    "name_en": "Ashe",
    "slug": "ashe",
    "variants": [],
-   "count": 249,
+   "count": 253,
    "first_date": "2018-12-11",
-   "last_date": "2026-08-12",
+   "last_date": "2026-10-07",
    "edited": false
   },
   {
@@ -16574,10 +17420,10 @@
    "name_en": "Baptiste",
    "slug": "baptiste",
    "variants": [],
-   "count": 91,
+   "count": 99,
    "first_date": "2019-05-21",
-   "last_date": "2026-05-13",
-   "edited": false
+   "last_date": "2026-10-07",
+   "edited": true
   },
   {
    "key": "hero::bastion",
@@ -16591,9 +17437,9 @@
    "name_en": "Bastion",
    "slug": "bastion",
    "variants": [],
-   "count": 91,
+   "count": 99,
    "first_date": "2016-07-19",
-   "last_date": "2026-06-17",
+   "last_date": "2026-10-07",
    "edited": false
   },
   {
@@ -16608,10 +17454,10 @@
    "name_en": "Brigitte",
    "slug": "brigitte",
    "variants": [],
-   "count": 241,
+   "count": 245,
    "first_date": "2018-04-10",
-   "last_date": "2026-07-15",
-   "edited": false
+   "last_date": "2026-09-09",
+   "edited": true
   },
   {
    "key": "hero::cassidy",
@@ -16625,9 +17471,9 @@
    "name_en": "Cassidy",
    "slug": "cassidy",
    "variants": [],
-   "count": 253,
+   "count": 259,
    "first_date": "2016-06-14",
-   "last_date": "2026-08-12",
+   "last_date": "2026-10-07",
    "edited": false
   },
   {
@@ -16642,10 +17488,10 @@
    "name_en": "D.Mon",
    "slug": "d-mon",
    "variants": [],
-   "count": 31,
+   "count": 61,
    "first_date": "2026-08-12",
-   "last_date": "2026-08-15",
-   "edited": false
+   "last_date": "2026-10-13",
+   "edited": true
   },
   {
    "key": "hero::d-va",
@@ -16659,10 +17505,27 @@
    "name_en": "D.Va",
    "slug": "d-va",
    "variants": [],
-   "count": 305,
+   "count": 311,
    "first_date": "2016-07-19",
-   "last_date": "2026-08-12",
+   "last_date": "2026-10-07",
    "edited": true
+  },
+  {
+   "key": "hero::doctrine",
+   "dimension": "hero",
+   "kind": "hero",
+   "hero_slug": "doctrine",
+   "hero_cn": null,
+   "hero_en": "Doctrine",
+   "hero_role": "support",
+   "name_cn": null,
+   "name_en": "Doctrine",
+   "slug": "doctrine",
+   "variants": [],
+   "count": 11,
+   "first_date": "2026-10-06",
+   "last_date": "2026-10-13",
+   "edited": false
   },
   {
    "key": "hero::domina",
@@ -16676,10 +17539,10 @@
    "name_en": "Domina",
    "slug": "domina",
    "variants": [],
-   "count": 22,
+   "count": 28,
    "first_date": "2026-02-13",
-   "last_date": "2026-08-12",
-   "edited": false
+   "last_date": "2026-10-07",
+   "edited": true
   },
   {
    "key": "hero::doomfist",
@@ -16693,9 +17556,9 @@
    "name_en": "Doomfist",
    "slug": "doomfist",
    "variants": [],
-   "count": 264,
+   "count": 272,
    "first_date": "2018-02-07",
-   "last_date": "2026-08-12",
+   "last_date": "2026-10-07",
    "edited": false
   },
   {
@@ -16710,9 +17573,9 @@
    "name_en": "Echo",
    "slug": "echo",
    "variants": [],
-   "count": 74,
+   "count": 78,
    "first_date": "2020-05-19",
-   "last_date": "2026-08-12",
+   "last_date": "2026-10-07",
    "edited": false
   },
   {
@@ -16727,9 +17590,9 @@
    "name_en": "Emre",
    "slug": "emre",
    "variants": [],
-   "count": 26,
+   "count": 32,
    "first_date": "2026-02-13",
-   "last_date": "2026-08-12",
+   "last_date": "2026-10-07",
    "edited": false
   },
   {
@@ -16744,9 +17607,9 @@
    "name_en": "Freja",
    "slug": "freja",
    "variants": [],
-   "count": 325,
+   "count": 333,
    "first_date": "2025-04-22",
-   "last_date": "2026-07-15",
+   "last_date": "2026-09-09",
    "edited": true
   },
   {
@@ -16761,10 +17624,10 @@
    "name_en": "Genji",
    "slug": "genji",
    "variants": [],
-   "count": 188,
+   "count": 196,
    "first_date": "2016-09-02",
-   "last_date": "2026-08-12",
-   "edited": false
+   "last_date": "2026-10-07",
+   "edited": true
   },
   {
    "key": "hero::hanzo",
@@ -16778,9 +17641,9 @@
    "name_en": "Hanzo",
    "slug": "hanzo",
    "variants": [],
-   "count": 95,
+   "count": 97,
    "first_date": "2016-09-02",
-   "last_date": "2026-02-11",
+   "last_date": "2026-10-07",
    "edited": false
   },
   {
@@ -16795,9 +17658,26 @@
    "name_en": "Hazard",
    "slug": "hazard",
    "variants": [],
-   "count": 313,
+   "count": 317,
    "first_date": "2024-12-10",
-   "last_date": "2026-08-12",
+   "last_date": "2026-10-07",
+   "edited": false
+  },
+  {
+   "key": "hero::hero-d205583e",
+   "dimension": "hero",
+   "kind": "hero",
+   "hero_slug": "hero-d205583e",
+   "hero_cn": "血律",
+   "hero_en": null,
+   "hero_role": "support",
+   "name_cn": "血律",
+   "name_en": null,
+   "slug": "hero-d205583e",
+   "variants": [],
+   "count": 9,
+   "first_date": "2026-10-07",
+   "last_date": "2026-10-07",
    "edited": false
   },
   {
@@ -16812,9 +17692,9 @@
    "name_en": "Illari",
    "slug": "illari",
    "variants": [],
-   "count": 91,
+   "count": 95,
    "first_date": "2023-08-10",
-   "last_date": "2026-06-17",
+   "last_date": "2026-10-07",
    "edited": false
   },
   {
@@ -16829,10 +17709,10 @@
    "name_en": "Jetpack Cat",
    "slug": "jetpack-cat",
    "variants": [],
-   "count": 163,
+   "count": 181,
    "first_date": "2026-02-13",
-   "last_date": "2026-08-15",
-   "edited": false
+   "last_date": "2026-10-07",
+   "edited": true
   },
   {
    "key": "hero::junker-queen",
@@ -16846,10 +17726,10 @@
    "name_en": "Junker Queen",
    "slug": "junker-queen",
    "variants": [],
-   "count": 155,
+   "count": 165,
    "first_date": "2022-12-06",
-   "last_date": "2026-07-15",
-   "edited": false
+   "last_date": "2026-10-07",
+   "edited": true
   },
   {
    "key": "hero::junkrat",
@@ -16863,10 +17743,10 @@
    "name_en": "Junkrat",
    "slug": "junkrat",
    "variants": [],
-   "count": 278,
+   "count": 286,
    "first_date": "2016-10-12",
-   "last_date": "2026-08-12",
-   "edited": false
+   "last_date": "2026-10-07",
+   "edited": true
   },
   {
    "key": "hero::juno",
@@ -16880,9 +17760,9 @@
    "name_en": "Juno",
    "slug": "juno",
    "variants": [],
-   "count": 251,
+   "count": 257,
    "first_date": "2024-08-20",
-   "last_date": "2026-08-12",
+   "last_date": "2026-10-07",
    "edited": true
   },
   {
@@ -16897,10 +17777,10 @@
    "name_en": "Kiriko",
    "slug": "kiriko",
    "variants": [],
-   "count": 181,
+   "count": 194,
    "first_date": "2022-11-17",
-   "last_date": "2026-08-12",
-   "edited": false
+   "last_date": "2026-10-13",
+   "edited": true
   },
   {
    "key": "hero::lifeweaver",
@@ -16914,9 +17794,9 @@
    "name_en": "Lifeweaver",
    "slug": "lifeweaver",
    "variants": [],
-   "count": 153,
+   "count": 161,
    "first_date": "2023-04-11",
-   "last_date": "2026-08-12",
+   "last_date": "2026-10-07",
    "edited": false
   },
   {
@@ -16931,9 +17811,9 @@
    "name_en": "Lúcio",
    "slug": "lucio",
    "variants": [],
-   "count": 260,
+   "count": 266,
    "first_date": "2016-07-19",
-   "last_date": "2026-07-15",
+   "last_date": "2026-10-07",
    "edited": false
   },
   {
@@ -16948,10 +17828,10 @@
    "name_en": "Mauga",
    "slug": "mauga",
    "variants": [],
-   "count": 94,
+   "count": 112,
    "first_date": "2023-12-05",
-   "last_date": "2026-08-12",
-   "edited": false
+   "last_date": "2026-10-07",
+   "edited": true
   },
   {
    "key": "hero::mei",
@@ -16982,9 +17862,9 @@
    "name_en": "Mercy",
    "slug": "mercy",
    "variants": [],
-   "count": 281,
+   "count": 287,
    "first_date": "2016-07-19",
-   "last_date": "2026-07-29",
+   "last_date": "2026-10-07",
    "edited": false
   },
   {
@@ -16999,9 +17879,9 @@
    "name_en": "Mizuki",
    "slug": "mizuki",
    "variants": [],
-   "count": 54,
+   "count": 62,
    "first_date": "2026-02-13",
-   "last_date": "2026-08-20",
+   "last_date": "2026-10-07",
    "edited": false
   },
   {
@@ -17016,9 +17896,9 @@
    "name_en": "Moira",
    "slug": "moira",
    "variants": [],
-   "count": 181,
+   "count": 183,
    "first_date": "2018-04-10",
-   "last_date": "2026-06-25",
+   "last_date": "2026-10-07",
    "edited": false
   },
   {
@@ -17101,9 +17981,9 @@
    "name_en": "Reinhardt",
    "slug": "reinhardt",
    "variants": [],
-   "count": 217,
+   "count": 223,
    "first_date": "2017-05-23",
-   "last_date": "2026-06-17",
+   "last_date": "2026-10-07",
    "edited": false
   },
   {
@@ -17118,9 +17998,9 @@
    "name_en": "Roadhog",
    "slug": "roadhog",
    "variants": [],
-   "count": 187,
+   "count": 259,
    "first_date": "2016-07-19",
-   "last_date": "2026-04-23",
+   "last_date": "2026-10-13",
    "edited": false
   },
   {
@@ -17135,9 +18015,9 @@
    "name_en": "Shion",
    "slug": "shion",
    "variants": [],
-   "count": 10,
+   "count": 14,
    "first_date": "2026-06-25",
-   "last_date": "2026-08-12",
+   "last_date": "2026-10-07",
    "edited": false
   },
   {
@@ -17152,10 +18032,10 @@
    "name_en": "Sierra",
    "slug": "sierra",
    "variants": [],
-   "count": 30,
+   "count": 46,
    "first_date": "2026-04-17",
-   "last_date": "2026-07-15",
-   "edited": false
+   "last_date": "2026-10-07",
+   "edited": true
   },
   {
    "key": "hero::sigma",
@@ -17186,9 +18066,9 @@
    "name_en": "Sojourn",
    "slug": "sojourn",
    "variants": [],
-   "count": 231,
+   "count": 237,
    "first_date": "2022-12-06",
-   "last_date": "2026-06-25",
+   "last_date": "2026-10-07",
    "edited": false
   },
   {
@@ -17220,9 +18100,9 @@
    "name_en": "Sombra",
    "slug": "sombra",
    "variants": [],
-   "count": 171,
+   "count": 270,
    "first_date": "2017-01-24",
-   "last_date": "2026-04-23",
+   "last_date": "2026-10-13",
    "edited": false
   },
   {
@@ -17237,10 +18117,10 @@
    "name_en": "Symmetra",
    "slug": "symmetra",
    "variants": [],
-   "count": 107,
+   "count": 115,
    "first_date": "2016-12-13",
-   "last_date": "2026-01-09",
-   "edited": false
+   "last_date": "2026-10-07",
+   "edited": true
   },
   {
    "key": "hero::torbjorn",
@@ -17254,10 +18134,10 @@
    "name_en": "Torbjörn",
    "slug": "torbjorn",
    "variants": [],
-   "count": 249,
+   "count": 257,
    "first_date": "2016-11-15",
-   "last_date": "2026-07-15",
-   "edited": false
+   "last_date": "2026-10-07",
+   "edited": true
   },
   {
    "key": "hero::tracer",
@@ -17271,9 +18151,9 @@
    "name_en": "Tracer",
    "slug": "tracer",
    "variants": [],
-   "count": 226,
+   "count": 230,
    "first_date": "2018-05-03",
-   "last_date": "2026-08-12",
+   "last_date": "2026-10-07",
    "edited": false
   },
   {
@@ -17288,10 +18168,10 @@
    "name_en": "Vendetta",
    "slug": "vendetta",
    "variants": [],
-   "count": 276,
+   "count": 290,
    "first_date": "2025-12-09",
-   "last_date": "2026-08-12",
-   "edited": false
+   "last_date": "2026-09-09",
+   "edited": true
   },
   {
    "key": "hero::venture",
@@ -17305,9 +18185,9 @@
    "name_en": "Venture",
    "slug": "venture",
    "variants": [],
-   "count": 46,
+   "count": 50,
    "first_date": "2024-04-16",
-   "last_date": "2026-08-12",
+   "last_date": "2026-10-07",
    "edited": false
   },
   {
@@ -17322,10 +18202,10 @@
    "name_en": "Widowmaker",
    "slug": "widowmaker",
    "variants": [],
-   "count": 81,
+   "count": 82,
    "first_date": "2016-06-14",
-   "last_date": "2026-04-15",
-   "edited": false
+   "last_date": "2026-09-08",
+   "edited": true
   },
   {
    "key": "hero::winston",
@@ -17339,10 +18219,10 @@
    "name_en": "Winston",
    "slug": "winston",
    "variants": [],
-   "count": 295,
+   "count": 299,
    "first_date": "2017-03-21",
-   "last_date": "2026-08-12",
-   "edited": false
+   "last_date": "2026-09-09",
+   "edited": true
   },
   {
    "key": "hero::wrecking-ball",
@@ -17356,10 +18236,10 @@
    "name_en": "Wrecking Ball",
    "slug": "wrecking-ball",
    "variants": [],
-   "count": 81,
+   "count": 87,
    "first_date": "2019-03-19",
-   "last_date": "2026-04-15",
-   "edited": false
+   "last_date": "2026-10-07",
+   "edited": true
   },
   {
    "key": "hero::wuyang",
@@ -17373,10 +18253,10 @@
    "name_en": "Wuyang",
    "slug": "wuyang",
    "variants": [],
-   "count": 249,
+   "count": 257,
    "first_date": "2025-08-26",
-   "last_date": "2026-08-12",
-   "edited": false
+   "last_date": "2026-10-07",
+   "edited": true
   },
   {
    "key": "hero::zarya",
@@ -17390,10 +18270,10 @@
    "name_en": "Zarya",
    "slug": "zarya",
    "variants": [],
-   "count": 168,
+   "count": 170,
    "first_date": "2016-11-15",
-   "last_date": "2026-08-12",
-   "edited": false
+   "last_date": "2026-09-09",
+   "edited": true
   },
   {
    "key": "hero::zenyatta",
@@ -17407,10 +18287,10 @@
    "name_en": "Zenyatta",
    "slug": "zenyatta",
    "variants": [],
-   "count": 288,
+   "count": 296,
    "first_date": "2016-07-19",
-   "last_date": "2026-08-12",
-   "edited": false
+   "last_date": "2026-10-07",
+   "edited": true
   }
  ]
 }

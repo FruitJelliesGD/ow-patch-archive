@@ -78,7 +78,8 @@ def test_seq_only_matches_exact():
 
 def test_real_data_pairing_invariants():
     en, cn = patch_meta_from_manifest(DATA)
-    assert len(en) == 343 and len(cn) == 57  # 342 EN + en-2026-08-20-1; + cn-2026-02-11-1, cn-2025-07-25-1
+    # 2026-10-13 快照：349 EN / 61 CN（CN 站每个补丁页通常晚一天发布）
+    assert len(en) == 349 and len(cn) == 61
     result = pair_patches(en, cn)
     assert len(result.pairs) >= 45, f"only {len(result.pairs)} pairs"
     # every CN patch appears at most once across pairs + unpaired
@@ -149,7 +150,7 @@ def test_real_patches_index_categories_invariants():
     # OW1 arcade/event seasons must NOT be tagged as 新赛季 (scope guard holds)
     assert "season" not in by_id["en-2021-09-07-1"]["categories"]  # Lockout Elimination S4
     assert "season" not in by_id["en-2021-12-16-1"]["categories"]  # No Limits S2
-    assert sum("season" in p.get("categories", []) for p in index["patches"]) == 27
+    assert sum("season" in p.get("categories", []) for p in index["patches"]) == 28
     # crossover: 13 rule-tagged (X-brand section/block titles) + 2 manual
     # overrides (Diablo, BlizzCon — description-only)
     for xid in ("en-2018-01-30-1", "en-2019-10-24-1", "en-2023-03-07-1",
@@ -593,7 +594,7 @@ def test_real_data_pairing_signature_invariants():
     en, cn = patch_meta_from_manifest(DATA)
     old = pair_patches(en, cn)
     new = pair_patches(en, cn, data_dir=DATA)
-    assert len(new.pairs) == len(old.pairs) == 57  # max cardinality preserved (+ cn-2026-02-11-1, + p-2025-07-24-1)
+    assert len(new.pairs) == len(old.pairs) == 61  # max cardinality preserved (2026-10-13 snapshot)
     by_en = {p["en"]["patch_id"]: p["cn"]["patch_id"] for p in new.pairs}
     # 2026-08-19/20 regression fixed
     assert by_en["en-2026-08-19-1"] == "cn-2026-08-20-1"

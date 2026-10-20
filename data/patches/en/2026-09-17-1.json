@@ -1,0 +1,147 @@
+{
+ "id": "en-2026-09-17-1",
+ "site": "en",
+ "date": "2026-09-17",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09",
+ "title": "Overwatch Retail Patch Notes – September 17, 2026",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "Hotfix Update",
+   "role": null,
+   "description": "This is a hotfix update. Replay codes from the September 8, 2026 patch are still available.",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "Hero Updates",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "d-mon",
+     "name_en": "D.Mon",
+     "name_cn": "D.Mon",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9d32268bf455685710310a79f655f13848355d9de86cf19f7293dfc201e8cd8f.png",
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": "Armor reduced from 325 to 275 (5v5).",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 325.0,
+       "after": 275.0,
+       "by": -50.0,
+       "by_pct": null,
+       "metric": "armor",
+       "unit": "hp"
+      },
+      {
+       "text_en": "Armor reduced from 300 to 250 (6v6).",
+       "text_cn": null,
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 300.0,
+       "after": 250.0,
+       "by": -50.0,
+       "by_pct": null,
+       "metric": "armor",
+       "unit": "hp"
+      }
+     ],
+     "perks": [
+      {
+       "name_en": "Focused Fusion",
+       "name_cn": null,
+       "status": "changed",
+       "lines_en": [
+        "Damage per bullet reduced from 45 to 36."
+       ],
+       "lines_cn": [],
+       "raw_text": []
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": "Propulsors",
+       "name_cn": "助推器",
+       "slug": "propulsors",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ea768e2c364167941c4b0a3bc8bc65d959274e1c0439ab5f6073611aff8c4e37.png",
+       "changes": [
+        {
+         "text_en": "Fuel drain rate increased from 25 to 30.",
+         "text_cn": null,
+         "before": 25.0,
+         "after": 30.0,
+         "by": 5.0,
+         "by_pct": null,
+         "metric": "fuel drain rate",
+         "raw_metric": "fuel drain rate",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Fusion Repeater",
+       "name_cn": "聚变连发枪",
+       "slug": "fusion-repeater",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/db227e82342a3b2f97f3223616ffc5923999ea9d3badf019a341f2ba1b38843f.png",
+       "changes": [
+        {
+         "text_en": "Damage reduced from 16 to 15.",
+         "text_cn": null,
+         "before": 16.0,
+         "after": 15.0,
+         "by": -1.0,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "damage",
+         "unit": null
+        },
+        {
+         "text_en": "Cooldown increased from 4 to 5 seconds.",
+         "text_cn": null,
+         "before": 4.0,
+         "after": 5.0,
+         "by": 1.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "Bug Fixes",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "Stadium",
+     "body": "- Fixed a gameplay issue with Mercy in Stadium. She has been re-enabled in all Stadium queues.",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": "sha256:dbe75373f7ba689eca90e4ef005f7904a1ff864aa2ef369069f7b2ac828513ce"
+}

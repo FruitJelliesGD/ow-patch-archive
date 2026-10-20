@@ -7,6 +7,90 @@
  "role": "tank",
  "timeline": [
   {
+   "patch": "cn-2026-09-09-1",
+   "date": "2026-09-09",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/09/",
+   "patch_title": "《守望先锋》补丁说明——2026年9月9日",
+   "kind": "ability",
+   "dimension": "ability",
+   "mode": "standard",
+   "ability_slug": "barrier-projector",
+   "ability_en": "Barrier Projector",
+   "ability_cn": "屏障发射器",
+   "text_en": null,
+   "text_cn": "冷却时间从12秒缩短至10秒。（5v5）",
+   "before": 12.0,
+   "after": 10.0,
+   "by": -2.0,
+   "by_pct": null,
+   "metric": "cooldown",
+   "unit": "s"
+  },
+  {
+   "patch": "cn-2026-09-09-1",
+   "date": "2026-09-09",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/09/",
+   "patch_title": "《守望先锋》补丁说明——2026年9月9日",
+   "kind": "ability",
+   "dimension": "ability",
+   "mode": "standard",
+   "ability_slug": "barrier-projector",
+   "ability_en": "Barrier Projector",
+   "ability_cn": "屏障发射器",
+   "text_en": null,
+   "text_cn": "持续时间从8秒缩短至7秒。",
+   "before": 8.0,
+   "after": 7.0,
+   "by": -1.0,
+   "by_pct": null,
+   "metric": "duration",
+   "unit": "s"
+  },
+  {
+   "patch": "en-2026-09-08-1",
+   "date": "2026-09-08",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09",
+   "patch_title": "Overwatch Retail Patch Notes – September 8, 2026",
+   "kind": "ability",
+   "dimension": "ability",
+   "mode": "standard",
+   "ability_slug": "barrier-projector",
+   "ability_en": "Barrier Projector",
+   "ability_cn": "屏障发射器",
+   "text_en": "Cooldown reduced from 12 to 10 seconds. (5v5)",
+   "text_cn": null,
+   "before": 12.0,
+   "after": 10.0,
+   "by": -2.0,
+   "by_pct": null,
+   "metric": "cooldown",
+   "unit": "s"
+  },
+  {
+   "patch": "en-2026-09-08-1",
+   "date": "2026-09-08",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/09",
+   "patch_title": "Overwatch Retail Patch Notes – September 8, 2026",
+   "kind": "ability",
+   "dimension": "ability",
+   "mode": "standard",
+   "ability_slug": "barrier-projector",
+   "ability_en": "Barrier Projector",
+   "ability_cn": "屏障发射器",
+   "text_en": "Duration reduced from 8 to 7 seconds.",
+   "text_cn": null,
+   "before": 8.0,
+   "after": 7.0,
+   "by": -1.0,
+   "by_pct": null,
+   "metric": "duration",
+   "unit": "s"
+  },
+  {
    "patch": "cn-2026-08-12-1",
    "date": "2026-08-12",
    "site": "cn",
@@ -5219,6 +5303,30 @@
   }
  ],
  "values": {
+  "barrier-projector:cooldown": [
+   {
+    "date": "2026-09-08",
+    "value": 10.0
+   },
+   {
+    "date": "2026-09-09",
+    "value": 10.0
+   }
+  ],
+  "barrier-projector:duration": [
+   {
+    "date": "2019-10-15",
+    "value": 9.0
+   },
+   {
+    "date": "2026-09-08",
+    "value": 7.0
+   },
+   {
+    "date": "2026-09-09",
+    "value": 7.0
+   }
+  ],
   "perk:revitalizing-barrier:healing": [
    {
     "date": "2026-08-11",
@@ -5381,12 +5489,6 @@
    {
     "date": "2023-02-07",
     "value": 200.0
-   }
-  ],
-  "barrier-projector:duration": [
-   {
-    "date": "2019-10-15",
-    "value": 9.0
    }
   ],
   "barrier-projector:health": [
