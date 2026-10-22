@@ -78,8 +78,8 @@ def test_seq_only_matches_exact():
 
 def test_real_data_pairing_invariants():
     en, cn = patch_meta_from_manifest(DATA)
-    # 2026-10-13 快照：349 EN / 61 CN（CN 站每个补丁页通常晚一天发布）
-    assert len(en) == 349 and len(cn) == 61
+    # 2026-10-21 快照：350 EN / 62 CN（CN 站每个补丁页通常晚一天发布）
+    assert len(en) == 350 and len(cn) == 62
     result = pair_patches(en, cn)
     assert len(result.pairs) >= 45, f"only {len(result.pairs)} pairs"
     # every CN patch appears at most once across pairs + unpaired
@@ -594,7 +594,7 @@ def test_real_data_pairing_signature_invariants():
     en, cn = patch_meta_from_manifest(DATA)
     old = pair_patches(en, cn)
     new = pair_patches(en, cn, data_dir=DATA)
-    assert len(new.pairs) == len(old.pairs) == 61  # max cardinality preserved (2026-10-13 snapshot)
+    assert len(new.pairs) == len(old.pairs) == 62  # max cardinality preserved (2026-10-21 snapshot)
     by_en = {p["en"]["patch_id"]: p["cn"]["patch_id"] for p in new.pairs}
     # 2026-08-19/20 regression fixed
     assert by_en["en-2026-08-19-1"] == "cn-2026-08-20-1"
