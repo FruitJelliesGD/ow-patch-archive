@@ -127,9 +127,13 @@ pip install -e ".[assets]" && python tools/optimize_assets.py   # 压缩新增�
 
 ## 维护
 
-- **新英雄/技能名映射**：解析器对未知名自动生成 slug 并在运行日志输出
-  `WARN: unknown hero/ability`；把名称补进 `data/names.json` 后运行
-  `python tools/rebuild.py --data data` 即可重富化存量数据。
+- **新英雄/技能名映射**：解析器对未知名自动生成 slug（纯中文名会得到 `hero-xxxxxxxx` 哈希 slug）
+  并在运行日志输出 `WARN: unknown hero/ability`；把名称补进 `data/names.json`（`heroes` 按英文名
+  索引、`abilities` 同类，都需要 `cn` 与 `slug`）后运行 `python tools/rebuild.py --data data`
+  即可重富化存量数据并把同一英雄/技能的中英记录合并到一条历史。
+- **图标缺失**：`download_icons.py` 的 `--out` 必须是 **`web/assets/icons`**（站点读取
+  `assets/icons/heroes`、`assets/icons/abilities`，地图会自动落在同级的 `web/assets/maps`）；
+  工作流已按此配置，本地手动补图也请保持一致，否则图标会写到一个页面不会读取的目录。
 - **英文站老格式（OW1 时代）**：无现代结构的页面自动降级为整段原文 `raw_text`，内容不丢失。
 - **中文站结构**：`ow.blizzard.cn` 的 HTML 存在未闭合标签，解析器按文本分片处理，不受影响。
 

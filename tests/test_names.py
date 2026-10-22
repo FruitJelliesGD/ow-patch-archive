@@ -81,6 +81,18 @@ def test_ability_map_en_variant_folding():
     assert slug2 == "helix-rockets"
 
 
+def test_new_hero_cn_name_resolves_to_en_slug():
+    """Doctrine shipped as "Doctrine" on the EN site and 血律 on the CN site; the
+    CN page used to auto-slug it to hero-d205583e and split the hero in two."""
+    r = NameResolver()
+    slug, en, cn, role = r.hero("血律", "cn")
+    assert (slug, en, cn, role) == ("doctrine", "Doctrine", "血律", "support")
+    # and its CN ability names land on the EN slugs (so they share one history)
+    assert r.ability("焕生无人机", "cn")[:2] == ("invigorating-drones", "Invigorating Drones")
+    assert r.ability("迅影疾行", "cn")[:2] == ("shrouded-momentum", "Shrouded Momentum")
+    assert r.ability("救赎恩典", "cn")[:2] == ("deliverance", "Deliverance")
+
+
 def test_unknown_cn_ability_still_no_hash_slug_when_mapped():
     r = NameResolver()
     slug, en, cn = r.ability("某种完全未知的中文技能名", "cn")
