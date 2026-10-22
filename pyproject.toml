@@ -15,6 +15,8 @@ dependencies = [
 
 [project.optional-dependencies]
 dev = ["pytest>=8.0"]
+# offline-only: tools/optimize_assets.py (not needed to run the monitor or the site)
+assets = ["pillow>=10"]
 
 [tool.setuptools.packages.find]
 where = ["src"]

@@ -7,7 +7,8 @@ abilities/<hero-slug>/<ability-slug>.png) and web/assets/maps/<patch-id>/s<secti
 <i>-{before,after}.png. Idempotent and incremental: existing files are skipped, so
 re-running after a data update only fetches images that are new. Network
 failures are warnings, never a non-zero exit — a transient CDN hiccup must not
-fail the monitor commit step.
+fail the monitor commit step. Also rewrites web/assets/icons/index.json (the
+list of hero icons that exist) so the frontend never requests a missing one.
 
 Ability slugs are NOT hero-unique (e.g. quick-melee belongs to several heroes),
 hence the hero-prefixed directory.
@@ -93,6 +94,23 @@ def _ext_for(url: str) -> str:
     return ".png"
 
 
+def write_icon_index(out_dir: pathlib.Path) -> pathlib.Path:
+    """Write ``<out_dir>/index.json`` listing the hero icons that actually exist.
+
+    The web UI renders a hero portrait next to every entry/timeline row, but a
+    hero that only ever appeared in ``hero_attr`` records has no captured icon
+    (e.g. ``doctrine``, ``hero-d205583e``) — requesting it would 404 on every
+    entry-search page load. The manifest lets the frontend skip those instead of
+    relying on a hidden broken image.
+    """
+    heroes_dir = out_dir / "heroes"
+    heroes = sorted(p.stem for p in heroes_dir.glob("*.png")) if heroes_dir.is_dir() else []
+    out_dir.mkdir(parents=True, exist_ok=True)
+    dest = out_dir / "index.json"
+    dest.write_text(json.dumps({"heroes": heroes}, ensure_ascii=False), encoding="utf-8")
+    return dest
+
+
 def download_icons(
     data_dir: pathlib.Path,
     out_dir: pathlib.Path,
@@ -138,6 +156,8 @@ def download_icons(
         print(f"downloaded {rel}")
     if marker and new:
         marker.write_text(json.dumps({"icons": len(new)}), encoding="utf-8")
+    if not dry_run:
+        write_icon_index(out_dir)
     print(f"icons: {len(refs)} unique, {len(new)} new"
           + (" (dry run)" if dry_run else ""))
     return len(new)

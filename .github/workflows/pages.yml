@@ -31,11 +31,15 @@ jobs:
 
       - uses: actions/configure-pages@v5
 
-      - name: Stage site (web/ + data/)
+      - name: Stage site (web/ + the data files the site reads)
+        # The site only reads data/*.json plus data/patches and data/heroes.
+        # data/archive (Markdown, ~2.6 MB) and changelog.jsonl are for humans and
+        # the CLI — shipping them would add dead weight to every deploy.
         run: |
-          mkdir -p _site
+          mkdir -p _site/data
           cp -r web/* _site/
-          cp -r data _site/data
+          cp data/*.json _site/data/
+          cp -r data/patches data/heroes _site/data/
 
       - uses: actions/upload-pages-artifact@v3
         with:
