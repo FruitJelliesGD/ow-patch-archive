@@ -160,6 +160,21 @@ def test_marker_only_written_when_new_icons(tmp_path, monkeypatch):
     assert not marker.exists()
 
 
+def test_workflows_download_icons_into_the_site_tree():
+    """The site reads assets/icons/{heroes,abilities}; a workflow that passes
+    ``--out web/assets`` dumps icons next to ``maps/`` where nothing reads them.
+
+    That mismatch (2026-10) is why new abilities like 血律/Doctrine shipped
+    without icons: the files existed, just in the wrong directory.
+    """
+    repo = pathlib.Path(__file__).resolve().parent.parent
+    for name in ("monitor.yml", "monitor-fast.yml", "backfill.yml"):
+        text = (repo / ".github" / "workflows" / name).read_text(encoding="utf-8")
+        assert "--out web/assets/icons" in text, name
+        assert "--out web/assets " not in text, name
+        assert "--out web/assets\n" not in text, name
+
+
 @pytest.fixture(autouse=True)
 def _cleanup_sys_path():
     yield

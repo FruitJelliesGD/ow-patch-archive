@@ -41,7 +41,16 @@ jobs:
       # any persisted data (new / real edit / cosmetic name-chrome drift) is committed;
       # cosmetic-only runs produce no notify file and therefore no Issue or email
       - name: Download patch icons
-        run: python tools/download_icons.py --data data --out web/assets --marker notify-icons.json || true
+        # icons/ is the tree the site reads (assets/icons/{heroes,abilities});
+        # maps land one level up at web/assets/maps via out_dir.parent
+        run: python tools/download_icons.py --data data --out web/assets/icons --marker notify-icons.json || true
+
+      - name: Optimize downloaded icons
+        # new hero portraits arrive at 256px/~120KB; the script resizes them to
+        # the size the site displays and skips anything already inside budget
+        run: |
+          pip install pillow --quiet || true
+          python tools/optimize_assets.py || true
 
       - name: Commit new/changed data
         if: hashFiles('notify-changed.json') != '' || hashFiles('notify-icons.json') != ''

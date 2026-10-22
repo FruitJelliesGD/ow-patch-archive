@@ -57,7 +57,16 @@ jobs:
           SMTP_TO: ${{ secrets.SMTP_TO }}
 
       - name: Download patch icons
-        run: python tools/download_icons.py --data data --out web/assets --marker notify-icons-fast.json || true
+        # icons/ is the tree the site reads (assets/icons/{heroes,abilities});
+        # maps land one level up at web/assets/maps via out_dir.parent
+        run: python tools/download_icons.py --data data --out web/assets/icons --marker notify-icons-fast.json || true
+
+      - name: Optimize downloaded icons
+        # new hero portraits arrive at 256px/~120KB; the script resizes them to
+        # the size the site displays and skips anything already inside budget
+        run: |
+          pip install pillow --quiet || true
+          python tools/optimize_assets.py || true
 
       # 被本地触发时校验"本地看到的日期"确实进了归档；解析坏掉不会静默变成全绿
       - name: Verify dispatched dates landed in the archive

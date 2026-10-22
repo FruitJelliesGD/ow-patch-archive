@@ -23,7 +23,16 @@ jobs:
         run: python tools/run.py --data data
 
       - name: Download patch icons
-        run: python tools/download_icons.py --data data --out web/assets || true
+        # icons/ is the tree the site reads (assets/icons/{heroes,abilities});
+        # maps land one level up at web/assets/maps via out_dir.parent
+        run: python tools/download_icons.py --data data --out web/assets/icons || true
+
+      - name: Optimize downloaded icons
+        # new hero portraits arrive at 256px/~120KB; the script resizes them to
+        # the size the site displays and skips anything already inside budget
+        run: |
+          pip install pillow --quiet || true
+          python tools/optimize_assets.py || true
 
       - name: Commit if anything changed
         run: |
