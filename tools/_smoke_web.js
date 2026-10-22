@@ -7,22 +7,58 @@ const path = require("path");
 const ROOT = path.resolve(__dirname, "..");
 const appJs = fs.readFileSync(path.join(ROOT, "web", "app.js"), "utf-8");
 
+function loadData(rel) {
+  return JSON.parse(fs.readFileSync(path.join(ROOT, "data", rel), "utf-8"));
+}
+const patchIndex = loadData("patches_index.json");
+const entryIndex = loadData("entries_index.json");
+const heroIndex = loadData("heroes_index.json");
+
+/* Expectations are derived from the data on disk, never hard-coded: a new
+ * patch must not turn this suite red (that used to be the only way it failed).
+ * What is asserted is structure — badges, grouping, merges, links — plus the
+ * frontend/backend key contract (every category in data has a chip). */
+const EXPECT = {
+  indexPatches: patchIndex.patches.length,
+  entryCards: entryIndex.entries.length,
+  heroEntryCards: entryIndex.entries.filter(
+    (e) => e.hero_slug === "ana" && e.dimension !== "hero").length,
+  jumpYears: new Set(patchIndex.patches.map((p) => p.date.slice(0, 4))).size,
+  heroes: heroIndex.heroes.length,
+  categories: [...new Set(patchIndex.patches.flatMap((p) => p.categories || []))].sort(),
+  hasHeroChip: patchIndex.patches.some((p) => p.mode === "standard" && p.has_hero_changes),
+  pageSize: 60, // ENTRY_PAGE_SIZE in web/app.js
+  heroSlugs: heroIndex.heroes.map((h) => h.slug),
+  weaponEntries: entryIndex.entries.filter((e) => e.dimension === "weapon").length,
+};
+
 function makeEl(tag) {
   return {
-    tagName: tag, children: [], _html: "", dataset: {}, style: {},
-    className: "", id: "", href: "", target: "", rel: "", hidden: false,
-    appendChild(c) { this.children.push(c); return c; },
+    tagName: tag, children: [], _html: "", dataset: {}, style: {}, attrs: {},
+    className: "", id: "", href: "", target: "", rel: "", hidden: false, value: "",
+    appendChild(c) {
+      this.children.push(c);
+      if (c.id) elements[c.id] = c; // getElementById resolves appended nodes too
+      return c;
+    },
     replaceChildren() { this.children = []; this._html = ""; },
+    remove() {},
     set textContent(v) { this._html = String(v); },
     get textContent() { return this._html; },
     set innerHTML(v) { this._html = v; },
     get innerHTML() { return this._html; },
     querySelector() { return makeEl("div"); },
     querySelectorAll() { return []; },
-    getAttribute() { return null; },
+    setAttribute(k, v) { this.attrs[k] = String(v); },
+    getAttribute(k) { return k in this.attrs ? this.attrs[k] : null; },
     addEventListener() {},
     scrollIntoView() {},
-    classList: { toggle() {} },
+    classList: {
+      toggle() {},
+      add() {},
+      remove() {},
+      contains() { return false; },
+    },
   };
 }
 const elements = {};
@@ -32,7 +68,16 @@ const document = {
     if (!elements[id]) elements[id] = makeEl("div");
     return elements[id];
   },
+  querySelector: () => null,
   querySelectorAll: () => [],
+  addEventListener() {},
+  documentElement: { lang: "zh-CN", style: { setProperty() {} } },
+  title: "",
+  body: makeEl("body"),
+};
+const history = {
+  lastUrl: null,
+  replaceState(_state, _title, url) { this.lastUrl = url; },
 };
 
 function findHtml(el, re) {
@@ -43,12 +88,19 @@ function findHtml(el, re) {
 
 async function fetchJSON(requestPath) {
   const url = new URL(requestPath, "http://local");
-  return JSON.parse(fs.readFileSync(path.join(ROOT, url.pathname), "utf-8"));
+  const rel = url.pathname.replace(/^\//, "");
+  // archive data lives at data/, page assets under web/ (the site root)
+  for (const candidate of [path.join(ROOT, rel), path.join(ROOT, "web", rel)]) {
+    if (fs.existsSync(candidate)) return JSON.parse(fs.readFileSync(candidate, "utf-8"));
+  }
+  throw new Error("missing fixture: " + rel);
 }
 const fetch = async (p) => ({ ok: true, json: async () => fetchJSON(p) });
-const location = { search: "", href: "" };
+const location = { search: "", href: "", pathname: "/index.html", reload() {} };
 
-const run = new Function("document", "location", "fetch", "console", "URL", "findHtml", appJs + `
+const run = new Function(
+  "document", "location", "fetch", "console", "URL", "findHtml", "history", "ResizeObserver",
+  `const EXPECT = ${JSON.stringify(EXPECT)};\n` + appJs + `
 ;(async () => {
   const results = {};
   const fail = [];
@@ -97,7 +149,9 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
     results.indexHasHeroChangesBadge = /badge hero-changes/.test(heroBadgedEntryHtml) && /英雄改动/.test(heroBadgedEntryHtml);
     results.indexSpecialNoHeroBadge = !/badge hero-changes/.test(specialEntryHtml);
     results.indexAnnouncementNoHeroBadge = !/badge hero-changes/.test(announcementEntryHtml);
-    results.chipCount = document.getElementById("jump-bar").children[4] ? document.getElementById("jump-bar").children[4].children.length : 0;
+    const chipBar = document.getElementById("cat-chips");
+    results.chipKeys = chipBar.children.map((c) => c.dataset.cat || "");
+    results.chipCount = results.chipKeys.length;
     setFilter(["event"]);
     let eventFiltered = 0;
     for (const year of document.getElementById("patch-list").children) {
@@ -129,14 +183,28 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
     results.heroFilteredCount = heroFiltered;
     results.heroFilterAllBadged = heroFilterAllBadged;
     setFilter([]);
-    results.updatedFmt = /^\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2} UTC[+-]\\d+(?::\\d{2})?$/.test(document.getElementById("updated").textContent);
+    // the "updated" label is a calendar date (newest patch), not a fetch time:
+    // it must render as YYYY-MM-DD, never as an invented wall-clock instant
+    results.updatedFmt = /^\\d{4}-\\d{2}-\\d{2}$/.test(document.getElementById("updated").textContent);
 
-    // jump bar: year select (2016-2026) + month select populated for the
-    // default (latest) year; patch entries carry the first-section badge and
-    // the content char count
-    const jumpBar = document.getElementById("jump-bar");
-    results.jumpYears = jumpBar.children[1] ? jumpBar.children[1].children.length : 0;
-    results.jumpMonths = jumpBar.children[2] ? jumpBar.children[2].children.length : 0;
+    // filter state is mirrored into the URL (replaceState) so the current view
+    // can be shared / survives a reload
+    setFilter(["event"]);
+    results.urlSyncFilter = String(history.lastUrl || "").includes("cat=event");
+    setFilter([]);
+    results.urlSyncCleared = !String(history.lastUrl || "").includes("cat=");
+
+    // a filter that matches nothing must explain itself instead of rendering an
+    // empty page
+    renderTimeBrowser(allPatches, () => false);
+    results.emptyState = findHtml(document.getElementById("patch-list"), /当前筛选下没有补丁/);
+    setFilter([]);
+
+    // jump bar: year select (one option per year present in the data) + month
+    // select populated for the default (latest) year; patch entries carry the
+    // content char count. Looked up by id so DOM order is free to change.
+    results.jumpYears = document.getElementById("jump-year").children.length;
+    results.jumpMonths = document.getElementById("jump-month").children.length;
     results.indexHasChars = findHtml(document.getElementById("patch-list"), /\\d[\\d,]* 字/);
     // entry title = first section title (在线修正更新 / Hotfix Update); the
     // boilerplate official title is gone, as is the redundant section badge
@@ -176,10 +244,119 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
     results.filterChips = document.getElementById("filters").children.length;
     results.entryCards = document.getElementById("results").children.length;
     results.firstCardHref = document.getElementById("results").children[0].href || "";
+    results.entryCardAvatar = findHtml(document.getElementById("results"), /card-avatar/);
+    // "按英雄浏览" grid: one card per hero in heroes_index.json
+    results.heroBrowseCards = 0;
+    (function countHeroCards(el) {
+      for (const c of el.children) {
+        if (c.className === "hero-card") results.heroBrowseCards++;
+        countHeroCards(c);
+      }
+    })(document.getElementById("hero-browse"));
+    results.heroBrowseVisible = document.getElementById("hero-browse").hidden !== true;
+    results.heroBrowseFacts = findHtml(document.getElementById("hero-browse"), /heavy-pulse-rifle|士兵76|Soldier/);
+
+    // ---- pagination: the default view must not build all 949 cards ----
+    results.firstPageCards = document.getElementById("results").children.length;
+    results.pageSizeHook = Number(document.getElementById("results").dataset.shown || 0);
+    results.loadMoreVisible = !!document.getElementById("load-more");
+    showMoreEntries();
+    results.secondPageCards = document.getElementById("results").children.length;
+
+    // ---- search regression probes (matching/ranking/aliases/labels) ----
+    function probe(query, dim) {
+      entrySearchState.q = query;
+      entrySearchState.dim = dim || "";
+      applyEntryFilter();
+      return entryFiltered.map((h) => h.entry);
+    }
+    function probeKeys(query) { return probe(query).map((e) => e.key); }
+    const KEY_SOLDIER_RIFLE = "soldier-76::weapon::heavy-pulse-rifle";
+    const probes = [
+      ["soldier 76", "both spellings of the hero name reach every soldier entry",
+        () => { const k = probeKeys("soldier 76"); return k[0] === "hero::soldier-76" && k.length >= 20; }],
+      ["soldier76", "compact hero name",
+        () => { const k = probeKeys("soldier76"); return k[0] === "hero::soldier-76" && k.length >= 20; }],
+      ["dva", "punctuated hero name, no 'advan…' false positive",
+        () => { const k = probeKeys("dva");
+          return k[0] === "hero::d-va" && !k.includes("symmetra::ability::advanced-teleportation"); }],
+      ["d.va", "hero with dot",
+        () => probeKeys("d.va")[0] === "hero::d-va"],
+      ["dmon", "D.Mon without the dot",
+        () => probeKeys("dmon")[0] === "hero::d-mon"],
+      ["junkerqueen", "Junker Queen without the space",
+        () => probeKeys("junkerqueen")[0] === "hero::junker-queen"],
+      ["wreckingball", "Wrecking Ball without the space",
+        () => probeKeys("wreckingball")[0] === "hero::wrecking-ball"],
+      ["bob", "B.O.B. ability",
+        () => probeKeys("bob").includes("ashe::ability::b-o-b")],
+      ["ana grenade", "multi-word AND across hero + ability",
+        () => { const k = probeKeys("ana grenade");
+          return k.includes("ana::ability::biotic-grenade") && k.length < 10; }],
+      ["士兵76 脉冲步枪", "multi-word CJK + ASCII",
+        () => probeKeys("士兵76 脉冲步枪").includes(KEY_SOLDIER_RIFLE)],
+      ["步枪", "CJK substring inside a longer name",
+        () => probeKeys("步枪").includes(KEY_SOLDIER_RIFLE)],
+      ["武器", "dimension label",
+        () => { const k = probeKeys("武器"); return k.length === EXPECT.weaponEntries; }],
+      ["麦克雷", "legacy CN hero name",
+        () => probeKeys("麦克雷").includes("hero::cassidy")],
+      ["mccree", "legacy EN hero name",
+        () => probeKeys("mccree").includes("hero::cassidy")],
+      ["lucio", "accent-insensitive",
+        () => probeKeys("lucio")[0] === "hero::lucio"],
+      ["!!!", "punctuation-only query is treated as no query",
+        () => probeKeys("!!!").length === EXPECT.entryCards],
+      ["zzzz", "no matches",
+        () => probeKeys("zzzz").length === 0],
+    ];
+    results.probeFails = [];
+    for (const [query, label, fn] of probes) {
+      let ok = false;
+      try { ok = !!fn(); } catch (e) { ok = false; }
+      if (!ok) results.probeFails.push(query + " (" + label + ")");
+    }
+    results.probeCount = probes.length;
+    // zero-result state is user-visible: message + two ways out
+    probe("zzzz");
+    results.emptyStateVisible = findHtml(document.getElementById("entry-status"), /没有匹配/);
+    results.emptyStateActions = findHtml(document.getElementById("entry-status"), /清空搜索/)
+      && findHtml(document.getElementById("entry-status"), /查看全部词条/);
+    // highlighted hit
+    probe("步枪");
+    results.probeHighlight = findHtml(document.getElementById("results"), /<mark>/);
+    // back to the default view (also proves the filter resets the page limit)
+    probe("");
+    results.resetCards = document.getElementById("results").children.length;
+    // raw case survives in the URL
+    entrySearchState.q = "D.Va";
+    applyEntryFilter();
+    results.urlKeepsCase = String(history.lastUrl || "").includes("q=D.Va");
+
+    // ---- cross-language parity: the index changes field must equal the merged
+    // row count the web renders (guards the Python port of mergeEntryRecords) ----
+    const timelines = {};
+    for (const heroSlug of EXPECT.heroSlugs) {
+      timelines[heroSlug] = (await fetchJSON("data/heroes/" + heroSlug + ".json")).timeline || [];
+    }
+    const realPairMap = buildPairMap((await fetchJSON("data/patches_index.json")).patches);
+    const parityFail = [];
+    for (const entry of entryDocs) {
+      const standard = (timelines[entry.hero_slug] || [])
+        .filter((r) => (r.mode || "standard") === "standard");
+      const recs = entry.dimension === "hero"
+        ? standard
+        : standard.filter((r) => entry.hero_slug + "::" + entryKey(r) === entry.key);
+      const rows = mergeEntryRecords(recs, realPairMap).length;
+      if (rows !== entry.changes) parityFail.push(entry.key + " js=" + rows + " index=" + entry.changes);
+    }
+    results.parityFails = parityFail;
+    results.parityChecked = entryDocs.length;
 
     location.search = "?hero=soldier-76&key=soldier-76%3A%3Aweapon%3A%3Aheavy-pulse-rifle";
     await initEntry();
     results.entryName = document.getElementById("entry-name").textContent;
+    results.entryAliases = document.getElementById("entry-hero").innerHTML || "";
     results.entryMeta = document.getElementById("entry-meta").textContent;
     results.entryHasValues = findHtml(document.getElementById("entry-body"), /value-row/);
     results.entryHasPatchLink = findHtml(document.getElementById("entry-body"), /patch\\.html\\?id=/);
@@ -204,6 +381,13 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
     const heroBody = document.getElementById("entry-body");
     const heroGrid = heroBody.children[heroBody.children.length - 1];
     results.heroEntryCards = heroGrid.children.length;
+
+    // a linked card carries the search: the detail page's back links must
+    // return to the same filtered list
+    location.search = "?hero=ana&key=ana%3A%3Aability%3A%3Abiotic-grenade&q=grenade&dim=ability";
+    await initEntry();
+    results.backHref = document.getElementById("back-entries").href || "";
+    results.backLinkKeepsSearch = results.backHref === "entries.html?q=grenade&dim=ability";
 
     location.search = "?id=p-2025-03-18-1&lang=cn";
     await initPatch();
@@ -296,6 +480,9 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
     results.heroHasValues = hasValuesChip;
     // default view is standard-only: April Fools records must not appear
     results.heroDefaultNoSpecial = !findHtml(timelineEl, /Running speed increased by 100/);
+    // hero timeline rows link back to the archived patch page (same internal
+    // link the entry page has; it used to be a plain span here)
+    results.heroPatchLink = findHtml(timelineEl, /patch\\.html\\?id=/);
 
     location.search = "?slug=soldier-76&modes=all";
     await initHero();
@@ -324,15 +511,59 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
     });
     results.mergeSharedDigit = mergeRows.length === 1 && !!mergeRows[0].en;
 
+    // OW1 raw_text fallback: no archived patch currently needs it (all 410
+    // parse structurally), but README promises the degradation — so exercise it
+    // directly instead of leaving it as dead, untested code.
+    const rawEl = document.createElement("div");
+    await renderRawText(rawEl, "Ana's Biotic Rifle and Soldier: 76 were tuned. <b>not html</b>");
+    results.rawTextHeroIcons = /assets\\/icons\\/heroes\\/ana\\.png/.test(rawEl.innerHTML)
+      && /assets\\/icons\\/heroes\\/soldier-76\\.png/.test(rawEl.innerHTML);
+    results.rawTextEscaped = rawEl.innerHTML.includes("&lt;b&gt;not html&lt;/b&gt;")
+      && !rawEl.innerHTML.includes("<b>not html</b>");
+
     console.log(JSON.stringify(results, null, 1));
-    if (results.indexPatches !== 343) fail.push("indexPatches=" + results.indexPatches);
+    // --- structural assertions (data-independent) ---
+    if (results.indexPatches !== EXPECT.indexPatches) fail.push("indexPatches=" + results.indexPatches + " expected=" + EXPECT.indexPatches);
+    if (!results.urlSyncFilter) fail.push("filter state not mirrored into the URL");
+    if (!results.urlSyncCleared) fail.push("cleared filter still present in the URL");
+    if (!results.emptyState) fail.push("empty filter result has no empty state");
+    if (!results.entryCardAvatar) fail.push("entry card hero avatar missing");
+    if (!results.heroBrowseVisible) fail.push("hero browse section hidden on the default view");
+    if (!results.heroBrowseFacts) fail.push("hero browse cards have no hero names");
+    if (!results.heroPatchLink) fail.push("hero timeline patch links missing");
+    if (!results.rawTextHeroIcons) fail.push("raw_text fallback does not inject hero icons");
+    if (!results.rawTextEscaped) fail.push("raw_text fallback does not escape markup");
     if (results.filterChips !== 6) fail.push("filterChips=" + results.filterChips);
     if (!results.firstCardHref.includes("entry.html?hero=")) fail.push("firstCardHref=" + results.firstCardHref);
-    if (results.entryCards !== 904) fail.push("entryCards=" + results.entryCards);
+    // paginated list: first paint is one page, "load more" grows it, a new
+    // filter/new query resets it
+    const wantFirstPage = Math.min(EXPECT.pageSize, EXPECT.entryCards);
+    if (results.entryCards !== wantFirstPage) fail.push("entryCards=" + results.entryCards + " expected first page " + wantFirstPage);
+    if (results.firstPageCards !== wantFirstPage) fail.push("firstPageCards=" + results.firstPageCards);
+    if (results.pageSizeHook !== wantFirstPage) fail.push("results dataset.shown=" + results.pageSizeHook);
+    if (!results.loadMoreVisible) fail.push("load-more button missing on the default view");
+    const wantSecondPage = Math.min(EXPECT.pageSize * 2, EXPECT.entryCards);
+    if (results.secondPageCards !== wantSecondPage) fail.push("secondPageCards=" + results.secondPageCards + " expected " + wantSecondPage);
+    if (results.resetCards !== wantFirstPage) fail.push("filter change kept the old page size: " + results.resetCards);
+    if (results.probeFails.length) fail.push("search probes failed: " + results.probeFails.join(" | "));
+    if (!results.emptyStateVisible) fail.push("zero-result search shows no message");
+    if (!results.emptyStateActions) fail.push("zero-result search offers no way out");
+    if (!results.probeHighlight) fail.push("search hit is not highlighted");
+    if (!results.urlKeepsCase) fail.push("?q= lost the original capitalisation");
+    if (results.parityFails.length) {
+      fail.push("index changes != merged rows (" + results.parityFails.length + "): " + results.parityFails.slice(0, 5).join(" | "));
+    }
+    if (results.parityChecked !== EXPECT.entryCards) fail.push("parity checked " + results.parityChecked + " entries");
+    if (!results.backLinkKeepsSearch) fail.push("detail back link lost the search: " + results.backHref);
     if (!results.indexHasModeBadge) fail.push("index mode badge missing");
     if (!results.indexHasQuickPlayHackedLabel) fail.push("index quick-play-hacked label missing");
     if (!results.indexCategoryBadge) fail.push("index category badge missing");
-    if (results.chipCount !== 17) fail.push("chipCount=" + results.chipCount);
+    // every category present in the data must have a chip (frontend/backend
+    // label contract): a new category without a chip is unclickable
+    const wantChips = ["", ...EXPECT.categories, ...(EXPECT.hasHeroChip ? ["hero_changes"] : [])].sort();
+    if (JSON.stringify(results.chipKeys.slice().sort()) !== JSON.stringify(wantChips)) {
+      fail.push("chipKeys=" + results.chipKeys.join("|") + " expected=" + wantChips.join("|"));
+    }
     if (!(results.filteredCount > 0 && results.filteredCount < results.indexPatches)) fail.push("filteredCount=" + results.filteredCount);
     if (!results.filterReset) fail.push("filter reset failed");
     if (!results.indexHasHeroChangesBadge) fail.push("index hero-changes badge missing");
@@ -340,13 +571,14 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
     if (!results.indexAnnouncementNoHeroBadge) fail.push("announcement entry shows hero-changes badge");
     if (!(results.heroFilteredCount > 0 && results.heroFilteredCount < results.indexPatches)) fail.push("heroFilteredCount=" + results.heroFilteredCount);
     if (!results.heroFilterAllBadged) fail.push("hero-changes filter shows unbadged entry");
-    if (results.jumpYears !== 11) fail.push("jumpYears=" + results.jumpYears);
+    if (results.jumpYears !== EXPECT.jumpYears) fail.push("jumpYears=" + results.jumpYears + " expected=" + EXPECT.jumpYears);
     if (!results.jumpMonths) fail.push("jump month options missing");
     if (!results.indexHasChars) fail.push("index chars missing");
     if (!results.indexTitleIsFirstSection) fail.push("index entry title is not the first section title");
     if (!results.indexNoSectionBadge) fail.push("index section badge still present");
     if (!results.indexHybridTitleChinese) fail.push("hybrid stub entry title not Chinese");
-    if (!/脉冲步枪/.test(results.entryName)) fail.push("entryName=" + results.entryName);
+    // the detail page shows the index's canonical name, not the oldest record's
+    if (results.entryName !== "重脉冲步枪 / Heavy Pulse Rifle") fail.push("entryName=" + results.entryName);
     if (!/更改记录/.test(results.entryMeta)) fail.push("entryMeta=" + results.entryMeta);
     if (!results.entryHasValues) fail.push("entry values rows missing");
     if (!results.entryHasPatchLink) fail.push("entry patch link missing");
@@ -354,8 +586,9 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
     if (!results.entryHasMergedRow) fail.push("entry merged EN+CN row missing");
     if (!results.entryHasEnOnlyRow) fail.push("entry EN-only row should stay single");
     if (!results.entryHasBilingualText) fail.push("entry merged bilingual text missing");
+    // card count (index changes) and detail rows must agree
     if (results.entryMergedCount !== "17") fail.push("entry merged count=" + results.entryMergedCount);
-    if (results.heroEntryCards !== 18) fail.push("hero entry cards=" + results.heroEntryCards);
+    if (results.heroEntryCards !== EXPECT.heroEntryCards) fail.push("hero entry cards=" + results.heroEntryCards + " expected=" + EXPECT.heroEntryCards);
     if (results.langButtons !== 2) fail.push("langButtons=" + results.langButtons);
     if (!results.patchTitle) fail.push("empty patch title");
     if (!results.patchHasAvatar) fail.push("patch hero avatar missing");
@@ -398,4 +631,4 @@ const run = new Function("document", "location", "fetch", "console", "URL", "fin
 })();
 `);
 
-run(document, location, fetch, console, URL, findHtml);
+run(document, location, fetch, console, URL, findHtml, history, undefined);

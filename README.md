@@ -26,7 +26,9 @@
   `data/patches/` 下是结构化 JSON；`data/heroes/{slug}.json` 是聚合后的英雄改动时间线。
 - **查询站（GitHub Pages，两种入口）**：
   - **按时间浏览补丁**（首页）：年 → 月 → 补丁列表，同一逻辑补丁的英文/中文版本合并为一条，详情页可切换中英语言；
-  - **词条检索**：直接搜索技能/武器/威能/英雄属性/英雄（中文名/英文名/别名/slug），每个词条独立成页，追溯全部更改记录（中英对照、数值 before→after、威能新增/移除/重做状态），并标注来源补丁曾被官方事后编辑（changelog 记录）。
+  - **词条检索**：直接搜索技能/武器/威能/英雄属性/英雄（中文名/英文名/别名/slug/英雄名），每个词条独立成页，追溯全部更改记录（中英对照、数值 before→after、威能新增/移除/重做状态），并标注来源补丁曾被官方事后编辑（changelog 记录）。
+    检索忽略大小写、全角/半角、重音与标点（`soldier 76` = `soldier76` = `soldier: 76`，`dva` = `D.Va`），支持多词（`ana grenade` 同时匹配英雄与技能）、维度标签（`武器`）与旧名（`麦克雷`/`McCree`）；
+    结果分页展示（每页 60 条，可「加载更多」），筛选与搜索写入 URL 可直接分享；卡片上的「N 条更改记录」与详情页实际行数一致（跨语言配对合并后计数）。
   - **自动重建**：监控工作流（`monitor`/`monitor-fast`/`watchdog`）完成并提交数据后，`pages` 工作流
     通过 `workflow_run` 自动重建站点（约 30 分钟内生效；监控失败时不部署）；每日 04:23 UTC 定时重建兜底，
     也可 `workflow_dispatch` 手动触发。
@@ -60,6 +62,9 @@ tools/run.py         流水线入口（CI 使用）
 tools/watchdog.py    自愈看门狗：探测官方站最新补丁日期，漏检时自动全量扫描补录
 tools/query.py       CLI 查询工具
 tools/rebuild.py     全量离线重生成（重分类/重富化/配对/映射/英雄轨迹）
+tools/optimize_assets.py 离线压缩站点图片（英雄头像/地图截图，幂等）
+tools/_smoke_web.js  查询站回归测试（DOM shim，CI 的 web job 运行）
+tools/_layout_check.js 查询站布局回归（需 playwright，手动运行）
 web/                 GitHub Pages 查询站（时间浏览 + 词条检索）
 data/               归档数据（全部提交入库）
   archive/          补丁 Markdown 归档
@@ -114,6 +119,10 @@ python tools/watchdog.py --data data                 # 自愈看门狗：探测�
 python tools/query.py 士兵76                          # 查询英雄改动历史
 python tools/query.py --site en --date 2026-08-12     # 查看单个补丁
 python tools/serve.py                                 # 本地预览查询站 (http://127.0.0.1:8000)
+
+node tools/_smoke_web.js                              # 查询站回归测试（CI 也跑这个）
+npx -p playwright node tools/_layout_check.js         # 查询站布局回归（真实浏览器）
+pip install -e ".[assets]" && python tools/optimize_assets.py   # 压缩新增的图片资产（可选）
 ```
 
 ## 维护

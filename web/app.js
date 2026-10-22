@@ -46,10 +46,13 @@ async function fetchJSON(path) {
   return resp.json();
 }
 
+// String-based escaper: no DOM round-trip (this runs a few thousand times per
+// page) and attribute-safe — quotes are escaped too, so `esc()` output can sit
+// inside title="…" / alt="…" / src="…" without breaking out of the attribute.
+const ESCAPES = { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" };
+
 function esc(text) {
-  const div = document.createElement("div");
-  div.textContent = text == null ? "" : String(text);
-  return div.innerHTML;
+  return String(text == null ? "" : text).replace(/[&<>"']/g, (ch) => ESCAPES[ch]);
 }
 
 function fmtNum(v) {
@@ -67,6 +70,41 @@ function fmtLocalTs(ts) {
   return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())} ${pad(d.getHours())}:${pad(d.getMinutes())} ${zone}`;
 }
 
+// date-only rendering for values that are calendar dates, not instants:
+// patches_index.updated is the newest patch date at UTC midnight, so turning it
+// into a wall-clock "last fetched" timestamp would invent a time that never
+// happened.
+function fmtDate(ts) {
+  const m = /^(\d{4}-\d{2}-\d{2})/.exec(String(ts == null ? "" : ts));
+  return m ? m[1] : String(ts || "");
+}
+
+// live page metadata: browser tab titles double as history/bookmark labels
+function setPageMeta(title, description) {
+  document.title = title;
+  const meta = document.querySelector && document.querySelector('meta[name="description"]');
+  if (meta && meta.setAttribute) meta.setAttribute("content", description || title);
+}
+
+// Reflect UI state into the URL so a filtered/searched view can be shared and
+// survives a reload. replaceState (not pushState): toggling chips must not
+// stack history entries. Falls back to assigning location.search only where
+// the History API is absent (the DOM shim used by tools/_smoke_web.js).
+function syncURLState(values) {
+  const params = new URLSearchParams(location.search || "");
+  for (const [key, value] of Object.entries(values)) {
+    if (value == null || value === "") params.delete(key);
+    else params.set(key, String(value));
+  }
+  const qs = params.toString();
+  const next = qs ? "?" + qs : "";
+  if (typeof history !== "undefined" && history.replaceState) {
+    history.replaceState(null, "", (location.pathname || "") + next);
+  } else if (location.search !== next) {
+    location.search = next;
+  }
+}
+
 function numberify(html) {
   return html.replace(/(\d+(?:\.\d+)?\s*→\s*\d+(?:\.\d+)?)/g, '<span class="num">$1</span>');
 }
@@ -82,11 +120,14 @@ function inlineBold(html) {
 // otherwise be linkified inside an attribute).
 function media(html) {
   return html.replace(/(!\[([^\]]*)\]|\[([^\]]+)\])\(([^)]+)\)/g, (m, pre, alt, text, url) => {
-    if (!/^https?:\/\//i.test(url)) return m;
+    // plain http (and protocol-relative //host) is rejected: mixed content on
+    // the https site, and the comment above has always claimed https-only
+    if (!/^https:\/\//i.test(url)) return m;
     if (pre.startsWith("!")) {
-      return `<img src="${url}" alt="${alt || ""}" loading="lazy" onerror="this.style.display='none'">`;
+      // referrerpolicy: the images are hotlinked from Blizzard's CDN
+      return `<img src="${url}" alt="${alt || ""}" loading="lazy" referrerpolicy="no-referrer">`;
     }
-    return `<a href="${url}" target="_blank" rel="noopener">${text}</a>`;
+    return `<a href="${url}" target="_blank" rel="noopener noreferrer">${text}</a>`;
   });
 }
 
@@ -162,12 +203,37 @@ function renderList(text) {
   return ul;
 }
 
+// No inline onerror handler: images that fail to load are hidden by the single
+// capture-phase error listener installed in installImageFallback(), which keeps
+// the page compatible with a strict Content-Security-Policy.
 function iconImg(path, alt, cls) {
-  return `<img class="${esc(cls || "")}" src="${esc(path)}" alt="${esc(alt || "")}" loading="lazy" onerror="this.style.display='none'">`;
+  return `<img class="${esc(cls || "")}" src="${esc(path)}" alt="${esc(alt || "")}" loading="lazy">`;
 }
 
 function heroIconPath(slug) {
   return `assets/icons/heroes/${esc(slug)}.png`;
+}
+
+// Hero icons that actually exist (written by tools/download_icons.py). A hero
+// that only ever appeared in hero_attr records has no captured portrait, so
+// rendering one anyway would 404 on every list page. null = manifest missing:
+// fall back to rendering optimistically (the load-error listener hides misses).
+let heroIconSet = null;
+
+async function loadHeroIconSet() {
+  try {
+    const data = await fetchJSON("assets/icons/index.json");
+    heroIconSet = new Set(data.heroes || []);
+  } catch {
+    heroIconSet = null;
+  }
+  return heroIconSet;
+}
+
+function heroAvatar(slug, alt, cls) {
+  if (!slug) return "";
+  if (heroIconSet && !heroIconSet.has(String(slug))) return "";
+  return iconImg(heroIconPath(slug), alt, cls);
 }
 
 function abilityIconPath(heroSlug, abilitySlug) {
@@ -206,11 +272,13 @@ function categoryBadges(p) {
 
 /* ---------- time browser (index.html) ---------- */
 
-// Sticky year/month jump bar: year select repopulates the month select with
-// months that actually contain patches; the button smooth-scrolls to the
-// matching year/month anchor. Built with createElement/appendChild only so
-// the smoke DOM shim can exercise it.
-function buildJumpBar(years) {
+// Sticky year/month jump bar. The shell (two selects + button) is built once;
+// its options are refilled from whatever is currently visible, so a category
+// filter can never leave a jump target that no longer exists. Built with
+// createElement/appendChild only so the smoke DOM shim can exercise it.
+const jumpState = { years: new Map(), year: "" };
+
+function buildJumpBar() {
   const bar = document.getElementById("jump-bar");
   const hint = document.createElement("span");
   hint.className = "jump-hint";
@@ -218,10 +286,13 @@ function buildJumpBar(years) {
   const yearSel = document.createElement("select");
   yearSel.id = "jump-year";
   yearSel.title = "选择年份";
+  yearSel.setAttribute("aria-label", "选择年份");
   const monthSel = document.createElement("select");
   monthSel.id = "jump-month";
   monthSel.title = "选择月份";
+  monthSel.setAttribute("aria-label", "选择月份");
   const btn = document.createElement("button");
+  btn.type = "button";
   btn.className = "jump-btn";
   btn.textContent = "跳转";
   bar.appendChild(hint);
@@ -229,35 +300,60 @@ function buildJumpBar(years) {
   bar.appendChild(monthSel);
   bar.appendChild(btn);
 
+  yearSel.addEventListener("change", () => {
+    jumpState.year = yearSel.value;
+    fillJumpMonths(jumpState.years, jumpState.year, "");
+  });
+  btn.addEventListener("click", () => {
+    document.getElementById(`year-${yearSel.value}-month-${monthSel.value}`)
+      ?.scrollIntoView?.({ behavior: "smooth" });
+  });
+}
+
+function fillJumpBar(years) {
+  const yearSel = document.getElementById("jump-year");
+  const monthSel = document.getElementById("jump-month");
+  if (!yearSel || !monthSel) return;
   const yearList = [...years.keys()].sort((a, b) => b.localeCompare(a));
+  const prevYear = jumpState.year || yearSel.value;
+  yearSel.replaceChildren();
   for (const y of yearList) {
     const opt = document.createElement("option");
     opt.value = y;
     opt.textContent = `${y} 年`;
     yearSel.appendChild(opt);
   }
-  let selYear = yearList[0];
+  const year = yearList.includes(prevYear) ? prevYear : (yearList[0] || "");
+  jumpState.years = years;
+  jumpState.year = year;
+  yearSel.value = year;
+  fillJumpMonths(years, year, monthSel.value);
+}
 
-  function fillMonths() {
-    monthSel.replaceChildren();
-    const months = [...(years.get(selYear) || new Map()).keys()].sort((a, b) => b.localeCompare(a));
-    for (const m of months) {
-      const opt = document.createElement("option");
-      opt.value = m;
-      opt.textContent = MONTH_LABEL[Number(m)];
-      monthSel.appendChild(opt);
-    }
+function fillJumpMonths(years, year, prevMonth) {
+  const monthSel = document.getElementById("jump-month");
+  if (!monthSel) return;
+  const months = [...(years.get(year) || new Map()).keys()].sort((a, b) => b.localeCompare(a));
+  monthSel.replaceChildren();
+  for (const m of months) {
+    const opt = document.createElement("option");
+    opt.value = m;
+    opt.textContent = MONTH_LABEL[Number(m)];
+    monthSel.appendChild(opt);
   }
+  monthSel.value = months.includes(prevMonth) ? prevMonth : (months[0] || "");
+}
 
-  yearSel.addEventListener("change", () => {
-    selYear = yearSel.value;
-    fillMonths();
-  });
-  btn.addEventListener("click", () => {
-    document.getElementById(`year-${selYear}-month-${monthSel.value}`)
-      ?.scrollIntoView?.({ behavior: "smooth" });
-  });
-  fillMonths();
+// sticky-bar height -> --sticky-h so the anchor offset can never be smaller
+// than the bar itself (the chips row makes the bar taller on narrow screens)
+function trackStickyHeight() {
+  const bar = document.getElementById("jump-bar");
+  if (!bar || typeof ResizeObserver === "undefined") return;
+  const root = document.documentElement;
+  if (!root || !root.style) return;
+  const apply = () => root.style.setProperty("--sticky-h", `${bar.offsetHeight || 0}px`);
+  new ResizeObserver(apply).observe(bar);
+  apply();
 }
 
 let allPatches = [];
@@ -287,6 +383,29 @@ function renderTimeBrowser(patches, filterFn) {
   const container = document.getElementById("patch-list");
   const visible = filterFn ? patches.filter(filterFn) : patches;
   container.replaceChildren();
+  fillJumpBar(groupByYearMonth(visible));
+
+  const count = document.getElementById("patch-count");
+  if (count) {
+    const active = [...filter.selected].map((k) => CATEGORY_LABEL[k] || k);
+    count.textContent = `共 ${visible.length} 条补丁${active.length ? `　筛选：${active.join(" / ")}` : ""}`;
+  }
+  if (!visible.length) {
+    const empty = document.createElement("div");
+    empty.className = "empty-state";
+    const p = document.createElement("p");
+    p.textContent = "当前筛选下没有补丁。";
+    const clear = document.createElement("button");
+    clear.type = "button";
+    clear.className = "jump-btn";
+    clear.textContent = "清空筛选";
+    clear.addEventListener("click", () => setFilter([]));
+    empty.appendChild(p);
+    empty.appendChild(clear);
+    container.appendChild(empty);
+    return;
+  }
+
   const years = groupByYearMonth(visible);
   for (const [year, months] of [...years.entries()].sort((a, b) => b[0].localeCompare(a[0]))) {
     const yearSection = document.createElement("section");
@@ -339,7 +458,10 @@ function buildCategoryChips(patches) {
   const chips = document.createElement("div");
   chips.className = "chips";
   chips.id = "cat-chips";
+  chips.setAttribute("role", "group");
+  chips.setAttribute("aria-label", "按内容分类筛选补丁");
   const allBtn = document.createElement("button");
+  allBtn.type = "button";
   allBtn.className = "chip active";
   allBtn.dataset.cat = "";
   allBtn.textContent = "全部";
@@ -348,6 +470,7 @@ function buildCategoryChips(patches) {
   for (const key of CATEGORY_ORDER) {
     if (!present.has(key)) continue;
     const b = document.createElement("button");
+    b.type = "button";
     b.className = "chip";
     b.dataset.cat = key;
     b.textContent = CATEGORY_LABEL[key] || key;
@@ -358,6 +481,7 @@ function buildCategoryChips(patches) {
   // CATEGORY_ORDER chips when at least one standard-mode patch carries the flag
   if (patches.some((p) => p.mode === "standard" && p.has_hero_changes)) {
     const b = document.createElement("button");
+    b.type = "button";
     b.className = "chip";
     b.dataset.cat = "hero_changes";
     b.textContent = CATEGORY_LABEL.hero_changes;
@@ -378,6 +502,7 @@ function toggleCat(key) {
   }
   syncChips();
   renderTimeBrowser(allPatches, filterMatches);
+  syncURLState({ cat: [...filter.selected].join(",") });
 }
 
 function syncChips() {
@@ -387,6 +512,7 @@ function syncChips() {
     const key = btn.dataset.cat || "";
     const active = key === "" ? filter.selected.size === 0 : filter.selected.has(key);
     btn.className = "chip" + (active ? " active" : "");
+    btn.setAttribute?.("aria-pressed", active ? "true" : "false");
   }
 }
 
@@ -395,6 +521,7 @@ function setFilter(keys) {
   filter.selected = new Set((keys || []).filter((k) => CATEGORY_LABEL[k]));
   syncChips();
   renderTimeBrowser(allPatches, filterMatches);
+  syncURLState({ cat: [...filter.selected].join(",") });
 }
 
 function getFilter() {
@@ -403,11 +530,13 @@ function getFilter() {
 
 async function initIndex() {
   const data = await fetchJSON("data/patches_index.json");
-  document.getElementById("updated").textContent = fmtLocalTs(data.updated) || "-";
+  const updated = document.getElementById("updated");
+  updated.textContent = fmtDate(data.updated) || "-";
+  updated.title = "最新补丁日期（不是抓取时间）";
   allPatches = data.patches || [];
 
-  // ?cat=a,b seeds the initial filter (smoke-testable initial state; chip
-  // clicks stay local state, the URL is not rewritten)
+  // ?cat=a,b seeds the initial filter; every later change is written back to
+  // the URL by toggleCat/setFilter so the current view is shareable
   const q = new URLSearchParams(location.search).get("cat");
   if (q) {
     for (const k of q.split(",")) {
@@ -415,70 +544,369 @@ async function initIndex() {
     }
   }
 
-  buildJumpBar(groupByYearMonth(allPatches));
+  buildJumpBar();
   buildCategoryChips(allPatches);
   renderTimeBrowser(allPatches, filterMatches);
+  trackStickyHeight();
+  setPageMeta(
+    "守望先锋 · 补丁说明归档",
+    `按时间浏览守望先锋补丁说明：${allPatches.length} 个补丁，中英文合并展示。`);
 }
 
 /* ---------- entry search (entries.html) ---------- */
 
 const ENTRY_DIM_ORDER = ["weapon", "ability", "perk", "hero_attr", "hero"];
+const HERO_ROLE_ORDER = ["tank", "damage", "support"];
+const ENTRY_PAGE_SIZE = 60;
+
+// Renamed heroes / source-site typos users still type. Folded with every other
+// searchable field, so "McCree"/"麦克雷" reach Cassidy without touching the data.
+const HERO_SEARCH_ALIASES = {
+  cassidy: ["McCree", "麦克雷"],
+  "soldier-76": ["Solider: 76", "Soldier:76"],
+  "junker-queen": ["Junkerqueen"],
+  illari: ["Iliari"],
+  "d-va": ["DVa", "DVA"],
+  "d-mon": ["DMon"],
+  "wrecking-ball": ["WreckingBall"],
+  "lifeweaver": ["LifeWeaver"],
+};
+
+// Search folding: NFKD turns full-width forms into ASCII, stripping combining
+// marks removes accents (Lúcio -> lucio) and the punctuation pass makes
+// "D.Va" / "B.O.B." / "Soldier: 76" tokenizable. Everything downstream (matching,
+// ranking, highlighting) works on folded text.
+function foldSearch(value) {
+  return String(value == null ? "" : value)
+    .normalize("NFKD")
+    .toLowerCase()
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^\p{L}\p{N}]+/gu, " ")
+    .trim();
+}
+
+function compactSearch(value) {
+  return foldSearch(value).replace(/ /g, "");
+}
+
+// One precomputed document per entry: the flat token list (ASCII exact/prefix
+// matching), the joined text (CJK substring matching) and compacted names
+// (whole-name matching for "soldier76"/"dva"/"bob").
+function buildEntrySearchDoc(entry) {
+  const fields = [
+    entry.name_cn, entry.name_en, entry.slug,
+    entry.hero_cn, entry.hero_en, entry.hero_slug,
+    ...(entry.variants || []),
+    DIM_LABEL[entry.dimension] || entry.dimension,
+    ...(HERO_SEARCH_ALIASES[entry.hero_slug] || []),
+  ].filter(Boolean).map(foldSearch).filter(Boolean);
+  const names = [entry.name_cn, entry.name_en, entry.slug].filter(Boolean).map(foldSearch);
+  const heroes = [entry.hero_cn, entry.hero_en, entry.hero_slug].filter(Boolean).map(foldSearch);
+  entry._tokens = [...new Set(fields.join(" ").split(" ").filter(Boolean))];
+  entry._text = fields.join(" ");
+  entry._nameCompact = [...new Set(names.map((n) => n.replace(/ /g, "")))];
+  entry._heroTokens = [...new Set(heroes.join(" ").split(" ").filter(Boolean))];
+  entry._heroCompact = [...new Set(heroes.map((n) => n.replace(/ /g, "")))];
+  entry._compactAll = [...new Set([...entry._nameCompact, ...entry._heroCompact])];
+  // mixed-script fields (e.g. "士兵76") are the only place an ASCII query token
+  // may legitimately sit inside a longer token; keeping them apart from the
+  // Latin fields avoids "dva" matching "advan…
+  entry._cjkText = fields.filter((f) => /[\u3400-\u9fff]/.test(f)).join(" ");
+  return entry;
+}
+
+function parseEntryQuery(raw) {
+  const text = foldSearch(raw);
+  return { text, tokens: [...new Set(text.split(" ").filter(Boolean))] };
+}
+
+function tokenHits(tokens, compacts, token) {
+  return tokens.some((t) => t === token || t.startsWith(token))
+    || compacts.some((c) => c.startsWith(token));
+}
+
+// Every query token must hit something (multi-word AND). ASCII tokens match
+// token-exactly, as a prefix, as a prefix of a compacted name, or inside a
+// mixed-script field ("76" in "士兵76"); a token containing CJK falls back to
+// substring matching (Chinese has no spaces).
+function entryMatches(doc, tokens) {
+  return tokens.every((token) => {
+    if (/[\u3400-\u9fff\uf900-\ufaff]/.test(token)) return doc._text.includes(token);
+    return tokenHits(doc._tokens, doc._compactAll, token) || doc._cjkText.includes(token);
+  });
+}
+
+// 0 exact name, 1 name prefix, 2 hero-name match (searching a hero lists their
+// entries behind the hero card), 3 anything else that matched.
+function entryRank(doc, queryText, tokens) {
+  const compactQuery = queryText.replace(/ /g, "");
+  if (doc._nameCompact.some((n) => n === compactQuery)) return 0;
+  if (doc._nameCompact.some((n) => compactQuery.length >= 2 && n.startsWith(compactQuery))) return 1;
+  if (tokens.every((t) => tokenHits(doc._heroTokens, doc._heroCompact, t))) return 2;
+  return 3;
+}
+
+// wrap the first occurrence of any query token in <mark>
+function highlightTokens(text, tokens) {
+  const s = String(text == null ? "" : text);
+  if (!tokens || !tokens.length) return esc(s);
+  const lower = s.toLowerCase();
+  let best = null;
+  for (const token of tokens) {
+    const i = lower.indexOf(token);
+    if (i >= 0 && (!best || i < best.index)) best = { index: i, token };
+  }
+  if (!best) return esc(s);
+  const end = best.index + best.token.length;
+  return esc(s.slice(0, best.index)) + `<mark>${esc(s.slice(best.index, end))}</mark>` + esc(s.slice(end));
+}
+
+// shared by the list page and by the detail pages (a linked card keeps the
+// current search so "← 词条检索" goes back to the same result set)
+const entrySearchState = { q: "", dim: "", limit: ENTRY_PAGE_SIZE };
+let entryDocs = [];
+let entryFiltered = [];
+
+function entryHref(entry) {
+  const params = new URLSearchParams();
+  params.set("hero", entry.hero_slug || "");
+  params.set("key", entry.key || "");
+  const q = (entrySearchState.q || "").trim();
+  if (q) params.set("q", q);
+  if (entrySearchState.dim) params.set("dim", entrySearchState.dim);
+  return `entry.html?${params.toString()}`;
+}
+
+function entriesHref() {
+  const params = new URLSearchParams();
+  const q = (entrySearchState.q || "").trim();
+  if (q) params.set("q", q);
+  if (entrySearchState.dim) params.set("dim", entrySearchState.dim);
+  const qs = params.toString();
+  return qs ? `entries.html?${qs}` : "entries.html";
+}
+
+// point the detail pages' "back" affordances at the current search state
+function applyEntriesNav() {
+  const href = entriesHref();
+  for (const id of ["back-entries", "nav-entries"]) {
+    const el = document.getElementById(id);
+    if (el) el.href = href;
+  }
+}
+
+// read ?q/?dim for the detail pages so their links keep the search context
+function absorbEntrySearchParams() {
+  const params = new URLSearchParams(location.search);
+  const dim = params.get("dim") || "";
+  entrySearchState.q = params.get("q") || "";
+  entrySearchState.dim = ENTRY_DIM_ORDER.includes(dim) ? dim : "";
+  applyEntriesNav();
+}
+
+function selectedEntryMatches() {
+  const { text, tokens } = parseEntryQuery(entrySearchState.q);
+  const hits = [];
+  for (const entry of entryDocs) {
+    if (entrySearchState.dim && entry.dimension !== entrySearchState.dim) continue;
+    if (tokens.length && !entryMatches(entry, tokens)) continue;
+    hits.push({ entry, rank: tokens.length ? entryRank(entry, text, tokens) : 3 });
+  }
+  if (tokens.length) {
+    hits.sort((a, b) => a.rank - b.rank
+      || (b.entry.changes || 0) - (a.entry.changes || 0)
+      || String(a.entry.name_cn || a.entry.name_en || "")
+        .localeCompare(String(b.entry.name_cn || b.entry.name_en || ""), "zh"));
+  }
+  return hits;
+}
+
+function entryEmptyState() {
+  const box = document.createElement("div");
+  box.className = "empty-state";
+  const q = (entrySearchState.q || "").trim();
+  const dimLabel = entrySearchState.dim ? (DIM_LABEL[entrySearchState.dim] || entrySearchState.dim) : "";
+  const p = document.createElement("p");
+  p.textContent = q
+    ? `没有匹配「${q}」的${dimLabel ? dimLabel + "类" : ""}词条。`
+    : "当前筛选下没有词条。";
+  const clear = document.createElement("button");
+  clear.type = "button";
+  clear.className = "jump-btn";
+  clear.textContent = "清空搜索";
+  clear.addEventListener("click", () => resetEntrySearch(false));
+  const all = document.createElement("button");
+  all.type = "button";
+  all.className = "jump-btn ghost";
+  all.textContent = "查看全部词条";
+  all.addEventListener("click", () => resetEntrySearch(true));
+  box.appendChild(p);
+  box.appendChild(clear);
+  box.appendChild(all);
+  return box;
+}
+
+function resetEntrySearch(clearDim) {
+  entrySearchState.q = "";
+  if (clearDim) entrySearchState.dim = "";
+  const input = document.getElementById("search");
+  if (input) input.value = "";
+  syncDimChips();
+  applyEntryFilter();
+}
+
+function syncDimChips() {
+  const filters = document.getElementById("filters");
+  if (!filters) return;
+  for (const chip of filters.children) {
+    const active = (chip.dataset.dim || "") === entrySearchState.dim;
+    chip.classList.toggle("active", active);
+    chip.setAttribute("aria-pressed", active ? "true" : "false");
+  }
+}
+
+function renderEntryResults() {
+  const total = entryFiltered.length;
+  const shown = Math.min(entrySearchState.limit, total);
+  const count = document.getElementById("result-count");
+  if (count) count.textContent = `共 ${total} / ${entryDocs.length} 个词条`;
+  const { tokens } = parseEntryQuery(entrySearchState.q);
+  const grid = document.getElementById("results");
+  grid.replaceChildren();
+  for (const hit of entryFiltered.slice(0, shown)) grid.appendChild(entryCard(hit.entry, tokens));
+  grid.dataset.shown = String(shown);
+  const status = document.getElementById("entry-status");
+  if (!status) return;
+  status.replaceChildren();
+  if (!total) {
+    status.appendChild(entryEmptyState());
+  } else if (shown < total) {
+    const more = document.createElement("button");
+    more.type = "button";
+    more.id = "load-more";
+    more.className = "jump-btn";
+    more.textContent = `加载更多（还剩 ${total - shown} 条）`;
+    more.addEventListener("click", showMoreEntries);
+    status.appendChild(more);
+  }
+}
+
+// smoke-test hook + the "load more" handler: appending never re-sorts/re-filters
+function showMoreEntries() {
+  entrySearchState.limit += ENTRY_PAGE_SIZE;
+  renderEntryResults();
+}
+
+function applyEntryFilter() {
+  entryFiltered = selectedEntryMatches();
+  entrySearchState.limit = ENTRY_PAGE_SIZE;
+  const browse = document.getElementById("hero-browse");
+  if (browse) browse.hidden = !(entrySearchState.q.trim() === "" && !entrySearchState.dim);
+  renderEntryResults();
+  syncURLState({ q: entrySearchState.q.trim(), dim: entrySearchState.dim });
+}
 
 async function initEntries() {
-  let data;
-  try {
-    data = await fetchJSON("data/entries_index.json");
-  } catch {
-    document.getElementById("result-count").textContent = "词条索引加载失败";
-    return;
-  }
-  const all = data.entries || [];
+  const [data, heroData] = await Promise.all([
+    fetchJSON("data/entries_index.json"),
+    // auxiliary: the hero browse section degrades to hidden if it is missing
+    fetchJSON("data/heroes_index.json").catch(() => ({ heroes: [] })),
+    loadHeroIconSet(),
+  ]);
+  entryDocs = (data.entries || []).map(buildEntrySearchDoc);
+
+  buildHeroBrowse(heroData.heroes || [], entryDocs);
+
+  const params = new URLSearchParams(location.search);
+  const dim = params.get("dim") || "";
+  entrySearchState.q = params.get("q") || "";
+  entrySearchState.dim = ENTRY_DIM_ORDER.includes(dim) ? dim : "";
 
   const filters = document.getElementById("filters");
-  const chips = [["", "全部"], ...ENTRY_DIM_ORDER.map((d) => [d, DIM_LABEL[d]])];
-  for (const [dim, label] of chips) {
+  filters.replaceChildren();
+  const chipDefs = [["", "全部"], ...ENTRY_DIM_ORDER.map((d) => [d, DIM_LABEL[d]])];
+  for (const [chipDim, label] of chipDefs) {
     const b = document.createElement("button");
-    b.className = `chip ${dim === "" ? "active" : ""}`;
+    b.type = "button";
+    b.className = "chip";
     b.textContent = label;
-    b.dataset.dim = dim;
+    b.dataset.dim = chipDim;
     filters.appendChild(b);
   }
+  syncDimChips();
 
-  const state = { q: "", dim: "" };
-  const render = () => {
-    const q = state.q;
-    const results = all.filter((e) => {
-      if (state.dim && e.dimension !== state.dim) return false;
-      if (!q) return true;
-      const hay = [e.name_cn, e.name_en, e.slug, e.hero_cn, e.hero_en, e.hero_slug]
-        .concat(e.variants || []).filter(Boolean).join(" ").toLowerCase();
-      return hay.includes(q);
-    });
-    const count = document.getElementById("result-count");
-    count.textContent = `共 ${results.length} / ${all.length} 个词条`;
-    const grid = document.getElementById("results");
-    grid.textContent = "";
-    for (const e of results) grid.appendChild(entryCard(e));
-  };
+  const searchEl = document.getElementById("search");
+  searchEl.value = params.get("q") || "";
 
-  document.getElementById("search").addEventListener("input", (ev) => {
-    state.q = (ev.target.value || "").trim().toLowerCase();
-    render();
+  // debounce so a fast typist does not re-filter/re-render per keystroke; the
+  // first paint stays synchronous
+  let timer = 0;
+  searchEl.addEventListener("input", (ev) => {
+    entrySearchState.q = ev.target.value || "";
+    clearTimeout(timer);
+    timer = setTimeout(applyEntryFilter, 120);
   });
   filters.addEventListener("click", (ev) => {
     const chip = ev.target.closest?.(".chip");
     if (!chip) return;
-    state.dim = chip.dataset.dim || "";
-    filters.querySelectorAll(".chip").forEach((c) => c.classList.toggle("active", c === chip));
-    render();
+    entrySearchState.dim = chip.dataset.dim || "";
+    syncDimChips();
+    applyEntryFilter();
   });
-  render();
+  applyEntryFilter();
+  setPageMeta(
+    "守望先锋 · 词条检索",
+    `搜索 ${entryDocs.length} 个技能 / 武器 / 威能 / 英雄属性词条，追溯每个词条的完整更改记录。`);
 }
 
-function entryCard(e) {
+// "按英雄浏览": the hero timeline page was only reachable from an entry page
+// before, even though heroes_index.json carries role + names for every hero
+function buildHeroBrowse(heroes, entries) {
+  const host = document.getElementById("hero-browse");
+  if (!host || !heroes.length) return;
+  const counts = new Map();
+  for (const e of entries) counts.set(e.hero_slug, (counts.get(e.hero_slug) || 0) + 1);
+  host.replaceChildren();
+  const title = document.createElement("h2");
+  title.className = "section-title";
+  title.textContent = "按英雄浏览";
+  host.appendChild(title);
+  const roles = [...HERO_ROLE_ORDER, "__other__"];
+  for (const role of roles) {
+    const group = heroes.filter((h) => (HERO_ROLE_ORDER.includes(h.role) ? h.role : "__other__") === role);
+    if (!group.length) continue;
+    const rt = document.createElement("h3");
+    rt.className = "role-title";
+    rt.textContent = role === "__other__" ? "其他" : (ROLE_LABEL[role] || role);
+    host.appendChild(rt);
+    const grid = document.createElement("div");
+    grid.className = "hero-grid";
+    for (const h of group) grid.appendChild(heroCard(h, counts.get(h.slug) || 0));
+    host.appendChild(grid);
+  }
+}
+
+function heroCard(hero, entryCount) {
+  const a = document.createElement("a");
+  a.className = "hero-card";
+  a.href = `hero.html?slug=${encodeURIComponent(hero.slug)}`;
+  const cn = hero.cn || hero.en || hero.slug;
+  a.innerHTML = `
+    ${heroAvatar(hero.slug, cn, "hero-card-avatar")}
+    <span class="hero-card-names">
+      <span class="cn">${esc(cn)}</span>
+      <span class="en">${esc(hero.en || "")}</span>
+    </span>
+    <span class="count">${entryCount}</span>`;
+  return a;
+}
+
+function entryCard(e, tokens, withState = true) {
   const a = document.createElement("a");
   a.className = "entry-card";
-  a.href = `entry.html?hero=${encodeURIComponent(e.hero_slug)}&key=${encodeURIComponent(e.key)}`;
+  a.href = withState
+    ? entryHref(e)
+    : `entry.html?hero=${encodeURIComponent(e.hero_slug)}&key=${encodeURIComponent(e.key)}`;
   const meta = [
     `<span class="badge dim dim-${esc(e.dimension)}">${DIM_LABEL[e.dimension] || e.dimension}</span>`,
     `<span class="badge hero-role">${esc(ROLE_LABEL[e.hero_role] || e.hero_role || "")}</span>`,
@@ -486,11 +914,18 @@ function entryCard(e) {
   ].filter(Boolean).join(" ");
   const range = e.first_date && e.last_date && e.first_date !== e.last_date
     ? `${esc(e.first_date)} ~ ${esc(e.last_date)}` : esc(e.first_date || e.last_date || "");
+  const avatar = e.hero_slug
+    ? heroAvatar(e.hero_slug, e.hero_cn || e.hero_en || "", "card-avatar") : "";
+  const nameCn = highlightTokens(e.name_cn || e.name_en || e.key, tokens);
+  const nameEn = e.name_cn && e.name_en && e.name_cn !== e.name_en
+    ? ` / ${highlightTokens(e.name_en, tokens)}` : "";
+  // the card count is the merged row count, i.e. exactly what the detail page lists
+  const changes = e.changes == null ? e.count : e.changes;
   a.innerHTML = `
-    <div class="card-top">${meta}</div>
-    <div class="cn">${esc(e.name_cn || e.name_en || e.key)}${e.name_cn && e.name_en && e.name_cn !== e.name_en ? ` / ${esc(e.name_en)}` : ""}</div>
-    <div class="en">${esc(e.hero_cn || e.hero_en || "")}</div>
-    <div class="card-meta">${e.count} 条记录${range ? ` · ${range}` : ""}</div>`;
+    <div class="card-top">${avatar}${meta}</div>
+    <div class="cn">${nameCn}${nameEn}</div>
+    <div class="en">${highlightTokens(e.hero_cn || e.hero_en || "", tokens)}</div>
+    <div class="card-meta">${changes} 条更改记录${range ? ` · ${range}` : ""}</div>`;
   return a;
 }
 
@@ -518,7 +953,56 @@ function entryTitle(e) {
   return "其他改动";
 }
 
+// Display name of an entries_index entry (the index learns the CURRENT official
+// name from the ability map; timeline records may still carry the 2016 spelling,
+// which is why the detail page used to show "脉冲步枪" for "重脉冲步枪").
+function entryDisplayName(entry) {
+  if (!entry) return "";
+  const cn = entry.name_cn || "";
+  const en = entry.name_en || "";
+  if (cn && en) return cn === en ? cn : `${cn} / ${en}`;
+  return cn || en || entry.key || "";
+}
+
+// Kind badge text, corrected per dimension: weapon records carry kind "ability"
+// (they were parsed from ability blocks) and used to render "技能改动".
+function kindLabel(kind, dimension) {
+  if (dimension === "weapon") return "武器改动";
+  if (dimension === "hero_attr") return "属性改动";
+  return KIND_LABEL[kind] || "";
+}
+
+// Aliases worth showing on the detail page: variants minus the canonical names
+// (the ability map stores both names in variants, which made every alias line
+// repeat the title).
+function entryAliases(entry) {
+  if (!entry || !entry.variants) return [];
+  const canonical = new Set([entry.name_cn, entry.name_en].filter(Boolean).map((s) => s.toLowerCase()));
+  const seen = new Set();
+  const out = [];
+  for (const variant of entry.variants) {
+    if (!variant) continue;
+    const key = variant.toLowerCase();
+    if (canonical.has(key) || seen.has(key)) continue;
+    seen.add(key);
+    out.push(variant);
+  }
+  return out;
+}
+
 /* ---------- EN/CN record merging (entry + hero pages) ---------- */
+
+// patches_index.patches -> site patch id -> patch.html link for that side.
+// Shared by the entry page and the hero timeline (both link a record back to
+// the archived patch it came from).
+function buildPatchLinkMap(patches) {
+  const map = {};
+  for (const p of patches || []) {
+    if (p.patch_id_en) map[p.patch_id_en] = `patch.html?id=${encodeURIComponent(p.id)}&lang=en`;
+    if (p.patch_id_cn) map[p.patch_id_cn] = `patch.html?id=${encodeURIComponent(p.id)}&lang=cn`;
+  }
+  return map;
+}
 
 // patches_index.patches -> site patch id -> {id (p-* logical), other, title_cn, title_en}
 function buildPairMap(patches) {
@@ -616,11 +1100,29 @@ async function initHero() {
 
   const timeline = hero.timeline || [];
   const values = hero.values || {};
-  // pairing data is auxiliary: if it is missing the page degrades to unmerged rows
+  const heroName = `${hero.names.cn || hero.names.en || slug} / ${hero.names.en || ""}`.trim();
+  setPageMeta(
+    `${hero.names.cn || hero.names.en || slug} · 英雄改动轨迹 · 守望先锋归档`,
+    `${heroName} 的完整补丁改动历史（${timeline.length} 条记录）。`);
+  // pairing + patch links are auxiliary: if the index is missing the page
+  // degrades to unmerged rows with no internal patch links
   let pairMap = {};
+  let patchLinks = {};
+  let entryNames = {};
   try {
-    pairMap = buildPairMap((await fetchJSON("data/patches_index.json")).patches);
+    const index = await fetchJSON("data/patches_index.json");
+    pairMap = buildPairMap(index.patches);
+    patchLinks = buildPatchLinkMap(index.patches);
   } catch { /* no pairing data: keep single-site rows */ }
+  // canonical group titles (renamed abilities must not show their 2016 name)
+  try {
+    const entries = (await fetchJSON("data/entries_index.json")).entries || [];
+    for (const entry of entries) {
+      const name = entryDisplayName(entry);
+      if (name) entryNames[entry.key] = name;
+    }
+  } catch { /* no entries index: fall back to the record names */ }
+  absorbEntrySearchParams();
 
   // the default view is standard-only (special-mode patches must not pollute
   // the balance history); ?modes=all or the toggle opt into them
@@ -649,7 +1151,9 @@ async function initHero() {
       const e = row.m;
       const key = entryKey(e);
       const dim = e.dimension || (e.kind === "perk" ? "perk" : "other");
-      if (!groups.has(key)) groups.set(key, { dim, title: entryTitle(e), entries: [] });
+      if (!groups.has(key)) {
+        groups.set(key, { dim, title: entryNames[`${slug}::${key}`] || entryTitle(e), entries: [] });
+      }
       groups.get(key).entries.push(row);
     }
     for (const dim of DIM_ORDER) {
@@ -663,7 +1167,9 @@ async function initHero() {
         group.className = "timeline-group";
         group.innerHTML = `<h2>${esc(title)}${valueChips(values, entries[0].m)}</h2>`;
         const body = document.createElement("div");
-        for (const row of entries) body.appendChild(entryNode(row.m));
+        for (const row of entries) {
+          body.appendChild(entryNode(row.m, { patchHref: patchLinks[row.m.patch] || "" }));
+        }
         group.appendChild(body);
         dimSection.appendChild(group);
       }
@@ -704,7 +1210,7 @@ function entryNode(e, opts = {}) {
     : `<span class="badge ${esc(e.site)}">${SITE_LABEL[e.site]}</span>`;
   head.innerHTML = `
     ${siteBadge}
-    <span class="badge kind">${KIND_LABEL[e.kind]}</span>
+    <span class="badge kind">${esc(kindLabel(e.kind, e.dimension))}</span>
     ${e.subject ? `<span class="badge attr">${ATTR_LABEL[e.subject] || e.subject}</span>` : ""}
     ${editBadge}
     <span>${esc(e.date)}</span>
@@ -791,6 +1297,7 @@ async function initEntry() {
   const slug = params.get("hero");
   const key = params.get("key");
   if (!slug || !key) { location.href = "entries.html"; return; }
+  absorbEntrySearchParams();
 
   let hero;
   try {
@@ -801,18 +1308,18 @@ async function initEntry() {
   }
   let edits = { edits: {} };
   let patches = { patches: [] };
+  let index = { entries: [] };
   try {
-    [edits, patches] = await Promise.all([
+    [edits, patches, index] = await Promise.all([
       fetchJSON("data/official_edits.json"),
       fetchJSON("data/patches_index.json"),
+      fetchJSON("data/entries_index.json").catch(() => ({ entries: [] })),
     ]);
   } catch { /* auxiliary data missing: degrade to no badges / no patch links */ }
+  await loadHeroIconSet();
   const editsByPatch = edits.edits || {};
-  const patchLinks = {};
-  for (const p of patches.patches || []) {
-    if (p.patch_id_en) patchLinks[p.patch_id_en] = `patch.html?id=${encodeURIComponent(p.id)}&lang=en`;
-    if (p.patch_id_cn) patchLinks[p.patch_id_cn] = `patch.html?id=${encodeURIComponent(p.id)}&lang=cn`;
-  }
+  const patchLinks = buildPatchLinkMap(patches.patches);
+  const indexEntry = (index.entries || []).find((e) => e.key === key) || null;
 
   const timeline = hero.timeline || [];
   const heroName = `${hero.names.cn || ""}${hero.names.cn && hero.names.en ? " / " : ""}${hero.names.en || ""}`.trim();
@@ -826,16 +1333,21 @@ async function initEntry() {
     const dates = stdTimeline.map((e) => e.date).sort();
     const range = dates[0] !== dates[dates.length - 1]
       ? `${dates[0]} ~ ${dates[dates.length - 1]}` : dates[0];
-    // count merged EN+CN pairs as one change, consistent with the entry pages
+    // merged rows on this page: the index carries the same number, so the hero
+    // card and this meta line can never disagree
     const heroRows = mergeEntryRecords(stdTimeline, buildPairMap(patches.patches));
-    document.getElementById("entry-name").textContent = heroName || slug;
+    const heroChanges = indexEntry && indexEntry.changes != null ? indexEntry.changes : heroRows.length;
+    const heroTitle = entryDisplayName(indexEntry) || heroName || slug;
+    document.getElementById("entry-name").textContent = heroTitle;
+    setPageMeta(`${heroTitle} · 英雄 · 守望先锋词条`,
+      `${heroTitle} 的全部词条与 ${heroChanges} 条更改记录。`);
     document.getElementById("entry-hero").innerHTML =
       `<span class="entry-hero-link"><a href="hero.html?slug=${encodeURIComponent(slug)}">${esc(heroName || slug)}</a>（全部词条总览）</span>`;
     document.getElementById("entry-meta").innerHTML = `
       <span class="badge dim dim-hero">英雄</span>
       <span class="badge hero-role">${esc(ROLE_LABEL[hero.role] || hero.role || "")}</span>
       ${edited ? `<span class="badge edited">官方事后编辑</span>` : ""}
-      <span>${heroRows.length} 条更改记录</span>
+      <span>${heroChanges} 条更改记录</span>
       <span>${esc(range)}</span>`;
     const body = document.getElementById("entry-body");
     body.textContent = "";
@@ -862,9 +1374,16 @@ async function initEntry() {
   }
 
   const dim = allRecords[0].dimension || (allRecords[0].kind === "perk" ? "perk" : "other");
-  document.getElementById("entry-name").textContent = entryTitle(allRecords[0]);
+  // canonical name from the index; the newest record is only a fallback (the
+  // oldest one is the one with the 2016 spelling)
+  const displayName = entryDisplayName(indexEntry) || entryTitle(allRecords[allRecords.length - 1]);
+  document.getElementById("entry-name").textContent = displayName;
+  setPageMeta(`${displayName} · ${heroName || slug} · 守望先锋词条`,
+    `${heroName || slug} ${displayName} 的完整改动记录。`);
+  const aliases = entryAliases(indexEntry);
   document.getElementById("entry-hero").innerHTML =
-    `<span class="entry-hero-link"><a href="hero.html?slug=${encodeURIComponent(slug)}">${esc(heroName || slug)}</a>（全部词条）</span>`;
+    `<span class="entry-hero-link"><a href="hero.html?slug=${encodeURIComponent(slug)}">${esc(heroName || slug)}</a>（全部词条）</span>`
+    + (aliases.length ? `<span class="entry-aliases">别名：${aliases.map((a) => esc(a)).join("、")}</span>` : "");
 
   // default view is standard-only (special-mode records must not pollute the
   // entry history); the toggle or ?modes=all opt into them
@@ -896,7 +1415,7 @@ async function initEntry() {
       ? `${dates[0]} ~ ${dates[dates.length - 1]}` : dates[0];
     document.getElementById("entry-meta").innerHTML = `
       <span class="badge dim dim-${esc(dim)}">${DIM_LABEL[dim] || dim}</span>
-      <span class="badge kind">${KIND_LABEL[allRecords[0].kind] || ""}</span>
+      <span class="badge kind">${esc(kindLabel(allRecords[0].kind, dim))}</span>
       ${edited ? `<span class="badge edited">官方事后编辑</span>` : ""}
       <span>${rows.length} 条更改记录</span>
       <span>${esc(range)}</span>`;
@@ -1030,6 +1549,44 @@ async function renderRawText(el, text) {
   el.innerHTML = postProcess(out + esc(text.slice(pos)));
 }
 
+// {site}-YYYY-MM-DD-N -> data/patches/<site>/YYYY-MM-DD-N.json. Explicit regex
+// instead of positional slicing: a malformed id must fail visibly, not silently
+// request the wrong file.
+function patchFileFor(patchId, site) {
+  const m = /^[a-z]+-(\d{4}-\d{2}-\d{2})-(\d+)$/.exec(String(patchId || ""));
+  return m ? `data/patches/${site}/${m[1]}-${m[2]}.json` : "";
+}
+
+function buildLangSwitch(patchId, langs, active) {
+  const switcher = document.getElementById("lang-switch");
+  if (!switcher) return;
+  switcher.replaceChildren();
+  for (const s of langs) {
+    const a = document.createElement("a");
+    a.className = `lang-btn ${s === active ? "active" : ""}`;
+    a.href = `patch.html?id=${encodeURIComponent(patchId)}&lang=${s}`;
+    a.textContent = SITE_LABEL[s];
+    if (s === active) a.setAttribute("aria-current", "page");
+    switcher.appendChild(a);
+  }
+}
+
+function buildOfficialLinks(meta, sites) {
+  const links = document.getElementById("patch-links");
+  if (!links) return;
+  links.replaceChildren();
+  for (const s of sites) {
+    const url = s === "en" ? meta.url_en : meta.url_cn;
+    if (!url) continue;
+    const a = document.createElement("a");
+    a.href = url;
+    a.target = "_blank";
+    a.rel = "noopener noreferrer";
+    a.textContent = `${SITE_LABEL[s]}原文 ↗`;
+    links.appendChild(a);
+  }
+}
+
 async function initPatch() {
   const params = new URLSearchParams(location.search);
   const id = params.get("id");
@@ -1040,36 +1597,55 @@ async function initPatch() {
   const meta = index.patches.find((p) => p.id === id);
   if (!meta) {
     document.getElementById("patch-title").textContent = "未找到该补丁";
+    setPageMeta("未找到该补丁 · 守望先锋补丁归档");
     return;
   }
 
   const sites = meta.sites || [];
   const langs = sites.slice().sort((a, b) => (a === "cn" ? -1 : 1));
-  const active = sites.includes(lang) ? lang : langs[0];
+  const active = sites.includes(lang) ? lang : (langs[0] || "cn");
+  if (document.documentElement) {
+    document.documentElement.lang = active === "en" ? "en" : "zh-CN";
+  }
+
+  // Header shell first: the language switch and the official links are built
+  // before the archive file is requested, so a missing side still lets the
+  // reader switch to the other language instead of being stuck.
+  document.getElementById("patch-date").textContent = meta.date;
+  document.getElementById("patch-sites").innerHTML =
+    siteBadges(sites) + modeBadge(meta.mode) + categoryBadges(meta);
+  document.getElementById("patch-title").textContent = meta.title_cn || meta.title_en || id;
+  buildLangSwitch(id, langs, active);
+  buildOfficialLinks(meta, sites);
+
+  const titleOf = (patch) => (patch && patch.title) || meta.title_cn || meta.title_en || id;
+  const setPatchMeta = (title) => setPageMeta(
+    `${meta.date} · ${title} · 守望先锋补丁`,
+    `${meta.date} 守望先锋补丁说明：${title}`);
+
   const patchId = active === "en" ? meta.patch_id_en : meta.patch_id_cn;
-  const parts = patchId.split("-");
-  const file = `data/patches/${active}/${parts.slice(1, 4).join("-")}-${parts[4]}.json`;
+  const file = patchFileFor(patchId, active);
   let patch;
   try {
+    if (!file) throw new Error(`无法识别的补丁编号：${patchId || "(缺失)"}`);
     patch = await fetchJSON(file);
   } catch {
     // index entry exists but the archived JSON is missing: render what we know
     // instead of leaving the page blank on an unhandled rejection
-    document.getElementById("patch-date").textContent = meta.date;
-    document.getElementById("patch-sites").innerHTML = siteBadges(sites) + modeBadge(meta.mode) + categoryBadges(meta);
-    document.getElementById("patch-title").textContent = meta.title_cn || meta.title_en || id;
     const article = document.getElementById("patch-article");
     article.replaceChildren();
     const missing = document.createElement("p");
     missing.className = "text";
     missing.textContent = "该补丁内容暂缺（归档数据缺失或解析失败）。";
     article.appendChild(missing);
+    buildToc([]);
+    setPatchMeta(document.getElementById("patch-title").textContent);
     return;
   }
 
-  document.getElementById("patch-date").textContent = meta.date;
-  document.getElementById("patch-sites").innerHTML = siteBadges(sites) + modeBadge(meta.mode) + categoryBadges(meta);
   document.getElementById("patch-title").textContent = patch.title;
+  setPatchMeta(titleOf(patch));
+  await loadHeroIconSet();
 
   // official post-publication edits badge
   let editsByPatch = {};
@@ -1082,28 +1658,6 @@ async function initPatch() {
     const titles = editEvents.map((x) => (x.title || fmtLocalTs(x.ts) || "")).filter(Boolean).join("；");
     document.getElementById("patch-edits").innerHTML =
       `<span class="badge edited" title="${esc(titles)}">官方事后编辑 ${editEvents.length} 次${latest.ts ? `（最近 ${esc(fmtLocalTs(latest.ts))}）` : ""}</span>`;
-  }
-
-  // language switch
-  const switcher = document.getElementById("lang-switch");
-  for (const s of langs) {
-    const a = document.createElement("a");
-    a.className = `lang-btn ${s === active ? "active" : ""}`;
-    a.href = `patch.html?id=${encodeURIComponent(id)}&lang=${s}`;
-    a.textContent = SITE_LABEL[s];
-    switcher.appendChild(a);
-  }
-  const links = document.getElementById("patch-links");
-  for (const s of sites) {
-    const url = s === "en" ? meta.url_en : meta.url_cn;
-    if (url) {
-      const a = document.createElement("a");
-      a.href = url;
-      a.target = "_blank";
-      a.rel = "noopener";
-      a.textContent = `${SITE_LABEL[s]}原文 ↗`;
-      links.appendChild(a);
-    }
   }
 
   const article = document.getElementById("patch-article");
@@ -1148,7 +1702,7 @@ async function initPatch() {
         const fig = document.createElement("figure");
         // map asset keys are patch/section/map scoped (a patch can hold several
         // map sections whose image indices restart at 0)
-        fig.innerHTML = `<img src="assets/maps/${esc(patch.id)}/s${esc(secIdx)}/${esc(mi)}-${side}.png" alt="${esc(mapTitle || label)}" loading="lazy" onerror="this.style.display='none'"><figcaption>${esc(label)}</figcaption>`;
+        fig.innerHTML = `<img src="assets/maps/${esc(patch.id)}/s${esc(secIdx)}/${esc(mi)}-${side}.png" alt="${esc(mapTitle || label)}" loading="lazy"><figcaption>${esc(label)}</figcaption>`;
         cmp.appendChild(fig);
       }
       mc.appendChild(cmp);
@@ -1207,7 +1761,7 @@ function heroBlock(hero) {
   const block = document.createElement("div");
   block.className = "hero-block";
   const name = hero.name_cn || hero.name_en || hero.slug;
-  block.innerHTML = `<h3 class="hero-block-name">${hero.slug ? iconImg(heroIconPath(hero.slug), name, "hero-avatar") : ""}${esc(name)}</h3>`;
+  block.innerHTML = `<h3 class="hero-block-name">${heroAvatar(hero.slug, name, "hero-avatar")}${esc(name)}</h3>`;
   if (hero.dev_note) {
     const d = document.createElement("div");
     d.className = "text en-text dev-note";
@@ -1311,3 +1865,48 @@ function heroBlock(hero) {
   }
   return block;
 }
+
+/* ---------- page bootstrap ---------- */
+
+const PAGE_INIT = {
+  index: initIndex, entries: initEntries, entry: initEntry, hero: initHero, patch: initPatch,
+};
+
+// A failed data request must never leave a blank page: render the reason plus a
+// retry affordance into <main>. (initIndex/initPatch used to reject unhandled.)
+function mountLoadError(err) {
+  const host = (document.querySelector && document.querySelector("main")) || document.body;
+  if (!host) return;
+  host.textContent = "";
+  const box = document.createElement("div");
+  box.className = "load-error";
+  box.textContent = `数据加载失败：${err && err.message ? err.message : String(err)}`;
+  const retry = document.createElement("button");
+  retry.type = "button";
+  retry.className = "jump-btn";
+  retry.textContent = "重试";
+  retry.addEventListener("click", () => location.reload());
+  host.appendChild(box);
+  host.appendChild(retry);
+}
+
+function runPage(fn) {
+  Promise.resolve().then(fn).catch(mountLoadError);
+}
+
+// one capture-phase listener replaces the per-image inline onerror handlers
+// (inline handlers cannot coexist with a 'self'-only script CSP)
+function installImageFallback() {
+  if (!document.addEventListener) return;
+  document.addEventListener("error", (ev) => {
+    const target = ev.target;
+    if (target && target.tagName === "IMG") target.style.display = "none";
+  }, true);
+}
+
+installImageFallback();
+
+// <body data-page="…"> picks the page initializer (replaces the inline
+// <script>initXxx()</script> call each HTML page used to carry)
+const pageName = document.body && document.body.dataset && document.body.dataset.page;
+if (pageName && PAGE_INIT[pageName]) runPage(PAGE_INIT[pageName]);

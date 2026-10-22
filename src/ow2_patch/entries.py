@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import json
 import pathlib
+import re
 
 from .schema import INDEX_SCHEMA_VERSION
 
@@ -26,6 +27,8 @@ ATTR_CN = {
     "other": "其他",
 }
 
+_DIGITS_RE = re.compile(r"\d+(?:\.\d+)?")
+
 
 def entry_key(entry: dict) -> str | None:
     """Grouping key, byte-for-byte compatible with web/app.js entryKey()."""
@@ -39,6 +42,104 @@ def entry_key(entry: dict) -> str | None:
     if dim == "hero_attr":
         return f"attr::{entry.get('subject') or entry.get('metric') or 'other'}"
     return None
+
+
+def _js_entry_key(record: dict) -> str:
+    """Exact mirror of web/app.js entryKey(): never null.
+
+    Records outside the indexed dimensions group under ``other::`` — that matters
+    because the merge (unlike the index) still counts and pairs those records, so
+    a hero-wide merged count must use this key rather than ``entry_key()``.
+    """
+    dim = record.get("dimension") or ("perk" if record.get("kind") == "perk" else "other")
+    if dim in ("weapon", "ability"):
+        slug = record.get("ability_slug") or record.get("ability_en") or record.get("ability_cn") or ""
+        return f"{dim}::{slug}"
+    if dim == "perk":
+        slug = record.get("perk_slug") or record.get("perk_cn") or record.get("perk_en") or ""
+        return f"perk::{slug}"
+    if dim == "hero_attr":
+        return f"attr::{record.get('subject') or record.get('metric') or 'other'}"
+    return "other::"
+
+
+def _load_pair_map(data_dir: pathlib.Path) -> dict[str, str]:
+    """patch_id -> logical patch id, mirroring web/app.js buildPairMap().
+
+    Reads the already-written patches_index (regenerate_all builds it before the
+    entries index). A missing file means "no pairing data": every patch maps to
+    itself, so nothing merges — which is exactly what the synthetic fixtures in
+    tests/test_entries.py expect.
+    """
+    path = data_dir / "patches_index.json"
+    if not path.exists():
+        return {}
+    try:
+        patches = json.loads(path.read_text(encoding="utf-8")).get("patches", [])
+    except (OSError, json.JSONDecodeError):
+        return {}
+    pair_map: dict[str, str] = {}
+    for patch in patches:
+        logical_id = patch.get("id")
+        if not logical_id:
+            continue
+        for side in ("patch_id_en", "patch_id_cn"):
+            if patch.get(side):
+                pair_map[patch[side]] = logical_id
+    return pair_map
+
+
+def _numbers_overlap(a: str, b: str) -> bool:
+    """Same veto as web/app.js numbersOverlap(): two sides that both carry
+    numbers must share at least one exact numeric token."""
+    ta = _DIGITS_RE.findall(a or "")
+    tb = set(_DIGITS_RE.findall(b or ""))
+    if not ta or not tb:
+        return True
+    return any(token in tb for token in ta)
+
+
+def merged_change_count(records: list[dict], pair_map: dict[str, str]) -> int:
+    """Number of rows web/app.js will render for these records.
+
+    Line-by-line port of mergeEntryRecords(): group paired EN/CN records of the
+    same change, merge when both sides have equal counts AND the key is an
+    ability/weapon/perk (or the pair is one-to-one) AND the numeric fingerprints
+    agree; leave everything else as its own row. The frontend uses this number
+    for the entry card, so tools/_smoke_web.js asserts the two implementations
+    agree on every real entry.
+    """
+    groups: dict[tuple[str, str], dict[str, list[int]]] = {}
+    for index, record in enumerate(records):
+        logical_id = pair_map.get(record.get("patch") or "")
+        if not logical_id:
+            continue
+        bucket = groups.setdefault((logical_id, _js_entry_key(record)), {"en": [], "cn": []})
+        bucket["en" if record.get("site") == "en" else "cn"].append(index)
+
+    consumed: set[int] = set()
+    rows = 0
+    for index, record in enumerate(records):
+        if index in consumed:
+            continue
+        logical_id = pair_map.get(record.get("patch") or "")
+        if logical_id:
+            key = _js_entry_key(record)
+            bucket = groups[(logical_id, key)]
+            en, cn = bucket["en"], bucket["cn"]
+            one_to_one = len(en) == 1 and len(cn) == 1
+            mergeable = key.split("::", 1)[0] in ("ability", "weapon", "perk")
+            if len(en) == len(cn) and (mergeable or one_to_one):
+                position = en.index(index) if record.get("site") == "en" else cn.index(index)
+                en_index, cn_index = en[position], cn[position]
+                if _numbers_overlap(records[en_index].get("text_en") or "",
+                                    records[cn_index].get("text_cn") or ""):
+                    rows += 1
+                    consumed.add(en_index)
+                    consumed.add(cn_index)
+                    continue
+        rows += 1
+    return rows
 
 
 def build_official_edits(data_dir: pathlib.Path) -> dict:
@@ -80,8 +181,15 @@ def write_official_edits(data_dir: pathlib.Path, edits: dict) -> None:
 
 
 def build_entries_index(data_dir: pathlib.Path, official_edits: dict | None = None) -> dict:
-    """Flat search index of every searchable entry across all heroes."""
+    """Flat search index of every searchable entry across all heroes.
+
+    Each entry carries `count` (raw standard records, both sites counted) and
+    `changes` (rows the web detail page will actually render, i.e. EN/CN pairs
+    merged). The frontend shows `changes` so the card can never disagree with
+    the page it opens.
+    """
     edits = (official_edits or {}).get("edits", {})
+    pair_map = _load_pair_map(data_dir)
 
     heroes_meta: dict[str, dict] = {}
     updated = ""
@@ -132,6 +240,7 @@ def build_entries_index(data_dir: pathlib.Path, official_edits: dict | None = No
             "slug": slug,
             "variants": [],
             "count": len(timeline),
+            "changes": merged_change_count(timeline, pair_map),
             "first_date": _min_date(timeline),
             "last_date": _max_date(timeline),
             "edited": edited,
@@ -174,6 +283,7 @@ def build_entries_index(data_dir: pathlib.Path, official_edits: dict | None = No
                 "slug": rec_slug,
                 "variants": entry_variants,
                 "count": len(records),
+                "changes": merged_change_count(records, pair_map),
                 "first_date": _min_date(records),
                 "last_date": _max_date(records),
                 "edited": any(r.get("patch") in edits for r in records),

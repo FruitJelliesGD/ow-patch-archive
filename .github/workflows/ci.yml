@@ -23,3 +23,18 @@ jobs:
           name: pytest-log
           path: /tmp/pytest.log
           if-no-files-found: ignore
+
+  # The static site has no build step, but web/app.js is 1300 lines of DOM
+  # rendering that pytest cannot see. tools/_smoke_web.js runs every page's
+  # init function against the real data/ with a DOM shim and asserts the
+  # rendered structure (badges, grouping, merges, TOC, links). Its expected
+  # counts are derived from data/, so a new patch cannot turn it red.
+  web:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Web smoke test (DOM shim, no browser needed)
+        run: node tools/_smoke_web.js

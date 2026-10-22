@@ -3,23 +3,26 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https: data:; style-src 'self'; script-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="description" content="守望先锋补丁词条的完整更改记录：中英对照、数值 before→after、威能新增/移除/重做状态。">
+<meta name="color-scheme" content="dark">
 <title>词条详情 - 守望先锋</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b1420'/%3E%3Ccircle cx='16' cy='16' r='8' fill='none' stroke='%234fc3f7' stroke-width='3'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body data-page="entry">
 <header>
   <nav class="topnav">
     <a href="index.html">按时间浏览补丁</a>
-    <a href="entries.html">词条检索</a>
+    <a href="entries.html" id="nav-entries">词条检索</a>
   </nav>
-  <a class="back" href="entries.html">← 词条检索</a>
+  <a class="back" href="entries.html" id="back-entries">← 词条检索</a>
   <h1 id="entry-name">-</h1>
   <p class="sub" id="entry-hero">-</p>
   <p class="meta" id="entry-meta">-</p>
 </header>
 <main id="entry-body" class="entry-body"></main>
-<footer>数据来源：<a href="https://overwatch.blizzard.com/en-us/news/patch-notes/">overwatch.blizzard.com</a> · <a href="https://ow.blizzard.cn/news/patch-notes/">ow.blizzard.cn</a> · 仓库：<a href="https://github.com/FruitJelliesGD/ow-patch-archive">github.com/FruitJelliesGD/ow-patch-archive</a></footer>
+<footer>数据来源：<a href="https://overwatch.blizzard.com/en-us/news/patch-notes/" rel="noopener noreferrer">overwatch.blizzard.com</a> · <a href="https://ow.blizzard.cn/news/patch-notes/" rel="noopener noreferrer">ow.blizzard.cn</a> · 仓库：<a href="https://github.com/FruitJelliesGD/ow-patch-archive" rel="noopener noreferrer">github.com/FruitJelliesGD/ow-patch-archive</a></footer>
 <script src="app.js"></script>
-<script>initEntry();</script>
 </body>
 </html>

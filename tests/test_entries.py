@@ -9,6 +9,7 @@ from ow2_patch.entries import (
     build_entries_index,
     build_official_edits,
     entry_key,
+    merged_change_count,
     write_entries_index,
     write_official_edits,
 )
@@ -57,6 +58,58 @@ def test_entry_key_hero_attr_fallback_other():
 def test_entry_key_excludes_other_dimension():
     assert entry_key({"dimension": "other"}) is None
     assert entry_key({"kind": "general"}) is None
+
+
+# ---------- merged change count (port of web/app.js mergeEntryRecords) ----------
+
+PAIR_MAP = {"en-2026-06-30-1": "p-2026-06-30-1", "cn-2026-07-01-1": "p-2026-06-30-1"}
+
+
+def _pair(en_text="Damage increased from 50 to 60.", cn_text="伤害从50提高至60。"):
+    return [
+        make_entry(patch="en-2026-06-30-1", date="2026-06-30", site="en", text_en=en_text),
+        make_entry(patch="cn-2026-07-01-1", date="2026-07-01", site="cn", text_cn=cn_text),
+    ]
+
+
+def test_merged_change_count_merges_shared_numbers():
+    assert merged_change_count(_pair(), PAIR_MAP) == 1
+
+
+def test_merged_change_count_vetoes_disjoint_numbers():
+    """The numeric fingerprint veto keeps an EN/CN pair apart when neither
+    side's numbers appear on the other (they are different changes)."""
+    records = _pair(
+        en_text="Max overhealth reduced to 30% (Down from 65%).",
+        cn_text="过量生命值从100降低至75。",
+    )
+    assert merged_change_count(records, PAIR_MAP) == 2
+
+
+def test_merged_change_count_without_pairing_data_is_identity():
+    assert merged_change_count(_pair(), {}) == 2
+    # unequal side counts never merge either
+    records = _pair() + [make_entry(patch="en-2026-06-30-1", date="2026-06-30", site="en")]
+    assert merged_change_count(records, PAIR_MAP) == 3
+
+
+def test_entries_index_changes_field(tmp_path):
+    data_dir = tmp_path / "data"
+    (data_dir / "heroes").mkdir(parents=True)
+    (data_dir / "heroes" / "ana.json").write_text(json.dumps({
+        "slug": "ana", "names": {"en": "Ana", "cn": "安娜"}, "role": "support",
+        "timeline": _pair(), "values": {}}, ensure_ascii=False), encoding="utf-8")
+    (data_dir / "patches_index.json").write_text(json.dumps({
+        "schema_version": 1, "updated": "", "patches": [
+            {"id": "p-2026-06-30-1", "date": "2026-06-30",
+             "patch_id_en": "en-2026-06-30-1", "patch_id_cn": "cn-2026-07-01-1"}]},
+        ensure_ascii=False), encoding="utf-8")
+    idx = build_entries_index(data_dir)
+    ability = next(e for e in idx["entries"] if e["dimension"] == "ability")
+    assert ability["count"] == 2      # two raw records
+    assert ability["changes"] == 1    # one merged row on the detail page
+    hero = next(e for e in idx["entries"] if e["dimension"] == "hero")
+    assert hero["changes"] == 1
 
 
 # ---------- build_official_edits ----------
@@ -135,6 +188,7 @@ def test_entries_index_synthetic(tmp_path):
     assert ability["name_cn"] == "生物力场" and ability["name_en"] == "Biotic Field"
     assert ability["variants"] == ["生物力场", "禁疗手雷", "Biotic Field"]
     assert ability["count"] == 2
+    assert ability["changes"] == 2  # no patches_index in this fixture: nothing merges
     assert ability["first_date"] == "2016-05-27" and ability["last_date"] == "2026-06-30"
     assert ability["edited"] is True
     health = next(e for e in idx["entries"] if e["key"] == "ana::attr::health")
@@ -260,6 +314,21 @@ def test_real_entries_parity_with_hero_timelines():
             if key is None:
                 continue
             assert f"{hero['slug']}::{key}" in keys, (hero["slug"], key)
+
+
+def test_real_entries_changes_field():
+    """`changes` must be a plausible merged-row count on real data, and must be
+    strictly lower than `count` where the archive has EN/CN pairs."""
+    idx = build_entries_index(REAL_DATA, build_official_edits(REAL_DATA))
+    by_key = {e["key"]: e for e in idx["entries"]}
+    for entry in idx["entries"]:
+        assert 1 <= entry["changes"] <= entry["count"], entry["key"]
+    # the whole 2026-10-06 hotfix landed in one logical patch, but as 12 rows
+    assert by_key["sombra::ability::hotfix"]["count"] == 24
+    assert by_key["sombra::ability::hotfix"]["changes"] == 12
+    # 18 raw records, one EN/CN pair merged -> 17 rows on the detail page
+    assert by_key["soldier-76::weapon::heavy-pulse-rifle"]["count"] == 18
+    assert by_key["soldier-76::weapon::heavy-pulse-rifle"]["changes"] == 17
 
 
 def test_real_edited_flag():

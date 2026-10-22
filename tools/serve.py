@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import argparse
 import http.server
+import os
 import pathlib
 import shutil
 import sys
@@ -44,6 +45,4 @@ def main(argv: list[str] | None = None) -> int:
 
 
 if __name__ == "__main__":
-    import os
-
     sys.exit(main())
