@@ -421,6 +421,15 @@ const run = new Function(
     results.tocHasSec0 = document.getElementById("patch-toc").children.some((a) => a.href === "#sec-0");
     results.tocHiddenModern = document.getElementById("patch-toc").hidden;
 
+    // names stay Chinese-first even on the English view: the 中文站/英文站 switch
+    // only swaps the patch body, so an English patch page must still read 黑影 /
+    // 自动手枪, and Doctrine must read 血律
+    location.search = "?id=en-2026-10-13-1&lang=en";
+    await initPatch();
+    const enNamesBody = document.getElementById("patch-article");
+    results.patchNamesChineseFirst = findHtml(enNamesBody, /黑影/) && findHtml(enNamesBody, /自动手枪/);
+    results.patchDoctrineChinese = findHtml(enNamesBody, /血律/);
+
     location.search = "?id=en-2020-02-12-1&lang=en";
     await initPatch();
     results.patchHasContentLink = findHtml(document.getElementById("patch-article"), /<a href="https?:\\/\\//);
@@ -605,6 +614,8 @@ const run = new Function(
     if (!results.patchCategoryBadge) fail.push("patch category badge missing");
     if (!results.tocChildren || !results.tocHasSec0) fail.push("toc missing entries=" + results.tocChildren);
     if (results.tocHiddenModern) fail.push("modern toc should be visible");
+    if (!results.patchNamesChineseFirst) fail.push("EN patch page dropped the Chinese hero/ability names");
+    if (!results.patchDoctrineChinese) fail.push("EN patch page shows Doctrine instead of 血律");
     if (!results.legacyStructured || !results.legacyNoRawText) fail.push("legacy page not structured");
     if (!results.legacyHasAvatar) fail.push("legacy hero avatar missing");
     if (!results.legacyHasChangeList) fail.push("legacy change-list missing");

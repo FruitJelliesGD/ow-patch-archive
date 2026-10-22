@@ -1454,23 +1454,10 @@ async function initEntry() {
 
 /* ---------- patch detail (patch.html) ---------- */
 
-// Content language of the patch currently rendered. Names are picked from that
-// side even when the other side's name is present — an English patch page must
-// not title a hero "血律" and a Chinese one must not title it "Doctrine".
-let patchLang = "cn";
-
-const ROLE_LABEL_EN = { tank: "Tank", damage: "Damage", support: "Support" };
-
-function patchName(obj, cnKey, enKey) {
-  if (!obj) return "";
-  const cn = obj[cnKey];
-  const en = obj[enKey];
-  return patchLang === "en" ? (en || cn || "") : (cn || en || "");
-}
-
-function patchRoleLabel(role) {
-  return (patchLang === "en" ? ROLE_LABEL_EN[role] : ROLE_LABEL[role]) || "";
-}
+// Hero / ability / perk names are always Chinese-first: the archive is a
+// Chinese-first reader and the 中文站/英文站 switch only swaps the patch body.
+// A name without a CN spelling falls back to English. (Do not switch this on
+// `lang`: an English patch page must still read 黑影 / 自动手枪.)
 
 function buildToc(entries) {
   const toc = document.getElementById("patch-toc");
@@ -1622,7 +1609,6 @@ async function initPatch() {
   const sites = meta.sites || [];
   const langs = sites.slice().sort((a, b) => (a === "cn" ? -1 : 1));
   const active = sites.includes(lang) ? lang : (langs[0] || "cn");
-  patchLang = active;
   if (document.documentElement) {
     document.documentElement.lang = active === "en" ? "en" : "zh-CN";
   }
@@ -1686,7 +1672,7 @@ async function initPatch() {
   for (const section of patch.sections || []) {
     const sec = document.createElement("section");
     sec.className = "timeline-group";
-    const role = patchRoleLabel(section.role);
+    const role = ROLE_LABEL[section.role] || "";
     const secTitle = `${section.title || ""}${role ? `（${role}）` : ""}`;
     if (secTitle) sec.innerHTML = `<h2 id="sec-${secIdx}">${esc(secTitle)}</h2>`;
     tocEntries.push({ id: `sec-${secIdx}`, text: secTitle, level: 1 });
@@ -1732,7 +1718,7 @@ async function initPatch() {
       const hb = heroBlock(hero);
       hb.id = `hero-${secIdx}-${heroN}`;
       tocEntries.push({
-        id: hb.id, text: patchName(hero, "name_cn", "name_en") || hero.slug, level: 2,
+        id: hb.id, text: hero.name_cn || hero.name_en || hero.slug, level: 2,
       });
       body.appendChild(hb);
       heroN++;
@@ -1779,7 +1765,7 @@ async function initPatch() {
 function heroBlock(hero) {
   const block = document.createElement("div");
   block.className = "hero-block";
-  const name = patchName(hero, "name_cn", "name_en") || hero.slug;
+  const name = hero.name_cn || hero.name_en || hero.slug;
   block.innerHTML = `<h3 class="hero-block-name">${heroAvatar(hero.slug, name, "hero-avatar")}${esc(name)}</h3>`;
   if (hero.dev_note) {
     const d = document.createElement("div");
@@ -1805,7 +1791,7 @@ function heroBlock(hero) {
     status.textContent = STATUS_LABEL[perk.status] || perk.status;
     const h = document.createElement("div");
     h.className = "text";
-    h.innerHTML = `<strong>${esc(patchName(perk, "name_cn", "name_en") || "威能")}</strong> `;
+    h.innerHTML = `<strong>${esc(perk.name_cn || perk.name_en || "威能")}</strong> `;
     h.appendChild(status);
     p.appendChild(h);
     const lines = (perk.lines_cn && perk.lines_cn.length ? perk.lines_cn : perk.lines_en) || [];
@@ -1835,7 +1821,7 @@ function heroBlock(hero) {
     status.textContent = STATUS_LABEL[item.status] || item.status;
     const h = document.createElement("div");
     h.className = "text";
-    const itemName = patchName(item, "name_cn", "name_en");
+    const itemName = item.name_cn || item.name_en || "";
     h.innerHTML = `<strong>${esc(itemName)}</strong> `;
     if (item.rarity) {
       const r = document.createElement("span");
@@ -1867,7 +1853,7 @@ function heroBlock(hero) {
   for (const ability of hero.abilities || []) {
     const a = document.createElement("div");
     a.className = "entry";
-    const aname = patchName(ability, "name_cn", "name_en");
+    const aname = ability.name_cn || ability.name_en || "";
     a.innerHTML = `<div class="text"><strong>${ability.slug && hero.slug ? iconImg(abilityIconPath(hero.slug, ability.slug), aname, "ability-icon") : ""}${esc(aname)}</strong></div>`;
     const changes = ability.changes || [];
     if (changes.length) {

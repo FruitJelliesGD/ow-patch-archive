@@ -134,6 +134,8 @@ pip install -e ".[assets]" && python tools/optimize_assets.py   # 压缩新增�
 - **图标缺失**：`download_icons.py` 的 `--out` 必须是 **`web/assets/icons`**（站点读取
   `assets/icons/heroes`、`assets/icons/abilities`，地图会自动落在同级的 `web/assets/maps`）；
   工作流已按此配置，本地手动补图也请保持一致，否则图标会写到一个页面不会读取的目录。
+- **名称语言**：补丁页的英雄/技能/威能名**始终中文优先**（无中文名才回退英文），
+  中文站/英文站开关只切换补丁正文；英雄页与词条页则按「中文 / English」双写展示。
 - **英文站老格式（OW1 时代）**：无现代结构的页面自动降级为整段原文 `raw_text`，内容不丢失。
 - **中文站结构**：`ow.blizzard.cn` 的 HTML 存在未闭合标签，解析器按文本分片处理，不受影响。
 

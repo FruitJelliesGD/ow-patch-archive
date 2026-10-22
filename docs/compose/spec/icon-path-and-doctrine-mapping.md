@@ -30,18 +30,20 @@ commits: 未提交（本地变更）
    （`hero-6db24cbe` 等）。`data/names.json` 补入 `Doctrine → 血律`（support）以及
    `Invigorating Drones → 焕生无人机`、`Shrouded Momentum → 迅影疾行`、`Deliverance → 救赎恩典`，
    重新生成后两个英雄合并为一个（20 条记录 / 11 条合并后更改）、能力落到英文 slug 并对齐图标。
-4. **补丁页名称跟随内容语言**：此前 `heroBlock` 一律 `name_cn || name_en`，导致英文补丁页显示
-   中文英雄名（例如 lang=en 页上显示「黑影」）。新增 `patchLang`/`patchName`/`patchRoleLabel`，
-   英文页显示 Doctrine / Sombra / Tank，中文页显示 血律 / 黑影 / 重装（TOC 同步）。
+
+**补丁页名称保持中文优先**：英雄/技能/威能/Stadium 物品名与角色标签一律 `name_cn || name_en`，
+`lang` 只决定**正文**显示哪一侧。中途曾把名称改成跟随 `lang`（英文页显示 Doctrine），
+但本站是中文优先的读者站，英文页显示「血律/黑影/自动手枪」才是预期，故已回退并加断言锁定。
 
 **Verification** —
 - `python -m pytest -q` → **307 passed**（+2：血律→doctrine 与三个能力名解析；工作流 `--out` 契约）
-- `node tools/_smoke_web.js` → **ALL WEB ASSERTIONS OK**（期望值全部数据推导，英雄 55→54、词条 949→943 自动跟随）
+- `node tools/_smoke_web.js` → **ALL WEB ASSERTIONS OK**（含新增断言：`lang=en` 的补丁页仍渲染
+  黑影/自动手枪/血律；期望值全部数据推导，英雄 55→54、词条 949→943 自动跟随）
 - 真实浏览器（本地 serve）：
-  - `patch.html?id=en-2026-10-13-1&lang=en` → 英雄 **Doctrine**，`eternal-scepter`/`invigorating-drones` 图标 `naturalWidth > 0`
-  - `patch.html?id=p-2026-10-06-1&lang=en` → Doctrine + Transfusion/Invigorating Drones/Shrouded Momentum/Deliverance 四个技能图标全部加载
-  - `patch.html?id=p-2026-10-06-1&lang=cn` → **血律** + 活力传输/焕生无人机/迅影疾行/救赎恩典 四个图标全部加载
-  - 全程 0 个 4xx
+  - `patch.html?id=en-2026-10-13-1&lang=en` → 英雄 **血律 / 黑影 / 路霸 / 雾子 / D.Mon**，
+    技能 **焕生无人机 / 自动手枪 / 赛博空间 / 爆裂枪 / 呼吸器**（`eternal-scepter` 暂无中文名，回退英文）
+  - 同一页 `lang=cn` → 名称与 `lang=en` 一致（只切换正文语言）
+  - `patch.html?id=p-2026-10-06-1&lang=en` → Doctrine 与四个技能图标全部加载，0 个 4xx
 - `tools/rebuild.py` 幂等（连跑两遍无差异）；`optimize_assets.py` 复跑 0 rewritten；`web/` 20MB
 
 **Journey log** —
@@ -49,8 +51,9 @@ commits: 未提交（本地变更）
   分叉了。先按 `data/` 的图标引用做全量对账（633 条），才能区分"没下载"、"下错地方"和"引用路径错"。
 ② 血律问题暴露出名称映射缺口：`slugify("血律")` 必然产出哈希 slug，只有把 CN 名补进 `names.json`
   才能让两站合并；能力名同理，否则同一技能会以哈希 slug 各建一条历史。
-③ 补丁页一直是"中文名优先"，英文页显示中文名属于长期存在但没人报的 i18n 缺陷；顺手按 `lang`
-  切换名称，也避免合并后英文页显示「血律」。
+③ 顺手把补丁页名称改成"跟随 lang"是**过度设计**：本站界面与被合并的分组标题都是中文，
+   英文补丁页显示中文名才是既有且期望的行为；已回退，并让 smoke 断言 `lang=en` 页仍出现
+   黑影/自动手枪/血律，防止再被"顺手 i18n"改掉。
 
 ## [S1] Problem
 
@@ -59,8 +62,7 @@ commits: 未提交（本地变更）
 - 页面请求 `assets/icons/abilities/doctrine/eternal-scepter.png` 等 → 404 → 被捕获级 error 监听器
   `display:none`，表现为"无图标"；
 - 文件其实存在，只是被 CI 写进了 `web/assets/abilities/doctrine/…`（老目录），站点从不读取；
-- 同一个英雄在 EN/CN 两站是两条记录（`doctrine` 与 `hero-d205583e`），CN 侧能力名为哈希 slug；
-- 英文补丁页显示中文英雄名。
+- 同一个英雄在 EN/CN 两站是两条记录（`doctrine` 与 `hero-d205583e`），CN 侧能力名为哈希 slug。
 
 ## [S2] Design
 
@@ -69,20 +71,22 @@ commits: 未提交（本地变更）
 - **资产迁移**：一次性脚本按 `data/patches/**` 的图标引用，把 `icons/` 缺失而老目录存在的文件复制过去，
   再 `git rm -r web/assets/abilities`；删除孤儿 `icons/heroes/hero-d205583e.png`；`write_icon_index()` 重建清单。
 - **名称映射**（`data/names.json`）：`Doctrine`/`血律` + 3 个能力名，`tools/rebuild.py` 重富化。
-- **前端**（`web/app.js`）：`patchLang` 由 `initPatch` 的 `active` 决定，`patchName()` 选择该侧名称，
-  `patchRoleLabel()` 选择角色文案，用于英雄块、能力、威能、Stadium 物品与 TOC。
-- **测试**：`test_names.py` 覆盖血律/能力映射；`test_download_icons.py` 覆盖工作流 `--out` 契约。
+- **前端**（`web/app.js`）：**不**引入按语言的名称选择——英雄块、能力、威能、Stadium 物品、TOC
+  继续使用 `name_cn || name_en`；`lang` 仅用于正文、`<html lang>` 与标题。
+- **测试**：`test_names.py` 覆盖血律/能力映射；`test_download_icons.py` 覆盖工作流 `--out` 契约；
+  `_smoke_web.js` 断言英文补丁页仍渲染中文英雄/技能名。
 
 ## [S3] Out of Scope
 
 - 让工作流下载地图截图（`--include-maps`）：新地图差异图仍不会自动补，属于另一件事。
 - 清理 `web/assets/icons/abilities` 里已无引用的孤儿图标（6 个，不影响请求）。
 - 补丁正文（description/dev/general）不做中英选择：它们本来就是单语内容。
+- 名称不做"中文 / English"双写：补丁页保持简洁的中文优先，双语展示留在英雄页与词条页。
 
 ## Tasks
 
 - [x] T1: 工作流 `--out` 修复 + 契约测试 + 下载后优化步骤 —— acceptance: 测试通过；图标落到 `assets/icons`
 - [x] T2: 迁移 18 个图标、删除重复树、重建清单 —— acceptance: 633 条引用 0 缺失；`web/` ≤ 20MB
 - [x] T3: `names.json` 补充映射并重建 —— acceptance: 血律→doctrine、能力 slug 对齐、英雄数 55→54
-- [x] T4: 补丁页名称随 `lang` 切换 —— acceptance: EN 页 Doctrine / CN 页 血律；0 个 4xx
+- [x] T4: 补丁页名称恢复中文优先（放弃跟随 `lang`）并加 smoke 断言 —— acceptance: `lang=en` 页显示 黑影/自动手枪/血律
 - [x] T5: 全量验证（pytest 307 / smoke / 浏览器 4 页 / rebuild 幂等）+ README/本 spec
