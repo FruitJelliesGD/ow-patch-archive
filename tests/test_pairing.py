@@ -163,6 +163,24 @@ def test_real_patches_index_categories_invariants():
     assert "crossover" not in by_id["en-2024-10-28-1"]["categories"]
     assert "crossover" not in by_id["p-2026-02-09-1"]["categories"]
     assert sum("crossover" in p.get("categories", []) for p in index["patches"]) == 15
+    # title-scoped modes (tag-filter-rework): body-only mentions are noise
+    assert "stadium" not in by_id["en-2017-08-08-1"]["categories"]  # "new stadium" (Lucioball)
+    assert "stadium" not in by_id["en-2026-03-31-1"]["categories"]  # Stadium UI bug fix
+    assert "hero_trial" not in by_id["p-2025-12-09-1"]["categories"]  # post-trial balance note
+    assert "hero_trial" not in by_id["en-2024-08-20-1"]["categories"]  # post-trial feedback
+    assert "ptr" not in by_id["en-2020-02-25-1"]["categories"]  # "Unlike the PTR" comparison
+    assert "workshop" not in by_id["p-2026-04-14-1"]["categories"]  # custom-game bug fix
+    assert "workshop" not in by_id["p-2026-08-11-1"]["categories"]  # custom-game bug fix
+    # structural titles keep the tags
+    assert "stadium" in by_id["p-2026-10-06-1"]["categories"]
+    assert "hero_trial" in by_id["p-2025-03-19-1"]["categories"]
+    assert "ptr" in by_id["en-2018-03-29-1"]["categories"]
+    assert "workshop" in by_id["en-2019-07-16-1"]["categories"]
+    counts = {
+        key: sum(key in p.get("categories", []) for p in index["patches"])
+        for key in ("hero_trial", "ptr", "stadium", "workshop")
+    }
+    assert counts == {"hero_trial": 5, "ptr": 2, "stadium": 57, "workshop": 56}
     assert all(isinstance(p.get("categories"), list) for p in index["patches"])
     assert all("content_qp_hacked" not in p for p in index["patches"])
 

@@ -7,14 +7,18 @@ patches_index entry as `categories`. The frontend renders one badge per
 category and offers a multi-select filter over them.
 
 Every rule carries a scan SCOPE (CATEGORY_SCOPES): the whole content
-(WHOLE — mode categories need this: standard-titled patches whose BODY
-mentions the mode keep the badge without reclassification), title + section
-titles + block titles (TITLE_SECTIONS), or title + first non-empty section
-title (TITLE_FIRST — season launches). Body-level phrase hits are the dominant
-false-positive source (bug-fix mentions, dev notes, reward boilerplate,
-cosmetics), so content categories are title-scoped; per-key GUARDS handle the
-remaining false positives (e.g. Stadium-roster "New Heroes Added" sections,
-"Season N continues" first sections).
+(WHOLE), title + section titles + block titles (TITLE_SECTIONS), or title +
+first non-empty section title (TITLE_FIRST — season launches). Body-level
+phrase hits are the dominant false-positive source (bug-fix mentions, dev
+notes, reward boilerplate, cosmetics, post-trial feedback), so only the
+modes whose body content is itself the signal stay WHOLE: quick_play_hacked,
+april_fools, experiment_6v6 and community_created (standard-titled mixed
+patches keep the badge without reclassification). hero_trial, ptr, stadium
+and workshop are TITLE_SECTIONS: a "during her hero trial" recap, a
+"Unlike the PTR" comparison or a custom-game bug fix must not badge the
+patch. Per-key GUARDS handle the remaining false positives (e.g.
+Stadium-roster "New Heroes Added" sections, "Season N continues" first
+sections).
 
 The category regexes overlap intentionally with the mode title rules in
 modes.py: mode rules are title/section-scoped (authoritative), category rules
@@ -88,22 +92,26 @@ TITLE_SECTIONS = "title_sections"
 TITLE_FIRST = "title_first"
 
 CATEGORY_SCOPES: dict[str, str] = {
-    # mode categories scan the whole content: standard-titled mixed patches
-    # (e.g. p-2026-01-08-1's QP-Hacked block) keep the badge without
-    # reclassification; stadium/workshop are body-driven too
+    # WHOLE only where the body mention is the signal: standard-titled mixed
+    # patches (e.g. p-2026-01-08-1's QP-Hacked block) keep the badge without
+    # reclassification
     "quick_play_hacked": WHOLE,
     "april_fools": WHOLE,
     "experiment_6v6": WHOLE,
-    "hero_trial": WHOLE,
-    "ptr": WHOLE,
     "community_created": WHOLE,
+    # body mentions of these are noise: post-trial feedback, "Unlike the PTR"
+    # comparisons, bug-fix notes inside Stadium / Custom Game sections. A
+    # section or block title is the structural signal that the patch actually
+    # covers the mode.
+    "hero_trial": TITLE_SECTIONS,
+    "ptr": TITLE_SECTIONS,
+    "stadium": TITLE_SECTIONS,
+    "workshop": TITLE_SECTIONS,
     "event": TITLE_SECTIONS,
     "season": TITLE_FIRST,
     "new_hero": TITLE_SECTIONS,
     "new_map": TITLE_SECTIONS,
-    "stadium": WHOLE,
     "arcade": TITLE_SECTIONS,
-    "workshop": WHOLE,
     "owl": TITLE_SECTIONS,
     "crossover": TITLE_SECTIONS,
 }

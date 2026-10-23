@@ -131,7 +131,9 @@ def test_scopes_body_phrase_does_not_match_title_scoped_keys():
     notes, reward boilerplate) must not tag TITLE_SECTIONS/TITLE_FIRST keys."""
     ctx = _ctx(title="Retail Patch Notes", strings=[
         "Season 18 bug fixes", "New Hero balance changes", "Arcade reward",
-        "Summer Games skin", "Overwatch League shop bug", "New map in dev notes"])
+        "Summer Games skin", "Overwatch League shop bug", "New map in dev notes",
+        "during her hero trial", "Unlike the PTR", "bug fixed in Stadium",
+        "bug fixed in Custom Games"])
     assert categorize_patch(ctx) == []
 
 
@@ -141,6 +143,30 @@ def test_title_sections_scope_matches_section_and_block_titles():
     keys = categorize_patch(ctx)
     assert "season" in keys and "new_hero" in keys
     assert "event" not in keys
+
+
+def test_title_sections_scope_for_trial_ptr_stadium_workshop():
+    """hero_trial / ptr / stadium / workshop are TITLE_SECTIONS: post-trial
+    feedback, PTR comparisons and custom-game/stadium bug-fix body notes must
+    not badge the patch; section/block titles still do."""
+    body = _ctx(title="Retail Patch Notes", strings=[
+        "Vendetta performed well during her hero trial",
+        "Unlike the PTR, the Experimental area is not intended to be used",
+        "Fixed an issue in Stadium",
+        "Fixed a bug in Custom Games"])
+    assert categorize_patch(body) == []
+    for key, section_title in (
+        ("hero_trial", "Freja Hero Trial"),
+        ("ptr", "PTR Patch Notes"),
+        ("stadium", "Stadium Updates"),
+        ("workshop", "Workshop Updates"),
+    ):
+        keys = categorize_patch(_ctx(sections=[_sec(section_title)]))
+        assert key in keys, (key, keys)
+    # block titles are structural too (e.g. "Shared Install (PTR and Live)")
+    assert "ptr" in categorize_patch(
+        _ctx(sections=[_sec("PATCH HIGHLIGHTS",
+                            block_titles=["New Feature: Shared Install (PTR and Live)"])]))
 
 
 def test_title_first_scope_ignores_deep_sections():
