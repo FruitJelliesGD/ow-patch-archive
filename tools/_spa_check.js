@@ -285,7 +285,55 @@ async function main() {
         `browser back restores scroll (${scrollBeforeBack} -> ${info.y})`, failures);
     }
 
-    // ---- 7. a direct deep link still loads as a normal page ----
+    // ---- 7. index tag filter survives a patch detail round-trip ----
+    await page.getByRole("link", { name: "按时间浏览补丁" }).first().click();
+    await waitPage(page, "index");
+    await page.waitForSelector(".patch-entry");
+    await page.evaluate(() => setFilter(["event", "crossover"], "all"));
+    await page.waitForFunction(() => {
+      const params = new URLSearchParams(location.search);
+      return params.get("cat") === "event,crossover" && params.get("match") === "all";
+    });
+    {
+      const info = await page.evaluate(() => ({
+        summaryVisible: !document.getElementById("filter-summary").hidden,
+        selected: getFilter().join(","),
+        match: getFilterMatch(),
+      }));
+      check(info.summaryVisible && info.selected === "event,crossover" && info.match === "all",
+        `index filter: summary + state (${info.selected}, ${info.match})`, failures);
+    }
+    await page.click(".patch-entry");
+    await waitPage(page, "patch");
+    await page.waitForFunction(() => document.querySelectorAll("#lang-switch .lang-btn").length === 2);
+    {
+      const back = await page.evaluate(() => {
+        const a = document.getElementById("back-index");
+        return a ? a.getAttribute("href") : "";
+      });
+      const decoded = decodeURIComponent(back || "");
+      check(/cat=event,crossover/.test(decoded) && /match=all/.test(decoded),
+        `patch back link keeps filter (${decoded})`, failures);
+    }
+    await page.click("#back-index");
+    await waitPage(page, "index");
+    await page.waitForSelector(".patch-entry");
+    {
+      const info = await page.evaluate(() => ({
+        marker: window.__spaMarker,
+        selected: getFilter().join(","),
+        match: getFilterMatch(),
+        visible: document.querySelectorAll(".patch-entry").length,
+        total: allPatches.length,
+      }));
+      check(info.marker === marker, "filter round-trip: no document reload", failures);
+      check(info.selected === "event,crossover" && info.match === "all",
+        `filter round-trip: state restored (${info.selected}, ${info.match})`, failures);
+      check(info.visible > 0 && info.visible < info.total,
+        `filter round-trip: filtered list (${info.visible}/${info.total})`, failures);
+    }
+
+    // ---- 8. a direct deep link still loads as a normal page ----
     const deep = await context.newPage();
     try {
       await deep.goto(`${base}/entry.html?hero=soldier-76&key=soldier-76%3A%3Aweapon%3A%3Aheavy-pulse-rifle`);

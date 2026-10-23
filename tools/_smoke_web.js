@@ -26,11 +26,27 @@ const EXPECT = {
   jumpYears: new Set(patchIndex.patches.map((p) => p.date.slice(0, 4))).size,
   heroes: heroIndex.heroes.length,
   categories: [...new Set(patchIndex.patches.flatMap((p) => p.categories || []))].sort(),
+  modes: [...new Set(patchIndex.patches.map((p) => p.mode))].filter((m) => m !== "standard").sort(),
   hasHeroChip: patchIndex.patches.some((p) => p.mode === "standard" && p.has_hero_changes),
   pageSize: 60, // ENTRY_PAGE_SIZE in web/app.js
   heroSlugs: heroIndex.heroes.map((h) => h.slug),
   weaponEntries: entryIndex.entries.filter((e) => e.dimension === "weapon").length,
 };
+// chip counts must mirror the frontend predicates exactly (mode union +
+// content categories + structural hero_changes)
+const filterKeys = new Set([
+  ...patchIndex.patches.flatMap((p) => p.categories || []),
+  ...patchIndex.patches.map((p) => p.mode),
+]);
+filterKeys.delete("standard");
+const filterCounts = { "": patchIndex.patches.length };
+for (const key of filterKeys) {
+  filterCounts[key] = patchIndex.patches.filter(
+    (p) => p.mode === key || (p.categories || []).includes(key)).length;
+}
+filterCounts.hero_changes = patchIndex.patches.filter(
+  (p) => p.mode === "standard" && p.has_hero_changes).length;
+EXPECT.filterCounts = filterCounts;
 
 function makeEl(tag) {
   return {
@@ -104,6 +120,17 @@ const run = new Function(
 ;(async () => {
   const results = {};
   const fail = [];
+  const countVisiblePatches = () => {
+    let n = 0;
+    for (const year of document.getElementById("patch-list").children) {
+      for (const month of year.children) {
+        for (const list of month.children) {
+          if (list.className === "patch-list") n += list.children.length;
+        }
+      }
+    }
+    return n;
+  };
   try {
     await initIndex();
     let patchEntries = 0;
@@ -150,8 +177,23 @@ const run = new Function(
     results.indexSpecialNoHeroBadge = !/badge hero-changes/.test(specialEntryHtml);
     results.indexAnnouncementNoHeroBadge = !/badge hero-changes/.test(announcementEntryHtml);
     const chipBar = document.getElementById("cat-chips");
-    results.chipKeys = chipBar.children.map((c) => c.dataset.cat || "");
+    // group labels are direct children too (no querySelectorAll in this shim);
+    // keep only real chips by their data-cat attribute
+    results.chipKeys = chipBar.children
+      .filter((c) => c.dataset && c.dataset.cat !== undefined)
+      .map((c) => c.dataset.cat);
     results.chipCount = results.chipKeys.length;
+    results.chipCounts = {};
+    for (const c of chipBar.children) {
+      if (!c.dataset || c.dataset.cat === undefined) continue;
+      results.chipCounts[c.dataset.cat] = c.dataset.count || "";
+    }
+    results.groupLabels = chipBar.children
+      .filter((c) => c.className === "chip-group-label")
+      .map((c) => c.textContent);
+    results.chipCountsMatch = Object.keys(results.chipCounts)
+      .every((k) => results.chipCounts[k] === String(EXPECT.filterCounts[k]));
+    results.summaryInitiallyHidden = document.getElementById("filter-summary").hidden === true;
     setFilter(["event"]);
     let eventFiltered = 0;
     for (const year of document.getElementById("patch-list").children) {
@@ -164,6 +206,63 @@ const run = new Function(
     results.filteredCount = eventFiltered;
     setFilter([]);
     results.filterReset = getFilter().length === 0;
+    // mode-only chip: announcement is not a content category, so this proves
+    // the mode facet is derived from the mode field (and still filterable)
+    setFilter(["announcement"]);
+    results.announcementFiltered = countVisiblePatches();
+    results.announcementAllBadged = true;
+    for (const year of document.getElementById("patch-list").children) {
+      for (const month of year.children) {
+        for (const list of month.children) {
+          if (list.className !== "patch-list") continue;
+          for (const entry of list.children) {
+            if (!/公告/.test(entry.innerHTML || "")) results.announcementAllBadged = false;
+          }
+        }
+      }
+    }
+    setFilter([]);
+    // any/all semantics: ALL must narrow the OR result and every visible entry
+    // must carry both category labels
+    setFilter(["event", "crossover"], "any");
+    const anyCount = countVisiblePatches();
+    const anyMatch = getFilterMatch();
+    const anyUrl = decodeURIComponent(String(history.lastUrl || ""));
+    results.urlSyncAny = anyUrl.includes("cat=event,crossover")
+      && !anyUrl.includes("match=");
+    setFilter(["event", "crossover"], "all");
+    const allCount = countVisiblePatches();
+    results.andFilterCounts = allCount > 0 && allCount < anyCount;
+    results.andFilterMatch = anyMatch === "any" && getFilterMatch() === "all";
+    results.andFilterAllBadged = true;
+    for (const year of document.getElementById("patch-list").children) {
+      for (const month of year.children) {
+        for (const list of month.children) {
+          if (list.className !== "patch-list") continue;
+          for (const entry of list.children) {
+            const html = entry.innerHTML || "";
+            if (!/活动/.test(html) || !/联动/.test(html)) results.andFilterAllBadged = false;
+          }
+        }
+      }
+    }
+    const allUrl = decodeURIComponent(String(history.lastUrl || ""));
+    results.urlSyncAll = allUrl.includes("cat=event,crossover")
+      && allUrl.includes("match=all");
+    setFilter(["event"]);
+    results.singleMatchNormalized = getFilterMatch() === "any";
+    let filteredEntryHref = "";
+    for (const year of document.getElementById("patch-list").children) {
+      for (const month of year.children) {
+        for (const list of month.children) {
+          if (list.className === "patch-list" && list.children.length) {
+            filteredEntryHref = filteredEntryHref || (list.children[0].href || "");
+          }
+        }
+      }
+    }
+    results.patchHrefFilter = filteredEntryHref.includes("cat=event");
+    setFilter([]);
     // hero_changes filter: same predicate as the badge; every visible entry
     // must carry the badge
     setFilter(["hero_changes"]);
@@ -198,6 +297,9 @@ const run = new Function(
     // empty page
     renderTimeBrowser(allPatches, () => false);
     results.emptyState = findHtml(document.getElementById("patch-list"), /当前筛选下没有补丁/);
+    setFilter(["hero_changes", "ptr"], "all");
+    results.emptyStateAll = findHtml(document.getElementById("patch-list"), /没有同时包含这些标签的补丁/);
+    results.emptyStateRelax = findHtml(document.getElementById("patch-list"), /改为匹配任一/);
     setFilter([]);
 
     // jump bar: year select (one option per year present in the data) + month
@@ -442,6 +544,16 @@ const run = new Function(
     await initPatch();
     results.patchCategoryBadge = /快速比赛：黑客入侵/.test(document.getElementById("patch-sites").innerHTML || "");
 
+    location.search = "?id=p-2026-01-08-1&lang=en&cat=event,crossover&match=all";
+    await initPatch();
+    const backHref = decodeURIComponent(document.getElementById("back-index").href || "");
+    results.patchBackFilter = backHref.includes("cat=event,crossover")
+      && backHref.includes("match=all");
+    const langHref = decodeURIComponent(
+      String(document.getElementById("lang-switch").children[0].href || ""));
+    results.langSwitchFilter = langHref.includes("cat=event,crossover")
+      && langHref.includes("match=all");
+
     location.search = "?id=en-2016-05-27-1&lang=en";
     await initPatch();
     results.patchEdited = document.getElementById("patch-edits").innerHTML || "";
@@ -597,6 +709,8 @@ const run = new Function(
     if (results.probeFails.length) fail.push("search probes failed: " + results.probeFails.join(" | "));
     if (!results.emptyStateVisible) fail.push("zero-result search shows no message");
     if (!results.emptyStateActions) fail.push("zero-result search offers no way out");
+    if (!results.emptyStateAll) fail.push("AND-mode empty state does not explain itself");
+    if (!results.emptyStateRelax) fail.push("AND-mode empty state has no OR relaxation");
     if (!results.probeHighlight) fail.push("search hit is not highlighted");
     if (!results.urlKeepsCase) fail.push("?q= lost the original capitalisation");
     if (results.parityFails.length) {
@@ -609,10 +723,27 @@ const run = new Function(
     if (!results.indexCategoryBadge) fail.push("index category badge missing");
     // every category present in the data must have a chip (frontend/backend
     // label contract): a new category without a chip is unclickable
-    const wantChips = ["", ...EXPECT.categories, ...(EXPECT.hasHeroChip ? ["hero_changes"] : [])].sort();
+    const wantChips = ["", ...new Set([...EXPECT.categories, ...EXPECT.modes]),
+      ...(EXPECT.hasHeroChip ? ["hero_changes"] : [])].sort();
     if (JSON.stringify(results.chipKeys.slice().sort()) !== JSON.stringify(wantChips)) {
       fail.push("chipKeys=" + results.chipKeys.join("|") + " expected=" + wantChips.join("|"));
     }
+    if (JSON.stringify(results.groupLabels) !== JSON.stringify(["模式", "内容", "结构"])) {
+      fail.push("groupLabels=" + results.groupLabels.join("|"));
+    }
+    if (!results.chipCountsMatch) fail.push("chip counts do not match data predicates");
+    if (!results.summaryInitiallyHidden) fail.push("filter summary visible with no selection");
+    if (results.announcementFiltered !== EXPECT.filterCounts.announcement) {
+      fail.push("announcementFiltered=" + results.announcementFiltered);
+    }
+    if (!results.announcementAllBadged) fail.push("announcement filter shows unbadged entry");
+    if (!results.andFilterCounts) fail.push("match=all did not narrow the any-mode result");
+    if (!results.andFilterMatch) fail.push("match state not persisted (any/all)");
+    if (!results.andFilterAllBadged) fail.push("match=all shows an entry missing one selected tag");
+    if (!results.urlSyncAny) fail.push("match=any URL not canonical (cat=… without match)");
+    if (!results.urlSyncAll) fail.push("match=all URL not synced");
+    if (!results.singleMatchNormalized) fail.push("single-tag selection kept match=all");
+    if (!results.patchHrefFilter) fail.push("filtered patch link lost cat=…");
     if (!(results.filteredCount > 0 && results.filteredCount < results.indexPatches)) fail.push("filteredCount=" + results.filteredCount);
     if (!results.filterReset) fail.push("filter reset failed");
     if (!results.indexHasHeroChangesBadge) fail.push("index hero-changes badge missing");
@@ -652,6 +783,8 @@ const run = new Function(
     if (!results.patchHasContentLink) fail.push("patch content link missing");
     if (!results.patchHasModeBadge) fail.push("patch mode badge missing");
     if (!results.patchCategoryBadge) fail.push("patch category badge missing");
+    if (!results.patchBackFilter) fail.push("patch back link lost the index filter");
+    if (!results.langSwitchFilter) fail.push("patch language switch lost the index filter");
     if (!results.tocChildren || !results.tocHasSec0) fail.push("toc missing entries=" + results.tocChildren);
     if (results.tocHiddenModern) fail.push("modern toc should be visible");
     if (!results.patchNamesChineseFirst) fail.push("EN patch page dropped the Chinese hero/ability names");

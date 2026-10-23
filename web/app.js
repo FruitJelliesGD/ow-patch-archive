@@ -37,6 +37,25 @@ const CATEGORY_ORDER = [
   "community_created", "event", "season", "new_hero", "new_map",
   "stadium", "arcade", "workshop", "owl", "crossover",
 ];
+// Filter facets: modes are the classification authority (MODE_LABEL), so the
+// mode facet is derived from `mode` instead of requiring a category phrase
+// rule. The six mode keys that also exist as content categories stay in the
+// mode group; the content group is CATEGORY_ORDER minus those keys.
+const MODE_FILTER_KEYS = [
+  "quick_play_hacked", "april_fools", "experiment_6v6", "hero_trial", "ptr",
+  "community_created", "announcement",
+];
+const CONTENT_FILTER_KEYS = CATEGORY_ORDER.filter((k) => !MODE_FILTER_KEYS.includes(k));
+const FILTER_GROUPS = [
+  ["mode", "模式", MODE_FILTER_KEYS],
+  ["content", "内容", CONTENT_FILTER_KEYS],
+  ["structure", "结构", ["hero_changes"]],
+];
+const FILTER_KEYS = FILTER_GROUPS.flatMap((group) => group[2]);
+const FILTER_KEY_SET = new Set(FILTER_KEYS);
+// labels for mode-only keys (announcement) come from MODE_LABEL; content tags
+// keep their categories.py mirror.
+const FILTER_LABEL = Object.assign({}, CATEGORY_LABEL, MODE_LABEL);
 const MONTH_LABEL = ["", "1月", "2月", "3月", "4月", "5月", "6月",
   "7月", "8月", "9月", "10月", "11月", "12月"];
 
@@ -360,6 +379,19 @@ function buildJumpBar() {
   bar.appendChild(monthSel);
   bar.appendChild(btn);
 
+  // Mobile-only collapse control; CSS hides it on wide screens so the chips
+  // row stays permanently visible there. The active-filter summary remains
+  // visible even when the chips are collapsed.
+  const filterBtn = document.createElement("button");
+  filterBtn.type = "button";
+  filterBtn.id = "filter-toggle";
+  filterBtn.className = "filter-toggle";
+  filterBtn.textContent = "筛选";
+  filterBtn.setAttribute("aria-controls", "cat-chips");
+  filterBtn.setAttribute("aria-expanded", "true");
+  bar.appendChild(filterBtn);
+  filterToggleEl = filterBtn;
+
   yearSel.addEventListener("change", () => {
     jumpState.year = yearSel.value;
     fillJumpMonths(jumpState.years, jumpState.year, "");
@@ -419,14 +451,57 @@ function trackStickyHeight() {
 }
 
 let allPatches = [];
-const filter = { selected: new Set() };
+const filter = { selected: new Set(), match: "any" };
+let filtersCollapsed = false;
+let filterToggleEl = null;
+
+// One predicate per filter key: mode keys are matched against the
+// authoritative `mode` field (plus mixed-content categories, e.g. the
+// Quick Play Hacked block inside a standard patch); content keys only against
+// the content-category array; hero_changes is the structural signal.
+function keyMatches(p, key) {
+  if (key === "hero_changes") return p.mode === "standard" && !!p.has_hero_changes;
+  if (MODE_FILTER_KEYS.includes(key)) {
+    return p.mode === key || (p.categories || []).includes(key);
+  }
+  return (p.categories || []).includes(key);
+}
 
 function filterMatches(p) {
   if (filter.selected.size === 0) return true;
-  return [...filter.selected].some((k) =>
-    k === "hero_changes"
-      ? (p.mode === "standard" && p.has_hero_changes)
-      : (p.mode === k || (p.categories || []).includes(k)));
+  const keys = [...filter.selected];
+  return filter.match === "all"
+    ? keys.every((k) => keyMatches(p, k))
+    : keys.some((k) => keyMatches(p, k));
+}
+
+// canonical key order for the URL, the summary, and data-cat iteration
+function canonicalFilterKeys() {
+  return FILTER_KEYS.filter((k) => filter.selected.has(k));
+}
+
+function filterURLState() {
+  const keys = canonicalFilterKeys();
+  return {
+    cat: keys.length ? keys.join(",") : null,
+    match: filter.match === "all" && keys.length > 1 ? "all" : null,
+  };
+}
+
+function filterQueryString() {
+  const state = filterURLState();
+  const params = new URLSearchParams();
+  if (state.cat) params.set("cat", state.cat);
+  if (state.match) params.set("match", state.match);
+  return params;
+}
+
+function patchHref(p, site) {
+  const params = new URLSearchParams();
+  params.set("id", p.id);
+  params.set("lang", site);
+  for (const [key, value] of filterQueryString()) params.set(key, value);
+  return `patch.html?${params.toString()}`;
 }
 
 function groupByYearMonth(patches) {
@@ -449,14 +524,24 @@ function renderTimeBrowser(patches, filterFn) {
 
   const count = document.getElementById("patch-count");
   if (count) {
-    const active = [...filter.selected].map((k) => CATEGORY_LABEL[k] || k);
-    count.textContent = `共 ${visible.length} 条补丁${active.length ? `　筛选：${active.join(" / ")}` : ""}`;
+    const active = canonicalFilterKeys().map((k) => FILTER_LABEL[k] || k);
+    let text = `共 ${visible.length}`
+      + (visible.length === allPatches.length ? "" : ` / ${allPatches.length}`)
+      + " 条补丁";
+    if (active.length) {
+      text += ` · ${filter.match === "all" ? "同时包含" : "匹配任一"}：`
+        + active.join(filter.match === "all" ? " + " : " / ");
+    }
+    count.textContent = text;
   }
+  syncFilterSummary();
   if (!visible.length) {
     const empty = document.createElement("div");
     empty.className = "empty-state";
     const p = document.createElement("p");
-    p.textContent = "当前筛选下没有补丁。";
+    p.textContent = filter.selected.size && filter.match === "all"
+      ? "没有同时包含这些标签的补丁。"
+      : "当前筛选下没有补丁。";
     const clear = document.createElement("button");
     clear.type = "button";
     clear.className = "jump-btn";
@@ -464,6 +549,16 @@ function renderTimeBrowser(patches, filterFn) {
     clear.addEventListener("click", () => setFilter([]));
     empty.appendChild(p);
     empty.appendChild(clear);
+    // ALL-mode zero results are usually just too narrow a combination: offer
+    // the OR relaxation instead of forcing the user to deselect one by one.
+    if (filter.match === "all" && filter.selected.size > 1) {
+      const relax = document.createElement("button");
+      relax.type = "button";
+      relax.className = "jump-btn ghost";
+      relax.textContent = "改为匹配任一";
+      relax.addEventListener("click", () => setFilter([...filter.selected], "any"));
+      empty.appendChild(relax);
+    }
     container.appendChild(empty);
     return;
   }
@@ -493,7 +588,7 @@ function renderTimeBrowser(patches, filterFn) {
         const chars = site === "cn" ? (p.chars_cn ?? p.chars_en) : (p.chars_en ?? p.chars_cn);
         const a = document.createElement("a");
         a.className = "patch-entry";
-        a.href = `patch.html?id=${encodeURIComponent(p.id)}&lang=${site}`;
+        a.href = patchHref(p, site);
         a.innerHTML = `
           <span class="patch-entry-date">${esc(p.date)}</span>
           ${siteBadges(p.sites)}
@@ -511,83 +606,228 @@ function renderTimeBrowser(patches, filterFn) {
   }
 }
 
-// Multi-select content filter chips, appended inside the sticky jump bar.
-function buildCategoryChips(patches) {
-  const present = new Set();
-  for (const p of patches) {
-    for (const k of p.categories || []) present.add(k);
+function filterKeyPresent(key, patches) {
+  if (key === "hero_changes") {
+    return patches.some((p) => p.mode === "standard" && p.has_hero_changes);
   }
+  if (MODE_FILTER_KEYS.includes(key)) {
+    return patches.some((p) => p.mode === key || (p.categories || []).includes(key));
+  }
+  return patches.some((p) => (p.categories || []).includes(key));
+}
+
+function filterCount(key, patches) {
+  if (key === "hero_changes") {
+    return patches.filter((p) => p.mode === "standard" && p.has_hero_changes).length;
+  }
+  if (MODE_FILTER_KEYS.includes(key)) {
+    return patches.filter((p) => p.mode === key || (p.categories || []).includes(key)).length;
+  }
+  return patches.filter((p) => (p.categories || []).includes(key)).length;
+}
+
+function appendChipCount(btn, count, label, groupLabel) {
+  const n = document.createElement("span");
+  n.className = "chip-count";
+  n.textContent = String(count);
+  n.setAttribute("aria-hidden", "true");
+  btn.appendChild(n);
+  btn.dataset.count = String(count);
+  btn.title = `${label}：${count} 个补丁`;
+  btn.setAttribute("aria-label",
+    `${groupLabel ? groupLabel + "：" : ""}${label}，${count} 个补丁`);
+}
+
+function makeCategoryChip(key, label, count, groupLabel) {
+  const b = document.createElement("button");
+  b.type = "button";
+  b.className = "chip";
+  b.dataset.cat = key;
+  b.dataset.group = groupLabel;
+  b.textContent = label;
+  appendChipCount(b, count, label, groupLabel);
+  b.addEventListener("click", () => toggleCat(key));
+  return b;
+}
+
+// Multi-select filter chips, grouped by facet and appended inside the sticky
+// jump bar. Group labels are direct children (not wrappers) so the children
+// list stays trivially walkable by the smoke DOM shim.
+function buildCategoryChips(patches) {
   const chips = document.createElement("div");
   chips.className = "chips";
   chips.id = "cat-chips";
   chips.setAttribute("role", "group");
-  chips.setAttribute("aria-label", "按内容分类筛选补丁");
+  chips.setAttribute("aria-label", "按标签筛选补丁");
   const allBtn = document.createElement("button");
   allBtn.type = "button";
   allBtn.className = "chip active";
   allBtn.dataset.cat = "";
   allBtn.textContent = "全部";
+  appendChipCount(allBtn, patches.length, "全部", "");
   allBtn.addEventListener("click", () => toggleCat(""));
   chips.appendChild(allBtn);
-  for (const key of CATEGORY_ORDER) {
-    if (!present.has(key)) continue;
-    const b = document.createElement("button");
-    b.type = "button";
-    b.className = "chip";
-    b.dataset.cat = key;
-    b.textContent = CATEGORY_LABEL[key] || key;
-    b.addEventListener("click", () => toggleCat(key));
-    chips.appendChild(b);
-  }
-  // structural hero-changes chip: not a content category, appended after the
-  // CATEGORY_ORDER chips when at least one standard-mode patch carries the flag
-  if (patches.some((p) => p.mode === "standard" && p.has_hero_changes)) {
-    const b = document.createElement("button");
-    b.type = "button";
-    b.className = "chip";
-    b.dataset.cat = "hero_changes";
-    b.textContent = CATEGORY_LABEL.hero_changes;
-    b.addEventListener("click", () => toggleCat("hero_changes"));
-    chips.appendChild(b);
+  for (const [groupKey, groupLabel, keys] of FILTER_GROUPS) {
+    const present = keys.filter((key) => filterKeyPresent(key, patches));
+    if (!present.length) continue;
+    const label = document.createElement("span");
+    label.className = "chip-group-label";
+    label.dataset.group = groupKey;
+    label.textContent = groupLabel;
+    label.setAttribute("aria-hidden", "true");
+    chips.appendChild(label);
+    for (const key of present) {
+      chips.appendChild(makeCategoryChip(
+        key, FILTER_LABEL[key] || key, filterCount(key, patches), groupLabel));
+    }
   }
   document.getElementById("jump-bar").appendChild(chips);
+  buildFilterSummary();
+  initFilterToggle();
   syncChips();
+}
+
+function buildFilterSummary() {
+  const bar = document.getElementById("jump-bar");
+  if (!bar) return;
+  const box = document.createElement("div");
+  box.id = "filter-summary";
+  box.className = "filter-summary";
+  box.hidden = true;
+  const text = document.createElement("span");
+  text.id = "filter-summary-text";
+  text.className = "filter-summary-text";
+  box.appendChild(text);
+  const match = document.createElement("span");
+  match.id = "filter-match";
+  match.className = "match-toggle";
+  match.setAttribute("role", "group");
+  match.setAttribute("aria-label", "标签匹配方式");
+  for (const [value, label] of [["any", "任一"], ["all", "全部"]]) {
+    const b = document.createElement("button");
+    b.type = "button";
+    b.className = "match-btn";
+    b.dataset.match = value;
+    b.textContent = label;
+    b.title = value === "all" ? "同时包含全部已选标签" : "匹配任一已选标签";
+    b.addEventListener("click", () => setMatch(value));
+    match.appendChild(b);
+  }
+  box.appendChild(match);
+  const clear = document.createElement("button");
+  clear.type = "button";
+  clear.id = "filter-clear";
+  clear.className = "filter-clear";
+  clear.textContent = "清空筛选";
+  clear.addEventListener("click", () => setFilter([]));
+  box.appendChild(clear);
+  bar.appendChild(box);
+}
+
+function syncFilterSummary() {
+  const box = document.getElementById("filter-summary");
+  if (!box) return;
+  const keys = canonicalFilterKeys();
+  const active = keys.length > 0;
+  box.hidden = !active;
+  const text = document.getElementById("filter-summary-text");
+  if (text) {
+    text.textContent = active
+      ? `已选：${keys.map((k) => FILTER_LABEL[k] || k).join("、")}`
+      : "";
+  }
+  const match = document.getElementById("filter-match");
+  if (match) {
+    match.hidden = keys.length < 2;
+    for (const btn of match.children) {
+      if (!btn.dataset || btn.dataset.match === undefined) continue;
+      const on = btn.dataset.match === filter.match;
+      btn.className = "match-btn" + (on ? " active" : "");
+      btn.setAttribute("aria-pressed", on ? "true" : "false");
+    }
+  }
+  const clear = document.getElementById("filter-clear");
+  if (clear) clear.hidden = !active;
+  if (filterToggleEl) {
+    filterToggleEl.textContent = keys.length ? `筛选（${keys.length}）` : "筛选";
+    filterToggleEl.setAttribute("aria-expanded", filtersCollapsed ? "false" : "true");
+  }
+}
+
+function initFilterToggle() {
+  if (!filterToggleEl) return;
+  const bar = document.getElementById("jump-bar");
+  if (!bar) return;
+  const apply = (collapsed) => {
+    filtersCollapsed = collapsed;
+    bar.classList.toggle("filters-collapsed", collapsed);
+    filterToggleEl.setAttribute("aria-expanded", collapsed ? "false" : "true");
+    syncFilterSummary();
+  };
+  filterToggleEl.addEventListener("click", () => apply(!filtersCollapsed));
+  let narrow = false;
+  try {
+    narrow = typeof window !== "undefined"
+      && typeof window.matchMedia === "function"
+      && window.matchMedia("(max-width: 720px)").matches;
+  } catch { narrow = false; }
+  // Mobile starts collapsed only when the list is unfiltered; an active
+  // filter stays expanded so its chips remain visible.
+  apply(narrow && filter.selected.size === 0);
 }
 
 function toggleCat(key) {
   if (key === "") {
     filter.selected.clear();
+    filter.match = "any";
   } else if (filter.selected.has(key)) {
     filter.selected.delete(key);
+    if (filter.selected.size < 2) filter.match = "any";
   } else {
     filter.selected.add(key);
   }
   syncChips();
   renderTimeBrowser(allPatches, filterMatches);
-  syncURLState({ cat: [...filter.selected].join(",") });
+  syncURLState(filterURLState());
 }
 
 function syncChips() {
   const chips = document.getElementById("cat-chips");
   if (!chips) return;
   for (const btn of chips.children) {
+    // group labels are spans without data-cat; only real chips are toggled
+    if (!btn.dataset || btn.dataset.cat === undefined) continue;
     const key = btn.dataset.cat || "";
     const active = key === "" ? filter.selected.size === 0 : filter.selected.has(key);
     btn.className = "chip" + (active ? " active" : "");
     btn.setAttribute?.("aria-pressed", active ? "true" : "false");
   }
+  syncFilterSummary();
 }
 
 // smoke-test hook: same semantics as the chips, callable directly
-function setFilter(keys) {
-  filter.selected = new Set((keys || []).filter((k) => CATEGORY_LABEL[k]));
+function setFilter(keys, match) {
+  filter.selected = new Set((keys || []).filter((k) => FILTER_KEY_SET.has(k)));
+  if (filter.selected.size <= 1) filter.match = "any";
+  else if (match === "any" || match === "all") filter.match = match;
   syncChips();
   renderTimeBrowser(allPatches, filterMatches);
-  syncURLState({ cat: [...filter.selected].join(",") });
+  syncURLState(filterURLState());
+}
+
+function setMatch(match) {
+  filter.match = match === "all" && filter.selected.size > 1 ? "all" : "any";
+  syncChips();
+  renderTimeBrowser(allPatches, filterMatches);
+  syncURLState(filterURLState());
 }
 
 function getFilter() {
-  return [...filter.selected];
+  return canonicalFilterKeys();
+}
+
+function getFilterMatch() {
+  return filter.match;
 }
 
 async function initIndex() {
@@ -595,6 +835,9 @@ async function initIndex() {
   // full page load would have discarded (filter chips, jump-bar selection).
   allPatches = [];
   filter.selected.clear();
+  filter.match = "any";
+  filtersCollapsed = false;
+  filterToggleEl = null;
   jumpState.years = new Map();
   jumpState.year = "";
 
@@ -604,14 +847,18 @@ async function initIndex() {
   updated.title = "最新补丁日期（不是抓取时间）";
   allPatches = data.patches || [];
 
-  // ?cat=a,b seeds the initial filter; every later change is written back to
-  // the URL by toggleCat/setFilter so the current view is shareable
-  const q = new URLSearchParams(location.search).get("cat");
+  // ?cat=a,b seeds the initial filter; ?match=all opts into AND. Every later
+  // change is written back to the URL by toggleCat/setFilter so the current
+  // view is shareable, and an old ?cat=a,b link keeps its OR meaning.
+  const params = new URLSearchParams(location.search);
+  const q = params.get("cat");
   if (q) {
     for (const k of q.split(",")) {
-      if (CATEGORY_LABEL[k]) filter.selected.add(k);
+      if (FILTER_KEY_SET.has(k)) filter.selected.add(k);
     }
   }
+  filter.match = params.get("match") === "all" && filter.selected.size > 1
+    ? "all" : "any";
 
   buildJumpBar();
   buildCategoryChips(allPatches);
@@ -1636,14 +1883,20 @@ function patchFileFor(patchId, site) {
   return m ? `data/patches/${site}/${m[1]}-${m[2]}.json` : "";
 }
 
-function buildLangSwitch(patchId, langs, active) {
+function buildLangSwitch(patchId, langs, active, context) {
   const switcher = document.getElementById("lang-switch");
   if (!switcher) return;
   switcher.replaceChildren();
   for (const s of langs) {
+    const params = new URLSearchParams();
+    params.set("id", patchId);
+    params.set("lang", s);
+    if (context) {
+      for (const [key, value] of context) params.set(key, value);
+    }
     const a = document.createElement("a");
     a.className = `lang-btn ${s === active ? "active" : ""}`;
-    a.href = `patch.html?id=${encodeURIComponent(patchId)}&lang=${s}`;
+    a.href = `patch.html?${params.toString()}`;
     a.textContent = SITE_LABEL[s];
     if (s === active) a.setAttribute("aria-current", "page");
     switcher.appendChild(a);
@@ -1687,6 +1940,19 @@ async function initPatch() {
     document.documentElement.lang = active === "en" ? "en" : "zh-CN";
   }
 
+  // Carry the index filter through the patch page: the back link and the
+  // language switch return to the same filtered view.
+  const filterContext = new URLSearchParams();
+  const filterCat = params.get("cat");
+  if (filterCat) {
+    filterContext.set("cat", filterCat);
+    if (params.get("match") === "all") filterContext.set("match", "all");
+  }
+  const back = document.getElementById("back-index");
+  if (back) {
+    back.href = "index.html" + (filterContext.toString() ? `?${filterContext}` : "");
+  }
+
   // Header shell first: the language switch and the official links are built
   // before the archive file is requested, so a missing side still lets the
   // reader switch to the other language instead of being stuck.
@@ -1694,7 +1960,7 @@ async function initPatch() {
   document.getElementById("patch-sites").innerHTML =
     siteBadges(sites) + modeBadge(meta.mode) + categoryBadges(meta);
   document.getElementById("patch-title").textContent = meta.title_cn || meta.title_en || id;
-  buildLangSwitch(id, langs, active);
+  buildLangSwitch(id, langs, active, filterContext);
   buildOfficialLinks(meta, sites);
 
   const titleOf = (patch) => (patch && patch.title) || meta.title_cn || meta.title_en || id;

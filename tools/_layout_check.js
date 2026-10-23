@@ -114,6 +114,94 @@ async function main() {
     check(collapsed.colStart === "1" && collapsed.colEnd === "-1",
       `collapsed TOC: article spans full row (${collapsed.colStart} / ${collapsed.colEnd})`, failures);
 
+    // ---- 8. index filter bar: grouping, counts, summary, mobile collapse ----
+    await page.setViewportSize({ width: 1280, height: 900 });
+    await page.goto(`http://127.0.0.1:${PORT}/index.html`);
+    await page.waitForSelector("#cat-chips .chip");
+    {
+      const info = await page.evaluate(() => ({
+        groups: [...document.querySelectorAll(".chip-group-label")].map((e) => e.textContent),
+        chips: document.querySelectorAll("#cat-chips .chip").length,
+        toggleDisplay: getComputedStyle(document.getElementById("filter-toggle")).display,
+        overflow: document.documentElement.scrollWidth > window.innerWidth + 1,
+      }));
+      check(JSON.stringify(info.groups) === JSON.stringify(["模式", "内容", "结构"]),
+        `index filter: group labels (${info.groups.join("|")})`, failures);
+      check(info.chips === 18, `index filter: chip count ${info.chips}`, failures);
+      check(info.toggleDisplay === "none", `index filter: desktop toggle hidden (${info.toggleDisplay})`, failures);
+      check(!info.overflow, "index filter: no desktop horizontal overflow", failures);
+    }
+    await page.evaluate(() => setFilter(["event", "crossover"], "all"));
+    await page.waitForFunction(() => !document.getElementById("filter-summary").hidden);
+    {
+      const info = await page.evaluate(() => ({
+        summary: document.getElementById("filter-summary-text").textContent,
+        matchVisible: !document.getElementById("filter-match").hidden,
+        clearVisible: !document.getElementById("filter-clear").hidden,
+        overflow: document.documentElement.scrollWidth > window.innerWidth + 1,
+      }));
+      check(/已选：/.test(info.summary) && info.matchVisible && info.clearVisible,
+        `index filter: summary row (${info.summary})`, failures);
+      check(!info.overflow, "index filter: no horizontal overflow with summary", failures);
+    }
+    // URL seeding (shareable link): ?cat=…&match=all must restore the view
+    await page.goto(`http://127.0.0.1:${PORT}/index.html?cat=event,crossover&match=all`);
+    await page.waitForSelector(".patch-entry");
+    {
+      const info = await page.evaluate(() => ({
+        selected: getFilter().join(","),
+        match: getFilterMatch(),
+        summaryVisible: !document.getElementById("filter-summary").hidden,
+        visible: document.querySelectorAll(".patch-entry").length,
+        total: allPatches.length,
+      }));
+      check(info.selected === "event,crossover" && info.match === "all" && info.summaryVisible,
+        `index filter: URL seeds state (${info.selected}, ${info.match})`, failures);
+      check(info.visible > 0 && info.visible < info.total,
+        `index filter: URL-seeded list is filtered (${info.visible}/${info.total})`, failures);
+    }
+    // old shared links (?cat=…, no match) keep their OR meaning
+    await page.goto(`http://127.0.0.1:${PORT}/index.html?cat=event,crossover`);
+    await page.waitForSelector(".patch-entry");
+    {
+      const info = await page.evaluate(() => ({
+        selected: getFilter().join(","),
+        match: getFilterMatch(),
+        visible: document.querySelectorAll(".patch-entry").length,
+      }));
+      check(info.selected === "event,crossover" && info.match === "any",
+        `index filter: legacy ?cat keeps OR (${info.match})`, failures);
+      check(info.visible > 0, `index filter: legacy ?cat renders (${info.visible})`, failures);
+    }
+
+    await page.setViewportSize({ width: 390, height: 844 });
+    await page.goto(`http://127.0.0.1:${PORT}/index.html`);
+    // the mobile bar starts collapsed, so the chips are attached but hidden
+    await page.waitForSelector("#cat-chips .chip", { state: "attached" });
+    {
+      const info = await page.evaluate(() => ({
+        toggleDisplay: getComputedStyle(document.getElementById("filter-toggle")).display,
+        collapsed: document.getElementById("jump-bar").classList.contains("filters-collapsed"),
+        chipsDisplay: getComputedStyle(document.getElementById("cat-chips")).display,
+        overflow: document.documentElement.scrollWidth > window.innerWidth + 1,
+      }));
+      check(info.toggleDisplay !== "none", `index filter: mobile toggle visible (${info.toggleDisplay})`, failures);
+      check(info.collapsed && info.chipsDisplay === "none",
+        `index filter: mobile chips start collapsed (${info.chipsDisplay})`, failures);
+      check(!info.overflow, "index filter: no mobile horizontal overflow", failures);
+    }
+    await page.click("#filter-toggle");
+    {
+      const info = await page.evaluate(() => ({
+        expanded: document.getElementById("filter-toggle").getAttribute("aria-expanded"),
+        chipsDisplay: getComputedStyle(document.getElementById("cat-chips")).display,
+        overflow: document.documentElement.scrollWidth > window.innerWidth + 1,
+      }));
+      check(info.expanded === "true" && info.chipsDisplay !== "none",
+        `index filter: mobile toggle expands (${info.expanded}, ${info.chipsDisplay})`, failures);
+      check(!info.overflow, "index filter: expanded mobile chips do not widen the page", failures);
+    }
+
     await browser.close();
   } finally {
     if (browser) await browser.close().catch(() => {});
