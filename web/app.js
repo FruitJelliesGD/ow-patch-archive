@@ -40,11 +40,32 @@ const CATEGORY_ORDER = [
 const MONTH_LABEL = ["", "1月", "2月", "3月", "4月", "5月", "6月",
   "7月", "8月", "9月", "10月", "11月", "12月"];
 
+// Session-scoped JSON cache: SPA view switches revisit the same indexes, so
+// the 0.4 MB entries_index / 0.2 MB patches_index must not be downloaded again
+// for every page. Failures are never cached (the retry button / next view must
+// hit the network again).
+const JSON_CACHE = new Map();
+
 async function fetchJSON(path) {
-  const resp = await fetch(path);
-  if (!resp.ok) throw new Error(`failed to load ${path}: ${resp.status}`);
-  return resp.json();
+  if (!JSON_CACHE.has(path)) {
+    const pending = fetch(path).then((resp) => {
+      if (!resp.ok) throw new Error(`failed to load ${path}: ${resp.status}`);
+      return resp.json();
+    });
+    JSON_CACHE.set(path, pending);
+    pending.catch(() => JSON_CACHE.delete(path));
+  }
+  return JSON_CACHE.get(path);
 }
+
+// SPA navigation state: the last rendered pathname+search, the promise of the
+// current view's initializer (navigations wait for it before touching the DOM),
+// and a generation counter that discards superseded navigations.
+let currentRouteKey = "";
+let activeRender = Promise.resolve();
+let navSeq = 0;
+let navPending = false;
+let scrollSaveTimer = 0;
 
 // String-based escaper: no DOM round-trip (this runs a few thousand times per
 // page) and attribute-safe — quotes are escaped too, so `esc()` output can sit
@@ -86,11 +107,28 @@ function setPageMeta(title, description) {
   if (meta && meta.setAttribute) meta.setAttribute("content", description || title);
 }
 
+// Current history entry with the live scroll offset folded in. Used by the
+// filter/search replaceState calls so they never wipe the SPA scroll position,
+// and by the router before pushing a new entry.
+function historyStateWithScroll() {
+  const state = Object.assign({}, (typeof history !== "undefined" && history.state) || {});
+  state.spa = true;
+  state.scrollY = typeof window !== "undefined" && Number.isFinite(window.scrollY)
+    ? window.scrollY : 0;
+  return state;
+}
+
 // Reflect UI state into the URL so a filtered/searched view can be shared and
 // survives a reload. replaceState (not pushState): toggling chips must not
 // stack history entries. Falls back to assigning location.search only where
 // the History API is absent (the DOM shim used by tools/_smoke_web.js).
 function syncURLState(values) {
+  // A history back/forward can move location while an asynchronous initializer
+  // is still running. Never let that superseded view rewrite the new URL (for
+  // example, an entries init writing ?q=… into the index entry).
+  const activePage = document.body && document.body.dataset && document.body.dataset.page;
+  const locationPage = pageFromPathname(location.pathname);
+  if (activePage && locationPage && activePage !== locationPage) return;
   const params = new URLSearchParams(location.search || "");
   for (const [key, value] of Object.entries(values)) {
     if (value == null || value === "") params.delete(key);
@@ -98,10 +136,32 @@ function syncURLState(values) {
   }
   const qs = params.toString();
   const next = qs ? "?" + qs : "";
+  const nextKey = (location.pathname || "") + next;
   if (typeof history !== "undefined" && history.replaceState) {
-    history.replaceState(null, "", (location.pathname || "") + next);
+    try { history.replaceState(historyStateWithScroll(), "", nextKey); } catch { /* view stays usable */ }
+    currentRouteKey = nextKey;
   } else if (location.search !== next) {
     location.search = next;
+    currentRouteKey = nextKey;
+  }
+}
+
+/* ---------- per-view cleanup registry (SPA navigation) ---------- */
+
+// Observers/timers created by a page initializer must be stopped before its
+// shell is replaced; otherwise a debounced search or a ResizeObserver can fire
+// against the next view's DOM.
+let pageCleanups = [];
+
+function onPageLeave(fn) {
+  if (typeof fn === "function") pageCleanups.push(fn);
+}
+
+function cleanupPage() {
+  const cleanups = pageCleanups;
+  pageCleanups = [];
+  for (const fn of cleanups) {
+    try { fn(); } catch { /* one broken cleanup must not block navigation */ }
   }
 }
 
@@ -352,7 +412,9 @@ function trackStickyHeight() {
   const root = document.documentElement;
   if (!root || !root.style) return;
   const apply = () => root.style.setProperty("--sticky-h", `${bar.offsetHeight || 0}px`);
-  new ResizeObserver(apply).observe(bar);
+  const observer = new ResizeObserver(apply);
+  observer.observe(bar);
+  onPageLeave(() => observer.disconnect());
   apply();
 }
 
@@ -529,6 +591,13 @@ function getFilter() {
 }
 
 async function initIndex() {
+  // Re-entering the view via SPA keeps the module alive, so reset the state a
+  // full page load would have discarded (filter chips, jump-bar selection).
+  allPatches = [];
+  filter.selected.clear();
+  jumpState.years = new Map();
+  jumpState.year = "";
+
   const data = await fetchJSON("data/patches_index.json");
   const updated = document.getElementById("updated");
   updated.textContent = fmtDate(data.updated) || "-";
@@ -807,6 +876,8 @@ function applyEntryFilter() {
 }
 
 async function initEntries() {
+  entryDocs = [];
+  entryFiltered = [];
   const [data, heroData] = await Promise.all([
     fetchJSON("data/entries_index.json"),
     // auxiliary: the hero browse section degrades to hidden if it is missing
@@ -841,6 +912,8 @@ async function initEntries() {
   // debounce so a fast typist does not re-filter/re-render per keystroke; the
   // first paint stays synchronous
   let timer = 0;
+  // A pending debounce must not run against the next SPA view's DOM.
+  onPageLeave(() => clearTimeout(timer));
   searchEl.addEventListener("input", (ev) => {
     entrySearchState.q = ev.target.value || "";
     clearTimeout(timer);
@@ -1480,6 +1553,7 @@ function buildToc(entries) {
         a.classList.toggle("active", a.getAttribute("href") === "#" + item.target.id));
     }
   }, { rootMargin: "-5% 0px -85% 0px" });
+  onPageLeave(() => io.disconnect());
   for (const e of entries) {
     const el = document.getElementById(e.id);
     if (el) io.observe(el);
@@ -1871,6 +1945,307 @@ function heroBlock(hero) {
   return block;
 }
 
+/* ---------- SPA navigation (client-side view switching) ---------- */
+
+// Each physical HTML file stays a real, directly-addressable page; the router
+// only swaps its header/main/footer shell for subsequent in-site navigations.
+const PAGE_FILE = {
+  index: "index.html",
+  entries: "entries.html",
+  entry: "entry.html",
+  hero: "hero.html",
+  patch: "patch.html",
+};
+const shellCache = new Map();
+const shellLoading = new Map();
+
+// filename -> route key. "" and "." cover the Pages root ("/") which serves
+// index.html. Unknown paths deliberately return "" (no interception).
+function pageFromPathname(pathname) {
+  const base = String(pathname || "").replace(/\\/g, "/").split("/").pop() || "index.html";
+  if (base === "" || base === "." || base === "index.html") return "index";
+  const m = /^(entries|entry|hero|patch)\.html$/.exec(base);
+  return m ? m[1] : "";
+}
+
+// Parse an <a href> into a SPA target, or null when the browser must handle it
+// (external origin, non-http(s), hash-only / in-page anchor, non-page file).
+function spaTarget(href, baseHref, origin) {
+  if (!href || String(href).charAt(0) === "#") return null;
+  let url;
+  try { url = new URL(String(href), baseHref); } catch { return null; }
+  if (!/^https?:$/.test(url.protocol)) return null;
+  if (origin && url.origin !== origin) return null;
+  const page = pageFromPathname(url.pathname);
+  return page ? { url, page } : null;
+}
+
+// The patch page's 中文站/英文站 links only change ?lang=; re-rendering that
+// view should keep the reader's scroll position instead of jumping to the top.
+function languageSwitchOnly(currentHref, targetHref) {
+  let current, target;
+  try {
+    current = new URL(currentHref);
+    target = new URL(targetHref);
+  } catch { return false; }
+  if (pageFromPathname(current.pathname) !== "patch"
+      || pageFromPathname(target.pathname) !== "patch") return false;
+  if ((current.searchParams.get("id") || "") !== (target.searchParams.get("id") || "")) return false;
+  const currLang = current.searchParams.get("lang") || "cn";
+  const nextLang = target.searchParams.get("lang") || "cn";
+  if (currLang === nextLang) return false;
+  current.searchParams.delete("lang");
+  target.searchParams.delete("lang");
+  return current.searchParams.toString() === target.searchParams.toString();
+}
+
+function shellFromDocument(doc, page) {
+  const header = doc.querySelector("body > header");
+  const main = doc.querySelector("body > main");
+  const footer = doc.querySelector("body > footer");
+  if (!header || !main || !footer) throw new Error(`invalid page shell: ${PAGE_FILE[page]}`);
+  const meta = doc.querySelector('meta[name="description"]');
+  return {
+    page,
+    title: doc.title || "",
+    description: meta ? (meta.getAttribute("content") || "") : "",
+    lang: (doc.documentElement && doc.documentElement.getAttribute("lang")) || "zh-CN",
+    bodyClass: doc.body ? (doc.body.className || "") : "",
+    headerHTML: header.innerHTML,
+    mainHTML: main.innerHTML,
+    mainId: main.id || "",
+    mainClass: main.className || "",
+    footerHTML: footer.innerHTML,
+  };
+}
+
+function loadShell(page) {
+  if (shellCache.has(page)) return Promise.resolve(shellCache.get(page));
+  if (shellLoading.has(page)) return shellLoading.get(page);
+  const pending = fetch(PAGE_FILE[page], { headers: { Accept: "text/html" } })
+    .then((resp) => {
+      if (!resp.ok) throw new Error(`failed to load ${PAGE_FILE[page]}: ${resp.status}`);
+      return resp.text();
+    })
+    .then((text) => {
+      const shell = shellFromDocument(new DOMParser().parseFromString(text, "text/html"), page);
+      shellCache.set(page, shell);
+      return shell;
+    })
+    .finally(() => { shellLoading.delete(page); });
+  shellLoading.set(page, pending);
+  return pending;
+}
+
+function applyShell(shell) {
+  const header = document.querySelector("body > header");
+  const main = document.querySelector("body > main");
+  const footer = document.querySelector("body > footer");
+  if (!header || !main || !footer) throw new Error("page shell missing");
+  header.innerHTML = shell.headerHTML;
+  if (shell.mainId) main.id = shell.mainId;
+  else main.removeAttribute("id");
+  main.className = shell.mainClass;
+  main.innerHTML = shell.mainHTML;
+  footer.innerHTML = shell.footerHTML;
+  document.body.className = shell.bodyClass;
+  document.body.dataset.page = shell.page;
+  document.documentElement.lang = shell.lang || "zh-CN";
+  document.title = shell.title;
+  const meta = document.querySelector('meta[name="description"]');
+  if (meta) meta.setAttribute("content", shell.description || shell.title);
+}
+
+function saveScrollState() {
+  if (typeof history === "undefined" || !history.replaceState) return;
+  try {
+    history.replaceState(historyStateWithScroll(), "", location.href);
+  } catch { /* history can be unavailable in privacy modes; scrolling still works */ }
+}
+
+function scrollWindowTo(y) {
+  const top = Number.isFinite(y) ? Math.max(0, y) : 0;
+  try { window.scrollTo({ top, left: 0, behavior: "instant" }); }
+  catch { window.scrollTo(0, top); }
+}
+
+function scrollToHash(hash) {
+  let id = String(hash || "").replace(/^#/, "");
+  if (!id) return false;
+  try { id = decodeURIComponent(id); } catch { /* keep the raw fragment */ }
+  const el = document.getElementById(id);
+  if (!el) return false;
+  try { el.scrollIntoView({ behavior: "instant", block: "start" }); }
+  catch { el.scrollIntoView(); }
+  return true;
+}
+
+function focusMain() {
+  const main = document.querySelector("body > main");
+  if (!main || !main.focus) return;
+  try {
+    main.setAttribute("tabindex", "-1");
+    main.focus({ preventScroll: true });
+  } catch {
+    try { main.focus(); } catch { /* ignore */ }
+  }
+}
+
+// The previous view's async initializer must finish before its shell is
+// replaced, otherwise a late `document.getElementById` would write into the
+// next view. Looping also covers a navigation that starts while we wait.
+async function waitForIdle() {
+  let seen;
+  do {
+    seen = activeRender;
+    await seen;
+  } while (seen !== activeRender);
+}
+
+function afterFrame(fn) {
+  if (typeof window !== "undefined" && window.requestAnimationFrame) {
+    window.requestAnimationFrame(fn);
+  } else {
+    setTimeout(fn, 0);
+  }
+}
+
+async function runNavigation(page, opts = {}) {
+  const seq = ++navSeq;
+  navPending = true;
+  let url = opts.url;
+  try {
+    if (!url) url = new URL(location.href);
+    const shellPromise = loadShell(page);
+    shellPromise.catch(() => {}); // handled by the await below; avoid a transient unhandled rejection
+    await waitForIdle();
+    const shell = await shellPromise;
+    if (seq !== navSeq) return false;
+
+    let restoreY = 0;
+    if (opts.historyMode === "pop") {
+      // Prefer the value captured in the popstate handler: a still-running
+      // initializer may replace history.state while we wait for it.
+      if (Number.isFinite(opts.restoreY)) {
+        restoreY = opts.restoreY;
+      } else {
+        const saved = typeof history !== "undefined" && history.state ? history.state.scrollY : 0;
+        restoreY = Number.isFinite(saved) ? saved : 0;
+      }
+    } else if (opts.keepScroll) {
+      restoreY = Number.isFinite(opts.restoreY) ? opts.restoreY : (window.scrollY || 0);
+    }
+
+    if (opts.historyMode === "push") {
+      saveScrollState();
+      history.pushState({ spa: true, scrollY: opts.keepScroll ? restoreY : 0 }, "", url.href);
+    } else if (opts.historyMode === "replace") {
+      history.replaceState({ spa: true, scrollY: restoreY }, "", url.href);
+    }
+
+    cleanupPage();
+    applyShell(shell);
+    activeRender = runPage(PAGE_INIT[page]);
+    await activeRender;
+    if (seq !== navSeq) return false;
+
+    currentRouteKey = (location.pathname || "") + (location.search || "");
+    focusMain();
+    const targetY = opts.historyMode === "pop" || opts.keepScroll ? restoreY : 0;
+    afterFrame(() => {
+      if (seq !== navSeq) return; // a newer navigation owns the scroll position
+      if (!url.hash || !scrollToHash(url.hash)) scrollWindowTo(targetY);
+      saveScrollState();
+    });
+    return true;
+  } catch (err) {
+    if (seq !== navSeq) return false;
+    if (opts.fallback === "reload") window.location.reload();
+    else if (opts.fallback) window.location.assign(opts.fallback);
+    return false;
+  } finally {
+    if (seq === navSeq) navPending = false;
+  }
+}
+
+function onDocumentClick(ev) {
+  if (ev.defaultPrevented || ev.button !== 0
+      || ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey) return;
+  const link = ev.target && ev.target.closest ? ev.target.closest("a[href]") : null;
+  if (!link) return;
+  if (link.target && link.target !== "_self") return;
+  if (link.hasAttribute("download")) return;
+  const target = spaTarget(link.getAttribute("href"), location.href, location.origin);
+  if (!target) return;
+  const samePath = target.url.pathname === location.pathname
+    && target.url.search === location.search;
+  if (samePath && target.url.hash) return; // native in-page anchor
+  ev.preventDefault();
+  if (samePath) {
+    // Clicking the current nav entry must never fall back to a page reload.
+    scrollWindowTo(0);
+    return;
+  }
+  const keepScroll = languageSwitchOnly(location.href, target.url.href);
+  runNavigation(target.page, {
+    url: target.url,
+    historyMode: "push",
+    keepScroll,
+    restoreY: keepScroll ? (window.scrollY || 0) : undefined,
+    fallback: target.url.href,
+  });
+}
+
+function onPopState() {
+  const page = pageFromPathname(location.pathname);
+  if (!page) {
+    window.location.reload();
+    return;
+  }
+  const url = new URL(location.href);
+  const key = url.pathname + url.search;
+  const saved = typeof history !== "undefined" && history.state ? history.state.scrollY : 0;
+  const restoreY = Number.isFinite(saved) ? saved : 0;
+  // A pending navigation has not updated currentRouteKey yet. In that window a
+  // history.back() must start a real render (and supersede the pending one),
+  // not be mistaken for an in-page scroll.
+  if (!navPending && key === currentRouteKey) {
+    if (url.hash) {
+      if (!scrollToHash(url.hash)) scrollWindowTo(restoreY);
+    } else {
+      scrollWindowTo(restoreY);
+    }
+    return;
+  }
+  runNavigation(page, { url, historyMode: "pop", restoreY, fallback: "reload" });
+}
+
+function installScrollSave() {
+  if (typeof window === "undefined" || !window.addEventListener) return;
+  window.addEventListener("scroll", () => {
+    if (navPending || scrollSaveTimer) return;
+    scrollSaveTimer = window.setTimeout(() => {
+      scrollSaveTimer = 0;
+      if (!navPending) saveScrollState();
+    }, 150);
+  }, { passive: true });
+}
+
+function installSpaRouter() {
+  if (typeof window === "undefined" || typeof document === "undefined") return false;
+  if (location.protocol !== "http:" && location.protocol !== "https:") return false;
+  if (typeof history === "undefined" || !history.pushState || !history.replaceState) return false;
+  if (typeof fetch !== "function" || typeof DOMParser === "undefined") return false;
+  if (!window.addEventListener || !document.addEventListener) return false;
+  try { history.scrollRestoration = "manual"; } catch { /* optional */ }
+  saveScrollState();
+  currentRouteKey = (location.pathname || "") + (location.search || "");
+  document.addEventListener("click", onDocumentClick, false);
+  window.addEventListener("popstate", onPopState, false);
+  installScrollSave();
+  return true;
+}
+
 /* ---------- page bootstrap ---------- */
 
 const PAGE_INIT = {
@@ -1896,7 +2271,7 @@ function mountLoadError(err) {
 }
 
 function runPage(fn) {
-  Promise.resolve().then(fn).catch(mountLoadError);
+  return Promise.resolve().then(fn).catch(mountLoadError);
 }
 
 // one capture-phase listener replaces the per-image inline onerror handlers
@@ -1914,4 +2289,9 @@ installImageFallback();
 // <body data-page="…"> picks the page initializer (replaces the inline
 // <script>initXxx()</script> call each HTML page used to carry)
 const pageName = document.body && document.body.dataset && document.body.dataset.page;
-if (pageName && PAGE_INIT[pageName]) runPage(PAGE_INIT[pageName]);
+if (pageName && PAGE_INIT[pageName]) {
+  activeRender = runPage(PAGE_INIT[pageName]);
+  // Progressive enhancement: only install the router when the platform can
+  // actually fetch and swap a shell (the smoke DOM shim cannot).
+  installSpaRouter();
+}

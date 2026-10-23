@@ -29,6 +29,9 @@
   - **词条检索**：直接搜索技能/武器/威能/英雄属性/英雄（中文名/英文名/别名/slug/英雄名），每个词条独立成页，追溯全部更改记录（中英对照、数值 before→after、威能新增/移除/重做状态），并标注来源补丁曾被官方事后编辑（changelog 记录）。
     检索忽略大小写、全角/半角、重音与标点（`soldier 76` = `soldier76` = `soldier: 76`，`dva` = `D.Va`），支持多词（`ana grenade` 同时匹配英雄与技能）、维度标签（`武器`）与旧名（`麦克雷`/`McCree`）；
     结果分页展示（每页 60 条，可「加载更多」），筛选与搜索写入 URL 可直接分享；卡片上的「N 条更改记录」与详情页实际行数一致（跨语言配对合并后计数）。
+  - **站内 SPA 导航**：顶部导航、补丁/词条/英雄详情、返回链接与补丁页中英切换都通过 History API
+    局部换壳，不刷新标签页；URL、标题、描述与 `<html lang>` 同步更新，浏览器前进/后退可用并恢复滚动位置。
+    每个页面仍是可直接访问、可刷新、可收藏的独立 HTML；刷新、禁用 JS 或加载失败时按原多页站工作（渐进增强）。
   - **自动重建**：监控工作流（`monitor`/`monitor-fast`/`watchdog`）完成并提交数据后，`pages` 工作流
     通过 `workflow_run` 自动重建站点（约 30 分钟内生效；监控失败时不部署）；每日 04:23 UTC 定时重建兜底，
     也可 `workflow_dispatch` 手动触发。
@@ -65,7 +68,8 @@ tools/rebuild.py     全量离线重生成（重分类/重富化/配对/映射/�
 tools/optimize_assets.py 离线压缩站点图片（英雄头像/地图截图，幂等）
 tools/_smoke_web.js  查询站回归测试（DOM shim，CI 的 web job 运行）
 tools/_layout_check.js 查询站布局回归（需 playwright，手动运行）
-web/                 GitHub Pages 查询站（时间浏览 + 词条检索）
+tools/_spa_check.js   查询站 SPA 导航回归（需 playwright，手动运行）
+web/                 GitHub Pages 查询站（时间浏览 + 词条检索 + SPA 导航）
 data/               归档数据（全部提交入库）
   archive/          补丁 Markdown 归档
   patches/          补丁结构化 JSON
@@ -122,6 +126,7 @@ python tools/serve.py                                 # 本地预览查询站 (h
 
 node tools/_smoke_web.js                              # 查询站回归测试（CI 也跑这个）
 npx -p playwright node tools/_layout_check.js         # 查询站布局回归（真实浏览器）
+npx -p playwright node tools/_spa_check.js            # 站内 SPA 导航回归（真实浏览器）
 pip install -e ".[assets]" && python tools/optimize_assets.py   # 压缩新增的图片资产（可选）
 ```
 

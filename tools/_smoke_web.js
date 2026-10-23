@@ -530,6 +530,37 @@ const run = new Function(
     results.rawTextEscaped = rawEl.innerHTML.includes("&lt;b&gt;not html&lt;/b&gt;")
       && !rawEl.innerHTML.includes("<b>not html</b>");
 
+    // ---- SPA routing helpers (pure functions, no real browser) ----
+    results.spaPages = ["/", "/index.html", "/entries.html", "/entry.html",
+      "/hero.html", "/patch.html", "/data/patches/en/2020-07-30-1.json", "/ow/nope"]
+      .map(pageFromPathname).join("|");
+    const spaBase = "https://example.com/ow-patch-archive/index.html";
+    const spaOrigin = "https://example.com";
+    results.spaInternalPage = (spaTarget("patch.html?id=x", spaBase, spaOrigin) || {}).page || "";
+    results.spaRelativeEntry = (spaTarget("entry.html?hero=ana", spaBase, spaOrigin) || {}).page || "";
+    results.spaExternalRejected = spaTarget("https://other.example/patch.html", spaBase, spaOrigin) === null;
+    results.spaHashRejected = spaTarget("#sec-0", spaBase, spaOrigin) === null;
+    results.spaNonPageRejected = spaTarget("data/patches/en/2020-07-30-1.json", spaBase, spaOrigin) === null;
+    results.spaLanguageOnly = languageSwitchOnly(
+      "https://example.com/ow-patch-archive/patch.html?id=p-2025-03-18-1&lang=cn",
+      "https://example.com/ow-patch-archive/patch.html?id=p-2025-03-18-1&lang=en");
+    results.spaLanguageOtherPatch = languageSwitchOnly(
+      "https://example.com/ow-patch-archive/patch.html?id=p-2025-03-18-1&lang=cn",
+      "https://example.com/ow-patch-archive/patch.html?id=p-2025-03-19-1&lang=en");
+    // A superseded initializer must not write its query into the page the
+    // browser has already moved to (back/forward during an async init).
+    const savedPage = document.body.dataset.page || "";
+    const savedPath = location.pathname;
+    const savedLastUrl = history.lastUrl;
+    document.body.dataset.page = "entries";
+    location.pathname = "/index.html";
+    history.lastUrl = "sentinel";
+    syncURLState({ q: "soldier" });
+    results.spaStaleSyncGuarded = history.lastUrl === "sentinel";
+    document.body.dataset.page = savedPage;
+    location.pathname = savedPath;
+    history.lastUrl = savedLastUrl;
+
     console.log(JSON.stringify(results, null, 1));
     // --- structural assertions (data-independent) ---
     if (results.indexPatches !== EXPECT.indexPatches) fail.push("indexPatches=" + results.indexPatches + " expected=" + EXPECT.indexPatches);
@@ -542,6 +573,15 @@ const run = new Function(
     if (!results.heroPatchLink) fail.push("hero timeline patch links missing");
     if (!results.rawTextHeroIcons) fail.push("raw_text fallback does not inject hero icons");
     if (!results.rawTextEscaped) fail.push("raw_text fallback does not escape markup");
+    if (results.spaPages !== "index|index|entries|entry|hero|patch||") fail.push("spaPages=" + results.spaPages);
+    if (results.spaInternalPage !== "patch") fail.push("spaInternalPage=" + results.spaInternalPage);
+    if (results.spaRelativeEntry !== "entry") fail.push("spaRelativeEntry=" + results.spaRelativeEntry);
+    if (!results.spaExternalRejected) fail.push("SPA router accepted a cross-origin link");
+    if (!results.spaHashRejected) fail.push("SPA router accepted a hash-only link");
+    if (!results.spaNonPageRejected) fail.push("SPA router accepted a non-page file");
+    if (!results.spaLanguageOnly) fail.push("patch language switch was not detected");
+    if (results.spaLanguageOtherPatch) fail.push("different patch ids treated as a language switch");
+    if (!results.spaStaleSyncGuarded) fail.push("superseded view rewrote the new page's URL");
     if (results.filterChips !== 6) fail.push("filterChips=" + results.filterChips);
     if (!results.firstCardHref.includes("entry.html?hero=")) fail.push("firstCardHref=" + results.firstCardHref);
     // paginated list: first paint is one page, "load more" grows it, a new

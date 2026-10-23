@@ -601,6 +601,9 @@ input:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
 }
+/* SPA navigation moves focus to <main> for screen readers; a content-sized
+   focus ring around the whole page would be visual noise. */
+main:focus { outline: none; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
