@@ -1,0 +1,277 @@
+{
+ "id": "ai-2017-04-11-1",
+ "site": "ai",
+ "date": "2017-04-11",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2017/04",
+ "title": "《守望先锋》补丁说明——2017年4月11日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "补丁亮点",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "全新季节活动：守望先锋行动档案",
+     "body": "从今天开始，我们将时光倒流，让你有机会重温你最喜爱的守望先锋英雄背后的故事。与好友整装出发，回到七年前，在全新的合作乱斗中与猎空一起执行她的首次任务；或收集超过 100 件解密补给物品——包括皮肤、精彩镜头、姿势、喷漆和玩家图标！\n\n欲了解更多信息，请点击此处。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "综合",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 英雄画廊中新增了每位英雄独特背景故事的详情，以及一些受背景故事启发而设计的皮肤的信息\n- 玩家举报系统已重新设计，新增了举报选项和活动示例，以便更好地记录每次举报的原因\n- 守望先锋行动档案活动的游戏内语音对话现在可以显示为字幕。可在「选项」菜单的「音频」标签页中启用",
+     "dev": null
+    },
+    {
+     "title": "竞技比赛",
+     "body": "- 攻防作战和攻防作战/运载目标地图新增了追踪系统，使我们能够根据占领目标所取得的进度来打破平局。",
+     "dev": "为减少竞技比赛中的平局，我们正在实施一套追踪各队目标进度的系统。其运作方式与运载目标和攻防作战/运载目标地图上已有的系统类似，即把运载目标推得最远的一方获胜。现在，即使双方都未能成功占领目标，也可以根据哪一方占领的比例最大来判定胜者。"
+    },
+    {
+     "title": "自定游戏和游戏浏览器",
+     "body": "- 自定游戏设置现在可以从游戏详情页面保存为预设。可通过在创建游戏页面右键点击地图图像、在游戏浏览器中右键点击游戏名称，或通过设置页面上的保存按钮来访问\n- 玩家现在可以在创建自定游戏时更改武器弹匣和弹仓容量，或授予无限弹药",
+     "dev": null
+    },
+    {
+     "title": "地图",
+     "body": "- 艾兴瓦尔德新增了一条连接进攻方出生区域与占领点的路线",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "lucio",
+     "name_en": "Lúcio",
+     "name_cn": "卢西奥",
+     "role": "support",
+     "icon": null,
+     "dev_note": "卢西奥常常因其纯粹的治疗输出以及为全队提供加速的多面性而成为必选英雄。这些改动的目标是让这些元素依然保持强势，但更难始终作用于队伍中的每个人。最终结果是，当他能与队伍保持近距离时应该会感觉更强，而在与经常分散的英雄（如法老之鹰、黑百合、源氏等）同队时则不会那么强。卢西奥的许多角色强度都集中在他大范围的被动光环上，这导致为了平衡他，其技能组的其他元素随时间被削弱。现在他的光环更加集中，这将使它们能够强得多，并让卢西奥在其定位中更加活跃。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Sonic Amplifier",
+       "name_cn": "音速扩音器",
+       "slug": "sonic-amplifier",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "伤害提高 25%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 25.0,
+         "metric": "damage",
+         "raw_metric": "damage",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "弹道速度从 40 提高至 50",
+         "before": 40.0,
+         "after": 50.0,
+         "by": 10.0,
+         "by_pct": null,
+         "metric": "projectile_speed",
+         "raw_metric": "projectile speed",
+         "unit": "m/s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "辅助攻击现在会在击退目标时考虑垂直方向",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Crossfade",
+       "name_cn": "切歌",
+       "slug": "crossfade",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "效果范围半径从 30 米降低至 10 米",
+         "before": 30.0,
+         "after": 10.0,
+         "by": -20.0,
+         "by_pct": null,
+         "metric": "area of effect radius has been",
+         "raw_metric": "area of effect radius has been",
+         "unit": "m"
+        },
+        {
+         "text_en": null,
+         "text_cn": "治愈音效",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "每秒治疗量提高 30%（同样适用于卢西奥的强音技能）",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 30.0,
+         "metric": "healing",
+         "raw_metric": "healing-per-second has been",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "自我治疗降低 25%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 25.0,
+         "metric": "self-healing has been",
+         "raw_metric": "self-healing has been",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Wall Ride",
+       "name_cn": "滑墙",
+       "slug": "wall-ride",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "滑墙时移动速度提高 20%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 20.0,
+         "metric": "move_speed",
+         "raw_metric": "movement speed",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "卢西奥现在从墙上跃下时会获得爆发性加速",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "orisa",
+     "name_en": "Orisa",
+     "name_cn": "奥丽莎",
+     "role": "tank",
+     "icon": null,
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "奥丽莎的头部命中判定体积缩小了 15%",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 15.0,
+       "metric": "s head hitbox has been",
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 修复了导致语音台词无法在占领要点地图上播放的问题",
+     "dev": null
+    },
+    {
+     "title": "竞技比赛",
+     "body": "- 修复了导致前 500 名图标在完成一场竞技比赛之前无法显示的问题\n- 修复了导致成就无法在休赛期竞技比赛中解锁的错误\n- 修复了导致全场最佳精彩镜头只能从最后一回合中选取的错误",
+     "dev": null
+    },
+    {
+     "title": "自定游戏和游戏浏览器",
+     "body": "- 修复了即使已禁用仍会显示空玩家槽位的问题（例如在 6v1 游戏中）\n- 修复了在最初的主机离开比赛后暂停功能无法正常工作的错误\n- 修复了允许队伍名称过长的问题\n- 移除了不必要的自定义选项（例如无冷却时间技能的冷却时间选项）",
+     "dev": null
+    },
+    {
+     "title": "英雄",
+     "body": "- 安娜在投掷手雷后不再拉动步枪枪栓\n- 装备暴雪嘉年华皮肤时，堡垒金色武器的亮度已被调低\n- 修复了装备美的新娥和露娜皮肤时，美的小指在某些姿势下会不自然地弯曲的错误",
+     "dev": null
+    },
+    {
+     "title": "地图",
+     "body": "- 修复了艾兴瓦尔德的一个错误，该错误允许透过城堡大门处的一堆泥土看到敌方玩家的轮廓\n- 修复了艾兴瓦尔德的一个问题，该问题允许玩家被困在破损的城堡大门中\n- 修复了允许黑影到达国王大道非预期位置的错误\n- 修复了允许玩家到达漓江塔夺旗版本非预期区域的错误\n- 修复了允许秩序之光在绿洲城非预期位置隐藏炮台的错误",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2017-04-11-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:44:42+00:00",
+  "status": "draft",
+  "source_hash": "sha256:83f87c9abb696723b236317b5d86e67c9ee6558b4e7736cef725d124b6d7e7a0",
+  "kept_english": []
+ }
+}

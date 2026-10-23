@@ -1,0 +1,693 @@
+{
+ "id": "ai-2025-05-01-1",
+ "site": "ai",
+ "date": "2025-05-01",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/05",
+ "title": "《守望先锋》补丁说明——2025年5月1日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "平衡性在线修正更新",
+   "role": null,
+   "description": "这是一次游戏平衡性在线修正。2025 年 4 月 22 日补丁的回放代码仍然可用。",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "竞逐模式平衡性更新",
+   "role": null,
+   "description": "竞逐模式平衡性更新\n\n开发者评论：在本次更新中，我们主要调整了一些表现异常的异能和物品，以及少数可能导致竞逐模式中出现不良体验的内容。我们还调整了若干英雄从伤害和治疗中获得的竞逐模式现金数额。在不久的将来，我们会仔细审视一些表现不佳的异能和物品，研究如何提升它们的可用性。",
+   "dev": "开发者评论：在本次更新中，我们主要调整了一些表现异常的异能和物品，以及少数可能导致竞逐模式中出现不良体验的内容。我们还调整了若干英雄从伤害和治疗中获得的竞逐模式现金数额。在不久的将来，我们会仔细审视一些表现不佳的异能和物品，研究如何提升它们的可用性。",
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "重装",
+   "role": "tank",
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "d-va",
+     "name_en": "D.Va",
+     "name_cn": "D.Va",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e69a3d819fd46d0dcd1d9474c248a95e69519c20077c60e9de73a1e2d3acdbb6.png",
+     "dev_note": "开发者评论：纳米可乐™ 一氧化二氮让对手在 D.Va 脱离机甲后难以将其击倒，并使她能够稳定地重新召唤机甲。这些改动会让脱离机甲的风险重新回到她的技能组中。釜山爆能枪让 D.Va 能够瞬间重新召唤机甲，这并非该物品的设计初衷。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "纳米可乐™ 一氧化二氮——史诗生存英雄物品",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "生命值降低至 25（原为 50）。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 50.0,
+       "after": 25.0,
+       "by": -25.0,
+       "by_pct": null,
+       "metric": "health",
+       "unit": "hp"
+      },
+      {
+       "text_en": null,
+       "text_cn": "最大生命值提高效果降低至 5%（原为 25%）。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "纳米激素的持续时间降低至 4 秒（原为 8 秒）。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "釜山爆能枪——史诗技能英雄物品",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "不再产生终极技能充能。",
+       "subject": "ultimate_cost",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "orisa",
+     "name_en": "Orisa",
+     "name_cn": "奥丽莎",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/20c12a10cfe0b5608f9eec63a74ecb0ccd18a114019bc77bb2765f87776e17ed.png",
+     "dev_note": "开发者评论：我们观察到许多情况下奥丽莎似乎变得无敌。结合她的其他一些异能和物品，我们认为恢复强化提供的治疗过多。太阳能回能在其花费下过于高效，因此我们将其回调，使其更接近同花费物品的水平。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "恢复强化——异能",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "治疗量降低至每 1 秒恢复最大生命值的 5%（原为 10%）。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "太阳能回能——稀有生存英雄物品",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "护甲恢复量降低至最大生命值的 3%（原为 5%）。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "reinhardt",
+     "name_en": "Reinhardt",
+     "name_cn": "莱因哈特",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b5e3a4f5629a3acfd47b5d2e695e79ea964b060bf67b7e4f8f15e63accd5f934.png",
+     "dev_note": "开发者评论：由于攻击距离，莱因哈特从伤害和治疗中获取现金的速率较高。然而，莱因哈特一直表现过强，赚取的现金也略多，因此我们对此进行了一定回调。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "从伤害和治疗中获得的竞逐模式现金数额降低 13.64%",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "zarya",
+     "name_en": "Zarya",
+     "name_cn": "查莉娅",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d43075cba10cd711a129556142849587e78f1f55b0105d39a640da53ffa64e1b.png",
+     "dev_note": "开发者评论：生命提升已被证明是查莉娅最稳定有效的异能。我们降低了它的成长性，试图让它不再感觉是所有查莉娅流派中的必选。我们还增加了一些治疗量，希望让「我罩着你」成为一个更可靠的选择。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "生命提升——异能",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "粒子屏障生命值成长性降低至额外最大生命值的 50%（原为 100%）。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "我罩着你——异能",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "治疗量提高至 3 秒内恢复最大生命值的 20%（原为 15%）。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "输出",
+   "role": "damage",
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "mei",
+     "name_en": "Mei",
+     "name_cn": "美",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/08586dceed41e030d575b2b643118f55390f1c2af91dd15394528f5399fcc934.png",
+     "dev_note": "开发者评论：虽然滚着冰球到处跑非常有趣，但我们认为该异能作为一个长时间技能，在干扰玩家方面过于稳定。我们希望这些改动能让它依然感觉强大，但降低其在完整持续时间内带着敌人到处跑的能力。",
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
+      {
+       "name_en": "Coulder",
+       "name_cn": "冰球",
+       "rarity": null,
+       "kind": "power",
+       "status": "changed",
+       "lines_en": [
+        "Reduced the knockback frequency rate by 60%.",
+        "Increased how far enemies are knocked back.",
+        "Increased the damage dealt per knockback to 20 (up from 10)."
+       ],
+       "lines_cn": [
+        "击退频率降低 60%。",
+        "提高了敌人的击退距离。",
+        "每次击退造成的伤害提高至 20（原为 10）。"
+       ],
+       "raw_text": [
+        "Coulder - Power"
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "reaper",
+     "name_en": "Reaper",
+     "name_cn": "死神",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b7aac87959afbe062cc31518ded04b9dbcadb0a2282f8963c6bfd5ba0a2d6a27.png",
+     "dev_note": "开发者评论：死神原本从伤害和治疗中获取现金的速率较高，因为由于攻击距离，他平均更难打出稳定伤害。然而，死神一直表现过强，赚取的现金也过多，因此我们对此进行了一定回调。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "从伤害和治疗中获得的竞逐模式现金数额降低 10%。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "soldier-76",
+     "name_en": "Soldier: 76",
+     "name_cn": "士兵76",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1cb6f3ad4b8afdc1a901c26180a4c134018bb805b91eefe9b7cf2946879f10c8.png",
+     "dev_note": "开发者评论：士兵：76 一直从伤害和治疗中赚取过多金钱，使他能够持续滚雪球扩大领先优势。我们很高兴玩家喜欢使用火箭目镜。看到一些过去可能很少玩士兵：76 的玩家开始使用他，这很棒。话虽如此，我们一直希望以火箭目镜为核心的流派是一个强大且易上手的流派，但不一定是实际表现上限最高的流派。我们发现它表现过强，且对抗时可能令人沮丧。我们希望这次改动能降低一点强度，但随着我们继续推出更多平衡性更新，我们会持续密切关注这一流派。我们觉得让生物 Bullsye 生效的回报略低，不值得投入。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "从伤害和治疗中获得的竞逐模式现金数额降低 12.5%。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "火箭目镜——异能",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "持续时间降低至 0.5 秒（原为 0.75 秒）。",
+       "subject": null,
+       "dimension": "other",
+       "before": 0.75,
+       "after": 0.5,
+       "by": -0.25,
+       "by_pct": null,
+       "metric": "duration",
+       "unit": "s"
+      },
+      {
+       "text_en": null,
+       "text_cn": "生物 Bullsye——异能",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "每次暴击的弹药恢复量提高至 10%（原为 5%）。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "支援",
+   "role": "support",
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "kiriko",
+     "name_en": "Kiriko",
+     "name_cn": "雾子",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/24d1d7bf86c331b3d81b934442ed36fd0121f6815255c6f26f456127fb342d15.png",
+     "dev_note": "开发者评论：雾子一直从伤害和治疗中赚取略多的现金。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "从伤害和治疗中获得的竞逐模式现金数额降低 16.67%。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "juno",
+     "name_en": "Juno",
+     "name_cn": "朱诺",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2a65bf12035f9c255833693224cad83fd98cead625fdf1b9da8359a7f259e01c.png",
+     "dev_note": "开发者评论：我们知道朱诺在竞技场中非常受欢迎，但本次更新我们正在处理这些流派中最令人压抑的部分。我们发现，平均而言，朱诺从伤害和治疗中获得的现金比其他英雄更少，尤其是在前几回合。我们提高了这一数值，以帮助平衡脉冲鱼雷流派的部分削弱，同时也帮助其他表现不佳的朱诺流派。脉冲鱼雷的爱好者在竞技场中随处可见，有时感觉总有一颗脉冲鱼雷在追着你。我们降低了每次命中的宇宙冷却的冷却时间，以缓解她部分技能的节奏。我们认为脉冲毁灭者对以伤害为核心的脉冲鱼雷流派来说拥有过强的垂直能力。我们将技能强度替换为技能生命汲取，以保留那种激进的打法。太阳护盾在当前花费下，结合其效果提供了过多的技能强度。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "从伤害和治疗中获得的竞技场现金提高 33.33%。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "宇宙冷却——能力",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "每次命中目标的冷却时间降低至 0.5 秒（从 1 秒降低）。",
+       "subject": null,
+       "dimension": "other",
+       "before": 1.0,
+       "after": 0.5,
+       "by": -0.5,
+       "by_pct": null,
+       "metric": "cooldown",
+       "unit": "s"
+      },
+      {
+       "text_en": null,
+       "text_cn": "脉冲毁灭者——史诗技能英雄能力",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "移除 15% 技能强度。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "添加 10% 技能生命汲取。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "太阳护盾——史诗技能英雄能力",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "技能强度降低至 15%（从 25% 降低）。",
+       "subject": null,
+       "dimension": "other",
+       "before": 25.0,
+       "after": 15.0,
+       "by": -10.0,
+       "by_pct": null,
+       "metric": "ability power",
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "lucio",
+     "name_en": "Lúcio",
+     "name_cn": "卢西奥",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/dee7e92975f5e659fa6b28c508d8fbad62bda720698b1d21f2492af7b9f94b48.png",
+     "dev_note": "开发者评论：平均而言，卢西奥从伤害和治疗中获得的现金低于平均水平，因此我们在此给他一点提升。与强音结合时，众乐手允许了过多的爆发治疗，超出了可接受的输出范围。强音治疗流派一直有些过于稳定，因此我们从扩音器中削减了一点。武器强度卢西奥流派一直被技能强度治疗和音波流派所掩盖。我们为标志性切换增加了更多稳定性，使其成为更可靠、更易上手的选择。B面节拍选取率非常低，因此我们增加了更多生命值，使其成为更具吸引力的选择，并为不太受欢迎的卢西奥流派增加更多强度。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "从伤害和治疗中获得的竞技场现金提高 10%。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "众乐手——能力",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "治疗降低至切歌治疗的 150%（从 200% 降低）。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "扩音器——能力",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "强音持续时间降低至 15%（从 20% 降低）。",
+       "subject": null,
+       "dimension": "other",
+       "before": 20.0,
+       "after": 15.0,
+       "by": -5.0,
+       "by_pct": null,
+       "metric": "amp it up duration",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "标志性切换——能力",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "弹道尺寸提高至 80%（从 20% 提高）。",
+       "subject": null,
+       "dimension": "other",
+       "before": 20.0,
+       "after": 80.0,
+       "by": 60.0,
+       "by_pct": null,
+       "metric": "increased projectile size",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "B面节拍——史诗武器英雄物品",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "生命值提高至 50（从 25 提高）。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 25.0,
+       "after": 50.0,
+       "by": 25.0,
+       "by_pct": null,
+       "metric": "health",
+       "unit": "hp"
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2025-05-01-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:54:57+00:00",
+  "status": "draft",
+  "source_hash": "sha256:2c1932d5d68dbf7f6c6fd997ab20f2455fd82670cdf74292d7abd5af3f7ff255",
+  "kept_english": []
+ }
+}

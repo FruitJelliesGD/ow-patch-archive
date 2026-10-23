@@ -1,0 +1,295 @@
+{
+ "id": "ai-2020-06-16-1",
+ "site": "ai",
+ "date": "2020-06-16",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2020/06",
+ "title": "《守望先锋》补丁说明——2020年6月16日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": null,
+   "role": null,
+   "description": "-\n如需分享反馈，请前往[综合讨论](https://us.forums.blizzard.com/en/overwatch/c/general-discussion)论坛发帖。\n\n-\n如需查看已知问题列表，请访问我们的[错误报告](https://us.forums.blizzard.com/en/overwatch/c/bug-report)论坛。\n\n-\n如需故障排查帮助，请访问我们的[技术支持](https://us.forums.blizzard.com/en/overwatch/c/technical-support)论坛。",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "2019 守望先锋联赛 MVP 皮肤：异形查莉娅",
+   "role": null,
+   "description": "用异形查莉娅皮肤为 2019 守望先锋联赛 MVP 庆祝！这款皮肤融合了多种独特的设计元素。她的外星形态带有能响应查莉娅粒子炮充能的节点，以及会发出标志性粉色光芒的面部触须，而她利落的服装则灵感来自复古时尚。前往守望先锋联赛菜单了解更多关于这款皮肤和联赛的信息！",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "综合更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "新功能：对局中断后的优先重新排队",
+     "body": "如果一场竞技比赛因玩家提前离开而中断，你下次排队时将获得优先重新排队资格。界面上会显示一个小图标来表示该状态。当你以优先排队状态排队时，匹配系统会尝试优先为你寻找合适的对局。这通常能显著缩短排队等待时间。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "竞技更新",
+   "role": null,
+   "description": "- 竞技开放职责第 2 赛季已经开始！你可以在街机先锋中找到该模式，持续约两周。该模式将采用标准竞技比赛规则，但没有职责限制或职责队列。",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "echo",
+     "name_en": "Echo",
+     "name_cn": "回声",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ce8aec64726308d50cc0e4656d9bfe7647b886cc23830e0c80439cb92bfbdbcc.png",
+     "dev_note": "考虑到聚焦光线可能造成的致命性，其射程显得略长。回声可能需要更靠近一些才能使用该技能，但她显然具备足够的机动性来做到这一点。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Focusing Beam",
+       "name_cn": "聚焦光线",
+       "slug": "focusing-beam",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6552feeb85a32ae7131df50f61a9c0fa24bf347bf007e208a356a940561129ae.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "射程从 20 米降低至 16 米",
+         "before": 20.0,
+         "after": 16.0,
+         "by": -4.0,
+         "by_pct": null,
+         "metric": "range",
+         "raw_metric": "range",
+         "unit": "m"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "genji",
+     "name_en": "Genji",
+     "name_cn": "源氏",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/765cd44aab948bd53082079dfdcf3ce967e8786cf26e4505b797b092c1e6478e.png",
+     "dev_note": "我们打算强化源氏的近距离作战能力，以帮助巩固他作为机动爆发伤害英雄的可用性。由于我们同时提升了闪的灵活性和镖的伤害稳定性，我们会密切关注他的整体强度。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Shuriken",
+       "name_cn": "气",
+       "slug": "shuriken",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8d0916035141abd9ab2bf72dbcfd0460b7a0019529e023d259ad4340890b34b3.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "伤害从 28 提高至 30",
+         "before": 28.0,
+         "after": 30.0,
+         "by": 2.0,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "damage",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "散布从 12 降低至 9",
+         "before": 12.0,
+         "after": 9.0,
+         "by": -3.0,
+         "by_pct": null,
+         "metric": "spread",
+         "raw_metric": "spread",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Deflect",
+       "name_cn": "闪",
+       "slug": "deflect",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9e46bda733749ddd6512b61c021b4487b6201338a9ff39c716e4ee06e5d63a58.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "持续时间从 1.5 秒提高至 2 秒",
+         "before": 1.5,
+         "after": 2.0,
+         "by": 0.5,
+         "by_pct": null,
+         "metric": "duration",
+         "raw_metric": "duration",
+         "unit": "s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "现在可以手动取消",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "hanzo",
+     "name_en": "Hanzo",
+     "name_cn": "半藏",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/871d02150e9b67af02795b137ffc5133c1ff8a2a8d66340ca939f6216a539c9c.png",
+     "dev_note": "此前对岚的弹道速度和伤害的改动组合对半藏的影响超出了预期，因此我们将岚的伤害回调至之前的值。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Storm Arrow",
+       "name_cn": "岚",
+       "slug": "storm-arrow",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/92c56621ba267d94f16baacda3f10ba7777b475935981b02e5026449d8e3d79c.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "伤害从 60 提高至 70",
+         "before": 60.0,
+         "after": 70.0,
+         "by": 10.0,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "damage",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "orisa",
+     "name_en": "Orisa",
+     "name_cn": "奥丽莎",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1f9cf8dd1ea36ba91440be891d79cd97bd4ac2d2e0e409a8eee0c76a4317617a.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Halt!",
+       "name_cn": "站住！",
+       "slug": "halt",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0ccf984506779d8ac96eb75f386fcfd8a781e1b01fcfd42da90343ff75888d33.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "提高音效音量",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "工坊更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "新工坊动作",
+     "body": "- 附加玩家\n- 分离玩家\n- 开始强制玩家位置\n- 停止强制玩家位置",
+     "dev": null
+    },
+    {
+     "title": "新工坊数值",
+     "body": "- 是否处于替代形态\n- 是否正在复制\n- 被复制的英雄\n\n附加玩家动作允许一名玩家以给定的偏移量附着到另一名玩家身上，使玩家能够携带其他玩家移动。开始强制玩家位置动作允许以程序化方式移动玩家；该动作与可变追逐动作配合良好。是否处于替代形态数值可让你检查 D.Va 是否处于驾驶员形态，以及天使和托比昂是否装备了次要武器（以及其他一些变形状态）。最后，是否正在复制和被复制的英雄数值可让你检查回声的当前状态。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 死斗——修复了回合结束流程音乐无法正常过渡的问题\n- 修复了在占领要点地图的回合之间，或在「重生为随机英雄」启用时导致自身死亡后，自定游戏设置有时会恢复为默认值的问题\n- 在使用美的主要攻击模式且冰冻率为 0% 时，自定游戏不再会因服务器负载问题而关闭\n- 修复了导入分享代码时自定游戏大厅隐私设置被重置的问题",
+     "dev": null
+    },
+    {
+     "title": "英雄",
+     "body": "回声\n\n- 修复了回声使用人格复制技能时，莱因哈特的冲锋可以命中她的问题\n- 修复了回声在终极技能目标确认处于激活状态时死亡会失去终极技能充能的问题\n- 修复了回声卡在聚焦光线动画中的问题\n- 修复了被复制英雄的通讯轮盘设置无法正确复制的问题\n\n美\n\n- 修复了美穿着「美雪」皮肤使用急冻时帽子会掉落的问题\n- 修复了美的无人机在暴雪终极技能结束时动画不正确的问题\n\n黑影\n\n- 修复了黑影有时能在玩家刚开始使用可阻止黑客入侵的技能（如幽灵形态、毁天灭地）时入侵他们的问题\n\n秩序之光\n\n- 修复了秩序之光哨戒炮可以放置在特定出生点门上的问题",
+     "dev": null
+    },
+    {
+     "title": "工坊",
+     "body": "- 修复了以下问题：重新启动一个正在使用“等待”动作的规则，并在同一帧执行相同的“等待”动作，可能导致该动作永久等待\n- 修复了以下问题：对“追逐”动作的速率或目标使用一个会修改该值的被追逐变量，会导致行为异常\n- 修复了以下问题：在启用“禁用内置游戏模式完成”时，攻防作战、攻击/护送或运载目标地图的最终目标仍可被完成\n- 修复了以下问题：在启用“禁用内置游戏模式完成”时，在攻防作战、攻击/护送或运载目标地图的最终目标上达到 100% 距离或占领进度会引发持续蜂鸣声\n- 修复了导致“停止变形油门”动作失效的问题\n- 当 D.Va 使用其任一终极技能时，“正在使用终极技能”值现在会返回 true\n- 回声的终极技能在最初几帧内，“正在使用终极技能”值现在会返回 true（几帧之后，请检查新增的“正在复制”值）\n- 艾什的“正在使用终极技能”值现在仅在召唤鲍勃存活期间返回 true\n- 修复了导致“重生”动作对近期被复活的玩家失效的问题\n- 修复了以回声为指定英雄的规则在其终极技能期间或之后无法始终正确执行的问题\n- 修复了“正在使用主要攻击”值在温斯顿的终极技能之后以及半藏的岚技能期间有时返回错误值的问题\n- 如果黑百合唯一存在的剧毒诡雷已被发射到地图之外，其“正在使用技能 2”值不再返回 true\n- 修复了以下问题：即使已在编辑器中修复问题，某些子程序错误仍会使脚本错误消息残留在屏幕上\n- 修复了导致“设置目标描述”在玩家出生前执行时失效的问题\n- 修复了导致“禁用内置游戏模式播报员”在特定模式下失效的问题\n- 修复了首次启动“熔岩地面”工坊预设时持续伤害效果不生效的问题\n- 修复了在夺旗模式的“集结英雄”阶段无法使用“设置比赛时间”的问题\n- 修复了导致某些技能无法触发“造成/受到击退”事件的问题（狂鼠震荡地雷对自身的击退、末日铁拳的火箭重拳，以及莱因哈特的火箭重锤）\n- 修复了通过工坊或自定义游戏设置更改重力设置后，西格玛的终极技能无法正常工作的问题\n- 修复了假人机器人名称无法在击杀回放、全场最佳和比赛结束总结中正确显示的问题\n- 修复了“摧毁所有假人机器人”在特定情况下失效的问题",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2020-06-16-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:56:14+00:00",
+  "status": "draft",
+  "source_hash": "sha256:8be4b32c2a8cea8192483351a0273d96afda3c7f21ebc553e262a9e6ee75e43f",
+  "kept_english": []
+ }
+}

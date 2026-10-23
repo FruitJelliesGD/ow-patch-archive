@@ -1,0 +1,681 @@
+{
+ "id": "ai-2019-08-13-1",
+ "site": "ai",
+ "date": "2019-08-13",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2019/08",
+ "title": "《守望先锋》补丁说明——2019年8月13日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "补丁亮点",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "新功能：预设职责模式",
+     "body": "预设职责模式是对《守望先锋》匹配与排队系统的更新，让玩家可以自行选择在比赛中使用的职责。在竞技比赛中，玩家在寻找比赛前先选择职责。匹配系统会组建一支由两名重装、两名支援和两名输出英雄组成的队伍。进入比赛后，玩家在所选职责范围内选择英雄。比赛结束后，竞技玩家将返回主菜单，在排队进入下一场比赛前选择职责。如需了解预设职责模式的更多信息，请阅读详细博客文章。",
+     "dev": null
+    },
+    {
+     "title": "新英雄：西格玛（重装）",
+     "body": "西格玛是一位古怪的天体物理学家，也是一名不稳定的重装英雄。他在一次轨道实验中出了差错，从而获得了控制重力的力量。在被黑爪操控并作为活体武器部署后，西格玛在战场上的存在不容忽视。西格玛发射两颗超能之球（引力电荷），它们会在墙壁上弹射并在短暂延迟后内爆，对较大范围内的敌人造成伤害。使用实验屏障时，他会将一个浮动屏障推进到他所选择的位置，并且可以随时收回屏障。借助动能俘获，西格玛可以将来袭的投射物冻结在半空中，并将其转化为护盾。西格玛使用质量吸附聚集大量碎片，然后将其掷向敌人，将其击倒。西格玛通过引力乱流释放全部力量，腾空而起，将目标区域内的敌人举起并抛向天空，随后再将其猛砸回地面。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "综合更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "赞赏",
+     "body": "- 玩家现在可以在以下游戏模式中互相赞赏：\n\n\n  - 未知英雄\n  - 无限制\n  - 死斗\n  - 临别礼物\n  - 低重力\n  - 所有 PvE 活动模式（起义、复仇、风暴崛起）",
+     "dev": null
+    },
+    {
+     "title": "游戏模式",
+     "body": "- 未知英雄——在占领要点地图上，英雄现在会在回合之间重置。",
+     "dev": null
+    },
+    {
+     "title": "工坊",
+     "body": "新事件\n\n- 玩家造成治疗\n- 玩家受到治疗\n- 玩家加入比赛\n- 玩家离开比赛\n\n新动作\n\n- 开始转换油门\n- 停止转换油门\n\n新数值\n\n- 治疗者\n\n- 被治疗者\n- 事件治疗\n- 主机玩家",
+     "dev": "工坊中一项常见的功能需求是追踪治疗，因此我们新增了两种事件类型和三个新数值来实现这一点。我们还新增了事件，以便更轻松地检测玩家加入和离开比赛。为了支持为自定游戏创建管理员式权限，现在可以通过主机玩家检测游戏所有者。最后，我们新增了缩放、反转和旋转玩家输入油门的功能，以便更轻松地在第三人称下控制角色。"
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "ashe",
+     "name_en": "Ashe",
+     "name_cn": "艾什",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "艾什的完整装填时间感觉限制过强。不过，较长的装填时间是为了平衡她枪械的威力，因此我们希望谨慎行事，不要将其完全消除。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "每发子弹的装填时间从 0.3 秒降低至 0.25 秒。",
+       "subject": null,
+       "dimension": "other",
+       "before": 0.3,
+       "after": 0.25,
+       "by": -0.05,
+       "by_pct": null,
+       "metric": "reload time per round",
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "brigitte",
+     "name_en": "Brigitte",
+     "name_cn": "布丽吉塔",
+     "role": "support",
+     "icon": null,
+     "dev_note": "这些改动的目标是让布丽吉塔更多地成为队伍的主要治疗者，代价是削弱她的生存能力。由于布丽吉塔现在将只是队伍中两名支援英雄之一，因此她能够提供足够的治疗以在该职责中发挥价值就很重要。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Inspire (Passive)",
+       "name_cn": "鼓舞士气（被动）",
+       "slug": "inspire-passive",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "治疗量从 100 提高至 130",
+         "before": 100.0,
+         "after": 130.0,
+         "by": 30.0,
+         "by_pct": null,
+         "metric": "healing",
+         "raw_metric": "healing amount",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "鼓舞士气的自我治疗现在减半",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Repair Pack",
+       "name_cn": "恢复包",
+       "slug": "repair-pack",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在有 3 次充能",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "治疗量从 150 改为 120",
+         "before": 150.0,
+         "after": 120.0,
+         "by": -30.0,
+         "by_pct": null,
+         "metric": "healing",
+         "raw_metric": "healing amount",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "现在在 2 秒内治疗，而非立即治疗",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "如果向同一人投掷多个恢复包，当前持续时间将延长 2 秒",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Whip Shot",
+       "name_cn": "流星飞锤",
+       "slug": "whip-shot",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "飞出速度从 60 提高至 80",
+         "before": 60.0,
+         "after": 80.0,
+         "by": 20.0,
+         "by_pct": null,
+         "metric": "out-going velocity",
+         "raw_metric": "out-going velocity",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "收回时间从 0.6 秒降低至 0.3 秒",
+         "before": 0.6,
+         "after": 0.3,
+         "by": -0.3,
+         "by_pct": null,
+         "metric": "retracting time",
+         "raw_metric": "retracting time",
+         "unit": "s"
+        }
+       ]
+      },
+      {
+       "name_en": "Barrier Shield",
+       "name_cn": "屏障护盾",
+       "slug": "barrier-shield",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "屏障生命值从 500 降低至 200",
+         "before": 500.0,
+         "after": 200.0,
+         "by": -300.0,
+         "by_pct": null,
+         "metric": "barrier",
+         "raw_metric": "barrier health",
+         "unit": "hp"
+        }
+       ]
+      },
+      {
+       "name_en": "Shield Bash",
+       "name_cn": "能量盾击",
+       "slug": "shield-bash",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "眩晕持续时间从 0.9 秒降低至 0.75 秒",
+         "before": 0.9,
+         "after": 0.75,
+         "by": -0.15,
+         "by_pct": null,
+         "metric": "stun duration",
+         "raw_metric": "stun duration",
+         "unit": "s"
+        }
+       ]
+      },
+      {
+       "name_en": "Rally",
+       "name_cn": "集结号令",
+       "slug": "rally",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "终极技能消耗提高 10%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 10.0,
+         "metric": "ultimate_cost",
+         "raw_metric": "ultimate cost",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "d-va",
+     "name_en": "D.Va",
+     "name_cn": "D.Va",
+     "role": "tank",
+     "icon": null,
+     "dev_note": "此改动只是为了抵消终极技能消耗的全局提高。在脱离机甲后，D.Va 积攒终极技能所需的时间应与本次更新前保持一致。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Call Mech",
+       "name_cn": "呼叫机甲",
+       "slug": "call-mech",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "驾驶员终极技能消耗降低 12%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 12.0,
+         "metric": "pilot ultimate cost",
+         "raw_metric": "pilot ultimate cost",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "doomfist",
+     "name_en": "Doomfist",
+     "name_cn": "末日铁拳",
+     "role": "tank",
+     "icon": null,
+     "dev_note": "这是一项体验优化改动，让末日铁拳可以更自由地将快速近身攻击作为连招的一部分，而不会因此感到吃亏。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Melee",
+       "name_cn": "近身攻击",
+       "slug": "melee",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "快速近身攻击不再暂停弹药装填。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "hanzo",
+     "name_en": "Hanzo",
+     "name_cn": "半藏",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "岚的总体输出过高，因此我们降低了最大射击次数。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Storm Arrow",
+       "name_cn": "岚",
+       "slug": "storm-arrow",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "岚的弹药从 6 降低至 5",
+         "before": 6.0,
+         "after": 5.0,
+         "by": -1.0,
+         "by_pct": null,
+         "metric": "storm arrows ammo",
+         "raw_metric": "storm arrows ammo",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "orisa",
+     "name_en": "Orisa",
+     "name_cn": "奥丽莎",
+     "role": "tank",
+     "icon": null,
+     "dev_note": "对抗奥丽莎时，一个常见的反馈是射击屏障感觉没有用，因为它恢复得太快。提高防护屏障的冷却时间将使摧毁它更有回报。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Protective Barrier",
+       "name_cn": "防护屏障",
+       "slug": "protective-barrier",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从 8 秒提高至 9 秒",
+         "before": 8.0,
+         "after": 9.0,
+         "by": 1.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "reinhardt",
+     "name_en": "Reinhardt",
+     "name_cn": "莱因哈特",
+     "role": "tank",
+     "icon": null,
+     "dev_note": "作为前线近战范围的重装英雄，莱因哈特比大多数英雄更容易受到击退技能的不利影响。为了减少部分挫败感，并让莱因哈特能够更轻松地履行其职责，他现在对击退更具抗性。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "New Passive: “Steadfast”",
+       "name_cn": "新被动：「坚定不移」",
+       "slug": "new-passive-steadfast",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "击退效果降低 30%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "sombra",
+     "name_en": "Sombra",
+     "name_cn": "黑影",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "黑客入侵是一种强力的禁用技能，持续时间很长。略微降低持续时间将使被入侵的玩家感觉不那么压抑，同时不会大幅降低其有效性。电磁脉冲激活时间增加，为对方队伍提供了更多反应时间和更多反制机会。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Hack",
+       "name_cn": "黑客入侵",
+       "slug": "hack",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "对敌方玩家的持续时间从 6 秒降低至 5 秒",
+         "before": 6.0,
+         "after": 5.0,
+         "by": -1.0,
+         "by_pct": null,
+         "metric": "duration",
+         "raw_metric": "duration on enemy players",
+         "unit": "s"
+        }
+       ]
+      },
+      {
+       "name_en": "EMP",
+       "name_cn": "电磁脉冲",
+       "slug": "emp",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "激活时间从 0.2 秒提高至 0.35 秒",
+         "before": 0.2,
+         "after": 0.35,
+         "by": 0.15,
+         "by_pct": null,
+         "metric": "activation time",
+         "raw_metric": "activation time",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "symmetra",
+     "name_en": "Symmetra",
+     "name_cn": "秩序之光",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "秩序之光的传送面板是一个有趣的工具，但使用起来常常感觉限制过多。让传送面板无限期持续存在，为秩序之光在各种地图和团队阵容中的使用方式开辟了新的可能性。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Teleporter",
+       "name_cn": "传送面板",
+       "slug": "teleporter",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在持续无限时间，直到被摧毁",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "玩家可以使用技能 2 输入摧毁自己的传送面板",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "冷却时间现在从传送面板被摧毁时开始计算",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "最大范围从 25 米提高至 30 米",
+         "before": 25.0,
+         "after": 30.0,
+         "by": 5.0,
+         "by_pct": null,
+         "metric": "maximum range",
+         "raw_metric": "maximum range",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "如果入口距离出口超过 40 米，传送面板将被摧毁",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "tracer",
+     "name_en": "Tracer",
+     "name_cn": "猎空",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "此前我们削弱了脉冲炸弹的威力，以确保它对重装英雄不会过于致命，因为炸弹更容易黏在重装英雄身上。虽然这仍是我们的目标，但我们正在恢复部分失去的威力，以帮助应对其他高血量目标，例如堡垒，或拥有布丽吉塔提供额外护甲的敌人。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Pulse Bomb",
+       "name_cn": "脉冲炸弹",
+       "slug": "pulse-bomb",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "伤害从 300 提高至 350",
+         "before": 300.0,
+         "after": 350.0,
+         "by": 50.0,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "damage",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "wrecking-ball",
+     "name_en": "Wrecking Ball",
+     "name_cn": "破坏球",
+     "role": "tank",
+     "icon": null,
+     "dev_note": "破坏球拥有非常活跃的打法，但玩家常常觉得很难充分利用他的终极技能。这项改动允许他在需要时（尤其是从高空）将地雷禁区铺得更开，同时如果他在接近地面时激活，仍可保持较紧密的聚集。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Minefield",
+       "name_cn": "地雷禁区",
+       "slug": "minefield",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "弹道速度从 10 提高至 12，使地雷散布得更开",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "激活时间从 0.25 秒降低至 0.1 秒",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 全局终极技能消耗提高 12%。\n\n- 减速效果：友方和敌方的减速效果不再叠加，而是分别独立计算，移动速度将由较慢的那个决定。\n\n- 修复了一个错误，该错误导致快速获得/失去目标的技能无法造成完整伤害，例如查莉娅和秩序之光的主要攻击光束的快速追踪。",
+     "dev": "这是一个相当重要的错误修复，可能导致光束武器在某些情况下造成高得多的伤害。尤其是查莉娅和秩序之光，可能会因此感觉强大许多。我们将密切关注这些英雄，确保他们不会变得过于强大。"
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 修复了一个错误，该错误导致在等待重生期间观战时无法显示字幕\n- 修复了一个错误，该错误导致冲锋类英雄（莱因哈特、末日铁拳、布丽吉塔）在碰撞时 inconsistently 互相击倒\n- 修复了一个错误，使某些技能（半藏的龙击和路霸的链钩）在时间减慢时（回合结束或自定义游戏）显示得更平滑\n- 修复了一个错误，该错误导致自定义游戏中的预设界面显示顺序错误\n- 修复了一个错误，使放置预览（死神的暗影步、美的冰墙）现在应该更加平滑\n- 修复了一个错误，使放置预览在点击后会保持位置，直到被服务器确认\n- 修复了一个错误，该错误导致放置预览的方向切换在较高延迟下可能闪烁（美的冰墙、巴蒂斯特的增幅矩阵、秩序之光的光子屏障）",
+     "dev": null
+    },
+    {
+     "title": "地图",
+     "body": "66号公路\n\n- 修复了一个错误，该错误允许进攻方在回合开始前离开出生室",
+     "dev": null
+    },
+    {
+     "title": "英雄",
+     "body": "艾什\n\n- 修复了一个错误，该错误导致她在跳跃时向下瞄准射击时枪械会轻微穿入镜头\n\n末日铁拳\n\n- 修复了一个问题，该问题使末日铁拳在使用火箭重拳并擦过角落时能够穿过门口\n- 修复了一个错误，该错误导致火箭重拳无法稳定摧毁黑影的位移传动，且不会被其阻挡，类似秩序之光的炮台\n- 修复了一个问题，使被火箭重拳击中的目标现在会直接向后飞，而不是保留其原有的横向动量\n- 修复了一个问题，使免疫眩晕但不免疫击退的目标（查莉娅的粒子屏障、禅雅塔在圣期间）不再能影响击退轨迹\n- 修复了一个错误，该错误导致末日铁拳在蹲下时使用毁天灭地期间移动得更慢\n- 修复了一个错误，该错误导致末日铁拳在毁天灭地期间向后移动稍慢\n\nD.Va\n\n- 修复了一个错误，该错误导致 D.Va 在移动时向下瞄准时防御矩阵无法指向下方\n\n卢西奥\n\n- 修复了一个问题，该问题导致卢西奥在墙面上骑乘时动画落地预测出现误报\n\n奥丽莎\n\n- 修复了一个错误，该错误导致在英雄画廊中连续观看奥丽莎的「Oh!」精彩镜头时某些视觉效果停止播放\n\n莱因哈特\n\n- 修复了一个错误，该错误导致冲锋击退被多次施加\n\n破坏球\n\n- 修复了一个错误，该错误导致破坏球落在非常平坦、光滑的表面上时卡在坠击动画中\n- 修复了一个错误，该错误导致破坏球在光滑表面上使用重力坠击时暂时卡住\n- 修复了一个错误，该错误导致破坏球在使用感应护盾时获得错误数量的护盾\n\n查莉娅\n\n- 修复了一个错误，该错误导致查莉娅在第三人称视角观看其姿势时武器和手臂动画异常\n\n禅雅塔\n\n- 修复了一个错误，该错误导致禅雅塔在打断主要攻击时第一人称快速近身攻击动画出现延迟",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2019-08-13-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:53:09+00:00",
+  "status": "draft",
+  "source_hash": "sha256:5ee78e2632f157cdb83d5f50ee81080012f8b1517bd52513323f4f78049090e4",
+  "kept_english": []
+ }
+}

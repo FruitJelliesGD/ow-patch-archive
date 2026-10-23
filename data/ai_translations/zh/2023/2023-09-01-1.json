@@ -1,0 +1,492 @@
+{
+ "id": "ai-2023-09-01-1",
+ "site": "ai",
+ "date": "2023-09-01",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/09",
+ "title": "《守望先锋》补丁说明——2023年9月1日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "《守望先锋2》2023周年庆",
+   "role": null,
+   "description": "我们正在庆祝《守望先锋2》的第一年！来游玩回归的活动模式，包括「奥林匹斯之战」、「捉迷藏」、「星际守望」和「恶作剧与魔法」！你还可以参与新的挑战，赢取守望先锋银币，用于在游戏内商店购买回归的传奇皮肤。9月19日活动开启，快来加入庆典吧！",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "全新游戏模式——英雄精通",
+   "role": null,
+   "description": "英雄精通是一个全新的单人游戏模式，玩家可以在自定义关卡中使用单个英雄测试自己的技巧。将你的专长推向极限，争取高分并称霸排行榜。你准备好迎接挑战了吗？\n\n- 每个英雄都有三个难度递增的独特关卡可供游玩。施展你的技巧，在每个关卡中最多可解锁五颗星。\n- 英雄精通关卡会根据多种因素评分，包括时间、消灭、治疗和护送。每个英雄还有单独追踪的统计数据。此外，收集所有精通徽章来展示你的实力！\n- 英雄精通上线时将伴随一个包含专属奖励的限时活动。猎空、莱因哈特和天使的关卡现已开放，索杰恩、温斯顿等英雄的关卡将在未来几周内推出。",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "综合更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "信号系统更新",
+     "body": "- 己方实体（例如托比昂的炮台、秩序之光的传送面板或伊拉锐的治疗光塔）作为信号目标的优先级现在低于敌方英雄。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": "英雄更新",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "重装",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "junker-queen",
+     "name_en": "Junker Queen",
+     "name_cn": "渣客女王",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/cf66adfac58a0321ec1f7d3a7241d6bf2f3b311707064d2f0ace2e3f4e342727.png",
+     "dev_note": "开发者评论：此改动奖励锯齿利刃的投掷精准度，同时不会直接影响渣客女王的自我治疗。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Jagged Blade",
+       "name_cn": "锯齿利刃",
+       "slug": "jagged-blade",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/7aff09649e4e2daeec13cfcca4d5e369b4ddc0160587637bb607761ecf89f16c.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "命中伤害从50提高至65。",
+         "before": 50.0,
+         "after": 65.0,
+         "by": 15.0,
+         "by_pct": null,
+         "metric": "impact damage",
+         "raw_metric": "impact damage",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "orisa",
+     "name_en": "Orisa",
+     "name_cn": "奥丽莎",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/20c12a10cfe0b5608f9eec63a74ecb0ccd18a114019bc77bb2765f87776e17ed.png",
+     "dev_note": "开发者评论：强固防御的冷却时间已调整，使有效续航能力保持不变。不过，奥丽莎不再被鼓励提前取消技能以立即开始冷却，这使得使用间隔更加一致，也更容易被反制。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Fortify",
+       "name_cn": "强固防御",
+       "slug": "fortify",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d697fa90726cf683222920822d2ee00a85e0420c6cbc6ec2365573f313d06357.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间在技能激活时开始计算，而非技能结束时。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从12秒提高至16.5秒。",
+         "before": 12.0,
+         "after": 16.5,
+         "by": 4.5,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "过量生命值加成从125降低至100。",
+         "before": 125.0,
+         "after": 100.0,
+         "by": -25.0,
+         "by_pct": null,
+         "metric": "overhealth",
+         "raw_metric": "overhealth bonus",
+         "unit": "hp"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "zarya",
+     "name_en": "Zarya",
+     "name_cn": "查莉娅",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d43075cba10cd711a129556142849587e78f1f55b0105d39a640da53ffa64e1b.png",
+     "dev_note": "开发者评论：查莉娅经常将两层屏障都用于自身，因为这样通常能更稳定地积攒能量。对投射屏障的改动会鼓励她更频繁地为队友使用屏障。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Projected Barrier",
+       "name_cn": "投射屏障",
+       "slug": "projected-barrier",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6e42984ee8329a50e9c2460ae2df7670d7be9846a093c336e4576d1eea1fb2f1.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "生命值从200提高至225。",
+         "before": 200.0,
+         "after": 225.0,
+         "by": 25.0,
+         "by_pct": null,
+         "metric": "health",
+         "raw_metric": "health",
+         "unit": "hp"
+        },
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从10秒降低至8秒。",
+         "before": 10.0,
+         "after": 8.0,
+         "by": -2.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "尺寸增大15%。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 15.0,
+         "metric": "size",
+         "raw_metric": "size",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "输出",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "ashe",
+     "name_en": "Ashe",
+     "name_cn": "艾什",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e41d918d0e7ffa772b5571df3d0dc1a05e6d9032307f78be935972cfd59f208a.png",
+     "dev_note": "开发者评论：艾什的总装填时间是所有英雄中最长的，以平衡部分装填后即可射击的优势。不过，我们略微缩短了装填时间，以减轻从空弹匣完全装填的惩罚。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "The Viper",
+       "name_cn": "毒蛇",
+       "slug": "the-viper",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/cca8472a3e966de2b9985cee492e527eac5063e9881797dded4ca1e32e292bc0.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "装填时间从0.25秒降低至0.2秒。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "bastion",
+     "name_en": "Bastion",
+     "name_cn": "堡垒",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3a7dc6d45ce7a1e1c2d31bd4d88b4889c412b2003ad82d1fd8e41271952c1f68.png",
+     "dev_note": "开发者评论：A-36战术榴弹在最近增大弹道尺寸后变得更加可靠，因此不需要造成那么高的伤害。火炮模式的改动是针对该终极技能预期效果的错误修复，我们将观察这对堡垒表现的影响。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "A-36 Tactical Grenade",
+       "name_cn": "A-36战术榴弹",
+       "slug": "a-36-tactical-grenade",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/22f9f8c043e1746011d7dcee2e811e0d24470bd0eb5128fca9c3aea2f2dcfe69.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "命中伤害从30降低至15。",
+         "before": 30.0,
+         "after": 15.0,
+         "by": -15.0,
+         "by_pct": null,
+         "metric": "impact damage",
+         "raw_metric": "impact damage",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Configuration Artillery",
+       "name_cn": "火炮模式",
+       "slug": "configuration-artillery",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/06c377aef476bfb21ee1dca3d4d1151f8a4131b388a5489f3dfce6fb232a2711.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "不再能造成暴击。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "mei",
+     "name_en": "Mei",
+     "name_cn": "美",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/08586dceed41e030d575b2b643118f55390f1c2af91dd15394528f5399fcc934.png",
+     "dev_note": "开发者评论：美在上一次改动后表现仍然不佳，因此我们提高了主要攻击模式的效果，并改善了深度冰冻的使用体验。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Endothermic Blaster",
+       "name_cn": "冰霜冲击枪",
+       "slug": "endothermic-blaster",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a935216c60c1c7d72502f373f4af24651c9eb6513781bc482c60ef4d551fb6b9.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "伤害从每秒65提高至70。",
+         "before": 65.0,
+         "after": 70.0,
+         "by": 5.0,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "damage",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "主要攻击模式命中之间减速效果的持续时间从0.5秒提高至0.6秒。",
+         "before": 0.5,
+         "after": 0.6,
+         "by": 0.1,
+         "by_pct": null,
+         "metric": "duration",
+         "raw_metric": "duration before slow falls off between primary fire hits",
+         "unit": "s"
+        }
+       ]
+      },
+      {
+       "name_en": "Deep Chill",
+       "name_cn": "深度冰冻",
+       "slug": "deep-chill",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c14b2c5652526a006233965b176fb2b5af9e7c5d44045fad3844267303f07091.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "额外伤害现在也可以通过美的快速近身攻击触发。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "支援",
+   "role": "support",
+   "description": "**支援被动**\n\n- 支援被动激活前的持续时间从1.5秒提高至2秒。",
+   "dev": "开发者评论：支援英雄的生存能力已获得单独增强，整体表现相当强势，因此我们降低了该职责通用被动的影响。",
+   "heroes": [
+    {
+     "slug": "baptiste",
+     "name_en": "Baptiste",
+     "name_cn": "巴蒂斯特",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5ac801c6fe84f83fe5015af89858cbdfb2ec9d32d141f582889b5381fd0195fc.png",
+     "dev_note": "开发者评论：愈合冲击在获得对低生命值盟友的额外瞬发治疗后，整体治疗输出过于有效，因此我们略微降低了其总治疗量。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Regenerative Burst",
+       "name_cn": "愈合冲击",
+       "slug": "regenerative-burst",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d887d165f7b0eb98a30af8f274ff740c6c7735af719b93e95dd9da17558815d8.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "瞬发治疗量从50降低至40。",
+         "before": 50.0,
+         "after": 40.0,
+         "by": -10.0,
+         "by_pct": null,
+         "metric": "instant healing",
+         "raw_metric": "instant healing",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "持续治疗量从5秒内50降低至4秒内40。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "kiriko",
+     "name_en": "Kiriko",
+     "name_cn": "雾子",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/24d1d7bf86c331b3d81b934442ed36fd0121f6815255c6f26f456127fb342d15.png",
+     "dev_note": "开发者评论：铃不再击退敌方英雄，因此其弹道也不需要命中他们。这项使用体验改动可防止在同时有敌人和盟友的群体中投掷时意外触发。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Protection Suzu",
+       "name_cn": "铃",
+       "slug": "protection-suzu",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3775c37a363e1aaf02a6df4cdfb611f18e38bb69ce42dd59abddb4140cea9790.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在会穿过敌方英雄。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 修复了「破晓」挑战在完成比赛后被重置为0且无法获得进度的问题。\n- 「拯救玛丽」挑战现在明确了完成所需的难度要求。\n- 修复了升级进度等级徽章不晋升的问题。已达到应晋升等级的玩家现在会晋升至正确的徽章。\n- 修复了「相对瞄准灵敏度」选项不接受0%数值的错误。\n- 修复了已装备的竞技头衔在重新登录后重置的情况。\n- 修复了在其他平台进行的比赛显示为已放弃的错误。\n- 修复了「恶作剧与魔法」中的缝隙和其他环境问题。\n- 修复了在温斯顿实验室中使用控制器时可能出现的导航问题。\n- 修复了训练机器人重生时缺失音效的问题。\n- 修复了控制器/游戏手柄上阻止部分角色斜向飞行的错误。\n- 修复了竞技比赛中加时阶段进度条未完全燃尽，导致难以判断回合结束的问题。\n- 修复了玩家购买金色武器后无法立即装备的问题。",
+     "dev": null
+    },
+    {
+     "title": "地图",
+     "body": "多拉多\n\n- 修复了终点附近环境中的一个错误，该错误有时会让美的暴雪穿过环境。\n\n新渣客城\n\n- 修复了地图上玩家可能卡住的区域。\n- 修复了地图上特定区域的光照问题。\n- 添加了加载进入地图时的开场白。现在你会看到「欢迎来到新渣客城。」\n\n苏拉瓦萨\n\n- 修复了地图上一些允许部分炮台隐藏的喷泉。\n- 修复了一些光照不正确的区域。\n- 修复了地图上玩家可能卡住的区域。\n- 修复了地图上允许玩家站在可游玩空间之外的区域。\n- 修复了地图上多个区域的几何体缺口。",
+     "dev": null
+    },
+    {
+     "title": "合作任务",
+     "body": "里约\n\n- 修复了火炮落地后可能发生的错误，该错误会导致你在重新获得镜头控制权后镜头朝向天空。\n\n多伦多\n\n- 修复了与列车相关的一个交互，该交互可能迫使玩家离开地图边界。\n- 修复了在此地图上更改图形设置时可能发生的光照错误。\n\n哥德堡\n\n- 修复了出生点中玩家可能卡住的位置。",
+     "dev": null
+    },
+    {
+     "title": "英雄",
+     "body": "堡垒\n\n- 修复了一个导致堡垒的战术手雷垂直击退被降低的错误。\n\n回声\n\n- 修复了人格复制后的伊拉锐施放桎梏灼日时显示错误视觉特效颜色的错误。\n- 修复了人格复制后的秩序之光炮台在人格复制持续时间内持续存在的一个交互。\n\n伊拉锐\n\n- 修复了源氏的闪与伊拉锐的治疗光塔之间的一个交互。闪治疗光塔现在应能正确治疗源氏的队友。\n- 修复了导致「死透」语音无法装备的错误。\n- 解决了伊拉锐在使用桎梏灼日时被安娜的麻醉镖睡住后可以看到地图下方的一个交互。\n- 修复了伊拉锐的光塔指示器被黑影入侵后会被禁用的一个交互。\n- 修复了秩序之光的传送面板的一个交互，该交互允许伊拉锐将光塔放置在半空中。\n- 修复了多个导致光塔部署后立即被摧毁的情况。\n\n渣客女王\n\n- 修复了一个错误：渣客女王在锯齿利刃卡入物体的同一帧将其召回（通过按住辅助攻击并瞄准与利刃召回范围相同距离的物体）会导致一把可标记的利刃卡在世界中。\n\n雾子\n\n- 修复了一个导致在低天花板房间内难以对队友使用瞬的错误。\n\n生命之梭\n\n- 修复了一个允许友方电磁脉冲摧毁你的花瓣平台的错误。\n\n拉玛刹\n\n- 解决了拉玛刹在格挡时，禅雅塔的乱所带来的伤害提高无法正确生效的错误。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2023-09-01-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:57:15+00:00",
+  "status": "draft",
+  "source_hash": "sha256:794751b22cc442cf92f7ee93b40c36f22b64907ee7bd7bce8bcfb5da80db46fa",
+  "kept_english": []
+ }
+}

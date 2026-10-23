@@ -1,0 +1,225 @@
+{
+ "id": "ai-2020-09-24-1",
+ "site": "ai",
+ "date": "2020-09-24",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2020/09",
+ "title": "《守望先锋》补丁说明——2020年9月24日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "hero_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "ashe",
+     "name_en": "Ashe",
+     "name_cn": "艾什",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e43bc239ddb5254f9df92f4c19cdf20a2df5be3f546af76c8a13da385bb9dcbd.png",
+     "dev_note": "艾什仍然稍显强势，但我们希望保留她步枪的打击感，因此从她的延时雷管技能中削减一部分强度。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Dynamite",
+       "name_cn": "延时雷管",
+       "slug": "dynamite",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a326b202a821ab3e196d1faab6144460f470001b26a8b6f2ab96cb3af5f325b3.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "爆炸伤害从 75 降低至 50",
+         "before": 75.0,
+         "after": 50.0,
+         "by": -25.0,
+         "by_pct": null,
+         "metric": "explosion damage",
+         "raw_metric": "explosion damage",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "baptiste",
+     "name_en": "Baptiste",
+     "name_cn": "巴蒂斯特",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a4f09ac5528ea7c458223747a0b47144f1b6b1d2736fa3b67c18a8ab43d0d815.png",
+     "dev_note": "巴蒂斯特的终极技能充能主要来自范围治疗。由于我们近期降低了范围治疗数值，因此也相应下调了他终极技能的消耗。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Amplification Matrix",
+       "name_cn": "增幅矩阵",
+       "slug": "amplification-matrix",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0a31371b55e4007e67a86f8495949970d20f64b2f0166e78d3fd16217e090a83.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "终极技能消耗降低 15%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 15.0,
+         "metric": "ultimate_cost",
+         "raw_metric": "ultimate cost",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "cassidy",
+     "name_en": "Cassidy",
+     "name_cn": "卡西迪",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a30fd337709bc9bd52781db34d754cd86825f021c27bcd9bc0e912cc5d88577b.png",
+     "dev_note": "在降低麦克雷主武器的伤害输出后，我们希望通过强化他的技能来返还一部分强度。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Combat Roll",
+       "name_cn": "战术翻滚",
+       "slug": "combat-roll",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/24a3f2f619859812bba6b6374513fa971b6b19ccb34950c02118b41cc4f93142.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "距离提高 20%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 20.0,
+         "metric": "distance",
+         "raw_metric": "distance",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Flashbang",
+       "name_cn": "闪光弹",
+       "slug": "flashbang",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c9de6a63247025da4b96ad4a3e36fe2675a5ac9da3b42384590f99eed8f1d9b3.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "眩晕持续时间从 0.7 秒提高至 0.8 秒",
+         "before": 0.7,
+         "after": 0.8,
+         "by": 0.1,
+         "by_pct": null,
+         "metric": "stun duration",
+         "raw_metric": "stun duration",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "orisa",
+     "name_en": "Orisa",
+     "name_cn": "奥丽莎",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1f9cf8dd1ea36ba91440be891d79cd97bd4ac2d2e0e409a8eee0c76a4317617a.png",
+     "dev_note": "提高弹道速度将让奥丽莎的武器手感更跟手，减少预判目标的需求。我们发现近期对奥丽莎技能的调整影响超出预期，因此提高了她的护甲作为补偿。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "基础护甲从 200 提高至 250",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 200.0,
+       "after": 250.0,
+       "by": 50.0,
+       "by_pct": null,
+       "metric": "base armor",
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Fusion Driver",
+       "name_cn": "聚变驱动器",
+       "slug": "fusion-driver",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8bf67f548fb8dd8fde4dd07ae567e635f8d6229c330a3656134697b9ecbd9140.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "弹道速度从 90 提高至 120",
+         "before": 90.0,
+         "after": 120.0,
+         "by": 30.0,
+         "by_pct": null,
+         "metric": "projectile_speed",
+         "raw_metric": "projectile speed",
+         "unit": "m/s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "roadhog",
+     "name_en": "Roadhog",
+     "name_cn": "路霸",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5f961a1625091209fdfb6086dee69178d9de88946b4b2d7492c0a4fffe5fdd4b.png",
+     "dev_note": "在上一轮霰弹枪改进后，路霸的链钩连招对部分体型较小的敌方英雄仍然不够有效。此改动会将目标拉近至近战距离，以便更迅速、更可靠地完成连招。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Chain Hook",
+       "name_cn": "链钩",
+       "slug": "chain-hook",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/139deabeb3d62c451b558367bf5e64641583355d99ed90fe42107a5716fdca3b.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在会将目标额外拉近 0.5 米（从 3.5 米缩短至 3.0 米）",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2020-09-24-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:56:41+00:00",
+  "status": "draft",
+  "source_hash": "sha256:c35fe761ea6dc557c8902755003876cad1dcc8e31c49e21288c88c871a9586ce",
+  "kept_english": []
+ }
+}

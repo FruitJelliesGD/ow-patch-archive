@@ -1,0 +1,252 @@
+{
+ "id": "ai-2016-10-12-1",
+ "site": "ai",
+ "date": "2016-10-12",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2016/10",
+ "title": "《守望先锋》补丁说明——2016年10月12日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "补丁亮点",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "新赛季活动：守望先锋万圣夜惊魂",
+     "body": "当暗影渐长、夜色渐寒……当女巫在夜间尖笑，幽灵在街头游荡……这只能意味着一件事：万圣节已经降临守望先锋！从今天开始，守望先锋的普通补给将替换为限时版万圣夜补给。每箱补给中至少包含一件超过 100 种万圣节主题的喷漆、头像、皮肤、胜利姿势、姿势和精彩镜头之一。而最勇敢的英雄们将在守望先锋首个合作 PvE 乱斗中，与疯狂科学家的金属爪牙一较高下：狂鼠复仇。\n\n欢迎来到守望先锋万圣夜惊魂！\n\n如需了解有关该活动的更多信息，请点击此处。",
+     "dev": null
+    },
+    {
+     "title": "新功能：排行榜",
+     "body": "游戏内排行榜现在将显示每个地区排名前 500 的竞技玩家，而另一个独立排行榜则让玩家可以查看自己的竞技表现与战网好友相比如何。此外，我们还将为正在进行的守望先锋万圣夜惊魂活动添加排行榜！\n\n注意：下载最新补丁后，玩家需要完成至少一场竞技比赛，才会出现在战网好友排行榜上。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "综合更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 观战模式现在支持固定摄像机\n- 自定游戏中现在可以编辑队伍名称\n- 提高了半藏装备狼神/孤狼皮肤时竜的语音音量\n- 被安娜的纳米激素命中的英雄会播放新的语音，告知其他玩家\n- 提高了莱因哈特「屏障即将失效」语音的播放频率\n- 自定游戏现在可以暂停",
+     "dev": null
+    },
+    {
+     "title": "竞技比赛",
+     "body": "- 离开或断开竞技比赛的玩家，现在只要比赛仍在进行中，就可以随时重新加入\n- 断开连接玩家的队友现在可以在 2 分钟（原为 1 分钟）后退出比赛，且不会受到离开惩罚。但是，他们会被记为一场失败",
+     "dev": null
+    },
+    {
+     "title": "观战",
+     "body": "- 观战模式中的摄像机移动已得到改进",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "英雄平衡更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "ana",
+     "name_en": "Ana",
+     "name_cn": "安娜",
+     "role": "support",
+     "icon": null,
+     "dev_note": "到目前为止，我们还没有看到任何迹象表明安娜整体过强，但她的终极技能充能速度略快，尤其是考虑到它对比赛可能产生的影响。此外，她的生物手雷也获得了小幅增强，以帮助她命中多个目标。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Nano Boost",
+       "name_cn": "纳米激素",
+       "slug": "nano-boost",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "终极技能消耗提高 20%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 20.0,
+         "metric": "ultimate_cost",
+         "raw_metric": "ultimate cost has been",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Biotic Grenade",
+       "name_cn": "生物手雷",
+       "slug": "biotic-grenade",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "半径从 3 米提高至 4 米",
+         "before": 3.0,
+         "after": 4.0,
+         "by": 1.0,
+         "by_pct": null,
+         "metric": "radius has been",
+         "raw_metric": "radius has been",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "widowmaker",
+     "name_en": "Widowmaker",
+     "name_cn": "黑百合",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "这项改动将帮助黑百合更迅速地获取新目标，并加快她在快节奏情况下的反应时间。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Widow's Kiss",
+       "name_cn": "寡妇之吻",
+       "slug": "widow-s-kiss",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "开镜动画时间从 0.5 秒降低至 0.33 秒",
+         "before": 0.5,
+         "after": 0.33,
+         "by": -0.17,
+         "by_pct": null,
+         "metric": "scoping-in animation time has been",
+         "raw_metric": "scoping-in animation time has been",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "junkrat",
+     "name_en": "Junkrat",
+     "name_cn": "狂鼠",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "狂鼠在高手手中可以是非常有效的英雄，但与同类英雄相比，炸弹轮胎往往显得威力不足。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "RIP-Tire",
+       "name_cn": "炸弹轮胎",
+       "slug": "rip-tire",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "技能现在激活得更快",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "用户界面更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 英雄画廊现在会标示哪些物品是在守望先锋万圣夜惊魂活动期间解锁的\n- 对游戏的主菜单、社交互动和选项菜单进行了若干细微的美术改动\n- 移除了生涯概况中某些英雄重复出现的若干统计数据\n- 玩家档案菜单中的图形、排版和布局已更新\n- 手柄用户现在可以在两种瞄准模式之间选择\n\n\n  - 双区模式（新默认）：摇杆绝大部分范围的移动灵敏度较低，加速相对较高。但是，当摇杆移动到其范围外侧 10% 时，将以高灵敏度、相对较低的加速移动。此模式可实现更精确的瞄准，同时仍允许玩家快速转身\n  - 指数曲线模式（旧默认）：当摇杆向范围外侧移动时，灵敏度呈指数级提升。整个过程中加速保持相对较高",
+     "dev": null
+    },
+    {
+     "title": "社交互动功能",
+     "body": "- 回合结束投票中，某些表彰现在出现的频率降低，而其他表彰出现的频率提高（例如，托比昂的「制造护甲包」出现频率降低，而「进攻助攻」出现频率提高）",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 被击倒的敌方玩家不再失去红色轮廓\n- 打开补给后预览的精彩镜头现在会循环播放\n- 修复了重新启动游戏后自定义按键绑定无法保存的错误\n- 修复了导致玩家无法将「截图」绑定到其他按键的错误\n- 修复了导致任何非默认喷漆无法在「全场最佳」中显示的错误\n- 在英雄画廊查看物品时，主菜单屏幕上出现的英雄不再显示在背景中",
+     "dev": null
+    },
+    {
+     "title": "竞技比赛",
+     "body": "- [PS4, XB1] 修复了某些玩家尚未进入前 500 名却错误显示前 500 名图标的问题",
+     "dev": null
+    },
+    {
+     "title": "地图",
+     "body": "- 修复了 D.Va 使用自毁时可在多张地图上到达非预期位置的错误\n- 修复了玩家可以从目标点极高处占领国王大道第一个目标的错误\n- 修复了运载目标可以为玩家治疗的错误，即使玩家受到安娜生物手雷的负面效果影响\n- 修复了训练靶场机器人生命条无法显示安娜生物手雷效果的错误\n- 修复了喷漆无法正确应用到艾兴瓦尔德部分表面的错误\n- 修复了光照问题，该问题导致艾兴瓦尔德城堡内某些物体显得比预期更暗",
+     "dev": null
+    },
+    {
+     "title": "英雄",
+     "body": "- 平滑了安娜开镜后松开时的动画过渡\n- 修复了堡垒在哨卫模式下弹壳向后弹出的错误\n- 修复了D.Va在队伍运输机内使用推进器时被传送回重生点的错误\n- 修复了半藏的音在选中后不显示的问题\n- 修复了狂鼠的统计数据无法正确追踪炸弹轮胎击杀的错误\n- 修复了狂鼠在使用炸弹轮胎获得4次击杀后无法获得「Roadkill」成就的错误\n- 修复了天使在装备女武神、Sigrún和Cobalt皮肤时，部分最佳镜头开场动画中不显示法杖的问题\n- 修复了从最佳镜头菜单查看时，猎空的最佳镜头开场动画以较低分辨率渲染的错误\n- 修复了黑百合可以使用抓钩钩住篮球的错误\n- 秩序之光的「Car Wash」成就现在正确列出所需的光束数量（6而非7）\n- 修复了导致禅雅塔的「Rapid Discord」成就难度高于预期的时间计算问题",
+     "dev": null
+    },
+    {
+     "title": "观战",
+     "body": "- 观战者现在可以在自定义游戏中于所有地图上看到「集结英雄」倒计时\n- 在重生前观战己方队伍时，你不再能看到击杀者的红色轮廓",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2016-10-12-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:43:34+00:00",
+  "status": "draft",
+  "source_hash": "sha256:6f2c67bf9a2e86c73b027a9576ab87fc794bd83b38147c81651c646a2c44669c",
+  "kept_english": []
+ }
+}

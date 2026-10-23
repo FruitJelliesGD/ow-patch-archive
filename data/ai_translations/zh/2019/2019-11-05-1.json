@@ -1,0 +1,214 @@
+{
+ "id": "ai-2019-11-05-1",
+ "site": "ai",
+ "date": "2019-11-05",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2019/11",
+ "title": "《守望先锋》补丁说明——2019年11月5日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "综合更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "新游戏选项：高精确度鼠标输入",
+     "body": "启用此选项后，守望先锋将使用鼠标的原生轮询率来确定射击的精确位置。注意：启用此选项可能会带来轻微的性能开销。更多详情请见此处。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "竞技比赛更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合更新",
+     "body": "- 从第19赛季开始，我们将把竞技比赛赛季的开始（和结束）时间从每隔一个月的1日改为每隔一个月的第一个周四。我们还会将赛季开始时间推迟到当天较晚的时候，以更好地配合开发人员在白天的可用时间。第19赛季现在于11月7日18:00 UTC（10:00 PST，13:00 EST）开始。\n- 从第19赛季开始，我们还将在竞技比赛中引入轮换的赛季地图池。第19赛季的初始地图池包含12张地图，每种模式各3张。未来的竞技赛季中，地图将在池中轮换进出，为每个赛季带来不同的体验和风格。有关地图池中当前可用地图的信息，可通过打开竞技比赛卡片的信息面板查看。",
+     "dev": null
+    },
+    {
+     "title": "第19赛季地图池：",
+     "body": "- 攻防作战：花村、阿努比斯神殿、沃斯卡娅工业区\n- 攻击/护送：好莱坞、国王大道、艾兴瓦尔德\n- 占领要点：尼泊尔、漓江塔、釜山\n- 运载目标：66号公路、监测站：直布罗陀、哈瓦那",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "工坊更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "新工坊功能：",
+     "body": "- 变量重命名\n- 允许的变量数量上限提高至128\n- 自动保存预设",
+     "dev": null
+    },
+    {
+     "title": "新工坊值：",
+     "body": "- 自定义字符串\n- 所有重装英雄\n- 所有支援英雄\n- 所有输出英雄\n- 地图\n- 当前地图",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "baptiste",
+     "name_en": "Baptiste",
+     "name_cn": "巴蒂斯特",
+     "role": "support",
+     "icon": null,
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Biotic Launcher",
+       "name_cn": "生化榴弹枪",
+       "slug": "biotic-launcher",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "恢复时间从0.45秒降低至0.36秒",
+         "before": 0.45,
+         "after": 0.36,
+         "by": -0.09,
+         "by_pct": null,
+         "metric": "recovery",
+         "raw_metric": "recovery",
+         "unit": "s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "移除随机散布",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "伤害衰减范围现在从25米开始，高于之前的20米",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "torbjorn",
+     "name_en": "Torbjörn",
+     "name_cn": "托比昂",
+     "role": "damage",
+     "icon": null,
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Molten Core",
+       "name_cn": "熔火核心",
+       "slug": "molten-core",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "消耗降低10%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 10.0,
+         "metric": "cost",
+         "raw_metric": "cost",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 美的冰墙、巴蒂斯特的维生力场和西格玛的引力乱流现在会更倾向于放置在边缘，而不是尽可能放得更远",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 修复了无法将鼠标左键绑定为向前移动的问题\n- 当好友请求达到上限后尝试接受好友请求时，现在会显示相应的错误提示\n- 修复了观战中使用控制器时「下一名玩家」和「上一名玩家」控制方向相反的问题\n- 修复了有时投射物（如法老之鹰的火箭或狂鼠的手雷）的爆炸效果不播放的问题",
+     "dev": null
+    },
+    {
+     "title": "工坊",
+     "body": "- 修复了阻止平衡未知英雄预设包含西格玛的问题\n- 修复了阻止假人机器人用于淘汰模式的问题\n- 修复了阻止「交流」动作对假人机器人生效的问题\n- 当传入的参数不是「事件玩家」时，「是否为假人机器人」现在会返回正确的值\n- 修复了阻止射线检测与某些物体碰撞的问题\n- 修复了某些颜色无法在HUD文本、世界内文本和创建图标中正常工作的问题\n- 修复了阻止「设置目标描述」生效的问题\n- 修复了某些模式之间占领进度百分比不一致的问题\n- 修复了当玩家目标是英雄时规则无法被正确禁用的问题\n- 修复了阻止士兵：76假人机器人使用疾跑的问题\n- 修复了从「射线检测命中玩家」返回的空实体与空值不相等的问题\n- 修复了阻止「禁止按钮」禁用交互按钮的问题\n- 修复了在工坊中访问其他菜单会导致最近未保存的更改丢失的问题",
+     "dev": null
+    },
+    {
+     "title": "地图",
+     "body": "- 沃斯卡娅工业区 - 移除了B点附近墙壁上的一处缝隙，该缝隙曾允许D.Va的炸弹击杀墙壁后的玩家\n- 尼泊尔：圣所 - 移除了尼泊尔：圣所占领点附近窗户上的一处细小缝隙，该缝隙曾允许D.Va的炸弹击杀墙壁后的玩家",
+     "dev": null
+    },
+    {
+     "title": "英雄",
+     "body": "安娜\n\n- 修复了装备法老皮肤时安娜腿部抽搐的问题\n- 修复了首次使用后麻醉镖手枪中注射器视觉上缺失的问题\n\n末日铁拳\n\n- 修复了使用自定义准星时裂地重拳的伤害指示器与准星重叠的问题\n\nD.Va\n\n- 修复了D.Va用防御矩阵抵挡敌方终极技能时，消灭提示中可能显示错误图标的问题\n\n莫伊拉\n\n- 修复了莫伊拉右键音效可能出现在身后而非前方的问题\n\n路霸\n\n- 修复了链钩有时会错误地连接秩序之光的传送面板、艾什的延时雷管以及狂鼠的钢铁陷阱和震荡地雷的问题\n\n黑影\n\n- 修复了黑影极少情况下无法正确位移至运载目标的问题",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2019-11-05-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:53:34+00:00",
+  "status": "draft",
+  "source_hash": "sha256:1f9ad02a71c5684b70f50283460a9bc77f2345defb0f8244b9bedb2a5b40dff5",
+  "kept_english": []
+ }
+}

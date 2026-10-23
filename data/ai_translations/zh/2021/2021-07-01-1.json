@@ -1,0 +1,172 @@
+{
+ "id": "ai-2021-07-01-1",
+ "site": "ai",
+ "date": "2021-07-01",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2021/07",
+ "title": "《守望先锋》补丁说明——2021年7月1日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "hero_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": "综合\n\n- 以下英雄的即时命中伤害在最大衰减距离处现在会衰减至 30%，此前为 50%：\n\n  - 艾什\n  - 巴蒂斯特\n  - 堡垒\n  - 麦克雷\n  - 士兵：76\n  - 黑百合\n  - 破坏球",
+   "dev": "> 开发者评论：这一改动可能不容易立刻察觉，因为伤害衰减覆盖的距离比之前略长，但它会降低即时命中伤害在预期最佳射程之外的影响。",
+   "heroes": [
+    {
+     "slug": "bastion",
+     "name_en": "Bastion",
+     "name_cn": "堡垒",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0abef5617fb960668f1d3ab9322f416188faf7479d2491a60100b3f59ce890ee.png",
+     "dev_note": "> 开发者评论：我们让堡垒的侦察模式武器更加可靠，以强化他在前往架设哨卫模式的位置之间移动时的游击打法。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Configuration: Recon",
+       "name_cn": "侦察模式",
+       "slug": "configuration-recon",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a2a15d0b50a53e0477ab65e55ed46248cf86ac976e5cef7c64078470dfa59807.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "武器散布从 1.5 降低至 1.2",
+         "before": 1.5,
+         "after": 1.2,
+         "by": -0.3,
+         "by_pct": null,
+         "metric": "weapon spread",
+         "raw_metric": "weapon spread",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "d-va",
+     "name_en": "D.Va",
+     "name_cn": "D.Va",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5d9b834a39e9306ec125dd8c77cdd62a351f8edef2d5dfe66d6cbb22594eae7e.png",
+     "dev_note": "> 开发者评论：在使用自毁到其引爆之间的这段时间内不再积攒终极技能充能，是针对回声的人格复制技能复制 D.Va 的情况。回声加速的终极技能充能让她能在自毁爆炸前就拥有呼叫机甲，使敌人很难找到安全的躲避位置。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Call Mech",
+       "name_cn": "呼叫机甲",
+       "slug": "call-mech",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/848d8cd24eb0327a023a564447d79dd8b367c21a378d328cd92896a21b775219.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "伤害范围从 3 米降低至 2.5 米",
+         "before": 3.0,
+         "after": 2.5,
+         "by": -0.5,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "damage area",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "在使用自毁期间不再积攒终极技能充能，直至她的机甲引爆后",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "soldier-76",
+     "name_en": "Soldier: 76",
+     "name_cn": "士兵76",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1ab1d67206b689b2dc14282ce65cb070e2956a902f5c4de87884513b661c4297.png",
+     "dev_note": "> 开发者评论：这会让战术目镜的作用不止于辅助瞄准，因为随着玩家瞄准水平提高，辅助瞄准的价值会略有下降。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Heavy Pulse Rifle",
+       "name_cn": "重脉冲步枪",
+       "slug": "heavy-pulse-rifle",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/69eaf669cd646a617439592615f023cfec82c27f4a3e19f48188941b3feaf55f.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "战术目镜激活期间禁用伤害衰减",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "widowmaker",
+     "name_en": "Widowmaker",
+     "name_cn": "黑百合",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a90c4acb688e425a51164216e40e5e9bd8e82797d26d8db0441bcf5f508ae474.png",
+     "dev_note": "> 开发者评论：我们将黑百合的最佳射程略微调远，以照顾一些地图位置——在这些位置反狙击很常见，但恰好处于伤害衰减的有效射程之外。对黑百合而言，狙击伤害衰减主要是为了限制在某些地图上极远距离进行空中钩索射击的致命性。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Widow's Kiss",
+       "name_cn": "寡妇之吻",
+       "slug": "widow-s-kiss",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/13a1e7903c23a5e140aa01fa930f585c1ea69e1e24378c0462f42053085f7ad9.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "伤害衰减距离从 60-85 米提高至 70-100 米",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2021-07-01-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:49:47+00:00",
+  "status": "draft",
+  "source_hash": "sha256:f32ed808af4518fe2a3ff17cffdde8a4e3c41104b0a094bfb7c1940f878c2dd6",
+  "kept_english": []
+ }
+}

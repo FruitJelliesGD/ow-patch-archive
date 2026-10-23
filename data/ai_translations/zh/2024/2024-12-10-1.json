@@ -1,0 +1,920 @@
+{
+ "id": "ai-2024-12-10-1",
+ "site": "ai",
+ "date": "2024-12-10",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/12",
+ "title": "《守望先锋》补丁说明——2024年12月10日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "第14赛季：骇灾",
+   "role": null,
+   "description": "准备好迎接一个火爆的赛季吧，我们将推出全新的苏格兰重装英雄骇灾，他为了更伟大的利益而 embodying 无政府主义精神。随后，在6v6预设职责模式活动中，用过去与现在的独特融合来考验你的技巧，在2-2-2阵容中团队合作与协同效应大放异彩。此外，准备好挥舞神明之锤，化身神话级雷神莱因哈特，并通过高级战令最多获得五款传奇皮肤。第14赛季充满了怀旧情怀、自定义内容和激进玩法，拥有你在竞争中主宰全场、成为对手梦魇所需的一切。",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "2024雪国仙境",
+   "role": null,
+   "description": "雪国仙境活动现已回归，持续至1月7日，为假日季带来粉丝最爱的模式和专属奖励！从美的雪球攻势到冰冻 thaw 淘汰赛，总有一款适合你。完成挑战即可获得季节性奖励，包括节日风味的冬季休闲半藏皮肤。",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "6v6预设职责模式实验",
+   "role": null,
+   "description": "通过6v6预设职责模式实验，探索《守望先锋2》的最新进化，策略与怀旧在此交汇。深入这一独特模式，体验6人小队的动态，同时保持结构化的玩法，展示现代《守望先锋2》英雄和技能如何适应经典团队格式。",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "英雄精通——艾什",
+   "role": null,
+   "description": "练习你的神枪手技巧，让召唤鲍勃做点事情吧，艾什的英雄精通课程将于1月14日上线。",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": "输出职责被动\n\n- 减益持续时间从2秒提高至3秒。\n- 治疗降低从20%提高至25%。\n\n全局弹道尺寸加成\n\n- 即时命中半径（大）从0.08米降低至0.07米。\n- 即时命中半径（小）从0.05米降低至0.04米。\n- 弹道半径（大）从0.15米降低至0.12米。",
+   "dev": "> 开发者评论：我们正在提高输出职责被动的效力，通过减缓战斗中的生命恢复速度，让持续伤害的威胁更具意义。同时，我们略微降低了即时命中和大型飞行时间弹道的命中可靠性。",
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "重装",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "doomfist",
+     "name_en": "Doomfist",
+     "name_cn": "末日铁拳",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/bc538b345188bdcb2d2be5b2894d471ba54aeea53b03862429205ed49d693bbe.png",
+     "dev_note": "> 开发者评论：最近对火箭重拳撞墙角度的增加带来了很多稳定性，使末日铁拳的威胁性显著提升。为了平衡这一点，我们削减了裂地重拳的部分生存能力。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Seismic Slam",
+       "name_cn": "裂地重拳",
+       "slug": "seismic-slam",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/20f721d5fd05f91e203d6e0007a137bdc90a161356f85d5aa88b2ab02b8da22b.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冲击波范围从18米降低至15米。",
+         "before": 18.0,
+         "after": 15.0,
+         "by": -3.0,
+         "by_pct": null,
+         "metric": "shockwave range",
+         "raw_metric": "shockwave range",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从6秒提高至6.5秒。",
+         "before": 6.0,
+         "after": 6.5,
+         "by": 0.5,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "hazard",
+     "name_en": "Hazard",
+     "name_cn": "骇灾",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/22fc6ca76249d7cd37bad808d53a68986da855c625475a46ec3858abecf57823.png",
+     "dev_note": "> 开发者评论：骇灾试炼的社区反馈总体积极，尽管表现略低于预期。我们正在调整他的技能组，提高主要攻击的伤害，使骨刺更加稳定，成为可靠的收割工具。尖刺护体的保护有时因第三人称视角使用而显得不稳定。为此，我们加宽了前方格挡角度，为骇灾提供更可靠的保护。此外，尖刺护体的伤害略有降低，以平衡骨刺伤害和保护半径的增加。我们还强化了尖刺墙，使其更具影响力，同时增加了重新触发击退效果所需的时间，以减少频繁击退带来的挫败感。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Bonespur",
+       "name_cn": "骨刺",
+       "slug": "bonespur",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6090e781f46729eb334f043905ae72e6a38b13372badd7ae6f8876e8fb110973.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "每根尖刺伤害从6.75提高至7.5。",
+         "before": 6.75,
+         "after": 7.5,
+         "by": 0.75,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "damage per spike",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "每轮齐射的中心弹道不再有随机发射散布，现在总是直线发射。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Spike Guard",
+       "name_cn": "尖刺护体",
+       "slug": "spike-guard",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a558290ba44099a80c0818c45cee31e4c6d1039c81c3fb6154ec8356e3fad9d5.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "尖刺护体提供的保护角度从104度提高至180度。",
+         "before": 104.0,
+         "after": 180.0,
+         "by": 76.0,
+         "by_pct": null,
+         "metric": "the angle of protection provided by spike guard",
+         "raw_metric": "the angle of protection provided by spike guard",
+         "unit": "deg"
+        },
+        {
+         "text_en": null,
+         "text_cn": "每秒伤害从75降低至70。",
+         "before": 75.0,
+         "after": 70.0,
+         "by": -5.0,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "damage per second",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Violent Leap",
+       "name_cn": "狂跃",
+       "slug": "violent-leap",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0b5166ae3ab7ad67f4a91e9fd2e9be34df9febef4cc2e9843d1d284c1601c2f3.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "主要攻击和快速近身攻击的斩击后恢复时间从0.3秒提高至0.5秒。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Jagged Wall",
+       "name_cn": "尖刺墙",
+       "slug": "jagged-wall",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1924df0318c0c1e2ee935b53b1bc5b4c21bedef57024998a02b8d14d930ce364.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "生命值从350提高至400。",
+         "before": 350.0,
+         "after": 400.0,
+         "by": 50.0,
+         "by_pct": null,
+         "metric": "health",
+         "raw_metric": "health",
+         "unit": "hp"
+        },
+        {
+         "text_en": null,
+         "text_cn": "击退伤害从40提高至50。",
+         "before": 40.0,
+         "after": 50.0,
+         "by": 10.0,
+         "by_pct": null,
+         "metric": "knockback",
+         "raw_metric": "knockback damage",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "伤害间隔从每目标1.5秒提高至每目标1.75秒。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Downpour",
+       "name_cn": "千针雨",
+       "slug": "downpour",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/7f07fdfb085775f69373e050553d316552d91ba940e907827e487a0c4a498d3a.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "施放千针雨损失的滞空动量从90%降低至50%。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Vault",
+       "name_cn": "翻越",
+       "slug": "vault",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/79a39a36482ed7e9b4d4cd1bcd98c40308dc4e8ed512e8db749adbda4ee15c5b.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "触发翻越所需的最小障碍物高度从1.75米降低至1.25米，这应能让骇灾更稳定地翻越矮小障碍物。",
+         "before": 1.75,
+         "after": 1.25,
+         "by": -0.5,
+         "by_pct": null,
+         "metric": "minimum obstacle height to trigger vault",
+         "raw_metric": "minimum obstacle height to trigger vault",
+         "unit": "m"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "mauga",
+     "name_en": "Mauga",
+     "name_cn": "毛加",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6dbd80a0b40bd0464db35948f98d91ecc6dfcede8c94ff9b1ecefda781a7aa1f.png",
+     "dev_note": "> 开发者评论：上次补丁的蛮力冲撞改动对启用更活跃的毛加玩法非常有效。我们正将他的一部分护甲转换回普通生命值，以平衡蛮力冲撞改动带来的部分额外生存能力。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "基础护甲从200降低至150。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 200.0,
+       "after": 150.0,
+       "by": -50.0,
+       "by_pct": null,
+       "metric": "base armor",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "基础生命值从375提高至425。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 375.0,
+       "after": 425.0,
+       "by": 50.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "orisa",
+     "name_en": "Orisa",
+     "name_cn": "奥丽莎",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/20c12a10cfe0b5608f9eec63a74ecb0ccd18a114019bc77bb2765f87776e17ed.png",
+     "dev_note": "> 开发者评论：尽管奥丽莎的效力下降幅度超出预期，但移除强固防御的热量降低机制对玩法产生了积极影响，使她的弹药资源更具意义。我们保留该改动，同时回调部分护甲生命值的损失。我们还认为她的终极技能撼地猛刺可以更有效，因此现在从更远距离拉拽敌人，但伤害范围未变，所以脱离该区域不会变得更难。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "护甲从300提高至325。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 300.0,
+       "after": 325.0,
+       "by": 25.0,
+       "by_pct": null,
+       "metric": "armor",
+       "unit": "hp"
+      },
+      {
+       "text_en": null,
+       "text_cn": "基础生命值从175降低至150。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 175.0,
+       "after": 150.0,
+       "by": -25.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Terra Surge",
+       "name_cn": "撼地猛刺",
+       "slug": "terra-surge",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8d8892b56df62b068343e5029a2ae1e2fa54f7568febac7141ffa945d02e214c.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "拉拽半径从8.5米提高至10.5米",
+         "before": 8.5,
+         "after": 10.5,
+         "by": 2.0,
+         "by_pct": null,
+         "metric": "pull radius",
+         "raw_metric": "pull radius",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "ramattra",
+     "name_en": "Ramattra",
+     "name_cn": "拉玛刹",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/cf69d4bfa61ac14f61d3d541b0d2687a20fa24f55afe7a392d746f5ccb138dea.png",
+     "dev_note": "> 开发者评论：吞噬漩涡现在能更有效地应对高速动量的爆发，不过该改动对莱因哈特冲锋或D.Va推进器等持续移动你的技能影响不大。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Ravenous Vortex",
+       "name_cn": "吞噬漩涡",
+       "slug": "ravenous-vortex",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/7a7334480013e1d2eccd7df8b4b1e2f484ca81dfe5719fd3506d1055ba79908c.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在首次影响目标时会短暂打断水平动量。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "减速场现在无视屏障进行视线判定。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "winston",
+     "name_en": "Winston",
+     "name_cn": "温斯顿",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6a9a37012551410b46b2c28146404354fe21e4a1e8ea65db4e1e497eeaa05c71.png",
+     "dev_note": "> 开发者评论：温斯顿的跳跃现在拥有更高的最大伤害，以更好地奖励直接落在目标旁边的精准度，不过落在较远处时仍有伤害衰减。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Jump Pack",
+       "name_cn": "喷射背包",
+       "slug": "jump-pack",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/dbad1fe535da5b932ad706a0ca06373d530f1210cbbb095ef1bc8b3a7cc64172.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "伤害从50提高至60。",
+         "before": 50.0,
+         "after": 60.0,
+         "by": 10.0,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "damage",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "输出",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "ashe",
+     "name_en": "Ashe",
+     "name_cn": "艾什",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e41d918d0e7ffa772b5571df3d0dc1a05e6d9032307f78be935972cfd59f208a.png",
+     "dev_note": "> 开发者评论：短筒猎枪被移动锁定技能禁用时存在一些不一致的情况。现在艾什在移动被锁定期间（如狂鼠的钢铁陷阱）仍能激活短筒猎枪来击退敌人，但自身不会移动。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Coach Gun",
+       "name_cn": "短筒猎枪",
+       "slug": "coach-gun",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e18f7b6e464f0cf34789babf7a76b7e1d851e62102dccfe10769bcf8716e5554.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在可在受移动锁定技能影响时激活，但不会移动艾什。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "pharah",
+     "name_en": "Pharah",
+     "name_cn": "法老之鹰",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/93d639075993fdef3402aa9131f93be7789a33a11dc0099f2f88d22dda09c175.png",
+     "dev_note": "开发者评论：法老之鹰凭借其高机动飞行能力和爆发伤害，对许多人来说都是一个难以应对的英雄。我们降低了她水平移动冷却时间的可用频率，使她在使用该技能时更需要斟酌站位。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Jet Dash",
+       "name_cn": "疾冲背包",
+       "slug": "jet-dash",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/323f24b2bd2dada5f395ab291fb363fba87bcbaaa773f99d15af6042e51d4d8b.png",
+       "changes": []
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "sojourn",
+     "name_en": "Sojourn",
+     "name_cn": "索杰恩",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/515f25a729a4a3f51d956fc54c600dc60d8e5242f2b188c178496cea1a2e11b5.png",
+     "dev_note": "开发者评论：索杰恩近期获得了调整，提高了她的能量获取速率，并将部分强度转移到了她的干扰弹技能上，但次要攻击缺乏冲击力，削弱了她作为「电磁炮英雄」的核心玩法体验。我们为其恢复了一些伤害，并将密切关注她最终的强度表现。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Railgun",
+       "name_cn": "电磁炮",
+       "slug": "railgun",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3d7f261e05e3abda155cede4409ec8348490e286805c123d54d7f81fdd50d077.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "次要攻击伤害从 1-100 提高至 20-120。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "soldier-76",
+     "name_en": "Soldier: 76",
+     "name_cn": "士兵76",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1cb6f3ad4b8afdc1a901c26180a4c134018bb805b91eefe9b7cf2946879f10c8.png",
+     "dev_note": "开发者评论：士兵：76 的效能可以小幅提升，而随着输出职责被动的改动，现在正是让他的生物力场更易用的好时机。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Biotic Field",
+       "name_cn": "生物力场",
+       "slug": "biotic-field",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/aaadd3dee89ac8797ecb7a1e647f574a034b1930726296fd17946d343254bdf0.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从 18 秒降低至 15 秒。",
+         "before": 18.0,
+         "after": 15.0,
+         "by": -3.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "symmetra",
+     "name_en": "Symmetra",
+     "name_cn": "秩序之光",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b0a19d5c8b0e299705036f4d0b9394da5ff415dc0dcd4e9207b6e63254022dff.png",
+     "dev_note": "开发者评论：秩序之光表现相当不错，但我们希望通过让传送面板更难被摧毁，进一步促进围绕这一有趣技能的团队配合。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Teleporter",
+       "name_cn": "传送面板",
+       "slug": "teleporter",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/13b45663f441144ded977e8ccf9ed180c213176206a9f6f9e189e29f09a03b64.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "基础护盾生命值从 200 提高至 250。",
+         "before": 200.0,
+         "after": 250.0,
+         "by": 50.0,
+         "by_pct": null,
+         "metric": "base shield health",
+         "raw_metric": "base shield health",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "torbjorn",
+     "name_en": "Torbjörn",
+     "name_cn": "托比昂",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2ef3a4bdd117829a83867a7775ece351c4226f29b24cdbf8d7fac89443e8d8a2.png",
+     "dev_note": "开发者评论：我们希望在不提高伤害的情况下让炮台更有效。它现在建造得更快，以便更好地重新部署，从而加快游戏节奏。我们还修复了转向更大生命值池时的一处严重疏漏，托比昂的锻造锤将再次让敌人闻风丧胆。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Forge Hammer",
+       "name_cn": "锻造锤",
+       "slug": "forge-hammer",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8bd2b7524b29cbe97cbc99b8df6faff559aae4cb9053ca6f7ae5bf86fa5ec711.png",
+       "changes": []
+      },
+      {
+       "name_en": "Deploy Turret",
+       "name_cn": "部署炮台",
+       "slug": "deploy-turret",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a25d559460eed995f177b84eda6000aca6a52c8600dcf2249cc50ca31aa9c786.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "建造时间从 3 秒降低至 2.5 秒。",
+         "before": 3.0,
+         "after": 2.5,
+         "by": -0.5,
+         "by_pct": null,
+         "metric": "build time",
+         "raw_metric": "build time",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "基础生命值从 225 提高至 250。",
+         "before": 225.0,
+         "after": 250.0,
+         "by": 25.0,
+         "by_pct": null,
+         "metric": "base health",
+         "raw_metric": "base health",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "venture",
+     "name_en": "Venture",
+     "name_cn": "探奇",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4c5bad8535b648d9dcf4c369e0ab5b9d67685b8ddaee22139eaa63bc5c5a3183.png",
+     "dev_note": "开发者评论：这主要是一项体验优化改动，使探奇的冷却循环更加稳定，因为他们经常会在空中飞行时激活钻地。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Drill Dash",
+       "name_cn": "钻头突刺",
+       "slug": "drill-dash",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2ad4581a6801402aaa413301fdf851d1b4d09d67e1ef2a4538baf52ea0a5a889.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在只要钻地处于激活状态，冷却速率就会加快，而不再需要玩家处于地下。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "支援",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "baptiste",
+     "name_en": "Baptiste",
+     "name_cn": "巴蒂斯特",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5ac801c6fe84f83fe5015af89858cbdfb2ec9d32d141f582889b5381fd0195fc.png",
+     "dev_note": "开发者评论：调整愈合冲击的数值将提高巴蒂斯特的自我生存能力，同时为队友提供更好的支援。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Regenerative Burst",
+       "name_cn": "愈合冲击",
+       "slug": "regenerative-burst",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d887d165f7b0eb98a30af8f274ff740c6c7735af719b93e95dd9da17558815d8.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从 15 秒降低至 14 秒。",
+         "before": 15.0,
+         "after": 14.0,
+         "by": -1.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "半径从 10 米提高至 12 米。",
+         "before": 10.0,
+         "after": 12.0,
+         "by": 2.0,
+         "by_pct": null,
+         "metric": "radius",
+         "raw_metric": "radius",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "brigitte",
+     "name_en": "Brigitte",
+     "name_cn": "布丽吉塔",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/51b93ea59f369a1defa78e5d08c12b1391f5d2d94614a51fd95c125a7a6151fa.png",
+     "dev_note": "开发者评论：持续时间已被缩短，以限制布丽吉塔鼓舞士气的续航能力，而每秒治疗量保持不变，确保在稳定触发鼓舞士气时治疗输出不受影响。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Inspire",
+       "name_cn": "鼓舞士气",
+       "slug": "inspire",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/487545fb37163e4029e1e8483266180fbcc59b7e8482062563168998774615f8.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "持续时间从 5 秒降低至 4 秒。",
+         "before": 5.0,
+         "after": 4.0,
+         "by": -1.0,
+         "by_pct": null,
+         "metric": "duration",
+         "raw_metric": "duration",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "illari",
+     "name_en": "Illari",
+     "name_cn": "伊拉锐",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f33f6fe94ad55fcf9027e779f66afac358a2f93651070b95cd565ff90d670c8b.png",
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "开发者评论：由于敌人能够躲避桎梏灼日的影响，伊拉锐的终极技能难以有效使用。提高半径将改善该终极技能的稳定性和整体价值。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Captive Sun",
+       "name_cn": "桎梏灼日",
+       "slug": "captive-sun",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/556c78ff01455fb1ab7ed7808e681ae0f1cd1fdf0fe1c92fe89672ea261ad187.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "爆炸半径从 8 米提高至 10 米。",
+         "before": 8.0,
+         "after": 10.0,
+         "by": 2.0,
+         "by_pct": null,
+         "metric": "explosion radius",
+         "raw_metric": "explosion radius",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "lucio",
+     "name_en": "Lúcio",
+     "name_cn": "卢西奥",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/dee7e92975f5e659fa6b28c508d8fbad62bda720698b1d21f2492af7b9f94b48.png",
+     "dev_note": "开发者评论：卢西奥生命值池的调整影响了他在战斗中的生存能力，此改动将通过提升他的自我治疗能力来增强他在战斗中的耐久度。此外，音障现在在空中下落得更快，使其能够从高处更及时、更安全地使用。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Crossfade",
+       "name_cn": "切歌",
+       "slug": "crossfade",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/89cb0bd63ff5e3a2a2a9e2874b52a94ff7e69cf521486f7d35227d98a1e305d5.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "自身受到的治疗效果惩罚从 60% 降低至 40%。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Sound Barrier",
+       "name_cn": "音障",
+       "slug": "sound-barrier",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/21c5a17be341a3c0da2dcc9372f4f3c88ef622c80776360bd844d0fba3eb88a7.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在在空中使用时下落得更快。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "自定游戏更新",
+   "role": null,
+   "description": "- 在设置 > 英雄 > 通用中新增了一个可启用或禁用被动生命值恢复的选项。",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "地图",
+     "body": "阿努比斯神殿\n\n- 修复了在阿努比斯神殿地图观战可能导致严重性能问题的情况。",
+     "dev": null
+    },
+    {
+     "title": "英雄",
+     "body": "布丽吉塔\n\n- 修复了布丽吉塔在盾击技能结束时举盾仍会受到伤害的情况。\n\n骇灾\n\n- 修复了通过狂跃附着到墙壁时，翻越有时会突然自行取消的错误。\n- 修复了当骇灾与墙壁完全垂直时，翻越有时无法攀爬墙壁的错误。\n- 修复了当骇灾的前进移动被侧翼墙壁部分阻挡时，翻越完全无法攀爬墙壁的错误。\n\n天使\n\n- 修复了导致天使的重生语音不播放的情况。\n\n莫伊拉\n\n- 修复了莫伊拉的球体有时在视觉上停止移动的错误。\n\n莱因哈特\n\n- 修复了莱因哈特的裂地猛击技能在特定地板区域不影响敌方英雄的情况。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2024-12-10-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:53:27+00:00",
+  "status": "draft",
+  "source_hash": "sha256:0b33440ea6c332ad839bf04673f08ad23148f3235355bca47325053ad4b62a60",
+  "kept_english": []
+ }
+}

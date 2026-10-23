@@ -1,0 +1,144 @@
+{
+ "id": "ai-2025-04-08-1",
+ "site": "ai",
+ "date": "2025-04-08",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/04",
+ "title": "《守望先锋》补丁说明——2025年4月8日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "平衡性在线修正更新",
+   "role": null,
+   "description": "这是一次英雄平衡性在线修正。2025 年 4 月 1 日补丁的回放代码仍然可用。",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "完全正常守望更新",
+   "role": null,
+   "description": "这些改动仅适用于「完全正常守望」游戏模式中的英雄。",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "重装",
+   "role": "tank",
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "wrecking-ball",
+     "name_en": "Wrecking Ball",
+     "name_cn": "破坏球",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f71d6948e8b6ae340e20ab569ef66d24aead6032c34a7ec09a00ea864b413a24.png",
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "生命值从 425 降低至 350。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 425.0,
+       "after": 350.0,
+       "by": -75.0,
+       "by_pct": null,
+       "metric": "health",
+       "unit": "hp"
+      },
+      {
+       "text_en": null,
+       "text_cn": "动力铁球撞击提供的额外生命值从 25 降低至 20。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 25.0,
+       "after": 20.0,
+       "by": -5.0,
+       "by_pct": null,
+       "metric": "bonus health increases from roll impacts",
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "输出",
+   "role": "damage",
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "echo",
+     "name_en": "Echo",
+     "name_cn": "回声",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0dc3f1679d739ef530ba2b8cbe02bf09f4d40a57c0af84f694a3241d3a7ef948.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Sticky Bombs",
+       "name_cn": "黏性炸弹",
+       "slug": "sticky-bombs",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/dcaa626e367b80b5bcd2425e26e0075b5343990785bc96e1705325904f73fe96.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "射速降低 30%。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 30.0,
+         "metric": "fire rate",
+         "raw_metric": "fire rate",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "爆炸伤害从 14 降低至 12。",
+         "before": 14.0,
+         "after": 12.0,
+         "by": -2.0,
+         "by_pct": null,
+         "metric": "explosion damage",
+         "raw_metric": "explosion damage",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2025-04-08-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:54:26+00:00",
+  "status": "draft",
+  "source_hash": "sha256:1d4bc31eb08b167ac0bd3ff62a720d2919020917515b426e0eed258b16e52ed2",
+  "kept_english": []
+ }
+}

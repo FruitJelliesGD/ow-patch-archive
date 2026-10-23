@@ -6,7 +6,7 @@ on:
   # monitor 的自动 commit 不触发 on:push（GITHUB_TOKEN 规则）——改为在监控工作流
   # 完成后立即重建站点（数据已入库），schedule 仅作兜底
   workflow_run:
-    workflows: [monitor, monitor-fast, watchdog]
+    workflows: [monitor, monitor-fast, watchdog, ai-translate]
     types: [completed]
   schedule:
     - cron: "23 4 * * *"
@@ -32,14 +32,15 @@ jobs:
       - uses: actions/configure-pages@v5
 
       - name: Stage site (web/ + the data files the site reads)
-        # The site only reads data/*.json plus data/patches and data/heroes.
+        # The site reads data/*.json plus data/patches, data/heroes and the
+        # optional data/ai_translations overlay.
         # data/archive (Markdown, ~2.6 MB) and changelog.jsonl are for humans and
         # the CLI — shipping them would add dead weight to every deploy.
         run: |
           mkdir -p _site/data
           cp -r web/* _site/
           cp data/*.json _site/data/
-          cp -r data/patches data/heroes _site/data/
+          cp -r data/patches data/heroes data/ai_translations _site/data/
 
       - uses: actions/upload-pages-artifact@v3
         with:

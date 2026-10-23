@@ -1,0 +1,967 @@
+{
+ "id": "ai-2019-03-19-1",
+ "site": "ai",
+ "date": "2019-03-19",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2019/03",
+ "title": "《守望先锋》补丁说明——2019年3月19日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "hero_update",
+   "title": "补丁亮点",
+   "role": null,
+   "description": "综合更新",
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "baptiste",
+     "name_en": "Baptiste",
+     "name_cn": "巴蒂斯特",
+     "role": "support",
+     "icon": null,
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [
+    {
+     "title": "新英雄：巴蒂斯特（支援）",
+     "body": null,
+     "dev": null
+    },
+    {
+     "title": "护甲",
+     "body": "- 光束类伤害命中护甲时现在会降低 20%\n\n\n  - 美：主要攻击\n  - 莫伊拉：辅助攻击、聚合射线\n  - 秩序之光：主要攻击、哨戒炮\n  - 温斯顿：主要攻击\n  - 查莉娅：主要攻击\n- 持续伤害效果不再受护甲减免\n\n\n  - 安娜：主要攻击\n  - 艾什：延时雷管\n  - 半藏：竜\n  - 美：暴雪\n  - 莫伊拉：生化之球\n  - 黑百合：剧毒诡雷\n  - 查莉娅：重力喷涌",
+     "dev": "护甲对持续伤害效果（如黑百合的剧毒诡雷）和光束武器（如秩序之光的光子发射器）的伤害减免此前差异很大。现在将更加一致且可预期。"
+    },
+    {
+     "title": "伤害增幅",
+     "body": "- 伤害增幅现在会在弹道发射时生效，而非命中目标时生效",
+     "dev": "此前，只有在造成伤害的英雄命中时正处于被增幅状态，伤害增幅的效果才会被计入。现在，伤害会在弹道发射时即被增幅。这意味着造成伤害的英雄无需在弹道命中敌人时仍处于被增幅状态，伤害增幅也能被计入。"
+    },
+    {
+     "title": "击退",
+     "body": "- 击退距离现在更加一致\n- 处于飞行状态的英雄现在可以被击退和减速",
+     "dev": "击退现在受敌人被命中时的移动状态影响更小。击退不再因运气而出现偏小或偏大的情况，无论敌人在被击退前的移动如何，击退的感觉都将相似。允许飞行中的英雄（如使用女武神技能的天使或使用推进器技能的 D.Va）被正常击退，能让玩法更加流畅、真实。"
+    },
+    {
+     "title": "音频",
+     "body": "- 在伤害增幅状态下命中时，会播放新的音效\n- 命中但未造成任何伤害时，会播放新的音效",
+     "dev": "随着巴蒂斯特的加入，我们希望确保无论你使用哪位英雄，都能分辨出自己的命中是否被增幅或被无效化。"
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "ana",
+     "name_en": "Ana",
+     "name_cn": "安娜",
+     "role": "support",
+     "icon": null,
+     "dev_note": "为纳米激素加入即时治疗效果，让玩家能够存活更久，也让安娜的终极技能更有价值。不过，在治疗生命值较高的英雄时，这一效果略显过强。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Nano Boost",
+       "name_cn": "纳米激素",
+       "slug": "nano-boost",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "治疗量从 300 降低至 250",
+         "before": 300.0,
+         "after": 250.0,
+         "by": -50.0,
+         "by_pct": null,
+         "metric": "heal",
+         "raw_metric": "heal",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "doomfist",
+     "name_en": "Doomfist",
+     "name_cn": "末日铁拳",
+     "role": "tank",
+     "icon": null,
+     "dev_note": "降低末日铁拳技能的冷却时间将为他恢复一些强度，并让他的玩法更加流畅。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Rising Uppercut",
+       "name_cn": "上勾重拳",
+       "slug": "rising-uppercut",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从 7 秒降低至 6 秒",
+         "before": 7.0,
+         "after": 6.0,
+         "by": -1.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      },
+      {
+       "name_en": "Seismic Slam",
+       "name_cn": "裂地重拳",
+       "slug": "seismic-slam",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从 7 秒降低至 6 秒",
+         "before": 7.0,
+         "after": 6.0,
+         "by": -1.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "hanzo",
+     "name_en": "Hanzo",
+     "name_cn": "半藏",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "由于部分地图的环境较为密集，音在某些区域可能显得效果不佳。提高音的侦测半径应能让它更加有效。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Sonic Arrow",
+       "name_cn": "音波箭",
+       "slug": "sonic-arrow",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "侦测半径从 7 米提高至 9 米",
+         "before": 7.0,
+         "after": 9.0,
+         "by": 2.0,
+         "by_pct": null,
+         "metric": "detection radius",
+         "raw_metric": "detection radius",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "junkrat",
+     "name_en": "Junkrat",
+     "name_cn": "狂鼠",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "狂鼠是游戏中最好的破盾和反重装英雄之一，这一改动将帮助巩固他的这一角色定位。这不会改变榴弹发射器的爆炸伤害，其仍为 80。直接命中的总伤害现在为 130，高于此前的 120。由于我们提高了榴弹发射器的伤害输出，狂鼠积攒终极技能的速度过快。我们提高了他的终极技能所需充能，以平衡这一改动与他提升的伤害输出能力。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Frag Launcher",
+       "name_cn": "榴弹发射器",
+       "slug": "frag-launcher",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "命中伤害从 40 提高至 50",
+         "before": 40.0,
+         "after": 50.0,
+         "by": 10.0,
+         "by_pct": null,
+         "metric": "impact damage",
+         "raw_metric": "impact damage",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "RIP-Tire",
+       "name_cn": "炸弹轮胎",
+       "slug": "rip-tire",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "所需充能提高 10%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 10.0,
+         "metric": "cost",
+         "raw_metric": "cost",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "lucio",
+     "name_en": "Lúcio",
+     "name_cn": "卢西奥",
+     "role": "support",
+     "icon": null,
+     "dev_note": "卢西奥音波带来的击退是绝佳的工具，能把敌人推入致其死亡的境地，因此应当为此给予他进攻助攻。卢西奥为队友提升速度的能力过强，尤其是在用于高生命值/短射程英雄时。我们将降低卢西奥加速效果的整体强度，但提高他使用滑墙时获得的速度加成，以免过多影响他的机动性。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Amp It Up",
+       "name_cn": "强音",
+       "slug": "amp-it-up",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "加速效果的增幅从 70% 降低至 50%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Crossfade",
+       "name_cn": "切歌",
+       "slug": "crossfade",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "加速效果从 30% 降低至 20%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Sonic Amplifier",
+       "name_cn": "音速扩音器",
+       "slug": "sonic-amplifier",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "音波现在会计入进攻助攻",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Wall Ride",
+       "name_cn": "滑墙",
+       "slug": "wall-ride",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "速度加成从 20% 提高至 40%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "cassidy",
+     "name_en": "Cassidy",
+     "name_cn": "卡西迪",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "在降低护甲对所有英雄的有效性后，连射无需再造成那么高的伤害。提高神射手锁定一段时间后的伤害，能让它在攻击高生命值的静止目标（如屏障）以及生命值超过 250 的英雄时更加有效。这不会影响它对生命值低于 250 的英雄的威胁程度。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Fan the Hammer",
+       "name_cn": "连射",
+       "slug": "fan-the-hammer",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "伤害从 55 降低至 50",
+         "before": 55.0,
+         "after": 50.0,
+         "by": -5.0,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "damage",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Deadeye",
+       "name_cn": "神射手",
+       "slug": "deadeye",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "锁定目标 1.5 秒后，每秒伤害从 275 提高至 550",
+         "before": 275.0,
+         "after": 550.0,
+         "by": 275.0,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "damage per second",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "mei",
+     "name_en": "Mei",
+     "name_cn": "美",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "提高美的主要攻击伤害应能让她的冰冻与冰锥连招更具威力。让美的冰墙柱子更容易被摧毁，意味着无需等待冰墙自行消失，也能有更多机会反制它。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Endothermic Blaster",
+       "name_cn": "冰霜冲击枪",
+       "slug": "endothermic-blaster",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "主要攻击伤害从 2.25 提高至 2.75（每秒伤害从 45 提高至 55）",
+         "before": 2.25,
+         "after": 2.75,
+         "by": 0.5,
+         "by_pct": null,
+         "metric": "primary fire damage",
+         "raw_metric": "primary fire damage",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Ice Wall",
+       "name_cn": "冰墙",
+       "slug": "ice-wall",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "生命值从 500 降低至 400",
+         "before": 500.0,
+         "after": 400.0,
+         "by": -100.0,
+         "by_pct": null,
+         "metric": "health",
+         "raw_metric": "health",
+         "unit": "hp"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "moira",
+     "name_en": "Moira",
+     "name_cn": "莫伊拉",
+     "role": "support",
+     "icon": null,
+     "dev_note": "这些细微改动让莫伊拉生化之触的被动治疗效果在为队友补满生命值时略微更加有效。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Biotic Grasp",
+       "name_cn": "生化之触",
+       "slug": "biotic-grasp",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "持续治疗时间从 3 秒提高至 4 秒",
+         "before": 3.0,
+         "after": 4.0,
+         "by": 1.0,
+         "by_pct": null,
+         "metric": "heal over time duration",
+         "raw_metric": "heal over time duration",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "总治疗量从 50 提高至 65",
+         "before": 50.0,
+         "after": 65.0,
+         "by": 15.0,
+         "by_pct": null,
+         "metric": "total healing",
+         "raw_metric": "total healing",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "orisa",
+     "name_en": "Orisa",
+     "name_cn": "奥丽莎",
+     "role": "tank",
+     "icon": null,
+     "dev_note": "作为防御型重装，奥丽莎在随队伍推进时可能遇到困难。允许奥丽莎在开火时移动得更快，应能让她更容易向敌方队伍施压，并以更主动的方式使用她的屏障。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Fusion Driver",
+       "name_cn": "聚变驱动器",
+       "slug": "fusion-driver",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "开火时的移动速度惩罚从 50% 降低至 30%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "pharah",
+     "name_en": "Pharah",
+     "name_cn": "法老之鹰",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "这一改动将火箭发射器的最低伤害设定回我们在近期补丁中重新平衡其直接命中与爆炸伤害之前的水平。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Rocket Launcher",
+       "name_cn": "火箭发射器",
+       "slug": "rocket-launcher",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "最低爆炸伤害从 16.25 提高至 20",
+         "before": 16.25,
+         "after": 20.0,
+         "by": 3.75,
+         "by_pct": null,
+         "metric": "minimum explosion damage",
+         "raw_metric": "minimum explosion damage",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "reaper",
+     "name_en": "Reaper",
+     "name_cn": "死神",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "近期一项提高死神造成伤害时治疗量的改动略显过强，有时会让对手觉得死神势不可挡。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "The Reaping",
+       "name_cn": "收割",
+       "slug": "the-reaping",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "造成伤害获得的治疗量从 50% 降低至 40%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "soldier-76",
+     "name_en": "Soldier: 76",
+     "name_cn": "士兵76",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "这一改动有望让士兵：76 更快一枪击杀敌方英雄。缩短使用疾跑后到可以开火之间的时间，应能让该技能更加流畅、响应更及时。让战术目镜能够瞄准狂鼠的炸弹轮胎和巴蒂斯特的维生力场无人机是一项体验优化，因为这两者都是关键目标。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Pulse Rifle",
+       "name_cn": "脉冲步枪",
+       "slug": "pulse-rifle",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "伤害从 19 提高至 20",
+         "before": 19.0,
+         "after": 20.0,
+         "by": 1.0,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "damage",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Sprint",
+       "name_cn": "疾跑",
+       "slug": "sprint",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "使用疾跑后到可以开火之间的延迟从 0.5 秒降低至 0.3 秒",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Tactical Visor",
+       "name_cn": "战术目镜",
+       "slug": "tactical-visor",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "可锁定炸弹轮胎和维生力场",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "sombra",
+     "name_en": "Sombra",
+     "name_cn": "黑影",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "黑客入侵的冷却时间常常让入侵急救包不如入侵玩家来得有效。此次改动将使急救包和玩家都成为可行的入侵目标。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Hack",
+       "name_cn": "黑客入侵",
+       "slug": "hack",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "入侵急救包时冷却时间减半",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "更改了视觉表现，以更清晰地显示目标已被入侵",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "symmetra",
+     "name_en": "Symmetra",
+     "name_cn": "秩序之光",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "这将使秩序之光能更稳定地让光子发射器达到最高伤害输出。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Photon Projector",
+       "name_cn": "光子发射器",
+       "slug": "photon-projector",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "主要攻击模式的伤害提升速度加快 20%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "torbjorn",
+     "name_en": "Torbjörn",
+     "name_cn": "托比昂",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "托比昂的生存能力略显不足，因此我们将其热力过载技能的部分强度转移到了基础生命值上。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "基础生命值提高 50 点护甲（最大生命值 250）",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Overload",
+       "name_cn": "热力过载",
+       "slug": "overload",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "护甲获取量从 150 降低至 100",
+         "before": 150.0,
+         "after": 100.0,
+         "by": -50.0,
+         "by_pct": null,
+         "metric": "armor",
+         "raw_metric": "armor gain",
+         "unit": "hp"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "widowmaker",
+     "name_en": "Widowmaker",
+     "name_cn": "黑百合",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "红外侦测的效果此前没有反制手段，因此现在黑百合死亡时该效果会结束。为平衡其更高的使用风险，红外侦测现在会向黑百合的队伍显示敌方生命条。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Infra-Sight",
+       "name_cn": "红外侦测",
+       "slug": "infra-sight",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "显示敌方生命条",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "现在死亡时取消",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "wrecking-ball",
+     "name_en": "Wrecking Ball",
+     "name_cn": "破坏球",
+     "role": "tank",
+     "icon": null,
+     "dev_note": "这将使感应护盾成为更强大的生存工具，因为被迫退出动力铁球模式会让破坏球更容易受到攻击。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Adaptive Shield",
+       "name_cn": "感应护盾",
+       "slug": "adaptive-shield",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "不再取消动力铁球模式",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "zarya",
+     "name_en": "Zarya",
+     "name_cn": "查莉娅",
+     "role": "tank",
+     "icon": null,
+     "dev_note": "查莉娅在高能量时伤害大幅提升，同时光束尺寸和爆炸半径也会增大。这常常让查莉娅造成过多伤害，并使粒子炮次要攻击模式的爆炸几乎无法躲避。此次改动仍会让查莉娅能造成大量伤害，但更难真正命中目标。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Particle Cannon",
+       "name_cn": "粒子炮",
+       "slug": "particle-cannon",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "次要攻击模式的爆炸半径改为 2 米，不受能量等级影响",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "zenyatta",
+     "name_en": "Zenyatta",
+     "name_cn": "禅雅塔",
+     "role": "support",
+     "icon": null,
+     "dev_note": "禅雅塔的乱使其成为队伍中几乎不可替代的支援英雄。我们将降低其对禅雅塔队伍的影响，同时提高灭的强度以弥补效果削弱。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Orb of Destruction",
+       "name_cn": "灭",
+       "slug": "orb-of-destruction",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "伤害从 46 提高至 48",
+         "before": 46.0,
+         "after": 48.0,
+         "by": 2.0,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "damage",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Orb of Discord",
+       "name_cn": "乱",
+       "slug": "orb-of-discord",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "效果从 30% 降低至 25%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "信号",
+     "body": "- 修复了当目标英雄不具备治疗能力时，「需要治疗」信号不会在聊天中显示的错误",
+     "dev": null
+    },
+    {
+     "title": "镜头",
+     "body": "- 修复了使用某些英雄时，若笔直向上看，镜头会穿入英雄模型的错误",
+     "dev": null
+    },
+    {
+     "title": "生涯统计菜单",
+     "body": "- 修复了竞技夺旗和竞技 6v6 淘汰模式的赛季标签不显示的错误",
+     "dev": null
+    },
+    {
+     "title": "综合",
+     "body": "- 修复了某些情况下伤害加成统计追踪不正确的错误",
+     "dev": null
+    },
+    {
+     "title": "英雄展示厅",
+     "body": "- 修复了在狂鼠的不同皮肤之间切换时，其背心上的一颗炸弹会旋转的错误",
+     "dev": null
+    },
+    {
+     "title": "英雄",
+     "body": "安娜\n\n- 修复了安娜在做尤茨游戏姿势时，衣服会穿入腰包的错误\n\n艾什\n\n- 修复了当艾什的步枪剩余三发或更少子弹时，不会播放弹药不足提示音效的错误\n\n末日铁拳\n\n- 修复了裂地重拳未按预期拉近敌人的错误\n\nD.Va\n\n- 修复了 D.Va 在发射聚变机炮时极难被击退的错误\n\n源氏\n\n- 修复了导致源氏的斩在闪的持续时间结束前就结束的错误\n- 修复了源氏使用影击中末日铁拳的火箭重拳时会被异常击退很远的错误\n\n半藏\n\n- 修复了半藏在冥想姿势下腿部会明显移动的错误\n\n天使\n\n- 修复了天使被麦克雷的闪光弹眩晕时左膝会不自然弯曲的错误\n\n奥丽莎\n\n- 修复了奥丽莎在发射聚变驱动器时极难被击退的错误\n\n死神\n\n- 修复了死神吕布皮肤肩部的一颗纽扣看起来悬浮的错误\n\n莱因哈特\n\n- 修复了在使用关羽皮肤并播放「重锤落下」精彩镜头时，莱因哈特背部的一块部件显示不正确的错误\n- 修复了在特定情况下，莱因哈特的裂地猛击能击中比预期离地更高的目标的错误\n\n黑影\n\n- 修复了使用姿势退出隐秘潜行模式时，不会播放黑影潜行退出音效的错误\n- 修复了黑影在使用黑客入侵技能时无法进行快速近身攻击的错误\n\n秩序之光\n\n- 修复了秩序之光在施放光子屏障时会获得终极技能能量的错误\n\n托比昂\n\n- 修复了在自定游戏中禁用技能 2 时，托比昂无法使用熔火核心的错误\n\n黑百合\n\n- 修复了当敌人在剧毒诡雷触发半径边缘触发时，诡雷无法对其造成伤害的错误\n\n地图\n\n- 好莱坞\n\n\n  - 修复了获胜队伍的英雄阵容无法正确显示的错误\n- 地平线月球基地\n\n\n  - 修复了第一点位附近悬挂的轮胎会让自毁中的 D.Va 机甲旋转的错误\n- 巴黎\n\n\n  - 修复了「Nous vous surveillons」公寓传出的声音不会播放的错误\n\n守望先锋联赛皮肤\n\n- 修复了新的守望先锋联赛战队皮肤颜色问题",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2019-03-19-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:51:50+00:00",
+  "status": "draft",
+  "source_hash": "sha256:b368a70558ad9427219d255826a9feadf52404ce35785ce1d01ae1eb56df2025",
+  "kept_english": []
+ }
+}

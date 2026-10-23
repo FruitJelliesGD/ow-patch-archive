@@ -1,0 +1,776 @@
+{
+ "id": "ai-2026-04-23-1",
+ "site": "ai",
+ "date": "2026-04-23",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/04",
+ "title": "《守望先锋》补丁说明——2026年4月23日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "平衡性在线修正更新",
+   "role": null,
+   "description": "本次为平衡性在线修正更新。2026 年 4 月 14 日补丁及之后的回放代码仍然可用。",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "英雄平衡性更新",
+   "role": null,
+   "description": "英雄平衡性更新\n\n这些改动旨在重新调整自第 2 赛季开始以来胜率跌幅超出预期的英雄。我们也在持续关注本赛季调整过的机动型英雄，以便为赛季中期改动提供参考。我们的重点是确保英雄无论作为使用者还是对手都能感到可用且有趣，同时仍达成我们处理机动性的目标。",
+   "dev": "这些改动旨在重新调整自第 2 赛季开始以来胜率跌幅超出预期的英雄。我们也在持续关注本赛季调整过的机动型英雄，以便为赛季中期改动提供参考。我们的重点是确保英雄无论作为使用者还是对手都能感到可用且有趣，同时仍达成我们处理机动性的目标。",
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": null,
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "roadhog",
+     "name_en": "Roadhog",
+     "name_cn": "路霸",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b8afaed1ce60cbddfc555d778839d4670868537a4319814da4ba13cdd1159887.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Chain Hook",
+       "name_cn": "链钩",
+       "slug": "chain-hook",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/7edc1cdef13c2fd21e279043816aa1d2975dc784298502fd121b927729e1e86d.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从 8 秒降低至 7 秒。",
+         "before": 8.0,
+         "after": 7.0,
+         "by": -1.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "sombra",
+     "name_en": "Sombra",
+     "name_cn": "黑影",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4fa20d93cb1de8fcee163484d5dbd5ec1dd04d234019eaf4b7c159d3a62be64a.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Stealth",
+       "name_cn": "隐秘潜行",
+       "slug": "stealth",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d0f96522357295d6f474c6f0a691785d7480b4e6264b75e0e24f9cc4c28be248.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "被伤害显形时的移动速度加成降低幅度从 50% 降低至 33%。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "vendetta",
+     "name_en": "Vendetta",
+     "name_cn": "斩仇",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/53109fa61b9fcdd83ca94ceb96a1321253a744e1b1319e2645a29264812988b4.png",
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "生命值从 175 提高至 200。（总生命值从 250 提高至 275。）",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 175.0,
+       "after": 200.0,
+       "by": 25.0,
+       "by_pct": null,
+       "metric": "health",
+       "unit": "hp"
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "重要错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "mizuki",
+     "name_en": "Mizuki",
+     "name_cn": "瑞稀",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8c5f25e135a5f200951caf4321be961a5ecbdfbe21a9c9fb96c6d17e0d887854.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Katashiro Return",
+       "name_cn": "替魂纸人",
+       "slug": "katashiro-return",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/291ad4dfccb3678979f4f5ca8c24d219b9bb61a383731057547760646dcd5c04.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "敌人站在替魂纸人的起始点位上时，不再能阻止瑞稀返回。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "角斗领域英雄更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "hazard",
+     "name_en": "Hazard",
+     "name_cn": "骇灾",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f5f6c3e6378f59c991cc60d817ec0f8b73b6957c277ff1ce23e89895ed6c6628.png",
+     "dev_note": "我们正在降低骇灾以尖刺护体为核心的流派所能获得的上限和总资源，从而为反制手段留出更多机会窗口。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "伤害从 60 降低至 40。",
+       "subject": null,
+       "dimension": "other",
+       "before": 60.0,
+       "after": 40.0,
+       "by": -20.0,
+       "by_pct": null,
+       "metric": "damage",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "额外[尖刺护体]资源从 30% 降低至 15%。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "移动速度惩罚降低幅度从降低 90% 降低至降低 50%。",
+       "subject": "move_speed",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "额外[尖刺护体]资源加成从 50% 降低至 25%。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Violent Leap",
+       "name_cn": "狂跃",
+       "slug": "violent-leap",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "[狂跃]命中奖励能量从 15% 降低至 10%。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "unit": null,
+         "raw_metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Jagged Wall",
+       "name_cn": "尖刺墙",
+       "slug": "jagged-wall",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "[尖刺墙]命中奖励能量从 25% 降低至 15%。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "unit": null,
+         "raw_metric": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "junker-queen",
+     "name_en": "Junker Queen",
+     "name_cn": "渣客女王",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a362b9dba4f5f4f704076945f3c72d7d442d536ffcc2fc5735062f4a1cee8031.png",
+     "dev_note": "皇家子弹已让渣客女王在数个赛季中占据统治地位，因此我们将其下调，使她更贴近角斗领域中其他重装英雄的水平。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "创伤伤害从 40 降低至 25。",
+       "subject": null,
+       "dimension": "other",
+       "before": 40.0,
+       "after": 25.0,
+       "by": -15.0,
+       "by_pct": null,
+       "metric": "wound damage",
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "orisa",
+     "name_en": "Orisa",
+     "name_cn": "奥丽莎",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/76707145df847f90e838e93b33979d5a275d1702a6e800dc6abb6a40652c1a82.png",
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "治疗从每秒最大生命值的 8% 降低至每秒最大生命值的 5%。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "额外伤害从 25% 降低至 10%。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "攻击速度属性加成从 10% 降低至 5%。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "花费从 4000 提高至 5000。",
+       "subject": null,
+       "dimension": "other",
+       "before": 4000.0,
+       "after": 5000.0,
+       "by": 1000.0,
+       "by_pct": null,
+       "metric": "cost",
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "ramattra",
+     "name_en": "Ramattra",
+     "name_cn": "拉玛刹",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f54a877264e161c2aa4d5755ef4411eb7fd7e4eb910075936e91ddb043b8a58e.png",
+     "dev_note": "拉玛刹在角斗领域起步时的胜率处于中游，但随着他的流派不断优化，其中一些已被证明过于突出。我们正在下调他部分以吞噬漩涡／天罚形态为核心的异能，同时改进他以武器强度为核心的选项。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "最大伤害提高至 150。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "治疗从减免伤害的 50% 降低至 25%。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "虚空枯萎伤害从 20 提高至 30。",
+       "subject": null,
+       "dimension": "other",
+       "before": 20.0,
+       "after": 30.0,
+       "by": 10.0,
+       "by_pct": null,
+       "metric": "void blight damage",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "花费从 12000 降低至 10000。",
+       "subject": null,
+       "dimension": "other",
+       "before": 12000.0,
+       "after": 10000.0,
+       "by": -2000.0,
+       "by_pct": null,
+       "metric": "cost",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "伤害增幅从 10% 提高至 15%。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "最终形态治疗从 80 降低至 50。",
+       "subject": null,
+       "dimension": "other",
+       "before": 80.0,
+       "after": 50.0,
+       "by": -30.0,
+       "by_pct": null,
+       "metric": "final form healing",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "重新启用。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Annihilation",
+       "name_cn": "诛",
+       "slug": "annihilation",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "[诛]持续时间加成从 2 秒降低至 1 秒。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "unit": null,
+         "raw_metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Nemesis Form",
+       "name_cn": "天罚形态",
+       "slug": "nemesis-form",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "每有一名敌人被[吞噬漩涡]命中，[天罚形态]的冷却时间缩减从 1 秒降低至 0.5 秒。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "unit": null,
+         "raw_metric": null
+        }
+       ]
+      },
+      {
+       "name_en": "Ravenous Vortex",
+       "name_cn": "吞噬漩涡",
+       "slug": "ravenous-vortex",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "[吞噬漩涡]冷却时间缩减从 100% 降低至 75%。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "unit": null,
+         "raw_metric": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "zarya",
+     "name_en": "Zarya",
+     "name_cn": "查莉娅",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/bdc3fb8aa2c87debc3d4565197b969c5c7b4f0c9059dd8ad3335c8e536a91e0f.png",
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "通过治疗和伤害获得的角斗资金提高 7.14%。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "freja",
+     "name_en": "Freja",
+     "name_cn": "弗蕾娅",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6eb3ff52171f525f38f1b92989accd570ffe1e6ab589a935abfc2af5d7da27d7.png",
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "额外弩矢伤害从降低 50% 伤害降低至降低 60% 伤害。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "ana",
+     "name_en": "Ana",
+     "name_cn": "安娜",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3c87d470067d61c432815a4bc0c70b11f1b5379006da29625839da356b7c4ca1.png",
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "重新启用。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "brigitte",
+     "name_en": "Brigitte",
+     "name_cn": "布丽吉塔",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/dbc7d49f32020fed1033cb4bb99b55f7938d1a71108fe76edc589e42c8cd0977.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Repair Pack",
+       "name_cn": "恢复包",
+       "slug": "repair-pack",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "[恢复包]持续时间加成从 50% 降低至 25%。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "unit": null,
+         "raw_metric": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "juno",
+     "name_en": "Juno",
+     "name_cn": "朱诺",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c6fd15df25b419c58a4c11569a8bc76e14a8e8c89ea689614a7cf3e8f2294c50.png",
+     "dev_note": "我们正在修复近期朱诺改动后出现的一些错误，并为她以武器强度为核心的流派增加一些火力。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "暴击伤害从 175% 提高至 200%。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "重新启用。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Mediblaster",
+       "name_cn": "医疗冲击枪",
+       "slug": "mediblaster",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "[医疗冲击枪]衰减范围加成从 5 米提高至 15 米。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "unit": null,
+         "raw_metric": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "wuyang",
+     "name_en": "Wuyang",
+     "name_cn": "无漾",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a9c2038a0c0b85aff625cd316a6b32764618170e78bb3edfe8c31ecf1a2a073d.png",
+     "dev_note": "水学院帽对于其花费来说效率略高，导致它成为许多无漾流派的必选之物。我们正在调整它，使其价值更符合其花费。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "被动[恢复之流]持续时间加成从 50% 降低至 25%。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "每秒过量生命值从 10 降低至 5。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 10.0,
+       "after": 5.0,
+       "by": -5.0,
+       "by_pct": null,
+       "metric": "overhealth",
+       "unit": "hp"
+      },
+      {
+       "text_en": null,
+       "text_cn": "最大过量生命值从 30 降低至 15。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 30.0,
+       "after": 15.0,
+       "by": -15.0,
+       "by_pct": null,
+       "metric": "max overhealth",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "花费从 4000 提高至 5000。",
+       "subject": null,
+       "dimension": "other",
+       "before": 4000.0,
+       "after": 5000.0,
+       "by": 1000.0,
+       "by_pct": null,
+       "metric": "cost",
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "通用",
+     "body": "- 在之前的更新中，修复了自定义按键绑定无法保存的问题。\n- 在之前的更新中，修复了 Nintendo Switch 2 上帧率上限低于预期的问题。\n- 在之前的更新中，修复了死神「开火冲动」威能会导致非预期动画取消的问题。\n- 在之前的更新中，修复了西拉「紧盯不放」威能错误地为震地手雷提供冷却时间缩减的错误。\n- 在之前的更新中，修复了天使「双倍剂量」威能未能正确降低快速治疗治疗量的错误。",
+     "dev": null
+    },
+    {
+     "title": "角斗领域",
+     "body": "- 修复了玩家在军械库阶段可能因不活跃而被踢出的问题。\n- 修复了拉玛刹「贪噬螺旋」的额外[吞噬漩涡]伤害按加法而非乘法计算的错误。\n- 修复了拉玛刹的虚空枯萎会作用于屏障的错误。\n- 修复了拉玛刹的虚空枯萎无法被净化的错误。\n- 修复了拉玛刹的纳米修补者会治疗敌人的问题。\n- 修复了幽暗护手的近战伤害属性加成不作用于拉玛刹[重拳]的问题。\n- 修复了斩仇「过载打击」的[斩地巨剑]打击错误地按加法而非乘法计算 50% 额外伤害的错误。\n- 修复了安娜的「集束核心」英雄物品会将某些非玩家实体计入集束核心冷却时间缩减的错误。\n- 修复了朱诺的治疗阵列治疗量超出预期的错误。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2026-04-23-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:55:57+00:00",
+  "status": "draft",
+  "source_hash": "sha256:95d12bce90bda748ce35337af861fb23ca8e978af13c19fcba3f6ee07996806d",
+  "kept_english": []
+ }
+}

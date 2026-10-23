@@ -1,0 +1,751 @@
+{
+ "id": "ai-2017-02-27-1",
+ "site": "ai",
+ "date": "2017-02-27",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2017/02",
+ "title": "《守望先锋》补丁说明——2017年2月27日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "补丁亮点",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "新功能：游戏浏览器",
+     "body": "从今天开始，每位玩家都可以创造属于自己的独特《守望先锋》体验，并与好友、队友或全世界分享。隆重推出游戏浏览器。\n\n作为《守望先锋》自定比赛模式的延伸，游戏浏览器允许你调整各种地图、模式和英雄的设置，打造量身定制的对局。例如，如果你想提高法老之鹰火箭的速度，或者移除麦克雷战术翻滚的冷却时间，一切由你决定。当你对设置满意并准备启动游戏时，需要设置权限。你可以通过切换「仅限好友」或「仅限邀请」选项来限制可加入游戏的人员，但如果你想真正检验自己的奇特创意，请将服务器设为「公开」并点击启动按钮。\n\n如果你想了解更多关于游戏浏览器的信息，请点击此处。",
+     "dev": null
+    },
+    {
+     "title": "新模式：夺旗",
+     "body": "毫无疑问，金鸡鸣春是《守望先锋》最受欢迎的乱斗。我们不想让这份激情就此结束，因此将夺旗作为常驻游戏模式引入街机先锋。从今天开始，我们新增了尼泊尔、漓江塔、伊利奥斯和绿洲城的夺旗版本，让你在创建自定比赛时有 12 张地图可供尝试。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "ana",
+     "name_en": "Ana",
+     "name_cn": "安娜",
+     "role": "support",
+     "icon": null,
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "New Hero Option: Nano Boost Sensitivity",
+       "name_cn": "新英雄选项：纳米激素灵敏度",
+       "slug": "new-hero-option-nano-boost-sensitivity",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "允许玩家调整纳米激素的瞄准灵敏度",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "bastion",
+     "name_en": "Bastion",
+     "name_cn": "堡垒",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "这些改动的目标是将堡垒的部分强度从哨卫模式转移到侦察模式，同时让哨卫模式依然是一个强力选项，尤其是在对抗重装和屏障时。总体而言，这些改动应该会让堡垒感觉更强、更灵活。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Configuration: Sentry",
+       "name_cn": "哨卫模式",
+       "slug": "configuration-sentry",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "变形时间从 1.5 秒降低至 1.0 秒",
+         "before": 1.5,
+         "after": 1.0,
+         "by": -0.5,
+         "by_pct": null,
+         "metric": "reconfiguration time",
+         "raw_metric": "reconfiguration time",
+         "unit": "s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "子弹散布提高 50%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 50.0,
+         "metric": "bullet spread",
+         "raw_metric": "bullet spread",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "子弹散布始终处于最大值（不再随开火而增大）",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "弹匣容量从 200 提高至 300",
+         "before": 200.0,
+         "after": 300.0,
+         "by": 100.0,
+         "by_pct": null,
+         "metric": "magazine size",
+         "raw_metric": "magazine size",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "不再造成暴击伤害",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Configuration: Recon",
+       "name_cn": "侦察模式",
+       "slug": "configuration-recon",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "子弹散布降低 25%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 25.0,
+         "metric": "bullet spread",
+         "raw_metric": "bullet spread",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "弹匣容量从 20 提高至 25",
+         "before": 20.0,
+         "after": 25.0,
+         "by": 5.0,
+         "by_pct": null,
+         "metric": "magazine size",
+         "raw_metric": "magazine size",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Self-Repair",
+       "name_cn": "自我修复",
+       "slug": "self-repair",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在可以在移动时使用",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "现在绑定至辅助攻击（原为技能 2）",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "不再因受到伤害而被打断",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "新增资源槽，自我修复激活期间会消耗，未使用时恢复",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Configuration: Tank",
+       "name_cn": "坦克模式",
+       "slug": "configuration-tank",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "不再提供额外护甲",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "New Passive Ability: Ironclad",
+       "name_cn": "新被动技能：铁壁",
+       "slug": "new-passive-ability-ironclad",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "堡垒在哨卫模式或坦克模式下受到的伤害降低 35%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "d-va",
+     "name_en": "D.Va",
+     "name_cn": "D.Va",
+     "role": "tank",
+     "icon": null,
+     "dev_note": "此前，投射物必须飞行一段最小距离后才能被防御矩阵摧毁。这使得在敌人紧贴队友的情况下（例如路霸钩住你的盟友时）该技能几乎毫无用处。此改动移除了这一限制，因此无论投射物飞行了多远，防御矩阵现在都应该能可靠地将其摧毁。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Defense Matrix",
+       "name_cn": "防御矩阵",
+       "slug": "defense-matrix",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "敌方子弹不再需要飞行最小距离后才能被阻挡",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "mei",
+     "name_en": "Mei",
+     "name_cn": "美",
+     "role": "damage",
+     "icon": null,
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Cryo-Freeze",
+       "name_cn": "急冻",
+       "slug": "cryo-freeze",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在处于急冻状态时可以被盟友选为目标",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "mercy",
+     "name_en": "Mercy",
+     "name_cn": "天使",
+     "role": "support",
+     "icon": null,
+     "dev_note": "天使的重生一直非常强大，但往往迫使她牺牲自己才能用好。过去曾有改动试图在这方面帮助她，但未能充分解决问题。此改动意味着一旦她使用该技能，她将始终存活足够长的时间，重新回到队伍身边。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Resurrect",
+       "name_cn": "重生",
+       "slug": "resurrect",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "在进行重生时，天使现在会与被复活的盟友一同暂时进入无敌状态",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Caduceus Staff",
+       "name_cn": "天使之杖",
+       "slug": "caduceus-staff",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "禅雅塔在圣激活期间不再能被选为目标",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "New Hero Option: Guardian Angel Sensitivity",
+       "name_cn": "新英雄选项：守护天使灵敏度",
+       "slug": "new-hero-option-guardian-angel-sensitivity",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "允许玩家调整守护天使的瞄准灵敏度",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "New Hero Option: Beam Sensitivity",
+       "name_cn": "新英雄选项：光束灵敏度",
+       "slug": "new-hero-option-beam-sensitivity",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "允许玩家调整天使之杖光束的瞄准灵敏度",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "roadhog",
+     "name_en": "Roadhog",
+     "name_cn": "路霸",
+     "role": "tank",
+     "icon": null,
+     "dev_note": "总体而言，路霸的改动略微降低了他钩子的强度，但他的枪在不使用钩子时现在更加有效。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Scrap Gun",
+       "name_cn": "爆裂枪",
+       "slug": "scrap-gun",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "散布降低 20%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 20.0,
+         "metric": "spread",
+         "raw_metric": "spread",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Chain Hook",
+       "name_cn": "链钩",
+       "slug": "chain-hook",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "目标现在被拉至 3.5 米处，从 2 米提高",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从 6 提高至 8",
+         "before": 6.0,
+         "after": 8.0,
+         "by": 2.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "sombra",
+     "name_en": "Sombra",
+     "name_cn": "黑影",
+     "role": "damage",
+     "icon": null,
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "New Hero Option: Hack Sensitivity",
+       "name_cn": "新英雄选项：黑客入侵灵敏度",
+       "slug": "new-hero-option-hack-sensitivity",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "允许玩家调整黑影黑客入侵技能的瞄准灵敏度",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "torbjorn",
+     "name_en": "Torbjörn",
+     "name_cn": "托比昂",
+     "role": "damage",
+     "icon": null,
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Rivet Gun",
+       "name_cn": "铆钉枪",
+       "slug": "rivet-gun",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "弹药现在在装填动画中更早完成装填",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "widowmaker",
+     "name_en": "Widowmaker",
+     "name_cn": "黑百合",
+     "role": "damage",
+     "icon": null,
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "New Hero Option: Grappling Hook Sensitivity",
+       "name_cn": "新英雄选项：抓钩灵敏度",
+       "slug": "new-hero-option-grappling-hook-sensitivity",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "允许玩家调整抓钩的瞄准灵敏度",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "zarya",
+     "name_en": "Zarya",
+     "name_cn": "查莉娅",
+     "role": "tank",
+     "icon": null,
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "New Hero Option: Projected Barrier Sensitivity",
+       "name_cn": "新英雄选项：投射屏障灵敏度",
+       "slug": "new-hero-option-projected-barrier-sensitivity",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "允许玩家调整投射屏障的瞄准灵敏度",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "zenyatta",
+     "name_en": "Zenyatta",
+     "name_cn": "禅雅塔",
+     "role": "support",
+     "icon": null,
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "New Hero Option: Harmony Orb Sensitivity",
+       "name_cn": "新英雄选项：谐灵敏度",
+       "slug": "new-hero-option-harmony-orb-sensitivity",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "允许玩家调整谐的瞄准灵敏度",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "New Hero Option: Discord Orb Sensitivity",
+       "name_cn": "新英雄选项：乱灵敏度",
+       "slug": "new-hero-option-discord-orb-sensitivity",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "允许玩家调整乱的瞄准灵敏度",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "竞技比赛",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "通用",
+     "body": "- 技能评分高于 3000 的玩家每周需要完成至少七场比赛，以避免技能评分衰减\n- 低于 500 的技能评分将不再显示。",
+     "dev": "我们注意到一些玩家一直在故意输掉比赛，以试图达到尽可能低的技能评分。我们显然不希望助长这种行为，因为竞技比赛只有在每个人都全力以赴时才能发挥最佳效果。技能评分衰减系统的改动将提高玩家技能评分的准确性，使维护多个高等级账号更加困难，并让高段位定级更有意义。"
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "地图平衡性调整",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "通用",
+     "body": "- 复生时间延迟\n\n\n  - 在攻防作战、运载目标和攻防作战/运载目标地图上占领控制点时，当进攻方人数多于防守方时，防守方的复生时间会缓慢增加，直至达到最大值或防守方成功占据上风。",
+     "dev": "到目前为止，在攻防作战、运载目标和攻防作战/运载目标地图上，通过反复冲向目标点来拖延进攻一直是一种常见的防守策略——即使进攻方拥有决定性优势。通常，这种战术不会改变战斗结果，只会拖延进攻方的进度。"
+    },
+    {
+     "title": "艾兴瓦尔德",
+     "body": "- 运载目标穿过城堡大门后，第二道大门不再关闭。取而代之的是，受损门道处的碎石会部分阻挡入口。",
+     "dev": "一旦进攻方穿过城堡入口，地图就会变得对防守方极为有利。这一改动将为进攻方提供更多入口选择，从而改善地图的整体平衡。"
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 修复了一个音频错误，该错误导致占领点音效的音调无法随占领进度提高\n- 修复了一个问题，该问题导致通讯轮盘上的按键绑定无法正确显示\n- 修复了一个错误，该错误导致部分按键绑定在占领要点地图的第一回合结束后恢复为默认设置\n- 修复了一个错误，该错误导致在回合结束时，若原获赞玩家离开，点赞卡会被重新计算并转移给新玩家\n- 修复了一个错误，该错误导致即使玩家已离开游戏大厅，「获得经验值」音效仍会继续播放\n- 对屏障造成的环境伤害不再计入「阻挡伤害」统计数据",
+     "dev": null
+    },
+    {
+     "title": "A.I.",
+     "body": "- 修复了一个错误，该错误导致路霸机器人钩中目标后会原地旋转",
+     "dev": null
+    },
+    {
+     "title": "竞技比赛",
+     "body": "- 修复了一个错误，该错误导致比赛第二回合中不会播放「剩余 60 秒」和「剩余 30 秒」语音",
+     "dev": null
+    },
+    {
+     "title": "英雄",
+     "body": "- 修复了一个错误，该错误导致卢西奥的「提供音障」统计数据无法正确计算\n- 修复了一个错误，该错误导致莱因哈特的冲锋无法正确钉住目标\n- 修复了一个错误，该错误导致莱因哈特装备悟净皮肤时，护盾在低生命值下不会显示裂纹\n- 修复了一个错误，该错误导致路霸在拉拽被钩中的目标时可以自由转向\n- 修复了一个问题，该问题导致黑影的位移传动会卡在空中\n- 修复了一个错误，该错误导致猎空的「时间滴答」喷漆与英雄展示厅中的缩略图不一致",
+     "dev": null
+    },
+    {
+     "title": "地图",
+     "body": "- 调整了艾兴瓦尔德进攻方出生室的碰撞体积，以防止玩家卡在管道中\n- 托比昂现在可以在绿洲城的楼梯上建造炮台\n- 修复了一个问题，该问题导致最佳镜头会穿入漓江塔某处建筑的屋顶",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2017-02-27-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:47:31+00:00",
+  "status": "draft",
+  "source_hash": "sha256:0c3095f1551d5be42a7dff01f095f58615e1d93b73857aa3554e9131a3e8d5a6",
+  "kept_english": [
+   "A.I."
+  ]
+ }
+}

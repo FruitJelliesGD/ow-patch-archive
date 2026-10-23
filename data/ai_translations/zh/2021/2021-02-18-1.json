@@ -1,0 +1,186 @@
+{
+ "id": "ai-2021-02-18-1",
+ "site": "ai",
+ "date": "2021-02-18",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2021/02",
+ "title": "《守望先锋》补丁说明——2021年2月18日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "hero_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "orisa",
+     "name_en": "Orisa",
+     "name_cn": "奥丽莎",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1f9cf8dd1ea36ba91440be891d79cd97bd4ac2d2e0e409a8eee0c76a4317617a.png",
+     "dev_note": "这将使强固防御在阻挡大量瞬间伤害时更加可靠，并让其作为防御技能的表现更加稳定。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Fortify",
+       "name_cn": "强固防御",
+       "slug": "fortify",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d697fa90726cf683222920822d2ee00a85e0420c6cbc6ec2365573f313d06357.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "效果激活期间免疫暴击爆头伤害",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "reaper",
+     "name_en": "Reaper",
+     "name_cn": "死神",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b199eada68c7148fd0f03f3bca53fb98b28a2318603918e72a37b4aed0ef754e.png",
+     "dev_note": "死神的霰弹枪拥有很高的伤害潜力，但需要近距离或大型目标才能充分发挥。我们通过扩大他能稳定造成伤害的距离，同时降低每发子弹的最大伤害，来让这一点更加平滑。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Hellfire Shotguns",
+       "name_cn": "狱火散弹枪",
+       "slug": "hellfire-shotguns",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/76b6866587871744aca310645f66d2d07755c5a55093eb8734ed0898b17efc51.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "散布从 8 降低至 6",
+         "before": 8.0,
+         "after": 6.0,
+         "by": -2.0,
+         "by_pct": null,
+         "metric": "spread",
+         "raw_metric": "spread",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "每发弹丸伤害从 7 降低至 5.5",
+         "before": 7.0,
+         "after": 5.5,
+         "by": -1.5,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "damage per projectile",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "winston",
+     "name_en": "Winston",
+     "name_cn": "温斯顿",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5048a08caf910d4463ce0c513f7e64c4329f276d358d054e7a8eb7ec5bf26eab.png",
+     "dev_note": "通过此改动，温斯顿对霰弹枪、光束和高射速武器的抗性将略有提升。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "基础护甲/生命值已从 100/400 重新分配为 150/350",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "wrecking-ball",
+     "name_en": "Wrecking Ball",
+     "name_cn": "破坏球",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c22df3c91a4fbc7f3f9689cd76f9fb86b52b2dfdf9f51c2158b4a9259a5f970d.png",
+     "dev_note": "考虑到其触发频率，破坏球的击退效果过强。我们降低了它移动敌方玩家的距离，使其更接近其他低冷却时间击退技能的水平。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Grappling Claw",
+       "name_cn": "工程抓钩",
+       "slug": "grappling-claw",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e81e6ba9fb3391f29528021e453a0d3c16da1fc5e378994e6d00783356e0f2c9.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "击退强度降低 25%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 25.0,
+         "metric": "knockback",
+         "raw_metric": "knockback strength",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 修复了跳过击杀镜头时，玩家布娃娃模型会穿过地形掉落的问题\n- 修复了赏金猎手游戏模式会过早结束的问题",
+     "dev": null
+    },
+    {
+     "title": "地图",
+     "body": "渣客镇\n\n- 修复了猎空可在特定位置逃出地图几何体的问题",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2021-02-18-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:48:53+00:00",
+  "status": "draft",
+  "source_hash": "sha256:02944cb310eee25953dff451e2add27c9c7b42e370ee807d3feedaf7e957064d",
+  "kept_english": []
+ }
+}

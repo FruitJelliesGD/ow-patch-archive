@@ -1,0 +1,154 @@
+{
+ "id": "ai-2020-12-10-1",
+ "site": "ai",
+ "date": "2020-12-10",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2020/12",
+ "title": "《守望先锋》补丁说明——2020年12月10日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "hero_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "baptiste",
+     "name_en": "Baptiste",
+     "name_cn": "巴蒂斯特",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a4f09ac5528ea7c458223747a0b47144f1b6b1d2736fa3b67c18a8ab43d0d815.png",
+     "dev_note": "为调整巴蒂斯特因近期生化榴弹枪与增幅矩阵效果提升而增强的整体强度，我们削减了维生力场的耐久度，并再次提高了他终极技能的消耗。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Immortality Field",
+       "name_cn": "维生力场",
+       "slug": "immortality-field",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d66d82bab88fc813080dd15e31629cc3aa7c8b41cfb41d5b962b628dd345e433.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "生命值从 200 降低至 150",
+         "before": 200.0,
+         "after": 150.0,
+         "by": -50.0,
+         "by_pct": null,
+         "metric": "health",
+         "raw_metric": "health",
+         "unit": "hp"
+        }
+       ]
+      },
+      {
+       "name_en": "Amplification Matrix",
+       "name_cn": "增幅矩阵",
+       "slug": "amplification-matrix",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0a31371b55e4007e67a86f8495949970d20f64b2f0166e78d3fd16217e090a83.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "终极技能消耗提高 15%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 15.0,
+         "metric": "ultimate_cost",
+         "raw_metric": "ultimate cost",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "d-va",
+     "name_en": "D.Va",
+     "name_cn": "D.Va",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5d9b834a39e9306ec125dd8c77cdd62a351f8edef2d5dfe66d6cbb22594eae7e.png",
+     "dev_note": "我们提高了 D.Va 机甲护甲与生命值的比例，使其能够更好地承受霰弹枪、光束以及高射速武器的伤害。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "机甲护甲/生命值已从 200/400 重新分配为 300/300",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "reinhardt",
+     "name_en": "Reinhardt",
+     "name_cn": "莱因哈特",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/67e489338249021ed490b8821f28f78487e34917880220f64e24fee78dcd7ed2.png",
+     "dev_note": "这些改动的目的是在莱因哈特与敌人拉近距离后，略微增强他的前线作用。火箭重锤伤害的提升将减少击倒部分英雄所需的挥锤次数，因此我们会密切关注这一改动的整体影响。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "基础护甲从 200 提高至 250",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 200.0,
+       "after": 250.0,
+       "by": 50.0,
+       "by_pct": null,
+       "metric": "base armor",
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Rocket Hammer",
+       "name_cn": "火箭重锤",
+       "slug": "rocket-hammer",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/572da2aefdb8e3c9142e5146bc51b75269937ecca413e38bae18dcdafac15b1f.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "伤害从 75 提高至 85",
+         "before": 75.0,
+         "after": 85.0,
+         "by": 10.0,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "damage",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2020-12-10-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:57:18+00:00",
+  "status": "draft",
+  "source_hash": "sha256:485f19368cdee4cbd6571d1575d2dfa2d8b48af8db01c9cdb65461452e28f495",
+  "kept_english": []
+ }
+}

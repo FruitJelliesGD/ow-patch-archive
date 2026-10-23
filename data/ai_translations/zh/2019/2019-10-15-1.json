@@ -1,0 +1,709 @@
+{
+ "id": "ai-2019-10-15-1",
+ "site": "ai",
+ "date": "2019-10-15",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2019/10",
+ "title": "《守望先锋》补丁说明——2019年10月15日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "2019 万圣夜惊魂",
+   "role": null,
+   "description": "未来的恐惧再度来袭！\n\n我们正在通过季节性活动庆祝一年中最恐怖的时刻：守望先锋万圣夜惊魂！扩充你的恐怖主题藏品，在我们的限时 PvE 乱斗中重温狂鼠复仇的惊悚故事。在快速比赛、竞技比赛或街机先锋中获胜，完成每周挑战，赢取一系列独特的惊悚奖励！\n\n你还将能够解锁新的季节性物品——包括新的传奇皮肤，如法老安娜、术士艾什和鬼火猎空——为我们在往年不断壮大的收藏再添新成员。\n\n在此处了解更多关于万圣夜惊魂的信息。",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "综合更新",
+   "role": null,
+   "description": "街机先锋已扩展至 7 个卡片，以更好地容纳其日益丰富的游戏模式。",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "竞技更新",
+   "role": null,
+   "description": "竞技 3v3 禁闭决斗第 2 赛季已经开始。",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "暴雪嘉年华皮肤",
+   "role": null,
+   "description": "在今年的暴雪嘉年华上，我们庆祝艾泽拉斯过去 25 年的历史——为了纪念这一传奇时刻，我们制作了两款代表两位标志性《魔兽世界》英雄的守望先锋传奇皮肤。准备用伊利丹源氏向对手复仇，并借助泰兰德秩序之光召唤艾露恩的（硬）光之力！这些全新的守望先锋传奇皮肤可供暴雪嘉年华现场参与者和暴雪嘉年华虚拟门票持有者获取。",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "d-va",
+     "name_en": "D.Va",
+     "name_cn": "D.Va",
+     "role": "tank",
+     "icon": null,
+     "dev_note": "这一改动将使 D.Va 能够随时间吸收更多伤害，同时保持她一次能吸收的最大持续时间不变。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Defense Matrix",
+       "name_cn": "防御矩阵",
+       "slug": "defense-matrix",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "恢复速率从每秒 12.5% 提高至 16%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "开始恢复前的延迟从 1 秒降低至 0.75 秒",
+         "before": 1.0,
+         "after": 0.75,
+         "by": -0.25,
+         "by_pct": null,
+         "metric": "delay before regeneration begins",
+         "raw_metric": "delay before regeneration begins",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "orisa",
+     "name_en": "Orisa",
+     "name_cn": "奥丽莎",
+     "role": "tank",
+     "icon": null,
+     "dev_note": "奥丽莎的屏障往往过于难以应对。提高冷却时间将使在她放置另一个屏障之前摧毁它变得更加合理。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Protective Barrier",
+       "name_cn": "防护屏障",
+       "slug": "protective-barrier",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从 9 秒提高至 10 秒",
+         "before": 9.0,
+         "after": 10.0,
+         "by": 1.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "roadhog",
+     "name_en": "Roadhog",
+     "name_cn": "路霸",
+     "role": "tank",
+     "icon": null,
+     "dev_note": "路霸是最擅长快速击破屏障的英雄之一，但他常常会耗尽弹药，无法在屏障被摧毁时加以利用。这一改动让他有更多机会攻击这些高生命值目标，同时仍有额外弹药来威胁敌人。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Scrap Gun",
+       "name_cn": "爆裂枪",
+       "slug": "scrap-gun",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "弹药量从 5 提高至 6。",
+         "before": 5.0,
+         "after": 6.0,
+         "by": 1.0,
+         "by_pct": null,
+         "metric": "ammunition",
+         "raw_metric": "ammunition",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "sigma",
+     "name_en": "Sigma",
+     "name_cn": "西格玛",
+     "role": "tank",
+     "icon": null,
+     "dev_note": "西格玛常常让人感觉难以反制，因为他能如此迅速地重新部署屏障，并使用动能俘获从其他方向进行阻挡。我们正在这些技能中引入一些弱点，以便他的敌人有更多反制空间。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Kinetic Grasp",
+       "name_cn": "动能俘获",
+       "slug": "kinetic-grasp",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "不再阻挡链钩和流星飞锤",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Gravitic Flux",
+       "name_cn": "引力乱流",
+       "slug": "gravitic-flux",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "高重力效果持续时间从 1.2 秒降低至 0.9 秒",
+         "before": 1.2,
+         "after": 0.9,
+         "by": -0.3,
+         "by_pct": null,
+         "metric": "high gravity effect duration",
+         "raw_metric": "high gravity effect duration",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Experimental Barrier",
+       "name_cn": "实验屏障",
+       "slug": "experimental-barrier",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "恢复速率从每秒 175 降低至 150",
+         "before": 175.0,
+         "after": 150.0,
+         "by": -25.0,
+         "by_pct": null,
+         "metric": "regeneration rate",
+         "raw_metric": "regeneration rate",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "现在收回屏障后有 1 秒冷却时间",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "移除了初始 0.2 秒的施放时间",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "winston",
+     "name_en": "Winston",
+     "name_cn": "温斯顿",
+     "role": "tank",
+     "icon": null,
+     "dev_note": "温斯顿的屏障作为保护工具常常感觉不可靠，因为它可能很快被摧毁。提高生命值和持续时间应能让他更稳定地施加压力并保护队伍。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Barrier Projector",
+       "name_cn": "屏障发射器",
+       "slug": "barrier-projector",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "持续时间从 6 秒提高至 9 秒",
+         "before": 6.0,
+         "after": 9.0,
+         "by": 3.0,
+         "by_pct": null,
+         "metric": "duration",
+         "raw_metric": "duration",
+         "unit": "s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "生命值从 600 提高至 700",
+         "before": 600.0,
+         "after": 700.0,
+         "by": 100.0,
+         "by_pct": null,
+         "metric": "health",
+         "raw_metric": "health",
+         "unit": "hp"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "baptiste",
+     "name_en": "Baptiste",
+     "name_cn": "巴蒂斯特",
+     "role": "support",
+     "icon": null,
+     "dev_note": "维生力场是一个非常强大的技能，其弱点是可被摧毁。我们降低了装置的的生命值，使其更容易被反制。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Immortality Field",
+       "name_cn": "维生力场",
+       "slug": "immortality-field",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "生命值从 250 降低至 200",
+         "before": 250.0,
+         "after": 200.0,
+         "by": -50.0,
+         "by_pct": null,
+         "metric": "health",
+         "raw_metric": "health",
+         "unit": "hp"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "lucio",
+     "name_en": "Lucio",
+     "name_cn": "卢西奥",
+     "role": "support",
+     "icon": null,
+     "dev_note": "卢西奥此前曾多次降低速度，目的是削弱他在为超过 2 名重装英雄加速时的效果。既然这已不再可能，他将找回部分速度。滑墙的改动是为了抵消速度提升，因此手感应与改动前相同。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Crossfade",
+       "name_cn": "切歌",
+       "slug": "crossfade",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "速度提升效果从 20% 提高至 25%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Amp It Up",
+       "name_cn": "强音",
+       "slug": "amp-it-up",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "速度提升的强化效果从 50% 提高至 60%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Wall Ride",
+       "name_cn": "滑墙",
+       "slug": "wall-ride",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "速度增益从 40% 降低至 30%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "mercy",
+     "name_en": "Mercy",
+     "name_cn": "天使",
+     "role": "support",
+     "icon": null,
+     "dev_note": "这一改动将使女武神让天使的光束与终极技能之外的工作方式保持一致。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Valkyrie",
+       "name_cn": "女武神",
+       "slug": "valkyrie",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "女武神创造的额外光束现在会无视敌方屏障",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "moira",
+     "name_en": "Moira",
+     "name_cn": "莫伊拉",
+     "role": "support",
+     "icon": null,
+     "dev_note": "莫伊拉的决斗能力有些过强，因此我们降低了她的生化之触获得的自我治疗量，使单独与她交战更加合理。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Biotic Grasp",
+       "name_cn": "生化之触",
+       "slug": "biotic-grasp",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "自我治疗从每秒 30 点生命值降低至 20 点生命值",
+         "before": 30.0,
+         "after": 20.0,
+         "by": -10.0,
+         "by_pct": null,
+         "metric": "self-healing",
+         "raw_metric": "self-healing",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "doomfist",
+     "name_en": "Doomfist",
+     "name_cn": "末日铁拳",
+     "role": "tank",
+     "icon": null,
+     "dev_note": "我们提高了末日铁拳火箭重拳的蓄力时间，以便玩家在他蓄力这一强大技能时获得更多预警。我们还降低了他的被动技能提供的护盾生命值，以削弱他在输出伤害的同时能吸收的伤害量。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Rocket Punch",
+       "name_cn": "火箭重拳",
+       "slug": "rocket-punch",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "达到最大蓄力的时间从 1 秒提高至 1.4 秒",
+         "before": 1.0,
+         "after": 1.4,
+         "by": 0.4,
+         "by_pct": null,
+         "metric": "time to reach max charge",
+         "raw_metric": "time to reach max charge",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "The Best Defense",
+       "name_cn": "最佳防守……",
+       "slug": "the-best-defense",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "每次命中获得的护盾生命值从 35 降低至 30",
+         "before": 35.0,
+         "after": 30.0,
+         "by": -5.0,
+         "by_pct": null,
+         "metric": "shield",
+         "raw_metric": "shield health gained per hit",
+         "unit": "hp"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "sombra",
+     "name_en": "Sombra",
+     "name_cn": "黑影",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "让位移传动的冷却时间在投出时立即开始，使黑影在使用它时更加灵活。例如，她现在常常可以在传送到信标后立即重新部署它，或在潜行时快速摧毁并重新放置它。冷却时间已相应提高以作补偿。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Translocator",
+       "name_cn": "位移传动",
+       "slug": "translocator",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从 4 秒提高至 6 秒",
+         "before": 4.0,
+         "after": 6.0,
+         "by": 2.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "冷却时间现在在部署信标时立即开始，或信标被敌人摧毁时立即开始",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "symmetra",
+     "name_en": "Symmetra",
+     "name_cn": "秩序之光",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "考虑到光子屏障对战斗的影响，其持续时间过长。最近的改动使秩序之光的总体输出大幅提高，因此我们降低了她炮台的伤害，而不是对她的光子发射器做进一步的伤害调整。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Photon Barrier",
+       "name_cn": "光子屏障",
+       "slug": "photon-barrier",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "持续时间从 15 秒降低至 12 秒",
+         "before": 15.0,
+         "after": 12.0,
+         "by": -3.0,
+         "by_pct": null,
+         "metric": "duration",
+         "raw_metric": "duration",
+         "unit": "s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "生命值从 5000 降低至 4000",
+         "before": 5000.0,
+         "after": 4000.0,
+         "by": -1000.0,
+         "by_pct": null,
+         "metric": "health",
+         "raw_metric": "health",
+         "unit": "hp"
+        }
+       ]
+      },
+      {
+       "name_en": "Sentry Turret",
+       "name_cn": "哨戒炮",
+       "slug": "sentry-turret",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "每秒伤害从 50 降低至 40",
+         "before": 50.0,
+         "after": 40.0,
+         "by": -10.0,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "damage per second",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Photon Projector",
+       "name_cn": "光子发射器",
+       "slug": "photon-projector",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "被主要攻击模式光束命中的玩家现在应能听到更响亮的命中音效",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "tracer",
+     "name_en": "Tracer",
+     "name_cn": "猎空",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "这一改动将使猎空能够从距离目标稍远的位置作战，让她在保持对敌人施压的同时更加安全。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Pulse Pistols",
+       "name_cn": "脉冲双枪",
+       "slug": "pulse-pistols",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "伤害衰减现在从 13 米开始，高于之前的 10 米",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 修复了玩家档案问题，该问题导致竞技街机先锋模式赛季的英雄胜率无法显示",
+     "dev": null
+    },
+    {
+     "title": "英雄",
+     "body": "布丽吉塔\n\n- 修复了布丽吉塔的集结号令从她的脚部而非头部检测视线的问题\n- 修复了鼓舞士气的位置会受到玩家瞄准俯仰角影响的问题\n\n末日铁拳\n\n- 修复了末日铁拳在滞空时沿墙滑行时，火箭重拳可能无法向前推进的问题\n- 修复了火箭重拳会使处于强化状态的奥丽莎短暂停止所有移动的问题\n- 修复了末日铁拳在受到西格玛引力乱流的命中伤害前就能使用毁天灭地的问题\n\n西格玛\n\n- 修复了西格玛的引力乱流可以忽略部分天花板视线阻挡的问题\n\n黑影\n\n- 修复了电磁脉冲的位置会受到玩家瞄准俯仰角影响的问题\n\n温斯顿\n\n- 修复了温斯顿的屏障发射器被摧毁时的视觉效果有时无法正常播放的问题",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2019-10-15-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:53:18+00:00",
+  "status": "draft",
+  "source_hash": "sha256:b2de8ad7f474f5287331af42319ea494a4def1c56da214d8e7e4644eed1cce4c",
+  "kept_english": []
+ }
+}

@@ -1,0 +1,177 @@
+{
+ "id": "ai-2019-01-24-1",
+ "site": "ai",
+ "date": "2019-01-24",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2019/01",
+ "title": "《守望先锋》补丁说明——2019年1月24日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "全新节日活动：2019 农历新年",
+     "body": "准备好迎接猪年吧！\n\n我们将以节日氛围十足的釜山地图「抢旗」模式、竞技抢旗第 2 赛季以及海量战利品来庆祝 2019 农历新年！解锁全新节日物品，包括黄忠半藏、吕布死神、关羽莱因哈特、张飞托比昂、洪吉童猎空和诸葛亮禅雅塔的传奇皮肤。\n\n如需了解更多《守望先锋》农历新年活动信息，请点击此处。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "brigitte",
+     "name_en": "Brigitte",
+     "name_cn": "布丽吉塔",
+     "role": "support",
+     "icon": null,
+     "dev_note": "有时集结号令会产生滚雪球效应，使敌人在布丽吉塔为盟友再次积攒出集结号令之前，难以应对其盟友提升后的生命值。本次改动限制了集结号令在首次施放后效果的持续时间，让这些情况稍微更容易应对。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Rally",
+       "name_cn": "集结号令",
+       "slug": "rally",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在最长持续时间为 30 秒",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "d-va",
+     "name_en": "D.Va",
+     "name_cn": "D.Va",
+     "role": "tank",
+     "icon": null,
+     "dev_note": "本次改动增加了 D.Va 防御矩阵的使用间隔，让她的敌人能够更好地应对。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Defense Matrix",
+       "name_cn": "防御矩阵",
+       "slug": "defense-matrix",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从 1 秒提高至 2 秒",
+         "before": 1.0,
+         "after": 2.0,
+         "by": 1.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "reaper",
+     "name_en": "Reaper",
+     "name_cn": "死神",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "死神的被动让他在靠近敌人时能够打得更有侵略性。本次改动让他在对敌人造成伤害时能够持续施压。新增的生命汲取对重装英雄尤其有效，因为他们的伤害通常低于其他英雄，而且由于判定体积更大，也会受到他地狱火霰弹枪更多的伤害。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "The Reaping",
+       "name_cn": "收割",
+       "slug": "the-reaping",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "生命汲取从造成伤害的 30% 提高至 50%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 护甲\n\n\n  - 护甲的伤害减免从 -5 降低至 -3\n\n护甲整体上有些过强，尤其是当英雄被快速且频繁治疗时。本次改动将帮助更多英雄对抗护甲较高的敌人。",
+     "dev": "在本次改动之前，护甲会将所有受到的伤害降低最多 5 点，上限为正常数值的一半。本次改动将伤害减免降低至 3 点，上限仍为一半。本次改动对射速快或连发、且每发伤害超过 6 点的英雄最为明显，例如霰弹枪。举例来说，士兵：76 的重脉冲步枪现在对护甲目标每发造成 16 点伤害，高于之前的 14 点（提高接近 15%）。"
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "英雄",
+     "body": "猎空\n\n- 修复了当奥丽莎的防护屏障正面放置时，猎空的脉冲炸弹会在错误一侧引爆的错误\n\n破坏球\n\n- 修复了破坏球的感应地雷无法被黑影的电磁脉冲禁用的错误",
+     "dev": null
+    },
+    {
+     "title": "竞技比赛",
+     "body": "- 修复了竞技比赛中，回合切换后运载目标进度条上的队伍颜色不会切换的错误",
+     "dev": null
+    },
+    {
+     "title": "地图",
+     "body": "尼泊尔\n\n- 修复了在尼泊尔圣所阶段，玩家可以从点位外部占领或争夺点位的错误",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2019-01-24-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:51:23+00:00",
+  "status": "draft",
+  "source_hash": "sha256:8520e52dae6837e731b61427aee816f232be3cf952ad3882730fd78e9dd5de63",
+  "kept_english": []
+ }
+}

@@ -1,0 +1,470 @@
+{
+ "id": "ai-2018-05-03-1",
+ "site": "ai",
+ "date": "2018-05-03",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2018/05",
+ "title": "《守望先锋》补丁说明——2018年5月3日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "补丁亮点",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "新运载目标地图：里阿尔托",
+     "body": "里阿尔托曾是黑爪特工安东尼奥·巴塔尔洛蒂庞大庄园的所在地，也是臭名昭著的「威尼斯事件」的发生地——那是守望先锋与黑爪之间的转折点。意大利政府已采取大量措施保护威尼斯，成果令人瞩目。游客来到这座风景如画的小镇，可以品尝当地美食、享受惬意的贡多拉之旅、参观Omnica艺术画廊，或者干脆沿着运河漫步，欣赏沿途风光。\n\n注意：里阿尔托在未来的补丁上线前不会加入竞技比赛地图池。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "brigitte",
+     "name_en": "Brigitte",
+     "name_cn": "布丽吉塔",
+     "role": "support",
+     "icon": null,
+     "dev_note": "在与布丽吉塔对战时，玩家常常感觉自己明明已经脱离了能量盾击的范围、本应躲开，却仍被命中。另一方面，使用布丽吉塔时，玩家有时会在混战中打中错误的敌人。缩小锥形范围后，该技能将更贴合其视觉效果。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Shield Bash",
+       "name_cn": "能量盾击",
+       "slug": "shield-bash",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "锥形角度从90降低至60",
+         "before": 90.0,
+         "after": 60.0,
+         "by": -30.0,
+         "by_pct": null,
+         "metric": "cone angle",
+         "raw_metric": "cone angle",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "genji",
+     "name_en": "Genji",
+     "name_cn": "源氏",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "源氏「闪」的命中判定范围过大，有时会把距离他相当远的弹道反弹回去。我们收紧了命中判定范围，这应该能解决该问题，同时仍能完全保护他免受正面袭来的弹道伤害。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Deflect",
+       "name_cn": "闪",
+       "slug": "deflect",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "命中判定范围缩小",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "hanzo",
+     "name_en": "Hanzo",
+     "name_cn": "半藏",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "这些半藏改动的目标是让他拥有新的选择并保持高伤害输出，同时消除对战旧版「散」时的挫败感。凭借新的「跃」技能，半藏现在机动性强得多；再加上弓箭弹道速度提升和新的「岚」技能，他现在能比以往更稳定地打出高伤害。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Storm Bow",
+       "name_cn": "风暴弓",
+       "slug": "storm-bow",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "弹道速度从85提高至100",
+         "before": 85.0,
+         "after": 100.0,
+         "by": 15.0,
+         "by_pct": null,
+         "metric": "projectile_speed",
+         "raw_metric": "projectile speed",
+         "unit": "m/s"
+        }
+       ]
+      },
+      {
+       "name_en": "Sonic Arrow",
+       "name_cn": "音波箭",
+       "slug": "sonic-arrow",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从20秒降低至12秒",
+         "before": 20.0,
+         "after": 12.0,
+         "by": -8.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "持续时间从10秒降低至6秒",
+         "before": 10.0,
+         "after": 6.0,
+         "by": -4.0,
+         "by_pct": null,
+         "metric": "duration",
+         "raw_metric": "duration",
+         "unit": "s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "半径从10米降低至7米",
+         "before": 10.0,
+         "after": 7.0,
+         "by": -3.0,
+         "by_pct": null,
+         "metric": "radius",
+         "raw_metric": "radius",
+         "unit": "m"
+        }
+       ]
+      },
+      {
+       "name_en": "New Abilities",
+       "name_cn": "新技能",
+       "slug": "new-abilities",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "在空中按下跳跃键即可水平跃出",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "岚",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "替换原有的「散」技能",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "半藏现在可以快速射出至多6支箭，这些箭伤害降低，但始终以满蓄力射出",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "junkrat",
+     "name_en": "Junkrat",
+     "name_cn": "狂鼠",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "这些改动旨在减少对战狂鼠时最令人挫败的部分。缩小榴弹发射器的弹道尺寸意味着他必须更仔细地瞄准才能打出强力的直接命中；降低炸弹轮胎的移动速度则让他的对手在轮胎引爆前多出一点时间将其摧毁。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Frag Launcher",
+       "name_cn": "榴弹发射器",
+       "slug": "frag-launcher",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "弹道尺寸从0.3降低至0.2",
+         "before": 0.3,
+         "after": 0.2,
+         "by": -0.1,
+         "by_pct": null,
+         "metric": "projectile size",
+         "raw_metric": "projectile size",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "RIP-Tire",
+       "name_cn": "炸弹轮胎",
+       "slug": "rip-tire",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "轮胎移动速度从13降低至12",
+         "before": 13.0,
+         "after": 12.0,
+         "by": -1.0,
+         "by_pct": null,
+         "metric": "tire movement speed",
+         "raw_metric": "tire movement speed",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "lucio",
+     "name_en": "Lúcio",
+     "name_cn": "卢西奥",
+     "role": "support",
+     "icon": null,
+     "dev_note": "「滑墙」经过了大幅重做，使其在每张地图的更多区域都能更流畅地运作。卢西奥玩家应该能立刻注意到滑墙可用位置和方式的巨大改进。此外，音速扩音器的「音波」技能同时受冷却时间和弹药消耗限制，这并不必要，因此我们移除了弹药消耗。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Wall Ride",
+       "name_cn": "滑墙",
+       "slug": "wall-ride",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "沿单一表面滑墙时更不容易被打断",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "现在可以绕过拐角（包括外拐角和内拐角）而无需离开墙面",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "跃离后现在可以重新落回同一面墙，前提是跃出的距离足够远离原起跳点",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "新增了跳跃键的最短按住时间，之后卢西奥才能绕拐角滑行",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Soundwave",
+       "name_cn": "音波",
+       "slug": "soundwave",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "不再消耗弹药",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "现在可以在换弹时使用",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "tracer",
+     "name_en": "Tracer",
+     "name_cn": "猎空",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "脉冲炸弹在击杀重装英雄方面过于强势，而重装英雄因体型较大很容易被粘上。此次伤害降低使其作为「重装杀手」的威力下降，同时对大多数其他英雄仍保持致命。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Pulse Bomb",
+       "name_cn": "脉冲炸弹",
+       "slug": "pulse-bomb",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "最大伤害从400降低至300",
+         "before": 400.0,
+         "after": 300.0,
+         "by": -100.0,
+         "by_pct": null,
+         "metric": "max damage",
+         "raw_metric": "max damage",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "游戏浏览器与自定游戏",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "通用",
+     "body": "- 天使的「再生」（被动技能）现在可以在自定游戏设置中关闭\n- 半藏的「跃」和「岚」技能设置现在可以在自定游戏设置中找到",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "通用",
+     "body": "- 修复了在教程和训练靶场中出现「邀请至自定游戏」选项的错误\n- 修复了出生室内的氧气罐和灭火器受到伤害后无法被推动的错误",
+     "dev": null
+    },
+    {
+     "title": "AI",
+     "body": "- 修复了训练机器人被技能（例如卢西奥的「音波」）击中后无法返回原位置和行为的错误\n- 修复了目标玩家从边缘跳下时，机器人追踪玩家会走错路线的错误\n- 修复了机器人会在暴雪世界星际争霸区域的攻城坦克上卡住的错误",
+     "dev": null
+    },
+    {
+     "title": "游戏浏览器与自定游戏",
+     "body": "- 修复了自定游戏邀请会在被邀请者屏幕上持续显示的错误",
+     "dev": null
+    },
+    {
+     "title": "英雄",
+     "body": "- 修复了装备Null Sector皮肤时，堡垒的「Zwing Zwing Zwing」语音无法播放的错误\n- 修复了布丽吉塔在恢复包飞行途中无法使用技能或火箭连枷的错误\n- 修复了源氏近战攻击没有音效的错误\n- 修复了装备部分皮肤时，源氏黄金武器变体无法显示金色光泽的错误\n- 修复了狂鼠的炸弹轮胎免疫美冰霜冲击枪冰冻效果的错误\n- 修复了狂鼠的炸弹轮胎生成在墙体内部的错误\n- 修复了卢西奥被狂鼠的钢铁陷阱困住时仍能移动的错误\n- 修复了卢西奥使用滑墙时能够垂直向上移动的错误\n- 修复了卢西奥从特定角度落到墙上时会损失移动速度的错误\n- 修复了控制技能无法影响重生（例如麦克雷的闪光弹）的错误\n- 修复了装备守望先锋联赛皮肤时，莫伊拉在锥形瓶胜利姿势中不显示烧瓶的错误\n- 修复了在英雄画廊预览死神舞蹈姿势时，地狱火霰弹枪悬浮的错误\n- 修复了查看路霸「大头照」胜利姿势时，镜头无法正确对焦的错误\n- 修复了路霸在「脚步声」精彩镜头开场中链钩悬浮的错误\n- 修复了装备黑爪皮肤时，黑影自动手枪黄金变体的激光瞄准器末端不收束的错误\n- 修复了黑百合在开镜使用寡妇之吻时HUD消失的错误\n- 修复了在英雄画廊查看秩序之光守望先锋联赛皮肤时，标志显示褪色的错误\n- 修复了在英雄画廊查看托比昂守望先锋联赛皮肤时，标志显示褪色的错误\n- 修复了帧率高于60 FPS时，猎空使用闪回期间游戏卡顿的错误",
+     "dev": null
+    },
+    {
+     "title": "地图",
+     "body": "- 修复了机器人卡在花村力丸拉面店侧面行走的错误\n- 修复了玩家可以在月球基地 unintended 位置放置炮台的错误\n- 修复了玩家可以到达月球基地 unintended 位置的错误\n- 修复了渣客镇摩托车被摧毁后猪头悬浮的错误\n- 修复了玩家可以在渣客镇 unintended 位置放置炮台和秩序之光传送面板的错误",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2018-05-03-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:48:35+00:00",
+  "status": "draft",
+  "source_hash": "sha256:3b831f1a3aad34f0dd9229ec5b68a5092ddb9e99bf6c40c6b9dc140a48c315d4",
+  "kept_english": [
+   "AI"
+  ]
+ }
+}

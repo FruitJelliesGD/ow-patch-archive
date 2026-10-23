@@ -1,0 +1,353 @@
+{
+ "id": "ai-2017-01-24-1",
+ "site": "ai",
+ "date": "2017-01-24",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2017/01",
+ "title": "《守望先锋》补丁说明——2017年1月24日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "补丁亮点",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "全新季节性活动：金鸡鸣春",
+     "body": "召集你的朋友、家人和所爱之人，准备迎接鸡年的到来。\n\n《守望先锋》的农历新年庆祝活动已经开始，在接下来的三周里，我们希望这个季节性活动能为你带来幸福、繁荣，以及（最重要的）大量乐趣！从特殊的农历补给中收集超过100件季节性装饰物品，在漓江塔欣赏节日烟花表演，并准备在《守望先锋》最新的乱斗模式中夺取旗帜。\n\n了解更多，请点击这里。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "综合更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 当队伍中任何人点击「保持组队」按钮时，该按钮现在会亮起\n- 玩家现在可以在英雄选择界面加入队伍语音（Xbox One 手柄按「RB」，PlayStation 4 手柄按「R1」）\n- 蹲下现在在使用之间有非常短的冷却时间",
+     "dev": null
+    },
+    {
+     "title": "交流轮盘",
+     "body": "- 玩家现在可以在英雄图鉴中装备最多4个姿势、喷漆和语音\n- 语音和姿势子菜单可以从交流轮盘中访问\n- 玩家现在可以将单独的喷漆、姿势和语音绑定到鼠标按键、独立按键或手柄按键",
+     "dev": null
+    },
+    {
+     "title": "消灭提示",
+     "body": "- 英雄技能图标现在会显示在消灭提示中\n- 爆头消灭现在会用红色图标标示",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "英雄平衡更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "ana",
+     "name_en": "Ana",
+     "name_cn": "安娜",
+     "role": "support",
+     "icon": null,
+     "dev_note": "安娜的生物手雷提供的治疗加成过高，尤其是对生命值较高的目标使用时。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Biotic Grenade",
+       "name_cn": "生物手雷",
+       "slug": "biotic-grenade",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "效果持续时间从5秒降低至4秒",
+         "before": 5.0,
+         "after": 4.0,
+         "by": -1.0,
+         "by_pct": null,
+         "metric": "effect duration has been",
+         "raw_metric": "effect duration has been",
+         "unit": "s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "对盟友的治疗加成降低50%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 50.0,
+         "metric": "healing",
+         "raw_metric": "healing boost on allies has been",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "d-va",
+     "name_en": "D.Va",
+     "name_cn": "D.Va",
+     "role": "tank",
+     "icon": null,
+     "dev_note": "D.Va的护甲常常让她感觉毫无弱点，即使面对通常能有效克制大型目标的英雄（如死神）也是如此。对主要攻击模式的改动将导致整体伤害略微降低，但她的聚变机炮现在应该感觉更稳定。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "生命值从200提高至400",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 200.0,
+       "after": 400.0,
+       "by": 200.0,
+       "by_pct": null,
+       "metric": "health",
+       "unit": "hp"
+      },
+      {
+       "text_en": null,
+       "text_cn": "护甲从400降低至200",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 400.0,
+       "after": 200.0,
+       "by": -200.0,
+       "by_pct": null,
+       "metric": "armor",
+       "unit": "hp"
+      }
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Fusion Cannons",
+       "name_cn": "聚变机炮",
+       "slug": "fusion-cannons",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "子弹伤害从3降低至2",
+         "before": 3.0,
+         "after": 2.0,
+         "by": -1.0,
+         "by_pct": null,
+         "metric": "bullet damage",
+         "raw_metric": "bullet damage",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "每发子弹数量从8提高至11",
+         "before": 8.0,
+         "after": 11.0,
+         "by": 3.0,
+         "by_pct": null,
+         "metric": "number of bullets per shot has been",
+         "raw_metric": "number of bullets per shot has been",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "lucio",
+     "name_en": "Lucio",
+     "name_cn": "卢西奥",
+     "role": "support",
+     "icon": null,
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "New Hero Option: Allow Backwards Wall Ride",
+       "name_cn": "新英雄选项：允许向后滑墙",
+       "slug": "new-hero-option-allow-backwards-wall-ride",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "启用后，允许卢西奥在向后移动时开始滑墙。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "roadhog",
+     "name_en": "Roadhog",
+     "name_cn": "路霸",
+     "role": "tank",
+     "icon": null,
+     "dev_note": "钩子现在对路霸玩家来说应该感觉更稳定，但对他的敌人来说也应该感觉更合理，因为他们不再能被钩中或拉过拐角。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Chain Hook",
+       "name_cn": "链钩",
+       "slug": "chain-hook",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "目标现在会被直接拉到路霸正前方（而不是直接拉向他），除非路霸大幅旋转",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "被钩中的目标如果在被拉动前离开路霸的视线，现在会被释放",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "视线检测（决定目标是否被钩中）现在从路霸的位置进行，而不是从钩子的位置进行",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "sombra",
+     "name_en": "Sombra",
+     "name_cn": "黑影",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "黑影常常难以入侵敌人，即使她突袭了目标。这一改动应该能帮助她更轻松地执行入侵。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Hack",
+       "name_cn": "黑客入侵",
+       "slug": "hack",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从12秒降低至8秒",
+         "before": 12.0,
+         "after": 8.0,
+         "by": -4.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown has been",
+         "unit": "s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "入侵目标所需时间从1秒降低至0.8秒",
+         "before": 1.0,
+         "after": 0.8,
+         "by": -0.2,
+         "by_pct": null,
+         "metric": "time it takes to hack a target has been",
+         "raw_metric": "time it takes to hack a target has been",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 修复了一个允许观战者在比赛结束时使用「保持组队」按钮的错误\n- 修复了一个导致「保持组队」按钮与社交菜单中的返回按钮重叠的错误\n- 修复了一个导致社交菜单无法正确显示名称中带撇号的《魔兽世界》区域的错误\n- 修复了一个导致英雄在未知英雄乱斗后于胜利界面显示T字姿势的错误\n- 修复了一个在PC上无法用手柄导航简易结账的错误\n- 修复了一个在全屏模式下Alt+Tab无法正确最小化游戏客户端的错误\n- 修复了一个导致消灭提示无法显示传送面板、护盾发生器和炮台被摧毁的错误",
+     "dev": null
+    },
+    {
+     "title": "AI",
+     "body": "- 修复了一个导致路霸机器人无法穿过莱因哈特的屏障钩中玩家的错误\n- 修复了一个允许黑影机器人穿过屏障进行入侵的错误\n- 修复了一个导致托比昂机器人在放置炮台后无响应的错误",
+     "dev": null
+    },
+    {
+     "title": "竞技比赛",
+     "body": "- 修复了一个导致玩家无法因参加休赛期比赛而获得经验值的错误",
+     "dev": null
+    },
+    {
+     "title": "英雄",
+     "body": "- 修复了安娜「敬酒」胜利姿势的一个视觉错误，该错误导致她的杯子在屏幕右侧显得模糊\n- 修复了一个导致麦克雷「帽子戏法」姿势出现图形问题的错误\n- 修复了一个导致美的急冻技能无法显示倒计时器的错误\n- 修复了天使女武神和西格露恩皮肤上翅膀位置的错误\n- 修复了一个导致秩序之光的光子屏障被摧毁时无法播放摧毁音效的错误\n- 修复了一个导致猎空「你做到了」语音播放错误台词的问题\n- 修复了一个导致黑百合的剧毒诡雷无法附着在墙上的错误\n- 修复了一个导致禅雅塔的胡桃夹子皮肤在使用圣终极技能时无法获得金色光芒的错误",
+     "dev": null
+    },
+    {
+     "title": "地图",
+     "body": "- 修复了一个导致法老之鹰站在绿洲城某些花坛中时无法补充燃料的错误\n- 修复了一个导致黑影卡在艾兴瓦尔德桥下的错误\n- 修复了一个导致黑影卡在66号公路岩石后面的错误\n- 修复了一个允许秩序之光在监测站：直布罗陀的非预期位置放置护盾发生器的错误\n- 修复了一个允许黑百合栖息在艾兴瓦尔德非预期位置的错误\n- 修复了一个允许黑百合到达生态监测站：南极洲非预期位置的错误\n- 修复了训练靶场上的若干视觉伪影\n- 修复了一个导致部分投射物无法摧毁多拉多皮纳塔的错误\n- 修复了绿洲城花园层级占领点大小的错误\n- 修复了一个导致绿洲城玻璃栏杆无法被近战攻击轻易击碎的问题",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2017-01-24-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:44:01+00:00",
+  "status": "draft",
+  "source_hash": "sha256:653026d9983d5879261b3a9f2ead5ae4b02882e2bfef6c3a5309419d2266248a",
+  "kept_english": [
+   "AI"
+  ]
+ }
+}

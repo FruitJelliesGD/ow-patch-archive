@@ -1,0 +1,265 @@
+{
+ "id": "ai-2020-04-29-1",
+ "site": "ai",
+ "date": "2020-04-29",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2020/04",
+ "title": "《守望先锋》补丁说明——2020年4月29日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": null,
+   "role": null,
+   "description": "-\n如需分享反馈，请前往[综合讨论](https://us.forums.blizzard.com/en/overwatch/c/general-discussion)论坛发帖。\n\n-\n如需查看已知问题列表，请访问我们的[错误报告](https://us.forums.blizzard.com/en/overwatch/c/bug-report)论坛。\n\n-\n如需故障排查帮助，请访问我们的[技术支持](https://us.forums.blizzard.com/en/overwatch/c/technical-support)论坛。",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "ana",
+     "name_en": "Ana",
+     "name_cn": "安娜",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b64f0b7062266a58b29a773476b31175aded9fcccfe4a0d86596dbe85f7739d2.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Sleep Dart",
+       "name_cn": "麻醉镖",
+       "slug": "sleep-dart",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/20707fd82265412fdc6d2353daa88ec7558cd71c89aa3ac6cf0e78bbbfcabd80.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "睡眠持续时间从 6 秒降低至 5 秒",
+         "before": 6.0,
+         "after": 5.0,
+         "by": -1.0,
+         "by_pct": null,
+         "metric": "sleep duration",
+         "raw_metric": "sleep duration",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "mei",
+     "name_en": "Mei",
+     "name_cn": "美",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a4c1e3c5533675ba4941c48809c54e0412774e022b1e324f7ec5915fef372db9.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Endothermic Blaster",
+       "name_cn": "冰霜冲击枪",
+       "slug": "endothermic-blaster",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a6e33c5a9c29cbb15d67b9dbd02de11cdf61d3b943c479d678cad0fa94ef4217.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冰冻眩晕持续时间从 1.5 秒降低至 1.3 秒",
+         "before": 1.5,
+         "after": 1.3,
+         "by": -0.2,
+         "by_pct": null,
+         "metric": "freeze stun duration",
+         "raw_metric": "freeze stun duration",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Blizzard",
+       "name_cn": "暴雪",
+       "slug": "blizzard",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/892fd12cc3f8bd3b54bbc175b6d8caecdedaa819c819c5fc216c3c2b4f486a3f.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "持续时间从 5 秒降低至 4.25 秒",
+         "before": 5.0,
+         "after": 4.25,
+         "by": -0.75,
+         "by_pct": null,
+         "metric": "duration",
+         "raw_metric": "duration",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "cassidy",
+     "name_en": "Cassidy",
+     "name_cn": "卡西迪",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a30fd337709bc9bd52781db34d754cd86825f021c27bcd9bc0e912cc5d88577b.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Flashbang",
+       "name_cn": "闪光弹",
+       "slug": "flashbang",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c9de6a63247025da4b96ad4a3e36fe2675a5ac9da3b42384590f99eed8f1d9b3.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "眩晕持续时间从 0.85 秒降低至 0.7 秒",
+         "before": 0.85,
+         "after": 0.7,
+         "by": -0.15,
+         "by_pct": null,
+         "metric": "stun duration",
+         "raw_metric": "stun duration",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "reinhardt",
+     "name_en": "Reinhardt",
+     "name_cn": "莱因哈特",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/67e489338249021ed490b8821f28f78487e34917880220f64e24fee78dcd7ed2.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Earthshatter",
+       "name_cn": "裂地猛击",
+       "slug": "earthshatter",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a63041a68d81c202a47a95035878edcfa75d5aa3f72414a7e84e1b1a68594bed.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "击倒持续时间从 3 秒降低至 2.5 秒",
+         "before": 3.0,
+         "after": 2.5,
+         "by": -0.5,
+         "by_pct": null,
+         "metric": "knockdown duration",
+         "raw_metric": "knockdown duration",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "roadhog",
+     "name_en": "Roadhog",
+     "name_cn": "路霸",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5f961a1625091209fdfb6086dee69178d9de88946b4b2d7492c0a4fffe5fdd4b.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Whole Hog",
+       "name_cn": "鸡飞狗跳",
+       "slug": "whole-hog",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4da2a0d46056c6570af1e85be8697eb6e912f09c840d6702bbf5feb2f0bccb23.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "击退效果提高 20%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 20.0,
+         "metric": "knockback",
+         "raw_metric": "knockback",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "sigma",
+     "name_en": "Sigma",
+     "name_cn": "西格玛",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/72fd43c9d9f9f0d075a78db7a1dfe7766eef4d9c03e34c45b3ae6fe0f8634693.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Accretion",
+       "name_cn": "质量吸附",
+       "slug": "accretion",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/594b0ecbb34b41b288c08bc7b040b273f25289ef0afc2d00828d6a30a0687236.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "击倒持续时间现在固定为 0.8 秒，不再随距离缩放",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "施放时间从 0.75 秒降低至 0.65 秒",
+         "before": 0.75,
+         "after": 0.65,
+         "by": -0.1,
+         "by_pct": null,
+         "metric": "cast_time",
+         "raw_metric": "cast time",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2020-04-29-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:55:26+00:00",
+  "status": "draft",
+  "source_hash": "sha256:383a609de15ba8172ad77d32c96339ffc599dd70684560d631b1bc4e9fc362d2",
+  "kept_english": []
+ }
+}

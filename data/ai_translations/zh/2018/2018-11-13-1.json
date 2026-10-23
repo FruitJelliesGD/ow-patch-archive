@@ -1,0 +1,353 @@
+{
+ "id": "ai-2018-11-13-1",
+ "site": "ai",
+ "date": "2018-11-13",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2018/11",
+ "title": "《守望先锋》补丁说明——2018年11月13日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "新英雄：艾什（输出）：",
+     "body": "艾什的武器库使她成为一名多才多艺的输出英雄，既能创造完美时机从远处击倒危险的敌人，也能对成群英雄造成高额的爆发伤害。\n\n她的主武器是毒蛇，一把拥有两种开火模式的杠杆式步枪：半自动和瞄准射击。在半自动模式下，毒蛇射速快但散布较大。瞄准射击则能让艾什进行精确射击，以牺牲射速为代价提高伤害。\n\n她可以用短筒猎枪扭转任何局面——这是一把短距离、高冲击力的副手武器，能造成大量伤害，并通过击退附近的敌人来清出道路。它也可以用来击退自己以获得额外的机动性，无论是重新调整位置以便清晰射击，还是逃离追击的敌人。\n\n艾什的延时雷管技能是一个投掷型爆炸物，会在延迟后引爆。它能在较大范围内造成伤害，并点燃敌人造成额外的持续伤害。她也可以射击延时雷管使其提前引爆，从而伤害毫无防备的敌人。\n\n她的终极技能召唤鲍勃，会派出艾什忠诚的智械伙伴冲入战场，推开前线，痛击后排目标。\n\n要了解更多关于艾什的信息，请点击此处。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "mercy",
+     "name_en": "Mercy",
+     "name_cn": "天使",
+     "role": "support",
+     "icon": null,
+     "dev_note": "在上一次更新中天使的基础治疗量被降低后，她的终极技能充能变得稍慢了一些。这些改动应该能恢复她终极技能的部分强度，并让它更快充能。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Valkyrie",
+       "name_cn": "女武神",
+       "slug": "valkyrie",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "终极技能消耗降低 15%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 15.0,
+         "metric": "ultimate_cost",
+         "raw_metric": "ultimate cost",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "每秒治疗量从 50 提高至 60",
+         "before": 50.0,
+         "after": 60.0,
+         "by": 10.0,
+         "by_pct": null,
+         "metric": "healing",
+         "raw_metric": "healing per second",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "reaper",
+     "name_en": "Reaper",
+     "name_cn": "死神",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "死神的专长是在极近距离作战。更稳定的散布模式和被动技能治疗量的提高，将使他更有能力与敌人正面抗衡。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Hellfire Shotguns",
+       "name_cn": "狱火散弹枪",
+       "slug": "hellfire-shotguns",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "散布随机性降低 50%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 50.0,
+         "metric": "spread randomization",
+         "raw_metric": "spread randomization",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "散布模式调整",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "The Reaping",
+       "name_cn": "收割",
+       "slug": "the-reaping",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "生命汲取从造成伤害的 20% 提高至 30%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "roadhog",
+     "name_en": "Roadhog",
+     "name_cn": "路霸",
+     "role": "tank",
+     "icon": null,
+     "dev_note": "路霸获得了数项大幅改动，使其技能更加稳定。他的链钩存在一些问题：当敌方目标跳跃或落到环境碰撞体后方时，钩子会断裂。现在，钩子命中后会在空中更多地减缓目标，并缩短开始将其拉回前的等待时间。由于链钩的冷却时间现在在使用后立即开始计算，它不再根据路霸与钩中目标的距离而变化。我们还把爆裂枪的部分弹丸移近散布模式的中心，使其主要和次要攻击的伤害输出更加稳定。此前存在一个长期错误，会导致近距离目标飞得比预期远得多。修复该错误后，我们仍希望保留它提供的一部分击退爆发力，因此提高了整体速度上限，以维持部分功能。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Chain Hook",
+       "name_cn": "链钩",
+       "slug": "chain-hook",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "将拉回被钩中目标前的延迟从 0.5 秒降低至 0.3 秒",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "现在被钩中时会大幅降低目标的动量",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "冷却时间现在立即开始计算，而非在目标被拉回后",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Scrap Gun",
+       "name_cn": "爆裂枪",
+       "slug": "scrap-gun",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "调整了主要和次要攻击的散布模式",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "散布随机性降低 50%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 50.0,
+         "metric": "spread randomization",
+         "raw_metric": "spread randomization",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Whole Hog",
+       "name_cn": "鸡飞狗跳",
+       "slug": "whole-hog",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "击退最大速度提高 25%（从每秒 8 米提高至每秒 10 米）",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 25.0,
+         "metric": "knockback",
+         "raw_metric": "knockback maximum velocity",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "水平后坐力略微降低",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "symmetra",
+     "name_en": "Symmetra",
+     "name_cn": "秩序之光",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "即使在射程提高之后，有效使用秩序之光的光子发射器光束仍然很困难。通过加快主要攻击的充能速度，达到其完整伤害潜力所需的时间更短，当有可供充能的目标时，它将成为更强的选择。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Photon Projector",
+       "name_cn": "光子发射器",
+       "slug": "photon-projector",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "主要攻击光束充能速度加快 20%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 使所有英雄的跳跃高度保持一致",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "用户界面更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 移除了英雄画廊中的「全部解锁」选项",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "人工智能",
+     "body": "- 修复了一个错误，该错误会导致美的人工智能在破坏球处于动力铁球模式免疫爆头时仍尝试对其造成爆头\n- 修复了一个错误，该错误会导致人工智能在艾兴瓦尔德的 A 点附近卡住",
+     "dev": null
+    },
+    {
+     "title": "英雄",
+     "body": "布丽吉塔\n\n- 修复了布丽吉塔的流星飞锤在链条收回前被打断时不会进入冷却时间的问题\n\n末日铁拳\n\n- 修复了被末日铁拳的火箭重拳消灭的受害者不会出现布娃娃效果的问题\n- 修复了末日铁拳的上勾重拳无法对敌人造成伤害的问题\n- 修复了末日铁拳的裂地重拳在落地瞬间被击退技能命中时无法造成伤害的问题\n\n狂鼠\n\n- 修复了狂鼠在使用炸弹轮胎时被眩晕会回到待机动画的问题\n\n卢西奥\n\n- 修复了一些友方英雄在受到友方音障时说出「受到攻击」语音的问题\n\n奥丽莎\n\n- 修复了奥丽莎的强固防御无法取消末日铁拳上勾重拳空中控制效果的问题\n\n莱因哈特\n\n- 修复了在网络延迟较高时，布丽吉塔横向移动并用屏障护盾格挡时，莱因哈特的裂地猛击仍能命中她的问题\n\n路霸\n\n- 修复了链钩在链条收回前被打断时不会进入冷却时间的问题\n- 修复了链钩在将目标向后拉时无法摧毁可破坏物体的问题\n- 修复了路霸的鸡飞狗跳视觉效果覆盖范围大于弹丸散布范围的问题\n\n秩序之光\n\n- 修复了秩序之光无法对敌方冰墙为主武器充能的问题\n\n托比昂\n\n- 修复了托比昂的圣诞装束皮肤在激活熔火核心时终极技能语音不播放的问题\n- 修复了装备巴巴罗萨或黑胡子皮肤时，熔火核心的岩浆球未出现在正确位置的视觉问题\n- 修复了连续快速使用热力过载和熔火核心时，托比昂的爪臂突然出现的动画问题\n\n猎空\n\n- 修复了猎空的加速略慢于、减速略快于其他英雄的问题\n\n破坏球\n\n- 修复了打开战利品箱后预览破坏球时语音不播放的问题\n\n查莉娅\n\n- 修复了英雄可以冲过重力喷涌而不被禁锢的问题",
+     "dev": null
+    },
+    {
+     "title": "英雄画廊",
+     "body": "综合\n\n- 修复了在英雄画廊中查看时，部分英雄的腿部会抽搐的问题\n- 修复了在英雄画廊中隐藏 UI 时玩家无法旋转英雄的问题\n\n社交互动\n\n- 修复了玩家能听到被其屏蔽的玩家所控制英雄的语音的问题",
+     "dev": null
+    },
+    {
+     "title": "游戏浏览器与自定游戏",
+     "body": "地图\n\n- 修复了在攻防作战/运载目标和运载目标地图上，攻击方在推动运载目标时受到伤害却无法被运载目标治疗的问题\n- 修复了好莱坞天际线中一栋摩天大楼显示为漆黑一片的光照问题",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2018-11-13-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:50:35+00:00",
+  "status": "draft",
+  "source_hash": "sha256:e25e6f09c97f2a95c8b2f33b674c82617de3a1fe7483be71247de9b41bd28a88",
+  "kept_english": []
+ }
+}

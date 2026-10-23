@@ -25,7 +25,7 @@
 - **格式化归档**：`data/archive/{en,cn}/YYYY/MM/` 下是每个补丁的可读 Markdown；
   `data/patches/` 下是结构化 JSON；`data/heroes/{slug}.json` 是聚合后的英雄改动时间线。
 - **查询站（GitHub Pages，两种入口）**：
-  - **按时间浏览补丁**（首页）：年 → 月 → 补丁列表，同一逻辑补丁的英文/中文版本合并为一条，详情页可切换中英语言；
+  - **按时间浏览补丁**（首页）：年 → 月 → 补丁列表，同一逻辑补丁的英文/中文版本合并为一条，详情页可切换中英语言或 AI翻译（如有）；
   - **词条检索**：直接搜索技能/武器/威能/英雄属性/英雄（中文名/英文名/别名/slug/英雄名），每个词条独立成页，追溯全部更改记录（中英对照、数值 before→after、威能新增/移除/重做状态），并标注来源补丁曾被官方事后编辑（changelog 记录）。
     检索忽略大小写、全角/半角、重音与标点（`soldier 76` = `soldier76` = `soldier: 76`，`dva` = `D.Va`），支持多词（`ana grenade` 同时匹配英雄与技能）、维度标签（`武器`）与旧名（`麦克雷`/`McCree`）；
     结果分页展示（每页 60 条，可「加载更多」），筛选与搜索写入 URL 可直接分享；卡片上的「N 条更改记录」与详情页实际行数一致（跨语言配对合并后计数）。
@@ -39,6 +39,11 @@
     也可 `workflow_dispatch` 手动触发。
 - **跨站数据对齐**：英文与中文补丁自动配对（`data/patch_pairs.json`），技能/威能名称中英映射自动学习（`data/ability_map.json`），同一技能的改动历史跨站合并为一条，不再产生碎片化分组。
 - **CLI 查询**：`python tools/query.py 士兵76`。
+- **AI翻译（实验性，非官方）**：`data/ai_translations/` 存放与官方数据完全隔离的机器译文；
+  补丁详情页在官方中英之外增加「AI翻译」标签，列表页对应条目显示「AI翻译」徽章。
+  支持用 `python tools/ai_translate.py run --missing` 批量补齐缺少官方中文的补丁（复用 owpatch-tool 的 key 或 `OWPATCH_API_KEY`）；
+  不进入 `patches_index`、配对、英雄时间线与词条检索。详见
+  [`data/ai_translations/README.md`](data/ai_translations/README.md)。
 
 ## 与本地工具协作（owpatch-tool）
 
@@ -75,6 +80,7 @@ web/                 GitHub Pages 查询站（时间浏览 + 词条检索 + SPA 
 data/               归档数据（全部提交入库）
   archive/          补丁 Markdown 归档
   patches/          补丁结构化 JSON
+  ai_translations/  AI翻译（实验性，非官方；不进入索引与配对）
   heroes/           英雄改动时间线
   entries_index.json  词条检索索引（技能/武器/威能/英雄属性/英雄）
   official_edits.json 官方事后编辑记录（patch_id → 编辑事件列表）
@@ -125,6 +131,13 @@ python tools/watchdog.py --data data                 # 自愈看门狗：探测�
 python tools/query.py 士兵76                          # 查询英雄改动历史
 python tools/query.py --site en --date 2026-08-12     # 查看单个补丁
 python tools/serve.py                                 # 本地预览查询站 (http://127.0.0.1:8000)
+# AI翻译示例：http://127.0.0.1:8000/patch.html?id=en-2016-06-14-1&lang=ai
+# 批量补齐缺少官方中文的补丁（复用 owpatch-tool 的 key）
+python tools/ai_translate.py status
+python tools/ai_translate.py run --missing --order oldest --concurrency 3 --model deepseek-chat
+python tools/ai_translate.py validate
+# key 优先级：OWPATCH_API_KEY > ui-config.toml > owpatch-tool/config.toml
+# 未来自动补充：仓库 Secret 配置 OWPATCH_API_KEY，ai-translate.yml 会在 monitor 后翻译新缺口
 
 node tools/_smoke_web.js                              # 查询站回归测试（CI 也跑这个）
 npx -p playwright node tools/_layout_check.js         # 查询站布局回归（真实浏览器）

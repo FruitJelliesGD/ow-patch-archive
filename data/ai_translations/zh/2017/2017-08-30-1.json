@@ -1,0 +1,356 @@
+{
+ "id": "ai-2017-08-30-1",
+ "site": "ai",
+ "date": "2017-08-30",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2017/08",
+ "title": "《守望先锋》补丁说明——2017年8月30日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "补丁亮点",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "全新游戏模式：死斗与团队死斗",
+     "body": "街机先锋新增两个游戏模式：死斗与团队死斗！\n\n在死斗中，八名玩家将展开混战，直到一名玩家获得 20 分。玩家每次对对手完成最后一击时获得 1 分，每次因环境伤害（例如坠崖）或自身造成的伤害而死亡时失去 1 分。得分情况将在全新的计分板上显示。率先获得 20 分的玩家获胜！\n\n在团队死斗中，两支四人队伍将展开对抗，直到一支队伍获得 30 分。玩家每次对对手完成最后一击时为其队伍获得 1 分，每次因环境伤害（例如坠崖）或自身造成的伤害而死亡时为其队伍失去 1 分。如果玩家在重生前被复活，则其死亡对应的分数将从敌方队伍的得分中扣除。得分情况将在默认计分板上显示。率先获得 30 分的队伍获胜！\n\n两个模式将在现有地图池中的部分地图上进行：\n\n- 花村\n- 地平线月球基地\n- 阿努比斯神殿\n- 沃斯卡娅工业区\n- 多拉多\n- 艾兴瓦尔德\n- 好莱坞\n- 国王大道\n- （仅团队死斗）黑森林\n- （仅团队死斗）城堡\n- （仅团队死斗）生态监测站：南极洲\n- （仅团队死斗）墓地\n\n在这些模式中游玩时，我们对其中许多地图进行了若干修改（包括将战斗限制在特定区域并开发了特殊的重生系统）。我们还推出了一张专为死斗设计的新地图：吉拉德堡！可在下方了解更多关于这张地图的信息。\n\n两个模式均可在自定游戏中游玩。观看我们的开发者更新以了解更多信息：https://youtu.be/4_CBzklel1c",
+     "dev": null
+    },
+    {
+     "title": "全新死斗地图：吉拉德堡",
+     "body": "吉拉德堡位于法国东南部的安纳西附近。数百年来，它一直是颇具影响力的吉拉德家族的产业，直到大革命后的几十年间，随着家族势力的衰落，这座城堡逐渐年久失修。最近，这座城堡有了新的主人：黑爪特工黑百合，她回到了家族的祖宅。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "综合",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 实施了若干数据格式变更\n\n- 为死斗和自定游戏添加了全房间语音聊天\n- 在「控制器」菜单的「高级」选项卡下添加了「瞄准缓入」选项。这允许玩家自定义其转向速率加速。如需了解更多信息，请查看论坛上的开发者说明。",
+     "dev": "：在过去的几个月里，我们一直在进行一些重要的底层改动，以帮助我们简化补丁流程。这将使我们能够减小未来补丁的下载大小，但也意味着今天的补丁比传统补丁更大。"
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "junkrat",
+     "name_en": "Junkrat",
+     "name_cn": "狂鼠",
+     "role": "damage",
+     "icon": null,
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Concussion Mine",
+       "name_cn": "震荡地雷",
+       "slug": "concussion-mine",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "狂鼠现在可以持有两个地雷",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "RIP-Tire",
+       "name_cn": "炸弹轮胎",
+       "slug": "rip-tire",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "轮胎的移动速度提高了 30%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 30.0,
+         "metric": "s movement speed has been",
+         "raw_metric": "s movement speed has been",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "爬墙时不再有时间限制",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "orisa",
+     "name_en": "Orisa",
+     "name_cn": "奥丽莎",
+     "role": "tank",
+     "icon": null,
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Fusion Driver",
+       "name_cn": "聚变驱动器",
+       "slug": "fusion-driver",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "弹道速度提高 20%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 20.0,
+         "metric": "projectile_speed",
+         "raw_metric": "projectile speed",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Protective Barrier",
+       "name_cn": "防护屏障",
+       "slug": "protective-barrier",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "屏障尺寸增大 20%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "屏障形状已更改，以便更好地覆盖屏障下方的敌人",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "roadhog",
+     "name_en": "Roadhog",
+     "name_cn": "路霸",
+     "role": "tank",
+     "icon": null,
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Take a Breather",
+       "name_cn": "呼吸器",
+       "slug": "take-a-breather",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在可以在移动时使用",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "治疗期间受到的伤害降低了 50%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 50.0,
+         "metric": "damage",
+         "raw_metric": "damage taken while healing has been",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "widowmaker",
+     "name_en": "Widowmaker",
+     "name_cn": "黑百合",
+     "role": "damage",
+     "icon": null,
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Grappling Hook",
+       "name_cn": "抓钩",
+       "slug": "grappling-hook",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从 12 秒降低至 8 秒",
+         "before": 12.0,
+         "after": 8.0,
+         "by": -4.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown has been",
+         "unit": "s"
+        }
+       ]
+      },
+      {
+       "name_en": "Venom Mine",
+       "name_cn": "剧毒诡雷",
+       "slug": "venom-mine",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "受影响的目標现在可以透过墙壁看到（仅限你作为黑百合时）",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "竞技比赛",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 竞技比赛赛季的长度已缩短至 2 个月（原为 3 个月）\n- 占领要点地图的获胜者现在将根据三局两胜制决定（原为五局三胜制）\n- 由于赛季长度缩短，每个赛季结束时奖励的竞技点数将减少\n- 在竞技比赛中获胜或平局将奖励更多竞技点数\n\n\n  - 获胜奖励 15 竞技点数（原为 10）\n  - 平局奖励 5 竞技点数（原为 3）\n- 定期排位级别衰减已减少\n\n\n  - 此前不活跃的玩家（钻石或以上段位）每天损失 50 排位级别。现已降低至每天 25 排位级别\n  - 现在进行一场比赛会使衰减时间增加 36 小时（原为 24 小时）。最大天数仍设为 7 天\n- 定级在钻石或以下的玩家，如果其排位级别降至最低要求以下，现在可能会失去该段位的位置。但是，他们仍将获得其定级最高段位的赛季末奖励\n- 玩家的排位级别将不再在赛季开始时（定级赛之后）暂时降低\n- 每场竞技比赛后发生的排位级别变化已进行调整，以解决一些异常情况，尤其是某些英雄",
+     "dev": "：在此处的论坛帖子中了解更多关于排位级别和段位更新的信息。"
+    },
+    {
+     "title": "玩法",
+     "body": "- 当进攻方有更多玩家在目标点上时，防守方的重生时间现在会在战斗更早阶段开始缓慢增加",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "用户界面",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 在自定义准星设置下（位于控制 > 选项 > 高级）添加了「轮廓不透明度」选项，允许玩家控制准星周围黑色轮廓的不透明度",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 修复了一个偶尔导致占领点进度条需要超过第二个刻度标记才能激活的错误",
+     "dev": null
+    },
+    {
+     "title": "英雄",
+     "body": "- 修复了 D.Va 从机甲中弹出后黑色弹出画面可能短暂再次出现的问题\n- 修复了装备 Junker 皮肤时，D.Va 在机甲外使用光枪会显示错误纹理的问题\n- 修复了装备 Cruiser 皮肤时，D.Va 在英雄选择界面的头发会竖直立起的问题\n- 修复了激活末日铁拳的「你好」姿势时，其手背上的灯光会错误显示弹药已满的问题\n- 修复了末日铁拳的毁天灭地范围效果圆圈无法被所有玩家看到的问题\n- 修复了末日铁拳的毁天灭地无法到达某些高空位置的问题\n- 修复了末日铁拳的火箭重拳无法命中沿斜坡向上移动的敌方玩家的问题\n- 修复了奥丽莎的「超频」成就即使在满足条件后也无法获得的问题\n- 修复了装备 Los Muertos 皮肤时，黑影在隐秘潜行技能激活期间牙齿会可见的问题\n- 修复了黑影的装弹动画即使被打断也会播放的问题",
+     "dev": null
+    },
+    {
+     "title": "地图",
+     "body": "- 修复了玩家可以在生态监测站：南极洲到达非预期位置的问题\n- 修复了玩家可以在黑森林看到地图背景之外区域的问题\n- 修复了玩家可以在黑森林到达非预期位置的问题\n- 修复了加入卡斯蒂略时播报员会说「正在前往多拉多」的问题\n- 修复了多拉多发电厂的某些设备（通风口、管道等）无法正确连接墙壁的问题\n- 修复了玩家可以在花村到达非预期位置的问题\n- 修复了某些投射物会穿过地平线月球基地最后一个点位地面的问题\n- 修复了喷漆在地平线月球基地的起重机上显示不正确的问题\n- 修复了伊利奥斯某些区域会出现粉色灯光的问题\n- 修复了 A.I. 英雄在前往伊利奥斯深井占领点时可能卡住的问题\n- 修复了玩家可以在伊利奥斯到达非预期位置的问题\n- 修复了尼泊尔源氏房间灯光显得过暗的问题\n- 修复了玩家可以在绿洲城到达非预期位置的问题\n- 修复了法老之鹰栖息在绿洲城门框上时推进背包无法重新充能的问题\n- 修复了训练靶场门框不可见且缺少碰撞的问题\n- 修复了某些玩家会卡在 66号公路第二个点位附近一株植物后的问题\n- 修复了末日铁拳可以在沃斯卡娅工业区到达非预期位置的问题",
+     "dev": null
+    },
+    {
+     "title": "用户界面",
+     "body": "- 修复了选项 > 控制菜单中的一个问题：将控制设置恢复为默认后，英雄下拉菜单中的星号（通常表示已有更改）不会被移除\n- 修复了在游戏浏览器中滚动浏览可用游戏列表时返回按钮会消失的问题",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2017-08-30-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:47:41+00:00",
+  "status": "draft",
+  "source_hash": "sha256:829cecd04dc8ab25a4e22ff08b44218eae5c02feb474c950182809f8a6456fa6",
+  "kept_english": []
+ }
+}

@@ -1,0 +1,166 @@
+{
+ "id": "ai-2024-12-16-1",
+ "site": "ai",
+ "date": "2024-12-16",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/12",
+ "title": "《守望先锋》补丁说明——2024年12月16日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "平衡性在线修正更新",
+   "role": null,
+   "description": "本次为英雄平衡性在线修正。2024 年 12 月 10 日补丁的回放代码仍然可用。",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "英雄平衡性更新",
+   "role": null,
+   "description": "英雄平衡性更新",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "重装",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "hazard",
+     "name_en": "Hazard",
+     "name_cn": "骇灾",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/22fc6ca76249d7cd37bad808d53a68986da855c625475a46ec3858abecf57823.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Downpour",
+       "name_cn": "千针雨",
+       "slug": "downpour",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/7f07fdfb085775f69373e050553d316552d91ba940e907827e487a0c4a498d3a.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "终极技能消耗提高 13%。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 13.0,
+         "metric": "ultimate_cost",
+         "raw_metric": "ultimate cost",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "输出",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "sojourn",
+     "name_en": "Sojourn",
+     "name_cn": "索杰恩",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/515f25a729a4a3f51d956fc54c600dc60d8e5242f2b188c178496cea1a2e11b5.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Railgun",
+       "name_cn": "电磁炮",
+       "slug": "railgun",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3d7f261e05e3abda155cede4409ec8348490e286805c123d54d7f81fdd50d077.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "主要攻击模式射速从 16 发/秒降低至 15 发/秒。",
+         "before": 16.0,
+         "after": 15.0,
+         "by": -1.0,
+         "by_pct": null,
+         "metric": "primary fire shots-per-second",
+         "raw_metric": "primary fire shots-per-second",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Disruptor Shot",
+       "name_cn": "干扰弹",
+       "slug": "disruptor-shot",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/7e903d13474df377216191c5b5c128fc6d20befdc611af9f7baedfdfa3b59295.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "不再产生能量。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Overclock",
+       "name_cn": "机体超频",
+       "slug": "overclock",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/83bd9d101e779075fadaed194d1964897794c49ce56c59ccc34799753b55efeb.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "能量转换速率从每秒 120 降低至每秒 100。",
+         "before": 120.0,
+         "after": 100.0,
+         "by": -20.0,
+         "by_pct": null,
+         "metric": "energy charge rate",
+         "raw_metric": "energy charge rate",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2024-12-16-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:53:28+00:00",
+  "status": "draft",
+  "source_hash": "sha256:1671a943829f1c93b942c5b39aef046109d8ccd8f71bf4e6b335c996f9214e38",
+  "kept_english": []
+ }
+}

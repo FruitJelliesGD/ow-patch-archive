@@ -1,0 +1,373 @@
+{
+ "id": "ai-2018-09-11-1",
+ "site": "ai",
+ "date": "2018-09-11",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2018/09",
+ "title": "《守望先锋》补丁说明——2018年9月11日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "补丁亮点",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "新地图——釜山",
+     "body": "前往韩国釜山，在一张地图内的三个各具特色的区域中争夺控制权：寺院、城区和MEKA基地。\n\n探索寺院宁静的环境，这里有古老的寺庙、美丽的花园和历史悠久的建筑。在繁华的城区大都会中交锋，玩家将在热闹的网吧、炫目的卡拉OK酒吧和中央轻轨站中激战（小心火车）。在MEKA基地争夺位置——这里是韩国抵御鬼械智械袭击的前线：D.Va和MEKA小队其他成员的所在地。",
+     "dev": null
+    },
+    {
+     "title": "英雄画廊——筛选",
+     "body": "通过英雄画廊中全新的筛选功能，查看《守望先锋》提供的所有个性化物品。你可以按类别（包括季节性活动或是否来自《守望先锋联赛》）、稀有度以及是否已解锁或等待收集来自定义搜索个性化物品。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "综合更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 为盟友添加了视觉轮廓，使其可以透过墙壁被看见",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "ana",
+     "name_en": "Ana",
+     "name_cn": "安娜",
+     "role": "support",
+     "icon": null,
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Biotic Rifle",
+       "name_cn": "生物步枪",
+       "slug": "biotic-rifle",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "提高了开镜时相对瞄准灵敏度滑块的精度。该滑块位于选项 > 控制 > 英雄 > 安娜下",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "brigitte",
+     "name_en": "Brigitte",
+     "name_cn": "布丽吉塔",
+     "role": "support",
+     "icon": null,
+     "dev_note": "目前，当两个处于冲锋状态的目标相撞时，双方都会倒下并被短暂击晕。你可以在末日铁拳的火箭重拳和莱因哈特的冲锋技能中看到这种交互。布丽吉塔的能量盾击此前未被纳入这一组，这意味着如果她对上述其他技能使用能量盾击，通常会使对方被击晕而自己不受影响。此改动使她在对冲锋或火箭重拳使用能量盾击时，双方都会被击倒。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Shield Bash",
+       "name_cn": "能量盾击",
+       "slug": "shield-bash",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在会击倒其他冲锋目标，也会被其击倒（例如莱因哈特和末日铁拳）",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "reinhardt",
+     "name_en": "Reinhardt",
+     "name_cn": "莱因哈特",
+     "role": "tank",
+     "icon": null,
+     "dev_note": "我们对裂地猛击进行了全面重做，以解决其表现不一致的问题。这些改动将使裂地猛击的行为更加可预测且更有效。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Earthshatter",
+       "name_cn": "裂地猛击",
+       "slug": "earthshatter",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在会稳定命中墙壁附近的敌人",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "不再命中在「冲击波」经过该区域后才进入伤害锥形范围的敌人",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "不再对阻挡它的屏障后方的敌人造成伤害，即使该屏障随后被收起或摧毁",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "始终会沿斜坡和运载目标周围传播",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "roadhog",
+     "name_en": "Roadhog",
+     "name_cn": "路霸",
+     "role": "tank",
+     "icon": null,
+     "dev_note": "此前，路霸爆裂枪的辅助攻击没有伤害衰减，这有时使其对远处目标过于强大。为了平衡略微的强度下降（尤其是对屏障），我们决定在伤害衰减开始生效前，将其整体武器的有效射程再向外延伸一些。注意：辅助攻击的衰减从碎弹弹丸形成的位置开始计算，而非从路霸的开火位置开始。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Scrap Gun",
+       "name_cn": "爆裂枪",
+       "slug": "scrap-gun",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "主要攻击的衰减范围从 10-20 米改为 15-30 米",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "辅助攻击现在具有伤害衰减，与新的主要攻击衰减相同（15-30 米）",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "widowmaker",
+     "name_en": "Widowmaker",
+     "name_cn": "黑百合",
+     "role": "damage",
+     "icon": null,
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Grappling Hook",
+       "name_cn": "抓钩",
+       "slug": "grappling-hook",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在在无边缘的环境或结构（例如墙壁）上使用时，会保留动量",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Widow's Kiss",
+       "name_cn": "寡妇之吻",
+       "slug": "widow-s-kiss",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "提高了开镜时相对瞄准灵敏度滑块的精度。该滑块位于选项 > 控制 > 英雄 > 黑百合下",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 修复了一个错误，该错误会导致某些一次发射多发弹丸的武器在造成暴击伤害时表现不一致（例如末日铁拳的手炮、D.Va的聚变机炮、源氏的镖、死神的地狱火霰弹枪、路霸的爆裂枪和托比昂的铆钉枪）",
+     "dev": "虽然这是一项错误修复，但我们想特别说明此改动，因为它会在某些情况下改变受影响英雄的伤害输出，从而影响游戏玩法。修复后，具有散布的武器现在应能正确计算每颗命中暴击区域（例如爆头）的弹丸的暴击伤害。此改动的最终结果是，使用任何一次发射多发弹丸的武器（例如死神的地狱火霰弹枪和D.Va的聚变机炮）造成暴击伤害都应显著更容易。此外，我们还更改了这些武器在屏幕上显示暴击标记的逻辑。现在需要 30% 的弹丸命中暴击才会显示，而不是只要有一颗弹丸暴击就显示。"
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "竞技比赛更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 宗师段位玩家现在可以与技能等级相差 350 以内的玩家组队，此前为 250",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "游戏浏览器与自定游戏",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 修改了复生时间缩放自定游戏选项，以防止复生时间长于默认值\n\n- 自由混战死斗\n\n\n  - 天使现在开局时装备天使冲击枪\n  - 暴雪世界现在可在死斗和团队死斗中游玩\n\n- 1v1 未知英雄\n\n\n  - 天使现在开局时装备天使冲击枪",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "地图更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "里阿尔托",
+     "body": "- 运载目标的移动速度已略微提高\n- 运载目标在竞逐节点暂停的时间已缩短",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 修复了一个错误，该错误会导致玩家有时从栏杆上滑落\n- 修复了一个错误，该错误会导致托比昂的护甲包创建统计数据在技能直接命中友方目标时无法更新",
+     "dev": null
+    },
+    {
+     "title": "通讯轮盘",
+     "body": "- 修复了一个错误，该错误会导致使用鼠标向左循环时，选择通讯轮盘选项出现延迟",
+     "dev": null
+    },
+    {
+     "title": "英雄",
+     "body": "布丽吉塔\n\n- 修复了布丽吉塔使用能量盾击撞上秩序之光的炮台时移动被打断的错误\n\n末日铁拳\n\n- 修复了末日铁拳使用秩序之光的传送面板时裂地重拳被取消的错误\n\nD.Va\n\n- 修复了D.Va站在美的冰墙上使用呼叫机甲时可以逃出地图的错误\n\n半藏\n\n- 修复了竜的箭矢尺寸大于半藏其他箭矢的错误\n\n美\n\n- 修复了美的急冻会阻挡美自身暴雪视线的错误\n\n天使\n\n- 修复了天使对无法被伤害强化的攻击使用伤害光束时仍能获得终极技能充能的错误\n\n死神\n\n- 修复了死神被打断时暗影步未进入冷却时间的错误\n\n路霸\n\n- 修复了路霸的链钩在保持视线的情况下命中敌人后有时会断开的错误\n- 修复了路霸的辅助攻击模式无法正确计算距离衰减伤害的错误\n- 修复了莱因哈特在激活裂地猛击时被击飞至空中后，裂地猛击有时无法命中的错误\n\n莱因哈特\n\n- 修复了莱因哈特使用冲锋时可以钉住身后目标的错误\n- 修复了莱因哈特在冲锋期间转向时无法钉住部分目标的错误\n- 修复了莱因哈特站在敌人头上时可以使用裂地猛击的错误\n- 修复了莱因哈特的裂地猛击有时无法命中站在运载目标上的敌人的错误\n- 修复了莱因哈特的裂地猛击无法沿某些斜坡向上传播的错误\n\n黑影\n\n- 修复了黑影无法位移传动至移动平台的错误\n- 修复了黑影在眩晕或被黑客入侵时无法摧毁自身位移传动的错误\n- 修复了使用位移传动时无法准确指示黑影到达位置的错误\n\n秩序之光\n\n- 修复了黑影的黑客入侵无法取消秩序之光光子屏障放置的错误\n- 修复了秩序之光被消灭后传送面板界面仍然残留的错误\n\n黑百合\n\n- 修复了黑百合的抓钩无法连接到部分边缘的错误\n- 修复了黑百合对英雄放置的物体进行开镜射击时会计入开镜武器命中率统计的错误（例如秩序之光的传送面板、托比昂的自动火炮）\n\n破坏球\n\n- 修复了破坏球的重力坠击无法造成距离衰减伤害的错误\n- 修复了破坏球在重力坠击持续期间从环境边缘滑落时可以造成两次伤害的错误\n- 修复了破坏球在自定义游戏中主武器被禁用时仍能继续使用的错误",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2018-09-11-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:50:06+00:00",
+  "status": "draft",
+  "source_hash": "sha256:b42627d0d77d3d6278b4a8457180437268590910ee8da29f802881b9e684d8b3",
+  "kept_english": []
+ }
+}

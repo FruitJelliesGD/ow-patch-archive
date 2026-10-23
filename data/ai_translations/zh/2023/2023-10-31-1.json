@@ -1,0 +1,1191 @@
+{
+ "id": "ai-2023-10-31-1",
+ "site": "ai",
+ "date": "2023-10-31",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/10",
+ "title": "《守望先锋》补丁说明——2023年10月31日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "LE SSERAFIM x OVERWATCH 2 限时活动",
+   "role": null,
+   "description": "《守望先锋 2》与韩流人气组合 LE SSERAFIM 携手，带来一场游戏内音乐联动。游玩「演唱会交锋」，这是一个以 K-pop 为主题的釜山地图中的 3v3 夺旗模式。使用 D.Va、雾子、猎空、布丽吉塔和黑影——身着 LE SSERAFIM 主题皮肤——争夺门票并占领目标，将其上交以获取分数。本次限时活动将于 11 月 1 日（周三）上午 11:00（太平洋时间）开启。",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "综合更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "赞赏",
+     "body": "赞赏等级的衰减机制已重做，在某些情况下会更加宽容。每当你完成一场比赛时，赞赏等级总会略微衰减，但现在的衰减量会根据无法赞赏你的玩家比例而减少。如果比赛中没有任何玩家能够赞赏你，你的赞赏等级就不会衰减。以下原因会导致其他玩家无法赞赏你：\n\n- 该玩家是你的好友。\n- 该玩家在过去 24 小时内赞赏过你。\n\n服务器关闭时也不再发生赞赏等级衰减。最常见的情况是竞技比赛因玩家提前离开而关闭。",
+     "dev": null
+    },
+    {
+     "title": "挑战",
+     "body": "为每个英雄的升级进度挑战添加了传奇、神话和终极玩家头衔挑战。",
+     "dev": null
+    },
+    {
+     "title": "升级进度",
+     "body": "- 胜利姿势现在显示你的升级进度等级，而非英雄等级。",
+     "dev": "> 开发者评论：你结束比赛时所使用的英雄并不一定能代表你作为一名玩家的水平。此改动旨在更好地展示你的整体升级进度。"
+    },
+    {
+     "title": "社交互动",
+     "body": "- 对于新玩家，比赛文字聊天的默认选项现在设为关闭（此前为开启）。可在社交选项中更改。\n- 对于新玩家，队伍语音聊天的默认选项现在设为开启（此前为自动加入）。可在社交选项中更改。\n- 现有玩家的当前文字或语音聊天设置不会改变。",
+     "dev": "> 开发者评论：我们将更改文字和语音聊天的默认设置，以鼓励通过信号系统进行有效沟通，同时减少在游戏中遇到干扰性聊天的机会。"
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": "英雄更新\n\n开发者评论：本次平衡补丁主要着眼于拉长玩家在战斗中应对部分影响较大的冷却时间之间的窗口，例如堡垒的切换模式、卡西迪的磁力手雷，以及许多支援类技能。",
+   "dev": "> 开发者评论：本次平衡补丁主要着眼于拉长玩家在战斗中应对部分影响较大的冷却时间之间的窗口，例如堡垒的切换模式、卡西迪的磁力手雷，以及许多支援类技能。",
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "重装",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "d-va",
+     "name_en": "D.Va",
+     "name_cn": "D.Va",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e69a3d819fd46d0dcd1d9474c248a95e69519c20077c60e9de73a1e2d3acdbb6.png",
+     "dev_note": "> 开发者评论：微型飞弹增加的弹道速度有助于提升其在中距离的稳定性，而聚变机炮降低的移动速度惩罚使 D.Va 能更贴近机动目标，让她在突入敌方队伍时更具威胁。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Fusion Cannons",
+       "name_cn": "聚变机炮",
+       "slug": "fusion-cannons",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/29bd15ebb32c23483a59df18a79f71301b2128c05b2f8d0c052ab86e0715e07d.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "移动速度惩罚从 40% 降低至 30%。",
+         "before": 40.0,
+         "after": 30.0,
+         "by": -10.0,
+         "by_pct": null,
+         "metric": "move_speed",
+         "raw_metric": "movement speed penalty",
+         "unit": "m/s"
+        }
+       ]
+      },
+      {
+       "name_en": "Micro Missiles",
+       "name_cn": "微型飞弹",
+       "slug": "micro-missiles",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1787326d46d04aa10872fc30fe512ab3575781735110dfb178ff38da352facb7.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "弹道速度从 40 提高至 50。",
+         "before": 40.0,
+         "after": 50.0,
+         "by": 10.0,
+         "by_pct": null,
+         "metric": "projectile_speed",
+         "raw_metric": "projectile speed",
+         "unit": "m/s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "doomfist",
+     "name_en": "Doomfist",
+     "name_cn": "末日铁拳",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/bc538b345188bdcb2d2be5b2894d471ba54aeea53b03862429205ed49d693bbe.png",
+     "dev_note": "> 开发者评论：此改动将让被击晕的玩家在撞墙眩晕后拥有更多机会对末日铁拳做出反应。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Rocket Punch",
+       "name_cn": "火箭重拳",
+       "slug": "rocket-punch",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/aa2a067fe151ac2795fe77546711c07be5f0880d9ae5dce554cab0c933d927f0.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "撞墙眩晕最短持续时间从 0.25 秒降低至 0.15 秒。",
+         "before": 0.25,
+         "after": 0.15,
+         "by": -0.1,
+         "by_pct": null,
+         "metric": "minimum wall stun duration",
+         "raw_metric": "minimum wall stun duration",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "撞墙眩晕最长持续时间从 0.75 秒降低至 0.6 秒。",
+         "before": 0.75,
+         "after": 0.6,
+         "by": -0.15,
+         "by_pct": null,
+         "metric": "maximum wall stun duration",
+         "raw_metric": "maximum wall stun duration",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "winston",
+     "name_en": "Winston",
+     "name_cn": "温斯顿",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6a9a37012551410b46b2c28146404354fe21e4a1e8ea65db4e1e497eeaa05c71.png",
+     "dev_note": "> 开发者评论：提高辅助攻击的射程将让温斯顿在远程造成伤害时拥有更多站位灵活性。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Tesla Cannon",
+       "name_cn": "特斯拉炮",
+       "slug": "tesla-cannon",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/050de92c7ce31e42368c796d9c246210a40bb1bd4a5273b2d64d8a980e1f9f9a.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "辅助攻击射程从 30 米提高至 40 米。",
+         "before": 30.0,
+         "after": 40.0,
+         "by": 10.0,
+         "by_pct": null,
+         "metric": "secondary fire range",
+         "raw_metric": "secondary fire range",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "输出",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "bastion",
+     "name_en": "Bastion",
+     "name_cn": "堡垒",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3a7dc6d45ce7a1e1c2d31bd4d88b4889c412b2003ad82d1fd8e41271952c1f68.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Configuration: Assault",
+       "name_cn": "强攻模式",
+       "slug": "configuration-assault",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5cf3fc40ec6eeee9716f66a934d9bf7f0803a924e72c12c5d1a6c74e57c933bd.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从 10 秒提高至 12 秒。",
+         "before": 10.0,
+         "after": 12.0,
+         "by": 2.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "武器散布提高 10%。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 10.0,
+         "metric": "weapon spread",
+         "raw_metric": "weapon spread",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "cassidy",
+     "name_en": "Cassidy",
+     "name_cn": "卡西迪",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8d161c49df5a962ece9ceafc6500bea473d9dd3695b9e24e39d5be616295e6c5.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Magnetic Grenade",
+       "name_cn": "磁力手雷",
+       "slug": "magnetic-grenade",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/47a593ad7f83394b011161e67a6f414e49f2221c5e014ea909fdcd9df4f94371.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从 10 秒提高至 12 秒。",
+         "before": 10.0,
+         "after": 12.0,
+         "by": 2.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "mei",
+     "name_en": "Mei",
+     "name_cn": "美",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/08586dceed41e030d575b2b643118f55390f1c2af91dd15394528f5399fcc934.png",
+     "dev_note": "> 开发者评论：随着近期的一些改动，美目前的表现略微过强。她改进后的主要攻击伤害输出对她的定位有利，因此我们不再进一步调整这一点，而是针对其减速效果中更常令人沮丧的群体控制方面。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Endothermic Blaster",
+       "name_cn": "冰霜冲击枪",
+       "slug": "endothermic-blaster",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a935216c60c1c7d72502f373f4af24651c9eb6513781bc482c60ef4d551fb6b9.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "减速效果从 40% 降低至 30%。",
+         "before": 40.0,
+         "after": 30.0,
+         "by": -10.0,
+         "by_pct": null,
+         "metric": "slow effect",
+         "raw_metric": "slow effect",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "sombra",
+     "name_en": "Sombra",
+     "name_cn": "黑影",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f348c1704dc50c009ac8acf6912a5a77eaf2a3acdd34e56927190af9eb9145d1.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "EMP",
+       "name_cn": "电磁脉冲",
+       "slug": "emp",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6104a559ac558db8f7356a10b419d1330e98758ba9f8099666d694c088c64265.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "终极技能消耗降低 10%。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 10.0,
+         "metric": "ultimate_cost",
+         "raw_metric": "ultimate cost",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "symmetra",
+     "name_en": "Symmetra",
+     "name_cn": "秩序之光",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b0a19d5c8b0e299705036f4d0b9394da5ff415dc0dcd4e9207b6e63254022dff.png",
+     "dev_note": "> 开发者评论：随着秩序之光近期在远程辅助攻击上获得更强的杀伤力，她不再那么依赖近距离作战，因此我们将她的总生命值回调至 200。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "基础护盾生命值从 125 降低至 100（总生命值 200）。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 125.0,
+       "after": 100.0,
+       "by": -25.0,
+       "by_pct": null,
+       "metric": "base shield health",
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "widowmaker",
+     "name_en": "Widowmaker",
+     "name_cn": "黑百合",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b4871b9addd770582c8b6a1ab366b9ec08d986c2995248ee5fce7e15cb0d809d.png",
+     "dev_note": "> 开发者评论：与其他终极技能相比，侦察视野平均需要很长时间才能充能完毕，因此我们降低了其消耗。同时，在近期的重做后，黑百合面对黑影时处于更严重的劣势，这些改动将增加更多反制手段。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Widow's Kiss",
+       "name_cn": "寡妇之吻",
+       "slug": "widow-s-kiss",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/13a1e7903c23a5e140aa01fa930f585c1ea69e1e24378c0462f42053085f7ad9.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "开镜射击达到最大散布所需的射击次数从 3 提高至 7。",
+         "before": 3.0,
+         "after": 7.0,
+         "by": 4.0,
+         "by_pct": null,
+         "metric": "unscoped shots to reach maximum spread",
+         "raw_metric": "unscoped shots to reach maximum spread",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Infra-Sight",
+       "name_cn": "红外侦测",
+       "slug": "infra-sight",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b7783e8f83afc45dac37b80d0801a5b8200727e3dde299510d2f1886e0c7237b.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "终极技能消耗降低 10%。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 10.0,
+         "metric": "ultimate_cost",
+         "raw_metric": "ultimate cost",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "支援",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "ana",
+     "name_en": "Ana",
+     "name_cn": "安娜",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/86debddbaaaf8699d68775a9dbffaf5b8db514772b77ff7234b1ff84c0b29fd5.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Biotic Grenade",
+       "name_cn": "生物手雷",
+       "slug": "biotic-grenade",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c8190b234bf0a0e28eecffe162d0c942e6b8656e95f4688c6ca3b025fa5a487d.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从 10 秒提高至 12 秒。",
+         "before": 10.0,
+         "after": 12.0,
+         "by": 2.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "baptiste",
+     "name_en": "Baptiste",
+     "name_cn": "巴蒂斯特",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5ac801c6fe84f83fe5015af89858cbdfb2ec9d32d141f582889b5381fd0195fc.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Immortality Field",
+       "name_cn": "维生力场",
+       "slug": "immortality-field",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d66d82bab88fc813080dd15e31629cc3aa7c8b41cfb41d5b962b628dd345e433.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "生命值从 150 降低至 125。",
+         "before": 150.0,
+         "after": 125.0,
+         "by": -25.0,
+         "by_pct": null,
+         "metric": "health",
+         "raw_metric": "health",
+         "unit": "hp"
+        },
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从 23 秒提高至 25 秒。",
+         "before": 23.0,
+         "after": 25.0,
+         "by": 2.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "illari",
+     "name_en": "Illari",
+     "name_cn": "伊拉锐",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f33f6fe94ad55fcf9027e779f66afac358a2f93651070b95cd565ff90d670c8b.png",
+     "dev_note": "> 开发者评论：伊拉锐在一整场比赛中的总体伤害输出过高，因此我们降低了她的阳焰步枪伤害的稳定性。她的武器还有一些其他劣势，例如需要蓄力以及较低的暴击伤害倍率，但我们会评估此改动与治疗光塔续航能力降低相结合后的影响。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Solar Rifle",
+       "name_cn": "阳焰步枪",
+       "slug": "solar-rifle",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/97ca66b75aefd32c23d38a843b8be6b2325792e3cb62523b47541ce97375ab34.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "主要攻击弹道尺寸从 0.1 米降低至 0.05 米。",
+         "before": 0.1,
+         "after": 0.05,
+         "by": -0.05,
+         "by_pct": null,
+         "metric": "primary fire projectile size",
+         "raw_metric": "primary fire projectile size",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Healing Pylon",
+       "name_cn": "治疗光塔",
+       "slug": "healing-pylon",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/03b7303b1480cad458afd46b746f6f0ad55dde473063c93afeef250f6679d214.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "基础生命值从 75 降低至 50（总生命值 100）。",
+         "before": 75.0,
+         "after": 50.0,
+         "by": -25.0,
+         "by_pct": null,
+         "metric": "base health",
+         "raw_metric": "base health",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "被摧毁时的冷却时间从 12 秒提高至 15 秒。",
+         "before": 12.0,
+         "after": 15.0,
+         "by": 3.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown when destroyed",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "kiriko",
+     "name_en": "Kiriko",
+     "name_cn": "雾子",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/24d1d7bf86c331b3d81b934442ed36fd0121f6815255c6f26f456127fb342d15.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Protection Suzu",
+       "name_cn": "铃",
+       "slug": "protection-suzu",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3775c37a363e1aaf02a6df4cdfb611f18e38bb69ce42dd59abddb4140cea9790.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从 14 秒提高至 15 秒。",
+         "before": 14.0,
+         "after": 15.0,
+         "by": 1.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "lifeweaver",
+     "name_en": "Lifeweaver",
+     "name_cn": "生命之梭",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/57d5014ab6034db9138f838e8450693b4a97ab3c54f85d594b199a8853e75ccb.png",
+     "dev_note": "> 开发者评论：生命之梭在一整场比赛中的总治疗量显著高于其他任何英雄，为帮助其回归合理水平，我们正在对他的主要技能愈疗灵花进行一些调整。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Healing Blossom",
+       "name_cn": "愈疗灵花",
+       "slug": "healing-blossom",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a3ccff02b44507df5c9bdaced0ecd56ac80b33285ad8a60e6c454acf90560579.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "弹药从 20 降低至 16。",
+         "before": 20.0,
+         "after": 16.0,
+         "by": -4.0,
+         "by_pct": null,
+         "metric": "ammo",
+         "raw_metric": "ammo",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "最大治疗量从 75 降低至 70。",
+         "before": 75.0,
+         "after": 70.0,
+         "by": -5.0,
+         "by_pct": null,
+         "metric": "max heal",
+         "raw_metric": "max heal",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Life Grip",
+       "name_cn": "生命之握",
+       "slug": "life-grip",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/36969bea55419b7ff963f2fb0ff7f80e37ecbe810bcd7dae0c7c835270c938a8.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从 16 秒提高至 19 秒。",
+         "before": 16.0,
+         "after": 19.0,
+         "by": 3.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "zenyatta",
+     "name_en": "Zenyatta",
+     "name_cn": "禅雅塔",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9367143a32f3fc07781330a0b26c6f1087361204a2b7e4088d1daf26428273f2.png",
+     "dev_note": "开发者评论：本次改动的目标是增加针对乱法球的反制手段，并鼓励禅雅塔玩家更慎重地考虑施放目标。现在，若效果因任何原因结束，目标将在短时间内无法再次被乱法球锁定。当瞄准无法受到乱法球影响的敌方玩家时，会出现一个新的软锁定准星，显示其可再次被施加前的剩余持续时间。这一改动既显著改变了该技能的使用手感，也显著改变了其清晰度，因此我们将密切关注玩家反馈。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "基础生命值从 50 提高至 75（总生命值 225）。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 50.0,
+       "after": 75.0,
+       "by": 25.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Harmony Orb",
+       "name_cn": "谐",
+       "slug": "harmony-orb",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/999f5d34dd3c8dfb045bc69129d1b6aac547b98e252b68f2599b878d15d841cb.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "脱离视线后效果消退时间从 3 秒提高至 5 秒。",
+         "before": 3.0,
+         "after": 5.0,
+         "by": 2.0,
+         "by_pct": null,
+         "metric": "time to wear off when not in line-of-sight",
+         "raw_metric": "time to wear off when not in line-of-sight",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Orb of Discord",
+       "name_cn": "乱",
+       "slug": "orb-of-discord",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f416ae3c602c4f920551057176a3618441f943a0faea5e3cf77dc5db0e5128a5.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "效果移除后，7 秒内无法再次施加于同一目标。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "范围从 30 米提高至 40 米。",
+         "before": 30.0,
+         "after": 40.0,
+         "by": 10.0,
+         "by_pct": null,
+         "metric": "range",
+         "raw_metric": "range",
+         "unit": "m"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "英雄自定义控制更新",
+   "role": null,
+   "description": "除本次更新中的英雄平衡调整外，我们还为若干英雄技能新增了额外的体验优化设置和输入选项，让你能够自定义游玩喜爱英雄的体验。\n\n- 将许多英雄专属选项归类至高级英雄选项类别。",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "重装",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "doomfist",
+     "name_en": "Doomfist",
+     "name_cn": "末日铁拳",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/bc538b345188bdcb2d2be5b2894d471ba54aeea53b03862429205ed49d693bbe.png",
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "新增英雄专属选项：",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "悍猛格挡期间的相对瞄准灵敏度——默认 100%。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "悍猛格挡期间的相对陀螺仪瞄准灵敏度——默认 100%（仅在支持陀螺仪的平台可用）。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "sigma",
+     "name_en": "Sigma",
+     "name_cn": "西格玛",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9738e1687bf7064de3667169788ef1b5ea9cf1746a42753c767cf17c7cb67547.png",
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "新增英雄专属选项：",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "引力乱流期间使用技能 3 上升——默认关闭。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "输出",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "echo",
+     "name_en": "Echo",
+     "name_cn": "回声",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0dc3f1679d739ef530ba2b8cbe02bf09f4d40a57c0af84f694a3241d3a7ef948.png",
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "新增英雄专属选项：",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "蹲下激活滑翔——默认关闭。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "飞行期间使用技能 1 上升——默认关闭。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "飞行取消输入——默认技能 1。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "飞行后自动切换滑翔——默认关闭。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "torbjorn",
+     "name_en": "Torbjörn",
+     "name_cn": "托比昂",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2ef3a4bdd117829a83867a7775ece351c4226f29b24cdbf8d7fac89443e8d8a2.png",
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "新增英雄专属选项：",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "交互取消部署炮台——默认开启。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "支援",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "illari",
+     "name_en": "Illari",
+     "name_cn": "伊拉锐",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f33f6fe94ad55fcf9027e779f66afac358a2f93651070b95cd565ff90d670c8b.png",
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "新增英雄专属选项：",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "桎梏灼日期间使用技能 3 上升——默认关闭。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "lucio",
+     "name_en": "Lúcio",
+     "name_cn": "卢西奥",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/dee7e92975f5e659fa6b28c508d8fbad62bda720698b1d21f2492af7b9f94b48.png",
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "新增英雄专属选项：",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "自动滑墙——默认关闭，仅在主机平台可用。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "滑墙受移动影响——默认关闭。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "mercy",
+     "name_en": "Mercy",
+     "name_cn": "天使",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c889fade479003fac5a1ff46a05aee7b0dc88fbb8d2d4b75e4be31159eb1f816.png",
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "新增英雄专属选项：",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "蹲下激活滑翔——默认开启。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "守护天使后自动切换天使降临——默认关闭。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "女武神期间使用技能 3 上升——默认关闭。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "震动更新",
+   "role": null,
+   "description": "我们全面调整了若干技能在控制器上的震动与扳机反馈。我们力求让震动更具动态与响应性，同时凸显许多技能的独特手感。",
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "重装",
+     "body": "D.Va\n\n- 重做了主要攻击模式的震动。\n- 新增防御矩阵激活时的震动。\n- 调整防御矩阵的扳机反馈，以体现被摧毁弹丸的伤害。\n- 新增防御矩阵摧毁弹丸时的震动。\n- 新增自毁激活时的震动。\n- 新增推进器的扳机反馈。\n- 新增呼叫机甲开始时的震动。\n- 调整呼叫机甲的震动。\n- 新增呼叫机甲命中时的震动。\n- 新增呼叫机甲后进入机甲时的震动。\n\n末日铁拳\n\n- 新增悍猛格挡开始时的震动。\n- 新增拳套强化时的震动。\n\n奥丽莎\n\n- 聚变驱动器的震动现在会随热量略微变化。\n- 新增过热时的震动。\n- 新增标枪旋击开始时的震动。\n- 新增标枪旋击持续期间的震动。\n- 新增标枪旋击伤害敌人时的震动。\n- 新增标枪旋击结束时的震动。\n- 新增撼地猛刺开始时的震动。\n- 新增撼地猛刺蓄力时的震动。\n- 新增撼地猛刺激活时的震动。\n\n拉玛刹\n\n- 提高猛拳的震动强度与持续时间。\n- 新增铁臂激活时的震动。\n\n莱因哈特\n\n- 新增屏障激活时的震动。\n\n路霸\n\n- 新增链钩激活时的震动。\n- 新增链钩激活时的扳机反馈。\n- 新增链钩命中时的扳机反馈。\n- 新增链钩收回时的扳机反馈。\n\n西格玛\n\n- 新增质量吸附发射时的震动。\n- 新增动能俘获持续期间的震动。\n- 新增动能俘获吸收时的震动。\n- 新增动能俘获获得过量生命值时的震动。\n- 新增引力乱流起手时的震动。\n- 新增引力乱流搜寻目标时的震动。\n- 新增引力乱流找到目标时的震动。\n- 新增引力乱流悬停目标时的震动。\n- 调整引力乱流砸击时的震动。\n\n温斯顿\n\n- 新增喷射背包激活时的震动。\n- 新增次要攻击模式释放时的震动。\n- 新增屏障发射器激活时的震动。\n- 重做了温斯顿原始暴怒拳击的震动。\n- 新增温斯顿原始暴怒拳击命中时的扳机反馈。\n- 破坏球\n- 新增动力铁球退出时的震动。\n- 调整重力坠击落地时的震动。\n\n查莉娅\n\n- 新增粒子屏障的震动。\n- 新增屏障部署的震动。\n- 新增粒子屏障结束时的震动。\n- 提高粒子光束瞄准敌人时的震动强度。",
+     "dev": null
+    },
+    {
+     "title": "输出",
+     "body": "艾什\n\n- 为延时雷管添加了震动。\n- 为召唤鲍勃添加了震动。\n- 为召唤鲍勃落地添加了震动。\n\n卡西迪\n\n- 为磁力手雷添加了震动。\n- 为神射手开启添加了震动。\n\n源氏\n\n- 为跃期间添加了震动。\n- 为跃造成伤害添加了震动。\n- 为闪开启添加了震动。\n- 为闪反弹添加了震动。\n- 重做了斩挥砍的震动。\n- 为斩挥砍命中添加了扳机反馈。\n- 为攀添加了震动。\n- 为攀爬边缘添加了震动。\n- 为二段跳添加了震动。\n\n半藏\n\n- 为弓蓄力添加了扳机反馈。\n- 缩短了蓄力箭的震动持续时间，以匹配蓄力时间。\n- 降低了持箭时的震动。\n- 降低了岚射箭时的震动。\n- 为跃添加了震动。\n- 为竜发射添加了震动。\n- 为攀添加了震动。\n- 为攀爬边缘添加了震动。\n- 为音装备添加了震动。\n\n狂鼠\n\n- 调整了炸弹轮胎的震动。\n- 降低了震荡地雷未命中自身时的震动。\n- 提高了震荡地雷命中自身时的震动。\n- 为震荡地雷发射添加了震动。\n- 为钢铁陷阱发射添加了震动。\n\n美\n\n- 为暴雪发射添加了震动。\n- 为冰墙开启添加了震动。\n- 为冰墙摧毁添加了震动。\n\n法老之鹰\n\n- 提高了主要攻击模式的震动。\n- 为震荡冲击命中自身添加了震动。\n\n死神\n\n- 交换了主要攻击模式左键与右键的震动。\n- 提高了主要攻击模式左键的震动。\n- 为幽灵形态激活添加了震动。\n- 为幽灵形态结束添加了震动。\n- 根据玩家的输入设置调整了影的扳机反馈。\n- 为影开启添加了震动。\n\n索杰恩\n\n- 提高了主要攻击模式的震动。\n- 调整了次要攻击模式的震动。\n- 为次要攻击模式蓄力超过90时的射击添加了独特震动。\n- 为机动滑铲跳跃添加了震动。\n\n士兵：76\n\n- 调整了螺旋飞弹的震动。\n- 为疾跑开启添加了震动。\n- 为疾跑持续时间添加了震动。\n- 为战术目镜开启添加了震动。\n\n秩序之光\n\n- 为主要攻击模式三个等级未命中时均添加了震动。\n- 为从等级3降至等级2添加了震动。\n- 为从等级2降至等级1添加了震动。\n- 为传送面板开启添加了震动。\n- 为传送面板摧毁添加了震动。\n- 为光子屏障开启添加了震动。\n- 延长了光子屏障发射的震动。\n- 为使用传送面板（任意角色）添加了震动。\n\n托比昂\n\n- 为炮台部署添加了震动。\n- 为炮台摧毁添加了震动。\n\n黑百合\n\n- 为红外侦测添加了震动。",
+     "dev": null
+    },
+    {
+     "title": "支援",
+     "body": "巴蒂斯特\n\n- 重做了动力战靴长按的震动。\n- 缩短了动力战靴蓄力的震动。\n- 为增幅矩阵开启添加了震动。\n\n布丽吉塔\n\n- 重做了布丽吉塔主要攻击模式的震动。\n- 为屏障护盾激活添加了震动。\n\n伊拉锐\n\n- 为治疗光塔摧毁添加了震动。\n\n雾子\n\n- 重做了符的震动。\n- 调整了符的震动，使其在获取目标时响应。\n- 为攀添加了震动。\n- 为攀爬边缘添加了震动。\n\n生命之梭\n\n- 将回春疾行的震动重做为方向性震动。\n- 为生命之树开启添加了震动。\n- 为生命之树摧毁添加了震动。\n\n卢西奥\n\n- 为强音添加了震动。\n- 为切歌添加了震动。\n- 为滑墙开启添加了震动。\n- 为滑墙滑行添加了震动。\n- 为滑墙跳跃添加了震动。\n- 为音障开启添加了震动。\n- 为音障添加了震动。\n- 重做了音障发射的震动。\n\n天使\n\n- 为天使之杖次要攻击模式添加了扳机反馈。\n- 为天使冲击枪添加了扳机反馈。\n- 为女武神开场添加了震动。\n\n莫伊拉\n\n- 降低了次要攻击模式的震动。\n\n禅雅塔\n\n- 为治疗法球添加了震动。\n- 为乱法球添加了震动。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "音频\n\n- 修复了训练场中重型训练机器人的护盾播放了错误命中特效的问题。\n- 调整了训练场中可听到默认训练机器人武器开火声的区域。这应为内容创作者提供一些额外的安静区域来拍摄素材。\n\n英雄精通\n\n- 修复了在关卡重新开始后因敌方伤害死亡时可能导致永久黑屏的错误。\n- 解决了回放期间结算界面不显示英雄图标的问题。\n- 解决了任意分数都可能显示「新个人最佳」的错误。\n- 修复了在某些平台上选择「重试」后可能导致消灭提示和HUD消失的错误。\n- 解决了天使的治疗未在得分详情中显示的问题。\n\n其他修复\n\n- 修复了在竞技比赛中选择「以小队离开」会导致小队解散的错误。\n- 修复了英雄画廊中装备一件外观后UI会高亮另一件外观的错误。\n- 修复了在某些平台上成就「朋友区」在满足条件后仍无法解锁的问题。\n- 修复了在未知英雄中可通过计分板暴露敌方队伍职责的问题。\n- 修复了某些玩家图标无法装备的错误。\n- 修复了「从收藏中随机」在英雄选择期间无法生效的错误。\n- 修复了AI机器人选择自定义游戏设置中排除的英雄，导致比赛中出现空位的错误。",
+     "dev": null
+    },
+    {
+     "title": "地图",
+     "body": "南极半岛\n\n- 修复了地图中某些可能使玩家卡住的区域。\n\n新渣客城\n\n- 移除了某个出生室中悬浮的部分环境物件。\n\n66号公路\n\n- 修复了地图中某处允许玩家站在预期可玩区域之外的位置。\n\n萨摩亚\n\n- 修复了某些存在缝隙、导致非预期视线的区域。\n- 修复了某些允许玩家站在非预期位置的区域。\n- 修复了地图中某些允许炮台放置在可玩区域之外但仍能攻击敌人的区域。\n- 修复了地图中某些可能使玩家卡住的区域。\n- 修复了地图中某些区域的光照。",
+     "dev": null
+    },
+    {
+     "title": "英雄",
+     "body": "伊拉锐\n\n- 修复了在赛前英雄选择阶段，「破晓」皮肤在皮肤选择界面中显示两次的错误。\n- 修复了治疗光塔可能导致玩家被弹飞的问题。\n\n生命之梭\n\n- 修复了花瓣平台被黑客入侵时不会下落的错误。\n\n卢西奥\n\n- 修复了「赫尔墨斯」皮肤导致滑墙时播放的音效比预期更响的错误。\n\n天使\n\n- 修复了与黑影交互的问题：当光束施加于处于隐秘潜行状态的黑影时，光束未能正常淡出。\n\n莫伊拉\n\n- 修复了「美丽动人」精彩镜头在所有平台上均不显示莫伊拉身后窗户的错误。\n\n黑影\n\n- 已在先前的更新中修复——修复了与「收藏」中的「随机」交互后，黑影显示为无纹理的问题。\n\n禅雅塔\n\n- 修复了乱与谐有时无法持续附着于目标的问题。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2023-10-31-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:59:18+00:00",
+  "status": "draft",
+  "source_hash": "sha256:ab011be9dc88638c33dee946a0178e6580a3c15fac77e1f39b351f7213a6b8aa",
+  "kept_english": []
+ }
+}

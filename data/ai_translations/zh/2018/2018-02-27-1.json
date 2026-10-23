@@ -1,0 +1,384 @@
+{
+ "id": "ai-2018-02-27-1",
+ "site": "ai",
+ "date": "2018-02-27",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2018/02",
+ "title": "《守望先锋》补丁说明——2018年2月27日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "hero_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "doomfist",
+     "name_en": "Doomfist",
+     "name_cn": "末日铁拳",
+     "role": "tank",
+     "icon": null,
+     "dev_note": "这项改动将帮助末日铁拳更稳定地把武器融入连招之中。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Hand Cannon",
+       "name_cn": "手炮",
+       "slug": "hand-cannon",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "弹药恢复速度从每发 0.8 秒提高至 0.65 秒",
+         "before": 0.8,
+         "after": 0.65,
+         "by": -0.15,
+         "by_pct": null,
+         "metric": "ammo",
+         "raw_metric": "ammo recovery rate",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "mei",
+     "name_en": "Mei",
+     "name_cn": "美",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "延长美的减速持续时间，能帮助她冻结源氏或卢西奥这类特别灵活的目標。降低次要攻击的弹药消耗，让她能更安全地使用，而不必牺牲冻结敌人的能力。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Endothermic Blaster",
+       "name_cn": "冰霜冲击枪",
+       "slug": "endothermic-blaster",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冻结（减速）持续时间从 1 秒提高至 1.5 秒",
+         "before": 1.0,
+         "after": 1.5,
+         "by": 0.5,
+         "by_pct": null,
+         "metric": "duration",
+         "raw_metric": "duration",
+         "unit": "s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "武器次要攻击弹药消耗从 25 降低至 20",
+         "before": 25.0,
+         "after": 20.0,
+         "by": -5.0,
+         "by_pct": null,
+         "metric": "weapon alternate fire ammo cost",
+         "raw_metric": "weapon alternate fire ammo cost",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "sombra",
+     "name_en": "Sombra",
+     "name_cn": "黑影",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "这些针对黑影的改动，目标是让她的队友不再需要靠受到伤害、再用被入侵的急救包治疗自己，来尽快为她积攒终极技能。她的终极技能现在会更少出现，但黑客入侵能禁用的技能更多，因此使用时更有效。此前，相时而动只会在敌人生命值低于 50% 时激活，而现在该被动会显示所有受伤的敌人，这应能帮助黑影识别视线内的目标并将其击杀。总体而言，这些改动应能让她更有效，且更不依赖终极技能。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "EMP",
+       "name_cn": "电磁脉冲",
+       "slug": "emp",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "不再被小型物体阻挡（例如路牌）",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Hack",
+       "name_cn": "黑客入侵",
+       "slug": "hack",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "不再从急救包治疗中获得终极技能充能",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "施放时间从 0.8 秒降低至 0.65 秒",
+         "before": 0.8,
+         "after": 0.65,
+         "by": -0.15,
+         "by_pct": null,
+         "metric": "cast_time",
+         "raw_metric": "cast time",
+         "unit": "s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "现在会禁用以下技能：",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "源氏——灵",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "半藏——攀",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "法老之鹰——悬浮背包",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "卢西奥——治疗强化和速度强化（完全关闭当前乐曲）、滑墙",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "天使——天使降临",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Machine Pistol",
+       "name_cn": "自动手枪",
+       "slug": "machine-pistol",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "自动手枪散布从 3 降低至 2.7",
+         "before": 3.0,
+         "after": 2.7,
+         "by": -0.3,
+         "by_pct": null,
+         "metric": "machine pistol spread",
+         "raw_metric": "machine pistol spread",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Opportunist",
+       "name_cn": "相时而动",
+       "slug": "opportunist",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "敌人生命值低于 100% 时即可看到其生命条（原为 50%）",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "她透过墙壁侦测生命值在 50% 或以下敌人的能力保持不变",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Translocator",
+       "name_cn": "位移传动",
+       "slug": "translocator",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "持续时间从 15 秒提高至 20 秒",
+         "before": 15.0,
+         "after": 20.0,
+         "by": 5.0,
+         "by_pct": null,
+         "metric": "duration",
+         "raw_metric": "duration",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "地图更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "暴雪世界",
+     "body": "- 部分急救包的尺寸已缩小\n- 部分急救包的位置已更改\n- 已添加额外急救包",
+     "dev": "急救包是《守望先锋》中的宝贵资源，围绕它们进行站位对于防守时守住阵地或进攻时保持势头至关重要。我们移动了部分急救包的位置并添加了额外急救包，以改善暴雪世界中的游戏体验。"
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "用户界面更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "mercy",
+     "name_en": "Mercy",
+     "name_cn": "天使",
+     "role": "support",
+     "icon": null,
+     "dev_note": "这有助于减少天使玩家使用终极技能时屏幕上的杂乱信息",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Valkyrie",
+       "name_cn": "女武神",
+       "slug": "valkyrie",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "除非敌人已受到伤害，否则不再显示其生命条",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 修复了在街机先锋中于阿努比斯神殿进行比赛时，生涯概况有时无法显示攻防作战统计数据的问题",
+     "dev": null
+    },
+    {
+     "title": "地图",
+     "body": "- 修复了暴雪世界中有时无法触发播报语音的问题",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2018-02-27-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:48:07+00:00",
+  "status": "draft",
+  "source_hash": "sha256:fd03889463b60673a5903e1957a8b359606e19997689ff5d189d92c9ba4d06cb",
+  "kept_english": []
+ }
+}

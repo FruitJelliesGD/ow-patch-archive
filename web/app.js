@@ -9,7 +9,7 @@ const ATTR_LABEL = {
   health: "生命值", ultimate_cost: "终极技能消耗", move_speed: "移动速度",
   base_stat: "基础属性", other: "其他",
 };
-const SITE_LABEL = { en: "英文站", cn: "中文站" };
+const SITE_LABEL = { en: "英文站", cn: "中文站", ai: "AI翻译" };
 // mirror of src/ow2_patch/modes.py MODE_LABELS
 const MODE_LABEL = {
   standard: "常规", quick_play_hacked: "快速比赛：黑客入侵", april_fools: "愚人节",
@@ -75,6 +75,38 @@ async function fetchJSON(path) {
     pending.catch(() => JSON_CACHE.delete(path));
   }
   return JSON_CACHE.get(path);
+}
+
+/* AI translations are an optional, non-official overlay: data/ai_translations/
+ * holds the index and localized patch JSON. A missing or broken index must never
+ * affect the official EN/CN pages, so every read degrades to an empty map. */
+const AI_BASE = "data/ai_translations/";
+const aiBySource = new Map();
+let aiIndexPromise = null;
+
+function loadAiIndex() {
+  if (!aiIndexPromise) {
+    aiIndexPromise = fetchJSON(AI_BASE + "index.json")
+      .then((data) => {
+        for (const item of data.translations || []) {
+          if (item && item.source_patch_id) aiBySource.set(item.source_patch_id, item);
+        }
+        return aiBySource;
+      })
+      .catch(() => aiBySource);
+  }
+  return aiIndexPromise;
+}
+
+function aiFor(patch) {
+  if (!patch) return null;
+  return aiBySource.get(patch.patch_id_en) || aiBySource.get(patch.id) || null;
+}
+
+function aiBadge(patch) {
+  return aiFor(patch)
+    ? '<span class="badge ai" title="AI 机器翻译，以英文原文为准">AI翻译</span>'
+    : "";
 }
 
 // SPA navigation state: the last rendered pathname+search, the promise of the
@@ -595,6 +627,7 @@ function renderTimeBrowser(patches, filterFn) {
           ${modeBadge(p.mode)}
           ${heroChangesBadge(p)}
           ${categoryBadges(p)}
+          ${aiBadge(p)}
           <span class="patch-entry-title">${esc(title || p.id)}</span>
           ${chars ? `<span class="patch-entry-chars">${Number(chars).toLocaleString()} 字</span>` : ""}`;
         list.appendChild(a);
@@ -842,6 +875,7 @@ async function initIndex() {
   jumpState.year = "";
 
   const data = await fetchJSON("data/patches_index.json");
+  await loadAiIndex();
   const updated = document.getElementById("updated");
   updated.textContent = fmtDate(data.updated) || "-";
   updated.title = "最新补丁日期（不是抓取时间）";
@@ -1895,7 +1929,7 @@ function buildLangSwitch(patchId, langs, active, context) {
       for (const [key, value] of context) params.set(key, value);
     }
     const a = document.createElement("a");
-    a.className = `lang-btn ${s === active ? "active" : ""}`;
+    a.className = `lang-btn ${s === active ? "active" : ""} ${s === "ai" ? "ai" : ""}`;
     a.href = `patch.html?${params.toString()}`;
     a.textContent = SITE_LABEL[s];
     if (s === active) a.setAttribute("aria-current", "page");
@@ -1922,7 +1956,8 @@ function buildOfficialLinks(meta, sites) {
 async function initPatch() {
   const params = new URLSearchParams(location.search);
   const id = params.get("id");
-  const lang = params.get("lang") === "en" ? "en" : "cn";
+  const langParam = params.get("lang");
+  const lang = langParam === "en" || langParam === "ai" ? langParam : "cn";
   if (!id) { location.href = "index.html"; return; }
 
   const index = await fetchJSON("data/patches_index.json");
@@ -1933,9 +1968,12 @@ async function initPatch() {
     return;
   }
 
+  await loadAiIndex();
+  const ai = aiFor(meta);
   const sites = meta.sites || [];
   const langs = sites.slice().sort((a, b) => (a === "cn" ? -1 : 1));
-  const active = sites.includes(lang) ? lang : (langs[0] || "cn");
+  if (ai) langs.push("ai");
+  const active = (lang === "ai" && ai) ? "ai" : (sites.includes(lang) ? lang : (langs[0] || "cn"));
   if (document.documentElement) {
     document.documentElement.lang = active === "en" ? "en" : "zh-CN";
   }
@@ -1957,9 +1995,18 @@ async function initPatch() {
   // before the archive file is requested, so a missing side still lets the
   // reader switch to the other language instead of being stuck.
   document.getElementById("patch-date").textContent = meta.date;
+  const aiBadgeHtml = ai
+    ? '<span class="badge ai" title="AI 机器翻译，以英文原文为准">AI翻译</span>'
+    : "";
   document.getElementById("patch-sites").innerHTML =
-    siteBadges(sites) + modeBadge(meta.mode) + categoryBadges(meta);
-  document.getElementById("patch-title").textContent = meta.title_cn || meta.title_en || id;
+    siteBadges(sites) + aiBadgeHtml + modeBadge(meta.mode) + categoryBadges(meta);
+  document.getElementById("patch-title").textContent =
+    active === "ai" ? (ai.title || meta.title_en || id) : (meta.title_cn || meta.title_en || id);
+  const aiNote = document.getElementById("patch-ai-note");
+  if (aiNote) {
+    aiNote.hidden = active !== "ai";
+    aiNote.textContent = "本页为 AI 机器翻译，非官方中文；内容与数值以英文原文为准。";
+  }
   buildLangSwitch(id, langs, active, filterContext);
   buildOfficialLinks(meta, sites);
 
@@ -1968,8 +2015,10 @@ async function initPatch() {
     `${meta.date} · ${title} · 守望先锋补丁`,
     `${meta.date} 守望先锋补丁说明：${title}`);
 
-  const patchId = active === "en" ? meta.patch_id_en : meta.patch_id_cn;
-  const file = patchFileFor(patchId, active);
+  const patchId = active === "ai"
+    ? (ai && ai.ai_patch_id)
+    : (active === "en" ? meta.patch_id_en : meta.patch_id_cn);
+  const file = active === "ai" && ai ? `${AI_BASE}${ai.file}` : patchFileFor(patchId, active);
   let patch;
   try {
     if (!file) throw new Error(`无法识别的补丁编号：${patchId || "(缺失)"}`);
@@ -1989,7 +2038,7 @@ async function initPatch() {
   }
 
   document.getElementById("patch-title").textContent = patch.title;
-  setPatchMeta(titleOf(patch));
+  setPatchMeta(`${titleOf(patch)}${active === "ai" ? "（AI翻译）" : ""}`);
   await loadHeroIconSet();
 
   // official post-publication edits badge

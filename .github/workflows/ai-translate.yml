@@ -1,0 +1,84 @@
+name: ai-translate
+
+on:
+  workflow_run:
+    workflows: [monitor, monitor-fast, watchdog]
+    types: [completed]
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "最多翻译多少篇（0 = 不限制）"
+        required: false
+        default: "10"
+      since_days:
+        description: "只处理最近 N 天的新补丁（留空 = 全部历史）"
+        required: false
+        default: "14"
+      model:
+        description: "模型（默认 deepseek-chat）"
+        required: false
+        default: "deepseek-chat"
+      dry_run:
+        description: "只打印计划，不调用 API"
+        required: false
+        type: boolean
+        default: false
+  schedule:
+    # 兜底：monitor 工作流偶尔不会触发 workflow_run 时，每天补一次
+    - cron: "17 5 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ai-translate
+  cancel-in-progress: false
+
+jobs:
+  translate:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install
+        run: pip install .
+
+      - name: Translate missing official-Chinese patches
+        env:
+          OWPATCH_API_KEY: ${{ secrets.OWPATCH_API_KEY }}
+          OWPATCH_API_BASE: ${{ vars.OWPATCH_API_BASE }}
+          OWPATCH_API_MODEL: ${{ vars.OWPATCH_API_MODEL }}
+          LIMIT: ${{ inputs.limit || '10' }}
+          SINCE_DAYS: ${{ inputs.since_days || '14' }}
+          MODEL: ${{ inputs.model || 'deepseek-chat' }}
+          DRY_RUN: ${{ inputs.dry_run || 'false' }}
+        run: |
+          if [ -z "$OWPATCH_API_KEY" ]; then
+            echo "OWPATCH_API_KEY is not configured; skipping AI translation."
+            echo "Set the repository secret to enable automatic backfill."
+            exit 0
+          fi
+          ARGS=(--missing --order newest --limit "$LIMIT" --model "$MODEL")
+          if [ -n "$SINCE_DAYS" ]; then
+            ARGS+=(--since-days "$SINCE_DAYS")
+          fi
+          if [ "$DRY_RUN" = "true" ]; then
+            ARGS+=(--dry-run)
+          fi
+          python tools/ai_translate.py run "${ARGS[@]}"
+
+      - name: Commit AI translations
+        if: hashFiles('data/ai_translations/zh/**') != ''
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/ai_translations
+          if ! git diff --cached --quiet; then
+            git commit -m "data: ai translations ($(date -u +%Y-%m-%dT%H:%MZ))"
+            git push
+          fi

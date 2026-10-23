@@ -1,0 +1,442 @@
+{
+ "id": "ai-2022-11-17-1",
+ "site": "ai",
+ "date": "2022-11-17",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2022/11",
+ "title": "《守望先锋》补丁说明——2022年11月17日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "守望先锋联赛锦标赛冠军传奇皮肤重制",
+   "role": null,
+   "description": "用皇家角斗士、达拉斯之夏和上海之夏传奇皮肤，为守望先锋联赛锦标赛冠军喝彩！这些皮肤可在限定时间内使用守望先锋联赛代币购买。",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "综合更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "竞技比赛与匹配",
+     "body": "我们会持续关注《守望先锋2》中竞技比赛与匹配的整体状况，无论对回归玩家还是新玩家都是如此。我们已在服务器端对玩家初始及后续的排位级别与分组判定进行了大量调校，其中许多调整在第二赛季开始时将更加明显。\n\n我们提高了预设职责模式中各个职责排队时间预估的精确度。",
+     "dev": null
+    },
+    {
+     "title": "防御矩阵",
+     "body": "音频转录功能已上线，面向部分国家的PC玩家限量推出。作为我们防御矩阵计划的一部分，音频转录让我们能够分析被举报玩家的临时语音聊天录音转录文本。玩家现在在每次游戏会话中首次进入语音聊天时，会看到一条通知，提示语音聊天可能会被录音。请务必在干扰性行为发生后尽快举报，以最大程度发挥此功能的效果。举报后，系统会使用临时音频录音，通过语音转文字程序生成文本文件转录。没有任何人会收听该临时音频录音，转录完成后录音会被迅速删除。仅针对公共语音频道（包括团队与比赛聊天）中的干扰性行为举报生成转录——小队「队伍」聊天不在此列。",
+     "dev": null
+    },
+    {
+     "title": "跨平台联机与辅助瞄准",
+     "body": "我们对跨平台联机（PC+主机）大厅中的辅助瞄准进行了调整。现在如果你参与跨平台联机游戏，除竞技比赛外的所有对局都会启用辅助瞄准。\n\n从我们的数据来看，许多队伍都是PC与主机玩家之间的跨平台联机队伍。这意味着如果你在主机上游戏并与PC玩家组队，你就是在为了和朋友一起玩而让自己接受糟糕的体验。此外，如果你的队伍以主机玩家为主，但其中一位朋友是PC玩家，你就不得不把这位PC玩家排除在外才能获得良好体验。\n\n我们想再次强调——目前辅助瞄准仅存在于主机平台。\n\n我们会密切关注此调整的上线情况，并在需要时迅速做出改动。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": "英雄更新",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "重装",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "d-va",
+     "name_en": "D.Va",
+     "name_cn": "D.Va",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e69a3d819fd46d0dcd1d9474c248a95e69519c20077c60e9de73a1e2d3acdbb6.png",
+     "dev_note": "在上一轮改动后，D.Va凭借改进后的防御矩阵所具备的顽强生存能力，显得过于致命。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Fusion Cannons",
+       "name_cn": "聚变机炮",
+       "slug": "fusion-cannons",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/29bd15ebb32c23483a59df18a79f71301b2128c05b2f8d0c052ab86e0715e07d.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "散布从3.5提高至3.75",
+         "before": 3.5,
+         "after": 3.75,
+         "by": 0.25,
+         "by_pct": null,
+         "metric": "spread",
+         "raw_metric": "spread",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Boosters",
+       "name_cn": "推进器",
+       "slug": "boosters",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/89d6beb25b21eacd5a181b96438436692d9ad403fcef19873e506f6d46ed37a3.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "命中伤害从25降低至15",
+         "before": 25.0,
+         "after": 15.0,
+         "by": -10.0,
+         "by_pct": null,
+         "metric": "impact damage",
+         "raw_metric": "impact damage",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Call Mech",
+       "name_cn": "呼叫机甲",
+       "slug": "call-mech",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/848d8cd24eb0327a023a564447d79dd8b367c21a378d328cd92896a21b775219.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "已于上次更新修复——呼叫机甲终极技能消耗降低12%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 12.0,
+         "metric": "fixed in last update- call mech ultimate cost",
+         "raw_metric": "fixed in last update- call mech ultimate cost",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "zarya",
+     "name_en": "Zarya",
+     "name_cn": "查莉娅",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d43075cba10cd711a129556142849587e78f1f55b0105d39a640da53ffa64e1b.png",
+     "dev_note": "早期玩家反馈认为查莉娅是5v5中最弱的单坦克之一，但她的高伤害潜力和屏障续航能力已被证明极其有效。对于对手而言，反馈表明这会让查莉娅的可乘之机显得非常有限，再结合她不断攀升的伤害潜力，令人难以应对。这些改动将降低屏障的续航能力，使她获取能量稍微更难，并为敌人提供更多时间对她造成伤害。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Particle Barrier",
+       "name_cn": "粒子屏障",
+       "slug": "particle-barrier",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2d462e28ae2fc60b3ef9c32702bbc88936885dd7d20746a31dd2e3c51c20f199.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "持续时间从2.5秒降低至2秒",
+         "before": 2.5,
+         "after": 2.0,
+         "by": -0.5,
+         "by_pct": null,
+         "metric": "duration",
+         "raw_metric": "duration",
+         "unit": "s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从10秒提高至11秒",
+         "before": 10.0,
+         "after": 11.0,
+         "by": 1.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      },
+      {
+       "name_en": "Projected Barrier",
+       "name_cn": "投射屏障",
+       "slug": "projected-barrier",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6e42984ee8329a50e9c2460ae2df7670d7be9846a093c336e4576d1eea1fb2f1.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "持续时间从2.5秒降低至2秒",
+         "before": 2.5,
+         "after": 2.0,
+         "by": -0.5,
+         "by_pct": null,
+         "metric": "duration",
+         "raw_metric": "duration",
+         "unit": "s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从10秒提高至11秒",
+         "before": 10.0,
+         "after": 11.0,
+         "by": 1.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "输出",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "genji",
+     "name_en": "Genji",
+     "name_cn": "源氏",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/190a3dd9a5a4c8daeff9ec4da861f43cb28116964e89dc7416da104d8fae9134.png",
+     "dev_note": "源氏从转向5v5中获益良多。改为单重装以及控制效果的减少，为源氏清除了许多障碍。不过，由于他在上线前并未活跃于主流环境，因此一直没有收到调校更新——这是基于我们尽量避免预防性调整的总体偏好而做出的有意决定。这些改动将使源氏更接近猎空和死神等其他奇袭输出英雄的水平。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Shuriken",
+       "name_cn": "气",
+       "slug": "shuriken",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8d0916035141abd9ab2bf72dbcfd0460b7a0019529e023d259ad4340890b34b3.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "最大弹药量从30降低至24",
+         "before": 30.0,
+         "after": 24.0,
+         "by": -6.0,
+         "by_pct": null,
+         "metric": "maximum ammo",
+         "raw_metric": "maximum ammo",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "伤害从29降低至27",
+         "before": 29.0,
+         "after": 27.0,
+         "by": -2.0,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "damage",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "junkrat",
+     "name_en": "Junkrat",
+     "name_cn": "狂鼠",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d3628dc64d78ca6dc2a8b509cf5a6fc417c0f5068d5f75d1f5c094be1f58ee4e.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Steel Trap",
+       "name_cn": "钢铁陷阱",
+       "slug": "steel-trap",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/425136ea32c08355f33df230d900a8cc8010ee7a2b27314f6a1e395bd78eb5aa.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "已于上次更新修复——触发时间从0.5秒提高至0.75秒",
+         "before": 0.5,
+         "after": 0.75,
+         "by": 0.25,
+         "by_pct": null,
+         "metric": "fixed in last update- arming time",
+         "raw_metric": "fixed in last update- arming time",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "已于上次更新修复——困住持续时间从3秒降低至2.5秒",
+         "before": 3.0,
+         "after": 2.5,
+         "by": -0.5,
+         "by_pct": null,
+         "metric": "fixed in last update- trapped duration",
+         "raw_metric": "fixed in last update- trapped duration",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "sombra",
+     "name_en": "Sombra",
+     "name_cn": "黑影",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f348c1704dc50c009ac8acf6912a5a77eaf2a3acdd34e56927190af9eb9145d1.png",
+     "dev_note": "在黑影重做后，她获得了更多伤害，以弥补黑客入侵技能封锁时间缩短的影响。对于一名能轻松进入敌方后排的奇袭英雄来说，这已被证明过于致命，尤其是在5v5中。此外，她不再能对已被黑客入侵的目标再次施放黑客入侵，因为反馈表明缩短后的冷却时间与隐秘潜行中的黑客入侵相结合，对许多玩家来说过于令人沮丧。这本质上是一个针对单个目标的冷却时间，使黑客入侵在可能入侵多个目标时保持当前4秒的冷却时间。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Hack",
+       "name_cn": "黑客入侵",
+       "slug": "hack",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3ebcefc44a278d93afa8339e7e8758e6d471566fdd122d20d9b8ab7269a12017.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "技能封锁持续时间从1.75秒降低至1.5秒",
+         "before": 1.75,
+         "after": 1.5,
+         "by": -0.25,
+         "by_pct": null,
+         "metric": "ability lockout duration",
+         "raw_metric": "ability lockout duration",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "在8秒效果持续期间，已被黑客入侵的敌人不再是黑客入侵的有效目标",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "对已被黑客入侵敌人的伤害倍率从40%降低至25%",
+         "before": 40.0,
+         "after": 25.0,
+         "by": -15.0,
+         "by_pct": null,
+         "metric": "hacked enemy damage multiplier",
+         "raw_metric": "hacked enemy damage multiplier",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "支援",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "kiriko",
+     "name_en": "Kiriko",
+     "name_cn": "雾子",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/24d1d7bf86c331b3d81b934442ed36fd0121f6815255c6f26f456127fb342d15.png",
+     "dev_note": "这个无敌状态窗口主要是为了避免在穿墙传送后因看不见的东西而瞬间死亡，但它最终持续得有点太长，导致在射击雾子时出现了一些困惑。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Swift Step",
+       "name_cn": "瞬",
+       "slug": "swift-step",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e6ed3a36c4ed15b2127d6ca74756b25e0db7cf33ce7e26d9a79fd821526f055f.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "无敌状态持续时间从0.4秒降低至0.25秒",
+         "before": 0.4,
+         "after": 0.25,
+         "by": -0.15,
+         "by_pct": null,
+         "metric": "invulnerability duration",
+         "raw_metric": "invulnerability duration",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 仅限 PC——音频混音的默认设置已更改为「录音室参考」\n- 修复了部分玩家即使经过多次排位级别更新后仍可能卡在青铜 5 的问题\n- 仅限主机——修复了部分主机玩家被强制启用 PC 界面的问题\n- 仅限主机——修复了主机上打开并关闭英雄动画后游戏可能卡死的错误\n- 仅限主机——修复了「捕获精彩镜头」无法从十字键左解除绑定的问题\n- 解决了多个导致排名和排序不准确的头号玩家榜问题\n- 处于满生命值状态时接受治疗的玩家，将不再在屏幕上看到治疗状态效果\n- 修复了玩家有时会被放入空对局的问题\n- 解决了玩家断线后无法重新加入其竞技比赛的错误\n- 修复了在聊天中输入文字可能会从英雄界面购买物品的错误\n- 名片界面中的「无名片」选项现在可以选择了\n- 修复了玩家显示的《守望先锋联赛》代币数量不正确、导致无法购买物品的显示问题。现在会显示玩家拥有的正确代币数量\n- 「避免队友」按钮不再被「最近玩家」列表遮挡\n- 修复了挑战「远视」无法正确追踪和/或完成的问题\n- 修复了挑战「伤害海绵」无法正确追踪和/或完成的问题\n- 解决了玩家屏幕变得模糊/失焦的情况\n- 修复了部分玩家缺少黑百合「黑寡妇」皮肤的问题\n- 对首次用户体验进行了多项视觉改进\n- 上次更新已修复——游玩治疗者时，训练机器人现在会正确隔墙显示",
+     "dev": null
+    },
+    {
+     "title": "地图",
+     "body": "渣客镇\n\n- 修复了地图中其他会导致部分情况下出现性能问题的区域",
+     "dev": null
+    },
+    {
+     "title": "英雄",
+     "body": "布丽吉塔\n\n- 修复了布丽吉塔的屏障在某些条件下会变为无敌的错误\n\n卡西迪\n\n- 卡西迪在夺旗游戏模式中使用战术翻滚时，现在会正确掉落旗帜\n\n末日铁拳\n\n- 上次更新已修复——修复了裂地重拳会被障碍物提前打断的错误\n- 上次更新已修复——修复了裂地重拳期间可以跳跃的错误\n\n源氏\n\n- 修复了源氏神话皮肤判定体积的问题\n- 上次更新已修复——修复了玩家在自定游戏中可以获得无限斩的问题\n\n半藏\n\n- 上次更新已修复——跳跃/攀不再摧毁可破坏物\n\n渣客女王\n\n- 命令怒吼和轰翻天现在会在夺旗游戏模式中正确掉落旗帜\n\n雾子\n\n- 修复了雾子可以使用瞬逃离地图边界的问题\n\n美\n\n- 已重新加入英雄阵容\n- 修复了美的冰墙的多个问题，这些问题曾导致玩家和弹道偶尔会穿过冰墙或从其上滑落\n\n天使\n\n- 音频团队调整了天使第一人称滑翔的音效，以处理部分玩家感到不适的频率\n\n莱因哈特\n\n- 上次更新已修复——修复了快速近身攻击不会挥动莱因哈特锤子的问题\n\n索杰恩\n\n- 索杰恩在夺旗模式中使用机动滑铲时不再能拾取旗帜\n\n黑影\n\n- 上次更新已修复——电磁脉冲不再能受到伤害加成\n\n托比昂\n\n- 上次更新已修复——修复了快速近身攻击不会挥动托比昂锤子的问题\n\n破坏球\n\n- 修复了感应护盾在某些情况下会导致你损失生命值的问题",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2022-11-17-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:52:46+00:00",
+  "status": "draft",
+  "source_hash": "sha256:74c83b2d1f964942f6b06bf7a163abfa504f115b1d37cd6cb088679dfdf4f12c",
+  "kept_english": []
+ }
+}

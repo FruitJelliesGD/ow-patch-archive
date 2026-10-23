@@ -1,0 +1,162 @@
+{
+ "id": "ai-2018-01-30-1",
+ "site": "ai",
+ "date": "2018-01-30",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2018/01",
+ "title": "《守望先锋》补丁说明——2018年1月30日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "补丁亮点",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "《魔兽世界：争霸艾泽拉斯》预购奖励",
+     "body": "预购《魔兽世界：争霸艾泽拉斯》数字典藏版，即可在《守望先锋》中获得多项魔兽主题奖励。用猎空的姿势在未来的战场上展现你的阵营自豪感；托比昂的部落与联盟主题语音；安度因、吉安娜、希尔瓦娜斯和萨鲁法尔的喷漆；以及库尔提拉斯和赞达拉的玩家图标。\n\n预购《魔兽世界：争霸艾泽拉斯》，请点击此处。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "junkrat",
+     "name_en": "Junkrat",
+     "name_cn": "狂鼠",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "狂鼠一直享受着双充能震荡地雷带来的灵活性，但在大范围内瞬间打出巨额伤害变得有些过于容易。经过此次改动，他依然能打出相近的伤害，但投掷时必须更加精准。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Concussion Mine",
+       "name_cn": "震荡地雷",
+       "slug": "concussion-mine",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在对距离爆炸中心较远的目标造成的伤害降低",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "mercy",
+     "name_en": "Mercy",
+     "name_cn": "天使",
+     "role": "support",
+     "icon": null,
+     "dev_note": "天使近期的重生改动让敌人有了更多反制手段，但她可以通过女武神施放重生，从而在很大程度上抵消了此前改动的影响。此外，我们削弱了女武神通过守护天使提供的机动性，并缩短了其持续时间，以整体降低该技能的强度。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Valkyrie",
+       "name_cn": "女武神",
+       "slug": "valkyrie",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "不再使重生立即完成",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "不再额外获得一次重生充能",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "激活女武神时守护天使获得的加速效果降低 50%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 50.0,
+         "metric": "the speed bonus guardian angel receives when activating valkyrie has been",
+         "raw_metric": "the speed bonus guardian angel receives when activating valkyrie has been",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "持续时间从 20 秒降低至 15 秒",
+         "before": 20.0,
+         "after": 15.0,
+         "by": -5.0,
+         "by_pct": null,
+         "metric": "duration",
+         "raw_metric": "duration",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "英雄",
+     "body": "- 修复了 D.Va 装备黑猫皮肤时面部和头发纹理无法加载的错误",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2018-01-30-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:46:28+00:00",
+  "status": "draft",
+  "source_hash": "sha256:d8e81fa9b06ddac83836cf7138230d85b9ae6744701c5609ae8963e3333b3099",
+  "kept_english": []
+ }
+}

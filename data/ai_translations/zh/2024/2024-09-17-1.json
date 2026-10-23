@@ -1,0 +1,629 @@
+{
+ "id": "ai-2024-09-17-1",
+ "site": "ai",
+ "date": "2024-09-17",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/09",
+ "title": "《守望先锋》补丁说明——2024年9月17日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "《守望先锋 2》×《魔兽世界》",
+   "role": null,
+   "description": "《守望先锋》与《魔兽世界》携手连通各个世界，带来传奇联动活动，一同加入这场庆典！9 月 17 日至 30 日，使用希尔瓦娜斯·风行者黑百合、巫妖王莱因哈特、萨尔禅雅塔和钻石麦格尼·托比昂传奇皮肤，以及灵感源自《魔兽世界》的标志性语音、姿势和全场最佳，尽享荣耀！立即游玩，最多可解锁 8 项免费奖励，体验这份魔法！",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "综合更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "预设职责未知英雄",
+     "body": "预设职责未知英雄是热门模式未知英雄的全新变体，但采用预设职责规则。选定职责后，你使用的英雄将随机从该职责的英雄中选出，且整场比赛中不会改变职责。\n\n- 预设职责未知英雄已加入非排位菜单。\n- 开放职责未知英雄已从非排位菜单移除。\n- 你仍可在自定游戏中创建开放职责未知英雄的自定游戏。",
+     "dev": null
+    },
+    {
+     "title": "死斗",
+     "body": "- 死斗已从非排位菜单移至街机先锋菜单，并将与其他死斗模式一同出现在每日轮换中。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "竞技更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "竞技竞逐",
+     "body": "竞技竞逐是在竞技比赛预设职责模式中于赛季末前后举行的限时活动。完成竞逐后，你将获得额外竞技点数以及名为「特签」的全新奖励。特签是一种装饰性奖励，会显示在大多数展示你名字的位置上，包括你的名牌、全场最佳精彩镜头、计分板和英雄选择界面。随着你在竞逐中抵达竞逐节点，特签也会升级。\n\n赢得一场比赛后，你将获得竞逐分数，并向下一竞逐节点推进。失败会扣除竞逐分数，但通常少于获胜所得，且抵达竞逐节点后便不会失去分数。\n\n共有 6 个竞逐节点，按完成顺序给予以下奖励：\n\n- 500 竞技点数\n- 特签\n- 1000 竞技点数\n- 高级特签\n- 1500 竞技点数\n- 精英特签\n\n你在竞逐中的进度在预设职责模式的所有职责间共享。在开放职责竞技比赛中不会获得竞逐进度。\n\n完成竞逐后，你的特签将升级，以展示你总共完成了多少次竞逐。\n\n排位级别重置后，特签将被移除。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 护甲每次命中的固定伤害减免从 10 降低至 7。",
+     "dev": "> 开发者评论：近期对护甲效果的增强，使有护甲英雄的生存能力提升幅度超出了我们对这一被动效果的预期，因此我们将其下调至折中数值。"
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "重装",
+   "role": null,
+   "description": "重装职责被动\n\n• 击退抗性从 40% 降低至 25%。",
+   "dev": "> 开发者评论：随着游戏环境的变化，这一击退抗性数值已调整过数次。随着朱诺加入阵容，并带来更多加速手段以帮助突进敌方队伍，我们希望让重装再次更容易受到位移影响。",
+   "heroes": [
+    {
+     "slug": "d-va",
+     "name_en": "D.Va",
+     "name_cn": "D.Va",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e69a3d819fd46d0dcd1d9474c248a95e69519c20077c60e9de73a1e2d3acdbb6.png",
+     "dev_note": "> 开发者评论：近期社区围绕 D.Va 有大量反馈。平均而言，她的表现并未超标，但相当难以被击杀。因此我们将她的一部分护甲转化为普通生命值，并将她的最大合计生命值减少 25 点护甲。鉴于护甲效果在同一补丁中遭到削弱，我们将持续关注这一改动的实际表现，并按需调整。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "机甲护甲生命值从 375 降低至 325。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 375.0,
+       "after": 325.0,
+       "by": -50.0,
+       "by_pct": null,
+       "metric": "mech armor health",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "机甲基础生命值从 200 提高至 225。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 200.0,
+       "after": 225.0,
+       "by": 25.0,
+       "by_pct": null,
+       "metric": "mech base health",
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "orisa",
+     "name_en": "Orisa",
+     "name_cn": "奥丽莎",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/20c12a10cfe0b5608f9eec63a74ecb0ccd18a114019bc77bb2765f87776e17ed.png",
+     "dev_note": "> 开发者评论：我们仍不希望奥丽莎在强固防御期间轻易追击敌人，因为在此期间你几乎无法反击，因此我们虽未完全移除移动速度惩罚，但已将其降低到奥丽莎使用时手感会好得多的程度。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Fortify",
+       "name_cn": "强固防御",
+       "slug": "fortify",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d697fa90726cf683222920822d2ee00a85e0420c6cbc6ec2365573f313d06357.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "移动速度惩罚从 20% 降低至 10%。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "roadhog",
+     "name_en": "Roadhog",
+     "name_cn": "路霸",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b6f4e837dc41e87d730f6b0fad3473e689c8bdcd1f732b97326ac08b0508f2ee.png",
+     "dev_note": "> 开发者评论：此次将路霸的资源恢复速率回调至先前数值，以提升其主要抗伤技能的续航能力。此前曾有多项调整削弱该技能强度，但考虑到路霸近期表现一直不佳，这些调整或许并无必要。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Take a Breather",
+       "name_cn": "呼吸器",
+       "slug": "take-a-breather",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9cb8d867671bf917a9ba5d4a28ab6cb6ceeb10de2813567fcad97aca32c58499.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "资源恢复速率从每秒 8 提高至每秒 10。",
+         "before": 8.0,
+         "after": 10.0,
+         "by": 2.0,
+         "by_pct": null,
+         "metric": "resource regeneration rate",
+         "raw_metric": "resource regeneration rate",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "sigma",
+     "name_en": "Sigma",
+     "name_cn": "西格玛",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9738e1687bf7064de3667169788ef1b5ea9cf1746a42753c767cf17c7cb67547.png",
+     "dev_note": "> 开发者评论：将超能之球的伤害从直接命中转移至爆炸部分，旨在提升空爆雷管在最大射程使用时的效果，并使其对紧密聚集的敌人更具威胁。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Hyperspheres",
+       "name_cn": "超能之球",
+       "slug": "hyperspheres",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b6b9f77a52419e542ae8e20afc12035443fb96b99cadb0765694a8f5b41eeb74.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "命中伤害从 25 降低至 15。",
+         "before": 25.0,
+         "after": 15.0,
+         "by": -10.0,
+         "by_pct": null,
+         "metric": "impact damage",
+         "raw_metric": "impact damage",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "爆炸伤害从 30 提高至 40。",
+         "before": 30.0,
+         "after": 40.0,
+         "by": 10.0,
+         "by_pct": null,
+         "metric": "explosion damage",
+         "raw_metric": "explosion damage",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "不再对自身造成伤害。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "输出",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "bastion",
+     "name_en": "Bastion",
+     "name_cn": "堡垒",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3a7dc6d45ce7a1e1c2d31bd4d88b4889c412b2003ad82d1fd8e41271952c1f68.png",
+     "dev_note": "> 开发者评论：降低散布旨在提升突击模式武器对小体型目标的有效射程，同时基本不改变其对大体型重装英雄的强度。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Configuration: Assault",
+       "name_cn": "强攻模式",
+       "slug": "configuration-assault",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5cf3fc40ec6eeee9716f66a934d9bf7f0803a924e72c12c5d1a6c74e57c933bd.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "散布从 2.2 度降低至 2 度。",
+         "before": 2.2,
+         "after": 2.0,
+         "by": -0.2,
+         "by_pct": null,
+         "metric": "spread",
+         "raw_metric": "spread",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Configuration Artillery",
+       "name_cn": "火炮模式",
+       "slug": "configuration-artillery",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/06c377aef476bfb21ee1dca3d4d1151f8a4131b388a5489f3dfce6fb232a2711.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "终极技能消耗降低 12%。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 12.0,
+         "metric": "ultimate_cost",
+         "raw_metric": "ultimate cost",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "cassidy",
+     "name_en": "Cassidy",
+     "name_cn": "卡西迪",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8d161c49df5a962ece9ceafc6500bea473d9dd3695b9e24e39d5be616295e6c5.png",
+     "dev_note": "> 开发者评论：我们通过缩短持续时间来降低阻碍效果的影响，因为这一控制效果可能成为玩家挫败感的重要来源。由于现在对手被阻碍期间，用武器跟进射击的时间更少，我们提高了闪光弹的爆炸伤害。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Flashbang",
+       "name_cn": "闪光弹",
+       "slug": "flashbang",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/47a593ad7f83394b011161e67a6f414e49f2221c5e014ea909fdcd9df4f94371.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "阻碍持续时间从 1.2 秒降低至 0.9 秒。",
+         "before": 1.2,
+         "after": 0.9,
+         "by": -0.3,
+         "by_pct": null,
+         "metric": "hinder duration",
+         "raw_metric": "hinder duration",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "爆炸伤害从 45 提高至 75。",
+         "before": 45.0,
+         "after": 75.0,
+         "by": 30.0,
+         "by_pct": null,
+         "metric": "explosion damage",
+         "raw_metric": "explosion damage",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Deadeye",
+       "name_cn": "神射手",
+       "slug": "deadeye",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/346cb576a19f978a7b2c52859c5639423f076d66ca740658da0d46955ab2c97d.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "终极技能消耗降低 10%。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 10.0,
+         "metric": "ultimate_cost",
+         "raw_metric": "ultimate cost",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "hanzo",
+     "name_en": "Hanzo",
+     "name_cn": "半藏",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3febc2e638ff56d8f0161ea278ac3116b5baf8c0328f1eded6b499552a0eccad.png",
+     "dev_note": "> 开发者评论：此改动恢复了半藏对 250 生命值英雄的一击爆头击杀能力，不过由于弹道尺寸更小，将需要更高的精准度，且现在蓄力射击更慢，以减少箭矢的发射频率。在尝试了第 9 赛季后半藏的近期改动后，我们认为若不进行大幅重做，一击击杀能力对这些狙击英雄（类似黑百合）的核心玩法手感而言过于重要。将可被一击击杀的英雄范围限制在较小范围（225 生命值及以下）虽为英雄对位增添了一些层次，但对双方而言都不是令人满意的折中方案。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Storm Bow",
+       "name_cn": "风暴弓",
+       "slug": "storm-bow",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1aa4358e8a1d423dd55669780908b856141a783d053224b629b064c66288469e.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "普通箭矢不再受全局弹道尺寸增加的影响。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "最大伤害从 120 提高至 125。",
+         "before": 120.0,
+         "after": 125.0,
+         "by": 5.0,
+         "by_pct": null,
+         "metric": "maximum damage",
+         "raw_metric": "maximum damage",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "完全蓄力时间从 0.72 秒提高至 0.87 秒。",
+         "before": 0.72,
+         "after": 0.87,
+         "by": 0.15,
+         "by_pct": null,
+         "metric": "time to fully charge",
+         "raw_metric": "time to fully charge",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "venture",
+     "name_en": "Venture",
+     "name_cn": "探奇",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4c5bad8535b648d9dcf4c369e0ab5b9d67685b8ddaee22139eaa63bc5c5a3183.png",
+     "dev_note": "> 开发者评论：作为一名高机动性的输出英雄，探奇并不需要像目前这样从被动中获得如此多的护盾生命值才能取得成功。尽管探奇是一名近战英雄，但其技能使其能够快速有效地拉近距离，同时不会受到太多伤害。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Explorer's Resolve",
+       "name_cn": "探险家的决心",
+       "slug": "explorer-s-resolve",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/708e991f86aa1890ff6c4f7eeca911393b17a79fc4f61e31e83627c10426ad43.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "每次使用技能获得的护盾生命值从 40 降低至 30。",
+         "before": 40.0,
+         "after": 30.0,
+         "by": -10.0,
+         "by_pct": null,
+         "metric": "shield",
+         "raw_metric": "shield health gained per ability",
+         "unit": "hp"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "支援",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "moira",
+     "name_en": "Moira",
+     "name_cn": "莫伊拉",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/90fa2b69a7b80ae6d57c9ea6f3387dd18dfc1728bdb26949d28a17b98dd4e5f7.png",
+     "dev_note": "> 开发者评论：在全体英雄生命值调整以及莫伊拉自身生命值降低之后，莫伊拉的终极技能感觉威胁性不够。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Coalescence",
+       "name_cn": "聚合射线",
+       "slug": "coalescence",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/23d3ef53fd21d04e7e7b137b38e87c61b3d65394393dc00759ceb65d406e37b9.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "每秒伤害从 70 提高至 85。",
+         "before": 70.0,
+         "after": 85.0,
+         "by": 15.0,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "damage per second",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "lifeweaver",
+     "name_en": "Lifeweaver",
+     "name_cn": "生命之梭",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/57d5014ab6034db9138f838e8450693b4a97ab3c54f85d594b199a8853e75ccb.png",
+     "dev_note": "> 开发者评论：棘刺箭雨持续开火时间的增加将让生命之梭拥有更强的伤害作用，并且这与他自动蓄力的治疗时机更加契合，有助于两者流畅衔接。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Thorn Volley",
+       "name_cn": "棘刺箭雨",
+       "slug": "thorn-volley",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2ff86a970fedb412a1166fddfbca13bbd08156043012608e538867f792fc1d78.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "最大弹药量从 80 提高至 100。",
+         "before": 80.0,
+         "after": 100.0,
+         "by": 20.0,
+         "by_pct": null,
+         "metric": "maximum ammo",
+         "raw_metric": "maximum ammo",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "zenyatta",
+     "name_en": "Zenyatta",
+     "name_cn": "禅雅塔",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9367143a32f3fc07781330a0b26c6f1087361204a2b7e4088d1daf26428273f2.png",
+     "dev_note": "> 开发者评论：随着游戏中目前加入了更多加速效果，禅雅塔（以及整体上更偏向消耗的阵容）由于机动性差且容易受到攻击而有所下滑。我们过去曾尝试提高他的生命值，但事实证明这存在问题，因此这次我们转而强化他玻璃大炮的特性。我们提高了他的伤害，这应该会改变击杀敌人所需射击次数的新临界点。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Destruction Orb",
+       "name_cn": "灭",
+       "slug": "destruction-orb",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5740abd7e5f0de513ebcb32b073f27ba8f5625804598d5762cefd0c7331c1437.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "伤害从 48 提高至 50。",
+         "before": 48.0,
+         "after": 50.0,
+         "by": 2.0,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "damage",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Orb of Discord",
+       "name_cn": "乱",
+       "slug": "orb-of-discord",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f416ae3c602c4f920551057176a3618441f943a0faea5e3cf77dc5db0e5128a5.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "对每个目标的冷却时间从 7 秒降低至 6 秒。",
+         "before": 7.0,
+         "after": 6.0,
+         "by": -1.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown per target",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "地图更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "攻防阵线",
+     "body": "- 攻防阵线中占领目标点后的快速复生已被移除。我们将在未来为攻防阵线寻找该机制的替代版本。\n- 在最终占领区域中，进攻方每占领一段区域，防守方的复生时间就会缩短 2 秒。",
+     "dev": null
+    },
+    {
+     "title": "闪点作战",
+     "body": "- 英雄离开出生室时获得的初始速度提升持续时间从 1 秒提高至 2 秒。\n- 速度提升效果的最大潜在持续时间从 5 秒提高至 6 秒。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 修复了玩家在挑战和升级进度统计中排队选择所有职责时无法获得进度的问题。\n- 修复了攀墙英雄可以无限抓边的问题。",
+     "dev": null
+    },
+    {
+     "title": "英雄",
+     "body": "**卡西迪**\n\n- 修复了神射手会错误地显示对拉玛刹造成致命一击的问题。\n\n**D.Va**\n\n- 修复了 D.Va 的推进器移动速度与加速技能以乘法叠加的问题。\n\n**生命之梭**\n\n- 修复了生命之梭的花瓣平台在与美的冰霜效果交互时仍会继续上升的问题。\n- 修复了生命之梭的花瓣平台放置在移动物体上时会水平移动的问题。\n\n**西格玛**\n\n- 修复了西格玛的引力乱流百分比生命值伤害会受到伤害减免影响的问题。\n\n**秩序之光**\n\n- 修复了在受限制状态下使用传送面板时音频会持续沉闷的问题。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2024-09-17-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:52:41+00:00",
+  "status": "draft",
+  "source_hash": "sha256:bcdc41aa157e59da7bdfe812248aaf6fb4e54c59e0dbb7f0dc16e4529f7db6fc",
+  "kept_english": []
+ }
+}

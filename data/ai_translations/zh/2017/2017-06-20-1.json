@@ -1,0 +1,273 @@
+{
+ "id": "ai-2017-06-20-1",
+ "site": "ai",
+ "date": "2017-06-20",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2017/06",
+ "title": "《守望先锋》补丁说明——2017年6月20日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "补丁亮点",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "新攻防作战地图：地平线月球基地",
+     "body": "作为人类重启太空探索的第一步，地平线月球基地的目标是研究长期在外星居住对人类和猿类的影响。科学家们的研究成果一度极具前景……直到突然之间，与基地的所有联系和通讯都中断了。",
+     "dev": null
+    },
+    {
+     "title": "新传奇皮肤",
+     "body": "- 鬼源氏和警官D.Va已加入经典补给箱",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "自定游戏与游戏浏览器",
+   "role": null,
+   "description": "- 玩家重力和弹道重力现在可以修改\n- 任何具有击退效果的武器或技能的击退强度现在可以修改\n- 跳跃高度现在可以修改",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "cassidy",
+     "name_en": "Cassidy",
+     "name_cn": "卡西迪",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "麦克雷的终极技能如果蓄力时间足够长，可以造成大量伤害，但往往很难在被打断或击杀之前打出哪怕少量伤害。这些改动让该技能更灵活、更强大。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Deadeye",
+       "name_cn": "神射手",
+       "slug": "deadeye",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "目标现在会在0.2秒后开始锁定，而非0.8秒",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "前1.0秒内累积的伤害从20提高至80（1.0秒后的每秒伤害不变）",
+         "before": 20.0,
+         "after": 80.0,
+         "by": 60.0,
+         "by_pct": null,
+         "metric": "0 seconds",
+         "raw_metric": "0 seconds",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "reaper",
+     "name_en": "Reaper",
+     "name_cn": "死神",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "死神旧的治疗被动在你能连续击杀多名敌人时很有用。但由于需要敌人死亡才能生效，除非局势已经对你有利，否则帮助不大。他的新被动让他能立即从中获益，尤其是在对抗重装英雄时——这类目标通常体型更大、造成的伤害更低。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "The Reaping (Passive)",
+       "name_cn": "收割（被动）",
+       "slug": "the-reaping-passive",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "移除了生命球",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "现在将对英雄造成的所有伤害的20%转化为生命值",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "roadhog",
+     "name_en": "Roadhog",
+     "name_cn": "路霸",
+     "role": "tank",
+     "icon": null,
+     "dev_note": "与体型相近的角色相比，路霸的头部异常大，因此我们缩小了其尺寸以提高他的生存能力。爆裂枪的改动降低了他的钩子连招和次要攻击爆发伤害的潜力，同时保持其每秒伤害大致不变。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "头部命中判定体积缩小20%",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 20.0,
+       "metric": "head hitbox size",
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Scrap Gun",
+       "name_cn": "爆裂枪",
+       "slug": "scrap-gun",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "子弹伤害降低33%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 33.0,
+         "metric": "bullet damage",
+         "raw_metric": "bullet damage",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "射速提高30%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 30.0,
+         "metric": "fire rate",
+         "raw_metric": "fire rate",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "弹匣容量从4提高至5",
+         "before": 4.0,
+         "after": 5.0,
+         "by": 1.0,
+         "by_pct": null,
+         "metric": "clip size",
+         "raw_metric": "clip size",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "用户界面更新",
+   "role": null,
+   "description": "- 在社交菜单的小组部分高亮某位玩家，即可快速查看其最常使用的英雄摘要（显示的统计数据会根据模式/规则集动态变化）\n- 生涯概况中新增「所有模式」选项，玩家可查看所有游戏模式的合并统计数据\n- 生涯概况中新增「所有竞技赛季」选项，玩家可查看所有竞技比赛赛季的合并统计数据\n- 多个位置的「造成伤害」统计数据已替换为「对英雄造成伤害」\n- 生涯概况的统计部分新增「对屏障造成伤害」统计数据，以及「造成总伤害」统计数据，后者合并了对屏障和英雄造成的伤害\n- 平均值现在按每10分钟计算，而非按游戏场数计算\n- 比赛结束时不再显示「评价本场比赛」选项\n\n此外，旧统计数据是通过将造成的总伤害除以游戏场数计算的。这导致平均值无法准确反映实际表现，因为没有考虑游戏时长。新的平均值按每10分钟计算。",
+   "dev": "新的「对英雄造成伤害」统计数据与旧的「造成伤害」统计数据相同，但不包括对屏障造成的伤害，仅包括对英雄和放置物（例如托比昂的炮台）造成的伤害。该数值可在新的「对屏障造成伤害」或「造成总伤害」统计数据中查看。不过，由于「对英雄造成伤害」和「对屏障造成伤害」是全新的，其平均值将仅基于添加该统计以来的游戏时间计算。",
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 修复了玩家在火力全开槽完全填满后仍会失去进度的问题\n- 修复了玩家经历延迟后急救包重生计时器无法正确显示的 bug",
+     "dev": null
+    },
+    {
+     "title": "街机先锋",
+     "body": "- 修复了在淘汰模式比赛后，比赛结束画面中可能播放解说员「选择你的英雄」语音的 bug\n- 修复了淘汰模式比赛中，沉睡的敌人上方不显示 Z 的 bug",
+     "dev": null
+    },
+    {
+     "title": "竞技比赛",
+     "body": "- 修复了生涯概况中首场胜利显示为失败的 bug",
+     "dev": null
+    },
+    {
+     "title": "自定游戏与游戏浏览器",
+     "body": "- 修复了查看3v3淘汰预设时，部分设置无法在摘要中正确显示的 bug\n- 澄清了玩家在设置无效组合下尝试退出设置页面时出现的错误提示\n- 修复了在急救包被禁用后，夺旗和淘汰模式地图上仍显示急救包灯光的 bug\n- 修复了托比昂的护甲包技能在自定设置中被禁用后仍可生效的 bug",
+     "dev": null
+    },
+    {
+     "title": "英雄",
+     "body": "- 修复了玩家在被击晕后施放终极技能时，无法听到通常伴随终极技能播放的语音台词的问题\n- 修复了 D.Va 的机甲在召唤瞬间被击毁时，可能导致她卡住的问题\n- 修复了源氏在使用影后立即发动主要攻击时，音效无法播放的问题\n- 修复了奥丽莎在发射聚变驱动器时，移动速度不会降低的问题\n- 修复了奥丽莎「对保护感到满意」语音台词中的一处错别字\n- 修复了奥丽莎的超充能器被运载目标碾过时不会被摧毁的问题\n- 修复了莱因哈特火箭重锤动画速度异常，导致挥锤时手感迟钝的问题\n- 修复了路霸狂鼠皮肤描述中的一处错别字\n- 修复了处于隐秘潜行状态的黑影在特定距离内会被敌方玩家发现的问题\n- 修复了秩序之光装备维什卡或建筑师皮肤时，头发呈现不自然外观的问题\n- 修复了黑百合的抓钩与绿洲城飞行无人机交互异常的问题",
+     "dev": null
+    },
+    {
+     "title": "地图",
+     "body": "- 修复了沃斯卡娅工业区中，玩家坠崖身亡时冰块未显示为破碎状态的问题\n- 修复了玩家可在阿努比斯神殿抵达非预期位置的问题\n- 修复了黑影可在艾兴瓦尔德抵达非预期位置的问题",
+     "dev": null
+    },
+    {
+     "title": "用户界面",
+     "body": "- 修复了《风暴英雄》联动宣传头像在解锁后仍显示为锁定状态的问题\n- 修复了在观战一名玩家时尝试观战另一名新玩家，可能导致聊天窗口出现错误信息的问题\n- 修复了聊天窗口可能被放置在主菜单过高位置、遮挡菜单选项的问题\n- 修复了 UI 无法正确显示限时决斗比赛中哪些英雄不可用的问题。\n- 修复了举报玩家文本框中的文字无法自动换行的问题",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2017-06-20-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:47:13+00:00",
+  "status": "draft",
+  "source_hash": "sha256:9ea6f8f6d0ecbfd3f4b62668621879b80a533f640e1b512914ef14f3967f1576",
+  "kept_english": []
+ }
+}

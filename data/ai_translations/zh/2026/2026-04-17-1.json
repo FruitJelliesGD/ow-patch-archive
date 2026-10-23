@@ -1,0 +1,155 @@
+{
+ "id": "ai-2026-04-17-1",
+ "site": "ai",
+ "date": "2026-04-17",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/04",
+ "title": "《守望先锋》补丁说明——2026年4月17日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "平衡性在线修正更新",
+   "role": null,
+   "description": "本次为平衡性在线修正更新。2026 年 4 月 14 日补丁的回放代码仍可使用。",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "输出",
+   "role": "damage",
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "sierra",
+     "name_en": "Sierra",
+     "name_cn": "西拉",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9df12aa85763497cd054257ccab04ef055a6c4c39334bbed0cd513ddff5cb395.png",
+     "dev_note": "西拉自上线以来的表现未达预期。本次提高她的武器伤害以提升整体输出，同时提高追踪弹的伤害，让成功命中时获得更合理的回报。锚点无人机的改动提升了移动响应性与无人机生存能力，支持更具进攻性的打法。由于西拉的终极技能充能速度本就很快，再加上伤害输出提升，其终极技能消耗也相应提高。",
+     "general": [],
+     "perks": [
+      {
+       "name_en": "Medi-Drone",
+       "name_cn": "医疗无人机",
+       "status": "changed",
+       "lines_en": [
+        "Healing increased from 75 to 100."
+       ],
+       "lines_cn": [
+        "治疗量从 75 提高至 100。"
+       ]
+      }
+     ],
+     "abilities": [
+      {
+       "name_en": "Trailblazer",
+       "name_cn": "开路先锋",
+       "slug": "trailblazer",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4a300c381bac87785f406965cf94ef8d75ee2592bb07d867d50d1c738d8312c8.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "终极技能消耗提高 30%。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 30.0,
+         "metric": "ultimate_cost",
+         "raw_metric": "ultimate cost",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Helix Rifle",
+       "name_cn": "螺旋步枪",
+       "slug": "helix-rifle",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d12e2bc19f1619b71d13816c01ef96ad54bb6a7cb4ee00ae8bea8be3d2e2102d.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "每发弹丸伤害从 7 提高至 9。",
+         "before": 7.0,
+         "after": 9.0,
+         "by": 2.0,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "damage per projectile",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Tracking Shot",
+       "name_cn": "追踪弹",
+       "slug": "tracking-shot",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6c77d58daaeaae211088786b8bf9bff92178ef2df3f0ca6ec9a721d6b4258e55.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "每发弹丸伤害从 7 提高至 9。",
+         "before": 7.0,
+         "after": 9.0,
+         "by": 2.0,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "damage per projectile",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Anchor Drone",
+       "name_cn": "锚点无人机",
+       "slug": "anchor-drone",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f9e6fff99bff3c24a9ea9e57ae7c71b067982e6df9b0acb50529fe58131b6e7b.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "生命值从 30 提高至 80。",
+         "before": 30.0,
+         "after": 80.0,
+         "by": 50.0,
+         "by_pct": null,
+         "metric": "health",
+         "raw_metric": "health",
+         "unit": "hp"
+        },
+        {
+         "text_en": null,
+         "text_cn": "钩索移动速度从 20 提高至 22。",
+         "before": 20.0,
+         "after": 22.0,
+         "by": 2.0,
+         "by_pct": null,
+         "metric": "grapple move speed",
+         "raw_metric": "grapple move speed",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2026-04-17-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:55:49+00:00",
+  "status": "draft",
+  "source_hash": "sha256:100704f48edac71070a92e4b85ecd4433b18ffad0b8c9f60eecfe412cf3fedd3",
+  "kept_english": []
+ }
+}

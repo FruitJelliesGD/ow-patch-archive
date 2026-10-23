@@ -1,0 +1,166 @@
+{
+ "id": "ai-2021-10-12-1",
+ "site": "ai",
+ "date": "2021-10-12",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2021/10",
+ "title": "《守望先锋》补丁说明——2021年10月12日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "季节活动：2021 万圣夜惊魂",
+   "role": null,
+   "description": "-\n《守望先锋》万圣夜惊魂回归！\n\n-\n在这场令人毛骨悚然的游戏内活动中，用恐怖的新个性化物品扩充你的藏品，并在「狂鼠复仇」的惊悚故事中体验限时 PvE 乱斗。直面六项「狂鼠复仇」挑战的恐惧——这是对狂鼠博士邪恶计划的刁钻变奏。此外，游玩快速比赛、竞技比赛或街机先锋完成每周挑战，即可赢取一系列独特奖励！活动期间，解锁全新季节物品——包括「亡灵」莱因哈特、「萨提尔」卢西奥和「吸血鬼猎人」布丽吉塔等传奇皮肤——为历年不断丰富的藏品再添新物。",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "竞技团队死斗",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": null,
+     "body": "竞技团队死斗第 4 赛季已经开始！",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "综合更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": null,
+     "body": "- 调整了混响（或声学空间），以回应关于部分室内位置声音清晰度的反馈",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "mercy",
+     "name_en": "Mercy",
+     "name_cn": "天使",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/fa30ff8ebce0bfa8ffcf7a170773077c87eb7d581aec6d93ca63e1a49f2a58d5.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Guardian Angel",
+       "name_cn": "守护天使",
+       "slug": "guardian-angel",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e6d6f1f8288bb9a61fcfb85db90a49d3228277d18ac190898567bed4e7799ddc.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "守护天使现在只会飞向你瞄准的队友。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "守护天使会飞向你的光束目标（若有），否则会尝试使用你瞄准的队友。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "守护天使会飞向你瞄准的队友。若没有，则会尝试使用你的光束目标。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "在启用「守护天使切换：开」时按住守护天使的按键，现在会在找到有效目标后立即激活。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 我们做出了额外改动，以改进对局开始时对挂机玩家的检测，包括进攻方被强势防守逼回出生室的情况。\n- 修复了一个罕见错误，该错误可能导致玩家在重生计时结束、返回出生室之前立即死亡\n- 修复了一个导致语音预览的波形素材无法正常播放动画的错误",
+     "dev": null
+    },
+    {
+     "title": "地图",
+     "body": "釜山\n\n- 修复了一个允许秩序之光炮台穿过城区地图目标点周围单面碰撞体射击的错误\n\n漓江塔\n\n- 修复了一个导致夜市地图目标点附近部分第三人称音效听起来发闷的错误",
+     "dev": null
+    },
+    {
+     "title": "英雄",
+     "body": "安娜\n\n- 修复了一个导致装备「哈罗里斯」皮肤时，其瞄准镜准星效果显示不正确的错误\n\n艾什\n\n- 修复了一个导致她在某些不平整地形上时脚踝弯曲不自然的错误\n\n堡垒\n\n- 修复了一个「沙堡」皮肤描述中提及 2021 夏季运动会而非 2020 夏季运动的错误\n\nD.Va\n\n- 修复了一个在花村地图的战利品箱中预览「机甲启动」精彩镜头时居中不正确的错误\n\n回声\n\n- 修复了一个导致使用女武神技能时，数款天使皮肤的友方克隆视觉效果头发覆盖层无法显示的错误\n\n源氏\n\n- 修复了一个装备「太平洋全明星」源氏皮肤时，若技能提前取消，闪的音效不会结束的错误\n\n天使\n\n- 修复了一个可能导致目标快速移开时守护天使被取消的错误\n\n莱因哈特\n\n- 修复了一个允许莱因哈特在从高处落下时施放裂地猛击后进行额外跳跃的错误\n\n黑影\n\n- 修复了一个导致观战者以第三人称观战隐身黑影时无法看到她的错误\n\n秩序之光\n\n- 修复了一个导致光子屏障在视觉效果消失后仍继续阻挡伤害的错误\n\n托比昂\n\n- 修复了一个导致装备「铁甲」或「总工程师林德霍姆」皮肤时，热力过载姿势中锤子和铆钉枪同时出现的错误",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2021-10-12-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:50:20+00:00",
+  "status": "draft",
+  "source_hash": "sha256:f2cbdf770417bc2c970f9c889a460cebe0381eaa91d15efa6a10ae6a0cbd75fa",
+  "kept_english": []
+ }
+}

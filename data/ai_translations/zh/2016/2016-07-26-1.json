@@ -1,0 +1,173 @@
+{
+ "id": "ai-2016-07-26-1",
+ "site": "ai",
+ "date": "2016-07-26",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2016/07",
+ "title": "《守望先锋》补丁说明——2016年7月26日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "hero_update",
+   "title": "英雄平衡性更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "ana",
+     "name_en": "Ana",
+     "name_cn": "安娜",
+     "role": "support",
+     "icon": null,
+     "dev_note": "虽然安娜上线后反响很好，但整体表现略显偏弱。除了让她玩起来手感更好之外，这些改动还应当提升她的治疗量和伤害输出。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Biotic Rifle",
+       "name_cn": "生物步枪",
+       "slug": "biotic-rifle",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "射速提高 20%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 20.0,
+         "metric": "rate_of_fire",
+         "raw_metric": "rate of fire",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "弹匣容量从 8 提高至 10",
+         "before": 8.0,
+         "after": 10.0,
+         "by": 2.0,
+         "by_pct": null,
+         "metric": "magazine size",
+         "raw_metric": "magazine size",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "cassidy",
+     "name_en": "Cassidy",
+     "name_cn": "卡西迪",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "麦克雷最近的射程提升对他帮助很大，但在高手手中有些过强。这项改动会略微削弱他的远距离伤害，但仍比过去一段时间更强。其他改动结合起来，能让他在用闪光弹命中目标后打出更多次要攻击。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Peacemaker",
+       "name_cn": "和平捍卫者",
+       "slug": "peacemaker",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "伤害衰减距离降低 10 米",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "伤害衰减幅度不变",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "因此，即使有这项改动，麦克雷的有效射程仍高于上线时",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "射速提高 15%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 15.0,
+         "metric": "rate_of_fire",
+         "raw_metric": "rate of fire",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "恢复时间（即麦克雷再次开火前的时间）从 0.5 秒降低至 0.35 秒",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "英雄",
+     "body": "- 安娜麻醉镖的目标受到伤害后不再立即恢复（恢复时间现为 0.5 秒）",
+     "dev": null
+    },
+    {
+     "title": "用户界面",
+     "body": "- 修复了 ATI 显卡的 UI 兼容性问题\n- 修复了有时会导致卢西奥、美及其他模型仅部分渲染（或消失）的错误",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2016-07-26-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:43:18+00:00",
+  "status": "draft",
+  "source_hash": "sha256:3f7f83d8538ef927072b8ee3a718948592ea5b025e4e34f4ee679a6c35fd2195",
+  "kept_english": []
+ }
+}

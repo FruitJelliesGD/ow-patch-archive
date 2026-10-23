@@ -1,0 +1,369 @@
+{
+ "id": "ai-2019-12-10-1",
+ "site": "ai",
+ "date": "2019-12-10",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2019/12",
+ "title": "《守望先锋》补丁说明——2019年12月10日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "雪国仙境 2019",
+   "role": null,
+   "description": "又到了欢庆佳节的时节！\n\n《守望先锋》将在接下来的三周里进入节日氛围！扩充你的藏品，并享受三场冬季乱斗：雪球攻势、雪域狩猎，以及全新的雪球死斗！前往暴雪世界欣赏飘雪、闪耀的夜间灯光，以及令人垂涎的甜点主题装饰。\n\n当然，冬季补给箱里还有全新的礼物等你拆开！解锁全新的节日物品——包括霜寒西格玛、冰霜巨人末日铁拳、鼠王死神等传奇皮肤。在快速比赛、竞技比赛或街机先锋中取得胜利，完成每周挑战，赢取一系列节日奖励。别忘了登录游戏即可收集三款特殊的圣诞柴喷漆！\n\n点击此处了解更多关于雪国仙境的信息。",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "综合更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "新功能：「等待期间」",
+     "body": "在本次补丁中，我们将用名为「等待期间」的全新功能取代「乱斗」模式！现在，你可以在排队匹配时从多种游戏模式中进行选择。\n\n排队时，玩家将收到提示，从以下游戏模式中进行选择：\n\n- 训练靶场——独自或组队与训练机器人练习你的技巧\n- 乱斗——与其他玩家切磋，不计比分\n- 死斗——争夺记分板上的头名\n- 自定游戏——从自定游戏浏览器中选择一个自定游戏，或创建你自己的游戏。（如果你希望你的自定游戏对所有人开放，请务必选择设置：「允许正在匹配的玩家加入」。）\n\n所有「等待期间」游戏模式均为可选，单人玩家或队伍均可进入。只有你的队伍队长才能为队伍选择模式。\n\n注意：一场比赛结束后，你无需离开队列即可游玩另一个「等待期间」模式。要进入「等待期间」菜单，请点击你正在排队的游戏模式，然后从中选择一个「等待期间」选项。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "工坊更新",
+   "role": null,
+   "description": "- 自定游戏——训练靶场模式\n- 新的工坊值\n\n\n  - 游戏模式\n  - 当前游戏模式\n- 新的工坊设置\n\n\n  - 「允许正在匹配的玩家加入」：允许正在匹配的玩家加入所创建的自定游戏",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": "坚定不移（被动）击退抗性从 30% 提高至 50%\n\n生化之触治疗量从 4 降低至 3.25（80 生命值/秒 降低至 65 生命值/秒）\n\n防御矩阵冷却时间从 2 秒降低至 1.5 秒\n\n抓钩冷却时间从 10 秒提高至 12 秒\n\n热力过载冷却时间从 12 秒降低至 10 秒\n\n弹药量从 24 提高至 30",
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "orisa",
+     "name_en": "Orisa",
+     "name_cn": "奥丽莎",
+     "role": "tank",
+     "icon": null,
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "基础护甲从 200 提高至 250",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 200.0,
+       "after": 250.0,
+       "by": 50.0,
+       "by_pct": null,
+       "metric": "base armor",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "防护屏障生命值从 900 降低至 600",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 900.0,
+       "after": 600.0,
+       "by": -300.0,
+       "by_pct": null,
+       "metric": "protective barrier health",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "强固防御冷却时间从 10 秒降低至 8 秒",
+       "subject": null,
+       "dimension": "other",
+       "before": 10.0,
+       "after": 8.0,
+       "by": -2.0,
+       "by_pct": null,
+       "metric": "fortify cooldown",
+       "unit": "s"
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "sigma",
+     "name_en": "Sigma",
+     "name_cn": "西格玛",
+     "role": "tank",
+     "icon": null,
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Experimental Barrier",
+       "name_cn": "实验屏障",
+       "slug": "experimental-barrier",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "生命值从 1500 降低至 900",
+         "before": 1500.0,
+         "after": 900.0,
+         "by": -600.0,
+         "by_pct": null,
+         "metric": "health",
+         "raw_metric": "health",
+         "unit": "hp"
+        },
+        {
+         "text_en": null,
+         "text_cn": "屏障生命值恢复速度从每秒 150 降低至每秒 120 生命值",
+         "before": 150.0,
+         "after": 120.0,
+         "by": -30.0,
+         "by_pct": null,
+         "metric": "barrier",
+         "raw_metric": "barrier health regeneration rate",
+         "unit": "hp"
+        }
+       ]
+      },
+      {
+       "name_en": "Kinetic Grasp",
+       "name_cn": "动能俘获",
+       "slug": "kinetic-grasp",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从 13 秒降低至 10 秒",
+         "before": 13.0,
+         "after": 10.0,
+         "by": -3.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "伤害转化为护盾的比率从 40% 提高至 60%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "reinhardt",
+     "name_en": "Reinhardt",
+     "name_cn": "莱因哈特",
+     "role": "tank",
+     "icon": null,
+     "dev_note": "以上对护甲、奥丽莎、西格玛和莱因哈特的改动，旨在减少玩家用于攻击屏障的总时间，同时在其它方面提升这些英雄的个体表现。这是对游戏节奏的一次重大改动，我们将密切关注这些英雄，确保他们在重装定位中依然拥有有影响力的玩法。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Barrier Field",
+       "name_cn": "屏障力场",
+       "slug": "barrier-field",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "生命值从 2000 降低至 1600",
+         "before": 2000.0,
+         "after": 1600.0,
+         "by": -400.0,
+         "by_pct": null,
+         "metric": "health",
+         "raw_metric": "health",
+         "unit": "hp"
+        },
+        {
+         "text_en": null,
+         "text_cn": "移动速度惩罚从 50% 降低至 30%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "moira",
+     "name_en": "Moira",
+     "name_cn": "莫伊拉",
+     "role": "support",
+     "icon": null,
+     "dev_note": "莫伊拉的主要治疗已被证明过于强大，这主要是因为它能够治疗多个目标。",
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "d-va",
+     "name_en": "D.Va",
+     "name_cn": "D.Va",
+     "role": "tank",
+     "icon": null,
+     "dev_note": "在定位锁定机制下，D.Va 作为重装的影响力还有提升空间，因此我们部分回退了此前增加防御矩阵冷却时间的改动。",
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "widowmaker",
+     "name_en": "Widowmaker",
+     "name_cn": "黑百合",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "由于屏障的续航能力下降，黑百合在封锁长视野方面将更加有效。此改动削弱了她的机动性，使她仍能被合理反制。",
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "torbjorn",
+     "name_en": "Torbjörn",
+     "name_cn": "托比昂",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "托比昂的炮台被摧毁且热力过载已使用后，在持久的团战中会陷入困境。此改动让托比昂能够更频繁地依赖热力过载。",
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "genji",
+     "name_en": "Genji",
+     "name_cn": "源氏",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "随着英雄平均生存能力随时间提升，源氏有时难以完成对目标的击杀。放宽他的弹药限制将为他带来小幅提升。",
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "zarya",
+     "name_en": "Zarya",
+     "name_cn": "查莉娅",
+     "role": "tank",
+     "icon": null,
+     "dev_note": "查莉娅的总体输出处于良好水平，但在上一组改动后，次要攻击显得略弱。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Particle Cannon (Secondary Fire)",
+       "name_cn": "粒子炮（次要攻击）",
+       "slug": "particle-cannon-secondary-fire",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "爆炸半径从 2 米提高至 2.5 米",
+         "before": 2.0,
+         "after": 2.5,
+         "by": 0.5,
+         "by_pct": null,
+         "metric": "explosion radius",
+         "raw_metric": "explosion radius",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "弹药消耗从 25 降低至 20",
+         "before": 25.0,
+         "after": 20.0,
+         "by": -5.0,
+         "by_pct": null,
+         "metric": "ammo",
+         "raw_metric": "ammo cost",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 护甲伤害减免从 3 提高至 5",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 修复了玩家在击杀回放中观战队友时无法旋转视角的错误\n- 修复了未知英雄模式中比赛开始时进攻方会显示「准备防御」文字的错误\n- 修复了在快速比赛开始时尝试观战好友可能导致游戏客户端崩溃的错误\n- 修复了持续治疗类技能提供的最大生命值在引力乱流中计算错误的错误\n- 色盲模式——修复了使用红色以外的颜色时，受红外侦测影响的模型显示发白的问题\n- 工坊——修复了地图名称和下拉菜单显示大小写不正确的问题\n- 工坊——修复了玩家死亡事件中无法检测到 D.Va 的问题\n- 工坊——在查看房间设置时切换自定游戏房间热键，现在应能正确关闭界面\n- 自定游戏——将攻防作战/运载目标重命名为攻击/护送\n- 修复了具有生命值/护盾值再生能力的英雄在满生命值时受到伤害，却无法承受完整伤害的错误\n- 各种英雄技能（例如秩序之光的哨戒炮、路霸的链钩、西格玛的质量吸附、奥丽莎的站住别动等）现在会正确遵循自动售货机及其它此类道具的碰撞体积\n- 修复了高精确度鼠标输入导致切换蹲伏行为不一致的错误",
+     "dev": null
+    },
+    {
+     "title": "地图",
+     "body": "- 黑森林（1v1）——修复了死神可以通过暗影步穿过可破坏门的错误",
+     "dev": null
+    },
+    {
+     "title": "英雄",
+     "body": "末日铁拳\n\n- 使用高级准星设置时，默认圆圈现在会被隐藏\n- 修复了有时会导致末日铁拳的上勾重拳音效无法播放的错误\n- 修复了在自由混战模式中，裂地重拳有时会落到敌人头上的错误\n\n狂鼠\n\n- 修复了狂鼠的榴弹在陡坡上缓慢滚动时不会爆炸的错误\n\n卢西奥\n\n- 修复了导致卢西奥眼镜上的音频可视化效果消失的错误\n\n奥丽莎\n\n- 修复了在第三人称视角下，奥丽莎的停止弹道有时看起来会穿过地面的问题\n\n死神\n\n- 修复了允许玩家在使用暗影步时更换英雄的错误\n\n路霸\n\n- 修复了路霸的钩子无法对炮台和屏障造成伤害的错误\n\n西格玛\n\n- 修复了西格玛在部署实验屏障时被黑客入侵，导致其主火力无法运作的错误\n\n黑百合\n\n- 在黑百合已缩放时关闭切换缩放控制选项，不再会卡在缩放状态",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2019-12-10-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:54:03+00:00",
+  "status": "draft",
+  "source_hash": "sha256:96cfb044cf386c9d318c8e8986e6bb54c871f75770fdaae7a6d4e07dd82b8061",
+  "kept_english": []
+ }
+}

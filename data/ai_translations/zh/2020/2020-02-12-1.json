@@ -1,0 +1,233 @@
+{
+ "id": "ai-2020-02-12-1",
+ "site": "ai",
+ "date": "2020-02-12",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2020/02",
+ "title": "《守望先锋》补丁说明——2020年2月12日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": null,
+   "role": null,
+   "description": "-\n如需分享反馈，请前往[综合讨论](https://us.forums.blizzard.com/en/overwatch/c/general-discussion)论坛发帖。\n\n-\n如需查看已知问题列表，请访问我们的[错误报告](https://us.forums.blizzard.com/en/overwatch/c/bug-report)论坛。\n\n-\n如需故障排查帮助，请访问我们的[技术支持](https://us.forums.blizzard.com/en/overwatch/c/technical-support)论坛。",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "ana",
+     "name_en": "Ana",
+     "name_cn": "安娜",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b64f0b7062266a58b29a773476b31175aded9fcccfe4a0d86596dbe85f7739d2.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Biotic Rifle",
+       "name_cn": "生物步枪",
+       "slug": "biotic-rifle",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/efe0ebb135e87dc26b60f0d20500dcd7553ad121ab2b10cd4ffb5db17be9c977.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "[仅主机端更新] 友方弹道尺寸从 0.3 提高至 0.4",
+         "before": 0.3,
+         "after": 0.4,
+         "by": 0.1,
+         "by_pct": null,
+         "metric": "allied projectile size",
+         "raw_metric": "allied projectile size",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "brigitte",
+     "name_en": "Brigitte",
+     "name_cn": "布丽吉塔",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/cc43b7ecb12ebf262080d610ae3209849e304f82764bc3ba38508dd812d88e61.png",
+     "dev_note": "布丽吉塔除了为队伍提供高额功能性之外，还能输出大量治疗和护甲。我们降低了部分治疗和护甲，以帮助她与其他治疗英雄保持在同一水平。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Repair Pack",
+       "name_cn": "恢复包",
+       "slug": "repair-pack",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5f9f1e00af992f4a090cafc8e83821dd2848f22cb9e0205fafcedacb26bd7335.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "过量治疗护甲从 75 点护甲降低至 50 点护甲",
+         "before": 75.0,
+         "after": 50.0,
+         "by": -25.0,
+         "by_pct": null,
+         "metric": "armor",
+         "raw_metric": "armor over-heal",
+         "unit": "hp"
+        },
+        {
+         "text_en": null,
+         "text_cn": "每秒治疗量从 60 降低至 55",
+         "before": 60.0,
+         "after": 55.0,
+         "by": -5.0,
+         "by_pct": null,
+         "metric": "hps",
+         "raw_metric": "hps",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "symmetra",
+     "name_en": "Symmetra",
+     "name_cn": "秩序之光",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/961aa9d625d8104d6f466f63a907027e7083d161da9f02004d7d545c2a52440b.png",
+     "dev_note": "提高光子发射器的最大伤害，能让秩序之光在必要时于更安全的距离更有效地作战。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Photon Projector",
+       "name_cn": "光子发射器",
+       "slug": "photon-projector",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1b3f003d2ba6bba4f3d44f167cd1b03469c4e3c4d3900805b8adddffeedd2c56.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "伤害从 120 提高至 140",
+         "before": 120.0,
+         "after": 140.0,
+         "by": 20.0,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "damage",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Sentry Turret",
+       "name_cn": "哨戒炮",
+       "slug": "sentry-turret",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6ca1ad903ec0121026994bd2318dd5f2488ba40e5dbf5bdb2d5fad8474359253.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "[仅主机端更新] 哨戒炮每秒伤害从 34 降低至 30",
+         "before": 34.0,
+         "after": 30.0,
+         "by": -4.0,
+         "by_pct": null,
+         "metric": "turret dps",
+         "raw_metric": "turret dps",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "widowmaker",
+     "name_en": "Widowmaker",
+     "name_cn": "黑百合",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a90c4acb688e425a51164216e40e5e9bd8e82797d26d8db0441bcf5f508ae474.png",
+     "dev_note": "随着其他英雄的改动（例如屏障强度降低），黑百合随着时间推移变得更强。此改动旨在减慢她的射击速度，降低她的整体每秒伤害。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Widow's Kiss",
+       "name_cn": "寡妇之吻",
+       "slug": "widow-s-kiss",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/13a1e7903c23a5e140aa01fa930f585c1ea69e1e24378c0462f42053085f7ad9.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "开镜射击的完全蓄力时间从 0.75 秒提高至 0.9 秒",
+         "before": 0.75,
+         "after": 0.9,
+         "by": 0.15,
+         "by_pct": null,
+         "metric": "full charge time for scoped shots",
+         "raw_metric": "full charge time for scoped shots",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "wrecking-ball",
+     "name_en": "Wrecking Ball",
+     "name_cn": "破坏球",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c22df3c91a4fbc7f3f9689cd76f9fb86b52b2dfdf9f51c2158b4a9259a5f970d.png",
+     "dev_note": "此改动让破坏球的敌人能更快重新控制自己的移动，以尝试躲避攻击，使重力坠击连招的致命性略有降低。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Piledriver",
+       "name_cn": "重力坠击",
+       "slug": "piledriver",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3e884373721448d109c1646599cfe651a5bccdbc7a12d5062372c91b28acd80c.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "受影响玩家失去空中控制的时间从 1 秒降低至 0.5 秒",
+         "before": 1.0,
+         "after": 0.5,
+         "by": -0.5,
+         "by_pct": null,
+         "metric": "loss of air control",
+         "raw_metric": "loss of air control",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2020-02-12-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:54:06+00:00",
+  "status": "draft",
+  "source_hash": "sha256:98371153a39ab4b0224d1034e45e98c75068efe31a7d56e183372fb398652e26",
+  "kept_english": []
+ }
+}

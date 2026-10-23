@@ -1,0 +1,263 @@
+{
+ "id": "ai-2021-06-03-1",
+ "site": "ai",
+ "date": "2021-06-03",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2021/06",
+ "title": "《守望先锋》补丁说明——2021年6月3日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "hero_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "baptiste",
+     "name_en": "Baptiste",
+     "name_cn": "巴蒂斯特",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a4f09ac5528ea7c458223747a0b47144f1b6b1d2736fa3b67c18a8ab43d0d815.png",
+     "dev_note": "虽然使用手感更好了，但此前对动力战靴蓄力时间的缩短导致巴蒂斯特在面对某些英雄时变得过于灵活。由于他已经拥有愈合冲击和维生力场这两个强力的防御技能选项，我们将回调动力战靴跳跃的蓄力速度。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Exo Boots",
+       "name_cn": "动力战靴",
+       "slug": "exo-boots",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0d598afba5a03761d617d735d5435323c56108655b5017ddf8c36c4af36b9b73.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "蓄力时间从 0.7 秒提高至 1 秒",
+         "before": 0.7,
+         "after": 1.0,
+         "by": 0.3,
+         "by_pct": null,
+         "metric": "charge time",
+         "raw_metric": "charge time",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "echo",
+     "name_en": "Echo",
+     "name_cn": "回声",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ce8aec64726308d50cc0e4656d9bfe7647b886cc23830e0c80439cb92bfbdbcc.png",
+     "dev_note": "人格复制这一终极技能被证明比预期更具影响力，而且由于回声的高伤害输出，其充能速度也很快。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Duplicate",
+       "name_cn": "人格复制",
+       "slug": "duplicate",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/457d6ebcb2b92d1e7f7a7174b426903879e131422196825589adbc5e5d9f7efb.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "终极技能消耗提高 15%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 15.0,
+         "metric": "ultimate_cost",
+         "raw_metric": "ultimate cost",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "cassidy",
+     "name_en": "Cassidy",
+     "name_cn": "卡西迪",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a30fd337709bc9bd52781db34d754cd86825f021c27bcd9bc0e912cc5d88577b.png",
+     "dev_note": "麦克雷近期的出色表现很大程度上归功于其最大生命值的提高，我们认为这一改动效果良好，有助于巩固他中近距离的定位。我们将回调战术翻滚的距离和维和者的装弹时间，因为这两项改动会导致远距离闪光弹先手，并使「连发」的爆发伤害成为代价更低的投入。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Peacekeeper",
+       "name_cn": "维和者",
+       "slug": "peacekeeper",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/afb27d71eeb6f3635ac1ff236c7b3f9e3c6d017360ce022d5d384288ff95bce7.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "装弹时间从 1.2 秒提高至 1.5 秒",
+         "before": 1.2,
+         "after": 1.5,
+         "by": 0.3,
+         "by_pct": null,
+         "metric": "reload time",
+         "raw_metric": "reload time",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Combat Roll",
+       "name_cn": "战术翻滚",
+       "slug": "combat-roll",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/24a3f2f619859812bba6b6374513fa971b6b19ccb34950c02118b41cc4f93142.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "距离降低 20%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 20.0,
+         "metric": "distance",
+         "raw_metric": "distance",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "moira",
+     "name_en": "Moira",
+     "name_cn": "莫伊拉",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d58b00cca1ff4bea2f18c1715f7c79a58e60b457b3e5ee6d9a63599cf77e299b.png",
+     "dev_note": "许多引导型终极技能会在英雄短暂无法装弹期间自动为其武器装弹。新的回复速率将在聚合射线的完整持续时间内回复莫伊拉约一半的生化能量资源。这并不会在能量为空时完全回满莫伊拉的能量，因为如果玩家仅靠治疗就能在终极技能之间完成完整循环，那她这部分玩法就可惜地失去了。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Biotic Grasp",
+       "name_cn": "生化之触",
+       "slug": "biotic-grasp",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9721148061d528df7b3b5a90f746a82dc2b53b191add15e0962f8dcaf0777aa0.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "引导聚合射线期间，资源回复速度提高至三倍",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Coalescence",
+       "name_cn": "聚合射线",
+       "slug": "coalescence",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/23d3ef53fd21d04e7e7b137b38e87c61b3d65394393dc00759ceb65d406e37b9.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "终极技能消耗提高 17%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 17.0,
+         "metric": "ultimate_cost",
+         "raw_metric": "ultimate cost",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "reaper",
+     "name_en": "Reaper",
+     "name_cn": "死神",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b199eada68c7148fd0f03f3bca53fb98b28a2318603918e72a37b4aed0ef754e.png",
+     "dev_note": "此调整使死神使用地狱火霰弹枪的自我治疗回到近期武器数值调整之前的水平。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "The Reaping",
+       "name_cn": "收割",
+       "slug": "the-reaping",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/21fb34e5a009987c73f686336cd61d4e4b771a8a2d9b6753e62f65b41e6b6c51.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "生命汲取量从 30% 提高至 35%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "zarya",
+     "name_en": "Zarya",
+     "name_cn": "查莉娅",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/983bd1ba3146529209db5b9d3d851320537270859e8e1debbfffd848c4546398.png",
+     "dev_note": "此前光束命中判定改动后，查莉娅的基础伤害并未调整，但当时她的使用率也不高。如今她在多种队伍阵容中都有更强势的表现，因此我们考虑降低其光束的平均伤害，不过仍可达到相同的最大伤害。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Particle Cannon",
+       "name_cn": "粒子炮",
+       "slug": "particle-cannon",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/02aebadea29904eca48f514437522f9f3a52ea266e6c2b2688dad39641071bda.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "光束伤害现在为每秒 75-170 点，低于此前的 95-170 点",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2021-06-03-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:49:25+00:00",
+  "status": "draft",
+  "source_hash": "sha256:1734053eca701576f2d789bcb1ccc5bf2d09c62274228e52c08953d76ba97b1b",
+  "kept_english": []
+ }
+}

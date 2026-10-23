@@ -1,0 +1,358 @@
+{
+ "id": "ai-2017-05-23-1",
+ "site": "ai",
+ "date": "2017-05-23",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2017/05",
+ "title": "《守望先锋》补丁说明——2017年5月23日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "补丁亮点：",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "全新季节性活动：守望先锋周年庆",
+     "body": "我们举杯庆祝，向三千万响应号召加入《守望先锋》的英雄们致敬！即日起至6月12日，玩家可以收集超过100件周年庆主题奖励，并在街机先锋中游玩三张全新的竞技场地图——这一切都是为了庆祝我们共同为未来而战的第一年。穿上你最精美的皮肤，加入我们的庆典吧！\n\n欲了解更多信息，请点击此处。",
+     "dev": null
+    },
+    {
+     "title": "全新标准补给物品",
+     "body": "除了守望先锋周年庆活动中的新物品外，我们还为标准补给箱添加了新的好东西。黑影、奥丽莎和猎空都将获得全新的姿势，而死神则根据近期《起义》漫画中那个臭名昭著的耸肩动作，获得了数个新的解锁物品。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "综合",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "自定游戏与游戏浏览器",
+     "body": "- 为竞技场地图上的3v3和1v1淘汰模式添加了新的规则集\n- 为淘汰模式添加了英雄锁定、限定英雄池、决胜局和英雄揭示选项\n- 玩家现在可以在自定游戏中禁用辅助攻击和辅助武器\n- 你现在可以禁用秩序之光的一个终极技能，同时保持另一个处于激活状态",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "genji",
+     "name_en": "Genji",
+     "name_cn": "源氏",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "这是一项体验优化改动，让爬墙手感更好。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "移除了源氏爬墙技能的攻击延迟，使他爬墙结束后能立即与敌人交战",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "hanzo",
+     "name_en": "Hanzo",
+     "name_cn": "半藏",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "缩短半藏的拉弓时间提升了他的整体每秒伤害，同时也让他能更快地拉满弓，并在需要时更快地恢复全速移动。而且，和源氏爬墙的改动一样，这是一项体验优化改动，会让爬墙手感更好。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "移除了半藏爬墙技能的攻击冷却时间，使他爬墙结束后能立即与敌人交战",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Storm Bow",
+       "name_cn": "风暴弓",
+       "slug": "storm-bow",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "拉弓速度提高10%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "只要持续按住按键，拉满的箭矢在爬墙后仍会保持蓄力",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "orisa",
+     "name_en": "Orisa",
+     "name_cn": "奥丽莎",
+     "role": "tank",
+     "icon": null,
+     "dev_note": "为了帮助奥丽莎为队伍守住前线，我们缩短了她防护屏障的冷却时间。这一改动也让她在需要时能更轻松地重新部署屏障。为了平衡这一新的防御强度，我们降低了她聚变驱动器的伤害，因为该伤害感觉过高。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Fusion Driver",
+       "name_cn": "聚变驱动器",
+       "slug": "fusion-driver",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "伤害降低9%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 9.0,
+         "metric": "damage",
+         "raw_metric": "damage",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Protective Barrier",
+       "name_cn": "防护屏障",
+       "slug": "protective-barrier",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从12秒降低至8秒",
+         "before": 12.0,
+         "after": 8.0,
+         "by": -4.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "reaper",
+     "name_en": "Reaper",
+     "name_cn": "死神",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "幽灵形态通常被用作开火后的逃生技能。这一改动让死神在使用该技能被敌人追击时有一战之力。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Wraith Form",
+       "name_cn": "幽灵形态",
+       "slug": "wraith-form",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "使用幽灵形态时弹药现在会完全补满",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "reinhardt",
+     "name_en": "Reinhardt",
+     "name_cn": "莱因哈特",
+     "role": "tank",
+     "icon": null,
+     "dev_note": "士兵：76最近的状态好了很多，但与其他类似定位的英雄相比，他的伤害输出让他成为了必选英雄。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Earthshatter",
+       "name_cn": "裂地猛击",
+       "slug": "earthshatter",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "有效高度从3米降低至2米",
+         "before": 3.0,
+         "after": 2.0,
+         "by": -1.0,
+         "by_pct": null,
+         "metric": "effective height has been",
+         "raw_metric": "effective height has been",
+         "unit": "m"
+        },
+        {
+         "text_en": null,
+         "text_cn": "裂地猛击可以「攀爬」的物体高度阈值从3米降低至2米，使裂地猛击在地面推进时更不容易爬上高耸的物体。",
+         "before": 3.0,
+         "after": 2.0,
+         "by": -1.0,
+         "by_pct": null,
+         "metric": "has been",
+         "raw_metric": "has been",
+         "unit": "m"
+        }
+       ]
+      },
+      {
+       "name_en": "Soldier: 76",
+       "name_cn": "士兵：76",
+       "slug": "soldier-76",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "子弹伤害从20降低至19",
+         "before": 20.0,
+         "after": 19.0,
+         "by": -1.0,
+         "by_pct": null,
+         "metric": "bullet damage",
+         "raw_metric": "bullet damage",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 现在可以为安娜、麦克雷和黑百合禁用后坐力恢复瞄准补偿。该选项可在「选项」菜单的「控制」标签页下找到。只需在下拉菜单中选择相应的英雄，然后查找「英雄」部分即可",
+     "dev": "默认情况下，武器后坐力恢复会被准星向下移动所覆盖。这意味着在武器后坐力恢复阶段向下移动会覆盖武器的自然后坐力恢复。此选项允许你移除此功能，使武器的自然后坐力恢复动作独立于准星向下移动。实际效果是，如果你在后坐力恢复窗口期间向下瞄准，你的准星会移动得更快。"
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "用户界面更新",
+   "role": null,
+   "description": "- 你的最后一击现在会在消灭提示中以白色背景高亮显示\n- 为环境击杀和多个技能添加了新的消灭提示图标\n- 被天使复活的英雄现在会在消灭提示中高亮显示并按颜色区分\n- 某些类型的助攻，如麦克雷的闪光弹或禅雅塔的乱，现在会显示在消灭提示中\n- 新的控制器选项：强制键盘/鼠标用户界面",
+   "dev": "当PC玩家从使用键盘/鼠标切换到游戏控制器时，游戏的用户界面会动态更新为主机/控制器版本。此外，许多英雄（如半藏、禅雅塔和天使）的按键布局在主机上有所不同。过去，当玩家选择同时使用控制器和鼠标游玩时，UI会根据哪个设备向游戏发送信息而不断切换。这个新选项允许玩家在同时使用控制器和键盘/鼠标时设置默认用户界面。",
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 修复了在「全场最佳」播放期间无法听到语音台词的问题\n- 修复了在「全场最佳」播放期间护盾显示错误队伍颜色的问题\n\n- 修复了高分辨率截图捕获出现视觉问题的错误",
+     "dev": null
+    },
+    {
+     "title": "街机先锋",
+     "body": "- 修复了1v1神秘决斗开始前的介绍会被打断的错误\n- 修复了以小队形式加入自定游戏时队伍会被拆分的问题\n- 修复了淘汰模式中可能导致回合结束音乐突然中断的音频错误\n- 修复了自定游戏中以小队形式加入时队伍会被平均拆分的错误",
+     "dev": null
+    },
+    {
+     "title": "AI",
+     "body": "- 修复了机器人可能在伊利奥斯的井边卡住的错误",
+     "dev": null
+    },
+    {
+     "title": "自定游戏浏览器",
+     "body": "- 在自定游戏设置窗口中添加了滚动条，以便玩家在更改内容超出屏幕时仍能看到所有更改\n- 禁用主要攻击不再会禁用天使、D.Va和托比昂的辅助武器\n- 修复了导致冷却时间修改器对安娜的麻醉镖无效的错误\n- 修复了使用「无弹药需求」时某些武器停止播放音效的错误\n- 修复了以小队形式加入自定游戏时队伍会被拆分的错误",
+     "dev": null
+    },
+    {
+     "title": "竞技比赛",
+     "body": "- 修复了可能导致比赛结束时 30 秒和 60 秒语音提示无法播放的问题\n- 修复了休赛期期间阻止玩家根据竞技等级限制进行组队的问题",
+     "dev": null
+    },
+    {
+     "title": "英雄",
+     "body": "- 修复了导致卢西奥的治疗和加速歌曲光环投射不准确的问题\n- 修复了天使使用终极技能重生时乱法球未被移除的问题\n- 修复了奥丽莎的强固防御无法阻挡卢西奥音速扩音器辅助攻击的问题\n- 修复了当目标位于较高地形时，路霸的钩子无法将敌人拉至准星处的问题\n- 修复了奥丽莎的防护屏障在特定情况下无法部署的问题\n- 修复了影响部分显卡的问题，该问题导致装备法老之鹰的机甲女王和猛禽皮肤时显示的弹药数量不准确\n- 修复了可能导致两名冲锋中的莱因哈特无法互相击杀的问题\n- 修复了莱因哈特冲锋处于强固防御状态的奥丽莎时，自身受到两次伤害的问题\n- 修复了温斯顿的原始暴怒终极技能在被安娜的生物手雷命中时无法恢复其生命值的问题",
+     "dev": null
+    },
+    {
+     "title": "地图",
+     "body": "- 修复了猎空在教程中首次出现时移动异常的问题\n- 修复了伊利奥斯遗迹占领点柱子之间不对称的问题\n- 修复了黑影在努巴尼到达非预期位置的问题\n- 修复了玩家在66号公路到达非预期位置的问题\n- 修复了黑影在监测站：直布罗陀到达非预期位置的问题",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2017-05-23-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:44:56+00:00",
+  "status": "draft",
+  "source_hash": "sha256:3eb2052b067131e1887cb9f6114edce32de476f6f67caf9ff5724abb5315d9ba",
+  "kept_english": []
+ }
+}

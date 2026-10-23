@@ -1,0 +1,312 @@
+{
+ "id": "ai-2023-04-21-1",
+ "site": "ai",
+ "date": "2023-04-21",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/04",
+ "title": "《守望先锋》补丁说明——2023年4月21日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": "英雄更新",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "支援",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "lifeweaver",
+     "name_en": "Lifeweaver",
+     "name_cn": "生命之梭",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/57d5014ab6034db9138f838e8450693b4a97ab3c54f85d594b199a8853e75ccb.png",
+     "dev_note": "开发者评论：我们收到了反馈，称生命之梭的控制设置有很多不足之处，尤其是在手柄上。我们同意这一点，并更新了默认控制方案，同时为偏好旧布局的玩家新增了一个英雄选项。此外，我们新增了再次按下按钮即可取消花瓣平台的功能，与生命之树的运作方式类似，以帮助简化操作并减少显示的技能按钮数量。我们希望这些改动能让更多玩家轻松上手生命之梭。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "生命之梭的控制与选项已更改，并新增了默认控制方案：",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "回春疾行从技能 1 移至空中跳跃",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "花瓣平台从辅助攻击移至技能 1",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "花瓣平台现在可通过技能 1 输入手动摧毁",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "辅助攻击现在会自动切换至棘刺箭雨武器并开火，而在装备棘刺箭雨时，主要攻击会切换回愈疗灵花并开始蓄力",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "新增英雄选项：「使用手动武器切换控制方案」，可重新启用原有的武器切换控制方案，并更改回春疾行和花瓣平台的技能分配",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "新增英雄选项：「互动取消花瓣平台」，可重新启用互动输入来摧毁花瓣平台，并禁用技能 1 输入摧毁花瓣平台",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "将愈疗灵花和生命之握的瞄准灵敏度选项拆分，以便分别调整",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "通用",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "未使用武器的自动装填时间从 1.5 秒提高至 2.5 秒",
+       "subject": null,
+       "dimension": "other",
+       "before": 1.5,
+       "after": 2.5,
+       "by": 1.0,
+       "by_pct": null,
+       "metric": "automatic reload time for the inactive weapon",
+       "unit": "s"
+      }
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Healing Blossom",
+       "name_cn": "愈疗灵花",
+       "slug": "healing-blossom",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a3ccff02b44507df5c9bdaced0ecd56ac80b33285ad8a60e6c454acf90560579.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "弹药数从 12 提高至 20",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "在满蓄力保持 1 秒后，减速效果现在会稳定生效",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Thorn Volley",
+       "name_cn": "棘刺箭雨",
+       "slug": "thorn-volley",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2ff86a970fedb412a1166fddfbca13bbd08156043012608e538867f792fc1d78.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "弹道尺寸从 .125 降低至 .1",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "散布模式已调整，随机散布降低。每次射击的 2 发弹道中有 1 发现在会更靠近准星",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Tree of Life",
+       "name_cn": "生命之树",
+       "slug": "tree-of-life",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/105495a0c2ea708de307204b47c90915782256cffd83fc8dff8abcc508e0ef5a.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "生命值从 1000 提高至 1200",
+         "before": 1000.0,
+         "after": 1200.0,
+         "by": 200.0,
+         "by_pct": null,
+         "metric": "health",
+         "raw_metric": "health",
+         "unit": "hp"
+        },
+        {
+         "text_en": null,
+         "text_cn": "治疗脉冲从 50 提高至 75",
+         "before": 50.0,
+         "after": 75.0,
+         "by": 25.0,
+         "by_pct": null,
+         "metric": "healing",
+         "raw_metric": "healing pulse",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Parting Gift (Passive)",
+       "name_cn": "临别礼物（被动）",
+       "slug": "parting-gift-passive",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0dbb4211b1c8dbd0464a77de788627eb6b3249cd977b2ca61864947e4fe23139.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "临别礼物已移除",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "通用",
+     "body": "- 修复了在启用低画质设置时，猎空未出现在《守望先锋联赛》主题大厅中的问题。\n- 修复了玩家首次登录第四赛季时，第三赛季排位级别会被修改的问题。请注意，此补丁不会立即对已登录第四赛季的玩家生效。我们将在未来几天内为这些玩家进行修复。\n- 修复了青铜 5 的排位玩家会看到错误的下一分段进度百分比的问题。\n- 修复了若干边缘情况，即匹配系统对玩家评级的判断过于不确定，导致其评级升降速度快于预期。",
+     "dev": null
+    },
+    {
+     "title": "地图",
+     "body": "埃斯佩兰萨\n\n- 已在先前的更新中修复 - 修复了地图上允许玩家逃出可游玩空间的多个位置。",
+     "dev": null
+    },
+    {
+     "title": "英雄",
+     "body": "生命之梭\n\n- 修复了导致生命之梭镜头高度设置过低的问题。\n- 修复了花瓣平台判定体积在某些情况下错位的问题。\n- 花瓣平台的图标现在会正确显示状态和剩余持续时间。\n- 解决了从敌方花瓣平台施放生命之握时，可能将盟友拉至错误位置的问题。\n- 除非满足特定条件（例如使用某些终极技能或传送面板），生命之握现在会正确拉取目标。\n- 改进了生命之握在各种情况和位置下的安全检查。\n- 已在先前的更新中修复 - 修复了狂鼠弹道与休眠花瓣平台可能引发的崩溃问题。\n- 修复了生命之树放置在边缘时无法正确附着的问题。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2023-04-21-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:54:34+00:00",
+  "status": "draft",
+  "source_hash": "sha256:6dfc1f3e8fc585bd78cd40ba952370ed4c537b0cc44d961d0a68afdb970fc275",
+  "kept_english": []
+ }
+}

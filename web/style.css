@@ -125,6 +125,8 @@ main { max-width: 960px; margin: 0 auto; padding: 20px; }
 }
 .badge.en { background: rgba(79, 195, 247, 0.15); color: var(--en); }
 .badge.cn { background: rgba(243, 156, 58, 0.15); color: var(--cn); }
+/* AI translation overlay: non-official, distinct violet hue */
+.badge.ai { background: rgba(156, 116, 246, 0.18); color: #b39ddb; }
 .badge.kind { background: rgba(46, 197, 176, 0.12); color: var(--teal); }
 /* generic mode-badge fallback: unknown/future modes keep a background; the
    specific rules below override it (same specificity, later in the file) */
@@ -415,7 +417,14 @@ main { max-width: 960px; margin: 0 auto; padding: 20px; }
   border-color: var(--accent);
   background: rgba(79, 195, 247, 0.08);
 }
+.lang-btn.ai { border-color: rgba(156, 116, 246, 0.35); }
+.lang-btn.ai.active {
+  color: var(--text);
+  border-color: #b39ddb;
+  background: rgba(156, 116, 246, 0.12);
+}
 .patch-links a { display: inline-block; margin-right: 14px; font-size: 13px; color: var(--accent); }
+.ai-note { margin: 6px 0 0; font-size: 13px; color: var(--muted); }
 .perk-block { border-bottom: none; }
 
 /* patch detail: structure-preserved content + icons */

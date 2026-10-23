@@ -1,0 +1,228 @@
+{
+ "id": "ai-2023-06-28-1",
+ "site": "ai",
+ "date": "2023-06-28",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/06",
+ "title": "《守望先锋》补丁说明——2023年6月28日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": "英雄更新",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "输出",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "cassidy",
+     "name_en": "Cassidy",
+     "name_cn": "卡西迪",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8d161c49df5a962ece9ceafc6500bea473d9dd3695b9e24e39d5be616295e6c5.png",
+     "dev_note": "我们希望磁力手雷在使用时对瞄准和意图的要求稍微更高一些，尤其是在较远距离。以下调整也将为部分反应迅速的英雄提供更多反制手段，使其能够在手雷黏附前逃脱。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Magnetic Grenade",
+       "name_cn": "磁力手雷",
+       "slug": "magnetic-grenade",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/47a593ad7f83394b011161e67a6f414e49f2221c5e014ea909fdcd9df4f94371.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "索敌半径从 1.5 米降低至 1.3 米。",
+         "before": 1.5,
+         "after": 1.3,
+         "by": -0.2,
+         "by_pct": null,
+         "metric": "seeking radius",
+         "raw_metric": "seeking radius",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "追踪持续时间从 1 秒降低至 0.75 秒。",
+         "before": 1.0,
+         "after": 0.75,
+         "by": -0.25,
+         "by_pct": null,
+         "metric": "homing duration",
+         "raw_metric": "homing duration",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "mei",
+     "name_en": "Mei",
+     "name_cn": "美",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/08586dceed41e030d575b2b643118f55390f1c2af91dd15394528f5399fcc934.png",
+     "dev_note": "尽管现在美的主要攻击玩法感觉更有趣，但用伤害换取更多减速效果总体上对她的强度造成了负面影响。我们正将其中一部分强度重新转移到她的伤害上。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Endothermic Blaster",
+       "name_cn": "冰霜冲击枪",
+       "slug": "endothermic-blaster",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a935216c60c1c7d72502f373f4af24651c9eb6513781bc482c60ef4d551fb6b9.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "主要攻击施加的最大减速从 50% 降低至 40%。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "主要攻击每秒伤害从 55 提高至 70。",
+         "before": 55.0,
+         "after": 70.0,
+         "by": 15.0,
+         "by_pct": null,
+         "metric": "primary fire damage per second",
+         "raw_metric": "primary fire damage per second",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Deep Chill (Passive)",
+       "name_cn": "深度冻结（被动）",
+       "slug": "deep-chill-passive",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c14b2c5652526a006233965b176fb2b5af9e7c5d44045fad3844267303f07091.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "该效果触发时施加的最大减速从 75% 降低至 65%。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "支援",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "lifeweaver",
+     "name_en": "Lifeweaver",
+     "name_cn": "生命之梭",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/57d5014ab6034db9138f838e8450693b4a97ab3c54f85d594b199a8853e75ccb.png",
+     "dev_note": "生命之梭提供大量治疗和防御性功能，但在非近距离时，其进攻伤害输出的稳定性较为吃力。由于他通常希望将自己定位在离队友较远处，这些改动将使棘刺箭雨武器在瞄准精准时的爆发射击更有效地向敌方队伍施压。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Thorn Volley",
+       "name_cn": "棘刺箭雨",
+       "slug": "thorn-volley",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2ff86a970fedb412a1166fddfbca13bbd08156043012608e538867f792fc1d78.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "达到最大散布所需的弹丸数量从 0 提高至 20。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "最大弹药量从 70 提高至 80。",
+         "before": 70.0,
+         "after": 80.0,
+         "by": 10.0,
+         "by_pct": null,
+         "metric": "maximum ammo",
+         "raw_metric": "maximum ammo",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 修复了在上赛季获得竞技头衔后未解锁的错误。\n- 修复了音频方面导致「队伍语音」功能出现问题的错误，队友的报点现在应能更准确地反映其位置。\n- 在此前更新中修复——修复了「秀出你的力量」每周挑战中比赛场次要求不正确的错误。",
+     "dev": null
+    },
+    {
+     "title": "地图",
+     "body": "南极半岛\n\n- 修复了一处允许玩家逃出出生室的位置。\n- 修复了特定英雄处于某些区域时导致帧率性能过低的问题。\n\n帕拉伊苏\n\n- 修复了一处允许玩家逃出出生室的位置。\n- 修复了特定英雄处于某些区域时导致帧率性能过低的问题。\n\n监测站：直布罗陀\n\n- 在此前更新中修复——修复了进攻方出生室允许防守方进入的问题。",
+     "dev": null
+    },
+    {
+     "title": "英雄",
+     "body": "末日铁拳\n\n- 修复了火箭重拳在部分英雄使用技能期间可能不施加击退的错误。\n\n美\n\n- 在此前更新中修复——修复了若在比赛中更换英雄，美的辅助攻击不会对减速英雄造成额外伤害的错误。\n- 在此前更新中修复——修复了暴雪的一个问题：此前已被美的冰霜冲击枪冻结的敌人不会在暴雪中冻结/保持冻结。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2023-06-28-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:56:26+00:00",
+  "status": "draft",
+  "source_hash": "sha256:544cfd47ca7cac9b361fcfee79b1cd59091f63f8ff52bdea959c9a24ea920285",
+  "kept_english": []
+ }
+}

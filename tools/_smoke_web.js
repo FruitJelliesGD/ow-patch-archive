@@ -497,6 +497,19 @@ const run = new Function(
     results.langButtons = document.getElementById("lang-switch").children.length;
     results.patchSections = document.getElementById("patch-article").children.length;
 
+    // AI translation overlay: an EN-only legacy patch gets an extra tab, a
+    // non-official badge/notice, and Chinese body text; official patches stay 2 tabs.
+    location.search = "?id=en-2016-06-14-1&lang=ai";
+    await initPatch();
+    results.aiLangButtons = document.getElementById("lang-switch").children.length;
+    results.aiTitle = document.getElementById("patch-title").textContent;
+    results.aiBodyChinese = findHtml(document.getElementById("patch-article"), /卡西迪/)
+      && findHtml(document.getElementById("patch-article"), /维和者/);
+    results.aiNoticeVisible = !document.getElementById("patch-ai-note").hidden;
+    results.aiSiteBadge = /AI翻译/.test(document.getElementById("patch-sites").innerHTML || "");
+    results.aiBadgePlain = !/非官方/.test(document.getElementById("patch-sites").innerHTML || "");
+    results.aiLangLabel = (document.getElementById("lang-switch").children.slice(-1)[0] || {}).textContent || "";
+
     location.search = "?id=p-2026-08-11-1&lang=en";
     await initPatch();
     const modernBody = document.getElementById("patch-article");
@@ -673,6 +686,11 @@ const run = new Function(
     location.pathname = savedPath;
     history.lastUrl = savedLastUrl;
 
+    // AI overlay must also surface on the time browser as a passive badge.
+    location.search = "";
+    await initIndex();
+    results.indexAiBadge = findHtml(document.getElementById("patch-list"), /badge ai/);
+
     console.log(JSON.stringify(results, null, 1));
     // --- structural assertions (data-independent) ---
     if (results.indexPatches !== EXPECT.indexPatches) fail.push("indexPatches=" + results.indexPatches + " expected=" + EXPECT.indexPatches);
@@ -770,6 +788,14 @@ const run = new Function(
     if (results.entryMergedCount !== "17") fail.push("entry merged count=" + results.entryMergedCount);
     if (results.heroEntryCards !== EXPECT.heroEntryCards) fail.push("hero entry cards=" + results.heroEntryCards + " expected=" + EXPECT.heroEntryCards);
     if (results.langButtons !== 2) fail.push("langButtons=" + results.langButtons);
+    if (results.aiLangButtons !== 2) fail.push("aiLangButtons=" + results.aiLangButtons);
+    if (!/2016年6月14日/.test(results.aiTitle)) fail.push("aiTitle=" + results.aiTitle);
+    if (!results.aiBodyChinese) fail.push("AI patch body is not Chinese");
+    if (!results.aiNoticeVisible) fail.push("AI patch disclaimer missing");
+    if (!results.aiSiteBadge) fail.push("AI patch badge missing");
+    if (!results.aiBadgePlain) fail.push("AI badge still says 非官方");
+    if (results.aiLangLabel !== "AI翻译") fail.push("aiLangLabel=" + results.aiLangLabel);
+    if (!results.indexAiBadge) fail.push("index AI badge missing");
     if (!results.patchTitle) fail.push("empty patch title");
     if (!results.patchHasAvatar) fail.push("patch hero avatar missing");
     if (!results.patchHasChangeList) fail.push("patch change-list missing");

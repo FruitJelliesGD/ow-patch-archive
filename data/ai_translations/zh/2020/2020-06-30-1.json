@@ -1,0 +1,311 @@
+{
+ "id": "ai-2020-06-30-1",
+ "site": "ai",
+ "date": "2020-06-30",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2020/06",
+ "title": "《守望先锋》补丁说明——2020年6月30日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": null,
+   "role": null,
+   "description": "-\n如需分享反馈，请在 [General Discussion](https://us.forums.blizzard.com/en/overwatch/c/general-discussion) 论坛发帖。\n\n-\n如需查看已知问题列表，请访问我们的 [Bug Report](https://us.forums.blizzard.com/en/overwatch/c/bug-report) 论坛。\n\n-\n如需故障排除帮助，请访问我们的 [Technical Support](https://us.forums.blizzard.com/en/overwatch/c/technical-support) 论坛。",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "竞技比赛更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "竞技比赛加入开放职责",
+     "body": "从第 23 赛季开始，竞技比赛将同时支持预设职责和开放职责。两者为相互独立的队列，因此你不会遇到预设职责队伍与开放职责队伍对战的情况。开放职责拥有独立的 SR 和排行榜，与各职责的预设职责 SR 及排行榜相互独立。",
+     "dev": null
+    },
+    {
+     "title": "高 SR 玩家赛季定级的调整",
+     "body": "从第 23 赛季开始，玩家在完成每个赛季的定级赛后所能获得的最高竞技等级（SR）将被限制在 3900 SR。玩家仍会与水平相近的其他玩家匹配，因为我们希望尽可能保持对局的公平与乐趣。随着玩家在当前赛季参与更多对局，其 SR 会逐步提升，最终达到完全反映其当前水平的值。\n\n此改动旨在以更积极的方式解决此前 SR 衰减试图修复的诸多问题——奖励保持活跃并参与更多对局的玩家，而非惩罚对局数量不足的玩家。仅通过完成五场定级赛，已无法在赛季结束时获得极高的 SR。这也意味着，在 SR 极高的对局中，你可能会看到玩家之间的 SR 差距比以往赛季更大，因为两名水平相近的高水平玩家可能因本赛季参与对局数量不同而拥有不同的 SR。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "ashe",
+     "name_en": "Ashe",
+     "name_cn": "艾什",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e43bc239ddb5254f9df92f4c19cdf20a2df5be3f546af76c8a13da385bb9dcbd.png",
+     "dev_note": "随着近期对艾什武器的改进，她的总体输出显著提升。削弱延时雷管可以降低她的整体伤害，同时让她的伤害输出仍集中于步枪。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Dynamite",
+       "name_cn": "延时雷管",
+       "slug": "dynamite",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a326b202a821ab3e196d1faab6144460f470001b26a8b6f2ab96cb3af5f325b3.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从 10 秒提高至 12 秒",
+         "before": 10.0,
+         "after": 12.0,
+         "by": 2.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "brigitte",
+     "name_en": "Brigitte",
+     "name_cn": "布丽吉塔",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/cc43b7ecb12ebf262080d610ae3209849e304f82764bc3ba38508dd812d88e61.png",
+     "dev_note": "提供额外最大生命值是一项强大的技能，与恢复包的额外治疗结合时已被证明过于有效。布丽吉塔的屏障现在能在正面提供更多保护，使她能够承受更多定向火力，但屏障被摧毁后的真空期也会更长。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Repair Pack",
+       "name_cn": "恢复包",
+       "slug": "repair-pack",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5f9f1e00af992f4a090cafc8e83821dd2848f22cb9e0205fafcedacb26bd7335.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "不再提供额外的护甲生命值",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Barrier Shield",
+       "name_cn": "屏障护盾",
+       "slug": "barrier-shield",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2b1bb6338180161e55c5f2184879dce395eca9e58f974befe729293fcc3dfdca.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "最大生命值从 200 提高至 250",
+         "before": 200.0,
+         "after": 250.0,
+         "by": 50.0,
+         "by_pct": null,
+         "metric": "maximum health",
+         "raw_metric": "maximum health",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "恢复速率从每秒 100 点生命值降低至每秒 85 点生命值",
+         "before": 100.0,
+         "after": 85.0,
+         "by": -15.0,
+         "by_pct": null,
+         "metric": "regeneration rate",
+         "raw_metric": "regeneration rate",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "被摧毁后的冷却时间从 3 秒提高至 5 秒",
+         "before": 3.0,
+         "after": 5.0,
+         "by": 2.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown when destroyed",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "d-va",
+     "name_en": "D.Va",
+     "name_cn": "D.Va",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5d9b834a39e9306ec125dd8c77cdd62a351f8edef2d5dfe66d6cbb22594eae7e.png",
+     "dev_note": "这些加强旨在让 D.Va 的操作手感更流畅、更跟手。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Fusion Cannons",
+       "name_cn": "聚变机炮",
+       "slug": "fusion-cannons",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/29bd15ebb32c23483a59df18a79f71301b2128c05b2f8d0c052ab86e0715e07d.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "移动速度惩罚从 50% 降低至 40%",
+         "before": 50.0,
+         "after": 40.0,
+         "by": -10.0,
+         "by_pct": null,
+         "metric": "movement penalty",
+         "raw_metric": "movement penalty",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Defense Matrix",
+       "name_cn": "防御矩阵",
+       "slug": "defense-matrix",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3a98edf05de3697c0b63e52f5eb59ef635a1f6a29d7a62d6ab1f490e28991bfe.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从 1.5 秒降低至 1 秒",
+         "before": 1.5,
+         "after": 1.0,
+         "by": -0.5,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      },
+      {
+       "name_en": "Micro Missiles",
+       "name_cn": "微型飞弹",
+       "slug": "micro-missiles",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1787326d46d04aa10872fc30fe512ab3575781735110dfb178ff38da352facb7.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "激活延迟从 0.5 秒降低至 0.25 秒",
+         "before": 0.5,
+         "after": 0.25,
+         "by": -0.25,
+         "by_pct": null,
+         "metric": "activation delay",
+         "raw_metric": "activation delay",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "junkrat",
+     "name_en": "Junkrat",
+     "name_cn": "狂鼠",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6136346ab998d7db71f7b37974f54503d2d70b5537bf77a9faf6564cfeaa64e6.png",
+     "dev_note": "这些是为狂鼠带来的几项体验优化。这让一些震荡地雷跳跃重新成为可能——在此前提高其弹道速度后，这些跳跃曾一度无法完成。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Concussion Mine",
+       "name_cn": "震荡地雷",
+       "slug": "concussion-mine",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1d6135a3089363cf2c59d5157740cf5dc4ad572bc215553672a79812c397dbd2.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "触发延迟从 0.156 秒降低至 0.1 秒",
+         "before": 0.156,
+         "after": 0.1,
+         "by": -0.056,
+         "by_pct": null,
+         "metric": "trigger delay",
+         "raw_metric": "trigger delay",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "RIP-Tire",
+       "name_cn": "炸弹轮胎",
+       "slug": "rip-tire",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d16b5c6c337b1c0ecee3e5bf0760c870927e921fed8f0caed12dcb996b5347ae.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "引爆后重新控制狂鼠的时间从 1.5 秒降低至 0.9 秒",
+         "before": 1.5,
+         "after": 0.9,
+         "by": -0.6,
+         "by_pct": null,
+         "metric": "time to take control of junkrat post detonation has been",
+         "raw_metric": "time to take control of junkrat post detonation has been",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 修复了繁体中文（台湾）语系下补丁说明文字被截断的问题\n- 修复了特定英雄终极技能语音会同时播放友方和敌方版本的问题",
+     "dev": null
+    },
+    {
+     "title": "英雄",
+     "body": "艾什\n\n- 修复了小红帽皮肤兜帽上出现错误阴影的问题\n\n卢西奥\n\n- 修复了卢西奥在被击晕时仍可切换至治疗音乐的问题\n\n莱因哈特\n\n- 修复了烈焰打击对友方显示为隐形的问题\n\n路霸\n\n- 修复了路霸可以钩住巴蒂斯特的维生力场的问题\n\n破坏球\n\n- 修复了破坏球使用动力铁球伤害时能以远超预期的速度击中敌人的问题",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2020-06-30-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-flash",
+  "generated_at": "2026-10-23T14:35:41+00:00",
+  "status": "draft",
+  "source_hash": "sha256:8cf173afc4a98b00a07f3c90e9f910a0d1d13026218ed198b4dc6041db71f0cb",
+  "kept_english": []
+ }
+}

@@ -1,0 +1,241 @@
+{
+ "id": "ai-2021-01-12-1",
+ "site": "ai",
+ "date": "2021-01-12",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2021/01",
+ "title": "《守望先锋》补丁说明——2021年1月12日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "新地图：花村",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": null,
+     "body": "- **花村**，毗邻花村，是我们最新的自由混战地图！\n- 在由小巷、古老石墙、高耸钢铁与猫咪咖啡馆构成的刺激战场上为生存而战。在陶器店粉碎敌人的梦想，在虎之栖夜总会痛击对手，或是在城市中央的高塔上俯瞰群雄。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "花村挑战",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": null,
+     "body": "用花村挑战庆祝《守望先锋》最新地图的发布！截至1月25日，通过赢得比赛和在Twitch上观看《守望先锋》，赢取限时奖励，包括全新的狂教徒半藏皮肤。\n\n在《守望先锋》官网上了解更多关于[花村挑战](https://playoverwatch.com/kanezaka-challenge)的信息。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "综合更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "功能更新：回放查看器自定义观战选项",
+     "body": "- 为回放查看器添加了分离时间码UI选项",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "ashe",
+     "name_en": "Ashe",
+     "name_cn": "艾什",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e43bc239ddb5254f9df92f4c19cdf20a2df5be3f546af76c8a13da385bb9dcbd.png",
+     "dev_note": "艾什在30%伤害加成辅助下能够一枪爆头击杀200生命值的敌方英雄，这一能力变得过于强势，尤其是结合了她武器的其他改进之后。我们降低了她武器的最大伤害，同时也缩短了射击恢复时间，以保持她的总体输出相对不变。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "The Viper",
+       "name_cn": "毒蛇",
+       "slug": "the-viper",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/cca8472a3e966de2b9985cee492e527eac5063e9881797dded4ca1e32e292bc0.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "开镜伤害从80降低至75",
+         "before": 80.0,
+         "after": 75.0,
+         "by": -5.0,
+         "by_pct": null,
+         "metric": "aim-down-sights damage",
+         "raw_metric": "aim-down-sights damage",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "开镜恢复时间从0.7秒降低至0.65秒",
+         "before": 0.7,
+         "after": 0.65,
+         "by": -0.05,
+         "by_pct": null,
+         "metric": "aim-down-sights recovery time",
+         "raw_metric": "aim-down-sights recovery time",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "hanzo",
+     "name_en": "Hanzo",
+     "name_cn": "半藏",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/871d02150e9b67af02795b137ffc5133c1ff8a2a8d66340ca939f6216a539c9c.png",
+     "dev_note": "这一射速改动提升了岚技能的手感与效果，虽然幅度不大，但在射出5支箭的过程中会逐渐累积。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Storm Arrow",
+       "name_cn": "岚",
+       "slug": "storm-arrow",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/92c56621ba267d94f16baacda3f10ba7777b475935981b02e5026449d8e3d79c.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "射击恢复时间从0.3秒降低至0.25秒",
+         "before": 0.3,
+         "after": 0.25,
+         "by": -0.05,
+         "by_pct": null,
+         "metric": "shot recovery time",
+         "raw_metric": "shot recovery time",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "sigma",
+     "name_en": "Sigma",
+     "name_cn": "西格玛",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/72fd43c9d9f9f0d075a78db7a1dfe7766eef4d9c03e34c45b3ae6fe0f8634693.png",
+     "dev_note": "我们提高了西格玛屏障的冷却时间，以要求玩家在放置屏障时投入更多考量，并为对手创造更多反制手段。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Experimental Barrier",
+       "name_cn": "实验屏障",
+       "slug": "experimental-barrier",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ae2c31f159331f73739932e85dc21bdfa8eb4f2b2d2de4e89c1488445da34ffb.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "重新部署冷却时间从1秒提高至2.5秒",
+         "before": 1.0,
+         "after": 2.5,
+         "by": 1.5,
+         "by_pct": null,
+         "metric": "redeploy cooldown",
+         "raw_metric": "redeploy cooldown",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "wrecking-ball",
+     "name_en": "Wrecking Ball",
+     "name_cn": "破坏球",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c22df3c91a4fbc7f3f9689cd76f9fb86b52b2dfdf9f51c2158b4a9259a5f970d.png",
+     "dev_note": "在游戏整体伤害与群体控制被下调之后，破坏球的高机动性以及获得大量护盾生命值的潜力让他变得过于耐打。我们降低了他对每个目标生成的额外护盾量，但该技能基础的100点护盾保持不变。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Adaptive Shield",
+       "name_cn": "感应护盾",
+       "slug": "adaptive-shield",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/fa65af9c692405f968fafbeedcdfc9092b38a050dc3562bd41280390ccd7a21d.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "每个目标提供的护盾从100降低至75",
+         "before": 100.0,
+         "after": 75.0,
+         "by": -25.0,
+         "by_pct": null,
+         "metric": "shield",
+         "raw_metric": "shield per target",
+         "unit": "hp"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 修复了导致灵活职责奖励横幅无法立即显示的错误\n- 修复了死斗模式回合结束界面的错误，该错误会导致比赛结束时离开的玩家被排除在外\n- 修复了在生涯概况中将筛选条件设为「未解锁」时，成就分类出现错位的错误\n- 修复了导致跳跃落地音效无法正常播放的错误\n- 修复了长喷漆名称与UI元素重叠的错误\n- [已在受影响平台修复] 修复了当好友列表为空时，社交互动菜单出现无限加载图标的错误\n- [仅限PC] 修复了在窗口化或窗口化全屏模式下，鼠标光标始终聚焦于游戏客户端的错误",
+     "dev": null
+    },
+    {
+     "title": "英雄",
+     "body": "末日铁拳\n\n- 修复了「一拳」最佳镜头在特定地图上会穿入地面的错误\n\n源氏\n\n- 修复了源氏Contenders皮肤头像无法正常显示的错误\n\n狂鼠\n\n- 修复了「拆礼物」姿势在持续期间旋转镜头时动画无法正常显示的错误",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2021-01-12-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:48:30+00:00",
+  "status": "draft",
+  "source_hash": "sha256:f7ce4a0363608bde4b51826cfba3173588fd40cc16db18df9960e8768a3262f3",
+  "kept_english": []
+ }
+}

@@ -1,0 +1,195 @@
+{
+ "id": "ai-2017-10-17-1",
+ "site": "ai",
+ "date": "2017-10-17",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2017/10",
+ "title": "《守望先锋》补丁说明——2017年10月17日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "综合更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "社交互动",
+     "body": "- 玩家现在可以将自己的社交状态设置为在线、离开、忙碌或显示为离线（注意：显示为离线并不能阻止好友在与你进入同一场比赛时看到你）。该选项可在社交互动菜单中找到",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": "这种方式让重生在与女武神配合使用时更加灵活。例如，过去如果你想复活两名队友，必须先复活第一个目标，然后激活女武神（使重生的冷却时间重置），再复活另一个目标。经过此次改动，你现在可以激活女武神并快速飞入，瞬间复活两名目标。\n\n不过，这仍然会减少天使能够提供的重生总次数，因为女武神不再缩短其冷却时间。",
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "lucio",
+     "name_en": "Lúcio",
+     "name_cn": "卢西奥",
+     "role": "support",
+     "icon": null,
+     "dev_note": "近期的一次错误修复降低了卢西奥的滑墙速度。此次改动弥补了降低的速度。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Wall Ride",
+       "name_cn": "滑墙",
+       "slug": "wall-ride",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "卢西奥完成滑墙后获得的速度加成提高 65%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 65.0,
+         "metric": "the speed boost that lúcio receives after completing a wall ride has been",
+         "raw_metric": "the speed boost that lúcio receives after completing a wall ride has been",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "mercy",
+     "name_en": "Mercy",
+     "name_cn": "天使",
+     "role": "support",
+     "icon": null,
+     "dev_note": "女武神不再重置或缩短重生的冷却时间。取而代之的是，它现在会提供一个额外的「充能」，让你即使重生仍在冷却中也能复活一名盟友。如果女武神结束时该额外充能尚未使用，它将被移除。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Guardian Angel",
+       "name_cn": "守护天使",
+       "slug": "guardian-angel",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "玩家现在可以使用跳跃键滑过目标盟友",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "激活重生时不再重置冷却时间",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Valkyrie",
+       "name_cn": "女武神",
+       "slug": "valkyrie",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "不再重置或缩短重生的冷却时间",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "现在为玩家提供一个额外的重生充能",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "zenyatta",
+     "name_en": "Zenyatta",
+     "name_cn": "禅雅塔",
+     "role": "support",
+     "icon": null,
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "为邪教徒禅雅塔添加了若干额外语音",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "英雄",
+     "body": "- 修复了一个导致天使在取消守护天使时动量无法正确减缓的错误\n- 修复了一个导致黑影的南瓜头胜利姿势视觉效果无法正确显示的错误",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2017-10-17-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:45:56+00:00",
+  "status": "draft",
+  "source_hash": "sha256:8393a04f7496c076248c13b8969ecfb860049fb11226962f4c0c7929ca6889d4",
+  "kept_english": []
+ }
+}

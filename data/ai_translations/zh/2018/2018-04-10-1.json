@@ -1,0 +1,492 @@
+{
+ "id": "ai-2018-04-10-1",
+ "site": "ai",
+ "date": "2018-04-10",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2018/04",
+ "title": "《守望先锋》补丁说明——2018年4月10日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "补丁亮点",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "全新季节性活动：守望先锋行动档案 2018",
+     "body": "在守望先锋行动档案中体验历史上的关键时刻。与四名英雄组成队伍，参与以剧情驱动的合作任务，从全新视角了解守望先锋陷落之前的时代。\n\n今年，指挥黑爪特工，在激动人心的全新乱斗「惩罚行动」中迎战黑爪。玩家还将获得第二次机会，阻止智械叛乱——去年的「起义」任务回归，等待再战。游玩过程中你将获得行动档案补给，解锁基于守望先锋过往时刻的全新个性化物品，包括黑爪莫伊拉、天选者半藏、士兵：24死神、黑爪末日铁拳、实验体28温斯顿等传奇皮肤。\n\n如需了解更多关于守望先锋行动档案的信息，请点击此处。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "综合更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 玩家可以在生涯概况中通过下拉菜单选择「避免作为队友」",
+     "dev": "> 开发者评论：「避免作为队友」选项的加入让玩家能够打造自己的在线游戏体验。该功能最多可选择两名玩家。如果你对某位玩家使用了「避免作为队友」选项，匹配系统将在一周内不再把你和被避免的玩家匹配到同一队伍中。如需了解更多关于该功能的信息，请点击此处。"
+    },
+    {
+     "title": "举报菜单",
+     "body": "- 移除了「团队配合差」下拉菜单选项\n- 将「恶意捣乱」下拉菜单选项重命名为「游戏破坏」",
+     "dev": "> 开发者评论：由于玩家对举报表现不佳或消极游戏行为时最合适的类别感到困惑，我们将从举报系统中移除「团队配合差」选项。当玩家主动利用游戏机制或自身行为骚扰或干扰自己的队伍时，应改用「游戏破坏」选项。玩家不应仅仅因为表现不佳而被举报，因为每个人偶尔都会有发挥失常的一局。"
+    },
+    {
+     "title": "英雄",
+     "body": "- 黑影的「敌人被黑客入侵」表彰卡现在也会显示她的进攻助攻\n- 布丽吉塔的金色武器变体现在也会为她提供金色护盾\n- 更改了天使女武神的语音",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "brigitte",
+     "name_en": "Brigitte",
+     "name_cn": "布丽吉塔",
+     "role": "support",
+     "icon": null,
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Barrier Shield",
+       "name_cn": "屏障护盾",
+       "slug": "barrier-shield",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "在选项 > 控制 > 布丽吉塔下新增了「切换屏障」选项",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "d-va",
+     "name_en": "D.Va",
+     "name_cn": "D.Va",
+     "role": "tank",
+     "icon": null,
+     "dev_note": "> 开发者评论：D.Va 的爆发潜力略高，因此我们降低了她微型飞弹和推进器撞击的伤害。在此改动之前，每枚飞弹造成 3 点命中伤害和 6 点爆炸伤害。我们将爆炸伤害从 6 降低至 4，但命中伤害保持不变，最终结果是伤害降低 21%。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Micro Missiles",
+       "name_cn": "微型飞弹",
+       "slug": "micro-missiles",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "爆炸伤害从 6 降低至 4",
+         "before": 6.0,
+         "after": 4.0,
+         "by": -2.0,
+         "by_pct": null,
+         "metric": "explosive damage",
+         "raw_metric": "explosive damage",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Boosters",
+       "name_cn": "推进器",
+       "slug": "boosters",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "命中伤害从 25 降低至 10",
+         "before": 25.0,
+         "after": 10.0,
+         "by": -15.0,
+         "by_pct": null,
+         "metric": "impact damage",
+         "raw_metric": "impact damage",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "cassidy",
+     "name_en": "Cassidy",
+     "name_cn": "卡西迪",
+     "role": "damage",
+     "icon": null,
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "为救生员麦克雷添加了额外语音",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "mei",
+     "name_en": "Mei",
+     "name_cn": "美",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "> 开发者评论：此改动帮助美对抗聚集在一起的多个目标，并使她更容易在另一个敌人挡路时继续冰冻特定目标。此改动还帮助她的终极技能更稳定地冰冻敌方目标，尤其是当他们彼此靠近时。注意：虽然她的射击现在会穿透敌人，但仍不会穿透莱因哈特的屏障等屏障。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Endothermic Blaster",
+       "name_cn": "冰霜冲击枪",
+       "slug": "endothermic-blaster",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在可穿透敌人",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "reaper",
+     "name_en": "Reaper",
+     "name_cn": "死神",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "> 开发者评论：这些改动帮助死神更稳定地将幽灵形态用作逃生手段，同时也开辟了新的选择，例如追击关键目标。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Death Blossom",
+       "name_cn": "死亡绽放",
+       "slug": "death-blossom",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "使用后装填地狱火霰弹枪",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Wraith Form",
+       "name_cn": "幽灵形态",
+       "slug": "wraith-form",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "移动速度加成从 25% 提高至 50%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "现在可以通过按下 Shift 或主要攻击键取消该技能",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "moira",
+     "name_en": "Moira",
+     "name_cn": "莫伊拉",
+     "role": "support",
+     "icon": null,
+     "dev_note": "> 开发者评论：由于可见性问题，我们让莫伊拉的大部分视觉效果在越靠近镜头时越淡。我们还对聚合射线进行了修改，大幅提高敌方和友方在正对它时透过它看清画面的能力。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Biotic Grasp",
+       "name_cn": "生化之触",
+       "slug": "biotic-grasp",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "越靠近目标，透明度越高",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Coalescence",
+       "name_cn": "聚合射线",
+       "slug": "coalescence",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "其视觉效果越靠近玩家镜头，现在会变得越透明",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Fade",
+       "name_cn": "消散",
+       "slug": "fade",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "越靠近目标，透明度越高",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "zenyatta",
+     "name_en": "Zenyatta",
+     "name_cn": "禅雅塔",
+     "role": "support",
+     "icon": null,
+     "dev_note": "> 开发者评论：禅雅塔本应能够造成大量伤害，尤其是作为一名支援英雄，但他的辅助攻击爆发伤害略高。此改动保持总体伤害不变，但略微降低了每秒伤害，并使他在极远距离下更难命中多发攻击。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Orb of Destruction",
+       "name_cn": "灭",
+       "slug": "orb-of-destruction",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "辅助攻击的射速降低 15%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 15.0,
+         "metric": "secondary fire rate of fire",
+         "raw_metric": "secondary fire rate of fire",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 修复了玩家在移动的斜坡上奔跑时镜头移动会抖动的问题\n- 修复了出生室内的氧气罐和灭火器在受到伤害后无法被推动的问题",
+     "dev": null
+    },
+    {
+     "title": "AI",
+     "body": "- 修复了在攻防作战/运载目标地图上，比赛开始前机器人会试图跑出出生室的问题",
+     "dev": null
+    },
+    {
+     "title": "英雄",
+     "body": "- 修复了在装备守望先锋联赛皮肤时，安娜的副武器无法显示金色武器金色外观的错误\n- 修复了堡垒在进入坦克模式后无法立即发射弹丸的错误\n- 修复了堡垒在坦克模式变形期间不会被击退的错误\n- 修复了堡垒的敬酒胜利姿势中，盖尼米德的尾羽被裁切的错误\n- 修复了堡垒在哨戒模式换弹时受到伤害会导致加特林机枪枪管消失的错误\n- 修复了堡垒被困在查莉娅的重力喷涌中时，从侦察模式变形为哨戒模式不会播放动画或音效的错误\n- 修复了装备守望先锋联赛皮肤时，堡垒会喷出血液而非机油视觉特效的错误\n- 修复了布丽吉塔击中环境时不会播放冲击特效的错误\n- 修复了布丽吉塔使用能量盾击后瞄准会略微偏移的错误\n- 修复了布丽吉塔挥动火箭连枷时细节会脱落的错误\n- 修复了从补给箱中解锁时，布丽吉塔语音线图标上的英雄头像分辨率过低的错误\n- 修复了装备守望先锋联赛皮肤时，布丽吉塔护甲上的队伍名称会变形的错误\n- 修复了布丽吉塔使用捧腹大笑姿势时手会穿模进头部的错误\n- 修复了布丽吉塔的火箭连枷和近战音效在几次挥击后停止播放的错误\n- 修复了布丽吉塔的盾牌会喷出血液视觉特效的错误\n- 修复了布丽吉塔使用助威姿势时火箭连枷不会投射阴影的错误\n- 修复了布丽吉塔使用火箭连枷时，集结号令期间旗帜会消失并突然重新出现的错误\n- 修复了布丽吉塔的击掌喷漆躯干部位有透明方块的错误\n- 修复了布丽吉塔的 Excelsior 贴花在非预期区域碎裂的错误\n- 修复了布丽吉塔的 Defender 精彩镜头中脚、腿和盾牌会穿模进地面的错误\n- 修复了观战末日铁拳使用毁天灭地时玩家镜头会抖动的错误\n- 修复了靠近边缘站立时，末日铁拳的毁天灭地不会落在预告位置的错误\n- 修复了末日铁拳的毁天灭地可以进入非预期位置的错误\n- 修复了末日铁拳下降时毁天灭地会穿透倾斜表面的错误\n- 修复了末日铁拳的火箭重拳无法命中敌人的错误\n- 修复了 D.Va 在机甲左侧摆出默认胜利姿势时朝向错误的错误\n- 修复了装备 Palanquin 皮肤时，D.Va 驾驶舱玻璃窗会变形的错误\n- 修复了装备 Officer 皮肤时，D.Va 机甲操纵杆上的三角形纹理不会发光的错误\n- 修复了装备守望先锋联赛皮肤时，源氏的匕首无法显示金色武器金色外观的错误\n- 修复了狂鼠驾驶炸弹轮胎时不会被击退的错误\n- 修复了狂鼠皮肤纹理有明显接缝的错误\n- 修复了狂鼠的装饰喷漆以低分辨率显示的错误\n- 修复了卢西奥在 Medal 胜利姿势中肩带会穿模进肩部的错误\n- 修复了装备某些皮肤时，麦克雷的维和者在英雄选择界面会大幅变大的错误\n- 修复了装备 Van Helsing 皮肤时，麦克雷衣领的对称性会变形的错误\n- 修复了玩家被困在美的冰墙后方时仍能射穿冰墙的错误\n- 修复了天使的 The Witch 喷漆以低分辨率显示的错误\n- 修复了已阵亡玩家在选择新英雄后仍保持英雄选择界面打开时，导致该英雄在英雄选择界面无法被选用的错误\n- 修复了比赛开始前，莫伊拉的生化之球可以飘到多拉多进攻方出生室外的错误\n- 修复了比赛开始前，莫伊拉的生化之球可以飘到多拉多进攻方出生室外的错误\n- 修复了莫伊拉的生化之球可以穿过美的冰墙的错误\n- 修复了奥丽莎的站住别动！有时会影响墙体后方敌方目标的错误\n- 修复了莱因哈特的裂地猛击被黑影的电磁脉冲打断后仍会显示视觉特效的错误\n- 修复了士兵：76 的 Light's Out 精彩镜头中镜头会穿模进地板的错误\n- 修复了秩序之光的光子发射器光束会让阿育陀耶的植物异常移动的错误\n- 修复了秩序之光的非机械手臂接缝处有缝隙的错误\n- 修复了装备某些皮肤时，托比昂在 Refreshing 精彩镜头中会用手里的锤子擦脸的错误\n- 修复了装备 Magni 皮肤时，托比昂会发出默认皮肤音效的错误\n- 修复了猎空的 Alliance 和 Horde 姿势动画帧率过低的错误\n- 修复了猎空在 Bomb Spin 姿势中颈部动画的问题\n- 修复了猎空的闪回会根据玩家延迟以不同方式激活的错误\n- 修复了温斯顿在 Glasses 精彩镜头介绍中手腕扭转的错误\n- 修复了装备玄武皮肤时，查莉娅在休闲胜利姿势中双腿会互相穿模的错误\n- 修复了装备玄武皮肤时，查莉娅在 Check Out This Gun 胜利姿势中粒子炮会穿模进躯干的错误\n- 修复了装备守望先锋联赛皮肤时，查莉娅指甲上的纹理会无法加载的错误\n- 修复了装备守望先锋联赛皮肤时，查莉娅的 logo 纹理会闪烁的错误\n- 修复了禅雅塔在满蓄力灭之后立即使用近战技能时，灭会看起来是从胸口发射的错误",
+     "dev": null
+    },
+    {
+     "title": "竞技比赛",
+     "body": "- 修复了在休赛期比赛中，聊天中不会出现两分钟离场警告的问题\n- 修复了未组队且等级低于25级的玩家点击竞技比赛选项时，会收到「所有队伍成员必须达到25级」错误提示的问题",
+     "dev": null
+    },
+    {
+     "title": "阿育陀耶",
+     "body": "- 修复了某些英雄技能会发出刺眼亮光的问题\n- 修复了某些纹理无法加载的问题\n- 修复了地形上不应出现阴影的位置出现阴影的问题\n- 修复了玩家可以站在门框顶部的问题\n- 修复了黑百合可以射击离开出生室的敌方玩家的问题",
+     "dev": null
+    },
+    {
+     "title": "暴雪世界",
+     "body": "- 修复了法老之鹰在《星际争霸II》区域坠落至塔架时能够无限飞行的问题\n- 修复了炮台可以被建造并隐藏在藤蔓内的问题\n- 修复了玩家可以站在《暗黑破坏神》区域外出生室上方的平台上的问题\n- 修复了玩家会在《星际争霸II》区域的柱子和灌木之间卡住的问题",
+     "dev": null
+    },
+    {
+     "title": "多拉多",
+     "body": "- 修复了末日铁拳在使用裂地重拳时，会卡在建筑内桌子和墙角之间的问题\n- 修复了最后一点的一扇室内窗户无法阻挡技能（例如D.Va的自毁）的问题\n- 修复了小型英雄可以利用装饰管道躲避伤害的问题",
+     "dev": null
+    },
+    {
+     "title": "艾兴瓦尔德",
+     "body": "- 修复了喷漆可以贴到墙壁后方出生门上的问题",
+     "dev": null
+    },
+    {
+     "title": "花村",
+     "body": "- 修复了美的冰墙可以到达非预期位置的问题\n- 修复了玩家可以站在门框边缘上的问题\n- 修复了法老之鹰在第二点可以以更高速度恢复推进背包燃料的问题",
+     "dev": null
+    },
+    {
+     "title": "好莱坞",
+     "body": "- 修复了法老之鹰的翼尖会穿出墙壁的问题",
+     "dev": null
+    },
+    {
+     "title": "伊利奥斯",
+     "body": "- 修复了投射物可以穿过碎石的问题",
+     "dev": null
+    },
+    {
+     "title": "渣客镇",
+     "body": "- 修复了秩序之光可以将她的炮台放置在墙壁内的问题\n- 修复了电视机受损后无法在其上建造炮台的问题",
+     "dev": null
+    },
+    {
+     "title": "漓江塔",
+     "body": "- 修复了温斯顿会穿入室外墙壁并受到伤害的问题",
+     "dev": null
+    },
+    {
+     "title": "尼泊尔",
+     "body": "- 修复了某些纹理无法加载的问题\n- 修复了玩家可以站在非预期区域的岩石上的问题\n- 修复了比赛开始后控制点全息影像无法激活的问题\n- 修复了玩家可以站在非预期区域的平台上的问题\n- 修复了钟楼悬浮的问题\n- 修复了狂鼠可以透过关闭的出生门射击榴弹的问题\n- 修复了大型英雄会卡在出生室椅子之间的问题",
+     "dev": null
+    },
+    {
+     "title": "努巴尼",
+     "body": "- 修复了狂鼠可以透过关闭的出生门射击榴弹的问题\n- 修复了大型英雄会卡在出生室椅子之间的问题",
+     "dev": null
+    },
+    {
+     "title": "绿洲城",
+     "body": "- 修复了玩家可以站在图书馆拱门上的问题",
+     "dev": null
+    },
+    {
+     "title": "沃斯卡娅",
+     "body": "- 修复了玩家可以站在某些平台上的问题\n- 修复了玩家可以透过天花板射击投射物的问题\n- 修复了自定比赛观战镜头可以离开预期游戏区域的问题\n- 修复了玩家可以站在隐形平台上的问题",
+     "dev": null
+    },
+    {
+     "title": "监测站：直布罗陀",
+     "body": "- 修复了环境中一堆岩石颜色异常的问题\n- 修复了源氏会卡在出生室墙壁中的问题",
+     "dev": null
+    },
+    {
+     "title": "训练靶场",
+     "body": "- 修复了训练机器人被摧毁时手臂会抖动的问题\n- 修复了配重物违背物理定律的问题",
+     "dev": null
+    },
+    {
+     "title": "界面",
+     "body": "- 修复了「恢复默认设置」按钮无法重置社交选项标签页中所有设置的问题\n- 修复了当设置低于60 FPS时，玩家在「保存精彩镜头」文本框中按下删除输入会删除字符的问题\n- 修复了在游玩自定比赛时，界面在单控制点地图上显示两个控制点的问题",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2018-04-10-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:49:01+00:00",
+  "status": "draft",
+  "source_hash": "sha256:0fdbc1125a767ff80551b6cc6501f7f60cb46482bffc9753fdf6ac7f3a2bc909",
+  "kept_english": [
+   "AI"
+  ]
+ }
+}

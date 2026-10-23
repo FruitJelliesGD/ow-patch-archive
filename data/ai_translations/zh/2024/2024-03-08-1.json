@@ -1,0 +1,928 @@
+{
+ "id": "ai-2024-03-08-1",
+ "site": "ai",
+ "date": "2024-03-08",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/03",
+ "title": "《守望先锋》补丁说明——2024年3月8日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "《守望先锋 2》×《星际牛仔》联动",
+   "role": null,
+   "description": "在《守望先锋 2》中与传奇的 Bebop 号船员一同庆祝！沉浸于《星际牛仔》的经典传奇，获取仅在《守望先锋 2》商店独家上架的多款全新皮肤。即日起至 3 月 25 日，你还可以完成游戏内挑战，响应赏金猎人的召唤，赢取宇宙主题的装饰奖励。",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "综合更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "全新游戏模式——英雄精通：挑战",
+     "body": "英雄精通：挑战是一个全新的合作游戏模式，玩家将齐心协力保护防御塔免受敌方机器人的攻击。收集能量并购买强力升级，以撑过全部十轮！集中你的技巧来获得高分，并在排行榜上竞争。你准备好进入挑战了吗？\n\n- 挑战模式的队伍最多可有三名玩家，必须撑过全部十轮才能获胜。每局游戏都会随机化升级、机器人和目标防御塔，以保持新鲜感。\n- 挑战模式有四种难度，会改变游戏玩法的各个方面，包括分数。一路攀升至传奇难度，称霸排行榜。\n- 雅典娜为该模式升级了模拟系统，加入了许多新机器人。请留意危险的精英训练机器人。\n- 队伍可使用与 AI 对战模式，以 1 至 3 名玩家进行练习。该模式下不会记录分数和挑战。\n\n英雄精通：挑战将随限时活动一同上线，包含专属奖励和挑战。你能守住防御塔并解锁全部内容吗？",
+     "dev": null
+    },
+    {
+     "title": "竞技比赛更新",
+     "body": "- 竞技比赛的定级与概览现在会在比赛结束时的英雄升级进度之前显示。\n- 计分板新增了竞技比赛排位级别范围，玩家可随时查看一场比赛的排位级别范围。\n- 现在可通过竞技比赛菜单中的排位级别信息按钮，在竞技比赛概览之外查看魔改。\n- 竞技比赛概览新增了一项名为「降级保护」的魔改，用于提示玩家：若再输掉一场比赛，将被降级至下一个更低的级别。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": null,
+   "dev": "> 开发者评论：本次补丁着重于微调第 9 赛季做出的一些系统性英雄改动。此外，由于英雄的生命值上限提高，我们正在调整各个技能，使其更具影响力。",
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "弹道尺寸更新",
+     "body": "- 速度大于 50 米/秒的飞行时间弹道的全局弹道尺寸修正值从 0.1 米降低至 0.075 米。",
+     "dev": "> 开发者评论：我们正在缩小速度最快的飞行时间弹道的尺寸，因为这样可以减少这些弹道因先命中敌人胸部判定体积而未能爆头的频率。"
+    },
+    {
+     "title": "职责被动更新",
+     "body": "- 输出职责被动施加的治疗降低效果从 20% 降低至 15%。",
+     "dev": "开发者评论：输出职责被动会降低战斗中治疗的效果，并帮助拉平爆发治疗与持续治疗之间的有效性差距。尽管如此，我们仍将尝试一个更低的数值，以缓解重装和支援职责所承受的部分压力。我们会密切关注这一改动，因为我们希望治疗削减效果仍然足够明显。"
+    },
+    {
+     "title": "其他英雄更新",
+     "body": "- 在玩家第一人称生命值条上方新增了一个 UI 元素，用于显示所有生效中的治疗状态效果（禁疗、治疗增幅、治疗削减）。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "重装",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "doomfist",
+     "name_en": "Doomfist",
+     "name_cn": "末日铁拳",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/bc538b345188bdcb2d2be5b2894d471ba54aeea53b03862429205ed49d693bbe.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Meteor Strike",
+       "name_cn": "毁天灭地",
+       "slug": "meteor-strike",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/fa96b2650987b3784a725a0fb1704f7191a686a4f42c9ccf61c404e2f08b158c.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "最低伤害从 15 提高至 50。",
+         "before": 15.0,
+         "after": 50.0,
+         "by": 35.0,
+         "by_pct": null,
+         "metric": "minimum damage",
+         "raw_metric": "minimum damage",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "mauga",
+     "name_en": "Mauga",
+     "name_cn": "毛加",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6dbd80a0b40bd0464db35948f98d91ecc6dfcede8c94ff9b1ecefda781a7aa1f.png",
+     "dev_note": "开发者评论：我们正在改动心脏过载，使其在用于自身时更加宽容，尤其是当毛加生命值较低时。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Overrun",
+       "name_cn": "蛮力冲撞",
+       "slug": "overrun",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c23cc1056dcc40fb5976f3987181b7a46406a0a133f1e95b9b1db11d36253363.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "践踏伤害从 45 提高至 60。",
+         "before": 45.0,
+         "after": 60.0,
+         "by": 15.0,
+         "by_pct": null,
+         "metric": "stomp damage",
+         "raw_metric": "stomp damage",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Cardiac Overdrive",
+       "name_cn": "心脏过载",
+       "slug": "cardiac-overdrive",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1d19c61b479c82bbdd8ed645ccdec54e16431409d3c8a56b27376c7f8630ec9c.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "持续时间从 5 秒降低至 4 秒。",
+         "before": 5.0,
+         "after": 4.0,
+         "by": -1.0,
+         "by_pct": null,
+         "metric": "duration",
+         "raw_metric": "duration",
+         "unit": "s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从 12 秒降低至 10 秒。",
+         "before": 12.0,
+         "after": 10.0,
+         "by": -2.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "现在会为其被动过量生命值填充 100 点。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "orisa",
+     "name_en": "Orisa",
+     "name_cn": "奥丽莎",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/20c12a10cfe0b5608f9eec63a74ecb0ccd18a114019bc77bb2765f87776e17ed.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Terra Surge",
+       "name_cn": "撼地猛刺",
+       "slug": "terra-surge",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8d8892b56df62b068343e5029a2ae1e2fa54f7568febac7141ffa945d02e214c.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "前 2.5 秒的充能速率提高 25%。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 25.0,
+         "metric": "5 seconds",
+         "raw_metric": "5 seconds",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "ramattra",
+     "name_en": "Ramattra",
+     "name_cn": "拉玛刹",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/cf69d4bfa61ac14f61d3d541b0d2687a20fa24f55afe7a392d746f5ccb138dea.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Ravenous Vortex",
+       "name_cn": "吞噬漩涡",
+       "slug": "ravenous-vortex",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/7a7334480013e1d2eccd7df8b4b1e2f484ca81dfe5719fd3506d1055ba79908c.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "总伤害从 45 提高至 70。",
+         "before": 45.0,
+         "after": 70.0,
+         "by": 25.0,
+         "by_pct": null,
+         "metric": "total damage",
+         "raw_metric": "total damage",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从 12 秒降低至 11 秒。",
+         "before": 12.0,
+         "after": 11.0,
+         "by": -1.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "reinhardt",
+     "name_en": "Reinhardt",
+     "name_cn": "莱因哈特",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b5e3a4f5629a3acfd47b5d2e695e79ea964b060bf67b7e4f8f15e63accd5f934.png",
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "护甲从 275 提高至 300。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 275.0,
+       "after": 300.0,
+       "by": 25.0,
+       "by_pct": null,
+       "metric": "armor",
+       "unit": "hp"
+      }
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Fire Strike",
+       "name_cn": "烈焰打击",
+       "slug": "fire-strike",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/568a5f49875557f735af36dce68474a923f7e8582a7be20fb68b6ee66ac077e6.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "伤害从 100 提高至 120。",
+         "before": 100.0,
+         "after": 120.0,
+         "by": 20.0,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "damage",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "roadhog",
+     "name_en": "Roadhog",
+     "name_cn": "路霸",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b6f4e837dc41e87d730f6b0fad3473e689c8bdcd1f732b97326ac08b0508f2ee.png",
+     "dev_note": "开发者评论：我们正在改善钩子连招的稳定性。敌人会被拉得更靠近路霸，且当猪圈激活时不会被弹得那么高，从而使爆裂枪的后续射击更加稳定。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Chain Hook",
+       "name_cn": "链钩",
+       "slug": "chain-hook",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/139deabeb3d62c451b558367bf5e64641583355d99ed90fe42107a5716fdca3b.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "敌人被拉后与路霸的最终距离从 4 米降低至 3 米。",
+         "before": 4.0,
+         "after": 3.0,
+         "by": -1.0,
+         "by_pct": null,
+         "metric": "the enemy final position distance from roadhog after being pulled",
+         "raw_metric": "the enemy final position distance from roadhog after being pulled",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Pig Pen",
+       "name_cn": "猪圈",
+       "slug": "pig-pen",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0150c28fe47ff4a7c16138266bf2b4903bd45e4b7770ab40572bb792b647838c.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "激活时的垂直击退降低 43%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 43.0,
+         "metric": "vertical knockback on activation",
+         "raw_metric": "vertical knockback on activation",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "输出",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "hanzo",
+     "name_en": "Hanzo",
+     "name_cn": "半藏",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3febc2e638ff56d8f0161ea278ac3116b5baf8c0328f1eded6b499552a0eccad.png",
+     "dev_note": "开发者评论：我们正在回退此前对半藏箭矢基础弹道尺寸的改动，并以通用的全局缩减取而代之。该缩减会影响所有速度大于 50 米/秒的飞行时间弹道，因此半藏的箭矢弹道总尺寸与本补丁前保持一致。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "基础弹道尺寸从 0.075 米提高至 0.1 米。结合通用英雄改动后，弹道总尺寸仍为 0.175 米。",
+       "subject": null,
+       "dimension": "other",
+       "before": 0.075,
+       "after": 0.1,
+       "by": 0.025,
+       "by_pct": null,
+       "metric": "base projectile sizes",
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "mei",
+     "name_en": "Mei",
+     "name_cn": "美",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/08586dceed41e030d575b2b643118f55390f1c2af91dd15394528f5399fcc934.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Endothermic Blaster",
+       "name_cn": "冰霜冲击枪",
+       "slug": "endothermic-blaster",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a935216c60c1c7d72502f373f4af24651c9eb6513781bc482c60ef4d551fb6b9.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "弹药从 120 提高至 140。",
+         "before": 120.0,
+         "after": 140.0,
+         "by": 20.0,
+         "by_pct": null,
+         "metric": "ammo",
+         "raw_metric": "ammo",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Cryofreeze",
+       "name_cn": "急冻",
+       "slug": "cryofreeze",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/183591c8c22fa134b6826555caf28481a4a3a22ec96d53a935612e0e45425378.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "每秒治疗量从 50 提高至 62.5。",
+         "before": 50.0,
+         "after": 62.5,
+         "by": 12.5,
+         "by_pct": null,
+         "metric": "heal per second",
+         "raw_metric": "heal per second",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "reaper",
+     "name_en": "Reaper",
+     "name_cn": "死神",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b7aac87959afbe062cc31518ded04b9dbcadb0a2282f8963c6bfd5ba0a2d6a27.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Death Blossom",
+       "name_cn": "死亡绽放",
+       "slug": "death-blossom",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e35595575880a304e14d427a0f9f5f04dc0886ba0f4cadd731ac935174f031e2.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "每秒伤害从 170 提高至 185。",
+         "before": 170.0,
+         "after": 185.0,
+         "by": 15.0,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "damage per second",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "终极技能消耗降低 12%。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 12.0,
+         "metric": "ultimate_cost",
+         "raw_metric": "ultimate cost",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "sombra",
+     "name_en": "Sombra",
+     "name_cn": "黑影",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f348c1704dc50c009ac8acf6912a5a77eaf2a3acdd34e56927190af9eb9145d1.png",
+     "dev_note": "开发者评论：病毒侵染命中被黑客入侵的目标时会造成暴击命中伤害，这一改动使将其作为后续手段更具吸引力。位移传动现在会摧毁可破坏物体，从而防止黑影传送到比预期更短的距离。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Virus",
+       "name_cn": "病毒侵染",
+       "slug": "virus",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/156dfc48d0e7a046692e27ea9f417ee3afbf9d918d92a909fe03d2b705dd3bdd.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "命中伤害从 10 提高至 25。",
+         "before": 10.0,
+         "after": 25.0,
+         "by": 15.0,
+         "by_pct": null,
+         "metric": "impact damage",
+         "raw_metric": "impact damage",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Translocator",
+       "name_cn": "位移传动",
+       "slug": "translocator",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e81f286184e24512c724af16a960a1faca6ade164238b025d19da64226f05f4d.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "飞行途中摧毁可破坏物体。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "EMP",
+       "name_cn": "电磁脉冲",
+       "slug": "emp",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6104a559ac558db8f7356a10b419d1330e98758ba9f8099666d694c088c64265.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "终极技能消耗降低 8%。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 8.0,
+         "metric": "ultimate_cost",
+         "raw_metric": "ultimate cost",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "symmetra",
+     "name_en": "Symmetra",
+     "name_cn": "秩序之光",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b0a19d5c8b0e299705036f4d0b9394da5ff415dc0dcd4e9207b6e63254022dff.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Photon Projector",
+       "name_cn": "光子发射器",
+       "slug": "photon-projector",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1b3f003d2ba6bba4f3d44f167cd1b03469c4e3c4d3900805b8adddffeedd2c56.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "主要攻击模式每秒伤害从 60 提高至 65，并随每个阶段提升。新的最高每秒伤害为 195。",
+         "before": 60.0,
+         "after": 65.0,
+         "by": 5.0,
+         "by_pct": null,
+         "metric": "primary fire damage per second",
+         "raw_metric": "primary fire damage per second",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Sentry Turret",
+       "name_cn": "哨戒炮",
+       "slug": "sentry-turret",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6ca1ad903ec0121026994bd2318dd5f2488ba40e5dbf5bdb2d5fad8474359253.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "生命值从 30 提高至 50。",
+         "before": 30.0,
+         "after": 50.0,
+         "by": 20.0,
+         "by_pct": null,
+         "metric": "health",
+         "raw_metric": "health",
+         "unit": "hp"
+        },
+        {
+         "text_en": null,
+         "text_cn": "每秒伤害从 25 提高至 30。",
+         "before": 25.0,
+         "after": 30.0,
+         "by": 5.0,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "damage per second",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Teleporter",
+       "name_cn": "传送面板",
+       "slug": "teleporter",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/13b45663f441144ded977e8ccf9ed180c213176206a9f6f9e189e29f09a03b64.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "生命值从 50 提高至 100。",
+         "before": 50.0,
+         "after": 100.0,
+         "by": 50.0,
+         "by_pct": null,
+         "metric": "health",
+         "raw_metric": "health",
+         "unit": "hp"
+        },
+        {
+         "text_en": null,
+         "text_cn": "护盾生命值从 150 提高至 200。",
+         "before": 150.0,
+         "after": 200.0,
+         "by": 50.0,
+         "by_pct": null,
+         "metric": "shield",
+         "raw_metric": "shields",
+         "unit": "hp"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "torbjorn",
+     "name_en": "Torbjörn",
+     "name_cn": "托比昂",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2ef3a4bdd117829a83867a7775ece351c4226f29b24cdbf8d7fac89443e8d8a2.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Deploy Turret",
+       "name_cn": "部署炮台",
+       "slug": "deploy-turret",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a25d559460eed995f177b84eda6000aca6a52c8600dcf2249cc50ca31aa9c786.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "炮台伤害从 11 提高至 13。",
+         "before": 11.0,
+         "after": 13.0,
+         "by": 2.0,
+         "by_pct": null,
+         "metric": "turret damage",
+         "raw_metric": "turret damage",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "支援",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "ana",
+     "name_en": "Ana",
+     "name_cn": "安娜",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/86debddbaaaf8699d68775a9dbffaf5b8db514772b77ff7234b1ff84c0b29fd5.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Biotic Grenade",
+       "name_cn": "生物手雷",
+       "slug": "biotic-grenade",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c8190b234bf0a0e28eecffe162d0c942e6b8656e95f4688c6ca3b025fa5a487d.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "爆炸伤害与治疗从 60 提高至 90。",
+         "before": 60.0,
+         "after": 90.0,
+         "by": 30.0,
+         "by_pct": null,
+         "metric": "explosion damage and healing",
+         "raw_metric": "explosion damage and healing",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "baptiste",
+     "name_en": "Baptiste",
+     "name_cn": "巴蒂斯特",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5ac801c6fe84f83fe5015af89858cbdfb2ec9d32d141f582889b5381fd0195fc.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Immortality Field",
+       "name_cn": "维生力场",
+       "slug": "immortality-field",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d66d82bab88fc813080dd15e31629cc3aa7c8b41cfb41d5b962b628dd345e433.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "最低生命值阈值从 25% 降低至 20%。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "brigitte",
+     "name_en": "Brigitte",
+     "name_cn": "布丽吉塔",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/51b93ea59f369a1defa78e5d08c12b1391f5d2d94614a51fd95c125a7a6151fa.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Repair Pack",
+       "name_cn": "恢复包",
+       "slug": "repair-pack",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5f9f1e00af992f4a090cafc8e83821dd2848f22cb9e0205fafcedacb26bd7335.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从 6 秒降低至 5 秒。",
+         "before": 6.0,
+         "after": 5.0,
+         "by": -1.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      },
+      {
+       "name_en": "Rally",
+       "name_cn": "集结号令",
+       "slug": "rally",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/08552423da53faa55238bd66a2a72d32d1038e42f2eebc911921bc9d5d575432.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "消耗降低 8%。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 8.0,
+         "metric": "cost",
+         "raw_metric": "cost",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "illari",
+     "name_en": "Illari",
+     "name_cn": "伊拉锐",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f33f6fe94ad55fcf9027e779f66afac358a2f93651070b95cd565ff90d670c8b.png",
+     "dev_note": "开发者评论：我们正在调整阳焰步枪的射击节奏，使其使用起来更跟手，并提高每秒伤害，但不提高爆发伤害。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Solar Rifle",
+       "name_cn": "阳焰步枪",
+       "slug": "solar-rifle",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/97ca66b75aefd32c23d38a843b8be6b2325792e3cb62523b47541ce97375ab34.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "主要攻击的恢复时间从 0.3 秒降低至 0.2 秒。",
+         "before": 0.3,
+         "after": 0.2,
+         "by": -0.1,
+         "by_pct": null,
+         "metric": "primary fire recovery time",
+         "raw_metric": "primary fire recovery time",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "最大蓄力时间从 0.7 秒降低至 0.65 秒。",
+         "before": 0.7,
+         "after": 0.65,
+         "by": -0.05,
+         "by_pct": null,
+         "metric": "maximum charge time",
+         "raw_metric": "maximum charge time",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "lifeweaver",
+     "name_en": "Lifeweaver",
+     "name_cn": "生命之梭",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/57d5014ab6034db9138f838e8450693b4a97ab3c54f85d594b199a8853e75ccb.png",
+     "dev_note": "开发者评论：我们提高了治疗花的爆发潜力，以强化生命之梭作为高治疗量支援的定位。每秒治疗量与之前大致相同，但单朵治疗花可以蓄力更久。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Heal Blossom",
+       "name_cn": "治疗花",
+       "slug": "heal-blossom",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a3ccff02b44507df5c9bdaced0ecd56ac80b33285ad8a60e6c454acf90560579.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "最大治疗量从 70 提高至 80。",
+         "before": 70.0,
+         "after": 80.0,
+         "by": 10.0,
+         "by_pct": null,
+         "metric": "maximum heal amount",
+         "raw_metric": "maximum heal amount",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "最大蓄力时间从 1 秒提高至 1.15 秒。",
+         "before": 1.0,
+         "after": 1.15,
+         "by": 0.15,
+         "by_pct": null,
+         "metric": "maximum charge time",
+         "raw_metric": "maximum charge time",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 修复了按下手柄上的 B 键会关闭回放而非打开书签的问题。\n- 修复了在战令中预览所有纪念品时其朝向后方的问题。\n- 修复了活动中心内「商店中有更多物品」按钮会将玩家带到空白界面的问题。\n- 修复了查看其他玩家升级进度界面时却显示自己升级进度界面的问题。\n- 修复了排位级别更新进度条有时显示错误数值的显示问题。\n- 修复了「环形」点状准星无法为所有英雄正确显示的问题。\n- 修复了死斗比赛结束时无法打开选项菜单的问题。\n- 修复了未知英雄中可能导致玩家的弹跳板被禁用的问题。\n- 在竞技比赛定级赛中，离开现在会正确计为失败。\n\n英雄精通\n\n- 修复了重新开始挑战后回声获得完整终极技能充能的问题。",
+     "dev": null
+    },
+    {
+     "title": "地图",
+     "body": "渣客镇\n\n- 修复了部分位置光照不正确的问题。\n\n国王大道\n\n- 修复了地图中一处允许玩家离开可玩区域的区域。\n\n萨摩亚\n\n- 修复了部分区域允许托比昂的炮台几乎完全被环境遮挡的问题。",
+     "dev": null
+    },
+    {
+     "title": "英雄",
+     "body": "- 修复了输出被动无法由以下来源施加的问题：秩序之光和托比昂的炮台、炸弹轮胎以及召唤鲍勃。\n\n生命之梭\n\n- 修复了生命之树与毛加交互时可能将笼中斗弹射到空中的问题。\n- 修复了特定情况下生命之握会将盟友拉向死亡的问题。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2024-03-08-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T15:03:43+00:00",
+  "status": "draft",
+  "source_hash": "sha256:9787a0cf164fa7ce07b72256c6a3ca619f9c15ca32d393deb45509485daf718f",
+  "kept_english": []
+ }
+}

@@ -1,0 +1,323 @@
+{
+ "id": "ai-2019-06-18-1",
+ "site": "ai",
+ "date": "2019-06-18",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2019/06",
+ "title": "《守望先锋》补丁说明——2019年6月18日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "补丁亮点",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "巴蒂斯特的归乡挑战",
+     "body": "我们将通过一些特殊的、可解锁的游戏内内容，把巴蒂斯特在短篇故事《你所留下的》中的旅程带入《守望先锋》。在快速比赛、竞技比赛或街机先锋中获胜，即可获得主题喷漆、一个玩家图标以及一款全新史诗皮肤——医疗巴蒂斯特！\n\n在 7 月 2 日之前的任意时间，观看正在游玩《守望先锋》的参与活动 Twitch 主播，即可获得六款巴蒂斯特的归乡挑战喷漆！\n\n如需了解更多关于巴蒂斯特的归乡挑战的信息，请点击此处。",
+     "dev": null
+    },
+    {
+     "title": "新功能：回放",
+     "body": "通过回放，以全新视角体验你过去的《守望先锋》对局。回放功能让你可以从任意视角观看最近十场对局。无论你想要第一人称、第三人称还是俯视视角，都可以通过此工具一览无余。通过放慢或加快游戏速度来精进你的策略，准确看清关键时刻是如何发生的，从上方更好地观察战况，甚至完全关闭 UI。\n\n了解更多关于回放的信息：Blizz.ly/OverwatchReplays",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "baptiste",
+     "name_en": "Baptiste",
+     "name_cn": "巴蒂斯特",
+     "role": "support",
+     "icon": null,
+     "dev_note": "鉴于巴蒂斯特武器的双重性质，他最终不得不频繁装填。我们正在提高他可用的弹药量，以便他在治疗时能获得更长的开火时间。同样，延长增幅矩阵的持续时间将让盟友有更多时间进入位置以利用它。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Biotic Launcher",
+       "name_cn": "生化榴弹枪",
+       "slug": "biotic-launcher",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "治疗弹药从 10 提高至 12。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Amplification Matrix",
+       "name_cn": "增幅矩阵",
+       "slug": "amplification-matrix",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "终极技能持续时间从 8 秒提高至 10 秒。",
+         "before": 8.0,
+         "after": 10.0,
+         "by": 2.0,
+         "by_pct": null,
+         "metric": "ultimate duration",
+         "raw_metric": "ultimate duration",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "d-va",
+     "name_en": "D.Va",
+     "name_cn": "D.Va",
+     "role": "tank",
+     "icon": null,
+     "dev_note": "防御矩阵是一种非常强大的防御技能，在远距离时常常令人感到压抑。缩短其范围将要求 D.Va 更谨慎地选择站位，以发挥其效果。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Defense Matrix",
+       "name_cn": "防御矩阵",
+       "slug": "defense-matrix",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "防御矩阵长度从 15 米降低至 10 米。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "cassidy",
+     "name_en": "Cassidy",
+     "name_cn": "卡西迪",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "平均而言，麦克雷的伤害输出不足以弥补其技能组中相对较低的机动性或功能性。降低其武器的恢复时间可提高潜在伤害输出，同时不影响击杀敌人所需的成功射击次数。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Peacekeeper",
+       "name_cn": "维和者",
+       "slug": "peacekeeper",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "主火力恢复时间从 0.5 秒降低至 0.42 秒。",
+         "before": 0.5,
+         "after": 0.42,
+         "by": -0.08,
+         "by_pct": null,
+         "metric": "primary fire recovery",
+         "raw_metric": "primary fire recovery",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "orisa",
+     "name_en": "Orisa",
+     "name_cn": "奥丽莎",
+     "role": "tank",
+     "icon": null,
+     "dev_note": "奥丽莎拥有最长的武器装填时间之一，而中断装填来部署新屏障对她的玩法来说过于干扰。此改动允许她按需装填，同时仍能保护自己和队伍。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Protective Barrier",
+       "name_cn": "防护屏障",
+       "slug": "protective-barrier",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "屏障可在不中断装填的情况下部署。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "symmetra",
+     "name_en": "Symmetra",
+     "name_cn": "秩序之光",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "这主要是一项体验优化，因为此前有可能创建出秩序之光除非朝其移动否则无法交互的传送面板。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Teleporter",
+       "name_cn": "传送面板",
+       "slug": "teleporter",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "传送面板交互范围从 1 米提高至 1.5 米。",
+         "before": 1.0,
+         "after": 1.5,
+         "by": 0.5,
+         "by_pct": null,
+         "metric": "teleporter interact range",
+         "raw_metric": "teleporter interact range",
+         "unit": "m"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "torbjorn",
+     "name_en": "Torbjörn",
+     "name_cn": "托比昂",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "鉴于托比昂近期提高的生存能力，其次级火力与热力过载技能结合后的总伤害输出过高。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Rivet Gun",
+       "name_cn": "铆钉枪",
+       "slug": "rivet-gun",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "次级火力每颗弹丸伤害从 12.5 降低至 10.5（每发总计 105 伤害）。",
+         "before": 12.5,
+         "after": 10.5,
+         "by": -2.0,
+         "by_pct": null,
+         "metric": "secondary fire damage per pellet",
+         "raw_metric": "secondary fire damage per pellet",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "游戏模式更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "攻防作战",
+     "body": "- 在所有攻防作战地图上占领 A 点所奖励的时间已从 4 分钟降低至 3 分钟。\n- 在失去 A 点后，任何已阵亡或随后不久阵亡的防守方，其最大复生时间将为 3.5 秒。\n\n此外，有时防守方会在 A 点出于好意而战至最后，却在 A 点失守后与队伍脱节，导致队伍在防守对 B 点的冲锋时立足不稳。在这些情况下，临时降低复生时间让这些防守方归队，应该能带来更好的对局体验，也不会因为玩家想要防守 A 点而如此严厉地惩罚他们。",
+     "dev": "攻防作战的对局时长平均高于我们满意的水平，尤其是在有多轮比赛的竞技比赛中。我们还担心进攻方完全占领 A 点和 B 点的频率。将回合时间从 8 分钟降低至 7 分钟应能解决这两个问题，因为总时间减少会奖励更好的防守。"
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "工坊更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 应用了视觉更新\n- 添加了复选框，以支持对多个条件/动作/规则进行操作。\n- 你现在可以禁用条件/动作/规则而无需删除它们。\n- （PC）复制条件/动作/规则时，其内容也会以文本格式复制到你的剪贴板。\n- （PC）粘贴条件/动作/规则时，编辑器将使用你剪贴板中的文本。\n- 最大效果数量从 64 提高至 128。\n- 添加了「在索引处修改全局变量」。\n- 添加了「在索引处修改玩家变量」。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 通讯轮盘：通过通讯轮盘触发的「确认」标记现在可以标记目标点。\n- 修复了当客户端发生预测错误的撞击时，爆炸可能出现在错误位置的问题。\n- 修复了在主机上设置色盲模式时，部分 UI 效果未正确着色的问题。\n- 教程：武器 UI 现在会隐藏，直到你的武器可用。\n- 哈瓦那 PvP——修复了可能导致运载目标在离开酿酒厂检查点时卡住的问题。\n- 修复了可能导致全场最佳动画在结束前被截断的问题。\n- 修复了可能限制屏幕上同时显示的效果数量的问题。",
+     "dev": null
+    },
+    {
+     "title": "工坊",
+     "body": "- 自定义比赛：修复了 AI 士兵：76 不会对同一目标发射两次螺旋飞弹的错误。\n- 自定义比赛：修复了当出生室大门关闭时，「最近可行走位置」会使用出生室内的位置而非指定位置的问题。\n- 自定义比赛：修复了可能导致 AI 士兵：76 无法使用生物力场的错误。\n- 自定义比赛：修复了禁用主要攻击不会对变形效果生效的错误，例如半藏的岚、源氏的斩、士兵：76 的战术目镜、托比昂的熔火核心、堡垒的坦克模式和温斯顿的原始暴怒。\n- 修复了使用「设置终极技能充能」动作给予 100% 终极技能充能时，黑影和 D.Va 无法使用其终极技能的错误。\n- 修复了使用控制器时玩家无法将焦点移至规则复选框的错误。\n- 修复了在动作前使用等待时，「停止按住按钮」无法清除该动作的错误。\n- 修复了若玩家此前曾进入自定义比赛浏览器，则在退出任何比赛时都会始终被返回自定义比赛浏览器的错误。\n- 修复了使用控制器时，主机玩家尝试输入数值需要按两次按钮的错误。现在主机玩家使用控制器时，只需按一次按钮即可调出虚拟键盘进行手动数值输入。\n- 修复了在做出更改并重新开始比赛后，检查器中显示的变量值可能无法更新的错误。",
+     "dev": null
+    },
+    {
+     "title": "英雄",
+     "body": "安娜\n\n- 当黑影使用位移传动传送时，禁疗效果将被清除。\n\n巴蒂斯特\n\n- 修复了当安娜的主要攻击命中巴蒂斯特的维生力场时，安娜的射击音效会在巴蒂斯特身上播放的错误。\n\n布丽吉塔\n\n- 敌方屏障现在会阻挡布丽吉塔集结号令的视线。\n- 修复了多层护甲叠加时，护甲伤害减免效果过强的错误。\n\n末日铁拳\n\n- 修复了末日铁拳在终极技能期间可以进入哈瓦那地图边界外区域的错误。\n- 修复了末日铁拳的火箭重拳有时会撞上楼梯的问题。\n- 修复了末日铁拳的裂地重拳未在受影响实体上显示其电击效果的问题。\n- 修复了裂地重拳在应当命中目标时未能命中的错误。\n\n源氏\n\n- 修复了源氏的伤害加成无法作用于反弹弹体的错误。\n\n半藏\n\n- 修复了被半藏终极技能竜击杀的玩家，在击杀回放中会看到半藏准星的错误。\n- 修复了半藏在数个皮肤（赛博忍者、孤狼、少主、年轻宗师）下使用冥想姿势时，手部会穿模进入腿部的错误。\n\n卢西奥\n\n- 修复了卢西奥 2019 太平洋全明星皮肤的部分内容在精彩镜头和游戏内头像中不可见的错误。\n\n奥丽莎\n\n- 修复了超充能器放置在特定位置时会自我摧毁的错误。\n\n路霸\n\n- 修复了路霸被黑影入侵时，其钩子仍能生效的错误。\n\n黑影\n\n- 位移传动现在能更容易地脱离湿滑表面，且不会被困在其上。\n- 修复了黑影头发上的材质效果会导致其在隐身时投下阴影的问题。\n\n秩序之光\n\n- 解决了敌方与友方 UI 颜色选项被错误应用于秩序之光光子屏障的问题。\n\n托比昂\n\n- 修复了托比昂在装备特定皮肤时使用热力过载，部分视觉效果未生效的错误。\n- 修复了托比昂的炮台有时会自我摧毁的错误。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2019-06-18-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:52:23+00:00",
+  "status": "draft",
+  "source_hash": "sha256:e26b83432de0ef1395e9b8b62fbf5ca742c4e5cd14a1cd35eb1212214ac62227",
+  "kept_english": []
+ }
+}

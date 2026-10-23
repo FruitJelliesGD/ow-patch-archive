@@ -1,0 +1,557 @@
+{
+ "id": "ai-2024-01-09-1",
+ "site": "ai",
+ "date": "2024-01-09",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/01",
+ "title": "《守望先锋》补丁说明——2024年1月9日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "龙年季节性活动",
+   "role": null,
+   "description": "龙年的烟花与庆典将于1月30日开启！捣蛋与魔法道具搜寻模式将在漓江塔夜市地图回归，并新增了可供侠盗雾子变身的全新道具，让你不得不朝各个方向张望。此外，还可体验深受玩家喜爱的农历新年模式，包括夺旗和赏金猎人大乱斗。",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": "英雄更新",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "重装",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "mauga",
+     "name_en": "Mauga",
+     "name_cn": "毛加",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6dbd80a0b40bd0464db35948f98d91ecc6dfcede8c94ff9b1ecefda781a7aa1f.png",
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "基础生命值从250提高至300。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 250.0,
+       "after": 300.0,
+       "by": 50.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "基础护甲从250降低至200。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 250.0,
+       "after": 200.0,
+       "by": -50.0,
+       "by_pct": null,
+       "metric": "base armor",
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Incendiary and Volatile Chainguns",
+       "name_cn": "燃烧弹与爆裂链式步枪",
+       "slug": "incendiary-and-volatile-chainguns",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/df6bae435e7e319b51fe4977e92971fcfbb9b30fab2f39d1e614660274fab226.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "弹药从350降低至300。",
+         "before": 350.0,
+         "after": 300.0,
+         "by": -50.0,
+         "by_pct": null,
+         "metric": "ammo",
+         "raw_metric": "ammo",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Cardiac Overdrive",
+       "name_cn": "心脏过载",
+       "slug": "cardiac-overdrive",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1d19c61b479c82bbdd8ed645ccdec54e16431409d3c8a56b27376c7f8630ec9c.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "生命汲取从70%降低至60%。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从10秒提高至12秒。",
+         "before": 10.0,
+         "after": 12.0,
+         "by": 2.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      },
+      {
+       "name_en": "Cage Fight",
+       "name_cn": "笼中斗",
+       "slug": "cage-fight",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/795ba75b2aaf304f69ea6fbc6e7fbfe5d3d4d7365d776243f8241f8e9e7f208e.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "不再提供无限弹药。终极技能开始时仍会为毛加的链式步枪装填。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Berserker",
+       "name_cn": "狂战士",
+       "slug": "berserker",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f35a2296090039ae055f465e736370f031bdd348677b3c9657147c0b925267b1.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "过量生命值转化率从60%降低至50%。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "orisa",
+     "name_en": "Orisa",
+     "name_cn": "奥丽莎",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/20c12a10cfe0b5608f9eec63a74ecb0ccd18a114019bc77bb2765f87776e17ed.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Augmented Fusion Driver",
+       "name_cn": "强化聚变驱动器",
+       "slug": "augmented-fusion-driver",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8bf67f548fb8dd8fde4dd07ae567e635f8d6229c330a3656134697b9ecbd9140.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "移除了伤害衰减惩罚。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Fortify",
+       "name_cn": "强固防御",
+       "slug": "fortify",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d697fa90726cf683222920822d2ee00a85e0420c6cbc6ec2365573f313d06357.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在免疫强制暴击伤害。强固防御原本就能防止来自爆头的直接暴击伤害。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "roadhog",
+     "name_en": "Roadhog",
+     "name_cn": "路霸",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b6f4e837dc41e87d730f6b0fad3473e689c8bdcd1f732b97326ac08b0508f2ee.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Take a Breather",
+       "name_cn": "呼吸器",
+       "slug": "take-a-breather",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9cb8d867671bf917a9ba5d4a28ab6cb6ceeb10de2813567fcad97aca32c58499.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "总治疗量从500降低至450。",
+         "before": 500.0,
+         "after": 450.0,
+         "by": -50.0,
+         "by_pct": null,
+         "metric": "total amount healed",
+         "raw_metric": "total amount healed",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "两次使用之间的冷却时间从1秒提高至1.5秒。",
+         "before": 1.0,
+         "after": 1.5,
+         "by": 0.5,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown between usages",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "输出",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "sojourn",
+     "name_en": "Sojourn",
+     "name_cn": "索杰恩",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/515f25a729a4a3f51d956fc54c600dc60d8e5242f2b188c178496cea1a2e11b5.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Railgun",
+       "name_cn": "电磁炮",
+       "slug": "railgun",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3d7f261e05e3abda155cede4409ec8348490e286805c123d54d7f81fdd50d077.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "渐进能量不再衰减至低于25%。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "sombra",
+     "name_en": "Sombra",
+     "name_cn": "黑影",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f348c1704dc50c009ac8acf6912a5a77eaf2a3acdd34e56927190af9eb9145d1.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Stealth",
+       "name_cn": "隐秘潜行",
+       "slug": "stealth",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/270bcdf26d66cda1f488e9b3286c3cb467c6e622d729420406ce69218380ae1a.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "进入隐秘潜行后可立即取消的宽限时间从0.5秒提高至0.75秒。",
+         "before": 0.5,
+         "after": 0.75,
+         "by": 0.25,
+         "by_pct": null,
+         "metric": "grace period where stealth can be canceled immediately after entering it",
+         "raw_metric": "grace period where stealth can be canceled immediately after entering it",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "在占领或争夺目标点时，冷却时间现在会在1秒处暂停，此前为1.5秒。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "重生时的冷却时间从1.5秒降低至1秒。",
+         "before": 1.5,
+         "after": 1.0,
+         "by": -0.5,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown on respawning",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "支援",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "ana",
+     "name_en": "Ana",
+     "name_cn": "安娜",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/86debddbaaaf8699d68775a9dbffaf5b8db514772b77ff7234b1ff84c0b29fd5.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Biotic Grenade",
+       "name_cn": "生物手雷",
+       "slug": "biotic-grenade",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c8190b234bf0a0e28eecffe162d0c942e6b8656e95f4688c6ca3b025fa5a487d.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "效果持续时间从3.5秒降低至3秒。",
+         "before": 3.5,
+         "after": 3.0,
+         "by": -0.5,
+         "by_pct": null,
+         "metric": "effect duration",
+         "raw_metric": "effect duration",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "illari",
+     "name_en": "Illari",
+     "name_cn": "伊拉锐",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f33f6fe94ad55fcf9027e779f66afac358a2f93651070b95cd565ff90d670c8b.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Solar Rifle",
+       "name_cn": "阳焰步枪",
+       "slug": "solar-rifle",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/97ca66b75aefd32c23d38a843b8be6b2325792e3cb62523b47541ce97375ab34.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "主要攻击的充能获取不再被次要攻击或引导桎梏灼日所暂停。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "弹药从14提高至16。",
+         "before": 14.0,
+         "after": 16.0,
+         "by": 2.0,
+         "by_pct": null,
+         "metric": "ammo",
+         "raw_metric": "ammo",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Captive Sun",
+       "name_cn": "桎梏灼日",
+       "slug": "captive-sun",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/556c78ff01455fb1ab7ed7808e681ae0f1cd1fdf0fe1c92fe89672ea261ad187.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在会完全补满次要攻击资源并重置过热状态。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "移除了灼日爆炸的伤害衰减惩罚。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "lifeweaver",
+     "name_en": "Lifeweaver",
+     "name_cn": "生命之梭",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/57d5014ab6034db9138f838e8450693b4a97ab3c54f85d594b199a8853e75ccb.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Thorn Volley",
+       "name_cn": "棘刺箭雨",
+       "slug": "thorn-volley",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2ff86a970fedb412a1166fddfbca13bbd08156043012608e538867f792fc1d78.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "弹道速度从70米/秒提高至80米/秒。",
+         "before": 70.0,
+         "after": 80.0,
+         "by": 10.0,
+         "by_pct": null,
+         "metric": "projectile_speed",
+         "raw_metric": "projectile speed",
+         "unit": "m/s"
+        }
+       ]
+      },
+      {
+       "name_en": "Petal Platform",
+       "name_cn": "花瓣平台",
+       "slug": "petal-platform",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f64582890d92e968d79c54f9bb8cf1b9b1cc8da6dca7b8bdc647512957cac89f.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "不再被穿透性弹道穿透。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 修复了在自定游戏中点赞等级显示错误的问题。\n- 提高了终极技能语音的音量和清晰度。\n- 修复了满足条件时多杀语音未播放的问题。\n- 修复了「橄榄球练习」挑战无法推进的问题。\n- 修复了观战时镜头会卡在队伍两名成员身上的问题。\n- 修复了在自定游戏选项中修改「英雄限制」后无法保存的问题。\n- 修复了准星选项的问题：即使不透明度设为0，点大小和轮廓粗细仍会改变准星外观。\n- 修复了与观看回放相关的崩溃问题。\n- 修复了无法在主播保护设置中手动输入最大排队延迟数值的问题（该数值一直可通过滑块设置）。",
+     "dev": null
+    },
+    {
+     "title": "英雄",
+     "body": "- 修复了带有冲击波的技能可以击中下一层楼目标的问题。\n\n堡垒\n\n- 修复了堡垒在攻防作战模式下命中判定框不同步的问题。\n\n末日铁拳\n\n- 修复了火箭重拳可能导致被击中的目标丢失行走动画的问题。\n\n回声\n\n- 修复了回声复制西格玛的动能俘获后，受到伤害时不会增长的问题。\n\n伊拉锐\n\n- 修复了若在效果最后0.6秒内达到伤害阈值，灼日效果不会引爆的问题。\n\n天使\n\n- 修复了同时按下蹲下或跳跃取消守护天使，导致其持续时间缩短的问题。\n- 修复了在装填动画期间激活女武神时，会强制天使装填的问题。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2024-01-09-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:48:47+00:00",
+  "status": "draft",
+  "source_hash": "sha256:ecb792518fc1e9881d5d92d6ff2b981a34bb90b9b51b9b3057b3916670236684",
+  "kept_english": []
+ }
+}

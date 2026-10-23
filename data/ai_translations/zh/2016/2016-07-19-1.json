@@ -1,0 +1,634 @@
+{
+ "id": "ai-2016-07-19-1",
+ "site": "ai",
+ "date": "2016-07-19",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2016/07",
+ "title": "《守望先锋》补丁说明——2016年7月19日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "补丁内容",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "新英雄：安娜（支援）",
+     "body": "在离开战场数年后，守望先锋的创始成员之一即将回归。隆重推出安娜——一位身经百战的老兵，她使用一套独特且高度专业化的武器，在远处支援她的队友。\n\n安娜的主要武器是她的生物步枪，可以发射远程追踪弹，既能恢复盟友的生命值，也能对敌人造成持续伤害。同时，她的生物手雷非常适合近距离交战，能同时治疗队友并伤害处于其小型效果范围内的敌人。（受影响的盟友还会获得所有受到治疗量的临时提升，而受影响的敌人则会在短时间内无法被治疗。）如果战斗开始失控，安娜的副武器还可以发射麻醉镖，让她的对手陷入昏睡。\n\n此外，安娜的终极技能纳米激素可以强化一名队友，使其获得更快的移动速度、更高的伤害以及对敌人攻击的抗性。\n\n如需了解更多关于安娜的信息，请点击此处。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "综合更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "游戏玩法",
+     "body": "- 如果一场比赛进入加时阶段超过20秒，引信现在会开始更快地「燃尽」\n- 玩家在加时阶段的复活速度现在会更慢（复活时间增加2秒）",
+     "dev": null
+    },
+    {
+     "title": "竞技比赛",
+     "body": "- 竞技比赛的对局中，每支队伍现在只能拥有每名英雄各一个。\n\n\n  - 如需了解更多信息，请点击此处。",
+     "dev": null
+    },
+    {
+     "title": "其他",
+     "body": "- 在训练场对战AI、对战AI和自定游戏模式中，新增安娜作为AI控制的英雄\n- 禅雅塔的「快速乱舞」成就的时间判定更加宽松\n- 当玩家使用「集合」通讯时，被选中的队友现在会回应「我跟你走」\n- 重命名了五个喷漆，以避免头衔重复",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "英雄平衡性更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "bastion",
+     "name_en": "Bastion",
+     "name_cn": "堡垒",
+     "role": "damage",
+     "icon": null,
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Configuration: Tank",
+       "name_cn": "坦克模式",
+       "slug": "configuration-tank",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "终极技能消耗提高10%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 10.0,
+         "metric": "ultimate_cost",
+         "raw_metric": "ultimate cost",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "d-va",
+     "name_en": "D.Va",
+     "name_cn": "D.Va",
+     "role": "tank",
+     "icon": null,
+     "dev_note": "D.Va的选用率不如我们的其他重装英雄，我们认为这在很大程度上源于她的伤害吸收能力表现不佳。因此，我们重新调整了她的防御矩阵，使其更加灵活，并让玩家能够更频繁地使用它。我们还给自毁增加了一点威力，因为与守望先锋的许多其他终极技能相比，它感觉略显逊色。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Defense Matrix",
+       "name_cn": "防御矩阵",
+       "slug": "defense-matrix",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从10秒降低至1秒",
+         "before": 10.0,
+         "after": 1.0,
+         "by": -9.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "新增了一个资源计量条。该计量条会在防御矩阵激活期间消耗，并在未使用时重新充能。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "防御矩阵从空到完全充能需要10秒",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "在完全充能状态下，防御矩阵将持续4秒",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "现在只要按住防御矩阵对应的快捷键，防御矩阵就会保持激活",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "防御矩阵已被重新归类为辅助攻击，现在绑定至鼠标右键（默认）",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "在选项 > 控制 > D.Va下新增了「切换防御矩阵」选项",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Self-Destruct",
+       "name_cn": "自毁",
+       "slug": "self-destruct",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "终极技能消耗降低15%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 15.0,
+         "metric": "ultimate_cost",
+         "raw_metric": "ultimate cost",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "爆炸延迟从4秒降低至3秒",
+         "before": 4.0,
+         "after": 3.0,
+         "by": -1.0,
+         "by_pct": null,
+         "metric": "explosion delay",
+         "raw_metric": "explosion delay",
+         "unit": "s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "爆炸不再对D.Va（激活它的玩家）造成伤害",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "lucio",
+     "name_en": "Lúcio",
+     "name_cn": "卢西奥",
+     "role": "support",
+     "icon": null,
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Sound Barrier",
+       "name_cn": "音障",
+       "slug": "sound-barrier",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "终极技能消耗提高10%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 10.0,
+         "metric": "ultimate_cost",
+         "raw_metric": "ultimate cost",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "cassidy",
+     "name_en": "Cassidy",
+     "name_cn": "卡西迪",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "虽然在上一个补丁中削弱了麦克雷的近距离伤害后，游戏整体感觉有所改善，但这让他变得有些过于弱势。因此，我们增加了他的有效距离，使其射程与士兵：76相似。这有望为玩家提供另一种应对法老之鹰和半藏等烦人的远程伤害英雄的选择。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Peacekeeper",
+       "name_cn": "维和者",
+       "slug": "peacekeeper",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在在较远距离仍能保持全额伤害，但在极远距离会造成较低伤害",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "mercy",
+     "name_en": "Mercy",
+     "name_cn": "天使",
+     "role": "support",
+     "icon": null,
+     "dev_note": "天使的终极技能是游戏中最强大的技能之一；然而，玩家在使用它时常常飞入战团并阵亡。通过本次更新，重生现在需要稍长的时间充能，但天使在战斗中途激活该技能时会安全得多。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Caduceus Staff",
+       "name_cn": "天使之杖",
+       "slug": "caduceus-staff",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "伤害增幅",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "效果不再与另一名天使提供的额外伤害叠加",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Resurrect",
+       "name_cn": "重生",
+       "slug": "resurrect",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "终极技能充能消耗提高30%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 30.0,
+         "metric": "ultimate_cost",
+         "raw_metric": "ultimate charge cost",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "激活期间不再阻止移动",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "守护天使在使用时立即重置",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "roadhog",
+     "name_en": "Roadhog",
+     "name_cn": "路霸",
+     "role": "tank",
+     "icon": null,
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Whole Hog",
+       "name_cn": "鸡飞狗跳",
+       "slug": "whole-hog",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "终极技能消耗提高45%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 45.0,
+         "metric": "ultimate_cost",
+         "raw_metric": "ultimate cost",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "soldier-76",
+     "name_en": "Soldier: 76",
+     "name_cn": "士兵76",
+     "role": "damage",
+     "icon": null,
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Heavy Pulse Rifle",
+       "name_cn": "重脉冲步枪",
+       "slug": "heavy-pulse-rifle",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "散布恢复将在短暂延迟后开始（而非立即）",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Tactical Visor",
+       "name_cn": "战术目镜",
+       "slug": "tactical-visor",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "终极技能消耗提高10%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 10.0,
+         "metric": "ultimate_cost",
+         "raw_metric": "ultimate cost",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "zenyatta",
+     "name_en": "Zenyatta",
+     "name_cn": "禅雅塔",
+     "role": "support",
+     "icon": null,
+     "dev_note": "虽然禅雅塔从未拥有卢西奥或天使那样的治疗能力，但他通过造成更多伤害来弥补这一点。然而，他缺乏机动性和低生命值意味着他很难在许多对局中找到位置。为了提高他的有效性，我们进行了多项改动，其中最大的一项是增加了护盾池。这将使他能够与更多敌人正面交锋。乱和谐改动也是一项体验优化，帮助禅雅塔更快地移动他的法球并施加其效果。最后，我们提高了圣的治疗输出。这个终极技能的设计初衷是对持续的高伤害火力最为有效，而对短暂的高伤害爆发（如D.Va或狂鼠的终极技能）效果最差。但是，由于它提供的治疗量，有时即使是持续火力也有可能压过圣的输出。我们使治疗变得强大，并且还允许禅雅塔在圣激活期间更快地移动。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "基础护盾增加50（现在为50生命值/150护盾生命值）",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "主要攻击武器伤害从45降低至40",
+       "subject": null,
+       "dimension": "other",
+       "before": 45.0,
+       "after": 40.0,
+       "by": -5.0,
+       "by_pct": null,
+       "metric": "primary fire weapon damage",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "辅助攻击武器伤害从35提高至40",
+       "subject": null,
+       "dimension": "other",
+       "before": 35.0,
+       "after": 40.0,
+       "by": 5.0,
+       "by_pct": null,
+       "metric": "alternate fire weapon damage",
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Orb of Discord and Orb of Harmony",
+       "name_cn": "乱和谐",
+       "slug": "orb-of-discord-and-orb-of-harmony",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "弹道速度从30提高至120",
+         "before": 30.0,
+         "after": 120.0,
+         "by": 90.0,
+         "by_pct": null,
+         "metric": "projectile_speed",
+         "raw_metric": "projectile speed has been",
+         "unit": "m/s"
+        }
+       ]
+      },
+      {
+       "name_en": "Transcendence",
+       "name_cn": "圣",
+       "slug": "transcendence",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "激活时移动速度现在翻倍",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "治疗量从每秒200提高至每秒300生命值",
+         "before": 200.0,
+         "after": 300.0,
+         "by": 100.0,
+         "by_pct": null,
+         "metric": "healing",
+         "raw_metric": "healing amount",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 自我治疗技能现在会为终极技能充能。因此，一些英雄的终极技能消耗已进行调整（见下文）。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "用户界面更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "游戏选项",
+     "body": "- 玩家现在可以为任何同时带有滑块的选项输入数值（例如视野范围、音量、灵敏度等）\n- 玩家现在可以通过按 CTRL-SHIFT-C 或在聊天窗口输入「/hidechat」来隐藏游戏内聊天\n- 控制\n\n\n  - 鼠标灵敏度现在可以调整到两位小数\n- 玩法\n\n\n  - 比赛中的提示现在可以开启或关闭（这将启用/禁用玩家死亡后弹出的提示）\n- 社交互动\n\n\n  - 好友请求通知现在可以开启或关闭\n  - 好友通知现在可以开启或关闭\n  - 密语现在可以开启或关闭\n- 视频\n\n\n  - 新增 21:9 宽高比支持\n  - 玩家现在可以通过切换「显示系统时钟」设置来启用现实世界时钟",
+     "dev": null
+    },
+    {
+     "title": "社交功能",
+     "body": "- 某些赞赏现在会在回合结束投票中出现得更少（例如禅雅塔的圣治疗量和查莉娅的投射屏障施加次数）",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 英雄画廊现在会记住你上次查看的英雄，并在每次返回画廊时正确高亮该英雄\n- 修复了一个错误，该错误会导致「运载目标即将抵达终点」的音乐在比赛结束后仍继续播放\n- 修复了一个错误，该错误会导致游戏被外部应用程序强制切换到窗口模式时 UI 消失\n- 修复了一个错误，该错误有时会导致多名玩家同时尝试拾取生命包时，治疗视觉效果出现在错误的英雄身上\n- 修复了一个错误，该错误有时会导致不同英雄的胜利姿势相互穿模\n- 修复了击杀回放的若干光照问题",
+     "dev": null
+    },
+    {
+     "title": "地图",
+     "body": "- 国王大道的运载目标在进攻方未能推进时不再退回其起始位置\n- 调整了监测站：直布罗陀进攻方英雄选择界面的音量\n- 为大多数地图添加了观战相机碰撞\n- 修复了多张地图上的玩家碰撞问题\n- 修复了多张地图上的环境光照和阴影问题",
+     "dev": null
+    },
+    {
+     "title": "英雄",
+     "body": "- 修复了一个错误，该错误会导致 D.Va 在召唤机甲时有时忽略玩家碰撞\n- 降低了较大投射物（例如半藏的箭、禅雅塔的球）命中拐角处目标的可能性\n- 修复了一个错误，该错误会导致玩家切换英雄或离开游戏后，美的冰墙仍保留在游戏世界中\n- 修复了更多允许死神将暗影步移动到非预期位置的错误\n- 修复了一个错误，该错误有时会导致玩家使用「切换屏障」设置时，莱因哈特的屏障力场卡在「开启」状态\n- 修复了一个错误，该错误有时会导致路霸意外链钩到站在其身后的目标\n- 修复了一个错误，该错误会导致温斯顿的屏障发射器护盾忽略「音效音量」设置",
+     "dev": null
+    },
+    {
+     "title": "竞技比赛",
+     "body": "- 修复了一个错误，该错误有时会导致玩家无法重新加入比赛",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2016-07-19-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:43:07+00:00",
+  "status": "draft",
+  "source_hash": "sha256:c3f4b80eb2cb69291042daed64afc14c642aec025bf80091ecca7a8803197764",
+  "kept_english": []
+ }
+}

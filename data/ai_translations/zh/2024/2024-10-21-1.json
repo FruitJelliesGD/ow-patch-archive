@@ -1,0 +1,85 @@
+{
+ "id": "ai-2024-10-21-1",
+ "site": "ai",
+ "date": "2024-10-21",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/10",
+ "title": "《守望先锋》补丁说明——2024年10月21日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "平衡性在线修正更新",
+   "role": null,
+   "description": "这是一次英雄平衡性在线修正。2024 年 10 月 15 日补丁的回放代码仍然可用。",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": "英雄更新",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "输出",
+   "role": "damage",
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "sombra",
+     "name_en": "Sombra",
+     "name_cn": "黑影",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f348c1704dc50c009ac8acf6912a5a77eaf2a3acdd34e56927190af9eb9145d1.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Translocator",
+       "name_cn": "位移传动",
+       "slug": "translocator",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e81f286184e24512c724af16a960a1faca6ade164238b025d19da64226f05f4d.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从 7 秒降低至 6 秒。",
+         "before": 7.0,
+         "after": 6.0,
+         "by": -1.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2024-10-21-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:52:42+00:00",
+  "status": "draft",
+  "source_hash": "sha256:12564cf11253f37997374ae164d15f72b7aa876f9bc2ae58acded53ca25eacd8",
+  "kept_english": []
+ }
+}

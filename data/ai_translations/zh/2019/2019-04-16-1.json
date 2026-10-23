@@ -1,0 +1,247 @@
+{
+ "id": "ai-2019-04-16-1",
+ "site": "ai",
+ "date": "2019-04-16",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2019/04",
+ "title": "《守望先锋》补丁说明——2019年4月16日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "补丁亮点",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "全新季节性活动：守望先锋行动档案 2019——风暴预警",
+     "body": "在行动档案活动中体验守望先锋历史上的决定性时刻！准备好穿越回过去，造访美丽的古巴哈瓦那，守望先锋特工正在追踪臭名昭著的商人和黑爪同伙马克西米利安。与好友组队，抓捕并审问马克西米利安——他的所知可能塑造守望先锋的未来。重温往期行动档案活动的战斗，在逃离里阿尔托的同时击退成群的黒爪特工，并在国王大道阻止一场智械叛乱。游玩即可获得行动档案补给，解锁守望先锋过去的个性化物品，包括死局帮麦克雷、科学家莫伊拉、黑爪巴蒂斯特、社交名媛艾什等传奇皮肤，以及更多内容！",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "junkrat",
+     "name_en": "Junkrat",
+     "name_cn": "狂鼠",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "通过这项改动，我们希望略微提高狂鼠直接命中的距离。他的炸弹速度提高了，但我们进行了调整，使其不会影响弹道弧线。这意味着瞄准手感将保持不变。榴弹的弹跳减少、爆炸更快，这将让狂鼠能够更有意识地瞄准。这会减少对局中狂鼠榴弹乱滚的情况。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Frag Launcher",
+       "name_cn": "榴弹发射器",
+       "slug": "frag-launcher",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "弹道速度从 20 提高至 25",
+         "before": 20.0,
+         "after": 25.0,
+         "by": 5.0,
+         "by_pct": null,
+         "metric": "projectile_speed",
+         "raw_metric": "projectile speed",
+         "unit": "m/s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "榴弹现在弹跳更少，但爆炸更快",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "reaper",
+     "name_en": "Reaper",
+     "name_cn": "死神",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "暗影步最初被设计为纯粹的脱战位移工具，用于穿越地图，因为幽灵形态已经是很好的脱离手段。然而，这使得暗影步非常依赖特定场合，因此我们提高了它的灵活性，使其成为更好、不那么冷门的技能。这将使死神能够在更多进攻场合使用暗影步。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Shadow Step",
+       "name_cn": "幽灵步",
+       "slug": "shadow-step",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在可以在空中使用",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "退出暗影步的时间从 1.0 秒降低至 0.5 秒",
+         "before": 1.0,
+         "after": 0.5,
+         "by": -0.5,
+         "by_pct": null,
+         "metric": "time to exit shadow step",
+         "raw_metric": "time to exit shadow step",
+         "unit": "s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "死神在退出暗影步的整个过程中现在处于隐身状态",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "栏杆和其他可破坏物体不再阻挡传送",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "会被查莉娅的重力喷涌和狂鼠的钢铁陷阱禁用",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "symmetra",
+     "name_en": "Symmetra",
+     "name_cn": "秩序之光",
+     "role": "damage",
+     "icon": null,
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Teleporter",
+       "name_cn": "传送面板",
+       "slug": "teleporter",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "栏杆和其他可破坏物体不再阻挡传送面板的放置和传送",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "用户界面更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "英雄画廊",
+     "body": "- 你现在可以将胜利姿势选择设为随机",
+     "dev": null
+    },
+    {
+     "title": "社交互动",
+     "body": "- 现在有一个选项，可以将你的个人资料设置为仅当前小队可查看",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 修复了玩家站在某些物体上时视角会抖动的问题\n- 修复了快速切换到第三人称视角时镜头会轻微偏移的问题\n- 修复了玩家能够穿过伊利奥斯、尼泊尔和阿努比斯神殿地图上非预期的小缝隙进行射击的问题\n- 修复了使用秩序之光的传送面板后视角会与地平线齐平的问题",
+     "dev": null
+    },
+    {
+     "title": "英雄",
+     "body": "安娜\n\n- 修复了安娜的「茶歇」姿势中杯子升起的蒸汽不正确的问题\n- 修复了安娜强化后的英雄命中射击时，安娜未收到音频或视觉提示的问题\n\n艾什\n\n- 修复了当鲍勃受到禅雅塔的乱影响时，乱音效会播放的问题\n- 修复了鲍勃在奔跑时遇到英雄部署的大型物体（如狂鼠的炸弹轮胎或奥丽莎的超充能器）时，无法稳定停下并对其造成伤害的问题\n\n巴蒂斯特\n\n- 修复了维生力场被运载目标撞击时未立即被摧毁的问题\n\n堡垒\n\n- 修复了堡垒在哨戒模式中被末日铁拳的火箭重拳击飞到墙上时会受到伤害的问题\n\n末日铁拳\n\n- 修复了被火箭重拳击退的敌人不会与墙壁碰撞的问题\n- 修复了裂地重拳不会破坏应被破坏的物体的问题\n- 修复了即使奥丽莎正在使用强固防御，火箭重拳仍会将其击退的问题\n\n美\n\n- 修复了美在使用急冻时无法被其他英雄治疗的问题\n\n天使\n\n- 修复了天使强化后的英雄命中射击时，天使未收到音频或视觉提示的问题\n- 修复了天使在使用女武神时，治疗光束未获得防御助攻计数的问题\n\n奥丽莎\n\n- 修复了奥丽莎在使用强固防御时被末日铁拳的火箭重拳击飞到墙上会受到伤害的问题\n\n莱因哈特\n\n- 修复了莱因哈特在向下看时开启屏障后，向上看时无法正确举起屏障的问题\n\n士兵：76\n\n- 修复了他的英勇胜利姿势无法正确循环的问题\n\n秩序之光\n\n- 修复了秩序之光的哨戒炮攻击其他英雄部署的物体（破坏球的地雷禁区、托比昂的部署炮台等）时，秩序之光会获得终极技能充能的问题\n\n托比昂\n\n- 修复了托比昂的部署炮台攻击其他英雄部署的物体（破坏球的地雷禁区、秩序之光的哨戒炮等）时，托比昂会获得终极技能充能的问题\n\n黑百合\n\n- 修复了黑百合穿着 Biathalon 皮肤行走并瞄准开镜时，步枪会穿入她的头部和肩部的问题\n- 修复了死亡不会取消红外侦测的问题",
+     "dev": null
+    },
+    {
+     "title": "地图",
+     "body": "黑森林\n\n- 修复了飞行英雄可能卡在树上、攀墙英雄可能卡在鸟巢上的错误\n\n釜山\n\n- 修复了飞行英雄可能卡在树上的错误\n- 修复了寺院地图上的一个错误：英雄站在第一个占领点边缘时会弹跳\n\n卡斯蒂略\n\n- 修复了死神可能通过暗影步到达非预期位置的错误\n\n多拉多\n\n- 修复了观战镜头起始位置不正确的错误\n\n地平线月球基地\n\n- 修复了玩家可能卡在工作台顶部的错误\n\n国王大道\n\n- 修复了狂鼠的炸弹轮胎可能卡在国王大道地面格栅中的错误\n\n绿洲城\n\n- 修复了大学地图上的一个错误：触碰敌方队伍出生室大门的英雄会受到大量伤害\n\n努巴尼\n\n- 修复了D.Va使用呼叫机甲时可能卡在桌子后面的错误\n- 修复了墙上的常春藤会阻止某些技能命中敌人的错误，例如温斯顿的特斯拉炮和末日铁拳的毁天灭地\n\n里阿尔托\n\n- 修复了玩家在特定桥梁上被击杀后会掉穿桥梁的错误\n- 修复了玩家可能卡在手推车、墙壁和柜台之间的错误\n\n监测站：直布罗陀\n\n- 修复了破坏球可能卡在通风管道上的错误",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2019-04-16-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:51:49+00:00",
+  "status": "draft",
+  "source_hash": "sha256:3c08a60034ea7582f7d042f394932410c460fb803a911964b494e407328ef500",
+  "kept_english": []
+ }
+}

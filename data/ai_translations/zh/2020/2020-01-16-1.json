@@ -1,0 +1,328 @@
+{
+ "id": "ai-2020-01-16-1",
+ "site": "ai",
+ "date": "2020-01-16",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2020/01",
+ "title": "《守望先锋》补丁说明——2020年1月16日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "2020 农历新年",
+   "role": null,
+   "description": "准备好庆祝鼠年吧！\n\n今年，我们将以全新的季节性物品庆祝农历新年，包括传奇皮肤：变脸黑影、假面舞者莫伊拉、四物农乐卢西奥和歌剧布丽吉塔。除了全新的游戏模式「闪击夺旗」外，还可以体验夺旗模式的第三个竞技赛季。\n\n如需了解有关新模式的更多信息，请点击此处。",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "综合更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "功能更新：预设职责模式的队伍灵活选择",
+     "body": "不确定自己想玩哪个职责？现在，在启用预设职责模式的任意游戏模式中排队的队伍成员可以选择多个职责，表明他们在下一局游戏中愿意玩哪些职责。\n\n其他队伍成员的职责选择和竞技比赛技能评分可能会影响你有资格选择的职责，或你可以游玩的职责。例如，如果你选择了全部三个职责（重装、输出、治疗）以表明你愿意玩其中任意一个，而另外两名队伍成员选择了支援，那么你在下一局游戏中将无法游玩支援。",
+     "dev": null
+    },
+    {
+     "title": "自定义游戏选项",
+     "body": "自定义游戏设置的「大厅」部分新增了一个选项「数据中心偏好」。该选项让游戏创建者对游戏的托管位置拥有更多控制权。默认的「最佳可用」选项会自动为创建者提供可用的最佳连接质量。我们仅建议在没有任何单个数据中心能够同时为所有玩家提供最佳连接时才选择特定的数据中心。这通常只会在参与自定义游戏的玩家位于世界不同地理区域时发生。",
+     "dev": null
+    },
+    {
+     "title": "观战与回放更新",
+     "body": "- 新增热键「切换观战第三人称视角侧」，在使用简易第三人称观战视角选项时，可切换你所观战玩家越过的肩膀\n- 新增热键「切换普通／简易第三人称观战视角」，可在观战时于两种第三人称视角模式之间切换\n- 更新了死亡视角，使其从你原本注视的位置快速转向击杀者所在位置，以便更容易看清是否被身后或侧面的敌人击杀\n- 更新了数位英雄的简易第三人称观战视角位置，使其遮挡屏幕的范围更小\n- 修复了在简易第三人称视角下缩放时画面出现卡顿的问题\n- 进入或退出第一人称时，视角不再穿入英雄头部\n- 修复了数个视角平滑度和跳变问题",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "baptiste",
+     "name_en": "Baptiste",
+     "name_cn": "巴蒂斯特",
+     "role": "support",
+     "icon": null,
+     "dev_note": "维生力场放置在敌方火力无法触及的位置（例如拐角处）时，最终显得过于强大。降低其续航能力将有助于解决这种情况，同时它在开阔地带拯救队友方面依然强力。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Immortality Field",
+       "name_cn": "维生力场",
+       "slug": "immortality-field",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "最大持续时间从 8 秒降低至 5 秒",
+         "before": 8.0,
+         "after": 5.0,
+         "by": -3.0,
+         "by_pct": null,
+         "metric": "maximum duration",
+         "raw_metric": "maximum duration",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从 20 秒提高至 25 秒",
+         "before": 20.0,
+         "after": 25.0,
+         "by": 5.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      },
+      {
+       "name_en": "Amplification Matrix",
+       "name_cn": "增幅矩阵",
+       "slug": "amplification-matrix",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "终极技能消耗提高 20%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 20.0,
+         "metric": "ultimate_cost",
+         "raw_metric": "ultimate cost",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "mei",
+     "name_en": "Mei",
+     "name_cn": "美",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "美的主要攻击的减速效果有时会让人感觉难以逃脱。降低其减速幅度和持续时间将使其更容易应对。完全冻结目标所需的时间保持不变。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Endothermic Blaster (Primary Fire)",
+       "name_cn": "冰霜冲击枪（主要攻击）",
+       "slug": "endothermic-blaster-primary-fire",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "减速效果现在使敌人移动速度降低 20-70%，低于之前的 30-90%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "减速效果持续时间从 1.5 秒降低至 1.0 秒",
+         "before": 1.5,
+         "after": 1.0,
+         "by": -0.5,
+         "by_pct": null,
+         "metric": "slowing effect duration",
+         "raw_metric": "slowing effect duration",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "d-va",
+     "name_en": "D.Va",
+     "name_cn": "D.Va",
+     "role": "tank",
+     "icon": null,
+     "dev_note": "机动技能更低的冷却时间将使 D.Va 能够更轻松地在进攻和防守之间切换。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Boosters",
+       "name_cn": "推进器",
+       "slug": "boosters",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从 5 秒降低至 3 秒",
+         "before": 5.0,
+         "after": 3.0,
+         "by": -2.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "orisa",
+     "name_en": "Orisa",
+     "name_cn": "奥丽莎",
+     "role": "tank",
+     "icon": null,
+     "dev_note": "奥丽莎在强固防御激活时一直有点难以对付，因此我们降低了伤害减免的幅度，让敌人在此期间能造成更有效的伤害。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Fortify",
+       "name_cn": "强固防御",
+       "slug": "fortify",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "伤害减免从 50% 降低至 40%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "hanzo",
+     "name_en": "Hanzo",
+     "name_cn": "半藏",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "半藏在重做中获得的弹道速度提升，最终使他的箭矢在较远距离上过于强势。降低速度将削弱他的狙击能力，同时仍让他在中距离保持强势。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Storm Bow",
+       "name_cn": "风暴弓",
+       "slug": "storm-bow",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "最大弹道速度从 125 降低至 110",
+         "before": 125.0,
+         "after": 110.0,
+         "by": -15.0,
+         "by_pct": null,
+         "metric": "maximum projectile speed",
+         "raw_metric": "maximum projectile speed",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "doomfist",
+     "name_en": "Doomfist",
+     "name_cn": "末日铁拳",
+     "role": "tank",
+     "icon": null,
+     "dev_note": "上勾重拳紧接着主要攻击本身就是一个过于有效的连招，因此我们增加了敌人做出反应的时间。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Rising Uppercut",
+       "name_cn": "上勾重拳",
+       "slug": "rising-uppercut",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "恢复时间从 0.2 秒提高至 0.35 秒",
+         "before": 0.2,
+         "after": 0.35,
+         "by": 0.15,
+         "by_pct": null,
+         "metric": "recovery",
+         "raw_metric": "recovery time",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 修复了启用高精确度鼠标输入时，切换蹲伏工作不一致的问题\n- 修复了少数包含极高技能水平玩家的对局中，SR 增减幅度大幅降低的问题\n- 工坊\n\n\n  - 修复了「前往集合英雄」在攻防作战和攻击/护送中无法生效的问题\n  - 修复了黑影假人无法黑客入侵急救包的问题",
+     "dev": null
+    },
+    {
+     "title": "地图",
+     "body": "阿努比斯神殿\n\n- 修复了部分英雄可能卡在 B 点外一块岩石后方的问题\n\n艾兴瓦尔德\n\n- 修复了破坏球在特定位置使用重力坠击时可能暂时卡住的问题\n- 修复了末日铁拳可能卡住的位置\n\n渣客镇\n\n- 修复了部分玩家可以站在最终检查点附近一堵墙上的问题\n- 修复了黑影的位移传动和巴蒂斯特的维生力场可能落在 A 点附近楼梯与墙壁之间非预期位置的问题\n\n多拉多\n\n- 修复了 A 点与 B 点之间墙上生长的常春藤会阻挡弹道的问题\n\n里阿尔托\n\n- 修复了温斯顿和西格玛可能卡在 A 点外墙壁、桥梁和缆车之间的问题\n\n监测站：直布罗陀\n\n- 修复了巴蒂斯特的维生力场投掷到进攻方初始出生点外特定位置时会消失的问题",
+     "dev": null
+    },
+    {
+     "title": "英雄",
+     "body": "巴蒂斯特\n\n- 修复了在某些情况下维生力场可能无法部署或在部署过程中被摧毁的错误\n\n天使\n\n- 修复了在第三人称视角下使用女武神时，天使的黄金法杖和手枪会消失的错误\n\n猎空\n\n- 修复了玩家在使用闪回时可以更换英雄的错误\n\n西格玛\n\n- 修复了西格玛的护盾可能无法部署的错误\n\n秩序之光\n\n- 修复了在建造过程中摧毁秩序之光的传送面板会短暂允许她无需等待冷却时间即可再建造一个的错误",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2020-01-16-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:53:44+00:00",
+  "status": "draft",
+  "source_hash": "sha256:3b6a208f7782d70cffcddfd1ef405cfa8c64c0ac7f85ba5081017fbbc4338bbf",
+  "kept_english": []
+ }
+}

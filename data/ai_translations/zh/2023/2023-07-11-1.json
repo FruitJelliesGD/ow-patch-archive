@@ -1,0 +1,619 @@
+{
+ "id": "ai-2023-07-11-1",
+ "site": "ai",
+ "date": "2023-07-11",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/07",
+ "title": "《守望先锋》补丁说明——2023年7月11日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "2023 夏季运动会",
+   "role": null,
+   "description": "是时候在阳光下享受夏季运动会季节活动的乐趣了！登录游戏并游玩动感斗球、动感斗球REMIX以及全新的温斯顿的沙滩排球，还能赢取丰厚的新外观奖励，包括末日铁拳的全新史诗皮肤！",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "综合更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "火力全开调整",
+     "body": "- 修复了一个错误，该错误会导致玩家在竞技比赛中于新回合开始时获得火力全开，无论游玩何种游戏模式，或在快速比赛中游玩占领要点时也会出现。\n- 在回合初期更难获得火力全开和炽热状态。\n- 火力全开的冷却时间降低至 3 秒。这应能避免大多数英雄在做出积极贡献后延迟获得火力全开的情况。\n- 当英雄未处于火力全开状态时，火力全开分数衰减速度略微加快。\n- 长时间维持火力全开变得更加困难。",
+     "dev": null
+    },
+    {
+     "title": "全新活动中心",
+     "body": "主菜单中现已提供全新的活动信息集中位置，所有活动挑战、奖励和模式都会在此列出。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "竞技更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "团队队列",
+     "body": "团队队列是《守望先锋 2》全新的竞技模式，要求所有人以完整的五人小队进行游戏。团队队列没有排位级别限制，并将持续开放至第 5 赛季结束。该模式的其他重要规则如下：\n\n- 玩家可以组队，无论彼此排位级别差距多大。\n- 宗师玩家可以游玩，即使与其他最多四名宗师玩家组队。\n- 团队队列限制为 1 名重装、2 名输出和 2 名支援。\n- 玩家不按特定职责排队，而是在每场比赛中自行选择职责。\n- 平台池限制仍然有效，意味着主机玩家仍只能与其他主机玩家组队，不能与 PC 玩家组队。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": "英雄更新",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "重装",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "orisa",
+     "name_en": "Orisa",
+     "name_cn": "奥丽莎",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/20c12a10cfe0b5608f9eec63a74ecb0ccd18a114019bc77bb2765f87776e17ed.png",
+     "dev_note": "开发者评论：我们正在提高强固防御的有效性，使奥丽莎成为对抗依赖控制效果的队伍阵容时更强力的克制选择。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Fortify",
+       "name_cn": "强固防御",
+       "slug": "fortify",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d697fa90726cf683222920822d2ee00a85e0420c6cbc6ec2365573f313d06357.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "伤害减免从 40% 提高至 50%。",
+         "before": 40.0,
+         "after": 50.0,
+         "by": 10.0,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "damage reduction",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "ramattra",
+     "name_en": "Ramattra",
+     "name_cn": "拉玛刹",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/cf69d4bfa61ac14f61d3d541b0d2687a20fa24f55afe7a392d746f5ccb138dea.png",
+     "dev_note": "开发者评论：有时，吞噬漩涡的弹道命中敌人后会以不可预测的方式弹开，从而延迟其激活。这项体验优化改动提高了该技能的稳定性，并使它更容易用于对抗成群的敌人，而无需担心意外碰撞。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Ravenous Vortex",
+       "name_cn": "吞噬漩涡",
+       "slug": "ravenous-vortex",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/7a7334480013e1d2eccd7df8b4b1e2f484ca81dfe5719fd3506d1055ba79908c.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "弹道现在会穿过敌方英雄，但仍会被屏障阻挡。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "reinhardt",
+     "name_en": "Reinhardt",
+     "name_cn": "莱因哈特",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b5e3a4f5629a3acfd47b5d2e695e79ea964b060bf67b7e4f8f15e63accd5f934.png",
+     "dev_note": "开发者评论：我们正在提高莱因哈特的屏障续航能力，帮助他更好地保护盟友。我们会持续关注这一点，因为我们希望避免玩家感觉自己总是在射击屏障的情况。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Barrier Field",
+       "name_cn": "屏障力场",
+       "slug": "barrier-field",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/121f13903665417446ee4673d9740080a3bc117e285cf3dcf6547861a0bc7d43.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "最大生命值从 1200 提高至 1400。",
+         "before": 1200.0,
+         "after": 1400.0,
+         "by": 200.0,
+         "by_pct": null,
+         "metric": "maximum health",
+         "raw_metric": "maximum health",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "wrecking-ball",
+     "name_en": "Wrecking Ball",
+     "name_cn": "破坏球",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f71d6948e8b6ae340e20ab569ef66d24aead6032c34a7ec09a00ea864b413a24.png",
+     "dev_note": "开发者评论：破坏球很少手动装填四联火炮，因为变形为球形态时会触发自动装填。这项改动使不变形装填成为更可行的选择。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Quad Cannons",
+       "name_cn": "四联火炮",
+       "slug": "quad-cannons",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/12339775bfc5bfb8a4ad735a2eef452992e90f5374d341baf09f19bc9968147a.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "手动装填时间从 2 秒降低至 1.6 秒。这不会影响变形为球形态时的自动装填，该装填时间仍为 2 秒。",
+         "before": 2.0,
+         "after": 1.6,
+         "by": -0.4,
+         "by_pct": null,
+         "metric": "manual reload time",
+         "raw_metric": "manual reload time",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "输出",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "sojourn",
+     "name_en": "Sojourn",
+     "name_cn": "索杰恩",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/515f25a729a4a3f51d956fc54c600dc60d8e5242f2b188c178496cea1a2e11b5.png",
+     "dev_note": "开发者评论：我们正在降低电磁炮主要攻击模式的整体散布，帮助索杰恩更稳定地积攒能量。达到最大散布所需的射击次数增加，将使玩家在短点射时能更直接地控制弹道的瞄准。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Railgun",
+       "name_cn": "电磁炮",
+       "slug": "railgun",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3d7f261e05e3abda155cede4409ec8348490e286805c123d54d7f81fdd50d077.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "达到最大散布所需的射击次数从 8 提高至 12。",
+         "before": 8.0,
+         "after": 12.0,
+         "by": 4.0,
+         "by_pct": null,
+         "metric": "number of shots to reach maximum spread",
+         "raw_metric": "number of shots to reach maximum spread",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "散布降低 12%。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 12.0,
+         "metric": "spread",
+         "raw_metric": "spread",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "soldier-76",
+     "name_en": "Soldier: 76",
+     "name_cn": "士兵76",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1cb6f3ad4b8afdc1a901c26180a4c134018bb805b91eefe9b7cf2946879f10c8.png",
+     "dev_note": "开发者评论：士兵：76 的优势之一是他稳定的伤害输出，但在上一轮改动后，这一优势还不够有效。我们希望避免将主要攻击模式的伤害完全回调至 20 点，因为过去已证明这过于强大。因此，我们改为略微调整主要和次要攻击模式的伤害。他还将能通过生物力场提供的额外治疗，在战斗中坚持更久，并更有效地支援队伍。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Heavy Pulse Rifle",
+       "name_cn": "重脉冲步枪",
+       "slug": "heavy-pulse-rifle",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/69eaf669cd646a617439592615f023cfec82c27f4a3e19f48188941b3feaf55f.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "伤害从 18 提高至 19。",
+         "before": 18.0,
+         "after": 19.0,
+         "by": 1.0,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "damage",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Helix Rockets",
+       "name_cn": "螺旋飞弹",
+       "slug": "helix-rockets",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8fedb348952552227b6e2ec85cf14214106b901afce2a9657267153bb2a8cac3.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "爆炸伤害从 80 提高至 90。",
+         "before": 80.0,
+         "after": 90.0,
+         "by": 10.0,
+         "by_pct": null,
+         "metric": "explosion damage",
+         "raw_metric": "explosion damage",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Biotic Field",
+       "name_cn": "生物力场",
+       "slug": "biotic-field",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/aaadd3dee89ac8797ecb7a1e647f574a034b1930726296fd17946d343254bdf0.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "每秒治疗量从 35 提高至 40。",
+         "before": 35.0,
+         "after": 40.0,
+         "by": 5.0,
+         "by_pct": null,
+         "metric": "healing",
+         "raw_metric": "healing per second",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "symmetra",
+     "name_en": "Symmetra",
+     "name_cn": "秩序之光",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b0a19d5c8b0e299705036f4d0b9394da5ff415dc0dcd4e9207b6e63254022dff.png",
+     "dev_note": "开发者评论：秩序之光对地图的依赖程度异常之高，以至于她在某些情况下极为强势，而在另一些情况下却毫无效果。以下改动提高了她的武器有效性，同时减轻了哨戒炮带来的一些挫败感。光子发射器的主要攻击模式现在由于附带护盾生命值恢复条件，对某些英雄的克制更加有针对性，而次要攻击模式现在只需少一发完全充能的弹道即可消灭大多数英雄。秩序之光的哨戒炮在集中攻击同一目标时尤其强大，因为其合计总伤害输出加上减速效果。我们正在降低其原始伤害，并将其定位转向功能性，使分散放置成为更可行的选择。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Photon Projector",
+       "name_cn": "光子发射器",
+       "slug": "photon-projector",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1b3f003d2ba6bba4f3d44f167cd1b03469c4e3c4d3900805b8adddffeedd2c56.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "次要攻击模式最大命中伤害从 45 提高至 50。",
+         "before": 45.0,
+         "after": 50.0,
+         "by": 5.0,
+         "by_pct": null,
+         "metric": "secondary fire maximum impact damage",
+         "raw_metric": "secondary fire maximum impact damage",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "次要攻击模式最大爆炸伤害从 45 提高至 50。",
+         "before": 45.0,
+         "after": 50.0,
+         "by": 5.0,
+         "by_pct": null,
+         "metric": "secondary fire maximum explosion damage",
+         "raw_metric": "secondary fire maximum explosion damage",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "当主要攻击模式对屏障或拥有护盾生命值的敌人造成伤害时，每秒最多恢复 30 点护盾生命值。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Sentry Turret",
+       "name_cn": "哨戒炮",
+       "slug": "sentry-turret",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6ca1ad903ec0121026994bd2318dd5f2488ba40e5dbf5bdb2d5fad8474359253.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "每秒伤害从 40 降低至 25。",
+         "before": 40.0,
+         "after": 25.0,
+         "by": -15.0,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "damage per second",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "哨戒炮现在造成伤害期间以及之后 1 秒内，会向盟友显示敌方英雄。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "torbjorn",
+     "name_en": "Torbjörn",
+     "name_cn": "托比昂",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2ef3a4bdd117829a83867a7775ece351c4226f29b24cdbf8d7fac89443e8d8a2.png",
+     "dev_note": "开发者评论：托比昂的炮台投入较小却影响略大，因此我们将其部分强度转移到他的其他技能上，以奖励更精准的枪法。热力过载现在会部分装填弹药，确保激活技能与射出弹道之间没有空档。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Rivet Gun",
+       "name_cn": "铆钉枪",
+       "slug": "rivet-gun",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6fd3a8b1e1c43cd3c6f1a03d6ff9e76d9394d537235bc7b57380e78937e991ff.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "次要攻击模式散布从 5 度降低至 4.5 度。",
+         "before": 5.0,
+         "after": 4.5,
+         "by": -0.5,
+         "by_pct": null,
+         "metric": "secondary fire spread",
+         "raw_metric": "secondary fire spread",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Deploy Turret",
+       "name_cn": "部署炮台",
+       "slug": "deploy-turret",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a3791d6155a72f1dd4109d99a7d730b5f489f0442abd6582b429bcca36a2dc75.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "伤害从 14 降低至 11。",
+         "before": 14.0,
+         "after": 11.0,
+         "by": -3.0,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "damage",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从 10 秒提高至 12 秒。",
+         "before": 10.0,
+         "after": 12.0,
+         "by": 2.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      },
+      {
+       "name_en": "Overload",
+       "name_cn": "热力过载",
+       "slug": "overload",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b59687c0dd86bbc41b754388e7b21deba5397c61808c0d9b375c062c9eaf85ac.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "使用时现在会装填 6 发弹药。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "支援",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "kiriko",
+     "name_en": "Kiriko",
+     "name_cn": "雾子",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/24d1d7bf86c331b3d81b934442ed36fd0121f6815255c6f26f456127fb342d15.png",
+     "dev_note": "开发者评论：最初，我们提高了御符的恢复时间，以促进在治疗爆发之间更多使用锥。尽管有这一好处，我们仍部分回调了该改动，使主要攻击模式在雾子被迫完全专注于治疗的情况下感觉更灵敏。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Healing Ofuda",
+       "name_cn": "符",
+       "slug": "healing-ofuda",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6b8830bd7173de38016ef129e117ac6f418026a6ec4501ab5cb7cdd99bd6f5b8.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "恢复时间从 1 秒降低至 0.9 秒。",
+         "before": 1.0,
+         "after": 0.9,
+         "by": -0.1,
+         "by_pct": null,
+         "metric": "recovery",
+         "raw_metric": "recovery",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "zenyatta",
+     "name_en": "Zenyatta",
+     "name_cn": "禅雅塔",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9367143a32f3fc07781330a0b26c6f1087361204a2b7e4088d1daf26428273f2.png",
+     "dev_note": "开发者评论：这些改动叠加后，禅雅塔施加乱的风险会更高，也让受影响的目标有更多反制手段。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Orb of Discord",
+       "name_cn": "乱",
+       "slug": "orb-of-discord",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f416ae3c602c4f920551057176a3618441f943a0faea5e3cf77dc5db0e5128a5.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "最大范围从 40 米降低至 30 米。",
+         "before": 40.0,
+         "after": 30.0,
+         "by": -10.0,
+         "by_pct": null,
+         "metric": "maximum range",
+         "raw_metric": "maximum range",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "脱离视线后效果从目标身上消退的时间从 2 秒降低至 1.5 秒。",
+         "before": 2.0,
+         "after": 1.5,
+         "by": -0.5,
+         "by_pct": null,
+         "metric": "time to wear off the target when not in line-of-sight",
+         "raw_metric": "time to wear off the target when not in line-of-sight",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "信号系统\n\n- 修复了黑影通过墙体对敌方所属物体发送信号的问题。这包括托比昂的炮台、士兵：76 的生物力场和黑影的位移传动等物体。\n- 修复了渣客女王的飞刀不在手中时她死亡后飞刀仍可被发送信号的情况。\n- 修复了生命之梭的花瓣平台在空中时发送信号会使用信号标记的问题。\n- 修复了空中「最后见到」信号错误使用信号标记、而地面「最后见到」信号未使用信号标记的情况。\n- 修复了训练机器人阻止共享终极技能状态的问题。\n- 修复了 D.Va 在机甲内通过按下终极技能状态按钮瞄准队友时，错误地报告呼叫机甲的终极技能状态而非自毁的问题。\n\n其他错误修复\n\n- 修复了部分玩家看到未排名地图加载界面而非竞技比赛队伍阵容和地图加载界面的问题。\n- 修复了阻止玩家选择「无头衔」选项的错误。\n- 修复了在对局中进入对话时 Questwatch 背景位置错误的问题。\n- 修复了角色精通挑战在某些情况下未在回合结束流程中出现的问题。\n- 修复了在 21:9 比例下查看时，精彩镜头中缺少英雄图标的问题。\n- 修复了好友的生涯概况有时显示为空白或缺少项目的问题。\n- 修复了神秘英雄对局报告缺少信息的问题。\n- 修复了选项菜单中部分语言的「100.0%」等数值被截断的错误。\n- 解决了若干本地化问题。\n- 修复了若干崩溃问题。",
+     "dev": null
+    },
+    {
+     "title": "地图",
+     "body": "暴雪世界\n\n- 修复了地图中多个地点的光照问题。\n\n皇家赛道\n\n- 修复了地图中多个地点的光照问题。\n\n监测站：直布罗陀\n\n- 修复了地图中可能影响玩法元素的缝隙。\n\n伊利奥斯\n\n- 修复了地图中多个地点的光照问题。\n\n努巴尼\n\n- 修复了地图中允许部分英雄离开可玩区域的区域。\n\n绿洲城\n\n- 修复了地图中可能影响玩法元素的缝隙。",
+     "dev": null
+    },
+    {
+     "title": "英雄",
+     "body": "艾什\n\n- 修复了近战攻击后使用开镜瞄准时，动画与枪械开火不匹配的问题。\n\n巴蒂斯特\n\n- 修复了美离开急冻后短时间内维生力场未能保护她的错误。\n\n卡西迪\n\n- 修复了卡西迪的磁力手雷未能禁用以下效果的错错误：巴蒂斯特的动力战靴，以及西格玛的引力乱流和天使的女武神期间的飞行。\n\n回声\n\n- 修复了回声复制英雄后无法播放任何语音的情况。\n\n狂鼠\n\n- 修复了与生命之梭花瓣平台的交互帮助狂鼠离开可玩空间的问题。\n\n雾子\n\n- 修复了使用铃后立即近战攻击时近战动画不播放的问题。\n\n生命之梭\n\n- 修复了生命之梭的英雄图标挑战未正确推进的错误。\n- 修复了花瓣平台的问题：从平台某些区域跳跃时，跳跃增益未生效。\n- 修复了生命之梭因环境击杀获得过高伤害减免数值的错误。\n- 修复了被生命之握拉拽的队友可能因坠落区域边界而死亡的情况。\n\n奥丽莎\n\n- 修复了部分皮肤过热效果未正确播放的问题。\n\n拉玛刹\n\n- 修复了击晕拉玛刹并打断吞噬漩涡后，该技能可立即再次施放的错误。\n\n死神\n\n- 修复了与花瓣平台的交互允许玩家离开可玩空间的问题。\n\n莱因哈特\n\n- 修复了英雄选择界面中莱因哈特的胡须在部分皮肤上显示变形的问题。\n- 修复了使用控制器时「按住蓄力」选项破坏动画的交互问题。\n\n士兵：76\n\n- 修复了在狐的影响下使用战术目镜时，重脉冲步枪动画可能出现的错误。\n\n黑影\n\n- 修复了若干皮肤光照过亮的问题。\n- 修复了启用「切换黑客入侵」选项时，主武器开火未优先于待执行的黑客入侵的错误。\n\n秩序之光\n\n- 修复了花瓣平台与传送面板的交互允许玩家离开可玩空间的问题。\n\n猎空\n\n- 修复了与生命之梭花瓣平台的交互允许猎空在部分地图从可玩空间外争夺目标点的问题。\n- 修复了切换英雄后，神话猎空皮肤的英雄选择音效持续播放的错误。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2023-07-11-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:56:41+00:00",
+  "status": "draft",
+  "source_hash": "sha256:2ce470b204a10a9c15a9c229bbca41ffa893f7e9b616a21d05d692f46d365140",
+  "kept_english": []
+ }
+}

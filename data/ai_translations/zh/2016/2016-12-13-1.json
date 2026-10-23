@@ -1,0 +1,316 @@
+{
+ "id": "ai-2016-12-13-1",
+ "site": "ai",
+ "date": "2016-12-13",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2016/12",
+ "title": "《守望先锋》补丁说明——2016年12月13日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "补丁亮点：",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "新季节性活动：雪国仙境",
+     "body": "《守望先锋》将带着全新的季节性活动融入节日气氛。在接下来的三周里，花村和国王大道将挂满节日彩灯，我们会推出一批全新的节日主题装饰品，你可以和朋友来一场雪仗，我们的补给箱也会系上节日蝴蝶结。\n\n拿起一杯热可可，一路欢唱，前往《守望先锋》的雪国仙境。\n\n了解更多详情，请点击此处。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "综合更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 为黑影添加了新的「Boop」可解锁语音\n- 玩家现在可以从自定游戏菜单中选择 1v1 神秘决斗和 3v3 淘汰赛模式\n- 添加了「保持组队」功能，玩家可以在比赛结束后继续与队友保持组队",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": "为了解决第一个问题，我们用更具主动性的技能替换了她此前较为被动的光子护盾技能：光子屏障。现在，秩序之光可以在进攻时带头冲锋，或在防守时主动为队伍抵挡伤害，从而阻止敌方的大举推进。\n\n关于第二点，我们注意到，当玩家发现自己的传送面板不再那么有用时，往往会换掉秩序之光。例如，在攻防作战地图上防守时，玩家常常用她防守第一个占领点，一旦该点失守就迅速换成其他英雄。为了让她在更多情况下都能发挥更大作用，我们为她的传送面板提供了一个替代方案。护盾发生器同样需要敌人认真应对，但在更多情况下都能派上用场。\n\n哨戒炮的改动让她能更快重建自己的哨戒炮阵地。即使所有哨戒炮都被清除，现在玩家也更容易在敌方下一波推进前把它们全部重新架设起来。\n\n我们还提高了她光子发射器的射程，让她更容易积累并维持对目标的高额充能。",
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "symmetra",
+     "name_en": "Symmetra",
+     "name_cn": "秩序之光",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "我们想解决秩序之光的两个主要问题。首先，总体来看，我们觉得她的玩法不够主动。其次，由于她传送面板的特性，她在不同地图和游戏模式下的某些情况中显得很弱。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Photon Barrier (New Ability)",
+       "name_cn": "光子屏障（新技能）",
+       "slug": "photon-barrier-new-ability",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "替换她现有的光子护盾技能",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "在秩序之光面前生成一道大型能量屏障，屏障向前推进时能够阻挡敌方火力",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Shield Generator (New Ultimate Ability Option)",
+       "name_cn": "护盾发生器（新终极技能选项）",
+       "slug": "shield-generator-new-ultimate-ability-option",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "秩序之光的终极技能现在可以在传送面板和一个新选项之间做出选择：护盾发生器",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "护盾发生器会放置一个装置，为有效半径内的队友提供额外护盾（无论他们与护盾发生器之间是否有屏障、墙壁或障碍物阻挡）",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Photon Projector (Primary Fire)",
+       "name_cn": "光子发射器（主要攻击模式）",
+       "slug": "photon-projector-primary-fire",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "射程从 5 米提高至 7 米",
+         "before": 5.0,
+         "after": 7.0,
+         "by": 2.0,
+         "by_pct": null,
+         "metric": "range",
+         "raw_metric": "range has been",
+         "unit": "m"
+        }
+       ]
+      },
+      {
+       "name_en": "Sentry Turret",
+       "name_cn": "哨戒炮",
+       "slug": "sentry-turret",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "可携带的哨戒炮数量从 3 座提高至 6 座",
+         "before": 3.0,
+         "after": 6.0,
+         "by": 3.0,
+         "by_pct": null,
+         "metric": "turrets that can be carried have been",
+         "raw_metric": "turrets that can be carried have been",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从 12 秒降低至 10 秒",
+         "before": 12.0,
+         "after": 10.0,
+         "by": -2.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown has been",
+         "unit": "s"
+        }
+       ]
+      },
+      {
+       "name_en": "Photon Shield",
+       "name_cn": "光子护盾",
+       "slug": "photon-shield",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "被新的光子屏障技能替换",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Teleporter",
+       "name_cn": "传送面板",
+       "slug": "teleporter",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "生命值从 200 降低至 50",
+         "before": 200.0,
+         "after": 50.0,
+         "by": -150.0,
+         "by_pct": null,
+         "metric": "health",
+         "raw_metric": "health has been",
+         "unit": "hp"
+        },
+        {
+         "text_en": null,
+         "text_cn": "护盾从 0 提高至 350",
+         "before": 0.0,
+         "after": 350.0,
+         "by": 350.0,
+         "by_pct": null,
+         "metric": "shield",
+         "raw_metric": "shields have been",
+         "unit": "hp"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "zarya",
+     "name_en": "Zarya",
+     "name_cn": "查莉娅",
+     "role": "tank",
+     "icon": null,
+     "dev_note": "这是一个错误修复，但我们认为它足够重要，值得单独说明。我们有一个长期存在的错误，会让「穿透」伤害对查莉娅的屏障造成两次伤害。有时这会让查莉娅受益（例如，跳到莱因哈特的烈焰打击前面是快速积攒大量能量的好办法），有时又会让她吃大亏（例如，源氏的斩原本需要两刀才能击穿她的护盾，却变成一刀击穿）。这一改动并非有意加强或削弱查莉娅。我们只是想让她的技能按应有的方式运作，并会持续关注它对查莉娅平衡性的影响。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Particle Barrier/Projected Barrier",
+       "name_cn": "粒子屏障/投射屏障",
+       "slug": "particle-barrier-projected-barrier",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "像莱因哈特的烈焰打击或半藏的竜这类会对屏障和屏障内的英雄同时造成伤害的攻击，不再对屏障造成两次伤害",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- [PS4 Pro] 修复了在 4K 显示器上可能遮挡或隐藏 UI 元素的问题\n- 修复了在集结队伍界面允许多名玩家选择同一英雄，但会在重生后强制其中一名玩家重新选择的问题\n- 修复了玩家尝试观战好友时会被强制加入与 AI 对战比赛的问题\n- 修复了玩家在回合结束时切换英雄会导致黑屏的问题\n- [PC] 修复了即使已将关闭英雄选择界面的功能绑定到其他按键，H 键仍能关闭该界面的问题",
+     "dev": null
+    },
+    {
+     "title": "AI",
+     "body": "- 在占领要点比赛结束后，机器人不再能够使用技能或攻击敌人\n- [Console] 修复了在 1v1 比赛中无法选择安娜的问题",
+     "dev": null
+    },
+    {
+     "title": "街机先锋",
+     "body": "- 修复了玩家加入进行中的 3v3 比赛后无法正确获得经验值的问题\n- 修复了在 1v1 和 3v3 比赛中，精彩回放开场和全场最佳期间战网昵称无法正确显示的问题\n- 修复了 3v3 比赛中复生计时器持续显示的问题",
+     "dev": null
+    },
+    {
+     "title": "竞技比赛",
+     "body": "- 修复了在少数情况下允许多名玩家选择同一英雄的问题",
+     "dev": null
+    },
+    {
+     "title": "英雄",
+     "body": "- 修复了 D.Va 的机甲被摧毁时其上方的名牌不会消失，并显示「0」而不是玩家名称的问题\n- 修复了 D.Va 直视地面时会出现「你」指示标记（通常只出现在击杀镜头中）的问题\n- D.Va 的视频教程现在已包含其防御矩阵资源机制的改动\n- 修复了源氏的刀会穿透刀鞘的问题\n- 修复了引爆震荡地雷时会播放狂鼠钢铁陷阱动画的问题\n- 修复了莱因哈特使用姿势后其锤子对部分玩家不可见的问题\n- 修复了影响路霸爆裂枪辅助攻击模式精准度的问题\n- 修复了一个错误：终极技能语音在被黑影入侵后仍会继续播放\n- 修复了托比昂激活终极技能时不会播放其锤子音效的问题\n- 修复了黑百合的抓钩在穿过秩序之光的传送面板后才开始计算冷却时间的问题\n- [Console] 修复了天使使用天使之杖为未对敌人造成伤害的队友提高伤害时也能获得终极技能充能的问题\n- [Console] 修复了莱因哈特被黑影入侵后无法取消屏障力场的问题\n- [Console] 修复了黑影的黑客入侵无法取消士兵：76 疾跑技能的问题\n- [Console] 黑影的电磁脉冲终极技能命中秩序之光的哨戒炮时，不再增加她的火力全开计量\n- [Console] 当多名黑影尝试入侵同一个治疗包时，现在由最先开始入侵的玩家控制它\n- [Console] 修复了黑影的相时而动被动技能无法在训练靶场隔墙看到训练机器人的问题\n- [Console] 修复了黑影使用自动手枪射击时准星无法稳定扩散的问题",
+     "dev": null
+    },
+    {
+     "title": "地图",
+     "body": "- 修复了黑影能在监测站：直布罗陀抵达非预期位置的问题\n- 修复了在国王大道上天使在少数情况下无法使用重生的问题",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2016-12-13-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "deepseek-flash (DeepSeek Harness)",
+  "generated_at": "2026-10-23T22:00:00+08:00",
+  "status": "draft",
+  "source_hash": "sha256:f8215a095930e3bf59f1b71f717348c41eecadf9e4c715c56460a892692abde3",
+  "kept_english": [
+   "Boop",
+   "PS4 Pro",
+   "PC",
+   "Console",
+   "AI",
+   "UI",
+   "4K"
+  ]
+ }
+}

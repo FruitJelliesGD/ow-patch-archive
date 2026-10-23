@@ -1,0 +1,254 @@
+{
+ "id": "ai-2021-03-11-1",
+ "site": "ai",
+ "date": "2021-03-11",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2021/03",
+ "title": "《守望先锋》补丁说明——2021年3月11日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "hero_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "genji",
+     "name_en": "Genji",
+     "name_cn": "源氏",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/765cd44aab948bd53082079dfdcf3ce967e8786cf26e4505b797b092c1e6478e.png",
+     "dev_note": "我们提高了源氏镖的射速，让他在终极技能之外也能发挥更大作用，同时上调了斩的终极技能消耗，以匹配其提升后的伤害潜力。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Shuriken",
+       "name_cn": "气",
+       "slug": "shuriken",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8d0916035141abd9ab2bf72dbcfd0460b7a0019529e023d259ad4340890b34b3.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "恢复时间从 0.75 降低至 0.68",
+         "before": 0.75,
+         "after": 0.68,
+         "by": -0.07,
+         "by_pct": null,
+         "metric": "recovery",
+         "raw_metric": "recovery",
+         "unit": "s"
+        }
+       ]
+      },
+      {
+       "name_en": "Dragonblade",
+       "name_cn": "斩",
+       "slug": "dragonblade",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e9c3c82c08ce1a6006dbdf6905591040ed83ddceba81efb2e526c217cd57c931.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "终极技能消耗提高 15%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 15.0,
+         "metric": "ultimate_cost",
+         "raw_metric": "ultimate cost",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "mei",
+     "name_en": "Mei",
+     "name_cn": "美",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a4c1e3c5533675ba4941c48809c54e0412774e022b1e324f7ec5915fef372db9.png",
+     "dev_note": "此前有一项改动使美的急冻碰撞体积与她的冰墙保持一致，这意味着她在冰块内时不再能被队友选中。由于她在急冻期间无法轻易获得队友治疗，我们提高了她的急冻治疗速率。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Cryo-Freeze",
+       "name_cn": "急冻",
+       "slug": "cryo-freeze",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b9507f892676c729768b3cb9eec4fb2195bbadb1f229a6a332d282ffa32410db.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "每秒治疗量从 37.5 提高至 50",
+         "before": 37.5,
+         "after": 50.0,
+         "by": 12.5,
+         "by_pct": null,
+         "metric": "healing",
+         "raw_metric": "healing-per-second",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "pharah",
+     "name_en": "Pharah",
+     "name_cn": "法老之鹰",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d69d76162855cea8807b9c163e6b53bb522eef282f368b52a469332313562b98.png",
+     "dev_note": "调整法老之鹰悬浮背包燃料的意图是找到一个平衡点：让她能够通过谨慎管理燃料和冷却时间来较好地维持高度，但不会轻易攀升到部分地图天花板所允许的极限高度，因为那会导致对局互动性降低。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "通用",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "悬浮背包恢复速率从 35 提高至 43",
+       "subject": null,
+       "dimension": "other",
+       "before": 35.0,
+       "after": 43.0,
+       "by": 8.0,
+       "by_pct": null,
+       "metric": "hover jets regeneration rate",
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "reaper",
+     "name_en": "Reaper",
+     "name_cn": "死神",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b199eada68c7148fd0f03f3bca53fb98b28a2318603918e72a37b4aed0ef754e.png",
+     "dev_note": "近期对死神霰弹枪的调整效果不如预期，因此我们略微提高了每发弹丸的伤害。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Hellfire Shotguns",
+       "name_cn": "狱火散弹枪",
+       "slug": "hellfire-shotguns",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/76b6866587871744aca310645f66d2d07755c5a55093eb8734ed0898b17efc51.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "每发弹丸伤害从 5.5 提高至 6",
+         "before": 5.5,
+         "after": 6.0,
+         "by": 0.5,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "damage per projectile",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "sigma",
+     "name_en": "Sigma",
+     "name_cn": "西格玛",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/72fd43c9d9f9f0d075a78db7a1dfe7766eef4d9c03e34c45b3ae6fe0f8634693.png",
+     "dev_note": "虽然此前提高实验屏障冷却时间达到了增加更多反制手段的预期效果，但或许存在一个对西格玛来说限制更小、同时仍能实现这些目标的调校数值。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Experimental Barrier",
+       "name_cn": "实验屏障",
+       "slug": "experimental-barrier",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ae2c31f159331f73739932e85dc21bdfa8eb4f2b2d2de4e89c1488445da34ffb.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从 2.5 秒降低至 2.0 秒",
+         "before": 2.5,
+         "after": 2.0,
+         "by": -0.5,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "zarya",
+     "name_en": "Zarya",
+     "name_cn": "查莉娅",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/983bd1ba3146529209db5b9d3d851320537270859e8e1debbfffd848c4546398.png",
+     "dev_note": "查莉娅在多种队伍阵容中表现过强，因此提高能量衰减速率将略微降低她在交战间隙的平均能量水平。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "通用",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "能量衰减速率从每秒 1.6 提高至每秒 1.8",
+       "subject": null,
+       "dimension": "other",
+       "before": 1.6,
+       "after": 1.8,
+       "by": 0.2,
+       "by_pct": null,
+       "metric": "energy drain rate",
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2021-03-11-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:48:56+00:00",
+  "status": "draft",
+  "source_hash": "sha256:9b658affd4de4421dcf09dea79725ba3f302925f4b00426bb3d01ad27185f41b",
+  "kept_english": []
+ }
+}

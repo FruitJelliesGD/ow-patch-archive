@@ -1,0 +1,2245 @@
+{
+ "id": "ai-2024-12-17-1",
+ "site": "ai",
+ "date": "2024-12-17",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/12",
+ "title": "《守望先锋》补丁说明——2024年12月17日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "6v6实验——2-2-2预设职责",
+   "role": null,
+   "description": "重温《守望先锋》的起点，参与6v6预设职责实验，限时回归结构化的2-2-2队伍阵容。该模式将最初六人团队动态的刺激感与《守望先锋2》更新后的英雄和技能所带来的策略深度相结合。深入体验策略、适应性与纯粹团队协同的全新平衡——展现现代《守望先锋》玩法如何在经典模式中大放异彩。\n\n- 6v6实验将于12月17日至1月6日在非排位菜单中开放游玩。\n- 该模式采用预设职责规则，由2名重装英雄、2名输出英雄和2名支援英雄组成。\n- 地图选择与玩法基于快速比赛规则。",
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "实验性改动",
+     "body": "为适配6v6模式，多名英雄获得了平衡性改动，使其技能更契合6v6模式。这些改动仅在该模式中生效，并基于12月10日补丁中最新的英雄平衡进行调整。",
+     "dev": null
+    },
+    {
+     "title": "通用",
+     "body": "- 基础生命值恢复计时从5秒提高至7秒。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "重装",
+   "role": "tank",
+   "description": "重装职责被动\n\n- 移除击退与暴击伤害减免。\n- 不再影响生命值。\n- 现在仅使终极技能充能生成降低25%。",
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "d-va",
+     "name_en": "D.Va",
+     "name_cn": "D.Va",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e69a3d819fd46d0dcd1d9474c248a95e69519c20077c60e9de73a1e2d3acdbb6.png",
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "基础生命值从225提高至350。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 225.0,
+       "after": 350.0,
+       "by": 125.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "基础护甲从325降低至300。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 325.0,
+       "after": 300.0,
+       "by": -25.0,
+       "by_pct": null,
+       "metric": "base armor",
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Fusion Cannons",
+       "name_cn": "聚变机炮",
+       "slug": "fusion-cannons",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/29bd15ebb32c23483a59df18a79f71301b2128c05b2f8d0c052ab86e0715e07d.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "武器散布从3.375提高至4度。",
+         "before": 3.375,
+         "after": 4.0,
+         "by": 0.625,
+         "by_pct": null,
+         "metric": "weapon spread",
+         "raw_metric": "weapon spread",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "移动速度惩罚从30%提高至40%。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Defense Matrix",
+       "name_cn": "防御矩阵",
+       "slug": "defense-matrix",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2713a8ef6742f4009da072d66d382eb8ff3dd8e00828deadb5af1a93b0d8ce4b.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "最大持续时间从3秒降低至2秒。",
+         "before": 3.0,
+         "after": 2.0,
+         "by": -1.0,
+         "by_pct": null,
+         "metric": "maximum duration",
+         "raw_metric": "maximum duration",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Boosters",
+       "name_cn": "推进器",
+       "slug": "boosters",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/89d6beb25b21eacd5a181b96438436692d9ad403fcef19873e506f6d46ed37a3.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从3.5秒提高至4秒。",
+         "before": 3.5,
+         "after": 4.0,
+         "by": 0.5,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      },
+      {
+       "name_en": "Micro Missiles",
+       "name_cn": "微型飞弹",
+       "slug": "micro-missiles",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1787326d46d04aa10872fc30fe512ab3575781735110dfb178ff38da352facb7.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从7秒提高至8秒。",
+         "before": 7.0,
+         "after": 8.0,
+         "by": 1.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "doomfist",
+     "name_en": "Doomfist",
+     "name_cn": "末日铁拳",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/bc538b345188bdcb2d2be5b2894d471ba54aeea53b03862429205ed49d693bbe.png",
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "基础生命值从375提高至425。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 375.0,
+       "after": 425.0,
+       "by": 50.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Seismic Slam",
+       "name_cn": "裂地重拳",
+       "slug": "seismic-slam",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/20f721d5fd05f91e203d6e0007a137bdc90a161356f85d5aa88b2ab02b8da22b.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从6.5秒提高至7.5秒。",
+         "before": 6.5,
+         "after": 7.5,
+         "by": 1.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      },
+      {
+       "name_en": "Power Block",
+       "name_cn": "悍猛格挡",
+       "slug": "power-block",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/56267df764931eadeae09513e0f1b9594ae238eebba84878c501ba4b69acb71f.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "最大持续时间从2.5秒降低至2秒。",
+         "before": 2.5,
+         "after": 2.0,
+         "by": -0.5,
+         "by_pct": null,
+         "metric": "maximum duration",
+         "raw_metric": "maximum duration",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从7秒提高至8秒。",
+         "before": 7.0,
+         "after": 8.0,
+         "by": 1.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      },
+      {
+       "name_en": "The Best Defense (Passive)",
+       "name_cn": "最佳防守……（被动）",
+       "slug": "the-best-defense-passive",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e60ad8d06a44f829f6110b528751d2e5a1840e0a72bed4a9c848970ba6ebae80.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "每个目标获得的过量生命值从40降低至35点生命值。",
+         "before": 40.0,
+         "after": 35.0,
+         "by": -5.0,
+         "by_pct": null,
+         "metric": "overhealth",
+         "raw_metric": "overhealth gained per target",
+         "unit": "hp"
+        },
+        {
+         "text_en": null,
+         "text_cn": "最大临时生命值从200降低至150点生命值。",
+         "before": 200.0,
+         "after": 150.0,
+         "by": -50.0,
+         "by_pct": null,
+         "metric": "maximum temporary health",
+         "raw_metric": "maximum temporary health",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "hazard",
+     "name_en": "Hazard",
+     "name_cn": "骇灾",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/22fc6ca76249d7cd37bad808d53a68986da855c625475a46ec3858abecf57823.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Spike Guard",
+       "name_cn": "尖刺护体",
+       "slug": "spike-guard",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a558290ba44099a80c0818c45cee31e4c6d1039c81c3fb6154ec8356e3fad9d5.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "持续时间从3.5秒降低至3秒。",
+         "before": 3.5,
+         "after": 3.0,
+         "by": -0.5,
+         "by_pct": null,
+         "metric": "duration",
+         "raw_metric": "duration",
+         "unit": "s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "充能时间从5秒提高至6秒。",
+         "before": 5.0,
+         "after": 6.0,
+         "by": 1.0,
+         "by_pct": null,
+         "metric": "recharge time",
+         "raw_metric": "recharge time",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Jagged Wall",
+       "name_cn": "尖刺墙",
+       "slug": "jagged-wall",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1924df0318c0c1e2ee935b53b1bc5b4c21bedef57024998a02b8d14d930ce364.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从12秒提高至15秒。",
+         "before": 12.0,
+         "after": 15.0,
+         "by": 3.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "生命值从400提高至500。",
+         "before": 400.0,
+         "after": 500.0,
+         "by": 100.0,
+         "by_pct": null,
+         "metric": "health",
+         "raw_metric": "health",
+         "unit": "hp"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "junker-queen",
+     "name_en": "Junker Queen",
+     "name_cn": "渣客女王",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/cf66adfac58a0321ec1f7d3a7241d6bf2f3b311707064d2f0ace2e3f4e342727.png",
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "基础生命值从375提高至425。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 375.0,
+       "after": 425.0,
+       "by": 50.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Commanding Shout",
+       "name_cn": "命令怒吼",
+       "slug": "commanding-shout",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1809c57884dafcfd1aab89eb80d2ad8fe0c64ce0036646a3e19c05f48c322c9d.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从12秒提高至15秒。",
+         "before": 12.0,
+         "after": 15.0,
+         "by": 3.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      },
+      {
+       "name_en": "Adrenaline Rush",
+       "name_cn": "狂血奔涌",
+       "slug": "adrenaline-rush",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e1706243e4996af6844e7f8233bbd3f98f04583a223cd3ad926d40ef6c4c8557.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "创伤伤害的自我治疗系数从2.5倍降低至1.0倍。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "mauga",
+     "name_en": "Mauga",
+     "name_cn": "毛加",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6dbd80a0b40bd0464db35948f98d91ecc6dfcede8c94ff9b1ecefda781a7aa1f.png",
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "基础护甲从150降低至100。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 150.0,
+       "after": 100.0,
+       "by": -50.0,
+       "by_pct": null,
+       "metric": "base armor",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "基础生命值从425提高至450。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 425.0,
+       "after": 450.0,
+       "by": 25.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Overrun",
+       "name_cn": "蛮力冲撞",
+       "slug": "overrun",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c23cc1056dcc40fb5976f3987181b7a46406a0a133f1e95b9b1db11d36253363.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从5秒提高至7秒。",
+         "before": 5.0,
+         "after": 7.0,
+         "by": 2.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "践踏伤害从75降低至60。",
+         "before": 75.0,
+         "after": 60.0,
+         "by": -15.0,
+         "by_pct": null,
+         "metric": "stomp damage",
+         "raw_metric": "stomp damage",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Cardiac Overdrive",
+       "name_cn": "心脏过载",
+       "slug": "cardiac-overdrive",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1d19c61b479c82bbdd8ed645ccdec54e16431409d3c8a56b27376c7f8630ec9c.png",
+       "changes": []
+      },
+      {
+       "name_en": "Cage Fight",
+       "name_cn": "笼中斗",
+       "slug": "cage-fight",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/795ba75b2aaf304f69ea6fbc6e7fbfe5d3d4d7365d776243f8241f8e9e7f208e.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "最大持续时间从8秒降低至7秒。",
+         "before": 8.0,
+         "after": 7.0,
+         "by": -1.0,
+         "by_pct": null,
+         "metric": "maximum duration",
+         "raw_metric": "maximum duration",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "orisa",
+     "name_en": "Orisa",
+     "name_cn": "奥丽莎",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/20c12a10cfe0b5608f9eec63a74ecb0ccd18a114019bc77bb2765f87776e17ed.png",
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "基础护甲从325降低至250。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 325.0,
+       "after": 250.0,
+       "by": -75.0,
+       "by_pct": null,
+       "metric": "base armor",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "基础生命值从150提高至250。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 150.0,
+       "after": 250.0,
+       "by": 100.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Augmented Fusion Driver",
+       "name_cn": "强化聚变驱动器",
+       "slug": "augmented-fusion-driver",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8bf67f548fb8dd8fde4dd07ae567e635f8d6229c330a3656134697b9ecbd9140.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在从25米处开始出现伤害衰减。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Energy Javelin",
+       "name_cn": "能量标枪",
+       "slug": "energy-javelin",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0cf93f55a30fe7ec769c5f2eebd284c92851d6b1dbaca0e2c39eae908a9b35c6.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "最大持续时间从8秒降低至7秒。",
+         "before": 8.0,
+         "after": 7.0,
+         "by": -1.0,
+         "by_pct": null,
+         "metric": "maximum duration",
+         "raw_metric": "maximum duration",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Fortify",
+       "name_cn": "强固防御",
+       "slug": "fortify",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d697fa90726cf683222920822d2ee00a85e0420c6cbc6ec2365573f313d06357.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "不再免疫暴击伤害。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "ramattra",
+     "name_en": "Ramattra",
+     "name_cn": "拉玛刹",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/cf69d4bfa61ac14f61d3d541b0d2687a20fa24f55afe7a392d746f5ccb138dea.png",
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "基础生命值从250提高至375。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 250.0,
+       "after": 375.0,
+       "by": 125.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Void Barrier",
+       "name_cn": "虚空屏障",
+       "slug": "void-barrier",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0a40466f823f39910c8453a42d9338e434d8d36d120c540a381c6a9a1557da78.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从13秒提高至16秒。",
+         "before": 13.0,
+         "after": 16.0,
+         "by": 3.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      },
+      {
+       "name_en": "Nemesis Form",
+       "name_cn": "天罚形态",
+       "slug": "nemesis-form",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5a9818afe979474cd23a8a3863522be14ae549df841a6a7efc9ed5398f3d692f.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "额外护甲从300降低至200。",
+         "before": 300.0,
+         "after": 200.0,
+         "by": -100.0,
+         "by_pct": null,
+         "metric": "bonus armor",
+         "raw_metric": "bonus armor",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "reinhardt",
+     "name_en": "Reinhardt",
+     "name_cn": "莱因哈特",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b5e3a4f5629a3acfd47b5d2e695e79ea964b060bf67b7e4f8f15e63accd5f934.png",
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "基础生命值从250提高至325。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 250.0,
+       "after": 325.0,
+       "by": 75.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "基础护甲从300降低至225。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 300.0,
+       "after": 225.0,
+       "by": -75.0,
+       "by_pct": null,
+       "metric": "base armor",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "现在重新拥有坚定被动，使击退降低30%。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Barrier Field",
+       "name_cn": "屏障力场",
+       "slug": "barrier-field",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/121f13903665417446ee4673d9740080a3bc117e285cf3dcf6547861a0bc7d43.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "生命值从1500提高至2000。",
+         "before": 1500.0,
+         "after": 2000.0,
+         "by": 500.0,
+         "by_pct": null,
+         "metric": "health",
+         "raw_metric": "health",
+         "unit": "hp"
+        }
+       ]
+      },
+      {
+       "name_en": "Charge",
+       "name_cn": "冲锋",
+       "slug": "charge",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/40c9f1c060033e58120c9ec174008b8f5d833412923f7f351a32e5df47fe8166.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从7秒提高至10秒。",
+         "before": 7.0,
+         "after": 10.0,
+         "by": 3.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "转向能力降低50%。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 50.0,
+         "metric": "steering",
+         "raw_metric": "steering",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Fire Strike",
+       "name_cn": "烈焰打击",
+       "slug": "fire-strike",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/568a5f49875557f735af36dce68474a923f7e8582a7be20fb68b6ee66ac077e6.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "技能充能从2降低至1。",
+         "before": 2.0,
+         "after": 1.0,
+         "by": -1.0,
+         "by_pct": null,
+         "metric": "ability charges",
+         "raw_metric": "ability charges",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Earthshatter",
+       "name_cn": "裂地猛击",
+       "slug": "earthshatter",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a63041a68d81c202a47a95035878edcfa75d5aa3f72414a7e84e1b1a68594bed.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "距离从25米降低至20米。",
+         "before": 25.0,
+         "after": 20.0,
+         "by": -5.0,
+         "by_pct": null,
+         "metric": "distance",
+         "raw_metric": "distance",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "roadhog",
+     "name_en": "Roadhog",
+     "name_cn": "路霸",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b6f4e837dc41e87d730f6b0fad3473e689c8bdcd1f732b97326ac08b0508f2ee.png",
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "基础生命值从600提高至650。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 600.0,
+       "after": 650.0,
+       "by": 50.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Scrap Gun",
+       "name_cn": "爆裂枪",
+       "slug": "scrap-gun",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/50b6e388a6693ce31b5a1889e53037970a1b884b8265834f33dd6f7a3dedce44.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "新增辅助攻击空中爆裂弹。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "移除主要攻击的4个大型中心弹丸。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "主要攻击每次射击的弹丸从16提高至25。",
+         "before": 16.0,
+         "after": 25.0,
+         "by": 9.0,
+         "by_pct": null,
+         "metric": "primary fire pellets per shot",
+         "raw_metric": "primary fire pellets per shot",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "每颗弹丸伤害从6.25提高至6.5。",
+         "before": 6.25,
+         "after": 6.5,
+         "by": 0.25,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "damage per pellet",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "暴击伤害倍率从1.5提高至2倍。",
+         "before": 1.5,
+         "after": 2.0,
+         "by": 0.5,
+         "by_pct": null,
+         "metric": "critical damage multiplier",
+         "raw_metric": "critical damage multiplier",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Chain Hook",
+       "name_cn": "链钩",
+       "slug": "chain-hook",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/139deabeb3d62c451b558367bf5e64641583355d99ed90fe42107a5716fdca3b.png",
+       "changes": []
+      },
+      {
+       "name_en": "Take a Breather",
+       "name_cn": "呼吸器",
+       "slug": "take-a-breather",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9cb8d867671bf917a9ba5d4a28ab6cb6ceeb10de2813567fcad97aca32c58499.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "默认绑定从辅助攻击移至技能2。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "最大治疗量从400降低至325。",
+         "before": 400.0,
+         "after": 325.0,
+         "by": -75.0,
+         "by_pct": null,
+         "metric": "maximum heal",
+         "raw_metric": "maximum heal",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "伤害减免从40%提高至50%。",
+         "before": 40.0,
+         "after": 50.0,
+         "by": 10.0,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "damage reduction",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "冷却时间现在为8秒，不再基于资源。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Whole Hog",
+       "name_cn": "鸡飞狗跳",
+       "slug": "whole-hog",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/78faa90f268424c6e770168ec15f5bb880d0b14e5d10f22c30bfbb64ffe244a8.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "持续时间从8秒降低至6秒。",
+         "before": 8.0,
+         "after": 6.0,
+         "by": -2.0,
+         "by_pct": null,
+         "metric": "duration",
+         "raw_metric": "duration",
+         "unit": "s"
+        }
+       ]
+      },
+      {
+       "name_en": "Pig Pen",
+       "name_cn": "猪圈",
+       "slug": "pig-pen",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "技能已移除",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "sigma",
+     "name_en": "Sigma",
+     "name_cn": "西格玛",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9738e1687bf7064de3667169788ef1b5ea9cf1746a42753c767cf17c7cb67547.png",
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "基础护盾生命值从275降低至250。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 275.0,
+       "after": 250.0,
+       "by": -25.0,
+       "by_pct": null,
+       "metric": "base shield health",
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Experimental Barrier",
+       "name_cn": "实验屏障",
+       "slug": "experimental-barrier",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ae2c31f159331f73739932e85dc21bdfa8eb4f2b2d2de4e89c1488445da34ffb.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "充能速率从每秒85提高至每秒100点生命值。",
+         "before": 85.0,
+         "after": 100.0,
+         "by": 15.0,
+         "by_pct": null,
+         "metric": "recharge rate",
+         "raw_metric": "recharge rate",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Accretion",
+       "name_cn": "质量吸附",
+       "slug": "accretion",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/594b0ecbb34b41b288c08bc7b040b273f25289ef0afc2d00828d6a30a0687236.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "伤害从120降低至100。",
+         "before": 120.0,
+         "after": 100.0,
+         "by": -20.0,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "damage",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "winston",
+     "name_en": "Winston",
+     "name_cn": "温斯顿",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6a9a37012551410b46b2c28146404354fe21e4a1e8ea65db4e1e497eeaa05c71.png",
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "基础生命值从225提高至350。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 225.0,
+       "after": 350.0,
+       "by": 125.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "基础护甲从250降低至200。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 250.0,
+       "after": 200.0,
+       "by": -50.0,
+       "by_pct": null,
+       "metric": "base armor",
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Tesla Cannon",
+       "name_cn": "特斯拉炮",
+       "slug": "tesla-cannon",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/050de92c7ce31e42368c796d9c246210a40bb1bd4a5273b2d64d8a980e1f9f9a.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "不再无视护甲伤害减免。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "辅助攻击充能时间从0.85秒提高至1.1秒。",
+         "before": 0.85,
+         "after": 1.1,
+         "by": 0.25,
+         "by_pct": null,
+         "metric": "secondary fire charge time",
+         "raw_metric": "secondary fire charge time",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "辅助攻击弹药消耗从12提高至25。",
+         "before": 12.0,
+         "after": 25.0,
+         "by": 13.0,
+         "by_pct": null,
+         "metric": "secondary fire ammo cost",
+         "raw_metric": "secondary fire ammo cost",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Jump Pack",
+       "name_cn": "喷射背包",
+       "slug": "jump-pack",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/dbad1fe535da5b932ad706a0ca06373d530f1210cbbb095ef1bc8b3a7cc64172.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从5秒提高至6秒。",
+         "before": 5.0,
+         "after": 6.0,
+         "by": 1.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      },
+      {
+       "name_en": "Barrier Projector",
+       "name_cn": "屏障发射器",
+       "slug": "barrier-projector",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/469c290ded9fd33ce4ed927fc2da12c97483711e155f73bd7eaa05a399d5dbff.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从12秒提高至13秒。",
+         "before": 12.0,
+         "after": 13.0,
+         "by": 1.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      },
+      {
+       "name_en": "Primal Rage",
+       "name_cn": "原始暴怒",
+       "slug": "primal-rage",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/685608721cb914e0412a090eb1e89c0f5d10edfb3dbc34218ba3acd35611c990.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "最大生命值增益从700降低至500。",
+         "before": 700.0,
+         "after": 500.0,
+         "by": -200.0,
+         "by_pct": null,
+         "metric": "maximum health gain",
+         "raw_metric": "maximum health gain",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "wrecking-ball",
+     "name_en": "Wrecking Ball",
+     "name_cn": "破坏球",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f71d6948e8b6ae340e20ab569ef66d24aead6032c34a7ec09a00ea864b413a24.png",
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "移除基础护盾生命值。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "基础生命值从300提高至500。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 300.0,
+       "after": 500.0,
+       "by": 200.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "基础护甲从175降低至150。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 175.0,
+       "after": 150.0,
+       "by": -25.0,
+       "by_pct": null,
+       "metric": "base armor",
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Adaptive Shield",
+       "name_cn": "感应护盾",
+       "slug": "adaptive-shield",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/fa65af9c692405f968fafbeedcdfc9092b38a050dc3562bd41280390ccd7a21d.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "不再能将护盾分配给盟友。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "半径从13米降低至8米。",
+         "before": 13.0,
+         "after": 8.0,
+         "by": -5.0,
+         "by_pct": null,
+         "metric": "radius",
+         "raw_metric": "radius",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "每个目标获得的过量生命值从100降低至75。",
+         "before": 100.0,
+         "after": 75.0,
+         "by": -25.0,
+         "by_pct": null,
+         "metric": "overhealth",
+         "raw_metric": "overhealth gained per target",
+         "unit": "hp"
+        }
+       ]
+      },
+      {
+       "name_en": "Pile Driver",
+       "name_cn": "打桩机",
+       "slug": "pile-driver",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3e884373721448d109c1646599cfe651a5bccdbc7a12d5062372c91b28acd80c.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从8秒提高至10秒。",
+         "before": 8.0,
+         "after": 10.0,
+         "by": 2.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "zarya",
+     "name_en": "Zarya",
+     "name_cn": "查莉娅",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d43075cba10cd711a129556142849587e78f1f55b0105d39a640da53ffa64e1b.png",
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "基础生命值从175提高至225。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 175.0,
+       "after": 225.0,
+       "by": 50.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Particle Barrier",
+       "name_cn": "粒子屏障",
+       "slug": "particle-barrier",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2d462e28ae2fc60b3ef9c32702bbc88936885dd7d20746a31dd2e3c51c20f199.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "不再与投射屏障共享冷却时间。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "生命值从225降低至200。",
+         "before": 225.0,
+         "after": 200.0,
+         "by": -25.0,
+         "by_pct": null,
+         "metric": "health",
+         "raw_metric": "health",
+         "unit": "hp"
+        },
+        {
+         "text_en": null,
+         "text_cn": "持续时间从2.25秒降低至2秒。",
+         "before": 2.25,
+         "after": 2.0,
+         "by": -0.25,
+         "by_pct": null,
+         "metric": "duration",
+         "raw_metric": "duration",
+         "unit": "s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从11秒降低至10秒。",
+         "before": 11.0,
+         "after": 10.0,
+         "by": -1.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      },
+      {
+       "name_en": "Projected Barrier",
+       "name_cn": "投射屏障",
+       "slug": "projected-barrier",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6e42984ee8329a50e9c2460ae2df7670d7be9846a093c336e4576d1eea1fb2f1.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "生命值从225降低至200。",
+         "before": 225.0,
+         "after": 200.0,
+         "by": -25.0,
+         "by_pct": null,
+         "metric": "health",
+         "raw_metric": "health",
+         "unit": "hp"
+        },
+        {
+         "text_en": null,
+         "text_cn": "持续时间从2.25秒降低至2秒。",
+         "before": 2.25,
+         "after": 2.0,
+         "by": -0.25,
+         "by_pct": null,
+         "metric": "duration",
+         "raw_metric": "duration",
+         "unit": "s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从9秒降低至8秒。",
+         "before": 9.0,
+         "after": 8.0,
+         "by": -1.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "输出",
+   "role": "damage",
+   "description": "输出职责被动\n\n- 治疗降低从25%降低至15%。\n- 不再对重装英雄降低效果。",
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "ashe",
+     "name_en": "Ashe",
+     "name_cn": "艾什",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e41d918d0e7ffa772b5571df3d0dc1a05e6d9032307f78be935972cfd59f208a.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "B.O.B.",
+       "name_cn": "召唤鲍勃",
+       "slug": "b-o-b",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e788b12d476e896dac3831bbc0842fb3b4d07a89b3c337959d9a6cd6ea5a7df5.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "召唤鲍勃的生命值从1000提高至1200。",
+         "before": 1000.0,
+         "after": 1200.0,
+         "by": 200.0,
+         "by_pct": null,
+         "metric": "s health",
+         "raw_metric": "s health",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "cassidy",
+     "name_en": "Cassidy",
+     "name_cn": "卡西迪",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8d161c49df5a962ece9ceafc6500bea473d9dd3695b9e24e39d5be616295e6c5.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Peacekeeper",
+       "name_cn": "维和者",
+       "slug": "peacekeeper",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/afb27d71eeb6f3635ac1ff236c7b3f9e3c6d017360ce022d5d384288ff95bce7.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "辅助攻击「连射」伤害从45提高至50。",
+         "before": 45.0,
+         "after": 50.0,
+         "by": 5.0,
+         "by_pct": null,
+         "metric": "fan the hammer secondary fire damage",
+         "raw_metric": "fan the hammer secondary fire damage",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "echo",
+     "name_en": "Echo",
+     "name_cn": "回声",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0dc3f1679d739ef530ba2b8cbe02bf09f4d40a57c0af84f694a3241d3a7ef948.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Focusing Beam",
+       "name_cn": "聚焦光线",
+       "slug": "focusing-beam",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6552feeb85a32ae7131df50f61a9c0fa24bf347bf007e208a356a940561129ae.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "对低生命值目标的伤害倍率从3.5提高至4倍（200 DPS）。",
+         "before": 3.5,
+         "after": 4.0,
+         "by": 0.5,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "damage multiplier for low health targets",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Duplicate",
+       "name_cn": "人格复制",
+       "slug": "duplicate",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/457d6ebcb2b92d1e7f7a7174b426903879e131422196825589adbc5e5d9f7efb.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "不再对复制目标设有最大生命值。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "hanzo",
+     "name_en": "Hanzo",
+     "name_cn": "半藏",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3febc2e638ff56d8f0161ea278ac3116b5baf8c0328f1eded6b499552a0eccad.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Storm Bow",
+       "name_cn": "风暴弓",
+       "slug": "storm-bow",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1aa4358e8a1d423dd55669780908b856141a783d053224b629b064c66288469e.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "每次射击完全充能时间从0.8秒降低至0.72秒。",
+         "before": 0.8,
+         "after": 0.72,
+         "by": -0.08,
+         "by_pct": null,
+         "metric": "time to fully charge each shot",
+         "raw_metric": "time to fully charge each shot",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "mei",
+     "name_en": "Mei",
+     "name_cn": "美",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/08586dceed41e030d575b2b643118f55390f1c2af91dd15394528f5399fcc934.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Ice Wall",
+       "name_cn": "冰墙",
+       "slug": "ice-wall",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/bd63b2d05e4a2aa8615b7cad828fd05427f07e69c7611a662c5cb0d726b82627.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冰墙生命值从250提高至300。",
+         "before": 250.0,
+         "after": 300.0,
+         "by": 50.0,
+         "by_pct": null,
+         "metric": "wall health",
+         "raw_metric": "wall health",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "soldier-76",
+     "name_en": "Soldier: 76",
+     "name_cn": "士兵76",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1cb6f3ad4b8afdc1a901c26180a4c134018bb805b91eefe9b7cf2946879f10c8.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Heavy Pulse Rifle",
+       "name_cn": "重脉冲步枪",
+       "slug": "heavy-pulse-rifle",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/69eaf669cd646a617439592615f023cfec82c27f4a3e19f48188941b3feaf55f.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "伤害从19提高至20。",
+         "before": 19.0,
+         "after": 20.0,
+         "by": 1.0,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "damage",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "torbjorn",
+     "name_en": "Torbjörn",
+     "name_cn": "托比昂",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2ef3a4bdd117829a83867a7775ece351c4226f29b24cdbf8d7fac89443e8d8a2.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Deploy Turret",
+       "name_cn": "部署炮台",
+       "slug": "deploy-turret",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a25d559460eed995f177b84eda6000aca6a52c8600dcf2249cc50ca31aa9c786.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "伤害从13提高至15。",
+         "before": 13.0,
+         "after": 15.0,
+         "by": 2.0,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "damage",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "tracer",
+     "name_en": "Tracer",
+     "name_cn": "猎空",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5ee20a1feed14da5153f19745328e9fc02bd79f8109593a9b7dab9283eb9629b.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Pulse Pistols",
+       "name_cn": "脉冲双枪",
+       "slug": "pulse-pistols",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/82520ccd791a5befa5ac74a6b5263471de44b0674abb07fbf1568c149c88a91a.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "衰减范围从10米提高至12米。",
+         "before": 10.0,
+         "after": 12.0,
+         "by": 2.0,
+         "by_pct": null,
+         "metric": "falloff range",
+         "raw_metric": "falloff range",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "widowmaker",
+     "name_en": "Widowmaker",
+     "name_cn": "黑百合",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b4871b9addd770582c8b6a1ab366b9ec08d986c2995248ee5fce7e15cb0d809d.png",
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "基础生命值从200提高至225。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 200.0,
+       "after": 225.0,
+       "by": 25.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "支援",
+   "role": "support",
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "ana",
+     "name_en": "Ana",
+     "name_cn": "安娜",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/86debddbaaaf8699d68775a9dbffaf5b8db514772b77ff7234b1ff84c0b29fd5.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Biotic Rifle",
+       "name_cn": "生物步枪",
+       "slug": "biotic-rifle",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/efe0ebb135e87dc26b60f0d20500dcd7553ad121ab2b10cd4ffb5db17be9c977.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "最大弹药从15降低至12。",
+         "before": 15.0,
+         "after": 12.0,
+         "by": -3.0,
+         "by_pct": null,
+         "metric": "maximum ammo",
+         "raw_metric": "maximum ammo",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Biotic Grenade",
+       "name_cn": "生物手雷",
+       "slug": "biotic-grenade",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c8190b234bf0a0e28eecffe162d0c942e6b8656e95f4688c6ca3b025fa5a487d.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从12秒降低至10秒。",
+         "before": 12.0,
+         "after": 10.0,
+         "by": -2.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      },
+      {
+       "name_en": "Sleep Dart",
+       "name_cn": "麻醉镖",
+       "slug": "sleep-dart",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/20707fd82265412fdc6d2353daa88ec7558cd71c89aa3ac6cf0e78bbbfcabd80.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "不再对重装英雄降低持续时间。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从14秒降低至12秒。",
+         "before": 14.0,
+         "after": 12.0,
+         "by": -2.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "baptiste",
+     "name_en": "Baptiste",
+     "name_cn": "巴蒂斯特",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5ac801c6fe84f83fe5015af89858cbdfb2ec9d32d141f582889b5381fd0195fc.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Regenerative Burst",
+       "name_cn": "愈合冲击",
+       "slug": "regenerative-burst",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d887d165f7b0eb98a30af8f274ff740c6c7735af719b93e95dd9da17558815d8.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "不再对生命值低于50%的盟友提供双倍治疗。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "即时治疗从40提高至50。",
+         "before": 40.0,
+         "after": 50.0,
+         "by": 10.0,
+         "by_pct": null,
+         "metric": "instant heal",
+         "raw_metric": "instant heal",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "持续治疗量从40提高至5秒内100。",
+         "before": 40.0,
+         "after": 100.0,
+         "by": 60.0,
+         "by_pct": null,
+         "metric": "healing",
+         "raw_metric": "healing over time",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Immortality Field",
+       "name_cn": "维生力场",
+       "slug": "immortality-field",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d66d82bab88fc813080dd15e31629cc3aa7c8b41cfb41d5b962b628dd345e433.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "无人机生命值从125提高至150",
+         "before": 125.0,
+         "after": 150.0,
+         "by": 25.0,
+         "by_pct": null,
+         "metric": "drone health",
+         "raw_metric": "drone health",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "illari",
+     "name_en": "Illari",
+     "name_cn": "伊拉锐",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f33f6fe94ad55fcf9027e779f66afac358a2f93651070b95cd565ff90d670c8b.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Solar Rifle",
+       "name_cn": "阳焰步枪",
+       "slug": "solar-rifle",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/97ca66b75aefd32c23d38a843b8be6b2325792e3cb62523b47541ce97375ab34.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "最大伤害从70提高至75。",
+         "before": 70.0,
+         "after": 75.0,
+         "by": 5.0,
+         "by_pct": null,
+         "metric": "max damage",
+         "raw_metric": "max damage",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "最小伤害从20提高至25。",
+         "before": 20.0,
+         "after": 25.0,
+         "by": 5.0,
+         "by_pct": null,
+         "metric": "min damage",
+         "raw_metric": "min damage",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Healing Pylon",
+       "name_cn": "治疗光塔",
+       "slug": "healing-pylon",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/03b7303b1480cad458afd46b746f6f0ad55dde473063c93afeef250f6679d214.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从14秒降低至12秒。",
+         "before": 14.0,
+         "after": 12.0,
+         "by": -2.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "juno",
+     "name_en": "Juno",
+     "name_cn": "朱诺",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2a65bf12035f9c255833693224cad83fd98cead625fdf1b9da8359a7f259e01c.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Pulsar Torpedoes",
+       "name_cn": "脉冲星飞雷",
+       "slug": "pulsar-torpedoes",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c6e69da73c54499d83c1832d45b357a08652b99f659091e44eb7aa3021973a94.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从10秒提高至12秒。",
+         "before": 10.0,
+         "after": 12.0,
+         "by": 2.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      },
+      {
+       "name_en": "Hyper Ring",
+       "name_cn": "超能环域",
+       "slug": "hyper-ring",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/63e0682b2a186681455f4313d1e78f99612e89c323fe7f490856a3da800d5a19.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "最大持续时间从6秒降低至4.5秒。",
+         "before": 6.0,
+         "after": 4.5,
+         "by": -1.5,
+         "by_pct": null,
+         "metric": "maximum duration",
+         "raw_metric": "maximum duration",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Oribital Ray",
+       "name_cn": "轨道射线",
+       "slug": "oribital-ray",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b4215620deb362a0ad6a7784275d43b518868392b0f7e77228adabe32a489e77.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "最大持续时间从10秒降低至8秒。",
+         "before": 10.0,
+         "after": 8.0,
+         "by": -2.0,
+         "by_pct": null,
+         "metric": "maximum duration",
+         "raw_metric": "maximum duration",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "kiriko",
+     "name_en": "Kiriko",
+     "name_cn": "雾子",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/24d1d7bf86c331b3d81b934442ed36fd0121f6815255c6f26f456127fb342d15.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Healing Ofuda",
+       "name_cn": "符",
+       "slug": "healing-ofuda",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6b8830bd7173de38016ef129e117ac6f418026a6ec4501ab5cb7cdd99bd6f5b8.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "恢复时间从0.9秒降低至0.8秒。",
+         "before": 0.9,
+         "after": 0.8,
+         "by": -0.1,
+         "by_pct": null,
+         "metric": "recovery",
+         "raw_metric": "recovery time",
+         "unit": "s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "每枚弹丸治疗量从13提高至14。",
+         "before": 13.0,
+         "after": 14.0,
+         "by": 1.0,
+         "by_pct": null,
+         "metric": "healing",
+         "raw_metric": "healing per projectile",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "lifeweaver",
+     "name_en": "Lifeweaver",
+     "name_cn": "生命之梭",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/57d5014ab6034db9138f838e8450693b4a97ab3c54f85d594b199a8853e75ccb.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Healing Blossom",
+       "name_cn": "愈疗灵花",
+       "slug": "healing-blossom",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a3ccff02b44507df5c9bdaced0ecd56ac80b33285ad8a60e6c454acf90560579.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "最大治疗量从80提高至90。",
+         "before": 80.0,
+         "after": 90.0,
+         "by": 10.0,
+         "by_pct": null,
+         "metric": "maximum heal",
+         "raw_metric": "maximum heal",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Petal Platform",
+       "name_cn": "花瓣平台",
+       "slug": "petal-platform",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f64582890d92e968d79c54f9bb8cf1b9b1cc8da6dca7b8bdc647512957cac89f.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从12秒提高至15秒。",
+         "before": 12.0,
+         "after": 15.0,
+         "by": 3.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      },
+      {
+       "name_en": "Tree of Life",
+       "name_cn": "生命之树",
+       "slug": "tree-of-life",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/105495a0c2ea708de307204b47c90915782256cffd83fc8dff8abcc508e0ef5a.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "最大持续时间从 15 秒降低至 12 秒。",
+         "before": 15.0,
+         "after": 12.0,
+         "by": -3.0,
+         "by_pct": null,
+         "metric": "maximum duration",
+         "raw_metric": "maximum duration",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "最大生命值从 1200 提高至 1400。",
+         "before": 1200.0,
+         "after": 1400.0,
+         "by": 200.0,
+         "by_pct": null,
+         "metric": "maximum health",
+         "raw_metric": "maximum health",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "zenyatta",
+     "name_en": "Zenyatta",
+     "name_cn": "禅雅塔",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9367143a32f3fc07781330a0b26c6f1087361204a2b7e4088d1daf26428273f2.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Orb of Destruction",
+       "name_cn": "灭",
+       "slug": "orb-of-destruction",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5740abd7e5f0de513ebcb32b073f27ba8f5625804598d5762cefd0c7331c1437.png",
+       "changes": []
+      },
+      {
+       "name_en": "Harmony Orb",
+       "name_cn": "谐",
+       "slug": "harmony-orb",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/999f5d34dd3c8dfb045bc69129d1b6aac547b98e252b68f2599b878d15d841cb.png",
+       "changes": []
+      },
+      {
+       "name_en": "Orb of Discord",
+       "name_cn": "乱",
+       "slug": "orb-of-discord",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f416ae3c602c4f920551057176a3618441f943a0faea5e3cf77dc5db0e5128a5.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "不再对每个目标单独计算冷却时间。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "脱离视线后从目标身上消失的时间从 1.5 秒提高至 3 秒。",
+         "before": 1.5,
+         "after": 3.0,
+         "by": 1.5,
+         "by_pct": null,
+         "metric": "time to fall off target when not in line of sight",
+         "raw_metric": "time to fall off target when not in line of sight",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Snap Kick (Passive)",
+       "name_cn": "蹬（被动）",
+       "slug": "snap-kick-passive",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/43fbd6de39a636c92c9f17ee4638216fd5cd7dd517c94125e24fa64cddd7845e.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "击退效果降低 20%。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 20.0,
+         "metric": "knockback",
+         "raw_metric": "knockback",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "不再提高快速近身攻击伤害。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2024-12-17-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:53:57+00:00",
+  "status": "draft",
+  "source_hash": "sha256:1953029bc5bfdde137bf9e199c3a2a835a10ce57e7d0cce17f0aec2e9e02fca2",
+  "kept_english": []
+ }
+}

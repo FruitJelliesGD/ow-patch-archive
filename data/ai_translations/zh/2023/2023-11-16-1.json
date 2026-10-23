@@ -1,0 +1,108 @@
+{
+ "id": "ai-2023-11-16-1",
+ "site": "ai",
+ "date": "2023-11-16",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/11",
+ "title": "《守望先锋》补丁说明——2023年11月16日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": "英雄更新",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "重装",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "roadhog",
+     "name_en": "Roadhog",
+     "name_cn": "路霸",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b6f4e837dc41e87d730f6b0fad3473e689c8bdcd1f732b97326ac08b0508f2ee.png",
+     "dev_note": "开发者评论：我们正在调整新版呼吸器的几处内容，因为最初的设定略显保守。这些改动应能让路霸在每时每刻都获得更高的治疗量和伤害减免。虽然我们缩短了最大持续时间，但这让路霸的治疗速度更快，也应能缓解部分玩家觉得自己在大量游戏时间里被锁死在呼吸器上的感受。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Take a Breather",
+       "name_cn": "呼吸器",
+       "slug": "take-a-breather",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9cb8d867671bf917a9ba5d4a28ab6cb6ceeb10de2813567fcad97aca32c58499.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "总治疗量从 450 提高至 500",
+         "before": 450.0,
+         "after": 500.0,
+         "by": 50.0,
+         "by_pct": null,
+         "metric": "total healing",
+         "raw_metric": "total healing",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "伤害减免从 30% 提高至 40%",
+         "before": 30.0,
+         "after": 40.0,
+         "by": 10.0,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "damage reduction",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "最大持续时间从 3 秒降低至 2.5 秒",
+         "before": 3.0,
+         "after": 2.5,
+         "by": -0.5,
+         "by_pct": null,
+         "metric": "maximum duration",
+         "raw_metric": "maximum duration",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "充能时间从 12 秒降低至 10 秒",
+         "before": 12.0,
+         "after": 10.0,
+         "by": -2.0,
+         "by_pct": null,
+         "metric": "recharge time",
+         "raw_metric": "recharge time",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2023-11-16-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:59:36+00:00",
+  "status": "draft",
+  "source_hash": "sha256:19dadc61c4b9d5bf960d8f6637dfa3b9748bf4b7ccf1e6bd204cc680da801716",
+  "kept_english": []
+ }
+}

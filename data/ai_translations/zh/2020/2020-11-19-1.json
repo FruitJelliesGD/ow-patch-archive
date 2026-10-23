@@ -1,0 +1,266 @@
+{
+ "id": "ai-2020-11-19-1",
+ "site": "ai",
+ "date": "2020-11-19",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2020/11",
+ "title": "《守望先锋》补丁说明——2020年11月19日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "综合更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 支援英雄在生命值不足并请求治疗时，不再说「和我集合」",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "ana",
+     "name_en": "Ana",
+     "name_cn": "安娜",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b64f0b7062266a58b29a773476b31175aded9fcccfe4a0d86596dbe85f7739d2.png",
+     "dev_note": "大量生物手雷因被队友误挡而未能生效。让生物手雷像安娜的普通攻击一样与队友碰撞，将能让该技能更精准地投放。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Biotic Grenade",
+       "name_cn": "生物手雷",
+       "slug": "biotic-grenade",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c8190b234bf0a0e28eecffe162d0c942e6b8656e95f4688c6ca3b025fa5a487d.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "弹道现在会穿过满生命值的队友",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "brigitte",
+     "name_en": "Brigitte",
+     "name_cn": "布丽吉塔",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/cc43b7ecb12ebf262080d610ae3209849e304f82764bc3ba38508dd812d88e61.png",
+     "dev_note": "在试验以 25 点生命值为单位调整近距离英雄生命值时，布丽吉塔是一个很可能需要调整的候选对象。但结合她的自我治疗和屏障后，这一改动最终变得过于强大。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "基础生命值从 175 降低至 150",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 175.0,
+       "after": 150.0,
+       "by": -25.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "hanzo",
+     "name_en": "Hanzo",
+     "name_cn": "半藏",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/871d02150e9b67af02795b137ffc5133c1ff8a2a8d66340ca939f6216a539c9c.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Storm Arrow",
+       "name_cn": "岚",
+       "slug": "storm-arrow",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/92c56621ba267d94f16baacda3f10ba7777b475935981b02e5026449d8e3d79c.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在可以手动取消",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "mei",
+     "name_en": "Mei",
+     "name_cn": "美",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a4c1e3c5533675ba4941c48809c54e0412774e022b1e324f7ec5915fef372db9.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Ice Wall",
+       "name_cn": "冰墙",
+       "slug": "ice-wall",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0608319e5f26acafd19a0afd682f3c73c5b70cbfc93d59f58f28eef5cd0eb2e7.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在可以在死亡时手动摧毁",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "moira",
+     "name_en": "Moira",
+     "name_cn": "莫伊拉",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d58b00cca1ff4bea2f18c1715f7c79a58e60b457b3e5ee6d9a63599cf77e299b.png",
+     "dev_note": "在近期的改动使莫伊拉维持高治疗输出变得更加困难后，她需要小幅提升治疗效率。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Biotic Grasp",
+       "name_cn": "生化之触",
+       "slug": "biotic-grasp",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9721148061d528df7b3b5a90f746a82dc2b53b191add15e0962f8dcaf0777aa0.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "治疗资源消耗速率从 14 降低至 12.5",
+         "before": 14.0,
+         "after": 12.5,
+         "by": -1.5,
+         "by_pct": null,
+         "metric": "healing",
+         "raw_metric": "healing resource consumption rate",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "symmetra",
+     "name_en": "Symmetra",
+     "name_cn": "秩序之光",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/961aa9d625d8104d6f466f63a907027e7083d161da9f02004d7d545c2a52440b.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Teleporter",
+       "name_cn": "传送面板",
+       "slug": "teleporter",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/13b45663f441144ded977e8ccf9ed180c213176206a9f6f9e189e29f09a03b64.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在可以在死亡时手动摧毁",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "torbjorn",
+     "name_en": "Torbjörn",
+     "name_cn": "托比昂",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/81a4f644137461fddfef6c24820b0b8958046d5dad1944baf02478fcc916a968.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Deploy Turret",
+       "name_cn": "部署炮台",
+       "slug": "deploy-turret",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a3791d6155a72f1dd4109d99a7d730b5f489f0442abd6582b429bcca36a2dc75.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "炮台现在可以在死亡时手动摧毁",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2020-11-19-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:57:29+00:00",
+  "status": "draft",
+  "source_hash": "sha256:1a06fd99c883315b9777b25eda52a03df97316022861286a2d0dac56f205c74e",
+  "kept_english": []
+ }
+}

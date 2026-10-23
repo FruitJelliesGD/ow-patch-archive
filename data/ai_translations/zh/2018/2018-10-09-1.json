@@ -1,0 +1,1222 @@
+{
+ "id": "ai-2018-10-09-1",
+ "site": "ai",
+ "date": "2018-10-09",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2018/10",
+ "title": "《守望先锋》补丁说明——2018年10月9日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "补丁亮点",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "全新季节性活动：2018 万圣夜惊魂",
+     "body": "对未来的恐惧再度来袭！\n\n除了游玩限时乱斗外，你还能解锁全新的季节性物品——包括六款全新传奇皮肤，如女妖莫伊拉、南瓜灯破坏球和魅惑护甲法老之鹰——以及往年不断丰富的惊悚装备收藏。\n\n在此处了解更多关于万圣夜惊魂的信息。",
+     "dev": null
+    },
+    {
+     "title": "色盲选项更新",
+     "body": "使用九种不同的色盲友好颜色来自定义队伍颜色在界面中的显示方式（例如姓名板、HUD、生命条和英雄轮廓）。你还可以分别设置敌方和友方界面的颜色。这些选项位于选项 > 视频 > 色盲选项下。所有更改都会被保存，并在你下一场比赛中生效！",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "综合更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 更新了音频混音，为游戏中的所有声音增加清晰度和动态范围",
+     "dev": "我们为游戏添加了更多英雄和功能，因此音频混音变得更加复杂，这要求我们重新平衡游戏中的声音。在本次更新中，我们扩展了第三人称武器声音的范围，增加了第一人称武器在世界中命中音效的范围，并整体平衡了第三人称脚步声和技能音效。"
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": "请注意，托比昂将在竞技比赛中停用两周。\n\n在此处了解更多。",
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "brigitte",
+     "name_en": "Brigitte",
+     "name_cn": "布丽吉塔",
+     "role": "support",
+     "icon": null,
+     "dev_note": "布丽吉塔的屏障生命值对大多数英雄来说极难应对，尤其是当她拉近与目标的距离时。此改动仍为布丽吉塔提供了可观的生存能力，但对向她施压的对手来说也应该更有回报。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Barrier Shield",
+       "name_cn": "屏障护盾",
+       "slug": "barrier-shield",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "护盾生命值从 600 降低至 500",
+         "before": 600.0,
+         "after": 500.0,
+         "by": -100.0,
+         "by_pct": null,
+         "metric": "shield",
+         "raw_metric": "shield health",
+         "unit": "hp"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "doomfist",
+     "name_en": "Doomfist",
+     "name_cn": "末日铁拳",
+     "role": "tank",
+     "icon": null,
+     "dev_note": "末日铁拳的核心玩法就是与敌人近身缠斗，但他的手炮散布过于紧密，在较远距离也能造成惊人的伤害，尤其是对更大的目标。此改动使他的武器与其他霰弹枪类武器保持一致，使其伤害在 15 米外开始衰减。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Hand Cannon",
+       "name_cn": "手炮",
+       "slug": "hand-cannon",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "伤害衰减现在从 15 米开始",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "cassidy",
+     "name_en": "Cassidy",
+     "name_cn": "卡西迪",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "此前，麦克雷的战术翻滚冷却时间感觉限制过多，有时会阻碍玩家使用它。新的更短冷却时间让玩家在将其用于位移或瞬间装填之间做出选择时更加灵活。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Combat Roll",
+       "name_cn": "战术翻滚",
+       "slug": "combat-roll",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从 8 秒降低至 6 秒",
+         "before": 8.0,
+         "after": 6.0,
+         "by": -2.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "pharah",
+     "name_en": "Pharah",
+     "name_cn": "法老之鹰",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "我们希望提高法老之鹰火箭发射器的响应速度，因为每发之间整整一秒的恢复时间让它感觉迟钝。为了平衡改善后的恢复时间，我们将火箭爆炸的部分伤害转移到了直接命中伤害上。现在直接命中时整体伤害潜力提高，而仅造成爆炸伤害时则略有降低。我们降低了每次爆炸造成的击退量，因为更快的火箭射速使其极难瞄准法老之鹰。震荡冲击的冷却时间缩短应能让该技能在用于位移时与推进背包的冷却时间更紧密地同步。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Concussive Blast",
+       "name_cn": "震荡冲击",
+       "slug": "concussive-blast",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从 12 秒降低至 9 秒",
+         "before": 12.0,
+         "after": 9.0,
+         "by": -3.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      },
+      {
+       "name_en": "Rocket Launcher",
+       "name_cn": "火箭发射器",
+       "slug": "rocket-launcher",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "攻击速度提高",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "射击间的恢复时间从 0.9 秒降低至 0.75 秒",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "伤害在爆炸和命中之间重新分配",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "爆炸伤害从 80 降低至 65",
+         "before": 80.0,
+         "after": 65.0,
+         "by": -15.0,
+         "by_pct": null,
+         "metric": "explosion damage",
+         "raw_metric": "explosion damage",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "命中伤害从 40 提高至 55",
+         "before": 40.0,
+         "after": 55.0,
+         "by": 15.0,
+         "by_pct": null,
+         "metric": "impact damage",
+         "raw_metric": "impact damage",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "爆炸击退降低 20%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 20.0,
+         "metric": "explosion knock back",
+         "raw_metric": "explosion knock back",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "自身击退量提高 25%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 25.0,
+         "metric": "self-knockback amount",
+         "raw_metric": "self-knockback amount",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "mei",
+     "name_en": "Mei",
+     "name_cn": "美",
+     "role": "damage",
+     "icon": null,
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "General",
+       "name_cn": "综合",
+       "slug": "general",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "更新了所有技能的视觉效果",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "orisa",
+     "name_en": "Orisa",
+     "name_cn": "奥丽莎",
+     "role": "tank",
+     "icon": null,
+     "dev_note": "奥丽莎会花大量时间在相对静止的位置发射聚变驱动器。考虑到弹丸的飞行时间，该武器的散布值使其在远距离预判目标时感觉过于随机。我们略微收紧了散布，这应能基本保持她中近距离的伤害潜力不变，同时让远距离命中目标时手感更好。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Fusion Driver",
+       "name_cn": "聚变驱动器",
+       "slug": "fusion-driver",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "最大散布降低 20%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 20.0,
+         "metric": "maximum spread",
+         "raw_metric": "maximum spread",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "soldier-76",
+     "name_en": "Soldier: 76",
+     "name_cn": "士兵76",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "士兵：76 的伤害输出略低，但与我们期望的数值相差不远。让他需要多打几发才能达到最大散布，使武器散布曲线更加平滑，应能让他的伤害更加稳定。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Heavy Pulse Rifle",
+       "name_cn": "重脉冲步枪",
+       "slug": "heavy-pulse-rifle",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "达到最大散布所需的射击次数从 6 发提高至 9 发",
+         "before": 6.0,
+         "after": 9.0,
+         "by": 3.0,
+         "by_pct": null,
+         "metric": "number of shots until reaching maximum spread",
+         "raw_metric": "number of shots until reaching maximum spread",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "torbjorn",
+     "name_en": "Torbjörn",
+     "name_cn": "托比昂",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "托比昂最初被设计为一名专精英雄，凭借其产生护甲的能力和用炮台控制区域的能力，意在成为强力的防守选择。然而，收集碎片和护甲包的机制因其大起大落的特性，已被证明会导致有问题的玩法。为了让他在各种情况下更加灵活，我们移除了碎片系统，让炮台更容易部署，将护甲包技能替换为热力过载——一个强力的自我增益——并将熔火核心转变为强力的全新区域封锁终极技能。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "General",
+       "name_cn": "综合",
+       "slug": "general",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "托比昂的头部判定体积缩小 10%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Rivet Gun",
+       "name_cn": "铆钉枪",
+       "slug": "rivet-gun",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "弹丸速度从每秒 60 提高至每秒 70",
+         "before": 60.0,
+         "after": 70.0,
+         "by": 10.0,
+         "by_pct": null,
+         "metric": "projectile_speed",
+         "raw_metric": "projectile speed",
+         "unit": "m/s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "装填时间从 2.2 秒降低至 2 秒",
+         "before": 2.2,
+         "after": 2.0,
+         "by": -0.2,
+         "by_pct": null,
+         "metric": "reload time",
+         "raw_metric": "reload time",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "炮台会瞄准被主要攻击命中的敌人",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "恢复时间从 0.8 秒降低至 0.6 秒",
+         "before": 0.8,
+         "after": 0.6,
+         "by": -0.2,
+         "by_pct": null,
+         "metric": "recovery",
+         "raw_metric": "recovery",
+         "unit": "s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "每发伤害从 150 降低至 125",
+         "before": 150.0,
+         "after": 125.0,
+         "by": -25.0,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "damage per shot",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "装填时间从 2.2 秒降低至 2 秒",
+         "before": 2.2,
+         "after": 2.0,
+         "by": -0.2,
+         "by_pct": null,
+         "metric": "reload time",
+         "raw_metric": "reload time",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "散布随机性重新调整",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "半径增大以与快速近身攻击一致",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "炮台现在作为投掷物投出",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "在 3 秒内自动建造完成",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "不再有不同等级",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "伤害输出与之前的 2 级炮台相同",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "最大生命值从 300 降低至 250",
+         "before": 300.0,
+         "after": 250.0,
+         "by": -50.0,
+         "by_pct": null,
+         "metric": "maximum health",
+         "raw_metric": "maximum health",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "部署后现在会进入 5 秒冷却时间",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "在战斗中被打掉后现在会进入 10 秒冷却时间",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "处于战斗中时不再能部署新炮台",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "当炮台正在开火时",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "如果炮台在 3 秒内受到过伤害",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "现在可以使用交互键摧毁",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "部署后即使托比昂被消灭也会自行建造完成",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "新技能：热力过载",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "替换护甲包",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "持续 5 秒",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "冷却时间为 12 秒",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "临时获得 150 点护甲",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "攻击、移动和装填速度提高 30%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "新终极技能：熔火核心",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "将武器从铆钉枪切换为他的机械爪臂",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "持续 6 秒",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "最多发射 10 个熔岩球，在落点处制造持续 10 秒的伤害区域",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "弹丸会从墙壁和天花板反弹，直到落地",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "基础伤害为 130",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "对拥有护甲的敌人，伤害从 130 提高至 190",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "**受护甲影响的英雄：**堡垒、布丽吉塔、D.Va、奥丽莎、莱因哈特、托比昂、温斯顿、破坏球",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "**能为盟友提供护甲的英雄：**布丽吉塔",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [
+    {
+     "title": "通用",
+     "body": "- 更新了所有护盾和屏障的视觉效果，以提高可读性\n- 如果玩家创造的实体对敌人造成伤害，敌人的生命条现在会对该玩家可见（例如秩序之光的炮台）",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "地图更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "通用",
+     "body": "- 攻防作战、运载目标和攻防作战/运载目标地图的准备时间从 1 分钟降低至 45 秒\n- 在攻防作战、攻防作战/运载目标和运载目标地图的第二回合中，「集结你的队伍」计时从 10 秒提高至 25 秒",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "用户界面更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "通用",
+     "body": "- 在「选项 > 游戏」下新增了一个用于调整玩家轮廓强度的滑块",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "bastion",
+     "name_en": "Bastion",
+     "name_cn": "堡垒",
+     "role": "damage",
+     "icon": null,
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "修复了堡垒的沙丘越野车皮肤在重装形态下后退或开火时，其防滚架会遮挡视野的错误",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "d-va",
+     "name_en": "D.Va",
+     "name_cn": "D.Va",
+     "role": "tank",
+     "icon": null,
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "修复了 D.Va 的纳米可乐皮肤部分发光效果无法显示的错误",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "修复了在英雄画廊查看 D.Va 的「MEKA已启动」精彩镜头时，D.Va 无法完整显示的错误",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "hanzo",
+     "name_en": "Hanzo",
+     "name_cn": "半藏",
+     "role": "damage",
+     "icon": null,
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "修复了半藏在做表情时风暴弓准星仍然可见的错误",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "mei",
+     "name_en": "Mei",
+     "name_cn": "美",
+     "role": "damage",
+     "icon": null,
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "修复了美在低矮天花板区域施放暴雪时无法冻结敌人的错误",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "reinhardt",
+     "name_en": "Reinhardt",
+     "name_cn": "莱因哈特",
+     "role": "tank",
+     "icon": null,
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "修复了莱因哈特使用裂地猛击后玩家准星会上抬的错误",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "修复了莱因哈特被击退技能击飞至空中时使用裂地猛击，其动画仍会播放的错误",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "修复了莱因哈特的火箭重锤将敌人击退得比预期更远的错误",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "修复了莱因哈特的冲锋有时会将目标击退而非将其钉住的错误",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "修复了莱因哈特在靠近墙壁处击退敌人后能立即将其钉住的错误",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "修复了范围效果技能能从比预期更远的距离命中莱因哈特屏障力场的错误（例如莱因哈特的火箭重锤和狂鼠的震荡地雷）",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "sombra",
+     "name_en": "Sombra",
+     "name_cn": "黑影",
+     "role": "damage",
+     "icon": null,
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "修复了黑影使用位移传动传送时会改变面朝方向的错误",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "修复了黑影的位移传动有时能到达非预期位置的错误",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "修复了当黑影的位移传动放置在特定位置时，部分技能无法将其摧毁的错误",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "symmetra",
+     "name_en": "Symmetra",
+     "name_cn": "秩序之光",
+     "role": "damage",
+     "icon": null,
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "修复了秩序之光放置炮台时可能播放不准确语音的错误",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "修复了秩序之光的辅助攻击在未命中目标时仍显示为引爆的错误",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "torbjorn",
+     "name_en": "Torbjörn",
+     "name_cn": "托比昂",
+     "role": "damage",
+     "icon": null,
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "修复了托比昂的奖章胜利姿势中奖章无法显示的错误",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "zarya",
+     "name_en": "Zarya",
+     "name_cn": "查莉娅",
+     "role": "tank",
+     "icon": null,
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "修复了查莉娅在做表情时粒子炮准星仍然可见的错误",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [
+    {
+     "title": "英雄",
+     "body": null,
+     "dev": null
+    },
+    {
+     "title": "地图",
+     "body": null,
+     "dev": null
+    },
+    {
+     "title": "釜山",
+     "body": "- 修复了玩家可以站在城区部分禁止进入的屋顶上的错误\n- 修复了喷漆无法显示在 MEKA基地玻璃窗上的错误",
+     "dev": null
+    },
+    {
+     "title": "沃斯卡娅工业区",
+     "body": "- 修复了玩家从移动平台落到目标点上时无法获得占领进度的错误",
+     "dev": null
+    },
+    {
+     "title": "游戏浏览器和自定游戏",
+     "body": null,
+     "dev": null
+    },
+    {
+     "title": "死斗",
+     "body": "- 修复了因自我造成死亡而导致比分互换时，「你的队伍已落败」或「你的队伍已领先」语音无法播放的错误",
+     "dev": null
+    },
+    {
+     "title": "对抗电脑",
+     "body": "- 修复了当所有观战席位已满时，玩家尝试观战玩家对抗电脑比赛却无法收到「无法加入」错误提示的错误",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2018-10-09-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:50:38+00:00",
+  "status": "draft",
+  "source_hash": "sha256:40e5a9297e8432391a363021bba492737109eb69bdf7b30e3692fe42ebc93903",
+  "kept_english": []
+ }
+}

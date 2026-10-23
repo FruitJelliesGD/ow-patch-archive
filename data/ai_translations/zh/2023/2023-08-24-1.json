@@ -1,0 +1,169 @@
+{
+ "id": "ai-2023-08-24-1",
+ "site": "ai",
+ "date": "2023-08-24",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/08",
+ "title": "《守望先锋》补丁说明——2023年8月24日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "综合更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "玩家升级进度",
+     "body": "- 将所有英雄、游戏模式和职责的胜场子徽章升级要求从 2 场降低至 1 场，并重新调整了授予的经验值以保持平衡。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": "英雄更新",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "支援",
+   "role": "support",
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "illari",
+     "name_en": "Illari",
+     "name_cn": "伊拉锐",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f33f6fe94ad55fcf9027e779f66afac358a2f93651070b95cd565ff90d670c8b.png",
+     "dev_note": "开发者评论：伊拉锐自上线以来表现一直很强。以下改动旨在促进治疗与伤害之间更好的平衡，同时为她的技能增加更多反制手段。我们削弱了治疗光塔，因为它经常被放置在视线之外或角度刁钻的位置，被摧毁的频率低于我们的预期。桎梏灼日无视屏障并不直观，因此我们也缩小了弹道尺寸，使格挡或摧毁它需要更高的精准度。最后，桎梏灼日的持续时间过长，导致玩家难以合理规避引爆伤害阈值。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Healing Pylon",
+       "name_cn": "治疗光塔",
+       "slug": "healing-pylon",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/55bf9fe097546152c2592716f809b86c542b22d5de3384eb6c4674fc01991115.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "治疗量从 40 降低至 30。",
+         "before": 40.0,
+         "after": 30.0,
+         "by": -10.0,
+         "by_pct": null,
+         "metric": "heal",
+         "raw_metric": "heal",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "护盾生命值从 75 降低至 50。",
+         "before": 75.0,
+         "after": 50.0,
+         "by": -25.0,
+         "by_pct": null,
+         "metric": "shield",
+         "raw_metric": "shields",
+         "unit": "hp"
+        }
+       ]
+      },
+      {
+       "name_en": "Captive Sun",
+       "name_cn": "桎梏灼日",
+       "slug": "captive-sun",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/556c78ff01455fb1ab7ed7808e681ae0f1cd1fdf0fe1c92fe89672ea261ad187.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "弹道命中和爆炸现在会被屏障阻挡。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "弹道尺寸从 1.5 米降低至 0.75 米。",
+         "before": 1.5,
+         "after": 0.75,
+         "by": -0.75,
+         "by_pct": null,
+         "metric": "projectile size",
+         "raw_metric": "projectile size",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "桎梏灼日持续时间从 7 秒降低至 6 秒。",
+         "before": 7.0,
+         "after": 6.0,
+         "by": -1.0,
+         "by_pct": null,
+         "metric": "sunstruck duration",
+         "raw_metric": "sunstruck duration",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 修复了部分活动挑战无法计入布丽吉塔火花塞皮肤「冥界救星」进度的问题。\n- 修复了战令中艾什蛇牧人皮肤被设为付费奖励而非免费奖励的问题。任何已解锁该等级免费战令路线的玩家将自动获得该皮肤。\n- 修复了玩家会补位进入冥界活动任务和入侵剧情任务的问题。\n- 修复了允许在冥界活动任务和入侵剧情任务中观战玩家的问题。",
+     "dev": null
+    },
+    {
+     "title": "英雄",
+     "body": "回声\n\n- 修复了复制伊拉锐的桎梏灼日爆炸会伤害自身及队友的问题。\n\n奥丽莎\n\n- 修复了英雄画廊中缺少「谁说骑士精神已死？」语音的问题。\n- 修复了奥丽莎世界杯皮肤无法获取的问题。",
+     "dev": null
+    },
+    {
+     "title": "任务",
+     "body": "多伦多\n\n- 已在之前的更新中修复 - 修复了切割者卡入渡轮导致难以瞄准的问题。\n\n哥德堡\n\n- 已在之前的更新中修复 - 修复了「宝宝们安全了」挑战无法完成的问题。\n- 修复了泰坦在登场动画最初几秒内不可见的问题。\n- 修复了超级加农炮周围存在隐形碰撞体，会阻挡布丽吉塔的能量盾击和流星飞锤的问题。\n\n冥界\n\n- 已在之前的更新中修复 - 修复了「站住，小偷！」挑战无法完成的问题。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2023-08-24-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:57:12+00:00",
+  "status": "draft",
+  "source_hash": "sha256:4cac078724f9b6dbfbb5378dd8d6f10c14fc979cac0e2aa765fbc60f9d19611a",
+  "kept_english": []
+ }
+}

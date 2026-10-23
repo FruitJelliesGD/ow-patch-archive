@@ -1,0 +1,163 @@
+{
+ "id": "ai-2023-12-15-1",
+ "site": "ai",
+ "date": "2023-12-15",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/12",
+ "title": "《守望先锋》补丁说明——2023年12月15日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": "英雄更新",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "重装",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "mauga",
+     "name_en": "Mauga",
+     "name_cn": "毛加",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6dbd80a0b40bd0464db35948f98d91ecc6dfcede8c94ff9b1ecefda781a7aa1f.png",
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "已解锁毛加的玩家现在可以在竞技比赛使用毛加。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "基础生命值从 350 降低至 250。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 350.0,
+       "after": 250.0,
+       "by": -100.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "基础护甲从 150 提高至 250。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 150.0,
+       "after": 250.0,
+       "by": 100.0,
+       "by_pct": null,
+       "metric": "base armor",
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Incendiary and Volatile Chainguns",
+       "name_cn": "燃烧弹链式步枪与爆裂链式步枪",
+       "slug": "incendiary-and-volatile-chainguns",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/df6bae435e7e319b51fe4977e92971fcfbb9b30fab2f39d1e614660274fab226.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "燃烧弹链式步枪点燃敌人所需的射击次数从 15 回调至 10。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "仅有一把链式步枪激活时，散布从 1.1 降低至 1。",
+         "before": 1.1,
+         "after": 1.0,
+         "by": -0.1,
+         "by_pct": null,
+         "metric": "spread",
+         "raw_metric": "spread",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Berserker",
+       "name_cn": "狂战士",
+       "slug": "berserker",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f35a2296090039ae055f465e736370f031bdd348677b3c9657147c0b925267b1.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "过量生命值转化率从 50% 提高至 60%。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 修复了部分英雄的默认武器会显示为需要竞技点数解锁的错误。\n- 英雄精通——修复了回放中只能选择第一轮书签的错误。\n- 修复了玩家无法互相表示感谢的错误。\n- 修复了多重消灭语音无法播放的错误。",
+     "dev": null
+    },
+    {
+     "title": "英雄",
+     "body": "狂鼠\n\n- 修复了震荡地雷放置在墙后时，狂鼠可以借助其起跳的错误。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2023-12-15-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:59:40+00:00",
+  "status": "draft",
+  "source_hash": "sha256:d8542f80ad542545274bd2e9adf2f918889a7d019936d140a6a2fdec1b17cdfb",
+  "kept_english": []
+ }
+}

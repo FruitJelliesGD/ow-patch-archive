@@ -1,0 +1,388 @@
+{
+ "id": "ai-2025-10-01-1",
+ "site": "ai",
+ "date": "2025-10-01",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/10",
+ "title": "《守望先锋》补丁说明——2025年10月1日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "角斗领域更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "角斗领域竞技比赛更新",
+     "body": "- 修复了接近预测排位级别的玩家开始获得极少量角斗领域点数的问题。\n- 我们调整了角斗领域排位分布曲线，使大多数玩家更容易达到精英级别。\n- 我们进行了调整，以减少玩家输掉比赛时损失的角斗领域点数，因为现在每赢下一回合都会更大程度地减少总体点数损失。\n- 我们调整了竞技比赛中可获得或损失的角斗领域点数上限与下限。",
+     "dev": "> 开发者评论：角斗领域竞技比赛的动态更新使该系统内的进度推进感觉更加困难，因为玩家现在能更快找到自己的预测排位级别。我们正在进行改进以平滑这一体验，并会在进入第19赛季时密切关注。"
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "输出",
+   "role": "damage",
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "freja",
+     "name_en": "Freja",
+     "name_cn": "弗蕾娅",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/828848437c49bc5ed4a2cf900c85986a4af265d71d1ea9ddf260b8a0236f71a9.png",
+     "dev_note": "> 开发者评论：弗蕾娅在角斗领域中长期处于最低胜率，因此我们为她的构筑增加了一些稳定性，使她在输出阵容中更具竞争力。我们知道她在高手手中拥有极高的伤害上限，因此这些改动旨在帮助她提升稳定性，而非提高她的伤害上限或一击必杀能力。",
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
+      {
+       "name_en": "Lille Fælde",
+       "name_cn": "Lille Fælde",
+       "rarity": null,
+       "kind": "power",
+       "status": "changed",
+       "lines_en": [
+        "Increased effectiveness to 30% reduced effectiveness (up from 40% reduced effectiveness)."
+       ],
+       "lines_cn": [
+        "效果提高至30%效果降低（原为40%效果降低）。"
+       ],
+       "raw_text": [
+        "Lille Fælde - Power"
+       ]
+      },
+      {
+       "name_en": "Seismic Shot",
+       "name_cn": "Seismic Shot",
+       "rarity": null,
+       "kind": "power",
+       "status": "changed",
+       "lines_en": [
+        "Increased explosion radius increased to 50% (up from 33%)."
+       ],
+       "lines_cn": [
+        "爆炸半径提高至50%（原为33%）。"
+       ],
+       "raw_text": [
+        "Seismic Shot - Power"
+       ]
+      },
+      {
+       "name_en": "Forager",
+       "name_cn": "Forager",
+       "rarity": null,
+       "kind": "power",
+       "status": "changed",
+       "lines_en": [
+        "Increased Max Life Heal per shot to 5% (up from 4%)."
+       ],
+       "lines_cn": [
+        "每发最大生命值治疗提高至5%（原为4%）。"
+       ],
+       "raw_text": [
+        "Forager - Power"
+       ]
+      },
+      {
+       "name_en": "Deep Pockets",
+       "name_cn": "Deep Pockets",
+       "rarity": null,
+       "kind": "power",
+       "status": "changed",
+       "lines_en": [
+        "Ammo Restore on Ability Use increased to 40% (up from 25%)."
+       ],
+       "lines_cn": [
+        "使用技能时恢复弹药提高至40%（原为25%）。"
+       ],
+       "raw_text": [
+        "Deep Pockets - Power"
+       ]
+      },
+      {
+       "name_en": "Volley à Deux",
+       "name_cn": "Volley à Deux",
+       "rarity": null,
+       "kind": "power",
+       "status": "changed",
+       "lines_en": [
+        "Increased damage on additional bolts to 50% reduced (up from 66% reduced)."
+       ],
+       "lines_cn": [
+        "额外弩箭的伤害提高至50%降低（原为66%降低）。"
+       ],
+       "raw_text": [
+        "Volley à Deux - Power"
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "tracer",
+     "name_en": "Tracer",
+     "name_cn": "猎空",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5ee20a1feed14da5153f19745328e9fc02bd79f8109593a9b7dab9283eb9629b.png",
+     "dev_note": "> 开发者评论：猎空在各方面的表现都很好。我们让她更难获得大量生命值，以确保她的交战仍然存在风险。我们还对她部分以武器为核心的异能进行了削弱，并对她的其他构筑给予了一些增强。我们会继续密切关注猎空，因为我们知道她与角斗领域的属性成长有着非常强的关联。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "时空枢纽——角斗领域被动",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "现在从物品和现金中获得的治疗、护甲和护盾减少35%（原为减少25%）。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
+      {
+       "name_en": "Alternate Ending",
+       "name_cn": "Alternate Ending",
+       "rarity": null,
+       "kind": "power",
+       "status": "changed",
+       "lines_en": [
+        "Healing increased to 100% of damage taken (up from 75%)."
+       ],
+       "lines_cn": [
+        "治疗提高至所受伤害的100%（原为75%）。"
+       ],
+       "raw_text": [
+        "Alternate Ending - Power"
+       ]
+      },
+      {
+       "name_en": "Blink of An Eye",
+       "name_cn": "Blink of An Eye",
+       "rarity": null,
+       "kind": "power",
+       "status": "changed",
+       "lines_en": [
+        "Cooldown reduction reduced to 0.04s (down from 0.05s)."
+       ],
+       "lines_cn": [
+        "冷却时间缩减降低至0.04秒（原为0.05秒）。"
+       ],
+       "raw_text": [
+        "Blink of An Eye - Power"
+       ]
+      },
+      {
+       "name_en": "Foresight",
+       "name_cn": "Foresight",
+       "rarity": null,
+       "kind": "power",
+       "status": "changed",
+       "lines_en": [
+        "Auto-aim reduced to 4 shots (down from 6)."
+       ],
+       "lines_cn": [
+        "自动瞄准降低至4发（原为6发）。"
+       ],
+       "raw_text": [
+        "Foresight - Power"
+       ]
+      },
+      {
+       "name_en": "Temportal",
+       "name_cn": "Temportal",
+       "rarity": null,
+       "kind": "power",
+       "status": "changed",
+       "lines_en": [
+        "Increased the portal's duration to 8s (up from 6s)."
+       ],
+       "lines_cn": [
+        "传送门的持续时间提高至8秒（原为6秒）。"
+       ],
+       "raw_text": [
+        "Temportal - Power"
+       ]
+      },
+      {
+       "name_en": "Chrono Bomb",
+       "name_cn": "Chrono Bomb",
+       "rarity": "Epic",
+       "kind": "ability",
+       "status": "changed",
+       "lines_en": [
+        "Increased Ability Power to 20% (up from 15%).",
+        "Increased cost to 10500 (up from 10000)."
+       ],
+       "lines_cn": [
+        "技能强度提高至20%（原为15%）。",
+        "花费提高至10500（原为10000）。"
+       ],
+       "raw_text": [
+        "Chrono Bomb - Epic Ability Hero Item"
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "支援",
+   "role": "support",
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "brigitte",
+     "name_en": "Brigitte",
+     "name_cn": "布丽吉塔",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/51b93ea59f369a1defa78e5d08c12b1391f5d2d94614a51fd95c125a7a6151fa.png",
+     "dev_note": "> 开发者评论：布丽吉塔在赛季中期核心游戏中对能量盾击的伤害增强，被证明为Sköldkastning带来了意外的大幅伤害提升，并且其表现一直过于强势。我们正在降低该额外伤害，使其更接近她的其他异能，以确保她的构筑路线具有多样性。",
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
+      {
+       "name_en": "Sköldkastning",
+       "name_cn": "Sköldkastning",
+       "rarity": null,
+       "kind": "power",
+       "status": "changed",
+       "lines_en": [
+        "Shield Boomerang damage reduced to 40% of Shield Bash damage (down from 60%)."
+       ],
+       "lines_cn": [
+        "盾牌回旋镖伤害降低至能量盾击伤害的40%（原为60%）。"
+       ],
+       "raw_text": [
+        "Sköldkastning - Power"
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "军械库",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "general-item-updates",
+     "name_en": "General Item Updates",
+     "name_cn": "综合物品更新",
+     "role": null,
+     "icon": null,
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "破码者——史诗综合武器物品",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "花费提高至10000（原为9000）。",
+       "subject": null,
+       "dimension": "other",
+       "before": 9000.0,
+       "after": 10000.0,
+       "by": 1000.0,
+       "by_pct": null,
+       "metric": "cost",
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "英雄",
+     "body": "天使\n\n- 修复了守望先锋经典版中天使终极技能的动画和语音台词问题。\n\n无漾\n\n- 修复了无漾的终极技能有时会以比预期更近的敌人为目标的问题。",
+     "dev": null
+    },
+    {
+     "title": "地图",
+     "body": "阿特利斯\n\n- 修复了阿特利斯的楼梯问题，该地图已重新启用。",
+     "dev": null
+    },
+    {
+     "title": "角斗领域",
+     "body": "莫伊拉\n\n- 修复了莫伊拉的异能Optimal Overflow生成的生化之球持续时间未减少的问题。\n\n法老之鹰\n\n- 修复了法老之鹰的三连火箭弹造成高于预期伤害的问题。\n\n莱因哈特\n\n- 修复了莱因哈特的异能Shield Stampede导致冲锋期间镜头无法固定的问题。\n\n士兵：76\n\n- 修复了士兵：76的异能Peripheral Pulse在战术目镜期间对额外目标未造成降低伤害的问题。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2025-10-01-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:56:21+00:00",
+  "status": "draft",
+  "source_hash": "sha256:22ea8d630c5614c4c81a4dfdb5caff015c2abd2f24712d111c54b6ad50af4e4a",
+  "kept_english": [
+   "Alternate Ending",
+   "Blink of An Eye",
+   "Chrono Bomb",
+   "Deep Pockets",
+   "Forager",
+   "Foresight",
+   "Lille Fælde",
+   "Seismic Shot",
+   "Sköldkastning",
+   "Temportal",
+   "Volley à Deux"
+  ]
+ }
+}

@@ -1,0 +1,632 @@
+{
+ "id": "ai-2024-11-08-1",
+ "site": "ai",
+ "date": "2024-11-08",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/11",
+ "title": "《守望先锋》补丁说明——2024年11月8日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "守望先锋经典版",
+   "role": null,
+   "description": "无论你是新玩家还是资深守望先锋粉丝，这场从11月12日开始的为期三周的活动都将带你回到过去，体验守望先锋激动人心的起源。重温标志性地图，享受拥有经典技能的初代英雄阵容，并拥抱6v6无限制阵容带来的混乱乐趣。",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "魔兽世界：30周年",
+   "role": null,
+   "description": "为纪念魔兽世界三十周年，在11月15日至11月22日期间任意时间登录，即可获得免费奖励作为庆典礼物！",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": "英雄更新",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "重装",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "doomfist",
+     "name_en": "Doomfist",
+     "name_cn": "末日铁拳",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/bc538b345188bdcb2d2be5b2894d471ba54aeea53b03862429205ed49d693bbe.png",
+     "dev_note": "开发者评论：这次火箭重拳的调整让触发撞墙略微更容易，这应该会减少敌人沿墙滑行的情况。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Rocket Punch",
+       "name_cn": "火箭重拳",
+       "slug": "rocket-punch",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/aa2a067fe151ac2795fe77546711c07be5f0880d9ae5dce554cab0c933d927f0.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "撞墙所需角度从44度提高至55度。",
+         "before": 44.0,
+         "after": 55.0,
+         "by": 11.0,
+         "by_pct": null,
+         "metric": "angle required for wall slam",
+         "raw_metric": "angle required for wall slam",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Meteor Strike",
+       "name_cn": "毁天灭地",
+       "slug": "meteor-strike",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/fa96b2650987b3784a725a0fb1704f7191a686a4f42c9ccf61c404e2f08b158c.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "终极技能消耗降低8%。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 8.0,
+         "metric": "ultimate_cost",
+         "raw_metric": "ultimate cost",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "空中每秒治疗量从75提高至90。",
+         "before": 75.0,
+         "after": 90.0,
+         "by": 15.0,
+         "by_pct": null,
+         "metric": "healing",
+         "raw_metric": "healing per second while in the air",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "junker-queen",
+     "name_en": "Junker Queen",
+     "name_cn": "渣客女王",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/cf66adfac58a0321ec1f7d3a7241d6bf2f3b311707064d2f0ace2e3f4e342727.png",
+     "dev_note": "开发者评论：虽然她不是出场率最高的，但渣客女王是目前表现最好的重装。这些调整旨在通过降低她的自我治疗并让飞刀投掷需要更高精准度来略微削弱她。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Jagged Blade",
+       "name_cn": "锯齿利刃",
+       "slug": "jagged-blade",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/7aff09649e4e2daeec13cfcca4d5e369b4ddc0160587637bb607761ecf89f16c.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "基础弹道尺寸从0.2米降低至0.15米。",
+         "before": 0.2,
+         "after": 0.15,
+         "by": -0.05,
+         "by_pct": null,
+         "metric": "base projectile size",
+         "raw_metric": "base projectile size",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Adrenaline Rush",
+       "name_cn": "狂血奔涌",
+       "slug": "adrenaline-rush",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e1706243e4996af6844e7f8233bbd3f98f04583a223cd3ad926d40ef6c4c8557.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "创伤伤害的自我治疗倍率从2.5倍降低至2.25倍。",
+         "before": 2.5,
+         "after": 2.25,
+         "by": -0.25,
+         "by_pct": null,
+         "metric": "wound damage self-healing multiplier",
+         "raw_metric": "wound damage self-healing multiplier",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "mauga",
+     "name_en": "Mauga",
+     "name_cn": "毛加",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6dbd80a0b40bd0464db35948f98d91ecc6dfcede8c94ff9b1ecefda781a7aa1f.png",
+     "dev_note": "开发者评论：毛加已经低迷了一段时间，所以我们决定为他或许最具吸引力的技能——蛮力冲撞——注入一些强度。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Overrun",
+       "name_cn": "蛮力冲撞",
+       "slug": "overrun",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c23cc1056dcc40fb5976f3987181b7a46406a0a133f1e95b9b1db11d36253363.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从6秒降低至5秒。",
+         "before": 6.0,
+         "after": 5.0,
+         "by": -1.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "冲锋移动速度提高15%。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 15.0,
+         "metric": "charge movement speed",
+         "raw_metric": "charge movement speed",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "输出",
+   "role": "damage",
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "hanzo",
+     "name_en": "Hanzo",
+     "name_cn": "半藏",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3febc2e638ff56d8f0161ea278ac3116b5baf8c0328f1eded6b499552a0eccad.png",
+     "dev_note": "开发者评论：竜的改动使其能够对非玩家实体造成伤害，例如屏障、炮台、陷阱和地雷。这应该能提升它的实用性，即使没有消灭对手，因为它现在也能帮助清除战场上的其他障碍物。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Storm Bow",
+       "name_cn": "风暴弓",
+       "slug": "storm-bow",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1aa4358e8a1d423dd55669780908b856141a783d053224b629b064c66288469e.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "完全蓄力时间从0.87秒降低至0.80秒。",
+         "before": 0.87,
+         "after": 0.8,
+         "by": -0.07,
+         "by_pct": null,
+         "metric": "time to fully charge",
+         "raw_metric": "time to fully charge",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Dragonstrike",
+       "name_cn": "竜",
+       "slug": "dragonstrike",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f2d63b8f0e19e91d2c1199ed3ac0f20bb180dabe9ad1ffc7d1f1e880e58f0220.png",
+       "changes": []
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "junkrat",
+     "name_en": "Junkrat",
+     "name_cn": "狂鼠",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d3628dc64d78ca6dc2a8b509cf5a6fc417c0f5068d5f75d1f5c094be1f58ee4e.png",
+     "dev_note": "开发者评论：我们提高了震荡地雷的冷却时间，以降低狂鼠的机动性和爆发伤害连招的频率。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Concussion Mine",
+       "name_cn": "震荡地雷",
+       "slug": "concussion-mine",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1d6135a3089363cf2c59d5157740cf5dc4ad572bc215553672a79812c397dbd2.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从7秒提高至8秒。",
+         "before": 7.0,
+         "after": 8.0,
+         "by": 1.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "reaper",
+     "name_en": "Reaper",
+     "name_cn": "死神",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b7aac87959afbe062cc31518ded04b9dbcadb0a2282f8963c6bfd5ba0a2d6a27.png",
+     "dev_note": "开发者评论：由于死神现在拥有300点生命值，且暗影步施放时间缩短后机动性更加可靠，该被动提供的生存能力正在被下调。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "The Reapening",
+       "name_cn": "The Reapening",
+       "slug": "the-reapening",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/21fb34e5a009987c73f686336cd61d4e4b771a8a2d9b6753e62f65b41e6b6c51.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "生命汲取从35%降低至30%。",
+         "before": 35.0,
+         "after": 30.0,
+         "by": -5.0,
+         "by_pct": null,
+         "metric": "lifesteal",
+         "raw_metric": "lifesteal",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "tracer",
+     "name_en": "Tracer",
+     "name_cn": "猎空",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5ee20a1feed14da5153f19745328e9fc02bd79f8109593a9b7dab9283eb9629b.png",
+     "dev_note": "开发者评论：由于脉冲手枪伤害近期下调，猎空的威胁性降低，因此这次是对此前削弱的一次回退。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Recall",
+       "name_cn": "闪回",
+       "slug": "recall",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/30939502a8576da1fdcad8c7d21881e32066fb28847fc7df874b1436689e3425.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从13秒降低至12秒。",
+         "before": 13.0,
+         "after": 12.0,
+         "by": -1.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "支援",
+   "role": "support",
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "ana",
+     "name_en": "Ana",
+     "name_cn": "安娜",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/86debddbaaaf8699d68775a9dbffaf5b8db514772b77ff7234b1ff84c0b29fd5.png",
+     "dev_note": "开发者评论：这个伤害数值已经反复调整过几次，因为它是消灭某些英雄所需射击次数的关键临界点。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Biotic Rifle",
+       "name_cn": "生物步枪",
+       "slug": "biotic-rifle",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/efe0ebb135e87dc26b60f0d20500dcd7553ad121ab2b10cd4ffb5db17be9c977.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "伤害和治疗量从70提高至75。",
+         "before": 70.0,
+         "after": 75.0,
+         "by": 5.0,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "damage and healing",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "juno",
+     "name_en": "Juno",
+     "name_cn": "朱诺",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2a65bf12035f9c255833693224cad83fd98cead625fdf1b9da8359a7f259e01c.png",
+     "dev_note": "开发者评论：朱诺曾是顶级主流支援英雄，并在上赛季表现过强。轨道射线也被证明是最具影响力的终极技能之一，因此我们正在降低它的出现频率。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Orbital Ray",
+       "name_cn": "轨道射线",
+       "slug": "orbital-ray",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b4215620deb362a0ad6a7784275d43b518868392b0f7e77228adabe32a489e77.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "终极技能消耗提高10%。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 10.0,
+         "metric": "ultimate_cost",
+         "raw_metric": "ultimate cost",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "kiriko",
+     "name_en": "Kiriko",
+     "name_cn": "雾子",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/24d1d7bf86c331b3d81b934442ed36fd0121f6815255c6f26f456127fb342d15.png",
+     "dev_note": "开发者评论：雾子受生命值降至225点的影响很大，且本就处于支援英雄中较弱的一侧，因此我们略微降低她的技能冷却时间和武器恢复时间，以恢复一些有效性。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Kunai",
+       "name_cn": "锥",
+       "slug": "kunai",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/dd7da4b0caa30dafaa3359c902b31866e547f9a1ea7952d7f536e1671d47d9bd.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "恢复时间从0.55秒降低至0.5秒。",
+         "before": 0.55,
+         "after": 0.5,
+         "by": -0.05,
+         "by_pct": null,
+         "metric": "recovery",
+         "raw_metric": "recovery time",
+         "unit": "s"
+        }
+       ]
+      },
+      {
+       "name_en": "Swift Step",
+       "name_cn": "瞬",
+       "slug": "swift-step",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e6ed3a36c4ed15b2127d6ca74756b25e0db7cf33ce7e26d9a79fd821526f055f.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从8秒降低至7秒。",
+         "before": 8.0,
+         "after": 7.0,
+         "by": -1.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      },
+      {
+       "name_en": "Protection Suzu",
+       "name_cn": "铃",
+       "slug": "protection-suzu",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3775c37a363e1aaf02a6df4cdfb611f18e38bb69ce42dd59abddb4140cea9790.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从15秒降低至14秒。",
+         "before": 15.0,
+         "after": 14.0,
+         "by": -1.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "lifeweaver",
+     "name_en": "Lifeweaver",
+     "name_cn": "生命之梭",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/57d5014ab6034db9138f838e8450693b4a97ab3c54f85d594b199a8853e75ccb.png",
+     "dev_note": "开发者评论：生命之握非常适合重新定位队友以帮助他们脱离险境，但它也会暴露队友的落点，因此他们可能随后立刻承受大量伤害。我们为其增加了一些治疗量以减少这种情况的发生，但我们会持续关注，以免调整过度。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Lifegrip",
+       "name_cn": "生命之握",
+       "slug": "lifegrip",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/36969bea55419b7ff963f2fb0ff7f80e37ecbe810bcd7dae0c7c835270c938a8.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从19秒降低至18秒。",
+         "before": 19.0,
+         "after": 18.0,
+         "by": -1.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "治疗量从50提高至75。",
+         "before": 50.0,
+         "after": 75.0,
+         "by": 25.0,
+         "by_pct": null,
+         "metric": "healing",
+         "raw_metric": "healing",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Tree of Life",
+       "name_cn": "生命之树",
+       "slug": "tree-of-life",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/105495a0c2ea708de307204b47c90915782256cffd83fc8dff8abcc508e0ef5a.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "离开范围后过量生命值开始衰减的时间从2.5秒提高至6秒。",
+         "before": 2.5,
+         "after": 6.0,
+         "by": 3.5,
+         "by_pct": null,
+         "metric": "time before overhealth begins to drain when out of range",
+         "raw_metric": "time before overhealth begins to drain when out of range",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "moira",
+     "name_en": "Moira",
+     "name_cn": "莫伊拉",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/90fa2b69a7b80ae6d57c9ea6f3387dd18dfc1728bdb26949d28a17b98dd4e5f7.png",
+     "dev_note": "开发者评论：莫伊拉受生命值降至225点的影响并不算太严重，但她可以稍微提升一下生存能力。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Biotic Grasp",
+       "name_cn": "生化之触",
+       "slug": "biotic-grasp",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4073577768c5a1f5b5e8bcdb9ce9615be249d35cfbff4b66bc617c19e3b96591.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "自我治疗从每秒24点提高至每秒30点生命值。",
+         "before": 24.0,
+         "after": 30.0,
+         "by": 6.0,
+         "by_pct": null,
+         "metric": "self-healing",
+         "raw_metric": "self-healing",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 修复了其他玩家能听到装饰性语音效果的问题。",
+     "dev": null
+    },
+    {
+     "title": "地图",
+     "body": "皇家赛道\n\n- 修复了皇家赛道其中一个侧室光照过亮的问题。\n\n佩特拉\n\n- 修复了佩特拉竞技场地图的问题，该地图现已可再次游玩。",
+     "dev": null
+    },
+    {
+     "title": "英雄",
+     "body": "安娜\n\n- 降低了进化午夜太阳神话武器所需的伤害与治疗量总和。进化2：需求降低40%，从5,000降低至3,000。进化3（最终）：需求降低20%，从10,000降低至8,000。\n\n拉玛刹\n\n- 修复了拉玛刹在施放第一个屏障时被击晕后仍能重新施放屏障的问题。\n\n查莉娅\n\n- 修复了查莉娅偶尔能躲避莱因哈特冲锋伤害的罕见问题。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2024-11-08-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:53:01+00:00",
+  "status": "draft",
+  "source_hash": "sha256:65dca174f3887f36841aef51f844d42b848f071137b290aa24da89ee834bc356",
+  "kept_english": [
+   "The Reapening"
+  ]
+ }
+}

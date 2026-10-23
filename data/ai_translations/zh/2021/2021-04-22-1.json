@@ -1,0 +1,324 @@
+{
+ "id": "ai-2021-04-22-1",
+ "site": "ai",
+ "date": "2021-04-22",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2021/04",
+ "title": "《守望先锋》补丁说明——2021年4月22日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "hero_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "baptiste",
+     "name_en": "Baptiste",
+     "name_cn": "巴蒂斯特",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a4f09ac5528ea7c458223747a0b47144f1b6b1d2736fa3b67c18a8ab43d0d815.png",
+     "dev_note": "我们正在降低维生力场的最低生命值阈值以及巴蒂斯特的范围治疗效果，因为它们在紧密抱团的队伍中整体提供了过多的价值。不过，治疗榴弹直接命中目标时现在会为被命中的队友提供额外治疗，以保持他单体治疗的有效性，同时对操作技巧的要求略有提高。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Biotic Launcher (Secondary Fire)",
+       "name_cn": "生化榴弹枪（次要攻击）",
+       "slug": "biotic-launcher-secondary-fire",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/af62dfb3476b6389472188ce9e6e0e296928a5cb3ae87a4ed5133c8330e46f0d.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "治疗榴弹爆炸治疗量从 60 降低至 50 生命值",
+         "before": 60.0,
+         "after": 50.0,
+         "by": -10.0,
+         "by_pct": null,
+         "metric": "healing",
+         "raw_metric": "healing projectile explosion",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "治疗榴弹直接命中现在额外恢复 20 生命值",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Immortality Field",
+       "name_cn": "维生力场",
+       "slug": "immortality-field",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d66d82bab88fc813080dd15e31629cc3aa7c8b41cfb41d5b962b628dd345e433.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在保护队友的最低生命值阈值为最大生命值的 10%，从 20% 降低",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "d-va",
+     "name_en": "D.Va",
+     "name_cn": "D.Va",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5d9b834a39e9306ec125dd8c77cdd62a351f8edef2d5dfe66d6cbb22594eae7e.png",
+     "dev_note": "如果 D.Va 是她队伍中最后一名存活玩家且没有机甲，敌方队伍往往会故意拖延她的重生。这一改动将使低生命值英雄在呼叫机甲落点附近变得更加危险。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Call Mech",
+       "name_cn": "呼叫机甲",
+       "slug": "call-mech",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/848d8cd24eb0327a023a564447d79dd8b367c21a378d328cd92896a21b775219.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "伤害从 50 提高至 250",
+         "before": 50.0,
+         "after": 250.0,
+         "by": 200.0,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "damage",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "echo",
+     "name_en": "Echo",
+     "name_cn": "回声",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ce8aec64726308d50cc0e4656d9bfe7647b886cc23830e0c80439cb92bfbdbcc.png",
+     "dev_note": "这一改动来自社区实验卡。由于回声通过使用人格复制终极技能获得了额外的生命值池，因此她在技能结束后也不需要被治疗至满血，这似乎是合理的。设置最低生命值是为了防止她在技能结束时因少量伤害而立即死亡，因为对于持续时间较长的终极技能，往往很难记住她开始时的生命值。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Duplicate",
+       "name_cn": "人格复制",
+       "slug": "duplicate",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/457d6ebcb2b92d1e7f7a7174b426903879e131422196825589adbc5e5d9f7efb.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "人格复制结束时，回声将恢复到激活技能前的生命值，或 100 生命值，取两者中较高者",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "moira",
+     "name_en": "Moira",
+     "name_cn": "莫伊拉",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d58b00cca1ff4bea2f18c1715f7c79a58e60b457b3e5ee6d9a63599cf77e299b.png",
+     "dev_note": "莫伊拉在支援定位中表现不佳，即使在我们预期她会发挥出色的队伍阵容和环境中也是如此。降低生化之球的冷却时间是莫伊拉快速适应多种情况潜力的显著提升。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Biotic Orb",
+       "name_cn": "生化之球",
+       "slug": "biotic-orb",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a5a235623aeb7fce1ce8e545e5be2d95b48fddf609c174fc5067efd7681ac72f.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从 10 秒降低至 8 秒",
+         "before": 10.0,
+         "after": 8.0,
+         "by": -2.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "orisa",
+     "name_en": "Orisa",
+     "name_cn": "奥丽莎",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1f9cf8dd1ea36ba91440be891d79cd97bd4ac2d2e0e409a8eee0c76a4317617a.png",
+     "dev_note": "在之前的改动降低了奥丽莎「站住别动！」与其他英雄配合的有效性后，我们正在重新评估该技能的冷却时间。我们将密切关注这一位移技能频率的提高是否会对游戏体验造成过多干扰。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Halt!",
+       "name_cn": "站住！",
+       "slug": "halt",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0ccf984506779d8ac96eb75f386fcfd8a781e1b01fcfd42da90343ff75888d33.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从 8 秒降低至 6 秒",
+         "before": 8.0,
+         "after": 6.0,
+         "by": -2.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "reinhardt",
+     "name_en": "Reinhardt",
+     "name_cn": "莱因哈特",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/67e489338249021ed490b8821f28f78487e34917880220f64e24fee78dcd7ed2.png",
+     "dev_note": "莱因哈特在上一轮改动后表现过强。为了帮助提高重装多样性，我们将他的护甲恢复至之前的值，同时暂时保留火箭重锤的伤害提升，因为这有助于平衡裂地猛击降低的控制持续时间。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "常规",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "护甲从 250 降低至 200（生命值/护甲总计从 550 降低至 500）",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 250.0,
+       "after": 200.0,
+       "by": -50.0,
+       "by_pct": null,
+       "metric": "armor",
+       "unit": "hp"
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "roadhog",
+     "name_en": "Roadhog",
+     "name_cn": "路霸",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5f961a1625091209fdfb6086dee69178d9de88946b4b2d7492c0a4fffe5fdd4b.png",
+     "dev_note": "路霸是一名近期表现不佳的英雄，自去年年底他拥有更强存在感以来，他本身并没有太多变化，不过其他英雄的平衡确实发生了变动。我们正在部分回调他的伤害降低，以帮助他回到更有效的水平。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Scrap Gun (Primary and Secondary Fire)",
+       "name_cn": "爆裂枪（主要和次要攻击）",
+       "slug": "scrap-gun-primary-and-secondary-fire",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/50b6e388a6693ce31b5a1889e53037970a1b884b8265834f33dd6f7a3dedce44.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "每发弹丸伤害从 6 提高至 6.6",
+         "before": 6.0,
+         "after": 6.6,
+         "by": 0.6,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "damage per projectile",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "sombra",
+     "name_en": "Sombra",
+     "name_cn": "黑影",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/63afd70d44e5d2b3dde1bbbf9a51f1af6fd0cde2b8d72d58dfffdf75b326ea58.png",
+     "dev_note": "黑影的玩法通常涉及大量时间等待合适的出击时机，并使用位移传动在安全距离脱离战斗。提高她在隐秘潜行中的移动速度应有助于她更快地重新投入战斗。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Stealth",
+       "name_cn": "隐秘潜行",
+       "slug": "stealth",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/270bcdf26d66cda1f488e9b3286c3cb467c6e622d729420406ce69218380ae1a.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "移动速度加成从 50% 提高至 65%",
+         "before": 50.0,
+         "after": 65.0,
+         "by": 15.0,
+         "by_pct": null,
+         "metric": "move_speed",
+         "raw_metric": "movement speed bonus",
+         "unit": "m/s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2021-04-22-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:49:40+00:00",
+  "status": "draft",
+  "source_hash": "sha256:a0c4ea23242668c88d9e2b478e224eeb518a3d8e5f67c53bddab1083ef583ee5",
+  "kept_english": []
+ }
+}

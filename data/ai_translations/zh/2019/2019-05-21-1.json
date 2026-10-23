@@ -1,0 +1,176 @@
+{
+ "id": "ai-2019-05-21-1",
+ "site": "ai",
+ "date": "2019-05-21",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2019/05",
+ "title": "《守望先锋》补丁说明——2019年5月21日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "补丁亮点",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "全新季节性活动：守望先锋周年庆典 2019",
+     "body": "用全新物品庆祝守望先锋三周年，包括 riot police 布丽吉塔、学院 D.Va、碳纤维末日铁拳、蜜瓜美、轨道法老之鹰、石像鬼温斯顿等传奇与史诗皮肤，以及更多内容！错过了往年的守望先锋庆典活动？别担心——你可以使用 credits 解锁过往活动的物品（或通过开启战利品箱！）在街机先锋中重温往季乱斗的刺激，周年庆典期间每天都会轮换一个乱斗。\n\n非常感谢过去三年里与我们一起游玩守望先锋！你们持续的支持与热情激励着我们不断创作。我们期待在游戏中与你们一同庆祝！",
+     "dev": null
+    },
+    {
+     "title": "工坊",
+     "body": "我们很高兴分享一个名为工坊的全新游戏内功能！工坊通过提供简化的游戏脚本系统，极大地扩展了游戏浏览器中可用的游戏自定义功能。用新的游戏规则、新的胜利条件、对英雄移动与技能的调整以及更多内容，来增强你所熟知和喜爱的守望先锋游戏模式。一旦你设计出一个精彩的新游戏模式，创建一个代码即可与朋友或整个社区分享*！要开始使用工坊，请参阅我们的工坊博客文章。我们很期待看到你的创作！\n\n（*在中国创建的代码无法与世界其他地区共享。在中国境外创建的代码无法被中国玩家使用。）\n\n请注意，工坊是一个复杂的功能，我们仍在迭代中，因此在改进过程中我们可能需要调整或将其关闭。请将任何问题或疑问发布在工坊论坛。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "综合更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "全场最佳",
+     "body": "- 改进了全场最佳回放中的击杀镜头，使其更好地匹配游戏内实际发生的情况",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "baptiste",
+     "name_en": "Baptiste",
+     "name_cn": "巴蒂斯特",
+     "role": "support",
+     "icon": null,
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Immortality Field",
+       "name_cn": "维生力场",
+       "slug": "immortality-field",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "如果落在移动平台上，它将随平台一起移动",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "wrecking-ball",
+     "name_en": "Wrecking Ball",
+     "name_cn": "破坏球",
+     "role": "tank",
+     "icon": null,
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Minefield",
+       "name_cn": "地雷禁区",
+       "slug": "minefield",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "如果地雷落在移动平台上，它将随平台一起移动",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 修复了在高于 60 的帧率下播放全场最佳回放时可能出现抖动的问题\n- 进行了稳定性改进",
+     "dev": null
+    },
+    {
+     "title": "英雄",
+     "body": "巴蒂斯特\n\n- 修复了维生力场会卡在某些物体下方的问题\n- 修复了维生力场放置在移动平台上时表现异常的问题\n- 修复了生化榴弹枪弹药耗尽时仍会显示治疗榴弹的问题\n- 修复了生化榴弹枪的治疗榴弹被源氏的闪反弹后无法命中队友的问题\n\nD.Va\n\n- 修复了 D.Va 使用推进器飞越某些平台时速度急剧下降的问题\n\n末日铁拳\n\n- 修复了裂地重拳有时本应造成伤害却未造成伤害的问题\n\n源氏\n\n- 修复了源氏无法攀爬哈瓦那地图上某些柱子的问题\n\n半藏\n\n- 修复了半藏无法攀爬哈瓦那地图上某些柱子的问题\n\n狂鼠\n\n- 修复了狂鼠使用终极技能时会从移动平台上滑落的问题\n\n莫伊拉\n\n- 修复了莫伊拉科学家皮肤在使用锥形瓶胜利姿势时实验室外套会穿模的问题\n\n奥丽莎\n\n- 修复了使用超充能器时，来自队友技能（如巴蒂斯特的增幅矩阵）的伤害加成会计入奥丽莎的伤害加成统计数据的问题\n\n破坏球\n\n- 修复了破坏球在某些情况下可以无视技能冷却时间使用重力坠击的问题",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "已知问题",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "守望先锋周年庆典",
+     "body": "- 部分活动奖励（皮肤、图标等）尚未翻译为日语。我们正在完成这些翻译工作。我们将在即将发布的版本中添加这些翻译。",
+     "dev": null
+    },
+    {
+     "title": "工坊",
+     "body": "- 游戏内指向工坊论坛的链接目前会根据你的地区将你导向英文、中文或韩文论坛。此问题将在即将发布的版本中修复。\n- 工坊尚未完全翻译为日语。我们正在完成这些翻译工作。我们将在即将发布的版本中添加这些翻译。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2019-05-21-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:52:16+00:00",
+  "status": "draft",
+  "source_hash": "sha256:3601caec381c25efeaa3da8cb6506c225afe92c3b5f92631d8d65b0819db8d0e",
+  "kept_english": []
+ }
+}

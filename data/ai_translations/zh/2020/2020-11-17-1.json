@@ -1,0 +1,280 @@
+{
+ "id": "ai-2020-11-17-1",
+ "site": "ai",
+ "date": "2020-11-17",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2020/11",
+ "title": "《守望先锋》补丁说明——2020年11月17日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "秩序之光修复挑战",
+   "role": null,
+   "description": "与秩序之光修复挑战一同庆祝 Christie Golden 的全新《守望先锋》短篇小说「[一石一石](https://playoverwatch.com/media/stories/stone-by-stone/)」发布！在 11 月 30 日前，通过赢得比赛并在 Twitch 上观看《守望先锋》，即可获得限时奖励，包括全新的 Marammat 秩序之光皮肤。\n\n在《守望先锋》官网了解更多关于[秩序之光修复挑战](http://playoverwatch.com/symmetra-restoration-challenge/)的信息。",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "综合更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "功能更新：最低延迟支持",
+     "body": "公平竞争才能呈现最佳赛事。过去，我们举办过《守望先锋联赛》和《守望先锋世界杯》等锦标赛，队伍面对面同场竞技，并使用本地服务器以提供尽可能低的延迟和最佳玩家体验。\n\n如今，众多活动和锦标赛转为线上举办，队伍遍布世界各地，我们希望提供一种机制，确保无论队伍距离锦标赛服务器多远，体验都尽可能公平。\n\n最低延迟选项可为自定游戏设定目标延迟，让相距 50 英里或 500 英里的参赛者都能在同等条件下竞技。延迟低于最低设置的玩家，其网络流量会自动延迟以达到最低目标；延迟高于目标的玩家则不会受到任何额外延迟。\n\n此功能旨在适应多种网络状况，通常会将玩家延迟控制在目标设置的 8 毫秒以内。\n\n我们希望此功能能够派上用场，尤其是对于希望「好好玩，公平玩」的社区赛事。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "自定游戏更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "全新自定游戏地图",
+     "body": "- 工坊绿幕",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "竞技更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "竞技无限制",
+     "body": "首次（第 1 赛季）体验竞技无限制，包含定级赛、竞技等级、排行榜以及赢取竞技点数的机会。在无限制模式中，英雄选择没有任何限制。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "baptiste",
+     "name_en": "Baptiste",
+     "name_cn": "巴蒂斯特",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a4f09ac5528ea7c458223747a0b47144f1b6b1d2736fa3b67c18a8ab43d0d815.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Amplification Matrix",
+       "name_cn": "增幅矩阵",
+       "slug": "amplification-matrix",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0a31371b55e4007e67a86f8495949970d20f64b2f0166e78d3fd16217e090a83.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "宽度从 5 米提高至 9 米",
+         "before": 5.0,
+         "after": 9.0,
+         "by": 4.0,
+         "by_pct": null,
+         "metric": "width",
+         "raw_metric": "width",
+         "unit": "m"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "lucio",
+     "name_en": "Lúcio",
+     "name_cn": "卢西奥",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6902426f460e3e7880530ee7f974e15d6c912346221e78ee09b5f9eb8c33c401.png",
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "滑墙",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "默认情况下，卢西奥现在会在松开跳跃键离开墙面时立即触发蹬墙跳加速，而不再需要在离开墙面后立即再次按下跳跃键。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "此新设置会显示在卢西奥的设置页面中，名为「松开时蹬墙跳」。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "使用新设置时，卢西奥可以通过按下蹲伏键取消滑墙，且不会触发自动跳跃。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "使用「松开时蹬墙跳」选项时，蹲伏后在 0.2 秒内松开跳跃键将提供跳跃加速（松开跳跃键的时机与现有正式服务器上再次按下跳跃键的时机一致）。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "wrecking-ball",
+     "name_en": "Wrecking Ball",
+     "name_cn": "破坏球",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c22df3c91a4fbc7f3f9689cd76f9fb86b52b2dfdf9f51c2158b4a9259a5f970d.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Grappling Claw",
+       "name_cn": "工程抓钩",
+       "slug": "grappling-claw",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e81e6ba9fb3391f29528021e453a0d3c16da1fc5e378994e6d00783356e0f2c9.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在拥有改进的目标检测，使连接墙面更加稳定",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "工坊更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 工坊元素数量上限提高至 32768\n- 为「开始强制玩家轮廓」添加类型字段\n- 为「发送通讯」「正在发送通讯」和「正在发送任何通讯」添加喷漆选项\n- 为工坊设置值添加排序字段，并将工坊设置数量上限提高至 128\n- 「允许按钮」「禁止按钮」「按下按钮」「开始按住按钮」「停止按住按钮」和「正在按住按钮」现在接受按钮值\n- 「创建光束效果」「创建效果」「创建 HUD 文本」「创建图标」「创建世界内文本」「播放效果」和「开始强制玩家轮廓」现在接受颜色值，并支持颜色值重新评估选项\n- 添加黑色、灰色、玫瑰色和紫罗兰色颜色选项\n- 为「施加冲量」动作添加新选项，允许在取消反向运动时同时修改水平和垂直速度（而非分别计算）",
+     "dev": null
+    },
+    {
+     "title": "全新工坊动作",
+     "body": "- 记录到检查器\n- 等待直到\n- 设置造成的击退\n- 设置受到的击退\n- 设置环境击杀归属玩家\n- 开始助攻\n- 停止助攻\n- 停止所有助攻\n- 创建进度条 HUD 文本\n- 销毁进度条 HUD 文本\n- 销毁所有进度条 HUD 文本\n- 创建进度条世界内文本\n- 销毁进度条世界内文本\n- 销毁所有进度条世界内文本",
+     "dev": null
+    },
+    {
+     "title": "全新工坊值",
+     "body": "- 颜色\n- 自定义颜色\n- 工坊设置组合\n- 工坊设置英雄\n- 评估一次\n- 每帧更新\n- 大小\n- 槽位数量\n- 重生点\n- 字符串包含\n- 字符串长度\n- 上次助攻 ID\n- 正在发送任何喷漆\n- 玩家数据（仅限当前比赛数据）\n- 玩家英雄数据（仅限当前比赛数据）",
+     "dev": "「求值一次」可用于隔离会重新求值的参数中的一部分，并将其「冻结」在初始值。一种有用的场景是：当某个会重新求值的参数（例如效果的 position）使用了 For 循环的控制变量时。例如，如果你想创建一组随玩家移动的垂直堆叠效果，可以用 Global.Y 作为控制变量，循环执行「创建效果」动作，并将 position 设为「Position Of(Event Player) + Vector(0, Evaluate Once(Global.Y), 0)」（启用重新求值）。这样，每个效果的位置都会随玩家移动，但借助「求值一次」，每个效果的垂直偏移量会被冻结为该效果创建时的 Global.Y 值（而不是循环结束时 Global.Y 的最终值）。「每帧更新」会提高某些值的更新频率。例如，「Position Of(...)」每秒只更新 12.5 次，而「Update Every Frame(Position Of(...))」在条件和其他逻辑检查中每秒求值 62.5 次，在视觉输出（如效果和镜头）中则以你的帧率运行。该值可用于创建高度灵敏的位置触发器和流畅的效果与镜头运动。根据你的用法，该值可能会对服务器负载、帧率或两者产生显著影响，因此请仅在需要时使用。话虽如此，执行一个包含「每帧更新」的单个条件或动作，仍然比在紧凑循环中反复执行动作以试图达到相同结果要高效得多。"
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 修复了夺旗模式中，突然死亡期间头顶旗帜无法正常显示的错误\n- 修复了决斗和淘汰游戏模式中，色盲友好名称无法正常显示的错误\n- 修复了即使玩家没有可用的传奇补给箱，也会被默认跳转到传奇补给箱界面的错误",
+     "dev": null
+    },
+    {
+     "title": "英雄",
+     "body": "末日铁拳\n\n- 修复了「一拳」最佳镜头中视觉效果无法正常显示的错误\n\nD.Va\n\n- 修复了装备「新灵」皮肤时，脚步声效出现错误的问题\n\n半藏\n\n- 修复了英雄选择动画出现动画问题的错误\n\n法老之鹰\n\n- 修复了装备「救生员」皮肤时，法老之鹰在 HUD 头像中的眼睛朝向错误方向的错误\n\n黑影\n\n- 修复了黑影的位移传动在使用时被同时击毁，导致使用后仍处于冷却时间的罕见错误\n- 修复了黑影被敌人看到时未收到侦测提示，或未被敌人看到却收到侦测提示的错误\n- 修复了黑影在触发位移传动期间被击杀时，仍能看到自己位移传动动画的错误\n- 修复了在回放中查看时，位移传动有时显示不正确的错误\n\n破坏球\n\n- 修复了「奖牌」胜利姿势中，他的枪穿模进入机甲的错误",
+     "dev": null
+    },
+    {
+     "title": "工坊",
+     "body": "- 修复了在两个玩家之间交换父子关系（使用「附加玩家」动作）时可能发生的崩溃\n- 修复了「禁用消息」同时也会禁用来自工坊的消息（例如「小消息」和「大消息」）的错误\n- 修复了在同一帧内设置多个技能冷却时间可能失败的错误\n- 修复了「开始镜头」的镜头覆盖会被其他来源（例如姿势镜头）覆盖的错误\n- 修复了即使「技能 1」和「主要攻击」按钮被禁用，破坏球仍能脱离球形态的错误\n- 修复了在编辑器中与「数组值」交互时，用户可能失去焦点的错误\n- 修复了「设置移动速度」和「设置跳跃垂直速度」无法将速度设为 0 的错误\n- 修复了「宣告队伍胜利」在淘汰模式中可能失败的错误\n- 修复了「开始镜头」和「追踪变量」动作在高帧率或慢动作下无法平滑更新的错误\n- 修复了 D.Va 和回声能利用其飞行技能脱离「附加玩家」动作的错误\n- 修复了带有冗余括号的值无法从文本正确粘贴的错误\n- 修复了单位不匹配的值（例如使用方向向量而非位置向量）无法从文本正确粘贴的错误\n- 修复了从文本粘贴时元素数量可能高于预期的错误\n- 修复了在同一玩家（或全局实体）上运行多个 0.016 秒的「等待」时，部分「等待」可能多花 0.016 秒才能完成的错误\n- 修复了「相位脱离」状态施加于已死亡玩家时表现不一致的错误（因为「相位脱离」与「死亡」互斥）\n- 修复了当先前被追踪的变量同时出现在「设置变量」动作（非「修改变量」）的左右两侧时（例如 Global.A = 1 - Global.A），该动作行为不正确的错误\n- 修复了在执行多个「设置最大生命值」动作之间，玩家的当前生命值会被错误地限制为玩家原始最大生命值的错误\n- 修复了「队伍分数」在非占领要点游戏模式中会失败的错误\n- 修复了黑影被放大至两倍以上时无法被正确侦测的错误",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2020-11-17-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:57:15+00:00",
+  "status": "draft",
+  "source_hash": "sha256:22905ddb29783cde0b6f2226f5e7a4903e3014660babdc51d1471fc520f14cbb",
+  "kept_english": []
+ }
+}

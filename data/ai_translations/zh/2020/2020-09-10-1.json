@@ -1,0 +1,108 @@
+{
+ "id": "ai-2020-09-10-1",
+ "site": "ai",
+ "date": "2020-09-10",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2020/09",
+ "title": "《守望先锋》补丁说明——2020年9月10日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "hero_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": "**综合**\n\n- 霰弹枪弹道不再随机旋转。这将影响以下英雄：\n\n  - 艾什\n  - 末日铁拳\n  - D.Va\n  - 死神\n  - 路霸\n  - 托比昂",
+   "dev": "我们通过移除每发子弹的随机旋转，让使用霰弹枪弹道的武器更加可靠。为了保持霰弹枪的手感，单发子弹内的每颗弹丸在射击角度上仍会有极小的随机偏差，但这一改动将让这些武器的瞄准可控性显著提升。",
+   "heroes": [
+    {
+     "slug": "roadhog",
+     "name_en": "Roadhog",
+     "name_cn": "路霸",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5f961a1625091209fdfb6086dee69178d9de88946b4b2d7492c0a4fffe5fdd4b.png",
+     "dev_note": "结合霰弹枪弹道的改动，我们希望让路霸的链钩连招保持可靠，但面对生命值较高的英雄时不会过于强势。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Scrap Gun",
+       "name_cn": "爆裂枪",
+       "slug": "scrap-gun",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/50b6e388a6693ce31b5a1889e53037970a1b884b8265834f33dd6f7a3dedce44.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "弹丸伤害从 7 降低至 6（每发总计 150）",
+         "before": 7.0,
+         "after": 6.0,
+         "by": -1.0,
+         "by_pct": null,
+         "metric": "projectile damage",
+         "raw_metric": "projectile damage",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "torbjorn",
+     "name_en": "Torbjörn",
+     "name_cn": "托比昂",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/81a4f644137461fddfef6c24820b0b8958046d5dad1944baf02478fcc916a968.png",
+     "dev_note": "对托比昂辅助攻击的这项改动，旨在让它在近距离发挥更强的作用。我们希望这项改动能让每发子弹更具打击感，因为它的爆发更高。为配合这一改动，我们也降低了每秒伤害。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Rivet Gun",
+       "name_cn": "铆钉枪",
+       "slug": "rivet-gun",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6fd3a8b1e1c43cd3c6f1a03d6ff9e76d9394d537235bc7b57380e78937e991ff.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "恢复时间从 0.6 秒提高至 0.8 秒",
+         "before": 0.6,
+         "after": 0.8,
+         "by": 0.2,
+         "by_pct": null,
+         "metric": "recovery",
+         "raw_metric": "recovery",
+         "unit": "s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "每颗弹丸伤害从 10.5 提高至 12.5（每发总计 125）",
+         "before": 10.5,
+         "after": 12.5,
+         "by": 2.0,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "damage",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2020-09-10-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:56:44+00:00",
+  "status": "draft",
+  "source_hash": "sha256:d9c19f4eb2aa7a623dd932036aeda6a1e2c75d087488bc233afa5fccc098e6e8",
+  "kept_english": []
+ }
+}

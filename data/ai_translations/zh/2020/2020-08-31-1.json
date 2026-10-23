@@ -1,0 +1,503 @@
+{
+ "id": "ai-2020-08-31-1",
+ "site": "ai",
+ "date": "2020-08-31",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2020/08",
+ "title": "《守望先锋》补丁说明——2020年8月31日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "hero_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": "护甲\n\n- 对护甲生命值的光束类伤害减免从 20% 提高至 30%",
+   "dev": "在屏障不再那么普遍的环境中，一些输出英雄的杀伤力变得越来越强。因此，我们现在打算相应地降低伤害输出。作为连锁反应，由于总体造成的伤害减少，这也使得我们需要降低一些支援英雄的治疗输出。",
+   "heroes": [
+    {
+     "slug": "ana",
+     "name_en": "Ana",
+     "name_cn": "安娜",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b64f0b7062266a58b29a773476b31175aded9fcccfe4a0d86596dbe85f7739d2.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Biotic Rifle",
+       "name_cn": "生物步枪",
+       "slug": "biotic-rifle",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/efe0ebb135e87dc26b60f0d20500dcd7553ad121ab2b10cd4ffb5db17be9c977.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "弹药从 14 降低至 12",
+         "before": 14.0,
+         "after": 12.0,
+         "by": -2.0,
+         "by_pct": null,
+         "metric": "ammo",
+         "raw_metric": "ammo",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "ashe",
+     "name_en": "Ashe",
+     "name_cn": "艾什",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e43bc239ddb5254f9df92f4c19cdf20a2df5be3f546af76c8a13da385bb9dcbd.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "The Viper",
+       "name_cn": "毒蛇",
+       "slug": "the-viper",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/cca8472a3e966de2b9985cee492e527eac5063e9881797dded4ca1e32e292bc0.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "最大弹药从 15 降低至 12",
+         "before": 15.0,
+         "after": 12.0,
+         "by": -3.0,
+         "by_pct": null,
+         "metric": "max ammo",
+         "raw_metric": "max ammo",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "开镜伤害从 85 降低至 80",
+         "before": 85.0,
+         "after": 80.0,
+         "by": -5.0,
+         "by_pct": null,
+         "metric": "aim-down sights damage",
+         "raw_metric": "aim-down sights damage",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "baptiste",
+     "name_en": "Baptiste",
+     "name_cn": "巴蒂斯特",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a4f09ac5528ea7c458223747a0b47144f1b6b1d2736fa3b67c18a8ab43d0d815.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Biotic Launcher",
+       "name_cn": "生化榴弹枪",
+       "slug": "biotic-launcher",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/af62dfb3476b6389472188ce9e6e0e296928a5cb3ae87a4ed5133c8330e46f0d.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "榴弹弹药从 12 降低至 10",
+         "before": 12.0,
+         "after": 10.0,
+         "by": -2.0,
+         "by_pct": null,
+         "metric": "grenade ammo",
+         "raw_metric": "grenade ammo",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Regenerative Burst",
+       "name_cn": "愈合冲击",
+       "slug": "regenerative-burst",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d887d165f7b0eb98a30af8f274ff740c6c7735af719b93e95dd9da17558815d8.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "总治疗量从 150 降低至 75",
+         "before": 150.0,
+         "after": 75.0,
+         "by": -75.0,
+         "by_pct": null,
+         "metric": "total healing",
+         "raw_metric": "total healing",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "巴蒂斯特现在从愈合冲击获得双倍治疗量",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "junkrat",
+     "name_en": "Junkrat",
+     "name_cn": "狂鼠",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6136346ab998d7db71f7b37974f54503d2d70b5537bf77a9faf6564cfeaa64e6.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Frag Launcher",
+       "name_cn": "榴弹发射器",
+       "slug": "frag-launcher",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e43d916b0851551d17a2385f92497cdcfcd781ac155663643a1e1ff3500bbf37.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "命中伤害从 50 降低至 40（总计从 130 降低至 120）",
+         "before": 50.0,
+         "after": 40.0,
+         "by": -10.0,
+         "by_pct": null,
+         "metric": "impact damage",
+         "raw_metric": "impact damage",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "cassidy",
+     "name_en": "Cassidy",
+     "name_cn": "卡西迪",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a30fd337709bc9bd52781db34d754cd86825f021c27bcd9bc0e912cc5d88577b.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Peacekeeper",
+       "name_cn": "维和者",
+       "slug": "peacekeeper",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/afb27d71eeb6f3635ac1ff236c7b3f9e3c6d017360ce022d5d384288ff95bce7.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "恢复时间从 0.42 提高至 0.50",
+         "before": 0.42,
+         "after": 0.5,
+         "by": 0.08,
+         "by_pct": null,
+         "metric": "recovery",
+         "raw_metric": "recovery",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "moira",
+     "name_en": "Moira",
+     "name_cn": "莫伊拉",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d58b00cca1ff4bea2f18c1715f7c79a58e60b457b3e5ee6d9a63599cf77e299b.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Biotic Grasp",
+       "name_cn": "生化之触",
+       "slug": "biotic-grasp",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9721148061d528df7b3b5a90f746a82dc2b53b191add15e0962f8dcaf0777aa0.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "持续治疗从 4 秒降低至 2 秒（总治疗量从 65 降低至 35）",
+         "before": 4.0,
+         "after": 2.0,
+         "by": -2.0,
+         "by_pct": null,
+         "metric": "lingering heal",
+         "raw_metric": "lingering heal",
+         "unit": "s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "每秒治疗量从 65 提高至 70",
+         "before": 65.0,
+         "after": 70.0,
+         "by": 5.0,
+         "by_pct": null,
+         "metric": "healing",
+         "raw_metric": "healing per second",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "治疗资源消耗速率从 11 提高至 14（27%）",
+         "before": 11.0,
+         "after": 14.0,
+         "by": 3.0,
+         "by_pct": null,
+         "metric": "healing",
+         "raw_metric": "healing resource consumption rate",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "附着角度降低 37%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 37.0,
+         "metric": "attach angle",
+         "raw_metric": "attach angle",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "治疗资源获取速率提高 50%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 50.0,
+         "metric": "healing",
+         "raw_metric": "healing resource gain rate",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "orisa",
+     "name_en": "Orisa",
+     "name_cn": "奥丽莎",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1f9cf8dd1ea36ba91440be891d79cd97bd4ac2d2e0e409a8eee0c76a4317617a.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Halt!",
+       "name_cn": "站住！",
+       "slug": "halt",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0ccf984506779d8ac96eb75f386fcfd8a781e1b01fcfd42da90343ff75888d33.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "半径从 4 提高至 5",
+         "before": 4.0,
+         "after": 5.0,
+         "by": 1.0,
+         "by_pct": null,
+         "metric": "radius",
+         "raw_metric": "radius",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "弹道速度从 30 降低至 25",
+         "before": 30.0,
+         "after": 25.0,
+         "by": -5.0,
+         "by_pct": null,
+         "metric": "projectile_speed",
+         "raw_metric": "projectile speed",
+         "unit": "m/s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "pharah",
+     "name_en": "Pharah",
+     "name_cn": "法老之鹰",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d69d76162855cea8807b9c163e6b53bb522eef282f368b52a469332313562b98.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Rocket Launcher",
+       "name_cn": "火箭发射器",
+       "slug": "rocket-launcher",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c5fee4019276f284dc81e3eaa4f6244a3a7477fbcebc2b5e70a1b9bdfc0fab9b.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "恢复时间从 0.75 提高至 0.85",
+         "before": 0.75,
+         "after": 0.85,
+         "by": 0.1,
+         "by_pct": null,
+         "metric": "recovery",
+         "raw_metric": "recovery",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "symmetra",
+     "name_en": "Symmetra",
+     "name_cn": "秩序之光",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/961aa9d625d8104d6f466f63a907027e7083d161da9f02004d7d545c2a52440b.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Photon Projector",
+       "name_cn": "光子发射器",
+       "slug": "photon-projector",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1b3f003d2ba6bba4f3d44f167cd1b03469c4e3c4d3900805b8adddffeedd2c56.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "最大伤害从 140 降低至 120",
+         "before": 140.0,
+         "after": 120.0,
+         "by": -20.0,
+         "by_pct": null,
+         "metric": "max damage",
+         "raw_metric": "max damage",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "widowmaker",
+     "name_en": "Widowmaker",
+     "name_cn": "黑百合",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a90c4acb688e425a51164216e40e5e9bd8e82797d26d8db0441bcf5f508ae474.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Widow's Kiss",
+       "name_cn": "寡妇之吻",
+       "slug": "widow-s-kiss",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/13a1e7903c23a5e140aa01fa930f585c1ea69e1e24378c0462f42053085f7ad9.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "最大弹药从 30 提高至 35",
+         "before": 30.0,
+         "after": 35.0,
+         "by": 5.0,
+         "by_pct": null,
+         "metric": "max ammo",
+         "raw_metric": "max ammo",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "开镜弹药消耗从 3 提高至 5",
+         "before": 3.0,
+         "after": 5.0,
+         "by": 2.0,
+         "by_pct": null,
+         "metric": "scoped ammo cost",
+         "raw_metric": "scoped ammo cost",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "开镜射击现在在 60-85 米范围内最多有 50% 伤害衰减",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "zarya",
+     "name_en": "Zarya",
+     "name_cn": "查莉娅",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/983bd1ba3146529209db5b9d3d851320537270859e8e1debbfffd848c4546398.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Particle Cannon",
+       "name_cn": "粒子炮",
+       "slug": "particle-cannon",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/02aebadea29904eca48f514437522f9f3a52ea266e6c2b2688dad39641071bda.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "弹药消耗从 20 提高至 25",
+         "before": 20.0,
+         "after": 25.0,
+         "by": 5.0,
+         "by_pct": null,
+         "metric": "ammo",
+         "raw_metric": "ammo cost",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2020-08-31-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:56:25+00:00",
+  "status": "draft",
+  "source_hash": "sha256:7c38af777d60212978e0fe50f3563f35dfc118056d90d40de9bb32c29310e4b3",
+  "kept_english": []
+ }
+}

@@ -1,0 +1,608 @@
+{
+ "id": "ai-2018-08-09-1",
+ "site": "ai",
+ "date": "2018-08-09",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2018/08",
+ "title": "《守望先锋》补丁说明——2018年8月9日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "补丁亮点",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "2018 夏季运动会",
+     "body": "夏季运动会回归，带来更多阳光下的乐趣！今年，我们将用全新的动感斗球竞技场、动感斗球第二赛季以及丰厚的战利品来庆祝竞技精神。解锁超过 50 件全新赛季物品——包括冲浪手 D.Va、快球禅雅塔和凉亭安娜等传奇皮肤——以及我们逐年增多的夏季装备藏品。\n\n如需了解更多关于夏季运动会的信息，请点击此处。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "综合更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 将狂鼠的「海盗」皮肤更名为「海盗鼠」\n- 为禅雅塔、卢西奥和莫伊拉添加了受到攻击时的语音\n- 所有《守望先锋联赛》皮肤现在都会包含战队所在城市或州的名称",
+     "dev": null
+    },
+    {
+     "title": "寻找队伍",
+     "body": "- 在寻找队伍浏览界面更改筛选条件后，设置将被保存",
+     "dev": null
+    },
+    {
+     "title": "英雄画廊",
+     "body": "- 添加了「最新内容」选项，用于显示新的可解锁内容",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "ana",
+     "name_en": "Ana",
+     "name_cn": "安娜",
+     "role": "support",
+     "icon": null,
+     "dev_note": "这些改动让安娜的纳米激素能在更多情况下使用。此前它几乎完全用于配合其他队友的终极技能，在对方使用前施放。经过此改动，纳米激素现在也可以用来在激烈战斗中拯救濒死的队友。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Nano Boost",
+       "name_cn": "纳米激素",
+       "slug": "nano-boost",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在还会立即为目标治疗 300 点生命值",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "范围从 30 米提高至 40 米",
+         "before": 30.0,
+         "after": 40.0,
+         "by": 10.0,
+         "by_pct": null,
+         "metric": "range",
+         "raw_metric": "range",
+         "unit": "m"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "brigitte",
+     "name_en": "Brigitte",
+     "name_cn": "布丽吉塔",
+     "role": "support",
+     "icon": null,
+     "dev_note": "布丽吉塔的能量盾击是她最强的技能之一，其较短的冷却时间会让对手难以应对。略微提高其冷却时间将给她的对手更多机会来应对。我们还添加了一个选项来控制布丽吉塔恢复包的目标选择灵敏度，让玩家可以缩小该技能的搜索角度。这对于在战斗中瞄准特定队友很有用，代价是总体上更难瞄准队友。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Shield Bash",
+       "name_cn": "能量盾击",
+       "slug": "shield-bash",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从 6 秒提高至 7 秒",
+         "before": 6.0,
+         "after": 7.0,
+         "by": 1.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      },
+      {
+       "name_en": "Repair Pack",
+       "name_cn": "恢复包",
+       "slug": "repair-pack",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "在「选项 > 控制 > 布丽吉塔」下添加了一个用于控制布丽吉塔恢复包目标选择灵敏度的选项",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "doomfist",
+     "name_en": "Doomfist",
+     "name_cn": "末日铁拳",
+     "role": "tank",
+     "icon": null,
+     "dev_note": "这些改动只是改善末日铁拳与秩序之光放置物交互的体验优化。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Rocket Punch",
+       "name_cn": "火箭重拳",
+       "slug": "rocket-punch",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "不再影响秩序之光的传送面板",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "现在会摧毁秩序之光的哨戒炮，且不会停止他的移动",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "hanzo",
+     "name_en": "Hanzo",
+     "name_cn": "半藏",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "半藏的跃技能让他过于灵活，因此我们提高了冷却时间，让他更容易被抓住。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Lunge",
+       "name_cn": "跃",
+       "slug": "lunge",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从 4 秒提高至 5 秒",
+         "before": 4.0,
+         "after": 5.0,
+         "by": 1.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "lucio",
+     "name_en": "Lúcio",
+     "name_cn": "卢西奥",
+     "role": "support",
+     "icon": null,
+     "dev_note": "提高卢西奥音障获得的护盾生命值，应能让它更有效地应对来袭的爆发伤害。作为他上次重做的一部分，切歌的半径被大幅缩减，但为作补偿提高了其效果。虽然这一改动总体上对他更有利，但半径小到在战斗中往往难以让队友保持在范围内，即使他们感觉彼此相当接近。提高半径应有助于应对这些情况。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Crossfade",
+       "name_cn": "切歌",
+       "slug": "crossfade",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "光环半径从 10 米提高至 12 米",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Sound Barrier",
+       "name_cn": "音障",
+       "slug": "sound-barrier",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "提供的临时护盾从 500 提高至 750",
+         "before": 500.0,
+         "after": 750.0,
+         "by": 250.0,
+         "by_pct": null,
+         "metric": "temporary shields granted",
+         "raw_metric": "temporary shields granted",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "mercy",
+     "name_en": "Mercy",
+     "name_cn": "天使",
+     "role": "support",
+     "icon": null,
+     "dev_note": "天使此前的治疗输出让她在任何队伍阵容中几乎都不可或缺。即使经过此改动，她在一场比赛中的总治疗量仍将超过任何其他支援英雄，但这应能让其他治疗英雄更具可行性。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Caduceus Staff",
+       "name_cn": "天使之杖",
+       "slug": "caduceus-staff",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "治疗光束从每秒治疗 60 点降低至每秒治疗 50 点",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "moira",
+     "name_en": "Moira",
+     "name_cn": "莫伊拉",
+     "role": "support",
+     "icon": null,
+     "dev_note": "此改动应能帮助莫伊拉应对附近没有敌人但队伍仍需大量治疗的情况。她仍然需要吸取敌人才能完全发挥作用，但这只是在少数她无法合理参与的远距离持久战中稍微帮助她。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Biotic Grasp",
+       "name_cn": "生化之触",
+       "slug": "biotic-grasp",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "被动能量恢复速度从每秒 2 点提高至每秒 2.4 点",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "reinhardt",
+     "name_en": "Reinhardt",
+     "name_cn": "莱因哈特",
+     "role": "tank",
+     "icon": null,
+     "dev_note": "通过平滑莱因哈特的屏障力场，他现在能够稳定地阻挡有时会意外穿透的敌方技能和投射物（例如狂鼠的榴弹）。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Barrier Field",
+       "name_cn": "屏障力场",
+       "slug": "barrier-field",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "装饰性徽章不再从护盾表面凸出",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "sombra",
+     "name_en": "Sombra",
+     "name_cn": "黑影",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "头部改动主要是一个错误修复，因为她的头部判定体积异常大，尤其是从背后看。此前如果你从她背后靠近上脊柱的位置射击，就能命中头部。现在她的头部体积准确多了。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "General",
+       "name_cn": "综合",
+       "slug": "general",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "缩小了黑影的头部判定体积",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "symmetra",
+     "name_en": "Symmetra",
+     "name_cn": "秩序之光",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "秩序之光的主要攻击伤害潜力巨大，但由于射程短、充能速度慢，充能过于困难。我们提高了射程来看看效果如何，给她更多使用它的机会，尤其是对付敌方屏障。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Photon Projector",
+       "name_cn": "光子发射器",
+       "slug": "photon-projector",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "主要攻击射程从 10 提高至 12",
+         "before": 10.0,
+         "after": 12.0,
+         "by": 2.0,
+         "by_pct": null,
+         "metric": "primary fire range",
+         "raw_metric": "primary fire range",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "widowmaker",
+     "name_en": "Widowmaker",
+     "name_cn": "黑百合",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "提高冷却时间将略微降低黑百合重新调整位置的能力。这让她更容易受到温斯顿和源氏等灵活敌方英雄的威胁。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Grappling Hook",
+       "name_cn": "抓钩",
+       "slug": "grappling-hook",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从 8 秒提高至 10 秒",
+         "before": 8.0,
+         "after": 10.0,
+         "by": 2.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "zarya",
+     "name_en": "Zarya",
+     "name_cn": "查莉娅",
+     "role": "tank",
+     "icon": null,
+     "dev_note": "重力喷涌半径缩小，让她的敌人通过保持分散来尝试反制它变得更合理，同时也更强调查莉娅需要正确放置终极技能以尽可能影响更多玩家。然而，这些改动的意图并非大幅削弱查莉娅的整体强度，因此我们降低了她能量转换的消耗速度，这应能让她的能量平均保持在更高水平，从而造成更多伤害并更快充能终极技能。总体而言，这从她的终极技能中移除了一些强度并分配到其他地方，以增加对她的反制手段。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Energy",
+       "name_cn": "能量转换",
+       "slug": "energy",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "消耗速度从每秒 2 点能量降低至每秒 1.6 点能量",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Graviton Surge",
+       "name_cn": "重力喷涌",
+       "slug": "graviton-surge",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "半径从 8 米降低至 6 米",
+         "before": 8.0,
+         "after": 6.0,
+         "by": -2.0,
+         "by_pct": null,
+         "metric": "radius",
+         "raw_metric": "radius",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 部分英雄的部分终极技能现在会在结束后恢复弹药\n\n\n  - **受影响的技能：** 源氏的斩、狂鼠的炸弹轮胎、法老之鹰的火箭弹幕、路霸的鸡飞狗跳、禅雅塔的圣、温斯顿的原始暴怒",
+     "dev": "此改动消除了在长时间终极技能结束后需要立即换弹的需求。"
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "游戏浏览器与自定游戏",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "英雄",
+     "body": "- 无论自定游戏设置如何，布丽吉塔的恢复包现在都有 1.5 秒的最低冷却时间",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 修复了玩家多次被标记为 AFK 时，在将其移出比赛前显示的 AFK 倒计时不准确的问题\n- 修复了「集结你的队伍」阶段结束后，切换到所选英雄的第一人称视角前，玩家镜头会显示异常位置的问题",
+     "dev": null
+    },
+    {
+     "title": "AI",
+     "body": "- 修复了托比昂机器人因炮台被秩序之光玩家传送而导致其持续开火的问题",
+     "dev": null
+    },
+    {
+     "title": "竞技比赛",
+     "body": "- 修复了玩家在比赛结束前、但在离开玩家的回归倒计时结束后退出，可能导致其失去赞赏等级的问题",
+     "dev": null
+    },
+    {
+     "title": "英雄",
+     "body": "布丽吉塔\n\n- 修复了布丽吉塔在使用技能冲刺时，投射物和溅射伤害能够穿透其屏障护盾的问题\n\nD.Va\n\n- 修复了 D.Va 在使用姿势时被路霸的链钩命中，导致其光枪消失的问题\n\n源氏\n\n- 修复了激活斩后短时间内，源氏的镖弹药量无法显示正确数量的视觉问题\n- 修复了源氏在攀爬越过边缘时直视墙面，导致其手臂与身体分离的问题\n\n半藏\n\n- 修复了半藏在攀爬越过边缘时直视墙面，导致其手臂与身体分离的问题\n\n狂鼠\n\n- 修复了炸弹轮胎施放失败时，狂鼠的弹药被补满的问题\n- 修复了狂鼠在滞空时尝试使用炸弹轮胎，导致其弹药被补满的问题\n\n卢西奥\n\n- 修复了卢西奥在音障激活期间被黑客入侵时，仍能获得终极技能充能的问题\n\n奥丽莎\n\n- 修复了奥丽莎使用超充能器时，其防护屏障的生命条消失的问题\n\n莱因哈特\n\n- 修复了莱因哈特的屏障力场受到伤害时，其守望先锋联赛客场皮肤上不出现裂纹的问题\n\n路霸\n\n- 修复了路霸在施放链钩途中被打断时，链钩无法收回手中的问题\n\n黑影\n\n- 修复了黑影的视觉效果显示得比预期更暗的问题\n- 修复了黑影在传送至位移传动后能够将其摧毁的问题\n- 修复了黑影的位移传动被敌方玩家击中时出现流血效果的问题\n\n猎空\n\n- 修复了目标敌人快速移动时，猎空的脉冲炸弹粘在护盾错误一侧的问题\n\n破坏球\n\n- 修复了破坏球在动力铁球形态下无法使用喷漆的问题\n- 修复了重力坠击能够推动处于急冻状态的美的问题\n\n查莉娅\n\n- 修复了查莉娅的重力喷涌视觉效果超出技能范围的问题",
+     "dev": null
+    },
+    {
+     "title": "英雄画廊",
+     "body": "- 修复了在英雄画廊中查看装备守望先锋联赛皮肤的英雄模型时，无法旋转模型的问题\n- 修复了从补给中装备喷漆、语音或姿势时，通讯轮盘无法使用的问题",
+     "dev": null
+    },
+    {
+     "title": "寻找队伍",
+     "body": "- 修复了部分队伍无法排队进入某个游戏模式的问题",
+     "dev": null
+    },
+    {
+     "title": "地图",
+     "body": "艾兴瓦尔德\n\n- 修复了艾兴瓦尔德的城堡大门被运载目标摧毁时陷入地面的问题",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2018-08-09-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:49:31+00:00",
+  "status": "draft",
+  "source_hash": "sha256:7376df726ce40e37f698c75828699c686aee20f9c00af7d30565bcb295b18764",
+  "kept_english": [
+   "AI"
+  ]
+ }
+}

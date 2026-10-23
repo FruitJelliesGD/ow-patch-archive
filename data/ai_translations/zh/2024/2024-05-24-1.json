@@ -1,0 +1,159 @@
+{
+ "id": "ai-2024-05-24-1",
+ "site": "ai",
+ "date": "2024-05-24",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/05",
+ "title": "《守望先锋》补丁说明——2024年5月24日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": "英雄更新",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "重装",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "roadhog",
+     "name_en": "Roadhog",
+     "name_cn": "路霸",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b6f4e837dc41e87d730f6b0fad3473e689c8bdcd1f732b97326ac08b0508f2ee.png",
+     "dev_note": "开发者评论：路霸从近期重装英雄降低爆头伤害的被动中获益良多，因此我们削弱了他的生存能力。对呼吸器的改动旨在鼓励更谨慎地管理资源。对鸡飞狗跳的改动将使其终极技能更偏向区域控制工具，同时降低其致命性，尤其是面对近期提高了击退抗性的重装英雄时。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Take a Breather",
+       "name_cn": "呼吸器",
+       "slug": "take-a-breather",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9cb8d867671bf917a9ba5d4a28ab6cb6ceeb10de2813567fcad97aca32c58499.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "资源回复速度从每秒 10 降低至 8。",
+         "before": 10.0,
+         "after": 8.0,
+         "by": -2.0,
+         "by_pct": null,
+         "metric": "resource regeneration rate",
+         "raw_metric": "resource regeneration rate",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "最大治疗量从 450 降低至 400。",
+         "before": 450.0,
+         "after": 400.0,
+         "by": -50.0,
+         "by_pct": null,
+         "metric": "maximum healing",
+         "raw_metric": "maximum healing",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从 1.5 秒降低至 1.25 秒。",
+         "before": 1.5,
+         "after": 1.25,
+         "by": -0.25,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      },
+      {
+       "name_en": "Whole Hog",
+       "name_cn": "鸡飞狗跳",
+       "slug": "whole-hog",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/78faa90f268424c6e770168ec15f5bb880d0b14e5d10f22c30bfbb64ffe244a8.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "击退从 14 提高至 16。",
+         "before": 14.0,
+         "after": 16.0,
+         "by": 2.0,
+         "by_pct": null,
+         "metric": "knockback",
+         "raw_metric": "knockback",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "每颗弹丸伤害从 7 降低至 6。",
+         "before": 7.0,
+         "after": 6.0,
+         "by": -1.0,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "damage per pellet",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "sigma",
+     "name_en": "Sigma",
+     "name_cn": "西格玛",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9738e1687bf7064de3667169788ef1b5ea9cf1746a42753c767cf17c7cb67547.png",
+     "dev_note": "开发者评论：我们上一次补丁旨在让部分重装英雄的终极技能在战斗中使用时更宽容。西格玛的引力乱流可能因细微的视线判定而落空，但我们认为这一改动并未在所有情况下得到充分说明。我们后续可能会在更新视觉效果后重新审视西格玛的这一改动。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Gravitic Flux",
+       "name_cn": "引力乱流",
+       "slug": "gravitic-flux",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/7140d3eaf82e580ab465dcdb04bd1faaf77ac54550a12d17ecde7c4e87e963e0.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "引力乱流现在再次需要视线才能抬起目标。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2024-05-24-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:50:31+00:00",
+  "status": "draft",
+  "source_hash": "sha256:eb37a1812f84504c761d3806ea1c835871110d93c538db2c8a1beac920758981",
+  "kept_english": []
+ }
+}

@@ -1,0 +1,380 @@
+{
+ "id": "ai-2020-03-13-1",
+ "site": "ai",
+ "date": "2020-03-13",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2020/03",
+ "title": "《守望先锋》补丁说明——2020年3月13日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": null,
+   "role": null,
+   "description": "-\n如需分享反馈，请前往[综合讨论](https://us.forums.blizzard.com/en/overwatch/c/general-discussion)论坛发帖。\n\n-\n如需查看已知问题列表，请访问我们的[错误报告](https://us.forums.blizzard.com/en/overwatch/c/bug-report)论坛。\n\n-\n如需故障排查帮助，请访问我们的[技术支持](https://us.forums.blizzard.com/en/overwatch/c/technical-support)论坛。",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "《守望先锋》行动档案 2020",
+   "role": null,
+   "description": "体验取材于《守望先锋》历史关键时刻的剧情驱动合作任务。活动期间，可获取行动档案补给，其中包含灵感源自《守望先锋》过往时刻的皮肤、精彩镜头、姿势和喷漆。今年新增内容：通过每周挑战任务展现你的战术造诣。挑战任务让你以全新的玩法变化体验起义、复仇和风暴预警。",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "综合更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "新功能：分享回放",
+     "body": "玩家现在可以与他人分享自己的游戏内回放！\n\n回放通过一串通常为 6 个字符的字母数字代码进行分享。你可以随意分享该代码：在游戏内、论坛上或社交媒体上。其他玩家可以输入该代码观看你的回放。代码在下一个补丁前有效。\n\n回放系统还获得了多项改进：\n\n- 最多可固定 10 个回放，保留至下一个补丁。取消固定一个回放以\n腾出空间给其他回放。系统会记录最近导入的 10 个回放\n代码。这样你无需重新输入代码即可再次观看同一导入的回放。每个\n回放条目新增了备注字段，方便你为自己添加描述或备注",
+     "dev": null
+    },
+    {
+     "title": "综合",
+     "body": "- 游戏内好友请求现在每次会话仅会在游戏内显示一次]\n- 如果你最近与该玩家一起玩过，RealID 好友请求将仅在游戏内显示 RealID 名称\n- 使用攻防作战、攻击/护送、占领要点和运载目标游戏模式的比赛，初始集结英雄计时已进一步从 35 秒缩短至 30 秒\n- 在竞技比赛的攻防作战、运载目标和攻击/护送游戏模式中，当双方队伍都完成一轮进攻且时间池均超过 2 分钟时，每支队伍的时间池将等量缩减，直到其中一支队伍剩余 2 分钟\n\n  - 示例：如果 A 队在沃斯卡娅完成一轮进攻后时间池剩余 4:37，B 队完成进攻轮次后剩余 2:50，则每队时间池各扣除 50 秒。这使得双方以 2-2 战平，A 队剩余 3:47，B 队剩余 2:00",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "竞技更新",
+   "role": null,
+   "description": "- 竞技 6v6 禁闭决斗第 3 赛季已开启！",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "baptiste",
+     "name_en": "Baptiste",
+     "name_cn": "巴蒂斯特",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a4f09ac5528ea7c458223747a0b47144f1b6b1d2736fa3b67c18a8ab43d0d815.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Exo Boots",
+       "name_cn": "动力战靴",
+       "slug": "exo-boots",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0d598afba5a03761d617d735d5435323c56108655b5017ddf8c36c4af36b9b73.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "充能时间从 1 秒降低至 0.7 秒",
+         "before": 1.0,
+         "after": 0.7,
+         "by": -0.3,
+         "by_pct": null,
+         "metric": "charge time",
+         "raw_metric": "charge time",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Regenerative Burst",
+       "name_cn": "愈合冲击",
+       "slug": "regenerative-burst",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d887d165f7b0eb98a30af8f274ff740c6c7735af719b93e95dd9da17558815d8.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从 15 秒降低至 13 秒",
+         "before": 15.0,
+         "after": 13.0,
+         "by": -2.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "d-va",
+     "name_en": "D.Va",
+     "name_cn": "D.Va",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5d9b834a39e9306ec125dd8c77cdd62a351f8edef2d5dfe66d6cbb22594eae7e.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Boosters",
+       "name_cn": "推进器",
+       "slug": "boosters",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/89d6beb25b21eacd5a181b96438436692d9ad403fcef19873e506f6d46ed37a3.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从 3 秒提高至 4 秒",
+         "before": 3.0,
+         "after": 4.0,
+         "by": 1.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "mei",
+     "name_en": "Mei",
+     "name_cn": "美",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a4c1e3c5533675ba4941c48809c54e0412774e022b1e324f7ec5915fef372db9.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Ice Wall",
+       "name_cn": "冰墙",
+       "slug": "ice-wall",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0608319e5f26acafd19a0afd682f3c73c5b70cbfc93d59f58f28eef5cd0eb2e7.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从 10 秒提高至 13 秒",
+         "before": 10.0,
+         "after": 13.0,
+         "by": 3.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "玩家碰撞现在允许大型英雄穿过 1 根冰墙的间隙",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "orisa",
+     "name_en": "Orisa",
+     "name_cn": "奥丽莎",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1f9cf8dd1ea36ba91440be891d79cd97bd4ac2d2e0e409a8eee0c76a4317617a.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Fusion Driver",
+       "name_cn": "聚变驱动器",
+       "slug": "fusion-driver",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8bf67f548fb8dd8fde4dd07ae567e635f8d6229c330a3656134697b9ecbd9140.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "伤害从 10 提高至 11",
+         "before": 10.0,
+         "after": 11.0,
+         "by": 1.0,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "damage",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "sigma",
+     "name_en": "Sigma",
+     "name_cn": "西格玛",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/72fd43c9d9f9f0d075a78db7a1dfe7766eef4d9c03e34c45b3ae6fe0f8634693.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Gravitic Flux",
+       "name_cn": "引力乱流",
+       "slug": "gravitic-flux",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/7140d3eaf82e580ab465dcdb04bd1faaf77ac54550a12d17ecde7c4e87e963e0.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "终极技能消耗降低 10%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 10.0,
+         "metric": "ultimate_cost",
+         "raw_metric": "ultimate cost",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "飞行速度提高 30%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 30.0,
+         "metric": "flight speed",
+         "raw_metric": "flight speed",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "soldier-76",
+     "name_en": "Soldier: 76",
+     "name_cn": "士兵76",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1ab1d67206b689b2dc14282ce65cb070e2956a902f5c4de87884513b661c4297.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Helix Rockets",
+       "name_cn": "螺旋飞弹",
+       "slug": "helix-rockets",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8fedb348952552227b6e2ec85cf14214106b901afce2a9657267153bb2a8cac3.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从 8 秒降低至 6 秒",
+         "before": 8.0,
+         "after": 6.0,
+         "by": -2.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "sombra",
+     "name_en": "Sombra",
+     "name_cn": "黑影",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/63afd70d44e5d2b3dde1bbbf9a51f1af6fd0cde2b8d72d58dfffdf75b326ea58.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Machine Pistol",
+       "name_cn": "自动手枪",
+       "slug": "machine-pistol",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2d43bad47f3061481c4df81d6f66ceaf8fe28a8b49f66dd60d831ff81396e8a4.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "散布降低 10%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 10.0,
+         "metric": "spread",
+         "raw_metric": "spread",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 修复了在查看新图标后，「玩家图标」菜单标签页上的「新」标记可能仍然保留的错误\n- 修复了可能导致双方队伍在占领要点地图结束时都显示 100% 的 UI 错误\n- 修复了同时收到多个好友请求时，好友请求「弹窗」可能永久显示在屏幕上的错误\n- 修复了以第三人称观战时，多名英雄的终极技能音效可能无声的错误\n- 修复了立即开始的自定游戏中回放无法录制的问题\n- 修复了英雄选择界面中英雄头像显示模糊/低分辨率的错误\n- 修复了被击睡或击倒的英雄无法被敌人走过去的错误\n- 修复了一些服务器崩溃问题\n- 修复了 AI 机器人可能在训练靶场和行动档案游戏模式中卡住的问题",
+     "dev": null
+    },
+    {
+     "title": "地图",
+     "body": "努巴尼\n\n- 修复了允许玩家站在最终检查点附近非预期位置的错误",
+     "dev": null
+    },
+    {
+     "title": "英雄",
+     "body": "堡垒\n\n- 砖块皮肤：修复了堡垒的砖块子弹在穿过美的冰墙射击后体积变大的错误\n\n奥丽莎\n\n- 修复了放置在佩特拉可破坏地板上的奥丽莎超充能器未能随地板一同正确销毁的问题\n\n莱因哈特\n\n- 修复了如果被击杀玩家先被莱因哈特的冲锋击退，则助攻或环境击杀不计入莱因哈特冲锋击杀统计的错误\n\n西格玛\n\n- 修复了西格玛在被击睡或击晕时引力乱流动画仍会播放的错误\n\n黑影\n\n- 修复了放置在佩特拉可破坏地板上的黑影位移传动未能随地板一同正确销毁的错误\n\n查莉娅\n\n- 修复了查莉娅的投射屏障可能阻止冲锋中的英雄之间发生相互击倒的错误",
+     "dev": null
+    },
+    {
+     "title": "工坊",
+     "body": "- 修复了玩家加入比赛时，玩家加入消息会多次触发的问题\n- 修复了设置队伍分数/修改队伍分数在攻防作战、攻击/护送和运载目标中无法生效的问题\n- 修复了粘贴文本时编辑器会吞掉 Unicode 字符串最后一个字符的问题\n- 修复了末日铁拳射出最后一发子弹时，「是否正在发射主武器」无法返回 true 的问题\n- 修复了「禁用按钮」无法禁用死神暗影步的问题\n- 为清晰起见，在创建 HUD 文本和创建世界内文本中将「观战者」重命名为「非队伍观战者」\n- 修复了「非队伍观战者」选项在创建 HUD 文本和创建世界内文本中无法正常工作的问题",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2020-03-13-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:54:47+00:00",
+  "status": "draft",
+  "source_hash": "sha256:b386d7651e76537ad66053edeb31de4cb23eb6b227faca080afcb5327e71b592",
+  "kept_english": []
+ }
+}

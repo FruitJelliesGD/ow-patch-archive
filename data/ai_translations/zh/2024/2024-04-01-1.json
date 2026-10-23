@@ -1,0 +1,2464 @@
+{
+ "id": "ai-2024-04-01-1",
+ "site": "ai",
+ "date": "2024-04-01",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/04",
+ "title": "《守望先锋》补丁说明——2024年4月1日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "补丁更新",
+   "role": null,
+   "description": "我们目前已知一个问题：这些平衡性调整只会在街机先锋中出现的某个游戏模式里生效。所以我们现在暂且称之为「平衡守望先锋」。对由此造成的困惑，我们深表歉意。此外还有一些新的挑战，会奖励我们开发者的涂鸦作为喷漆。我们不确定为什么会这样，但它们看起来真的很酷。你可能想尽快收集它们，因为这一问题计划于4月8日修复。",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": null,
+   "dev": "开发者评论：由于技术问题，我们原本打算在S9竞技更新中加入的很大一部分平衡性调整被遗漏了。为弥补这一点，我们现在将它们发布。我们理解玩家会想尝试所有这些令人兴奋的改动，因此我们让在比赛中切换英雄变得比以往更容易。",
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合更新",
+     "body": "- 切换英雄时保留的最大终极技能充能从15%提高至49%。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "重装",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "d-va",
+     "name_en": "D.Va",
+     "name_cn": "D.Va",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e69a3d819fd46d0dcd1d9474c248a95e69519c20077c60e9de73a1e2d3acdbb6.png",
+     "dev_note": "开发者评论：机甲嗖嗖飞，D.Va炸弹轰轰响。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Boosters",
+       "name_cn": "推进器",
+       "slug": "boosters",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/89d6beb25b21eacd5a181b96438436692d9ad403fcef19873e506f6d46ed37a3.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在可以向后移动。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "现在可以用蹲下取消。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "在前0.4秒内用蹲下取消该技能，可将冷却时间降低至1.5秒。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Self-Destruct",
+       "name_cn": "自毁",
+       "slug": "self-destruct",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f76e4b710ceb71f2e260029fc8d0ad15b227e3f006ab1b6c0c4e44da98c2d614.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "击退效果提高900%。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 900.0,
+         "metric": "knockback",
+         "raw_metric": "knockback",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "doomfist",
+     "name_en": "Doomfist",
+     "name_cn": "末日铁拳",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/bc538b345188bdcb2d2be5b2894d471ba54aeea53b03862429205ed49d693bbe.png",
+     "dev_note": "开发者评论：末日铁拳是一名机动型英雄，所以他在格挡时没有理由慢下来，对吧？",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "悍猛格挡和毁天灭地也会强化你的下一次快速近身攻击。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Power Block",
+       "name_cn": "悍猛格挡",
+       "slug": "power-block",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/56267df764931eadeae09513e0f1b9594ae238eebba84878c501ba4b69acb71f.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "移动速度修正从0.65倍提高至1.25倍。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "junker-queen",
+     "name_en": "Junker Queen",
+     "name_cn": "渣客女王",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/cf66adfac58a0321ec1f7d3a7241d6bf2f3b311707064d2f0ace2e3f4e342727.png",
+     "dev_note": "开发者评论：也就只有渣客女王能一路砍向新高度了。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Jagged Blade",
+       "name_cn": "锯齿利刃",
+       "slug": "jagged-blade",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/7aff09649e4e2daeec13cfcca4d5e369b4ddc0160587637bb607761ecf89f16c.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "技能激活期间按下辅助攻击键，现在会让渣客女王磁吸向格雷西。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "冷却时间现在从刀刃开始返回渣客女王时开始计算。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从6秒降低至4秒。",
+         "before": 6.0,
+         "after": 4.0,
+         "by": -2.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "mauga",
+     "name_en": "Mauga",
+     "name_cn": "毛加",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6dbd80a0b40bd0464db35948f98d91ecc6dfcede8c94ff9b1ecefda781a7aa1f.png",
+     "dev_note": "开发者评论：小加",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "生命值从350降低至25。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 350.0,
+       "after": 25.0,
+       "by": -325.0,
+       "by_pct": null,
+       "metric": "health",
+       "unit": "hp"
+      },
+      {
+       "text_en": null,
+       "text_cn": "毛加的体型缩小了50%。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 50.0,
+       "metric": "s scale has been",
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Incendiary Chain Gun",
+       "name_cn": "燃烧链式机枪",
+       "slug": "incendiary-chain-gun",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/df6bae435e7e319b51fe4977e92971fcfbb9b30fab2f39d1e614660274fab226.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "命中处于「燃烧」状态的敌人会将其点燃。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "orisa",
+     "name_en": "Orisa",
+     "name_cn": "奥丽莎",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/20c12a10cfe0b5608f9eec63a74ecb0ccd18a114019bc77bb2765f87776e17ed.png",
+     "dev_note": "开发者评论：伊菲对奥丽莎的技术做了一些改动，灵感来自一个完全假设的场景——某位弓箭手骑着她上战场。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Energy Javelin",
+       "name_cn": "能量标枪",
+       "slug": "energy-javelin",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0cf93f55a30fe7ec769c5f2eebd284c92851d6b1dbaca0e2c39eae908a9b35c6.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "弹射一次。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "附着时爆炸。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "ramattra",
+     "name_en": "Ramattra",
+     "name_cn": "拉玛刹",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/cf69d4bfa61ac14f61d3d541b0d2687a20fa24f55afe7a392d746f5ccb138dea.png",
+     "dev_note": "开发者评论：我们听说拉玛刹受的苦还不够，所以我们加重了他的苦难，这样当他造成苦难时，他的敌人也会承受和他一样多的苦难。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "基础护甲从100提高至225。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 100.0,
+       "after": 225.0,
+       "by": 125.0,
+       "by_pct": null,
+       "metric": "base armor",
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Annihilation",
+       "name_cn": "诛",
+       "slug": "annihilation",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/dbffca5b7b1e0dcc7a0cceaffe1fedb1a6bf7af73e71218a15df2779fc97805f.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "从终极技能移至技能1",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "造成伤害时不再暂停其持续时间。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "移动速度提高20%。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 20.0,
+         "metric": "move_speed",
+         "raw_metric": "movement speed",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "持续时间从3秒提高至5秒。",
+         "before": 3.0,
+         "after": 5.0,
+         "by": 2.0,
+         "by_pct": null,
+         "metric": "duration",
+         "raw_metric": "duration",
+         "unit": "s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "每秒伤害从30降低至20。",
+         "before": 30.0,
+         "after": 20.0,
+         "by": -10.0,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "damage per second",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "半径从12米降低至9米。",
+         "before": 12.0,
+         "after": 9.0,
+         "by": -3.0,
+         "by_pct": null,
+         "metric": "radius",
+         "raw_metric": "radius",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Nemesis Form",
+       "name_cn": "天罚形态",
+       "slug": "nemesis-form",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5a9818afe979474cd23a8a3863522be14ae549df841a6a7efc9ed5398f3d692f.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "从技能1移至他的终极技能。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "使用期间始终激活诛。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "使用时完全治疗拉玛刹。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "猛击伤害从60提高至75。",
+         "before": 60.0,
+         "after": 75.0,
+         "by": 15.0,
+         "by_pct": null,
+         "metric": "pummel damage",
+         "raw_metric": "pummel damage",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "猛击范围从10提高至15。",
+         "before": 10.0,
+         "after": 15.0,
+         "by": 5.0,
+         "by_pct": null,
+         "metric": "pummel range has been",
+         "raw_metric": "pummel range has been",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "reinhardt",
+     "name_en": "Reinhardt",
+     "name_cn": "莱因哈特",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b5e3a4f5629a3acfd47b5d2e695e79ea964b060bf67b7e4f8f15e63accd5f934.png",
+     "dev_note": "莱因哈特评论：哈哈！这就像打乒乓球！看好了，布丽吉塔！我今年要参加锦标赛！",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Barrier Field",
+       "name_cn": "屏障力场",
+       "slug": "barrier-field",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/121f13903665417446ee4673d9740080a3bc117e285cf3dcf6547861a0bc7d43.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在可以按下主要攻击键来反弹弹道。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "反弹时生命值每秒降低20%。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "反弹时屏障尺寸降低至50%。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "锁死镜头输入现在绑定到快速近身攻击。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "roadhog",
+     "name_en": "Roadhog",
+     "name_cn": "路霸",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b6f4e837dc41e87d730f6b0fad3473e689c8bdcd1f732b97326ac08b0508f2ee.png",
+     "dev_note": "开发者评论：令敌人恼火的是，路霸最近发现了棒球。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Pig Pen",
+       "name_cn": "猪圈",
+       "slug": "pig-pen",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0150c28fe47ff4a7c16138266bf2b4903bd45e4b7770ab40572bb792b647838c.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "弹道速度从26提高至80。",
+         "before": 26.0,
+         "after": 80.0,
+         "by": 54.0,
+         "by_pct": null,
+         "metric": "projectile_speed",
+         "raw_metric": "projectile speed",
+         "unit": "m/s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "弹道伤害从0提高至40。",
+         "before": 0.0,
+         "after": 40.0,
+         "by": 40.0,
+         "by_pct": null,
+         "metric": "projectile damage",
+         "raw_metric": "projectile damage",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "sigma",
+     "name_en": "Sigma",
+     "name_cn": "西格玛",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9738e1687bf7064de3667169788ef1b5ea9cf1746a42753c767cf17c7cb67547.png",
+     "dev_note": "开发者评论：危险！落石。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Accretion",
+       "name_cn": "质量吸附",
+       "slug": "accretion",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/594b0ecbb34b41b288c08bc7b040b273f25289ef0afc2d00828d6a30a0687236.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "弹道速度从37降低至30。",
+         "before": 37.0,
+         "after": 30.0,
+         "by": -7.0,
+         "by_pct": null,
+         "metric": "projectile_speed",
+         "raw_metric": "projectile speed",
+         "unit": "m/s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "弹道重力从18降低至2。",
+         "before": 18.0,
+         "after": 2.0,
+         "by": -16.0,
+         "by_pct": null,
+         "metric": "projectile gravity",
+         "raw_metric": "projectile gravity",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "质量吸附激活期间按下技能键，会使岩石砸向地面。砸落时，它会在4米半径内造成50点伤害，并眩晕所有受到伤害的敌人。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "winston",
+     "name_en": "Winston",
+     "name_cn": "温斯顿",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6a9a37012551410b46b2c28146404354fe21e4a1e8ea65db4e1e497eeaa05c71.png",
+     "dev_note": "开发者评论：强化「不用瞄准」的玩法。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Tesla Cannon",
+       "name_cn": "特斯拉炮",
+       "slug": "tesla-cannon",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/050de92c7ce31e42368c796d9c246210a40bb1bd4a5273b2d64d8a980e1f9f9a.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "辅助攻击现在会在敌人之间连锁。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Primal Rage",
+       "name_cn": "原始暴怒",
+       "slug": "primal-rage",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/685608721cb914e0412a090eb1e89c0f5d10edfb3dbc34218ba3acd35611c990.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "拳击也会使闪电在敌人之间连锁。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "wrecking-ball",
+     "name_en": "Wrecking Ball",
+     "name_cn": "破坏球",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f71d6948e8b6ae340e20ab569ef66d24aead6032c34a7ec09a00ea864b413a24.png",
+     "dev_note": "开发者评论：我们正准备把破坏球改写成一只螃蟹。希望这些改动足够有沉浸感。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "破坏球的横向移动速度提高55%。",
+       "subject": "move_speed",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 55.0,
+       "metric": "s sideways movement speed",
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Quad Cannons",
+       "name_cn": "四联火炮",
+       "slug": "quad-cannons",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/12339775bfc5bfb8a4ad735a2eef452992e90f5374d341baf09f19bc9968147a.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "当你持续横向移动时，造成更高伤害。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "zarya",
+     "name_en": "Zarya",
+     "name_cn": "查莉娅",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d43075cba10cd711a129556142849587e78f1f55b0105d39a640da53ffa64e1b.png",
+     "dev_note": "开发者评论：请不要打破查莉娅的泡泡，不管它变得多大。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "开发者评论：请不要打破查莉娅的泡泡，不管它变得多大。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Particle Barrier and Projected Barrier",
+       "name_cn": "粒子屏障和投射屏障",
+       "slug": "particle-barrier-and-projected-barrier",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2d462e28ae2fc60b3ef9c32702bbc88936885dd7d20746a31dd2e3c51c20f199.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "使被泡泡包裹的目标体型增大至1.75倍。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "输出",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "ashe",
+     "name_en": "Ashe",
+     "name_cn": "艾什",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e41d918d0e7ffa772b5571df3d0dc1a05e6d9032307f78be935972cfd59f208a.png",
+     "dev_note": "开发者评论：召唤鲍勃对被叫错名字感到不满，所以F.R.E.D.来补位了。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "F.R.E.D.",
+       "name_cn": "F.R.E.D.",
+       "slug": "f-r-e-d",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e788b12d476e896dac3831bbc0842fb3b4d07a89b3c337959d9a6cd6ea5a7df5.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "鼠标滚轮上的新技能。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "武器切换。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "召唤F.R.E.D.冲锋一小段时间后离开。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "bastion",
+     "name_en": "Bastion",
+     "name_cn": "堡垒",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3a7dc6d45ce7a1e1c2d31bd4d88b4889c412b2003ad82d1fd8e41271952c1f68.png",
+     "dev_note": "开发者评论：是的，我们稍微调整了他的模式。总之，开始轰吧。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Configuration: Assault",
+       "name_cn": "强攻模式",
+       "slug": "configuration-assault",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5cf3fc40ec6eeee9716f66a934d9bf7f0803a924e72c12c5d1a6c74e57c933bd.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "强攻模式现在是默认形态。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "移动速度惩罚已移除。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "强攻模式现在有150发弹药。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "每发子弹伤害从12降低至5。",
+         "before": 12.0,
+         "after": 5.0,
+         "by": -7.0,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "damage per bullet",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "现在暴击造成1.5倍伤害。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Reconfigure",
+       "name_cn": "切换模式",
+       "slug": "reconfigure",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/56bef8912e83cac59dc0acb08bcaef591ff2ed52385424e8d753c03bbb77e4e9.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在将堡垒转变为侦察模式。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "提供35%的移动速度加成。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "哨卫模式现在发射霰弹。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "cassidy",
+     "name_en": "Cassidy",
+     "name_cn": "卡西迪",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8d161c49df5a962ece9ceafc6500bea473d9dd3695b9e24e39d5be616295e6c5.png",
+     "dev_note": "开发者评论：额外的生存能力是每个牛仔的梦想——只要别死就行。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Wanted!",
+       "name_cn": "通缉！",
+       "slug": "wanted",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c14b2c5652526a006233965b176fb2b5af9e7c5d44045fad3844267303f07091.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "新被动",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "标记一名敌人。击杀他们可获得50点生命值，直到你下次死亡。击杀5次后，每次击杀获得1点生命值。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "echo",
+     "name_en": "Echo",
+     "name_cn": "回声",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0dc3f1679d739ef530ba2b8cbe02bf09f4d40a57c0af84f694a3241d3a7ef948.png",
+     "dev_note": "开发者评论：现在把未知英雄带入其他模式。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Focusing Beam",
+       "name_cn": "聚焦光线",
+       "slug": "focusing-beam",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6552feeb85a32ae7131df50f61a9c0fa24bf347bf007e208a356a940561129ae.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "回声8米内的目标会受到如同生命值低于一半时的伤害。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Duplicate",
+       "name_cn": "人格复制",
+       "slug": "duplicate",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/457d6ebcb2b92d1e7f7a7174b426903879e131422196825589adbc5e5d9f7efb.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "不再能选择复制谁。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "现在可以复制盟友。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "人格复制的生命值不再上限为300。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "人格复制现在额外获得100点护盾生命值。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "终极技能充能加成速率从4提高至6.5。",
+         "before": 4.0,
+         "after": 6.5,
+         "by": 2.5,
+         "by_pct": null,
+         "metric": "bonus ult charge gain rate",
+         "raw_metric": "bonus ult charge gain rate",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "genji",
+     "name_en": "Genji",
+     "name_cn": "源氏",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/190a3dd9a5a4c8daeff9ec4da861f43cb28116964e89dc7416da104d8fae9134.png",
+     "dev_note": "开发者评论：来挡这个！*不限于休闲玩家。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Deflect",
+       "name_cn": "闪",
+       "slug": "deflect",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9e46bda733749ddd6512b61c021b4487b6201338a9ff39c716e4ee06e5d63a58.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "在完美时机按下主要攻击键，可暴击弹反一个弹道。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "hanzo",
+     "name_en": "Hanzo",
+     "name_cn": "半藏",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3febc2e638ff56d8f0161ea278ac3116b5baf8c0328f1eded6b499552a0eccad.png",
+     "dev_note": "开发者评论：半藏一直难以克服自己的过去，所以他很难不重拾旧习。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Storm Arrow",
+       "name_cn": "岚",
+       "slug": "storm-arrow",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/92c56621ba267d94f16baacda3f10ba7777b475935981b02e5026449d8e3d79c.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "弹射次数从1提高至3。",
+         "before": 1.0,
+         "after": 3.0,
+         "by": 2.0,
+         "by_pct": null,
+         "metric": "number of ricochets",
+         "raw_metric": "number of ricochets",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "每次射击的弹道数量从1提高至5。",
+         "before": 1.0,
+         "after": 5.0,
+         "by": 4.0,
+         "by_pct": null,
+         "metric": "number of projectiles per shot",
+         "raw_metric": "number of projectiles per shot",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "每个弹道的伤害降低78%。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 78.0,
+         "metric": "damage",
+         "raw_metric": "damage of each projectile",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "junkrat",
+     "name_en": "Junkrat",
+     "name_cn": "狂鼠",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d3628dc64d78ca6dc2a8b509cf5a6fc417c0f5068d5f75d1f5c094be1f58ee4e.png",
+     "dev_note": "开发者评论：狂鼠在他的炸弹上又放了炸弹。不知道这有什么好惊讶的。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Frag Launcher",
+       "name_cn": "榴弹发射器",
+       "slug": "frag-launcher",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e43d916b0851551d17a2385f92497cdcfcd781ac155663643a1e1ff3500bbf37.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在可以用辅助攻击引爆榴弹发射器的弹道。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "mei",
+     "name_en": "Mei",
+     "name_cn": "美",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/08586dceed41e030d575b2b643118f55390f1c2af91dd15394528f5399fcc934.png",
+     "dev_note": "开发者请求：请千万不要用这个技能到达地图上本不该到达的位置，谢谢。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Avalanche Launch",
+       "name_cn": "雪崩发射",
+       "slug": "avalanche-launch",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/bd63b2d05e4a2aa8615b7cad828fd05427f07e69c7611a662c5cb0d726b82627.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "新技能。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "在空中按下跳跃键以激活。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "在美脚下生成一根大型冰柱。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "可通过交互键取消。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "pharah",
+     "name_en": "Pharah",
+     "name_cn": "法老之鹰",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/93d639075993fdef3402aa9131f93be7789a33a11dc0099f2f88d22dda09c175.png",
+     "dev_note": "开发者评论：你用过悬浮背包，你用过推进背包，你用过疾冲背包。但你试过喷气着陆吗？",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Jet Land",
+       "name_cn": "喷气着陆",
+       "slug": "jet-land",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c14b2c5652526a006233965b176fb2b5af9e7c5d44045fad3844267303f07091.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "新技能。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "在空中按下蹲伏键以激活。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "朝地面向下疾冲。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "reaper",
+     "name_en": "Reaper",
+     "name_cn": "死神",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b7aac87959afbe062cc31518ded04b9dbcadb0a2282f8963c6bfd5ba0a2d6a27.png",
+     "dev_note": "开发者评论：有人从毛加的书里学了一招。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Hellfire Shotguns",
+       "name_cn": "狱火散弹枪",
+       "slug": "hellfire-shotguns",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/76b6866587871744aca310645f66d2d07755c5a55093eb8734ed0898b17efc51.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "主攻击现在只发射一把霰弹枪。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "每颗子弹伤害从 5.4 降低至 2.8。",
+         "before": 5.4,
+         "after": 2.8,
+         "by": -2.6,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "damage per bullet",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "弹药量从 8 提高至 16。",
+         "before": 8.0,
+         "after": 16.0,
+         "by": 8.0,
+         "by_pct": null,
+         "metric": "ammo",
+         "raw_metric": "ammo",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "辅助攻击现在发射另一把霰弹枪。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "sojourn",
+     "name_en": "Sojourn",
+     "name_cn": "索杰恩",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/515f25a729a4a3f51d956fc54c600dc60d8e5242f2b188c178496cea1a2e11b5.png",
+     "dev_note": "开发者评论：薇薇安·蔡斯？不如叫薇薇安·拉。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Disruptor Shot",
+       "name_cn": "干扰弹",
+       "slug": "disruptor-shot",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/7e903d13474df377216191c5b5c128fc6d20befdc611af9f7baedfdfa3b59295.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "干扰弹现在在部署时将敌人拉向中心。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "再次按下 E 键可提前部署干扰弹。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "soldier-76",
+     "name_en": "Soldier: 76",
+     "name_cn": "士兵76",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1cb6f3ad4b8afdc1a901c26180a4c134018bb805b91eefe9b7cf2946879f10c8.png",
+     "dev_note": "开发者评论：边跑边打？听起来很有趣！",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Heavy Pulse Rifle",
+       "name_cn": "重脉冲步枪",
+       "slug": "heavy-pulse-rifle",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/69eaf669cd646a617439592615f023cfec82c27f4a3e19f48188941b3feaf55f.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在可在疾跑期间使用。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "疾跑时使用重脉冲步枪的散布为 2。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "sombra",
+     "name_en": "Sombra",
+     "name_cn": "黑影",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f348c1704dc50c009ac8acf6912a5a77eaf2a3acdd34e56927190af9eb9145d1.png",
+     "dev_note": "开发者评论：为保证战斗公平，请告知敌方队伍尽快更新他们的网络杀毒软件和防火墙。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Virus",
+       "name_cn": "病毒侵染",
+       "slug": "virus",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/156dfc48d0e7a046692e27ea9f417ee3afbf9d918d92a909fe03d2b705dd3bdd.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "击杀感染病毒侵染的敌人时，病毒会尝试扩散至附近的一名敌人。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "symmetra",
+     "name_en": "Symmetra",
+     "name_cn": "秩序之光",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b0a19d5c8b0e299705036f4d0b9394da5ff415dc0dcd4e9207b6e63254022dff.png",
+     "dev_note": "开发者评论：只要你不按传送，秩序之光就没法坑你。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Teleporter",
+       "name_cn": "传送面板",
+       "slug": "teleporter",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/13b45663f441144ded977e8ccf9ed180c213176206a9f6f9e189e29f09a03b64.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "仅放置出口传送面板。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "任何盟友无论身处何地均可使用传送面板。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "传送面板持续时间从 10 秒降低至 4 秒。",
+         "before": 10.0,
+         "after": 4.0,
+         "by": -6.0,
+         "by_pct": null,
+         "metric": "teleporter duration",
+         "raw_metric": "teleporter duration",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "torbjorn",
+     "name_en": "Torbjörn",
+     "name_cn": "托比昂",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2ef3a4bdd117829a83867a7775ece351c4226f29b24cdbf8d7fac89443e8d8a2.png",
+     "dev_note": "开发者评论：每个人都值得拥有一只炮台宠物。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Deploy Turret",
+       "name_cn": "部署炮台",
+       "slug": "deploy-turret",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a25d559460eed995f177b84eda6000aca6a52c8600dcf2249cc50ca31aa9c786.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "炮台现在可附着在墙壁、天花板和盟友身上。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "tracer",
+     "name_en": "Tracer",
+     "name_cn": "猎空",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5ee20a1feed14da5153f19745328e9fc02bd79f8109593a9b7dab9283eb9629b.png",
+     "dev_note": "开发者评论：随机将你送往过去或未来，改变你的脉冲双枪的工作方式。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Recall",
+       "name_cn": "闪回",
+       "slug": "recall",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/30939502a8576da1fdcad8c7d21881e32066fb28847fc7df874b1436689e3425.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "随机将你送往过去或未来，改变你的脉冲双枪的工作方式。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "widowmaker",
+     "name_en": "Widowmaker",
+     "name_cn": "黑百合",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b4871b9addd770582c8b6a1ab366b9ec08d986c2995248ee5fce7e15cb0d809d.png",
+     "dev_note": "开发者评论：钩索 + 爆头 = 跑酷",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Grappling Hook",
+       "name_cn": "抓钩",
+       "slug": "grappling-hook",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/72fec7acac37ad840835839e72f368134498583686e91f7e30fe5d48aa44f7a1.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在拥有 3 次充能。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "使用寡妇之吻辅助攻击造成暴击时，补充一次该技能的充能。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "支援",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "ana",
+     "name_en": "Ana",
+     "name_cn": "安娜",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/86debddbaaaf8699d68775a9dbffaf5b8db514772b77ff7234b1ff84c0b29fd5.png",
+     "dev_note": "开发者评论：起床啦！这算不算一个粗暴的唤醒？",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Sleep Dart",
+       "name_cn": "麻醉镖",
+       "slug": "sleep-dart",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/20707fd82265412fdc6d2353daa88ec7558cd71c89aa3ac6cf0e78bbbfcabd80.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "被催眠的敌人会在睡眠期间缓慢上升。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "敌人落地时会受到坠落伤害。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "baptiste",
+     "name_en": "Baptiste",
+     "name_cn": "巴蒂斯特",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5ac801c6fe84f83fe5015af89858cbdfb2ec9d32d141f582889b5381fd0195fc.png",
+     "dev_note": "开发者评论：曾有人建议巴蒂斯特要一直向前，他确实把这句话记在了心里。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Exo Boots",
+       "name_cn": "动力战靴",
+       "slug": "exo-boots",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0d598afba5a03761d617d735d5435323c56108655b5017ddf8c36c4af36b9b73.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在会将你向前弹射，而非向上。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Amplification Matrix",
+       "name_cn": "增幅矩阵",
+       "slug": "amplification-matrix",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0a31371b55e4007e67a86f8495949970d20f64b2f0166e78d3fd16217e090a83.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "穿过它的弹道速度提高 200%。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "brigitte",
+     "name_en": "Brigitte",
+     "name_cn": "布丽吉塔",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/51b93ea59f369a1defa78e5d08c12b1391f5d2d94614a51fd95c125a7a6151fa.png",
+     "dev_note": "开发者评论：大布丽吉塔",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "体型增大至 1.5 倍。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "护甲从 50 提高至 150。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 50.0,
+       "after": 150.0,
+       "by": 100.0,
+       "by_pct": null,
+       "metric": "armor",
+       "unit": "hp"
+      }
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Shield Barrier",
+       "name_cn": "屏障护盾",
+       "slug": "shield-barrier",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2b1bb6338180161e55c5f2184879dce395eca9e58f974befe729293fcc3dfdca.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "生命值从 250 提高至 700。",
+         "before": 250.0,
+         "after": 700.0,
+         "by": 450.0,
+         "by_pct": null,
+         "metric": "health",
+         "raw_metric": "health",
+         "unit": "hp"
+        },
+        {
+         "text_en": null,
+         "text_cn": "始终使用更大尺寸。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Rally",
+       "name_cn": "集结号令",
+       "slug": "rally",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/08552423da53faa55238bd66a2a72d32d1038e42f2eebc911921bc9d5d575432.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "重置你的能量盾击冷却时间。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "移动速度加成从 1.15 倍提高至 1.3 倍。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "illari",
+     "name_en": "Illari",
+     "name_cn": "伊拉锐",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f33f6fe94ad55fcf9027e779f66afac358a2f93651070b95cd565ff90d670c8b.png",
+     "dev_note": "开发者评论：修复了伊拉锐一个长期存在的错误，她的太阳能量现已完全生效。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Captive Sun",
+       "name_cn": "桎梏灼日",
+       "slug": "captive-sun",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/556c78ff01455fb1ab7ed7808e681ae0f1cd1fdf0fe1c92fe89672ea261ad187.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "使用桎梏灼日后，伊拉锐进入太阳充能状态。她移动更快，阳焰步枪充能更快，且步枪始终充能至满伤害。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "移动速度加成 1.2 倍。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "攻击充能时间降低 40%。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 40.0,
+         "metric": "attack charge time",
+         "raw_metric": "attack charge time",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "治疗充能加成 1.2 倍。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Solar Powered",
+       "name_cn": "太阳能驱动",
+       "slug": "solar-powered",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c14b2c5652526a006233965b176fb2b5af9e7c5d44045fad3844267303f07091.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "新被动。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "当太阳出现时，伊拉锐始终处于太阳充能状态。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "kiriko",
+     "name_en": "Kiriko",
+     "name_cn": "雾子",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/24d1d7bf86c331b3d81b934442ed36fd0121f6815255c6f26f456127fb342d15.png",
+     "dev_note": "开发者评论：你应该看看她在蹦床上的样子。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Protection Suzu",
+       "name_cn": "铃",
+       "slug": "protection-suzu",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3775c37a363e1aaf02a6df4cdfb611f18e38bb69ce42dd59abddb4140cea9790.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在还会为盟友提供 10% 伤害加成、10% 治疗加成、50% 移动速度加成，以及 700% 跳跃高度提升。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "持续时间从 0.65 秒提高至 1 秒。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Vulpine Agility",
+       "name_cn": "狐灵敏捷",
+       "slug": "vulpine-agility",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c14b2c5652526a006233965b176fb2b5af9e7c5d44045fad3844267303f07091.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "新被动",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "雾子可在空中额外跳跃一次",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "lifeweaver",
+     "name_en": "Lifeweaver",
+     "name_cn": "生命之梭",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/57d5014ab6034db9138f838e8450693b4a97ab3c54f85d594b199a8853e75ccb.png",
+     "dev_note": "开发者评论：借助光合作用的力量，与生命之梭一起达到新的高度。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Petal Platform",
+       "name_cn": "花瓣平台",
+       "slug": "petal-platform",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f64582890d92e968d79c54f9bb8cf1b9b1cc8da6dca7b8bdc647512957cac89f.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在升高 20 米（原为 8 米）。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "lucio",
+     "name_en": "Lúcio",
+     "name_cn": "卢西奥",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/dee7e92975f5e659fa6b28c508d8fbad62bda720698b1d21f2492af7b9f94b48.png",
+     "dev_note": "开发者评论：卢西奥的枪现在跟上节奏了。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Sonic Amplifier",
+       "name_cn": "音速扩音器",
+       "slug": "sonic-amplifier",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/7afd1ea98486f12a0338ca55a9a1c49a97867a380f162ea7c10cffa487bfb808.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "弹药量从 20 提高至 30。",
+         "before": 20.0,
+         "after": 30.0,
+         "by": 10.0,
+         "by_pct": null,
+         "metric": "ammo",
+         "raw_metric": "ammo",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "每颗子弹的恢复时间从 0.14 秒降低至 0.125 秒。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "现在在速度加成期间每轮发射 3 颗子弹，在治疗加成期间每轮发射 5 颗子弹。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Sound Barrier",
+       "name_cn": "音障",
+       "slug": "sound-barrier",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/21c5a17be341a3c0da2dcc9372f4f3c88ef622c80776360bd844d0fba3eb88a7.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "击退被声波命中的敌人。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "mercy",
+     "name_en": "Mercy",
+     "name_cn": "天使",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c889fade479003fac5a1ff46a05aee7b0dc88fbb8d2d4b75e4be31159eb1f816.png",
+     "dev_note": "开发者评论：再见，0 伤害数字！",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Caduceus Staff",
+       "name_cn": "天使之杖",
+       "slug": "caduceus-staff",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d1a18f702a0e30d58608da51a0b8eeeab72a04faf0de3579ce625066caa8389e.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "移除辅助攻击的伤害加成。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "辅助攻击现在为伤害法杖。（手柄上的技能 2。）",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "伤害法杖发射天使冲击枪弹道。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "弹道尺寸更小。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "终极技能期间尺寸变大。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "伤害提高 2 点。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "未开火时弹道自动装填。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "治疗时或 4 秒未开火后，弹道装填速度翻倍。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "若治疗光束处于激活状态，可以降低的射速发射弹道。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "若伤害法杖处于激活状态，治疗光束可以降低的速率进行治疗。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Caduceus Blaster",
+       "name_cn": "天使冲击枪",
+       "slug": "caduceus-blaster",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9d3118f2f0a262678fb1b11ffbaa3f5e929e453cb4d7c819e69ff137cde918e1.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "已移除。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "moira",
+     "name_en": "Moira",
+     "name_cn": "莫伊拉",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/90fa2b69a7b80ae6d57c9ea6f3387dd18dfc1728bdb26949d28a17b98dd4e5f7.png",
+     "dev_note": "开发者评论：莫伊拉的右臂因反复实验开始融化，所以她决定换个方式。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Biotic Grasp (Primary Fire)",
+       "name_cn": "生化之触（主攻击）",
+       "slug": "biotic-grasp-primary-fire",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9721148061d528df7b3b5a90f746a82dc2b53b191add15e0962f8dcaf0777aa0.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在造成伤害而非治疗。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Biotic Grasp (Secondary Fire)",
+       "name_cn": "生化之触（辅助攻击）",
+       "slug": "biotic-grasp-secondary-fire",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4073577768c5a1f5b5e8bcdb9ce9615be249d35cfbff4b66bc617c19e3b96591.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在进行治疗而非造成伤害。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "zenyatta",
+     "name_en": "Zenyatta",
+     "name_cn": "禅雅塔",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9367143a32f3fc07781330a0b26c6f1087361204a2b7e4088d1daf26428273f2.png",
+     "dev_note": "开发者评论：「让禅雅塔走路？」这个我可不确定。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Orb of Destruction",
+       "name_cn": "灭",
+       "slug": "orb-of-destruction",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5740abd7e5f0de513ebcb32b073f27ba8f5625804598d5762cefd0c7331c1437.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "弹药量从 25 提高至 32。",
+         "before": 25.0,
+         "after": 32.0,
+         "by": 7.0,
+         "by_pct": null,
+         "metric": "ammo",
+         "raw_metric": "ammo",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "辅助攻击每颗弹道的充能时间从 0.52 降低至 0.47。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "辅助攻击弹道速度提高 33%。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "辅助攻击伤害降低 30%。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 30.0,
+         "metric": "secondary fire damage",
+         "raw_metric": "secondary fire damage",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "辅助攻击现在最多可充能 8 颗法球。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "禅雅塔在充能辅助攻击时会向上加速。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2024-04-01-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:50:11+00:00",
+  "status": "draft",
+  "source_hash": "sha256:f67364048d045d9110b606563d4b889d2c962113c2df76260568a633a7d6de10",
+  "kept_english": [
+   "F.R.E.D."
+  ]
+ }
+}

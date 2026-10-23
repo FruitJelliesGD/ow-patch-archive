@@ -1,0 +1,914 @@
+{
+ "id": "ai-2026-06-25-1",
+ "site": "ai",
+ "date": "2026-06-25",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/06",
+ "title": "《守望先锋》补丁说明——2026年6月25日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "在线修正更新",
+   "role": null,
+   "description": "本次在线修正包含玩法更新与错误修复。6 月 16 日补丁的回放代码仍然可用。",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "shion",
+     "name_en": "Shion",
+     "name_cn": "死怨",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ad0931805f9f28f03e8d55fead38ed85ee52f5c75f89aa3deec8a27fdc4fd6b3.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Execution",
+       "name_cn": "交叉枪决",
+       "slug": "execution",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/dbd96d63564e1d99cfa5593f86796c9e5ab360214eb0e50c18d6a9503093c7c5.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "弹道尺寸从 0.17 降低至 0.07。",
+         "before": 0.17,
+         "after": 0.07,
+         "by": -0.1,
+         "by_pct": null,
+         "metric": "projectile size",
+         "raw_metric": "projectile size",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "恢复时间从 0 提高至 0.4 秒。",
+         "before": 0.0,
+         "after": 0.4,
+         "by": 0.4,
+         "by_pct": null,
+         "metric": "recovery",
+         "raw_metric": "recovery time",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "角斗领域更新",
+   "role": null,
+   "description": "在近期角斗领域的大幅改动之后，我们一直在密切关注所有英雄、其异能以及物品的表现。我们下调了一些前期表现过强的内容，同时增强了一些表现不佳的新异能，帮助它们找到更清晰的定位。我们也会继续关注一些较令人沮丧的异能和物品，并在必要时做出调整。",
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "通用",
+     "body": "三连击汤姆逊\n\n- 花费提高至 10500（原为 10000）。\n\n回收弹头\n\n- 弹药恢复几率提高至 60%（原为 50%）。\n- 治疗提高至 20%（原为 15%）。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "重装",
+   "role": "tank",
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "hazard",
+     "name_en": "Hazard",
+     "name_cn": "骇灾",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f5f6c3e6378f59c991cc60d817ec0f8b73b6957c277ff1ce23e89895ed6c6628.png",
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "醉意盎然",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "半径降低至 8 米（原为 12 米）。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "治疗降低至你最大生命值的 20%（原为 30%）。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "骨蚀",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "伤害提高至 60（原为 50）",
+       "subject": null,
+       "dimension": "other",
+       "before": 50.0,
+       "after": 60.0,
+       "by": 10.0,
+       "by_pct": null,
+       "metric": "damage",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "双生獠牙",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "额外伤害提高至 75%（原为 50%）。",
+       "subject": null,
+       "dimension": "other",
+       "before": 50.0,
+       "after": 75.0,
+       "by": 25.0,
+       "by_pct": null,
+       "metric": "bonus damage",
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "orisa",
+     "name_en": "Orisa",
+     "name_cn": "奥丽莎",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/76707145df847f90e838e93b33979d5a275d1702a6e800dc6abb6a40652c1a82.png",
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "暴击充能",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "暴击伤害提高至 75%（原为 50%）。",
+       "subject": null,
+       "dimension": "other",
+       "before": 50.0,
+       "after": 75.0,
+       "by": 25.0,
+       "by_pct": null,
+       "metric": "critical damage",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "OR-15 升降梯",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "基于热量的最大武器强度提高至 40%（原为 30%）。",
+       "subject": null,
+       "dimension": "other",
+       "before": 30.0,
+       "after": 40.0,
+       "by": 10.0,
+       "by_pct": null,
+       "metric": "max weapon power based on heat",
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "zarya",
+     "name_en": "Zarya",
+     "name_cn": "查莉娅",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/bdc3fb8aa2c87debc3d4565197b969c5c7b4f0c9059dd8ad3335c8e536a91e0f.png",
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "沃斯卡娅漩涡",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "伤害降低至 60（原为 80）。",
+       "subject": null,
+       "dimension": "other",
+       "before": 80.0,
+       "after": 60.0,
+       "by": -20.0,
+       "by_pct": null,
+       "metric": "damage",
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "输出",
+   "role": "damage",
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "freja",
+     "name_en": "Freja",
+     "name_cn": "弗蕾娅",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/7c5a9c6437d89f4703646a934c6a27098dd340abcb6f965bf1335bc10b60e1ae.png",
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "熟透了",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "残留持续时间降低至 2 秒（原为 3 秒）。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "genji",
+     "name_en": "Genji",
+     "name_cn": "源氏",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9bff8d12c9ffa4de593c1d2e6a09f674fa42493b1ae636c9685d790100f96d20.png",
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "居合斩",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "伤害提高至 75%（原为 50%）。",
+       "subject": null,
+       "dimension": "other",
+       "before": 50.0,
+       "after": 75.0,
+       "by": 25.0,
+       "by_pct": null,
+       "metric": "damage",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "龙击",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "额外伤害降低至 100%（原为 120%）。",
+       "subject": null,
+       "dimension": "other",
+       "before": 120.0,
+       "after": 100.0,
+       "by": -20.0,
+       "by_pct": null,
+       "metric": "bonus damage",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "蓄力时间现在加快 50%。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "mei",
+     "name_en": "Mei",
+     "name_cn": "美",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/dc5525ecbba3b254188f126ba0dd07571dee201d4ddc2f068c3e2f6907668cca.png",
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "深度严寒",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "冰冻持续时间降低至 0.65 秒（原为 0.75 秒）。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "reaper",
+     "name_en": "Reaper",
+     "name_cn": "死神",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d6d7be4b019c088741f1a27bf643bc3718f06f571fe185441026aaef03115843.png",
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "地狱裹尸布",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "持续时间降低至 2 秒（原为 3 秒）。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "伤害降低至最大生命值的 20%（原为 25%）。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "减速与攻击速度减速降低至 20%（原为 30%）。",
+       "subject": null,
+       "dimension": "other",
+       "before": 30.0,
+       "after": 20.0,
+       "by": -10.0,
+       "by_pct": null,
+       "metric": "slow and attack speed slow",
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "sojourn",
+     "name_en": "Sojourn",
+     "name_cn": "索杰恩",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/969fa59c9d05d6ef0d131b623fd7ae5b506558ca1745ab3ec1399bae8687d430.png",
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "通过伤害和治疗获得的角斗资金提高 11.1%。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 11.1,
+       "metric": "currency gained from damage and healing",
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "torbjorn",
+     "name_en": "Torbjörn",
+     "name_cn": "托比昂",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b1b376c95ed7f017b9be712c9069305c7e5cb26b010aa988697805ffa1cc20a5.png",
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "炮台三胞胎",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "攻击速度降低至 65%（原为 75%）。",
+       "subject": null,
+       "dimension": "other",
+       "before": 75.0,
+       "after": 65.0,
+       "by": -10.0,
+       "by_pct": null,
+       "metric": "attack speed",
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "vendetta",
+     "name_en": "Vendetta",
+     "name_cn": "斩仇",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/723acfb2d8745f5346e1bb64124d74f5267dfbfeb2008240867925eddf9283b6.png",
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "过载打击",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "伤害提高降低至 25%（原为 50%）。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "巅峰嗜血",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "每层越战越勇的冷却时间缩减降低至 3%（原为 5%）。",
+       "subject": null,
+       "dimension": "other",
+       "before": 5.0,
+       "after": 3.0,
+       "by": -2.0,
+       "by_pct": null,
+       "metric": "cooldown",
+       "unit": "s"
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "支援",
+   "role": "support",
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "ana",
+     "name_en": "Ana",
+     "name_cn": "安娜",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3c87d470067d61c432815a4bc0c70b11f1b5379006da29625839da356b7c4ca1.png",
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "梦境力场",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "每秒治疗提高至你最大生命值的 15%（原为 10%）。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "juno",
+     "name_en": "Juno",
+     "name_cn": "朱诺",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/342a43327798660f29039e6a7f3f0a922097b03419eded7434cb1edb2e444bbb.png",
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "闪现推进",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "冷却时间缩减降低至 30%（原为 50%）。",
+       "subject": null,
+       "dimension": "other",
+       "before": 50.0,
+       "after": 30.0,
+       "by": -20.0,
+       "by_pct": null,
+       "metric": "cooldown",
+       "unit": "s"
+      },
+      {
+       "text_en": null,
+       "text_cn": "裂变室",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "每秒发射数提高至 22（原为 20）。",
+       "subject": null,
+       "dimension": "other",
+       "before": 20.0,
+       "after": 22.0,
+       "by": 2.0,
+       "by_pct": null,
+       "metric": "shots per second",
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "lucio",
+     "name_en": "Lúcio",
+     "name_cn": "卢西奥",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3a804d4305621bbee0e1472ac79d977799a27b6ae8f44922790cd1393812d5fd.png",
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "混响",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "效果降低提高至降低 50%（原为降低 60%）。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "moira",
+     "name_en": "Moira",
+     "name_cn": "莫伊拉",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/39b42cd8e183acb99ccac01cb8b43a4b7372350425a80f4444885800dd84ba28.png",
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "远程互惠",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "持续时间提高至 5 秒（原为 3 秒）。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "球体爆裂",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "伤害最高提高至 30%（原为 25%）。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "治疗最高提高至 45%（原为 35%）。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "替代能量",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "获得额外层数时，增益持续时间现在会重置。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "通用",
+     "body": "- 在之前的更新中，修复了艾什的瞄准射击伤害衰减过快的问题。",
+     "dev": null
+    },
+    {
+     "title": "角斗领域",
+     "body": "- 修复了死神「生死之墙」异能无法治疗初始施放时不在范围内的盟友的问题。\n- 修复了在装备龙之息与居合斩异能并使用闪进行格挡时施放斩，无法正确触发龙之息的问题。\n- 修复了艾什的灾祸异能会让玩家获得超出预期弹药量的问题。\n- 修复了莫伊拉的连锁之握异能中，生化之触只会连锁至 1 个额外目标的问题。\n- 修复了 D.Va 的大铉引爆器英雄物品无法提供 15% 初始终极技能充能的问题。\n- 修复了美的冰面英雄物品未提供正确属性的问题。\n- 修复了安娜的集束核心物品未提供技能强度的问题。\n- 修复了士兵：76 的快速响应半径物品未提高生物力场持续时间的问题。\n- 修复了雾子的好运异能无法与弹道速度配合生效的问题。\n- 修复了生化靶心的效果会被三连击汤姆逊的持续伤害触发的问题。\n- 修复了外骨骼弹簧仍会被某些物品视为装置的问题。\n- 修复了无漾的碎浪不影响溅射打击伤害的问题。\n- 修复了源氏的龙击会阻止斩的终极技能语音播放的问题。\n- 修复了源氏的赛博迅捷异能提供的攻击速度低于预期的问题。\n- 修复了莱因哈特的钢铁漂移在取消冲锋时无法正确击退敌人的问题。\n- 修复了无漾的洋流汇涌治疗盟友的效果低于预期的问题。\n- 修复了在 D.Va 上使用装置不会触发某些物品效果的问题。\n- 修复了将死灵驱散与斥力护胫组合时，会导致斥力护胫的击退效果同时造成减速的问题。\n- 修复了莫伊拉的幽灵光束异能若快速连续使用，会缩短聚合射线持续时间的问题。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2026-06-25-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:56:28+00:00",
+  "status": "draft",
+  "source_hash": "sha256:ca8bd9e6913f97e171cc84855bd3660299d45e7f2a742c6128a08e3ee072fb2c",
+  "kept_english": []
+ }
+}

@@ -1,0 +1,178 @@
+{
+ "id": "ai-2021-01-28-1",
+ "site": "ai",
+ "date": "2021-01-28",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2021/01",
+ "title": "《守望先锋》补丁说明——2021年1月28日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "hero_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "echo",
+     "name_en": "Echo",
+     "name_cn": "回声",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ce8aec64726308d50cc0e4656d9bfe7647b886cc23830e0c80439cb92bfbdbcc.png",
+     "dev_note": "回声的技能组围绕机动性和爆发伤害设计，但她在面对高生命值目标（如重装）时表现过强。降低她的主要武器和聚焦光线的最大持续开火时间，将削弱她的持续伤害输出，同时不影响她对脆皮目标的爆发伤害潜力。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Tri-Shot",
+       "name_cn": "三角射击",
+       "slug": "tri-shot",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8fc9f68f9cdcd7c90ce902d1882bca2e783609f7f0e62c8ee00996eec4026063.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "弹药量从 15 降低至 12",
+         "before": 15.0,
+         "after": 12.0,
+         "by": -3.0,
+         "by_pct": null,
+         "metric": "ammo",
+         "raw_metric": "ammo",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Focusing Beam",
+       "name_cn": "聚焦光线",
+       "slug": "focusing-beam",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6552feeb85a32ae7131df50f61a9c0fa24bf347bf007e208a356a940561129ae.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "持续时间从 2.5 秒降低至 2 秒",
+         "before": 2.5,
+         "after": 2.0,
+         "by": -0.5,
+         "by_pct": null,
+         "metric": "duration",
+         "raw_metric": "duration",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "tracer",
+     "name_en": "Tracer",
+     "name_cn": "猎空",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a74a59e54131214afedbeb964d8be02de53a08dbef939632235187b1501aa74b.png",
+     "dev_note": "新的伤害衰减距离会让目标处于猎空最佳距离之外时伤害下降得更快，使她在中距离的威胁降低。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Pulse Pistols",
+       "name_cn": "脉冲双枪",
+       "slug": "pulse-pistols",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/400eb87506839326001fef9376a977e01febc73dc11afb153c49c0c49042e8f9.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "最小-最大伤害衰减距离从 13-23 米下调至 12-20 米",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "zenyatta",
+     "name_en": "Zenyatta",
+     "name_cn": "禅雅塔",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0ac1ec8a83a9a8c3de27d975c1da5356cd22ef68e3a662c98bdee5204ca302e7.png",
+     "dev_note": "禅雅塔近期在提升全队伤害输出方面表现略强，因此我们通过降低乱的总伤害增幅以及远距离施放的速度，来削弱它的一部分强度。新的弹道速度现在与他的主要攻击模式灭一致。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Orb of Harmony",
+       "name_cn": "谐",
+       "slug": "orb-of-harmony",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/999f5d34dd3c8dfb045bc69129d1b6aac547b98e252b68f2599b878d15d841cb.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "弹道速度从 120 降低至 90",
+         "before": 120.0,
+         "after": 90.0,
+         "by": -30.0,
+         "by_pct": null,
+         "metric": "projectile_speed",
+         "raw_metric": "projectile speed",
+         "unit": "m/s"
+        }
+       ]
+      },
+      {
+       "name_en": "Orb of Discord",
+       "name_cn": "乱",
+       "slug": "orb-of-discord",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f416ae3c602c4f920551057176a3618441f943a0faea5e3cf77dc5db0e5128a5.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "弹道速度从 120 降低至 90",
+         "before": 120.0,
+         "after": 90.0,
+         "by": -30.0,
+         "by_pct": null,
+         "metric": "projectile_speed",
+         "raw_metric": "projectile speed",
+         "unit": "m/s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "伤害增幅从 30% 降低至 25%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2021-01-28-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:48:27+00:00",
+  "status": "draft",
+  "source_hash": "sha256:c463aeb7ae7d402a91e9af5f53e3b5566ae313c6c128640e43cc8ec487ad90d7",
+  "kept_english": []
+ }
+}

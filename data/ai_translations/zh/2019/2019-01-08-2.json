@@ -1,0 +1,259 @@
+{
+ "id": "ai-2019-01-08-2",
+ "site": "ai",
+ "date": "2019-01-08",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2019/01",
+ "title": "《守望先锋》补丁说明——2019年1月8日",
+ "seq": 2,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "补丁亮点",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "安娜的巴斯特挑战",
+     "body": "我们将把安娜在短篇小说《巴斯特》中的旅程带入《守望先锋》，并推出一系列特殊的、可解锁的游戏内内容。在快速比赛、竞技比赛或街机先锋中获胜，即可获得限时玩家头像、胜利姿势以及全新史诗皮肤：巴斯特·安娜！\n\n在1月21日之前，随时收看正在游玩《守望先锋》的参与活动Twitch主播，即可获得五款安娜的巴斯特挑战喷漆！\n\n如需了解更多关于安娜的巴斯特挑战的信息，请点击此处。",
+     "dev": null
+    },
+    {
+     "title": "《守望先锋联赛》2019赛季皮肤",
+     "body": "战队队服化身为游戏内皮肤！八支全新的《守望先锋联赛》2019赛季战队皮肤现已可在游戏内装备：亚特兰大君临、成都猎人、广州冲锋、杭州闪电、巴黎永生、多伦多捍卫者、温哥华泰坦和华盛顿正义。用每位英雄的皮肤在游戏内代表你最喜欢的战队（或多支战队）吧。\n\n如需了解更多关于《守望先锋联赛》的信息，请点击此处。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "游戏浏览器与自定游戏更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "观战",
+     "body": "- 状态效果图标现在会显示在受影响的英雄头像上\n- 新增了切换越肩观战视角的选项。该功能可在选项 > 游戏性 > 使用简易第三人称观战视角中找到\n- 新增了观战时静音语音的选项。该功能可在选项 > 游戏性 > 观战时启用语音中找到",
+     "dev": "这些体验优化改动与部分面向职业赛事转播方的功能保持一致。通过将这些功能引入游戏内，我们旨在为玩家在观看职业赛事直播与参与同好友的游戏内对局之间，提供无缝的观战体验。"
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "用户界面更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "消灭提示",
+     "body": "- 当D.Va的防御矩阵成功吸收投射物（例如查莉娅的重力喷涌和半藏的竜）时，消灭提示现在会予以显示\n- 消灭非玩家可破坏物（例如D.Va的机甲、狂鼠的炸弹轮胎、托比昂的炮台和奥丽莎的超充能器）的消灭提示文字和图标现在会以缩小50%的尺寸显示\n- 为快速近身攻击消灭新增了消灭提示图标\n- 玩家摧毁秩序之光的传送面板时，消灭提示不再显示",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "ashe",
+     "name_en": "Ashe",
+     "name_cn": "艾什",
+     "role": "damage",
+     "icon": null,
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "修复了在高帧率下游玩时，艾什的开镜视角会卡顿的问题",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "brigitte",
+     "name_en": "Brigitte",
+     "name_cn": "布丽吉塔",
+     "role": "support",
+     "icon": null,
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "修复了布丽吉塔放下屏障护盾后退出第三人称视角时会转向的问题",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "reinhardt",
+     "name_en": "Reinhardt",
+     "name_cn": "莱因哈特",
+     "role": "tank",
+     "icon": null,
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "修复了莱因哈特在从眩晕中恢复时使用裂地猛击，其他玩家无法看到该技能的问题",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "修复了莱因哈特放下屏障力场后退出第三人称视角时会转向的问题",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "torbjorn",
+     "name_en": "Torbjörn",
+     "name_cn": "托比昂",
+     "role": "damage",
+     "icon": null,
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "修复了托比昂的炮台落在物体边缘时会以极端角度建造的问题",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "winston",
+     "name_en": "Winston",
+     "name_cn": "温斯顿",
+     "role": "tank",
+     "icon": null,
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "修复了温斯顿在喷射背包最大距离处落地时无法造成伤害的问题",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [
+    {
+     "title": "英雄",
+     "body": null,
+     "dev": null
+    },
+    {
+     "title": "街机先锋",
+     "body": "- 修复了玩家购买金色武器后，竞技点数扣除未在视觉上更新的问题",
+     "dev": null
+    },
+    {
+     "title": "地图",
+     "body": null,
+     "dev": null
+    },
+    {
+     "title": "暴雪世界",
+     "body": "- 修复了玩家可以站在进攻方初始出生点上方烟囱上的问题",
+     "dev": null
+    },
+    {
+     "title": "釜山",
+     "body": "- 修复了在遭遇战中，MEKA基地的防爆门无法移动的问题",
+     "dev": null
+    },
+    {
+     "title": "好莱坞",
+     "body": "- 修复了第一个目标点上方的栏杆被摧毁后仍会阻挡投射物的问题",
+     "dev": null
+    },
+    {
+     "title": "国王大道",
+     "body": "- 修复了玩家可以站在第一个目标点后方莫里亚蒂精品书店招牌上的问题",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2019-01-08-2",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:51:00+00:00",
+  "status": "draft",
+  "source_hash": "sha256:cdd47b3e017221b38c54646cf7f1c0d55de6a2c570e343b37657aaa50ba345ac",
+  "kept_english": []
+ }
+}

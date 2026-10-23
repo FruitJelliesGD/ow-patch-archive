@@ -1,0 +1,265 @@
+{
+ "id": "ai-2023-01-24-1",
+ "site": "ai",
+ "date": "2023-01-24",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/01",
+ "title": "《守望先锋》补丁说明——2023年1月24日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": "英雄更新",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "重装",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "orisa",
+     "name_en": "Orisa",
+     "name_cn": "奥丽莎",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/20c12a10cfe0b5608f9eec63a74ecb0ccd18a114019bc77bb2765f87776e17ed.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Fortify",
+       "name_cn": "强固防御",
+       "slug": "fortify",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d697fa90726cf683222920822d2ee00a85e0420c6cbc6ec2365573f313d06357.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "生命值加成从 125 降低至 75",
+         "before": 125.0,
+         "after": 75.0,
+         "by": -50.0,
+         "by_pct": null,
+         "metric": "health",
+         "raw_metric": "health bonus",
+         "unit": "hp"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "roadhog",
+     "name_en": "Roadhog",
+     "name_cn": "路霸",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b6f4e837dc41e87d730f6b0fad3473e689c8bdcd1f732b97326ac08b0508f2ee.png",
+     "dev_note": "> 开发者评论：这些改动旨在减少被路霸的链钩钩中并拉近后立即被一击击杀所带来的挫败感。链钩仍然是强制改变敌方英雄位置的强力手段，因此仍常常能带来击杀。其效果现在将更多取决于具体的英雄对位以及被钩目标能够如何应对。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Chain Hook",
+       "name_cn": "链钩",
+       "slug": "chain-hook",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/139deabeb3d62c451b558367bf5e64641583355d99ed90fe42107a5716fdca3b.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "命中伤害从 30 降低至 5",
+         "before": 30.0,
+         "after": 5.0,
+         "by": -25.0,
+         "by_pct": null,
+         "metric": "impact damage",
+         "raw_metric": "impact damage",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "被拉近后敌人最终位置与路霸的距离从 3 米提高至 4 米",
+         "before": 3.0,
+         "after": 4.0,
+         "by": 1.0,
+         "by_pct": null,
+         "metric": "the enemy final position distance from roadhog after being pulled",
+         "raw_metric": "the enemy final position distance from roadhog after being pulled",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Scrap Gun",
+       "name_cn": "爆裂枪",
+       "slug": "scrap-gun",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/50b6e388a6693ce31b5a1889e53037970a1b884b8265834f33dd6f7a3dedce44.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "每颗弹丸伤害从 6.6 降低至 6",
+         "before": 6.6,
+         "after": 6.0,
+         "by": -0.6,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "damage per pellet",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "恢复时间从 0.85 秒降低至 0.8 秒",
+         "before": 0.85,
+         "after": 0.8,
+         "by": -0.05,
+         "by_pct": null,
+         "metric": "recovery",
+         "raw_metric": "recovery time",
+         "unit": "s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "装填时间从 2 秒降低至 1.75 秒",
+         "before": 2.0,
+         "after": 1.75,
+         "by": -0.25,
+         "by_pct": null,
+         "metric": "reload time",
+         "raw_metric": "reload time",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "最大弹药量从 5 提高至 6",
+         "before": 5.0,
+         "after": 6.0,
+         "by": 1.0,
+         "by_pct": null,
+         "metric": "maximum ammo",
+         "raw_metric": "maximum ammo",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "输出",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "sojourn",
+     "name_en": "Sojourn",
+     "name_cn": "索杰恩",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/515f25a729a4a3f51d956fc54c600dc60d8e5242f2b188c178496cea1a2e11b5.png",
+     "dev_note": "> 开发者评论：能量获取的调整将有助于平滑索杰恩电磁炮的平均充能时间，因为它从暴击伤害或伤害增益能力中获得的收益将减少。命中护甲目标或其他伤害减免来源时，能量获取将比之前更快。此前，伤害增益和暴击伤害对索杰恩有放大效果，因为这会缩短积攒能量的时间，并降低电磁炮次要攻击变得致命的阈值。主要攻击伤害的降低也将进一步放缓这一过程。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Railgun",
+       "name_cn": "电磁炮",
+       "slug": "railgun",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3d7f261e05e3abda155cede4409ec8348490e286805c123d54d7f81fdd50d077.png",
+       "changes": []
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "支援",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "kiriko",
+     "name_en": "Kiriko",
+     "name_cn": "雾子",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/24d1d7bf86c331b3d81b934442ed36fd0121f6815255c6f26f456127fb342d15.png",
+     "dev_note": "> 开发者评论：尽管雾子的治疗弹道移动缓慢且为单体目标，但她的场均治疗输出高于我们的预期。我们发现玩家往往过度专注于最大化她的治疗潜力，并长时间只使用主要攻击。与其降低每发弹道的治疗量（这可能导致玩家更觉得被束缚在主要攻击上），我们选择提高她开始发射符之前的恢复时间。提高恢复时间可以为更自由地穿插使用次要攻击锥创造机会。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Healing Ofuda",
+       "name_cn": "符",
+       "slug": "healing-ofuda",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6b8830bd7173de38016ef129e117ac6f418026a6ec4501ab5cb7cdd99bd6f5b8.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "恢复时间从 0.85 秒提高至 1 秒",
+         "before": 0.85,
+         "after": 1.0,
+         "by": 0.15,
+         "by_pct": null,
+         "metric": "recovery",
+         "raw_metric": "recovery time",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 修复了「翼凉鞋」武器挂饰的「如何解锁」文本问题\n- 调整了脚步声的音频混音，使敌方脚步声更易听见。",
+     "dev": null
+    },
+    {
+     "title": "英雄",
+     "body": "**卢西奥**\n\n- 修复了卢西奥的赫尔墨斯皮肤物理效果不正确的问题\n\n**莱因哈特**\n\n- 修复了莱因哈特的锤子在「甜心莱因」姿势中显示变形的问题\n\n**索杰恩**\n\n- 修复了索杰恩的赛博侦探皮肤无法加载的问题\n\n**破坏球**\n\n- 修复了感应护盾可能在冷却时间结束前被错误施加的问题",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2023-01-24-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:53:48+00:00",
+  "status": "draft",
+  "source_hash": "sha256:b64a13e7ee31b56f58813d82dd07832dee7bdf0159cd15000b5f6bcfe2bb3426",
+  "kept_english": []
+ }
+}

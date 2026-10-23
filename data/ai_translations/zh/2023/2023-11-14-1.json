@@ -1,0 +1,354 @@
+{
+ "id": "ai-2023-11-14-1",
+ "site": "ai",
+ "date": "2023-11-14",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2023/11",
+ "title": "《守望先锋》补丁说明——2023年11月14日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": "英雄更新",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "重装",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "roadhog",
+     "name_en": "Roadhog",
+     "name_cn": "路霸",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b6f4e837dc41e87d730f6b0fad3473e689c8bdcd1f732b97326ac08b0508f2ee.png",
+     "dev_note": "开发者评论：路霸重做的总体目标是提升他作为重装英雄在前线的作用，并减少敌方玩家过去因他钩子连招始终致命而产生的挫败感。路霸此前的爆裂枪主要和次要攻击已被重做为一次主要攻击射击，它在近距离仍然最有效，但现在也能在更远处造成更可靠的伤害。他的呼吸器已改为基于资源的技能，并移至次要攻击，操作更便捷。它可以更频繁地使用，但需要随时间恢复资源，这提升了它作为承伤手段的灵活性，也让它不再那么容易被反制。他现在拥有一个名为猪圈的新技能，这是一个可部署的陷阱，在敌人靠近时激活，对其造成伤害并减速。这让路霸能够控制更大的区域，并且稍加预判即可用于保护盟友或进一步增强钩子连招的效果。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Scrap Gun",
+       "name_cn": "爆裂枪",
+       "slug": "scrap-gun",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/50b6e388a6693ce31b5a1889e53037970a1b884b8265834f33dd6f7a3dedce44.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "移除了原有的次要攻击功能。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "每发总伤害从 150 提高至 160。",
+         "before": 150.0,
+         "after": 160.0,
+         "by": 10.0,
+         "by_pct": null,
+         "metric": "total damage per shot",
+         "raw_metric": "total damage per shot",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "霰弹弹丸数量从 25 降低至 16。",
+         "before": 25.0,
+         "after": 16.0,
+         "by": -9.0,
+         "by_pct": null,
+         "metric": "shotgun pellet count",
+         "raw_metric": "shotgun pellet count",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "霰弹弹丸伤害从 6 提高至 6.25。",
+         "before": 6.0,
+         "after": 6.25,
+         "by": 0.25,
+         "by_pct": null,
+         "metric": "shotgun pellet damage",
+         "raw_metric": "shotgun pellet damage",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "现在会在射击中心发射一轮由 4 个大型弹丸组成的破片弹幕。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "每个破片弹丸造成 15 点伤害。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "暴击伤害倍率从 2 倍降低至 1.5 倍。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": null,
+       "name_cn": null,
+       "slug": "",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9cb8d867671bf917a9ba5d4a28ab6cb6ceeb10de2813567fcad97aca32c58499.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在通过按住次要攻击激活。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "每次使用的冷却时间从 8 秒降低至 1 秒。",
+         "before": 8.0,
+         "after": 1.0,
+         "by": -7.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown for each use",
+         "unit": "s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "新增了一个资源条。该资源条会在呼吸器",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "激活期间消耗，并在未使用时恢复。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "呼吸器从空到充满需要 12 秒。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "在满充能状态下，呼吸器可在 3 秒内治疗最多 450 点生命值。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "只要按住其绑定的快捷键，呼吸器现在就会保持激活。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "在「选项 > 控制 > 路霸」下新增了「切换呼吸器」选项。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "伤害减免从 50% 降低至 30%。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "结束时不再提高受到的治疗。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Pig Pen",
+       "name_cn": "猪圈",
+       "slug": "pig-pen",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0150c28fe47ff4a7c16138266bf2b4903bd45e4b7770ab40572bb792b647838c.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "这是一个新技能，默认绑定至技能 2。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "发射一个陷阱，减速并伤害附近的敌人。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "触发时造成 60 点伤害，并在区域内每秒造成 30 点伤害。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "激活后持续 3 秒。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "移动速度降低 40%。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "冷却时间为 12 秒。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 已在之前的更新中修复 - 解决了商店中出现的加载问题。\n- 已在之前的更新中修复 - 修复了部分技能在比赛中为所有玩家触发 Rumbo 的问题。",
+     "dev": null
+    },
+    {
+     "title": "英雄",
+     "body": "**生命之梭**\n\n- 修复了生命之握会净化「乱」的错误。\n- 修复了玩家在花瓣平台完全升起前跳下后会免疫电磁脉冲的错误。\n\n**黑影**\n\n- 修复了黑影可能被冲锋中的莱因哈特压制、而非传送至投出的位移传动的交互问题。\n- 修复了黑客入侵设为切换模式时无法正常生效的错误。\n- 修复了脱离战斗后无法再次施放隐身的错误。\n- 此前更新中已修复——修复了黑影的终极技能消耗缺少 10% 降低的问题。\n- 此前更新中已修复——修复了部分情况下「乱」的冷却时间界面会显示在隐身状态的黑影身上的问题。\n\n**查莉娅**\n\n- 修复了查莉娅的投射屏障可能无法部署的问题。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2023-11-14-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T15:01:59+00:00",
+  "status": "draft",
+  "source_hash": "sha256:941fd2b067c67445da9fa50d16e1f81de5b45923a845c715662a1f73c62b0b6d",
+  "kept_english": []
+ }
+}

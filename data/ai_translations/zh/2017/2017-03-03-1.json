@@ -1,0 +1,158 @@
+{
+ "id": "ai-2017-03-03-1",
+ "site": "ai",
+ "date": "2017-03-03",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2017/03",
+ "title": "《守望先锋》补丁说明——2017年3月3日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "",
+   "role": null,
+   "description": "请注意，这些改动将在稍后整合进 PlayStation 4 和 Xbox One 的更大补丁中。",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "bastion",
+     "name_en": "Bastion",
+     "name_cn": "堡垒",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "在上个补丁中引入新的铁壁被动技能后，堡垒变得有些难以应对。此次降低数值能让他在变形状态下保持生存能力，但不应再让敌人感到如此难以招架。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Ironclad",
+       "name_cn": "铁壁",
+       "slug": "ironclad",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "堡垒在哨卫模式或坦克模式下受到的伤害降低 20%（原为 35%）",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "zarya",
+     "name_en": "Zarya",
+     "name_cn": "查莉娅",
+     "role": "tank",
+     "icon": null,
+     "dev_note": "此改动实际上是回退了上个补丁中一次尝试性的错误修复。现在，查莉娅的屏障不再保护被击退效果命中且该效果穿透护盾的玩家。此改动不影响在屏障外发生的击退技能。例如，如果查莉娅给自己施加了屏障并被法老之鹰的震荡冲击命中，她不会受到影响，因为屏障阻挡了该效果。然而，如果温斯顿使用终极技能并开始挥击查莉娅，即使防护屏障处于激活状态，她现在也会被击退，因为近战攻击会穿透屏障。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Particle Barrier",
+       "name_cn": "粒子屏障",
+       "slug": "particle-barrier",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "不再保护查莉娅免受击退",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Projected Barrier",
+       "name_cn": "投射屏障",
+       "slug": "projected-barrier",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "不再保护盟友免受击退",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [
+    {
+     "title": "通用",
+     "body": "- 英雄在获得增益效果时（例如来自安娜的纳米激素和奥丽莎的强固防御）可获得的伤害减免总量上限为 50%（原为 70%）",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "通用",
+     "body": "- 修复了导致 1v1 神秘决斗中的英雄无法正确随机分配的问题",
+     "dev": null
+    },
+    {
+     "title": "竞技比赛",
+     "body": "- 修复了导致玩家无法加载第 1 和第 2 赛季排行榜的问题",
+     "dev": null
+    },
+    {
+     "title": "英雄",
+     "body": "- 修复了导致 D.Va 的防御矩阵无法正确阻挡已穿过另一名敌方英雄的敌方火力的问题\n- 修复了导致温斯顿蹲下时命中判定体积与其姿势不对齐的问题",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2017-03-03-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:44:12+00:00",
+  "status": "draft",
+  "source_hash": "sha256:396f5521c80971514116dd53c146760c794bd094aec475794a40425efa35c155",
+  "kept_english": []
+ }
+}

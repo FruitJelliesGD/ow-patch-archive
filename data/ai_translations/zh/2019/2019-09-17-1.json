@@ -1,0 +1,320 @@
+{
+ "id": "ai-2019-09-17-1",
+ "site": "ai",
+ "date": "2019-09-17",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2019/09",
+ "title": "《守望先锋》补丁说明——2019年9月17日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "补丁亮点",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "堡垒的砖块挑战",
+     "body": "准备好参与堡垒的砖块挑战，解锁一些特殊的游戏内内容！在快速比赛、竞技比赛或街机先锋中获胜，即可获得主题喷漆、玩家图标以及全新传奇皮肤：砖块堡垒！\n\n在 9/30 之前，随时收看正在游玩《守望先锋》的参与 Twitch 主播，即可总共获得七个堡垒的砖块挑战喷漆和图标！\n\n如需了解更多关于堡垒的砖块挑战的信息，请点击此处。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "bastion",
+     "name_en": "Bastion",
+     "name_cn": "堡垒",
+     "role": "damage",
+     "icon": null,
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Self-Repair",
+       "name_cn": "自我修复",
+       "slug": "self-repair",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "当堡垒处于满生命值时，自我修复不再消耗资源",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "堡垒现在通过开火取消自我修复时，会正确触发 0.25 秒的恢复时间",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "symmetra",
+     "name_en": "Symmetra",
+     "name_cn": "秩序之光",
+     "role": "damage",
+     "icon": null,
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Primary Fire",
+       "name_cn": "主要攻击",
+       "slug": "primary-fire",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "光束宽度从 0.3 米降低至 0.2 米",
+         "before": 0.3,
+         "after": 0.2,
+         "by": -0.1,
+         "by_pct": null,
+         "metric": "beam width",
+         "raw_metric": "beam width",
+         "unit": "m"
+        },
+        {
+         "text_en": null,
+         "text_cn": "每级光束每秒伤害从 65/130/195 降低至 60/120/180",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "zarya",
+     "name_en": "Zarya",
+     "name_cn": "查莉娅",
+     "role": "tank",
+     "icon": null,
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Primary Fire",
+       "name_cn": "主要攻击",
+       "slug": "primary-fire",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "光束宽度现在为 0.15 米，且不再随能量缩放",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "最大光束每秒伤害从 190 降低至 170",
+         "before": 190.0,
+         "after": 170.0,
+         "by": -20.0,
+         "by_pct": null,
+         "metric": "max beam dps",
+         "raw_metric": "max beam dps",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "sigma",
+     "name_en": "Sigma",
+     "name_cn": "西格玛",
+     "role": "tank",
+     "icon": null,
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Hyper Spheres",
+       "name_cn": "超能之球",
+       "slug": "hyper-spheres",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "爆炸伤害从 35 降低至 30",
+         "before": 35.0,
+         "after": 30.0,
+         "by": -5.0,
+         "by_pct": null,
+         "metric": "explosion damaged",
+         "raw_metric": "explosion damaged",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Experimental Barrier",
+       "name_cn": "实验屏障",
+       "slug": "experimental-barrier",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "为西格玛的实验屏障添加了切换选项",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "被黑影入侵时，如果他的屏障已部署，现在会将其收回。（如果两者都在范围内，电磁脉冲仍会先摧毁屏障）",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Accretion",
+       "name_cn": "质量吸附",
+       "slug": "accretion",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "爆炸伤害从 50 提高至 60",
+         "before": 50.0,
+         "after": 60.0,
+         "by": 10.0,
+         "by_pct": null,
+         "metric": "explosion damage",
+         "raw_metric": "explosion damage",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Gravitic Flux",
+       "name_cn": "引力乱流",
+       "slug": "gravitic-flux",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "前摇施放时间从 0.4 秒提高至 0.6 秒",
+         "before": 0.4,
+         "after": 0.6,
+         "by": 0.2,
+         "by_pct": null,
+         "metric": "intro cast time",
+         "raw_metric": "intro cast time",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 地面目标技能（死神的暗影步、美的冰墙、秩序之光的传送面板等）现在会更倾向于选择边缘位置，而不是尽可能放置到最远处。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "工坊更新",
+   "role": null,
+   "description": "新增工坊动作：\n\n- 创建假人机器人\n\n\n  - 创建一个假人机器人，它是一个完整的玩家，但没有人类或 AI 控制。使用其他工坊动作，假人机器人可以移动、瞄准、按下按钮，并完成人类玩家能做的绝大部分事情。\n- 销毁假人机器人\n\n\n  - 销毁一个假人机器人。\n- 开始定向推进\n\n\n  - 设置或修改指定玩家（人类、AI 机器人或假人机器人）的推进（方向移动输入）。\n- 停止定向推进\n\n\n  - 停止由「开始定向推进」造成的推进更改。\n- 创建光束效果\n\n\n  - 在两个位置之间创建光束效果（其中一个或两个都可以是玩家）。\n\n现有工坊动作的新参数：\n\n- 创建 HUD 文本\n\n\n  - 新增 SpectatorVisibility 选项，用于定义观战者何时可以看到文本。\n  - 文本颜色新增了更多颜色。\n- 创建世界内文本\n\n\n  - 新增 SpectatorVisibility 选项，用于定义观战者何时可以看到文本。\n  - 文本颜色新增了更多颜色。\n- 创建效果和播放效果\n\n\n  - 新增了更多颜色。\n\n新增工坊值：\n\n- 是否为假人机器人\n\n\n  - 指定玩家是否为假人机器人。\n\n新增工坊检查器功能：\n\n- 将当前变量复制为 CSV [仅限 PC]：\n\n\n  - 将当前可见的变量以 CSV 格式复制到系统剪贴板。这些内容可以粘贴到文本和电子表格应用程序中。\n- 将所有变量复制为 CSV [仅限 PC]：\n\n\n  - 将当前所选实体的检查器历史记录中的所有变量以 CSV 格式复制到系统剪贴板。这些内容可以粘贴到文本和电子表格应用程序中。\n- 将当前变量复制为动作：\n\n\n  - 将当前可见的变量以工坊文本格式复制到剪贴板。这些内容可以粘贴回工坊动作列表。",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 工坊 - 修复了使用「恢复默认值」时，「启用工坊检查器」选项不会重置的错误\n- 工坊 - 「是否正在使用主要攻击」工坊值现在会正确报告西格玛是否正在使用他的超能之球\n- 修复了通过环境击杀消灭 D.Va 的机甲时，不总是给予足额终极技能充能的问题\n- 修复了目标沿斜坡向下移动时，击退效果有时会比预期更短的问题\n- 玩家在使用「保持队伍」功能时，不应再卡在邀请玩家的状态\n- 在磁盘空间不足时尝试保存精彩镜头，现在会显示相应的错误信息\n- 修复了在某些工坊场景中切换英雄时，第一人称视角会错误偏移的问题\n- 竞技街机赛季评分现在会在生涯概况中显示竞技等级\n- 第 1 赛季竞技结算评分现在会正确显示在排行榜中",
+     "dev": null
+    },
+    {
+     "title": "地图",
+     "body": "巴黎\n\n- 修复了莫伊拉的生化之球可以穿过进攻方出生点大门的错误",
+     "dev": null
+    },
+    {
+     "title": "英雄",
+     "body": "艾什\n\n- 改进了召唤鲍勃穿过门口的能力，使其更稳定地抵达发射目标位置\n\n堡垒\n\n- 修复了堡垒在使用自我修复后立即开火时未进入恢复状态的问题\n\n布丽吉塔\n\n- 修复了布丽吉塔的恢复包冷却时间缩放系数在自定游戏中不生效的问题\n\nD.Va\n\n- 修复了 D.Va 的机甲在摧毁动画期间能短暂阻挡裂地猛击的问题\n\n半藏\n\n- 修复了装备特定皮肤时，半藏切换至音会令弓闪烁的问题\n\n卢西奥\n\n- 修复了击退效果作用于沿斜坡向下移动的敌人时，击退距离不足的问题。\n\n天使\n\n- 修复了天使有时会误判能够对已阵亡于墙后的队友使用守护天使的问题。\n\n奥丽莎\n\n- 修复了玩家脱离奥丽莎的吸引效果时被抛出距离超出预期的问题\n\n西格玛\n\n- 修复了在冰冻状态结束后立即使用动能俘获、质量吸附、实验屏障收回/展开及主要攻击时，第一人称动画无法正常播放的问题\n- 修复了引力乱流施法计时结束后，超能之球出现时缺少视觉特效或动画的问题\n- 修复了西格玛使用动能俘获吸收莫伊拉的治疗球后错误获得护盾的问题\n- 修正了西格玛多项队伍颜色视觉效果\n- 修复了西格玛每 10 分钟平均阻挡伤害未显示在生涯概况中的问题\n\n黑影\n\n- 修复了黑影侦测半径受玩家瞄准俯仰角影响的问题\n\n破坏球\n\n- 修复了破坏球专属数据未显示在生涯概况中的问题\n- 修复了感应护盾范围受瞄准俯仰角影响的问题\n\n禅雅塔\n\n- 修复了禅雅塔在圣激活期间无法使用传送面板的问题",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2019-09-17-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:53:05+00:00",
+  "status": "draft",
+  "source_hash": "sha256:401c145bcb93ce8b56ce6e0101042f935a193c6ab5ccc44d331abca0ae6c1a7e",
+  "kept_english": []
+ }
+}

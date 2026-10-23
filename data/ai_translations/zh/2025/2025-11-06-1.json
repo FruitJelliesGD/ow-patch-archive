@@ -1,0 +1,1909 @@
+{
+ "id": "ai-2025-11-06-1",
+ "site": "ai",
+ "date": "2025-11-06",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2025/11",
+ "title": "《守望先锋》补丁说明——2025年11月6日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "故事",
+   "role": null,
+   "description": "现已可在游戏内直接观看精选的剧情视频合集。新增剧情内容时记得回来查看！",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "灵魂对决",
+   "role": null,
+   "description": "11月11日至24日，在街机先锋中由灵魂决定你的命运！消灭敌人或阵亡两次后即可更换英雄。\n\n完成挑战即可获得专属的免费灵魂主题奖励！",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "狂鼠的补给狩猎",
+   "role": null,
+   "description": "狂鼠的补给狩猎再度回归，活动时间为11月20日至23日！完成随游戏进程解锁的挑战即可获得补给！",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "综合更新",
+   "role": null,
+   "description": "玩家升级进度\n\n- 已停用的徽章与子徽章现可在游戏内再次查看。生涯概况 → 升级进度 → 传承。\n- 《守望先锋》1的玩家等级也已移至传承界面。\n\n玩家卡\n\n- 在预设职责模式中，玩家卡不再显示全阵容中等级最高的英雄，而是显示你当前所玩职责中等级最高的英雄。\n- 非预设职责模式仍会显示全阵容中等级最高的英雄。\n\n高级信息面板\n\n- 为可提前结束以获得额外位移的技能添加了「跳跃取消」关键词。",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "重装",
+   "role": "tank",
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "d-va",
+     "name_en": "D.Va",
+     "name_cn": "D.Va",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e69a3d819fd46d0dcd1d9474c248a95e69519c20077c60e9de73a1e2d3acdbb6.png",
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "推进器——主要威能",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "推进器现在造成100%额外伤害。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "hazard",
+     "name_en": "Hazard",
+     "name_cn": "骇灾",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/22fc6ca76249d7cd37bad808d53a68986da855c625475a46ec3858abecf57823.png",
+     "dev_note": "骇灾的铁臂现在对抗爆发伤害时不再那么可靠，因此本次改动提升了他的机动性，让他能更有效地调整站位并切入战斗。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "尖刺护体",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "不再阻止暴击伤害。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "狂跃",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "冷却时间从6秒降低至5.5秒。",
+       "subject": null,
+       "dimension": "other",
+       "before": 6.0,
+       "after": 5.5,
+       "by": -0.5,
+       "by_pct": null,
+       "metric": "cooldown",
+       "unit": "s"
+      }
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Spike Guard",
+       "name_cn": "尖刺护体",
+       "slug": "spike-guard",
+       "icon": null,
+       "changes": []
+      },
+      {
+       "name_en": "Violent Leap",
+       "name_cn": "狂跃",
+       "slug": "violent-leap",
+       "icon": null,
+       "changes": []
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "orisa",
+     "name_en": "Orisa",
+     "name_cn": "奥丽莎",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/20c12a10cfe0b5608f9eec63a74ecb0ccd18a114019bc77bb2765f87776e17ed.png",
+     "dev_note": "配合骇灾的更新，这些调整针对了此前被这些防御技能所抵消的特定交互，例如毛加的点燃暴击伤害和莱因哈特的裂地猛击。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "强固防御和撼地猛刺现在仅阻止爆头暴击伤害，不再阻止强制暴击",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "ramattra",
+     "name_en": "Ramattra",
+     "name_cn": "拉玛刹",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/cf69d4bfa61ac14f61d3d541b0d2687a20fa24f55afe7a392d746f5ccb138dea.png",
+     "dev_note": "此前的改动让拉玛刹的整体玩法更加健康，但在某些对局中他会显得过于脆弱。提高基础生命值可提升他在两种形态下的生存能力。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "-基础生命值从250提高至275",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 250.0,
+       "after": 275.0,
+       "by": 25.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "无情君威——主要威能",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "在诛期间不再只有一半效果",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "wrecking-ball",
+     "name_en": "Wrecking Ball",
+     "name_cn": "破坏球",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f71d6948e8b6ae340e20ab569ef66d24aead6032c34a7ec09a00ea864b413a24.png",
+     "dev_note": "破坏球凭借高生命值和机动性，往往极难被惩罚，尤其是在缺乏强力控制的情况下。降低基础护甲会降低整体生存能力，同时奖励有效使用感应护盾。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "基础护甲从175降低至125",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 175.0,
+       "after": 125.0,
+       "by": -50.0,
+       "by_pct": null,
+       "metric": "base armor",
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "zarya",
+     "name_en": "Zarya",
+     "name_cn": "查莉娅",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d43075cba10cd711a129556142849587e78f1f55b0105d39a640da53ffa64e1b.png",
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "能量转换——主要威能",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "获得的能量从3降低至2",
+       "subject": null,
+       "dimension": "other",
+       "before": 3.0,
+       "after": 2.0,
+       "by": -1.0,
+       "by_pct": null,
+       "metric": "energy gained",
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "输出",
+   "role": "damage",
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "ashe",
+     "name_en": "Ashe",
+     "name_cn": "艾什",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e41d918d0e7ffa772b5571df3d0dc1a05e6d9032307f78be935972cfd59f208a.png",
+     "dev_note": "提高艾什的衰减距离，可让她在预期的中远距离上表现更加稳定。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "毒蛇",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "辅助攻击的衰减距离从30–50米调整为40–60米",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "cassidy",
+     "name_en": "Cassidy",
+     "name_cn": "卡西迪",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8d161c49df5a962ece9ceafc6500bea473d9dd3695b9e24e39d5be616295e6c5.png",
+     "dev_note": "闪光弹的短暂阻碍持续时间可能让人难以把握时机。此次小幅延长为卡西迪玩家在命中闪光弹后提供了更可靠的跟进窗口。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "闪光弹",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "阻碍持续时间从0.9秒提高至1.2秒",
+       "subject": null,
+       "dimension": "other",
+       "before": 0.9,
+       "after": 1.2,
+       "by": 0.3,
+       "by_pct": null,
+       "metric": "hinder duration",
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "echo",
+     "name_en": "Echo",
+     "name_cn": "回声",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/0dc3f1679d739ef530ba2b8cbe02bf09f4d40a57c0af84f694a3241d3a7ef948.png",
+     "dev_note": "回声在有效射程内往往难以安全站位。提高她在飞行期间的空中加速度，可让她在切入或脱离时拥有更强的控制力。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "飞行",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "飞行激活期间改变方向时，空中移动加速度提高100%。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 100.0,
+       "metric": "movement acceleration in air",
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "genji",
+     "name_en": "Genji",
+     "name_cn": "源氏",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/190a3dd9a5a4c8daeff9ec4da861f43cb28116964e89dc7416da104d8fae9134.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Shuriken",
+       "name_cn": "气",
+       "slug": "shuriken",
+       "icon": null,
+       "changes": []
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "mei",
+     "name_en": "Mei",
+     "name_cn": "美",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/08586dceed41e030d575b2b643118f55390f1c2af91dd15394528f5399fcc934.png",
+     "dev_note": "此次伤害提升确保美在近距离对决中，主要攻击仍是稳定可靠的选择。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "主要攻击",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "每秒伤害从100提高至110",
+       "subject": null,
+       "dimension": "other",
+       "before": 100.0,
+       "after": 110.0,
+       "by": 10.0,
+       "by_pct": null,
+       "metric": "damage",
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "sojourn",
+     "name_en": "Sojourn",
+     "name_cn": "索杰恩",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/515f25a729a4a3f51d956fc54c600dc60d8e5242f2b188c178496cea1a2e11b5.png",
+     "dev_note": "这些调整让干扰弹更容易命中、更加可靠，同时不增加其飞行距离。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "干扰弹",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "每秒伤害从80提高至90",
+       "subject": null,
+       "dimension": "other",
+       "before": 80.0,
+       "after": 90.0,
+       "by": 10.0,
+       "by_pct": null,
+       "metric": "damage",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "弹道速度从30提高至40",
+       "subject": null,
+       "dimension": "other",
+       "before": 30.0,
+       "after": 40.0,
+       "by": 10.0,
+       "by_pct": null,
+       "metric": "projectile_speed",
+       "unit": "m/s"
+      },
+      {
+       "text_en": null,
+       "text_cn": "最大飞行持续时间从1秒降低至0.75秒",
+       "subject": null,
+       "dimension": "other",
+       "before": 1.0,
+       "after": 0.75,
+       "by": -0.25,
+       "by_pct": null,
+       "metric": "maximum travel duration",
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "sombra",
+     "name_en": "Sombra",
+     "name_cn": "黑影",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f348c1704dc50c009ac8acf6912a5a77eaf2a3acdd34e56927190af9eb9145d1.png",
+     "dev_note": "急救黑客因其较短的生效窗口，一直难以提供稳定的价值。这些调整延长了它的效果，并提供了更多受益于该威能的机会，即使战斗发生在远离急救包的地方。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "隐秘上传——主要威能",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "成功黑客入侵后的隐秘潜行持续时间从2秒提高至3秒",
+       "subject": null,
+       "dimension": "other",
+       "before": 2.0,
+       "after": 3.0,
+       "by": 1.0,
+       "by_pct": null,
+       "metric": "stealth duration on successful hack",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "急救黑客——主要威能",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "过量生命值开始衰减前的时间从6秒提高至10秒",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 6.0,
+       "after": 10.0,
+       "by": 4.0,
+       "by_pct": null,
+       "metric": "time before overhealth degeneration",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "过量生命值衰减量从10提高至25",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 10.0,
+       "after": 25.0,
+       "by": 15.0,
+       "by_pct": null,
+       "metric": "overhealth",
+       "unit": "hp"
+      },
+      {
+       "text_en": null,
+       "text_cn": "提供的过量生命值从50提高至75",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 50.0,
+       "after": 75.0,
+       "by": 25.0,
+       "by_pct": null,
+       "metric": "overhealth",
+       "unit": "hp"
+      },
+      {
+       "text_en": null,
+       "text_cn": "现在可在过量生命值满时拾取急救包，以重置衰减计时",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "tracer",
+     "name_en": "Tracer",
+     "name_cn": "猎空",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5ee20a1feed14da5153f19745328e9fc02bd79f8109593a9b7dab9283eb9629b.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Pulse Pistols",
+       "name_cn": "脉冲双枪",
+       "slug": "pulse-pistols",
+       "icon": null,
+       "changes": []
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "支援",
+   "role": "support",
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "brigitte",
+     "name_en": "Brigitte",
+     "name_cn": "布丽吉塔",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/51b93ea59f369a1defa78e5d08c12b1391f5d2d94614a51fd95c125a7a6151fa.png",
+     "dev_note": "与其他支援相比，布丽吉塔的治疗输出有时会显得有限。降低恢复包的冷却时间可在各种情况下提供更稳定的治疗。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "恢复包",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "冷却时间从5.5秒降低至5秒",
+       "subject": null,
+       "dimension": "other",
+       "before": 5.5,
+       "after": 5.0,
+       "by": -0.5,
+       "by_pct": null,
+       "metric": "cooldown",
+       "unit": "s"
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "juno",
+     "name_en": "Juno",
+     "name_cn": "朱诺",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2a65bf12035f9c255833693224cad83fd98cead625fdf1b9da8359a7f259e01c.png",
+     "dev_note": "此次部分回调朱诺此前的空中横移，使她的移动更加灵敏，同时不会让她在对抗中过于难以捉摸。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "滑翔推进",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "滑翔推进激活期间改变方向时，空中移动加速度提高50%。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 50.0,
+       "metric": "movement acceleration in air",
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "kiriko",
+     "name_en": "Kiriko",
+     "name_cn": "雾子",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/24d1d7bf86c331b3d81b934442ed36fd0121f6815255c6f26f456127fb342d15.png",
+     "dev_note": "雾子的终极技能凭借其大范围以及对队伍提供的价值，仍是游戏中最强大的终极技能之一。提高其消耗可让它的充能时间更符合其影响力。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "终极技能消耗提高8%",
+       "subject": "ultimate_cost",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 8.0,
+       "metric": "ultimate_cost",
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "lifeweaver",
+     "name_en": "Lifeweaver",
+     "name_cn": "生命之梭",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/57d5014ab6034db9138f838e8450693b4a97ab3c54f85d594b199a8853e75ccb.png",
+     "dev_note": "生命之梭较大的模型让他比大多数支援更容易被命中。凭借其较低的生命值，此次判定体积缩减可弥补生存能力的损失，而武器切换的改进则让他的操作更流畅、更灵敏。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "模型与判定体积缩小8%",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 8.0,
+       "metric": "model and hit volume size",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "愈疗灵花/棘刺箭雨",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "未激活武器的自动装填时间从2.5秒降低至2秒",
+       "subject": null,
+       "dimension": "other",
+       "before": 2.5,
+       "after": 2.0,
+       "by": -0.5,
+       "by_pct": null,
+       "metric": "automatic reload time for the inactive weapon",
+       "unit": "s"
+      },
+      {
+       "text_en": null,
+       "text_cn": "武器切换间隔从0.25秒降低至0.125秒",
+       "subject": null,
+       "dimension": "other",
+       "before": 0.25,
+       "after": 0.125,
+       "by": -0.125,
+       "by_pct": null,
+       "metric": "time between weapon swap",
+       "unit": "s"
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "6v6英雄改动",
+   "role": null,
+   "description": null,
+   "dev": "除非另有说明，对5v5所做的大部分改动都会反映在6v6中。本次补丁旨在保持两种模式之间的平衡一致，同时处理异常情况，尤其是重装英雄。目前在6v6中感觉最强或最弱的英雄已进行调整，以确保更平衡的体验。",
+   "heroes": [
+    {
+     "slug": "d-va",
+     "name_en": "D.Va",
+     "name_cn": "D.Va",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e69a3d819fd46d0dcd1d9474c248a95e69519c20077c60e9de73a1e2d3acdbb6.png",
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "生命值从350降低至300。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 350.0,
+       "after": 300.0,
+       "by": -50.0,
+       "by_pct": null,
+       "metric": "health",
+       "unit": "hp"
+      },
+      {
+       "text_en": null,
+       "text_cn": "防御矩阵",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "充能速率降低15%。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": 15.0,
+       "metric": "recharge rate",
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "doomfist",
+     "name_en": "Doomfist",
+     "name_cn": "末日铁拳",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/bc538b345188bdcb2d2be5b2894d471ba54aeea53b03862429205ed49d693bbe.png",
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "最佳防守……",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "每个目标获得的过量生命值从35降低至25点。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 35.0,
+       "after": 25.0,
+       "by": -10.0,
+       "by_pct": null,
+       "metric": "overhealth",
+       "unit": "hp"
+      },
+      {
+       "text_en": null,
+       "text_cn": "悍猛格挡",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "获得强化重拳所需的伤害量从100提高至120。",
+       "subject": null,
+       "dimension": "other",
+       "before": 100.0,
+       "after": 120.0,
+       "by": 20.0,
+       "by_pct": null,
+       "metric": "amount of damage to gain empowered punch",
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "junker-queen",
+     "name_en": "Junker Queen",
+     "name_cn": "渣客女王",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/cf66adfac58a0321ec1f7d3a7241d6bf2f3b311707064d2f0ace2e3f4e342727.png",
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "基础生命值从425提高至450。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 425.0,
+       "after": 450.0,
+       "by": 25.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "狂血奔涌",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "创伤伤害的自我治疗系数从1.5倍提高至1.75倍。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "mauga",
+     "name_en": "Mauga",
+     "name_cn": "毛加",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6dbd80a0b40bd0464db35948f98d91ecc6dfcede8c94ff9b1ecefda781a7aa1f.png",
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "心脏过载",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "冷却时间从17秒降低至15秒。",
+       "subject": null,
+       "dimension": "other",
+       "before": 17.0,
+       "after": 15.0,
+       "by": -2.0,
+       "by_pct": null,
+       "metric": "cooldown",
+       "unit": "s"
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "reinhardt",
+     "name_en": "Reinhardt",
+     "name_cn": "莱因哈特",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/b5e3a4f5629a3acfd47b5d2e695e79ea964b060bf67b7e4f8f15e63accd5f934.png",
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "屏障力场",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "护盾生命值从1500提高至1800。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 1500.0,
+       "after": 1800.0,
+       "by": 300.0,
+       "by_pct": null,
+       "metric": "shield",
+       "unit": "hp"
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "winston",
+     "name_en": "Winston",
+     "name_cn": "温斯顿",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6a9a37012551410b46b2c28146404354fe21e4a1e8ea65db4e1e497eeaa05c71.png",
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "喷射背包",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "冷却时间从6秒降低至5秒。",
+       "subject": null,
+       "dimension": "other",
+       "before": 6.0,
+       "after": 5.0,
+       "by": -1.0,
+       "by_pct": null,
+       "metric": "cooldown",
+       "unit": "s"
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "wrecking-ball",
+     "name_en": "Wrecking Ball",
+     "name_cn": "破坏球",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f71d6948e8b6ae340e20ab569ef66d24aead6032c34a7ec09a00ea864b413a24.png",
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "基础生命值从 500 降低至 475。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 500.0,
+       "after": 475.0,
+       "by": -25.0,
+       "by_pct": null,
+       "metric": "base health",
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "感应护盾",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "每个目标获得的过量生命值从 75 降低至 50。",
+       "subject": "health",
+       "dimension": "hero_attr",
+       "before": 75.0,
+       "after": 50.0,
+       "by": -25.0,
+       "by_pct": null,
+       "metric": "overhealth",
+       "unit": "hp"
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "zenyatta",
+     "name_en": "Zenyatta",
+     "name_cn": "禅雅塔",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9367143a32f3fc07781330a0b26c6f1087361204a2b7e4088d1daf26428273f2.png",
+     "dev_note": null,
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "乱",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "现在对每个目标都有冷却时间。",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "角斗领域更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "角斗领域通用改动",
+     "body": "- 选人阶段已更新为盲选系统。这意味着双方玩家同时进行选择，并一同揭晓所选英雄。\n- 选人模式现在会自动将重装英雄分配到第 5 个位置。\n- 玩家现在可以在装备异能的同一回合内卸下异能。\n- 异能将在军械库计时结束时锁定。\n- 角斗领域比赛中现在会显示你队伍的生命值条。\n- 军械库中的英雄属性板块已更新，会按你提升幅度最高的属性进行排序。\n- 已为军械库英雄属性板块中的每一行添加了详细的提示框。\n- 这些提示框中会显示受影响的技能和武器。\n- 与任意提示框交互即可查看完整详情界面。",
+     "dev": null
+    },
+    {
+     "title": "角斗领域战斗文本改动",
+     "body": "- 武器强度和技能强度现在会显示为两个独立的浮动数字。此功能可在设置中调整。\n- 已添加一项新设置，用于调整浮动文本的显示时长。\n- 已添加一项新设置，用于显示自我治疗。此设置默认关闭。\n- 我们现在会动态调整浮动文本的显示高度，以提升近战范围内英雄的可见度。\n- 击杀敌人或治疗友方目标时，现在会显示过量伤害和过量治疗数值。\n- 击杀镜头现在会显示角斗领域战斗文本。\n- 提升了角斗领域战斗文本在移动目标上的稳定性，使其不再那么分散注意力。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "角斗领域 - 重装",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "hazard",
+     "name_en": "Hazard",
+     "name_cn": "骇灾",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/22fc6ca76249d7cd37bad808d53a68986da855c625475a46ec3858abecf57823.png",
+     "dev_note": "骇灾以墙体为核心的异能表现有些过于强势，在强大的区域控制潜力之上还能打出高额爆发伤害。我们降低了「翻墙越壁」和「堡垒」的击退伤害，让该技能在对抗时更公平，同时保留其区域控制和冲击力。",
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
+      {
+       "name_en": "Off The Wall",
+       "name_cn": "翻墙越壁",
+       "rarity": null,
+       "kind": "power",
+       "status": "changed",
+       "lines_en": [
+        "Damage decreased to 60 (Down from 80)."
+       ],
+       "lines_cn": [
+        "伤害降低至 60（原为 80）。"
+       ],
+       "raw_text": [
+        "Off The Wall - Power"
+       ]
+      },
+      {
+       "name_en": "Fortress",
+       "name_cn": "堡垒",
+       "rarity": null,
+       "kind": "power",
+       "status": "changed",
+       "lines_en": [
+        "Damage decreased to 25 (Down from 40)."
+       ],
+       "lines_cn": [
+        "伤害降低至 25（原为 40）。"
+       ],
+       "raw_text": [
+        "Fortress - Power"
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "orisa",
+     "name_en": "Orisa",
+     "name_cn": "奥丽莎",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/20c12a10cfe0b5608f9eec63a74ecb0ccd18a114019bc77bb2765f87776e17ed.png",
+     "dev_note": "部分英雄道具在整体价值和灵活性上略显落后，因此我们对其进行了额外打磨。强化目标传感器和奥拉德莱直升机利刃现在能提供更有意义的进攻增益，艾菲定理获得了防御性效用，帮助在战斗中维持生存，而 HollaGram 头盔则降低了价格，让奥丽莎在队伍需要不可阻挡时能更轻松地支援团队。",
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
+      {
+       "name_en": "Enhanced Target Sensors",
+       "name_cn": "强化目标传感器",
+       "rarity": "Rare",
+       "kind": "weapon",
+       "status": "changed",
+       "lines_en": [
+        "Added: +10% Attack Speed",
+        "Added: +5% Weapon Power"
+       ],
+       "lines_cn": [
+        "新增：+10% 攻击速度",
+        "新增：+5% 武器强度"
+       ],
+       "raw_text": [
+        "Enhanced Target Sensors - Rare Weapon Hero Item"
+       ]
+      },
+      {
+       "name_en": "Oladele-copter Blades",
+       "name_cn": "奥拉德莱直升机利刃",
+       "rarity": "Epic",
+       "kind": "ability",
+       "status": "changed",
+       "lines_en": [
+        "Added: +15% Ability Power",
+        "Added: +15% Weapon Power"
+       ],
+       "lines_cn": [
+        "新增：+15% 技能强度",
+        "新增：+15% 武器强度"
+       ],
+       "raw_text": [
+        "Oladele-copter Blades- Epic Ability Hero Item"
+       ]
+      },
+      {
+       "name_en": "Efi's Theorem",
+       "name_cn": "艾菲定理",
+       "rarity": "Epic",
+       "kind": "ability",
+       "status": "changed",
+       "lines_en": [
+        "Added: +25 Armor"
+       ],
+       "lines_cn": [
+        "新增：+25 护甲"
+       ],
+       "raw_text": [
+        "Efi's Theorem - Epic Ability Hero Item"
+       ]
+      },
+      {
+       "name_en": "HollaGram Helmet",
+       "name_cn": "HollaGram 头盔",
+       "rarity": "Epic",
+       "kind": "survival",
+       "status": "changed",
+       "lines_en": [
+        "Cost decreased to 9000 (Down from 10000)"
+       ],
+       "lines_cn": [
+        "价格降低至 9000（原为 10000）"
+       ],
+       "raw_text": [
+        "HollaGram Helmet - Epic Survival Hero Item"
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "角斗领域 - 输出",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "freja",
+     "name_en": "Freja",
+     "name_cn": "弗蕾娅",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/828848437c49bc5ed4a2cf900c85986a4af265d71d1ea9ddf260b8a0236f71a9.png",
+     "dev_note": "这些改动旨在为弗蕾娅增加更多构筑多样性，并让她较弱的选项成为更可行的选择。我们同时降低了她武器强度构筑的垂直爆发，并新增了一个调节手段，以便我们在需要时能更精细地控制后续调整。",
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
+      {
+       "name_en": "Volley à Deux",
+       "name_cn": "双重齐射",
+       "rarity": null,
+       "kind": "power",
+       "status": "changed",
+       "lines_en": [
+        "Spread of additional bolts reduced by 60%.",
+        "Additional bolts fire every 3rd shot (Down from every 5th shot)."
+       ],
+       "lines_cn": [
+        "额外弩箭的散布降低 60%。",
+        "额外弩箭每第 3 发触发（原为每第 5 发）。"
+       ],
+       "raw_text": [
+        "Volley à Deux - Power"
+       ]
+      },
+      {
+       "name_en": "Peak Performance",
+       "name_cn": "巅峰表现",
+       "rarity": null,
+       "kind": "power",
+       "status": "changed",
+       "lines_en": [
+        "Added +20% Updraft Height."
+       ],
+       "lines_cn": [
+        "新增 +20% 上升气流高度。"
+       ],
+       "raw_text": [
+        "Peak Performance - Power"
+       ]
+      },
+      {
+       "name_en": "Forager",
+       "name_cn": "觅食者",
+       "rarity": null,
+       "kind": "power",
+       "status": "changed",
+       "lines_en": [
+        "Max Life per hit increased to 8% (Up from 5%)."
+       ],
+       "lines_cn": [
+        "每次命中的最大生命值提高至 8%（原为 5%）。"
+       ],
+       "raw_text": [
+        "Forager - Power"
+       ]
+      },
+      {
+       "name_en": "Windwalker Boots",
+       "name_cn": "风行者之靴",
+       "rarity": "Rare",
+       "kind": "ability",
+       "status": "changed",
+       "lines_en": [
+        "Added: \"Take Aim Bolt Explosion damage reduces Updraft Cooldown by 1s\".",
+        "Removed: +20% Updraft Height.",
+        "Added: 5% Ability Power.",
+        "Removed: 5% Cooldown Reduction."
+       ],
+       "lines_cn": [
+        "新增：「瞄准射击弩箭爆炸伤害使上升气流冷却时间减少 1 秒」。",
+        "移除：+20% 上升气流高度。",
+        "新增：5% 技能强度。",
+        "移除：5% 冷却时间缩减。"
+       ],
+       "raw_text": [
+        "Windwalker Boots - Rare Ability Hero Item"
+       ]
+      },
+      {
+       "name_en": "Aeroweave Cloak",
+       "name_cn": "气织斗篷",
+       "rarity": "Rare",
+       "kind": "survival",
+       "status": "changed",
+       "lines_en": [
+        "Added: Restore 10% Max Ammo every 1s while momentum is slowed by Take Aim."
+       ],
+       "lines_cn": [
+        "新增：当动量被瞄准射击减速时，每 1 秒恢复 10% 最大弹药。"
+       ],
+       "raw_text": [
+        "Aeroweave Cloak - Rare Survival Hero Item"
+       ]
+      },
+      {
+       "name_en": "Cyclone",
+       "name_cn": "旋风",
+       "rarity": null,
+       "kind": "power",
+       "status": "changed",
+       "lines_en": [
+        "Added: 25% reduced explosion damage from extra Take Aim Bolt."
+       ],
+       "lines_cn": [
+        "新增：额外瞄准射击弩箭的爆炸伤害降低 25%。"
+       ],
+       "raw_text": [
+        "Cyclone - Power"
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "sojourn",
+     "name_en": "Sojourn",
+     "name_cn": "索杰恩",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/515f25a729a4a3f51d956fc54c600dc60d8e5242f2b188c178496cea1a2e11b5.png",
+     "dev_note": "索杰恩的干扰弹构筑成本过高，回报却不成正比，导致在大多数对局中难以成立。我们降低了该构筑的整体开销，并通过机动滑铲的增强改善了她的防御选项，让她有更多灵活性来重新定位并在战斗中坚持更久。",
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
+      {
+       "name_en": "Hard Stuck",
+       "name_cn": "寸步难行",
+       "rarity": null,
+       "kind": "power",
+       "status": "changed",
+       "lines_en": [
+        "Damage reduction decreased to 25% (Down from 50%)."
+       ],
+       "lines_cn": [
+        "伤害减免降低至 25%（原为 50%）。"
+       ],
+       "raw_text": [
+        "Hard Stuck - Power"
+       ]
+      },
+      {
+       "name_en": "Liao's Logistics Data",
+       "name_cn": "廖的后勤数据",
+       "rarity": "Epic",
+       "kind": "ability",
+       "status": "changed",
+       "lines_en": [
+        "Cost decreased to 10000 (Down from 11000)"
+       ],
+       "lines_cn": [
+        "价格降低至 10000（原为 11000）"
+       ],
+       "raw_text": [
+        "Liao's Logistics Data - Epic Ability Hero Item"
+       ]
+      },
+      {
+       "name_en": "Energy Leech",
+       "name_cn": "能量汲取",
+       "rarity": "Rare",
+       "kind": "ability",
+       "status": "changed",
+       "lines_en": [
+        "Cost decreased to 4000 (Down from 5000)"
+       ],
+       "lines_cn": [
+        "价格降低至 4000（原为 5000）"
+       ],
+       "raw_text": [
+        "Energy Leech - Rare Ability Hero Item"
+       ]
+      },
+      {
+       "name_en": "Fine-Tuned Thrusters",
+       "name_cn": "精调推进器",
+       "rarity": null,
+       "kind": "power",
+       "status": "changed",
+       "lines_en": [
+        "Damage reduction increased to 35% (Up from 25%)."
+       ],
+       "lines_cn": [
+        "伤害减免提高至 35%（原为 25%）。"
+       ],
+       "raw_text": [
+        "Fine-Tuned Thrusters - Power"
+       ]
+      },
+      {
+       "name_en": "Zoom Zoom Zoom",
+       "name_cn": "嗖嗖嗖",
+       "rarity": null,
+       "kind": "power",
+       "status": "changed",
+       "lines_en": [
+        "Attack Speed increased to 35% (Up from 25%).",
+        "Weapon Lifesteal increased to 100% (Up from 50%)."
+       ],
+       "lines_cn": [
+        "攻击速度提高至 35%（原为 25%）。",
+        "武器生命汲取提高至 100%（原为 50%）。"
+       ],
+       "raw_text": [
+        "Zoom Zoom Zoom - Power"
+       ]
+      },
+      {
+       "name_en": "Experimental Tech",
+       "name_cn": "实验科技",
+       "rarity": null,
+       "kind": "power",
+       "status": "changed",
+       "lines_en": [
+        "Slow increased to 25% (Up from 15%).",
+        "Railgun Charge increased to 50% (Up from 33%)."
+       ],
+       "lines_cn": [
+        "减速提高至 25%（原为 15%）。",
+        "电磁炮充能提高至 50%（原为 33%）。"
+       ],
+       "raw_text": [
+        "Experimental Tech - Power"
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "junkrat",
+     "name_en": "Junkrat",
+     "name_cn": "狂鼠",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d3628dc64d78ca6dc2a8b509cf5a6fc417c0f5068d5f75d1f5c094be1f58ee4e.png",
+     "dev_note": "与武器强度构筑相比，狂鼠的技能强度构筑一直难以站稳脚跟，因此我们为他的震荡地雷和陷阱核心构筑都增加了更多强度和稳定性，以提升构筑多样性。",
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
+      {
+       "name_en": "Hop Boom",
+       "name_cn": "蹦蹦爆炸",
+       "rarity": null,
+       "kind": "power",
+       "status": "changed",
+       "lines_en": [
+        "Concussion Mine damage upon landing after detonating Concussion Mine on yourself increased to 20% reduced effectiveness (Up from 30% reduced effectiveness)."
+       ],
+       "lines_cn": [
+        "对自身引爆震荡地雷后落地时的震荡地雷伤害效果降低幅度提高至 20%（原为降低 30%）。"
+       ],
+       "raw_text": [
+        "Hop Boom - Power"
+       ]
+      },
+      {
+       "name_en": "Trap II Esquire",
+       "name_cn": "陷阱二世先生",
+       "rarity": null,
+       "kind": "power",
+       "status": "changed",
+       "lines_en": [
+        "Removed Arming time to spawn Mini Steel Trap.",
+        "Max Number of Mini Steel Traps increased to 5 (Up from 2)."
+       ],
+       "lines_cn": [
+        "移除生成迷你钢铁陷阱的布置时间。",
+        "迷你钢铁陷阱的最大数量提高至 5（原为 2）。"
+       ],
+       "raw_text": [
+        "Trap II Esquire - Power"
+       ]
+      },
+      {
+       "name_en": "Rainin' Lead",
+       "name_cn": "弹如雨下",
+       "rarity": null,
+       "kind": "power",
+       "status": "changed",
+       "lines_en": [
+        "Frequency increased to every 0.25s (Up from 0.3s)."
+       ],
+       "lines_cn": [
+        "频率提高至每 0.25 秒（原为 0.3 秒）。"
+       ],
+       "raw_text": [
+        "Rainin' Lead - Power"
+       ]
+      },
+      {
+       "name_en": "Jamison's Jumpers",
+       "name_cn": "詹米森的跳鞋",
+       "rarity": "Epic",
+       "kind": "ability",
+       "status": "changed",
+       "lines_en": [
+        "Added: \"Detonating Concussion Mine on yourself reduces Concussion Mine cooldown by 15%\".",
+        "Removed: +20% Concussion Mine Knockback Distance.",
+        "Added 25 Health."
+       ],
+       "lines_cn": [
+        "新增：「对自身引爆震荡地雷使震荡地雷冷却时间减少 15%」。",
+        "移除：+20% 震荡地雷击退距离。",
+        "新增 25 生命值。"
+       ],
+       "raw_text": [
+        "Jamison's Jumpers - Epic Ability Hero Item"
+       ]
+      },
+      {
+       "name_en": "Refreshing Radiation",
+       "name_cn": "焕新辐射",
+       "rarity": "Epic",
+       "kind": "survival",
+       "status": "changed",
+       "lines_en": [
+        "Cost decreased to 9000 (Down from 10000).",
+        "Max Life Overhealth increased to 8% (Up from 5%).",
+        "Overhealth Duration increased to 5s (Up from 3s)."
+       ],
+       "lines_cn": [
+        "价格降低至 9000（原为 10000）。",
+        "最大生命值过量生命值提高至 8%（原为 5%）。",
+        "过量生命值持续时间提高至 5 秒（原为 3 秒）。"
+       ],
+       "raw_text": [
+        "Refreshing Radiation - Epic Survival Hero Item"
+       ]
+      },
+      {
+       "name_en": "Lithium Alloy",
+       "name_cn": "锂合金",
+       "rarity": "Epic",
+       "kind": "ability",
+       "status": "changed",
+       "lines_en": [
+        "Cost decreased to 9500 (Down from 10000).",
+        "Added: +10% Ability Power."
+       ],
+       "lines_cn": [
+        "价格降低至 9500（原为 10000）。",
+        "新增：+10% 技能强度。"
+       ],
+       "raw_text": [
+        "Lithium Alloy - Epic Ability Hero Item"
+       ]
+      },
+      {
+       "name_en": "Rat Pack",
+       "name_cn": "鼠群",
+       "rarity": "Rare",
+       "kind": "ability",
+       "status": "changed",
+       "lines_en": [
+        "Ability Power increased to 10% (Up from 5%).",
+        "Steel Trap Health increased to 100% (Up from 50%)."
+       ],
+       "lines_cn": [
+        "技能强度提高至 10%（原为 5%）。",
+        "钢铁陷阱生命值提高至 100%（原为 50%）。"
+       ],
+       "raw_text": [
+        "Rat Pack - Rare Ability Hero Item"
+       ]
+      },
+      {
+       "name_en": "Charged Chompas",
+       "name_cn": "充能咀嚼器",
+       "rarity": "Epic",
+       "kind": "ability",
+       "status": "changed",
+       "lines_en": [
+        "Ultimate Charge gain now triggers on all Ability damage (Instead of just Total Mayhem damage)."
+       ],
+       "lines_cn": [
+        "终极技能充能获取现在会由所有技能伤害触发（原为仅临别礼物伤害）。"
+       ],
+       "raw_text": [
+        "Charged Chompas - Epic Ability Hero Item"
+       ]
+      },
+      {
+       "name_en": "Spiked Gloves",
+       "name_cn": "尖刺手套",
+       "rarity": "Rare",
+       "kind": "weapon",
+       "status": "changed",
+       "lines_en": [
+        "Cost decreased to 4000 (Down from 4500)."
+       ],
+       "lines_cn": [
+        "价格降低至 4000（原为 4500）。"
+       ],
+       "raw_text": [
+        "Spiked Gloves - Rare Weapon Hero Item"
+       ]
+      },
+      {
+       "name_en": "Thermal Trap",
+       "name_cn": "热力陷阱",
+       "rarity": "Rare",
+       "kind": "survival",
+       "status": "changed",
+       "lines_en": [
+        "Cost decreased to 3750 (Down from 4000)."
+       ],
+       "lines_cn": [
+        "价格降低至 3750（原为 4000）。"
+       ],
+       "raw_text": [
+        "Thermal Trap - Rare Survival Hero Item"
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "角斗领域 - 支援",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "juno",
+     "name_en": "Juno",
+     "name_cn": "朱诺",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2a65bf12035f9c255833693224cad83fd98cead625fdf1b9da8359a7f259e01c.png",
+     "dev_note": "恢复了医疗导弹曾经拥有的额外治疗。这一增强为友方提供了更多续航，也让她在精准命中时更能体现支援型玩法的价值。",
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
+      {
+       "name_en": "Medicinal Missiles",
+       "name_cn": "医疗导弹",
+       "rarity": null,
+       "kind": "power",
+       "status": "changed",
+       "lines_en": [
+        "Now heals extra 30 health on pulsar hit."
+       ],
+       "lines_cn": [
+        "现在命中脉冲星时额外治疗 30 生命值。"
+       ],
+       "raw_text": [
+        "Medicinal Missiles - Power"
+       ]
+      }
+     ]
+    },
+    {
+     "slug": "brigitte",
+     "name_en": "Brigitte",
+     "name_cn": "布丽吉塔",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/51b93ea59f369a1defa78e5d08c12b1391f5d2d94614a51fd95c125a7a6151fa.png",
+     "dev_note": "布丽吉塔的武器强度构筑一直较为冷门，难以与其他构筑选项相提并论。我们为此增加了一些火力和生存能力，使其在合适的情况下成为更可行的选择。",
+     "general": [],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": [
+      {
+       "name_en": "Whirlwhip",
+       "name_cn": "旋风鞭",
+       "rarity": null,
+       "kind": "power",
+       "status": "changed",
+       "lines_en": [
+        "Bonus Damage on 360 Rocket Flail swing increased to 125% (Up from 100%)."
+       ],
+       "lines_cn": [
+        "360度火箭连枷挥击的额外伤害提高至125%（原为100%）。"
+       ],
+       "raw_text": [
+        "Whirlwhip - Power"
+       ]
+      },
+      {
+       "name_en": "Righteous Cleave",
+       "name_cn": "正义劈砍",
+       "rarity": null,
+       "kind": "power",
+       "status": "changed",
+       "lines_en": [
+        "Healing on next Rocket Flail swing increased to 125% of damage dealt (Up from 100%)."
+       ],
+       "lines_cn": [
+        "下一次火箭连枷挥击的治疗量提高至造成伤害的125%（原为100%）。"
+       ],
+       "raw_text": [
+        "Righteous Cleave - Power"
+       ]
+      }
+     ]
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合修复",
+     "body": "- 修复了无漾和伊拉锐在受到攻击速度提升效果影响时，治疗量和资源速率计算错误的问题。\n- 修复了猎头狂魔威能无视鲍勃重装被动提供的爆头伤害减免的问题。\n- 修复了莱因哈特的冲锋无法将破坏球从动力铁球模式中拉出的问题。\n- 修复了美的深度冰冻威能可能在短时间内两次冰冻敌人的问题。\n- 修复了受安娜头晕目眩影响的角色在使用本应清除头晕目眩效果的技能后仍被减速的问题。\n- 修复了使用超载威能时，索杰恩在 primary fire 后充能丢失的问题。\n- 修复了天使的重生计时器未在标记消息中显示的问题。\n- 修复了高级信息面板文本中的若干细微颜色和格式问题。",
+     "dev": null
+    },
+    {
+     "title": "角斗领域修复",
+     "body": "- 修复了雾子的分身可能因目标点上友方玩家过多而意外阻止运载目标移动的问题。\n- 修复了废料弹头物品会打断温斯顿的 primary fire 以装填所提供弹药的问题。\n- 修复了死神在使用暗影步后立即瞄准不准确的问题。\n- 修复了狂鼠的「陷阱 II，先生」威能所生成的小型钢铁陷阱，其尺寸与触发时机不准确的问题。\n- 修复了骇灾的千针雨技能无法获得生命汲取加成的问题。\n- 修复了托比昂的 Clocked Power 将效果赋予所有友方英雄而非仅托比昂的问题。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2025-11-06-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:41:33+00:00",
+  "status": "draft",
+  "source_hash": "sha256:59ca1c9255adb80428b78c46ff6031fb01720b8cd1bf9c51c6d624607a9644f0",
+  "kept_english": []
+ }
+}

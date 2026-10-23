@@ -1,0 +1,387 @@
+{
+ "id": "ai-2017-09-19-1",
+ "site": "ai",
+ "date": "2017-09-19",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2017/09",
+ "title": "《守望先锋》补丁说明——2017年9月19日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "补丁亮点",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "新运载目标地图：渣客镇",
+     "body": "渣客镇位于严酷无情的澳大利亚内陆。它由一座被摧毁的智械中枢的残骸建成，如今是一群无法无天的拾荒者——渣客的家园，他们由残忍的女王统领。当渣客们不在智械中枢的残骸中搜刮任何有价值的东西时，他们会在废料场里发泄——那是一座巨大的角斗场，斗士们在那里为荣耀、财富……以及生存而战。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "综合",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": null,
+     "dev": null
+    },
+    {
+     "title": "未知英雄",
+     "body": "- 玩家在比赛开始时将不再看到「组建你的队伍」界面\n- 故意自杀的玩家将不再以新英雄重生。不过，他们的终极技能将会重置，任何已放置的物品（例如托比昂的炮台）都会消失\n- 玩家将不再以同一英雄重生\n- 这些改动同样适用于任何启用了「以随机英雄重生」选项的自定游戏。",
+     "dev": null
+    },
+    {
+     "title": "用户界面更新",
+     "body": "- 用于指示队友在地图上阵亡位置的骷髅图标已替换为英雄头像图标\n- 观战或等待重生时，第三人称视角现在会自动将画面聚焦于战斗",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "d-va",
+     "name_en": "D.Va",
+     "name_cn": "D.Va",
+     "role": "tank",
+     "icon": null,
+     "dev_note": "D.Va的防御矩阵续航能力被证明过于强大，但仅仅削弱它而不做其他改动会使她过于弱势（玩起来也远没有那么有趣）。因此，我们新增了一个技能，并让她能够在飞行时开火。这些改动为D.Va提供了新的选择，同时保留了防御矩阵拦截敌方强力攻击的能力。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Micro Missiles (New Ability)",
+       "name_cn": "微型飞弹（新技能）",
+       "slug": "micro-missiles-new-ability",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "D.Va发射一连串小型火箭，火箭在命中时爆炸，对每次爆炸周围有限范围内的敌人造成伤害。D.Va在使用任何其他技能或发射聚变机炮时均可发射这些火箭",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Defense Matrix",
+       "name_cn": "防御矩阵",
+       "slug": "defense-matrix",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "防御矩阵的资源槽现在会以两倍速度消耗",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "每秒能量恢复量提高至12.5%（原为10%）",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Boosters",
+       "name_cn": "推进器",
+       "slug": "boosters",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "聚变机炮现在可以在飞行时开火",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "mercy",
+     "name_en": "Mercy",
+     "name_cn": "天使",
+     "role": "support",
+     "icon": null,
+     "dev_note": "虽然复活倒下的盟友是天使玩法的核心部分，但她的终极技能运作方式引发了一系列问题。对抗它令人沮丧，而且它促使天使玩家躲开重要的战斗，而不是参与其中。这个版本将重生改为单体技能。它仍然是天使技能组的重要部分，但对天使玩家和她的敌人来说都更好玩。她的新终极技能女武神，让她有机会打出改变战局的大操作，并为她开辟了许多新的选择。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Resurrect (formerly Mercy’s Ultimate ability)",
+       "name_cn": "重生（原为天使的终极技能）",
+       "slug": "resurrect-formerly-mercy-s-ultimate-ability",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "该技能现在以单个玩家为目标，而非范围内的所有玩家",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "半径降低至5米",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "技能冷却时间为30秒",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "重生激活期间，天使不再获得无敌状态",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Valkyrie (New Ultimate Ability)",
+       "name_cn": "女武神（新终极技能）",
+       "slug": "valkyrie-new-ultimate-ability",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "女武神释放天使女武神作战服的全力，在20秒内强化她的武器和技能",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "天使之杖：天使的治疗和伤害增幅光束现在会影响目标队友附近的所有盟友，且法杖的有效范围已扩大",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "天使冲击枪：现在拥有无限弹药，且弹道速度提高",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "守护天使：范围和移动速度提高",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "重生：激活女武神时冷却时间立即重置，首次施放后降低至10秒",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "悬停：天使获得自由飞行的能力，移动速度提高",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "再生（被动）：天使受到伤害时不再被打断",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "reinhardt",
+     "name_en": "Reinhardt",
+     "name_cn": "莱因哈特",
+     "role": "tank",
+     "icon": null,
+     "dev_note": "这项改动让莱因哈特在使用屏障时拥有更好的态势感知能力，使他能够在保护队伍的同时持续关注战场。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "在设置 > 控制中可以找到新的「屏障自由视角下移动相对于镜头」选项。只需从下拉菜单中选择「莱因哈特」。这允许玩家在屏障护盾激活且玩家控制第三人称镜头移动时，改变莱因哈特的移动方式",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Barrier Field",
+       "name_cn": "屏障力场",
+       "slug": "barrier-field",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "屏障激活时按住主要攻击键，现在可以旋转镜头",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 修复了当自定义准星厚度设置为1时，准星显示为透明并忽略不透明度设置的问题\n- 修复了使用竞技预设创建自定游戏时，占领要点比赛会以五局三胜制进行的问题\n- 修复了玩家在被击杀后观看击杀回放时无法请求精彩镜头的问题\n- 修复了玩家在比赛结束时获得点赞卡五票后，语音台词无法播放的问题\n- 修复了即使启用了相关选项，玩家也无法自动加入比赛聊天的问题\n- 修复了在淘汰模式比赛中，如果玩家从技能（例如卢西奥的音障）获得了临时生命值提升，则无法获得完美回合提示的问题\n- 修复了当摇杆沿对角线方向偏移时，「瞄准缓入」设置对控制器输入影响过于激进的问题",
+     "dev": null
+    },
+    {
+     "title": "死斗",
+     "body": "- 修复了团队死斗的完整描述无法在信息部分显示的问题\n- 修复了死斗比赛中捕获的精彩镜头偶尔会播放错误播报员语音的问题\n- 修复了狂鼠可以用震荡地雷摧毁自己钢铁陷阱的问题",
+     "dev": null
+    },
+    {
+     "title": "英雄",
+     "body": "- 修复了一个偶尔会导致英雄在重生时播放「叹息」语音的问题\n- 修复了一个在装备安娜的「阿玛莉队长」皮肤时，使用「沙滩球」姿势会中断其眼部动画的问题\n- 修复了一个导致末日铁拳在使用火箭重拳时无法被击退的问题\n- 修复了一个导致末日铁拳的火箭重拳可以穿过国王大道的出租车命中玩家的问题\n- 修复了一个在英雄展示厅查看D.Va的武器时，若装备其「巡洋舰」皮肤，一对粉色毛绒骰子会神秘地漂浮到屏幕上的问题\n- 修复了一个在装备狂鼠的「烟花」皮肤时，其武器金色光泽显得暗淡的问题\n- 修复了一个当玩家在边缘进行蹬墙跳时，狂鼠的炸弹轮胎会获得速度加成的问题\n- 修复了一个偶尔会导致美的冰墙将玩家弹射到空中的问题\n- 修复了一个导致美的终极技能在被源氏反弹后显示为友方（未能从蓝色变为红色）的问题\n- 修复了一个导致路霸的链钩造成地形击杀时，其图标未在消灭提示中显示的问题\n- 修复了一个导致秩序之光的光子屏障在红色「无法使用」图标激活时显示10秒冷却时间的问题\n- 使用D.Va的近战攻击不再取消微型飞弹的连射\n- D.Va的微型飞弹现在会被眩晕、击退和其他控制效果打断\n- 天使的重生不再被钢铁陷阱或重力喷涌阻挡\n- 天使不再能够使用女武神逃离重力喷涌和钢铁陷阱",
+     "dev": null
+    },
+    {
+     "title": "地图",
+     "body": "- 修复了一个在生态监测站：南极洲可能导致获胜队伍阵容展示期间，一个箱子挡住英雄视野的问题\n- 修复了一个允许死神到达卡斯蒂略 unintended 位置的问题\n- 修复了一个允许部分英雄到达地平线月球基地 unintended 位置的问题\n- 修复了一个在伊利奥斯特定区域站立时，武器上无法出现反射效果的问题\n- 修复了一个导致绿洲城的弹跳板将玩家弹得比预期更高的问题\n- 修复了一个光照问题，该问题导致玩家使用低画质设置时，66号公路最后一个点位的部分物品呈现粉色调\n- 修复了一个导致玩家站在66号公路洞穴旅店区域时，反射效果显得过暗的问题\n- 修复了一个导致玩家加载进入教学地图时，镜头过度缩放和灯光闪烁的问题\n- 修复了一个导致沃斯卡娅工业区的金属栏杆无法被武器火力正确摧毁的问题\n- 修复了一个允许玩家到达监测站：直布罗陀 unintended 位置的问题",
+     "dev": null
+    },
+    {
+     "title": "用户界面",
+     "body": "- 从安娜的生涯概况页面移除了「治疗被阻止」统计数据\n- 修复了一个导致末日铁拳的火箭重拳界面在重生时偶尔仍然可见的问题\n- 修复了一个导致末日铁拳的裂地重拳无法准确瞄准移动物体，从而使末日铁拳落在 unintended 位置的问题",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2017-09-19-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:45:39+00:00",
+  "status": "draft",
+  "source_hash": "sha256:f34d7109102cf3588f3ae98e929f562a6204a31af38c6b12ba98719d30575f43",
+  "kept_english": []
+ }
+}

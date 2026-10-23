@@ -1,0 +1,437 @@
+{
+ "id": "ai-2017-03-21-1",
+ "site": "ai",
+ "date": "2017-03-21",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2017/03",
+ "title": "《守望先锋》补丁说明——2017年3月21日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "补丁亮点",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "新英雄：奥丽莎（重装）",
+     "body": "奥丽莎由城市中退役的OR15防御机器人残骸拼装而成，她仍在学习如何最优化地履行自己的职责。她虽缺乏经验，却以坚定不移的奉献精神弥补不足，全力保护她的城市——以及她的创造者伊菲——免受伤害。\n\n奥丽莎是加入《守望先锋》阵容的第六位重装英雄，与她的程序设定一样，她的玩法也围绕保护而设计。她的主武器是快速射击的聚变驱动器，这是一把射程远、精度高的自动武器，即使远距离也能保持准确——但代价不菲。奥丽莎开火时移动速度会降低，玩家还需要为漫长的装填时间做好规划。她的辅助攻击技能「站住别动！」会向地图上发射一枚引力弹，在飞行途中减速附近敌人，并在引爆时将其拉向弹体。\n\n她的强固防御技能可强化自身防御，减少受到的伤害，并在短时间内变得不可阻挡。她还能投掷一个装置，生成一道弧形的固定防护屏障，非常适合拦截飞行物，并从正面、侧面和上方保护队友。最后，作为终极技能，奥丽莎会部署一台高能超充能器，向范围内的盟友发射增益光束，提高他们对敌方队伍造成的伤害。\n\n如需了解更多关于奥丽莎的信息，请点击此处。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "综合更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "竞技比赛",
+     "body": "- 在66号公路上，进攻方将运载目标推至第一个检查点后，现在会获得额外60秒时间。",
+     "dev": "> 开发者评论：此改动将使66号公路与其他运载目标地图保持一致。"
+    },
+    {
+     "title": "自定游戏与游戏浏览器",
+     "body": "- 在设置自定游戏时，玩家现在可以禁用或修改通过辅助攻击键激活的技能",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "ana",
+     "name_en": "Ana",
+     "name_cn": "安娜",
+     "role": "support",
+     "icon": null,
+     "dev_note": "> 开发者评论：安娜的技能组合包含多个强力组件，这使她难以被替代。降低她的伤害输出将削弱她在进攻端的威胁，并降低她的单挑能力。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Biotic Rifle",
+       "name_cn": "生物步枪",
+       "slug": "biotic-rifle",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "伤害从80降低至60",
+         "before": 80.0,
+         "after": 60.0,
+         "by": -20.0,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "damage",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "bastion",
+     "name_en": "Bastion",
+     "name_cn": "堡垒",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "> 开发者评论：在上次更新后，堡垒变得有些难以对付，因此我们削弱了他的新被动，给敌人更多反制机会。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Ironclad",
+       "name_cn": "铁甲",
+       "slug": "ironclad",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "[XB1, PS4] 堡垒在哨卫模式或坦克模式下现在受到的伤害降低20%（原为35%）",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "junkrat",
+     "name_en": "Junkrat",
+     "name_cn": "狂鼠",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "> 开发者评论：此前，狂鼠的弹道速度使他在远距离难以使用，而自身爆炸造成的伤害又使他在近距离难以使用。此改动使他在近距离更有效，让狂鼠玩家可以探索新的策略。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Total Mayhem",
+       "name_cn": "临别礼物",
+       "slug": "total-mayhem",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "狂鼠的爆炸不再伤害自己",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "mercy",
+     "name_en": "Mercy",
+     "name_cn": "天使",
+     "role": "support",
+     "icon": null,
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Caduceus Staff",
+       "name_cn": "天使之杖",
+       "slug": "caduceus-staff",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "增益其他玩家时提高的伤害量现在会记录在比赛统计和生涯概况页面中",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "sombra",
+     "name_en": "Sombra",
+     "name_cn": "黑影",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "> 开发者评论：黑影在高手手中可以极具破坏力，但渗透和骚扰敌人往往感觉困难。这些改动应能提升她的效能和团队配合。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Hack",
+       "name_cn": "黑客入侵",
+       "slug": "hack",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "黑影的队友现在可以隔墙看到被入侵的补给包",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Stealth",
+       "name_cn": "隐秘潜行",
+       "slug": "stealth",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "黑影进入或退出隐秘潜行时，音效和语音距离已缩短至15米",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Translocator",
+       "name_cn": "位移传动",
+       "slug": "translocator",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从6秒降低至4秒",
+         "before": 6.0,
+         "after": 4.0,
+         "by": -2.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "winston",
+     "name_en": "Winston",
+     "name_cn": "温斯顿",
+     "role": "tank",
+     "icon": null,
+     "dev_note": "> 开发者评论：此改动应能帮助温斯顿做好他最擅长的事：分散敌方队伍注意力并阻挡伤害。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Barrier Projector",
+       "name_cn": "屏障发射器",
+       "slug": "barrier-projector",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "技能冷却时间现在从屏障放置时开始计算，而非屏障结束时",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "zarya",
+     "name_en": "Zarya",
+     "name_cn": "查莉娅",
+     "role": "tank",
+     "icon": null,
+     "dev_note": "> 开发者评论：这实际上是回退我们在几个补丁前做出的改动，该改动使玩家在屏障内部受到效果命中时免疫击退。这带来了一些负面副作用，例如使目标免疫可穿透屏障的效果所造成的击退，如莱因哈特的冲锋和温斯顿原始暴怒的拳击。现在，这些效果将再次造成击退。这不影响源自她屏障外部的效果所造成的击退，如法老之鹰的震荡冲击。这些仍会被屏障阻挡，不会造成任何击退。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Particle Barrier",
+       "name_cn": "粒子屏障",
+       "slug": "particle-barrier",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "不再保护查莉娅免受击退",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Projected Barrier",
+       "name_cn": "投射屏障",
+       "slug": "projected-barrier",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "不再保护盟友免受击退",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "zenyatta",
+     "name_en": "Zenyatta",
+     "name_cn": "禅雅塔",
+     "role": "support",
+     "icon": null,
+     "dev_note": "> 开发者评论：禅雅塔的辅助攻击因其较长的恢复时间而常常感觉难以使用。此次缩短应能使其成为更可行的选择。此外，他的武器一直有极少量散布。这不足以改变他的玩法，但偶尔会导致本应命中目标的射击落空。移除这一微小偏差应能让他感觉更稳定。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Orb of Destruction",
+       "name_cn": "灭",
+       "slug": "orb-of-destruction",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "辅助攻击冷却时间从1秒降低至0.6秒",
+         "before": 1.0,
+         "after": 0.6,
+         "by": -0.4,
+         "by_pct": null,
+         "metric": "alternate fire cooldown has been",
+         "raw_metric": "alternate fire cooldown has been",
+         "unit": "s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "武器散布已移除",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 当传送面板、护盾发生器及其他玩家所属物体被摧毁时，消灭提示现在会正确显示拥有者的名字",
+     "dev": null
+    },
+    {
+     "title": "A.I.",
+     "body": "- 修复了一个错误，该错误导致在自定游戏中禁用炮台技能时，堡垒和托比昂机器人无法采取防御位置",
+     "dev": null
+    },
+    {
+     "title": "竞技比赛",
+     "body": "- 修复了一个视觉错误，该错误导致回合间的设置阶段无法显示你当前的奖章",
+     "dev": null
+    },
+    {
+     "title": "自定游戏与游戏浏览器",
+     "body": "- 修复了一个错误，该错误导致玩家在绿洲城被敌方莱因哈特顶在车上后，会在敌方重生室重生\n- 在攻防战设置中新增了得分条件说明，指出每支队伍必须先确保己方旗帜安全才能得分\n- 修复了一个错误，该错误可能导致某些设置即使未被使用也会显示在自定游戏的信息界面上\n- 修复了一个问题，该问题导致「终极技能充能」设置的数值无法正确显示\n- 在游戏浏览器的「寻找游戏」筛选器中，英雄和地图现在按字母顺序排列\n- 修复了一个错误，该错误导致堡垒的自我修复技能无法在自定游戏设置中被禁用",
+     "dev": null
+    },
+    {
+     "title": "英雄",
+     "body": "- 修复了在使用自我修复时，堡垒的行走动画无法触发的问题\n- 麦克雷的闪光弹作用于美的冰墙时，不再为其火力全开计量条累积进度\n- 修复了一个错误：当敌方玩家在受到冲击时被击杀，路霸成功的钩子无法计入「钩中玩家数」统计数据\n- 修复了禅雅塔装备三藏皮肤时，其双脚穿透长袍的问题\n- 修复了死神霰弹枪和 D.Va 机甲在主菜单中显示异常巨大的错误",
+     "dev": null
+    },
+    {
+     "title": "地图",
+     "body": "- 在训练靶场中被摧毁的训练机器人现在会显示在消灭提示中\n- 修复了允许多名玩家同时进入训练靶场的错误",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2017-03-21-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:47:13+00:00",
+  "status": "draft",
+  "source_hash": "sha256:7e72b0a855ab927a228c9e044ba231224017a80e1501af04cb5c250eb846cfa6",
+  "kept_english": [
+   "A.I."
+  ]
+ }
+}

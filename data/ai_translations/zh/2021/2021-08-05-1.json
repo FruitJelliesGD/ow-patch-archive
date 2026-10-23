@@ -1,0 +1,317 @@
+{
+ "id": "ai-2021-08-05-1",
+ "site": "ai",
+ "date": "2021-08-05",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2021/08",
+ "title": "《守望先锋》补丁说明——2021年8月5日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "hero_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "doomfist",
+     "name_en": "Doomfist",
+     "name_cn": "末日铁拳",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e072f79929b20a9bbf56a5862cadf4769fd2062f375ac3ecd243ceb66983c6ea.png",
+     "dev_note": "加速后的冷却时间将让末日铁拳在使用毁天灭地终极技能时，能更流畅地衔接连招。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Meteor Strike",
+       "name_cn": "毁天灭地",
+       "slug": "meteor-strike",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/49c404d5887c562cdb5aafb55979c5589a450c0e18fa9d62a3c8cc0ac585886e.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在在空中时，其技能的冷却速率加快 100%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "genji",
+     "name_en": "Genji",
+     "name_cn": "源氏",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/765cd44aab948bd53082079dfdcf3ce967e8786cf26e4505b797b092c1e6478e.png",
+     "dev_note": "镖的伤害提升听起来不多，但它跨过了针对部分敌方目标的阈值或「临界点」，使这些目标能少挨一次攻击就被消灭。为平衡主武器增强带来的强度提升，我们降低了斩这一终极技能的伤害，该伤害在受到增伤时同样会跨过针对部分目标的临界点。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Shuriken",
+       "name_cn": "气",
+       "slug": "shuriken",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8d0916035141abd9ab2bf72dbcfd0460b7a0019529e023d259ad4340890b34b3.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "伤害从 28 提高至 29",
+         "before": 28.0,
+         "after": 29.0,
+         "by": 1.0,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "damage",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Dragonblade",
+       "name_cn": "斩",
+       "slug": "dragonblade",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e9c3c82c08ce1a6006dbdf6905591040ed83ddceba81efb2e526c217cd57c931.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "伤害从 120 降低至 110",
+         "before": 120.0,
+         "after": 110.0,
+         "by": -10.0,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "damage",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "moira",
+     "name_en": "Moira",
+     "name_cn": "莫伊拉",
+     "role": "support",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d58b00cca1ff4bea2f18c1715f7c79a58e60b457b3e5ee6d9a63599cf77e299b.png",
+     "dev_note": "莫伊拉近期的表现略显乏力。提高生化之触的自我治疗将有助于提升她在射程内为自己恢复治疗资源时的生存能力。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Biotic Grasp",
+       "name_cn": "生化之触",
+       "slug": "biotic-grasp",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9721148061d528df7b3b5a90f746a82dc2b53b191add15e0962f8dcaf0777aa0.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "自我治疗从每秒 20 点生命值提高至每秒 24 点生命值",
+         "before": 20.0,
+         "after": 24.0,
+         "by": 4.0,
+         "by_pct": null,
+         "metric": "self-healing",
+         "raw_metric": "self-healing",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "roadhog",
+     "name_en": "Roadhog",
+     "name_cn": "路霸",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5f961a1625091209fdfb6086dee69178d9de88946b4b2d7492c0a4fffe5fdd4b.png",
+     "dev_note": "路霸凭借其庞大且具有威胁性的身姿与高耐久度为队友承担伤害，这会吸引敌方队伍的大量火力。我们降低了他为敌方提供的终极技能充能，以便更好地发挥他的这一职责，同时减少对己方队伍的不利影响。",
+     "general": [
+      {
+       "text_en": null,
+       "text_cn": "通用",
+       "subject": null,
+       "dimension": "other",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      },
+      {
+       "text_en": null,
+       "text_cn": "敌人对路霸造成伤害时获得的终极技能充能现在减少 25%",
+       "subject": "ultimate_cost",
+       "dimension": "hero_attr",
+       "before": null,
+       "after": null,
+       "by": null,
+       "by_pct": null,
+       "metric": null,
+       "unit": null
+      }
+     ],
+     "perks": [],
+     "abilities": [],
+     "stadium_items": []
+    },
+    {
+     "slug": "soldier-76",
+     "name_en": "Soldier: 76",
+     "name_cn": "士兵76",
+     "role": "damage",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1ab1d67206b689b2dc14282ce65cb070e2956a902f5c4de87884513b661c4297.png",
+     "dev_note": "重脉冲步枪的每发伤害已被多次调整，因为它是士兵：76 重要的调校临界点。上次降低该伤害是在他的武器散布被后坐力取代时，以抵消精准度提升带来的收益；不过随着近期远程伤害衰减的降低，在削弱其范围治疗效果的同时再次提高他的伤害输出是合理的。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Heavy Pulse Rifle",
+       "name_cn": "重脉冲步枪",
+       "slug": "heavy-pulse-rifle",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/69eaf669cd646a617439592615f023cfec82c27f4a3e19f48188941b3feaf55f.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "伤害从 19 提高至 20",
+         "before": 19.0,
+         "after": 20.0,
+         "by": 1.0,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "damage",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Biotic Field",
+       "name_cn": "生物力场",
+       "slug": "biotic-field",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/aaadd3dee89ac8797ecb7a1e647f574a034b1930726296fd17946d343254bdf0.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "治疗从每秒 40 点生命值降低至每秒 35 点生命值",
+         "before": 40.0,
+         "after": 35.0,
+         "by": -5.0,
+         "by_pct": null,
+         "metric": "healing",
+         "raw_metric": "healing",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "wrecking-ball",
+     "name_en": "Wrecking Ball",
+     "name_cn": "破坏球",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/c22df3c91a4fbc7f3f9689cd76f9fb86b52b2dfdf9f51c2158b4a9259a5f970d.png",
+     "dev_note": "破坏球是游戏中速度最快的英雄，这与他扰乱型的打法十分契合。不过，为帮助减少他对目标点拖延的贡献，他的工程抓钩技能现在会在重生后进入冷却。感应护盾不再附着于墙壁，因为相比任何有意的巧妙用法，这更常导致意外堆叠放置，且超出大多数敌方目标的范围。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Grappling Claw",
+       "name_cn": "工程抓钩",
+       "slug": "grappling-claw",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e81e6ba9fb3391f29528021e453a0d3c16da1fc5e378994e6d00783356e0f2c9.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "现在重生后会进入冷却",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Adaptive Shield",
+       "name_cn": "感应护盾",
+       "slug": "adaptive-shield",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/fa65af9c692405f968fafbeedcdfc9092b38a050dc3562bd41280390ccd7a21d.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "施放时间从 0.2 秒降低至 0 秒",
+         "before": 0.2,
+         "after": 0.0,
+         "by": -0.2,
+         "by_pct": null,
+         "metric": "cast_time",
+         "raw_metric": "cast time",
+         "unit": "s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "持续时间从 7 秒提高至 9 秒",
+         "before": 7.0,
+         "after": 9.0,
+         "by": 2.0,
+         "by_pct": null,
+         "metric": "duration",
+         "raw_metric": "duration",
+         "unit": "s"
+        }
+       ]
+      },
+      {
+       "name_en": "Minefield",
+       "name_cn": "地雷禁区",
+       "slug": "minefield",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/17a54a345b715bc4301b330d8eb394f57e1c66308a8cba67f426de76a71ba868.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "感应护盾不再附着于墙壁",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2021-08-05-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:49:55+00:00",
+  "status": "draft",
+  "source_hash": "sha256:25ea3ebbb8864750441e285123d31ec493aa7db1600c253aae3379b849912347",
+  "kept_english": []
+ }
+}

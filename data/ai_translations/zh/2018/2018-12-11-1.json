@@ -1,0 +1,474 @@
+{
+ "id": "ai-2018-12-11-1",
+ "site": "ai",
+ "date": "2018-12-11",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2018/12",
+ "title": "《守望先锋》补丁说明——2018年12月11日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "全新季节性活动：雪国仙境 2018",
+     "body": "又到了欢庆佳节的时节！\n\n《守望先锋》将在接下来的三周里沉浸在节日气氛中！扩充你的藏品，并享受两场冬季乱斗：雪怪狩猎和美的雪球攻势。前往暴雪世界欣赏飘雪、观赏夜间闪烁的灯光，并品味以糖果为灵感的装饰。\n\n当然，我们还准备了新的礼物等你从冬季补给箱中拆开！解锁全新季节性物品——包括坎卜斯狂鼠、糖梅仙子天使、花样滑冰秩序之光等传奇皮肤。\n\n点击此处了解更多关于雪国仙境的信息。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "综合更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "音频",
+     "body": "- 现在可以使用 Windows 空间音频选项。该功能可在 Windows 开始菜单的「控制面板 > 硬件和声音 > 声音 > 扬声器设备 > 空间音效」中找到",
+     "dev": "自上线以来，我们一直为使用耳机的玩家提供 Dolby Atmos 支持，现在我们正将这一支持扩展到 Windows 10 的空间音频实现。空间音频在 Windows 10 声音设置中配置，并将优先于游戏客户端中的设置。这将提供更多选项，包括 Windows Sonic 耳机、Dolby Atmos 耳机和 Dolby Atmos 家庭影院设置。"
+    }
+   ],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "ashe",
+     "name_en": "Ashe",
+     "name_cn": "艾什",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "我们对艾什角色包进行的最终技术审核，让我们得以实现一个在制作 B.O.B. 期间多次讨论过的功能。让他成为艾什金色武器的一部分，是庆祝我们最爱的智械大管家并让玩家在每次将他召唤到战场上时炫耀自己辛苦赚来的竞技点数的绝佳方式。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "B.O.B.",
+       "name_cn": "召唤鲍勃",
+       "slug": "b-o-b",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "当艾什装备金色武器时，B.O.B. 现在会带有金色色调",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "bastion",
+     "name_en": "Bastion",
+     "name_cn": "堡垒",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "堡垒需要一点进攻性增强，以平衡侦察模式臃肿的体型和哨戒模式固定不动的特性所带来的脆弱性。作为克服这些弱点生存下来的奖励，我们降低了堡垒在哨戒模式下的散布，使其在更远距离上比之前更有效。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Configuration: Recon",
+       "name_cn": "侦察模式",
+       "slug": "configuration-recon",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "弹药量从 25 提高至 35",
+         "before": 25.0,
+         "after": 35.0,
+         "by": 10.0,
+         "by_pct": null,
+         "metric": "ammo",
+         "raw_metric": "ammo",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Configuration: Sentry",
+       "name_cn": "哨戒模式",
+       "slug": "configuration-sentry",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "开火时武器散布最多降低 33%",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "brigitte",
+     "name_en": "Brigitte",
+     "name_cn": "布丽吉塔",
+     "role": "support",
+     "icon": null,
+     "dev_note": "布丽吉塔的能量盾击是一个强大的技能，往往让人感觉难以反制。这一改动将为反制提供新的选择，使护盾重装能更好地保护自己和队友。降低其伤害会减少她的眩晕连招总伤害潜力，同时仍能让流星飞锤和她的普通近战攻击保持全部威力。布丽吉塔是重装/治疗混合型英雄，最近我们一直在通过降低她非治疗功能的威力来削弱她的效果。我们希望确保她仍然是一个可行的选择，因此我们提高了她鼓舞士气被动技能的续航能力，以帮助改善她的整体治疗输出。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Shield Bash",
+       "name_cn": "能量盾击",
+       "slug": "shield-bash",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "不再能穿过屏障移动或眩晕目标",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "伤害从 50 降低至 5",
+         "before": 50.0,
+         "after": 5.0,
+         "by": -45.0,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "damage",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Inspire",
+       "name_cn": "鼓舞士气",
+       "slug": "inspire",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从 1.5 秒降低至 1 秒",
+         "before": 1.5,
+         "after": 1.0,
+         "by": -0.5,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "持续时间从 5 秒提高至 6 秒",
+         "before": 5.0,
+         "after": 6.0,
+         "by": 1.0,
+         "by_pct": null,
+         "metric": "duration",
+         "raw_metric": "duration",
+         "unit": "s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "总治疗量从 80 提高至 100",
+         "before": 80.0,
+         "after": 100.0,
+         "by": 20.0,
+         "by_pct": null,
+         "metric": "total healing",
+         "raw_metric": "total healing",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "doomfist",
+     "name_en": "Doomfist",
+     "name_cn": "末日铁拳",
+     "role": "tank",
+     "icon": null,
+     "dev_note": "末日铁拳的高机动性使他能够从极远的距离发起和脱离战斗。降低裂地重拳空中瞄准版本的射程，要求他在与敌人交战前必须靠得更近，并使他稍微更难从战斗中逃脱。上勾重拳失去空中控制对玩家来说是一个令人沮丧的机制，但它让末日铁拳能够打出连招。我们找到了一个不错的折中方案，限制了末日铁拳调整下一步行动的时间。毁天灭地的改动将使对没有机动性技能的英雄（如禅雅塔或安娜）确保轻松击杀变得更加困难，同时仍能在瞄准精准或与其他技能（如重力喷涌或麻醉镖）配合时保留其最大潜在伤害。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Rising Uppercut",
+       "name_cn": "上勾重拳",
+       "slug": "rising-uppercut",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "失去空中控制的持续时间从 3 秒降低至 0.6 秒",
+         "before": 3.0,
+         "after": 0.6,
+         "by": -2.4,
+         "by_pct": null,
+         "metric": "loss of air control duration",
+         "raw_metric": "loss of air control duration",
+         "unit": "s"
+        }
+       ]
+      },
+      {
+       "name_en": "Seismic Slam",
+       "name_cn": "裂地重拳",
+       "slug": "seismic-slam",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "最大射程从 20 米降低至 15 米",
+         "before": 20.0,
+         "after": 15.0,
+         "by": -5.0,
+         "by_pct": null,
+         "metric": "maximum range",
+         "raw_metric": "maximum range",
+         "unit": "m"
+        },
+        {
+         "text_en": null,
+         "text_cn": "目标被拉近时不再失去空中控制",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Meteor Strike",
+       "name_cn": "毁天灭地",
+       "slug": "meteor-strike",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "内环伤害半径从 1.5 米提高至 2.0 米",
+         "before": 1.5,
+         "after": 2.0,
+         "by": 0.5,
+         "by_pct": null,
+         "metric": "inner ring damage radius",
+         "raw_metric": "inner ring damage radius",
+         "unit": "m"
+        },
+        {
+         "text_en": null,
+         "text_cn": "外环最大伤害从 300 降低至 200",
+         "before": 300.0,
+         "after": 200.0,
+         "by": -100.0,
+         "by_pct": null,
+         "metric": "outer ring maximum damage",
+         "raw_metric": "outer ring maximum damage",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "cassidy",
+     "name_en": "Cassidy",
+     "name_cn": "卡西迪",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "麦克雷的连发对高生命值英雄来说不够可靠。提高其伤害将使它在近距离交战中更具威力，而这正是它最有效的地方。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Peacekeeper",
+       "name_cn": "维和者",
+       "slug": "peacekeeper",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "辅助攻击伤害从 45 提高至 55",
+         "before": 45.0,
+         "after": 55.0,
+         "by": 10.0,
+         "by_pct": null,
+         "metric": "alternate fire damage",
+         "raw_metric": "alternate fire damage",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "soldier-76",
+     "name_en": "Soldier: 76",
+     "name_cn": "士兵76",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "战术目镜的目的是让士兵：76 在持续期间内无法射失。然而，螺旋飞弹有飞行时间，因此如果在锁定后直接朝敌人发射，在较远距离上往往会打不中移动目标。这一改动允许玩家在仍然自动瞄准主武器的同时自由瞄准螺旋飞弹。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Tactical Visor",
+       "name_cn": "战术目镜",
+       "slug": "tactical-visor",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "不再使螺旋飞弹锁定敌人",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    },
+    {
+     "slug": "torbjorn",
+     "name_en": "Torbjörn",
+     "name_cn": "托比昂",
+     "role": "damage",
+     "icon": null,
+     "dev_note": "虽然熔火核心的伤害池旨在为玩家提供区域封锁的工具，但由于伤害太低，它们不足以在相当长的时间内威慑敌人。",
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Molten Core",
+       "name_cn": "熔火核心",
+       "slug": "molten-core",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "伤害从每秒 130 提高至 160",
+         "before": 130.0,
+         "after": 160.0,
+         "by": 30.0,
+         "by_pct": null,
+         "metric": "damage",
+         "raw_metric": "damage",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "A.I.",
+     "body": "- 修复了一个导致托比昂机器人尝试修理炮台时消耗部分终极技能的错误",
+     "dev": null
+    },
+    {
+     "title": "死斗",
+     "body": "- 修复了一个导致比赛平局时雅典娜语音重叠的错误",
+     "dev": null
+    },
+    {
+     "title": "英雄",
+     "body": "综合\n\n- 修复了英雄在落地前撞上湿滑表面时，落地发力视觉效果不播放的错误\n- 修复了在帧率超过 100 时，敌方玩家移动看起来会出现抖动的问题\n- 修复了可能导致游戏客户端错误计算弹道的问题\n\n艾什\n\n- 修复了艾什的延时雷管在首次爆炸后片刻又产生一次小型爆炸视觉效果的错误\n- 修复了艾什的延时雷管命中敌方技能（例如狂鼠的钢铁陷阱或美的冰墙）时不播放燃烧视觉效果的错误\n- 修复了艾什的延时雷管掉入狭小缝隙时不会爆炸的错误\n- 修复了观战者无法透过艾什的瞄准镜看到敌方轮廓的错误\n- 修复了当 Bob 成为查莉娅投射屏障的目标时，艾什能看到该技能视觉效果的错误\n- 修复了 Bob 会从美的冰墙上滑落的错误\n- 修复了 Bob 被冲锋命中时能把哨戒模式下的堡垒推动的错误\n- 修复了冲锋中的 Bob 无法打开地平线：月球基地气闸门的错误\n- 修复了 Bob 挥手时手肘会短暂消失的错误\n- 修复了 Bob 会持续冲撞一小块碰撞体而不是停下的错误\n- 修复了艾什的短筒猎枪无法推动地图上可破坏物体的错误\n\n堡垒\n\n- 修复了堡垒在坦克模式下被击晕时履带仍会继续移动的错误\n- 修复了堡垒在坦克模式下彩色轮廓会包含其上方漂浮方块的问题\n\n布丽吉塔\n\n- 修复了布丽吉塔使用能量盾击时可以穿过处于急冻状态的美的问题\n\nD.Va\n\n- 修复了「躺平」精彩镜头中，巡游者 D.Va 的头发会穿模进入机甲的问题\n\n麦克雷\n\n- 修复了麦克雷的神射手在快速取消时动画和音效会播放两次的错误\n\n天使\n\n- 修复了天使通过伤害增幅正在自我伤害的法老之鹰来获取终极技能充能的错误\n\n莫伊拉\n\n- 修复了莫伊拉的生化之球可以穿过或卡在墙壁及其他碰撞体中的错误\n\n莱因哈特\n\n- 修复了莱因哈特的裂地猛击无法越过某些地形的错误\n\n黑影\n\n- 修复了黑影在进入隐秘潜行或传送时能听到被侦测音效的错误\n\n秩序之光\n\n- 修复了在英雄画廊查看秩序之光的「创造」胜利姿势时播放额外音效的错误\n- 修复了在英雄画廊查看秩序之光的传送面板时会播放其自毁音效的问题\n- 修复了秩序之光可以将她的炮台传送至地形下方的错误\n\n托比昂\n\n- 修复了托比昂的炮台落在物体边缘时会以极端角度建造的错误\n\n黑百合\n\n- 修复了黑百合的剧毒诡雷可以透过墙壁暴露敌方屏障的错误\n\n破坏球\n\n- 修复了破坏球在最大距离使用工程抓钩时会短暂达到最高速度再恢复正常速度的错误",
+     "dev": null
+    },
+    {
+     "title": "英雄画廊",
+     "body": "综合\n\n- 修复了玩家购买金色武器后，竞技点数扣除未在视觉上更新的错误\n- 修复了在关闭 UI 的情况下查看精彩镜头时，英雄会短暂显示 T 字姿势的错误",
+     "dev": null
+    },
+    {
+     "title": "地图",
+     "body": "占领要点\n\n- 修复了英雄选择倒计时会停留在 29 秒的错误\n\n多拉多\n\n- 修复了某些平台边缘可被意外到达的错误\n\n好莱坞\n\n- 修复了西侧摄影棚大门打开时，门前地面变得湿滑的错误\n\n阿努比斯神殿\n\n- 修复了玩家无法站在第一个目标点附近楼梯平台上的错误\n- 修复了黑影可以到达意外位置的错误",
+     "dev": null
+    },
+    {
+     "title": "未知英雄",
+     "body": "- 修复了在未知英雄乱斗中无法使用未知英雄规则集的问题",
+     "dev": null
+    },
+    {
+     "title": "观战",
+     "body": "- 修复了观战玩家时消灭提示会与其他 UI 元素重叠的错误",
+     "dev": null
+    },
+    {
+     "title": "UI",
+     "body": "色盲选项\n\n- 修复了在自由混战死斗中，玩家 UI 会显示为敌方颜色的错误\n- 修复了色盲队伍颜色无法在计分板和胜利画面中显示的错误\n- 修复了玩家名牌无法在英雄选择界面显示的错误\n- 修复了回合结束计分画面无法正确显示队伍颜色的错误\n- 修复了敌方托比昂的炮台生命条无法显示其队伍颜色的错误",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2018-12-11-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:50:53+00:00",
+  "status": "draft",
+  "source_hash": "sha256:23b11436656b0923a6ae78f85170b1b57193901587d242c03c4853cecfd23511",
+  "kept_english": [
+   "A.I.",
+   "UI"
+  ]
+ }
+}

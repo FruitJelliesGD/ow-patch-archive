@@ -1,0 +1,212 @@
+{
+ "id": "ai-2024-04-30-1",
+ "site": "ai",
+ "date": "2024-04-30",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2024/04",
+ "title": "《守望先锋》补丁说明——2024年4月30日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": "- 输出职责被动治疗削减从 15% 提高至 20%。",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "重装",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "orisa",
+     "name_en": "Orisa",
+     "name_cn": "奥丽莎",
+     "role": "tank",
+     "icon": null,
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Fortify",
+       "name_cn": "强固防御",
+       "slug": "fortify",
+       "icon": null,
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "持续时间从 4.5 秒降低至 3.5 秒。",
+         "before": 4.5,
+         "after": 3.5,
+         "by": -1.0,
+         "by_pct": null,
+         "metric": "duration",
+         "raw_metric": "duration",
+         "unit": "s"
+        },
+        {
+         "text_en": null,
+         "text_cn": "奥丽莎在强固防御期间移动速度降低 20%。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Javelin Spin",
+       "name_cn": "标枪旋击",
+       "slug": "javelin-spin",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/804f9775ecfbc3ac2b84514e429cd8bc4e88027b00cb09126880d7f2c7759b59.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "冷却时间从 7 秒提高至 9 秒。",
+         "before": 7.0,
+         "after": 9.0,
+         "by": 2.0,
+         "by_pct": null,
+         "metric": "cooldown",
+         "raw_metric": "cooldown",
+         "unit": "s"
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "输出",
+   "role": "damage",
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "venture",
+     "name_en": "Venture",
+     "name_cn": "探奇",
+     "role": "damage",
+     "icon": null,
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "SMART Excavator",
+       "name_cn": "智能挖掘钻",
+       "slug": "smart-excavator",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9d5a868a280aba70231d6555b6a5df3bb713b39ea9f994a37eb7cb7425d8f7e6.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "最大爆炸伤害从 45 降低至 40。",
+         "before": 45.0,
+         "after": 40.0,
+         "by": -5.0,
+         "by_pct": null,
+         "metric": "maximum explosion damage",
+         "raw_metric": "maximum explosion damage",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Drill Dash",
+       "name_cn": "钻头突刺",
+       "slug": "drill-dash",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2ad4581a6801402aaa413301fdf851d1b4d09d67e1ef2a4538baf52ea0a5a889.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "初始命中伤害从 40 降低至 30。",
+         "before": 40.0,
+         "after": 30.0,
+         "by": -10.0,
+         "by_pct": null,
+         "metric": "initial impact damage",
+         "raw_metric": "initial impact damage",
+         "unit": null
+        }
+       ]
+      },
+      {
+       "name_en": "Tectonic Shock",
+       "name_cn": "地壳震击",
+       "slug": "tectonic-shock",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/210991b74451a635e28e53da0fcfdfe2a0600c0845392db627e8829ecca7149e.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "终极技能充能消耗提高 10%。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 10.0,
+         "metric": "ultimate_cost",
+         "raw_metric": "ultimate charge cost",
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 开启主播模式时屏蔽他人将不再显示其名称。\n- 修复了非队长玩家也能选择重新排队按钮的错误。\n- 修复了导致部分喷漆看起来过饱和的光照问题。",
+     "dev": null
+    },
+    {
+     "title": "地图",
+     "body": "花村\n\n- 我们修复了花村（攻防作战）的光照问题。该地图现可在攻防作战街机先锋模式和自定游戏中游玩。",
+     "dev": null
+    },
+    {
+     "title": "英雄",
+     "body": "D.Va\n\n- 修复了 D.Va 的部分标记信号会在聊天中打入多个 0 的错误。\n\n探奇\n\n- 修复了钻头突刺在与末日铁拳的火箭重拳或奥丽莎的能量标枪交互时可能发生的问题，该问题会导致探奇以极快速度被击飞。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2024-04-30-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-10-23T14:50:13+00:00",
+  "status": "draft",
+  "source_hash": "sha256:bfce738ce230851970d1c5eef1ca94c6eddc4d43ff73571032f35e6871b89f04",
+  "kept_english": []
+ }
+}
