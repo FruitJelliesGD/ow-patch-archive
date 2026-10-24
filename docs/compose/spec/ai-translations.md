@@ -15,7 +15,7 @@ updated: 2026-10-23
 前端：`web/app.js` 新增 `loadAiIndex` / `aiFor` / `aiBadge`，`initPatch` 支持 `lang=ai` 并在无译文时回退官方语言；`web/patch.html` 增加 `#patch-ai-note`；`web/style.css` 增加紫色 AI 徽章/标签样式；`pages.yml` 把 `data/ai_translations` 一并部署到 `_site/data/`。
 
 **Verification** —
-- `pytest -q` → **322 passed**（新增工具/译文契约测试）
+- `pytest -q` → **323 passed**（新增工具/译文契约测试）
 - `node tools/_smoke_web.js` → ALL WEB ASSERTIONS OK（新增 `aiLangButtons=2`、`aiTitle`、`aiBodyChinese`、`aiNoticeVisible`、`aiSiteBadge`、`indexAiBadge`）
 - 本地 `tools/serve.py` + HTTP 检查：AI 页面与 4 个 JSON 均 200；官方 `patches_index.json` 未变
 - `git status`：仅新增 `data/ai_translations/`、`tests/test_ai_translations.py`、本 spec；修改 `web/app.js`、`web/patch.html`、`web/index.html`、`web/style.css`、`tools/_smoke_web.js`、`pages.yml`、`README.md`

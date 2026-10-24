@@ -1014,7 +1014,18 @@ def run(
 
 
 def main(argv: list[str] | None = None, *, data_dir: pathlib.Path | None = None) -> int:
-    data = data_dir or (pathlib.Path(__file__).resolve().parents[2] / "data")
+    if data_dir is None:
+        # In CI the package is installed into site-packages, so __file__ is not
+        # under the checkout. The workflow runs from the repository root.
+        candidate = pathlib.Path.cwd() / "data"
+        package_candidate = pathlib.Path(__file__).resolve().parents[2] / "data"
+        if (candidate / "patches_index.json").exists():
+            data_dir = candidate
+        elif (package_candidate / "patches_index.json").exists():
+            data_dir = package_candidate
+        else:
+            data_dir = candidate
+    data = data_dir
     parser = argparse.ArgumentParser(description="AI 翻译缺少官方中文的补丁")
     sub = parser.add_subparsers(dest="command", required=True)
 

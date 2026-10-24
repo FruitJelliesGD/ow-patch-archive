@@ -125,6 +125,11 @@ def test_status_reports_no_raw_key(monkeypatch):
     assert "secret-value" not in json.dumps(info)
 
 
+def test_main_defaults_to_cwd_data(monkeypatch):
+    monkeypatch.chdir(ROOT)
+    assert ai.main(["status", "--json"]) == 0
+
+
 def test_workflows_wire_ai_translation():
     pages = (ROOT / ".github" / "workflows" / "pages.yml").read_text(encoding="utf-8")
     assert "ai-translate" in pages

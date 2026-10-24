@@ -13,7 +13,7 @@ updated: 2026-10-23
 **Verification** —
 - 7 篇试跑（2018 PTR / 2019 / 2020 / 2023 最大补丁 / 2025 stadium / 2026 最新 / 2026 公告）全部通过结构、数字与中文校验。
 - 随后全量回填 288 篇（含试跑与原有 3 篇），`validate` 0 错误。
-- `pytest -q` → **322 passed**；`node tools/_smoke_web.js` → ALL WEB ASSERTIONS OK。
+- `pytest -q` → **323 passed**；`node tools/_smoke_web.js` → ALL WEB ASSERTIONS OK。
 - 站点新增 `ai-translate.yml`；`pages.yml` 在 AI 提交后自动重建。
 
 ## [S1] Problem
@@ -67,6 +67,10 @@ python tools/ai_translate.py index
 ### D6 未来自动化
 
 `ai-translate.yml` 在 monitor/monitor-fast/watchdog 成功后运行，默认只翻译最近 14 天、最多 10 篇；需要仓库 Secret `OWPATCH_API_KEY`，否则打印说明并跳过。`pages.yml` 增加 `ai-translate` 触发，AI 提交后自动重建站点。
+
+## Journey log
+
+① CI 首次运行全部 `FileNotFoundError: .../python3.12/data/patches_index.json`：`pip install .` 后包的 `__file__` 位于 site-packages，`parents[2]/data` 不再是仓库根目录。修复为 `main()` 默认优先使用 `Path.cwd()/data`，并在 workflow 的仓库根目录执行；已用安装布局模拟验证 `status` / `run` 均正常。
 
 ## 已知边界
 
