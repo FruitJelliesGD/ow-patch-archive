@@ -966,7 +966,8 @@ def run(
     _log(f"待翻译 {len(refs)} 篇；API {settings.base_url} 模型 {settings.model}，key 来源 {settings.source or '无'}")
     if not refs:
         _log("没有需要翻译的补丁")
-        rebuild_index(data_dir)
+        if not (_ai_dir(data_dir) / "index.json").exists():
+            rebuild_index(data_dir)
         return 0
     if dry_run:
         total_units = 0
