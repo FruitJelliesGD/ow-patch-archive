@@ -7,6 +7,86 @@
  "role": "tank",
  "timeline": [
   {
+   "patch": "en-2026-11-03-1",
+   "date": "2026-11-03",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/11",
+   "patch_title": "Overwatch Retail Patch Notes – November 3, 2026",
+   "kind": "ability",
+   "dimension": "ability",
+   "mode": "standard",
+   "ability_slug": "commanding-shout",
+   "ability_en": "Commanding Shout",
+   "ability_cn": "命令怒吼",
+   "text_en": "Added a new UI element that tracks allies within range and allies currently affected by Commanding Shout.",
+   "text_cn": null,
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "en-2026-11-03-1",
+   "date": "2026-11-03",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/11",
+   "patch_title": "Overwatch Retail Patch Notes – November 3, 2026",
+   "kind": "ability",
+   "dimension": "ability",
+   "mode": "standard",
+   "ability_slug": "carnage",
+   "ability_en": "Carnage",
+   "ability_cn": "血斩",
+   "text_en": "Cooldown reduced from 9 to 7 seconds.",
+   "text_cn": null,
+   "before": 9.0,
+   "after": 7.0,
+   "by": -2.0,
+   "by_pct": null,
+   "metric": "cooldown",
+   "unit": "s"
+  },
+  {
+   "patch": "en-2026-11-03-1",
+   "date": "2026-11-03",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/11",
+   "patch_title": "Overwatch Retail Patch Notes – November 3, 2026",
+   "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
+   "mode": "standard",
+   "text_en": "Base health increased from 375 to 425.",
+   "text_cn": null,
+   "before": 375.0,
+   "after": 425.0,
+   "by": 50.0,
+   "by_pct": null,
+   "metric": "base health",
+   "unit": null
+  },
+  {
+   "patch": "en-2026-11-03-1",
+   "date": "2026-11-03",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/11",
+   "patch_title": "Overwatch Retail Patch Notes – November 3, 2026",
+   "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
+   "mode": "standard",
+   "text_en": "Base health increased from 450 to 500. (6v6)",
+   "text_cn": null,
+   "before": 450.0,
+   "after": 500.0,
+   "by": 50.0,
+   "by_pct": null,
+   "metric": "base health",
+   "unit": null
+  },
+  {
    "patch": "cn-2026-10-07-1",
    "date": "2026-10-07",
    "site": "cn",
@@ -3571,6 +3651,22 @@
   }
  ],
  "values": {
+  "carnage:cooldown": [
+   {
+    "date": "2026-11-03",
+    "value": 7.0
+   }
+  ],
+  "attr:health:base health": [
+   {
+    "date": "2025-11-06",
+    "value": 450.0
+   },
+   {
+    "date": "2026-11-03",
+    "value": 500.0
+   }
+  ],
   "commanding-shout:cooldown": [
    {
     "date": "2022-12-06",
@@ -3587,12 +3683,6 @@
    {
     "date": "2026-07-15",
     "value": 13.0
-   }
-  ],
-  "attr:health:base health": [
-   {
-    "date": "2025-11-06",
-    "value": 450.0
    }
   ],
   "attr:health:的过量生命值": [

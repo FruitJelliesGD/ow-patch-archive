@@ -7,6 +7,46 @@
  "role": "tank",
  "timeline": [
   {
+   "patch": "en-2026-11-03-1",
+   "date": "2026-11-03",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/11",
+   "patch_title": "Overwatch Retail Patch Notes – November 3, 2026",
+   "kind": "ability",
+   "dimension": "ability",
+   "mode": "standard",
+   "ability_slug": "incendiary-chainguns",
+   "ability_en": "Incendiary Chainguns",
+   "ability_cn": null,
+   "text_en": "Burning damage over time increased from 15 to 20.",
+   "text_cn": null,
+   "before": 15.0,
+   "after": 20.0,
+   "by": 5.0,
+   "by_pct": null,
+   "metric": "burning damage over time",
+   "unit": null
+  },
+  {
+   "patch": "en-2026-11-03-1",
+   "date": "2026-11-03",
+   "site": "en",
+   "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/11",
+   "patch_title": "Overwatch Retail Patch Notes – November 3, 2026",
+   "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
+   "mode": "standard",
+   "text_en": "Base armor increased from 125 to 150.",
+   "text_cn": null,
+   "before": 125.0,
+   "after": 150.0,
+   "by": 25.0,
+   "by_pct": null,
+   "metric": "base armor",
+   "unit": null
+  },
+  {
    "patch": "cn-2026-10-07-1",
    "date": "2026-10-07",
    "site": "cn",
@@ -3280,6 +3320,38 @@
   }
  ],
  "values": {
+  "incendiary-chainguns:burning damage over time": [
+   {
+    "date": "2026-11-03",
+    "value": 20.0
+   }
+  ],
+  "attr:health:base armor": [
+   {
+    "date": "2023-12-05",
+    "value": 150.0
+   },
+   {
+    "date": "2023-12-15",
+    "value": 250.0
+   },
+   {
+    "date": "2024-01-09",
+    "value": 200.0
+   },
+   {
+    "date": "2024-12-10",
+    "value": 150.0
+   },
+   {
+    "date": "2026-09-08",
+    "value": 125.0
+   },
+   {
+    "date": "2026-11-03",
+    "value": 150.0
+   }
+  ],
   "chainguns:射击单把链式步枪的最大散布角度": [
    {
     "date": "2026-09-09",
@@ -3314,28 +3386,6 @@
    {
     "date": "2026-09-08",
     "value": 10.0
-   }
-  ],
-  "attr:health:base armor": [
-   {
-    "date": "2023-12-05",
-    "value": 150.0
-   },
-   {
-    "date": "2023-12-15",
-    "value": 250.0
-   },
-   {
-    "date": "2024-01-09",
-    "value": 200.0
-   },
-   {
-    "date": "2024-12-10",
-    "value": 150.0
-   },
-   {
-    "date": "2026-09-08",
-    "value": 125.0
    }
   ],
   "overrun:cooldown": [
