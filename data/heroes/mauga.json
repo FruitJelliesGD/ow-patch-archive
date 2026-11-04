@@ -7,17 +7,57 @@
  "role": "tank",
  "timeline": [
   {
+   "patch": "cn-2026-11-04-1",
+   "date": "2026-11-04",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/11/",
+   "patch_title": "《守望先锋》补丁说明——2026年11月4日",
+   "kind": "ability",
+   "dimension": "weapon",
+   "mode": "standard",
+   "ability_slug": "incendiary-chaingun",
+   "ability_en": "Incendiary Chaingun",
+   "ability_cn": "燃火链式机枪",
+   "text_en": null,
+   "text_cn": "持续燃烧伤害从15提高至20",
+   "before": 15.0,
+   "after": 20.0,
+   "by": 5.0,
+   "by_pct": null,
+   "metric": "持续燃烧伤害",
+   "unit": null
+  },
+  {
+   "patch": "cn-2026-11-04-1",
+   "date": "2026-11-04",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/11/",
+   "patch_title": "《守望先锋》补丁说明——2026年11月4日",
+   "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
+   "mode": "standard",
+   "text_en": null,
+   "text_cn": "基础护甲从125提高至150",
+   "before": 125.0,
+   "after": 150.0,
+   "by": 25.0,
+   "by_pct": null,
+   "metric": "基础护甲",
+   "unit": null
+  },
+  {
    "patch": "en-2026-11-03-1",
    "date": "2026-11-03",
    "site": "en",
    "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/11",
    "patch_title": "Overwatch Retail Patch Notes – November 3, 2026",
    "kind": "ability",
-   "dimension": "ability",
+   "dimension": "weapon",
    "mode": "standard",
-   "ability_slug": "incendiary-chainguns",
-   "ability_en": "Incendiary Chainguns",
-   "ability_cn": null,
+   "ability_slug": "incendiary-chaingun",
+   "ability_en": "Incendiary Chaingun",
+   "ability_cn": "燃火链式机枪",
    "text_en": "Burning damage over time increased from 15 to 20.",
    "text_cn": null,
    "before": 15.0,
@@ -3320,7 +3360,23 @@
   }
  ],
  "values": {
-  "incendiary-chainguns:burning damage over time": [
+  "incendiary-chaingun:持续燃烧伤害": [
+   {
+    "date": "2026-11-04",
+    "value": 20.0
+   }
+  ],
+  "attr:health:基础护甲": [
+   {
+    "date": "2026-09-09",
+    "value": 125.0
+   },
+   {
+    "date": "2026-11-04",
+    "value": 150.0
+   }
+  ],
+  "incendiary-chaingun:burning damage over time": [
    {
     "date": "2026-11-03",
     "value": 20.0
@@ -3368,12 +3424,6 @@
    {
     "date": "2026-09-09",
     "value": 10.0
-   }
-  ],
-  "attr:health:基础护甲": [
-   {
-    "date": "2026-09-09",
-    "value": 125.0
    }
   ],
   "chainguns:maximum spread when firing both guns": [

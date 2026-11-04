@@ -7,6 +7,86 @@
  "role": "tank",
  "timeline": [
   {
+   "patch": "cn-2026-11-04-1",
+   "date": "2026-11-04",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/11/",
+   "patch_title": "《守望先锋》补丁说明——2026年11月4日",
+   "kind": "ability",
+   "dimension": "ability",
+   "mode": "standard",
+   "ability_slug": "commanding-shout",
+   "ability_en": "Commanding Shout",
+   "ability_cn": "命令怒吼",
+   "text_en": null,
+   "text_cn": "添加了一个新的界面元素，可以追踪处于范围内的盟友，以及当前受到命令怒吼影响的盟友",
+   "before": null,
+   "after": null,
+   "by": null,
+   "by_pct": null,
+   "metric": null,
+   "unit": null
+  },
+  {
+   "patch": "cn-2026-11-04-1",
+   "date": "2026-11-04",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/11/",
+   "patch_title": "《守望先锋》补丁说明——2026年11月4日",
+   "kind": "ability",
+   "dimension": "ability",
+   "mode": "standard",
+   "ability_slug": "carnage",
+   "ability_en": "Carnage",
+   "ability_cn": "血斩",
+   "text_en": null,
+   "text_cn": "冷却时间从9秒缩短至7秒",
+   "before": 9.0,
+   "after": 7.0,
+   "by": -2.0,
+   "by_pct": null,
+   "metric": "cooldown",
+   "unit": "s"
+  },
+  {
+   "patch": "cn-2026-11-04-1",
+   "date": "2026-11-04",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/11/",
+   "patch_title": "《守望先锋》补丁说明——2026年11月4日",
+   "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
+   "mode": "standard",
+   "text_en": null,
+   "text_cn": "基础生命值从375点提高至425点",
+   "before": 375.0,
+   "after": 425.0,
+   "by": 50.0,
+   "by_pct": null,
+   "metric": "health",
+   "unit": "hp"
+  },
+  {
+   "patch": "cn-2026-11-04-1",
+   "date": "2026-11-04",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/11/",
+   "patch_title": "《守望先锋》补丁说明——2026年11月4日",
+   "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
+   "mode": "standard",
+   "text_en": null,
+   "text_cn": "基础生命值从450点提高至500点（6v6）",
+   "before": 450.0,
+   "after": 500.0,
+   "by": 50.0,
+   "by_pct": null,
+   "metric": "health",
+   "unit": "hp"
+  },
+  {
    "patch": "en-2026-11-03-1",
    "date": "2026-11-03",
    "site": "en",
@@ -3655,6 +3735,20 @@
    {
     "date": "2026-11-03",
     "value": 7.0
+   },
+   {
+    "date": "2026-11-04",
+    "value": 7.0
+   }
+  ],
+  "attr:health:health": [
+   {
+    "date": "2024-02-13",
+    "value": 375.0
+   },
+   {
+    "date": "2026-11-04",
+    "value": 500.0
    }
   ],
   "attr:health:base health": [
@@ -3747,12 +3841,6 @@
    {
     "date": "2024-02-13",
     "value": 90.0
-   }
-  ],
-  "attr:health:health": [
-   {
-    "date": "2024-02-13",
-    "value": 375.0
    }
   ],
   "jagged-blade:impact damage": [

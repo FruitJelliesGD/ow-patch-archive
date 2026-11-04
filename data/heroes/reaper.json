@@ -7,6 +7,25 @@
  "role": "damage",
  "timeline": [
   {
+   "patch": "cn-2026-11-04-1",
+   "date": "2026-11-04",
+   "site": "cn",
+   "url": "https://ow.blizzard.cn/news/patch-notes/live/2026/11/",
+   "patch_title": "《守望先锋》补丁说明——2026年11月4日",
+   "kind": "general",
+   "dimension": "hero_attr",
+   "subject": "health",
+   "mode": "standard",
+   "text_en": null,
+   "text_cn": "基础生命值从275提高至300",
+   "before": 275.0,
+   "after": 300.0,
+   "by": 25.0,
+   "by_pct": null,
+   "metric": "health",
+   "unit": "hp"
+  },
+  {
    "patch": "en-2026-11-03-1",
    "date": "2026-11-03",
    "site": "en",
@@ -3993,6 +4012,24 @@
   }
  ],
  "values": {
+  "attr:health:health": [
+   {
+    "date": "2024-02-13",
+    "value": 300.0
+   },
+   {
+    "date": "2026-06-16",
+    "value": 50.0
+   },
+   {
+    "date": "2026-06-17",
+    "value": 275.0
+   },
+   {
+    "date": "2026-11-04",
+    "value": 300.0
+   }
+  ],
   "attr:health:base health": [
    {
     "date": "2026-11-03",
@@ -4021,20 +4058,6 @@
    {
     "date": "2026-06-17",
     "value": 30.0
-   }
-  ],
-  "attr:health:health": [
-   {
-    "date": "2024-02-13",
-    "value": 300.0
-   },
-   {
-    "date": "2026-06-16",
-    "value": 50.0
-   },
-   {
-    "date": "2026-06-17",
-    "value": 275.0
    }
   ],
   "attr:move_speed:move_speed": [
