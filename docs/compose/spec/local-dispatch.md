@@ -43,7 +43,7 @@ Content-Type: application/json
 | 字段 | 必填 | 说明 |
 |---|---|---|
 | `dates` | 是 | 本地看到的补丁日期（`YYYY-MM-DD`），用于跑后校验 |
-| `sites` | 否 | `en` / `cn`；缺省表示两站都校验 |
+| `sites` | 否 | `en` / `cn`；本地工具按**检出站点**填写（中文站补丁送 `cn`）；缺省表示两站都校验 |
 | `reason` | 否 | `new` / `modified` / `manual`，仅用于日志 |
 | `notify` | 否 | 默认 `false`：跳过 Issue/邮件（本地工具已推送） |
 | `full` | 否 | 本地工具想全量扫描时的提示。工具侧 `--full` / `dispatch_target = "full"` 会**直接**调用 `monitor.yml` 的 `workflow_dispatch`，不再发 `repository_dispatch`（`monitor-fast` 固定 `--months 2` 增量窗口） |
@@ -57,8 +57,10 @@ Content-Type: application/json
 3. 常规 `tools/run.py --data data --months 2`，抓取仍由本工作流完成；
 4. **通知抑制**：`notify != true` 时不给 `--send-email`、不开更新 Issue
    （避免与本地推送重复）；`notify` 显式 `true` 时照常；
-5. **入库校验**：`Verify dispatched dates landed in the archive` 检查
-   `data/manifest.json` 是否含 `(site, date)`，缺失则 `exit 1` —— 解析坏掉不会静默变全绿；
+5. **入库校验**：`Verify dispatched dates landed in the archive` 按 payload 里的
+   `sites × dates` 检查 `data/manifest.json` 是否含 `(site, date)`，缺失则 `exit 1`
+   —— 解析坏掉不会静默变全绿。校验只认 payload 声明的站点，因此**本地工具必须送
+   "检出站点"**（中文站补丁送 `cn`，英文站送 `en`），否则会拿另一站的日期比对而必然失败；
 6. 失败时沿用去重的"守望先锋监控异常"告警 Issue；
 7. 提交数据后 `pages` 工作流通过 `workflow_run` 重建站点（约 2–5 分钟可看到结构化详情）。
 
@@ -86,4 +88,5 @@ Content-Type: application/json
 | `404 Not Found` | 仓库名错，或工作流/事件类型未在默认分支上 |
 | `422 Unprocessable Entity` | `event_type` 或 payload 不合法 |
 | 触发了但归档无新补丁 | 看运行日志的 `Verify dispatched dates landed...` 与 `tools/run.py` 输出；可能是站点变体漂移或解析失败（会开告警 Issue） |
+| 校验报 `missing [('en', '<中文站日期>')]` | 本地工具送错 `sites`（中文站补丁却声明 `en`）：升级 owpatch-tool（≥ 修复版）或核对 payload |
 | 触发后站点 2–5 分钟才更新 | 正常：数据提交后由 `pages` 工作流重建 |

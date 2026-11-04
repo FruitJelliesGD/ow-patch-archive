@@ -89,7 +89,14 @@ jobs:
                       for v in manifest.values() if isinstance(v, dict)}
           missing = [(s, d) for s in sites for d in dates if (s, d) not in archived]
           if missing:
+              # 用 ::error:: 让缺失对直接出现在运行页的注解里（日志需登录才能看）
               print("ERROR: dispatched dates missing from archive:", missing)
+              for site, day in missing:
+                  print(f"::error::dispatched {site} {day} missing from data/manifest.json")
+              recent = sorted({(v.get("site"), v.get("date"))
+                               for v in manifest.values() if isinstance(v, dict)})[-6:]
+              print("payload sites:", sites, "dates:", dates)
+              print("recent archived (site, date):", recent)
               sys.exit(1)
           print("verified dispatched dates:", [f"{s} {d}" for s in sites for d in dates])
           PY
