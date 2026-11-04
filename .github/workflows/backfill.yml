@@ -41,7 +41,17 @@ jobs:
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add -A
             git commit -m "data: backfill archive ($(date -u +%Y-%m-%dT%H:%MZ))"
-            git push
+            # GitHub 偶发 "remote: fatal error in commit_refs"（服务端瞬时错误）：重试 3 次再判失败
+            attempts=0
+            until git push; do
+              attempts=$((attempts + 1))
+              if [ "$attempts" -ge 3 ]; then
+                echo "git push failed after $attempts attempts" >&2
+                exit 1
+              fi
+              echo "push failed (attempt $attempts/3); retrying in 5s" >&2
+              sleep 5
+            done
           else
             echo "archive already up to date"
           fi
