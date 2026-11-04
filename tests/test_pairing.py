@@ -78,8 +78,8 @@ def test_seq_only_matches_exact():
 
 def test_real_data_pairing_invariants():
     en, cn = patch_meta_from_manifest(DATA)
-    # 2026-10-21 快照：350 EN / 62 CN（CN 站每个补丁页通常晚一天发布）
-    assert len(en) == 350 and len(cn) == 62
+    # 2026-11-04 快照：351 EN（新增 en-2026-11-03-1）/ 62 CN（CN 站每个补丁页通常晚一天发布）
+    assert len(en) == 351 and len(cn) == 62
     result = pair_patches(en, cn)
     assert len(result.pairs) >= 45, f"only {len(result.pairs)} pairs"
     # every CN patch appears at most once across pairs + unpaired
@@ -180,7 +180,7 @@ def test_real_patches_index_categories_invariants():
         key: sum(key in p.get("categories", []) for p in index["patches"])
         for key in ("hero_trial", "ptr", "stadium", "workshop")
     }
-    assert counts == {"hero_trial": 5, "ptr": 2, "stadium": 57, "workshop": 56}
+    assert counts == {"hero_trial": 5, "ptr": 2, "stadium": 58, "workshop": 56}
     assert all(isinstance(p.get("categories"), list) for p in index["patches"])
     assert all("content_qp_hacked" not in p for p in index["patches"])
 

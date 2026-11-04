@@ -324,8 +324,9 @@ def test_real_entries_changes_field():
     for entry in idx["entries"]:
         assert 1 <= entry["changes"] <= entry["count"], entry["key"]
     # the whole 2026-10-06 hotfix landed in one logical patch, but as 12 rows
-    assert by_key["sombra::ability::hotfix"]["count"] == 24
-    assert by_key["sombra::ability::hotfix"]["changes"] == 12
+    # (2026-11-03 的 hotfix 追加一条 EN 记录 → 13 逻辑行 / 25 原始行)
+    assert by_key["sombra::ability::hotfix"]["count"] == 25
+    assert by_key["sombra::ability::hotfix"]["changes"] == 13
     # 18 raw records, one EN/CN pair merged -> 17 rows on the detail page
     assert by_key["soldier-76::weapon::heavy-pulse-rifle"]["count"] == 18
     assert by_key["soldier-76::weapon::heavy-pulse-rifle"]["changes"] == 17
