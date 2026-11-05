@@ -1,0 +1,112 @@
+{
+ "id": "ai-2026-11-05-1",
+ "site": "ai",
+ "date": "2026-11-05",
+ "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/11",
+ "title": "《守望先锋》补丁说明——2026年11月5日",
+ "seq": 1,
+ "sections": [
+  {
+   "type": "generic_update",
+   "title": "在线修正更新",
+   "role": null,
+   "description": "本次为在线修正更新。11 月 3 日补丁的回放代码仍然可用。",
+   "dev": null,
+   "heroes": [],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "hero_update",
+   "title": "英雄更新",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [
+    {
+     "slug": "wrecking-ball",
+     "name_en": "Wrecking Ball",
+     "name_cn": "破坏球",
+     "role": "tank",
+     "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ba90526d1d04df32560cc663a5df5a61b601492922336b4cbbda10572c3a6900.png",
+     "dev_note": null,
+     "general": [],
+     "perks": [],
+     "abilities": [
+      {
+       "name_en": "Grappling Claw",
+       "name_cn": "工程抓钩",
+       "slug": "grappling-claw",
+       "icon": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/59622a0a190adb30f2ac004485b44e1956cd5fd7a984df1bb4b0e0c156878ed6.png",
+       "changes": [
+        {
+         "text_en": null,
+         "text_cn": "破坏球在收回工程抓钩时的基础速度上限提高 15%。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": 15.0,
+         "metric": "base speed limit for wrecking ball while retracting grappling claw",
+         "raw_metric": "base speed limit for wrecking ball while retracting grappling claw",
+         "unit": null
+        },
+        {
+         "text_en": null,
+         "text_cn": "友方速度提升现在会提高破坏球在收回工程抓钩时的速度上限。",
+         "before": null,
+         "after": null,
+         "by": null,
+         "by_pct": null,
+         "metric": null,
+         "raw_metric": null,
+         "unit": null
+        }
+       ]
+      }
+     ],
+     "stadium_items": []
+    }
+   ],
+   "blocks": [],
+   "maps": []
+  },
+  {
+   "type": "generic_update",
+   "title": "错误修复",
+   "role": null,
+   "description": null,
+   "dev": null,
+   "heroes": [],
+   "blocks": [
+    {
+     "title": "综合",
+     "body": "- 此前未在竞技驱动中抵达检查点 4 的玩家，不应再装备无法卸下的签名。",
+     "dev": null
+    },
+    {
+     "title": "英雄",
+     "body": "- 在此前的更新中，修复了驾驶员 D.Mon 被复活时没有终极技能充能，从而导致 D.Mon 无法立即重新进入机甲的问题。",
+     "dev": null
+    },
+    {
+     "title": "竞技场",
+     "body": "- 修复了计分板及相关界面无法正常显示的问题。",
+     "dev": null
+    }
+   ],
+   "maps": []
+  }
+ ],
+ "raw_text": null,
+ "hash": null,
+ "source_patch_id": "en-2026-11-05-1",
+ "translation": {
+  "skill": "overwatch-patch-translation v7.6",
+  "engine": "api",
+  "model": "deepseek-chat",
+  "generated_at": "2026-11-05T22:47:08+00:00",
+  "status": "draft",
+  "source_hash": "sha256:35bbbbf5c515665d21a238d6d56fe3946f012ee88760a668913fdaef1fd9fbe0",
+  "kept_english": []
+ }
+}
