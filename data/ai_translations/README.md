@@ -7,7 +7,7 @@
 
 ## 免责声明
 
-- 译文由 OpenAI 兼容接口（DeepSeek）按 `overwatch-patch-translation` 技能 v7.6 生成；实际模型记录在每个文件的 `translation.model`。
+- 译文由 OpenAI 兼容接口（DeepSeek）按 `overwatch-patch-translation` 技能生成：技能快照在 `skill/`（`VERSION` 记录版本，当前 v7.16）；已回填的 288 篇是 v7.6 产出，未重译。实际模型与技能版本记录在每个文件的 `translation.model` / `translation.skill`。
 - **不是官方中文**；内容、数值、语气均可能与官方原文有出入。以 `source_patch_id` 指向的英文原文为准。
 - 文件里的 `translation.status` 为 `draft`，表示尚未人工复核。
 
@@ -78,6 +78,21 @@ python tools/ai_translate.py validate
 
 凭据优先级：`OWPATCH_API_KEY` > `--translate-config` > `<owpatch-tool data>/ui-config.toml` > `../owpatch-tool/config.toml`。
 本地会直接复用 owpatch-tool WebUI 保存的 key；GitHub Actions 使用仓库 Secret `OWPATCH_API_KEY`。
+
+## 技能快照（`skill/`）
+
+`skill/` 是 `../overwatch-patch-translation` 技能的运行时副本，`ai_translate.py` 只读这里的
+`system_prompt.md`（翻译规则）与 `overwatch_terms.json`（术语对照表），版本号写在 `VERSION`。
+技能更新后重新同步（工作区根目录执行）：
+
+```bash
+cp overwatch-patch-translation/prompts/system_prompt.md 守望先锋日志监控/data/ai_translations/skill/system_prompt.md
+cp overwatch-patch-translation/scripts/overwatch_terms.json 守望先锋日志监控/data/ai_translations/skill/overwatch_terms.json
+python -c "import json,pathlib;p=pathlib.Path('守望先锋日志监控/data/ai_translations/skill/overwatch_terms.json');print(json.loads(p.read_text(encoding='utf-8'))['version'])" > 守望先锋日志监控/data/ai_translations/skill/VERSION
+```
+
+`VERSION` 必须与 `overwatch_terms.json` 的 `version` 一致（`tests/test_ai_translations.py` 会校验）。
+新译文的 `translation.skill` 由 `VERSION` 动态生成，历史译文保留生成时的版本号。
 
 ## 新增一篇
 

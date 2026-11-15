@@ -43,7 +43,7 @@ data/ai_translations/
 - 保留全部数字、百分比、版本号、列表符号/缩进/空行、`**加粗**`；单位译 秒/米/发/秒。
 - 标题日期取源 JSON `date`（归档日期），不取英文标题日期（09-02 英文标题写 September 1）。
 - 开发者注不加「开发者注：」前缀（站点用 `dev-note` 样式）。
-- 术语以 v7.6 为准；未收录专名保留英文并登记 `kept_english`；不写 `[待补充]`/译注。
+- 术语以技能快照 `data/ai_translations/skill/overwatch_terms.json` 为准（`VERSION` 记录当前版本）；未收录专名保留英文并登记 `kept_english`；不写 `[待补充]`/译注。
 - 2016 补充决策：`Skill Rating`→竞技等级、`Sudden Death`→绝杀局、`Time Bank`→时间池、`Top 500`→500强、`Golden Weapons`→黄金武器、`Loot Box`→补给箱、`Play of the Game`→全场最佳、`BattleTag`→战网昵称、`Shield Generator`→护盾发生器、`Photon Shield`→光子护盾、`Winter Wonderland`→雪国仙境、段位→青铜/白银/黄金/白金/钻石/大师/宗师；`Boop` 保留英文。
 - 源文笔误（`Botsare`、`wasn"t`、`ProjectedBarrier`）保留 `name_en`/`slug`，展示文本按语义翻译。
 

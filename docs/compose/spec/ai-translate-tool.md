@@ -8,7 +8,7 @@ updated: 2026-10-23
 
 ## Report
 
-**What was built** — 新增 `src/ow2_patch/ai_translate.py` + `tools/ai_translate.py`，从 `patches_index.json` 找出所有 `patch_id_cn` 为空的 EN 补丁，按技能提示词与 v7.6 术语表分批翻译，拼装为 `data/ai_translations/zh/<year>/<date>-<seq>.json` 并重建 `index.json`。默认直接复用 `owpatch-tool` WebUI 保存的 `ui-config.toml` 凭据（`OWPATCH_API_KEY` 可覆盖），因此本地无需另配 key。
+**What was built** — 新增 `src/ow2_patch/ai_translate.py` + `tools/ai_translate.py`，从 `patches_index.json` 找出所有 `patch_id_cn` 为空的 EN 补丁，按技能提示词与技能快照术语表分批翻译，拼装为 `data/ai_translations/zh/<year>/<date>-<seq>.json` 并重建 `index.json`。默认直接复用 `owpatch-tool` WebUI 保存的 `ui-config.toml` 凭据（`OWPATCH_API_KEY` 可覆盖），因此本地无需另配 key。
 
 **Verification** —
 - 7 篇试跑（2018 PTR / 2019 / 2020 / 2023 最大补丁 / 2025 stadium / 2026 最新 / 2026 公告）全部通过结构、数字与中文校验。
@@ -43,7 +43,7 @@ Key 只在内存中使用，`status --json` 只输出 `api_key_set` 与来源；
 
 ### D3 提示词
 
-- 读取 `data/ai_translations/skill/system_prompt.md`（技能 v7.6 的运行时提示词副本）。
+- 读取 `data/ai_translations/skill/system_prompt.md`（技能运行时提示词副本，随 `../overwatch-patch-translation` 同步）。
 - 取 `## 输出契约` 之前的规则，追加 JSON 模式契约：输入 `[{id,kind,context,text}]`，输出 `{id: 中文}`。
 - 每批按文本命中注入术语 + `core_terms`，避免整表重复发送。
 - `title` 程序化生成，不让模型翻译。

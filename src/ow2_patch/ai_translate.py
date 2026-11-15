@@ -360,6 +360,15 @@ def load_skill(data_dir: pathlib.Path) -> tuple[str, dict]:
     return prompt, terms
 
 
+def load_skill_version(data_dir: pathlib.Path) -> str:
+    """读取技能快照版本号（`skill/VERSION`），缺失时返回空串。"""
+    path = _ai_dir(data_dir) / SKILL_DIRNAME / "VERSION"
+    try:
+        return path.read_text(encoding="utf-8").strip()
+    except OSError:
+        return ""
+
+
 def build_system_prompt(raw_prompt: str) -> str:
     rules = raw_prompt
     marker = "## 输出契约"
@@ -581,7 +590,14 @@ def _title_for(date_text: str) -> str:
     return f"《守望先锋》补丁说明——{int(year)}年{int(month)}月{int(day)}日"
 
 
-def build_ai_patch(source: dict, translations: dict[str, str], *, model: str, provider: str) -> dict:
+def build_ai_patch(
+    source: dict,
+    translations: dict[str, str],
+    *,
+    model: str,
+    provider: str,
+    skill_version: str = "",
+) -> dict:
     out = copy.deepcopy(source)
     out["id"] = f"ai-{source['date']}-{source.get('seq', 1)}"
     out["site"] = "ai"
@@ -696,7 +712,11 @@ def build_ai_patch(source: dict, translations: dict[str, str], *, model: str, pr
         if original and value.strip() == original.strip() and re.search(r"[A-Za-z]", value):
             kept.append(value.strip())
     out["translation"] = {
-        "skill": "overwatch-patch-translation v7.6",
+        "skill": (
+            f"overwatch-patch-translation v{skill_version}"
+            if skill_version
+            else "overwatch-patch-translation"
+        ),
         "engine": provider,
         "model": model,
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
@@ -932,7 +952,13 @@ def _translate_one(data_dir: pathlib.Path, client: ApiClient, ref: PatchRef, *, 
     translations: dict[str, str] = {}
     for batch in make_batches(units, batch_chars):
         translations.update(translate_batch_safe(client, batch, terms, system_prompt))
-    out = build_ai_patch(source, translations, model=client.settings.model, provider="api")
+    out = build_ai_patch(
+        source,
+        translations,
+        model=client.settings.model,
+        provider="api",
+        skill_version=load_skill_version(data_dir),
+    )
     errors = validate_ai_patch(source, out)
     if errors:
         raise TranslateError("校验失败: " + "; ".join(errors[:5]))

@@ -277,3 +277,15 @@ def test_ai_translations_do_not_leak_into_official_indexes():
 def test_pages_workflow_stages_ai_translations():
     text = (ROOT / ".github" / "workflows" / "pages.yml").read_text(encoding="utf-8")
     assert "data/ai_translations" in text
+
+
+def test_skill_snapshot_version_matches_terms():
+    """`skill/` 快照的 VERSION 必须与术语表 version 一致（刷新时防止漏改）。"""
+    version = (AI_DIR / "skill" / "VERSION").read_text(encoding="utf-8").strip()
+    terms = _load(AI_DIR / "skill" / "overwatch_terms.json")
+    assert version, "skill/VERSION 为空"
+    assert terms.get("version") == version, (
+        f"VERSION={version!r} 与 terms.version={terms.get('version')!r} 不一致"
+    )
+    for category in ("heroes", "abilities", "maps", "game_terms"):
+        assert isinstance((terms.get("terms") or {}).get(category), dict)
