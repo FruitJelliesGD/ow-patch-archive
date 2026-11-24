@@ -29,9 +29,6 @@ jobs:
     if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     timeout-minutes: 15
-    environment:
-      name: github-pages
-      url: ${{ steps.deploy_1.outputs.page_url || steps.deploy_2.outputs.page_url || steps.deploy_3.outputs.page_url }}
     steps:
       - uses: actions/checkout@v5
 

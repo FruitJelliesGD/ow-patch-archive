@@ -73,7 +73,7 @@ def test_artifact_name_is_left_at_the_official_default():
     # deploy-pages looks the artifact up by name; a custom `name:` on the
     # upload (or `artifact_name:` on the deploy) is a silent mismatch.
     assert "artifact_name:" not in code
-    assert code.count("name: github-pages") == 1  # the job environment only
+    assert "name: github-pages" not in code
 
 
 def test_uploads_the_staged_site():
@@ -115,10 +115,13 @@ def test_only_a_total_deploy_failure_turns_the_run_red():
     assert "exit 1" in code
 
 
-def test_deploy_job_declares_the_pages_environment():
+def test_does_not_pin_a_job_environment():
+    # 仓库的 `github-pages` 环境配了自定义分支策略且不含 main，job 级
+    # `environment:` 会让部署在起跑前就被拒（"Branch main is not allowed to
+    # deploy to github-pages due to environment protection rules"）。不声明
+    # environment 时 deploy-pages 仍会正常创建 Pages 部署。
     code = _code()
-    assert "environment:" in code
-    assert "page_url" in code
+    assert "environment:" not in code
     assert "timeout-minutes: 15" in code
 
 
