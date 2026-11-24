@@ -36,8 +36,8 @@
     「任一 / 全部」匹配、`?cat=…&match=all` 分享，以及从补丁详情返回时保留筛选；移动端可收起筛选条。
   - **自动重建**：监控工作流（`monitor`/`monitor-fast`/`watchdog`）与 `ai-translate` 完成并提交数据后，`pages` 工作流
     通过 `workflow_run` 自动重建站点（约 30 分钟内生效；监控失败时不部署）；每日 04:23 UTC 定时重建兜底，
-    也可 `workflow_dispatch` 手动触发。部署偶发的"产物查找失败"会自动重试（最多 3 次，前两次失败不判红），
-    运行串行排队而不中途取消，详见 [`docs/compose/spec/pages-deploy-resilience.md`](docs/compose/spec/pages-deploy-resilience.md)。
+    也可 `workflow_dispatch` 手动触发。部署前先等产物元数据可见；万一仍失败会自动重试（最多 3 次，
+    前两次失败不判红），运行串行排队而不中途取消，详见 [`docs/compose/spec/pages-deploy-resilience.md`](docs/compose/spec/pages-deploy-resilience.md)。
 - **跨站数据对齐**：英文与中文补丁自动配对（`data/patch_pairs.json`），技能/威能名称中英映射自动学习（`data/ability_map.json`），同一技能的改动历史跨站合并为一条，不再产生碎片化分组。
 - **CLI 查询**：`python tools/query.py 士兵76`。
 - **AI翻译（实验性，非官方）**：`data/ai_translations/` 存放与官方数据完全隔离的机器译文；

@@ -14,6 +14,7 @@ on:
 
 permissions:
   contents: read
+  actions: read   # 轮询本次运行的 artifacts，确认 github-pages 产物已可见
   pages: write
   id-token: write
 
@@ -49,10 +50,26 @@ jobs:
         with:
           path: _site
 
-      # deploy-pages 偶发在产物刚上传后查不到 "github-pages"（GitHub 侧元数据
-      # 最终一致/瞬断），2026-11-17 起 30 次运行里有 6 次因此判红，而下一次运行
-      # 用同一份产物就能成功。产物已在同一次运行里上传成功，重传没有意义，重试
-      # 部署（重新查询元数据）才是对症的：前两次失败只告警，全部失败才判红。
+      # 产物元数据在 GitHub 侧偶尔延迟可见：deploy-pages 会在上传成功后的几秒内
+      # 报 "No artifacts named github-pages"，2026-11-17 起多次因此判红，而十几秒后
+      # 同一份产物就能部署成功。先等它可见再部署；等待超时不算失败（后面还有 3 次
+      # 部署重试），且只用 ::warning::，避免把一次成功的运行标成带错误注解。
+      - name: Wait until the pages artifact is visible
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for attempt in $(seq 1 30); do
+            if gh api "repos/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}/artifacts" \
+                 --jq '.artifacts[].name' 2>/dev/null | grep -qx 'github-pages'; then
+              echo "github-pages artifact visible after ${attempt} attempt(s)"
+              exit 0
+            fi
+            sleep 2
+          done
+          echo "::warning::github-pages artifact still not visible after 60s; deploying with retries"
+
+      # 部署本身也保留重试：产物可见之后仍可能遇到 Pages 侧的瞬时错误。
+      # 前两次失败只告警，3 次全失败才判红。
       - name: Deploy to GitHub Pages (attempt 1/3)
         id: deploy_1
         continue-on-error: true

@@ -100,7 +100,8 @@ def test_deploy_retries_transient_artifact_lookup_failures():
     # so the artifact metadata has time to converge.
     assert "steps.deploy_1.outcome == 'failure'" in code
     assert "steps.deploy_2.outcome == 'failure'" in code
-    assert code.count("sleep ") == 2
+    assert "sleep 10" in code
+    assert "sleep 20" in code
 
 
 def test_only_a_total_deploy_failure_turns_the_run_red():
@@ -113,6 +114,19 @@ def test_only_a_total_deploy_failure_turns_the_run_red():
     assert gate in code
     assert "::error::" in code
     assert "exit 1" in code
+
+
+def test_waits_for_the_artifact_before_deploying():
+    # deploy-pages 曾在上传成功后几秒内报找不到 github-pages；先轮询确认产物
+    # 可见，避免一次可恢复的抖动在运行页留下 failure 注解。
+    code = _code()
+    assert "Wait until the pages artifact is visible" in code
+    assert "actions/runs/${GITHUB_RUN_ID}/artifacts" in code
+    assert "grep -qx 'github-pages'" in code
+    assert "::warning::" in code  # 超时只告警，不判红（后面还有部署重试）
+    assert code.index("Wait until the pages artifact is visible") < code.index(
+        "Deploy to GitHub Pages (attempt 1/3)"
+    )
 
 
 def test_does_not_pin_a_job_environment():
@@ -135,6 +149,7 @@ def test_runs_queue_instead_of_cancelling_an_inflight_deploy():
 def test_permissions_stay_scoped_to_pages_deployment():
     code = _code()
     assert "contents: read" in code
+    assert "actions: read" in code  # 轮询本次运行的 artifacts（只需读）
     assert "pages: write" in code
     assert "id-token: write" in code
     assert "contents: write" not in code
