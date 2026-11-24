@@ -8,6 +8,10 @@ commits: 372334c..463db44
 
 # Pages 自动部署:监控数据入库后立即重建网站
 
+> 2026-11-24 加固：部署重试、串行排队（`cancel-in-progress: false`）与 Node 24 Actions 升级见
+> [`pages-deploy-resilience.md`](pages-deploy-resilience.md)。本文原文中的
+> `cancel-in-progress: true` 已被新策略取代，保留为历史记录。
+
 ## Report
 
 **What was built** — `pages.yml` 新增 `workflow_run` 触发,监听 `monitor` / `monitor-fast` / `watchdog` 三个监控工作流完成(GITHUB_TOKEN 自动提交不触发 `on: push`,此前站点滞后最长约 18 小时);`deploy` job 以 `github.event.workflow_run.conclusion == 'success'` 过滤——监控失败(无新数据落库)不部署。保留 `push` / 每日 04:23 UTC schedule 兜底 / `workflow_dispatch` 三种既有触发。监控工作流完成并提交数据后,站点在约 30 分钟内自动重建;README 补充"自动重建"说明。

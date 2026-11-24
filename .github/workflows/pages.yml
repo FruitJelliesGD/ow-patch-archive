@@ -18,18 +18,24 @@ permissions:
   id-token: write
 
 concurrency:
+  # 排队而不取消：deploy-pages 被中途取消会让 Pages 部署停在中间状态
+  # （历史上 6 次 cancelled 就是这种无意义的中断）。下一轮运行会撤销等待中的旧运行。
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   deploy:
     # 监控失败（--fail-on-error 退出非 0）时没有新数据落库，无需部署
     if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
+    timeout-minutes: 15
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy_1.outputs.page_url || steps.deploy_2.outputs.page_url || steps.deploy_3.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/configure-pages@v5
+      - uses: actions/configure-pages@v6
 
       - name: Stage site (web/ + the data files the site reads)
         # The site reads data/*.json plus data/patches, data/heroes and the
@@ -42,8 +48,41 @@ jobs:
           cp data/*.json _site/data/
           cp -r data/patches data/heroes data/ai_translations _site/data/
 
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: _site
 
-      - uses: actions/deploy-pages@v4
+      # deploy-pages 偶发在产物刚上传后查不到 "github-pages"（GitHub 侧元数据
+      # 最终一致/瞬断），2026-11-17 起 30 次运行里有 6 次因此判红，而下一次运行
+      # 用同一份产物就能成功。产物已在同一次运行里上传成功，重传没有意义，重试
+      # 部署（重新查询元数据）才是对症的：前两次失败只告警，全部失败才判红。
+      - name: Deploy to GitHub Pages (attempt 1/3)
+        id: deploy_1
+        continue-on-error: true
+        uses: actions/deploy-pages@v5
+
+      - name: Wait 10s before retrying the deploy
+        if: steps.deploy_1.outcome == 'failure'
+        run: sleep 10
+
+      - name: Deploy to GitHub Pages (attempt 2/3)
+        id: deploy_2
+        if: steps.deploy_1.outcome == 'failure'
+        continue-on-error: true
+        uses: actions/deploy-pages@v5
+
+      - name: Wait 20s before the final deploy attempt
+        if: steps.deploy_1.outcome == 'failure' && steps.deploy_2.outcome == 'failure'
+        run: sleep 20
+
+      - name: Deploy to GitHub Pages (attempt 3/3)
+        id: deploy_3
+        if: steps.deploy_1.outcome == 'failure' && steps.deploy_2.outcome == 'failure'
+        continue-on-error: true
+        uses: actions/deploy-pages@v5
+
+      - name: Fail only if every deploy attempt failed
+        if: steps.deploy_1.outcome == 'failure' && steps.deploy_2.outcome == 'failure' && steps.deploy_3.outcome == 'failure'
+        run: |
+          echo "::error::actions/deploy-pages failed 3 times for run ${{ github.run_id }}; see the attempt steps above"
+          exit 1
