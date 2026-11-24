@@ -16,13 +16,15 @@ branch: main
 3. **串行排队而非中途取消**：`concurrency.cancel-in-progress: true → false`。取消正在进行的 Pages 部署会让部署停在中间状态，历史上 6 次 `cancelled` 属于纯噪声。
 4. 附带：`timeout-minutes: 15` 兜底；触发条件、`_site` 暂存范围（`data/patches` / `heroes` / `ai_translations`，不含 `data/archive`）、监控失败不部署的结论过滤全部保持不变。**不加** job 级 `environment:`：仓库的 `github-pages` 环境配了自定义分支策略且不含 `main`，声明 environment 会让部署在起跑前被拒（见 Journey log 4）。
 
-**Verification** — `pytest -q`：**335 passed**（基线 324 + 新增 11 条 `tests/test_pages_workflow.py` 契约测试：触发条件、Action 主版本、产物默认名、暂存清单、重试/门禁、无 job environment、并发策略、权限）；PyYAML 解析 `pages.yml` 通过（`on` 四个触发、步骤顺序正确）；`node tools/_smoke_web.js` → `ALL WEB ASSERTIONS OK`。线上：推送后由 `push` 事件触发的 `ci`（test + web）与 `pages`（deploy）运行按上述验收标准复核，站点首页仍正常返回。
+**Verification** — `pytest -q`：**335 passed**（基线 324 + 新增 11 条 `tests/test_pages_workflow.py` 契约测试：触发条件、Action 主版本、产物默认名、暂存清单、重试/门禁、无 job environment、并发策略、权限）；PyYAML 解析 `pages.yml` 通过（`on` 四个触发、步骤顺序正确）；`node tools/_smoke_web.js` → `ALL WEB ASSERTIONS OK`。
+
+线上（`push` 事件，head `41a3ffc`）：[ci run 45421473328](https://github.com/FruitJelliesGD/ow-patch-archive/actions/runs/45421473328) 的 `test`（pytest）与 `web`（DOM smoke）均 success；[pages run 45421473592](https://github.com/FruitJelliesGD/ow-patch-archive/actions/runs/45421473592) 的 5 个步骤全部 success，**第 1 次部署即成功**（重试与门禁步骤 skipped），check-run 注解 **0 条**（无 failure、无 Node 20 弃用警告）。站点 `https://fruitjelliesgd.github.io/ow-patch-archive/` 返回 200，`data/patches_index.json` 353 条（与本轮测试基线一致）。
 
 **Journey log** —
 1. 失败日志（需登录）不可得，改用公开的 run/job 元数据 + check-run 注解定位：`upload-pages-artifact` 步骤**成功**，紧接着的 `deploy-pages` 报 `No artifacts named "github-pages" were found for this workflow run.`，耗时仅 10–17 秒；同一天的失败运行是**串行**的（45210421984 → 45210477547 → 45211241395），排除了"两个部署并发"，指向 GitHub 侧产物元数据查询的瞬时故障/最终一致性。随后一次运行用同一份产物即可成功，说明重试是对症的。
 2. 不重传产物：产物已在同一次运行里上传成功，且 `upload-pages-artifact` 不支持同名覆盖；重试部署（重新查询元数据）才是最小修复。
 3. 重试做成 3 个显式步骤而不是 shell 循环：action 步骤无法在循环里调用，`continue-on-error` + `if: steps.deploy_N.outcome == 'failure'` 是 GitHub Actions 里唯一不需要第三方 action 的写法。
-4. 首版照官方示例加了 job 级 `environment: github-pages`，首次线上运行 3 秒即失败：`Branch "main" is not allowed to deploy to github-pages due to environment protection rules`（环境 `custom_branch_policies: true` 且列表不含 `main`）。删除 job 级 environment 即恢复：不带 environment 时 `deploy-pages` 仍能正常创建 Pages 部署（此前几个月一直如此）。
+4. 首版照官方示例加了 job 级 `environment: github-pages`，首次线上运行 [run 45420969508](https://github.com/FruitJelliesGD/ow-patch-archive/actions/runs/45420969508) 3 秒即失败：`Branch "main" is not allowed to deploy to github-pages due to environment protection rules`（环境 `custom_branch_policies: true` 且列表不含 `main`）。删除 job 级 environment 即恢复：不带 environment 时 `deploy-pages` 仍能正常创建 Pages 部署（此前几个月一直如此）。
 
 ## [S1] Problem
 
